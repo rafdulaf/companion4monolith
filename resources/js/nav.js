@@ -212,14 +212,30 @@ Nav = {
         $(window).resize(function() { Nav.updateTitle(); });
     },
     
-    dialog: function(title, code, callback)
+    dialog: function(title, code, callback, actions)
     {
+        function drawactions()
+        {
+            var c = "";
+            if (actions)
+            {
+                c += "<ul class='actions'>";
+                for (var i in actions)
+                {
+                    c += "<li>"
+                    c += "<a href=\"javascript:void(0);\" onclick=\"" + actions[i].fn + "\" class=\"" + actions[i].icon + "\" title=\"" + actions[i].label + "\"></a>"
+                    c += "</li>"
+                }
+                c += "</ul>";
+            }
+            return c;
+        }
+        
         code = "<div id=\"dialog\" class=\"dialog\">"
                 + "<div class=\"dialog-header\">"
                     + "<a class=\"dialog-back\" href=\"javascript:void(0);\" onclick=\"Nav.closeDialog()\"></a>"
                     + "<div class=\"dialog-title\">" + title + "</div>"
-                    + "<ul class='actions'>"
-                    + "</ul>"
+                    + drawactions()
                 + "</div>"
                 + "<div class=\"dialog-content\">"
                     + code 

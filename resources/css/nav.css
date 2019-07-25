@@ -193,6 +193,8 @@
     font-size: 20px;
     flex: 1;
     font-family: 'Crom';
+    overflow: hidden;
+    white-space: nowrap;
 }
 .dialog-content {
     padding: 20px;
@@ -201,8 +203,26 @@
     height: calc(100vh - 64px);
     overflow: auto;
     background-color: #FFFFFF;
-}    
+} 
 
+.dialog-header .actions {
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+}   
+.dialog-header .actions li {
+     display: inline-block;
+}   
+.dialog-header .actions li a {
+    color: #FFFFFF;
+    font-size: 24px;
+    line-height: 44px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    width: 40px;
+    color: #333;
+}
 
 
 
