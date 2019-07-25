@@ -46,49 +46,62 @@
         <script src="vendors/js/jquery-3.1.1.js"></script>
         <script src="vendors/js/slick-1.8.0.js"></script>
         <script>
-	        jQuery.getScript("resources/js/utils.js").done(function() {
-	        	Promise.all([
-                    Utils.load.css('resources/css/body.css'),
-
-                    Utils.load.css('resources/css/menu.css'),
-                    Utils.load.js('resources/js/menu.js'),
-                    
-                    Utils.load.css('resources/css/nav.css'),
-	        		Utils.load.js('resources/js/nav.js'),
-                    
-                    Utils.load.css('about/resources/css/about.css'),
-                    Utils.load.js('about/resources/js/about.js'),
-
-                    Utils.load.css('maps/resources/css/maps.css'),
-                    Utils.load.js('maps/resources/js/maps.js'),
-
-                    Utils.load.css('rules/resources/css/rules.css'),
-                    Utils.load.js('rules/resources/js/rules.js'),
-
-                    Utils.load.css('studio/resources/css/studio.css'),
-                    Utils.load.js('studio/resources/js/studio.js'),
-                    Utils.load.css('studio/card_equipment/resources/css/card_equipment.css'),
-                    Utils.load.js('studio/card_equipment/resources/js/card_equipment.js')
-	        	]).then(function() {
-	        		Menu.initialize();
-	        		
-                    Nav.initialize();
-                    ConanAbout.init();
-	        	    ConanMaps.init();
-                    ConanRules.init();
-                    Nav.addIcon('Scenarios', 'story', 'story'); $("#story").html("In construction...");
-                    ConanStudio.init();
-                    
-                    
-                    Nav.switchTo($('.nav > ul > li > a')[0]);
-                    $(".loading").addClass('loaded');
+            var useragent = navigator.userAgent.toLowerCase();
+	        if (!/edge\/([0-9.]+)/.test(useragent) 
+	        		&& !/ firefox\/([0-9.]+)( |$)/.test(useragent) 
+	        		&& !/ chrome\/([0-9]+\.[0-9]+)\./.test(useragent)
+	        		&& !/ version\/([0-9.]+) safari\//.test(useragent))
+	        {
+	        	jQuery(document).ready(function() {
+	        		document.body.innerHTML = "Your browser is not supported. Try using Chrome or Firefox for example.<br/>Votre navigateur n'est pas supporté. Essayez d'utiliser Chrome ou Firefox par example.";
 	        	});
-	        });
+	        }
+	        else
+	        {
+		        jQuery.getScript("resources/js/utils.js").done(function() {
+		        	Promise.all([
+	                    Utils.load.css('resources/css/body.css'),
+	
+	                    Utils.load.css('resources/css/menu.css'),
+	                    Utils.load.js('resources/js/menu.js'),
+	                    
+	                    Utils.load.css('resources/css/nav.css'),
+		        		Utils.load.js('resources/js/nav.js'),
+	                    
+	                    Utils.load.css('about/resources/css/about.css'),
+	                    Utils.load.js('about/resources/js/about.js'),
+	
+	                    Utils.load.css('maps/resources/css/maps.css'),
+	                    Utils.load.js('maps/resources/js/maps.js'),
+	
+	                    Utils.load.css('rules/resources/css/rules.css'),
+	                    Utils.load.js('rules/resources/js/rules.js'),
+	
+	                    Utils.load.css('studio/resources/css/studio.css'),
+	                    Utils.load.js('studio/resources/js/studio.js'),
+	                    Utils.load.css('studio/card_equipment/resources/css/card_equipment.css'),
+	                    Utils.load.js('studio/card_equipment/resources/js/card_equipment.js')
+		        	]).then(function() {
+		        		Menu.initialize();
+		        		
+	                    Nav.initialize();
+	                    ConanAbout.init();
+		        	    ConanMaps.init();
+	                    ConanRules.init();
+	                    Nav.addIcon('Scenarios', 'story', 'story'); $("#story").html("In construction...");
+	                    ConanStudio.init();
+	                    
+	                    
+	                    Nav.switchTo($('.nav > ul > li > a')[0]);
+	                    $(".loading").addClass('loaded');
+		        	});
+		        });
+	        }
+        
         </script>
 	<body>
+	    <noscript>This website requires Javascript to be activated / Ce site nécessite l'utilisation de Javascript</noscript>
         <div class="loading"></div>
-	
-	
 	
 		<style>
 		      .story:before {
