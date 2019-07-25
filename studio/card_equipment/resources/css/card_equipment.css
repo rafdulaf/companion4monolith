@@ -1,0 +1,205 @@
+.equipment-icon-add:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f055";  
+}
+
+#equipment {
+    font-family: 'Crom';
+    overflow: auto;
+}
+#equipment .card {
+    position: relative;
+    display: inline-block; 
+    
+    width: 200px;
+    height: calc(200px / 0.67);
+    margin: 10px;
+
+    overflow: hidden;    
+}
+
+#equipment .card img.background {
+    position: absolute;
+    width: 146.5%;
+    left: -23.5%;
+    top: -15.5%;
+}
+#equipment .card img.background-name {
+    position: absolute;
+    top: 3%;
+    width: 81.37%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#equipment .card img.background-encumbrance,
+#equipment .card .encumbrance {
+    position: absolute;
+    bottom: 4.5%;
+    right: 7.4%;
+    width: 13.3%;
+    text-align: center;
+    color: #FFF;
+    font-family: "Motrg";
+    font-size: 220%;
+    line-height: 100%;
+}
+
+#equipment .card .name {
+    text-align: center;
+    width: 81.37%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 7%;
+    line-height: 100%;
+    text-shadow: 0 0 3px #FFF;
+}
+
+#equipment .card .level0, 
+#equipment .card .level1,
+#equipment .card .level2,
+#equipment .card .level3 {
+    position: absolute;
+    left: 6%;
+    width: 88%;
+    height: 26.4%;
+}
+#equipment .card .level0 { bottom: 3.2%; }
+#equipment .card .level1 { bottom: 30.4%; }
+#equipment .card .level2 { bottom: 57.6%; }
+#equipment .card .level3 { bottom: 85.8%; }
+
+#equipment .card .background-passive { height: 90.9%; position: absolute; top: 9.1%; }
+#equipment .card .background-active { height: 100%; position: absolute; }
+#equipment .card .background-manipulation { height: 100%; position: absolute; }
+#equipment .card .background-ranged { height: 93.6%; position: absolute; top: 6.4%; }
+#equipment .card .background-melee { height: 100%; position: absolute; }
+
+#equipment .card > div > img + img {
+    position: absolute;
+    bottom: 6%;
+    height: 38%;
+}
+#equipment .card > div > img.background-passive + img { left: 21%; }
+#equipment .card > div > img.background-passive + img + img { left: 39%; }
+
+#equipment .card > div > img.background-active + img { left: 24%; }
+#equipment .card > div > img.background-active + img + img { left: 43%; }
+
+#equipment .card > div > img.background-ranged + img { left: 29%; bottom: 7%; }
+#equipment .card > div > img.background-ranged.duo + img { left: 23%; bottom: 7%; }
+#equipment .card > div > img.background-ranged + img + img { left: 41%; }
+#equipment .card > div.throw > img.background-ranged + img { left: 28%; }
+#equipment .card > div.throw > img.background-ranged.duo + img { left: 23%; }
+#equipment .card > div.throw > img.background-ranged + img + img { left: 41%; bottom: 7%; }
+
+#equipment .card > div > img.background-manipulation + img { left: 35%; bottom: 7%; }
+#equipment .card > div > img.background-manipulation + img + img { left: 55%; bottom: 7%; }
+#equipment .card > div.explosive > img.background-manipulation + img { left: 20%; bottom: 7%; }
+#equipment .card > div.explosive > img.background-manipulation + img + img { left: 40%; bottom: 7%; }
+
+#equipment .card > div > img.background-melee + img { left: 24%; }
+#equipment .card > div > img.background-melee + img + img { left: 43%; }
+
+#equipment .card div.image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#equipment .card div.image img { 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; 
+}
+
+#equipment .nocards {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(200,200,200,0.5);
+    display: block;
+    padding: 40px;
+    border-radius: 40px;
+    z-index: 10;
+    pointer-events: none;
+    font-family: "Crom";
+}
+
+
+.dialog .equipment .field {
+    border: 1px solid black;
+    padding: 0 20px 5px 20px;
+}
+.dialog .equipment .field.error {
+    border-color: #FF0000;
+}
+.dialog .equipment .field + .field {
+    margin-top: 10px;
+}
+    
+.dialog .equipment .field label {
+    display: block;
+    font-size: 26px;
+    line-height: 20px;
+    position: relative;
+    top: 5px;
+}
+.dialog .equipment .field input,
+.dialog .equipment .field select {
+    border: none;
+    width: 100%;
+    outline: none;
+}
+
+.dialog .equipment .field input#eqname {
+   font-size: 36px;
+   font-family: 'Crom';
+}
+.dialog .equipment .field input#eqweight {
+   font-size: 36px;
+   font-family: "Motrg";
+}
+.dialog .equipment .field input#eqimage {
+   font-size: 22px;
+   line-height: 36px;
+   font-family: 'Moolbor';
+}
+.dialog .equipment .field select.dice
+{
+  font-family: "Font Awesome 5 Free";
+  font-size: 35px;
+  width: 200px;
+  display: inline-block;
+  vertical-align: top;
+  height: 44px;
+}
+
+.dialog .equipment .field input[type=checkbox] {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: top;
+}
+.dialog .equipment .field input[type=checkbox] + label {
+    width: calc(100% - 40px);
+    display: inline-block;
+    font-size: 35px;
+    font-family: "Font Awesome 5 Free";
+}
+.rangedthrow {
+    margin-top: 8px;
+}
+.rangedthrow label{
+    font-size: 48px;
+}
+
+.dialog .equipment-save:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f0c7";  
+}

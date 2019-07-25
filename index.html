@@ -63,7 +63,12 @@
                     Utils.load.js('maps/resources/js/maps.js'),
 
                     Utils.load.css('rules/resources/css/rules.css'),
-                    Utils.load.js('rules/resources/js/rules.js')
+                    Utils.load.js('rules/resources/js/rules.js'),
+
+                    Utils.load.css('studio/resources/css/studio.css'),
+                    Utils.load.js('studio/resources/js/studio.js'),
+                    Utils.load.css('studio/card_equipment/resources/css/card_equipment.css'),
+                    Utils.load.js('studio/card_equipment/resources/js/card_equipment.js')
 	        	]).then(function() {
 	        		Menu.initialize();
 	        		
@@ -72,7 +77,7 @@
 	        	    ConanMaps.init();
                     ConanRules.init();
                     Nav.addIcon('Scenarios', 'story', 'story'); $("#story").html("In construction...");
-                    Nav.addIcon('Studio', 'studio', 'studio'); $("#studio").html("In construction...");
+                    ConanStudio.init();
                     
                     
                     Nav.switchTo($('.nav > ul > li > a')[0]);
@@ -89,10 +94,6 @@
 		      .story:before {
 		          font-family: "Font Awesome 5 Free";
 		          content: "\f518";  
-		      }
-		      .studio:before {
-		          font-family: "Font Awesome 5 Free";
-		          content: "\f591";  
 		      }
     	</style>
 	</body>
