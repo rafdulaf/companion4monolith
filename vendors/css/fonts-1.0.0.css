@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Crom';
+    src: url('../fonts/Crom.eot');
+    src: url('../fonts/Crom.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Crom.woff2') format('woff2'),
+    url('../fonts/Crom.woff') format('woff'),
+    url('../fonts/Crom.ttf') format('truetype'),
+    url('../fonts/Crom.svg#Crom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Moolbor';
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: url("../fonts/moolbor.woff");
+}
+
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: url("../fonts/fa-solid-900.eot");
+  src: url("../fonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-solid-900.woff2") format("woff2"), url("../fonts/fa-solid-900.woff") format("woff"), url("../fonts/fa-solid-900.ttf") format("truetype"), url("../fonts/fa-solid-900.svg#fontawesome") format("svg");
+}

@@ -1,0 +1,235 @@
+.header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);
+    height: 64px;
+    background-color: #e64443;
+    padding: 10px 10px 10px 70px;
+    display: flex;
+}
+
+.header .title {
+    color: #FFF;
+    display: inline-block;
+    vertical-align: top;
+    min-height: 100%;
+    font-family: 'Crom';
+    font-size: 35px;
+    line-height: 38px;
+    overflow: hidden;
+    flex: 1;
+}
+.header .title div {
+    display: inline;
+}
+.header .title .smaller {
+    font-size: 30px;
+}
+.header .title .smallest {
+    font-size: 22px;
+}
+.header .title .smallest.twolines {
+    line-height: 19px;
+}
+
+.header .toolbar {
+    display: inline-block;
+    vertical-align: top;
+}
+.header .toolbar ul {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.header .toolbar ul.active {
+    display: block;
+}
+.header .toolbar ul li.hidden {
+    display: none;
+}
+.header .toolbar ul li {
+    display: inline-block;
+}
+.header .toolbar a {
+    color: #FFFFFF;
+    font-size: 24px;
+    line-height: 44px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    width: 40px;
+}    
+    
+.nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 3px 14px 2px rgba(0,0,0,.12);
+    height: 56px;
+    font-family: 'Crom';
+}
+.nav ul {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav li {
+    max-width: 168px;
+    min-width: 64px;
+    width: 100%;
+    flex-shrink: 1;
+}
+
+.nav li a {
+    display: block;
+    height: 100%;
+    text-align: center;
+    padding: 6px 6px 10px 6px;
+    text-decoration: none;
+    color: rgba(0,0,0,.54);
+    font-size: 11px;
+}
+
+@media screen and (min-width: 380px) {
+    .nav li a {
+        padding: 6px 12px 10px 12px;
+        font-size: 12px;
+    }
+}
+@media screen and (min-width: 400px) {
+    .nav li a {
+        font-size: 13px;
+    }
+}
+@media screen and (min-width: 430px) {
+    .nav li a {
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 450px) {
+    .nav li a {
+        font-size: 15px;
+    }
+}
+@media screen and (min-width: 480px) {
+    .nav li a {
+        font-size: 16px;
+    }
+}
+
+.nav li a.active {
+    color: #e64443;
+}   
+
+.nav li a:before {
+    display: block;
+    font-size: 22px;
+    line-height: 24px;
+}
+
+.contents {
+    position: absolute;
+    overflow: hidden;
+    top: 64px;
+    bottom: 56px;
+    left: 0;
+    right: 0;
+}
+.contents > div {
+    display: block;
+    opacity: 0;
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.contents > div.active {
+    z-index: 1;
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+
+.dialog {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100000;
+    background-color: #CFCFCF;
+}
+.dialog-header {
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);
+    height: 64px;
+    display: flex;
+}
+.dialog-back {
+    width: 64px;
+    text-decoration: none;
+    color: #000000;
+    line-height: 64px;
+    font-size: 24px;
+    text-align: center;
+}
+.dialog-back:before {
+   font-family: "Font Awesome 5 Free";
+   content: "\f060";  
+}
+.dialog-title {
+    line-height: 64px;
+    font-size: 20px;
+    flex: 1;
+    font-family: 'Crom';
+}
+.dialog-content {
+    padding: 20px;
+    font-family: 'Moolbor';
+    font-size: 20px;
+    height: calc(100vh - 64px);
+    overflow: auto;
+    background-color: #FFFFFF;
+}    
+
+
+
+
+.nav-menu {
+    border-bottom: 1px solid #cfcfcf;
+}
+.nav-wrapper {
+    height: calc(100% - 40px);
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Crom';
+    
+    display: block;
+    text-align: center;
+    height: 39px;
+    line-height: 39px;
+    border-bottom: 3px solid transparent;
+    
+    overflow: hidden;
+}
+.nav-menu a.slick-current {
+    border-bottom-color: red;
+}
+
+.slick-slide {
+    outline: none;
+}

@@ -1,2 +1,2 @@
-# companion4conan
+# Companion for conan
 Companion application for Conan

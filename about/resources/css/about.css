@@ -1,0 +1,87 @@
+.about-fullscreen:before {
+    content: "\f31e";
+    font-family: 'Font Awesome 5 Free';
+}
+.about-custom:before {
+    content: "\f49e";
+    font-family: 'Font Awesome 5 Free';
+}
+.about-preferences:before {
+    content: "\f3e0";
+    font-family: 'Font Awesome 5 Free';
+}
+.about-about:before {
+    content: "\f447";
+    font-family: 'Font Awesome 5 Free';
+}
+
+.about {
+    font-family: 'Moolbor';
+    font-size: 24px;
+}
+
+.about .about-zone-about img {
+    width: 100%;
+}
+
+.about a {
+    color: #c39f76;
+    text-decoration: none;
+}
+.about a:hover {
+    text-decoration: underline;
+}
+
+
+.about-copyright h1 {
+    margin-bottom: 0px;
+    font-size: 36px;
+}
+
+
+.custom fieldset {
+    border-width: 1px 0 0 0;
+}
+.custom fieldset select {
+    width: 100%;
+    border-width: 0 0 1px 0;
+    margin-bottom: 10px;
+    font-family: 'Moolbor';
+    font-size: 20px;
+}
+.custom fieldset legend {
+    font-size: 24px;
+}
+.custom fieldset label {
+    vertical-align: middle;
+    margin-left: 3px;
+}
+
+@media screen and (min-width: 600px) {
+    .custom fieldset {
+        vertical-align: top;
+        width: 48%;
+        float: left;
+        display: inline-block;
+    }
+}
+
+.reload {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top: 4px solid #DC7B00;
+    background-color: #fb8c00;
+    color: #FFFFFF;
+    box-shadow: 0 0 3px;
+    width: 80vW;
+    padding: 30px;
+    font-family: 'Moolbor';
+    font-size: 20px;
+    z-index: 100001;
+    
+    transition-property: bottom opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    
+}

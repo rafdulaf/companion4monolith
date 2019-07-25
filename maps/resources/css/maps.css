@@ -1,0 +1,394 @@
+.maps-icon:before {
+   font-family: "Font Awesome 5 Free";
+   content: "\f279";  
+}
+.maps-icon-index:before {
+   font-family: "Font Awesome 5 Free";
+   content: "\f00a";  
+}
+.maps-icon-forum:before {
+   font-family: "Font Awesome 5 Free";
+   content: "\f086";  
+}
+.maps-icon-losfile:before {
+   font-family: "Font Awesome 5 Free";
+   content: "\f56d";  
+}
+.maps-icon-rotate:before {
+   font-family: "Font Awesome 5 Free";
+   content: "\f2f1";  
+}
+.maps-icon-legend:before {
+   font-family: "Font Awesome 5 Free";
+   content: "\f129";  
+}
+
+
+
+.map {
+    height: 100%;
+    background-color: white;
+    overflow: auto;
+}
+
+.map-index {
+	padding: 10px;
+}
+
+.map-index > ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.map-index > ul > li {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 5px;
+	box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
+	margin: 5px;
+}
+.map-index > ul > li > a {
+	display: block;
+	position: relative;
+	vertical-align: middle;
+}
+.map-index > ul > li > a > .map-index-board-image {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-position: top;
+}
+.map-index > ul > li > a > .map-index-board-legend {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: #FFF;
+    text-align: left;
+    font-family: 'Crom';
+    padding: 10px 5px 10px 10px;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.map-card a, .map-card a:link, .map-card a:hover, .map-card a:visited {
+    color: black;	
+	text-decoration: none;
+}
+.map-index a:hover {
+	color: #FFFFFF;
+	background-color: #000000;
+}
+
+.map-index > ul > li > a > .map-index-board-image {
+    width: 121px;
+    height: 100px;
+    padding: 5px 5px 5px 5px;
+}
+.map-index > ul > li > a > .map-index-board-legend {
+    font-size: 13px;
+}
+@media screen and (min-width: 380px) {
+    .map-index > ul > li > a > .map-index-board-image {
+        width: 150px;
+        height: 125px;
+        padding: 5px 5px 5px 5px;
+    }
+    .map-index > ul > li > a > .map-index-board-legend {
+        font-size: 13px;
+    }
+}
+@media screen and (min-width: 640px) {
+    .map-index > ul > li > a > .map-index-board-image {
+        width: 135px;
+        height: 125px;
+        padding: 5px 5px 5px 5px;
+    }
+    .map-index > ul > li > a > .map-index-board-legend {
+        font-size: 13px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .map-index > ul > li > a > .map-index-board-image {
+        width: 345px;
+        height: 126px;
+        padding: 5px 5px 5px 5px;
+    }
+    .map-index > ul > li > a > .map-index-board-legend {
+        font-size: 15px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .map-index > ul > li > a > .map-index-board-image {
+        width: 230px;
+        height: 188px;
+        padding: 5px 5px 5px 5px;
+    }
+    .map-index > ul > li > a > .map-index-board-legend {
+        font-size: 22px;
+    }
+}
+
+
+
+
+
+.map-map {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.map-map .map-map-wrapper,
+.map-map .map-map-help {
+    height: 100%;
+    box-sizing: border-box;
+    overflow: auto;
+    position: relative;
+    width: 50% !important;
+}
+
+.map-map .map-map-wrapper {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.map-map .map-map-wrapper .map-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.line1, .line2, .line3, .line4 {
+    text-indent: -30px;
+    padding-left: 30px;
+}
+
+.line1:before {
+    content: " ";
+    display: inline-block;
+    vertical-align: middle;
+    width: 18px;
+    height: 12px;
+    border: 1px solid #FFFFFF;
+    background-color: rgba(0,0,255,0.5);
+    margin-right: 10px;
+}
+.line3:before {
+    content: " ";
+    display: inline-block;
+    vertical-align: text-top;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #00FF00;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.line2:before {
+    content: " ";
+    display: inline-block;
+    vertical-align: middle;
+    width: 18px;
+    height: 12px;
+    border: 1px solid #FFFFFF;
+    background-color: rgba(0,255,0,0.5);
+    margin-right: 10px;
+}
+.line4:before {
+    content: " ";
+    display: inline-block;
+    vertical-align: middle;
+    width: 18px;
+    height: 12px;
+    border: 1px solid #FFFFFF;
+    background-color: rgba(127,255,0,0.5);
+    margin-right: 10px;
+}
+
+.map-map .map-map-wrapper.map-map-wrapper-display-help:before {
+    content: attr(data-help);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(255,255,255,0.5);
+    display: block;
+    padding: 40px;
+    border-radius: 40px;
+    z-index: 10;
+    pointer-events: none;
+    font-family: "Crom";
+}
+
+.map-map-help {
+    padding: 10px;
+    font-size: 24px;
+}
+
+.map-map-help h1 {
+    text-align: center;
+    margin: 0 0 20px 0;    
+}
+
+.map-map-help {
+    height: 30vh;
+}
+
+@media (orientation: portrait) {
+    .map-map-help .map-help-thumb {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .map-map-help .map-help-thumb img {
+        height: 30vh;
+    }
+    
+    .map-map-help .map-help-thumb div {
+        display: inline-block;
+        position: relative;
+    }
+    
+    .map-map-help ul {
+        height: calc(100% - 30vh - 20px);
+        vertical-align: top;
+    }
+}
+@media (orientation: landscape) {
+    .map-map-help .map-help-thumb {
+        text-align: center;
+        display: inline-block;
+        margin-right: 20px;
+        height: 100%;
+    }
+    .map-map-help .map-help-thumb img {
+        width: 30vw;
+    }
+    
+    .map-map-help .map-help-thumb div {
+        display: inline-block;
+        position: relative;
+    }
+    .map-map-help ul {
+        height: 100%;
+        width: calc(100% - 30vw - 20px);
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+
+.map-help-legend {
+    position: absolute;
+    background-color: #000000;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 30px;
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+    z-index: 1;
+}
+
+.map-map-help ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;    
+    overflow: auto;
+}
+
+.map-help-rule-title, .map-help-rule-description {
+    font-family: 'Moolbor';
+    display: block;
+}
+
+.map-help-rule-title:before {
+    content: attr(data-num);
+    border: 1px solid #000;
+    border-radius: 20px;
+    margin-right: 10px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 30px;
+}
+.map-help-rule-title {
+    font-weight: bold;    
+    font-size: 26px;
+    line-height: 22px;
+}
+
+.map-help-rule-description {
+    padding-left: 33px;
+    font-size: 22px;
+    line-height: 19px;
+}
+
+.map-map-help .map-help-character {
+    width: 25px;
+    height: 25px;
+    vertical-align: sub;
+    display: inline;
+}
+
+.map-map-area {
+    width: 100%;
+    height: 100%; 
+}
+.map-map-area svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.map-map-area svg circle.center1 {
+    fill: #FFFFFF;
+    pointer-events: none;
+}
+.map-map-area svg circle.center2 {
+    fill: none;
+    stroke: #FFFFFF;
+    pointer-events: none;
+}
+.map-map-area svg circle.level {
+    fill: none;
+    stroke: #00FF00;
+    pointer-events: none;
+}
+.map-map-area svg line {
+    stroke: rgba(127,62,127,0.6);
+    stroke-width: 2px;
+    stroke-dasharray: 4,2;
+    pointer-events: none;
+}
+
+.map-map-area-zone {
+    fill-opacity: 0; 
+    stroke-opacity: 0; 
+    stroke-linecap: round; 
+    stroke-linejoin: round;
+    fill: #0000FF;
+}
+.map-map-area-zone:hover {
+    fill-opacity: 0.1; 
+}
+.map-map-area-zone-active {
+    fill-opacity: 0.2; 
+}
+.map-map-area-zone-active:hover {
+    fill-opacity: 0.3; 
+}
+.map-map-area-zone-target {
+    fill: #00FF00;
+    fill-opacity: 0.3; 
+}
+.map-map-area-zone-target-upper {
+    fill: #7fFF00;
+}
+.map-map-area-zone-target-lower {
+    fill: #00FF7f;
+}
+.map-map-area-zone-target:hover {
+    fill-opacity: 0.4; 
+}
