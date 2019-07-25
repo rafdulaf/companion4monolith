@@ -1,13 +1,8 @@
 @font-face {
     font-family: 'Crom';
-    src: url('../fonts/Crom.eot');
-    src: url('../fonts/Crom.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Crom.woff2') format('woff2'),
-    url('../fonts/Crom.woff') format('woff'),
-    url('../fonts/Crom.ttf') format('truetype'),
-    url('../fonts/Crom.svg#Crom') format('svg');
     font-weight: normal;
     font-style: normal;
+    src: url("../fonts/Crom.woff");
 }
 
 @font-face {
@@ -16,6 +11,14 @@
   font-weight: 400;
   font-display: auto;
   src: url("../fonts/moolbor.woff");
+}
+
+@font-face {
+  font-family: 'Motrg';
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: url("../fonts/motrg_.woff");
 }
 
 @font-face {
