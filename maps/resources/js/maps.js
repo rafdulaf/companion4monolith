@@ -215,8 +215,9 @@ var ConanMaps = {
 			for (var i in ConanMaps._files)
 			{
 				var imgCode = "<div class='map-index-board-image' style=\"background-image: url('maps/data/" + i + "/thumb.png" + "\');\"/>"
+                var subtitleCode = "<div class='map-index-board-sublegend'>" + ConanAbout._origins[Language][ConanMaps._files[i].description.origin + '-short'] + "</div>";
 				var titleCode = "<div class='map-index-board-legend'>" + ConanMaps._files[i].description.title[Language] + "</div>";
-				code += "<li><a href=\"javascript:void(0);\" onclick=\"ConanMaps._displayMap('" + i + "')\">" + imgCode + titleCode + "</a></li>";
+				code += "<li><a href=\"javascript:void(0);\" onclick=\"ConanMaps._displayMap('" + i + "')\">" + imgCode + titleCode + subtitleCode + "</a></li>";
 			}
 			
 			$('#maps').append("<div id='" + id + "' class='map-card map-index' style='display: none'><ul>" + code + "</ul></div>");

@@ -61,12 +61,18 @@ var ConanAbout = {
     _origins: {
         'fr': {
             'corebox': "Boite de base",
+            'corebox-short': "Boite de base",
             'stretchgoal': "Boite de base étendue \"Barbarian\"",
+            'stretchgoal-short': "Boîte Barbarian", 
             'king': "Boite de base étendue \"King\"",
+            'king-short': "Boîte King",
             
             'nordheim': "Extension Nordheim",
+            'nordheim-short': "Nordheim",
             'khitai': "Extension Khitaï",
+            'khitai-short': "Khitaï",
             'stygie': "Extension Stygie",
+            'stygie-short': "Stygie",
             
             'crossbowmen': "Arbalétriers",
             'blackdragons': "Dragons Noirs",
@@ -92,12 +98,18 @@ var ConanAbout = {
         },
         'en': {
             'corebox': "Core box", 
-            'stretchgoal': "\"Barbarian\" expanded core box",
+            'corebox-short': "Core box", 
+            'stretchgoal': "Barbarian",
+            'stretchgoal-short': "\"Barbarian\" expanded core box",
             'king': "\"King\" expanded core box",
+            'king-short': "King",
             
             'nordheim': "Nordheim expansion",
+            'nordheim-short': "Nordheim",
             'khitai': "Khitaï expansion",
+            'khitai-short': "Khitaï",
             'stygie': "Stygie expansion",
+            'stygie-short': "Stygie",
             
             'crossbowmen': "Crossbowmen",
             'blackdragons': "Black dragons",

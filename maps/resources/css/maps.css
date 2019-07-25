@@ -67,8 +67,18 @@
     color: #FFF;
     text-align: left;
     font-family: 'Crom';
-    padding: 10px 5px 10px 10px;
+    padding: 15px 5px 5px 10px;
     background-color: rgba(0,0,0,0.3);
+}
+.map-index > ul > li > a > .map-index-board-sublegend {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: #CFCFCF;
+    text-align: left;
+    font-family: 'Moolbor';
+    padding: 2px 5px 5px 9px;
 }
 
 .map-card a, .map-card a:link, .map-card a:hover, .map-card a:visited {
@@ -88,6 +98,9 @@
 .map-index > ul > li > a > .map-index-board-legend {
     font-size: 13px;
 }
+.map-index > ul > li > a > .map-index-board-sublegend {
+    font-size: 13px;
+}
 @media screen and (min-width: 380px) {
     .map-index > ul > li > a > .map-index-board-image {
         width: 150px;
@@ -96,6 +109,9 @@
     }
     .map-index > ul > li > a > .map-index-board-legend {
         font-size: 13px;
+    }
+    .map-index > ul > li > a > .map-index-board-sublegend {
+        font-size: 17px;
     }
 }
 @media screen and (min-width: 640px) {
@@ -107,6 +123,9 @@
     .map-index > ul > li > a > .map-index-board-legend {
         font-size: 13px;
     }
+    .map-index > ul > li > a > .map-index-board-sublegend {
+        font-size: 17px;
+    }
 }
 @media screen and (min-width: 768px) {
     .map-index > ul > li > a > .map-index-board-image {
@@ -117,6 +136,9 @@
     .map-index > ul > li > a > .map-index-board-legend {
         font-size: 15px;
     }
+    .map-index > ul > li > a > .map-index-board-sublegend {
+        font-size: 18px;
+    }
 }
 @media screen and (min-width: 1024px) {
     .map-index > ul > li > a > .map-index-board-image {
@@ -125,6 +147,9 @@
         padding: 5px 5px 5px 5px;
     }
     .map-index > ul > li > a > .map-index-board-legend {
+        font-size: 22px;
+    }
+    .map-index > ul > li > a > .map-index-board-sublegend {
         font-size: 22px;
     }
 }
