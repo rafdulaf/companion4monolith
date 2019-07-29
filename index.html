@@ -48,9 +48,9 @@
         <script>
             var useragent = navigator.userAgent.toLowerCase();
 	        if (!/edge\/([0-9.]+)/.test(useragent) 
-	        		&& !/ firefox\/([0-9.]+)( |$)/.test(useragent) 
-	        		&& !/ chrome\/([0-9]+\.[0-9]+)\./.test(useragent)
-	        		&& !/ version\/([0-9.]+) safari\//.test(useragent))
+	        		&& !/firefox/.test(useragent) 
+	        		&& !/chrome/.test(useragent)
+	        		&& !/safari/.test(useragent))
 	        {
 	        	jQuery(document).ready(function() {
 	        		document.body.innerHTML = "Your browser is not supported. Try using Chrome or Firefox for example.<br/>Votre navigateur n'est pas supporté. Essayez d'utiliser Chrome ou Firefox par example.";
