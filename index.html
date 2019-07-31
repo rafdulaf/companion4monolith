@@ -53,7 +53,7 @@
 	        		&& !/safari/.test(useragent))
 	        {
 	        	jQuery(document).ready(function() {
-	        		document.body.innerHTML = "Your browser is not supported. Try using Chrome or Firefox for example.<br/>Votre navigateur n'est pas supporté. Essayez d'utiliser Chrome ou Firefox par example.";
+	        		document.body.innerHTML = "<style>html {background-color: #e64443; color: #FFF; } p {font-weight: bold; font-family: 'Moolbor'; font-size: 30px;} h1 {font-family: 'Crom'} td { vertical-align: center; text-align: center; } hr { width: 50px; }</style><table width='100%' height='100%'><tr><td><h1>Your browser is not supported</h1><p>Try using the last version of Chrome or Firefox for example<p><hr/><h1>Votre navigateur n'est pas supporte</h1><p>Essayez d'utiliser la dernière version de Chrome ou de Firefox par example.</p></td></tr></table>";
 	        	});
 	        }
 	        else
