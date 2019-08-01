@@ -15,6 +15,7 @@ var ConanAbout = {
                     + "Le logo Conan et les polices de caractères utilisées sont la propriété de Monolith.<br/>"
                     + "L'image du 'Compagnion de Conan' a été créée à partir du logo Conan.<br/>",
             'preferences': 'Mes préferences',
+            'preferences2': 'Mes preferences',
             'preferences_text': "Sélectionnez vos préférences qui seront enregistrées sur votre appareil.",
             'preferences_general': "Généralités",
             'custom': "Mes extensions",
@@ -42,8 +43,9 @@ var ConanAbout = {
                     + "'Conan' is a board game published by <a href='http://monolithedition.com' target='_blank'>Monolith</a>.<br/>"
                     + "The Conan logo and the fonts used are the property of Monolith.<br/>"
                     + "The image of 'Companion for Conan' was created by adapting the Conan logo.<br/>",
-            'preferences': 'My preferences',
-            'preferences_text': "Select your preferences that will be stored on your device.",
+            'preferences': 'My settings',
+            'preferences2': 'My settings',
+            'preferences_text': "Select your settings that will be stored on your device.",
             'preferences_general': "Generality",
             'custom': "My expansions",
             'custom_text': "Select your expansions that will be stored on your device.",
@@ -189,7 +191,7 @@ var ConanAbout = {
     {
         $("nav.menu input")[0].checked = false;
         
-        Nav.dialog(ConanAbout._i18n[Language].custom,
+        Nav.dialog(ConanAbout._i18n[Language].preferences2,
             "<div class=\"custom\">"
             +       "<div>" + ConanAbout._i18n[Language].preferences_text + "</div>"
             
