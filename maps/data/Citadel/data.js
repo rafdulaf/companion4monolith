@@ -15,8 +15,8 @@ Citadel = {
                     'en': "Leaping From/Climbing a Balcony"
                 },
                 description: { 
-                    'fr': "sauter depuis le balcon inflige {dice_yellow}{dice_yellow} sans défense possible, {dice_yellow} si la figurine possède la compétence Saut. Remonter sur le balcon coûte 1 point de mouvement supplémentaire pour un personnage ayant la compétence Escalade.",
-                    'en': "a character can move across a railing from a balcony area to a ground floor area as though it were a border. The character rolls {dice_yellow}{dice_yellow} for falling damage. If the character has Leap, the character rolls {dice_yellow} instead. A character with Climb can move across a railing from a ground floor area to a balcony area by spending 1 extra movement point."
+                    'fr': "Sauter depuis le balcon inflige {dice_yellow}{dice_yellow} sans défense possible, {dice_yellow} si la figurine possède la compétence Saut. Remonter sur le balcon coûte 1 point de mouvement supplémentaire pour un personnage ayant la compétence Escalade.",
+                    'en': "A character can move across a railing from a balcony area to a ground floor area as though it were a border. The character rolls {dice_yellow}{dice_yellow} for falling damage. If the character has Leap, the character rolls {dice_yellow} instead. A character with Climb can move across a railing from a ground floor area to a balcony area by spending 1 extra movement point."
                 },
                 coordinates: [[ 60, 62 ]]
             }, {
@@ -25,8 +25,8 @@ Citadel = {
                     'en': "Pit"
                 },
                 description: { 
-                    'fr': "y entrer est un mouvement normal, en sortir coûte 1 point de mouvement supplémentaire.",
-                    'en': "a character must spend 1 extra movement point to move out of the pit area"
+                    'fr': "Y entrer est un mouvement normal, en sortir coûte 1 point de mouvement supplémentaire.",
+                    'en': "A character must spend 1 extra movement point to move out of the pit area"
                 },
                 coordinates: [[ 47, 64 ]]
             }, {
@@ -35,7 +35,7 @@ Citadel = {
                     'en': "Cellar windows"
                 },
                 description: { 
-                    'fr': "les grilles ne bloquent pas les lignes de vue.",
+                    'fr': "Les grilles ne bloquent pas les lignes de vue.",
                     'en': "The cellar windows do not block lines of sight."
                 },
                 coordinates: [[ 60, 14 ], [ 72, 48 ], [ 72, 73 ]]

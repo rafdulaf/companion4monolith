@@ -15,8 +15,8 @@ Mound = {
                     'en': "Blood! Gore! Slush!"
                 },
                 description: { 
-                    'fr': "a chaque fois qu’un Héros utilise des points de mouvement pour se déplacer, il doit dépenser 1 gemme en plus du coût normal, quel que soit le nombre de zones parcourues. Cette gemme est placée sur la case Mouvement mais n’octroie pas de point de mouvement au Héros. Niord, les alliés Aesirs et les unités de l’Overloard ne sont pas soumis à cette règle.",
-                    'en': "every time a hero spends movement points to move, they must add 1 additional gem to the Movement point total. This gem is placed in the hero’s Move space, but does not add a movement point. This effect occurs once per Move action regardless of how many areas the hero moves through. Niord, Aesir Warriors and the Overlord’s units are not affected."
+                    'fr': "A chaque fois qu’un Héros utilise des points de mouvement pour se déplacer, il doit dépenser 1 gemme en plus du coût normal, quel que soit le nombre de zones parcourues. Cette gemme est placée sur la case Mouvement mais n’octroie pas de point de mouvement au Héros. Niord, les alliés Aesirs et les unités de l’Overloard ne sont pas soumis à cette règle.",
+                    'en': "Every time a hero spends movement points to move, they must add 1 additional gem to the Movement point total. This gem is placed in the hero’s Move space, but does not add a movement point. This effect occurs once per Move action regardless of how many areas the hero moves through. Niord, Aesir Warriors and the Overlord’s units are not affected."
                 },
                 coordinates: []
             }, {
@@ -25,8 +25,8 @@ Mound = {
                     'en': "That’s Not a Mountain"
                 },
                 description: { 
-                    'fr': "la colline n'affecte pas le déplacement des figurines. La zone au sommet de la colline centrale permet cependant de gagner le bonus de surplomb habituel tout comme les 3 tertres  aux angles de la carte",
-                    'en': "the hill does not affect movement. The area at the top of the hill still provides the Elevation bonus, as do the cliffs at the corners of the game board."
+                    'fr': "La colline n'affecte pas le déplacement des figurines. La zone au sommet de la colline centrale permet cependant de gagner le bonus de surplomb habituel tout comme les 3 tertres  aux angles de la carte",
+                    'en': "The hill does not affect movement. The area at the top of the hill still provides the Elevation bonus, as do the cliffs at the corners of the game board."
                 },
                 coordinates: [[50,48], [6,8], [88,15], [86,97]]
             }

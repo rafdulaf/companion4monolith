@@ -15,8 +15,8 @@ Swamp = {
                     'en': "Water areas"
                 },
                 description: { 
-                    'fr': "quitter une zone d’eau coûte 1 point de mouvement supplémentaire. Quitter une zone d’eau pour monter directement sur une zone de bois coûte 2 points de mouvement supplémentaires.",
-                    'en': "a character must spend 1 extra movement point to move out of a water area. A character can move from a water area to an adjacent wood area by spending 2 extra movement points."
+                    'fr': "Quitter une zone d’eau coûte 1 point de mouvement supplémentaire. Quitter une zone d’eau pour monter directement sur une zone de bois coûte 2 points de mouvement supplémentaires.",
+                    'en': "A character must spend 1 extra movement point to move out of a water area. A character can move from a water area to an adjacent wood area by spending 2 extra movement points."
                 },
                 coordinates: []
             }, {
@@ -25,8 +25,8 @@ Swamp = {
                     'en': "Leap"
                 },
                 description: { 
-                    'fr': "il n’est pas possible de sauter la zone d’eau centrale autour de l’autel en un seul saut. Un arrêt intermédiaire sur l’autel est obligatoire",
-                    'en': "leaping over the water area around the altar in a single movement is not possible. The character must stop in the altar area before performing a second leap."
+                    'fr': "Il n’est pas possible de sauter la zone d’eau centrale autour de l’autel en un seul saut. Un arrêt intermédiaire sur l’autel est obligatoire",
+                    'en': "Leaping over the water area around the altar in a single movement is not possible. The character must stop in the altar area before performing a second leap."
                 },
                 coordinates: [[45,55]]
             }, {
@@ -35,8 +35,8 @@ Swamp = {
                     'en': "Wooden Huts"
                 },
                 description: { 
-                    'fr': "les cloisons des huttes peuvent être défoncées par la compétence Défoncer les cloisons.",
-                    'en': "a character with Wall Wrecker can use it to move across the wall of one of the wooden huts."
+                    'fr': "Les cloisons des huttes peuvent être défoncées par la compétence Défoncer les cloisons.",
+                    'en': "A character with Wall Wrecker can use it to move across the wall of one of the wooden huts."
                 },
                 coordinates: [[15,45], [27,40], [67,40], [15,85], [45,85], [87,85]]
             }

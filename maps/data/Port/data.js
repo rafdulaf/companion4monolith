@@ -15,8 +15,8 @@ Port = {
                     'en': "Jumping into Water"
                 },
                 description: { 
-                    'fr': "un personnage dans une zone adjacente à une des zones de mer situées au sud de la ville peut se jeter à l’eau sans pénalité de mouvement. Si ce personnage ne dispose pas de la compétence Natation, il meurt immédiatement.",
-                    'en': "a character adjacent to a water area may move into that area with no movement penalty. When a character without Swimming moves into a water area, that character dies immediately."
+                    'fr': "Un personnage dans une zone adjacente à une des zones de mer situées au sud de la ville peut se jeter à l’eau sans pénalité de mouvement. Si ce personnage ne dispose pas de la compétence Natation, il meurt immédiatement.",
+                    'en': "A character adjacent to a water area may move into that area with no movement penalty. When a character without Swimming moves into a water area, that character dies immediately."
                 },
                 coordinates: [[50,97]]
             }, {
@@ -25,8 +25,8 @@ Port = {
                     'en': "Moving back onto the docks"
                 },
                 description: { 
-                    'fr': "un personnage dans une zone d’eau adjacente à une échelle peut remonter sur le quai pour un surcoût de 1 point de mouvement.",
-                    'en': "a character in a water area adjacent to a ladder may move back onto the docks by spending 1 extra movement point."
+                    'fr': "Un personnage dans une zone d’eau adjacente à une échelle peut remonter sur le quai pour un surcoût de 1 point de mouvement.",
+                    'en': "A character in a water area adjacent to a ladder may move back onto the docks by spending 1 extra movement point."
                 },
                 coordinates: [[3,97], [97,97]]
             }, {
@@ -35,7 +35,7 @@ Port = {
                     'en': "Roof Top"
                 },
                 description: { 
-                    'fr': "les zones situées sur le toit de l’immeuble à l’ouest de la ville donnent un bonus de surplomb sur les zones situées en contrebas, y compris les escaliers menant à ces toits. Sauter depuis les toits dans la rue inflige {dice_orange}{dice_orange} sans défense possible et {dice_orange} si le personnage possède la compétence Saut. Il n’est pas possible de remonter sur les toits depuis la rue autrement que par les escaliers.",
+                    'fr': "Les zones situées sur le toit de l’immeuble à l’ouest de la ville donnent un bonus de surplomb sur les zones situées en contrebas, y compris les escaliers menant à ces toits. Sauter depuis les toits dans la rue inflige {dice_orange}{dice_orange} sans défense possible et {dice_orange} si le personnage possède la compétence Saut. Il n’est pas possible de remonter sur les toits depuis la rue autrement que par les escaliers.",
                     'en': "The areas located on the roof top of the building on the left side of the board provide an elevation bonus, including on the stairs areas. A character may jump from these areas to the areas of the street level. That character rolls {dice_orange}{dice_orange} for falling damage. If that character has Leap, that character rolls {dice_orange}. A character cannot move onto the roof top areas directly from the street level except when moving through the stairs areas."
                 },
                 coordinates: [[8,52], [8,70], [33,52], [33,75]]
@@ -45,8 +45,8 @@ Port = {
                     'en': "Wall Wrecker"
                 },
                 description: { 
-                    'fr': "le seul mur qui peut être défoncé est celui situé dans l'entrepôt à l'est de la ville",
-                    'en': "a character with Wall Wrecker can only use this skill to move across the wall in the warehouse on the right side of the board."
+                    'fr': "Le seul mur qui peut être défoncé est celui situé dans l'entrepôt à l'est de la ville",
+                    'en': "A character with Wall Wrecker can only use this skill to move across the wall in the warehouse on the right side of the board."
                 },
                 coordinates: [[74,53]]
             } 

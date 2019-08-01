@@ -15,7 +15,7 @@ Ships = {
                     'en': "Hold"
                 },
                 description: { 
-                    'fr': "la sortie de la soute doit se faire par la zone directement en face des escaliers.",
+                    'fr': "La sortie de la soute doit se faire par la zone directement en face des escaliers.",
                     'en': "A character coming out of the hold must move in the area in front of its exit."
                 },
                 coordinates: [[40,25], [48,70]]
@@ -35,8 +35,8 @@ Ships = {
                     'en': "Line of sight"
                 },
                 description: { 
-                    'fr': "il existe une ligne de vue depuis une zone de navire vers une zone d’eau, si la ligne de vue ne passe pas au travers de plus d’une zone de navire (en comptant la zone de départ de la ligne de vue), et permet de bénéficier du bonus de surplomb de {dice_yellow}. Il existe une ligne de vue depuis une zone d’eau vers une zone de navire, si la ligne de vue ne passe pas au travers de plus d’une zone de navire (en comptant la zone d’arriveé de la ligne de vue).",
-                    'en': " There is a line of sight from a ship area to a water area if the line of sight does not cross more than one ship area, including the line of sight starting area. The ship areas provide an Elevation bonus of {dice_yellow} on the water areas. There is a line of sight from a water area to a ship area if the line of sight does not cross more than one ship area, including the line of sight finishing area."
+                    'fr': "Il existe une ligne de vue depuis une zone de navire vers une zone d’eau, si la ligne de vue ne passe pas au travers de plus d’une zone de navire (en comptant la zone de départ de la ligne de vue), et permet de bénéficier du bonus de surplomb de {dice_yellow}. Il existe une ligne de vue depuis une zone d’eau vers une zone de navire, si la ligne de vue ne passe pas au travers de plus d’une zone de navire (en comptant la zone d’arriveé de la ligne de vue).",
+                    'en': "There is a line of sight from a ship area to a water area if the line of sight does not cross more than one ship area, including the line of sight starting area. The ship areas provide an Elevation bonus of {dice_yellow} on the water areas. There is a line of sight from a water area to a ship area if the line of sight does not cross more than one ship area, including the line of sight finishing area."
                 },
                 coordinates: []
             }

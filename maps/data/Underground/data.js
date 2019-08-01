@@ -15,7 +15,7 @@ Underground = {
                     'en': "Moving Through a Well"
                 },
                 description: { 
-                    'fr': "le plateau est composé de deux niveaux dont le niveau « 1 » est exactement superposé au niveau « 0 ».<br/>Le niveau est indiqué par un pictogramme en bas à gauche de chaque niveau. Un personnage, avec ou sans la compétence Escalade, présent dans la zone d’un puits peut l’emprunter pour se déplacer du niveau « 1 » au niveau « 0 » (et inversement) pour un surcoût de 2 points de mouvement.<br/>Emprunter un puits permet de se déplacer dans la zone du puits trouvant exactement à sa verticale (au niveau supérieur ou inférieur). Les Scorpions géants peuvent emprunter les puits sans pénalité de mouvement.",
+                    'fr': "Le plateau est composé de deux niveaux dont le niveau « 1 » est exactement superposé au niveau « 0 ».<br/>Le niveau est indiqué par un pictogramme en bas à gauche de chaque niveau. Un personnage, avec ou sans la compétence Escalade, présent dans la zone d’un puits peut l’emprunter pour se déplacer du niveau « 1 » au niveau « 0 » (et inversement) pour un surcoût de 2 points de mouvement.<br/>Emprunter un puits permet de se déplacer dans la zone du puits trouvant exactement à sa verticale (au niveau supérieur ou inférieur). Les Scorpions géants peuvent emprunter les puits sans pénalité de mouvement.",
                     'en': "The game board represents 2 levels of a Stygian temple with level « 1 » being exactly on top of level « 0 ».<br/>The level is indicated by an icon on the lower-left corner of each level. A character with or without Climb in the opened well's area may move from level « 1 » to level « 0 » (and the other way) by spending 2 extra movement points.<br/>Moving through a well takes a character's model to the area with a well token directly above or below. The Giant Scorpions may move through all the wells, opened or not, with no movement penalty."
                 },
                 coordinates: []
@@ -25,8 +25,8 @@ Underground = {
                     'en': "Moving Through Secret Passages"
                 },
                 description: { 
-                    'fr': "chaque niveau est parcouru par un réseau de passages secrets dont les entrées sont représentées par un pion. Un personnage dans la zone d’un passage secret peut se déplacer vers une autre zone avec un passage secret du même niveau en dépensant 2 points de mouvement supplémentaires.<br/>Les unités de l’Overlord et Ikhmet connaissent les recoins du temple et ignorent cette pénalité.<br/>Les zones de départ et d’arrivée doivent être vides d’ennemis.",
-                    'en': "each level is traversed by a network of secret passages which entrances are represented by secret passage tokens. A character in an area with a secret passage may move to another area with a secret passage of the same level by spending 2 extra movement points.<br/>To move through a secret passage, both areas with the entrance and the exit must be clear of enemies. The Overlord's units and Ikhmet know the nooks of the temple and may move through a secret passage with no movement penalty."
+                    'fr': "Chaque niveau est parcouru par un réseau de passages secrets dont les entrées sont représentées par un pion. Un personnage dans la zone d’un passage secret peut se déplacer vers une autre zone avec un passage secret du même niveau en dépensant 2 points de mouvement supplémentaires.<br/>Les unités de l’Overlord et Ikhmet connaissent les recoins du temple et ignorent cette pénalité.<br/>Les zones de départ et d’arrivée doivent être vides d’ennemis.",
+                    'en': "Each level is traversed by a network of secret passages which entrances are represented by secret passage tokens. A character in an area with a secret passage may move to another area with a secret passage of the same level by spending 2 extra movement points.<br/>To move through a secret passage, both areas with the entrance and the exit must be clear of enemies. The Overlord's units and Ikhmet know the nooks of the temple and may move through a secret passage with no movement penalty."
                 },
                 coordinates: []
             }, {
@@ -35,8 +35,8 @@ Underground = {
                     'en': "Darkness"
                 },
                 description: { 
-                    'fr': "le dédale des tunnels est plongé dans une obscurité impénétrable. Il n’existe pas de ligne de vue entre deux zones différentes sur tout le plateau. Toute action nécessitant une ligne de vue ne peut être réalisée que dans une même zone.",
-                    'en': "the maze of tunnels is plunged into an impenetrable darkness. There is no line of sight between two different areas of the whole board. Each action that requires a line of sight can only be performed within a single area."
+                    'fr': "Le dédale des tunnels est plongé dans une obscurité impénétrable. Il n’existe pas de ligne de vue entre deux zones différentes sur tout le plateau. Toute action nécessitant une ligne de vue ne peut être réalisée que dans une même zone.",
+                    'en': "The maze of tunnels is plunged into an impenetrable darkness. There is no line of sight between two different areas of the whole board. Each action that requires a line of sight can only be performed within a single area."
                 },
                 coordinates: []
             }

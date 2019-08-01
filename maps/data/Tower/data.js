@@ -15,8 +15,8 @@ Tower = {
                     'en': "Dive"
                 },
                 description: { 
-                    'fr': "un Héros présent dans les zones peut essayer de sauter dans l’étang en contrebas. Pour cela, il doit se déplacer hors de la case et dépenser 1 point de mouvement supplémentaire pour plonger. Sauter dans l’étang inflige {dice_orange}{dice_orange} sans défense possible et {dice_orange} si la figurine possède la compétence saut.",
-                    'en': "a character in an area marked with the Leap icon may leap in the pond's area of level 1 by spending 1 extra movement point. The character rolls {dice_orange}{dice_orange} for falling damage with no possible defense. If the character has Leap, the character rolls {dice_orange} instead."
+                    'fr': "Un Héros présent dans les zones peut essayer de sauter dans l’étang en contrebas. Pour cela, il doit se déplacer hors de la case et dépenser 1 point de mouvement supplémentaire pour plonger. Sauter dans l’étang inflige {dice_orange}{dice_orange} sans défense possible et {dice_orange} si la figurine possède la compétence saut.",
+                    'en': "A character in an area marked with the Leap icon may leap in the pond's area of level 1 by spending 1 extra movement point. The character rolls {dice_orange}{dice_orange} for falling damage with no possible defense. If the character has Leap, the character rolls {dice_orange} instead."
                 },
                 coordinates: []
             }, {
@@ -25,8 +25,8 @@ Tower = {
                     'en': "Stone wall"
                 },
                 description: { 
-                    'fr': "un personnage disposant de la compétence « Défoncer Parois » ne peut pas défoncer les parois extérieures de la tour et les murs en pierres.",
-                    'en': "a character with Wall Wrecker cannot use it to move across an outer wall of the tower or a stone wall."
+                    'fr': "Un personnage disposant de la compétence « Défoncer Parois » ne peut pas défoncer les parois extérieures de la tour et les murs en pierres.",
+                    'en': "A character with Wall Wrecker cannot use it to move across an outer wall of the tower or a stone wall."
                 },
                 coordinates: []
             }, {
@@ -45,8 +45,8 @@ Tower = {
                     'en': "Climbing"
                 },
                 description: { 
-                    'fr': "un personnage ayant la compétence Escalade peut :<br/>• passer du niveau « 1 » au niveau « 2 » (et inversement) en grimpant par l’arbre pour 1 point de mouvement supplémentaire,<br/>• passer du niveau « 2 » à « 3 » (et inversement) ou du niveau « 3 » à « 4 » (et inversement) en grimpant par l’extérieur de la tour pour 2 points de mouvement supplémentaires.",
-                    'en': "a character with Climb may:<br/>• Move from level « 1 » to level « 2 » (and the other way) by climbing the tree and spending 1 extra movement point<br/>• Move from level « 2 » to level « 3 » (and the other way) ou from level « 3 » to level « 4 » (and the other way) by climbing the outside walls of the tower and spending 2 extra movement points."
+                    'fr': "Un personnage ayant la compétence Escalade peut :<br/>• passer du niveau « 1 » au niveau « 2 » (et inversement) en grimpant par l’arbre pour 1 point de mouvement supplémentaire,<br/>• passer du niveau « 2 » à « 3 » (et inversement) ou du niveau « 3 » à « 4 » (et inversement) en grimpant par l’extérieur de la tour pour 2 points de mouvement supplémentaires.",
+                    'en': "A character with Climb may:<br/>• Move from level « 1 » to level « 2 » (and the other way) by climbing the tree and spending 1 extra movement point<br/>• Move from level « 2 » to level « 3 » (and the other way) ou from level « 3 » to level « 4 » (and the other way) by climbing the outside walls of the tower and spending 2 extra movement points."
                 },
                 coordinates: []
             }, {
@@ -55,8 +55,8 @@ Tower = {
                     'en': "Table and stairs"
                 },
                 description: { 
-                    'fr': "les escaliers donnent un bonus de surplomb sur les zones situées en contrebas. Il est possible de monter sur la table située au niveau « 2 » avec ou sans les compétences Saut ou Escalade pour 1 point de mouvement supplémentaire. Un personnage sur la zone de la table bénéficie du bonus de surplomb pour ses attaques à distance et au corps-à-corps. Il est possible d’attaquer les zones adjacentes au corps-à-corps depuis cette zone avec ou sans la compétence Allonge. La zone de la table ne bloque pas la ligne de vue.",
-                    'en': "the stairs provide an Elevation bonus for Ranged Attacks against an enemy on a lower area. A character with or without Leap or Climb may move onto the table on level"
+                    'fr': "Les escaliers donnent un bonus de surplomb sur les zones situées en contrebas. Il est possible de monter sur la table située au niveau « 2 » avec ou sans les compétences Saut ou Escalade pour 1 point de mouvement supplémentaire. Un personnage sur la zone de la table bénéficie du bonus de surplomb pour ses attaques à distance et au corps-à-corps. Il est possible d’attaquer les zones adjacentes au corps-à-corps depuis cette zone avec ou sans la compétence Allonge. La zone de la table ne bloque pas la ligne de vue.",
+                    'en': "The stairs provide an Elevation bonus for Ranged Attacks against an enemy on a lower area. A character with or without Leap or Climb may move onto the table on level"
                 },
                 coordinates: []
             }

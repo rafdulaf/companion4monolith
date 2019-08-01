@@ -15,8 +15,8 @@ Pict_Village = {
                     'en': "the hut flaps"
                 },
                 description: { 
-                    'fr': "les tentures à l’entrée de chaque hutte (et à l'intérieur de la grande) bloquent la ligne de vue. Entrer ou sortir d’une hutte demande 1 point de mouvement supplémentaire à cause des tentures.",
-                    'en': "the hut flaps at the entrance of each hut block lines of sight. A character must spend 1 extra movement point to move across a border into or out of a hut."
+                    'fr': "Les tentures à l’entrée de chaque hutte (et à l'intérieur de la grande) bloquent la ligne de vue. Entrer ou sortir d’une hutte demande 1 point de mouvement supplémentaire à cause des tentures.",
+                    'en': "The hut flaps at the entrance of each hut block lines of sight. A character must spend 1 extra movement point to move across a border into or out of a hut."
                 },
                 coordinates: []
             }, {
@@ -25,8 +25,8 @@ Pict_Village = {
                     'en': "Wall wrecker"
                 },
                 description: { 
-                    'fr': "on ne peut pas défoncer les cloisons des huttes en pierre.",
-                    'en': "the huts with stone walls cannot be wrecked using Wall Wrecker"
+                    'fr': "On ne peut pas défoncer les cloisons des huttes en pierre.",
+                    'en': "The huts with stone walls cannot be wrecked using Wall Wrecker"
                 },
                 coordinates: []
             }, {
@@ -35,8 +35,8 @@ Pict_Village = {
                     'en': "Outer walls"
                 },
                 description: { 
-                    'fr': "on ne peut pas défoncer les murs d’enceinte, ni les escalader",
-                    'en': "the outer walls cannot be climbed over, or wrecked using Wall Wrecker."
+                    'fr': "On ne peut pas défoncer les murs d’enceinte, ni les escalader",
+                    'en': "The outer walls cannot be climbed over, or wrecked using Wall Wrecker."
                 },
                 coordinates: []
             }, {
@@ -45,8 +45,8 @@ Pict_Village = {
                     'en': "Lines of sight"
                 },
                 description: { 
-                    'fr': "les arbustes ne bloquent pas la ligne de vue.",
-                    'en': "the bushes do not block lines of sight."
+                    'fr': "Les arbustes ne bloquent pas la ligne de vue.",
+                    'en': "The bushes do not block lines of sight."
                 },
                 coordinates: []
             }, {
@@ -55,8 +55,8 @@ Pict_Village = {
                     'en': "Wooden Huts"
                 },
                 description: { 
-                    'fr': "les cloisons des huttes peuvent être défoncées par la compétence Défoncer les cloisons. On ne peut pas défoncer les cloisons d’une hutte saturée.",
-                    'en': "a character with Wall Wrecker can use it to move across the wall of one of the wooden huts. The walls of an occupied hut (see page 22 of the Revised Heroes’ Book) cannot be wrecked using Wall Wrecker."
+                    'fr': "Les cloisons des huttes peuvent être défoncées par la compétence Défoncer les cloisons. On ne peut pas défoncer les cloisons d’une hutte saturée.",
+                    'en': "A character with Wall Wrecker can use it to move across the wall of one of the wooden huts. The walls of an occupied hut (see page 22 of the Revised Heroes’ Book) cannot be wrecked using Wall Wrecker."
                 },
                 coordinates: []
             }, {
@@ -65,8 +65,8 @@ Pict_Village = {
                     'en': "Climbing"
                 },
                 description: { 
-                    'fr': "franchir les rochers demande la compétence Escalade et 2 points de mouvement supplémentaires.",
-                    'en': "a character with Climb can move across boulders as though they were a border by spending 2 extra movement points."
+                    'fr': "Franchir les rochers demande la compétence Escalade et 2 points de mouvement supplémentaires.",
+                    'en': "A character with Climb can move across boulders as though they were a border by spending 2 extra movement points."
                 },
                 coordinates: [[66,90]]
             } 

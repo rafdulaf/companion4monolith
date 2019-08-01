@@ -15,8 +15,8 @@ Abandoned_Fort = {
                     'en': "Parapet and tower"
                 },
                 description: { 
-                    'fr': "seules les zones de rempart directement adjacentes aux tours partagent une ligne de vue avec l’intérieur de la tour.",
-                    'en': "only the areas directly adjacent to the towers areas have lines of sight on the tower areas"
+                    'fr': "Seules les zones de rempart directement adjacentes aux tours partagent une ligne de vue avec l’intérieur de la tour.",
+                    'en': "Only the areas directly adjacent to the towers areas have lines of sight on the tower areas"
                 },
                 coordinates: [[15,60], [42,85], [66,85], [85,60], [85,42]]
             }, {
@@ -25,7 +25,7 @@ Abandoned_Fort = {
                     'en': "Courtyard room"
                 },
                 description: { 
-                    'fr': "les pièces dans la cour du fortin n’ont pas de toit. Depuis les remparts, il est possible de voir et de sauter à l’intérieur de ces pièces.",
+                    'fr': "Les pièces dans la cour du fortin n’ont pas de toit. Depuis les remparts, il est possible de voir et de sauter à l’intérieur de ces pièces.",
                     'en': "The areas inside the fort do not have a roof. A character in a parapet area has lines of sight on these areas and may jump into these areas."
                 },
                 coordinates: [[48,65], [68,65]]
@@ -35,8 +35,8 @@ Abandoned_Fort = {
                     'en': "Border"
                 },
                 description: { 
-                    'fr': "les 9 zones en bordure du plateau de jeu sont adjacentes et il est possible de se déplacer normalement au travers de ces zones pour faire le tour du fortin.",
-                    'en': "the nine areas at the edge of the board are adjacent to one another. A character may move through them normally to go around the abandoned fort."
+                    'fr': "Les 9 zones en bordure du plateau de jeu sont adjacentes et il est possible de se déplacer normalement au travers de ces zones pour faire le tour du fortin.",
+                    'en': "The nine areas at the edge of the board are adjacent to one another. A character may move through them normally to go around the abandoned fort."
                 },
                 coordinates: [[1,15], [1,55], [1,99], [50,99], [99,99], [99,50], [99,1], [50,1], [10,1]]
             }, {
@@ -45,8 +45,8 @@ Abandoned_Fort = {
                     'en': "Lines of sight"
                 },
                 description: { 
-                    'fr': "depuis les remparts, les figurines ont une ligne de vue sur toutes les zones de la cour.",
-                    'en': "a character in a wall area has lines of sight to each ground area within the fortress walls."
+                    'fr': "Depuis les remparts, les figurines ont une ligne de vue sur toutes les zones de la cour.",
+                    'en': "A character in a wall area has lines of sight to each ground area within the fortress walls."
                 },
                 coordinates: []
             }, {
@@ -55,8 +55,8 @@ Abandoned_Fort = {
                     'en': "Leaping from Walls"
                 },
                 description: { 
-                    'fr': "sauter depuis les remparts inflige {dice_red}{dice_red} sans défense possible et {dice_red} si la figurine possède la compétence Saut. Remonter sur les remparts est impossible.",
-                    'en': "a character can move across a parapet from a wall area to a ground area as though it were a border. The character rolls {dice_red}{dice_red} for falling damage. If the character has Leap, the character rolls {dice_red} instead. A character cannot move from a ground area to a wall area."
+                    'fr': "Sauter depuis les remparts inflige {dice_red}{dice_red} sans défense possible et {dice_red} si la figurine possède la compétence Saut. Remonter sur les remparts est impossible.",
+                    'en': "A character can move across a parapet from a wall area to a ground area as though it were a border. The character rolls {dice_red}{dice_red} for falling damage. If the character has Leap, the character rolls {dice_red} instead. A character cannot move from a ground area to a wall area."
                 },
                 coordinates: []
             }, {
@@ -65,8 +65,8 @@ Abandoned_Fort = {
                     'en': "Rock Slide"
                 },
                 description: { 
-                    'fr': "entrer dans une zone d’éboulis coûte 2 points de mouvement supplémentaires. Cependant, si la figurine possède la compétence Escalade, il n’y a pas de coût supplémentaire.",
-                    'en': "a character can move into a rock slide area from an adjacent area. The character must spend 2 extra movement points unless the character has Climbing."
+                    'fr': "Entrer dans une zone d’éboulis coûte 2 points de mouvement supplémentaires. Cependant, si la figurine possède la compétence Escalade, il n’y a pas de coût supplémentaire.",
+                    'en': "A character can move into a rock slide area from an adjacent area. The character must spend 2 extra movement points unless the character has Climbing."
                 },
                 coordinates: [[15,30], [25,15], [76,45], [95,60]]
             }

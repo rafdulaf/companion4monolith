@@ -15,8 +15,8 @@ Market = {
                     'en': "Reinforced Walls"
                 },
                 description: { 
-                    'fr': "un personnage disposant de la compétence Défoncer parois ne peut pas défoncer les murs de la caserne au sud, et du fumoir au nord car ils sont renforcés avec des rondins de bois.",
-                    'en': "a character with Wall Wrecker cannot move through the reinforced walls of the barracks (south of the board) and the smoking room (north of the board)."
+                    'fr': "Un personnage disposant de la compétence Défoncer parois ne peut pas défoncer les murs de la caserne au sud, et du fumoir au nord car ils sont renforcés avec des rondins de bois.",
+                    'en': "A character with Wall Wrecker cannot move through the reinforced walls of the barracks (south of the board) and the smoking room (north of the board)."
                 },
                 coordinates: [[57,90], [50,10]]
             }, {
@@ -25,7 +25,7 @@ Market = {
                     'en': "Boats"
                 },
                 description: { 
-                    'fr': "les zones d'eau avec pirogues sont considérées comme des zones normales pour le mouvement.",
+                    'fr': "Les zones d'eau avec pirogues sont considérées comme des zones normales pour le mouvement.",
                     'en': "The areas with boats are considered normal terrain for Movement."
                 },
                 coordinates: [[15,12], [15,40], [15,69]]
@@ -35,8 +35,8 @@ Market = {
                     'en': "Swimming"
                 },
                 description: { 
-                    'fr': "un personnage disposant de la compétence Natation peut traverser les zones d'eau sans pirogue.",
-                    'en': "a character with Swimming may move through the areas of water next to the cemetery."
+                    'fr': "Un personnage disposant de la compétence Natation peut traverser les zones d'eau sans pirogue.",
+                    'en': "A character with Swimming may move through the areas of water next to the cemetery."
                 },
                 coordinates: [[10,90], [81,90], [81,63], [71,44], [66,22], [63,8]]
             }, {
@@ -45,7 +45,7 @@ Market = {
                     'en': "Leap"
                 },
                 description: { 
-                    'fr': "un personnage ayant la compétence Saut peut franchir les zones marquées sur le plan. Si un héros échoue dans sa tentative de saut, son mouvement est perdu et il reste sur la zone de départ du saut.",
+                    'fr': "Un personnage ayant la compétence Saut peut franchir les zones marquées sur le plan. Si un héros échoue dans sa tentative de saut, son mouvement est perdu et il reste sur la zone de départ du saut.",
                     'en': "A character with Leap may leap over the areas marked with the Leap icon . If a hero fails to leap, the character remains in its area."
                 },
                 coordinates: [[67, 31], [73,52], [84,70]]
