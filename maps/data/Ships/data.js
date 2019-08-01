@@ -26,7 +26,7 @@ Ships = {
                 },
                 description: { 
                     'fr': "Il existe toujours une ligne de vue vers la zone d’un mât même si celui-ci bloque normalement la ligne de vue.",
-                    'en': "All the areas of the game board have line of sight on the masts’areas."
+                    'en': "All the areas of the game board have lines of sight on the masts’areas."
                 },
                 coordinates: [[27,27], [69,22], [30,72], [70,67]]
             }, {

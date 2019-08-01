@@ -16,7 +16,7 @@ Pict_Village = {
                 },
                 description: { 
                     'fr': "les tentures à l’entrée de chaque hutte (et à l'intérieur de la grande) bloquent la ligne de vue. Entrer ou sortir d’une hutte demande 1 point de mouvement supplémentaire à cause des tentures.",
-                    'en': "the hut flaps at the entrance of each hut block line of sight. A character must spend 1 extra movement point to move across a border into or out of a hut."
+                    'en': "the hut flaps at the entrance of each hut block lines of sight. A character must spend 1 extra movement point to move across a border into or out of a hut."
                 },
                 coordinates: []
             }, {
@@ -46,7 +46,7 @@ Pict_Village = {
                 },
                 description: { 
                     'fr': "les arbustes ne bloquent pas la ligne de vue.",
-                    'en': "the bushes do not block line of sight."
+                    'en': "the bushes do not block lines of sight."
                 },
                 coordinates: []
             }, {

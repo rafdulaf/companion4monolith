@@ -16,7 +16,7 @@ Forest = {
                 },
                 description: { 
                     'fr': "les zones de forêt bloquent les lignes de vue. On peut tirer à partir d'une telle zone mais pas tirer dans cette zone ni au travers. Y entrer coûte 1 point de mouvement supplémentaire. En sortir ne coûte pas de point de mouvement supplémentaire.",
-                    'en': "these 3 Forest zones block Line of Sight. A character can aim from but not shoot inside or through these areas. Entering the area costs an additional movement point. Leaving the area does not cost any extra movement points."
+                    'en': "these 3 Forest zones block Lines of Sight. A character can aim from but not shoot inside or through these areas. Entering the area costs an additional movement point. Leaving the area does not cost any extra movement points."
                 },
                 coordinates: [[31,62], [57,21], [76,60]]
             }, {
@@ -26,7 +26,7 @@ Forest = {
                 },
                 description: { 
                     'fr': "les zones de rochers bloquent les lignes de vue et octroient un bonus de surplomb. Y grimper coûte 1 point de mouvement supplémentaire. En descendre ne coûte pas de point de mouvement supplémentaire.",
-                    'en': "the 2 Rocky Outcrop areas block Line of Sight and grant the Elevation Bonus. Climb costs 1 additional movement point. Climbing down does not cost any extra movement point."
+                    'en': "the 2 Rocky Outcrop areas block Lines of Sight and grant the Elevation Bonus. Climb costs 1 additional movement point. Climbing down does not cost any extra movement point."
                 },
                 coordinates: [[19,12], [39,10]]
             }

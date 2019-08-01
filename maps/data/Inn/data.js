@@ -16,7 +16,7 @@ Inn = {
                 },
                 description: {
                     'fr': "cette règle s’applique seulement si le scénario l’indique dans les règles spéciales. Un personnage peut monter sur le bar ou sur une table pour 1 point de mouvement supplémentaire, qu’il ait ou non la compétence Saut ou Escalade. Il gagne la compétence Allonge tant qu’il se trouve sur le bar ou sur une table et bénéficie du bonus de surplomb de {dice_yellow} pour ses attaques au Corps-à-corps et à distance. Le bar et les tables ne bloquent pas la ligne de vue. En descendre n’engendre pas de surcoût de points de mouvement.",
-                    'en': "apply this rule only if specified in the special rules section. A character with or without Leap or Climb may move onto the bar areas or a table area by spending 1 extra movement point. These areas provide an Elevation bonus of {dice_yellow}. A character in the bar’s area or in a table’s area, with or without Reach, may attack a character in an adjacent area with a Melee Attack. These areas do not block line of sight. A character may exit these areas with no movement penalty."
+                    'en': "apply this rule only if specified in the special rules section. A character with or without Leap or Climb may move onto the bar areas or a table area by spending 1 extra movement point. These areas provide an Elevation bonus of {dice_yellow}. A character in the bar’s area or in a table’s area, with or without Reach, may attack a character in an adjacent area with a Melee Attack. These areas do not block lines of sight. A character may exit these areas with no movement penalty."
                 },
                 coordinates: [[20,57], [33,61], [33,85]]
             }, {

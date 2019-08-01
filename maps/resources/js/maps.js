@@ -23,7 +23,7 @@ var ConanMaps = {
         'en': {
             'menu': "Maps",
             'back': "Back to the maps choice",
-            'los': "Line of sight",
+            'los': "Lines of sight",
             'help': "Game help",
             'rotate': "Turn the board",
             'forum': "A question on this map? Ask the forum!",

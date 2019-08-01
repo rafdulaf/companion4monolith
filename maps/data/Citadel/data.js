@@ -36,7 +36,7 @@ Citadel = {
                 },
                 description: { 
                     'fr': "les grilles ne bloquent pas les lignes de vue.",
-                    'en': "The cellar windows do not block line of sight."
+                    'en': "The cellar windows do not block lines of sight."
                 },
                 coordinates: [[ 60, 14 ], [ 72, 48 ], [ 72, 73 ]]
             }

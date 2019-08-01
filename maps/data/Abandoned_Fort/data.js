@@ -16,7 +16,7 @@ Abandoned_Fort = {
                 },
                 description: { 
                     'fr': "seules les zones de rempart directement adjacentes aux tours partagent une ligne de vue avec l’intérieur de la tour.",
-                    'en': "only the areas directly adjacent to the towers areas have line of sight on the tower areas"
+                    'en': "only the areas directly adjacent to the towers areas have lines of sight on the tower areas"
                 },
                 coordinates: [[15,60], [42,85], [66,85], [85,60], [85,42]]
             }, {
@@ -26,7 +26,7 @@ Abandoned_Fort = {
                 },
                 description: { 
                     'fr': "les pièces dans la cour du fortin n’ont pas de toit. Depuis les remparts, il est possible de voir et de sauter à l’intérieur de ces pièces.",
-                    'en': "The areas inside the fort do not have a roof. A character in a parapet area has line of sight on these areas and may jump into these areas."
+                    'en': "The areas inside the fort do not have a roof. A character in a parapet area has lines of sight on these areas and may jump into these areas."
                 },
                 coordinates: [[48,65], [68,65]]
             }, {
@@ -46,7 +46,7 @@ Abandoned_Fort = {
                 },
                 description: { 
                     'fr': "depuis les remparts, les figurines ont une ligne de vue sur toutes les zones de la cour.",
-                    'en': "a character in a wall area has line of sight to each ground area within the fortress walls."
+                    'en': "a character in a wall area has lines of sight to each ground area within the fortress walls."
                 },
                 coordinates: []
             }, {
