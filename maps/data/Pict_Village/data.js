@@ -18,7 +18,7 @@ Pict_Village = {
                     'fr': "Les tentures à l’entrée de chaque hutte (et à l'intérieur de la grande) bloquent la ligne de vue. Entrer ou sortir d’une hutte demande 1 point de mouvement supplémentaire à cause des tentures.",
                     'en': "The hut flaps at the entrance of each hut block lines of sight. A character must spend 1 extra movement point to move across a border into or out of a hut."
                 },
-                coordinates: []
+                coordinates: [[63,23], [18,52], [26,57], [39,83], [34,43], [55,54], [67,76], [79,57]]
             }, {
                 title: { 
                     'fr': "Défoncer les cloisons",
@@ -28,7 +28,7 @@ Pict_Village = {
                     'fr': "On ne peut pas défoncer les cloisons des huttes en pierre.",
                     'en': "The huts with stone walls cannot be wrecked using Wall Wrecker"
                 },
-                coordinates: []
+                coordinates: [[55,20], [40,75]]
             }, {
                 title: { 
                     'fr': "Murs d'enceinte",
@@ -38,7 +38,7 @@ Pict_Village = {
                     'fr': "On ne peut pas défoncer les murs d’enceinte, ni les escalader",
                     'en': "The outer walls cannot be climbed over, or wrecked using Wall Wrecker."
                 },
-                coordinates: []
+                coordinates: [[43,4], [93,49], [62,94], [4,50]]
             }, {
                 title: { 
                     'fr': "Lignes de vue",
@@ -48,7 +48,7 @@ Pict_Village = {
                     'fr': "Les arbustes ne bloquent pas la ligne de vue.",
                     'en': "The bushes do not block lines of sight."
                 },
-                coordinates: []
+                coordinates: [[5,15], [18,24], [26,36], [46,9], [59,9], [41,34], [41,58], [63,61], [4,82], [17,79], [44,92], [54,94], [86,93]]
             }, {
                 title: { 
                     'fr': "Huttes en bois",
