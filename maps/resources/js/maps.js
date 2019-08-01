@@ -3,6 +3,7 @@ var ConanMaps = {
         'fr': {
             'menu': "Cartes",
             'back': "Retour au choix des cartes",
+            'openMap': "Cliquez pour voir la carte: ",
             'los': "Lignes de vue",
             'help': "Regles du plateau",
             'rotate': "Tourner le plateau",
@@ -23,6 +24,7 @@ var ConanMaps = {
         'en': {
             'menu': "Boards",
             'back': "Back to the boards choice",
+            'openMap': "Click to see the board: ",
             'los': "Lines of sight",
             'help': "Board rules",
             'rotate': "Turn the board",
@@ -217,7 +219,7 @@ var ConanMaps = {
 				var imgCode = "<div class='map-index-board-image' style=\"background-image: url('maps/data/" + i + "/thumb.png" + "\');\"/>"
                 var subtitleCode = "<div class='map-index-board-sublegend'>" + ConanAbout._origins[Language][ConanMaps._files[i].description.origin + '-short'] + "</div>";
 				var titleCode = "<div class='map-index-board-legend'>" + ConanMaps._files[i].description.title[Language] + "</div>";
-				code += "<li><a href=\"javascript:void(0);\" onclick=\"ConanMaps._displayMap('" + i + "')\">" + imgCode + titleCode + subtitleCode + "</a></li>";
+				code += "<li><a href=\"javascript:void(0);\" title=\"" + ConanMaps._i18n[Language].openMap + ConanMaps._files[i].description.title[Language] + "\" onclick=\"ConanMaps._displayMap('" + i + "')\">" + imgCode + titleCode + subtitleCode + "</a></li>";
 			}
 			
 			$('#maps').append("<div id='" + id + "' class='map-card map-index' style='display: none'><ul>" + code + "</ul></div>");
