@@ -6,9 +6,9 @@ var CardEquipment = {
             'newcard': "Creer une nouvelle carte",
             'save': "Enregistrer",
             'name': "Nom",
-            'namePh': "Saisir le nom de la carte",
+            'namePh': "Nom de la carte",
             'weight': "Encombrement",
-            'weightPh': "Saisir la valeur d'encombrement",
+            'weightPh': "?",
             'meleeAttack': "Bonus au corps à corps",
             'manipulation': "Manipulation",
             'manipulationExplosive': "Explosif",
@@ -32,9 +32,9 @@ var CardEquipment = {
             'newcard': "Create a new card",
             'save': "Save",
             'name': "Name",
-            'namePh': "Fill the name of the card",
+            'namePh': "Name of the card",
             'weight': "Encumbrance",
-            'weightPh': "Fill the encumbrance value",
+            'weightPh': "?",
             'meleeAttack': "Bonus in melee attack",
             'manipulation': "Manipulation",
             'manipulationExplosive': "Explosive",
@@ -59,6 +59,7 @@ var CardEquipment = {
     },
     
     init: function() {
+        $("#equipment").html("In construction");return;
         Nav.addAction("studio", CardEquipment._i18n[Language].newcard, "equipment-icon-add", "equipment-add", CardEquipment.add);
         CardEquipment.onHide();
         CardEquipment._displayCards();
@@ -173,18 +174,14 @@ var CardEquipment = {
         Nav.dialog(CardEquipment._i18n[Language].newcard, 
             "<div class=\"equipment\">"
                 + "<input type=\"hidden\" name=\"cardpos\" value=\"" + Math.random() + "\"/>"
-                + "<div class=\"field\">"
+                + "<div class=\"field name\">"
                     + "<label for=\"eqname\">" + CardEquipment._i18n[Language].name + "</label>"
                     + "<input id=\"eqname\" name=\"cardname\" autocomplete=\"off\" placeholder=\"" + CardEquipment._i18n[Language].namePh + "\"/>"
                 + "</div>"
-                + "<div class=\"field\">"
-                    + "<label for=\"eqweight\">" + CardEquipment._i18n[Language].weight + "</label>"
-                    + "<input maxlength=\"1\" id=\"eqweight\" name=\"cardweight\" autocomplete=\"off\" placeholder=\"" + CardEquipment._i18n[Language].weightPh + "\"/>"
-                + "</div>"
-                + "<div class=\"field\">"
+                + "<div class=\"field melee\">"
                     + "<label for=\"eqmelee\">" + CardEquipment._i18n[Language].meleeAttack + "</label>"
-                    + "<select id=\"eqmelee\" class=\"dice\" name=\"cardmelee1\"><option value=\"none\">" + CardEquipment._i18n[Language].diceNone + "</option><option value=\"red\">" + CardEquipment._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + CardEquipment._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + CardEquipment._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + CardEquipment._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + CardEquipment._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + CardEquipment._i18n[Language].diceYellowReroll + "</option></select>"
-                    + "<select id=\"eqmelee\" class=\"dice\" name=\"cardmelee2\"><option value=\"none\">" + CardEquipment._i18n[Language].diceNone + "</option><option value=\"red\">" + CardEquipment._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + CardEquipment._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + CardEquipment._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + CardEquipment._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + CardEquipment._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + CardEquipment._i18n[Language].diceYellowReroll + "</option></select>"
+                    + "<select id=\"eqmelee\" class=\"dice\" name=\"cardmelee1\"><option value=\"none\">&lt;b>aa&lt;/b>" + CardEquipment._i18n[Language].diceNone + "</option><option value=\"red\">" + CardEquipment._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + CardEquipment._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + CardEquipment._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + CardEquipment._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + CardEquipment._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + CardEquipment._i18n[Language].diceYellowReroll + "</option></select>"
+                    + "<select id=\"eqmelee2\" class=\"dice\" name=\"cardmelee2\"><option value=\"none\">" + CardEquipment._i18n[Language].diceNone + "</option><option value=\"red\">" + CardEquipment._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + CardEquipment._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + CardEquipment._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + CardEquipment._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + CardEquipment._i18n[Language].diceYellow + "</option><option data-class=\"yellowreroll\" value=\"yellowreroll\">" + CardEquipment._i18n[Language].diceYellowReroll + "</option></select>"
                 + "</div>"
                 + "<div class=\"field\">"
                     + "<label for=\"eqranged\">" + CardEquipment._i18n[Language].rangedAttack + "</label>"
@@ -212,6 +209,10 @@ var CardEquipment = {
                     + "<label for=\"eqimage\">" + CardEquipment._i18n[Language].image + "</label>"
                     + "<input id=\"eqimage\" name=\"cardimage\" autocomplete=\"off\" placeholder=\"" + CardEquipment._i18n[Language].imagePh + "\"/>"
                 + "</div>"
+                + "<div class=\"field weight\">"
+                    + "<label for=\"eqweight\">" + CardEquipment._i18n[Language].weight + "</label>"
+                    + "<input type=\"number\" min=\"0\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"eqweight\" name=\"cardweight\" autocomplete=\"off\" placeholder=\"" + CardEquipment._i18n[Language].weightPh + "\"/>"
+                + "</div>"
             + "</div>",
             null,
             [{
@@ -220,6 +221,9 @@ var CardEquipment = {
                 fn: "CardEquipment._save();"
             }]
         );
+        $("#eqmelee,#eqmelee2").selectmenu({ width: 70, change: function(event, selection) { 
+            $(this).attr("data-value", selection.item.value); 
+        }});
         $("#eqname").focus();
     },
     

@@ -159,11 +159,37 @@
 
 .dialog .equipment .field input#eqname {
    font-size: 36px;
+   height: 72px;
    font-family: 'Crom';
+   text-align: center;
+   color: #000000;
+   background-image: url(../img/name-background.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+}
+.dialog .equipment .field.weight {
+    width: 155px;
+    margin-left: auto;
+}
+.dialog .equipment .field.melee {
+   background-image: url(../img/contact-2.png);
+   background-repeat: no-repeat;
+   background-position: left;
+   background-size: contain;
+}
+.dialog .equipment .field.melee label {
+    margin-left: 20px;
 }
 .dialog .equipment .field input#eqweight {
    font-size: 36px;
    font-family: "Motrg";
+   text-align: center;
+   color: #FFFFFF;
+   background-image: url(../img/weight.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
 }
 .dialog .equipment .field input#eqimage {
    font-size: 22px;
@@ -174,7 +200,7 @@
 {
   font-family: "Font Awesome 5 Free";
   font-size: 35px;
-  width: 200px;
+  width: 60px;
   display: inline-block;
   vertical-align: top;
   height: 44px;
@@ -203,3 +229,34 @@
   font-family: "Font Awesome 5 Free";
   content: "\f0c7";  
 }
+
+.ui-front {
+    z-index: 100000;
+}
+.ui-button .ui-icon { background-image: none; }
+.ui-selectmenu-menu ul li:before {
+    content: " ";
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+span[role=combobox] {
+    background-color: transparent !important;
+    background-position: center !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+}
+.ui-selectmenu-text, .ui-menu .ui-menu-item-wrapper { color: transparent; font-size: 1px; }
+.ui-menu-item, .ui-menu-item-wrapper { height: 40px; position: relative; }
+.ui-selectmenu-menu ul li:nth-child(2):before, select[data-value=red] + span { background-image: url(../img/dice_red.png) !important; }
+.ui-selectmenu-menu ul li:nth-child(3):before, select[data-value=redreroll] + span { background-image: url(../img/dice_redreroll.png) !important; }
+.ui-selectmenu-menu ul li:nth-child(4):before, select[data-value=orange] + span { background-image: url(../img/dice_orange.png) !important; }
+.ui-selectmenu-menu ul li:nth-child(5):before, select[data-value=orangereroll] + span { background-image: url(../img/dice_orangereroll.png) !important; }
+.ui-selectmenu-menu ul li:nth-child(6):before, select[data-value=yellow] + span { background-image: url(../img/dice_yellow.png) !important; }
+.ui-selectmenu-menu ul li:nth-child(7):before, select[data-value=yellowreroll] + span { background-image: url(../img/dice_yellowreroll.png) !important; }
