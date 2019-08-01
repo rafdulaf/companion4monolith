@@ -18,7 +18,7 @@ Inn = {
                     'fr': "Cette règle s’applique seulement si le scénario l’indique dans les règles spéciales. Un personnage peut monter sur le bar ou sur une table pour 1 point de mouvement supplémentaire, qu’il ait ou non la compétence Saut ou Escalade. Il gagne la compétence Allonge tant qu’il se trouve sur le bar ou sur une table et bénéficie du bonus de surplomb de {dice_yellow} pour ses attaques au Corps-à-corps et à distance. Le bar et les tables ne bloquent pas la ligne de vue. En descendre n’engendre pas de surcoût de points de mouvement.",
                     'en': "Apply this rule only if specified in the special rules section. A character with or without Leap or Climb may move onto the bar areas or a table area by spending 1 extra movement point. These areas provide an Elevation bonus of {dice_yellow}. A character in the bar’s area or in a table’s area, with or without Reach, may attack a character in an adjacent area with a Melee Attack. These areas do not block lines of sight. A character may exit these areas with no movement penalty."
                 },
-                coordinates: [[20,57], [33,61], [33,85]]
+                coordinates: [[20,59], [34,61], [34,85]]
             }, {
                 title: {
                     'fr': "Tabourets et bancs",
@@ -38,7 +38,7 @@ Inn = {
                     'fr': "Tous les murs situés entre deux salles du même étage sont destructibles (par une figurine avec la compétence Défoncer les cloisons) à l’exception des murs d’enceinte de la taverne y compris ceux donnant sur la rue.",
                     'en': "A character with Wall Wrecker cannot use it to move across an outer wall of the inn or to move between areas of different elevations."
                 },
-                coordinates: [[20,7], [40,7], [60,7], [80,7], [95,14], [95,42], [50,60], [62,51], [62,72]]
+                coordinates: [[22,9], [42,9], [61,9], [81,9], [96,16], [96,43], [52,62], [62,51], [62,75]]
             }, {
                 title: {
                     'fr': "Saut/Escalade depuis la balustrade",
@@ -48,7 +48,7 @@ Inn = {
                     'fr': "Sauter de la balustrade inflige {dice_orange}{dice_orange} sans défense possible et {dice_orange} si la figurine possède la compétence Saut. Remonter sur la balustrade coûte 2 points de mouvement supplémentaires pour un personnage ayant la compétence Escalade.",
                     'en': "A character can move across a railing from a balcony area to a ground floor area as though it were a border. The character rolls {dice_orange}{dice_orange} for falling damage. If the character has Leap, the character rolls {dice_orange} instead. A character with Climb can move across a railing from a ground floor area to a balcony area by spending 2 extra movement points."
                 },
-                coordinates: [[31,23]]
+                coordinates: [[31,24]]
             }, {
                 title: {
                     'fr': "Saut/Escalade depuis un escalier",
@@ -58,7 +58,7 @@ Inn = {
                     'fr': "Sauter des escaliers inflige {dice_yellow}{dice_yellow} sans défense possible et {dice_yellow} si la figurine possède la compétence Saut. Remonter sur la zone d’un escalier par la rambarde sur le côté coûte 1 point de mouvement supplémentaire pour un personnage ayant la compétence Escalade. Emprunter l’escalier normalement n’engendre pas de surcoût de points de mouvement.",
                     'en': "A character can move across a banister from a stair area to a ground floor area as though it were a border. The character rolls {dice_yellow}{dice_yellow} for falling damage. If the character has Leap, the character rolls {dice_yellow} instead. A character with Climb can move across a banister from a ground floor area to a stair area by spending 1 extra movement point."
                 },
-                coordinates: [[11,30], [49,30]]
+                coordinates: [[13,33], [53,33]]
             }
         ],
         totopic: {
