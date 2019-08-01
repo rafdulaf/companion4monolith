@@ -60,11 +60,11 @@ var ConanAbout = {
     
     _origins: {
         'fr': {
-            'corebox': "Boite de base",
-            'corebox-short': "Boite de base",
-            'stretchgoal': "Boite de base étendue \"Barbarian\"",
+            'corebox': "Boîte de base",
+            'corebox-short': "Boîte de base",
+            'stretchgoal': "Boîte de base étendue \"Barbarian\"",
             'stretchgoal-short': "Boîte Barbarian", 
-            'king': "Boite de base étendue \"King\"",
+            'king': "Boîte de base étendue \"King\"",
             'king-short': "Boîte King",
             
             'nordheim': "Extension Nordheim",
@@ -99,10 +99,10 @@ var ConanAbout = {
         'en': {
             'corebox': "Core box", 
             'corebox-short': "Core box", 
-            'stretchgoal': "Barbarian",
-            'stretchgoal-short': "\"Barbarian\" expanded core box",
-            'king': "\"King\" expanded core box",
-            'king-short': "King",
+            'stretchgoal': "\"Barbarian\" expanded core box",
+            'stretchgoal-short': "Barbarian box",
+            'king': "King box",
+            'king-short': "\"King\" expanded core box",
             
             'nordheim': "Nordheim expansion",
             'nordheim-short': "Nordheim",
