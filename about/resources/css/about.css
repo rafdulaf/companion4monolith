@@ -10,9 +10,21 @@
     content: "\f3e0";
     font-family: 'Font Awesome 5 Free';
 }
+.about-contribute:before {
+    content: "\f188";
+    font-family: 'Font Awesome 5 Free';
+}
 .about-about:before {
     content: "\f447";
     font-family: 'Font Awesome 5 Free';
+}
+
+.contribute .github:before {
+    content: "\f092";
+    font-family: 'Font Awesome 5 Brands';
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
 }
 
 .about {
@@ -21,22 +33,30 @@
 }
 
 .about .about-zone-about img {
-    width: 100%;
+    max-width: 90%;
+    max-height: 40%;
+    display: block;
+    margin: 0 auto;
 }
 
-.about a {
+.about a, .contribute a {
     color: #c39f76;
     text-decoration: none;
 }
-.about a:hover {
+.about a:hover, .contribute a:hover {
     text-decoration: underline;
 }
 
 
-.about-copyright h1 {
+.about h1 {
     margin-bottom: 0px;
     font-size: 36px;
 }
+.about h2 {
+    margin-bottom: 0px;
+    font-size: 24px;
+}
+
 
 
 .custom fieldset {

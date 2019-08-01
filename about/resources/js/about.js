@@ -3,14 +3,17 @@ var ConanAbout = {
         'fr': {
             'name': "Compagnon<br/>de Conan",
             'title': "Le compagnon de Conan",
-            'text': "Cette application n'a aucun lien avec l'édteur du jeu Conan : Monolith.<br/>Elle a été réalisée par @cochon en s'appuyant sur les cartes statiques de lignes de vue créées par @Roolz et en reprenant l'idée du travail de @Pamplerousse pour les lignes de vues dynamiques.",
+            'text': "<h1>Important</h1>Cette application n'a aucun lien avec l'édteur du jeu Conan : Monolith.<br/>Elle a été réalisée par @cochon en s'appuyant sur les cartes statiques de lignes de vue créées par @Roolz et en reprenant l'idée du travail de @Pamplerousse pour les lignes de vues dynamiques.",
             'find': "Consultez le forum 'The Overlord'",
             'fullscreen': "Plein écran",
             'about': "A propos",
+            'licence': "Licence",
+            'licence_text': "Ce logiciel est développé sous licence LGPL-3.0",
+            'about': "A propos",
             'copyright': "Copyright",
-            'copyright-text': "'Compagnion de Conan' est une application indépendante pour accompagner les joueurs dans le jeu 'Conan'.<br/>"
+            'copyright-text': "<h1>But</h1><br/>'Compagnion de Conan' est une application indépendante pour accompagner les joueurs dans le jeu 'Conan'.<br/>"
                     + "Cette application a été écrite par <a href='https://the-overlord.com/index.php?/profile/5240-cochon/' target='_blank'>@cochon</a>.<br/>"
-                    + "<br/>"
+                    + "<h1>Propriété</h1>"
                     + "'Conan' est un jeu de plateau de figurines édité par <a href='http://monolithedition.com' target='_blank'>Monolith</a>.<br/>"
                     + "Le logo Conan et les polices de caractères utilisées sont la propriété de Monolith.<br/>"
                     + "L'image du 'Compagnion de Conan' a été créée à partir du logo Conan.<br/>",
@@ -27,19 +30,28 @@ var ConanAbout = {
             'custom_artists': "Extensions d'artistes",
             'custom_decoration': "Décors",
             'custom_books': "Livres",
-            'custom_reload': "La modification de votre configuration entrainera un redémarage automatique de l'application"
+            'custom_reload': "La modification de votre configuration entrainera un redémarage automatique de l'application",
+            'contribute': "Contribuer !",
+            'contribute_text': "Vous pouvez contribuer à cette application de nombreuses façons :"
+                    + "<ul>"
+                        + "<li>Vous avez repéré un bug ?</li>"
+                        + "<li>Vous avez une idée d'amélioration ?</li>"
+                    + "</ul>"
+                    + "Le projet est hébergé sur Github : vous pouvez donc y déposer vos idées voire proposer vos modifications."
         },
         'en': {
             'name': "Companion<br/>for Conan",
             'title': "The companion for Conan",
-            'text': "This application has no link with the producer of the game Conan: Monolith.<br/>It was realized by @cochon based on the static maps of line of sights created by @Roolz and by taking up again the idea of the work of @Pamplerousse of the dynamic line of sights.",
+            'text': "<h1>Disclamer</h1>This application has no link with the producer of the game Conan: Monolith.<br/>It was realized by @cochon based on the static maps of line of sights created by @Roolz and by taking up again the idea of the work of @Pamplerousse of the dynamic line of sights.",
             'find': "Consult the forum 'The Overlord'",
             'fullscreen': "Fullscreen",
             'about': "About",
+            'licence': "Licence",
+            'licence_text': "This software is developped under the LGPL-3.0 licence",
             'copyright': "Copyright",
-            'copyright-text': "'Companion for Conan' is an indepedant applciation to help the players in the game 'Conan'.<br/>"
+            'copyright-text': "<h1>Purpose</h1>'Companion for Conan' is an indepedant applciation to help the players in the game 'Conan'.<br/>"
                     + "This application was written by <a href='https://the-overlord.com/index.php?/profile/5240-cochon/' target='_blank'>@cochon</a>.<br/>"
-                    + "<br/>"
+                    + "<h1>Property</h1>"
                     + "'Conan' is a board game published by <a href='http://monolithedition.com' target='_blank'>Monolith</a>.<br/>"
                     + "The Conan logo and the fonts used are the property of Monolith.<br/>"
                     + "The image of 'Companion for Conan' was created by adapting the Conan logo.<br/>",
@@ -56,7 +68,14 @@ var ConanAbout = {
             'custom_artists': "Artists expansions",
             'custom_decoration': "Decorations",
             'custom_books': "Books",
-            'custom_reload': "The modification of your configuration will require an automatic application reload"
+            'custom_reload': "The modification of your configuration will require an automatic application reload",
+            'contribute': "Contribute!",
+            'contribute_text': "You can contribute to this application in several ways:"
+                    + "<ul>"
+                        + "<li>Did you spot a bug?</li>"
+                        + "<li>o you have an idea to enhance it ?</li>"
+                    + "</ul>"
+                    + "The project is hosted on Github: you can thus send your ideas there or event propose your modifications."
         }
     },
     
@@ -159,7 +178,8 @@ var ConanAbout = {
         Menu.addMenu(ConanAbout._i18n[Language].custom, "about-custom", "ConanAbout._custom()", true);
         Menu.addMenu(ConanAbout._i18n[Language].preferences, "about-preferences", "ConanAbout._preferences()");
         
-        Menu.addMenu(ConanAbout._i18n[Language].about, "about-about", "ConanAbout._about()", true);
+        Menu.addMenu(ConanAbout._i18n[Language].contribute, "about-contribute", "ConanAbout._contribute()", true);
+        Menu.addMenu(ConanAbout._i18n[Language].about, "about-about", "ConanAbout._about()");
     },
     
     _about: function()
@@ -169,6 +189,7 @@ var ConanAbout = {
         Nav.dialog(ConanAbout._i18n[Language].about,
             "<div id='about' class='about'>"
                     + "<div class='about-zone-about'>"
+                            + "<h1 style='text-align: center '>" + ConanAbout._i18n[Language].title + " v" + Version + "</h1>"
                             + "<img src='about/resources/img/logo.jpg'/>" +
                             "<a class='fullscreen' onclick='ConanAbout._toggleFullscreen(); return false' href='javascript:void(0);' title=\"" + ConanAbout._i18n[Language].fullscreen + "\"></a>" + 
                             "<span>" + ConanAbout._i18n[Language].text + 
@@ -178,13 +199,17 @@ var ConanAbout = {
                     + "<div class='about-copyright'><div>"
                         + "<div class='about-copyright-text'>" + ConanAbout._i18n[Language]['copyright-text'] + ConanAbout._copyright + "</div>"
                     + "</div></div>"
+                    + "<div>"
+                        + "<h1>" + ConanAbout._i18n[Language]['licence'] + "</h1>"
+                        + "<div><a href='https://github.com/rafdulaf/companion4conan/blob/master/LICENSE'>" + ConanAbout._i18n[Language]['licence_text'] + "</a></div>"
+                    + "</div>"        
                 + "</div>"        
         );        
     },
     
     addCopyright: function(title, text)
     {
-        ConanAbout._copyright += "<h1>" + title + "</h1>" + text + "<br/>";
+        ConanAbout._copyright += "<h2>" + title + "</h2>" + text;
     },
     
     _preferences: function()
@@ -365,6 +390,18 @@ var ConanAbout = {
             }
             display = true;
         })
+    },
+    
+    _contribute: function() {
+        Nav.dialog(ConanAbout._i18n[Language].contribute,
+            "<div class=\"contribute\">"
+                + "<div>" + ConanAbout._i18n[Language].contribute_text + "</div>"
+                + "<a target=\"_blank\" href=\"https://github.com/rafdulaf/companion4conan\" class=\"github\">Github</a>"
+            + "</div>",
+            
+            function() {
+            }
+        );        
     }
 }
 
