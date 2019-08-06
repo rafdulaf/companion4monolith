@@ -152,19 +152,19 @@ var ConanRules = {
             
             'skills_defense': "Defense",
             'skills_defense_sacrifice_title': "Sacrifice",
-            'skills_defense_sacrifice_text': "When a friendly character in this's area is attacked, before the die are rolled, this character may choose to be attacked instead. This character cannot Guard for that defense and can only use their Armor. That character suffers any damage from the attack to prevent the character who was initially attacked from suffering damage.",
+            'skills_defense_sacrifice_text': "When a friendly character in this character's area is attacked, before the die are rolled, this character may choose to be attacked instead. This character cannot Guard for that defense and can only use their Armor. That character suffers any damage from the attack to prevent the character who was initially attacked from suffering damage.",
             'skills_defense_untouchable_title': "Untouchable",
             'skills_defense_untouchable_text': "A character with this skill ignores the first rolled symbol when defending against a Ranged Attack.",
             'skills_defense_bodyguard_title': "Bodyguard",
             'skills_defense_bodyguard_text': "When a friendly character in this character's area defends, this character can parry (i.e. use an equipment card to defend against that attack, like a shield) instead of that character's Guard action, adding the symbols shown on the die to the character defense power. They cannot dodge (see page 11) to defend a friendly character. Any damage is dealt to the character who was initially attacked, not the character using Bodyguard.",
             'skills_defense_protected_title': "Protected",
-            'skills_defense_protected_text': "This character can be attacked only with area attacks if there is a friendly character without Protected in their area.",
+            'skills_defense_protected_text': "This character can be attacked only with area attacks if there is a friendly character without Protected in their area. Two or more characters with this skill cannot protect each other.",
             
             'skills_magic': "Magic",
             'skills_magic_spell_caster_title': "Spell Caster",
-            'skills_magic_spell_caster_text': "This character can have and cast spells. Whenever the character loose the skill (because of encumbrance for example), any active spell remain active for their specified duration.",
+            'skills_magic_spell_caster_text': "This character can have and cast spells. Whenever the character loses the skill (because of encumbrance for example), any active spell remain active for their specified duration.",
             'skills_magic_teleportation_title': "Teleportation",
-            'skills_magic_teleportation_text': "A character who casts this spell is not affected by hindering or by Blocking to move.",
+            'skills_magic_teleportation_text': "(Clarification) A character who casts this spell is not affected by hindering or by Blocking to move.",
             
             'copyright': "The proposed rules are based upon the official rules and their complements but were partially rewriten."
         }
