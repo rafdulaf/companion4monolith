@@ -48,11 +48,11 @@
 }
 
 
-.about h1 {
+.about h1, .contribute h1 {
     margin-bottom: 0px;
     font-size: 36px;
 }
-.about h2 {
+.about h2, .contribute h2 {
     margin-bottom: 0px;
     font-size: 24px;
 }
