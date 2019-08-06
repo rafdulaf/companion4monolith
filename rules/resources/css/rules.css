@@ -10,8 +10,10 @@
 #rules #skills {
     overflow: auto;    
     box-sizing: border-box;
-    padding: 10px;
     font-family: 'Crom';
+}
+#rules #skills > div {
+    padding: 10px;
 }
 
 #rules .skills-skill {

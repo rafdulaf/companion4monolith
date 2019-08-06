@@ -15,10 +15,16 @@ var ConanStudio = {
         Nav.addIcon(ConanStudio._i18n[Language].menu, "studio-icon", "studio");
 
         CardEquipment.preinit();
+        CardSpell.preinit();
+        HeroSheet.preinit();
+        Tile.preinit();
 
         Nav.createTabs('studio', ConanStudio._slides, ConanStudio.onChange);
         
         CardEquipment.init();
+        CardSpell.init();
+        HeroSheet.init();
+        Tile.init();
         
         ConanStudio.onChange();
     },

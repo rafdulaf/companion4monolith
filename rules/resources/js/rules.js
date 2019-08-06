@@ -82,7 +82,10 @@ var ConanRules = {
             'skills_magic_teleportation_title': "Teleportation",
             'skills_magic_teleportation_text': "(Clarification du sort) Le lanceur de sort n'est pas soumis au phénomène de gêne ni à la compétence Bloqueur.",
             
-            'copyright': "Les règles proposés sont basées sur les règles officielles et leurs compléments mais ont été en partie reformulées."
+            'copyright': "Les règles proposés sont basées sur les règles officielles et leurs compléments mais ont été en partie reformulées.",
+            
+            'heroes': "Livre des héros",
+            'overlord': "Livre de l'Overlord"
         },
         'en': {
             'menu': "Rules",
@@ -166,7 +169,10 @@ var ConanRules = {
             'skills_magic_teleportation_title': "Teleportation",
             'skills_magic_teleportation_text': "(Clarification of the spell) A character who casts this spell is not affected by hindering or by Blocking to move.",
             
-            'copyright': "The proposed rules are based upon the official rules and their complements but were partially rewriten."
+            'copyright': "The proposed rules are based upon the official rules and their complements but were partially rewriten.",
+            
+            'heroes': "Heroes's book",
+            'overlord': "Overlord's book"
         }
     },
     
@@ -174,15 +180,23 @@ var ConanRules = {
     {
         Nav.addIcon(ConanRules._i18n[Language].menu, "rules-icon", "rules");
         
-        Nav.createTabs('rules', [{label: ConanRules._i18n[Language].skills, id: "skills"}])
+        Nav.createTabs('rules', [
+            {label: ConanRules._i18n[Language].skills, id: "skills"},
+            {label: ConanRules._i18n[Language].heroes, id: "heroes"},
+            {label: ConanRules._i18n[Language].overlord, id: "overlord"}
+        ]);
         
         ConanRules._initSkills();
+
+        $("#heroes").html("In construction");
+        $("#overlord").html("In construction");
 
         ConanAbout.addCopyright(ConanRules._i18n[Language].menu, ConanRules._i18n[Language].copyright);
     },
     
     _initSkills: function()
     {
+        $("#skills").html("<div></div>");
         ConanRules._addAttackSkills();
         ConanRules._addMovementSkills();
         ConanRules._addMiscellaneousSkills();
@@ -190,14 +204,9 @@ var ConanRules = {
         ConanRules._addMagicSkills();
     },
     
-    _addSkillsMenu: function(label, id)
-    {
-        $('#skills .rules-skills-menu ul').append("<li class='"+ id + "'><a href='javascript:void(0)' onclick=\"$('#skills').slick('slickGoTo', $(this).parent().prevAll().length);\">" + label + "</a></li>")
-    },
-    
     _addAttackSkills: function()
     {
-        $('#skills').append("<div id='skills_attack' class='skill-tab'><h2>" + ConanRules._i18n[Language].skills_attack + "</h2></div>");
+        $('#skills > div').append("<div id='skills_attack' class='skill-tab'><h2>" + ConanRules._i18n[Language].skills_attack + "</h2></div>");
         
         ConanRules._addSkill('attack', 'reach');
         ConanRules._addSkill('attack', 'ambidextrous');
@@ -212,7 +221,7 @@ var ConanRules = {
     
     _addMovementSkills: function()
     {
-        $('#skills').append("<div id='skills_movement' class='skill-tab'><h2>" + ConanRules._i18n[Language].skills_movement + "</h2></div>");
+        $('#skills > div').append("<div id='skills_movement' class='skill-tab'><h2>" + ConanRules._i18n[Language].skills_movement + "</h2></div>");
         
         ConanRules._addSkill('movement', 'blocking');
         ConanRules._addSkill('movement', 'evasive');
@@ -228,7 +237,7 @@ var ConanRules = {
     
     _addMiscellaneousSkills: function()
     {
-        $('#skills').append("<div id='skills_miscellaneous' class='skill-tab'><h2>" + ConanRules._i18n[Language].skills_miscellaneous + "</h2></div>");
+        $('#skills > div').append("<div id='skills_miscellaneous' class='skill-tab'><h2>" + ConanRules._i18n[Language].skills_miscellaneous + "</h2></div>");
         
         ConanRules._addSkill('miscellaneous', 'alchemy');
         ConanRules._addSkill('miscellaneous', 'concentration');
@@ -243,7 +252,7 @@ var ConanRules = {
     
     _addDefenseSkills: function()
     {
-        $('#skills').append("<div id='skills_defense' class='skill-tab'><h2>" + ConanRules._i18n[Language].skills_defense + "</h2></div>");
+        $('#skills > div').append("<div id='skills_defense' class='skill-tab'><h2>" + ConanRules._i18n[Language].skills_defense + "</h2></div>");
         
         ConanRules._addSkill('defense', 'sacrifice');
         ConanRules._addSkill('defense', 'bodyguard');
@@ -253,7 +262,7 @@ var ConanRules = {
     
     _addMagicSkills: function()
     {
-        $('#skills').append("<div id='skills_magic' class='skill-tab'><h2>" + ConanRules._i18n[Language].skills_magic + "</h2></div>");
+        $('#skills > div').append("<div id='skills_magic' class='skill-tab'><h2>" + ConanRules._i18n[Language].skills_magic + "</h2></div>");
         
         ConanRules._addSkill('magic', 'spell_caster');
         ConanRules._addSkill('magic', 'teleportation');
