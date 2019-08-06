@@ -156,7 +156,7 @@ var ConanRules = {
             'skills_defense_untouchable_title': "Untouchable",
             'skills_defense_untouchable_text': "A character with this skill ignores the first rolled symbol when defending against a Ranged Attack.",
             'skills_defense_bodyguard_title': "Bodyguard",
-            'skills_defense_bodyguard_text': "When a friendly character in this character's area defends, this character can parry (i.e. use an equipment card to defend against that attack, like a shield) instead of that character's Guard action, adding the symbols shown on the dice to the character defense power. They cannot dodge (see page 11) to defend a friendly character. Any damage is dealt to the character who was initially attacked, not the character using Bodyguard. The attacked character cannot perform a Guard action, but they can still use their armor in addition to their bodyguard's defense power.",
+            'skills_defense_bodyguard_text': "When a friendly character in this character's area defends, this character can parry (i.e. use an equipment card to defend against that attack, like a shield) instead of that character's Guard action, adding the symbols shown on the dice to the character defense power. They cannot dodge (see page 11) to defend a friendly character. Any damage is dealt to the character who was initially attacked, not the character using Bodyguard.",
             'skills_defense_protected_title': "Protected",
             'skills_defense_protected_text': "This character can be attacked only with area attacks if there is a friendly character without Protected in their area. Two or more characters with this skill cannot protect each other.",
             
