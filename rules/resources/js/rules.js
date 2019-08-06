@@ -80,7 +80,7 @@ var ConanRules = {
             'skills_magic_spell_caster_title': "Lanceur de sort",
             'skills_magic_spell_caster_text': "Le personnage est capable d'utiliser les cartes Sorts à sa disposition, en leur allouant les gemmes d'énergie requises. Lorsqu'un personnage perd la compétence (du fait de son encombrement par exemple), les sorts déjà actifs le restent jusqu'à ce qu'ils s'épuisent comme décrit par le sort.",
             'skills_magic_teleportation_title': "Teleportation",
-            'skills_magic_teleportation_text': "Le lanceur de sort n'est pas soumis au phénomène de gêne ni à la compétence Bloqueur.",
+            'skills_magic_teleportation_text': "(Clarification du sort) Le lanceur de sort n'est pas soumis au phénomène de gêne ni à la compétence Bloqueur.",
             
             'copyright': "Les règles proposés sont basées sur les règles officielles et leurs compléments mais ont été en partie reformulées."
         },
@@ -136,7 +136,7 @@ var ConanRules = {
             'skills_miscellaneous_leadership_title': "Leadership",
             'skills_miscellaneous_leadership_text': "This hero can move 1 gem from their Reserve zone to their Fatigue zone to activate an ally. Activated allies move and attack like units. Each ally can be activated only once per turn.",
             'skills_miscellaneous_concentration_title': "Concentration",
-            'skills_miscellaneous_concentration_text': "This character's die rolls are not affected by hindering.",
+            'skills_miscellaneous_concentration_text': "This character's dice rolls are not affected by hindering.",
             'skills_miscellaneous_lock_picking_title': "Lock-picking",
             'skills_miscellaneous_lock_picking_text': "This character can rolls an extra {dice_red} when picking a lock.",
             'skills_miscellaneous_fascination_title': "Fascination",
@@ -156,7 +156,7 @@ var ConanRules = {
             'skills_defense_untouchable_title': "Untouchable",
             'skills_defense_untouchable_text': "A character with this skill ignores the first rolled symbol when defending against a Ranged Attack.",
             'skills_defense_bodyguard_title': "Bodyguard",
-            'skills_defense_bodyguard_text': "When a friendly character in this character's area defends, this character can parry (i.e. use an equipment card to defend against that attack, like a shield) instead of that character's Guard action, adding the symbols shown on the die to the character defense power. They cannot dodge (see page 11) to defend a friendly character. Any damage is dealt to the character who was initially attacked, not the character using Bodyguard.",
+            'skills_defense_bodyguard_text': "When a friendly character in this character's area defends, this character can parry (i.e. use an equipment card to defend against that attack, like a shield) instead of that character's Guard action, adding the symbols shown on the dice to the character defense power. They cannot dodge (see page 11) to defend a friendly character. Any damage is dealt to the character who was initially attacked, not the character using Bodyguard. The attacked character cannot perform a Guard action, but they can still use their armor in addition to their bodyguard's defense power.",
             'skills_defense_protected_title': "Protected",
             'skills_defense_protected_text': "This character can be attacked only with area attacks if there is a friendly character without Protected in their area. Two or more characters with this skill cannot protect each other.",
             
@@ -164,7 +164,7 @@ var ConanRules = {
             'skills_magic_spell_caster_title': "Spell Caster",
             'skills_magic_spell_caster_text': "This character can have and cast spells. Whenever the character loses the skill (because of encumbrance for example), any active spell remain active for their specified duration.",
             'skills_magic_teleportation_title': "Teleportation",
-            'skills_magic_teleportation_text': "(Clarification) A character who casts this spell is not affected by hindering or by Blocking to move.",
+            'skills_magic_teleportation_text': "(Clarification of the spell) A character who casts this spell is not affected by hindering or by Blocking to move.",
             
             'copyright': "The proposed rules are based upon the official rules and their complements but were partially rewriten."
         }
