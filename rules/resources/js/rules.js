@@ -84,7 +84,7 @@ var ConanRules = {
             
             'copyright': "Les règles proposés sont basées sur les règles officielles et leurs compléments mais ont été en partie reformulées.",
             
-            'heroes': "Livre des héros",
+            'heroes': "Livre des heros",
             'overlord': "Livre de l'Overlord"
         },
         'en': {
