@@ -167,7 +167,7 @@ var ConanRules = {
             'skills_magic_spell_caster_title': "Spell Caster",
             'skills_magic_spell_caster_text': "This character can have and cast spells. Whenever the character loses the skill (because of encumbrance for example), any active spell remain active for their specified duration.",
             'skills_magic_teleportation_title': "Teleportation",
-            'skills_magic_teleportation_text': "(Clarification of the spell) A character who casts this spell is not affected by hindering or by Blocking to move.",
+            'skills_magic_teleportation_text': "(Spell clarification) A character who casts this spell is not affected by hindering or by Blocking to move.",
             
             'copyright': "The proposed rules are based upon the official rules and their complements but were partially rewriten.",
             
