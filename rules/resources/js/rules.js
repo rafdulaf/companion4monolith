@@ -1,8 +1,8 @@
 var ConanRules = {
     _i18n: {
         'fr': {
-            'menu': "Regles",
-            'skills': "Competences",
+            'menu': "Règles",
+            'skills': "Compétences",
             
             'skills_attack': "Attaque",
             'skills_attack_reach_title': "Allonge",
@@ -13,21 +13,21 @@ var ConanRules = {
             'skills_attack_constriction_text': "Si, lors de son attaque, la créature obtient au moins une face avec 2 symboles sur l’un de ses dés, sa cible est « saisie », en plus des blessures éventuelles. La figurine du personnage saisi est ramenée au contact de la figurine de la créature et est considérée comme bloquée. Un personnage ayant la compétence Insaisissable ignore le blocage dû à Constriction, pas les dégâts associés à l’attaque.",
             'skills_attack_circular_strike_title': "Coup circulaire",
             'skills_attack_circular_strike_text': "Avec toute arme de corps-à-corps à deux main (dont l’encombrement est supérieur ou égal à 3), le personnage peut donner un coup circulaire. Si l’attaque, résolue normalement, tue le premier adversaire désigné, le reliquat de dégâts est reporté sur le suivant (choisit par l'attaquant) et ainsi de suite jusqu’à ce qu’il n’y ait plus de reliquat.",
-            'skills_attack_precision_strike_title': "Coup precis",
+            'skills_attack_precision_strike_title': "Coup précis",
             'skills_attack_precision_strike_text': "Lorsqu’il réalise une attaque au corps-à-corps, le personnage ignore systématiquement le premier point de défense de sa cible.",
-            'skills_attack_attack_from_beyond_title': "Retour de l’Au-dela",
+            'skills_attack_attack_from_beyond_title': "Retour de l’Au-delà",
             'skills_attack_attack_from_beyond_text': "Juste après sa mort, le personnage peut porter une ultime attaque au corps-à-corps d’une puissance de {dice_red}{dice_red}{dice_red}, sans bonus d’arme et sans malus d’attaque à mains nues.",
             'skills_attack_counterattack_title': "Riposte",
             'skills_attack_counterattack_text': "Chaque fois que le personnage est attaqué au corps-à-corps (que l’attaque ait causé des dégâts ou non), il peut gratuitement riposter (s’il survit à l’attaque) de {dice_red}, sans bonus d’arme et sans malus d’attaque à mains nues.",
-            'skills_attack_elite_shooter_title': "Tireur d’elite",
+            'skills_attack_elite_shooter_title': "Tireur d’élite",
             'skills_attack_elite_shooter_text': "Le personnage ignore les effets du phénomène de gêne lorsqu’il réalise une attaque à distance. De plus, il ignore la compétence Sous protection de sa cible.",
-            'skills_attack_precision_shot_title': "Tir precis",
+            'skills_attack_precision_shot_title': "Tir précis",
             'skills_attack_precision_shot_text': "Lorsqu’il réalise une attaque à distance, le personnage ignore systématiquement le premier point de défense passive de sa cible.",
             
             'skills_movement': "Mouvement",
             'skills_movement_blocking_title': "Bloqueur",
             'skills_movement_blocking_text': "Le personnage bloque tout mouvement des adversaires présents sur sa zone, à l'exception de ceux possédant la compétence Insaisissable.",
-            'skills_movement_wall_wrecker_title': "Defoncer les cloisons",
+            'skills_movement_wall_wrecker_title': "Défoncer les cloisons",
             'skills_movement_wall_wrecker_text': "Le personnage peut traverser les cloisons et les portes en bois, au cours de son mouvement, pour un surcout de 2 points de mouvement. Il laisse derrière lui une ouverture (symbolisée par un pion) : le personnage se déplace de l'autre côté de la cloison qu'il vient de défoncer. Les deux zones deviennent adjascentes sans pénalité de mouvement pour passer de l'une à l'autre et l'ouverture donne une ligne de vue entre ces deux zones.",
             'skills_movement_evasive_title': "Insaisissable",
             'skills_movement_evasive_text': "Le personnage ignore toute pénalité de mouvement liée à la présence d'adversaires dans sa zone, quand bien même ceux-ci auraient la compétence Bloqueur.",
@@ -39,7 +39,7 @@ var ConanRules = {
             'skills_movement_web_projection_text': "Plutôt que de réaliser une attaque classique, le personnage peut projeter une toile sur un adversaire. Pour cela il réalise une attaque à distance avec {dice_orange}{dice_orange}{dice_orange}. Si l'attaque dépasse la défense, elle n'engendre pas de blessure mais la victime est immobilisée (on place le pion Toile contre son socle). Pour s'en extraire il lui en coûtera 4 points de mouvements en un seul tour.",
             'skills_movement_leap_title': "Saut",
             'skills_movement_leap_text': "Le personnage peut sauter par-dessus les endroits prévus à cet effet. Pour ce faire, il lance {dice_red} et doit égaler ou dépasser l'indice de difficulté. Le saut n'est pas soumis au phénomène de gène. Sauter coûte 1 point de mouvement par zone traversée. Par exemple, sauter d'un bateau à l'autre coûte 2 points de mouvements.",
-            'skills_movement_feline_grace_title': "Souplesse feline",
+            'skills_movement_feline_grace_title': "Souplesse féline",
             'skills_movement_feline_grace_text': "Dans chaque zone empruntée, le personnage ignore un point de malus lié au phénomène de gêne.",
             'skills_movement_flying_title': "Vol",
             'skills_movement_flying_text': "Le personnage peut voler par-dessus les éléments du décor. Il ignore les contraintes de déplacement liés au décor. Le vol n'est pas soumis au phénomène de gène.",
@@ -66,7 +66,7 @@ var ConanRules = {
             'skills_miscellaneous_support_title': "Soutien",
             'skills_miscellaneous_support_text': "Les figurines amies du personnage présentes sur sa zone bénéficient d'une relance gratuite à chaque fois qu'elles réalisent une action. Soutien permet la relance gratuite d’un seul dé, y compris sur un dé déjà relancé gratuitement (exception à la règle page 22).",
             
-            'skills_defense': "Defense",
+            'skills_defense': "Défense",
             'skills_defense_sacrifice_title': "Sacrfice",
             'skills_defense_sacrifice_text': "Le personnage peut décider, avant le lancé de dés, de subir une attaque à la place de la cible initiale. Il ne peut par contre ni la parer ni l'esquiver. Il ne peut utiliser que sa défense passive pour se défendre. Ce personnage encaisse donc la totalité des dégâts causés par l’attaque à la place de la cible initiale.",
             'skills_defense_untouchable_title': "Intouchable",
@@ -79,12 +79,12 @@ var ConanRules = {
             'skills_magic': "Magie",
             'skills_magic_spell_caster_title': "Lanceur de sort",
             'skills_magic_spell_caster_text': "Le personnage est capable d'utiliser les cartes Sorts à sa disposition, en leur allouant les gemmes d'énergie requises. Lorsqu'un personnage perd la compétence (du fait de son encombrement par exemple), les sorts déjà actifs le restent jusqu'à ce qu'ils s'épuisent comme décrit par le sort.",
-            'skills_magic_teleportation_title': "Teleportation",
+            'skills_magic_teleportation_title': "Téléportation",
             'skills_magic_teleportation_text': "(Clarification du sort) Le lanceur de sort n'est pas soumis au phénomène de gêne ni à la compétence Bloqueur.",
             
             'copyright': "Les règles proposés sont basées sur les règles officielles et leurs compléments mais ont été en partie reformulées.",
             
-            'heroes': "Livre des heros",
+            'heroes': "Livre des héros",
             'overlord': "Livre de l'Overlord"
         },
         'en': {

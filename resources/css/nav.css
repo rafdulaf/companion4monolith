@@ -15,7 +15,7 @@
     display: inline-block;
     vertical-align: top;
     min-height: 100%;
-    font-family: 'Crom';
+    font-family: 'Hyborian';
     font-size: 35px;
     line-height: 38px;
     overflow: hidden;
@@ -70,7 +70,7 @@
     bottom: 0;
     box-shadow: 0 3px 14px 2px rgba(0,0,0,.12);
     height: 56px;
-    font-family: 'Crom';
+    font-family: 'Hyborian';
 }
 .nav ul {
     height: 100%;
@@ -192,7 +192,7 @@
     line-height: 64px;
     font-size: 20px;
     flex: 1;
-    font-family: 'Crom';
+    font-family: 'Hyborian';
     overflow: hidden;
     white-space: nowrap;
 }
@@ -236,7 +236,7 @@
 .nav-menu a {
     text-decoration: none;
     color: #000000;
-    font-family: 'Crom';
+    font-family: 'Hyborian';
     
     display: block;
     text-align: center;

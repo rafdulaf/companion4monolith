@@ -4,7 +4,7 @@
 }
 
 #equipment {
-    font-family: 'Crom';
+    font-family: 'Hyborian';
     overflow: auto;
 }
 #equipment .card {
@@ -128,7 +128,7 @@
     border-radius: 40px;
     z-index: 10;
     pointer-events: none;
-    font-family: "Crom";
+    font-family: "Hyborian";
 }
 
 
@@ -160,7 +160,7 @@
 .dialog .equipment .field input#eqname {
    font-size: 36px;
    height: 72px;
-   font-family: 'Crom';
+   font-family: 'Hyborian';
    text-align: center;
    color: #000000;
    background-image: url(../img/name-background.png);

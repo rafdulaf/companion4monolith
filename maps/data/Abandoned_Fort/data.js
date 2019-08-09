@@ -1,7 +1,7 @@
 Abandoned_Fort = {
 	description: {
 		title: {
-			'fr': "Fortin abandonne",
+			'fr': "Fortin abandonné",
             'en': "Abandoned fort"
         },
         version: '1.0',

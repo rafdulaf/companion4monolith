@@ -1,7 +1,7 @@
 Forest = {
 	description: {
 		title: {
-			'fr': "Foret",
+			'fr': "Forêt",
             'en': "Forest"
         },
         version: '1.0',

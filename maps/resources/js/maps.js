@@ -5,17 +5,17 @@ var ConanMaps = {
             'back': "Retour au choix des cartes",
             'openMap': "Cliquez pour voir la carte: ",
             'los': "Lignes de vue",
-            'help': "Regles du plateau",
+            'help': "Règles du plateau",
             'rotate': "Tourner le plateau",
             'forum': "Une question sur la carte ? Demandez sur le forum !",
             'losfile': "Télécharger la carte statique des lignes de vue",
             'start': "Cliquez sur une zone pour voir les lignes de vue",
-            'legend': "Legende",
-            'clickhelp1': "La zone actuellement selectionnée est en bleu.",
-            'clickhelp2': "Toutes les zones colorées sont visibles depuis la zone choisie.",
-            'clickhelp3': "Les cercles verts indique le niveau d'élévation d'une zone.", 
+            'legend': "Légende",
+            'clickhelp1': "La zone actuellement selectionnée est en bleu et offre des lignes de vues vers toutes les zones colorées.",
             'clickhelp4': "Les zones colorées en jaune sont en contrebas et donnent le bonus d'élévation d'un dé jaune.",
+            'clickhelp6': "Les zones vertes sont au même niveau que la zone bleue.",   
             'clickhelp5': "Les zones colorées en turquoise sont au dessus.",
+            'clickhelp3': "Les cercles verts indique le niveau d'élévation d'une zone.", 
             'copyright': "Les textes d'aide des cartes sont issus des textes proposés par leurs créateurs respectifs. Certains sont retouchés.<br/>"
                         + "Certaines cartes proposent de télécharger une vue statique des lignes de vue. Ces vues ont été réalisées par <a href='https://the-overlord.com/index.php?/profile/13-roolz/' target='_blank'>@Roolz</a>.<br/>"
                         + "Le principe des lignes de vues dynamiques est une idée de <a href='https://the-overlord.com/index.php?/profile/88-pamplerousse/' target='_blank'>@Pamplerousse</a>.<br/>"
@@ -33,11 +33,11 @@ var ConanMaps = {
             'losfile': "Download the static lines of sight board",
             'start': "Click in an area to see the lines of sight",
             'legend': "Legend",
-            'clickhelp1': "The currently selected area is in blue.",
-            'clickhelp2': "All colored areas are visible from the selected area.",
-            'clickhelp3': "The green circles display the elevation level of an area.", 
-            'clickhelp4': "The yellow areas are below and offer the bonus of overhanging a yellow dice.",
-            'clickhelp5': "The turquoise areas are above.",
+            'clickhelp1': "Blue area is the selected area. It has lines of sight to all colored areas.",
+            'clickhelp4': "Yellow areas are below the blue area: Ranged attacks to these areas get an Elevation bonus of 1 yellow die.",
+            'clickhelp6': "Green areas are at the same level as the blue area.",   
+            'clickhelp5': "Turquoise areas are above the blue area.",
+            'clickhelp3': "Note: The green circles around the dots show elevation levels.", 
             'copyright': "The help text of the boards are proposed by their respective creators. Some of them were modified.<br/>"
                         + "Some card allow to download a static ligne of sight view. This views were realized by <a href='https://the-overlord.com/index.php?/profile/13-roolz/' target='_blank'>@Roolz</a>.<br/>"
                         + "The principal of the dynamic line of sights is based on a idea of <a href='https://the-overlord.com/index.php?/profile/88-pamplerousse/' target='_blank'>@Pamplerousse</a>.<br/>"
@@ -581,10 +581,10 @@ var ConanMaps = {
         Nav.dialog(ConanMaps._i18n[Language].legend,
         
                     "<div class='line1'>" + ConanMaps._i18n[Language]['clickhelp1'] + "</div>"
-               +    "<div class='line2'>" + ConanMaps._i18n[Language]['clickhelp2'] + "</div>"
-               +    "<div class='line3'>" + ConanMaps._i18n[Language]['clickhelp3'] + "</div>"
                +    "<div class='line4'>" + ConanMaps._i18n[Language]['clickhelp4'] + "</div>"
+               +    "<div class='line6'>" + ConanMaps._i18n[Language]['clickhelp6'] + "</div>"
                +    "<div class='line5'>" + ConanMaps._i18n[Language]['clickhelp5'] + "</div>"
+               +    "<div class='line3'>" + ConanMaps._i18n[Language]['clickhelp3'] + "</div>"
         );
     }
 }
