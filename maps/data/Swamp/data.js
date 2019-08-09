@@ -28,7 +28,7 @@ Swamp = {
                     'fr': "Il n’est pas possible de sauter la zone d’eau centrale autour de l’autel en un seul saut. Un arrêt intermédiaire sur l’autel est obligatoire",
                     'en': "Leaping over the water area around the altar in a single movement is not possible. The character must stop in the altar area before performing a second leap."
                 },
-                coordinates: [[45,55]]
+                coordinates: [[48,58]]
             }, {
                 title: { 
                     'fr': "Huttes en bois",
@@ -38,7 +38,7 @@ Swamp = {
                     'fr': "Les cloisons des huttes peuvent être défoncées par la compétence Défoncer les cloisons.",
                     'en': "A character with Wall Wrecker can use it to move across the wall of one of the wooden huts."
                 },
-                coordinates: [[15,45], [27,40], [67,40], [15,85], [45,85], [87,85]]
+                coordinates: [[18,48], [30,43], [66,42], [15,85], [46,85], [87,85]]
             }
         ],
         totopic: {
