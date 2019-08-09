@@ -1,7 +1,7 @@
 var HeroSheet = {
     _i18n: {
         'fr': {
-            'tab': "Heros"
+            'tab': "Héros"
         },
         'en': {
             'tab': "Hero"

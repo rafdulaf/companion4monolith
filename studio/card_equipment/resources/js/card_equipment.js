@@ -1,21 +1,21 @@
 var CardEquipment = {
     _i18n: {
         'fr': {
-            'tab': "Equipement",
+            'tab': "équipement",
             'nocard': "Vous n'avez aucune carte pour le moment. Cliquez sur le bouton plus en haut pour en creer une.",
             'newcard': "Creer une nouvelle carte",
             'save': "Enregistrer",
             'name': "Nom",
-            'namePh': "Nom de la carte",
+            'namePh': "?",
             'weight': "Encombrement",
             'weightPh': "?",
-            'meleeAttack': "Bonus au corps à corps",
+            'meleeAttack': "Corps à corps",
             'manipulation': "Manipulation",
             'manipulationExplosive': "Explosif",
-            'rangedAttack': "Bonus à distance",
+            'rangedAttack': "Distance",
             'rangedAttackThrowable': "Lançable",
-            'activeDefense': "Défense active",
-            'passiveDefense': "Défense passive",
+            'activeDefense': "Défense",
+            'passiveDefense': "Armure",
             'image': "Image",
             'imagePh': "Entrer l'adresse de l'image (fond transparent)",
             'diceNone': "Aucun",
@@ -59,7 +59,7 @@ var CardEquipment = {
     },
     
     init: function() {
-        $("#equipment").html("In construction");return;
+//        $("#equipment").html("In construction");return;
         Nav.addAction("studio", CardEquipment._i18n[Language].newcard, "equipment-icon-add", "equipment-add", CardEquipment.add);
         CardEquipment.onHide();
         CardEquipment._displayCards();
@@ -180,38 +180,38 @@ var CardEquipment = {
                 + "</div>"
                 + "<div class=\"field melee\">"
                     + "<label for=\"eqmelee\">" + CardEquipment._i18n[Language].meleeAttack + "</label>"
-                    + "<select id=\"eqmelee\" class=\"dice\" name=\"cardmelee1\"><option value=\"none\">&lt;b>aa&lt;/b>" + CardEquipment._i18n[Language].diceNone + "</option><option value=\"red\">" + CardEquipment._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + CardEquipment._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + CardEquipment._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + CardEquipment._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + CardEquipment._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + CardEquipment._i18n[Language].diceYellowReroll + "</option></select>"
+                    + "<select id=\"eqmelee\" class=\"dice\" name=\"cardmelee1\"><option value=\"none\">" + CardEquipment._i18n[Language].diceNone + "</option><option value=\"red\">" + CardEquipment._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + CardEquipment._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + CardEquipment._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + CardEquipment._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + CardEquipment._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + CardEquipment._i18n[Language].diceYellowReroll + "</option></select>"
                     + "<select id=\"eqmelee2\" class=\"dice\" name=\"cardmelee2\"><option value=\"none\">" + CardEquipment._i18n[Language].diceNone + "</option><option value=\"red\">" + CardEquipment._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + CardEquipment._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + CardEquipment._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + CardEquipment._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + CardEquipment._i18n[Language].diceYellow + "</option><option data-class=\"yellowreroll\" value=\"yellowreroll\">" + CardEquipment._i18n[Language].diceYellowReroll + "</option></select>"
                 + "</div>"
-                + "<div class=\"field\">"
+                + "<div class=\"field ranged\">"
                     + "<label for=\"eqranged\">" + CardEquipment._i18n[Language].rangedAttack + "</label>"
                     + "<select id=\"eqranged\" class=\"dice\" name=\"cardranged1\"><option value=\"none\">" + CardEquipment._i18n[Language].diceNone + "</option><option value=\"red\">" + CardEquipment._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + CardEquipment._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + CardEquipment._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + CardEquipment._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + CardEquipment._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + CardEquipment._i18n[Language].diceYellowReroll + "</option></select>"
-                    + "<select id=\"eqranged\" class=\"dice\" name=\"cardranged2\"><option value=\"none\">" + CardEquipment._i18n[Language].diceNone + "</option><option value=\"red\">" + CardEquipment._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + CardEquipment._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + CardEquipment._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + CardEquipment._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + CardEquipment._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + CardEquipment._i18n[Language].diceYellowReroll + "</option></select>"
+                    + "<select id=\"eqranged2\" class=\"dice\" name=\"cardranged2\"><option value=\"none\">" + CardEquipment._i18n[Language].diceNone + "</option><option value=\"red\">" + CardEquipment._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + CardEquipment._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + CardEquipment._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + CardEquipment._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + CardEquipment._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + CardEquipment._i18n[Language].diceYellowReroll + "</option></select>"
                     + "<div class=\"rangedthrow\"><input type=\"checkbox\" id=\"eqthrowable\" name=\"cardthrowable\"/><label for=\"eqthrowable\">" + CardEquipment._i18n[Language].rangedAttackThrowable + "</label></div>"
                 + "</div>"
-                + "<div class=\"field\">"
-                    + "<label for=\"eqmanipulation\">" + CardEquipment._i18n[Language].manipulation + "</label>"
-                    + "<select id=\"eqmanipulation\" class=\"dice\" name=\"cardmanip1\"><option value=\"none\">" + CardEquipment._i18n[Language].diceNone + "</option><option value=\"red\">" + CardEquipment._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + CardEquipment._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + CardEquipment._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + CardEquipment._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + CardEquipment._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + CardEquipment._i18n[Language].diceYellowReroll + "</option></select>"
-                    + "<select id=\"eqmanipulation\" class=\"dice\" name=\"cardmanip2\"><option value=\"none\">" + CardEquipment._i18n[Language].diceNone + "</option><option value=\"red\">" + CardEquipment._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + CardEquipment._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + CardEquipment._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + CardEquipment._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + CardEquipment._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + CardEquipment._i18n[Language].diceYellowReroll + "</option></select>"
-                    + "<div class=\"manipexplosive\"><input type=\"checkbox\" id=\"eqexplosive\" name=\"cardexplosive\"/><label for=\"eqexplosive\">" + CardEquipment._i18n[Language].manipulationExplosive + "</label></div>"
-                + "</div>"
-                + "<div class=\"field\">"
+                + "<div class=\"field active\">"
                     + "<label for=\"eqactive\">" + CardEquipment._i18n[Language].activeDefense + "</label>"
                     + "<select id=\"eqactive\" class=\"dice\" name=\"cardactive1\"><option value=\"none\">" + CardEquipment._i18n[Language].diceNone + "</option><option value=\"red\">" + CardEquipment._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + CardEquipment._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + CardEquipment._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + CardEquipment._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + CardEquipment._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + CardEquipment._i18n[Language].diceYellowReroll + "</option></select>"
-                    + "<select id=\"eqactive\" class=\"dice\" name=\"cardactive2\"><option value=\"none\">" + CardEquipment._i18n[Language].diceNone + "</option><option value=\"red\">" + CardEquipment._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + CardEquipment._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + CardEquipment._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + CardEquipment._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + CardEquipment._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + CardEquipment._i18n[Language].diceYellowReroll + "</option></select>"
+                    + "<select id=\"eqactive2\" class=\"dice\" name=\"cardactive2\"><option value=\"none\">" + CardEquipment._i18n[Language].diceNone + "</option><option value=\"red\">" + CardEquipment._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + CardEquipment._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + CardEquipment._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + CardEquipment._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + CardEquipment._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + CardEquipment._i18n[Language].diceYellowReroll + "</option></select>"
                 + "</div>"
-                + "<div class=\"field\">"
+                + "<div class=\"field passive\">"
                     + "<label for=\"eqpassive\">" + CardEquipment._i18n[Language].passiveDefense + "</label>"
                     + "<select id=\"eqpassive\" class=\"dice\" name=\"cardpassive1\"><option value=\"none\">" + CardEquipment._i18n[Language].diceNone + "</option><option value=\"red\">" + CardEquipment._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + CardEquipment._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + CardEquipment._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + CardEquipment._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + CardEquipment._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + CardEquipment._i18n[Language].diceYellowReroll + "</option></select>"
-                    + "<select id=\"eqpassive\" class=\"dice\" name=\"cardpassive2\"><option value=\"none\">" + CardEquipment._i18n[Language].diceNone + "</option><option value=\"red\">" + CardEquipment._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + CardEquipment._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + CardEquipment._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + CardEquipment._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + CardEquipment._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + CardEquipment._i18n[Language].diceYellowReroll + "</option></select>"
+                    + "<select id=\"eqpassive2\" class=\"dice\" name=\"cardpassive2\"><option value=\"none\">" + CardEquipment._i18n[Language].diceNone + "</option><option value=\"red\">" + CardEquipment._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + CardEquipment._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + CardEquipment._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + CardEquipment._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + CardEquipment._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + CardEquipment._i18n[Language].diceYellowReroll + "</option></select>"
                 + "</div>"
-                + "<div class=\"field\">"
-                    + "<label for=\"eqimage\">" + CardEquipment._i18n[Language].image + "</label>"
-                    + "<input id=\"eqimage\" name=\"cardimage\" autocomplete=\"off\" placeholder=\"" + CardEquipment._i18n[Language].imagePh + "\"/>"
+                + "<div class=\"field manipulation\">"
+                    + "<label for=\"eqmanipulation\">" + CardEquipment._i18n[Language].manipulation + "</label>"
+                    + "<select id=\"eqmanipulation\" class=\"dice\" name=\"cardmanip1\"><option value=\"none\">" + CardEquipment._i18n[Language].diceNone + "</option><option value=\"red\">" + CardEquipment._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + CardEquipment._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + CardEquipment._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + CardEquipment._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + CardEquipment._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + CardEquipment._i18n[Language].diceYellowReroll + "</option></select>"
+                    + "<select id=\"eqmanipulation2\" class=\"dice\" name=\"cardmanip2\"><option value=\"none\">" + CardEquipment._i18n[Language].diceNone + "</option><option value=\"red\">" + CardEquipment._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + CardEquipment._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + CardEquipment._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + CardEquipment._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + CardEquipment._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + CardEquipment._i18n[Language].diceYellowReroll + "</option></select>"
+                    + "<div class=\"manipexplosive\"><input type=\"checkbox\" id=\"eqexplosive\" name=\"cardexplosive\"/><label for=\"eqexplosive\">" + CardEquipment._i18n[Language].manipulationExplosive + "</label></div>"
                 + "</div>"
                 + "<div class=\"field weight\">"
                     + "<label for=\"eqweight\">" + CardEquipment._i18n[Language].weight + "</label>"
                     + "<input type=\"number\" min=\"0\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"eqweight\" name=\"cardweight\" autocomplete=\"off\" placeholder=\"" + CardEquipment._i18n[Language].weightPh + "\"/>"
+                + "</div>"
+                + "<div class=\"field\">"
+                    + "<label for=\"eqimage\">" + CardEquipment._i18n[Language].image + "</label>"
+                    + "<input id=\"eqimage\" name=\"cardimage\" autocomplete=\"off\" placeholder=\"" + CardEquipment._i18n[Language].imagePh + "\"/>"
                 + "</div>"
             + "</div>",
             null,
@@ -221,9 +221,11 @@ var CardEquipment = {
                 fn: "CardEquipment._save();"
             }]
         );
-        $("#eqmelee,#eqmelee2").selectmenu({ width: 70, change: function(event, selection) { 
-            $(this).attr("data-value", selection.item.value); 
-        }});
+        $("#eqmelee,#eqmelee2,#eqactive,#eqactive2,#eqpassive,#eqpassive2,#eqranged,#eqranged2,#eqmanipulation,#eqmanipulation2")
+            .attr("data-value", "")
+            .selectmenu({ width: 40, change: function(event, selection) { 
+                $(this).attr("data-value", selection.item.value); 
+            }});
         $("#eqname").focus();
     },
     

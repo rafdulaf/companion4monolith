@@ -133,8 +133,9 @@
 
 
 .dialog .equipment .field {
-    border: 1px solid black;
     padding: 0 20px 5px 20px;
+    position: relative;
+    text-align: center;
 }
 .dialog .equipment .field.error {
     border-color: #FF0000;
@@ -148,6 +149,7 @@
     font-size: 26px;
     line-height: 20px;
     position: relative;
+    text-align: left;
     top: 5px;
 }
 .dialog .equipment .field input,
@@ -168,19 +170,61 @@
    background-position: center;
    background-size: contain;
 }
+
+.dialog .equipment .field.melee, 
+.dialog .equipment .field.active,
+.dialog .equipment .field.passive,
+.dialog .equipment .field.ranged,
+.dialog .equipment .field.manipulation,
 .dialog .equipment .field.weight {
-    width: 155px;
-    margin-left: auto;
+    height: 113px;
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
 }
-.dialog .equipment .field.melee {
-   background-image: url(../img/contact-2.png);
+.dialog .equipment .field.melee label, 
+.dialog .equipment .field.active label,
+.dialog .equipment .field.passive label,
+.dialog .equipment .field.ranged label,
+.dialog .equipment .field.manipulation label {
+    margin-bottom: 50px;
+}
+.dialog .equipment .field.weight    label {
+    margin-bottom: 20px;
+}
+
+.dialog .equipment .field.melee:before,
+.dialog .equipment .field.active:before, 
+.dialog .equipment .field.passive:before,
+.dialog .equipment .field.ranged:before,
+.dialog .equipment .field.manipulation:before {
+    content: " ";
+   position: absolute;
+   bottom: 0;
+   top: 20px;
+   left: 0;
+   right: 0;
+   
    background-repeat: no-repeat;
-   background-position: left;
+   background-position: calc(50% - 21px);
    background-size: contain;
 }
-.dialog .equipment .field.melee label {
-    margin-left: 20px;
+.dialog .equipment .field.melee:before {
+   background-image: url(../img/contact-2.png);
 }
+.dialog .equipment .field.active:before {
+   background-image: url(../img/defense-2.png);
+}
+.dialog .equipment .field.passive:before {
+   background-image: url(../img/armor-2.png);
+}
+.dialog .equipment .field.ranged:before {
+   background-image: url(../img/remote-2.png);
+}
+.dialog .equipment .field.manipulation:before {
+   background-image: url(../img/manip-2.png);
+}
+
 .dialog .equipment .field input#eqweight {
    font-size: 36px;
    font-family: "Motrg";
@@ -188,7 +232,7 @@
    color: #FFFFFF;
    background-image: url(../img/weight.png);
    background-repeat: no-repeat;
-   background-position: center;
+   background-position: calc(50% - 6px);
    background-size: contain;
 }
 .dialog .equipment .field input#eqimage {
@@ -218,11 +262,50 @@
     font-size: 35px;
     font-family: "Font Awesome 5 Free";
 }
-.rangedthrow {
-    margin-top: 8px;
+.dialog .equipment .rangedthrow,
+.dialog .equipment .manipexplosive {
+    position: absolute;
+    bottom: 12px;
+    left: calc(50% + 43px);
+    color: transparent;
+    font-size: 1px;
 }
-.rangedthrow label{
-    font-size: 48px;
+.dialog .equipment .field.ranged .rangedthrow input,
+.dialog .equipment .field.manipulation .manipexplosive input {
+    opacity: 0;
+    position: absolute;
+}
+.dialog .equipment .field.ranged .rangedthrow label,
+.dialog .equipment .field.manipulation .manipexplosive label {
+    margin-bottom: 0;    
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 36px;
+    font-size: 1px;
+    color: transparent;
+}
+.dialog .equipment .field.ranged .rangedthrow input + label:before,
+.dialog .equipment .field.manipulation .manipexplosive input + label:before {
+    content: "\f05e";
+    font-family: 'Font Awesome 5 Free';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    color: #7F7F7F;
+    text-align: center;
+    line-height: 36px;
+    font-size: 36px;
+}
+.dialog .equipment .field.ranged .rangedthrow input:checked + label:before,
+.dialog .equipment .field.manipulation .manipexplosive input:checked + label:before {
+    content: "";
+}
+.dialog .equipment .rangedthrow label {
+    background-image: url(../img/throw.png);
+}
+.dialog .equipment .manipexplosive label {
+    background-image: url(../img/explosive.png);
 }
 
 .dialog .equipment-save:before {
@@ -253,10 +336,21 @@ span[role=combobox] {
     background-repeat: no-repeat !important;
 }
 .ui-selectmenu-text, .ui-menu .ui-menu-item-wrapper { color: transparent; font-size: 1px; }
+.ui-selectmenu-icon.ui-icon.ui-icon-triangle-1-s { background-image: none; }
 .ui-menu-item, .ui-menu-item-wrapper { height: 40px; position: relative; }
+.ui-selectmenu-button.ui-button.ui-widget.ui-selectmenu-button-closed.ui-corner-all { border-color: transparent; }
+.ui-selectmenu-menu ul li:nth-child(1):before, select[data-value=''] + span .ui-selectmenu-text:before { content: "?"; font-size: 26px; font-family: 'Hyborian'; color: #7F7F7F; position: absolute; top: 0; left: 32%; }
 .ui-selectmenu-menu ul li:nth-child(2):before, select[data-value=red] + span { background-image: url(../img/dice_red.png) !important; }
 .ui-selectmenu-menu ul li:nth-child(3):before, select[data-value=redreroll] + span { background-image: url(../img/dice_redreroll.png) !important; }
 .ui-selectmenu-menu ul li:nth-child(4):before, select[data-value=orange] + span { background-image: url(../img/dice_orange.png) !important; }
 .ui-selectmenu-menu ul li:nth-child(5):before, select[data-value=orangereroll] + span { background-image: url(../img/dice_orangereroll.png) !important; }
 .ui-selectmenu-menu ul li:nth-child(6):before, select[data-value=yellow] + span { background-image: url(../img/dice_yellow.png) !important; }
 .ui-selectmenu-menu ul li:nth-child(7):before, select[data-value=yellowreroll] + span { background-image: url(../img/dice_yellowreroll.png) !important; }
+
+
+
+@media screen and (min-width: 840px) {
+    .dialog .equipment {
+        width: 50%;
+    }
+}
