@@ -104,8 +104,8 @@ var ConanAbout = {
             'nordheim-short': "Nordheim",
             'khitai': "Extension Khitaï",
             'khitai-short': "Khitaï",
-            'stygie': "Extension Stygie",
-            'stygie-short': "Stygie",
+            'stygia': "Extension Stygie",
+            'stygia-short': "Stygie",
             
             'crossbowmen': "Arbalétriers",
             'blackdragons': "Dragons Noirs",
@@ -141,8 +141,8 @@ var ConanAbout = {
             'nordheim-short': "Nordheim",
             'khitai': "Khitaï expansion",
             'khitai-short': "Khitaï",
-            'stygie': "Stygie expansion",
-            'stygie-short': "Stygie",
+            'stygia': "Stygia expansion",
+            'stygia-short': "Stygia",
             
             'crossbowmen': "Crossbowmen",
             'blackdragons': "Black dragons",
@@ -292,7 +292,7 @@ var ConanAbout = {
             +       "</fieldset>"
 
             +       "<fieldset><legend>" + ConanAbout._i18n[Language].custom_regionalexts + "</legend>"
-            +           "<div><input type=\"checkbox\" name=\"stygie\"\ id=\"stygie\"><label for=\"stygie\">" + ConanAbout._origins[Language].stygie + "</label></div>"
+            +           "<div><input type=\"checkbox\" name=\"stygia\"\ id=\"stygia\"><label for=\"stygia\">" + ConanAbout._origins[Language].stygia + "</label></div>"
             +           "<div><input type=\"checkbox\" name=\"nordheim\"\ id=\"nordheim\"><label for=\"nordheim\">" + ConanAbout._origins[Language].nordheim + "</label></div>"
             +           "<div><input type=\"checkbox\" name=\"khitai\"\ id=\"khitai\"><label for=\"khitai\">" + ConanAbout._origins[Language].khitai + "</label></div>"
             +       "</fieldset>"

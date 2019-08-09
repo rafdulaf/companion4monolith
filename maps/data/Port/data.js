@@ -6,7 +6,7 @@ Port = {
         },
         version: '1.0',
         format: '1.0',
-        origin: 'stygie',
+        origin: 'stygia',
         copyright: 'Monolith',
         rules: [ 
             {
