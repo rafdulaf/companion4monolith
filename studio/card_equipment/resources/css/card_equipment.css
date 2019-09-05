@@ -2,6 +2,10 @@
   font-family: "Font Awesome 5 Free";
   content: "\f055";  
 }
+.equipment-icon-print:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f02f";  
+}
 
 #equipment {
     font-family: 'Hyborian';

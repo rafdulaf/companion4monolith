@@ -264,13 +264,17 @@ var ConanAbout = {
         $(".custom input, .custom select").on('change', function() {
             if (!display)
             {
-                $(document.body).append("<div class=\"reload\" style=\"bottom: -100px; opacity: 0;\">" + ConanAbout._i18n[Language].custom_reload + "</div>");
-                window.setTimeout(function() { $(".reload").css("bottom", "30px").css("opacity", "1"); }, 1);
-                window.setTimeout(function() { $(".reload").css("bottom", "-100px").css("opacity", "0"); }, 3000);
-                window.setTimeout(function() { $(".reload").remove(); }, 3500);
+                ConanAbout.warnToast(ConanAbout._i18n[Language].custom_reload);
             }
             display = true;
         })
+    },
+    
+    warnToast: function(text) {
+        $(document.body).append("<div class=\"toast-warning\" style=\"bottom: -100px; opacity: 0;\">" + text + "</div>");
+        window.setTimeout(function() { $(".toast-warning").css("bottom", "30px").css("opacity", "1"); }, 1);
+        window.setTimeout(function() { $(".toast-warning").css("bottom", "-100px").css("opacity", "0"); }, 3000);
+        window.setTimeout(function() { $(".toast-warning").remove(); }, 3500);
     },
     
     _custom: function()
@@ -395,10 +399,7 @@ var ConanAbout = {
         $(".custom input, .custom select").on('change', function() {
             if (!display)
             {
-                $(document.body).append("<div class=\"reload\" style=\"bottom: -100px; opacity: 0;\">" + ConanAbout._i18n[Language].custom_reload + "</div>");
-                window.setTimeout(function() { $(".reload").css("bottom", "30px").css("opacity", "1"); }, 1);
-                window.setTimeout(function() { $(".reload").css("bottom", "-100px").css("opacity", "0"); }, 3000);
-                window.setTimeout(function() { $(".reload").remove(); }, 3500);
+                ConanAbout.warnToast(ConanAbout._i18n[Language].custom_reload);
             }
             display = true;
         })

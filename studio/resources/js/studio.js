@@ -1,10 +1,16 @@
 var ConanStudio = {
       _i18n: {
         'fr': {
-            'menu': "Studio"
+            'menu': "Studio",
+            'printcardsLabel': "Imprimer",
+            'printcardsHint': "Sélectionnez les éléments à imprimer puis cliquez sur le bouton imprimer en haut à droite.",
+            'printcardEmpty': "Vous n'avez sélectionné aucun élément à imprimer"
         },
         'en': {
-            'menu': "Studio"
+            'menu': "Studio",
+            'printcardsLabel': "Print",
+            'printcardsHint': "Select the items to print and then click on the top-right print button.",
+            'printcardEmpty': "You did not select any element to print"
         }
     },
     
@@ -37,5 +43,42 @@ var ConanStudio = {
         
         ConanStudio._currentSlide = slide;
         ConanStudio._slides[ConanStudio._currentSlide].onShow();
+    },
+    
+    printCards: function()
+    {
+        Nav.dialog(ConanStudio._i18n[Language].printcardsLabel, 
+            "<div class=\"printcards\">"
+            + "<p class='hint'>" + ConanStudio._i18n[Language].printcardsHint + "</p>"
+            
+            + "<h1>" + CardEquipment._i18n[Language].tab + "</h1>"
+            + "<p>" + CardEquipment._i18n[Language].printnocard + "</p>"
+            
+            + "<h1>" + CardSpell._i18n[Language].tab + "</h1>"
+            + "<p>" + CardSpell._i18n[Language].printnocard + "</p>"
+            
+            + "<h1>" + HeroSheet._i18n[Language].tab + "</h1>"
+            + "<p>" + HeroSheet._i18n[Language].printnocard + "</p>"
+            
+            + "<h1>" + Tile._i18n[Language].tab + "</h1>"
+            + "<p>" + Tile._i18n[Language].printnocard + "</p>"
+            
+            + "</div>",
+            null,
+            [{
+                label: ConanStudio._i18n[Language].printcardsLabel,
+                icon: "studio-icon-printcards",
+                fn: "ConanStudio._printCards();"
+            }]
+        );
+    },
+    
+    _printCards: function() 
+    {
+        if (true)
+        {
+            ConanAbout.warnToast(ConanStudio._i18n[Language].printcardEmpty);
+            return;
+        }
     }
 };

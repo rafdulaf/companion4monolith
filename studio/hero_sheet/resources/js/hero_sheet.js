@@ -1,10 +1,14 @@
 var HeroSheet = {
     _i18n: {
         'fr': {
-            'tab': "Héros"
+            'tab': "Héros",
+            'nocard': "Vous n'avez aucune fiche pour le moment. Cliquez sur le bouton + en haut pour en creer une.",
+            'printnocard': "Vous n'avez aucune fiche pour le moment"
         },
         'en': {
-            'tab': "Hero"
+            'tab': "Hero",
+            'nocard': "You have no sheet for the moment. Click on the + button in the header to create one.",
+            'printnocard': "You have no sheet for the moment"
         }
     },
     

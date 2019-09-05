@@ -2,8 +2,10 @@ var CardEquipment = {
     _i18n: {
         'fr': {
             'tab': "équipement",
-            'nocard': "Vous n'avez aucune carte pour le moment. Cliquez sur le bouton plus en haut pour en creer une.",
+            'nocard': "Vous n'avez aucune carte pour le moment. Cliquez sur le bouton + en haut pour en creer une.",
+            'printnocard': "Vous n'avez aucune carte pour le moment",
             'newcard': "Créer une carte",
+            'print': "Imprimer des cartes",
             'editcard': "Modifier",
             'save': "Enregistrer",
             'remove': "Effacer",
@@ -39,8 +41,10 @@ var CardEquipment = {
         },
         'en': {
             'tab': "Equipment",
-            'nocard': "You have no card for the moment. Click on the plus button in the header to create one.",
+            'nocard': "You have no card for the moment. Click on the + button in the header to create one.",
+            'printnocard': "You have no card for the moment",
             'newcard': "Create a new card",
+            'print': "Print cards",
             'editcard': "Edit a card",
             'save': "Save",
             'remove': "Delete",
@@ -83,6 +87,7 @@ var CardEquipment = {
     init: function() {
 //        $("#equipment").html("In construction");return;
         Nav.addAction("studio", CardEquipment._i18n[Language].newcard, "equipment-icon-add", "equipment-add", CardEquipment.add);
+        Nav.addAction("studio", CardEquipment._i18n[Language].print, "equipment-icon-print", "equipment-print", ConanStudio.printCards);
         CardEquipment.onHide();
         CardEquipment._displayCards();
     },

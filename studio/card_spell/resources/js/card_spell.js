@@ -1,10 +1,14 @@
 var CardSpell = {
     _i18n: {
         'fr': {
-            'tab': "Sort"
+            'tab': "Sort",
+            'nocard': "Vous n'avez aucune carte pour le moment. Cliquez sur le bouton + en haut pour en creer une.",
+            'printnocard': "Vous n'avez aucune carte pour le moment"
         },
         'en': {
-            'tab': "Spell"
+            'tab': "Spell",
+            'nocard': "You have no card for the moment. Click on the + button in the header to create one.",
+            'printnocard': "You have no card for the moment"
         }
     },
     

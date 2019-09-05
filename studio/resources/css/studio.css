@@ -2,3 +2,22 @@
   font-family: "Font Awesome 5 Free";
   content: "\f591";  
 }
+
+.studio-icon-printcards:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f02f";  
+}
+
+
+.dialog .printcards .hint {
+    text-align: center;
+    font-stle: italic;
+}
+.dialog .printcards h1 {
+    margin-bottom: 0.5em;
+    margin-top: 0;
+    text-align: left;
+    font-family: 'Hyborian';
+    font-size: 16px;
+    vertical-align: top;
+}
