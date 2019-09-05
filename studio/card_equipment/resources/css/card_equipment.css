@@ -6,8 +6,13 @@
 #equipment {
     font-family: 'Hyborian';
     overflow: auto;
+    position: relative;
 }
-#equipment .card {
+.card.equipement {
+    font-family: 'Hyborian';
+    font-size: 16px;
+    text-align: left;
+    
     position: relative;
     display: inline-block; 
     
@@ -18,21 +23,21 @@
     overflow: hidden;    
 }
 
-#equipment .card img.background {
+.card.equipement img.background {
     position: absolute;
     width: 146.5%;
     left: -23.5%;
     top: -15.5%;
 }
-#equipment .card img.background-name {
+.card.equipement img.background-name {
     position: absolute;
     top: 3%;
     width: 81.37%;
     left: 50%;
     transform: translateX(-50%);
 }
-#equipment .card img.background-encumbrance,
-#equipment .card .encumbrance {
+.card.equipement img.background-encumbrance,
+.card.equipement .encumbrance {
     position: absolute;
     bottom: 4.5%;
     right: 7.4%;
@@ -44,7 +49,7 @@
     line-height: 100%;
 }
 
-#equipment .card .name {
+.card.equipement .name {
     text-align: center;
     width: 81.37%;
     position: absolute;
@@ -53,67 +58,67 @@
     top: 7%;
     line-height: 100%;
     text-shadow: 0 0 3px #FFF;
+    color: #000;
 }
 
-#equipment .card .level0, 
-#equipment .card .level1,
-#equipment .card .level2,
-#equipment .card .level3 {
+.card.equipement .level0, 
+.card.equipement .level1,
+.card.equipement .level2,
+.card.equipement .level3,
+.card.equipement .level4 {
     position: absolute;
     left: 6%;
     width: 88%;
     height: 26.4%;
 }
-#equipment .card .level0 { bottom: 3.2%; }
-#equipment .card .level1 { bottom: 30.4%; }
-#equipment .card .level2 { bottom: 57.6%; }
-#equipment .card .level3 { bottom: 85.8%; }
+.card.equipement .level0 { bottom: 3.2%; }
+.card.equipement .level1 { bottom: 30.4%; }
+.card.equipement .level2 { bottom: 57.6%; }
+.card.equipement .level3 { bottom: 85.8%; }
+.card.equipement .level4 { bottom: 113%; }
 
-#equipment .card .background-passive { height: 90.9%; position: absolute; top: 9.1%; }
-#equipment .card .background-active { height: 100%; position: absolute; }
-#equipment .card .background-manipulation { height: 100%; position: absolute; }
-#equipment .card .background-ranged { height: 93.6%; position: absolute; top: 6.4%; }
-#equipment .card .background-melee { height: 100%; position: absolute; }
+.card.equipement .background-passive { height: 90.9%; position: absolute; top: 9.1%; }
+.card.equipement .background-active { height: 100%; position: absolute; }
+.card.equipement .background-manipulation { height: 100%; position: absolute; }
+.card.equipement .background-ranged { height: 93.6%; position: absolute; top: 6.4%; }
+.card.equipement .background-melee { height: 100%; position: absolute; }
 
-#equipment .card > div > img + img {
+.card.equipement > div > img + img {
     position: absolute;
     bottom: 6%;
     height: 38%;
 }
-#equipment .card > div > img.background-passive + img { left: 21%; }
-#equipment .card > div > img.background-passive + img + img { left: 39%; }
+.card.equipement > div > img.background-passive + img { left: 21%; }
+.card.equipement > div > img.background-passive + img + img { left: 39%; }
 
-#equipment .card > div > img.background-active + img { left: 24%; }
-#equipment .card > div > img.background-active + img + img { left: 43%; }
+.card.equipement > div > img.background-active + img { left: 24%; }
+.card.equipement > div > img.background-active + img + img { left: 43%; }
 
-#equipment .card > div > img.background-ranged + img { left: 29%; bottom: 7%; }
-#equipment .card > div > img.background-ranged.duo + img { left: 23%; bottom: 7%; }
-#equipment .card > div > img.background-ranged + img + img { left: 41%; }
-#equipment .card > div.throw > img.background-ranged + img { left: 28%; }
-#equipment .card > div.throw > img.background-ranged.duo + img { left: 23%; }
-#equipment .card > div.throw > img.background-ranged + img + img { left: 41%; bottom: 7%; }
+.card.equipement > div > img.background-ranged + img { left: 29%; bottom: 7%; }
+.card.equipement > div > img.background-ranged.duo + img { left: 23%; bottom: 7%; }
+.card.equipement > div > img.background-ranged + img + img { left: 41%; }
+.card.equipement > div.throw > img.background-ranged + img { left: 28%; }
+.card.equipement > div.throw > img.background-ranged.duo + img { left: 23%; }
+.card.equipement > div.throw > img.background-ranged + img + img { left: 41%; bottom: 7%; }
 
-#equipment .card > div > img.background-manipulation + img { left: 35%; bottom: 7%; }
-#equipment .card > div > img.background-manipulation + img + img { left: 55%; bottom: 7%; }
-#equipment .card > div.explosive > img.background-manipulation + img { left: 20%; bottom: 7%; }
-#equipment .card > div.explosive > img.background-manipulation + img + img { left: 40%; bottom: 7%; }
+.card.equipement > div > img.background-manipulation + img { left: 35%; bottom: 7%; }
+.card.equipement > div > img.background-manipulation + img + img { left: 55%; bottom: 7%; }
+.card.equipement > div.explosive > img.background-manipulation + img { left: 20%; bottom: 7%; }
+.card.equipement > div.explosive > img.background-manipulation + img + img { left: 40%; bottom: 7%; }
 
-#equipment .card > div > img.background-melee + img { left: 24%; }
-#equipment .card > div > img.background-melee + img + img { left: 43%; }
+.card.equipement > div > img.background-melee + img { left: 24%; }
+.card.equipement > div > img.background-melee + img + img { left: 43%; }
 
-#equipment .card div.image {
+.card.equipement div.image {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
 }
-#equipment .card div.image img { 
+.card.equipement div.image img { 
     position: absolute;
-    left: 50%;
-    top: 50%;
     transform: translate(-50%, -50%);
-    width: 100%; 
 }
 
 #equipment .nocards {
@@ -160,7 +165,7 @@
 }
 
 .dialog .equipment .field input#eqname {
-   font-size: 36px;
+   font-size: 34px;
    height: 72px;
    font-family: 'Hyborian';
    text-align: center;
@@ -176,8 +181,47 @@
 .dialog .equipment .field.passive,
 .dialog .equipment .field.ranged,
 .dialog .equipment .field.manipulation,
-.dialog .equipment .field.weight {
+.dialog .equipment .field.weight,
+.dialog .equipment .field.imagelocation,
+.dialog .equipment .field.imagezoom,
+.dialog .equipment .field.imagerotation {
     height: 113px;
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+.dialog .equipment .field.imagelocation {
+    width: 50%;
+    margin-top: 0;
+    text-align: left;
+}
+.dialog .equipment .field.imagezoom,
+.dialog .equipment .field.imagerotation {
+    width: 25%;
+    margin-top: 0;
+    text-align: left;
+}
+.dialog .equipment .field.imagezoom:after,
+.dialog .equipment .field.imagelocation div:after {
+    margin-left: 3px;
+    content: "%";
+}
+.dialog .equipment .field.imagerotation:after {
+    margin-left: 3px;
+    content: "°";
+}
+.dialog .equipment .field.imagelocation input,
+.dialog .equipment .field.imagezoom input,
+.dialog .equipment .field.imagerotation input {
+    width: 29px;
+    text-align: right;
+}
+.dialog .equipment .field.imagelocation, .dialog .equipment .field.imagezoom
+{ padding-right: 0; }
+.dialog .equipment .field.imagezoom, .dialog .equipment .field.imagerotation
+{ padding-left: 0; }
+
+.dialog .equipment .field.imagelocation > div {
     width: 50%;
     display: inline-block;
     vertical-align: top;
@@ -235,7 +279,11 @@
    background-position: calc(50% - 6px);
    background-size: contain;
 }
-.dialog .equipment .field input#eqimage {
+.dialog .equipment .field input#eqimage,
+.dialog .equipment .field input#eqimagelocation,
+.dialog .equipment .field input#eqimagelocation2,
+.dialog .equipment .field input#eqimagezoom,
+.dialog .equipment .field input#eqimagerotation {
    font-size: 22px;
    line-height: 36px;
    font-family: 'Moolbor';
@@ -312,6 +360,10 @@
   font-family: "Font Awesome 5 Free";
   content: "\f0c7";  
 }
+.dialog .equipment-remove:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f2ed";  
+}
 
 .ui-front {
     z-index: 100000;
@@ -347,10 +399,40 @@ span[role=combobox] {
 .ui-selectmenu-menu ul li:nth-child(6):before, select[data-value=yellow] + span { background-image: url(../img/dice_yellow.png) !important; }
 .ui-selectmenu-menu ul li:nth-child(7):before, select[data-value=yellowreroll] + span { background-image: url(../img/dice_yellowreroll.png) !important; }
 
-
+.dialog .equipment-preview .preview {
+    text-align: center;
+    margin-top: 20px;
+}
+.dialog .equipment h1,
+.dialog .equipment-preview h1 {
+    margin-bottom: 0.5em;
+    margin-top: 0;
+    text-align: center;
+    font-family: 'Hyborian';
+    font-size: 16px;
+    vertical-align: top;
+}
+.dialog .equipment h1:before,
+.dialog .equipment-preview h1:before {
+    display: inline-block;
+    color: #FFF;
+    background-color: #000;
+    width: 20px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.dialog .equipment h1:before {
+    content: "1";
+}
+.dialog .equipment-preview h1:before {
+    content: "2";
+}
 
 @media screen and (min-width: 840px) {
-    .dialog .equipment {
+    .dialog .equipment,
+    .dialog .equipment-preview {
         width: 50%;
+        display: inline-block;
+        vertical-align: top;
     }
 }
