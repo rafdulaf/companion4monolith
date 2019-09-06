@@ -69,7 +69,8 @@
 .card.equipement .level1,
 .card.equipement .level2,
 .card.equipement .level3,
-.card.equipement .level4 {
+.card.equipement .level4,
+.card.equipement .level5 {
     position: absolute;
     left: 6%;
     width: 88%;
@@ -79,13 +80,25 @@
 .card.equipement .level1 { bottom: 30.4%; }
 .card.equipement .level2 { bottom: 57.6%; }
 .card.equipement .level3 { bottom: 85.8%; }
-.card.equipement .level4 { bottom: 113%; }
+.card.equipement .level4,
+.card.equipement .level5 { bottom: 113%; }
 
 .card.equipement .background-passive { height: 90.9%; position: absolute; top: 9.1%; }
 .card.equipement .background-active { height: 100%; position: absolute; }
 .card.equipement .background-manipulation { height: 100%; position: absolute; }
 .card.equipement .background-ranged { height: 93.6%; position: absolute; top: 6.4%; }
 .card.equipement .background-melee { height: 100%; position: absolute; }
+.card.equipement .background-movement { height: 100%; position: absolute; }
+.card.equipement .movement div {
+    margin-top: 18%;
+    margin-left: 34%;
+    line-height: 100%;
+    font-size: 250%;
+    font-family: "Motrg";
+    color: #FFF;
+    position: relative;
+    width: 20%;
+}
 
 .card.equipement > div > img + img {
     position: absolute;
@@ -186,6 +199,7 @@
 .dialog .equipment .field.ranged,
 .dialog .equipment .field.manipulation,
 .dialog .equipment .field.weight,
+.dialog .equipment .field.movement,
 .dialog .equipment .field.imagelocation,
 .dialog .equipment .field.imagezoom,
 .dialog .equipment .field.imagerotation {
@@ -240,7 +254,11 @@
 .dialog .equipment .field.weight    label {
     margin-bottom: 20px;
 }
+.dialog .equipment .field.movement  label {
+    margin-bottom: 26px;
+}
 
+.dialog .equipment .field.movement:before,
 .dialog .equipment .field.melee:before,
 .dialog .equipment .field.active:before, 
 .dialog .equipment .field.passive:before,
@@ -272,17 +290,29 @@
 .dialog .equipment .field.manipulation:before {
    background-image: url(../img/manip-2.png);
 }
+.dialog .equipment .field.movement:before {
+   background-image: url(../img/movement.png);
+}
 
-.dialog .equipment .field input#eqweight {
+.dialog .equipment .field input#eqweight,
+.dialog .equipment .field input#eqmovement {
    font-size: 36px;
    font-family: "Motrg";
    text-align: center;
    color: #FFFFFF;
-   background-image: url(../img/weight.png);
    background-repeat: no-repeat;
    background-position: calc(50% - 6px);
    background-size: contain;
 }
+.dialog .equipment .field input#eqweight { background-image: url(../img/weight.png); }
+.dialog .equipment .field input#eqmovement {
+    z-index: 1;
+    position: relative;
+    background-color: transparent;
+    font-size: 48px;
+    width: 40px;
+}
+
 .dialog .equipment .field input#eqimage,
 .dialog .equipment .field input#eqimagelocation,
 .dialog .equipment .field input#eqimagelocation2,
@@ -360,6 +390,27 @@
     background-image: url(../img/explosive.png);
 }
 
+.dialog .equipment input#eqimage {
+    padding-left: 10px;
+}
+.dialog .equipment .imagelocation {
+    padding-left: 30px;
+}
+
+.dialog .equipment .imageatfront {
+    text-align: left;
+    padding-left: 10px;
+}
+.dialog .equipment .imageatfront input[type=checkbox] {
+    width: 16px;
+    height: 16px;
+    margin-left: 0;
+}
+.dialog .equipment .imageatfront input[type=checkbox] + label {
+    font-size: 24px;
+    font-family: 'Moolbor';
+}
+
 .dialog .equipment-save:before {
   font-family: "Font Awesome 5 Free";
   content: "\f0c7";  
@@ -395,7 +446,7 @@ span[role=combobox] {
 .ui-selectmenu-icon.ui-icon.ui-icon-triangle-1-s { background-image: none; }
 .ui-menu-item, .ui-menu-item-wrapper { height: 40px; position: relative; }
 .ui-selectmenu-button.ui-button.ui-widget.ui-selectmenu-button-closed.ui-corner-all { border-color: transparent; }
-.ui-selectmenu-menu ul li:nth-child(1):before, select[data-value=''] + span .ui-selectmenu-text:before { content: "?"; font-size: 26px; font-family: 'Hyborian'; color: #7F7F7F; position: absolute; top: 0; left: 32%; }
+.ui-selectmenu-menu ul li:nth-child(1):before, select[data-value=none] + span .ui-selectmenu-text:before { content: "?"; font-size: 26px; font-family: 'Hyborian'; color: #7F7F7F; position: absolute; top: 0; left: 32%; }
 .ui-selectmenu-menu ul li:nth-child(2):before, select[data-value=red] + span { background-image: url(../img/dice_red.png) !important; }
 .ui-selectmenu-menu ul li:nth-child(3):before, select[data-value=redreroll] + span { background-image: url(../img/dice_redreroll.png) !important; }
 .ui-selectmenu-menu ul li:nth-child(4):before, select[data-value=orange] + span { background-image: url(../img/dice_orange.png) !important; }
@@ -425,16 +476,18 @@ span[role=combobox] {
     border-radius: 100%;
     margin-right: 10px;
 }
-.dialog .equipment h1:before {
+.dialog .eqcol:nth-child(1) .equipment h1:before {
     content: "1";
 }
-.dialog .equipment-preview h1:before {
+.dialog .eqcol:nth-child(2) .equipment h1:before {
     content: "2";
+}
+.dialog .eqcol:nth-child(2) .equipment-preview h1:before {
+    content: "3";
 }
 
 @media screen and (min-width: 840px) {
-    .dialog .equipment,
-    .dialog .equipment-preview {
+    .dialog .eqcol {
         width: 50%;
         display: inline-block;
         vertical-align: top;

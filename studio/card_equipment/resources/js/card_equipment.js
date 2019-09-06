@@ -14,6 +14,8 @@ var CardEquipment = {
             'namePh': "?",
             'weight': "Encombrement",
             'weightPh': "?",
+            'movement': "Mouvement",
+            'movementPh': "?",
             'meleeAttack': "Corps à corps",
             'manipulation': "Manipulation",
             'manipulationExplosive': "Explosif",
@@ -29,6 +31,7 @@ var CardEquipment = {
             'imagezoomPh': "0",
             'imagerotation': "Rotation",
             'imagerotationPh': "0",
+            'imageatfront': "Mettre l'image devant les symboles",
             'diceNone': "Aucun",
             'diceRed': "Rouge",
             'diceRedReroll': "Rouge \uf01e",
@@ -37,6 +40,7 @@ var CardEquipment = {
             'diceYellow': "Jaune",
             'diceYellowReroll': "Jaune \uf01e",
             'header1': "Saisissez les données de la carte",
+            'header1bis': "Mettez une image",
             'header2': "Prévisualiser la carte"
         },
         'en': {
@@ -53,6 +57,8 @@ var CardEquipment = {
             'namePh': "Name of the card",
             'weight': "Encumbrance",
             'weightPh': "?",
+            'movement': "Movement",
+            'movementPh': "?",
             'meleeAttack': "Bonus in melee attack",
             'manipulation': "Manipulation",
             'manipulationExplosive': "Explosive",
@@ -68,6 +74,7 @@ var CardEquipment = {
             'imagezoomPh': "0",
             'imagerotation': "Rotation",
             'imagerotationPh': "0",
+            'imageatfront': "Image in front of symbols",
             'diceNone': "None",
             'diceRed': "Red",
             'diceRedReroll': "Red \uf01e",
@@ -76,6 +83,7 @@ var CardEquipment = {
             'diceYellow': "Yellow",
             'diceYellowReroll': "Yellow \uf01e",
             'header1': "Fill the card data",
+            'header1bis': "Set a picture",
             'header2': "Preview the final result"
         }
     },
@@ -125,12 +133,19 @@ var CardEquipment = {
                 + "<img class=\"background-name\" src=\"studio/card_equipment/resources/img/name-background.png\"/>"
                 + "<div class=\"name\">" + card.name + "</div>";
                 
+        var imageCode = "<div class=\"image\"><img src=\"" + card.image + "\" style=\"left: " + card.imagelocation.x + "%; top: " + card.imagelocation.y + "%; width: " + card.imagezoom + "%; transform: translate(-50%, -50%) rotate(" + card.imagerotation + "deg)\"/></div>"; 
+                
+        if (card.image && !card.imageatfront)
+        {
+            code += imageCode;
+        }
+
         if (card.encumbrance)
         {
             code += "<img class=\"background-encumbrance\" src=\"studio/card_equipment/resources/img/weight.png\"/>"
                 + "<div class=\"encumbrance\">" + card.encumbrance + "</div>";
         }
-        
+
         var level = 0;
         if (card.passive && card.passive[0] != 'none')
         {
@@ -187,9 +202,19 @@ var CardEquipment = {
                    + "</div>"
             level++;
         }
-        if (card.image)
+
+        if (card.movement)
         {
-            code += "<div class=\"image\"><img src=\"" + card.image + "\" style=\"left: " + card.imagelocation.x + "%; top: " + card.imagelocation.y + "%; width: " + card.imagezoom + "%; transform: translate(-50%, -50%) rotate(" + card.imagerotation + "deg)\"/></div>";
+            code += "<div class=\"movement level" + level + "\">"
+                        + "<img class=\"background-movement\" src=\"studio/card_equipment/resources/img/movement.png\"/>"
+                        + "<div>" + card.movement + "</div>"
+                   + "</div>";
+            level++;
+        }
+        
+        if (card.image && card.imageatfront)
+        {
+            code += imageCode;
         }
 
         code += "</div>";
@@ -215,7 +240,8 @@ var CardEquipment = {
         var dlabel = card == undefined ? CardEquipment._i18n[Language].newcard : CardEquipment._i18n[Language].editcard;
         
         Nav.dialog(dlabel, 
-            "<div class=\"equipment\">"
+            "<div class=\"eqcol\">"
+            + "<div class=\"equipment\">"
                 + "<h1>" + CardEquipment._i18n[Language].header1 + "</h1>"
                 + "<input type=\"hidden\" name=\"cardpos\"/>"
                 + "<div class=\"field name\">"
@@ -249,13 +275,23 @@ var CardEquipment = {
                     + "<select id=\"eqmanipulation2\" class=\"dice\" name=\"cardmanip2\"><option value=\"none\">" + CardEquipment._i18n[Language].diceNone + "</option><option value=\"red\">" + CardEquipment._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + CardEquipment._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + CardEquipment._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + CardEquipment._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + CardEquipment._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + CardEquipment._i18n[Language].diceYellowReroll + "</option></select>"
                     + "<div class=\"manipexplosive\"><input type=\"checkbox\" id=\"eqexplosive\" name=\"cardexplosive\" onchange=\"CardEquipment._preview();\"/><label for=\"eqexplosive\">" + CardEquipment._i18n[Language].manipulationExplosive + "</label></div>"
                 + "</div>"
+                + "<div class=\"field movement\">"
+                    + "<label for=\"eqmovement\">" + CardEquipment._i18n[Language].movement + "</label>"
+                    + "<input type=\"number\" min=\"0\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"eqmovement\" name=\"cardmovement\" autocomplete=\"off\" placeholder=\"" + CardEquipment._i18n[Language].movementPh + "\" onkeyup=\"CardEquipment._preview();\" onchange=\"CardEquipment._preview();\"/>"
+                + "</div>"
                 + "<div class=\"field weight\">"
                     + "<label for=\"eqweight\">" + CardEquipment._i18n[Language].weight + "</label>"
                     + "<input type=\"number\" min=\"0\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"eqweight\" name=\"cardweight\" autocomplete=\"off\" placeholder=\"" + CardEquipment._i18n[Language].weightPh + "\" onkeyup=\"CardEquipment._preview();\" onchange=\"CardEquipment._preview();\"/>"
                 + "</div>"
+            + "</div>"
+            + "</div>"
+            + "<div class=\"eqcol\">"
+            + "<div class=\"equipment\">"
+                + "<h1>" + CardEquipment._i18n[Language].header1bis + "</h1>"
                 + "<div class=\"field\">"
                     + "<label for=\"eqimage\">" + CardEquipment._i18n[Language].image + "</label>"
                     + "<input id=\"eqimage\" name=\"cardimage\" autocomplete=\"off\" placeholder=\"" + CardEquipment._i18n[Language].imagePh + "\" onkeyup=\"CardEquipment._preview();\" onchange=\"CardEquipment._preview();\"/>"
+                    + "<div class=\"imageatfront\"><input type=\"checkbox\" id=\"eqimageatfront\" name=\"cardimageatfront\" onchange=\"CardEquipment._preview();\"/><label for=\"eqimageatfront\">" + CardEquipment._i18n[Language].imageatfront + "</label></div>"
                 + "</div>"
                 + "<div class=\"field imagelocation\">"
                     + "<label for=\"eqimagelocation\">" + CardEquipment._i18n[Language].imagelocation + "</label>"
@@ -274,6 +310,7 @@ var CardEquipment = {
             + "<div class=\"equipment-preview\">"
                 + "<h1>" + CardEquipment._i18n[Language].header2 + "</h1>"
                 + "<div class=\"preview\"></div>"
+            + "</div>"
             + "</div>",
             null,
             actions
@@ -283,15 +320,17 @@ var CardEquipment = {
             id: Math.random(),
             name: "",
             encumbrance: "",
-            melee: { 0: "", 1: "" },
-            ranged: { 0: "", 1: "", throwable: false },
-            manipulation: { 0: "", 1: "", explosive: false },
-            active: { 0: "", 1: "" },
-            passive: { 0: "", 1: "" },
+            movement: "",
+            melee: { 0: "none", 1: "none" },
+            ranged: { 0: "none", 1: "none", throwable: false },
+            manipulation: { 0: "none", 1: "none", explosive: false },
+            active: { 0: "none", 1: "none" },
+            passive: { 0: "none", 1: "none" },
             image: "",
             imagelocation: {x: "50", y: "50"},
             imagezoom: "100",
-            imagerotation: "0"
+            imagerotation: "0",
+            imageatfront: false
         };
         
         $("#eqmelee,#eqmelee2,#eqactive,#eqactive2,#eqpassive,#eqpassive2,#eqranged,#eqranged2,#eqmanipulation,#eqmanipulation2")
@@ -318,6 +357,7 @@ var CardEquipment = {
             id: $(".dialog input[name=cardpos]")[0].value,
             name: $(".dialog input[name=cardname]")[0].value,
             encumbrance: parseInt($(".dialog input[name=cardweight]")[0].value),
+            movement: parseInt($(".dialog input[name=cardmovement]")[0].value),
             melee: { 0: $(".dialog select[name=cardmelee1]")[0].value, 1: $(".dialog select[name=cardmelee2]")[0].value },
             ranged: { 0: $(".dialog select[name=cardranged1]")[0].value, 1: $(".dialog select[name=cardranged2]")[0].value, throwable: $(".dialog input[name=cardthrowable]")[0].checked },
             manipulation: { 0: $(".dialog select[name=cardmanip1]")[0].value, 1: $(".dialog select[name=cardmanip2]")[0].value, explosive: $(".dialog input[name=cardexplosive]")[0].checked },
@@ -326,7 +366,8 @@ var CardEquipment = {
             image: $(".dialog input[name=cardimage]")[0].value,
             imagelocation: {x: $(".dialog input[name=cardimagelocation]")[0].value || "50", y: $(".dialog input[name=cardimagelocation2]")[0].value || "50"},
             imagezoom: $(".dialog input[name=cardimagezoom]")[0].value || "100",
-            imagerotation: $(".dialog input[name=cardimagerotation]")[0].value || "0"
+            imagerotation: $(".dialog input[name=cardimagerotation]")[0].value || "0",
+            imageatfront: $(".dialog input[name=cardimageatfront]")[0].checked
         }
     },
     _card2form: function(card)
@@ -334,6 +375,7 @@ var CardEquipment = {
         $(".dialog input[name=cardpos]")[0].value = card.id;
         $(".dialog input[name=cardname]")[0].value = card.name;
         $(".dialog input[name=cardweight]")[0].value = card.encumbrance;
+        $(".dialog input[name=cardmovement]")[0].value = card.movement;
         $(".dialog select[name=cardmelee1]")[0].value = card.melee['0']; $(".dialog select[name=cardmelee1]").attr("data-value", card.melee['0']);
         $(".dialog select[name=cardmelee2]")[0].value = card.melee['1']; $(".dialog select[name=cardmelee2]").attr("data-value", card.melee['1']);
         $(".dialog select[name=cardranged1]")[0].value = card.ranged['0']; $(".dialog select[name=cardranged1]").attr("data-value", card.ranged['0']);
@@ -351,6 +393,7 @@ var CardEquipment = {
         $(".dialog input[name=cardimagelocation2]")[0].value = card.imagelocation.y;
         $(".dialog input[name=cardimagezoom]")[0].value = card.imagezoom;
         $(".dialog input[name=cardimagerotation]")[0].value = card.imagerotation;
+        $(".dialog input[name=cardimageatfront]")[0].checked = card.imageatfront;
     },
 
     _remove: function()
