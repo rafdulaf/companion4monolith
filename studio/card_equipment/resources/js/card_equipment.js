@@ -16,6 +16,9 @@ var CardEquipment = {
             'weightPh': "?",
             'movement': "Mouvement",
             'movementPh': "?",
+            'skills': "Compétences",
+            'skillsPh': "?",
+            'skillsNone': "Aucune",
             'meleeAttack': "Corps à corps",
             'manipulation': "Manipulation",
             'manipulationExplosive': "Explosif",
@@ -59,6 +62,9 @@ var CardEquipment = {
             'weightPh': "?",
             'movement': "Movement",
             'movementPh': "?",
+            'skills': "Skills",
+            'skillsPh': "?",
+            'skillsNone': "None",
             'meleeAttack': "Bonus in melee attack",
             'manipulation': "Manipulation",
             'manipulationExplosive': "Explosive",
@@ -238,6 +244,27 @@ var CardEquipment = {
         }
         
         var dlabel = card == undefined ? CardEquipment._i18n[Language].newcard : CardEquipment._i18n[Language].editcard;
+
+        function _skills()
+        {
+            var s = "";
+            for (var i in ConanRules._allSkills)
+            {
+                var skills = ConanRules._allSkills[i];
+                s += "<optgroup label=\"" + ConanRules._i18n[Language]['skills_' + i] + "\">";
+                
+                for (var j = 0; j < skills.length; j++)
+                {
+                    var skill = skills[j];
+                    s += "<option value=\"skills_" + i  + "_" + skill + "\">" + ConanRules._i18n[Language]['skills_' + i + '_' + skill + '_title'] + "</option>";
+                }
+                
+                s += "</optgroup>";
+            }
+            return s;
+        }
+        
+
         
         Nav.dialog(dlabel, 
             "<div class=\"eqcol\">"
@@ -278,6 +305,13 @@ var CardEquipment = {
                 + "<div class=\"field movement\">"
                     + "<label for=\"eqmovement\">" + CardEquipment._i18n[Language].movement + "</label>"
                     + "<input type=\"number\" min=\"0\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"eqmovement\" name=\"cardmovement\" autocomplete=\"off\" placeholder=\"" + CardEquipment._i18n[Language].movementPh + "\" onkeyup=\"CardEquipment._preview();\" onchange=\"CardEquipment._preview();\"/>"
+                + "</div>"
+                + "<div class=\"field skills\">"
+                    + "<label for=\"eqskills\">" + CardEquipment._i18n[Language].skills + "</label>"
+                    + "<select id=\"eqskills\" class=\"skills\" name=\"cardskills1\"><option value=\"none\">" + CardEquipment._i18n[Language].skillsNone + "</option>" + _skills() + "</select>"
+                    + "<label for=\"eqskills\"></label>"
+                    + "<select id=\"eqskills2\" class=\"skills\" name=\"cardskills2\"><option value=\"none\">" + CardEquipment._i18n[Language].skillsNone + "</option>" + _skills() + "</select>"
+                    + "<label for=\"eqskills2\"></label>"
                 + "</div>"
                 + "<div class=\"field weight\">"
                     + "<label for=\"eqweight\">" + CardEquipment._i18n[Language].weight + "</label>"
@@ -326,6 +360,7 @@ var CardEquipment = {
             manipulation: { 0: "none", 1: "none", explosive: false },
             active: { 0: "none", 1: "none" },
             passive: { 0: "none", 1: "none" },
+            skills: { 0: "none", 1: "none" },
             image: "",
             imagelocation: {x: "50", y: "50"},
             imagezoom: "100",
@@ -333,12 +368,14 @@ var CardEquipment = {
             imageatfront: false
         };
         
-        $("#eqmelee,#eqmelee2,#eqactive,#eqactive2,#eqpassive,#eqpassive2,#eqranged,#eqranged2,#eqmanipulation,#eqmanipulation2")
-            .attr("data-value", "")
-            .selectmenu({ width: 40, change: function(event, selection) { 
-                $(this).attr("data-value", selection.item.value);
-                CardEquipment._preview();
-            }});
+        $("#eqmelee,#eqmelee2,#eqactive,#eqactive2,#eqpassive,#eqpassive2,#eqranged,#eqranged2,#eqmanipulation,#eqmanipulation2").each (function (i) { // ,#eqskills,#eqskills2
+            var k = $(this);
+            k.attr("data-value", "")
+                .selectmenu({ appendTo: k.parent(), width: k.is(".dice") ? 40 : 58, change: function(event, selection) { 
+                    $(this).attr("data-value", selection.item.value);
+                    CardEquipment._preview();
+                }});
+        });
         CardEquipment._card2form(card);
         
         CardEquipment._preview();
@@ -359,6 +396,7 @@ var CardEquipment = {
             encumbrance: parseInt($(".dialog input[name=cardweight]")[0].value),
             movement: parseInt($(".dialog input[name=cardmovement]")[0].value),
             melee: { 0: $(".dialog select[name=cardmelee1]")[0].value, 1: $(".dialog select[name=cardmelee2]")[0].value },
+            skills: { 0: $(".dialog select[name=cardskills1]")[0].value, 1: $(".dialog select[name=cardskills2]")[0].value },
             ranged: { 0: $(".dialog select[name=cardranged1]")[0].value, 1: $(".dialog select[name=cardranged2]")[0].value, throwable: $(".dialog input[name=cardthrowable]")[0].checked },
             manipulation: { 0: $(".dialog select[name=cardmanip1]")[0].value, 1: $(".dialog select[name=cardmanip2]")[0].value, explosive: $(".dialog input[name=cardexplosive]")[0].checked },
             active: { 0: $(".dialog select[name=cardactive1]")[0].value, 1: $(".dialog select[name=cardactive2]")[0].value },
@@ -379,15 +417,17 @@ var CardEquipment = {
         $(".dialog select[name=cardmelee1]")[0].value = card.melee['0']; $(".dialog select[name=cardmelee1]").attr("data-value", card.melee['0']);
         $(".dialog select[name=cardmelee2]")[0].value = card.melee['1']; $(".dialog select[name=cardmelee2]").attr("data-value", card.melee['1']);
         $(".dialog select[name=cardranged1]")[0].value = card.ranged['0']; $(".dialog select[name=cardranged1]").attr("data-value", card.ranged['0']);
-        $(".dialog select[name=cardranged2]")[0].value = card.ranged['1']; $(".dialog select[name=cardranged2]").attr("data-value", card.ranged['0']);
+        $(".dialog select[name=cardranged2]")[0].value = card.ranged['1']; $(".dialog select[name=cardranged2]").attr("data-value", card.ranged['1']);
         $(".dialog input[name=cardthrowable]")[0].checked = card.ranged.throwable;
         $(".dialog select[name=cardmanip1]")[0].value = card.manipulation['0']; $(".dialog select[name=cardmanip1]").attr("data-value", card.manipulation['0']);
-        $(".dialog select[name=cardmanip2]")[0].value = card.manipulation['1']; $(".dialog select[name=cardmanip2]").attr("data-value", card.manipulation['0']);
+        $(".dialog select[name=cardmanip2]")[0].value = card.manipulation['1']; $(".dialog select[name=cardmanip2]").attr("data-value", card.manipulation['1']);
         $(".dialog input[name=cardexplosive]")[0].checked = card.manipulation.explosive;
         $(".dialog select[name=cardactive1]")[0].value = card.active['0']; $(".dialog select[name=cardactive1]").attr("data-value", card.active['0']);
-        $(".dialog select[name=cardactive2]")[0].value = card.active['1']; $(".dialog select[name=cardactive2]").attr("data-value", card.active['0']);
+        $(".dialog select[name=cardactive2]")[0].value = card.active['1']; $(".dialog select[name=cardactive2]").attr("data-value", card.active['1']);
         $(".dialog select[name=cardpassive1]")[0].value = card.passive['0']; $(".dialog select[name=cardpassive1]").attr("data-value", card.passive['0']);
-        $(".dialog select[name=cardpassive2]")[0].value = card.passive['1']; $(".dialog select[name=cardpassive2]").attr("data-value", card.passive['0']);
+        $(".dialog select[name=cardpassive2]")[0].value = card.passive['1']; $(".dialog select[name=cardpassive2]").attr("data-value", card.passive['1']);
+        $(".dialog select[name=cardskills1]")[0].value = card.skills['0']; $(".dialog select[name=cardskills1]").attr("data-value", card.skills['0']);
+        $(".dialog select[name=cardskills2]")[0].value = card.skills['1']; $(".dialog select[name=cardskills2]").attr("data-value", card.skills['1']);
         $(".dialog input[name=cardimage]")[0].value = card.image;
         $(".dialog input[name=cardimagelocation]")[0].value = card.imagelocation.x;
         $(".dialog input[name=cardimagelocation2]")[0].value = card.imagelocation.y;

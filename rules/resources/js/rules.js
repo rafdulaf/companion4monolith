@@ -176,6 +176,14 @@ var ConanRules = {
         }
     },
     
+    _allSkills: {
+        'attack' : ['reach', 'ambidextrous', 'constriction', 'circular_strike', 'precision_strike', 'attack_from_beyond', 'counterattack', 'elite_shooter', 'precision_shot'],
+        'movement': ['blocking', 'evasive', 'swimming', 'intangible', 'wall_wrecker', 'web_projection', 'leap', 'feline_grace', 'flying', 'climb'],
+        'miscellaneous': ['alchemy', 'concentration', 'lock_picking', 'fascination', 'leadership', 'horror', 'jinx', 'poison', 'support'],
+        'defense': ['sacrifice', 'bodyguard', 'untouchable', 'protected'],
+        'magic': ['spell_caster', 'teleportation']
+    },
+    
     init: function()
     {
         Nav.addIcon(ConanRules._i18n[Language].menu, "rules-icon", "rules");
@@ -208,64 +216,50 @@ var ConanRules = {
     {
         $('#skills > div').append("<div id='skills_attack' class='skill-tab'><h2>" + ConanRules._i18n[Language].skills_attack + "</h2></div>");
         
-        ConanRules._addSkill('attack', 'reach');
-        ConanRules._addSkill('attack', 'ambidextrous');
-        ConanRules._addSkill('attack', 'constriction');
-        ConanRules._addSkill('attack', 'circular_strike');
-        ConanRules._addSkill('attack', 'precision_strike');
-        ConanRules._addSkill('attack', 'attack_from_beyond');
-        ConanRules._addSkill('attack', 'counterattack');
-        ConanRules._addSkill('attack', 'elite_shooter');
-        ConanRules._addSkill('attack', 'precision_shot');
+        for (var i=0; i < ConanRules._allSkills.attack.length; i++)
+        {
+            ConanRules._addSkill('attack', ConanRules._allSkills.attack[i]);
+        }
     },
     
     _addMovementSkills: function()
     {
         $('#skills > div').append("<div id='skills_movement' class='skill-tab'><h2>" + ConanRules._i18n[Language].skills_movement + "</h2></div>");
         
-        ConanRules._addSkill('movement', 'blocking');
-        ConanRules._addSkill('movement', 'evasive');
-        ConanRules._addSkill('movement', 'swimming');
-        ConanRules._addSkill('movement', 'intangible');
-        ConanRules._addSkill('movement', 'wall_wrecker');
-        ConanRules._addSkill('movement', 'web_projection');
-        ConanRules._addSkill('movement', 'leap');
-        ConanRules._addSkill('movement', 'feline_grace');
-        ConanRules._addSkill('movement', 'flying');
-        ConanRules._addSkill('movement', 'climb');
+        for (var i=0; i < ConanRules._allSkills.movement.length; i++)
+        {
+            ConanRules._addSkill('movement', ConanRules._allSkills.movement[i]);
+        }
     },
     
     _addMiscellaneousSkills: function()
     {
         $('#skills > div').append("<div id='skills_miscellaneous' class='skill-tab'><h2>" + ConanRules._i18n[Language].skills_miscellaneous + "</h2></div>");
         
-        ConanRules._addSkill('miscellaneous', 'alchemy');
-        ConanRules._addSkill('miscellaneous', 'concentration');
-        ConanRules._addSkill('miscellaneous', 'lock_picking');
-        ConanRules._addSkill('miscellaneous', 'fascination');
-        ConanRules._addSkill('miscellaneous', 'leadership');
-        ConanRules._addSkill('miscellaneous', 'horror');
-        ConanRules._addSkill('miscellaneous', 'jinx');
-        ConanRules._addSkill('miscellaneous', 'poison');
-        ConanRules._addSkill('miscellaneous', 'support');
+        for (var i=0; i < ConanRules._allSkills.miscellaneous.length; i++)
+        {
+            ConanRules._addSkill('miscellaneous', ConanRules._allSkills.miscellaneous[i]);
+        }
     },
     
     _addDefenseSkills: function()
     {
         $('#skills > div').append("<div id='skills_defense' class='skill-tab'><h2>" + ConanRules._i18n[Language].skills_defense + "</h2></div>");
         
-        ConanRules._addSkill('defense', 'sacrifice');
-        ConanRules._addSkill('defense', 'bodyguard');
-        ConanRules._addSkill('defense', 'untouchable');
-        ConanRules._addSkill('defense', 'protected');
+        for (var i=0; i < ConanRules._allSkills.defense.length; i++)
+        {
+            ConanRules._addSkill('defense', ConanRules._allSkills.defense[i]);
+        }
     },
     
     _addMagicSkills: function()
     {
         $('#skills > div').append("<div id='skills_magic' class='skill-tab'><h2>" + ConanRules._i18n[Language].skills_magic + "</h2></div>");
         
-        ConanRules._addSkill('magic', 'spell_caster');
-        ConanRules._addSkill('magic', 'teleportation');
+        for (var i=0; i < ConanRules._allSkills.magic.length; i++)
+        {
+            ConanRules._addSkill('magic', ConanRules._allSkills.magic[i]);
+        }
     },
     
     _addSkill: function(type, id)
