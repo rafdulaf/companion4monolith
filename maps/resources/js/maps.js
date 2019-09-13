@@ -53,8 +53,8 @@ var ConanMaps = {
         Nav.addAction("maps", ConanMaps._i18n[Language].back, "maps-icon-index", "index", ConanMaps._displayIndex);
         Nav.addAction("maps", ConanMaps._i18n[Language].forum, "maps-icon-forum", "forum", ConanMaps._openForum);
         Nav.addAction("maps", ConanMaps._i18n[Language].losfile, "maps-icon-losfile", "losfile", ConanMaps._losFile);
-        Nav.addAction("maps", ConanMaps._i18n[Language].rotate, "maps-icon-rotate", "rotate", function() { ConanMaps._rotate(-1); } );
         Nav.addAction("maps", ConanMaps._i18n[Language].legend, "maps-icon-legend", "legend", ConanMaps._legend );
+        Nav.addAction("maps", ConanMaps._i18n[Language].rotate, "maps-icon-rotate", "rotate", function() { ConanMaps._rotate(-1); } );
 
         ConanMaps._rotation = window.screen.width / window.screen.height > 1.2 ? 0 : 3;
         
@@ -247,7 +247,10 @@ var ConanMaps = {
         if ((slick.currentSlide || 0) == 0)
         {
             Nav.hideAction("maps", "forum");
-            Nav.hideAction("maps", "losfile");
+            if (ConanMaps._files[ConanMaps._currentMap].description.losFile === true)
+            {
+                Nav.showAction("maps", "losfile");
+            }
             Nav.showAction("maps", "rotate");
             Nav.showAction("maps", "legend");
         }
@@ -257,11 +260,8 @@ var ConanMaps = {
             {
                 Nav.showAction("maps", "forum");
             }
-            if (ConanMaps._files[ConanMaps._currentMap].description.losFile === true)
-            {
-                Nav.showAction("maps", "losfile");
-            }
-            Nav.hideAction("maps", "rotate");
+            Nav.hideAction("maps", "losfile");
+            Nav.showAction("maps", "rotate");
             Nav.hideAction("maps", "legend");
         }
         Nav.updateTitle();
