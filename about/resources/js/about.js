@@ -123,7 +123,7 @@ var ConanAbout = {
             'bbox': "Brom Box",
             'ppbox': "Paolo Parente Box",
 
-            'campaignbook': "Livre de Campagne",
+            'campaignbook': "Livre de Campagne - La légende du diable d'Airain",
             'setbook': "Livre de Set",
 
             'doorpack': "Pack de portes",
@@ -160,8 +160,8 @@ var ConanAbout = {
             'bbox': "Brom Box",
             'ppbox': "Paolo Parente Box",
 
-            'campaignbook': "Book campaign",
-            'setbook': "Livre de Set",
+            'campaignbook': "Campaign book - The Devil in Iron",
+            'setbook': "Book of Set",
 
             'doorpack': "Pack de portes",
             'adventurepack': "Pack aventure"

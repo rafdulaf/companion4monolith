@@ -33,7 +33,7 @@ var ConanMaps = {
             'losfile': "Download the static lines of sight board",
             'start': "Click in an area to see the lines of sight",
             'legend': "Legend",
-            'clickhelp1': "Blue area is the selected area. It has lines of sight to all colored areas.",
+            'clickhelp1': "Blue area is the selected area. It has has line of sight to all colored areas.",
             'clickhelp4': "Yellow areas are below the blue area: Ranged attacks to these areas get an Elevation bonus of 1 yellow die.",
             'clickhelp6': "Green areas are at the same level as the blue area.",   
             'clickhelp5': "Turquoise areas are above the blue area.",
