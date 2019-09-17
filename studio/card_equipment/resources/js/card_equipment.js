@@ -108,20 +108,39 @@ var CardEquipment = {
     
     _displayCards: function()
     {
-        $("#equipment").html("");
+        $("#equipment").html(CardEquipment._getDisplayCardsCode(true));
+    },
+    
+    _getDisplayCardsCode: function(withEditLink)
+    {
+        var html = "";
         
         var cards = JSON.parse(localStorage.getItem("StudioEquipmentCards")) || [];
         if (cards.length > 0)
         {
             for (var i in cards)
             {
-                $("#equipment").append("<a href='javascript:void(0)' onclick='CardEquipment.add(JSON.parse(localStorage.getItem(\"StudioEquipmentCards\"))[" + i + "])'>" + CardEquipment._cardCode(cards[i]) + "</a>")    
+                var prefix = "", suffix = "";
+                if (withEditLink !== false)
+                {
+                    prefix = "<a href='javascript:void(0)' onclick='CardEquipment.add(JSON.parse(localStorage.getItem(\"StudioEquipmentCards\"))[" + i + "])'>";
+                    suffix = "</a>";
+                }
+                else 
+                {
+                    prefix = "<input type='checkbox' id='equipment-" + i + "' name='equipement' data-index='" + i + "'/><label for='equipment-" + i + "'>";
+                    suffix = "</label>";
+                }
+                
+                html += prefix + CardEquipment._cardCode(cards[i]) + suffix;
             }
         }
         else
         {
-            $("#equipment").append("<div class=\"nocards\">" + CardEquipment._i18n[Language].nocard + "</div>");
+            html += "<div class=\"nocards\">" + CardEquipment._i18n[Language].nocard + "</div>";
         }
+        
+        return html;
     },
     
     onShow: function() {

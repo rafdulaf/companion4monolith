@@ -14,7 +14,6 @@
 }
 .card.equipement {
     font-family: 'Hyborian';
-    font-size: 16px;
     text-align: left;
     
     position: relative;
@@ -24,15 +23,33 @@
 
     overflow: hidden;    
 }
-
 .card.equipement {
     width: 200px;
     height: calc(200px / 0.67);
+    font-size: 16px;
 }
+.printcards .card.equipement {
+    width: 100px;
+    height: calc(100px / 0.67);
+    font-size: 8px;
+}
+.printcards input { position: absolute; top:-5000px; }
+.printcards input + label { position: relative; display: inline-block; margin-right: 5px; }
+.printcards input + label:before { position: absolute; content: " "; z-index: 1; top: 0; left: 0; right: 0; bottom: 0; background-color: #000000; opacity: 0.2; }
+.printcards input + label:after { position: absolute; content: "\f057"; font-family: 'Font Awesome 5 Free'; font-size: 40px; left: -7px; top: -7px; }
+.printcards input:checked + label:before { display: none; }
+.printcards input:checked + label:after { content: "\f058"; }
+
 @media screen and (max-width: 400px) {
     .card.equipement {
         width: 160px;
         height: calc(160px / 0.67);
+        font-size: 12.8px;
+    }
+    .printcards .card.equipement {
+        width: 80px;
+        height: calc(80px / 0.67);
+        font-size: 6.4px;
     }
 }
 

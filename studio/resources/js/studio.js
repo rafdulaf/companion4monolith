@@ -52,16 +52,16 @@ var ConanStudio = {
             + "<p class='hint'>" + ConanStudio._i18n[Language].printcardsHint + "</p>"
             
             + "<h1>" + CardEquipment._i18n[Language].tab + "</h1>"
-            + "<p>" + CardEquipment._i18n[Language].printnocard + "</p>"
+            + "<div>" + CardEquipment._getDisplayCardsCode(false) + "</div>"
             
             + "<h1>" + CardSpell._i18n[Language].tab + "</h1>"
-            + "<p>" + CardSpell._i18n[Language].printnocard + "</p>"
+            + "<div>" + CardSpell._i18n[Language].printnocard + "</div>"
             
             + "<h1>" + HeroSheet._i18n[Language].tab + "</h1>"
-            + "<p>" + HeroSheet._i18n[Language].printnocard + "</p>"
+            + "<div>" + HeroSheet._i18n[Language].printnocard + "</div>"
             
             + "<h1>" + Tile._i18n[Language].tab + "</h1>"
-            + "<p>" + Tile._i18n[Language].printnocard + "</p>"
+            + "<div>" + Tile._i18n[Language].printnocard + "</div>"
             
             + "</div>",
             null,
