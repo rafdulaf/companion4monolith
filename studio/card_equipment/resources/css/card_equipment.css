@@ -74,6 +74,8 @@
     color: #000;
 }
 
+.card.equipement .skills + .skills img { bottom: 5%; }
+
 .card.equipement .level0, 
 .card.equipement .level1,
 .card.equipement .level2,
@@ -98,6 +100,8 @@
 .card.equipement .background-ranged { height: 93.6%; position: absolute; top: 6.4%; }
 .card.equipement .background-melee { height: 100%; position: absolute; }
 .card.equipement .background-movement { height: 100%; position: absolute; }
+.card.equipement .background-separator { width: 27%; position: absolute; left: 2%; bottom: 8%; }
+.card.equipement .background-skills { height: 68%; position: absolute; }
 .card.equipement .movement div {
     margin-top: 16%;
     margin-left: 34%;
@@ -217,6 +221,14 @@
     display: inline-block;
     vertical-align: top;
 }
+.dialog .equipment .field.skills, 
+.dialog .equipment .field.weight,
+.dialog .equipment .field.imagelocation,
+.dialog .equipment .field.imagezoom,
+.dialog .equipment .field.imagerotation {
+    height: 85px
+}
+
 .dialog .equipment .field.imagelocation {
     width: 50%;
     margin-top: 0;
@@ -259,9 +271,6 @@
 .dialog .equipment .field.ranged label,
 .dialog .equipment .field.manipulation label {
     margin-bottom: 50px;
-}
-.dialog .equipment .field.weight    label {
-    margin-bottom: 20px;
 }
 .dialog .equipment .field.movement  label {
     margin-bottom: 26px;
@@ -471,19 +480,7 @@
 .dialog .equipment .dice ~ .ui-selectmenu-menu ul li:nth-child(6):before, .dialog .equipment select[data-value=yellow] + span { background-image: url(../img/dice_yellow.png) !important; }
 .dialog .equipment .dice ~ .ui-selectmenu-menu ul li:nth-child(7):before, .dialog .equipment select[data-value=yellowreroll] + span { background-image: url(../img/dice_yellowreroll.png) !important; }
 
-.dialog .equipment select + label { widht: 60px; height: 60px; background-position: center; background-repeat: no-repeat; }
-.dialog .equipment select[data-value=none] + label { content: "?"; font-size: 26px; font-family: 'Hyborian'; color: #7F7F7F; position: absolute; top: 0; left: 32%; }
-.dialog .equipment select[data-value=skills_attack_reach] + label { background-image: url(../../../../resources/img/skills/attack/reach.png) !important; }
-.dialog .equipment select[data-value=skills_attack_ambidextrous] + label { background-image: url(../../../../resources/img/skills/attack/ambidextrous.png) !important; }
-.dialog .equipment select[data-value=skills_attack_constriction] + label { background-image: url(../../../../resources/img/skills/attack/constriction.png) !important; }
-.dialog .equipment select[data-value=skills_attack_circular_strike] + label { background-image: url(../../../../resources/img/skills/attack/circular_strike.png) !important; }
-.dialog .equipment select[data-value=skills_attack_precision_strike] + label { background-image: url(../../../../resources/img/skills/attack/precision_strike.png) !important; }
-.dialog .equipment select[data-value=skills_attack_attack_from_beyond] + label { background-image: url(../../../../resources/img/skills/attack/attack_from_beyond.png) !important; }
-.dialog .equipment select[data-value=skills_attack_counterattack] + label { background-image: url(../../../../resources/img/skills/attack/counterattack.png) !important; }
-.dialog .equipment select[data-value=skills_attack_elite_shooter] + label { background-image: url(../../../../resources/img/skills/attack/elite_shooter.png) !important; }
-.dialog .equipment select[data-value=skills_attack_precision_shot] + label { background-image: url(../../../../resources/img/skills/attack/precision_shot.png) !important; }
-
-
+.dialog .equipment select.skills { font-family: 'Moolbor'; font-size: 19px; }
 .dialog .equipment-preview .preview {
     text-align: center;
     margin-top: 20px;

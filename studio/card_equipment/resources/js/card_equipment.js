@@ -65,10 +65,10 @@ var CardEquipment = {
             'skills': "Skills",
             'skillsPh': "?",
             'skillsNone': "None",
-            'meleeAttack': "Bonus in melee attack",
+            'meleeAttack': "Melee attack",
             'manipulation': "Manipulation",
             'manipulationExplosive': "Explosive",
-            'rangedAttack': "Bonus in ranged attack",
+            'rangedAttack': "Ranged attack",
             'rangedAttackThrowable': "Throwable",
             'activeDefense': "Active defense",
             'passiveDefense': "Passive defense",
@@ -205,10 +205,10 @@ var CardEquipment = {
                         "<img class=\"background-melee duo\" src=\"studio/card_equipment/resources/img/contact-2.png\"/>")
                      + "<img src=\"studio/card_equipment/resources/img/dice_" + card.melee[0] + ".png\"/>"
                      + (card.melee[1] == 'none' ? "" : "<img src=\"studio/card_equipment/resources/img/dice_" + card.melee[1] + ".png\"/>")
-                   + "</div>"
+                   + "</div>";
             level++;
         }
-
+        
         if (card.movement)
         {
             code += "<div class=\"movement level" + level + "\">"
@@ -218,6 +218,26 @@ var CardEquipment = {
             level++;
         }
         
+        if (card.skills && card.skills[0] != 'none')
+        {
+            code += "<div class=\"skills-separator level" + level + "\">"
+                     + "<img class=\"background-separator\" src=\"studio/card_equipment/resources/img/separator.png\"/>"
+                   + "</div>";
+    
+            code += "<div class=\"skills level" + level + "\">"
+                     + "<img class=\"background-skills\" src=\"/resources/img/skills/" + card.skills[0] + ".png\"/>"
+                   + "</div>";
+            level++;
+            
+            if (card.skills && card.skills[1] != 'none')
+            {
+                code += "<div class=\"skills level" + level + "\">"
+                     + "<img class=\"background-skills\" src=\"/resources/img/skills/" + card.skills[1] + ".png\"/>"
+                   + "</div>";
+                level++;
+            }
+        }
+
         if (card.image && card.imageatfront)
         {
             code += imageCode;
@@ -256,7 +276,7 @@ var CardEquipment = {
                 for (var j = 0; j < skills.length; j++)
                 {
                     var skill = skills[j];
-                    s += "<option value=\"skills_" + i  + "_" + skill + "\">" + ConanRules._i18n[Language]['skills_' + i + '_' + skill + '_title'] + "</option>";
+                    s += "<option value=\"" + i  + "/" + skill + "\">" + ConanRules._i18n[Language]['skills_' + i + '_' + skill + '_title'] + "</option>";
                 }
                 
                 s += "</optgroup>";
@@ -308,10 +328,8 @@ var CardEquipment = {
                 + "</div>"
                 + "<div class=\"field skills\">"
                     + "<label for=\"eqskills\">" + CardEquipment._i18n[Language].skills + "</label>"
-                    + "<select id=\"eqskills\" class=\"skills\" name=\"cardskills1\"><option value=\"none\">" + CardEquipment._i18n[Language].skillsNone + "</option>" + _skills() + "</select>"
-                    + "<label for=\"eqskills\"></label>"
-                    + "<select id=\"eqskills2\" class=\"skills\" name=\"cardskills2\"><option value=\"none\">" + CardEquipment._i18n[Language].skillsNone + "</option>" + _skills() + "</select>"
-                    + "<label for=\"eqskills2\"></label>"
+                    + "<select id=\"eqskills\" class=\"skills\" name=\"cardskills1\" onchange=\"CardEquipment._preview();\"><option value=\"none\">" + CardEquipment._i18n[Language].skillsNone + "</option>" + _skills() + "</select>"
+                    + "<select id=\"eqskills2\" class=\"skills\" name=\"cardskills2\" onchange=\"CardEquipment._preview();\"><option value=\"none\">" + CardEquipment._i18n[Language].skillsNone + "</option>" + _skills() + "</select>"
                 + "</div>"
                 + "<div class=\"field weight\">"
                     + "<label for=\"eqweight\">" + CardEquipment._i18n[Language].weight + "</label>"
