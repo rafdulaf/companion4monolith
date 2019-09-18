@@ -53,6 +53,32 @@
     }
 }
 
+@media print {
+    .printcards .card.equipement {
+        overflow: visible;
+        margin: 0.5cm;
+        width: 3cm;
+        height: calc(3cm / 0.67);
+        font-size: 0.3cm;
+    }
+    .printcards input + label { display: none; }
+    .printcards input:checked + label { display: inline-block; }    
+    .printcards input:checked + label:before,
+    .printcards input:checked + label:after,
+    .dialog-header,
+    .printcards h1,
+    .printcards .hint,
+    .printcards .nocards 
+    { 
+        display: none; 
+    }
+    
+    .dialog-content {
+        margin: 0;
+    }
+}
+
+
 .card.equipement img.background {
     position: absolute;
     width: 146.5%;

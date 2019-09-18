@@ -52,16 +52,16 @@ var ConanStudio = {
             + "<p class='hint'>" + ConanStudio._i18n[Language].printcardsHint + "</p>"
             
             + "<h1>" + CardEquipment._i18n[Language].tab + "</h1>"
-            + "<div>" + CardEquipment._getDisplayCardsCode(false) + "</div>"
+            + CardEquipment._getDisplayCardsCode(false)
             
             + "<h1>" + CardSpell._i18n[Language].tab + "</h1>"
-            + "<div>" + CardSpell._i18n[Language].printnocard + "</div>"
+            + "<div class=\"nocards\">" + CardSpell._i18n[Language].printnocard + "</div>"
             
             + "<h1>" + HeroSheet._i18n[Language].tab + "</h1>"
-            + "<div>" + HeroSheet._i18n[Language].printnocard + "</div>"
+            + "<div class=\"nocards\">" + HeroSheet._i18n[Language].printnocard + "</div>"
             
             + "<h1>" + Tile._i18n[Language].tab + "</h1>"
-            + "<div>" + Tile._i18n[Language].printnocard + "</div>"
+            + "<div class=\"nocards\">" + Tile._i18n[Language].printnocard + "</div>"
             
             + "</div>",
             null,
@@ -75,10 +75,14 @@ var ConanStudio = {
     
     _printCards: function() 
     {
-        if (true)
+        if ($(".printcards input:checked").length == 0)
         {
             ConanAbout.warnToast(ConanStudio._i18n[Language].printcardEmpty);
             return;
+        }
+        else
+        {
+            window.print();
         }
     }
 };
