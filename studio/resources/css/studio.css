@@ -11,11 +11,13 @@
 
 .dialog .printcards .hint {
     text-align: center;
-    font-stle: italic;
+    font-style: italic;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 .dialog .printcards h1 {
     margin-bottom: 0.5em;
-    margin-top: 0;
+    margin-top: 0.5em;
     text-align: left;
     font-family: 'Hyborian';
     font-size: 16px;

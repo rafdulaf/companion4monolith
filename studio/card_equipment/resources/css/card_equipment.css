@@ -33,12 +33,12 @@
     height: calc(100px / 0.67);
     font-size: 8px;
 }
-.printcards input { position: absolute; top:-5000px; }
-.printcards input + label { position: relative; display: inline-block; margin-right: 5px; }
-.printcards input + label:before { position: absolute; content: " "; z-index: 1; top: 0; left: 0; right: 0; bottom: 0; background-color: #000000; opacity: 0.2; }
-.printcards input + label:after { position: absolute; content: "\f057"; font-family: 'Font Awesome 5 Free'; font-size: 40px; left: -7px; top: -7px; }
-.printcards input:checked + label:before { display: none; }
-.printcards input:checked + label:after { content: "\f058"; }
+.printcards input[name=equipment] { position: absolute; top:-5000px; }
+.printcards input[name=equipment] + label { position: relative; display: inline-block; margin-right: 5px; }
+.printcards input[name=equipment] + label:before { position: absolute; content: " "; z-index: 1; top: 0; left: 0; right: 0; bottom: 0; background-color: #000000; opacity: 0.2; }
+.printcards input[name=equipment] + label:after { position: absolute; content: "\f057"; font-family: 'Font Awesome 5 Free'; font-size: 40px; left: -7px; top: -7px; }
+.printcards input[name=equipment]:checked + label:before { display: none; }
+.printcards input[name=equipment]:checked + label:after { content: "\f058"; }
 
 @media screen and (max-width: 400px) {
     .card.equipement {
@@ -56,9 +56,9 @@
 @media print {
     .printcards .card.equipement {
         overflow: visible;
-        margin: 0.5cm;
-        width: 3cm;
-        height: calc(3cm / 0.67);
+        margin: 0.6cm 0.55cm;
+        width: 4.25cm;
+        height: calc(4.25cm / 0.67);
         font-size: 0.3cm;
     }
     .printcards input + label { display: none; }
@@ -75,14 +75,17 @@
     
     .dialog-content {
         margin: 0;
+        padding: 0; 
+        height: 100%;
+        overflow: unset;
     }
 }
 
 
 .card.equipement img.background {
     position: absolute;
-    width: 146.5%;
-    left: -23.5%;
+    width: 147.5%;
+    left: -24.5%;
     top: -15.5%;
 }
 .card.equipement img.background-name {

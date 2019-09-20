@@ -128,7 +128,7 @@ var CardEquipment = {
                 }
                 else 
                 {
-                    prefix = "<input type='checkbox' id='equipment-" + i + "' name='equipement' data-index='" + i + "'/><label for='equipment-" + i + "'>";
+                    prefix = "<input type='checkbox' id='equipment-" + i + "' name='equipment' data-index='" + i + "'/><label for='equipment-" + i + "'>";
                     suffix = "</label>";
                 }
                 

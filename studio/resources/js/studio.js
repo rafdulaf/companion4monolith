@@ -4,12 +4,14 @@ var ConanStudio = {
             'menu': "Studio",
             'printcardsLabel': "Imprimer",
             'printcardsHint': "Sélectionnez les éléments à imprimer puis cliquez sur le bouton imprimer en haut à droite.",
+            'printfaces': "Imprimer les dos sur des pages séparées",
             'printcardEmpty': "Vous n'avez sélectionné aucun élément à imprimer"
         },
         'en': {
             'menu': "Studio",
             'printcardsLabel': "Print",
             'printcardsHint': "Select the items to print and then click on the top-right print button.",
+            'printfaces': "Print the backs on separated pages",
             'printcardEmpty': "You did not select any element to print"
         }
     },
@@ -50,6 +52,7 @@ var ConanStudio = {
         Nav.dialog(ConanStudio._i18n[Language].printcardsLabel, 
             "<div class=\"printcards\">"
             + "<p class='hint'>" + ConanStudio._i18n[Language].printcardsHint + "</p>"
+            + "<p class='hint'><input type='checkbox' id='printback'><label for='printback'>" + ConanStudio._i18n[Language].printfaces + "</label></p>"
             
             + "<h1>" + CardEquipment._i18n[Language].tab + "</h1>"
             + CardEquipment._getDisplayCardsCode(false)
