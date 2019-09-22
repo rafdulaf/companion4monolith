@@ -88,11 +88,10 @@
     }
     
     .printcards img.back { margin: 0.285cm 0.34cm; width: 4.62cm; }
-    .printcards input[name=equipment]:checked + label + img.back { display: inline-block; }
-    .printcards.back input[name=equipment]:checked + label + img.back { display: none; }
     
+    .printcards .newpage { display: unset; }
     .printcards.back .newpage { display: block; page-break-before: always; direction: rtl; }
-    .printcards.back .newpage .back { display: unset; }
+    .printcards .newpage .back { display: unset; }
 }
 
 .card.equipement img.background {

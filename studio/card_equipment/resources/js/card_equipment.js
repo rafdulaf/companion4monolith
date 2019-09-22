@@ -129,7 +129,7 @@ var CardEquipment = {
                 else 
                 {
                     prefix = "<input type='checkbox' id='equipment-" + i + "' name='equipment' data-index='" + i + "' onchange=\"$('#equipment-back-" + i + "').toggle();\"/><label for='equipment-" + i + "'>";
-                    suffix = "</label><img class=\"back\" src=\"studio/card_equipment/resources/img/back.png\"/>";
+                    suffix = "</label>";
                 }
                 
                 html += prefix + CardEquipment._cardCode(cards[i]) + suffix;
