@@ -26,12 +26,12 @@
 .card.equipement {
     width: 200px;
     height: calc(200px / 0.67);
-    font-size: 16px;
+    font-size: 18px;
 }
 .printcards .card.equipement {
     width: 100px;
     height: calc(100px / 0.67);
-    font-size: 8px;
+    font-size: 9px;
 }
 .printcards input[name=equipment] { position: absolute; top:-5000px; }
 .printcards input[name=equipment] + label { position: relative; display: inline-block; margin-right: 5px; }
@@ -39,17 +39,18 @@
 .printcards input[name=equipment] + label:after { position: absolute; content: "\f057"; font-family: 'Font Awesome 5 Free'; font-size: 40px; left: -7px; top: -7px; }
 .printcards input[name=equipment]:checked + label:before { display: none; }
 .printcards input[name=equipment]:checked + label:after { content: "\f058"; }
+.printcards .back, .printcards .newpage { display: none; }
 
 @media screen and (max-width: 400px) {
     .card.equipement {
         width: 160px;
         height: calc(160px / 0.67);
-        font-size: 12.8px;
+        font-size: 14.4px;
     }
     .printcards .card.equipement {
         width: 80px;
         height: calc(80px / 0.67);
-        font-size: 6.4px;
+        font-size: 7.2px;
     }
 }
 
@@ -57,14 +58,14 @@
     .printcards .card.equipement {
         overflow: visible;
         margin: 0.6cm 0.55cm;
-        width: 4.25cm;
-        height: calc(4.25cm / 0.67);
-        font-size: 0.3cm;
+        width: 4.2cm;
+        height: calc(4.2cm / 0.67);
+        font-size: 0.4cm;
     }
-    .printcards input + label { display: none; }
-    .printcards input:checked + label { display: inline-block; }    
-    .printcards input:checked + label:before,
-    .printcards input:checked + label:after,
+    .printcards input[name=equipment] + label { display: none; }
+    .printcards input[name=equipment]:checked + label { display: inline-block; }    
+    .printcards input[name=equipment]:checked + label:before,
+    .printcards input[name=equipment]:checked + label:after,
     .dialog-header,
     .printcards h1,
     .printcards .hint,
@@ -72,15 +73,27 @@
     { 
         display: none; 
     }
-    
+    body > *, .header { display: none; }
+    body > .dialog {
+        position: static;
+        display: block;
+        background-color: unset;
+    }
     .dialog-content {
         margin: 0;
         padding: 0; 
-        height: 100%;
+        height: unset;
         overflow: unset;
+        background-color: unset;
     }
+    
+    .printcards img.back { margin: 0.285cm 0.34cm; width: 4.62cm; }
+    .printcards input[name=equipment]:checked + label + img.back { display: inline-block; }
+    .printcards.back input[name=equipment]:checked + label + img.back { display: none; }
+    
+    .printcards.back .newpage { display: block; page-break-before: always; direction: rtl; }
+    .printcards.back .newpage .back { display: unset; }
 }
-
 
 .card.equipement img.background {
     position: absolute;
@@ -103,6 +116,7 @@
     width: 13.3%;
     text-align: center;
     color: #FFF;
+    -webkit-print-color-adjust: exact;
     font-family: "Motrg";
     font-size: 200%;
     line-height: 100%;
@@ -155,6 +169,7 @@
     font-size: 250%;
     font-family: "Motrg";
     color: #FFF;
+    -webkit-print-color-adjust: exact;
     position: relative;
     width: 20%;
 }

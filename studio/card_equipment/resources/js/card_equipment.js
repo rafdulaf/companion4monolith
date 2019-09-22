@@ -128,8 +128,8 @@ var CardEquipment = {
                 }
                 else 
                 {
-                    prefix = "<input type='checkbox' id='equipment-" + i + "' name='equipment' data-index='" + i + "'/><label for='equipment-" + i + "'>";
-                    suffix = "</label>";
+                    prefix = "<input type='checkbox' id='equipment-" + i + "' name='equipment' data-index='" + i + "' onchange=\"$('#equipment-back-" + i + "').toggle();\"/><label for='equipment-" + i + "'>";
+                    suffix = "</label><img class=\"back\" src=\"studio/card_equipment/resources/img/back.png\"/>";
                 }
                 
                 html += prefix + CardEquipment._cardCode(cards[i]) + suffix;
@@ -138,6 +138,16 @@ var CardEquipment = {
         else
         {
             html += "<div class=\"nocards\">" + CardEquipment._i18n[Language].nocard + "</div>";
+        }
+        
+        if (!withEditLink)
+        {
+            html += "<div class='newpage'>"; 
+            for (var i in cards)
+            {
+                html += "<img id=\"equipment-back-" + i + "\" style=\"display: none\" class=\"back\" src=\"studio/card_equipment/resources/img/back.png\"/>"
+            }
+            html += "</div>";
         }
         
         return html;

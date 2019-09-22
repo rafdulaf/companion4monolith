@@ -52,7 +52,7 @@ var ConanStudio = {
         Nav.dialog(ConanStudio._i18n[Language].printcardsLabel, 
             "<div class=\"printcards\">"
             + "<p class='hint'>" + ConanStudio._i18n[Language].printcardsHint + "</p>"
-            + "<p class='hint'><input type='checkbox' id='printback'><label for='printback'>" + ConanStudio._i18n[Language].printfaces + "</label></p>"
+            + "<p class='hint'><input type='checkbox' id='printback' onchange='$(this.parentNode.parentNode).toggleClass(\"back\")'><label for='printback'>" + ConanStudio._i18n[Language].printfaces + "</label></p>"
             
             + "<h1>" + CardEquipment._i18n[Language].tab + "</h1>"
             + CardEquipment._getDisplayCardsCode(false)
