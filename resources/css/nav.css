@@ -253,3 +253,15 @@
 .slick-slide {
     outline: none;
 }
+
+@media screen and (max-width: 610px) {
+    .nav-menu a {
+        font-size: 14px;
+        line-height: 19px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .nav-menu a {
+        font-size: 14px;
+    }
+}

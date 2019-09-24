@@ -1,7 +1,7 @@
 var CardEquipment = {
     _i18n: {
         'fr': {
-            'tab': "équipement",
+            'tab': "équipe<wbr/>ment",
             'nocard': "Vous n'avez aucune carte pour le moment. Cliquez sur le bouton + en haut pour en creer une.",
             'printnocard': "Vous n'avez aucune carte pour le moment",
             'newcard': "Créer une carte",
@@ -47,7 +47,7 @@ var CardEquipment = {
             'header2': "Prévisualiser la carte"
         },
         'en': {
-            'tab': "Equipment",
+            'tab': "Equip<wbr/>ment",
             'nocard': "You have no card for the moment. Click on the + button in the header to create one.",
             'printnocard': "You have no card for the moment",
             'newcard': "Create a new card",
