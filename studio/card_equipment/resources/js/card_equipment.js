@@ -167,8 +167,6 @@ var CardEquipment = {
         var code = "<div class=\"equipement card\">"
                 + "<img class=\"background\" src=\"studio/card_equipment/resources/img/background.png\"/>"
                 
-                + "<img class=\"background-name\" src=\"studio/card_equipment/resources/img/name-background.png\"/>"
-                + "<div class=\"name\">" + card.name + "</div>";
                 
         var imageCode = "<div class=\"image\"><img src=\"" + card.image + "\" style=\"left: " + card.imagelocation.x + "%; top: " + card.imagelocation.y + "%; width: " + card.imagezoom + "%; transform: translate(-50%, -50%) rotate(" + card.imagerotation + "deg)\"/></div>"; 
                 
@@ -177,6 +175,8 @@ var CardEquipment = {
             code += imageCode;
         }
 
+               code += "<img class=\"background-name\" src=\"studio/card_equipment/resources/img/name-background.png\"/>"
+                    + "<div class=\"name\">" + card.name + "</div>";
         if (card.encumbrance)
         {
             code += "<img class=\"background-encumbrance\" src=\"studio/card_equipment/resources/img/weight.png\"/>"
