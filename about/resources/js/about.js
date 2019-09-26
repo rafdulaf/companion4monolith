@@ -38,7 +38,7 @@ var ConanAbout = {
                         + "<li>Vous avez une idée d'amélioration ?</li>"
                         + "<li>Vous souhaitez proposer un patch ?</li>"
                     + "</ul>"
-                    + "Le projet est hébergé sur Github : vous pouvez donc y déposer vos idées voire proposer vos modifications.",
+                    + "Le projet est hébergé sur Github : vous pouvez donc y déposer vos idées voire proposer vos modifications, mais vous pouvez aussi participer via le forum The Overlord.",
             'contribute_version': "Version actuelle : ",
             'contribute_hof': "Temple de la renommée",
             'contribute_hof_coders': "Codage de l'application",
@@ -82,7 +82,7 @@ var ConanAbout = {
                         + "<li>Do you have an idea to enhance this application?</li>"
                         + "<li>Do you want to propose a patch?</li>"
                     + "</ul>"
-                    + "The project is hosted on Github: you can thus send your ideas there or event propose your modifications.",
+                    + "The project is hosted on Github: you can thus send your ideas there or event propose your modifications, but you can also participate through The Overlord forum.",
             'contribute_version': "Current version: ",
             'contribute_hof': "Hall of fame",
             'contribute_hof_coders': "Application coding",
@@ -410,6 +410,7 @@ var ConanAbout = {
             "<div class=\"contribute\">"
                 + "<div>" + ConanAbout._i18n[Language].contribute_text + "</div>"
                 + "<a target=\"_blank\" href=\"https://github.com/rafdulaf/companion4conan\" class=\"github\">Github</a>"
+                + "<a target=\"_blank\" href=\"https://the-overlord.com/index.php?/topic/3095-application-de-compagnon-de-jeu/\" class=\"to\">The Overlord</a>"
                 + "<div>" + ConanAbout._i18n[Language].contribute_version + Version + ".</div>"
                 + "<h1>" + ConanAbout._i18n[Language].contribute_hof + "</h1>"
                 + "<h2>" + ConanAbout._i18n[Language].contribute_hof_coders + "</h2>"

@@ -26,6 +26,14 @@
     vertical-align: middle;
     margin-right: 10px;
 }
+.contribute .to:before {
+    content: "\f086";
+    font-family: 'Font Awesome 5 Free';
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
 .about {
     font-family: 'Moolbor';
