@@ -39,7 +39,8 @@
         <script>
             Version = 0.3;
             // Preferences
-            Language = localStorage.getItem("Language") || (navigator.language == 'fr' || navigator.language.startsWith('fr-') ? 'fr' : 'en');
+            function autodetectLanguage() { return (navigator.language == 'fr' || navigator.language.startsWith('fr-') ? 'fr' : 'en'); }
+            Language = localStorage.getItem("Language") || autodetectLanguage();
             Extensions = JSON.parse(localStorage.getItem("Extensions")) || {
             	'custom-box': 'king', 'stygie': true, 'nordheim': true, 'khitai': true
             };
@@ -74,6 +75,9 @@
 	                    Utils.load.css('about/resources/css/about.css'),
 	                    Utils.load.js('about/resources/js/about.js'),
 	
+                        Utils.load.css('tutorial/resources/css/tutorial.css'),
+                        Utils.load.js('tutorial/resources/js/tutorial.js'),
+    
 	                    Utils.load.css('maps/resources/css/maps.css'),
 	                    Utils.load.js('maps/resources/js/maps.js'),
 	

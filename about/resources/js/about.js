@@ -18,13 +18,14 @@ var ConanAbout = {
                     + "Le logo Conan et les polices de caractères utilisées sont la propriété de Monolith.<br/>"
                     + "L'image du 'Compagnion de Conan' a été créée à partir du logo Conan.<br/>",
             'preferences': 'Mes préferences',
-            'preferences2': 'Mes preferences',
             'preferences_text': "Sélectionnez vos préférences qui seront enregistrées sur votre appareil.",
             'preferences_general': "Généralités",
             'custom': "Mes extensions",
             'custom_text': "Sélectionnez vos extensions qui seront enregistrés sur votre appareil.",
             'custom_box': "Boîte de jeu",
             'custom_lang': "Français",
+            'custom_langlabel': "Langue de l'interface",
+            'custom_automatic_lang': "Auto-détection",
             'custom_regionalexts': "Extensions régionales",
             'custom_otherexts': "Autres extensions",
             'custom_artists': "Extensions d'artistes",
@@ -62,13 +63,14 @@ var ConanAbout = {
                     + "The Conan logo and the fonts used are the property of Monolith.<br/>"
                     + "The image of 'Companion for Conan' was created by adapting the Conan logo.<br/>",
             'preferences': 'My settings',
-            'preferences2': 'My settings',
             'preferences_text': "Select your settings that will be stored on your device.",
             'preferences_general': "Generality",
             'custom': "My expansions",
             'custom_text': "Select your expansions that will be stored on your device.",
             'custom_box': "Game box",
             'custom_lang': "English",
+            'custom_langlabel': "UI Language",
+            'custom_automatic_lang': "Autodetection",
             'custom_regionalexts': "Regional expansions",
             'custom_otherexts': "Other expansions",
             'custom_artists': "Artists expansions",
@@ -228,13 +230,15 @@ var ConanAbout = {
     {
         $("nav.menu input")[0].checked = false;
         
-        Nav.dialog(ConanAbout._i18n[Language].preferences2,
+        Nav.dialog(ConanAbout._i18n[Language].preferences,
             "<div class=\"custom\">"
             +       "<div>" + ConanAbout._i18n[Language].preferences_text + "</div>"
             
             +       "<div class=\"custom-wrap\">"
             +       "<fieldset><legend>" + ConanAbout._i18n[Language].preferences_general + "</legend>"
+            +           "<label for=\"custom-lang\">" + ConanAbout._i18n['fr'].custom_langlabel + "</label>"
             +           "<select id=\"custom-lang\" name=\"custom-lang\">"
+            +               "<option value=\"\">" + ConanAbout._i18n[Language].custom_automatic_lang + "</option>"
             +               "<option value=\"fr\">" + ConanAbout._i18n['fr'].custom_lang + "</option>"
             +               "<option value=\"en\">" + ConanAbout._i18n['en'].custom_lang + "</option>"
             +           "</select>"
@@ -245,20 +249,21 @@ var ConanAbout = {
 
             function() 
             {
-                var oldLanguage = Language;
+                var oldLanguage = localStorage.getItem("Language");
                 
                 // Save
-                Language = $(".custom *[name=custom-lang]")[0].value;
-                localStorage.setItem("Language", Language);
+                var selectedLanguage = $(".custom *[name=custom-lang]")[0].value; 
+                Language = selectedLanguage || autodetectLanguage();
+                localStorage.setItem("Language", selectedLanguage);
                 
-                if (oldLanguage != Language)
+                if (oldLanguage != selectedLanguage)
                 {
                     window.location.reload(true);
                 }
             }
         );
 
-        $(".custom *[name=custom-lang]")[0].value = Language;
+        $(".custom *[name=custom-lang]")[0].value = localStorage.getItem("Language") || "";
         
         var display = false;
         $(".custom input, .custom select").on('change', function() {
@@ -406,6 +411,8 @@ var ConanAbout = {
     },
     
     _contribute: function() {
+        $("nav.menu input")[0].checked = false;
+        
         Nav.dialog(ConanAbout._i18n[Language].contribute,
             "<div class=\"contribute\">"
                 + "<div>" + ConanAbout._i18n[Language].contribute_text + "</div>"
