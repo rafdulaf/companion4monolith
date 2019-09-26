@@ -1,7 +1,7 @@
 var CardEquipment = {
     _i18n: {
         'fr': {
-            'tab': "équipe<wbr/>ment",
+            'tab': "Équipe<wbr/>ment",
             'nocard': "Vous n'avez aucune carte pour le moment. Cliquez sur le bouton + en haut pour en creer une.",
             'printnocard': "Vous n'avez aucune carte pour le moment",
             'newcard': "Créer une carte",
@@ -44,7 +44,8 @@ var CardEquipment = {
             'diceYellowReroll': "Jaune \uf01e",
             'header1': "Saisissez les données de la carte",
             'header1bis': "Mettez une image",
-            'header2': "Prévisualiser la carte"
+            'header2': "Prévisualiser la carte",
+            'copyright': "Basé sur le fichier PSD proposé par <a href='https://the-overlord.com/index.php?/profile/9-genesteal28/'>@genesteal28</a> et converti au format GIMP par <a href='https://the-overlord.com/index.php?/profile/31-jabbathehatt/'>@jabbathehatt</a> et <a href='https://the-overlord.com/index.php?/profile/1-sentma/'>SentMa</a> pour le dos de carte."
         },
         'en': {
             'tab': "Equip<wbr/>ment",
@@ -90,7 +91,8 @@ var CardEquipment = {
             'diceYellowReroll': "Yellow \uf01e",
             'header1': "Fill the card data",
             'header1bis': "Set a picture",
-            'header2': "Preview the final result"
+            'header2': "Preview the final result",
+            'copyright': "Based on the PSD file proposed by <a href='https://the-overlord.com/index.php?/profile/9-genesteal28/'>@genesteal28</a> and converted at the GIMP format by <a href='https://the-overlord.com/index.php?/profile/31-jabbathehatt/'>@jabbathehatt</a> and <a href='https://the-overlord.com/index.php?/profile/1-sentma/'>SentMa</a> for the back of the card."
         }
     },
     
@@ -551,5 +553,11 @@ var CardEquipment = {
         localStorage.setItem("StudioEquipmentCards", JSON.stringify(newCards));
         CardEquipment._displayCards();
         Nav.closeDialog();
+    },
+    
+    copyright: function() 
+    {
+        return "<h3>" + CardEquipment._i18n[Language].tab + "</h3>"
+            + "<p>" + CardEquipment._i18n[Language].copyright + "</p>"
     }
 }

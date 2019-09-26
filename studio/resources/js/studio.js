@@ -35,6 +35,8 @@ var ConanStudio = {
         Tile.init();
         
         ConanStudio.onChange();
+        
+        ConanAbout.addCopyright(ConanStudio._i18n[Language].menu, CardEquipment.copyright());
     },
     
     onChange: function(event, slick) {
