@@ -282,6 +282,27 @@ var ConanAbout = {
         window.setTimeout(function() { $(".toast-warning").remove(); }, 3500);
     },
     
+    hideActionToast: function() {
+        $(".toast-action").css("opacity", "0");
+        window.setTimeout(function() { $(".toast-action").remove(); }, 1000);
+    },
+    actionToast: function (icon, text, actions) {
+        var actionHTML = "<div class=\"toast-action-act\">";
+        for (var a in actions) {
+            var action = actions[a];
+            actionHTML += "<a href='javascript:void(0)' onclick='" + action.act + "'>" + action.text + "</a>";
+        }
+        actionHTML += "</div>"
+        
+        var iconHTML = "";
+        if (icon) {
+            iconHTML += "<div class=\"toast-action-icon " + icon + "\"></div>"
+        }
+        
+        $(document.body).append("<div class=\"toast-action\" style=\"opacity: 0;\">" + iconHTML + "<div class=\"toast-action-text\">" + text + "</div>" + actionHTML + "</div>");
+        window.setTimeout(function() { $(".toast-action").css("opacity", "0.98"); }, 1);
+    },
+    
     _custom: function()
     {
         $("nav.menu input")[0].checked = false;

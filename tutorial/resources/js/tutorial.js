@@ -1,55 +1,62 @@
-if (!localStorage.getItem("Welcome"))
-{
-    Tutorial = {
-        _i18n: {
-            'fr': {
-                'welcome': "Bienvenue",
-                'welcome_p1': "C'est votre premier accès au compagnon de Conan avec ce navigateur.",
-                'welcome_p2': "Avant de commencer, il est recommandé de sélectionner vos extensions et régler vos préférences : Cela affectera par exemple les cartes que vous pourrez voir ou les scénarios que vous pourrez trouver.",
-                'welcome_p4': "Choisir mes extensions",
-                'welcome_p5': "Régler mes préférences",
-                'welcome_p6': "A tout moment, le menu en haut à gauche vous permet de modifier vos préférences et extensions, et vous permet d'accéder à d'autres options.",
-                'welcome_p7': "Accéder à l'application",
-                'welcome_alternative': "Switch to english?"
-            },
-            'en': {
-                'welcome': "Welcome",
-                'welcome_p1': "It is your first access to the companion for Conan with this browser.",
-                'welcome_p2': "Before starting, it is recommanded to select your expansions and customize your settings: This will change, for example, the boards you would see or the scenarios you could find.",
-                'welcome_p4': "Select my expansions",
-                'welcome_p5': "Customize my preferences",
-                'welcome_p6': "At any time, the top left menu let you change your settings or expansions, and also contains other options.",
-                'welcome_p7': "Access the application",
-                'welcome_alternative': "Vous voulez voir ceci en français?"
-            }
+Tutorial = {
+    _i18n: {
+        'fr': {
+            'settings_message': "L'application a été configurée en français",
+            'settings_switch': "Switch to english",
+            'settings_continue': "Merci",
+            
+            'extensions_message': "En indiquant les éléments du jeu que vous possédez vous disposerez d'une application personnalisée",
+            'extensions_act': "Personnaliser",
+            'extensions_continue': "Par défaut"
         },
-        
-        access: function() {
-            localStorage.setItem("Welcome", true);
-            $('body .tutorial').removeClass('open');
-            window.setTimeout("$('body .tutorial-wrapper').remove()", 1800);
-        },
-        
-        init: function() {
-            $('body').append("<div class='tutorial-wrapper'><div class='tutorial'><div>" 
-                        + "<h1>" + Tutorial._i18n[Language].welcome + "</h1>" 
-                        + "<p>" + Tutorial._i18n[Language].welcome_p1 + "</p>" 
-                        + "<p>" + Tutorial._i18n[Language].welcome_p2 + "</p>"
-                        + "<p class='actions'>"
-                        + "<a class='expansions' href='javascript:void(0)' onclick='ConanAbout._custom()'>" + Tutorial._i18n[Language].welcome_p4 + "</a>" 
-                        + "<a class='settings' href='javascript:void(0)' onclick='ConanAbout._preferences()'>" + Tutorial._i18n[Language].welcome_p5 + "</a>" 
-                        + "</p>"
-                        + "<p>" + Tutorial._i18n[Language].welcome_p6 + "</p>" 
-                        + "<p class='last'><a class='switch' href='javascript:void(0)' onclick='Tutorial.switchLanguage()'>" + Tutorial._i18n[Language].welcome_alternative + "</a><a class='access' href='javascript:void(0)' onclick='Tutorial.access()'>" + Tutorial._i18n[Language].welcome_p7 + "</a></p>" 
-                        + "</div></div></div>");
-            window.setTimeout("$('body .tutorial').addClass('open')", 1);
-        },
-        
-        switchLanguage: function() {
-            localStorage.setItem("Language", Language == 'fr' ? 'en' : 'fr');
-            window.location.reload(true);
+        'en': {
+            'settings_message': "The application was configured in english",
+            'settings_switch': "Passer en français",
+            'settings_continue': "Thank you",
+            
+            'extensions_message': "By specifying the game elements you own you will obtnain a customized application",
+            'extensions_act': "Customize",
+            'extensions_continue': "Default"
         }
-    }
+    },
     
-    $().ready(Tutorial.init);
+    init: function() {
+        if (localStorage.getItem("Language") == null)
+        {
+            window.setTimeout(function() {
+                ConanAbout.actionToast("tutorial-settings", Tutorial._i18n[Language].settings_message, [{ text: Tutorial._i18n[Language].settings_switch, act: "Tutorial._swithLanguage()" }, { text: Tutorial._i18n[Language].settings_continue, act: "Tutorial._keepLanguage()" }]);
+            }, 1000);
+        }
+        else if (!localStorage.getItem("Extensions"))
+        {
+            window.setTimeout(function() {
+                ConanAbout.actionToast("tutorial-extensions", Tutorial._i18n[Language].extensions_message, [{ text: Tutorial._i18n[Language].extensions_continue, act: "Tutorial._ignoreCustom()" }, { text: Tutorial._i18n[Language].extensions_act, act: "Tutorial._custom()" }]);
+            }, 1000);
+        }
+    },
+    _custom: function() {
+        localStorage.setItem("Extensions", JSON.stringify(Extensions));
+        ConanAbout.hideActionToast();
+        ConanAbout._custom();
+        Tutorial.init();
+    },
+    _ignoreCustom: function() {
+        localStorage.setItem("Extensions", JSON.stringify(Extensions));
+        ConanAbout.hideActionToast();
+        $(document.body).append("<div class=\"blinkmenu\"></div>");
+        Tutorial.init();
+    },
+    _swithLanguage: function() {
+        localStorage.setItem("Language", Language == 'fr' ? 'en' : 'fr');
+        $(document.body).append("<div class=\"blinkmenu\"></div>");
+        window.setTimeout("window.location.reload(true);", 1000);
+    },
+    _keepLanguage: function() {
+        localStorage.setItem("Language", Language);
+        ConanAbout.hideActionToast();
+        $(document.body).append("<div class=\"blinkmenu\"></div>");
+        Tutorial.init();
+    }
 }
+
+$().ready(Tutorial.init);
