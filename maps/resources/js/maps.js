@@ -316,6 +316,9 @@ var ConanMaps = {
     _helpPoints: function()
     {
         var rules = ConanMaps._files[ConanMaps._currentMap].description.rules;
+
+        var id = "maps-map";
+        var mapC = $('#' + id + " .map-map-help");
         
         var helpImageSize = $(document.body).height() * .3; // Css says 30vh
         var bbSize = 10 / helpImageSize * 100; // 1 legend is 20px. so center is 10px at left/top
@@ -335,9 +338,32 @@ var ConanMaps = {
             // aide += "<h1>" + ConanMaps._files[ConanMaps._currentMap].description.title[Language] + "</h1>"; 
             aide += "<div class='map-help-thumb'>";
             aide += "<div style=\"transform: rotate(" + (-90*ConanMaps._rotation) + "deg)\">";
+            
+        var code = "";
         if (rules)
         {
             for (var i=0; i < rules.length; i++) {
+                if (rules[i].areas)
+                {
+                    for (var j=0; j < rules[i].areas.length; j++)
+                    {
+                        var areaName = rules[i].areas[j];
+                        var zone = ConanMaps._files[ConanMaps._currentMap].zones[areaName];
+                        
+                        var line = "";
+                        for (var k=0; k < zone.area.length; k++)
+                        {
+                            line += (k == 0 ? "M" : "L") + zone.area[k][0] + "," + zone.area[k][1] + "";
+                        }
+                        
+                        code += "<path style=\"fill: " + rules[i].areasColor + "\"" +
+                            "d='" + line + "' " +
+                            "class='map-map-area-zone-mini'>" +
+                        "</path>";
+
+                    }
+
+                }
                 if (rules[i].coordinates)
                 {
                     for (var j=0; j < rules[i].coordinates.length; j++) 
@@ -347,25 +373,41 @@ var ConanMaps = {
                     }
                 }
             }
+            
         }
+        
+            aide += "<div class='img-wrap'>"
+            if (code)
+            {
+                aide += "<svg  viewBox=\"0 0 100 100\" preserveAspectRatio=\"none\">" + code + "</svg>";
+            }
             aide += "<img src=\"maps/data/" + ConanMaps._currentMap + "/board.png\"/></div>";
+            aide += "</div>";
+            
+            
             aide += "</div>";
 
 
         if (rules)
         {
             aide += "<ul>";
-            for (var i=0; i < rules.length; i++) {
+            for (var i=0; i < rules.length; i++) 
+            {
+                var areaAide = "";
+                if (rules[i].areas)
+                {
+                    areaAide += "<span class='map-help-rule-areas'><span class='map-help-rule-areas-square' style='background-color: " + rules[i].areasColor + "'></span>" + rules[i].areasText[Language] + "</span>"
+                }
+                
                 aide += "<li>"
                 + "<span class='map-help-rule-title' data-num='" + (i + 1) + "'>" + rules[i].title[Language] + "</span>"
                 + "<span class='map-help-rule-description'>" + ConanMaps._replace(rules[i].description[Language]) + "</span>"
+                + areaAide
                 + "</li>";
             }
             aide += "</ul>"
         }
         
-        var id = "maps-map";
-        var mapC = $('#' + id + " .map-map-help");
         mapC.html(aide);
     },
     

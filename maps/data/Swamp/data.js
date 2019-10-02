@@ -18,7 +18,13 @@ Swamp = {
                     'fr': "Quitter une zone d’eau coûte 1 point de mouvement supplémentaire. Quitter une zone d’eau pour monter directement sur une zone de bois coûte 2 points de mouvement supplémentaires.",
                     'en': "A character must spend 1 extra movement point to move out of a water area. A character can move from a water area to an adjacent wood area by spending 2 extra movement points."
                 },
-                coordinates: []
+                coordinates: [],
+                areas: ['1','2','3','4','13','15','17','18','20','26','28','29','31','33a','36','38','39','40','44','48','51','52','53','54'],
+                areasColor: "turquoise",
+                areasText: {
+                    'fr': "Les zones d'eau sont visibles en turquoise.",
+                    'en': "The water areas are visible in turquoise."
+                }
             }, {
                 title: { 
                     'fr': "Saut",

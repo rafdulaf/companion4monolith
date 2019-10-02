@@ -341,7 +341,7 @@
     overflow: auto;
 }
 
-.map-help-rule-title, .map-help-rule-description {
+.map-help-rule-title, .map-help-rule-description, .map-help-rule-areas {
     font-family: 'Moolbor';
     display: block;
 }
@@ -363,11 +363,22 @@
     line-height: 22px;
 }
 
-.map-help-rule-description {
+.map-help-rule-description, .map-help-rule-areas {
     padding-left: 33px;
     font-size: 25px;
     line-height: 20px;
 }
+.map-help-rule-areas .map-help-rule-areas-square {
+    width: 18px;
+    height: 14px;
+    display: inline-block;
+    border: 1px solid #000;
+    margin: 0 12px 0 3px;;
+    vertical-align: middle;
+    top: -2px;
+    position: relative;
+}
+
 
 .map-map-help .map-help-character {
     width: 25px;
@@ -442,4 +453,18 @@
 }
 .map-map-area-zone-target:hover {
     fill-opacity: 0.4; 
+}
+
+
+
+.img-wrap svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+}
+.img-wrap path {
+    opacity: 0.3;
 }
