@@ -330,7 +330,9 @@
     border-radius: 30px;
     width: 20px;
     height: 20px;
-    font-size: 16px;
+    font-size: 20px;
+    font-family: 'Moolbor';
+    text-shadow: 0px 0px 3px #000;
     z-index: 1;
 }
 
@@ -348,20 +350,33 @@
 
 .map-help-rule-title:before {
     content: attr(data-num);
-    border: 1px solid #000;
+    border: 5px solid #000;
     border-radius: 20px;
-    margin-right: 10px;
+    margin-right: 7px;
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
+    font-size: 23px;
     text-align: center;
-    line-height: 30px;
+    line-height: 26px;
 }
 .map-help-rule-title {
     font-weight: bold;    
     font-size: 26px;
     line-height: 22px;
 }
+.map-help-rule-title[data-num='1']:before { border-color: #2F5496; }
+.map-help-legend[data-num='1'] { background-color: #2F5496; }
+.map-help-rule-title[data-num='2']:before { border-color: #538135; }
+.map-help-legend[data-num='2'] { background-color: #538135; }
+.map-help-rule-title[data-num='3']:before { border-color: #C10512; }
+.map-help-legend[data-num='3'] { background-color: #C10512; }
+.map-help-rule-title[data-num='4']:before { border-color: #BF9000; }
+.map-help-legend[data-num='4'] { background-color: #BF9000; }
+.map-help-rule-title[data-num='5']:before { border-color: #555555; }
+.map-help-legend[data-num='5'] { background-color: #555555; }
+.map-help-rule-title[data-num='6']:before { border-color: #C55A11; }
+.map-help-legend[data-num='6'] { background-color: #C55A11; }
 
 .map-help-rule-description, .map-help-rule-areas {
     padding-left: 33px;

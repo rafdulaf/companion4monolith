@@ -369,7 +369,7 @@ var ConanMaps = {
                     for (var j=0; j < rules[i].coordinates.length; j++) 
                     {
                         var coo = rules[i].coordinates[j];
-                        aide += "<span class='map-help-legend' style='left: " + (coo[0]-bbSize) + "%; top: " + (coo[1]-bbSize) + "%; transform: rotate(" + (90*ConanMaps._rotation) + "deg)'>" + (i+1) + "</span>";
+                        aide += "<span class='map-help-legend' data-num='" + (i+1) + "' style='left: " + (coo[0]-bbSize) + "%; top: " + (coo[1]-bbSize) + "%; transform: rotate(" + (90*ConanMaps._rotation) + "deg)'>" + (i+1) + "</span>";
                     }
                 }
             }
