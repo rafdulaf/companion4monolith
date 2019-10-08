@@ -36,9 +36,9 @@
 .printcards input[name=equipment] { position: absolute; top:-5000px; }
 .printcards input[name=equipment] + label { position: relative; display: inline-block; margin-right: 5px; }
 .printcards input[name=equipment] + label:before { position: absolute; content: " "; z-index: 1; top: 0; left: 0; right: 0; bottom: 0; background-color: #000000; opacity: 0.2; }
-.printcards input[name=equipment] + label:after { position: absolute; content: "\f057"; font-family: 'Font Awesome 5 Free'; font-size: 40px; left: -7px; top: -7px; }
+.printcards input[name=equipment] + label:after { position: absolute; content: "\f057"; font-family: 'Font Awesome 5 Free'; font-size: 40px; left: -7px; top: -7px; color: red; }
 .printcards input[name=equipment]:checked + label:before { display: none; }
-.printcards input[name=equipment]:checked + label:after { content: "\f058"; }
+.printcards input[name=equipment]:checked + label:after { content: "\f058"; color: green; }
 .printcards .back, .printcards .newpage { display: none; }
 
 @media screen and (max-width: 400px) {
@@ -62,36 +62,6 @@
         height: calc(4.2cm / 0.67);
         font-size: 0.4cm;
     }
-    .printcards input[name=equipment] + label { display: none; }
-    .printcards input[name=equipment]:checked + label { display: inline-block; }    
-    .printcards input[name=equipment]:checked + label:before,
-    .printcards input[name=equipment]:checked + label:after,
-    .dialog-header,
-    .printcards h1,
-    .printcards .hint,
-    .printcards .nocards 
-    { 
-        display: none; 
-    }
-    body > *, .header { display: none; }
-    body > .dialog {
-        position: static;
-        display: block;
-        background-color: unset;
-    }
-    .dialog-content {
-        margin: 0;
-        padding: 0; 
-        height: unset;
-        overflow: unset;
-        background-color: unset;
-    }
-    
-    .printcards img.back { margin: 0.285cm 0.34cm; width: 4.62cm; }
-    
-    .printcards .newpage { display: unset; }
-    .printcards.back .newpage { display: block; page-break-before: always; direction: rtl; }
-    .printcards .newpage .back { display: unset; }
 }
 
 .card.equipement img.background {

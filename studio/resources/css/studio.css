@@ -23,3 +23,57 @@
     font-size: 16px;
     vertical-align: top;
 }
+
+.dialog .printcards .print { text-align: center; margin: 20px; }
+.dialog .printcards .print button {
+    font-family: 'Hyborian';
+    padding: 5px 15px;
+    background-color: #3f3f3f;
+    color: #FFF;
+    border: 1px solid #7f7f7f;
+    border-radius: 5px;
+    text-shadow: 0 0 1px #000;
+    box-shadow: 0px 0px 8px #e64443;
+}
+
+.dialog .printcards .print button:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f02f";  
+  margin-right: 10px;
+}
+
+
+
+@media print {
+    .dialog .printcards input[name=equipment] + label { display: none; }
+    .dialog .printcards input[name=equipment]:checked + label { display: inline-block; }    
+    .dialog .printcards input[name=equipment]:checked + label:before,
+    .dialog .printcards input[name=equipment]:checked + label:after,
+    .dialog .dialog-header,
+    .dialog .printcards h1,
+    .dialog .printcards .hint,
+    .dialog .printcards .nocards,
+    .dialog .printcards .print
+    { 
+        display: none; 
+    }
+    body > *, .header { display: none; }
+    body > .dialog {
+        position: static;
+        display: block;
+        background-color: unset;
+    }
+    .dialog .dialog-content {
+        margin: 0;
+        padding: 0; 
+        height: unset;
+        overflow: unset;
+        background-color: unset;
+    }
+    
+    .dialog .printcards img.back { margin: 0.285cm 0.34cm; width: 4.62cm; }
+    
+    .dialog .printcards .newpage { display: unset; }
+    .dialog .printcards.back .newpage { display: block; page-break-before: always; direction: rtl; }
+    .dialog .printcards .newpage .back { display: unset; }
+}
