@@ -282,7 +282,7 @@
 .dialog .equipment .field.imagelocation input,
 .dialog .equipment .field.imagezoom input,
 .dialog .equipment .field.imagerotation input {
-    width: 29px;
+    width: 34px;
     text-align: right;
 }
 .dialog .equipment .field.imagelocation, .dialog .equipment .field.imagezoom
@@ -351,6 +351,7 @@
    background-repeat: no-repeat;
    background-position: calc(50% - 6px);
    background-size: contain;
+   width: 54px;
 }
 .dialog .equipment .field input#eqweight { background-image: url(../img/weight.png); }
 .dialog .equipment .field input#eqmovement {
@@ -358,7 +359,6 @@
     position: relative;
     background-color: transparent;
     font-size: 48px;
-    width: 40px;
 }
 
 .dialog .equipment .field input#eqimage,
@@ -466,6 +466,8 @@
 
 .dialog .equipment .ui-front {
     z-index: 100000;
+    left: 0 !important;
+    right: 0 !important;
 }
 .dialog .equipment .ui-button .ui-icon { background-image: none; }
 .dialog .equipment .ui-selectmenu-menu ul li:before {
@@ -488,14 +490,12 @@
 }
 
 .dialog .equipment .skills + span { height: 58px; line-height: 58px; }
-.dialog .equipment .ui-menu { width: 700% !important; }
-.dialog .equipment .ui-menu .ui-menu-item { display: inline-block; vertical-align: top; width: 14%; }
+.dialog .equipment .ui-menu { width: 100% !important; text-align: right; }
+.dialog .equipment .ui-menu .ui-menu-item { display: inline-block; vertical-align: top; width: 14%; text-align: center; }
 .dialog .equipment .skills ~ .ui-selectmenu-menu { width: 58px; } 
-.dialog .equipment .skills ~ .ui-selectmenu-menu .ui-menu .ui-menu-item { width: 44px; }
 
-@media screen and (max-width: 400px) {
-    .dialog .equipment .ui-menu { width: 300% !important; }
-    .dialog .equipment .ui-menu .ui-menu-item { width: 33%; }
+@media screen and (max-width: 450px) {
+    .dialog .equipment .ui-menu .ui-menu-item { width: 25%; }
 }
 
 .dialog .equipment .ui-selectmenu-text, .dialog .equipment .ui-menu .ui-menu-item-wrapper { color: transparent; font-size: 1px; }
