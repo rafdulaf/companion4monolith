@@ -414,7 +414,7 @@ var CardEquipment = {
             image: "",
             imagelocation: {x: "50", y: "50"},
             imagezoom: "100",
-            imagerotation: "0",
+            imagerotation: "0"
         };
         
         $("#eqmelee,#eqmelee2,#eqactive,#eqactive2,#eqpassive,#eqpassive2,#eqranged,#eqranged2,#eqmanipulation,#eqmanipulation2").each (function (i) { // ,#eqskills,#eqskills2

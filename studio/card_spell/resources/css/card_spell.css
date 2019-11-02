@@ -138,6 +138,29 @@
     width: 100%;
 }
 
+.card.spell .image {
+    position: absolute;
+    width: 27%;
+    left: 37%;
+    top: 4%;
+    height: 18%;
+    overflow: hidden;
+}
+    
+.card.spell .imagebg {
+    position: absolute;
+    width: 33%;
+    left: 34%;
+    top: 3%;
+}
+.card.spell .image img {
+    position: absolute;
+    filter: grayscale(1) drop-shadow(0px 0px 3px black);
+}
+.card.spell .imagebg img {
+    width: 100%;
+}
+
 .card.spell .name {
     position: absolute;
     left: 0;
@@ -358,6 +381,52 @@
     font-size: 18px;
     line-height: 18px;
     box-shadow: 0px 0px 5px #000000;}
+
+.dialog .spell .field.imagelocation,
+.dialog .spell .field.imagezoom,
+.dialog .spell .field.imagerotation {
+    height: 85
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.dialog .spell .field.imagelocation {
+    width: 50%;
+    margin-top: 0;
+    text-align: left;
+}
+.dialog .spell .field.imagezoom,
+.dialog .spell .field.imagerotation {
+    width: 25%;
+    margin-top: 0;
+    text-align: left;
+}
+.dialog .spell .field.imagezoom:after,
+.dialog .spell .field.imagelocation div:after {
+    margin-left: 3px;
+    content: "%";
+}
+.dialog .spell .field.imagerotation:after {
+    margin-left: 3px;
+    content: "°";
+}
+.dialog .spell .field.imagelocation input,
+.dialog .spell .field.imagezoom input,
+.dialog .spell .field.imagerotation input {
+    width: 34px;
+    text-align: right;
+}
+.dialog .spell .field.imagelocation, .dialog .spell .field.imagezoom
+{ padding-right: 0; }
+.dialog .spell .field.imagezoom, .dialog .spell .field.imagerotation
+{ padding-left: 0; }
+
+.dialog .spell .field.imagelocation > div {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
 
 
 

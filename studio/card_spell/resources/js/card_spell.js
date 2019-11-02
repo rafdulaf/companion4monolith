@@ -27,6 +27,12 @@ var CardSpell = {
             'explosion': "Sort de zone",
             'image': "Image (fond transparent)",
             'imagePh': "Entrer l'adresse de l'image (http://)",
+            'imagelocation': "Emplacement",
+            'imagelocationPh': "0",
+            'imagezoom': "Zoom",
+            'imagezoomPh': "0",
+            'imagerotation': "Rotation",
+            'imagerotationPh': "0",
             'header1': "Saisissez les données de la carte",
             'header1bis': "Mettez une image",
             'header2': "Prévisualiser la carte",
@@ -59,6 +65,12 @@ var CardSpell = {
             'explosion': "Zone spell",
             'image': "Image (transparent background)",
             'imagePh': "Enter the image address (http://...)",
+            'imagelocation': "Location",
+            'imagelocationPh': "0",
+            'imagezoom': "Zoom",
+            'imagezoomPh': "0",
+            'imagerotation': "Rotation",
+            'imagerotationPh': "0",
             'header1': "Fill the card data",
             'header1bis': "Set a picture",
             'header2': "Preview the final result",
@@ -158,8 +170,12 @@ var CardSpell = {
         {
             code += "<div class='reaction" + (card.explosion ? " and-other" : "") + "'><img src='studio/card_spell/resources/img/reaction.png'/></div>";
         }
-        
-        // TODO
+
+        code += "<div class='imagebg'><img src='studio/card_spell/resources/img/image-bg.png'/></div>"
+        if (card.image)
+        {
+            code += "<div class='image'><img src='" + card.image + "' style=\"left: " + card.imagelocation.x + "%; top: " + card.imagelocation.y + "%; width: " + card.imagezoom + "%; transform: translate(-50%, -50%) rotate(" + card.imagerotation + "deg)\"/></div>"
+        }
                 
         code += "</div>";
         return code;
@@ -231,6 +247,19 @@ var CardSpell = {
                     + "<label for=\"eqimage\">" + CardSpell._i18n[Language].image + "</label>"
                     + "<input id=\"eqimage\" name=\"cardimage\" autocomplete=\"off\" placeholder=\"" + CardSpell._i18n[Language].imagePh + "\" onkeyup=\"CardSpell._preview();\" onchange=\"CardSpell._preview();\"/>"
                 + "</div>"
+                + "<div class=\"field imagelocation\">"
+                    + "<label for=\"eqimagelocation\">" + CardSpell._i18n[Language].imagelocation + "</label>"
+                    + "<div><input id=\"eqimagelocation\" name=\"cardimagelocation\" type=\"number\" autocomplete=\"off\" placeholder=\"" + CardSpell._i18n[Language].imagelocationPh + "\" onkeyup=\"CardSpell._preview();\" onchange=\"CardSpell._preview();\"\"/></div>"
+                    + "<div><input id=\"eqimagelocation2\" name=\"cardimagelocation2\" type=\"number\" autocomplete=\"off\" placeholder=\"" + CardSpell._i18n[Language].imagelocationPh + "\" onkeyup=\"CardSpell._preview();\" onchange=\"CardSpell._preview();\"/></div>"
+                + "</div>"
+                + "<div class=\"field imagezoom\">"
+                    + "<label for=\"eqimagezoom\">" + CardSpell._i18n[Language].imagezoom + "</label>"
+                    + "<input id=\"eqimagezoom\" name=\"cardimagezoom\" type=\"number\" autocomplete=\"off\" placeholder=\"" + CardSpell._i18n[Language].imagezoomPh + "\" onkeyup=\"CardSpell._preview();\" onchange=\"CardSpell._preview();\"/>"
+                + "</div>"
+                + "<div class=\"field imagerotation\">"
+                    + "<label for=\"eqimagerotation\">" + CardSpell._i18n[Language].imagerotation + "</label>"
+                    + "<input id=\"eqimagerotation\" name=\"cardimagerotation\" type=\"number\" autocomplete=\"off\" placeholder=\"" + CardSpell._i18n[Language].imagerotationPh + "\" onkeyup=\"CardSpell._preview();\" onchange=\"CardSpell._preview();\"/>"
+                + "</div>"
             + "</div>"
             + "</div>"
             + "<div class=\"eqcolspell\">"
@@ -252,6 +281,9 @@ var CardSpell = {
             cost: "0",
             saturation: "0",
             image: "",
+            imagelocation: {x: "50", y: "50"},
+            imagezoom: "100",
+            imagerotation: "0",
             explosion: $(".dialog input[name=cardexplosion]")[0].checked,
             reaction: $(".dialog input[name=cardreaction]")[0].checked
         };
@@ -279,6 +311,9 @@ var CardSpell = {
             cost: $(".dialog input[name=cardcost]")[0].value || "0",
             saturation: $(".dialog input[name=cardsaturation]")[0].value || "0",
             image: $(".dialog input[name=cardimage]")[0].value,
+            imagelocation: {x: $(".dialog input[name=cardimagelocation]")[0].value || "50", y: $(".dialog input[name=cardimagelocation2]")[0].value || "50"},
+            imagezoom: $(".dialog input[name=cardimagezoom]")[0].value || "100",
+            imagerotation: $(".dialog input[name=cardimagerotation]")[0].value || "0",
             explosion: $(".dialog input[name=cardexplosion]")[0].checked,
             reaction: $(".dialog input[name=cardreaction]")[0].checked
         }
@@ -293,6 +328,10 @@ var CardSpell = {
         $(".dialog input[name=cardcost]")[0].value = card.cost;
         $(".dialog input[name=cardsaturation]")[0].value = card.saturation;
         $(".dialog input[name=cardimage]")[0].value = card.image;
+        $(".dialog input[name=cardimagelocation]")[0].value = card.imagelocation.x;
+        $(".dialog input[name=cardimagelocation2]")[0].value = card.imagelocation.y;
+        $(".dialog input[name=cardimagezoom]")[0].value = card.imagezoom;
+        $(".dialog input[name=cardimagerotation]")[0].value = card.imagerotation;
         $(".dialog input[name=cardexplosion]")[0].checked = card.explosion;
         $(".dialog input[name=cardreaction]")[0].checked = card.reaction;
     },
