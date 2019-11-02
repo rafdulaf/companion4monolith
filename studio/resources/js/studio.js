@@ -62,7 +62,7 @@ var ConanStudio = {
             + CardEquipment._getDisplayCardsCode(false)
             
             + "<h1>" + CardSpell._i18n[Language].tab + "</h1>"
-            + "<div class=\"nocards\">" + CardSpell._i18n[Language].printnocard + "</div>"
+            + CardSpell._getDisplayCardsCode(false)
             
             + "<h1>" + HeroSheet._i18n[Language].tab + "</h1>"
             + "<div class=\"nocards\">" + HeroSheet._i18n[Language].printnocard + "</div>"

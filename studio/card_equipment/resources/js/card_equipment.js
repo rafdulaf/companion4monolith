@@ -58,7 +58,7 @@ var CardEquipment = {
             'remove': "Delete",
             'removeConfirm': "Are you sure that you want to delete this card?",
             'name': "Name",
-            'namePh': "Name of the card",
+            'namePh': "?",
             'weight': "Encumbrance",
             'weightPh': "?",
             'movement': "Move",
@@ -101,7 +101,6 @@ var CardEquipment = {
     },
     
     init: function() {
-//        $("#equipment").html("In construction");return;
         Nav.addAction("studio", CardEquipment._i18n[Language].newcard, "equipment-icon-add", "equipment-add", CardEquipment.add);
         Nav.addAction("studio", CardEquipment._i18n[Language].print, "equipment-icon-print", "equipment-print", ConanStudio.printCards);
         CardEquipment.onHide();
@@ -156,16 +155,18 @@ var CardEquipment = {
     },
     
     onShow: function() {
-        Nav.showAction("studio", "add");
+        Nav.showAction("studio", "equipment-add");
+        Nav.showAction("studio", "equipment-print");
     },
     
     onHide: function() {
-        Nav.hideAction("studio", "add");
+        Nav.hideAction("studio", "equipment-add");
+        Nav.hideAction("studio", "equipment-print");
     },
     
     _cardCode: function(card) {
         var code = "<div class=\"equipement card\">"
-                + "<img class=\"background\" src=\"studio/card_equipment/resources/img/background.png\"/>"
+                + "<img class=\"background\" src=\"studio/card_equipment/resources/img/background.png\"/>";
                 
                 
         var imageCode = "<div class=\"image\"><img src=\"" + card.image + "\" style=\"left: " + card.imagelocation.x + "%; top: " + card.imagelocation.y + "%; width: " + card.imagezoom + "%; transform: translate(-50%, -50%) rotate(" + card.imagerotation + "deg)\"/></div>"; 
@@ -414,7 +415,6 @@ var CardEquipment = {
             imagelocation: {x: "50", y: "50"},
             imagezoom: "100",
             imagerotation: "0",
-            imageatfront: false
         };
         
         $("#eqmelee,#eqmelee2,#eqactive,#eqactive2,#eqpassive,#eqpassive2,#eqranged,#eqranged2,#eqmanipulation,#eqmanipulation2").each (function (i) { // ,#eqskills,#eqskills2
