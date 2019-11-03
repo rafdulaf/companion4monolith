@@ -187,8 +187,7 @@
     padding-top: 2%;
 }
 .card.spell .text img {
-    width: 25px;
-    height: 25px;
+    width: 15%;
     vertical-align: sub;
     display: inline;
 }
