@@ -76,6 +76,9 @@ var ConanStudio = {
             null,
             []
         );
+        // share back of spell and equipment
+        $(".newpage")[1].innerHTML = $(".newpage")[0].innerHTML + $(".newpage")[1].innerHTML
+        $(".newpage").first().remove();
     },
     
     _printCards: function() 

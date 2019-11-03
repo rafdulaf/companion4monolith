@@ -49,6 +49,10 @@
     .dialog .printcards input[name=equipment]:checked + label { display: inline-block; }    
     .dialog .printcards input[name=equipment]:checked + label:before,
     .dialog .printcards input[name=equipment]:checked + label:after,
+    .dialog .printcards input[name=spell] + label { display: none; }
+    .dialog .printcards input[name=spell]:checked + label { display: inline-block; }    
+    .dialog .printcards input[name=spell]:checked + label:before,
+    .dialog .printcards input[name=spell]:checked + label:after,
     .dialog .dialog-header,
     .dialog .printcards h1,
     .dialog .printcards .hint,
