@@ -1,0 +1,69 @@
+.rules-viewer {
+    padding: 0;
+    margin: 0;
+}
+.rules-viewer {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.rules-viewer .thumbnails {
+    display: none;
+}
+.rules-viewer iframe {
+    border-style: none;
+}
+
+.rules-viewer.zoom0 iframe {
+    display: none;
+}
+.rules-viewer.zoom0 .thumbnails {
+    display: block;
+    margin: 0 auto;
+}
+
+.rules-viewer.zoom1  iframe {
+    width: calc(49vw - 9px);
+    height: 69.75vw;
+}
+.rules-viewer.zoom1  iframe:first-of-type {
+    margin-left: 50vw;
+}
+
+.rules-viewer.zoom2 iframe {
+    display: inline-block;
+    vertical-align: top;
+    border-width: 0;
+    width: calc(100vw - 17px);
+    height: 139.5vw;
+}
+
+.rules-viewer.zoom3 iframe {
+    display: inline-block;
+    vertical-align: top;
+    border-width: 0;
+    width: calc(200vw - 17px);
+    height: 279vw;
+}
+
+.rules-viewer .thumbnails div {
+    display: inline-block;
+    vertical-align: top;
+    width: 282px;
+    height: 200px;
+    margin: 5px;
+}
+                                        .rules-viewer .thumbnails { width: 292px}
+@media screen and (min-width: 601px)  { .rules-viewer .thumbnails { width: 584px} }
+@media screen and (min-width: 893px)  { .rules-viewer .thumbnails { width: 876px} }
+@media screen and (min-width: 1185px) { .rules-viewer .thumbnails { width: 1168px} }
+
+.rules-viewer .thumbnails img {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+.rules-viewer .thumbnails div:first-child img {
+    margin-left: 50%;
+}

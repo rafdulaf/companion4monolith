@@ -82,6 +82,10 @@ var ConanRules = {
             'skills_magic_teleportation_title': "Téléportation",
             'skills_magic_teleportation_text': "(Clarification du sort) Le lanceur de sort n'est pas soumis au phénomène de gêne ni à la compétence Bloqueur.",
             
+            'viewer-search': "Recherche dans le document",
+            'viewer-zoomin': "Zoomer",
+            'viewer-zoomout': "Dézoomer",
+            
             'copyright': "Les règles proposés sont basées sur les règles officielles et leurs compléments mais ont été en partie reformulées.",
             
             'heroes': "Livre des héros",
@@ -169,6 +173,10 @@ var ConanRules = {
             'skills_magic_teleportation_title': "Teleportation",
             'skills_magic_teleportation_text': "(Spell clarification) A character who casts this spell is not affected by hindering or by Blocking to move.",
             
+            'viewer-search': "Search in the document",
+            'viewer-zoomin': "Zoom in",
+            'viewer-zoomout': "Zoom out",
+
             'copyright': "The proposed rules are based upon the official rules and their complements but were partially rewriten.",
             
             'heroes': "Heroes's book",
@@ -192,16 +200,152 @@ var ConanRules = {
             {label: ConanRules._i18n[Language].skills, id: "skills"},
             {label: ConanRules._i18n[Language].heroes, id: "heroes"},
             {label: ConanRules._i18n[Language].overlord, id: "overlord"}
-        ]);
+        ], ConanRules._onChange);
         
         ConanRules._initSkills();
 
-        $("#heroes").html("In construction");
-        $("#overlord").html("In construction");
+        $("#heroes").addClass("zoom0 rules-viewer").html("<div>" + this._createViewer("rules/heroes/" + Language + "/book", 24) + "</div>");
+        ConanRules._attachEvents("#heroes");
+        $("#overlord").addClass("zoom0 rules-viewer").html("<div>" + this._createViewer("rules/overlord/" + Language + "/book", 14) + "</div>");
+        ConanRules._attachEvents("#overlord");
+        
+        Nav.addAction("rules", ConanRules._i18n[Language]['viewer-zoomin'], "rules-zoomin-icon", "zoomin", ConanRules._zoomIn);
+        Nav.addAction("rules", ConanRules._i18n[Language]['viewer-zoomout'], "rules-zoomout-icon", "zoomout", ConanRules._zoomOut);
+        Nav.addAction("rules", ConanRules._i18n[Language]['viewer-search'], "rules-search-icon", "search", ConanRules._doublePage);
+        ConanRules._onChange();
 
         ConanAbout.addCopyright(ConanRules._i18n[Language].menu, ConanRules._i18n[Language].copyright);
     },
     
+    _attachEvents: function(selector)
+    {
+        // Attach thumbnails events
+        $(selector + " .thumbnails img").on('click', function(e) { 
+            var imgLocation = $(this).offset(); 
+            var ratioX = (e.pageX - imgLocation.left) / $(this).width();
+            var ratioY = (e.pageY - imgLocation.top) / $(this).height();
+            ConanRules._zoom(1, $(this).attr('data-page'), ratioX, ratioY); 
+        });
+            
+       // Attach iframe events
+       $(selector + " iframe").on('load', function() {
+            var iframe = this;
+            var page = $(iframe).attr('data-page');
+            $(iframe.contentDocument).on('click', function(e) {
+                var body = $(e.target.ownerDocument.body);
+                var zoom = body.css('zoom');
+                var ratioX = e.pageX / zoom / body.width();
+                var ratioY = e.pageY / zoom / body.height();
+                
+                ConanRules._zoom(1, page, ratioX, ratioY);
+            });
+       });
+    },
+    
+    _onChange: function(event, slick)
+    {
+        var slide = slick && slick.currentSlide || 0;
+        ConanRules._currentSlide = slide;
+        
+        if (slide == 0)
+        {
+            Nav.hideAction("rules", "zoomin");
+            Nav.hideAction("rules", "zoomout");
+            Nav.hideAction("rules", "search");
+        }
+        else
+        {
+            Nav.showAction("rules", "zoomin");
+            Nav.showAction("rules", "zoomout");
+            //Nav.showAction("rules", "search");
+        }
+    },
+    
+    _createViewer: function(url, size)
+    {
+        var s = "";
+        
+        // thumbnails
+        s += "<div class='thumbnails'>"
+        for (var i = 0; i <= size; i+=2)
+        {
+            s += "<div>"
+            if (i > 0) s += "<img data-page='" + i + "' src='" + url + "/thumbnails/" + i + ".jpg'/>"
+            if (i < size) s += "<img data-page='" + (i+1) + "' src='" + url + "/thumbnails/" + (i+1) + ".jpg'/>"
+            s += "</div>"
+        }
+        s += "</div>"
+        
+        // pages
+        for (var i = 1; i <= size; i++)
+        {
+            s += "<iframe data-page='" + i + "' src=\"" + url + "/" + i + ".html\"></iframe>";
+        }
+        
+        return s;
+    },
+    
+    _zoomIn: function()
+    {
+        ConanRules._zoom(1);
+    },
+    
+    _zoomOut: function()
+    {
+        ConanRules._zoom(-1);
+    },
+
+    _zoom: function(direction, specificPage, ratioX, ratioY)
+    {
+        var div = $(["#heroes", "#overlord"][ConanRules._currentSlide - 1]);
+        
+        var top = div.scrollTop();
+        var height = div.height();
+        
+        var fullHeight = div.children("div").height();
+        
+        var cursor = (top + height/2) / fullHeight;
+        
+        if (div.hasClass("zoom0"))
+            div.removeClass("zoom0").addClass(direction == 1 ? "zoom1" : "zoom0")
+        else if (div.hasClass("zoom1"))
+            div.removeClass("zoom1").addClass(direction == 1 ? "zoom2" : "zoom0")
+        else if (div.hasClass("zoom2"))
+            div.removeClass("zoom2").addClass(direction == 1 ? "zoom3" : "zoom1")
+        else if (div.hasClass("zoom3"))
+            div.removeClass("zoom3").addClass(direction == 1 ? "zoom3" : "zoom2")
+            
+        var newFullHeight = div.children("div").height();
+        
+        if (specificPage)
+        {
+            ratioX = ratioX || 0;
+            ratioY = ratioY || 0;
+            
+            var iframe = div.find("iframe[data-page=" + specificPage + "]");
+            
+            var top = div.scrollTop()
+                      + iframe.offset().top
+                      - div.offset().top
+                      + ratioY * iframe.height()
+                      - 0.5 * div.height();
+
+            var left = div.scrollLeft()
+                      + iframe.offset().left
+                      - div.offset().left
+                      + ratioX * iframe.width()
+                      - 0.5* div.width();
+
+            div.scrollTop(top);
+            div.scrollLeft(left);
+        }
+        else
+        {
+            // Try to auto stay at the same place
+            div.scrollTop(cursor * newFullHeight - height / 2);
+        }
+    },
+
     _initSkills: function()
     {
         $("#skills").html("<div></div>");

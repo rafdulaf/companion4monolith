@@ -61,6 +61,8 @@
     display: block;
     text-align: center;
     width: 40px;
+    height: 44px;
+    overflow: hidden;
 }    
     
 .nav {

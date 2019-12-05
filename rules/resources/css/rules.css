@@ -3,6 +3,20 @@
     content: "\f545";  
 }
 
+.rules-search-icon:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f002";  
+}
+.rules-zoomin-icon:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00e";  
+}
+.rules-zoomout-icon:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f010";  
+}
+
+
 #rules {
     height: 100%;
 }
