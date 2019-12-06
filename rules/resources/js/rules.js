@@ -82,14 +82,19 @@ var ConanRules = {
             'skills_magic_teleportation_title': "Téléportation",
             'skills_magic_teleportation_text': "(Clarification du sort) Le lanceur de sort n'est pas soumis au phénomène de gêne ni à la compétence Bloqueur.",
             
+            'skillsPDF': "http://www.monolithedition.com/download/rules/Aides-de-jeu-FR.pdf",
+            
             'viewer-search': "Recherche dans le document",
+            'viewer-download': "Télécharger le document",
             'viewer-zoomin': "Zoomer",
             'viewer-zoomout': "Dézoomer",
             
             'copyright': "Les règles proposés sont basées sur les règles officielles et leurs compléments mais ont été en partie reformulées.",
             
             'heroes': "Livre des héros",
-            'overlord': "Livre de l'Overlord"
+            'heroesPDF': "http://www.monolithedition.com/download/rules/CONAN_Heroesrulebook_V2_FR_SD.pdf",
+            'overlord': "Livre de l'Overlord",
+            'overlordPDF': "http://www.monolithedition.com/download/rules/CONAN_King_Overlordbook_V2_FR_SD.pdf"
         },
         'en': {
             'menu': "Rules",
@@ -173,14 +178,19 @@ var ConanRules = {
             'skills_magic_teleportation_title': "Teleportation",
             'skills_magic_teleportation_text': "(Spell clarification) A character who casts this spell is not affected by hindering or by Blocking to move.",
             
+            'skillsPDF': "http://www.monolithedition.com/download/rules/Game-aids-EN.pdf",
+            
             'viewer-search': "Search in the document",
+            'viewer-download': "Download the document",
             'viewer-zoomin': "Zoom in",
             'viewer-zoomout': "Zoom out",
 
             'copyright': "The proposed rules are based upon the official rules and their complements but were partially rewriten.",
             
             'heroes': "Heroes's book",
-            'overlord': "Overlord's book"
+            'heroesPDF': "http://www.monolithedition.com/download/rules/CONAN_Heroesrulebook_V2_US_SD.pdf",
+            'overlord': "Overlord's book",
+            'overlordPDF': "http://www.monolithedition.com/download/rules/CONAN_King_Overlordbook_V2_US_SD.pdf"
         }
     },
     
@@ -212,9 +222,26 @@ var ConanRules = {
         Nav.addAction("rules", ConanRules._i18n[Language]['viewer-zoomin'], "rules-zoomin-icon", "zoomin", ConanRules._zoomIn);
         Nav.addAction("rules", ConanRules._i18n[Language]['viewer-zoomout'], "rules-zoomout-icon", "zoomout", ConanRules._zoomOut);
         Nav.addAction("rules", ConanRules._i18n[Language]['viewer-search'], "rules-search-icon", "search", ConanRules._doublePage);
+        Nav.addAction("rules", ConanRules._i18n[Language]['viewer-download'], "rules-download-icon", "download", ConanRules._download);
         ConanRules._onChange();
 
         ConanAbout.addCopyright(ConanRules._i18n[Language].menu, ConanRules._i18n[Language].copyright);
+    },
+    
+    _download: function()
+    {
+        switch (ConanRules._currentSlide)
+        {
+            case 0:
+                window.open(ConanRules._i18n[Language].skillsPDF);
+                break;
+            case 1:
+                window.open(ConanRules._i18n[Language].heroesPDF);
+                break;
+            case 2:
+                window.open(ConanRules._i18n[Language].overlordPDF);
+                break;
+        }
     },
     
     _attachEvents: function(selector)

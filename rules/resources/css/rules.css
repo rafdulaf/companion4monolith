@@ -15,7 +15,10 @@
     font-family: "Font Awesome 5 Free";
     content: "\f010";  
 }
-
+.rules-download-icon:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f56d";  
+}
 
 #rules {
     height: 100%;
