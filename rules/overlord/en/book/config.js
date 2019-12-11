@@ -1,1 +1,0 @@
-IDRViewer.config = {"pagecount":14,"title":"","author":"","fileName":"CONAN_King_Overlordbook_V2_US_SD.pdf","bounds":[[909,1286],[909,1286],[909,1286],[909,1286],[909,1286],[909,1286],[909,1286],[909,1286],[909,1286],[909,1286],[909,1286],[909,1286],[909,1286],[909,1286]],"bookmarks":[],"thumbnailType":"jpg","pageType":"html","pageLabels":[]};

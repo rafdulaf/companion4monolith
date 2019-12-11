@@ -67,3 +67,37 @@
 .rules-viewer .thumbnails div:first-child img {
     margin-left: 50%;
 }
+
+
+.rulessearch {
+    font-family: 'Moolbor';
+}
+.rulessearch label {
+    display: block;
+}
+.rulessearch input {
+    display: block;
+    padding: 10px;
+    width: 100%;
+}
+.rulessearch .results {
+    margin-top: 10px;
+}
+.rulessearch .results ul { margin: 0; padding: 0; list-style: none; }
+
+.rulessearch .results > ul a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.rulessearch .results > ul > li {
+    display: flex;
+    border-top: 1px solid black;
+}
+.rulessearch .results ul ul li {
+    background-color: #EFEFEF;
+    margin: 5px;
+}
+.rulessearch .results ul ul em {
+    font-weight: bold;
+}

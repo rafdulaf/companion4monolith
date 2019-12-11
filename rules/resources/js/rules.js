@@ -89,6 +89,11 @@ var ConanRules = {
             'viewer-zoomin': "Zoomer",
             'viewer-zoomout': "Dézoomer",
             
+            'search': "Rechercher",
+            'search-input': "Mot clé",
+            'search-inputPh': "Entrez un mot clé à chercher (3 caractères minimum)",
+            'search-loose': "Aucun résultat ne correspond au mot clé saisi",
+            
             'copyright': "Les règles proposés sont basées sur les règles officielles et leurs compléments mais ont été en partie reformulées.",
             
             'heroes': "Livre des héros",
@@ -185,6 +190,11 @@ var ConanRules = {
             'viewer-zoomin': "Zoom in",
             'viewer-zoomout': "Zoom out",
 
+            'search': "Search",
+            'search-input': "Keyword",
+            'search-inputPh': "Enter the keyword to search (3 characters minimum)",
+            'search-loose': "No result is matching the entered keyword",
+            
             'copyright': "The proposed rules are based upon the official rules and their complements but were partially rewriten.",
             
             'heroes': "Heroes's book",
@@ -204,6 +214,8 @@ var ConanRules = {
     
     init: function()
     {
+        ConanRules._lastSearch = "";
+        
         Nav.addIcon(ConanRules._i18n[Language].menu, "rules-icon", "rules");
         
         Nav.createTabs('rules', [
@@ -221,7 +233,7 @@ var ConanRules = {
         
         Nav.addAction("rules", ConanRules._i18n[Language]['viewer-zoomin'], "rules-zoomin-icon", "zoomin", ConanRules._zoomIn);
         Nav.addAction("rules", ConanRules._i18n[Language]['viewer-zoomout'], "rules-zoomout-icon", "zoomout", ConanRules._zoomOut);
-        Nav.addAction("rules", ConanRules._i18n[Language]['viewer-search'], "rules-search-icon", "search", ConanRules._doublePage);
+        Nav.addAction("rules", ConanRules._i18n[Language]['viewer-search'], "rules-search-icon", "search", ConanRules._search);
         Nav.addAction("rules", ConanRules._i18n[Language]['viewer-download'], "rules-download-icon", "download", ConanRules._download);
         ConanRules._onChange();
 
@@ -242,6 +254,121 @@ var ConanRules = {
                 window.open(ConanRules._i18n[Language].overlordPDF);
                 break;
         }
+    },
+    
+    _search: function()
+    {
+        Nav.dialog(ConanRules._i18n[Language].search,
+            "<div id='rulessearch' class='rulessearch'>"
+            +   "<div class='form'>"
+            +       "<label for='rulessearch'>" + ConanRules._i18n[Language]['search-input'] + "</label>"
+            +       "<input type='text' id='rulessearch' onkeyup='ConanRules._doSearch()' onchange='ConanRules._doSearch()' placeholder='" + ConanRules._i18n[Language]['search-inputPh'] + "'/>"
+            +   "</div>"
+            +   "<div class='results'>"
+            +   "</div>"
+            + "</div>"
+        );
+        $("#rulessearch input").focus()[0].value = ConanRules._lastSearch;
+        
+        // loading keywords
+        if (!ConanRules.keywords || !ConanRules.keywords[ConanRules._currentSlide])
+        {
+            $("#rulessearch input").prop('disabled', true);
+            ConanRules.keywords = ConanRules.keywords || {};
+            $.getJSON("rules/" + (ConanRules._currentSlide == 1 ? "heroes" : "overlord") + "/" + Language + "/book/search.json", null, function(data) { ConanRules.keywords[ConanRules._currentSlide] = data; $("#rulessearch input").prop('disabled', false).focus(); ConanRules._doSearch(true); });
+        }
+        else
+        {
+            ConanRules._doSearch(true);
+        }
+    },
+    
+    _doSearch: function(force)
+    {
+        var searchTerm = $("#rulessearch input")[0].value;
+        if (ConanRules._lastSearch == searchTerm && force !== true)
+        {
+            return;
+        }
+        
+        ConanRules._lastSearch = searchTerm;
+        searchTerm = searchTerm.toUpperCase();
+
+        $("#rulessearch input").attr('data-last-search', searchTerm);
+        if ((searchTerm || '').length < 3)
+        {
+            $("#rulessearch .results").html("");
+            return;
+        }
+        
+        var textContent = ConanRules.keywords[ConanRules._currentSlide];
+        
+        var results = "";
+        for (var i = 0; i < textContent.length; i++) 
+        {
+            var pageContent = textContent[i].toUpperCase();
+            var index = -1;
+            var pageHasResults = false;
+
+            do 
+            {
+                index = pageContent.indexOf(searchTerm, index + 1);
+                if (index >= 0) 
+                {
+                    var foundExact = textContent[i].substring(index, index + searchTerm.length); 
+                    
+                    var SNIPPET_LENGTH = 120;
+                    var snippetStart = index >= SNIPPET_LENGTH ? index - SNIPPET_LENGTH : 0;
+                    var snippetEnd = index + searchTerm.length < textContent[i].length - SNIPPET_LENGTH ? index + searchTerm.length + SNIPPET_LENGTH : textContent[i].length;
+                    
+                    var prefix = snippetStart > 0 ? "..." : "";
+                    var suffix = snippetEnd < pageContent.length ? "..." : "";
+                    
+                    var guessRatioY = (index / pageContent.length) * 0.8 + 0.1;
+
+                    if (!pageHasResults) results += "<li><a href='#' onclick='ConanRules._endPageSearch(this, arguments[0], " + (i+1) + ")'><img src='rules/" + (ConanRules._currentSlide == 1 ? "heroes" : "overlord") + "/" + Language + "/book/thumbnails/" + (i+1) + ".jpg'/><br/>Page " + (i+1) + "</a><ul>";
+                    results += "<li>" 
+                                    + "<a href='#' onclick='ConanRules._endSearch(" + (i+1) +", 0, " + guessRatioY + ")'>" 
+                                        + prefix + textContent[i].substr(snippetStart, snippetEnd - snippetStart).replace(foundExact, '<em>' + foundExact + '</em>') + suffix 
+                                    + "</a>" 
+                             + "</li>";
+                    pageHasResults = true;
+                }
+            } while (index !== -1);
+            
+            if (pageHasResults) results += "</ul></li>";
+        }
+        
+        if (results)
+        {
+            $("#rulessearch .results").html("<ul>" + results + "</ul>");
+        }
+        else
+        {
+            $("#rulessearch .results").html(ConanRules._i18n[Language]['search-loose'])
+        }
+    },
+    
+    _endPageSearch: function(me, e, page)
+    {
+        var imgLocation = $(me).offset(); 
+        var ratioX = (e.pageX - imgLocation.left) / $(me).width();
+        var ratioY = (e.pageY - imgLocation.top) / $(me).height();
+
+        ConanRules._endSearch(page, ratioX, ratioY)
+    },
+    
+    _endSearch: function(page, ratioX, ratioY)
+    {
+        var div = $(["#heroes", "#overlord"][ConanRules._currentSlide - 1]);
+        if (!div.is("zoom3") && !div.is("zoom2"))
+        {
+            div.removeClass("zoom1").removeClass("zoom0").addClass("zoom2");
+        }
+        
+        ConanRules._scrollTo(page, ratioX, ratioY);
+        
+        Nav.closeDialog(); 
     },
     
     _attachEvents: function(selector)
@@ -284,7 +411,7 @@ var ConanRules = {
         {
             Nav.showAction("rules", "zoomin");
             Nav.showAction("rules", "zoomout");
-            //Nav.showAction("rules", "search");
+            Nav.showAction("rules", "search");
         }
     },
     
@@ -322,6 +449,31 @@ var ConanRules = {
         ConanRules._zoom(-1);
     },
 
+    _scrollTo: function(specificPage, ratioX, ratioY)
+    {
+        var div = $(["#heroes", "#overlord"][ConanRules._currentSlide - 1]);
+        
+        ratioX = ratioX || 0;
+        ratioY = ratioY || 0;
+        
+        var iframe = div.find("iframe[data-page=" + specificPage + "]");
+        
+        var top = div.scrollTop()
+                  + iframe.offset().top
+                  - div.offset().top
+                  + ratioY * iframe.height()
+                  - 0.5 * div.height();
+
+        var left = div.scrollLeft()
+                  + iframe.offset().left
+                  - div.offset().left
+                  + ratioX * iframe.width()
+                  - 0.5* div.width();
+
+        div.scrollTop(top);
+        div.scrollLeft(left);
+    },
+    
     _zoom: function(direction, specificPage, ratioX, ratioY)
     {
         var div = $(["#heroes", "#overlord"][ConanRules._currentSlide - 1]);
@@ -346,25 +498,7 @@ var ConanRules = {
         
         if (specificPage)
         {
-            ratioX = ratioX || 0;
-            ratioY = ratioY || 0;
-            
-            var iframe = div.find("iframe[data-page=" + specificPage + "]");
-            
-            var top = div.scrollTop()
-                      + iframe.offset().top
-                      - div.offset().top
-                      + ratioY * iframe.height()
-                      - 0.5 * div.height();
-
-            var left = div.scrollLeft()
-                      + iframe.offset().left
-                      - div.offset().left
-                      + ratioX * iframe.width()
-                      - 0.5* div.width();
-
-            div.scrollTop(top);
-            div.scrollLeft(left);
+            ConanRules._scrollTo(specificPage, ratioX, ratioY);
         }
         else
         {
