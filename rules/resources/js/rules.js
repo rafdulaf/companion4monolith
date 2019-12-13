@@ -387,7 +387,7 @@ var ConanRules = {
             var page = $(iframe).attr('data-page');
             $(iframe.contentDocument).on('click', function(e) {
                 var body = $(e.target.ownerDocument.body);
-                var zoom = body.css('zoom');
+                var zoom = body.css('zoom') || 1.0;
                 var ratioX = e.pageX / zoom / body.width();
                 var ratioY = e.pageY / zoom / body.height();
                 
