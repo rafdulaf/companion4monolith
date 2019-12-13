@@ -201,7 +201,7 @@
 .dialog-content {
     padding: 20px;
     font-family: 'Moolbor';
-    font-size: 20px;
+    font-size: 24px;
     height: calc(100vh - 64px);
     overflow: auto;
     background-color: #FFFFFF;

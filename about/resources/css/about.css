@@ -88,6 +88,10 @@
     vertical-align: middle;
     margin-left: 3px;
 }
+.custom input[type='checkbox'] {
+    width: 16px;
+    height: 16px;
+}
 
 @media screen and (min-width: 600px) {
     .custom fieldset {
