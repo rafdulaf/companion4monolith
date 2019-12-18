@@ -448,6 +448,7 @@ var ConanAbout = {
                 + "<h2>" + ConanAbout._i18n[Language].contribute_hof_test + "</h2>"
                 + "<div><a href=\"https://the-overlord.com/index.php?/profile/5567-madcollector/\">@madcollector</a></div>"
                 + "<div><a href=\"https://the-overlord.com/index.php?/profile/13-roolz/\">@Roolz</a></div>"
+                + "<div><a href=\"https://the-overlord.com/index.php?/profile/5236-renand/\">@Renand</a></div>"
             + "</div>",
             
             function() {
