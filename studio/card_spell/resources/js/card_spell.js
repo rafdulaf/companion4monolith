@@ -2,7 +2,8 @@ var CardSpell = {
     _i18n: {
         'fr': {
             'tab': "Sort",
-            'nocard': "Vous n'avez aucune carte pour le moment. Cliquez sur le bouton + en haut pour en creer une.",
+            'nocard': "Vous n'avez aucune carte pour le moment.",
+            'nocard2': " Cliquez sur le bouton + en haut pour en creer une.",
             'printnocard': "Vous n'avez aucune carte pour le moment",
             'newcard': "Créer une carte",
             'print': "Imprimer des cartes",
@@ -40,7 +41,8 @@ var CardSpell = {
         },
         'en': {
             'tab': "Spell",
-            'nocard': "You have no card for the moment. Click on the + button in the header to create one.",
+            'nocard': "You have no card for the moment.",
+            'nocard2': " Click on the + button in the header to create one.",
             'printnocard': "You have no card for the moment",
             'newcard': "Create a new card",
             'print': "Print cards",
@@ -120,7 +122,7 @@ var CardSpell = {
         }
         else
         {
-            html += "<div class=\"nocards\">" + CardSpell._i18n[Language].nocard + "</div>";
+            html += "<div class=\"nocards\">" + CardSpell._i18n[Language].nocard + (withEditLink !== false ? CardSpell._i18n[Language].nocard2 : '') + "</div>";
         }
         
         if (!withEditLink)
