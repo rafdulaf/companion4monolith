@@ -65,7 +65,7 @@ Tower = {
             'fr': "https://the-overlord.com/index.php?/topic/805-khitai-carte-tour/",
             'en': "https://the-overlord.net/index.php?/topic/37-khitai-tower/"
         },
-        losFile: true
+        losFile: "los-v4.jpg"
 	},
 	size: [1617, 923],
     zones: {

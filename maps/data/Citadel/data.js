@@ -45,7 +45,7 @@ Citadel = {
             'fr': "https://the-overlord.com/index.php?/topic/22-sg-carte-forteresse/",
             'en': "https://the-overlord.net/index.php?/topic/31-sg-citadel/"
         },
-        losFile: true
+        losFile: "los-v2.jpg"
 	},
 	size: [1065, 912],
     zones: {

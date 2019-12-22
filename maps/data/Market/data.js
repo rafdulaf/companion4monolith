@@ -55,7 +55,7 @@ Market = {
             'fr': "https://the-overlord.com/index.php?/topic/804-khitai-carte-march%C3%A9/",
             'en': "https://the-overlord.net/index.php?/topic/36-khitai-market/"
         },
-        losFile: true
+        losFile: "los-v2.jpg"
 	},
 	size: [1039, 910],
     zones: {

@@ -65,7 +65,7 @@ Inn = {
             'fr': "https://the-overlord.com/index.php?/topic/23-core-carte-taverne/",
             'en': "https://the-overlord.net/index.php?/topic/28-core-inn/"
         },
-        losFile: true
+        losFile: "los-v5.jpg"
     },
     size: [1062, 910],
     zones: {

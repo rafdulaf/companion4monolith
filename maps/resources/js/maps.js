@@ -247,7 +247,7 @@ var ConanMaps = {
         if ((slick.currentSlide || 0) == 0)
         {
             Nav.hideAction("maps", "forum");
-            if (ConanMaps._files[ConanMaps._currentMap].description.losFile === true)
+            if (ConanMaps._files[ConanMaps._currentMap].description.losFile)
             {
                 Nav.showAction("maps", "losfile");
             }
@@ -615,7 +615,7 @@ var ConanMaps = {
     
     _losFile: function()
     {
-        window.open("maps/data/" + ConanMaps._currentMap + "/los.jpg");
+        window.open("maps/data/" + ConanMaps._currentMap + "/" + ConanMaps._files[ConanMaps._currentMap].description.losFile);
     },
     
     _legend: function()

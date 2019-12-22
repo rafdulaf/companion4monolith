@@ -75,7 +75,7 @@ Abandoned_Fort = {
             'fr': "https://the-overlord.com/index.php?/topic/20-core-carte-fortin-en-ruines/",
             'en': "https://the-overlord.net/index.php?/topic/26-core-ruined-fort/"
         },
-        losFile: true
+        losFile: "los-v7.jpg"
 	},
 	size: [1062, 910],
     zones: {

@@ -45,7 +45,7 @@ Underground = {
             'fr': "https://the-overlord.com/index.php?/topic/806-stygie-carte-souterrains/",
             'en': "https://the-overlord.net/index.php?/topic/35-stygia-underground/"
         },
-        losFile: true
+        losFile: "los-v4.jpg"
 	},
 	size: [1078, 924],
     zones: {

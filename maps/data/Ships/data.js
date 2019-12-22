@@ -45,7 +45,7 @@ Ships = {
             'fr': "https://the-overlord.com/index.php?/topic/21-core-carte-bateaux/",
             'en': "https://the-overlord.net/index.php?/topic/29-core-ships/"
         },
-        losFile: true
+        losFile: "los-v5.jpg"
 	},
 	size: [1062, 910],
     zones: {

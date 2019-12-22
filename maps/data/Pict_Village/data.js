@@ -75,7 +75,7 @@ Pict_Village = {
             'fr': "https://the-overlord.com/index.php?/topic/15-core-carte-village-picte/",
             'en': "https://the-overlord.net/index.php?/topic/27-core-pict-village/"
         },
-        losFile: true
+        losFile: "los-v7.jpg"
 	},
 	size: [1088, 932],
     zones: {

@@ -51,7 +51,7 @@ Swamp = {
             'fr': "https://the-overlord.com/index.php?/topic/24-sg-carte-marais/",
             'en': "https://the-overlord.net/index.php?/topic/30-sg-swamp/"
         },
-        losFile: true
+        losFile: "los-v3.jpg"
 	},
 	size: [1061, 910],
     zones: {

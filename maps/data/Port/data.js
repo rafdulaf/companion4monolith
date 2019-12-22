@@ -55,7 +55,7 @@ Port = {
             'fr': "https://the-overlord.com/index.php?/topic/807-stygie-carte-port/",
             'en': "https://the-overlord.net/index.php?/topic/34-stygia-port/"
         },
-        losFile: true
+        losFile: "los-v2.jpg"
 	},
 	size: [1062, 910],
     zones: {

@@ -35,7 +35,7 @@ Mound = {
             'fr': "https://the-overlord.com/index.php?/topic/809-nordheim-carte-tertre/",
             'en': "https://the-overlord.net/index.php?/topic/33-nordheim-mound/"
         },
-        losFile: true
+        losFile: "los-v1.jpg"
 	},
 	size: [1078, 924],
     zones: {

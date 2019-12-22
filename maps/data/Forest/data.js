@@ -35,7 +35,7 @@ Forest = {
             'fr': "https://the-overlord.com/index.php?/topic/808-nordheim-carte-for%C3%AAt/",
             'en': "https://the-overlord.net/index.php?/topic/32-nordheim-forest/"
         },
-        losFile: true
+        losFile: "los-v1.jpg"
 	},
 	size: [1062, 910],
     zones: {
