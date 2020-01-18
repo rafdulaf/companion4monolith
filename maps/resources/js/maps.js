@@ -56,6 +56,12 @@ var ConanMaps = {
         Nav.addAction("maps", ConanMaps._i18n[Language].legend, "maps-icon-legend", "legend", ConanMaps._legend );
         Nav.addAction("maps", ConanMaps._i18n[Language].rotate, "maps-icon-rotate", "rotate", function() { ConanMaps._rotate(-1); } );
 
+        Nav.hideAction("maps", "index");
+        Nav.hideAction("maps", "forum");
+        Nav.hideAction("maps", "losfile");
+        Nav.hideAction("maps", "rotate");
+        Nav.hideAction("maps", "legend");
+
         ConanMaps._rotation = window.screen.width / window.screen.height > 1.2 ? 0 : 3;
         
 		var maps = [
@@ -219,7 +225,7 @@ var ConanMaps = {
 			for (var i in ConanMaps._files)
 			{
 				var imgCode = "<div class='map-index-board-image' style=\"background-image: url('maps/data/" + i + "/thumb.png" + "\');\"/>"
-                var subtitleCode = "<div class='map-index-board-sublegend'>" + ConanAbout._origins[Language][ConanMaps._files[i].description.origin + '-short'] + "</div>";
+                var subtitleCode = "<div class='map-index-board-sublegend'>" + ConanMaps._getOrigin(i) + "</div>";
 				var titleCode = "<div class='map-index-board-legend'>" + ConanMaps._files[i].description.title[Language] + "</div>";
 				code += "<li><a href=\"javascript:void(0);\" title=\"" + ConanMaps._i18n[Language].openMap + ConanMaps._files[i].description.title[Language] + "\" onclick=\"ConanMaps._displayMap('" + i + "')\">" + imgCode + titleCode + subtitleCode + "</a></li>";
 			}
@@ -230,6 +236,20 @@ var ConanMaps = {
 
 		index.show();
 	},
+    
+    _getOrigin: function(map)
+    {
+        var origin = "";
+        for (var j in Encyclopedia.expansions.list)
+        {
+            var expansion = Encyclopedia.expansions.list[j];
+            if (expansion.id == ConanMaps._files[map].description.origin)
+            {
+                return expansion.short[Language];  
+            }
+        }
+        return null;
+    },
     
     _onSetPosition: function(event, slick)
     {

@@ -77,7 +77,9 @@
 	
                         Utils.load.css('tutorial/resources/css/tutorial.css'),
                         Utils.load.js('tutorial/resources/js/tutorial.js'),
-    
+
+                        Utils.load.js('encyclopedia/resources/js/encyclopedia.js'),
+
 	                    Utils.load.css('maps/resources/css/maps.css'),
 	                    Utils.load.js('maps/resources/js/maps.js'),
 	
@@ -95,7 +97,8 @@
                         Utils.load.js('studio/hero_sheet/resources/js/hero_sheet.js'),
                         Utils.load.css('studio/tile/resources/css/tile.css'),
                         Utils.load.js('studio/tile/resources/js/tile.js')
-		        	]).then(function() {
+		        	]).then(function() { return Encyclopedia.load() })
+		        	.then(function() {
 		        		Menu.initialize();
 		        		
 	                    Nav.initialize();

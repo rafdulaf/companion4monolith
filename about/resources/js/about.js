@@ -22,15 +22,9 @@ var ConanAbout = {
             'preferences_general': "Généralités",
             'custom': "Mes extensions",
             'custom_text': "Sélectionnez vos extensions qui seront enregistrés sur votre appareil.",
-            'custom_box': "Boîte de jeu",
             'custom_lang': "Français",
             'custom_langlabel': "Langue de l'interface",
             'custom_automatic_lang': "Auto-détection",
-            'custom_regionalexts': "Extensions régionales",
-            'custom_otherexts': "Autres extensions",
-            'custom_artists': "Extensions d'artistes",
-            'custom_decoration': "Décors",
-            'custom_books': "Livres",
             'custom_reload': "La modification de votre configuration entrainera un redémarage automatique de l'application",
             'contribute': "Contribuer !",
             'contribute_text': "Vous pouvez contribuer à cette application de nombreuses façons :"
@@ -67,15 +61,9 @@ var ConanAbout = {
             'preferences_general': "Generality",
             'custom': "My expansions",
             'custom_text': "Select your expansions that will be stored on your device.",
-            'custom_box': "Game box",
             'custom_lang': "English",
             'custom_langlabel': "UI Language",
             'custom_automatic_lang': "Autodetection",
-            'custom_regionalexts': "Regional expansions",
-            'custom_otherexts': "Other expansions",
-            'custom_artists': "Artists expansions",
-            'custom_decoration': "Decorations",
-            'custom_books': "Books",
             'custom_reload': "The modification of your configuration will require an automatic application reload",
             'contribute': "Contribute!",
             'contribute_text': "You can contribute to this application in several ways:"
@@ -90,83 +78,6 @@ var ConanAbout = {
             'contribute_hof_coders': "Application coding",
             'contribute_hof_data': "Data inputs",
             'contribute_hof_test': "Tests and rereadings"
-        }
-    },
-    
-    _origins: {
-        'fr': {
-            'corebox': "Boîte de base",
-            'corebox-short': "Boîte de base",
-            'stretchgoal': "Boîte de base étendue \"Barbarian\"",
-            'stretchgoal-short': "Boîte Barbarian", 
-            'king': "Boîte de base étendue \"King\"",
-            'king-short': "Boîte King",
-            
-            'nordheim': "Extension Nordheim",
-            'nordheim-short': "Nordheim",
-            'khitai': "Extension Khitaï",
-            'khitai-short': "Khitaï",
-            'stygia': "Extension Stygie",
-            'stygia-short': "Stygie",
-            
-            'crossbowmen': "Arbalétriers",
-            'blackdragons': "Dragons Noirs",
-            'blackones': "Hommes Noirs",
-            'kushwitchhunters': "Chasseurs de sorcières Kushites",
-            'valvan': "Valkyrie Vanir",
-            'yoy': "Yogah de Yag",
-            'baalpteor': "Baal-Pteor",
-            'demonearth': "Démon de la Terre",
-            'dragon': "Dragon",
-            'giantwolves': "Loups géants",
-            'sabretoothtiger': "Tigre à dents de sabre",
-            
-            'xcbox': "Xavier Colette Box",
-            'bbox': "Brom Box",
-            'ppbox': "Paolo Parente Box",
-
-            'campaignbook': "Livre de Campagne - La légende du diable d'Airain",
-            'setbook': "Livre de Set",
-
-            'doorpack': "Pack de portes",
-            'adventurepack': "Pack aventure"
-        },
-        'en': {
-            'corebox': "Core box", 
-            'corebox-short': "Core box", 
-            'stretchgoal': "\"Barbarian\" expanded core box",
-            'stretchgoal-short': "Barbarian box",
-            'king': "King box",
-            'king-short': "\"King\" expanded core box",
-            
-            'nordheim': "Nordheim expansion",
-            'nordheim-short': "Nordheim",
-            'khitai': "Khitaï expansion",
-            'khitai-short': "Khitaï",
-            'stygia': "Stygia expansion",
-            'stygia-short': "Stygia",
-            
-            'crossbowmen': "Crossbowmen",
-            'blackdragons': "Black dragons",
-            'blackones': "Black ones",
-            'kushwitchhunters': "Kushites witch-hunters",
-            'valvan': "Valkyrie Vanir",
-            'yoy': "Yogah of Yag",
-            'baalpteor': "Baal-Pteor",
-            'demonearth': "Demon of the earth",
-            'dragon': "Dragon",
-            'giantwolves': "Giant wolves",
-            'sabretoothtiger': "Sabretooth tiger",
-            
-            'xcbox': "Xavier Colette Box",
-            'bbox': "Brom Box",
-            'ppbox': "Paolo Parente Box",
-
-            'campaignbook': "Campaign book - The Devil in Iron",
-            'setbook': "Book of Set",
-
-            'doorpack': "Pack de portes",
-            'adventurepack': "Pack aventure"
         }
     },
     
@@ -307,58 +218,53 @@ var ConanAbout = {
     {
         $("nav.menu input")[0].checked = false;
         
+        var s = "";
+        for (var i in Encyclopedia.expansions.types)
+        {
+            var expansionType = Encyclopedia.expansions.types[i];
+            
+            s += "<fieldset><legend>" + expansionType.text[Language] + "</legend>";
+
+            if (expansionType.single)
+            {
+                s += "<select id=\"" + expansionType.id + "\" name=\"" + expansionType.id + "\">";
+            }
+
+            for (var j in Encyclopedia.expansions.list)
+            {
+                var expansion = Encyclopedia.expansions.list[j];
+                if (expansion.type == expansionType.id)
+                {
+                    if (expansionType.single)
+                    {
+                        s += "<option value=\"" + expansion.id + "\">" + expansion.title[Language] + "</option>"
+                    }
+                    else
+                    {
+                        s += "<div>" 
+                           +    "<input type=\"checkbox\" name=\"" + expansion.id + "\"\ id=\"" + expansion.id + "\">" 
+                           +    "<label for=\"" + expansion.id + "\">" 
+                           +        expansion.title[Language] 
+                           +    "</label>" 
+                           + "</div>";
+                    }
+                }
+            }
+            
+            if (expansionType.single)
+            {
+                s += "</select>";
+            }
+            
+            s += "</fieldset>";
+        }
+        
         Nav.dialog(ConanAbout._i18n[Language].custom,
             "<div class=\"custom\">"
             +       "<div>" + ConanAbout._i18n[Language].custom_text + "</div>"
-            
             +       "<div class=\"custom-wrap\">"
-            
-            +       "<fieldset><legend>" + ConanAbout._i18n[Language].custom_box + "</legend>"
-            +           "<select id=\"custom-box\" name=\"custom-box\">"
-            +               "<option value=\"corebox\">" + ConanAbout._origins[Language].corebox + "</option>"
-            +               "<option value=\"stretchgoal\">" + ConanAbout._origins[Language].stretchgoal + "</option>"
-            +               "<option value=\"king\">" + ConanAbout._origins[Language].king + "</option>"
-            +           "</select>"
-            +       "</fieldset>"
-
-            +       "<fieldset><legend>" + ConanAbout._i18n[Language].custom_regionalexts + "</legend>"
-            +           "<div><input type=\"checkbox\" name=\"stygia\"\ id=\"stygia\"><label for=\"stygia\">" + ConanAbout._origins[Language].stygia + "</label></div>"
-            +           "<div><input type=\"checkbox\" name=\"nordheim\"\ id=\"nordheim\"><label for=\"nordheim\">" + ConanAbout._origins[Language].nordheim + "</label></div>"
-            +           "<div><input type=\"checkbox\" name=\"khitai\"\ id=\"khitai\"><label for=\"khitai\">" + ConanAbout._origins[Language].khitai + "</label></div>"
-            +       "</fieldset>"
-
-            +       "<fieldset><legend>" + ConanAbout._i18n[Language].custom_otherexts + "</legend>"
-            +           "<div><input type=\"checkbox\" name=\"crossbowmen\"\ id=\"crossbowmen\"\><label for=\"crossbowmen\">" + ConanAbout._origins[Language].crossbowmen + "</label></div>"
-            +           "<div><input type=\"checkbox\" name=\"blackdragons\"\ id=\"blackdragons\"\><label for=\"blackdragons\">" + ConanAbout._origins[Language].blackdragons + "</label></div>"
-            +           "<div><input type=\"checkbox\" name=\"blackones\"\ id=\"blackones\"\><label for=\"blackones\">" + ConanAbout._origins[Language].blackones + "</label></div>"
-            +           "<div><input type=\"checkbox\" name=\"kushwitchhunters\"\ id=\"kushwitchhunters\"\><label for=\"kushwitchhunters\">" + ConanAbout._origins[Language].kushwitchhunters + "</label></div>"
-            +           "<div><input type=\"checkbox\" name=\"valvan\"\ id=\"valvan\"\><label for=\"valvan\">" + ConanAbout._origins[Language].valvan + "</label></div>"
-            +           "<div><input type=\"checkbox\" name=\"yoy\"\ id=\"yoy\"\><label for=\"yoy\">" + ConanAbout._origins[Language].yoy + "</label></div>"
-            +           "<div><input type=\"checkbox\" name=\"baalpteor\"\ id=\"baalpteor\"\><label for=\"baalpteor\">" + ConanAbout._origins[Language].baalpteor + "</label></div>"
-            +           "<div><input type=\"checkbox\" name=\"demonearth\"\ id=\"demonearth\"\><label for=\"demonearth\">" + ConanAbout._origins[Language].demonearth + "</label></div>"
-            +           "<div><input type=\"checkbox\" name=\"dragon\"\ id=\"dragon\"\><label for=\"dragon\">" + ConanAbout._origins[Language].dragon + "</label></div>"
-            +           "<div><input type=\"checkbox\" name=\"giantwolves\"\ id=\"giantwolves\"\><label for=\"giantwolves\">" + ConanAbout._origins[Language].giantwolves + "</label></div>"
-            +           "<div><input type=\"checkbox\" name=\"sabretoothtiger\"\ id=\"sabretoothtiger\"\><label for=\"sabretoothtiger\">" + ConanAbout._origins[Language].sabretoothtiger + "</label></div>"
-            +       "</fieldset>"
-
-            +       "<fieldset><legend>" + ConanAbout._i18n[Language].custom_books + "</legend>"
-            +           "<div><input type=\"checkbox\" name=\"campaignbook\"\ id=\"campaignbook\"\><label for=\"campaignbook\">" + ConanAbout._origins[Language].campaignbook + "</label></div>"
-            +           "<div><input type=\"checkbox\" name=\"setbook\"\ id=\"setbook\"\><label for=\"setbook\">" + ConanAbout._origins[Language].setbook + "</label></div>"
-            +       "</fieldset>"
-
-            +       "<fieldset><legend>" + ConanAbout._i18n[Language].custom_artists + "</legend>"
-            +           "<div><input type=\"checkbox\" name=\"xcbox\"\ id=\"xcbox\"\><label for=\"xcbox\">" + ConanAbout._origins[Language].xcbox + "</label></div>"
-            +           "<div><input type=\"checkbox\" name=\"bbox\"\ id=\"bbox\"\><label for=\"bbox\">" + ConanAbout._origins[Language].bbox + "</label></div>"
-            +           "<div><input type=\"checkbox\" name=\"ppbox\"\ id=\"ppbox\"\><label for=\"ppbox\">" + ConanAbout._origins[Language].ppbox + "</label></div>"
-            +       "</fieldset>"
-
-            +       "<fieldset><legend>" + ConanAbout._i18n[Language].custom_decoration + "</legend>"
-            +           "<div><input type=\"checkbox\" name=\"doorpack\"\ id=\"doorpack\"\><label for=\"doorpack\">" + ConanAbout._origins[Language].doorpack + "</label></div>"
-            +           "<div><input type=\"checkbox\" name=\"adventurepack\"\ id=\"adventurepack\"\><label for=\"adventurepack\">" + ConanAbout._origins[Language].adventurepack + "</label></div>"
-            +       "</fieldset>"
-            
+            +           s
             +       "</div>"
-
             + "</div>",
             
             function() {

@@ -1,0 +1,325 @@
+{
+    "types": [
+        {
+            "id": "custom-box",
+            "text": {
+                "fr": "Boîte de jeu",
+                "en": "Game box"
+            },
+            "single": true
+        }, {
+            "id": "regional",
+            "text": {
+                "fr": "Extensions régionales",
+                "en": "Regional expansions"
+            },
+            "single": false
+        }, {
+            "id": "other",
+            "text": {
+                "fr": "Autres extensions",
+                "en": "Other expansions"
+            },
+            "single": false
+        }, {
+            "id": "books",
+            "text": {
+                "fr": "Livres",
+                "en": "Books"
+            },
+            "single": false
+        }, {
+            "id": "artists",
+            "text": {
+                "fr": "Extensions d'artistes",
+                "en": "Artists expansions"
+            },
+            "single": false
+        }, {
+            "id": "decoration",
+            "text": {
+                "fr": "Décors",
+                "en": "Decorations"
+            },
+            "single": false
+        }
+    ],
+
+    "list": [
+        {
+            "id": "corebox",
+            "type": "custom-box",
+            "title": {
+                "fr": "Boîte de base",
+                "en": "Core box"
+            },
+            "short": {
+                "fr": "Boîte de base",
+                "en": "Core box"
+            }
+        }, {
+            "id": "stretchgoal",
+            "type": "custom-box",
+            "title": {
+                "fr": "Boîte de base étendue \"Barbarian\"",
+                "en": "\"Barbarian\" expanded core box"
+            },
+            "short": {
+                "fr": "Boîte Barbarian",
+                "en": "Barbarian box"
+            }
+        }, {
+            "id": "king",
+            "type": "custom-box",
+            "title": {
+                "fr": "Boîte de base étendue \"King\"",
+                "en": "\"King\" expanded core box"
+            },
+            "short": {
+                "fr": "Boîte King",
+                "en": "King box"
+            }
+        }, 
+        
+        {
+            "id": "stygia",
+            "type": "regional",
+            "title": {
+                "fr": "Extension Stygie",
+                "en": "Stygia expansion"
+            },
+            "short": {
+                "fr": "Stygie",
+                "en": "Stygia"
+            }
+        }, {
+            "id": "nordheim",
+            "type": "regional",
+            "title": {
+                "fr": "Extension Nordheim",
+                "en": "Nordheim expansion"
+            },
+            "short": {
+                "fr": "Nordheim",
+                "en": "Nordheim"
+            }
+        }, {
+            "id": "khitai",
+            "type": "regional",
+            "title": {
+                "fr": "Extension Khitaï",
+                "en": "Khitaï expansion"
+            },
+            "short": {
+                "fr": "Khitaï",
+                "en": "Khitaï"
+            }
+        }, 
+        
+        {
+            "id": "crossbowmen",
+            "type": "other",
+            "title": {
+                "fr": "Arbalétriers",
+                "en": "Crossbowmen"
+            },
+            "short": {
+                "fr": "Arbalétriers",
+                "en": "Crossbowmen"
+            }
+        }, {
+            "id": "blackdragons",
+            "type": "other",
+            "title": {
+                "fr": "Dragons Noirs",
+                "en": "Black dragons"
+            },
+            "short": {
+                "fr": "Dragons Noirs",
+                "en": "Black dragons"
+            }
+        }, {
+            "id": "blackones",
+            "type": "other",
+            "title": {
+                "fr": "Hommes Noirs",
+                "en": "Black ones"
+            },
+            "short": {
+                "fr": "Hommes Noirs",
+                "en": "Black ones"
+            }
+        }, {
+            "id": "kushwitchhunters",
+            "type": "other",
+            "title": {
+                "fr": "Chasseurs de sorcières Kushites",
+                "en": "Kushites witch-hunters"
+            },
+            "short": {
+                "fr": "Chasseurs de sorcières Kushites",
+                "en": "Kushites witch-hunters"
+            }
+        }, {
+            "id": "valvan",
+            "type": "other",
+            "title": {
+                "fr": "Valkyrie Vanir",
+                "en": "Valkyrie Vanir"
+            },
+            "short": {
+                "fr": "Valkyrie Vanir",
+                "en": "Valkyrie Vanir"
+            }
+        }, {
+            "id": "yoy",
+            "type": "other",
+            "title": {
+                "fr": "Yogah de Yag",
+                "en": "Yogah of Yag"
+            },
+            "short": {
+                "fr": "Yogah de Yag",
+                "en": "Yogah of Yag"
+            }
+        }, {
+            "id": "baalpteor",
+            "type": "other",
+            "title": {
+                "fr": "Baal-Pteor",
+                "en": "Baal-Pteor"
+            },
+            "short": {
+                "fr": "Baal-Pteor",
+                "en": "Baal-Pteor"
+            }
+        }, {
+            "id": "demonearth",
+            "type": "other",
+            "title": {
+                "fr": "Démon de la Terre",
+                "en": "Demon of the earth"
+            },
+            "short": {
+                "fr": "Démon de la Terre",
+                "en": "Demon of the earth"
+            }
+        }, {
+            "id": "dragon",
+            "type": "other",
+            "title": {
+                "fr": "Dragon",
+                "en": "Dragon"
+            },
+            "short": {
+                "fr": "Dragon",
+                "en": "Dragon"
+            }
+        }, {
+            "id": "giantwolves",
+            "type": "other",
+            "title": {
+                "fr": "Loups géants",
+                "en": "Giant wolves"
+            },
+            "short": {
+                "fr": "Loups géants",
+                "en": "Giant wolves"
+            }
+        }, {
+            "id": "sabretoothtiger",
+            "type": "other",
+            "title": {
+                "fr": "Tigre à dents de sabre",
+                "en": "Sabretooth tiger"
+            },
+            "short": {
+                "fr": "Tigre à dents de sabre",
+                "en": "Sabretooth tiger"
+            }
+        }, 
+        
+        {
+            "id": "campaignbook",
+            "type": "books",
+            "title": {
+                "fr": "Livre de Campagne - La légende du diable d'Airain",
+                "en": "Campaign book - The Devil in Iron"
+            },
+            "short": {
+                "fr": "Livre de Campagne - La légende du diable d'Airain",
+                "en": "Campaign book - The Devil in Iron"
+            }
+        }, {
+            "id": "setbook",
+            "type": "books",
+            "title": {
+                "fr": "Livre de Set",
+                "en": "Book of Set"
+            },
+            "short": {
+                "fr": "Livre de Set",
+                "en": "Book of Set"
+            }
+        }, 
+        
+        {
+            "id": "xcbox",
+            "type": "artists",
+            "title": {
+                "fr": "Xavier Colette Box",
+                "en": "Xavier Colette Box"
+            },
+            "short": {
+                "fr": "Xavier Colette Box",
+                "en": "Xavier Colette Box"
+            }
+        }, {
+            "id": "bbox",
+            "type": "artists",
+            "title": {
+                "fr": "Brom Box",
+                "en": "Brom Box"
+            },
+            "short": {
+                "fr": "Brom Box",
+                "en": "Brom Box"
+            }
+        }, {
+            "id": "ppbox",
+            "type": "artists",
+            "title": {
+                "fr": "Paolo Parente Box",
+                "en": "Paolo Parente Box"
+            },
+            "short": {
+                "fr": "Paolo Parente Box",
+                "en": "Paolo Parente Box"
+            }
+        }, 
+        
+        {
+            "id": "doorpack",
+            "type": "decoration",
+            "title": {
+                "fr": "Pack de portes",
+                "en": "Doors pack"
+            },
+            "short": {
+                "fr": "Pack de portes",
+                "en": "Doors pack"
+            }
+        }, {
+            "id": "adventurepack",
+            "type": "decoration",
+            "title": {
+                "fr": "Pack aventure",
+                "en": "Adventure pack"
+            },
+            "short": {
+                "fr": "Pack aventure",
+                "en": "Adventure pack"
+            }
+        }
+    ]
+}

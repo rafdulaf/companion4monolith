@@ -259,14 +259,14 @@ var CardEquipment = {
                    + "</div>";
     
             code += "<div class=\"skills level" + level + "\">"
-                     + "<img class=\"background-skills\" src=\"/resources/img/skills/" + card.skills[0] + ".png\"/>"
+                     + "<img class=\"background-skills\" src=\"" + CardEquipment._getSkillImage(card.skills[0]) + "\"/>"
                    + "</div>";
             level++;
             
             if (card.skills && card.skills[1] != 'none')
             {
                 code += "<div class=\"skills level" + level + "\">"
-                     + "<img class=\"background-skills\" src=\"/resources/img/skills/" + card.skills[1] + ".png\"/>"
+                     + "<img class=\"background-skills\" src=\"" + CardEquipment._getSkillImage(card.skills[1]) + "\"/>"
                    + "</div>";
                 level++;
             }
@@ -279,6 +279,20 @@ var CardEquipment = {
 
         code += "</div>";
         return code;
+    },
+    
+    _getSkillImage: function(id)
+    {
+        for (var i in Encyclopedia.skills.list)
+        {
+            var skill = Encyclopedia.skills.list[i];
+            if (skill.type + '/' + skill.id == id)
+            {
+                return skill.image;
+            }
+        }
+        console.warn("The skill " + id + " is not referenced");
+        return undefined;
     },
     
     add: function(card)
@@ -302,19 +316,24 @@ var CardEquipment = {
         function _skills()
         {
             var s = "";
-            for (var i in ConanRules._allSkills)
+            
+            
+            for (var i in Encyclopedia.skills.types)
             {
-                var skills = ConanRules._allSkills[i];
-                s += "<optgroup label=\"" + ConanRules._i18n[Language]['skills_' + i] + "\">";
+                var type = Encyclopedia.skills.types[i];
                 
-                for (var j = 0; j < skills.length; j++)
+                s += "<optgroup label=\"" + type.title[Language] + "\">";
+
+                for (var j in Encyclopedia.skills.list)
                 {
-                    var skill = skills[j];
-                    s += "<option value=\"" + i  + "/" + skill + "\">" + ConanRules._i18n[Language]['skills_' + i + '_' + skill + '_title'] + "</option>";
+                    var skill = Encyclopedia.skills.list[j];
+                    if (skill.type == type.id)
+                    {
+                        s += "<option value=\"" + type.id  + "/" + skill.id + "\">" + skill.title[Language] + "</option>";
+                    }
                 }
-                
-                s += "</optgroup>";
             }
+
             return s;
         }
         

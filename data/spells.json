@@ -1,0 +1,37 @@
+{
+    "list": [
+        {
+            "id": "teleportation",
+            "title": {
+                "fr": "Téléportation",
+                "en": "Teleportation"
+            },
+            "text": {
+                "fr": "",
+                "en": ""
+            },
+            "clarification": {
+                "fr": "Le lanceur de sort n'est pas soumis au phénomène de gêne ni à la compétence Bloqueur.",
+                "en": "A character who casts this spell is not affected by hindering or by Blocking to move."
+            },
+            
+            "cost": "0",
+            "saturation": "4",
+            "explosion": false,
+            "reaction": false,
+            
+            "image": "data/spells/img/teleportation.png",
+            "origin": ["corebox"],
+            
+            "imageStyle": {
+                "imageLocation": {"x": "0", "y": "0"},
+                "imageZoom": "100",
+                "imageRotation": "0"
+            },
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        }
+    ]
+}
