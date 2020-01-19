@@ -1,0 +1,431 @@
+var ConanRules = {
+    _i18n: {
+        'fr': {
+            'menu': "Règles",
+            
+            'skills': "Compétences",
+            'spell_clarification': "(Clarification du sort) ",
+            
+            'viewer-search': "Recherche dans le document",
+            'viewer-download': "Télécharger le document",
+            'viewer-zoomin': "Zoomer",
+            'viewer-zoomout': "Dézoomer",
+            
+            'search': "Rechercher",
+            'search-input': "Mot clé",
+            'search-inputPh': "Entrez un mot clé à chercher (3 caractères minimum)",
+            'search-loose': "Aucun résultat ne correspond au mot clé saisi",
+            
+            'copyright': "Les règles proposés sont basées sur les règles officielles et leurs compléments mais ont été en partie reformulées.",
+            
+            'heroes': "Livre des héros",
+            'heroesPDF': "http://www.monolithedition.com/download/rules/CONAN_Heroesrulebook_V2_FR_SD.pdf",
+            'overlord': "Livre de l'Overlord",
+            'overlordPDF': "http://www.monolithedition.com/download/rules/CONAN_King_Overlordbook_V2_FR_SD.pdf"
+        },
+        'en': {
+            'menu': "Rules",
+
+            'skills': "Skills",
+            'spell_clarification': "(Spell clarification) ",
+
+            'viewer-search': "Search in the document",
+            'viewer-download': "Download the document",
+            'viewer-zoomin': "Zoom in",
+            'viewer-zoomout': "Zoom out",
+
+            'search': "Search",
+            'search-input': "Keyword",
+            'search-inputPh': "Enter the keyword to search (3 characters minimum)",
+            'search-loose': "No result is matching the entered keyword",
+            
+            'copyright': "The proposed rules are based upon the official rules and their complements but were partially rewriten.",
+            
+            'heroes': "Heroes's book",
+            'heroesPDF': "http://www.monolithedition.com/download/rules/CONAN_Heroesrulebook_V2_US_SD.pdf",
+            'overlord': "Overlord's book",
+            'overlordPDF': "http://www.monolithedition.com/download/rules/CONAN_King_Overlordbook_V2_US_SD.pdf"
+        }
+    },
+    
+    _allSkills: {
+        'attack' : ['reach', 'ambidextrous', 'constriction', 'circular_strike', 'precision_strike', 'attack_from_beyond', 'counterattack', 'elite_shooter', 'precision_shot'],
+        'movement': ['blocking', 'evasive', 'swimming', 'intangible', 'wall_wrecker', 'web_projection', 'leap', 'feline_grace', 'flying', 'climb'],
+        'miscellaneous': ['alchemy', 'concentration', 'lock_picking', 'fascination', 'leadership', 'horror', 'jinx', 'poison', 'support'],
+        'defense': ['sacrifice', 'bodyguard', 'untouchable', 'protected'],
+        'magic': ['spell_caster', 'teleportation']
+    },
+    
+    init: function()
+    {
+        ConanRules._lastSearch = "";
+        
+        Nav.addIcon(ConanRules._i18n[Language].menu, "rules-icon", "rules");
+        
+        Nav.createTabs('rules', [
+            {label: ConanRules._i18n[Language].skills, id: "skills"},
+            {label: ConanRules._i18n[Language].heroes, id: "heroes"},
+            {label: ConanRules._i18n[Language].overlord, id: "overlord"}
+        ], ConanRules._onChange);
+        
+        ConanRules._initSkills();
+
+        $("#heroes").addClass("zoom0 rules-viewer").html("<div>" + this._createViewer("rules/heroes/" + Language + "/book", 24) + "</div>");
+        ConanRules._attachEvents("#heroes");
+        $("#overlord").addClass("zoom0 rules-viewer").html("<div>" + this._createViewer("rules/overlord/" + Language + "/book", 14) + "</div>");
+        ConanRules._attachEvents("#overlord");
+        
+        Nav.addAction("rules", ConanRules._i18n[Language]['viewer-zoomin'], "rules-zoomin-icon", "zoomin", ConanRules._zoomIn);
+        Nav.addAction("rules", ConanRules._i18n[Language]['viewer-zoomout'], "rules-zoomout-icon", "zoomout", ConanRules._zoomOut);
+        Nav.addAction("rules", ConanRules._i18n[Language]['viewer-search'], "rules-search-icon", "search", ConanRules._search);
+        Nav.addAction("rules", ConanRules._i18n[Language]['viewer-download'], "rules-download-icon", "download", ConanRules._download);
+        ConanRules._onChange();
+
+        ConanAbout.addCopyright(ConanRules._i18n[Language].menu, ConanRules._i18n[Language].copyright);
+    },
+    
+    _download: function()
+    {
+        switch (ConanRules._currentSlide)
+        {
+            case 0:
+                window.open(Encyclopedia.skills.link[Language]);
+                break;
+            case 1:
+                window.open(ConanRules._i18n[Language].heroesPDF);
+                break;
+            case 2:
+                window.open(ConanRules._i18n[Language].overlordPDF);
+                break;
+        }
+    },
+    
+    _search: function()
+    {
+        Nav.dialog(ConanRules._i18n[Language].search,
+            "<div id='rulessearch' class='rulessearch'>"
+            +   "<div class='form'>"
+            +       "<label for='rulessearch'>" + ConanRules._i18n[Language]['search-input'] + "</label>"
+            +       "<input type='text' id='rulessearch' onkeyup='ConanRules._doSearch()' onchange='ConanRules._doSearch()' placeholder='" + ConanRules._i18n[Language]['search-inputPh'] + "'/>"
+            +   "</div>"
+            +   "<div class='results'>"
+            +   "</div>"
+            + "</div>"
+        );
+        $("#rulessearch input").focus()[0].value = ConanRules._lastSearch;
+        
+        // loading keywords
+        if (!ConanRules.keywords || !ConanRules.keywords[ConanRules._currentSlide])
+        {
+            $("#rulessearch input").prop('disabled', true);
+            ConanRules.keywords = ConanRules.keywords || {};
+            $.getJSON(Version + "/rules/" + (ConanRules._currentSlide == 1 ? "heroes" : "overlord") + "/" + Language + "/book/search.json", null, function(data) { ConanRules.keywords[ConanRules._currentSlide] = data; $("#rulessearch input").prop('disabled', false).focus(); ConanRules._doSearch(true); });
+        }
+        else
+        {
+            ConanRules._doSearch(true);
+        }
+    },
+    
+    _deemphasize: function (s)
+    {
+        s = s.replace(new RegExp(/[ÀÁÂÃÄÅ]/g),"A");
+        s = s.replace(new RegExp(/[àáâãäå]/g),"a");
+        s = s.replace(new RegExp(/Æ/g),"AE");
+        s = s.replace(new RegExp(/æ/g),"ae");
+        s = s.replace(new RegExp(/Ç/g),"C");
+        s = s.replace(new RegExp(/ç/g),"c");
+        s = s.replace(new RegExp(/[ÈÉÊË]/g),"E");
+        s = s.replace(new RegExp(/[èéêë]/g),"e");
+        s = s.replace(new RegExp(/[ÌÍÎÏ]/g),"I");
+        s = s.replace(new RegExp(/[ìíîï]/g),"i");
+        s = s.replace(new RegExp(/Ñ/g),"N");
+        s = s.replace(new RegExp(/ñ/g),"n");
+        s = s.replace(new RegExp(/[ÒÓÔÕÖ]/g),"O");
+        s = s.replace(new RegExp(/[òóôõö]/g),"o");
+        s = s.replace(new RegExp(/Œ/g),"OE");
+        s = s.replace(new RegExp(/œ/g),"oe");
+        s = s.replace(new RegExp(/[ÙÚÛÜ]/g),"U");
+        s = s.replace(new RegExp(/[ùúûü]/g),"u");
+        s = s.replace(new RegExp(/[ÝŸ]/g),"y");
+        s = s.replace(new RegExp(/[ýÿ]/g),"y");
+
+        return s.toUpperCase();
+    },
+    
+    _doSearch: function(force)
+    {
+        var searchTerm = $("#rulessearch input")[0].value;
+        if (ConanRules._lastSearch == searchTerm && force !== true)
+        {
+            return;
+        }
+        
+        ConanRules._lastSearch = searchTerm;
+        searchTerm = ConanRules._deemphasize(searchTerm);
+
+        $("#rulessearch input").attr('data-last-search', searchTerm);
+        if ((searchTerm || '').length < 3)
+        {
+            $("#rulessearch .results").html("");
+            return;
+        }
+        
+        var textContent = ConanRules.keywords[ConanRules._currentSlide];
+        
+        var results = "";
+        for (var i = 0; i < textContent.length; i++) 
+        {
+            var pageContent = ConanRules._deemphasize(textContent[i]);
+            var index = -1;
+            var pageHasResults = false;
+
+            do 
+            {
+                index = pageContent.indexOf(searchTerm, index + 1);
+                if (index >= 0) 
+                {
+                    var foundExact = textContent[i].substring(index, index + searchTerm.length); 
+                    
+                    var SNIPPET_LENGTH = 120;
+                    var snippetStart = index >= SNIPPET_LENGTH ? index - SNIPPET_LENGTH : 0;
+                    var snippetEnd = index + searchTerm.length < textContent[i].length - SNIPPET_LENGTH ? index + searchTerm.length + SNIPPET_LENGTH : textContent[i].length;
+                    
+                    var prefix = snippetStart > 0 ? "..." : "";
+                    var suffix = snippetEnd < pageContent.length ? "..." : "";
+                    
+                    var guessRatioY = (index / pageContent.length) * 0.8 + 0.1;
+
+                    if (!pageHasResults) results += "<li><a href='#' onclick='ConanRules._endPageSearch(this, arguments[0], " + (i+1) + ")'><img src=\"" + Version + "/" + "rules/" + (ConanRules._currentSlide == 1 ? "heroes" : "overlord") + "/" + Language + "/book/thumbnails/" + (i+1) + ".jpg\"/><br/>Page " + (i+1) + "</a><ul>";
+                    results += "<li>" 
+                                    + "<a href='#' onclick='ConanRules._endSearch(" + (i+1) +", 0, " + guessRatioY + ")'>" 
+                                        + prefix + textContent[i].substr(snippetStart, snippetEnd - snippetStart).replace(foundExact, '<em>' + foundExact + '</em>') + suffix 
+                                    + "</a>" 
+                             + "</li>";
+                    pageHasResults = true;
+                }
+            } while (index !== -1);
+            
+            if (pageHasResults) results += "</ul></li>";
+        }
+        
+        if (results)
+        {
+            $("#rulessearch .results").html("<ul>" + results + "</ul>");
+        }
+        else
+        {
+            $("#rulessearch .results").html(ConanRules._i18n[Language]['search-loose'])
+        }
+    },
+    
+    _endPageSearch: function(me, e, page)
+    {
+        var imgLocation = $(me).offset(); 
+        var ratioX = (e.pageX - imgLocation.left) / $(me).width();
+        var ratioY = (e.pageY - imgLocation.top) / $(me).height();
+
+        ConanRules._endSearch(page, ratioX, ratioY)
+    },
+    
+    _endSearch: function(page, ratioX, ratioY)
+    {
+        var div = $(["#heroes", "#overlord"][ConanRules._currentSlide - 1]);
+        if (!div.is("zoom3") && !div.is("zoom2"))
+        {
+            div.removeClass("zoom1").removeClass("zoom0").addClass("zoom2");
+        }
+        
+        ConanRules._scrollTo(page, ratioX, ratioY);
+        
+        Nav.closeDialog(); 
+    },
+    
+    _attachEvents: function(selector)
+    {
+        // Attach thumbnails events
+        $(selector + " .thumbnails img").on('click', function(e) { 
+            var imgLocation = $(this).offset(); 
+            var ratioX = (e.pageX - imgLocation.left) / $(this).width();
+            var ratioY = (e.pageY - imgLocation.top) / $(this).height();
+            ConanRules._zoom(1, $(this).attr('data-page'), ratioX, ratioY); 
+        });
+            
+       // Attach iframe events
+       $(selector + " iframe").on('load', function() {
+            var iframe = this;
+            var page = $(iframe).attr('data-page');
+            $(iframe.contentDocument).on('click', function(e) {
+                var body = $(e.target.ownerDocument.body);
+                var zoom = body.css('zoom') || 1.0;
+                var ratioX = e.pageX / zoom / body.width();
+                var ratioY = e.pageY / zoom / body.height();
+                
+                ConanRules._zoom(1, page, ratioX, ratioY);
+            });
+       });
+    },
+    
+    _onChange: function(event, slick)
+    {
+        var slide = slick && slick.currentSlide || 0;
+        ConanRules._currentSlide = slide;
+        
+        if (slide == 0)
+        {
+            Nav.hideAction("rules", "zoomin");
+            Nav.hideAction("rules", "zoomout");
+            Nav.hideAction("rules", "search");
+        }
+        else
+        {
+            Nav.showAction("rules", "zoomin");
+            Nav.showAction("rules", "zoomout");
+            Nav.showAction("rules", "search");
+        }
+    },
+    
+    _createViewer: function(url, size)
+    {
+        var s = "";
+        
+        // thumbnails
+        s += "<div class='thumbnails'>"
+        for (var i = 0; i <= size; i+=2)
+        {
+            s += "<div>"
+            if (i > 0) s += "<img data-page='" + i + "' src='" + Version + "/" + url + "/thumbnails/" + i + ".jpg'/>"
+            if (i < size) s += "<img data-page='" + (i+1) + "' src='" + Version + "/" + url + "/thumbnails/" + (i+1) + ".jpg'/>"
+            s += "</div>"
+        }
+        s += "</div>"
+        
+        // pages
+        for (var i = 1; i <= size; i++)
+        {
+            s += "<iframe data-page='" + i + "' src=\"" + Version + "/" + url + "/" + i + ".html\"></iframe>";
+        }
+        
+        return s;
+    },
+    
+    _zoomIn: function()
+    {
+        ConanRules._zoom(1);
+    },
+    
+    _zoomOut: function()
+    {
+        ConanRules._zoom(-1);
+    },
+
+    _scrollTo: function(specificPage, ratioX, ratioY)
+    {
+        var div = $(["#heroes", "#overlord"][ConanRules._currentSlide - 1]);
+        
+        ratioX = ratioX || 0;
+        ratioY = ratioY || 0;
+        
+        var iframe = div.find("iframe[data-page=" + specificPage + "]");
+        
+        var top = div.scrollTop()
+                  + iframe.offset().top
+                  - div.offset().top
+                  + ratioY * iframe.height()
+                  - 0.5 * div.height();
+
+        var left = div.scrollLeft()
+                  + iframe.offset().left
+                  - div.offset().left
+                  + ratioX * iframe.width()
+                  - 0.5* div.width();
+
+        div.scrollTop(top);
+        div.scrollLeft(left);
+    },
+    
+    _zoom: function(direction, specificPage, ratioX, ratioY)
+    {
+        var div = $(["#heroes", "#overlord"][ConanRules._currentSlide - 1]);
+        
+        var top = div.scrollTop();
+        var height = div.height();
+        
+        var fullHeight = div.children("div").height();
+        
+        var cursor = (top + height/2) / fullHeight;
+        
+        if (div.hasClass("zoom0"))
+            div.removeClass("zoom0").addClass(direction == 1 ? "zoom1" : "zoom0")
+        else if (div.hasClass("zoom1"))
+            div.removeClass("zoom1").addClass(direction == 1 ? "zoom2" : "zoom0")
+        else if (div.hasClass("zoom2"))
+            div.removeClass("zoom2").addClass(direction == 1 ? "zoom3" : "zoom1")
+        else if (div.hasClass("zoom3"))
+            div.removeClass("zoom3").addClass(direction == 1 ? "zoom3" : "zoom2")
+            
+        var newFullHeight = div.children("div").height();
+        
+        if (specificPage)
+        {
+            ConanRules._scrollTo(specificPage, ratioX, ratioY);
+        }
+        else
+        {
+            // Try to auto stay at the same place
+            div.scrollTop(cursor * newFullHeight - height / 2);
+        }
+    },
+
+    _initSkills: function()
+    {
+        $("#skills").html("<div></div>");
+    
+        for (var i in Encyclopedia.skills.types)
+        {
+            var type = Encyclopedia.skills.types[i];
+
+            $('#skills > div').append("<div id='skills_" + type.id + "' class='skill-tab'><h2>" + type.title[Language] + "</h2></div>");
+
+            for (var j in Encyclopedia.skills.list)
+            {
+                var skill = Encyclopedia.skills.list[j];
+                if (skill.type == type.id)
+                {
+                    ConanRules._addSkill(skill.type, 
+                                         skill.image,
+                                         skill.title[Language],
+                                         skill.text[Language]);
+                }
+            }
+        }
+        
+        for (var i in Encyclopedia.spells.list)
+        {
+            var spell = Encyclopedia.spells.list[i];
+            if (spell.clarification)
+            {
+                ConanRules._addSkill('magic', 
+                                     spell.image,
+                                     spell.title[Language],
+                                     ConanRules._i18n[Language].spell_clarification + spell.clarification[Language]);
+            }
+        }
+    },
+    
+    _addSkill: function(type, image, title, text)
+    {
+        $('#skills_' + type).append("<div class='skills-skill'>"
+            +   "<img src='" + Version + "/" + image + "'/>"
+            +   "<div class='skills-title'>" + title + "</div>"
+            +   "<div class='skills-text'>" + ConanRules._replace(text) + "</div>"
+            +   "<div class='clear'></div>"
+            + "</div>");
+    },
+    
+    _replace: function(text)
+    {
+        text = text.replace(/\{(.*?)\}/g, "<img src='" + Version + "/resources/img/$1.png' class='rules-character'/>");
+        return text;
+    }
+}

@@ -3,14 +3,14 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
 
-		<link rel="apple-touch-icon" sizes="180x180" href="resources/favico/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="resources/favico/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="resources/favico/favicon-16x16.png">
-		<link rel="manifest" href="resources/favico/site.webmanifest">
-		<link rel="mask-icon" href="resources/favico/safari-pinned-tab.svg" color="#e64443">
-		<link rel="shortcut icon" href="resources/favico/favicon.ico">
+		<link rel="apple-touch-icon" sizes="180x180" href="0.7/resources/favico/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="0.7/resources/favico/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="0.7/resources/favico/favicon-16x16.png">
+		<link rel="manifest" href="0.7/resources/favico/site.webmanifest">
+		<link rel="mask-icon" href="0.7/resources/favico/safari-pinned-tab.svg" color="#e64443">
+		<link rel="shortcut icon" href="0.7/resources/favico/favicon.ico">
 		<meta name="msapplication-TileColor" content="#e64443">
-		<meta name="msapplication-config" content="resources/favico/browserconfig.xml">
+		<meta name="msapplication-config" content="0.7/resources/favico/browserconfig.xml">
 		<meta name="theme-color" content="#e64443">
 
 
@@ -18,24 +18,20 @@
         <link rel="stylesheet" href="vendors/css/slick-1.8.0.css"/>
         <link rel="stylesheet" href="vendors/css/slick-theme-1.8.0.css"/>
         <link rel="stylesheet" href="vendors/css/jquery-ui-1.12.1.min.css"/>
-        <style>
-		    .loading {
-		        position: absolute;
-		        top: 0;
-		        left: 0;
-		        right: 0;
-		        bottom: 0;
-		        z-index: 100000;
-		        background-color: #e64443;
-		    }
-		    .loaded {
-		        opacity: 0;
-			    transition-property: opacity;
-			    transition-duration: 0.5s;
-	 		    transition-timing-function: linear;
-	 		    pointer-events: none;
-		    }
-        </style>
+        <link rel="stylesheet" href="0.7/general/body.css"/>
+        <link rel="stylesheet" href="0.7/general/menu.css"/>
+        <link rel="stylesheet" href="0.7/general/nav.css"/>
+        <link rel="stylesheet" href="0.7/about/about.css"/>
+        <link rel="stylesheet" href="0.7/tutorial/tutorial.css"/>
+        <link rel="stylesheet" href="0.7/maps/maps.css"/>
+        <link rel="stylesheet" href="0.7/rules/rules.css"/>
+        <link rel="stylesheet" href="0.7/rules/viewer.css"/>
+        <link rel="stylesheet" href="0.7/studio/studio.css"/>
+        <link rel="stylesheet" href="0.7/studio/card_equipment/card_equipment.css"/>
+        <link rel="stylesheet" href="0.7/studio/card_spell/card_spell.css"/>
+        <link rel="stylesheet" href="0.7/studio/hero_sheet/hero_sheet.css"/>
+        <link rel="stylesheet" href="0.7/studio/tile/tile.css"/>
+        
         <script>
             Version = 0.7;
             // Preferences
@@ -45,59 +41,25 @@
             	'custom-box': 'king', 'stygia': true, 'nordheim': true, 'khitai': true
             };
         </script>
-
         <script src="vendors/js/jquery-3.1.1.js"></script>
         <script src="vendors/js/jquery-ui-1.12.1.min.js"></script>
         <script src="vendors/js/slick-1.8.0.js"></script>
-        <script>
-            var useragent = navigator.userAgent.toLowerCase();
-	        if (!/edge\/([0-9.]+)/.test(useragent) 
-	        		&& !/firefox/.test(useragent) 
-	        		&& !/chrome/.test(useragent)
-	        		&& !/safari/.test(useragent))
-	        {
-	        	jQuery(document).ready(function() {
-	        		document.body.innerHTML = "<style>html {background-color: #e64443; color: #FFF; } p {font-weight: bold; font-family: 'Moolbor'; font-size: 30px;} h1 {font-family: 'Crom'} td { vertical-align: center; text-align: center; } hr { width: 50px; }</style><table width='100%' height='100%'><tr><td><h1>Your browser is not supported</h1><p>Try using the last version of Chrome or Firefox for example<p><hr/><h1>Votre navigateur n'est pas supporte</h1><p>Essayez d'utiliser la dernière version de Chrome ou de Firefox par example.</p></td></tr></table>";
-	        	});
-	        }
-	        else
-	        {
-		        jQuery.getScript("resources/js/utils.js").done(function() {
-		        	Promise.all([
-	                    Utils.load.css('resources/css/body.css'),
-	
-	                    Utils.load.css('resources/css/menu.css'),
-	                    Utils.load.js('resources/js/menu.js'),
-	                    
-	                    Utils.load.css('resources/css/nav.css'),
-		        		Utils.load.js('resources/js/nav.js'),
-	                    
-	                    Utils.load.css('about/resources/css/about.css'),
-	                    Utils.load.js('about/resources/js/about.js'),
-	
-                        Utils.load.css('tutorial/resources/css/tutorial.css'),
-                        Utils.load.js('tutorial/resources/js/tutorial.js'),
 
-                        Utils.load.js('encyclopedia/resources/js/encyclopedia.js'),
+	    <script src="0.7/general/menu.js"></script>
+        <script src="0.7/general/nav.js"></script>
+        <script src="0.7/about/about.js"></script>
+        <script src="0.7/tutorial/tutorial.js"></script>
+        <script src="0.7/encyclopedia/encyclopedia.js"></script>
+        <script src="0.7/maps/maps.js"></script>
+        <script src="0.7/rules/rules.js"></script>
+        <script src="0.7/studio/studio.js"></script>
+        <script src="0.7/studio/card_equipment/card_equipment.js"></script>
+        <script src="0.7/studio/card_spell/card_spell.js"></script>
+        <script src="0.7/studio/hero_sheet/hero_sheet.js"></script>
+        <script src="0.7/studio/tile/tile.js"></script>
 
-	                    Utils.load.css('maps/resources/css/maps.css'),
-	                    Utils.load.js('maps/resources/js/maps.js'),
-	
-	                    Utils.load.css('rules/resources/css/rules.css'),
-                        Utils.load.css('rules/resources/css/viewer.css'),
-	                    Utils.load.js('rules/resources/js/rules.js'),
-	
-	                    Utils.load.css('studio/resources/css/studio.css'),
-	                    Utils.load.js('studio/resources/js/studio.js'),
-	                    Utils.load.css('studio/card_equipment/resources/css/card_equipment.css'),
-	                    Utils.load.js('studio/card_equipment/resources/js/card_equipment.js'),
-                        Utils.load.css('studio/card_spell/resources/css/card_spell.css'),
-                        Utils.load.js('studio/card_spell/resources/js/card_spell.js'),
-                        Utils.load.css('studio/hero_sheet/resources/css/hero_sheet.css'),
-                        Utils.load.js('studio/hero_sheet/resources/js/hero_sheet.js'),
-                        Utils.load.css('studio/tile/resources/css/tile.css'),
-                        Utils.load.js('studio/tile/resources/js/tile.js')
-		        	]).then(function() { return Encyclopedia.load() })
+        <script type="text/javascript">
+	        	Encyclopedia.load()
 		        	.then(function() {
 		        		Menu.initialize();
 		        		
@@ -108,17 +70,26 @@
 	                    Nav.addIcon('Scenarios', 'story', 'story'); $("#story").html("In construction...");
 	                    ConanStudio.init();
 	                    
-	                    
 	                    Nav.switchTo($('.nav > ul > li > a')[0]);
 	                    $(".loading").addClass('loaded');
 		        	});
-		        });
-	        }
-        
         </script>
 	<body>
+        <script>
+            var useragent = navigator.userAgent.toLowerCase();
+            if (!/edge\/([0-9.]+)/.test(useragent) 
+                    && !/firefox/.test(useragent) 
+                    && !/chrome/.test(useragent)
+                    && !/safari/.test(useragent))
+            {
+                document.write("<style>html {background-color: #e64443; color: #FFF; } p {font-weight: bold; font-family: 'Moolbor'; font-size: 30px;} h1 {font-family: 'Crom'} td { vertical-align: center; text-align: center; } hr { width: 50px; }</style><table width='100%' height='100%'><tr><td><h1>Your browser is not supported</h1><p>Try using the last version of Chrome or Firefox for example<p><hr/><h1>Votre navigateur n'est pas supporte</h1><p>Essayez d'utiliser la dernière version de Chrome ou de Firefox par example.</p></td></tr></table>");
+            }
+            else
+           	{
+                document.write("<div class=\"loading\"></div>")
+           	}
+        </script>
 	    <noscript>This website requires Javascript to be activated / Ce site nécessite l'utilisation de Javascript</noscript>
-        <div class="loading"></div>
 	
 		<style>
 		      .story:before {
