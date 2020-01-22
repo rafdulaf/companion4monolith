@@ -403,7 +403,7 @@ var ConanRules = {
         for (var i in Encyclopedia.spells.list)
         {
             var spell = Encyclopedia.spells.list[i];
-            if (spell.clarification)
+            if (spell.clarification && spell.clarification[Language] && ConanRules._hasExpansion(spell.origins))
             {
                 ConanRules._addSkill('magic', 
                                      spell.image,
@@ -412,6 +412,34 @@ var ConanRules = {
             }
         }
     },
+    
+    _hasExpansion: function(origins)
+    {
+        for (var i in Encyclopedia.expansions.types)
+        {
+            var type = Encyclopedia.expansions.types[i];
+            if (type.single)
+            {
+                if (origins.indexOf(Extensions[type.id]) != -1)
+                {
+                    return true;
+                }
+            }
+            else
+            {
+                for (var j in origins)
+                {
+                    var origin = origins[j];
+                    if (Extensions[origin])
+                    {
+                        return true;
+                    }
+                }
+            }
+        }
+        return false;
+    },
+
     
     _addSkill: function(type, image, title, text)
     {

@@ -68,6 +68,7 @@
 		        	    ConanMaps.init();
 	                    ConanRules.init();
 	                    Nav.addIcon('Scenarios', 'story', 'story'); $("#story").html("In construction...");
+                        Nav.addIcon('Scenarios', 'story2', 'story2'); $("#story2").html("In construction...");
 	                    ConanStudio.init();
 	                    
 	                    Nav.switchTo($('.nav > ul > li > a')[0]);
@@ -96,6 +97,9 @@
 		          font-family: "Font Awesome 5 Free";
 		          content: "\f518";  
 		      }
-    	</style>
+              .story2:before {
+                  font-family: "Font Awesome 5 Free";
+                  content: "\f518";  
+              }    	</style>
 	</body>
 </html>

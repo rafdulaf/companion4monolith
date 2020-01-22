@@ -1,33 +1,1642 @@
 {
     "list": [
         {
+            "id": "boris_rage",
+            "title": {
+                "fr": "Rage de Bori",
+                "en": "Bori's Rage"
+            },
+            "text": {
+                "fr": "Ciblez une figurine avec ligne de vue.\nLa cible subit des dégâts de : {dice_orange}{dice_orange}",
+                "en": "Attack a character in your line of sight; roll {dice_orange}{dice_orange}. If the attack power is greater than the defense power, the defender suffers damage equal to the difference."
+            },
+            "clarification": null,
+    
+            "cost": "2",
+            "saturation": "2",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/boris_rage.png",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "borne_by_the_wind",
+            "title": {
+                "fr": "Porté par le vent",
+                "en": "Borne by the Wind"
+            },
+            "text": {
+                "fr": "Le lanceur gagne la compétence Vol jusqu'à la fin de son tour.",
+                "en": "Gain Flying until end of turn."
+            },
+            "clarification": null,
+    
+            "cost": "1",
+            "saturation": "1",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/borne_by_the_wind.png",
+            "origins": ["corebox", "stretchgoal", "king",
+                        "campaignbook"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "energy_drain",
+            "title": {
+                "fr": "Drain d'énergie",
+                "en": "Energy Drain"
+            },
+            "text": {
+                "fr": "Ciblez une figurine avec ligne de vue sur une zone adjacente.\nLe Héros transfère une gemme de sa zone d'énergie disponible vers sa zone de fatigue. L'Overlord récupère 3 gemmes de sa zone de fatigue.",
+                "en": "Choose a hero in an area adjacent to you in your line of sight. That hero moves 1 gem from their Reserve zone to their Fatigue zone and you move 3 gems from your Fatigue zone to your Reserve zone."
+            },
+            "clarification": null,
+    
+            "cost": "1",
+            "saturation": "1",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/energy_drain.png",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "gift_of_life",
+            "title": {
+                "fr": "Don de vie",
+                "en": "Gift of Life"
+            },
+            "text": {
+                "fr": "Ciblez un Héros avec ligne de vue.\nLe Lanceur transfère 2 gemmes de sa propre zone d'énergie disponible vers la zone d'énergie disponible de la cible.",
+                "en": "Choose a hero in your line of sight. Move up to 2 gems from your Reserve to the chosen hero's Reserve zone."
+            },
+            "clarification": null,
+    
+            "cost": "2",
+            "saturation": "2",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/gift_of_life.png",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "kiss_of_death",
+            "title": {
+                "fr": "Baiser de la mort",
+                "en": "Kiss of Death"
+            },
+            "text": {
+                "fr": "Le lanceur est retiré du plateau et toutes les figurines sur la zone subissent des dégâts de : {dice_red_reroll}{dice_red_reroll}{dice_red_reroll}",
+                "en": "Attack your area, excluding yourself; roll {dice_red_reroll}{dice_red_reroll}{dice_red_reroll}. If the attack power is greater than the defense power, the defender suffers damage equal to the difference. Remove your model from the board."
+            },
+            "clarification": null,
+    
+            "cost": "3",
+            "saturation": "3",
+            "explosion": true,
+            "reaction": false,
+    
+            "image": "data/spells/img/kiss_of_death.png",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "lightning_storm",
+            "title": {
+                "fr": "Tempête d'éclairs",
+                "en": "Lightning Storm"
+            },
+            "text": {
+                "fr": "Ciblez une zone avec ligne de vue.\nToutes les figurines sur la zone subissent des dégâts de : {dice_red}{dice_red}",
+                "en": "Attack an area in your line of sight; roll {dice_red}{dice_red}. If the attack power is greater than the defense power, the defender suffers damage equal to the difference."
+            },
+            "clarification": null,
+    
+            "cost": "3",
+            "saturation": "3",
+            "explosion": true,
+            "reaction": false,
+    
+            "image": "data/spells/img/lightning_storm.png",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "magical_dizziness",
+            "title": {
+                "fr": "Etourdissement",
+                "en": "Magical Dizziness"
+            },
+            "text": {
+                "fr": "Ciblez un lanceur de sort avec ligne de vue. La cible paye 1 gemme de plus pour lancer des sorts pendant 1 tour.\nLe sort se dissipe au début du tour suivant du lanceur de sort.",
+                "en": "Choose a character with Spell Caster in your line of sight. That character's controller must move 1 gem from their Reserve zone to their Fatigue zone in addition to paying the cost to cast a spell. This effect ends at the beginning of your next turn or activation."
+            },
+            "clarification": null,
+    
+            "cost": "2",
+            "saturation": "2",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/magical_dizziness.png",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+        },
+    
+        {
+            "id": "mind_control",
+            "title": {
+                "fr": "Contrôle mental",
+                "en": "Mind Control"
+            },
+            "text": {
+                "fr": "Ciblez une figurine adverse sans ligne de vue. Déplacez-la d'1 zone + 1 zone par gemme d'énergie dépensée, en suivant les restrictions de déplacement et sans que cela ne provoque de dégâts à la figurine.",
+                "en": "Assign a number of gems from your Reserve zone to this card and choose an enemy not in your line of sight. That enemy gains that many movement points, which you must spend to move that enemy in a way that would not cause it to suffer damage."
+            },
+            "clarification": null,
+    
+            "cost": "1",
+            "saturation": "3",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/mind_control.png",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "mitras_halo",
+            "title": {
+                "fr": "Halo de Mitra",
+                "en": "Mitra's Halo"
+            },
+            "text": {
+                "fr": "Le lanceur augmente sa défense passive de 2. Le halo se dissipe au début du tour où le Héros lanceur redevient actif après un tour de récupération, ou à l'activation de la tuile du lanceur de sort pour l'Overlord.",
+                "en": "Your armor value is increased by 2. This effect ends when you change from cautious to aggressive or when your group is activated."
+            },
+            "clarification": null,
+    
+            "cost": "3",
+            "saturation": "3",
+            "explosion": false,
+            "reaction": true,
+    
+            "image": "data/spells/img/mitras_halo.png",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "mitras_healing",
+            "title": {
+                "fr": "Guérison de Mitra",
+                "en": "Mitra's Healing"
+            },
+            "text": {
+                "fr": "Ciblez un Héros dans la même zone que le lanceur ou le lanceur lui-même. Lancez : {dice_orange_reroll} Le résultat indique le nombre de gemmes transférées depuis la zone de blessure vers la zone d'énergie disponible du Héros.",
+                "en": "Choose a hero in your area and roll {dice_orange_reroll}. That hero moves a number of gems from their Wound zone to their Reserve zone equal to the number of symbols shown on the die."
+            },
+            "clarification": null,
+    
+            "cost": "2",
+            "saturation": "2",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/mitras_healing.png",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "pestilential_swarm",
+            "title": {
+                "fr": "Nuée pestilentielle",
+                "en": "Pestilential Swarm"
+            },
+            "text": {
+                "fr": "Toute figurine, à l'exception des morts-vivants, située dans la même zone que le lanceur subit des dégâts de : {dice_yellow}{dice_yellow}{dice_yellow}\nAucune défense n'est possible. Le lanceur du sort est immunisé.",
+                "en": "Attack your area, excluding yourself and undead characters; roll {dice_yellow}{dice_yellow}{dice_yellow}. Characters cannot defend against this attack. Attacked characters suffer damage equal to the attack power."
+            },
+            "clarification": null,
+    
+            "cost": "3",
+            "saturation": "3",
+            "explosion": true,
+            "reaction": true,
+    
+            "image": "data/spells/img/pestilential_swarm.png",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "sets_bite",
+            "title": {
+                "fr": "Morsure de Set",
+                "en": "Set's Bite"
+            },
+            "text": {
+                "fr": "Ciblez une figurine avec ligne de vue.\nLa cible ou l'Overlord transfère une gemme de sa zone d'énergie disponible vers sa zone de fatigue. La cible subit des dégâts de : {dice_orange}{dice_orange}",
+                "en": "Attack a character in your line of sight; roll {dice_orange}{dice_orange}. That character's controller moves 1 gem from their Reserve zone to their Fatigue zone. If the attack power is greater than the defense power, the defender suffers damage equal to the difference."
+            },
+            "clarification": null,
+    
+            "cost": "2",
+            "saturation": "2",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/sets_bite.png",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "sets_halo",
+            "title": {
+                "fr": "Halo de Set",
+                "en": "Set's Halo"
+            },
+            "text": {
+                "fr": "Le lanceur augmente sa défense passive de 1. Le halo se dissipe au début du tour où le Héros lanceur redevient actif après un tour de récupération, ou à l'activation de la tuile du lanceur de sort pour l'Overlord.",
+                "en": "Your armor value is increased by 1. This effect ends when you change from cautious to aggressive or when your group is activated."
+            },
+            "clarification": null,
+    
+            "cost": "2",
+            "saturation": "2",
+            "explosion": false,
+            "reaction": true,
+    
+            "image": "data/spells/img/sets_halo.png",
+            "origins": ["corebox", "stretchgoal", "king",
+                         "campaignbook"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "sets_possession",
+            "title": {
+                "fr": "Possession de Set",
+                "en": "Set's Possession"
+            },
+            "text": {
+                "fr": "Ciblez une figurine sans ligne de vue jusqu'à 2 zones de distance.\nLors de sa prochaine activation, la cible ne pourra pas se déplacer. Si la cible dispose de la compétence Blocage, elle pourra se déplacer mais perd cette compétence pour ce tour.",
+                "en": "Choose a character up to 2 areas away from you. If the character does not have Blocking, the character cannot move during their next activation or during the Action phase in which the character is aggressive. Otherwise, the character loses Blocking during that turn."
+            },
+            "clarification": null,
+    
+            "cost": "2",
+            "saturation": "4",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/sets_possession.png",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "telekinesis",
+            "title": {
+                "fr": "Télékinésir",
+                "en": "Telekinesis"
+            },
+            "text": {
+                "fr": "Ciblez un objet avec ligne de vue. Le lanceur peut immédiatement le ramasser.\nL'encombrement de l'objet ne peut être supérieur à 3.",
+                "en": "Pick up an object un your line of sight with an encumbrance value of 3 or less."
+            },
+            "clarification": null,
+    
+            "cost": "1",
+            "saturation": "1",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/telekinesis.png",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
             "id": "teleportation",
             "title": {
                 "fr": "Téléportation",
                 "en": "Teleportation"
             },
             "text": {
-                "fr": "",
-                "en": ""
+                "fr": "Pour toute gemme dépensée après avoir payé le coût du sort, le lanceur peut se déplacer d'une zone.\nCe mouvement n'est affecté par aucun obstacle. Le lanceur n'a pas besoin d'avoir une ligne de vue avec sa destination.",
+                "en": "Assign a number of gems from your Reserve zone to this card. For each gem assigned, move your model to an adjacent space."
             },
             "clarification": {
                 "fr": "Le lanceur de sort n'est pas soumis au phénomène de gêne ni à la compétence Bloqueur.",
                 "en": "A character who casts this spell is not affected by hindering or by Blocking to move."
             },
             
-            "cost": "0",
-            "saturation": "4",
+            "cost": "1",
+            "saturation": "0",
             "explosion": false,
             "reaction": false,
             
             "image": "data/spells/img/teleportation.png",
-            "origin": ["corebox"],
+            "origins": ["corebox", "stretchgoal", "king", 
+                        "stretchgoal", "king"],
             
-            "imageStyle": {
-                "imageLocation": {"x": "0", "y": "0"},
-                "imageZoom": "100",
-                "imageRotation": "0"
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "archer_of_acheron",
+            "title": {
+                "fr": "Archer d'Acheron",
+                "en": "Archer of Acheron"
             },
+            "text": {
+                "fr": "Ciblez une figurine de Héros avec ligne de vue. Le Héros améliore son type de dé au combat à distance (de jaune à orange ou de orange à rouge) jusqu'à la fin du tour du camp du lanceur. Si son dé initial était relançable, il le reste.",
+                "en": "Choose a hero in your line of sight. Improve the die on that hero's Ranged Attack space until the end of their turn (yellow to orange, or orange to red). If the die could be rerolled, it still can be."
+            },
+            "clarification": null,
+    
+            "cost": "2",
+            "saturation": "2",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/archer_of_acheron.png",
+            "origins": ["stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "bad_luck",
+            "title": {
+                "fr": "Malchance",
+                "en": "Bad Luck"
+            },
+            "text": {
+                "fr": "Ciblez une figurine avec ligne de vue.\nLa cible gagne la compétence Malchance jusqu'au début du tour suivant du camp du lanceur.",
+                "en": "Choose a character in your line of sight. That character gains Jinx until your next turn."
+            },
+            "clarification": null,
+    
+            "cost": "3",
+            "saturation": "3",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/bad_luck.png",
+            "origins": ["stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "barrier_of_the_winds",
+            "title": {
+                "fr": "Barrière des Vents",
+                "en": "Barrier of the Winds"
+            },
+            "text": {
+                "fr": "Ciblez une figurine avec ligne de vue.\nLa figurine ne peut plus être la cible d'attaques à distance jusqu'au début du tour suivant du camp du lanceur.",
+                "en": "Choose a character in your line of sight. That character cannot be attacked with ranged attacks until your next turn."
+            },
+            "clarification": null,
+    
+            "cost": "1",
+            "saturation": "1",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/barrier_of_the_winds.png",
+            "origins": ["stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "bels_caress",
+            "title": {
+                "fr": "Caresse de Bel",
+                "en": "Bel's Caress"
+            },
+            "text": {
+                "fr": "Le lanceur ouvre une porte ou un coffre fermé à clef dans sa zone.",
+                "en": "Choose a chest in your area or a door adjacent to your area. You successfully pick its lock."
+            },
+            "clarification": null,
+    
+            "cost": "1",
+            "saturation": "2",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/bels_caress.png",
+            "origins": ["stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "bels_hand",
+            "title": {
+                "fr": "Main de Bel",
+                "en": "Bel's Hand"
+            },
+            "text": {
+                "fr": "Ciblez une figurine de Héros avec ligne de vue.\nLe Héros améliore son type de dé en manipulation (de jaune à orange ou orange à rouge) jusqu'à la fin du tour du camp du lanceur.\nSi son dé initial était relançable, il le reste.",
+                "en": "Choose a hero in your line of sight. Improve the die on that hero's Manipulation space until the end of their turn (yellow to orange, or orange to red). If the die could be rerolled, it still can be."
+            },
+            "clarification": null,
+    
+            "cost": "2",
+            "saturation": "2",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/bels_hand.png",
+            "origins": ["stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "blessing_of_ibis",
+            "title": {
+                "fr": "Bénédiction d'Ibis",
+                "en": "Blessing of Ibis"
+            },
+            "text": {
+                "fr": "Ciblez une figurine avec ligne de vue.\nLa cible gagne la compétence Intouchable jusqu'au début du tour suivant du camp du lanceur.",
+                "en": "Choose a character in your line of sight. That character gains Untouchable until your next turn."
+            },
+            "clarification": null,
+    
+            "cost": "2",
+            "saturation": "2",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/blessing_of_ibis.png",
+            "origins": ["stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "changing_destiny",
+            "title": {
+                "fr": "Destin changeant",
+                "en": "Changing Destiny"
+            },
+            "text": {
+                "fr": "Ciblez une figurine avec ligne de vue.\nS'il s'agit d'un Héros, il est obligé de se mettre en récupération à son prochain tour. S'il s'agit d'une figurine de l'Overlord, il ne peut pas activer la tuile correspondante.",
+                "en": "Choose a character in your line of sight. If the character is a hero, the hero must choose to be cautious during the next Stance phase. If the character is a unit, their tile cannot be activated during the next Overlord turn."
+            },
+            "clarification": null,
+    
+            "cost": "4",
+            "saturation": "4",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/changing_destiny.png",
+            "origins": ["stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "dagons_attack",
+            "title": {
+                "fr": "Attaque de Dagon",
+                "en": "Dagon's Attack"
+            },
+            "text": {
+                "fr": "Ciblez un tentacule avec ligne de vue.\nLe tentacule peut être déplacé jusqu'à 3 zones puis attaquer au corps à corps.",
+                "en": "Choose a Tentacle in your line of sight. Move that Tentacle up ti 3 areas, then the Tentacle may perform a Melee Attack."
+            },
+            "clarification": null,
+    
+            "cost": "1",
+            "saturation": "4",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/dagons_attack.png",
+            "origins": ["stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "dagons_awakening",
+            "title": {
+                "fr": "Réveil de Dagon",
+                "en": "Dagon's Awakening"
+            },
+            "text": {
+                "fr": "",
+                "en": ""
+            },
+            "clarification": null,
+    
+            "cost": "",
+            "saturation": "",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/dagons_awakening.png",
+            "origins": ["stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "deceleration",
+            "title": {
+                "fr": "Ralentissement",
+                "en": "Deceleration"
+            },
+            "text": {
+                "fr": "Ciblez une figurine avec ligne de vue.\nLa cible perd sa base de points de mouvement jusqu'au début du tour suivant du camp du lanceur.",
+                "en": "Choose a character in your line of sight. That character's movement value is 0 until your next turn."
+            },
+            "clarification": null,
+    
+            "cost": "2",
+            "saturation": "2",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/deceleration.png",
+            "origins": ["stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "divine_charisma",
+            "title": {
+                "fr": "Charisme divin",
+                "en": "Divine Charisma"
+            },
+            "text": {
+                "fr": "Ciblez une figurine avec ligne de vue.\nLa cible gagne la compétence Soutien jusqu'au début du tour suivant du camp du lanceur.",
+                "en": "Choose a character in your line of sight. That character gains Support until your next turn."
+            },
+            "clarification": null,
+    
+            "cost": "3",
+            "saturation": "3",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/divine_charisma.png",
+            "origins": ["stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "drying_earth",
+            "title": {
+                "fr": "Assèchement de la terre",
+                "en": "Drying Earth"
+            },
+            "text": {
+                "fr": "Ciblez une zone au terrain instable (marécageuse...) avec ligne de vue. Le sol de la zone devient stable. Il n'y a plus de pénalité de mouvement associé à cette zone.\nLe sort se dissipe au début du tour suivant du camp du lanceur.",
+                "en": "Choose an unstable area in your line of sight. That area becomes stable until your next turn. Characters do not spend extra movement points to move out of a stable area."
+            },
+            "clarification": null,
+    
+            "cost": "1",
+            "saturation": "2",
+            "explosion": true,
+            "reaction": false,
+    
+            "image": "data/spells/img/drying_earth.png",
+            "origins": ["stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "eagle_eye",
+            "title": {
+                "fr": "Oeil de faucon",
+                "en": "Eagle Eye"
+            },
+            "text": {
+                "fr": "Ciblez une figurine avec ligne de vue.\nLa cible gagne la compétence Tir précis jusqu'à la fin du tour du camp du lanceur.",
+                "en": "Choose a character in your line of sight. That character gains Precision Shot until the end of your turn."
+            },
+            "clarification": null,
+    
+            "cost": "2",
+            "saturation": "2",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/eagle_eye.png",
+            "origins": ["stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "eel_skin",
+            "title": {
+                "fr": "Peau d'anguille",
+                "en": "Eel Skin"
+            },
+            "text": {
+                "fr": "Ciblez une figurine avec ligne de vue.\nLa cible gagne la compétence Insaisissable jusqu'à la fin du tour du camp du lanceur.",
+                "en": "Choose a character in your ling of sight. That character gains Evasive until the end of your next turn."
+            },
+            "clarification": null,
+    
+            "cost": "2",
+            "saturation": "2",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/eel_skin.png",
+            "origins": ["stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "escape_route",
+            "title": {
+                "fr": "Echappatoire",
+                "en": "Escape Route"
+            },
+            "text": {
+                "fr": "Ciblez une figurine de Héros avec ligne de vue.\nLe Héros améliore son type de dé en défense (de jaune à orange ou orange à rouge) jusqu'au début du tour suivant du camp du lanceur. Si son dé initial était relançable, il le reste.",
+                "en": "Choose a hero in your line of sight. Improve that hero's Guard space until their next turn (yellow to orange, or orange to red). If the die could be rerolled, it still can be."
+            },
+            "clarification": null,
+    
+            "cost": "2",
+            "saturation": "2",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/escape_route.png",
+            "origins": ["stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "fleet_runner",
+            "title": {
+                "fr": "Course vive",
+                "en": "Fleet Runner"
+            },
+            "text": {
+                "fr": "Ciblez une figurine avec ligne de vue.\nLa cible améliore sa base de points de mouvement et l'indice de saturation correspondant de 1 jusqu'à la fin du tour du camp du lanceur.",
+                "en": "Choose a character in your line of sight. That character's movement value and exertion limit are increased by 1 until the end of your turn."
+            },
+            "clarification": null,
+    
+            "cost": "3",
+            "saturation": "3",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/fleet_runner.png",
+            "origins": ["stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "gullahs_strength",
+            "title": {
+                "fr": "Force de Gullah",
+                "en": "Gullah's Strength"
+            },
+            "text": {
+                "fr": "Ciblez une figurine de Héros avec ligne de vue.\nLe Héros améliore son type de dé au combat au corps-à-corps (de jaune à orange ou orange à rouge) jusqu'à la fin du tour du camp du lanceur.\nSi son dé initial était relançable, il le reste.",
+                "en": "Choose a hero in your line of sight. Improve the die on that hero's Melee Attack space until the end of their turn (yellow to orange, or orange to red). If the die could be rerolled, it still can be."
+            },
+            "clarification": null,
+    
+            "cost": "2",
+            "saturation": "2",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/gullahs_strength.png",
+            "origins": ["stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "gwahlurs_darkness",
+            "title": {
+                "fr": "Noirceur de Gwahlur",
+                "en": "Gwahlur's Darkness"
+            },
+            "text": {
+                "fr": "",
+                "en": ""
+            },
+            "clarification": null,
+    
+            "cost": "",
+            "saturation": "",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/gwahlurs_darkness.png",
+            "origins": ["stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "hand_of_death",
+            "title": {
+                "fr": "Main de la mort",
+                "en": "Hand of Death"
+            },
+            "text": {
+                "fr": "Ciblez une figurine dans la zone du lanceur.\nLa cible subit des dégâts de {dice_red}{dice_red}, puis le lanceur subit 1 blessure.",
+                "en": "Attack a model in your area; roll {dice_red}{dice_red}. If the attack power is greater than the defense power, the defender suffers damage equal to the difference. You suffer 1 damage."
+            },
+            "clarification": null,
+    
+            "cost": "2",
+            "saturation": "2",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/hand_of_death.png",
+            "origins": ["stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "hanumans_body",
+            "title": {
+                "fr": "Corps d'Hanuman",
+                "en": "Hanuman's Body"
+            },
+            "text": {
+                "fr": "",
+                "en": ""
+            },
+            "clarification": null,
+    
+            "cost": "",
+            "saturation": "",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/hanumans_body.png",
+            "origins": ["stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "inversion",
+            "title": {
+                "fr": "Inversion",
+                "en": "Inversion"
+            },
+            "text": {
+                "fr": "Ciblez une figurine avec ligne de vue.\nLe lanceur échange sa position avec celle de la cible en payant 1 gemme par zone le séparant de sa cible, en plus du coût du sort.",
+                "en": "Assign a number of gems from your Reserve zone to this card and choose a character within that number of areas of you. Exchange the position of your model and the chosen character's model."
+            },
+            "clarification": null,
+    
+            "cost": "1",
+            "saturation": "",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/inversion.png",
+            "origins": ["stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "ishtars_gaze",
+            "title": {
+                "fr": "Regard d'Ishtar",
+                "en": "Ishtar's Gaze"
+            },
+            "text": {
+                "fr": "Ciblez une figurine avec ligne de vue.\nLa cible gagne la compétence Sous protection jusqu'au début du tour suivant du camp du lanceur.",
+                "en": "Choose a character in your line of sight. That character gains Protected until your next turn."
+            },
+            "clarification": null,
+    
+            "cost": "3",
+            "saturation": "3",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/ishtars_gaze.png",
+            "origins": ["stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "jhebbal_sags_rage",
+            "title": {
+                "fr": "Rage de Jhebbal Sag",
+                "en": "Jhebbal Sag's Rage"
+            },
+            "text": {
+                "fr": "",
+                "en": ""
+            },
+            "clarification": null,
+    
+            "cost": "",
+            "saturation": "",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/jhebbal_sags_rage.png",
+            "origins": ["stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "lethal_cloud",
+            "title": {
+                "fr": "Nuage mortel",
+                "en": "Lethal Cloud"
+            },
+            "text": {
+                "fr": "Ciblez une zone avec ligne de vue. Chaque figurine qui s'y trouve, y entre ou en sort, encaisse une seule fois des dégâts de : {dice_red}{dice_red}\nLe sort se dissipe au début du tour suivant du camp du lanceur de sort.",
+                "en": "Attack an area in your line of sight; roll {dice_red}{dice_red}. If any character moves into or out of that area until your next turn, attack that character with the same attack power. If the attack power is greater that the defense power, the defender suffers damage equal to the difference."
+            },
+            "clarification": null,
+    
+            "cost": "2",
+            "saturation": "2",
+            "explosion": true,
+            "reaction": false,
+    
+            "image": "data/spells/img/lethal_cloud.png",
+            "origins": ["stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "life_transfer",
+            "title": {
+                "fr": "Transfert de vie",
+                "en": "Life Transfer"
+            },
+            "text": {
+                "fr": "Ciblez un Héros et son allié avec lignes de vue. Sacrifiez l'allié pour transférer 2 gemmes de la zone de blessure du Héros vers sa zone de fatigue.",
+                "en": "Choose a hero and an ally in your line of sight. Remove that ally's model from the board, and that hero moves up to 2 gems from their Wound zone to their Fatigue zone."
+            },
+            "clarification": null,
+    
+            "cost": "1",
+            "saturation": "1",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/life_transfer.png",
+            "origins": ["stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "light_as_a_feather",
+            "title": {
+                "fr": "Léger comme un plume",
+                "en": "Light as a Feather"
+            },
+            "text": {
+                "fr": "Ciblez une figurine avec ligne de vue.\nLa cible diminue de 3 son encombrement actuel jusqu'à la fin du tour du camp du lanceur.",
+                "en": "Choose a character in your line of sight. That character's encumbrance level is decreased by 3 until the end of your turn."
+            },
+            "clarification": null,
+    
+            "cost": "1",
+            "saturation": "2",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/light_as_a_feather.png",
+            "origins": ["stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "magic_block",
+            "title": {
+                "fr": "Blocage magique",
+                "en": "Magic Block"
+            },
+            "text": {
+                "fr": "Ciblez une figurine avec ligne de vue.\nLa cible gagne la compétence Bloqueur jusqu'au début du tour suivant du camp du lanceur.",
+                "en": "Choose a character in your line of sight. That character gains Blocking until your next turn."
+            },
+            "clarification": null,
+    
+            "cost": "2",
+            "saturation": "2",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/magic_block.png",
+            "origins": ["stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "mystic_barrier",
+            "title": {
+                "fr": "Barrière mystique",
+                "en": "Mystic Barrier"
+            },
+            "text": {
+                "fr": "Le lanceur empèche toutes les autres figurines d'entrer dans sa zone jusqu'au début du tour suivant du camp du lanceur.",
+                "en": "No character can move into the caster's area until the caster's next turn or activation."
+            },
+            "clarification": null,
+    
+            "cost": "2",
+            "saturation": "2",
+            "explosion": true,
+            "reaction": false,
+    
+            "image": "data/spells/img/mystic_barrier.png",
+            "origins": ["stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "putrescence",
+            "title": {
+                "fr": "Putrescence",
+                "en": "Putrescence"
+            },
+            "text": {
+                "fr": "Le lanceur ne peut pas être attaqué par des morts-vivants (momie ou squelette) jusqu'au début du tour suivant du camp du lanceur.",
+                "en": "Undead characters (Mummies and Skeletons) cannot attack you until your next turn or activation."
+            },
+            "clarification": null,
+    
+            "cost": "2",
+            "saturation": "2",
+            "explosion": false,
+            "reaction": true,
+    
+            "image": "data/spells/img/putrescence.png",
+            "origins": ["stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "recall",
+            "title": {
+                "fr": "Rappel",
+                "en": "Recall"
+            },
+            "text": {
+                "fr": "Ciblez une figurine avec ligne de vue.\nToutes les figurines amies de la zone ciblée sont déplacées sur la zone du lanceur.",
+                "en": "Choose an area in your line of sight. Take each friendly model in that area and place it in your area."
+            },
+            "clarification": null,
+    
+            "cost": "3",
+            "saturation": "3",
+            "explosion": true,
+            "reaction": false,
+    
+            "image": "data/spells/img/recall.png",
+            "origins": ["stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "return_of_the_brave",
+            "title": {
+                "fr": "Retour des braves",
+                "en": "Return of the Brave"
+            },
+            "text": {
+                "fr": "En payant le coût de renfort d'une unité alliée, le lanceur peut ramener en renfort l'unité dans sa zone.",
+                "en": "Choose a dead unit model whose tile is in the river; this spell's cost is equal to that model's reinforcement cost. Place that model on the board in the caster's area as though it were reinforced."
+            },
+            "clarification": null,
+    
+            "cost": "0",
+            "saturation": "5",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/return_of_the_brave.png",
+            "origins": ["stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "sets_blood",
+            "title": {
+                "fr": "Sang de Set",
+                "en": "Set's Blood"
+            },
+            "text": {
+                "fr": "",
+                "en": ""
+            },
+            "clarification": null,
+    
+            "cost": "",
+            "saturation": "",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/sets_blood.png",
+            "origins": ["stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "sets_illusion",
+            "title": {
+                "fr": "Illusion de Set",
+                "en": "Set's Illusion"
+            },
+            "text": {
+                "fr": "Ciblez une figurine avec ligne de vue.\nLa cible gagne la compéténce Horreur jusqu'au début du tour suivant du camp du lanceur.",
+                "en": "Choose a character in your line of sight. That character gains Horror until your next turn."
+            },
+            "clarification": null,
+    
+            "cost": "4",
+            "saturation": "4",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/sets_illusion.png",
+            "origins": ["stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "shapechanger",
+            "title": {
+                "fr": "Change-forme",
+                "en": "Shapechanger"
+            },
+            "text": {
+                "fr": "Le lanceur est retiré du plateau et reviendra sur sa zone de départ ou une zone adjacente, à son prochain tour ou activation.",
+                "en": "Remove the caster's model from its area on the board. At the beginning of their next turn or activation, place the caster's model in that area or an area adjacent to it."
+            },
+            "clarification": null,
+    
+            "cost": "3",
+            "saturation": "3",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/shapechanger.png",
+            "origins": ["stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "stone_skin",
+            "title": {
+                "fr": "Peau de pierre",
+                "en": "Stone Skin"
+            },
+            "text": {
+                "fr": "Ciblez une figurine avec ligne de vue.\nLa cible améliore sa défense passive de 2 jusqu'au début du tour suivant du camp du lanceur.",
+                "en": "Choose a character in your line of sight. That character's armor value is increased by 2 until your next turn."
+            },
+            "clarification": null,
+    
+            "cost": "3",
+            "saturation": "3",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/stone_skin.png",
+            "origins": ["stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "tears_of_dagon",
+            "title": {
+                "fr": "Larmes de Dagon",
+                "en": "Tears of Dagon"
+            },
+            "text": {
+                "fr": "Ciblez une zone au terrain stable avec ligne de vue. Le sol de la zone devient instable.\nQuitter cette zone coûte 1 point de mouvement supplémentaire.\nLe sort se dissipe au début du tour suivant du camp du lanceur.",
+                "en": "Choose a stable area in your line of sight. That area becomes unstable until your next turn. A character must spend 1 extra movement point to move out of an unstable area."
+            },
+            "clarification": null,
+    
+            "cost": "1",
+            "saturation": "2",
+            "explosion": true,
+            "reaction": false,
+    
+            "image": "data/spells/img/tears_of_dagon.png",
+            "origins": ["stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "warmth_of_ishtar",
+            "title": {
+                "fr": "Chaleur d'Ishtar",
+                "en": "Warmth of Ishtar"
+            },
+            "text": {
+                "fr": "",
+                "en": ""
+            },
+            "clarification": null,
+    
+            "cost": "",
+            "saturation": "",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/warmth_of_ishtar.png",
+            "origins": ["stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "withering",
+            "title": {
+                "fr": "Flétrissement",
+                "en": "Withering"
+            },
+            "text": {
+                "fr": "Ciblez une figurine avec ligne de vue.\nLa cible subit des blessures de : {dice_yellow_reroll}\nAucune défense n'est possible.",
+                "en": "Attack a character in your line of sight; roll {dice_yellow_reroll}. That character cannot defend against this attack, and suffers damage equal to the attack power."
+            },
+            "clarification": null,
+    
+            "cost": "2",
+            "saturation": "2",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/withering.png",
+            "origins": ["stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "yajurs_awakening",
+            "title": {
+                "fr": "Réveil de Yajur",
+                "en": "Yajur's Awakening"
+            },
+            "text": {
+                "fr": "En payant le coût de renfort d'une figurine de mort-vivant (momie ou squelette), le lanceur peut la ramener en renfort dans sa zone.",
+                "en": "Choose a dead undead unit model (Mummy or Skeleton) whose tile is in the river; this spell's cost is equal to that model's reinforcement cost. Place that model on the board in the caster's area as though it were reinforced."
+            },
+            "clarification": null,
+    
+            "cost": "0",
+            "saturation": "5",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/yajurs_awakening.png",
+            "origins": ["stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "ymirs_rage",
+            "title": {
+                "fr": "Rage d'Ymir",
+                "en": "Ymir's Rage"
+            },
+            "text": {
+                "fr": "Les figurines amies et le lanceur de sort voient toutes leurs attaques augmentées de {dice_orange} et leur défense diminuée de 1.\nLe sort se dissipe au début du tour suivant du camp du lanceur.",
+                "en": "When you or a friendly character attack, the attacker rolls an extra {dice_orange} for that attack. Your armor value and the armor value of each friendly character is reduced by 1. This effect ends at the beginning of your next turn. "
+            },
+            "clarification": null,
+    
+            "cost": "3",
+            "saturation": "3",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/ymirs_rage.png",
+            "origins": ["stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "weight_of_the_years",
+            "title": {
+                "fr": "Le Poids des Ages",
+                "en": "Weight of the Years"
+            },
+            "text": {
+                "fr": "L'Overlord lance {dice_orange}. Tous les Héros avec ou sans ligne de vue, subissent autant de blessure sans aucune défense possible.",
+                "en": "The Overlord rolls {dice_orange}. Each hero, with or without line of sight, suffers that many damage with no possible defense."
+            },
+            "clarification": null,
+    
+            "cost": "2",
+            "saturation": "2",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/weight_of_the_years.png",
+            "origins": ["nordheim"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "blaze",
+            "title": {
+                "fr": "",
+                "en": "Blaze"
+            },
+            "text": {
+                "fr": "Le lanceur de sort cible une zone dans sa ligne de vue. Toutes les figurines présentes sur cette zone subissent une attaque de {dice_red}.",
+                "en": "Attack an area in your line of sight; roll {dice_red}. If the attack power is greater than the defense power, the defender suffers damage equal to the difference."
+            },
+            "clarification": null,
+    
+            "cost": "2",
+            "saturation": "2",
+            "explosion": true,
+            "reaction": false,
+    
+            "image": "data/spells/img/blaze.png",
+            "origins": ["khitai"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "mental_torture",
+            "title": {
+                "fr": "Torture mentale",
+                "en": "Mental Torture"
+            },
+            "text": {
+                "fr": "Ciblez une figurine dans la même zone que le lanceur de sort. La cible subit une attaque de {dice_orange} par gemme dépensée. Aucune défense n'est possible. Ce sort ne peut être lancé qu'une seule fois par tour.",
+                "en": "Attack a character in your area; roll {dice_orange} for each gem assigned to this spell. That character cannot defend against this attack. This spell can be cast only once per turn."
+            },
+            "clarification": null,
+    
+            "cost": "0",
+            "saturation": "3",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/mental_torture.png",
+            "origins": ["khitai"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "push_back",
+            "title": {
+                "fr": "Repousser",
+                "en": "Push Back"
+            },
+            "text": {
+                "fr": "Le lanceur de sort cible une figurine ennemie dans sa zone. Il peut déplacer cette figurine d'une zone en ignorant le phénomène de gêne et sans que cela ne provoque de dégâts à cette figurine.",
+                "en": "Choose an enemy in your area. Move that enemy in a way that would not cause it to suffer damage. This movement is not affected by hindering."
+            },
+            "clarification": null,
+    
+            "cost": "1",
+            "saturation": "3",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/push_back.png",
+            "origins": ["khitai"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "pass_through_wall",
+            "title": {
+                "fr": "",
+                "en": "Pass through Wall"
+            },
+            "text": {
+                "fr": "",
+                "en": "Spend 1 movement point to move across an obstacle to an adjacent area of same elevation. This movement is affected by hindering."
+            },
+            "clarification": null,
+    
+            "cost": "1",
+            "saturation": "1",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/pass_through_wall.png",
+            "origins": ["stygia"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "psychic_strike",
+            "title": {
+                "fr": "",
+                "en": "Psychic Strike"
+            },
+            "text": {
+                "fr": "",
+                "en": "Choose a hero X areas away from you. That hero moves all gems from their Reserve zone to their Fatigue zone."
+            },
+            "clarification": null,
+    
+            "cost": "0",
+            "saturation": "0",
+            "explosion": false,
+            "reaction": false,
+    
+            "image": "data/spells/img/psychic_strike.png",
+            "origins": ["stygia"],
+    
+            "textStyle": {
+                "fr": { "textSize": 0, "textInter": 0 },
+                "en": { "textSize": 0, "textInter": 0 }
+            }
+        },
+    
+        {
+            "id": "stone_rain",
+            "title": {
+                "fr": "",
+                "en": "Stone Rain"
+            },
+            "text": {
+                "fr": "",
+                "en": "Choose an area X areas away from you with a secret passage or well token. Remove that token and attack that area; roll 2 Red dice. Characters cannot defend against this attack and suffer damage equal to the attack power."
+            },
+            "clarification": null,
+    
+            "cost": "0",
+            "saturation": "0",
+            "explosion": true,
+            "reaction": false,
+    
+            "image": "data/spells/img/stone_rain.png",
+            "origins": ["stygia"],
+    
             "textStyle": {
                 "fr": { "textSize": 0, "textInter": 0 },
                 "en": { "textSize": 0, "textInter": 0 }

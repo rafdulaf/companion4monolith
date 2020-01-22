@@ -185,7 +185,7 @@ var CardSpell = {
     
     _replace: function(text)
     {
-        text = text.replace(/\{(.*?)\}/g, "<img src=\"" + Version + "/resources/img/$1.png\"/>");
+        text = text.replace(/\n/g, '<br/>').replace(/\{(.*?)\}/g, "<img src=\"" + Version + "/resources/img/$1.png\"/>");
         return text;
     },
 
