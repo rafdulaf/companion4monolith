@@ -41,8 +41,8 @@ var ConanAbout = {
             'contribute_hof_test': "Tests et relectures"
         },
         'en': {
-            'name': "Companion<br/>for Conan",
-            'title': "The companion for Conan",
+            'name': "Companion<br/>to Conan",
+            'title': "The companion to Conan",
             'text': "<h1>Disclamer</h1>This application has no link with the producer of the game Conan: Monolith.<br/>It was realized by @cochon based on the static maps of line of sights created by @Roolz and by taking up again the idea of the work of @Pamplerousse of the dynamic line of sights.",
             'find': "Consult the forum 'The Overlord'",
             'fullscreen': "Fullscreen",
@@ -50,12 +50,12 @@ var ConanAbout = {
             'licence': "Licence",
             'licence_text': "This software is developped under the LGPL-3.0 licence",
             'copyright': "Copyright",
-            'copyright-text': "<h1>Purpose</h1>'Companion for Conan' is an indepedant applciation to help the players in the game 'Conan'.<br/>"
+            'copyright-text': "<h1>Purpose</h1>'Companion to Conan' is an indepedant applciation to help the players in the game 'Conan'.<br/>"
                     + "This application was written by <a href='https://the-overlord.com/index.php?/profile/5240-cochon/' target='_blank'>@cochon</a>.<br/>"
                     + "<h1>Property</h1>"
                     + "'Conan' is a board game published by <a href='http://monolithedition.com' target='_blank'>Monolith</a>.<br/>"
                     + "The Conan logo and the fonts used are the property of Monolith.<br/>"
-                    + "The image of 'Companion for Conan' was created by adapting the Conan logo.<br/>",
+                    + "The image of 'Companion to Conan' was created by adapting the Conan logo.<br/>",
             'preferences': 'My settings',
             'preferences_text': "Select your settings that will be stored on your device.",
             'preferences_general': "Generality",
@@ -115,7 +115,7 @@ var ConanAbout = {
             "<div id='about' class='about'>"
                     + "<div class='about-zone-about'>"
                             + "<h1 style='text-align: center '>" + ConanAbout._i18n[Language].title + " v" + Version + "</h1>"
-                            + "<img src='about/resources/img/logo.jpg'/>" +
+                            + "<img src='" + Version + "/about/logo.jpg'/>" +
                             "<a class='fullscreen' onclick='ConanAbout._toggleFullscreen(); return false' href='javascript:void(0);' title=\"" + ConanAbout._i18n[Language].fullscreen + "\"></a>" + 
                             "<span>" + ConanAbout._i18n[Language].text + 
                                 "<div><a target='_blank' href='https://the-overlord.com/'>" + ConanAbout._i18n[Language].find + "</a></div>" +

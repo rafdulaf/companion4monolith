@@ -149,10 +149,10 @@ var CardSpell = {
     },
     
     _cardCode: function(card) {
-        var code = "<div class=\"spell card\">"
+        var code = "<div class=\"spell card" + (card.imageEffect !== false ? " effect" : "") + "\">"
                 + "<img class=\"background\" src=\"" + Version + "/studio/card_spell/img/background.png\"/>";
         
-        code += "<div class=\"name\">" + card.name + "</div>";
+        code += "<div class=\"name" + (card.longName === true ? " long" : "") + "\">" + card.name + "</div>";
         code += "<div class=\"text\" style=\"font-size: " + card.textSize + "%; line-height: " + card.textInter + "%; \">" + CardSpell._replace(card.text) + "</div>";
 
         var hasCost = parseInt(card.cost) > 0;

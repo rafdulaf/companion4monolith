@@ -21,8 +21,8 @@
             "origins": ["corebox", "stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -48,8 +48,8 @@
                         "campaignbook"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -74,8 +74,8 @@
             "origins": ["corebox", "stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 140, "textInter": 66 },
+                "en": { "textSize": 144, "textInter": 66 }
             }
         },
     
@@ -100,8 +100,8 @@
             "origins": ["corebox", "stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -126,8 +126,8 @@
             "origins": ["corebox", "stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 132, "textInter": 73 }
             }
         },
     
@@ -152,8 +152,8 @@
             "origins": ["corebox", "stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -178,8 +178,9 @@
             "origins": ["corebox", "stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 149, "textInter": 66 },
+                "en": { "textSize": 130, "textInter": 66 }
+            }
         },
     
         {
@@ -203,8 +204,8 @@
             "origins": ["corebox", "stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 140, "textInter": 66 },
+                "en": { "textSize": 131, "textInter": 66 }
             }
         },
     
@@ -229,8 +230,8 @@
             "origins": ["corebox", "stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 136, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -255,8 +256,8 @@
             "origins": ["corebox", "stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 134, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -281,8 +282,8 @@
             "origins": ["corebox", "stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 142, "textInter": 66 },
+                "en": { "textSize": 141, "textInter": 66 }
             }
         },
     
@@ -307,8 +308,8 @@
             "origins": ["corebox", "stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 148, "textInter": 66 },
+                "en": { "textSize": 122, "textInter": 70 }
             }
         },
     
@@ -334,8 +335,8 @@
                          "campaignbook"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 136, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -360,15 +361,15 @@
             "origins": ["corebox", "stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 127, "textInter": 66 },
+                "en": { "textSize": 121, "textInter": 69 }
             }
         },
     
         {
             "id": "telekinesis",
             "title": {
-                "fr": "Télékinésir",
+                "fr": "Télékinésie",
                 "en": "Telekinesis"
             },
             "text": {
@@ -386,8 +387,8 @@
             "origins": ["corebox", "stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -416,8 +417,8 @@
                         "stretchgoal", "king"],
             
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 127, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -442,8 +443,8 @@
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 134, "textInter": 66 },
+                "en": { "textSize": 142, "textInter": 70 }
             }
         },
     
@@ -468,8 +469,8 @@
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -494,8 +495,8 @@
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -520,8 +521,8 @@
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -546,8 +547,8 @@
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 130, "textInter": 69 },
+                "en": { "textSize": 142, "textInter": 70 }
             }
         },
     
@@ -572,8 +573,8 @@
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -598,8 +599,8 @@
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 140, "textInter": 66 },
+                "en": { "textSize": 140, "textInter": 66 }
             }
         },
     
@@ -624,8 +625,8 @@
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -650,8 +651,8 @@
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -676,8 +677,8 @@
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -702,8 +703,8 @@
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -712,6 +713,10 @@
             "title": {
                 "fr": "Assèchement de la terre",
                 "en": "Drying Earth"
+            },
+            "titleLong": {
+                "fr": true,
+                "en": false
             },
             "text": {
                 "fr": "Ciblez une zone au terrain instable (marécageuse...) avec ligne de vue. Le sol de la zone devient stable. Il n'y a plus de pénalité de mouvement associé à cette zone.\nLe sort se dissipe au début du tour suivant du camp du lanceur.",
@@ -728,8 +733,8 @@
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 134, "textInter": 66 },
+                "en": { "textSize": 148, "textInter": 66 }
             }
         },
     
@@ -754,8 +759,8 @@
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -780,8 +785,8 @@
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -806,8 +811,8 @@
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 134, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -832,8 +837,8 @@
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -858,8 +863,8 @@
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 134, "textInter": 66 },
+                "en": { "textSize": 148, "textInter": 66 }
             }
         },
     
@@ -884,8 +889,8 @@
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -910,8 +915,8 @@
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -936,8 +941,8 @@
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -962,8 +967,8 @@
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 141, "textInter": 66 }
             }
         },
     
@@ -988,8 +993,8 @@
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -1014,8 +1019,8 @@
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -1040,8 +1045,8 @@
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 134, "textInter": 66 },
+                "en": { "textSize": 115, "textInter": 66 }
             }
         },
     
@@ -1066,8 +1071,8 @@
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -1092,8 +1097,8 @@
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -1118,8 +1123,8 @@
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -1144,8 +1149,8 @@
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -1170,8 +1175,8 @@
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -1196,8 +1201,8 @@
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -1222,8 +1227,8 @@
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 143, "textInter": 72 }
             }
         },
     
@@ -1248,8 +1253,8 @@
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -1274,8 +1279,8 @@
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -1300,8 +1305,8 @@
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -1326,8 +1331,8 @@
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -1352,8 +1357,8 @@
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 132, "textInter": 69 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -1378,8 +1383,8 @@
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -1404,8 +1409,8 @@
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -1430,8 +1435,8 @@
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 138, "textInter": 66 }
             }
         },
     
@@ -1456,8 +1461,8 @@
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 148, "textInter": 66 },
+                "en": { "textSize": 133, "textInter": 66 }
             }
         },
     
@@ -1482,15 +1487,15 @@
             "origins": ["nordheim"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
         {
             "id": "blaze",
             "title": {
-                "fr": "",
+                "fr": "Brasier",
                 "en": "Blaze"
             },
             "text": {
@@ -1508,8 +1513,8 @@
             "origins": ["khitai"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -1534,8 +1539,8 @@
             "origins": ["khitai"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 131, "textInter": 72 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -1560,8 +1565,8 @@
             "origins": ["khitai"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 141, "textInter": 72 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -1586,8 +1591,8 @@
             "origins": ["stygia"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -1612,8 +1617,8 @@
             "origins": ["stygia"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
             }
         },
     
@@ -1638,8 +1643,8 @@
             "origins": ["stygia"],
     
             "textStyle": {
-                "fr": { "textSize": 0, "textInter": 0 },
-                "en": { "textSize": 0, "textInter": 0 }
+                "fr": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 125, "textInter": 72 }
             }
         }
     ]

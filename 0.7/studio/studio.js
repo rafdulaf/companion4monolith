@@ -36,7 +36,10 @@ var ConanStudio = {
         
         ConanStudio.onChange();
         
-        ConanAbout.addCopyright(ConanStudio._i18n[Language].menu, CardEquipment.copyright());
+        ConanAbout.addCopyright(ConanStudio._i18n[Language].menu, 
+            CardEquipment.copyright() 
+            + CardSpell.copyright()
+        );
     },
     
     onChange: function(event, slick) {

@@ -20,7 +20,7 @@
     position: relative;
     display: inline-block; 
     
-    margin: 10px;
+    margin: 2px;
 
     overflow: hidden;    
 }
@@ -140,13 +140,18 @@
 
 .card.spell .image {
     position: absolute;
+    width: 30%;
+    left: 35%;
+    top: 3%;
+    height: 21%;
+    overflow: hidden;
+}
+.card.spell.effect .image {
     width: 27%;
     left: 37%;
     top: 4%;
     height: 18%;
-    overflow: hidden;
 }
-    
 .card.spell .imagebg {
     position: absolute;
     width: 33%;
@@ -155,6 +160,8 @@
 }
 .card.spell .image img {
     position: absolute;
+}
+.card.spell.effect .image img {
     filter: grayscale(1) drop-shadow(0px 0px 3px black);
 }
 .card.spell .imagebg img {
@@ -166,13 +173,16 @@
     left: 0;
     right: 0;
     top: 23.5%;
-    height: 9%;
+    height: 12%;
     overflow: hidden;
     text-align: center;
     font-family: 'IMMORTAL';
     font-size: 100%;
     line-height: 163%;
     color: #FFFFFF;
+}
+.card.spell .name.long {
+    line-height: 95%;
 }
 .card.spell .text {
     position: absolute;

@@ -26,6 +26,8 @@
         <link rel="stylesheet" href="0.7/maps/maps.css"/>
         <link rel="stylesheet" href="0.7/rules/rules.css"/>
         <link rel="stylesheet" href="0.7/rules/viewer.css"/>
+        <link rel="stylesheet" href="0.7/encyclopedia/encyclopedia.css"/>
+        <link rel="stylesheet" href="0.7/encyclopedia/spells/spells.css"/>
         <link rel="stylesheet" href="0.7/studio/studio.css"/>
         <link rel="stylesheet" href="0.7/studio/card_equipment/card_equipment.css"/>
         <link rel="stylesheet" href="0.7/studio/card_spell/card_spell.css"/>
@@ -50,6 +52,7 @@
         <script src="0.7/about/about.js"></script>
         <script src="0.7/tutorial/tutorial.js"></script>
         <script src="0.7/encyclopedia/encyclopedia.js"></script>
+        <script src="0.7/encyclopedia/spells/spells.js"></script>
         <script src="0.7/maps/maps.js"></script>
         <script src="0.7/rules/rules.js"></script>
         <script src="0.7/studio/studio.js"></script>
@@ -68,7 +71,7 @@
 		        	    ConanMaps.init();
 	                    ConanRules.init();
 	                    Nav.addIcon('Scenarios', 'story', 'story'); $("#story").html("In construction...");
-                        Nav.addIcon('Scenarios', 'story2', 'story2'); $("#story2").html("In construction...");
+                        Encyclopedia.init();
 	                    ConanStudio.init();
 	                    
 	                    Nav.switchTo($('.nav > ul > li > a')[0]);
@@ -97,9 +100,5 @@
 		          font-family: "Font Awesome 5 Free";
 		          content: "\f518";  
 		      }
-              .story2:before {
-                  font-family: "Font Awesome 5 Free";
-                  content: "\f518";  
-              }    	</style>
 	</body>
 </html>
