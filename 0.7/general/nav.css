@@ -103,25 +103,35 @@
 @media screen and (min-width: 380px) {
     .nav li a {
         padding: 6px 12px 10px 12px;
-        font-size: 12px;
+        font-size: 10px;
     }
 }
 @media screen and (min-width: 400px) {
     .nav li a {
-        font-size: 13px;
+        font-size: 10px;
     }
 }
 @media screen and (min-width: 430px) {
     .nav li a {
-        font-size: 14px;
+        font-size: 11px;
     }
 }
 @media screen and (min-width: 450px) {
     .nav li a {
-        font-size: 15px;
+        font-size: 12px;
     }
 }
 @media screen and (min-width: 480px) {
+    .nav li a {
+        font-size: 13px;
+    }
+}
+@media screen and (min-width: 520px) {
+    .nav li a {
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 600px) {
     .nav li a {
         font-size: 16px;
     }
