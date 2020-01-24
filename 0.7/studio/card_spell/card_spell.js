@@ -28,6 +28,7 @@ var CardSpell = {
             'explosion': "Sort de zone",
             'image': "Image (fond transparent)",
             'imagePh': "Entrer l'adresse de l'image (http://)",
+            'imageeffect': "Effet automatique",
             'imagelocation': "Emplacement",
             'imagelocationPh': "0",
             'imagezoom': "Zoom",
@@ -67,6 +68,7 @@ var CardSpell = {
             'explosion': "Area attack spell",
             'image': "Image (transparent background)",
             'imagePh': "Enter the image address (http://...)",
+            'imageeffect': "Automatic effect",
             'imagelocation': "Location",
             'imagelocationPh': "0",
             'imagezoom': "Zoom",
@@ -248,6 +250,7 @@ var CardSpell = {
                 + "<div class=\"field\">"
                     + "<label for=\"eqimage\">" + CardSpell._i18n[Language].image + "</label>"
                     + "<input id=\"eqimage\" name=\"cardimage\" autocomplete=\"off\" placeholder=\"" + CardSpell._i18n[Language].imagePh + "\" onkeyup=\"CardSpell._preview();\" onchange=\"CardSpell._preview();\"/>"
+                    + "<div class=\"imageeffect\"><input type=\"checkbox\" id=\"eqspellimageeffect\" name=\"cardimageeffect\" onchange=\"CardSpell._preview();\"/><label for=\"eqspellimageeffect\">" + CardSpell._i18n[Language].imageeffect + "</label></div>"
                 + "</div>"
                 + "<div class=\"field imagelocation\">"
                     + "<label for=\"eqimagelocation\">" + CardSpell._i18n[Language].imagelocation + "</label>"
@@ -283,11 +286,12 @@ var CardSpell = {
             cost: "0",
             saturation: "0",
             image: "",
+            imageEffect: false,
             imagelocation: {x: "50", y: "50"},
             imagezoom: "100",
             imagerotation: "0",
-            explosion: $(".dialog input[name=cardexplosion]")[0].checked,
-            reaction: $(".dialog input[name=cardreaction]")[0].checked
+            explosion: false,
+            reaction: false
         };
         
         CardSpell._card2form(card);
@@ -313,6 +317,7 @@ var CardSpell = {
             cost: $(".dialog input[name=cardcost]")[0].value || "0",
             saturation: $(".dialog input[name=cardsaturation]")[0].value || "0",
             image: $(".dialog input[name=cardimage]")[0].value,
+            imageEffect: $(".dialog input[name=cardimageeffect]")[0].checked,
             imagelocation: {x: $(".dialog input[name=cardimagelocation]")[0].value || "50", y: $(".dialog input[name=cardimagelocation2]")[0].value || "50"},
             imagezoom: $(".dialog input[name=cardimagezoom]")[0].value || "100",
             imagerotation: $(".dialog input[name=cardimagerotation]")[0].value || "0",
@@ -330,6 +335,7 @@ var CardSpell = {
         $(".dialog input[name=cardcost]")[0].value = card.cost;
         $(".dialog input[name=cardsaturation]")[0].value = card.saturation;
         $(".dialog input[name=cardimage]")[0].value = card.image;
+        $(".dialog input[name=cardimageeffect]")[0].checked = card.imageEffect !== false;
         $(".dialog input[name=cardimagelocation]")[0].value = card.imagelocation.x;
         $(".dialog input[name=cardimagelocation2]")[0].value = card.imagelocation.y;
         $(".dialog input[name=cardimagezoom]")[0].value = card.imagezoom;

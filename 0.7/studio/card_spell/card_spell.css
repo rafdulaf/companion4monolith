@@ -497,6 +497,21 @@
     content: "3";
 }
 
+.dialog .spell .imageeffect {
+    text-align: left;
+}
+.dialog .spell .imageeffect input[type=checkbox] {
+    width: 16px;
+    height: 16px;
+    margin-left: 0;
+}
+.dialog .spell .imageeffect input[type=checkbox] + label {
+    font-size: 24px;
+    font-family: 'Moolbor';
+    width: calc(100% - 40px);
+    display: inline-block;
+}
+
 @media screen and (min-width: 840px) {
     .dialog .eqcolspell {
         width: 50%;
