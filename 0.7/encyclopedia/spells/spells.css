@@ -3,3 +3,16 @@
     overflow: auto;
     position: relative;
 }
+.encyclopedia-spell-tostudio::before {
+    content: "\f591";
+    font-family: 'Font Awesome 5 Free';
+}
+
+.spelldetails .spell {
+    float: left;
+}
+.spelldetails .from,
+.spelldetails .clarification {
+    margin-left: 320px;
+    text-indent: -90px;
+}
