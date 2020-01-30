@@ -1,0 +1,30 @@
+.search-engine {
+    position: fixed;
+    width: 200px;
+    padding: 5px;
+}
+.search-engine .facet > span {
+    display: block;
+    margin-bottom: 2px;
+}
+.search-engine .facet label *{
+    display: inline-block;
+    vertical-align: top;
+}
+.search-engine .facet label {
+    white-space: nowrap;
+    display: block;
+    font-family: 'Moolbor';
+    font-size: 140%;
+    line-height: 120%;
+    height: 18px;
+}
+
+.search-engine .facet label:after {
+    content: " (" attr(data-count) ")";
+}
+
+.search-engine .facet[data-count='0'],
+.search-engine .facet label[data-count='0'] {
+    display: none;
+}

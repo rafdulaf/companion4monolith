@@ -360,6 +360,33 @@ var ConanAbout = {
             function() {
             }
         );        
+    },
+    
+    _hasExpansion: function(origins)
+    {
+        for (var i in Encyclopedia.expansions.types)
+        {
+            var type = Encyclopedia.expansions.types[i];
+            if (type.single)
+            {
+                if (origins.indexOf(Extensions[type.id]) != -1)
+                {
+                    return true;
+                }
+            }
+            else
+            {
+                for (var j in origins)
+                {
+                    var origin = origins[j];
+                    if (Extensions[origin])
+                    {
+                        return true;
+                    }
+                }
+            }
+        }
+        return false;
     }
 }
 

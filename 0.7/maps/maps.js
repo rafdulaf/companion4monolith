@@ -46,33 +46,6 @@ var ConanMaps = {
         }
     },
     
-    _hasExpansion: function(origins)
-    {
-        for (var i in Encyclopedia.expansions.types)
-        {
-            var type = Encyclopedia.expansions.types[i];
-            if (type.single)
-            {
-                if (origins.indexOf(Extensions[type.id]) != -1)
-                {
-                    return true;
-                }
-            }
-            else
-            {
-                for (var j in origins)
-                {
-                    var origin = origins[j];
-                    if (Extensions[origin])
-                    {
-                        return true;
-                    }
-                }
-            }
-        }
-        return false;
-    },
-    
 	init: function(config)
 	{
         Nav.addIcon(ConanMaps._i18n[Language].menu, "maps-icon", "maps");
@@ -97,7 +70,7 @@ var ConanMaps = {
 		{
 			var map = Encyclopedia.maps.list[i];
             
-            if (!ConanMaps._hasExpansion(map.description.origins))
+            if (!ConanAbout._hasExpansion(map.description.origins))
             {
                 map.discard = true;
             }
