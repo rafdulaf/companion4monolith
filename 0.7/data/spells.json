@@ -16,6 +16,18 @@
             "saturation": "2",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": true,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": false,
     
             "image": "data/spells/img/boris_rage.png",
             "origins": ["corebox", "stretchgoal", "king"],
@@ -42,6 +54,18 @@
             "saturation": "1",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": true,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": true,
+            "forRange": false,
+            "forEnergy": false,
     
             "image": "data/spells/img/borne_by_the_wind.png",
             "origins": ["corebox", "stretchgoal", "king",
@@ -69,6 +93,18 @@
             "saturation": "1",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": false,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": true,
     
             "image": "data/spells/img/energy_drain.png",
             "origins": ["corebox", "stretchgoal", "king"],
@@ -95,6 +131,18 @@
             "saturation": "2",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": false,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": true,
     
             "image": "data/spells/img/gift_of_life.png",
             "origins": ["corebox", "stretchgoal", "king"],
@@ -121,6 +169,18 @@
             "saturation": "3",
             "explosion": true,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": false,
+            
+            "forSkill": false,
+            "forAttack": true,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": false,
+            "forEnergy": false,
     
             "image": "data/spells/img/kiss_of_death.png",
             "origins": ["corebox", "stretchgoal", "king"],
@@ -147,6 +207,18 @@
             "saturation": "3",
             "explosion": true,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": true,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": false,
     
             "image": "data/spells/img/lightning_storm.png",
             "origins": ["corebox", "stretchgoal", "king"],
@@ -173,6 +245,18 @@
             "saturation": "2",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": true,
     
             "image": "data/spells/img/magical_dizziness.png",
             "origins": ["corebox", "stretchgoal", "king"],
@@ -199,6 +283,18 @@
             "saturation": "3",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": true,
+            "forRange": true,
+            "forEnergy": false,
     
             "image": "data/spells/img/mind_control.png",
             "origins": ["corebox", "stretchgoal", "king"],
@@ -225,6 +321,18 @@
             "saturation": "3",
             "explosion": false,
             "reaction": true,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": true,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": false,
+            "forEnergy": false,
     
             "image": "data/spells/img/mitras_halo.png",
             "origins": ["corebox", "stretchgoal", "king"],
@@ -251,6 +359,18 @@
             "saturation": "2",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": false,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": false,
+            "forEnergy": true,
     
             "image": "data/spells/img/mitras_healing.png",
             "origins": ["corebox", "stretchgoal", "king"],
@@ -277,6 +397,18 @@
             "saturation": "3",
             "explosion": true,
             "reaction": true,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": true,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": false,
+            "forEnergy": false,
     
             "image": "data/spells/img/pestilential_swarm.png",
             "origins": ["corebox", "stretchgoal", "king"],
@@ -303,6 +435,18 @@
             "saturation": "2",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": true,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": false,
     
             "image": "data/spells/img/sets_bite.png",
             "origins": ["corebox", "stretchgoal", "king"],
@@ -329,6 +473,18 @@
             "saturation": "2",
             "explosion": false,
             "reaction": true,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": true,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": false,
+            "forEnergy": false,
     
             "image": "data/spells/img/sets_halo.png",
             "origins": ["corebox", "stretchgoal", "king",
@@ -356,6 +512,18 @@
             "saturation": "4",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": true,
+            "forRange": true,
+            "forEnergy": false,
     
             "image": "data/spells/img/sets_possession.png",
             "origins": ["corebox", "stretchgoal", "king"],
@@ -382,6 +550,18 @@
             "saturation": "1",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": false,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": false,
     
             "image": "data/spells/img/telekinesis.png",
             "origins": ["corebox", "stretchgoal", "king"],
@@ -412,6 +592,18 @@
             "explosion": false,
             "reaction": false,
             
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": true,
+            "forRange": false,
+            "forEnergy": false,
+            
             "image": "data/spells/img/teleportation.png",
             "origins": ["corebox", "stretchgoal", "king", 
                         "stretchgoal", "king"],
@@ -438,12 +630,24 @@
             "saturation": "2",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": false,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": true,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": false,
     
             "image": "data/spells/img/archer_of_acheron.png",
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 134, "textInter": 66 },
+                "fr": { "textSize": 130, "textInter": 66 },
                 "en": { "textSize": 142, "textInter": 70 }
             }
         },
@@ -464,6 +668,18 @@
             "saturation": "3",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+
+            "forSkill": true,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": false,
     
             "image": "data/spells/img/bad_luck.png",
             "origins": ["stretchgoal", "king"],
@@ -490,6 +706,18 @@
             "saturation": "1",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": true,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": false,
     
             "image": "data/spells/img/barrier_of_the_winds.png",
             "origins": ["stretchgoal", "king"],
@@ -516,6 +744,18 @@
             "saturation": "2",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": true,
+            "forMove": false,
+            "forRange": false,
+            "forEnergy": false,
     
             "image": "data/spells/img/bels_caress.png",
             "origins": ["stretchgoal", "king"],
@@ -542,6 +782,18 @@
             "saturation": "2",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": false,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": true,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": false,
     
             "image": "data/spells/img/bels_hand.png",
             "origins": ["stretchgoal", "king"],
@@ -568,6 +820,18 @@
             "saturation": "2",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": true,
+            "forAttack": false,
+            "forDefense": true,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": false,
     
             "image": "data/spells/img/blessing_of_ibis.png",
             "origins": ["stretchgoal", "king"],
@@ -594,7 +858,19 @@
             "saturation": "4",
             "explosion": false,
             "reaction": false,
-    
+
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": true,
+            
             "image": "data/spells/img/changing_destiny.png",
             "origins": ["stretchgoal", "king"],
     
@@ -620,9 +896,24 @@
             "saturation": "4",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": false,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": true,
+            "forRange": true,
+            "forEnergy": false,
     
             "image": "data/spells/img/dagons_attack.png",
             "origins": ["stretchgoal", "king"],
+            
+            "forOverlord": true,
+            "forHeroes": false,
     
             "textStyle": {
                 "fr": { "textSize": 150, "textInter": 66 },
@@ -646,6 +937,18 @@
             "saturation": "",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": false,
+            "forEnergy": false,
     
             "image": "data/spells/img/dagons_awakening.png",
             "origins": ["stretchgoal", "king"],
@@ -672,6 +975,18 @@
             "saturation": "2",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": true,
+            "forRange": true,
+            "forEnergy": false,
     
             "image": "data/spells/img/deceleration.png",
             "origins": ["stretchgoal", "king"],
@@ -698,6 +1013,18 @@
             "saturation": "3",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": true,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": false,
     
             "image": "data/spells/img/divine_charisma.png",
             "origins": ["stretchgoal", "king"],
@@ -729,11 +1056,23 @@
             "explosion": true,
             "reaction": false,
     
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": true,
+            "forRange": true,
+            "forEnergy": false,
+            
             "image": "data/spells/img/drying_earth.png",
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 134, "textInter": 66 },
+                "fr": { "textSize": 130, "textInter": 66 },
                 "en": { "textSize": 148, "textInter": 66 }
             }
         },
@@ -754,6 +1093,18 @@
             "saturation": "2",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": true,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": true,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": false,
     
             "image": "data/spells/img/eagle_eye.png",
             "origins": ["stretchgoal", "king"],
@@ -780,6 +1131,18 @@
             "saturation": "2",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": true,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": true,
+            "forRange": true,
+            "forEnergy": false,
     
             "image": "data/spells/img/eel_skin.png",
             "origins": ["stretchgoal", "king"],
@@ -806,12 +1169,24 @@
             "saturation": "2",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": false,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": true,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": false,
     
             "image": "data/spells/img/escape_route.png",
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 134, "textInter": 66 },
+                "fr": { "textSize": 130, "textInter": 66 },
                 "en": { "textSize": 150, "textInter": 66 }
             }
         },
@@ -832,6 +1207,18 @@
             "saturation": "3",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": true,
+            "forRange": true,
+            "forEnergy": false,
     
             "image": "data/spells/img/fleet_runner.png",
             "origins": ["stretchgoal", "king"],
@@ -858,12 +1245,24 @@
             "saturation": "2",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": false,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": true,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": false,
     
             "image": "data/spells/img/gullahs_strength.png",
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
-                "fr": { "textSize": 134, "textInter": 66 },
+                "fr": { "textSize": 130, "textInter": 66 },
                 "en": { "textSize": 148, "textInter": 66 }
             }
         },
@@ -884,6 +1283,18 @@
             "saturation": "",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": false,
+            "forEnergy": false,
     
             "image": "data/spells/img/gwahlurs_darkness.png",
             "origins": ["stretchgoal", "king"],
@@ -910,6 +1321,18 @@
             "saturation": "2",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": true,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": false,
     
             "image": "data/spells/img/hand_of_death.png",
             "origins": ["stretchgoal", "king"],
@@ -936,6 +1359,18 @@
             "saturation": "",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": false,
+            "forEnergy": false,
     
             "image": "data/spells/img/hanumans_body.png",
             "origins": ["stretchgoal", "king"],
@@ -962,6 +1397,18 @@
             "saturation": "",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": true,
+            "forRange": true,
+            "forEnergy": false,
     
             "image": "data/spells/img/inversion.png",
             "origins": ["stretchgoal", "king"],
@@ -988,6 +1435,18 @@
             "saturation": "3",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": true,
+            "forAttack": false,
+            "forDefense": true,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": false,
     
             "image": "data/spells/img/ishtars_gaze.png",
             "origins": ["stretchgoal", "king"],
@@ -1014,6 +1473,18 @@
             "saturation": "",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": false,
+            "forEnergy": false,
     
             "image": "data/spells/img/jhebbal_sags_rage.png",
             "origins": ["stretchgoal", "king"],
@@ -1040,6 +1511,18 @@
             "saturation": "2",
             "explosion": true,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": true,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": false,
     
             "image": "data/spells/img/lethal_cloud.png",
             "origins": ["stretchgoal", "king"],
@@ -1066,6 +1549,18 @@
             "saturation": "1",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": false,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": true,
     
             "image": "data/spells/img/life_transfer.png",
             "origins": ["stretchgoal", "king"],
@@ -1079,9 +1574,14 @@
         {
             "id": "light_as_a_feather",
             "title": {
-                "fr": "Léger comme un plume",
+                "fr": "Léger comme une plume",
                 "en": "Light as a Feather"
             },
+            "titleLong": {
+                "fr": true,
+                "en": false
+            },
+            
             "text": {
                 "fr": "Ciblez une figurine avec ligne de vue.\nLa cible diminue de 3 son encombrement actuel jusqu'à la fin du tour du camp du lanceur.",
                 "en": "Choose a character in your line of sight. That character's encumbrance level is decreased by 3 until the end of your turn."
@@ -1092,6 +1592,18 @@
             "saturation": "2",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": false,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": true,
+            "forRange": true,
+            "forEnergy": false,
     
             "image": "data/spells/img/light_as_a_feather.png",
             "origins": ["stretchgoal", "king"],
@@ -1118,6 +1630,18 @@
             "saturation": "2",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": true,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": false,
     
             "image": "data/spells/img/magic_block.png",
             "origins": ["stretchgoal", "king"],
@@ -1144,6 +1668,18 @@
             "saturation": "2",
             "explosion": true,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": true,
+            "forRange": false,
+            "forEnergy": false,
     
             "image": "data/spells/img/mystic_barrier.png",
             "origins": ["stretchgoal", "king"],
@@ -1170,6 +1706,18 @@
             "saturation": "2",
             "explosion": false,
             "reaction": true,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": true,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": false,
+            "forEnergy": false,
     
             "image": "data/spells/img/putrescence.png",
             "origins": ["stretchgoal", "king"],
@@ -1196,6 +1744,18 @@
             "saturation": "3",
             "explosion": true,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": true,
+            "forRange": true,
+            "forEnergy": false,
     
             "image": "data/spells/img/recall.png",
             "origins": ["stretchgoal", "king"],
@@ -1222,6 +1782,18 @@
             "saturation": "5",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": true,
+            "forMove": false,
+            "forRange": false,
+            "forEnergy": false,
     
             "image": "data/spells/img/return_of_the_brave.png",
             "origins": ["stretchgoal", "king"],
@@ -1248,6 +1820,18 @@
             "saturation": "",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": false,
+            "forEnergy": false,
     
             "image": "data/spells/img/sets_blood.png",
             "origins": ["stretchgoal", "king"],
@@ -1274,6 +1858,18 @@
             "saturation": "4",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": true,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": false,
     
             "image": "data/spells/img/sets_illusion.png",
             "origins": ["stretchgoal", "king"],
@@ -1300,6 +1896,18 @@
             "saturation": "3",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": true,
+            "forRange": true,
+            "forEnergy": false,
     
             "image": "data/spells/img/shapechanger.png",
             "origins": ["stretchgoal", "king"],
@@ -1326,6 +1934,18 @@
             "saturation": "3",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": true,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": false,
     
             "image": "data/spells/img/stone_skin.png",
             "origins": ["stretchgoal", "king"],
@@ -1352,6 +1972,18 @@
             "saturation": "2",
             "explosion": true,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": true,
+            "forRange": true,
+            "forEnergy": false,
     
             "image": "data/spells/img/tears_of_dagon.png",
             "origins": ["stretchgoal", "king"],
@@ -1378,6 +2010,18 @@
             "saturation": "",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": false,
+            "forEnergy": false,
     
             "image": "data/spells/img/warmth_of_ishtar.png",
             "origins": ["stretchgoal", "king"],
@@ -1404,6 +2048,18 @@
             "saturation": "2",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": true,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": false,
     
             "image": "data/spells/img/withering.png",
             "origins": ["stretchgoal", "king"],
@@ -1430,6 +2086,18 @@
             "saturation": "5",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": false,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": true,
+            "forMove": false,
+            "forRange": false,
+            "forEnergy": false,
     
             "image": "data/spells/img/yajurs_awakening.png",
             "origins": ["stretchgoal", "king"],
@@ -1456,6 +2124,18 @@
             "saturation": "3",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": true,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": false,
+            "forEnergy": false,
     
             "image": "data/spells/img/ymirs_rage.png",
             "origins": ["stretchgoal", "king"],
@@ -1482,6 +2162,18 @@
             "saturation": "2",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": false,
+            
+            "forSkill": false,
+            "forAttack": true,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": false,
     
             "image": "data/spells/img/weight_of_the_years.png",
             "origins": ["nordheim"],
@@ -1508,6 +2200,18 @@
             "saturation": "2",
             "explosion": true,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": true,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": false,
     
             "image": "data/spells/img/blaze.png",
             "origins": ["khitai"],
@@ -1534,6 +2238,18 @@
             "saturation": "3",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": true,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": false,
+            "forEnergy": false,
     
             "image": "data/spells/img/mental_torture.png",
             "origins": ["khitai"],
@@ -1560,6 +2276,18 @@
             "saturation": "3",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": true,
+            "forRange": false,
+            "forEnergy": false,
     
             "image": "data/spells/img/push_back.png",
             "origins": ["khitai"],
@@ -1573,11 +2301,11 @@
         {
             "id": "pass_through_wall",
             "title": {
-                "fr": "",
+                "fr": "Passe-muraille",
                 "en": "Pass through Wall"
             },
             "text": {
-                "fr": "",
+                "fr": "Le lanceur de sort peut traverser une paroi le séparant d'une zone adjacente du même niveau comme s'il s'agissait d'une limite de zone normale. Son déplacement reste impacté par le phénomène de gêne.",
                 "en": "Spend 1 movement point to move across an obstacle to an adjacent area of same elevation. This movement is affected by hindering."
             },
             "clarification": null,
@@ -1586,12 +2314,24 @@
             "saturation": "1",
             "explosion": false,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": true,
+            "forRange": false,
+            "forEnergy": false,
     
             "image": "data/spells/img/pass_through_wall.png",
             "origins": ["stygia"],
     
             "textStyle": {
-                "fr": { "textSize": 150, "textInter": 66 },
+                "fr": { "textSize": 140, "textInter": 66 },
                 "en": { "textSize": 150, "textInter": 66 }
             }
         },
@@ -1599,11 +2339,11 @@
         {
             "id": "psychic_strike",
             "title": {
-                "fr": "",
+                "fr": "Attaque psychique",
                 "en": "Psychic Strike"
             },
             "text": {
-                "fr": "",
+                "fr": "Le lanceur de sort cible un héros situé à x zones. Ce héros passe toutes ses gemmes de sa zone d'énergie à sa zone de fatigue.",
                 "en": "Choose a hero X areas away from you. That hero moves all gems from their Reserve zone to their Fatigue zone."
             },
             "clarification": null,
@@ -1613,6 +2353,18 @@
             "explosion": false,
             "reaction": false,
     
+            "forOverlord": true,
+            "forHeroes": false,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": true,
+            
             "image": "data/spells/img/psychic_strike.png",
             "origins": ["stygia"],
     
@@ -1625,12 +2377,12 @@
         {
             "id": "stone_rain",
             "title": {
-                "fr": "",
+                "fr": "Pluie de Pierres",
                 "en": "Stone Rain"
             },
             "text": {
-                "fr": "",
-                "en": "Choose an area X areas away from you with a secret passage or well token. Remove that token and attack that area; roll 2 Red dice. Characters cannot defend against this attack and suffer damage equal to the attack power."
+                "fr": "Le lanceur de sort choisit une zone avec un pion \"Passage secret\" ou \"Puits\" situé à X zones et le retire du jeu. Les occupants de cette zone subissent une attaque de {dice_red}{dice_red} sans défense possible.",
+                "en": "Choose an area X areas away from you with a secret passage or well token. Remove that token and attack that area; roll {dice_red}{dice_red}. Characters cannot defend against this attack and suffer damage equal to the attack power."
             },
             "clarification": null,
     
@@ -1638,12 +2390,24 @@
             "saturation": "0",
             "explosion": true,
             "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": true,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": false,
     
             "image": "data/spells/img/stone_rain.png",
             "origins": ["stygia"],
     
             "textStyle": {
-                "fr": { "textSize": 150, "textInter": 66 },
+                "fr": { "textSize": 137, "textInter": 66 },
                 "en": { "textSize": 125, "textInter": 72 }
             }
         }

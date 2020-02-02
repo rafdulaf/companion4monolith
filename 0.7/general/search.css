@@ -1,12 +1,20 @@
 .search-engine {
     position: fixed;
-    width: 200px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 156px;
+    height: 100%;
     padding: 5px;
 }
 .search-engine .facet > span {
     display: block;
     margin-bottom: 2px;
+    white-space: nowrap;
 }
+.search-engine .facet input[type=text] {
+    width: 100%;
+}
+
 .search-engine .facet label *{
     display: inline-block;
     vertical-align: top;

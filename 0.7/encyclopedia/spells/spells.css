@@ -4,19 +4,26 @@
     position: relative;
 }
 #encyclopedia-spell-wrapper {
-    width: calc(100% - 200px);
-    margin-left: 200px;
+    margin-left: 156px;
+    text-align: center;
 }
 .encyclopedia-spell-tostudio::before {
     content: "\f591";
     font-family: 'Font Awesome 5 Free';
 }
 
-.spelldetails .spell {
-    float: left;
-}
 .spelldetails .from,
 .spelldetails .clarification {
-    margin-left: 320px;
     text-indent: -90px;
+    margin-left: 90px;
+}
+
+@media (min-width: 500px) {
+    .spelldetails .spell {
+        float: left;
+    }
+    .spelldetails .from,
+    .spelldetails .clarification {
+        margin-left: 320px;
+    }
 }
