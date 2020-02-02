@@ -950,7 +950,7 @@
             "forRange": false,
             "forEnergy": false,
     
-            "image": "data/spells/img/dagons_awakening.png",
+            "image": null,
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
@@ -1296,7 +1296,7 @@
             "forRange": false,
             "forEnergy": false,
     
-            "image": "data/spells/img/gwahlurs_darkness.png",
+            "image": null,
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
@@ -1372,7 +1372,7 @@
             "forRange": false,
             "forEnergy": false,
     
-            "image": "data/spells/img/hanumans_body.png",
+            "image": null,
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
@@ -1486,7 +1486,7 @@
             "forRange": false,
             "forEnergy": false,
     
-            "image": "data/spells/img/jhebbal_sags_rage.png",
+            "image": null,
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
@@ -1833,7 +1833,7 @@
             "forRange": false,
             "forEnergy": false,
     
-            "image": "data/spells/img/sets_blood.png",
+            "image": null,
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {
@@ -2023,7 +2023,7 @@
             "forRange": false,
             "forEnergy": false,
     
-            "image": "data/spells/img/warmth_of_ishtar.png",
+            "image": null,
             "origins": ["stretchgoal", "king"],
     
             "textStyle": {

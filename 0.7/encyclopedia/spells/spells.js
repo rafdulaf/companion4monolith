@@ -104,7 +104,30 @@ var EncyclopediaSpells = {
                     return values;
                 })(),
                 filter: function(item, selectedValues) {
-                    return item.origins.filter(v => selectedValues.indexOf(v) != -1).length > 0;
+                    var origins = item.origins.slice(0);
+                    for (var i in Encyclopedia.expansions.types)
+                    {
+                        var startRemove = false;
+
+                        var type = Encyclopedia.expansions.types[i];
+                        
+                        for (var j in Encyclopedia.expansions.list)
+                        {
+                            var expansion = Encyclopedia.expansions.list[j];
+                            if (expansion.type == type.id)
+                            {
+                                if (startRemove)
+                                {
+                                    origins = origins.filter(o => o != expansion.id);
+                                }
+                                else if (origins.indexOf(expansion.id) != -1)
+                                {
+                                    startRemove = true;
+                                }
+                            }
+                        }
+                    }
+                    return origins.filter(v => selectedValues.indexOf(v) != -1).length > 0;
                 }
             },
             
@@ -280,7 +303,8 @@ var EncyclopediaSpells = {
                         label: {
                             'fr': "Remplies",
                             'en': "Filled"
-                        }
+                        },
+                        defaults: true
                     },
                     {
                         id: "yes",
@@ -406,7 +430,7 @@ var EncyclopediaSpells = {
             textInter: spell.textStyle[Language].textInter,
             cost: spell.cost,
             saturation: spell.saturation,
-            image: Version + "/" + spell.image,
+            image: spell.image ? Version + "/" + spell.image : null,
             imageEffect: false,
             imagelocation: {x: "50", y: "50"},
             imagezoom: "100",
@@ -551,8 +575,11 @@ var EncyclopediaSpells = {
                 for (var v in facet.values)
                 {
                     var value = facet.values[v];
+                    
+                    var a = value.defaults ? " checked='checked'" : ""; 
+                    
                     se += "<label>" 
-                        + "<input type='checkbox' id='es-" + facet.id + "-" + value.id + "' onclick='" + displayFunc + "' onchange='" + displayFunc + "'/>"
+                        + "<input type='checkbox' id='es-" + facet.id + "-" + value.id + "' onclick='" + displayFunc + "' onchange='" + displayFunc + "'" + a + "/>"
                         + "<span>" 
                         + value.label[Language]
                         + "</span>"
