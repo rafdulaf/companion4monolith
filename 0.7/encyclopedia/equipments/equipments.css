@@ -1,0 +1,27 @@
+#encyclopedia-equipment {
+    font-family: 'Hyborian';
+    overflow: auto;
+    position: relative;
+}
+#encyclopedia-equipment-wrapper {
+    margin-left: 156px;
+    text-align: center;
+}
+.encyclopedia-equipment-tostudio::before {
+    content: "\f591";
+    font-family: 'Font Awesome 5 Free';
+}
+
+.equipmentdetails .from {
+    text-indent: -90px;
+    margin-left: 90px;
+}
+
+@media (min-width: 500px) {
+    .equipmentdetails .equipment {
+        float: left;
+    }
+    .equipmentdetails .from {
+        margin-left: 320px;
+    }
+}

@@ -1,0 +1,1480 @@
+{
+    "list": [
+        {
+            "id": "battle_axe",
+            "title": {
+                "fr": "",
+                "en": "Battle Axe"
+            },
+            "encumbrance": 3,
+            
+            "melee": { "0": "redreroll", "1": "none" },
+            "ranged": { "0": "redreroll", "1": "none", "throwable": true },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "bossonian_bow",
+            "title": {
+                "fr": "",
+                "en": "Bossonian Bow"
+            },
+            "encumbrance": 2,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "orange", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "dagger",
+            "title": {
+                "fr": "",
+                "en": "Dagger"
+            },
+            "encumbrance": 1,
+            
+            "melee": { "0": "yellow", "1": "none" },
+            "ranged": { "0": "yellow", "1": "none", "throwable": true },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["corebox", "stretchgoal", "king",
+                        "corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "conans_sword",
+            "title": {
+                "fr": "",
+                "en": "Conan’s Sword"
+            },
+            "encumbrance": 2,
+            
+            "melee": { "0": "orange", "1": "none" },
+            "ranged": { "0": "orange", "1": "none", "throwable": true },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "orange", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["corebox", "stretchgoal", "king",
+                        "bbox"]
+        },
+    
+        {
+            "id": "crossbow",
+            "title": {
+                "fr": "",
+                "en": "Crossbow"
+            },
+            "encumbrance": 3,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "red", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "explosive_orb",
+            "title": {
+                "fr": "Orbe explosive",
+                "en": "Explosive Orb"
+            },
+            "encumbrance": 1,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "red", "1": "red", "explosive": true },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["corebox", "stretchgoal", "king",
+                        "corebox", "stretchgoal", "king",
+                        "corebox", "stretchgoal", "king",
+                        "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "halberd",
+            "title": {
+                "fr": "Hallebarde",
+                "en": "Halberd"
+            },
+            "encumbrance": 3,
+            
+            "melee": { "0": "red", "1": "red" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "yellow", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "javelin",
+            "title": {
+                "fr": "Javelot",
+                "en": "Javelin"
+            },
+            "encumbrance": 1,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "red", "1": "none", "throwable": true },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["corebox", "stretchgoal", "king",
+                        "corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "kris",
+            "title": {
+                "fr": "Kriss",
+                "en": "Kris"
+            },
+            "encumbrance": 1,
+            
+            "melee": { "0": "yellowreroll", "1": "none" },
+            "ranged": { "0": "yellow", "1": "none", "throwable": true },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "ornamental_spear",
+            "title": {
+                "fr": "Lance d'ornement",
+                "en": "Ornamental Spear"
+            },
+            "encumbrance": 2,
+            
+            "melee": { "0": "orangereroll", "1": "none" },
+            "ranged": { "0": "orangereroll", "1": "none", "throwable": true },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "parrying_dagger",
+            "title": {
+                "fr": "Dague de parade",
+                "en": "Parrying Dagger"
+            },
+            "encumbrance": 1,
+            
+            "melee": { "0": "yellowreroll", "1": "none" },
+            "ranged": { "0": "yellowreroll", "1": "none", "throwable": true },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "yellowreroll", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["corebox", "stretchgoal", "king",
+                        "bbox"]
+        },
+    
+        {
+            "id": "sword",
+            "title": {
+                "fr": "Epée",
+                "en": "Sword"
+            },
+            "encumbrance": 2,
+            
+            "melee": { "0": "orangereroll", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "yellowreroll", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "throwing_knives",
+            "title": {
+                "fr": "Lames de lancer",
+                "en": "Throwing Knives"
+            },
+            "encumbrance": 0,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "yellow", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "tribal_mace",
+            "title": {
+                "fr": "Masse tribale",
+                "en": "Tribal Mace"
+            },
+            "encumbrance": 2,
+            
+            "melee": { "0": "orangereroll", "1": "none" },
+            "ranged": { "0": "orange", "1": "none", "throwable": true },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "yuetshi_knife",
+            "title": {
+                "fr": "Poignard Yuetshi",
+                "en": "Yuetshi Knife"
+            },
+            "encumbrance": 2,
+            
+            "melee": { "0": "orangereroll", "1": "none" },
+            "ranged": { "0": "orange", "1": "none", "throwable": true },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "chain_mail",
+            "title": {
+                "fr": "Cotte de Mailles",
+                "en": "Chain Mail"
+            },
+            "encumbrance": 5,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "orange", "1": "none" },
+    
+            "image": null,
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "leather_armor",
+            "title": {
+                "fr": "Armure de cuir",
+                "en": "Leather Armor"
+            },
+            "encumbrance": 2,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "yellow", "1": "none" },
+    
+            "image": null,
+            "origins": ["corebox", "stretchgoal", "king",
+                        "corebox", "stretchgoal", "king",
+                        "nordheim"]
+        },
+    
+        {
+            "id": "scale_mail",
+            "title": {
+                "fr": "Armure d'écaille",
+                "en": "Scale Mail"
+            },
+            "encumbrance": 5,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "red", "1": "none" },
+    
+            "image": null,
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "buckler",
+            "title": {
+                "fr": "Ecu",
+                "en": "Buckler"
+            },
+            "encumbrance": 2,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "yellow", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "shield",
+            "title": {
+                "fr": "Bouclier",
+                "en": "Shield"
+            },
+            "encumbrance": 2,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "orange", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "tribal_shield",
+            "title": {
+                "fr": "Bouclier tribal",
+                "en": "Tribal Shield"
+            },
+            "encumbrance": 3,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "orangereroll", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "life_potion",
+            "title": {
+                "fr": "Potion de vie",
+                "en": "Life Potion"
+            },
+            "encumbrance": 0,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["corebox", "stretchgoal", "king",
+                        "corebox", "stretchgoal", "king",
+                        "corebox", "stretchgoal", "king",
+                        "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "empty_chest",
+            "title": {
+                "fr": "Coffre vide",
+                "en": "Empty Chest"
+            },
+            "encumbrance": 3,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["corebox", "stretchgoal", "king",
+                        "corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "key",
+            "title": {
+                "fr": "Clef",
+                "en": "Key"
+            },
+            "encumbrance": 0,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "pictish_fetish",
+            "title": {
+                "fr": "Fétiche picte",
+                "en": "Pictish Fetish"
+            },
+            "encumbrance": 1,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "shamans_staff",
+            "title": {
+                "fr": "Bâton de Shaman",
+                "en": "Shaman’s Staff"
+            },
+            "encumbrance": 1,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "sorcerers_scepter",
+            "title": {
+                "fr": "Sceptre de sorcier",
+                "en": "Sorcerer’s Scepter"
+            },
+            "encumbrance": 1,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "spellbook",
+            "title": {
+                "fr": "Grimoire",
+                "en": "Spellbook"
+            },
+            "encumbrance": 2,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "stygian_artifact",
+            "title": {
+                "fr": "Artefact Stygien",
+                "en": "Stygian Artifact"
+            },
+            "encumbrance": 1,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "tools",
+            "title": {
+                "fr": "Outils",
+                "en": "Tools"
+            },
+            "encumbrance": 1,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "xuthal_crown",
+            "title": {
+                "fr": "Couronne de Xuthal",
+                "en": "Xuthal Crown"
+            },
+            "encumbrance": 1,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["corebox", "stretchgoal", "king",
+                        "corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "axe",
+            "title": {
+                "fr": "Hache",
+                "en": "Axe"
+            },
+            "encumbrance": 2,
+            
+            "melee": { "0": "yellow", "1": "yellow" },
+            "ranged": { "0": "orange", "1": "none", "throwable": true },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "mitras_mace",
+            "title": {
+                "fr": "Masse de Mitra",
+                "en": "Mitra’s Mace"
+            },
+            "encumbrance": 2,
+            
+            "melee": { "0": "red", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "pirate_saber",
+            "title": {
+                "fr": "Sabre de pirate",
+                "en": "Pirate Saber"
+            },
+            "encumbrance": 1,
+            
+            "melee": { "0": "orange", "1": "none" },
+            "ranged": { "0": "yellow", "1": "none", "throwable": true },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "yellow", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "sacrificial_dagger",
+            "title": {
+                "fr": "Dague sacrificielle",
+                "en": "Sacrificial Dagger"
+            },
+            "encumbrance": 1,
+            
+            "melee": { "0": "yellow", "1": "yellow" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "stygian_scepter",
+            "title": {
+                "fr": "Sceptre stygien",
+                "en": "Stygian Scepter"
+            },
+            "encumbrance": 1,
+            
+            "melee": { "0": "redreroll", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "turanian_sword",
+            "title": {
+                "fr": "Epée Turanienne",
+                "en": "Turanian Sword"
+            },
+            "encumbrance": 2,
+            
+            "melee": { "0": "orangereroll", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "orangereroll", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "two-handed_sword",
+            "title": {
+                "fr": "Epée à deux mains",
+                "en": "Two-Handed Sword"
+            },
+            "encumbrance": 3,
+            
+            "melee": { "0": "redreroll", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "orange", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "zingaran_bow",
+            "title": {
+                "fr": "Arc zingaréen",
+                "en": "Zingaran Bow"
+            },
+            "encumbrance": 1,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "yellowreroll", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "zingaran_breastplate",
+            "title": {
+                "fr": "Plastron zingaréen",
+                "en": "Zingaran Breastplate"
+            },
+            "encumbrance": 3,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "yellowreroll", "1": "none" },
+    
+            "image": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "black_staff",
+            "title": {
+                "fr": "Bâton noir",
+                "en": "Black Staff"
+            },
+            "encumbrance": 1,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "yellow", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "mitras_staff",
+            "title": {
+                "fr": "Bâton de Mitra",
+                "en": "Mitra’s Staff"
+            },
+            "encumbrance": 2,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "yellowreroll", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "pictish_drink",
+            "title": {
+                "fr": "Alcool Picte",
+                "en": "Pictish Drink"
+            },
+            "encumbrance": 0,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["stretchgoal", "king",
+                        "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "cape",
+            "title": {
+                "fr": "Cape",
+                "en": "Cape"
+            },
+            "encumbrance": 2,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "censer",
+            "title": {
+                "fr": "Encensoir",
+                "en": "Censer"
+            },
+            "encumbrance": 1,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "elixir",
+            "title": {
+                "fr": "Elixir",
+                "en": "Elixir"
+            },
+            "encumbrance": 0,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "heart_of_ahriman",
+            "title": {
+                "fr": "Coeur d'Ahriman",
+                "en": "Heart of Ahriman"
+            },
+            "encumbrance": 0,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "hyrkanian_mirror",
+            "title": {
+                "fr": "Miroir Hyrkanien",
+                "en": "Hyrkanian Mirror"
+            },
+            "encumbrance": 1,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "idol_of_yag-kosha",
+            "title": {
+                "fr": "Idole Yag-Kosha",
+                "en": "Idol of Yag-Kosha"
+            },
+            "encumbrance": 4,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "phial",
+            "title": {
+                "fr": "Fiole",
+                "en": "Phial"
+            },
+            "encumbrance": 0,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "potion",
+            "title": {
+                "fr": "Potion",
+                "en": "Potion"
+            },
+            "encumbrance": 0,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "ring",
+            "title": {
+                "fr": "Anneau",
+                "en": "Ring"
+            },
+            "encumbrance": 0,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "sacred_treasure",
+            "title": {
+                "fr": "Trésor sacré",
+                "en": "Sacred Treasure"
+            },
+            "encumbrance": 3,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["stretchgoal", "king",
+                        "stretchgoal", "king",
+                        "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "unguent",
+            "title": {
+                "fr": "Onguent",
+                "en": "Unguent"
+            },
+            "encumbrance": 0,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "blank",
+            "title": {
+                "fr": "",
+                "en": ""
+            },
+            "encumbrance": 0,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["stretchgoal", "king",
+                        "stretchgoal", "king",
+                        "stretchgoal", "king",
+                        "stretchgoal", "king",
+                        "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "letters_a",
+            "title": {
+                "fr": "A",
+                "en": "A"
+            },
+            "encumbrance": 0,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["stretchgoal", "king"]
+        },
+
+        {
+            "id": "letters_b",
+            "title": {
+                "fr": "B",
+                "en": "B"
+            },
+            "encumbrance": 0,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["stretchgoal", "king"]
+        },
+
+        {
+            "id": "letters_c",
+            "title": {
+                "fr": "C",
+                "en": "C"
+            },
+            "encumbrance": 0,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["stretchgoal", "king"]
+        },
+
+        {
+            "id": "letters_d",
+            "title": {
+                "fr": "D",
+                "en": "D"
+            },
+            "encumbrance": 0,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["stretchgoal", "king"]
+        },
+
+        {
+            "id": "letters_e",
+            "title": {
+                "fr": "E",
+                "en": "E"
+            },
+            "encumbrance": 0,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "aesir_blade",
+            "title": {
+                "fr": "",
+                "en": "Aesir Blade"
+            },
+            "encumbrance": 2,
+            
+            "melee": { "0": "orange", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "orange", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["nordheim",
+                        "nordheim"]
+        },
+    
+        {
+            "id": "amulet_fragment",
+            "title": {
+                "fr": "Fragment d'amulette",
+                "en": "Amulet Fragment"
+            },
+            "encumbrance": 0,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["nordheim",
+                        "nordheim",
+                        "nordheim"]
+        },
+    
+        {
+            "id": "khitan_short_sword",
+            "title": {
+                "fr": "",
+                "en": "Khitan Short Sword"
+            },
+            "encumbrance": 2,
+            
+            "melee": { "0": "yellowreroll", "1": "none" },
+            "ranged": { "0": "yellowreroll", "1": "none", "throwable": true },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "yellowreroll", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["khitai"]
+        },
+    
+        {
+            "id": "khitan_sword",
+            "title": {
+                "fr": "",
+                "en": "Khitan Sword"
+            },
+            "encumbrance": 2,
+            
+            "melee": { "0": "orangereroll", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "yellowreroll", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["khitai"]
+        },
+    
+        {
+            "id": "black_lotus",
+            "title": {
+                "fr": "Lotus noir",
+                "en": "Black Lotus"
+            },
+            "encumbrance": 2,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["khitai",
+                        "khitai"]
+        },
+    
+        {
+            "id": "false_evidence",
+            "title": {
+                "fr": "Fausse preuve",
+                "en": "False Evidence"
+            },
+            "encumbrance": 0,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["khitai"]
+        },
+    
+        {
+            "id": "ginger",
+            "title": {
+                "fr": "Gingembre",
+                "en": "Ginger"
+            },
+            "encumbrance": 2,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["khitai",
+                        "khitai"]
+        },
+    
+        {
+            "id": "saltpeter",
+            "title": {
+                "fr": "Salpêtre",
+                "en": "Saltpeter"
+            },
+            "encumbrance": 2,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["khitai",
+                        "khitai"]
+        },
+    
+        {
+            "id": "toad_mucus",
+            "title": {
+                "fr": "Mucus de crapaud",
+                "en": "Toad Mucus"
+            },
+            "encumbrance": 2,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["khitai",
+                        "khitai"]
+        },
+    
+        {
+            "id": "tower_key",
+            "title": {
+                "fr": "Clef de la tour",
+                "en": "Tower Key"
+            },
+            "encumbrance": 2,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["khitai"]
+        },
+    
+        {
+            "id": "toxic_mushrooms",
+            "title": {
+                "fr": "Champignon toxique",
+                "en": "Toxic Mushrooms"
+            },
+            "encumbrance": 2,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["khitai",
+                        "khitai"]
+        },
+    
+        {
+            "id": "warlock_documents",
+            "title": {
+                "fr": "Document du Sorcier",
+                "en": "Warlock Documents"
+            },
+            "encumbrance": 0,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["khitai"]
+        },
+    
+        {
+            "id": "warlocks_blood",
+            "title": {
+                "fr": "Sang de sorcier",
+                "en": "Warlock’s Blood"
+            },
+            "encumbrance": 1,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["khitai",
+                        "khitai"]
+        },
+    
+        {
+            "id": "assassins_dagger",
+            "title": {
+                "fr": "",
+                "en": "Assassin’s Dagger"
+            },
+            "encumbrance": 1,
+            
+            "melee": { "0": "yellowreroll", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["stygia",
+                        "stygia"]
+        },
+    
+        {
+            "id": "antidote",
+            "title": {
+                "fr": "Potion anti-poison",
+                "en": "Antidote"
+            },
+            "encumbrance": 0,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["stygia",
+                        "stygia",
+                        "stygia",
+                        "stygia"]
+        },
+    
+        {
+            "id": "torch",
+            "title": {
+                "fr": "Torche",
+                "en": "Torch"
+            },
+            "encumbrance": 0,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["stygia",
+                        "stygia"]
+        },
+    
+        {
+            "id": "trapped_chest",
+            "title": {
+                "fr": "Coffre piégé",
+                "en": "Trapped Chest"
+            },
+            "encumbrance": 3,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["stygia",
+                        "stygia"]
+        },
+    
+        {
+            "id": "short_sword",
+            "title": {
+                "fr": "",
+                "en": "Short Sword"
+            },
+            "encumbrance": 2,
+            
+            "melee": { "0": "orangereroll", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "yellowreroll", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["bbox"]
+        },
+    
+        {
+            "id": "knife",
+            "title": {
+                "fr": "",
+                "en": "Knife"
+            },
+            "encumbrance": 1,
+            
+            "melee": { "0": "yellowreroll", "1": "none" },
+            "ranged": { "0": "yellow", "1": "none", "throwable": true },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["bbox"]
+        },
+    
+        {
+            "id": "amulet",
+            "title": {
+                "fr": "Amulette",
+                "en": "Amulet"
+            },
+            "encumbrance": 0,
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["bbox",
+                        "bbox"]
+        }
+    ]
+}

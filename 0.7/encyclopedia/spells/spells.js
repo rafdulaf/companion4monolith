@@ -324,7 +324,7 @@ var EncyclopediaSpells = {
     
     init: function() 
     {
-        $("#encyclopedia-spell").append(EncyclopediaSpells.displaySearchEngine(EncyclopediaSpells._facets, "EncyclopediaSpells.displaySpells()"));
+        $("#encyclopedia-spell").append(Encyclopedia.displaySearchEngine(EncyclopediaSpells._facets, "EncyclopediaSpells.displaySpells()", "es"));
         $("#encyclopedia-spell").append("<div id='encyclopedia-spell-wrapper'></div>");
         EncyclopediaSpells.displaySpells();
     },
@@ -459,72 +459,21 @@ var EncyclopediaSpells = {
     onHide: function() {
     },
     
-    _removeExtraExpansion: function(origins)
-    {
-        for (var i in Encyclopedia.expansions.types)
-        {
-            var type = Encyclopedia.expansions.types[i];
-            if (type.single)
-            {
-                var values = [];
-                for (var j in Encyclopedia.expansions.list)
-                {
-                    var expansion = Encyclopedia.expansions.list[j];
-                    if (expansion.type == type.id)
-                    {
-                        values.push(expansion.id);
-                    }
-                }
-
-                var neworigins = [];
-                for (var l=0; l < origins.length; l++)
-                {
-                    var origin = origins[l];
-                    for (var k in values)
-                    {
-                        var value = values[k];
-                        if (origin == value)
-                        {
-                            l += values.length - 1 - k;
-                            break;
-                        }
-                    }
-                    neworigins.push(origin);
-                }
-                origins = neworigins;
-            }
-        }
-        return origins;
-    },
-
-    _getOrigin: function(origin)
-    {
-        for (var j in Encyclopedia.expansions.list)
-        {
-            var expansion = Encyclopedia.expansions.list[j];
-            if (origin == expansion.id)
-            {
-                return expansion.title[Language];  
-            }
-        }
-        return null;
-    },
-
     openSpell: function(id) {
         var spell = EncyclopediaSpells._findSpellById(id);
         
-        var origins = EncyclopediaSpells._removeExtraExpansion(spell.origins.slice());
+        var origins = Encyclopedia._removeExtraExpansion(spell.origins.slice());
         var originsCount = {};
         for (var i in origins)
         {
             var origin = origins[i];
-            originsCount[origin] = originsCount[origin] ? originsCount[origin]++ : 1;
+            originsCount[origin] = originsCount[origin] ? originsCount[origin]+1 : 1;
         }
         var originString = "";
         for (var i in originsCount)
         {
             if (originString) originString += " " + EncyclopediaSpells._i18n[Language].fromAnd + " ";
-            originString += EncyclopediaSpells._getOrigin(i) + " (" + originsCount[i] + " " + (originsCount[i] == 1 ? EncyclopediaSpells._i18n[Language].card : EncyclopediaSpells._i18n[Language].cards) + ")";
+            originString += Encyclopedia._getOrigin(i) + " (" + originsCount[i] + " " + (originsCount[i] == 1 ? EncyclopediaSpells._i18n[Language].card : EncyclopediaSpells._i18n[Language].cards) + ")";
         }
         
         Nav.dialog(spell.title[Language],
@@ -558,43 +507,5 @@ var EncyclopediaSpells = {
             
             ConanAbout.warnToast(EncyclopediaSpells._i18n[Language].transfertOK)
         }
-    },
-    
-    displaySearchEngine: function(facets, displayFunc)
-    {
-        var se = "<div class='search-engine'>";
-        
-        for (var f in facets)
-        {
-            var facet = facets[f];
-            
-            se += "<div class='facet' id='es-" + facet.id + "'>"
-            se += "<span>" + facet.label[Language] + "</span>"
-            if (facet.values)
-            {
-                for (var v in facet.values)
-                {
-                    var value = facet.values[v];
-                    
-                    var a = value.defaults ? " checked='checked'" : ""; 
-                    
-                    se += "<label>" 
-                        + "<input type='checkbox' id='es-" + facet.id + "-" + value.id + "' onclick='" + displayFunc + "' onchange='" + displayFunc + "'" + a + "/>"
-                        + "<span>" 
-                        + value.label[Language]
-                        + "</span>"
-                        + "</label>";
-                }
-            }
-            else
-            {
-                se += "<input type='text' id='es-" + facet.id + "-input' onkeyup='" + displayFunc + "' onchange='" + displayFunc + "'/>";
-            }
-            se += "</div>"
-        }
-        
-        se += "</div>"
-        
-        return se;
     }
 }
