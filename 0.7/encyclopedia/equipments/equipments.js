@@ -154,6 +154,13 @@ var EncyclopediaEquipments = {
                         }
                     },
                     {
+                        id: "manipulation",
+                        label: {
+                            'fr': "Manipulation",
+                            'en': "Manipulation"
+                        }
+                    },
+                    {
                         id: "throwable",
                         label: {
                             'fr': "Lançable",
@@ -180,6 +187,20 @@ var EncyclopediaEquipments = {
                             'fr': "Défense passive",
                             'en': "Armor"
                         }
+                    },
+                    {
+                        id: "skill",
+                        label: {
+                            'fr': "Compétence",
+                            'en': "Skill"
+                        }
+                    },
+                    {
+                        id: "other",
+                        label: {
+                            'fr': "Autre",
+                            'en': "Other"
+                        }
                     }
                 ],
                 filter: function(item, selectedValues) {
@@ -187,9 +208,12 @@ var EncyclopediaEquipments = {
                     return (selectedValues.indexOf('melee')!=-1 && item.melee['0'] != "none")
                         || (selectedValues.indexOf('ranged')!=-1 && item.ranged['0'] != "none")
                         || (selectedValues.indexOf('throwable')!=-1 && item.ranged['0'] != "none" && item.ranged['throwable'])
+                        || (selectedValues.indexOf('manipulation')!=-1 && item.manipulation['0'] != "none")
                         || (selectedValues.indexOf('area')!=-1 && item.manipulation['0'] != "none" && item.manipulation['explosive'])
                         || (selectedValues.indexOf('guard')!=-1 && item.active['0'] != "none")
-                        || (selectedValues.indexOf('armor')!=-1 && item.passive['0'] != "none");
+                        || (selectedValues.indexOf('armor')!=-1 && item.passive['0'] != "none")
+                        || (selectedValues.indexOf('skill')!=-1 && item.skills && item.skills['0'] != "none")
+                        || (selectedValues.indexOf('other')!=-1 && item.melee['0'] == "none" && item.ranged['0'] == "none" && item.manipulation['0'] == "none" && item.active['0'] == "none" && item.passive['0'] == "none" && (!item.skills || item.skills['0'] == "none"));
                 }
             },
 
@@ -336,14 +360,14 @@ var EncyclopediaEquipments = {
             id: equipment.id + "-" + Math.random(),
             name: equipment.title[Language],
             encumbrance: equipment.encumbrance,
-            movement: "",
+            movement: equipment.movement || "",
             melee: equipment.melee,
             ranged: equipment.ranged,
             manipulation: equipment.manipulation,
             active: equipment.active,
             passive: equipment.passive,
-            skills: { 0: "none", 1: "none" },
-            image: equipment.image,
+            skills: equipment.skills || { 0: "none", 1: "none" },
+            image: equipment.image ? Version + "/" + equipment.image : null,
             imagelocation: {x: "50", y: "50"},
             imagezoom: "100",
             imagerotation: "0"

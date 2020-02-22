@@ -180,7 +180,7 @@ var CardEquipment = {
 
                code += "<img class=\"background-name\" src=\"" + Version + "/studio/card_equipment/img/name-background.png\"/>"
                     + "<div class=\"name\">" + card.name + "</div>";
-        if (card.encumbrance)
+        if (card.encumbrance || card.encumbrance === "0")
         {
             code += "<img class=\"background-encumbrance\" src=\"" + Version + "/studio/card_equipment/img/weight.png\"/>"
                 + "<div class=\"encumbrance\">" + card.encumbrance + "</div>";
@@ -195,17 +195,6 @@ var CardEquipment = {
                         "<img class=\"background-passive duo\" src=\"" + Version + "/studio/card_equipment/img/armor-2.png\"/>")
                      + "<img src=\"" + Version + "/studio/card_equipment/img/dice_" + card.passive[0] + ".png\"/>"
                      + (card.passive[1] == 'none' ? "" : "<img src=\"" + Version + "/studio/card_equipment/img/dice_" + card.passive[1] + ".png\"/>")
-                   + "</div>"
-            level++;
-        }
-        if (card.active && card.active[0] != 'none')
-        {
-            code += "<div class=\"active level" + level + "\">"
-                   + (card.active[1] == 'none' ?
-                        "<img class=\"background-active\" src=\"" + Version + "/studio/card_equipment/img/defense-1.png\"/>" :
-                        "<img class=\"background-active duo\" src=\"" + Version + "/studio/card_equipment/img/defense-2.png\"/>")
-                     + "<img src=\"" + Version + "/studio/card_equipment/img/dice_" + card.active[0] + ".png\"/>"
-                     + (card.active[1] == 'none' ? "" : "<img src=\"" + Version + "/studio/card_equipment/img/dice_" + card.active[1] + ".png\"/>")
                    + "</div>"
             level++;
         }
@@ -228,6 +217,17 @@ var CardEquipment = {
                         "<img class=\"background-ranged duo\" src=\"" + Version + "/studio/card_equipment/img/" + (!card.ranged.throwable ? "remote" : "throw") + "-2.png\"/>")
                      + "<img src=\"" + Version + "/studio/card_equipment/img/dice_" + card.ranged[0] + ".png\"/>"
                      + (card.ranged[1] == 'none' ? "" : "<img src=\"" + Version + "/studio/card_equipment/img/dice_" + card.ranged[1] + ".png\"/>")
+                   + "</div>"
+            level++;
+        }
+        if (card.active && card.active[0] != 'none')
+        {
+            code += "<div class=\"active level" + level + "\">"
+                   + (card.active[1] == 'none' ?
+                        "<img class=\"background-active\" src=\"" + Version + "/studio/card_equipment/img/defense-1.png\"/>" :
+                        "<img class=\"background-active duo\" src=\"" + Version + "/studio/card_equipment/img/defense-2.png\"/>")
+                     + "<img src=\"" + Version + "/studio/card_equipment/img/dice_" + card.active[0] + ".png\"/>"
+                     + (card.active[1] == 'none' ? "" : "<img src=\"" + Version + "/studio/card_equipment/img/dice_" + card.active[1] + ".png\"/>")
                    + "</div>"
             level++;
         }
