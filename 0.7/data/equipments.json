@@ -257,7 +257,7 @@
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
     
-            "image": null,
+            "image": "data/equipments/img/tribal_mace.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
     
@@ -275,7 +275,7 @@
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
     
-            "image": null,
+            "image": "data/equipments/img/yuetshi_knife.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
     
@@ -652,7 +652,7 @@
             "active": { "0": "yellow", "1": "none" },
             "passive": { "0": "none", "1": "none" },
     
-            "image": null,
+            "image": "data/equipments/img/pirate_saber.png",
             "origins": ["stretchgoal", "king"]
         },
     
@@ -688,7 +688,7 @@
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
     
-            "image": null,
+            "image": "data/equipments/img/stygian_scepter.png",
             "origins": ["stretchgoal", "king"]
         },
     
@@ -760,7 +760,7 @@
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "yellowreroll", "1": "none" },
     
-            "image": null,
+            "image": "data/equipments/img/zingaran_breastplate.png",
             "origins": ["stretchgoal", "king"]
         },
     
