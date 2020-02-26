@@ -178,8 +178,12 @@ var CardEquipment = {
             code += imageCode;
         }
 
+        if (card.name !== undefined && card.name !== null)
+        {
                code += "<img class=\"background-name\" src=\"" + Version + "/studio/card_equipment/img/name-background.png\"/>"
                     + "<div class=\"name\">" + card.name + "</div>";
+        }
+                    
         if (card.encumbrance || card.encumbrance === "0")
         {
             code += "<img class=\"background-encumbrance\" src=\"" + Version + "/studio/card_equipment/img/weight.png\"/>"

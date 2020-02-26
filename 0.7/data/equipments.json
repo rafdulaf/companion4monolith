@@ -14,7 +14,7 @@
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
     
-            "image": null,
+            "image": "data/equipments/img/battle_axe.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
     
@@ -32,7 +32,7 @@
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
     
-            "image": null,
+            "image": "data/equipments/img/bossonian_bow.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
     
@@ -69,7 +69,7 @@
             "active": { "0": "orange", "1": "none" },
             "passive": { "0": "none", "1": "none" },
     
-            "image": null,
+            "image": "data/equipments/img/conans_sword.png",
             "origins": ["corebox", "stretchgoal", "king",
                         "bbox"]
         },
@@ -127,7 +127,7 @@
             "active": { "0": "yellow", "1": "none" },
             "passive": { "0": "none", "1": "none" },
     
-            "image": null,
+            "image": "data/equipments/img/halberd.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
     
@@ -145,7 +145,7 @@
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
     
-            "image": null,
+            "image": "data/equipments/img/javelin.png",
             "origins": ["corebox", "stretchgoal", "king",
                         "corebox", "stretchgoal", "king"]
         },
@@ -164,7 +164,7 @@
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
     
-            "image": null,
+            "image": "data/equipments/img/kris.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
     
@@ -182,7 +182,7 @@
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
     
-            "image": null,
+            "image": "data/equipments/img/ornamental_spear.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
     
@@ -219,7 +219,7 @@
             "active": { "0": "yellowreroll", "1": "none" },
             "passive": { "0": "none", "1": "none" },
     
-            "image": null,
+            "image": "data/equipments/img/sword.png",
             "origins": ["corebox", "stretchgoal", "king",
                         "campaignbook",
                         "campaignbook"]
@@ -239,7 +239,7 @@
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
     
-            "image": null,
+            "image": "data/equipments/img/throwing_knives.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
     
@@ -311,7 +311,7 @@
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "yellow", "1": "none" },
     
-            "image": null,
+            "image": "data/equipments/img/leather_armor.png",
             "origins": ["corebox", "stretchgoal", "king",
                         "corebox", "stretchgoal", "king",
                         "nordheim",
@@ -333,7 +333,7 @@
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "red", "1": "none" },
     
-            "image": null,
+            "image": "data/equipments/img/scale_mail.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
     
@@ -351,7 +351,7 @@
             "active": { "0": "yellow", "1": "none" },
             "passive": { "0": "none", "1": "none" },
     
-            "image": null,
+            "image": "data/equipments/img/buckler.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
     
@@ -369,7 +369,7 @@
             "active": { "0": "orange", "1": "none" },
             "passive": { "0": "none", "1": "none" },
     
-            "image": null,
+            "image": "data/equipments/img/shield.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
     
@@ -387,7 +387,7 @@
             "active": { "0": "orangereroll", "1": "none" },
             "passive": { "0": "none", "1": "none" },
     
-            "image": null,
+            "image": "data/equipments/img/tribal_shield.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
     
@@ -616,7 +616,7 @@
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
     
-            "image": null,
+            "image": "data/equipments/img/axe.png",
             "origins": ["stretchgoal", "king"]
         },
     
@@ -634,7 +634,7 @@
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
     
-            "image": null,
+            "image": "data/equipments/img/mitras_mace.png",
             "origins": ["stretchgoal", "king"]
         },
     
@@ -670,7 +670,7 @@
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
     
-            "image": null,
+            "image": "data/equipments/img/sacrificial_dagger.png",
             "origins": ["stretchgoal", "king"]
         },
     
@@ -706,12 +706,12 @@
             "active": { "0": "orangereroll", "1": "none" },
             "passive": { "0": "none", "1": "none" },
     
-            "image": null,
+            "image": "data/equipments/img/turanian_sword.png",
             "origins": ["stretchgoal", "king"]
         },
     
         {
-            "id": "two-handed_sword",
+            "id": "two_handed_sword",
             "title": {
                 "fr": "Épée à deux mains",
                 "en": "Two-Handed Sword"
@@ -724,7 +724,7 @@
             "active": { "0": "orange", "1": "none" },
             "passive": { "0": "none", "1": "none" },
     
-            "image": null,
+            "image": "data/equipments/img/two_handed_sword.png",
             "origins": ["stretchgoal", "king"]
         },
     
@@ -742,7 +742,7 @@
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
     
-            "image": null,
+            "image": "data/equipments/img/zingaran_bow.png",
             "origins": ["stretchgoal", "king"]
         },
     
@@ -1084,8 +1084,8 @@
         {
             "id": "letters_a",
             "title": {
-                "fr": "",
-                "en": ""
+                "fr": null,
+                "en": null
             },
             "encumbrance": "",
             
@@ -1102,8 +1102,8 @@
         {
             "id": "letters_b",
             "title": {
-                "fr": "",
-                "en": ""
+                "fr": null,
+                "en": null
             },
             "encumbrance": "",
             
@@ -1120,8 +1120,8 @@
         {
             "id": "letters_c",
             "title": {
-                "fr": "",
-                "en": ""
+                "fr": null,
+                "en": null
             },
             "encumbrance": "",
             
@@ -1138,8 +1138,8 @@
         {
             "id": "letters_d",
             "title": {
-                "fr": "",
-                "en": ""
+                "fr": null,
+                "en": null
             },
             "encumbrance": "",
             
@@ -1156,8 +1156,8 @@
         {
             "id": "letters_e",
             "title": {
-                "fr": "",
-                "en": ""
+                "fr": null,
+                "en": null
             },
             "encumbrance": "",
             
@@ -1185,7 +1185,7 @@
             "active": { "0": "orange", "1": "none" },
             "passive": { "0": "none", "1": "none" },
     
-            "image": null,
+            "image": "data/equipments/img/aesir_blade.png",
             "origins": ["nordheim",
                         "nordheim"]
         },
@@ -1258,7 +1258,7 @@
             "active": { "0": "yellowreroll", "1": "none" },
             "passive": { "0": "none", "1": "none" },
     
-            "image": null,
+            "image": "data/equipments/img/khitan_short_sword.png",
             "origins": ["khitai"]
         },
     
@@ -1276,7 +1276,7 @@
             "active": { "0": "yellowreroll", "1": "none" },
             "passive": { "0": "none", "1": "none" },
     
-            "image": null,
+            "image": "data/equipments/img/khitan_sword.png",
             "origins": ["khitai"]
         },
     

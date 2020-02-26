@@ -129,6 +129,8 @@ var ConanRules = {
     
     _deemphasize: function (s)
     {
+        if (!s) return s;
+        
         s = s.replace(new RegExp(/[ÀÁÂÃÄÅ]/g),"A");
         s = s.replace(new RegExp(/[àáâãäå]/g),"a");
         s = s.replace(new RegExp(/Æ/g),"AE");

@@ -37,7 +37,7 @@ var EncyclopediaEquipments = {
                 },
                 filter: function(item, value)
                 {
-                    return ConanRules._deemphasize(item.title[Language]).indexOf(ConanRules._deemphasize(value)) != -1;
+                    return item.title[Language] && ConanRules._deemphasize(item.title[Language]).indexOf(ConanRules._deemphasize(value)) != -1;
                 }
             },
             
@@ -339,7 +339,7 @@ var EncyclopediaEquipments = {
         
         var equipments = "";
         
-        Encyclopedia.equipments.list.sort(function(s1, s2) { return s1.title[Language].toLowerCase().localeCompare(s2.title[Language].toLowerCase()); })
+        Encyclopedia.equipments.list.sort(function(s1, s2) { return !s2.title[Language] ? 1 : (!s1.title[Language] ? -1 : s1.title[Language].toLowerCase().localeCompare(s2.title[Language].toLowerCase())); })
         
         var equipmentList = Encyclopedia.equipments.list.filter(EncyclopediaEquipments._filter());
         for (var i in equipmentList)
