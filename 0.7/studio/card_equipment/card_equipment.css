@@ -94,12 +94,13 @@
 
 .card.equipement .name {
     text-align: center;
-    width: 81.37%;
+    width: 90%;
     position: absolute;
     left: 50%;
     transform: translate(-50%,-50%);
     top: 7%;
     line-height: 100%;
+    font-size: 89%;
     text-shadow: 0 0 3px #FFF;
     color: #000;
 }

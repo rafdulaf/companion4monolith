@@ -37,7 +37,7 @@
         },
     
         {
-            "id": "dagger",
+            "id": "dagger_1",
             "title": {
                 "fr": "Dague",
                 "en": "Dagger"
@@ -50,9 +50,26 @@
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
     
-            "image": null,
-            "origins": ["corebox", "stretchgoal", "king",
-                        "corebox", "stretchgoal", "king"]
+            "image": "data/equipments/img/dagger_1.png",
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "dagger_2",
+            "title": {
+                "fr": "Dague",
+                "en": "Dagger"
+            },
+            "encumbrance": "1",
+            
+            "melee": { "0": "yellow", "1": "none" },
+            "ranged": { "0": "yellow", "1": "none", "throwable": true },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/dagger_2.png",
+            "origins": ["corebox", "stretchgoal", "king"]
         },
     
         {
@@ -88,7 +105,7 @@
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
     
-            "image": null,
+            "image": "data/equipments/img/crossbow.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
     
@@ -200,7 +217,7 @@
             "active": { "0": "yellowreroll", "1": "none" },
             "passive": { "0": "none", "1": "none" },
     
-            "image": null,
+            "image": "data/equipments/img/parrying_dagger.png",
             "origins": ["corebox", "stretchgoal", "king",
                         "bbox"]
         },
@@ -293,7 +310,7 @@
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "orange", "1": "none" },
     
-            "image": null,
+            "image": "data/equipments/img/chain_mail.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
     
@@ -778,7 +795,7 @@
             "active": { "0": "yellow", "1": "none" },
             "passive": { "0": "none", "1": "none" },
     
-            "image": null,
+            "image": "data/equipments/img/black_staff.png",
             "origins": ["stretchgoal", "king"]
         },
     
@@ -796,7 +813,7 @@
             "active": { "0": "yellowreroll", "1": "none" },
             "passive": { "0": "none", "1": "none" },
     
-            "image": null,
+            "image": "data/equipments/img/mitras_staff.png",
             "origins": ["stretchgoal", "king"]
         },
     
@@ -1462,7 +1479,7 @@
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
     
-            "image": null,
+            "image": "data/equipments/img/assassins_dagger.png",
             "origins": ["stygia",
                         "stygia"]
         },
@@ -1540,7 +1557,7 @@
             "active": { "0": "yellowreroll", "1": "none" },
             "passive": { "0": "none", "1": "none" },
     
-            "image": null,
+            "image": "data/equipments/img/short_sword.png",
             "origins": ["bbox"]
         },
     
@@ -1558,7 +1575,7 @@
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
     
-            "image": null,
+            "image": "data/equipments/img/knife.png",
             "origins": ["bbox"]
         },
     
@@ -1568,7 +1585,7 @@
                 "fr": "Amulette",
                 "en": "Amulet"
             },
-            "encumbrance": "",
+            "encumbrance": "0",
             
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
@@ -1576,7 +1593,7 @@
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
     
-            "image": null,
+            "image": "data/equipments/img/amulet.png",
             "origins": ["bbox",
                         "bbox"]
         },   
