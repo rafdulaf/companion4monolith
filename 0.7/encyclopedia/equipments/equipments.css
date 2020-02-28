@@ -13,15 +13,30 @@
 }
 
 .equipmentdetails .from {
+    display: block;
     text-indent: -90px;
     margin-left: 90px;
 }
 
-@media (min-width: 500px) {
-    .equipmentdetails .equipement {
-        float: left;
-    }
-    .equipmentdetails .from {
-        margin-left: 320px;
-    }
+#encyclopedia-equipment-wrapper a {
+    position: relative;
+    display: inline-block;
+}
+
+#encyclopedia-equipment-wrapper a[data-count]::after {
+    content: 'x' attr(data-count);
+    position: absolute;
+    z-index: 2;
+    top: 10%;
+    right: -5%;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 18px;
+    background-color: #e64443;
+    color: #ffffff;
+    border-radius: 100%;
+}
+#encyclopedia-equipment-wrapper a[data-count='1']::after {
+    content: none;
 }

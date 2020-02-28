@@ -127,6 +127,7 @@ var EncyclopediaEquipments = {
                             }
                         }
                     }
+
                     return origins.filter(v => selectedValues.indexOf(v) != -1).length > 0;
                 }
             },
@@ -276,7 +277,9 @@ var EncyclopediaEquipments = {
                 {
                     var value = facet.values[v];
                     
-                    var count = Encyclopedia.equipments.list.filter(EncyclopediaEquipments._filter(facet, value)).length;
+                    var items = Encyclopedia.equipments.list.filter(EncyclopediaEquipments._filter(facet, value));
+                    var count = items.length;
+                    
                     $("#ee-" + facet.id + "-" + value.id).parent().attr('data-count', count);
                     if (count) nonEmptyFacets++;
                 }                
@@ -340,22 +343,37 @@ var EncyclopediaEquipments = {
         var equipments = "";
         
         Encyclopedia.equipments.list.sort(function(s1, s2) { return !s2.title[Language] ? 1 : (!s1.title[Language] ? -1 : s1.title[Language].toLowerCase().localeCompare(s2.title[Language].toLowerCase())); })
-        
+
         var equipmentList = Encyclopedia.equipments.list.filter(EncyclopediaEquipments._filter());
+        var ignoredPrevious = 0;
         for (var i in equipmentList)
         {
+            i = parseInt(i);
             var equipment = equipmentList[i];
             
-            equipments += "<a href='javascript:void(0)' onclick='EncyclopediaEquipments.openEquipment(\"" + equipment.id + "\")'>";
+            if (i < equipmentList.length - 1
+                && equipmentList[i+1].id == equipment.id)
+            {
+                ignoredPrevious++;
+                continue;
+            }
+            
+            equipment = equipmentList[i - ignoredPrevious];
+            
+            equipments += "<a href='javascript:void(0)' data-count='" + (ignoredPrevious+1) + "' onclick='EncyclopediaEquipments.openEquipment(\"" + equipment.id + "\")'>";
+            
             equipments += CardEquipment._cardCode(EncyclopediaEquipments._convertEquipmentToStudio(equipment));
             equipments += "</a>";
+            
+            ignoredPrevious = 0;
         }
         
         $("#encyclopedia-equipment-wrapper").html(equipments);
     },
     
-    _convertEquipmentToStudio: function(equipment)
+    _convertEquipmentToStudio: function(equipment, i)
     {
+        i = i ? i : 0;
         return {
             id: equipment.id + "-" + Math.random(),
             name: equipment.title[Language],
@@ -374,17 +392,20 @@ var EncyclopediaEquipments = {
         };
     },
     
-    _findEquipmentById: function(id)
+    _findEquipmentsById: function(id)
     {
+        var equipments = [];
+        
         for (var i in Encyclopedia.equipments.list)
         {
             var equipment = Encyclopedia.equipments.list[i];
             if (equipment.id == id)
             {
-                return equipment;
+                equipments.push(equipment);
             }
         }
-        throw new Error("No equipment with id '" + id + "'");
+        
+        return equipments;
     },
     
     onShow: function() {
@@ -394,15 +415,29 @@ var EncyclopediaEquipments = {
     },
 
     openEquipment: function(id) {
-        var equipment = EncyclopediaEquipments._findEquipmentById(id);
+        var equipments = EncyclopediaEquipments._findEquipmentsById(id);
+        var displayEquipments = [];
         
-        var origins = Encyclopedia._removeExtraExpansion(equipment.origins.slice());
+        var images = {};
         var originsCount = {};
-        for (var i in origins)
+        for (var e in equipments)
         {
-            var origin = origins[i];
-            originsCount[origin] = originsCount[origin] ? originsCount[origin]+1 : 1;
+            var equipment = equipments[e];
+            
+            var origins = Encyclopedia._removeExtraExpansion(equipment.origins.slice());
+            for (var i in origins)
+            {
+                var origin = origins[i];
+                originsCount[origin] = originsCount[origin] ? originsCount[origin]+1 : 1;
+            }
+            
+            if (!images[equipment.image])
+            {
+                images[equipment.image] = true;
+                displayEquipments.push(equipment);
+            }
         }
+        
         var originString = "";
         for (var i in originsCount)
         {
@@ -410,9 +445,16 @@ var EncyclopediaEquipments = {
             originString += Encyclopedia._getOrigin(i) + " (" + originsCount[i] + " " + (originsCount[i] == 1 ? EncyclopediaEquipments._i18n[Language].card : EncyclopediaEquipments._i18n[Language].cards) + ")";
         }
         
-        Nav.dialog(equipment.title[Language],
+        var c = "";
+        for (var e in displayEquipments)
+        {
+            var equipment = displayEquipments[e]; 
+            c += CardEquipment._cardCode(EncyclopediaEquipments._convertEquipmentToStudio(equipment, i));
+        }
+        
+        Nav.dialog(equipment.title[Language] || "",
             "<div class='equipmentdetails'>" 
-                + CardEquipment._cardCode(EncyclopediaEquipments._convertEquipmentToStudio(equipment))
+                + c
                 + "<div class='from'>" + EncyclopediaEquipments._i18n[Language].from + " "
                     + originString
                 + "</div>"
@@ -429,11 +471,25 @@ var EncyclopediaEquipments = {
     _transfert: function(id) {
         if (confirm(EncyclopediaEquipments._i18n[Language].transfertConfirm))
         {
-            var equipment = EncyclopediaEquipments._findEquipmentById(id);
-            var studioEquipment = EncyclopediaEquipments._convertEquipmentToStudio(equipment);
-            
             var cards = JSON.parse(localStorage.getItem("StudioEquipmentCards")) || [];
-            cards.push(studioEquipment);
+            
+            var images = {};
+            
+            var equipments = EncyclopediaEquipments._findEquipmentsById(id);
+            for (var i in equipments)
+            {
+                var equipment = equipments[i];
+                
+                if (images[equipment.image])
+                {
+                    continue;
+                }
+                
+                images[equipment.image] = true;
+                var studioEquipment = EncyclopediaEquipments._convertEquipmentToStudio(equipment);
+                cards.push(studioEquipment);
+            }
+            
             localStorage.setItem("StudioEquipmentCards", JSON.stringify(cards));
             
             CardEquipment._displayCards();

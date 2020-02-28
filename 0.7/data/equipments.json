@@ -37,7 +37,7 @@
         },
     
         {
-            "id": "dagger_1",
+            "id": "dagger",
             "title": {
                 "fr": "Dague",
                 "en": "Dagger"
@@ -55,7 +55,7 @@
         },
     
         {
-            "id": "dagger_2",
+            "id": "dagger",
             "title": {
                 "fr": "Dague",
                 "en": "Dagger"
@@ -87,8 +87,25 @@
             "passive": { "0": "none", "1": "none" },
     
             "image": "data/equipments/img/conans_sword.png",
-            "origins": ["corebox", "stretchgoal", "king",
-                        "bbox"]
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "conans_sword",
+            "title": {
+                "fr": "Épée de Conan",
+                "en": "Conan’s Sword"
+            },
+            "encumbrance": "2",
+            
+            "melee": { "0": "orange", "1": "none" },
+            "ranged": { "0": "orange", "1": "none", "throwable": true },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "orange", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/conans_sword.png",
+            "origins": ["bbox"]
         },
     
         {
@@ -124,12 +141,62 @@
             "passive": { "0": "none", "1": "none" },
     
             "image": "data/equipments/img/explosive_orb.png",
-            "origins": ["corebox", "stretchgoal", "king",
-                        "corebox", "stretchgoal", "king",
-                        "corebox", "stretchgoal", "king",
-                        "stretchgoal", "king"]
+            "origins": ["corebox", "stretchgoal", "king"]
         },
     
+        {
+            "id": "explosive_orb",
+            "title": {
+                "fr": "Orbe explosive",
+                "en": "Explosive Orb"
+            },
+            "encumbrance": "1",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "red", "1": "red", "explosive": true },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/explosive_orb.png",
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+
+        {
+            "id": "explosive_orb",
+            "title": {
+                "fr": "Orbe explosive",
+                "en": "Explosive Orb"
+            },
+            "encumbrance": "1",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "red", "1": "red", "explosive": true },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/explosive_orb.png",
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+
+        {
+            "id": "explosive_orb",
+            "title": {
+                "fr": "Orbe explosive",
+                "en": "Explosive Orb"
+            },
+            "encumbrance": "1",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "red", "1": "red", "explosive": true },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/explosive_orb.png",
+            "origins": ["stretchgoal", "king"]
+        },
         {
             "id": "halberd",
             "title": {
@@ -163,8 +230,25 @@
             "passive": { "0": "none", "1": "none" },
     
             "image": "data/equipments/img/javelin.png",
-            "origins": ["corebox", "stretchgoal", "king",
-                        "corebox", "stretchgoal", "king"]
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "javelin",
+            "title": {
+                "fr": "Javelot",
+                "en": "Javelin"
+            },
+            "encumbrance": "1",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "red", "1": "none", "throwable": true },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/javelin.png",
+            "origins": ["corebox", "stretchgoal", "king"]
         },
     
         {
@@ -218,8 +302,25 @@
             "passive": { "0": "none", "1": "none" },
     
             "image": "data/equipments/img/parrying_dagger.png",
-            "origins": ["corebox", "stretchgoal", "king",
-                        "bbox"]
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "parrying_dagger",
+            "title": {
+                "fr": "Dague de parade",
+                "en": "Parrying Dagger"
+            },
+            "encumbrance": "1",
+            
+            "melee": { "0": "yellowreroll", "1": "none" },
+            "ranged": { "0": "yellowreroll", "1": "none", "throwable": true },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "yellowreroll", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/parrying_dagger.png",
+            "origins": ["bbox"]
         },
     
         {
@@ -237,9 +338,43 @@
             "passive": { "0": "none", "1": "none" },
     
             "image": "data/equipments/img/sword.png",
-            "origins": ["corebox", "stretchgoal", "king",
-                        "campaignbook",
-                        "campaignbook"]
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "sword",
+            "title": {
+                "fr": "Épée",
+                "en": "Sword"
+            },
+            "encumbrance": "2",
+            
+            "melee": { "0": "orangereroll", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "yellowreroll", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/sword.png",
+            "origins": ["campaignbook"]
+        },
+    
+        {
+            "id": "sword",
+            "title": {
+                "fr": "Épée",
+                "en": "Sword"
+            },
+            "encumbrance": "2",
+            
+            "melee": { "0": "orangereroll", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "yellowreroll", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/sword.png",
+            "origins": ["campaignbook"]
         },
     
         {
@@ -329,11 +464,79 @@
             "passive": { "0": "yellow", "1": "none" },
     
             "image": "data/equipments/img/leather_armor.png",
-            "origins": ["corebox", "stretchgoal", "king",
-                        "corebox", "stretchgoal", "king",
-                        "nordheim",
-                        "campaignbook",
-                        "campaignbook"]
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "leather_armor",
+            "title": {
+                "fr": "Armure de cuir",
+                "en": "Leather Armor"
+            },
+            "encumbrance": "2",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "yellow", "1": "none" },
+    
+            "image": "data/equipments/img/leather_armor.png",
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "leather_armor",
+            "title": {
+                "fr": "Armure de cuir",
+                "en": "Leather Armor"
+            },
+            "encumbrance": "2",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "yellow", "1": "none" },
+    
+            "image": "data/equipments/img/leather_armor.png",
+            "origins": ["nordheim"]
+        },
+    
+        {
+            "id": "leather_armor",
+            "title": {
+                "fr": "Armure de cuir",
+                "en": "Leather Armor"
+            },
+            "encumbrance": "2",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "yellow", "1": "none" },
+    
+            "image": "data/equipments/img/leather_armor.png",
+            "origins": ["campaignbook"]
+        },
+    
+        {
+            "id": "leather_armor",
+            "title": {
+                "fr": "Armure de cuir",
+                "en": "Leather Armor"
+            },
+            "encumbrance": "2",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "yellow", "1": "none" },
+    
+            "image": "data/equipments/img/leather_armor.png",
+            "origins": ["campaignbook"]
         },
     
         {
@@ -423,22 +626,209 @@
             "passive": { "0": "none", "1": "none" },
     
             "image": "data/equipments/img/life_potion.png",
-            "origins": ["corebox", "stretchgoal", "king",
-                        "corebox", "stretchgoal", "king",
-                        "corebox", "stretchgoal", "king",
-                        "stretchgoal", "king",
-                        "campaignbook",
-                        "campaignbook",
-                        "campaignbook",
-                        "campaignbook",
-                        "campaignbook",
-                        "campaignbook",
-                        "campaignbook",
-                        "campaignbook"]
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+
+        {
+            "id": "life_potion",
+            "title": {
+                "fr": "Potion de vie",
+                "en": "Life Potion"
+            },
+            "encumbrance": "0",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/life_potion.png",
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+
+        {
+            "id": "life_potion",
+            "title": {
+                "fr": "Potion de vie",
+                "en": "Life Potion"
+            },
+            "encumbrance": "0",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/life_potion.png",
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+
+        {
+            "id": "life_potion",
+            "title": {
+                "fr": "Potion de vie",
+                "en": "Life Potion"
+            },
+            "encumbrance": "0",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/life_potion.png",
+            "origins": ["stretchgoal", "king"]
+        },
+
+        {
+            "id": "life_potion",
+            "title": {
+                "fr": "Potion de vie",
+                "en": "Life Potion"
+            },
+            "encumbrance": "0",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/life_potion.png",
+            "origins": ["campaignbook"]
+        },
+
+        {
+            "id": "life_potion",
+            "title": {
+                "fr": "Potion de vie",
+                "en": "Life Potion"
+            },
+            "encumbrance": "0",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/life_potion.png",
+            "origins": ["campaignbook"]
+        },
+
+        {
+            "id": "life_potion",
+            "title": {
+                "fr": "Potion de vie",
+                "en": "Life Potion"
+            },
+            "encumbrance": "0",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/life_potion.png",
+            "origins": ["campaignbook"]
+        },
+
+        {
+            "id": "life_potion",
+            "title": {
+                "fr": "Potion de vie",
+                "en": "Life Potion"
+            },
+            "encumbrance": "0",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/life_potion.png",
+            "origins": ["campaignbook"]
+        },
+
+        {
+            "id": "life_potion",
+            "title": {
+                "fr": "Potion de vie",
+                "en": "Life Potion"
+            },
+            "encumbrance": "0",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/life_potion.png",
+            "origins": ["campaignbook"]
+        },
+
+        {
+            "id": "life_potion",
+            "title": {
+                "fr": "Potion de vie",
+                "en": "Life Potion"
+            },
+            "encumbrance": "0",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/life_potion.png",
+            "origins": ["campaignbook"]
+        },
+
+        {
+            "id": "life_potion",
+            "title": {
+                "fr": "Potion de vie",
+                "en": "Life Potion"
+            },
+            "encumbrance": "0",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/life_potion.png",
+            "origins": ["campaignbook"]
+        },
+
+        {
+            "id": "life_potion",
+            "title": {
+                "fr": "Potion de vie",
+                "en": "Life Potion"
+            },
+            "encumbrance": "0",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/life_potion.png",
+            "origins": ["campaignbook"]
         },
     
         {
-            "id": "empty_chest_1",
+            "id": "empty_chest",
             "title": {
                 "fr": "Coffre vide",
                 "en": "Empty Chest"
@@ -452,12 +842,11 @@
             "passive": { "0": "none", "1": "none" },
     
             "image": "data/equipments/img/empty_chest_1.png",
-            "origins": ["corebox", "stretchgoal", "king",
-                        "corebox", "stretchgoal", "king"]
+            "origins": ["corebox", "stretchgoal", "king"]
         },
     
         {
-            "id": "empty_chest_2",
+            "id": "empty_chest",
             "title": {
                 "fr": "Coffre vide",
                 "en": "Empty Chest"
@@ -471,10 +860,9 @@
             "passive": { "0": "none", "1": "none" },
     
             "image": "data/equipments/img/empty_chest_2.png",
-            "origins": ["corebox", "stretchgoal", "king",
-                        "corebox", "stretchgoal", "king"]
+            "origins": ["corebox", "stretchgoal", "king"]
         },
-    
+
         {
             "id": "key",
             "title": {
@@ -615,8 +1003,25 @@
             "passive": { "0": "none", "1": "none" },
     
             "image": "data/equipments/img/xuthal_crown.png",
-            "origins": ["corebox", "stretchgoal", "king",
-                        "corebox", "stretchgoal", "king"]
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "xuthal_crown",
+            "title": {
+                "fr": "Couronne de Xuthal",
+                "en": "Xuthal Crown"
+            },
+            "encumbrance": "1",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/xuthal_crown.png",
+            "origins": ["corebox", "stretchgoal", "king"]
         },
     
         {
@@ -832,14 +1237,133 @@
             "passive": { "0": "none", "1": "none" },
     
             "image": "data/equipments/img/pictish_drink.png",
-            "origins": ["stretchgoal", "king",
-                        "stretchgoal", "king",
-                        "campaignbook",
-                        "campaignbook",
-                        "campaignbook",
-                        "campaignbook",
-                        "campaignbook",
-                        "campaignbook"]
+            "origins": ["stretchgoal", "king"]
+        },
+
+        {
+            "id": "pictish_drink",
+            "title": {
+                "fr": "Alcool Picte",
+                "en": "Pictish Drink"
+            },
+            "encumbrance": "0",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/pictish_drink.png",
+            "origins": ["stretchgoal", "king"]
+        },
+
+        {
+            "id": "pictish_drink",
+            "title": {
+                "fr": "Alcool Picte",
+                "en": "Pictish Drink"
+            },
+            "encumbrance": "0",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/pictish_drink.png",
+            "origins": ["campaignbook"]
+        },
+
+        {
+            "id": "pictish_drink",
+            "title": {
+                "fr": "Alcool Picte",
+                "en": "Pictish Drink"
+            },
+            "encumbrance": "0",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/pictish_drink.png",
+            "origins": ["campaignbook"]
+        },
+
+        {
+            "id": "pictish_drink",
+            "title": {
+                "fr": "Alcool Picte",
+                "en": "Pictish Drink"
+            },
+            "encumbrance": "0",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/pictish_drink.png",
+            "origins": ["campaignbook"]
+        },
+
+        {
+            "id": "pictish_drink",
+            "title": {
+                "fr": "Alcool Picte",
+                "en": "Pictish Drink"
+            },
+            "encumbrance": "0",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/pictish_drink.png",
+            "origins": ["campaignbook"]
+        },
+
+        {
+            "id": "pictish_drink",
+            "title": {
+                "fr": "Alcool Picte",
+                "en": "Pictish Drink"
+            },
+            "encumbrance": "0",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/pictish_drink.png",
+            "origins": ["campaignbook"]
+        },
+
+        {
+            "id": "pictish_drink",
+            "title": {
+                "fr": "Alcool Picte",
+                "en": "Pictish Drink"
+            },
+            "encumbrance": "0",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/pictish_drink.png",
+            "origins": ["campaignbook"]
         },
     
         {
@@ -1005,7 +1529,7 @@
         },
     
         {
-            "id": "sacred_treasure_1",
+            "id": "sacred_treasure",
             "title": {
                 "fr": "Trésor sacré",
                 "en": "Sacred Treasure"
@@ -1023,7 +1547,7 @@
         },
     
         {
-            "id": "sacred_treasure_2",
+            "id": "sacred_treasure",
             "title": {
                 "fr": "Trésor sacré",
                 "en": "Sacred Treasure"
@@ -1041,7 +1565,7 @@
         },
     
         {
-            "id": "sacred_treasure_3",
+            "id": "sacred_treasure",
             "title": {
                 "fr": "Trésor sacré",
                 "en": "Sacred Treasure"
@@ -1091,15 +1615,83 @@
             "passive": { "0": "none", "1": "none" },
     
             "image": null,
-            "origins": ["stretchgoal", "king",
-                        "stretchgoal", "king",
-                        "stretchgoal", "king",
-                        "stretchgoal", "king",
-                        "stretchgoal", "king"]
+            "origins": ["stretchgoal", "king"]
         },
     
         {
-            "id": "letters_a",
+            "id": "blank",
+            "title": {
+                "fr": "",
+                "en": ""
+            },
+            "encumbrance": "",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "blank",
+            "title": {
+                "fr": "",
+                "en": ""
+            },
+            "encumbrance": "",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "blank",
+            "title": {
+                "fr": "",
+                "en": ""
+            },
+            "encumbrance": "",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "blank",
+            "title": {
+                "fr": "",
+                "en": ""
+            },
+            "encumbrance": "",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "letters",
             "title": {
                 "fr": null,
                 "en": null
@@ -1117,7 +1709,7 @@
         },
 
         {
-            "id": "letters_b",
+            "id": "letters",
             "title": {
                 "fr": null,
                 "en": null
@@ -1135,7 +1727,7 @@
         },
 
         {
-            "id": "letters_c",
+            "id": "letters",
             "title": {
                 "fr": null,
                 "en": null
@@ -1153,7 +1745,7 @@
         },
 
         {
-            "id": "letters_d",
+            "id": "letters",
             "title": {
                 "fr": null,
                 "en": null
@@ -1171,7 +1763,7 @@
         },
 
         {
-            "id": "letters_e",
+            "id": "letters",
             "title": {
                 "fr": null,
                 "en": null
@@ -1187,7 +1779,7 @@
             "image": "data/equipments/img/e.png",
             "origins": ["stretchgoal", "king"]
         },
-    
+
         {
             "id": "aesir_blade",
             "title": {
@@ -1203,12 +1795,29 @@
             "passive": { "0": "none", "1": "none" },
     
             "image": "data/equipments/img/aesir_blade.png",
-            "origins": ["nordheim",
-                        "nordheim"]
+            "origins": ["nordheim"]
+        },
+
+        {
+            "id": "aesir_blade",
+            "title": {
+                "fr": "Épée Aesir",
+                "en": "Aesir Blade"
+            },
+            "encumbrance": "2",
+            
+            "melee": { "0": "orange", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "orange", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/aesir_blade.png",
+            "origins": ["nordheim"]
         },
     
         {
-            "id": "amulet_fragment_1",
+            "id": "amulet_fragment",
             "title": {
                 "fr": "Fragment d'amulette",
                 "en": "Amulet Fragment"
@@ -1226,7 +1835,7 @@
         },
     
         {
-            "id": "amulet_fragment_2",
+            "id": "amulet_fragment",
             "title": {
                 "fr": "Fragment d'amulette",
                 "en": "Amulet Fragment"
@@ -1244,7 +1853,7 @@
         },
     
         {
-            "id": "amulet_fragment_3",
+            "id": "amulet_fragment",
             "title": {
                 "fr": "Fragment d'amulette",
                 "en": "Amulet Fragment"
@@ -1312,8 +1921,25 @@
             "passive": { "0": "none", "1": "none" },
     
             "image": "data/equipments/img/black_lotus.png",
-            "origins": ["khitai",
-                        "khitai"]
+            "origins": ["khitai"]
+        },
+    
+        {
+            "id": "black_lotus",
+            "title": {
+                "fr": "Lotus noir",
+                "en": "Black Lotus"
+            },
+            "encumbrance": "2",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/black_lotus.png",
+            "origins": ["khitai"]
         },
     
         {
@@ -1349,8 +1975,25 @@
             "passive": { "0": "none", "1": "none" },
     
             "image": "data/equipments/img/ginger.png",
-            "origins": ["khitai",
-                        "khitai"]
+            "origins": ["khitai"]
+        },
+    
+        {
+            "id": "ginger",
+            "title": {
+                "fr": "Gingembre",
+                "en": "Ginger"
+            },
+            "encumbrance": "2",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/ginger.png",
+            "origins": ["khitai"]
         },
     
         {
@@ -1368,8 +2011,25 @@
             "passive": { "0": "none", "1": "none" },
     
             "image": "data/equipments/img/salpeter.png",
-            "origins": ["khitai",
-                        "khitai"]
+            "origins": ["khitai"]
+        },
+    
+        {
+            "id": "saltpeter",
+            "title": {
+                "fr": "Salpêtre",
+                "en": "Saltpeter"
+            },
+            "encumbrance": "2",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/salpeter.png",
+            "origins": ["khitai"]
         },
     
         {
@@ -1387,8 +2047,25 @@
             "passive": { "0": "none", "1": "none" },
     
             "image": "data/equipments/img/toad_mucus.png",
-            "origins": ["khitai",
-                        "khitai"]
+            "origins": ["khitai"]
+        },
+    
+        {
+            "id": "toad_mucus",
+            "title": {
+                "fr": "Mucus de crapaud",
+                "en": "Toad Mucus"
+            },
+            "encumbrance": "2",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/toad_mucus.png",
+            "origins": ["khitai"]
         },
     
         {
@@ -1424,8 +2101,25 @@
             "passive": { "0": "none", "1": "none" },
     
             "image": "data/equipments/img/toxic_mushrooms.png",
-            "origins": ["khitai",
-                        "khitai"]
+            "origins": ["khitai"]
+        },
+    
+        {
+            "id": "toxic_mushrooms",
+            "title": {
+                "fr": "Champignon toxique",
+                "en": "Toxic Mushrooms"
+            },
+            "encumbrance": "2",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/toxic_mushrooms.png",
+            "origins": ["khitai"]
         },
     
         {
@@ -1461,8 +2155,25 @@
             "passive": { "0": "none", "1": "none" },
     
             "image": "data/equipments/img/warlocks_blood.png",
-            "origins": ["khitai",
-                        "khitai"]
+            "origins": ["khitai"]
+        },
+    
+        {
+            "id": "warlocks_blood",
+            "title": {
+                "fr": "Sang de sorcier",
+                "en": "Warlock’s Blood"
+            },
+            "encumbrance": "1",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/warlocks_blood.png",
+            "origins": ["khitai"]
         },
     
         {
@@ -1480,8 +2191,25 @@
             "passive": { "0": "none", "1": "none" },
     
             "image": "data/equipments/img/assassins_dagger.png",
-            "origins": ["stygia",
-                        "stygia"]
+            "origins": ["stygia"]
+        },
+    
+        {
+            "id": "assassins_dagger",
+            "title": {
+                "fr": "Dague d'assassin",
+                "en": "Assassin’s Dagger"
+            },
+            "encumbrance": "1",
+            
+            "melee": { "0": "yellowreroll", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/assassins_dagger.png",
+            "origins": ["stygia"]
         },
     
         {
@@ -1499,10 +2227,61 @@
             "passive": { "0": "none", "1": "none" },
     
             "image": "data/equipments/img/antidote.png",
-            "origins": ["stygia",
-                        "stygia",
-                        "stygia",
-                        "stygia"]
+            "origins": ["stygia"]
+        },
+    
+        {
+            "id": "antidote",
+            "title": {
+                "fr": "Potion anti-poison",
+                "en": "Antidote"
+            },
+            "encumbrance": "0",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/antidote.png",
+            "origins": ["stygia"]
+        },
+    
+        {
+            "id": "antidote",
+            "title": {
+                "fr": "Potion anti-poison",
+                "en": "Antidote"
+            },
+            "encumbrance": "0",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/antidote.png",
+            "origins": ["stygia"]
+        },
+    
+        {
+            "id": "antidote",
+            "title": {
+                "fr": "Potion anti-poison",
+                "en": "Antidote"
+            },
+            "encumbrance": "0",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/antidote.png",
+            "origins": ["stygia"]
         },
     
         {
@@ -1520,8 +2299,25 @@
             "passive": { "0": "none", "1": "none" },
     
             "image": "data/equipments/img/torch.png",
-            "origins": ["stygia",
-                        "stygia"]
+            "origins": ["stygia"]
+        },
+    
+        {
+            "id": "torch",
+            "title": {
+                "fr": "Torche",
+                "en": "Torch"
+            },
+            "encumbrance": "0",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/torch.png",
+            "origins": ["stygia"]
         },
     
         {
@@ -1539,8 +2335,25 @@
             "passive": { "0": "none", "1": "none" },
     
             "image": "data/equipments/img/trapped_chest.png",
-            "origins": ["stygia",
-                        "stygia"]
+            "origins": ["stygia"]
+        },
+    
+        {
+            "id": "trapped_chest",
+            "title": {
+                "fr": "Coffre piégé",
+                "en": "Trapped Chest"
+            },
+            "encumbrance": "3",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/trapped_chest.png",
+            "origins": ["stygia"]
         },
     
         {
@@ -1594,8 +2407,25 @@
             "passive": { "0": "none", "1": "none" },
     
             "image": "data/equipments/img/amulet.png",
-            "origins": ["bbox",
-                        "bbox"]
+            "origins": ["bbox"]
+        },   
+    
+        {
+            "id": "amulet",
+            "title": {
+                "fr": "Amulette",
+                "en": "Amulet"
+            },
+            "encumbrance": "0",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/amulet.png",
+            "origins": ["bbox"]
         },   
         
         {
@@ -1617,7 +2447,7 @@
         },   
         
         {
-            "id": "orb_red_position_1",
+            "id": "orb_red_position",
             "title": {
                 "fr": "Position orbe",
                 "en": "Orb position"
@@ -1635,7 +2465,7 @@
         },   
         
         {
-            "id": "orb_red_position_2",
+            "id": "orb_red_position",
             "title": {
                 "fr": "Position orbe",
                 "en": "Orb position"
@@ -1653,7 +2483,7 @@
         },   
         
         {
-            "id": "orb_red_position_3",
+            "id": "orb_red_position",
             "title": {
                 "fr": "Position orbe",
                 "en": "Orb position"
@@ -1689,7 +2519,7 @@
         },   
         
         {
-            "id": "orb_green_position_1",
+            "id": "orb_green_position",
             "title": {
                 "fr": "Position orbe",
                 "en": "Orb position"
@@ -1707,7 +2537,7 @@
         },   
         
         {
-            "id": "orb_green_position_2",
+            "id": "orb_green_position",
             "title": {
                 "fr": "Position orbe",
                 "en": "Orb position"
@@ -1725,7 +2555,7 @@
         },   
         
         {
-            "id": "orb_green_position_3",
+            "id": "orb_green_position",
             "title": {
                 "fr": "Position orbe",
                 "en": "Orb position"
@@ -1761,7 +2591,7 @@
         },   
         
         {
-            "id": "orb_blue_position_1",
+            "id": "orb_blue_position",
             "title": {
                 "fr": "Position orbe",
                 "en": "Orb position"
@@ -1779,7 +2609,7 @@
         },   
         
         {
-            "id": "orb_blue_position_2",
+            "id": "orb_blue_position",
             "title": {
                 "fr": "Position orbe",
                 "en": "Orb position"
@@ -1797,7 +2627,7 @@
         },   
         
         {
-            "id": "orb_blue_position_3",
+            "id": "orb_blue_position",
             "title": {
                 "fr": "Position orbe",
                 "en": "Orb position"
@@ -1829,10 +2659,61 @@
             "passive": { "0": "none", "1": "none" },
     
             "image": "data/equipments/img/poisoned.png",
-            "origins": ["campaignbook",
-                        "campaignbook",
-                        "campaignbook",
-                        "campaignbook"]
+            "origins": ["campaignbook"]
+        },   
+        
+        {
+            "id": "poisoned",
+            "title": {
+                "fr": "Empoisonné",
+                "en": "Poisoned"
+            },
+            "encumbrance": "",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/poisoned.png",
+            "origins": ["campaignbook"]
+        },   
+        
+        {
+            "id": "poisoned",
+            "title": {
+                "fr": "Empoisonné",
+                "en": "Poisoned"
+            },
+            "encumbrance": "",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/poisoned.png",
+            "origins": ["campaignbook"]
+        },   
+        
+        {
+            "id": "poisoned",
+            "title": {
+                "fr": "Empoisonné",
+                "en": "Poisoned"
+            },
+            "encumbrance": "",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "image": "data/equipments/img/poisoned.png",
+            "origins": ["campaignbook"]
         },   
         
         {
