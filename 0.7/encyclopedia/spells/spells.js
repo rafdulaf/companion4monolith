@@ -407,13 +407,26 @@ var EncyclopediaSpells = {
         Encyclopedia.spells.list.sort(function(s1, s2) { return s1.title[Language].toLowerCase().localeCompare(s2.title[Language].toLowerCase()); })
         
         var spellList = Encyclopedia.spells.list.filter(EncyclopediaSpells._filter());
+        var ignoredPrevious = 0;
         for (var i in spellList)
         {
+            i = parseInt(i);
             var spell = spellList[i];
+                        
+            if (i < spellList.length - 1
+                && spellList[i+1].id == spell.id)
+            {
+                ignoredPrevious++;
+                continue;
+            }
             
-            spells += "<a href='javascript:void(0)' onclick='EncyclopediaSpells.openSpell(\"" + spell.id + "\")'>";
+            spell = spellList[i - ignoredPrevious];
+
+            spells += "<a href='javascript:void(0)' data-count='" + (ignoredPrevious+1) + "' onclick='EncyclopediaSpells.openSpell(\"" + spell.id + "\")'>";
             spells += CardSpell._cardCode(EncyclopediaSpells._convertSpellToStudio(spell));
             spells += "</a>";
+            
+            ignoredPrevious = 0;
         }
         
         $("#encyclopedia-spell-wrapper").html(spells);
@@ -440,17 +453,18 @@ var EncyclopediaSpells = {
         };
     },
     
-    _findSpellById: function(id)
+    _findSpellsById: function(id)
     {
+        var spells = [];
         for (var i in Encyclopedia.spells.list)
         {
             var spell = Encyclopedia.spells.list[i];
             if (spell.id == id)
             {
-                return spell;
+                spells.push(spell);
             }
         }
-        throw new Error("No spell with id '" + id + "'");
+        return spells;
     },
     
     onShow: function() {
@@ -460,15 +474,22 @@ var EncyclopediaSpells = {
     },
     
     openSpell: function(id) {
-        var spell = EncyclopediaSpells._findSpellById(id);
+        var spells = EncyclopediaSpells._findSpellsById(id);
         
-        var origins = Encyclopedia._removeExtraExpansion(spell.origins.slice());
         var originsCount = {};
-        for (var i in origins)
+        
+        for (var e in spells)
         {
-            var origin = origins[i];
-            originsCount[origin] = originsCount[origin] ? originsCount[origin]+1 : 1;
+            var spell = spells[e];
+            
+            var origins = Encyclopedia._removeExtraExpansion(spell.origins.slice());
+            for (var i in origins)
+            {
+                var origin = origins[i];
+                originsCount[origin] = originsCount[origin] ? originsCount[origin]+1 : 1;
+            }
         }
+        
         var originString = "";
         for (var i in originsCount)
         {
@@ -476,6 +497,7 @@ var EncyclopediaSpells = {
             originString += Encyclopedia._getOrigin(i) + " (" + originsCount[i] + " " + (originsCount[i] == 1 ? EncyclopediaSpells._i18n[Language].card : EncyclopediaSpells._i18n[Language].cards) + ")";
         }
         
+        var spell = spells[0];
         Nav.dialog(spell.title[Language],
             "<div class='spelldetails'>" 
                 + CardSpell._cardCode(EncyclopediaSpells._convertSpellToStudio(spell))
@@ -496,7 +518,7 @@ var EncyclopediaSpells = {
     _transfert: function(id) {
         if (confirm(EncyclopediaSpells._i18n[Language].transfertConfirm))
         {
-            var spell = EncyclopediaSpells._findSpellById(id);
+            var spell = EncyclopediaSpells._findSpellsById(id)[0];
             var studioSpell = EncyclopediaSpells._convertSpellToStudio(spell);
             
             var cards = JSON.parse(localStorage.getItem("StudioSpellCards")) || [];

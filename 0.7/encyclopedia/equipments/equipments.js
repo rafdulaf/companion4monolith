@@ -361,7 +361,6 @@ var EncyclopediaEquipments = {
             equipment = equipmentList[i - ignoredPrevious];
             
             equipments += "<a href='javascript:void(0)' data-count='" + (ignoredPrevious+1) + "' onclick='EncyclopediaEquipments.openEquipment(\"" + equipment.id + "\")'>";
-            
             equipments += CardEquipment._cardCode(EncyclopediaEquipments._convertEquipmentToStudio(equipment));
             equipments += "</a>";
             

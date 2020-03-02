@@ -14,16 +14,30 @@
 
 .spelldetails .from,
 .spelldetails .clarification {
+    display: block;
     text-indent: -90px;
     margin-left: 90px;
 }
 
-@media (min-width: 500px) {
-    .spelldetails .spell {
-        float: left;
-    }
-    .spelldetails .from,
-    .spelldetails .clarification {
-        margin-left: 320px;
-    }
+#encyclopedia-spell-wrapper a {
+    position: relative;
+    display: inline-block;
+}
+
+#encyclopedia-spell-wrapper a[data-count]::after {
+    content: 'x' attr(data-count);
+    position: absolute;
+    z-index: 2;
+    top: 10%;
+    right: -5%;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 18px;
+    background-color: #e64443;
+    color: #ffffff;
+    border-radius: 100%;
+}
+#encyclopedia-spell-wrapper a[data-count='1']::after {
+    content: none;
 }

@@ -68,8 +68,45 @@
             "forEnergy": false,
     
             "image": "data/spells/img/borne_by_the_wind.png",
-            "origins": ["corebox", "stretchgoal", "king",
-                        "campaignbook"],
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
+            }
+        },
+    
+        {
+            "id": "borne_by_the_wind",
+            "title": {
+                "fr": "Porté par le vent",
+                "en": "Borne by the Wind"
+            },
+            "text": {
+                "fr": "Le lanceur gagne la compétence Vol jusqu'à la fin de son tour.",
+                "en": "Gain Flying until end of turn."
+            },
+            "clarification": null,
+    
+            "cost": "1",
+            "saturation": "1",
+            "explosion": false,
+            "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": true,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": true,
+            "forRange": false,
+            "forEnergy": false,
+    
+            "image": "data/spells/img/borne_by_the_wind.png",
+            "origins": ["campaignbook"],
     
             "textStyle": {
                 "fr": { "textSize": 150, "textInter": 66 },
@@ -487,8 +524,45 @@
             "forEnergy": false,
     
             "image": "data/spells/img/sets_halo.png",
-            "origins": ["corebox", "stretchgoal", "king",
-                         "campaignbook"],
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "textStyle": {
+                "fr": { "textSize": 136, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
+            }
+        },
+            
+        {
+            "id": "sets_halo",
+            "title": {
+                "fr": "Halo de Set",
+                "en": "Set's Halo"
+            },
+            "text": {
+                "fr": "Le lanceur augmente sa défense passive de 1. Le halo se dissipe au début du tour où le Héros lanceur redevient actif après un tour de récupération, ou à l'activation de la tuile du lanceur de sort pour l'Overlord.",
+                "en": "Your armor value is increased by 1. This effect ends when you change from cautious to aggressive or when your group is activated."
+            },
+            "clarification": null,
+    
+            "cost": "2",
+            "saturation": "2",
+            "explosion": false,
+            "reaction": true,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": true,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": false,
+            "forEnergy": false,
+    
+            "image": "data/spells/img/sets_halo.png",
+            "origins": ["campaignbook"],
     
             "textStyle": {
                 "fr": { "textSize": 136, "textInter": 66 },
@@ -605,8 +679,48 @@
             "forEnergy": false,
             
             "image": "data/spells/img/teleportation.png",
-            "origins": ["corebox", "stretchgoal", "king", 
-                        "stretchgoal", "king"],
+            "origins": ["corebox", "stretchgoal", "king"],
+            
+            "textStyle": {
+                "fr": { "textSize": 127, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 66 }
+            }
+        },
+    
+        {
+            "id": "teleportation",
+            "title": {
+                "fr": "Téléportation",
+                "en": "Teleportation"
+            },
+            "text": {
+                "fr": "Pour toute gemme dépensée après avoir payé le coût du sort, le lanceur peut se déplacer d'une zone.\nCe mouvement n'est affecté par aucun obstacle. Le lanceur n'a pas besoin d'avoir une ligne de vue avec sa destination.",
+                "en": "Assign a number of gems from your Reserve zone to this card. For each gem assigned, move your model to an adjacent space."
+            },
+            "clarification": {
+                "fr": "Le lanceur de sort n'est pas soumis au phénomène de gêne ni à la compétence Bloqueur.",
+                "en": "A character who casts this spell is not affected by hindering or by Blocking to move."
+            },
+            
+            "cost": "1",
+            "saturation": "0",
+            "explosion": false,
+            "reaction": false,
+            
+            "forOverlord": true,
+            "forHeroes": true,
+            
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": true,
+            "forRange": false,
+            "forEnergy": false,
+            
+            "image": "data/spells/img/teleportation.png",
+            "origins": ["stretchgoal", "king"],
             
             "textStyle": {
                 "fr": { "textSize": 127, "textInter": 66 },
