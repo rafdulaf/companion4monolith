@@ -58,7 +58,7 @@
             "forOverlord": true,
             "forHeroes": true,
             
-            "forSkill": true,
+            "forSkill": "flying",
             "forAttack": false,
             "forDefense": false,
             "forFight": false,
@@ -786,7 +786,7 @@
             "forOverlord": true,
             "forHeroes": true,
 
-            "forSkill": true,
+            "forSkill": "jinx",
             "forAttack": false,
             "forDefense": false,
             "forFight": false,
@@ -938,7 +938,7 @@
             "forOverlord": true,
             "forHeroes": true,
             
-            "forSkill": true,
+            "forSkill": "untouchable",
             "forAttack": false,
             "forDefense": true,
             "forFight": false,
@@ -1131,7 +1131,7 @@
             "forOverlord": true,
             "forHeroes": true,
             
-            "forSkill": true,
+            "forSkill": "support",
             "forAttack": false,
             "forDefense": false,
             "forFight": false,
@@ -1211,7 +1211,7 @@
             "forOverlord": true,
             "forHeroes": true,
             
-            "forSkill": true,
+            "forSkill": "precision_shot",
             "forAttack": false,
             "forDefense": false,
             "forFight": true,
@@ -1249,7 +1249,7 @@
             "forOverlord": true,
             "forHeroes": true,
             
-            "forSkill": true,
+            "forSkill": "evasive",
             "forAttack": false,
             "forDefense": false,
             "forFight": false,
@@ -1553,7 +1553,7 @@
             "forOverlord": true,
             "forHeroes": true,
             
-            "forSkill": true,
+            "forSkill": "protected",
             "forAttack": false,
             "forDefense": true,
             "forFight": false,
@@ -1748,7 +1748,7 @@
             "forOverlord": true,
             "forHeroes": true,
             
-            "forSkill": true,
+            "forSkill": "blocking",
             "forAttack": false,
             "forDefense": false,
             "forFight": false,
@@ -1976,7 +1976,7 @@
             "forOverlord": true,
             "forHeroes": true,
             
-            "forSkill": true,
+            "forSkill": "horror",
             "forAttack": false,
             "forDefense": false,
             "forFight": false,
