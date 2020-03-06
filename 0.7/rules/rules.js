@@ -6,6 +6,9 @@ var ConanRules = {
             'skills': "Compétences",
             'spell_clarification': "(Clarification du sort) ",
             
+            'equipments': "Utilisé dans les cartes d'équipement :",
+            'spells': "Utilisé dans les cartes de sort :",
+            
             'viewer-search': "Recherche dans le document",
             'viewer-download': "Télécharger le document",
             'viewer-zoomin': "Zoomer",
@@ -28,6 +31,9 @@ var ConanRules = {
 
             'skills': "Skills",
             'spell_clarification': "(Spell clarification) ",
+            
+            'equipments': "Equipments card:",
+            'spells': "Spells card:",
 
             'viewer-search': "Search in the document",
             'viewer-download': "Download the document",
@@ -394,20 +400,24 @@ var ConanRules = {
                 var skill = Encyclopedia.skills.list[j];
                 if (skill.type == type.id)
                 {
-                    ConanRules._addSkill(skill.type, 
+                    ConanRules._addSkill(skill.id,
+                                         skill.type, 
                                          skill.image,
                                          skill.title[Language],
                                          skill.text[Language]);
                 }
             }
         }
-        
+    
+        var handled = [];
         for (var i in Encyclopedia.spells.list)
         {
             var spell = Encyclopedia.spells.list[i];
-            if (spell.clarification && spell.clarification[Language] && ConanAbout._hasExpansion(spell.origins))
+            if (spell.clarification && spell.clarification[Language] && ConanAbout._hasExpansion(spell.origins) && handled.indexOf(spell.id) == -1)
             {
-                ConanRules._addSkill('magic', 
+                handled.push(spell.id)
+                ConanRules._addSkill(null,
+                                    'magic', 
                                      spell.image,
                                      spell.title[Language],
                                      ConanRules._i18n[Language].spell_clarification + spell.clarification[Language]);
@@ -415,19 +425,102 @@ var ConanRules = {
         }
     },
     
-    _addSkill: function(type, image, title, text)
+    _addSkill: function(id, type, image, title, text)
     {
-        $('#skills_' + type).append("<div class='skills-skill'>"
+        $('#skills_' + type).append((id ? "<a href='javascript:void(0)' onclick='ConanRules.openSkill(\"" + id + "\")'>" : "")
+            + ConanRules._skill2HTML(id, type, image, title, text)
+            + (id ? "</a>" : ""));
+    },
+    
+    _skill2HTML: function(id, type, image, title, text)
+    {
+        return "<div class='skills-skill'>"
             +   "<img src='" + Version + "/" + image + "'/>"
             +   "<div class='skills-title'>" + title + "</div>"
             +   "<div class='skills-text'>" + ConanRules._replace(text) + "</div>"
             +   "<div class='clear'></div>"
-            + "</div>");
+            + "</div>";
     },
     
     _replace: function(text)
     {
         text = text.replace(/\{(.*?)\}/g, "<img src='" + Version + "/resources/img/$1.png' class='rules-character'/>");
         return text;
+    },
+    
+    _linkToSkill: function(id)
+    {
+        var index = id.indexOf('/');
+        if (index > 0)
+        {
+            id = id.substring(index + 1);
+        }
+        
+        return "<a href='javascript:void(0)' onclick='Nav.closeDialog(); ConanRules.openSkill(\"" + id + "\")'>" + ConanRules._findSkillById(id).title[Language] + "</a>";
+    },
+    
+    _findSkillById: function(id)
+    {
+        var index = id.indexOf('/');
+        if (index > 0)
+        {
+            id = id.substring(index + 1);
+        }
+        
+        for (var i in Encyclopedia.skills.list)
+        {
+            var skill = Encyclopedia.skills.list[i];
+            if (skill.id == id)
+            {
+                return skill;
+            }
+        }
+        
+        throw new Error("Cannot find skill " + id);
+    },
+    
+    openSkill: function(id) {
+        var skill = ConanRules._findSkillById(id);
+
+        var equipments = EncyclopediaEquipments._findEquipmentsBySkill(id);
+        var eqS = "";
+        if (equipments.length > 0)
+        {
+            for (var i=0; i < equipments.length; i++)
+            {
+                if (i != 0) eqS += ",";
+                eqS += " ";
+                
+                eqS += EncyclopediaEquipments._linkToEquipment(equipments[0].id);
+            }
+        }
+
+        var spells = EncyclopediaSpells._findSpellsBySkill(id);
+        var spS = "";
+        if (spells.length > 0)
+        {
+            for (var i=0; i < spells.length; i++)
+            {
+                if (i != 0) spS += ",";
+                spS += " ";
+                
+                spS += EncyclopediaSpells._linkToSpell(spells[0].id);
+            }
+        }
+        
+        Nav.dialog(skill.title[Language],
+            "<div class='skillsdetails'>"
+                + ConanRules._skill2HTML(skill.id, skill.type, skill.image, skill.title[Language], skill.text[Language])
+                + (eqS ? ("<div class='equipments'>" 
+                            + ConanRules._i18n[Language].equipments + eqS
+                        + "</div>") : "") 
+                + (spS ? ("<div class='spells'>" 
+                            + ConanRules._i18n[Language].spells + spS
+                        + "</div>") : "") 
+            + "</div>",
+            null,
+            []
+        );
+//        alert(id)
     }
 }

@@ -9,7 +9,7 @@ var EncyclopediaEquipments = {
             'fromAnd': "<br/>et",
             'card': "exemplaire",
             'cards': "exemplaires",
-            'clarification': "Clarification :"
+            'skill': "Compétence :"
         },
         'en': {
             'tab': "Equip<wbr/>ments",
@@ -20,7 +20,7 @@ var EncyclopediaEquipments = {
             'fromAnd': "<br/>and",
             'card': "copy",
             'cards': "copies",
-            'clarification': "Clarification:"
+            'skill': "Skill:"
         }
     },
     
@@ -406,7 +406,31 @@ var EncyclopediaEquipments = {
         
         return equipments;
     },
-    
+
+    _findEquipmentsBySkill: function(id)
+    {
+        id = ConanRules._findSkillById(id).type + "/" + id;
+        
+        var equipments = [];
+        var equipmentsIds = {};
+        
+        for (var i in Encyclopedia.equipments.list)
+        {
+            var equipment = Encyclopedia.equipments.list[i];
+            if (equipment.skills
+                && !equipmentsIds[id]
+                && (equipment.skills[0] == id
+                    || 
+                    (equipment.skills[0] != "none" && equipment.skills[1] == id)))
+            {
+                equipments.push(equipment);
+                equipmentsIds[id] = true;
+            }
+        }
+        
+        return equipments;
+    },
+
     onShow: function() {
     },
     
@@ -457,6 +481,14 @@ var EncyclopediaEquipments = {
                 + "<div class='from'>" + EncyclopediaEquipments._i18n[Language].from + " "
                     + originString
                 + "</div>"
+                + "<div class='skill'>" 
+                    + EncyclopediaEquipments._i18n[Language].skill 
+                        + " " + (equipment.skills && equipment.skills[0] != 'none' ? 
+                            ( 
+                                ConanRules._linkToSkill(equipment.skills[0]) 
+                                + (equipment.skills[1] != 'none' ? ConanRules._linkToSkill(equipment.skills[1]) : "")
+                            ) : "-")
+                + "</div>" 
             + "</div>",
             null,
             [{
@@ -500,5 +532,9 @@ var EncyclopediaEquipments = {
             
             ConanAbout.warnToast(EncyclopediaEquipments._i18n[Language].transfertOK)
         }
+    },
+    
+    _linkToEquipment: function(id) {
+        return "<a href='javascript:void(0)' onclick='Nav.closeDialog(); EncyclopediaEquipments.openEquipment(\"" + id + "\")'>" + EncyclopediaEquipments._findEquipmentsById(id)[0].title[Language] + "</a>";
     }
 }

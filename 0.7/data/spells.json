@@ -96,7 +96,7 @@
             "forOverlord": true,
             "forHeroes": true,
             
-            "forSkill": true,
+            "forSkill": "flying",
             "forAttack": false,
             "forDefense": false,
             "forFight": false,

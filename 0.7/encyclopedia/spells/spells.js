@@ -9,7 +9,8 @@ var EncyclopediaSpells = {
             'fromAnd': "<br/>et",
             'card': "exemplaire",
             'cards': "exemplaires",
-            'clarification': "Clarification :"
+            'clarification': "Clarification :",
+            'skill': "Compétence :"
         },
         'en': {
             'tab': "Spells",
@@ -20,7 +21,8 @@ var EncyclopediaSpells = {
             'fromAnd': "<br/>and",
             'card': "copy",
             'cards': "copies",
-            'clarification': "Clarification:"
+            'clarification': "Clarification:",
+            'skill': "Skill:"
         }
     },
     
@@ -280,7 +282,7 @@ var EncyclopediaSpells = {
                     }
                 ],
                 filter: function(item, selectedValues) {
-                    return (item.forSkill == true && (selectedValues.indexOf('forSkill')!=-1))
+                    return (item.forSkill != false && (selectedValues.indexOf('forSkill')!=-1))
                         || (item.forAttack == true && (selectedValues.indexOf('forAttack')!=-1))
                         || (item.forDefense == true && (selectedValues.indexOf('forDefense')!=-1))
                         || (item.forFight == true && (selectedValues.indexOf('forFight')!=-1))
@@ -467,6 +469,25 @@ var EncyclopediaSpells = {
         return spells;
     },
     
+    _findSpellsBySkill: function(id)
+    {
+        var spells = [];
+        var spellsIds = {};
+        
+        for (var i in Encyclopedia.spells.list)
+        {
+            var spell = Encyclopedia.spells.list[i];
+            if (spell.forSkill == id && !spellsIds[id])
+            {
+                spells.push(spell);
+                spellsIds[id] = true;
+            }
+        }
+        
+        return spells;
+    },
+
+    
     onShow: function() {
     },
     
@@ -504,7 +525,8 @@ var EncyclopediaSpells = {
                 + "<div class='from'>" + EncyclopediaSpells._i18n[Language].from + " "
                     + originString
                 + "</div>"
-                + "<div class='clarification'>" + EncyclopediaSpells._i18n[Language].clarification + " " + ((spell.clarification && spell.clarification[Language]) ? spell.clarification[Language] : "-") + "</div>" 
+                + ((spell.clarification && spell.clarification[Language]) ?"<div class='clarification'>" + EncyclopediaSpells._i18n[Language].clarification + " " + spell.clarification[Language] + "</div>" : "") 
+                + (spell.forSkill ? "<div class='skill'>" + EncyclopediaSpells._i18n[Language].skill + " " + ConanRules._linkToSkill(spell.forSkill) + "</div>" : "") 
             + "</div>",
             null,
             [{
@@ -534,5 +556,10 @@ var EncyclopediaSpells = {
             
             ConanAbout.warnToast(EncyclopediaSpells._i18n[Language].transfertOK)
         }
+    },
+    
+    _linkToSpell: function(id) {
+        return "<a href='javascript:void(0)' onclick='Nav.closeDialog(); EncyclopediaSpells.openSpell(\"" + id + "\")'>" + EncyclopediaSpells._findSpellsById(id)[0].title[Language] + "</a>";
     }
+
 }
