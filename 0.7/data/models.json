@@ -1,0 +1,17 @@
+{
+    "list": [
+        {
+            "id": "belit",
+            "count": 1,
+            
+            "images": {
+                "model": ["data/models/img/belit_model.jpg"],
+                "background": "data/models/img/belit_image.png"
+            },
+            
+            "paint": "Martin Grandbarbe",
+            
+            "origins": ["corebox", "stretchgoal", "king"]
+        }
+    ]
+}

@@ -106,6 +106,7 @@
 		        	});
         </script>
 	<body>
+	   <div class="loading" style="display: none;"></div>
         <script>
             var useragent = navigator.userAgent.toLowerCase();
             if (!/edge\/([0-9.]+)/.test(useragent) 
@@ -117,7 +118,7 @@
             }
             else
            	{
-                document.write("<div class=\"loading\"></div>")
+            	$("div.loading").show();
            	}
         </script>
 	    <noscript>This website requires Javascript to be activated / Ce site nécessite l'utilisation de Javascript</noscript>

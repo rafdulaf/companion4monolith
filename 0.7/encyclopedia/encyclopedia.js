@@ -20,7 +20,9 @@ var Encyclopedia = {
             _load(Version + "/data/spells.json", function(data) { Encyclopedia.spells = data; }),
             _load(Version + "/data/equipments.json", function(data) { Encyclopedia.equipments = data; }),
             _load(Version + "/data/expansions.json", function(data) { Encyclopedia.expansions = data; }),
-            _load(Version + "/data/maps.json", function(data) { Encyclopedia.maps = data; })
+            _load(Version + "/data/maps.json", function(data) { Encyclopedia.maps = data; }),
+            _load(Version + "/data/models.json", function(data) { Encyclopedia.models = data; }),
+            _load(Version + "/data/heroes.json", function(data) { Encyclopedia.heroes = data; })
         ]);
     },
     
