@@ -22,7 +22,7 @@ var EncyclopediaHeroes = {
                 },
                 filter: function(item, value)
                 {
-                    return ConanRules._deemphasize(item.title[Language] + item.text[Language]).indexOf(ConanRules._deemphasize(value)) != -1;
+                    return ConanRules._deemphasize(item.name[Language]).indexOf(ConanRules._deemphasize(value)) != -1;
                 }
             },
             
