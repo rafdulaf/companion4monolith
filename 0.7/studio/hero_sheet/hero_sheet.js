@@ -24,5 +24,32 @@ var HeroSheet = {
     },
     
     onHide: function() {
-    }
+    },
+    
+    later: function(sheet)
+    {
+        sheet = card || {
+            id: Math.random(),
+            image: "",
+            imagelocation: {x: "0", y: "50"},
+            imagezoom: "100",
+            imagerotation: "0"
+        };
+    },
+    
+    _sheetCode: function(sheet) {
+        var code = "<div class=\"herosheet sheet\">";
+        
+        code += "<img class=\"background-l1\" src=\"" + Version + "/studio/hero_sheet/img/background_layer_1.png\"/>";
+        
+        if (sheet.image)
+        {
+            code += "<div class=\"image\"><img src=\"" + sheet.image + "\" style=\"left: " + sheet.imagelocation.x + "%; top: " + sheet.imagelocation.y + "%; width: " + sheet.imagezoom + "%; transform: translate(-50%, -50%) rotate(" + sheet.imagerotation + "deg)\"/></div>";
+        }
+        
+        code += "<img class=\"background-l3\" src=\"" + Version + "/studio/hero_sheet/img/background_layer_3.png\"/>";
+                
+        code += "</div>";
+        return code;
+    }    
 }
