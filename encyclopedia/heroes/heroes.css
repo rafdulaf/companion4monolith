@@ -1,0 +1,18 @@
+#encyclopedia-heroes {
+    font-family: 'Hyborian';
+    overflow: auto;
+    position: relative;
+}
+#encyclopedia-heroessheet-wrapper {
+    margin-left: 156px;
+    text-align: center;
+}
+.encyclopedia-heroes-tostudio::before {
+    content: "\f591";
+    font-family: 'Font Awesome 5 Free';
+}
+
+#encyclopedia-heroessheet-wrapper a {
+    position: relative;
+    display: inline-block;
+}

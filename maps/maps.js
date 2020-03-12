@@ -164,7 +164,7 @@ var ConanMaps = {
                 var map = Encyclopedia.maps.list[i];
                 if (!map.discard)
                 {
-    				var imgCode = "<div class='map-index-board-image' style=\"background-image: url('" + Version + "/" + map.description.thumbnail + "\');\"/>"
+    				var imgCode = "<div class='map-index-board-image' style=\"background-image: url('" + map.description.thumbnail + "?version=" + Version + "\');\"/>"
                     var subtitleCode = "<div class='map-index-board-sublegend'>" + ConanMaps._getOrigin(map) + "</div>";
     				var titleCode = "<div class='map-index-board-legend'>" + map.description.title[Language] + "</div>";
     				code += "<li><a href=\"javascript:void(0);\" title=\"" + ConanMaps._i18n[Language].openMap + map.description.title[Language] + "\" onclick=\"ConanMaps._displayMap('" + map.id + "')\">" + imgCode + titleCode + subtitleCode + "</a></li>";
@@ -285,7 +285,7 @@ var ConanMaps = {
         $("#map-map-map")
             .addClass("map-map-wrapper map-map-wrapper-display-help")
             .attr("data-help", ConanMaps._i18n[Language]['start'])
-            .html("<img class='map-bg' src='" + Version + "/" + map.description.board + "'/>" + "<div class='map-map-area'></div>");
+            .html("<img class='map-bg' src='" + map.description.board + "?version=" + Version + "'/>" + "<div class='map-map-area'></div>");
             
         ConanMaps._rotate();
     },
@@ -358,7 +358,7 @@ var ConanMaps = {
             {
                 aide += "<svg  viewBox=\"0 0 100 100\" preserveAspectRatio=\"none\">" + code + "</svg>";
             }
-            aide += "<img src=\"" + Version + "/" + map.description.board + "\"/></div>";
+            aide += "<img src=\"" + map.description.board + "?version=" + Version + "\"/></div>";
             aide += "</div>";
             
             
@@ -390,7 +390,7 @@ var ConanMaps = {
     
     _replace: function(text)
     {
-        text = text.replace(/\{(.*?)\}/g, "<img src=\"" + Version + "/" + "resources/img/$1.png\" class='map-help-character'/>");
+        text = text.replace(/\{(.*?)\}/g, "<img src=\"resources/img/$1.png?version=" + Version + "\" class='map-help-character'/>");
         return text;
     },
     
@@ -602,7 +602,7 @@ var ConanMaps = {
     {
         var map = ConanMaps._getMap();
         
-        window.open(Version + "/" + map.description.losFile);
+        window.open(map.description.losFile + "?version=" + Version);
     },
     
     _legend: function()

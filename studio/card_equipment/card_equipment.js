@@ -148,7 +148,7 @@ var CardEquipment = {
             html += "<div class='newpage'>"; 
             for (var i in cards)
             {
-                html += "<img id=\"equipment-back-" + i + "\" style=\"display: none\" class=\"back\" src=\"" + Version + "/studio/card_equipment/img/back.png\"/>"
+                html += "<img id=\"equipment-back-" + i + "\" style=\"display: none\" class=\"back\" src=\"studio/card_equipment/img/back.png?version=" + Version + "\"/>"
             }
             html += "</div>";
         }
@@ -168,7 +168,7 @@ var CardEquipment = {
     
     _cardCode: function(card) {
         var code = "<div class=\"equipement card\">"
-                + "<img class=\"background\" src=\"" + Version + "/studio/card_equipment/img/background.png\"/>";
+                + "<img class=\"background\" src=\"studio/card_equipment/img/background.png?version=" + Version + "\"/>";
                 
                 
         var imageCode = "<div class=\"image\"><img src=\"" + card.image + "\" style=\"left: " + card.imagelocation.x + "%; top: " + card.imagelocation.y + "%; width: " + card.imagezoom + "%; transform: translate(-50%, -50%) rotate(" + card.imagerotation + "deg)\"/></div>"; 
@@ -180,13 +180,13 @@ var CardEquipment = {
 
         if (card.name !== undefined && card.name !== null)
         {
-               code += "<img class=\"background-name\" src=\"" + Version + "/studio/card_equipment/img/name-background.png\"/>"
+               code += "<img class=\"background-name\" src=\"studio/card_equipment/img/name-background.png?version=" + Version + "\"/>"
                     + "<div class=\"name\">" + card.name + "</div>";
         }
                     
         if (card.encumbrance || card.encumbrance === "0")
         {
-            code += "<img class=\"background-encumbrance\" src=\"" + Version + "/studio/card_equipment/img/weight.png\"/>"
+            code += "<img class=\"background-encumbrance\" src=\"studio/card_equipment/img/weight.png?version=" + Version + "\"/>"
                 + "<div class=\"encumbrance\">" + card.encumbrance + "</div>";
         }
 
@@ -195,10 +195,10 @@ var CardEquipment = {
         {
             code += "<div class=\"passive level" + level + "\">"
                    + (card.passive[1] == 'none' ?
-                        "<img class=\"background-passive\" src=\"" + Version + "/studio/card_equipment/img/armor-1.png\"/>" :
-                        "<img class=\"background-passive duo\" src=\"" + Version + "/studio/card_equipment/img/armor-2.png\"/>")
-                     + "<img src=\"" + Version + "/studio/card_equipment/img/dice_" + card.passive[0] + ".png\"/>"
-                     + (card.passive[1] == 'none' ? "" : "<img src=\"" + Version + "/studio/card_equipment/img/dice_" + card.passive[1] + ".png\"/>")
+                        "<img class=\"background-passive\" src=\"studio/card_equipment/img/armor-1.png?version=" + Version + "\"/>" :
+                        "<img class=\"background-passive duo\" src=\"studio/card_equipment/img/armor-2.png?version=" + Version + "\"/>")
+                     + "<img src=\"studio/card_equipment/img/dice_" + card.passive[0] + ".png?version=" + Version + "\"/>"
+                     + (card.passive[1] == 'none' ? "" : "<img src=\"studio/card_equipment/img/dice_" + card.passive[1] + ".png?version=" + Version + "\"/>")
                    + "</div>"
             level++;
         }
@@ -206,10 +206,10 @@ var CardEquipment = {
         {
             code += "<div class=\"manipulation" + (card.manipulation.explosive ? " explosive": "") + " level" + level + "\">"
                    + (card.manipulation[1] == 'none' ?
-                        "<img class=\"background-manipulation\" src=\"" + Version + "/studio/card_equipment/img/" + (!card.manipulation.explosive ? "manip" : "launch") + "-1.png\"/>" :
-                        "<img class=\"background-manipulation duo\" src=\"" + Version + "/studio/card_equipment/img/" + (!card.manipulation.explosive ? "manip" : "launch") + "-2.png\"/>")
-                     + "<img src=\"" + Version + "/studio/card_equipment/img/dice_" + card.manipulation[0] + ".png\"/>"
-                     + (card.manipulation[1] == 'none' ? "" : "<img src=\"" + Version + "/studio/card_equipment/img/dice_" + card.manipulation[1] + ".png\"/>")
+                        "<img class=\"background-manipulation\" src=\"studio/card_equipment/img/" + (!card.manipulation.explosive ? "manip" : "launch") + "-1.png?version=" + Version + "\"/>" :
+                        "<img class=\"background-manipulation duo\" src=\"studio/card_equipment/img/" + (!card.manipulation.explosive ? "manip" : "launch") + "-2.png?version=" + Version + "\"/>")
+                     + "<img src=\"studio/card_equipment/img/dice_" + card.manipulation[0] + ".png?version=" + Version + "\"/>"
+                     + (card.manipulation[1] == 'none' ? "" : "<img src=\"studio/card_equipment/img/dice_" + card.manipulation[1] + ".png?version=" + Version + "\"/>")
                    + "</div>"
             level++;
         }
@@ -217,10 +217,10 @@ var CardEquipment = {
         {
             code += "<div class=\"ranged" + (card.ranged.throwable ? " throw": "") + " level" + level + "\">"
                    + (card.ranged[1] == 'none' ?
-                        "<img class=\"background-ranged\" src=\"" + Version + "/studio/card_equipment/img/" + (!card.ranged.throwable ? "remote" : "throw") + "-1.png\"/>" :
-                        "<img class=\"background-ranged duo\" src=\"" + Version + "/studio/card_equipment/img/" + (!card.ranged.throwable ? "remote" : "throw") + "-2.png\"/>")
-                     + "<img src=\"" + Version + "/studio/card_equipment/img/dice_" + card.ranged[0] + ".png\"/>"
-                     + (card.ranged[1] == 'none' ? "" : "<img src=\"" + Version + "/studio/card_equipment/img/dice_" + card.ranged[1] + ".png\"/>")
+                        "<img class=\"background-ranged\" src=\"studio/card_equipment/img/" + (!card.ranged.throwable ? "remote" : "throw") + "-1.png?version=" + Version + "\"/>" :
+                        "<img class=\"background-ranged duo\" src=\"studio/card_equipment/img/" + (!card.ranged.throwable ? "remote" : "throw") + "-2.png?version=" + Version + "\"/>")
+                     + "<img src=\"studio/card_equipment/img/dice_" + card.ranged[0] + ".png?version=" + Version + "\"/>"
+                     + (card.ranged[1] == 'none' ? "" : "<img src=\"studio/card_equipment/img/dice_" + card.ranged[1] + ".png?version=" + Version + "\"/>")
                    + "</div>"
             level++;
         }
@@ -228,10 +228,10 @@ var CardEquipment = {
         {
             code += "<div class=\"active level" + level + "\">"
                    + (card.active[1] == 'none' ?
-                        "<img class=\"background-active\" src=\"" + Version + "/studio/card_equipment/img/defense-1.png\"/>" :
-                        "<img class=\"background-active duo\" src=\"" + Version + "/studio/card_equipment/img/defense-2.png\"/>")
-                     + "<img src=\"" + Version + "/studio/card_equipment/img/dice_" + card.active[0] + ".png\"/>"
-                     + (card.active[1] == 'none' ? "" : "<img src=\"" + Version + "/studio/card_equipment/img/dice_" + card.active[1] + ".png\"/>")
+                        "<img class=\"background-active\" src=\"studio/card_equipment/img/defense-1.png?version=" + Version + "\"/>" :
+                        "<img class=\"background-active duo\" src=\"studio/card_equipment/img/defense-2.png?version=" + Version + "\"/>")
+                     + "<img src=\"studio/card_equipment/img/dice_" + card.active[0] + ".png?version=" + Version + "\"/>"
+                     + (card.active[1] == 'none' ? "" : "<img src=\"studio/card_equipment/img/dice_" + card.active[1] + ".png?version=" + Version + "\"/>")
                    + "</div>"
             level++;
         }
@@ -239,10 +239,10 @@ var CardEquipment = {
         {
             code += "<div class=\"melee level" + level + "\">"
                    + (card.melee[1] == 'none' ?
-                        "<img class=\"background-melee\" src=\"" + Version + "/studio/card_equipment/img/contact-1.png\"/>" :
-                        "<img class=\"background-melee duo\" src=\"" + Version + "/studio/card_equipment/img/contact-2.png\"/>")
-                     + "<img src=\"" + Version + "/studio/card_equipment/img/dice_" + card.melee[0] + ".png\"/>"
-                     + (card.melee[1] == 'none' ? "" : "<img src=\"" + Version + "/studio/card_equipment/img/dice_" + card.melee[1] + ".png\"/>")
+                        "<img class=\"background-melee\" src=\"studio/card_equipment/img/contact-1.png?version=" + Version + "\"/>" :
+                        "<img class=\"background-melee duo\" src=\"studio/card_equipment/img/contact-2.png?version=" + Version + "\"/>")
+                     + "<img src=\"studio/card_equipment/img/dice_" + card.melee[0] + ".png?version=" + Version + "\"/>"
+                     + (card.melee[1] == 'none' ? "" : "<img src=\"studio/card_equipment/img/dice_" + card.melee[1] + ".png?version=" + Version + "\"/>")
                    + "</div>";
             level++;
         }
@@ -250,7 +250,7 @@ var CardEquipment = {
         if (card.movement)
         {
             code += "<div class=\"movement level" + level + "\">"
-                        + "<img class=\"background-movement\" src=\"" + Version + "/studio/card_equipment/img/movement.png\"/>"
+                        + "<img class=\"background-movement\" src=\"studio/card_equipment/img/movement.png?version=" + Version + "\"/>"
                         + "<div>" + card.movement + "</div>"
                    + "</div>";
             level++;
@@ -259,18 +259,18 @@ var CardEquipment = {
         if (card.skills && card.skills[0] != 'none')
         {
             code += "<div class=\"skills-separator level" + level + "\">"
-                     + "<img class=\"background-separator\" src=\"" + Version + "/studio/card_equipment/img/separator.png\"/>"
+                     + "<img class=\"background-separator\" src=\"studio/card_equipment/img/separator.png?version=" + Version + "\"/>"
                    + "</div>";
     
             code += "<div class=\"skills level" + level + "\">"
-                     + "<img class=\"background-skills\" src=\"" + Version + "/" + CardEquipment._getSkillImage(card.skills[0]) + "\"/>"
+                     + "<img class=\"background-skills\" src=\"" + CardEquipment._getSkillImage(card.skills[0]) + "?version=" + Version + "\"/>"
                    + "</div>";
             level++;
             
             if (card.skills && card.skills[1] != 'none')
             {
                 code += "<div class=\"skills level" + level + "\">"
-                     + "<img class=\"background-skills\" src=\"" + Version + "/" + CardEquipment._getSkillImage(card.skills[1]) + "\"/>"
+                     + "<img class=\"background-skills\" src=\"" + CardEquipment._getSkillImage(card.skills[1]) + "?version=" + Version + "\"/>"
                    + "</div>";
                 level++;
             }

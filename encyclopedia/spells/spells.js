@@ -445,7 +445,7 @@ var EncyclopediaSpells = {
             textInter: spell.textStyle[Language].textInter,
             cost: spell.cost,
             saturation: spell.saturation,
-            image: spell.image ? Version + "/" + spell.image : null,
+            image: spell.image ? spell.image + "?version=" + Version : null,
             imageEffect: false,
             imagelocation: {x: "50", y: "50"},
             imagezoom: "100",

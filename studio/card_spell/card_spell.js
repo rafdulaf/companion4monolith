@@ -132,7 +132,7 @@ var CardSpell = {
             html += "<div class='newpage'>"; 
             for (var i in cards)
             {
-                html += "<img id=\"spell-back-" + i + "\" style=\"display: none\" class=\"back\" src=\"" + Version + "/studio/card_spell/img/back.png\"/>"
+                html += "<img id=\"spell-back-" + i + "\" style=\"display: none\" class=\"back\" src=\"studio/card_spell/img/back.png?version=" + Version + "\"/>"
             }
             html += "</div>";
         }
@@ -152,7 +152,7 @@ var CardSpell = {
     
     _cardCode: function(card) {
         var code = "<div class=\"spell card" + (card.imageEffect !== false ? " effect" : "") + "\">"
-                + "<img class=\"background\" src=\"" + Version + "/studio/card_spell/img/background.png\"/>";
+                + "<img class=\"background\" src=\"studio/card_spell/img/background.png?version=" + Version + "\"/>";
         
         code += "<div class=\"name" + (card.longName === true ? " long" : "") + "\">" + card.name + "</div>";
         code += "<div class=\"text\" style=\"font-size: " + card.textSize + "%; line-height: " + card.textInter + "%; \">" + CardSpell._replace(card.text) + "</div>";
@@ -162,20 +162,20 @@ var CardSpell = {
         code += "<div class=\"cost" + (hasSaturation ? "" : " noSaturation") + (hasCost ? "" : " noCost") + "\">" + (hasCost ? card.cost : "X") + "</div>";
         if (hasSaturation)
         {
-            code += "<div class='cost-and-saturation'><img src=\"" + Version + "/studio/card_spell/img/slash2.png\"/></div>";
+            code += "<div class='cost-and-saturation'><img src=\"studio/card_spell/img/slash2.png?version=" + Version + "\"/></div>";
             code += "<div class=\"saturation\">" + card.saturation + "</div>";
         }
 
         if (card.explosion)
         {
-            code += "<div class='explosion" + (card.reaction ? " and-other" : "") + "'><img src=\"" + Version + "/studio/card_spell/img/explosion.png\"/></div>";
+            code += "<div class='explosion" + (card.reaction ? " and-other" : "") + "'><img src=\"studio/card_spell/img/explosion.png?version=" + Version + "\"/></div>";
         }
         if (card.reaction)
         {
-            code += "<div class='reaction" + (card.explosion ? " and-other" : "") + "'><img src=\"" + Version + "/studio/card_spell/img/reaction.png\"/></div>";
+            code += "<div class='reaction" + (card.explosion ? " and-other" : "") + "'><img src=\"studio/card_spell/img/reaction.png?version=" + Version + "\"/></div>";
         }
 
-        code += "<div class='imagebg'><img src=\"" + Version + "/studio/card_spell/img/image-bg.png\"/></div>"
+        code += "<div class='imagebg'><img src=\"studio/card_spell/img/image-bg.png?version=" + Version + "\"/></div>"
         if (card.image)
         {
             code += "<div class='image'><img src='" + card.image + "' style=\"left: " + card.imagelocation.x + "%; top: " + card.imagelocation.y + "%; width: " + card.imagezoom + "%; transform: translate(-50%, -50%) rotate(" + card.imagerotation + "deg)\"/></div>"
@@ -187,7 +187,7 @@ var CardSpell = {
     
     _replace: function(text)
     {
-        text = text.replace(/\n/g, '<br/>').replace(/\{(.*?)\}/g, "<img src=\"" + Version + "/resources/img/$1.png\"/>");
+        text = text.replace(/\n/g, '<br/>').replace(/\{(.*?)\}/g, "<img src=\"resources/img/$1.png?version=" + Version + "\"/>");
         return text;
     },
 

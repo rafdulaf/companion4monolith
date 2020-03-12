@@ -4,7 +4,7 @@ var Encyclopedia = {
         function _load(url, cb)
         {
             return new Promise(function (resolve, reject) { 
-                url += '?_=' + new Date().getTime();
+                url += '?version=' + Version;
                 
                 $.ajax({
                   dataType: "json",
@@ -16,13 +16,13 @@ var Encyclopedia = {
         }
         
         return Promise.all([
-            _load(Version + "/data/skills.json", function(data) { Encyclopedia.skills = data; }),
-            _load(Version + "/data/spells.json", function(data) { Encyclopedia.spells = data; }),
-            _load(Version + "/data/equipments.json", function(data) { Encyclopedia.equipments = data; }),
-            _load(Version + "/data/expansions.json", function(data) { Encyclopedia.expansions = data; }),
-            _load(Version + "/data/maps.json", function(data) { Encyclopedia.maps = data; }),
-            _load(Version + "/data/models.json", function(data) { Encyclopedia.models = data; }),
-            _load(Version + "/data/heroes.json", function(data) { Encyclopedia.heroes = data; })
+            _load("data/skills.json", function(data) { Encyclopedia.skills = data; }),
+            _load("data/spells.json", function(data) { Encyclopedia.spells = data; }),
+            _load("data/equipments.json", function(data) { Encyclopedia.equipments = data; }),
+            _load("data/expansions.json", function(data) { Encyclopedia.expansions = data; }),
+            _load("data/maps.json", function(data) { Encyclopedia.maps = data; }),
+            _load("data/models.json", function(data) { Encyclopedia.models = data; }),
+            _load("data/heroes.json", function(data) { Encyclopedia.heroes = data; })
         ]);
     },
     

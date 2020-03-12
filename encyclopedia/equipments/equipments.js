@@ -384,7 +384,7 @@ var EncyclopediaEquipments = {
             active: equipment.active,
             passive: equipment.passive,
             skills: equipment.skills || { 0: "none", 1: "none" },
-            image: equipment.image ? Version + "/" + equipment.image : null,
+            image: equipment.image ? equipment.image + "?version=" + Version : null,
             imagelocation: {x: "50", y: "50"},
             imagezoom: "100",
             imagerotation: "0"

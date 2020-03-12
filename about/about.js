@@ -115,7 +115,7 @@ var ConanAbout = {
             "<div id='about' class='about'>"
                     + "<div class='about-zone-about'>"
                             + "<h1 style='text-align: center '>" + ConanAbout._i18n[Language].title + " v" + Version + "</h1>"
-                            + "<img src='" + Version + "/about/logo.jpg'/>" +
+                            + "<img src='/about/logo.jpg?version='" + Version + "/>" +
                             "<a class='fullscreen' onclick='ConanAbout._toggleFullscreen(); return false' href='javascript:void(0);' title=\"" + ConanAbout._i18n[Language].fullscreen + "\"></a>" + 
                             "<span>" + ConanAbout._i18n[Language].text + 
                                 "<div><a target='_blank' href='https://the-overlord.com/'>" + ConanAbout._i18n[Language].find + "</a></div>" +

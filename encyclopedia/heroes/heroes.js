@@ -200,7 +200,7 @@ var EncyclopediaHeroes = {
         
         var heroes = "";
         
-        Encyclopedia.heroes.list.sort(function(s1, s2) { return s1.title[Language].toLowerCase().localeCompare(s2.title[Language].toLowerCase()); })
+        Encyclopedia.heroes.list.sort(function(s1, s2) { return s1.name[Language].toLowerCase().localeCompare(s2.name[Language].toLowerCase()); })
         
         var heroList = Encyclopedia.heroes.list.filter(EncyclopediaHeroes._filter());
         for (var i in heroList)
@@ -222,7 +222,7 @@ var EncyclopediaHeroes = {
         return {
             id: hero.id + "-" + Math.random(),
             name: hero.name[Language],
-            image: hero.image ? Version + "/" + hero.image : null,
+            image: hero.image ? hero.image + "?version=" + Version : null,
             imageEffect: false,
             imagelocation: {x: "0", y: "50"},
             imagezoom: "100",

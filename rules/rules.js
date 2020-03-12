@@ -125,7 +125,7 @@ var ConanRules = {
         {
             $("#rulessearch input").prop('disabled', true);
             ConanRules.keywords = ConanRules.keywords || {};
-            $.getJSON(Version + "/rules/" + (ConanRules._currentSlide == 1 ? "heroes" : "overlord") + "/" + Language + "/book/search.json", null, function(data) { ConanRules.keywords[ConanRules._currentSlide] = data; $("#rulessearch input").prop('disabled', false).focus(); ConanRules._doSearch(true); });
+            $.getJSON("rules/" + (ConanRules._currentSlide == 1 ? "heroes" : "overlord") + "/" + Language + "/book/search.json?version=" + Version, null, function(data) { ConanRules.keywords[ConanRules._currentSlide] = data; $("#rulessearch input").prop('disabled', false).focus(); ConanRules._doSearch(true); });
         }
         else
         {
@@ -204,7 +204,7 @@ var ConanRules = {
                     
                     var guessRatioY = (index / pageContent.length) * 0.8 + 0.1;
 
-                    if (!pageHasResults) results += "<li><a href='#' onclick='ConanRules._endPageSearch(this, arguments[0], " + (i+1) + ")'><img src=\"" + Version + "/" + "rules/" + (ConanRules._currentSlide == 1 ? "heroes" : "overlord") + "/" + Language + "/book/thumbnails/" + (i+1) + ".jpg\"/><br/>Page " + (i+1) + "</a><ul>";
+                    if (!pageHasResults) results += "<li><a href='#' onclick='ConanRules._endPageSearch(this, arguments[0], " + (i+1) + ")'><img src=\"rules/" + (ConanRules._currentSlide == 1 ? "heroes" : "overlord") + "/" + Language + "/book/thumbnails/" + (i+1) + ".jpg?version=" + Version + "\"/><br/>Page " + (i+1) + "</a><ul>";
                     results += "<li>" 
                                     + "<a href='#' onclick='ConanRules._endSearch(" + (i+1) +", 0, " + guessRatioY + ")'>" 
                                         + prefix + textContent[i].substr(snippetStart, snippetEnd - snippetStart).replace(foundExact, '<em>' + foundExact + '</em>') + suffix 
@@ -302,8 +302,8 @@ var ConanRules = {
         for (var i = 0; i <= size; i+=2)
         {
             s += "<div>"
-            if (i > 0) s += "<img data-page='" + i + "' src='" + Version + "/" + url + "/thumbnails/" + i + ".jpg'/>"
-            if (i < size) s += "<img data-page='" + (i+1) + "' src='" + Version + "/" + url + "/thumbnails/" + (i+1) + ".jpg'/>"
+            if (i > 0) s += "<img data-page='" + i + "' src='" + url + "/thumbnails/" + i + ".jpg?version=" + Version + "'/>"
+            if (i < size) s += "<img data-page='" + (i+1) + "' src='" + url + "/thumbnails/" + (i+1) + ".jpg?version=" + Version + "'/>"
             s += "</div>"
         }
         s += "</div>"
@@ -311,7 +311,7 @@ var ConanRules = {
         // pages
         for (var i = 1; i <= size; i++)
         {
-            s += "<iframe data-page='" + i + "' src=\"" + Version + "/" + url + "/" + i + ".html\"></iframe>";
+            s += "<iframe data-page='" + i + "' src=\"" + url + "/" + i + ".html?version=" + Version + "\"></iframe>";
         }
         
         return s;
@@ -435,7 +435,7 @@ var ConanRules = {
     _skill2HTML: function(id, type, image, title, text)
     {
         return "<div class='skills-skill'>"
-            +   "<img src='" + Version + "/" + image + "'/>"
+            +   "<img src='" + image + "?version=" + Version + "'/>"
             +   "<div class='skills-title'>" + title + "</div>"
             +   "<div class='skills-text'>" + ConanRules._replace(text) + "</div>"
             +   "<div class='clear'></div>"
@@ -444,7 +444,7 @@ var ConanRules = {
     
     _replace: function(text)
     {
-        text = text.replace(/\{(.*?)\}/g, "<img src='" + Version + "/resources/img/$1.png' class='rules-character'/>");
+        text = text.replace(/\{(.*?)\}/g, "<img src='resources/img/$1.png?version=" + Version + "' class='rules-character'/>");
         return text;
     },
     

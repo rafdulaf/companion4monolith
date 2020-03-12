@@ -30,5 +30,6 @@
     ],
     "theme_color": "#e64443",
     "background_color": "#e64443",
-    "display": "standalone"
+    "display": "standalone",
+    "android_package_name": "com.github.rafdulaf.companion4conan"
 }
