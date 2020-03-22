@@ -12,7 +12,7 @@
             },
             
             "gems": 9,
-            "encumbrance": 9,
+            "encumbrance": [9, 7, 9],
              
             "melee": { "dice": "orange", "exertion": 4 },
             "ranged": { "dice": "yellow", "exertion": 3 },
@@ -29,9 +29,9 @@
             ],
              
             "image": "data/heroes/img/belit.png",
+            "image_nice": "data/heroes/img/belit_image.png",
             "model": "belit",
             "origins": ["corebox", "stretchgoal", "king"] 
-            
         }
     ]
 }

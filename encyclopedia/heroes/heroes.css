@@ -16,3 +16,27 @@
     position: relative;
     display: inline-block;
 }
+
+.herodetails .from {
+    display: block;
+    text-indent: -90px;
+    margin-left: 90px;
+}
+
+.herodetails .superdetails {
+    width: 700px;
+    max-width: 100%;
+}
+.herodetails .superdetails > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+.herodetails .superdetails img { width: 33%; }
+.herodetails .superdetails .text { 
+    width: 66%;
+    text-align: justify;
+    font-style: italic; 
+    line-height: 100%; 
+}
+.herodetails .superdetails .text:before { content: "« "; }
+.herodetails .superdetails .text:after { content: " »"; }

@@ -1,27 +1,33 @@
-var EncyclopediaHeroes = {
+var EncyclopediaModels = {
     _i18n: {
         'fr': {
-            'tab': "Héros",
+            'tab': "Figu<wbr/>rines",
             'from': "Disponible dans :",
             'fromAnd': "<br/>et",
-            'skill': "Compétence :",
-            'model': "Figurine :"
+            'model': "figurine",
+            'models': "figurines",
+            'paintedBy': "Peint par: ",
+            'zoom': "Zoom",
+            'heroes': "Utilisée par les héros :"
         },
         'en': {
-            'tab': "Heroes",
+            'tab': "Models",
             'from': "Available in:",
             'fromAnd': "<br/>and",
-            'skill': "Skill:",
-            'model': "Model:"
+            'model': "model",
+            'models': "models",
+            'paintedBy': "Painted par: ",
+            'zoom': "Zoom",
+            'heroes': "Used by the heroes:"
         }
     },
     
     preinit: function()
     {
-        Encyclopedia._slides.push({   label: EncyclopediaHeroes._i18n[Language].tab, id: "encyclopedia-heroes", onShow: EncyclopediaHeroes.onShow,  onHide: EncyclopediaHeroes.onHide });
+        Encyclopedia._slides.push({   label: EncyclopediaModels._i18n[Language].tab, id: "encyclopedia-models", onShow: EncyclopediaModels.onShow,  onHide: EncyclopediaModels.onHide });
         
         
-        EncyclopediaHeroes._facets = [
+        EncyclopediaModels._facets = [
             {
                 id: 'keyword',
                 label: {
@@ -30,7 +36,7 @@ var EncyclopediaHeroes = {
                 },
                 filter: function(item, value)
                 {
-                    return ConanRules._deemphasize(item.name[Language]).indexOf(ConanRules._deemphasize(value)) != -1;
+                    return ConanRules._deemphasize(EncyclopediaModels._findModelNames(item)).indexOf(ConanRules._deemphasize(value)) != -1;
                 }
             },
             
@@ -128,16 +134,16 @@ var EncyclopediaHeroes = {
     
     init: function() 
     {
-        $("#encyclopedia-heroes").append(Encyclopedia.displaySearchEngine(EncyclopediaHeroes._facets, "EncyclopediaHeroes.displayHeroes()", "ehs"));
-        $("#encyclopedia-heroes").append("<div id='encyclopedia-heroessheet-wrapper'></div>");
-        EncyclopediaHeroes.displayHeroes();
+        $("#encyclopedia-models").append(Encyclopedia.displaySearchEngine(EncyclopediaModels._facets, "EncyclopediaModels.displayModels()", "ems"));
+        $("#encyclopedia-models").append("<div id='encyclopedia-models-wrapper'></div>");
+        EncyclopediaModels.displayModels();
     },
     
     updateFacets: function()
     {
-        for (var i in EncyclopediaHeroes._facets)
+        for (var i in EncyclopediaModels._facets)
         {
-            var facet = EncyclopediaHeroes._facets[i];
+            var facet = EncyclopediaModels._facets[i];
             if (facet.values)
             {
                 var nonEmptyFacets = 0;
@@ -145,11 +151,11 @@ var EncyclopediaHeroes = {
                 {
                     var value = facet.values[v];
                     
-                    var count = Encyclopedia.heroes.list.filter(EncyclopediaHeroes._filter(facet, value)).length;
-                    $("#ehs-" + facet.id + "-" + value.id).parent().attr('data-count', count);
+                    var count = Encyclopedia.models.list.filter(EncyclopediaModels._filter(facet, value)).length;
+                    $("#ems-" + facet.id + "-" + value.id).parent().attr('data-count', count);
                     if (count) nonEmptyFacets++;
                 }                
-                $("#ehs-" + facet.id).attr("data-count", nonEmptyFacets);
+                $("#ems-" + facet.id).attr("data-count", nonEmptyFacets);
             }
         }
     },
@@ -157,9 +163,9 @@ var EncyclopediaHeroes = {
     _filter: function(forcedFacet, forcedValue)
     {
         return function(e) {
-            for (var i in EncyclopediaHeroes._facets)
+            for (var i in EncyclopediaModels._facets)
             {
-                var facet = EncyclopediaHeroes._facets[i];
+                var facet = EncyclopediaModels._facets[i];
                 
                 var selectedValues = [];
                 if (forcedFacet && facet.id == forcedFacet.id)
@@ -174,7 +180,7 @@ var EncyclopediaHeroes = {
                         {
                             var value = facet.values[v];
                             
-                            if ($("#ehs-" + facet.id + "-" + value.id)[0].checked)
+                            if ($("#ems-" + facet.id + "-" + value.id)[0].checked)
                             {
                                 selectedValues.push(value.id);
                             }
@@ -182,7 +188,7 @@ var EncyclopediaHeroes = {
                     }
                     else
                     {
-                        selectedValues.push($("#ehs-" + facet.id + "-input").val());
+                        selectedValues.push($("#ems-" + facet.id + "-input").val());
                     }
                 }
                 
@@ -202,151 +208,152 @@ var EncyclopediaHeroes = {
         }
     },
         
-    displayHeroes: function()
+    displayModels: function()
     {
-        EncyclopediaHeroes.updateFacets();
+        EncyclopediaModels.updateFacets();
         
-        var heroes = "";
+        var models = "";
         
-        Encyclopedia.heroes.list.sort(function(s1, s2) { return s1.name[Language].toLowerCase().localeCompare(s2.name[Language].toLowerCase()); })
+        Encyclopedia.models.list.sort(function(s1, s2) { return EncyclopediaModels._findModelNames(s1).toLowerCase().localeCompare(EncyclopediaModels._findModelNames(s2).toLowerCase()); })
         
-        var heroList = Encyclopedia.heroes.list.filter(EncyclopediaHeroes._filter());
-        for (var i in heroList)
+        var modelList = Encyclopedia.models.list.filter(EncyclopediaModels._filter());
+        var ignoredPrevious = 0;
+        for (var i in modelList)
         {
             i = parseInt(i);
-            var hero = heroList[i];
-                        
-            heroes += "<a href='javascript:void(0)' onclick='EncyclopediaHeroes.openSheet(\"" + hero.id + "\")'>";
-            heroes += HeroSheet._sheetCode(EncyclopediaHeroes._convertHeroToStudio(hero));
-            heroes += "</a>";
+            var model = modelList[i];
+
+            if (i < modelList.length - 1
+                && modelList[i+1].id == model.id)
+            {
+                ignoredPrevious++;
+                continue;
+            }
+            
+            model = modelList[i - ignoredPrevious];
+            
+            models += "<a href='javascript:void(0)' data-count='" + (ignoredPrevious+1) + "' onclick='EncyclopediaModels.openModel(\"" + model.id + "\")'>";
+            models += "<div>";
+            models += "<img src='" + model.images[0] + "?version=" + Version + "'/>";
+            models += "<span>" + EncyclopediaModels._findModelNames(model) + "</span>"
+            models += "</div>";
+            models += "</a>";
+            
+            ignoredPrevious = 0;
         }
         
-        $("#encyclopedia-heroessheet-wrapper").html(heroes);
+        $("#encyclopedia-models-wrapper").html(models);
     },
     
-    _convertHeroToStudio: function(hero)
+    _findModelNames: function(model)
     {
-        return {
-            id: hero.id + "-" + Math.random(),
-            name: hero.name[Language],
-            
-            image: hero.image ? hero.image + "?version=" + Version : null,
-            imageEffect: false,
-            imagelocation: {x: "0", y: "50"},
-            imagezoom: "100",
-            imagerotation: "0",
-            
-            gem: hero.gems,
-            encumbrance: hero.encumbrance[0],
-            encumbrance_movement: [hero.encumbrance[1], hero.encumbrance[2]],
-            
-            melee: hero.melee,
-            ranged: hero.ranged,
-            defense: hero.defense,
-            movement: hero.movement,
-            manipulation: hero.manipulation,
-            
-            skills: hero.skills
-        };
-    },
-    
-    _findHeroById: function(id)
-    {
+        var names = [];
+        
         for (var i in Encyclopedia.heroes.list)
         {
             var hero = Encyclopedia.heroes.list[i];
-            if (hero.id == id)
+            if (hero.model == model.id)
             {
-                return hero;
+                var name = hero.name[Language];
+                if (names.indexOf(name) == -1)
+                    names.push(name);
+            }
+        }        
+        
+        return names.join(" / ") || "...";
+    },
+    
+    _findModelsById: function(id)
+    {
+        var models = [];
+        
+        for (var i in Encyclopedia.models.list)
+        {
+            var model = Encyclopedia.models.list[i];
+            if (model.id == id)
+            {
+                models.push(model);
             }
         }
         
-        throw new Error("No hero with id " + id);
+        return models;
     },
     
-    _findHeroesBySkill: function(id)
-    {
-        var heroes = [];
-
-        for (var i in Encyclopedia.heroes.list)
-        {
-            var hero = Encyclopedia.heroes.list[i];
-            for (var j=0; j < hero.skills.length; j++)
-            {
-                if (hero.skills[j].id == id)
-                {
-                    heroes.push(hero);
-                }
-            }
-        }
-
-        return heroes;
-    },
-    
+        
     onShow: function() {
     },
     
     onHide: function() {
     },
     
-    openSheet: function(id) {
-        var sheet = EncyclopediaHeroes._findHeroById(id);
+    openModel: function(id) {
+        var models = EncyclopediaModels._findModelsById(id);
 
+        var originsCount = {};
+        for (var e in models)
+        {
+            var model = models[e];
+            
+            var origins = Encyclopedia._removeExtraExpansion(model.origins.slice());
+            for (var i in origins)
+            {
+                var origin = origins[i];
+                originsCount[origin] = originsCount[origin] ? originsCount[origin]+1 : 1;
+            }
+        }
+        
         var originString = "";
-        var origins = Encyclopedia._removeExtraExpansion(sheet.origins.slice());
-        for (var i in origins)
+        for (var i in originsCount)
         {
-            if (originString) originString += " " + EncyclopediaHeroes._i18n[Language].fromAnd + " ";
-            originString += Encyclopedia._getOrigin(origins[i]);
+            if (originString) originString += " " + EncyclopediaModels._i18n[Language].fromAnd + " ";
+            originString += Encyclopedia._getOrigin(i) + " (" + originsCount[i] + " " + (originsCount[i] == 1 ? EncyclopediaModels._i18n[Language].model : EncyclopediaModels._i18n[Language].models) + ")";
         }
         
-        var skills = "";
-        for (var s in sheet.skills)
-        {
-            if (skills) skills += ", "
-            skills += ConanRules._linkToSkill(sheet.skills[s].id); 
-        }
-        skills = "<div class='skill'>" + EncyclopediaHeroes._i18n[Language].skill + " " + skills;
-        skills += "</div>";
+        var model = models[0];
         
-        var superdetails = "";
-        superdetails += "<div class='superdetails'>";
-        superdetails += "<img src=\"" + sheet.image_nice + "?version=" + Version + "\"/>";
-        superdetails += "<div class='text'>" + sheet.quote[Language] + "</div>";
-        superdetails += "</div>";
-        
-        var model = "";
-        if (sheet.model)
+        var photos = "<div class='photos'>";
+        for (var i in model.images)
         {
-            var m = EncyclopediaModels._findModelsById(sheet.model)[0];
-            model = "<div class='models'>" + EncyclopediaHeroes._i18n[Language].model + " " + EncyclopediaModels._linkToModel(sheet.model) + "</div>";
+            photos += "<img src='" + model.images[i] + "?version=" + Version + "'/>"
         }
+        photos += "</div>";
+        
+        var heroes = "";
+        for (var i in Encyclopedia.heroes.list)
+        {
+            var hero = Encyclopedia.heroes.list[i];
+            if (hero.model == model.id)
+            {
+                if (heroes) heroes += ", ";
+                heroes += EncyclopediaHeroes._linkToHero(hero.id);
+            }
+        }
+        if (heroes) heroes = "<div class='heroes'>" + EncyclopediaModels._i18n[Language].heroes + " " + heroes + "</div>";
          
-        Nav.dialog(sheet.name[Language] || "",
-            "<div class='herodetails'>" 
-                + HeroSheet._sheetCode(EncyclopediaHeroes._convertHeroToStudio(sheet))
-                + "<div class='from'>" + EncyclopediaHeroes._i18n[Language].from + " "
+        Nav.dialog(EncyclopediaModels._findModelNames(model) || "",
+            "<div class='modeldetails'>" 
+                + "<div class='from'>" + EncyclopediaModels._i18n[Language].from + " "
                     + originString
                 + "</div>"
-                + model
-                + skills
-                + superdetails
+                + heroes
+                + EncyclopediaModels._i18n[Language].paintedBy + " <a target='_blank' href='" + model.paint.link + "'>" + model.paint.name + "</a>"
+                + photos
             + "</div>",
             null,
             [{
-                label: EncyclopediaHeroes._i18n[Language].transfertToStudio,
-                icon: "encyclopedia-heroes-tostudio",
-                fn: "EncyclopediaHeroes._transfert('" + id + "');"
+                label: EncyclopediaModels._i18n[Language].zoom,
+                icon: "encyclopedia-models-zoom",
+                fn: "EncyclopediaModels._zoom();"
             }]
         );
     },
     
-    _transfert: function(id) {
-        // TODO
-        alert("In contruction")
+    _zoom: function()
+    {
+        $(".modeldetails .photos").toggleClass("zoom");
     },
-        
-    _linkToHero: function(id) {
-        return "<a href='javascript:void(0)' onclick='Nav.closeDialog(); EncyclopediaHeroes.openSheet(\"" + id + "\")'>" + EncyclopediaHeroes._findHeroById(id).name[Language] + "</a>";
+    
+    _linkToModel: function(id) {
+        return "<a href='javascript:void(0)' onclick='Nav.closeDialog(); EncyclopediaModels.openModel(\"" + id + "\")'>" + EncyclopediaModels._findModelNames(EncyclopediaModels._findModelsById(id)[0]) + "</a>";
     }
 };

@@ -44,11 +44,66 @@ var HeroSheet = {
         
         if (sheet.image)
         {
-            code += "<div class=\"image\"><img src=\"" + sheet.image + "\" style=\"left: " + sheet.imagelocation.x + "%; top: " + sheet.imagelocation.y + "%; width: " + sheet.imagezoom + "%; transform: translate(-50%, -50%) rotate(" + sheet.imagerotation + "deg)\"/></div>";
+            code += "<div class=\"image\"><img src=\"" + sheet.image + "\" style=\"left: " + sheet.imagelocation.x + "%; top: " + sheet.imagelocation.y + "%; height: " + sheet.imagezoom + "%; transform: translate(0%, -50%) rotate(" + sheet.imagerotation + "deg)\"/></div>";
         }
         
         code += "<img class=\"background-l3\" src=\"studio/hero_sheet/img/background_layer_3.png?version=" + Version + "\"/>";
+
+        if (sheet.name)
+        {
+            code += "<div class=\"name\">" + sheet.name + "</div>";
+        }
+        if (sheet.gem)
+        {
+            code += "<div class=\"gem\">" + sheet.gem + "</div>";
+        }
+
+        code += "<div class=\"skillline\">";
+        if (sheet.encumbrance)
+        {
+            code += "<img class=\"background-encumbrance\" src=\"studio/hero_sheet/img/weight.png?version=" + Version + "\"/>";
+            code += "<div class=\"encumbrance\">" + sheet.encumbrance + "</div>";
+
+            for (var s=0; s < sheet.skills.length; s++)
+            {
+                var skill = sheet.skills[s];
+                var encyclopediaSkill = ConanRules._findSkillById(skill.id);
                 
+                code += "<div class=\"skill\">";
+                    code += "<img class=\"skill\" src=\"" + encyclopediaSkill.image + "?version=" + Version + "\"/>";
+                    if (skill.exertion)
+                    {
+                        code += "<img class=\"exertion\" src=\"studio/hero_sheet/img/skill_weight.png?version=" + Version + "\"/>";
+                        code += "<div class=\"exertion\">" + skill.exertion + "</div>";
+                    }
+                code += "</div>";
+            }
+            
+            code += "<div class=\"encumbrance_movement-1\">" + sheet.encumbrance_movement[0] + "</div>";
+            code += "<div class=\"encumbrance_movement-2\">" + sheet.encumbrance_movement[1] + "</div>";
+        }
+        code += "</div>";
+        
+        code += "<div class=\"base melee\">";
+        code +=     "<div class=\"exertion\">" + sheet.melee.exertion + "</div>";
+        code +=     "<div class=\"dice\"><img src=\"studio/hero_sheet/img/dice_" + sheet.melee.dice + ".png?version=" + Version + "\"/></div>";
+        code += "</div>";
+        code += "<div class=\"base ranged\">";
+        code +=     "<div class=\"exertion\">" + sheet.ranged.exertion + "</div>";
+        code +=     "<div class=\"dice\"><img src=\"studio/hero_sheet/img/dice_" + sheet.ranged.dice + ".png?version=" + Version + "\"/></div>";
+        code += "</div>";
+        code += "<div class=\"base defense\">";
+        code +=     "<div class=\"dice\"><img src=\"studio/hero_sheet/img/dice_" + sheet.defense.dice + ".png?version=" + Version + "\"/></div>";
+        code += "</div>";
+        code += "<div class=\"base movement\">";
+        code +=     "<div class=\"exertion\">" + sheet.movement.exertion + "</div>";
+        code +=     "<div class=\"dice\">" + sheet.movement.base + "</div>";
+        code += "</div>";
+        code += "<div class=\"base manipulation\">";
+        code +=     "<div class=\"exertion\">" + sheet.manipulation.exertion + "</div>";
+        code +=     "<div class=\"dice\"><img src=\"studio/hero_sheet/img/dice_" + sheet.manipulation.dice + ".png?version=" + Version + "\"/></div>";
+        code += "</div>";
+        
         code += "</div>";
         return code;
     }    

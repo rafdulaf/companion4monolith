@@ -1,0 +1,77 @@
+#encyclopedia-models {
+    font-family: 'Hyborian';
+    overflow: auto;
+    position: relative;
+}
+.encyclopedia-models-zoom::before {
+    content: "\f002";
+    font-family: 'Font Awesome 5 Free';
+}
+
+#encyclopedia-models-wrapper {
+    margin-left: 156px;
+    text-align: center;
+}
+#encyclopedia-models-wrapper a {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    
+    width: 200px;
+    height: 270px;
+    
+    margin: 2px;
+}
+#encyclopedia-models-wrapper a div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#encyclopedia-models-wrapper a img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#encyclopedia-models-wrapper a span {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 5px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.3);
+}
+
+#encyclopedia-models-wrapper a[data-count]::after {
+    content: 'x' attr(data-count);
+    position: absolute;
+    z-index: 2;
+    top: 10%;
+    right: -5%;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 18px;
+    background-color: #e64443;
+    color: #ffffff;
+    border-radius: 100%;
+}
+#encyclopedia-models-wrapper a[data-count='1']::after {
+    content: none;
+}
+
+.modeldetails img {
+    width: 50%;
+}
+.modeldetails .zoom img {
+    width: 100%;
+}
+.modeldetails .from {
+    display: block;
+    text-indent: -90px;
+    margin-left: 90px;
+}

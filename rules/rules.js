@@ -8,6 +8,7 @@ var ConanRules = {
             
             'equipments': "Utilisé dans les cartes d'équipement :",
             'spells': "Utilisé dans les cartes de sort :",
+            'heroesOwned': "Possédé par les héros :",
             
             'viewer-search': "Recherche dans le document",
             'viewer-download': "Télécharger le document",
@@ -32,8 +33,9 @@ var ConanRules = {
             'skills': "Skills",
             'spell_clarification': "(Spell clarification) ",
             
-            'equipments': "Equipments card:",
-            'spells': "Spells card:",
+            'equipments': "Used in the equipments cards:",
+            'spells': "Used in the spells card:",
+            'heroes': "Owned by the heroes:",
 
             'viewer-search': "Search in the document",
             'viewer-download': "Download the document",
@@ -507,6 +509,19 @@ var ConanRules = {
                 spS += EncyclopediaSpells._linkToSpell(spells[0].id);
             }
         }
+
+        var heroes = EncyclopediaHeroes._findHeroesBySkill(id);
+        var heS = "";
+        if (heroes.length > 0)
+        {
+            for (var i=0; i < heroes.length; i++)
+            {
+                if (i != 0) heS += ",";
+                heS += " ";
+                
+                heS += EncyclopediaHeroes._linkToHero(heroes[0].id);
+            }
+        }
         
         Nav.dialog(skill.title[Language],
             "<div class='skillsdetails'>"
@@ -516,6 +531,9 @@ var ConanRules = {
                         + "</div>") : "") 
                 + (spS ? ("<div class='spells'>" 
                             + ConanRules._i18n[Language].spells + spS
+                        + "</div>") : "") 
+                + (heS ? ("<div class='heroes'>" 
+                            + ConanRules._i18n[Language].heroesOwned + heS
                         + "</div>") : "") 
             + "</div>",
             null,

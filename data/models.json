@@ -2,16 +2,21 @@
     "list": [
         {
             "id": "belit",
-            "count": 1,
             
-            "images": {
-                "model": ["data/models/img/belit_model.jpg"],
-                "background": "data/models/img/belit_image.png"
-            },
+            "images": ["data/models/img/belit_1.jpg","data/models/img/belit_2.jpg"],
             
-            "paint": "Martin Grandbarbe",
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             
             "origins": ["corebox", "stretchgoal", "king"]
-        }
+        },
+        {
+            "id": "belit_brom",
+            
+            "images": ["data/models/img/belit_brom_1.jpg","data/models/img/belit_brom_2.jpg","data/models/img/belit_brom_3.jpg"],
+            
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            
+            "origins": ["bbox"]
+        }        
     ]
 }

@@ -486,7 +486,7 @@ var EncyclopediaEquipments = {
                         + " " + (equipment.skills && equipment.skills[0] != 'none' ? 
                             ( 
                                 ConanRules._linkToSkill(equipment.skills[0]) 
-                                + (equipment.skills[1] != 'none' ? ConanRules._linkToSkill(equipment.skills[1]) : "")
+                                + (equipment.skills[1] != 'none' ? ", " + ConanRules._linkToSkill(equipment.skills[1]) : "")
                             ) : "-")
                 + "</div>" 
             + "</div>",

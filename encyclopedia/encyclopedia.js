@@ -47,6 +47,7 @@ var Encyclopedia = {
         EncyclopediaSpells.preinit();
         EncyclopediaHeroes.preinit();
         EncyclopediaTiles.preinit();
+        EncyclopediaModels.preinit();
         
         Nav.createTabs('encyclopedia', Encyclopedia._slides, Encyclopedia.onChange);
 
@@ -54,6 +55,7 @@ var Encyclopedia = {
         EncyclopediaSpells.init();
         EncyclopediaHeroes.init();
         EncyclopediaTiles.init();
+        EncyclopediaModels.init();
         
         Encyclopedia.onChange();
 
