@@ -477,18 +477,17 @@ var EncyclopediaEquipments = {
         
         Nav.dialog(equipment.title[Language] || "",
             "<div class='equipmentdetails'>" 
-                + c
                 + "<div class='from'>" + EncyclopediaEquipments._i18n[Language].from + " "
                     + originString
                 + "</div>"
-                + "<div class='skill'>" 
-                    + EncyclopediaEquipments._i18n[Language].skill 
-                        + " " + (equipment.skills && equipment.skills[0] != 'none' ? 
-                            ( 
-                                ConanRules._linkToSkill(equipment.skills[0]) 
-                                + (equipment.skills[1] != 'none' ? ", " + ConanRules._linkToSkill(equipment.skills[1]) : "")
-                            ) : "-")
-                + "</div>" 
+                + ((equipment.skills && equipment.skills[0] != 'none') ?
+                    ("<div class='skill'>" 
+                        + EncyclopediaEquipments._i18n[Language].skill 
+                        + " " 
+                        + ConanRules._linkToSkill(equipment.skills[0]) 
+                         + (equipment.skills[1] != 'none' ? ", " + ConanRules._linkToSkill(equipment.skills[1]) : "")
+                    + "</div>") : "") 
+                + c
             + "</div>",
             null,
             [{
