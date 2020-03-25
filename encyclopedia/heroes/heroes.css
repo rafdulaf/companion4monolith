@@ -23,17 +23,56 @@
     margin-left: 90px;
 }
 
+.herodetails .sheet {
+    margin-right: 20px;
+}
+
+.herodetails .models {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    height: 270px;
+}
+
+.herodetails .models a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.herodetails .models a img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.herodetails .models a span {
+    display: block;
+    position: absolute;
+    font-family: 'Hyborian';
+    font-size: 16px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 5px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.3);
+}
+
+
+
+
 .herodetails .superdetails {
     width: 700px;
     max-width: 100%;
 }
 .herodetails .superdetails > * {
-    display: inline-block;
-    vertical-align: middle;
 }
-.herodetails .superdetails img { width: 33%; }
+.herodetails .superdetails img { width: 33%; float: left; }
 .herodetails .superdetails .text { 
-    width: 66%;
     text-align: justify;
     font-style: italic; 
     line-height: 100%; 

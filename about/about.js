@@ -9,6 +9,7 @@ var ConanAbout = {
             'about': "A propos",
             'licence': "Licence",
             'licence_text': "Ce logiciel est développé sous licence LGPL-3.0",
+            'licence_text2': "mais toutes les ressources (images, textes, caractéristiques...) restent la propriété de leurs auteurs respectifs selon les droits applicables.",
             'about': "A propos",
             'copyright': "Copyright",
             'copyright-text': "<h1>But</h1><br/>'Compagnion de Conan' est une application indépendante pour accompagner les joueurs dans le jeu 'Conan'.<br/>"
@@ -49,6 +50,7 @@ var ConanAbout = {
             'about': "About",
             'licence': "Licence",
             'licence_text': "This software is developped under the LGPL-3.0 licence",
+            'licence_text2': "but all resources (images, texts, caracteristics...) stay the property of their respective authors following the applyable rights.",
             'copyright': "Copyright",
             'copyright-text': "<h1>Purpose</h1>'Companion to Conan' is an indepedant applciation to help the players in the game 'Conan'.<br/>"
                     + "This application was written by <a href='https://the-overlord.com/index.php?/profile/5240-cochon/' target='_blank'>@cochon</a>.<br/>"
@@ -115,7 +117,7 @@ var ConanAbout = {
             "<div id='about' class='about'>"
                     + "<div class='about-zone-about'>"
                             + "<h1 style='text-align: center '>" + ConanAbout._i18n[Language].title + " v" + Version + "</h1>"
-                            + "<img src='/about/logo.jpg?version='" + Version + "/>" +
+                            + "<img src='about/logo.jpg?version=" + Version + "'/>" +
                             "<a class='fullscreen' onclick='ConanAbout._toggleFullscreen(); return false' href='javascript:void(0);' title=\"" + ConanAbout._i18n[Language].fullscreen + "\"></a>" + 
                             "<span>" + ConanAbout._i18n[Language].text + 
                                 "<div><a target='_blank' href='https://the-overlord.com/'>" + ConanAbout._i18n[Language].find + "</a></div>" +
@@ -126,7 +128,7 @@ var ConanAbout = {
                     + "</div></div>"
                     + "<div>"
                         + "<h1>" + ConanAbout._i18n[Language]['licence'] + "</h1>"
-                        + "<div><a href='https://github.com/rafdulaf/companion4conan/blob/master/LICENSE'>" + ConanAbout._i18n[Language]['licence_text'] + "</a></div>"
+                        + "<div><a href='https://github.com/rafdulaf/companion4conan/blob/master/LICENSE'>" + ConanAbout._i18n[Language]['licence_text'] + "</a> " + ConanAbout._i18n[Language]['licence_text2'] + "</div>"
                     + "</div>"        
                 + "</div>"        
         );        

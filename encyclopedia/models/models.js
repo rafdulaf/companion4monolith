@@ -8,6 +8,7 @@ var EncyclopediaModels = {
             'models': "figurines",
             'paintedBy': "Peint par: ",
             'zoom': "Zoom",
+            'print': "Imprimer",
             'heroes': "Utilisée par les héros :"
         },
         'en': {
@@ -18,6 +19,7 @@ var EncyclopediaModels = {
             'models': "models",
             'paintedBy': "Painted par: ",
             'zoom': "Zoom",
+            'print': "Print",
             'heroes': "Used by the heroes:"
         }
     },
@@ -336,7 +338,7 @@ var EncyclopediaModels = {
                     + originString
                 + "</div>"
                 + heroes
-                + EncyclopediaModels._i18n[Language].paintedBy + " <a target='_blank' href='" + model.paint.link + "'>" + model.paint.name + "</a>"
+                + "<div class='painter'>" + EncyclopediaModels._i18n[Language].paintedBy + " <a target='_blank' href='" + model.paint.link + "'>" + model.paint.name + "</a></div>"
                 + photos
             + "</div>",
             null,
@@ -344,6 +346,10 @@ var EncyclopediaModels = {
                 label: EncyclopediaModels._i18n[Language].zoom,
                 icon: "encyclopedia-models-zoom",
                 fn: "EncyclopediaModels._zoom();"
+            }, {
+                label: EncyclopediaModels._i18n[Language].print,
+                icon: "encyclopedia-models-print",
+                fn: "window.print()"
             }]
         );
     },
@@ -353,7 +359,21 @@ var EncyclopediaModels = {
         $(".modeldetails .photos").toggleClass("zoom");
     },
     
-    _linkToModel: function(id) {
-        return "<a href='javascript:void(0)' onclick='Nav.closeDialog(); EncyclopediaModels.openModel(\"" + id + "\")'>" + EncyclopediaModels._findModelNames(EncyclopediaModels._findModelsById(id)[0]) + "</a>";
+    _linkToModel: function(id, image) {
+        var model = EncyclopediaModels._findModelsById(id)[0];
+        var name = EncyclopediaModels._findModelNames(model);
+        
+        var s = "<a href='javascript:void(0)' onclick='Nav.closeDialog(); EncyclopediaModels.openModel(\"" + id + "\")'>";
+        if (image)
+        {
+            s += "<img src='" + model.images[0] + "?version=" + Version + "'/>";
+            s += "<span>" + name + "</span>"
+        }
+        else
+        {
+            s += name;
+        }
+        s += "</a>";
+        return s;
     }
 };

@@ -29,11 +29,11 @@ var Encyclopedia = {
     _i18n: {
         'fr': {
             'menu': "Encyclopédie",
-            'copyright': "Données récupérées sur le site <a target='_blank' href='https://conan-companion.herokuapp.com/'>conan-companion.herokuapp.com</a> avec l'aimable autorisation de David Abel. Traductions françaises saisies par @cochon."
+            'copyright': "Données récupérées sur le site <a target='_blank' href='https://conan-companion.herokuapp.com/'>conan-companion.herokuapp.com</a> avec l'aimable autorisation de David Abel. Traductions françaises saisies par @cochon.<br/>Les photos des figurines et les textes associés ont été repris du site <a href='http://conan.paintings.free.fr/'>Conan paintings</a>."
         },
         'en': {
             'menu': "Encyclopedia",
-            'copyright': "Data collected on the site <a target='_blank' href='https://conan-companion.herokuapp.com/'>conan-companion.herokuapp.com</a> with the kind authorization of David Abel. French translations entered by @cochon."
+            'copyright': "Data collected on the site <a target='_blank' href='https://conan-companion.herokuapp.com/'>conan-companion.herokuapp.com</a> with the kind authorization of David Abel. French translations entered by @cochon.<br/>Models photos and associated texts where gather on the <a href='http://conan.paintings.free.fr/'>Conan paintings</a> site."
         }
     },
     
@@ -75,8 +75,7 @@ var Encyclopedia = {
     
     copyright: function() 
     {
-        return "<h3>" + Encyclopedia._i18n[Language].menu + "</h3>"
-            + "<p>" + Encyclopedia._i18n[Language].copyright + "</p>"
+        return "<p>" + Encyclopedia._i18n[Language].copyright + "</p>"
     },
     
     _removeExtraExpansion: function(origins)

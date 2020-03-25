@@ -47,15 +47,6 @@
     margin: 0 auto;
 }
 
-.about a, .contribute a {
-    color: #c39f76;
-    text-decoration: none;
-}
-.about a:hover, .contribute a:hover {
-    text-decoration: underline;
-}
-
-
 .about h1, .contribute h1 {
     margin-bottom: 0px;
     font-size: 36px;

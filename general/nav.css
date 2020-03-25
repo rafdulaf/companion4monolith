@@ -216,6 +216,13 @@
     overflow: auto;
     background-color: #FFFFFF;
 } 
+.dialog-content a {
+    color: #c39f76;
+    text-decoration: none;
+}
+.dialog-content a:hover {
+    text-decoration: underline;
+}
 
 .dialog-header .actions {
     list-style: none;

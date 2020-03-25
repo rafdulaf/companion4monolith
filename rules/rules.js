@@ -6,9 +6,9 @@ var ConanRules = {
             'skills': "Compétences",
             'spell_clarification': "(Clarification du sort) ",
             
-            'equipments': "Utilisé dans les cartes d'équipement :",
-            'spells': "Utilisé dans les cartes de sort :",
-            'heroesOwned': "Possédé par les héros :",
+            'equipments': "Utilisée dans les cartes d'équipement :",
+            'spells': "Utilisée dans les cartes de sort :",
+            'heroesOwned': "Possédée par les héros :",
             
             'viewer-search': "Recherche dans le document",
             'viewer-download': "Télécharger le document",

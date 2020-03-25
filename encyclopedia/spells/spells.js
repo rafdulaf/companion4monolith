@@ -521,12 +521,12 @@ var EncyclopediaSpells = {
         var spell = spells[0];
         Nav.dialog(spell.title[Language],
             "<div class='spelldetails'>" 
-                + CardSpell._cardCode(EncyclopediaSpells._convertSpellToStudio(spell))
                 + "<div class='from'>" + EncyclopediaSpells._i18n[Language].from + " "
                     + originString
                 + "</div>"
                 + ((spell.clarification && spell.clarification[Language]) ?"<div class='clarification'>" + EncyclopediaSpells._i18n[Language].clarification + " " + spell.clarification[Language] + "</div>" : "") 
                 + (spell.forSkill ? "<div class='skill'>" + EncyclopediaSpells._i18n[Language].skill + " " + ConanRules._linkToSkill(spell.forSkill) + "</div>" : "") 
+                + CardSpell._cardCode(EncyclopediaSpells._convertSpellToStudio(spell))
             + "</div>",
             null,
             [{

@@ -4,15 +4,13 @@ var EncyclopediaHeroes = {
             'tab': "Héros",
             'from': "Disponible dans :",
             'fromAnd': "<br/>et",
-            'skill': "Compétence :",
-            'model': "Figurine :"
+            'skill': "Compétences :"
         },
         'en': {
             'tab': "Heroes",
             'from': "Available in:",
             'fromAnd': "<br/>and",
-            'skill': "Skill:",
-            'model': "Model:"
+            'skill': "Skills:"
         }
     },
     
@@ -312,24 +310,26 @@ var EncyclopediaHeroes = {
         var superdetails = "";
         superdetails += "<div class='superdetails'>";
         superdetails += "<img src=\"" + sheet.image_nice + "?version=" + Version + "\"/>";
-        superdetails += "<div class='text'>" + sheet.quote[Language] + "</div>";
+        superdetails += "<div class='text'>" + sheet.quote.text[Language] + "<br/>" + sheet.quote.author.name + " - " + sheet.quote.origin[Language] + "</div>";
         superdetails += "</div>";
         
         var model = "";
         if (sheet.model)
         {
             var m = EncyclopediaModels._findModelsById(sheet.model)[0];
-            model = "<div class='models'>" + EncyclopediaHeroes._i18n[Language].model + " " + EncyclopediaModels._linkToModel(sheet.model) + "</div>";
+            model = "<div class='models'>" 
+                    + EncyclopediaModels._linkToModel(sheet.model, true) 
+                    + "</div>";
         }
          
         Nav.dialog(sheet.name[Language] || "",
             "<div class='herodetails'>" 
-                + HeroSheet._sheetCode(EncyclopediaHeroes._convertHeroToStudio(sheet))
                 + "<div class='from'>" + EncyclopediaHeroes._i18n[Language].from + " "
                     + originString
                 + "</div>"
-                + model
                 + skills
+                + model
+                + HeroSheet._sheetCode(EncyclopediaHeroes._convertHeroToStudio(sheet))
                 + superdetails
             + "</div>",
             null,

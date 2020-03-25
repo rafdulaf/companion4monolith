@@ -7,7 +7,10 @@
     content: "\f002";
     font-family: 'Font Awesome 5 Free';
 }
-
+.encyclopedia-models-print:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f02f";  
+}
 #encyclopedia-models-wrapper {
     margin-left: 156px;
     text-align: center;
@@ -74,4 +77,13 @@
     display: block;
     text-indent: -90px;
     margin-left: 90px;
+}
+
+@media print {
+    .modeldetails > div { display: none !important; }
+    .modeldetails > div.photos { display: block !important; text-align: center; }
+    .modeldetails > div.photos img { 
+        page-break-before: always;
+        width: unset;
+    }
 }

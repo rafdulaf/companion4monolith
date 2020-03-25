@@ -39,6 +39,7 @@ var ConanStudio = {
         ConanAbout.addCopyright(ConanStudio._i18n[Language].menu, 
             CardEquipment.copyright() 
             + CardSpell.copyright()
+            + HeroSheet.copyright()
         );
     },
     
