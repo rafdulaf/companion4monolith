@@ -251,16 +251,19 @@ var EncyclopediaModels = {
     {
         var names = [];
         
-        for (var i in Encyclopedia.heroes.list)
+        if (model)
         {
-            var hero = Encyclopedia.heroes.list[i];
-            if (hero.model == model.id)
+            for (var i in Encyclopedia.heroes.list)
             {
-                var name = hero.name[Language];
-                if (names.indexOf(name) == -1)
-                    names.push(name);
+                var hero = Encyclopedia.heroes.list[i];
+                if (hero.model == model.id)
+                {
+                    var name = hero.name[Language];
+                    if (names.indexOf(name) == -1)
+                        names.push(name);
+                }
             }
-        }        
+        }
         
         return names.join(" / ") || "...";
     },
@@ -363,17 +366,21 @@ var EncyclopediaModels = {
         var model = EncyclopediaModels._findModelsById(id)[0];
         var name = EncyclopediaModels._findModelNames(model);
         
-        var s = "<a href='javascript:void(0)' onclick='Nav.closeDialog(); EncyclopediaModels.openModel(\"" + id + "\")'>";
-        if (image)
+        var s = "";
+        if (model)
         {
-            s += "<img src='" + model.images[0] + "?version=" + Version + "'/>";
-            s += "<span>" + name + "</span>"
+            s += "<a href='javascript:void(0)' onclick='Nav.closeDialog(); EncyclopediaModels.openModel(\"" + id + "\")'>";
+            if (image)
+            {
+                s += "<img src='" + model.images[0] + "?version=" + Version + "'/>";
+                s += "<span>" + name + "</span>"
+            }
+            else
+            {
+                s += name;
+            }
+            s += "</a>";
         }
-        else
-        {
-            s += name;
-        }
-        s += "</a>";
         return s;
     }
 };

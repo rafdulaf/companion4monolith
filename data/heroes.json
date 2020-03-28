@@ -41,6 +41,1499 @@
             "image_nice": "data/heroes/img/belit_image.png",
             "model": "belit",
             "origins": ["corebox", "stretchgoal", "king"] 
+        },
+
+        {
+            "id": "conan",
+            "name": {
+                "fr": "Conan",
+                "en": "Conan"
+            },
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": ""
+                },
+                "origin": {
+                    "fr": "",
+                    "en": ""
+                },
+                "author": {
+                    "name": ""
+                }
+            },
+            
+            "gems": 11,
+            "encumbrance": [12, 8, 10],
+            
+            "melee": { "dice": "red", "exertion": 5 },
+            "ranged": { "dice": "orange", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "2", "exertion": 4 },
+            "manipulation": { "dice": "orange", "exertion": 3 },
+            
+            "skills": [
+                { "id": "swimming", "exertion": 6 },
+                { "id": "leap", "exertion": 8 },
+                { "id": "climb", "exertion": 9 },
+                { "id": "wall_wrecker", "exertion": 11 },
+                { "id": "circular_strike" }
+            ],
+            
+            "image": "data/heroes/img/conan.png",
+            "image_nice": "data/heroes/img/conan_image.png",
+            "model": "conan",
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "hadrathus",
+            "name": {
+                "fr": "Hadrathus",
+                "en": "Hadrathus"
+            },
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": ""
+                },
+                "origin": {
+                    "fr": "",
+                    "en": ""
+                },
+                "author": {
+                    "name": ""
+                }
+            },
+            
+            "gems": 10,
+            "encumbrance": [8, 5, 7],
+            
+            "melee": { "dice": "yellow", "exertion": 5 },
+            "ranged": { "dice": "yellow", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "2", "exertion": 2 },
+            "manipulation": { "dice": "orange", "exertion": 3 },
+            
+            "skills": [
+                { "id": "leap", "exertion": 5 },
+                { "id": "concentration", "exertion": 5 },
+                { "id": "spell_caster", "exertion": 5 }
+            ],
+            
+            "image": "data/heroes/img/hadrathus.png",
+            "image_nice": "data/heroes/img/hadrathus_image.png",
+            "model": "hadrathus",
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "shevatas",
+            "name": {
+                "fr": "Shevatas",
+                "en": "Shevatas"
+            },
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": ""
+                },
+                "origin": {
+                    "fr": "",
+                    "en": ""
+                },
+                "author": {
+                    "name": ""
+                }
+            },
+            
+            "gems": 10,
+            "encumbrance": [10, 6, 9],
+            
+            "melee": { "dice": "orange", "exertion": 4 },
+            "ranged": { "dice": "orange", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "3", "exertion": 4 },
+            "manipulation": { "dice": "red", "exertion": 3 },
+            
+            "skills": [
+                { "id": "evasive", "exertion": 5 },
+                { "id": "untouchable", "exertion": 6 },
+                { "id": "leap", "exertion": 8 },
+                { "id": "climb", "exertion": 8 },
+                { "id": "lock_picking" }
+            ],
+            
+            "image": "data/heroes/img/shevatas.png",
+            "image_nice": "data/heroes/img/shevatas_image.png",
+            "model": "shevatas",
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "amara-the-lion",
+            "name": {
+                "fr": "Amara The Lion",
+                "en": "Amara The Lion"
+            },
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": ""
+                },
+                "origin": {
+                    "fr": "",
+                    "en": ""
+                },
+                "author": {
+                    "name": ""
+                }
+            },
+            
+            "gems": 11,
+            "encumbrance": [11, 10, 11],
+            
+            "melee": { "dice": "red", "exertion": 4 },
+            "ranged": { "dice": "orange", "exertion": 5 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "2", "exertion": 3 },
+            "manipulation": { "dice": "orange", "exertion": 3 },
+            
+            "skills": [
+                { "id": "swimming", "exertion": 6 },
+                { "id": "concentration", "exertion": 7 },
+                { "id": "leap", "exertion": 8 },
+                { "id": "leadership" },
+                { "id": "counterattack" }
+            ],
+            
+            "image": "data/heroes/img/amara-the-lion.png",
+            "image_nice": "data/heroes/img/amara-the-lion_image.png",
+            "model": "amara-the-lion",
+            "origins": ["king"]
+        },
+    
+        {
+            "id": "ngora",
+            "name": {
+                "fr": "N'Gora",
+                "en": "N'Gora"
+            },
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": ""
+                },
+                "origin": {
+                    "fr": "",
+                    "en": ""
+                },
+                "author": {
+                    "name": ""
+                }
+            },
+            
+            "gems": 11,
+            "encumbrance": [12, 8, 10],
+            
+            "melee": { "dice": "orange", "exertion": 5 },
+            "ranged": { "dice": "orange", "exertion": 5 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "3", "exertion": 4 },
+            "manipulation": { "dice": "orange", "exertion": 4 },
+            
+            "skills": [
+                { "id": "swimming", "exertion": 6 },
+                { "id": "leap", "exertion": 8 },
+                { "id": "climb", "exertion": 9 },
+                { "id": "elite_shooter", "exertion": 11 },
+                { "id": "bodyguard" }
+            ],
+            
+            "image": "data/heroes/img/ngora.png",
+            "image_nice": "data/heroes/img/ngora_image.png",
+            "model": "ngora",
+            "origins": ["king"]
+        },
+    
+        {
+            "id": "valeria",
+            "name": {
+                "fr": "Valeria",
+                "en": "Valeria"
+            },
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": ""
+                },
+                "origin": {
+                    "fr": "",
+                    "en": ""
+                },
+                "author": {
+                    "name": ""
+                }
+            },
+            
+            "gems": 10,
+            "encumbrance": [10, 6, 8],
+            
+            "melee": { "dice": "orangereroll", "exertion": 3 },
+            "ranged": { "dice": "yellow", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "2", "exertion": 4 },
+            "manipulation": { "dice": "yellow", "exertion": 3 },
+            
+            "skills": [
+                { "id": "leap", "exertion": 5 },
+                { "id": "ambidextrous", "exertion": 6 },
+                { "id": "counterattack", "exertion": 7 }
+            ],
+            
+            "image": "data/heroes/img/valeria.png",
+            "image_nice": "data/heroes/img/valeria_image.png",
+            "model": "valeria",
+            "origins": ["king"]
+        },
+    
+        {
+            "id": "zelata",
+            "name": {
+                "fr": "Zelata",
+                "en": "Zelata"
+            },
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": ""
+                },
+                "origin": {
+                    "fr": "",
+                    "en": ""
+                },
+                "author": {
+                    "name": ""
+                }
+            },
+            
+            "gems": 9,
+            "encumbrance": [9, 7, 9],
+            
+            "melee": { "dice": "yellow", "exertion": 5 },
+            "ranged": { "dice": "yellow", "exertion": 4 },
+            "defense": { "dice": "yellow" },
+            "movement": { "base": "2", "exertion": 4 },
+            "manipulation": { "dice": "orange", "exertion": 3 },
+            
+            "skills": [
+                { "id": "leap", "exertion": 6 },
+                { "id": "spell_caster", "exertion": 6 },
+                { "id": "concentration", "exertion": 6 },
+                { "id": "support" },
+                { "id": "alchemy" },
+                { "id": "leadership" }
+            ],
+            
+            "image": "data/heroes/img/zelata.png",
+            "image_nice": "data/heroes/img/zelata_image.png",
+            "model": "zelata",
+            "origins": ["king"]
+        },
+    
+        {
+            "id": "amboola",
+            "name": {
+                "fr": "Amboola",
+                "en": "Amboola"
+            },
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": ""
+                },
+                "origin": {
+                    "fr": "",
+                    "en": ""
+                },
+                "author": {
+                    "name": ""
+                }
+            },
+            
+            "gems": 10,
+            "encumbrance": [10, 9, 10],
+            
+            "melee": { "dice": "orange", "exertion": 5 },
+            "ranged": { "dice": "yellow", "exertion": 5 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "2", "exertion": 4 },
+            "manipulation": { "dice": "orange", "exertion": 3 },
+            
+            "skills": [
+                { "id": "swimming", "exertion": 6 },
+                { "id": "leap", "exertion": 7 },
+                { "id": "precision_strike", "exertion": 9 },
+                { "id": "leadership" }
+            ],
+            
+            "image": "data/heroes/img/amboola.png",
+            "image_nice": "data/heroes/img/amboola_image.png",
+            "model": "amboola",
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "balthus",
+            "name": {
+                "fr": "Balthus",
+                "en": "Balthus"
+            },
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": ""
+                },
+                "origin": {
+                    "fr": "",
+                    "en": ""
+                },
+                "author": {
+                    "name": ""
+                }
+            },
+            
+            "gems": 10,
+            "encumbrance": [10, 7, 10],
+            
+            "melee": { "dice": "orange", "exertion": 4 },
+            "ranged": { "dice": "orangereroll", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "3", "exertion": 3 },
+            "manipulation": { "dice": "orange", "exertion": 2 },
+            
+            "skills": [
+                { "id": "feline_grace", "exertion": 7 },
+                { "id": "swimming", "exertion": 7 },
+                { "id": "elite_shooter", "exertion": 8 },
+                { "id": "precision_shot", "exertion": 8 },
+                { "id": "leap", "exertion": 8 },
+                { "id": "leadership" }
+            ],
+            
+            "image": "data/heroes/img/balthus.png",
+            "image_nice": "data/heroes/img/balthus_image.png",
+            "model": "balthus",
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "conan-general",
+            "name": {
+                "fr": "Conan - General",
+                "en": "Conan - General"
+            },
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": ""
+                },
+                "origin": {
+                    "fr": "",
+                    "en": ""
+                },
+                "author": {
+                    "name": ""
+                }
+            },
+            
+            "gems": 11,
+            "encumbrance": [12, 8, 10],
+            
+            "melee": { "dice": "redreroll", "exertion": 4 },
+            "ranged": { "dice": "orange", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "2", "exertion": 4 },
+            "manipulation": { "dice": "orange", "exertion": 3 },
+            
+            "skills": [
+                { "id": "swimming", "exertion": 6 },
+                { "id": "leap", "exertion": 8 },
+                { "id": "climb", "exertion": 9 },
+                { "id": "wall_wrecker", "exertion": 11 },
+                { "id": "leadership" }
+            ],
+            
+            "image": "data/heroes/img/conan-general.png",
+            "image_nice": "data/heroes/img/conan-general_image.png",
+            "model": "conan-general",
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "conan-mercenary",
+            "name": {
+                "fr": "Conan - Mercenary",
+                "en": "Conan - Mercenary"
+            },
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": ""
+                },
+                "origin": {
+                    "fr": "",
+                    "en": ""
+                },
+                "author": {
+                    "name": ""
+                }
+            },
+            
+            "gems": 11,
+            "encumbrance": [12, 8, 10],
+            
+            "melee": { "dice": "red", "exertion": 5 },
+            "ranged": { "dice": "orange", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "2", "exertion": 4 },
+            "manipulation": { "dice": "orange", "exertion": 3 },
+            
+            "skills": [
+                { "id": "swimming", "exertion": 6 },
+                { "id": "counterattack", "exertion": 7 },
+                { "id": "leap", "exertion": 8 },
+                { "id": "ambidextrous", "exertion": 8 },
+                { "id": "climb", "exertion": 9 }
+            ],
+            
+            "image": "data/heroes/img/conan-mercenary.png",
+            "image_nice": "data/heroes/img/conan-mercenary_image.png",
+            "model": "conan-mercenary",
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "conan-wanderer",
+            "name": {
+                "fr": "Conan - Wanderer",
+                "en": "Conan - Wanderer"
+            },
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": ""
+                },
+                "origin": {
+                    "fr": "",
+                    "en": ""
+                },
+                "author": {
+                    "name": ""
+                }
+            },
+            
+            "gems": 11,
+            "encumbrance": [12, 8, 10],
+            
+            "melee": { "dice": "red", "exertion": 4 },
+            "ranged": { "dice": "orange", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "3", "exertion": 4 },
+            "manipulation": { "dice": "orange", "exertion": 3 },
+            
+            "skills": [
+                { "id": "swimming", "exertion": 7 },
+                { "id": "leap", "exertion": 9 },
+                { "id": "climb", "exertion": 10 },
+                { "id": "wall_wrecker", "exertion": 11 },
+                { "id": "circular_strike" }
+            ],
+            
+            "image": "data/heroes/img/conan-wanderer.png",
+            "image_nice": "data/heroes/img/conan-wanderer_image.png",
+            "model": "conan-wanderer",
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "conan-warlord",
+            "name": {
+                "fr": "Conan - Warlord",
+                "en": "Conan - Warlord"
+            },
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": ""
+                },
+                "origin": {
+                    "fr": "",
+                    "en": ""
+                },
+                "author": {
+                    "name": ""
+                }
+            },
+            
+            "gems": 11,
+            "encumbrance": [12, 9, 11],
+            
+            "melee": { "dice": "red", "exertion": 6 },
+            "ranged": { "dice": "orange", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "2", "exertion": 4 },
+            "manipulation": { "dice": "orange", "exertion": 3 },
+            
+            "skills": [
+                { "id": "swimming", "exertion": 6 },
+                { "id": "concentration", "exertion": 7 },
+                { "id": "leap", "exertion": 8 },
+                { "id": "climb", "exertion": 9 },
+                { "id": "circular_strike" }
+            ],
+            
+            "image": "data/heroes/img/conan-warlord.png",
+            "image_nice": "data/heroes/img/conan-warlord_image.png",
+            "model": "conan-warlord",
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "kerim-shah",
+            "name": {
+                "fr": "Kerim Shah",
+                "en": "Kerim Shah"
+            },
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": ""
+                },
+                "origin": {
+                    "fr": "",
+                    "en": ""
+                },
+                "author": {
+                    "name": ""
+                }
+            },
+            
+            "gems": 10,
+            "encumbrance": [10, 9, 10],
+            
+            "melee": { "dice": "orange", "exertion": 4 },
+            "ranged": { "dice": "orange", "exertion": 5 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "2", "exertion": 4 },
+            "manipulation": { "dice": "yellow", "exertion": 4 },
+            
+            "skills": [
+                { "id": "leap", "exertion": 7 },
+                { "id": "climb", "exertion": 7 },
+                { "id": "untouchable", "exertion": 8 },
+                { "id": "precision_shot", "exertion": 9 },
+                { "id": "concentration", "exertion": 10 }
+            ],
+            
+            "image": "data/heroes/img/kerim-shah.png",
+            "image_nice": "data/heroes/img/kerim-shah_image.png",
+            "model": "kerim-shah",
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "olgerd-vladislav",
+            "name": {
+                "fr": "Olgerd Vladislav",
+                "en": "Olgerd Vladislav"
+            },
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": ""
+                },
+                "origin": {
+                    "fr": "",
+                    "en": ""
+                },
+                "author": {
+                    "name": ""
+                }
+            },
+            
+            "gems": 11,
+            "encumbrance": [11, 8, 10],
+            
+            "melee": { "dice": "red", "exertion": 4 },
+            "ranged": { "dice": "orange", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "2", "exertion": 4 },
+            "manipulation": { "dice": "yellowreroll", "exertion": 3 },
+            
+            "skills": [
+                { "id": "leap", "exertion": 8 },
+                { "id": "bodyguard", "exertion": 8 },
+                { "id": "precision_shot", "exertion": 10 },
+                { "id": "circular_strike" }
+            ],
+            
+            "image": "data/heroes/img/olgerd-vladislav.png",
+            "image_nice": "data/heroes/img/olgerd-vladislav_image.png",
+            "model": "olgerd-vladislav",
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "pallantides",
+            "name": {
+                "fr": "Pallantides",
+                "en": "Pallantides"
+            },
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": ""
+                },
+                "origin": {
+                    "fr": "",
+                    "en": ""
+                },
+                "author": {
+                    "name": ""
+                }
+            },
+            
+            "gems": 11,
+            "encumbrance": [11, 8, 10],
+            
+            "melee": { "dice": "orangereroll", "exertion": 5 },
+            "ranged": { "dice": "yellowreroll", "exertion": 5 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "2", "exertion": 4 },
+            "manipulation": { "dice": "yellowreroll", "exertion": 5 },
+            
+            "skills": [
+                { "id": "leap", "exertion": 7 },
+                { "id": "precision_shot", "exertion": 8 },
+                { "id": "bodyguard", "exertion": 10 },
+                { "id": "sacrifice", "exertion": 10 },
+                { "id": "leadership" }
+            ],
+            
+            "image": "data/heroes/img/pallantides.png",
+            "image_nice": "data/heroes/img/pallantides_image.png",
+            "model": "pallantides",
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "pelias",
+            "name": {
+                "fr": "Pelias",
+                "en": "Pelias"
+            },
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": ""
+                },
+                "origin": {
+                    "fr": "",
+                    "en": ""
+                },
+                "author": {
+                    "name": ""
+                }
+            },
+            
+            "gems": 11,
+            "encumbrance": [9, 6, 8],
+            
+            "melee": { "dice": "yellow", "exertion": 4 },
+            "ranged": { "dice": "yellow", "exertion": 5 },
+            "defense": { "dice": "yellowreroll" },
+            "movement": { "base": "2", "exertion": 3 },
+            "manipulation": { "dice": "orange", "exertion": 4 },
+            
+            "skills": [
+                { "id": "spell_caster", "exertion": 5 },
+                { "id": "concentration", "exertion": 5 },
+                { "id": "attack_from_beyond" },
+                { "id": "jinx" },
+                { "id": "leadership" }
+            ],
+            
+            "image": "data/heroes/img/pelias.png",
+            "image_nice": "data/heroes/img/pelias_image.png",
+            "model": "pelias",
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "savage-belit",
+            "name": {
+                "fr": "Savage Bêlit",
+                "en": "Savage Bêlit"
+            },
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": ""
+                },
+                "origin": {
+                    "fr": "",
+                    "en": ""
+                },
+                "author": {
+                    "name": ""
+                }
+            },
+            
+            "gems": 10,
+            "encumbrance": [9, 7, 8],
+            
+            "melee": { "dice": "orangereroll", "exertion": 4 },
+            "ranged": { "dice": "yellow", "exertion": 3 },
+            "defense": { "dice": "yellow" },
+            "movement": { "base": "3", "exertion": 4 },
+            "manipulation": { "dice": "orange", "exertion": 4 },
+            
+            "skills": [
+                { "id": "swimming", "exertion": 6 },
+                { "id": "ambidextrous", "exertion": 7 },
+                { "id": "evasive", "exertion": 7 },
+                { "id": "leap", "exertion": 8 },
+                { "id": "attack_from_beyond" }
+            ],
+            
+            "image": "data/heroes/img/savage-belit.png",
+            "image_nice": "data/heroes/img/savage-belit_image.png",
+            "model": "savage-belit",
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "taurus",
+            "name": {
+                "fr": "Taurus",
+                "en": "Taurus"
+            },
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": ""
+                },
+                "origin": {
+                    "fr": "",
+                    "en": ""
+                },
+                "author": {
+                    "name": ""
+                }
+            },
+            
+            "gems": 10,
+            "encumbrance": [11, 8, 10],
+            
+            "melee": { "dice": "orange", "exertion": 4 },
+            "ranged": { "dice": "orange", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "2", "exertion": 4 },
+            "manipulation": { "dice": "red", "exertion": 4 },
+            
+            "skills": [
+                { "id": "feline_grace", "exertion": 6 },
+                { "id": "climb", "exertion": 6 },
+                { "id": "leap", "exertion": 6 },
+                { "id": "precision_strike", "exertion": 8 },
+                { "id": "lock_picking" }
+            ],
+            
+            "image": "data/heroes/img/taurus.png",
+            "image_nice": "data/heroes/img/taurus_image.png",
+            "model": "taurus",
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "constantius",
+            "name": {
+                "fr": "Constantius",
+                "en": "Constantius"
+            },
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": ""
+                },
+                "origin": {
+                    "fr": "",
+                    "en": ""
+                },
+                "author": {
+                    "name": ""
+                }
+            },
+            
+            "gems": 11,
+            "encumbrance": [12, 8, 10],
+            
+            "melee": { "dice": "orange", "exertion": 6 },
+            "ranged": { "dice": "yellow", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "2", "exertion": 4 },
+            "manipulation": { "dice": "yellow", "exertion": 3 },
+            
+            "skills": [
+                { "id": "bodyguard", "exertion": 8 },
+                { "id": "support", "exertion": 9 },
+                { "id": "counterattack", "exertion": 11 },
+                { "id": "circular_strike" }
+            ],
+            
+            "image": "data/heroes/img/constantius.png",
+            "image_nice": "data/heroes/img/constantius_image.png",
+            "model": "constantius",
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "skuthus",
+            "name": {
+                "fr": "Skuthus",
+                "en": "Skuthus"
+            },
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": ""
+                },
+                "origin": {
+                    "fr": "",
+                    "en": ""
+                },
+                "author": {
+                    "name": ""
+                }
+            },
+            
+            "gems": 10,
+            "encumbrance": [10, 7, 9],
+            
+            "melee": { "dice": "yellow", "exertion": 4 },
+            "ranged": { "dice": "yellow", "exertion": 3 },
+            "defense": { "dice": "yellow" },
+            "movement": { "base": "2", "exertion": 4 },
+            "manipulation": { "dice": "orange", "exertion": 3 },
+            
+            "skills": [
+                { "id": "concentration", "exertion": 8 },
+                { "id": "attack_from_beyond", "exertion": 9 },
+                { "id": "spell_caster" }
+            ],
+            
+            "image": "data/heroes/img/skuthus.png",
+            "image_nice": "data/heroes/img/skuthus_image.png",
+            "model": "skuthus",
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "thak",
+            "name": {
+                "fr": "Thak",
+                "en": "Thak"
+            },
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": ""
+                },
+                "origin": {
+                    "fr": "",
+                    "en": ""
+                },
+                "author": {
+                    "name": ""
+                }
+            },
+            
+            "gems": 14,
+            "encumbrance": [11, 10, 12],
+            
+            "melee": { "dice": "redreroll", "exertion": 4 },
+            "ranged": { "dice": "yellow", "exertion": 3 },
+            "defense": { "dice": "yellowreroll" },
+            "movement": { "base": "3", "exertion": 4 },
+            "manipulation": { "dice": "yellow", "exertion": 3 },
+            
+            "skills": [
+                { "id": "swimming", "exertion": 9 },
+                { "id": "leap", "exertion": 10 },
+                { "id": "climb", "exertion": 11 },
+                { "id": "ambidextrous" }
+            ],
+            
+            "image": "data/heroes/img/thak.png",
+            "image_nice": "data/heroes/img/thak_image.png",
+            "model": "thak",
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "zaporavo",
+            "name": {
+                "fr": "Zaporavo",
+                "en": "Zaporavo"
+            },
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": ""
+                },
+                "origin": {
+                    "fr": "",
+                    "en": ""
+                },
+                "author": {
+                    "name": ""
+                }
+            },
+            
+            "gems": 10,
+            "encumbrance": [12, 8, 10],
+            
+            "melee": { "dice": "orangereroll", "exertion": 4 },
+            "ranged": { "dice": "orange", "exertion": 3 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "3", "exertion": 4 },
+            "manipulation": { "dice": "orange", "exertion": 3 },
+            
+            "skills": [
+                { "id": "leap", "exertion": 7 },
+                { "id": "precision_strike", "exertion": 8 },
+                { "id": "protected", "exertion": 9 },
+                { "id": "leadership" },
+                { "id": "counterattack" }
+            ],
+            
+            "image": "data/heroes/img/zaporavo.png",
+            "image_nice": "data/heroes/img/zaporavo_image.png",
+            "model": "zaporavo",
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "zogar-sag",
+            "name": {
+                "fr": "Zogar Sag",
+                "en": "Zogar Sag"
+            },
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": ""
+                },
+                "origin": {
+                    "fr": "",
+                    "en": ""
+                },
+                "author": {
+                    "name": ""
+                }
+            },
+            
+            "gems": 10,
+            "encumbrance": [8, 6, 8],
+            
+            "melee": { "dice": "orange", "exertion": 4 },
+            "ranged": { "dice": "yellow", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "3", "exertion": 4 },
+            "manipulation": { "dice": "orange", "exertion": 3 },
+            
+            "skills": [
+                { "id": "evasive", "exertion": 6 },
+                { "id": "leadership", "exertion": 7 },
+                { "id": "protected", "exertion": 7 },
+                { "id": "spell_caster" }
+            ],
+            
+            "image": "data/heroes/img/zogar-sag.png",
+            "image_nice": "data/heroes/img/zogar-sag_image.png",
+            "model": "zogar-sag",
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "vanir-valkyrie",
+            "name": {
+                "fr": "Vanir Valkyrie",
+                "en": "Vanir Valkyrie"
+            },
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": ""
+                },
+                "origin": {
+                    "fr": "",
+                    "en": ""
+                },
+                "author": {
+                    "name": ""
+                }
+            },
+            
+            "gems": 10,
+            "encumbrance": [10, 7, 9],
+            
+            "melee": { "dice": "orangereroll", "exertion": 4 },
+            "ranged": { "dice": "orange", "exertion": 3 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "3", "exertion": 3 },
+            "manipulation": { "dice": "red", "exertion": 2 },
+            
+            "skills": [
+                { "id": "evasive", "exertion": 7 },
+                { "id": "ambidextrous", "exertion": 7 },
+                { "id": "precision_strike", "exertion": 8 },
+                { "id": "leap", "exertion": 8 },
+                { "id": "bodyguard", "exertion": 9 }
+            ],
+            
+            "image": "data/heroes/img/vanir-valkyrie.png",
+            "image_nice": "data/heroes/img/vanir-valkyrie_image.png",
+            "model": "vanir-valkyrie",
+            "origins": ["valvan"]
+        },
+    
+        {
+            "id": "yogah-of-yag",
+            "name": {
+                "fr": "Yogah of Yag",
+                "en": "Yogah of Yag"
+            },
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": ""
+                },
+                "origin": {
+                    "fr": "",
+                    "en": ""
+                },
+                "author": {
+                    "name": ""
+                }
+            },
+            
+            "gems": 12,
+            "encumbrance": [13, 8, 10],
+            
+            "melee": { "dice": "red", "exertion": 5 },
+            "ranged": { "dice": "yellow", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "2", "exertion": 3 },
+            "manipulation": { "dice": "yellow", "exertion": 3 },
+            
+            "skills": [
+                { "id": "spell_caster", "exertion": 8 },
+                { "id": "concentration", "exertion": 8 },
+                { "id": "wall_wrecker", "exertion": 10 },
+                { "id": "sacrifice", "exertion": 10 },
+                { "id": "attack_from_beyond" }
+            ],
+            
+            "image": "data/heroes/img/yogah-of-yag.png",
+            "image_nice": "data/heroes/img/yogah-of-yag_image.png",
+            "model": "yogah-of-yag",
+            "origins": ["yoy"]
+        },
+    
+        {
+            "id": "belit-the-princess",
+            "name": {
+                "fr": "Bêlit - The Princess",
+                "en": "Bêlit - The Princess"
+            },
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": ""
+                },
+                "origin": {
+                    "fr": "",
+                    "en": ""
+                },
+                "author": {
+                    "name": ""
+                }
+            },
+            
+            "gems": 9,
+            "encumbrance": [9, 7, 9],
+            
+            "melee": { "dice": "orange", "exertion": 4 },
+            "ranged": { "dice": "yellow", "exertion": 4 },
+            "defense": { "dice": "yellow" },
+            "movement": { "base": "2", "exertion": 4 },
+            "manipulation": { "dice": "orange", "exertion": 3 },
+            
+            "skills": [
+                { "id": "swimming", "exertion": 6 },
+                { "id": "ambidextrous", "exertion": 7 },
+                { "id": "feline_grace", "exertion": 7 },
+                { "id": "leap", "exertion": 8 },
+                { "id": "support" },
+                { "id": "attack_from_beyond" }
+            ],
+            
+            "image": "data/heroes/img/belit-the-princess.png",
+            "image_nice": "data/heroes/img/belit-the-princess_image.png",
+            "model": "belit-the-princess",
+            "origins": ["xcbox"]
+        },
+    
+        {
+            "id": "king-conan",
+            "name": {
+                "fr": "King Conan",
+                "en": "King Conan"
+            },
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": ""
+                },
+                "origin": {
+                    "fr": "",
+                    "en": ""
+                },
+                "author": {
+                    "name": ""
+                }
+            },
+            
+            "gems": 11,
+            "encumbrance": [11, 10, 11],
+            
+            "melee": { "dice": "red", "exertion": 4 },
+            "ranged": { "dice": "orange", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "2", "exertion": 3 },
+            "manipulation": { "dice": "orange", "exertion": 3 },
+            
+            "skills": [
+                { "id": "swimming", "exertion": 6 },
+                { "id": "leap", "exertion": 8 },
+                { "id": "leadership" },
+                { "id": "support" },
+                { "id": "precision_strike" }
+            ],
+            
+            "image": "data/heroes/img/king-conan.png",
+            "image_nice": "data/heroes/img/king-conan_image.png",
+            "model": "king-conan",
+            "origins": ["xcbox"]
+        },
+    
+        {
+            "id": "belit-queen-of-the-black-coast",
+            "name": {
+                "fr": "Bêlit - Queen of the Black Coast",
+                "en": "Bêlit - Queen of the Black Coast"
+            },
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": ""
+                },
+                "origin": {
+                    "fr": "",
+                    "en": ""
+                },
+                "author": {
+                    "name": ""
+                }
+            },
+            
+            "gems": 10,
+            "encumbrance": [9, 7, 9],
+            
+            "melee": { "dice": "orange", "exertion": 4 },
+            "ranged": { "dice": "yellow", "exertion": 3 },
+            "defense": { "dice": "yellow" },
+            "movement": { "base": "2", "exertion": 4 },
+            "manipulation": { "dice": "orange", "exertion": 5 },
+            
+            "skills": [
+                { "id": "swimming", "exertion": 6 },
+                { "id": "ambidextrous", "exertion": 7 },
+                { "id": "leap", "exertion": 8 },
+                { "id": "support" },
+                { "id": "attack_from_beyond" }
+            ],
+            
+            "image": "data/heroes/img/belit-queen-of-the-black-coast.png",
+            "image_nice": "data/heroes/img/belit-queen-of-the-black-coast_image.png",
+            "model": "belit-queen-of-the-black-coast",
+            "origins": ["bbox"]
+        },
+    
+        {
+            "id": "conan-the-thief",
+            "name": {
+                "fr": "Conan - The Thief",
+                "en": "Conan - The Thief"
+            },
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": ""
+                },
+                "origin": {
+                    "fr": "",
+                    "en": ""
+                },
+                "author": {
+                    "name": ""
+                }
+            },
+            
+            "gems": 10,
+            "encumbrance": [12, 8, 10],
+            
+            "melee": { "dice": "red", "exertion": 6 },
+            "ranged": { "dice": "orange", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "3", "exertion": 4 },
+            "manipulation": { "dice": "orangereroll", "exertion": 3 },
+            
+            "skills": [
+                { "id": "swimming", "exertion": 6 },
+                { "id": "leap", "exertion": 8 },
+                { "id": "climb", "exertion": 9 },
+                { "id": "wall_wrecker", "exertion": 11 },
+                { "id": "lock_picking" }
+            ],
+            
+            "image": "data/heroes/img/conan-the-thief.png",
+            "image_nice": "data/heroes/img/conan-the-thief_image.png",
+            "model": "conan-the-thief",
+            "origins": ["bbox"]
+        },
+    
+        {
+            "id": "taramis",
+            "name": {
+                "fr": "Taramis",
+                "en": "Taramis"
+            },
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": ""
+                },
+                "origin": {
+                    "fr": "",
+                    "en": ""
+                },
+                "author": {
+                    "name": ""
+                }
+            },
+            
+            "gems": 9,
+            "encumbrance": [9, 7, 8],
+            
+            "melee": { "dice": "yellow", "exertion": 4 },
+            "ranged": { "dice": "yellow", "exertion": 4 },
+            "defense": { "dice": "yellow" },
+            "movement": { "base": "2", "exertion": 3 },
+            "manipulation": { "dice": "orange", "exertion": 4 },
+            
+            "skills": [
+                { "id": "leap", "exertion": 8 },
+                { "id": "spell_caster", "exertion": 8 },
+                { "id": "concentration", "exertion": 9 },
+                { "id": "support" },
+                { "id": "leadership" }
+            ],
+            
+            "image": "data/heroes/img/taramis.png",
+            "image_nice": "data/heroes/img/taramis_image.png",
+            "model": "taramis",
+            "origins": ["ppbox"]
+        },
+    
+        {
+            "id": "valeria-warrior",
+            "name": {
+                "fr": "Valeria - Warrior",
+                "en": "Valeria - Warrior"
+            },
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": ""
+                },
+                "origin": {
+                    "fr": "",
+                    "en": ""
+                },
+                "author": {
+                    "name": ""
+                }
+            },
+            
+            "gems": 10,
+            "encumbrance": [10, 6, 8],
+            
+            "melee": { "dice": "orangereroll", "exertion": 4 },
+            "ranged": { "dice": "yellow", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "2", "exertion": 4 },
+            "manipulation": { "dice": "orange", "exertion": 3 },
+            
+            "skills": [
+                { "id": "swimming", "exertion": 5 },
+                { "id": "ambidextrous", "exertion": 5 },
+                { "id": "feline_grace", "exertion": 5 },
+                { "id": "counterattack", "exertion": 6 }
+            ],
+            
+            "image": "data/heroes/img/valeria-warrior.png",
+            "image_nice": "data/heroes/img/valeria-warrior_image.png",
+            "model": "valeria-warrior",
+            "origins": ["ppbox"]
+        },
+    
+        {
+            "id": "niord",
+            "name": {
+                "fr": "Niord",
+                "en": "Niord"
+            },
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": ""
+                },
+                "origin": {
+                    "fr": "",
+                    "en": ""
+                },
+                "author": {
+                    "name": ""
+                }
+            },
+            
+            "gems": 11,
+            "encumbrance": [12, 8, 10],
+            
+            "melee": { "dice": "orange", "exertion": 5 },
+            "ranged": { "dice": "yellow", "exertion": 4 },
+            "defense": { "dice": "red" },
+            "movement": { "base": "2", "exertion": 4 },
+            "manipulation": { "dice": "yellow", "exertion": 3 },
+            
+            "skills": [
+                { "id": "climb", "exertion": 6 },
+                { "id": "leap", "exertion": 8 },
+                { "id": "ambidextrous", "exertion": 8 },
+                { "id": "leadership" },
+                { "id": "blocking" }
+            ],
+            
+            "image": "data/heroes/img/niord.png",
+            "image_nice": "data/heroes/img/niord_image.png",
+            "model": "niord",
+            "origins": ["nordheim"]
+        },
+    
+        {
+            "id": "shentu",
+            "name": {
+                "fr": "Shentu",
+                "en": "Shentu"
+            },
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": ""
+                },
+                "origin": {
+                    "fr": "",
+                    "en": ""
+                },
+                "author": {
+                    "name": ""
+                }
+            },
+            
+            "gems": 10,
+            "encumbrance": [11, 7, 9],
+            
+            "melee": { "dice": "orangereroll", "exertion": 4 },
+            "ranged": { "dice": "yellow", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "2", "exertion": 4 },
+            "manipulation": { "dice": "yellow", "exertion": 3 },
+            
+            "skills": [
+                { "id": "leap", "exertion": 6 },
+                { "id": "untouchable", "exertion": 7 },
+                { "id": "ambidextrous", "exertion": 8 }
+            ],
+            
+            "image": "data/heroes/img/shentu.png",
+            "image_nice": "data/heroes/img/shentu_image.png",
+            "model": "shentu",
+            "origins": ["khitai"]
+        },
+    
+        {
+            "id": "ikhmet",
+            "name": {
+                "fr": "Ikhmet",
+                "en": "Ikhmet"
+            },
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": ""
+                },
+                "origin": {
+                    "fr": "",
+                    "en": ""
+                },
+                "author": {
+                    "name": ""
+                }
+            },
+            
+            "gems": 10,
+            "encumbrance": [9, 6, 9],
+            
+            "melee": { "dice": "yellowreroll", "exertion": 4 },
+            "ranged": { "dice": "yellow", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "3", "exertion": 4 },
+            "manipulation": { "dice": "red", "exertion": 3 },
+            
+            "skills": [
+                { "id": "ambidextrous", "exertion": 6 },
+                { "id": "leap", "exertion": 8 },
+                { "id": "precision_strike", "exertion": 8 },
+                { "id": "swimming", "exertion": 8 }
+            ],
+            
+            "image": "data/heroes/img/ikhmet.png",
+            "image_nice": "data/heroes/img/ikhmet_image.png",
+            "model": "ikhmet",
+            "origins": ["stygia"]
         }
     ]
 }
