@@ -3,12 +3,13 @@ Nav = {
     _icons: [],
     _actions: {},
     
-    addIcon: function(label, icon, id) 
+    addIcon: function(label, icon, id, onSelect) 
     {
         var item = {
             label: label,
             icon: icon,
-            id: id
+            id: id,
+            onSelect: onSelect
         };
         this._icons.push(item);
         this._actions[id] = [];
@@ -125,22 +126,22 @@ Nav = {
         var id = elt.getAttribute("for");
         
         var toSelect = $('#' + id);
-        if (toSelect.is(".active"))
+        if (!toSelect.is(".active"))
         {
-            return;
+            window.location.hash = "#" + id;
+    
+            $("#" + this._id + "-toolbar ul.active").removeClass("active");
+            $("#" + this._id + "-toolbar ul[for='" + id + "']").addClass("active");
+    
+            $("#" + this._id + "-contents > .active").removeClass("active");
+            toSelect.addClass("active");
+            toSelect.trigger("show");
+            
+            $("#" + this._id + " ul li a.active").removeClass("active");
+            $("#" + this._id + " ul li a[for=" + id + "]").addClass("active");
+            
+            Nav.updateTitle();
         }
-
-        $("#" + this._id + "-toolbar ul.active").removeClass("active");
-        $("#" + this._id + "-toolbar ul[for='" + id + "']").addClass("active");
-
-        $("#" + this._id + "-contents > .active").removeClass("active");
-        toSelect.addClass("active");
-        toSelect.trigger("show");
-        
-        $("#" + this._id + " ul li a.active").removeClass("active");
-        $("#" + this._id + " ul li a[for=" + id + "]").addClass("active");
-        
-        Nav.updateTitle();
     },
     
     act: function(elt)
@@ -210,6 +211,23 @@ Nav = {
         $(document.body).prepend(code);
         
         $(window).resize(function() { Nav.updateTitle(); });
+        $(window).on('hashchange', Nav._hashChange);
+    },
+    
+    _hashChange: function()
+    {
+        var elt;
+        
+        var matcher = /#([a-z0-9_-]*)/i.exec(window.location.hash);
+        if (matcher
+            && (elt = $("*[for=" + matcher[1] + "]")[0]))
+        {
+            Nav.switchTo(elt);
+        }
+        else
+        {
+            Nav.switchTo($('.nav > ul > li > a')[0]);
+        }
     },
     
     dialog: function(title, code, callback, actions)

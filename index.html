@@ -94,6 +94,8 @@
         <script type="text/javascript">
 	        	Encyclopedia.load()
 		        	.then(function() {
+		        		var hash = window.location.hash;
+		        		
 		        		Menu.initialize();
 		        		
 	                    Nav.initialize();
@@ -103,7 +105,15 @@
                         Encyclopedia.init();
 	                    ConanStudio.init();
 	                    
-	                    Nav.switchTo($('.nav > ul > li > a')[0]);
+	                    if (hash != window.location.hash)
+                    	{
+	                        window.location.hash = hash;
+                    	}
+	                    else
+                    	{
+	                        Nav._hashChange();
+                    	}
+	                    
 	                    $(".loading").addClass('loaded');
 		        	});
         </script>

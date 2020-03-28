@@ -524,7 +524,7 @@ var EncyclopediaEquipments = {
             
             CardEquipment._displayCards();
             
-            Nav.switchTo($("*[for=studio")[0]);
+            Nav.switchTo($("*[for=studio]")[0]);
             $("#studio .nav-wrapper").slick('slickGoTo', $("#equipment").index());
             Nav.closeDialog();
             $("#equipment").animate({ scrollTop: $('#equipment > *:last()').position().top },500);
