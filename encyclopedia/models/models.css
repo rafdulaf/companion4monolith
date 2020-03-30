@@ -38,7 +38,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-#encyclopedia-models-wrapper a span {
+#encyclopedia-models-wrapper a > div > span {
     display: block;
     position: absolute;
     left: 0;
@@ -47,6 +47,9 @@
     padding: 5px;
     color: #fff;
     background-color: rgba(0,0,0,0.3);
+}
+#encyclopedia-models-wrapper a > div > span > span {
+    font-size: 60%;
 }
 
 #encyclopedia-models-wrapper a[data-count]::after {

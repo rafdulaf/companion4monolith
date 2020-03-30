@@ -237,8 +237,8 @@ var EncyclopediaHeroes = {
             
             image: hero.image ? hero.image + "?version=" + Version : null,
             imageEffect: false,
-            imagelocation: {x: "0", y: "50"},
-            imagezoom: "100",
+            imagelocation: hero.image_location || {x: "0", y: "50"},
+            imagezoom: hero.image_zoom || "100",
             imagerotation: "0",
             
             gem: hero.gems,
@@ -316,7 +316,7 @@ var EncyclopediaHeroes = {
         
         var superdetails = "";
         superdetails += "<div class='superdetails'>";
-        superdetails += "<img src=\"" + sheet.image_nice + "?version=" + Version + "\"/>";
+        superdetails += "<img src=\"" + sheet.image + "?version=" + Version + "\"/>";
         superdetails += "<div class='text'>" + sheet.quote.text[Language] + "<br/>" + sheet.quote.author.name + " - " + sheet.quote.origin[Language] + "</div>";
         superdetails += "</div>";
         

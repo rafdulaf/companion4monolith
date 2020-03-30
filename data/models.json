@@ -2,21 +2,254 @@
     "list": [
         {
             "id": "belit",
-            
-            "images": ["data/models/img/belit_1.jpg","data/models/img/belit_2.jpg"],
-            
+            "images": ["data/models/img/belit_1.jpg", "data/models/img/belit_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
-            
             "origins": ["corebox", "stretchgoal", "king"]
         },
+    
         {
-            "id": "belit_brom",
-            
-            "images": ["data/models/img/belit_brom_1.jpg","data/models/img/belit_brom_2.jpg","data/models/img/belit_brom_3.jpg"],
-            
+            "id": "conan",
+            "images": ["data/models/img/conan_1.jpg", "data/models/img/conan_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
-            
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "hadrathus",
+            "images": ["data/models/img/hadrathus_1.jpg", "data/models/img/hadrathus_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "shevatas",
+            "images": ["data/models/img/shevatas_1.jpg", "data/models/img/shevatas_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "amra-the-lion",
+            "images": ["data/models/img/amra-the-lion_1.jpg", "data/models/img/amra-the-lion_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["king"]
+        },
+    
+        {
+            "id": "ngora",
+            "images": ["data/models/img/ngora_1.jpg", "data/models/img/ngora_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["king"]
+        },
+    
+        {
+            "id": "valeria",
+            "images": ["data/models/img/valeria_1.jpg", "data/models/img/valeria_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["king"]
+        },
+    
+        {
+            "id": "zelata",
+            "images": ["data/models/img/zelata_1.jpg", "data/models/img/zelata_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["king"]
+        },
+    
+        {
+            "id": "amboola",
+            "images": ["data/models/img/amboola_1.jpg", "data/models/img/amboola_2.jpg", "data/models/img/amboola_3.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "balthus",
+            "images": ["data/models/img/balthus_1.jpg", "data/models/img/balthus_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "conan-general",
+            "images": ["data/models/img/conan-general_1.jpg", "data/models/img/conan-general_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "conan-mercenary",
+            "images": ["data/models/img/conan-mercenary_1.jpg", "data/models/img/conan-mercenary_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "conan-wanderer",
+            "images": ["data/models/img/conan-wanderer_1.jpg", "data/models/img/conan-wanderer_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "conan-warlord",
+            "images": ["data/models/img/conan-warlord_1.jpg", "data/models/img/conan-warlord_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "kerim-shah",
+            "images": ["data/models/img/kerim-shah_1.jpg", "data/models/img/kerim-shah_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "olgerd-vladislav",
+            "images": ["data/models/img/olgerd-vladislav_1.jpg", "data/models/img/olgerd-vladislav_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "pallantides",
+            "images": ["data/models/img/pallantides_1.jpg", "data/models/img/pallantides_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "pelias",
+            "images": ["data/models/img/pelias_1.jpg", "data/models/img/pelias_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "savage-belit",
+            "images": ["data/models/img/savage-belit_1.jpg", "data/models/img/savage-belit_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "taurus",
+            "images": ["data/models/img/taurus_1.jpg", "data/models/img/taurus_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "constantius",
+            "images": ["data/models/img/constantius_1.jpg", "data/models/img/constantius_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "skuthus",
+            "images": ["data/models/img/skuthus_1.jpg", "data/models/img/skuthus_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "thak",
+            "images": ["data/models/img/thak_1.jpg", "data/models/img/thak_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "zaporavo",
+            "images": ["data/models/img/zaporavo_1.jpg", "data/models/img/zaporavo_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "zogar-sag",
+            "images": ["data/models/img/zogar-sag_1.jpg", "data/models/img/zogar-sag_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "vanir-valkyrie",
+            "images": ["data/models/img/vanir-valkyrie_1.jpg", "data/models/img/vanir-valkyrie_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["valvan"]
+        },
+    
+        {
+            "id": "yogah-of-yag",
+            "images": ["data/models/img/yogah-of-yag_1.jpg", "data/models/img/yogah-of-yag_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["yoy"]
+        },
+    
+        {
+            "id": "belit-the-princess",
+            "images": ["data/models/img/belit-the-princess_1.jpg", "data/models/img/belit-the-princess_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["xcbox"]
+        },
+    
+        {
+            "id": "king-conan",
+            "images": ["data/models/img/king-conan_1.jpg", "data/models/img/king-conan_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["xcbox"]
+        },
+    
+        {
+            "id": "belit-queen-of-the-black-coast",
+            "images": ["data/models/img/belit-queen-of-the-black-coast_1.jpg", "data/models/img/belit-queen-of-the-black-coast_2.jpg", "data/models/img/belit-queen-of-the-black-coast_3.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "origins": ["bbox"]
-        }        
+        },
+    
+        {
+            "id": "conan-the-thief",
+            "images": ["data/models/img/conan-the-thief_1.jpg", "data/models/img/conan-the-thief_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["bbox"]
+        },
+    
+        {
+            "id": "taramis",
+            "images": ["data/models/img/taramis_1.jpg", "data/models/img/taramis_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["ppbox"]
+        },
+    
+        {
+            "id": "valeria-warrior",
+            "images": ["data/models/img/valeria-warrior_1.jpg", "data/models/img/valeria-warrior_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["ppbox"]
+        },
+    
+        {
+            "id": "niord",
+            "images": ["data/models/img/niord_1.jpg", "data/models/img/niord_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["nordheim"]
+        },
+    
+        {
+            "id": "shentu",
+            "images": ["data/models/img/shentu_1.jpg", "data/models/img/shentu_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["khitai"]
+        },
+    
+        {
+            "id": "ikhmet",
+            "images": ["data/models/img/ikhmet_1.jpg", "data/models/img/ikhmet_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["stygia"]
+        }
     ]
 }

@@ -258,7 +258,7 @@ var EncyclopediaModels = {
                 var hero = Encyclopedia.heroes.list[i];
                 if (hero.model == model.id)
                 {
-                    var name = hero.name[Language];
+                    var name = hero.name[Language] + (hero.subname ? " <span>" + hero.subname[Language] + "</span>" : "");
                     if (names.indexOf(name) == -1)
                         names.push(name);
                 }

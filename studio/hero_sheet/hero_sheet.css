@@ -117,6 +117,7 @@
 
 .sheet.herosheet div.image {
     height: 112%;
+    width: 100%;
 }
 
 .sheet.herosheet div.image img {

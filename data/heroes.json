@@ -38,7 +38,8 @@
             ],
              
             "image": "data/heroes/img/belit.png",
-            "image_nice": "data/heroes/img/belit_image.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
             "model": "belit",
             "origins": ["corebox", "stretchgoal", "king"] 
         },
@@ -81,7 +82,6 @@
             ],
             
             "image": "data/heroes/img/conan.png",
-            "image_nice": "data/heroes/img/conan_image.png",
             "model": "conan",
             "origins": ["corebox", "stretchgoal", "king"]
         },
@@ -122,7 +122,6 @@
             ],
             
             "image": "data/heroes/img/hadrathus.png",
-            "image_nice": "data/heroes/img/hadrathus_image.png",
             "model": "hadrathus",
             "origins": ["corebox", "stretchgoal", "king"]
         },
@@ -165,7 +164,6 @@
             ],
             
             "image": "data/heroes/img/shevatas.png",
-            "image_nice": "data/heroes/img/shevatas_image.png",
             "model": "shevatas",
             "origins": ["corebox", "stretchgoal", "king"]
         },
@@ -208,7 +206,6 @@
             ],
             
             "image": "data/heroes/img/amra-the-lion.png",
-            "image_nice": "data/heroes/img/amra-the-lion_image.png",
             "model": "amra-the-lion",
             "origins": ["king"]
         },
@@ -251,7 +248,6 @@
             ],
             
             "image": "data/heroes/img/ngora.png",
-            "image_nice": "data/heroes/img/ngora_image.png",
             "model": "ngora",
             "origins": ["king"]
         },
@@ -292,7 +288,6 @@
             ],
             
             "image": "data/heroes/img/valeria.png",
-            "image_nice": "data/heroes/img/valeria_image.png",
             "model": "valeria",
             "origins": ["king"]
         },
@@ -336,7 +331,6 @@
             ],
             
             "image": "data/heroes/img/zelata.png",
-            "image_nice": "data/heroes/img/zelata_image.png",
             "model": "zelata",
             "origins": ["king"]
         },
@@ -349,15 +343,15 @@
             },
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "Amboola se réveilla lentement, ses sens encore engourdis par le vin qu'il avait bu la nuit précédente. L'espace d'un moment confus, il lui fut impossible de se rappeler où il se trouvait. La clarté lunaire, filtrant entre les barreaux de la fenêtre, illuminait un décor qui lui était inconnu. Puis il se souvint qu'il gisait dans un des cachots des étages supérieurs de la prison où la reine Tanada, la soeur du roi de Kush, l'avait fait jeter dans son courroux. Ce n'était cependant pas un cachot ordinaire, car même Tanada n'avait osé aller trop loin avec le commandant des lanciers noirs, épine dorsale de l'armée de Kush.",
+                    "en": "Amboola awakened slowly, his senses still sluggish from the wine he had guzzled the night before. For a muddled moment he could not remember where he was; the moonlight, streaming, through the barred window, shone on unfamiliar surroundings. Then he remembered that he was lying in the upper cell of the prison where the anger of Tananda, sister to the king of Kush, had consigned him. It was no ordinary cell, for even Tananda had not dared to go too far in her punishment of the commander of the black spearmen which were the strength of Kush's army."
                 },
                 "origin": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "Histoire inachevée, sans titre",
+                    "en": "Unfinished story"
                 },
                 "author": {
-                    "name": ""
+                    "name": "Robert E. Howard"
                 }
             },
             
@@ -378,7 +372,8 @@
             ],
             
             "image": "data/heroes/img/amboola.png",
-            "image_nice": "data/heroes/img/amboola_image.png",
+            "image_zoom": "111",
+            "image_location": { "x": "11", "y": "62" },
             "model": "amboola",
             "origins": ["stretchgoal", "king"]
         },
@@ -422,7 +417,6 @@
             ],
             
             "image": "data/heroes/img/balthus.png",
-            "image_nice": "data/heroes/img/balthus_image.png",
             "model": "balthus",
             "origins": ["stretchgoal", "king"]
         },
@@ -469,7 +463,6 @@
             ],
             
             "image": "data/heroes/img/conan-general.png",
-            "image_nice": "data/heroes/img/conan-general_image.png",
             "model": "conan-general",
             "origins": ["stretchgoal", "king"]
         },
@@ -516,7 +509,6 @@
             ],
             
             "image": "data/heroes/img/conan-mercenary.png",
-            "image_nice": "data/heroes/img/conan-mercenary_image.png",
             "model": "conan-mercenary",
             "origins": ["stretchgoal", "king"]
         },
@@ -563,7 +555,6 @@
             ],
             
             "image": "data/heroes/img/conan-wanderer.png",
-            "image_nice": "data/heroes/img/conan-wanderer_image.png",
             "model": "conan-wanderer",
             "origins": ["stretchgoal", "king"]
         },
@@ -610,7 +601,6 @@
             ],
             
             "image": "data/heroes/img/conan-warlord.png",
-            "image_nice": "data/heroes/img/conan-warlord_image.png",
             "model": "conan-warlord",
             "origins": ["stretchgoal", "king"]
         },
@@ -653,7 +643,6 @@
             ],
             
             "image": "data/heroes/img/kerim-shah.png",
-            "image_nice": "data/heroes/img/kerim-shah_image.png",
             "model": "kerim-shah",
             "origins": ["stretchgoal", "king"]
         },
@@ -695,7 +684,6 @@
             ],
             
             "image": "data/heroes/img/olgerd-vladislav.png",
-            "image_nice": "data/heroes/img/olgerd-vladislav_image.png",
             "model": "olgerd-vladislav",
             "origins": ["stretchgoal", "king"]
         },
@@ -738,7 +726,6 @@
             ],
             
             "image": "data/heroes/img/pallantides.png",
-            "image_nice": "data/heroes/img/pallantides_image.png",
             "model": "pallantides",
             "origins": ["stretchgoal", "king"]
         },
@@ -781,7 +768,6 @@
             ],
             
             "image": "data/heroes/img/pelias.png",
-            "image_nice": "data/heroes/img/pelias_image.png",
             "model": "pelias",
             "origins": ["stretchgoal", "king"]
         },
@@ -798,15 +784,15 @@
             },
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "Elle se tourna vers Conan. Sa poitrine se soulevait et ses yeux brillaient. Le Cimmérien fut saisi par une surprise teintée d’émerveillement. Elle avait un corps de déesse, élancé, tout à la fois souple et voluptueux. Son unique vêtement était une large ceinture de soie. Ses membres à la blancheur d'ivoire et les globes d'albâtre de ses seins firent battre sauvagement le sang dans les veines du Cimmérien bien qu'il fût encore sous l'emprise de la furie de la bataille. Les cheveux de Bêlit, noirs et brillants - aussi noirs qu'une nuit stygienne- retombaient en cascade soyeuses sur son dos souple. Ses yeux noirs s'embrasèrent quand ils se posèrent sur le Cimmérien.\nElle était indomptable comme un vent du désert, aussi souple et redoutable qu'une panthère. ",
+                    "en": "Bêlit turned toward Conan, her bosom heaving, her eyes flashing. Fierce fingers of wonder caught at his heart. She was slender, yet formed like a goddess: at once lithe and voluptuous. Her only garment was a broad silken girdle. Her white ivory limbs and the ivory globes of her breasts drove a beat of fierce passion through the Cimmerian’s pulse, even in the panting fury of battle. Her rich black hair, black as a Stygian night, fell in rippling burnished clusters down her supple back. Her dark eyes burned on the Cimmerian.\nShe was untamed as a desert wind, supple and dangerous as a she-panther."
                 },
                 "origin": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "La Reine de la Côte Noire",
+                    "en": "Queen of the Black Coast"
                 },
                 "author": {
-                    "name": ""
+                    "name": "Robert E. Howard"
                 }
             },
             
@@ -828,7 +814,6 @@
             ],
             
             "image": "data/heroes/img/savage-belit.png",
-            "image_nice": "data/heroes/img/savage-belit_image.png",
             "model": "savage-belit",
             "origins": ["stretchgoal", "king"]
         },
@@ -871,7 +856,6 @@
             ],
             
             "image": "data/heroes/img/taurus.png",
-            "image_nice": "data/heroes/img/taurus_image.png",
             "model": "taurus",
             "origins": ["stretchgoal", "king"]
         },
@@ -913,7 +897,6 @@
             ],
             
             "image": "data/heroes/img/constantius.png",
-            "image_nice": "data/heroes/img/constantius_image.png",
             "model": "constantius",
             "origins": ["stretchgoal", "king"]
         },
@@ -954,7 +937,6 @@
             ],
             
             "image": "data/heroes/img/skuthus.png",
-            "image_nice": "data/heroes/img/skuthus_image.png",
             "model": "skuthus",
             "origins": ["stretchgoal", "king"]
         },
@@ -996,7 +978,6 @@
             ],
             
             "image": "data/heroes/img/thak.png",
-            "image_nice": "data/heroes/img/thak_image.png",
             "model": "thak",
             "origins": ["stretchgoal", "king"]
         },
@@ -1039,7 +1020,6 @@
             ],
             
             "image": "data/heroes/img/zaporavo.png",
-            "image_nice": "data/heroes/img/zaporavo_image.png",
             "model": "zaporavo",
             "origins": ["stretchgoal", "king"]
         },
@@ -1081,7 +1061,6 @@
             ],
             
             "image": "data/heroes/img/zogar-sag.png",
-            "image_nice": "data/heroes/img/zogar-sag_image.png",
             "model": "zogar-sag",
             "origins": ["stretchgoal", "king"]
         },
@@ -1124,7 +1103,6 @@
             ],
             
             "image": "data/heroes/img/vanir-valkyrie.png",
-            "image_nice": "data/heroes/img/vanir-valkyrie_image.png",
             "model": "vanir-valkyrie",
             "origins": ["valvan"]
         },
@@ -1167,7 +1145,6 @@
             ],
             
             "image": "data/heroes/img/yogah-of-yag.png",
-            "image_nice": "data/heroes/img/yogah-of-yag_image.png",
             "model": "yogah-of-yag",
             "origins": ["yoy"]
         },
@@ -1184,15 +1161,15 @@
             },
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "Elle se tourna vers Conan. Sa poitrine se soulevait et ses yeux brillaient. Le Cimmérien fut saisi par une surprise teintée d’émerveillement. Elle avait un corps de déesse, élancé, tout à la fois souple et voluptueux. Son unique vêtement était une large ceinture de soie. Ses membres à la blancheur d'ivoire et les globes d'albâtre de ses seins firent battre sauvagement le sang dans les veines du Cimmérien bien qu'il fût encore sous l'emprise de la furie de la bataille. Les cheveux de Bêlit, noirs et brillants - aussi noirs qu'une nuit stygienne- retombaient en cascade soyeuses sur son dos souple. Ses yeux noirs s'embrasèrent quand ils se posèrent sur le Cimmérien.\nElle était indomptable comme un vent du désert, aussi souple et redoutable qu'une panthère. ",
+                    "en": "Bêlit turned toward Conan, her bosom heaving, her eyes flashing. Fierce fingers of wonder caught at his heart. She was slender, yet formed like a goddess: at once lithe and voluptuous. Her only garment was a broad silken girdle. Her white ivory limbs and the ivory globes of her breasts drove a beat of fierce passion through the Cimmerian’s pulse, even in the panting fury of battle. Her rich black hair, black as a Stygian night, fell in rippling burnished clusters down her supple back. Her dark eyes burned on the Cimmerian.\nShe was untamed as a desert wind, supple and dangerous as a she-panther."
                 },
                 "origin": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "La Reine de la Côte Noire",
+                    "en": "Queen of the Black Coast"
                 },
                 "author": {
-                    "name": ""
+                    "name": "Robert E. Howard"
                 }
             },
             
@@ -1215,7 +1192,6 @@
             ],
             
             "image": "data/heroes/img/belit-the-princess.png",
-            "image_nice": "data/heroes/img/belit-the-princess_image.png",
             "model": "belit-the-princess",
             "origins": ["xcbox"]
         },
@@ -1262,7 +1238,6 @@
             ],
             
             "image": "data/heroes/img/king-conan.png",
-            "image_nice": "data/heroes/img/king-conan_image.png",
             "model": "king-conan",
             "origins": ["xcbox"]
         },
@@ -1279,15 +1254,15 @@
             },
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "Elle se tourna vers Conan. Sa poitrine se soulevait et ses yeux brillaient. Le Cimmérien fut saisi par une surprise teintée d’émerveillement. Elle avait un corps de déesse, élancé, tout à la fois souple et voluptueux. Son unique vêtement était une large ceinture de soie. Ses membres à la blancheur d'ivoire et les globes d'albâtre de ses seins firent battre sauvagement le sang dans les veines du Cimmérien bien qu'il fût encore sous l'emprise de la furie de la bataille. Les cheveux de Bêlit, noirs et brillants - aussi noirs qu'une nuit stygienne- retombaient en cascade soyeuses sur son dos souple. Ses yeux noirs s'embrasèrent quand ils se posèrent sur le Cimmérien.\nElle était indomptable comme un vent du désert, aussi souple et redoutable qu'une panthère. ",
+                    "en": "Bêlit turned toward Conan, her bosom heaving, her eyes flashing. Fierce fingers of wonder caught at his heart. She was slender, yet formed like a goddess: at once lithe and voluptuous. Her only garment was a broad silken girdle. Her white ivory limbs and the ivory globes of her breasts drove a beat of fierce passion through the Cimmerian’s pulse, even in the panting fury of battle. Her rich black hair, black as a Stygian night, fell in rippling burnished clusters down her supple back. Her dark eyes burned on the Cimmerian.\nShe was untamed as a desert wind, supple and dangerous as a she-panther."
                 },
                 "origin": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "La Reine de la Côte Noire",
+                    "en": "Queen of the Black Coast"
                 },
                 "author": {
-                    "name": ""
+                    "name": "Robert E. Howard"
                 }
             },
             
@@ -1309,7 +1284,8 @@
             ],
             
             "image": "data/heroes/img/belit-queen-of-the-black-coast.png",
-            "image_nice": "data/heroes/img/belit-queen-of-the-black-coast_image.png",
+            "image_zoom": "110",
+            "image_location": { "x": "8", "y": "63" },
             "model": "belit-queen-of-the-black-coast",
             "origins": ["bbox"]
         },
@@ -1356,7 +1332,6 @@
             ],
             
             "image": "data/heroes/img/conan-the-thief.png",
-            "image_nice": "data/heroes/img/conan-the-thief_image.png",
             "model": "conan-the-thief",
             "origins": ["bbox"]
         },
@@ -1399,7 +1374,6 @@
             ],
             
             "image": "data/heroes/img/taramis.png",
-            "image_nice": "data/heroes/img/taramis_image.png",
             "model": "taramis",
             "origins": ["ppbox"]
         },
@@ -1445,7 +1419,6 @@
             ],
             
             "image": "data/heroes/img/valeria-warrior.png",
-            "image_nice": "data/heroes/img/valeria-warrior_image.png",
             "model": "valeria-warrior",
             "origins": ["ppbox"]
         },
@@ -1488,7 +1461,6 @@
             ],
             
             "image": "data/heroes/img/niord.png",
-            "image_nice": "data/heroes/img/niord_image.png",
             "model": "niord",
             "origins": ["nordheim"]
         },
@@ -1529,7 +1501,6 @@
             ],
             
             "image": "data/heroes/img/shentu.png",
-            "image_nice": "data/heroes/img/shentu_image.png",
             "model": "shentu",
             "origins": ["khitai"]
         },
@@ -1571,7 +1542,6 @@
             ],
             
             "image": "data/heroes/img/ikhmet.png",
-            "image_nice": "data/heroes/img/ikhmet_image.png",
             "model": "ikhmet",
             "origins": ["stygia"]
         }
