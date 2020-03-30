@@ -516,10 +516,10 @@ var ConanRules = {
         {
             for (var i=0; i < heroes.length; i++)
             {
-                if (i != 0) heS += ",";
+                if (i != 0) heS += ", ";
                 heS += " ";
                 
-                heS += EncyclopediaHeroes._linkToHero(heroes[0].id);
+                heS += EncyclopediaHeroes._linkToHero(heroes[i].id);
             }
         }
         

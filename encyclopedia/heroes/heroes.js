@@ -28,7 +28,7 @@ var EncyclopediaHeroes = {
                 },
                 filter: function(item, value)
                 {
-                    return ConanRules._deemphasize(item.name[Language]).indexOf(ConanRules._deemphasize(value)) != -1;
+                    return ConanRules._deemphasize(item.name[Language] + (item.subname ? " " + item.subname[Language] : "")).indexOf(ConanRules._deemphasize(value)) != -1;
                 }
             },
             
@@ -206,7 +206,13 @@ var EncyclopediaHeroes = {
         
         var heroes = "";
         
-        Encyclopedia.heroes.list.sort(function(s1, s2) { return s1.name[Language].toLowerCase().localeCompare(s2.name[Language].toLowerCase()); })
+        Encyclopedia.heroes.list.sort(function(s1, s2) {
+            var c = s1.name[Language].toLowerCase().localeCompare(s2.name[Language].toLowerCase());
+            if (c == 0)
+                return (s1.subname ? s1.subname[Language] : "").localeCompare(s2.subname ? s2.subname[Language] : "");
+            else
+                return c; 
+        });
         
         var heroList = Encyclopedia.heroes.list.filter(EncyclopediaHeroes._filter());
         for (var i in heroList)
@@ -227,6 +233,7 @@ var EncyclopediaHeroes = {
         return {
             id: hero.id + "-" + Math.random(),
             name: hero.name[Language],
+            subname: hero.subname ? hero.subname[Language] : "",
             
             image: hero.image ? hero.image + "?version=" + Version : null,
             imageEffect: false,
@@ -322,7 +329,7 @@ var EncyclopediaHeroes = {
                     + "</div>";
         }
          
-        Nav.dialog(sheet.name[Language] || "",
+        Nav.dialog((sheet.name[Language] + (sheet.subname ? " " + sheet.subname[Language] : "")) || "",
             "<div class='herodetails'>" 
                 + "<div class='from'>" + EncyclopediaHeroes._i18n[Language].from + " "
                     + originString
@@ -347,6 +354,7 @@ var EncyclopediaHeroes = {
     },
         
     _linkToHero: function(id) {
-        return "<a href='javascript:void(0)' onclick='Nav.closeDialog(); EncyclopediaHeroes.openSheet(\"" + id + "\")'>" + EncyclopediaHeroes._findHeroById(id).name[Language] + "</a>";
+        var hero = EncyclopediaHeroes._findHeroById(id);
+        return "<a href='javascript:void(0)' onclick='Nav.closeDialog(); EncyclopediaHeroes.openSheet(\"" + id + "\")'>" + hero.name[Language] + (hero.subname ? " " + hero.subname[Language] : "") + "</a>";
     }
 };

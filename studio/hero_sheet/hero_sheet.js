@@ -53,7 +53,7 @@ var HeroSheet = {
 
         if (sheet.name)
         {
-            code += "<div class=\"name\">" + sheet.name + "</div>";
+            code += "<div class=\"name\">" + sheet.name + (sheet.subname ? "<span>" + sheet.subname + "</span>" : " ") + "</div>";
         }
         if (sheet.gem)
         {

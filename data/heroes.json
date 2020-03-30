@@ -27,13 +27,13 @@
             "ranged": { "dice": "yellow", "exertion": 3 },
             "defense": { "dice": "yellow" },
             "movement": { "base": 2, "exertion": 4 },
-            "manipulation": { "dice": "orange", "exertion": 3 },
+            "manipulation": { "dice": "orange", "exertion": 5 },
             
             "skills": [
                 { "id": "swimming", "exertion": 6 },
                 { "id": "leap", "exertion": 8 },
-                { "id": "support" },
                 { "id": "leadership" },
+                { "id": "support" },
                 { "id": "attack_from_beyond" }
             ],
              
@@ -171,10 +171,10 @@
         },
     
         {
-            "id": "amara-the-lion",
+            "id": "amra-the-lion",
             "name": {
-                "fr": "Amara The Lion",
-                "en": "Amara The Lion"
+                "fr": "Amra Le Lion",
+                "en": "Amra The Lion"
             },
             "quote": {
                 "text": {
@@ -207,9 +207,9 @@
                 { "id": "counterattack" }
             ],
             
-            "image": "data/heroes/img/amara-the-lion.png",
-            "image_nice": "data/heroes/img/amara-the-lion_image.png",
-            "model": "amara-the-lion",
+            "image": "data/heroes/img/amra-the-lion.png",
+            "image_nice": "data/heroes/img/amra-the-lion_image.png",
+            "model": "amra-the-lion",
             "origins": ["king"]
         },
     
@@ -430,8 +430,12 @@
         {
             "id": "conan-general",
             "name": {
-                "fr": "Conan - General",
-                "en": "Conan - General"
+                "fr": "Conan",
+                "en": "Conan"
+            },
+            "subname": {
+                "fr": "Le Géneral",
+                "en": "The General"
             },
             "quote": {
                 "text": {
@@ -473,8 +477,12 @@
         {
             "id": "conan-mercenary",
             "name": {
-                "fr": "Conan - Mercenary",
-                "en": "Conan - Mercenary"
+                "fr": "Conan",
+                "en": "Conan"
+            },
+            "subname": {
+                "fr": "Mercenaire",
+                "en": "Mercenary"
             },
             "quote": {
                 "text": {
@@ -516,8 +524,12 @@
         {
             "id": "conan-wanderer",
             "name": {
-                "fr": "Conan - Wanderer",
-                "en": "Conan - Wanderer"
+                "fr": "Conan",
+                "en": "Conan"
+            },
+            "subname": {
+                "fr": "Le Vagabon",
+                "en": "The Wanderer"
             },
             "quote": {
                 "text": {
@@ -559,8 +571,12 @@
         {
             "id": "conan-warlord",
             "name": {
-                "fr": "Conan - Warlord",
-                "en": "Conan - Warlord"
+                "fr": "Conan",
+                "en": "Conan"
+            },
+            "subname": {
+                "fr": "Seigneur de Guerre",
+                "en": "Warlord"
             },
             "quote": {
                 "text": {
@@ -773,8 +789,12 @@
         {
             "id": "savage-belit",
             "name": {
-                "fr": "Savage Bêlit",
+                "fr": "Bêlit",
                 "en": "Savage Bêlit"
+            },
+            "subname": {
+                "fr": "La Tigresse",
+                "en": ""
             },
             "quote": {
                 "text": {
@@ -960,7 +980,7 @@
             },
             
             "gems": 14,
-            "encumbrance": [11, 10, 12],
+            "encumbrance": [14, 10, 12],
             
             "melee": { "dice": "redreroll", "exertion": 4 },
             "ranged": { "dice": "yellow", "exertion": 3 },
@@ -1155,8 +1175,12 @@
         {
             "id": "belit-the-princess",
             "name": {
-                "fr": "Bêlit - The Princess",
-                "en": "Bêlit - The Princess"
+                "fr": "Bêlit",
+                "en": "Bêlit"
+            },
+            "subname": {
+                "fr": "La Princesse",
+                "en": "The Princess"
             },
             "quote": {
                 "text": {
@@ -1179,7 +1203,7 @@
             "ranged": { "dice": "yellow", "exertion": 4 },
             "defense": { "dice": "yellow" },
             "movement": { "base": "2", "exertion": 4 },
-            "manipulation": { "dice": "orange", "exertion": 3 },
+            "manipulation": { "dice": "orange", "exertion": 5 },
             
             "skills": [
                 { "id": "swimming", "exertion": 6 },
@@ -1201,6 +1225,10 @@
             "name": {
                 "fr": "King Conan",
                 "en": "King Conan"
+            },
+            "name": {
+                "fr": "Le Roi",
+                "en": ""
             },
             "quote": {
                 "text": {
@@ -1242,8 +1270,12 @@
         {
             "id": "belit-queen-of-the-black-coast",
             "name": {
-                "fr": "Bêlit - Queen of the Black Coast",
-                "en": "Bêlit - Queen of the Black Coast"
+                "fr": "Bêlit",
+                "en": "Bêlit"
+            },
+            "subname": {
+                "fr": "Reine de la Côte Noire",
+                "en": "Queen of the Black Coast"
             },
             "quote": {
                 "text": {
@@ -1259,7 +1291,7 @@
                 }
             },
             
-            "gems": 10,
+            "gems": 9,
             "encumbrance": [9, 7, 9],
             
             "melee": { "dice": "orange", "exertion": 4 },
@@ -1285,8 +1317,12 @@
         {
             "id": "conan-the-thief",
             "name": {
-                "fr": "Conan - The Thief",
-                "en": "Conan - The Thief"
+                "fr": "Conan",
+                "en": "Conan"
+            },
+            "subname": {
+                "fr": "Le Voleur",
+                "en": "The Thief"
             },
             "quote": {
                 "text": {
@@ -1302,7 +1338,7 @@
                 }
             },
             
-            "gems": 10,
+            "gems": 11,
             "encumbrance": [12, 8, 10],
             
             "melee": { "dice": "red", "exertion": 6 },
@@ -1351,7 +1387,7 @@
             "melee": { "dice": "yellow", "exertion": 4 },
             "ranged": { "dice": "yellow", "exertion": 4 },
             "defense": { "dice": "yellow" },
-            "movement": { "base": "2", "exertion": 3 },
+            "movement": { "base": "3", "exertion": 2 },
             "manipulation": { "dice": "orange", "exertion": 4 },
             
             "skills": [
@@ -1371,8 +1407,12 @@
         {
             "id": "valeria-warrior",
             "name": {
-                "fr": "Valeria - Warrior",
-                "en": "Valeria - Warrior"
+                "fr": "Valeria",
+                "en": "Valeria"
+            },
+            "subname": {
+                "fr": "La Guerrière",
+                "en": "Warrior"
             },
             "quote": {
                 "text": {
