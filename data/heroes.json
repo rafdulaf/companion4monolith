@@ -52,15 +52,15 @@
             },
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "Arus vit un homme jeune, grand et puissamment bâti, nu à l'exception d'un pagne et de sandales lacées haut sur les chevilles. Sa peau était tannée comme s'il venait des régions désertiques du globe, et Arus se sentit mal à l'aise en voyant ses épaules larges, son torse massif et ses bras puissants. Un simple coup d'oeil sur ce visage renfrogné au front large lui suffit pour comprendre qu'il n'avait pas affaire à un Némédien. Sous une tignasse de cheveux noirs ébouriffés, deux yeux bleus menaçants couvaient, prêts à s'embraser. Une longue épée dans son fourreau de cuir pendait à son ceinturon.",
+                    "en": "Arus saw a tall powerfully built youth, naked but for a loincloth, and sandals strapped high about his ankles. His skin was burned brown as by the suns of the wastelands, and Arus glanced nervously at the broad shoulders, massive chest and heavy arms. A single look at the moody, broad-browed features told the watchman that the man was no Nemedian. From under a mop of unruly black hair smoldered a pair of dangerous blue eyes. A long sword hung in a leather scabbard at his girdle."
                 },
                 "origin": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "Le Dieu dans l'Urne",
+                    "en": "The God in the Bowl"
                 },
                 "author": {
-                    "name": ""
+                    "name": "Robert E. Howard"
                 }
             },
             
@@ -82,6 +82,8 @@
             ],
             
             "image": "data/heroes/img/conan.png",
+            "image_zoom": "130",
+            "image_location": { "x": "0", "y": "44" },
             "model": "conan",
             "origins": ["corebox", "stretchgoal", "king"]
         },
@@ -176,15 +178,15 @@
             },
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "L'image flotta tout d'abord de manière indistincte puis prit soudain une netteté époustouflante: un homme de grande taille, aux épaules larges et puissantes, à la poitrine robuste, avec un cou de taureau et des membres épais et musclés. Il était vêtu de soie et de velours ; les lions royaux d'Aquilonie étaient brodés en fil d'or sur son justaucorps, et la couronne d'Aquilonie brillait sur ses longs cheveux noirs, coupés au carré. Pourtant, il semblait porter la grande épée qui pendait à son côté plus naturellement que son accoutrement royal. Son front était bas et large, et ses yeux d'un bleu volcanique semblaient couver quelque feu intérieur. Son visage, sombre, balafré, presque sinistre, était celui d'un combattant, et ses vêtements de velours ne pouvaient dissimuler les lignes dures et dangereuses de ses membres.",
+                    "en": "It floated hazily, then leaped into startling clarity--a tall man, mightily shouldered and deep of chest, with a massive corded neck and heavily muscled limbs. He was clad in silk and velvet, with the royal lions of Aquilonia worked in gold upon his rich jupon, and the crown of Aquilonia shone on his square-cut black mane; but the great sword at his side seemed more natural to him than the regal accouterments. His brow was low and broad, his eyes a volcanic blue that smoldered as if with some inner fire. His dark, scarred, almost sinister face was that of a fighting-man, and his velvet garments could not conceal the hard, dangerous lines of his limbs."
                 },
                 "origin": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "L'Heure du Dragon",
+                    "en": "The Hour of the Dragon"
                 },
                 "author": {
-                    "name": ""
+                    "name": "Robert E. Howard"
                 }
             },
             
@@ -206,6 +208,8 @@
             ],
             
             "image": "data/heroes/img/amra-the-lion.png",
+            "image_zoom": "119",
+            "image_location": { "x": "7", "y": "61" },
             "model": "amra-the-lion",
             "origins": ["king"]
         },
@@ -386,15 +390,15 @@
             },
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "C'était un jeune homme de taille moyenne et aux traits avenants ; ni toque, ni casque ne venait confiner sa tignasse de cheveux fauves en bataille. Ses vêtements étaient tout ce qu'il y a de plus normal pour la région : une tunique grossière resserrée à la taille par une ceinture, un court pantalon de cuir et des bottes souples en daim qui lui arrivaient juste au-dessous des genoux. La poignée d'une dague saillait du revers d'une de ses bottes. Une épée, courte et massive, et une besace en peau de daim pendaient à sa large ceinture de cuir. Bien qu'il ne soit pas très grand, l'homme était bien bâti et ses bras, que les courtes manches de sa tunique laissaient dénudés, étaient musclés et noueux.",
+                    "en": "He was a young man of medium height, with an open countenance and a mop of tousled tawny hair unconfined by cap or helmet. His garb was common enough for that country – a coarse tunic, belted at the waist, short leather breeches beneath, and soft buckskin boots that came short of the knee. A knife-hilt jutted from one boot-top. The broad leather belt supported a short, heavy sword and a buckskin pouch. There was no perturbation in the wide eyes that scanned the green walls which fringed the trail. Though not tall, he was well built, and the arms that the short wide sleeves of the tunic left bare were thick with corded muscle."
                 },
                 "origin": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "Au-delà de la rivière Noire",
+                    "en": "Beyond the Black River"
                 },
                 "author": {
-                    "name": ""
+                    "name": "Robert E. Howard"
                 }
             },
             
@@ -417,6 +421,8 @@
             ],
             
             "image": "data/heroes/img/balthus.png",
+            "image_zoom": "136",
+            "image_location": { "x": "2", "y": "51" },
             "model": "balthus",
             "origins": ["stretchgoal", "king"]
         },
@@ -814,6 +820,8 @@
             ],
             
             "image": "data/heroes/img/savage-belit.png",
+            "image_zoom": "135",
+            "image_location": { "x": "-13", "y": "76" },
             "model": "savage-belit",
             "origins": ["stretchgoal", "king"]
         },
@@ -1068,20 +1076,20 @@
         {
             "id": "vanir-valkyrie",
             "name": {
-                "fr": "Vanir Valkyrie",
+                "fr": "Valkyrie Vanir",
                 "en": "Vanir Valkyrie"
             },
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "À quoi ressemblent ces gens du Nord ? demanda Prospero. - Ils sont grands et ont les yeux bleus ; leur sang et leur langue sont identiques, mais les Aesirs ont les cheveux blonds et les Vanirs, les cheveux roux. Leur principal dieu est Ymir, le géant du gel ; ils ne sont pas dirigés par un grand roi, mais chaque tribu a son propre suzerain. Ils sont sauvages, capricieux et féroces. Ils se battent toute la journée, et la nuit ils boivent de l'ale et mugissent leurs chants sauvages.",
+                    "en": "What manner of men are these northern folk?” asked Prospero. “Tall and fair and blue-eyed. Their god is Ymir, the frost-giant, and each tribe has its own king. They are wayward and fierce. They fight all day and drink ale and roar their wild songs all night."
                 },
                 "origin": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "Le Phénix sur l’Epée",
+                    "en": "The Phoenix on the Sword"
                 },
                 "author": {
-                    "name": ""
+                    "name": "Robert E. Howard"
                 }
             },
             
@@ -1103,6 +1111,8 @@
             ],
             
             "image": "data/heroes/img/vanir-valkyrie.png",
+            "image_zoom": "121",
+            "image_location": { "x": "5.5", "y": "46" },
             "model": "vanir-valkyrie",
             "origins": ["valvan"]
         },
@@ -1110,7 +1120,7 @@
         {
             "id": "yogah-of-yag",
             "name": {
-                "fr": "Yogah of Yag",
+                "fr": "Yogah de Yag",
                 "en": "Yogah of Yag"
             },
             "quote": {

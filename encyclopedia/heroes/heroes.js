@@ -317,7 +317,10 @@ var EncyclopediaHeroes = {
         var superdetails = "";
         superdetails += "<div class='superdetails'>";
         superdetails += "<img src=\"" + sheet.image + "?version=" + Version + "\"/>";
-        superdetails += "<div class='text'>" + sheet.quote.text[Language] + "<br/>" + sheet.quote.author.name + " - " + sheet.quote.origin[Language] + "</div>";
+        if (sheet.quote)
+        {
+            superdetails += "<div class='text'>" + sheet.quote.text[Language] + "<br/>" + sheet.quote.author.name + " - " + sheet.quote.origin[Language] + "</div>";
+        }
         superdetails += "</div>";
         
         var model = "";

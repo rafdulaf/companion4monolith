@@ -31,7 +31,7 @@
         {
             "id": "amra-the-lion",
             "images": ["data/models/img/amra-the-lion_1.jpg", "data/models/img/amra-the-lion_2.jpg"],
-            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "paint": { "name": "gabzeta", "link": "https://the-overlord.com/index.php?/profile/232-gabzeta/"},
             "origins": ["king"]
         },
     
@@ -66,7 +66,7 @@
         {
             "id": "balthus",
             "images": ["data/models/img/balthus_1.jpg", "data/models/img/balthus_2.jpg"],
-            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "paint": { "name": "gabzeta", "link": "https://the-overlord.com/index.php?/profile/232-gabzeta/"},
             "origins": ["stretchgoal", "king"]
         },
     
@@ -129,7 +129,7 @@
         {
             "id": "savage-belit",
             "images": ["data/models/img/savage-belit_1.jpg", "data/models/img/savage-belit_2.jpg"],
-            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "paint": { "name": "gabzeta", "link": "https://the-overlord.com/index.php?/profile/232-gabzeta/"},
             "origins": ["stretchgoal", "king"]
         },
     
@@ -178,7 +178,7 @@
         {
             "id": "vanir-valkyrie",
             "images": ["data/models/img/vanir-valkyrie_1.jpg", "data/models/img/vanir-valkyrie_2.jpg"],
-            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "paint": null,
             "origins": ["valvan"]
         },
     

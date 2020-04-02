@@ -341,7 +341,7 @@ var EncyclopediaModels = {
                     + originString
                 + "</div>"
                 + heroes
-                + "<div class='painter'>" + EncyclopediaModels._i18n[Language].paintedBy + " <a target='_blank' href='" + model.paint.link + "'>" + model.paint.name + "</a></div>"
+                + (model.paint ? ("<div class='painter'>" + EncyclopediaModels._i18n[Language].paintedBy + " <a target='_blank' href='" + model.paint.link + "'>" + model.paint.name + "</a></div>") : "")
                 + photos
             + "</div>",
             null,
