@@ -73,7 +73,7 @@
         {
             "id": "conan-general",
             "images": ["data/models/img/conan-general_1.jpg", "data/models/img/conan-general_2.jpg"],
-            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "paint": { "name": "Codicier Ignatius", "link": "https://www.blogger.com/profile/15313921985581945781"},
             "origins": ["stretchgoal", "king"]
         },
     
@@ -142,8 +142,8 @@
     
         {
             "id": "constantius",
-            "images": ["data/models/img/constantius_1.jpg", "data/models/img/constantius_2.jpg"],
-            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "images": ["data/models/img/constantius_1.jpg"],
+            "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "origins": ["stretchgoal", "king"]
         },
     
@@ -191,15 +191,15 @@
     
         {
             "id": "belit-the-princess",
-            "images": ["data/models/img/belit-the-princess_1.jpg", "data/models/img/belit-the-princess_2.jpg"],
-            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "images": ["data/models/img/belit-the-princess_1.jpg"],
+            "paint": null,
             "origins": ["xcbox"]
         },
     
         {
             "id": "king-conan",
-            "images": ["data/models/img/king-conan_1.jpg", "data/models/img/king-conan_2.jpg"],
-            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "images": ["data/models/img/king-conan_1.jpg"],
+            "paint": null,
             "origins": ["xcbox"]
         },
     

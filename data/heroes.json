@@ -3,8 +3,8 @@
         {
             "id": "belit",
             "name": {
-                "fr": "Bêlit",
-                "en": "Bêlit"
+                "fr": "Bêlit",
+                "en": "Beêlit"
             }, 
             "quote": {
                 "text": {
@@ -439,15 +439,15 @@
             },
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "Sur son ordre, ils apportèrent un équipement complet pour remplacer la cotte de mailles de Conan : gorgerin, solerets, épaulières, cuissards, jambières, cuirasse et casque à visière. Lorsque Yasmela tira de nouveau les rideaux, un Conan entièrement revêtu d'acier luisant apparut à son auditoire. Avec l'armure à plaques, la visière relevée et ses traits taciturnes ombragés par les plumes noires ondoyant au-dessus de son casque, le Cimmérien donnait une telle impression de force et de résolution farouche que même Thespides en convint à contrecoeur. Amalric étouffa une plaisanterie.\n- Par Mitra, dit-il lentement, jamais je ne me serais attendu à te voir porter une armure, mais tu es loin d'en être indigne. Par les os de mes doigts, Conan, j'ai vu des rois qui portaient la leur moins royalement que toi.",
+                    "en": "At her command they brought harness to replace Conan's chain-mail – gorget, sollerets, cuirass, pauldrons, jambes, cuisses and sallet. When Yasmela again drew the curtains, a Conan in burnished steel stood before his audience. Clad in the platearmor, vizor lifted and dark face shadowed by the black plumes that nodded above his helmet, there was a grim impressiveness about him that even Thespides grudgingly noted. A jest died suddenly on Amalric's lips.\n\"By Mitra,\" said he slowly, \"I never expected to see you cased in coat-armor, but you do not put it to shame. By my fingerbones, Conan, I have seen kings who wore their harness less regally than you!\""
                 },
                 "origin": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "Le Colosse Noir",
+                    "en": "Black Colossus"
                 },
                 "author": {
-                    "name": ""
+                    "name": "Robert E. Howard"
                 }
             },
             
@@ -469,6 +469,8 @@
             ],
             
             "image": "data/heroes/img/conan-general.png",
+            "image_zoom": "115",
+            "image_location": { "x": "-2", "y": "53" },
             "model": "conan-general",
             "origins": ["stretchgoal", "king"]
         },
@@ -485,15 +487,15 @@
             },
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "L'étranger se tenait adossé au mât, les yeux réduits à des fentes, sur le qui-vive, et l'épée à la main. Le marin l'étudia posément, veillant à ne faire aucun mouvement vers le long couteau passé à sa ceinture. Il avait devant lui un homme de grande taille, puissamment charpenté, portant un haubert aux mailles d'acier noires, des jambières brunies et un casque de métal aux reflets bleus d'où saillaient deux cornes de taureau luisantes. De ses épaules bardées de fer tombait une cape écarlate qui se gonflait au vent du large. Un large ceinturon de chagrin à boucle en or retenait le fourreau de son épée à large lame. Sous le casque à cornes, sa crinière noire contrastait avec ses yeux bleus volcaniques.",
+                    "en": "The stranger stood there with his back to the mast, eyes narrowed alertly, sword ready. The shipman eyed him steadily, careful not to make any move toward the long knife in his belt. He saw a tall powerfully built figure in a black scalemail hauberk, burnished greaves and a blue-steel helmet from which jutted bull's horns highly polished. From the mailed shoulders fell the scarlet cloak, blowing in the sea-wind. A broad shagreen belt with a golden buckle held the scabbard of the broadsword he bore. Under the horned helmet a square-cut black mane contrasted with smoldering blue eyes"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "La Reine de la Côte Noire",
+                    "en": "Queen of the Black Coast"
                 },
                 "author": {
-                    "name": ""
+                    "name": "Robert E. Howard"
                 }
             },
             
@@ -515,6 +517,8 @@
             ],
             
             "image": "data/heroes/img/conan-mercenary.png",
+            "image_zoom": "143",
+            "image_location": { "x": "-6", "y": "70" },
             "model": "conan-mercenary",
             "origins": ["stretchgoal", "king"]
         },
@@ -531,15 +535,15 @@
             },
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "Il vit alors un jeune homme robuste qui se tenait à ses côtés. L'homme semblait tout autant déplacé dans ce bouge qu'un loup gris parmi des rats de gouttière malingres. Sa tunique bon marché ne pouvait dissimuler les lignes dures et effilées de sa puissante charpente, ses épaules massives et larges, son torse puissant, sa taille élancée et ses bras noueux. Sa peau était tannée par le soleil des déserts, ses yeux étaient bleus et incandescents, et une tignasse de cheveux noirs ébouriffés surmontait son front large. Une épée dans un fourreau de cuir usagé pendait de sa ceinture.",
+                    "en": "He saw a tall, strongly made youth standing beside him. This person was as much out of place in that den as a gray wolf among mangy rats of the gutters. His cheap tunic could not conceal the hard, rangy lines of his powerful frame, the broad heavy shoulders, the massive chest, lean waist and heavy arms. His skin was brown from outland suns, his eyes blue and smoldering; a shock of tousled black hair crowned his broad forehead. From his girdle hung a sword in a worn leather scabbard."
                 },
                 "origin": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "La Tour de l'Elephant",
+                    "en": "The Tower of the Elephant"
                 },
                 "author": {
-                    "name": ""
+                    "name": "Robert E. Howard"
                 }
             },
             
@@ -561,6 +565,8 @@
             ],
             
             "image": "data/heroes/img/conan-wanderer.png",
+            "image_zoom": "100",
+            "image_location": { "x": "-9", "y": "56" },
             "model": "conan-wanderer",
             "origins": ["stretchgoal", "king"]
         },
@@ -577,15 +583,15 @@
             },
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "Alors qu'il passait près d'une torchère, Yasmela le vit avec netteté: c'était un homme de grande taille, portant le haubert des mercenaires. {...} Il se tint face à elle, sa main posée sur la longue poignée qui dépassait de sous le manteau écarlate flottant négligemment de ses épaules bardées de fer. La lueur de la torchère brillait sombrement sur l'acier bleuté et poli de ses jambières et de son casque. Une flamme encore plus funeste étincelait au fond de ses yeux bleus. {...} Il avait l'uniforme d'un capitaine des mercenaires et ces troupes aguerries comptaient des hommes de nombreux pays, des barbares aussi bien que des étrangers venus de royaumes civilisés. Son air de loup dénotait le barbare.",
+                    "en": "He stood facing her, his hand on the long hilt that jutted forward from beneath the scarlet cloak which flowed carelessly from his mailed shoulders. The torchlight glinted dully on the polished blue steel of his greaves and basinet. A more baleful fire glittered bluely in his eyes. At first glance she saw he was no Kothian; when he spoke she knew he was no Hyborian. He was clad like a captain of the mercenaries, and in that desperate command there were men of many lands, barbarians as well as civilized foreigners. There was a wolfishness about this warrior that marked the barbarian. The eyes of no civilized man, however wild or criminal, ever blazed with such a fire. Wine scented his breath, but he neither staggered nor stammered."
                 },
                 "origin": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "Le Colosse Noir",
+                    "en": "Black Colossus"
                 },
                 "author": {
-                    "name": ""
+                    "name": "Robert E. Howard"
                 }
             },
             
@@ -607,6 +613,8 @@
             ],
             
             "image": "data/heroes/img/conan-warlord.png",
+            "image_zoom": "117",
+            "image_location": { "x": "-1", "y": "65" },
             "model": "conan-warlord",
             "origins": ["stretchgoal", "king"]
         },
@@ -876,15 +884,15 @@
             },
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "Constantius, que l'on surnommait \"le Faucon\", était un homme de grande taille, aux épaules larges et à la taille fine, aussi souple et résistant qu'une lame d'acier flexible. C'était un bel homme dans son genre, avec ses traits de rapace impitoyable. Son visage était tanné par le soleil et ses cheveux, implantés très en arrière de son front haut et étroit, étaient d'un noir corbeau. Ses yeux sombres étaient pénétrants et vifs, et sa fine moustache noire ne parvenait pas à adoucir l'expression dure de ses lèvres fines. Ses bottes en cuir de Kordava, son pantalon et son pourpoint, de soie noire ordinaire, étaient ternis par l'usure liée à la vie dans un campement et par les taches de rouille dues à son armure.",
+                    "en": "Constantius, whom men called Falcon, was tall, broad-shouldered, slim-waisted, lithe and strong as pliant steel. He was handsome in an aquiline, ruthless way. His face was burnt dark by the sun, and his hair, which grew far back from his high, narrow forehead, was black as a raven. His dark eyes were penetrating and alert, the hardness of his thin lips not softened by his thin black mustache. His boots were of Kordavan leather, his hose and doublet of plain, dark silk, tarnished with the wear of the camps and the stains of armor rust."
                 },
                 "origin": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "Une Sorcière viendra au monde",
+                    "en": "A Witch shall be born"
                 },
                 "author": {
-                    "name": ""
+                    "name": "Robert E. Howard"
                 }
             },
             
@@ -905,6 +913,8 @@
             ],
             
             "image": "data/heroes/img/constantius.png",
+            "image_zoom": "143",
+            "image_location": { "x": "-8", "y": "72" },
             "model": "constantius",
             "origins": ["stretchgoal", "king"]
         },
@@ -957,15 +967,15 @@
             },
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "C'est Thak, répondit le prêtre tout en massant sa tempe. D'aucuns diraient que c'est un grand singe, mais il est presque aussi différent d'un singe qu'il l'est d'un être humain. Son peuple habite très loin à l'est, dans les montagnes qui bordent les frontières orientales de Zamora.\nMurilo regarda la créature à travers le miroir; elle était assise devant la porte close, attendant avec une patience monstrueuse. Il frissonna à la vue de ces grandes mains noires, recouvertes de poils qui ressemblaient à une sorte de pelage. Son corps était massif, large et voûté. Ses épaules, anormalement larges, avaient déchiré la robe écarlate et, en les apercevant, Murilo vit qu'elles étaient recouvertes du même pelage épais et noir. Le visage qui saillait de sous le capuchon rouge était d'une bestialité sans nom, et pourtant Murilo réalisa que Nabonidus disait la vérité quand il disait que Thak n'était pas vraiment une bête sauvage. Il y avait quelque chose au fond de ces yeux rouge sombre, dans la posture maladroite de la créature, quelque chose dans son apparence générale qui la différenciait du règne animal. Ce corps monstrueux abritait un cerveau et une âme qui commençaient tout juste à s'épanouir dans une humanité encore vague.",
+                    "en": "“That is Thak,” said the priest. “Some would call him an ape, but he is almost as different from a real ape as he is different from a real man. His people dwell far to the east, in the mountains that fringe the eastern frontiers of Zamora.”\nMurilo shuddered at the sight of the great black hands, thickly grown with hair that was almost fur-like. The body was thick, broad and stooped. The unnaturally wide shoulders had burst the scarlet gown, and on these shoulders Murilo noted the same thick growth of black hair. The face peering from the scarlet hood was utterly bestial, and yet Murilo realized that Nabonidus spoke truth when he said that Thak was not wholly a beast. There was something in the red murky eyes, something in the creature’s clumsy posture, something in the whole appearance of the thing that set it apart from the truly animal. That monstrous body housed a brain and soul that were just budding awfully into something vaguely human. Murilo stood aghast as he recognized a faint and hideous kinship between his kind and that squatting monstrosity, and he was nauseated by a fleeting realization of the abysses of bellowing bestiality up through which humanity had painfully toiled. "
                 },
                 "origin": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "La Maison aux trois bandits",
+                    "en": "Rogues in the House"
                 },
                 "author": {
-                    "name": ""
+                    "name": "Robert E. Howard"
                 }
             },
             
@@ -986,6 +996,8 @@
             ],
             
             "image": "data/heroes/img/thak.png",
+            "image_zoom": "139",
+            "image_location": { "x": "-5", "y": "49" },
             "model": "thak",
             "origins": ["stretchgoal", "king"]
         },
@@ -1040,15 +1052,15 @@
             },
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "Balthus aperçut une forme mince et de taille moyenne, presque entièrement recouverte de plumes d'autruches fixées sur un harnachement de cuir et de cuivre. Entre les plumes apparaissait un visage hideux et maléfique. Les plumes intriguèrent Balthus. Il savait qu'elles provenaient d'un endroit situé à un demi-monde au sud. Elles s'agitaient et bruissaient au rythme des bonds et des déhanchements du chaman, produisant un son hideux. {...} Mais le visage féroce qui se détachait de cette masse ondoyante donnait au spectacle une signification sinistre. Aucun homme ayant un tel visage ne pouvait paraître ridicule ou évoquer autre chose que la créature démoniaque qu'il était.",
+                    "en": "Balthus saw a lean figure of middle height, almost hidden in ostrich plumes set on a harness of leather and copper. From amidst the plumes peered a hideous and malevolent face. The plumes puzzled Balthus. They fluttered and rustled evilly as the shaman leaped and cavorted.\nWith fantastic bounds and prancings he entered the ring and whirled before his bound and silent captives. With another man it would have seemed ridiculous – a foolish savage prancing meaninglessly in a whirl of feathers. But that ferocious face glaring out from the billowing mass gave the scene a grim significance. No man with a face like that could seem ridiculous or like anything except the devil he was.\nSuddenly he froze to statuesque stillness; the plumes rippled once and sank about him. The howling warriors fell silent. Zogar Sag stood erect and motionless, and he seemed to increase in height – to grow and expand. Balthus experienced the illusion that the Pict was towering above him, staring contemptuously down from a great height."
                 },
                 "origin": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "Au-delà de la Rivière Noire",
+                    "en": "Beyond the Black River"
                 },
                 "author": {
-                    "name": ""
+                    "name": "Robert E. Howard"
                 }
             },
             
@@ -1069,6 +1081,8 @@
             ],
             
             "image": "data/heroes/img/zogar-sag.png",
+            "image_zoom": "135",
+            "image_location": { "x": "2", "y": "42" },
             "model": "zogar-sag",
             "origins": ["stretchgoal", "king"]
         },
@@ -1202,6 +1216,8 @@
             ],
             
             "image": "data/heroes/img/belit-the-princess.png",
+            "image_zoom": "113",
+            "image_location": { "x": "3", "y": "54" },
             "model": "belit-the-princess",
             "origins": ["xcbox"]
         },
@@ -1209,24 +1225,24 @@
         {
             "id": "king-conan",
             "name": {
-                "fr": "King Conan",
+                "fr": "Conan",
                 "en": "King Conan"
             },
-            "name": {
+            "subname": {
                 "fr": "Le Roi",
                 "en": ""
             },
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "L'image flotta tout d'abord de manière indistincte puis prit soudain une netteté époustouflante: un homme de grande taille, aux épaules larges et puissantes, à la poitrine robuste, avec un cou de taureau et des membres épais et musclés. Il était vêtu de soie et de velours ; les lions royaux d'Aquilonie étaient brodés en fil d'or sur son justaucorps, et la couronne d'Aquilonie brillait sur ses longs cheveux noirs, coupés au carré. Pourtant, il semblait porter la grande épée qui pendait à son côté plus naturellement que son accoutrement royal. Son front était bas et large, et ses yeux d'un bleu volcanique semblaient couver quelque feu intérieur. Son visage, sombre, balafré, presque sinistre, était celui d'un combattant, et ses vêtements de velours ne pouvaient dissimuler les lignes dures et dangereuses de ses membres.",
+                    "en": "It floated hazily, then leaped into startling clarity--a tall man, mightily shouldered and deep of chest, with a massive corded neck and heavily muscled limbs. He was clad in silk and velvet, with the royal lions of Aquilonia worked in gold upon his rich jupon, and the crown of Aquilonia shone on his square-cut black mane; but the great sword at his side seemed more natural to him than the regal accouterments. His brow was low and broad, his eyes a volcanic blue that smoldered as if with some inner fire. His dark, scarred, almost sinister face was that of a fighting-man, and his velvet garments could not conceal the hard, dangerous lines of his limbs."
                 },
                 "origin": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "L'Heure du Dragon",
+                    "en": "The Hour of the Dragon"
                 },
                 "author": {
-                    "name": ""
+                    "name": "Robert E. Howard"
                 }
             },
             
@@ -1248,6 +1264,8 @@
             ],
             
             "image": "data/heroes/img/king-conan.png",
+            "image_zoom": "114",
+            "image_location": { "x": "3.5", "y": "63.5" },
             "model": "king-conan",
             "origins": ["xcbox"]
         },
@@ -1312,15 +1330,15 @@
             },
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "Olivia, levant les yeux du sol, aperçut ce qu'elle prit pour un sauvage ou un fou s'avancer vers Shah Amurath dans une attitude de menace mortelle. Il était puissamment bâti et nu, à l'exception d'un pagne lui ceignant les reins. Son corps était couvert de sang et de boue séchés. Sa crinière noire était souillée de vase et de sang coagulé ; il y avait des traînées de sang séché sur sa poitrine, ses membres et sur la longue épée qu'il serrait dans sa main droite. De sous les mèches de ses cheveux en broussaille, des yeux injectés flamboyaient, tels des charbons ardents aux reflets bleutés.",
+                    "en": "Olivia, staring up from the ground, saw what she took to be either a savage or a madman advancing on Shah Amurath in an attitude of deadly menace.\nHe was powerfully built, naked but for a girdled loincloth, which was stained with blood and crusted with dried mire. His black mane was matted with mud and clotted blood ; there were streaks of dried blood on his chest and limbs, dried blood on the long straight sword he gripped in his right hand. From under the tangle of his locks, bloodshot eyes glared like coals of blue fire. "
                 },
                 "origin": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "Chimères de Fers dans la Clarté Lunaire",
+                    "en": "Iron Shadows in The Moon"
                 },
                 "author": {
-                    "name": ""
+                    "name": "Robert E. Howard"
                 }
             },
             
@@ -1342,6 +1360,8 @@
             ],
             
             "image": "data/heroes/img/conan-the-thief.png",
+            "image_zoom": "112",
+            "image_location": { "x": "3", "y": "58" },
             "model": "conan-the-thief",
             "origins": ["bbox"]
         },
