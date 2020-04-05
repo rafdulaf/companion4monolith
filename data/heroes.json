@@ -96,15 +96,15 @@
             },
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "Une fois la porte fermée, Conan ne vit qu'un seul homme en face de lui : une mince silhouette dissimulée sous sa cape noire et sa capuche. L'homme rejeta cette dernière en arrière, révélant un visage pâle et ovale, aux traits sereins et bien dessinés. {...} N'y a-t-il aucun sorcier au monde dont la magie pourrait rivaliser avec celle de Xaltotun ? demanda-t-il enfin. Hadrathus secoua négativement la tête. -Si un tel homme existait, nous autres, prêtres d'Asura, en aurions entendu parler. On dit que notre religion n'est qu'une survivance de l'antique culte stygien du serpent. Ceci est un mensonge. Nos ancêtres venaient de Vendhya, par-delà la mer de Vilayet et les montagnes himéliennes bleutées. Nous sommes des fils de l'Orient, pas du Sud. Nous connaissons tous les sorciers de l'Orient, et ils sont plus puissants que ceux de l'Occident. Leur pouvoir serait aussi impuissant qu'un fétu de paille face au vent, confronté à la noire puissance de Xaltotun.",
+                    "en": "Hadrathus was a slim figure, masked in a black cloak with a hood. This the man threw back, disclosing a pale oval of a face, with calm, delicately chiseled features.\n“The followers of Asura have secret channels of knowledge.”\n“Men say the cult of Asura is a survival of the ancient Stygian serpent-worship. That is a lie. Our ancestors came from Vendhya, beyond the Sea of Vilayet and the blue Himelian mountains. We are sons of the East, not the South, and we have knowledge of all the wizards of the East, who are greater than the wizards of the West. And not one of them but would be a straw in the wind before the black might of Xaltotun.”\nHadrathus was as calm and self-possessed as ever, picking his way between rows of dead men and horses."
                 },
                 "origin": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "L'heure du Dragon",
+                    "en": "The Hour of the Dragon"
                 },
                 "author": {
-                    "name": ""
+                    "name": "Robert E. Howard"
                 }
             },
             
@@ -124,6 +124,8 @@
             ],
             
             "image": "data/heroes/img/hadrathus.png",
+            "image_zoom": "131",
+            "image_location": { "x": "-1", "y": "49" },
             "model": "hadrathus",
             "origins": ["corebox", "stretchgoal", "king"]
         },
@@ -264,15 +266,15 @@
             },
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "Elle était grande, avait une poitrine opulente, des membres longs et des épaules robustes. Toute sa silhouette témoignait d'une force peu commune, sans toutefois rien ôter de la grâce féminine qui se dégageait de son apparence. En dépit de son port et de ses vêtements, tout en elle respirait la féminité. Ses habits semblaient incongrus, étant donné le décor environnant. Elle ne portait pas une jupe, mais d'amples culottes de soie s'arrêtant à une largeur de main au-dessus des genoux, retenues par une large bande de soie enroulée autour de sa taille comme une ceinture. Ses bottes évasées en cuir souple lui arrivaient presque aux genoux et sa chemise de soie décolletée, aux manches et au col bouffants, complétaient son costume. Une épée droite à double tranchant pendait sur une de ses hanches gracieuses et une longue dague sur l'autre. Ses cheveux blonds et ébouriffés, coupés au carré à la hauteur des épaules, étaient retenus par un bandeau de satin écarlate.",
+                    "en": "She was tall, full-bosomed and large-limbed, with compact shoulders. Her whole figure reflected an unusual strength, without detracting from the femininity of her appearance. She was all woman, in spite of her bearing and her garments. Instead of a skirt she wore short, wide-legged silk breeches, which ceased a hand’s breadth short of her knees, and were upheld by a wide silken sash worn as a girdle. Flaring-topped boots of soft leather came almost to her knees, and a low-necked, wide-collared, wide-sleeved silk shirt completed her costume. There was the color of the sea in her wide eyes. And that was as it should have been, because this was Valeria of the Red Brotherhood, whose deeds are celebrated in song and ballad wherever seafarers gather.\n“Why won’t men let me live a man’s life?”\n“No living man could disarm Valeria of the Brotherhood with his bare hands.”"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "Les Clous Rouges",
+                    "en": "Red Nails"
                 },
                 "author": {
-                    "name": ""
+                    "name": "Robert E. Howard"
                 }
             },
             
@@ -292,6 +294,8 @@
             ],
             
             "image": "data/heroes/img/valeria.png",
+            "image_zoom": "128",
+            "image_location": { "x": "-7", "y": "71" },
             "model": "valeria",
             "origins": ["king"]
         },
@@ -304,15 +308,15 @@
             },
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "Le roi se tourna lorsque la vieille femme lui adressa la parole. Elle se tenait devant lui, droite et grande. Elle avait beau être vêtue de guenilles, ses traits, droits et aquilins, et ses yeux, noirs et perçants, n'étaient pas ceux d'une paysanne ordinaire. Elle appela le loup et celui-ci trotta jusqu'à elle, puis frotta son épaule gigantesque contre son genou, fixant ses grands yeux verts étincelants sur Conan.",
+                    "en": "The old woman stood straight and tall before him, and in spite of her ragged garb, her features, clear-cut and aquiline, and her keen black eyes, were not those of a common peasant woman. She called to the wolf and it trotted to her side like a great dog and rubbed its giant shoulder against her knee, while it gazed at Conan with great green lambent eyes. Absently she laid her hand upon its mighty neck, and so the two stood regarding the king of Aquilonia. He found their steady gaze disquieting, though there was no hostility in it.\n“Crom!” muttered Conan, staring at the old woman. “Are you a magician, too?”\n“I am Zelata,” she said. “The people of the valleys call me a witch.”"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "L'Heure du Dragon",
+                    "en": "The Hour of the Dragon"
                 },
                 "author": {
-                    "name": ""
+                    "name": "Robert E. Howard"
                 }
             },
             
@@ -335,6 +339,8 @@
             ],
             
             "image": "data/heroes/img/zelata.png",
+            "image_zoom": "110",
+            "image_location": { "x": "3", "y": "59" },
             "model": "zelata",
             "origins": ["king"]
         },
@@ -842,15 +848,15 @@
             },
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "Taurus était aussi grand que le Cimmérien, mais plus massif ; il avait beau être gras et bedonnant, chacun de ses mouvements trahissait un magnétisme dynamique et subtil, que l'on retrouvait dans ses yeux perçants, brillant de vitalité en dépit de la faible clarté des étoiles. Il était pieds nus et portait ce qui ressemblait à une corde mince et solide, repliée sur elle-même et nouée à intervalles réguliers.",
+                    "en": "Taurus was tall as the Cimmerian, and heavier; he was big-bellied and fat, but his every movement betokened a subtle dynamic magnetism, which was reflected in the keen eyes that glinted vitally, even in the starlight. He was barefooted and carried a coil of what looked like a thin, strong rope, knotted at regular intervals."
                 },
                 "origin": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "La Tour de l’Éléphant",
+                    "en": "The Tower of the Elephant"
                 },
                 "author": {
-                    "name": ""
+                    "name": "Robert E. Howard"
                 }
             },
             
@@ -872,6 +878,8 @@
             ],
             
             "image": "data/heroes/img/taurus.png",
+            "image_zoom": "166",
+            "image_location": { "x": "-6", "y": "56" },
             "model": "taurus",
             "origins": ["stretchgoal", "king"]
         },
@@ -1010,15 +1018,15 @@
             },
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "C'était un homme de grande taille, aussi grand que Conan, bien que moins puissamment bâti. Sous son casque d'acier, son visage était sombre, taciturne et rapace. C'est pourquoi certains l'appelaient« le Faucon». Sa cuirasse et ses vêtements étaient somptueux et richement décorés, comme il sied à un grand de Zingara. Sa main ne s'éloignait jamais de la garde de son épée.",
+                    "en": "He was a tall man, tall as Conan, though of leaner build. Framed in his steel morion his face was dark, saturnine and hawk-like, wherefore men called him the Hawk. His armor and garments were rich and ornate, after the fashion of a Zingaran grandee. His hand was never far from his sword-hilt.\nThere was little favor in the gaze he bent on Conan. Zaporavo toyed with his sword-hilt and scowled at his uninvited guest. Conan gave no hint of what his own thoughts might be.\n“You’ll work for your keep,” snarled the Hawk. “Get off the poop. And remember, the only law here is my will.”"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "Le Bassin de l’homme noir",
+                    "en": "The Pool of the Black One"
                 },
                 "author": {
-                    "name": ""
+                    "name": "Robert E. Howard"
                 }
             },
             
@@ -1040,6 +1048,8 @@
             ],
             
             "image": "data/heroes/img/zaporavo.png",
+            "image_zoom": "124",
+            "image_location": { "x": "3", "y": "60" },
             "model": "zaporavo",
             "origins": ["stretchgoal", "king"]
         },
@@ -1139,15 +1149,15 @@
             },
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "Des volutes de fumée et l'odeur exotique de l'encens s'exhalaient d'un brasier posé sur un trépied en or, et derrière celui-ci reposait une idole, assise sur une sorte de divan de marbre. Conan regarda celle-ci, pantois; son corps était celui d'un homme nu et de couleur verte, mais sa tête était digne d'un cauchemar démentiel. Bien trop large pour un corps humain, elle n'en avait aucun des attributs. Conan resta immobile, fixant du regard les grandes oreilles évasées, la trompe recourbée et, de chaque côté de celle-ci, les défenses blanches à l'extrémité desquelles étaient fichées deux boules dorées. Ses yeux étaient clos, comme si elle dormait.",
+                    "en": "Smoke and exotic scent of incense floated up from a brazier on a golden tripod, and behind it sat an idol on a sort of marble couch. Conan stared aghast; the image had the body of a man, naked, and green in color; but the head was one of nightmare and madness. Too large for the human body, it had no attributes of humanity. Conan stared at the wide flaring ears, the curling proboscis, on either side of which stood white tusks tipped with round golden balls. The eyes were closed, as if in sleep."
                 },
                 "origin": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "La Tour de l’Éléphant",
+                    "en": "The Tower of the Elephant"
                 },
                 "author": {
-                    "name": ""
+                    "name": "Robert E. Howard"
                 }
             },
             
@@ -1169,6 +1179,8 @@
             ],
             
             "image": "data/heroes/img/yogah-of-yag.png",
+            "image_zoom": "100",
+            "image_location": { "x": "0", "y": "47" },
             "model": "yogah-of-yag",
             "origins": ["yoy"]
         },
@@ -1374,15 +1386,15 @@
             },
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "Un long serpent de lumière courut soudain le long des rideaux et les bougies dans leurs candélabres dorés se rallumèrent inexplicablement. Taramis se recroquevilla sur sa couche de velours, repliant ses jambes souples sous elle, regardant de ses yeux écarquillés cette silhouette féline et moqueuse qui se tenait devant elle. C'était comme si elle contemplait une seconde Taramis, identique à elle-même dans chacun des contours de ses traits et de ses membres, mais habitée par une personnalité inconnue et maléfique. Le visage de cette inconnue reflétait l'exact opposé de tout ce que celui de la reine dégageait. La luxure et le mystère scintillaient au fond de ses yeux lumineux, la cruauté affleurait dans la courbe de ses lèvres rouges et pleines. Chaque mouvement de son corps souple était subtilement provocateur. Sa coiffure imitait celle de la reine, et elle avait aux pieds des sandales identiques à celles que portait d'ordinaire Taramis dans son boudoir. Sa tunique de soie, sans manches et décolletée, retenue à la taille par un lien tissé d'or, était l'exacte réplique du vêtement de nuit de la reine.",
+                    "en": "It was the sight of this face which froze the cry in Taramis’s throat. The features were her own! She might have been looking into a mirror which subtly altered her reflection, lending it a tigerish gleam of eye, a vindictive curl of lip.\n“Ishtar!” gasped Taramis. “I am bewitched!”\n“Bewitched? No, sweet sister!”\n“Sister? I have no sister.”\nSalome laughed fiercely, and slapped her bosom. Between her breasts shone a crescent, red as blood.\n“The mark of the witch!” cried Taramis, recoiling.\n“Aye! The curse of the kings of Khauran! They tell how the first queen of our line had traffic with a fiend of darkness and bore him a daughter who lives in foul legendry to this day. And thereafter in each century a girl baby was born with a scarlet half-moon between her breasts, that signified her destiny. ‘Every century a witch shall be born.’ So ran the ancient curse. And so it has come to pass.\n“Well, this world contains all I desire – power, and pomp, and glittering pageantry, handsome men and soft women for my paramours and my slaves. I have returned to take that to which I have as much right as you.”"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "Une Sorcière viendra au Monde",
+                    "en": "A Witch shall be Born"
                 },
                 "author": {
-                    "name": ""
+                    "name": "Robert E. Howard"
                 }
             },
             
@@ -1404,7 +1416,9 @@
             ],
             
             "image": "data/heroes/img/taramis.png",
-            "model": "taramis",
+            "image_zoom": "103",
+            "image_location": { "x": "8", "y": "55" },
+            "model": "taramis-salome",
             "origins": ["ppbox"]
         },
     
@@ -1420,15 +1434,15 @@
             },
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "Elle était grande, avait une poitrine opulente, des membres longs et des épaules robustes. Toute sa silhouette témoignait d'une force peu commune, sans toutefois rien ôter de la grâce féminine qui se dégageait de son apparence. En dépit de son port et de ses vêtements, tout en elle respirait la féminité. Ses habits semblaient incongrus, étant donné le décor environnant. Elle ne portait pas une jupe, mais d'amples culottes de soie s'arrêtant à une largeur de main au-dessus des genoux, retenues par une large bande de soie enroulée autour de sa taille comme une ceinture. Ses bottes évasées en cuir souple lui arrivaient presque aux genoux et sa chemise de soie décolletée, aux manches et au col bouffants, complétaient son costume. Une épée droite à double tranchant pendait sur une de ses hanches gracieuses et une longue dague sur l'autre. Ses cheveux blonds et ébouriffés, coupés au carré à la hauteur des épaules, étaient retenus par un bandeau de satin écarlate.",
+                    "en": "She was tall, full-bosomed and large-limbed, with compact shoulders. Her whole figure reflected an unusual strength, without detracting from the femininity of her appearance. She was all woman, in spite of her bearing and her garments. Instead of a skirt she wore short, wide-legged silk breeches, which ceased a hand’s breadth short of her knees, and were upheld by a wide silken sash worn as a girdle. Flaring-topped boots of soft leather came almost to her knees, and a low-necked, wide-collared, wide-sleeved silk shirt completed her costume. There was the color of the sea in her wide eyes. And that was as it should have been, because this was Valeria of the Red Brotherhood, whose deeds are celebrated in song and ballad wherever seafarers gather.\n“Why won’t men let me live a man’s life?”\n“No living man could disarm Valeria of the Brotherhood with his bare hands.”"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "Les Clous Rouges",
+                    "en": "Red Nails"
                 },
                 "author": {
-                    "name": ""
+                    "name": "Robert E. Howard"
                 }
             },
             
@@ -1449,6 +1463,8 @@
             ],
             
             "image": "data/heroes/img/valeria-warrior.png",
+            "image_zoom": "126",
+            "image_location": { "x": "7", "y": "69" },
             "model": "valeria-warrior",
             "origins": ["ppbox"]
         },
@@ -1572,6 +1588,8 @@
             ],
             
             "image": "data/heroes/img/ikhmet.png",
+            "image_zoom": "120",
+            "image_location": { "x": "4", "y": "62" },
             "model": "ikhmet",
             "origins": ["stygia"]
         }

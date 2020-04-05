@@ -9,7 +9,7 @@
 
     overflow: hidden;    
     font-family: "Motrg";
-    text-shadow: 0 0 #FFF;
+    text-shadow: 0 0 3px #FFF;
 }
 
 .printcards input[name=hero] { position: absolute; top:-5000px; }

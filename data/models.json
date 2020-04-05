@@ -51,7 +51,7 @@
     
         {
             "id": "zelata",
-            "images": ["data/models/img/zelata_1.jpg", "data/models/img/zelata_2.jpg"],
+           "images": ["data/models/img/zelata_1.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "origins": ["king"]
         },
@@ -164,7 +164,7 @@
         {
             "id": "zaporavo",
             "images": ["data/models/img/zaporavo_1.jpg", "data/models/img/zaporavo_2.jpg"],
-            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
             "origins": ["stretchgoal", "king"]
         },
     
@@ -184,8 +184,8 @@
     
         {
             "id": "yogah-of-yag",
-            "images": ["data/models/img/yogah-of-yag_1.jpg", "data/models/img/yogah-of-yag_2.jpg"],
-            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "images": ["data/models/img/yogah-of-yag_1.jpg"],
+            "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
             "origins": ["yoy"]
         },
     
@@ -218,16 +218,16 @@
         },
     
         {
-            "id": "taramis",
-            "images": ["data/models/img/taramis_1.jpg", "data/models/img/taramis_2.jpg"],
-            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "id": "taramis-salome",
+            "images": ["data/models/img/taramis-salome_1.jpg"],
+            "paint": null,
             "origins": ["ppbox"]
         },
     
         {
             "id": "valeria-warrior",
-            "images": ["data/models/img/valeria-warrior_1.jpg", "data/models/img/valeria-warrior_2.jpg"],
-            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "images": ["data/models/img/valeria-warrior_1.jpg"],
+            "paint": null,
             "origins": ["ppbox"]
         },
     
@@ -247,8 +247,8 @@
     
         {
             "id": "ikhmet",
-            "images": ["data/models/img/ikhmet_1.jpg", "data/models/img/ikhmet_2.jpg"],
-            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "images": ["data/models/img/ikhmet_1.jpg"],
+            "paint": null,
             "origins": ["stygia"]
         }
     ]
