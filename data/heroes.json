@@ -138,15 +138,15 @@
             },
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "Shevatas était souple et nerveux, comme se devait de l'être un roi des voleurs de Zamora. Sa tête petite et ronde était entièrement rasée, son seul vêtement était un pagne de soie écarlate. Comme tous ceux de sa race, il avait une peau très foncée et ses yeux noirs au regard perçant faisaient ressortir ses traits étroits de vautour. Ses doigts, longs et minces, étaient aussi vifs et légers que les ailes d'un papillon de nuit.\nDe sa ceinture aux écailles d'or pendait une épée courte et fine, au pommeau incrusté de gemmes, glissée dans un fourreau de cuir travaillé.",
+                    "en": "Shevatas was wiry and lithe, as became a master-thief of Zamora. His small round head was shaven, his only garment a loin-cloth of scarlet silk. Like all his race, he was very dark, his narrow vulture-like face set off by his keen black eyes. His long, slender and tapering fingers were quick and nervous as the wings of a moth. From a gold-scaled girdle hung a short, narrow, jewel-hilted sword in a sheath of ornamented leather. Shevatas handled the weapon with apparently exaggerated care. He even seemed to flinch away from the contact of the sheath with his naked thigh. Nor was his care without reason.\nThis was Shevatas, a thief among thieves, whose name was spoken with awe in the dives of the Maul and the dim shadowy recesses beneath the temples of Bel, and who lived in songs and myths for a thousand years. He was a far traveller and had looted the treasures of many kingdoms."
                 },
                 "origin": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "Le Colosse noir",
+                    "en": "Black Colossus"
                 },
                 "author": {
-                    "name": ""
+                    "name": "Robert E. Howard"
                 }
             },
             
@@ -168,6 +168,8 @@
             ],
             
             "image": "data/heroes/img/shevatas.png",
+            "image_zoom": "157",
+            "image_location": { "x": "1", "y": "52" },
             "model": "shevatas",
             "origins": ["corebox", "stretchgoal", "king"]
         },
@@ -224,15 +226,15 @@
             },
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "Il voyait à présent le navire pirate dans ses moindres détails. Les rameurs étaient protégés par une rangée de mantelets fixés sur les plats-bords, mais les guerriers qui dansaient sur le pont étroit étaient parfaitement visibles. Leurs corps étaient peints et parés de plumes ; ils étaient pour la plupart nus et brandissaient des lances et des boucliers tachetés. {...} Conan fit halte brusquement ; ses guerriers s'immobilisèrent, se changeant en des statues de basalte. Dans le silence oppressé qui suivit, le Cimmérien secoua la tête avec irritation. - Continuez, ordonna-t-il à l'un de ses lieutenants, N'Gora.",
+                    "en": "He could see the details of the pirate plainly now. The rowers were protected by a line of raised mantelets along the sides, but the warriors dancing on the narrow deck were in full view. These were painted and plumed, and mostly naked, brandishing spears and spotted shields. (...) Conan halted suddenly, his warriors freezing into basaltic statues. In the tense silence that followed, the Cimmerian shook his head irritably. “Go ahead,” he grunted to a sub-chief, N’Gora."
                 },
                 "origin": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "La Reine de la Côte Noire",
+                    "en": "Queen of the Black Coast"
                 },
                 "author": {
-                    "name": ""
+                    "name": "Robert E. Howard"
                 }
             },
             
@@ -254,6 +256,8 @@
             ],
             
             "image": "data/heroes/img/ngora.png",
+            "image_zoom": "145",
+            "image_location": { "x": "-2", "y": "63" },
             "model": "ngora",
             "origins": ["king"]
         },
@@ -633,15 +637,15 @@
             },
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "C'était un homme de grande taille, bien bâti et richement vêtu. {...}\nMoi-même, que les Kshatriyas connaissent sous le nom de Kerim Shah, prince d'lranistan, je porte un masque et je suis en cela semblable à tous les hommes. Tous sont des traîtres, d'une façon ou d'une autre, et la moitié d'entre eux ne savent même pas quel maître ils servent. De ce côté-là au moins, je n'ai pas de doute, car je suis au service du roi Yezdigerd de Turan.",
+                    "en": "The man shrugged his broad shoulders and turned back into the arabesque chamber. He was a tall man, compactly built, and richly clad. (…) \" I, whom the Kshatriyas know as Kerim Shah, a prince from Iranistan, am no greater a masquerader than most men. They are all traitors in one way or another, and half of them know not whom they serve. There at least I have no doubts; for I serve King Yezdigerd of Turan."
                 },
                 "origin": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "Le Peuple du Cercle Noir",
+                    "en": "The People of the Black Circle"
                 },
                 "author": {
-                    "name": ""
+                    "name": "Robert E. Howard"
                 }
             },
             
@@ -663,6 +667,8 @@
             ],
             
             "image": "data/heroes/img/kerim-shah.png",
+            "image_zoom": "133",
+            "image_location": { "x": "-1", "y": "58" },
             "model": "kerim-shah",
             "origins": ["stretchgoal", "king"]
         },
@@ -675,15 +681,15 @@
             },
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "Conan vit quatre cavaliers assis sur leurs montures dans le soleil couchant, occupés à le regarder. Trois étaient des faucons émaciés vêtus de robes blanches ; il s'agissait sans nul doute de Zuagirs, une tribu venant de l'autre côté de la rivière. Le dernier était lui aussi vêtu de blanc, portant une khalat serrée à la ceinture et un couvre-chef retenu par un triple anneau de poil de chameau tissés, qui lui arrivait aux épaules et volait au vent. Celui-ci n'était pas un Shémite. Les ténèbres n'étaient pas si denses, ni la vue de Conan si embrumée qu'il ne pouvait distinguer les traits de l'homme. Il était aussi grand que Conan, quoique moins massif. Ses épaules étaient larges et son corps souple était aussi dur que l'acier. Sa courte barbe ne parvenait pas à masquer l'air arrogant que lui conférait un menton proéminent; ses yeux, gris et froids, aussi pénétrants qu'une épée, luisaient dans l'ombre de sa kafieh.",
+                    "en": "Shaking the sweat and blood from his eyes, Conan saw four horsemen sitting their steeds in the twilight and staring up at him. Three were lean, white-robed hawks, Zuagir tribesmen without a doubt, nomads from beyond the river. The other was dressed like them in a white, girdled khalat and a flowing head-dress which, banded about the temples with a triple circlet of braided camelhair, fell to his shoulders. But he was not a Shemite. The dust was not so thick, nor Conan's hawk-like sight so clouded, that he could not perceive the man's facial characteristics. He was as tall as Conan, though not so heavy-limbed. His shoulders were broad and his supple figure was hard as steel and whalebone. A short black beard did not altogether mask the aggressive jut of his lean jaw, and gray eyes cold and piercing as a sword gleamed from the shadow of the kafieh."
                 },
                 "origin": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "Une Sorcière viendra au monde",
+                    "en": "A Witch shall be born"
                 },
                 "author": {
-                    "name": ""
+                    "name": "Robert E. Howard"
                 }
             },
             
@@ -704,6 +710,8 @@
             ],
             
             "image": "data/heroes/img/olgerd-vladislav.png",
+            "image_zoom": "125",
+            "image_location": { "x": "-1", "y": "64" },
             "model": "olgerd-vladislav",
             "origins": ["stretchgoal", "king"]
         },
@@ -716,15 +724,15 @@
             },
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "Pallantides sortit en hâte du pavillon royal dans le cliquetis de son armure, qu'il avait revêtue à minuit après quelques heures de sommeil. {...} Un guerrier de grande taille en armure étincelante abaissa sa lance et chargea en direction du seigneur de Tor. Le choc résonna comme un coup de tonnerre. La lance du Némédien, frappant le casque de son ennemi, fit céder rivets et fixations, arrachant le casque et révélant ainsi les traits de Pallantides. La pointe de la lance de l'Aquilonien avait quant à elle transpercé le bouclier et la plaque pectorale de son ennemi, perforant le coeur du baron.",
+                    "en": "Pallantides hastened from the pavilion, clanking in the armor he had donned at midnight after a few hours' sleep. (…) A tall warrior in gleaming armor couched his lance and charged to meet the lord of Tor. They met like a thunderclap. The Nemedian's lance, striking his foe's helmet, snapped bolts and rivets and tore off the casque, revealing the features of Pallantides. But the Aquilonian's lance head crashed through shield and breastplate to transfix the baron's heart."
                 },
                 "origin": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "L'Heure du Dragon",
+                    "en": "The Hour of the Dragon"
                 },
                 "author": {
-                    "name": ""
+                    "name": "Robert E. Howard"
                 }
             },
             
@@ -746,6 +754,8 @@
             ],
             
             "image": "data/heroes/img/pallantides.png",
+            "image_zoom": "130",
+            "image_location": { "x": "2", "y": "64" },
             "model": "pallantides",
             "origins": ["stretchgoal", "king"]
         },
@@ -758,15 +768,15 @@
             },
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "Les yeux de ce visage émacié n'étaient plus hagards. Sombres et songeurs, ils pétillaient d'intelligence et l'expression d'imbécillité avait glissé de son visage comme un masque. Sa tête était droite et bien faite, avec un front haut et splendide. Tout dans son apparence indiquait l'aristocrate. Il était grand et mince, avec des mains et des pieds fins et bien dessinés.",
+                    "en": "Conan stared, spellbound; then a sound brought him round, sword lifted. The freed man was on his feet, surveying him. Conan gaped in wonder. No longer were the eyes in the worn face expressionless. Dark and meditative, they were alive with intelligence, and the expression of imbecility had dropped from the face like a mask. The head was narrow and well-formed, with a high splendid forehead. The whole build of the man was aristocratic, evident no less in his tall slender frame than in his small trim feet and hands. His first words were strange and startling."
                 },
                 "origin": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "La Citadelle Écarlate",
+                    "en": "The Scarlet Citadel"
                 },
                 "author": {
-                    "name": ""
+                    "name": "Robert E. Howard"
                 }
             },
             
@@ -788,6 +798,8 @@
             ],
             
             "image": "data/heroes/img/pelias.png",
+            "image_zoom": "115",
+            "image_location": { "x": "10", "y": "64" },
             "model": "pelias",
             "origins": ["stretchgoal", "king"]
         },
@@ -933,19 +945,7 @@
                 "fr": "Skuthus",
                 "en": "Skuthus"
             },
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": ""
-                },
-                "origin": {
-                    "fr": "",
-                    "en": ""
-                },
-                "author": {
-                    "name": ""
-                }
-            },
+            "quote": null,
             
             "gems": 10,
             "encumbrance": [10, 7, 9],
@@ -963,6 +963,8 @@
             ],
             
             "image": "data/heroes/img/skuthus.png",
+            "image_zoom": "119",
+            "image_location": { "x": "4", "y": "64" },
             "model": "skuthus",
             "origins": ["stretchgoal", "king"]
         },
@@ -1477,15 +1479,15 @@
             },
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "Conan ouvrit les yeux et regarda fixement les visages barbus penchés sur lui. Il était entouré de guerriers de grande taille, aux cheveux blonds, en cuirasses et fourrures.",
+                    "en": "Conan opened his eyes and stared into the bearded faces that bent over him. He was surrounded by tall golden-haired warriors in mail and furs."
                 },
                 "origin": {
-                    "fr": "",
-                    "en": ""
+                    "fr": "La Fille du Géant du Gel",
+                    "en": "The Frost Giant's Daughter"
                 },
                 "author": {
-                    "name": ""
+                    "name": "Robert E. Howard"
                 }
             },
             
@@ -1507,6 +1509,8 @@
             ],
             
             "image": "data/heroes/img/niord.png",
+            "image_zoom": "161",
+            "image_location": { "x": "0", "y": "44" },
             "model": "niord",
             "origins": ["nordheim"]
         },

@@ -100,8 +100,8 @@
     
         {
             "id": "kerim-shah",
-            "images": ["data/models/img/kerim-shah_1.jpg", "data/models/img/kerim-shah_2.jpg"],
-            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "images": ["data/models/img/kerim-shah_1.jpg"],
+            "paint": null,
             "origins": ["stretchgoal", "king"]
         },
     
@@ -121,8 +121,8 @@
     
         {
             "id": "pelias",
-            "images": ["data/models/img/pelias_1.jpg", "data/models/img/pelias_2.jpg"],
-            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "images": ["data/models/img/pelias_1.jpg"],
+            "paint": { "name": "gabzeta", "link": "https://the-overlord.com/index.php?/profile/232-gabzeta/"},
             "origins": ["stretchgoal", "king"]
         },
     
@@ -234,7 +234,7 @@
         {
             "id": "niord",
             "images": ["data/models/img/niord_1.jpg", "data/models/img/niord_2.jpg"],
-            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "paint": null,
             "origins": ["nordheim"]
         },
     
