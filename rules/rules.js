@@ -462,7 +462,7 @@ var ConanRules = {
         
         var skill = ConanRules._findSkillById(id);
         
-        var s = "<a href='javascript:void(0)' onclick='ConanRules.openSkill(\"" + id + "\")'>";
+        var s = "<a href='javascript:void(0)' class='openskill' onclick='ConanRules.openSkill(\"" + id + "\")'>";
         if (!big)
         {
             s += skill.title[Language];

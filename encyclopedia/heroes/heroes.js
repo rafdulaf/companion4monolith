@@ -4,13 +4,15 @@ var EncyclopediaHeroes = {
             'tab': "Héros",
             'from': "Disponible dans :",
             'fromAnd': "<br/>et",
-            'skill': "Compétences :"
+            'skill': "Compétences :",
+            'story': "Histoire :"
         },
         'en': {
             'tab': "Heroes",
             'from': "Available in:",
             'fromAnd': "<br/>and",
-            'skill': "Skills:"
+            'skill': "Skills:",
+            'story': "Story :"
         }
     },
     
@@ -308,16 +310,15 @@ var EncyclopediaHeroes = {
         var skills = "";
         for (var s in sheet.skills)
         {
-            if (skills) skills += ", "
-            skills += ConanRules._linkToSkill(sheet.skills[s].id); 
+            skills += ConanRules._linkToSkill(sheet.skills[s].id, true); 
         }
-        skills = "<div class='skill'>" + EncyclopediaHeroes._i18n[Language].skill + " " + skills;
+        skills = "<div class='skill'>" + EncyclopediaHeroes._i18n[Language].skill + "<br/>" + skills;
         skills += "</div>";
         
         var superdetails = "";
         if (sheet.quote)
         {
-            superdetails += "<div class='superdetails'><div style='background-image: url(" + sheet.image + "?version=" + Version + ")'></div>";
+            superdetails += "<div class='superdetails'>" + EncyclopediaHeroes._i18n[Language].story + "<br/><div class='img' style='background-image: url(" + sheet.image + "?version=" + Version + ")'></div>";
             superdetails += "<div><p>" + sheet.quote.text[Language].replace(/\n/g,'<br/><br/>') + "</p><p><span>" + sheet.quote.author.name + " - " + sheet.quote.origin[Language] + "</span></p>";
             superdetails += "</div></div>";
         }
@@ -336,9 +337,9 @@ var EncyclopediaHeroes = {
                 + "<div class='from'>" + EncyclopediaHeroes._i18n[Language].from + " "
                     + originString
                 + "</div>"
-                + skills
                 + model
                 + HeroSheet._sheetCode(EncyclopediaHeroes._convertHeroToStudio(sheet))
+                + skills
                 + superdetails
             + "</div>",
             null,

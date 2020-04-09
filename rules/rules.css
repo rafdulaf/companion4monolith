@@ -80,6 +80,19 @@
     display: inline;
 }
 
+.dialog a.openskill:hover {
+    text-decoration: none;
+}
+.dialog a:hover.openskill .skills-title {
+    text-decoration: underline;
+}
+
+#skills a {
+    color: #000000;
+}
+
+
+
 @media screen and (max-width: 536px) {
     #rules .skills-skill {
         width: 100%;
@@ -90,8 +103,4 @@
     #rules .skills-skill {
         width: 33.3%;
     }
-}
-
-#skills a {
-    color: #000000;
 }
