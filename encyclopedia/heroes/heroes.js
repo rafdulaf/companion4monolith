@@ -315,13 +315,12 @@ var EncyclopediaHeroes = {
         skills += "</div>";
         
         var superdetails = "";
-        superdetails += "<div class='superdetails'>";
-        superdetails += "<img src=\"" + sheet.image + "?version=" + Version + "\"/>";
         if (sheet.quote)
         {
-            superdetails += "<div class='text'>" + sheet.quote.text[Language] + "<br/>" + sheet.quote.author.name + " - " + sheet.quote.origin[Language] + "</div>";
+            superdetails += "<div class='superdetails'><div style='background-image: url(" + sheet.image + "?version=" + Version + ")'></div>";
+            superdetails += "<div><p>" + sheet.quote.text[Language].replace(/\n/g,'<br/><br/>') + "</p><p><span>" + sheet.quote.author.name + " - " + sheet.quote.origin[Language] + "</span></p>";
+            superdetails += "</div></div>";
         }
-        superdetails += "</div>";
         
         var model = "";
         if (sheet.model)

@@ -1551,6 +1551,8 @@
             ],
             
             "image": "data/heroes/img/shentu.png",
+            "image_zoom": "105",
+            "image_location": { "x": "7", "y": "57" },
             "model": "shentu",
             "origins": ["khitai"]
         },

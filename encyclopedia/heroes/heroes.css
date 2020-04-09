@@ -70,16 +70,31 @@
 
 
 .herodetails .superdetails {
-    width: 700px;
-    max-width: 100%;
+    margin-top: 20px;
+    line-height: 100%; 
+    position: relative;
 }
-.herodetails .superdetails > * {
+.herodetails .superdetails div:first-child {
+    width: 200px;
+    position: absolute;    
+    height: 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
-.herodetails .superdetails img { width: 33%; float: left; }
-.herodetails .superdetails .text { 
+.herodetails .superdetails div:last-child {
+    padding-left: 200px;
+}
+.herodetails .superdetails p:first-child::before { content: "« "; }
+.herodetails .superdetails p:first-child { 
     text-align: justify;
     font-style: italic; 
-    line-height: 100%; 
 }
-.herodetails .superdetails .text:before { content: "« "; }
-.herodetails .superdetails .text:after { content: " »"; }
+.herodetails .superdetails p:first-child::after { content: " »"; }
+
+
+.herodetails  .sheet.herosheet {
+    width: 472px;
+    height: calc(472px / 1.75);
+    font-size: 35.4px;
+}
