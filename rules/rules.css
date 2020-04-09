@@ -50,28 +50,29 @@
 }
 
 #rules .skills-skill .clear,
-.skillsdetails .skills-skill .clear {
+.dialog .skills-skill .clear {
     clear: both;  
 }
 #rules .skills-skill > img,
-.skillsdetails .skills-skill > img {
+.dialog .skills-skill > img {
     float: left;
     margin-right: 12px;
     margin-bottom: 4px;
     width: 80px;
 }
 #rules .skills-title,
-.skillsdetails .skills-title  {
+.dialog .skills-title  {
     margin-bottom: 5px;
 }
 #rules .skills-text,
-.skillsdetails .skills-text {
+.dialog .skills-text {
     font-family: 'Moolbor';
     font-size: 22px;
     line-height: 20px;
+    color: #000;
 }
 #rules .rules-character,
-.skillsdetails .rules-character  {
+.dialog .rules-character  {
     margin: 0;
     width: 14px;
     height: 14px;

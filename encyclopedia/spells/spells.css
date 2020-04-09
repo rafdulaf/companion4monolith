@@ -12,11 +12,17 @@
     font-family: 'Font Awesome 5 Free';
 }
 
+@media screen and (min-width: 536px) {
+    .spelldetails .spell.card { 
+        float: left;
+        margin-right: 10px; 
+        margin-bottom: 10px; 
+    }
+}
+
 .spelldetails .from,
 .spelldetails .clarification {
     display: block;
-    text-indent: -90px;
-    margin-left: 90px;
 }
 
 #encyclopedia-spell-wrapper a {

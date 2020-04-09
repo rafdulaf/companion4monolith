@@ -450,15 +450,30 @@ var ConanRules = {
         return text;
     },
     
-    _linkToSkill: function(id)
+    _linkToSkill: function(id, big)
     {
+        big = big || false;
+        
         var index = id.indexOf('/');
         if (index > 0)
         {
             id = id.substring(index + 1);
         }
         
-        return "<a href='javascript:void(0)' onclick='Nav.closeDialog(); ConanRules.openSkill(\"" + id + "\")'>" + ConanRules._findSkillById(id).title[Language] + "</a>";
+        var skill = ConanRules._findSkillById(id);
+        
+        var s = "<a href='javascript:void(0)' onclick='ConanRules.openSkill(\"" + id + "\")'>";
+        if (!big)
+        {
+            s += skill.title[Language];
+        }
+        else
+        {
+            s += ConanRules._skill2HTML(skill.id, skill.type, skill.image, skill.title[Language], skill.text[Language]);
+        }
+        s += "</a>";
+        
+        return s;
     },
     
     _findSkillById: function(id)

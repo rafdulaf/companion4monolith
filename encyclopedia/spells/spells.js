@@ -4,9 +4,9 @@ var EncyclopediaSpells = {
             'tab': "Sorts",
             'transfertToStudio': "Copier la carte dans le studio",
             'transfertOK': "La carte a été copiée dans le studio des cartes de sorts",
-            'transfertConfirm': "Voulez-vous copier la carte dans le studio ?",
+            'transfertConfirm': "Voulez-vous copier la carte dans le studio pour pouvoir la modifier ou l'imprimer ?",
             'from': "Disponible dans :",
-            'fromAnd': "<br/>et",
+            'fromAnd': "et",
             'card': "exemplaire",
             'cards': "exemplaires",
             'clarification': "Clarification :",
@@ -16,9 +16,9 @@ var EncyclopediaSpells = {
             'tab': "Spells",
             'transfertToStudio': "Copy the card into the studio",
             'transfertOK': "The card was copied to the spell cards studio",
-            'transfertConfirm': "Do you want to copy the card into the studio?",
+            'transfertConfirm': "Do you want to copy the card into the studio in order to edit it or print it?",
             'from': "Available in:",
-            'fromAnd': "<br/>and",
+            'fromAnd': "and",
             'card': "copy",
             'cards': "copies",
             'clarification': "Clarification:",
@@ -521,12 +521,12 @@ var EncyclopediaSpells = {
         var spell = spells[0];
         Nav.dialog(spell.title[Language],
             "<div class='spelldetails'>" 
+                + CardSpell._cardCode(EncyclopediaSpells._convertSpellToStudio(spell))
                 + "<div class='from'>" + EncyclopediaSpells._i18n[Language].from + " "
                     + originString
                 + "</div>"
                 + ((spell.clarification && spell.clarification[Language]) ?"<div class='clarification'>" + EncyclopediaSpells._i18n[Language].clarification + " " + spell.clarification[Language] + "</div>" : "") 
-                + (spell.forSkill ? "<div class='skill'>" + EncyclopediaSpells._i18n[Language].skill + " " + ConanRules._linkToSkill(spell.forSkill) + "</div>" : "") 
-                + CardSpell._cardCode(EncyclopediaSpells._convertSpellToStudio(spell))
+                + (spell.forSkill ? "<div class='skill'>" + EncyclopediaSpells._i18n[Language].skill + " " + ConanRules._linkToSkill(spell.forSkill, true) + "</div>" : "") 
             + "</div>",
             null,
             [{
@@ -551,7 +551,6 @@ var EncyclopediaSpells = {
             
             Nav.switchTo($("*[for=studio]")[0]);
             $("#studio .nav-wrapper").slick('slickGoTo', $("#spell").index());
-            Nav.closeDialog();
             $("#spell").animate({ scrollTop: $('#spell > *:last()').position().top },500);
             
             ConanAbout.warnToast(EncyclopediaSpells._i18n[Language].transfertOK)
@@ -559,7 +558,7 @@ var EncyclopediaSpells = {
     },
     
     _linkToSpell: function(id) {
-        return "<a href='javascript:void(0)' onclick='Nav.closeDialog(); EncyclopediaSpells.openSpell(\"" + id + "\")'>" + EncyclopediaSpells._findSpellsById(id)[0].title[Language] + "</a>";
+        return "<a href='javascript:void(0)' onclick='EncyclopediaSpells.openSpell(\"" + id + "\")'>" + EncyclopediaSpells._findSpellsById(id)[0].title[Language] + "</a>";
     }
 
 }

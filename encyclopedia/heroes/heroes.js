@@ -357,6 +357,6 @@ var EncyclopediaHeroes = {
         
     _linkToHero: function(id) {
         var hero = EncyclopediaHeroes._findHeroById(id);
-        return "<a href='javascript:void(0)' onclick='Nav.closeDialog(); EncyclopediaHeroes.openSheet(\"" + id + "\")'>" + hero.name[Language] + (hero.subname ? " " + hero.subname[Language] : "") + "</a>";
+        return "<a href='javascript:void(0)' onclick='EncyclopediaHeroes.openSheet(\"" + id + "\")'>" + hero.name[Language] + (hero.subname ? " " + hero.subname[Language] : "") + "</a>";
     }
 };

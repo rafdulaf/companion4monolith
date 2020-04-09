@@ -4,9 +4,9 @@ var EncyclopediaEquipments = {
             'tab': "Equipe<wbr/>ments",
             'transfertToStudio': "Copier la carte dans le studio",
             'transfertOK': "La carte a été copiée dans le studio des cartes d'équipements",
-            'transfertConfirm': "Voulez-vous copier la carte dans le studio ?",
+            'transfertConfirm': "Voulez-vous copier la carte dans le studio pour pouvoir la modifier ou l'imprimer ?",
             'from': "Disponible dans :",
-            'fromAnd': "<br/>et",
+            'fromAnd': "et",
             'card': "exemplaire",
             'cards': "exemplaires",
             'skill': "Compétence :"
@@ -15,9 +15,9 @@ var EncyclopediaEquipments = {
             'tab': "Equip<wbr/>ments",
             'transfertToStudio': "Copy the card into the studio",
             'transfertOK': "The card was copied to the equipment cards studio",
-            'transfertConfirm': "Do you want to copy the card into the studio?",
+            'transfertConfirm': "Do you want to copy the card into the studio in order to edit it or print it?",
             'from': "Available in:",
-            'fromAnd': "<br/>and",
+            'fromAnd': "and",
             'card': "copy",
             'cards': "copies",
             'skill': "Skill:"
@@ -477,6 +477,7 @@ var EncyclopediaEquipments = {
         
         Nav.dialog(equipment.title[Language] || "",
             "<div class='equipmentdetails'>" 
+                + c
                 + "<div class='from'>" + EncyclopediaEquipments._i18n[Language].from + " "
                     + originString
                 + "</div>"
@@ -484,10 +485,9 @@ var EncyclopediaEquipments = {
                     ("<div class='skill'>" 
                         + EncyclopediaEquipments._i18n[Language].skill 
                         + " " 
-                        + ConanRules._linkToSkill(equipment.skills[0]) 
+                        + ConanRules._linkToSkill(equipment.skills[0], true) 
                          + (equipment.skills[1] != 'none' ? ", " + ConanRules._linkToSkill(equipment.skills[1]) : "")
                     + "</div>") : "") 
-                + c
             + "</div>",
             null,
             [{
@@ -526,7 +526,6 @@ var EncyclopediaEquipments = {
             
             Nav.switchTo($("*[for=studio]")[0]);
             $("#studio .nav-wrapper").slick('slickGoTo', $("#equipment").index());
-            Nav.closeDialog();
             $("#equipment").animate({ scrollTop: $('#equipment > *:last()').position().top },500);
             
             ConanAbout.warnToast(EncyclopediaEquipments._i18n[Language].transfertOK)
@@ -534,6 +533,6 @@ var EncyclopediaEquipments = {
     },
     
     _linkToEquipment: function(id) {
-        return "<a href='javascript:void(0)' onclick='Nav.closeDialog(); EncyclopediaEquipments.openEquipment(\"" + id + "\")'>" + EncyclopediaEquipments._findEquipmentsById(id)[0].title[Language] + "</a>";
+        return "<a href='javascript:void(0)' onclick='EncyclopediaEquipments.openEquipment(\"" + id + "\")'>" + EncyclopediaEquipments._findEquipmentsById(id)[0].title[Language] + "</a>";
     }
 }

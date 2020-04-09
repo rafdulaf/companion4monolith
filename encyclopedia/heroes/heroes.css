@@ -98,3 +98,16 @@
     height: calc(472px / 1.75);
     font-size: 35.4px;
 }
+@media screen and (max-width: 500px) {
+    .herodetails  .sheet.herosheet {
+        width: 320px;
+        height: calc(320px / 1.75);
+        font-size: 24px;
+    }
+    .herodetails .superdetails div:first-child {
+        width: 100px;
+    }
+    .herodetails .superdetails div:last-child {
+        padding-left: 100px;
+    }
+}

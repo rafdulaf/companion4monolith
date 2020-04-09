@@ -369,7 +369,7 @@ var EncyclopediaModels = {
         var s = "";
         if (model)
         {
-            s += "<a href='javascript:void(0)' onclick='Nav.closeDialog(); EncyclopediaModels.openModel(\"" + id + "\")'>";
+            s += "<a href='javascript:void(0)' onclick='EncyclopediaModels.openModel(\"" + id + "\")'>";
             if (image)
             {
                 s += "<img src='" + model.images[0] + "?version=" + Version + "'/>";

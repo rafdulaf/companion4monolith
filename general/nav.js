@@ -2,6 +2,7 @@ Nav = {
     _id: null,
     _icons: [],
     _actions: {},
+    _cb: [],
     
     addIcon: function(label, icon, id, onSelect) 
     {
@@ -123,6 +124,8 @@ Nav = {
 
     switchTo: function(elt)
     {
+        elt = elt || $('.nav > ul > li > a')[0];
+        
         var id = elt.getAttribute("for");
         
         var toSelect = $('#' + id);
@@ -214,8 +217,13 @@ Nav = {
         $(window).on('hashchange', Nav._hashChange);
     },
     
-    _hashChange: function()
+    _hashChange: function(e)
     {
+        if (arguments[0].originalEvent.oldURL.endsWith("#dialog"))
+        {
+            Nav.closeDialog(true);
+        }
+
         var elt;
         
         var matcher = /#([a-z0-9_-]*)/i.exec(window.location.hash);
@@ -223,10 +231,12 @@ Nav = {
             && (elt = $("*[for=" + matcher[1] + "]")[0]))
         {
             Nav.switchTo(elt);
+            return true;
         }
         else
         {
-            Nav.switchTo($('.nav > ul > li > a')[0]);
+            // Nothing
+            return false;
         }
     },
     
@@ -260,17 +270,37 @@ Nav = {
                 + "</div>"
               + "</div>";
         $(document.body).append(code);
-        Nav._cb = callback;
+        if (window.location.hash != "#dialog")
+        {
+            Nav._oldHref = window.location.hash; 
+            window.location.hash = "#dialog";
+        }
+        
+        Nav._cb.push(callback);
     },
     
-    closeDialog: function()
+    closeDialog: function(all)
     {
-        if (Nav._cb)
+        var d = $(".dialog").last();
+        if (d.length > 0)
         {
-            Nav._cb();
+            var cb = Nav._cb.pop(); 
+            if (cb)
+            {
+                cb();
+            }
+
+            d.remove();
+            
+            if ($(".dialog").length == 0)
+            {
+                window.location.hash = Nav._oldHref;
+            }
+            else if (all)
+            {
+                Nav.closeDialog(true);
+            }
         }
-        Nav._cb = null;
-        $("#dialog").remove();
     },
     
     createTabs: function(id, tabs, onSetPosition)
