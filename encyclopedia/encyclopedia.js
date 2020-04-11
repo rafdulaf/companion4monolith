@@ -165,5 +165,82 @@ var Encyclopedia = {
         se += "</div>"
         
         return se;
+    },
+    updateFacets: function(facets, items, prefix)
+    {
+        for (var i in facets)
+        {
+            var facet = facets[i];
+            if (facet.values)
+            {
+                var max = items.filter(Encyclopedia.filter(facets, prefix, facet, null)).length;
+                    
+                var nonEmptyFacets = 0;
+                for (var v in facet.values)
+                {
+                    var value = facet.values[v];
+                    
+                    var count = items.filter(Encyclopedia.filter(facets, prefix, facet, value)).length;
+                    if (count == max)
+                    {
+                        // useless facet
+                        count = 0;
+                    }
+                    $("#" + prefix + "-" + facet.id + "-" + value.id).parent().attr('data-count', count);
+                    if (count) nonEmptyFacets++;
+                }                
+                $("#" + prefix + "-" + facet.id).attr("data-count", nonEmptyFacets);
+            }
+        }
+    },
+    filter: function(facets, prefix, forcedFacet, forcedValue)
+    {
+        return function(e) {
+            for (var i in facets)
+            {
+                var facet = facets[i];
+                
+                var selectedValues = [];
+                if (forcedFacet && facet.id == forcedFacet.id)
+                {
+                    if (forcedValue)
+                    {
+                        selectedValues.push(forcedValue.id);
+                    }
+                }
+                else
+                {
+                    if (facet.values)
+                    {
+                        for (var v in facet.values)
+                        {
+                            var value = facet.values[v];
+                            
+                            if ($("#" + prefix + "-" + facet.id + "-" + value.id)[0].checked)
+                            {
+                                selectedValues.push(value.id);
+                            }
+                        }
+                    }
+                    else
+                    {
+                        selectedValues.push($("#" + prefix + "-" + facet.id + "-input").val());
+                    }
+                }
+                
+                if ((facet.values
+                    && selectedValues.length > 0
+                    && !facet.filter(e, selectedValues))
+                    
+                    ||
+                    
+                    (!facet.values && selectedValues[0] && !facet.filter(e, selectedValues[0])))
+                {
+                    return false;
+                }
+            }
+            
+            return true;
+        }
     }    
 };

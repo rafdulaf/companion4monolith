@@ -141,84 +141,15 @@ var EncyclopediaModels = {
         EncyclopediaModels.displayModels();
     },
     
-    updateFacets: function()
-    {
-        for (var i in EncyclopediaModels._facets)
-        {
-            var facet = EncyclopediaModels._facets[i];
-            if (facet.values)
-            {
-                var nonEmptyFacets = 0;
-                for (var v in facet.values)
-                {
-                    var value = facet.values[v];
-                    
-                    var count = Encyclopedia.models.list.filter(EncyclopediaModels._filter(facet, value)).length;
-                    $("#ems-" + facet.id + "-" + value.id).parent().attr('data-count', count);
-                    if (count) nonEmptyFacets++;
-                }                
-                $("#ems-" + facet.id).attr("data-count", nonEmptyFacets);
-            }
-        }
-    },
-    
-    _filter: function(forcedFacet, forcedValue)
-    {
-        return function(e) {
-            for (var i in EncyclopediaModels._facets)
-            {
-                var facet = EncyclopediaModels._facets[i];
-                
-                var selectedValues = [];
-                if (forcedFacet && facet.id == forcedFacet.id)
-                {
-                    selectedValues.push(forcedValue.id);
-                }
-                else
-                {
-                    if (facet.values)
-                    {
-                        for (var v in facet.values)
-                        {
-                            var value = facet.values[v];
-                            
-                            if ($("#ems-" + facet.id + "-" + value.id)[0].checked)
-                            {
-                                selectedValues.push(value.id);
-                            }
-                        }
-                    }
-                    else
-                    {
-                        selectedValues.push($("#ems-" + facet.id + "-input").val());
-                    }
-                }
-                
-                if ((facet.values
-                    && selectedValues.length > 0
-                    && !facet.filter(e, selectedValues))
-                    
-                    ||
-                    
-                    (!facet.values && selectedValues[0] && !facet.filter(e, selectedValues[0])))
-                {
-                    return false;
-                }
-            }
-            
-            return true;
-        }
-    },
-        
     displayModels: function()
     {
-        EncyclopediaModels.updateFacets();
+        Encyclopedia.updateFacets(EncyclopediaModels._facets, Encyclopedia.models.list, "ems");
         
         var models = "";
         
         Encyclopedia.models.list.sort(function(s1, s2) { return EncyclopediaModels._findModelNames(s1).toLowerCase().localeCompare(EncyclopediaModels._findModelNames(s2).toLowerCase()); })
         
-        var modelList = Encyclopedia.models.list.filter(EncyclopediaModels._filter());
+        var modelList = Encyclopedia.models.list.filter(Encyclopedia.filter(EncyclopediaModels._facets, "ems"));
         var ignoredPrevious = 0;
         for (var i in modelList)
         {

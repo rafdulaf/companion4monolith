@@ -153,78 +153,9 @@ var EncyclopediaHeroes = {
         EncyclopediaHeroes.displayHeroes();
     },
     
-    updateFacets: function()
-    {
-        for (var i in EncyclopediaHeroes._facets)
-        {
-            var facet = EncyclopediaHeroes._facets[i];
-            if (facet.values)
-            {
-                var nonEmptyFacets = 0;
-                for (var v in facet.values)
-                {
-                    var value = facet.values[v];
-                    
-                    var count = Encyclopedia.heroes.list.filter(EncyclopediaHeroes._filter(facet, value)).length;
-                    $("#ehs-" + facet.id + "-" + value.id).parent().attr('data-count', count);
-                    if (count) nonEmptyFacets++;
-                }                
-                $("#ehs-" + facet.id).attr("data-count", nonEmptyFacets);
-            }
-        }
-    },
-    
-    _filter: function(forcedFacet, forcedValue)
-    {
-        return function(e) {
-            for (var i in EncyclopediaHeroes._facets)
-            {
-                var facet = EncyclopediaHeroes._facets[i];
-                
-                var selectedValues = [];
-                if (forcedFacet && facet.id == forcedFacet.id)
-                {
-                    selectedValues.push(forcedValue.id);
-                }
-                else
-                {
-                    if (facet.values)
-                    {
-                        for (var v in facet.values)
-                        {
-                            var value = facet.values[v];
-                            
-                            if ($("#ehs-" + facet.id + "-" + value.id)[0].checked)
-                            {
-                                selectedValues.push(value.id);
-                            }
-                        }
-                    }
-                    else
-                    {
-                        selectedValues.push($("#ehs-" + facet.id + "-input").val());
-                    }
-                }
-                
-                if ((facet.values
-                    && selectedValues.length > 0
-                    && !facet.filter(e, selectedValues))
-                    
-                    ||
-                    
-                    (!facet.values && selectedValues[0] && !facet.filter(e, selectedValues[0])))
-                {
-                    return false;
-                }
-            }
-            
-            return true;
-        }
-    },
-        
     displayHeroes: function()
     {
-        EncyclopediaHeroes.updateFacets();
+        Encyclopedia.updateFacets(EncyclopediaHeroes._facets, Encyclopedia.heroes.list, "ehs");
         
         var heroes = "";
         
@@ -236,7 +167,7 @@ var EncyclopediaHeroes = {
                 return c; 
         });
         
-        var heroList = Encyclopedia.heroes.list.filter(EncyclopediaHeroes._filter());
+        var heroList = Encyclopedia.heroes.list.filter(Encyclopedia.filter(EncyclopediaHeroes._facets, "ehs"));
         for (var i in heroList)
         {
             i = parseInt(i);

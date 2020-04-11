@@ -331,84 +331,15 @@ var EncyclopediaSpells = {
         EncyclopediaSpells.displaySpells();
     },
     
-    updateFacets: function()
-    {
-        for (var i in EncyclopediaSpells._facets)
-        {
-            var facet = EncyclopediaSpells._facets[i];
-            if (facet.values)
-            {
-                var nonEmptyFacets = 0;
-                for (var v in facet.values)
-                {
-                    var value = facet.values[v];
-                    
-                    var count = Encyclopedia.spells.list.filter(EncyclopediaSpells._filter(facet, value)).length;
-                    $("#es-" + facet.id + "-" + value.id).parent().attr('data-count', count);
-                    if (count) nonEmptyFacets++;
-                }                
-                $("#es-" + facet.id).attr("data-count", nonEmptyFacets);
-            }
-        }
-    },
-    
-    _filter: function(forcedFacet, forcedValue)
-    {
-        return function(e) {
-            for (var i in EncyclopediaSpells._facets)
-            {
-                var facet = EncyclopediaSpells._facets[i];
-                
-                var selectedValues = [];
-                if (forcedFacet && facet.id == forcedFacet.id)
-                {
-                    selectedValues.push(forcedValue.id);
-                }
-                else
-                {
-                    if (facet.values)
-                    {
-                        for (var v in facet.values)
-                        {
-                            var value = facet.values[v];
-                            
-                            if ($("#es-" + facet.id + "-" + value.id)[0].checked)
-                            {
-                                selectedValues.push(value.id);
-                            }
-                        }
-                    }
-                    else
-                    {
-                        selectedValues.push($("#es-" + facet.id + "-input").val());
-                    }
-                }
-                
-                if ((facet.values
-                    && selectedValues.length > 0
-                    && !facet.filter(e, selectedValues))
-                    
-                    ||
-                    
-                    (!facet.values && selectedValues[0] && !facet.filter(e, selectedValues[0])))
-                {
-                    return false;
-                }
-            }
-            
-            return true;
-        }
-    },
-    
     displaySpells: function()
     {
-        EncyclopediaSpells.updateFacets();
+        Encyclopedia.updateFacets(EncyclopediaSpells._facets, Encyclopedia.spells.list, "es");
         
         var spells = "";
         
         Encyclopedia.spells.list.sort(function(s1, s2) { return s1.title[Language].toLowerCase().localeCompare(s2.title[Language].toLowerCase()); })
         
-        var spellList = Encyclopedia.spells.list.filter(EncyclopediaSpells._filter());
+        var spellList = Encyclopedia.spells.list.filter(Encyclopedia.filter(EncyclopediaSpells._facets, "es"));
         var ignoredPrevious = 0;
         for (var i in spellList)
         {
