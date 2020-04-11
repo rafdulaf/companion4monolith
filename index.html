@@ -105,13 +105,9 @@
                         Encyclopedia.init();
 	                    ConanStudio.init();
 	                    
-	                    if (hash != window.location.hash)
+	                    if (!Nav._hashChange())
                     	{
-	                        window.location.hash = hash;
-                    	}
-	                    else
-                    	{
-	                        Nav.switchTo();
+	                    	   Nav.switchTo();
                     	}
 	                    
 	                    $(".loading").addClass('loaded');

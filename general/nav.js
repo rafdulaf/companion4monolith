@@ -213,20 +213,26 @@ Nav = {
                     + "</div>";
         $(document.body).prepend(code);
         
-        $(window).resize(function() { Nav.updateTitle(); });
+        $(window).on('resize', Nav.updateTitle);
         $(window).on('hashchange', Nav._hashChange);
     },
     
     _hashChange: function(e)
     {
-        if (arguments[0].originalEvent.oldURL.endsWith("#dialog"))
+        if (e && e.originalEvent.oldURL.endsWith("-dialog"))
         {
             Nav.closeDialog(true);
+        }
+        
+        var hash = window.location.hash;
+        if (hash.endsWith("-dialog"))
+        {
+            hash = hash.substring(0, hash.indexOf("-dialog"));
         }
 
         var elt;
         
-        var matcher = /#([a-z0-9_-]*)/i.exec(window.location.hash);
+        var matcher = /#([a-z0-9_-]*)/i.exec(hash);
         if (matcher
             && (elt = $("*[for=" + matcher[1] + "]")[0]))
         {
@@ -270,10 +276,9 @@ Nav = {
                 + "</div>"
               + "</div>";
         $(document.body).append(code);
-        if (window.location.hash != "#dialog")
+        if (!window.location.hash.endsWith("-dialog"))
         {
-            Nav._oldHref = window.location.hash; 
-            window.location.hash = "#dialog";
+            window.location.hash += "-dialog";
         }
         
         Nav._cb.push(callback);
@@ -294,7 +299,10 @@ Nav = {
             
             if ($(".dialog").length == 0)
             {
-                window.location.hash = Nav._oldHref;
+                if (window.location.hash.endsWith("-dialog"))
+                {
+                    window.location.hash = window.location.hash.substring(0, window.location.hash.indexOf('-dialog'));
+                }
             }
             else if (all)
             {

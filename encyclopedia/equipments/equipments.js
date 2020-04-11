@@ -478,6 +478,7 @@ var EncyclopediaEquipments = {
         Nav.dialog(equipment.title[Language] || "",
             "<div class='equipmentdetails'>" 
                 + c
+                + "<div class='minwidth'></div>"
                 + "<div class='from'>" + EncyclopediaEquipments._i18n[Language].from + " "
                     + originString
                 + "</div>"

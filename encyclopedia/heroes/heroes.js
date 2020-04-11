@@ -122,7 +122,27 @@ var EncyclopediaHeroes = {
                     }
                     return origins.filter(v => selectedValues.indexOf(v) != -1).length > 0;
                 }
-            }
+            },
+            
+            {
+                id: 'gems',
+                label: {
+                    'fr': "Gemmes",
+                    'en': "Gems"
+                },
+                values: (function() {
+                    return [
+                        { id: '-9', label: { 'fr': 'Moins de 9', 'en': 'Less than 9' }},
+                        { id: '10-11', label: { 'fr': '10 ou 11', 'en': '10 or 11' }},
+                        { id: '12-', label: { 'fr': 'Plus de 12', 'en': 'More than 12' }}
+                    ];
+                })(),
+                filter: function(item, selectedValues) {
+                    return (item.gems <= 9 && selectedValues.indexOf('-9') != -1)
+                        || (item.gems > 9 && item.gems < 12 && selectedValues.indexOf('10-11') != -1)
+                        || (item.gems >= 12 && selectedValues.indexOf('12-') != -1);
+                }
+            }            
         ]        
     },
     

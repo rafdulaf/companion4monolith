@@ -12,12 +12,15 @@
     font-family: 'Font Awesome 5 Free';
 }
 
-@media screen and (min-width: 536px) {
-    .spelldetails .spell.card { 
-        float: left;
-        margin-right: 10px; 
-        margin-bottom: 10px; 
-    }
+
+.spelldetails .spell.card {
+    float: left; 
+    margin-right: 10px; 
+    margin-bottom: 10px;
+}
+.spelldetails .minwidth {
+    display:inline-block;
+    min-width: 500px;
 }
 
 .spelldetails .from,

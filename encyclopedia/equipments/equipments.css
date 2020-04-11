@@ -11,12 +11,15 @@
     content: "\f591";
     font-family: 'Font Awesome 5 Free';
 }
-@media screen and (min-width: 536px) {
-    .equipmentdetails .equipement.card {
-        float: left; 
-        margin-right: 10px; 
-        margin-bottom: 10px;
-    }
+
+.equipmentdetails .equipement.card {
+    float: left; 
+    margin-right: 10px; 
+    margin-bottom: 10px;
+}
+.equipmentdetails .minwidth {
+    display:inline-block;
+    min-width: 500px;
 }
 
 #encyclopedia-equipment-wrapper a {

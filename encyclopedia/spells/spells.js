@@ -522,6 +522,7 @@ var EncyclopediaSpells = {
         Nav.dialog(spell.title[Language],
             "<div class='spelldetails'>" 
                 + CardSpell._cardCode(EncyclopediaSpells._convertSpellToStudio(spell))
+                + "<div class='minwidth'></div>"
                 + "<div class='from'>" + EncyclopediaSpells._i18n[Language].from + " "
                     + originString
                 + "</div>"
