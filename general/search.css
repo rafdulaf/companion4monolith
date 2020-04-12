@@ -36,3 +36,24 @@
 .search-engine .facet label[data-count='0'] {
     display: none;
 }
+
+
+
+.search-engine .facet a {
+    display: none;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.search-engine .facet[data-mode=hide] a:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f13a";
+}
+.search-engine .facet[data-mode=show] a:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f139";
+}
+
+.search-engine.collapsible .facet label:not([data-count='0']) ~ label:not([data-count='0']) ~ label:not([data-count='0']) ~ label:not([data-count='0']) ~ a { display: block; }
+.search-engine.collapsible .facet[data-mode=hide] label:not([data-count='0']) ~ label:not([data-count='0']) ~ label:not([data-count='0']) ~ label:not([data-count='0']) { display: none; }

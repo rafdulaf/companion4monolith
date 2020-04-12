@@ -83,6 +83,7 @@ var EncyclopediaEquipments = {
                     'fr': "Origine",
                     'en': "Origin"
                 },
+                sort: true,
                 values: (function() {
                     var values = [];
                     for (var i in Encyclopedia.expansions.types)
@@ -139,6 +140,7 @@ var EncyclopediaEquipments = {
                     'fr': "Type",
                     'en': "Kind"
                 },
+                sort: true,
                 values: [
                     {
                         id: "melee",
@@ -199,8 +201,8 @@ var EncyclopediaEquipments = {
                     {
                         id: "other",
                         label: {
-                            'fr': "Autre",
-                            'en': "Other"
+                            'fr': "Divers",
+                            'en': "Misc."
                         }
                     }
                 ],

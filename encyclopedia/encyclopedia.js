@@ -60,6 +60,10 @@ var Encyclopedia = {
         Encyclopedia.onChange();
 
         ConanAbout.addCopyright(Encyclopedia._i18n[Language].menu, Encyclopedia.copyright());
+        
+        // Watch search engine
+        $(window).on('resize', Encyclopedia.onResize);
+        Encyclopedia.onResize();
     },
     
     onChange: function(event, slick) {
@@ -129,6 +133,21 @@ var Encyclopedia = {
         return null;
     },
     
+    onResize: function()
+    {
+        $(".search-engine").each(function(index, s) {
+            var searchEngine = $(s);
+            
+            searchEngine.removeClass("collapsible");
+            
+            var last = $(".facet", searchEngine).last();
+            if (last.position().top + last.outerHeight(true) > searchEngine.innerHeight())
+            {
+                searchEngine.addClass("collapsible");
+            }
+        });
+    },
+    
     displaySearchEngine: function(facets, displayFunc, prefix)
     {
         var se = "<div class='search-engine'>";
@@ -137,7 +156,7 @@ var Encyclopedia = {
         {
             var facet = facets[f];
             
-            se += "<div class='facet' id='" + prefix + "-" + facet.id + "'>"
+            se += "<div data-mode='hide' class='facet' id='" + prefix + "-" + facet.id + "'>"
             se += "<span>" + facet.label[Language] + "</span>"
             if (facet.values)
             {
@@ -154,6 +173,7 @@ var Encyclopedia = {
                         + "</span>"
                         + "</label>";
                 }
+                se += "<a href='javascript:void(0)' onclick='var x = $(this).parent(); x.attr(\"data-mode\", x.attr(\"data-mode\") == \"hide\" ? \"show\" : \"hide\")'></a>"
             }
             else
             {
@@ -191,7 +211,22 @@ var Encyclopedia = {
                 }                
                 $("#" + prefix + "-" + facet.id).attr("data-count", nonEmptyFacets);
             }
+            if (facet.sort)
+            {
+                $("#" + prefix + "-" + facet.id + " label").sort(function (a,b) {
+                    var $a = $(a);
+                    var $b = $(b);
+                    
+                    var aCount = parseInt($a.attr("data-count"));
+                    var bCount = parseInt($b.attr("data-count"));
+                    
+                    if (aCount != bCount) return bCount - aCount;
+                    else return $a.text().localeCompare($b.text()); 
+                }).appendTo("#" + prefix + "-" + facet.id);
+                $("#" + prefix + "-" + facet.id + " a").appendTo("#" + prefix + "-" + facet.id);
+            }
         }
+        Encyclopedia.onResize();
     },
     filter: function(facets, prefix, forcedFacet, forcedValue)
     {

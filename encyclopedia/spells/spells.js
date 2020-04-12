@@ -85,6 +85,7 @@ var EncyclopediaSpells = {
                     'fr': "Origine",
                     'en': "Origin"
                 },
+                sort: true,
                 values: (function() {
                     var values = [];
                     for (var i in Encyclopedia.expansions.types)
@@ -197,17 +198,17 @@ var EncyclopediaSpells = {
                 },
                 values: [
                     {
-                        id: "overlord",
-                        label: {
-                            'fr': "Overlord",
-                            'en': "Overlord"
-                        }
-                    },
-                    {
                         id: "heroes",
                         label: {
                             'fr': "Héros",
                             'en': "Heroes"
+                        }
+                    },
+                    {
+                        id: "overlord",
+                        label: {
+                            'fr': "Overlord",
+                            'en': "Overlord"
                         }
                     }
                 ],
@@ -223,14 +224,8 @@ var EncyclopediaSpells = {
                     'fr': "Thème",
                     'en': "Theme"
                 },
+                sort: true,
                 values: [
-                    {
-                        id: "forSkill",
-                        label: {
-                            'fr': "Compétence",
-                            'en': "Skill"
-                        }
-                    },
                     {
                         id: "forAttack",
                         label: {
@@ -239,17 +234,24 @@ var EncyclopediaSpells = {
                         }
                     },
                     {
-                        id: "forDefense",
+                        id: "forFight",
                         label: {
-                            'fr': "Défense",
-                            'en': "Defense"
+                            'fr': "Dé de combat",
+                            'en': "Fight die"
                         }
                     },
                     {
-                        id: "forFight",
+                        id: "forDefense",
                         label: {
-                            'fr': "Combat",
-                            'en': "fight"
+                            'fr': "Dé de défense",
+                            'en': "Defense die"
+                        }
+                    },
+                    {
+                        id: "forMove",
+                        label: {
+                            'fr': "Déplacement",
+                            'en': "Move"
                         }
                     },
                     {
@@ -260,10 +262,10 @@ var EncyclopediaSpells = {
                         }
                     },
                     {
-                        id: "forMove",
+                        id: "forSkill",
                         label: {
-                            'fr': "Déplacement",
-                            'en': "Move"
+                            'fr': "Compétence",
+                            'en': "Skill"
                         }
                     },
                     {
@@ -276,8 +278,8 @@ var EncyclopediaSpells = {
                     {
                         id: "forEnergy",
                         label: {
-                            'fr': "Energie",
-                            'en': "Energy"
+                            'fr': "Gemmes",
+                            'en': "Gems"
                         }
                     }
                 ],

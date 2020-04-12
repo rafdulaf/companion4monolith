@@ -84,6 +84,7 @@ var EncyclopediaModels = {
                     'fr': "Origine",
                     'en': "Origin"
                 },
+                sort: true,
                 values: (function() {
                     var values = [];
                     for (var i in Encyclopedia.expansions.types)
