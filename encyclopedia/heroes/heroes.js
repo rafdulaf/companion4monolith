@@ -131,33 +131,81 @@ var EncyclopediaHeroes = {
                     'fr': "Gemmes",
                     'en': "Gems"
                 },
-                values: (function() {
-                    return [
+                values: [
                         { id: '-9', label: { 'fr': 'Moins de 9', 'en': 'Less than 9' }},
                         { id: '10-11', label: { 'fr': '10 ou 11', 'en': '10 or 11' }},
                         { id: '12-', label: { 'fr': 'Plus de 12', 'en': 'More than 12' }}
-                    ];
-                })(),
+                ],
                 filter: function(item, selectedValues) {
                     return (item.gems <= 9 && selectedValues.indexOf('-9') != -1)
                         || (item.gems > 9 && item.gems < 12 && selectedValues.indexOf('10-11') != -1)
                         || (item.gems >= 12 && selectedValues.indexOf('12-') != -1);
                 }
-            }            
+            },
+            
+            {
+                id: 'reddie',
+                label: {
+                    'fr': "Force",
+                    'en': "Strenght"
+                },
+                sort: true,
+                operator: "or/and",
+                values: [
+                    { id: 'melee', label: {'fr':"Corps à corps", 'en':"Melee"} },
+                    { id: 'ranged', label: {'fr':"A distance", 'en':"Ranged"} },
+                    { id: 'guard', label: {'fr':"Défense", 'en':"Guard"} },
+                    { id: 'manipulation', label: {'fr':"Manipulation", 'en':"Manipulation"} }
+                ],
+                filter: function(item, selectedValues) {
+                    return (selectedValues.indexOf("melee") != -1 && (item.melee.dice.startsWith("red") || item.melee.dice.startsWith("orangereroll")))
+                        || (selectedValues.indexOf("ranged") != -1 && (item.ranged.dice.startsWith("red") || item.ranged.dice.startsWith("orangereroll")))
+                        || (selectedValues.indexOf("defense") != -1 && (item.defense.dice.startsWith("red") || item.defense.dice.startsWith("orangereroll")))
+                        || (selectedValues.indexOf("manipulation") != -1 && (item.manipulation.dice.startsWith("red") || item.manipulation.dice.startsWith("orangereroll")));
+                }
+            },
+            
+            {
+                id: 'skills',
+                label: {
+                    'fr': "Compétences",
+                    'en': "Skills"
+                },
+                sort: true,
+                operator: "or/and",
+                values: (function() {
+                    var v = [];
+                    for (var i in Encyclopedia.skills.list)
+                    {
+                        var skill = Encyclopedia.skills.list[i];
+                        v.push({
+                            id: skill.id,
+                            label: skill.title
+                        })
+                    }
+                    return v;
+                })(),
+                filter: function(item, selectedValues) {
+                    for (var s in item.skills)
+                    {
+                        var skill = item.skills[s];
+                        if (selectedValues.indexOf(skill.id) != -1) return true;
+                    }
+                    return false;
+                }
+            }
         ]        
     },
     
     init: function() 
     {
-        $("#encyclopedia-heroes").append(Encyclopedia.displaySearchEngine(EncyclopediaHeroes._facets, "EncyclopediaHeroes.displayHeroes()", "ehs"));
+        $("#encyclopedia-heroes").append(Encyclopedia.displaySearchEngine(EncyclopediaHeroes._facets, "EncyclopediaHeroes.updateDisplayHeroes()", "ehs"));
         $("#encyclopedia-heroes").append("<div id='encyclopedia-heroessheet-wrapper'></div>");
         EncyclopediaHeroes.displayHeroes();
     },
     
     displayHeroes: function()
     {
-        Encyclopedia.updateFacets(EncyclopediaHeroes._facets, Encyclopedia.heroes.list, "ehs");
-        
         var heroes = "";
         
         Encyclopedia.heroes.list.sort(function(s1, s2) {
@@ -168,18 +216,35 @@ var EncyclopediaHeroes = {
                 return c; 
         });
         
-        var heroList = Encyclopedia.heroes.list.filter(Encyclopedia.filter(EncyclopediaHeroes._facets, "ehs"));
+        var heroList = Encyclopedia.heroes.list;
         for (var i in heroList)
         {
             i = parseInt(i);
             var hero = heroList[i];
                         
-            heroes += "<a href='javascript:void(0)' onclick='EncyclopediaHeroes.openSheet(\"" + hero.id + "\")'>";
+            heroes += "<a id='hero-" + hero.id + "' href='javascript:void(0)' onclick='EncyclopediaHeroes.openSheet(\"" + hero.id + "\")'>";
             heroes += HeroSheet._sheetCode(EncyclopediaHeroes._convertHeroToStudio(hero));
             heroes += "</a>";
         }
         
         $("#encyclopedia-heroessheet-wrapper").html(heroes);
+        EncyclopediaHeroes.updateDisplayHeroes();
+    },
+    
+    updateDisplayHeroes: function()
+    {
+        Encyclopedia.updateFacets(EncyclopediaHeroes._facets, Encyclopedia.heroes.list, "ehs");
+        
+        $("#encyclopedia-heroessheet-wrapper a").hide();
+        
+        var heroList = Encyclopedia.heroes.list.filter(Encyclopedia.filter(EncyclopediaHeroes._facets, "ehs"));
+        for (var i in heroList)
+        {
+            i = parseInt(i);
+            var hero = heroList[i];
+
+            $("#hero-" + hero.id).show();
+        }
     },
     
     _convertHeroToStudio: function(hero)

@@ -137,18 +137,52 @@ var EncyclopediaModels = {
     
     init: function() 
     {
-        $("#encyclopedia-models").append(Encyclopedia.displaySearchEngine(EncyclopediaModels._facets, "EncyclopediaModels.displayModels()", "ems"));
+        $("#encyclopedia-models").append(Encyclopedia.displaySearchEngine(EncyclopediaModels._facets, "EncyclopediaModels.updateDisplayModels()", "ems"));
         $("#encyclopedia-models").append("<div id='encyclopedia-models-wrapper'></div>");
         EncyclopediaModels.displayModels();
     },
     
     displayModels: function()
     {
-        Encyclopedia.updateFacets(EncyclopediaModels._facets, Encyclopedia.models.list, "ems");
-        
         var models = "";
         
         Encyclopedia.models.list.sort(function(s1, s2) { return EncyclopediaModels._findModelNames(s1).toLowerCase().localeCompare(EncyclopediaModels._findModelNames(s2).toLowerCase()); })
+        
+        var modelList = Encyclopedia.models.list;
+        var ignoredPrevious = 0;
+        for (var i in modelList)
+        {
+            i = parseInt(i);
+            var model = modelList[i];
+
+            if (i < modelList.length - 1
+                && modelList[i+1].id == model.id)
+            {
+                ignoredPrevious++;
+                continue;
+            }
+            
+            model = modelList[i - ignoredPrevious];
+            
+            models += "<a id='model-" + model.id + "' href='javascript:void(0)' data-count='" + (ignoredPrevious+1) + "' onclick='EncyclopediaModels.openModel(\"" + model.id + "\")'>";
+            models += "<div>";
+            models += "<img src='" + model.images[0] + "?version=" + Version + "'/>";
+            models += "<span>" + EncyclopediaModels._findModelNames(model) + "</span>"
+            models += "</div>";
+            models += "</a>";
+            
+            ignoredPrevious = 0;
+        }
+        
+        $("#encyclopedia-models-wrapper").html(models);
+        EncyclopediaModels.updateDisplayModels();
+    },
+    
+    updateDisplayModels: function()
+    {
+        Encyclopedia.updateFacets(EncyclopediaModels._facets, Encyclopedia.models.list, "ems");
+        
+        $("#encyclopedia-models-wrapper a").hide();
         
         var modelList = Encyclopedia.models.list.filter(Encyclopedia.filter(EncyclopediaModels._facets, "ems"));
         var ignoredPrevious = 0;
@@ -166,19 +200,12 @@ var EncyclopediaModels = {
             
             model = modelList[i - ignoredPrevious];
             
-            models += "<a href='javascript:void(0)' data-count='" + (ignoredPrevious+1) + "' onclick='EncyclopediaModels.openModel(\"" + model.id + "\")'>";
-            models += "<div>";
-            models += "<img src='" + model.images[0] + "?version=" + Version + "'/>";
-            models += "<span>" + EncyclopediaModels._findModelNames(model) + "</span>"
-            models += "</div>";
-            models += "</a>";
+            $("#model-" + model.id).attr('data-count', ignoredPrevious+1).show();
             
             ignoredPrevious = 0;
         }
-        
-        $("#encyclopedia-models-wrapper").html(models);
     },
-    
+
     _findModelNames: function(model)
     {
         var names = [];

@@ -29,11 +29,15 @@ var Encyclopedia = {
     _i18n: {
         'fr': {
             'menu': "Encyclopédie",
-            'copyright': "Données récupérées sur le site <a target='_blank' href='https://conan-companion.herokuapp.com/'>conan-companion.herokuapp.com</a> avec l'aimable autorisation de David Abel. Traductions françaises saisies par @cochon.<br/>Les photos des figurines et les textes associés ont été repris du site <a href='http://conan.paintings.free.fr/'>Conan paintings</a>."
+            'copyright': "Données récupérées sur le site <a target='_blank' href='https://conan-companion.herokuapp.com/'>conan-companion.herokuapp.com</a> avec l'aimable autorisation de David Abel. Traductions françaises saisies par @cochon.<br/>Les photos des figurines et les textes associés ont été repris du site <a href='http://conan.paintings.free.fr/'>Conan paintings</a>.",
+            'operatorAnd': "et",
+            'operatorOr': "ou"
         },
         'en': {
             'menu': "Encyclopedia",
-            'copyright': "Data collected on the site <a target='_blank' href='https://conan-companion.herokuapp.com/'>conan-companion.herokuapp.com</a> with the kind authorization of David Abel. French translations entered by @cochon.<br/>Models photos and associated texts where gather on the <a href='http://conan.paintings.free.fr/'>Conan paintings</a> site."
+            'copyright': "Data collected on the site <a target='_blank' href='https://conan-companion.herokuapp.com/'>conan-companion.herokuapp.com</a> with the kind authorization of David Abel. French translations entered by @cochon.<br/>Models photos and associated texts where gather on the <a href='http://conan.paintings.free.fr/'>Conan paintings</a> site.",
+            'operatorAnd': "and",
+            'operatorOr': "or"
         }
     },
     
@@ -148,6 +152,22 @@ var Encyclopedia = {
         });
     },
     
+    switchOperator: function(element)
+    {
+        var $e = $(element);
+        var $c = $e.children("span");
+        if ($e.attr('data-operator') == 'and')
+        {
+            $e.attr('data-operator', 'or');
+            $c.html(Encyclopedia._i18n[Language].operatorOr);
+        }
+        else
+        {
+            $e.attr('data-operator', 'and');
+            $c.html(Encyclopedia._i18n[Language].operatorAnd);
+        }
+    },
+    
     displaySearchEngine: function(facets, displayFunc, prefix)
     {
         var se = "<div class='search-engine'>";
@@ -156,8 +176,20 @@ var Encyclopedia = {
         {
             var facet = facets[f];
             
-            se += "<div data-mode='hide' class='facet' id='" + prefix + "-" + facet.id + "'>"
-            se += "<span>" + facet.label[Language] + "</span>"
+            se += "<div data-mode='hide' class='facet' id='" + prefix + "-" + facet.id + "'>";
+            se += "<span id='" + prefix + "-" + facet.id + "-span'"; 
+            if (facet.operator == "or/and")
+            {
+                se += " data-operator='and' onclick=\"Encyclopedia.switchOperator(this); " + displayFunc + "\""
+            }
+            se += ">"; 
+            se += facet.label[Language];
+            if (facet.operator == "or/and")
+            {
+                se += "<span >" + Encyclopedia._i18n[Language].operatorAnd + "</span>";
+            }
+            se += "</span>";
+            
             if (facet.values)
             {
                 for (var v in facet.values)
@@ -167,7 +199,7 @@ var Encyclopedia = {
                     var a = value.defaults ? " checked='checked'" : ""; 
                     
                     se += "<label>" 
-                        + "<input type='checkbox' id='" + prefix + "-" + facet.id + "-" + value.id + "' onclick='" + displayFunc + "' onchange='" + displayFunc + "'" + a + "/>"
+                        + "<input type='checkbox' id='" + prefix + "-" + facet.id + "-" + value.id + "' onchange='" + displayFunc + "'" + a + "/>"
                         + "<span>" 
                         + value.label[Language]
                         + "</span>"
@@ -188,6 +220,12 @@ var Encyclopedia = {
     },
     updateFacets: function(facets, items, prefix)
     {
+        $(".search-engine .facet label:not(.checked) input:checked").parent().addClass("checked");
+        $(".search-engine .facet label.checked input:not(:checked)").parent().removeClass("checked");
+
+        $(".search-engine .facet").removeClass("checked");
+        $(".search-engine .facet:not(.checked) label.checked").parent().addClass("checked");
+        
         for (var i in facets)
         {
             var facet = facets[i];
@@ -201,29 +239,30 @@ var Encyclopedia = {
                     var value = facet.values[v];
                     
                     var count = items.filter(Encyclopedia.filter(facets, prefix, facet, value)).length;
-                    if (count == max)
+                    if (count == max && !document.getElementById(prefix + "-" + facet.id + "-" + value.id).checked)
                     {
                         // useless facet
                         count = 0;
                     }
-                    $("#" + prefix + "-" + facet.id + "-" + value.id).parent().attr('data-count', count);
+                    document.getElementById(prefix + "-" + facet.id+ "-" + value.id).parentElement.setAttribute('data-count', count);
                     if (count) nonEmptyFacets++;
-                }                
-                $("#" + prefix + "-" + facet.id).attr("data-count", nonEmptyFacets);
-            }
-            if (facet.sort)
-            {
-                $("#" + prefix + "-" + facet.id + " label").sort(function (a,b) {
-                    var $a = $(a);
-                    var $b = $(b);
-                    
-                    var aCount = parseInt($a.attr("data-count"));
-                    var bCount = parseInt($b.attr("data-count"));
-                    
-                    if (aCount != bCount) return bCount - aCount;
-                    else return $a.text().localeCompare($b.text()); 
-                }).appendTo("#" + prefix + "-" + facet.id);
-                $("#" + prefix + "-" + facet.id + " a").appendTo("#" + prefix + "-" + facet.id);
+                }  
+                document.getElementById(prefix + "-" + facet.id).setAttribute("data-count", nonEmptyFacets);
+                
+                if (facet.sort)
+                {
+                    $("#" + prefix + "-" + facet.id + " label").sort(function (a,b) {
+                        var $a = $(a);
+                        var $b = $(b);
+                        
+                        var aCount = parseInt($a.attr("data-count"));
+                        var bCount = parseInt($b.attr("data-count"));
+                        
+                        if (aCount != bCount) return bCount - aCount;
+                        else return $a.text().localeCompare($b.text()); 
+                    }).appendTo("#" + prefix + "-" + facet.id);
+                    $("#" + prefix + "-" + facet.id + " a").appendTo("#" + prefix + "-" + facet.id);
+                }
             }
         }
         Encyclopedia.onResize();
@@ -234,6 +273,12 @@ var Encyclopedia = {
             for (var i in facets)
             {
                 var facet = facets[i];
+                var operator = facet.operator || 'or';
+                
+                if (operator == 'or/and')
+                {
+                    operator = document.getElementById(prefix + "-" + facet.id + "-span").getAttribute("data-operator");
+                }
                 
                 var selectedValues = [];
                 if (forcedFacet && facet.id == forcedFacet.id)
@@ -243,7 +288,9 @@ var Encyclopedia = {
                         selectedValues.push(forcedValue.id);
                     }
                 }
-                else
+
+                if (!(forcedFacet && facet.id == forcedFacet.id)
+                    || operator == 'and')
                 {
                     if (facet.values)
                     {
@@ -251,7 +298,7 @@ var Encyclopedia = {
                         {
                             var value = facet.values[v];
                             
-                            if ($("#" + prefix + "-" + facet.id + "-" + value.id)[0].checked)
+                            if (document.getElementById(prefix + "-" + facet.id + "-" + value.id).checked)
                             {
                                 selectedValues.push(value.id);
                             }
@@ -259,19 +306,42 @@ var Encyclopedia = {
                     }
                     else
                     {
-                        selectedValues.push($("#" + prefix + "-" + facet.id + "-input").val());
+                        selectedValues.push(document.getElementById(prefix + "-" + facet.id + "-input").value);
                     }
                 }
                 
-                if ((facet.values
-                    && selectedValues.length > 0
-                    && !facet.filter(e, selectedValues))
-                    
-                    ||
-                    
-                    (!facet.values && selectedValues[0] && !facet.filter(e, selectedValues[0])))
+                if (facet.values)
                 {
-                    return false;
+                    if (selectedValues.length > 0)
+                    {
+                        var match = operator == 'and';
+                        for (var l = 0; l < selectedValues.length; l++)
+                        {
+                            var selectedValue = selectedValues[l];
+                            var m = facet.filter(e, [selectedValue])
+                            
+                            if (operator == 'or')
+                            {
+                                match = match || m;
+                            }
+                            else
+                            {
+                                match = match && m;
+                            }
+                        }
+                        if (!match)
+                        {
+                            return false;
+                        }
+                    }
+                }
+                else
+                {
+                    // Text facet
+                    if (selectedValues[0] && !facet.filter(e, selectedValues[0]))
+                    {
+                        return false;
+                    }
                 }
             }
             

@@ -141,6 +141,7 @@ var EncyclopediaEquipments = {
                     'en': "Kind"
                 },
                 sort: true,
+                operator: "or/and",
                 values: [
                     {
                         id: "melee",
@@ -262,19 +263,50 @@ var EncyclopediaEquipments = {
     
     init: function() 
     {
-        $("#encyclopedia-equipment").append(Encyclopedia.displaySearchEngine(EncyclopediaEquipments._facets, "EncyclopediaEquipments.displayEquipments()", "ee"));
+        $("#encyclopedia-equipment").append(Encyclopedia.displaySearchEngine(EncyclopediaEquipments._facets, "EncyclopediaEquipments.updateDisplayEquipments()", "ee"));
         $("#encyclopedia-equipment").append("<div id='encyclopedia-equipment-wrapper'></div>");
         EncyclopediaEquipments.displayEquipments();
     },
     
     displayEquipments: function()
     {
-        Encyclopedia.updateFacets(EncyclopediaEquipments._facets, Encyclopedia.equipments.list, "ee");
-        
         var equipments = "";
         
         Encyclopedia.equipments.list.sort(function(s1, s2) { return !s2.title[Language] ? 1 : (!s1.title[Language] ? -1 : s1.title[Language].toLowerCase().localeCompare(s2.title[Language].toLowerCase())); })
 
+        var equipmentList = Encyclopedia.equipments.list;
+        var ignoredPrevious = 0;
+        for (var i in equipmentList)
+        {
+            i = parseInt(i);
+            var equipment = equipmentList[i];
+            
+            if (i < equipmentList.length - 1
+                && equipmentList[i+1].id == equipment.id)
+            {
+                ignoredPrevious++;
+                continue;
+            }
+            
+            equipment = equipmentList[i - ignoredPrevious];
+            
+            equipments += "<a id='equipment-" + equipment.id + "' href='javascript:void(0)' data-count='" + (ignoredPrevious+1) + "' onclick='EncyclopediaEquipments.openEquipment(\"" + equipment.id + "\")'>";
+            equipments += CardEquipment._cardCode(EncyclopediaEquipments._convertEquipmentToStudio(equipment));
+            equipments += "</a>";
+            
+            ignoredPrevious = 0;
+        }
+        
+        $("#encyclopedia-equipment-wrapper").html(equipments);
+        EncyclopediaEquipments.updateDisplayEquipments()
+    },
+    
+    updateDisplayEquipments: function()
+    {
+        Encyclopedia.updateFacets(EncyclopediaEquipments._facets, Encyclopedia.equipments.list, "ee");
+        
+        $("#encyclopedia-equipment-wrapper a").hide();
+        
         var equipmentList = Encyclopedia.equipments.list.filter(Encyclopedia.filter(EncyclopediaEquipments._facets, "ee"));
         var ignoredPrevious = 0;
         for (var i in equipmentList)
@@ -291,14 +323,10 @@ var EncyclopediaEquipments = {
             
             equipment = equipmentList[i - ignoredPrevious];
             
-            equipments += "<a href='javascript:void(0)' data-count='" + (ignoredPrevious+1) + "' onclick='EncyclopediaEquipments.openEquipment(\"" + equipment.id + "\")'>";
-            equipments += CardEquipment._cardCode(EncyclopediaEquipments._convertEquipmentToStudio(equipment));
-            equipments += "</a>";
+            $("#equipment-" + equipment.id).attr('data-count', ignoredPrevious+1).show();
             
             ignoredPrevious = 0;
         }
-        
-        $("#encyclopedia-equipment-wrapper").html(equipments);
     },
     
     _convertEquipmentToStudio: function(equipment, i)

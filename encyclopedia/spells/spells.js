@@ -196,6 +196,7 @@ var EncyclopediaSpells = {
                     'fr': "Camp",
                     'en': "Side"
                 },
+                operator: "or/and",
                 values: [
                     {
                         id: "heroes",
@@ -225,6 +226,7 @@ var EncyclopediaSpells = {
                     'en': "Theme"
                 },
                 sort: true,
+                operator: "or/and",
                 values: [
                     {
                         id: "forAttack",
@@ -328,18 +330,49 @@ var EncyclopediaSpells = {
     
     init: function() 
     {
-        $("#encyclopedia-spell").append(Encyclopedia.displaySearchEngine(EncyclopediaSpells._facets, "EncyclopediaSpells.displaySpells()", "es"));
+        $("#encyclopedia-spell").append(Encyclopedia.displaySearchEngine(EncyclopediaSpells._facets, "EncyclopediaSpells.updateDisplaySpells()", "es"));
         $("#encyclopedia-spell").append("<div id='encyclopedia-spell-wrapper'></div>");
         EncyclopediaSpells.displaySpells();
     },
     
     displaySpells: function()
     {
-        Encyclopedia.updateFacets(EncyclopediaSpells._facets, Encyclopedia.spells.list, "es");
-        
         var spells = "";
         
         Encyclopedia.spells.list.sort(function(s1, s2) { return s1.title[Language].toLowerCase().localeCompare(s2.title[Language].toLowerCase()); })
+        
+        var spellList = Encyclopedia.spells.list;
+        var ignoredPrevious = 0;
+        for (var i in spellList)
+        {
+            i = parseInt(i);
+            var spell = spellList[i];
+                        
+            if (i < spellList.length - 1
+                && spellList[i+1].id == spell.id)
+            {
+                ignoredPrevious++;
+                continue;
+            }
+            
+            spell = spellList[i - ignoredPrevious];
+
+            spells += "<a id='spell-" + spell.id + "' href='javascript:void(0)' data-count='" + (ignoredPrevious+1) + "' onclick='EncyclopediaSpells.openSpell(\"" + spell.id + "\")'>";
+            spells += CardSpell._cardCode(EncyclopediaSpells._convertSpellToStudio(spell));
+            spells += "</a>";
+            
+            ignoredPrevious = 0;
+        }
+        
+        $("#encyclopedia-spell-wrapper").html(spells);
+        EncyclopediaSpells.updateDisplaySpells();
+    },
+
+    updateDisplaySpells: function()
+    {
+        Encyclopedia.updateFacets(EncyclopediaSpells._facets, Encyclopedia.spells.list, "es");
+        
+        $("#encyclopedia-spell-wrapper a").hide();
         
         var spellList = Encyclopedia.spells.list.filter(Encyclopedia.filter(EncyclopediaSpells._facets, "es"));
         var ignoredPrevious = 0;
@@ -356,17 +389,13 @@ var EncyclopediaSpells = {
             }
             
             spell = spellList[i - ignoredPrevious];
-
-            spells += "<a href='javascript:void(0)' data-count='" + (ignoredPrevious+1) + "' onclick='EncyclopediaSpells.openSpell(\"" + spell.id + "\")'>";
-            spells += CardSpell._cardCode(EncyclopediaSpells._convertSpellToStudio(spell));
-            spells += "</a>";
+            
+            $("#spell-" + spell.id).attr('data-count', ignoredPrevious+1).show();
             
             ignoredPrevious = 0;
         }
-        
-        $("#encyclopedia-spell-wrapper").html(spells);
     },
-    
+
     _convertSpellToStudio: function(spell)
     {
         return {

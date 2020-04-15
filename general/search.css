@@ -11,6 +11,18 @@
     margin-bottom: 2px;
     white-space: nowrap;
 }
+.search-engine .facet > span span {
+    display: inline-block;
+    font-family: 'Moolbor';
+    vertical-align: middle;
+    padding-top: 4px;
+    margin-left: 5px;
+    line-height: 50%;
+}
+.search-engine .facet > span span:before { content: "("; }
+.search-engine .facet > span span:after { content: ")"; }
+
+
 .search-engine .facet input[type=text] {
     width: 100%;
 }
@@ -32,8 +44,8 @@
     content: " (" attr(data-count) ")";
 }
 
-.search-engine .facet[data-count='0'],
-.search-engine .facet label[data-count='0'] {
+.search-engine .facet[data-count='0']:not(.checked),
+.search-engine .facet label[data-count='0']:not(.checked) {
     display: none;
 }
 
