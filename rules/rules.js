@@ -304,8 +304,8 @@ var ConanRules = {
         for (var i = 0; i <= size; i+=2)
         {
             s += "<div>"
-            if (i > 0) s += "<img data-page='" + i + "' src='" + url + "/thumbnails/" + i + ".jpg?version=" + Version + "'/>"
-            if (i < size) s += "<img data-page='" + (i+1) + "' src='" + url + "/thumbnails/" + (i+1) + ".jpg?version=" + Version + "'/>"
+            if (i > 0) s += "<img loading=\"lazy\" data-page='" + i + "' src='" + url + "/thumbnails/" + i + ".jpg?version=" + Version + "'/>"
+            if (i < size) s += "<img loading=\"lazy\" data-page='" + (i+1) + "' src='" + url + "/thumbnails/" + (i+1) + ".jpg?version=" + Version + "'/>"
             s += "</div>"
         }
         s += "</div>"
@@ -313,7 +313,7 @@ var ConanRules = {
         // pages
         for (var i = 1; i <= size; i++)
         {
-            s += "<iframe data-page='" + i + "' src=\"" + url + "/" + i + ".html?version=" + Version + "\"></iframe>";
+            s += "<iframe loading=\"lazy\" data-page='" + i + "' src=\"" + url + "/" + i + ".html?version=" + Version + "\"></iframe>";
         }
         
         return s;
@@ -437,7 +437,7 @@ var ConanRules = {
     _skill2HTML: function(id, type, image, title, text)
     {
         return "<div class='skills-skill'>"
-            +   "<img src='" + image + "?version=" + Version + "'/>"
+            +   "<img loading=\"lazy\" src='" + image + "?version=" + Version + "'/>"
             +   "<div class='skills-title'>" + title + "</div>"
             +   "<div class='skills-text'>" + ConanRules._replace(text) + "</div>"
             +   "<div class='clear'></div>"

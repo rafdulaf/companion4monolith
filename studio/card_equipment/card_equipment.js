@@ -173,7 +173,7 @@ var CardEquipment = {
                     + "<img src=\"studio/card_equipment/img/background.png?version=" + Version + "\"/>"
                 + "</picture>";
                 
-        var imageCode = "<div class=\"image\"><img src=\"" + card.image + "\" style=\"left: " + card.imagelocation.x + "%; top: " + card.imagelocation.y + "%; width: " + card.imagezoom + "%; transform: translate(-50%, -50%) rotate(" + card.imagerotation + "deg)\"/></div>"; 
+        var imageCode = "<div class=\"image\"><img loading=\"lazy\" src=\"" + card.image + "\" style=\"left: " + card.imagelocation.x + "%; top: " + card.imagelocation.y + "%; width: " + card.imagezoom + "%; transform: translate(-50%, -50%) rotate(" + card.imagerotation + "deg)\"/></div>"; 
                 
         if (card.image && !card.imageatfront)
         {
