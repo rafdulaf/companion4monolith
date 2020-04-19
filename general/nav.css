@@ -297,7 +297,12 @@
 .nav-wrapper .slick-slide {
     opacity: 0;
 }
+.nav-wrapper .slick-slide:not(.slick-current) > * {
+    display: none;
+}
+
 .nav-wrapper .slick-slide.slick-current {
+    display: block;
     opacity: 1;
     transition-property: opacity;
     transition-duration: 0.5s;
