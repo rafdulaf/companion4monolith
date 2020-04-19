@@ -2,6 +2,7 @@
     "list": [
         {
             "id": "belit",
+            "thumb": "data/models/img/belit_sd.jpg",
             "images": ["data/models/img/belit_1.jpg", "data/models/img/belit_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "origins": ["corebox", "stretchgoal", "king"]
@@ -9,6 +10,7 @@
     
         {
             "id": "conan",
+            "thumb": "data/models/img/conan_sd.jpg",
             "images": ["data/models/img/conan_1.jpg", "data/models/img/conan_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "origins": ["corebox", "stretchgoal", "king"]
@@ -16,6 +18,7 @@
     
         {
             "id": "hadrathus",
+            "thumb": "data/models/img/hadrathus_sd.jpg",
             "images": ["data/models/img/hadrathus_1.jpg", "data/models/img/hadrathus_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "origins": ["corebox", "stretchgoal", "king"]
@@ -23,6 +26,7 @@
     
         {
             "id": "shevatas",
+            "thumb": "data/models/img/shevatas_sd.jpg",
             "images": ["data/models/img/shevatas_1.jpg", "data/models/img/shevatas_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "origins": ["corebox", "stretchgoal", "king"]
@@ -30,6 +34,7 @@
     
         {
             "id": "amra-the-lion",
+            "thumb": "data/models/img/amra-the-lion_sd.jpg",
             "images": ["data/models/img/amra-the-lion_1.jpg", "data/models/img/amra-the-lion_2.jpg"],
             "paint": { "name": "gabzeta", "link": "https://the-overlord.com/index.php?/profile/232-gabzeta/"},
             "origins": ["king"]
@@ -37,6 +42,7 @@
     
         {
             "id": "ngora",
+            "thumb": "data/models/img/ngora_sd.jpg",
             "images": ["data/models/img/ngora_1.jpg", "data/models/img/ngora_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "origins": ["king"]
@@ -44,6 +50,7 @@
     
         {
             "id": "valeria",
+            "thumb": "data/models/img/valeria_sd.jpg",
             "images": ["data/models/img/valeria_1.jpg", "data/models/img/valeria_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "origins": ["king"]
@@ -51,13 +58,15 @@
     
         {
             "id": "zelata",
-           "images": ["data/models/img/zelata_1.jpg"],
+            "thumb": "data/models/img/zelata_sd.jpg",
+            "images": ["data/models/img/zelata_1.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "origins": ["king"]
         },
     
         {
             "id": "amboola",
+            "thumb": "data/models/img/amboola_sd.jpg",
             "images": ["data/models/img/amboola_1.jpg", "data/models/img/amboola_2.jpg", "data/models/img/amboola_3.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "origins": ["stretchgoal", "king"]
@@ -65,6 +74,7 @@
     
         {
             "id": "balthus",
+            "thumb": "data/models/img/balthus_sd.jpg",
             "images": ["data/models/img/balthus_1.jpg", "data/models/img/balthus_2.jpg"],
             "paint": { "name": "gabzeta", "link": "https://the-overlord.com/index.php?/profile/232-gabzeta/"},
             "origins": ["stretchgoal", "king"]
@@ -72,6 +82,7 @@
     
         {
             "id": "conan-general",
+            "thumb": "data/models/img/conan-general_sd.jpg",
             "images": ["data/models/img/conan-general_1.jpg", "data/models/img/conan-general_2.jpg"],
             "paint": { "name": "Codicier Ignatius", "link": "https://www.blogger.com/profile/15313921985581945781"},
             "origins": ["stretchgoal", "king"]
@@ -79,6 +90,7 @@
     
         {
             "id": "conan-mercenary",
+            "thumb": "data/models/img/conan-mercenary_sd.jpg",
             "images": ["data/models/img/conan-mercenary_1.jpg", "data/models/img/conan-mercenary_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "origins": ["stretchgoal", "king"]
@@ -86,6 +98,7 @@
     
         {
             "id": "conan-wanderer",
+            "thumb": "data/models/img/conan-wanderer_sd.jpg",
             "images": ["data/models/img/conan-wanderer_1.jpg", "data/models/img/conan-wanderer_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "origins": ["stretchgoal", "king"]
@@ -93,6 +106,7 @@
     
         {
             "id": "conan-warlord",
+            "thumb": "data/models/img/conan-warlord_sd.jpg",
             "images": ["data/models/img/conan-warlord_1.jpg", "data/models/img/conan-warlord_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "origins": ["stretchgoal", "king"]
@@ -100,6 +114,7 @@
     
         {
             "id": "kerim-shah",
+            "thumb": "data/models/img/kerim-shah_sd.jpg",
             "images": ["data/models/img/kerim-shah_1.jpg"],
             "paint": null,
             "origins": ["stretchgoal", "king"]
@@ -107,6 +122,7 @@
     
         {
             "id": "olgerd-vladislav",
+            "thumb": "data/models/img/olgerd-vladislav_sd.jpg",
             "images": ["data/models/img/olgerd-vladislav_1.jpg", "data/models/img/olgerd-vladislav_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "origins": ["stretchgoal", "king"]
@@ -114,6 +130,7 @@
     
         {
             "id": "pallantides",
+            "thumb": "data/models/img/pallantides_sd.jpg",
             "images": ["data/models/img/pallantides_1.jpg", "data/models/img/pallantides_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "origins": ["stretchgoal", "king"]
@@ -121,6 +138,7 @@
     
         {
             "id": "pelias",
+            "thumb": "data/models/img/pelias_sd.jpg",
             "images": ["data/models/img/pelias_1.jpg"],
             "paint": { "name": "gabzeta", "link": "https://the-overlord.com/index.php?/profile/232-gabzeta/"},
             "origins": ["stretchgoal", "king"]
@@ -128,6 +146,7 @@
     
         {
             "id": "savage-belit",
+            "thumb": "data/models/img/savage-belit_sd.jpg",
             "images": ["data/models/img/savage-belit_1.jpg", "data/models/img/savage-belit_2.jpg"],
             "paint": { "name": "gabzeta", "link": "https://the-overlord.com/index.php?/profile/232-gabzeta/"},
             "origins": ["stretchgoal", "king"]
@@ -135,6 +154,7 @@
     
         {
             "id": "taurus",
+            "thumb": "data/models/img/taurus_sd.jpg",
             "images": ["data/models/img/taurus_1.jpg", "data/models/img/taurus_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "origins": ["stretchgoal", "king"]
@@ -142,6 +162,7 @@
     
         {
             "id": "constantius",
+            "thumb": "data/models/img/constantius_sd.jpg",
             "images": ["data/models/img/constantius_1.jpg"],
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "origins": ["stretchgoal", "king"]
@@ -149,6 +170,7 @@
     
         {
             "id": "skuthus",
+            "thumb": "data/models/img/skuthus_sd.jpg",
             "images": ["data/models/img/skuthus_1.jpg", "data/models/img/skuthus_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "origins": ["stretchgoal", "king"]
@@ -156,6 +178,7 @@
     
         {
             "id": "thak",
+            "thumb": "data/models/img/thak_sd.jpg",
             "images": ["data/models/img/thak_1.jpg", "data/models/img/thak_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "origins": ["stretchgoal", "king"]
@@ -163,6 +186,7 @@
     
         {
             "id": "zaporavo",
+            "thumb": "data/models/img/zaporavo_sd.jpg",
             "images": ["data/models/img/zaporavo_1.jpg", "data/models/img/zaporavo_2.jpg"],
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
             "origins": ["stretchgoal", "king"]
@@ -170,6 +194,7 @@
     
         {
             "id": "zogar-sag",
+            "thumb": "data/models/img/zogar-sag_sd.jpg",
             "images": ["data/models/img/zogar-sag_1.jpg", "data/models/img/zogar-sag_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "origins": ["stretchgoal", "king"]
@@ -177,6 +202,7 @@
     
         {
             "id": "vanir-valkyrie",
+            "thumb": "data/models/img/vanir-valkyrie_sd.jpg",
             "images": ["data/models/img/vanir-valkyrie_1.jpg", "data/models/img/vanir-valkyrie_2.jpg"],
             "paint": null,
             "origins": ["valvan"]
@@ -184,6 +210,7 @@
     
         {
             "id": "yogah-of-yag",
+            "thumb": "data/models/img/yogah-of-yag_sd.jpg",
             "images": ["data/models/img/yogah-of-yag_1.jpg"],
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
             "origins": ["yoy"]
@@ -191,6 +218,7 @@
     
         {
             "id": "belit-the-princess",
+            "thumb": "data/models/img/belit-the-princess_sd.jpg",
             "images": ["data/models/img/belit-the-princess_1.jpg"],
             "paint": null,
             "origins": ["xcbox"]
@@ -198,6 +226,7 @@
     
         {
             "id": "king-conan",
+            "thumb": "data/models/img/king-conan_sd.jpg",
             "images": ["data/models/img/king-conan_1.jpg"],
             "paint": null,
             "origins": ["xcbox"]
@@ -205,6 +234,7 @@
     
         {
             "id": "belit-queen-of-the-black-coast",
+            "thumb": "data/models/img/belit-queen-of-the-black-coast_sd.jpg",
             "images": ["data/models/img/belit-queen-of-the-black-coast_1.jpg", "data/models/img/belit-queen-of-the-black-coast_2.jpg", "data/models/img/belit-queen-of-the-black-coast_3.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "origins": ["bbox"]
@@ -212,6 +242,7 @@
     
         {
             "id": "conan-the-thief",
+            "thumb": "data/models/img/conan-the-thief_sd.jpg",
             "images": ["data/models/img/conan-the-thief_1.jpg", "data/models/img/conan-the-thief_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "origins": ["bbox"]
@@ -219,6 +250,7 @@
     
         {
             "id": "taramis-salome",
+            "thumb": "data/models/img/taramis-salome_sd.jpg",
             "images": ["data/models/img/taramis-salome_1.jpg"],
             "paint": null,
             "origins": ["ppbox"]
@@ -226,6 +258,7 @@
     
         {
             "id": "valeria-warrior",
+            "thumb": "data/models/img/valeria-warrior_sd.jpg",
             "images": ["data/models/img/valeria-warrior_1.jpg"],
             "paint": null,
             "origins": ["ppbox"]
@@ -233,6 +266,7 @@
     
         {
             "id": "niord",
+            "thumb": "data/models/img/niord_sd.jpg",
             "images": ["data/models/img/niord_1.jpg", "data/models/img/niord_2.jpg"],
             "paint": null,
             "origins": ["nordheim"]
@@ -240,6 +274,7 @@
     
         {
             "id": "shentu",
+            "thumb": "data/models/img/shentu_sd.jpg",
             "images": ["data/models/img/shentu_1.jpg", "data/models/img/shentu_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "origins": ["khitai"]
@@ -247,6 +282,7 @@
     
         {
             "id": "ikhmet",
+            "thumb": "data/models/img/ikhmet_sd.jpg",
             "images": ["data/models/img/ikhmet_1.jpg"],
             "paint": null,
             "origins": ["stygia"]

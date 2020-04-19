@@ -166,7 +166,7 @@ var EncyclopediaModels = {
             
             models += "<a id='model-" + model.id + "' href='javascript:void(0)' data-count='" + (ignoredPrevious+1) + "' onclick='EncyclopediaModels.openModel(\"" + model.id + "\")'>";
             models += "<div>";
-            models += "<img src='" + model.images[0] + "?version=" + Version + "'/>";
+            models += "<img src='" + model.thumb + "?version=" + Version + "'/>";
             models += "<span>" + EncyclopediaModels._findModelNames(model) + "</span>"
             models += "</div>";
             models += "</a>";
@@ -331,7 +331,7 @@ var EncyclopediaModels = {
             s += "<a href='javascript:void(0)' onclick='EncyclopediaModels.openModel(\"" + id + "\")'>";
             if (image)
             {
-                s += "<img src='" + model.images[0] + "?version=" + Version + "'/>";
+                s += "<img src='" + model.thumb + "?version=" + Version + "'/>";
                 s += "<span>" + name + "</span>"
             }
             else
