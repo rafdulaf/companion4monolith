@@ -101,7 +101,7 @@ var ConanAbout = {
     init: function()
     {
         const isInStandaloneMode = window.matchMedia('(display-mode: standalone)').matches || (window.navigator.standalone) || document.referrer.includes('android-app://');
-alert("isInStandaloneMode: " + isInStandaloneMode)
+
         if (!isInStandaloneMode) {
             Menu.addMenu(ConanAbout._i18n[Language].fullscreen, "about-fullscreen", "ConanAbout._toggleFullscreen()");
         }
