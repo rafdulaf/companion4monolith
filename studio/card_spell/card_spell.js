@@ -152,7 +152,10 @@ var CardSpell = {
     
     _cardCode: function(card) {
         var code = "<div class=\"spell card" + (card.imageEffect !== false ? " effect" : "") + "\">"
-                + "<img class=\"background\" src=\"studio/card_spell/img/background.png?version=" + Version + "\"/>";
+                + "<picture class=\"background\">"
+                    + "<source media=\"print\" srcset=\"studio/card_spell/img/background_hd.png?version=" + Version + "\"/>"
+                    + "<img src=\"studio/card_spell/img/background.png?version=" + Version + "\"/>"
+                + "</picture>";
         
         code += "<div class=\"name" + (card.longName === true ? " long" : "") + "\">" + card.name + "</div>";
         code += "<div class=\"text\" style=\"font-size: " + card.textSize + "%; line-height: " + card.textInter + "%; \">" + CardSpell._replace(card.text) + "</div>";

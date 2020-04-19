@@ -41,15 +41,21 @@ var HeroSheet = {
     
     _sheetCode: function(sheet) {
         var code = "<div class=\"herosheet sheet\">";
-        
-        code += "<img class=\"background-l1\" src=\"studio/hero_sheet/img/background_layer_1.png?version=" + Version + "\"/>";
+
+        code += "<picture class=\"background-l1\">"
+                    + "<source media=\"print\" srcset=\"studio/hero_sheet/img/background_layer_1hd.png?version=" + Version + "\"/>"
+                    + "<img src=\"studio/hero_sheet/img/background_layer_1.png?version=" + Version + "\"/>"
+                + "</picture>";
         
         if (sheet.image)
         {
             code += "<div class=\"image\"><img src=\"" + sheet.image + "\" style=\"left: " + sheet.imagelocation.x + "%; top: " + sheet.imagelocation.y + "%; height: " + sheet.imagezoom + "%; transform: translate(0%, -50%) rotate(" + sheet.imagerotation + "deg)\"/></div>";
         }
         
-        code += "<img class=\"background-l3\" src=\"studio/hero_sheet/img/background_layer_3.png?version=" + Version + "\"/>";
+        code += "<picture class=\"background-l3\">"
+                    + "<source media=\"print\" srcset=\"studio/hero_sheet/img/background_layer_3hd.png?version=" + Version + "\"/>"
+                    + "<img src=\"studio/hero_sheet/img/background_layer_3.png?version=" + Version + "\"/>"
+                + "</picture>";
 
         if (sheet.name)
         {
