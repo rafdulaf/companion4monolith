@@ -302,7 +302,6 @@
 }
 
 .nav-wrapper .slick-slide.slick-current {
-    display: block;
     opacity: 1;
     transition-property: opacity;
     transition-duration: 0.5s;
