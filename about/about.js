@@ -100,9 +100,13 @@ var ConanAbout = {
 
     init: function()
     {
-        Menu.addMenu(ConanAbout._i18n[Language].fullscreen, "about-fullscreen", "ConanAbout._toggleFullscreen()");
+        const isInStandaloneMode = window.matchMedia('(display-mode: standalone)').matches || (window.navigator.standalone) || document.referrer.includes('android-app://');
+alert("isInStandaloneMode: " + isInStandaloneMode)
+        if (!isInStandaloneMode) {
+            Menu.addMenu(ConanAbout._i18n[Language].fullscreen, "about-fullscreen", "ConanAbout._toggleFullscreen()");
+        }
         
-        Menu.addMenu(ConanAbout._i18n[Language].custom, "about-custom", "ConanAbout._custom()", true);
+        Menu.addMenu(ConanAbout._i18n[Language].custom, "about-custom", "ConanAbout._custom()", !isInStandaloneMode);
         Menu.addMenu(ConanAbout._i18n[Language].preferences, "about-preferences", "ConanAbout._preferences()");
         
         Menu.addMenu(ConanAbout._i18n[Language].contribute, "about-contribute", "ConanAbout._contribute()", true);
