@@ -65,7 +65,7 @@
     }
 }
 
-.card.equipement picture.background {
+.card.equipement picture.background img {
     position: absolute;
     width: 147.5%;
     left: -24.5%;

@@ -102,16 +102,16 @@
     }
 }
 
-.sheet.herosheet picture.background-l1,
+.sheet.herosheet picture.background-l1 img,
 .sheet.herosheet div.image,
-.sheet.herosheet picture.background-l3 {
+.sheet.herosheet picture.background-l3 img {
     position: absolute;
     left: -3.5%;
     top: -6.1%;
 }
 
-.sheet.herosheet picture.background-l1,
-.sheet.herosheet picture.background-l3 {
+.sheet.herosheet picture.background-l1 img,
+.sheet.herosheet picture.background-l3 img {
     width: 107%;
 }
 

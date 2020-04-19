@@ -65,7 +65,7 @@
     }
 }
 
-.card.spell picture.background {
+.card.spell picture.background img {
     position: absolute;
     width: 137%;
     left: -18.5%;
