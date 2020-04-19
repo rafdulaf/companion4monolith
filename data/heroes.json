@@ -38,6 +38,7 @@
             ],
              
             "image": "data/heroes/img/belit.png",
+            "imageHD": "data/heroes/img/belit_hd.png",
             "image_zoom": "176",
             "image_location": { "x": "-12", "y": "56" },
             "model": "belit",
@@ -82,6 +83,7 @@
             ],
             
             "image": "data/heroes/img/conan.png",
+            "imageHD": "data/heroes/img/conan_hd.png",
             "image_zoom": "130",
             "image_location": { "x": "0", "y": "44" },
             "model": "conan",
@@ -124,6 +126,7 @@
             ],
             
             "image": "data/heroes/img/hadrathus.png",
+            "imageHD": "data/heroes/img/hadrathus_hd.png",
             "image_zoom": "131",
             "image_location": { "x": "-1", "y": "49" },
             "model": "hadrathus",
@@ -168,6 +171,7 @@
             ],
             
             "image": "data/heroes/img/shevatas.png",
+            "imageHD": "data/heroes/img/shevatas_hd.png",
             "image_zoom": "157",
             "image_location": { "x": "1", "y": "52" },
             "model": "shevatas",
@@ -212,6 +216,7 @@
             ],
             
             "image": "data/heroes/img/amra-the-lion.png",
+            "imageHD": "data/heroes/img/amra-the-lion_hd.png",
             "image_zoom": "119",
             "image_location": { "x": "7", "y": "61" },
             "model": "amra-the-lion",
@@ -256,6 +261,7 @@
             ],
             
             "image": "data/heroes/img/ngora.png",
+            "imageHD": "data/heroes/img/ngora_hd.png",
             "image_zoom": "145",
             "image_location": { "x": "-2", "y": "63" },
             "model": "ngora",
@@ -298,6 +304,7 @@
             ],
             
             "image": "data/heroes/img/valeria.png",
+            "imageHD": "data/heroes/img/valeria_hd.png",
             "image_zoom": "128",
             "image_location": { "x": "-7", "y": "71" },
             "model": "valeria",
@@ -343,6 +350,7 @@
             ],
             
             "image": "data/heroes/img/zelata.png",
+            "imageHD": "data/heroes/img/zelata_hd.png",
             "image_zoom": "110",
             "image_location": { "x": "3", "y": "59" },
             "model": "zelata",
@@ -386,6 +394,7 @@
             ],
             
             "image": "data/heroes/img/amboola.png",
+            "imageHD": "data/heroes/img/amboola_hd.png",
             "image_zoom": "111",
             "image_location": { "x": "11", "y": "62" },
             "model": "amboola",
@@ -431,6 +440,7 @@
             ],
             
             "image": "data/heroes/img/balthus.png",
+            "imageHD": "data/heroes/img/balthus_hd.png",
             "image_zoom": "136",
             "image_location": { "x": "2", "y": "51" },
             "model": "balthus",
@@ -479,6 +489,7 @@
             ],
             
             "image": "data/heroes/img/conan-general.png",
+            "imageHD": "data/heroes/img/conan-general_hd.png",
             "image_zoom": "115",
             "image_location": { "x": "-2", "y": "53" },
             "model": "conan-general",
@@ -527,6 +538,7 @@
             ],
             
             "image": "data/heroes/img/conan-mercenary.png",
+            "imageHD": "data/heroes/img/conan-mercenary_hd.png",
             "image_zoom": "143",
             "image_location": { "x": "-6", "y": "70" },
             "model": "conan-mercenary",
@@ -575,6 +587,7 @@
             ],
             
             "image": "data/heroes/img/conan-wanderer.png",
+            "imageHD": "data/heroes/img/conan-wanderer_hd.png",
             "image_zoom": "100",
             "image_location": { "x": "-9", "y": "56" },
             "model": "conan-wanderer",
@@ -623,6 +636,7 @@
             ],
             
             "image": "data/heroes/img/conan-warlord.png",
+            "imageHD": "data/heroes/img/conan-warlord_hd.png",
             "image_zoom": "117",
             "image_location": { "x": "-1", "y": "65" },
             "model": "conan-warlord",
@@ -667,6 +681,7 @@
             ],
             
             "image": "data/heroes/img/kerim-shah.png",
+            "imageHD": "data/heroes/img/kerim-shah_hd.png",
             "image_zoom": "133",
             "image_location": { "x": "-1", "y": "58" },
             "model": "kerim-shah",
@@ -710,6 +725,7 @@
             ],
             
             "image": "data/heroes/img/olgerd-vladislav.png",
+            "imageHD": "data/heroes/img/olgerd-vladislav_hd.png",
             "image_zoom": "125",
             "image_location": { "x": "-1", "y": "64" },
             "model": "olgerd-vladislav",
@@ -754,6 +770,7 @@
             ],
             
             "image": "data/heroes/img/pallantides.png",
+            "imageHD": "data/heroes/img/pallantides_hd.png",
             "image_zoom": "130",
             "image_location": { "x": "2", "y": "64" },
             "model": "pallantides",
@@ -798,6 +815,7 @@
             ],
             
             "image": "data/heroes/img/pelias.png",
+            "imageHD": "data/heroes/img/pelias_hd.png",
             "image_zoom": "115",
             "image_location": { "x": "10", "y": "64" },
             "model": "pelias",
@@ -846,6 +864,7 @@
             ],
             
             "image": "data/heroes/img/savage-belit.png",
+            "imageHD": "data/heroes/img/savage-belit_hd.png",
             "image_zoom": "135",
             "image_location": { "x": "-13", "y": "76" },
             "model": "savage-belit",
@@ -890,6 +909,7 @@
             ],
             
             "image": "data/heroes/img/taurus.png",
+            "imageHD": "data/heroes/img/taurus_hd.png",
             "image_zoom": "166",
             "image_location": { "x": "-6", "y": "56" },
             "model": "taurus",
@@ -933,6 +953,7 @@
             ],
             
             "image": "data/heroes/img/constantius.png",
+            "imageHD": "data/heroes/img/constantius_hd.png",
             "image_zoom": "143",
             "image_location": { "x": "-8", "y": "72" },
             "model": "constantius",
@@ -963,6 +984,7 @@
             ],
             
             "image": "data/heroes/img/skuthus.png",
+            "imageHD": "data/heroes/img/skuthus_hd.png",
             "image_zoom": "119",
             "image_location": { "x": "4", "y": "64" },
             "model": "skuthus",
@@ -1006,6 +1028,7 @@
             ],
             
             "image": "data/heroes/img/thak.png",
+            "imageHD": "data/heroes/img/thak_hd.png",
             "image_zoom": "139",
             "image_location": { "x": "-5", "y": "49" },
             "model": "thak",
@@ -1050,6 +1073,7 @@
             ],
             
             "image": "data/heroes/img/zaporavo.png",
+            "imageHD": "data/heroes/img/zaporavo_hd.png",
             "image_zoom": "124",
             "image_location": { "x": "3", "y": "60" },
             "model": "zaporavo",
@@ -1093,6 +1117,7 @@
             ],
             
             "image": "data/heroes/img/zogar-sag.png",
+            "imageHD": "data/heroes/img/zogar-sag_hd.png",
             "image_zoom": "135",
             "image_location": { "x": "2", "y": "42" },
             "model": "zogar-sag",
@@ -1137,6 +1162,7 @@
             ],
             
             "image": "data/heroes/img/vanir-valkyrie.png",
+            "imageHD": "data/heroes/img/vanir-valkyrie_hd.png",
             "image_zoom": "121",
             "image_location": { "x": "5.5", "y": "46" },
             "model": "vanir-valkyrie",
@@ -1181,6 +1207,7 @@
             ],
             
             "image": "data/heroes/img/yogah-of-yag.png",
+            "imageHD": "data/heroes/img/yogah-of-yag_hd.png",
             "image_zoom": "100",
             "image_location": { "x": "0", "y": "47" },
             "model": "yogah-of-yag",
@@ -1230,6 +1257,7 @@
             ],
             
             "image": "data/heroes/img/belit-the-princess.png",
+            "imageHD": "data/heroes/img/belit-the-princess_hd.png",
             "image_zoom": "113",
             "image_location": { "x": "3", "y": "54" },
             "model": "belit-the-princess",
@@ -1278,6 +1306,7 @@
             ],
             
             "image": "data/heroes/img/king-conan.png",
+            "imageHD": "data/heroes/img/king-conan_hd.png",
             "image_zoom": "114",
             "image_location": { "x": "3.5", "y": "63.5" },
             "model": "king-conan",
@@ -1326,6 +1355,7 @@
             ],
             
             "image": "data/heroes/img/belit-queen-of-the-black-coast.png",
+            "imageHD": "data/heroes/img/belit-queen-of-the-black-coast_hd.png",
             "image_zoom": "110",
             "image_location": { "x": "8", "y": "63" },
             "model": "belit-queen-of-the-black-coast",
@@ -1374,6 +1404,7 @@
             ],
             
             "image": "data/heroes/img/conan-the-thief.png",
+            "imageHD": "data/heroes/img/conan-the-thief_hd.png",
             "image_zoom": "112",
             "image_location": { "x": "3", "y": "58" },
             "model": "conan-the-thief",
@@ -1418,6 +1449,7 @@
             ],
             
             "image": "data/heroes/img/taramis.png",
+            "imageHD": "data/heroes/img/taramis_hd.png",
             "image_zoom": "103",
             "image_location": { "x": "8", "y": "55" },
             "model": "taramis-salome",
@@ -1465,6 +1497,7 @@
             ],
             
             "image": "data/heroes/img/valeria-warrior.png",
+            "imageHD": "data/heroes/img/valeria-warrior_hd.png",
             "image_zoom": "126",
             "image_location": { "x": "7", "y": "69" },
             "model": "valeria-warrior",
@@ -1509,6 +1542,7 @@
             ],
             
             "image": "data/heroes/img/niord.png",
+            "imageHD": "data/heroes/img/niord_hd.png",
             "image_zoom": "161",
             "image_location": { "x": "0", "y": "44" },
             "model": "niord",
@@ -1551,6 +1585,7 @@
             ],
             
             "image": "data/heroes/img/shentu.png",
+            "imageHD": "data/heroes/img/shentu_hd.png",
             "image_zoom": "105",
             "image_location": { "x": "7", "y": "57" },
             "model": "shentu",
@@ -1594,6 +1629,7 @@
             ],
             
             "image": "data/heroes/img/ikhmet.png",
+            "imageHD": "data/heroes/img/ikhmet_hd.png",
             "image_zoom": "120",
             "image_location": { "x": "4", "y": "62" },
             "model": "ikhmet",
