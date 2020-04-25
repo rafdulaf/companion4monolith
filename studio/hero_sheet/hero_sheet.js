@@ -2,14 +2,22 @@ var HeroSheet = {
     _i18n: {
         'fr': {
             'tab': "Héros",
-            'nocard': "Vous n'avez aucune fiche pour le moment. Cliquez sur le bouton + en haut pour en creer une.",
+            'nocard': "Vous n'avez aucune fiche pour le moment.",
+            'nocard2': " Cliquez sur le bouton + en haut pour en creer une.",
             'printnocard': "Vous n'avez aucune fiche pour le moment",
+            'newcard': "Créer une fiche",
+            'print': "Imprimer des fiches",
+            'printHint': "Une fiche de héros mesure 21cm. Si vous souhaitez imprimer avec les marges de découpe, vous devrez imprimer en mode paysage 1 seule fiche à la fois. Si vous imprimez sans les magres de découpe, vous pouvez imprimer 2 fiches à la fois en mode portrait.",
             'copyright': "Basé sur le fichier PSD proposé par <a href='https://the-overlord.com/index.php?/profile/13-roolz/'>@Roolz</a>/<a href='https://the-overlord.com/index.php?/profile/4-doucefeuille/'>@Doucefeuille</a> et converti au format GIMP par <a href='https://the-overlord.com/index.php?/profile/31-jabbathehatt/'>@jabbathehatt</a>."
         },
         'en': {
             'tab': "Hero",
-            'nocard': "You have no sheet for the moment. Click on the + button in the header to create one.",
+            'nocard': "You have no sheet for the moment.",
+            'nocard2': " Click on the + button in the header to create one.",
             'printnocard': "You have no sheet for the moment",
+            'newcard': "Create a new sheet",
+            'print': "Print sheets",
+            'printHint': "A hero sheet is 21cm wide. If you wan to print with cut margins, you have to print in landscape mode and only 1 sheet at a time. If you want to print without cut margins, you can print up to 2 sheets at a time in portrait mode.",
             'copyright': "Based on the PSD file proposed by <a href='https://the-overlord.com/index.php?/profile/13-roolz/'>@Roolz</a>/<a href='https://the-overlord.com/index.php?/profile/4-doucefeuille/'>@Doucefeuille</a> and converted at the GIMP format by <a href='https://the-overlord.com/index.php?/profile/31-jabbathehatt/'>@jabbathehatt</a>."
         }
     },
@@ -19,24 +27,65 @@ var HeroSheet = {
     },
     
     init: function() {
-        $("#hero").html("In construction");
+        Nav.addAction("studio", HeroSheet._i18n[Language].newcard, "hero-icon-add", "hero-add", HeroSheet.add);
+        Nav.addAction("studio", HeroSheet._i18n[Language].print, "hero-icon-print", "hero-print", ConanStudio.printCards);
+        HeroSheet.onHide();
+        HeroSheet._displayCards();
+    },
+    
+    _displayCards: function()
+    {
+        $("#hero").html(HeroSheet._getDisplayCardsCode(true));
+    },
+    
+    _getDisplayCardsCode: function(withEditLink)
+    {
+        var html = "";
+        
+        var cards = JSON.parse(localStorage.getItem("StudioHeroSheets")) || [];
+        if (cards.length > 0)
+        {
+            for (var i in cards)
+            {
+                var prefix = "", suffix = "";
+                if (withEditLink !== false)
+                {
+                    prefix = "<a href='javascript:void(0)' onclick='HeroSheet.add(JSON.parse(localStorage.getItem(\"StudioHeroSheets\"))[" + i + "])'>";
+                    suffix = "</a>";
+                }
+                else 
+                {
+                    prefix = "<input type='checkbox' id='herosheet-" + i + "' name='herosheet' data-index='" + i + "' onchange=\"$('#herosheet-back-" + i + "').toggleClass('invisible');\"/><label for='herosheet-" + i + "'>";
+                    suffix = "</label>";
+                }
+                
+                html += prefix + "<div class='printoverflow'>" + HeroSheet._sheetCode(cards[i]) + "</div>" + suffix;
+            }
+        }
+        else
+        {
+            html += "<div class=\"nocards\">" + HeroSheet._i18n[Language].nocard + (withEditLink !== false ? HeroSheet._i18n[Language].nocard2 : '') + "</div>";
+        }
+        
+        if (!withEditLink)
+        {
+            for (var i in cards)
+            {
+                html += "<div class='printoverflow back invisible' id='herosheet-back-" + i + "'>" + HeroSheet._sheetCode(cards[i]) + "</div>";
+            }
+        }
+        
+        return html;
     },
     
     onShow: function() {
+        Nav.showAction("studio", "hero-add");
+        Nav.showAction("studio", "hero-print");
     },
     
     onHide: function() {
-    },
-    
-    later: function(sheet)
-    {
-        sheet = card || {
-            id: Math.random(),
-            image: "",
-            imagelocation: {x: "0", y: "50"},
-            imagezoom: "100",
-            imagerotation: "0"
-        };
+        Nav.hideAction("studio", "hero-add");
+        Nav.hideAction("studio", "hero-print");
     },
     
     _sheetCode: function(sheet) {
@@ -114,6 +163,17 @@ var HeroSheet = {
         
         code += "</div>";
         return code;
+    },
+    
+    later: function(sheet)
+    {
+        sheet = card || {
+            id: Math.random(),
+            image: "",
+            imagelocation: {x: "0", y: "50"},
+            imagezoom: "100",
+            imagerotation: "0"
+        };
     },
     
     copyright: function() 

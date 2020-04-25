@@ -1,3 +1,19 @@
+.hero-icon-add:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f055";  
+}
+.hero-icon-print:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f02f";  
+}
+
+#hero {
+    font-family: 'Hyborian';
+    overflow: auto;
+    position: relative;
+}
+
+
 .sheet.herosheet {
     font-family: 'Hyborian';
     text-align: left;
@@ -12,14 +28,12 @@
     text-shadow: 0 0 3px #FFF;
 }
 
-.printcards input[name=hero] { position: absolute; top:-5000px; }
-.printcards input[name=hero] + label { position: relative; display: inline-block; margin-right: 5px; }
-.printcards input[name=hero] + label:before { position: absolute; content: " "; z-index: 1; top: 0; left: 0; right: 0; bottom: 0; background-color: #000000; opacity: 0.2; }
-.printcards input[name=hero] + label:after { position: absolute; content: "\f057"; font-family: 'Font Awesome 5 Free'; font-size: 40px; left: -7px; top: -7px; color: red; }
-.printcards input[name=hero]:checked + label:before { display: none; }
-.printcards input[name=hero]:checked + label:after { content: "\f058"; color: green; }
-.printcards .back, .printcards .newpage { display: none; }
-
+.printcards input[name=herosheet] { position: absolute; top:-5000px; }
+.printcards input[name=herosheet] + label { position: relative; display: inline-block; margin-right: 5px; }
+.printcards input[name=herosheet] + label:before { position: absolute; content: " "; z-index: 1; top: 0; left: 0; right: 0; bottom: 0; background-color: #000000; opacity: 0.2; }
+.printcards input[name=herosheet] + label:after { position: absolute; content: "\f057"; font-family: 'Font Awesome 5 Free'; font-size: 40px; left: -7px; top: -7px; color: red; }
+.printcards input[name=herosheet]:checked + label:before { display: none; }
+.printcards input[name=herosheet]:checked + label:after { content: "\f058"; color: green; }
 
 .sheet.herosheet {
     width: 600px;
@@ -27,20 +41,15 @@
     font-size: 45px;
 }
 .printcards .sheet.herosheet {
-    width: 200px;
-    height: calc(200px / 1.75);
-    font-size: 18px;
+    width: 250px;
+    height: calc(250px / 1.75);
+    font-size: 18.75px;
 }
 @media screen and (max-width: 1480px) {
     .sheet.herosheet {
         width: 400px;
         height: calc(400px / 1.75);
         font-size: 30px;
-    }
-    .printcards .sheet.herosheet {
-        width: 100px;
-        height: calc(100px / 1.75);
-        font-size: 9px;
     }
 }
 @media screen and (max-width: 966px) {
@@ -49,22 +58,12 @@
         height: calc(350px / 1.75);
         font-size: 26.25px;
     }
-    .printcards .sheet.herosheet {
-        width: 80px;
-        height: calc(80px / 1.75);
-        font-size: 7.2px;
-    }
 }
 @media screen and (max-width: 866px) {
     .sheet.herosheet {
         width: 300px;
         height: calc(300px / 1.75);
         font-size: 22.5px;
-    }
-    .printcards .sheet.herosheet {
-        width: 80px;
-        height: calc(80px / 1.75);
-        font-size: 7.2px;
     }
 }
 @media screen and (max-width: 766px) {
@@ -73,11 +72,6 @@
         height: calc(250px / 1.75);
         font-size: 18.75px;
     }
-    .printcards .sheet.herosheet {
-        width: 80px;
-        height: calc(80px / 1.75);
-        font-size: 7.2px;
-    }
 }
 @media screen and (max-width: 664px) {
     .sheet.herosheet {
@@ -85,21 +79,22 @@
         height: calc(200px / 1.75);
         font-size: 15px;
     }
-    .printcards .sheet.herosheet {
-        width: 80px;
-        height: calc(80px / 1.75);
-        font-size: 7.2px;
-    }
 }
 
 @media print {
     .printcards .sheet.herosheet {
+        margin: 0.1cm 0cm;
+        width: 21cm;
+        height: calc(21cm / 1.75);
+        font-size: 1.575cm;
+    }
+    .printcards.cut .sheet.herosheet {
         overflow: visible;
         margin: 0.6cm 0.55cm;
-        width: 4.2cm;
-        height: calc(4.2cm / 1.75);
-        font-size: 0.4cm;
+        break-before: page;
+        break-after: page;
     }
+    .printcards input[name=herosheet] + label { margin-right: 0; }
 }
 
 .sheet.herosheet picture.background-l1 img,
@@ -162,6 +157,7 @@
     text-align: right;
     font-size: 40%;
     color: #D42627;
+    direction: ltr;
 }
 
 .sheet.herosheet div.skillline > * {
@@ -199,6 +195,7 @@
 }
 .sheet.herosheet div.skillline div.skill img.skill {
     width: 78%;
+    display: block;
 }
 .sheet.herosheet div.skillline div.skill .exertion {
     position: absolute;
@@ -225,6 +222,7 @@
     line-height: 30%;
     text-align: center;
     color: #fff;
+    -webkit-print-color-adjust: exact;
 }
 .sheet.herosheet div.base div.dice img {
     height: 100%;
@@ -243,3 +241,19 @@
 .sheet.herosheet div.defense { top: 15%; left: 78.2%; }
 .sheet.herosheet div.movement { top: 40%; left: 47.3%; }
 .sheet.herosheet div.manipulation { top: 40%; left: 62.8%; }
+
+
+#hero .nocards {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(200,200,200,0.5);
+    display: block;
+    padding: 40px;
+    border-radius: 40px;
+    z-index: 10;
+    pointer-events: none;
+    font-family: "Hyborian";
+}

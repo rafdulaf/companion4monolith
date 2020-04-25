@@ -115,11 +115,11 @@ var CardSpell = {
                 }
                 else 
                 {
-                    prefix = "<input type='checkbox' id='spell-" + i + "' name='spell' data-index='" + i + "' onchange=\"$('#spell-back-" + i + "').toggle();\"/><label for='spell-" + i + "'>";
+                    prefix = "<input type='checkbox' id='spell-" + i + "' name='spell' data-index='" + i + "' onchange=\"$('#spell-back-" + i + "').toggleClass('invisible');\"/><label for='spell-" + i + "'>";
                     suffix = "</label>";
                 }
                 
-                html += prefix + CardSpell._cardCode(cards[i]) + suffix;
+                html += prefix + "<div class='printoverflow'>" + CardSpell._cardCode(cards[i]) + "</div>" + suffix;
             }
         }
         else
@@ -129,12 +129,10 @@ var CardSpell = {
         
         if (!withEditLink)
         {
-            html += "<div class='newpage'>"; 
             for (var i in cards)
             {
-                html += "<img id=\"spell-back-" + i + "\" style=\"display: none\" class=\"back\" src=\"studio/card_spell/img/back.png?version=" + Version + "\"/>"
+                html += "<div id=\"spell-back-" + i + "\"  class='printoverflow back invisible'><img src=\"studio/card_spell/img/back.png?version=" + Version + "\"/></div>"
             }
-            html += "</div>";
         }
         
         return html;

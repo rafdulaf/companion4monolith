@@ -40,7 +40,6 @@
 .printcards input[name=spell] + label:after { position: absolute; content: "\f057"; font-family: 'Font Awesome 5 Free'; font-size: 40px; left: -7px; top: -7px; color: red; }
 .printcards input[name=spell]:checked + label:before { display: none; }
 .printcards input[name=spell]:checked + label:after { content: "\f058"; color: green; }
-.printcards .back, .printcards .newpage { display: none; }
 
 @media screen and (max-width: 400px) {
     .card.spell {
@@ -56,12 +55,33 @@
 }
 
 @media print {
-    .printcards .card.spell {
-        overflow: visible;
-        margin: 0.6cm 0.55cm;
+    .printcards .card.spell,
+    .dialog .printcards .back[id^=spell] {
+        margin: 0.1cm 0.1cm;
         width: 4.2cm;
         height: calc(4.2cm / 0.67);
         font-size: 0.4cm;
+        border-radius: 0.3cm;
+        position: relative;
+    }
+    .printcards.cut .card.spell {
+        overflow: visible;
+        border-radius: 0cm;
+    }
+    .printcards.cut .card.spell,
+    .dialog .printcards.cut .back[id^=spell] {
+        margin: 0.6cm 0.55cm;
+    }
+
+    .dialog .printcards .back[id^=spell] img {
+        position: absolute;
+        width: 147.5%;
+        left: -24.5%;
+        top: -15.5%;
+    }    
+    .dialog .printcards.cut .back[id^=spell] { 
+        border-radius: 0; 
+        overflow: visible;
     }
 }
 

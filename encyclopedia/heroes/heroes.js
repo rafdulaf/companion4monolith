@@ -2,6 +2,9 @@ var EncyclopediaHeroes = {
     _i18n: {
         'fr': {
             'tab': "Héros",
+            'transfertToStudio': "Copier la fiche dans le studio",
+            'transfertOK': "La fiche a été copiée dans le studio des fiches de héros",
+            'transfertConfirm': "Voulez-vous copier la fiche dans le studio pour pouvoir la modifier ou l'imprimer ?",
             'from': "Disponible dans :",
             'fromAnd': "<br/>et",
             'skill': "Compétences :",
@@ -9,6 +12,9 @@ var EncyclopediaHeroes = {
         },
         'en': {
             'tab': "Heroes",
+            'transfertToStudio': "Copy the sheet into the studio",
+            'transfertOK': "The sheet was copied to the heroes sheets studio",
+            'transfertConfirm': "Do you want to copy the sheet into the studio in order to edit it or print it?",
             'from': "Available in:",
             'fromAnd': "<br/>and",
             'skill': "Skills:",
@@ -247,14 +253,14 @@ var EncyclopediaHeroes = {
         }
     },
     
-    _convertHeroToStudio: function(hero)
+    _convertHeroToStudio: function(hero, hd)
     {
         return {
             id: hero.id + "-" + Math.random(),
             name: hero.name[Language],
             subname: hero.subname ? hero.subname[Language] : "",
             
-            image: hero.image ? hero.image + "?version=" + Version : null,
+            image: hero.imageHD ? hero.imageHD + "?version=" + Version : (hero.image ? hero.image + "?version=" + Version : null),
             imageEffect: false,
             imagelocation: hero.image_location || {x: "0", y: "50"},
             imagezoom: hero.image_zoom || "100",
@@ -369,8 +375,26 @@ var EncyclopediaHeroes = {
     },
     
     _transfert: function(id) {
-        // TODO
-        alert("In contruction")
+        if (confirm(EncyclopediaHeroes._i18n[Language].transfertConfirm))
+        {
+            var cards = JSON.parse(localStorage.getItem("StudioHeroSheets")) || [];
+            
+            var images = {};
+            
+            var hero = EncyclopediaHeroes._findHeroById(id);
+            var studioHero = EncyclopediaHeroes._convertHeroToStudio(hero);
+            cards.push(studioHero);
+            
+            localStorage.setItem("StudioHeroSheets", JSON.stringify(cards));
+            
+            HeroSheet._displayCards();
+            
+            Nav.switchTo($("*[for=studio]")[0]);
+            $("#studio .nav-wrapper").slick('slickGoTo', $("#hero").index());
+            $("#hero").animate({ scrollTop: $('#hero > *:last()').position().top },500);
+            
+            ConanAbout.warnToast(EncyclopediaHeroes._i18n[Language].transfertOK)
+        }
     },
         
     _linkToHero: function(id) {

@@ -131,11 +131,11 @@ var CardEquipment = {
                 }
                 else 
                 {
-                    prefix = "<input type='checkbox' id='equipment-" + i + "' name='equipment' data-index='" + i + "' onchange=\"$('#equipment-back-" + i + "').toggle();\"/><label for='equipment-" + i + "'>";
+                    prefix = "<input type='checkbox' id='equipment-" + i + "' name='equipment' data-index='" + i + "' onchange=\"$('#equipment-back-" + i + "').toggleClass('invisible');\"/><label for='equipment-" + i + "'>";
                     suffix = "</label>";
                 }
                 
-                html += prefix + CardEquipment._cardCode(cards[i]) + suffix;
+                html += prefix + "<div class='printoverflow'>" + CardEquipment._cardCode(cards[i]) + "</div>" + suffix;
             }
         }
         else
@@ -145,12 +145,10 @@ var CardEquipment = {
         
         if (!withEditLink)
         {
-            html += "<div class='newpage'>"; 
             for (var i in cards)
             {
-                html += "<img id=\"equipment-back-" + i + "\" style=\"display: none\" class=\"back\" src=\"studio/card_equipment/img/back.png?version=" + Version + "\"/>"
+                html += "<div id=\"equipment-back-" + i + "\"  class='printoverflow back invisible'><img src=\"studio/card_equipment/img/back.png?version=" + Version + "\"/></div>"
             }
-            html += "</div>";
         }
         
         return html;
