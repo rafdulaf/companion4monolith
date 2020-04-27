@@ -533,6 +533,7 @@
 .dialog .equipment .dice ~ .ui-selectmenu-menu ul li:nth-child(7):before, .dialog .equipment select[data-value=yellowreroll] + span { background-image: url(img/dice_yellowreroll.png) !important; }
 
 .dialog .equipment select.skills { font-family: 'Moolbor'; font-size: 19px; }
+
 .dialog .equipment-preview .preview {
     text-align: center;
     margin-top: 20px;

@@ -8,6 +8,33 @@ var HeroSheet = {
             'newcard': "Créer une fiche",
             'print': "Imprimer des fiches",
             'printHint': "Une fiche de héros mesure 21cm. Si vous souhaitez imprimer avec les marges de découpe, vous devrez imprimer en mode paysage 1 seule fiche à la fois. Si vous imprimez sans les magres de découpe, vous pouvez imprimer 2 fiches à la fois en mode portrait.",
+            'editcard': "Modifier",
+            'save': "Enregistrer",
+            'remove': "Effacer",
+            'removeConfirm': "Etes-vous sûr de vouloir effacer cette carte ?",
+
+            'name': "Nom",
+            'namePh': "?",
+            'subname': "Qualificatif",
+            'subnamePh': "?",
+            'gems': "Gemmes",
+            'gemsPh': "?",
+            'encumbrance': "Encombrement",
+            'encumbrancePh': "?",
+            'encumbrancemov1Ph': "?",
+            'encumbrancemov2Ph': "?",
+            'image': "Image (fond transparent)",
+            'imagePh': "Entrer l'adresse de l'image (http://)",
+            'imagelocation': "Emplacement",
+            'imagelocationPh': "0",
+            'imagezoom': "Zoom",
+            'imagezoomPh': "0",
+            'imagerotation': "Rotation",
+            'imagerotationPh': "0",
+
+            'header1': "Saisissez les données de la fiche",
+            'header1bis': "Mettez une image",
+            'header2': "Prévisualiser la fiche",
             'copyright': "Basé sur le fichier PSD proposé par <a href='https://the-overlord.com/index.php?/profile/13-roolz/'>@Roolz</a>/<a href='https://the-overlord.com/index.php?/profile/4-doucefeuille/'>@Doucefeuille</a> et converti au format GIMP par <a href='https://the-overlord.com/index.php?/profile/31-jabbathehatt/'>@jabbathehatt</a>."
         },
         'en': {
@@ -18,6 +45,32 @@ var HeroSheet = {
             'newcard': "Create a new sheet",
             'print': "Print sheets",
             'printHint': "A hero sheet is 21cm wide. If you wan to print with cut margins, you have to print in landscape mode and only 1 sheet at a time. If you want to print without cut margins, you can print up to 2 sheets at a time in portrait mode.",
+            'editcard': "Edit a card",
+            'save': "Save",
+            'remove': "Delete",
+            
+            'name': "Name",
+            'namePh': "?",
+            'subname': "Qualifier",
+            'subnamePh': "?",
+            'gems': "Gems",
+            'gemsPh': "?",
+            'encumbrance': "Encumbrance",
+            'encumbrancePh': "?",
+            'encumbrancemov1Ph': "?",
+            'encumbrancemov2Ph': "?",
+            'image': "Image (transparent background)",
+            'imagePh': "Enter the image address (http://...)",
+            'imagelocation': "Location",
+            'imagelocationPh': "0",
+            'imagezoom': "Zoom",
+            'imagezoomPh': "0",
+            'imagerotation': "Rotation",
+            'imagerotationPh': "0",
+
+            'header1': "Fill the sheet data",
+            'header1bis': "Set a picture",
+            'header2': "Preview the final result",
             'copyright': "Based on the PSD file proposed by <a href='https://the-overlord.com/index.php?/profile/13-roolz/'>@Roolz</a>/<a href='https://the-overlord.com/index.php?/profile/4-doucefeuille/'>@Doucefeuille</a> and converted at the GIMP format by <a href='https://the-overlord.com/index.php?/profile/31-jabbathehatt/'>@jabbathehatt</a>."
         }
     },
@@ -165,15 +218,157 @@ var HeroSheet = {
         return code;
     },
     
-    later: function(sheet)
+    add: function(sheet)
     {
-        sheet = card || {
+        var actions = [{
+                label: HeroSheet._i18n[Language].save,
+                icon: "hero-save",
+                fn: "HeroSheet._save();"
+        }];
+        if (sheet != undefined)
+        {
+            actions.push({
+                label: HeroSheet._i18n[Language].remove,
+                icon: "hero-remove",
+                fn: "HeroSheet._remove();"
+            });
+        }
+        
+        var dlabel = sheet == undefined ? HeroSheet._i18n[Language].newcard : HeroSheet._i18n[Language].editcard;
+        Nav.dialog(dlabel, 
+            "<div class=\"hscol\">"
+            + "<div class=\"sheet\">"
+                + "<h1>" + HeroSheet._i18n[Language].header1 + "</h1>"
+                + "<input type=\"hidden\" name=\"sheetpos\"/>"
+                + "<div class=\"field name\">"
+                    + "<label for=\"hsname\">" + HeroSheet._i18n[Language].name + "</label>"
+                    + "<input id=\"hsname\" name=\"sheetname\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].namePh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+                    + "<input id=\"hssubname\" name=\"sheetsubname\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].subnamePh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+                + "</div>"
+                + "<div class=\"field gems\">"
+                    + "<label for=\"hsgems\">" + HeroSheet._i18n[Language].gems + "</label>"
+                    + "<input type=\"number\" min=\"1\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsgems\" name=\"sheetgems\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].gemsPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+                + "</div>"
+                + "<div class=\"field encumbrance\">"
+                    + "<label for=\"hsencumbrance\">" + HeroSheet._i18n[Language].encumbrance + "</label>"
+                    + "<div class='encumbrance'>"
+                    + "<input type=\"number\" min=\"1\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsencumbrance\" name=\"sheetencumbrance\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].encumbrancePh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+                    + "</div>"
+                    + "<div class='encumbrancemov'>"
+                    + "<input type=\"number\" min=\"1\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsencumbrancemov1\" name=\"sheetencumbrancemov1\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].encumbrancemov1Ph + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+                    + "<input type=\"number\" min=\"1\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsencumbrancemov2\" name=\"sheetencumbrancemov2\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].encumbrancemov2Ph + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+                    + "</div>"
+                + "</div>"
+            + "</div>"
+            + "</div>"
+            + "<div class=\"hscol\">"
+            + "<div class=\"sheet\">"
+                + "<h1>" + HeroSheet._i18n[Language].header1bis + "</h1>"
+                + "<div class=\"field\">"
+                    + "<label for=\"hsimage\">" + HeroSheet._i18n[Language].image + "</label>"
+                    + "<input id=\"hsimage\" name=\"sheetimage\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].imagePh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+                + "</div>"
+                + "<div class=\"field imagelocation\">"
+                    + "<label for=\"hsimagelocation\">" + HeroSheet._i18n[Language].imagelocation + "</label>"
+                    + "<div><input id=\"hsimagelocation\" name=\"sheetimagelocation\" type=\"number\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].imagelocationPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"\"/></div>"
+                    + "<div><input id=\"shimagelocation2\" name=\"sheetimagelocation2\" type=\"number\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].imagelocationPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/></div>"
+                + "</div>"
+                + "<div class=\"field imagezoom\">"
+                    + "<label for=\"shimagezoom\">" + HeroSheet._i18n[Language].imagezoom + "</label>"
+                    + "<input id=\"shimagezoom\" name=\"sheetimagezoom\" type=\"number\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].imagezoomPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+                + "</div>"
+                + "<div class=\"field imagerotation\">"
+                    + "<label for=\"shimagerotation\">" + HeroSheet._i18n[Language].imagerotation + "</label>"
+                    + "<input id=\"shimagerotation\" name=\"sheetimagerotation\" type=\"number\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].imagerotationPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+                + "</div>"
+            + "</div>"
+            + "<div class=\"sheet-preview\">"
+                + "<h1>" + HeroSheet._i18n[Language].header2 + "</h1>"
+                + "<div class=\"preview\"></div>"
+            + "</div>"
+            + "</div>",
+            null,
+            actions
+        );
+        
+        sheet = sheet || {
             id: Math.random(),
+            name: "",
+            subname: "",
+            
             image: "",
             imagelocation: {x: "0", y: "50"},
             imagezoom: "100",
-            imagerotation: "0"
+            imagerotation: "0",
+            
+            gem: 10,
+            encumbrance: 10,
+            encumbrance_movement: [8, 10],
+            
+            melee: { "dice": "yellow", "exertion": 3 },
+            ranged: { "dice": "yellow", "exertion": 3 },
+            defense: { "dice": "yellow", "exertion": 3 },
+            movement: { "base": 2, "exertion": 4 },
+            manipulation: { "dice": "yellow", "exertion": 3 },
+            
+            skills: []
         };
+        
+        // TODO
+
+        HeroSheet._sheet2form(sheet);
+        
+        HeroSheet._preview();
+    },
+        
+    _preview: function()
+    {
+        var sheet = HeroSheet._form2sheet();
+        var code = HeroSheet._sheetCode(sheet);
+        $(".dialog .preview").html(code);
+    },
+    
+    _form2sheet: function()
+    {
+        return {
+            id: $(".dialog input[name=sheetpos]")[0].value,
+            name: $(".dialog input[name=sheetname]")[0].value,
+            subname: $(".dialog input[name=sheetsubname]")[0].value,
+            image: $(".dialog input[name=sheetimage]")[0].value,
+            imagelocation: {x: $(".dialog input[name=sheetimagelocation]")[0].value || "0", y: $(".dialog input[name=sheetimagelocation2]")[0].value || "50"},
+            imagezoom: $(".dialog input[name=sheetimagezoom]")[0].value || "100",
+            imagerotation: $(".dialog input[name=sheetimagerotation]")[0].value || "0",
+            gem: parseInt($(".dialog input[name=sheetgems]")[0].value),
+            encumbrance: parseInt($(".dialog input[name=sheetencumbrance]")[0].value),
+            encumbrance_movement: [parseInt($(".dialog input[name=sheetencumbrancemov1]")[0].value),parseInt($(".dialog input[name=sheetencumbrancemov2]")[0].value)],
+            // melee
+            // ranged
+            // defense
+            // movement
+            // manipulation
+            // skills
+        }
+    },
+    _sheet2form: function(sheet)
+    {
+        $(".dialog input[name=sheetpos]")[0].value = sheet.id;
+        $(".dialog input[name=sheetname]")[0].value = sheet.name;
+        $(".dialog input[name=sheetsubname]")[0].value = sheet.subname;
+        $(".dialog input[name=sheetimage]")[0].value = sheet.image;
+        $(".dialog input[name=sheetimagelocation]")[0].value = sheet.imagelocation.x;
+        $(".dialog input[name=sheetimagelocation2]")[0].value = sheet.imagelocation.y;
+        $(".dialog input[name=sheetimagezoom]")[0].value = sheet.imagezoom;
+        $(".dialog input[name=sheetimagerotation]")[0].value = sheet.imagerotation;
+        $(".dialog input[name=sheetgems]")[0].value = sheet.gem;
+        $(".dialog input[name=sheetencumbrance]")[0].value = sheet.encumbrance;
+        $(".dialog input[name=sheetencumbrancemov1]")[0].value = sheet.encumbrance_movement[0]; 
+        $(".dialog input[name=sheetencumbrancemov2]")[0].value = sheet.encumbrance_movement[1]; 
+        // melee
+        // ranged
+        // defense
+        // movement
+        // manipulation
+        // skills
     },
     
     copyright: function() 

@@ -257,3 +257,249 @@
     pointer-events: none;
     font-family: "Hyborian";
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dialog .hero-save:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f0c7";  
+}
+.dialog .hero-remove:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f2ed";  
+}
+
+
+
+.dialog .sheet .field {
+    padding: 0 20px 5px 20px;
+    position: relative;
+    text-align: center;
+}
+.dialog .sheet .field.error {
+    border-color: #FF0000;
+}
+.dialog .sheet .field + .field {
+    margin-top: 10px;
+}
+    
+.dialog .sheet .field label {
+    display: block;
+    font-size: 26px;
+    line-height: 26px;
+    position: relative;
+    text-align: left;
+}
+.dialog .sheet .field input,
+.dialog .sheet .field select {
+    border: none;
+    width: 100%;
+    outline: none;
+}
+
+.dialog .sheet .field input#hsname,
+.dialog .sheet .field input#hssubname {
+   font-size: 20px;
+   font-family: 'Hyborian';
+   text-align: right;
+   color: #000000;
+   width: 60%;
+   padding: 0 3px 0 0;
+}
+.dialog .sheet .field input#hssubname {
+   font-size: 12px;
+   padding: 0 0 0 3px;
+   text-align: left;
+   width: 40%;
+}
+
+.dialog .sheet .field.gems {
+    width: 34%;
+    height: 85px;
+    display: inline-block;
+    vertical-align: top;
+}
+.dialog .sheet .field.encumbrance {
+    width: 66%;
+    height: 85px;
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 0;
+}
+.dialog .sheet .field input#hsencumbrance { 
+   font-size: 36px;
+   font-family: "Motrg";
+   text-align: center;
+   width: 54px;
+   color: #FFFFFF;
+   background-repeat: no-repeat;
+   background-position: right;
+   background-size: contain;
+   background-image: url(img/weight.png); 
+}
+
+.dialog .sheet .encumbrance,
+.dialog .sheet .encumbrancemov {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+}
+.dialog .sheet .encumbrancemov {
+    width: 70%;
+}
+.dialog .sheet .encumbrancemov {
+    background-repeat: no-repeat;
+    background-position: calc(50% - 6px);
+    background-size: contain;
+    background-image: url(img/weightmov.png); 
+    height: 74px;
+    position: relative;
+    top: -26px;
+    text-align: right;
+    padding-right: 13px;
+    padding-top: 13px;
+}
+.dialog .sheet .field input#hsencumbrancemov1, 
+.dialog .sheet .field input#hsencumbrancemov2 {
+    width: 30px;
+    color: #D42627;
+    font-size: 36px;
+    font-family: "Motrg";
+    text-align: center;
+    color: #D42627;
+    background-color: #000;
+    background-color: transparent;
+}
+
+    
+.dialog .sheet .field.imagelocation,
+.dialog .sheet .field.imagezoom,
+.dialog .sheet .field.imagerotation {
+    height: 113px;
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.dialog .sheet .field.imagelocation,
+.dialog .sheet .field.imagezoom,
+.dialog .sheet .field.imagerotation {
+    height: 85px
+}
+
+.dialog .sheet .field.imagelocation {
+    width: 50%;
+    margin-top: 0;
+    text-align: left;
+}
+.dialog .sheet .field.imagezoom,
+.dialog .sheet .field.imagerotation {
+    width: 25%;
+    margin-top: 0;
+    text-align: left;
+}
+.dialog .sheet .field.imagezoom:after,
+.dialog .sheet .field.imagelocation div:after {
+    margin-left: 3px;
+    content: "%";
+}
+.dialog .sheet .field.imagerotation:after {
+    margin-left: 3px;
+    content: "°";
+}
+.dialog .sheet .field.imagelocation input,
+.dialog .sheet .field.imagezoom input,
+.dialog .sheet .field.imagerotation input {
+    width: 34px;
+    text-align: right;
+}
+.dialog .sheet .field.imagelocation, .dialog .sheet .field.imagezoom
+{ padding-right: 0; }
+.dialog .sheet .field.imagezoom, .dialog .sheet .field.imagerotation
+{ padding-left: 0; }
+
+.dialog .sheet .field.imagelocation > div {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.dialog .sheet .field input#shimage,
+.dialog .sheet .field input#shimagelocation,
+.dialog .sheet .field input#shimagelocation2,
+.dialog .sheet .field input#shimagezoom,
+.dialog .sheet .field input#shimagerotation {
+   font-size: 22px;
+   line-height: 36px;
+   font-family: 'Moolbor';
+}
+
+.dialog .sheet input#shimage {
+    padding-left: 10px;
+}
+
+
+
+
+.dialog .sheet-preview .preview {
+    text-align: center;
+    margin-top: 20px;
+}
+.dialog .sheet h1,
+.dialog .sheet-preview h1 {
+    margin-bottom: 0.5em;
+    margin-top: 0;
+    text-align: center;
+    font-family: 'Hyborian';
+    font-size: 16px;
+    vertical-align: top;
+}
+.dialog .sheet h1:before,
+.dialog .sheet-preview h1:before {
+    display: inline-block;
+    color: #FFF;
+    background-color: #000;
+    width: 20px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.dialog .hscol:nth-child(1) .sheet h1:before {
+    content: "1";
+}
+.dialog .hscol:nth-child(2) .sheet h1:before {
+    content: "2";
+}
+.dialog .hscol:nth-child(2) .sheet-preview h1:before {
+    content: "3";
+}
+
+@media screen and (min-width: 840px) {
+    .dialog .hscol {
+        width: 50%;
+        display: inline-block;
+        vertical-align: top;
+    }
+}

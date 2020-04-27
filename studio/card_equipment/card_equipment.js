@@ -467,7 +467,7 @@ var CardEquipment = {
         return {
             id: $(".dialog input[name=cardpos]")[0].value,
             name: $(".dialog input[name=cardname]")[0].value,
-            encumbrance: parseInt($(".dialog input[name=cardweight]")[0].value),
+            encumbrance: $(".dialog input[name=cardweight]")[0].value,
             movement: parseInt($(".dialog input[name=cardmovement]")[0].value),
             melee: { 0: $(".dialog select[name=cardmelee1]")[0].value, 1: $(".dialog select[name=cardmelee2]")[0].value },
             skills: { 0: $(".dialog select[name=cardskills1]")[0].value, 1: $(".dialog select[name=cardskills2]")[0].value },

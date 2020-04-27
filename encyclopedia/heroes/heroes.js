@@ -261,7 +261,6 @@ var EncyclopediaHeroes = {
             subname: hero.subname ? hero.subname[Language] : "",
             
             image: hero.imageHD ? hero.imageHD + "?version=" + Version : (hero.image ? hero.image + "?version=" + Version : null),
-            imageEffect: false,
             imagelocation: hero.image_location || {x: "0", y: "50"},
             imagezoom: hero.image_zoom || "100",
             imagerotation: "0",
