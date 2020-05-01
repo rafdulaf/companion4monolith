@@ -364,7 +364,6 @@
    background-image: url(img/movement.png);
 }
 
-.dialog .equipment .field input#eqweight,
 .dialog .equipment .field input#eqmovement {
    font-size: 36px;
    font-family: "Motrg";
@@ -375,7 +374,18 @@
    background-size: contain;
    width: 54px;
 }
-.dialog .equipment .field input#eqweight { background-image: url(img/weight.png); }
+.dialog .equipment .field input#eqweight { 
+   font-size: 36px;
+   font-family: "Motrg";
+   text-align: left;
+   color: #FFFFFF;
+   padding-left: 12px;
+   width: 54px;
+   background-repeat: no-repeat;
+   background-position: left;
+   background-size: contain;
+   background-image: url(img/weight.png); 
+}
 .dialog .equipment .field input#eqmovement {
     z-index: 1;
     position: relative;

@@ -23,6 +23,14 @@ var HeroSheet = {
             'encumbrancePh': "?",
             'encumbrancemov1Ph': "?",
             'encumbrancemov2Ph': "?",
+            'caracs': "Caractéristiques",
+            'caracPh': "?",
+            'diceRed': "Rouge",
+            'diceRedReroll': "Rouge \uf01e",
+            'diceOrange': "Orange",
+            'diceOrangeReroll': "Orange \uf01e",
+            'diceYellow': "Jaune",
+            'diceYellowReroll': "Jaune \uf01e",
             'image': "Image (fond transparent)",
             'imagePh': "Entrer l'adresse de l'image (http://)",
             'imagelocation': "Emplacement",
@@ -59,6 +67,14 @@ var HeroSheet = {
             'encumbrancePh': "?",
             'encumbrancemov1Ph': "?",
             'encumbrancemov2Ph': "?",
+            'caracs': "Characteristics",
+            'caracPh': "?",
+            'diceRed': "Red",
+            'diceRedReroll': "Red \uf01e",
+            'diceOrange': "Orange",
+            'diceOrangeReroll': "Orange \uf01e",
+            'diceYellow': "Yellow",
+            'diceYellowReroll': "Yellow \uf01e",
             'image': "Image (transparent background)",
             'imagePh': "Enter the image address (http://...)",
             'imagelocation': "Location",
@@ -259,6 +275,28 @@ var HeroSheet = {
                     + "<input type=\"number\" min=\"1\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsencumbrancemov2\" name=\"sheetencumbrancemov2\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].encumbrancemov2Ph + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
                     + "</div>"
                 + "</div>"
+                + "<div class=\"field caracs\">"
+                    + "<label for=\"hscaracmeleeexertion\">" + HeroSheet._i18n[Language].caracs + "</label>"
+                    + "<div class='carac melee'>"
+                        + "<input type=\"number\" min=\"1\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"hscaracmeleeexertion\" name=\"sheetmeleeexertion\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].caracPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+                        + "<select id=\"hscaracmeleedice\" class=\"dice\" name=\"sheetmeleedice\"><option value=\"red\">" + HeroSheet._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + HeroSheet._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + HeroSheet._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + HeroSheet._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + HeroSheet._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + HeroSheet._i18n[Language].diceYellowReroll + "</option></select>"
+                    + "</div>"
+                    + "<div class='carac ranged'>"
+                        + "<input type=\"number\" min=\"1\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"hscaracrangedexertion\" name=\"sheetrangedexertion\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].caracPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+                        + "<select id=\"hscaracrangeddice\" class=\"dice\" name=\"sheetrangeddice\"><option value=\"red\">" + HeroSheet._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + HeroSheet._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + HeroSheet._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + HeroSheet._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + HeroSheet._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + HeroSheet._i18n[Language].diceYellowReroll + "</option></select>"
+                    + "</div>"
+                    + "<div class='carac defense'>"
+                        + "<select id=\"hscaracdefensedice\" class=\"dice\" name=\"sheetdefensedice\"><option value=\"red\">" + HeroSheet._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + HeroSheet._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + HeroSheet._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + HeroSheet._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + HeroSheet._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + HeroSheet._i18n[Language].diceYellowReroll + "</option></select>"
+                    + "</div>"
+                    + "<div class='carac movement'>"
+                        + "<input type=\"number\" min=\"1\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"hscaracmovementexertion\" name=\"sheetmovementexertion\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].caracPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+                        + "<input type=\"number\" min=\"1\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"hscaracmovement\" name=\"sheetmovement\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].caracPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+                    + "</div>"
+                    + "<div class='carac manipulation'>"
+                        + "<input type=\"number\" min=\"1\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"hscaracmanipulationexertion\" name=\"sheetmanipulationexertion\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].caracPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+                        + "<select id=\"hscaracmanipulationdice\" class=\"dice\" name=\"sheetmanipulationdice\"><option value=\"red\">" + HeroSheet._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + HeroSheet._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + HeroSheet._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + HeroSheet._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + HeroSheet._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + HeroSheet._i18n[Language].diceYellowReroll + "</option></select>"
+                    + "</div>"
+                + "</div>"
             + "</div>"
             + "</div>"
             + "<div class=\"hscol\">"
@@ -307,14 +345,21 @@ var HeroSheet = {
             
             melee: { "dice": "yellow", "exertion": 3 },
             ranged: { "dice": "yellow", "exertion": 3 },
-            defense: { "dice": "yellow", "exertion": 3 },
+            defense: { "dice": "yellow" },
             movement: { "base": 2, "exertion": 4 },
             manipulation: { "dice": "yellow", "exertion": 3 },
             
             skills: []
         };
         
-        // TODO
+        $("#hscaracmeleedice, #hscaracrangeddice, #hscaracdefensedice, #hscaracmanipulationdice").each (function (i) { 
+            var k = $(this);
+            k.attr("data-value", "")
+                .selectmenu({ appendTo: k.parent(), width: k.is(".dice") ? 40 : 58, change: function(event, selection) { 
+                    $(this).attr("data-value", selection.item.value);
+                    HeroSheet._preview();
+                }});
+        });
 
         HeroSheet._sheet2form(sheet);
         
@@ -338,15 +383,16 @@ var HeroSheet = {
             imagelocation: {x: $(".dialog input[name=sheetimagelocation]")[0].value || "0", y: $(".dialog input[name=sheetimagelocation2]")[0].value || "50"},
             imagezoom: $(".dialog input[name=sheetimagezoom]")[0].value || "100",
             imagerotation: $(".dialog input[name=sheetimagerotation]")[0].value || "0",
-            gem: parseInt($(".dialog input[name=sheetgems]")[0].value),
+            gem: parseInt($(".dialog input[name=sheetgems]")[0].value || 0),
             encumbrance: parseInt($(".dialog input[name=sheetencumbrance]")[0].value),
             encumbrance_movement: [parseInt($(".dialog input[name=sheetencumbrancemov1]")[0].value),parseInt($(".dialog input[name=sheetencumbrancemov2]")[0].value)],
-            // melee
-            // ranged
-            // defense
-            // movement
-            // manipulation
+            melee: { "dice": $(".dialog select[name=sheetmeleedice]")[0].value, "exertion": parseInt($(".dialog input[name=sheetmeleeexertion]")[0].value || 0) },
+            ranged: { "dice": $(".dialog select[name=sheetrangeddice]")[0].value, "exertion": parseInt($(".dialog input[name=sheetrangedexertion]")[0].value || 0) },
+            defense: { "dice": $(".dialog select[name=sheetdefensedice]")[0].value },
+            movement: { "base": parseInt($(".dialog input[name=sheetmovement]")[0].value || 0), "exertion": parseInt($(".dialog input[name=sheetmovementexertion]")[0].value || 0) },
+            manipulation: { "dice": $(".dialog select[name=sheetmanipulationdice]")[0].value, "exertion": parseInt($(".dialog input[name=sheetmanipulationexertion]")[0].value || 0) },
             // skills
+            skills: []
         }
     },
     _sheet2form: function(sheet)
@@ -363,11 +409,15 @@ var HeroSheet = {
         $(".dialog input[name=sheetencumbrance]")[0].value = sheet.encumbrance;
         $(".dialog input[name=sheetencumbrancemov1]")[0].value = sheet.encumbrance_movement[0]; 
         $(".dialog input[name=sheetencumbrancemov2]")[0].value = sheet.encumbrance_movement[1]; 
-        // melee
-        // ranged
-        // defense
-        // movement
-        // manipulation
+        $(".dialog select[name=sheetmeleedice]")[0].value = sheet.melee.dice; $(".dialog select[name=sheetmeleedice]").attr("data-value",sheet.melee.dice);
+        $(".dialog input[name=sheetmeleeexertion]")[0].value = sheet.melee.exertion;
+        $(".dialog select[name=sheetrangeddice]")[0].value = sheet.ranged.dice; $(".dialog select[name=sheetrangeddice]").attr("data-value",sheet.ranged.dice);
+        $(".dialog input[name=sheetrangedexertion]")[0].value = sheet.ranged.exertion;
+        $(".dialog select[name=sheetdefensedice]")[0].value = sheet.defense.dice; $(".dialog select[name=sheetdefensedice]").attr("data-value",sheet.defense.dice);
+        $(".dialog input[name=sheetmovement]")[0].value = sheet.movement.base;
+        $(".dialog input[name=sheetmovementexertion]")[0].value = sheet.movement.exertion;
+        $(".dialog select[name=sheetmanipulationdice]")[0].value = sheet.manipulation.dice; $(".dialog select[name=sheetmanipulationdice]").attr("data-value",sheet.manipulation.dice);
+        $(".dialog input[name=sheetmanipulationexertion]")[0].value = sheet.manipulation.exertion;
         // skills
     },
     

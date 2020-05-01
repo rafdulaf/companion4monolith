@@ -342,6 +342,16 @@
     display: inline-block;
     vertical-align: top;
 }
+
+.dialog .sheet .field input#hsgems {
+   font-size: 36px;
+   font-family: "Motrg";
+   text-align: center;
+   width: 54px;
+   color: #FFFFFF;
+   background-color: #000000;
+}
+
 .dialog .sheet .field.encumbrance {
     width: 66%;
     height: 85px;
@@ -352,11 +362,12 @@
 .dialog .sheet .field input#hsencumbrance { 
    font-size: 36px;
    font-family: "Motrg";
-   text-align: center;
+   text-align: left;
+   padding-left: 8px;
    width: 54px;
    color: #FFFFFF;
    background-repeat: no-repeat;
-   background-position: right;
+   background-position: left;
    background-size: contain;
    background-image: url(img/weight.png); 
 }
@@ -379,12 +390,12 @@
     position: relative;
     top: -26px;
     text-align: right;
-    padding-right: 13px;
+    padding-right: calc(35% - 59px);
     padding-top: 13px;
 }
 .dialog .sheet .field input#hsencumbrancemov1, 
 .dialog .sheet .field input#hsencumbrancemov2 {
-    width: 30px;
+    width: 33px;
     color: #D42627;
     font-size: 36px;
     font-family: "Motrg";
@@ -394,6 +405,105 @@
     background-color: transparent;
 }
 
+.dialog .sheet .field.caracs {
+    text-align: left;
+}
+.dialog .sheet .field.caracs .carac {
+    display: inline-block;
+    vertical-align: top;
+    width: 33%;
+    height: 113px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+.dialog .sheet .field.caracs .carac input[name$=exertion] {
+    font-family: "Motrg";
+    font-size: 36px;
+    width: 34px;
+    color: #D42627;
+    background-color: transparent;
+    position: absolute;
+    top: 47px;
+    left: calc(50% - 47px);
+}
+.dialog .sheet .field.caracs .carac input[name=sheetmovement] {
+    font-family: "Motrg";
+    font-size: 55px;
+    width: 42px;
+    color: #FFFF;
+    background-color: transparent;
+    position: absolute;
+    top: 48px;
+    left: calc(50% + 27px);
+}
+.dialog .sheet .field.caracs .carac.melee { background-image: url(img/d_melee.png); }
+.dialog .sheet .field.caracs .carac.ranged { background-image: url(img/d_ranged.png); }
+.dialog .sheet .field.caracs .carac.defense { background-image: url(img/d_defense.png); }
+.dialog .sheet .field.caracs .carac.movement { background-image: url(img/d_movement.png); }
+.dialog .sheet .field.caracs .carac.manipulation { background-image: url(img/d_manipulation.png); }
+
+.dialog .sheet .ui-menu { width: 100% !important; text-align: right; }
+.dialog .sheet .ui-menu .ui-menu-item { display: inline-block; vertical-align: top; width: 16.6%; text-align: center; }
+.dialog .sheet .skills ~ .ui-selectmenu-menu { width: 58px; } 
+
+@media screen and (max-width: 450px) {
+    .dialog .sheet .ui-menu .ui-menu-item { width: 33%; }
+}
+
+.dialog .sheet .field select.dice
+{
+  font-family: "Font Awesome 5 Free";
+  font-size: 35px;
+  width: 60px;
+  display: inline-block;
+  vertical-align: top;
+  height: 44px;
+}
+.dialog .sheet .ui-front {
+    z-index: 100000;
+    left: 0 !important;
+    right: 0 !important;
+}
+.dialog .sheet .ui-button .ui-icon { background-image: none; }
+.dialog .sheet .ui-selectmenu-menu ul li:before {
+    content: " ";
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+.dialog .sheet span[role=combobox] {
+    background-color: transparent !important;
+    background-position: center !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+}
+
+.dialog .sheet .ui-selectmenu-text, .dialog .sheet .ui-menu .ui-menu-item-wrapper { color: transparent; font-size: 1px; }
+.dialog .sheet .ui-selectmenu-icon.ui-icon.ui-icon-triangle-1-s { background-image: none; }
+.dialog .sheet .ui-menu-item, .dialog .sheet .ui-menu-item-wrapper { height: 40px; position: relative; }
+.dialog .sheet .ui-selectmenu-button.ui-button.ui-widget.ui-selectmenu-button-closed.ui-corner-all { border-color: transparent; }
+
+.dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(1):before, .dialog .sheet select[data-value=red] + span { background-image: url(img/dice_red.png) !important; }
+.dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(2):before, .dialog .sheet select[data-value=redreroll] + span { background-image: url(img/dice_redreroll.png) !important; }
+.dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(3):before, .dialog .sheet select[data-value=orange] + span { background-image: url(img/dice_orange.png) !important; }
+.dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(4):before, .dialog .sheet select[data-value=orangereroll] + span { background-image: url(img/dice_orangereroll.png) !important; }
+.dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(5):before, .dialog .sheet select[data-value=yellow] + span { background-image: url(img/dice_yellow.png) !important; }
+.dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(6):before, .dialog .sheet select[data-value=yellowreroll] + span { background-image: url(img/dice_yellowreroll.png) !important; }
+    
+    
+.dialog .sheet .field.caracs .carac .ui-selectmenu-button {
+    position: absolute;
+    top: 73px;
+    left: calc(50% + 11px);
+}
     
 .dialog .sheet .field.imagelocation,
 .dialog .sheet .field.imagezoom,
@@ -496,6 +606,11 @@
     content: "3";
 }
 
+@media screen and (max-width: 418px) {
+    .dialog .sheet .field.caracs .carac {
+        width: 50%;
+    }
+}
 @media screen and (min-width: 840px) {
     .dialog .hscol {
         width: 50%;
