@@ -437,7 +437,7 @@
                 "fr": "Cotte de Mailles",
                 "en": "Chain Mail"
             },
-            "encumbrance": "5",
+            "encumbrance": "3",
             
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
