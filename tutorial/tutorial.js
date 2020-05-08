@@ -7,7 +7,10 @@ Tutorial = {
             
             'extensions_message': "En indiquant les éléments du jeu que vous possédez vous disposerez d'une application personnalisée",
             'extensions_act': "Personnaliser",
-            'extensions_continue': "Par défaut"
+            'extensions_continue': "Par défaut",
+            
+            'audience_message': "Des statistiques anonymes et sans cookies sont opérées sur cette application",
+            'audience_ok': "Ok"
         },
         'en': {
             'settings_message': "The application was configured in english",
@@ -16,7 +19,10 @@ Tutorial = {
             
             'extensions_message': "By specifying the game elements you own you will obtnain a customized application",
             'extensions_act': "Customize",
-            'extensions_continue': "Default"
+            'extensions_continue': "Default",
+            
+            'audience_message': "Anonymous and cookie-free statistics are processed by this application",
+            'audience_ok': "Ok"
         }
     },
     
@@ -31,6 +37,12 @@ Tutorial = {
         {
             window.setTimeout(function() {
                 ConanAbout.actionToast("tutorial-extensions", Tutorial._i18n[Language].extensions_message, [{ text: Tutorial._i18n[Language].extensions_continue, act: "Tutorial._ignoreCustom()" }, { text: Tutorial._i18n[Language].extensions_act, act: "Tutorial._custom()" }]);
+            }, 1000);
+        }
+        else if (!localStorage.getItem("Audience"))
+        {
+            window.setTimeout(function() {
+                ConanAbout.actionToast("tutorial-audience", Tutorial._i18n[Language].audience_message, [{ text: Tutorial._i18n[Language].audience_ok, act: "Tutorial._audience()" }]);
             }, 1000);
         }
     },
@@ -55,6 +67,11 @@ Tutorial = {
         localStorage.setItem("Language", Language);
         ConanAbout.hideActionToast();
         $(document.body).append("<div class=\"blinkmenu\"></div>");
+        Tutorial.init();
+    },
+    _audience: function() {
+        localStorage.setItem("Audience", new Date());
+        ConanAbout.hideActionToast();
         Tutorial.init();
     }
 }

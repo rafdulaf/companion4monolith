@@ -130,5 +130,29 @@
            	}
         </script>
 	    <noscript>This website requires Javascript to be activated / Ce site nécessite l'utilisation de Javascript</noscript>
+	    
+	    
+	    <!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-165921161-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		  gtag('config', 'UA-165921161-1', {
+			  'anonymize_ip': true,
+			  'client_storage': 'none'
+		  });
+		  
+		  var count = 0;
+		  
+		  window.setInterval(function() {
+			  count++;
+			  gtag('event', 'alive', {
+				  'event_category': 'alive',
+				  'event_label': 'alive',
+				  'value': count 
+				});
+		  }, 60000)
+		</script>
 	</body>
 </html>
