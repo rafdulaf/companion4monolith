@@ -25,6 +25,9 @@ var HeroSheet = {
             'encumbrancemov2Ph': "?",
             'caracs': "Caractéristiques",
             'caracPh': "?",
+            'skills': "Compétences",
+            'skillsPh': "-",
+            'skillsNone' : "Aucune",
             'diceRed': "Rouge",
             'diceRedReroll': "Rouge \uf01e",
             'diceOrange': "Orange",
@@ -69,6 +72,9 @@ var HeroSheet = {
             'encumbrancemov2Ph': "?",
             'caracs': "Characteristics",
             'caracPh': "?",
+            'skills': "Skills",
+            'skillsPh': "-",
+            'skillsNone' : "None",
             'diceRed': "Red",
             'diceRedReroll': "Red \uf01e",
             'diceOrange': "Orange",
@@ -297,6 +303,29 @@ var HeroSheet = {
                         + "<select id=\"hscaracmanipulationdice\" class=\"dice\" name=\"sheetmanipulationdice\"><option value=\"red\">" + HeroSheet._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + HeroSheet._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + HeroSheet._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + HeroSheet._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + HeroSheet._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + HeroSheet._i18n[Language].diceYellowReroll + "</option></select>"
                     + "</div>"
                 + "</div>"
+                + "<div class=\"field skills\">"
+                    + "<label for=\"hsskills1\">" + HeroSheet._i18n[Language].skills + "</label>"
+                    + "<div class='skill skill1'>"
+                        + "<select id=\"hsskills1\" class=\"skills\" name=\"sheetskills1\" onchange=\"HeroSheet._preview();\"><option value=\"none\">" + HeroSheet._i18n[Language].skillsNone + "</option>" + _skills() + "</select>"
+                        + "<input type=\"number\" min=\"0\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsskillexertion1\" name=\"sheetskillsexertion1\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].skillsPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+                    + "</div>"
+                    + "<div class='skill skill2'>"
+                        + "<select id=\"hsskills2\" class=\"skills\" name=\"sheetskills2\" onchange=\"HeroSheet._preview();\"><option value=\"none\">" + HeroSheet._i18n[Language].skillsNone + "</option>" + _skills() + "</select>"
+                        + "<input type=\"number\" min=\"0\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsskillexertion2\" name=\"sheetskillsexertion2\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].skillsPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+                    + "</div>"
+                    + "<div class='skill skill3'>"
+                        + "<select id=\"hsskills3\" class=\"skills\" name=\"sheetskills3\" onchange=\"HeroSheet._preview();\"><option value=\"none\">" + HeroSheet._i18n[Language].skillsNone + "</option>" + _skills() + "</select>"
+                        + "<input type=\"number\" min=\"0\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsskillexertion3\" name=\"sheetskillsexertion3\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].skillsPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+                    + "</div>"
+                    + "<div class='skill skill4'>"
+                        + "<select id=\"hsskills4\" class=\"skills\" name=\"sheetskills4\" onchange=\"HeroSheet._preview();\"><option value=\"none\">" + HeroSheet._i18n[Language].skillsNone + "</option>" + _skills() + "</select>"
+                        + "<input type=\"number\" min=\"0\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsskillexertion4\" name=\"sheetskillsexertion4\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].skillsPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+                    + "</div>"
+                    + "<div class='skill skill5'>"
+                        + "<select id=\"hsskills5\" class=\"skills\" name=\"sheetskills5\" onchange=\"HeroSheet._preview();\"><option value=\"none\">" + HeroSheet._i18n[Language].skillsNone + "</option>" + _skills() + "</select>"
+                        + "<input type=\"number\" min=\"0\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsskillexertion5\" name=\"sheetskillsexertion5\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].skillsPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+                    + "</div>"
+                + "</div>"
             + "</div>"
             + "</div>"
             + "<div class=\"hscol\">"
@@ -328,6 +357,31 @@ var HeroSheet = {
             null,
             actions
         );
+        
+        function _skills()
+        {
+            var s = "";
+            
+            
+            for (var i in Encyclopedia.skills.types)
+            {
+                var type = Encyclopedia.skills.types[i];
+                
+                s += "<optgroup label=\"" + type.title[Language] + "\">";
+
+                for (var j in Encyclopedia.skills.list)
+                {
+                    var skill = Encyclopedia.skills.list[j];
+                    if (skill.type == type.id)
+                    {
+                        s += "<option value=\"" + skill.id + "\">" + skill.title[Language] + "</option>";
+                    }
+                }
+            }
+
+            return s;
+        }
+
         
         sheet = sheet || {
             id: Math.random(),
@@ -375,6 +429,24 @@ var HeroSheet = {
     
     _form2sheet: function()
     {
+        var skills = [];
+        for (var i = 0; i < 5; i++)
+        {
+            var id = $(".dialog select[name=sheetskills" + (i+1) + "]")[0].value;
+            var exertion = parseInt($(".dialog input[name=sheetskillsexertion" + (i+1) + "]")[0].value || 0);
+            
+            if (id != 'none')
+            {
+                var skill = {id: id};
+                if (exertion != 0)
+                {
+                    skill.exertion = exertion;
+                }
+                
+                skills.push(skill);
+            }
+        }
+        
         return {
             id: $(".dialog input[name=sheetpos]")[0].value,
             name: $(".dialog input[name=sheetname]")[0].value,
@@ -391,8 +463,7 @@ var HeroSheet = {
             defense: { "dice": $(".dialog select[name=sheetdefensedice]")[0].value },
             movement: { "base": parseInt($(".dialog input[name=sheetmovement]")[0].value || 0), "exertion": parseInt($(".dialog input[name=sheetmovementexertion]")[0].value || 0) },
             manipulation: { "dice": $(".dialog select[name=sheetmanipulationdice]")[0].value, "exertion": parseInt($(".dialog input[name=sheetmanipulationexertion]")[0].value || 0) },
-            // skills
-            skills: []
+            skills: skills
         }
     },
     _sheet2form: function(sheet)
@@ -418,7 +489,11 @@ var HeroSheet = {
         $(".dialog input[name=sheetmovementexertion]")[0].value = sheet.movement.exertion;
         $(".dialog select[name=sheetmanipulationdice]")[0].value = sheet.manipulation.dice; $(".dialog select[name=sheetmanipulationdice]").attr("data-value",sheet.manipulation.dice);
         $(".dialog input[name=sheetmanipulationexertion]")[0].value = sheet.manipulation.exertion;
-        // skills
+        for (var i = 0; i < sheet.skills.length && i < 5; i++)
+        {
+            $(".dialog select[name=sheetskills" + (i+1) + "]")[0].value = sheet.skills[i].id
+            $(".dialog input[name=sheetskillsexertion" + (i+1) + "]")[0].value = sheet.skills[i].exertion
+        }
     },
     
     copyright: function() 

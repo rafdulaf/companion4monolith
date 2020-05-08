@@ -504,6 +504,36 @@
     top: 73px;
     left: calc(50% + 11px);
 }
+
+.dialog .sheet .field.skills .skill {
+    padding-bottom: 5px;
+}
+
+.dialog .sheet .field.skills .skill select   {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 54px);
+    height: 30px;
+    font-size: 26px;
+    font-family: 'Moolbor';
+    margin-left: 10px;
+}
+.dialog .sheet .field.skills .skill input {
+    display: inline-block;
+    vertical-align: top;
+    font-family: "Motrg";
+    font-size: 30px;
+    width: 34px;
+    height: 30px;
+    margin-left: 10px;
+    color: #D42627;
+    background-color: #000;
+    text-align: center;
+    padding-bottom: 6px;
+}
+
+
+
     
 .dialog .sheet .field.imagelocation,
 .dialog .sheet .field.imagezoom,
