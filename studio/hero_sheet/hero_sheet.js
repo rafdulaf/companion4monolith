@@ -11,7 +11,7 @@ var HeroSheet = {
             'editcard': "Modifier",
             'save': "Enregistrer",
             'remove': "Effacer",
-            'removeConfirm': "Etes-vous sûr de vouloir effacer cette carte ?",
+            'removeConfirm': "Etes-vous sûr de vouloir effacer cette fiche ?",
 
             'name': "Nom",
             'namePh': "?",
@@ -59,6 +59,7 @@ var HeroSheet = {
             'editcard': "Edit a card",
             'save': "Save",
             'remove': "Delete",
+            'removeConfirm': "Are you sure that you want to delete this sheet?",
             
             'name': "Name",
             'namePh': "?",
@@ -495,7 +496,93 @@ var HeroSheet = {
             $(".dialog input[name=sheetskillsexertion" + (i+1) + "]")[0].value = sheet.skills[i].exertion
         }
     },
+
+    _remove: function()
+    {
+        if (confirm(HeroSheet._i18n[Language].removeConfirm))
+        {
+            var sheet = HeroSheet._form2sheet();
+            
+            var sheets = JSON.parse(localStorage.getItem("StudioHeroSheets")) || [];
+            var newSheets = [];
     
+            for (var c in sheets)
+            {
+                if (sheets[c].id == sheet.id)
+                {
+                    // nothing here, to remove
+                }
+                else
+                {
+                    newSheets.push(sheets[c]);
+                }
+            }
+            
+            localStorage.setItem("StudioHeroSheets", JSON.stringify(newSheets));
+            HeroSheet._displayCards();
+            Nav.closeDialog();
+        }
+    },
+    
+     _save: function()
+    {
+        var sheet = HeroSheet._form2sheet();
+        
+        $(".dialog .field.error").removeClass("error");
+        
+        var errors = 0;
+        if (!sheet.name)
+        {
+            $(".dialog input[name=sheetname]").parent().addClass("error");
+            errors++;
+        }
+        if (!sheet.gem)
+        {
+            $(".dialog input[name=sheetgems]").parent().addClass("error");
+            errors++;
+        }
+        if (!sheet.encumbrance || !sheet.encumbrance_movement[0] || !sheet.encumbrance_movement[1])
+        {
+            $(".dialog input[name=sheetencumbrance]").parent().parent().addClass("error");
+            errors++;
+        }
+        if (!sheet.melee.exertion || !sheet.ranged.exertion || !sheet.movement.base || !sheet.movement.exertion || !sheet.manipulation.exertion)
+        {
+            $(".dialog .field.caracs").addClass("error");
+            errors++;
+        }
+
+        if (errors > 0)
+        {
+            return;    
+        }
+        
+        var sheets = JSON.parse(localStorage.getItem("StudioHeroSheets")) || [];
+        var newSheets = [];
+        
+        var done = false;
+        for (var c in sheets)
+        {
+            if (sheets[c].id == sheet.id)
+            {
+                newSheets.push(sheet);
+                done = true;
+            }
+            else
+            {
+                newSheets.push(sheets[c]);
+            }
+        }
+        if (!done)
+        {
+            newSheets.push(sheet);
+        }
+        
+        localStorage.setItem("StudioHeroSheets", JSON.stringify(newSheets));
+        HeroSheet._displayCards();
+        Nav.closeDialog();
+    },
+
     copyright: function() 
     {
         return "<h3>" + HeroSheet._i18n[Language].tab + "</h3>"

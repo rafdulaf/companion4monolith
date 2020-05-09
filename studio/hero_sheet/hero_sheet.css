@@ -300,7 +300,7 @@
     text-align: center;
 }
 .dialog .sheet .field.error {
-    border-color: #FF0000;
+    border: 1px solid #FF0000;
 }
 .dialog .sheet .field + .field {
     margin-top: 10px;

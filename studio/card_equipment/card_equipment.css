@@ -225,7 +225,7 @@
     text-align: center;
 }
 .dialog .equipment .field.error {
-    border-color: #FF0000;
+    border: 1px solid #FF0000;
 }
 .dialog .equipment .field + .field {
     margin-top: 10px;
