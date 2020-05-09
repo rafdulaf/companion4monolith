@@ -115,7 +115,16 @@
         </script>
 	<body>
 	   <div class="loading" style="display: none;"></div>
-        <script>
+	   <script>
+	        // Ensure correct height, event on mobile with nav bar collapsible
+	        function resize()
+	        {
+	           document.body.parentNode.style.height = window.innerHeight + "px";
+	        }
+	        $(window).on('resize', resize);
+	        resize();
+	   </script>
+       <script>
             var useragent = navigator.userAgent.toLowerCase();
             if (!/edge\/([0-9.]+)/.test(useragent) 
                     && !/firefox/.test(useragent) 
