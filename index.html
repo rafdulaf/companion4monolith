@@ -92,6 +92,9 @@
         <script src="studio/tile/tile.js?version=0.7"></script>
 
         <script type="text/javascript">
+                var LazyImage = " loading=\"lazy\"";
+                if (/firefox/.test(navigator.userAgent.toLowerCase())) LazyImage = ""; // Not working correctly on FF75/FF76
+                	
 	        	Encyclopedia.load()
 		        	.then(function() {
 		        		var hash = window.location.hash;

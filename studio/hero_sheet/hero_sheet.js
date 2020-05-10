@@ -174,7 +174,7 @@ var HeroSheet = {
         
         if (sheet.image)
         {
-            code += "<div class=\"image\"><img loading=\"lazy\" src=\"" + sheet.image + "\" style=\"left: " + sheet.imagelocation.x + "%; top: " + sheet.imagelocation.y + "%; height: " + sheet.imagezoom + "%; transform: translate(0%, -50%) rotate(" + sheet.imagerotation + "deg)\"/></div>";
+            code += "<div class=\"image\"><img" + LazyImage + " src=\"" + sheet.image + "\" style=\"left: " + sheet.imagelocation.x + "%; top: " + sheet.imagelocation.y + "%; height: " + sheet.imagezoom + "%; transform: translate(0%, -50%) rotate(" + sheet.imagerotation + "deg)\"/></div>";
         }
         
         code += "<picture class=\"background-l3\">"

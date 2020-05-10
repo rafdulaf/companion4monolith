@@ -304,8 +304,8 @@ var ConanRules = {
         for (var i = 0; i <= size; i+=2)
         {
             s += "<div>"
-            if (i > 0) s += "<img loading=\"lazy\" data-page='" + i + "' src='" + url + "/thumbnails/" + i + ".jpg?version=" + Version + "'/>"
-            if (i < size) s += "<img loading=\"lazy\" data-page='" + (i+1) + "' src='" + url + "/thumbnails/" + (i+1) + ".jpg?version=" + Version + "'/>"
+            if (i > 0) s += "<img" + LazyImage + " data-page='" + i + "' src='" + url + "/thumbnails/" + i + ".jpg?version=" + Version + "'/>"
+            if (i < size) s += "<img" + LazyImage + " data-page='" + (i+1) + "' src='" + url + "/thumbnails/" + (i+1) + ".jpg?version=" + Version + "'/>"
             s += "</div>"
         }
         s += "</div>"
