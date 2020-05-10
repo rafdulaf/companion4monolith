@@ -272,7 +272,24 @@ var EncyclopediaEquipments = {
     {
         var equipments = "";
         
-        Encyclopedia.equipments.list.sort(function(s1, s2) { return !s2.title[Language] ? 1 : (!s1.title[Language] ? -1 : s1.title[Language].toLowerCase().localeCompare(s2.title[Language].toLowerCase())); })
+        Encyclopedia.equipments.list.sort(function(s1, s2) {
+            if (!s2.title[Language] && !s1.title[Language])
+            {
+                return s1.image && s2.image ? s1.image.toLowerCase().localeCompare(s2.image.toLowerCase()) : 0;
+            }
+            else if (!s2.title[Language])
+            {
+                return 1;
+            }
+            else if (!s1.title[Language])
+            {
+                return -1;
+            }
+            else
+            {
+                return s1.title[Language].toLowerCase().localeCompare(s2.title[Language].toLowerCase());
+            }
+        });
 
         var equipmentList = Encyclopedia.equipments.list;
         var ignoredPrevious = 0;
