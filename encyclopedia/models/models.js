@@ -12,11 +12,11 @@ var EncyclopediaModels = {
             'heroes': "Utilisée par les héros :"
         },
         'en': {
-            'tab': "Models",
+            'tab': "Minia<wbr/>tures",
             'from': "Available in:",
             'fromAnd': "<br/>and",
-            'model': "model",
-            'models': "models",
+            'model': "miniature",
+            'models': "miniatures",
             'paintedBy': "Painted par: ",
             'zoom': "Zoom",
             'print': "Print",
