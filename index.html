@@ -63,7 +63,7 @@
         <script>
             Version = 0.8;
             // Preferences
-            function autodetectLanguage() { return (navigator.language == 'fr' || navigator.language.startsWith('fr-') ? 'fr' : 'en'); }
+            function autodetectLanguage() { return (navigator.language == 'fr' || navigator.language.indexOf('fr-') == 0 ? 'fr' : 'en'); }
             Language = localStorage.getItem("Language") || autodetectLanguage();
             Extensions = JSON.parse(localStorage.getItem("Extensions")) || {
             	'custom-box': 'king', 'stygia': true, 'nordheim': true, 'khitai': true
@@ -128,18 +128,16 @@
 	        resize();
 	   </script>
        <script>
-            var useragent = navigator.userAgent.toLowerCase();
-            if (!/edge\/([0-9.]+)/.test(useragent) 
-                    && !/firefox/.test(useragent) 
-                    && !/chrome/.test(useragent)
-                    && !/safari/.test(useragent))
-            {
-                document.write("<style>html {background-color: #e64443; color: #FFF; } p {font-weight: bold; font-family: 'Moolbor'; font-size: 30px;} h1 {font-family: 'Crom'} td { vertical-align: center; text-align: center; } hr { width: 50px; }</style><table width='100%' height='100%'><tr><td><h1>Your browser is not supported</h1><p>Try using the last version of Chrome or Firefox for example<p><hr/><h1>Votre navigateur n'est pas supporte</h1><p>Essayez d'utiliser la dernière version de Chrome ou de Firefox par example.</p></td></tr></table>");
-            }
-            else
-           	{
-            	$("div.loading").show();
-           	}
+            try {
+    	      eval('()=>{}');
+              $("div.loading").show();
+    	    } 
+            catch (e) 
+    	    {
+            	// Not supporting modern ES6 js
+                document.write("<style>html {background-color: #e64443; color: #FFF; } p {font-weight: bold; font-family: 'Moolbor'; font-size: 30px;} h1 {font-family: 'Crom'} td { vertical-align: center; text-align: center; } hr { width: 50px; }</style><table width='100%' height='100%'><tr><td><h1>Your browser is not supported</h1><p>Try using the last version of Chrome or Firefox for example<p><hr/><h1>Votre navigateur n'est pas supporté</h1><p>Essayez d'utiliser la dernière version de Chrome ou de Firefox par example.</p></td></tr></table>");
+            	throw new Error("Unsupported browser");
+    	    }
         </script>
 	    <noscript>This website requires Javascript to be activated / Ce site nécessite l'utilisation de Javascript</noscript>
 	    

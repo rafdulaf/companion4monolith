@@ -76,4 +76,10 @@ Tutorial = {
     }
 }
 
-$().ready(Tutorial.init);
+$().ready(function() { 
+    if ($("div.loading").is(":visible"))
+    {
+        // No tutorial on unsupported browsers
+        Tutorial.init();
+    }
+});
