@@ -213,12 +213,24 @@ Nav = {
                     + "</div>";
         $(document.body).prepend(code);
         
-        $(window).on('resize', Nav.updateTitle);
-        $(window).on('hashchange', Nav._hashChange);
+        $(window).on('resize', function() { Nav.updateTitle() });
+        $(window).on('hashchange', function() { Nav._hashChange() });
+
+        function resize()
+        {
+           a = (window.innerHeight) + "px"
+           document.body.parentNode.style.height = a;
+        }
+        $(window).on('resize', resize);
+        resize();  
+        
+        window.scrollTo(0, 111111)
     },
     
     _hashChange: function(e)
     {
+        window.scrollTo(0, 0);
+        
         if (e && e.originalEvent.oldURL.endsWith("-dialog"))
         {
             Nav.closeDialog(true);
@@ -234,7 +246,7 @@ Nav = {
         
         var matcher = /#([a-z0-9_-]*)/i.exec(hash);
         if (matcher
-            && (elt = $("*[for=" + matcher[1] + "]")[0]))
+            && (elt = $("nav a[for=" + matcher[1] + "]")[0]))
         {
             Nav.switchTo(elt);
             return true;
