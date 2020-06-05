@@ -393,6 +393,7 @@ var EncyclopediaHeroes = {
             $("#hero").animate({ scrollTop: $('#hero > *:last()').position().top },500);
             
             ConanAbout.warnToast(EncyclopediaHeroes._i18n[Language].transfertOK)
+            Nav.closeDialog(true);
         }
     },
         

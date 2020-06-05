@@ -517,6 +517,7 @@ var EncyclopediaSpells = {
             $("#spell").animate({ scrollTop: $('#spell > *:last()').position().top },500);
             
             ConanAbout.warnToast(EncyclopediaSpells._i18n[Language].transfertOK)
+            Nav.closeDialog(true);
         }
     },
     
