@@ -239,13 +239,8 @@ var Encyclopedia = {
                     var value = facet.values[v];
                     
                     var count = items.filter(Encyclopedia.filter(facets, prefix, facet, value)).length;
-                    if (count == max && !document.getElementById(prefix + "-" + facet.id + "-" + value.id).checked)
-                    {
-                        // useless facet
-                        count = 0;
-                    }
                     document.getElementById(prefix + "-" + facet.id+ "-" + value.id).parentElement.setAttribute('data-count', count);
-                    if (count) nonEmptyFacets++;
+                    if (count != 0 && count != max) nonEmptyFacets++;
                 }  
                 document.getElementById(prefix + "-" + facet.id).setAttribute("data-count", nonEmptyFacets);
                 
