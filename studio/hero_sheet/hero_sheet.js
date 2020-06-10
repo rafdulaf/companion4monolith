@@ -55,7 +55,7 @@ var HeroSheet = {
             'printnocard': "You have no sheet for the moment",
             'newcard': "Create a new sheet",
             'print': "Print sheets",
-            'printHint': "A hero sheet is 21cm wide. If you wan to print with cut margins, you have to print in landscape mode and only 1 sheet at a time. If you want to print without cut margins, you can print up to 2 sheets at a time in portrait mode.",
+            'printHint': "A hero sheet is 21cm (8.3\") wide. If you want to print with cut margins, you have to print in landscape mode and only 1 sheet at a time. If you want to print without cut margins, you can print up to 2 sheets at a time in portrait mode.",
             'editcard': "Edit a card",
             'save': "Save",
             'remove': "Delete",

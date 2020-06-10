@@ -1002,7 +1002,7 @@
             },
             "text": {
                 "fr": "Ciblez un tentacule avec ligne de vue.\nLe tentacule peut être déplacé jusqu'à 3 zones puis attaquer au corps à corps.",
-                "en": "Choose a Tentacle in your line of sight. Move that Tentacle up ti 3 areas, then the Tentacle may perform a Melee Attack."
+                "en": "Choose a Tentacle in your line of sight. Move that Tentacle up to 3 areas, then the Tentacle may perform a Melee Attack."
             },
             "clarification": null,
     
@@ -1237,7 +1237,7 @@
             },
             "text": {
                 "fr": "Ciblez une figurine avec ligne de vue.\nLa cible gagne la compétence Insaisissable jusqu'à la fin du tour du camp du lanceur.",
-                "en": "Choose a character in your ling of sight. That character gains Evasive until the end of your next turn."
+                "en": "Choose a character in your line of sight. That character gains Evasive until the end of your next turn."
             },
             "clarification": null,
     
@@ -2382,7 +2382,7 @@
             },
             "text": {
                 "fr": "Le lanceur de sort cible une figurine ennemie dans sa zone. Il peut déplacer cette figurine d'une zone en ignorant le phénomène de gêne et sans que cela ne provoque de dégâts à cette figurine.",
-                "en": "Choose an enemy in your area. Move that enemy in a way that would not cause it to suffer damage. This movement is not affected by hindering."
+                "en": "Choose an enemy in your area. Move that enemy one area in a way that would not cause it to suffer damage. This movement is not affected by hindering."
             },
             "clarification": null,
     
