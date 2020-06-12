@@ -78,6 +78,7 @@ var Encyclopedia = {
         
         Encyclopedia._currentSlide = slide;
         Encyclopedia._slides[Encyclopedia._currentSlide].onShow();
+        Encyclopedia.onResize();
     },
 
     
@@ -139,7 +140,7 @@ var Encyclopedia = {
     
     onResize: function()
     {
-        $(".search-engine").each(function(index, s) {
+        $(".search-engine:visible").each(function(index, s) {
             var searchEngine = $(s);
             
             searchEngine.removeClass("collapsible");
