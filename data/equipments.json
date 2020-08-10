@@ -86,7 +86,7 @@
             "active": { "0": "orange", "1": "none" },
             "passive": { "0": "none", "1": "none" },
     
-            "image": "data/equipments/img/conans_sword.png",
+            "image": "data/equipments/img/conans_sword_1.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
     
@@ -104,7 +104,7 @@
             "active": { "0": "orange", "1": "none" },
             "passive": { "0": "none", "1": "none" },
     
-            "image": "data/equipments/img/conans_sword.png",
+            "image": "data/equipments/img/conans_sword_2.png",
             "origins": ["bbox"]
         },
     
@@ -301,7 +301,7 @@
             "active": { "0": "yellowreroll", "1": "none" },
             "passive": { "0": "none", "1": "none" },
     
-            "image": "data/equipments/img/parrying_dagger.png",
+            "image": "data/equipments/img/parrying_dagger_1.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
     
@@ -319,7 +319,7 @@
             "active": { "0": "yellowreroll", "1": "none" },
             "passive": { "0": "none", "1": "none" },
     
-            "image": "data/equipments/img/parrying_dagger.png",
+            "image": "data/equipments/img/parrying_dagger_2.png",
             "origins": ["bbox"]
         },
     
@@ -2406,7 +2406,7 @@
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
     
-            "image": "data/equipments/img/amulet.png",
+            "image": "data/equipments/img/amulet_1.png",
             "origins": ["bbox"]
         },   
     
@@ -2424,7 +2424,7 @@
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
     
-            "image": "data/equipments/img/amulet.png",
+            "image": "data/equipments/img/amulet_2.png",
             "origins": ["bbox"]
         },   
         
