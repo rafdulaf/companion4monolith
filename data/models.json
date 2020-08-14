@@ -286,6 +286,623 @@
             "images": ["data/models/img/ikhmet_1.jpg"],
             "paint": null,
             "origins": ["stygia"]
-        }
+        },
+        
+        {
+            "id": "captain",
+            "thumb": ["data/models/img/captain_sd.jpg"],
+            "images": ["data/models/img/captain_1.jpg"],
+            "paint": null,
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "thalis",
+            "thumb": ["data/models/img/thalis_sd.jpg"],
+            "images": ["data/models/img/thalis_1.jpg"],
+            "paint": null,
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "dark-demon",
+            "thumb": ["data/models/img/dark-demon_sd.jpg"],
+            "images": ["data/models/img/dark-demon_1.jpg"],
+            "paint": null,
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "giant-snake",
+            "thumb": ["data/models/img/giant-snake_sd.jpg"],
+            "images": ["data/models/img/giant-snake_1.jpg"],
+            "paint": null,
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "khosatral-khel",
+            "thumb": ["data/models/img/khosatral-khel_sd.jpg"],
+            "images": ["data/models/img/khosatral-khel_1.jpg"],
+            "paint": null,
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "outer-dark-demon",
+            "thumb": ["data/models/img/outer-dark-demon_sd.jpg"],
+            "images": ["data/models/img/outer-dark-demon_1.jpg"],
+            "paint": null,
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "belits-guards",
+            "thumb": ["data/models/img/belits-guards_sd.jpg"],
+            "images": ["data/models/img/belits-guards_1.jpg"],
+            "paint": null,
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "princess",
+            "thumb": ["data/models/img/princess_sd.jpg"],
+            "images": ["data/models/img/princess_1.jpg"],
+            "paint": null,
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "bossonian-archers",
+            "thumb": ["data/models/img/bossonian-archers_sd.jpg"],
+            "images": ["data/models/img/bossonian-archers_1.jpg"],
+            "paint": null,
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "bossonian-guards",
+            "thumb": ["data/models/img/bossonian-guards_sd.jpg"],
+            "images": ["data/models/img/bossonian-guards_1.jpg"],
+            "paint": null,
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "hyenas",
+            "thumb": ["data/models/img/hyenas_sd.jpg"],
+            "images": ["data/models/img/hyenas_1.jpg"],
+            "paint": null,
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "pict-hunters",
+            "thumb": ["data/models/img/pict-hunters_sd.jpg"],
+            "images": ["data/models/img/pict-hunters_1.jpg"],
+            "paint": null,
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "pict-warriors",
+            "thumb": ["data/models/img/pict-warriors_sd.jpg"],
+            "images": ["data/models/img/pict-warriors_1.jpg"],
+            "paint": null,
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "pirates",
+            "thumb": ["data/models/img/pirates_sd.jpg"],
+            "images": ["data/models/img/pirates_1.jpg"],
+            "paint": null,
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+    
+        {
+            "id": "thog-1",
+            "thumb": ["data/models/img/thog-1_sd.jpg"],
+            "images": ["data/models/img/thog-1_1.jpg"],
+            "paint": null,
+            "origins": ["king"]
+        },
+    
+        {
+            "id": "thog-2",
+            "thumb": ["data/models/img/thog-2_sd.jpg"],
+            "images": ["data/models/img/thog-2_1.jpg"],
+            "paint": null,
+            "origins": ["king"]
+        },
+    
+        {
+            "id": "conans-lion",
+            "thumb": ["data/models/img/conans-lion_sd.jpg"],
+            "images": ["data/models/img/conans-lion_1.jpg"],
+            "paint": null,
+            "origins": ["king"]
+        },
+    
+        {
+            "id": "zelatas-wolf",
+            "thumb": ["data/models/img/zelatas-wolf_sd.jpg"],
+            "images": ["data/models/img/zelatas-wolf_1.jpg"],
+            "paint": null,
+            "origins": ["king"]
+        },
+    
+        {
+            "id": "mummies",
+            "thumb": ["data/models/img/mummies_sd.jpg"],
+            "images": ["data/models/img/mummies_1.jpg"],
+            "paint": null,
+            "origins": ["king"]
+        },
+    
+        {
+            "id": "skeletons",
+            "thumb": ["data/models/img/skeletons_sd.jpg"],
+            "images": ["data/models/img/skeletons_1.jpg"],
+            "paint": null,
+            "origins": ["king"]
+        },
+    
+        {
+            "id": "ageera",
+            "thumb": ["data/models/img/ageera_sd.jpg"],
+            "images": ["data/models/img/ageera_1.jpg"],
+            "paint": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "akivasha",
+            "thumb": ["data/models/img/akivasha_sd.jpg"],
+            "images": ["data/models/img/akivasha_1.jpg"],
+            "paint": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "gitara",
+            "thumb": ["data/models/img/gitara_sd.jpg"],
+            "images": ["data/models/img/gitara_1.jpg"],
+            "paint": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "hyperborean-primitive",
+            "thumb": ["data/models/img/hyperborean-primitive_sd.jpg"],
+            "images": ["data/models/img/hyperborean-primitive_1.jpg"],
+            "paint": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "khemsa",
+            "thumb": ["data/models/img/khemsa_sd.jpg"],
+            "images": ["data/models/img/khemsa_1.jpg"],
+            "paint": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "natohk",
+            "thumb": ["data/models/img/natohk_sd.jpg"],
+            "images": ["data/models/img/natohk_1.jpg"],
+            "paint": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "warlock",
+            "thumb": ["data/models/img/warlock_sd.jpg"],
+            "images": ["data/models/img/warlock_1.jpg"],
+            "paint": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+   
+        {
+            "id": "camel",
+            "thumb": ["data/models/img/camel_sd.jpg"],
+            "images": ["data/models/img/camel_1.jpg"],
+            "paint": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "kothian-archer",
+            "thumb": ["data/models/img/kothian-archer_sd.jpg"],
+            "images": ["data/models/img/kothian-archer_1.jpg"],
+            "paint": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "slasher",
+            "thumb": ["data/models/img/slasher_sd.jpg"],
+            "images": ["data/models/img/slasher_1.jpg"],
+            "paint": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "bone-golem",
+            "thumb": ["data/models/img/bone-golem_sd.jpg"],
+            "images": ["data/models/img/bone-golem_1.jpg"],
+            "paint": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "forest-demon",
+            "thumb": ["data/models/img/forest-demon_sd.jpg"],
+            "images": ["data/models/img/forest-demon_1.jpg"],
+            "paint": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "giant-scorpion",
+            "thumb": ["data/models/img/giant-scorpion_sd.jpg"],
+            "images": ["data/models/img/giant-scorpion_1.jpg"],
+            "paint": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "giant-spider",
+            "thumb": ["data/models/img/giant-spider_sd.jpg"],
+            "images": ["data/models/img/giant-spider_1.jpg"],
+            "paint": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "gray-man-ape",
+            "thumb": ["data/models/img/gray-man-ape_sd.jpg"],
+            "images": ["data/models/img/gray-man-ape_1.jpg"],
+            "paint": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "swamp-demon",
+            "thumb": ["data/models/img/swamp-demon_sd.jpg"],
+            "images": ["data/models/img/swamp-demon_1.jpg"],
+            "paint": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "thaug",
+            "thumb": ["data/models/img/thaug_sd.jpg"],
+            "images": ["data/models/img/thaug_1.jpg"],
+            "paint": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "mummies-alt",
+            "thumb": ["data/models/img/mummies-alt_sd.jpg"],
+            "images": ["data/models/img/mummies-alt_1.jpg"],
+            "paint": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "pict-archers",
+            "thumb": ["data/models/img/pict-archers_sd.jpg"],
+            "images": ["data/models/img/pict-archers_1.jpg"],
+            "paint": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "pirates-alt",
+            "thumb": ["data/models/img/pirates-alt_sd.jpg"],
+            "images": ["data/models/img/pirates-alt_1.jpg"],
+            "paint": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "skeletons-alt",
+            "thumb": ["data/models/img/skeletons-alt_sd.jpg"],
+            "images": ["data/models/img/skeletons-alt_1.jpg"],
+            "paint": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "tentacles",
+            "thumb": ["data/models/img/tentacles_sd.jpg"],
+            "images": ["data/models/img/tentacles_1.jpg"],
+            "paint": null,
+            "origins": ["stretchgoal", "king"]
+        },
+    
+        {
+            "id": "baal-pteor",
+            "thumb": ["data/models/img/baal-pteor_sd.jpg"],
+            "images": ["data/models/img/baal-pteor_1.jpg", "data/models/img/baal-pteor_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["baalpteor"]
+        },
+    
+        {
+            "id": "black-dragons",
+            "thumb": ["data/models/img/black-dragons_sd.jpg"],
+            "images": ["data/models/img/black-dragons_1.jpg"],
+            "paint": null,
+            "origins": ["blackdragons"]
+        },
+    
+        {
+            "id": "the-black-ones",
+            "thumb": ["data/models/img/the-black-ones_sd.jpg"],
+            "images": ["data/models/img/the-black-ones_1.jpg"],
+            "paint": null,
+            "origins": ["blackones"]
+        },
+    
+        {
+            "id": "crossbowmen",
+            "thumb": ["data/models/img/crossbowmen_sd.jpg"],
+            "images": ["data/models/img/crossbowmen_1.jpg"],
+            "paint": null,
+            "origins": ["crossbowmen"]
+        },
+    
+        {
+            "id": "demon-of-the-earth",
+            "thumb": ["data/models/img/demon-of-the-earth_sd.jpg"],
+            "images": ["data/models/img/demon-of-the-earth_1.jpg"],
+            "paint": null,
+            "origins": ["demonearth"]
+        },
+    
+        {
+            "id": "dragon",
+            "thumb": ["data/models/img/dragon_sd.jpg"],
+            "images": ["data/models/img/dragon_1.jpg"],
+            "paint": null,
+            "origins": ["dragon"]
+        },
+    
+        {
+            "id": "giant-wolves",
+            "thumb": ["data/models/img/giant-wolves_sd.jpg"],
+            "images": ["data/models/img/giant-wolves_1.jpg"],
+            "paint": null,
+            "origins": ["giantwolves"]
+        },
+    
+        {
+            "id": "sabertooth-tiger",
+            "thumb": ["data/models/img/sabertooth-tiger_sd.jpg"],
+            "images": ["data/models/img/sabertooth-tiger_1.jpg"],
+            "paint": null,
+            "origins": ["sabretoothtiger"]
+        },
+    
+        {
+            "id": "afari",
+            "thumb": ["data/models/img/afari_sd.jpg"],
+            "images": ["data/models/img/afari_1.jpg"],
+            "paint": null,
+            "origins": ["kushwitchhunters"]
+        },
+    
+        {
+            "id": "ghayoor",
+            "thumb": ["data/models/img/ghayoor_sd.jpg"],
+            "images": ["data/models/img/ghayoor_1.jpg"],
+            "paint": null,
+            "origins": ["kushwitchhunters"]
+        },
+    
+        {
+            "id": "shafiah",
+            "thumb": ["data/models/img/shafiah_sd.jpg"],
+            "images": ["data/models/img/shafiah_1.jpg"],
+            "paint": null,
+            "origins": ["kushwitchhunters"]
+        },
+    
+        {
+            "id": "shubba",
+            "thumb": ["data/models/img/shubba_sd.jpg"],
+            "images": ["data/models/img/shubba_1.jpg"],
+            "paint": null,
+            "origins": ["kushwitchhunters"]
+        },
+    
+        {
+            "id": "atali",
+            "thumb": ["data/models/img/atali_sd.jpg"],
+            "images": ["data/models/img/atali_1.jpg"],
+            "paint": null,
+            "origins": ["nordheim"]
+        },
+    
+        {
+            "id": "yazdigerd",
+            "thumb": ["data/models/img/yazdigerd_sd.jpg"],
+            "images": ["data/models/img/yazdigerd_1.jpg"],
+            "paint": null,
+            "origins": ["nordheim"]
+        },
+    
+        {
+            "id": "nijgor",
+            "thumb": ["data/models/img/nijgor_sd.jpg"],
+            "images": ["data/models/img/nijgor_1.jpg"],
+            "paint": null,
+            "origins": ["nordheim"]
+        },
+    
+        {
+            "id": "seski",
+            "thumb": ["data/models/img/seski_sd.jpg"],
+            "images": ["data/models/img/seski_1.jpg"],
+            "paint": null,
+            "origins": ["nordheim"]
+        },
+    
+        {
+            "id": "vanir-warriors",
+            "thumb": ["data/models/img/vanir-warriors_sd.jpg"],
+            "images": ["data/models/img/vanir-warriors_1.jpg"],
+            "paint": null,
+            "origins": ["nordheim"]
+        },
+    
+        {
+            "id": "vanir-zombies",
+            "thumb": ["data/models/img/vanir-zombies_sd.jpg"],
+            "images": ["data/models/img/vanir-zombies_1.jpg"],
+            "paint": null,
+            "origins": ["nordheim"]
+        },
+    
+        {
+            "id": "vanir-primitives",
+            "thumb": ["data/models/img/vanir-primitives_sd.jpg"],
+            "images": ["data/models/img/vanir-primitives_1.jpg"],
+            "paint": null,
+            "origins": ["nordheim"]
+        },
+    
+        {
+            "id": "crows",
+            "thumb": ["data/models/img/crows_sd.jpg"],
+            "images": ["data/models/img/crows_1.jpg"],
+            "paint": null,
+            "origins": ["nordheim"]
+        },
+    
+        {
+            "id": "wolves",
+            "thumb": ["data/models/img/wolves_sd.jpg"],
+            "images": ["data/models/img/wolves_1.jpg"],
+            "paint": null,
+            "origins": ["nordheim"]
+        },
+    
+        {
+            "id": "aesir-zombies",
+            "thumb": ["data/models/img/aesir-zombies_sd.jpg"],
+            "images": ["data/models/img/aesir-zombies_1.jpg"],
+            "paint": null,
+            "origins": ["nordheim"]
+        },
+    
+        {
+            "id": "aesir-warriors",
+            "thumb": ["data/models/img/aesir-warriors_sd.jpg"],
+            "images": ["data/models/img/aesir-warriors_1.jpg"],
+            "paint": null,
+            "origins": ["nordheim"]
+        },
+    
+        {
+            "id": "shuang-mian",
+            "thumb": ["data/models/img/shuang-mian_sd.jpg"],
+            "images": ["data/models/img/shuang-mian_1.jpg"],
+            "paint": null,
+            "origins": ["khitai"]
+        },
+    
+        {
+            "id": "evil-hound",
+            "thumb": ["data/models/img/evil-hound_sd.jpg"],
+            "images": ["data/models/img/evil-hound_1.jpg"],
+            "paint": null,
+            "origins": ["khitai"]
+        },
+    
+        {
+            "id": "khitan-guards",
+            "thumb": ["data/models/img/khitan-guards_sd.jpg"],
+            "images": ["data/models/img/khitan-guards_1.jpg"],
+            "paint": null,
+            "origins": ["khitai"]
+        },
+    
+        {
+            "id": "honor-guards",
+            "thumb": ["data/models/img/honor-guards_sd.jpg"],
+            "images": ["data/models/img/honor-guards_1.jpg"],
+            "paint": null,
+            "origins": ["khitai"]
+        },
+    
+        {
+            "id": "javelin-throwers",
+            "thumb": ["data/models/img/javelin-throwers_sd.jpg"],
+            "images": ["data/models/img/javelin-throwers_1.jpg"],
+            "paint": null,
+            "origins": ["khitai"]
+        },
+    
+        {
+            "id": "foo-dogs",
+            "thumb": ["data/models/img/foo-dogs_sd.jpg"],
+            "images": ["data/models/img/foo-dogs_1.jpg"],
+            "paint": null,
+            "origins": ["khitai"]
+        },
+    
+        {
+            "id": "thot-amon",
+            "thumb": ["data/models/img/thot-amon_sd.jpg"],
+            "images": ["data/models/img/thot-amon_1.jpg"],
+            "paint": null,
+            "origins": ["stygia"]
+        },
+    
+        {
+            "id": "scorpion-broodmother",
+            "thumb": ["data/models/img/scorpion-broodmother_sd.jpg"],
+            "images": ["data/models/img/scorpion-broodmother_1.jpg"],
+            "paint": null,
+            "origins": ["stygia"]
+        },
+    
+        {
+            "id": "giant-scorpions",
+            "thumb": ["data/models/img/giant-scorpions_sd.jpg"],
+            "images": ["data/models/img/giant-scorpions_1.jpg"],
+            "paint": null,
+            "origins": ["stygia"]
+        },
+    
+        {
+            "id": "eternal-guard",
+            "thumb": ["data/models/img/eternal-guard_sd.jpg"],
+            "images": ["data/models/img/eternal-guard_1.jpg"],
+            "paint": null,
+            "origins": ["stygia"]
+        },
+    
+        {
+            "id": "assassins",
+            "thumb": ["data/models/img/assassins_sd.jpg"],
+            "images": ["data/models/img/assassins_1.jpg"],
+            "paint": null,
+            "origins": ["stygia"]
+        },
+                        
+        {
+            "id": "spartan",
+            "thumb": ["data/models/img/spartan_sd.jpg"],
+            "images": ["data/models/img/spartan_1.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["stretchgoal", "king"]
+        }        
     ]
 }
