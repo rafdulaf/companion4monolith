@@ -80,11 +80,50 @@ var ConanAbout = {
             'contribute_hof_coders': "Application coding",
             'contribute_hof_data': "Data inputs",
             'contribute_hof_test': "Tests and rereadings"
+        },
+        'it': {
+            'name': "Conan<br/>Companion",
+            'title': "Conan Companion",
+            'text': "<h1>Importante</h1>Questa applicazione non ha nessun legame con il gioco Conan: Monolith.<br/>É realizzata da @cochon, basata sulle mappe statiche delle linee di vista create da @Roolz e prende spunto da un'idea di lavoro di @Pamplerousse sulle linee di vista dinamiche.",
+            'find': "Si veda il forum 'The Overlord'",
+            'fullscreen': "A tutto schermo",
+            'about': "Crediti",
+            'licence': "Licenze",
+            'licence_text': "Questo software è sviluppato sotto licenza LGPL-3.0.",
+            'licence_text2': "Tutto il materiale (immagini, testi, caratteristiche...) resta proprietà dei singoli autori nel rispetto dei diritti applicabili",
+            'copyright': "Copyright",
+            'copyright-text': "<h1>Scopi</h1>'Conan Companion' è un'applicazione indipendente di supporto per i giocatori del gioco 'Conan'.<br/>"
+                    + "Questa applicazione è scritta da <a href='https://the-overlord.com/index.php?/profile/5240-cochon/' target='_blank'>@cochon</a>.<br/>"
+                    + "<h1>Proprietà</h1>"
+                    + "'Conan' è un gioco da tavolo della <a href='http://monolithedition.com' target='_blank'>Monolith</a>.<br/>"
+                    + "Il logo di Conan e i fonts usati sono proprietà della Monolith.<br/>"
+                    + "Le immagini di 'Conan Companion' sono state create adattando il logo di Conan.<br/>",
+            'preferences': 'Le mie preferenze',
+            'preferences_text': "Scegli le preferenze che saranno salvate sul tuo device.",
+            'preferences_general': "Generali",
+            'custom': "Gioco ed espansioni",
+            'custom_text': "Scegli le espansioni che saranno salvate sul tuo device.",
+            'custom_lang': "Italiano",
+            'custom_langlabel': "Lingua",
+            'custom_automatic_lang': "Rivela automaticamente",
+            'custom_reload': "Le modifiche della tua configurazione richiederanno un riavvio automatico dell'applicazione",
+            'contribute': "Collabora!",
+            'contribute_text': "Puoi collaborare a questa applicazione in molti modi:"
+                    + "<ul>"
+                        + "<li>Hai notato un errore?</li>"
+                        + "<li>Hai un'idea per una miglioria?</li>"
+                        + "<li>Vuoi proporre una modifica?</li>"
+                    + "</ul>"
+                    + "Il progetto è ospitato su Github: puoi pertanto mandare lì le tue richieste o le tue proposte, o contribuire sul forum The Overlord.",
+            'contribute_version': "Versione attuale: ",
+            'contribute_hof': "Albo d'oro",
+            'contribute_hof_coders': "Codice Applicazione",
+            'contribute_hof_data': "Aquisizione dei dati",
+            'contribute_hof_test': "Test e riscritture"
         }
     },
-    
     _copyright: "",
-    
+
     _toggleFullscreen: function() {
         $("nav.menu input")[0].checked = false;
 
@@ -93,7 +132,7 @@ var ConanAbout = {
               document.documentElement.requestFullscreen();
           } else {
             if (document.exitFullscreen) {
-              document.exitFullscreen(); 
+              document.exitFullscreen();
             }
           }
     },
@@ -105,25 +144,25 @@ var ConanAbout = {
         if (!isInStandaloneMode) {
             Menu.addMenu(ConanAbout._i18n[Language].fullscreen, "about-fullscreen", "ConanAbout._toggleFullscreen()");
         }
-        
+
         Menu.addMenu(ConanAbout._i18n[Language].custom, "about-custom", "ConanAbout._custom()", !isInStandaloneMode);
         Menu.addMenu(ConanAbout._i18n[Language].preferences, "about-preferences", "ConanAbout._preferences()");
-        
+
         Menu.addMenu(ConanAbout._i18n[Language].contribute, "about-contribute", "ConanAbout._contribute()", true);
         Menu.addMenu(ConanAbout._i18n[Language].about, "about-about", "ConanAbout._about()");
     },
-    
+
     _about: function()
     {
         $("nav.menu input")[0].checked = false;
-        
+
         Nav.dialog(ConanAbout._i18n[Language].about,
             "<div id='about' class='about'>"
                     + "<div class='about-zone-about'>"
                             + "<h1 style='text-align: center '>" + ConanAbout._i18n[Language].title + " v" + Version + "</h1>"
                             + "<img src='about/logo.jpg?version=" + Version + "'/>" +
-                            "<a class='fullscreen' onclick='ConanAbout._toggleFullscreen(); return false' href='javascript:void(0);' title=\"" + ConanAbout._i18n[Language].fullscreen + "\"></a>" + 
-                            "<span>" + ConanAbout._i18n[Language].text + 
+                            "<a class='fullscreen' onclick='ConanAbout._toggleFullscreen(); return false' href='javascript:void(0);' title=\"" + ConanAbout._i18n[Language].fullscreen + "\"></a>" +
+                            "<span>" + ConanAbout._i18n[Language].text +
                                 "<div><a target='_blank' href='https://the-overlord.com/'>" + ConanAbout._i18n[Language].find + "</a></div>" +
                             "</span>"
                     + "</div>"
@@ -133,24 +172,24 @@ var ConanAbout = {
                     + "<div>"
                         + "<h1>" + ConanAbout._i18n[Language]['licence'] + "</h1>"
                         + "<div><a href='https://github.com/rafdulaf/companion4conan/blob/master/LICENSE'>" + ConanAbout._i18n[Language]['licence_text'] + "</a> " + ConanAbout._i18n[Language]['licence_text2'] + "</div>"
-                    + "</div>"        
-                + "</div>"        
-        );        
+                    + "</div>"
+                + "</div>"
+        );
     },
-    
+
     addCopyright: function(title, text)
     {
         ConanAbout._copyright += "<h2>" + title + "</h2>" + text;
     },
-    
+
     _preferences: function()
     {
         $("nav.menu input")[0].checked = false;
-        
+
         Nav.dialog(ConanAbout._i18n[Language].preferences,
             "<div class=\"custom\">"
             +       "<div>" + ConanAbout._i18n[Language].preferences_text + "</div>"
-            
+
             +       "<div class=\"custom-wrap\">"
             +       "<fieldset><legend>" + ConanAbout._i18n[Language].preferences_general + "</legend>"
             +           "<label for=\"custom-lang\">" + ConanAbout._i18n['fr'].custom_langlabel + "</label>"
@@ -158,21 +197,22 @@ var ConanAbout = {
             +               "<option value=\"\">" + ConanAbout._i18n[Language].custom_automatic_lang + "</option>"
             +               "<option value=\"fr\">" + ConanAbout._i18n['fr'].custom_lang + "</option>"
             +               "<option value=\"en\">" + ConanAbout._i18n['en'].custom_lang + "</option>"
+            +               "<option value=\"it\">" + ConanAbout._i18n['it'].custom_lang + "</option>"
             +           "</select>"
             +           "</fieldset>"
             +       "</div>"
 
             + "</div>",
 
-            function() 
+            function()
             {
                 var oldLanguage = localStorage.getItem("Language");
-                
+
                 // Save
-                var selectedLanguage = $(".custom *[name=custom-lang]")[0].value; 
+                var selectedLanguage = $(".custom *[name=custom-lang]")[0].value;
                 Language = selectedLanguage || autodetectLanguage();
                 localStorage.setItem("Language", selectedLanguage);
-                
+
                 if (oldLanguage != selectedLanguage)
                 {
                     window.location.reload(true);
@@ -181,7 +221,7 @@ var ConanAbout = {
         );
 
         $(".custom *[name=custom-lang]")[0].value = localStorage.getItem("Language") || "";
-        
+
         var display = false;
         $(".custom input, .custom select").on('change', function() {
             if (!display)
@@ -191,14 +231,14 @@ var ConanAbout = {
             display = true;
         })
     },
-    
+
     warnToast: function(text) {
         $(document.body).append("<div class=\"toast-warning\" style=\"bottom: -100px; opacity: 0;\">" + text + "</div>");
         window.setTimeout(function() { $(".toast-warning").css("bottom", "30px").css("opacity", "1"); }, 1);
         window.setTimeout(function() { $(".toast-warning").css("bottom", "-100px").css("opacity", "0"); }, 3000);
         window.setTimeout(function() { $(".toast-warning").remove(); }, 3500);
     },
-    
+
     hideActionToast: function() {
         $(".toast-action").css("opacity", "0");
         window.setTimeout(function() { $(".toast-action").remove(); }, 1000);
@@ -210,25 +250,25 @@ var ConanAbout = {
             actionHTML += "<a href='javascript:void(0)' onclick='" + action.act + "'>" + action.text + "</a>";
         }
         actionHTML += "</div>"
-        
+
         var iconHTML = "";
         if (icon) {
             iconHTML += "<div class=\"toast-action-icon " + icon + "\"></div>"
         }
-        
+
         $(document.body).append("<div class=\"toast-action\" style=\"opacity: 0;\">" + iconHTML + "<div class=\"toast-action-text\">" + text + "</div>" + actionHTML + "</div>");
         window.setTimeout(function() { $(".toast-action").css("opacity", "0.98"); }, 1);
     },
-    
+
     _custom: function()
     {
         $("nav.menu input")[0].checked = false;
-        
+
         var s = "";
         for (var i in Encyclopedia.expansions.types)
         {
             var expansionType = Encyclopedia.expansions.types[i];
-            
+
             s += "<fieldset><legend>" + expansionType.text[Language] + "</legend>";
 
             if (expansionType.single)
@@ -247,24 +287,24 @@ var ConanAbout = {
                     }
                     else
                     {
-                        s += "<div>" 
-                           +    "<input type=\"checkbox\" name=\"" + expansion.id + "\"\ id=\"" + expansion.id + "\">" 
-                           +    "<label for=\"" + expansion.id + "\">" 
-                           +        expansion.title[Language] 
-                           +    "</label>" 
+                        s += "<div>"
+                           +    "<input type=\"checkbox\" name=\"" + expansion.id + "\"\ id=\"" + expansion.id + "\">"
+                           +    "<label for=\"" + expansion.id + "\">"
+                           +        expansion.title[Language]
+                           +    "</label>"
                            + "</div>";
                     }
                 }
             }
-            
+
             if (expansionType.single)
             {
                 s += "</select>";
             }
-            
+
             s += "</fieldset>";
         }
-        
+
         Nav.dialog(ConanAbout._i18n[Language].custom,
             "<div class=\"custom\">"
             +       "<div>" + ConanAbout._i18n[Language].custom_text + "</div>"
@@ -272,10 +312,10 @@ var ConanAbout = {
             +           s
             +       "</div>"
             + "</div>",
-            
+
             function() {
                 var oldExtensions = Extensions;
-                
+
                 // Save
                 Extensions = {};
                 $(".custom *").each(function (i) {
@@ -291,7 +331,7 @@ var ConanAbout = {
                 });
 
                 localStorage.setItem("Extensions", JSON.stringify(Extensions));
-                
+
                 function _notEquals(a, b)
                 {
                     for (var i in a)
@@ -310,21 +350,21 @@ var ConanAbout = {
                     }
                     return false;
                 }
-                
+
                 if (_notEquals(oldExtensions, Extensions))
                 {
                     window.location.reload(true);
                 }
             }
         );
-        
+
         for (var i in Extensions)
         {
             $(".custom *[name=" + i + "]").each(function (i) {
                 var $this = $(this);
                 if ($this.is('select'))
                 {
-                    this.value = Extensions[this.name];                    
+                    this.value = Extensions[this.name];
                 }
                 else if ($this.is('input'))
                 {
@@ -332,7 +372,7 @@ var ConanAbout = {
                 }
             });
         }
-        
+
         var display = false;
         $(".custom input, .custom select").on('change', function() {
             if (!display)
@@ -342,10 +382,10 @@ var ConanAbout = {
             display = true;
         })
     },
-    
+
     _contribute: function() {
         $("nav.menu input")[0].checked = false;
-        
+
         Nav.dialog(ConanAbout._i18n[Language].contribute,
             "<div class=\"contribute\">"
                 + "<div>" + ConanAbout._i18n[Language].contribute_text + "</div>"
@@ -362,12 +402,12 @@ var ConanAbout = {
                 + "<div><a href=\"https://the-overlord.com/index.php?/profile/13-roolz/\">@Roolz</a></div>"
                 + "<div><a href=\"https://the-overlord.com/index.php?/profile/5236-renand/\">@Renand</a></div>"
             + "</div>",
-            
+
             function() {
             }
-        );        
+        );
     },
-    
+
     _hasExpansion: function(origins)
     {
         for (var i in Encyclopedia.expansions.types)
@@ -397,4 +437,3 @@ var ConanAbout = {
 }
 
 $(document.head).append("<title>" + ConanAbout._i18n[Language].title + "</title>");
-

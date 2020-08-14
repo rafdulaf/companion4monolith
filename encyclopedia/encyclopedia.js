@@ -61,6 +61,12 @@ var Encyclopedia = {
             'copyright': "Data collected on the site <a target='_blank' href='https://conan-companion.herokuapp.com/'>conan-companion.herokuapp.com</a> with the kind authorization of David Abel. French translations entered by @cochon.<br/>Models photos and associated texts where gather on the <a href='http://conan.paintings.free.fr/'>Conan paintings</a> site.",
             'operatorAnd': "and",
             'operatorOr': "or"
+        },
+        'it': {
+            'menu': "Enciclopedia",
+            'copyright': "Le informazioni sono ottenute dal sito: <a target='_blank' href='https://conan-companion.herokuapp.com/'>conan-companion.herokuapp.com</a> con la cortese autorizzazione di David Abel. Traduzione in francese di @cochon. Traduzione in italiano di @pensareadaltro <br/>Miniature, foto e testi associati sono stati recuperati dal sito: <a href='http://conan.paintings.free.fr/'>Conan paintings</a>.",
+            'operatorAnd': "e",
+            'operatorOr': "o"
         }
     },
     
