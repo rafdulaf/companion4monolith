@@ -173,7 +173,7 @@
             "thumb": "data/models/img/skuthus_sd.jpg",
             "images": ["data/models/img/skuthus_1.jpg", "data/models/img/skuthus_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
-            "origins": ["stretchgoal", "king"]
+            "origins": ["corebox", "stretchgoal", "king"]
         },
     
         {
@@ -181,7 +181,7 @@
             "thumb": "data/models/img/thak_sd.jpg",
             "images": ["data/models/img/thak_1.jpg", "data/models/img/thak_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
-            "origins": ["stretchgoal", "king"]
+            "origins": ["corebox", "stretchgoal", "king"]
         },
     
         {
@@ -189,7 +189,7 @@
             "thumb": "data/models/img/zaporavo_sd.jpg",
             "images": ["data/models/img/zaporavo_1.jpg", "data/models/img/zaporavo_2.jpg"],
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
-            "origins": ["stretchgoal", "king"]
+            "origins": ["corebox", "stretchgoal", "king"]
         },
     
         {
@@ -197,7 +197,7 @@
             "thumb": "data/models/img/zogar-sag_sd.jpg",
             "images": ["data/models/img/zogar-sag_1.jpg", "data/models/img/zogar-sag_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
-            "origins": ["stretchgoal", "king"]
+            "origins": ["corebox", "stretchgoal", "king"]
         },
     
         {
@@ -291,89 +291,94 @@
         {
             "id": "captain",
             "thumb": ["data/models/img/captain_sd.jpg"],
-            "images": ["data/models/img/captain_1.jpg"],
-            "paint": null,
-            "origins": ["corebox", "stretchgoal", "king"]
-        },
-    
-        {
-            "id": "thalis",
-            "thumb": ["data/models/img/thalis_sd.jpg"],
-            "images": ["data/models/img/thalis_1.jpg"],
-            "paint": null,
+            "images": ["data/models/img/captain_1.jpg", "data/models/img/captain_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "origins": ["corebox", "stretchgoal", "king"]
         },
     
         {
             "id": "dark-demon",
             "thumb": ["data/models/img/dark-demon_sd.jpg"],
-            "images": ["data/models/img/dark-demon_1.jpg"],
-            "paint": null,
+            "images": ["data/models/img/dark-demon_1.jpg", "data/models/img/dark-demon_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "origins": ["corebox", "stretchgoal", "king"]
         },
     
         {
             "id": "giant-snake",
             "thumb": ["data/models/img/giant-snake_sd.jpg"],
-            "images": ["data/models/img/giant-snake_1.jpg"],
-            "paint": null,
+            "images": ["data/models/img/giant-snake_1.jpg", "data/models/img/giant-snake_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "origins": ["corebox", "stretchgoal", "king"]
         },
     
         {
             "id": "khosatral-khel",
             "thumb": ["data/models/img/khosatral-khel_sd.jpg"],
-            "images": ["data/models/img/khosatral-khel_1.jpg"],
-            "paint": null,
+            "images": ["data/models/img/khosatral-khel_1.jpg", "data/models/img/khosatral-khel_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "origins": ["corebox", "stretchgoal", "king"]
         },
     
         {
             "id": "outer-dark-demon",
             "thumb": ["data/models/img/outer-dark-demon_sd.jpg"],
-            "images": ["data/models/img/outer-dark-demon_1.jpg"],
-            "paint": null,
+            "images": ["data/models/img/outer-dark-demon_1.jpg", "data/models/img/outer-dark-demon_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "origins": ["corebox", "stretchgoal", "king"]
         },
     
         {
             "id": "belits-guards",
             "thumb": ["data/models/img/belits-guards_sd.jpg"],
-            "images": ["data/models/img/belits-guards_1.jpg"],
-            "paint": null,
-            "origins": ["corebox", "stretchgoal", "king"]
+            "images": ["data/models/img/belits-guards_1.jpg", "data/models/img/belits-guards_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["corebox", "stretchgoal", "king"],
+            "count": 5
         },
     
         {
             "id": "princess",
             "thumb": ["data/models/img/princess_sd.jpg"],
-            "images": ["data/models/img/princess_1.jpg"],
-            "paint": null,
+            "images": ["data/models/img/princess_1.jpg", "data/models/img/princess_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "origins": ["corebox", "stretchgoal", "king"]
         },
     
         {
             "id": "bossonian-archers",
             "thumb": ["data/models/img/bossonian-archers_sd.jpg"],
-            "images": ["data/models/img/bossonian-archers_1.jpg"],
-            "paint": null,
-            "origins": ["corebox", "stretchgoal", "king"]
+            "images": ["data/models/img/bossonian-archers_1.jpg", "data/models/img/bossonian-archers_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["corebox", "stretchgoal", "king"],
+            "count": 5
         },
     
         {
             "id": "bossonian-guards",
             "thumb": ["data/models/img/bossonian-guards_sd.jpg"],
-            "images": ["data/models/img/bossonian-guards_1.jpg"],
-            "paint": null,
-            "origins": ["corebox", "stretchgoal", "king"]
+            "images": ["data/models/img/bossonian-guards_1.jpg", "data/models/img/bossonian-guards_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["corebox", "stretchgoal", "king"],
+            "count": 15
+        },
+    
+        {
+            "id": "bossonian-guards",
+            "thumb": ["data/models/img/bossonian-guards_sd.jpg"],
+            "images": ["data/models/img/bossonian-guards_3.jpg", "data/models/img/bossonian-guards_4.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["stretchgoal", "king"],
+            "count": 5
         },
     
         {
             "id": "hyenas",
             "thumb": ["data/models/img/hyenas_sd.jpg"],
             "images": ["data/models/img/hyenas_1.jpg"],
-            "paint": null,
-            "origins": ["corebox", "stretchgoal", "king"]
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["corebox", "stretchgoal", "king"],
+            "count": 5
         },
     
         {
@@ -381,37 +386,41 @@
             "thumb": ["data/models/img/pict-hunters_sd.jpg"],
             "images": ["data/models/img/pict-hunters_1.jpg"],
             "paint": null,
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox", "stretchgoal", "king"],
+            "count": 15
         },
     
         {
             "id": "pict-warriors",
             "thumb": ["data/models/img/pict-warriors_sd.jpg"],
-            "images": ["data/models/img/pict-warriors_1.jpg"],
-            "paint": null,
-            "origins": ["corebox", "stretchgoal", "king"]
+            "images": ["data/models/img/pict-warriors_1.jpg", "data/models/img/pict-warriors_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["stretchgoal", "king"],
+            "count": 5
         },
     
         {
             "id": "pirates",
             "thumb": ["data/models/img/pirates_sd.jpg"],
-            "images": ["data/models/img/pirates_1.jpg"],
+            "images": ["data/models/img/pirates_1.jpg", "data/models/img/pirates_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["corebox", "stretchgoal", "king"],
+            "count": 15
+        },
+        
+        {
+            "id": "pirates",
+            "thumb": ["data/models/img/pirates_sd.jpg"],
+            "images": ["data/models/img/pirates_3.jpg", "data/models/img/pirates_4.jpg"],
             "paint": null,
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["stretchgoal", "king"],
+            "count": 5
         },
     
         {
-            "id": "thog-1",
-            "thumb": ["data/models/img/thog-1_sd.jpg"],
-            "images": ["data/models/img/thog-1_1.jpg"],
-            "paint": null,
-            "origins": ["king"]
-        },
-    
-        {
-            "id": "thog-2",
-            "thumb": ["data/models/img/thog-2_sd.jpg"],
-            "images": ["data/models/img/thog-2_1.jpg"],
+            "id": "thog",
+            "thumb": ["data/models/img/thog_sd.jpg"],
+            "images": ["data/models/img/thog_1.jpg"],
             "paint": null,
             "origins": ["king"]
         },
@@ -425,34 +434,64 @@
         },
     
         {
-            "id": "zelatas-wolf",
-            "thumb": ["data/models/img/zelatas-wolf_sd.jpg"],
-            "images": ["data/models/img/zelatas-wolf_1.jpg"],
-            "paint": null,
-            "origins": ["king"]
+            "id": "mummies",
+            "thumb": ["data/models/img/mummies_sd.jpg"],
+            "images": ["data/models/img/mummies_1.jpg", "data/models/img/mummies_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["stretchgoal", "king"],
+            "count": 5
         },
     
         {
             "id": "mummies",
             "thumb": ["data/models/img/mummies_sd.jpg"],
-            "images": ["data/models/img/mummies_1.jpg"],
-            "paint": null,
-            "origins": ["king"]
+            "images": ["data/models/img/mummies_3.jpg", "data/models/img/mummies_4.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["stretchgoal", "king"],
+            "count": 5
+        },
+    
+        {
+            "id": "mummies",
+            "thumb": ["data/models/img/mummies_sd.jpg"],
+            "images": ["data/models/img/mummies_5.jpg", "data/models/img/mummies_6.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["king"],
+            "count": 10
         },
     
         {
             "id": "skeletons",
             "thumb": ["data/models/img/skeletons_sd.jpg"],
-            "images": ["data/models/img/skeletons_1.jpg"],
-            "paint": null,
-            "origins": ["king"]
+            "images": ["data/models/img/skeletons_1.jpg", "data/models/img/skeletons_2.jpg", "data/models/img/skeletons_3.jpg", "data/models/img/skeletons_4.jpg", "data/models/img/skeletons_5.jpg", "data/models/img/skeletons_6.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["stretchgoal", "king"],
+            "count": 5
+        },
+    
+        {
+            "id": "skeletons",
+            "thumb": ["data/models/img/skeletons_sd.jpg"],
+            "images": ["data/models/img/skeletons_1.jpg", "data/models/img/skeletons_2.jpg", "data/models/img/skeletons_3.jpg", "data/models/img/skeletons_4.jpg", "data/models/img/skeletons_5.jpg", "data/models/img/skeletons_6.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["stretchgoal", "king"],
+            "count": 5
+        },
+    
+        {
+            "id": "skeletons",
+            "thumb": ["data/models/img/skeletons_sd.jpg"],
+            "images": ["data/models/img/skeletons_1.jpg", "data/models/img/skeletons_2.jpg", "data/models/img/skeletons_3.jpg", "data/models/img/skeletons_4.jpg", "data/models/img/skeletons_5.jpg", "data/models/img/skeletons_6.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["king"],
+            "count": 15
         },
     
         {
             "id": "ageera",
             "thumb": ["data/models/img/ageera_sd.jpg"],
-            "images": ["data/models/img/ageera_1.jpg"],
-            "paint": null,
+            "images": ["data/models/img/ageera_1.jpg", "data/models/img/ageera_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "origins": ["stretchgoal", "king"]
         },
     
@@ -467,24 +506,24 @@
         {
             "id": "gitara",
             "thumb": ["data/models/img/gitara_sd.jpg"],
-            "images": ["data/models/img/gitara_1.jpg"],
-            "paint": null,
+            "images": ["data/models/img/gitara_1.jpg", "data/models/img/gitara_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "origins": ["stretchgoal", "king"]
         },
     
         {
             "id": "hyperborean-primitive",
             "thumb": ["data/models/img/hyperborean-primitive_sd.jpg"],
-            "images": ["data/models/img/hyperborean-primitive_1.jpg"],
-            "paint": null,
+            "images": ["data/models/img/hyperborean-primitive_1.jpg", "data/models/img/hyperborean-primitive_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "origins": ["stretchgoal", "king"]
         },
     
         {
             "id": "khemsa",
             "thumb": ["data/models/img/khemsa_sd.jpg"],
-            "images": ["data/models/img/khemsa_1.jpg"],
-            "paint": null,
+            "images": ["data/models/img/khemsa_1.jpg", "data/models/img/khemsa_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "origins": ["stretchgoal", "king"]
         },
     
@@ -508,8 +547,8 @@
         {
             "id": "camel",
             "thumb": ["data/models/img/camel_sd.jpg"],
-            "images": ["data/models/img/camel_1.jpg"],
-            "paint": null,
+            "images": ["data/models/img/camel_1.jpg", "data/models/img/camel_2.jpg"],
+            "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
             "origins": ["stretchgoal", "king"]
         },
     
@@ -540,16 +579,8 @@
         {
             "id": "forest-demon",
             "thumb": ["data/models/img/forest-demon_sd.jpg"],
-            "images": ["data/models/img/forest-demon_1.jpg"],
-            "paint": null,
-            "origins": ["stretchgoal", "king"]
-        },
-    
-        {
-            "id": "giant-scorpion",
-            "thumb": ["data/models/img/giant-scorpion_sd.jpg"],
-            "images": ["data/models/img/giant-scorpion_1.jpg"],
-            "paint": null,
+            "images": ["data/models/img/forest-demon_1.jpg", "data/models/img/forest-demon_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "origins": ["stretchgoal", "king"]
         },
     
@@ -572,8 +603,8 @@
         {
             "id": "swamp-demon",
             "thumb": ["data/models/img/swamp-demon_sd.jpg"],
-            "images": ["data/models/img/swamp-demon_1.jpg"],
-            "paint": null,
+            "images": ["data/models/img/swamp-demon_1.jpg", "data/models/img/swamp-demon_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "origins": ["stretchgoal", "king"]
         },
     
@@ -586,35 +617,12 @@
         },
     
         {
-            "id": "mummies-alt",
-            "thumb": ["data/models/img/mummies-alt_sd.jpg"],
-            "images": ["data/models/img/mummies-alt_1.jpg"],
-            "paint": null,
-            "origins": ["stretchgoal", "king"]
-        },
-    
-        {
             "id": "pict-archers",
             "thumb": ["data/models/img/pict-archers_sd.jpg"],
-            "images": ["data/models/img/pict-archers_1.jpg"],
-            "paint": null,
-            "origins": ["stretchgoal", "king"]
-        },
-    
-        {
-            "id": "pirates-alt",
-            "thumb": ["data/models/img/pirates-alt_sd.jpg"],
-            "images": ["data/models/img/pirates-alt_1.jpg"],
-            "paint": null,
-            "origins": ["stretchgoal", "king"]
-        },
-    
-        {
-            "id": "skeletons-alt",
-            "thumb": ["data/models/img/skeletons-alt_sd.jpg"],
-            "images": ["data/models/img/skeletons-alt_1.jpg"],
-            "paint": null,
-            "origins": ["stretchgoal", "king"]
+            "images": ["data/models/img/pict-archers_1.jpg", "data/models/img/pict-archers_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["stretchgoal", "king"],
+            "count": 5
         },
     
         {
@@ -622,7 +630,17 @@
             "thumb": ["data/models/img/tentacles_sd.jpg"],
             "images": ["data/models/img/tentacles_1.jpg"],
             "paint": null,
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal", "king"],
+            "count": 5
+        },
+    
+        {
+            "id": "tentacles",
+            "thumb": ["data/models/img/tentacles_sd.jpg"],
+            "images": ["data/models/img/tentacles_1.jpg"],
+            "paint": null,
+            "origins": ["stretchgoal", "king"],
+            "count": 5
         },
     
         {
@@ -636,32 +654,35 @@
         {
             "id": "black-dragons",
             "thumb": ["data/models/img/black-dragons_sd.jpg"],
-            "images": ["data/models/img/black-dragons_1.jpg"],
-            "paint": null,
-            "origins": ["blackdragons"]
+            "images": ["data/models/img/black-dragons_1.jpg", "data/models/img/black-dragons_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["blackdragons"],
+            "count": 5
         },
     
         {
             "id": "the-black-ones",
             "thumb": ["data/models/img/the-black-ones_sd.jpg"],
-            "images": ["data/models/img/the-black-ones_1.jpg"],
-            "paint": null,
-            "origins": ["blackones"]
+            "images": ["data/models/img/the-black-ones_1.jpg", "data/models/img/the-black-ones_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["blackones"],
+            "count": 10
         },
     
         {
             "id": "crossbowmen",
             "thumb": ["data/models/img/crossbowmen_sd.jpg"],
-            "images": ["data/models/img/crossbowmen_1.jpg"],
-            "paint": null,
-            "origins": ["crossbowmen"]
+            "images": ["data/models/img/crossbowmen_1.jpg", "data/models/img/crossbowmen_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["crossbowmen"],
+            "count": 10
         },
     
         {
             "id": "demon-of-the-earth",
             "thumb": ["data/models/img/demon-of-the-earth_sd.jpg"],
             "images": ["data/models/img/demon-of-the-earth_1.jpg"],
-            "paint": null,
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "origins": ["demonearth"]
         },
     
@@ -677,8 +698,17 @@
             "id": "giant-wolves",
             "thumb": ["data/models/img/giant-wolves_sd.jpg"],
             "images": ["data/models/img/giant-wolves_1.jpg"],
-            "paint": null,
-            "origins": ["giantwolves"]
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["giantwolves"],
+            "count": 10
+        },
+    
+        {
+            "id": "giant-wolves",
+            "thumb": ["data/models/img/giant-wolves_sd.jpg"],
+            "images": ["data/models/img/giant-wolves_1.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["king"]
         },
     
         {
@@ -700,24 +730,24 @@
         {
             "id": "ghayoor",
             "thumb": ["data/models/img/ghayoor_sd.jpg"],
-            "images": ["data/models/img/ghayoor_1.jpg"],
-            "paint": null,
+            "images": ["data/models/img/ghayoor_1.jpg", "data/models/img/ghayoor_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "origins": ["kushwitchhunters"]
         },
     
         {
             "id": "shafiah",
             "thumb": ["data/models/img/shafiah_sd.jpg"],
-            "images": ["data/models/img/shafiah_1.jpg"],
-            "paint": null,
+            "images": ["data/models/img/shafiah_1.jpg", "data/models/img/shafiah_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "origins": ["kushwitchhunters"]
         },
     
         {
             "id": "shubba",
             "thumb": ["data/models/img/shubba_sd.jpg"],
-            "images": ["data/models/img/shubba_1.jpg"],
-            "paint": null,
+            "images": ["data/models/img/shubba_1.jpg","data/models/img/shubba_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "origins": ["kushwitchhunters"]
         },
     
@@ -725,14 +755,6 @@
             "id": "atali",
             "thumb": ["data/models/img/atali_sd.jpg"],
             "images": ["data/models/img/atali_1.jpg"],
-            "paint": null,
-            "origins": ["nordheim"]
-        },
-    
-        {
-            "id": "yazdigerd",
-            "thumb": ["data/models/img/yazdigerd_sd.jpg"],
-            "images": ["data/models/img/yazdigerd_1.jpg"],
             "paint": null,
             "origins": ["nordheim"]
         },
@@ -756,25 +778,10 @@
         {
             "id": "vanir-warriors",
             "thumb": ["data/models/img/vanir-warriors_sd.jpg"],
-            "images": ["data/models/img/vanir-warriors_1.jpg"],
-            "paint": null,
-            "origins": ["nordheim"]
-        },
-    
-        {
-            "id": "vanir-zombies",
-            "thumb": ["data/models/img/vanir-zombies_sd.jpg"],
-            "images": ["data/models/img/vanir-zombies_1.jpg"],
-            "paint": null,
-            "origins": ["nordheim"]
-        },
-    
-        {
-            "id": "vanir-primitives",
-            "thumb": ["data/models/img/vanir-primitives_sd.jpg"],
-            "images": ["data/models/img/vanir-primitives_1.jpg"],
-            "paint": null,
-            "origins": ["nordheim"]
+            "images": ["data/models/img/vanir-warriors_1.jpg", "data/models/img/vanir-warriors_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["nordheim"],
+            "count": 10
         },
     
         {
@@ -782,46 +789,24 @@
             "thumb": ["data/models/img/crows_sd.jpg"],
             "images": ["data/models/img/crows_1.jpg"],
             "paint": null,
-            "origins": ["nordheim"]
-        },
-    
-        {
-            "id": "wolves",
-            "thumb": ["data/models/img/wolves_sd.jpg"],
-            "images": ["data/models/img/wolves_1.jpg"],
-            "paint": null,
-            "origins": ["nordheim"]
-        },
-    
-        {
-            "id": "aesir-zombies",
-            "thumb": ["data/models/img/aesir-zombies_sd.jpg"],
-            "images": ["data/models/img/aesir-zombies_1.jpg"],
-            "paint": null,
-            "origins": ["nordheim"]
+            "origins": ["nordheim"],
+            "count": 5
         },
     
         {
             "id": "aesir-warriors",
             "thumb": ["data/models/img/aesir-warriors_sd.jpg"],
-            "images": ["data/models/img/aesir-warriors_1.jpg"],
-            "paint": null,
-            "origins": ["nordheim"]
+            "images": ["data/models/img/aesir-warriors_1.jpg", "data/models/img/aesir-warriors_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["nordheim"],
+            "count": 5
         },
     
         {
             "id": "shuang-mian",
             "thumb": ["data/models/img/shuang-mian_sd.jpg"],
-            "images": ["data/models/img/shuang-mian_1.jpg"],
-            "paint": null,
-            "origins": ["khitai"]
-        },
-    
-        {
-            "id": "evil-hound",
-            "thumb": ["data/models/img/evil-hound_sd.jpg"],
-            "images": ["data/models/img/evil-hound_1.jpg"],
-            "paint": null,
+            "images": ["data/models/img/shuang-mian_1.jpg", "data/models/img/shuang-mian_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "origins": ["khitai"]
         },
     
@@ -830,7 +815,8 @@
             "thumb": ["data/models/img/khitan-guards_sd.jpg"],
             "images": ["data/models/img/khitan-guards_1.jpg"],
             "paint": null,
-            "origins": ["khitai"]
+            "origins": ["khitai"],
+            "count": 5
         },
     
         {
@@ -838,7 +824,8 @@
             "thumb": ["data/models/img/honor-guards_sd.jpg"],
             "images": ["data/models/img/honor-guards_1.jpg"],
             "paint": null,
-            "origins": ["khitai"]
+            "origins": ["khitai"],
+            "count": 5
         },
     
         {
@@ -846,7 +833,8 @@
             "thumb": ["data/models/img/javelin-throwers_sd.jpg"],
             "images": ["data/models/img/javelin-throwers_1.jpg"],
             "paint": null,
-            "origins": ["khitai"]
+            "origins": ["khitai"],
+            "count": 5
         },
     
         {
@@ -854,7 +842,8 @@
             "thumb": ["data/models/img/foo-dogs_sd.jpg"],
             "images": ["data/models/img/foo-dogs_1.jpg"],
             "paint": null,
-            "origins": ["khitai"]
+            "origins": ["khitai"],
+            "count": 5
         },
     
         {
@@ -874,11 +863,20 @@
         },
     
         {
-            "id": "giant-scorpions",
-            "thumb": ["data/models/img/giant-scorpions_sd.jpg"],
-            "images": ["data/models/img/giant-scorpions_1.jpg"],
+            "id": "giant-scorpion",
+            "thumb": ["data/models/img/giant-scorpion_sd.jpg"],
+            "images": ["data/models/img/giant-scorpion_1.jpg"],
             "paint": null,
-            "origins": ["stygia"]
+            "origins": ["stygia"],
+            "count": 10
+        },
+    
+        {
+            "id": "giant-scorpion",
+            "thumb": ["data/models/img/giant-scorpion_sd.jpg"],
+            "images": ["data/models/img/giant-scorpion_1.jpg"],
+            "paint": null,
+            "origins": ["stretchgoal", "king"]
         },
     
         {
@@ -886,15 +884,17 @@
             "thumb": ["data/models/img/eternal-guard_sd.jpg"],
             "images": ["data/models/img/eternal-guard_1.jpg"],
             "paint": null,
-            "origins": ["stygia"]
+            "origins": ["stygia"],
+            "count": 5
         },
     
         {
             "id": "assassins",
             "thumb": ["data/models/img/assassins_sd.jpg"],
-            "images": ["data/models/img/assassins_1.jpg"],
-            "paint": null,
-            "origins": ["stygia"]
+            "images": ["data/models/img/assassins_1.jpg", "data/models/img/assassins_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "origins": ["stygia"],
+            "count": 5
         },
                         
         {

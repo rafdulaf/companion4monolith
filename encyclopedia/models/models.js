@@ -224,7 +224,7 @@ var EncyclopediaModels = {
             }
         }
         
-        return names.join(" / ") || "...";
+        return names.join(" / ") || ("'" + model.id + "'");
     },
     
     _findModelsById: function(id)
@@ -273,14 +273,26 @@ var EncyclopediaModels = {
             originString += Encyclopedia._getOrigin(i) + " (" + originsCount[i] + " " + (originsCount[i] == 1 ? EncyclopediaModels._i18n[Language].model : EncyclopediaModels._i18n[Language].models) + ")";
         }
         
-        var model = models[0];
+        
+        var modelImages = [];
+        for (var i in models)
+        {
+            var model = models[i];
+            for (var j in model.images)
+            {
+                var image = model.images[j];
+                if (modelImages.indexOf(image) == -1) modelImages.push(image);
+            }
+        }
         
         var photos = "<div class='photos'>";
-        for (var i in model.images)
+        for (var i in modelImages)
         {
-            photos += "<img src='" + model.images[i] + "?version=" + Version + "'/>"
+            photos += "<img src='" + modelImages[i] + "?version=" + Version + "'/>"
         }
         photos += "</div>";
+        
+        var model = models[0];
         
         var heroes = "";
         for (var i in Encyclopedia.heroes.list)
