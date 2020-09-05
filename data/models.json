@@ -384,8 +384,8 @@
         {
             "id": "pict-hunters",
             "thumb": ["data/models/img/pict-hunters_sd.jpg"],
-            "images": ["data/models/img/pict-hunters_1.jpg"],
-            "paint": null,
+            "images": ["data/models/img/pict-hunters_1.jpg", "data/models/img/pict-hunters_2.jpg"],
+            "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
             "origins": ["corebox", "stretchgoal", "king"],
             "count": 15
         },
@@ -420,8 +420,8 @@
         {
             "id": "thog",
             "thumb": ["data/models/img/thog_sd.jpg"],
-            "images": ["data/models/img/thog_1.jpg"],
-            "paint": null,
+            "images": ["data/models/img/thog_1.jpg", "data/models/img/thog_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "origins": ["king"]
         },
     
@@ -722,8 +722,8 @@
         {
             "id": "afari",
             "thumb": ["data/models/img/afari_sd.jpg"],
-            "images": ["data/models/img/afari_1.jpg"],
-            "paint": null,
+            "images": ["data/models/img/afari_1.jpg", "data/models/img/afari_2.jpg"],
+            "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
             "origins": ["kushwitchhunters"]
         },
     
@@ -849,8 +849,8 @@
         {
             "id": "thot-amon",
             "thumb": ["data/models/img/thot-amon_sd.jpg"],
-            "images": ["data/models/img/thot-amon_1.jpg"],
-            "paint": null,
+            "images": ["data/models/img/thot-amon_1.jpg", "data/models/img/thot-amon_2.jpg"],
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "origins": ["stygia"]
         },
     
