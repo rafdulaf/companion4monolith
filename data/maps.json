@@ -6,77 +6,91 @@
             "description": {
                 "title": {
                     "fr": "Village Picte",
-                    "en": "Pict village"
+                    "en": "Pict village",
+                    "it": "Villaggio Pitto"
                 },
                 "version": "1.0",
                 "origins": ["corebox", "stretchgoal", "king"],
                 "copyright": "Monolith",
-                "rules": [ 
+                "rules": [
                     {
-                        "title": { 
+                        "title": {
                             "fr": "Tentures",
-                            "en": "the hut flaps"
+                            "en": "the hut flaps",
+                            "it": "Lembi delle tende"
                         },
-                        "description": { 
+                        "description": {
                             "fr": "Les tentures à l’entrée de chaque hutte (et à l'intérieur de la grande) bloquent la ligne de vue. Entrer ou sortir d’une hutte demande 1 point de mouvement supplémentaire à cause des tentures.",
-                            "en": "The hut flaps at the entrance of each hut block lines of sight. A character must spend 1 extra movement point to move across a border into or out of a hut."
+                            "en": "The hut flaps at the entrance of each hut block lines of sight. A character must spend 1 extra movement point to move across a border into or out of a hut.",
+                            "it": "I lembi all'ingresso di ogni tenda bloccano la linea di vista. Un personaggio deve spendere un (1) punto extra di movimento per entrare o uscire dall'ingresso di una tenda."
                         },
                         "coordinates": [[63,23], [18,52], [26,57], [39,83], [34,43], [55,54], [67,76], [79,57]]
                     }, {
-                        "title": { 
+                        "title": {
                             "fr": "Défoncer les cloisons",
-                            "en": "Wall wrecker"
+                            "en": "Wall wrecker",
+                            "it": "Spacca Muri"
                         },
-                        "description": { 
+                        "description": {
                             "fr": "On ne peut pas défoncer les cloisons des huttes en pierre.",
-                            "en": "The huts with stone walls cannot be wrecked using Wall Wrecker"
+                            "en": "The huts with stone walls cannot be wrecked using Wall Wrecker.",
+                            "it": "I muri in pietra delle tende non possono essere demoliti dai personaggi con l'abilità Spacca Muri."
                         },
                         "coordinates": [[55,20], [40,75]]
                     }, {
-                        "title": { 
+                        "title": {
                             "fr": "Murs d'enceinte",
-                            "en": "Outer walls"
+                            "en": "Outer walls",
+                            "it": "Recinto esterno"
                         },
-                        "description": { 
-                            "fr": "On ne peut pas défoncer les murs d’enceinte, ni les escalader",
-                            "en": "The outer walls cannot be climbed over, or wrecked using Wall Wrecker."
+                        "description": {
+                            "fr": "On ne peut pas défoncer les murs d’enceinte, ni les escalader.",
+                            "en": "The outer walls cannot be climbed over, or wrecked using Wall Wrecker.",
+                            "it": "Il recinto esterno non può essere attraversato né scalandolo, nè usando l'abilità Spacca Muri."
                         },
                         "coordinates": [[43,4], [93,49], [62,94], [4,50]]
                     }, {
-                        "title": { 
+                        "title": {
                             "fr": "Lignes de vue",
-                            "en": "Lines of sight"
+                            "en": "Lines of sight",
+                            "it": "Linee di vista"
                         },
-                        "description": { 
+                        "description": {
                             "fr": "Les arbustes ne bloquent pas la ligne de vue.",
-                            "en": "The bushes do not block lines of sight."
+                            "en": "The bushes do not block lines of sight.",
+                            "it": "I cespugli non bloccano la linea di vista."
                         },
                         "coordinates": [[5,15], [18,24], [26,36], [46,9], [59,9], [41,34], [41,58], [63,61], [4,82], [17,79], [44,92], [54,94], [86,93]]
                     }, {
-                        "title": { 
+                        "title": {
                             "fr": "Huttes en bois",
-                            "en": "Wooden Huts"
+                            "en": "Wooden Huts",
+                            "it": "Tende di legno"
                         },
-                        "description": { 
+                        "description": {
                             "fr": "Les cloisons des huttes peuvent être défoncées par la compétence Défoncer les cloisons. On ne peut pas défoncer les cloisons d’une hutte saturée.",
-                            "en": "A character with Wall Wrecker can use it to move across the wall of one of the wooden huts. The walls of an occupied hut (see page 22 of the Revised Heroes’ Book) cannot be wrecked using Wall Wrecker."
+                            "en": "A character with Wall Wrecker can use it to move across the wall of one of the wooden huts. The walls of an occupied hut (see page 22 of the Revised Heroes’ Book) cannot be wrecked using Wall Wrecker.",
+                            "it": "Un personaggio con l'abilità Spacca Muri può usarla per aprire un varco nella parete di una tenda. Le pareti di una tenda occupata (si veda pagina 22 del Libro degli Eroi V2) non possono essere demolite usando Spacca Muri."
                         },
                         "coordinates": []
                     }, {
-                        "title": { 
+                        "title": {
                             "fr": "Escalade",
-                            "en": "Climbing"
+                            "en": "Climbing",
+                            "it": "Arrampicarsi"
                         },
-                        "description": { 
+                        "description": {
                             "fr": "Franchir les rochers demande la compétence Escalade et 2 points de mouvement supplémentaires.",
-                            "en": "A character with Climb can move across boulders as though they were a border by spending 2 extra movement points."
+                            "en": "A character with Climb can move across boulders as though they were a border by spending 2 extra movement points.",
+                            "it": "Un personaggio con l'abilità Arrampicarsi, può oltrepassare i massi come se fossero un ostacolo, spendendo 2 punti movimento extra."
                         },
                         "coordinates": [[66,90]]
-                    } 
+                    }
                 ],
                 "totopic": {
                     "fr": "https://the-overlord.com/index.php?/topic/15-core-carte-village-picte/",
-                    "en": "https://the-overlord.net/index.php?/topic/27-core-pict-village/"
+                    "en": "https://the-overlord.net/index.php?/topic/27-core-pict-village/",
+                    "it": "https://the-overlord.net/index.php?/topic/27-core-pict-village/"
                 },
                 "thumbnail": "data/maps/Pict_Village/thumb.png",
                 "board": "data/maps/Pict_Village/board.png",
@@ -254,73 +268,85 @@
                 }
             }
         },
-            
+
         {
             "id": "Inn",
             "description": {
                 "title": {
                     "fr": "Auberge",
-                    "en": "Inn"
+                    "en": "Inn",
+                    "it": "Locanda"
                 },
                 "version": "1.0",
                 "origins": ["corebox", "stretchgoal", "king"],
                 "copyright": "Monolith",
-                "rules": [ 
+                "rules": [
                     {
-                        "title": { 
+                        "title": {
                             "fr": "Bar et tables",
-                            "en": "Bar and tables"
+                            "en": "Bar and tables",
+                            "it": "Bancone e tavoli"
                         },
                         "description": {
                             "fr": "Cette règle s’applique seulement si le scénario l’indique dans les règles spéciales. Un personnage peut monter sur le bar ou sur une table pour 1 point de mouvement supplémentaire, qu’il ait ou non la compétence Saut ou Escalade. Il gagne la compétence Allonge tant qu’il se trouve sur le bar ou sur une table et bénéficie du bonus de surplomb de {dice_yellow} pour ses attaques au Corps-à-corps et à distance. Le bar et les tables ne bloquent pas la ligne de vue. En descendre n’engendre pas de surcoût de points de mouvement.",
-                            "en": "Apply this rule only if specified in the special rules section. A character with or without Leap or Climb may move onto the bar areas or a table area by spending 1 extra movement point. These areas provide an Elevation bonus of {dice_yellow}. A character in the bar’s area or in a table’s area, with or without Reach, may attack a character in an adjacent area with a Melee Attack. These areas do not block lines of sight. A character may exit these areas with no movement penalty."
+                            "en": "Apply this rule only if specified in the special rules section. A character with or without Leap or Climb may move onto the bar areas or a table area by spending 1 extra movement point. These areas provide an Elevation bonus of {dice_yellow}. A character in the bar’s area or in a table’s area, with or without Reach, may attack a character in an adjacent area with a Melee Attack. These areas do not block lines of sight. A character may exit these areas with no movement penalty.",
+                            "it": "Si applichi questa regola solo se specificato nella sezione regole speciali. Un personaggio con o senza le abilità Saltare/Arrampicarsi può occupare le aree del bancone o dei tavoli spendendo un (1) punto movimento extra. Queste aree assegnano un bonus Elevazione pari a un {dice_yellow}. Un personaggio in un'area bancone o tavolo, con o senza Allungo, può attaccare in Mischia un personaggio in un'area adiacente. Queste aree non bloccano la linea di vista. Un personaggio può lasciare queste aree senza nessuna penalità al movimento."
                         },
                         "coordinates": [[20,59], [34,61], [34,85]]
                     }, {
                         "title": {
                             "fr": "Tabourets et bancs",
-                            "en": "Bar stools and benches"
+                            "en": "Bar stools and benches",
+                            "it": "Sgabelli e panche"
                         },
                         "description": {
                             "fr": "Cette règle s’applique seulement si le scénario l’indique dans les règles spéciales. Tabourets du bar: ramasser un tabouret est gratuit et doit être réalisé lors de l’action d’attaque au corps-à-corps. Le tabouret est immédiatement utilisé par l’attaquant pour bénéficier du bonus de {dice_yellow}, en plus du bonus d’attaque de son arme s’il en utilise une. Il est ensuite défaussé.",
-                            "en": "Apply this rule only if specified in the special rules section. Bar Stools: A character in a chair token’s area may pick it up for free when performing a Melee Attack. The chair token is immediately returned to the box and that character benefits from the chair’s attack bonus as specified in the scenario (in addition to any weapon’s Melee Attack bonus)."
+                            "en": "Apply this rule only if specified in the special rules section. Bar Stools: A character in a chair token’s area may pick it up for free when performing a Melee Attack. The chair token is immediately returned to the box and that character benefits from the chair’s attack bonus as specified in the scenario (in addition to any weapon’s Melee Attack bonus).",
+                            "it": "Si applichi questa regola solo se specificato nella sezione regole speciali. Un personaggio in un'area con un segnalino sedia può afferrarla gratuitamente e sferrare un attacco in Mischia. Il segnalino sedia viene immediatamente scartato e il personaggio ottiene il bonus di attacco specifico dello scenario (in aggiunta a qualsiasi altro bonus in Mischia ottenuto dalle armi)."
                         },
                         "coordinates": []
                     }, {
                         "title": {
                             "fr": "Murs",
-                            "en": "Walls"
+                            "en": "Walls",
+                            "it": "Muri"
                         },
                         "description": {
                             "fr": "Tous les murs situés entre deux salles du même étage sont destructibles (par une figurine avec la compétence Défoncer les cloisons) à l’exception des murs d’enceinte de la taverne y compris ceux donnant sur la rue.",
-                            "en": "A character with Wall Wrecker cannot use it to move across an outer wall of the inn or to move between areas of different elevations."
+                            "en": "A character with Wall Wrecker cannot use it to move across an outer wall of the inn or to move between areas of different elevations.",
+                            "it": "Un personaggio con l'abilità Spacca Muri non può usarla per muovere attraverso i muri perimetrali della locanda o muovere attraverso aree poste ad altezze differenti."
                         },
                         "coordinates": [[22,9], [42,9], [61,9], [81,9], [96,16], [96,43], [52,62], [62,51], [62,75]]
                     }, {
                         "title": {
                             "fr": "Saut/Escalade depuis la balustrade",
-                            "en": "Leaping From/Climbing a Balcony"
+                            "en": "Leaping From/Climbing a Balcony",
+                            "it": "Saltare da/Arrampicarsi su una balconata"
                         },
                         "description": {
                             "fr": "Sauter de la balustrade inflige {dice_orange}{dice_orange} sans défense possible et {dice_orange} si la figurine possède la compétence Saut. Remonter sur la balustrade coûte 2 points de mouvement supplémentaires pour un personnage ayant la compétence Escalade.",
-                            "en": "A character can move across a railing from a balcony area to a ground floor area as though it were a border. The character rolls {dice_orange}{dice_orange} for falling damage. If the character has Leap, the character rolls {dice_orange} instead. A character with Climb can move across a railing from a ground floor area to a balcony area by spending 2 extra movement points."
+                            "en": "A character can move across a railing from a balcony area to a ground floor area as though it were a border. The character rolls {dice_orange}{dice_orange} for falling damage. If the character has Leap, the character rolls {dice_orange} instead. A character with Climb can move across a railing from a ground floor area to a balcony area by spending 2 extra movement points.",
+                            "it": "Saltare dalla balconata a un livello inferiore infligge {dice_orange}{dice_orange} di danni non difendibili o {dice_orange} di danni non difendibili se il personaggio possiede l'abilità Saltare. Arrampicarsi sulla balaustra costa 2 punti movimento extra per un personaggio che abbia l'abilità Arrampicarsi."
                         },
                         "coordinates": [[31,24]]
                     }, {
                         "title": {
                             "fr": "Saut/Escalade depuis un escalier",
-                            "en": "Leaping From/Climbing a Stairwell"
+                            "en": "Leaping From/Climbing a Stairwell",
+                            "it": "Saltare da/Risalire la tromba delle scale"
                         },
                         "description": {
                             "fr": "Sauter des escaliers inflige {dice_yellow}{dice_yellow} sans défense possible et {dice_yellow} si la figurine possède la compétence Saut. Remonter sur la zone d’un escalier par la rambarde sur le côté coûte 1 point de mouvement supplémentaire pour un personnage ayant la compétence Escalade. Emprunter l’escalier normalement n’engendre pas de surcoût de points de mouvement.",
-                            "en": "A character can move across a banister from a stair area to a ground floor area as though it were a border. The character rolls {dice_yellow}{dice_yellow} for falling damage. If the character has Leap, the character rolls {dice_yellow} instead. A character with Climb can move across a banister from a ground floor area to a stair area by spending 1 extra movement point."
+                            "en": "A character can move across a banister from a stair area to a ground floor area as though it were a border. The character rolls {dice_yellow}{dice_yellow} for falling damage. If the character has Leap, the character rolls {dice_yellow} instead. A character with Climb can move across a banister from a ground floor area to a stair area by spending 1 extra movement point.",
+                            "it": "Saltare verso il basso dalle scale infligge {dice_yellow}{dice_yellow} di danni non difendibili e {dice_yellow} di danni non difendibili se il personaggio possiede l'abilità Saltare. Salire sulle scale scavalcando la ringhiera laterale costa un (1) punto movimento extra per un personaggio che ha l'abilità Arrampicarsi. Salire la scala normalmente non comporta malus."
                         },
                         "coordinates": [[13,33], [53,33]]
                     }
                 ],
                 "totopic": {
                     "fr": "https://the-overlord.com/index.php?/topic/23-core-carte-taverne/",
-                    "en": "https://the-overlord.net/index.php?/topic/28-core-inn/"
+                    "en": "https://the-overlord.net/index.php?/topic/28-core-inn/",
+                    "it": "https://the-overlord.net/index.php?/topic/28-core-inn/"
                 },
                 "thumbnail": "data/maps/Inn/thumb.png",
                 "board": "data/maps/Inn/board.png",
@@ -558,53 +584,61 @@
                 }
             }
         },
-    
+
         {
             "id": "Ships",
             "description": {
                 "title": {
                     "fr": "Bateaux",
-                    "en": "Ships"
+                    "en": "Ships",
+                    "it": "Navi"
                 },
                 "version": "1.0",
                 "origins": ["corebox", "stretchgoal", "king"],
                 "copyright": "Monolith",
-                "rules": [ 
+                "rules": [
                     {
-                        "title": { 
+                        "title": {
                             "fr": "Soute",
-                            "en": "Hold"
+                            "en": "Hold",
+                            "it": "Uscite"
                         },
-                        "description": { 
+                        "description": {
                             "fr": "La sortie de la soute doit se faire par la zone directement en face des escaliers.",
-                            "en": "A character coming out of the hold must move in the area in front of its exit."
+                            "en": "A character coming out of the hold must move in the area in front of its exit.",
+                            "it": "Un personaggio che arriva da sottocoperta deve muoversi nell'area di fronte alla propria uscita."
                         },
                         "coordinates": [[40,25], [48,70]]
                     }, {
-                        "title": { 
+                        "title": {
                             "fr": "Mât",
-                            "en": "Masts"
+                            "en": "Masts",
+                            "it": "Alberi"
                         },
-                        "description": { 
+                        "description": {
                             "fr": "Il existe toujours une ligne de vue vers la zone d’un mât même si celui-ci bloque normalement la ligne de vue.",
-                            "en": "All the areas of the game board have lines of sight on the masts’areas."
+                            "en": "All the areas of the game board have lines of sight on the masts’areas.",
+                            "it": "É sempre possibile tracciare una linea di vista da e verso la zona di un albero. L'albero blocca normalmente la linea di vista."
                         },
                         "coordinates": [[27,27], [69,22], [30,72], [70,67]]
                     }, {
-                        "title": { 
+                        "title": {
                             "fr": "Ligne de vue",
-                            "en": "Line of sight"
+                            "en": "Line of sight",
+                            "it": "Linea di vista"
                         },
-                        "description": { 
+                        "description": {
                             "fr": "Il existe une ligne de vue depuis une zone de navire vers une zone d’eau, si la ligne de vue ne passe pas au travers de plus d’une zone de navire (en comptant la zone de départ de la ligne de vue), et permet de bénéficier du bonus de surplomb de {dice_yellow}. Il existe une ligne de vue depuis une zone d’eau vers une zone de navire, si la ligne de vue ne passe pas au travers de plus d’une zone de navire (en comptant la zone d’arriveé de la ligne de vue).",
-                            "en": "There is a line of sight from a ship area to a water area if the line of sight does not cross more than one ship area, including the line of sight starting area. The ship areas provide an Elevation bonus of {dice_yellow} on the water areas. There is a line of sight from a water area to a ship area if the line of sight does not cross more than one ship area, including the line of sight finishing area."
+                            "en": "There is a line of sight from a ship area to a water area if the line of sight does not cross more than one ship area, including the line of sight starting area. The ship areas provide an Elevation bonus of {dice_yellow} on the water areas. There is a line of sight from a water area to a ship area if the line of sight does not cross more than one ship area, including the line of sight finishing area.",
+                            "it": "Esiste sempre una linea di vista tra un'area di nave e un'area di mare, a meno che la linea di vista non attraversi più di un'area di nave (contando l'area di partenza della linea di vista). Le aree di nave ottengono un bonus Elevazione di un {dice_yellow} sulle aree di mare. Esiste una linea di vista da un'area di mare a un'area di nave, se la linea di vista non passa attraverso più di un'area di nave (includendo l'area d'arrivo della linea di vista)."
                         },
                         "coordinates": []
                     }
                 ],
                 "totopic": {
                     "fr": "https://the-overlord.com/index.php?/topic/21-core-carte-bateaux/",
-                    "en": "https://the-overlord.net/index.php?/topic/29-core-ships/"
+                    "en": "https://the-overlord.net/index.php?/topic/29-core-ships/",
+                    "it": "https://the-overlord.net/index.php?/topic/29-core-ships/"
                 },
                 "thumbnail": "data/maps/Ships/thumb.png",
                 "board": "data/maps/Ships/board.png",
@@ -902,83 +936,97 @@
                 }
             }
         },
-    
+
         {
             "id": "Abandoned_Fort",
             "description": {
                 "title": {
                     "fr": "Fortin abandonné",
-                    "en": "Abandoned fort"
+                    "en": "Abandoned fort",
+                    "it": "Forte abbandonato"
                 },
                 "version": "1.0",
                 "origins": ["corebox", "stretchgoal", "king"],
                 "copyright": "Monolith",
-                "rules": [ 
+                "rules": [
                     {
-                        "title": { 
+                        "title": {
                             "fr": "Rempart et tour",
-                            "en": "Parapet and tower"
+                            "en": "Parapet and tower",
+                            "it": "Mura e torri"
                         },
-                        "description": { 
+                        "description": {
                             "fr": "Seules les zones de rempart directement adjacentes aux tours partagent une ligne de vue avec l’intérieur de la tour.",
-                            "en": "Only the areas directly adjacent to the towers areas have lines of sight on the tower areas"
+                            "en": "Only the areas directly adjacent to the towers areas have lines of sight on the tower areas",
+                            "it": "Solo le aree adiacenti a una torre hanno una linea di vista libera verso l'interna della stessa."
                         },
                         "coordinates": [[15,60], [42,85], [66,85], [85,60], [85,42]]
                     }, {
-                        "title": { 
+                        "title": {
                             "fr": "Pièces de la cour",
-                            "en": "Courtyard room"
+                            "en": "Courtyard room",
+                            "it": "Rovine della corte interna"
                         },
-                        "description": { 
+                        "description": {
                             "fr": "Les pièces dans la cour du fortin n’ont pas de toit. Depuis les remparts, il est possible de voir et de sauter à l’intérieur de ces pièces.",
-                            "en": "The areas inside the fort do not have a roof. A character in a parapet area has lines of sight on these areas and may jump into these areas."
+                            "en": "The areas inside the fort do not have a roof. A character in a parapet area has lines of sight on these areas and may jump into these areas.",
+                            "it": "Le rovine nella corte interna del forte non hanno il tetto. Dalle mura è possibile vedervi all'interno e saltarvi dentro."
                         },
                         "coordinates": [[48,65], [68,65]]
                     }, {
-                        "title": { 
+                        "title": {
                             "fr": "Bordure",
-                            "en": "Border"
+                            "en": "Border",
+                            "it": "Esterni"
                         },
-                        "description": { 
+                        "description": {
                             "fr": "Les 9 zones en bordure du plateau de jeu sont adjacentes et il est possible de se déplacer normalement au travers de ces zones pour faire le tour du fortin.",
-                            "en": "The nine areas at the edge of the board are adjacent to one another. A character may move through them normally to go around the abandoned fort."
+                            "en": "The nine areas at the edge of the board are adjacent to one another. A character may move through them normally to go around the abandoned fort.",
+                            "it": "Le 9 aree all'esterno del perimetro sono adiacenti tra loro ed è pertanto possibile muoversi normalmente attraverso tutte queste aree per fare un giro completo intorno al forte."
                         },
                         "coordinates": [[1,15], [1,55], [1,99], [50,99], [99,99], [99,50], [99,1], [50,1], [10,1]]
                     }, {
-                        "title": { 
+                        "title": {
                             "fr": "Lignes de vue",
-                            "en": "Lines of sight"
+                            "en": "Lines of sight",
+                            "it": "Linee di vista"
                         },
-                        "description": { 
+                        "description": {
                             "fr": "Depuis les remparts, les figurines ont une ligne de vue sur toutes les zones de la cour.",
-                            "en": "A character in a wall area has lines of sight to each ground area within the fortress walls."
+                            "en": "A character in a wall area has lines of sight to each ground area within the fortress walls.",
+                            "it": "Dalle mura, un personaggio ha una linea di vista libera su tutte le zone della corte interna."
                         },
                         "coordinates": []
                     }, {
-                        "title": { 
+                        "title": {
                             "fr": "Saut/Escalade depuis les remparts",
-                            "en": "Leaping from Walls"
+                            "en": "Leaping from Walls",
+                            "it": "Saltare dalle/Arrampicarsi sulle mura."
                         },
-                        "description": { 
+                        "description": {
                             "fr": "Sauter depuis les remparts inflige {dice_red}{dice_red} sans défense possible et {dice_red} si la figurine possède la compétence Saut. Remonter sur les remparts est impossible.",
-                            "en": "A character can move across a parapet from a wall area to a ground area as though it were a border. The character rolls {dice_red}{dice_red} for falling damage. If the character has Leap, the character rolls {dice_red} instead. A character cannot move from a ground area to a wall area."
+                            "en": "A character can move across a parapet from a wall area to a ground area as though it were a border. The character rolls {dice_red}{dice_red} for falling damage. If the character has Leap, the character rolls {dice_red} instead. A character cannot move from a ground area to a wall area.",
+                            "it": "Saltare dalle mura (sia verso l'interno che verso l'esterno della corte) infligge {dice_red}{dice_red} danni non difendibili o {dice_red} se il personaggio ha l'abilità Saltare. Arrampicarsi sulle mura è impossibile."
                         },
                         "coordinates": []
                     }, {
-                        "title": { 
+                        "title": {
                             "fr": "Éboulis",
-                            "en": "Rock Slide"
+                            "en": "Rock Slide",
+                            "it": "Frane"
                         },
-                        "description": { 
+                        "description": {
                             "fr": "Entrer dans une zone d’éboulis coûte 2 points de mouvement supplémentaires. Cependant, si la figurine possède la compétence Escalade, il n’y a pas de coût supplémentaire.",
-                            "en": "A character can move into a rock slide area from an adjacent area. The character must spend 2 extra movement points unless the character has Climbing."
+                            "en": "A character can move into a rock slide area from an adjacent area. The character must spend 2 extra movement points unless the character has Climbing.",
+                            "it": "Entrare in un'area franata costa 2 punti movimento extra. Se il personaggio possiede l'abilità Arrampicarsi, non deve spendere punti movimento extra."
                         },
                         "coordinates": [[15,30], [25,15], [76,45], [95,60]]
                     }
                 ],
                 "totopic": {
                     "fr": "https://the-overlord.com/index.php?/topic/20-core-carte-fortin-en-ruines/",
-                    "en": "https://the-overlord.net/index.php?/topic/26-core-ruined-fort/"
+                    "en": "https://the-overlord.net/index.php?/topic/26-core-ruined-fort/",
+                    "it": "https://the-overlord.net/index.php?/topic/26-core-ruined-fort/"
                 },
                 "thumbnail": "data/maps/Abandoned_Fort/thumb.png",
                 "board": "data/maps/Abandoned_Fort/board.png",
@@ -1192,53 +1240,61 @@
                 }
             }
         },
-        
+
         {
             "id": "Citadel",
             "description": {
                 "title": {
                     "fr": "Citadelle",
-                    "en": "Citadel"
+                    "en": "Citadel",
+                    "it": "Cittadella"
                 },
                 "version": "1.0",
                 "origins": ["stretchgoal", "king"],
                 "copyright": "Monolith",
-                "rules": [ 
+                "rules": [
                     {
-                        "title": { 
+                        "title": {
                             "fr": "Saut/Escalade depuis le balcon",
-                            "en": "Leaping From/Climbing a Balcony"
+                            "en": "Leaping From/Climbing a Balcony",
+                            "it": "Saltare dalla/Arrampicarsi alla balconata"
                         },
-                        "description": { 
+                        "description": {
                             "fr": "Sauter depuis le balcon inflige {dice_yellow}{dice_yellow} sans défense possible, {dice_yellow} si la figurine possède la compétence Saut. Remonter sur le balcon coûte 1 point de mouvement supplémentaire pour un personnage ayant la compétence Escalade.",
-                            "en": "A character can move across a railing from a balcony area to a ground floor area as though it were a border. The character rolls {dice_yellow}{dice_yellow} for falling damage. If the character has Leap, the character rolls {dice_yellow} instead. A character with Climb can move across a railing from a ground floor area to a balcony area by spending 1 extra movement point."
+                            "en": "A character can move across a railing from a balcony area to a ground floor area as though it were a border. The character rolls {dice_yellow}{dice_yellow} for falling damage. If the character has Leap, the character rolls {dice_yellow} instead. A character with Climb can move across a railing from a ground floor area to a balcony area by spending 1 extra movement point.",
+                            "it": "Saltare nel cortile dalla balconata infligge {dice_yellow}{dice_yellow} danni non difendibili, se il personaggio possiede l'abilità Saltare, il danno si riduce a {dice_yellow}. Arrampicarsi sulla balconata costa un (1) punto movimento extra per un personaggio che ha l'abilità Arrampicarsi."
                         },
                         "coordinates": [[ 60, 62 ]]
                     }, {
-                        "title": { 
+                        "title": {
                             "fr": "Fosse",
-                            "en": "Pit"
+                            "en": "Pit",
+                            "it": "Pozzo"
                         },
-                        "description": { 
+                        "description": {
                             "fr": "Y entrer est un mouvement normal, en sortir coûte 1 point de mouvement supplémentaire.",
-                            "en": "A character must spend 1 extra movement point to move out of the pit area"
+                            "en": "A character must spend 1 extra movement point to move out of the pit area",
+                            "it": "Entrare nel pozzo è considerato un normale movimento, uscirne costa un (1) punto movimento extra."
                         },
                         "coordinates": [[ 47, 64 ]]
                     }, {
-                        "title": { 
+                        "title": {
                             "fr": "Grilles",
-                            "en": "Cellar windows"
+                            "en": "Cellar windows",
+                            "it": "Grate"
                         },
-                        "description": { 
+                        "description": {
                             "fr": "Les grilles ne bloquent pas les lignes de vue.",
-                            "en": "The cellar windows do not block lines of sight."
+                            "en": "The cellar windows do not block lines of sight.",
+                            "it": "Le grate non bloccano le linee di vista."
                         },
                         "coordinates": [[ 60, 14 ], [ 72, 48 ], [ 72, 73 ]]
                     }
                 ],
                 "totopic": {
                     "fr": "https://the-overlord.com/index.php?/topic/22-sg-carte-forteresse/",
-                    "en": "https://the-overlord.net/index.php?/topic/31-sg-citadel/"
+                    "en": "https://the-overlord.net/index.php?/topic/31-sg-citadel/",
+                    "it": "https://the-overlord.net/index.php?/topic/31-sg-citadel/"
                 },
                 "thumbnail": "data/maps/Citadel/thumb.png",
                 "board": "data/maps/Citadel/board.png",
@@ -1434,59 +1490,68 @@
                 }
             }
         },
-        
+
         {
             "id": "Swamp",
             "description": {
                 "title": {
                     "fr": "Marais",
-                    "en": "Swamp"
+                    "en": "Swamp",
+                    "it": "Paludi"
                 },
                 "version": "1.0",
                 "origins": ["stretchgoal", "king"],
                 "copyright": "Monolith",
-                "rules": [ 
+                "rules": [
                     {
-                        "title": { 
+                        "title": {
                             "fr": "Sortir de l'eau",
-                            "en": "Water areas"
+                            "en": "Water areas",
+                            "it": "Uscire dall'acqua"
                         },
-                        "description": { 
+                        "description": {
                             "fr": "Quitter une zone d’eau coûte 1 point de mouvement supplémentaire. Quitter une zone d’eau pour monter directement sur une zone de bois coûte 2 points de mouvement supplémentaires.",
-                            "en": "A character must spend 1 extra movement point to move out of a water area. A character can move from a water area to an adjacent wood area by spending 2 extra movement points."
+                            "en": "A character must spend 1 extra movement point to move out of a water area. A character can move from a water area to an adjacent wood area by spending 2 extra movement points.",
+                            "it": "Lasciare un'area di acqua costa un (1) punto movimento extra. Lasciare un'area di acqua per salire direttamente su un'area di bosco costa 2 punti movimento extra."
                         },
                         "coordinates": [],
                         "areas": ["1","2","3","4","13","15","17","18","20","26","28","29","31","33a","36","38","39","40","44","48","51","52","53","54"],
                         "areasColor": "turquoise",
                         "areasText": {
                             "fr": "Les zones d'eau sont visibles en turquoise.",
-                            "en": "The water areas are visible in turquoise."
+                            "en": "The water areas are visible in turquoise.",
+                            "it": "Le aree d'acqua sono evidenziate in celeste."
                         }
                     }, {
-                        "title": { 
+                        "title": {
                             "fr": "Saut",
-                            "en": "Leap"
+                            "en": "Leap",
+                            "it": "Saltare"
                         },
-                        "description": { 
+                        "description": {
                             "fr": "Il n’est pas possible de sauter la zone d’eau centrale autour de l’autel en un seul saut. Un arrêt intermédiaire sur l’autel est obligatoire",
-                            "en": "Leaping over the water area around the altar in a single movement is not possible. The character must stop in the altar area before performing a second leap."
+                            "en": "Leaping over the water area around the altar in a single movement is not possible. The character must stop in the altar area before performing a second leap.",
+                            "it": "Non è possibile saltare l'area di acqua che circonda l'altare con un singolo movimento. Il personaggio dovrà fermarsi nell'area dell'altare prima di effettuare il secondo salto."
                         },
                         "coordinates": [[48,58]]
                     }, {
-                        "title": { 
+                        "title": {
                             "fr": "Huttes en bois",
-                            "en": "Wooden Huts"
+                            "en": "Wooden Huts",
+                            "it": "Capanne"
                         },
-                        "description": { 
+                        "description": {
                             "fr": "Les cloisons des huttes peuvent être défoncées par la compétence Défoncer les cloisons.",
-                            "en": "A character with Wall Wrecker can use it to move across the wall of one of the wooden huts."
+                            "en": "A character with Wall Wrecker can use it to move across the wall of one of the wooden huts.",
+                            "it": "Un personaggio con l'abilità Spacca Muri può demolire i muri delle capanne."
                         },
                         "coordinates": [[18,48], [30,43], [66,42], [15,85], [46,85], [87,85]]
                     }
                 ],
                 "totopic": {
                     "fr": "https://the-overlord.com/index.php?/topic/24-sg-carte-marais/",
-                    "en": "https://the-overlord.net/index.php?/topic/30-sg-swamp/"
+                    "en": "https://the-overlord.net/index.php?/topic/30-sg-swamp/",
+                    "it": "https://the-overlord.net/index.php?/topic/30-sg-swamp/"
                 },
                 "thumbnail": "data/maps/Swamp/thumb.png",
                 "board": "data/maps/Swamp/board.png",
@@ -1838,37 +1903,43 @@
             "description": {
                 "title": {
                     "fr": "Forêt",
-                    "en": "Forest"
+                    "en": "Forest",
+                    "it": "Foresta"
                 },
                 "version": "1.0",
                 "origins": ["nordheim"],
                 "copyright": "Monolith",
-                "rules": [ 
+                "rules": [
                     {
-                        "title": { 
+                        "title": {
                             "fr": "Forêt impénétrable",
-                            "en": "Impenetrable Forest"
+                            "en": "Impenetrable Forest",
+                            "it": "Foresta impenetrabile"
                         },
-                        "description": { 
+                        "description": {
                             "fr": "Les zones de forêt bloquent les lignes de vue. On peut tirer à partir d'une telle zone mais pas tirer dans cette zone ni au travers. Y entrer coûte 1 point de mouvement supplémentaire. En sortir ne coûte pas de point de mouvement supplémentaire.",
-                            "en": "These 3 Forest zones block Lines of Sight. A character can aim from but not shoot inside or through these areas. Entering the area costs an additional movement point. Leaving the area does not cost any extra movement points."
+                            "en": "These 3 Forest zones block Lines of Sight. A character can aim from but not shoot inside or through these areas. Entering the area costs an additional movement point. Leaving the area does not cost any extra movement points.",
+                            "it": "Le aree di foresta bloccano le linee di vista. Un personaggio può mirare dall'interno verso l'esterno, ma non può mirare all'interno o attraverso queste aree. Entrare in queste aree costa un (1) punto movimento extra, uscirne non costa punti movimento extra."
                         },
                         "coordinates": [[31,62], [57,21], [76,60]]
                     }, {
-                        "title": { 
+                        "title": {
                             "fr": "Eperon rocheux",
-                            "en": "Rocky Outcrop"
+                            "en": "Rocky Outcrop",
+                            "it": "Sporgenze rocciose"
                         },
-                        "description": { 
+                        "description": {
                             "fr": "Les zones de rochers bloquent les lignes de vue et octroient un bonus de surplomb. Y grimper coûte 1 point de mouvement supplémentaire. En descendre ne coûte pas de point de mouvement supplémentaire.",
-                            "en": "The 2 Rocky Outcrop areas block Lines of Sight and grant the Elevation Bonus. Climb costs 1 additional movement point. Climbing down does not cost any extra movement point."
+                            "en": "The 2 Rocky Outcrop areas block Lines of Sight and grant the Elevation Bonus. Climb costs 1 additional movement point. Climbing down does not cost any extra movement point.",
+                            "it": "Le zone rocciose bloccano le linee di vista e fanno ottenere un bonus Elevazione. Arrampicarsi su queste rocce costa un (1) punto movimento extra, discendere non costa punti movimento extra."
                         },
                         "coordinates": [[19,12], [39,10]]
                     }
                 ],
                 "totopic": {
                     "fr": "https://the-overlord.com/index.php?/topic/808-nordheim-carte-for%C3%AAt/",
-                    "en": "https://the-overlord.net/index.php?/topic/32-nordheim-forest/"
+                    "en": "https://the-overlord.net/index.php?/topic/32-nordheim-forest/",
+                    "it": "https://the-overlord.net/index.php?/topic/32-nordheim-forest/"
                 },
                 "thumbnail": "data/maps/Forest/thumb.png",
                 "board": "data/maps/Forest/board.png",
@@ -2031,43 +2102,49 @@
                 }
             }
         },
-        
+
         {
             "id": "Mound",
             "description": {
                 "title": {
                     "fr": "Tertre",
-                    "en": "Mound"
+                    "en": "Mound",
+                    "it": "Tumulo"
                 },
                 "version": "1.0",
                 "origins": ["nordheim"],
                 "copyright": "Monolith",
-                "rules": [ 
+                "rules": [
                     {
-                        "title": { 
+                        "title": {
                             "fr": "De la neige et du sang",
-                            "en": "Blood! Gore! Slush!"
+                            "en": "Blood! Gore! Slush!",
+                            "it": "Bianca come la neve e rossa come il sangue"
                         },
-                        "description": { 
+                        "description": {
                             "fr": "A chaque fois qu’un Héros utilise des points de mouvement pour se déplacer, il doit dépenser 1 gemme en plus du coût normal, quel que soit le nombre de zones parcourues. Cette gemme est placée sur la case Mouvement mais n’octroie pas de point de mouvement au Héros. Niord, les alliés Aesirs et les unités de l’Overlord ne sont pas soumis à cette règle.",
-                            "en": "Every time a hero spends movement points to move, they must add 1 additional gem to the Movement point total. This gem is placed in the hero’s Move space, but does not add a movement point. This effect occurs once per Move action regardless of how many areas the hero moves through. Niord, Aesir Warriors and the Overlord’s units are not affected."
+                            "en": "Every time a hero spends movement points to move, they must add 1 additional gem to the Movement point total. This gem is placed in the hero’s Move space, but does not add a movement point. This effect occurs once per Move action regardless of how many areas the hero moves through. Niord, Aesir Warriors and the Overlord’s units are not affected.",
+                            "it": "Ogni volta che un personaggio spende dei punti movimento per spostarsi, dovrà spendere una gemma in più del normale costo per ogni area percorsa. Queste gemme sono piazzate nello spazio Movimento del personaggio, ma non sono considerate ai fini del limite delle gemme. Niord, i Guerrieri Aesir e le unità dell'Overlord non subiscono nessun malus."
                         },
                         "coordinates": []
                     }, {
-                        "title": { 
+                        "title": {
                             "fr": "En pente douce",
-                            "en": "That’s Not a Mountain"
+                            "en": "That’s Not a Mountain",
+                            "it": "Leggera pendenza"
                         },
-                        "description": { 
+                        "description": {
                             "fr": "La colline n'affecte pas le déplacement des figurines. La zone au sommet de la colline centrale permet cependant de gagner le bonus de surplomb habituel tout comme les 3 tertres  aux angles de la carte",
-                            "en": "The hill does not affect movement. The area at the top of the hill still provides the Elevation bonus, as do the cliffs at the corners of the game board."
+                            "en": "The hill does not affect movement. The area at the top of the hill still provides the Elevation bonus, as do the cliffs at the corners of the game board.",
+                            "it": "La collina non influenza il movimento dei personaggi. L'area centrale in cima garantisce un bonus Elevazione così come le 3 sopraelevazioni agli angoli del tabellone."
                         },
                         "coordinates": [[50,48], [6,8], [88,15], [86,97]]
                     }
                 ],
                 "totopic": {
                     "fr": "https://the-overlord.com/index.php?/topic/809-nordheim-carte-tertre/",
-                    "en": "https://the-overlord.net/index.php?/topic/33-nordheim-mound/"
+                    "en": "https://the-overlord.net/index.php?/topic/33-nordheim-mound/",
+                    "it": "https://the-overlord.net/index.php?/topic/33-nordheim-mound/"
                 },
                 "thumbnail": "data/maps/Mound/thumb.png",
                 "board": "data/maps/Mound/board.png",
@@ -2221,63 +2298,73 @@
                 }
             }
         },
-        
+
         {
             "id": "Market",
             "description": {
                 "title": {
                     "fr": "Marché",
-                    "en": "Market"
+                    "en": "Market",
+                    "it": "Mercato"
                 },
                 "version": "1.0",
                 "origins": ["khitai"],
                 "copyright": "Monolith",
-                "rules": [ 
+                "rules": [
                     {
-                        "title": { 
+                        "title": {
                             "fr": "Murs en bois",
-                            "en": "Reinforced Walls"
+                            "en": "Reinforced Walls",
+                            "it": "Muri di legno"
                         },
-                        "description": { 
+                        "description": {
                             "fr": "Un personnage disposant de la compétence Défoncer parois ne peut pas défoncer les murs de la caserne au sud, et du fumoir au nord car ils sont renforcés avec des rondins de bois.",
-                            "en": "A character with Wall Wrecker cannot move through the reinforced walls of the barracks (south of the board) and the smoking room (north of the board)."
+                            "en": "A character with Wall Wrecker cannot move through the reinforced walls of the barracks (south of the board) and the smoking room (north of the board).",
+                            "it": "Un personaggio con l'abilità Spacca Muri non può demolire i muri della caserma a sud e dell'affumicatoio a nord poiché essi sono rinforzati da tronchi di legno."
                         },
                         "coordinates": [[57,90], [50,10]]
                     }, {
-                        "title": { 
+                        "title": {
                             "fr": "Pirogues",
-                            "en": "Boats"
+                            "en": "Boats",
+                            "it": "Piroghe"
                         },
-                        "description": { 
+                        "description": {
                             "fr": "Les zones d'eau avec pirogues sont considérées comme des zones normales pour le mouvement.",
-                            "en": "The areas with boats are considered normal terrain for Movement."
+                            "en": "The areas with boats are considered normal terrain for Movement.",
+                            "it": "Le aree d'acqua con le piroghe sono cosiderate delle normali aree ai fini del movimento."
                         },
                         "coordinates": [[15,12], [15,40], [15,69]]
                     }, {
-                        "title": { 
+                        "title": {
                             "fr": "Natation",
-                            "en": "Swimming"
+                            "en": "Swimming",
+                            "it": "Nuotare"
                         },
-                        "description": { 
+                        "description": {
                             "fr": "Un personnage disposant de la compétence Natation peut traverser les zones d'eau sans pirogue.",
-                            "en": "A character with Swimming may move through the areas of water next to the cemetery."
+                            "en": "A character with Swimming may move through the areas of water next to the cemetery.",
+                            "it": "Un personaggio che ha l'abilità Nuotare può attraversare le aree d'acqua prive di piroghe."
                         },
                         "coordinates": [[10,90], [81,90], [81,63], [71,44], [66,22], [63,8]]
                     }, {
-                        "title": { 
+                        "title": {
                             "fr": "Saut",
-                            "en": "Leap"
+                            "en": "Leap",
+                            "it": "Saltare"
                         },
-                        "description": { 
+                        "description": {
                             "fr": "Un personnage ayant la compétence Saut peut franchir les zones marquées sur le plan. Si un héros échoue dans sa tentative de saut, son mouvement est perdu et il reste sur la zone de départ du saut.",
-                            "en": "A character with Leap may leap over the areas marked with the Leap icon . If a hero fails to leap, the character remains in its area."
+                            "en": "A character with Leap may leap over the areas marked with the Leap icon . If a hero fails to leap, the character remains in its area.",
+                            "it": "Un personaggio con l'abilità Saltare può saltare le aree segnate sul tabellone. Se un Eroe fallisce il suo tentativo di salto, il suo movimento termina nell'area di partenza del salto."
                         },
                         "coordinates": [[67, 31], [73,52], [84,70]]
                     }
                 ],
                 "totopic": {
                     "fr": "https://the-overlord.com/index.php?/topic/804-khitai-carte-march%C3%A9/",
-                    "en": "https://the-overlord.net/index.php?/topic/36-khitai-market/"
+                    "en": "https://the-overlord.net/index.php?/topic/36-khitai-market/",
+                    "it": "https://the-overlord.net/index.php?/topic/36-khitai-market/"
                 },
                 "thumbnail": "data/maps/Market/thumb.png",
                 "board": "data/maps/Market/board.png",
@@ -2503,73 +2590,85 @@
                 }
             }
         },
-        
+
         {
             "id": "Tower",
             "description": {
                 "title": {
                     "fr": "Tour",
-                    "en": "Tower"
+                    "en": "Tower",
+                    "it": "Torre"
                 },
                 "version": "1.0",
                 "origins": ["khitai"],
                 "copyright": "Monolith",
-                "rules": [ 
+                "rules": [
                     {
-                        "title": { 
+                        "title": {
                             "fr": "Grand plongeon",
-                            "en": "Dive"
+                            "en": "Dive",
+                            "it": "Grande tuffo"
                         },
-                        "description": { 
+                        "description": {
                             "fr": "Un Héros présent dans les zones peut essayer de sauter dans l’étang en contrebas. Pour cela, il doit se déplacer hors de la case et dépenser 1 point de mouvement supplémentaire pour plonger. Sauter dans l’étang inflige {dice_orange}{dice_orange} sans défense possible et {dice_orange} si la figurine possède la compétence saut.",
-                            "en": "A character in an area marked with the Leap icon may leap in the pond's area of level 1 by spending 1 extra movement point. The character rolls {dice_orange}{dice_orange} for falling damage with no possible defense. If the character has Leap, the character rolls {dice_orange} instead."
+                            "en": "A character in an area marked with the Leap icon may leap in the pond's area of level 1 by spending 1 extra movement point. The character rolls {dice_orange}{dice_orange} for falling damage with no possible defense. If the character has Leap, the character rolls {dice_orange} instead.",
+                            "it": "Un personaggio può saltare dalle aree segnate con l'icona del salto, all'area dello stagno al livello 1, spendendo un (1) punto movimento extra. Il personaggio che salta subisce {dice_orange}{dice_orange} di danni da caduta non difendibili. Se il personaggio ha l'abilità Saltare i danni da caduta si riducono a {dice_orange}. "
                         },
                         "coordinates": []
                     }, {
-                        "title": { 
+                        "title": {
                             "fr": "Mur de pierre",
-                            "en": "Stone wall"
+                            "en": "Stone wall",
+                            "it": "Muro di pietra"
                         },
-                        "description": { 
+                        "description": {
                             "fr": "Un personnage disposant de la compétence « Défoncer Parois » ne peut pas défoncer les parois extérieures de la tour et les murs en pierres.",
-                            "en": "A character with Wall Wrecker cannot use it to move across an outer wall of the tower or a stone wall."
+                            "en": "A character with Wall Wrecker cannot use it to move across an outer wall of the tower or a stone wall.",
+                            "it": "Un personaggio con l'abilità Spacca Muri non può usarla per attraversa i muri della torre (interni e perimetrali)."
                         },
                         "coordinates": []
                     }, {
-                        "title": { 
+                        "title": {
                             "fr": "Fenêtres",
-                            "en": "Windows"
+                            "en": "Windows",
+                            "it": "Finestre"
                         },
-                        "description": { 
+                        "description": {
                             "fr": "Les fenêtres au niveau « 2 » et « 3 » donnent une ligne de vue sur les zones à l’extérieur de la tour du niveau « 1 » directement placées à la verticale de celles-ci.",
-                            "en": "The windows on level « 2 » and « 3 » have a line of sight on the areas of level « 1 » directly below them"
+                            "en": "The windows on level « 2 » and « 3 » have a line of sight on the areas of level « 1 » directly below them",
+                            "it": "Le finestre al livello 2 e 3 non bloccano la linea di vista verso le zone esterne ai piedi della torre del livello 1."
                         },
                         "coordinates": []
                     }, {
-                        "title": { 
+                        "title": {
                             "fr": "Escalade",
-                            "en": "Climbing"
+                            "en": "Climbing",
+                            "it": "Arrampicarsi"
                         },
-                        "description": { 
+                        "description": {
                             "fr": "Un personnage ayant la compétence Escalade peut :<br/>• passer du niveau « 1 » au niveau « 2 » (et inversement) en grimpant par l’arbre pour 1 point de mouvement supplémentaire,<br/>• passer du niveau « 2 » à « 3 » (et inversement) ou du niveau « 3 » à « 4 » (et inversement) en grimpant par l’extérieur de la tour pour 2 points de mouvement supplémentaires.",
-                            "en": "A character with Climb may:<br/>• Move from level « 1 » to level « 2 » (and the other way) by climbing the tree and spending 1 extra movement point<br/>• Move from level « 2 » to level « 3 » (and the other way) or from level « 3 » to level « 4 » (and the other way) by climbing the outside walls of the tower and spending 2 extra movement points."
+                            "en": "A character with Climb may:<br/>• Move from level « 1 » to level « 2 » (and the other way) by climbing the tree and spending 1 extra movement point<br/>• Move from level « 2 » to level « 3 » (and the other way) or from level « 3 » to level « 4 » (and the other way) by climbing the outside walls of the tower and spending 2 extra movement points.",
+                            "it": "Un personaggio con l'abilità Arrampicarsi può :<br/>• passare dal livello 1 al livello 2 (e viceversa) arrampicandosi sull'albero e spendendo un (1) punto movimento extra,<br/>• passare dal livello 2 al livello 3 (e viceversa) o dal livello 3 al livello 4 (e viceversa) arrampicandosi sui muri esterni della torre e spendendo 2 punti movimento extra."
                         },
                         "coordinates": []
                     }, {
-                        "title": { 
+                        "title": {
                             "fr": "Table et escaliers",
-                            "en": "Table and stairs"
+                            "en": "Table and stairs",
+                            "it": "Tavoli e scale"
                         },
-                        "description": { 
+                        "description": {
                             "fr": "Les escaliers donnent un bonus de surplomb sur les zones situées en contrebas. Il est possible de monter sur la table située au niveau « 2 » avec ou sans les compétences Saut ou Escalade pour 1 point de mouvement supplémentaire. Un personnage sur la zone de la table bénéficie du bonus de surplomb pour ses attaques à distance et au corps-à-corps. Il est possible d’attaquer les zones adjacentes au corps-à-corps depuis cette zone avec ou sans la compétence Allonge. La zone de la table ne bloque pas la ligne de vue.",
-                            "en": "The stairs provide an Elevation bonus for Ranged Attacks against an enemy on a lower area. A character with or without Leap or Climb may move onto the table on level"
+                            "en": "The stairs provide an Elevation bonus for Ranged Attacks against an enemy on a lower area. A character with or without Leap or Climb may move onto the table on level",
+                            "it": "Le scale forniscono un bonous di Elevazione sulle zone situate più in basso. É possibile salire sul tavolo del livello 2 con o senza l'abilità Saltare/Arrampicarsi, al costo di un (1) punto movimento extra. Un personaggio sul tavolo ottiene un bonus di Elevazione per i suoi attacchi a Distanza e per quelli in Mischia. É possibile attaccare in Mischia le zone adiacenti al tavolo sia con che senza l'abilità Allungo. L'area del tavolo non blocca la linea di vista. "
                         },
                         "coordinates": []
                     }
                 ],
                 "totopic": {
                     "fr": "https://the-overlord.com/index.php?/topic/805-khitai-carte-tour/",
-                    "en": "https://the-overlord.net/index.php?/topic/37-khitai-tower/"
+                    "en": "https://the-overlord.net/index.php?/topic/37-khitai-tower/",
+                    "it": "https://the-overlord.net/index.php?/topic/37-khitai-tower/"
                 },
                 "thumbnail": "data/maps/Tower/thumb.png",
                 "board": "data/maps/Tower/board.png",
@@ -2623,7 +2722,7 @@
                     "area": [[23.44, 86.35], [24.98, 89.17], [21.77, 94.91], [12.49, 94.69], [9.34, 89.06], [10.95, 86.35], [13.36, 90.57], [20.84, 90.68]],
                     "centers": [[13.11, 92.63], [21.03, 92.63]],
                     "links": ["2#4#2", "1#3#1"],
-                    "level": 0  
+                    "level": 0
                 },
                 "13": {
                     "area": [[11.5, 3.58], [13.61, 6.93], [7.36, 17.77], [7.05, 19.72], [7.73, 22.1], [7.79, 23.84], [5.81, 23.84], [5.75, 18.53]],
@@ -2826,53 +2925,61 @@
                 }
             }
         },
-        
+
         {
             "id": "Underground",
             "description": {
                 "title": {
                     "fr": "Grotte",
-                    "en": "Underground"
+                    "en": "Underground",
+                    "it": "Sottosuolo"
                 },
                 "version": "1.0",
                 "origins": ["stygia"],
                 "copyright": "Monolith",
-                "rules": [ 
+                "rules": [
                     {
-                        "title": { 
+                        "title": {
                             "fr": "Emprunter un puits",
-                            "en": "Moving Through a Well"
+                            "en": "Moving Through a Well",
+                            "it": "Muoversi attraverso un pozzo"
                         },
-                        "description": { 
+                        "description": {
                             "fr": "Le plateau est composé de deux niveaux dont le niveau « 1 » est exactement superposé au niveau « 0 ».<br/>Le niveau est indiqué par un pictogramme en bas à gauche de chaque niveau. Un personnage, avec ou sans la compétence Escalade, présent dans la zone d’un puits peut l’emprunter pour se déplacer du niveau « 1 » au niveau « 0 » (et inversement) pour un surcoût de 2 points de mouvement.<br/>Emprunter un puits permet de se déplacer dans la zone du puits trouvant exactement à sa verticale (au niveau supérieur ou inférieur). Les Scorpions géants peuvent emprunter les puits sans pénalité de mouvement.",
-                            "en": "The game board represents 2 levels of a Stygian temple with level « 1 » being exactly on top of level « 0 ».<br/>The level is indicated by an icon on the lower-left corner of each level. A character with or without Climb in the opened well's area may move from level « 1 » to level « 0 » (and the other way) by spending 2 extra movement points.<br/>Moving through a well takes a character's model to the area with a well token directly above or below. The Giant Scorpions may move through all the wells, opened or not, with no movement penalty."
+                            "en": "The game board represents 2 levels of a Stygian temple with level « 1 » being exactly on top of level « 0 ».<br/>The level is indicated by an icon on the lower-left corner of each level. A character with or without Climb in the opened well's area may move from level « 1 » to level « 0 » (and the other way) by spending 2 extra movement points.<br/>Moving through a well takes a character's model to the area with a well token directly above or below. The Giant Scorpions may move through all the wells, opened or not, with no movement penalty.",
+                            "it": "Il tabellone è composto da due livelli sovrapposti in cui il livello 1 si trova in corrispondenza del livello 0.<br/> Il livello è indicato da un'icona in basso a sinistra. Un personaggio con o senza l'abilità Arrampicarsi che si trovi in un'area di un pozzo può percorrerlo per muoversi dal livello 1 al livello 0 (e viceversa) spendendo 2 punti movimento extra.<br/> Percorrere un pozzo permette al personaggio di muoversi nella zona di pozzo che si trova sulla sua verticale (sia al livello superiore che a quello inferiore). Gli Scorpioni Giganti possono percorrere i pozzi senza penalità al movimento."
                         },
                         "coordinates": []
                     }, {
-                        "title": { 
+                        "title": {
                             "fr": "Passages secrets",
-                            "en": "Moving Through Secret Passages"
+                            "en": "Moving Through Secret Passages",
+                            "it": "Passaggi segreti"
                         },
-                        "description": { 
+                        "description": {
                             "fr": "Chaque niveau est parcouru par un réseau de passages secrets dont les entrées sont représentées par un pion. Un personnage dans la zone d’un passage secret peut se déplacer vers une autre zone avec un passage secret du même niveau en dépensant 2 points de mouvement supplémentaires.<br/>Les unités de l’Overlord et Ikhmet connaissent les recoins du temple et ignorent cette pénalité.<br/>Les zones de départ et d’arrivée doivent être vides d’ennemis.",
-                            "en": "Each level is traversed by a network of secret passages which entrances are represented by secret passage tokens. A character in an area with a secret passage may move to another area with a secret passage of the same level by spending 2 extra movement points.<br/>To move through a secret passage, both areas with the entrance and the exit must be clear of enemies. The Overlord's units and Ikhmet know the nooks of the temple and may move through a secret passage with no movement penalty."
+                            "en": "Each level is traversed by a network of secret passages which entrances are represented by secret passage tokens. A character in an area with a secret passage may move to another area with a secret passage of the same level by spending 2 extra movement points.<br/>To move through a secret passage, both areas with the entrance and the exit must be clear of enemies. The Overlord's units and Ikhmet know the nooks of the temple and may move through a secret passage with no movement penalty.",
+                            "it": "Ogni livello è percorso da una rete di passaggi segreti le cui entrate sono rappresentate da segnalini Passaggio Segreto. Un personaggio in un'area contentente un Passaggio Segreto può muoversi verso un'altra area omologa situata sul suo stesso livello, spendendo due punti movimento extra.<br/> Le unità dell'Overlord e Ikhmet conoscono i cunicoli del tempio e ignorano questa penalità.<br/>L'area di arrivo e di partenza deve essere priva di nemici."
                         },
                         "coordinates": []
                     }, {
-                        "title": { 
+                        "title": {
                             "fr": "Obscurité",
-                            "en": "Darkness"
+                            "en": "Darkness",
+                            "it": "Oscurità"
                         },
-                        "description": { 
+                        "description": {
                             "fr": "Le dédale des tunnels est plongé dans une obscurité impénétrable. Il n’existe pas de ligne de vue entre deux zones différentes sur tout le plateau. Toute action nécessitant une ligne de vue ne peut être réalisée que dans une même zone.",
-                            "en": "The maze of tunnels is plunged into an impenetrable darkness. There is no line of sight between two different areas of the whole board. Each action that requires a line of sight can only be performed within a single area."
+                            "en": "The maze of tunnels is plunged into an impenetrable darkness. There is no line of sight between two different areas of the whole board. Each action that requires a line of sight can only be performed within a single area.",
+                            "it": "Il dedalo di cunicoli è immerso in un'oscurità impenetrabile. Non esiste nessuna linea di vista tra due zone diverse su tutto il tabellone. Tutte le azioni che richiedono una linea di vista possono essere effettuate solo nella stessa area di chi le vuole compiere."
                         },
                         "coordinates": []
                     }
                 ],
                 "totopic": {
                     "fr": "https://the-overlord.com/index.php?/topic/806-stygie-carte-souterrains/",
-                    "en": "https://the-overlord.net/index.php?/topic/35-stygia-underground/"
+                    "en": "https://the-overlord.net/index.php?/topic/35-stygia-underground/",
+                    "it": "https://the-overlord.net/index.php?/topic/35-stygia-underground/"
                 },
                 "thumbnail": "data/maps/Underground/thumb.png",
                 "board": "data/maps/Underground/board.png",
@@ -3188,63 +3295,73 @@
                 }
             }
         },
-        
+
         {
             "id": "Port",
             "description": {
                 "title": {
                     "fr": "Port",
-                    "en": "Port"
+                    "en": "Port",
+                    "it": "Porto"
                 },
                 "version": "1.0",
                 "origins": ["stygia"],
                 "copyright": "Monolith",
-                "rules": [ 
+                "rules": [
                     {
-                        "title": { 
+                        "title": {
                             "fr": "Sauter à l'eau",
-                            "en": "Jumping into Water"
+                            "en": "Jumping into Water",
+                            "it": "Tuffarsi in acqua"
                         },
-                        "description": { 
+                        "description": {
                             "fr": "Un personnage dans une zone adjacente à une des zones de mer situées au sud de la ville peut se jeter à l’eau sans pénalité de mouvement. Si ce personnage ne dispose pas de la compétence Natation, il meurt immédiatement.",
-                            "en": "A character adjacent to a water area may move into that area with no movement penalty. When a character without Swimming moves into a water area, that character dies immediately."
+                            "en": "A character adjacent to a water area may move into that area with no movement penalty. When a character without Swimming moves into a water area, that character dies immediately.",
+                            "it": "Un personaggio che si trova in un'area adiacente a un'area di mare a sud della città, può tuffarsi in acqua senza penalità al movimento. Se questo personaggio non ha l'abilità Nuotare, morirà immediatamente."
                         },
                         "coordinates": [[50,97]]
                     }, {
-                        "title": { 
+                        "title": {
                             "fr": "Remonter sur le quai",
-                            "en": "Moving back onto the docks"
+                            "en": "Moving back onto the docks",
+                            "it": "Risalire sul molo"
                         },
-                        "description": { 
+                        "description": {
                             "fr": "Un personnage dans une zone d’eau adjacente à une échelle peut remonter sur le quai pour un surcoût de 1 point de mouvement.",
-                            "en": "A character in a water area adjacent to a ladder may move back onto the docks by spending 1 extra movement point."
+                            "en": "A character in a water area adjacent to a ladder may move back onto the docks by spending 1 extra movement point.",
+                            "it": "Un personaggio che si trova in un'area di acqua adiacente a una scaletta, può risalire sul molo spendendo un (1) punto movimento extra."
                         },
                         "coordinates": [[3,97], [97,97]]
                     }, {
-                        "title": { 
+                        "title": {
                             "fr": "Toits de la ville",
-                            "en": "Roof Top"
+                            "en": "Roof Top",
+                            "it": "Tetti della città"
                         },
-                        "description": { 
+                        "description": {
                             "fr": "Les zones situées sur le toit de l’immeuble à l’ouest de la ville donnent un bonus de surplomb sur les zones situées en contrebas, y compris les escaliers menant à ces toits. Sauter depuis les toits dans la rue inflige {dice_orange}{dice_orange} sans défense possible et {dice_orange} si le personnage possède la compétence Saut. Il n’est pas possible de remonter sur les toits depuis la rue autrement que par les escaliers.",
-                            "en": "The areas located on the roof top of the building on the left side of the board provide an elevation bonus, including on the stairs areas. A character may jump from these areas to the areas of the street level. That character rolls {dice_orange}{dice_orange} for falling damage. If that character has Leap, that character rolls {dice_orange}. A character cannot move onto the roof top areas directly from the street level except when moving through the stairs areas."
+                            "en": "The areas located on the roof top of the building on the left side of the board provide an elevation bonus, including on the stairs areas. A character may jump from these areas to the areas of the street level. That character rolls {dice_orange}{dice_orange} for falling damage. If that character has Leap, that character rolls {dice_orange}. A character cannot move onto the roof top areas directly from the street level except when moving through the stairs areas.",
+                            "it": "Le aree situate sui tetti dell'edificio a ovest della città forniscono un bonus di Elevazione sulle zone situate in basso, incluse le aree con le scale. Saltare dal tetto alla strada infligge {dice_orange}{dice_orange} danni non difendibili o {dice_orange} danni non difendibili se il personaggio possiede l'abilità Saltare. Non è possibile risalire sul tetto direttamente dalla strada, ma lo si può fare usando le scale."
                         },
                         "coordinates": [[8,52], [8,70], [33,52], [33,75]]
                     }, {
-                        "title": { 
+                        "title": {
                             "fr": "Défoncer les cloisons",
-                            "en": "Wall Wrecker"
+                            "en": "Wall Wrecker",
+                            "it": "Sfondare le pareti"
                         },
-                        "description": { 
+                        "description": {
                             "fr": "Le seul mur qui peut être défoncé est celui situé dans l'entrepôt à l'est de la ville",
-                            "en": "A character with Wall Wrecker can only use this skill to move across the wall in the warehouse on the right side of the board."
+                            "en": "A character with Wall Wrecker can only use this skill to move across the wall in the warehouse on the right side of the board.",
+                            "it": "Le uniche pareti che possono essere demolite da un personaggio con l'abilità Spacca Muri sono quelle del magazzino a est della città."
                         },
                         "coordinates": [[74,53]]
-                    } 
+                    }
                 ],
                 "totopic": {
                     "fr": "https://the-overlord.com/index.php?/topic/807-stygie-carte-port/",
-                    "en": "https://the-overlord.net/index.php?/topic/34-stygia-port/"
+                    "en": "https://the-overlord.net/index.php?/topic/34-stygia-port/",
+                    "it": "https://the-overlord.net/index.php?/topic/34-stygia-port/"
                 },
                 "thumbnail": "data/maps/Port/thumb.png",
                 "board": "data/maps/Port/board.png",

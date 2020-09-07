@@ -23,45 +23,61 @@ var EncyclopediaSpells = {
             'cards': "copies",
             'clarification': "Clarification:",
             'skill': "Skill:"
-        }
+          },
+          'it': {
+              'tab': "Incantesimi",
+              'transfertToStudio': "Copia la carta nello Studio",
+              'transfertOK': "La carta è stata copiata nello Studio",
+              'transfertConfirm': "Vuoi copiare la carta nello Studio per modificarla o stamparla?",
+              'from': "Disponibile in:",
+              'fromAnd': "e",
+              'card': "copia",
+              'cards': "copie",
+              'clarification': "Chiarificazione:",
+              'skill': "Abilità:"
+          }
     },
-    
+
     preinit: function()
     {
         Encyclopedia._slides.push({   label: EncyclopediaSpells._i18n[Language].tab, id: "encyclopedia-spell", onShow: EncyclopediaSpells.onShow,  onHide: EncyclopediaSpells.onHide });
-        
+
         EncyclopediaSpells._facets = [
             {
                 id: 'keyword',
                 label: {
                     'fr': "Mot-clé",
-                    'en': "Keyword"
+                    'en': "Keyword",
+                    'it': "Parola chiave"
                 },
                 filter: function(item, value)
                 {
                     return ConanRules._deemphasize(item.title[Language] + item.text[Language]).indexOf(ConanRules._deemphasize(value)) != -1;
                 }
             },
-            
+
             {
                 id: 'expansions',
                 label: {
                     'fr': "Status",
-                    'en': "Status" 
+                    'en': "Status",
+                    'it': "Stato"
                 },
                 values: [
                     {
                         id: "yes",
                         label: {
                             'fr': "Possédées",
-                            'en': "Owned"
+                            'en': "Owned",
+                            'it': "Nella collezione"
                         }
                     },
                     {
                         id: "no",
                         label: {
                             'fr': "Manquantes",
-                            'en': "Missing"
+                            'en': "Missing",
+                            'it': "Mancante"
                         }
                     }
                 ],
@@ -70,20 +86,21 @@ var EncyclopediaSpells = {
                     {
                         return true;
                     }
-                    else 
+                    else
                     {
-                        var hasExpansion = ConanAbout._hasExpansion(item.origins); 
+                        var hasExpansion = ConanAbout._hasExpansion(item.origins);
                         return hasExpansion && selectedValues[0] == 'yes'
                                 || !hasExpansion && selectedValues[0] == 'no'
                     }
                 }
             },
-            
+
             {
                 id: 'origins',
                 label: {
                     'fr': "Origine",
-                    'en': "Origin"
+                    'en': "Origin",
+                    'it': "Origine"
                 },
                 sort: true,
                 values: (function() {
@@ -91,7 +108,7 @@ var EncyclopediaSpells = {
                     for (var i in Encyclopedia.expansions.types)
                     {
                         var type = Encyclopedia.expansions.types[i];
-                        
+
                         for (var j in Encyclopedia.expansions.list)
                         {
                             var expansion = Encyclopedia.expansions.list[j];
@@ -113,7 +130,7 @@ var EncyclopediaSpells = {
                         var startRemove = false;
 
                         var type = Encyclopedia.expansions.types[i];
-                        
+
                         for (var j in Encyclopedia.expansions.list)
                         {
                             var expansion = Encyclopedia.expansions.list[j];
@@ -133,26 +150,29 @@ var EncyclopediaSpells = {
                     return origins.filter(v => selectedValues.indexOf(v) != -1).length > 0;
                 }
             },
-            
+
             {
                 id:'zone',
                 label: {
                     'fr': "Sort de zone",
-                    'en': "Area spell"
+                    'en': "Area spell",
+                    'it': "Ad Area"
                 },
                 values: [
                     {
                         id: "no",
                         label: {
                             'fr': "Non",
-                            'en': "No"
+                            'en': "No",
+                            'it': "No"
                         }
                     },
                     {
                         id: "yes",
                         label: {
                             'fr': "Oui",
-                            'en': "Yes"
+                            'en': "Yes",
+                            'it': "Sì"
                         }
                     }
                 ],
@@ -161,26 +181,29 @@ var EncyclopediaSpells = {
                         || (item.explosion == false && (selectedValues.indexOf('no')!=-1));
                 }
             },
-            
+
             {
                 id:'reaction',
                 label: {
                     'fr': "Sort réaction",
-                    'en': "Reaction spell"
+                    'en': "Reaction spell",
+                    'it': "Di Reazione"
                 },
                 values: [
                     {
                         id: "no",
                         label: {
                             'fr': "Non",
-                            'en': "No"
+                            'en': "No",
+                            'it': "No"
                         }
                     },
                     {
                         id: "yes",
                         label: {
                             'fr': "Oui",
-                            'en': "Yes"
+                            'en': "Yes",
+                            'it': "Sì"
                         }
                     }
                 ],
@@ -194,7 +217,8 @@ var EncyclopediaSpells = {
                 id:'side',
                 label: {
                     'fr': "Camp",
-                    'en': "Side"
+                    'en': "Side",
+                    'it': "Fazione"
                 },
                 operator: "or/and",
                 values: [
@@ -202,14 +226,16 @@ var EncyclopediaSpells = {
                         id: "heroes",
                         label: {
                             'fr': "Héros",
-                            'en': "Heroes"
+                            'en': "Heroes",
+                            'it': "Eroi"
                         }
                     },
                     {
                         id: "overlord",
                         label: {
                             'fr': "Overlord",
-                            'en': "Overlord"
+                            'en': "Overlord",
+                            'it': "Overlord"
                         }
                     }
                 ],
@@ -223,7 +249,8 @@ var EncyclopediaSpells = {
                 id:'theme',
                 label: {
                     'fr': "Thème",
-                    'en': "Theme"
+                    'en': "Theme",
+                    'it': "Tipologia"
                 },
                 sort: true,
                 operator: "or/and",
@@ -232,56 +259,64 @@ var EncyclopediaSpells = {
                         id: "forAttack",
                         label: {
                             'fr': "Attaque",
-                            'en': "Attack"
+                            'en': "Attack",
+                            'it': "Attacco"
                         }
                     },
                     {
                         id: "forFight",
                         label: {
                             'fr': "Dé de combat",
-                            'en': "Fight die"
+                            'en': "Fight die",
+                            'it': "Combattimento"
                         }
                     },
                     {
                         id: "forDefense",
                         label: {
                             'fr': "Dé de défense",
-                            'en': "Defense die"
+                            'en': "Defense die",
+                            'it': "Difesa"
                         }
                     },
                     {
                         id: "forMove",
                         label: {
                             'fr': "Déplacement",
-                            'en': "Move"
+                            'en': "Move",
+                            'it': "Movimento"
                         }
                     },
                     {
                         id: "forManipulation",
                         label: {
                             'fr': "Manipulation",
-                            'en': "Manipulation"
+                            'en': "Manipulation",
+                            'it': "Manipolazione"
                         }
                     },
                     {
                         id: "forSkill",
                         label: {
                             'fr': "Compétence",
-                            'en': "Skill"
+                            'en': "Skill",
+                            'it': "Abilità"
                         }
                     },
                     {
                         id: "forRange",
                         label: {
                             'fr': "A distance",
-                            'en': "Range"
+                            'en': "Range",
+                            'it': "Distanza"
                         }
                     },
                     {
                         id: "forEnergy",
                         label: {
                             'fr': "Gemmes",
-                            'en': "Gems"
+                            'en': "Gems",
+                            'it': "Gemme"
                         }
                     }
                 ],
@@ -301,14 +336,16 @@ var EncyclopediaSpells = {
                 id:'empty',
                 label: {
                     'fr': "Cartes",
-                    'en': "Cards"
+                    'en': "Cards",
+                    'it': "Carte"
                 },
                 values: [
                     {
                         id: "no",
                         label: {
                             'fr': "Remplies",
-                            'en': "Filled"
+                            'en': "Filled",
+                            'it': "Piene"
                         },
                         defaults: true
                     },
@@ -316,7 +353,8 @@ var EncyclopediaSpells = {
                         id: "yes",
                         label: {
                             'fr': "Vierges",
-                            'en': "Blank"
+                            'en': "Blank",
+                            'it': "Vuote"
                         }
                     }
                 ],
@@ -327,43 +365,43 @@ var EncyclopediaSpells = {
             }
         ]
     },
-    
-    init: function() 
+
+    init: function()
     {
         $("#encyclopedia-spell").append(Encyclopedia.displaySearchEngine(EncyclopediaSpells._facets, "EncyclopediaSpells.updateDisplaySpells()", "es"));
         $("#encyclopedia-spell").append("<div id='encyclopedia-spell-wrapper'></div>");
         EncyclopediaSpells.displaySpells();
     },
-    
+
     displaySpells: function()
     {
         var spells = "";
-        
+
         Encyclopedia.spells.list.sort(function(s1, s2) { return s1.title[Language].toLowerCase().localeCompare(s2.title[Language].toLowerCase()); })
-        
+
         var spellList = Encyclopedia.spells.list;
         var ignoredPrevious = 0;
         for (var i in spellList)
         {
             i = parseInt(i);
             var spell = spellList[i];
-                        
+
             if (i < spellList.length - 1
                 && spellList[i+1].id == spell.id)
             {
                 ignoredPrevious++;
                 continue;
             }
-            
+
             spell = spellList[i - ignoredPrevious];
 
             spells += "<a id='spell-" + spell.id + "' href='javascript:void(0)' data-count='" + (ignoredPrevious+1) + "' onclick='EncyclopediaSpells.openSpell(\"" + spell.id + "\")'>";
             spells += CardSpell._cardCode(EncyclopediaSpells._convertSpellToStudio(spell));
             spells += "</a>";
-            
+
             ignoredPrevious = 0;
         }
-        
+
         $("#encyclopedia-spell-wrapper").html(spells);
         EncyclopediaSpells.updateDisplaySpells();
     },
@@ -371,27 +409,27 @@ var EncyclopediaSpells = {
     updateDisplaySpells: function()
     {
         Encyclopedia.updateFacets(EncyclopediaSpells._facets, Encyclopedia.spells.list, "es");
-        
+
         $("#encyclopedia-spell-wrapper a").hide();
-        
+
         var spellList = Encyclopedia.spells.list.filter(Encyclopedia.filter(EncyclopediaSpells._facets, "es"));
         var ignoredPrevious = 0;
         for (var i in spellList)
         {
             i = parseInt(i);
             var spell = spellList[i];
-                        
+
             if (i < spellList.length - 1
                 && spellList[i+1].id == spell.id)
             {
                 ignoredPrevious++;
                 continue;
             }
-            
+
             spell = spellList[i - ignoredPrevious];
-            
+
             $("#spell-" + spell.id).attr('data-count', ignoredPrevious+1).show();
-            
+
             ignoredPrevious = 0;
         }
     },
@@ -416,7 +454,7 @@ var EncyclopediaSpells = {
             reaction: spell.reaction
         };
     },
-    
+
     _findSpellsById: function(id)
     {
         var spells = [];
@@ -430,12 +468,12 @@ var EncyclopediaSpells = {
         }
         return spells;
     },
-    
+
     _findSpellsBySkill: function(id)
     {
         var spells = [];
         var spellsIds = {};
-        
+
         for (var i in Encyclopedia.spells.list)
         {
             var spell = Encyclopedia.spells.list[i];
@@ -445,26 +483,26 @@ var EncyclopediaSpells = {
                 spellsIds[id] = true;
             }
         }
-        
+
         return spells;
     },
 
-    
+
     onShow: function() {
     },
-    
+
     onHide: function() {
     },
-    
+
     openSpell: function(id) {
         var spells = EncyclopediaSpells._findSpellsById(id);
-        
+
         var originsCount = {};
-        
+
         for (var e in spells)
         {
             var spell = spells[e];
-            
+
             var origins = Encyclopedia._removeExtraExpansion(spell.origins.slice());
             for (var i in origins)
             {
@@ -472,24 +510,24 @@ var EncyclopediaSpells = {
                 originsCount[origin] = originsCount[origin] ? originsCount[origin]+1 : 1;
             }
         }
-        
+
         var originString = "";
         for (var i in originsCount)
         {
             if (originString) originString += " " + EncyclopediaSpells._i18n[Language].fromAnd + " ";
             originString += Encyclopedia._getOrigin(i) + " (" + originsCount[i] + " " + (originsCount[i] == 1 ? EncyclopediaSpells._i18n[Language].card : EncyclopediaSpells._i18n[Language].cards) + ")";
         }
-        
+
         var spell = spells[0];
         Nav.dialog(spell.title[Language],
-            "<div class='spelldetails'>" 
+            "<div class='spelldetails'>"
                 + CardSpell._cardCode(EncyclopediaSpells._convertSpellToStudio(spell))
                 + "<div class='minwidth'></div>"
                 + "<div class='from'>" + EncyclopediaSpells._i18n[Language].from + " "
                     + originString
                 + "</div>"
-                + ((spell.clarification && spell.clarification[Language]) ?"<div class='clarification'>" + EncyclopediaSpells._i18n[Language].clarification + " " + spell.clarification[Language] + "</div>" : "") 
-                + (spell.forSkill ? "<div class='skill'>" + EncyclopediaSpells._i18n[Language].skill + " " + ConanRules._linkToSkill(spell.forSkill, true) + "</div>" : "") 
+                + ((spell.clarification && spell.clarification[Language]) ?"<div class='clarification'>" + EncyclopediaSpells._i18n[Language].clarification + " " + spell.clarification[Language] + "</div>" : "")
+                + (spell.forSkill ? "<div class='skill'>" + EncyclopediaSpells._i18n[Language].skill + " " + ConanRules._linkToSkill(spell.forSkill, true) + "</div>" : "")
             + "</div>",
             null,
             [{
@@ -499,28 +537,28 @@ var EncyclopediaSpells = {
             }]
         );
     },
-    
+
     _transfert: function(id) {
         if (confirm(EncyclopediaSpells._i18n[Language].transfertConfirm))
         {
             var spell = EncyclopediaSpells._findSpellsById(id)[0];
             var studioSpell = EncyclopediaSpells._convertSpellToStudio(spell);
-            
+
             var cards = JSON.parse(localStorage.getItem("StudioSpellCards")) || [];
             cards.push(studioSpell);
             localStorage.setItem("StudioSpellCards", JSON.stringify(cards));
-            
+
             CardSpell._displayCards();
-            
+
             Nav.switchTo($("*[for=studio]")[0]);
             $("#studio .nav-wrapper").slick('slickGoTo', $("#spell").index());
             $("#spell").animate({ scrollTop: $('#spell > *:last()').position().top },500);
-            
+
             ConanAbout.warnToast(EncyclopediaSpells._i18n[Language].transfertOK)
             Nav.closeDialog(true);
         }
     },
-    
+
     _linkToSpell: function(id) {
         return "<a href='javascript:void(0)' onclick='EncyclopediaSpells.openSpell(\"" + id + "\")'>" + EncyclopediaSpells._findSpellsById(id)[0].title[Language] + "</a>";
     }

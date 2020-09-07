@@ -95,29 +95,77 @@ var CardEquipment = {
             'header1bis': "Set a picture",
             'header2': "Preview the final result",
             'copyright': "Based on the PSD file proposed by <a href='https://the-overlord.com/index.php?/profile/9-genesteal28/'>@genesteal28</a> and converted at the GIMP format by <a href='https://the-overlord.com/index.php?/profile/31-jabbathehatt/'>@jabbathehatt</a> and <a href='https://the-overlord.com/index.php?/profile/1-sentma/'>SentMa</a> for the back of the card."
-        }
+        },
+        'it': {
+            'tab': "Equip<wbr/>aggiamento",
+            'nocard': "Al momento non hai carte. ",
+            'nocard2': "Clicca + sulla barra degli strumenti per aggiungerne una",
+            'printnocard': "Al momento non hai carte",
+            'newcard': "Crea una nuova carta",
+            'print': "Stampa carte",
+            'editcard': "Modifica una carta",
+            'save': "Salva",
+            'remove': "Cancella",
+            'removeConfirm': "Sei sicuro di voler cancellare questa carta?",
+            'name': "Nome",
+            'namePh': "?",
+            'weight': "Ingombro",
+            'weightPh': "?",
+            'movement': "Movimento",
+            'movementPh': "?",
+            'skills': "Abilità",
+            'skillsPh': "?",
+            'skillsNone': "Nessuna",
+            'meleeAttack': "Attacco in mischia",
+            'manipulation': "Manipolazione",
+            'manipulationExplosive': "Esplosiva",
+            'rangedAttack': "Attacco a distanza",
+            'rangedAttackThrowable': "Lanciabile",
+            'activeDefense': "Difesa",
+            'passiveDefense': "Armatura",
+            'image': "Immagine (sfondo trasparente)",
+            'imagePh': "Inserisci l'URL dell'immagine (http://...)",
+            'imagelocation': "Posizione",
+            'imagelocationPh': "0",
+            'imagezoom': "Zoom",
+            'imagezoomPh': "0",
+            'imagerotation': "Rotazione",
+            'imagerotationPh': "0",
+            'imageatfront': "Immagine davanti alle icone",
+            'diceNone': "Nessuno",
+            'diceRed': "Rosso",
+            'diceRedReroll': "Rosso \uf01e",
+            'diceOrange': "Arancione",
+            'diceOrangeReroll': "Arancione \uf01e",
+            'diceYellow': "Giallo",
+            'diceYellowReroll': "Giallo \uf01e",
+            'header1': "Completa le informazioni sulla carta",
+            'header1bis': "Scegli un'immagine",
+            'header2': "Anteprima risultato finale",
+            'copyright': "Basato sui file PSD di <a href='https://the-overlord.com/index.php?/profile/9-genesteal28/'>@genesteal28</a> e convertiti nel formato GIMP da <a href='https://the-overlord.com/index.php?/profile/31-jabbathehatt/'>@jabbathehatt</a> e <a href='https://the-overlord.com/index.php?/profile/1-sentma/'>SentMa</a> per il retro delle carte."
+              }
     },
-    
+
     preinit: function() {
         ConanStudio._slides.push({   label: CardEquipment._i18n[Language].tab, id: "equipment", onShow: CardEquipment.onShow,  onHide: CardEquipment.onHide });
     },
-    
+
     init: function() {
         Nav.addAction("studio", CardEquipment._i18n[Language].newcard, "equipment-icon-add", "equipment-add", CardEquipment.add);
         Nav.addAction("studio", CardEquipment._i18n[Language].print, "equipment-icon-print", "equipment-print", ConanStudio.printCards);
         CardEquipment.onHide();
         CardEquipment._displayCards();
     },
-    
+
     _displayCards: function()
     {
         $("#equipment").html(CardEquipment._getDisplayCardsCode(true));
     },
-    
+
     _getDisplayCardsCode: function(withEditLink)
     {
         var html = "";
-        
+
         var cards = JSON.parse(localStorage.getItem("StudioEquipmentCards")) || [];
         if (cards.length > 0)
         {
@@ -129,12 +177,12 @@ var CardEquipment = {
                     prefix = "<a href='javascript:void(0)' onclick='CardEquipment.add(JSON.parse(localStorage.getItem(\"StudioEquipmentCards\"))[" + i + "])'>";
                     suffix = "</a>";
                 }
-                else 
+                else
                 {
                     prefix = "<input type='checkbox' id='equipment-" + i + "' name='equipment' data-index='" + i + "' onchange=\"$('#equipment-back-" + i + "').toggleClass('invisible');\"/><label for='equipment-" + i + "'>";
                     suffix = "</label>";
                 }
-                
+
                 html += prefix + "<div class='printoverflow'>" + CardEquipment._cardCode(cards[i]) + "</div>" + suffix;
             }
         }
@@ -142,7 +190,7 @@ var CardEquipment = {
         {
             html += "<div class=\"nocards\">" + CardEquipment._i18n[Language].nocard + (withEditLink !== false ? CardEquipment._i18n[Language].nocard2 : '') + "</div>";
         }
-        
+
         if (!withEditLink)
         {
             for (var i in cards)
@@ -150,29 +198,29 @@ var CardEquipment = {
                 html += "<div id=\"equipment-back-" + i + "\"  class='printoverflow back invisible'><img src=\"studio/card_equipment/img/back.png?version=" + Version + "\"/></div>"
             }
         }
-        
+
         return html;
     },
-    
+
     onShow: function() {
         Nav.showAction("studio", "equipment-add");
         Nav.showAction("studio", "equipment-print");
     },
-    
+
     onHide: function() {
         Nav.hideAction("studio", "equipment-add");
         Nav.hideAction("studio", "equipment-print");
     },
-    
+
     _cardCode: function(card) {
         var code = "<div class=\"equipement card\">"
                 + "<picture class=\"background\">"
                     + "<source media=\"print\" srcset=\"studio/card_equipment/img/background_hd.png?version=" + Version + "\"/>"
                     + "<img src=\"studio/card_equipment/img/background.png?version=" + Version + "\"/>"
                 + "</picture>";
-                
-        var imageCode = "<div class=\"image\"><img loading=\"lazy\" src=\"" + card.image + "\" style=\"left: " + card.imagelocation.x + "%; top: " + card.imagelocation.y + "%; width: " + card.imagezoom + "%; transform: translate(-50%, -50%) rotate(" + card.imagerotation + "deg)\"/></div>"; 
-                
+
+        var imageCode = "<div class=\"image\"><img loading=\"lazy\" src=\"" + card.image + "\" style=\"left: " + card.imagelocation.x + "%; top: " + card.imagelocation.y + "%; width: " + card.imagezoom + "%; transform: translate(-50%, -50%) rotate(" + card.imagerotation + "deg)\"/></div>";
+
         if (card.image && !card.imageatfront)
         {
             code += imageCode;
@@ -183,7 +231,7 @@ var CardEquipment = {
                code += "<img class=\"background-name\" src=\"studio/card_equipment/img/name-background.png?version=" + Version + "\"/>"
                     + "<div class=\"name\">" + card.name + "</div>";
         }
-                    
+
         if (card.encumbrance || card.encumbrance === "0")
         {
             code += "<img class=\"background-encumbrance\" src=\"studio/card_equipment/img/weight.png?version=" + Version + "\"/>"
@@ -246,7 +294,7 @@ var CardEquipment = {
                    + "</div>";
             level++;
         }
-        
+
         if (card.movement)
         {
             code += "<div class=\"movement level" + level + "\">"
@@ -255,18 +303,18 @@ var CardEquipment = {
                    + "</div>";
             level++;
         }
-        
+
         if (card.skills && card.skills[0] != 'none')
         {
             code += "<div class=\"skills-separator level" + level + "\">"
                      + "<img class=\"background-separator\" src=\"studio/card_equipment/img/separator.png?version=" + Version + "\"/>"
                    + "</div>";
-    
+
             code += "<div class=\"skills level" + level + "\">"
                      + "<img class=\"background-skills\" src=\"" + CardEquipment._getSkillImage(card.skills[0]) + "?version=" + Version + "\"/>"
                    + "</div>";
             level++;
-            
+
             if (card.skills && card.skills[1] != 'none')
             {
                 code += "<div class=\"skills level" + level + "\">"
@@ -284,7 +332,7 @@ var CardEquipment = {
         code += "</div>";
         return code;
     },
-    
+
     _getSkillImage: function(id)
     {
         for (var i in Encyclopedia.skills.list)
@@ -298,7 +346,7 @@ var CardEquipment = {
         console.warn("The skill " + id + " is not referenced");
         return undefined;
     },
-    
+
     add: function(card)
     {
         var actions = [{
@@ -314,18 +362,18 @@ var CardEquipment = {
                 fn: "CardEquipment._remove();"
             });
         }
-        
+
         var dlabel = card == undefined ? CardEquipment._i18n[Language].newcard : CardEquipment._i18n[Language].editcard;
 
         function _skills()
         {
             var s = "";
-            
-            
+
+
             for (var i in Encyclopedia.skills.types)
             {
                 var type = Encyclopedia.skills.types[i];
-                
+
                 s += "<optgroup label=\"" + type.title[Language] + "\">";
 
                 for (var j in Encyclopedia.skills.list)
@@ -340,10 +388,10 @@ var CardEquipment = {
 
             return s;
         }
-        
 
-        
-        Nav.dialog(dlabel, 
+
+
+        Nav.dialog(dlabel,
             "<div class=\"eqcol\">"
             + "<div class=\"equipment\">"
                 + "<h1>" + CardEquipment._i18n[Language].header1 + "</h1>"
@@ -424,7 +472,7 @@ var CardEquipment = {
             null,
             actions
         );
-        
+
         card = card || {
             id: Math.random(),
             name: "",
@@ -441,27 +489,27 @@ var CardEquipment = {
             imagezoom: "100",
             imagerotation: "0"
         };
-        
+
         $("#eqmelee,#eqmelee2,#eqactive,#eqactive2,#eqpassive,#eqpassive2,#eqranged,#eqranged2,#eqmanipulation,#eqmanipulation2").each (function (i) { // ,#eqskills,#eqskills2
             var k = $(this);
             k.attr("data-value", "")
-                .selectmenu({ appendTo: k.parent(), width: k.is(".dice") ? 40 : 58, change: function(event, selection) { 
+                .selectmenu({ appendTo: k.parent(), width: k.is(".dice") ? 40 : 58, change: function(event, selection) {
                     $(this).attr("data-value", selection.item.value);
                     CardEquipment._preview();
                 }});
         });
         CardEquipment._card2form(card);
-        
+
         CardEquipment._preview();
     },
-    
+
     _preview: function()
     {
         var card = CardEquipment._form2card();
         var code = CardEquipment._cardCode(card);
         $(".dialog .preview").html(code);
     },
-    
+
     _form2card: function()
     {
         return {
@@ -515,10 +563,10 @@ var CardEquipment = {
         if (confirm(CardEquipment._i18n[Language].removeConfirm))
         {
             var card = CardEquipment._form2card();
-            
+
             var cards = JSON.parse(localStorage.getItem("StudioEquipmentCards")) || [];
             var newCards = [];
-    
+
             for (var c in cards)
             {
                 if (cards[c].id == card.id)
@@ -530,19 +578,19 @@ var CardEquipment = {
                     newCards.push(cards[c]);
                 }
             }
-            
+
             localStorage.setItem("StudioEquipmentCards", JSON.stringify(newCards));
             CardEquipment._displayCards();
             Nav.closeDialog();
         }
     },
-    
+
     _save: function()
     {
         var card = CardEquipment._form2card();
-        
+
         $(".dialog .field.error").removeClass("error");
-        
+
         var errors = 0;
         if (!card.name)
         {
@@ -551,12 +599,12 @@ var CardEquipment = {
         }
         if (errors > 0)
         {
-            return;    
+            return;
         }
-        
+
         var cards = JSON.parse(localStorage.getItem("StudioEquipmentCards")) || [];
         var newCards = [];
-        
+
         var done = false;
         for (var c in cards)
         {
@@ -574,13 +622,13 @@ var CardEquipment = {
         {
             newCards.push(card);
         }
-        
+
         localStorage.setItem("StudioEquipmentCards", JSON.stringify(newCards));
         CardEquipment._displayCards();
         Nav.closeDialog();
     },
-    
-    copyright: function() 
+
+    copyright: function()
     {
         return "<h3>" + CardEquipment._i18n[Language].tab + "</h3>"
             + "<p>" + CardEquipment._i18n[Language].copyright + "</p>"

@@ -60,7 +60,7 @@ var HeroSheet = {
             'save': "Save",
             'remove': "Delete",
             'removeConfirm': "Are you sure that you want to delete this sheet?",
-            
+
             'name': "Name",
             'namePh': "?",
             'subname': "Qualifier",
@@ -95,29 +95,77 @@ var HeroSheet = {
             'header1bis': "Set a picture",
             'header2': "Preview the final result",
             'copyright': "Based on the PSD file proposed by <a href='https://the-overlord.com/index.php?/profile/13-roolz/'>@Roolz</a>/<a href='https://the-overlord.com/index.php?/profile/4-doucefeuille/'>@Doucefeuille</a> and converted at the GIMP format by <a href='https://the-overlord.com/index.php?/profile/31-jabbathehatt/'>@jabbathehatt</a>."
+        },
+        'it': {
+            'tab': "Eroi",
+            'nocard': "Al momento non hai schede-Eroe. ",
+            'nocard2': " Clicca + sulla barra degli strumenti per crearne una",
+            'printnocard': "Non hai schede da stampare al momento",
+            'newcard': "Crea una nuova scheda",
+            'print': "Stampa le schede",
+            'printHint': "Una scheda eroe misura 21cm (8.3\") in larghezza. Se vuoi stampare con gli indicatori di taglio, devi stampare in orizzontale e solo una scheda alla volta. Se vuoi stampare senza gli indicatori di taglio, puoi stampare fino a 2 schede alla volta con l'orientamento del foglio in verticale.",
+            'editcard': "Modifica una carta",
+            'save': "Salva",
+            'remove': "Cancella",
+            'removeConfirm': "Sei sicuro che vuoi cancellare questa scheda?",
+
+            'name': "Nome",
+            'namePh': "?",
+            'subname': "Definizione",
+            'subnamePh': "?",
+            'gems': "Gemme",
+            'gemsPh': "?",
+            'encumbrance': "Ingombro",
+            'encumbrancePh': "?",
+            'encumbrancemov1Ph': "?",
+            'encumbrancemov2Ph': "?",
+            'caracs': "Caratteristiche",
+            'caracPh': "?",
+            'skills': "Abilità",
+            'skillsPh': "-",
+            'skillsNone' : "Nessuna",
+            'diceRed': "Rosso",
+            'diceRedReroll': "Rosso \uf01e",
+            'diceOrange': "Arancione",
+            'diceOrangeReroll': "Arancione \uf01e",
+            'diceYellow': "Giallo",
+            'diceYellowReroll': "Giallo \uf01e",
+            'image': "Immagine (sfondo trasparente)",
+            'imagePh': "Inserisci l'URL dell'immagine (http://...)",
+            'imagelocation': "Posizione",
+            'imagelocationPh': "0",
+            'imagezoom': "Zoom",
+            'imagezoomPh': "0",
+            'imagerotation': "Rotazione",
+            'imagerotationPh': "0",
+
+            'header1': "Completa le informazioni della scheda",
+            'header1bis': "Scegli un'immagine",
+            'header2': "Anteprima del risultato finale",
+            'copyright': "Basati sui file PSD di <a href='https://the-overlord.com/index.php?/profile/13-roolz/'>@Roolz</a>/<a href='https://the-overlord.com/index.php?/profile/4-doucefeuille/'>@Doucefeuille</a> e convertiti nel formato GIMP da <a href='https://the-overlord.com/index.php?/profile/31-jabbathehatt/'>@jabbathehatt</a>."
         }
     },
-    
+
     preinit: function() {
         ConanStudio._slides.push({   label: HeroSheet._i18n[Language].tab, id: "hero", onShow: HeroSheet.onShow,  onHide: HeroSheet.onHide });
     },
-    
+
     init: function() {
         Nav.addAction("studio", HeroSheet._i18n[Language].newcard, "hero-icon-add", "hero-add", HeroSheet.add);
         Nav.addAction("studio", HeroSheet._i18n[Language].print, "hero-icon-print", "hero-print", ConanStudio.printCards);
         HeroSheet.onHide();
         HeroSheet._displayCards();
     },
-    
+
     _displayCards: function()
     {
         $("#hero").html(HeroSheet._getDisplayCardsCode(true));
     },
-    
+
     _getDisplayCardsCode: function(withEditLink)
     {
         var html = "";
-        
+
         var cards = JSON.parse(localStorage.getItem("StudioHeroSheets")) || [];
         if (cards.length > 0)
         {
@@ -129,12 +177,12 @@ var HeroSheet = {
                     prefix = "<a href='javascript:void(0)' onclick='HeroSheet.add(JSON.parse(localStorage.getItem(\"StudioHeroSheets\"))[" + i + "])'>";
                     suffix = "</a>";
                 }
-                else 
+                else
                 {
                     prefix = "<input type='checkbox' id='herosheet-" + i + "' name='herosheet' data-index='" + i + "' onchange=\"$('#herosheet-back-" + i + "').toggleClass('invisible');\"/><label for='herosheet-" + i + "'>";
                     suffix = "</label>";
                 }
-                
+
                 html += prefix + "<div class='printoverflow'>" + HeroSheet._sheetCode(cards[i]) + "</div>" + suffix;
             }
         }
@@ -142,7 +190,7 @@ var HeroSheet = {
         {
             html += "<div class=\"nocards\">" + HeroSheet._i18n[Language].nocard + (withEditLink !== false ? HeroSheet._i18n[Language].nocard2 : '') + "</div>";
         }
-        
+
         if (!withEditLink)
         {
             for (var i in cards)
@@ -150,20 +198,20 @@ var HeroSheet = {
                 html += "<div class='printoverflow back invisible' id='herosheet-back-" + i + "'>" + HeroSheet._sheetCode(cards[i]) + "</div>";
             }
         }
-        
+
         return html;
     },
-    
+
     onShow: function() {
         Nav.showAction("studio", "hero-add");
         Nav.showAction("studio", "hero-print");
     },
-    
+
     onHide: function() {
         Nav.hideAction("studio", "hero-add");
         Nav.hideAction("studio", "hero-print");
     },
-    
+
     _sheetCode: function(sheet) {
         var code = "<div class=\"herosheet sheet\">";
 
@@ -171,12 +219,12 @@ var HeroSheet = {
                     + "<source media=\"print\" srcset=\"studio/hero_sheet/img/background_layer_1hd.png?version=" + Version + "\"/>"
                     + "<img src=\"studio/hero_sheet/img/background_layer_1.png?version=" + Version + "\"/>"
                 + "</picture>";
-        
+
         if (sheet.image)
         {
             code += "<div class=\"image\"><img" + LazyImage + " src=\"" + sheet.image + "\" style=\"left: " + sheet.imagelocation.x + "%; top: " + sheet.imagelocation.y + "%; height: " + sheet.imagezoom + "%; transform: translate(0%, -50%) rotate(" + sheet.imagerotation + "deg)\"/></div>";
         }
-        
+
         code += "<picture class=\"background-l3\">"
                     + "<source media=\"print\" srcset=\"studio/hero_sheet/img/background_layer_3hd.png?version=" + Version + "\"/>"
                     + "<img src=\"studio/hero_sheet/img/background_layer_3.png?version=" + Version + "\"/>"
@@ -201,7 +249,7 @@ var HeroSheet = {
             {
                 var skill = sheet.skills[s];
                 var encyclopediaSkill = ConanRules._findSkillById(skill.id);
-                
+
                 code += "<div class=\"skill\">";
                     code += "<img class=\"skill\" src=\"" + encyclopediaSkill.image + "?version=" + Version + "\"/>";
                     if (skill.exertion)
@@ -211,12 +259,12 @@ var HeroSheet = {
                     }
                 code += "</div>";
             }
-            
+
             code += "<div class=\"encumbrance_movement-1\">" + sheet.encumbrance_movement[0] + "</div>";
             code += "<div class=\"encumbrance_movement-2\">" + sheet.encumbrance_movement[1] + "</div>";
         }
         code += "</div>";
-        
+
         code += "<div class=\"base melee\">";
         code +=     "<div class=\"exertion\">" + sheet.melee.exertion + "</div>";
         code +=     "<div class=\"dice\"><img src=\"studio/hero_sheet/img/dice_" + sheet.melee.dice + ".png?version=" + Version + "\"/></div>";
@@ -236,11 +284,11 @@ var HeroSheet = {
         code +=     "<div class=\"exertion\">" + sheet.manipulation.exertion + "</div>";
         code +=     "<div class=\"dice\"><img src=\"studio/hero_sheet/img/dice_" + sheet.manipulation.dice + ".png?version=" + Version + "\"/></div>";
         code += "</div>";
-        
+
         code += "</div>";
         return code;
     },
-    
+
     add: function(sheet)
     {
         var actions = [{
@@ -256,9 +304,9 @@ var HeroSheet = {
                 fn: "HeroSheet._remove();"
             });
         }
-        
+
         var dlabel = sheet == undefined ? HeroSheet._i18n[Language].newcard : HeroSheet._i18n[Language].editcard;
-        Nav.dialog(dlabel, 
+        Nav.dialog(dlabel,
             "<div class=\"hscol\">"
             + "<div class=\"sheet\">"
                 + "<h1>" + HeroSheet._i18n[Language].header1 + "</h1>"
@@ -358,16 +406,16 @@ var HeroSheet = {
             null,
             actions
         );
-        
+
         function _skills()
         {
             var s = "";
-            
-            
+
+
             for (var i in Encyclopedia.skills.types)
             {
                 var type = Encyclopedia.skills.types[i];
-                
+
                 s += "<optgroup label=\"" + type.title[Language] + "\">";
 
                 for (var j in Encyclopedia.skills.list)
@@ -383,51 +431,51 @@ var HeroSheet = {
             return s;
         }
 
-        
+
         sheet = sheet || {
             id: Math.random(),
             name: "",
             subname: "",
-            
+
             image: "",
             imagelocation: {x: "0", y: "50"},
             imagezoom: "100",
             imagerotation: "0",
-            
+
             gem: 10,
             encumbrance: 10,
             encumbrance_movement: [8, 10],
-            
+
             melee: { "dice": "yellow", "exertion": 3 },
             ranged: { "dice": "yellow", "exertion": 3 },
             defense: { "dice": "yellow" },
             movement: { "base": 2, "exertion": 4 },
             manipulation: { "dice": "yellow", "exertion": 3 },
-            
+
             skills: []
         };
-        
-        $("#hscaracmeleedice, #hscaracrangeddice, #hscaracdefensedice, #hscaracmanipulationdice").each (function (i) { 
+
+        $("#hscaracmeleedice, #hscaracrangeddice, #hscaracdefensedice, #hscaracmanipulationdice").each (function (i) {
             var k = $(this);
             k.attr("data-value", "")
-                .selectmenu({ appendTo: k.parent(), width: k.is(".dice") ? 40 : 58, change: function(event, selection) { 
+                .selectmenu({ appendTo: k.parent(), width: k.is(".dice") ? 40 : 58, change: function(event, selection) {
                     $(this).attr("data-value", selection.item.value);
                     HeroSheet._preview();
                 }});
         });
 
         HeroSheet._sheet2form(sheet);
-        
+
         HeroSheet._preview();
     },
-        
+
     _preview: function()
     {
         var sheet = HeroSheet._form2sheet();
         var code = HeroSheet._sheetCode(sheet);
         $(".dialog .preview").html(code);
     },
-    
+
     _form2sheet: function()
     {
         var skills = [];
@@ -435,7 +483,7 @@ var HeroSheet = {
         {
             var id = $(".dialog select[name=sheetskills" + (i+1) + "]")[0].value;
             var exertion = parseInt($(".dialog input[name=sheetskillsexertion" + (i+1) + "]")[0].value || 0);
-            
+
             if (id != 'none')
             {
                 var skill = {id: id};
@@ -443,11 +491,11 @@ var HeroSheet = {
                 {
                     skill.exertion = exertion;
                 }
-                
+
                 skills.push(skill);
             }
         }
-        
+
         return {
             id: $(".dialog input[name=sheetpos]")[0].value,
             name: $(".dialog input[name=sheetname]")[0].value,
@@ -479,8 +527,8 @@ var HeroSheet = {
         $(".dialog input[name=sheetimagerotation]")[0].value = sheet.imagerotation;
         $(".dialog input[name=sheetgems]")[0].value = sheet.gem;
         $(".dialog input[name=sheetencumbrance]")[0].value = sheet.encumbrance;
-        $(".dialog input[name=sheetencumbrancemov1]")[0].value = sheet.encumbrance_movement[0]; 
-        $(".dialog input[name=sheetencumbrancemov2]")[0].value = sheet.encumbrance_movement[1]; 
+        $(".dialog input[name=sheetencumbrancemov1]")[0].value = sheet.encumbrance_movement[0];
+        $(".dialog input[name=sheetencumbrancemov2]")[0].value = sheet.encumbrance_movement[1];
         $(".dialog select[name=sheetmeleedice]")[0].value = sheet.melee.dice; $(".dialog select[name=sheetmeleedice]").attr("data-value",sheet.melee.dice);
         $(".dialog input[name=sheetmeleeexertion]")[0].value = sheet.melee.exertion;
         $(".dialog select[name=sheetrangeddice]")[0].value = sheet.ranged.dice; $(".dialog select[name=sheetrangeddice]").attr("data-value",sheet.ranged.dice);
@@ -502,10 +550,10 @@ var HeroSheet = {
         if (confirm(HeroSheet._i18n[Language].removeConfirm))
         {
             var sheet = HeroSheet._form2sheet();
-            
+
             var sheets = JSON.parse(localStorage.getItem("StudioHeroSheets")) || [];
             var newSheets = [];
-    
+
             for (var c in sheets)
             {
                 if (sheets[c].id == sheet.id)
@@ -517,19 +565,19 @@ var HeroSheet = {
                     newSheets.push(sheets[c]);
                 }
             }
-            
+
             localStorage.setItem("StudioHeroSheets", JSON.stringify(newSheets));
             HeroSheet._displayCards();
             Nav.closeDialog();
         }
     },
-    
+
      _save: function()
     {
         var sheet = HeroSheet._form2sheet();
-        
+
         $(".dialog .field.error").removeClass("error");
-        
+
         var errors = 0;
         if (!sheet.name)
         {
@@ -554,12 +602,12 @@ var HeroSheet = {
 
         if (errors > 0)
         {
-            return;    
+            return;
         }
-        
+
         var sheets = JSON.parse(localStorage.getItem("StudioHeroSheets")) || [];
         var newSheets = [];
-        
+
         var done = false;
         for (var c in sheets)
         {
@@ -577,13 +625,13 @@ var HeroSheet = {
         {
             newSheets.push(sheet);
         }
-        
+
         localStorage.setItem("StudioHeroSheets", JSON.stringify(newSheets));
         HeroSheet._displayCards();
         Nav.closeDialog();
     },
 
-    copyright: function() 
+    copyright: function()
     {
         return "<h3>" + HeroSheet._i18n[Language].tab + "</h3>"
             + "<p>" + HeroSheet._i18n[Language].copyright + "</p>"

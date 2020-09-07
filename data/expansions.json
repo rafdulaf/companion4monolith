@@ -4,42 +4,48 @@
             "id": "custom-box",
             "text": {
                 "fr": "Boîte de jeu",
-                "en": "Game box"
+                "en": "Game box",
+                "it": "Gioco base"
             },
             "single": true
         }, {
             "id": "regional",
             "text": {
                 "fr": "Extensions régionales",
-                "en": "Regional expansions"
+                "en": "Regional expansions",
+                "it": "Espansioni geografiche"
             },
             "single": false
         }, {
             "id": "other",
             "text": {
                 "fr": "Autres extensions",
-                "en": "Other expansions"
+                "en": "Other expansions",
+                "it": "Altre espansioni"
             },
             "single": false
         }, {
             "id": "books",
             "text": {
                 "fr": "Livres",
-                "en": "Books"
+                "en": "Books",
+                "it": "Libri"
             },
             "single": false
         }, {
             "id": "artists",
             "text": {
                 "fr": "Extensions d'artistes",
-                "en": "Artists expansions"
+                "en": "Artists expansions",
+                "it": "Espansioni VIP"
             },
             "single": false
         }, {
             "id": "decoration",
             "text": {
                 "fr": "Décors",
-                "en": "Scenery"
+                "en": "Scenery",
+                "it": "Accessori"
             },
             "single": false
         }
@@ -51,33 +57,39 @@
             "type": "custom-box",
             "title": {
                 "fr": "Boîte de base",
-                "en": "Core box"
+                "en": "Core box",
+                "it": "Gioco base"
             },
             "short": {
                 "fr": "Boîte de base",
-                "en": "Core box"
+                "en": "Core box",
+                "it": "Gioco base"
             }
         }, {
             "id": "stretchgoal",
             "type": "custom-box",
             "title": {
                 "fr": "Boîte de base étendue \"Barbarian\"",
-                "en": "\"Barbarian\" expanded core box"
+                "en": "\"Barbarian\" expanded core box",
+                "it": "\"Barbarian\" espande gioco base"
             },
             "short": {
                 "fr": "Boîte Barbarian",
-                "en": "Barbarian box"
+                "en": "Barbarian box",
+                "it": "Barbarian box"
             }
         }, {
             "id": "king",
             "type": "custom-box",
             "title": {
                 "fr": "Boîte de base étendue \"King\"",
-                "en": "\"King\" expanded core box"
+                "en": "\"King\" expanded core box",
+                "it": "\"King\" espande gioco base"
             },
             "short": {
                 "fr": "Boîte King",
-                "en": "King box"
+                "en": "King box",
+                "it": "King box"
             }
         }, 
         
@@ -86,33 +98,39 @@
             "type": "regional",
             "title": {
                 "fr": "Extension Stygie",
-                "en": "Stygia expansion"
+                "en": "Stygia expansion",
+                "it": "Stygia"
             },
             "short": {
                 "fr": "Stygie",
-                "en": "Stygia"
+                "en": "Stygia",
+                "it": "Stygia"
             }
         }, {
             "id": "nordheim",
             "type": "regional",
             "title": {
                 "fr": "Extension Nordheim",
-                "en": "Nordheim expansion"
+                "en": "Nordheim expansion",
+                "it": "Nordheim"
             },
             "short": {
                 "fr": "Nordheim",
-                "en": "Nordheim"
+                "en": "Nordheim",
+                "it": "Nordheim"
             }
         }, {
             "id": "khitai",
             "type": "regional",
             "title": {
                 "fr": "Extension Khitaï",
-                "en": "Khitaï expansion"
+                "en": "Khitaï expansion",
+                "it": "Khitai"
             },
             "short": {
                 "fr": "Khitaï",
-                "en": "Khitaï"
+                "en": "Khitaï",
+                "it": "Khitai"
             }
         }, 
         
@@ -121,121 +139,143 @@
             "type": "other",
             "title": {
                 "fr": "Arbalétriers",
-                "en": "Crossbowmen"
+                "en": "Crossbowmen",
+                "it": "Balestrieri"
             },
             "short": {
                 "fr": "Arbalétriers",
-                "en": "Crossbowmen"
+                "en": "Crossbowmen",
+                "it": "Balestrieri"
             }
         }, {
             "id": "blackdragons",
             "type": "other",
             "title": {
                 "fr": "Dragons Noirs",
-                "en": "Black dragons"
+                "en": "Black dragons",
+                "it": "Dragoni neri"
             },
             "short": {
                 "fr": "Dragons Noirs",
-                "en": "Black dragons"
+                "en": "Black dragons",
+                "it": "Dragoni neri"
             }
         }, {
             "id": "blackones",
             "type": "other",
             "title": {
                 "fr": "Hommes Noirs",
-                "en": "Black ones"
+                "en": "Black ones",
+                "it": "I Neri"
             },
             "short": {
                 "fr": "Hommes Noirs",
-                "en": "Black ones"
+                "en": "Black ones",
+                "it": "I Neri"
             }
         }, {
             "id": "kushwitchhunters",
             "type": "other",
             "title": {
                 "fr": "Chasseurs de sorcières Kushites",
-                "en": "Kushites witch-hunters"
+                "en": "Kushites witch-hunters",
+                "it": "Cacciatori di streghe kushiti"
             },
             "short": {
                 "fr": "Chasseurs de sorcières Kushites",
-                "en": "Kushites witch-hunters"
+                "en": "Kushites witch-hunters",
+                "it": "Cacciatori di streghe kushiti"
             }
         }, {
             "id": "valvan",
             "type": "other",
             "title": {
                 "fr": "Valkyrie Vanir",
-                "en": "Vanir Valkyrie"
+                "en": "Vanir Valkyrie",
+                "it": "Valchiria Vanir"
             },
             "short": {
                 "fr": "Valkyrie Vanir",
-                "en": "Vanir Valkyrie"
+                "en": "Vanir Valkyrie",
+                "it": "Valchiria Vanir"
             }
         }, {
             "id": "yoy",
             "type": "other",
             "title": {
                 "fr": "Yogah de Yag",
-                "en": "Yogah of Yag"
+                "en": "Yogah of Yag",
+                "it": "Yogah di Yag"
             },
             "short": {
                 "fr": "Yogah de Yag",
-                "en": "Yogah of Yag"
+                "en": "Yogah of Yag",
+                "it": "Yogah di Yag"
             }
         }, {
             "id": "baalpteor",
             "type": "other",
             "title": {
                 "fr": "Baal-Pteor",
-                "en": "Baal-Pteor"
+                "en": "Baal-Pteor",
+                "it": "Ball-Pteor"
             },
             "short": {
                 "fr": "Baal-Pteor",
-                "en": "Baal-Pteor"
+                "en": "Baal-Pteor",
+                "it": "Ball-Pteor"
             }
         }, {
             "id": "demonearth",
             "type": "other",
             "title": {
                 "fr": "Démon de la Terre",
-                "en": "Demon of the earth"
+                "en": "Demon of the earth",
+                "it": "Demone della Terra"
             },
             "short": {
                 "fr": "Démon de la Terre",
-                "en": "Demon of the earth"
+                "en": "Demon of the earth",
+                "it": "Demone della Terra"
             }
         }, {
             "id": "dragon",
             "type": "other",
             "title": {
                 "fr": "Dragon",
-                "en": "Dragon"
+                "en": "Dragon",
+                "it": "Drago"
             },
             "short": {
                 "fr": "Dragon",
-                "en": "Dragon"
+                "en": "Dragon",
+                "it": "Drago"
             }
         }, {
             "id": "giantwolves",
             "type": "other",
             "title": {
                 "fr": "Loups géants",
-                "en": "Giant wolves"
+                "en": "Giant wolves",
+                "it": "Lupi giganti"
             },
             "short": {
                 "fr": "Loups géants",
-                "en": "Giant wolves"
+                "en": "Giant wolves",
+                "it": "Lupi giganti"
             }
         }, {
             "id": "sabretoothtiger",
             "type": "other",
             "title": {
                 "fr": "Tigre à dents de sabre",
-                "en": "Sabretooth tiger"
+                "en": "Sabretooth tiger",
+                "it": "Tigre dai denti a sciabola"
             },
             "short": {
                 "fr": "Tigre à dents de sabre",
-                "en": "Sabretooth tiger"
+                "en": "Sabretooth tiger",
+                "it": "Tigre dai denti a sciabola"
             }
         }, 
         
@@ -244,22 +284,26 @@
             "type": "books",
             "title": {
                 "fr": "Livre de Campagne - La légende du diable d'Airain",
-                "en": "Campaign book - The Devil in Iron"
+                "en": "Campaign book - The Devil in Iron",
+                "it": "Campagna - Il Diavolo di ferro"
             },
             "short": {
                 "fr": "Livre de campagne",
-                "en": "Campaign book"
+                "en": "Campaign book",
+                "it": "Campagna"
             }
         }, {
             "id": "setbook",
             "type": "books",
             "title": {
                 "fr": "Livre de Set",
-                "en": "Book of Set"
+                "en": "Book of Set",
+                "it": "Libro di Set"
             },
             "short": {
                 "fr": "Livre de Set",
-                "en": "Book of Set"
+                "en": "Book of Set",
+                "it": "Libro di Set"
             }
         }, 
         
@@ -268,33 +312,39 @@
             "type": "artists",
             "title": {
                 "fr": "Xavier Colette Box",
-                "en": "Xavier Colette Box"
+                "en": "Xavier Colette Box",
+                "it": "Xavier Colette Box"
             },
             "short": {
                 "fr": "Xavier Colette Box",
-                "en": "Xavier Colette Box"
+                "en": "Xavier Colette Box",
+                "it": "Xavier Colette Box"
             }
         }, {
             "id": "bbox",
             "type": "artists",
             "title": {
                 "fr": "Brom Box",
-                "en": "Brom Box"
+                "en": "Brom Box",
+                "it": "Brom Box"
             },
             "short": {
                 "fr": "Brom Box",
-                "en": "Brom Box"
+                "en": "Brom Box",
+                "it": "Brom Box"
             }
         }, {
             "id": "ppbox",
             "type": "artists",
             "title": {
                 "fr": "Paolo Parente Box",
-                "en": "Paolo Parente Box"
+                "en": "Paolo Parente Box",
+                "it": "Paolo Parente Box"
             },
             "short": {
                 "fr": "Paolo Parente Box",
-                "en": "Paolo Parente Box"
+                "en": "Paolo Parente Box",
+                "it": "Paolo Parente Box"
             }
         }, 
         
@@ -303,22 +353,26 @@
             "type": "decoration",
             "title": {
                 "fr": "Pack de portes",
-                "en": "Doors pack"
+                "en": "Doors pack",
+                "it": "Porte"
             },
             "short": {
                 "fr": "Pack de portes",
-                "en": "Doors pack"
+                "en": "Doors pack",
+                "it": "Porte"
             }
         }, {
             "id": "adventurepack",
             "type": "decoration",
             "title": {
                 "fr": "Pack aventure",
-                "en": "Adventure pack"
+                "en": "Adventure pack",
+                "it": "Arredi"
             },
             "short": {
                 "fr": "Pack aventure",
-                "en": "Adventure pack"
+                "en": "Adventure pack",
+                "it": "Arredi"
             }
         }
     ]

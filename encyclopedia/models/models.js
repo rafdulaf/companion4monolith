@@ -21,46 +21,61 @@ var EncyclopediaModels = {
             'zoom': "Zoom",
             'print': "Print",
             'heroes': "Used by the heroes:"
+        },
+        'it': {
+            'tab': "Minia<wbr/>ture",
+            'from': "Disponibile in:",
+            'fromAnd': "<br/>e",
+            'model': "miniatura",
+            'models': "miniature",
+            'paintedBy': "Dipinta da: ",
+            'zoom': "Zoom",
+            'print': "Stampa",
+            'heroes': "Usata dagli Eroi:"
         }
     },
-    
+
     preinit: function()
     {
         Encyclopedia._slides.push({   label: EncyclopediaModels._i18n[Language].tab, id: "encyclopedia-models", onShow: EncyclopediaModels.onShow,  onHide: EncyclopediaModels.onHide });
-        
-        
+
+
         EncyclopediaModels._facets = [
             {
                 id: 'keyword',
                 label: {
                     'fr': "Mot-clé",
-                    'en': "Keyword"
+                    'en': "Keyword",
+                    'it': "Parola chiave"
                 },
                 filter: function(item, value)
                 {
                     return ConanRules._deemphasize(EncyclopediaModels._findModelNames(item)).indexOf(ConanRules._deemphasize(value)) != -1;
                 }
             },
-            
+
             {
                 id: 'expansions',
                 label: {
                     'fr': "Status",
-                    'en': "Status" 
+                    'en': "Status",
+                    'it': "Stato"
                 },
                 values: [
                     {
                         id: "yes",
                         label: {
                             'fr': "Possédées",
-                            'en': "Owned"
+                            'en': "Owned",
+                            'it': "Nella collezione"
                         }
                     },
                     {
                         id: "no",
                         label: {
                             'fr': "Manquantes",
-                            'en': "Missing"
+                            'en': "Missing",
+                            'it': "Mancante"
                         }
                     }
                 ],
@@ -69,20 +84,21 @@ var EncyclopediaModels = {
                     {
                         return true;
                     }
-                    else 
+                    else
                     {
-                        var hasExpansion = ConanAbout._hasExpansion(item.origins); 
+                        var hasExpansion = ConanAbout._hasExpansion(item.origins);
                         return hasExpansion && selectedValues[0] == 'yes'
                                 || !hasExpansion && selectedValues[0] == 'no'
                     }
                 }
             },
-            
+
             {
                 id: 'origins',
                 label: {
                     'fr': "Origine",
-                    'en': "Origin"
+                    'en': "Origin",
+                    'it': "Origine"
                 },
                 sort: true,
                 values: (function() {
@@ -90,7 +106,7 @@ var EncyclopediaModels = {
                     for (var i in Encyclopedia.expansions.types)
                     {
                         var type = Encyclopedia.expansions.types[i];
-                        
+
                         for (var j in Encyclopedia.expansions.list)
                         {
                             var expansion = Encyclopedia.expansions.list[j];
@@ -112,7 +128,7 @@ var EncyclopediaModels = {
                         var startRemove = false;
 
                         var type = Encyclopedia.expansions.types[i];
-                        
+
                         for (var j in Encyclopedia.expansions.list)
                         {
                             var expansion = Encyclopedia.expansions.list[j];
@@ -132,22 +148,22 @@ var EncyclopediaModels = {
                     return origins.filter(v => selectedValues.indexOf(v) != -1).length > 0;
                 }
             }
-        ]        
+        ]
     },
-    
-    init: function() 
+
+    init: function()
     {
         $("#encyclopedia-models").append(Encyclopedia.displaySearchEngine(EncyclopediaModels._facets, "EncyclopediaModels.updateDisplayModels()", "ems"));
         $("#encyclopedia-models").append("<div id='encyclopedia-models-wrapper'></div>");
         EncyclopediaModels.displayModels();
     },
-    
+
     displayModels: function()
     {
         var models = "";
-        
+
         Encyclopedia.models.list.sort(function(s1, s2) { return EncyclopediaModels._findModelNames(s1).toLowerCase().localeCompare(EncyclopediaModels._findModelNames(s2).toLowerCase()); })
-        
+
         var modelList = Encyclopedia.models.list;
         var ignoredPrevious = 0;
         for (var i in modelList)
@@ -161,29 +177,29 @@ var EncyclopediaModels = {
                 ignoredPrevious++;
                 continue;
             }
-            
+
             model = modelList[i - ignoredPrevious];
-            
+
             models += "<a id='model-" + model.id + "' href='javascript:void(0)' data-count='" + (ignoredPrevious+1) + "' onclick='EncyclopediaModels.openModel(\"" + model.id + "\")'>";
             models += "<div>";
             models += "<img src='" + model.thumb + "?version=" + Version + "'/>";
             models += "<span>" + EncyclopediaModels._findModelNames(model) + "</span>"
             models += "</div>";
             models += "</a>";
-            
+
             ignoredPrevious = 0;
         }
-        
+
         $("#encyclopedia-models-wrapper").html(models);
         EncyclopediaModels.updateDisplayModels();
     },
-    
+
     updateDisplayModels: function()
     {
         Encyclopedia.updateFacets(EncyclopediaModels._facets, Encyclopedia.models.list, "ems");
-        
+
         $("#encyclopedia-models-wrapper a").hide();
-        
+
         var modelList = Encyclopedia.models.list.filter(Encyclopedia.filter(EncyclopediaModels._facets, "ems"));
         var ignoredPrevious = 0;
         for (var i in modelList)
@@ -197,11 +213,11 @@ var EncyclopediaModels = {
                 ignoredPrevious++;
                 continue;
             }
-            
+
             model = modelList[i - ignoredPrevious];
-            
+
             $("#model-" + model.id).attr('data-count', ignoredPrevious+1).show();
-            
+
             ignoredPrevious = 0;
         }
     },
@@ -209,7 +225,7 @@ var EncyclopediaModels = {
     _findModelNames: function(model)
     {
         var names = [];
-        
+
         if (model)
         {
             for (var i in Encyclopedia.heroes.list)
@@ -226,11 +242,11 @@ var EncyclopediaModels = {
         
         return names.join(" / ") || ("'" + model.id + "'");
     },
-    
+
     _findModelsById: function(id)
     {
         var models = [];
-        
+
         for (var i in Encyclopedia.models.list)
         {
             var model = Encyclopedia.models.list[i];
@@ -239,17 +255,17 @@ var EncyclopediaModels = {
                 models.push(model);
             }
         }
-        
+
         return models;
     },
-    
-        
+
+
     onShow: function() {
     },
-    
+
     onHide: function() {
     },
-    
+
     openModel: function(id) {
         var models = EncyclopediaModels._findModelsById(id);
 
@@ -257,7 +273,7 @@ var EncyclopediaModels = {
         for (var e in models)
         {
             var model = models[e];
-            
+
             var origins = Encyclopedia._removeExtraExpansion(model.origins.slice());
             for (var i in origins)
             {
@@ -265,7 +281,7 @@ var EncyclopediaModels = {
                 originsCount[origin] = originsCount[origin] ? originsCount[origin]+1 : 1;
             }
         }
-        
+
         var originString = "";
         for (var i in originsCount)
         {
@@ -305,9 +321,9 @@ var EncyclopediaModels = {
             }
         }
         if (heroes) heroes = "<div class='heroes'>" + EncyclopediaModels._i18n[Language].heroes + " " + heroes + "</div>";
-         
+
         Nav.dialog(EncyclopediaModels._findModelNames(model) || "",
-            "<div class='modeldetails'>" 
+            "<div class='modeldetails'>"
                 + "<div class='from'>" + EncyclopediaModels._i18n[Language].from + " "
                     + originString
                 + "</div>"
@@ -327,16 +343,16 @@ var EncyclopediaModels = {
             }]
         );
     },
-    
+
     _zoom: function()
     {
         $(".modeldetails .photos").toggleClass("zoom");
     },
-    
+
     _linkToModel: function(id, image) {
         var model = EncyclopediaModels._findModelsById(id)[0];
         var name = EncyclopediaModels._findModelNames(model);
-        
+
         var s = "";
         if (model)
         {

@@ -21,6 +21,17 @@ var EncyclopediaEquipments = {
             'card': "copy",
             'cards': "copies",
             'skill': "Skill:"
+        },
+        'it': {
+            'tab': "Equip<wbr/>aggiamento",
+            'transfertToStudio': "Copia la carta nello Studio",
+            'transfertOK': "La carta è stata copiata nelle carte equipaggiamento dello Studio.",
+            'transfertConfirm': "Vuoi copiare la carta nello Studio per modificarla o stamparla?",
+            'from': "Disponibile in:",
+            'fromAnd': "e",
+            'card': "copia",
+            'cards': "copie",
+            'skill': "Abilità:"
         }
     },
     
@@ -33,7 +44,8 @@ var EncyclopediaEquipments = {
                 id: 'keyword',
                 label: {
                     'fr': "Mot-clé",
-                    'en': "Keyword"
+                    'en': "Keyword",
+                    'it': "Parola chiave"
                 },
                 filter: function(item, value)
                 {
@@ -45,21 +57,24 @@ var EncyclopediaEquipments = {
                 id: 'expansions',
                 label: {
                     'fr': "Status",
-                    'en': "Status" 
+                    'en': "Status",
+                    'it': "Stato"
                 },
                 values: [
                     {
                         id: "yes",
                         label: {
                             'fr': "Possédées",
-                            'en': "Owned"
+                            'en': "Owned",
+                            'it': "Nella collezione"
                         }
                     },
                     {
                         id: "no",
                         label: {
                             'fr': "Manquantes",
-                            'en': "Missing"
+                            'en': "Missing",
+                            'it': "Mancante"
                         }
                     }
                 ],
@@ -81,7 +96,8 @@ var EncyclopediaEquipments = {
                 id: 'origins',
                 label: {
                     'fr': "Origine",
-                    'en': "Origin"
+                    'en': "Origin",
+                    'it': "Origine"
                 },
                 sort: true,
                 values: (function() {
@@ -138,7 +154,8 @@ var EncyclopediaEquipments = {
                 id:'type',
                 label: {
                     'fr': "Type",
-                    'en': "Kind"
+                    'en': "Kind",
+                    'it': "Tipologia"
                 },
                 sort: true,
                 operator: "or/and",
@@ -147,63 +164,72 @@ var EncyclopediaEquipments = {
                         id: "melee",
                         label: {
                             'fr': "Corps-à-corps",
-                            'en': "Melee"
+                            'en': "Melee",
+                            'it': "Mischia"
                         }
                     },
                     {
                         id: "ranged",
                         label: {
                             'fr': "Distance",
-                            'en': "Ranged"
+                            'en': "Ranged",
+                            'it': "A Distanza"
                         }
                     },
                     {
                         id: "manipulation",
                         label: {
                             'fr': "Manipulation",
-                            'en': "Manipulation"
+                            'en': "Manipulation",
+                            'it': "Manipolazione"
                         }
                     },
                     {
                         id: "throwable",
                         label: {
                             'fr': "Lançable",
-                            'en': "Throwable"
+                            'en': "Throwable",
+                            'it': "Lanciabile"
                         }
                     },
                     {
                         id: "area",
                         label: {
                             'fr': "Zone",
-                            'en': "Area"
+                            'en': "Area",
+                            'it': "Area"
                         }
                     },
                     {
                         id: "guard",
                         label: {
                             'fr': "Défense active",
-                            'en': "Guard"
+                            'en': "Guard",
+                            'it': "Difesa"
                         }
                     },
                     {
                         id: "armor",
                         label: {
                             'fr': "Défense passive",
-                            'en': "Armor"
+                            'en': "Armor",
+                            'it': "Armatura"
                         }
                     },
                     {
                         id: "skill",
                         label: {
                             'fr': "Compétence",
-                            'en': "Skill"
+                            'en': "Skill",
+                            'it': "Abilità"
                         }
                     },
                     {
                         id: "other",
                         label: {
                             'fr': "Divers",
-                            'en': "Misc."
+                            'en': "Misc.",
+                            'it': "Altro"
                         }
                     }
                 ],
@@ -225,14 +251,16 @@ var EncyclopediaEquipments = {
                 id:'empty',
                 label: {
                     'fr': "Cartes",
-                    'en': "Cards"
+                    'en': "Cards",
+                    'it': "Carte"
                 },
                 values: [
                     {
                         id: "no",
                         label: {
                             'fr': "Remplies",
-                            'en': "Filled"
+                            'en': "Filled",
+                            'it': "Piene"
                         },
                         defaults: true
                     },
@@ -240,7 +268,8 @@ var EncyclopediaEquipments = {
                         id: "yes",
                         label: {
                             'fr': "Vierges",
-                            'en': "Blank"
+                            'en': "Blank",
+                            'it': "Vuote"
                         }
                     }
                 ],

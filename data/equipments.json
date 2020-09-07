@@ -4,7 +4,8 @@
             "id": "battle_axe",
             "title": {
                 "fr": "Hache de bataille",
-                "en": "Battle Axe"
+                "en": "Battle Axe",
+                "it": "Ascia da battaglia"
             },
             "encumbrance": "3",
             
@@ -22,7 +23,8 @@
             "id": "bossonian_bow",
             "title": {
                 "fr": "Arc bossonien",
-                "en": "Bossonian Bow"
+                "en": "Bossonian Bow",
+                "it": "Arco bossoniano"
             },
             "encumbrance": "2",
             
@@ -40,7 +42,8 @@
             "id": "dagger",
             "title": {
                 "fr": "Dague",
-                "en": "Dagger"
+                "en": "Dagger",
+                "it": "Pugnale"
             },
             "encumbrance": "1",
             
@@ -58,7 +61,8 @@
             "id": "dagger",
             "title": {
                 "fr": "Dague",
-                "en": "Dagger"
+                "en": "Dagger",
+                "it": "Pugnale"
             },
             "encumbrance": "1",
             
@@ -76,7 +80,8 @@
             "id": "conans_sword",
             "title": {
                 "fr": "Épée de Conan",
-                "en": "Conan’s Sword"
+                "en": "Conan’s Sword",
+                "it": "Spada di Conan"
             },
             "encumbrance": "2",
             
@@ -94,7 +99,8 @@
             "id": "conans_sword",
             "title": {
                 "fr": "Épée de Conan",
-                "en": "Conan’s Sword"
+                "en": "Conan’s Sword",
+                "it": "Spada di Conan"
             },
             "encumbrance": "2",
             
@@ -112,7 +118,8 @@
             "id": "crossbow",
             "title": {
                 "fr": "Arbalète",
-                "en": "Crossbow"
+                "en": "Crossbow",
+                "it": "Balestra"
             },
             "encumbrance": "3",
             
@@ -130,7 +137,8 @@
             "id": "explosive_orb",
             "title": {
                 "fr": "Orbe explosive",
-                "en": "Explosive Orb"
+                "en": "Explosive Orb",
+                "it": "Globo esplosivo"
             },
             "encumbrance": "1",
             
@@ -150,7 +158,8 @@
             "id": "explosive_orb",
             "title": {
                 "fr": "Orbe explosive",
-                "en": "Explosive Orb"
+                "en": "Explosive Orb",
+                "it": "Globo esplosivo"
             },
             "encumbrance": "1",
             
@@ -163,11 +172,13 @@
             "image": "data/equipments/img/explosive_orb.png",
             "origins": ["stretchgoal", "king"]
         },
+        
         {
             "id": "halberd",
             "title": {
                 "fr": "Hallebarde",
-                "en": "Halberd"
+                "en": "Halberd",
+                "it": "Alabarda"
             },
             "encumbrance": "3",
             
@@ -185,7 +196,8 @@
             "id": "javelin",
             "title": {
                 "fr": "Javelot",
-                "en": "Javelin"
+                "en": "Javelin",
+                "it": "Giavellotto"
             },
             "encumbrance": "1",
             
@@ -205,7 +217,8 @@
             "id": "kris",
             "title": {
                 "fr": "Kriss",
-                "en": "Kris"
+                "en": "Kris",
+                "it": "Kriss"
             },
             "encumbrance": "1",
             
@@ -223,7 +236,8 @@
             "id": "ornamental_spear",
             "title": {
                 "fr": "Lance d'ornement",
-                "en": "Ornamental Spear"
+                "en": "Ornamental Spear",
+                "it": "Lancia ornamentale"
             },
             "encumbrance": "2",
             
@@ -241,7 +255,8 @@
             "id": "parrying_dagger",
             "title": {
                 "fr": "Dague de parade",
-                "en": "Parrying Dagger"
+                "en": "Parrying Dagger",
+                "it": "Manosinistra"
             },
             "encumbrance": "1",
             
@@ -259,7 +274,8 @@
             "id": "parrying_dagger",
             "title": {
                 "fr": "Dague de parade",
-                "en": "Parrying Dagger"
+                "en": "Parrying Dagger",
+                "it": "Manosinistra"
             },
             "encumbrance": "1",
             
@@ -277,7 +293,8 @@
             "id": "sword",
             "title": {
                 "fr": "Épée",
-                "en": "Sword"
+                "en": "Sword",
+                "it": "Spada"
             },
             "encumbrance": "2",
             
@@ -295,7 +312,8 @@
             "id": "sword",
             "title": {
                 "fr": "Épée",
-                "en": "Sword"
+                "en": "Sword",
+                "it": "Spada"
             },
             "encumbrance": "2",
             
@@ -313,7 +331,8 @@
             "id": "sword",
             "title": {
                 "fr": "Épée",
-                "en": "Sword"
+                "en": "Sword",
+                "it": "Spada"
             },
             "encumbrance": "2",
             
@@ -331,7 +350,8 @@
             "id": "throwing_knives",
             "title": {
                 "fr": "Lames de lancer",
-                "en": "Throwing Knives"
+                "en": "Throwing Knives",
+                "it": "Coltelli da lancio"
             },
             "encumbrance": "0",
             
@@ -349,7 +369,8 @@
             "id": "tribal_mace",
             "title": {
                 "fr": "Masse tribale",
-                "en": "Tribal Mace"
+                "en": "Tribal Mace",
+                "it": "Mazza tribale"
             },
             "encumbrance": "2",
             
@@ -367,7 +388,8 @@
             "id": "yuetshi_knife",
             "title": {
                 "fr": "Poignard Yuetshi",
-                "en": "Yuetshi Knife"
+                "en": "Yuetshi Knife",
+                "it": "Pugnale Yuetshi"
             },
             "encumbrance": "2",
             
@@ -385,7 +407,8 @@
             "id": "chain_mail",
             "title": {
                 "fr": "Cotte de Mailles",
-                "en": "Chain Mail"
+                "en": "Chain Mail",
+                "it": "Cotta di maglia"
             },
             "encumbrance": "3",
             
@@ -403,7 +426,8 @@
             "id": "leather_armor",
             "title": {
                 "fr": "Armure de cuir",
-                "en": "Leather Armor"
+                "en": "Leather Armor",
+                "it": "Armatura di cuoio"
             },
             "encumbrance": "2",
             
@@ -423,7 +447,8 @@
             "id": "leather_armor",
             "title": {
                 "fr": "Armure de cuir",
-                "en": "Leather Armor"
+                "en": "Leather Armor",
+                "it": "Armatura di cuoio"
             },
             "encumbrance": "2",
             
@@ -441,7 +466,8 @@
             "id": "leather_armor",
             "title": {
                 "fr": "Armure de cuir",
-                "en": "Leather Armor"
+                "en": "Leather Armor",
+                "it": "Armatura di cuoio"
             },
             "encumbrance": "2",
             
@@ -461,7 +487,8 @@
             "id": "scale_mail",
             "title": {
                 "fr": "Armure d'écaille",
-                "en": "Scale Mail"
+                "en": "Scale Mail",
+                "it": "Armatura a scaglie"
             },
             "encumbrance": "5",
             
@@ -479,7 +506,8 @@
             "id": "buckler",
             "title": {
                 "fr": "Bouclier",
-                "en": "Buckler"
+                "en": "Buckler",
+                "it": "Brocchiero"
             },
             "encumbrance": "2",
             
@@ -497,7 +525,8 @@
             "id": "shield",
             "title": {
                 "fr": "Écu",
-                "en": "Shield"
+                "en": "Shield",
+                "it": "Scudo"
             },
             "encumbrance": "2",
             
@@ -515,7 +544,8 @@
             "id": "tribal_shield",
             "title": {
                 "fr": "Bouclier tribal",
-                "en": "Tribal Shield"
+                "en": "Tribal Shield",
+                "it": "Scudo tribale"
             },
             "encumbrance": "3",
             
@@ -533,7 +563,8 @@
             "id": "life_potion",
             "title": {
                 "fr": "Potion de vie",
-                "en": "Life Potion"
+                "en": "Life Potion",
+                "it": "Pozione curativa"
             },
             "encumbrance": "0",
             
@@ -553,7 +584,8 @@
             "id": "life_potion",
             "title": {
                 "fr": "Potion de vie",
-                "en": "Life Potion"
+                "en": "Life Potion",
+                "it": "Pozione curativa"
             },
             "encumbrance": "0",
             
@@ -571,7 +603,8 @@
             "id": "life_potion",
             "title": {
                 "fr": "Potion de vie",
-                "en": "Life Potion"
+                "en": "Life Potion",
+                "it": "Pozione curativa"
             },
             "encumbrance": "0",
             
@@ -591,7 +624,8 @@
             "id": "empty_chest",
             "title": {
                 "fr": "Coffre vide",
-                "en": "Empty Chest"
+                "en": "Empty Chest",
+                "it": "Cassa vuota"
             },
             "encumbrance": "3",
             
@@ -609,7 +643,8 @@
             "id": "empty_chest",
             "title": {
                 "fr": "Coffre vide",
-                "en": "Empty Chest"
+                "en": "Empty Chest",
+                "it": "Cassa vuota"
             },
             "encumbrance": "3",
             
@@ -627,7 +662,8 @@
             "id": "key",
             "title": {
                 "fr": "Clef",
-                "en": "Key"
+                "en": "Key",
+                "it": "Chiave"
             },
             
             "melee": { "0": "none", "1": "none" },
@@ -644,7 +680,8 @@
             "id": "pictish_fetish",
             "title": {
                 "fr": "Fétiche picte",
-                "en": "Pictish Fetish"
+                "en": "Pictish Fetish",
+                "it": "Feticcio pitto"
             },
             "encumbrance": "1",
             
@@ -662,7 +699,8 @@
             "id": "shamans_staff",
             "title": {
                 "fr": "Bâton de Shaman",
-                "en": "Shaman’s Staff"
+                "en": "Shaman’s Staff",
+                "it": "Bastone dello sciamano"
             },
             "encumbrance": "1",
             
@@ -680,7 +718,8 @@
             "id": "sorcerers_scepter",
             "title": {
                 "fr": "Sceptre de sorcier",
-                "en": "Sorcerer’s Scepter"
+                "en": "Sorcerer’s Scepter",
+                "it": "Scettro dello stregone"
             },
             "encumbrance": "1",
             
@@ -698,7 +737,8 @@
             "id": "spellbook",
             "title": {
                 "fr": "Grimoire",
-                "en": "Spellbook"
+                "en": "Spellbook",
+                "it": "Grimorio"
             },
             "encumbrance": "2",
             
@@ -716,7 +756,8 @@
             "id": "stygian_artifact",
             "title": {
                 "fr": "Artefact Stygien",
-                "en": "Stygian Artifact"
+                "en": "Stygian Artifact",
+                "it": "Artefatto stygiano"
             },
             "encumbrance": "1",
             
@@ -734,7 +775,8 @@
             "id": "tools",
             "title": {
                 "fr": "Outils",
-                "en": "Tools"
+                "en": "Tools",
+                "it": "Utensili"
             },
             "encumbrance": "1",
             
@@ -752,7 +794,8 @@
             "id": "xuthal_crown",
             "title": {
                 "fr": "Couronne de Xuthal",
-                "en": "Xuthal Crown"
+                "en": "Xuthal Crown",
+                "it": "Corona di Xuthal"
             },
             "encumbrance": "1",
             
@@ -772,7 +815,8 @@
             "id": "axe",
             "title": {
                 "fr": "Hache",
-                "en": "Axe"
+                "en": "Axe",
+                "it": "Ascia"
             },
             "encumbrance": "2",
             
@@ -790,7 +834,8 @@
             "id": "mitras_mace",
             "title": {
                 "fr": "Masse de Mitra",
-                "en": "Mitra’s Mace"
+                "en": "Mitra’s Mace",
+                "it": "Mazza di Mitra"
             },
             "encumbrance": "2",
             
@@ -808,7 +853,8 @@
             "id": "pirate_saber",
             "title": {
                 "fr": "Sabre de pirate",
-                "en": "Pirate Saber"
+                "en": "Pirate Saber",
+                "it": "Sciabola"
             },
             "encumbrance": "1",
             
@@ -826,7 +872,8 @@
             "id": "sacrificial_dagger",
             "title": {
                 "fr": "Dague sacrificielle",
-                "en": "Sacrificial Dagger"
+                "en": "Sacrificial Dagger",
+                "it": "Pugnale sacrificale"
             },
             "encumbrance": "1",
             
@@ -844,7 +891,8 @@
             "id": "stygian_scepter",
             "title": {
                 "fr": "Sceptre stygien",
-                "en": "Stygian Scepter"
+                "en": "Stygian Scepter",
+                "it": "Scettro stygiano"
             },
             "encumbrance": "1",
             
@@ -862,7 +910,8 @@
             "id": "turanian_sword",
             "title": {
                 "fr": "Épée Turanienne",
-                "en": "Turanian Sword"
+                "en": "Turanian Sword",
+                "it": "Spada turaniana"
             },
             "encumbrance": "2",
             
@@ -880,7 +929,8 @@
             "id": "two_handed_sword",
             "title": {
                 "fr": "Épée à deux mains",
-                "en": "Two-Handed Sword"
+                "en": "Two-Handed Sword",
+                "it": "Spadone a due mani"
             },
             "encumbrance": "3",
             
@@ -898,7 +948,8 @@
             "id": "zingaran_bow",
             "title": {
                 "fr": "Arc zingaréen",
-                "en": "Zingaran Bow"
+                "en": "Zingaran Bow",
+                "it": "Arco zingariano"
             },
             "encumbrance": "1",
             
@@ -916,7 +967,8 @@
             "id": "zingaran_breastplate",
             "title": {
                 "fr": "Plastron zingaréen",
-                "en": "Zingaran Breastplate"
+                "en": "Zingaran Breastplate",
+                "it": "Corazza zingariana"
             },
             "encumbrance": "3",
             
@@ -934,7 +986,8 @@
             "id": "black_staff",
             "title": {
                 "fr": "Bâton noir",
-                "en": "Black Staff"
+                "en": "Black Staff",
+                "it": "Bastone nero"
             },
             "encumbrance": "1",
             
@@ -952,7 +1005,8 @@
             "id": "mitras_staff",
             "title": {
                 "fr": "Bâton de Mitra",
-                "en": "Mitra’s Staff"
+                "en": "Mitra’s Staff",
+                "it": "Bastone di Mitra"
             },
             "encumbrance": "2",
             
@@ -970,7 +1024,8 @@
             "id": "pictish_drink",
             "title": {
                 "fr": "Alcool Picte",
-                "en": "Pictish Drink"
+                "en": "Pictish Drink",
+                "it": "Intruglio pitto"
             },
             "encumbrance": "0",
             
@@ -990,7 +1045,8 @@
             "id": "pictish_drink",
             "title": {
                 "fr": "Alcool Picte",
-                "en": "Pictish Drink"
+                "en": "Pictish Drink",
+                "it": "Intruglio pitto"
             },
             "encumbrance": "0",
             
@@ -1010,7 +1066,8 @@
             "id": "cape",
             "title": {
                 "fr": "Cape",
-                "en": "Cape"
+                "en": "Cape",
+                "it": "Mantello"
             },
             "encumbrance": "2",
             
@@ -1028,7 +1085,8 @@
             "id": "censer",
             "title": {
                 "fr": "Encensoir",
-                "en": "Censer"
+                "en": "Censer",
+                "it": "Incensiere"
             },
             "encumbrance": "1",
             
@@ -1046,7 +1104,8 @@
             "id": "elixir",
             "title": {
                 "fr": "Elixir",
-                "en": "Elixir"
+                "en": "Elixir",
+                "it": "Elisir"
             },
             "encumbrance": "0",
             
@@ -1064,7 +1123,8 @@
             "id": "heart_of_ahriman",
             "title": {
                 "fr": "Coeur d'Ahriman",
-                "en": "Heart of Ahriman"
+                "en": "Heart of Ahriman",
+                "it": "Cuore di Ahriman"
             },
             "encumbrance": "0",
             
@@ -1082,7 +1142,8 @@
             "id": "hyrkanian_mirror",
             "title": {
                 "fr": "Miroir Hyrkanien",
-                "en": "Hyrkanian Mirror"
+                "en": "Hyrkanian Mirror",
+                "it": "Specchio hyrkaniano"
             },
             "encumbrance": "1",
             
@@ -1100,7 +1161,8 @@
             "id": "idol_of_yag-kosha",
             "title": {
                 "fr": "Idole Yag-Kosha",
-                "en": "Idol of Yag-Kosha"
+                "en": "Idol of Yag-Kosha",
+                "it": "Idolo di Yag-Kosha"
             },
             "encumbrance": "4",
             
@@ -1118,7 +1180,8 @@
             "id": "phial",
             "title": {
                 "fr": "Fiole",
-                "en": "Phial"
+                "en": "Phial",
+                "it": "Ampolla"
             },
             "encumbrance": "0",
             
@@ -1136,7 +1199,8 @@
             "id": "potion",
             "title": {
                 "fr": "Potion",
-                "en": "Potion"
+                "en": "Potion",
+                "it": "Pozione"
             },
             "encumbrance": "0",
             
@@ -1154,7 +1218,8 @@
             "id": "ring",
             "title": {
                 "fr": "Anneau",
-                "en": "Ring"
+                "en": "Ring",
+                "it": "Anello"
             },
             "encumbrance": "0",
             
@@ -1172,7 +1237,8 @@
             "id": "sacred_treasure",
             "title": {
                 "fr": "Trésor sacré",
-                "en": "Sacred Treasure"
+                "en": "Sacred Treasure",
+                "it": "Tesoro sacro"
             },
             "encumbrance": "3",
             
@@ -1190,7 +1256,8 @@
             "id": "sacred_treasure",
             "title": {
                 "fr": "Trésor sacré",
-                "en": "Sacred Treasure"
+                "en": "Sacred Treasure",
+                "it": "Tesoro sacro"
             },
             "encumbrance": "3",
             
@@ -1208,7 +1275,8 @@
             "id": "sacred_treasure",
             "title": {
                 "fr": "Trésor sacré",
-                "en": "Sacred Treasure"
+                "en": "Sacred Treasure",
+                "it": "Tesoro sacro"
             },
             "encumbrance": "3",
             
@@ -1226,7 +1294,8 @@
             "id": "unguent",
             "title": {
                 "fr": "Onguent",
-                "en": "Unguent"
+                "en": "Unguent",
+                "it": "Unguento"
             },
             "encumbrance": "0",
             
@@ -1244,7 +1313,8 @@
             "id": "blank",
             "title": {
                 "fr": "",
-                "en": ""
+                "en": "",
+                "it": ""
             },
             "encumbrance": "",
             
@@ -1262,7 +1332,8 @@
             "id": "blank",
             "title": {
                 "fr": "",
-                "en": ""
+                "en": "",
+                "it": ""
             },
             "encumbrance": "",
             
@@ -1280,7 +1351,8 @@
             "id": "blank",
             "title": {
                 "fr": "",
-                "en": ""
+                "en": "",
+                "it": ""
             },
             "encumbrance": "",
             
@@ -1298,7 +1370,8 @@
             "id": "blank",
             "title": {
                 "fr": "",
-                "en": ""
+                "en": "",
+                "it": ""
             },
             "encumbrance": "",
             
@@ -1316,7 +1389,8 @@
             "id": "blank",
             "title": {
                 "fr": "",
-                "en": ""
+                "en": "",
+                "it": ""
             },
             "encumbrance": "",
             
@@ -1334,7 +1408,8 @@
             "id": "letters",
             "title": {
                 "fr": null,
-                "en": null
+                "en": null,
+                "it": null
             },
             "encumbrance": "",
             
@@ -1352,7 +1427,8 @@
             "id": "letters",
             "title": {
                 "fr": null,
-                "en": null
+                "en": null,
+                "it": null
             },
             "encumbrance": "",
             
@@ -1370,7 +1446,8 @@
             "id": "letters",
             "title": {
                 "fr": null,
-                "en": null
+                "en": null,
+                "it": null
             },
             "encumbrance": "",
             
@@ -1388,7 +1465,8 @@
             "id": "letters",
             "title": {
                 "fr": null,
-                "en": null
+                "en": null,
+                "it": null
             },
             "encumbrance": "",
             
@@ -1406,7 +1484,8 @@
             "id": "letters",
             "title": {
                 "fr": null,
-                "en": null
+                "en": null,
+                "it": null
             },
             "encumbrance": "",
             
@@ -1424,7 +1503,8 @@
             "id": "aesir_blade",
             "title": {
                 "fr": "Épée Aesir",
-                "en": "Aesir Blade"
+                "en": "Aesir Blade",
+                "it": "Spada degli Aesir"
             },
             "encumbrance": "2",
             
@@ -1444,7 +1524,8 @@
             "id": "amulet_fragment",
             "title": {
                 "fr": "Fragment d'amulette",
-                "en": "Amulet Fragment"
+                "en": "Amulet Fragment",
+                "it": "Frammento di amuleto"
             },
             "encumbrance": "0",
             
@@ -1462,7 +1543,8 @@
             "id": "amulet_fragment",
             "title": {
                 "fr": "Fragment d'amulette",
-                "en": "Amulet Fragment"
+                "en": "Amulet Fragment",
+                "it": "Frammento di amuleto"
             },
             "encumbrance": "0",
             
@@ -1480,7 +1562,8 @@
             "id": "amulet_fragment",
             "title": {
                 "fr": "Fragment d'amulette",
-                "en": "Amulet Fragment"
+                "en": "Amulet Fragment",
+                "it": "Frammento di amuleto"
             },
             "encumbrance": "0",
             
@@ -1498,7 +1581,8 @@
             "id": "khitan_short_sword",
             "title": {
                 "fr": "Épée courte de Khitane",
-                "en": "Khitan Short Sword"
+                "en": "Khitan Short Sword",
+                "it": "Spada corta khitana"
             },
             "encumbrance": "2",
             
@@ -1516,7 +1600,8 @@
             "id": "khitan_sword",
             "title": {
                 "fr": "Épée Khitane",
-                "en": "Khitan Sword"
+                "en": "Khitan Sword",
+                "it": "Spada khitana"
             },
             "encumbrance": "2",
             
@@ -1534,7 +1619,8 @@
             "id": "black_lotus",
             "title": {
                 "fr": "Lotus noir",
-                "en": "Black Lotus"
+                "en": "Black Lotus",
+                "it": "Loto nero"
             },
             "encumbrance": "2",
             
@@ -1554,7 +1640,8 @@
             "id": "false_evidence",
             "title": {
                 "fr": "Fausse preuve",
-                "en": "False Evidence"
+                "en": "False Evidence",
+                "it": "Falso indizio"
             },
             "encumbrance": "0",
             
@@ -1572,7 +1659,8 @@
             "id": "ginger",
             "title": {
                 "fr": "Gingembre",
-                "en": "Ginger"
+                "en": "Ginger",
+                "it": "Zenzero"
             },
             "encumbrance": "2",
             
@@ -1592,7 +1680,8 @@
             "id": "saltpeter",
             "title": {
                 "fr": "Salpêtre",
-                "en": "Saltpeter"
+                "en": "Saltpeter",
+                "it": "Salnitro"
             },
             "encumbrance": "2",
             
@@ -1612,7 +1701,8 @@
             "id": "toad_mucus",
             "title": {
                 "fr": "Mucus de crapaud",
-                "en": "Toad Mucus"
+                "en": "Toad Mucus",
+                "it": "Bava di rospo"
             },
             "encumbrance": "2",
             
@@ -1632,7 +1722,8 @@
             "id": "tower_key",
             "title": {
                 "fr": "Clef de la tour",
-                "en": "Tower Key"
+                "en": "Tower Key",
+                "it": "Chiave della torre"
             },
             "encumbrance": "2",
             
@@ -1650,7 +1741,8 @@
             "id": "toxic_mushrooms",
             "title": {
                 "fr": "Champignon toxique",
-                "en": "Toxic Mushrooms"
+                "en": "Toxic Mushrooms",
+                "it": "Funghi velenosi"
             },
             "encumbrance": "2",
             
@@ -1670,7 +1762,8 @@
             "id": "warlock_documents",
             "title": {
                 "fr": "Document du Sorcier",
-                "en": "Warlock Documents"
+                "en": "Warlock Documents",
+                "it": "Libri dello Stregone"
             },
             "encumbrance": "0",
             
@@ -1688,7 +1781,8 @@
             "id": "warlocks_blood",
             "title": {
                 "fr": "Sang de sorcier",
-                "en": "Warlock’s Blood"
+                "en": "Warlock’s Blood",
+                "it": "Sangue dello Stregone"
             },
             "encumbrance": "1",
             
@@ -1708,7 +1802,8 @@
             "id": "assassins_dagger",
             "title": {
                 "fr": "Dague d'assassin",
-                "en": "Assassin’s Dagger"
+                "en": "Assassin’s Dagger",
+                "it": "Pugnale dell'assassino"
             },
             "encumbrance": "1",
             
@@ -1728,7 +1823,8 @@
             "id": "antidote",
             "title": {
                 "fr": "Potion anti-poison",
-                "en": "Antidote"
+                "en": "Antidote",
+                "it": "Antidoto"
             },
             "encumbrance": "0",
             
@@ -1748,7 +1844,8 @@
             "id": "torch",
             "title": {
                 "fr": "Torche",
-                "en": "Torch"
+                "en": "Torch",
+                "it": "Torcia"
             },
             "encumbrance": "0",
             
@@ -1768,7 +1865,8 @@
             "id": "trapped_chest",
             "title": {
                 "fr": "Coffre piégé",
-                "en": "Trapped Chest"
+                "en": "Trapped Chest",
+                "it": "Cassa-trappola"
             },
             "encumbrance": "3",
             
@@ -1788,7 +1886,8 @@
             "id": "short_sword",
             "title": {
                 "fr": "Épée courte",
-                "en": "Short Sword"
+                "en": "Short Sword",
+                "it": "Daga"
             },
             "encumbrance": "2",
             
@@ -1806,7 +1905,8 @@
             "id": "knife",
             "title": {
                 "fr": "Poignard",
-                "en": "Knife"
+                "en": "Knife",
+                "it": "Coltello"
             },
             "encumbrance": "1",
             
@@ -1824,7 +1924,8 @@
             "id": "amulet",
             "title": {
                 "fr": "Amulette",
-                "en": "Amulet"
+                "en": "Amulet",
+                "it": "Amuleto"
             },
             "encumbrance": "0",
             
@@ -1842,7 +1943,8 @@
             "id": "amulet",
             "title": {
                 "fr": "Amulette",
-                "en": "Amulet"
+                "en": "Amulet",
+                "it": "Amuleto"
             },
             "encumbrance": "0",
             
@@ -1860,7 +1962,8 @@
             "id": "orb_red",
             "title": {
                 "fr": "Orbe rouge",
-                "en": "Red orb"
+                "en": "Red orb",
+                "it": "Globo rosso"
             },
             "encumbrance": "1",
             
@@ -1878,7 +1981,8 @@
             "id": "orb_red_position",
             "title": {
                 "fr": "Position orbe",
-                "en": "Orb position"
+                "en": "Orb position",
+                "it": "Posizione globo"
             },
             "encumbrance": "",
             
@@ -1896,7 +2000,8 @@
             "id": "orb_red_position",
             "title": {
                 "fr": "Position orbe",
-                "en": "Orb position"
+                "en": "Orb position",
+                "it": "Posizione globo"
             },
             "encumbrance": "",
             
@@ -1914,7 +2019,8 @@
             "id": "orb_red_position",
             "title": {
                 "fr": "Position orbe",
-                "en": "Orb position"
+                "en": "Orb position",
+                "it": "Posizione globo"
             },
             "encumbrance": "",
             
@@ -1932,7 +2038,8 @@
             "id": "orb_green",
             "title": {
                 "fr": "Orbe verte",
-                "en": "Green orb"
+                "en": "Green orb",
+                "it": "Globo verde"
             },
             "encumbrance": "1",
             
@@ -1950,7 +2057,8 @@
             "id": "orb_green_position",
             "title": {
                 "fr": "Position orbe",
-                "en": "Orb position"
+                "en": "Orb position",
+                "it": "Posizione globo"
             },
             "encumbrance": "",
             
@@ -1968,7 +2076,8 @@
             "id": "orb_green_position",
             "title": {
                 "fr": "Position orbe",
-                "en": "Orb position"
+                "en": "Orb position",
+                "it": "Posizione globo"
             },
             "encumbrance": "",
             
@@ -1986,7 +2095,8 @@
             "id": "orb_green_position",
             "title": {
                 "fr": "Position orbe",
-                "en": "Orb position"
+                "en": "Orb position",
+                "it": "Posizione globo"
             },
             "encumbrance": "",
             
@@ -2004,7 +2114,8 @@
             "id": "orb_blue",
             "title": {
                 "fr": "Orbe bleu",
-                "en": "Blue orb"
+                "en": "Blue orb",
+                "it": "Globo blu"
             },
             "encumbrance": "1",
             
@@ -2022,7 +2133,8 @@
             "id": "orb_blue_position",
             "title": {
                 "fr": "Position orbe",
-                "en": "Orb position"
+                "en": "Orb position",
+                "it": "Posizione globo"
             },
             "encumbrance": "",
             
@@ -2040,7 +2152,8 @@
             "id": "orb_blue_position",
             "title": {
                 "fr": "Position orbe",
-                "en": "Orb position"
+                "en": "Orb position",
+                "it": "Posizione globo"
             },
             "encumbrance": "",
             
@@ -2058,7 +2171,8 @@
             "id": "orb_blue_position",
             "title": {
                 "fr": "Position orbe",
-                "en": "Orb position"
+                "en": "Orb position",
+                "it": "Posizione globo"
             },
             "encumbrance": "",
             
@@ -2076,7 +2190,8 @@
             "id": "poisoned",
             "title": {
                 "fr": "Empoisonné",
-                "en": "Poisoned"
+                "en": "Poisoned",
+                "it": "Avvelenato"
             },
             "encumbrance": "",
             
@@ -2096,7 +2211,8 @@
             "id": "kordava_boots",
             "title": {
                 "fr": "Bottes de Kordava",
-                "en": "Kordava boots"
+                "en": "Kordava boots",
+                "it": "Stivali di Kordava"
             },
             "encumbrance": "0",
             "movement": 1,
@@ -2115,7 +2231,8 @@
             "id": "armbands_of_bel",
             "title": {
                 "fr": "Brassards de Bel",
-                "en": "Armbands of Bel"
+                "en": "Armbands of Bel",
+                "it": "Bracciali di Bel"
             },
             "encumbrance": "1",
             
@@ -2133,7 +2250,8 @@
             "id": "akbitanas_claymore",
             "title": {
                 "fr": "Claymore d'Akbitana",
-                "en": "Akbitana's claymore"
+                "en": "Akbitana's claymore",
+                "it": "Spadone di Akbitana"
             },
             "encumbrance": "3",
             "skills": {"0": "attack/counterattack", "1": "none"},
@@ -2152,7 +2270,8 @@
             "id": "shemite_bow",
             "title": {
                 "fr": "Arc shémite",
-                "en": "Shemite bow"
+                "en": "Shemite bow",
+                "it": "Arco shemita"
             },
             "encumbrance": "2",
             
@@ -2170,7 +2289,8 @@
             "id": "asshuri_cuirass",
             "title": {
                 "fr": "Cuirasse Asshuri",
-                "en": "Asshuri cuirass"
+                "en": "Asshuri cuirass",
+                "it": "Corazza asshuri"
             },
             "encumbrance": "4",
             
@@ -2188,7 +2308,8 @@
             "id": "shadow_mantel",
             "title": {
                 "fr": "Mantel des ombres",
-                "en": "Shadow mantel"
+                "en": "Shadow mantel",
+                "it": "Mantello delle ombre"
             },
             "encumbrance": "0",
             "skills": {"0": "defense/untouchable", "1": "none"},
@@ -2207,7 +2328,8 @@
             "id": "phoenix_sword",
             "title": {
                 "fr": "Épée du phoenix",
-                "en": "Phoenix sword"
+                "en": "Phoenix sword",
+                "it": "Spada della fenice"
             },
             "encumbrance": "2",
             
@@ -2225,7 +2347,8 @@
             "id": "boris_hammer",
             "title": {
                 "fr": "Marteau de Bori",
-                "en": "Bori's hammer"
+                "en": "Bori's hammer",
+                "it": "Martello di Bori"
             },
             "encumbrance": "3",
             "skills": {"0": "movement/wall_wrecker", "1": "none"},
@@ -2244,7 +2367,8 @@
             "id": "shield_of_mitra",
             "title": {
                 "fr": "Bouclier de Mitra",
-                "en": "Shield of Mitra"
+                "en": "Shield of Mitra",
+                "it": "Scudo di Mitra"
             },
             "encumbrance": "3",
             
@@ -2262,7 +2386,8 @@
             "id": "spear",
             "title": {
                 "fr": "Lance",
-                "en": "Spear"
+                "en": "Spear",
+                "it": "Lancia"
             },
             "encumbrance": "2",
             
@@ -2280,7 +2405,8 @@
             "id": "information",
             "title": {
                 "fr": "Informations",
-                "en": "Information"
+                "en": "Information",
+                "it": "Informazione"
             },
             "encumbrance": "0",
             
