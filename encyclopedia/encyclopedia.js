@@ -15,13 +15,36 @@ var Encyclopedia = {
             });
         }
         
+        function _handleCount(object)
+        {
+            var newItemsForArray = [];
+            
+            for (var j in object.list)
+            {
+                var item = object.list[j];
+                if (item.count)
+                {
+                    for (var k = 1; k < item.count ; k++)
+                    {
+                        newItemsForArray.push({...item});
+                    }
+                    
+                    item.count = undefined;
+                }
+            }
+            
+            object.list = object.list.concat(newItemsForArray);
+            
+            return object;
+        }
+        
         return Promise.all([
             _load("data/skills.json", function(data) { Encyclopedia.skills = data; }),
             _load("data/spells.json", function(data) { Encyclopedia.spells = data; }),
-            _load("data/equipments.json", function(data) { Encyclopedia.equipments = data; }),
+            _load("data/equipments.json", function(data) { Encyclopedia.equipments = _handleCount(data); }),
             _load("data/expansions.json", function(data) { Encyclopedia.expansions = data; }),
             _load("data/maps.json", function(data) { Encyclopedia.maps = data; }),
-            _load("data/models.json", function(data) { Encyclopedia.models = data; }),
+            _load("data/models.json", function(data) { Encyclopedia.models = _handleCount(data); }),
             _load("data/heroes.json", function(data) { Encyclopedia.heroes = data; })
         ]);
     },
