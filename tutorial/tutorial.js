@@ -26,7 +26,7 @@ Tutorial = {
         },
         'it': {
             'settings_message': "L'applicazione è stata configurata in italiano",
-            'settings_switch': "Passa al francese",
+            'settings_switch': "Switch to english",
             'settings_continue': "Grazie",
 
             'extensions_message': "Indicando gli elementi del gioco in tuo possesso, otterrai un'applicazione personalizzata",
@@ -71,7 +71,7 @@ Tutorial = {
         Tutorial.init();
     },
     _swithLanguage: function() {
-        localStorage.setItem("Language", Language == 'fr' ? 'en' : 'fr');
+        localStorage.setItem("Language", Language == 'en' ? 'fr' : 'en');
         $(document.body).append("<div class=\"blinkmenu\"></div>");
         window.setTimeout("window.location.reload(true);", 1000);
     },

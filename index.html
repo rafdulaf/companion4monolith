@@ -63,7 +63,11 @@
         <script>
             Version = 0.10;
             // Preferences
-            function autodetectLanguage() { return (navigator.language == 'fr' || navigator.language.indexOf('fr-') == 0 ? 'fr' : 'en'); }
+            function autodetectLanguage() {
+            	if (navigator.language == 'fr' || navigator.language.indexOf('fr-') == 0) return 'fr';
+            	else if (navigator.language == 'it' || navigator.language.indexOf('it-') == 0) return 'it';
+            	else return 'en'; 
+            }
             Language = localStorage.getItem("Language") || autodetectLanguage();
             Extensions = JSON.parse(localStorage.getItem("Extensions")) || {
             	'custom-box': 'king', 'stygia': true, 'nordheim': true, 'khitai': true

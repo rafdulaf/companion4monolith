@@ -39,6 +39,7 @@ var ConanAbout = {
             'contribute_hof': "Temple de la renommée",
             'contribute_hof_coders': "Codage de l'application",
             'contribute_hof_data': "Saisie des données",
+            'contribute_hof_dataIT': "(traduction italienne)",
             'contribute_hof_test': "Tests et relectures"
         },
         'en': {
@@ -79,6 +80,7 @@ var ConanAbout = {
             'contribute_hof': "Hall of fame",
             'contribute_hof_coders': "Application coding",
             'contribute_hof_data': "Data inputs",
+            'contribute_hof_dataIT': "(italian translation)",
             'contribute_hof_test': "Tests and rereadings"
         },
         'it': {
@@ -119,6 +121,7 @@ var ConanAbout = {
             'contribute_hof': "Albo d'oro",
             'contribute_hof_coders': "Codice Applicazione",
             'contribute_hof_data': "Aquisizione dei dati",
+            'contribute_hof_dataIT': "(traduzione italiana)",
             'contribute_hof_test': "Test e riscritture"
         }
     },
@@ -397,6 +400,7 @@ var ConanAbout = {
                 + "<div><a href=\"https://the-overlord.com/index.php?/profile/5240-cochon/\">@cochon</a></div>"
                 + "<h2>" + ConanAbout._i18n[Language].contribute_hof_data + "</h2>"
                 + "<div><a href=\"https://the-overlord.com/index.php?/profile/5240-cochon/\">@cochon</a></div>"
+                + "<div><a href=\"https://the-overlord.net/index.php?/profile/6029-pensareadaltro/\">@pensareadaltro</a> " + ConanAbout._i18n[Language].contribute_hof_dataIT + "</div>"
                 + "<h2>" + ConanAbout._i18n[Language].contribute_hof_test + "</h2>"
                 + "<div><a href=\"https://the-overlord.com/index.php?/profile/5567-madcollector/\">@madcollector</a></div>"
                 + "<div><a href=\"https://the-overlord.com/index.php?/profile/13-roolz/\">@Roolz</a></div>"
