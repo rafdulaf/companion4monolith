@@ -429,7 +429,7 @@
             "id": "conans-lion",
             "thumb": ["data/models/img/conans-lion_sd.jpg"],
             "images": ["data/models/img/conans-lion_1.jpg"],
-            "paint": null,
+            "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "origins": ["king"]
         },
     
@@ -498,8 +498,8 @@
         {
             "id": "akivasha",
             "thumb": ["data/models/img/akivasha_sd.jpg"],
-            "images": ["data/models/img/akivasha_1.jpg"],
-            "paint": null,
+            "images": ["data/models/img/akivasha_1.jpg", "data/models/img/akivasha_2.jpg"],
+            "paint": { "name": "gabzeta", "link": "https://the-overlord.com/index.php?/profile/232-gabzeta/"},
             "origins": ["stretchgoal", "king"]
         },
     
@@ -572,7 +572,7 @@
             "id": "bone-golem",
             "thumb": ["data/models/img/bone-golem_sd.jpg"],
             "images": ["data/models/img/bone-golem_1.jpg"],
-            "paint": null,
+            "paint": { "name": "gabzeta", "link": "https://the-overlord.com/index.php?/profile/232-gabzeta/"},
             "origins": ["stretchgoal", "king"]
         },
     
@@ -629,7 +629,7 @@
             "id": "tentacles",
             "thumb": ["data/models/img/tentacles_sd.jpg"],
             "images": ["data/models/img/tentacles_1.jpg"],
-            "paint": null,
+            "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
             "origins": ["stretchgoal", "king"],
             "count": 5
         },
@@ -637,10 +637,19 @@
         {
             "id": "tentacles",
             "thumb": ["data/models/img/tentacles_sd.jpg"],
-            "images": ["data/models/img/tentacles_1.jpg"],
-            "paint": null,
+            "images": ["data/models/img/tentacles_2.jpg"],
+            "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
             "origins": ["stretchgoal", "king"],
             "count": 5
+        },
+    
+        {
+            "id": "tentacles",
+            "thumb": ["data/models/img/tentacles_sd.jpg"],
+            "images": ["data/models/img/tentacles_3.jpg"],
+            "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
+            "origins": ["stretchgoal", "king"],
+            "count": 3
         },
     
         {
