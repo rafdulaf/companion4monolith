@@ -267,8 +267,8 @@
         {
             "id": "niord",
             "thumb": "data/models/img/niord_sd.jpg",
-            "images": ["data/models/img/niord_1.jpg", "data/models/img/niord_2.jpg"],
-            "paint": null,
+            "images": ["data/models/img/niord_1.jpg"],
+            "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
             "origins": ["nordheim"]
         },
     
@@ -555,8 +555,8 @@
         {
             "id": "kothian-archer",
             "thumb": ["data/models/img/kothian-archer_sd.jpg"],
-            "images": ["data/models/img/kothian-archer_1.jpg"],
-            "paint": null,
+            "images": ["data/models/img/kothian-archer_1.jpg", "data/models/img/kothian-archer_2.jpg"],
+            "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
             "origins": ["stretchgoal", "king"]
         },
     
@@ -611,8 +611,8 @@
         {
             "id": "thaug",
             "thumb": ["data/models/img/thaug_sd.jpg"],
-            "images": ["data/models/img/thaug_1.jpg"],
-            "paint": null,
+            "images": ["data/models/img/thaug_1.jpg", "data/models/img/thaug_2.jpg"],
+            "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
             "origins": ["stretchgoal", "king"]
         },
     
@@ -764,7 +764,7 @@
             "id": "atali",
             "thumb": ["data/models/img/atali_sd.jpg"],
             "images": ["data/models/img/atali_1.jpg"],
-            "paint": null,
+            "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
             "origins": ["nordheim"]
         },
     
@@ -772,7 +772,7 @@
             "id": "nijgor",
             "thumb": ["data/models/img/nijgor_sd.jpg"],
             "images": ["data/models/img/nijgor_1.jpg"],
-            "paint": null,
+            "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
             "origins": ["nordheim"]
         },
     
@@ -780,7 +780,7 @@
             "id": "seski",
             "thumb": ["data/models/img/seski_sd.jpg"],
             "images": ["data/models/img/seski_1.jpg"],
-            "paint": null,
+            "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
             "origins": ["nordheim"]
         },
     
@@ -840,8 +840,8 @@
         {
             "id": "javelin-throwers",
             "thumb": ["data/models/img/javelin-throwers_sd.jpg"],
-            "images": ["data/models/img/javelin-throwers_1.jpg"],
-            "paint": null,
+            "images": ["data/models/img/javelin-throwers_1.jpg", "data/models/img/javelin-throwers_2.jpg"],
+            "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
             "origins": ["khitai"],
             "count": 5
         },
