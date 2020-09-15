@@ -463,7 +463,16 @@
         {
             "id": "skeletons",
             "thumb": ["data/models/img/skeletons_sd.jpg"],
-            "images": ["data/models/img/skeletons_1.jpg", "data/models/img/skeletons_2.jpg", "data/models/img/skeletons_3.jpg", "data/models/img/skeletons_4.jpg", "data/models/img/skeletons_5.jpg", "data/models/img/skeletons_6.jpg"],
+            "images": ["data/models/img/skeletons_5.jpg"],
+            "paint": { "name": "gabzeta", "link": "https://the-overlord.com/index.php?/profile/232-gabzeta/"},
+            "origins": ["stretchgoal", "king"],
+            "count": 5
+        },
+    
+        {
+            "id": "skeletons",
+            "thumb": ["data/models/img/skeletons_sd.jpg"],
+            "images": ["data/models/img/skeletons_3.jpg", "data/models/img/skeletons_4.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "origins": ["stretchgoal", "king"],
             "count": 5
@@ -472,16 +481,7 @@
         {
             "id": "skeletons",
             "thumb": ["data/models/img/skeletons_sd.jpg"],
-            "images": ["data/models/img/skeletons_1.jpg", "data/models/img/skeletons_2.jpg", "data/models/img/skeletons_3.jpg", "data/models/img/skeletons_4.jpg", "data/models/img/skeletons_5.jpg", "data/models/img/skeletons_6.jpg"],
-            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
-            "origins": ["stretchgoal", "king"],
-            "count": 5
-        },
-    
-        {
-            "id": "skeletons",
-            "thumb": ["data/models/img/skeletons_sd.jpg"],
-            "images": ["data/models/img/skeletons_1.jpg", "data/models/img/skeletons_2.jpg", "data/models/img/skeletons_3.jpg", "data/models/img/skeletons_4.jpg", "data/models/img/skeletons_5.jpg", "data/models/img/skeletons_6.jpg"],
+            "images": ["data/models/img/skeletons_1.jpg", "data/models/img/skeletons_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "origins": ["king"],
             "count": 15
