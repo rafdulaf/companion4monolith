@@ -35,7 +35,7 @@ var ConanRules = {
 
             'equipments': "Used in the equipments cards:",
             'spells': "Used in the spells card:",
-            'heroes': "Owned by the heroes:",
+            'heroesOwned': "Owned by the heroes:",
 
             'viewer-search': "Search in the document",
             'viewer-download': "Download the document",
@@ -62,7 +62,7 @@ var ConanRules = {
 
             'equipments': "Usato nelle carte equipaggiamento:",
             'spells': "Usato nelle carte incantesimo:",
-            'heroes': "Posseduto dagli Eroi:",
+            'heroesOwned': "Posseduto dagli Eroi:",
 
             'viewer-search': "Cerca nell'intero documento",
             'viewer-download': "Scarica il pdf",
