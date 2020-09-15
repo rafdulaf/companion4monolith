@@ -252,7 +252,7 @@
             "text": {
                 "fr": "Plutôt que de réaliser une attaque classique, le personnage peut projeter une toile sur un adversaire. Pour cela il réalise une attaque à distance avec {dice_orange}{dice_orange}{dice_orange}. Si l'attaque dépasse la défense, elle n'engendre pas de blessure mais la victime est immobilisée (on place le pion Toile contre son socle). Pour s'en extraire il lui en coûtera 4 points de mouvements en un seul tour.",
                 "en": "Instead of their normal attack, this character can perform a Ranged Attack, rolling {dice_orange}{dice_orange}{dice_orange} instead of their normal die. If the attack power is higher than the defense power, the defender places a web token on their model and suffers no damage. A character with a web token cannot move, but can spend 4 movement points to discard the token.",
-                "it": "Al posto del suo normale attacco, questo personaggio può effettuare un attacco a Distanza tirando {dice_orange}{dice_orange}{dice_orange}, invece dei suoi normali dadi. Se il potere d'attacco è maggiore del potere di difesa, il nemico piazza un segnalino Ragnatela sul proprio modello senza subire alcun danno. Un personaggio Intrappolato non può muovere, ma può spendere 4 punti movimento in un unico turno per scartare il segnalino Ragnatela. "
+                "it": "Al posto del suo normale attacco, questo personaggio può effettuare un attacco a Distanza tirando {dice_orange}{dice_orange}{dice_orange}, invece dei suoi normali dadi. Se il potere d'attacco è maggiore del potere di difesa, il nemico piazza un segnalino Ragnatela sul proprio modello senza subire alcun danno. Un personaggio Intrappolato non può muovere, ma può spendere 4 punti movimento in un unico turno per scartare il segnalino Ragnatela."
             },
             "image": "data/skills/img/movement/web_projection.png"
         }, {
@@ -266,7 +266,7 @@
             "text": {
                 "fr": "Le personnage peut sauter par-dessus les endroits prévus à cet effet. Pour ce faire, il lance {dice_red} et doit égaler ou dépasser l'indice de difficulté. Le saut n'est pas soumis au phénomène de gène. Sauter coûte 1 point de mouvement par zone traversée. Par exemple, sauter d'un bateau à l'autre coûte 2 points de mouvements.",
                 "en": "This character can leap over areas defined by the scenario. The character rolls {dice_red}, the leap is successful if the die shows symbols equal to or higher than the leap area's difficulty. Leaping costs 1 movement point per crossed area border. For example, when leaping from one ship to another, a character must spend 2 movement points to leap. Leaping is not affected by hindering.",
-                "it": "Questo personaggio può saltare alcune aree definite nello scenario. Il personaggio tira {dice_red}: il salto riesce se il punteggio è uguale o superiore alla difficoltà indicata nell'area da saltare. Saltare costa un (1) punto movimento per ogni bordo attraversato. Ad esempio, quando salta da una nave all'altra, il personaggio deve spendere 2 punti movimento per saltare. Saltare non è affetto da intralcio. "
+                "it": "Questo personaggio può saltare alcune aree definite nello scenario. Il personaggio tira {dice_red}: il salto riesce se il punteggio è uguale o superiore alla difficoltà indicata nell'area da saltare. Saltare costa un (1) punto movimento per ogni bordo attraversato. Ad esempio, quando salta da una nave all'altra, il personaggio deve spendere 2 punti movimento per saltare. Saltare non è affetto da intralcio."
             },
             "image": "data/skills/img/movement/leap.png"
         }, {
@@ -280,7 +280,7 @@
             "text": {
                 "fr": "Dans chaque zone empruntée, le personnage ignore un point de malus lié au phénomène de gêne.",
                 "en": "Moving cost this character 1 fewer movement point if the movement is affected by hindering.",
-                "it": "Il personaggio, nella sua area, ignora un (1) punto di malus fornito da un eventuale intralcio."
+                "it": "Il personaggio, nella sua area, ignora un (1) punto di penalità fornito da un eventuale intralcio."
             },
             "image": "data/skills/img/movement/feline_grace.png"
         }, {
@@ -294,7 +294,7 @@
             "text": {
                 "fr": "Le personnage peut voler par-dessus les éléments du décor. Il ignore les contraintes de déplacement liés au décor. Le vol n'est pas soumis au phénomène de gène.",
                 "en": "This character can fly over the elements of the scenery. Flight ignores the movement contraints and penalties of the terrain, and is not affected by hindering.",
-                "it": "Questo personaggio può volare sugli elementi dello scenario. Volare permette di ignorare tutte le restrizioni e le penalità del terreno e ogni effetto dell'intralacio."
+                "it": "Questo personaggio può volare sugli elementi dello scenario. Volare permette di ignorare tutte le restrizioni e le penalità del terreno e ogni effetto dell'intralcio."
             },
             "image": "data/skills/img/movement/flying.png"
         }, {
@@ -308,7 +308,7 @@
             "text": {
                 "fr": "Le personnage est capable de franchir les limites de zone qui requièrent cette compétence, en payant le surcoût de mouvement lié à la difficulté du franchissement comme décrit dans le scénario.",
                 "en": "This character can move across borders of areas that require this skill, paying the extra movement cost defined by the scenario.",
-                "it": "Questo personaggio può muovere attraverso i bordi delle zone che richiedono questa abilità, pagando il costo extra in punti movimento definito dallo scenario."
+                "it": "Questo personaggio può muovere attraverso i bordi delle aree che richiedono questa abilità, pagando il costo extra in punti movimento definito dallo scenario."
             },
             "image": "data/skills/img/movement/climb.png"
         },
@@ -394,7 +394,7 @@
             "text": {
                 "fr": "Le personnage a une apparence si hideuse qu'elle provoque la terreur chez ses adversaires. Chaque adversaire qui se trouve dans sa zone voit le niveau de saturation de ses caractéristiques limité à 2 (sauf pour la défense et la relance).",
                 "en": "The exertion limit of Melee Attack, Ranged Attack, Move and Manipulation actions of enemy characters in this character's area is 2.",
-                "it": "Il personaggio ha un aspetto così spaventoso che genera terrore nei suoi avversari. Ogni nemico che si trova nella sua zona avrà il livello massimo delle sue caratteristiche (attacco in Mischia, attacco a Distanza, Movimento e Manipolazione) limitato a 2 (fatta eccezione per Difesa e Rilancio)"
+                "it": "Il personaggio ha un aspetto così spaventoso che genera terrore nei suoi avversari. Ogni nemico che si trova nella sua area avrà il livello massimo delle sue caratteristiche (attacco in Mischia, attacco a Distanza, Movimento e Manipolazione) limitato a 2 (fatta eccezione per Difesa e Rilancio)."
             },
             "image": "data/skills/img/miscellaneous/horror.png"
         }, {
@@ -408,7 +408,7 @@
             "text": {
                 "fr": "Aucune relance d’aucune sorte (payante ou gratuite) n’est autorisée dans la zone d’un adversaire ayant cette compétence.",
                 "en": "Reroll actions and free rerolls are not allowed in the area occupied by an enemy with this skill.",
-                "it": "Ogni rilancio (sia pagato che gratuito) non è permesso nell'area occupata da un personaggio con questa abilità."
+                "it": "Ogni rilancio (sia pagato che gratuito) non è permesso nell'area occupata da un nemico con questa abilità."
             },
             "image": "data/skills/img/miscellaneous/jinx.png"
         }, {
@@ -452,7 +452,7 @@
             "text": {
                 "fr": "Le personnage peut décider, avant le lancé de dés, de subir une attaque à la place de la cible initiale. Il ne peut par contre ni la parer ni l'esquiver. Il ne peut utiliser que sa défense passive pour se défendre. Ce personnage encaisse donc la totalité des dégâts causés par l’attaque à la place de la cible initiale.",
                 "en": "When a friendly character in this character's area is attacked, before the die are rolled, this character may choose to be attacked instead. This character cannot Guard for that defense and can only use their Armor. That character suffers any damage from the attack to prevent the character who was initially attacked from suffering damage.",
-                "it": "Il personaggio può decidere, prima del lancio dei dadi, di subire l'attacco al posto del bersaglio designato. Chi ha Sacrificio non può di contro nè parare, nè schivare. Non può utilizzare che la propria armatura per difendersi. Questo personaggio subisce tutti i danni causati dall'attacco al posto del bersaglio designato."
+                "it": "Il personaggio può decidere, prima del lancio dei dadi, di subire l'attacco al posto del bersaglio designato. Chi ha Sacrificio non può di contro né parare, né schivare. Non può utilizzare che la propria Armatura per difendersi. Questo personaggio subisce tutti i danni causati dall'attacco al posto del bersaglio designato."
             },
             "image": "data/skills/img/defense/sacrifice.png"
         }, {
@@ -466,7 +466,7 @@
             "text": {
                 "fr": "Le personnage peut parer (c’est-à-dire utiliser un équipement pour défendre comme un bouclier par exemple) à leur place, les attaques portées contre ses amis présents sur sa zone. Il ne peut pas simplement esquiver. L'usage de la compétence remplace la défense active de la cible mais pas sa défense passive. C’est la cible initiale de l’attaque qui en subit les éventuelles blessures.",
                 "en": "When a friendly character in this character's area defends, this character can parry (i.e. use an equipment card to defend against that attack, like a shield) instead of that character's Guard action, adding the symbols shown on the dice to the character defense power. They cannot dodge (see page 11) to defend a friendly character. Any damage is dealt to the character who was initially attacked, not the character using Bodyguard.",
-                "it": "Il personaggio può parare (ovvero utilizzare dell'equipaggiamento per difendere come uno Scudo per esempio) gli attacchi rivolti verso i personaggi amici che occupano la sua stessa area. Non può schivare. L'uso dell'abilità rimpiazza il bonus di Difesa del bersaglio ma non quello della sua Armatura. É comunque il bersaglio designato a subire gli eventuali danni non parati. "
+                "it": "Il personaggio può parare (ovvero utilizzare dell'equipaggiamento per difendere come uno Scudo per esempio) gli attacchi rivolti verso i personaggi amici che occupano la sua stessa area. Non può schivare. L'uso dell'abilità rimpiazza il bonus di Difesa del bersaglio ma non quello della sua Armatura. É comunque il bersaglio designato a subire gli eventuali danni non parati."
             },
             "image": "data/skills/img/defense/bodyguard.png"
         }, {
@@ -494,7 +494,7 @@
             "text": {
                 "fr": "Le personnage ne peut être attaqué tant que demeure sur sa zone au moins l'un de ses amis dépourvu de cette compétence. Les attaques de zone ne sont pas soumises à l'effet de cette compétence.",
                 "en": "This character can be attacked only with area attacks if there is a friendly character without Protected in their area. Two or more characters with this skill cannot protect each other.",
-                "it": "Questo personaggio può essere attaccato solo da attacchi ad area fintatoché è presente un personaggio amico senza l'abilità Protetto nella sua area. Due o più personaggi con questa abilità non possono proteggersi a vicenda."
+                "it": "Questo personaggio può essere attaccato solo da attacchi ad area fintantoché è presente un personaggio amico senza l'abilità Protetto nella sua area. Due o più personaggi con questa abilità non possono proteggersi a vicenda."
             },
             "image": "data/skills/img/defense/protected.png"
         },
@@ -510,7 +510,7 @@
             "text": {
                 "fr": "Le personnage est capable d'utiliser les cartes Sorts à sa disposition, en leur allouant les gemmes d'énergie requises. Lorsqu'un personnage perd la compétence (du fait de son encombrement par exemple), les sorts déjà actifs le restent jusqu'à ce qu'ils s'épuisent comme décrit par le sort.",
                 "en": "This character can have and cast spells. Whenever the character loses the skill (because of encumbrance for example), any active spell remain active for their specified duration.",
-                "it": "Il personaggio è in grado di utilizzare le carte incantesimo a sua disposizione, spendendo le gemme da queste richieste. Quando un personaggio perde questa abilità (a causa del proprio ingombro, ad esempio), gli incantesimi già attivi restano tali per la durata descritta nell'incantesimo. "
+                "it": "Il personaggio è in grado di utilizzare le carte incantesimo a sua disposizione, spendendo le gemme da queste richieste. Quando un personaggio perde questa abilità (a causa del proprio ingombro, ad esempio), gli incantesimi già attivi restano tali per la durata descritta nell'incantesimo."
             },
             "image": "data/skills/img/magic/spell_caster.png"
         }
