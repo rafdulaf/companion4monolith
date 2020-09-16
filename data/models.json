@@ -797,7 +797,7 @@
             "id": "crows",
             "thumb": ["data/models/img/crows_sd.jpg"],
             "images": ["data/models/img/crows_1.jpg"],
-            "paint": null,
+            "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
             "origins": ["nordheim"],
             "count": 5
         },
@@ -850,7 +850,7 @@
             "id": "foo-dogs",
             "thumb": ["data/models/img/foo-dogs_sd.jpg"],
             "images": ["data/models/img/foo-dogs_1.jpg"],
-            "paint": null,
+            "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
             "origins": ["khitai"],
             "count": 5
         },
