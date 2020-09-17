@@ -163,7 +163,7 @@
         {
             "id": "constantius",
             "thumb": "data/models/img/constantius_sd.jpg",
-            "images": ["data/models/img/constantius_1.jpg"],
+            "images": ["data/models/img/constantius_1.jpg", "data/models/img/constantius_2.jpg"],
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "origins": ["stretchgoal", "king"]
         },
@@ -412,7 +412,7 @@
             "id": "pirates",
             "thumb": ["data/models/img/pirates_sd.jpg"],
             "images": ["data/models/img/pirates_3.jpg", "data/models/img/pirates_4.jpg"],
-            "paint": null,
+            "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "origins": ["stretchgoal", "king"],
             "count": 5
         },
@@ -530,16 +530,16 @@
         {
             "id": "natohk",
             "thumb": ["data/models/img/natohk_sd.jpg"],
-            "images": ["data/models/img/natohk_1.jpg"],
-            "paint": null,
+            "images": ["data/models/img/natohk_1.jpg", "data/models/img/natohk_2.jpg"],
+            "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "origins": ["stretchgoal", "king"]
         },
     
         {
             "id": "warlock",
             "thumb": ["data/models/img/warlock_sd.jpg"],
-            "images": ["data/models/img/warlock_1.jpg"],
-            "paint": null,
+            "images": ["data/models/img/warlock_1.jpg", "data/models/img/warlock_2.jpg"],
+            "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "origins": ["stretchgoal", "king"]
         },
     
@@ -563,8 +563,8 @@
         {
             "id": "slasher",
             "thumb": ["data/models/img/slasher_sd.jpg"],
-            "images": ["data/models/img/slasher_1.jpg"],
-            "paint": null,
+            "images": ["data/models/img/slasher_1.jpg", "data/models/img/slasher_2.jpg"],
+            "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "origins": ["stretchgoal", "king"]
         },
     
@@ -587,16 +587,16 @@
         {
             "id": "giant-spider",
             "thumb": ["data/models/img/giant-spider_sd.jpg"],
-            "images": ["data/models/img/giant-spider_1.jpg"],
-            "paint": null,
+            "images": ["data/models/img/giant-spider_1.jpg", "data/models/img/giant-spider_2.jpg"],
+            "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "origins": ["stretchgoal", "king"]
         },
     
         {
             "id": "gray-man-ape",
             "thumb": ["data/models/img/gray-man-ape_sd.jpg"],
-            "images": ["data/models/img/gray-man-ape_1.jpg"],
-            "paint": null,
+            "images": ["data/models/img/gray-man-ape_1.jpg", "data/models/img/gray-man-ape_2.jpg"],
+            "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "origins": ["stretchgoal", "king"]
         },
     
@@ -874,8 +874,8 @@
         {
             "id": "giant-scorpion",
             "thumb": ["data/models/img/giant-scorpion_sd.jpg"],
-            "images": ["data/models/img/giant-scorpion_1.jpg"],
-            "paint": null,
+            "images": ["data/models/img/giant-scorpion_1.jpg", "data/models/img/giant-scorpion_2.jpg"],
+            "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "origins": ["stygia"],
             "count": 10
         },
@@ -883,8 +883,8 @@
         {
             "id": "giant-scorpion",
             "thumb": ["data/models/img/giant-scorpion_sd.jpg"],
-            "images": ["data/models/img/giant-scorpion_1.jpg"],
-            "paint": null,
+            "images": ["data/models/img/giant-scorpion_1.jpg", "data/models/img/giant-scorpion_2.jpg"],
+            "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "origins": ["stretchgoal", "king"]
         },
     
