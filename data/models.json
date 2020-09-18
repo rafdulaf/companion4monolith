@@ -204,7 +204,7 @@
             "id": "vanir-valkyrie",
             "thumb": "data/models/img/vanir-valkyrie_sd.jpg",
             "images": ["data/models/img/vanir-valkyrie_1.jpg", "data/models/img/vanir-valkyrie_2.jpg"],
-            "paint": null,
+            "paint": { "name": "Not Quite Dead", "link": "https://the-overlord.com/index.php?/profile/891-not-quite-dead/"},
             "origins": ["valvan"]
         },
     
@@ -284,7 +284,7 @@
             "id": "ikhmet",
             "thumb": "data/models/img/ikhmet_sd.jpg",
             "images": ["data/models/img/ikhmet_1.jpg"],
-            "paint": null,
+            "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
             "origins": ["stygia"]
         },
         
@@ -698,8 +698,8 @@
         {
             "id": "dragon",
             "thumb": ["data/models/img/dragon_sd.jpg"],
-            "images": ["data/models/img/dragon_1.jpg"],
-            "paint": null,
+            "images": ["data/models/img/dragon_1.jpg", "data/models/img/dragon_2.jpg"],
+            "paint": { "name": "Dahkon", "link": "https://the-overlord.com/index.php?/profile/44-dahkon/"},
             "origins": ["dragon"]
         },
     
@@ -724,7 +724,7 @@
             "id": "sabertooth-tiger",
             "thumb": ["data/models/img/sabertooth-tiger_sd.jpg"],
             "images": ["data/models/img/sabertooth-tiger_1.jpg"],
-            "paint": null,
+            "paint": { "name": "Not Quite Dead", "link": "https://the-overlord.com/index.php?/profile/891-not-quite-dead/"},
             "origins": ["sabretoothtiger"]
         },
     
@@ -823,7 +823,7 @@
             "id": "khitan-guards",
             "thumb": ["data/models/img/khitan-guards_sd.jpg"],
             "images": ["data/models/img/khitan-guards_1.jpg"],
-            "paint": null,
+            "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
             "origins": ["khitai"],
             "count": 5
         },
@@ -832,7 +832,7 @@
             "id": "honor-guards",
             "thumb": ["data/models/img/honor-guards_sd.jpg"],
             "images": ["data/models/img/honor-guards_1.jpg"],
-            "paint": null,
+            "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
             "origins": ["khitai"],
             "count": 5
         },
@@ -867,7 +867,7 @@
             "id": "scorpion-broodmother",
             "thumb": ["data/models/img/scorpion-broodmother_sd.jpg"],
             "images": ["data/models/img/scorpion-broodmother_1.jpg"],
-            "paint": null,
+            "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
             "origins": ["stygia"]
         },
     
@@ -892,7 +892,7 @@
             "id": "eternal-guard",
             "thumb": ["data/models/img/eternal-guard_sd.jpg"],
             "images": ["data/models/img/eternal-guard_1.jpg"],
-            "paint": null,
+            "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
             "origins": ["stygia"],
             "count": 5
         },
