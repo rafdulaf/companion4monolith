@@ -9,7 +9,8 @@ var EncyclopediaModels = {
             'paintedBy': "Peint par: ",
             'zoom': "Zoom",
             'print': "Imprimer",
-            'heroes': "Utilisée par les héros :"
+            'heroes': "Utilisée par les héros :",
+            'type': "Type"
         },
         'en': {
             'tab': "Minia<wbr/>tures",
@@ -20,7 +21,8 @@ var EncyclopediaModels = {
             'paintedBy': "Painted par: ",
             'zoom': "Zoom",
             'print': "Print",
-            'heroes': "Used by the heroes:"
+            'heroes': "Used by the heroes:",
+            'type': "Type"
         },
         'it': {
             'tab': "Minia<wbr/>ture",
@@ -147,6 +149,113 @@ var EncyclopediaModels = {
                     }
                     return origins.filter(v => selectedValues.indexOf(v) != -1).length > 0;
                 }
+            },
+            
+            {
+                id: 'usage',
+                label: {
+                    'fr': "Utilisé par",
+                    'en': "Used by",
+                    'it': "TODO_TOTRANSLATE"
+                },
+                values: [
+                    {
+                        id: "hero",
+                        label: {
+                            'fr': "Héros",
+                            'en': "Hero",
+                            'it': "TODO_TOTRANSLATE"
+                        }
+                    },
+                    {
+                        id: "overlord",
+                        label: {
+                            'fr': "Overlord",
+                            'en': "Overlord",
+                            'it': "TODO_TOTRANSLATE"
+                        }
+                    },
+                    {
+                        id: "none",
+                        label: {
+                            'fr': "Aucun",
+                            'en': "Non",
+                            'it': "TODO_TOTRANSLATE"
+                        }
+                    }
+                ],
+                filter: function(item, selectedValues) {
+                    for (var i = 0; i < selectedValues.length; i++)
+                    {
+                        switch (selectedValues[i])
+                        {
+                            case 'hero':
+                                if (EncyclopediaModels._findHeroesByModel(item).length > 0)
+                                {
+                                    return true;
+                                }
+                                break;
+                            case 'overlord':
+                                if (EncyclopediaModels._findTilesByModel(item).length > 0)
+                                {
+                                    return true;
+                                }
+                                break;
+                            case 'none':
+                                if (EncyclopediaModels._findHeroesByModel(item).length == 0
+                                    && EncyclopediaModels._findTilesByModel(item).length == 0)
+                                {
+                                    return true;
+                                }
+                        }
+                    }
+                    return false;
+                }
+            },
+            
+            {
+                id: 'type',
+                label: {
+                    'fr': "Type",
+                    'en': "Type",
+                    'it': "TODO_TOTRANSLATE"
+                },
+                values: [
+                    {
+                        id: "human",
+                        label: {
+                            'fr': "Humain",
+                            'en': "Human",
+                            'it': "TODO_TOTRANSLATE"
+                        }
+                    },
+                    {
+                        id: "animal",
+                        label: {
+                            'fr': "Animal",
+                            'en': "Animal",
+                            'it': "TODO_TOTRANSLATE"
+                        }
+                    },
+                    {
+                        id: "monster",
+                        label: {
+                            'fr': "Monstre",
+                            'en': "Monster",
+                            'it': "TODO_TOTRANSLATE"
+                        }
+                    }
+                ],
+                filter: function(item, selectedValues) {
+                    for (var i = 0; i < selectedValues.length; i++)
+                    {
+                        if (selectedValues[i] == item.type)
+                        {
+                            return true;
+                        }
+                    }
+                    return false;
+                }
             }
         ]
     },
@@ -222,9 +331,15 @@ var EncyclopediaModels = {
         }
     },
 
-    _findModelNames: function(model)
+    _findTilesByModel: function(model)
     {
-        var names = [];
+        // TODO
+        return [];
+    },
+    
+    _findHeroesByModel: function(model)
+    {
+        var heroes = [];
 
         if (model)
         {
@@ -233,9 +348,39 @@ var EncyclopediaModels = {
                 var hero = Encyclopedia.heroes.list[i];
                 if (hero.model == model.id)
                 {
-                    var name = hero.name[Language] + (hero.subname ? " <span>" + hero.subname[Language] + "</span>" : "");
-                    if (names.indexOf(name) == -1)
-                        names.push(name);
+                    heroes.push(hero);
+                }
+            }
+        }
+        
+        return heroes;
+    },
+    
+    _findModelNames: function(model)
+    {
+        var names = [];
+
+        if (model)
+        {
+            var heroes = EncyclopediaModels._findHeroesByModel(model);
+            for (var i in heroes)
+            {
+                var hero = heroes[i];
+                var name = hero.name[Language] + (hero.subname ? " <span>" + hero.subname[Language] + "</span>" : "");
+                if (names.indexOf(name) == -1)
+                {
+                    names.push(name);
+                }
+            }
+
+            var tiles = EncyclopediaModels._findTilesByModel(model);
+            for (var i in tiles)
+            {
+                var tile = tiles[i];
+                var name = tile.name[Language];
+                if (names.indexOf(name) == -1)
+                {
+                    names.push(name);
                 }
             }
         }

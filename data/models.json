@@ -5,6 +5,7 @@
             "thumb": "data/models/img/belit_sd.jpg",
             "images": ["data/models/img/belit_1.jpg", "data/models/img/belit_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["corebox", "stretchgoal", "king"]
         },
     
@@ -13,6 +14,7 @@
             "thumb": "data/models/img/conan_sd.jpg",
             "images": ["data/models/img/conan_1.jpg", "data/models/img/conan_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["corebox", "stretchgoal", "king"]
         },
     
@@ -21,6 +23,7 @@
             "thumb": "data/models/img/hadrathus_sd.jpg",
             "images": ["data/models/img/hadrathus_1.jpg", "data/models/img/hadrathus_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["corebox", "stretchgoal", "king"]
         },
     
@@ -29,6 +32,7 @@
             "thumb": "data/models/img/shevatas_sd.jpg",
             "images": ["data/models/img/shevatas_1.jpg", "data/models/img/shevatas_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["corebox", "stretchgoal", "king"]
         },
     
@@ -37,6 +41,7 @@
             "thumb": "data/models/img/amra-the-lion_sd.jpg",
             "images": ["data/models/img/amra-the-lion_1.jpg", "data/models/img/amra-the-lion_2.jpg"],
             "paint": { "name": "gabzeta", "link": "https://the-overlord.com/index.php?/profile/232-gabzeta/"},
+            "type": "human",
             "origins": ["king"]
         },
     
@@ -45,6 +50,7 @@
             "thumb": "data/models/img/ngora_sd.jpg",
             "images": ["data/models/img/ngora_1.jpg", "data/models/img/ngora_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["king"]
         },
     
@@ -53,6 +59,7 @@
             "thumb": "data/models/img/valeria_sd.jpg",
             "images": ["data/models/img/valeria_1.jpg", "data/models/img/valeria_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["king"]
         },
     
@@ -61,6 +68,7 @@
             "thumb": "data/models/img/zelata_sd.jpg",
             "images": ["data/models/img/zelata_1.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["king"]
         },
     
@@ -69,6 +77,7 @@
             "thumb": "data/models/img/amboola_sd.jpg",
             "images": ["data/models/img/amboola_1.jpg", "data/models/img/amboola_2.jpg", "data/models/img/amboola_3.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["stretchgoal", "king"]
         },
     
@@ -77,6 +86,7 @@
             "thumb": "data/models/img/balthus_sd.jpg",
             "images": ["data/models/img/balthus_1.jpg", "data/models/img/balthus_2.jpg"],
             "paint": { "name": "gabzeta", "link": "https://the-overlord.com/index.php?/profile/232-gabzeta/"},
+            "type": "human",
             "origins": ["stretchgoal", "king"]
         },
     
@@ -85,6 +95,7 @@
             "thumb": "data/models/img/conan-general_sd.jpg",
             "images": ["data/models/img/conan-general_1.jpg", "data/models/img/conan-general_2.jpg"],
             "paint": { "name": "Codicier Ignatius", "link": "https://www.blogger.com/profile/15313921985581945781"},
+            "type": "human",
             "origins": ["stretchgoal", "king"]
         },
     
@@ -93,6 +104,7 @@
             "thumb": "data/models/img/conan-mercenary_sd.jpg",
             "images": ["data/models/img/conan-mercenary_1.jpg", "data/models/img/conan-mercenary_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["stretchgoal", "king"]
         },
     
@@ -101,6 +113,7 @@
             "thumb": "data/models/img/conan-wanderer_sd.jpg",
             "images": ["data/models/img/conan-wanderer_1.jpg", "data/models/img/conan-wanderer_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["stretchgoal", "king"]
         },
     
@@ -109,6 +122,7 @@
             "thumb": "data/models/img/conan-warlord_sd.jpg",
             "images": ["data/models/img/conan-warlord_1.jpg", "data/models/img/conan-warlord_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["stretchgoal", "king"]
         },
     
@@ -117,6 +131,7 @@
             "thumb": "data/models/img/kerim-shah_sd.jpg",
             "images": ["data/models/img/kerim-shah_1.jpg"],
             "paint": null,
+            "type": "human",
             "origins": ["stretchgoal", "king"]
         },
     
@@ -125,6 +140,7 @@
             "thumb": "data/models/img/olgerd-vladislav_sd.jpg",
             "images": ["data/models/img/olgerd-vladislav_1.jpg", "data/models/img/olgerd-vladislav_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["stretchgoal", "king"]
         },
     
@@ -133,6 +149,7 @@
             "thumb": "data/models/img/pallantides_sd.jpg",
             "images": ["data/models/img/pallantides_1.jpg", "data/models/img/pallantides_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["stretchgoal", "king"]
         },
     
@@ -141,6 +158,7 @@
             "thumb": "data/models/img/pelias_sd.jpg",
             "images": ["data/models/img/pelias_1.jpg"],
             "paint": { "name": "gabzeta", "link": "https://the-overlord.com/index.php?/profile/232-gabzeta/"},
+            "type": "human",
             "origins": ["stretchgoal", "king"]
         },
     
@@ -149,6 +167,7 @@
             "thumb": "data/models/img/savage-belit_sd.jpg",
             "images": ["data/models/img/savage-belit_1.jpg", "data/models/img/savage-belit_2.jpg"],
             "paint": { "name": "gabzeta", "link": "https://the-overlord.com/index.php?/profile/232-gabzeta/"},
+            "type": "human",
             "origins": ["stretchgoal", "king"]
         },
     
@@ -157,6 +176,7 @@
             "thumb": "data/models/img/taurus_sd.jpg",
             "images": ["data/models/img/taurus_1.jpg", "data/models/img/taurus_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["stretchgoal", "king"]
         },
     
@@ -165,6 +185,7 @@
             "thumb": "data/models/img/constantius_sd.jpg",
             "images": ["data/models/img/constantius_1.jpg", "data/models/img/constantius_2.jpg"],
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
+            "type": "human",
             "origins": ["stretchgoal", "king"]
         },
     
@@ -173,6 +194,7 @@
             "thumb": "data/models/img/skuthus_sd.jpg",
             "images": ["data/models/img/skuthus_1.jpg", "data/models/img/skuthus_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["corebox", "stretchgoal", "king"]
         },
     
@@ -181,6 +203,7 @@
             "thumb": "data/models/img/thak_sd.jpg",
             "images": ["data/models/img/thak_1.jpg", "data/models/img/thak_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "monster",
             "origins": ["corebox", "stretchgoal", "king"]
         },
     
@@ -189,6 +212,7 @@
             "thumb": "data/models/img/zaporavo_sd.jpg",
             "images": ["data/models/img/zaporavo_1.jpg", "data/models/img/zaporavo_2.jpg"],
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
+            "type": "human",
             "origins": ["corebox", "stretchgoal", "king"]
         },
     
@@ -197,6 +221,7 @@
             "thumb": "data/models/img/zogar-sag_sd.jpg",
             "images": ["data/models/img/zogar-sag_1.jpg", "data/models/img/zogar-sag_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["corebox", "stretchgoal", "king"]
         },
     
@@ -205,6 +230,7 @@
             "thumb": "data/models/img/vanir-valkyrie_sd.jpg",
             "images": ["data/models/img/vanir-valkyrie_1.jpg", "data/models/img/vanir-valkyrie_2.jpg"],
             "paint": { "name": "Not Quite Dead", "link": "https://the-overlord.com/index.php?/profile/891-not-quite-dead/"},
+            "type": "human",
             "origins": ["valvan"]
         },
     
@@ -213,6 +239,7 @@
             "thumb": "data/models/img/yogah-of-yag_sd.jpg",
             "images": ["data/models/img/yogah-of-yag_1.jpg"],
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
+            "type": "monster",
             "origins": ["yoy"]
         },
     
@@ -221,6 +248,7 @@
             "thumb": "data/models/img/belit-the-princess_sd.jpg",
             "images": ["data/models/img/belit-the-princess_1.jpg"],
             "paint": null,
+            "type": "human",
             "origins": ["xcbox"]
         },
     
@@ -229,6 +257,7 @@
             "thumb": "data/models/img/king-conan_sd.jpg",
             "images": ["data/models/img/king-conan_1.jpg"],
             "paint": null,
+            "type": "human",
             "origins": ["xcbox"]
         },
     
@@ -237,6 +266,7 @@
             "thumb": "data/models/img/belit-queen-of-the-black-coast_sd.jpg",
             "images": ["data/models/img/belit-queen-of-the-black-coast_1.jpg", "data/models/img/belit-queen-of-the-black-coast_2.jpg", "data/models/img/belit-queen-of-the-black-coast_3.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["bbox"]
         },
     
@@ -245,6 +275,7 @@
             "thumb": "data/models/img/conan-the-thief_sd.jpg",
             "images": ["data/models/img/conan-the-thief_1.jpg", "data/models/img/conan-the-thief_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["bbox"]
         },
     
@@ -253,6 +284,7 @@
             "thumb": "data/models/img/taramis-salome_sd.jpg",
             "images": ["data/models/img/taramis-salome_1.jpg"],
             "paint": null,
+            "type": "human",
             "origins": ["ppbox"]
         },
     
@@ -261,6 +293,7 @@
             "thumb": "data/models/img/valeria-warrior_sd.jpg",
             "images": ["data/models/img/valeria-warrior_1.jpg"],
             "paint": null,
+            "type": "human",
             "origins": ["ppbox"]
         },
     
@@ -269,6 +302,7 @@
             "thumb": "data/models/img/niord_sd.jpg",
             "images": ["data/models/img/niord_1.jpg"],
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
+            "type": "human",
             "origins": ["nordheim"]
         },
     
@@ -277,6 +311,7 @@
             "thumb": "data/models/img/shentu_sd.jpg",
             "images": ["data/models/img/shentu_1.jpg", "data/models/img/shentu_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["khitai"]
         },
     
@@ -285,6 +320,7 @@
             "thumb": "data/models/img/ikhmet_sd.jpg",
             "images": ["data/models/img/ikhmet_1.jpg"],
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
+            "type": "human",
             "origins": ["stygia"]
         },
         
@@ -293,6 +329,7 @@
             "thumb": ["data/models/img/captain_sd.jpg"],
             "images": ["data/models/img/captain_1.jpg", "data/models/img/captain_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["corebox", "stretchgoal", "king"]
         },
     
@@ -301,6 +338,7 @@
             "thumb": ["data/models/img/dark-demon_sd.jpg"],
             "images": ["data/models/img/dark-demon_1.jpg", "data/models/img/dark-demon_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "monster",
             "origins": ["corebox", "stretchgoal", "king"]
         },
     
@@ -309,6 +347,7 @@
             "thumb": ["data/models/img/giant-snake_sd.jpg"],
             "images": ["data/models/img/giant-snake_1.jpg", "data/models/img/giant-snake_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "monster",
             "origins": ["corebox", "stretchgoal", "king"]
         },
     
@@ -317,6 +356,7 @@
             "thumb": ["data/models/img/khosatral-khel_sd.jpg"],
             "images": ["data/models/img/khosatral-khel_1.jpg", "data/models/img/khosatral-khel_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["corebox", "stretchgoal", "king"]
         },
     
@@ -325,6 +365,7 @@
             "thumb": ["data/models/img/outer-dark-demon_sd.jpg"],
             "images": ["data/models/img/outer-dark-demon_1.jpg", "data/models/img/outer-dark-demon_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "monster",
             "origins": ["corebox", "stretchgoal", "king"]
         },
     
@@ -333,6 +374,7 @@
             "thumb": ["data/models/img/belits-guards_sd.jpg"],
             "images": ["data/models/img/belits-guards_1.jpg", "data/models/img/belits-guards_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["corebox", "stretchgoal", "king"],
             "count": 5
         },
@@ -342,6 +384,7 @@
             "thumb": ["data/models/img/princess_sd.jpg"],
             "images": ["data/models/img/princess_1.jpg", "data/models/img/princess_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["corebox", "stretchgoal", "king"]
         },
     
@@ -350,6 +393,7 @@
             "thumb": ["data/models/img/bossonian-archers_sd.jpg"],
             "images": ["data/models/img/bossonian-archers_1.jpg", "data/models/img/bossonian-archers_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["corebox", "stretchgoal", "king"],
             "count": 5
         },
@@ -359,6 +403,7 @@
             "thumb": ["data/models/img/bossonian-guards_sd.jpg"],
             "images": ["data/models/img/bossonian-guards_1.jpg", "data/models/img/bossonian-guards_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["corebox", "stretchgoal", "king"],
             "count": 15
         },
@@ -368,6 +413,7 @@
             "thumb": ["data/models/img/bossonian-guards_sd.jpg"],
             "images": ["data/models/img/bossonian-guards_3.jpg", "data/models/img/bossonian-guards_4.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["stretchgoal", "king"],
             "count": 5
         },
@@ -377,6 +423,7 @@
             "thumb": ["data/models/img/hyenas_sd.jpg"],
             "images": ["data/models/img/hyenas_1.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "animal",
             "origins": ["corebox", "stretchgoal", "king"],
             "count": 5
         },
@@ -386,6 +433,7 @@
             "thumb": ["data/models/img/pict-hunters_sd.jpg"],
             "images": ["data/models/img/pict-hunters_1.jpg", "data/models/img/pict-hunters_2.jpg"],
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
+            "type": "human",
             "origins": ["corebox", "stretchgoal", "king"],
             "count": 15
         },
@@ -395,6 +443,7 @@
             "thumb": ["data/models/img/pict-warriors_sd.jpg"],
             "images": ["data/models/img/pict-warriors_1.jpg", "data/models/img/pict-warriors_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["stretchgoal", "king"],
             "count": 5
         },
@@ -404,6 +453,7 @@
             "thumb": ["data/models/img/pirates_sd.jpg"],
             "images": ["data/models/img/pirates_1.jpg", "data/models/img/pirates_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["corebox", "stretchgoal", "king"],
             "count": 15
         },
@@ -413,6 +463,7 @@
             "thumb": ["data/models/img/pirates_sd.jpg"],
             "images": ["data/models/img/pirates_3.jpg", "data/models/img/pirates_4.jpg"],
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
+            "type": "human",
             "origins": ["stretchgoal", "king"],
             "count": 5
         },
@@ -422,6 +473,7 @@
             "thumb": ["data/models/img/thog_sd.jpg"],
             "images": ["data/models/img/thog_1.jpg", "data/models/img/thog_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "monster",
             "origins": ["king"]
         },
     
@@ -430,6 +482,7 @@
             "thumb": ["data/models/img/conans-lion_sd.jpg"],
             "images": ["data/models/img/conans-lion_1.jpg"],
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
+            "type": "animal",
             "origins": ["king"]
         },
     
@@ -438,6 +491,7 @@
             "thumb": ["data/models/img/mummies_sd.jpg"],
             "images": ["data/models/img/mummies_1.jpg", "data/models/img/mummies_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "monster",
             "origins": ["stretchgoal", "king"],
             "count": 5
         },
@@ -447,6 +501,7 @@
             "thumb": ["data/models/img/mummies_sd.jpg"],
             "images": ["data/models/img/mummies_3.jpg", "data/models/img/mummies_4.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "monster",
             "origins": ["stretchgoal", "king"],
             "count": 5
         },
@@ -456,6 +511,7 @@
             "thumb": ["data/models/img/mummies_sd.jpg"],
             "images": ["data/models/img/mummies_5.jpg", "data/models/img/mummies_6.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "monster",
             "origins": ["king"],
             "count": 10
         },
@@ -465,6 +521,7 @@
             "thumb": ["data/models/img/skeletons_sd.jpg"],
             "images": ["data/models/img/skeletons_5.jpg"],
             "paint": { "name": "gabzeta", "link": "https://the-overlord.com/index.php?/profile/232-gabzeta/"},
+            "type": "monster",
             "origins": ["stretchgoal", "king"],
             "count": 5
         },
@@ -474,6 +531,7 @@
             "thumb": ["data/models/img/skeletons_sd.jpg"],
             "images": ["data/models/img/skeletons_3.jpg", "data/models/img/skeletons_4.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "monster",
             "origins": ["stretchgoal", "king"],
             "count": 5
         },
@@ -483,6 +541,7 @@
             "thumb": ["data/models/img/skeletons_sd.jpg"],
             "images": ["data/models/img/skeletons_1.jpg", "data/models/img/skeletons_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "monster",
             "origins": ["king"],
             "count": 15
         },
@@ -492,6 +551,7 @@
             "thumb": ["data/models/img/ageera_sd.jpg"],
             "images": ["data/models/img/ageera_1.jpg", "data/models/img/ageera_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["stretchgoal", "king"]
         },
     
@@ -500,6 +560,7 @@
             "thumb": ["data/models/img/akivasha_sd.jpg"],
             "images": ["data/models/img/akivasha_1.jpg", "data/models/img/akivasha_2.jpg"],
             "paint": { "name": "gabzeta", "link": "https://the-overlord.com/index.php?/profile/232-gabzeta/"},
+            "type": "human",
             "origins": ["stretchgoal", "king"]
         },
     
@@ -508,6 +569,7 @@
             "thumb": ["data/models/img/gitara_sd.jpg"],
             "images": ["data/models/img/gitara_1.jpg", "data/models/img/gitara_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["stretchgoal", "king"]
         },
     
@@ -516,6 +578,7 @@
             "thumb": ["data/models/img/hyperborean-primitive_sd.jpg"],
             "images": ["data/models/img/hyperborean-primitive_1.jpg", "data/models/img/hyperborean-primitive_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "monster",
             "origins": ["stretchgoal", "king"]
         },
     
@@ -524,6 +587,7 @@
             "thumb": ["data/models/img/khemsa_sd.jpg"],
             "images": ["data/models/img/khemsa_1.jpg", "data/models/img/khemsa_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["stretchgoal", "king"]
         },
     
@@ -532,6 +596,7 @@
             "thumb": ["data/models/img/natohk_sd.jpg"],
             "images": ["data/models/img/natohk_1.jpg", "data/models/img/natohk_2.jpg"],
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
+            "type": "human",
             "origins": ["stretchgoal", "king"]
         },
     
@@ -540,6 +605,7 @@
             "thumb": ["data/models/img/warlock_sd.jpg"],
             "images": ["data/models/img/warlock_1.jpg", "data/models/img/warlock_2.jpg"],
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
+            "type": "human",
             "origins": ["stretchgoal", "king"]
         },
     
@@ -549,6 +615,7 @@
             "thumb": ["data/models/img/camel_sd.jpg"],
             "images": ["data/models/img/camel_1.jpg", "data/models/img/camel_2.jpg"],
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
+            "type": "animal",
             "origins": ["stretchgoal", "king"]
         },
     
@@ -557,6 +624,7 @@
             "thumb": ["data/models/img/kothian-archer_sd.jpg"],
             "images": ["data/models/img/kothian-archer_1.jpg", "data/models/img/kothian-archer_2.jpg"],
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
+            "type": "human",
             "origins": ["stretchgoal", "king"]
         },
     
@@ -565,6 +633,7 @@
             "thumb": ["data/models/img/slasher_sd.jpg"],
             "images": ["data/models/img/slasher_1.jpg", "data/models/img/slasher_2.jpg"],
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
+            "type": "animal",
             "origins": ["stretchgoal", "king"]
         },
     
@@ -573,6 +642,7 @@
             "thumb": ["data/models/img/bone-golem_sd.jpg"],
             "images": ["data/models/img/bone-golem_1.jpg"],
             "paint": { "name": "gabzeta", "link": "https://the-overlord.com/index.php?/profile/232-gabzeta/"},
+            "type": "monster",
             "origins": ["stretchgoal", "king"]
         },
     
@@ -581,6 +651,7 @@
             "thumb": ["data/models/img/forest-demon_sd.jpg"],
             "images": ["data/models/img/forest-demon_1.jpg", "data/models/img/forest-demon_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "monster",
             "origins": ["stretchgoal", "king"]
         },
     
@@ -589,6 +660,7 @@
             "thumb": ["data/models/img/giant-spider_sd.jpg"],
             "images": ["data/models/img/giant-spider_1.jpg", "data/models/img/giant-spider_2.jpg"],
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
+            "type": "monster",
             "origins": ["stretchgoal", "king"]
         },
     
@@ -597,6 +669,7 @@
             "thumb": ["data/models/img/gray-man-ape_sd.jpg"],
             "images": ["data/models/img/gray-man-ape_1.jpg", "data/models/img/gray-man-ape_2.jpg"],
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
+            "type": "monster",
             "origins": ["stretchgoal", "king"]
         },
     
@@ -605,6 +678,7 @@
             "thumb": ["data/models/img/swamp-demon_sd.jpg"],
             "images": ["data/models/img/swamp-demon_1.jpg", "data/models/img/swamp-demon_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "monster",
             "origins": ["stretchgoal", "king"]
         },
     
@@ -613,6 +687,7 @@
             "thumb": ["data/models/img/thaug_sd.jpg"],
             "images": ["data/models/img/thaug_1.jpg", "data/models/img/thaug_2.jpg"],
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
+            "type": "monster",
             "origins": ["stretchgoal", "king"]
         },
     
@@ -621,6 +696,7 @@
             "thumb": ["data/models/img/pict-archers_sd.jpg"],
             "images": ["data/models/img/pict-archers_1.jpg", "data/models/img/pict-archers_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["stretchgoal", "king"],
             "count": 5
         },
@@ -630,6 +706,7 @@
             "thumb": ["data/models/img/tentacles_sd.jpg"],
             "images": ["data/models/img/tentacles_1.jpg"],
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
+            "type": "monster",
             "origins": ["stretchgoal", "king"],
             "count": 5
         },
@@ -639,6 +716,7 @@
             "thumb": ["data/models/img/tentacles_sd.jpg"],
             "images": ["data/models/img/tentacles_2.jpg"],
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
+            "type": "monster",
             "origins": ["stretchgoal", "king"],
             "count": 5
         },
@@ -648,6 +726,7 @@
             "thumb": ["data/models/img/tentacles_sd.jpg"],
             "images": ["data/models/img/tentacles_3.jpg"],
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
+            "type": "monster",
             "origins": ["stretchgoal", "king"],
             "count": 3
         },
@@ -657,6 +736,7 @@
             "thumb": ["data/models/img/baal-pteor_sd.jpg"],
             "images": ["data/models/img/baal-pteor_1.jpg", "data/models/img/baal-pteor_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["baalpteor"]
         },
     
@@ -665,6 +745,7 @@
             "thumb": ["data/models/img/black-dragons_sd.jpg"],
             "images": ["data/models/img/black-dragons_1.jpg", "data/models/img/black-dragons_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["blackdragons"],
             "count": 5
         },
@@ -674,6 +755,7 @@
             "thumb": ["data/models/img/the-black-ones_sd.jpg"],
             "images": ["data/models/img/the-black-ones_1.jpg", "data/models/img/the-black-ones_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["blackones"],
             "count": 10
         },
@@ -683,6 +765,7 @@
             "thumb": ["data/models/img/crossbowmen_sd.jpg"],
             "images": ["data/models/img/crossbowmen_1.jpg", "data/models/img/crossbowmen_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["crossbowmen"],
             "count": 10
         },
@@ -692,6 +775,7 @@
             "thumb": ["data/models/img/demon-of-the-earth_sd.jpg"],
             "images": ["data/models/img/demon-of-the-earth_1.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "monster",
             "origins": ["demonearth"]
         },
     
@@ -700,6 +784,7 @@
             "thumb": ["data/models/img/dragon_sd.jpg"],
             "images": ["data/models/img/dragon_1.jpg", "data/models/img/dragon_2.jpg"],
             "paint": { "name": "Dahkon", "link": "https://the-overlord.com/index.php?/profile/44-dahkon/"},
+            "type": "monster",
             "origins": ["dragon"]
         },
     
@@ -708,6 +793,7 @@
             "thumb": ["data/models/img/giant-wolves_sd.jpg"],
             "images": ["data/models/img/giant-wolves_1.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "animal",
             "origins": ["giantwolves"],
             "count": 10
         },
@@ -717,6 +803,7 @@
             "thumb": ["data/models/img/giant-wolves_sd.jpg"],
             "images": ["data/models/img/giant-wolves_1.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "animal",
             "origins": ["king"]
         },
     
@@ -725,6 +812,7 @@
             "thumb": ["data/models/img/sabertooth-tiger_sd.jpg"],
             "images": ["data/models/img/sabertooth-tiger_1.jpg"],
             "paint": { "name": "Not Quite Dead", "link": "https://the-overlord.com/index.php?/profile/891-not-quite-dead/"},
+            "type": "monster",
             "origins": ["sabretoothtiger"]
         },
     
@@ -733,6 +821,7 @@
             "thumb": ["data/models/img/afari_sd.jpg"],
             "images": ["data/models/img/afari_1.jpg", "data/models/img/afari_2.jpg"],
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
+            "type": "human",
             "origins": ["kushwitchhunters"]
         },
     
@@ -741,6 +830,7 @@
             "thumb": ["data/models/img/ghayoor_sd.jpg"],
             "images": ["data/models/img/ghayoor_1.jpg", "data/models/img/ghayoor_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["kushwitchhunters"]
         },
     
@@ -749,6 +839,7 @@
             "thumb": ["data/models/img/shafiah_sd.jpg"],
             "images": ["data/models/img/shafiah_1.jpg", "data/models/img/shafiah_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["kushwitchhunters"]
         },
     
@@ -757,6 +848,7 @@
             "thumb": ["data/models/img/shubba_sd.jpg"],
             "images": ["data/models/img/shubba_1.jpg","data/models/img/shubba_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["kushwitchhunters"]
         },
     
@@ -765,6 +857,7 @@
             "thumb": ["data/models/img/atali_sd.jpg"],
             "images": ["data/models/img/atali_1.jpg"],
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
+            "type": "human",
             "origins": ["nordheim"]
         },
     
@@ -773,6 +866,7 @@
             "thumb": ["data/models/img/nijgor_sd.jpg"],
             "images": ["data/models/img/nijgor_1.jpg"],
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
+            "type": "monster",
             "origins": ["nordheim"]
         },
     
@@ -781,6 +875,7 @@
             "thumb": ["data/models/img/seski_sd.jpg"],
             "images": ["data/models/img/seski_1.jpg"],
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
+            "type": "monster",
             "origins": ["nordheim"]
         },
     
@@ -789,6 +884,7 @@
             "thumb": ["data/models/img/vanir-warriors_sd.jpg"],
             "images": ["data/models/img/vanir-warriors_1.jpg", "data/models/img/vanir-warriors_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["nordheim"],
             "count": 10
         },
@@ -798,6 +894,7 @@
             "thumb": ["data/models/img/crows_sd.jpg"],
             "images": ["data/models/img/crows_1.jpg"],
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
+            "type": "animal",
             "origins": ["nordheim"],
             "count": 5
         },
@@ -807,6 +904,7 @@
             "thumb": ["data/models/img/aesir-warriors_sd.jpg"],
             "images": ["data/models/img/aesir-warriors_1.jpg", "data/models/img/aesir-warriors_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["nordheim"],
             "count": 5
         },
@@ -816,6 +914,7 @@
             "thumb": ["data/models/img/shuang-mian_sd.jpg"],
             "images": ["data/models/img/shuang-mian_1.jpg", "data/models/img/shuang-mian_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["khitai"]
         },
     
@@ -824,6 +923,7 @@
             "thumb": ["data/models/img/khitan-guards_sd.jpg"],
             "images": ["data/models/img/khitan-guards_1.jpg"],
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
+            "type": "human",
             "origins": ["khitai"],
             "count": 5
         },
@@ -833,6 +933,7 @@
             "thumb": ["data/models/img/honor-guards_sd.jpg"],
             "images": ["data/models/img/honor-guards_1.jpg"],
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
+            "type": "human",
             "origins": ["khitai"],
             "count": 5
         },
@@ -842,6 +943,7 @@
             "thumb": ["data/models/img/javelin-throwers_sd.jpg"],
             "images": ["data/models/img/javelin-throwers_1.jpg", "data/models/img/javelin-throwers_2.jpg"],
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
+            "type": "human",
             "origins": ["khitai"],
             "count": 5
         },
@@ -851,6 +953,7 @@
             "thumb": ["data/models/img/foo-dogs_sd.jpg"],
             "images": ["data/models/img/foo-dogs_1.jpg"],
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
+            "type": "animal",
             "origins": ["khitai"],
             "count": 5
         },
@@ -860,6 +963,7 @@
             "thumb": ["data/models/img/thot-amon_sd.jpg"],
             "images": ["data/models/img/thot-amon_1.jpg", "data/models/img/thot-amon_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["stygia"]
         },
     
@@ -868,6 +972,7 @@
             "thumb": ["data/models/img/scorpion-broodmother_sd.jpg"],
             "images": ["data/models/img/scorpion-broodmother_1.jpg"],
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
+            "type": "monster",
             "origins": ["stygia"]
         },
     
@@ -876,6 +981,7 @@
             "thumb": ["data/models/img/giant-scorpion_sd.jpg"],
             "images": ["data/models/img/giant-scorpion_1.jpg", "data/models/img/giant-scorpion_2.jpg"],
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
+            "type": "monster",
             "origins": ["stygia"],
             "count": 10
         },
@@ -885,6 +991,7 @@
             "thumb": ["data/models/img/giant-scorpion_sd.jpg"],
             "images": ["data/models/img/giant-scorpion_1.jpg", "data/models/img/giant-scorpion_2.jpg"],
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
+            "type": "monster",
             "origins": ["stretchgoal", "king"]
         },
     
@@ -893,6 +1000,7 @@
             "thumb": ["data/models/img/eternal-guard_sd.jpg"],
             "images": ["data/models/img/eternal-guard_1.jpg"],
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
+            "type": "human",
             "origins": ["stygia"],
             "count": 5
         },
@@ -902,6 +1010,7 @@
             "thumb": ["data/models/img/assassins_sd.jpg"],
             "images": ["data/models/img/assassins_1.jpg", "data/models/img/assassins_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["stygia"],
             "count": 5
         },
@@ -911,6 +1020,7 @@
             "thumb": ["data/models/img/spartan_sd.jpg"],
             "images": ["data/models/img/spartan_1.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
             "origins": ["stretchgoal", "king"]
         }        
     ]
