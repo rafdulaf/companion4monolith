@@ -4,7 +4,6 @@ var CardEquipment = {
             'tab': "Équipe<wbr/>ment",
             'nocard': "Vous n'avez aucune carte pour le moment.",
             'nocard2': " Cliquez sur le bouton + en haut pour en creer une.",
-            'printnocard': "Vous n'avez aucune carte pour le moment",
             'newcard': "Créer une carte",
             'print': "Imprimer des cartes",
             'editcard': "Modifier",
@@ -52,7 +51,6 @@ var CardEquipment = {
             'tab': "Equip<wbr/>ment",
             'nocard': "You have no card for the moment.",
             'nocard2': " Click on the + button in the header to create one.",
-            'printnocard': "You have no card for the moment",
             'newcard': "Create a new card",
             'print': "Print cards",
             'editcard': "Edit a card",
@@ -100,7 +98,6 @@ var CardEquipment = {
             'tab': "Equip<wbr/>aggiamento",
             'nocard': "Al momento non hai carte. ",
             'nocard2': "Clicca + sulla barra degli strumenti per aggiungerne una",
-            'printnocard': "Al momento non hai carte",
             'newcard': "Crea una nuova carta",
             'print': "Stampa carte",
             'editcard': "Modifica una carta",
@@ -143,7 +140,7 @@ var CardEquipment = {
             'header1bis': "Scegli un'immagine",
             'header2': "Anteprima risultato finale",
             'copyright': "Basato sui file PSD di <a href='https://the-overlord.com/index.php?/profile/9-genesteal28/'>@genesteal28</a> e convertiti nel formato GIMP da <a href='https://the-overlord.com/index.php?/profile/31-jabbathehatt/'>@jabbathehatt</a> e <a href='https://the-overlord.com/index.php?/profile/1-sentma/'>SentMa</a> per il retro delle carte."
-              }
+        }
     },
 
     preinit: function() {
@@ -368,7 +365,6 @@ var CardEquipment = {
         function _skills()
         {
             var s = "";
-
 
             for (var i in Encyclopedia.skills.types)
             {

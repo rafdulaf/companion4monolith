@@ -85,7 +85,7 @@ var ConanStudio = {
             + HeroSheet._getDisplayCardsCode(false)
 
             + "<h1>" + Tile._i18n[Language].tab + "</h1>"
-            + "<div class=\"nocards\">" + Tile._i18n[Language].printnocard + "</div>"
+            + Tile._getDisplayTileCode(false)
 
             + "<div class=\"print\"><button onclick=\"ConanStudio._printCards();\">" + ConanStudio._i18n[Language].printcardsLabel + "</button></div>"
 

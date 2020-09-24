@@ -1,0 +1,391 @@
+.tile-icon-add:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f055";  
+}
+.tile-icon-print:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f02f";  
+}
+
+#tile {
+    font-family: 'Hyborian';
+    overflow: auto;
+    position: relative;
+}
+.tile.tiletile {
+    font-family: 'Hyborian';
+    text-align: left;
+    
+    position: relative;
+    display: inline-block; 
+    
+    margin: 2px;
+    border-radius: 15px;
+
+    overflow: hidden;    
+}
+.tile.tiletile {
+    width: 200px;
+    height: calc(200px / 0.67);
+    font-size: 18px;
+}
+.printcards .tile.tiletile {
+    width: 100px;
+    height: calc(100px / 0.67);
+    font-size: 9px;
+}
+
+.printcards input[name=tile] { position: absolute; top:-5000px; }
+.printcards input[name=tile] + label { position: relative; display: inline-block; margin-right: 5px; }
+.printcards input[name=tile] + label:before { position: absolute; content: " "; z-index: 1; top: 0; left: 0; right: 0; bottom: 0; background-color: #000000; opacity: 0.2; }
+.printcards input[name=tile] + label:after { position: absolute; content: "\f057"; font-family: 'Font Awesome 5 Free'; font-size: 40px; left: -7px; top: -7px; color: red; }
+.printcards input[name=tile]:checked + label:before { display: none; }
+.printcards input[name=tile]:checked + label:after { content: "\f058"; color: green; }
+
+@media screen and (max-width: 400px) {
+    .tile.tiletile {
+        width: 160px;
+        height: calc(160px / 0.67);
+        font-size: 14.4px;
+    }
+    .printcards .tile.tiletile {
+        width: 80px;
+        height: calc(80px / 0.67);
+        font-size: 7.2px;
+    }
+}
+
+@media print {
+    .printcards .tile.tiletile,
+    .dialog .printcards .back[id^=tile] {
+        margin: 0.1cm 0.1cm;
+        width: 4.2cm;
+        height: calc(4.2cm / 0.67);
+        font-size: 0.4cm;
+        border-radius: 0.3cm;
+        position: relative;
+    }
+    .printcards.cut .tile.tiletile {
+        overflow: visible;
+        border-radius: 0cm;
+    }
+    .printcards.cut .tile.tiletile,
+    .dialog .printcards.cut .back[id^=tile] {
+        margin: 0.6cm 0.55cm;
+    }
+
+    .dialog .printcards .back[id^=tile] img {
+        position: absolute;
+        width: 147.5%;
+        left: -24.5%;
+        top: -15.5%;
+    }    
+    .dialog .printcards.cut .back[id^=tile] { 
+        border-radius: 0; 
+        overflow: visible;
+    }
+}
+
+.tile.tiletile picture.background img {
+    position: absolute;
+    width: 147.5%;
+    left: -24.5%;
+    top: -15.5%;
+}
+.tile.tiletile img.background-name {
+    position: absolute;
+    top: 3%;
+    width: 81.37%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+
+
+
+#tile .notiles {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(200,200,200,0.5);
+    display: block;
+    padding: 40px;
+    border-radius: 40px;
+    z-index: 10;
+    pointer-events: none;
+    font-family: "Hyborian";
+}
+
+.dialog .tile .field {
+    padding: 0 20px 5px 20px;
+    position: relative;
+    text-align: center;
+}
+.dialog .tile .field.error {
+    border: 1px solid #FF0000;
+}
+.dialog .tile .field + .field {
+    margin-top: 10px;
+}
+    
+.dialog .tile .field label {
+    display: block;
+    font-size: 26px;
+    line-height: 26px;
+    position: relative;
+    text-align: left;
+}
+.dialog .tile .field input,
+.dialog .tile .field select {
+    border: none;
+    width: 100%;
+    outline: none;
+}
+
+.dialog .tile .field input#tname {
+   font-size: 34px;
+   height: 72px;
+   font-family: 'Hyborian';
+   text-align: center;
+   color: #000000;
+   background-image: url(img/name-background.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+}
+
+.dialog .tile .field.skills {
+    height: 85px
+}
+.dialog .tile .field.skills select {
+    width: 50%;
+}
+
+.dialog .tile .field.movement,
+.dialog .tile .field.defense {
+    height: 113px;
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.dialog .tile .field.imagelocation,
+.dialog .tile .field.imagezoom,
+.dialog .tile .field.imagerotation {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    height: 85px
+}
+
+.dialog .tile .field.imagelocation {
+    width: 50%;
+    margin-top: 0;
+    text-align: left;
+}
+.dialog .tile .field.imagezoom,
+.dialog .tile .field.imagerotation {
+    width: 25%;
+    margin-top: 0;
+    text-align: left;
+}
+.dialog .tile .field.imagezoom:after,
+.dialog .tile .field.imagelocation div:after {
+    margin-left: 3px;
+    content: "%";
+}
+.dialog .tile .field.imagerotation:after {
+    margin-left: 3px;
+    content: "°";
+}
+.dialog .tile .field.imagelocation input,
+.dialog .tile .field.imagezoom input,
+.dialog .tile .field.imagerotation input {
+    width: 34px;
+    text-align: right;
+}
+.dialog .tile .field.imagelocation, .dialog .tile .field.imagezoom
+{ padding-right: 0; }
+.dialog .tile .field.imagezoom, .dialog .tile .field.imagerotation
+{ padding-left: 0; }
+
+.dialog .tile .field.imagelocation > div {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.dialog .tile .field.movement  label {
+    margin-bottom: 16px;
+}
+
+.dialog .tile .field.movement:before {
+   content: " ";
+   position: absolute;
+   bottom: 0;
+   top: 20px;
+   left: 0;
+   right: 0;
+   
+   background-repeat: no-repeat;
+   background-position: calc(50% - 40px);
+   background-size: contain;
+}
+
+.dialog .tile .field.movement:before {
+   background-image: url(img/movement.png);
+}
+
+.dialog .tile .field input#tmovement,
+.dialog .tile .field input#tdefense {
+    font-size: 36px;
+   font-family: "Motrg";
+   text-align: center;
+   color: #FFFFFF;
+   background-repeat: no-repeat;
+   background-position: calc(50% - 6px);
+   background-size: contain;
+   width: 54px;
+}
+
+
+.dialog .tile .field input#timage,
+.dialog .tile .field input#timagelocation,
+.dialog .tile .field input#timagelocation2,
+.dialog .tile .field input#timagezoom,
+.dialog .tile .field input#timagerotation {
+   font-size: 22px;
+   line-height: 36px;
+   font-family: 'Moolbor';
+}
+.dialog .tile .field select.dice
+{
+  font-family: "Font Awesome 5 Free";
+  font-size: 35px;
+  width: 60px;
+  display: inline-block;
+  vertical-align: top;
+  height: 44px;
+}
+
+.dialog .tile .field input[type=checkbox] {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: top;
+}
+.dialog .tile .field input[type=checkbox] + label {
+    width: calc(100% - 40px);
+    display: inline-block;
+    font-size: 35px;
+    font-family: "Font Awesome 5 Free";
+}
+
+.dialog .tile input#timage {
+    padding-left: 10px;
+}
+
+
+
+.dialog .tile-save:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f0c7";  
+}
+.dialog .tile-remove:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f2ed";  
+}
+
+
+
+.dialog .tile .ui-front {
+    z-index: 100000;
+    left: 0 !important;
+    right: 0 !important;
+}
+.dialog .tile .ui-button .ui-icon { background-image: none; }
+.dialog .tile .ui-selectmenu-menu ul li:before {
+    content: " ";
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+.dialog .tile span[role=combobox] {
+    background-color: transparent !important;
+    background-position: center !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+}
+
+.dialog .tile .skills + span { height: 58px; line-height: 58px; }
+.dialog .tile .ui-menu { width: 100% !important; text-align: right; }
+.dialog .tile .ui-menu .ui-menu-item { display: inline-block; vertical-align: top; width: 14%; text-align: center; }
+.dialog .tile .skills ~ .ui-selectmenu-menu { width: 58px; } 
+
+@media screen and (max-width: 450px) {
+    .dialog .tile .ui-menu .ui-menu-item { width: 25%; }
+}
+
+.dialog .tile .ui-selectmenu-text, .dialog .tile .ui-menu .ui-menu-item-wrapper { color: transparent; font-size: 1px; }
+.dialog .tile .ui-selectmenu-icon.ui-icon.ui-icon-triangle-1-s { background-image: none; }
+.dialog .tile .ui-menu-item, .dialog .tile .ui-menu-item-wrapper { height: 40px; position: relative; }
+.dialog .tile .ui-selectmenu-button.ui-button.ui-widget.ui-selectmenu-button-closed.ui-corner-all { border-color: transparent; }
+.dialog .tile .dice ~ .ui-selectmenu-menu ul li:nth-child(1):before, .dialog .tile select[data-value=none] + span .ui-selectmenu-text:before { content: "?"; font-size: 26px; font-family: 'Hyborian'; color: #7F7F7F; position: absolute; top: 0; left: 32%; }
+.dialog .tile .dice ~ .ui-selectmenu-menu ul li:nth-child(2):before, .dialog .tile select[data-value=red] + span { background-image: url(img/dice_red.png) !important; }
+.dialog .tile .dice ~ .ui-selectmenu-menu ul li:nth-child(3):before, .dialog .tile select[data-value=redreroll] + span { background-image: url(img/dice_redreroll.png) !important; }
+.dialog .tile .dice ~ .ui-selectmenu-menu ul li:nth-child(4):before, .dialog .tile select[data-value=orange] + span { background-image: url(img/dice_orange.png) !important; }
+.dialog .tile .dice ~ .ui-selectmenu-menu ul li:nth-child(5):before, .dialog .tile select[data-value=orangereroll] + span { background-image: url(img/dice_orangereroll.png) !important; }
+.dialog .tile .dice ~ .ui-selectmenu-menu ul li:nth-child(6):before, .dialog .tile select[data-value=yellow] + span { background-image: url(img/dice_yellow.png) !important; }
+.dialog .tile .dice ~ .ui-selectmenu-menu ul li:nth-child(7):before, .dialog .tile select[data-value=yellowreroll] + span { background-image: url(img/dice_yellowreroll.png) !important; }
+
+.dialog .tile select.skills { font-family: 'Moolbor'; font-size: 19px; }
+
+.dialog .tile-preview .preview {
+    text-align: center;
+    margin-top: 20px;
+}
+.dialog .tile h1,
+.dialog .tile-preview h1 {
+    margin-bottom: 0.5em;
+    margin-top: 0;
+    text-align: center;
+    font-family: 'Hyborian';
+    font-size: 16px;
+    vertical-align: top;
+}
+.dialog .tile h1:before,
+.dialog .tile-preview h1:before {
+    display: inline-block;
+    color: #FFF;
+    background-color: #000;
+    width: 20px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.dialog .eqcol:nth-child(1) .tile h1:before {
+    content: "1";
+}
+.dialog .eqcol:nth-child(2) .tile h1:before {
+    content: "2";
+}
+.dialog .eqcol:nth-child(2) .tile-preview h1:before {
+    content: "3";
+}
+
+@media screen and (min-width: 840px) {
+    .dialog .eqcol {
+        width: 50%;
+        display: inline-block;
+        vertical-align: top;
+    }
+}
