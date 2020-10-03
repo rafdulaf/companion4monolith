@@ -21,6 +21,8 @@ var Tile = {
             'skills': "Compétences",
             'skillsPh': "?",
             'skillsNone': "Aucune",
+            'reinforcement': "Renfort",
+            'reinforcementPh': "?",
             'image': "Image (fond transparent)",
             'imagePh': "Entrer l'adresse de l'image (http://)",
             'imagelocation': "Emplacement",
@@ -62,6 +64,8 @@ var Tile = {
             'skills': "Skills",
             'skillsPh': "?",
             'skillsNone': "None",
+            'reinforcement': "Renfort",
+            'reinforcementPh': "?",
             'image': "Image (transparent background)",
             'imagePh': "Enter the image address (http://...)",
             'imagelocation': "Location",
@@ -103,6 +107,8 @@ var Tile = {
             'skills': "Abilità",
             'skillsPh': "?",
             'skillsNone': "Nessuna",
+            'reinforcement': "TODO_TOTRANSLATE",
+            'reinforcementPh': "?",
             'image': "Immagine (sfondo trasparente)",
             'imagePh': "Inserisci l'URL dell'immagine (http://...)",
             'imagelocation': "Posizione",
@@ -277,18 +283,17 @@ var Tile = {
                 + "</div>"
                 + "<div class=\"field defense\">"
                     + "<label for=\"tdefense\">" + Tile._i18n[Language].defense + "</label>"
-                    + "<input type=\"number\" min=\"0\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"tdefense\" name=\"tilemovement\" autocomplete=\"off\" placeholder=\"" + Tile._i18n[Language].defensePh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
+                    + "<input type=\"number\" min=\"0\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"tdefense\" name=\"tiledefense\" autocomplete=\"off\" placeholder=\"" + Tile._i18n[Language].defensePh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
                 + "</div>"
-                + "<div class=\"field attacktype\">"
-                    + "<label for=\"tattacktype\">" + Tile._i18n[Language].attacktype + "</label>"
-                    + "<div class=\"attacktype\"><input type=\"checkbox\" id=\"tattacktype\" name=\"tileattacktype\" onchange=\"Tile._preview();\"/><label for=\"tattacktype\">" + Tile._i18n[Language].attacktype + "</label></div>"
-                + "</div>"
-                + "<div class=\"field dices\">"
+                + "<div class=\"field attackdices\">"
                     + "<label for=\"tdices\">" + Tile._i18n[Language].dices + "</label>"
-                    + "<select id=\"tdices\" class=\"dice\" name=\"tiledices1\"><option value=\"none\">" + Tile._i18n[Language].diceNone + "</option><option value=\"red\">" + Tile._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + Tile._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + Tile._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + Tile._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + Tile._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + Tile._i18n[Language].diceYellowReroll + "</option></select>"
-                    + "<select id=\"tdices2\" class=\"dice\" name=\"tiledices2\"><option value=\"none\">" + Tile._i18n[Language].diceNone + "</option><option value=\"red\">" + Tile._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + Tile._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + Tile._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + Tile._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + Tile._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + Tile._i18n[Language].diceYellowReroll + "</option></select>"
-                    + "<select id=\"tdices3\" class=\"dice\" name=\"tiledices3\"><option value=\"none\">" + Tile._i18n[Language].diceNone + "</option><option value=\"red\">" + Tile._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + Tile._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + Tile._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + Tile._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + Tile._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + Tile._i18n[Language].diceYellowReroll + "</option></select>"
-                    + "<select id=\"tdices4\" class=\"dice\" name=\"tiledices4\"><option value=\"none\">" + Tile._i18n[Language].diceNone + "</option><option value=\"red\">" + Tile._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + Tile._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + Tile._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + Tile._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + Tile._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + Tile._i18n[Language].diceYellowReroll + "</option></select>"
+                    + "<input type=\"checkbox\" id=\"tattacktype\" name=\"tileattacktype\" onchange=\"Tile._preview();\" title=\"" + Tile._i18n[Language].attacktype + "\"/>"
+                    + "<div>"
+                        + "<select id=\"tdices\" class=\"dice\" name=\"tiledices1\"><option value=\"none\">" + Tile._i18n[Language].diceNone + "</option><option value=\"red\">" + Tile._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + Tile._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + Tile._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + Tile._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + Tile._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + Tile._i18n[Language].diceYellowReroll + "</option></select>"
+                        + "<select id=\"tdices2\" class=\"dice\" name=\"tiledices2\"><option value=\"none\">" + Tile._i18n[Language].diceNone + "</option><option value=\"red\">" + Tile._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + Tile._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + Tile._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + Tile._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + Tile._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + Tile._i18n[Language].diceYellowReroll + "</option></select>"
+                        + "<select id=\"tdices3\" class=\"dice\" name=\"tiledices3\"><option value=\"none\">" + Tile._i18n[Language].diceNone + "</option><option value=\"red\">" + Tile._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + Tile._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + Tile._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + Tile._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + Tile._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + Tile._i18n[Language].diceYellowReroll + "</option></select>"
+                        + "<select id=\"tdices4\" class=\"dice\" name=\"tiledices4\"><option value=\"none\">" + Tile._i18n[Language].diceNone + "</option><option value=\"red\">" + Tile._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + Tile._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + Tile._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + Tile._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + Tile._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + Tile._i18n[Language].diceYellowReroll + "</option></select>"
+                    + "</div>"
                 + "</div>"
                 + "<div class=\"field skills\">"
                     + "<label for=\"tskills\">" + Tile._i18n[Language].skills + "</label>"
@@ -296,6 +301,10 @@ var Tile = {
                     + "<select id=\"tskills2\" class=\"skills\" name=\"tileskills2\" onchange=\"Tile._preview();\"><option value=\"none\">" + Tile._i18n[Language].skillsNone + "</option>" + _skills() + "</select>"
                     + "<select id=\"tskills3\" class=\"skills\" name=\"tileskills3\" onchange=\"Tile._preview();\"><option value=\"none\">" + Tile._i18n[Language].skillsNone + "</option>" + _skills() + "</select>"
                     + "<select id=\"tskills4\" class=\"skills\" name=\"tileskills4\" onchange=\"Tile._preview();\"><option value=\"none\">" + Tile._i18n[Language].skillsNone + "</option>" + _skills() + "</select>"
+                + "</div>"
+                + "<div class=\"field reinforcement\">"
+                    + "<label for=\"treinforcement\">" + Tile._i18n[Language].reinforcement + "</label>"
+                    + "<input type=\"number\" min=\"0\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"treinforcement\" name=\"tilereinforcement\" autocomplete=\"off\" placeholder=\"" + Tile._i18n[Language].reinforcementPh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
                 + "</div>"
             + "</div>"
             + "</div>"
@@ -337,6 +346,7 @@ var Tile = {
             attacktype: "contact",
             dices: { 0: "none", 1: "none", 2: "none", 3: "none" },
             skills: { 0: "none", 1: "none", 2: "none", 3: "none" },
+            reinforcement: "",
             image: "",
             imagelocation: {x: "50", y: "50"},
             imagezoom: "100",
@@ -367,13 +377,40 @@ var Tile = {
     {
         return {
             id: $(".dialog input[name=tilepos]")[0].value,
-            name: $(".dialog input[name=tilename]")[0].value
+            name: $(".dialog input[name=tilename]")[0].value,
+            movement: $(".dialog input[name=tilemovement]")[0].value,
+            defense: $(".dialog input[name=tiledefense]")[0].value,
+            attacktype: $(".dialog input[name=tileattacktype]")[0].checked ? "range" : "contact",
+            dices: { 0: $(".dialog select[name=tiledices1]")[0].value, 1: $(".dialog select[name=tiledices2]")[0].value, 2: $(".dialog select[name=tiledices3]")[0].value, 3: $(".dialog select[name=tiledices4]")[0].value },
+            skills: { 0: $(".dialog select[name=tileskills1]")[0].value, 1: $(".dialog select[name=tileskills2]")[0].value, 2: $(".dialog select[name=tileskills3]")[0].value, 3: $(".dialog select[name=tileskills4]")[0].value },
+            reinforcement: $(".dialog input[name=tilereinforcement]")[0].value,
+            image: $(".dialog input[name=tileimage]")[0].value,
+            imagelocation: {x: $(".dialog input[name=tileimagelocation]")[0].value, y: $(".dialog input[name=tileimagelocation2]")[0].value},
+            imagezoom: $(".dialog input[name=tileimagezoom]")[0].value,
+            imagerotation: $(".dialog input[name=tileimagerotation]")[0].value
         }
     },
     _tile2form: function(tile)
     {
         $(".dialog input[name=tilepos]")[0].value = tile.id;
         $(".dialog input[name=tilename]")[0].value = tile.name;
+        $(".dialog input[name=tilemovement]")[0].value = tile.movement;
+        $(".dialog input[name=tiledefense]")[0].value = tile.defense;
+        $(".dialog input[name=tileattacktype]")[0].checked = tile.attacktype != 'contact';
+        $(".dialog select[name=tiledices1]")[0].value = tile.dices['0']; $(".dialog select[name=tiledices1]").attr("data-value", tile.dices['0']);
+        $(".dialog select[name=tiledices2]")[0].value = tile.dices['1']; $(".dialog select[name=tiledices2]").attr("data-value", tile.dices['1']);
+        $(".dialog select[name=tiledices3]")[0].value = tile.dices['2']; $(".dialog select[name=tiledices3]").attr("data-value", tile.dices['2']);
+        $(".dialog select[name=tiledices4]")[0].value = tile.dices['3']; $(".dialog select[name=tiledices4]").attr("data-value", tile.dices['3']);
+        $(".dialog select[name=tileskills1]")[0].value = tile.skills['0']; $(".dialog select[name=tileskills1]").attr("data-value", tile.skills['0']);
+        $(".dialog select[name=tileskills2]")[0].value = tile.skills['1']; $(".dialog select[name=tileskills2]").attr("data-value", tile.skills['1']);
+        $(".dialog select[name=tileskills3]")[0].value = tile.skills['2']; $(".dialog select[name=tileskills3]").attr("data-value", tile.skills['2']);
+        $(".dialog select[name=tileskills4]")[0].value = tile.skills['3']; $(".dialog select[name=tileskills4]").attr("data-value", tile.skills['3']);
+        $(".dialog input[name=tilereinforcement]")[0].value = tile.reinforcement;
+        $(".dialog input[name=tileimage]")[0].value = tile.image;
+        $(".dialog input[name=tileimagelocation]")[0].value = tile.imagelocation.x;
+        $(".dialog input[name=tileimagelocation2]")[0].value = tile.imagelocation.y;
+        $(".dialog input[name=tileimagezoom]")[0].value = tile.imagezoom;
+        $(".dialog input[name=tileimagerotation]")[0].value = tile.imagerotation;
     },
     
     _remove: function()

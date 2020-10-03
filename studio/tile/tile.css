@@ -167,7 +167,7 @@
 
 .dialog .tile .field.movement,
 .dialog .tile .field.defense {
-    height: 113px;
+    height: 90px;
     width: 50%;
     display: inline-block;
     vertical-align: top;
@@ -219,11 +219,13 @@
     vertical-align: top;
 }
 
-.dialog .tile .field.movement  label {
-    margin-bottom: 16px;
+.dialog .tile .field.movement label,
+.dialog .tile .field.defense label {
+    margin-bottom: 2px;
 }
 
-.dialog .tile .field.movement:before {
+.dialog .tile .field.movement:before,
+.dialog .tile .field.defense:before {
    content: " ";
    position: absolute;
    bottom: 0;
@@ -232,26 +234,106 @@
    right: 0;
    
    background-repeat: no-repeat;
-   background-position: calc(50% - 40px);
+   background-position: calc(50% - 32px);
    background-size: contain;
 }
 
 .dialog .tile .field.movement:before {
    background-image: url(img/movement.png);
 }
+.dialog .tile .field.defense:before {
+   background-image: url(img/defense.png);
+}
 
 .dialog .tile .field input#tmovement,
 .dialog .tile .field input#tdefense {
-    font-size: 36px;
+   font-size: 70px;
    font-family: "Motrg";
+   height: 58px;
    text-align: center;
    color: #FFFFFF;
-   background-repeat: no-repeat;
-   background-position: calc(50% - 6px);
-   background-size: contain;
-   width: 54px;
+   width: 40px;
+   z-index: 1;
+   position: relative;
+   top: -8px;
+   background-color: transparent;
 }
 
+.dialog .tile .field.attackdices input#tattacktype {
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: 0;
+    position: absolute;
+    left: calc(50% - 173px);
+    top: 19px;
+    opacity: 0;
+    z-index: 1;
+}
+
+.dialog .tile .field.attackdices {
+    height: 78px;
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+.dialog .tile .field.attackdices label {
+    margin-bottom: 2px;
+}
+.dialog .tile .attackdices div:before {
+   content: " ";
+   position: absolute;
+   bottom: 0;
+   top: 20px;
+   left: 0;
+   right: 0;
+   
+   background-repeat: no-repeat;
+   background-position: calc(50% - 28px);
+   background-size: contain;
+}
+
+.dialog .tile input#tattacktype:not(checked) + div:before {
+   background-image: url(img/attack_contact.png);
+}
+.dialog .tile input#tattacktype:checked + div:before {
+   background-image: url(img/attack_range.png);
+}
+
+
+.dialog .tile .field.reinforcement label {
+    margin-bottom: 2px;
+}
+
+.dialog .tile .field.reinforcement:before {
+   content: " ";
+   position: absolute;
+   bottom: 0;
+   top: 20px;
+   left: 0;
+   right: 0;
+   
+   background-repeat: no-repeat;
+   background-position: 50%;
+   background-size: contain;
+}
+
+.dialog .tile .field.reinforcement:before {
+   background-image: url(img/reinforcement.png);
+}
+
+.dialog .tile .field input#treinforcement {
+   font-size: 65px;
+   font-family: "Motrg";
+   height: 62px;
+   margin-top: 10px;
+   text-align: center;
+   color: #000000;
+   width: 54px;
+   z-index: 1;
+   position: relative;
+   background-color: transparent;
+}
 
 .dialog .tile .field input#timage,
 .dialog .tile .field input#timagelocation,
@@ -380,6 +462,10 @@
 }
 .dialog .eqcol:nth-child(2) .tile-preview h1:before {
     content: "3";
+}
+
+.dialog .eqcol {
+    position: relative;
 }
 
 @media screen and (min-width: 840px) {
