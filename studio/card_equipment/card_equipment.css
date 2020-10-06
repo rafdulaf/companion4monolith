@@ -530,6 +530,7 @@
     .dialog .equipment .ui-menu .ui-menu-item { width: 25%; }
 }
 
+.dialog .equipment select.dice[data-value=none] ~ select.dice + .ui-selectmenu-button { display: none; }
 .dialog .equipment .ui-selectmenu-text, .dialog .equipment .ui-menu .ui-menu-item-wrapper { color: transparent; font-size: 1px; }
 .dialog .equipment .ui-selectmenu-icon.ui-icon.ui-icon-triangle-1-s { background-image: none; }
 .dialog .equipment .ui-menu-item, .dialog .equipment .ui-menu-item-wrapper { height: 40px; position: relative; }
@@ -543,6 +544,9 @@
 .dialog .equipment .dice ~ .ui-selectmenu-menu ul li:nth-child(7):before, .dialog .equipment select[data-value=yellowreroll] + span { background-image: url(img/dice_yellowreroll.png) !important; }
 
 .dialog .equipment select.skills { font-family: 'Moolbor'; font-size: 19px; }
+.dialog .equipment .field.skills select[data-value=none] ~ select {
+    display: none;
+}
 
 .dialog .equipment-preview .preview {
     text-align: center;

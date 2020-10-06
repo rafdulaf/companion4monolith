@@ -486,7 +486,14 @@ var CardEquipment = {
             imagerotation: "0"
         };
 
-        $("#eqmelee,#eqmelee2,#eqactive,#eqactive2,#eqpassive,#eqpassive2,#eqranged,#eqranged2,#eqmanipulation,#eqmanipulation2").each (function (i) { // ,#eqskills,#eqskills2
+        $("#eqskills,#eqskills2").each (function (i) {
+            var k = $(this);
+            k.attr("data-value", "")
+             .on("change", function() {
+                $(this).attr("data-value", this.value);
+             })
+        });
+        $("#eqmelee,#eqmelee2,#eqactive,#eqactive2,#eqpassive,#eqpassive2,#eqranged,#eqranged2,#eqmanipulation,#eqmanipulation2").each (function (i) {
             var k = $(this);
             k.attr("data-value", "")
                 .selectmenu({ appendTo: k.parent(), width: k.is(".dice") ? 40 : 58, change: function(event, selection) {

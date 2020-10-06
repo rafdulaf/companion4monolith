@@ -164,6 +164,9 @@
 .dialog .tile .field.skills select {
     width: 50%;
 }
+.dialog .tile .field.skills select[data-value=none] ~ select {
+    display: none;
+}
 
 .dialog .tile .field.movement,
 .dialog .tile .field.defense {
@@ -418,6 +421,7 @@
     .dialog .tile .ui-menu .ui-menu-item { width: 25%; }
 }
 
+.dialog .tile select.dice[data-value=none] ~ select.dice + .ui-selectmenu-button { display: none; }
 .dialog .tile .ui-selectmenu-text, .dialog .tile .ui-menu .ui-menu-item-wrapper { color: transparent; font-size: 1px; }
 .dialog .tile .ui-selectmenu-icon.ui-icon.ui-icon-triangle-1-s { background-image: none; }
 .dialog .tile .ui-menu-item, .dialog .tile .ui-menu-item-wrapper { height: 40px; position: relative; }

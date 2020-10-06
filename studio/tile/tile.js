@@ -204,8 +204,106 @@ var Tile = {
                     + "<img src=\"studio/tile/img/background_gray.png?version=" + Version + "\"/>"
                 + "</picture>";
 
-        // TODO
-                
+        var imageCode = "<div class=\"image\"><img loading=\"lazy\" src=\"" + tile.image + "\" style=\"left: " + tile.imagelocation.x + "%; top: " + tile.imagelocation.y + "%; width: " + tile.imagezoom + "%; transform: translate(-50%, -50%) rotate(" + tile.imagerotation + "deg)\"/></div>";
+        code += imageCode;
+
+        if (tile.name !== undefined && tile.name !== null)
+        {
+               code += "<img class=\"background-name\" src=\"studio/tile/img/name-background.png?version=" + Version + "\"/>"
+                    + "<div class=\"name\">" + tile.name + "</div>";
+        }
+
+        if (tile.reinforcement || tile.reinforcement === "0")
+        {
+            code += "<img class=\"background-reinforcement\" src=\"studio/tile/img/reinforcement.png?version=" + Version + "\"/>"
+                + "<div class=\"reinforcement\">" + tile.reinforcement + "</div>";
+        }
+
+        var level = 0;
+        if (tile.dices && tile.dices[0] != "none")
+        {
+            code += "<div class=\"level" + level + "\">";
+            code += "<img class=\"\" src=\"studio/tile/img/" + tile.attacktype + ".png?version=" + Version + "\"/>";
+            
+            var nbDices = 1;
+            
+            var diceCode = ""
+            diceCode += "<img src=\"studio/tile/img/dice_" + tile.dices[0] + ".png?version=" + Version + "\"/>";
+            if (tile.dices[1] != "none")
+            {
+                nbDices++;
+                diceCode += "<img src=\"studio/tile/img/dice_" + tile.dices[1] + ".png?version=" + Version + "\"/>";
+                if (tile.dices[2] != "none")
+                {
+                    nbDices++;
+                    diceCode += "<img src=\"studio/tile/img/dice_" + tile.dices[2] + ".png?version=" + Version + "\"/>";
+                    if (tile.dices[3] != "none")
+                    {
+                        nbDices++;
+                        diceCode += "<img src=\"studio/tile/img/dice_" + tile.dices[3] + ".png?version=" + Version + "\"/>";
+                    }
+                }
+            }
+            
+            code += diceCode;
+            code += "</div>";
+            level++;
+        }
+        
+        if (tile.defense)
+        {
+               code += "<div class=\"level" + level + "\">"
+                    + "<img class=\"background-defense\" src=\"studio/tile/img/defense.png?version=" + Version + "\"/>"
+                    + "<div class=\"defense\">" + tile.defense + "</div>"
+                    + "</div>";
+               level++
+        }
+
+        if (tile.movement)
+        {
+               code += "<div class=\"level" + level + "\">"
+                    + "<img class=\"background-movement\" src=\"studio/tile/img/movement.png?version=" + Version + "\"/>"
+                    + "<div class=\"movement\">" + tile.movement + "</div>"
+                    + "</div>";
+               level++
+        }
+
+        if (tile.skills && tile.skills[0] != 'none')
+        {
+            code += "<div class=\"skills-separator level" + level + "\">"
+                     + "<img class=\"background-separator\" src=\"studio/tile/img/separator.png?version=" + Version + "\"/>"
+                   + "</div>";
+
+            code += "<div class=\"skills level" + level + "\">"
+                     + "<img class=\"background-skills\" src=\"" + Tile._getSkillImage(tile.skills[0]) + "?version=" + Version + "\"/>"
+                   + "</div>";
+            level++;
+
+            if (tile.skills && tile.skills[1] != 'none')
+            {
+                code += "<div class=\"skills level" + level + "\">"
+                     + "<img class=\"background-skills\" src=\"" + Tile._getSkillImage(tile.skills[1]) + "?version=" + Version + "\"/>"
+                   + "</div>";
+                level++;
+
+                if (tile.skills && tile.skills[2] != 'none')
+                {
+                    code += "<div class=\"skills level" + level + "\">"
+                         + "<img class=\"background-skills\" src=\"" + Tile._getSkillImage(tile.skills[2]) + "?version=" + Version + "\"/>"
+                       + "</div>";
+                    level++;
+
+                    if (tile.skills && tile.skills[3] != 'none')
+                    {
+                        code += "<div class=\"skills level" + level + "\">"
+                             + "<img class=\"background-skills\" src=\"" + Tile._getSkillImage(tile.skills[3]) + "?version=" + Version + "\"/>"
+                           + "</div>";
+                        level++;
+                    }
+                }
+            }
+        }
+
         code += "</div>";
         return code;
     },
@@ -353,6 +451,13 @@ var Tile = {
             imagerotation: "0"
         };
 
+        $("#tskills,#tskills2,#tskills3,#tskills4").each (function (i) {
+            var k = $(this);
+            k.attr("data-value", "")
+             .on("change", function() {
+                $(this).attr("data-value", this.value);
+             })
+        });
         $("#tdices,#tdices2,#tdices3,#tdices4").each (function (i) {
             var k = $(this);
             k.attr("data-value", "")

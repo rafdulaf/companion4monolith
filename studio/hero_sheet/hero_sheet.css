@@ -531,6 +531,9 @@
     text-align: center;
     padding-bottom: 6px;
 }
+.dialog .sheet .field.skills .skill[data-value=none] ~ .skill {
+    display: none;
+}
 
 
 

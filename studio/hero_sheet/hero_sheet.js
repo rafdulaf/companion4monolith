@@ -452,6 +452,14 @@ var HeroSheet = {
             skills: []
         };
 
+        $("#hsskills1,#hsskills2,#hsskills3,#hsskills4,#hsskills5").each (function (i) {
+            var k = $(this);
+            k.parent().attr("data-value", "none");
+            k.on("change", function() {
+                $(this).parent().attr("data-value", this.value);
+             })
+        });
+
         $("#hscaracmeleedice, #hscaracrangeddice, #hscaracdefensedice, #hscaracmanipulationdice").each (function (i) {
             var k = $(this);
             k.attr("data-value", "")
@@ -537,8 +545,9 @@ var HeroSheet = {
         $(".dialog input[name=sheetmanipulationexertion]")[0].value = sheet.manipulation.exertion;
         for (var i = 0; i < sheet.skills.length && i < 5; i++)
         {
-            $(".dialog select[name=sheetskills" + (i+1) + "]")[0].value = sheet.skills[i].id
-            $(".dialog input[name=sheetskillsexertion" + (i+1) + "]")[0].value = sheet.skills[i].exertion
+            $(".dialog select[name=sheetskills" + (i+1) + "]")[0].value = sheet.skills[i].id;
+            $(".dialog select[name=sheetskills" + (i+1) + "]").parent().attr("data-value", sheet.skills[i].id);
+            $(".dialog input[name=sheetskillsexertion" + (i+1) + "]")[0].value = sheet.skills[i].exertion;
         }
     },
 
