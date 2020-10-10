@@ -20,18 +20,18 @@
     display: inline-block; 
     
     margin: 2px;
-    border-radius: 15px;
+    border-radius: 3%;
 
     overflow: hidden;    
 }
 .tile.tiletile {
     width: 200px;
-    height: calc(200px / 0.67);
+    height: calc(200px / 0.656);
     font-size: 18px;
 }
 .printcards .tile.tiletile {
     width: 100px;
-    height: calc(100px / 0.67);
+    height: calc(100px / 0.656);
     font-size: 9px;
 }
 
@@ -45,12 +45,12 @@
 @media screen and (max-width: 400px) {
     .tile.tiletile {
         width: 160px;
-        height: calc(160px / 0.67);
+        height: calc(160px / 0.656);
         font-size: 14.4px;
     }
     .printcards .tile.tiletile {
         width: 80px;
-        height: calc(80px / 0.67);
+        height: calc(80px / 0.656);
         font-size: 7.2px;
     }
 }
@@ -60,7 +60,7 @@
     .dialog .printcards .back[id^=tile] {
         margin: 0.1cm 0.1cm;
         width: 4.2cm;
-        height: calc(4.2cm / 0.67);
+        height: calc(4.2cm / 0.656);
         font-size: 0.4cm;
         border-radius: 0.3cm;
         position: relative;
@@ -76,9 +76,9 @@
 
     .dialog .printcards .back[id^=tile] img {
         position: absolute;
-        width: 147.5%;
-        left: -24.5%;
-        top: -15.5%;
+        width: 150.5%;
+        left: -25.5%;
+        top: -17%;
     }    
     .dialog .printcards.cut .back[id^=tile] { 
         border-radius: 0; 
@@ -88,22 +88,122 @@
 
 .tile.tiletile picture.background img {
     position: absolute;
-    width: 147.5%;
-    left: -24.5%;
-    top: -15.5%;
+    width: 152.5%;
+    left: -26.5%;
+    top: -16.5%;
 }
-.tile.tiletile img.background-name {
+.tile.tiletile div.image {
     position: absolute;
-    top: 3%;
-    width: 81.37%;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.tile.tiletile div.image img { 
+    position: absolute;
+    transform: translate(-50%, -50%);
 }
 
+.tile.tiletile .name {
+    text-align: center;
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 6.5%;
+    line-height: 100%;
+    font-size: 81%;
+    text-shadow: 0 0 3px #FFF;
+    color: #000;
+}
+.tile.tiletile .background-reinforcement {
+    position: absolute;
+    bottom: 3.9%;
+    right: 4.8%;
+    width: 15%;
+}
+.tile.tiletile .reinforcement {
+    position: absolute;
+    bottom: 1.6%;
+    right: 5.2%;
+    width: 15%;
+    font-family: "Motrg";
+    font-size: 200%;
+    text-align: center;
+    color: #000;
+    text-shadow: 0 0 3px #FFF;
+    -webkit-print-color-adjust: exact;
+}
 
+.tile.tiletile .level0, 
+.tile.tiletile .level1,
+.tile.tiletile .level2,
+.tile.tiletile .level3,
+.tile.tiletile .level4,
+.tile.tiletile .level5,
+.tile.tiletile .level6 {
+    position: absolute;
+    left: 5.3%;
+    width: 94.7%;
+    height: 14.4%;
+}
+.tile.tiletile .level0 { bottom: 3.2%; }
+.tile.tiletile .level1 { bottom: 19.1%; }
+.tile.tiletile .level2 { bottom: 35%; }
+.tile.tiletile .level3 { bottom: 50.9%; }
+.tile.tiletile .level4 { bottom: 66.8%; }
+.tile.tiletile .level5 { bottom: 50.9%; left: 30%; }
+.tile.tiletile .level6 { bottom: 66.8%; left: 30%; }
 
+.tile.tiletile .attack img {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+.tile.tiletile .attack img.attacktype {
+    height: 100%;
+    margin-right: 1%;
+}
+.tile.tiletile .attack img.dice-background {
+    position: absolute;
+    top: 7%;
+    left: 23%;
+    height: 85%;
+}
+.tile.tiletile .attack img.dice {
+    height: 72.3%;
+    margin-right: 0.5%;
+    top: -2%;
+}
 
+.tile.tiletile .defense img.background-defense,
+.tile.tiletile .movement img.background-movement {
+    height: 100%;
+}
+.tile.tiletile .defense .defense,
+.tile.tiletile .movement .movement {
+    position: absolute;
+    top: -26%;
+    color: #fff;
+    -webkit-print-color-adjust: exact;
+    text-align: center;
+    font-family: "Motrg";
+    font-size: 250%;
+    left: 24%;
+    width: 10%;
+}
 
+.tile.tiletile .background-separator {
+    width: 27%;
+    position: absolute;
+    left: 2%;
+    bottom: 8%;
+}
+.tile.tiletile img.background-skills {
+    height: 100%;
+    position: relative;
+    top: -33%;
+}
 
 #tile .notiles {
     position: absolute;
@@ -146,6 +246,14 @@
     outline: none;
 }
 
+.dialog .tile .field.name {
+    width: 80%;
+    display: inline-block;
+}
+.dialog .tile .field.color {
+    width: 20%;
+    display: inline-block;
+}
 .dialog .tile .field input#tname {
    font-size: 34px;
    height: 72px;
@@ -392,8 +500,8 @@
     left: 0 !important;
     right: 0 !important;
 }
-.dialog .tile .ui-button .ui-icon { background-image: none; }
-.dialog .tile .ui-selectmenu-menu ul li:before {
+.dialog .tile .attackdices .ui-button .ui-icon { background-image: none; }
+.dialog .tile .attackdices .ui-selectmenu-menu ul li:before {
     content: " ";
     position: absolute;
     left: 2px;
@@ -405,34 +513,62 @@
     background-repeat: no-repeat;
     z-index: 1;
 }
-.dialog .tile span[role=combobox] {
+.dialog .tile .attackdices span[role=combobox] {
     background-color: transparent !important;
     background-position: center !important;
     background-size: contain !important;
     background-repeat: no-repeat !important;
 }
+.dialog .tile .color .ui-selectmenu-menu ul li:before {
+    content: " ";
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    background-position: center 10%;
+    background-size: 133%;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+.dialog .tile .color span[role=combobox] {
+    background-color: transparent !important;
+    background-position: center 12% !important;
+    background-size: 126% !important;
+    background-repeat: no-repeat !important;
+}
 
 .dialog .tile .skills + span { height: 58px; line-height: 58px; }
-.dialog .tile .ui-menu { width: 100% !important; text-align: right; }
-.dialog .tile .ui-menu .ui-menu-item { display: inline-block; vertical-align: top; width: 14%; text-align: center; }
+.dialog .tile .attackdices .ui-menu { width: 100% !important; text-align: right; }
+.dialog .tile .attackdices .ui-menu .ui-menu-item { display: inline-block; vertical-align: top; width: 14%; text-align: center; }
 .dialog .tile .skills ~ .ui-selectmenu-menu { width: 58px; } 
 
 @media screen and (max-width: 450px) {
-    .dialog .tile .ui-menu .ui-menu-item { width: 25%; }
+    .dialog .tile .attackdices .ui-menu .ui-menu-item { width: 25%; }
 }
 
-.dialog .tile select.dice[data-value=none] ~ select.dice + .ui-selectmenu-button { display: none; }
-.dialog .tile .ui-selectmenu-text, .dialog .tile .ui-menu .ui-menu-item-wrapper { color: transparent; font-size: 1px; }
-.dialog .tile .ui-selectmenu-icon.ui-icon.ui-icon-triangle-1-s { background-image: none; }
-.dialog .tile .ui-menu-item, .dialog .tile .ui-menu-item-wrapper { height: 40px; position: relative; }
-.dialog .tile .ui-selectmenu-button.ui-button.ui-widget.ui-selectmenu-button-closed.ui-corner-all { border-color: transparent; }
-.dialog .tile .dice ~ .ui-selectmenu-menu ul li:nth-child(1):before, .dialog .tile select[data-value=none] + span .ui-selectmenu-text:before { content: "?"; font-size: 26px; font-family: 'Hyborian'; color: #7F7F7F; position: absolute; top: 0; left: 32%; }
-.dialog .tile .dice ~ .ui-selectmenu-menu ul li:nth-child(2):before, .dialog .tile select[data-value=red] + span { background-image: url(img/dice_red.png) !important; }
-.dialog .tile .dice ~ .ui-selectmenu-menu ul li:nth-child(3):before, .dialog .tile select[data-value=redreroll] + span { background-image: url(img/dice_redreroll.png) !important; }
-.dialog .tile .dice ~ .ui-selectmenu-menu ul li:nth-child(4):before, .dialog .tile select[data-value=orange] + span { background-image: url(img/dice_orange.png) !important; }
-.dialog .tile .dice ~ .ui-selectmenu-menu ul li:nth-child(5):before, .dialog .tile select[data-value=orangereroll] + span { background-image: url(img/dice_orangereroll.png) !important; }
-.dialog .tile .dice ~ .ui-selectmenu-menu ul li:nth-child(6):before, .dialog .tile select[data-value=yellow] + span { background-image: url(img/dice_yellow.png) !important; }
-.dialog .tile .dice ~ .ui-selectmenu-menu ul li:nth-child(7):before, .dialog .tile select[data-value=yellowreroll] + span { background-image: url(img/dice_yellowreroll.png) !important; }
+.dialog .tile .attackdices select.dice[data-value=none] ~ select.dice + .ui-selectmenu-button { display: none; }
+.dialog .tile .attackdices .ui-selectmenu-text, .dialog .tile .ui-menu .ui-menu-item-wrapper { color: transparent; font-size: 1px; }
+.dialog .tile .attackdices .ui-selectmenu-icon.ui-icon.ui-icon-triangle-1-s { background-image: none; }
+.dialog .tile .attackdices .ui-menu-item, .dialog .tile .attackdices .ui-menu-item-wrapper { height: 40px; position: relative; }
+.dialog .tile .attackdices .ui-selectmenu-button.ui-button.ui-widget.ui-selectmenu-button-closed.ui-corner-all { border-color: transparent; }
+.dialog .tile .dice ~ .ui-selectmenu-menu ul li:nth-child(1):before, .dialog .tile .attackdices select[data-value=none] + span .ui-selectmenu-text:before { content: "?"; font-size: 26px; font-family: 'Hyborian'; color: #7F7F7F; position: absolute; top: 0; left: 32%; }
+.dialog .tile .dice ~ .ui-selectmenu-menu ul li:nth-child(2):before, .dialog .tile .attackdices select[data-value=red] + span { background-image: url(img/dice_red.png) !important; }
+.dialog .tile .dice ~ .ui-selectmenu-menu ul li:nth-child(3):before, .dialog .tile .attackdices select[data-value=redreroll] + span { background-image: url(img/dice_redreroll.png) !important; }
+.dialog .tile .dice ~ .ui-selectmenu-menu ul li:nth-child(4):before, .dialog .tile .attackdices select[data-value=orange] + span { background-image: url(img/dice_orange.png) !important; }
+.dialog .tile .dice ~ .ui-selectmenu-menu ul li:nth-child(5):before, .dialog .tile .attackdices select[data-value=orangereroll] + span { background-image: url(img/dice_orangereroll.png) !important; }
+.dialog .tile .dice ~ .ui-selectmenu-menu ul li:nth-child(6):before, .dialog .tile .attackdices select[data-value=yellow] + span { background-image: url(img/dice_yellow.png) !important; }
+.dialog .tile .dice ~ .ui-selectmenu-menu ul li:nth-child(7):before, .dialog .tile .attackdices select[data-value=yellowreroll] + span { background-image: url(img/dice_yellowreroll.png) !important; }
+
+.dialog .tile .color .ui-selectmenu-text, .dialog .tile .color .ui-menu .ui-menu-item-wrapper { color: transparent; font-size: 1px; }
+.dialog .tile .color .ui-selectmenu-icon.ui-icon.ui-icon-triangle-1-s { background-image: none; }
+.dialog .tile .color .ui-menu-item, .dialog .tile .color .ui-menu-item-wrapper { height: 40px; position: relative; }
+.dialog .tile .color select ~ .ui-selectmenu-menu ul li:nth-child(1):before, .dialog .tile .color select[data-value=gray] + span { background-image: url(img/background_gray.png) !important; }
+.dialog .tile .color select ~ .ui-selectmenu-menu ul li:nth-child(2):before, .dialog .tile .color select[data-value=blue] + span { background-image: url(img/background_blue.png) !important; }
+.dialog .tile .color select ~ .ui-selectmenu-menu ul li:nth-child(3):before, .dialog .tile .color select[data-value=red] + span { background-image: url(img/background_red.png) !important; }
+.dialog .tile .color select ~ .ui-selectmenu-menu ul li:nth-child(4):before, .dialog .tile .color select[data-value=green] + span { background-image: url(img/background_green.png) !important; }
+.dialog .tile .color select ~ .ui-selectmenu-menu ul li:nth-child(5):before, .dialog .tile .color select[data-value=orange] + span { background-image: url(img/background_orange.png) !important; }
+.dialog .tile .color select ~ .ui-selectmenu-menu ul li:nth-child(6):before, .dialog .tile .color select[data-value=purple] + span { background-image: url(img/background_purple.png) !important; }
 
 .dialog .tile select.skills { font-family: 'Moolbor'; font-size: 19px; }
 

@@ -12,6 +12,13 @@ var Tile = {
             'removeConfirm': "Etes-vous sûr de vouloir effacer cette tuile ?",
             'name': "Nom",
             'namePh': "?",
+            'color': "Couleur",
+            'colorGray': "Grise",
+            'colorBlue': "Bleue",
+            'colorRed': "Rouge",
+            'colorGreen': "Verte",
+            'colorOrange': "Orange",
+            'colorPurple': "Violet",
             'movement': "Mouvement",
             'movementPh': "?",
             'defense': "Défense",
@@ -55,6 +62,13 @@ var Tile = {
             'removeConfirm': "Are you sure that you want to delete this tile?",
             'name': "Name",
             'namePh': "?",
+            'color': "Color",
+            'colorGray': "Gray",
+            'colorBlue': "Blue",
+            'colorRed': "Red",
+            'colorGreen': "Green",
+            'colorOrange': "Orange",
+            'colorPurple': "Purple",
             'movement': "Move",
             'movementPh': "?",
             'defense': "Defense",
@@ -98,6 +112,13 @@ var Tile = {
             'removeConfirm': "TODO_TOTRANSLATE",
             'name': "Nome",
             'namePh': "?",
+            'color': "TODO_TOTRANSLATE",
+            'colorGray': "TODO_TOTRANSLATE",
+            'colorBlue': "TODO_TOTRANSLATE",
+            'colorRed': "TODO_TOTRANSLATE",
+            'colorGreen': "TODO_TOTRANSLATE",
+            'colorOrange': "TODO_TOTRANSLATE",
+            'colorPurple': "TODO_TOTRANSLATE",
             'movement': "Movimento",
             'movementPh': "?",
             'defense': "TODO_TOTRANSLATE",
@@ -200,17 +221,18 @@ var Tile = {
     _tileCode: function(tile) {
         var code = "<div class=\"tile tiletile\">"
                 + "<picture class=\"background\">"
-                    + "<source media=\"print\" srcset=\"studio/tile/img/background_gray_hd.png?version=" + Version + "\"/>"
-                    + "<img src=\"studio/tile/img/background_gray.png?version=" + Version + "\"/>"
+                    + "<source media=\"print\" srcset=\"studio/tile/img/background_" + tile.color + "_hd.png?version=" + Version + "\"/>"
+                    + "<img src=\"studio/tile/img/background_" + tile.color + ".png?version=" + Version + "\"/>"
                 + "</picture>";
 
-        var imageCode = "<div class=\"image\"><img loading=\"lazy\" src=\"" + tile.image + "\" style=\"left: " + tile.imagelocation.x + "%; top: " + tile.imagelocation.y + "%; width: " + tile.imagezoom + "%; transform: translate(-50%, -50%) rotate(" + tile.imagerotation + "deg)\"/></div>";
-        code += imageCode;
+        if (tile.image)
+        {
+            code += "<div class=\"image\"><img loading=\"lazy\" src=\"" + tile.image + "\" style=\"left: " + tile.imagelocation.x + "%; top: " + tile.imagelocation.y + "%; width: " + tile.imagezoom + "%; transform: translate(-50%, -50%) rotate(" + tile.imagerotation + "deg)\"/></div>";
+        }
 
         if (tile.name !== undefined && tile.name !== null)
         {
-               code += "<img class=\"background-name\" src=\"studio/tile/img/name-background.png?version=" + Version + "\"/>"
-                    + "<div class=\"name\">" + tile.name + "</div>";
+               code += "<div class=\"name\">" + tile.name + "</div>";
         }
 
         if (tile.reinforcement || tile.reinforcement === "0")
@@ -222,29 +244,29 @@ var Tile = {
         var level = 0;
         if (tile.dices && tile.dices[0] != "none")
         {
-            code += "<div class=\"level" + level + "\">";
-            code += "<img class=\"\" src=\"studio/tile/img/" + tile.attacktype + ".png?version=" + Version + "\"/>";
-            
             var nbDices = 1;
             
             var diceCode = ""
-            diceCode += "<img src=\"studio/tile/img/dice_" + tile.dices[0] + ".png?version=" + Version + "\"/>";
+            diceCode += "<img class='dice dice-1' src=\"studio/tile/img/dice_" + tile.dices[0] + ".png?version=" + Version + "\"/>";
             if (tile.dices[1] != "none")
             {
                 nbDices++;
-                diceCode += "<img src=\"studio/tile/img/dice_" + tile.dices[1] + ".png?version=" + Version + "\"/>";
+                diceCode += "<img class='dice dice-2' src=\"studio/tile/img/dice_" + tile.dices[1] + ".png?version=" + Version + "\"/>";
                 if (tile.dices[2] != "none")
                 {
                     nbDices++;
-                    diceCode += "<img src=\"studio/tile/img/dice_" + tile.dices[2] + ".png?version=" + Version + "\"/>";
+                    diceCode += "<img class='dice dice-3' src=\"studio/tile/img/dice_" + tile.dices[2] + ".png?version=" + Version + "\"/>";
                     if (tile.dices[3] != "none")
                     {
                         nbDices++;
-                        diceCode += "<img src=\"studio/tile/img/dice_" + tile.dices[3] + ".png?version=" + Version + "\"/>";
+                        diceCode += "<img class='dice dice-4' src=\"studio/tile/img/dice_" + tile.dices[3] + ".png?version=" + Version + "\"/>";
                     }
                 }
             }
             
+            code += "<div class=\"attack level" + level + "\">";
+            code += "<img class='dice-background' src=\"studio/tile/img/dice-background-" + nbDices + ".png?version=" + Version + "\"/>";
+            code += "<img class=\"attacktype\" src=\"studio/tile/img/" + tile.attacktype + ".png?version=" + Version + "\"/>";
             code += diceCode;
             code += "</div>";
             level++;
@@ -252,7 +274,7 @@ var Tile = {
         
         if (tile.defense)
         {
-               code += "<div class=\"level" + level + "\">"
+               code += "<div class=\"defense level" + level + "\">"
                     + "<img class=\"background-defense\" src=\"studio/tile/img/defense.png?version=" + Version + "\"/>"
                     + "<div class=\"defense\">" + tile.defense + "</div>"
                     + "</div>";
@@ -261,7 +283,7 @@ var Tile = {
 
         if (tile.movement)
         {
-               code += "<div class=\"level" + level + "\">"
+               code += "<div class=\"movement level" + level + "\">"
                     + "<img class=\"background-movement\" src=\"studio/tile/img/movement.png?version=" + Version + "\"/>"
                     + "<div class=\"movement\">" + tile.movement + "</div>"
                     + "</div>";
@@ -375,6 +397,17 @@ var Tile = {
                     + "<label for=\"tname\">" + Tile._i18n[Language].name + "</label>"
                     + "<input id=\"tname\" name=\"tilename\" autocomplete=\"off\" placeholder=\"" + Tile._i18n[Language].namePh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
                 + "</div>"
+                + "<div class=\"field color\">"
+                    + "<label for=\"tcolor\">" + Tile._i18n[Language].color + "</label>"
+                    + "<select id='tcolor' name='tcolor'>"
+                    +     "<option value='gray'>" + Tile._i18n[Language].colorGray + "</option>"
+                    +     "<option value='blue'>" + Tile._i18n[Language].colorBlue + "</option>"
+                    +     "<option value='red'>" + Tile._i18n[Language].colorRed + "</option>"
+                    +     "<option value='green'>" + Tile._i18n[Language].colorGreen + "</option>"
+                    +     "<option value='orange'>" + Tile._i18n[Language].colorOrange + "</option>"
+                    +     "<option value='purple'>" + Tile._i18n[Language].colorPurple + "</option>"
+                    + "</select>"
+                + "</div>"
                 + "<div class=\"field movement\">"
                     + "<label for=\"tmovement\">" + Tile._i18n[Language].movement + "</label>"
                     + "<input type=\"number\" min=\"0\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"tmovement\" name=\"tilemovement\" autocomplete=\"off\" placeholder=\"" + Tile._i18n[Language].movementPh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
@@ -439,6 +472,7 @@ var Tile = {
         tile = tile || {
             id: Math.random(),
             name: "",
+            color: "gray",
             movement: "",
             defense: "",
             attacktype: "contact",
@@ -458,7 +492,7 @@ var Tile = {
                 $(this).attr("data-value", this.value);
              })
         });
-        $("#tdices,#tdices2,#tdices3,#tdices4").each (function (i) {
+        $("#tdices,#tdices2,#tdices3,#tdices4,#tcolor").each (function (i) {
             var k = $(this);
             k.attr("data-value", "")
                 .selectmenu({ appendTo: k.parent(), width: k.is(".dice") ? 40 : 58, change: function(event, selection) {
@@ -483,9 +517,10 @@ var Tile = {
         return {
             id: $(".dialog input[name=tilepos]")[0].value,
             name: $(".dialog input[name=tilename]")[0].value,
+            color: $(".dialog select[name=tcolor]")[0].value,
             movement: $(".dialog input[name=tilemovement]")[0].value,
             defense: $(".dialog input[name=tiledefense]")[0].value,
-            attacktype: $(".dialog input[name=tileattacktype]")[0].checked ? "range" : "contact",
+            attacktype: $(".dialog input[name=tileattacktype]")[0].checked ? "ranged" : "contact",
             dices: { 0: $(".dialog select[name=tiledices1]")[0].value, 1: $(".dialog select[name=tiledices2]")[0].value, 2: $(".dialog select[name=tiledices3]")[0].value, 3: $(".dialog select[name=tiledices4]")[0].value },
             skills: { 0: $(".dialog select[name=tileskills1]")[0].value, 1: $(".dialog select[name=tileskills2]")[0].value, 2: $(".dialog select[name=tileskills3]")[0].value, 3: $(".dialog select[name=tileskills4]")[0].value },
             reinforcement: $(".dialog input[name=tilereinforcement]")[0].value,
@@ -499,6 +534,7 @@ var Tile = {
     {
         $(".dialog input[name=tilepos]")[0].value = tile.id;
         $(".dialog input[name=tilename]")[0].value = tile.name;
+        $(".dialog select[name=tcolor]")[0].value = tile.color; $(".dialog select[name=tcolor]").attr("data-value", tile.color);
         $(".dialog input[name=tilemovement]")[0].value = tile.movement;
         $(".dialog input[name=tiledefense]")[0].value = tile.defense;
         $(".dialog input[name=tileattacktype]")[0].checked = tile.attacktype != 'contact';
