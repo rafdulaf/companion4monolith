@@ -256,7 +256,7 @@
             "text": {
                 "fr": "Ciblez une zone avec ligne de vue.\nToutes les figurines sur la zone subissent des dégâts de : {dice_red}{dice_red}.",
                 "en": "Attack an area in your line of sight; roll {dice_red}{dice_red}. If the attack power is greater than the defense power, the defender suffers damage equal to the difference.",
-                "it": "Scegli un'area in linea di vista.\nTutti i modelli nell'area subiscono un danno di: {dice_red}{dice_red}."
+                "it": "Scegli un'area in linea di vista.\nTutti i modelli nell'area subiscono un attacco pari a: {dice_red}{dice_red}."
             },
             "clarification": null,
 
