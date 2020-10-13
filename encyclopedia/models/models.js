@@ -156,7 +156,7 @@ var EncyclopediaModels = {
                 label: {
                     'fr': "Utilisé par",
                     'en': "Used by",
-                    'it': "TODO_TOTRANSLATE"
+                    'it': "Usato da"
                 },
                 values: [
                     {
@@ -164,7 +164,7 @@ var EncyclopediaModels = {
                         label: {
                             'fr': "Héros",
                             'en': "Hero",
-                            'it': "TODO_TOTRANSLATE"
+                            'it': "Eroe"
                         }
                     },
                     {
@@ -172,7 +172,7 @@ var EncyclopediaModels = {
                         label: {
                             'fr': "Overlord",
                             'en': "Overlord",
-                            'it': "TODO_TOTRANSLATE"
+                            'it': "Overlord"
                         }
                     },
                     {
@@ -180,7 +180,7 @@ var EncyclopediaModels = {
                         label: {
                             'fr': "Aucun",
                             'en': "Non",
-                            'it': "TODO_TOTRANSLATE"
+                            'it': "Nessuno"
                         }
                     }
                 ],
@@ -218,7 +218,7 @@ var EncyclopediaModels = {
                 label: {
                     'fr': "Type",
                     'en': "Type",
-                    'it': "TODO_TOTRANSLATE"
+                    'it': "Tipo"
                 },
                 values: [
                     {
@@ -226,7 +226,7 @@ var EncyclopediaModels = {
                         label: {
                             'fr': "Humain",
                             'en': "Human",
-                            'it': "TODO_TOTRANSLATE"
+                            'it': "Umano"
                         }
                     },
                     {
@@ -234,7 +234,7 @@ var EncyclopediaModels = {
                         label: {
                             'fr': "Animal",
                             'en': "Animal",
-                            'it': "TODO_TOTRANSLATE"
+                            'it': "Animale"
                         }
                     },
                     {
@@ -242,7 +242,7 @@ var EncyclopediaModels = {
                         label: {
                             'fr': "Monstre",
                             'en': "Monster",
-                            'it': "TODO_TOTRANSLATE"
+                            'it': "Mostro"
                         }
                     }
                 ],
