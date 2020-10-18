@@ -69,6 +69,10 @@
     .dialog .printcards input[name=herosheet]:checked + label { display: inline-block; }    
     .dialog .printcards input[name=herosheet]:checked + label:before,
     .dialog .printcards input[name=herosheet]:checked + label:after,
+    .dialog .printcards input[name=tile] + label { display: none; }
+    .dialog .printcards input[name=tile]:checked + label { display: inline-block; }    
+    .dialog .printcards input[name=tile]:checked + label:before,
+    .dialog .printcards input[name=tile]:checked + label:after,
     .dialog .dialog-header,
     .dialog .printcards h1,
     .dialog .printcards .hint,

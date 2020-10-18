@@ -492,7 +492,7 @@ var EncyclopediaEquipments = {
                         + EncyclopediaEquipments._i18n[Language].skill 
                         + " " 
                         + ConanRules._linkToSkill(equipment.skills[0], true) 
-                         + (equipment.skills[1] != 'none' ? ", " + ConanRules._linkToSkill(equipment.skills[1]) : "")
+                         + (equipment.skills[1] != 'none' ? ", " + ConanRules._linkToSkill(equipment.skills[1], true) : "")
                     + "</div>") : "") 
             + "</div>",
             null,

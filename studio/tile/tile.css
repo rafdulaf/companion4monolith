@@ -69,17 +69,10 @@
         overflow: visible;
         border-radius: 0cm;
     }
-    .printcards.cut .tile.tiletile,
-    .dialog .printcards.cut .back[id^=tile] {
+    .printcards.cut .tile.tiletile {
         margin: 0.6cm 0.55cm;
     }
 
-    .dialog .printcards .back[id^=tile] img {
-        position: absolute;
-        width: 150.5%;
-        left: -25.5%;
-        top: -17%;
-    }    
     .dialog .printcards.cut .back[id^=tile] { 
         border-radius: 0; 
         overflow: visible;
@@ -155,6 +148,9 @@
 .tile.tiletile .level5 { bottom: 50.9%; left: 30%; }
 .tile.tiletile .level6 { bottom: 66.8%; left: 30%; }
 
+.tile.tiletile .attack {
+    direction: ltr;
+}
 .tile.tiletile .attack img {
     display: inline-block;
     vertical-align: middle;
@@ -203,6 +199,14 @@
     height: 100%;
     position: relative;
     top: -33%;
+}
+
+.back .blood {
+    position: absolute;
+    bottom: -14%;
+    left: -19%;
+    width: 108%;
+    z-index: 1;
 }
 
 #tile .notiles {

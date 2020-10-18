@@ -179,7 +179,7 @@ var EncyclopediaModels = {
                         id: "none",
                         label: {
                             'fr': "Aucun",
-                            'en': "Non",
+                            'en': "None",
                             'it': "Nessuno"
                         }
                     }

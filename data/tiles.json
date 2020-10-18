@@ -1,0 +1,3984 @@
+{
+    "list": [
+        {
+            "id": "captain",
+            "name": {
+                "fr": "",
+                "en": "Captain",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/support", "1": "defense/sacrifice", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/captain_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/captain.png",
+            "imageHD": "data/tiles/img/captain_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "captain",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "skuthus",
+            "name": {
+                "fr": "",
+                "en": "Skuthus",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "yellow", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "defense/protected", "1": "magic/spell_caster", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/skuthus_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/skuthus.png",
+            "imageHD": "data/tiles/img/skuthus_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "skuthus",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "thalis",
+            "name": {
+                "fr": "",
+                "en": "Thalis",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "yellowreroll", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/fascination", "1": "miscellaneous/support", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/thalis_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/thalis.png",
+            "imageHD": "data/tiles/img/thalis_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "thalis",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "zogar-sag",
+            "name": {
+                "fr": "",
+                "en": "Zogar Sag",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "orangereroll", "2": "none", "3": "none" },
+            "skills": { "0": "magic/spell_caster", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/zogar-sag_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/zogar-sag.png",
+            "imageHD": "data/tiles/img/zogar-sag_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "zogar-sag",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "zaporavo",
+            "name": {
+                "fr": "",
+                "en": "Zaporavo",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
+            "skills": { "0": "movement/leap", "1": "miscellaneous/support", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/zaporavo_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/zaporavo.png",
+            "imageHD": "data/tiles/img/zaporavo_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "zaporavo",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "dark-demon",
+            "name": {
+                "fr": "",
+                "en": "Dark Demon",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "redreroll", "3": "none" },
+            "skills": { "0": "movement/blocking", "1": "miscellaneous/jinx", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/dark-demon_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/dark-demon.png",
+            "imageHD": "data/tiles/img/dark-demon_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "dark-demon",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "giant-snake",
+            "name": {
+                "fr": "",
+                "en": "Giant Snake",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "orangereroll", "2": "orangereroll", "3": "none" },
+            "skills": { "0": "movement/blocking", "1": "movement/wall_wrecker", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/giant-snake_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/giant-snake.png",
+            "imageHD": "data/tiles/img/giant-snake_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "giant-snake",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "khosatral-khel",
+            "name": {
+                "fr": "",
+                "en": "Khosatral Khel",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "3",
+            "defense": "12",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "red", "2": "red", "3": "none" },
+            "skills": { "0": "attack/circular_strike", "1": "movement/wall_wrecker", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/khosatral-khel_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/khosatral-khel.png",
+            "imageHD": "data/tiles/img/khosatral-khel_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "khosatral-khel",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "outer-dark-demon",
+            "name": {
+                "fr": "",
+                "en": "Outer Dark Demon",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "8",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
+            "skills": { "0": "movement/evasive", "1": "movement/flying", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/outer-dark-demon_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/outer-dark-demon.png",
+            "imageHD": "data/tiles/img/outer-dark-demon_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "outer-dark-demon",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "thak",
+            "name": {
+                "fr": "",
+                "en": "Thak",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
+            "skills": { "0": "movement/blocking", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/thak_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/thak.png",
+            "imageHD": "data/tiles/img/thak_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "thak",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "bêlits-guards",
+            "name": {
+                "fr": "",
+                "en": "Bêlit's Guards",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "3",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "movement/leap", "1": "defense/sacrifice", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/bêlits-guards.png",
+            "imageHD": "data/tiles/img/bêlits-guards_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "bêlits-guards",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "princess",
+            "name": {
+                "fr": "",
+                "en": "Princess",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "0",
+            "attacktype": "contact",
+            "dices": { "0": "none", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/princess_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/princess.png",
+            "imageHD": "data/tiles/img/princess_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "princess",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "bossonian-archers",
+            "name": {
+                "fr": "",
+                "en": "Bossonian Archers",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "ranged",
+            "dices": { "0": "yellowreroll", "1": "yellowreroll", "2": "none", "3": "none" },
+            "skills": { "0": "attack/elite_shooter", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/bossonian-archers.png",
+            "imageHD": "data/tiles/img/bossonian-archers_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "bossonian-archers",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "bossonian-archers-purple",
+            "name": {
+                "fr": "",
+                "en": "Bossonian Archers - Purple",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "ranged",
+            "dices": { "0": "yellowreroll", "1": "yellowreroll", "2": "none", "3": "none" },
+            "skills": { "0": "attack/elite_shooter", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/bossonian-archers-purple.png",
+            "imageHD": "data/tiles/img/bossonian-archers-purple_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "bossonian-archers-purple",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "bossonian-guards",
+            "name": {
+                "fr": "",
+                "en": "Bossonian Guards",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "defense/sacrifice", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/bossonian-guards.png",
+            "imageHD": "data/tiles/img/bossonian-guards_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "bossonian-guards",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "bossonian-guards-blue",
+            "name": {
+                "fr": "",
+                "en": "Bossonian Guards - Blue",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "defense/sacrifice", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/bossonian-guards-blue.png",
+            "imageHD": "data/tiles/img/bossonian-guards-blue_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "bossonian-guards-blue",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "bossonian-guards-green",
+            "name": {
+                "fr": "",
+                "en": "Bossonian Guards - Green",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "defense/sacrifice", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/bossonian-guards-green.png",
+            "imageHD": "data/tiles/img/bossonian-guards-green_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "bossonian-guards-green",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "bossonian-guards-orange",
+            "name": {
+                "fr": "",
+                "en": "Bossonian Guards - Orange",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "defense/sacrifice", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/bossonian-guards-orange.png",
+            "imageHD": "data/tiles/img/bossonian-guards-orange_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "bossonian-guards-orange",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "bossonian-guards-purple",
+            "name": {
+                "fr": "",
+                "en": "Bossonian Guards - Purple",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "defense/sacrifice", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/bossonian-guards-purple.png",
+            "imageHD": "data/tiles/img/bossonian-guards-purple_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "bossonian-guards-purple",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "bossonian-guards-red",
+            "name": {
+                "fr": "",
+                "en": "Bossonian Guards - Red",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "defense/sacrifice", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/bossonian-guards-red.png",
+            "imageHD": "data/tiles/img/bossonian-guards-red_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "bossonian-guards-red",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "hyenas",
+            "name": {
+                "fr": "",
+                "en": "Hyenas",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "5",
+            "defense": "0",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "movement/evasive", "1": "movement/leap", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/hyenas.png",
+            "imageHD": "data/tiles/img/hyenas_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "hyenas",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "pict-hunters",
+            "name": {
+                "fr": "",
+                "en": "Pict Hunters",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "yellowreroll", "1": "yellowreroll", "2": "none", "3": "none" },
+            "skills": { "0": "movement/leap", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/pict-hunters.png",
+            "imageHD": "data/tiles/img/pict-hunters_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "pict-hunters",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "pict-hunters-blue",
+            "name": {
+                "fr": "",
+                "en": "Pict Hunters - Blue",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "yellowreroll", "1": "yellowreroll", "2": "none", "3": "none" },
+            "skills": { "0": "movement/leap", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/pict-hunters-blue.png",
+            "imageHD": "data/tiles/img/pict-hunters-blue_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "pict-hunters-blue",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "pict-hunters-green",
+            "name": {
+                "fr": "",
+                "en": "Pict Hunters - Green",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "yellowreroll", "1": "yellowreroll", "2": "none", "3": "none" },
+            "skills": { "0": "movement/leap", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/pict-hunters-green.png",
+            "imageHD": "data/tiles/img/pict-hunters-green_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "pict-hunters-green",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "pict-hunters-orange",
+            "name": {
+                "fr": "",
+                "en": "Pict Hunters - Orange",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "yellowreroll", "1": "yellowreroll", "2": "none", "3": "none" },
+            "skills": { "0": "movement/leap", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/pict-hunters-orange.png",
+            "imageHD": "data/tiles/img/pict-hunters-orange_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "pict-hunters-orange",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "pict-hunters-red",
+            "name": {
+                "fr": "",
+                "en": "Pict Hunters - Red",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "yellowreroll", "1": "yellowreroll", "2": "none", "3": "none" },
+            "skills": { "0": "movement/leap", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/pict-hunters-red.png",
+            "imageHD": "data/tiles/img/pict-hunters-red_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "pict-hunters-red",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "pict-warriors-purple",
+            "name": {
+                "fr": "",
+                "en": "Pict Warriors - Purple",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "movement/blocking", "1": "movement/leap", "2": "none", "3": "none" },
+            "reinforcement": "2",
+            "tokens": [],
+    
+            "image": "data/tiles/img/pict-warriors-purple.png",
+            "imageHD": "data/tiles/img/pict-warriors-purple_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "pict-warriors-purple",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "pirates",
+            "name": {
+                "fr": "",
+                "en": "Pirates",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "3",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "movement/swimming", "1": "movement/leap", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/pirates.png",
+            "imageHD": "data/tiles/img/pirates_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "pirates",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "pirates-blue",
+            "name": {
+                "fr": "",
+                "en": "Pirates - Blue",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "3",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "movement/swimming", "1": "movement/leap", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/pirates-blue.png",
+            "imageHD": "data/tiles/img/pirates-blue_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "pirates-blue",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "pirates-green",
+            "name": {
+                "fr": "",
+                "en": "Pirates - Green",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "3",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "movement/swimming", "1": "movement/leap", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/pirates-green.png",
+            "imageHD": "data/tiles/img/pirates-green_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "pirates-green",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "pirates-orange",
+            "name": {
+                "fr": "",
+                "en": "Pirates - Orange",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "3",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "movement/swimming", "1": "movement/leap", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/pirates-orange.png",
+            "imageHD": "data/tiles/img/pirates-orange_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "pirates-orange",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "pirates-purple",
+            "name": {
+                "fr": "",
+                "en": "Pirates - Purple",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "3",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "movement/swimming", "1": "movement/leap", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/pirates-purple.png",
+            "imageHD": "data/tiles/img/pirates-purple_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "pirates-purple",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "pirates-red",
+            "name": {
+                "fr": "",
+                "en": "Pirates - Red",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "3",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "movement/swimming", "1": "movement/leap", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/pirates-red.png",
+            "imageHD": "data/tiles/img/pirates-red_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "pirates-red",
+            "origins": ["corebox", "stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "thog-1",
+            "name": {
+                "fr": "",
+                "en": "Thog 1",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "1",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "redreroll", "3": "none" },
+            "skills": { "0": "movement/intangible", "1": "miscellaneous/horror", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/thog-1_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/thog-1.png",
+            "imageHD": "data/tiles/img/thog-1_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "thog-1",
+            "origins": ["king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "thog-2",
+            "name": {
+                "fr": "",
+                "en": "Thog 2",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "1",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "redreroll", "3": "none" },
+            "skills": { "0": "attack/constriction", "1": "miscellaneous/horror", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/thog-2_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/thog-2.png",
+            "imageHD": "data/tiles/img/thog-2_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "thog-2",
+            "origins": ["king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "conans-lion",
+            "name": {
+                "fr": "",
+                "en": "Conan’s Lion",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "4",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "red", "2": "none", "3": "none" },
+            "skills": { "0": "movement/leap", "1": "movement/feline_grace", "2": "none", "3": "none" },
+            "reinforcement": "4",
+            "tokens": [],
+    
+            "image": "data/tiles/img/conans-lion.png",
+            "imageHD": "data/tiles/img/conans-lion_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "conans-lion",
+            "origins": ["king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "zelatas-wolf",
+            "name": {
+                "fr": "",
+                "en": "Zelata’s Wolf",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "5",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "defense/sacrifice", "1": "movement/leap", "2": "none", "3": "none" },
+            "reinforcement": "4",
+            "tokens": [],
+    
+            "image": "data/tiles/img/zelatas-wolf.png",
+            "imageHD": "data/tiles/img/zelatas-wolf_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "zelatas-wolf",
+            "origins": ["king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "mummies",
+            "name": {
+                "fr": "",
+                "en": "Mummies",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/jinx", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "2",
+            "tokens": [],
+    
+            "image": "data/tiles/img/mummies.png",
+            "imageHD": "data/tiles/img/mummies_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "mummies",
+            "origins": ["king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "mummies-blue",
+            "name": {
+                "fr": "",
+                "en": "Mummies - Blue",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/jinx", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "2",
+            "tokens": [],
+    
+            "image": "data/tiles/img/mummies-blue.png",
+            "imageHD": "data/tiles/img/mummies-blue_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "mummies-blue",
+            "origins": ["king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "mummies-green",
+            "name": {
+                "fr": "",
+                "en": "Mummies - Green",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/jinx", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "2",
+            "tokens": [],
+    
+            "image": "data/tiles/img/mummies-green.png",
+            "imageHD": "data/tiles/img/mummies-green_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "mummies-green",
+            "origins": ["king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "mummies-orange",
+            "name": {
+                "fr": "",
+                "en": "Mummies - Orange",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/jinx", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "2",
+            "tokens": [],
+    
+            "image": "data/tiles/img/mummies-orange.png",
+            "imageHD": "data/tiles/img/mummies-orange_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "mummies-orange",
+            "origins": ["king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "mummies-purple",
+            "name": {
+                "fr": "",
+                "en": "Mummies - Purple",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/jinx", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "2",
+            "tokens": [],
+    
+            "image": "data/tiles/img/mummies-purple.png",
+            "imageHD": "data/tiles/img/mummies-purple_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "mummies-purple",
+            "origins": ["king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "skeletons",
+            "name": {
+                "fr": "",
+                "en": "Skeletons",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "defense/sacrifice", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/skeletons.png",
+            "imageHD": "data/tiles/img/skeletons_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "skeletons",
+            "origins": ["king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "skeletons-green",
+            "name": {
+                "fr": "",
+                "en": "Skeletons - Green",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "defense/sacrifice", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/skeletons-green.png",
+            "imageHD": "data/tiles/img/skeletons-green_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "skeletons-green",
+            "origins": ["king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "skeletons-blue",
+            "name": {
+                "fr": "",
+                "en": "Skeletons - Blue",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "defense/sacrifice", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/skeletons-blue.png",
+            "imageHD": "data/tiles/img/skeletons-blue_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "skeletons-blue",
+            "origins": ["king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "skeletons-orange",
+            "name": {
+                "fr": "",
+                "en": "Skeletons - Orange",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "defense/sacrifice", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/skeletons-orange.png",
+            "imageHD": "data/tiles/img/skeletons-orange_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "skeletons-orange",
+            "origins": ["king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "skeletons-purple",
+            "name": {
+                "fr": "",
+                "en": "Skeletons - Purple",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "defense/sacrifice", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/skeletons-purple.png",
+            "imageHD": "data/tiles/img/skeletons-purple_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "skeletons-purple",
+            "origins": ["king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "skeletons-red",
+            "name": {
+                "fr": "",
+                "en": "Skeletons - Red",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "defense/sacrifice", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/skeletons-red.png",
+            "imageHD": "data/tiles/img/skeletons-red_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "skeletons-red",
+            "origins": ["king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "ageera",
+            "name": {
+                "fr": "",
+                "en": "Ageera",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "movement/leap", "1": "magic/spell_caster", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/ageera_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/ageera.png",
+            "imageHD": "data/tiles/img/ageera_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "ageera",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "akivasha",
+            "name": {
+                "fr": "",
+                "en": "Akivasha",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "attack/attack_from_beyond", "1": "magic/spell_caster", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/akivasha_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/akivasha.png",
+            "imageHD": "data/tiles/img/akivasha_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "akivasha",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "constantius",
+            "name": {
+                "fr": "",
+                "en": "Constantius",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "attack/counterattack", "1": "miscellaneous/support", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/constantius_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/constantius.png",
+            "imageHD": "data/tiles/img/constantius_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "constantius",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "gitara",
+            "name": {
+                "fr": "",
+                "en": "Gitara",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "yellowreroll", "1": "yellowreroll", "2": "yellowreroll", "3": "none" },
+            "skills": { "0": "movement/feline_grace", "1": "defense/sacrifice", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/gitara_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/gitara.png",
+            "imageHD": "data/tiles/img/gitara_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "gitara",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "hyperborean-primitive",
+            "name": {
+                "fr": "",
+                "en": "Hyperborean Primitive",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "orange", "2": "yellow", "3": "none" },
+            "skills": { "0": "miscellaneous/jinx", "1": "magic/spell_caster", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/hyperborean-primitive_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/hyperborean-primitive.png",
+            "imageHD": "data/tiles/img/hyperborean-primitive_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "hyperborean-primitive",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "khemsa",
+            "name": {
+                "fr": "",
+                "en": "Khemsa",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/concentration", "1": "magic/spell_caster", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/khemsa_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/khemsa.png",
+            "imageHD": "data/tiles/img/khemsa_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "khemsa",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "natohk",
+            "name": {
+                "fr": "",
+                "en": "Natohk",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/concentration", "1": "magic/spell_caster", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/natohk_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/natohk.png",
+            "imageHD": "data/tiles/img/natohk_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "natohk",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "warlock",
+            "name": {
+                "fr": "",
+                "en": "Warlock",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "defense/protected", "1": "magic/spell_caster", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/warlock_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/warlock.png",
+            "imageHD": "data/tiles/img/warlock_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "warlock",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "amboola",
+            "name": {
+                "fr": "",
+                "en": "Amboola",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "orangereroll", "2": "none", "3": "none" },
+            "skills": { "0": "attack/precision_strike", "1": "miscellaneous/support", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/amboola_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/amboola.png",
+            "imageHD": "data/tiles/img/amboola_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "amboola",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "balthus",
+            "name": {
+                "fr": "",
+                "en": "Balthus",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "3",
+            "defense": "1",
+            "attacktype": "ranged",
+            "dices": { "0": "redreroll", "1": "orangereroll", "2": "none", "3": "none" },
+            "skills": { "0": "attack/elite_shooter", "1": "attack/precision_shot", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/balthus_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/balthus.png",
+            "imageHD": "data/tiles/img/balthus_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "balthus",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "bêlit",
+            "name": {
+                "fr": "",
+                "en": "Bêlit",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "3",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "attack/attack_from_beyond", "1": "defense/protected", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/bêlit_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/bêlit.png",
+            "imageHD": "data/tiles/img/bêlit_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "bêlit",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "conan",
+            "name": {
+                "fr": "",
+                "en": "Conan",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "red", "2": "red", "3": "none" },
+            "skills": { "0": "attack/circular_strike", "1": "movement/wall_wrecker", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/conan_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/conan.png",
+            "imageHD": "data/tiles/img/conan_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "conan",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "hadrathus",
+            "name": {
+                "fr": "",
+                "en": "Hadrathus",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "ranged",
+            "dices": { "0": "yellow", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/concentration", "1": "magic/spell_caster", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/hadrathus_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/hadrathus.png",
+            "imageHD": "data/tiles/img/hadrathus_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "hadrathus",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "kerim-shah",
+            "name": {
+                "fr": "",
+                "en": "Kerim Shah",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "ranged",
+            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "attack/precision_shot", "1": "defense/protected", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/kerim-shah_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/kerim-shah.png",
+            "imageHD": "data/tiles/img/kerim-shah_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "kerim-shah",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "ngora",
+            "name": {
+                "fr": "",
+                "en": "N'Gora",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "3",
+            "attacktype": "ranged",
+            "dices": { "0": "red", "1": "red", "2": "none", "3": "none" },
+            "skills": { "0": "attack/elite_shooter", "1": "defense/sacrifice", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/ngora_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/ngora.png",
+            "imageHD": "data/tiles/img/ngora_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "ngora",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "olgerd-vladislav",
+            "name": {
+                "fr": "",
+                "en": "Olgerd Vladislav",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
+            "skills": { "0": "attack/circular_strike", "1": "movement/blocking", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/olgerd-vladislav_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/olgerd-vladislav.png",
+            "imageHD": "data/tiles/img/olgerd-vladislav_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "olgerd-vladislav",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "pallantides",
+            "name": {
+                "fr": "",
+                "en": "Pallantides",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "red", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/support", "1": "defense/sacrifice", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/pallantides_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/pallantides.png",
+            "imageHD": "data/tiles/img/pallantides_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "pallantides",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "shevatas",
+            "name": {
+                "fr": "",
+                "en": "Shevatas",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "ranged",
+            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "movement/evasive", "1": "defense/untouchable", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/shevatas_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/shevatas.png",
+            "imageHD": "data/tiles/img/shevatas_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "shevatas",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "taurus",
+            "name": {
+                "fr": "",
+                "en": "Taurus",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "attack/precision_strike", "1": "movement/evasive", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/taurus_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/taurus.png",
+            "imageHD": "data/tiles/img/taurus_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "taurus",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "valeria",
+            "name": {
+                "fr": "",
+                "en": "Valeria",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "orangereroll", "2": "none", "3": "none" },
+            "skills": { "0": "attack/counterattack", "1": "movement/feline_grace", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/valeria_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/valeria.png",
+            "imageHD": "data/tiles/img/valeria_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "valeria",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "zelata",
+            "name": {
+                "fr": "",
+                "en": "Zelata",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "yellowreroll", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/support", "1": "magic/spell_caster", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/zelata_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/zelata.png",
+            "imageHD": "data/tiles/img/zelata_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "zelata",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "camel",
+            "name": {
+                "fr": "",
+                "en": "Camel",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "4",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "yellow", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [],
+    
+            "image": "data/tiles/img/camel.png",
+            "imageHD": "data/tiles/img/camel_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "camel",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "kothian-archer",
+            "name": {
+                "fr": "",
+                "en": "Kothian Archer",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "ranged",
+            "dices": { "0": "red", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "attack/elite_shooter", "1": "attack/precision_shot", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/kothian-archer_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/kothian-archer.png",
+            "imageHD": "data/tiles/img/kothian-archer_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "kothian-archer",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "slasher",
+            "name": {
+                "fr": "",
+                "en": "Slasher",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "5",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "movement/evasive", "1": "defense/sacrifice", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [],
+    
+            "image": "data/tiles/img/slasher.png",
+            "imageHD": "data/tiles/img/slasher_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "slasher",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "bone-golem",
+            "name": {
+                "fr": "",
+                "en": "Bone Golem",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "red", "2": "red", "3": "none" },
+            "skills": { "0": "movement/wall_wrecker", "1": "miscellaneous/horror", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/bone-golem_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/bone-golem.png",
+            "imageHD": "data/tiles/img/bone-golem_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "bone-golem",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "forest-demon",
+            "name": {
+                "fr": "",
+                "en": "Forest Demon",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "orange", "2": "orange", "3": "none" },
+            "skills": { "0": "attack/precision_strike", "1": "movement/blocking", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/forest-demon_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/forest-demon.png",
+            "imageHD": "data/tiles/img/forest-demon_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "forest-demon",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "giant-scorpion",
+            "name": {
+                "fr": "",
+                "en": "Giant Scorpion",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "orange", "2": "orange", "3": "none" },
+            "skills": { "0": "miscellaneous/poison", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/giant-scorpion_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/giant-scorpion.png",
+            "imageHD": "data/tiles/img/giant-scorpion_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "giant-scorpion",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "giant-spider",
+            "name": {
+                "fr": "",
+                "en": "Giant Spider",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "4",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "yellow", "2": "yellow", "3": "none" },
+            "skills": { "0": "movement/web_projection", "1": "movement/climb", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/giant-spider_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/giant-spider.png",
+            "imageHD": "data/tiles/img/giant-spider_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "giant-spider",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "gray-man-ape",
+            "name": {
+                "fr": "",
+                "en": "Gray Man-Ape",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "orange", "2": "orange", "3": "none" },
+            "skills": { "0": "movement/blocking", "1": "movement/climb", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/gray-man-ape_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/gray-man-ape.png",
+            "imageHD": "data/tiles/img/gray-man-ape_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "gray-man-ape",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "swamp-demon",
+            "name": {
+                "fr": "",
+                "en": "Swamp Demon",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "orangereroll", "3": "none" },
+            "skills": { "0": "miscellaneous/horror", "1": "miscellaneous/jinx", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/swamp-demon_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/swamp-demon.png",
+            "imageHD": "data/tiles/img/swamp-demon_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "swamp-demon",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "thaug",
+            "name": {
+                "fr": "",
+                "en": "Thaug",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "0",
+            "defense": "8",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "redreroll", "3": "redreroll" },
+            "skills": { "0": "miscellaneous/horror", "1": "magic/spell_caster", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/thaug_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/thaug.png",
+            "imageHD": "data/tiles/img/thaug_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "thaug",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "mummies-alt",
+            "name": {
+                "fr": "",
+                "en": "Mummies - Alt",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "2",
+            "tokens": [],
+    
+            "image": "data/tiles/img/mummies-alt.png",
+            "imageHD": "data/tiles/img/mummies-alt_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "mummies-alt",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "mummies-blue-alt",
+            "name": {
+                "fr": "",
+                "en": "Mummies - Blue Alt",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "2",
+            "tokens": [],
+    
+            "image": "data/tiles/img/mummies-blue-alt.png",
+            "imageHD": "data/tiles/img/mummies-blue-alt_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "mummies-blue-alt",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "pict-archers",
+            "name": {
+                "fr": "",
+                "en": "Pict Archers",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "ranged",
+            "dices": { "0": "yellowreroll", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "movement/leap", "1": "defense/untouchable", "2": "none", "3": "none" },
+            "reinforcement": "2",
+            "tokens": [],
+    
+            "image": "data/tiles/img/pict-archers.png",
+            "imageHD": "data/tiles/img/pict-archers_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "pict-archers",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "pict-archers-orange",
+            "name": {
+                "fr": "",
+                "en": "Pict Archers - Orange",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "ranged",
+            "dices": { "0": "yellowreroll", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "movement/leap", "1": "defense/untouchable", "2": "none", "3": "none" },
+            "reinforcement": "2",
+            "tokens": [],
+    
+            "image": "data/tiles/img/pict-archers-orange.png",
+            "imageHD": "data/tiles/img/pict-archers-orange_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "pict-archers-orange",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "pict-warriors",
+            "name": {
+                "fr": "",
+                "en": "Pict Warriors",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "movement/blocking", "1": "movement/leap", "2": "none", "3": "none" },
+            "reinforcement": "2",
+            "tokens": [],
+    
+            "image": "data/tiles/img/pict-warriors.png",
+            "imageHD": "data/tiles/img/pict-warriors_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "pict-warriors",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "pirates-alt",
+            "name": {
+                "fr": "",
+                "en": "Pirates - Alt",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "yellow", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "movement/leap", "1": "defense/untouchable", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/pirates-alt.png",
+            "imageHD": "data/tiles/img/pirates-alt_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "pirates-alt",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "pirates-orange-alt",
+            "name": {
+                "fr": "",
+                "en": "Pirates - Orange Alt",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "yellow", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "movement/leap", "1": "defense/untouchable", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/pirates-orange-alt.png",
+            "imageHD": "data/tiles/img/pirates-orange-alt_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "pirates-orange-alt",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "skeletons-alt",
+            "name": {
+                "fr": "",
+                "en": "Skeletons - Alt",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "0",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/skeletons-alt.png",
+            "imageHD": "data/tiles/img/skeletons-alt_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "skeletons-alt",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "skeletons-red-alt",
+            "name": {
+                "fr": "",
+                "en": "Skeletons - Red Alt",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "0",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/skeletons-red-alt.png",
+            "imageHD": "data/tiles/img/skeletons-red-alt_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "skeletons-red-alt",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "tentacles",
+            "name": {
+                "fr": "",
+                "en": "Tentacles",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "0",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "attack/reach", "1": "attack/constriction", "2": "none", "3": "none" },
+            "reinforcement": "2",
+            "tokens": [],
+    
+            "image": "data/tiles/img/tentacles.png",
+            "imageHD": "data/tiles/img/tentacles_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "tentacles",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "tentacles-blue",
+            "name": {
+                "fr": "",
+                "en": "Tentacles - Blue",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "0",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "attack/reach", "1": "attack/constriction", "2": "none", "3": "none" },
+            "reinforcement": "2",
+            "tokens": [],
+    
+            "image": "data/tiles/img/tentacles-blue.png",
+            "imageHD": "data/tiles/img/tentacles-blue_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "tentacles-blue",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "tentacles-orange",
+            "name": {
+                "fr": "",
+                "en": "Tentacles - Orange",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "0",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "attack/reach", "1": "attack/constriction", "2": "none", "3": "none" },
+            "reinforcement": "2",
+            "tokens": [],
+    
+            "image": "data/tiles/img/tentacles-orange.png",
+            "imageHD": "data/tiles/img/tentacles-orange_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "tentacles-orange",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "tentacles-red",
+            "name": {
+                "fr": "",
+                "en": "Tentacles - Red",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "0",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "attack/reach", "1": "attack/constriction", "2": "none", "3": "none" },
+            "reinforcement": "2",
+            "tokens": [],
+    
+            "image": "data/tiles/img/tentacles-red.png",
+            "imageHD": "data/tiles/img/tentacles-red_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "tentacles-red",
+            "origins": ["stretchgoal", "king"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "baal-pteor",
+            "name": {
+                "fr": "",
+                "en": "Baal Pteor",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "red", "2": "red", "3": "none" },
+            "skills": { "0": "movement/blocking", "1": "attack/precision_strike", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/baal-pteor_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/baal-pteor.png",
+            "imageHD": "data/tiles/img/baal-pteor_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "baal-pteor",
+            "origins": ["baalpteor"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "black-dragons",
+            "name": {
+                "fr": "",
+                "en": "Black Dragons",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "attack/counterattack", "1": "defense/sacrifice", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [],
+    
+            "image": "data/tiles/img/black-dragons.png",
+            "imageHD": "data/tiles/img/black-dragons_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "black-dragons",
+            "origins": ["blackdragons"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "the-black-ones",
+            "name": {
+                "fr": "",
+                "en": "The Black Ones",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "attack/precision_strike", "1": "miscellaneous/jinx", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [],
+    
+            "image": "data/tiles/img/the-black-ones.png",
+            "imageHD": "data/tiles/img/the-black-ones_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "the-black-ones",
+            "origins": ["blackones"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "the-black-ones-green",
+            "name": {
+                "fr": "",
+                "en": "The Black Ones - Green",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "attack/precision_strike", "1": "miscellaneous/jinx", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [],
+    
+            "image": "data/tiles/img/the-black-ones-green.png",
+            "imageHD": "data/tiles/img/the-black-ones-green_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "the-black-ones-green",
+            "origins": ["blackones"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "the-black-ones-purple",
+            "name": {
+                "fr": "",
+                "en": "The Black Ones - Purple",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "attack/precision_strike", "1": "miscellaneous/jinx", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [],
+    
+            "image": "data/tiles/img/the-black-ones-purple.png",
+            "imageHD": "data/tiles/img/the-black-ones-purple_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "the-black-ones-purple",
+            "origins": ["blackones"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "crossbowmen",
+            "name": {
+                "fr": "",
+                "en": "Crossbowmen",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "ranged",
+            "dices": { "0": "red", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "attack/elite_shooter", "1": "defense/sacrifice", "2": "none", "3": "none" },
+            "reinforcement": "2",
+            "tokens": [],
+    
+            "image": "data/tiles/img/crossbowmen.png",
+            "imageHD": "data/tiles/img/crossbowmen_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "crossbowmen",
+            "origins": ["crossbowmen"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "crossbowmen-green",
+            "name": {
+                "fr": "",
+                "en": "Crossbowmen - Green",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "0",
+            "attacktype": "ranged",
+            "dices": { "0": "redreroll", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "attack/elite_shooter", "1": "attack/precision_shot", "2": "none", "3": "none" },
+            "reinforcement": "3",
+            "tokens": [],
+    
+            "image": "data/tiles/img/crossbowmen-green.png",
+            "imageHD": "data/tiles/img/crossbowmen-green_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "crossbowmen-green",
+            "origins": ["crossbowmen"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "crossbowmen-red",
+            "name": {
+                "fr": "",
+                "en": "Crossbowmen - Red",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "ranged",
+            "dices": { "0": "red", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "attack/elite_shooter", "1": "defense/sacrifice", "2": "none", "3": "none" },
+            "reinforcement": "2",
+            "tokens": [],
+    
+            "image": "data/tiles/img/crossbowmen-red.png",
+            "imageHD": "data/tiles/img/crossbowmen-red_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "crossbowmen-red",
+            "origins": ["crossbowmen"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "demon-of-the-earth",
+            "name": {
+                "fr": "",
+                "en": "Demon of the Earth",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "orange", "2": "orange", "3": "orange" },
+            "skills": { "0": "movement/wall_wrecker", "1": "movement/blocking", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/demon-of-the-earth_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/demon-of-the-earth.png",
+            "imageHD": "data/tiles/img/demon-of-the-earth_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "demon-of-the-earth",
+            "origins": ["demonearth"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "dragon",
+            "name": {
+                "fr": "",
+                "en": "Dragon",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "3",
+            "defense": "5",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "redreroll", "3": "redreroll" },
+            "skills": { "0": "movement/wall_wrecker", "1": "movement/blocking", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/dragon_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/dragon.png",
+            "imageHD": "data/tiles/img/dragon_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "dragon",
+            "origins": ["dragon"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "giant-wolves",
+            "name": {
+                "fr": "",
+                "en": "Giant Wolves",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "5",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "movement/evasive", "1": "movement/leap", "2": "none", "3": "none" },
+            "reinforcement": "2",
+            "tokens": [],
+    
+            "image": "data/tiles/img/giant-wolves.png",
+            "imageHD": "data/tiles/img/giant-wolves_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "giant-wolves",
+            "origins": ["giantwolves"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "sabertooth-tiger",
+            "name": {
+                "fr": "",
+                "en": "Sabertooth Tiger",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "4",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "movement/leap", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/sabertooth-tiger_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/sabertooth-tiger.png",
+            "imageHD": "data/tiles/img/sabertooth-tiger_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "sabertooth-tiger",
+            "origins": ["sabretoothtiger"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "afari",
+            "name": {
+                "fr": "",
+                "en": "Afari",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "red", "2": "none", "3": "none" },
+            "skills": { "0": "attack/precision_strike", "1": "attack/counterattack", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/afari_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/afari.png",
+            "imageHD": "data/tiles/img/afari_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "afari",
+            "origins": ["kushwitchhunters"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "ghayoor",
+            "name": {
+                "fr": "",
+                "en": "Ghayoor",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "attack/precision_strike", "1": "defense/sacrifice", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/ghayoor_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/ghayoor.png",
+            "imageHD": "data/tiles/img/ghayoor_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "ghayoor",
+            "origins": ["kushwitchhunters"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "shafiah",
+            "name": {
+                "fr": "",
+                "en": "Shafiah",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "attack/precision_strike", "1": "defense/sacrifice", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/shafiah_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/shafiah.png",
+            "imageHD": "data/tiles/img/shafiah_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "shafiah",
+            "origins": ["kushwitchhunters"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "shubba",
+            "name": {
+                "fr": "",
+                "en": "Shubba",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "yellow", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/concentration", "1": "magic/spell_caster", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/shubba_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/shubba.png",
+            "imageHD": "data/tiles/img/shubba_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "shubba",
+            "origins": ["kushwitchhunters"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "vanir-valkyrie",
+            "name": {
+                "fr": "",
+                "en": "Vanir Valkyrie",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "orangereroll", "2": "orangereroll", "3": "none" },
+            "skills": { "0": "attack/precision_strike", "1": "movement/evasive", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/vanir-valkyrie_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/vanir-valkyrie.png",
+            "imageHD": "data/tiles/img/vanir-valkyrie_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "vanir-valkyrie",
+            "origins": ["valvan"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "salome",
+            "name": {
+                "fr": "",
+                "en": "Salome",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "yellow", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "magic/spell_caster", "1": "defense/protected", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/salome_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/salome.png",
+            "imageHD": "data/tiles/img/salome_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "salome",
+            "origins": ["ppbox"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "atali",
+            "name": {
+                "fr": "",
+                "en": "Atali",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "3",
+            "defense": "0",
+            "attacktype": "contact",
+            "dices": { "0": "yellow", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "magic/spell_caster", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/atali_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/atali.png",
+            "imageHD": "data/tiles/img/atali_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "atali",
+            "origins": ["nordheim"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "yazdigerd",
+            "name": {
+                "fr": "",
+                "en": "Yazdigerd",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "yellow", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "magic/spell_caster", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/yazdigerd_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/yazdigerd.png",
+            "imageHD": "data/tiles/img/yazdigerd_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "yazdigerd",
+            "origins": ["nordheim"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "nijgor",
+            "name": {
+                "fr": "",
+                "en": "Nijgor",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "3",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "red", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/horror", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/nijgor_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/nijgor.png",
+            "imageHD": "data/tiles/img/nijgor_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "nijgor",
+            "origins": ["nordheim"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "seski",
+            "name": {
+                "fr": "",
+                "en": "Seski",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "red", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/horror", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/seski_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/seski.png",
+            "imageHD": "data/tiles/img/seski_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "seski",
+            "origins": ["nordheim"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "vanir-warriors",
+            "name": {
+                "fr": "",
+                "en": "Vanir Warriors",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "yellowreroll", "1": "yellowreroll", "2": "none", "3": "none" },
+            "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/vanir-warriors.png",
+            "imageHD": "data/tiles/img/vanir-warriors_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "vanir-warriors",
+            "origins": ["nordheim"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "vanir-warriors-blue",
+            "name": {
+                "fr": "",
+                "en": "Vanir Warriors - Blue",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "yellowreroll", "1": "yellowreroll", "2": "none", "3": "none" },
+            "skills": { "0": "attack/precision_strike", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/vanir-warriors-blue.png",
+            "imageHD": "data/tiles/img/vanir-warriors-blue_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "vanir-warriors-blue",
+            "origins": ["nordheim"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "vanir-warriors-purple",
+            "name": {
+                "fr": "",
+                "en": "Vanir Warriors - Purple",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "yellowreroll", "1": "yellowreroll", "2": "none", "3": "none" },
+            "skills": { "0": "attack/precision_strike", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/vanir-warriors-purple.png",
+            "imageHD": "data/tiles/img/vanir-warriors-purple_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "vanir-warriors-purple",
+            "origins": ["nordheim"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "vanir-zombies-green",
+            "name": {
+                "fr": "",
+                "en": "Vanir Zombies - Green",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "1",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "attack/constriction", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/vanir-zombies-green.png",
+            "imageHD": "data/tiles/img/vanir-zombies-green_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "vanir-zombies-green",
+            "origins": ["nordheim"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "vanir-zombies-red",
+            "name": {
+                "fr": "",
+                "en": "Vanir Zombies - Red",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "1",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "attack/constriction", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/vanir-zombies-red.png",
+            "imageHD": "data/tiles/img/vanir-zombies-red_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "vanir-zombies-red",
+            "origins": ["nordheim"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "vanir-primitives",
+            "name": {
+                "fr": "",
+                "en": "Vanir Primitives",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/vanir-primitives.png",
+            "imageHD": "data/tiles/img/vanir-primitives_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "vanir-primitives",
+            "origins": ["nordheim"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "vanir-primitives-red",
+            "name": {
+                "fr": "",
+                "en": "Vanir Primitives - Red",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/vanir-primitives-red.png",
+            "imageHD": "data/tiles/img/vanir-primitives-red_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "vanir-primitives-red",
+            "origins": ["nordheim"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "crows",
+            "name": {
+                "fr": "",
+                "en": "Crows",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "5",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "yellow", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "movement/flying", "1": "miscellaneous/jinx", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/crows.png",
+            "imageHD": "data/tiles/img/crows_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "crows",
+            "origins": ["nordheim"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "crows-red",
+            "name": {
+                "fr": "",
+                "en": "Crows - Red",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "5",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "yellow", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "movement/flying", "1": "miscellaneous/jinx", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/crows-red.png",
+            "imageHD": "data/tiles/img/crows-red_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "crows-red",
+            "origins": ["nordheim"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "wolves",
+            "name": {
+                "fr": "",
+                "en": "Wolves",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "5",
+            "defense": "0",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "movement/evasive", "1": "movement/leap", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/wolves.png",
+            "imageHD": "data/tiles/img/wolves_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "wolves",
+            "origins": ["nordheim"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "aesir-zombies-purple",
+            "name": {
+                "fr": "",
+                "en": "Aesir Zombies - Purple",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "attack/counterattack", "1": "movement/blocking", "2": "none", "3": "none" },
+            "reinforcement": "3",
+            "tokens": [],
+    
+            "image": "data/tiles/img/aesir-zombies-purple.png",
+            "imageHD": "data/tiles/img/aesir-zombies-purple_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "aesir-zombies-purple",
+            "origins": ["nordheim"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "aesir-warriors",
+            "name": {
+                "fr": "",
+                "en": "Aesir Warriors",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/aesir-warriors.png",
+            "imageHD": "data/tiles/img/aesir-warriors_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "aesir-warriors",
+            "origins": ["nordheim"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "aesir-warriors-red",
+            "name": {
+                "fr": "",
+                "en": "Aesir Warriors - Red",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "0",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "movement/evasive", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/aesir-warriors-red.png",
+            "imageHD": "data/tiles/img/aesir-warriors-red_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "aesir-warriors-red",
+            "origins": ["nordheim"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "shuang-mian",
+            "name": {
+                "fr": "",
+                "en": "Shuang Mian",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/concentration", "1": "magic/spell_caster", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/shuang-mian_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/shuang-mian.png",
+            "imageHD": "data/tiles/img/shuang-mian_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "shuang-mian",
+            "origins": ["khitai"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "evil-hound",
+            "name": {
+                "fr": "",
+                "en": "Evil Hound",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "red", "2": "none", "3": "none" },
+            "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/evil-hound_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/evil-hound.png",
+            "imageHD": "data/tiles/img/evil-hound_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "evil-hound",
+            "origins": ["khitai"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "khitan-guards",
+            "name": {
+                "fr": "",
+                "en": "Khitan Guards",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "yellow", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "movement/blocking", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/khitan-guards.png",
+            "imageHD": "data/tiles/img/khitan-guards_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "khitan-guards",
+            "origins": ["khitai"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "khitan-guards-red",
+            "name": {
+                "fr": "",
+                "en": "Khitan Guards - Red",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "yellow", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "movement/blocking", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/khitan-guards-red.png",
+            "imageHD": "data/tiles/img/khitan-guards-red_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "khitan-guards-red",
+            "origins": ["khitai"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "honor-guards",
+            "name": {
+                "fr": "",
+                "en": "Honor Guards",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "defense/sacrifice", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "2",
+            "tokens": [],
+    
+            "image": "data/tiles/img/honor-guards.png",
+            "imageHD": "data/tiles/img/honor-guards_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "honor-guards",
+            "origins": ["khitai"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "honor-guards-green",
+            "name": {
+                "fr": "",
+                "en": "Honor Guards - Green",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "defense/sacrifice", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "2",
+            "tokens": [],
+    
+            "image": "data/tiles/img/honor-guards-green.png",
+            "imageHD": "data/tiles/img/honor-guards-green_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "honor-guards-green",
+            "origins": ["khitai"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "javelin-throwers",
+            "name": {
+                "fr": "",
+                "en": "Javelin Throwers",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "3",
+            "defense": "1",
+            "attacktype": "ranged",
+            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "attack/elite_shooter", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "2",
+            "tokens": [],
+    
+            "image": "data/tiles/img/javelin-throwers.png",
+            "imageHD": "data/tiles/img/javelin-throwers_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "javelin-throwers",
+            "origins": ["khitai"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "javelin-throwers-purple",
+            "name": {
+                "fr": "",
+                "en": "Javelin Throwers - Purple",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "3",
+            "defense": "1",
+            "attacktype": "ranged",
+            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "attack/elite_shooter", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "2",
+            "tokens": [],
+    
+            "image": "data/tiles/img/javelin-throwers-purple.png",
+            "imageHD": "data/tiles/img/javelin-throwers-purple_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "javelin-throwers-purple",
+            "origins": ["khitai"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "foo-dogs",
+            "name": {
+                "fr": "",
+                "en": "Foo Dogs",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "5",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "yellow", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "attack/counterattack", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/foo-dogs.png",
+            "imageHD": "data/tiles/img/foo-dogs_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "foo-dogs",
+            "origins": ["khitai"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "thot-amon",
+            "name": {
+                "fr": "",
+                "en": "Thot-Amon",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "magic/spell_caster", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/thot-amon_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/thot-amon.png",
+            "imageHD": "data/tiles/img/thot-amon_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "thot-amon",
+            "origins": ["stygia"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "scorpion-broodmother",
+            "name": {
+                "fr": "",
+                "en": "Scorpion Broodmother",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "orange", "2": "yellow", "3": "none" },
+            "skills": { "0": "movement/blocking", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/scorpion-broodmother_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/scorpion-broodmother.png",
+            "imageHD": "data/tiles/img/scorpion-broodmother_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "scorpion-broodmother",
+            "origins": ["stygia"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "giant-scorpions",
+            "name": {
+                "fr": "",
+                "en": "Giant Scorpions",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "4",
+            "defense": "0",
+            "attacktype": "contact",
+            "dices": { "0": "yellow", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/poison", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [],
+    
+            "image": "data/tiles/img/giant-scorpions.png",
+            "imageHD": "data/tiles/img/giant-scorpions_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "giant-scorpions",
+            "origins": ["stygia"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "eternal-guard",
+            "name": {
+                "fr": "",
+                "en": "Eternal Guard",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/eternal-guard.png",
+            "imageHD": "data/tiles/img/eternal-guard_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "eternal-guard",
+            "origins": ["stygia"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "eternal-guard-blue",
+            "name": {
+                "fr": "",
+                "en": "Eternal Guard - Blue",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+            "tokens": [],
+    
+            "image": "data/tiles/img/eternal-guard-blue.png",
+            "imageHD": "data/tiles/img/eternal-guard-blue_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "eternal-guard-blue",
+            "origins": ["stygia"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "assassins",
+            "name": {
+                "fr": "",
+                "en": "Assassins",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "3",
+            "defense": "0",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "red", "2": "none", "3": "none" },
+            "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "2",
+            "tokens": [],
+    
+            "image": "data/tiles/img/assassins.png",
+            "imageHD": "data/tiles/img/assassins_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "assassins",
+            "origins": ["stygia"],
+    
+            "count": 1
+        },
+    
+        {
+            "id": "assassins-red",
+            "name": {
+                "fr": "",
+                "en": "Assassins - Red",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "color": "gray",
+            "movement": "3",
+            "defense": "0",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "red", "2": "none", "3": "none" },
+            "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [],
+    
+            "image": "data/tiles/img/assassins-red.png",
+            "imageHD": "data/tiles/img/assassins-red_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "assassins-red",
+            "origins": ["stygia"],
+    
+            "count": 1
+        }
+    ]
+}

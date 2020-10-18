@@ -45,6 +45,7 @@ var Encyclopedia = {
             _load("data/expansions.json", function(data) { Encyclopedia.expansions = data; }),
             _load("data/maps.json", function(data) { Encyclopedia.maps = data; }),
             _load("data/models.json", function(data) { Encyclopedia.models = _handleCount(data); }),
+            _load("data/tiles.json", function(data) { Encyclopedia.tiles = _handleCount(data); }),
             _load("data/heroes.json", function(data) { Encyclopedia.heroes = data; })
         ]);
     },

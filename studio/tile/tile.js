@@ -201,7 +201,10 @@ var Tile = {
         {
             for (var i in tiles)
             {
-                html += "<div id=\"tile-back-" + i + "\"  class='printoverflow back invisible'>" +  + Tile._tileCode(tiles[i]) + "</div>"
+                html += "<div id=\"tile-back-" + i + "\"  class='printoverflow back invisible'>"
+                            + "<img class=\"blood\" src=\"studio/tile/img/blood.png?version=" + Version + "\"/>"
+                            + Tile._tileCode(tiles[i]) 
+                        + "</div>"
             }
         }
 
