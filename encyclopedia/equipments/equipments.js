@@ -423,13 +423,13 @@ var EncyclopediaEquipments = {
         {
             var equipment = Encyclopedia.equipments.list[i];
             if (equipment.skills
-                && !equipmentsIds[id]
+                && !equipmentsIds[equipment.id]
                 && (equipment.skills[0] == id
                     || 
                     (equipment.skills[0] != "none" && equipment.skills[1] == id)))
             {
                 equipments.push(equipment);
-                equipmentsIds[id] = true;
+                equipmentsIds[equipment.id] = true;
             }
         }
         

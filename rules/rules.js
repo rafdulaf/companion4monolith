@@ -9,6 +9,7 @@ var ConanRules = {
             'equipments': "Utilisée dans les cartes d'équipement :",
             'spells': "Utilisée dans les cartes de sort :",
             'heroesOwned': "Possédée par les héros :",
+            'tilesOwned': "Possédée par les tuiles :",
 
             'viewer-search': "Recherche dans le document",
             'viewer-download': "Télécharger le document",
@@ -36,6 +37,7 @@ var ConanRules = {
             'equipments': "Used in the equipments cards:",
             'spells': "Used in the spells card:",
             'heroesOwned': "Owned by the heroes:",
+            'tilesOwned': "Owned by the tiles:",
 
             'viewer-search': "Search in the document",
             'viewer-download': "Download the document",
@@ -63,6 +65,7 @@ var ConanRules = {
             'equipments': "Usato nelle carte equipaggiamento:",
             'spells': "Usato nelle carte incantesimo:",
             'heroesOwned': "Posseduto dagli Eroi:",
+            'tilesOwned': "TODO_TRANSLATE",
 
             'viewer-search': "Cerca nell'intero documento",
             'viewer-download': "Scarica il pdf",
@@ -565,6 +568,19 @@ var ConanRules = {
             }
         }
 
+        var tiles = EncyclopediaTiles._findTilesBySkill(id);
+        var tiS = "";
+        if (tiles.length > 0)
+        {
+            for (var i=0; i < tiles.length; i++)
+            {
+                if (i != 0) tiS += ", ";
+                tiS += " ";
+
+                tiS += EncyclopediaTiles._linkToTile(tiles[i].id);
+            }
+        }
+
         Nav.dialog(skill.title[Language],
             "<div class='skillsdetails'>"
                 + ConanRules._skill2HTML(skill.id, skill.type, skill.image, skill.title[Language], skill.text[Language])
@@ -576,6 +592,9 @@ var ConanRules = {
                         + "</div>") : "")
                 + (heS ? ("<div class='heroes'>"
                             + ConanRules._i18n[Language].heroesOwned + heS
+                        + "</div>") : "")
+                + (tiS ? ("<div class='tiles'>"
+                            + ConanRules._i18n[Language].tilesOwned + tiS
                         + "</div>") : "")
             + "</div>",
             null,

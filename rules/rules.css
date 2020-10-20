@@ -91,6 +91,13 @@
     color: #000000;
 }
 
+.skillsdetails .heroes,
+.skillsdetails .tiles,
+.skillsdetails .equipments,
+.skillsdetails .spells {
+    line-height: 20px;
+    margin: 10px 0;
+}
 
 
 @media screen and (max-width: 536px) {

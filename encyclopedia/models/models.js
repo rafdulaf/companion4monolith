@@ -10,7 +10,7 @@ var EncyclopediaModels = {
             'zoom': "Zoom",
             'print': "Imprimer",
             'heroes': "Utilisée par les héros :",
-            'type': "Type"
+            'tiles': "Utilisée par les tuiles :"
         },
         'en': {
             'tab': "Minia<wbr/>tures",
@@ -22,7 +22,7 @@ var EncyclopediaModels = {
             'zoom': "Zoom",
             'print': "Print",
             'heroes': "Used by the heroes:",
-            'type': "Type"
+            'tiles': "Used by the tiles:"
         },
         'it': {
             'tab': "Minia<wbr/>ture",
@@ -33,7 +33,8 @@ var EncyclopediaModels = {
             'paintedBy': "Dipinta da: ",
             'zoom': "Zoom",
             'print': "Stampa",
-            'heroes': "Usata dagli Eroi:"
+            'heroes': "Usata dagli Eroi:",
+            'tiles': "TODO_TRANSLATE"
         }
     },
 
@@ -333,8 +334,21 @@ var EncyclopediaModels = {
 
     _findTilesByModel: function(model)
     {
-        // TODO
-        return [];
+        var tiles = [];
+
+        if (model)
+        {
+            for (var i in Encyclopedia.tiles.list)
+            {
+                var tile = Encyclopedia.tiles.list[i];
+                if (tile.model == model.id)
+                {
+                    tiles.push(tile);
+                }
+            }
+        }
+        
+        return tiles;
     },
     
     _findHeroesByModel: function(model)
@@ -487,12 +501,25 @@ var EncyclopediaModels = {
         }
         if (heroes) heroes = "<div class='heroes'>" + EncyclopediaModels._i18n[Language].heroes + " " + heroes + "</div>";
 
+        var tiles = "";
+        for (var i in Encyclopedia.tiles.list)
+        {
+            var tile = Encyclopedia.tiles.list[i];
+            if (tile.model == model.id)
+            {
+                if (tiles) tiles += ", ";
+                tiles += EncyclopediaTiles._linkToTile(tile.id);
+            }
+        }
+        if (tiles) tiles = "<div class='tiles'>" + EncyclopediaModels._i18n[Language].tiles + " " + tiles + "</div>";
+
         Nav.dialog(EncyclopediaModels._findModelNames(model) || "",
             "<div class='modeldetails'>"
                 + "<div class='from'>" + EncyclopediaModels._i18n[Language].from + " "
                     + originString
                 + "</div>"
                 + heroes
+                + tiles
                 + painter
                 + photos
             + "</div>",

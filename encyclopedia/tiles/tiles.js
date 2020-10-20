@@ -327,14 +327,14 @@ var EncyclopediaTiles = {
         {
             var tile = Encyclopedia.tiles.list[i];
             if (tile.skills
-                && !tilesIds[id]
+                && !tilesIds[tile.id]
                 && (tile.skills[0] == id
                     || (tile.skills[0] != "none" && tile.skills[1] == id)
                     || (tile.skills[0] != "none" && tile.skills[1] != "none" && tile.skills[2] == id)
                     || (tile.skills[0] != "none" && tile.skills[1] != "none" && tile.skills[2] != "none" && tile.skills[3] == id)))
             {
                 tiles.push(tile);
-                tilesIds[id] = true;
+                tilesIds[tile.id] = true;
             }
         }
         

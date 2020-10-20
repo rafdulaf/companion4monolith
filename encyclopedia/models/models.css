@@ -85,6 +85,12 @@
     margin-left: 90px;
 }
 
+.modeldetails .heroes,
+.modeldetails .tiles {
+    line-height: 20px;
+    margin: 10px 0;
+}
+
 @media print {
     .modeldetails > div { display: none !important; }
     .modeldetails > div.photos { display: block !important; text-align: center; }
