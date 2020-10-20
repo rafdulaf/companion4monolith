@@ -37,7 +37,30 @@ var Encyclopedia = {
             
             return object;
         }
-        
+
+        function _handleColors(object)
+        {
+            var newItemsForArray = [];
+            
+            for (var j in object.list)
+            {
+                var item = object.list[j];
+                if (item.colors)
+                {
+                    for (var k = 1; k < item.colors.length ; k++)
+                    {
+                        newItemsForArray.push({...item, color: item.colors[k]});
+                    }
+                    
+                    item.color = item.colors[0];
+                }
+            }
+            
+            object.list = object.list.concat(newItemsForArray);
+            
+            return object;
+        }
+
         return Promise.all([
             _load("data/skills.json", function(data) { Encyclopedia.skills = data; }),
             _load("data/spells.json", function(data) { Encyclopedia.spells = data; }),
@@ -45,7 +68,7 @@ var Encyclopedia = {
             _load("data/expansions.json", function(data) { Encyclopedia.expansions = data; }),
             _load("data/maps.json", function(data) { Encyclopedia.maps = data; }),
             _load("data/models.json", function(data) { Encyclopedia.models = _handleCount(data); }),
-            _load("data/tiles.json", function(data) { Encyclopedia.tiles = _handleCount(data); }),
+            _load("data/tiles.json", function(data) { Encyclopedia.tiles = _handleColors(_handleCount(data)); }),
             _load("data/heroes.json", function(data) { Encyclopedia.heroes = data; })
         ]);
     },

@@ -399,7 +399,7 @@ var EncyclopediaModels = {
             }
         }
         
-        return names.join(" / ") || ("'" + model.id + "'");
+        return names.join(" / ") || ("'" + (model ? model.id : '-') + "'");
     },
 
     _findModelsById: function(id)

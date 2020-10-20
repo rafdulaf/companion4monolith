@@ -8,7 +8,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "3",
             "defense": "3",
             "attacktype": "contact",
@@ -18,6 +18,22 @@
             "tokens": [
                 { "image":"data/tiles/img/captain_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/captain.png",
             "imageHD": "data/tiles/img/captain_hd.png",
@@ -37,7 +53,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "1",
             "attacktype": "contact",
@@ -47,6 +63,22 @@
             "tokens": [
                 { "image":"data/tiles/img/skuthus_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/skuthus.png",
             "imageHD": "data/tiles/img/skuthus_hd.png",
@@ -66,7 +98,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "3",
             "defense": "2",
             "attacktype": "contact",
@@ -76,6 +108,22 @@
             "tokens": [
                 { "image":"data/tiles/img/thalis_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/thalis.png",
             "imageHD": "data/tiles/img/thalis_hd.png",
@@ -95,7 +143,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "3",
             "defense": "3",
             "attacktype": "contact",
@@ -105,6 +153,22 @@
             "tokens": [
                 { "image":"data/tiles/img/zogar-sag_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/zogar-sag.png",
             "imageHD": "data/tiles/img/zogar-sag_hd.png",
@@ -124,7 +188,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "3",
             "attacktype": "contact",
@@ -134,6 +198,22 @@
             "tokens": [
                 { "image":"data/tiles/img/zaporavo_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/zaporavo.png",
             "imageHD": "data/tiles/img/zaporavo_hd.png",
@@ -153,7 +233,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "3",
             "defense": "3",
             "attacktype": "contact",
@@ -163,6 +243,22 @@
             "tokens": [
                 { "image":"data/tiles/img/dark-demon_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/dark-demon.png",
             "imageHD": "data/tiles/img/dark-demon_hd.png",
@@ -182,7 +278,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "3",
             "defense": "3",
             "attacktype": "contact",
@@ -192,6 +288,22 @@
             "tokens": [
                 { "image":"data/tiles/img/giant-snake_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/giant-snake.png",
             "imageHD": "data/tiles/img/giant-snake_hd.png",
@@ -211,7 +323,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "3",
             "defense": "12",
             "attacktype": "contact",
@@ -221,6 +333,22 @@
             "tokens": [
                 { "image":"data/tiles/img/khosatral-khel_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/khosatral-khel.png",
             "imageHD": "data/tiles/img/khosatral-khel_hd.png",
@@ -240,7 +368,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "8",
             "defense": "3",
             "attacktype": "contact",
@@ -250,6 +378,22 @@
             "tokens": [
                 { "image":"data/tiles/img/outer-dark-demon_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/outer-dark-demon.png",
             "imageHD": "data/tiles/img/outer-dark-demon_hd.png",
@@ -269,7 +413,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "3",
             "defense": "3",
             "attacktype": "contact",
@@ -279,6 +423,22 @@
             "tokens": [
                 { "image":"data/tiles/img/thak_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/thak.png",
             "imageHD": "data/tiles/img/thak_hd.png",
@@ -298,7 +458,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "3",
             "defense": "1",
             "attacktype": "contact",
@@ -306,6 +466,22 @@
             "skills": { "0": "movement/leap", "1": "defense/sacrifice", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/bêlits-guards.png",
             "imageHD": "data/tiles/img/bêlits-guards_hd.png",
@@ -325,7 +501,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "0",
             "attacktype": "contact",
@@ -335,6 +511,22 @@
             "tokens": [
                 { "image":"data/tiles/img/princess_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/princess.png",
             "imageHD": "data/tiles/img/princess_hd.png",
@@ -354,7 +546,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "1",
             "attacktype": "ranged",
@@ -362,6 +554,22 @@
             "skills": { "0": "attack/elite_shooter", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/bossonian-archers.png",
             "imageHD": "data/tiles/img/bossonian-archers_hd.png",
@@ -381,7 +589,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "purple",
+            "colors": ["purple"],
             "movement": "2",
             "defense": "1",
             "attacktype": "ranged",
@@ -389,6 +597,22 @@
             "skills": { "0": "attack/elite_shooter", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/bossonian-archers-purple.png",
             "imageHD": "data/tiles/img/bossonian-archers-purple_hd.png",
@@ -408,7 +632,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "2",
             "attacktype": "contact",
@@ -416,6 +640,22 @@
             "skills": { "0": "defense/sacrifice", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/bossonian-guards.png",
             "imageHD": "data/tiles/img/bossonian-guards_hd.png",
@@ -435,7 +675,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "blue",
+            "colors": ["blue"],
             "movement": "2",
             "defense": "2",
             "attacktype": "contact",
@@ -443,6 +683,22 @@
             "skills": { "0": "defense/sacrifice", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/bossonian-guards-blue.png",
             "imageHD": "data/tiles/img/bossonian-guards-blue_hd.png",
@@ -462,7 +718,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "green",
+            "colors": ["green"],
             "movement": "2",
             "defense": "2",
             "attacktype": "contact",
@@ -470,6 +726,22 @@
             "skills": { "0": "defense/sacrifice", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/bossonian-guards-green.png",
             "imageHD": "data/tiles/img/bossonian-guards-green_hd.png",
@@ -489,7 +761,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "orange",
+            "colors": ["orange"],
             "movement": "2",
             "defense": "2",
             "attacktype": "contact",
@@ -497,6 +769,22 @@
             "skills": { "0": "defense/sacrifice", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/bossonian-guards-orange.png",
             "imageHD": "data/tiles/img/bossonian-guards-orange_hd.png",
@@ -516,7 +804,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "purple",
+            "colors": ["purple"],
             "movement": "2",
             "defense": "2",
             "attacktype": "contact",
@@ -524,6 +812,22 @@
             "skills": { "0": "defense/sacrifice", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/bossonian-guards-purple.png",
             "imageHD": "data/tiles/img/bossonian-guards-purple_hd.png",
@@ -543,7 +847,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "red",
+            "colors": ["red"],
             "movement": "2",
             "defense": "2",
             "attacktype": "contact",
@@ -551,6 +855,22 @@
             "skills": { "0": "defense/sacrifice", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/bossonian-guards-red.png",
             "imageHD": "data/tiles/img/bossonian-guards-red_hd.png",
@@ -570,7 +890,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "5",
             "defense": "0",
             "attacktype": "contact",
@@ -578,6 +898,22 @@
             "skills": { "0": "movement/evasive", "1": "movement/leap", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/hyenas.png",
             "imageHD": "data/tiles/img/hyenas_hd.png",
@@ -597,7 +933,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "1",
             "attacktype": "contact",
@@ -605,6 +941,22 @@
             "skills": { "0": "movement/leap", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/pict-hunters.png",
             "imageHD": "data/tiles/img/pict-hunters_hd.png",
@@ -624,7 +976,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "blue",
+            "colors": ["blue"],
             "movement": "2",
             "defense": "1",
             "attacktype": "contact",
@@ -632,6 +984,22 @@
             "skills": { "0": "movement/leap", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/pict-hunters-blue.png",
             "imageHD": "data/tiles/img/pict-hunters-blue_hd.png",
@@ -651,7 +1019,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "green",
+            "colors": ["green"],
             "movement": "2",
             "defense": "1",
             "attacktype": "contact",
@@ -659,6 +1027,22 @@
             "skills": { "0": "movement/leap", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/pict-hunters-green.png",
             "imageHD": "data/tiles/img/pict-hunters-green_hd.png",
@@ -678,7 +1062,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "orange",
+            "colors": ["orange"],
             "movement": "2",
             "defense": "1",
             "attacktype": "contact",
@@ -686,6 +1070,22 @@
             "skills": { "0": "movement/leap", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/pict-hunters-orange.png",
             "imageHD": "data/tiles/img/pict-hunters-orange_hd.png",
@@ -705,7 +1105,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "red",
+            "colors": ["red"],
             "movement": "2",
             "defense": "1",
             "attacktype": "contact",
@@ -713,6 +1113,22 @@
             "skills": { "0": "movement/leap", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/pict-hunters-red.png",
             "imageHD": "data/tiles/img/pict-hunters-red_hd.png",
@@ -732,7 +1148,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "purple",
+            "colors": ["purple"],
             "movement": "2",
             "defense": "2",
             "attacktype": "contact",
@@ -740,6 +1156,22 @@
             "skills": { "0": "movement/blocking", "1": "movement/leap", "2": "none", "3": "none" },
             "reinforcement": "2",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/pict-warriors-purple.png",
             "imageHD": "data/tiles/img/pict-warriors-purple_hd.png",
@@ -759,7 +1191,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "3",
             "defense": "1",
             "attacktype": "contact",
@@ -767,6 +1199,22 @@
             "skills": { "0": "movement/swimming", "1": "movement/leap", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/pirates.png",
             "imageHD": "data/tiles/img/pirates_hd.png",
@@ -786,7 +1234,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "blue",
+            "colors": ["blue"],
             "movement": "3",
             "defense": "1",
             "attacktype": "contact",
@@ -794,6 +1242,22 @@
             "skills": { "0": "movement/swimming", "1": "movement/leap", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/pirates-blue.png",
             "imageHD": "data/tiles/img/pirates-blue_hd.png",
@@ -813,7 +1277,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "green",
+            "colors": ["green"],
             "movement": "3",
             "defense": "1",
             "attacktype": "contact",
@@ -821,6 +1285,22 @@
             "skills": { "0": "movement/swimming", "1": "movement/leap", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/pirates-green.png",
             "imageHD": "data/tiles/img/pirates-green_hd.png",
@@ -840,7 +1320,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "orange",
+            "colors": ["orange"],
             "movement": "3",
             "defense": "1",
             "attacktype": "contact",
@@ -848,6 +1328,22 @@
             "skills": { "0": "movement/swimming", "1": "movement/leap", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/pirates-orange.png",
             "imageHD": "data/tiles/img/pirates-orange_hd.png",
@@ -867,7 +1363,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "purple",
+            "colors": ["purple"],
             "movement": "3",
             "defense": "1",
             "attacktype": "contact",
@@ -875,6 +1371,22 @@
             "skills": { "0": "movement/swimming", "1": "movement/leap", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/pirates-purple.png",
             "imageHD": "data/tiles/img/pirates-purple_hd.png",
@@ -894,7 +1406,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "red",
+            "colors": ["red"],
             "movement": "3",
             "defense": "1",
             "attacktype": "contact",
@@ -902,6 +1414,22 @@
             "skills": { "0": "movement/swimming", "1": "movement/leap", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/pirates-red.png",
             "imageHD": "data/tiles/img/pirates-red_hd.png",
@@ -921,7 +1449,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "1",
             "defense": "3",
             "attacktype": "contact",
@@ -931,6 +1459,22 @@
             "tokens": [
                 { "image":"data/tiles/img/thog-1_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/thog-1.png",
             "imageHD": "data/tiles/img/thog-1_hd.png",
@@ -950,7 +1494,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "1",
             "defense": "3",
             "attacktype": "contact",
@@ -960,6 +1504,22 @@
             "tokens": [
                 { "image":"data/tiles/img/thog-2_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/thog-2.png",
             "imageHD": "data/tiles/img/thog-2_hd.png",
@@ -979,7 +1539,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "4",
             "defense": "3",
             "attacktype": "contact",
@@ -987,6 +1547,22 @@
             "skills": { "0": "movement/leap", "1": "movement/feline_grace", "2": "none", "3": "none" },
             "reinforcement": "4",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/conans-lion.png",
             "imageHD": "data/tiles/img/conans-lion_hd.png",
@@ -1006,7 +1582,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "5",
             "defense": "2",
             "attacktype": "contact",
@@ -1014,6 +1590,22 @@
             "skills": { "0": "defense/sacrifice", "1": "movement/leap", "2": "none", "3": "none" },
             "reinforcement": "4",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/zelatas-wolf.png",
             "imageHD": "data/tiles/img/zelatas-wolf_hd.png",
@@ -1033,7 +1625,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "2",
             "attacktype": "contact",
@@ -1041,6 +1633,22 @@
             "skills": { "0": "miscellaneous/jinx", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "2",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/mummies.png",
             "imageHD": "data/tiles/img/mummies_hd.png",
@@ -1060,7 +1668,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "blue",
+            "colors": ["blue"],
             "movement": "2",
             "defense": "2",
             "attacktype": "contact",
@@ -1068,6 +1676,22 @@
             "skills": { "0": "miscellaneous/jinx", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "2",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/mummies-blue.png",
             "imageHD": "data/tiles/img/mummies-blue_hd.png",
@@ -1087,7 +1711,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "green",
+            "colors": ["green"],
             "movement": "2",
             "defense": "2",
             "attacktype": "contact",
@@ -1095,6 +1719,22 @@
             "skills": { "0": "miscellaneous/jinx", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "2",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/mummies-green.png",
             "imageHD": "data/tiles/img/mummies-green_hd.png",
@@ -1114,7 +1754,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "orange",
+            "colors": ["orange"],
             "movement": "2",
             "defense": "2",
             "attacktype": "contact",
@@ -1122,6 +1762,22 @@
             "skills": { "0": "miscellaneous/jinx", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "2",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/mummies-orange.png",
             "imageHD": "data/tiles/img/mummies-orange_hd.png",
@@ -1141,7 +1797,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "purple",
+            "colors": ["purple"],
             "movement": "2",
             "defense": "2",
             "attacktype": "contact",
@@ -1149,6 +1805,22 @@
             "skills": { "0": "miscellaneous/jinx", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "2",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/mummies-purple.png",
             "imageHD": "data/tiles/img/mummies-purple_hd.png",
@@ -1168,7 +1840,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "1",
             "attacktype": "contact",
@@ -1176,6 +1848,22 @@
             "skills": { "0": "defense/sacrifice", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/skeletons.png",
             "imageHD": "data/tiles/img/skeletons_hd.png",
@@ -1195,7 +1883,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "green",
+            "colors": ["green"],
             "movement": "2",
             "defense": "1",
             "attacktype": "contact",
@@ -1203,6 +1891,22 @@
             "skills": { "0": "defense/sacrifice", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/skeletons-green.png",
             "imageHD": "data/tiles/img/skeletons-green_hd.png",
@@ -1222,7 +1926,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "blue",
+            "colors": ["blue"],
             "movement": "2",
             "defense": "1",
             "attacktype": "contact",
@@ -1230,6 +1934,22 @@
             "skills": { "0": "defense/sacrifice", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/skeletons-blue.png",
             "imageHD": "data/tiles/img/skeletons-blue_hd.png",
@@ -1249,7 +1969,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "orange",
+            "colors": ["orange"],
             "movement": "2",
             "defense": "1",
             "attacktype": "contact",
@@ -1257,6 +1977,22 @@
             "skills": { "0": "defense/sacrifice", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/skeletons-orange.png",
             "imageHD": "data/tiles/img/skeletons-orange_hd.png",
@@ -1276,7 +2012,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "purple",
+            "colors": ["purple"],
             "movement": "2",
             "defense": "1",
             "attacktype": "contact",
@@ -1284,6 +2020,22 @@
             "skills": { "0": "defense/sacrifice", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/skeletons-purple.png",
             "imageHD": "data/tiles/img/skeletons-purple_hd.png",
@@ -1303,7 +2055,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "red",
+            "colors": ["red"],
             "movement": "2",
             "defense": "1",
             "attacktype": "contact",
@@ -1311,6 +2063,22 @@
             "skills": { "0": "defense/sacrifice", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/skeletons-red.png",
             "imageHD": "data/tiles/img/skeletons-red_hd.png",
@@ -1330,7 +2098,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "3",
             "defense": "2",
             "attacktype": "contact",
@@ -1340,6 +2108,22 @@
             "tokens": [
                 { "image":"data/tiles/img/ageera_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/ageera.png",
             "imageHD": "data/tiles/img/ageera_hd.png",
@@ -1359,7 +2143,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "2",
             "attacktype": "contact",
@@ -1369,6 +2153,22 @@
             "tokens": [
                 { "image":"data/tiles/img/akivasha_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/akivasha.png",
             "imageHD": "data/tiles/img/akivasha_hd.png",
@@ -1388,7 +2188,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "3",
             "defense": "3",
             "attacktype": "contact",
@@ -1398,6 +2198,22 @@
             "tokens": [
                 { "image":"data/tiles/img/constantius_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/constantius.png",
             "imageHD": "data/tiles/img/constantius_hd.png",
@@ -1417,7 +2233,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "1",
             "attacktype": "contact",
@@ -1427,6 +2243,22 @@
             "tokens": [
                 { "image":"data/tiles/img/gitara_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/gitara.png",
             "imageHD": "data/tiles/img/gitara_hd.png",
@@ -1446,7 +2278,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "3",
             "defense": "3",
             "attacktype": "contact",
@@ -1456,6 +2288,22 @@
             "tokens": [
                 { "image":"data/tiles/img/hyperborean-primitive_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/hyperborean-primitive.png",
             "imageHD": "data/tiles/img/hyperborean-primitive_hd.png",
@@ -1475,7 +2323,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "2",
             "attacktype": "contact",
@@ -1485,6 +2333,22 @@
             "tokens": [
                 { "image":"data/tiles/img/khemsa_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/khemsa.png",
             "imageHD": "data/tiles/img/khemsa_hd.png",
@@ -1504,7 +2368,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "3",
             "defense": "2",
             "attacktype": "contact",
@@ -1514,6 +2378,22 @@
             "tokens": [
                 { "image":"data/tiles/img/natohk_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/natohk.png",
             "imageHD": "data/tiles/img/natohk_hd.png",
@@ -1533,7 +2413,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "2",
             "attacktype": "contact",
@@ -1543,6 +2423,22 @@
             "tokens": [
                 { "image":"data/tiles/img/warlock_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/warlock.png",
             "imageHD": "data/tiles/img/warlock_hd.png",
@@ -1562,7 +2458,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "3",
             "attacktype": "contact",
@@ -1572,6 +2468,22 @@
             "tokens": [
                 { "image":"data/tiles/img/amboola_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/amboola.png",
             "imageHD": "data/tiles/img/amboola_hd.png",
@@ -1591,7 +2503,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "3",
             "defense": "1",
             "attacktype": "ranged",
@@ -1601,6 +2513,22 @@
             "tokens": [
                 { "image":"data/tiles/img/balthus_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/balthus.png",
             "imageHD": "data/tiles/img/balthus_hd.png",
@@ -1620,7 +2548,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "3",
             "defense": "1",
             "attacktype": "contact",
@@ -1630,6 +2558,22 @@
             "tokens": [
                 { "image":"data/tiles/img/bêlit_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/bêlit.png",
             "imageHD": "data/tiles/img/bêlit_hd.png",
@@ -1649,7 +2593,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "3",
             "defense": "3",
             "attacktype": "contact",
@@ -1659,6 +2603,22 @@
             "tokens": [
                 { "image":"data/tiles/img/conan_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/conan.png",
             "imageHD": "data/tiles/img/conan_hd.png",
@@ -1678,7 +2638,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "2",
             "attacktype": "ranged",
@@ -1688,6 +2648,22 @@
             "tokens": [
                 { "image":"data/tiles/img/hadrathus_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/hadrathus.png",
             "imageHD": "data/tiles/img/hadrathus_hd.png",
@@ -1707,7 +2683,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "2",
             "attacktype": "ranged",
@@ -1717,6 +2693,22 @@
             "tokens": [
                 { "image":"data/tiles/img/kerim-shah_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/kerim-shah.png",
             "imageHD": "data/tiles/img/kerim-shah_hd.png",
@@ -1736,7 +2728,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "3",
             "attacktype": "ranged",
@@ -1746,6 +2738,22 @@
             "tokens": [
                 { "image":"data/tiles/img/ngora_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/ngora.png",
             "imageHD": "data/tiles/img/ngora_hd.png",
@@ -1765,7 +2773,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "3",
             "attacktype": "contact",
@@ -1775,6 +2783,22 @@
             "tokens": [
                 { "image":"data/tiles/img/olgerd-vladislav_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/olgerd-vladislav.png",
             "imageHD": "data/tiles/img/olgerd-vladislav_hd.png",
@@ -1794,7 +2818,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "3",
             "attacktype": "contact",
@@ -1804,6 +2828,22 @@
             "tokens": [
                 { "image":"data/tiles/img/pallantides_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/pallantides.png",
             "imageHD": "data/tiles/img/pallantides_hd.png",
@@ -1823,7 +2863,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "3",
             "defense": "2",
             "attacktype": "ranged",
@@ -1833,6 +2873,22 @@
             "tokens": [
                 { "image":"data/tiles/img/shevatas_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/shevatas.png",
             "imageHD": "data/tiles/img/shevatas_hd.png",
@@ -1852,7 +2908,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "3",
             "defense": "2",
             "attacktype": "contact",
@@ -1862,6 +2918,22 @@
             "tokens": [
                 { "image":"data/tiles/img/taurus_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/taurus.png",
             "imageHD": "data/tiles/img/taurus_hd.png",
@@ -1881,7 +2953,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "3",
             "defense": "2",
             "attacktype": "contact",
@@ -1891,6 +2963,22 @@
             "tokens": [
                 { "image":"data/tiles/img/valeria_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/valeria.png",
             "imageHD": "data/tiles/img/valeria_hd.png",
@@ -1910,7 +2998,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "1",
             "attacktype": "contact",
@@ -1920,6 +3008,22 @@
             "tokens": [
                 { "image":"data/tiles/img/zelata_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/zelata.png",
             "imageHD": "data/tiles/img/zelata_hd.png",
@@ -1939,7 +3043,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "4",
             "defense": "2",
             "attacktype": "contact",
@@ -1947,6 +3051,22 @@
             "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/camel.png",
             "imageHD": "data/tiles/img/camel_hd.png",
@@ -1966,7 +3086,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "3",
             "defense": "2",
             "attacktype": "ranged",
@@ -1976,6 +3096,22 @@
             "tokens": [
                 { "image":"data/tiles/img/kothian-archer_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/kothian-archer.png",
             "imageHD": "data/tiles/img/kothian-archer_hd.png",
@@ -1995,7 +3131,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "5",
             "defense": "3",
             "attacktype": "contact",
@@ -2003,6 +3139,22 @@
             "skills": { "0": "movement/evasive", "1": "defense/sacrifice", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/slasher.png",
             "imageHD": "data/tiles/img/slasher_hd.png",
@@ -2022,7 +3174,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "3",
             "defense": "2",
             "attacktype": "contact",
@@ -2032,6 +3184,22 @@
             "tokens": [
                 { "image":"data/tiles/img/bone-golem_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/bone-golem.png",
             "imageHD": "data/tiles/img/bone-golem_hd.png",
@@ -2051,7 +3219,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "3",
             "defense": "2",
             "attacktype": "contact",
@@ -2061,6 +3229,22 @@
             "tokens": [
                 { "image":"data/tiles/img/forest-demon_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/forest-demon.png",
             "imageHD": "data/tiles/img/forest-demon_hd.png",
@@ -2080,7 +3264,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "3",
             "defense": "2",
             "attacktype": "contact",
@@ -2090,6 +3274,22 @@
             "tokens": [
                 { "image":"data/tiles/img/giant-scorpion_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/giant-scorpion.png",
             "imageHD": "data/tiles/img/giant-scorpion_hd.png",
@@ -2109,7 +3309,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "4",
             "defense": "2",
             "attacktype": "contact",
@@ -2119,6 +3319,22 @@
             "tokens": [
                 { "image":"data/tiles/img/giant-spider_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/giant-spider.png",
             "imageHD": "data/tiles/img/giant-spider_hd.png",
@@ -2138,7 +3354,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "3",
             "defense": "3",
             "attacktype": "contact",
@@ -2148,6 +3364,22 @@
             "tokens": [
                 { "image":"data/tiles/img/gray-man-ape_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/gray-man-ape.png",
             "imageHD": "data/tiles/img/gray-man-ape_hd.png",
@@ -2167,7 +3399,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "2",
             "attacktype": "contact",
@@ -2177,6 +3409,22 @@
             "tokens": [
                 { "image":"data/tiles/img/swamp-demon_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/swamp-demon.png",
             "imageHD": "data/tiles/img/swamp-demon_hd.png",
@@ -2196,7 +3444,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "0",
             "defense": "8",
             "attacktype": "contact",
@@ -2206,6 +3454,22 @@
             "tokens": [
                 { "image":"data/tiles/img/thaug_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/thaug.png",
             "imageHD": "data/tiles/img/thaug_hd.png",
@@ -2225,7 +3489,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "3",
             "attacktype": "contact",
@@ -2233,6 +3497,22 @@
             "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "2",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/mummies-alt.png",
             "imageHD": "data/tiles/img/mummies-alt_hd.png",
@@ -2252,7 +3532,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "blue",
+            "colors": ["blue"],
             "movement": "2",
             "defense": "3",
             "attacktype": "contact",
@@ -2260,6 +3540,22 @@
             "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "2",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/mummies-blue-alt.png",
             "imageHD": "data/tiles/img/mummies-blue-alt_hd.png",
@@ -2279,7 +3575,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "1",
             "attacktype": "ranged",
@@ -2287,6 +3583,22 @@
             "skills": { "0": "movement/leap", "1": "defense/untouchable", "2": "none", "3": "none" },
             "reinforcement": "2",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/pict-archers.png",
             "imageHD": "data/tiles/img/pict-archers_hd.png",
@@ -2306,7 +3618,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "orange",
+            "colors": ["orange"],
             "movement": "2",
             "defense": "1",
             "attacktype": "ranged",
@@ -2314,6 +3626,22 @@
             "skills": { "0": "movement/leap", "1": "defense/untouchable", "2": "none", "3": "none" },
             "reinforcement": "2",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/pict-archers-orange.png",
             "imageHD": "data/tiles/img/pict-archers-orange_hd.png",
@@ -2333,7 +3661,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "2",
             "attacktype": "contact",
@@ -2341,6 +3669,22 @@
             "skills": { "0": "movement/blocking", "1": "movement/leap", "2": "none", "3": "none" },
             "reinforcement": "2",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/pict-warriors.png",
             "imageHD": "data/tiles/img/pict-warriors_hd.png",
@@ -2360,7 +3704,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "2",
             "attacktype": "contact",
@@ -2368,6 +3712,22 @@
             "skills": { "0": "movement/leap", "1": "defense/untouchable", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/pirates-alt.png",
             "imageHD": "data/tiles/img/pirates-alt_hd.png",
@@ -2387,7 +3747,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "orange",
+            "colors": ["orange"],
             "movement": "2",
             "defense": "2",
             "attacktype": "contact",
@@ -2395,6 +3755,22 @@
             "skills": { "0": "movement/leap", "1": "defense/untouchable", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/pirates-orange-alt.png",
             "imageHD": "data/tiles/img/pirates-orange-alt_hd.png",
@@ -2414,7 +3790,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "0",
             "attacktype": "contact",
@@ -2422,6 +3798,22 @@
             "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/skeletons-alt.png",
             "imageHD": "data/tiles/img/skeletons-alt_hd.png",
@@ -2441,7 +3833,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "red",
+            "colors": ["red"],
             "movement": "2",
             "defense": "0",
             "attacktype": "contact",
@@ -2449,6 +3841,22 @@
             "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/skeletons-red-alt.png",
             "imageHD": "data/tiles/img/skeletons-red-alt_hd.png",
@@ -2468,7 +3876,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "0",
             "defense": "2",
             "attacktype": "contact",
@@ -2476,6 +3884,22 @@
             "skills": { "0": "attack/reach", "1": "attack/constriction", "2": "none", "3": "none" },
             "reinforcement": "2",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/tentacles.png",
             "imageHD": "data/tiles/img/tentacles_hd.png",
@@ -2495,7 +3919,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "blue",
+            "colors": ["blue"],
             "movement": "0",
             "defense": "2",
             "attacktype": "contact",
@@ -2503,6 +3927,22 @@
             "skills": { "0": "attack/reach", "1": "attack/constriction", "2": "none", "3": "none" },
             "reinforcement": "2",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/tentacles-blue.png",
             "imageHD": "data/tiles/img/tentacles-blue_hd.png",
@@ -2522,7 +3962,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "orange",
+            "colors": ["orange"],
             "movement": "0",
             "defense": "2",
             "attacktype": "contact",
@@ -2530,6 +3970,22 @@
             "skills": { "0": "attack/reach", "1": "attack/constriction", "2": "none", "3": "none" },
             "reinforcement": "2",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/tentacles-orange.png",
             "imageHD": "data/tiles/img/tentacles-orange_hd.png",
@@ -2549,7 +4005,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "red",
+            "colors": ["red"],
             "movement": "0",
             "defense": "2",
             "attacktype": "contact",
@@ -2557,6 +4013,22 @@
             "skills": { "0": "attack/reach", "1": "attack/constriction", "2": "none", "3": "none" },
             "reinforcement": "2",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/tentacles-red.png",
             "imageHD": "data/tiles/img/tentacles-red_hd.png",
@@ -2576,7 +4048,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "3",
             "attacktype": "contact",
@@ -2586,6 +4058,22 @@
             "tokens": [
                 { "image":"data/tiles/img/baal-pteor_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/baal-pteor.png",
             "imageHD": "data/tiles/img/baal-pteor_hd.png",
@@ -2605,7 +4093,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "2",
             "attacktype": "contact",
@@ -2613,6 +4101,22 @@
             "skills": { "0": "attack/counterattack", "1": "defense/sacrifice", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/black-dragons.png",
             "imageHD": "data/tiles/img/black-dragons_hd.png",
@@ -2632,7 +4136,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "3",
             "defense": "3",
             "attacktype": "contact",
@@ -2640,6 +4144,22 @@
             "skills": { "0": "attack/precision_strike", "1": "miscellaneous/jinx", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/the-black-ones.png",
             "imageHD": "data/tiles/img/the-black-ones_hd.png",
@@ -2659,7 +4179,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "green",
+            "colors": ["green"],
             "movement": "3",
             "defense": "3",
             "attacktype": "contact",
@@ -2667,6 +4187,22 @@
             "skills": { "0": "attack/precision_strike", "1": "miscellaneous/jinx", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/the-black-ones-green.png",
             "imageHD": "data/tiles/img/the-black-ones-green_hd.png",
@@ -2686,7 +4222,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "purple",
+            "colors": ["purple"],
             "movement": "3",
             "defense": "3",
             "attacktype": "contact",
@@ -2694,6 +4230,22 @@
             "skills": { "0": "attack/precision_strike", "1": "miscellaneous/jinx", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/the-black-ones-purple.png",
             "imageHD": "data/tiles/img/the-black-ones-purple_hd.png",
@@ -2713,7 +4265,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "1",
             "attacktype": "ranged",
@@ -2721,6 +4273,22 @@
             "skills": { "0": "attack/elite_shooter", "1": "defense/sacrifice", "2": "none", "3": "none" },
             "reinforcement": "2",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/crossbowmen.png",
             "imageHD": "data/tiles/img/crossbowmen_hd.png",
@@ -2740,7 +4308,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "green",
+            "colors": ["green"],
             "movement": "2",
             "defense": "0",
             "attacktype": "ranged",
@@ -2748,6 +4316,22 @@
             "skills": { "0": "attack/elite_shooter", "1": "attack/precision_shot", "2": "none", "3": "none" },
             "reinforcement": "3",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/crossbowmen-green.png",
             "imageHD": "data/tiles/img/crossbowmen-green_hd.png",
@@ -2767,7 +4351,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "red",
+            "colors": ["red"],
             "movement": "2",
             "defense": "1",
             "attacktype": "ranged",
@@ -2775,6 +4359,22 @@
             "skills": { "0": "attack/elite_shooter", "1": "defense/sacrifice", "2": "none", "3": "none" },
             "reinforcement": "2",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/crossbowmen-red.png",
             "imageHD": "data/tiles/img/crossbowmen-red_hd.png",
@@ -2794,7 +4394,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "3",
             "attacktype": "contact",
@@ -2804,6 +4404,22 @@
             "tokens": [
                 { "image":"data/tiles/img/demon-of-the-earth_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/demon-of-the-earth.png",
             "imageHD": "data/tiles/img/demon-of-the-earth_hd.png",
@@ -2823,7 +4439,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "3",
             "defense": "5",
             "attacktype": "contact",
@@ -2833,6 +4449,22 @@
             "tokens": [
                 { "image":"data/tiles/img/dragon_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/dragon.png",
             "imageHD": "data/tiles/img/dragon_hd.png",
@@ -2852,7 +4484,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "5",
             "defense": "1",
             "attacktype": "contact",
@@ -2860,6 +4492,22 @@
             "skills": { "0": "movement/evasive", "1": "movement/leap", "2": "none", "3": "none" },
             "reinforcement": "2",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/giant-wolves.png",
             "imageHD": "data/tiles/img/giant-wolves_hd.png",
@@ -2879,7 +4527,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "4",
             "defense": "1",
             "attacktype": "contact",
@@ -2889,6 +4537,22 @@
             "tokens": [
                 { "image":"data/tiles/img/sabertooth-tiger_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/sabertooth-tiger.png",
             "imageHD": "data/tiles/img/sabertooth-tiger_hd.png",
@@ -2908,7 +4572,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "3",
             "attacktype": "contact",
@@ -2918,6 +4582,22 @@
             "tokens": [
                 { "image":"data/tiles/img/afari_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/afari.png",
             "imageHD": "data/tiles/img/afari_hd.png",
@@ -2937,7 +4617,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "3",
             "attacktype": "contact",
@@ -2947,6 +4627,22 @@
             "tokens": [
                 { "image":"data/tiles/img/ghayoor_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/ghayoor.png",
             "imageHD": "data/tiles/img/ghayoor_hd.png",
@@ -2966,7 +4662,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "3",
             "attacktype": "contact",
@@ -2976,6 +4672,22 @@
             "tokens": [
                 { "image":"data/tiles/img/shafiah_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/shafiah.png",
             "imageHD": "data/tiles/img/shafiah_hd.png",
@@ -2995,7 +4707,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "1",
             "attacktype": "contact",
@@ -3005,6 +4717,22 @@
             "tokens": [
                 { "image":"data/tiles/img/shubba_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/shubba.png",
             "imageHD": "data/tiles/img/shubba_hd.png",
@@ -3024,7 +4752,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "3",
             "defense": "3",
             "attacktype": "contact",
@@ -3034,6 +4762,22 @@
             "tokens": [
                 { "image":"data/tiles/img/vanir-valkyrie_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/vanir-valkyrie.png",
             "imageHD": "data/tiles/img/vanir-valkyrie_hd.png",
@@ -3053,7 +4797,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "1",
             "attacktype": "contact",
@@ -3063,6 +4807,22 @@
             "tokens": [
                 { "image":"data/tiles/img/salome_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/salome.png",
             "imageHD": "data/tiles/img/salome_hd.png",
@@ -3082,7 +4842,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "3",
             "defense": "0",
             "attacktype": "contact",
@@ -3092,6 +4852,22 @@
             "tokens": [
                 { "image":"data/tiles/img/atali_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/atali.png",
             "imageHD": "data/tiles/img/atali_hd.png",
@@ -3111,7 +4887,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "2",
             "attacktype": "contact",
@@ -3121,6 +4897,22 @@
             "tokens": [
                 { "image":"data/tiles/img/yazdigerd_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/yazdigerd.png",
             "imageHD": "data/tiles/img/yazdigerd_hd.png",
@@ -3140,7 +4932,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "3",
             "defense": "1",
             "attacktype": "contact",
@@ -3150,6 +4942,22 @@
             "tokens": [
                 { "image":"data/tiles/img/nijgor_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/nijgor.png",
             "imageHD": "data/tiles/img/nijgor_hd.png",
@@ -3169,7 +4977,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "2",
             "attacktype": "contact",
@@ -3179,6 +4987,22 @@
             "tokens": [
                 { "image":"data/tiles/img/seski_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/seski.png",
             "imageHD": "data/tiles/img/seski_hd.png",
@@ -3198,7 +5022,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "1",
             "attacktype": "contact",
@@ -3206,6 +5030,22 @@
             "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/vanir-warriors.png",
             "imageHD": "data/tiles/img/vanir-warriors_hd.png",
@@ -3225,7 +5065,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "blue",
+            "colors": ["blue"],
             "movement": "2",
             "defense": "1",
             "attacktype": "contact",
@@ -3233,6 +5073,22 @@
             "skills": { "0": "attack/precision_strike", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/vanir-warriors-blue.png",
             "imageHD": "data/tiles/img/vanir-warriors-blue_hd.png",
@@ -3252,7 +5108,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "purple",
+            "colors": ["purple"],
             "movement": "2",
             "defense": "1",
             "attacktype": "contact",
@@ -3260,6 +5116,22 @@
             "skills": { "0": "attack/precision_strike", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/vanir-warriors-purple.png",
             "imageHD": "data/tiles/img/vanir-warriors-purple_hd.png",
@@ -3279,7 +5151,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "green",
+            "colors": ["green"],
             "movement": "1",
             "defense": "1",
             "attacktype": "contact",
@@ -3287,6 +5159,22 @@
             "skills": { "0": "attack/constriction", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/vanir-zombies-green.png",
             "imageHD": "data/tiles/img/vanir-zombies-green_hd.png",
@@ -3306,7 +5194,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "red",
+            "colors": ["red"],
             "movement": "1",
             "defense": "1",
             "attacktype": "contact",
@@ -3314,6 +5202,22 @@
             "skills": { "0": "attack/constriction", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/vanir-zombies-red.png",
             "imageHD": "data/tiles/img/vanir-zombies-red_hd.png",
@@ -3333,7 +5237,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "1",
             "attacktype": "contact",
@@ -3341,6 +5245,22 @@
             "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/vanir-primitives.png",
             "imageHD": "data/tiles/img/vanir-primitives_hd.png",
@@ -3360,7 +5280,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "red",
+            "colors": ["red"],
             "movement": "2",
             "defense": "1",
             "attacktype": "contact",
@@ -3368,6 +5288,22 @@
             "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/vanir-primitives-red.png",
             "imageHD": "data/tiles/img/vanir-primitives-red_hd.png",
@@ -3387,7 +5323,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "5",
             "defense": "1",
             "attacktype": "contact",
@@ -3395,6 +5331,22 @@
             "skills": { "0": "movement/flying", "1": "miscellaneous/jinx", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/crows.png",
             "imageHD": "data/tiles/img/crows_hd.png",
@@ -3414,7 +5366,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "red",
+            "colors": ["red"],
             "movement": "5",
             "defense": "1",
             "attacktype": "contact",
@@ -3422,6 +5374,22 @@
             "skills": { "0": "movement/flying", "1": "miscellaneous/jinx", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/crows-red.png",
             "imageHD": "data/tiles/img/crows-red_hd.png",
@@ -3441,7 +5409,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "5",
             "defense": "0",
             "attacktype": "contact",
@@ -3449,6 +5417,22 @@
             "skills": { "0": "movement/evasive", "1": "movement/leap", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/wolves.png",
             "imageHD": "data/tiles/img/wolves_hd.png",
@@ -3461,14 +5445,14 @@
         },
     
         {
-            "id": "aesir-zombies-purple",
+            "id": "aesir-zombies",
             "name": {
-                "fr": "",
-                "en": "Aesir Zombies - Purple",
+                "fr": "Revenants Aesirs",
+                "en": "Aesir Zombies",
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "purple",
+            "colors": ["purple"],
             "movement": "2",
             "defense": "2",
             "attacktype": "contact",
@@ -3477,25 +5461,39 @@
             "reinforcement": "3",
             "tokens": [],
     
-            "image": "data/tiles/img/aesir-zombies-purple.png",
-            "imageHD": "data/tiles/img/aesir-zombies-purple_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "aesir-zombies-purple",
-            "origins": ["nordheim"],
+            "quote": {
+                "text": {
+                    "fr": "À quoi ressemblent ces gens du Nord ? demanda Prospero. - Ils sont grands et ont les yeux bleus ; leur sang et leur langue sont identiques, mais les Aesirs ont les cheveux blonds et les Vanirs, les cheveux roux. Leur principal dieu est Ymir, le géant du gel ; ils ne sont pas dirigés par un grand roi, mais chaque tribu a son propre suzerain. Ils sont sauvages, capricieux et féroces. Ils se battent toute la journée, et la nuit ils boivent de l'ale et mugissent leurs chants sauvages.",
+                    "en": "What manner of men are these northern folk?” asked Prospero. “Tall and fair and blue-eyed. Their god is Ymir, the frost-giant, and each tribe has its own king. They are wayward and fierce. They fight all day and drink ale and roar their wild songs all night.",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "Le Phénix sur l’Épée",
+                    "en": "The Phoenix on the Sword",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
-            "count": 1
+            "image": "data/tiles/img/aesir-warriors.png",
+            "imageHD": "data/tiles/img/aesir-warriors_hd.png",
+            "image_location": {"x":63, "y":68},
+            "image_zoom": 107,
+            "model": "aesir-warriors",
+            "origins": ["nordheim"]
         },
     
         {
             "id": "aesir-warriors",
             "name": {
-                "fr": "",
+                "fr": "Guerriers Aesirs",
                 "en": "Aesir Warriors",
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "2",
             "attacktype": "contact",
@@ -3504,25 +5502,39 @@
             "reinforcement": "1",
             "tokens": [],
     
+            "quote": {
+                "text": {
+                    "fr": "À quoi ressemblent ces gens du Nord ? demanda Prospero. - Ils sont grands et ont les yeux bleus ; leur sang et leur langue sont identiques, mais les Aesirs ont les cheveux blonds et les Vanirs, les cheveux roux. Leur principal dieu est Ymir, le géant du gel ; ils ne sont pas dirigés par un grand roi, mais chaque tribu a son propre suzerain. Ils sont sauvages, capricieux et féroces. Ils se battent toute la journée, et la nuit ils boivent de l'ale et mugissent leurs chants sauvages.",
+                    "en": "What manner of men are these northern folk?” asked Prospero. “Tall and fair and blue-eyed. Their god is Ymir, the frost-giant, and each tribe has its own king. They are wayward and fierce. They fight all day and drink ale and roar their wild songs all night.",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "Le Phénix sur l’Épée",
+                    "en": "The Phoenix on the Sword",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+    
             "image": "data/tiles/img/aesir-warriors.png",
             "imageHD": "data/tiles/img/aesir-warriors_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":63, "y":68},
+            "image_zoom": 107,
             "model": "aesir-warriors",
-            "origins": ["nordheim"],
-    
-            "count": 1
+            "origins": ["nordheim"]
         },
     
         {
             "id": "aesir-warriors-red",
             "name": {
-                "fr": "",
-                "en": "Aesir Warriors - Red",
+                "fr": "Guerriers Aesirs",
+                "en": "Aesir Warriors",
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "red",
+            "colors": ["red"],
             "movement": "2",
             "defense": "0",
             "attacktype": "contact",
@@ -3531,14 +5543,28 @@
             "reinforcement": "1",
             "tokens": [],
     
-            "image": "data/tiles/img/aesir-warriors-red.png",
-            "imageHD": "data/tiles/img/aesir-warriors-red_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "aesir-warriors-red",
-            "origins": ["nordheim"],
+            "quote": {
+                "text": {
+                    "fr": "À quoi ressemblent ces gens du Nord ? demanda Prospero. - Ils sont grands et ont les yeux bleus ; leur sang et leur langue sont identiques, mais les Aesirs ont les cheveux blonds et les Vanirs, les cheveux roux. Leur principal dieu est Ymir, le géant du gel ; ils ne sont pas dirigés par un grand roi, mais chaque tribu a son propre suzerain. Ils sont sauvages, capricieux et féroces. Ils se battent toute la journée, et la nuit ils boivent de l'ale et mugissent leurs chants sauvages.",
+                    "en": "What manner of men are these northern folk?” asked Prospero. “Tall and fair and blue-eyed. Their god is Ymir, the frost-giant, and each tribe has its own king. They are wayward and fierce. They fight all day and drink ale and roar their wild songs all night.",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "Le Phénix sur l’Épée",
+                    "en": "The Phoenix on the Sword",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
-            "count": 1
+            "image": "data/tiles/img/aesir-warriors.png",
+            "imageHD": "data/tiles/img/aesir-warriors_hd.png",
+            "image_location": {"x":63, "y":68},
+            "image_zoom": 107,
+            "model": "aesir-warriors",
+            "origins": ["nordheim"]
         },
     
         {
@@ -3549,7 +5575,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "1",
             "attacktype": "contact",
@@ -3559,6 +5585,22 @@
             "tokens": [
                 { "image":"data/tiles/img/shuang-mian_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/shuang-mian.png",
             "imageHD": "data/tiles/img/shuang-mian_hd.png",
@@ -3578,7 +5620,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "2",
             "attacktype": "contact",
@@ -3588,6 +5630,22 @@
             "tokens": [
                 { "image":"data/tiles/img/evil-hound_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/evil-hound.png",
             "imageHD": "data/tiles/img/evil-hound_hd.png",
@@ -3607,7 +5665,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "1",
             "attacktype": "contact",
@@ -3615,6 +5673,22 @@
             "skills": { "0": "movement/blocking", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/khitan-guards.png",
             "imageHD": "data/tiles/img/khitan-guards_hd.png",
@@ -3634,7 +5708,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "red",
+            "colors": ["red"],
             "movement": "2",
             "defense": "1",
             "attacktype": "contact",
@@ -3642,6 +5716,22 @@
             "skills": { "0": "movement/blocking", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/khitan-guards-red.png",
             "imageHD": "data/tiles/img/khitan-guards-red_hd.png",
@@ -3661,7 +5751,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "2",
             "attacktype": "contact",
@@ -3669,6 +5759,22 @@
             "skills": { "0": "defense/sacrifice", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "2",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/honor-guards.png",
             "imageHD": "data/tiles/img/honor-guards_hd.png",
@@ -3688,7 +5794,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "green",
+            "colors": ["green"],
             "movement": "2",
             "defense": "2",
             "attacktype": "contact",
@@ -3696,6 +5802,22 @@
             "skills": { "0": "defense/sacrifice", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "2",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/honor-guards-green.png",
             "imageHD": "data/tiles/img/honor-guards-green_hd.png",
@@ -3715,7 +5837,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "3",
             "defense": "1",
             "attacktype": "ranged",
@@ -3723,6 +5845,22 @@
             "skills": { "0": "attack/elite_shooter", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "2",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/javelin-throwers.png",
             "imageHD": "data/tiles/img/javelin-throwers_hd.png",
@@ -3742,7 +5880,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "purple",
+            "colors": ["purple"],
             "movement": "3",
             "defense": "1",
             "attacktype": "ranged",
@@ -3750,6 +5888,22 @@
             "skills": { "0": "attack/elite_shooter", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "2",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/javelin-throwers-purple.png",
             "imageHD": "data/tiles/img/javelin-throwers-purple_hd.png",
@@ -3769,7 +5923,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "5",
             "defense": "2",
             "attacktype": "contact",
@@ -3777,6 +5931,22 @@
             "skills": { "0": "attack/counterattack", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/foo-dogs.png",
             "imageHD": "data/tiles/img/foo-dogs_hd.png",
@@ -3796,7 +5966,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "1",
             "attacktype": "contact",
@@ -3806,6 +5976,22 @@
             "tokens": [
                 { "image":"data/tiles/img/thot-amon_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/thot-amon.png",
             "imageHD": "data/tiles/img/thot-amon_hd.png",
@@ -3825,7 +6011,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "3",
             "attacktype": "contact",
@@ -3835,6 +6021,22 @@
             "tokens": [
                 { "image":"data/tiles/img/scorpion-broodmother_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/scorpion-broodmother.png",
             "imageHD": "data/tiles/img/scorpion-broodmother_hd.png",
@@ -3854,7 +6056,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "4",
             "defense": "0",
             "attacktype": "contact",
@@ -3862,6 +6064,22 @@
             "skills": { "0": "miscellaneous/poison", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/giant-scorpions.png",
             "imageHD": "data/tiles/img/giant-scorpions_hd.png",
@@ -3881,7 +6099,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray"],
             "movement": "2",
             "defense": "2",
             "attacktype": "contact",
@@ -3889,6 +6107,22 @@
             "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/eternal-guard.png",
             "imageHD": "data/tiles/img/eternal-guard_hd.png",
@@ -3908,7 +6142,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "blue",
+            "colors": ["blue"],
             "movement": "2",
             "defense": "2",
             "attacktype": "contact",
@@ -3916,6 +6150,22 @@
             "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
     
             "image": "data/tiles/img/eternal-guard-blue.png",
             "imageHD": "data/tiles/img/eternal-guard-blue_hd.png",
@@ -3935,7 +6185,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "color": "gray",
+            "colors": ["gray", "red"],
             "movement": "3",
             "defense": "0",
             "attacktype": "contact",
@@ -3944,41 +6194,28 @@
             "reinforcement": "2",
             "tokens": [],
     
+            "quote": {
+                "text": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "",
+                    "en": "",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+    
             "image": "data/tiles/img/assassins.png",
             "imageHD": "data/tiles/img/assassins_hd.png",
             "image_location": {"x":50, "y":50},
             "image_zoom": 100,
             "model": "assassins",
-            "origins": ["stygia"],
-    
-            "count": 1
-        },
-    
-        {
-            "id": "assassins-red",
-            "name": {
-                "fr": "",
-                "en": "Assassins - Red",
-                "it": "TODO_TRANSLATE"
-            },
-    
-            "color": "red",
-            "movement": "3",
-            "defense": "0",
-            "attacktype": "contact",
-            "dices": { "0": "red", "1": "red", "2": "none", "3": "none" },
-            "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
-            "reinforcement": "",
-            "tokens": [],
-    
-            "image": "data/tiles/img/assassins-red.png",
-            "imageHD": "data/tiles/img/assassins-red_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "assassins-red",
-            "origins": ["stygia"],
-    
-            "count": 1
+            "origins": ["stygia"]
         }
     ]
 }

@@ -11,3 +11,95 @@
     content: "\f591";
     font-family: 'Font Awesome 5 Free';
 }
+
+.tiledetails .minwidth {
+    display:inline-block;
+    min-width: 500px;
+}
+
+.tiledetails .models {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    height: 270px;
+}
+
+.tiledetails .models a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.tiledetails .models a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.tiledetails .models a > span {
+    display: block;
+    position: absolute;
+    font-family: 'Hyborian';
+    font-size: 16px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 5px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.3);
+}
+.tiledetails .models a > span > span {
+    font-size: 60%;
+}
+
+
+.tiledetails .superdetails {
+    margin-top: 20px;
+    line-height: 100%; 
+    position: relative;
+}
+.tiledetails .superdetails div.img {
+    width: 200px;
+    position: absolute;    
+    height: 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.tiledetails .superdetails div:last-child {
+    padding-left: 200px;
+}
+.tiledetails .superdetails p:first-child::before { content: "« "; }
+.tiledetails .superdetails p:first-child { 
+    text-align: justify;
+    font-style: italic; 
+}
+.tiledetails .superdetails p:first-child::after { content: " »"; }
+
+#encyclopedia-tile-wrapper a {
+    position: relative;
+    display: inline-block;
+}
+
+#encyclopedia-tile-wrapper a[data-count]::after {
+    content: 'x' attr(data-count);
+    position: absolute;
+    z-index: 2;
+    top: 10%;
+    right: -5%;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 18px;
+    background-color: #e64443;
+    color: #ffffff;
+    border-radius: 100%;
+}
+#encyclopedia-tile-wrapper a[data-count='1']::after {
+    content: none;
+}

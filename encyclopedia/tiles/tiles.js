@@ -9,7 +9,8 @@ var EncyclopediaTiles = {
             'fromAnd': "et",
             'card': "exemplaire",
             'cards': "exemplaires",
-            'skill': "Compétence :"
+            'skill': "Compétences :",
+            'story': "Histoire :"
         },
         'en': {
             'tab': "Tiles",
@@ -20,7 +21,8 @@ var EncyclopediaTiles = {
             'fromAnd': "and",
             'card': "copy",
             'cards': "copies",
-            'skill': "Skill:"
+            'skill': "Skills:",
+            'story': "Story :"
           },
           'it': {
             'tab': "Tessere",
@@ -31,7 +33,8 @@ var EncyclopediaTiles = {
             'fromAnd': "e",
             'card': "copia",
             'cards': "copie",
-            'skill': "Abilità:"
+            'skill': "TODO_TRANSLATE",
+            'story': "Storia:"
         }
     },
 
@@ -351,7 +354,7 @@ var EncyclopediaTiles = {
         var tiles = EncyclopediaTiles._findTilesById(id);
         var displayTiles = [];
         
-        var images = {};
+        var colors = {};
         var originsCount = {};
         for (var e in tiles)
         {
@@ -364,9 +367,9 @@ var EncyclopediaTiles = {
                 originsCount[origin] = originsCount[origin] ? originsCount[origin]+1 : 1;
             }
             
-            if (!images[tile.image])
+            if (!colors[tile.color])
             {
-                images[tile.image] = true;
+                colors[tile.color] = true;
                 displayTiles.push(tile);
             }
         }
@@ -384,23 +387,44 @@ var EncyclopediaTiles = {
             var tile = displayTiles[e]; 
             c += Tile._tileCode(EncyclopediaTiles._convertTileToStudio(tile, i));
         }
+
+        var skills = ((tile.skills && tile.skills[0] != 'none') ?
+        ("<div class='skill'>" 
+            + EncyclopediaTiles._i18n[Language].skill 
+            + " " 
+            + (tile.skills[1] != 'none' && tile.skills[2] != 'none' && tile.skills[3] != 'none'? "" + ConanRules._linkToSkill(tile.skills[3], true) : "")
+            + (tile.skills[1] != 'none' && tile.skills[2] != 'none' ? "" + ConanRules._linkToSkill(tile.skills[2], true) : "")
+            + (tile.skills[1] != 'none' ? "" + ConanRules._linkToSkill(tile.skills[1], true) : "")
+            + ConanRules._linkToSkill(tile.skills[0], true) 
+        + "</div>") : "") 
+
+        var superdetails = "";
+        if (tile.quote)
+        {
+            superdetails += "<div class='superdetails'>" + EncyclopediaTiles._i18n[Language].story + "<br/><div class='img' style='background-image: url(" + tile.image + "?version=" + Version + ")'></div>";
+            superdetails += "<div><p>" + tile.quote.text[Language].replace(/\n/g,'<br/><br/>') + "</p><p><span>" + tile.quote.author.name + " - " + tile.quote.origin[Language] + "</span></p>";
+            superdetails += "</div></div>";
+        }
+
+        var model = "";
+        if (tile.model)
+        {
+            var m = EncyclopediaModels._findModelsById(tile.model)[0];
+            model = "<div class='models'>"
+                    + EncyclopediaModels._linkToModel(tile.model, true)
+                    + "</div>";
+        }
         
         Nav.dialog(tile.name[Language] || "",
             "<div class='tiledetails'>" 
-                + c
                 + "<div class='minwidth'></div>"
                 + "<div class='from'>" + EncyclopediaTiles._i18n[Language].from + " "
                     + originString
                 + "</div>"
-                + ((tile.skills && tile.skills[0] != 'none') ?
-                    ("<div class='skill'>" 
-                        + EncyclopediaTiles._i18n[Language].skill 
-                        + " " 
-                        + (tile.skills[1] != 'none' && tile.skills[2] != 'none' && tile.skills[3] != 'none'? ", " + ConanRules._linkToSkill(tile.skills[3], true) : "")
-                        + (tile.skills[1] != 'none' && tile.skills[2] != 'none' ? ", " + ConanRules._linkToSkill(tile.skills[2], true) : "")
-                        + (tile.skills[1] != 'none' ? ", " + ConanRules._linkToSkill(tile.skills[1], true) : "")
-                        + ConanRules._linkToSkill(tile.skills[0], true) 
-                    + "</div>") : "") 
+                + model
+                + c
+                + skills
+                + superdetails
             + "</div>",
             null,
             [{
