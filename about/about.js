@@ -3,8 +3,7 @@ var ConanAbout = {
         'fr': {
             'name': "Compagnon<br/>de Conan",
             'title': "Le compagnon de Conan",
-            'text': "<h1>Important</h1>Cette application n'a aucun lien avec l'édteur du jeu Conan : Monolith.<br/>Elle a été réalisée par @cochon en s'appuyant sur les cartes statiques de lignes de vue créées par @Roolz et en reprenant l'idée du travail de @Pamplerousse pour les lignes de vues dynamiques.",
-            'find': "Consultez le forum 'The Overlord'",
+            'text': "<h1>Important</h1>Cette application n'a aucun lien avec l'édteur du jeu Conan : Monolith.<br/>Elle a été réalisée par <a href='https://the-overlord.com/index.php?/profile/5240-cochon/' target='_blank'>@cochon</a> en s'appuyant sur l'aide de la communauté de <a href='https://the-overlord.com'>The Overlord</a> et divers outils et ressources existantes.",
             'fullscreen': "Plein écran",
             'about': "A propos",
             'licence': "Licence",
@@ -12,8 +11,7 @@ var ConanAbout = {
             'licence_text2': "mais toutes les ressources (images, textes, caractéristiques...) restent la propriété de leurs auteurs respectifs selon les droits applicables.",
             'about': "A propos",
             'copyright': "Copyright",
-            'copyright-text': "<h1>But</h1><br/>'Compagnion de Conan' est une application indépendante pour accompagner les joueurs dans le jeu 'Conan'.<br/>"
-                    + "Cette application a été écrite par <a href='https://the-overlord.com/index.php?/profile/5240-cochon/' target='_blank'>@cochon</a>.<br/>"
+            'copyright-text': "<h1>But</h1>'Compagnion de Conan' est une application indépendante pour accompagner les joueurs dans le jeu 'Conan'.<br/>"
                     + "<h1>Propriété</h1>"
                     + "'Conan' est un jeu de plateau de figurines édité par <a href='http://monolithedition.com' target='_blank'>Monolith</a>.<br/>"
                     + "Le logo Conan et les polices de caractères utilisées sont la propriété de Monolith.<br/>"
@@ -45,8 +43,7 @@ var ConanAbout = {
         'en': {
             'name': "Companion<br/>to Conan",
             'title': "The companion to Conan",
-            'text': "<h1>Disclamer</h1>This application has no link with the producer of the game Conan: Monolith.<br/>It was realized by @cochon based on the static maps of line of sights created by @Roolz and by taking up again the idea of the work of @Pamplerousse of the dynamic line of sights.",
-            'find': "Consult the forum 'The Overlord'",
+            'text': "<h1>Disclamer</h1>This application has no link with the producer of the game Conan: Monolith.<br/>It was realized by <a href='https://the-overlord.com/index.php?/profile/5240-cochon/' target='_blank'>@cochon</a> relying the community of <a href='https://the-overlord.com'>The Overlord</a> and several existing tools or resources.",
             'fullscreen': "Fullscreen",
             'about': "About",
             'licence': "Licence",
@@ -54,7 +51,6 @@ var ConanAbout = {
             'licence_text2': "but all resources (images, texts, caracteristics...) stay the property of their respective authors following the applyable rights.",
             'copyright': "Copyright",
             'copyright-text': "<h1>Purpose</h1>'Companion to Conan' is an indepedant applciation to help the players in the game 'Conan'.<br/>"
-                    + "This application was written by <a href='https://the-overlord.com/index.php?/profile/5240-cochon/' target='_blank'>@cochon</a>.<br/>"
                     + "<h1>Property</h1>"
                     + "'Conan' is a board game published by <a href='http://monolithedition.com' target='_blank'>Monolith</a>.<br/>"
                     + "The Conan logo and the fonts used are the property of Monolith.<br/>"
@@ -86,8 +82,7 @@ var ConanAbout = {
         'it': {
             'name': "Conan<br/>Companion",
             'title': "Conan Companion",
-            'text': "<h1>Importante</h1>Questa applicazione non ha nessun legame con il gioco Conan: Monolith.<br/>É realizzata da @cochon, basata sulle mappe statiche delle linee di vista create da @Roolz e prende spunto da un'idea di lavoro di @Pamplerousse sulle linee di vista dinamiche.",
-            'find': "Si veda il forum 'The Overlord'",
+            'text': "TOTO_TRANSLATE",
             'fullscreen': "A tutto schermo",
             'about': "Crediti",
             'licence': "Licenze",
@@ -95,7 +90,6 @@ var ConanAbout = {
             'licence_text2': "Tutto il materiale (immagini, testi, caratteristiche...) resta proprietà dei singoli autori nel rispetto dei diritti applicabili",
             'copyright': "Copyright",
             'copyright-text': "<h1>Scopi</h1>'Conan Companion' è un'applicazione indipendente di supporto per i giocatori del gioco 'Conan'.<br/>"
-                    + "Questa applicazione è scritta da <a href='https://the-overlord.com/index.php?/profile/5240-cochon/' target='_blank'>@cochon</a>.<br/>"
                     + "<h1>Proprietà</h1>"
                     + "'Conan' è un gioco da tavolo della <a href='http://monolithedition.com' target='_blank'>Monolith</a>.<br/>"
                     + "Il logo di Conan e i fonts usati sono proprietà della Monolith.<br/>"
@@ -165,9 +159,7 @@ var ConanAbout = {
                             + "<h1 style='text-align: center '>" + ConanAbout._i18n[Language].title + " v" + Version + "</h1>"
                             + "<img src='about/logo.jpg?version=" + Version + "'/>" +
                             "<a class='fullscreen' onclick='ConanAbout._toggleFullscreen(); return false' href='javascript:void(0);' title=\"" + ConanAbout._i18n[Language].fullscreen + "\"></a>" +
-                            "<span>" + ConanAbout._i18n[Language].text +
-                                "<div><a target='_blank' href='https://the-overlord.com/'>" + ConanAbout._i18n[Language].find + "</a></div>" +
-                            "</span>"
+                            "<span>" + ConanAbout._i18n[Language].text + "</span>"
                     + "</div>"
                     + "<div class='about-copyright'><div>"
                         + "<div class='about-copyright-text'>" + ConanAbout._i18n[Language]['copyright-text'] + ConanAbout._copyright + "</div>"
