@@ -529,73 +529,18 @@ var ConanRules = {
     openSkill: function(id) {
         var skill = ConanRules._findSkillById(id);
 
-        var equipments = EncyclopediaEquipments._findEquipmentsBySkill(id);
-        var eqS = "";
-        if (equipments.length > 0)
-        {
-            for (var i=0; i < equipments.length; i++)
-            {
-                if (i != 0) eqS += ",";
-                eqS += " ";
-
-                eqS += EncyclopediaEquipments._linkToEquipment(equipments[0].id);
-            }
-        }
-
-        var spells = EncyclopediaSpells._findSpellsBySkill(id);
-        var spS = "";
-        if (spells.length > 0)
-        {
-            for (var i=0; i < spells.length; i++)
-            {
-                if (i != 0) spS += ",";
-                spS += " ";
-
-                spS += EncyclopediaSpells._linkToSpell(spells[0].id);
-            }
-        }
-
-        var heroes = EncyclopediaHeroes._findHeroesBySkill(id);
-        var heS = "";
-        if (heroes.length > 0)
-        {
-            for (var i=0; i < heroes.length; i++)
-            {
-                if (i != 0) heS += ", ";
-                heS += " ";
-
-                heS += EncyclopediaHeroes._linkToHero(heroes[i].id);
-            }
-        }
-
-        var tiles = EncyclopediaTiles._findTilesBySkill(id);
-        var tiS = "";
-        if (tiles.length > 0)
-        {
-            for (var i=0; i < tiles.length; i++)
-            {
-                if (i != 0) tiS += ", ";
-                tiS += " ";
-
-                tiS += EncyclopediaTiles._linkToTile(tiles[i].id);
-            }
-        }
+        var eqS = EncyclopediaEquipments._findEquipmentsBySkill(id).map(eq => EncyclopediaEquipments._linkToEquipment(eq.id)).join(", ");
+        var spS = EncyclopediaSpells._findSpellsBySkill(id).map(spell => EncyclopediaSpells._linkToSpell(spell.id)).join(", ");
+        var heS = EncyclopediaHeroes._findHeroesBySkill(id).map(hero => EncyclopediaHeroes._linkToHero(hero.id)).join(", ");
+        var tiS = EncyclopediaTiles._findTilesBySkill(id).map(tile => EncyclopediaTiles._linkToTile(tile.id)).join(", ");
 
         Nav.dialog(skill.title[Language],
             "<div class='skillsdetails'>"
                 + ConanRules._skill2HTML(skill.id, skill.type, skill.image, skill.title[Language], skill.text[Language])
-                + (eqS ? ("<div class='equipments'>"
-                            + ConanRules._i18n[Language].equipments + eqS
-                        + "</div>") : "")
-                + (spS ? ("<div class='spells'>"
-                            + ConanRules._i18n[Language].spells + spS
-                        + "</div>") : "")
-                + (heS ? ("<div class='heroes'>"
-                            + ConanRules._i18n[Language].heroesOwned + heS
-                        + "</div>") : "")
-                + (tiS ? ("<div class='tiles'>"
-                            + ConanRules._i18n[Language].tilesOwned + tiS
-                        + "</div>") : "")
+                + (eqS ? ("<div class='equipments'>" + ConanRules._i18n[Language].equipments + " " + eqS + "</div>") : "")
+                + (spS ? ("<div class='spells'>" + ConanRules._i18n[Language].spells + " " + spS + "</div>") : "")
+                + (heS ? ("<div class='heroes'>" + ConanRules._i18n[Language].heroesOwned + " " + heS + "</div>") : "")
+                + (tiS ? ("<div class='tiles'>" + ConanRules._i18n[Language].tilesOwned + " " + tiS + "</div>") : "")
             + "</div>",
             null,
             []

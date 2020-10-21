@@ -440,19 +440,19 @@ var EncyclopediaTiles = {
         {
             var studiotiles = JSON.parse(localStorage.getItem("StudioTiles")) || [];
             
-            var images = {};
+            var colors = {};
             
             var tiles = EncyclopediaTiles._findTilesById(id);
             for (var i in tiles)
             {
                 var tile = tiles[i];
                 
-                if (images[tile.image])
+                if (colors[tile.color])
                 {
                     continue;
                 }
                 
-                images[tile.image] = true;
+                colors[tile.color] = true;
                 var studioTile = EncyclopediaTiles._convertTileToStudio(tile);
                 studiotiles.push(studioTile);
             }
@@ -461,7 +461,7 @@ var EncyclopediaTiles = {
             
             Tile._displayTiles();
             
-            Nav.switchTo($("*[for=studio]")[3]);
+            Nav.switchTo($("*[for=studio]")[0]);
             $("#studio .nav-wrapper").slick('slickGoTo', $("#tile").index());
             $("#tile").animate({ scrollTop: $('#tile > *:last()').position().top },500);
             
@@ -471,7 +471,15 @@ var EncyclopediaTiles = {
     },
     
     _linkToTile: function(id) {
-        return "<a href='javascript:void(0)' onclick='EncyclopediaTiles.openTile(\"" + id + "\")'>" + EncyclopediaTiles._findTilesById(id)[0].name[Language] + "</a>";
+        var tile = EncyclopediaTiles._findTilesById(id)[0];
+        var colors = "";
+        if (tile.colors.length > 1)
+        {
+            colors += " (";
+            colors += tile.colors.map(c => Tile._i18n[Language]['color' + c.charAt(0).toUpperCase() + c.slice(1)]).join(", ");
+            colors += ")";
+        }
+        return "<a href='javascript:void(0)' onclick='EncyclopediaTiles.openTile(\"" + id + "\")'>" + tile.name[Language] + colors + "</a>";
     }
     
 };

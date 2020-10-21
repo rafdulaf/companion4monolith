@@ -335,14 +335,16 @@ var EncyclopediaModels = {
     _findTilesByModel: function(model)
     {
         var tiles = [];
+        var found = {};
 
         if (model)
         {
             for (var i in Encyclopedia.tiles.list)
             {
                 var tile = Encyclopedia.tiles.list[i];
-                if (tile.model == model.id)
+                if (tile.model == model.id && !found[tile.id])
                 {
+                    found[tile.id] = true;
                     tiles.push(tile);
                 }
             }
@@ -489,28 +491,10 @@ var EncyclopediaModels = {
         
         var model = models[0];
         
-        var heroes = "";
-        for (var i in Encyclopedia.heroes.list)
-        {
-            var hero = Encyclopedia.heroes.list[i];
-            if (hero.model == model.id)
-            {
-                if (heroes) heroes += ", ";
-                heroes += EncyclopediaHeroes._linkToHero(hero.id);
-            }
-        }
+        var heroes = EncyclopediaModels._findHeroesByModel(model).map(hero => EncyclopediaHeroes._linkToHero(hero.id)).join(", ")
         if (heroes) heroes = "<div class='heroes'>" + EncyclopediaModels._i18n[Language].heroes + " " + heroes + "</div>";
 
-        var tiles = "";
-        for (var i in Encyclopedia.tiles.list)
-        {
-            var tile = Encyclopedia.tiles.list[i];
-            if (tile.model == model.id)
-            {
-                if (tiles) tiles += ", ";
-                tiles += EncyclopediaTiles._linkToTile(tile.id);
-            }
-        }
+        var tiles = EncyclopediaModels._findTilesByModel(model).map(tile => EncyclopediaTiles._linkToTile(tile.id)).join(", ");
         if (tiles) tiles = "<div class='tiles'>" + EncyclopediaModels._i18n[Language].tiles + " " + tiles + "</div>";
 
         Nav.dialog(EncyclopediaModels._findModelNames(model) || "",
