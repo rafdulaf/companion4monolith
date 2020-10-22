@@ -157,7 +157,7 @@ var EncyclopediaModels = {
                 label: {
                     'fr': "Utilisé par",
                     'en': "Used by",
-                    'it': "Usato da"
+                    'it': "Utilizzata da"
                 },
                 values: [
                     {
