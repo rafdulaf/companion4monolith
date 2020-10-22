@@ -50,6 +50,7 @@ var ConanStudio = {
             CardEquipment.copyright()
             + CardSpell.copyright()
             + HeroSheet.copyright()
+            + Tile.copyright()
         );
     },
 

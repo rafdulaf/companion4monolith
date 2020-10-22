@@ -3,7 +3,7 @@ var ConanAbout = {
         'fr': {
             'name': "Compagnon<br/>de Conan",
             'title': "Le compagnon de Conan",
-            'text': "<h1>Important</h1>Cette application n'a aucun lien avec l'édteur du jeu Conan : Monolith.<br/>Elle a été réalisée par <a href='https://the-overlord.com/index.php?/profile/5240-cochon/' target='_blank'>@cochon</a> en s'appuyant sur l'aide de la communauté de <a href='https://the-overlord.com'>The Overlord</a> et divers outils et ressources existantes.",
+            'text': "'Compagnion de Conan' est une application indépendante pour accompagner les joueurs dans le jeu 'Conan'.<h1>Important</h1>Cette application n'a aucun lien avec l'édteur du jeu Conan : Monolith.<br/>Elle a été réalisée par <a href='https://the-overlord.com/index.php?/profile/5240-cochon/' target='_blank'>@cochon</a> en s'appuyant sur l'aide de la communauté de <a href='https://the-overlord.com'>The Overlord</a> et divers outils et ressources existantes.",
             'fullscreen': "Plein écran",
             'about': "A propos",
             'licence': "Licence",
@@ -11,9 +11,7 @@ var ConanAbout = {
             'licence_text2': "mais toutes les ressources (images, textes, caractéristiques...) restent la propriété de leurs auteurs respectifs selon les droits applicables.",
             'about': "A propos",
             'copyright': "Copyright",
-            'copyright-text': "<h1>But</h1>'Compagnion de Conan' est une application indépendante pour accompagner les joueurs dans le jeu 'Conan'.<br/>"
-                    + "<h1>Propriété</h1>"
-                    + "'Conan' est un jeu de plateau de figurines édité par <a href='http://monolithedition.com' target='_blank'>Monolith</a>.<br/>"
+            'copyright-text': "'Conan' est un jeu de plateau de figurines édité par <a href='http://monolithedition.com' target='_blank'>Monolith</a>.<br/>"
                     + "Le logo Conan et les polices de caractères utilisées sont la propriété de Monolith.<br/>"
                     + "L'image du 'Compagnion de Conan' a été créée à partir du logo Conan.<br/>",
             'preferences': 'Mes préferences',
@@ -32,7 +30,7 @@ var ConanAbout = {
                         + "<li>Vous avez une idée d'amélioration ?</li>"
                         + "<li>Vous souhaitez proposer un patch ?</li>"
                     + "</ul>"
-                    + "Le projet est hébergé sur Github : vous pouvez donc y déposer vos idées voire proposer vos modifications, mais vous pouvez aussi participer via le forum The Overlord.",
+                    + "Le projet est hébergé sur Github : vous pouvez donc y déposer vos idées voire proposer vos pmodifications, mais vous pouvez aussi participer via le forum The Overlord.",
             'contribute_version': "Version actuelle : ",
             'contribute_hof': "Temple de la renommée",
             'contribute_hof_coders': "Codage de l'application",
@@ -43,16 +41,14 @@ var ConanAbout = {
         'en': {
             'name': "Companion<br/>to Conan",
             'title': "The companion to Conan",
-            'text': "<h1>Disclamer</h1>This application has no link with the producer of the game Conan: Monolith.<br/>It was realized by <a href='https://the-overlord.com/index.php?/profile/5240-cochon/' target='_blank'>@cochon</a> relying the community of <a href='https://the-overlord.com'>The Overlord</a> and several existing tools or resources.",
+            'text': "'Companion to Conan' is an independant application to help the players in the game 'Conan'.<h1>Disclamer</h1>This application has no link with the producer of the game Conan: Monolith.<br/>It was realized by <a href='https://the-overlord.com/index.php?/profile/5240-cochon/' target='_blank'>@cochon</a> relying the community of <a href='https://the-overlord.com'>The Overlord</a> and several existing tools or resources.",
             'fullscreen': "Fullscreen",
             'about': "About",
             'licence': "Licence",
             'licence_text': "This software is developped under the LGPL-3.0 licence",
             'licence_text2': "but all resources (images, texts, caracteristics...) stay the property of their respective authors following the applyable rights.",
             'copyright': "Copyright",
-            'copyright-text': "<h1>Purpose</h1>'Companion to Conan' is an indepedant applciation to help the players in the game 'Conan'.<br/>"
-                    + "<h1>Property</h1>"
-                    + "'Conan' is a board game published by <a href='http://monolithedition.com' target='_blank'>Monolith</a>.<br/>"
+            'copyright-text': "'Conan' is a board game published by <a href='http://monolithedition.com' target='_blank'>Monolith</a>.<br/>"
                     + "The Conan logo and the fonts used are the property of Monolith.<br/>"
                     + "The image of 'Companion to Conan' was created by adapting the Conan logo.<br/>",
             'preferences': 'My settings',
@@ -82,16 +78,14 @@ var ConanAbout = {
         'it': {
             'name': "Conan<br/>Companion",
             'title': "Conan Companion",
-            'text': "TOTO_TRANSLATE",
+            'text': "'Conan Companion' è un'applicazione indipendente di supporto per i giocatori del gioco 'Conan'.<h1>Importante</h1>Questa applicazione non ha nessun legame con il gioco Conan: Monolith.",
             'fullscreen': "A tutto schermo",
             'about': "Crediti",
             'licence': "Licenze",
             'licence_text': "Questo software è sviluppato sotto licenza LGPL-3.0.",
             'licence_text2': "Tutto il materiale (immagini, testi, caratteristiche...) resta proprietà dei singoli autori nel rispetto dei diritti applicabili",
             'copyright': "Copyright",
-            'copyright-text': "<h1>Scopi</h1>'Conan Companion' è un'applicazione indipendente di supporto per i giocatori del gioco 'Conan'.<br/>"
-                    + "<h1>Proprietà</h1>"
-                    + "'Conan' è un gioco da tavolo della <a href='http://monolithedition.com' target='_blank'>Monolith</a>.<br/>"
+            'copyright-text': "'Conan' è un gioco da tavolo della <a href='http://monolithedition.com' target='_blank'>Monolith</a>.<br/>"
                     + "Il logo di Conan e i fonts usati sono proprietà della Monolith.<br/>"
                     + "Le immagini di 'Conan Companion' sono state create adattando il logo di Conan.<br/>",
             'preferences': 'Le mie preferenze',
@@ -145,8 +139,7 @@ var ConanAbout = {
         Menu.addMenu(ConanAbout._i18n[Language].custom, "about-custom", "ConanAbout._custom()", !isInStandaloneMode);
         Menu.addMenu(ConanAbout._i18n[Language].preferences, "about-preferences", "ConanAbout._preferences()");
 
-        Menu.addMenu(ConanAbout._i18n[Language].contribute, "about-contribute", "ConanAbout._contribute()", true);
-        Menu.addMenu(ConanAbout._i18n[Language].about, "about-about", "ConanAbout._about()");
+        Menu.addMenu(ConanAbout._i18n[Language].about, "about-about", "ConanAbout._about()", true);
     },
 
     _about: function()
@@ -161,13 +154,40 @@ var ConanAbout = {
                             "<a class='fullscreen' onclick='ConanAbout._toggleFullscreen(); return false' href='javascript:void(0);' title=\"" + ConanAbout._i18n[Language].fullscreen + "\"></a>" +
                             "<span>" + ConanAbout._i18n[Language].text + "</span>"
                     + "</div>"
-                    + "<div class='about-copyright'><div>"
-                        + "<div class='about-copyright-text'>" + ConanAbout._i18n[Language]['copyright-text'] + ConanAbout._copyright + "</div>"
-                    + "</div></div>"
                     + "<div>"
-                        + "<h1>" + ConanAbout._i18n[Language]['licence'] + "</h1>"
+                       + "<ul>"
+                       + "<li>" + ConanAbout._i18n[Language].licence + "</li>"
+                       + "<li>" + ConanAbout._i18n[Language].contribute_hof + "</li>"
+                       + "<li>" + ConanAbout._i18n[Language].contribute + "</li>"
+                       + "<li>" + ConanAbout._i18n[Language].copyright + "</li>"
+                       + "</ul>"
+                    + "</div>"
+                    + "<div>"
+                        + "<h1>" + ConanAbout._i18n[Language].licence + "</h1>"
                         + "<div><a href='https://github.com/rafdulaf/companion4conan/blob/master/LICENSE'>" + ConanAbout._i18n[Language]['licence_text'] + "</a> " + ConanAbout._i18n[Language]['licence_text2'] + "</div>"
                     + "</div>"
+                    + "<div>"
+                        + "<h1>" + ConanAbout._i18n[Language].contribute_hof + "</h1>"
+                        + "<h2>" + ConanAbout._i18n[Language].contribute_hof_coders + "</h2>"
+                        + "<div><a href=\"https://the-overlord.com/index.php?/profile/5240-cochon/\">@cochon</a></div>"
+                        + "<h2>" + ConanAbout._i18n[Language].contribute_hof_data + "</h2>"
+                        + "<div><a href=\"https://the-overlord.com/index.php?/profile/5240-cochon/\">@cochon</a></div>"
+                        + "<div><a href=\"https://the-overlord.net/index.php?/profile/6029-pensareadaltro/\">@pensareadaltro</a> " + ConanAbout._i18n[Language].contribute_hof_dataIT + "</div>"
+                        + "<h2>" + ConanAbout._i18n[Language].contribute_hof_test + "</h2>"
+                        + "<div><a href=\"https://the-overlord.com/index.php?/profile/5567-madcollector/\">@madcollector</a></div>"
+                        + "<div><a href=\"https://the-overlord.com/index.php?/profile/13-roolz/\">@Roolz</a></div>"
+                        + "<div><a href=\"https://the-overlord.com/index.php?/profile/5236-renand/\">@Renand</a></div>"
+                    + "</div>"
+                    + "<div class=\"contribute\">"
+                        + "<h1>" + ConanAbout._i18n[Language].contribute + "</h1>"
+                        + "<div>" + ConanAbout._i18n[Language].contribute_text + "</div>"
+                        + "<a target=\"_blank\" href=\"https://github.com/rafdulaf/companion4conan\" class=\"github\">Github</a>"
+                        + "<a target=\"_blank\" href=\"https://the-overlord.com/index.php?/topic/3095-application-de-compagnon-de-jeu/\" class=\"to\">The Overlord</a>"
+                        + "<div>" + ConanAbout._i18n[Language].contribute_version + Version + ".</div>"
+                    + "</div>"
+                    + "<div class='about-copyright'><div>"
+                        + "<div class='about-copyright-text'><h1>" + ConanAbout._i18n[Language].copyright + "</h1>" + ConanAbout._i18n[Language]['copyright-text'] + ConanAbout._copyright + "</div>"
+                    + "</div></div>"
                 + "</div>"
         );
     },
@@ -376,32 +396,6 @@ var ConanAbout = {
             }
             display = true;
         })
-    },
-
-    _contribute: function() {
-        $("nav.menu input")[0].checked = false;
-
-        Nav.dialog(ConanAbout._i18n[Language].contribute,
-            "<div class=\"contribute\">"
-                + "<div>" + ConanAbout._i18n[Language].contribute_text + "</div>"
-                + "<a target=\"_blank\" href=\"https://github.com/rafdulaf/companion4conan\" class=\"github\">Github</a>"
-                + "<a target=\"_blank\" href=\"https://the-overlord.com/index.php?/topic/3095-application-de-compagnon-de-jeu/\" class=\"to\">The Overlord</a>"
-                + "<div>" + ConanAbout._i18n[Language].contribute_version + Version + ".</div>"
-                + "<h1>" + ConanAbout._i18n[Language].contribute_hof + "</h1>"
-                + "<h2>" + ConanAbout._i18n[Language].contribute_hof_coders + "</h2>"
-                + "<div><a href=\"https://the-overlord.com/index.php?/profile/5240-cochon/\">@cochon</a></div>"
-                + "<h2>" + ConanAbout._i18n[Language].contribute_hof_data + "</h2>"
-                + "<div><a href=\"https://the-overlord.com/index.php?/profile/5240-cochon/\">@cochon</a></div>"
-                + "<div><a href=\"https://the-overlord.net/index.php?/profile/6029-pensareadaltro/\">@pensareadaltro</a> " + ConanAbout._i18n[Language].contribute_hof_dataIT + "</div>"
-                + "<h2>" + ConanAbout._i18n[Language].contribute_hof_test + "</h2>"
-                + "<div><a href=\"https://the-overlord.com/index.php?/profile/5567-madcollector/\">@madcollector</a></div>"
-                + "<div><a href=\"https://the-overlord.com/index.php?/profile/13-roolz/\">@Roolz</a></div>"
-                + "<div><a href=\"https://the-overlord.com/index.php?/profile/5236-renand/\">@Renand</a></div>"
-            + "</div>",
-
-            function() {
-            }
-        );
     },
 
     _hasExpansion: function(origins)
