@@ -64,6 +64,22 @@
                 { "image":"data/tiles/img/skuthus_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
+            "quote": {
+                "text": {
+                    "fr": "Ma nécromancie est plus grande que la somme des connaissances de tous les hommes réunis. Comment les prêtres de Set avaient-ils pu savoir que le Coeur était arrivé par le sud ? Et pourtant ce n'était pas plus incroyable qu'une nécromancie permettant de tuer un homme armé rien qu'en le touchant de la paume de la main. Ce n'est pas en agitant une baguette magique que l'on peut accomplir une telle nécromancie.",
+                    "en": "My necromantic knowledge is greater than the sum of all the knowledge of other men. How could the priests of Set known that the Heart has come southward? Yet the tought was no more fantastic than the necromancy that could slay an armed man by the touch of an open, empty hand. Necromancy is not accomplished by the waving of a wand.",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "L'heure du Dragon",
+                    "en": "The Hour of the Dragon",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+                
             "image": "data/tiles/img/skuthus.png",
             "imageHD": "data/tiles/img/skuthus_hd.png",
             "image_location": {"x":66, "y":56},
@@ -4913,13 +4929,13 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Il ne se préoccupa pas un instant de la bizarrerie de tous ces phénomènes, même lorsque deux silhouettes gigantesques se dressèrent devant lui pour lui barrer la route. La gelée blanche faisait briller leurs cottes de mailles ; leurs casques et leurs haches étaient recouverts de givre. Les boucles de leurs cheveux étaient saupoudrées de neige et dans leurs barbes étaient prises des aiguilles de glace. Leurs yeux étaient aussi froids que les lumières qui tourbillonnaient au-dessus de leurs têtes.",
+                    "en": "He did not wonder at the strangeness of it all, not even when two gigantic figures rose up to bar his way. The scales of their mail were white with hoar-frost; their helmets and their axes were covered with ice. Snow sprinkled their locks; in their beards were spikes of icicles; their eyes were cold as the lights that streamed above them. ",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "La Fille du Géant du Gel",
+                    "en": "The Frost Giant's Daughter",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -4928,9 +4944,9 @@
             },
     
             "image": "data/tiles/img/nijgor.png",
-            "imageHD": "data/tiles/img/nijgor_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "imageHD": "data/tiles/img/nijgor.png",
+            "image_location": {"x":54, "y":49},
+            "image_zoom": 99,
             "model": "nijgor",
             "origins": ["nordheim"],
     
@@ -4958,13 +4974,13 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Il ne se préoccupa pas un instant de la bizarrerie de tous ces phénomènes, même lorsque deux silhouettes gigantesques se dressèrent devant lui pour lui barrer la route. La gelée blanche faisait briller leurs cottes de mailles ; leurs casques et leurs haches étaient recouverts de givre. Les boucles de leurs cheveux étaient saupoudrées de neige et dans leurs barbes étaient prises des aiguilles de glace. Leurs yeux étaient aussi froids que les lumières qui tourbillonnaient au-dessus de leurs têtes.",
+                    "en": "He did not wonder at the strangeness of it all, not even when two gigantic figures rose up to bar his way. The scales of their mail were white with hoar-frost; their helmets and their axes were covered with ice. Snow sprinkled their locks; in their beards were spikes of icicles; their eyes were cold as the lights that streamed above them. ",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "La Fille du Géant du Gel",
+                    "en": "The Frost Giant's Daughter",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -4973,9 +4989,9 @@
             },
     
             "image": "data/tiles/img/seski.png",
-            "imageHD": "data/tiles/img/seski_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "imageHD": "data/tiles/img/seski.png",
+            "image_location": {"x":49, "y":49.5},
+            "image_zoom": 99,
             "model": "seski",
             "origins": ["nordheim"],
     
@@ -5017,8 +5033,8 @@
     
             "image": "data/tiles/img/vanir-warriors.png",
             "imageHD": "data/tiles/img/vanir-warriors_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":46, "y":63},
+            "image_zoom": 177,
             "model": "vanir-warriors",
             "origins": ["nordheim"],
     
@@ -5058,10 +5074,10 @@
                 }
             },
     
-            "image": "data/tiles/img/vanir-warriors-blue.png",
-            "imageHD": "data/tiles/img/vanir-warriors-blue_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image": "data/tiles/img/vanir-warriors.png",
+            "imageHD": "data/tiles/img/vanir-warriors_hd.png",
+            "image_location": {"x":46, "y":63},
+            "image_zoom": 177,
             "model": "vanir-warriors",
             "origins": ["nordheim"]
         },
@@ -5099,10 +5115,10 @@
                 }
             },
     
-            "image": "data/tiles/img/vanir-zombies-green.png",
-            "imageHD": "data/tiles/img/vanir-zombies-green_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image": "data/tiles/img/vanir-warriors.png",
+            "imageHD": "data/tiles/img/vanir-warriors_hd.png",
+            "image_location": {"x":46, "y":63},
+            "image_zoom": 177,
             "model": "vanir-warriors",
             "origins": ["nordheim"]
         },
