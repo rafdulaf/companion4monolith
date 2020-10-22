@@ -5172,7 +5172,48 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "colors": ["gray", "red"],
+            "colors": ["gray"],
+            "movement": "5",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "yellow", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "movement/flying", "1": "miscellaneous/jinx", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [],
+    
+            "quote": {
+                "text": {
+                    "fr": "Comme il franchissait la dernière crête de la colline, un cri rauque retentit soudain au-dessus de sa tête. Il leva les yeux et aperçut le corbeau qui battait des ailes haut dans le ciel, à sa verticale, croassant sans cesse. Conan poursuivit son chemin et le volatile le suivit, restant toujours au-dessus de lui, rendant la matinée hideuse avec ses cris stridents et se moquant des efforts du Cimmérien pour le chasser. Cela dura des heures, jusqu'à ce que les nerfs de Conan soient tendus à vifs. Il aurait donné la moitié de son royaume pour qu'on lui permette de tordre ce cou noir. -Par les diables de 1'enfer! jura-t-il dans une rage futile, en agitant son poing bardé d'acier vers le volatile aux cris frénétiques. Pourquoi me tourmentes-tu avec tes cris incessants ? Hors de ma vue, engeance des Enfers, et va donc picorer dans les champs de blé des paysans !",
+                    "en": "As he topped the farther crest of the slope, a raucous screaming burst out over his head, and looking up, he saw the raven flapping high above him, cawing incessantly. As he rode on, it followed him, maintaining its position and making the morning hideous with its strident cries, heedless of his efforts to drive it away. This kept up for hours, until Conan's teeth were on edge, and he felt that he would give half his kingdom to be allowed to wring that black neck. 'Devils of hell!' he roared to futile rage, shaking his mailed fist at the frantic bird. « Why do you harry me with your squawking? Begone, you black spawn of perdition, and peck for wheat to the farmers' fields! »",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "L'Heure du Dragon",
+                    "en": "The Hour of the Dragon",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+    
+            "image": "data/tiles/img/crows.png",
+            "imageHD": "data/tiles/img/crows_hd.png",
+            "image_location": {"x":46, "y":54},
+            "image_zoom": 168,
+            "model": "crows",
+            "origins": ["nordheim"]
+        },
+    
+        {
+            "id": "crows-red",
+            "name": {
+                "fr": "",
+                "en": "Crows",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "colors": ["red"],
             "movement": "5",
             "defense": "1",
             "attacktype": "contact",
@@ -5183,13 +5224,13 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Comme il franchissait la dernière crête de la colline, un cri rauque retentit soudain au-dessus de sa tête. Il leva les yeux et aperçut le corbeau qui battait des ailes haut dans le ciel, à sa verticale, croassant sans cesse. Conan poursuivit son chemin et le volatile le suivit, restant toujours au-dessus de lui, rendant la matinée hideuse avec ses cris stridents et se moquant des efforts du Cimmérien pour le chasser. Cela dura des heures, jusqu'à ce que les nerfs de Conan soient tendus à vifs. Il aurait donné la moitié de son royaume pour qu'on lui permette de tordre ce cou noir. -Par les diables de 1'enfer! jura-t-il dans une rage futile, en agitant son poing bardé d'acier vers le volatile aux cris frénétiques. Pourquoi me tourmentes-tu avec tes cris incessants ? Hors de ma vue, engeance des Enfers, et va donc picorer dans les champs de blé des paysans !",
+                    "en": "As he topped the farther crest of the slope, a raucous screaming burst out over his head, and looking up, he saw the raven flapping high above him, cawing incessantly. As he rode on, it followed him, maintaining its position and making the morning hideous with its strident cries, heedless of his efforts to drive it away. This kept up for hours, until Conan's teeth were on edge, and he felt that he would give half his kingdom to be allowed to wring that black neck. 'Devils of hell!' he roared to futile rage, shaking his mailed fist at the frantic bird. « Why do you harry me with your squawking? Begone, you black spawn of perdition, and peck for wheat to the farmers' fields! »",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "L'Heure du Dragon",
+                    "en": "The Hour of the Dragon",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -5199,12 +5240,12 @@
     
             "image": "data/tiles/img/crows.png",
             "imageHD": "data/tiles/img/crows_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":46, "y":54},
+            "image_zoom": 168,
             "model": "crows",
             "origins": ["nordheim"]
         },
-    
+
         {
             "id": "wolves",
             "name": {
