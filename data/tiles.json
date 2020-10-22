@@ -48,9 +48,9 @@
         {
             "id": "skuthus",
             "name": {
-                "fr": "",
+                "fr": "Skuthus",
                 "en": "Skuthus",
-                "it": "TODO_TRANSLATE"
+                "it": "Skuthus"
             },
     
             "colors": ["gray"],
@@ -64,26 +64,10 @@
                 { "image":"data/tiles/img/skuthus_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
             "image": "data/tiles/img/skuthus.png",
             "imageHD": "data/tiles/img/skuthus_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":66, "y":56},
+            "image_zoom": 65,
             "model": "skuthus",
             "origins": ["corebox", "stretchgoal", "king"],
     
@@ -4855,13 +4839,13 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Devant lui, ondoyant comme un arbrisseau sous le vent, se tenait une femme. Pour ses yeux éblouis, le corps de l'inconnue semblait d'ivoire; à l'exception d'un léger voile tissé des fils les plus fins, elle était aussi nue qu'au premier jour. Ses pieds délicats étaient plus blancs que la neige qu'ils foulaient avec dédain. Elle riait en regardant le guerrier déconcerté; son rire était plus mélodieux que le doux clapotis de fontaines argentées, et cependant empreint d'une cruelle moquerie. Le regard de Conan se posa à nouveau sur ses cheveux décoiffés qu'il avait cru, tout d'abord, être roux. Il voyait à présent qu'ils n'étaient ni roux ni blonds, mais d'un éclatant mélange des deux couleurs. Il la contemplait, fasciné. Sa chevelure semblait d'un or de fée; le soleil se reflétait sur ses tresses avec une violence telle que Conan avait presque du mal à les regarder. Ses yeux, de même, n'étaient ni tout à fait bleus, ni tout à fait gris ; leur couleur était changeante, pleine de lueurs dansantes et de nuances qu'il aurait été incapable de définir. Ses lèvres rouges et pleines souriaient; de ses pieds menus à la couronne aveuglante de sa chevelure tombant en cascade, son corps d'ivoire était aussi parfait que le songe d'un dieu.",
+                    "en": "Before him, swaying like a sapling in the wind, stood a woman. Her body was like ivory to his dazed gaze, and save for a light veil of gossamer, she was naked as the day. Her slender bare feet were whiter than the snow they spurned. She laughed down at the bewildered warrior. Her laughter was sweeter than the rippling of silvery fountains, and poisonous with cruel mockery. (…) His gaze went again to her unruly locks, which at first glance he had thought to be red. Now he saw that they were neither red nor yellow but a glorious compound of both colors. He gazed spell-bound. Her hair was like elfin-gold; the sun struck it so dazzlingly that he could scarcely bear to look upon it. Her eyes were likewise neither wholly blue nor wholly grey, but of shifting colors and dancing lights and clouds of colors he could not define. Her full red lips smiled, and from her slender feet to the blinding crown of her billowy hair, her ivory body was as perfect as the dream of a god.",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "La Fille du Géant du Gel",
+                    "en": "The Frost Giant's Daughter",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -4871,8 +4855,8 @@
     
             "image": "data/tiles/img/atali.png",
             "imageHD": "data/tiles/img/atali_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":67, "y":63},
+            "image_zoom": 90,
             "model": "atali",
             "origins": ["nordheim"],
     
@@ -4882,9 +4866,9 @@
         {
             "id": "yazdigerd",
             "name": {
-                "fr": "",
+                "fr": "Yazdigerd",
                 "en": "Yazdigerd",
-                "it": "TODO_TRANSLATE"
+                "it": "Yazdigerd"
             },
     
             "colors": ["gray"],
@@ -4898,27 +4882,11 @@
                 { "image":"data/tiles/img/yazdigerd_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
-            "image": "data/tiles/img/yazdigerd.png",
-            "imageHD": "data/tiles/img/yazdigerd_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "yazdigerd",
+            "image": "data/tiles/img/skuthus.png",
+            "imageHD": "data/tiles/img/skuthus_hd.png",
+            "image_location": {"x":66, "y":56},
+            "image_zoom": 65,
+            "model": "skuthus",
             "origins": ["nordheim"],
     
             "count": 1
@@ -5017,7 +4985,7 @@
         {
             "id": "vanir-warriors",
             "name": {
-                "fr": "",
+                "fr": "Guerriers Vanirs",
                 "en": "Vanir Warriors",
                 "it": "TODO_TRANSLATE"
             },
@@ -5033,13 +5001,13 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "À quoi ressemblent ces gens du Nord ? demanda Prospero. - Ils sont grands et ont les yeux bleus ; leur sang et leur langue sont identiques, mais les Aesirs ont les cheveux blonds et les Vanirs, les cheveux roux. Leur principal dieu est Ymir, le géant du gel ; ils ne sont pas dirigés par un grand roi, mais chaque tribu a son propre suzerain. Ils sont sauvages, capricieux et féroces. Ils se battent toute la journée, et la nuit ils boivent de l'ale et mugissent leurs chants sauvages.",
+                    "en": "What manner of men are these northern folk?” asked Prospero. “Tall and fair and blue-eyed. Their god is Ymir, the frost-giant, and each tribe has its own king. They are wayward and fierce. They fight all day and drink ale and roar their wild songs all night.",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Le Phénix sur l’Épée",
+                    "en": "The Phoenix on the Sword",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -5060,12 +5028,12 @@
         {
             "id": "vanir-warriors-blue",
             "name": {
-                "fr": "",
-                "en": "Vanir Warriors - Blue",
+                "fr": "Guerriers Vanirs",
+                "en": "Vanir Warriors",
                 "it": "TODO_TRANSLATE"
             },
     
-            "colors": ["blue"],
+            "colors": ["blue", "purple"],
             "movement": "2",
             "defense": "1",
             "attacktype": "contact",
@@ -5076,13 +5044,13 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "À quoi ressemblent ces gens du Nord ? demanda Prospero. - Ils sont grands et ont les yeux bleus ; leur sang et leur langue sont identiques, mais les Aesirs ont les cheveux blonds et les Vanirs, les cheveux roux. Leur principal dieu est Ymir, le géant du gel ; ils ne sont pas dirigés par un grand roi, mais chaque tribu a son propre suzerain. Ils sont sauvages, capricieux et féroces. Ils se battent toute la journée, et la nuit ils boivent de l'ale et mugissent leurs chants sauvages.",
+                    "en": "What manner of men are these northern folk?” asked Prospero. “Tall and fair and blue-eyed. Their god is Ymir, the frost-giant, and each tribe has its own king. They are wayward and fierce. They fight all day and drink ale and roar their wild songs all night.",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Le Phénix sur l’Épée",
+                    "en": "The Phoenix on the Sword",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -5094,64 +5062,19 @@
             "imageHD": "data/tiles/img/vanir-warriors-blue_hd.png",
             "image_location": {"x":50, "y":50},
             "image_zoom": 100,
-            "model": "vanir-warriors-blue",
-            "origins": ["nordheim"],
-    
-            "count": 1
+            "model": "vanir-warriors",
+            "origins": ["nordheim"]
         },
     
         {
-            "id": "vanir-warriors-purple",
+            "id": "vanir-zombies",
             "name": {
-                "fr": "",
-                "en": "Vanir Warriors - Purple",
+                "fr": "Revenants Vanir",
+                "en": "Vanir Zombies",
                 "it": "TODO_TRANSLATE"
             },
     
-            "colors": ["purple"],
-            "movement": "2",
-            "defense": "1",
-            "attacktype": "contact",
-            "dices": { "0": "yellowreroll", "1": "yellowreroll", "2": "none", "3": "none" },
-            "skills": { "0": "attack/precision_strike", "1": "none", "2": "none", "3": "none" },
-            "reinforcement": "1",
-            "tokens": [],
-    
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
-            "image": "data/tiles/img/vanir-warriors-purple.png",
-            "imageHD": "data/tiles/img/vanir-warriors-purple_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "vanir-warriors-purple",
-            "origins": ["nordheim"],
-    
-            "count": 1
-        },
-    
-        {
-            "id": "vanir-zombies-green",
-            "name": {
-                "fr": "",
-                "en": "Vanir Zombies - Green",
-                "it": "TODO_TRANSLATE"
-            },
-    
-            "colors": ["green"],
+            "colors": ["green", "red"],
             "movement": "1",
             "defense": "1",
             "attacktype": "contact",
@@ -5162,13 +5085,13 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "À quoi ressemblent ces gens du Nord ? demanda Prospero. - Ils sont grands et ont les yeux bleus ; leur sang et leur langue sont identiques, mais les Aesirs ont les cheveux blonds et les Vanirs, les cheveux roux. Leur principal dieu est Ymir, le géant du gel ; ils ne sont pas dirigés par un grand roi, mais chaque tribu a son propre suzerain. Ils sont sauvages, capricieux et féroces. Ils se battent toute la journée, et la nuit ils boivent de l'ale et mugissent leurs chants sauvages.",
+                    "en": "What manner of men are these northern folk?” asked Prospero. “Tall and fair and blue-eyed. Their god is Ymir, the frost-giant, and each tribe has its own king. They are wayward and fierce. They fight all day and drink ale and roar their wild songs all night.",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Le Phénix sur l’Épée",
+                    "en": "The Phoenix on the Sword",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -5180,53 +5103,8 @@
             "imageHD": "data/tiles/img/vanir-zombies-green_hd.png",
             "image_location": {"x":50, "y":50},
             "image_zoom": 100,
-            "model": "vanir-zombies-green",
-            "origins": ["nordheim"],
-    
-            "count": 1
-        },
-    
-        {
-            "id": "vanir-zombies-red",
-            "name": {
-                "fr": "",
-                "en": "Vanir Zombies - Red",
-                "it": "TODO_TRANSLATE"
-            },
-    
-            "colors": ["red"],
-            "movement": "1",
-            "defense": "1",
-            "attacktype": "contact",
-            "dices": { "0": "orange", "1": "none", "2": "none", "3": "none" },
-            "skills": { "0": "attack/constriction", "1": "none", "2": "none", "3": "none" },
-            "reinforcement": "1",
-            "tokens": [],
-    
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
-            "image": "data/tiles/img/vanir-zombies-red.png",
-            "imageHD": "data/tiles/img/vanir-zombies-red_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "vanir-zombies-red",
-            "origins": ["nordheim"],
-    
-            "count": 1
+            "model": "vanir-warriors",
+            "origins": ["nordheim"]
         },
     
         {
@@ -5237,7 +5115,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "colors": ["gray"],
+            "colors": ["gray", "red"],
             "movement": "2",
             "defense": "1",
             "attacktype": "contact",
@@ -5266,53 +5144,8 @@
             "imageHD": "data/tiles/img/vanir-primitives_hd.png",
             "image_location": {"x":50, "y":50},
             "image_zoom": 100,
-            "model": "vanir-primitives",
-            "origins": ["nordheim"],
-    
-            "count": 1
-        },
-    
-        {
-            "id": "vanir-primitives-red",
-            "name": {
-                "fr": "",
-                "en": "Vanir Primitives - Red",
-                "it": "TODO_TRANSLATE"
-            },
-    
-            "colors": ["red"],
-            "movement": "2",
-            "defense": "1",
-            "attacktype": "contact",
-            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
-            "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
-            "reinforcement": "1",
-            "tokens": [],
-    
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
-            "image": "data/tiles/img/vanir-primitives-red.png",
-            "imageHD": "data/tiles/img/vanir-primitives-red_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "vanir-primitives-red",
-            "origins": ["nordheim"],
-    
-            "count": 1
+            "model": "pict-hunters",
+            "origins": ["nordheim"]
         },
     
         {
@@ -5323,7 +5156,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "colors": ["gray"],
+            "colors": ["gray", "red"],
             "movement": "5",
             "defense": "1",
             "attacktype": "contact",
@@ -5353,52 +5186,7 @@
             "image_location": {"x":50, "y":50},
             "image_zoom": 100,
             "model": "crows",
-            "origins": ["nordheim"],
-    
-            "count": 1
-        },
-    
-        {
-            "id": "crows-red",
-            "name": {
-                "fr": "",
-                "en": "Crows - Red",
-                "it": "TODO_TRANSLATE"
-            },
-    
-            "colors": ["red"],
-            "movement": "5",
-            "defense": "1",
-            "attacktype": "contact",
-            "dices": { "0": "yellow", "1": "none", "2": "none", "3": "none" },
-            "skills": { "0": "movement/flying", "1": "miscellaneous/jinx", "2": "none", "3": "none" },
-            "reinforcement": "1",
-            "tokens": [],
-    
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
-            "image": "data/tiles/img/crows-red.png",
-            "imageHD": "data/tiles/img/crows-red_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "crows-red",
-            "origins": ["nordheim"],
-    
-            "count": 1
+            "origins": ["nordheim"]
         },
     
         {
