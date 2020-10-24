@@ -224,7 +224,13 @@ var EncyclopediaTiles = {
             }
             else
             {
-                return s1.name[Language].toLowerCase().localeCompare(s2.name[Language].toLowerCase());
+                var c = s1.name[Language].toLowerCase().localeCompare(s2.name[Language].toLowerCase())
+                if (c != 0)
+                {
+                    return c;
+                }
+                
+                return s1.id.toLowerCase().localeCompare(s2.id.toLowerCase());
             }
         });
 
@@ -369,9 +375,9 @@ var EncyclopediaTiles = {
             
             if (!colors[tile.color])
             {
-                colors[tile.color] = true;
                 displayTiles.push(tile);
             }
+            colors[tile.color] = colors[tile.color] ? colors[tile.color] + 1 : 1;
         }
         
         var originString = "";
@@ -385,7 +391,7 @@ var EncyclopediaTiles = {
         for (var e in displayTiles)
         {
             var tile = displayTiles[e]; 
-            c += Tile._tileCode(EncyclopediaTiles._convertTileToStudio(tile, i));
+            c += "<div class='tile-wrapindetails' data-count='" + colors[tile.color] + "'>" + Tile._tileCode(EncyclopediaTiles._convertTileToStudio(tile, i)) + "</div>";
         }
 
         var skills = ((tile.skills && tile.skills[0] != 'none') ?

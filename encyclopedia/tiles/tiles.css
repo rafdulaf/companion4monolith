@@ -81,11 +81,17 @@
 }
 .tiledetails .superdetails p:first-child::after { content: " »"; }
 
+.tiledetails .superdetails div.tile-wrapindetails { 
+    display: inline-block; 
+}
+
+div.tile-wrapindetails,
 #encyclopedia-tile-wrapper a {
     position: relative;
     display: inline-block;
 }
 
+div.tile-wrapindetails[data-count]::after,
 #encyclopedia-tile-wrapper a[data-count]::after {
     content: 'x' attr(data-count);
     position: absolute;
@@ -96,10 +102,13 @@
     height: 45px;
     line-height: 45px;
     font-size: 18px;
+    font-family: "Hyborian";
+    text-align: center;
     background-color: #e64443;
     color: #ffffff;
     border-radius: 100%;
 }
+div.tile-wrapindetails[data-count='1']::after,
 #encyclopedia-tile-wrapper a[data-count='1']::after {
     content: none;
 }

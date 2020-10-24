@@ -944,13 +944,13 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Quarante ou cinquante Pictes, nus à l'exception de leur pagne, le corps couvert de peintures hideuses, étaient assis en un large demi-cercle, face au feu et dos à moi. Grâce aux plumes de faucon dans leurs épaisses crinières noires, je savais qu'ils appartenaient au clan des Faucons, aussi appelé Onayaga.",
+                    "en": "He was a strongly built Pict with a white heron feather thrust in a copper band that confined his square-cut mane.\nBalthus hurled his ax with an accuracy that reduced the attackers to one, and Conan, abandoning his efforts to free his sword, wheeled and met the remaining Pict with his bare hands. The stocky warrior, a head shorter than his tall enemy, leaped in, striking with his ax, at the same time stabbing murderously with his knife.",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Des Loups au-delà de la Frontière - 1ère version de travail - inachevée",
+                    "en": "Beyond the Black River",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -960,8 +960,8 @@
     
             "image": "data/tiles/img/pict-hunters.png",
             "imageHD": "data/tiles/img/pict-hunters_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":68, "y":49},
+            "image_zoom": 111,
             "model": "pict-hunters",
             "origins": ["corebox", "stretchgoal", "king"],
     
@@ -972,7 +972,7 @@
             "id": "pict-hunters-blue",
             "name": {
                 "fr": "",
-                "en": "Pict Hunters - Blue",
+                "en": "Pict Hunters",
                 "it": "TODO_TRANSLATE"
             },
     
@@ -1001,11 +1001,11 @@
                 }
             },
     
-            "image": "data/tiles/img/pict-hunters-blue.png",
-            "imageHD": "data/tiles/img/pict-hunters-blue_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "pict-hunters-blue",
+            "image": "data/tiles/img/pict-hunters.png",
+            "imageHD": "data/tiles/img/pict-hunters_hd.png",
+            "image_location": {"x":68, "y":49},
+            "image_zoom": 111,
+            "model": "pict-hunters",
             "origins": ["corebox", "stretchgoal", "king"],
     
             "count": 1
@@ -1015,7 +1015,7 @@
             "id": "pict-hunters-green",
             "name": {
                 "fr": "",
-                "en": "Pict Hunters - Green",
+                "en": "Pict Hunters",
                 "it": "TODO_TRANSLATE"
             },
     
@@ -1044,11 +1044,11 @@
                 }
             },
     
-            "image": "data/tiles/img/pict-hunters-green.png",
-            "imageHD": "data/tiles/img/pict-hunters-green_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "pict-hunters-green",
+            "image": "data/tiles/img/pict-hunters.png",
+            "imageHD": "data/tiles/img/pict-hunters_hd.png",
+            "image_location": {"x":68, "y":49},
+            "image_zoom": 111,
+            "model": "pict-hunters",
             "origins": ["corebox", "stretchgoal", "king"],
     
             "count": 1
@@ -1058,7 +1058,7 @@
             "id": "pict-hunters-orange",
             "name": {
                 "fr": "",
-                "en": "Pict Hunters - Orange",
+                "en": "Pict Hunters",
                 "it": "TODO_TRANSLATE"
             },
     
@@ -1087,11 +1087,11 @@
                 }
             },
     
-            "image": "data/tiles/img/pict-hunters-orange.png",
-            "imageHD": "data/tiles/img/pict-hunters-orange_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "pict-hunters-orange",
+            "image": "data/tiles/img/pict-hunters.png",
+            "imageHD": "data/tiles/img/pict-hunters_hd.png",
+            "image_location": {"x":68, "y":49},
+            "image_zoom": 111,
+            "model": "pict-hunters",
             "origins": ["corebox", "stretchgoal", "king"],
     
             "count": 1
@@ -1101,7 +1101,7 @@
             "id": "pict-hunters-red",
             "name": {
                 "fr": "",
-                "en": "Pict Hunters - Red",
+                "en": "Pict Hunters",
                 "it": "TODO_TRANSLATE"
             },
     
@@ -1130,11 +1130,11 @@
                 }
             },
     
-            "image": "data/tiles/img/pict-hunters-red.png",
-            "imageHD": "data/tiles/img/pict-hunters-red_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "pict-hunters-red",
+            "image": "data/tiles/img/pict-hunters.png",
+            "imageHD": "data/tiles/img/pict-hunters_hd.png",
+            "image_location": {"x":68, "y":49},
+            "image_zoom": 111,
+            "model": "pict-hunters",
             "origins": ["corebox", "stretchgoal", "king"],
     
             "count": 1
@@ -1143,8 +1143,8 @@
         {
             "id": "pict-warriors-purple",
             "name": {
-                "fr": "",
-                "en": "Pict Warriors - Purple",
+                "fr": "Guerriers Pictes",
+                "en": "Pict Warriors",
                 "it": "TODO_TRANSLATE"
             },
     
@@ -1153,7 +1153,7 @@
             "defense": "2",
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "none", "2": "none", "3": "none" },
-            "skills": { "0": "movement/blocking", "1": "movement/leap", "2": "none", "3": "none" },
+            "skills": { "0": "movement/leap", "1": "movement/blocking", "2": "none", "3": "none" },
             "reinforcement": "2",
             "tokens": [],
     
@@ -1178,9 +1178,7 @@
             "image_location": {"x":50, "y":50},
             "image_zoom": 100,
             "model": "pict-warriors-purple",
-            "origins": ["corebox", "stretchgoal", "king"],
-    
-            "count": 1
+            "origins": ["corebox", "stretchgoal", "king"]
         },
     
         {
@@ -1444,9 +1442,9 @@
         {
             "id": "thog-1",
             "name": {
-                "fr": "",
-                "en": "Thog 1",
-                "it": "TODO_TRANSLATE"
+                "fr": "Thog",
+                "en": "Thog",
+                "it": "Thog"
             },
     
             "colors": ["gray"],
@@ -1457,7 +1455,7 @@
             "skills": { "0": "movement/intangible", "1": "miscellaneous/horror", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/thog-1_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image":"data/tiles/img/thog_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -1476,22 +1474,22 @@
                 }
             },
     
-            "image": "data/tiles/img/thog-1.png",
-            "imageHD": "data/tiles/img/thog-1_hd.png",
+            "image": "data/tiles/img/thog.png",
+            "imageHD": "data/tiles/img/thog_hd.png",
             "image_location": {"x":50, "y":50},
             "image_zoom": 100,
-            "model": "thog-1",
+            "model": "thog",
             "origins": ["king"],
     
-            "count": 1
+            "count": 2
         },
     
         {
             "id": "thog-2",
             "name": {
-                "fr": "",
-                "en": "Thog 2",
-                "it": "TODO_TRANSLATE"
+                "fr": "Thog",
+                "en": "Thog",
+                "it": "Thog"
             },
     
             "colors": ["gray"],
@@ -1501,9 +1499,7 @@
             "dices": { "0": "redreroll", "1": "redreroll", "2": "redreroll", "3": "none" },
             "skills": { "0": "attack/constriction", "1": "miscellaneous/horror", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image":"data/tiles/img/thog-2_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
-            ],
+            "tokens": [],
     
             "quote": {
                 "text": {
@@ -1521,14 +1517,14 @@
                 }
             },
     
-            "image": "data/tiles/img/thog-2.png",
-            "imageHD": "data/tiles/img/thog-2_hd.png",
+            "image": "data/tiles/img/thog.png",
+            "imageHD": "data/tiles/img/thog_hd.png",
             "image_location": {"x":50, "y":50},
             "image_zoom": 100,
-            "model": "thog-2",
+            "model": "thog",
             "origins": ["king"],
     
-            "count": 1
+            "count": 2
         },
     
         {
@@ -1546,7 +1542,9 @@
             "dices": { "0": "red", "1": "red", "2": "none", "3": "none" },
             "skills": { "0": "movement/leap", "1": "movement/feline_grace", "2": "none", "3": "none" },
             "reinforcement": "4",
-            "tokens": [],
+            "tokens": [
+                { "image":"data/tiles/img/conans-lion_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
     
             "quote": {
                 "text": {
@@ -1569,15 +1567,13 @@
             "image_location": {"x":50, "y":50},
             "image_zoom": 100,
             "model": "conans-lion",
-            "origins": ["king"],
-    
-            "count": 1
+            "origins": ["king"]
         },
     
         {
             "id": "zelatas-wolf",
             "name": {
-                "fr": "",
+                "fr": "Loup de Zelata",
                 "en": "Zelata’s Wolf",
                 "it": "TODO_TRANSLATE"
             },
@@ -1587,19 +1583,21 @@
             "defense": "2",
             "attacktype": "contact",
             "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
-            "skills": { "0": "defense/sacrifice", "1": "movement/leap", "2": "none", "3": "none" },
+            "skills": { "0": "movement/leap", "1": "defense/sacrifice", "2": "none", "3": "none" },
             "reinforcement": "4",
-            "tokens": [],
+            "tokens": [
+                { "image":"data/tiles/img/zelatas-wolf_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "A ce moment précis, une énorme chose velue jaillit à la vitesse de l'éclair, bondissant par-dessus le roi étendu à terre pour venir frapper le soldat en plein sur la poitrine. Le cri de triomphe se transforma en hurlement d'agonie. Conan se releva péniblement et vit que l'homme était mort, la gorge arrachée. Un grand loup gris se tenait au-dessus de lui, la tête penchée, reniflant le sang qui commençait à former une mare sur l'herbe.",
+                    "en": "The Nemedian croaked in triumph and sprang forward, lifting his great sword with both hands over his right shoulder, as he braced his legs wide for the stroke—and then, over the prostrate king, something huge and hairy shot like a thunderbolt full on the soldier's breast, and his yelp of triumph changed to a shriek of death. Conan, scrambling up, saw the man lying dead with his throat torn out, and a great gray wolf stood over him, head sunk as it smelt the blood that formed a pool on the grass.",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "L'Heure du Dragon",
+                    "en": "The Hour of the Dragon",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -1609,23 +1607,21 @@
     
             "image": "data/tiles/img/zelatas-wolf.png",
             "imageHD": "data/tiles/img/zelatas-wolf_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "zelatas-wolf",
-            "origins": ["king"],
-    
-            "count": 1
+            "image_location": {"x":67, "y":59},
+            "image_zoom": 115,
+            "model": "giant-wolves",
+            "origins": ["king"]
         },
     
         {
             "id": "mummies",
             "name": {
-                "fr": "",
+                "fr": "Momies",
                 "en": "Mummies",
                 "it": "TODO_TRANSLATE"
             },
     
-            "colors": ["gray"],
+            "colors": ["gray", "blue", "green", "orange", "purple"],
             "movement": "2",
             "defense": "2",
             "attacktype": "contact",
@@ -1636,13 +1632,13 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Dix des hommes de ce groupe étaient des prêtres et, bien qu'ils se soient débarrassés de leur masque, Conan savait qu'il s'agissait de ceux qu'il avait accompagnés jusqu'à la pyramide. Ils se tenaient autour d'un homme de grande taille et aux traits de rapace, à proximité d'un autel noir sur lequel était étendue une momie dans ses bandelettes en décomposition.",
+                    "en": "Of this group ten were priests, and though they had discarded their masks Conan knew they were the priests he had accompanied to the pyramid. They stood before a tall, hawk-faced man beside a black altar on which lay a mummy in rotting swathings.",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "The Hour of the Dragon",
+                    "en": "L'Heure du Dragon",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -1652,195 +1648,21 @@
     
             "image": "data/tiles/img/mummies.png",
             "imageHD": "data/tiles/img/mummies_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":58, "y":52},
+            "image_zoom": 83,
             "model": "mummies",
-            "origins": ["king"],
-    
-            "count": 1
-        },
-    
-        {
-            "id": "mummies-blue",
-            "name": {
-                "fr": "",
-                "en": "Mummies - Blue",
-                "it": "TODO_TRANSLATE"
-            },
-    
-            "colors": ["blue"],
-            "movement": "2",
-            "defense": "2",
-            "attacktype": "contact",
-            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
-            "skills": { "0": "miscellaneous/jinx", "1": "none", "2": "none", "3": "none" },
-            "reinforcement": "2",
-            "tokens": [],
-    
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
-            "image": "data/tiles/img/mummies-blue.png",
-            "imageHD": "data/tiles/img/mummies-blue_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "mummies-blue",
-            "origins": ["king"],
-    
-            "count": 1
-        },
-    
-        {
-            "id": "mummies-green",
-            "name": {
-                "fr": "",
-                "en": "Mummies - Green",
-                "it": "TODO_TRANSLATE"
-            },
-    
-            "colors": ["green"],
-            "movement": "2",
-            "defense": "2",
-            "attacktype": "contact",
-            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
-            "skills": { "0": "miscellaneous/jinx", "1": "none", "2": "none", "3": "none" },
-            "reinforcement": "2",
-            "tokens": [],
-    
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
-            "image": "data/tiles/img/mummies-green.png",
-            "imageHD": "data/tiles/img/mummies-green_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "mummies-green",
-            "origins": ["king"],
-    
-            "count": 1
-        },
-    
-        {
-            "id": "mummies-orange",
-            "name": {
-                "fr": "",
-                "en": "Mummies - Orange",
-                "it": "TODO_TRANSLATE"
-            },
-    
-            "colors": ["orange"],
-            "movement": "2",
-            "defense": "2",
-            "attacktype": "contact",
-            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
-            "skills": { "0": "miscellaneous/jinx", "1": "none", "2": "none", "3": "none" },
-            "reinforcement": "2",
-            "tokens": [],
-    
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
-            "image": "data/tiles/img/mummies-orange.png",
-            "imageHD": "data/tiles/img/mummies-orange_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "mummies-orange",
-            "origins": ["king"],
-    
-            "count": 1
-        },
-    
-        {
-            "id": "mummies-purple",
-            "name": {
-                "fr": "",
-                "en": "Mummies - Purple",
-                "it": "TODO_TRANSLATE"
-            },
-    
-            "colors": ["purple"],
-            "movement": "2",
-            "defense": "2",
-            "attacktype": "contact",
-            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
-            "skills": { "0": "miscellaneous/jinx", "1": "none", "2": "none", "3": "none" },
-            "reinforcement": "2",
-            "tokens": [],
-    
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
-            "image": "data/tiles/img/mummies-purple.png",
-            "imageHD": "data/tiles/img/mummies-purple_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "mummies-purple",
-            "origins": ["king"],
-    
-            "count": 1
+            "origins": ["king"]
         },
     
         {
             "id": "skeletons",
             "name": {
-                "fr": "",
+                "fr": "Squelettes",
                 "en": "Skeletons",
                 "it": "TODO_TRANSLATE"
             },
     
-            "colors": ["gray"],
+            "colors": ["gray", "orange", "blue", "green", "purple", "red"],
             "movement": "2",
             "defense": "1",
             "attacktype": "contact",
@@ -1851,13 +1673,13 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Dans un des coins de la cellule, près de la porte par laquelle ils étaient entrés, un amas de chaînes rouillées pendait d'un grand anneau de fer enchâssé dans la pierre. Un squelette était pris dans celles-ci. Conan le regarda avec une certaine curiosité, notant l'état des os, dont la plupart étaient fendus et brisés, et sur lesquels toute trace de chair avait disparu. Le crâne, qui s'était détaché des vertèbres, était écrasé, comme si on lui avait assené un coup sauvage avec une force titanesque.",
+                    "en": "In one corner of the dungeon, near the door through which they had entered, a cluster of rusty chains hung from a great iron ring set in the stone. In these chains a skeleton dangled. Conan glared at it with some curiosity, noticing the state of the bare bones, most of which were splintered and broken; the skull, which had fallen from the vertebrae, was crushed as if by some savage blow of tremendous force.",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "L'Heure du Dragon",
+                    "en": "The Hour of the Dragon",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -1867,235 +1689,18 @@
     
             "image": "data/tiles/img/skeletons.png",
             "imageHD": "data/tiles/img/skeletons_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":64, "y":50},
+            "image_zoom": 123,
             "model": "skeletons",
-            "origins": ["king"],
-    
-            "count": 1
-        },
-    
-        {
-            "id": "skeletons-green",
-            "name": {
-                "fr": "",
-                "en": "Skeletons - Green",
-                "it": "TODO_TRANSLATE"
-            },
-    
-            "colors": ["green"],
-            "movement": "2",
-            "defense": "1",
-            "attacktype": "contact",
-            "dices": { "0": "orangereroll", "1": "none", "2": "none", "3": "none" },
-            "skills": { "0": "defense/sacrifice", "1": "none", "2": "none", "3": "none" },
-            "reinforcement": "1",
-            "tokens": [],
-    
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
-            "image": "data/tiles/img/skeletons-green.png",
-            "imageHD": "data/tiles/img/skeletons-green_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "skeletons-green",
-            "origins": ["king"],
-    
-            "count": 1
-        },
-    
-        {
-            "id": "skeletons-blue",
-            "name": {
-                "fr": "",
-                "en": "Skeletons - Blue",
-                "it": "TODO_TRANSLATE"
-            },
-    
-            "colors": ["blue"],
-            "movement": "2",
-            "defense": "1",
-            "attacktype": "contact",
-            "dices": { "0": "orangereroll", "1": "none", "2": "none", "3": "none" },
-            "skills": { "0": "defense/sacrifice", "1": "none", "2": "none", "3": "none" },
-            "reinforcement": "1",
-            "tokens": [],
-    
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
-            "image": "data/tiles/img/skeletons-blue.png",
-            "imageHD": "data/tiles/img/skeletons-blue_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "skeletons-blue",
-            "origins": ["king"],
-    
-            "count": 1
-        },
-    
-        {
-            "id": "skeletons-orange",
-            "name": {
-                "fr": "",
-                "en": "Skeletons - Orange",
-                "it": "TODO_TRANSLATE"
-            },
-    
-            "colors": ["orange"],
-            "movement": "2",
-            "defense": "1",
-            "attacktype": "contact",
-            "dices": { "0": "orangereroll", "1": "none", "2": "none", "3": "none" },
-            "skills": { "0": "defense/sacrifice", "1": "none", "2": "none", "3": "none" },
-            "reinforcement": "1",
-            "tokens": [],
-    
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
-            "image": "data/tiles/img/skeletons-orange.png",
-            "imageHD": "data/tiles/img/skeletons-orange_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "skeletons-orange",
-            "origins": ["king"],
-    
-            "count": 1
-        },
-    
-        {
-            "id": "skeletons-purple",
-            "name": {
-                "fr": "",
-                "en": "Skeletons - Purple",
-                "it": "TODO_TRANSLATE"
-            },
-    
-            "colors": ["purple"],
-            "movement": "2",
-            "defense": "1",
-            "attacktype": "contact",
-            "dices": { "0": "orangereroll", "1": "none", "2": "none", "3": "none" },
-            "skills": { "0": "defense/sacrifice", "1": "none", "2": "none", "3": "none" },
-            "reinforcement": "1",
-            "tokens": [],
-    
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
-            "image": "data/tiles/img/skeletons-purple.png",
-            "imageHD": "data/tiles/img/skeletons-purple_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "skeletons-purple",
-            "origins": ["king"],
-    
-            "count": 1
-        },
-    
-        {
-            "id": "skeletons-red",
-            "name": {
-                "fr": "",
-                "en": "Skeletons - Red",
-                "it": "TODO_TRANSLATE"
-            },
-    
-            "colors": ["red"],
-            "movement": "2",
-            "defense": "1",
-            "attacktype": "contact",
-            "dices": { "0": "orangereroll", "1": "none", "2": "none", "3": "none" },
-            "skills": { "0": "defense/sacrifice", "1": "none", "2": "none", "3": "none" },
-            "reinforcement": "1",
-            "tokens": [],
-    
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
-            "image": "data/tiles/img/skeletons-red.png",
-            "imageHD": "data/tiles/img/skeletons-red_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "skeletons-red",
-            "origins": ["king"],
-    
-            "count": 1
+            "origins": ["king"]
         },
     
         {
             "id": "ageera",
             "name": {
-                "fr": "",
+                "fr": "Ageera",
                 "en": "Ageera",
-                "it": "TODO_TRANSLATE"
+                "it": "Ageera"
             },
     
             "colors": ["gray"],
@@ -2132,15 +1737,15 @@
             "model": "ageera",
             "origins": ["stretchgoal", "king"],
     
-            "count": 1
+            "count": 2
         },
     
         {
             "id": "akivasha",
             "name": {
-                "fr": "",
+                "fr": "Akivasha",
                 "en": "Akivasha",
-                "it": "TODO_TRANSLATE"
+                "it": "Akivasha"
             },
     
             "colors": ["gray"],
@@ -2177,15 +1782,15 @@
             "model": "akivasha",
             "origins": ["stretchgoal", "king"],
     
-            "count": 1
+            "count": 2
         },
     
         {
             "id": "constantius",
             "name": {
-                "fr": "",
+                "fr": "Constantius",
                 "en": "Constantius",
-                "it": "TODO_TRANSLATE"
+                "it": "Constantius"
             },
     
             "colors": ["gray"],
@@ -2222,15 +1827,15 @@
             "model": "constantius",
             "origins": ["stretchgoal", "king"],
     
-            "count": 1
+            "count": 2
         },
     
         {
             "id": "gitara",
             "name": {
-                "fr": "",
+                "fr": "Gitara",
                 "en": "Gitara",
-                "it": "TODO_TRANSLATE"
+                "it": "Gitara"
             },
     
             "colors": ["gray"],
@@ -2238,7 +1843,7 @@
             "defense": "1",
             "attacktype": "contact",
             "dices": { "0": "yellowreroll", "1": "yellowreroll", "2": "yellowreroll", "3": "none" },
-            "skills": { "0": "movement/feline_grace", "1": "defense/sacrifice", "2": "none", "3": "none" },
+            "skills": { "0": "defense/sacrifice", "1": "movement/feline_grace", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
                 { "image":"data/tiles/img/gitara_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
@@ -2267,13 +1872,13 @@
             "model": "gitara",
             "origins": ["stretchgoal", "king"],
     
-            "count": 1
+            "count": 2
         },
     
         {
             "id": "hyperborean-primitive",
             "name": {
-                "fr": "",
+                "fr": "Primitif Hyperboréen",
                 "en": "Hyperborean Primitive",
                 "it": "TODO_TRANSLATE"
             },
@@ -2312,15 +1917,15 @@
             "model": "hyperborean-primitive",
             "origins": ["stretchgoal", "king"],
     
-            "count": 1
+            "count": 2
         },
     
         {
             "id": "khemsa",
             "name": {
-                "fr": "",
+                "fr": "Khemsa",
                 "en": "Khemsa",
-                "it": "TODO_TRANSLATE"
+                "it": "Khemsa"
             },
     
             "colors": ["gray"],
@@ -2357,15 +1962,15 @@
             "model": "khemsa",
             "origins": ["stretchgoal", "king"],
     
-            "count": 1
+            "count": 2
         },
     
         {
             "id": "natohk",
             "name": {
-                "fr": "",
+                "fr": "Natohk",
                 "en": "Natohk",
-                "it": "TODO_TRANSLATE"
+                "it": "Natohk"
             },
     
             "colors": ["gray"],
@@ -2373,7 +1978,7 @@
             "defense": "2",
             "attacktype": "contact",
             "dices": { "0": "orange", "1": "yellow", "2": "none", "3": "none" },
-            "skills": { "0": "miscellaneous/concentration", "1": "magic/spell_caster", "2": "none", "3": "none" },
+            "skills": { "0": "magic/spell_caster", "1": "miscellaneous/concentration", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
                 { "image":"data/tiles/img/natohk_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
@@ -2402,13 +2007,13 @@
             "model": "natohk",
             "origins": ["stretchgoal", "king"],
     
-            "count": 1
+            "count": 2
         },
     
         {
             "id": "warlock",
             "name": {
-                "fr": "",
+                "fr": "Sorcier",
                 "en": "Warlock",
                 "it": "TODO_TRANSLATE"
             },
@@ -2447,15 +2052,15 @@
             "model": "warlock",
             "origins": ["stretchgoal", "king"],
     
-            "count": 1
+            "count": 2
         },
     
         {
             "id": "amboola",
             "name": {
-                "fr": "",
+                "fr": "Amboola",
                 "en": "Amboola",
-                "it": "TODO_TRANSLATE"
+                "it": "Amboola"
             },
     
             "colors": ["gray"],
@@ -2463,7 +2068,7 @@
             "defense": "3",
             "attacktype": "contact",
             "dices": { "0": "orangereroll", "1": "orangereroll", "2": "none", "3": "none" },
-            "skills": { "0": "attack/precision_strike", "1": "miscellaneous/support", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/support", "1": "attack/precision_strike", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
                 { "image":"data/tiles/img/amboola_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
@@ -2490,17 +2095,15 @@
             "image_location": {"x":50, "y":50},
             "image_zoom": 100,
             "model": "amboola",
-            "origins": ["stretchgoal", "king"],
-    
-            "count": 1
+            "origins": ["stretchgoal", "king"]
         },
     
         {
             "id": "balthus",
             "name": {
-                "fr": "",
+                "fr": "Balthus",
                 "en": "Balthus",
-                "it": "TODO_TRANSLATE"
+                "it": "Balthus"
             },
     
             "colors": ["gray"],
@@ -2508,7 +2111,7 @@
             "defense": "1",
             "attacktype": "ranged",
             "dices": { "0": "redreroll", "1": "orangereroll", "2": "none", "3": "none" },
-            "skills": { "0": "attack/elite_shooter", "1": "attack/precision_shot", "2": "none", "3": "none" },
+            "skills": { "0": "attack/precision_shot", "1": "attack/elite_shooter", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
                 { "image":"data/tiles/img/balthus_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
@@ -2535,17 +2138,15 @@
             "image_location": {"x":50, "y":50},
             "image_zoom": 100,
             "model": "balthus",
-            "origins": ["stretchgoal", "king"],
-    
-            "count": 1
+            "origins": ["stretchgoal", "king"]
         },
     
         {
-            "id": "bêlit",
+            "id": "belit",
             "name": {
-                "fr": "",
-                "en": "Bêlit",
-                "it": "TODO_TRANSLATE"
+                "fr": "Bêlit",
+                "en": "Bêlit",
+                "it": "Bêlit"
             },
     
             "colors": ["gray"],
@@ -2581,16 +2182,16 @@
             "image_zoom": 100,
             "model": "bêlit",
             "origins": ["stretchgoal", "king"],
-    
-            "count": 1
+            
+            "count": 2
         },
     
         {
             "id": "conan",
             "name": {
-                "fr": "",
+                "fr": "Conan",
                 "en": "Conan",
-                "it": "TODO_TRANSLATE"
+                "it": "Conan"
             },
     
             "colors": ["gray"],
@@ -2598,7 +2199,7 @@
             "defense": "3",
             "attacktype": "contact",
             "dices": { "0": "red", "1": "red", "2": "red", "3": "none" },
-            "skills": { "0": "attack/circular_strike", "1": "movement/wall_wrecker", "2": "none", "3": "none" },
+            "skills": { "0": "movement/wall_wrecker", "1": "attack/circular_strike", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
                 { "image":"data/tiles/img/conan_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
@@ -2627,15 +2228,15 @@
             "model": "conan",
             "origins": ["stretchgoal", "king"],
     
-            "count": 1
+            "count": 2
         },
     
         {
             "id": "hadrathus",
             "name": {
-                "fr": "",
+                "fr": "Hadrathus",
                 "en": "Hadrathus",
-                "it": "TODO_TRANSLATE"
+                "it": "Hadrathus"
             },
     
             "colors": ["gray"],
@@ -2643,7 +2244,7 @@
             "defense": "2",
             "attacktype": "ranged",
             "dices": { "0": "yellow", "1": "yellow", "2": "none", "3": "none" },
-            "skills": { "0": "miscellaneous/concentration", "1": "magic/spell_caster", "2": "none", "3": "none" },
+            "skills": { "0": "magic/spell_caster", "1": "miscellaneous/concentration", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
                 { "image":"data/tiles/img/hadrathus_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
@@ -2670,17 +2271,15 @@
             "image_location": {"x":50, "y":50},
             "image_zoom": 100,
             "model": "hadrathus",
-            "origins": ["stretchgoal", "king"],
-    
-            "count": 1
+            "origins": ["stretchgoal", "king"]
         },
     
         {
             "id": "kerim-shah",
             "name": {
-                "fr": "",
+                "fr": "Kerim Shah",
                 "en": "Kerim Shah",
-                "it": "TODO_TRANSLATE"
+                "it": "Kerim Shah"
             },
     
             "colors": ["gray"],
@@ -2715,17 +2314,15 @@
             "image_location": {"x":50, "y":50},
             "image_zoom": 100,
             "model": "kerim-shah",
-            "origins": ["stretchgoal", "king"],
-    
-            "count": 1
+            "origins": ["stretchgoal", "king"]
         },
     
         {
             "id": "ngora",
             "name": {
-                "fr": "",
+                "fr": "N'Gora",
                 "en": "N'Gora",
-                "it": "TODO_TRANSLATE"
+                "it": "N'Gora"
             },
     
             "colors": ["gray"],
@@ -2760,17 +2357,15 @@
             "image_location": {"x":50, "y":50},
             "image_zoom": 100,
             "model": "ngora",
-            "origins": ["stretchgoal", "king"],
-    
-            "count": 1
+            "origins": ["stretchgoal", "king"]
         },
     
         {
             "id": "olgerd-vladislav",
             "name": {
-                "fr": "",
+                "fr": "Olgerd Vladislav",
                 "en": "Olgerd Vladislav",
-                "it": "TODO_TRANSLATE"
+                "it": "Olgerd Vladislav"
             },
     
             "colors": ["gray"],
@@ -2778,7 +2373,7 @@
             "defense": "3",
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
-            "skills": { "0": "attack/circular_strike", "1": "movement/blocking", "2": "none", "3": "none" },
+            "skills": { "0": "movement/blocking", "1": "attack/circular_strike", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
                 { "image":"data/tiles/img/olgerd-vladislav_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
@@ -2805,17 +2400,15 @@
             "image_location": {"x":50, "y":50},
             "image_zoom": 100,
             "model": "olgerd-vladislav",
-            "origins": ["stretchgoal", "king"],
-    
-            "count": 1
+            "origins": ["stretchgoal", "king"]
         },
     
         {
             "id": "pallantides",
             "name": {
-                "fr": "",
+                "fr": "Pallantides",
                 "en": "Pallantides",
-                "it": "TODO_TRANSLATE"
+                "it": "Pallantides"
             },
     
             "colors": ["gray"],
@@ -2850,17 +2443,15 @@
             "image_location": {"x":50, "y":50},
             "image_zoom": 100,
             "model": "pallantides",
-            "origins": ["stretchgoal", "king"],
-    
-            "count": 1
+            "origins": ["stretchgoal", "king"]
         },
     
         {
             "id": "shevatas",
             "name": {
-                "fr": "",
+                "fr": "Shevatas",
                 "en": "Shevatas",
-                "it": "TODO_TRANSLATE"
+                "it": "Shevatas"
             },
     
             "colors": ["gray"],
@@ -2868,7 +2459,7 @@
             "defense": "2",
             "attacktype": "ranged",
             "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
-            "skills": { "0": "movement/evasive", "1": "defense/untouchable", "2": "none", "3": "none" },
+            "skills": { "0": "defense/untouchable", "1": "movement/evasive", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
                 { "image":"data/tiles/img/shevatas_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
@@ -2895,17 +2486,15 @@
             "image_location": {"x":50, "y":50},
             "image_zoom": 100,
             "model": "shevatas",
-            "origins": ["stretchgoal", "king"],
-    
-            "count": 1
+            "origins": ["stretchgoal", "king"]
         },
     
         {
             "id": "taurus",
             "name": {
-                "fr": "",
+                "fr": "Taurus",
                 "en": "Taurus",
-                "it": "TODO_TRANSLATE"
+                "it": "Taurus"
             },
     
             "colors": ["gray"],
@@ -2913,7 +2502,7 @@
             "defense": "2",
             "attacktype": "contact",
             "dices": { "0": "orangereroll", "1": "orange", "2": "none", "3": "none" },
-            "skills": { "0": "attack/precision_strike", "1": "movement/evasive", "2": "none", "3": "none" },
+            "skills": { "0": "movement/evasive", "1": "attack/precision_strike", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
                 { "image":"data/tiles/img/taurus_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
@@ -2948,9 +2537,9 @@
         {
             "id": "valeria",
             "name": {
-                "fr": "",
+                "fr": "Valeria",
                 "en": "Valeria",
-                "it": "TODO_TRANSLATE"
+                "it": "Valeria"
             },
     
             "colors": ["gray"],
@@ -2958,7 +2547,7 @@
             "defense": "2",
             "attacktype": "contact",
             "dices": { "0": "orangereroll", "1": "orangereroll", "2": "none", "3": "none" },
-            "skills": { "0": "attack/counterattack", "1": "movement/feline_grace", "2": "none", "3": "none" },
+            "skills": { "0": "movement/feline_grace", "1": "attack/counterattack", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
                 { "image":"data/tiles/img/valeria_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
@@ -2985,17 +2574,15 @@
             "image_location": {"x":50, "y":50},
             "image_zoom": 100,
             "model": "valeria",
-            "origins": ["stretchgoal", "king"],
-    
-            "count": 1
+            "origins": ["stretchgoal", "king"]
         },
     
         {
             "id": "zelata",
             "name": {
-                "fr": "",
+                "fr": "Zelata",
                 "en": "Zelata",
-                "it": "TODO_TRANSLATE"
+                "it": "Zelata"
             },
     
             "colors": ["gray"],
@@ -3030,15 +2617,13 @@
             "image_location": {"x":50, "y":50},
             "image_zoom": 100,
             "model": "zelata",
-            "origins": ["stretchgoal", "king"],
-    
-            "count": 1
+            "origins": ["stretchgoal", "king"]
         },
     
         {
             "id": "camel",
             "name": {
-                "fr": "",
+                "fr": "Chameau",
                 "en": "Camel",
                 "it": "TODO_TRANSLATE"
             },
@@ -3050,7 +2635,9 @@
             "dices": { "0": "yellow", "1": "none", "2": "none", "3": "none" },
             "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [],
+            "tokens": [
+                { "image":"data/tiles/img/camel_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
     
             "quote": {
                 "text": {
@@ -3073,15 +2660,13 @@
             "image_location": {"x":50, "y":50},
             "image_zoom": 100,
             "model": "camel",
-            "origins": ["stretchgoal", "king"],
-    
-            "count": 1
+            "origins": ["stretchgoal", "king"]
         },
     
         {
             "id": "kothian-archer",
             "name": {
-                "fr": "",
+                "fr": "Archer Kothien",
                 "en": "Kothian Archer",
                 "it": "TODO_TRANSLATE"
             },
@@ -3091,7 +2676,7 @@
             "defense": "2",
             "attacktype": "ranged",
             "dices": { "0": "red", "1": "none", "2": "none", "3": "none" },
-            "skills": { "0": "attack/elite_shooter", "1": "attack/precision_shot", "2": "none", "3": "none" },
+            "skills": { "0": "attack/precision_shot", "1": "attack/elite_shooter", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
                 { "image":"data/tiles/img/kothian-archer_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
@@ -3118,17 +2703,15 @@
             "image_location": {"x":50, "y":50},
             "image_zoom": 100,
             "model": "kothian-archer",
-            "origins": ["stretchgoal", "king"],
-    
-            "count": 1
+            "origins": ["stretchgoal", "king"]
         },
     
         {
             "id": "slasher",
             "name": {
-                "fr": "",
+                "fr": "Slasher",
                 "en": "Slasher",
-                "it": "TODO_TRANSLATE"
+                "it": "Slasher"
             },
     
             "colors": ["gray"],
@@ -3136,9 +2719,11 @@
             "defense": "3",
             "attacktype": "contact",
             "dices": { "0": "red", "1": "orange", "2": "none", "3": "none" },
-            "skills": { "0": "movement/evasive", "1": "defense/sacrifice", "2": "none", "3": "none" },
+            "skills": { "0": "defense/sacrifice", "1": "movement/evasive", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [],
+            "tokens": [
+                { "image":"data/tiles/img/slasher_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
     
             "quote": {
                 "text": {
@@ -3161,15 +2746,13 @@
             "image_location": {"x":50, "y":50},
             "image_zoom": 100,
             "model": "slasher",
-            "origins": ["stretchgoal", "king"],
-    
-            "count": 1
+            "origins": ["stretchgoal", "king"]
         },
     
         {
             "id": "bone-golem",
             "name": {
-                "fr": "",
+                "fr": "Golem d'Os",
                 "en": "Bone Golem",
                 "it": "TODO_TRANSLATE"
             },
@@ -3208,13 +2791,13 @@
             "model": "bone-golem",
             "origins": ["stretchgoal", "king"],
     
-            "count": 1
+            "count": 2
         },
     
         {
             "id": "forest-demon",
             "name": {
-                "fr": "",
+                "fr": "Démon de la Forêt",
                 "en": "Forest Demon",
                 "it": "TODO_TRANSLATE"
             },
@@ -3253,13 +2836,13 @@
             "model": "forest-demon",
             "origins": ["stretchgoal", "king"],
     
-            "count": 1
+            "count": 2
         },
     
         {
             "id": "giant-scorpion",
             "name": {
-                "fr": "",
+                "fr": "Scorpion Géant",
                 "en": "Giant Scorpion",
                 "it": "TODO_TRANSLATE"
             },
@@ -3298,13 +2881,13 @@
             "model": "giant-scorpion",
             "origins": ["stretchgoal", "king"],
     
-            "count": 1
+            "count": 2
         },
     
         {
             "id": "giant-spider",
             "name": {
-                "fr": "",
+                "fr": "Araignée Géante",
                 "en": "Giant Spider",
                 "it": "TODO_TRANSLATE"
             },
@@ -3343,13 +2926,13 @@
             "model": "giant-spider",
             "origins": ["stretchgoal", "king"],
     
-            "count": 1
+            "count": 2
         },
     
         {
             "id": "gray-man-ape",
             "name": {
-                "fr": "",
+                "fr": "Homme Singe",
                 "en": "Gray Man-Ape",
                 "it": "TODO_TRANSLATE"
             },
@@ -3388,13 +2971,13 @@
             "model": "gray-man-ape",
             "origins": ["stretchgoal", "king"],
     
-            "count": 1
+            "count": 2
         },
     
         {
             "id": "swamp-demon",
             "name": {
-                "fr": "",
+                "fr": "Démon des Marais",
                 "en": "Swamp Demon",
                 "it": "TODO_TRANSLATE"
             },
@@ -3404,7 +2987,7 @@
             "defense": "2",
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "redreroll", "2": "orangereroll", "3": "none" },
-            "skills": { "0": "miscellaneous/horror", "1": "miscellaneous/jinx", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/jinx", "1": "miscellaneous/horror", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
                 { "image":"data/tiles/img/swamp-demon_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
@@ -3433,15 +3016,15 @@
             "model": "swamp-demon",
             "origins": ["stretchgoal", "king"],
     
-            "count": 1
+            "count": 2
         },
     
         {
             "id": "thaug",
             "name": {
-                "fr": "",
+                "fr": "Thaug",
                 "en": "Thaug",
-                "it": "TODO_TRANSLATE"
+                "it": "Thaug"
             },
     
             "colors": ["gray"],
@@ -3478,18 +3061,18 @@
             "model": "thaug",
             "origins": ["stretchgoal", "king"],
     
-            "count": 1
+            "count": 2
         },
     
         {
             "id": "mummies-alt",
             "name": {
-                "fr": "",
-                "en": "Mummies - Alt",
+                "fr": "Momies",
+                "en": "Mummies",
                 "it": "TODO_TRANSLATE"
             },
     
-            "colors": ["gray"],
+            "colors": ["gray", "blue"],
             "movement": "2",
             "defense": "3",
             "attacktype": "contact",
@@ -3500,13 +3083,13 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Dix des hommes de ce groupe étaient des prêtres et, bien qu'ils se soient débarrassés de leur masque, Conan savait qu'il s'agissait de ceux qu'il avait accompagnés jusqu'à la pyramide. Ils se tenaient autour d'un homme de grande taille et aux traits de rapace, à proximité d'un autel noir sur lequel était étendue une momie dans ses bandelettes en décomposition.",
+                    "en": "Of this group ten were priests, and though they had discarded their masks Conan knew they were the priests he had accompanied to the pyramid. They stood before a tall, hawk-faced man beside a black altar on which lay a mummy in rotting swathings.",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "The Hour of the Dragon",
+                    "en": "L'Heure du Dragon",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -3514,68 +3097,23 @@
                 }
             },
     
-            "image": "data/tiles/img/mummies-alt.png",
-            "imageHD": "data/tiles/img/mummies-alt_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "mummies-alt",
-            "origins": ["stretchgoal", "king"],
-    
-            "count": 1
-        },
-    
-        {
-            "id": "mummies-blue-alt",
-            "name": {
-                "fr": "",
-                "en": "Mummies - Blue Alt",
-                "it": "TODO_TRANSLATE"
-            },
-    
-            "colors": ["blue"],
-            "movement": "2",
-            "defense": "3",
-            "attacktype": "contact",
-            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
-            "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
-            "reinforcement": "2",
-            "tokens": [],
-    
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
-            "image": "data/tiles/img/mummies-blue-alt.png",
-            "imageHD": "data/tiles/img/mummies-blue-alt_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "mummies-blue-alt",
-            "origins": ["stretchgoal", "king"],
-    
-            "count": 1
+            "image": "data/tiles/img/mummies.png",
+            "imageHD": "data/tiles/img/mummies_hd.png",
+            "image_location": {"x":58, "y":52},
+            "image_zoom": 83,
+            "model": "mummies",
+            "origins": ["stretchgoal", "king"]
         },
     
         {
             "id": "pict-archers",
             "name": {
-                "fr": "",
+                "fr": "Archers Pictes",
                 "en": "Pict Archers",
                 "it": "TODO_TRANSLATE"
             },
     
-            "colors": ["gray"],
+            "colors": ["gray", "orange"],
             "movement": "2",
             "defense": "1",
             "attacktype": "ranged",
@@ -3605,58 +3143,13 @@
             "image_location": {"x":50, "y":50},
             "image_zoom": 100,
             "model": "pict-archers",
-            "origins": ["stretchgoal", "king"],
-    
-            "count": 1
-        },
-    
-        {
-            "id": "pict-archers-orange",
-            "name": {
-                "fr": "",
-                "en": "Pict Archers - Orange",
-                "it": "TODO_TRANSLATE"
-            },
-    
-            "colors": ["orange"],
-            "movement": "2",
-            "defense": "1",
-            "attacktype": "ranged",
-            "dices": { "0": "yellowreroll", "1": "yellow", "2": "none", "3": "none" },
-            "skills": { "0": "movement/leap", "1": "defense/untouchable", "2": "none", "3": "none" },
-            "reinforcement": "2",
-            "tokens": [],
-    
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
-            "image": "data/tiles/img/pict-archers-orange.png",
-            "imageHD": "data/tiles/img/pict-archers-orange_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "pict-archers-orange",
-            "origins": ["stretchgoal", "king"],
-    
-            "count": 1
+            "origins": ["stretchgoal", "king"]
         },
     
         {
             "id": "pict-warriors",
             "name": {
-                "fr": "",
+                "fr": "Guerriers Pictes",
                 "en": "Pict Warriors",
                 "it": "TODO_TRANSLATE"
             },
@@ -3666,7 +3159,7 @@
             "defense": "2",
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "none", "2": "none", "3": "none" },
-            "skills": { "0": "movement/blocking", "1": "movement/leap", "2": "none", "3": "none" },
+            "skills": { "0": "movement/leap", "1": "movement/blocking", "2": "none", "3": "none" },
             "reinforcement": "2",
             "tokens": [],
     
@@ -3691,20 +3184,18 @@
             "image_location": {"x":50, "y":50},
             "image_zoom": 100,
             "model": "pict-warriors",
-            "origins": ["stretchgoal", "king"],
-    
-            "count": 1
+            "origins": ["stretchgoal", "king"]
         },
     
         {
             "id": "pirates-alt",
             "name": {
-                "fr": "",
-                "en": "Pirates - Alt",
+                "fr": "Pirates",
+                "en": "Pirates",
                 "it": "TODO_TRANSLATE"
             },
     
-            "colors": ["gray"],
+            "colors": ["gray", "orange"],
             "movement": "2",
             "defense": "2",
             "attacktype": "contact",
@@ -3734,63 +3225,18 @@
             "image_location": {"x":50, "y":50},
             "image_zoom": 100,
             "model": "pirates-alt",
-            "origins": ["stretchgoal", "king"],
-    
-            "count": 1
-        },
-    
-        {
-            "id": "pirates-orange-alt",
-            "name": {
-                "fr": "",
-                "en": "Pirates - Orange Alt",
-                "it": "TODO_TRANSLATE"
-            },
-    
-            "colors": ["orange"],
-            "movement": "2",
-            "defense": "2",
-            "attacktype": "contact",
-            "dices": { "0": "yellow", "1": "yellow", "2": "none", "3": "none" },
-            "skills": { "0": "movement/leap", "1": "defense/untouchable", "2": "none", "3": "none" },
-            "reinforcement": "1",
-            "tokens": [],
-    
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
-            "image": "data/tiles/img/pirates-orange-alt.png",
-            "imageHD": "data/tiles/img/pirates-orange-alt_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "pirates-orange-alt",
-            "origins": ["stretchgoal", "king"],
-    
-            "count": 1
+            "origins": ["stretchgoal", "king"]
         },
     
         {
             "id": "skeletons-alt",
             "name": {
-                "fr": "",
-                "en": "Skeletons - Alt",
+                "fr": "Squelettes",
+                "en": "Skeletons",
                 "it": "TODO_TRANSLATE"
             },
     
-            "colors": ["gray"],
+            "colors": ["gray", "red"],
             "movement": "2",
             "defense": "0",
             "attacktype": "contact",
@@ -3801,13 +3247,13 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Dans un des coins de la cellule, près de la porte par laquelle ils étaient entrés, un amas de chaînes rouillées pendait d'un grand anneau de fer enchâssé dans la pierre. Un squelette était pris dans celles-ci. Conan le regarda avec une certaine curiosité, notant l'état des os, dont la plupart étaient fendus et brisés, et sur lesquels toute trace de chair avait disparu. Le crâne, qui s'était détaché des vertèbres, était écrasé, comme si on lui avait assené un coup sauvage avec une force titanesque.",
+                    "en": "In one corner of the dungeon, near the door through which they had entered, a cluster of rusty chains hung from a great iron ring set in the stone. In these chains a skeleton dangled. Conan glared at it with some curiosity, noticing the state of the bare bones, most of which were splintered and broken; the skull, which had fallen from the vertebrae, was crushed as if by some savage blow of tremendous force.",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "L'Heure du Dragon",
+                    "en": "The Hour of the Dragon",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -3815,73 +3261,28 @@
                 }
             },
     
-            "image": "data/tiles/img/skeletons-alt.png",
-            "imageHD": "data/tiles/img/skeletons-alt_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "skeletons-alt",
-            "origins": ["stretchgoal", "king"],
-    
-            "count": 1
-        },
-    
-        {
-            "id": "skeletons-red-alt",
-            "name": {
-                "fr": "",
-                "en": "Skeletons - Red Alt",
-                "it": "TODO_TRANSLATE"
-            },
-    
-            "colors": ["red"],
-            "movement": "2",
-            "defense": "0",
-            "attacktype": "contact",
-            "dices": { "0": "orange", "1": "none", "2": "none", "3": "none" },
-            "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
-            "reinforcement": "1",
-            "tokens": [],
-    
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
-            "image": "data/tiles/img/skeletons-red-alt.png",
-            "imageHD": "data/tiles/img/skeletons-red-alt_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "skeletons-red-alt",
-            "origins": ["stretchgoal", "king"],
-    
-            "count": 1
+            "image": "data/tiles/img/skeletons.png",
+            "imageHD": "data/tiles/img/skeletons_hd.png",
+            "image_location": {"x":64, "y":50},
+            "image_zoom": 123,
+            "model": "skeletons",
+            "origins": ["stretchgoal", "king"]
         },
     
         {
             "id": "tentacles",
             "name": {
-                "fr": "",
+                "fr": "Tentacules",
                 "en": "Tentacles",
                 "it": "TODO_TRANSLATE"
             },
     
-            "colors": ["gray"],
+            "colors": ["gray", "bleu", "orange", "red"],
             "movement": "0",
             "defense": "2",
             "attacktype": "contact",
             "dices": { "0": "orangereroll", "1": "orange", "2": "none", "3": "none" },
-            "skills": { "0": "attack/reach", "1": "attack/constriction", "2": "none", "3": "none" },
+            "skills": { "0": "attack/constriction", "1": "attack/reach", "2": "none", "3": "none" },
             "reinforcement": "2",
             "tokens": [],
     
@@ -3906,138 +3307,7 @@
             "image_location": {"x":50, "y":50},
             "image_zoom": 100,
             "model": "tentacles",
-            "origins": ["stretchgoal", "king"],
-    
-            "count": 1
-        },
-    
-        {
-            "id": "tentacles-blue",
-            "name": {
-                "fr": "",
-                "en": "Tentacles - Blue",
-                "it": "TODO_TRANSLATE"
-            },
-    
-            "colors": ["blue"],
-            "movement": "0",
-            "defense": "2",
-            "attacktype": "contact",
-            "dices": { "0": "orangereroll", "1": "orange", "2": "none", "3": "none" },
-            "skills": { "0": "attack/reach", "1": "attack/constriction", "2": "none", "3": "none" },
-            "reinforcement": "2",
-            "tokens": [],
-    
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
-            "image": "data/tiles/img/tentacles-blue.png",
-            "imageHD": "data/tiles/img/tentacles-blue_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "tentacles-blue",
-            "origins": ["stretchgoal", "king"],
-    
-            "count": 1
-        },
-    
-        {
-            "id": "tentacles-orange",
-            "name": {
-                "fr": "",
-                "en": "Tentacles - Orange",
-                "it": "TODO_TRANSLATE"
-            },
-    
-            "colors": ["orange"],
-            "movement": "0",
-            "defense": "2",
-            "attacktype": "contact",
-            "dices": { "0": "orangereroll", "1": "orange", "2": "none", "3": "none" },
-            "skills": { "0": "attack/reach", "1": "attack/constriction", "2": "none", "3": "none" },
-            "reinforcement": "2",
-            "tokens": [],
-    
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
-            "image": "data/tiles/img/tentacles-orange.png",
-            "imageHD": "data/tiles/img/tentacles-orange_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "tentacles-orange",
-            "origins": ["stretchgoal", "king"],
-    
-            "count": 1
-        },
-    
-        {
-            "id": "tentacles-red",
-            "name": {
-                "fr": "",
-                "en": "Tentacles - Red",
-                "it": "TODO_TRANSLATE"
-            },
-    
-            "colors": ["red"],
-            "movement": "0",
-            "defense": "2",
-            "attacktype": "contact",
-            "dices": { "0": "orangereroll", "1": "orange", "2": "none", "3": "none" },
-            "skills": { "0": "attack/reach", "1": "attack/constriction", "2": "none", "3": "none" },
-            "reinforcement": "2",
-            "tokens": [],
-    
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
-            "image": "data/tiles/img/tentacles-red.png",
-            "imageHD": "data/tiles/img/tentacles-red_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "tentacles-red",
-            "origins": ["stretchgoal", "king"],
-    
-            "count": 1
+            "origins": ["stretchgoal", "king"]
         },
     
         {
@@ -4479,7 +3749,7 @@
         {
             "id": "giant-wolves",
             "name": {
-                "fr": "",
+                "fr": "Loups Géants",
                 "en": "Giant Wolves",
                 "it": "TODO_TRANSLATE"
             },
@@ -4489,19 +3759,19 @@
             "defense": "1",
             "attacktype": "contact",
             "dices": { "0": "red", "1": "none", "2": "none", "3": "none" },
-            "skills": { "0": "movement/evasive", "1": "movement/leap", "2": "none", "3": "none" },
+            "skills": { "0": "movement/leap", "1": "movement/evasive", "2": "none", "3": "none" },
             "reinforcement": "2",
             "tokens": [],
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "A ce moment précis, une énorme chose velue jaillit à la vitesse de l'éclair, bondissant par-dessus le roi étendu à terre pour venir frapper le soldat en plein sur la poitrine. Le cri de triomphe se transforma en hurlement d'agonie. Conan se releva péniblement et vit que l'homme était mort, la gorge arrachée. Un grand loup gris se tenait au-dessus de lui, la tête penchée, reniflant le sang qui commençait à former une mare sur l'herbe.",
+                    "en": "The Nemedian croaked in triumph and sprang forward, lifting his great sword with both hands over his right shoulder, as he braced his legs wide for the stroke—and then, over the prostrate king, something huge and hairy shot like a thunderbolt full on the soldier's breast, and his yelp of triumph changed to a shriek of death. Conan, scrambling up, saw the man lying dead with his throat torn out, and a great gray wolf stood over him, head sunk as it smelt the blood that formed a pool on the grass.",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "L'Heure du Dragon",
+                    "en": "The Hour of the Dragon",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -4511,12 +3781,12 @@
     
             "image": "data/tiles/img/giant-wolves.png",
             "imageHD": "data/tiles/img/giant-wolves_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":52, "y":60},
+            "image_zoom": 107,
             "model": "giant-wolves",
             "origins": ["giantwolves"],
     
-            "count": 1
+            "count": 3
         },
     
         {
@@ -4837,9 +4107,9 @@
         {
             "id": "atali",
             "name": {
-                "fr": "",
+                "fr": "Atali",
                 "en": "Atali",
-                "it": "TODO_TRANSLATE"
+                "it": "Atali"
             },
     
             "colors": ["gray"],
@@ -4850,7 +4120,8 @@
             "skills": { "0": "magic/spell_caster", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/atali_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image":"data/tiles/img/atali_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 },
+                { "image":"data/tiles/img/atali_special_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -4876,7 +4147,7 @@
             "model": "atali",
             "origins": ["nordheim"],
     
-            "count": 1
+            "count": 3
         },
     
         {
@@ -4894,9 +4165,7 @@
             "dices": { "0": "yellow", "1": "none", "2": "none", "3": "none" },
             "skills": { "0": "magic/spell_caster", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image":"data/tiles/img/yazdigerd_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
-            ],
+            "tokens": [],
     
             "image": "data/tiles/img/skuthus.png",
             "imageHD": "data/tiles/img/skuthus_hd.png",
@@ -4905,15 +4174,15 @@
             "model": "skuthus",
             "origins": ["nordheim"],
     
-            "count": 1
+            "count": 2
         },
     
         {
             "id": "nijgor",
             "name": {
-                "fr": "",
+                "fr": "Nijgor",
                 "en": "Nijgor",
-                "it": "TODO_TRANSLATE"
+                "it": "Nijgor"
             },
     
             "colors": ["gray"],
@@ -4924,6 +4193,7 @@
             "skills": { "0": "miscellaneous/horror", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
+                { "image":"data/tiles/img/nijgor_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 },
                 { "image":"data/tiles/img/nijgor_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
@@ -4950,15 +4220,15 @@
             "model": "nijgor",
             "origins": ["nordheim"],
     
-            "count": 1
+            "count": 2
         },
     
         {
             "id": "seski",
             "name": {
-                "fr": "",
+                "fr": "Seski",
                 "en": "Seski",
-                "it": "TODO_TRANSLATE"
+                "it": "Seski"
             },
     
             "colors": ["gray"],
@@ -4969,6 +4239,7 @@
             "skills": { "0": "miscellaneous/horror", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
+                { "image":"data/tiles/img/seski_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 },
                 { "image":"data/tiles/img/seski_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
@@ -4995,7 +4266,7 @@
             "model": "seski",
             "origins": ["nordheim"],
     
-            "count": 1
+            "count": 2
         },
     
         {
@@ -5126,7 +4397,7 @@
         {
             "id": "vanir-primitives",
             "name": {
-                "fr": "",
+                "fr": "Vanirs Primitifs",
                 "en": "Vanir Primitives",
                 "it": "TODO_TRANSLATE"
             },
@@ -5158,8 +4429,8 @@
     
             "image": "data/tiles/img/vanir-primitives.png",
             "imageHD": "data/tiles/img/vanir-primitives_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":68, "y":49},
+            "image_zoom": 111,
             "model": "pict-hunters",
             "origins": ["nordheim"]
         },
@@ -5167,7 +4438,7 @@
         {
             "id": "crows",
             "name": {
-                "fr": "",
+                "fr": "Corbeaux",
                 "en": "Crows",
                 "it": "TODO_TRANSLATE"
             },
@@ -5208,7 +4479,7 @@
         {
             "id": "crows-red",
             "name": {
-                "fr": "",
+                "fr": "Corbeaux",
                 "en": "Crows",
                 "it": "TODO_TRANSLATE"
             },
@@ -5249,7 +4520,7 @@
         {
             "id": "wolves",
             "name": {
-                "fr": "",
+                "fr": "Loups",
                 "en": "Wolves",
                 "it": "TODO_TRANSLATE"
             },
@@ -5259,19 +4530,19 @@
             "defense": "0",
             "attacktype": "contact",
             "dices": { "0": "orange", "1": "none", "2": "none", "3": "none" },
-            "skills": { "0": "movement/evasive", "1": "movement/leap", "2": "none", "3": "none" },
+            "skills": { "0": "movement/leap", "1": "movement/evasive", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "A ce moment précis, une énorme chose velue jaillit à la vitesse de l'éclair, bondissant par-dessus le roi étendu à terre pour venir frapper le soldat en plein sur la poitrine. Le cri de triomphe se transforma en hurlement d'agonie. Conan se releva péniblement et vit que l'homme était mort, la gorge arrachée. Un grand loup gris se tenait au-dessus de lui, la tête penchée, reniflant le sang qui commençait à former une mare sur l'herbe.",
+                    "en": "The Nemedian croaked in triumph and sprang forward, lifting his great sword with both hands over his right shoulder, as he braced his legs wide for the stroke—and then, over the prostrate king, something huge and hairy shot like a thunderbolt full on the soldier's breast, and his yelp of triumph changed to a shriek of death. Conan, scrambling up, saw the man lying dead with his throat torn out, and a great gray wolf stood over him, head sunk as it smelt the blood that formed a pool on the grass.",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "L'Heure du Dragon",
+                    "en": "The Hour of the Dragon",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -5281,9 +4552,9 @@
     
             "image": "data/tiles/img/wolves.png",
             "imageHD": "data/tiles/img/wolves_hd.png",
-            "image_location": {"x":50, "y":50},
+            "image_location": {"x":75, "y":57},
             "image_zoom": 100,
-            "model": "wolves",
+            "model": "giant-wolves",
             "origins": ["nordheim"],
     
             "count": 1
