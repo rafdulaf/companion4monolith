@@ -933,7 +933,7 @@
                 "it": "TODO_TRANSLATE"
             },
     
-            "colors": ["gray"],
+            "colors": ["gray", "blue", "green", "orange", "red"],
             "movement": "2",
             "defense": "1",
             "attacktype": "contact",
@@ -963,221 +963,6 @@
             "image_location": {"x":68, "y":49},
             "image_zoom": 111,
             "model": "pict-hunters",
-            "origins": ["corebox", "stretchgoal", "king"],
-    
-            "count": 1
-        },
-    
-        {
-            "id": "pict-hunters-blue",
-            "name": {
-                "fr": "",
-                "en": "Pict Hunters",
-                "it": "TODO_TRANSLATE"
-            },
-    
-            "colors": ["blue"],
-            "movement": "2",
-            "defense": "1",
-            "attacktype": "contact",
-            "dices": { "0": "yellowreroll", "1": "yellowreroll", "2": "none", "3": "none" },
-            "skills": { "0": "movement/leap", "1": "none", "2": "none", "3": "none" },
-            "reinforcement": "1",
-            "tokens": [],
-    
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
-            "image": "data/tiles/img/pict-hunters.png",
-            "imageHD": "data/tiles/img/pict-hunters_hd.png",
-            "image_location": {"x":68, "y":49},
-            "image_zoom": 111,
-            "model": "pict-hunters",
-            "origins": ["corebox", "stretchgoal", "king"],
-    
-            "count": 1
-        },
-    
-        {
-            "id": "pict-hunters-green",
-            "name": {
-                "fr": "",
-                "en": "Pict Hunters",
-                "it": "TODO_TRANSLATE"
-            },
-    
-            "colors": ["green"],
-            "movement": "2",
-            "defense": "1",
-            "attacktype": "contact",
-            "dices": { "0": "yellowreroll", "1": "yellowreroll", "2": "none", "3": "none" },
-            "skills": { "0": "movement/leap", "1": "none", "2": "none", "3": "none" },
-            "reinforcement": "1",
-            "tokens": [],
-    
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
-            "image": "data/tiles/img/pict-hunters.png",
-            "imageHD": "data/tiles/img/pict-hunters_hd.png",
-            "image_location": {"x":68, "y":49},
-            "image_zoom": 111,
-            "model": "pict-hunters",
-            "origins": ["corebox", "stretchgoal", "king"],
-    
-            "count": 1
-        },
-    
-        {
-            "id": "pict-hunters-orange",
-            "name": {
-                "fr": "",
-                "en": "Pict Hunters",
-                "it": "TODO_TRANSLATE"
-            },
-    
-            "colors": ["orange"],
-            "movement": "2",
-            "defense": "1",
-            "attacktype": "contact",
-            "dices": { "0": "yellowreroll", "1": "yellowreroll", "2": "none", "3": "none" },
-            "skills": { "0": "movement/leap", "1": "none", "2": "none", "3": "none" },
-            "reinforcement": "1",
-            "tokens": [],
-    
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
-            "image": "data/tiles/img/pict-hunters.png",
-            "imageHD": "data/tiles/img/pict-hunters_hd.png",
-            "image_location": {"x":68, "y":49},
-            "image_zoom": 111,
-            "model": "pict-hunters",
-            "origins": ["corebox", "stretchgoal", "king"],
-    
-            "count": 1
-        },
-    
-        {
-            "id": "pict-hunters-red",
-            "name": {
-                "fr": "",
-                "en": "Pict Hunters",
-                "it": "TODO_TRANSLATE"
-            },
-    
-            "colors": ["red"],
-            "movement": "2",
-            "defense": "1",
-            "attacktype": "contact",
-            "dices": { "0": "yellowreroll", "1": "yellowreroll", "2": "none", "3": "none" },
-            "skills": { "0": "movement/leap", "1": "none", "2": "none", "3": "none" },
-            "reinforcement": "1",
-            "tokens": [],
-    
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
-            "image": "data/tiles/img/pict-hunters.png",
-            "imageHD": "data/tiles/img/pict-hunters_hd.png",
-            "image_location": {"x":68, "y":49},
-            "image_zoom": 111,
-            "model": "pict-hunters",
-            "origins": ["corebox", "stretchgoal", "king"],
-    
-            "count": 1
-        },
-    
-        {
-            "id": "pict-warriors-purple",
-            "name": {
-                "fr": "Guerriers Pictes",
-                "en": "Pict Warriors",
-                "it": "TODO_TRANSLATE"
-            },
-    
-            "colors": ["purple"],
-            "movement": "2",
-            "defense": "2",
-            "attacktype": "contact",
-            "dices": { "0": "redreroll", "1": "none", "2": "none", "3": "none" },
-            "skills": { "0": "movement/leap", "1": "movement/blocking", "2": "none", "3": "none" },
-            "reinforcement": "2",
-            "tokens": [],
-    
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
-            "image": "data/tiles/img/pict-warriors-purple.png",
-            "imageHD": "data/tiles/img/pict-warriors-purple_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "pict-warriors-purple",
             "origins": ["corebox", "stretchgoal", "king"]
         },
     
@@ -1761,13 +1546,13 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Une jeune fille se tenait à l'entrée d'un tunnel étroit, les yeux rivés sur lui. Sa peau d'ivoire indiquait qu'elle appartenait à quelque ancienne famille de l'aristocratie stygienne. Comme toutes les femmes de sa caste, elle était grande, souple, avec un corps voluptueux. Ses cheveux tombaient en cascade sur ses épaules ; un rubis étincelait dans ses mèches noires. A' l'exception de ses sandales violettes et de la ceinture, large et incrustée de joyaux, qui enserrait sa taille, elle était totalement nue.",
+                    "en": "Her ivory skin showed her to be Stygian of some ancient noble family, and like all such women she was tall, lithe, voluptuously figured, her hair a great pile of black foam, among which gleamed a sparkling ruby. But for her velvet sandals and broad jewel-crusted girdle about her supple waist she was quite nude.",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "L'Heure du Dragon",
+                    "en": "The Hour of the Dragon",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -1777,8 +1562,8 @@
     
             "image": "data/tiles/img/akivasha.png",
             "imageHD": "data/tiles/img/akivasha_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":66, "y":57},
+            "image_zoom": 67,
             "model": "akivasha",
             "origins": ["stretchgoal", "king"],
     
@@ -1806,14 +1591,14 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
+                    "fr": "Constantius, que l'on surnommait \"le Faucon\", était un homme de grande taille, aux épaules larges et à la taille fine, aussi souple et résistant qu'une lame d'acier flexible. C'était un bel homme dans son genre, avec ses traits de rapace impitoyable. Son visage était tanné par le soleil et ses cheveux, implantés très en arrière de son front haut et étroit, étaient d'un noir corbeau. Ses yeux sombres étaient pénétrants et vifs, et sa fine moustache noire ne parvenait pas à adoucir l'expression dure de ses lèvres fines. Ses bottes en cuir de Kordava, son pantalon et son pourpoint, de soie noire ordinaire, étaient ternis par l'usure liée à la vie dans un campement et par les taches de rouille dues à son armure.",
+                    "en": "Constantius, whom men called Falcon, was tall, broad-shouldered, slim-waisted, lithe and strong as pliant steel. He was handsome in an aquiline, ruthless way. His face was burnt dark by the sun, and his hair, which grew far back from his high, narrow forehead, was black as a raven. His dark eyes were penetrating and alert, the hardness of his thin lips not softened by his thin black mustache. His boots were of Kordavan leather, his hose and doublet of plain, dark silk, tarnished with the wear of the camps and the stains of armor rust.",
+                    "it": "Constantius, che gli uomini chiamavano Falco, era alto, con le spalle ampie e i fianchi snelli, agile e forte come l'acciaio. Aveva una sua bellezza grifagna e spietata. Il volto era brunito dal sole, e i capelli, ributtati all'indietro dalla fronte stretta ed alta, erano neri come l'ala d'un corvo. Gli occhi scuri erano penetranti e vigili, e la durezza delle labbra sottili era accentuata dai radi baffi neri. Gli stivali erano di cuoio kordavano, le calze e il farsetto di semplice seta scura, sciupati dall'usura degli accampamenti e dalla ruggine dell'armatura."
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
+                    "fr": "Une Sorcière viendra au monde",
+                    "en": "A Witch shall be born",
+                    "it": "Nascerà una strega"
                 },
                 "author": {
                     "name": "Robert E. Howard"
@@ -1822,8 +1607,8 @@
     
             "image": "data/tiles/img/constantius.png",
             "imageHD": "data/tiles/img/constantius_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":62, "y":58},
+            "image_zoom": 112,
             "model": "constantius",
             "origins": ["stretchgoal", "king"],
     
@@ -2076,14 +1861,14 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
+                    "fr": "Amboola se réveilla lentement, ses sens encore engourdis par le vin qu'il avait bu la nuit précédente. L'espace d'un moment confus, il lui fut impossible de se rappeler où il se trouvait. La clarté lunaire, filtrant entre les barreaux de la fenêtre, illuminait un décor qui lui était inconnu. Puis il se souvint qu'il gisait dans un des cachots des étages supérieurs de la prison où la reine Tanada, la soeur du roi de Kush, l'avait fait jeter dans son courroux. Ce n'était cependant pas un cachot ordinaire, car même Tanada n'avait osé aller trop loin avec le commandant des lanciers noirs, épine dorsale de l'armée de Kush.",
+                    "en": "Amboola awakened slowly, his senses still sluggish from the wine he had guzzled the night before. For a muddled moment he could not remember where he was; the moonlight, streaming, through the barred window, shone on unfamiliar surroundings. Then he remembered that he was lying in the upper cell of the prison where the anger of Tananda, sister to the king of Kush, had consigned him. It was no ordinary cell, for even Tananda had not dared to go too far in her punishment of the commander of the black spearmen which were the strength of Kush's army.",
+                    "it": "Amboola del Kush si destò lentamente, con i sensi ancora appannati dal vino che aveva bevuto nel festino della notte precedente. Per un attimo non riuscì a ricordare dove si trovasse. Il chiaro di luna che penetrava dalla finestrella con le sbarre, posta in alto nella parete, gli mostrava un ambiente poco familiare. Poi ricordò che si trovava nella cella della prigione in cui la regina Tananda lo aveva gettato. Anche Tananda doveva pensarci due volte sopra, prima di uccidere il comandante dei Lancieri Neri, spina dorsale dell'esercito kushita ed eroe per le caste più basse del regno."
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
+                    "fr": "Histoire inachevée, sans titre",
+                    "en": "Unfinished story",
+                    "it": "Il muso nel buio"
                 },
                 "author": {
                     "name": "Robert E. Howard"
@@ -2092,8 +1877,8 @@
     
             "image": "data/tiles/img/amboola.png",
             "imageHD": "data/tiles/img/amboola_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":58, "y":55},
+            "image_zoom": 58,
             "model": "amboola",
             "origins": ["stretchgoal", "king"]
         },
@@ -2119,14 +1904,14 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
+                    "fr": "C'était un jeune homme de taille moyenne et aux traits avenants ; ni toque, ni casque ne venait confiner sa tignasse de cheveux fauves en bataille. Ses vêtements étaient tout ce qu'il y a de plus normal pour la région : une tunique grossière resserrée à la taille par une ceinture, un court pantalon de cuir et des bottes souples en daim qui lui arrivaient juste au-dessous des genoux. La poignée d'une dague saillait du revers d'une de ses bottes. Une épée, courte et massive, et une besace en peau de daim pendaient à sa large ceinture de cuir. Bien qu'il ne soit pas très grand, l'homme était bien bâti et ses bras, que les courtes manches de sa tunique laissaient dénudés, étaient musclés et noueux.",
+                    "en": "He was a young man of medium height, with an open countenance and a mop of tousled tawny hair unconfined by cap or helmet. His garb was common enough for that country – a coarse tunic, belted at the waist, short leather breeches beneath, and soft buckskin boots that came short of the knee. A knife-hilt jutted from one boot-top. The broad leather belt supported a short, heavy sword and a buckskin pouch. There was no perturbation in the wide eyes that scanned the green walls which fringed the trail. Though not tall, he was well built, and the arms that the short wide sleeves of the tunic left bare were thick with corded muscle.",
+                    "it": "Era un giovane di media statura, col volto aperto e un ciuffo di capelli castani disordinati, senza berretto e senza elmo. Il suo abbigliamento era piuttosto comune, in quel territorio: una rozza tunica stretta in vita da una cintura, corte brache di pelle, e morbidi stivali che arrivavano fin quasi al ginocchio. L'impugnatura di un coltello spuntava dal bordo di uno stivale. L'alta cintura di cuoio sosteneva una spada corta e pesante e una borsa di pelle. Non c'era turbamento nei grandi occhi che scrutavano le verdi pareti intorno al sentiero. Benché non fosse alto, l'uomo era ben portante, e le sue braccia — lasciate scoperte dalle corte e ampie maniche della tunica — erano gonfie di muscoli."
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
+                    "fr": "Au-delà de la rivière Noire",
+                    "en": "Beyond the Black River",
+                    "it": "Oltre il fiume Nero"
                 },
                 "author": {
                     "name": "Robert E. Howard"
@@ -2135,8 +1920,8 @@
     
             "image": "data/tiles/img/balthus.png",
             "imageHD": "data/tiles/img/balthus_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":56, "y":49},
+            "image_zoom": 96,
             "model": "balthus",
             "origins": ["stretchgoal", "king"]
         },
@@ -2162,28 +1947,26 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
+                    "fr": "Elle se tourna vers Conan. Sa poitrine se soulevait et ses yeux brillaient. Le Cimmérien fut saisi par une surprise teintée d’émerveillement. Elle avait un corps de déesse, élancé, tout à la fois souple et voluptueux. Son unique vêtement était une large ceinture de soie. Ses membres à la blancheur d'ivoire et les globes d'albâtre de ses seins firent battre sauvagement le sang dans les veines du Cimmérien bien qu'il fût encore sous l'emprise de la furie de la bataille. Les cheveux de Bêlit, noirs et brillants - aussi noirs qu'une nuit stygienne- retombaient en cascade soyeuses sur son dos souple. Ses yeux noirs s'embrasèrent quand ils se posèrent sur le Cimmérien.\nElle était indomptable comme un vent du désert, aussi souple et redoutable qu'une panthère. ",
+                    "en": "Bêlit turned toward Conan, her bosom heaving, her eyes flashing. Fierce fingers of wonder caught at his heart. She was slender, yet formed like a goddess: at once lithe and voluptuous. Her only garment was a broad silken girdle. Her white ivory limbs and the ivory globes of her breasts drove a beat of fierce passion through the Cimmerian’s pulse, even in the panting fury of battle. Her rich black hair, black as a Stygian night, fell in rippling burnished clusters down her supple back. Her dark eyes burned on the Cimmerian.\nShe was untamed as a desert wind, supple and dangerous as a she-panther.",
+                    "it": "Si volse verso Conan, gonfiando il petto, con gli occhi lampeggianti. Dita ardenti di meraviglia si impadronirono del cuore del cimmero. La donna era snella, ma ben tornita come una dea: agile e formosa nello stesso tempo. Indossava solamente un'ampia fascia di seta. Le membra bianche come l'avorio e i globi eburnei dei seni procurarono un'accelerazione di feroce passione nelle pulsazioni del cimmero, perfino nella tensione furibonda della battaglia. Gli splendidi capelli neri, scuri come una notte stygiana, le cadevano in ciocche ondulate e lucenti lungo la schiena. I suoi occhi scuri bruciarono il cimmero.\nEra indomita come il vento del deserto, agile e pericolosa come una pantera."
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
+                    "fr": "La Reine de la Côte Noire",
+                    "en": "Queen of the Black Coast",
+                    "it": "La Regina della Costa Nera"
                 },
                 "author": {
                     "name": "Robert E. Howard"
                 }
             },
     
-            "image": "data/tiles/img/bêlit.png",
-            "imageHD": "data/tiles/img/bêlit_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "bêlit",
-            "origins": ["stretchgoal", "king"],
-            
-            "count": 2
+            "image": "data/tiles/img/belit.png",
+            "imageHD": "data/tiles/img/belit_hd.png",
+            "image_location": {"x":63, "y":46},
+            "image_zoom": 120,
+            "model": "belit",
+            "origins": ["stretchgoal", "king"]
         },
     
         {
@@ -2207,14 +1990,14 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
+                    "fr": "Arus vit un homme jeune, grand et puissamment bâti, nu à l'exception d'un pagne et de sandales lacées haut sur les chevilles. Sa peau était tannée comme s'il venait des régions désertiques du globe, et Arus se sentit mal à l'aise en voyant ses épaules larges, son torse massif et ses bras puissants. Un simple coup d'oeil sur ce visage renfrogné au front large lui suffit pour comprendre qu'il n'avait pas affaire à un Némédien. Sous une tignasse de cheveux noirs ébouriffés, deux yeux bleus menaçants couvaient, prêts à s'embraser. Une longue épée dans son fourreau de cuir pendait à son ceinturon.",
+                    "en": "Arus saw a tall powerfully built youth, naked but for a loincloth, and sandals strapped high about his ankles. His skin was burned brown as by the suns of the wastelands, and Arus glanced nervously at the broad shoulders, massive chest and heavy arms. A single look at the moody, broad-browed features told the watchman that the man was no Nemedian. From under a mop of unruly black hair smoldered a pair of dangerous blue eyes. A long sword hung in a leather scabbard at his girdle.",
+                    "it": "Arus lanciò un'occhiata nervosa alle ampie spalle, al torace massiccio e alle forti braccia. Una sola occhiata ai lineamenti severi e alle spesse sopracciglia gli bastò per capire che l'uomo non era un nemediano. Sotto il ciuffo arruffato di capelli neri covavano due pericolosi occhi azzurri. Una lunga spada, chiusa in un fodero di cuoio, gli pendeva dalla cintura."
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
+                    "fr": "Le Dieu dans l'Urne",
+                    "en": "The God in the Bowl",
+                    "it": "Il Dio nell'urna"
                 },
                 "author": {
                     "name": "Robert E. Howard"
@@ -2223,8 +2006,8 @@
     
             "image": "data/tiles/img/conan.png",
             "imageHD": "data/tiles/img/conan_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
             "model": "conan",
             "origins": ["stretchgoal", "king"],
     
@@ -2252,14 +2035,14 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
+                    "fr": "Une fois la porte fermée, Conan ne vit qu'un seul homme en face de lui : une mince silhouette dissimulée sous sa cape noire et sa capuche. L'homme rejeta cette dernière en arrière, révélant un visage pâle et ovale, aux traits sereins et bien dessinés. {...} N'y a-t-il aucun sorcier au monde dont la magie pourrait rivaliser avec celle de Xaltotun ? demanda-t-il enfin. Hadrathus secoua négativement la tête. -Si un tel homme existait, nous autres, prêtres d'Asura, en aurions entendu parler. On dit que notre religion n'est qu'une survivance de l'antique culte stygien du serpent. Ceci est un mensonge. Nos ancêtres venaient de Vendhya, par-delà la mer de Vilayet et les montagnes himéliennes bleutées. Nous sommes des fils de l'Orient, pas du Sud. Nous connaissons tous les sorciers de l'Orient, et ils sont plus puissants que ceux de l'Occident. Leur pouvoir serait aussi impuissant qu'un fétu de paille face au vent, confronté à la noire puissance de Xaltotun.",
+                    "en": "Hadrathus was a slim figure, masked in a black cloak with a hood. This the man threw back, disclosing a pale oval of a face, with calm, delicately chiseled features.\n“The followers of Asura have secret channels of knowledge.”\n“Men say the cult of Asura is a survival of the ancient Stygian serpent-worship. That is a lie. Our ancestors came from Vendhya, beyond the Sea of Vilayet and the blue Himelian mountains. We are sons of the East, not the South, and we have knowledge of all the wizards of the East, who are greater than the wizards of the West. And not one of them but would be a straw in the wind before the black might of Xaltotun.”\nHadrathus was as calm and self-possessed as ever, picking his way between rows of dead men and horses.",
+                    "it": "Quando la porta fu chiusa, Conan vide che era rimasto solo con un uomo smilzo, mascherato da un mantello nero col cappuccio. L'uomo si tolse quest'ultimo e mise in mostra il pallido ovale di un volto dai lineamenti sereni e finemente cesellati. {...} Non c'è al mondo qualche mago in grado di combattere la stregoneria di Xaltotun? — chiese infine Conan. Hadrato scosse la testa. — Se ci fosse, noi di Asura lo conosceremmo. La gente dice che il nostro culto è una sopravvivenza dell'antico culto del dio serpente di Stygia. È una menzogna. I nostri antenati vennero da Vendhya, al di là del Mare di Vilayet e delle violacee montagne himeliane. Siamo figli dell'Est, non del Sud, e conosciamo tutti i maghi dell'Est, che sono più grandi dei maghi dell'Ovest. E nessuno di essi sarebbe più che un fuscello nel vento, di fronte alla nera potenza di Xaltotun."
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
+                    "fr": "L'heure du Dragon",
+                    "en": "The Hour of the Dragon",
+                    "it": "Conan il Conquistatore"
                 },
                 "author": {
                     "name": "Robert E. Howard"
@@ -2268,8 +2051,8 @@
     
             "image": "data/tiles/img/hadrathus.png",
             "imageHD": "data/tiles/img/hadrathus_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":64, "y":47},
+            "image_zoom": 90,
             "model": "hadrathus",
             "origins": ["stretchgoal", "king"]
         },
@@ -2295,14 +2078,14 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
+                    "fr": "C'était un homme de grande taille, bien bâti et richement vêtu. {...}\nMoi-même, que les Kshatriyas connaissent sous le nom de Kerim Shah, prince d'lranistan, je porte un masque et je suis en cela semblable à tous les hommes. Tous sont des traîtres, d'une façon ou d'une autre, et la moitié d'entre eux ne savent même pas quel maître ils servent. De ce côté-là au moins, je n'ai pas de doute, car je suis au service du roi Yezdigerd de Turan.",
+                    "en": "The man shrugged his broad shoulders and turned back into the arabesque chamber. He was a tall man, compactly built, and richly clad. (…)\nI, whom the Kshatriyas know as Kerim Shah, a prince from Iranistan, am no greater a masquerader than most men. They are all traitors in one way or another, and half of them know not whom they serve. There at least I have no doubts; for I serve King Yezdigerd of Turan.",
+                    "it": "L'uomo scrollò le ampie spalle e rientrò nella stanza arabescata. Era alto, ben piantato, riccamente vestito. (…) \nIo, conosciuto dagli kshatriyani come Kerim Scià, principe iranistano, porto la maschera come tanti altri. Tutti sono dei traditori, per un verso o per l'altro, e, di essi, la metà non sa nemmeno per chi lavora. In questo almeno io non ho dubbi, perché lavoro per re Yezdigerd del Turan..."
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
+                    "fr": "Le Peuple du Cercle Noir",
+                    "en": "The People of the Black Circle",
+                    "it": "Gli Accoliti del Cerchio Nero"
                 },
                 "author": {
                     "name": "Robert E. Howard"
@@ -2311,8 +2094,8 @@
     
             "image": "data/tiles/img/kerim-shah.png",
             "imageHD": "data/tiles/img/kerim-shah_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":56, "y":53},
+            "image_zoom": 83,
             "model": "kerim-shah",
             "origins": ["stretchgoal", "king"]
         },
@@ -2338,14 +2121,14 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
+                    "fr": "Il voyait à présent le navire pirate dans ses moindres détails. Les rameurs étaient protégés par une rangée de mantelets fixés sur les plats-bords, mais les guerriers qui dansaient sur le pont étroit étaient parfaitement visibles. Leurs corps étaient peints et parés de plumes; ils étaient pour la plupart nus et brandissaient des lances et des boucliers tachetés. (...) Conan fit halte brusquement ; ses guerriers s'immobilisèrent, se changeant en des statues de basalte. Dans le silence oppressé qui suivit, le Cimmérien secoua la tête avec irritation. - Continuez, ordonna-t-il à l'un de ses lieutenants, N'Gora.",
+                    "en": "He could see the details of the pirate plainly now. The rowers were protected by a line of raised mantelets along the sides, but the warriors dancing on the narrow deck were in full view. These were painted and plumed, and mostly naked, brandishing spears and spotted shields. (...) Conan halted suddenly, his warriors freezing into basaltic statues. In the tense silence that followed, the Cimmerian shook his head irritably. “Go ahead,” he grunted to a sub-chief, N’Gora.",
+                    "it": "Adesso poteva vedere chiaramente i particolari della nave pirata. I rematori erano protetti da una fila di schermi alzati lungo i fianchi, ma i guerrieri che danzavano sullo stretto ponte erano in piena vista. Erano dipinti e ornati di piume, e in maggior parte nudi, e brandivano lunghe lance e scudi maculati. (...) Conan si fermò all'improvviso e i suoi guerrieri si immobilizzarono come statue di basalto. Nel silenzio teso che seguì, il cimmero scosse il capo irritato. - Andate avanti - disse al suo sottocapo N'Gora."
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
+                    "fr": "La Reine de la Côte Noire",
+                    "en": "Queen of the Black Coast",
+                    "it": "La regina della Costa Nera"
                 },
                 "author": {
                     "name": "Robert E. Howard"
@@ -2354,8 +2137,8 @@
     
             "image": "data/tiles/img/ngora.png",
             "imageHD": "data/tiles/img/ngora_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":66, "y":54},
+            "image_zoom": 92,
             "model": "ngora",
             "origins": ["stretchgoal", "king"]
         },
@@ -2381,14 +2164,14 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
+                    "fr": "Conan vit quatre cavaliers assis sur leurs montures dans le soleil couchant, occupés à le regarder. Trois étaient des faucons émaciés vêtus de robes blanches ; il s'agissait sans nul doute de Zuagirs, une tribu venant de l'autre côté de la rivière. Le dernier était lui aussi vêtu de blanc, portant une khalat serrée à la ceinture et un couvre-chef retenu par un triple anneau de poil de chameau tissés, qui lui arrivait aux épaules et volait au vent. Celui-ci n'était pas un Shémite. Les ténèbres n'étaient pas si denses, ni la vue de Conan si embrumée qu'il ne pouvait distinguer les traits de l'homme. Il était aussi grand que Conan, quoique moins massif. Ses épaules étaient larges et son corps souple était aussi dur que l'acier. Sa courte barbe ne parvenait pas à masquer l'air arrogant que lui conférait un menton proéminent; ses yeux, gris et froids, aussi pénétrants qu'une épée, luisaient dans l'ombre de sa kafieh.",
+                    "en": "Shaking the sweat and blood from his eyes, Conan saw four horsemen sitting their steeds in the twilight and staring up at him. Three were lean, white-robed hawks, Zuagir tribesmen without a doubt, nomads from beyond the river. The other was dressed like them in a white, girdled khalat and a flowing head-dress which, banded about the temples with a triple circlet of braided camelhair, fell to his shoulders. But he was not a Shemite. The dust was not so thick, nor Conan's hawk-like sight so clouded, that he could not perceive the man's facial characteristics. He was as tall as Conan, though not so heavy-limbed. His shoulders were broad and his supple figure was hard as steel and whalebone. A short black beard did not altogether mask the aggressive jut of his lean jaw, and gray eyes cold and piercing as a sword gleamed from the shadow of the kafieh.",
+                    "it": "Scrollandosi dagli occhi il sudore e il sangue, Conan scorse quattro cavalieri che, fermi nel crepuscolo, lo fissavano. Tre erano magri e vestiti di bianco, senza dubbio zuagir, nomadi dei territori oltre il fiume. L'altro era abbigliato come loro di un bianco khalat stretto in vita e di un copricapo fluente che, fissato alle tempie da un triplice cerchio di pelo di cammello intrecciato, ricadeva sulle spalle. Ma non era shemita. L'oscurità non era ancora così fitta, e la vista aquilina di Conan non era così offuscata da impedirgli di distinguere il volto dell'uomo. Era alto come lui, ma non altrettanto massiccio. Le spalle erano ampie, e l'agile figura era dura come l'acciaio e l'osso di balena. La corta barba nera non mascherava del tutto la linea aggressiva della scarna mascella, e gli occhi grigi, freddi e penetranti come spade, brillavano sotto l'ombra della kaffia."
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
+                    "fr": "Une Sorcière viendra au monde",
+                    "en": "A Witch shall be born",
+                    "it": "Nascerà una strega"
                 },
                 "author": {
                     "name": "Robert E. Howard"
@@ -2397,8 +2180,8 @@
     
             "image": "data/tiles/img/olgerd-vladislav.png",
             "imageHD": "data/tiles/img/olgerd-vladislav_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":65, "y":54},
+            "image_zoom": 104,
             "model": "olgerd-vladislav",
             "origins": ["stretchgoal", "king"]
         },
@@ -2424,14 +2207,14 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
+                    "fr": "Pallantides sortit en hâte du pavillon royal dans le cliquetis de son armure, qu'il avait revêtue à minuit après quelques heures de sommeil. {...} Un guerrier de grande taille en armure étincelante abaissa sa lance et chargea en direction du seigneur de Tor. Le choc résonna comme un coup de tonnerre. La lance du Némédien, frappant le casque de son ennemi, fit céder rivets et fixations, arrachant le casque et révélant ainsi les traits de Pallantides. La pointe de la lance de l'Aquilonien avait quant à elle transpercé le bouclier et la plaque pectorale de son ennemi, perforant le coeur du baron.",
+                    "en": "Pallantides hastened from the pavilion, clanking in the armor he had donned at midnight after a few hours' sleep. (…) A tall warrior in gleaming armor couched his lance and charged to meet the lord of Tor. They met like a thunderclap. The Nemedian's lance, striking his foe's helmet, snapped bolts and rivets and tore off the casque, revealing the features of Pallantides. But the Aquilonian's lance head crashed through shield and breastplate to transfix the baron's heart.",
+                    "it": "Pallantide uscì in fretta dal padiglione, tra il clangore dell'armatura che aveva indossato a mezzanotte, dopo un breve riposo. (…) Un alto guerriero in armatura lucente abbassò la lancia e caricò per scontrarsi con il Signore di Tor. Si scontrarono con il fragore del tuono. La lancia del nemediano, colpendo l'elmo del nemico, spezzò chiodi e legacci e gli strappò di testa la calotta, mostrando il volto di Pallantide. Ma la punta della lancia dell'aquiloniano squarciò scudo e pettorale trafiggendo il cuore del Barone."
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
+                    "fr": "L'Heure du Dragon",
+                    "en": "The Hour of the Dragon",
+                    "it": "Conan il Conquistatore"
                 },
                 "author": {
                     "name": "Robert E. Howard"
@@ -2440,8 +2223,8 @@
     
             "image": "data/tiles/img/pallantides.png",
             "imageHD": "data/tiles/img/pallantides_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":64, "y":53},
+            "image_zoom": 87,
             "model": "pallantides",
             "origins": ["stretchgoal", "king"]
         },
@@ -2467,14 +2250,14 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
+                    "fr": "Shevatas était souple et nerveux, comme se devait de l'être un roi des voleurs de Zamora. Sa tête petite et ronde était entièrement rasée, son seul vêtement était un pagne de soie écarlate. Comme tous ceux de sa race, il avait une peau très foncée et ses yeux noirs au regard perçant faisaient ressortir ses traits étroits de vautour. Ses doigts, longs et minces, étaient aussi vifs et légers que les ailes d'un papillon de nuit.\nDe sa ceinture aux écailles d'or pendait une épée courte et fine, au pommeau incrusté de gemmes, glissée dans un fourreau de cuir travaillé.",
+                    "en": "Shevatas was wiry and lithe, as became a master-thief of Zamora. His small round head was shaven, his only garment a loin-cloth of scarlet silk. Like all his race, he was very dark, his narrow vulture-like face set off by his keen black eyes. His long, slender and tapering fingers were quick and nervous as the wings of a moth. From a gold-scaled girdle hung a short, narrow, jewel-hilted sword in a sheath of ornamented leather. Shevatas handled the weapon with apparently exaggerated care. He even seemed to flinch away from the contact of the sheath with his naked thigh. Nor was his care without reason.\nThis was Shevatas, a thief among thieves, whose name was spoken with awe in the dives of the Maul and the dim shadowy recesses beneath the temples of Bel, and who lived in songs and myths for a thousand years. He was a far traveller and had looted the treasures of many kingdoms.",
+                    "it": "Shevatas era agile e solido, come si addiceva ad un grande ladro di Zamora. La testa piccola e rotonda era rasata, e il suo unico indumento era un perizoma di seta scarlatta. Come tutti quelli della sua razza, era molto scuro di carnagione, e la magra faccia d'avvoltoio faceva spiccare gli acuti occhi neri. Le dita sottili e affusolate erano svelte e nervose come le ali d'una falena. Dalla cintura a scaglie d'oro pendeva uno spadino sottile dall' elsa ingemmata, in un fodero di cuoio lavorato. Shevatas maneggiava quell'arma con cautela apparentemente esagerata, e quasi sembrava rifuggire dal contatto del fodero contro la coscia nuda. E quella prudenza non era senza motivo.\nQuesto era Shevatas, ladro tra i ladri, il cui nome veniva pronunciato con timore nei locali malfamati del Maul e nei cupi recessi sotterranei dei templi di Bel, destinato a vivere per mille anni nelle ballate e nei miti. Aveva viaggiato molto, ed aveva depredato i tesori di molti regni."
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
+                    "fr": "Le Colosse noir",
+                    "en": "Black Colossus",
+                    "it": "Colosso Nero"
                 },
                 "author": {
                     "name": "Robert E. Howard"
@@ -2483,8 +2266,8 @@
     
             "image": "data/tiles/img/shevatas.png",
             "imageHD": "data/tiles/img/shevatas_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":62, "y":49},
+            "image_zoom": 92,
             "model": "shevatas",
             "origins": ["stretchgoal", "king"]
         },
@@ -2510,14 +2293,14 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
+                    "fr": "Taurus était aussi grand que le Cimmérien, mais plus massif ; il avait beau être gras et bedonnant, chacun de ses mouvements trahissait un magnétisme dynamique et subtil, que l'on retrouvait dans ses yeux perçants, brillant de vitalité en dépit de la faible clarté des étoiles. Il était pieds nus et portait ce qui ressemblait à une corde mince et solide, repliée sur elle-même et nouée à intervalles réguliers.",
+                    "en": "Taurus was tall as the Cimmerian, and heavier; he was big-bellied and fat, but his every movement betokened a subtle dynamic magnetism, which was reflected in the keen eyes that glinted vitally, even in the starlight. He was barefooted and carried a coil of what looked like a thin, strong rope, knotted at regular intervals.",
+                    "it": "Taurus era alto quanto il cimmero e più pesante; era corpulento e grasso, ma ogni suo movimento suggeriva l'idea di un indefinibile e dinamico magnetismo che si rifletteva nei suoi occhi acuti, scintillanti di vigore persino alla luce delle stelle. Era scalzo e trasportava in un rotolo ciò che sembrava essere una corda sottile ma resistente, annodata a intervalli regolari."
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
+                    "fr": "La Tour de l’Éléphant",
+                    "en": "The Tower of the Elephant",
+                    "it": "La Torre dell'Elefante"
                 },
                 "author": {
                     "name": "Robert E. Howard"
@@ -2526,8 +2309,8 @@
     
             "image": "data/tiles/img/taurus.png",
             "imageHD": "data/tiles/img/taurus_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":61, "y":46},
+            "image_zoom": 101,
             "model": "taurus",
             "origins": ["stretchgoal", "king"],
     
@@ -2555,24 +2338,24 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
+                    "fr": "Elle était grande, avait une poitrine opulente, des membres longs et des épaules robustes. Toute sa silhouette témoignait d'une force peu commune, sans toutefois rien ôter de la grâce féminine qui se dégageait de son apparence. En dépit de son port et de ses vêtements, tout en elle respirait la féminité. Ses habits semblaient incongrus, étant donné le décor environnant. Elle ne portait pas une jupe, mais d'amples culottes de soie s'arrêtant à une largeur de main au-dessus des genoux, retenues par une large bande de soie enroulée autour de sa taille comme une ceinture. Ses bottes évasées en cuir souple lui arrivaient presque aux genoux et sa chemise de soie décolletée, aux manches et au col bouffants, complétaient son costume. Une épée droite à double tranchant pendait sur une de ses hanches gracieuses et une longue dague sur l'autre. Ses cheveux blonds et ébouriffés, coupés au carré à la hauteur des épaules, étaient retenus par un bandeau de satin écarlate.",
+                    "en": "She was tall, full-bosomed and large-limbed, with compact shoulders. Her whole figure reflected an unusual strength, without detracting from the femininity of her appearance. She was all woman, in spite of her bearing and her garments. Instead of a skirt she wore short, wide-legged silk breeches, which ceased a hand’s breadth short of her knees, and were upheld by a wide silken sash worn as a girdle. Flaring-topped boots of soft leather came almost to her knees, and a low-necked, wide-collared, wide-sleeved silk shirt completed her costume. There was the color of the sea in her wide eyes. And that was as it should have been, because this was Valeria of the Red Brotherhood, whose deeds are celebrated in song and ballad wherever seafarers gather.\n“Why won’t men let me live a man’s life?”\n“No living man could disarm Valeria of the Brotherhood with his bare hands.”",
+                    "it": "Era alta, col seno colmo, le membra robuste e le spalle solide. La sua figura irradiava una forza eccezionale, senza per questo sminuire la femminilità del suo aspetto. Era interamente donna, nonostante il portamento e l'abito. Anziché una gonna, portava brache di seta corte e larghe che le arrivavano a una spanna dal ginocchio, trattenute da un'ampia fusciacca di seta che fungeva da cintura. Gli stivali svasati di pelle morbida le arrivavano fin quasi alle ginocchia, e una camicia serica scollata e dalle maniche ampie completava il suo abbigliamento. Nei suoi grandi occhi c'era il colore del mare. E questo era giusto, perché era Valeria della Confraternita Rossa, le cui imprese vengono celebrate in canti e ballate dovunque si radunano i navigatori.\n“Perché voi uomini non volete saperne di lasciarmi vivere una vita da uomo?”\n“Nessun uomo al mondo sarebbe stato in grado di disarmare a mani nude Valeria della Confraternita Rossa.”"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
+                    "fr": "Les Clous Rouges",
+                    "en": "Red Nails",
+                    "it": "Chiodi Rossi"
                 },
                 "author": {
                     "name": "Robert E. Howard"
                 }
             },
-    
+
             "image": "data/tiles/img/valeria.png",
             "imageHD": "data/tiles/img/valeria_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":64, "y":57},
+            "image_zoom": 108,
             "model": "valeria",
             "origins": ["stretchgoal", "king"]
         },
@@ -2598,24 +2381,24 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
+                    "fr": "Le roi se tourna lorsque la vieille femme lui adressa la parole. Elle se tenait devant lui, droite et grande. Elle avait beau être vêtue de guenilles, ses traits, droits et aquilins, et ses yeux, noirs et perçants, n'étaient pas ceux d'une paysanne ordinaire. Elle appela le loup et celui-ci trotta jusqu'à elle, puis frotta son épaule gigantesque contre son genou, fixant ses grands yeux verts étincelants sur Conan.",
+                    "en": "The old woman stood straight and tall before him, and in spite of her ragged garb, her features, clear-cut and aquiline, and her keen black eyes, were not those of a common peasant woman. She called to the wolf and it trotted to her side like a great dog and rubbed its giant shoulder against her knee, while it gazed at Conan with great green lambent eyes. Absently she laid her hand upon its mighty neck, and so the two stood regarding the king of Aquilonia. He found their steady gaze disquieting, though there was no hostility in it.\n“Crom!” muttered Conan, staring at the old woman. “Are you a magician, too?”\n“I am Zelata,” she said. “The people of the valleys call me a witch.”",
+                    "it": "La vecchia parlò, e il Re si voltò verso di lei. Era in piedi vicino a Conan, alta e diritta; nonostante la veste stracciata, la sua fisionomia chiara e aquilina e gli occhi neri e profondi non erano quelli di una qualsiasi contadina. La vecchia chiamò il lupo, e la belva le si pose a fianco come un grosso cane, strofinando la spalla contro il suo ginocchio; intanto continuava a osservare Conan con i grandi occhi verdi e splendenti, e Conan si sentì un po' a disagio sotto quello sguardo, anche se non gli mostrava ostilità.\n“Crom!” esclamò Conan, fissando la vecchia. “Sei una maga anche tu?”\n“Sono Zelata” — disse lei. — “La gente delle valli dice che sono una strega.”"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
+                    "fr": "L'Heure du Dragon",
+                    "en": "The Hour of the Dragon",
+                    "it": "Conan il Conquistatore"
                 },
                 "author": {
                     "name": "Robert E. Howard"
                 }
             },
-    
+            
             "image": "data/tiles/img/zelata.png",
             "imageHD": "data/tiles/img/zelata_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":61, "y":57},
+            "image_zoom": 94,
             "model": "zelata",
             "origins": ["stretchgoal", "king"]
         },
