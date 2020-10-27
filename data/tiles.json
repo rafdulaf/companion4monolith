@@ -1004,7 +1004,7 @@
             "image_location": {"x":68, "y":55},
             "image_zoom": 91,
             "model": "pirates",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["corebox", "stretchgoal", "king"]
         },
     
         {
@@ -1045,7 +1045,7 @@
             "image_location": {"x":68, "y":55},
             "image_zoom": 91,
             "model": "pirates",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["corebox", "stretchgoal", "king"]
         },
     
         {
@@ -1086,7 +1086,7 @@
             "image_location": {"x":68, "y":55},
             "image_zoom": 91,
             "model": "pirates",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["corebox", "stretchgoal", "king"]
         },
     
         {
@@ -1127,7 +1127,7 @@
             "image_location": {"x":68, "y":55},
             "image_zoom": 91,
             "model": "pirates",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["corebox", "stretchgoal", "king"]
         },
     
         {
@@ -1168,7 +1168,7 @@
             "image_location": {"x":68, "y":55},
             "image_zoom": 91,
             "model": "pirates",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["corebox", "stretchgoal", "king"]
         },
     
         {
@@ -1209,7 +1209,7 @@
             "image_location": {"x":68, "y":55},
             "image_zoom": 91,
             "model": "pirates",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["corebox", "stretchgoal", "king"]
         },
     
         {
@@ -2747,13 +2747,13 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Thaug ! hurla-t-elle, chancelant sur le seuil. Thaug ! Comme en réponse à cette terrible invocation, un puissant croassement retentit et résonna à l'intérieur du temple ; on entendit un bruit de métal et de bois qui ploient puis craquent. {...} Surgissant des ténèbres à l'autre bout de la grande galerie, une forme titanesque se souleva, puis se jeta sur lui en faisant des bonds gigantesques à la façon d'une grenouille. Il aperçut l'éclat de grands yeux surnaturels, la lueur de griffes ou de serres. {...} Il sentait dans son dos la présence de cette chose colossale et sombre, semblable à une aberration de la nature arrachée au cœur de la nuit, chose noire et informe dont seuls les yeux au regard fixe et les crocs luisants étaient distincts.",
+                    "en": "« Thaug! » she screamed, reeling in the doorway. « Thaug! » As in answer to that frightful invocation there boomed a thunderous croaking from within the temple, the snapping of wood and metal. (…) Out of the gloom at the other end of the great hall a vast dark form heaved up—came rushing toward him in gigantic frog-like hops. He saw the gleam of great unearthly eyes, the shimmer of fangs or talons. (…) He felt it looming behind him, a giant shadowy thing, like a travesty of nature cut out of the heart of night, a black shapelessness in which only the staring eyes and gleaming fangs were distinct.",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Une Sorcière viendra au Monde",
+                    "en": "A Witch shall be born",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -2763,8 +2763,8 @@
     
             "image": "data/tiles/img/thaug.png",
             "imageHD": "data/tiles/img/thaug_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":37, "y":50},
+            "image_zoom": 276,
             "model": "thaug",
             "origins": ["stretchgoal", "king"],
     
@@ -2993,26 +2993,10 @@
             "reinforcement": "2",
             "tokens": [],
     
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
             "image": "data/tiles/img/tentacles.png",
             "imageHD": "data/tiles/img/tentacles_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":67, "y":59},
+            "image_zoom": 50,
             "model": "tentacles",
             "origins": ["stretchgoal", "king"]
         },
