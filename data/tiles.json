@@ -944,13 +944,13 @@
     
             "quote": {
                 "text": {
-                    "fr": "Quarante ou cinquante Pictes, nus à l'exception de leur pagne, le corps couvert de peintures hideuses, étaient assis en un large demi-cercle, face au feu et dos à moi. Grâce aux plumes de faucon dans leurs épaisses crinières noires, je savais qu'ils appartenaient au clan des Faucons, aussi appelé Onayaga.",
-                    "en": "He was a strongly built Pict with a white heron feather thrust in a copper band that confined his square-cut mane.\nBalthus hurled his ax with an accuracy that reduced the attackers to one, and Conan, abandoning his efforts to free his sword, wheeled and met the remaining Pict with his bare hands. The stocky warrior, a head shorter than his tall enemy, leaped in, striking with his ax, at the same time stabbing murderously with his knife.",
+                    "fr": "Il était nu à l'exception d'un pagne, d'un collier de dents humaines et d'un bracelet de cuivre. Une courte épée était passée dans la ceinture qui retenait son pagne et une de ses mains agrippait toujours un puissant arc noir. Il avait les cheveux longs et noirs, mais le voyageur ne put rien dire d'autre sur sa tête, car son visage n'était plus qu'une bouillie de sang et de cervelle.",
+                    "en": "he Picts are a white race too, in that they are not black nor brown nor yellow, but they are black-eyed and black-haired and dark of skin.\nI could not mistake the sound. Only one drum in the world makes just that deep, menacing, sullen thunder: a Pictish war-drum, in the hands of those wild painted savages who haunted the Wilderness beyond the border of the Westermarck.",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "Des Loups au-delà de la Frontière - 1ère version de travail - inachevée",
-                    "en": "Beyond the Black River",
+                    "fr": "Au-delà de la Rivière Noire",
+                    "en": "Wolves Beyond the Border",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -985,13 +985,13 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Des pirates ! chuchota Conan, avec un sourire sévère sur ses minces lèvres. {...} Ils étaient environ soixante-dix, une horde sauvage composée d'hommes de nombreuses nations: Kothiens, Zamoriens, Brythuniens, Corinthiens, Shémites. Leurs traits reflétaient la sauvagerie de leurs moeurs. Beaucoup portaient la marque du fouet ou du fer rouge. Il y avait des oreilles coupées, des nez fendus en deux, des orbites béantes, des moignons de poignet ... blessures infligées par le bourreau autant que cicatrices résultant de batailles sanglantes. La plupart d'entre eux étaient à moitié nus, mais leurs quelques vêtements étaient de prix et élégants: jaquettes aux soutaches d'or, ceinturons de satin, braies de soie en lambeaux, maculées de goudron et de sang, le disputant avec leurs pièces de cuirasse en argent ciselé. Des gemmes étincelaient sur des anneaux de nez et des boucles d'oreilles, sur les pommeaux de leurs dagues.",
+                    "en": "« Pirates! » whispered Conan, a grim smile on his thin lips. (…) There were some seventy of them, a wild horde made up of men from many nations: Kothians, Zamorians, Brythunians, Corinthians, Shemites. Their features reflected the wildness of their natures. Many bore the scars of the lash or the branding-iron. There were cropped ears, slit noses, gaping eye-sockets, stumps of wrists—marks of the hangman as well as scars of battle. Most of them were half naked, but the garments they wore were fine; gold-braided jackets, satin girdles, silken breeches, tattered, stained with tar and blood, vied with pieces of silver- chased armor. Jewels glittered in nose-rings and earrings, and in the hilts of their daggers.",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Chimères de Fer dans la Clarté Lunaire",
+                    "en": "Iron Shadows in the Moon",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -1001,12 +1001,10 @@
     
             "image": "data/tiles/img/pirates.png",
             "imageHD": "data/tiles/img/pirates_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":68, "y":55},
+            "image_zoom": 91,
             "model": "pirates",
-            "origins": ["corebox", "stretchgoal", "king"],
-    
-            "count": 1
+            "origins": ["stretchgoal", "king"]
         },
     
         {
@@ -1028,13 +1026,13 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Des pirates ! chuchota Conan, avec un sourire sévère sur ses minces lèvres. {...} Ils étaient environ soixante-dix, une horde sauvage composée d'hommes de nombreuses nations: Kothiens, Zamoriens, Brythuniens, Corinthiens, Shémites. Leurs traits reflétaient la sauvagerie de leurs moeurs. Beaucoup portaient la marque du fouet ou du fer rouge. Il y avait des oreilles coupées, des nez fendus en deux, des orbites béantes, des moignons de poignet ... blessures infligées par le bourreau autant que cicatrices résultant de batailles sanglantes. La plupart d'entre eux étaient à moitié nus, mais leurs quelques vêtements étaient de prix et élégants: jaquettes aux soutaches d'or, ceinturons de satin, braies de soie en lambeaux, maculées de goudron et de sang, le disputant avec leurs pièces de cuirasse en argent ciselé. Des gemmes étincelaient sur des anneaux de nez et des boucles d'oreilles, sur les pommeaux de leurs dagues.",
+                    "en": "« Pirates! » whispered Conan, a grim smile on his thin lips. (…) There were some seventy of them, a wild horde made up of men from many nations: Kothians, Zamorians, Brythunians, Corinthians, Shemites. Their features reflected the wildness of their natures. Many bore the scars of the lash or the branding-iron. There were cropped ears, slit noses, gaping eye-sockets, stumps of wrists—marks of the hangman as well as scars of battle. Most of them were half naked, but the garments they wore were fine; gold-braided jackets, satin girdles, silken breeches, tattered, stained with tar and blood, vied with pieces of silver- chased armor. Jewels glittered in nose-rings and earrings, and in the hilts of their daggers.",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Chimères de Fer dans la Clarté Lunaire",
+                    "en": "Iron Shadows in the Moon",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -1042,14 +1040,12 @@
                 }
             },
     
-            "image": "data/tiles/img/pirates-blue.png",
-            "imageHD": "data/tiles/img/pirates-blue_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "pirates-blue",
-            "origins": ["corebox", "stretchgoal", "king"],
-    
-            "count": 1
+            "image": "data/tiles/img/pirates.png",
+            "imageHD": "data/tiles/img/pirates_hd.png",
+            "image_location": {"x":68, "y":55},
+            "image_zoom": 91,
+            "model": "pirates",
+            "origins": ["stretchgoal", "king"]
         },
     
         {
@@ -1071,13 +1067,13 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Des pirates ! chuchota Conan, avec un sourire sévère sur ses minces lèvres. {...} Ils étaient environ soixante-dix, une horde sauvage composée d'hommes de nombreuses nations: Kothiens, Zamoriens, Brythuniens, Corinthiens, Shémites. Leurs traits reflétaient la sauvagerie de leurs moeurs. Beaucoup portaient la marque du fouet ou du fer rouge. Il y avait des oreilles coupées, des nez fendus en deux, des orbites béantes, des moignons de poignet ... blessures infligées par le bourreau autant que cicatrices résultant de batailles sanglantes. La plupart d'entre eux étaient à moitié nus, mais leurs quelques vêtements étaient de prix et élégants: jaquettes aux soutaches d'or, ceinturons de satin, braies de soie en lambeaux, maculées de goudron et de sang, le disputant avec leurs pièces de cuirasse en argent ciselé. Des gemmes étincelaient sur des anneaux de nez et des boucles d'oreilles, sur les pommeaux de leurs dagues.",
+                    "en": "« Pirates! » whispered Conan, a grim smile on his thin lips. (…) There were some seventy of them, a wild horde made up of men from many nations: Kothians, Zamorians, Brythunians, Corinthians, Shemites. Their features reflected the wildness of their natures. Many bore the scars of the lash or the branding-iron. There were cropped ears, slit noses, gaping eye-sockets, stumps of wrists—marks of the hangman as well as scars of battle. Most of them were half naked, but the garments they wore were fine; gold-braided jackets, satin girdles, silken breeches, tattered, stained with tar and blood, vied with pieces of silver- chased armor. Jewels glittered in nose-rings and earrings, and in the hilts of their daggers.",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Chimères de Fer dans la Clarté Lunaire",
+                    "en": "Iron Shadows in the Moon",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -1085,14 +1081,12 @@
                 }
             },
     
-            "image": "data/tiles/img/pirates-green.png",
-            "imageHD": "data/tiles/img/pirates-green_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "pirates-green",
-            "origins": ["corebox", "stretchgoal", "king"],
-    
-            "count": 1
+            "image": "data/tiles/img/pirates.png",
+            "imageHD": "data/tiles/img/pirates_hd.png",
+            "image_location": {"x":68, "y":55},
+            "image_zoom": 91,
+            "model": "pirates",
+            "origins": ["stretchgoal", "king"]
         },
     
         {
@@ -1114,13 +1108,13 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Des pirates ! chuchota Conan, avec un sourire sévère sur ses minces lèvres. {...} Ils étaient environ soixante-dix, une horde sauvage composée d'hommes de nombreuses nations: Kothiens, Zamoriens, Brythuniens, Corinthiens, Shémites. Leurs traits reflétaient la sauvagerie de leurs moeurs. Beaucoup portaient la marque du fouet ou du fer rouge. Il y avait des oreilles coupées, des nez fendus en deux, des orbites béantes, des moignons de poignet ... blessures infligées par le bourreau autant que cicatrices résultant de batailles sanglantes. La plupart d'entre eux étaient à moitié nus, mais leurs quelques vêtements étaient de prix et élégants: jaquettes aux soutaches d'or, ceinturons de satin, braies de soie en lambeaux, maculées de goudron et de sang, le disputant avec leurs pièces de cuirasse en argent ciselé. Des gemmes étincelaient sur des anneaux de nez et des boucles d'oreilles, sur les pommeaux de leurs dagues.",
+                    "en": "« Pirates! » whispered Conan, a grim smile on his thin lips. (…) There were some seventy of them, a wild horde made up of men from many nations: Kothians, Zamorians, Brythunians, Corinthians, Shemites. Their features reflected the wildness of their natures. Many bore the scars of the lash or the branding-iron. There were cropped ears, slit noses, gaping eye-sockets, stumps of wrists—marks of the hangman as well as scars of battle. Most of them were half naked, but the garments they wore were fine; gold-braided jackets, satin girdles, silken breeches, tattered, stained with tar and blood, vied with pieces of silver- chased armor. Jewels glittered in nose-rings and earrings, and in the hilts of their daggers.",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Chimères de Fer dans la Clarté Lunaire",
+                    "en": "Iron Shadows in the Moon",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -1128,14 +1122,12 @@
                 }
             },
     
-            "image": "data/tiles/img/pirates-orange.png",
-            "imageHD": "data/tiles/img/pirates-orange_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "pirates-orange",
-            "origins": ["corebox", "stretchgoal", "king"],
-    
-            "count": 1
+            "image": "data/tiles/img/pirates.png",
+            "imageHD": "data/tiles/img/pirates_hd.png",
+            "image_location": {"x":68, "y":55},
+            "image_zoom": 91,
+            "model": "pirates",
+            "origins": ["stretchgoal", "king"]
         },
     
         {
@@ -1157,13 +1149,13 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Des pirates ! chuchota Conan, avec un sourire sévère sur ses minces lèvres. {...} Ils étaient environ soixante-dix, une horde sauvage composée d'hommes de nombreuses nations: Kothiens, Zamoriens, Brythuniens, Corinthiens, Shémites. Leurs traits reflétaient la sauvagerie de leurs moeurs. Beaucoup portaient la marque du fouet ou du fer rouge. Il y avait des oreilles coupées, des nez fendus en deux, des orbites béantes, des moignons de poignet ... blessures infligées par le bourreau autant que cicatrices résultant de batailles sanglantes. La plupart d'entre eux étaient à moitié nus, mais leurs quelques vêtements étaient de prix et élégants: jaquettes aux soutaches d'or, ceinturons de satin, braies de soie en lambeaux, maculées de goudron et de sang, le disputant avec leurs pièces de cuirasse en argent ciselé. Des gemmes étincelaient sur des anneaux de nez et des boucles d'oreilles, sur les pommeaux de leurs dagues.",
+                    "en": "« Pirates! » whispered Conan, a grim smile on his thin lips. (…) There were some seventy of them, a wild horde made up of men from many nations: Kothians, Zamorians, Brythunians, Corinthians, Shemites. Their features reflected the wildness of their natures. Many bore the scars of the lash or the branding-iron. There were cropped ears, slit noses, gaping eye-sockets, stumps of wrists—marks of the hangman as well as scars of battle. Most of them were half naked, but the garments they wore were fine; gold-braided jackets, satin girdles, silken breeches, tattered, stained with tar and blood, vied with pieces of silver- chased armor. Jewels glittered in nose-rings and earrings, and in the hilts of their daggers.",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Chimères de Fer dans la Clarté Lunaire",
+                    "en": "Iron Shadows in the Moon",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -1171,14 +1163,12 @@
                 }
             },
     
-            "image": "data/tiles/img/pirates-purple.png",
-            "imageHD": "data/tiles/img/pirates-purple_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "pirates-purple",
-            "origins": ["corebox", "stretchgoal", "king"],
-    
-            "count": 1
+            "image": "data/tiles/img/pirates.png",
+            "imageHD": "data/tiles/img/pirates_hd.png",
+            "image_location": {"x":68, "y":55},
+            "image_zoom": 91,
+            "model": "pirates",
+            "origins": ["stretchgoal", "king"]
         },
     
         {
@@ -1200,13 +1190,13 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Des pirates ! chuchota Conan, avec un sourire sévère sur ses minces lèvres. {...} Ils étaient environ soixante-dix, une horde sauvage composée d'hommes de nombreuses nations: Kothiens, Zamoriens, Brythuniens, Corinthiens, Shémites. Leurs traits reflétaient la sauvagerie de leurs moeurs. Beaucoup portaient la marque du fouet ou du fer rouge. Il y avait des oreilles coupées, des nez fendus en deux, des orbites béantes, des moignons de poignet ... blessures infligées par le bourreau autant que cicatrices résultant de batailles sanglantes. La plupart d'entre eux étaient à moitié nus, mais leurs quelques vêtements étaient de prix et élégants: jaquettes aux soutaches d'or, ceinturons de satin, braies de soie en lambeaux, maculées de goudron et de sang, le disputant avec leurs pièces de cuirasse en argent ciselé. Des gemmes étincelaient sur des anneaux de nez et des boucles d'oreilles, sur les pommeaux de leurs dagues.",
+                    "en": "« Pirates! » whispered Conan, a grim smile on his thin lips. (…) There were some seventy of them, a wild horde made up of men from many nations: Kothians, Zamorians, Brythunians, Corinthians, Shemites. Their features reflected the wildness of their natures. Many bore the scars of the lash or the branding-iron. There were cropped ears, slit noses, gaping eye-sockets, stumps of wrists—marks of the hangman as well as scars of battle. Most of them were half naked, but the garments they wore were fine; gold-braided jackets, satin girdles, silken breeches, tattered, stained with tar and blood, vied with pieces of silver- chased armor. Jewels glittered in nose-rings and earrings, and in the hilts of their daggers.",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Chimères de Fer dans la Clarté Lunaire",
+                    "en": "Iron Shadows in the Moon",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -1214,14 +1204,12 @@
                 }
             },
     
-            "image": "data/tiles/img/pirates-red.png",
-            "imageHD": "data/tiles/img/pirates-red_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "pirates-red",
-            "origins": ["corebox", "stretchgoal", "king"],
-    
-            "count": 1
+            "image": "data/tiles/img/pirates.png",
+            "imageHD": "data/tiles/img/pirates_hd.png",
+            "image_location": {"x":68, "y":55},
+            "image_zoom": 91,
+            "model": "pirates",
+            "origins": ["stretchgoal", "king"]
         },
     
         {
@@ -1501,13 +1489,13 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Ensuite va dans Punt trouver le vieil Agara, l'inquisiteur. Ne lui dis pas de but en blanc que Tananda est à l'origine de cela, mais fais-le lui comprendre » (...) Les Noirs refluèrent en maugréant devant cette avance, et soudain une silhouette noire et décharnée sortit de la maison du diable. C'était le vieil Agara, vêtu seulement d'un pagne. Montrant Tananda du doigt, il hurla: - Elle ose venir ici, celle dont les mains sont rouges de sang ! Celle qui a assassiné Amboola !",
+                    "en": "Then go into Punt and find old Ageera, the witch-finder. Do not tell him flatly that Tananda had this deed done, but hint at it. » (...) The blacks gave back sullenly before her advance, and suddenly, from the devil house came a lean black figure. It was old Ageera, clad only in a loin cloth. Pointing his finger at Tananda, he yelled : “There she rides, she whose hands are dipped in blood ! She who murdered Amboola!",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Histoire inachevée – sans titre",
+                    "en": "Untitled draft",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -1517,8 +1505,8 @@
     
             "image": "data/tiles/img/ageera.png",
             "imageHD": "data/tiles/img/ageera_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":67, "y":57},
+            "image_zoom": 60,
             "model": "ageera",
             "origins": ["stretchgoal", "king"],
     
@@ -1636,13 +1624,13 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "La jeune fille passa ses bras souples autour du cou de l'homme. Elle haletait, mais pas seulement du fait de son épuisement. Ses yeux étincelaient à la clarté des étoiles tels des joyaux noirs. Elle leva les yeux vers Khemsa, son visage tout proche du sien, mais s'il accepta son étreinte, il n'y répondit pas. (...) - Je t'aime! s'écria-t-elle impétueusement, enroulant son corps autour du sien à l'en faire vaciller et l'étranglant presque dans son étreinte passionnée. Je ferai de toi un roi !",
+                    "en": "The girl threw her supple arms about his neck. She was panting hard, but not only from exertion. Her eyes blazed like black jewels in the starlight. Her upturned face was close to Khemsa’s, but though he submitted to her embrace, he did not return it.  « I love you!” she cried fiercely, writhing her body against his, almost strangling him in her wild embrace, shaking him in her abandon. “I will make a king of you !",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Le Peuple du Cercle Noir",
+                    "en": "The People of the Black Circle",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -1652,8 +1640,8 @@
     
             "image": "data/tiles/img/gitara.png",
             "imageHD": "data/tiles/img/gitara_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":69, "y":50},
+            "image_zoom": 89,
             "model": "gitara",
             "origins": ["stretchgoal", "king"],
     
@@ -1681,13 +1669,13 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Il y avait un renégat hyperboréen, géant taciturne et dangereux, dont la large épée était sanglée le long de sa grande carcasse maigre (car les hommes portaient ouvertement leurs armes dans le Maul)\nCes hommes appartenaient à des races aussi variées que leurs crimes. Il y avait de grands Hyperboréens, au corps mince et à la forte ossature, à la diction lente et au tempérament violent\nLa partie Ouest de Vanaheim borde le rivage de la mer Occidentale, et à l'est d'Asgard se trouve la contrée des Hyperboréens, qui sont civilisés et habitent dans des villes.",
+                    "en": "There was a giant Hyperborean renegade, taciturn, dangerous, with a broadsword strapped to his great gaunt frame – for men wore steel openly in the Maul.\nThey were men of many races and many crimes. There were tall Hyperboreans, gaunt, big-boned, of slow speech and violent natures.\nThe western part of Vanaheim lies along the shores of the western sea, and east of Asgard is the country of the Hyperboreans, who are civilized and dwell in cities.",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "La Tour de L'Elephant - Le Colosse Noir - Le Phoenix sur l'Epée - version rejetée par Weird Tales",
+                    "en": "The Tower of the Elephant - Black Colossus - The Phoenix on the Sword (first submitted draft)",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -1697,8 +1685,8 @@
     
             "image": "data/tiles/img/hyperborean-primitive.png",
             "imageHD": "data/tiles/img/hyperborean-primitive_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":68, "y":59},
+            "image_zoom": 105,
             "model": "hyperborean-primitive",
             "origins": ["stretchgoal", "king"],
     
@@ -1726,13 +1714,13 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Cet homme était vêtu d'une robe en poil de chameau de couleur marron et portait des sandales. Un turban vert était enroulé autour de sa tête. Son expression était tranquille, son regard, impersonnel.",
+                    "en": "This man was clad in a brown camel-hair robe and sandals, and a green turban was on his head. His expression was tranquil, his gaze impersonal.",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Le Peuple du Cercle Noir",
+                    "en": "People of the Black Circle",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -1742,8 +1730,8 @@
     
             "image": "data/tiles/img/khemsa.png",
             "imageHD": "data/tiles/img/khemsa_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":58, "y":52},
+            "image_zoom": 105,
             "model": "khemsa",
             "origins": ["stretchgoal", "king"],
     
@@ -1771,13 +1759,13 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Natohk fit face au Cimmérien ; il était d'une taille et d'une maigreur inhumaines, vêtu de soieries d'un vert éclatant. Il rejeta son voile en arrière et Conan contempla les traits qu'il avait vus représentés sur la pièce d'or zugite.",
+                    "en": "Natohk faced the Cimmerian—inhumanly tall and lean, clad in shimmering green silk. He tossed back his veil, and Conan looked into the features he had seen depicted on the Zugite coin.",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Le Colosse noir",
+                    "en": "Black Colossus",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -1787,7 +1775,7 @@
     
             "image": "data/tiles/img/natohk.png",
             "imageHD": "data/tiles/img/natohk_hd.png",
-            "image_location": {"x":50, "y":50},
+            "image_location": {"x":52, "y":59},
             "image_zoom": 100,
             "model": "natohk",
             "origins": ["stretchgoal", "king"],
@@ -2422,26 +2410,10 @@
                 { "image":"data/tiles/img/camel_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
             "image": "data/tiles/img/camel.png",
-            "imageHD": "data/tiles/img/camel_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "imageHD": "data/tiles/img/camel.png",
+            "image_location": {"x":75, "y":54},
+            "image_zoom": 142,
             "model": "camel",
             "origins": ["stretchgoal", "king"]
         },
@@ -2465,26 +2437,10 @@
                 { "image":"data/tiles/img/kothian-archer_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
             "image": "data/tiles/img/kothian-archer.png",
             "imageHD": "data/tiles/img/kothian-archer_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":67, "y":55},
+            "image_zoom": 111,
             "model": "kothian-archer",
             "origins": ["stretchgoal", "king"]
         },
@@ -2508,26 +2464,10 @@
                 { "image":"data/tiles/img/slasher_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
             "image": "data/tiles/img/slasher.png",
             "imageHD": "data/tiles/img/slasher_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":52, "y":61},
+            "image_zoom": 95,
             "model": "slasher",
             "origins": ["stretchgoal", "king"]
         },
@@ -2551,26 +2491,10 @@
                 { "image":"data/tiles/img/bone-golem_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
             "image": "data/tiles/img/bone-golem.png",
             "imageHD": "data/tiles/img/bone-golem_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":60, "y":55},
+            "image_zoom": 126,
             "model": "bone-golem",
             "origins": ["stretchgoal", "king"],
     
@@ -2580,7 +2504,7 @@
         {
             "id": "forest-demon",
             "name": {
-                "fr": "Démon de la Forêt",
+                "fr": "Démon des Forêts",
                 "en": "Forest Demon",
                 "it": "TODO_TRANSLATE"
             },
@@ -2598,13 +2522,13 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Conan secoua la tête d'un geste irrité.\n« Un homme du Tauran devrait être capable de reconnaître les marques de griffes d'une panthère. Non. C'est un démon de la forêt, invoqué par Zogar Sag pour mener à bien sa vengeance.",
+                    "en": "Conan shook his head impatiently.\n« A man from the Tauran couldn't mistake the mark of a panther's claws. No. It's a forest devil summoned by Zogar Sag to carry out his revenge.",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Au-delà de la Rivière Noire",
+                    "en": "Beyond the Black River",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -2614,8 +2538,8 @@
     
             "image": "data/tiles/img/forest-demon.png",
             "imageHD": "data/tiles/img/forest-demon_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":66, "y":58},
+            "image_zoom": 133,
             "model": "forest-demon",
             "origins": ["stretchgoal", "king"],
     
@@ -2643,13 +2567,13 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Dans sa main tendue la chose vivante se tordait avec colère. Cette fois, ce n'était plus une illusion. Thugra Khotan tenait dans sa paume nue un scorpion noir, long de plus d'un pied, la créature la plus mortelle du désert ; une piqûre de son aiguillon pointu signifiait une mort instantanée.",
+                    "en": "In his extended hand something alive writhed and slavered. No tricks of shadows this time. In his naked hand Thugra Khotan gripped a black scorpion, more than a foot in length, the deadliest creature of the desert, the stroke of whose spiked tail was instant death.",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Le Colosse Noir",
+                    "en": "Black Colossus",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -2659,8 +2583,8 @@
     
             "image": "data/tiles/img/giant-scorpion.png",
             "imageHD": "data/tiles/img/giant-scorpion_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":54, "y":41},
+            "image_zoom": 112,
             "model": "giant-scorpion",
             "origins": ["stretchgoal", "king"],
     
@@ -2688,13 +2612,13 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Bondissant en arrière, son épée brandie haut dans les airs, il vit l'horreur atteindre le sol, faire volte-face puis fondre sur lui à une vitesse hallucinante. C'était une gigantesque araignée noire, comme on ne peut en voir que dans les cauchemars. Elle était aussi grosse qu'un porc ; cet ogre monté sur huit pattes épaisses et velues traversa la pièce à une vitesse prodigieuse. Ses quatre yeux brillants luisaient d'une intelligence maléfique et ses crocs dégouttaient un venin que Conan savait foudroyant et mortel.",
+                    "en": "Springing back, sword high, he saw the horror strike the floor, wheel and scuttle toward him with appalling speed – a gigantic black spider, such as men see only in nightmare dreams. It was as large as a pig, and its eight thick hairy legs drove its ogreish body over the floor at headlong pace ; its four evilly gleaming eyes shone with a horrible intelligence, and its fangs dripped venom that Conan knew, from the burning of his shoulder where only a few drops had splashed as the thing struck and missed, was laden with swift death.",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "La Tour de l'Elephant",
+                    "en": "The Tower of the Elephant",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -2704,8 +2628,8 @@
     
             "image": "data/tiles/img/giant-spider.png",
             "imageHD": "data/tiles/img/giant-spider_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":65, "y":53},
+            "image_zoom": 113,
             "model": "giant-spider",
             "origins": ["stretchgoal", "king"],
     
@@ -2733,13 +2657,13 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Une masse énorme se dressait et s'avançait d'un pas lourd ... un monstre aux traits vaguement humains, une parodie grotesque de la création. Sa silhouette n'était pas très différente de celle d'un homme. Mais son visage, souligné par le clair de lune brillant, était bestial, avec des orbites rapprochées, des narines épatées et une bouche énorme aux lèvres molles, où brillaient des crocs blanchâtres, aussi redoutables que des défenses. Le corps de la créature était recouvert par un pelage grisâtre aux poils hérissés, strié d'argent, luisant dans la clarté lunaire; ses mains, épaisses et difformes, pendaient presque jusqu'à terre. Sa masse était prodigieuse; alors qu'elle se tenait debout sur des jambes courtaudes et torses, sa tête en pointe dépassait celle de l'homme qui lui faisait face ; la longue courbe du torse velu et des épaules gigantesques était à couper le souffle ; les bras énormes ressemblaient à des troncs d'arbre noueux.",
+                    "en": "Out of the shadows of the cliffs moved a monstrous shambling bulk —an anthropomorphic horror, a grotesque travesty of creation.\nIn general outline it was not unlike a man. But its face, limned in the bright moonlight, was bestial, with close-set ears, flaring nostrils, and a great flabby-lipped mouth in which gleamed white tusk-like fangs. It was covered with shaggy grayish hair, shot with silver which shone in the moonlight, and its great misshapen paws hung nearly to the earth. Its bulk was tremendous; as it stood on its short bowed legs, its bullet-head rose above that of the man who faced it; the sweep of the hairy breast and giant shoulders was breathtaking; the huge arms were like knotted trees.",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Chimères de Fer dans la Clarté Lunaire",
+                    "en": "Iron Shadows in the Moon",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -2749,8 +2673,8 @@
     
             "image": "data/tiles/img/gray-man-ape.png",
             "imageHD": "data/tiles/img/gray-man-ape_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":59, "y":56},
+            "image_zoom": 91,
             "model": "gray-man-ape",
             "origins": ["stretchgoal", "king"],
     
@@ -2778,13 +2702,13 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Mais quelle est cette chose qui peut pleurer comme une femme, rire comme un démon et briller d'une lueur surnaturelle en glissant au milieu des arbres? pantela Balthus, essuyant la sueur qui ruisselait sur son visage blême. -Un démon des marais, répondit Conan sur un ton morose.",
+                    "en": "« But what thing is it that can cry like a woman and laugh like a devil, and shines like witch-fire as it glides through the trees? » gasped Balthus, mopping the sweat from his pale face.\n« A swamp devil, » responded Conan morosely.",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Au-delà de la Rivière Noire",
+                    "en": "Beyond the Black River",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -2794,7 +2718,7 @@
     
             "image": "data/tiles/img/swamp-demon.png",
             "imageHD": "data/tiles/img/swamp-demon_hd.png",
-            "image_location": {"x":50, "y":50},
+            "image_location": {"x":55, "y":63},
             "image_zoom": 100,
             "model": "swamp-demon",
             "origins": ["stretchgoal", "king"],
@@ -2907,13 +2831,13 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Il était nu à l'exception d'un pagne, d'un collier de dents humaines et d'un bracelet de cuivre. Une courte épée était passée dans la ceinture qui retenait son pagne et une de ses mains agrippait toujours un puissant arc noir. Il avait les cheveux longs et noirs, mais le voyageur ne put rien dire d'autre sur sa tête, car son visage n'était plus qu'une bouillie de sang et de cervelle.",
+                    "en": "he Picts are a white race too, in that they are not black nor brown nor yellow, but they are black-eyed and black-haired and dark of skin.\nI could not mistake the sound. Only one drum in the world makes just that deep, menacing, sullen thunder: a Pictish war-drum, in the hands of those wild painted savages who haunted the Wilderness beyond the border of the Westermarck.",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Au-delà de la Rivière Noire",
+                    "en": "Wolves Beyond the Border",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -2923,8 +2847,8 @@
     
             "image": "data/tiles/img/pict-archers.png",
             "imageHD": "data/tiles/img/pict-archers_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":58, "y":56},
+            "image_zoom": 114,
             "model": "pict-archers",
             "origins": ["stretchgoal", "king"]
         },
@@ -2948,13 +2872,13 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Il était nu à l'exception d'un pagne, d'un collier de dents humaines et d'un bracelet de cuivre. Une courte épée était passée dans la ceinture qui retenait son pagne et une de ses mains agrippait toujours un puissant arc noir. Il avait les cheveux longs et noirs, mais le voyageur ne put rien dire d'autre sur sa tête, car son visage n'était plus qu'une bouillie de sang et de cervelle.",
+                    "en": "he Picts are a white race too, in that they are not black nor brown nor yellow, but they are black-eyed and black-haired and dark of skin.\nI could not mistake the sound. Only one drum in the world makes just that deep, menacing, sullen thunder: a Pictish war-drum, in the hands of those wild painted savages who haunted the Wilderness beyond the border of the Westermarck.",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Au-delà de la Rivière Noire",
+                    "en": "Wolves Beyond the Border",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -2964,8 +2888,8 @@
     
             "image": "data/tiles/img/pict-warriors.png",
             "imageHD": "data/tiles/img/pict-warriors_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":51, "y":48},
+            "image_zoom": 113,
             "model": "pict-warriors",
             "origins": ["stretchgoal", "king"]
         },
@@ -2989,13 +2913,13 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Des pirates ! chuchota Conan, avec un sourire sévère sur ses minces lèvres. {...} Ils étaient environ soixante-dix, une horde sauvage composée d'hommes de nombreuses nations: Kothiens, Zamoriens, Brythuniens, Corinthiens, Shémites. Leurs traits reflétaient la sauvagerie de leurs moeurs. Beaucoup portaient la marque du fouet ou du fer rouge. Il y avait des oreilles coupées, des nez fendus en deux, des orbites béantes, des moignons de poignet ... blessures infligées par le bourreau autant que cicatrices résultant de batailles sanglantes. La plupart d'entre eux étaient à moitié nus, mais leurs quelques vêtements étaient de prix et élégants: jaquettes aux soutaches d'or, ceinturons de satin, braies de soie en lambeaux, maculées de goudron et de sang, le disputant avec leurs pièces de cuirasse en argent ciselé. Des gemmes étincelaient sur des anneaux de nez et des boucles d'oreilles, sur les pommeaux de leurs dagues.",
+                    "en": "« Pirates! » whispered Conan, a grim smile on his thin lips. (…) There were some seventy of them, a wild horde made up of men from many nations: Kothians, Zamorians, Brythunians, Corinthians, Shemites. Their features reflected the wildness of their natures. Many bore the scars of the lash or the branding-iron. There were cropped ears, slit noses, gaping eye-sockets, stumps of wrists—marks of the hangman as well as scars of battle. Most of them were half naked, but the garments they wore were fine; gold-braided jackets, satin girdles, silken breeches, tattered, stained with tar and blood, vied with pieces of silver- chased armor. Jewels glittered in nose-rings and earrings, and in the hilts of their daggers.",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Chimères de Fer dans la Clarté Lunaire",
+                    "en": "Iron Shadows in the Moon",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -3003,11 +2927,11 @@
                 }
             },
     
-            "image": "data/tiles/img/pirates-alt.png",
-            "imageHD": "data/tiles/img/pirates-alt_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "pirates-alt",
+            "image": "data/tiles/img/pirates.png",
+            "imageHD": "data/tiles/img/pirates_hd.png",
+            "image_location": {"x":68, "y":55},
+            "image_zoom": 91,
+            "model": "pirates",
             "origins": ["stretchgoal", "king"]
         },
     
@@ -4193,22 +4117,6 @@
             "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
             "tokens": [],
-    
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
     
             "image": "data/tiles/img/vanir-primitives.png",
             "imageHD": "data/tiles/img/vanir-primitives_hd.png",

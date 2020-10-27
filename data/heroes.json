@@ -1680,21 +1680,7 @@
                 "en": "Shentu",
                 "it": "Shentu"
             },
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": ""
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": ""
-                },
-                "author": {
-                    "name": ""
-                }
-            },
+            "quote": null,
 
             "gems": 10,
             "encumbrance": [11, 7, 9],
