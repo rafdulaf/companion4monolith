@@ -159,6 +159,7 @@ var EncyclopediaModels = {
                     'en': "Used by",
                     'it': "Utilizzata da"
                 },
+                sort: true,
                 values: [
                     {
                         id: "hero",
@@ -221,6 +222,7 @@ var EncyclopediaModels = {
                     'en': "Type",
                     'it': "Tipo"
                 },
+                sort: true,
                 values: [
                     {
                         id: "human",

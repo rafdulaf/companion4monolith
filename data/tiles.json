@@ -78,7 +78,7 @@
         {
             "id": "captain",
             "name": {
-                "fr": "",
+                "fr": "Capitaine",
                 "en": "Captain",
                 "it": "TODO_TRANSLATE"
             },
@@ -889,7 +889,7 @@
         {
             "id": "conans-lion",
             "name": {
-                "fr": "",
+                "fr": "Lion de Conan",
                 "en": "Conan’s Lion",
                 "it": "TODO_TRANSLATE"
             },
@@ -2735,11 +2735,11 @@
                 }
             },
     
-            "image": "data/tiles/img/the-black-ones-green.png",
-            "imageHD": "data/tiles/img/the-black-ones-green_hd.png",
+            "image": "data/tiles/img/the-black-ones.png",
+            "imageHD": "data/tiles/img/the-black-ones_hd.png",
             "image_location": {"x":50, "y":50},
             "image_zoom": 100,
-            "model": "the-black-ones-green",
+            "model": "the-black-ones",
             "origins": ["blackones"],
     
             "count": 1
@@ -2749,7 +2749,7 @@
             "id": "the-black-ones-purple",
             "name": {
                 "fr": "",
-                "en": "The Black Ones - Purple",
+                "en": "The Black Ones",
                 "it": "TODO_TRANSLATE"
             },
     
@@ -2778,11 +2778,11 @@
                 }
             },
     
-            "image": "data/tiles/img/the-black-ones-purple.png",
-            "imageHD": "data/tiles/img/the-black-ones-purple_hd.png",
+            "image": "data/tiles/img/the-black-ones.png",
+            "imageHD": "data/tiles/img/the-black-ones_hd.png",
             "image_location": {"x":50, "y":50},
             "image_zoom": 100,
-            "model": "the-black-ones-purple",
+            "model": "the-black-ones",
             "origins": ["blackones"],
     
             "count": 1
@@ -2864,11 +2864,11 @@
                 }
             },
     
-            "image": "data/tiles/img/crossbowmen-green.png",
-            "imageHD": "data/tiles/img/crossbowmen-green_hd.png",
+            "image": "data/tiles/img/crossbowmen.png",
+            "imageHD": "data/tiles/img/crossbowmen_hd.png",
             "image_location": {"x":50, "y":50},
             "image_zoom": 100,
-            "model": "crossbowmen-green",
+            "model": "crossbowmen",
             "origins": ["crossbowmen"],
     
             "count": 1
@@ -2907,11 +2907,11 @@
                 }
             },
     
-            "image": "data/tiles/img/crossbowmen-red.png",
-            "imageHD": "data/tiles/img/crossbowmen-red_hd.png",
+            "image": "data/tiles/img/crossbowmen.png",
+            "imageHD": "data/tiles/img/crossbowmen_hd.png",
             "image_location": {"x":50, "y":50},
             "image_zoom": 100,
-            "model": "crossbowmen-red",
+            "model": "crossbowmen",
             "origins": ["crossbowmen"],
     
             "count": 1
@@ -3359,7 +3359,7 @@
             "imageHD": "data/tiles/img/salome_hd.png",
             "image_location": {"x":50, "y":50},
             "image_zoom": 100,
-            "model": "salome",
+            "model": "taramis-salome",
             "origins": ["ppbox"],
     
             "count": 1
@@ -3931,9 +3931,9 @@
         {
             "id": "shuang-mian",
             "name": {
-                "fr": "",
-                "en": "Shuang Mian",
-                "it": "TODO_TRANSLATE"
+                "fr": "Shuang Miàn",
+                "en": "Shuang Miàn",
+                "it": "Shuang Miàn"
             },
     
             "colors": ["gray"],
@@ -3944,18 +3944,19 @@
             "skills": { "0": "miscellaneous/concentration", "1": "magic/spell_caster", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
+                { "image":"data/tiles/img/shuang-mian_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 },
                 { "image":"data/tiles/img/shuang-mian_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Pour autant qu’il le sache, il avait verrouillé sa porte de l’intérieur. Or celle-ci était maintenant ouverte et quatre hommes entraient dans la pièce l’un après l’autre. Lorsqu’il les aperçut, il eut la chair de poule. Publio avait vu bien des individus étranges dans sa vie, mais aucun ne ressemblait à ceux-là. Ils étaient grands, décharnés et vêtus d’une robe noire. Leurs visages étaient des ovales jaune sombre, à moitié dissimulés par leur capuche. Il ne parvenait pas à mieux voir leurs traits et, d’une façon inexplicable, il était content de ne pas mieux les distinguer. Chacun d’eux tenait un long bâton, étrangement tacheté.",
+                    "en": "To the best of his knowledge the door had been bolted from within; but now it stood open and four men filed into the chamber. At the sight of them his flesh crawled. Many strange beings Publio had seen in his lifetime, but none before like these. They were tall and gaunt, black-robed, and their faces were dim yellow ovals in the shadows of their coifs. He could not tell much about their features and was unreasoningly glad that he could not. Each bore a long, curiously mottled staff.",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "L’Heure du Dragon",
+                    "en": "The Hour of the Dragon",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -3964,19 +3965,18 @@
             },
     
             "image": "data/tiles/img/shuang-mian.png",
-            "imageHD": "data/tiles/img/shuang-mian_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":51, "y":53},
+            "image_zoom": 97,
             "model": "shuang-mian",
             "origins": ["khitai"],
     
-            "count": 1
+            "count": 2
         },
     
         {
             "id": "evil-hound",
             "name": {
-                "fr": "",
+                "fr": "Molosse infernal",
                 "en": "Evil Hound",
                 "it": "TODO_TRANSLATE"
             },
@@ -3988,45 +3988,27 @@
             "dices": { "0": "red", "1": "red", "2": "none", "3": "none" },
             "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image":"data/tiles/img/evil-hound_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
-            ],
+            "tokens": [],
     
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
-            "image": "data/tiles/img/evil-hound.png",
-            "imageHD": "data/tiles/img/evil-hound_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "evil-hound",
+            "image": "data/tiles/img/dark-demon.png",
+            "imageHD": "data/tiles/img/dark-demon_hd.png",
+            "image_location": {"x":58, "y":46},
+            "image_zoom": 132,
+            "model": "dark-demon",
             "origins": ["khitai"],
     
-            "count": 1
+            "count": 2
         },
     
         {
             "id": "khitan-guards",
             "name": {
-                "fr": "",
+                "fr": "Gardes Khitan",
                 "en": "Khitan Guards",
                 "it": "TODO_TRANSLATE"
             },
     
-            "colors": ["gray"],
+            "colors": ["gray", "red"],
             "movement": "2",
             "defense": "1",
             "attacktype": "contact",
@@ -4053,66 +4035,21 @@
     
             "image": "data/tiles/img/khitan-guards.png",
             "imageHD": "data/tiles/img/khitan-guards_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":55, "y":61},
+            "image_zoom": 128,
             "model": "khitan-guards",
-            "origins": ["khitai"],
-    
-            "count": 1
-        },
-    
-        {
-            "id": "khitan-guards-red",
-            "name": {
-                "fr": "",
-                "en": "Khitan Guards - Red",
-                "it": "TODO_TRANSLATE"
-            },
-    
-            "colors": ["red"],
-            "movement": "2",
-            "defense": "1",
-            "attacktype": "contact",
-            "dices": { "0": "yellow", "1": "yellow", "2": "none", "3": "none" },
-            "skills": { "0": "movement/blocking", "1": "none", "2": "none", "3": "none" },
-            "reinforcement": "1",
-            "tokens": [],
-    
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
-            "image": "data/tiles/img/khitan-guards-red.png",
-            "imageHD": "data/tiles/img/khitan-guards-red_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "khitan-guards-red",
-            "origins": ["khitai"],
-    
-            "count": 1
+            "origins": ["khitai"]
         },
     
         {
             "id": "honor-guards",
             "name": {
-                "fr": "",
+                "fr": "Gardes d'Honneur",
                 "en": "Honor Guards",
                 "it": "TODO_TRANSLATE"
             },
     
-            "colors": ["gray"],
+            "colors": ["gray", "green"],
             "movement": "2",
             "defense": "2",
             "attacktype": "contact",
@@ -4120,85 +4057,24 @@
             "skills": { "0": "defense/sacrifice", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "2",
             "tokens": [],
-    
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
     
             "image": "data/tiles/img/honor-guards.png",
             "imageHD": "data/tiles/img/honor-guards_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":50, "y":66},
+            "image_zoom": 115,
             "model": "honor-guards",
-            "origins": ["khitai"],
-    
-            "count": 1
-        },
-    
-        {
-            "id": "honor-guards-green",
-            "name": {
-                "fr": "",
-                "en": "Honor Guards - Green",
-                "it": "TODO_TRANSLATE"
-            },
-    
-            "colors": ["green"],
-            "movement": "2",
-            "defense": "2",
-            "attacktype": "contact",
-            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
-            "skills": { "0": "defense/sacrifice", "1": "none", "2": "none", "3": "none" },
-            "reinforcement": "2",
-            "tokens": [],
-    
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
-            "image": "data/tiles/img/honor-guards-green.png",
-            "imageHD": "data/tiles/img/honor-guards-green_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "honor-guards-green",
-            "origins": ["khitai"],
-    
-            "count": 1
+            "origins": ["khitai"]
         },
     
         {
             "id": "javelin-throwers",
             "name": {
-                "fr": "",
+                "fr": "Javeliniers",
                 "en": "Javelin Throwers",
                 "it": "TODO_TRANSLATE"
             },
     
-            "colors": ["gray"],
+            "colors": ["gray", "purple"],
             "movement": "3",
             "defense": "1",
             "attacktype": "ranged",
@@ -4206,80 +4082,19 @@
             "skills": { "0": "attack/elite_shooter", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "2",
             "tokens": [],
-    
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
     
             "image": "data/tiles/img/javelin-throwers.png",
             "imageHD": "data/tiles/img/javelin-throwers_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":56, "y":55},
+            "image_zoom": 84,
             "model": "javelin-throwers",
-            "origins": ["khitai"],
-    
-            "count": 1
-        },
-    
-        {
-            "id": "javelin-throwers-purple",
-            "name": {
-                "fr": "",
-                "en": "Javelin Throwers - Purple",
-                "it": "TODO_TRANSLATE"
-            },
-    
-            "colors": ["purple"],
-            "movement": "3",
-            "defense": "1",
-            "attacktype": "ranged",
-            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
-            "skills": { "0": "attack/elite_shooter", "1": "none", "2": "none", "3": "none" },
-            "reinforcement": "2",
-            "tokens": [],
-    
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
-            "image": "data/tiles/img/javelin-throwers-purple.png",
-            "imageHD": "data/tiles/img/javelin-throwers-purple_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "javelin-throwers-purple",
-            "origins": ["khitai"],
-    
-            "count": 1
+            "origins": ["khitai"]
         },
     
         {
             "id": "foo-dogs",
             "name": {
-                "fr": "",
+                "fr": "Chiens de Fo",
                 "en": "Foo Dogs",
                 "it": "TODO_TRANSLATE"
             },
@@ -4293,30 +4108,14 @@
             "reinforcement": "1",
             "tokens": [],
     
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
             "image": "data/tiles/img/foo-dogs.png",
             "imageHD": "data/tiles/img/foo-dogs_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":29, "y":48},
+            "image_zoom": 195,
             "model": "foo-dogs",
             "origins": ["khitai"],
     
-            "count": 1
+            "count": 2
         },
     
         {
@@ -4428,13 +4227,13 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Dans sa main tendue la chose vivante se tordait avec colère. Cette fois, ce n'était plus une illusion. Thugra Khotan tenait dans sa paume nue un scorpion noir, long de plus d'un pied, la créature la plus mortelle du désert ; une piqûre de son aiguillon pointu signifiait une mort instantanée.",
+                    "en": "In his extended hand something alive writhed and slavered. No tricks of shadows this time. In his naked hand Thugra Khotan gripped a black scorpion, more than a foot in length, the deadliest creature of the desert, the stroke of whose spiked tail was instant death.",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Le Colosse Noir",
+                    "en": "Black Colossus",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -4442,11 +4241,11 @@
                 }
             },
     
-            "image": "data/tiles/img/giant-scorpions.png",
-            "imageHD": "data/tiles/img/giant-scorpions_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "giant-scorpions",
+            "image": "data/tiles/img/giant-scorpion.png",
+            "imageHD": "data/tiles/img/giant-scorpion_hd.png",
+            "image_location": {"x":54, "y":41},
+            "image_zoom": 112,
+            "model": "giant-scorpion",
             "origins": ["stygia"],
     
             "count": 1
@@ -4499,7 +4298,7 @@
             "id": "eternal-guard-blue",
             "name": {
                 "fr": "",
-                "en": "Eternal Guard - Blue",
+                "en": "Eternal Guard",
                 "it": "TODO_TRANSLATE"
             },
     
@@ -4528,11 +4327,11 @@
                 }
             },
     
-            "image": "data/tiles/img/eternal-guard-blue.png",
-            "imageHD": "data/tiles/img/eternal-guard-blue_hd.png",
+            "image": "data/tiles/img/eternal-guard.png",
+            "imageHD": "data/tiles/img/eternal-guard_hd.png",
             "image_location": {"x":50, "y":50},
             "image_zoom": 100,
-            "model": "eternal-guard-blue",
+            "model": "eternal-guard",
             "origins": ["stygia"],
     
             "count": 1

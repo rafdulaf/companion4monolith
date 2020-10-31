@@ -154,14 +154,13 @@ var EncyclopediaTiles = {
 
             
             {
-                id:'type',
+                id:'kind',
                 label: {
-                    'fr': "Type",
+                    'fr': "Typologie",
                     'en': "Kind",
                     'it': "Tipologia"
                 },
                 sort: true,
-                operator: "or/and",
                 values: [
                     {
                         id: "melee",
@@ -194,8 +193,156 @@ var EncyclopediaTiles = {
                         || (selectedValues.indexOf('ranged')!=-1 && item.attacktype == "ranged" && item.dices['0'] != "none")
                         || (selectedValues.indexOf('none')!=-1 && item.dices['0'] == "none");
                 }
-            }
+            },
+            
+            {
+                id: 'type',
+                label: {
+                    'fr': "Type",
+                    'en': "Type",
+                    'it': "Tipo"
+                },
+                sort: true,
+                values: [
+                    {
+                        id: "human",
+                        label: {
+                            'fr': "Humain",
+                            'en': "Human",
+                            'it': "Umano"
+                        }
+                    },
+                    {
+                        id: "animal",
+                        label: {
+                            'fr': "Animal",
+                            'en': "Animal",
+                            'it': "Animale"
+                        }
+                    },
+                    {
+                        id: "monster",
+                        label: {
+                            'fr': "Monstre",
+                            'en': "Monster",
+                            'it': "Mostro"
+                        }
+                    },
+                    {
+                        id: "none",
+                        label: {
+                            'fr': "Aucun",
+                            'en': "None",
+                            'it': "Nessuno"
+                        }
+                    }
+                ],
+                filter: function(item, selectedValues) {
+                    var model = null;
+                    for (var i = 0; i < Encyclopedia.models.list.length; i++)
+                    {
+                        if (item.model == Encyclopedia.models.list[i].id)
+                        {
+                            model = Encyclopedia.models.list[i];
+                            break;
+                        }
+                    }
+                    for (var i = 0; i < selectedValues.length; i++)
+                    {
+                        if (selectedValues[i] == (model != null ? model.type : 'none'))
+                        {
+                            return true;
+                        }
+                    }
+                    return false;
+                }
+            },
+            
+            {
+                id: 'token',
+                label: {
+                    'fr': "Jeton",
+                    'en': "Token",
+                    'it': "TODO_TRANSLATE"
+                },
+                sort: true,
+                values: [
+                    {
+                        id: "with",
+                        label: {
+                            'fr': "Avec",
+                            'en': "With",
+                            'it': "TODO_TRANSLATE"
+                        }
+                    },
+                    {
+                        id: "without",
+                        label: {
+                            'fr': "Sans",
+                            'en': "Without",
+                            'it': "TODO_TRANSLATE"
+                        }
+                    }
+                ],
+                filter: function(item, selectedValues) {
+                    // Tokens can be shared by several tiles. Model links them
+                    var tokens = EncyclopediaTiles._getTokensOrSharedTokens(item);
+                    for (var i = 0; i < selectedValues.length; i++)
+                    {
+                        if (selectedValues[i] == 'with' && tokens.length > 0
+                            || selectedValues[i] == 'without' && tokens.length == 0)
+                        {
+                            return true;
+                        }
+                    }
+                    return false;
+                }
+            }               
         ]        
+    },
+    
+    _getTokensOrSharedTokens: function(tile)
+    {
+        var tokens = [];
+        
+        // Tokens can be shared by several tiles. Model links them
+        var model = null;
+        for (var i = 0; i < Encyclopedia.models.list.length; i++)
+        {
+            if (tile.model == Encyclopedia.models.list[i].id)
+            {
+                model = Encyclopedia.models.list[i];
+                break;
+            }
+        }
+        if (model == null)
+        {
+            return tokens;
+        }
+        
+        var tiles = [];
+        for (var i in Encyclopedia.tiles.list)
+        {
+            var tile = Encyclopedia.tiles.list[i];
+            if (tile.model == model.id)
+            {
+                tiles.push(tile);
+            }
+        }
+        
+        for (var j = 0; j < tiles.length; j++)
+        {
+            var tile = tiles[j];
+            if (tile.tokens)
+            {
+                for (var k = 0; k < tile.tokens.length; k++)
+                {
+                    tokens.push(tile.tokens[k]);
+                }
+            }
+        }
+        
+        return tokens;
     },
 
     init: function()
