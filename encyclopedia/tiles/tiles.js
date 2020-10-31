@@ -251,7 +251,7 @@ var EncyclopediaTiles = {
             tile = tileList[i - ignoredPrevious];
             
             tiles += "<a id='tile-" + tile.id + "' href='javascript:void(0)' data-count='" + (ignoredPrevious+1) + "' onclick='EncyclopediaTiles.openTile(\"" + tile.id + "\")'>";
-            tiles += Tile._tileCode(EncyclopediaTiles._convertTileToStudio(tile));
+            tiles += Tile._tileCode(EncyclopediaTiles._convertTileToStudio(tile, false));
             tiles += "</a>";
             
             ignoredPrevious = 0;
@@ -289,9 +289,8 @@ var EncyclopediaTiles = {
         }
     },
     
-    _convertTileToStudio: function(tile, i)
+    _convertTileToStudio: function(tile, hd)
     {
-        i = i ? i : 0;
         return {
             id: tile.id + "-" + Math.random(),
             name: tile.name[Language],
@@ -302,7 +301,7 @@ var EncyclopediaTiles = {
             dices: { 0: tile.dices[0], 1: tile.dices[1], 2: tile.dices[2], 3: tile.dices[3] },
             skills: { 0: tile.skills[0], 1: tile.skills[1], 2: tile.skills[2], 3: tile.skills[3] },
             reinforcement: tile.reinforcement || "",
-            image: tile.imageHD ? tile.imageHD + "?version=" + Version : null,
+            image: tile.imageHD && hd ? tile.imageHD + "?version=" + Version : (tile.image ? tile.image + "?version=" + Version : null),
             imagelocation: {x: tile.image_location.x, y: tile.image_location.y},
             imagezoom: tile.image_zoom,
             imagerotation: "0"
@@ -361,6 +360,7 @@ var EncyclopediaTiles = {
         var displayTiles = [];
         
         var colors = {};
+        var images = {};
         var originsCount = {};
         for (var e in tiles)
         {
@@ -375,9 +375,18 @@ var EncyclopediaTiles = {
             
             if (!colors[tile.color])
             {
+                images[tile.image] = true;
                 displayTiles.push(tile);
             }
-            colors[tile.color] = colors[tile.color] ? colors[tile.color] + 1 : 1;
+            if (!images[tile.image])
+            {
+                images[tile.image] = true;
+                displayTiles.push(tile);
+            }       
+            else
+            {
+                colors[tile.color] = colors[tile.color] ? colors[tile.color] + 1 : 1;
+            }
         }
         
         var originString = "";
@@ -459,7 +468,7 @@ var EncyclopediaTiles = {
                 }
                 
                 colors[tile.color] = true;
-                var studioTile = EncyclopediaTiles._convertTileToStudio(tile);
+                var studioTile = EncyclopediaTiles._convertTileToStudio(tile, true);
                 studiotiles.push(studioTile);
             }
             
