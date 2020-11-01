@@ -2574,7 +2574,7 @@
         {
             "id": "baal-pteor",
             "name": {
-                "fr": "",
+                "fr": "Baal Pteor",
                 "en": "Baal Pteor",
                 "it": "TODO_TRANSLATE"
             },
@@ -2584,7 +2584,7 @@
             "defense": "3",
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "red", "2": "red", "3": "none" },
-            "skills": { "0": "movement/blocking", "1": "attack/precision_strike", "2": "none", "3": "none" },
+            "skills": { "0": "attack/precision_strike", "1": "movement/blocking", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
                 { "image":"data/tiles/img/baal-pteor_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
@@ -2592,13 +2592,13 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Cet homme était nu à l'exception d'un pagne et de sandales dont les lacets montaient jusque sur ses chevilles. Il était brun de peau et avait des cheveux noirs et courts. Ses yeux perpétuellement en mouvement, aussi noirs que ses cheveux, ajoutaient encore à l'air hautain qui se dégageait de son large visage. Il était énorme par la taille, avec un torse imposant et des membres puissants dont les muscles noueux saillaient au moindre de ses mouvements. Ses mains étaient les plus grandes que Conan ait jamais vues. L'assurance de posséder une force musculaire titanesque transparaissait dans chacun de ses gestes et chacune de ses postures.",
+                    "en": "The man was naked except for a loin-cloth and high-strapped sandals. He was brown-skinned, with close-cropped black hair and restless black eyes that set off a broad, arrogant face. In girth and breadth he was enormous, with huge limbs on which the great muscles swelled and rippled at each slightest movement. His hands were the largest Conan had ever seen. The assurance of gigantic physical strength colored his every action and inflection.\n“Who the devil are you?” Conan growled.\n“I am Baal-pteor,” the man answered. “Once, long ago and in another land, I had another name. But this is a good name, and why Totrasmek gave it to me, any temple wench can tell you.”",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Les Mangeurs d'hommes de Zamboula",
+                    "en": "The Man-Eaters of Zamboula",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -2613,13 +2613,13 @@
             "model": "baal-pteor",
             "origins": ["baalpteor"],
     
-            "count": 1
+            "count": 3
         },
     
         {
             "id": "black-dragons",
             "name": {
-                "fr": "",
+                "fr": "Les Dragons Noirs",
                 "en": "Black Dragons",
                 "it": "TODO_TRANSLATE"
             },
@@ -2635,20 +2635,20 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "le comte Trocero de Poitain, sénéchal du roi, part pour la Némédie avec Prospero, bras droit du roi Conan, accompagné de la plupart des troupes poitainiennes et d'un bon nombre de ces Dragons Noirs qui forment la garde rapprochée du roi. {...} Alors un concert de voix lui parvint, et la pièce se retrouva envahie par une foule de gens de cour - chevaliers, pairs du royaume, hommes d'armes, conseillers- enfin réveillés et attirés par le fracas de la bataille, tous jasant, vociférant, et se bousculant les uns les autres. Les Dragons Noirs étaient là, fous de rage, jurant et trépignant sur place, la main sur la poignée de leur épée, poussant des jurons païens.",
+                    "en": "Then a medley of voices reached his ears, and the room was thronged with the finally roused people of the court—knights, peers, ladies, men-at- arms, councillors—all babbling and shouting and getting in one another's way. The Black Dragons were on hand, wild with rage, swearing and ruffling, with their hands on their hilts and foreign oaths in their teeth.",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Le Phénix sur l'Epée",
+                    "en": "The Phoenix on the Sword",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
                     "name": "Robert E. Howard"
                 }
             },
-    
+            
             "image": "data/tiles/img/black-dragons.png",
             "imageHD": "data/tiles/img/black-dragons_hd.png",
             "image_location": {"x":50, "y":50},
@@ -2662,29 +2662,29 @@
         {
             "id": "the-black-ones",
             "name": {
-                "fr": "",
+                "fr": "Les hommes noirs",
                 "en": "The Black Ones",
                 "it": "TODO_TRANSLATE"
             },
     
-            "colors": ["gray"],
+            "colors": ["gray", "purple", "green"],
             "movement": "3",
             "defense": "3",
             "attacktype": "contact",
             "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
             "skills": { "0": "attack/precision_strike", "1": "miscellaneous/jinx", "2": "none", "3": "none" },
-            "reinforcement": "",
+            "reinforcement": "3",
             "tokens": [],
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Ces créatures étaient noires et nues, faites comme des hommes. Mais debout, la plus petite d'entre elles aurait dépassé de la tête et des épaules le pirate pourtant de haute taille. Leurs membres étaient longs et minces, mais finement formés, sans aucune trace de difformité ou d'anormalité, à 1 'exception de leur taille exceptionnelle. Mais, même à cette distance, Conan perçut la cruauté extrême qui transparaissait dans leurs traits. {...} Conan appelait mentalement ces créatures des « hommes noirs » parce qu'il ne lui venait pas de terme plus approprié. Mais instinctivement, il comprit que ces grands êtres d'ébène n'étaient pas des hommes, selon l'acception commune du terme.",
+                    "en": "These creatures were black and naked, made like men, but the least of them, standing upright, would have towered head and shoulders above the tall pirate. They were rangy rather than massive, but were finely formed, with no suggestion of deformity or abnormality, save as their great height was abnormal. But even at that distance Conan sensed the basic diabolism of their features. (...) Conan mentally termed the creatures black men, for lack of a better term ; instinctively he knew these tall ebony beings were not men, as he understood the term.",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Le Bassin de l’homme noir",
+                    "en": "The Pool of the Black One",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -2697,123 +2697,35 @@
             "image_location": {"x":50, "y":50},
             "image_zoom": 100,
             "model": "the-black-ones",
-            "origins": ["blackones"],
-    
-            "count": 1
-        },
-    
-        {
-            "id": "the-black-ones-green",
-            "name": {
-                "fr": "",
-                "en": "The Black Ones - Green",
-                "it": "TODO_TRANSLATE"
-            },
-    
-            "colors": ["green"],
-            "movement": "3",
-            "defense": "3",
-            "attacktype": "contact",
-            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
-            "skills": { "0": "attack/precision_strike", "1": "miscellaneous/jinx", "2": "none", "3": "none" },
-            "reinforcement": "",
-            "tokens": [],
-    
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
-            "image": "data/tiles/img/the-black-ones.png",
-            "imageHD": "data/tiles/img/the-black-ones_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "the-black-ones",
-            "origins": ["blackones"],
-    
-            "count": 1
-        },
-    
-        {
-            "id": "the-black-ones-purple",
-            "name": {
-                "fr": "",
-                "en": "The Black Ones",
-                "it": "TODO_TRANSLATE"
-            },
-    
-            "colors": ["purple"],
-            "movement": "3",
-            "defense": "3",
-            "attacktype": "contact",
-            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
-            "skills": { "0": "attack/precision_strike", "1": "miscellaneous/jinx", "2": "none", "3": "none" },
-            "reinforcement": "",
-            "tokens": [],
-    
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
-            "image": "data/tiles/img/the-black-ones.png",
-            "imageHD": "data/tiles/img/the-black-ones_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "the-black-ones",
-            "origins": ["blackones"],
-    
-            "count": 1
+            "origins": ["blackones"]
         },
     
         {
             "id": "crossbowmen",
             "name": {
-                "fr": "",
+                "fr": "Arbalétriers",
                 "en": "Crossbowmen",
                 "it": "TODO_TRANSLATE"
             },
     
-            "colors": ["gray"],
+            "colors": ["gray", "red"],
             "movement": "2",
             "defense": "1",
             "attacktype": "ranged",
             "dices": { "0": "red", "1": "none", "2": "none", "3": "none" },
-            "skills": { "0": "attack/elite_shooter", "1": "defense/sacrifice", "2": "none", "3": "none" },
+            "skills": { "0": "defense/sacrifice", "1": "attack/elite_shooter", "2": "none", "3": "none" },
             "reinforcement": "2",
             "tokens": [],
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Le roi et ses alliés firent route vers l'Ouest, à la tête de cinquante mille hommes, chevaliers en armure étincelante, leurs étendards flottant au vent au-dessus de leurs casques, piquiers au casque d'acier dans leur brigandine, arbalétriers en pourpoint de cuir.",
+                    "en": "The king and his allies moved westward at the head of fifty thousand men – knights in shining armor with their pennons streaming above their helmets, pikemen in steel caps and brigandines, crossbowmen in leather jerkins.",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "L'Heure du Dragon",
+                    "en": "The Hour of the Dragon",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -2826,16 +2738,14 @@
             "image_location": {"x":50, "y":50},
             "image_zoom": 100,
             "model": "crossbowmen",
-            "origins": ["crossbowmen"],
-    
-            "count": 1
+            "origins": ["crossbowmen"]
         },
     
         {
             "id": "crossbowmen-green",
             "name": {
-                "fr": "",
-                "en": "Crossbowmen - Green",
+                "fr": "Arbalétriers",
+                "en": "Crossbowmen",
                 "it": "TODO_TRANSLATE"
             },
     
@@ -2844,62 +2754,19 @@
             "defense": "0",
             "attacktype": "ranged",
             "dices": { "0": "redreroll", "1": "none", "2": "none", "3": "none" },
-            "skills": { "0": "attack/elite_shooter", "1": "attack/precision_shot", "2": "none", "3": "none" },
+            "skills": { "0": "attack/precision_shot", "1": "attack/elite_shooter", "2": "none", "3": "none" },
             "reinforcement": "3",
             "tokens": [],
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Le roi et ses alliés firent route vers l'Ouest, à la tête de cinquante mille hommes, chevaliers en armure étincelante, leurs étendards flottant au vent au-dessus de leurs casques, piquiers au casque d'acier dans leur brigandine, arbalétriers en pourpoint de cuir.",
+                    "en": "The king and his allies moved westward at the head of fifty thousand men – knights in shining armor with their pennons streaming above their helmets, pikemen in steel caps and brigandines, crossbowmen in leather jerkins.",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
-            "image": "data/tiles/img/crossbowmen.png",
-            "imageHD": "data/tiles/img/crossbowmen_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "crossbowmen",
-            "origins": ["crossbowmen"],
-    
-            "count": 1
-        },
-    
-        {
-            "id": "crossbowmen-red",
-            "name": {
-                "fr": "",
-                "en": "Crossbowmen - Red",
-                "it": "TODO_TRANSLATE"
-            },
-    
-            "colors": ["red"],
-            "movement": "2",
-            "defense": "1",
-            "attacktype": "ranged",
-            "dices": { "0": "red", "1": "none", "2": "none", "3": "none" },
-            "skills": { "0": "attack/elite_shooter", "1": "defense/sacrifice", "2": "none", "3": "none" },
-            "reinforcement": "2",
-            "tokens": [],
-    
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "L'Heure du Dragon",
+                    "en": "The Hour of the Dragon",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -2920,7 +2787,7 @@
         {
             "id": "demon-of-the-earth",
             "name": {
-                "fr": "",
+                "fr": "Démon de le Terre",
                 "en": "Demon of the Earth",
                 "it": "TODO_TRANSLATE"
             },
@@ -2938,13 +2805,13 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Je suis Thugra Khotan, qui dominera le monde, malgré tous vos dieux pitoyables ! Le désert est empli de mon peuple ; les démons de la terre exécuteront mes ordres, comme les reptiles de la terre m'obéissent.",
+                    "en": "I am Thugra Khotan, who shall rule the world despite your paltry gods! The desert is filled with my people; the demons of the earth shall do my bidding, as the reptiles of the earth obey me.",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Le Colosse Noir",
+                    "en": "Black Colossus",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -2959,13 +2826,13 @@
             "model": "demon-of-the-earth",
             "origins": ["demonearth"],
     
-            "count": 1
+            "count": 2
         },
     
         {
             "id": "dragon",
             "name": {
-                "fr": "",
+                "fr": "Dragon",
                 "en": "Dragon",
                 "it": "TODO_TRANSLATE"
             },
@@ -2975,7 +2842,7 @@
             "defense": "5",
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "redreroll", "2": "redreroll", "3": "redreroll" },
-            "skills": { "0": "movement/wall_wrecker", "1": "movement/blocking", "2": "none", "3": "none" },
+            "skills": { "0": "movement/blocking", "1": "movement/wall_wrecker", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
                 { "image":"data/tiles/img/dragon_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
@@ -2983,13 +2850,13 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Une tête de cauchemar et de démence venait d'apparaître à travers les taillis. Des mâchoires grimaçantes découvraient des rangées de défenses jaunies dégouttant de sang; au-dessus de la gueule béante se trouvait un museau semblable à celui d'un saurien. Des yeux énormes, ressemblant à ceux d'un python, mais grossis un millier de fois, fixaient sans ciller les deux humains pétrifiés qui s'accrochaient au rocher au-dessus de lui. Du sang coulait de sa gueule, maculant ses lèvres squameuses et flasques. Sa tête, plus grosse que celle d'un crocodile, était arquée au bout d'un long cou écailleux sur lequel était hérissée une rangée de pointes en dents de scie. Derrière ce cou, écrasant les bruyères et les jeunes arbres, s'avançait lourdement un corps de titan au torse bombé, posé sur des pattes absurdement courtes. Son ventre blanchâtre balayait presque le sol et le cou crénelé de piques était trop haut pour que Conan l'atteigne sur la pointe des pieds. Une longue queue pointue, pareille à celle d'un scorpion aux proportions gigantesques, traînait à sa suite.",
+                    "en": "Through the thicket was thrust a head of nightmare and lunacy. Grinning jaws bared rows of dripping yellow tusks; above the yawning mouth wrinkled a saurian-like snout. Huge eyes, like those of a python a thousand times magnified, stared unwinkingly at the petrified humans clinging to the rock above it. Blood smeared the scaly, flabby lips and dripped from the huge mouth.\nThe head, bigger than that of a crocodile, was further extended on a long scaled neck on which stood up rows of serrated spikes, and after it, crushing down the briars and saplings, waddled the body of a titan, a gigantic, barrel-bellied torso on absurdly short legs. The whitish belly almost raked the ground, while the serrated back-bone rose higher than Conan could have reached on tiptoe. A long spiked tail, like that of a gargantuan scorpion, trailed out behind.",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Les Clous Rouges",
+                    "en": "Red Nails",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -3004,7 +2871,7 @@
             "model": "dragon",
             "origins": ["dragon"],
     
-            "count": 1
+            "count": 2
         },
     
         {
@@ -3053,7 +2920,7 @@
         {
             "id": "sabertooth-tiger",
             "name": {
-                "fr": "",
+                "fr": "Tigre à Dents de Sabre",
                 "en": "Sabertooth Tiger",
                 "it": "TODO_TRANSLATE"
             },
@@ -3071,13 +2938,13 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "La créature s'approcha à pas feutrés, tel un spectre surgi du passé ... un tigre à dents de sabre. Aucun chasseur hyborien ne s'était trouvé face à l'un de ces fauves des ères primitives depuis des centaines d'années. Des légendes immémoriales conféraient à ces créatures des pouvoirs surnaturels, du fait de leur pelage à la teinte spectrale et de leur férocité démoniaque.\nLe fauve qui se glissait doucement vers les hommes attachés sur les poteaux était plus long et plus gros qu'un tigre rayé ordinaire, presque aussi imposant qu'un ours. Ses épaules et ses pattes avant étaient si massives et puissamment musclées que l'avant de son corps semblait trop lourd comparé au reste, même si ses pattes arrière étaient plus puissantes que celles d'un lion. Ses mâchoires étaient massives et sa tête brutale. Son cerveau n'était pas très développé et n'avait de place que pour un seul instinct, celui de détruire. C'était une aberration de l'espèce des carnivores, une branche folle de 1'évolution qui avait abouti à cette impensable horreur de crocs et de griffes.",
+                    "en": "A shuddering gasp swept over the village and men crowded hastily back, jamming one another between the huts. Balthus felt the short hair stir on his scalp. The creature that stood in the gate was like the embodiment of nightmare legend. Its color was of a curious pale quality which made it seem ghostly and unreal in the dim light. But there was nothing unreal about the low-hung savage head, and the great curved fangs that glistened in the firelight. On noiseless padded feet it approached like a phantom out of the past. It was a survival of an older, grimmer age, the ogre of many an ancient legend—a saber-tooth tiger. No Hyborian hunter had looked upon one of those primordial brutes for centuries. Immemorial myths lent the creatures a supernatural quality, induced by their ghostly color and their fiendish ferocity.\nThe beast that glided toward the men on the stakes was longer and heavier than a common, striped tiger, almost as bulky as a bear. Its shoulders and forelegs were so massive and mightily muscled as to give it a curiously top- heavy look, though its hindquarters were more powerful than that of a lion. Its jaws were massive, but its head was brutishly shaped. Its brain capacity was small. It had room for no instincts except those of destruction. It was a freak of carnivorous development, evolution run amuck in a horror of fangs and talons.",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Au-delà de la Rivière Noire",
+                    "en": "Beyond the Black River",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -3092,13 +2959,13 @@
             "model": "sabertooth-tiger",
             "origins": ["sabretoothtiger"],
     
-            "count": 1
+            "count": 2
         },
     
         {
             "id": "afari",
             "name": {
-                "fr": "",
+                "fr": "Afari",
                 "en": "Afari",
                 "it": "TODO_TRANSLATE"
             },
@@ -3108,7 +2975,7 @@
             "defense": "3",
             "attacktype": "contact",
             "dices": { "0": "red", "1": "red", "2": "none", "3": "none" },
-            "skills": { "0": "attack/precision_strike", "1": "attack/counterattack", "2": "none", "3": "none" },
+            "skills": { "0": "attack/counterattack", "1": "attack/precision_strike", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
                 { "image":"data/tiles/img/afari_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
@@ -3116,13 +2983,13 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "- Tuthmes ! Laisse-moi entrer ! Le démon est lâché dans Shumballa ! La porte s'ouvrit, et celui qui venait de parler s'engouffra dans la pièce, un individu sec, au corps noueux, vêtu d'une djebbeh blanche, le teint mat, le blanc des yeux brillant. Il fut accueilli par Tuthmes, grand, mince, sombre de peau, avec les traits droits typiques de sa caste. -Que dis-tu, Afari ? Afari ferma la porte avant de répondre; il haletait comme après une longue course. Il était plus petit que Tuthmes, et ses traits étaient nettement plus négroïdes. - Amboola! Il est mort ! Dans la Tour Rouge !",
+                    "en": "Tuthmes ! Let me in ! The devil is loose in Shumballa !” The door was opened, and the speaker burst into the room – a lean, wiry man in a white djebbeh, dark skinned, the whites of his eyes gleaming. He was met by Tuthmes, tall, slender, dusky, with the straight features of his caste. “What are you saying, Afari ?” Afari closed the door before he answered ; he was panting as if from a long run. He was shorter than Tuthmes, and the negroid was more predominant in his features. “Amboola ! He is dead! In the Red Tower !",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Histoire inachevée - sans titre",
+                    "en": "Untitled draft",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -3143,7 +3010,7 @@
         {
             "id": "ghayoor",
             "name": {
-                "fr": "",
+                "fr": "Ghayoor",
                 "en": "Ghayoor",
                 "it": "TODO_TRANSLATE"
             },
@@ -3153,27 +3020,11 @@
             "defense": "3",
             "attacktype": "contact",
             "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
-            "skills": { "0": "attack/precision_strike", "1": "defense/sacrifice", "2": "none", "3": "none" },
+            "skills": { "0": "defense/sacrifice", "1": "attack/precision_strike", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
                 { "image":"data/tiles/img/ghayoor_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
-    
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
     
             "image": "data/tiles/img/ghayoor.png",
             "imageHD": "data/tiles/img/ghayoor_hd.png",
@@ -3186,54 +3037,9 @@
         },
     
         {
-            "id": "shafiah",
-            "name": {
-                "fr": "",
-                "en": "Shafiah",
-                "it": "TODO_TRANSLATE"
-            },
-    
-            "colors": ["gray"],
-            "movement": "2",
-            "defense": "3",
-            "attacktype": "contact",
-            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
-            "skills": { "0": "attack/precision_strike", "1": "defense/sacrifice", "2": "none", "3": "none" },
-            "reinforcement": "",
-            "tokens": [
-                { "image":"data/tiles/img/shafiah_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
-            ],
-    
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
-            "image": "data/tiles/img/shafiah.png",
-            "imageHD": "data/tiles/img/shafiah_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "shafiah",
-            "origins": ["kushwitchhunters"],
-    
-            "count": 1
-        },
-    
-        {
             "id": "shubba",
             "name": {
-                "fr": "",
+                "fr": "Shubba",
                 "en": "Shubba",
                 "it": "TODO_TRANSLATE"
             },
@@ -3251,13 +3057,13 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Shubba revint à Shumballa, et se rendant chez Tuthmes dans la pièce où les peaux de léopard tapissaient le sol, il déclara : - J'ai trouvé la femme que tu désirais. Une Némédienne, capturée à bord d'un navire marchand d'Argos. J'ai donné beaucoup de lourdes pièces d'or au négrier shémite pour l'obtenir. - Fais-la-moi voir, ordonna Tuthmes. Shubba quitta la pièce, et revint quelques instants plus tard, tenant une fille par le poignet. Elle était souple, sa peau blanche formait un contraste éblouissant avec les corps noirs et bruns auxquels Tuthmes était habitué. Ses cheveux tombaient en une cascade dorée sur ses épaules blanches. Elle n'était vêtue que d'une chemise en lambeaux. Shubba ôta celle-ci, et la jeune fille frissonna dans sa nudité la plus totale.",
+                    "en": "Shubba returned to Shumballa, and coming to Thuthmes in his chamber where leopard skins carpeted the marble floor, he said: “I have found the woman you desired. A Nemedian girl, captured from a trading vessel of Argos. I paid the Shemitish slave-trader many broad gold pieces.” “Let me see her,” commanded Thuthmes, and Shubba left the room, returning a moment later leading a girl by the wrist. She was supple, her white skin almost dazzling in contrast with the brown and black bodies to which Thuthmes was accustomed. Her hair fell in a curly rippling gold stream over her white shoulders. She was clad only in a tattered shift. This Shubba removed, leaving her shrinking in complete nudity.",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Histoire inachevée – sans titre",
+                    "en": "Untitled draft",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -3278,7 +3084,7 @@
         {
             "id": "vanir-valkyrie",
             "name": {
-                "fr": "",
+                "fr": "Valkyrie Vanir",
                 "en": "Vanir Valkyrie",
                 "it": "TODO_TRANSLATE"
             },
@@ -3294,22 +3100,6 @@
                 { "image":"data/tiles/img/vanir-valkyrie_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
             "image": "data/tiles/img/vanir-valkyrie.png",
             "imageHD": "data/tiles/img/vanir-valkyrie_hd.png",
             "image_location": {"x":50, "y":50},
@@ -3317,15 +3107,15 @@
             "model": "vanir-valkyrie",
             "origins": ["valvan"],
     
-            "count": 1
+            "count": 2
         },
     
         {
             "id": "salome",
             "name": {
-                "fr": "",
+                "fr": "Salome",
                 "en": "Salome",
-                "it": "TODO_TRANSLATE"
+                "it": "Salome"
             },
     
             "colors": ["gray"],
@@ -3341,14 +3131,14 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
+                    "fr": "Un long serpent de lumière courut soudain le long des rideaux et les bougies dans leurs candélabres dorés se rallumèrent inexplicablement. Taramis se recroquevilla sur sa couche de velours, repliant ses jambes souples sous elle, regardant de ses yeux écarquillés cette silhouette féline et moqueuse qui se tenait devant elle. C'était comme si elle contemplait une seconde Taramis, identique à elle-même dans chacun des contours de ses traits et de ses membres, mais habitée par une personnalité inconnue et maléfique. Le visage de cette inconnue reflétait l'exact opposé de tout ce que celui de la reine dégageait. La luxure et le mystère scintillaient au fond de ses yeux lumineux, la cruauté affleurait dans la courbe de ses lèvres rouges et pleines. Chaque mouvement de son corps souple était subtilement provocateur. Sa coiffure imitait celle de la reine, et elle avait aux pieds des sandales identiques à celles que portait d'ordinaire Taramis dans son boudoir. Sa tunique de soie, sans manches et décolletée, retenue à la taille par un lien tissé d'or, était l'exacte réplique du vêtement de nuit de la reine.",
+                    "en": "It was the sight of this face which froze the cry in Taramis’s throat. The features were her own! She might have been looking into a mirror which subtly altered her reflection, lending it a tigerish gleam of eye, a vindictive curl of lip.\n“Ishtar!” gasped Taramis. “I am bewitched!”\n“Bewitched? No, sweet sister!”\n“Sister? I have no sister.”\nSalome laughed fiercely, and slapped her bosom. Between her breasts shone a crescent, red as blood.\n“The mark of the witch!” cried Taramis, recoiling.\n“Aye! The curse of the kings of Khauran! They tell how the first queen of our line had traffic with a fiend of darkness and bore him a daughter who lives in foul legendry to this day. And thereafter in each century a girl baby was born with a scarlet half-moon between her breasts, that signified her destiny. ‘Every century a witch shall be born.’ So ran the ancient curse. And so it has come to pass.\n“Well, this world contains all I desire – power, and pomp, and glittering pageantry, handsome men and soft women for my paramours and my slaves. I have returned to take that to which I have as much right as you.”",
+                    "it": "E fu quella vista a raggelare il grido nella gola di Taramis. I lineamenti erano i suoi! Era come se si guardasse in uno specchio che alterava sottilmente la sua immagine, aggiungendole lo scintillio tigrino degli occhi, l'aggricciarsi vendicativo delle labbra.\n“Ishtar!” — gemette Taramis. — “È una stregoneria!”\n“Stregoneria? No, dolce sorella! Non c'è nessuna stregoneria.”\n“Sorella? Io non ho sorelle.”\nSalome rise rabbiosamente, e si batté la mano sul petto. La tunica scollata scopriva la parte superiore dei seni torniti, in mezzo a cui splendeva un marchio bizzarro… una mezzaluna rossa come sangue.\n“Il marchio della strega!” esclamò Taramis, rabbrividendo.\n“Sì! La maledizione dei re di Khauran! Raccontano che la prima regina della nostra dinastia ebbe commercio con un demone delle tenebre e gli partorì una figlia che ancora oggi vive nelle leggende immonde. Da allora, ogni secolo, nasce nella dinastia askhauriana una bimba con una mezzaluna scarlatta sul petto che indica il suo destino. ‘Ogni secolo nascerà una strega.’ Così diceva l'antica maledizione. E così è sempre accaduto. \n“Bene, questo mondo racchiude tutto ciò che desidero… potenza e sfarzo, e lusso scintillante, uomini prestanti destinati a diventare i miei amanti, tenere donne adatte a diventare mie schiave.Sono tornata per prendere ciò che spetta di diritto a me non meno che a te.”"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
+                    "fr": "Une Sorcière viendra au Monde",
+                    "en": "A Witch shall be Born",
+                    "it": "Nascerà una strega"
                 },
                 "author": {
                     "name": "Robert E. Howard"
@@ -3362,7 +3152,7 @@
             "model": "taramis-salome",
             "origins": ["ppbox"],
     
-            "count": 1
+            "count": 2
         },
     
         {
@@ -4017,22 +3807,6 @@
             "reinforcement": "1",
             "tokens": [],
     
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
             "image": "data/tiles/img/khitan-guards.png",
             "imageHD": "data/tiles/img/khitan-guards_hd.png",
             "image_location": {"x":55, "y":61},
@@ -4121,7 +3895,7 @@
         {
             "id": "thot-amon",
             "name": {
-                "fr": "",
+                "fr": "Thot-Amon",
                 "en": "Thot-Amon",
                 "it": "TODO_TRANSLATE"
             },
@@ -4139,13 +3913,13 @@
     
             "quote": {
                 "text": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "C'était un géant sombre, dont la peau sombre révélait le sang stygien.\n« Écoutez, seigneur. J'étais autrefois un grand sorcier dans le Sud. Les hommes parlaient de Thoth-amon comme ils parlaient de Rammon. Le roi Ctesphon de Stygie déchut les autres magiciens de leur position dominante et me fit un grand honneur en me substituant à eux. Ils me haïssaient, mais ils me craignaient aussi, car je contrôlais des créatures du dehors, que je pouvais conjurer à tout moment pour qu'elles accomplissent ce que bon me semblait. Par Set, mes ennemis vivaient dans la crainte perpétuelle de se réveiller au milieu de la nuit, les serres d'une horreur sans nom plantées dans leur gorge! J'ai lancé de puissants et noirs sortilèges grâce à l'Anneau-Serpent de Set, que j'avais trouvé un jour dans une tombe à une lieue sous terre, un anneau qui était déjà oublié bien avant que le premier homme s'extirpe du limon originel. »",
+                    "en": "He was a somber giant, whose dusky skin revealed his Stygian blood. (...) « Listen, my lord. I was a great sorcerer in the south. Men spoke of Thoth-Amon as they spoke of Rammon. King Ctesphon of Stygia gave me great honor, casting down the magicians from the high places to exalt me above them. They hated me, but they feared me, for I controlled beings from outside which came at my call and did my bidding. By Set, mine enemy knew not the hour when he might awake at midnight to feel the taloned fingers of a nameless horror at his throat! I did dark and terrible magic with the Serpent Ring of Set, which I found in a nighted tomb a league beneath the earth, forgotten before the first man crawled out of the slimy sea. »",
                     "it": "TODO_TRANSLATE"
                 },
                 "origin": {
-                    "fr": "",
-                    "en": "",
+                    "fr": "Le Phénix sur l’épée",
+                    "en": "The Phoenix on the Sword",
                     "it": "TODO_TRANSLATE"
                 },
                 "author": {
@@ -4160,13 +3934,13 @@
             "model": "thot-amon",
             "origins": ["stygia"],
     
-            "count": 1
+            "count": 2
         },
     
         {
             "id": "scorpion-broodmother",
             "name": {
-                "fr": "",
+                "fr": "Reine Scorpion",
                 "en": "Scorpion Broodmother",
                 "it": "TODO_TRANSLATE"
             },
@@ -4182,22 +3956,6 @@
                 { "image":"data/tiles/img/scorpion-broodmother_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
             "image": "data/tiles/img/scorpion-broodmother.png",
             "imageHD": "data/tiles/img/scorpion-broodmother_hd.png",
             "image_location": {"x":50, "y":50},
@@ -4205,13 +3963,13 @@
             "model": "scorpion-broodmother",
             "origins": ["stygia"],
     
-            "count": 1
+            "count": 2
         },
     
         {
             "id": "giant-scorpions",
             "name": {
-                "fr": "",
+                "fr": "Scorpions Géants",
                 "en": "Giant Scorpions",
                 "it": "TODO_TRANSLATE"
             },
@@ -4248,18 +4006,18 @@
             "model": "giant-scorpion",
             "origins": ["stygia"],
     
-            "count": 1
+            "count": 3
         },
     
         {
             "id": "eternal-guard",
             "name": {
-                "fr": "",
+                "fr": "Gardes éternels",
                 "en": "Eternal Guard",
                 "it": "TODO_TRANSLATE"
             },
     
-            "colors": ["gray"],
+            "colors": ["gray", "gray", "blue"],
             "movement": "2",
             "defense": "2",
             "attacktype": "contact",
@@ -4268,84 +4026,23 @@
             "reinforcement": "1",
             "tokens": [],
     
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
             "image": "data/tiles/img/eternal-guard.png",
             "imageHD": "data/tiles/img/eternal-guard_hd.png",
             "image_location": {"x":50, "y":50},
             "image_zoom": 100,
             "model": "eternal-guard",
-            "origins": ["stygia"],
-    
-            "count": 1
-        },
-    
-        {
-            "id": "eternal-guard-blue",
-            "name": {
-                "fr": "",
-                "en": "Eternal Guard",
-                "it": "TODO_TRANSLATE"
-            },
-    
-            "colors": ["blue"],
-            "movement": "2",
-            "defense": "2",
-            "attacktype": "contact",
-            "dices": { "0": "red", "1": "orange", "2": "none", "3": "none" },
-            "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
-            "reinforcement": "1",
-            "tokens": [],
-    
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
-            "image": "data/tiles/img/eternal-guard.png",
-            "imageHD": "data/tiles/img/eternal-guard_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
-            "model": "eternal-guard",
-            "origins": ["stygia"],
-    
-            "count": 1
+            "origins": ["stygia"]
         },
     
         {
             "id": "assassins",
             "name": {
-                "fr": "",
+                "fr": "Assassins",
                 "en": "Assassins",
                 "it": "TODO_TRANSLATE"
             },
     
-            "colors": ["gray", "red"],
+            "colors": ["gray"],
             "movement": "3",
             "defense": "0",
             "attacktype": "contact",
@@ -4354,21 +4051,30 @@
             "reinforcement": "2",
             "tokens": [],
     
-            "quote": {
-                "text": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "origin": {
-                    "fr": "",
-                    "en": "",
-                    "it": "TODO_TRANSLATE"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
+            "image": "data/tiles/img/assassins.png",
+            "imageHD": "data/tiles/img/assassins_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "assassins",
+            "origins": ["stygia"]
+        },
+
+        {
+            "id": "assassins",
+            "name": {
+                "fr": "Assassins",
+                "en": "Assassins",
+                "it": "TODO_TRANSLATE"
             },
+    
+            "colors": ["red"],
+            "movement": "3",
+            "defense": "0",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "red", "2": "none", "3": "none" },
+            "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [],
     
             "image": "data/tiles/img/assassins.png",
             "imageHD": "data/tiles/img/assassins_hd.png",
@@ -4376,6 +4082,6 @@
             "image_zoom": 100,
             "model": "assassins",
             "origins": ["stygia"]
-        }
+        }        
     ]
 }
