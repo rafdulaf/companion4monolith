@@ -2651,8 +2651,8 @@
             
             "image": "data/tiles/img/black-dragons.png",
             "imageHD": "data/tiles/img/black-dragons_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":60, "y":57},
+            "image_zoom": 95,
             "model": "black-dragons",
             "origins": ["blackdragons"],
     
@@ -2821,8 +2821,8 @@
     
             "image": "data/tiles/img/demon-of-the-earth.png",
             "imageHD": "data/tiles/img/demon-of-the-earth_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":43, "y":59},
+            "image_zoom": 122,
             "model": "demon-of-the-earth",
             "origins": ["demonearth"],
     
