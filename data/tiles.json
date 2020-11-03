@@ -2608,8 +2608,8 @@
     
             "image": "data/tiles/img/baal-pteor.png",
             "imageHD": "data/tiles/img/baal-pteor_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":62, "y":55},
+            "image_zoom": 83,
             "model": "baal-pteor",
             "origins": ["baalpteor"],
     
@@ -3129,8 +3129,8 @@
     
             "image": "data/tiles/img/vanir-valkyrie.png",
             "imageHD": "data/tiles/img/vanir-valkyrie_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":71, "y":54},
+            "image_zoom": 96,
             "model": "vanir-valkyrie",
             "origins": ["valvan"],
     
