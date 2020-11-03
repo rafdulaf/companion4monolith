@@ -2694,8 +2694,8 @@
     
             "image": "data/tiles/img/the-black-ones.png",
             "imageHD": "data/tiles/img/the-black-ones_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":71, "y":56},
+            "image_zoom": 80,
             "model": "the-black-ones",
             "origins": ["blackones"]
         },
@@ -2735,8 +2735,8 @@
     
             "image": "data/tiles/img/crossbowmen.png",
             "imageHD": "data/tiles/img/crossbowmen_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":69, "y":57},
+            "image_zoom": 94,
             "model": "crossbowmen",
             "origins": ["crossbowmen"]
         },
@@ -2776,8 +2776,8 @@
     
             "image": "data/tiles/img/crossbowmen.png",
             "imageHD": "data/tiles/img/crossbowmen_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":69, "y":57},
+            "image_zoom": 94,
             "model": "crossbowmen",
             "origins": ["crossbowmen"],
     
@@ -2787,7 +2787,7 @@
         {
             "id": "demon-of-the-earth",
             "name": {
-                "fr": "Démon de le Terre",
+                "fr": "Démon de la Terre",
                 "en": "Demon of the Earth",
                 "it": "TODO_TRANSLATE"
             },
@@ -2865,9 +2865,8 @@
             },
     
             "image": "data/tiles/img/dragon.png",
-            "imageHD": "data/tiles/img/dragon_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":-40, "y":59},
+            "image_zoom": 278,
             "model": "dragon",
             "origins": ["dragon"],
     
@@ -2953,9 +2952,8 @@
             },
     
             "image": "data/tiles/img/sabertooth-tiger.png",
-            "imageHD": "data/tiles/img/sabertooth-tiger_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":-4, "y":53},
+            "image_zoom": 216,
             "model": "sabertooth-tiger",
             "origins": ["sabretoothtiger"],
     
@@ -2967,7 +2965,7 @@
             "name": {
                 "fr": "Afari",
                 "en": "Afari",
-                "it": "TODO_TRANSLATE"
+                "it": "Afari"
             },
     
             "colors": ["gray"],
@@ -2999,8 +2997,8 @@
     
             "image": "data/tiles/img/afari.png",
             "imageHD": "data/tiles/img/afari_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":64, "y":54},
+            "image_zoom": 62,
             "model": "afari",
             "origins": ["kushwitchhunters"],
     
@@ -3012,7 +3010,7 @@
             "name": {
                 "fr": "Ghayoor",
                 "en": "Ghayoor",
-                "it": "TODO_TRANSLATE"
+                "it": "Ghayoor"
             },
     
             "colors": ["gray"],
@@ -3028,20 +3026,49 @@
     
             "image": "data/tiles/img/ghayoor.png",
             "imageHD": "data/tiles/img/ghayoor_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":67, "y":57},
+            "image_zoom": 62,
             "model": "ghayoor",
             "origins": ["kushwitchhunters"],
     
             "count": 1
         },
+
+        {
+            "id": "shafiah",
+            "name": {
+                "fr": "Shafiah",
+                "en": "Shafiah",
+                "it": "Shafiah"
+            },
     
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "attack/precision_strike", "1": "defense/sacrifice", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image":"data/tiles/img/shafiah_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+    
+            "image": "data/tiles/img/shafiah.png",
+            "imageHD": "data/tiles/img/shafiah_hd.png",
+            "image_location": {"x":63, "y":58},
+            "image_zoom": 72,
+            "model": "shafiah",
+            "origins": ["kushwitchhunters"],
+    
+            "count": 1
+        },
+            
         {
             "id": "shubba",
             "name": {
                 "fr": "Shubba",
                 "en": "Shubba",
-                "it": "TODO_TRANSLATE"
+                "it": "Shubba"
             },
     
             "colors": ["gray"],
@@ -3073,8 +3100,8 @@
     
             "image": "data/tiles/img/shubba.png",
             "imageHD": "data/tiles/img/shubba_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":69, "y":54},
+            "image_zoom": 61,
             "model": "shubba",
             "origins": ["kushwitchhunters"],
     
@@ -3113,9 +3140,9 @@
         {
             "id": "salome",
             "name": {
-                "fr": "Salome",
+                "fr": "Salomé",
                 "en": "Salome",
-                "it": "Salome"
+                "it": "TODO_TRANSLATE"
             },
     
             "colors": ["gray"],
@@ -3147,8 +3174,8 @@
     
             "image": "data/tiles/img/salome.png",
             "imageHD": "data/tiles/img/salome_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":56, "y":53},
+            "image_zoom": 56,
             "model": "taramis-salome",
             "origins": ["ppbox"],
     
@@ -3929,8 +3956,8 @@
     
             "image": "data/tiles/img/thot-amon.png",
             "imageHD": "data/tiles/img/thot-amon_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":53, "y":70},
+            "image_zoom": 117,
             "model": "thot-amon",
             "origins": ["stygia"],
     
@@ -3957,9 +3984,8 @@
             ],
     
             "image": "data/tiles/img/scorpion-broodmother.png",
-            "imageHD": "data/tiles/img/scorpion-broodmother_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":50, "y":49},
+            "image_zoom": 102,
             "model": "scorpion-broodmother",
             "origins": ["stygia"],
     
@@ -4001,8 +4027,8 @@
     
             "image": "data/tiles/img/giant-scorpion.png",
             "imageHD": "data/tiles/img/giant-scorpion_hd.png",
-            "image_location": {"x":54, "y":41},
-            "image_zoom": 112,
+            "image_location": {"x":60, "y":52},
+            "image_zoom": 119,
             "model": "giant-scorpion",
             "origins": ["stygia"],
     
@@ -4028,8 +4054,8 @@
     
             "image": "data/tiles/img/eternal-guard.png",
             "imageHD": "data/tiles/img/eternal-guard_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":48, "y":58},
+            "image_zoom": 94,
             "model": "eternal-guard",
             "origins": ["stygia"]
         },
@@ -4053,8 +4079,8 @@
     
             "image": "data/tiles/img/assassins.png",
             "imageHD": "data/tiles/img/assassins_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":48, "y":57},
+            "image_zoom": 113,
             "model": "assassins",
             "origins": ["stygia"]
         },
