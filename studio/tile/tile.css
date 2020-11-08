@@ -37,10 +37,11 @@
 
 .printcards input[name=tile] { position: absolute; top:-5000px; }
 .printcards input[name=tile] + label { position: relative; display: inline-block; margin-right: 5px; }
-.printcards input[name=tile] + label:before { position: absolute; content: " "; z-index: 1; top: 0; left: 0; right: 0; bottom: 0; background-color: #000000; opacity: 0.2; }
+.printcards input[name=tile] + label:before { position: absolute; content: " "; z-index: 2; top: 0; left: 0; right: 0; bottom: 0; background-color: #000000; opacity: 0.2; }
 .printcards input[name=tile] + label:after { position: absolute; content: "\f057"; font-family: 'Font Awesome 5 Free'; font-size: 40px; left: -7px; top: -7px; color: red; }
 .printcards input[name=tile]:checked + label:before { display: none; }
 .printcards input[name=tile]:checked + label:after { content: "\f058"; color: green; }
+@media print { .printcards input[name=tile] + label { margin-right: 0; } }
 
 @media screen and (max-width: 400px) {
     .tile.tiletile {
@@ -56,8 +57,16 @@
 }
 
 @media print {
-    .printcards .tile.tiletile,
+    .printcards .tile.tiletile .token {
+        width: 2.5cm;
+        height: 2.5cm;
+    }
+    
     .dialog .printcards .back[id^=tile] {
+        position: relative;
+    }
+    
+    .printcards .tile.tiletile {
         margin: 0.1cm 0.1cm;
         width: 4.13cm;
         height: calc(4.13cm / 0.656);
@@ -71,11 +80,6 @@
     }
     .printcards.cut .tile.tiletile {
         margin: 0.6cm 0.55cm;
-    }
-
-    .dialog .printcards.cut .back[id^=tile] { 
-        border-radius: 0; 
-        overflow: visible;
     }
 }
 
@@ -201,11 +205,65 @@
     top: -33%;
 }
 
+.tile.tokens {
+    display: inline-block;
+    vertical-align :top;
+}
+.tile.tokens .token {
+    width: 5rem;
+    height: 5rem;
+    margin: 0.5rem;
+    border-radius: 50%;
+    border: 1px solid black;
+    box-shadow: 0px 0px 4px 1px black;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+.tile.tokens .token img {
+    position: absolute;
+}
+.tile.tokens.tokensOver {
+    position: absolute;
+}
+.tile.tokens.tokensOver .token {
+    position: absolute;
+    left: -5rem;
+    top: 12rem;
+    z-index: 1
+}
+.tile.tokens.tokensOver .token + .token {
+    left: -5rem;
+    top: 13.5rem;
+    z-index: unset;
+}
+@media screen {
+    .printcards .tile.tokens {
+        position: absolute;
+    }
+    .printcards .tile.tokens .token {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin: 0.25rem;    
+    }
+    .printcards .tile.tokens .token {
+        position: absolute;
+        left: -2.5rem;
+        top: 6rem;
+        z-index: 1
+    }
+    .printcards .tile.tokens .token + .token {
+        left: -2.5rem;
+        top: 6.75rem;
+        z-index: unset;
+    }
+}
+
 .back .blood {
     position: absolute;
-    bottom: -14%;
-    left: -19%;
-    width: 108%;
+    bottom: 1rem;
+    right: 1.5rem;
+    width: 4.3cm;
     z-index: 1;
 }
 
@@ -333,6 +391,13 @@
     display: inline-block;
     vertical-align: top;
 }
+
+.dialog .tile input.imagetoken:not(:checked) ~ div,
+.dialog .tile input.imagetoken:not(:checked) ~ input,
+.dialog .tile input.imagetoken:not(:checked) ~ input + label {
+    display: none;
+}
+
 
 .dialog .tile .field.movement label,
 .dialog .tile .field.defense label {
@@ -601,11 +666,14 @@
 .dialog .eqcol:nth-child(1) .tile h1:before {
     content: "1";
 }
-.dialog .eqcol:nth-child(2) .tile h1:before {
+.dialog .eqcol:nth-child(2) .tile:nth-child(1) h1:before {
     content: "2";
 }
-.dialog .eqcol:nth-child(2) .tile-preview h1:before {
+.dialog .eqcol:nth-child(2) .tile:nth-child(2) h1:before {
     content: "3";
+}
+.dialog .eqcol:nth-child(2) .tile-preview h1:before {
+    content: "4";
 }
 
 .dialog .eqcol {

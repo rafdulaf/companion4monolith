@@ -31,7 +31,9 @@ var Tile = {
             'reinforcement': "Renfort",
             'reinforcementPh': "?",
             'image': "Image (fond transparent)",
+            'imagetoken': "Image si différente",
             'imagePh': "Entrer l'adresse de l'image (http://)",
+            'imagetokenactive': "Activer un jeton",
             'imagelocation': "Emplacement",
             'imagelocationPh': "0",
             'imagezoom': "Zoom",
@@ -47,6 +49,7 @@ var Tile = {
             'diceYellowReroll': "Jaune \uf01e",
             'header1': "Saisissez les données de la tuile",
             'header1bis': "Mettez une image",
+            'header1ter': "Ajouter des jetons",
             'header2': "Prévisualiser la tuile",
             'copyright': "Basé sur le fichier PSD proposé par <a href='https://the-overlord.com/index.php?/profile/9-genesteal28/'>@genesteal28</a> et converti au format GIMP par <a href='https://the-overlord.com/index.php?/profile/31-jabbathehatt/'>@jabbathehatt</a>."
         },
@@ -81,7 +84,9 @@ var Tile = {
             'reinforcement': "Renfort",
             'reinforcementPh': "?",
             'image': "Image (transparent background)",
+            'imagetoken': "Image if différent",
             'imagePh': "Enter the image address (http://...)",
+            'imagetokenactive': "Activate a token",
             'imagelocation': "Location",
             'imagelocationPh': "0",
             'imagezoom': "Zoom",
@@ -97,6 +102,7 @@ var Tile = {
             'diceYellowReroll': "Yellow \uf01e",
             'header1': "Fill the tile data",
             'header1bis': "Set a picture",
+            'header1ter': "Add tokens",
             'header2': "Preview the final result",
             'copyright': "Based on the PSD file proposed by <a href='https://the-overlord.com/index.php?/profile/9-genesteal28/'>@genesteal28</a> and converted at the GIMP format by <a href='https://the-overlord.com/index.php?/profile/31-jabbathehatt/'>@jabbathehatt</a>."
         },
@@ -131,7 +137,9 @@ var Tile = {
             'reinforcement': "Rinforzo",
             'reinforcementPh': "?",
             'image': "Immagine (sfondo trasparente)",
+            'imagetoken': "TODO_TRANSLATE",
             'imagePh': "Inserisci l'URL dell'immagine (http://...)",
+            'imagetokenactive': "TODO_TRANSLATE",
             'imagelocation': "Posizione",
             'imagelocationPh': "0",
             'imagezoom': "Zoom",
@@ -147,6 +155,7 @@ var Tile = {
             'diceYellowReroll': "Giallo \uf01e",
             'header1': "Completa le informazioni sulla tessera",
             'header1bis': "Scegli un'immagine",
+            'header1ter': "TODO_TRANSLATE",
             'header2': "Anteprima risultato finale",
             'copyright': "Basato sui file PSD di <a href='https://the-overlord.com/index.php?/profile/9-genesteal28/'>@genesteal28</a> e convertiti nel formato GIMP da <a href='https://the-overlord.com/index.php?/profile/31-jabbathehatt/'>@jabbathehatt</a>."
         }
@@ -185,11 +194,21 @@ var Tile = {
                 }
                 else
                 {
-                    prefix = "<input type='checkbox' id='tile-" + i + "' name='tile' data-index='" + i + "' onchange=\"$('#tile-back-" + i + "').toggleClass('invisible');\"/><label for='tile-" + i + "'>";
+                    prefix = "<input type='checkbox' id='tile-" + i + "' name='tile' data-index='" + i + "' onchange=\"$('#tile-back-" + i + ", #tile-back2-" + i + "').toggleClass('invisible');\"/><label for='tile-" + i + "'>";
                     suffix = "</label>";
                 }
 
-                html += prefix + "<div class='printoverflow'>" + Tile._tileCode(tiles[i]) + "</div>" + suffix;
+                if (withEditLink)
+                {
+                    html += prefix + "<div class='printoverflow'>" + Tile._tileCode(tiles[i]) + "</div>" + suffix;
+                }
+                else
+                {
+                    html += prefix 
+                            + "<div class='printoverflow'>" + Tile._tileCode(tiles[i], true, false) + "</div>" 
+                            + "<div class='printoverflow'>" + Tile._tileCode(tiles[i], true, true) + "</div>" 
+                            + suffix;
+                }
             }
         }
         else
@@ -203,7 +222,10 @@ var Tile = {
             {
                 html += "<div id=\"tile-back-" + i + "\"  class='printoverflow back invisible'>"
                             + "<img class=\"blood\" src=\"studio/tile/img/blood.png?version=" + Version + "\"/>"
-                            + Tile._tileCode(tiles[i]) 
+                            + Tile._tileCode(tiles[i], !withEditLink, false) 
+                        + "</div>"
+                html += "<div id=\"tile-back2-" + i + "\"  class='printoverflow back invisible'>"
+                            + Tile._tileCode(tiles[i], !withEditLink, true) 
                         + "</div>"
             }
         }
@@ -221,7 +243,7 @@ var Tile = {
         Nav.hideAction("studio", "tile-print");
     },
     
-    _tileCode: function(tile) {
+    _tileCode: function(tile, tokenAside, tokenMode) {
         var code = "<div class=\"tile tiletile\">"
                 + "<picture class=\"background\">"
                     + "<source media=\"print\" srcset=\"studio/tile/img/background_" + tile.color + "_hd.png?version=" + Version + "\"/>"
@@ -328,8 +350,21 @@ var Tile = {
                 }
             }
         }
-
+        
         code += "</div>";
+        
+        if (tokenMode == true) code = "";
+        if ((tokenMode == null || tokenMode == true) && tile.tokens && tile.tokens.length > 0 && tile.tokens[0].active)
+        {
+            code += "<div class=\"tile tokens" + (tokenAside ? " tokensAside" : " tokensOver") + "\">";
+            code += "<div class=\"token\"><img loading=\"lazy\" src=\"" + (tile.tokens[0].image || tile.image) + "\" style=\"left: " + tile.tokens[0].imagelocation.x + "%; top: " + tile.tokens[0].imagelocation.y + "%; width: " + tile.tokens[0].imagezoom + "%; transform: translate(-50%, -50%) rotate(" + tile.tokens[0].imagerotation + "deg)\"/></div>";
+            if (tile.tokens.length > 1 && tile.tokens[1].active)
+            {
+                code += "<div class=\"token\"><img loading=\"lazy\" src=\"" + (tile.tokens[1].image || tile.image) + "\" style=\"left: " + tile.tokens[1].imagelocation.x + "%; top: " + tile.tokens[1].imagelocation.y + "%; width: " + tile.tokens[1].imagezoom + "%; transform: translate(-50%, -50%) rotate(" + tile.tokens[1].imagerotation + "deg)\"/></div>";
+            }
+            code += "</div>";
+        }
+
         return code;
     },
     
@@ -463,6 +498,45 @@ var Tile = {
                     + "<input id=\"timagerotation\" name=\"tileimagerotation\" type=\"number\" autocomplete=\"off\" placeholder=\"" + Tile._i18n[Language].imagerotationPh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
                 + "</div>"
             + "</div>"
+            + "<div class=\"tile\">"
+                + "<h1>" + Tile._i18n[Language].header1ter + "</h1>"
+                + "<input class=\"imagetoken\" type=\"checkbox\" id=\"timagetokenactive\" name=\"timagetokenactive\" onchange=\"Tile._preview();\"/><label for=\"timagetokenactive\">" + Tile._i18n[Language].imagetokenactive + "</label>"
+                + "<div class=\"field\">"
+                    + "<label for=\"timagetoken\">" + Tile._i18n[Language].imagetoken + "</label>"
+                    + "<input id=\"timagetoken\" name=\"tileimagetoken\" autocomplete=\"off\" placeholder=\"" + Tile._i18n[Language].imagePh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
+                + "</div>"
+                + "<div class=\"field imagelocation\">"
+                    + "<label for=\"timagetokenlocation\">" + Tile._i18n[Language].imagelocation + "</label>"
+                    + "<div><input id=\"timagetokenlocation\" name=\"tileimagetokenlocation\" type=\"number\" autocomplete=\"off\" placeholder=\"" + Tile._i18n[Language].imagelocationPh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"\"/></div>"
+                    + "<div><input id=\"timagetokenlocation2\" name=\"tileimagetokenlocation2\" type=\"number\" autocomplete=\"off\" placeholder=\"" + Tile._i18n[Language].imagelocationPh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/></div>"
+                + "</div>"
+                + "<div class=\"field imagezoom\">"
+                    + "<label for=\"timagetokenzoom\">" + Tile._i18n[Language].imagezoom + "</label>"
+                    + "<input id=\"timagetokenzoom\" name=\"tileimagetokenzoom\" type=\"number\" autocomplete=\"off\" placeholder=\"" + Tile._i18n[Language].imagezoomPh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
+                + "</div>"
+                + "<div class=\"field imagerotation\">"
+                    + "<label for=\"timagetokenrotation\">" + Tile._i18n[Language].imagerotation + "</label>"
+                    + "<input id=\"timagetokenrotation\" name=\"tileimagetokenrotation\" type=\"number\" autocomplete=\"off\" placeholder=\"" + Tile._i18n[Language].imagerotationPh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
+                + "</div>"
+                + "<input class=\"imagetoken\" type=\"checkbox\" id=\"timagetoken2active\" name=\"timagetoken2active\" onchange=\"Tile._preview();\"/><label for=\"timagetoken2active\">" + Tile._i18n[Language].imagetokenactive + "</label>"
+                + "<div class=\"field\">"
+                    + "<label for=\"timagetoken2\">" + Tile._i18n[Language].imagetoken + "</label>"
+                    + "<input id=\"timagetoken2\" name=\"tileimagetoken2\" autocomplete=\"off\" placeholder=\"" + Tile._i18n[Language].imagePh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
+                + "</div>"
+                + "<div class=\"field imagelocation\">"
+                    + "<label for=\"timagetoken2location\">" + Tile._i18n[Language].imagelocation + "</label>"
+                    + "<div><input id=\"timagetoken2location\" name=\"tileimagetoken2location\" type=\"number\" autocomplete=\"off\" placeholder=\"" + Tile._i18n[Language].imagelocationPh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"\"/></div>"
+                    + "<div><input id=\"timagetoken2location2\" name=\"tileimagetoken2location2\" type=\"number\" autocomplete=\"off\" placeholder=\"" + Tile._i18n[Language].imagelocationPh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/></div>"
+                + "</div>"
+                + "<div class=\"field imagezoom\">"
+                    + "<label for=\"timagetoken2zoom\">" + Tile._i18n[Language].imagezoom + "</label>"
+                    + "<input id=\"timagetoken2zoom\" name=\"tileimagetoken2zoom\" type=\"number\" autocomplete=\"off\" placeholder=\"" + Tile._i18n[Language].imagezoomPh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
+                + "</div>"
+                + "<div class=\"field imagerotation\">"
+                    + "<label for=\"timagetoken2rotation\">" + Tile._i18n[Language].imagerotation + "</label>"
+                    + "<input id=\"timagetoken2rotation\" name=\"tileimagetoken2rotation\" type=\"number\" autocomplete=\"off\" placeholder=\"" + Tile._i18n[Language].imagerotationPh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
+                + "</div>"
+            + "</div>"
             + "<div class=\"tile-preview\">"
                 + "<h1>" + Tile._i18n[Language].header2 + "</h1>"
                 + "<div class=\"preview\"></div>"
@@ -485,7 +559,23 @@ var Tile = {
             image: "",
             imagelocation: {x: "50", y: "50"},
             imagezoom: "100",
-            imagerotation: "0"
+            imagerotation: "0",
+            tokens: [                 
+                { 
+                    active: false,
+                    image: "",
+                    imagelocation: {x: "50", y: "50"}, 
+                    imagezoom: "100",
+                    imagerotation: "0" 
+                },
+                { 
+                    active: false,
+                    image: "",
+                    imagelocation: {x: "50", y: "50"}, 
+                    imagezoom: "100",
+                    imagerotation: "0" 
+                }
+            ]
         };
 
         $("#tskills,#tskills2,#tskills3,#tskills4").each (function (i) {
@@ -511,7 +601,7 @@ var Tile = {
     _preview: function()
     {
         var tile= Tile._form2tile();
-        var code = Tile._tileCode(tile);
+        var code = Tile._tileCode(tile, true);
         $(".dialog .preview").html(code);
     },
 
@@ -530,7 +620,23 @@ var Tile = {
             image: $(".dialog input[name=tileimage]")[0].value,
             imagelocation: {x: $(".dialog input[name=tileimagelocation]")[0].value, y: $(".dialog input[name=tileimagelocation2]")[0].value},
             imagezoom: $(".dialog input[name=tileimagezoom]")[0].value,
-            imagerotation: $(".dialog input[name=tileimagerotation]")[0].value
+            imagerotation: $(".dialog input[name=tileimagerotation]")[0].value,
+            tokens: [
+                { 
+                    active: $(".dialog input[name=timagetokenactive]")[0].checked,
+                    image: $(".dialog input[name=tileimagetoken]")[0].value,
+                    imagelocation: {x: $(".dialog input[name=tileimagetokenlocation]")[0].value, y: $(".dialog input[name=tileimagetokenlocation2]")[0].value}, 
+                    imagezoom: $(".dialog input[name=tileimagetokenzoom]")[0].value,
+                    imagerotation: $(".dialog input[name=tileimagetokenrotation]")[0].value,
+                },
+                { 
+                    active: $(".dialog input[name=timagetoken2active]")[0].checked,
+                    image: $(".dialog input[name=tileimagetoken2]")[0].value,
+                    imagelocation: {x: $(".dialog input[name=tileimagetoken2location]")[0].value, y: $(".dialog input[name=tileimagetoken2location2]")[0].value}, 
+                    imagezoom: $(".dialog input[name=tileimagetoken2zoom]")[0].value,
+                    imagerotation: $(".dialog input[name=tileimagetoken2rotation]")[0].value,
+                }
+            ]
         }
     },
     _tile2form: function(tile)
@@ -555,6 +661,16 @@ var Tile = {
         $(".dialog input[name=tileimagelocation2]")[0].value = tile.imagelocation.y;
         $(".dialog input[name=tileimagezoom]")[0].value = tile.imagezoom;
         $(".dialog input[name=tileimagerotation]")[0].value = tile.imagerotation;
+        $(".dialog input[name=timagetokenactive]")[0].checked = tile.tokens && tile.tokens.length > 0 ? tile.tokens[0].active : false;
+        $(".dialog input[name=tileimagetoken]")[0].value  = tile.tokens && tile.tokens.length > 0 ? tile.tokens[0].image || "" : "";
+        $(".dialog input[name=tileimagetokenlocation]")[0].value = tile.tokens && tile.tokens.length > 0 ? tile.tokens[0].imagelocation.x : "50"; $(".dialog input[name=tileimagetokenlocation2]")[0].value = tile.tokens && tile.tokens.length > 0 ? tile.tokens[0].imagelocation.y : "50"; 
+        $(".dialog input[name=tileimagetokenzoom]")[0].value = tile.tokens && tile.tokens.length > 0 ? tile.tokens[0].imagezoom : "100";
+        $(".dialog input[name=tileimagetokenrotation]")[0].value = tile.tokens && tile.tokens.length > 0 ? tile.tokens[0].imagerotation : "0";
+        $(".dialog input[name=timagetoken2active]")[0].checked = tile.tokens && tile.tokens.length > 1 ? tile.tokens[1].active : false;
+        $(".dialog input[name=tileimagetoken2]")[0].value  = tile.tokens && tile.tokens.length > 1 ? tile.tokens[1].image || "" : "";
+        $(".dialog input[name=tileimagetoken2location]")[0].value = tile.tokens && tile.tokens.length > 1 ? tile.tokens[1].imagelocation.x : "50"; $(".dialog input[name=tileimagetoken2location2]")[0].value = tile.tokens && tile.tokens.length > 1 ? tile.tokens[1].imagelocation.y : "50"; 
+        $(".dialog input[name=tileimagetoken2zoom]")[0].value = tile.tokens && tile.tokens.length > 1 ? tile.tokens[1].imagezoom : "100";
+        $(".dialog input[name=tileimagetoken2rotation]")[0].value = tile.tokens && tile.tokens.length > 1 ? tile.tokens[1].imagerotation : "0";
     },
     
     _remove: function()

@@ -15,7 +15,6 @@
             "dices": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [],
     
             "image": "data/tiles/img/event-1.png",
             "imageHD": "data/tiles/img/event-1.png",
@@ -40,7 +39,6 @@
             "dices": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [],
     
             "image": "data/tiles/img/event-2.png",
             "imageHD": "data/tiles/img/event-2.png",
@@ -65,7 +63,6 @@
             "dices": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [],
     
             "image": "data/tiles/img/event-3.png",
             "imageHD": "data/tiles/img/event-3.png",
@@ -91,7 +88,7 @@
             "skills": { "0": "miscellaneous/support", "1": "defense/sacrifice", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/captain_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -136,7 +133,7 @@
             "skills": { "0": "magic/spell_caster", "1": "defense/protected", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/skuthus_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -181,7 +178,7 @@
             "skills": { "0": "miscellaneous/fascination", "1": "miscellaneous/support", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/thalis_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "image": "data/tiles/img/princess.png",
@@ -208,7 +205,7 @@
             "skills": { "0": "magic/spell_caster", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/zogar-sag_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -253,7 +250,7 @@
             "skills": { "0": "miscellaneous/support", "1": "movement/leap", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/zaporavo_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -298,7 +295,7 @@
             "skills": { "0": "movement/blocking", "1": "miscellaneous/jinx", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/dark-demon_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -343,7 +340,7 @@
             "skills": { "0": "movement/blocking", "1": "movement/wall_wrecker", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/giant-snake_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -388,7 +385,7 @@
             "skills": { "0": "movement/wall_wrecker", "1": "attack/circular_strike", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/khosatral-khel_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -433,7 +430,7 @@
             "skills": { "0": "movement/evasive", "1": "movement/flying", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/outer-dark-demon_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -478,7 +475,7 @@
             "skills": { "0": "movement/blocking", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/thak_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -522,7 +519,6 @@
             "dices": { "0": "orangereroll", "1": "none", "2": "none", "3": "none" },
             "skills": { "0": "movement/leap", "1": "defense/sacrifice", "2": "none", "3": "none" },
             "reinforcement": "1",
-            "tokens": [],
     
             "quote": {
                 "text": {
@@ -563,7 +559,6 @@
             "dices": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [],
     
             "quote": {
                 "text": {
@@ -606,7 +601,6 @@
             "dices": { "0": "yellowreroll", "1": "yellowreroll", "2": "none", "3": "none" },
             "skills": { "0": "attack/elite_shooter", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
-            "tokens": [],
     
             "quote": {
                 "text": {
@@ -647,7 +641,6 @@
             "dices": { "0": "orange", "1": "yellow", "2": "none", "3": "none" },
             "skills": { "0": "defense/sacrifice", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
-            "tokens": [],
     
             "quote": {
                 "text": {
@@ -688,7 +681,6 @@
             "dices": { "0": "orange", "1": "none", "2": "none", "3": "none" },
             "skills": { "0": "movement/leap", "1": "movement/evasive", "2": "none", "3": "none" },
             "reinforcement": "1",
-            "tokens": [],
     
             "quote": {
                 "text": {
@@ -731,7 +723,6 @@
             "dices": { "0": "yellowreroll", "1": "yellowreroll", "2": "none", "3": "none" },
             "skills": { "0": "movement/leap", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
-            "tokens": [],
     
             "quote": {
                 "text": {
@@ -772,7 +763,6 @@
             "dices": { "0": "orange", "1": "none", "2": "none", "3": "none" },
             "skills": { "0": "movement/leap", "1": "movement/swimming", "2": "none", "3": "none" },
             "reinforcement": "1",
-            "tokens": [],
     
             "quote": {
                 "text": {
@@ -814,7 +804,7 @@
             "skills": { "0": "movement/intangible", "1": "miscellaneous/horror", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/thog_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -858,7 +848,6 @@
             "dices": { "0": "redreroll", "1": "redreroll", "2": "redreroll", "3": "none" },
             "skills": { "0": "attack/constriction", "1": "miscellaneous/horror", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [],
             
             "quote": {
                 "text": {
@@ -902,7 +891,7 @@
             "skills": { "0": "movement/leap", "1": "movement/feline_grace", "2": "none", "3": "none" },
             "reinforcement": "4",
             "tokens": [
-                { "image":"data/tiles/img/conans-lion_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "image": "data/tiles/img/conans-lion.png",
@@ -929,7 +918,7 @@
             "skills": { "0": "movement/leap", "1": "defense/sacrifice", "2": "none", "3": "none" },
             "reinforcement": "4",
             "tokens": [
-                { "image":"data/tiles/img/zelatas-wolf_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -971,7 +960,6 @@
             "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
             "skills": { "0": "miscellaneous/jinx", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "2",
-            "tokens": [],
     
             "quote": {
                 "text": {
@@ -1012,7 +1000,6 @@
             "dices": { "0": "orangereroll", "1": "none", "2": "none", "3": "none" },
             "skills": { "0": "defense/sacrifice", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
-            "tokens": [],
     
             "quote": {
                 "text": {
@@ -1054,7 +1041,7 @@
             "skills": { "0": "movement/leap", "1": "magic/spell_caster", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/ageera_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -1099,7 +1086,7 @@
             "skills": { "0": "attack/attack_from_beyond", "1": "magic/spell_caster", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/akivasha_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -1144,7 +1131,7 @@
             "skills": { "0": "attack/counterattack", "1": "miscellaneous/support", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/constantius_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -1189,7 +1176,7 @@
             "skills": { "0": "defense/sacrifice", "1": "movement/feline_grace", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/gitara_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -1234,7 +1221,7 @@
             "skills": { "0": "miscellaneous/jinx", "1": "magic/spell_caster", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/hyperborean-primitive_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -1279,7 +1266,7 @@
             "skills": { "0": "miscellaneous/concentration", "1": "magic/spell_caster", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/khemsa_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -1324,7 +1311,7 @@
             "skills": { "0": "magic/spell_caster", "1": "miscellaneous/concentration", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/natohk_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -1369,7 +1356,7 @@
             "skills": { "0": "defense/protected", "1": "magic/spell_caster", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/warlock_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -1414,7 +1401,7 @@
             "skills": { "0": "miscellaneous/support", "1": "attack/precision_strike", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/amboola_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -1457,7 +1444,7 @@
             "skills": { "0": "attack/precision_shot", "1": "attack/elite_shooter", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/balthus_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -1500,7 +1487,7 @@
             "skills": { "0": "attack/attack_from_beyond", "1": "defense/protected", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/bêlit_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -1543,7 +1530,7 @@
             "skills": { "0": "movement/wall_wrecker", "1": "attack/circular_strike", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/conan_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -1588,7 +1575,7 @@
             "skills": { "0": "magic/spell_caster", "1": "miscellaneous/concentration", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/hadrathus_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -1631,7 +1618,7 @@
             "skills": { "0": "attack/precision_shot", "1": "defense/protected", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/kerim-shah_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -1674,7 +1661,7 @@
             "skills": { "0": "attack/elite_shooter", "1": "defense/sacrifice", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/ngora_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -1717,7 +1704,7 @@
             "skills": { "0": "movement/blocking", "1": "attack/circular_strike", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/olgerd-vladislav_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -1760,7 +1747,7 @@
             "skills": { "0": "miscellaneous/support", "1": "defense/sacrifice", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/pallantides_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -1803,7 +1790,7 @@
             "skills": { "0": "defense/untouchable", "1": "movement/evasive", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/shevatas_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -1846,7 +1833,7 @@
             "skills": { "0": "movement/evasive", "1": "attack/precision_strike", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/taurus_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -1891,7 +1878,7 @@
             "skills": { "0": "movement/feline_grace", "1": "attack/counterattack", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/valeria_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -1934,7 +1921,7 @@
             "skills": { "0": "miscellaneous/support", "1": "magic/spell_caster", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/zelata_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -1977,7 +1964,7 @@
             "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/camel_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "image": "data/tiles/img/camel.png",
@@ -2004,7 +1991,7 @@
             "skills": { "0": "attack/precision_shot", "1": "attack/elite_shooter", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/kothian-archer_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "image": "data/tiles/img/kothian-archer.png",
@@ -2031,7 +2018,7 @@
             "skills": { "0": "defense/sacrifice", "1": "movement/evasive", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/slasher_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "image": "data/tiles/img/slasher.png",
@@ -2058,7 +2045,7 @@
             "skills": { "0": "movement/wall_wrecker", "1": "miscellaneous/horror", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/bone-golem_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "image": "data/tiles/img/bone-golem.png",
@@ -2087,7 +2074,7 @@
             "skills": { "0": "attack/precision_strike", "1": "movement/blocking", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/forest-demon_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -2132,7 +2119,7 @@
             "skills": { "0": "miscellaneous/poison", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/giant-scorpion_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -2177,7 +2164,7 @@
             "skills": { "0": "movement/web_projection", "1": "movement/climb", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/giant-spider_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -2222,7 +2209,7 @@
             "skills": { "0": "movement/blocking", "1": "movement/climb", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/gray-man-ape_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -2267,7 +2254,7 @@
             "skills": { "0": "miscellaneous/jinx", "1": "miscellaneous/horror", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/swamp-demon_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -2312,7 +2299,7 @@
             "skills": { "0": "miscellaneous/horror", "1": "magic/spell_caster", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/thaug_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -2356,7 +2343,6 @@
             "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
             "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "2",
-            "tokens": [],
     
             "quote": {
                 "text": {
@@ -2397,7 +2383,6 @@
             "dices": { "0": "yellowreroll", "1": "yellow", "2": "none", "3": "none" },
             "skills": { "0": "movement/leap", "1": "defense/untouchable", "2": "none", "3": "none" },
             "reinforcement": "2",
-            "tokens": [],
     
             "quote": {
                 "text": {
@@ -2438,7 +2423,6 @@
             "dices": { "0": "redreroll", "1": "none", "2": "none", "3": "none" },
             "skills": { "0": "movement/leap", "1": "movement/blocking", "2": "none", "3": "none" },
             "reinforcement": "2",
-            "tokens": [],
     
             "quote": {
                 "text": {
@@ -2479,7 +2463,6 @@
             "dices": { "0": "yellow", "1": "yellow", "2": "none", "3": "none" },
             "skills": { "0": "movement/leap", "1": "defense/untouchable", "2": "none", "3": "none" },
             "reinforcement": "1",
-            "tokens": [],
     
             "quote": {
                 "text": {
@@ -2520,7 +2503,6 @@
             "dices": { "0": "orange", "1": "none", "2": "none", "3": "none" },
             "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
-            "tokens": [],
     
             "quote": {
                 "text": {
@@ -2561,7 +2543,6 @@
             "dices": { "0": "orangereroll", "1": "orange", "2": "none", "3": "none" },
             "skills": { "0": "attack/constriction", "1": "attack/reach", "2": "none", "3": "none" },
             "reinforcement": "2",
-            "tokens": [],
     
             "image": "data/tiles/img/tentacles.png",
             "imageHD": "data/tiles/img/tentacles_hd.png",
@@ -2587,7 +2568,7 @@
             "skills": { "0": "attack/precision_strike", "1": "movement/blocking", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/baal-pteor_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -2631,7 +2612,6 @@
             "dices": { "0": "redreroll", "1": "none", "2": "none", "3": "none" },
             "skills": { "0": "attack/counterattack", "1": "defense/sacrifice", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [],
     
             "quote": {
                 "text": {
@@ -2674,7 +2654,6 @@
             "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
             "skills": { "0": "attack/precision_strike", "1": "miscellaneous/jinx", "2": "none", "3": "none" },
             "reinforcement": "3",
-            "tokens": [],
     
             "quote": {
                 "text": {
@@ -2715,7 +2694,6 @@
             "dices": { "0": "red", "1": "none", "2": "none", "3": "none" },
             "skills": { "0": "defense/sacrifice", "1": "attack/elite_shooter", "2": "none", "3": "none" },
             "reinforcement": "2",
-            "tokens": [],
     
             "quote": {
                 "text": {
@@ -2756,7 +2734,6 @@
             "dices": { "0": "redreroll", "1": "none", "2": "none", "3": "none" },
             "skills": { "0": "attack/precision_shot", "1": "attack/elite_shooter", "2": "none", "3": "none" },
             "reinforcement": "3",
-            "tokens": [],
     
             "quote": {
                 "text": {
@@ -2800,7 +2777,7 @@
             "skills": { "0": "movement/wall_wrecker", "1": "movement/blocking", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/demon-of-the-earth_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -2845,7 +2822,7 @@
             "skills": { "0": "movement/blocking", "1": "movement/wall_wrecker", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/dragon_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -2888,7 +2865,6 @@
             "dices": { "0": "red", "1": "none", "2": "none", "3": "none" },
             "skills": { "0": "movement/leap", "1": "movement/evasive", "2": "none", "3": "none" },
             "reinforcement": "2",
-            "tokens": [],
     
             "quote": {
                 "text": {
@@ -2932,7 +2908,7 @@
             "skills": { "0": "movement/leap", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/sabertooth-tiger_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -2976,7 +2952,7 @@
             "skills": { "0": "attack/counterattack", "1": "attack/precision_strike", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/afari_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -3021,7 +2997,7 @@
             "skills": { "0": "defense/sacrifice", "1": "attack/precision_strike", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/ghayoor_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "image": "data/tiles/img/ghayoor.png",
@@ -3050,7 +3026,7 @@
             "skills": { "0": "attack/precision_strike", "1": "defense/sacrifice", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/shafiah_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "image": "data/tiles/img/shafiah.png",
@@ -3079,7 +3055,7 @@
             "skills": { "0": "miscellaneous/concentration", "1": "magic/spell_caster", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/shubba_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -3124,7 +3100,7 @@
             "skills": { "0": "attack/precision_strike", "1": "movement/evasive", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/vanir-valkyrie_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "image": "data/tiles/img/vanir-valkyrie.png",
@@ -3153,7 +3129,7 @@
             "skills": { "0": "magic/spell_caster", "1": "defense/protected", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/salome_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -3198,8 +3174,8 @@
             "skills": { "0": "magic/spell_caster", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/atali_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 },
-                { "image":"data/tiles/img/atali_special_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 },
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -3243,7 +3219,6 @@
             "dices": { "0": "yellow", "1": "none", "2": "none", "3": "none" },
             "skills": { "0": "magic/spell_caster", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [],
     
             "image": "data/tiles/img/skuthus.png",
             "imageHD": "data/tiles/img/skuthus_hd.png",
@@ -3271,8 +3246,8 @@
             "skills": { "0": "miscellaneous/horror", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/nijgor_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 },
-                { "image":"data/tiles/img/nijgor_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 },
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -3317,8 +3292,8 @@
             "skills": { "0": "miscellaneous/horror", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/seski_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 },
-                { "image":"data/tiles/img/seski_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 },
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -3362,7 +3337,6 @@
             "dices": { "0": "yellowreroll", "1": "yellowreroll", "2": "none", "3": "none" },
             "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
-            "tokens": [],
     
             "quote": {
                 "text": {
@@ -3405,7 +3379,6 @@
             "dices": { "0": "yellowreroll", "1": "yellowreroll", "2": "none", "3": "none" },
             "skills": { "0": "attack/precision_strike", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
-            "tokens": [],
     
             "quote": {
                 "text": {
@@ -3446,7 +3419,6 @@
             "dices": { "0": "orange", "1": "none", "2": "none", "3": "none" },
             "skills": { "0": "attack/constriction", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
-            "tokens": [],
     
             "quote": {
                 "text": {
@@ -3487,7 +3459,6 @@
             "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
             "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
-            "tokens": [],
     
             "image": "data/tiles/img/vanir-primitives.png",
             "imageHD": "data/tiles/img/vanir-primitives_hd.png",
@@ -3512,7 +3483,6 @@
             "dices": { "0": "yellow", "1": "none", "2": "none", "3": "none" },
             "skills": { "0": "movement/flying", "1": "miscellaneous/jinx", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [],
     
             "quote": {
                 "text": {
@@ -3553,7 +3523,6 @@
             "dices": { "0": "yellow", "1": "none", "2": "none", "3": "none" },
             "skills": { "0": "movement/flying", "1": "miscellaneous/jinx", "2": "none", "3": "none" },
             "reinforcement": "1",
-            "tokens": [],
     
             "quote": {
                 "text": {
@@ -3594,7 +3563,6 @@
             "dices": { "0": "orange", "1": "none", "2": "none", "3": "none" },
             "skills": { "0": "movement/leap", "1": "movement/evasive", "2": "none", "3": "none" },
             "reinforcement": "1",
-            "tokens": [],
     
             "quote": {
                 "text": {
@@ -3637,7 +3605,6 @@
             "dices": { "0": "red", "1": "none", "2": "none", "3": "none" },
             "skills": { "0": "attack/counterattack", "1": "movement/blocking", "2": "none", "3": "none" },
             "reinforcement": "3",
-            "tokens": [],
     
             "quote": {
                 "text": {
@@ -3678,7 +3645,6 @@
             "dices": { "0": "orange", "1": "yellow", "2": "none", "3": "none" },
             "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
-            "tokens": [],
     
             "quote": {
                 "text": {
@@ -3719,7 +3685,6 @@
             "dices": { "0": "orange", "1": "none", "2": "none", "3": "none" },
             "skills": { "0": "movement/evasive", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
-            "tokens": [],
     
             "quote": {
                 "text": {
@@ -3761,8 +3726,8 @@
             "skills": { "0": "miscellaneous/concentration", "1": "magic/spell_caster", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/shuang-mian_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 },
-                { "image":"data/tiles/img/shuang-mian_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 },
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -3805,7 +3770,6 @@
             "dices": { "0": "red", "1": "red", "2": "none", "3": "none" },
             "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [],
     
             "image": "data/tiles/img/dark-demon.png",
             "imageHD": "data/tiles/img/dark-demon_hd.png",
@@ -3832,7 +3796,6 @@
             "dices": { "0": "yellow", "1": "yellow", "2": "none", "3": "none" },
             "skills": { "0": "movement/blocking", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
-            "tokens": [],
     
             "image": "data/tiles/img/khitan-guards.png",
             "imageHD": "data/tiles/img/khitan-guards_hd.png",
@@ -3857,7 +3820,6 @@
             "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
             "skills": { "0": "defense/sacrifice", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "2",
-            "tokens": [],
     
             "image": "data/tiles/img/honor-guards.png",
             "imageHD": "data/tiles/img/honor-guards_hd.png",
@@ -3882,7 +3844,6 @@
             "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
             "skills": { "0": "attack/elite_shooter", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "2",
-            "tokens": [],
     
             "image": "data/tiles/img/javelin-throwers.png",
             "imageHD": "data/tiles/img/javelin-throwers_hd.png",
@@ -3907,7 +3868,6 @@
             "dices": { "0": "yellow", "1": "yellow", "2": "none", "3": "none" },
             "skills": { "0": "attack/counterattack", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
-            "tokens": [],
     
             "image": "data/tiles/img/foo-dogs.png",
             "imageHD": "data/tiles/img/foo-dogs_hd.png",
@@ -3935,7 +3895,7 @@
             "skills": { "0": "magic/spell_caster", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/thot-amon_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -3980,7 +3940,7 @@
             "skills": { "0": "movement/blocking", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image":"data/tiles/img/scorpion-broodmother_token.png", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
             ],
     
             "image": "data/tiles/img/scorpion-broodmother.png",
@@ -4007,7 +3967,6 @@
             "dices": { "0": "yellow", "1": "none", "2": "none", "3": "none" },
             "skills": { "0": "miscellaneous/poison", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [],
     
             "quote": {
                 "text": {
@@ -4050,7 +4009,6 @@
             "dices": { "0": "red", "1": "orange", "2": "none", "3": "none" },
             "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
-            "tokens": [],
     
             "image": "data/tiles/img/eternal-guard.png",
             "imageHD": "data/tiles/img/eternal-guard_hd.png",
@@ -4075,7 +4033,6 @@
             "dices": { "0": "red", "1": "red", "2": "none", "3": "none" },
             "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "2",
-            "tokens": [],
     
             "image": "data/tiles/img/assassins.png",
             "imageHD": "data/tiles/img/assassins_hd.png",
@@ -4100,7 +4057,6 @@
             "dices": { "0": "red", "1": "red", "2": "none", "3": "none" },
             "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [],
     
             "image": "data/tiles/img/assassins.png",
             "imageHD": "data/tiles/img/assassins_hd.png",

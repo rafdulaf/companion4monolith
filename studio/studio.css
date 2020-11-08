@@ -103,4 +103,4 @@
     .dialog .printcards .back.invisible { display: none; }
 }
 
-.printoverflow { display: inline-block; overflow: hidden; }
+.printoverflow { display: inline-block; overflow: hidden; vertical-align: top; }

@@ -40,6 +40,7 @@
 .printcards input[name=equipment] + label:after { position: absolute; content: "\f057"; font-family: 'Font Awesome 5 Free'; font-size: 40px; left: -7px; top: -7px; color: red; }
 .printcards input[name=equipment]:checked + label:before { display: none; }
 .printcards input[name=equipment]:checked + label:after { content: "\f058"; color: green; }
+@media print { .printcards input[name=equipment] + label { margin-right: 0; } }
 
 @media screen and (max-width: 400px) {
     .card.equipement {

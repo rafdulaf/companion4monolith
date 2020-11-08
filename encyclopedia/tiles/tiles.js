@@ -451,7 +451,8 @@ var EncyclopediaTiles = {
             image: tile.imageHD && hd ? tile.imageHD + "?version=" + Version : (tile.image ? tile.image + "?version=" + Version : null),
             imagelocation: {x: tile.image_location.x, y: tile.image_location.y},
             imagezoom: tile.image_zoom,
-            imagerotation: "0"
+            imagerotation: "0",
+            tokens: (tile.tokens || []).map(function(t) { return {active: true, image: t.image, imagelocation: {x: t.image_location.x, y: t.image_location.y}, imagezoom: t.image_zoom, imagerotation: 0}})
         };
     },
     
@@ -547,7 +548,7 @@ var EncyclopediaTiles = {
         for (var e in displayTiles)
         {
             var tile = displayTiles[e]; 
-            c += "<div class='tile-wrapindetails' data-count='" + colors[tile.color] + "'>" + Tile._tileCode(EncyclopediaTiles._convertTileToStudio(tile, i)) + "</div>";
+            c += "<div class='tile-wrapindetails' data-count='" + colors[tile.color] + "'>" + Tile._tileCode(EncyclopediaTiles._convertTileToStudio(tile, false)) + "</div>";
         }
 
         var skills = ((tile.skills && tile.skills[0] != 'none') ?
