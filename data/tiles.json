@@ -114,7 +114,7 @@
             "model": "captain",
             "origins": ["corebox", "stretchgoal", "king"],
     
-            "count": 1
+            "count": 2
         },
     
         {
@@ -2447,7 +2447,47 @@
             "model": "pict-warriors",
             "origins": ["stretchgoal", "king"]
         },
+
+        {
+            "id": "pict-warriors",
+            "name": {
+                "fr": "Guerriers Pictes",
+                "en": "Pict Warriors",
+                "it": "TODO_TRANSLATE"
+            },
     
+            "colors": ["purple"],
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "movement/leap", "1": "movement/blocking", "2": "none", "3": "none" },
+            "reinforcement": "2",
+    
+            "quote": {
+                "text": {
+                    "fr": "Il était nu à l'exception d'un pagne, d'un collier de dents humaines et d'un bracelet de cuivre. Une courte épée était passée dans la ceinture qui retenait son pagne et une de ses mains agrippait toujours un puissant arc noir. Il avait les cheveux longs et noirs, mais le voyageur ne put rien dire d'autre sur sa tête, car son visage n'était plus qu'une bouillie de sang et de cervelle.",
+                    "en": "he Picts are a white race too, in that they are not black nor brown nor yellow, but they are black-eyed and black-haired and dark of skin.\nI could not mistake the sound. Only one drum in the world makes just that deep, menacing, sullen thunder: a Pictish war-drum, in the hands of those wild painted savages who haunted the Wilderness beyond the border of the Westermarck.",
+                    "it": "TODO_TRANSLATE"
+                },
+                "origin": {
+                    "fr": "Au-delà de la Rivière Noire",
+                    "en": "Wolves Beyond the Border",
+                    "it": "TODO_TRANSLATE"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+    
+            "image": "data/tiles/img/pict-warriors.png",
+            "imageHD": "data/tiles/img/pict-warriors_hd.png",
+            "image_location": {"x":51, "y":48},
+            "image_zoom": 113,
+            "model": "pict-warriors",
+            "origins": ["corebox", "stretchgoal", "king"]
+        },
+            
         {
             "id": "pirates-alt",
             "name": {
