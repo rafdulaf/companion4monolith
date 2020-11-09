@@ -27,14 +27,14 @@ var EncyclopediaTiles = {
           'it': {
             'tab': "Tessere",
             'transfertToStudio': "Copia la carta nello Studio",
-            'transfertOK': "TODO_TRANSLATE",
+            'transfertOK': "La carta è stata copiata nello Studio",
             'transfertConfirm': "Vuoi copiare la carta nello Studio per modificarla o stamparla?",
-            'from': "Disponibile in:",
+            'from': "Disponibile in :",
             'fromAnd': "e",
             'card': "copia",
             'cards': "copie",
-            'skill': "TODO_TRANSLATE",
-            'story': "Storia:"
+            'skill': "Abilità :",
+            'story': "Storia :"
         }
     },
 
@@ -263,7 +263,7 @@ var EncyclopediaTiles = {
                 label: {
                     'fr': "Jeton",
                     'en': "Token",
-                    'it': "TODO_TRANSLATE"
+                    'it': "Segnalino"
                 },
                 sort: true,
                 values: [
@@ -272,7 +272,7 @@ var EncyclopediaTiles = {
                         label: {
                             'fr': "Avec",
                             'en': "With",
-                            'it': "TODO_TRANSLATE"
+                            'it': "Con"
                         }
                     },
                     {
@@ -280,7 +280,7 @@ var EncyclopediaTiles = {
                         label: {
                             'fr': "Sans",
                             'en': "Without",
-                            'it': "TODO_TRANSLATE"
+                            'it': "Senza"
                         }
                     }
                 ],

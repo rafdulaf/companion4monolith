@@ -33,8 +33,8 @@ var EncyclopediaModels = {
             'paintedBy': "Dipinta da: ",
             'zoom': "Zoom",
             'print': "Stampa",
-            'heroes': "Usata dagli Eroi:",
-            'tiles': "TODO_TRANSLATE"
+            'heroes': "Usata dagli Eroi :",
+            'tiles': "Usata nelle tessere :"
         }
     },
 
