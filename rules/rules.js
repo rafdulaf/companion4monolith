@@ -62,10 +62,10 @@ var ConanRules = {
             'skills': "Abilità",
             'spell_clarification': "(Chiarimento incantesimi)",
 
-            'equipments': "Usato nelle carte equipaggiamento:",
-            'spells': "Usato nelle carte incantesimo:",
-            'heroesOwned': "Posseduto dagli Eroi:",
-            'tilesOwned': "TODO_TRANSLATE",
+            'equipments': "Usata nelle carte equipaggiamento:",
+            'spells': "Usata nelle carte incantesimo:",
+            'heroesOwned': "Possedute dagli Eroi:",
+            'tilesOwned': "Usata nelle tessere",
 
             'viewer-search': "Cerca nell'intero documento",
             'viewer-download': "Scarica il pdf",

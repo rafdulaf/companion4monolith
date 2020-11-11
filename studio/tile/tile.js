@@ -137,9 +137,9 @@ var Tile = {
             'reinforcement': "Rinforzo",
             'reinforcementPh': "?",
             'image': "Immagine (sfondo trasparente)",
-            'imagetoken': "TODO_TRANSLATE",
+            'imagetoken': "Immagine, se diversa",
             'imagePh': "Inserisci l'URL dell'immagine (http://...)",
-            'imagetokenactive': "TODO_TRANSLATE",
+            'imagetokenactive': "Attiva un segnalino",
             'imagelocation': "Posizione",
             'imagelocationPh': "0",
             'imagezoom': "Zoom",
@@ -155,7 +155,7 @@ var Tile = {
             'diceYellowReroll': "Giallo \uf01e",
             'header1': "Completa le informazioni sulla tessera",
             'header1bis': "Scegli un'immagine",
-            'header1ter': "TODO_TRANSLATE",
+            'header1ter': "Aggiungi un segnalino",
             'header2': "Anteprima risultato finale",
             'copyright': "Basato sui file PSD di <a href='https://the-overlord.com/index.php?/profile/9-genesteal28/'>@genesteal28</a> e convertiti nel formato GIMP da <a href='https://the-overlord.com/index.php?/profile/31-jabbathehatt/'>@jabbathehatt</a>."
         }
