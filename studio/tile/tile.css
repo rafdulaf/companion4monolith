@@ -230,12 +230,12 @@
     position: absolute;
     left: -5rem;
     top: 12rem;
-    z-index: 1
+    z-index: 2;
 }
 .tile.tokens.tokensOver .token + .token {
     left: -5rem;
     top: 13.5rem;
-    z-index: unset;
+    z-index: 1;
 }
 @media screen {
     .printcards .tile.tokens {

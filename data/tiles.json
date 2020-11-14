@@ -88,7 +88,7 @@
             "skills": { "0": "miscellaneous/support", "1": "defense/sacrifice", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":-4, "y":212}, "image_zoom": 440 }
             ],
     
             "quote": {
@@ -133,7 +133,7 @@
             "skills": { "0": "magic/spell_caster", "1": "defense/protected", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":78, "y":284}, "image_zoom": 300 }
             ],
     
             "quote": {
@@ -178,7 +178,7 @@
             "skills": { "0": "miscellaneous/fascination", "1": "miscellaneous/support", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":81, "y":270}, "image_zoom": 300 }
             ],
     
             "image": "data/tiles/img/princess.png",
@@ -205,7 +205,7 @@
             "skills": { "0": "magic/spell_caster", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":54, "y":104}, "image_zoom": 311 }
             ],
     
             "quote": {
@@ -250,7 +250,7 @@
             "skills": { "0": "miscellaneous/support", "1": "movement/leap", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":80, "y":239}, "image_zoom": 330 }
             ],
     
             "quote": {
@@ -294,9 +294,6 @@
             "dices": { "0": "redreroll", "1": "redreroll", "2": "redreroll", "3": "none" },
             "skills": { "0": "movement/blocking", "1": "miscellaneous/jinx", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
-            ],
     
             "quote": {
                 "text": {
@@ -340,7 +337,7 @@
             "skills": { "0": "movement/blocking", "1": "movement/wall_wrecker", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":6, "y":39}, "image_zoom": 262 }
             ],
     
             "quote": {
@@ -385,7 +382,7 @@
             "skills": { "0": "movement/wall_wrecker", "1": "attack/circular_strike", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":31, "y":271}, "image_zoom": 420 }
             ],
     
             "quote": {
@@ -430,7 +427,7 @@
             "skills": { "0": "movement/evasive", "1": "movement/flying", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":8, "y":-14}, "image_zoom": 441 }
             ],
     
             "quote": {
@@ -475,7 +472,7 @@
             "skills": { "0": "movement/blocking", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":44, "y":195}, "image_zoom": 400 }
             ],
     
             "quote": {
@@ -804,7 +801,7 @@
             "skills": { "0": "movement/intangible", "1": "miscellaneous/horror", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":22, "y":91}, "image_zoom": 280 }
             ],
     
             "quote": {
@@ -891,7 +888,7 @@
             "skills": { "0": "movement/leap", "1": "movement/feline_grace", "2": "none", "3": "none" },
             "reinforcement": "4",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":7, "y":63}, "image_zoom": 400 }
             ],
     
             "image": "data/tiles/img/conans-lion.png",
@@ -918,7 +915,7 @@
             "skills": { "0": "movement/leap", "1": "defense/sacrifice", "2": "none", "3": "none" },
             "reinforcement": "4",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":67, "y":144}, "image_zoom": 280 }
             ],
     
             "quote": {
@@ -1041,7 +1038,7 @@
             "skills": { "0": "movement/leap", "1": "magic/spell_caster", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":54, "y":329}, "image_zoom": 286 }
             ],
     
             "quote": {
@@ -1086,7 +1083,7 @@
             "skills": { "0": "attack/attack_from_beyond", "1": "magic/spell_caster", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":57, "y":236}, "image_zoom": 235 }
             ],
     
             "quote": {
@@ -1131,7 +1128,7 @@
             "skills": { "0": "attack/counterattack", "1": "miscellaneous/support", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":55, "y":222}, "image_zoom": 380 }
             ],
     
             "quote": {
@@ -1176,7 +1173,7 @@
             "skills": { "0": "defense/sacrifice", "1": "movement/feline_grace", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":66, "y":198}, "image_zoom": 300 }
             ],
     
             "quote": {
@@ -1221,7 +1218,7 @@
             "skills": { "0": "miscellaneous/jinx", "1": "magic/spell_caster", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":68, "y":218}, "image_zoom": 320 }
             ],
     
             "quote": {
@@ -1266,7 +1263,7 @@
             "skills": { "0": "miscellaneous/concentration", "1": "magic/spell_caster", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":63, "y":211}, "image_zoom": 380 }
             ],
     
             "quote": {
@@ -1311,7 +1308,7 @@
             "skills": { "0": "magic/spell_caster", "1": "miscellaneous/concentration", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":18, "y":221}, "image_zoom": 340 }
             ],
     
             "quote": {
@@ -1356,7 +1353,7 @@
             "skills": { "0": "defense/protected", "1": "magic/spell_caster", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":47, "y":268}, "image_zoom": 400 }
             ],
     
             "quote": {
@@ -1401,7 +1398,7 @@
             "skills": { "0": "miscellaneous/support", "1": "attack/precision_strike", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":30, "y":228}, "image_zoom": 220 }
             ],
     
             "quote": {
@@ -1444,7 +1441,7 @@
             "skills": { "0": "attack/precision_shot", "1": "attack/elite_shooter", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":56, "y":167}, "image_zoom": 300 }
             ],
     
             "quote": {
@@ -1487,7 +1484,7 @@
             "skills": { "0": "attack/attack_from_beyond", "1": "defense/protected", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":152}, "image_zoom": 430 }
             ],
     
             "quote": {
@@ -1530,7 +1527,7 @@
             "skills": { "0": "movement/wall_wrecker", "1": "attack/circular_strike", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":73, "y":162}, "image_zoom": 345 }
             ],
     
             "quote": {
@@ -1575,7 +1572,7 @@
             "skills": { "0": "magic/spell_caster", "1": "miscellaneous/concentration", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":64, "y":153}, "image_zoom": 300 }
             ],
     
             "quote": {
@@ -1618,7 +1615,7 @@
             "skills": { "0": "attack/precision_shot", "1": "defense/protected", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":12, "y":203}, "image_zoom": 290 }
             ],
     
             "quote": {
@@ -1661,7 +1658,7 @@
             "skills": { "0": "attack/elite_shooter", "1": "defense/sacrifice", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":55, "y":204}, "image_zoom": 330 }
             ],
     
             "quote": {
@@ -1689,7 +1686,6 @@
         },
     
         {
-            "id": "olgerd-vladislav",
             "name": {
                 "fr": "Olgerd Vladislav",
                 "en": "Olgerd Vladislav",
@@ -1704,7 +1700,7 @@
             "skills": { "0": "movement/blocking", "1": "attack/circular_strike", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":58, "y":211}, "image_zoom": 340 }
             ],
     
             "quote": {
@@ -1747,7 +1743,7 @@
             "skills": { "0": "miscellaneous/support", "1": "defense/sacrifice", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":46, "y":218}, "image_zoom": 295 }
             ],
     
             "quote": {
@@ -1790,7 +1786,7 @@
             "skills": { "0": "defense/untouchable", "1": "movement/evasive", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":66, "y":179}, "image_zoom": 340 }
             ],
     
             "quote": {
@@ -1833,7 +1829,7 @@
             "skills": { "0": "movement/evasive", "1": "attack/precision_strike", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":33, "y":171}, "image_zoom": 325 }
             ],
     
             "quote": {
@@ -1878,7 +1874,7 @@
             "skills": { "0": "movement/feline_grace", "1": "attack/counterattack", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":63, "y":226}, "image_zoom": 360 }
             ],
     
             "quote": {
@@ -1921,7 +1917,7 @@
             "skills": { "0": "miscellaneous/support", "1": "magic/spell_caster", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":23, "y":212}, "image_zoom": 300 }
             ],
     
             "quote": {
@@ -1964,7 +1960,7 @@
             "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":195, "y":166}, "image_zoom": 400 }
             ],
     
             "image": "data/tiles/img/camel.png",
@@ -1991,7 +1987,7 @@
             "skills": { "0": "attack/precision_shot", "1": "attack/elite_shooter", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":71, "y":243}, "image_zoom": 400 }
             ],
     
             "image": "data/tiles/img/kothian-archer.png",
@@ -2018,7 +2014,7 @@
             "skills": { "0": "defense/sacrifice", "1": "movement/evasive", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":5, "y":90}, "image_zoom": 200 }
             ],
     
             "image": "data/tiles/img/slasher.png",
@@ -2045,7 +2041,7 @@
             "skills": { "0": "movement/wall_wrecker", "1": "miscellaneous/horror", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":53, "y":141}, "image_zoom": 420 }
             ],
     
             "image": "data/tiles/img/bone-golem.png",
@@ -2074,7 +2070,7 @@
             "skills": { "0": "attack/precision_strike", "1": "movement/blocking", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":109, "y":181}, "image_zoom": 410 }
             ],
     
             "quote": {
@@ -2119,7 +2115,7 @@
             "skills": { "0": "miscellaneous/poison", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":28, "y":14}, "image_zoom": 250 }
             ],
     
             "quote": {
@@ -2164,7 +2160,7 @@
             "skills": { "0": "movement/web_projection", "1": "movement/climb", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":65, "y":54}, "image_zoom": 320 }
             ],
     
             "quote": {
@@ -2209,7 +2205,7 @@
             "skills": { "0": "movement/blocking", "1": "movement/climb", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":16, "y":190}, "image_zoom": 280 }
             ],
     
             "quote": {
@@ -2254,7 +2250,7 @@
             "skills": { "0": "miscellaneous/jinx", "1": "miscellaneous/horror", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":45, "y":137}, "image_zoom": 180 }
             ],
     
             "quote": {
@@ -2299,7 +2295,7 @@
             "skills": { "0": "miscellaneous/horror", "1": "magic/spell_caster", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":15, "y":73}, "image_zoom": 550 }
             ],
     
             "quote": {
@@ -2416,46 +2412,6 @@
                 "it": "Guerrieri Pitti"
             },
     
-            "colors": ["gray"],
-            "movement": "2",
-            "defense": "2",
-            "attacktype": "contact",
-            "dices": { "0": "redreroll", "1": "none", "2": "none", "3": "none" },
-            "skills": { "0": "movement/leap", "1": "movement/blocking", "2": "none", "3": "none" },
-            "reinforcement": "2",
-    
-            "quote": {
-                "text": {
-                    "fr": "Il était nu à l'exception d'un pagne, d'un collier de dents humaines et d'un bracelet de cuivre. Une courte épée était passée dans la ceinture qui retenait son pagne et une de ses mains agrippait toujours un puissant arc noir. Il avait les cheveux longs et noirs, mais le voyageur ne put rien dire d'autre sur sa tête, car son visage n'était plus qu'une bouillie de sang et de cervelle.",
-                    "en": "he Picts are a white race too, in that they are not black nor brown nor yellow, but they are black-eyed and black-haired and dark of skin.\nI could not mistake the sound. Only one drum in the world makes just that deep, menacing, sullen thunder: a Pictish war-drum, in the hands of those wild painted savages who haunted the Wilderness beyond the border of the Westermarck.",
-                    "it": "Anche i pitti appartengono alla razza bianca, nel senso che non sono né neri né bruni né gialli, ma hanno occhi e capelli neri e sono scuri di pelle.\nNon potevo fraintendere il suono. Solo un tamburo al mondo può emettere quel profondo, minaccioso, lugubre brontolio: un tamburo di guerra pitto, percosso dalle mani di quei selvaggi dipinti che infestano la foresta oltre il confine della Marca Occidentale."
-                },
-                "origin": {
-                    "fr": "Au-delà de la Rivière Noire",
-                    "en": "Wolves Beyond the Border",
-                    "it": "Lupi oltre la Frontiera"
-                },
-                "author": {
-                    "name": "Robert E. Howard"
-                }
-            },
-    
-            "image": "data/tiles/img/pict-warriors.png",
-            "imageHD": "data/tiles/img/pict-warriors_hd.png",
-            "image_location": {"x":51, "y":48},
-            "image_zoom": 113,
-            "model": "pict-warriors",
-            "origins": ["stretchgoal", "king"]
-        },
-
-        {
-            "id": "pict-warriors",
-            "name": {
-                "fr": "Guerriers Pictes",
-                "en": "Pict Warriors",
-                "it": "Guerrieri Pitti"
-            },
-    
             "colors": ["purple"],
             "movement": "2",
             "defense": "2",
@@ -2487,7 +2443,47 @@
             "model": "pict-warriors",
             "origins": ["corebox", "stretchgoal", "king"]
         },
-            
+
+        {
+            "id": "pict-warriors",
+            "name": {
+                "fr": "Guerriers Pictes",
+                "en": "Pict Warriors",
+                "it": "Guerrieri Pitti"
+            },
+    
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "movement/leap", "1": "movement/blocking", "2": "none", "3": "none" },
+            "reinforcement": "2",
+    
+            "quote": {
+                "text": {
+                    "fr": "Il était nu à l'exception d'un pagne, d'un collier de dents humaines et d'un bracelet de cuivre. Une courte épée était passée dans la ceinture qui retenait son pagne et une de ses mains agrippait toujours un puissant arc noir. Il avait les cheveux longs et noirs, mais le voyageur ne put rien dire d'autre sur sa tête, car son visage n'était plus qu'une bouillie de sang et de cervelle.",
+                    "en": "he Picts are a white race too, in that they are not black nor brown nor yellow, but they are black-eyed and black-haired and dark of skin.\nI could not mistake the sound. Only one drum in the world makes just that deep, menacing, sullen thunder: a Pictish war-drum, in the hands of those wild painted savages who haunted the Wilderness beyond the border of the Westermarck.",
+                    "it": "Anche i pitti appartengono alla razza bianca, nel senso che non sono né neri né bruni né gialli, ma hanno occhi e capelli neri e sono scuri di pelle.\nNon potevo fraintendere il suono. Solo un tamburo al mondo può emettere quel profondo, minaccioso, lugubre brontolio: un tamburo di guerra pitto, percosso dalle mani di quei selvaggi dipinti che infestano la foresta oltre il confine della Marca Occidentale."
+                },
+                "origin": {
+                    "fr": "Au-delà de la Rivière Noire",
+                    "en": "Wolves Beyond the Border",
+                    "it": "Lupi oltre la Frontiera"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+    
+            "image": "data/tiles/img/pict-warriors.png",
+            "imageHD": "data/tiles/img/pict-warriors_hd.png",
+            "image_location": {"x":51, "y":48},
+            "image_zoom": 113,
+            "model": "pict-warriors",
+            "origins": ["stretchgoal", "king"]
+        },
+                    
         {
             "id": "pirates-alt",
             "name": {
@@ -2608,7 +2604,7 @@
             "skills": { "0": "attack/precision_strike", "1": "movement/blocking", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":144}, "image_zoom": 165 }
             ],
     
             "quote": {
@@ -2817,7 +2813,7 @@
             "skills": { "0": "movement/wall_wrecker", "1": "movement/blocking", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":35, "y":136}, "image_zoom": 235 }
             ],
     
             "quote": {
@@ -2862,7 +2858,7 @@
             "skills": { "0": "movement/blocking", "1": "movement/wall_wrecker", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":-74, "y":88}, "image_zoom": 350 }
             ],
     
             "quote": {
@@ -2948,7 +2944,7 @@
             "skills": { "0": "movement/leap", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":-64, "y":57}, "image_zoom": 300 }
             ],
     
             "quote": {
@@ -2992,7 +2988,7 @@
             "skills": { "0": "attack/counterattack", "1": "attack/precision_strike", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":44, "y":150}, "image_zoom": 100 }
             ],
     
             "quote": {
@@ -3037,7 +3033,7 @@
             "skills": { "0": "defense/sacrifice", "1": "attack/precision_strike", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":59, "y":158}, "image_zoom": 150 }
             ],
     
             "image": "data/tiles/img/ghayoor.png",
@@ -3066,7 +3062,7 @@
             "skills": { "0": "attack/precision_strike", "1": "defense/sacrifice", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":47, "y":146}, "image_zoom": 150 }
             ],
     
             "image": "data/tiles/img/shafiah.png",
@@ -3095,7 +3091,7 @@
             "skills": { "0": "miscellaneous/concentration", "1": "magic/spell_caster", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":161}, "image_zoom": 150 }
             ],
     
             "quote": {
@@ -3140,7 +3136,7 @@
             "skills": { "0": "attack/precision_strike", "1": "movement/evasive", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":55, "y":102}, "image_zoom": 210 }
             ],
     
             "image": "data/tiles/img/vanir-valkyrie.png",
@@ -3169,7 +3165,7 @@
             "skills": { "0": "magic/spell_caster", "1": "defense/protected", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":38, "y":136}, "image_zoom": 115 }
             ],
     
             "quote": {
@@ -3214,8 +3210,7 @@
             "skills": { "0": "magic/spell_caster", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 },
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":103, "y":303}, "image_zoom": 360 }
             ],
     
             "quote": {
@@ -3286,8 +3281,8 @@
             "skills": { "0": "miscellaneous/horror", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 },
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":152}, "image_zoom": 280 },
+                { "image_location": {"x":50, "y":152}, "image_zoom": 280 }
             ],
     
             "quote": {
@@ -3332,8 +3327,8 @@
             "skills": { "0": "miscellaneous/horror", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 },
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":40, "y":156}, "image_zoom": 280 },
+                { "image_location": {"x":40, "y":156}, "image_zoom": 280 }
             ],
     
             "quote": {
@@ -3766,8 +3761,8 @@
             "skills": { "0": "miscellaneous/concentration", "1": "magic/spell_caster", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 },
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":50, "y":130}, "image_zoom": 200 },
+                { "image_location": {"x":50, "y":130}, "image_zoom": 200 }
             ],
     
             "quote": {
@@ -3810,6 +3805,9 @@
             "dices": { "0": "red", "1": "red", "2": "none", "3": "none" },
             "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
+            "tokens": [
+                { "image_location": {"x":50, "y":100}, "image_zoom": 245 }
+            ],
     
             "image": "data/tiles/img/dark-demon.png",
             "imageHD": "data/tiles/img/dark-demon_hd.png",
@@ -3935,7 +3933,7 @@
             "skills": { "0": "magic/spell_caster", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":49, "y":195}, "image_zoom": 260 }
             ],
     
             "quote": {
@@ -3980,7 +3978,7 @@
             "skills": { "0": "movement/blocking", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+                { "image_location": {"x":34, "y":27}, "image_zoom": 190 }
             ],
     
             "image": "data/tiles/img/scorpion-broodmother.png",
@@ -4104,6 +4102,744 @@
             "image_zoom": 100,
             "model": "assassins",
             "origins": ["stygia"]
+        }        
+    ],
+    
+    "other-tokens": [
+        {
+            "id": "trap",
+            "name": {
+                "fr": "Fosses",
+                "en": "Pit",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/trap.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "square", "width": 37, "height": 20},
+            "count": 3
+        },
+        {
+            "id": "chair",
+            "name": {
+                "fr": "Chaise",
+                "en": "Chair",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/chaise.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "square", "width": 20, "height": 20},
+            "count": 9
+        },
+        {
+            "id": "palisade",
+            "subid": 1,
+            "name": {
+                "fr": "Barricade",
+                "en": "Barricade",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/palisade-1.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "square", "width": 84, "height": 43}
+        },
+        {
+            "id": "palisade",
+            "subid": 2,
+            "name": {
+                "fr": "Barricade",
+                "en": "Barricade",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/palisade-2.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "square", "width": 84, "height": 43}
+        },
+        {
+            "id": "palisade",
+            "subid": 3,
+            "name": {
+                "fr": "Barricade",
+                "en": "Barricade",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/palisade-3.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "square", "width": 84, "height": 43}
+        },
+        {
+            "id": "palisade-life",
+            "subid": 1,
+            "name": {
+                "fr": "Vie de barricade",
+                "en": "Barricade life",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/palisade-life-1.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "circle", "width": 25}
+        },
+        {
+            "id": "palisade-life",
+            "subid": 2,
+            "name": {
+                "fr": "Vie de barricade",
+                "en": "Barricade life",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/palisade-life-2.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "circle", "width": 25}
+        },
+        {
+            "id": "palisade-life",
+            "subid": 3,
+            "name": {
+                "fr": "Vie de barricade",
+                "en": "Barricade life",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/palisade-life-3.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "circle", "width": 25}
+        },
+        {
+            "id": "reinforcement",
+            "name": {
+                "fr": "Renfort",
+                "en": "Reinforcement",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/reinforcement.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "circle", "width": 25},
+            "count": 6
+        },
+        {
+            "id": "reinforcement",
+            "name": {
+                "fr": "Renfort",
+                "en": "Reinforcement",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/reinforcement.png" },
+            "origins": ["king"], 
+            "size": {"shape": "circle", "width": 25},
+            "count": 3
+        },
+        {
+            "id": "barrel",
+            "name": {
+                "fr": "Tonneau",
+                "en": "Barrel",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/barrel.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "circle", "width": 25},
+            "count": 6
+        },        {
+            "id": "time",
+            "name": {
+                "fr": "Compte-tour",
+                "en": "Turn marker",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/time.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "circle", "width": 25}
+        },
+        {
+            "id": "invocation",
+            "name": {
+                "fr": "Invocation",
+                "en": "Invocation",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/invocation.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "circle", "width": 25}
+        },
+        {
+            "id": "alarm",
+            "name": {
+                "fr": "Alarme",
+                "en": "Alarm",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/alarm.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "circle", "width": 25}
+        },
+        {
+            "id": "energy",
+            "name": {
+                "fr": "Energie",
+                "en": "Energy",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/energy.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "circle", "width": 25}
+        },
+        {
+            "id": "mitra-halo",
+            "name": {
+                "fr": "Halo de Mitra",
+                "en": "Mitra's Halo",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/mitra-halo.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "circle", "width": 35}
+        },
+        {
+            "id": "set-halo",
+            "name": {
+                "fr": "Halo de Set",
+                "en": "Set's Halo",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/set-halo.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "circle", "width": 35}
+        },
+        {
+            "id": "wrecked-wall",
+            "name": {
+                "fr": "Cloison défoncée",
+                "en": "Wrecked wall",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/wrecked-wall.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "circle", "width": 25},
+            "count": 6
+        },
+        {
+            "id": "wrecked-wall",
+            "name": {
+                "fr": "Cloison défoncée",
+                "en": "Wrecked wall",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/wrecked-wall.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "circle", "width": 25},
+            "count": 3
+        },
+        {
+            "id": "chest-mark",
+            "name": {
+                "fr": "Pion trésors",
+                "en": "Treasure token",
+                "it": "TODO_TRANSLATE"
+            },
+            "subid": 1,
+            "faceA": { "image": "data/tiles/other/chest-1.png" },
+            "faceB": { "image": "data/tiles/other/chestb.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "circle", "width": 25},
+            "count": 9
+        },
+        {
+            "id": "chest-mark",
+            "name": {
+                "fr": "Pion trésors",
+                "en": "Treasure token",
+                "it": "TODO_TRANSLATE"
+            },
+            "subid": 1,
+            "faceA": { "image": "data/tiles/other/chest-2.png" },
+            "faceB": { "image": "data/tiles/other/chestb.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "circle", "width": 25},
+            "count": 4
+        },
+        {
+            "id": "marker",
+            "subid": 1,
+            "name": {
+                "fr": "Marqueur numéroté",
+                "en": "Numbered token",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/marker-1.png" },
+            "faceB": { "image": "data/tiles/other/marker.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "circle", "width": 25}
+        },
+        {
+            "id": "marker",
+            "subid": 2,
+            "name": {
+                "fr": "Marqueur numéroté",
+                "en": "Numbered token",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/marker-2.png" },
+            "faceB": { "image": "data/tiles/other/marker.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "circle", "width": 25}
+        },
+        {
+            "id": "marker",
+            "subid": 3,
+            "name": {
+                "fr": "Marqueur numéroté",
+                "en": "Numbered token",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/marker-3.png" },
+            "faceB": { "image": "data/tiles/other/marker.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "circle", "width": 25}
+        },
+        {
+            "id": "marker",
+            "subid": 4,
+            "name": {
+                "fr": "Marqueur numéroté",
+                "en": "Numbered token",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/marker-4.png" },
+            "faceB": { "image": "data/tiles/other/marker.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "circle", "width": 25}
+        },
+        {
+            "id": "marker-5",
+            "subid": 5,
+            "name": {
+                "fr": "Marqueur numéroté",
+                "en": "Numbered token",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/marker-5.png" },
+            "faceB": { "image": "data/tiles/other/marker.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "circle", "width": 25}
+        },
+        {
+            "id": "marker",
+            "subid": 6,
+            "name": {
+                "fr": "Marqueur numéroté",
+                "en": "Numbered token",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/marker-6.png" },
+            "faceB": { "image": "data/tiles/other/marker.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "circle", "width": 25}
+        },
+        {
+            "id": "marker",
+            "subid": 7,
+            "name": {
+                "fr": "Marqueur numéroté",
+                "en": "Numbered token",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/marker-7.png" },
+            "faceB": { "image": "data/tiles/other/marker.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "circle", "width": 25}
+        },
+        {
+            "id": "marker",
+            "subid": 8,
+            "name": {
+                "fr": "Marqueur numéroté",
+                "en": "Numbered token",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/marker-8.png" },
+            "faceB": { "image": "data/tiles/other/marker.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "circle", "width": 25}
+        },
+        {
+            "id": "marker",
+            "subid": 9,
+            "name": {
+                "fr": "Marqueur numéroté",
+                "en": "Numbered token",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/marker-9.png" },
+            "faceB": { "image": "data/tiles/other/marker.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "circle", "width": 25}
+        },
+        {
+            "id": "marker",
+            "subid": 10,
+            "name": {
+                "fr": "Marqueur numéroté",
+                "en": "Numbered token",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/marker-10.png" },
+            "faceB": { "image": "data/tiles/other/marker.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "circle", "width": 25}
+        },
+        {
+            "id": "marker",
+            "subid": 11,
+            "name": {
+                "fr": "Marqueur numéroté",
+                "en": "Numbered token",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/marker-11.png" },
+            "faceB": { "image": "data/tiles/other/marker.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "circle", "width": 25}
+        },
+        {
+            "id": "marker",
+            "subid": 12,
+            "name": {
+                "fr": "Marqueur numéroté",
+                "en": "Numbered token",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/marker-12.png" },
+            "faceB": { "image": "data/tiles/other/marker.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "circle", "width": 25}
+        },
+        {
+            "id": "marker",
+            "subid": 13,
+            "name": {
+                "fr": "Marqueur numéroté",
+                "en": "Numbered token",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/marker-13.png" },
+            "faceB": { "image": "data/tiles/other/marker.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "circle", "width": 25}
+        },
+        {
+            "id": "scree",
+            "name": {
+                "fr": "Ebouli",
+                "en": "Boulder",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/scree.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "circle", "width": 25},
+            "count": 4
+        },
+        {
+            "id": "scree",
+            "name": {
+                "fr": "Ebouli",
+                "en": "Boulder",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/scree.png" },
+            "origins": ["stretchgoal", "king"], 
+            "size": {"shape": "circle", "width": 25},
+            "count": 3
+        },
+        {
+            "id": "water",
+            "name": {
+                "fr": "Eau",
+                "en": "Water",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/water.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "circle", "width": 25},
+            "count": 6
+        },
+        {
+            "id": "water",
+            "name": {
+                "fr": "Eau",
+                "en": "Water",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/water.png" },
+            "origins": ["stretchgoal", "king"], 
+            "size": {"shape": "circle", "width": 25},
+            "count": 3
+        },
+        {
+            "id": "web",
+            "name": {
+                "fr": "Toile",
+                "en": "Web",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/web.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "circle", "width": 25},
+            "count": 3
+        },
+        {
+            "id": "door",
+            "name": {
+                "fr": "Porte",
+                "en": "Door",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/door.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "square", "width": 30, "height": 20},
+            "count": 12 
+        },
+        {
+            "id": "chest",
+            "name": {
+                "fr": "Coffre",
+                "en": "Chest",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/chest.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "square", "width": 30, "height": 17},
+            "count": 10 
+        },
+        {
+            "id": "table",
+            "name": {
+                "fr": "Coffre",
+                "en": "Chest",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/table.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "circle", "width": 45},
+            "count": 3 
+        },
+        {
+            "id": "stairs",
+            "subid": 0,
+            "name": {
+                "fr": "Escalier",
+                "en": "Stairs",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/stairs.png" },
+            "origins": ["stretchgoal", "king"], 
+            "size": {"shape": "circle", "width": 25},
+            "count": 2 
+        },
+        {
+            "id": "stairs",
+            "subid": 1,
+            "name": {
+                "fr": "Escalier",
+                "en": "Stairs",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/stairs-ok.png" },
+            "faceB": { "image": "data/tiles/other/stairs.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "circle", "width": 25},
+            "count": 2 
+        },
+        {
+            "id": "stairs",
+            "subid": 2,
+            "name": {
+                "fr": "Escalier",
+                "en": "Stairs",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/stairs-ko.png" },
+            "faceB": { "image": "data/tiles/other/stairs.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "circle", "width": 25},
+            "count": 2 
+        },
+        {
+            "id": "fire-12",
+            "subid": 2,
+            "name": {
+                "fr": "Feu",
+                "en": "Flame",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/fire-1.png" },
+            "faceB": { "image": "data/tiles/other/fire-2.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "circle", "width": 25},
+            "count": 8 
+        },
+        {
+            "id": "fire-13",
+            "subid": 2,
+            "name": {
+                "fr": "Fire",
+                "en": "Flame",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/fire-1.png" },
+            "faceB": { "image": "data/tiles/other/fire-3.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "circle", "width": 25},
+            "count": 4
+        },
+        {
+            "id": "fire-13",
+            "subid": 2,
+            "name": {
+                "fr": "Fire",
+                "en": "Flame",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/fire-1.png" },
+            "faceB": { "image": "data/tiles/other/fire-3.png" },
+            "origins": ["king"], 
+            "size": {"shape": "circle", "width": 25},
+            "count": 4
+        },
+        {
+            "id": "well-big",
+            "name": {
+                "fr": "Puit",
+                "en": "Well",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/well.png" },
+            "origins": ["corebox", "stretchgoal", "king"], 
+            "size": {"shape": "circle", "width": 50}
+        },
+        { 
+            "id": "iced-atali", 
+            "name": {
+                "fr": "Atali gelée",
+                "en": "Iced Atali",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/iced-atali.png" },
+            "origins": ["nordheim"], 
+            "size": {"shape": "circle", "width": 25} 
+        },
+        { 
+            "id": "iced-armor", 
+            "name": {
+                "fr": "Armure gelée",
+                "en": "Iced armor",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/iced-armor.png" }, 
+            "origins": ["nordheim"], 
+            "size": {"shape": "circle", "width": 25},
+            "count": 2 
+        },
+        {
+            "id": "assassins",
+            "subid": 1,
+            "name": {
+                "fr": "Assassin",
+                "en": "Assassin",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/assassins-ok.png" }, 
+            "faceB": { "image": "data/tiles/other/assassins.png" },
+            "origins": ["stygia"], 
+            "size": {"shape": "circle", "width": 25},
+            "count": 5 
+        },
+        {
+            "id": "assassins",
+            "subid": 2,
+            "name": {
+                "fr": "Assassin",
+                "en": "Assassin",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/assassins-ko.png" }, 
+            "faceB": { "image": "data/tiles/other/assassins.png" },
+            "origins": ["stygia"], 
+            "size": {"shape": "circle", "width": 25},
+            "count": 5 
+        },
+        {
+            "id": "well",
+            "subid": 1,
+            "name": {
+                "fr": "Pion puit",
+                "en": "Assassin",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/well.png" },
+            "origins": ["stygia"], 
+            "size": {"shape": "circle", "width": 25},
+            "count": 6
+        },
+        {
+            "id": "wellk",
+            "subid": 2,
+            "name": {
+                "fr": "Pion puit",
+                "en": "Assassin",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/well-ok.png" },
+            "faceB": { "image": "data/tiles/other/well.png" },
+            "origins": ["stygia"], 
+            "size": {"shape": "circle", "width": 25}
+        },
+        {
+            "id": "well",
+            "subid": 3,
+            "name": {
+                "fr": "Pion puit",
+                "en": "Assassin",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/well-ko.png" },
+            "faceB": { "image": "data/tiles/other/well.png" },
+            "origins": ["stygia"], 
+            "size": {"shape": "circle", "width": 25},
+            "count": 5 
+        },        
+        {
+            "id": "secret",
+            "name": {
+                "fr": "Passage secret",
+                "en": "Secret passage",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/secret.png" },
+            "origins": ["stygia"], 
+            "size": {"shape": "circle", "width": 25},
+            "count": 10
+        },        
+        {
+            "id": "poison",
+            "name": {
+                "fr": "Poison",
+                "en": "Poison",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/poison.png" },
+            "origins": ["stygia"], 
+            "size": {"shape": "circle", "width": 10},
+            "count": 20
+        },        
+        {
+            "id": "bridge",
+            "name": {
+                "fr": "Pont",
+                "en": "Bridge",
+                "it": "TODO_TRANSLATE"
+            },
+            "faceA": { "image": "data/tiles/other/bridge.png" },
+            "origins": ["stygia"], 
+            "size": {"shape": "square", "width": 35, "height": 150},
+            "count": 4
         }        
     ]
 }
