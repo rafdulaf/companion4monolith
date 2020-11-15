@@ -1,0 +1,139 @@
+#encyclopedia-token {
+    font-family: 'Hyborian';
+    overflow: auto;
+    position: relative;
+}
+#encyclopedia-token-wrapper {
+    margin-left: 156px;
+    text-align: center;
+}
+
+#encyclopedia-token-wrapper a {
+    position: relative;
+}
+
+div.token-wrapindetails  .othertoken,
+#encyclopedia-token-wrapper .othertoken {
+    display: inline-block;
+    vertical-align: top;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    position: relative;
+    margin: 2px;
+    background-color: #dfdfdf;
+}
+
+div.token-wrapindetails  .othertoken img,
+#encyclopedia-token-wrapper .othertoken img {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.token-wrapindetails  .othertoken .name,
+#encyclopedia-token-wrapper .othertoken .name {
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+    right: 0;
+    text-align: center;
+    font-family: 'Hyborian';
+    font-size: 16px;
+    background-color: rgba(0,0,0,0.3);
+    color: #fff;
+}
+
+div.token-wrapindetails,
+#encyclopedia-tile-wrapper a {
+    position: relative;
+    display: inline-block;
+}
+
+div.token-wrapindetails[data-count]::after,
+#encyclopedia-token-wrapper a[data-count]::after {
+    content: 'x' attr(data-count);
+    position: absolute;
+    z-index: 2;
+    top: 10%;
+    right: -5%;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 18px;
+    font-family: "Hyborian";
+    text-align: center;
+    background-color: #e64443;
+    color: #ffffff;
+    border-radius: 100%;
+}
+div.token-wrapindetails[data-count='1']::after,
+#encyclopedia-token-wrapper a[data-count='1']::after {
+    content: none;
+}
+
+
+
+@keyframes rotation {
+  0% { transform: rotate3d(0, 1, 0, 0deg); }
+  22% { transform: rotate3d(0, 1, 0, 70deg); }
+  28% { transform: rotate3d(0, 1, 0, 110deg); }
+  50% { transform: rotate3d(0, 1, 0, 180deg); }
+  72% { transform: rotate3d(0, 1, 0, 250deg); }
+  78% { transform: rotate3d(0, 1, 0, 290deg); }
+  100% { transform: rotate3d(0, 1, 0, 360deg); }
+}
+
+div.token-wrapindetails .othertoken .img {
+  animation-name: rotation;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 2.5s;
+  transform-style: preserve-3d;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+div.token-wrapindetails .othertoken img {
+    z-index: 2;
+    backface-visibility: hidden;
+}
+div.token-wrapindetails .othertoken img.return {
+    z-index: 1;
+    transform: translate(-50%, -50%) rotate3d(0, 1, 0, 180deg);
+    filter: contrast(0%);
+}
+div.token-wrapindetails .othertoken img.back {
+    z-index: 1;
+    transform: translate3d(-50%, -50%, -10px) rotate3d(0, 1, 0, 180deg);
+}
+div.token-wrapindetails .othertoken img.back.return {
+    z-index: 1;
+    transform: translate3d(-50%, -50%, -10px);
+}
+
+div.token-wrapindetails .othertoken .img:before {
+    background-color: #7f7f7f;
+}
+div.token-wrapindetails .othertoken .img .middle {
+    background-color: #7f7f7f;
+    background-image: -webkit-linear-gradient(hsla(0,0%,100%,.25), hsla(0,0%,0%,.25));
+    bottom: 0;
+    content: '';
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    width: 9px;
+    z-index: -10;
+    transform: translate3d(0%, -50%, -5px) rotateY(-90deg);
+}
+
+div.token-wrapindetails:nth-child(0n) .othertoken .img { animation-delay: 0s; } 
+div.token-wrapindetails:nth-child(1n) .othertoken .img { animation-delay: -1s; } 
+div.token-wrapindetails:nth-child(2n) .othertoken .img { animation-delay: -2s; } 
+div.token-wrapindetails:nth-child(3n) .othertoken .img { animation-delay: -3s; } 
+div.token-wrapindetails:nth-child(4n) .othertoken .img { animation-delay: -4s; } 
+

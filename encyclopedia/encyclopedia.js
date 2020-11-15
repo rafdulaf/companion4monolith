@@ -69,6 +69,7 @@ var Encyclopedia = {
             _load("data/maps.json", function(data) { Encyclopedia.maps = data; }),
             _load("data/models.json", function(data) { Encyclopedia.models = _handleCount(data); }),
             _load("data/tiles.json", function(data) { Encyclopedia.tiles = _handleColors(_handleCount(data)); }),
+            _load("data/tokens.json", function(data) { Encyclopedia.tokens = _handleCount(data); }),
             _load("data/heroes.json", function(data) { Encyclopedia.heroes = data; })
         ]);
     },
@@ -105,6 +106,7 @@ var Encyclopedia = {
         EncyclopediaHeroes.preinit();
         EncyclopediaTiles.preinit();
         EncyclopediaModels.preinit();
+        EncyclopediaTokens.preinit();
         
         Nav.createTabs('encyclopedia', Encyclopedia._slides, Encyclopedia.onChange);
 
@@ -113,6 +115,7 @@ var Encyclopedia = {
         EncyclopediaHeroes.init();
         EncyclopediaTiles.init();
         EncyclopediaModels.init();
+        EncyclopediaTokens.init();
         
         Encyclopedia.onChange();
 

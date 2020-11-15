@@ -252,7 +252,7 @@ var Tile = {
 
         if (tile.image)
         {
-            code += "<div class=\"image\"><img loading=\"lazy\" src=\"" + tile.image + "\" style=\"left: " + tile.imagelocation.x + "%; top: " + tile.imagelocation.y + "%; width: " + tile.imagezoom + "%; transform: translate(-50%, -50%) rotate(" + tile.imagerotation + "deg)\"/></div>";
+            code += "<div class=\"image\"><img loading=\"lazy\" src=\"" + tile.image + "\?version=" + Version + "\" style=\"left: " + tile.imagelocation.x + "%; top: " + tile.imagelocation.y + "%; width: " + tile.imagezoom + "%; transform: translate(-50%, -50%) rotate(" + tile.imagerotation + "deg)\"/></div>";
         }
 
         if (tile.name !== undefined && tile.name !== null)
@@ -357,10 +357,10 @@ var Tile = {
         if ((tokenMode == null || tokenMode == true) && tile.tokens && tile.tokens.length > 0 && tile.tokens[0].active)
         {
             code += "<div class=\"tile tokens" + (tokenAside ? " tokensAside" : " tokensOver") + "\">";
-            code += "<div class=\"token\"><img loading=\"lazy\" src=\"" + (tile.tokens[0].image || tile.image) + "\" style=\"left: " + tile.tokens[0].imagelocation.x + "%; top: " + tile.tokens[0].imagelocation.y + "%; width: " + tile.tokens[0].imagezoom + "%; transform: translate(-50%, -50%) rotate(" + tile.tokens[0].imagerotation + "deg)\"/></div>";
+            code += "<div class=\"token\"><img loading=\"lazy\" src=\"" + (tile.tokens[0].image || tile.image) + "\?version=" + Version + "\" style=\"left: " + tile.tokens[0].imagelocation.x + "%; top: " + tile.tokens[0].imagelocation.y + "%; width: " + tile.tokens[0].imagezoom + "%; transform: translate(-50%, -50%) rotate(" + tile.tokens[0].imagerotation + "deg)\"/></div>";
             if (tile.tokens.length > 1 && tile.tokens[1].active)
             {
-                code += "<div class=\"token\"><img loading=\"lazy\" src=\"" + (tile.tokens[1].image || tile.image) + "\" style=\"left: " + tile.tokens[1].imagelocation.x + "%; top: " + tile.tokens[1].imagelocation.y + "%; width: " + tile.tokens[1].imagezoom + "%; transform: translate(-50%, -50%) rotate(" + tile.tokens[1].imagerotation + "deg)\"/></div>";
+                code += "<div class=\"token\"><img loading=\"lazy\" src=\"" + (tile.tokens[1].image || tile.image) + "\?version=" + Version + "\" style=\"left: " + tile.tokens[1].imagelocation.x + "%; top: " + tile.tokens[1].imagelocation.y + "%; width: " + tile.tokens[1].imagezoom + "%; transform: translate(-50%, -50%) rotate(" + tile.tokens[1].imagerotation + "deg)\"/></div>";
             }
             code += "</div>";
         }
