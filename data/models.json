@@ -1022,6 +1022,144 @@
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
             "origins": ["stretchgoal", "king"]
-        }        
+        },
+        
+        {
+            "id": "chest",
+            "thumb": "data/models/img/chest_sd.jpg",
+            "images": ["data/models/img/chest_1.jpg"],
+            "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
+            "type": "scenery",
+            "origins": ["stretchgoal", "king"],
+            "count": 5
+        },
+
+        {
+            "id": "chest",
+            "thumb": "data/models/img/chest_sd.jpg",
+            "images": ["data/models/img/chest_1.jpg"],
+            "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
+            "type": "scenery",
+            "origins": ["adventurepack"],
+            "count": 5
+        },
+
+        {
+            "id": "chest",
+            "thumb": "data/models/img/chest_sd.jpg",
+            "images": ["data/models/img/chest_2.jpg"],
+            "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
+            "type": "scenery",
+            "origins": ["stretchgoal", "king"],
+            "count": 5
+        },
+        
+        {
+            "id": "table",
+            "thumb": "data/models/img/table_sd.jpg",
+            "images": ["data/models/img/table_1.jpg"],
+            "paint": { "name": "Cochon", "link": "https://the-overlord.com/index.php?/profile/5240-cochon/"},
+            "type": "scenery",
+            "origins": ["stretchgoal", "king"],
+            "count": 3
+        },
+        {
+            "id": "stool",
+            "thumb": "data/models/img/stool_sd.jpg",
+            "images": ["data/models/img/stool_1.jpg"],
+            "paint": { "name": "Cochon", "link": "https://the-overlord.com/index.php?/profile/5240-cochon/"},
+            "type": "scenery",
+            "origins": ["stretchgoal", "king"],
+            "count": 5
+        },
+        {
+            "id": "stool",
+            "thumb": "data/models/img/stool_sd.jpg",
+            "images": ["data/models/img/stool_2.jpg"],
+            "paint": { "name": "Cochon", "link": "https://the-overlord.com/index.php?/profile/5240-cochon/"},
+            "type": "scenery",
+            "origins": ["stretchgoal", "king"],
+            "count": 5
+        },
+        
+        {
+            "id": "bones",
+            "thumb": "data/models/img/bones_sd.jpg",
+            "images": ["data/models/img/bones_1.jpg"],
+            "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
+            "type": "scenery",
+            "origins": ["stretchgoal", "king"],
+            "count": 2
+        },
+        {
+            "id": "bones",
+            "thumb": "data/models/img/bones_sd.jpg",
+            "images": ["data/models/img/bones_1.jpg"],
+            "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
+            "type": "scenery",
+            "origins": ["adventurepack"],
+            "count": 2
+        },
+        {
+            "id": "sarcophagus",
+            "thumb": "data/models/img/sarcophagus_sd.jpg",
+            "images": ["data/models/img/sarcophagus_1.jpg"],
+            "paint": { "name": "Cochon", "link": "https://the-overlord.com/index.php?/profile/5240-cochon/"},
+            "type": "scenery",
+            "origins": ["stretchgoal", "king"]
+        },
+        {
+            "id": "sarcophagus",
+            "thumb": "data/models/img/sarcophagus_sd.jpg",
+            "images": ["data/models/img/sarcophagus_1.jpg"],
+            "paint": { "name": "Cochon", "link": "https://the-overlord.com/index.php?/profile/5240-cochon/"},
+            "type": "scenery",
+            "origins": ["adventurepack"]
+        },
+        {
+            "id": "bookcase",
+            "thumb": "data/models/img/bookcase_sd.jpg",
+            "images": ["data/models/img/bookcase_1.jpg"],
+            "paint": { "name": "Cochon", "link": "https://the-overlord.com/index.php?/profile/5240-cochon/"},
+            "type": "scenery",
+            "origins": ["stretchgoal", "king"]
+        },
+        {
+            "id": "torch-stand",
+            "thumb": "data/models/img/torch-stand_sd.jpg",
+            "images": ["data/models/img/torch-stand_1.jpg"],
+            "paint": { "name": "Cochon", "link": "https://the-overlord.com/index.php?/profile/5240-cochon/"},
+            "type": "scenery",
+            "origins": ["stretchgoal", "king"],
+            "count": 5
+        },
+        
+        {
+            "id": "barrel",
+            "thumb": "data/models/img/barrel_sd.jpg",
+            "images": ["data/models/img/barrel_1.jpg"],
+            "paint": null,
+            "type": "scenery",
+            "origins": ["adventurepack"],
+            "count": 5
+        },
+        {
+            "id": "animal-skin",
+            "thumb": "data/models/img/animal-skin_sd.jpg",
+            "images": ["data/models/img/animal-skin_1.jpg"],
+            "paint": null,
+            "type": "scenery",
+            "origins": ["adventurepack"]
+        },
+        
+        {
+            "id": "doors",
+            "thumb": "data/models/img/doors_sd.jpg",
+            "images": ["data/models/img/doors_1.jpg"],
+            "paint": null,
+            "type": "scenery",
+            "origins": ["doorpack"],
+            "count": 10
+        }
     ]
 }

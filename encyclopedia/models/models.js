@@ -247,6 +247,14 @@ var EncyclopediaModels = {
                             'en': "Monster",
                             'it': "Mostro"
                         }
+                    },
+                    {
+                        id: "scenery",
+                        label: {
+                            'fr': "Décor",
+                            'en': "Scenery",
+                            'it': "TODO_TRANSLATE"
+                        }
                     }
                 ],
                 filter: function(item, selectedValues) {
@@ -403,7 +411,7 @@ var EncyclopediaModels = {
             }
         }
         
-        return names.join(" / ") || ("'" + (model ? model.id : '-') + "'");
+        return names.join(" / ") || (model ? model.id : '-');
     },
 
     _findModelsById: function(id)

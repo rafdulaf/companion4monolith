@@ -304,15 +304,15 @@ var EncyclopediaTokens = {
     _tokenCode: function(token, details) {
         var code = "";
 
-        var ratio = 7.0/25.0;        
+        var ratio = 7.2/25.0;        
         var style = token.size.shape == "circle" || token.size.width >= token.size.height ? "width: " + (token.size.width*ratio) +  "rem;" : "height: " + (token.size.height*ratio) +  "rem;"
         code += "<div class='othertoken " + token.size.shape + "'>" 
                     + "<div class='img'>"
                         + "<img src='" + (token.faceB ? token.faceB.image : token.faceA.image) + "\?version=" + Version + "' style='" + style + "'/>"
                         + (details ? "<img class='return' src='" + (token.faceB ? token.faceB.image : token.faceA.image) + "\?version=" + Version + "' style='" + style + "'/>" : "")
-                        + (details ? "<div class='middle' style='height:" + (token.size.height ? token.size.height*ratio : token.size.width*ratio) + "rem'></div>" : "")
-                        + (details ? "<img class='back' src='" + token.faceA.image + "\?version=" + Version + "' style='" + style + "'/>" : "")
                         + (details ? "<img class='back return' src='" + token.faceA.image + "\?version=" + Version + "' style='" + style + "'/>" : "")
+                        + (details ? "<img class='back' src='" + token.faceA.image + "\?version=" + Version + "' style='" + style + "'/>" : "")
+                        + (details ? "<div class='middle' style='height:" + (token.size.height ? token.size.height*ratio : token.size.width*ratio) + "rem'></div>" : "")
                     + "</div>"
                     + "<span class='name'>" + token.name[Language] + "</span>"
               + "</div>"
