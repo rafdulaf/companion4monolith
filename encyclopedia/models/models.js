@@ -10,7 +10,8 @@ var EncyclopediaModels = {
             'zoom': "Zoom",
             'print': "Imprimer",
             'heroes': "Utilisée par les héros :",
-            'tiles': "Utilisée par les tuiles :"
+            'tiles': "Utilisée par les tuiles :",
+            'tokens': "Remplace le jeton :"
         },
         'en': {
             'tab': "Minia<wbr/>tures",
@@ -22,7 +23,8 @@ var EncyclopediaModels = {
             'zoom': "Zoom",
             'print': "Print",
             'heroes': "Used by the heroes:",
-            'tiles': "Used by the tiles:"
+            'tiles': "Used by the tiles:",
+            'tokens': "Replace the token:"
         },
         'it': {
             'tab': "Minia<wbr/>ture",
@@ -34,7 +36,8 @@ var EncyclopediaModels = {
             'zoom': "Zoom",
             'print': "Stampa",
             'heroes': "Usata dagli Eroi :",
-            'tiles': "Usata nelle tessere :"
+            'tiles': "Usata nelle tessere :",
+            'tokens': "TODO_TRANSLATE"
         }
     },
 
@@ -382,6 +385,25 @@ var EncyclopediaModels = {
         return heroes;
     },
     
+    _findTokensByModel: function(model)
+    {
+        var tokens = [];
+
+        if (model)
+        {
+            for (var i in Encyclopedia.tokens.list)
+            {
+                var token = Encyclopedia.tokens.list[i];
+                if (token.model == model.id)
+                {
+                    tokens.push(token);
+                }
+            }
+        }
+        
+        return tokens;
+    },
+    
     _findModelNames: function(model)
     {
         var names = [];
@@ -404,6 +426,17 @@ var EncyclopediaModels = {
             {
                 var tile = tiles[i];
                 var name = tile.name[Language];
+                if (names.indexOf(name) == -1)
+                {
+                    names.push(name);
+                }
+            }
+
+            var tokens = EncyclopediaModels._findTokensByModel(model);
+            for (var i in tokens)
+            {
+                var token = tokens[i];
+                var name = token.name[Language];
                 if (names.indexOf(name) == -1)
                 {
                     names.push(name);
@@ -506,6 +539,9 @@ var EncyclopediaModels = {
 
         var tiles = EncyclopediaModels._findTilesByModel(model).map(tile => EncyclopediaTiles._linkToTile(tile.id)).join(", ");
         if (tiles) tiles = "<div class='tiles'>" + EncyclopediaModels._i18n[Language].tiles + " " + tiles + "</div>";
+        
+        var tokens = EncyclopediaModels._findTokensByModel(model).map(token => EncyclopediaTokens._linkToToken(token.id));
+        if (tokens.length > 0) tokens = "<div class='tokens'>" + EncyclopediaModels._i18n[Language].tokens + " " + tokens[0] + "</div>";
 
         Nav.dialog(EncyclopediaModels._findModelNames(model) || "",
             "<div class='modeldetails'>"
@@ -514,6 +550,7 @@ var EncyclopediaModels = {
                 + "</div>"
                 + heroes
                 + tiles
+                + tokens
                 + painter
                 + photos
             + "</div>",

@@ -2720,6 +2720,8 @@
 
             "image": "data/spells/img/stone_rain.png",
             "origins": ["stygia"],
+            
+            "tokens": ["secret", "well"],
 
             "textStyle": {
                 "fr": { "textSize": 137, "textInter": 66 },

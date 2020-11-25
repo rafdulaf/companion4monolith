@@ -10,6 +10,7 @@ var ConanRules = {
             'spells': "Utilisée dans les cartes de sort :",
             'heroesOwned': "Possédée par les héros :",
             'tilesOwned': "Possédée par les tuiles :",
+            'tokensUsed': "En rapport avec le jeton :",
 
             'viewer-search': "Recherche dans le document",
             'viewer-download': "Télécharger le document",
@@ -38,6 +39,7 @@ var ConanRules = {
             'spells': "Used in the spells card:",
             'heroesOwned': "Owned by the heroes:",
             'tilesOwned': "Owned by the tiles:",
+            'tokensUsed': "Related to the token:",
 
             'viewer-search': "Search in the document",
             'viewer-download': "Download the document",
@@ -66,6 +68,7 @@ var ConanRules = {
             'spells': "Usata nelle carte incantesimo:",
             'heroesOwned': "Possedute dagli Eroi:",
             'tilesOwned': "Usata nelle tessere",
+            'tokensUsed': "TODO_TRANSLATE",
 
             'viewer-search': "Cerca nell'intero documento",
             'viewer-download': "Scarica il pdf",
@@ -526,6 +529,20 @@ var ConanRules = {
         throw new Error("Cannot find skill " + id);
     },
 
+    _findSkillByToken: function(tokenId)
+    {
+        for (var i in Encyclopedia.skills.list)
+        {
+            var skill = Encyclopedia.skills.list[i];
+            if (skill.token && skill.token.indexOf(tokenId) >= 0)
+            {
+                return skill;
+            }
+        }
+
+        return null;
+    },
+
     openSkill: function(id) {
         var skill = ConanRules._findSkillById(id);
 
@@ -533,6 +550,7 @@ var ConanRules = {
         var spS = EncyclopediaSpells._findSpellsBySkill(id).map(spell => EncyclopediaSpells._linkToSpell(spell.id)).join(", ");
         var heS = EncyclopediaHeroes._findHeroesBySkill(id).map(hero => EncyclopediaHeroes._linkToHero(hero.id)).join(", ");
         var tiS = EncyclopediaTiles._findTilesBySkill(id).map(tile => EncyclopediaTiles._linkToTile(tile.id)).join(", ");
+        var tokens = skill.token ? EncyclopediaTokens._linkToToken(skill.token, true) : "";
 
         Nav.dialog(skill.title[Language],
             "<div class='skillsdetails'>"
@@ -541,6 +559,7 @@ var ConanRules = {
                 + (spS ? ("<div class='spells'>" + ConanRules._i18n[Language].spells + " " + spS + "</div>") : "")
                 + (heS ? ("<div class='heroes'>" + ConanRules._i18n[Language].heroesOwned + " " + heS + "</div>") : "")
                 + (tiS ? ("<div class='tiles'>" + ConanRules._i18n[Language].tilesOwned + " " + tiS + "</div>") : "")
+                + (tokens ? ("<div class='tokens'>" + ConanRules._i18n[Language].tokensUsed + " " + tokens + "</div>") : "")
             + "</div>",
             null,
             []

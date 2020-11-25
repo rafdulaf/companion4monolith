@@ -240,7 +240,8 @@
                 "en": "This character can spend 2 movement points to move across a wooden wall or door from one area to an adjacent area, and place a \"Wall Wrecker\" token on that obstacle. Then they immediately move to the other side of the wall they just wrecked. From now on, the two areas are adjacent, there is no penalty for moving from one to the other, and they have line of sight on each other.",
                 "it": "Questo personaggio può spendere 2 punti movimento per muovere attraverso un muro di legno o una porta che separa due aree adiacenti. Piazza un segnalino \"Breccia\" sull'ostacolo, quindi muovi il  personaggio dall'altra parte del muro/porta abbattuto/a. Da adesso le due aree sono adiacenti: non c'è nessun malus per muoversi dall'una all'altra e tra esse la linea di vista è libera."
             },
-            "image": "data/skills/img/movement/wall_wrecker.png"
+            "image": "data/skills/img/movement/wall_wrecker.png",
+            "token": "wrecked-wall"
         }, {
             "id": "web_projection",
             "type": "movement",
@@ -254,6 +255,7 @@
                 "en": "Instead of their normal attack, this character can perform a Ranged Attack, rolling {dice_orange}{dice_orange}{dice_orange} instead of their normal die. If the attack power is higher than the defense power, the defender places a web token on their model and suffers no damage. A character with a web token cannot move, but can spend 4 movement points to discard the token.",
                 "it": "Al posto del suo normale attacco, questo personaggio può effettuare un attacco a Distanza tirando {dice_orange}{dice_orange}{dice_orange}, invece dei suoi normali dadi. Se il potere d'attacco è maggiore del potere di difesa, il nemico piazza un segnalino Ragnatela sul proprio modello senza subire alcun danno. Un personaggio Intrappolato non può muovere, ma può spendere 4 punti movimento in un unico turno per scartare il segnalino Ragnatela."
             },
+            "token": "web",
             "image": "data/skills/img/movement/web_projection.png"
         }, {
             "id": "leap",
@@ -424,6 +426,7 @@
                 "en": "This skill's effect is defined by the scenario.",
                 "it": "Velenoso è un'abilità generica che può essere utilizzata in alcuni scenari."
             },
+            "token": "poison",
             "image": "data/skills/img/miscellaneous/poison.png"
         }, {
             "id": "support",

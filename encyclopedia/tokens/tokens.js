@@ -5,21 +5,27 @@ var EncyclopediaTokens = {
             'from': "Disponible dans :",
             'fromAnd': "et",
             'token': "exemplaire",
-            'tokens': "exemplaires"
+            'tokens': "exemplaires",
+            'skills': "Utilisé par la compétence :",
+            'spells': "Utilisé par le sort :"
         },
         'en': {
             'tab': "Other",
             'from': "Available in:",
             'fromAnd': "and",
             'token': "copy",
-            'tokens': "copies"
+            'tokens': "copies",
+            'skills': "Used by skill:",
+            'spells': "Utilisé par le sort :"
         },
         'it': {
             'tab': "TODO_TRANSLATE",
             'from': "Disponibile in :",
             'fromAnd': "e",
             'token': "copia",
-            'tokens': "copie"
+            'tokens': "copie",
+            'skills': "TODO_TRANSLATE",
+            'spells': "TODO_TRANSLATE"
         }
     },
     
@@ -287,6 +293,22 @@ var EncyclopediaTokens = {
         }
         c += "</div>";
 
+        var model = "";
+        if (token.model)
+        {
+            var m = EncyclopediaModels._findModelsById(token.model)[0];
+            model = "<div class='models'>"
+                    + EncyclopediaModels._linkToModel(token.model, true)
+                    + "</div>";
+        }
+        
+        var skills = ConanRules._findSkillByToken(token.id) || "";
+        if (skills)
+        {
+            skills = "<div class='skills'>" + EncyclopediaTokens._i18n[Language].skills + " " + ConanRules._linkToSkill(skills.id, false) + "</div>";
+        }
+        
+        var spells = EncyclopediaSpells._findSpellsByToken(token.id).map(s => EncyclopediaSpells._linkToSpell(s.id, false)).join(", ");
         
         Nav.dialog(token.name[Language] || "",
             "<div class='tokendetails'>" 
@@ -294,6 +316,9 @@ var EncyclopediaTokens = {
                 + "<div class='from'>" + EncyclopediaTokens._i18n[Language].from + " "
                     + originString
                 + "</div>"
+                + skills
+                + (spells ? "<div class='spells'>" + EncyclopediaTokens._i18n[Language].spells + " " + spells + "</div>" : "")
+                + model
                 + c
             + "</div>",
             null,
@@ -308,15 +333,38 @@ var EncyclopediaTokens = {
         var style = token.size.shape == "circle" || token.size.width >= token.size.height ? "width: " + (token.size.width*ratio) +  "rem;" : "height: " + (token.size.height*ratio) +  "rem;"
         code += "<div class='othertoken " + token.size.shape + "'>" 
                     + "<div class='img'>"
+                        + (details && token.faceB ? "<img class='back' src='" + token.faceA.image + "\?version=" + Version + "' style='" + style + "'/>" : "")
                         + "<img src='" + (token.faceB ? token.faceB.image : token.faceA.image) + "\?version=" + Version + "' style='" + style + "'/>"
-                        + (details ? "<img class='return' src='" + (token.faceB ? token.faceB.image : token.faceA.image) + "\?version=" + Version + "' style='" + style + "'/>" : "")
-                        + (details ? "<img class='back return' src='" + token.faceA.image + "\?version=" + Version + "' style='" + style + "'/>" : "")
-                        + (details ? "<img class='back' src='" + token.faceA.image + "\?version=" + Version + "' style='" + style + "'/>" : "")
-                        + (details ? "<div class='middle' style='height:" + (token.size.height ? token.size.height*ratio : token.size.width*ratio) + "rem'></div>" : "")
                     + "</div>"
                     + "<span class='name'>" + token.name[Language] + "</span>"
               + "</div>"
         
         return code;
+    },
+    
+        
+    _linkToToken: function(id, image) {
+        var token = EncyclopediaTokens._findTokensById(id)[0];
+        var name = token.name[Language];
+        
+        var s = "";
+        if (token)
+        {
+            s += "<a href='javascript:void(0)' onclick='EncyclopediaTokens.openToken(\"" + id + "\")'>";
+            if (image)
+            {
+                s += EncyclopediaTokens._tokenCode(token, false);
+            }
+            else
+            {
+                s += name;
+            }
+            s += "</a>";
+        }
+        return s;
+        
+        
+        return "<a href='javascript:void(0)' onclick='EncyclopediaTokens.openToken(\"" + id + "\")'>" + token.name[Language] + "</a>";
     }
+
 }

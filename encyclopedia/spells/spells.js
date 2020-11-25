@@ -10,7 +10,8 @@ var EncyclopediaSpells = {
             'card': "exemplaire",
             'cards': "exemplaires",
             'clarification': "Clarification :",
-            'skill': "Compétence :"
+            'skill': "Compétence :",
+            'tokensUsed': "Utilise les jetons :"
         },
         'en': {
             'tab': "Spells",
@@ -22,7 +23,8 @@ var EncyclopediaSpells = {
             'card': "copy",
             'cards': "copies",
             'clarification': "Clarification:",
-            'skill': "Skill:"
+            'skill': "Skill:",
+            'tokensUsed': "Use the tokens:"
           },
           'it': {
               'tab': "Incantesimi",
@@ -34,7 +36,8 @@ var EncyclopediaSpells = {
               'card': "copia",
               'cards': "copie",
               'clarification': "Chiarificazione:",
-              'skill': "Abilità:"
+              'skill': "Abilità:",
+              'tokensUsed': "TODO_TRANSLATE"
           }
     },
 
@@ -486,7 +489,24 @@ var EncyclopediaSpells = {
 
         return spells;
     },
+    
+    _findSpellsByToken: function(tokenId)
+    {
+        var spells = [];
+        var spellsIds = {};
 
+        for (var i in Encyclopedia.spells.list)
+        {
+            var spell = Encyclopedia.spells.list[i];
+            if (!spellsIds[tokenId] && spell.tokens && spell.tokens.indexOf(tokenId) >= 0)
+            {
+                spells.push(spell);
+                spellsIds[tokenId] = true;
+            }
+        }
+
+        return spells;
+    },
 
     onShow: function() {
     },
@@ -517,6 +537,16 @@ var EncyclopediaSpells = {
             if (originString) originString += " " + EncyclopediaSpells._i18n[Language].fromAnd + " ";
             originString += Encyclopedia._getOrigin(i) + " (" + originsCount[i] + " " + (originsCount[i] == 1 ? EncyclopediaSpells._i18n[Language].card : EncyclopediaSpells._i18n[Language].cards) + ")";
         }
+        
+        var tokens = "";
+        if (spell.tokens)
+        {
+            for (var i = 0; i < spell.tokens.length; i++)
+            {
+                var token = spell.tokens[i];
+                tokens += EncyclopediaTokens._linkToToken(token, true);
+            }
+        }
 
         var spell = spells[0];
         Nav.dialog(spell.title[Language],
@@ -528,6 +558,7 @@ var EncyclopediaSpells = {
                 + "</div>"
                 + ((spell.clarification && spell.clarification[Language]) ?"<div class='clarification'>" + EncyclopediaSpells._i18n[Language].clarification + " " + spell.clarification[Language] + "</div>" : "")
                 + (spell.forSkill ? "<div class='skill'>" + EncyclopediaSpells._i18n[Language].skill + " " + ConanRules._linkToSkill(spell.forSkill, true) + "</div>" : "")
+                + (tokens ? ("<div class='tokens'>" + EncyclopediaSpells._i18n[Language].tokensUsed + " " + tokens + "</div>") : "")
             + "</div>",
             null,
             [{
