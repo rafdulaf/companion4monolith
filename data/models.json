@@ -1146,7 +1146,7 @@
         {
             "id": "animal-skin",
             "thumb": "data/models/img/animal-skin_sd.jpg",
-            "images": ["data/models/img/animal-skin_1.jpg"],
+            "images": ["data/models/img/animal-skin_1.jpg", "data/models/img/animal-skin_2.jpg"],
             "paint": null,
             "type": "scenery",
             "origins": ["adventurepack"]
@@ -1155,7 +1155,7 @@
         {
             "id": "doors",
             "thumb": "data/models/img/doors_sd.jpg",
-            "images": ["data/models/img/doors_1.jpg"],
+            "images": ["data/models/img/doors_1.jpg", "data/models/img/doors_2.jpg"],
             "paint": null,
             "type": "scenery",
             "origins": ["doorpack"],
