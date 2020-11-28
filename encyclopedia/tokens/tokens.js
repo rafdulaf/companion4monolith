@@ -141,7 +141,69 @@ var EncyclopediaTokens = {
 
                     return origins.filter(v => selectedValues.indexOf(v) != -1).length > 0;
                 }
-            }         
+            },
+            
+            {
+                id: 'usage',
+                label: {
+                    'fr': "Divers",
+                    'en': "Misc.",
+                    'it': "TODO_TRANSLATE"
+                },
+                sort: true,
+                values: [
+                    {
+                        id: "model",
+                        label: {
+                            'fr': "Figurine",
+                            'en': "Model",
+                            'it': "TODO_TRANSLATE"
+                        }
+                    },
+                    {
+                        id: "skill",
+                        label: {
+                            'fr': "Compétence",
+                            'en': "Skill",
+                            'it': "TODO_TRANSLATE"
+                        }
+                    },
+                    {
+                        id: "spell",
+                        label: {
+                            'fr': "Sort",
+                            'en': "Spell",
+                            'it': "TODO_TRANSLATE"
+                        }
+                    }
+                ],
+                filter: function(item, selectedValues) {
+                    for (var i = 0; i < selectedValues.length; i++)
+                    {
+                        switch (selectedValues[i])
+                        {
+                            case 'model':
+                                if (item.model)
+                                {
+                                    return true;
+                                }
+                                break;
+                            case 'skill':
+                                if (ConanRules._findSkillByToken(item.id))
+                                {
+                                    return true;
+                                }
+                                break;
+                            case 'spell':
+                                if (EncyclopediaSpells._findSpellsByToken(item.id).length > 0)
+                                {
+                                    return true;
+                                }
+                        }
+                    }
+                    return false;
+                }
+            }
         ]        
     },    
     

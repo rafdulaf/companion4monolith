@@ -152,7 +152,6 @@ var EncyclopediaTiles = {
                 }
             },
 
-            
             {
                 id:'kind',
                 label: {
@@ -192,6 +191,37 @@ var EncyclopediaTiles = {
                     return (selectedValues.indexOf('melee')!=-1 && item.attacktype == "contact" && item.dices['0'] != "none")
                         || (selectedValues.indexOf('ranged')!=-1 && item.attacktype == "ranged" && item.dices['0'] != "none")
                         || (selectedValues.indexOf('none')!=-1 && item.dices['0'] == "none");
+                }
+            },
+            
+            {
+                id: 'skills',
+                label: {
+                    'fr': "Compétences",
+                    'en': "Skills",
+                    'it': "Abilità"
+                },
+                sort: true,
+                operator: "or/and",
+                values: (function() {
+                    var v = [];
+                    for (var i in Encyclopedia.skills.list)
+                    {
+                        var skill = Encyclopedia.skills.list[i];
+                        v.push({
+                            id: skill.type + "/" + skill.id,
+                            label: skill.title
+                        })
+                    }
+                    return v;
+                })(),
+                filter: function(item, selectedValues) {
+                    for (var s in item.skills)
+                    {
+                        var skill = item.skills[s];
+                        if (selectedValues.indexOf(skill) != -1) return true;
+                    }
+                    return false;
                 }
             },
             
@@ -297,8 +327,119 @@ var EncyclopediaTiles = {
                     }
                     return false;
                 }
-            }               
+            },
+            
+            {
+                id: 'move',
+                label: {
+                    'fr': "Déplacement",
+                    'en': "Move",
+                    'it': "TODO_TRANSLATE"
+                },
+                values: (function() {
+                    var v = [];
+                    for (var i = 0 ; i < 10 ; i++)
+                    {
+                        v.push({
+                            id: i + "",
+                            label: {
+                                'fr': i,
+                                'en': i,
+                                'it': i
+                            }
+                        })
+                    }
+                    return v;
+                })(),
+                filter: function(item, selectedValues) {
+                    return selectedValues.indexOf(item.movement || "0") != -1;
+                }
+            },
+
+            {
+                id: 'defense',
+                label: {
+                    'fr': "Défense",
+                    'en': "Defense",
+                    'it': "TODO_TRANSLATE"
+                },
+                values: (function() {
+                    var v = [];
+                    for (var i = 0 ; i < 20 ; i++)
+                    {
+                        v.push({
+                            id: i + "",
+                            label: {
+                                'fr': i,
+                                'en': i,
+                                'it': i
+                            }
+                        })
+                    }
+                    return v;
+                })(),
+                filter: function(item, selectedValues) {
+                    return selectedValues.indexOf(item.defense || 0) != -1;
+                }
+            },
+
+            {
+                id: 'dice',
+                label: {
+                    'fr': "Puissance",
+                    'en': "Power",
+                    'it': "TODO_TRANSLATE"
+                },
+                values: (function() {
+                    var dices = [];
+                    for (var i = 0 ; i < Encyclopedia.tiles.list.length ; i++)
+                    {
+                        var item = Encyclopedia.tiles.list[i];
+                        var dice = Math.floor(EncyclopediaTiles._tilePower(item));
+                        if (dices.indexOf(dice) == -1)
+                        {
+                            dices.push(dice);
+                        }
+                    }
+                    dices.sort(function(a,b) { return a - b; })
+                    
+                    var v = [];
+                    for (var i = 0 ; i < dices.length ; i++)
+                    {
+                        v.push({
+                            id: dices[i],
+                            label: {
+                                'fr': dices[i] + " à " + (dices[i] + 1) + " haches",
+                                'en': dices[i] + " to " + (dices[i] + 1) + " axes",
+                                'it': dices[i] + " TODO_TRANSLATE " + (dices[i] + 1) + " TODO_TRANSLATE"
+                            }
+                        })
+                    }
+                    return v;
+                })(),
+                filter: function(item, selectedValues) {
+                    return selectedValues.indexOf(Math.floor(EncyclopediaTiles._tilePower(item))) != -1;
+                }
+            }
         ]        
+    },
+    
+    _tilePower: function(tile)
+    {
+        var dice = 0;
+        for (var j in tile.dices)
+        {
+            switch(tile.dices[j])
+            {
+                case "redreroll": dice += 1.92; break;
+                case "red": dice += 1.5; break;
+                case "orangereroll": dice += 1.33; break;
+                case "orange": dice += 1; break;
+                case "yellowreroll": dice += 1; break;
+                case "yellow": dice += 0.67; break;
+            }
+        }
+        return dice;
     },
     
     _getTokensOrSharedTokens: function(tile)
