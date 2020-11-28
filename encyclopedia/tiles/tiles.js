@@ -41,7 +41,7 @@ var EncyclopediaTiles = {
     preinit: function()
     {
         Encyclopedia._slides.push({   label: EncyclopediaTiles._i18n[Language].tab, id: "encyclopedia-tile", onShow: EncyclopediaTiles.onShow,  onHide: EncyclopediaTiles.onHide });
-        
+
         EncyclopediaTiles._facets = [
             {
                 id: 'keyword',
@@ -55,7 +55,7 @@ var EncyclopediaTiles = {
                     return item.name[Language] && ConanRules._deemphasize(item.name[Language]).indexOf(ConanRules._deemphasize(value)) != -1;
                 }
             },
-            
+
             {
                 id: 'expansions',
                 label: {
@@ -86,15 +86,15 @@ var EncyclopediaTiles = {
                     {
                         return true;
                     }
-                    else 
+                    else
                     {
-                        var hasExpansion = ConanAbout._hasExpansion(item.origins); 
+                        var hasExpansion = ConanAbout._hasExpansion(item.origins);
                         return hasExpansion && selectedValues[0] == 'yes'
                                 || !hasExpansion && selectedValues[0] == 'no'
                     }
                 }
             },
-            
+
             {
                 id: 'origins',
                 label: {
@@ -108,7 +108,7 @@ var EncyclopediaTiles = {
                     for (var i in Encyclopedia.expansions.types)
                     {
                         var type = Encyclopedia.expansions.types[i];
-                        
+
                         for (var j in Encyclopedia.expansions.list)
                         {
                             var expansion = Encyclopedia.expansions.list[j];
@@ -130,7 +130,7 @@ var EncyclopediaTiles = {
                         var startRemove = false;
 
                         var type = Encyclopedia.expansions.types[i];
-                        
+
                         for (var j in Encyclopedia.expansions.list)
                         {
                             var expansion = Encyclopedia.expansions.list[j];
@@ -187,13 +187,13 @@ var EncyclopediaTiles = {
                     }
                 ],
                 filter: function(item, selectedValues) {
-                    
+
                     return (selectedValues.indexOf('melee')!=-1 && item.attacktype == "contact" && item.dices['0'] != "none")
                         || (selectedValues.indexOf('ranged')!=-1 && item.attacktype == "ranged" && item.dices['0'] != "none")
                         || (selectedValues.indexOf('none')!=-1 && item.dices['0'] == "none");
                 }
             },
-            
+
             {
                 id: 'skills',
                 label: {
@@ -224,7 +224,7 @@ var EncyclopediaTiles = {
                     return false;
                 }
             },
-            
+
             {
                 id: 'type',
                 label: {
@@ -287,7 +287,7 @@ var EncyclopediaTiles = {
                     return false;
                 }
             },
-            
+
             {
                 id: 'token',
                 label: {
@@ -328,13 +328,13 @@ var EncyclopediaTiles = {
                     return false;
                 }
             },
-            
+
             {
                 id: 'move',
                 label: {
                     'fr': "Déplacement",
                     'en': "Move",
-                    'it': "TODO_TRANSLATE"
+                    'it': "Movimento"
                 },
                 values: (function() {
                     var v = [];
@@ -361,7 +361,7 @@ var EncyclopediaTiles = {
                 label: {
                     'fr': "Défense",
                     'en': "Defense",
-                    'it': "TODO_TRANSLATE"
+                    'it': "Difesa"
                 },
                 values: (function() {
                     var v = [];
@@ -388,7 +388,7 @@ var EncyclopediaTiles = {
                 label: {
                     'fr': "Puissance",
                     'en': "Power",
-                    'it': "TODO_TRANSLATE"
+                    'it': "Forza"
                 },
                 values: (function() {
                     var dices = [];
@@ -402,7 +402,7 @@ var EncyclopediaTiles = {
                         }
                     }
                     dices.sort(function(a,b) { return a - b; })
-                    
+
                     var v = [];
                     for (var i = 0 ; i < dices.length ; i++)
                     {
@@ -411,7 +411,7 @@ var EncyclopediaTiles = {
                             label: {
                                 'fr': dices[i] + " à " + (dices[i] + 1) + " haches",
                                 'en': dices[i] + " to " + (dices[i] + 1) + " axes",
-                                'it': dices[i] + " TODO_TRANSLATE " + (dices[i] + 1) + " TODO_TRANSLATE"
+                                'it': dices[i] + " a " + (dices[i] + 1) + " asce"
                             }
                         })
                     }
@@ -423,7 +423,7 @@ var EncyclopediaTiles = {
             }
         ]        
     },
-    
+
     _tilePower: function(tile)
     {
         var dice = 0;
@@ -441,11 +441,11 @@ var EncyclopediaTiles = {
         }
         return dice;
     },
-    
+
     _getTokensOrSharedTokens: function(tile)
     {
         var tokens = [];
-        
+
         // Tokens can be shared by several tiles. Model links them
         var model = null;
         for (var i = 0; i < Encyclopedia.models.list.length; i++)
@@ -460,7 +460,7 @@ var EncyclopediaTiles = {
         {
             return tokens;
         }
-        
+
         var tiles = [];
         for (var i in Encyclopedia.tiles.list)
         {
@@ -470,7 +470,7 @@ var EncyclopediaTiles = {
                 tiles.push(tile);
             }
         }
-        
+
         for (var j = 0; j < tiles.length; j++)
         {
             var tile = tiles[j];
@@ -482,7 +482,7 @@ var EncyclopediaTiles = {
                 }
             }
         }
-        
+
         return tokens;
     },
 
@@ -496,7 +496,7 @@ var EncyclopediaTiles = {
     displayTiles: function()
     {
         var tiles = "";
-        
+
         Encyclopedia.tiles.list.sort(function(s1, s2) {
             if (!s2.name[Language] && !s1.name[Language])
             {
@@ -517,7 +517,7 @@ var EncyclopediaTiles = {
                 {
                     return c;
                 }
-                
+
                 return s1.id.toLowerCase().localeCompare(s2.id.toLowerCase());
             }
         });
@@ -528,55 +528,55 @@ var EncyclopediaTiles = {
         {
             i = parseInt(i);
             var tile = tileList[i];
-            
+
             if (i < tileList.length - 1
                 && tileList[i+1].id == tile.id)
             {
                 ignoredPrevious++;
                 continue;
             }
-            
+
             tile = tileList[i - ignoredPrevious];
-            
+
             tiles += "<a id='tile-" + tile.id + "' href='javascript:void(0)' data-count='" + (ignoredPrevious+1) + "' onclick='EncyclopediaTiles.openTile(\"" + tile.id + "\")'>";
             tiles += Tile._tileCode(EncyclopediaTiles._convertTileToStudio(tile, false));
             tiles += "</a>";
-            
+
             ignoredPrevious = 0;
         }
-        
+
         $("#encyclopedia-tile-wrapper").html(tiles);
         EncyclopediaTiles.updateDisplayTiles()
     },
-    
+
     updateDisplayTiles: function()
     {
         Encyclopedia.updateFacets(EncyclopediaTiles._facets, Encyclopedia.tiles.list, "et");
-        
+
         $("#encyclopedia-tile-wrapper a").hide();
-        
+
         var tileList = Encyclopedia.tiles.list.filter(Encyclopedia.filter(EncyclopediaTiles._facets, "et"));
         var ignoredPrevious = 0;
         for (var i in tileList)
         {
             i = parseInt(i);
             var tile = tileList[i];
-            
+
             if (i < tileList.length - 1
                 && tileList[i+1].id == tile.id)
             {
                 ignoredPrevious++;
                 continue;
             }
-            
+
             tile = tileList[i - ignoredPrevious];
-            
+
             $("#tile-" + tile.id).attr('data-count', ignoredPrevious+1).show();
-            
+
             ignoredPrevious = 0;
         }
     },
-    
+
     _convertTileToStudio: function(tile, hd)
     {
         return {
@@ -596,11 +596,11 @@ var EncyclopediaTiles = {
             tokens: (tile.tokens || []).map(function(t) { return {active: true, image: t.image, imagelocation: {x: t.image_location.x, y: t.image_location.y}, imagezoom: t.image_zoom, imagerotation: 0}})
         };
     },
-    
+
     _findTilesById: function(id)
     {
         var tiles = [];
-        
+
         for (var i in Encyclopedia.tiles.list)
         {
             var tile = Encyclopedia.tiles.list[i];
@@ -609,17 +609,17 @@ var EncyclopediaTiles = {
                 tiles.push(tile);
             }
         }
-        
+
         return tiles;
     },
 
     _findTilesBySkill: function(id)
     {
         id = ConanRules._findSkillById(id).type + "/" + id;
-        
+
         var tiles = [];
         var tilesIds = {};
-        
+
         for (var i in Encyclopedia.tiles.list)
         {
             var tile = Encyclopedia.tiles.list[i];
@@ -634,7 +634,7 @@ var EncyclopediaTiles = {
                 tilesIds[tile.id] = true;
             }
         }
-        
+
         return tiles;
     },
 
@@ -643,25 +643,25 @@ var EncyclopediaTiles = {
 
     onHide: function() {
     },
-    
+
     openTile: function(id) {
         var tiles = EncyclopediaTiles._findTilesById(id);
         var displayTiles = [];
-        
+
         var colors = {};
         var images = {};
         var originsCount = {};
         for (var e in tiles)
         {
             var tile = tiles[e];
-            
+
             var origins = Encyclopedia._removeExtraExpansion(tile.origins.slice());
             for (var i in origins)
             {
                 var origin = origins[i];
                 originsCount[origin] = originsCount[origin] ? originsCount[origin]+1 : 1;
             }
-            
+
             if (!colors[tile.color])
             {
                 images[tile.image] = true;
@@ -671,36 +671,36 @@ var EncyclopediaTiles = {
             {
                 images[tile.image] = true;
                 displayTiles.push(tile);
-            }       
+            }
             else
             {
                 colors[tile.color] = colors[tile.color] ? colors[tile.color] + 1 : 1;
             }
         }
-        
+
         var originString = "";
         for (var i in originsCount)
         {
             if (originString) originString += " " + EncyclopediaTiles._i18n[Language].fromAnd + " ";
             originString += Encyclopedia._getOrigin(i) + " (" + originsCount[i] + " " + (originsCount[i] == 1 ? EncyclopediaTiles._i18n[Language].card : EncyclopediaTiles._i18n[Language].cards) + ")";
         }
-        
+
         var c = "";
         for (var e in displayTiles)
         {
-            var tile = displayTiles[e]; 
+            var tile = displayTiles[e];
             c += "<div class='tile-wrapindetails' data-count='" + colors[tile.color] + "'>" + Tile._tileCode(EncyclopediaTiles._convertTileToStudio(tile, false)) + "</div>";
         }
 
         var skills = ((tile.skills && tile.skills[0] != 'none') ?
-        ("<div class='skill'>" 
-            + EncyclopediaTiles._i18n[Language].skill 
-            + " " 
+        ("<div class='skill'>"
+            + EncyclopediaTiles._i18n[Language].skill
+            + " "
             + (tile.skills[1] != 'none' && tile.skills[2] != 'none' && tile.skills[3] != 'none'? "" + ConanRules._linkToSkill(tile.skills[3], true) : "")
             + (tile.skills[1] != 'none' && tile.skills[2] != 'none' ? "" + ConanRules._linkToSkill(tile.skills[2], true) : "")
             + (tile.skills[1] != 'none' ? "" + ConanRules._linkToSkill(tile.skills[1], true) : "")
-            + ConanRules._linkToSkill(tile.skills[0], true) 
-        + "</div>") : "") 
+            + ConanRules._linkToSkill(tile.skills[0], true)
+        + "</div>") : "")
 
         var superdetails = "";
         if (tile.quote)
@@ -718,9 +718,9 @@ var EncyclopediaTiles = {
                     + EncyclopediaModels._linkToModel(tile.model, true)
                     + "</div>";
         }
-        
+
         Nav.dialog(tile.name[Language] || "",
-            "<div class='tiledetails'>" 
+            "<div class='tiledetails'>"
                 + "<div class='minwidth'></div>"
                 + "<div class='from'>" + EncyclopediaTiles._i18n[Language].from + " "
                     + originString
@@ -738,42 +738,42 @@ var EncyclopediaTiles = {
             }]
         );
     },
-    
+
     _transfert: function(id) {
         if (confirm(EncyclopediaTiles._i18n[Language].transfertConfirm))
         {
             var studiotiles = JSON.parse(localStorage.getItem("StudioTiles")) || [];
-            
+
             var colors = {};
-            
+
             var tiles = EncyclopediaTiles._findTilesById(id);
             for (var i in tiles)
             {
                 var tile = tiles[i];
-                
+
                 if (colors[tile.color])
                 {
                     continue;
                 }
-                
+
                 colors[tile.color] = true;
                 var studioTile = EncyclopediaTiles._convertTileToStudio(tile, true);
                 studiotiles.push(studioTile);
             }
-            
+
             localStorage.setItem("StudioTiles", JSON.stringify(studiotiles));
-            
+
             Tile._displayTiles();
-            
+
             Nav.switchTo($("*[for=studio]")[0]);
             $("#studio .nav-wrapper").slick('slickGoTo', $("#tile").index());
             $("#tile").animate({ scrollTop: $('#tile > *:last()').position().top },500);
-            
+
             ConanAbout.warnToast(EncyclopediaTiles._i18n[Language].transfertOK)
             Nav.closeDialog(true);
         }
     },
-    
+
     _linkToTile: function(id) {
         var tile = EncyclopediaTiles._findTilesById(id)[0];
         var colors = "";
@@ -785,5 +785,5 @@ var EncyclopediaTiles = {
         }
         return "<a href='javascript:void(0)' onclick='EncyclopediaTiles.openTile(\"" + id + "\")'>" + tile.name[Language] + colors + "</a>";
     }
-    
+
 };

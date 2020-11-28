@@ -43,7 +43,7 @@ var EncyclopediaModels = {
             'forum': "TODO_TRANSLATE",
             'heroes': "Usata dagli Eroi :",
             'tiles': "Usata nelle tessere :",
-            'tokens': "TODO_TRANSLATE",
+            'tokens': "Sostituisci il segnalino :",
             'copyright': "TODO_TRANSLATE"
         }
     },
@@ -263,7 +263,7 @@ var EncyclopediaModels = {
                         label: {
                             'fr': "Décor",
                             'en': "Scenery",
-                            'it': "TODO_TRANSLATE"
+                            'it': "Accessorio"
                         }
                     }
                 ],

@@ -82,7 +82,7 @@
             "text": {
                 "fr": "Si, lors de son attaque, la créature obtient au moins une face avec 2 symboles sur l’un de ses dés, sa cible est « saisie », en plus des blessures éventuelles. La figurine du personnage saisi est ramenée au contact de la figurine de la créature et est considérée comme bloquée. Un personnage ayant la compétence Insaisissable ignore le blocage dû à Constriction, pas les dégâts associés à l’attaque.",
                 "en": "When this character's attack power is determined, if any die shows 2 or more symbols, move the defender’s model close to the attacker’s one so their bases touch. As long as they remain in the same area, the defender treats the attacker as thought the attacker has Blocking. A character with Evasive ignores Constriction’s Blocking effect, but not the damage from the attack.",
-                "it": "Una volta determinato il potere d'attacco di questo personaggio, se uno qualsiasi dei suoi dadi mostra 2 o più simboli, muovi il difensore a contatto di base con l'attaccante. Fin quando i due modelli restano nella stessa zona, il difensore tratta l'attaccante come se quest'ultimo avesse l'abilità Bloccare. Un personaggio con l'abilità Inafferrabile ignora gli effetti di Costrizione, ma non il danno associato all'attacco."
+                "it": "Una volta determinato il potere d'attacco di questo personaggio, se uno qualsiasi dei suoi dadi mostra 2 o più simboli, muovi il difensore a contatto di base con l'attaccante. Fin quando i due modelli restano nella stessa area, il difensore tratta l'attaccante come se quest'ultimo avesse l'abilità Bloccare. Un personaggio con l'abilità Inafferrabile ignora gli effetti di Costrizione, ma non il danno associato all'attacco."
             },
             "image": "data/skills/img/attack/constriction.png"
         }, {
@@ -439,7 +439,7 @@
             "text": {
                 "fr": "Les figurines amies du personnage présentes sur sa zone bénéficient d'une relance gratuite à chaque fois qu'elles réalisent une action. Soutien permet la relance gratuite d’un seul dé, y compris sur un dé déjà relancé gratuitement (exception à la règle page 22).",
                 "en": "This skill allows friendly characters in the same zone as this character to reroll a single die for free, each time they perform an action, even if that die has already been rerolled (exception to the rule on page 22).",
-                "it": "I personaggi amici che si trovano nella stessa zona del personaggio che possiede questa abilità, beneficiano di un rilancio gratuito per ogni loro azione effettuata. L'abilità Supporto permette il rilancio di un solo dado anche se il dado è già stato rilanciato gratuitamente (eccezione della regola a pagina 22)."
+                "it": "I personaggi amici che si trovano nella stessa area del personaggio che possiede questa abilità, beneficiano di un rilancio gratuito per ogni loro azione effettuata. L'abilità Supporto permette il rilancio di un solo dado anche se il dado è già stato rilanciato gratuitamente (eccezione della regola a pagina 22)."
             },
             "image": "data/skills/img/miscellaneous/support.png"
         },
