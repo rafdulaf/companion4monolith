@@ -215,7 +215,7 @@
             "text": {
                 "fr": "Le lanceur est retiré du plateau et toutes les figurines sur la zone subissent des dégâts de : {dice_red_reroll}{dice_red_reroll}{dice_red_reroll}.",
                 "en": "Attack your area, excluding yourself; roll {dice_red_reroll}{dice_red_reroll}{dice_red_reroll}. If the attack power is greater than the defense power, the defender suffers damage equal to the difference. Remove your model from the board.",
-                "it": "Rimuovi il Mago dal gioco.\nTutti i modelli che erano nella zona del Mago subiscono un danno di {dice_red_reroll}{dice_red_reroll}{dice_red_reroll}."
+                "it": "Rimuovi il Mago dal gioco.\nTutti i modelli che erano nell'area del Mago subiscono un danno di {dice_red_reroll}{dice_red_reroll}{dice_red_reroll}."
             },
             "clarification": null,
 
@@ -707,7 +707,7 @@
             "text": {
                 "fr": "Pour toute gemme dépensée après avoir payé le coût du sort, le lanceur peut se déplacer d'une zone.\nCe mouvement n'est affecté par aucun obstacle. Le lanceur n'a pas besoin d'avoir une ligne de vue avec sa destination.",
                 "en": "Assign a number of gems from your Reserve zone to this card. For each gem assigned, move your model to an adjacent space.",
-                "it": "Per ogni gemma spesa oltre il costo del Teletrasporto, il Mago può spostarsi di una zona.\nQuesto movimento non è affetto da ostacoli."
+                "it": "Per ogni gemma spesa oltre il costo del Teletrasporto, il Mago può spostarsi di un'area.\nQuesto movimento non è affetto da ostacoli."
             },
             "clarification": {
                 "fr": "Le lanceur de sort n'est pas soumis au phénomène de gêne ni à la compétence Bloqueur.",
@@ -752,7 +752,7 @@
             "text": {
                 "fr": "Pour toute gemme dépensée après avoir payé le coût du sort, le lanceur peut se déplacer d'une zone.\nCe mouvement n'est affecté par aucun obstacle. Le lanceur n'a pas besoin d'avoir une ligne de vue avec sa destination.",
                 "en": "Assign a number of gems from your Reserve zone to this card. For each gem assigned, move your model to an adjacent space.",
-                "it": "Per ogni gemma spesa oltre il costo del Teletrasporto, il Mago può spostarsi di una zona.\nQuesto movimento non è affetto da ostacoli."
+                "it": "Per ogni gemma spesa oltre il costo del Teletrasporto, il Mago può spostarsi di un'area.\nQuesto movimento non è affetto da ostacoli."
             },
             "clarification": {
                 "fr": "Le lanceur de sort n'est pas soumis au phénomène de gêne ni à la compétence Bloqueur.",
@@ -920,7 +920,7 @@
             "text": {
                 "fr": "Le lanceur ouvre une porte ou un coffre fermé à clef dans sa zone.",
                 "en": "Choose a chest in your area or a door adjacent to your area. You successfully pick its lock.",
-                "it": "Il Mago apre una porta o una cassa chiusa a chiave che si trova nella sua zona."
+                "it": "Il Mago apre una porta o un forziere chiuso a chiave che si trova nella sua area."
             },
             "clarification": null,
 
@@ -1543,7 +1543,7 @@
             "text": {
                 "fr": "Ciblez une figurine dans la zone du lanceur.\nLa cible subit des dégâts de {dice_red}{dice_red}, puis le lanceur subit 1 blessure.",
                 "en": "Attack a model in your area; roll {dice_red}{dice_red}. If the attack power is greater than the defense power, the defender suffers damage equal to the difference. You suffer 1 damage.",
-                "it": "Scegli un personaggio nella stessa zona del Mago.\nIl bersaglio subisce un danno di {dice_red}{dice_red}. Il Mago subisce un (1) danno."
+                "it": "Scegli un personaggio nella stessa area del Mago.\nIl bersaglio subisce un danno di {dice_red}{dice_red}. Il Mago subisce un (1) danno."
             },
             "clarification": null,
 
@@ -1625,7 +1625,7 @@
             "text": {
                 "fr": "Ciblez une figurine avec ligne de vue.\nLe lanceur échange sa position avec celle de la cible en payant 1 gemme par zone le séparant de sa cible, en plus du coût du sort.",
                 "en": "Assign a number of gems from your Reserve zone to this card and choose a character within that number of areas of you. Exchange the position of your model and the chosen character's model.",
-                "it": "Scegli un personaggio in linea di vista.\nIl Mago scambia la sua posizione con quella del bersaglio, pagando una (1) gemma per ogni zona che lo separa dal bersaglio, oltre al costo dell'incantesimo."
+                "it": "Scegli un personaggio in linea di vista.\nIl Mago scambia la sua posizione con quella del bersaglio, pagando una (1) gemma per ogni area che lo separa dal bersaglio, oltre al costo dell'incantesimo."
             },
             "clarification": null,
 
@@ -1789,7 +1789,7 @@
             "text": {
                 "fr": "Ciblez un Héros et son allié avec lignes de vue. Sacrifiez l'allié pour transférer 2 gemmes de la zone de blessure du Héros vers sa zone de fatigue.",
                 "en": "Choose a hero and an ally in your line of sight. Remove that ally's model from the board, and that hero moves up to 2 gems from their Wound zone to their Fatigue zone.",
-                "it": "Scegli un Eroe e un suo Alleato in linea di vista. Sacrifica l'Alleato (rimuovendolo dal gioco) per trasferire 2 gemme dalla zona di Ferite del Mago alla zona di Fatica."
+                "it": "Scegli un Eroe e un suo Alleato in linea di vista. Sacrifica l'Alleato (rimuovendolo dal gioco) per trasferire 2 gemme dalle Ferite del Mago alla sua Fatica."
             },
             "clarification": null,
 
@@ -2574,7 +2574,7 @@
             "text": {
                 "fr": "Le lanceur de sort cible une figurine ennemie dans sa zone. Il peut déplacer cette figurine d'une zone en ignorant le phénomène de gêne et sans que cela ne provoque de dégâts à cette figurine.",
                 "en": "Choose an enemy in your area. Move that enemy one area in a way that would not cause it to suffer damage. This movement is not affected by hindering.",
-                "it": "Il Mago sceglie un personaggio nella sua area. Il bersaglio è spostato di una zona adiacente ignorando gli effetti dell'intralcio. Il bersaglio spostato in questo modo non può subire danni."
+                "it": "Il Mago sceglie un personaggio nella sua area. Il bersaglio è spostato di un'area adiacente ignorando gli effetti dell'intralcio. Il bersaglio spostato in questo modo non può subire danni."
             },
             "clarification": null,
 
@@ -2720,7 +2720,7 @@
 
             "image": "data/spells/img/stone_rain.png",
             "origins": ["stygia"],
-            
+
             "tokens": ["secret", "well"],
 
             "textStyle": {

@@ -8,17 +8,17 @@
                 "it": "Ascia da battaglia"
             },
             "encumbrance": "3",
-            
+
             "melee": { "0": "redreroll", "1": "none" },
             "ranged": { "0": "redreroll", "1": "none", "throwable": true },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/battle_axe.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
-    
+
         {
             "id": "bossonian_bow",
             "title": {
@@ -27,17 +27,17 @@
                 "it": "Arco bossoniano"
             },
             "encumbrance": "2",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "orange", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/bossonian_bow.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
-    
+
         {
             "id": "dagger",
             "title": {
@@ -46,17 +46,17 @@
                 "it": "Pugnale"
             },
             "encumbrance": "1",
-            
+
             "melee": { "0": "yellow", "1": "none" },
             "ranged": { "0": "yellow", "1": "none", "throwable": true },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/dagger_1.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
-    
+
         {
             "id": "dagger",
             "title": {
@@ -65,17 +65,17 @@
                 "it": "Pugnale"
             },
             "encumbrance": "1",
-            
+
             "melee": { "0": "yellow", "1": "none" },
             "ranged": { "0": "yellow", "1": "none", "throwable": true },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/dagger_2.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
-    
+
         {
             "id": "conans_sword",
             "title": {
@@ -84,17 +84,17 @@
                 "it": "Spada di Conan"
             },
             "encumbrance": "2",
-            
+
             "melee": { "0": "orange", "1": "none" },
             "ranged": { "0": "orange", "1": "none", "throwable": true },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "orange", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/conans_sword_1.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
-    
+
         {
             "id": "conans_sword",
             "title": {
@@ -103,17 +103,17 @@
                 "it": "Spada di Conan"
             },
             "encumbrance": "2",
-            
+
             "melee": { "0": "orange", "1": "none" },
             "ranged": { "0": "orange", "1": "none", "throwable": true },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "orange", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/conans_sword_2.png",
             "origins": ["bbox"]
         },
-    
+
         {
             "id": "crossbow",
             "title": {
@@ -122,17 +122,17 @@
                 "it": "Balestra"
             },
             "encumbrance": "3",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "red", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/crossbow.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
-    
+
         {
             "id": "explosive_orb",
             "title": {
@@ -141,19 +141,19 @@
                 "it": "Globo esplosivo"
             },
             "encumbrance": "1",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "red", "1": "red", "explosive": true },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/explosive_orb.png",
             "origins": ["corebox", "stretchgoal", "king"],
-            
+
             "count": 3
         },
-    
+
         {
             "id": "explosive_orb",
             "title": {
@@ -162,17 +162,17 @@
                 "it": "Globo esplosivo"
             },
             "encumbrance": "1",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "red", "1": "red", "explosive": true },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/explosive_orb.png",
             "origins": ["stretchgoal", "king"]
         },
-        
+
         {
             "id": "halberd",
             "title": {
@@ -181,17 +181,17 @@
                 "it": "Alabarda"
             },
             "encumbrance": "3",
-            
+
             "melee": { "0": "red", "1": "red" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "yellow", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/halberd.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
-    
+
         {
             "id": "javelin",
             "title": {
@@ -200,19 +200,19 @@
                 "it": "Giavellotto"
             },
             "encumbrance": "1",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "red", "1": "none", "throwable": true },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/javelin.png",
             "origins": ["corebox", "stretchgoal", "king"],
-            
+
             "count": 2
         },
-    
+
         {
             "id": "kris",
             "title": {
@@ -221,17 +221,17 @@
                 "it": "Kriss"
             },
             "encumbrance": "1",
-            
+
             "melee": { "0": "yellowreroll", "1": "none" },
             "ranged": { "0": "yellow", "1": "none", "throwable": true },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/kris.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
-    
+
         {
             "id": "ornamental_spear",
             "title": {
@@ -240,17 +240,17 @@
                 "it": "Lancia ornamentale"
             },
             "encumbrance": "2",
-            
+
             "melee": { "0": "orangereroll", "1": "none" },
             "ranged": { "0": "orangereroll", "1": "none", "throwable": true },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/ornamental_spear.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
-    
+
         {
             "id": "parrying_dagger",
             "title": {
@@ -259,17 +259,17 @@
                 "it": "Manosinistra"
             },
             "encumbrance": "1",
-            
+
             "melee": { "0": "yellowreroll", "1": "none" },
             "ranged": { "0": "yellowreroll", "1": "none", "throwable": true },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "yellowreroll", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/parrying_dagger_1.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
-    
+
         {
             "id": "parrying_dagger",
             "title": {
@@ -278,17 +278,17 @@
                 "it": "Manosinistra"
             },
             "encumbrance": "1",
-            
+
             "melee": { "0": "yellowreroll", "1": "none" },
             "ranged": { "0": "yellowreroll", "1": "none", "throwable": true },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "yellowreroll", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/parrying_dagger_2.png",
             "origins": ["bbox"]
         },
-    
+
         {
             "id": "sword",
             "title": {
@@ -297,17 +297,17 @@
                 "it": "Spada"
             },
             "encumbrance": "2",
-            
+
             "melee": { "0": "orangereroll", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "yellowreroll", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/sword.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
-    
+
         {
             "id": "sword",
             "title": {
@@ -316,17 +316,17 @@
                 "it": "Spada"
             },
             "encumbrance": "2",
-            
+
             "melee": { "0": "orangereroll", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "yellowreroll", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/sword.png",
             "origins": ["campaignbook"]
         },
-    
+
         {
             "id": "sword",
             "title": {
@@ -335,17 +335,17 @@
                 "it": "Spada"
             },
             "encumbrance": "2",
-            
+
             "melee": { "0": "orangereroll", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "yellowreroll", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/sword.png",
             "origins": ["campaignbook"]
         },
-    
+
         {
             "id": "throwing_knives",
             "title": {
@@ -354,17 +354,17 @@
                 "it": "Coltelli da lancio"
             },
             "encumbrance": "0",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "yellow", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/throwing_knives.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
-    
+
         {
             "id": "tribal_mace",
             "title": {
@@ -373,17 +373,17 @@
                 "it": "Mazza tribale"
             },
             "encumbrance": "2",
-            
+
             "melee": { "0": "orangereroll", "1": "none" },
             "ranged": { "0": "orange", "1": "none", "throwable": true },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/tribal_mace.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
-    
+
         {
             "id": "yuetshi_knife",
             "title": {
@@ -392,17 +392,17 @@
                 "it": "Pugnale Yuetshi"
             },
             "encumbrance": "2",
-            
+
             "melee": { "0": "orangereroll", "1": "none" },
             "ranged": { "0": "orange", "1": "none", "throwable": true },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/yuetshi_knife.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
-    
+
         {
             "id": "chain_mail",
             "title": {
@@ -411,17 +411,17 @@
                 "it": "Cotta di maglia"
             },
             "encumbrance": "3",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "orange", "1": "none" },
-    
+
             "image": "data/equipments/img/chain_mail.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
-    
+
         {
             "id": "leather_armor",
             "title": {
@@ -430,19 +430,19 @@
                 "it": "Armatura di cuoio"
             },
             "encumbrance": "2",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "yellow", "1": "none" },
-    
+
             "image": "data/equipments/img/leather_armor.png",
             "origins": ["corebox", "stretchgoal", "king"],
-            
+
             "count": 2
         },
-    
+
         {
             "id": "leather_armor",
             "title": {
@@ -451,17 +451,17 @@
                 "it": "Armatura di cuoio"
             },
             "encumbrance": "2",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "yellow", "1": "none" },
-    
+
             "image": "data/equipments/img/leather_armor.png",
             "origins": ["nordheim"]
         },
-    
+
         {
             "id": "leather_armor",
             "title": {
@@ -470,19 +470,19 @@
                 "it": "Armatura di cuoio"
             },
             "encumbrance": "2",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "yellow", "1": "none" },
-    
+
             "image": "data/equipments/img/leather_armor.png",
             "origins": ["campaignbook"],
-            
+
             "count": 2
         },
-    
+
         {
             "id": "scale_mail",
             "title": {
@@ -491,17 +491,17 @@
                 "it": "Armatura a scaglie"
             },
             "encumbrance": "5",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "red", "1": "none" },
-    
+
             "image": "data/equipments/img/scale_mail.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
-    
+
         {
             "id": "buckler",
             "title": {
@@ -510,17 +510,17 @@
                 "it": "Brocchiero"
             },
             "encumbrance": "2",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "yellow", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/buckler.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
-    
+
         {
             "id": "shield",
             "title": {
@@ -529,17 +529,17 @@
                 "it": "Scudo"
             },
             "encumbrance": "2",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "orange", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/shield.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
-    
+
         {
             "id": "tribal_shield",
             "title": {
@@ -548,17 +548,17 @@
                 "it": "Scudo tribale"
             },
             "encumbrance": "3",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "orangereroll", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/tribal_shield.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
-    
+
         {
             "id": "life_potion",
             "title": {
@@ -567,16 +567,16 @@
                 "it": "Pozione curativa"
             },
             "encumbrance": "0",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/life_potion.png",
             "origins": ["corebox", "stretchgoal", "king"],
-            
+
             "count": 3
         },
 
@@ -588,13 +588,13 @@
                 "it": "Pozione curativa"
             },
             "encumbrance": "0",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/life_potion.png",
             "origins": ["stretchgoal", "king"]
         },
@@ -607,16 +607,16 @@
                 "it": "Pozione curativa"
             },
             "encumbrance": "0",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/life_potion.png",
             "origins": ["campaignbook"],
-            
+
             "count": 8
         },
 
@@ -625,35 +625,35 @@
             "title": {
                 "fr": "Coffre vide",
                 "en": "Empty Chest",
-                "it": "Cassa vuota"
+                "it": "Forziere vuoto"
             },
             "encumbrance": "3",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/empty_chest_1.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
-    
+
         {
             "id": "empty_chest",
             "title": {
                 "fr": "Coffre vide",
                 "en": "Empty Chest",
-                "it": "Cassa vuota"
+                "it": "Forziere vuoto"
             },
             "encumbrance": "3",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/empty_chest_2.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
@@ -665,17 +665,17 @@
                 "en": "Key",
                 "it": "Chiave"
             },
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/key.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
-    
+
         {
             "id": "pictish_fetish",
             "title": {
@@ -684,17 +684,17 @@
                 "it": "Feticcio pitto"
             },
             "encumbrance": "1",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/pictish_fetish.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
-    
+
         {
             "id": "shamans_staff",
             "title": {
@@ -703,17 +703,17 @@
                 "it": "Bastone dello sciamano"
             },
             "encumbrance": "1",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/shamans_staff.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
-    
+
         {
             "id": "sorcerers_scepter",
             "title": {
@@ -722,17 +722,17 @@
                 "it": "Scettro dello stregone"
             },
             "encumbrance": "1",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/sorcerers_scepter.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
-    
+
         {
             "id": "spellbook",
             "title": {
@@ -741,17 +741,17 @@
                 "it": "Grimorio"
             },
             "encumbrance": "2",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/spellbook.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
-    
+
         {
             "id": "stygian_artifact",
             "title": {
@@ -760,17 +760,17 @@
                 "it": "Artefatto stygiano"
             },
             "encumbrance": "1",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/stygian_artifact.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
-    
+
         {
             "id": "tools",
             "title": {
@@ -779,17 +779,17 @@
                 "it": "Utensili"
             },
             "encumbrance": "1",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/tools.png",
             "origins": ["corebox", "stretchgoal", "king"]
         },
-    
+
         {
             "id": "xuthal_crown",
             "title": {
@@ -798,19 +798,19 @@
                 "it": "Corona di Xuthal"
             },
             "encumbrance": "1",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/xuthal_crown.png",
             "origins": ["corebox", "stretchgoal", "king"],
-            
+
             "count": 2
         },
-    
+
         {
             "id": "axe",
             "title": {
@@ -819,17 +819,17 @@
                 "it": "Ascia"
             },
             "encumbrance": "2",
-            
+
             "melee": { "0": "yellow", "1": "yellow" },
             "ranged": { "0": "orange", "1": "none", "throwable": true },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/axe.png",
             "origins": ["stretchgoal", "king"]
         },
-    
+
         {
             "id": "mitras_mace",
             "title": {
@@ -838,17 +838,17 @@
                 "it": "Mazza di Mitra"
             },
             "encumbrance": "2",
-            
+
             "melee": { "0": "red", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/mitras_mace.png",
             "origins": ["stretchgoal", "king"]
         },
-    
+
         {
             "id": "pirate_saber",
             "title": {
@@ -857,17 +857,17 @@
                 "it": "Sciabola"
             },
             "encumbrance": "1",
-            
+
             "melee": { "0": "orange", "1": "none" },
             "ranged": { "0": "yellow", "1": "none", "throwable": true },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "yellow", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/pirate_saber.png",
             "origins": ["stretchgoal", "king"]
         },
-    
+
         {
             "id": "sacrificial_dagger",
             "title": {
@@ -876,17 +876,17 @@
                 "it": "Pugnale sacrificale"
             },
             "encumbrance": "1",
-            
+
             "melee": { "0": "yellow", "1": "yellow" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/sacrificial_dagger.png",
             "origins": ["stretchgoal", "king"]
         },
-    
+
         {
             "id": "stygian_scepter",
             "title": {
@@ -895,17 +895,17 @@
                 "it": "Scettro stygiano"
             },
             "encumbrance": "1",
-            
+
             "melee": { "0": "redreroll", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/stygian_scepter.png",
             "origins": ["stretchgoal", "king"]
         },
-    
+
         {
             "id": "turanian_sword",
             "title": {
@@ -914,17 +914,17 @@
                 "it": "Spada turaniana"
             },
             "encumbrance": "2",
-            
+
             "melee": { "0": "orangereroll", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "orangereroll", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/turanian_sword.png",
             "origins": ["stretchgoal", "king"]
         },
-    
+
         {
             "id": "two_handed_sword",
             "title": {
@@ -933,17 +933,17 @@
                 "it": "Spadone a due mani"
             },
             "encumbrance": "3",
-            
+
             "melee": { "0": "redreroll", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "orange", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/two_handed_sword.png",
             "origins": ["stretchgoal", "king"]
         },
-    
+
         {
             "id": "zingaran_bow",
             "title": {
@@ -952,17 +952,17 @@
                 "it": "Arco zingariano"
             },
             "encumbrance": "1",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "yellowreroll", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/zingaran_bow.png",
             "origins": ["stretchgoal", "king"]
         },
-    
+
         {
             "id": "zingaran_breastplate",
             "title": {
@@ -971,17 +971,17 @@
                 "it": "Corazza zingariana"
             },
             "encumbrance": "3",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "yellowreroll", "1": "none" },
-    
+
             "image": "data/equipments/img/zingaran_breastplate.png",
             "origins": ["stretchgoal", "king"]
         },
-    
+
         {
             "id": "black_staff",
             "title": {
@@ -990,17 +990,17 @@
                 "it": "Bastone nero"
             },
             "encumbrance": "1",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "yellow", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/black_staff.png",
             "origins": ["stretchgoal", "king"]
         },
-    
+
         {
             "id": "mitras_staff",
             "title": {
@@ -1009,17 +1009,17 @@
                 "it": "Bastone di Mitra"
             },
             "encumbrance": "2",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "yellowreroll", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/mitras_staff.png",
             "origins": ["stretchgoal", "king"]
         },
-    
+
         {
             "id": "pictish_drink",
             "title": {
@@ -1028,16 +1028,16 @@
                 "it": "Intruglio pitto"
             },
             "encumbrance": "0",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/pictish_drink.png",
             "origins": ["stretchgoal", "king"],
-            
+
             "count": 2
         },
 
@@ -1049,16 +1049,16 @@
                 "it": "Intruglio pitto"
             },
             "encumbrance": "0",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/pictish_drink.png",
             "origins": ["campaignbook"],
-            
+
             "count": 6
         },
 
@@ -1070,17 +1070,17 @@
                 "it": "Mantello"
             },
             "encumbrance": "2",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/cape.png",
             "origins": ["stretchgoal", "king"]
         },
-    
+
         {
             "id": "censer",
             "title": {
@@ -1089,17 +1089,17 @@
                 "it": "Incensiere"
             },
             "encumbrance": "1",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/censer.png",
             "origins": ["stretchgoal", "king"]
         },
-    
+
         {
             "id": "elixir",
             "title": {
@@ -1108,17 +1108,17 @@
                 "it": "Elisir"
             },
             "encumbrance": "0",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/elixir.png",
             "origins": ["stretchgoal", "king"]
         },
-    
+
         {
             "id": "heart_of_ahriman",
             "title": {
@@ -1127,17 +1127,17 @@
                 "it": "Cuore di Ahriman"
             },
             "encumbrance": "0",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/heart_of_ahriman.png",
             "origins": ["stretchgoal", "king"]
         },
-    
+
         {
             "id": "hyrkanian_mirror",
             "title": {
@@ -1146,17 +1146,17 @@
                 "it": "Specchio hyrkaniano"
             },
             "encumbrance": "1",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/hyrkanian_mirror.png",
             "origins": ["stretchgoal", "king"]
         },
-    
+
         {
             "id": "idol_of_yag-kosha",
             "title": {
@@ -1165,17 +1165,17 @@
                 "it": "Idolo di Yag-Kosha"
             },
             "encumbrance": "4",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/idol_of_yag-kosha.png",
             "origins": ["stretchgoal", "king"]
         },
-    
+
         {
             "id": "phial",
             "title": {
@@ -1184,17 +1184,17 @@
                 "it": "Ampolla"
             },
             "encumbrance": "0",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/phial.png",
             "origins": ["stretchgoal", "king"]
         },
-    
+
         {
             "id": "potion",
             "title": {
@@ -1203,17 +1203,17 @@
                 "it": "Pozione"
             },
             "encumbrance": "0",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/potion.png",
             "origins": ["stretchgoal", "king"]
         },
-    
+
         {
             "id": "ring",
             "title": {
@@ -1222,17 +1222,17 @@
                 "it": "Anello"
             },
             "encumbrance": "0",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/ring.png",
             "origins": ["stretchgoal", "king"]
         },
-    
+
         {
             "id": "sacred_treasure",
             "title": {
@@ -1241,17 +1241,17 @@
                 "it": "Tesoro sacro"
             },
             "encumbrance": "3",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/sacred_treasure_1.png",
             "origins": ["stretchgoal", "king"]
         },
-    
+
         {
             "id": "sacred_treasure",
             "title": {
@@ -1260,17 +1260,17 @@
                 "it": "Tesoro sacro"
             },
             "encumbrance": "3",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/sacred_treasure_2.png",
             "origins": ["stretchgoal", "king"]
         },
-    
+
         {
             "id": "sacred_treasure",
             "title": {
@@ -1279,17 +1279,17 @@
                 "it": "Tesoro sacro"
             },
             "encumbrance": "3",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/sacred_treasure_3.png",
             "origins": ["stretchgoal", "king"]
         },
-    
+
         {
             "id": "unguent",
             "title": {
@@ -1298,17 +1298,17 @@
                 "it": "Unguento"
             },
             "encumbrance": "0",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/unguent.png",
             "origins": ["stretchgoal", "king"]
         },
-    
+
         {
             "id": "blank",
             "title": {
@@ -1317,17 +1317,17 @@
                 "it": ""
             },
             "encumbrance": "",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": null,
             "origins": ["stretchgoal", "king"]
         },
-    
+
         {
             "id": "blank",
             "title": {
@@ -1336,17 +1336,17 @@
                 "it": ""
             },
             "encumbrance": "",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": null,
             "origins": ["stretchgoal", "king"]
         },
-    
+
         {
             "id": "blank",
             "title": {
@@ -1355,17 +1355,17 @@
                 "it": ""
             },
             "encumbrance": "",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": null,
             "origins": ["stretchgoal", "king"]
         },
-    
+
         {
             "id": "blank",
             "title": {
@@ -1374,17 +1374,17 @@
                 "it": ""
             },
             "encumbrance": "",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": null,
             "origins": ["stretchgoal", "king"]
         },
-    
+
         {
             "id": "blank",
             "title": {
@@ -1393,17 +1393,17 @@
                 "it": ""
             },
             "encumbrance": "",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": null,
             "origins": ["stretchgoal", "king"]
         },
-    
+
         {
             "id": "letters",
             "title": {
@@ -1412,13 +1412,13 @@
                 "it": null
             },
             "encumbrance": "",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/a.png",
             "origins": ["stretchgoal", "king"]
         },
@@ -1431,13 +1431,13 @@
                 "it": null
             },
             "encumbrance": "",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/b.png",
             "origins": ["stretchgoal", "king"]
         },
@@ -1450,13 +1450,13 @@
                 "it": null
             },
             "encumbrance": "",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/c.png",
             "origins": ["stretchgoal", "king"]
         },
@@ -1469,13 +1469,13 @@
                 "it": null
             },
             "encumbrance": "",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/d.png",
             "origins": ["stretchgoal", "king"]
         },
@@ -1488,13 +1488,13 @@
                 "it": null
             },
             "encumbrance": "",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/e.png",
             "origins": ["stretchgoal", "king"]
         },
@@ -1507,16 +1507,16 @@
                 "it": "Spada degli Aesir"
             },
             "encumbrance": "2",
-            
+
             "melee": { "0": "orange", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "orange", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/aesir_blade.png",
             "origins": ["nordheim"],
-            
+
             "count": 2
         },
 
@@ -1528,17 +1528,17 @@
                 "it": "Frammento di amuleto"
             },
             "encumbrance": "0",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/amulet_fragment_1.png",
             "origins": ["nordheim"]
         },
-    
+
         {
             "id": "amulet_fragment",
             "title": {
@@ -1547,17 +1547,17 @@
                 "it": "Frammento di amuleto"
             },
             "encumbrance": "0",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/amulet_fragment_2.png",
             "origins": ["nordheim"]
         },
-    
+
         {
             "id": "amulet_fragment",
             "title": {
@@ -1566,17 +1566,17 @@
                 "it": "Frammento di amuleto"
             },
             "encumbrance": "0",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/amulet_fragment_3.png",
             "origins": ["nordheim"]
         },
-    
+
         {
             "id": "khitan_short_sword",
             "title": {
@@ -1585,17 +1585,17 @@
                 "it": "Spada corta khitana"
             },
             "encumbrance": "2",
-            
+
             "melee": { "0": "yellowreroll", "1": "none" },
             "ranged": { "0": "yellowreroll", "1": "none", "throwable": true },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "yellowreroll", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/khitan_short_sword.png",
             "origins": ["khitai"]
         },
-    
+
         {
             "id": "khitan_sword",
             "title": {
@@ -1604,17 +1604,17 @@
                 "it": "Spada khitana"
             },
             "encumbrance": "2",
-            
+
             "melee": { "0": "orangereroll", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "yellowreroll", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/khitan_sword.png",
             "origins": ["khitai"]
         },
-    
+
         {
             "id": "black_lotus",
             "title": {
@@ -1623,19 +1623,19 @@
                 "it": "Loto nero"
             },
             "encumbrance": "2",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/black_lotus.png",
             "origins": ["khitai"],
-            
+
             "count": 2
         },
-    
+
         {
             "id": "false_evidence",
             "title": {
@@ -1644,17 +1644,17 @@
                 "it": "Falso indizio"
             },
             "encumbrance": "0",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/false_evidence.png",
             "origins": ["khitai"]
         },
-    
+
         {
             "id": "ginger",
             "title": {
@@ -1663,19 +1663,19 @@
                 "it": "Zenzero"
             },
             "encumbrance": "2",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/ginger.png",
             "origins": ["khitai"],
-            
+
             "count": 2
         },
-    
+
         {
             "id": "saltpeter",
             "title": {
@@ -1684,19 +1684,19 @@
                 "it": "Salnitro"
             },
             "encumbrance": "2",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/salpeter.png",
             "origins": ["khitai"],
-            
+
             "count": 2
         },
-    
+
         {
             "id": "toad_mucus",
             "title": {
@@ -1705,19 +1705,19 @@
                 "it": "Bava di rospo"
             },
             "encumbrance": "2",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/toad_mucus.png",
             "origins": ["khitai"],
-            
+
             "count": 2
         },
-    
+
         {
             "id": "tower_key",
             "title": {
@@ -1726,17 +1726,17 @@
                 "it": "Chiave della torre"
             },
             "encumbrance": "2",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/tower_key.png",
             "origins": ["khitai"]
         },
-    
+
         {
             "id": "toxic_mushrooms",
             "title": {
@@ -1745,19 +1745,19 @@
                 "it": "Funghi velenosi"
             },
             "encumbrance": "2",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/toxic_mushrooms.png",
             "origins": ["khitai"],
-            
+
             "count": 2
         },
-    
+
         {
             "id": "warlock_documents",
             "title": {
@@ -1766,17 +1766,17 @@
                 "it": "Libri dello Stregone"
             },
             "encumbrance": "0",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/warlock_documents.png",
             "origins": ["khitai"]
         },
-    
+
         {
             "id": "warlocks_blood",
             "title": {
@@ -1785,19 +1785,19 @@
                 "it": "Sangue dello Stregone"
             },
             "encumbrance": "1",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/warlocks_blood.png",
             "origins": ["khitai"],
-            
+
             "count": 2
         },
-    
+
         {
             "id": "assassins_dagger",
             "title": {
@@ -1806,19 +1806,19 @@
                 "it": "Pugnale dell'assassino"
             },
             "encumbrance": "1",
-            
+
             "melee": { "0": "yellowreroll", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/assassins_dagger.png",
             "origins": ["stygia"],
-            
+
             "count": 2
         },
-    
+
         {
             "id": "antidote",
             "title": {
@@ -1827,19 +1827,19 @@
                 "it": "Antidoto"
             },
             "encumbrance": "0",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/antidote.png",
             "origins": ["stygia"],
-            
+
             "count": 4
         },
-    
+
         {
             "id": "torch",
             "title": {
@@ -1848,40 +1848,40 @@
                 "it": "Torcia"
             },
             "encumbrance": "0",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/torch.png",
             "origins": ["stygia"],
-            
+
             "count": 2
         },
-    
+
         {
             "id": "trapped_chest",
             "title": {
                 "fr": "Coffre piégé",
                 "en": "Trapped Chest",
-                "it": "Cassa-trappola"
+                "it": "Forziere-trappola"
             },
             "encumbrance": "3",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/trapped_chest.png",
             "origins": ["stygia"],
-            
+
             "count": 2
         },
-    
+
         {
             "id": "short_sword",
             "title": {
@@ -1890,17 +1890,17 @@
                 "it": "Daga"
             },
             "encumbrance": "2",
-            
+
             "melee": { "0": "orangereroll", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "yellowreroll", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/short_sword.png",
             "origins": ["bbox"]
         },
-    
+
         {
             "id": "knife",
             "title": {
@@ -1909,17 +1909,17 @@
                 "it": "Coltello"
             },
             "encumbrance": "1",
-            
+
             "melee": { "0": "yellowreroll", "1": "none" },
             "ranged": { "0": "yellow", "1": "none", "throwable": true },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/knife.png",
             "origins": ["bbox"]
         },
-    
+
         {
             "id": "amulet",
             "title": {
@@ -1928,17 +1928,17 @@
                 "it": "Amuleto"
             },
             "encumbrance": "0",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/amulet_1.png",
             "origins": ["bbox"]
-        },   
-    
+        },
+
         {
             "id": "amulet",
             "title": {
@@ -1947,17 +1947,17 @@
                 "it": "Amuleto"
             },
             "encumbrance": "0",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/amulet_2.png",
             "origins": ["bbox"]
-        },   
-        
+        },
+
         {
             "id": "orb_red",
             "title": {
@@ -1966,17 +1966,17 @@
                 "it": "Globo rosso"
             },
             "encumbrance": "1",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/orb_red.png",
             "origins": ["campaignbook"]
-        },   
-        
+        },
+
         {
             "id": "orb_red_position",
             "title": {
@@ -1985,17 +1985,17 @@
                 "it": "Posizione globo"
             },
             "encumbrance": "",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/orb_red_position_1.png",
             "origins": ["campaignbook"]
-        },   
-        
+        },
+
         {
             "id": "orb_red_position",
             "title": {
@@ -2004,17 +2004,17 @@
                 "it": "Posizione globo"
             },
             "encumbrance": "",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/orb_red_position_2.png",
             "origins": ["campaignbook"]
-        },   
-        
+        },
+
         {
             "id": "orb_red_position",
             "title": {
@@ -2023,17 +2023,17 @@
                 "it": "Posizione globo"
             },
             "encumbrance": "",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/orb_red_position_3.png",
             "origins": ["campaignbook"]
-        },   
-        
+        },
+
         {
             "id": "orb_green",
             "title": {
@@ -2042,17 +2042,17 @@
                 "it": "Globo verde"
             },
             "encumbrance": "1",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/orb_green.png",
             "origins": ["campaignbook"]
-        },   
-        
+        },
+
         {
             "id": "orb_green_position",
             "title": {
@@ -2061,17 +2061,17 @@
                 "it": "Posizione globo"
             },
             "encumbrance": "",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/orb_green_position_1.png",
             "origins": ["campaignbook"]
-        },   
-        
+        },
+
         {
             "id": "orb_green_position",
             "title": {
@@ -2080,17 +2080,17 @@
                 "it": "Posizione globo"
             },
             "encumbrance": "",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/orb_green_position_2.png",
             "origins": ["campaignbook"]
-        },   
-        
+        },
+
         {
             "id": "orb_green_position",
             "title": {
@@ -2099,17 +2099,17 @@
                 "it": "Posizione globo"
             },
             "encumbrance": "",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/orb_green_position_3.png",
             "origins": ["campaignbook"]
-        },   
-        
+        },
+
         {
             "id": "orb_blue",
             "title": {
@@ -2118,17 +2118,17 @@
                 "it": "Globo blu"
             },
             "encumbrance": "1",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/orb_blue.png",
             "origins": ["campaignbook"]
-        },   
-        
+        },
+
         {
             "id": "orb_blue_position",
             "title": {
@@ -2137,17 +2137,17 @@
                 "it": "Posizione globo"
             },
             "encumbrance": "",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/orb_blue_position_1.png",
             "origins": ["campaignbook"]
-        },   
-        
+        },
+
         {
             "id": "orb_blue_position",
             "title": {
@@ -2156,17 +2156,17 @@
                 "it": "Posizione globo"
             },
             "encumbrance": "",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/orb_blue_position_2.png",
             "origins": ["campaignbook"]
-        },   
-        
+        },
+
         {
             "id": "orb_blue_position",
             "title": {
@@ -2175,17 +2175,17 @@
                 "it": "Posizione globo"
             },
             "encumbrance": "",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/orb_blue_position_3.png",
             "origins": ["campaignbook"]
-        },   
-        
+        },
+
         {
             "id": "poisoned",
             "title": {
@@ -2194,19 +2194,19 @@
                 "it": "Avvelenato"
             },
             "encumbrance": "",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/poisoned.png",
             "origins": ["campaignbook"],
-            
+
             "count": 4
-        },   
-        
+        },
+
         {
             "id": "kordava_boots",
             "title": {
@@ -2216,17 +2216,17 @@
             },
             "encumbrance": "0",
             "movement": 1,
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/kordava_boots.png",
             "origins": ["campaignbook"]
-        },   
-        
+        },
+
         {
             "id": "armbands_of_bel",
             "title": {
@@ -2235,17 +2235,17 @@
                 "it": "Bracciali di Bel"
             },
             "encumbrance": "1",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "orangereroll", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/armbands_of_bel.png",
             "origins": ["campaignbook"]
-        },   
-        
+        },
+
         {
             "id": "akbitanas_claymore",
             "title": {
@@ -2255,17 +2255,17 @@
             },
             "encumbrance": "3",
             "skills": {"0": "attack/counterattack", "1": "none"},
-            
+
             "melee": { "0": "redreroll", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "orange", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/akbitanas_claymore.png",
             "origins": ["campaignbook"]
-        },   
-        
+        },
+
         {
             "id": "shemite_bow",
             "title": {
@@ -2274,17 +2274,17 @@
                 "it": "Arco shemita"
             },
             "encumbrance": "2",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "orange", "1": "yellow", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/shemite_bow.png",
             "origins": ["campaignbook"]
-        },   
-        
+        },
+
         {
             "id": "asshuri_cuirass",
             "title": {
@@ -2293,17 +2293,17 @@
                 "it": "Corazza asshuri"
             },
             "encumbrance": "4",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "red", "1": "none" },
-    
+
             "image": "data/equipments/img/asshuri_cuirass.png",
             "origins": ["campaignbook"]
-        },   
-        
+        },
+
         {
             "id": "shadow_mantel",
             "title": {
@@ -2313,17 +2313,17 @@
             },
             "encumbrance": "0",
             "skills": {"0": "defense/untouchable", "1": "none"},
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/shadow_mantel.png",
             "origins": ["campaignbook"]
-        },   
-        
+        },
+
         {
             "id": "phoenix_sword",
             "title": {
@@ -2332,17 +2332,17 @@
                 "it": "Spada della fenice"
             },
             "encumbrance": "2",
-            
+
             "melee": { "0": "orangereroll", "1": "yellow" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "yellowreroll", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/phoenix_sword.png",
             "origins": ["campaignbook"]
-        },   
-        
+        },
+
         {
             "id": "boris_hammer",
             "title": {
@@ -2352,17 +2352,17 @@
             },
             "encumbrance": "3",
             "skills": {"0": "movement/wall_wrecker", "1": "none"},
-            
+
             "melee": { "0": "redreroll", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/boris_hammer.png",
             "origins": ["campaignbook"]
-        },   
-        
+        },
+
         {
             "id": "shield_of_mitra",
             "title": {
@@ -2371,17 +2371,17 @@
                 "it": "Scudo di Mitra"
             },
             "encumbrance": "3",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "red", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/shield_of_mitra.png",
             "origins": ["campaignbook"]
-        },   
-        
+        },
+
         {
             "id": "spear",
             "title": {
@@ -2390,17 +2390,17 @@
                 "it": "Lancia"
             },
             "encumbrance": "2",
-            
+
             "melee": { "0": "orange", "1": "none" },
             "ranged": { "0": "orange", "1": "none", "throwable": true },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/spear.png",
             "origins": ["campaignbook"]
-        },   
-        
+        },
+
         {
             "id": "information",
             "title": {
@@ -2409,13 +2409,13 @@
                 "it": "Informazione"
             },
             "encumbrance": "0",
-            
+
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
             "manipulation": { "0": "none", "1": "none", "explosive": false },
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
-    
+
             "image": "data/equipments/img/information.png",
             "origins": ["campaignbook"]
         }

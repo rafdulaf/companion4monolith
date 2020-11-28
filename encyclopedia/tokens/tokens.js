@@ -19,20 +19,20 @@ var EncyclopediaTokens = {
             'spells': "Utilisé par le sort :"
         },
         'it': {
-            'tab': "TODO_TRANSLATE",
+            'tab': "Altro",
             'from': "Disponibile in :",
             'fromAnd': "e",
             'token': "copia",
             'tokens': "copie",
-            'skills': "TODO_TRANSLATE",
-            'spells': "TODO_TRANSLATE"
+            'skills': "Utilizzato dall'abilità :",
+            'spells': "Utilizzato dall'incantesimo :"
         }
     },
-    
+
     preinit: function()
     {
         Encyclopedia._slides.push({   label: EncyclopediaTokens._i18n[Language].tab, id: "encyclopedia-token", onShow: EncyclopediaTokens.onShow,  onHide: EncyclopediaTokens.onHide });
-        
+
         EncyclopediaTokens._facets = [
             {
                 id: 'keyword',
@@ -46,7 +46,7 @@ var EncyclopediaTokens = {
                     return item.name[Language] && ConanRules._deemphasize(item.name[Language]).indexOf(ConanRules._deemphasize(value)) != -1;
                 }
             },
-            
+
             {
                 id: 'expansions',
                 label: {
@@ -77,15 +77,15 @@ var EncyclopediaTokens = {
                     {
                         return true;
                     }
-                    else 
+                    else
                     {
-                        var hasExpansion = ConanAbout._hasExpansion(item.origins); 
+                        var hasExpansion = ConanAbout._hasExpansion(item.origins);
                         return hasExpansion && selectedValues[0] == 'yes'
                                 || !hasExpansion && selectedValues[0] == 'no'
                     }
                 }
             },
-            
+
             {
                 id: 'origins',
                 label: {
@@ -99,7 +99,7 @@ var EncyclopediaTokens = {
                     for (var i in Encyclopedia.expansions.types)
                     {
                         var type = Encyclopedia.expansions.types[i];
-                        
+
                         for (var j in Encyclopedia.expansions.list)
                         {
                             var expansion = Encyclopedia.expansions.list[j];
@@ -121,7 +121,7 @@ var EncyclopediaTokens = {
                         var startRemove = false;
 
                         var type = Encyclopedia.expansions.types[i];
-                        
+
                         for (var j in Encyclopedia.expansions.list)
                         {
                             var expansion = Encyclopedia.expansions.list[j];
@@ -142,13 +142,13 @@ var EncyclopediaTokens = {
                     return origins.filter(v => selectedValues.indexOf(v) != -1).length > 0;
                 }
             },
-            
+
             {
                 id: 'usage',
                 label: {
                     'fr': "Divers",
                     'en': "Misc.",
-                    'it': "TODO_TRANSLATE"
+                    'it': "Altro"
                 },
                 sort: true,
                 values: [
@@ -157,7 +157,7 @@ var EncyclopediaTokens = {
                         label: {
                             'fr': "Figurine",
                             'en': "Model",
-                            'it': "TODO_TRANSLATE"
+                            'it': "Miniatura"
                         }
                     },
                     {
@@ -165,7 +165,7 @@ var EncyclopediaTokens = {
                         label: {
                             'fr': "Compétence",
                             'en': "Skill",
-                            'it': "TODO_TRANSLATE"
+                            'it': "Abilità"
                         }
                     },
                     {
@@ -173,7 +173,7 @@ var EncyclopediaTokens = {
                         label: {
                             'fr': "Sort",
                             'en': "Spell",
-                            'it': "TODO_TRANSLATE"
+                            'it': "Incantesimo"
                         }
                     }
                 ],
@@ -204,9 +204,9 @@ var EncyclopediaTokens = {
                     return false;
                 }
             }
-        ]        
-    },    
-    
+        ]
+    },
+
     init: function()
     {
         $("#encyclopedia-token").append(Encyclopedia.displaySearchEngine(EncyclopediaTokens._facets, "EncyclopediaTokens.updateDisplayTokens()", "etk"));
@@ -217,20 +217,20 @@ var EncyclopediaTokens = {
     displayTokens: function()
     {
         var tokens = "";
-        
+
         Encyclopedia.tokens.list.sort(function(s1, s2) {
             var c = s1.name[Language].toLowerCase().localeCompare(s2.name[Language].toLowerCase())
             if (c != 0)
             {
                 return c;
             }
-            
+
             c = s1.id.toLowerCase().localeCompare(s2.id.toLowerCase());
             if (c != 0)
             {
                 return c;
             }
-            
+
             return s1.subid < s2.subid ? -1 : 1;
         });
 
@@ -240,65 +240,65 @@ var EncyclopediaTokens = {
         {
             i = parseInt(i);
             var token = tokenList[i];
-            
+
             if (i < tokenList.length - 1
                 && tokenList[i+1].id == token.id)
             {
                 ignoredPrevious++;
                 continue;
             }
-            
+
             token = tokenList[i - ignoredPrevious];
-            
+
             tokens += "<a id='token-" + token.id + "' href='javascript:void(0)' data-count='" + (ignoredPrevious+1) + "' onclick='EncyclopediaTokens.openToken(\"" + token.id + "\")'>";
             tokens += EncyclopediaTokens._tokenCode(token);
             tokens += "</a>";
-            
+
             ignoredPrevious = 0;
         }
-        
+
         $("#encyclopedia-token-wrapper").html(tokens);
         EncyclopediaTokens.updateDisplayTokens()
     },
-    
+
     updateDisplayTokens: function()
     {
         Encyclopedia.updateFacets(EncyclopediaTokens._facets, Encyclopedia.tokens.list, "etk");
-        
+
         $("#encyclopedia-token-wrapper a").hide();
-        
+
         var tokenList = Encyclopedia.tokens.list.filter(Encyclopedia.filter(EncyclopediaTokens._facets, "etk"));
         var ignoredPrevious = 0;
         for (var i in tokenList)
         {
             i = parseInt(i);
             var token = tokenList[i];
-            
+
             if (i < tokenList.length - 1
                 && tokenList[i+1].id == token.id)
             {
                 ignoredPrevious++;
                 continue;
             }
-            
+
             token = tokenList[i - ignoredPrevious];
-            
+
             $("#token-" + token.id).attr('data-count', ignoredPrevious+1).show();
-            
+
             ignoredPrevious = 0;
         }
     },
-    
+
     onShow: function() {
     },
 
     onHide: function() {
     },
-    
+
     _findTokensById: function(id)
     {
         var tokens = [];
-        
+
         for (var i in Encyclopedia.tokens.list)
         {
             var token = Encyclopedia.tokens.list[i];
@@ -307,10 +307,10 @@ var EncyclopediaTokens = {
                 tokens.push(token);
             }
         }
-        
+
         return tokens;
     },
-    
+
     openToken: function(id) {
         var tokens = EncyclopediaTokens._findTokensById(id);
         var displayTokens = [];
@@ -320,37 +320,37 @@ var EncyclopediaTokens = {
         for (var e in tokens)
         {
             var token = tokens[e];
-            
+
             var origins = Encyclopedia._removeExtraExpansion(token.origins.slice());
             for (var i in origins)
             {
                 var origin = origins[i];
                 originsCount[origin] = originsCount[origin] ? originsCount[origin]+1 : 1;
             }
-            
+
             if (!subids[token.subid])
             {
                 subids[token.subid] = 1;
                 displayTokens.push(token);
-            }       
+            }
             else
             {
                 subids[token.subid] += 1;
             }
         }
 
-        
+
         var originString = "";
         for (var i in originsCount)
         {
             if (originString) originString += " " + EncyclopediaTokens._i18n[Language].fromAnd + " ";
             originString += Encyclopedia._getOrigin(i) + " (" + originsCount[i] + " " + (originsCount[i] == 1 ? EncyclopediaTokens._i18n[Language].token : EncyclopediaTokens._i18n[Language].tokens) + ")";
         }
-        
+
         var c = "<div class='token-wraperindetails'>";
         for (var e in displayTokens)
         {
-            var token = displayTokens[e]; 
+            var token = displayTokens[e];
             c += "<div class='token-wrapindetails' data-count='" + subids[token.subid] + "'>" + EncyclopediaTokens._tokenCode(token, true) + "</div>";
         }
         c += "</div>";
@@ -363,17 +363,17 @@ var EncyclopediaTokens = {
                     + EncyclopediaModels._linkToModel(token.model, true)
                     + "</div>";
         }
-        
+
         var skills = ConanRules._findSkillByToken(token.id) || "";
         if (skills)
         {
             skills = "<div class='skills'>" + EncyclopediaTokens._i18n[Language].skills + " " + ConanRules._linkToSkill(skills.id, false) + "</div>";
         }
-        
+
         var spells = EncyclopediaSpells._findSpellsByToken(token.id).map(s => EncyclopediaSpells._linkToSpell(s.id, false)).join(", ");
-        
+
         Nav.dialog(token.name[Language] || "",
-            "<div class='tokendetails'>" 
+            "<div class='tokendetails'>"
                 + "<div class='minwidth'></div>"
                 + "<div class='from'>" + EncyclopediaTokens._i18n[Language].from + " "
                     + originString
@@ -387,28 +387,28 @@ var EncyclopediaTokens = {
             []
         );
     },
-    
+
     _tokenCode: function(token, details) {
         var code = "";
 
-        var ratio = 7.2/25.0;        
+        var ratio = 7.2/25.0;
         var style = token.size.shape == "circle" || token.size.width >= token.size.height ? "width: " + (token.size.width*ratio) +  "rem;" : "height: " + (token.size.height*ratio) +  "rem;"
-        code += "<div class='othertoken " + token.size.shape + "'>" 
+        code += "<div class='othertoken " + token.size.shape + "'>"
                     + "<div class='img'>"
                         + (details && token.faceB ? "<img class='back' src='" + token.faceA.image + "\?version=" + Version + "' style='" + style + "'/>" : "")
                         + "<img src='" + (token.faceB ? token.faceB.image : token.faceA.image) + "\?version=" + Version + "' style='" + style + "'/>"
                     + "</div>"
                     + "<span class='name'>" + token.name[Language] + "</span>"
               + "</div>"
-        
+
         return code;
     },
-    
-        
+
+
     _linkToToken: function(id, image) {
         var token = EncyclopediaTokens._findTokensById(id)[0];
         var name = token.name[Language];
-        
+
         var s = "";
         if (token)
         {
@@ -424,8 +424,8 @@ var EncyclopediaTokens = {
             s += "</a>";
         }
         return s;
-        
-        
+
+
         return "<a href='javascript:void(0)' onclick='EncyclopediaTokens.openToken(\"" + id + "\")'>" + token.name[Language] + "</a>";
     }
 

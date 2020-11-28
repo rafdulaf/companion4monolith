@@ -618,7 +618,7 @@
                         "description": {
                             "fr": "Il existe toujours une ligne de vue vers la zone d’un mât même si celui-ci bloque normalement la ligne de vue.",
                             "en": "All the areas of the game board have lines of sight on the masts’areas.",
-                            "it": "É sempre possibile tracciare una linea di vista da e verso la zona di un albero. L'albero blocca normalmente la linea di vista."
+                            "it": "É sempre possibile tracciare una linea di vista da e verso l'area occupata da un albero. L'albero blocca normalmente la linea di vista."
                         },
                         "coordinates": [[27,27], [69,22], [30,72], [70,67]]
                     }, {
@@ -2947,7 +2947,7 @@
                         "description": {
                             "fr": "Le plateau est composé de deux niveaux dont le niveau « 1 » est exactement superposé au niveau « 0 ».<br/>Le niveau est indiqué par un pictogramme en bas à gauche de chaque niveau. Un personnage, avec ou sans la compétence Escalade, présent dans la zone d’un puits peut l’emprunter pour se déplacer du niveau « 1 » au niveau « 0 » (et inversement) pour un surcoût de 2 points de mouvement.<br/>Emprunter un puits permet de se déplacer dans la zone du puits trouvant exactement à sa verticale (au niveau supérieur ou inférieur). Les Scorpions géants peuvent emprunter les puits sans pénalité de mouvement.",
                             "en": "The game board represents 2 levels of a Stygian temple with level « 1 » being exactly on top of level « 0 ».<br/>The level is indicated by an icon on the lower-left corner of each level. A character with or without Climb in the opened well's area may move from level « 1 » to level « 0 » (and the other way) by spending 2 extra movement points.<br/>Moving through a well takes a character's model to the area with a well token directly above or below. The Giant Scorpions may move through all the wells, opened or not, with no movement penalty.",
-                            "it": "Il tabellone è composto da due livelli sovrapposti in cui il livello 1 si trova in corrispondenza del livello 0.<br/> Il livello è indicato da un'icona in basso a sinistra. Un personaggio con o senza l'abilità Arrampicarsi che si trovi in un'area di un pozzo può percorrerlo per muoversi dal livello 1 al livello 0 (e viceversa) spendendo 2 punti movimento extra.<br/> Percorrere un pozzo permette al personaggio di muoversi nella zona di pozzo che si trova sulla sua verticale (sia al livello superiore che a quello inferiore). Gli Scorpioni Giganti possono percorrere i pozzi senza penalità al movimento."
+                            "it": "Il tabellone è composto da due livelli sovrapposti in cui il livello 1 si trova in corrispondenza del livello 0.<br/> Il livello è indicato da un'icona in basso a sinistra. Un personaggio con o senza l'abilità Arrampicarsi che si trovi in un'area di un pozzo può percorrerlo per muoversi dal livello 1 al livello 0 (e viceversa) spendendo 2 punti movimento extra.<br/> Percorrere un pozzo permette al personaggio di muoversi nell'area di pozzo che si trova sulla sua verticale (sia al livello superiore che a quello inferiore). Gli Scorpioni Giganti possono percorrere i pozzi senza penalità al movimento."
                         },
                         "coordinates": []
                     }, {

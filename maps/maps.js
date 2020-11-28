@@ -53,7 +53,7 @@ var ConanMaps = {
             'rotate': "Ruota la mappa",
             'forum': "Domande su questa mappa? Falle sul forum!",
             'losfile': "Scarica la mappa statica con le linee di vista",
-            'start': "Click in una zona per vedere le linee di vista",
+            'start': "Click in un'area per visualizzare le linee di vista",
             'legend': "Legenda",
             'clickhelp1': "Le aree blu sono le aree selezionate. Hanno linea di vista libera verso tutte le aree colorate.",
             'clickhelp4': "Le aree gialle sono un livello superiore alle aree blu: Attacchi a distanza da queste aree guadagnano un bonus Elevazione di +1 Dado giallo.",

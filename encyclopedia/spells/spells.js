@@ -37,7 +37,7 @@ var EncyclopediaSpells = {
               'cards': "copie",
               'clarification': "Chiarificazione:",
               'skill': "Abilità:",
-              'tokensUsed': "TODO_TRANSLATE"
+              'tokensUsed': "Usa il segnalino :"
           }
     },
 
@@ -489,7 +489,7 @@ var EncyclopediaSpells = {
 
         return spells;
     },
-    
+
     _findSpellsByToken: function(tokenId)
     {
         var spells = [];
@@ -537,7 +537,7 @@ var EncyclopediaSpells = {
             if (originString) originString += " " + EncyclopediaSpells._i18n[Language].fromAnd + " ";
             originString += Encyclopedia._getOrigin(i) + " (" + originsCount[i] + " " + (originsCount[i] == 1 ? EncyclopediaSpells._i18n[Language].card : EncyclopediaSpells._i18n[Language].cards) + ")";
         }
-        
+
         var tokens = "";
         if (spell.tokens)
         {
