@@ -9,6 +9,7 @@ var EncyclopediaModels = {
             'paintedBy': "Peint par: ",
             'zoom': "Zoom",
             'print': "Imprimer",
+            'forum': "Forum",
             'heroes': "Utilisée par les héros :",
             'tiles': "Utilisée par les tuiles :",
             'tokens': "Remplace le jeton :"
@@ -22,6 +23,7 @@ var EncyclopediaModels = {
             'paintedBy': "Painted par: ",
             'zoom': "Zoom",
             'print': "Print",
+            'forum': "Forum",
             'heroes': "Used by the heroes:",
             'tiles': "Used by the tiles:",
             'tokens': "Replace the token:"
@@ -35,6 +37,7 @@ var EncyclopediaModels = {
             'paintedBy': "Dipinta da: ",
             'zoom': "Zoom",
             'print': "Stampa",
+            'forum': "TODO_TRANSLATE",
             'heroes': "Usata dagli Eroi :",
             'tiles': "Usata nelle tessere :",
             'tokens': "TODO_TRANSLATE"
