@@ -11,6 +11,10 @@
   font-family: "Font Awesome 5 Free";
   content: "\f02f";  
 }
+.encyclopedia-models-forum:before {
+   font-family: "Font Awesome 5 Free";
+   content: "\f086";  
+}
 #encyclopedia-models-wrapper {
     margin-left: 156px;
     text-align: center;

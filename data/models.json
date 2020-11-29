@@ -6,7 +6,8 @@
             "images": ["data/models/img/belit_1.jpg", "data/models/img/belit_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox", "stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/486-peinture-montrez-moi-vos-belit/"
         },
     
         {
@@ -15,7 +16,8 @@
             "images": ["data/models/img/conan_1.jpg", "data/models/img/conan_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox", "stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/321-peinture-montrez-moi-vos-conan-par-crom/"
         },
     
         {
@@ -24,7 +26,8 @@
             "images": ["data/models/img/hadrathus_1.jpg", "data/models/img/hadrathus_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox", "stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/323-peinture-montrez-moi-vos-hadratus/"
         },
     
         {
@@ -33,7 +36,8 @@
             "images": ["data/models/img/shevatas_1.jpg", "data/models/img/shevatas_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox", "stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/322-peinture-montrez-moi-vos-shevatas/"
         },
     
         {
@@ -42,7 +46,8 @@
             "images": ["data/models/img/amra-the-lion_1.jpg", "data/models/img/amra-the-lion_2.jpg"],
             "paint": { "name": "gabzeta", "link": "https://the-overlord.com/index.php?/profile/232-gabzeta/"},
             "type": "human",
-            "origins": ["king"]
+            "origins": ["king"],
+            "forum": "https://the-overlord.com/index.php?/topic/321-peinture-montrez-moi-vos-conan-par-crom/"
         },
     
         {
@@ -51,7 +56,8 @@
             "images": ["data/models/img/ngora_1.jpg", "data/models/img/ngora_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
-            "origins": ["king"]
+            "origins": ["king"],
+            "forum": "https://the-overlord.com/index.php?/topic/1887-peinture-montrez-moi-vos-ngora/"
         },
     
         {
@@ -60,7 +66,8 @@
             "images": ["data/models/img/valeria_1.jpg", "data/models/img/valeria_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
-            "origins": ["king"]
+            "origins": ["king"],
+            "forum": "https://the-overlord.com/index.php?/topic/682-peinture-montrez-moi-vos-val%C3%A9ria/"
         },
     
         {
@@ -69,7 +76,8 @@
             "images": ["data/models/img/zelata_1.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
-            "origins": ["king"]
+            "origins": ["king"],
+            "forum": "https://the-overlord.com/index.php?/topic/2231-peinture-montrez-moi-vos-zelata/"
         },
     
         {
@@ -78,7 +86,8 @@
             "images": ["data/models/img/amboola_1.jpg", "data/models/img/amboola_2.jpg", "data/models/img/amboola_3.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/3714-peinture-montrez-moi-vos-amboola/"
         },
     
         {
@@ -87,7 +96,8 @@
             "images": ["data/models/img/balthus_1.jpg", "data/models/img/balthus_2.jpg"],
             "paint": { "name": "gabzeta", "link": "https://the-overlord.com/index.php?/profile/232-gabzeta/"},
             "type": "human",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/3413-peinture-montrez-moi-vos-balthus-et-slasher/"
         },
     
         {
@@ -96,7 +106,8 @@
             "images": ["data/models/img/conan-general_1.jpg", "data/models/img/conan-general_2.jpg"],
             "paint": { "name": "Codicier Ignatius", "link": "https://www.blogger.com/profile/15313921985581945781"},
             "type": "human",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/321-peinture-montrez-moi-vos-conan-par-crom/"
         },
     
         {
@@ -105,7 +116,8 @@
             "images": ["data/models/img/conan-mercenary_1.jpg", "data/models/img/conan-mercenary_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/321-peinture-montrez-moi-vos-conan-par-crom/"
         },
     
         {
@@ -114,7 +126,8 @@
             "images": ["data/models/img/conan-wanderer_1.jpg", "data/models/img/conan-wanderer_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/321-peinture-montrez-moi-vos-conan-par-crom/"
         },
     
         {
@@ -123,7 +136,8 @@
             "images": ["data/models/img/conan-warlord_1.jpg", "data/models/img/conan-warlord_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/321-peinture-montrez-moi-vos-conan-par-crom/"
         },
     
         {
@@ -132,7 +146,8 @@
             "images": ["data/models/img/kerim-shah_1.jpg"],
             "paint": null,
             "type": "human",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/2806-peinture-montrez-moi-votre-kerim-shah/"
         },
     
         {
@@ -141,7 +156,8 @@
             "images": ["data/models/img/olgerd-vladislav_1.jpg", "data/models/img/olgerd-vladislav_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/3137-peinture-montrez-moi-votre-olgerd-vladislav/"
         },
     
         {
@@ -150,7 +166,8 @@
             "images": ["data/models/img/pallantides_1.jpg", "data/models/img/pallantides_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/3336-peinture-montrez-moi-vos-pallantides/"
         },
     
         {
@@ -159,7 +176,8 @@
             "images": ["data/models/img/pelias_1.jpg"],
             "paint": { "name": "gabzeta", "link": "https://the-overlord.com/index.php?/profile/232-gabzeta/"},
             "type": "human",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/2547-peinture-montrez-moi-vos-pelias/"
         },
     
         {
@@ -168,7 +186,8 @@
             "images": ["data/models/img/savage-belit_1.jpg", "data/models/img/savage-belit_2.jpg"],
             "paint": { "name": "gabzeta", "link": "https://the-overlord.com/index.php?/profile/232-gabzeta/"},
             "type": "human",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/486-peinture-montrez-moi-vos-belit/"
         },
     
         {
@@ -177,7 +196,8 @@
             "images": ["data/models/img/taurus_1.jpg", "data/models/img/taurus_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/2390-peinture-montrez-moi-vos-taurus/"
         },
     
         {
@@ -186,7 +206,8 @@
             "images": ["data/models/img/constantius_1.jpg", "data/models/img/constantius_2.jpg"],
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "human",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/3720-peinture-montrez-moi-vos-constantius/"
         },
     
         {
@@ -195,7 +216,8 @@
             "images": ["data/models/img/skuthus_1.jpg", "data/models/img/skuthus_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox", "stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/1001-peinture-montrez-moi-vos-skulthus/"
         },
     
         {
@@ -204,7 +226,8 @@
             "images": ["data/models/img/thak_1.jpg", "data/models/img/thak_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "monster",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox", "stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/2950-peinture-montrez-moi-votre-thak/"
         },
     
         {
@@ -213,7 +236,8 @@
             "images": ["data/models/img/zaporavo_1.jpg", "data/models/img/zaporavo_2.jpg"],
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
             "type": "human",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox", "stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/941-zaporavo-vos-versions/"
         },
     
         {
@@ -222,7 +246,8 @@
             "images": ["data/models/img/zogar-sag_1.jpg", "data/models/img/zogar-sag_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox", "stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/487-peinture-montrez-moi-vos-zogar-sag/"
         },
     
         {
@@ -231,7 +256,8 @@
             "images": ["data/models/img/vanir-valkyrie_1.jpg", "data/models/img/vanir-valkyrie_2.jpg"],
             "paint": { "name": "Not Quite Dead", "link": "https://the-overlord.com/index.php?/profile/891-not-quite-dead/"},
             "type": "human",
-            "origins": ["valvan"]
+            "origins": ["valvan"],
+            "forum": "https://the-overlord.com/index.php?/topic/2901-peinture-montrez-moi-votre-sonj-votre-valkyrie-vanir/"
         },
     
         {
@@ -240,7 +266,8 @@
             "images": ["data/models/img/yogah-of-yag_1.jpg"],
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
             "type": "monster",
-            "origins": ["yoy"]
+            "origins": ["yoy"],
+            "forum": "https://the-overlord.com/index.php?/topic/559-peinture-yogah-de-yag/"
         },
     
         {
@@ -249,7 +276,8 @@
             "images": ["data/models/img/belit-the-princess_1.jpg"],
             "paint": null,
             "type": "human",
-            "origins": ["xcbox"]
+            "origins": ["xcbox"],
+            "forum": "https://the-overlord.com/index.php?/topic/486-peinture-montrez-moi-vos-belit/"
         },
     
         {
@@ -258,7 +286,8 @@
             "images": ["data/models/img/king-conan_1.jpg"],
             "paint": null,
             "type": "human",
-            "origins": ["xcbox"]
+            "origins": ["xcbox"],
+            "forum": "https://the-overlord.com/index.php?/topic/321-peinture-montrez-moi-vos-conan-par-crom/"
         },
     
         {
@@ -267,7 +296,8 @@
             "images": ["data/models/img/belit-queen-of-the-black-coast_1.jpg", "data/models/img/belit-queen-of-the-black-coast_2.jpg", "data/models/img/belit-queen-of-the-black-coast_3.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
-            "origins": ["bbox"]
+            "origins": ["bbox"],
+            "forum": "https://the-overlord.com/index.php?/topic/486-peinture-montrez-moi-vos-belit/"
         },
     
         {
@@ -276,7 +306,8 @@
             "images": ["data/models/img/conan-the-thief_1.jpg", "data/models/img/conan-the-thief_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
-            "origins": ["bbox"]
+            "origins": ["bbox"],
+            "forum": "https://the-overlord.com/index.php?/topic/321-peinture-montrez-moi-vos-conan-par-crom/"
         },
     
         {
@@ -285,7 +316,8 @@
             "images": ["data/models/img/taramis-salome_1.jpg"],
             "paint": null,
             "type": "human",
-            "origins": ["ppbox"]
+            "origins": ["ppbox"],
+            "forum": "https://the-overlord.com/index.php?/topic/3715-peinture-montrez-moi-vos-taramis-salome/"
         },
     
         {
@@ -294,7 +326,8 @@
             "images": ["data/models/img/valeria-warrior_1.jpg"],
             "paint": null,
             "type": "human",
-            "origins": ["ppbox"]
+            "origins": ["ppbox"],
+            "forum": "https://the-overlord.com/index.php?/topic/682-peinture-montrez-moi-vos-val%C3%A9ria/"
         },
     
         {
@@ -303,7 +336,8 @@
             "images": ["data/models/img/niord_1.jpg"],
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
             "type": "human",
-            "origins": ["nordheim"]
+            "origins": ["nordheim"],
+            "forum": "https://the-overlord.com/index.php?/topic/776-extension-nordheim/"
         },
     
         {
@@ -312,7 +346,8 @@
             "images": ["data/models/img/shentu_1.jpg", "data/models/img/shentu_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
-            "origins": ["khitai"]
+            "origins": ["khitai"],
+            "forum": "https://the-overlord.com/index.php?/topic/774-extension-khitai/"
         },
     
         {
@@ -321,7 +356,8 @@
             "images": ["data/models/img/ikhmet_1.jpg"],
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
             "type": "human",
-            "origins": ["stygia"]
+            "origins": ["stygia"],
+            "forum": "https://the-overlord.com/index.php?/topic/775-stygie/"
         },
         
         {
@@ -330,7 +366,8 @@
             "images": ["data/models/img/captain_1.jpg", "data/models/img/captain_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox", "stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/2796-peinture-montrez-moi-votre-capitaine/"
         },
     
         {
@@ -339,7 +376,8 @@
             "images": ["data/models/img/dark-demon_1.jpg", "data/models/img/dark-demon_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "monster",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox", "stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/1000-peinture-montrez-moi-vos-d%C3%A9mons/"
         },
     
         {
@@ -348,7 +386,8 @@
             "images": ["data/models/img/giant-snake_1.jpg", "data/models/img/giant-snake_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "monster",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox", "stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/609-peinture-montrez-moi-vos-serpents/"
         },
     
         {
@@ -357,7 +396,8 @@
             "images": ["data/models/img/khosatral-khel_1.jpg", "data/models/img/khosatral-khel_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox", "stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/308-peindre-khosatral-khel/"
         },
     
         {
@@ -366,7 +406,8 @@
             "images": ["data/models/img/outer-dark-demon_1.jpg", "data/models/img/outer-dark-demon_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "monster",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox", "stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/1000-peinture-montrez-moi-vos-d%C3%A9mons/"
         },
     
         {
@@ -376,6 +417,7 @@
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
             "origins": ["corebox", "stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/1895-peinture-montrez-moi-vos-gardes-de-b%C3%AAlit/",
             "count": 5
         },
     
@@ -385,7 +427,8 @@
             "images": ["data/models/img/princess_1.jpg", "data/models/img/princess_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox", "stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/608-peinture-montrez-moi-vos-princesses/"
         },
     
         {
@@ -395,6 +438,7 @@
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
             "origins": ["corebox", "stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/2052-peinture-montrez-moi-vos-archers-bossoniens/",
             "count": 5
         },
     
@@ -405,6 +449,7 @@
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
             "origins": ["corebox", "stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/2389-peinture-montrez-moi-vos-bossoniens/",
             "count": 15
         },
     
@@ -415,6 +460,7 @@
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
             "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/2389-peinture-montrez-moi-vos-bossoniens/",
             "count": 5
         },
     
@@ -425,6 +471,7 @@
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "animal",
             "origins": ["corebox", "stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/224-peinture-montrez-moi-vos-hy%C3%A8nes/",
             "count": 5
         },
     
@@ -435,6 +482,7 @@
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
             "type": "human",
             "origins": ["corebox", "stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/107-peinture-montrez-moi-vos-pictes/",
             "count": 15
         },
     
@@ -445,6 +493,7 @@
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
             "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/107-peinture-montrez-moi-vos-pictes/",
             "count": 5
         },
     
@@ -455,6 +504,7 @@
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
             "origins": ["corebox", "stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/1547-peinture-montrez-moi-vos-pirates/",
             "count": 15
         },
         
@@ -465,6 +515,7 @@
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "human",
             "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/1547-peinture-montrez-moi-vos-pirates/",
             "count": 5
         },
     
@@ -474,7 +525,8 @@
             "images": ["data/models/img/thog_1.jpg", "data/models/img/thog_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "monster",
-            "origins": ["king"]
+            "origins": ["king"],
+            "forum": "https://the-overlord.com/index.php?/topic/1232-peinture-montrez-nous-vos-thog/"
         },
     
         {
@@ -483,7 +535,8 @@
             "images": ["data/models/img/conans-lion_1.jpg"],
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "animal",
-            "origins": ["king"]
+            "origins": ["king"],
+            "forum": "https://the-overlord.com/index.php?/topic/936-une-id%C3%A9e-pour-le-lion/"
         },
     
         {
@@ -493,6 +546,7 @@
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "monster",
             "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/2223-peinture-montrez-moi-vos-momies/",
             "count": 5
         },
     
@@ -503,6 +557,7 @@
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "monster",
             "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/2223-peinture-montrez-moi-vos-momies/",
             "count": 5
         },
     
@@ -513,6 +568,7 @@
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "monster",
             "origins": ["king"],
+            "forum": "https://the-overlord.com/index.php?/topic/2223-peinture-montrez-moi-vos-momies/",
             "count": 10
         },
     
@@ -523,6 +579,7 @@
             "paint": { "name": "gabzeta", "link": "https://the-overlord.com/index.php?/profile/232-gabzeta/"},
             "type": "monster",
             "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/3070-peinture-montrez-moi-vos-squelettes/",
             "count": 5
         },
     
@@ -533,6 +590,7 @@
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "monster",
             "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/3070-peinture-montrez-moi-vos-squelettes/",
             "count": 5
         },
     
@@ -543,6 +601,7 @@
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "monster",
             "origins": ["king"],
+            "forum": "https://the-overlord.com/index.php?/topic/3070-peinture-montrez-moi-vos-squelettes/",
             "count": 15
         },
     
@@ -552,7 +611,8 @@
             "images": ["data/models/img/ageera_1.jpg", "data/models/img/ageera_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/2212-peinture-montrez-moi-vos-chasseurs-de-sorci%C3%A8res/"
         },
     
         {
@@ -561,7 +621,8 @@
             "images": ["data/models/img/akivasha_1.jpg", "data/models/img/akivasha_2.jpg"],
             "paint": { "name": "gabzeta", "link": "https://the-overlord.com/index.php?/profile/232-gabzeta/"},
             "type": "human",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/2549-peinture-montrez-moi-vos-akivasha/"
         },
     
         {
@@ -570,7 +631,8 @@
             "images": ["data/models/img/gitara_1.jpg", "data/models/img/gitara_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/3722-peinture-montrez-moi-vos-gitara/"
         },
     
         {
@@ -579,7 +641,8 @@
             "images": ["data/models/img/hyperborean-primitive_1.jpg", "data/models/img/hyperborean-primitive_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "monster",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/2255-peinture-montrez-moi-vos-primitifs-hyperbor%C3%A9ens/"
         },
     
         {
@@ -588,7 +651,8 @@
             "images": ["data/models/img/khemsa_1.jpg", "data/models/img/khemsa_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/3721-peinture-montrez-moi-vos-khemsa/"
         },
     
         {
@@ -597,7 +661,8 @@
             "images": ["data/models/img/natohk_1.jpg", "data/models/img/natohk_2.jpg"],
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "human",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/3723-peinture-montrez-moi-vos-natohk/"
         },
     
         {
@@ -606,7 +671,8 @@
             "images": ["data/models/img/warlock_1.jpg", "data/models/img/warlock_2.jpg"],
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "human",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/2391-peinture-montrez-moi-vos-sorciers/"
         },
     
    
@@ -616,7 +682,8 @@
             "images": ["data/models/img/camel_1.jpg", "data/models/img/camel_2.jpg"],
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
             "type": "animal",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/3519-peinture-montrez-moi-votre-chameau/"
         },
     
         {
@@ -625,7 +692,8 @@
             "images": ["data/models/img/kothian-archer_1.jpg", "data/models/img/kothian-archer_2.jpg"],
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
             "type": "human",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/3333-peinture-montrez-moi-votre-archer-kothien/"
         },
     
         {
@@ -634,7 +702,8 @@
             "images": ["data/models/img/slasher_1.jpg", "data/models/img/slasher_2.jpg"],
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "animal",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/3413-peinture-montrez-moi-vos-balthus-et-slasher/"
         },
     
         {
@@ -643,7 +712,8 @@
             "images": ["data/models/img/bone-golem_1.jpg"],
             "paint": { "name": "gabzeta", "link": "https://the-overlord.com/index.php?/profile/232-gabzeta/"},
             "type": "monster",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/2339-peinture-montrez-moi-vos-golem-dos/"
         },
     
         {
@@ -652,7 +722,8 @@
             "images": ["data/models/img/forest-demon_1.jpg", "data/models/img/forest-demon_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "monster",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/1000-peinture-montrez-moi-vos-d%C3%A9mons/"
         },
     
         {
@@ -661,7 +732,8 @@
             "images": ["data/models/img/giant-spider_1.jpg", "data/models/img/giant-spider_2.jpg"],
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "monster",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/2080-peinture-montrez-moi-vos-glups-vos-araign%C3%A9es/"
         },
     
         {
@@ -670,7 +742,8 @@
             "images": ["data/models/img/gray-man-ape_1.jpg", "data/models/img/gray-man-ape_2.jpg"],
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "monster",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/2238-peinture-montrez-moi-vos-sokoben/"
         },
     
         {
@@ -679,7 +752,8 @@
             "images": ["data/models/img/swamp-demon_1.jpg", "data/models/img/swamp-demon_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "monster",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/1000-peinture-montrez-moi-vos-d%C3%A9mons/"
         },
     
         {
@@ -688,7 +762,8 @@
             "images": ["data/models/img/thaug_1.jpg", "data/models/img/thaug_2.jpg"],
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
             "type": "monster",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/2546-peinture-montrez-moi-vos-thaug/"
         },
     
         {
@@ -698,6 +773,7 @@
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
             "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/107-peinture-montrez-moi-vos-pictes/",
             "count": 5
         },
     
@@ -708,6 +784,7 @@
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
             "type": "monster",
             "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/2546-peinture-montrez-moi-vos-thaug/",
             "count": 5
         },
     
@@ -718,6 +795,7 @@
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
             "type": "monster",
             "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/2546-peinture-montrez-moi-vos-thaug/",
             "count": 5
         },
     
@@ -728,6 +806,7 @@
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
             "type": "monster",
             "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/2546-peinture-montrez-moi-vos-thaug/",
             "count": 3
         },
     
@@ -737,7 +816,8 @@
             "images": ["data/models/img/baal-pteor_1.jpg", "data/models/img/baal-pteor_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
-            "origins": ["baalpteor"]
+            "origins": ["baalpteor"],
+            "forum": "https://the-overlord.com/index.php?/topic/1274-peinture-montrez-moi-vos-baal-pteor/"
         },
     
         {
@@ -747,6 +827,7 @@
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
             "origins": ["blackdragons"],
+            "forum": "https://the-overlord.com/index.php?/topic/3727-peinture-montrez-moi-vos-dragons-noirs/",
             "count": 5
         },
     
@@ -757,6 +838,7 @@
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
             "origins": ["blackones"],
+            "forum": "https://the-overlord.com/index.php?/topic/3725-peinture-montrez-moi-vos-hommes-noirs/",
             "count": 10
         },
     
@@ -767,6 +849,7 @@
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
             "origins": ["crossbowmen"],
+            "forum": "https://the-overlord.com/index.php?/topic/3724-peinture-montrez-moi-vos-arbal%C3%A9triers/",
             "count": 10
         },
     
@@ -776,7 +859,8 @@
             "images": ["data/models/img/demon-of-the-earth_1.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "monster",
-            "origins": ["demonearth"]
+            "origins": ["demonearth"],
+            "forum": "https://the-overlord.com/index.php?/topic/1000-peinture-montrez-moi-vos-d%C3%A9mons/"
         },
     
         {
@@ -785,7 +869,8 @@
             "images": ["data/models/img/dragon_1.jpg", "data/models/img/dragon_2.jpg"],
             "paint": { "name": "Dahkon", "link": "https://the-overlord.com/index.php?/profile/44-dahkon/"},
             "type": "monster",
-            "origins": ["dragon"]
+            "origins": ["dragon"],
+            "forum": "https://the-overlord.com/index.php?/topic/611-peinture-montrez-moi-vos-dragons/"
         },
     
         {
@@ -795,6 +880,7 @@
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "animal",
             "origins": ["giantwolves"],
+            "forum": "https://the-overlord.com/index.php?/topic/1863-peinture-montrez-moi-vos-loups-g%C3%A9ants/",
             "count": 10
         },
     
@@ -804,7 +890,8 @@
             "images": ["data/models/img/giant-wolves_1.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "animal",
-            "origins": ["king"]
+            "origins": ["king"],
+            "forum": "https://the-overlord.com/index.php?/topic/1863-peinture-montrez-moi-vos-loups-g%C3%A9ants/"
         },
     
         {
@@ -813,7 +900,8 @@
             "images": ["data/models/img/sabertooth-tiger_1.jpg"],
             "paint": { "name": "Not Quite Dead", "link": "https://the-overlord.com/index.php?/profile/891-not-quite-dead/"},
             "type": "monster",
-            "origins": ["sabretoothtiger"]
+            "origins": ["sabretoothtiger"],
+            "forum": "https://the-overlord.com/index.php?/topic/848-peindre-le-tigre-%C3%A0-dents-de-sabre/"
         },
     
         {
@@ -822,7 +910,8 @@
             "images": ["data/models/img/afari_1.jpg", "data/models/img/afari_2.jpg"],
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
             "type": "human",
-            "origins": ["kushwitchhunters"]
+            "origins": ["kushwitchhunters"],
+            "forum": "https://the-overlord.com/index.php?/topic/2212-peinture-montrez-moi-vos-chasseurs-de-sorci%C3%A8res/"
         },
     
         {
@@ -831,7 +920,8 @@
             "images": ["data/models/img/ghayoor_1.jpg", "data/models/img/ghayoor_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
-            "origins": ["kushwitchhunters"]
+            "origins": ["kushwitchhunters"],
+            "forum": "https://the-overlord.com/index.php?/topic/2212-peinture-montrez-moi-vos-chasseurs-de-sorci%C3%A8res/"
         },
     
         {
@@ -840,7 +930,8 @@
             "images": ["data/models/img/shafiah_1.jpg", "data/models/img/shafiah_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
-            "origins": ["kushwitchhunters"]
+            "origins": ["kushwitchhunters"],
+            "forum": "https://the-overlord.com/index.php?/topic/2212-peinture-montrez-moi-vos-chasseurs-de-sorci%C3%A8res/"
         },
     
         {
@@ -849,7 +940,8 @@
             "images": ["data/models/img/shubba_1.jpg","data/models/img/shubba_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
-            "origins": ["kushwitchhunters"]
+            "origins": ["kushwitchhunters"],
+            "forum": "https://the-overlord.com/index.php?/topic/2212-peinture-montrez-moi-vos-chasseurs-de-sorci%C3%A8res/"
         },
     
         {
@@ -858,7 +950,8 @@
             "images": ["data/models/img/atali_1.jpg"],
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
             "type": "human",
-            "origins": ["nordheim"]
+            "origins": ["nordheim"],
+            "forum": "https://the-overlord.com/index.php?/topic/776-extension-nordheim/"
         },
     
         {
@@ -867,7 +960,8 @@
             "images": ["data/models/img/nijgor_1.jpg"],
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
             "type": "monster",
-            "origins": ["nordheim"]
+            "origins": ["nordheim"],
+            "forum": "https://the-overlord.com/index.php?/topic/776-extension-nordheim/"
         },
     
         {
@@ -876,7 +970,8 @@
             "images": ["data/models/img/seski_1.jpg"],
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
             "type": "monster",
-            "origins": ["nordheim"]
+            "origins": ["nordheim"],
+            "forum": "https://the-overlord.com/index.php?/topic/776-extension-nordheim/"
         },
     
         {
@@ -886,6 +981,7 @@
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
             "origins": ["nordheim"],
+            "forum": "https://the-overlord.com/index.php?/topic/776-extension-nordheim/",
             "count": 10
         },
     
@@ -896,6 +992,7 @@
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
             "type": "animal",
             "origins": ["nordheim"],
+            "forum": "https://the-overlord.com/index.php?/topic/776-extension-nordheim/",
             "count": 5
         },
     
@@ -906,6 +1003,7 @@
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
             "origins": ["nordheim"],
+            "forum": "https://the-overlord.com/index.php?/topic/776-extension-nordheim/",
             "count": 5
         },
     
@@ -915,7 +1013,8 @@
             "images": ["data/models/img/shuang-mian_1.jpg", "data/models/img/shuang-mian_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
-            "origins": ["khitai"]
+            "origins": ["khitai"],
+            "forum": "https://the-overlord.com/index.php?/topic/774-extension-khitai/"
         },
     
         {
@@ -925,6 +1024,7 @@
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
             "type": "human",
             "origins": ["khitai"],
+            "forum": "https://the-overlord.com/index.php?/topic/774-extension-khitai/",
             "count": 5
         },
     
@@ -935,6 +1035,7 @@
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
             "type": "human",
             "origins": ["khitai"],
+            "forum": "https://the-overlord.com/index.php?/topic/774-extension-khitai/",
             "count": 5
         },
     
@@ -945,6 +1046,7 @@
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
             "type": "human",
             "origins": ["khitai"],
+            "forum": "https://the-overlord.com/index.php?/topic/774-extension-khitai/",
             "count": 5
         },
     
@@ -955,6 +1057,7 @@
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
             "type": "animal",
             "origins": ["khitai"],
+            "forum": "https://the-overlord.com/index.php?/topic/774-extension-khitai/",
             "count": 5
         },
     
@@ -964,7 +1067,8 @@
             "images": ["data/models/img/thot-amon_1.jpg", "data/models/img/thot-amon_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
-            "origins": ["stygia"]
+            "origins": ["stygia"],
+            "forum": "https://the-overlord.com/index.php?/topic/775-stygie/"
         },
     
         {
@@ -973,7 +1077,8 @@
             "images": ["data/models/img/scorpion-broodmother_1.jpg"],
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
             "type": "monster",
-            "origins": ["stygia"]
+            "origins": ["stygia"],
+            "forum": "https://the-overlord.com/index.php?/topic/775-stygie/"
         },
     
         {
@@ -983,6 +1088,7 @@
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "monster",
             "origins": ["stygia"],
+            "forum": "https://the-overlord.com/index.php?/topic/775-stygie/",
             "count": 10
         },
     
@@ -992,7 +1098,8 @@
             "images": ["data/models/img/giant-scorpion_1.jpg", "data/models/img/giant-scorpion_2.jpg"],
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "monster",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/775-stygie/"
         },
     
         {
@@ -1002,6 +1109,7 @@
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
             "type": "human",
             "origins": ["stygia"],
+            "forum": "https://the-overlord.com/index.php?/topic/775-stygie/",
             "count": 5
         },
     
@@ -1012,6 +1120,7 @@
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
             "origins": ["stygia"],
+            "forum": "https://the-overlord.com/index.php?/topic/775-stygie/",
             "count": 5
         },
                         
@@ -1021,7 +1130,8 @@
             "images": ["data/models/img/spartan_1.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/4228-peinture-spartiates/"
         },
         
         {
@@ -1031,6 +1141,7 @@
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
             "type": "scenery",
             "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/",
             "count": 5
         },
 
@@ -1041,6 +1152,7 @@
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
             "type": "scenery",
             "origins": ["adventurepack"],
+            "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/",
             "count": 5
         },
 
@@ -1051,6 +1163,7 @@
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
             "type": "scenery",
             "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/",
             "count": 5
         },
         
@@ -1061,6 +1174,7 @@
             "paint": { "name": "Cochon", "link": "https://the-overlord.com/index.php?/profile/5240-cochon/"},
             "type": "scenery",
             "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/",
             "count": 3
         },
         {
@@ -1070,6 +1184,7 @@
             "paint": { "name": "Cochon", "link": "https://the-overlord.com/index.php?/profile/5240-cochon/"},
             "type": "scenery",
             "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/",
             "count": 5
         },
         {
@@ -1079,6 +1194,7 @@
             "paint": { "name": "Cochon", "link": "https://the-overlord.com/index.php?/profile/5240-cochon/"},
             "type": "scenery",
             "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/",
             "count": 5
         },
         
@@ -1089,6 +1205,7 @@
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
             "type": "scenery",
             "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/",
             "count": 2
         },
         {
@@ -1098,6 +1215,7 @@
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
             "type": "scenery",
             "origins": ["adventurepack"],
+            "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/",
             "count": 2
         },
         {
@@ -1106,7 +1224,8 @@
             "images": ["data/models/img/sarcophagus_1.jpg"],
             "paint": { "name": "Cochon", "link": "https://the-overlord.com/index.php?/profile/5240-cochon/"},
             "type": "scenery",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/"
         },
         {
             "id": "sarcophagus",
@@ -1114,7 +1233,8 @@
             "images": ["data/models/img/sarcophagus_1.jpg"],
             "paint": { "name": "Cochon", "link": "https://the-overlord.com/index.php?/profile/5240-cochon/"},
             "type": "scenery",
-            "origins": ["adventurepack"]
+            "origins": ["adventurepack"],
+            "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/"
         },
         {
             "id": "bookcase",
@@ -1122,7 +1242,8 @@
             "images": ["data/models/img/bookcase_1.jpg"],
             "paint": { "name": "Cochon", "link": "https://the-overlord.com/index.php?/profile/5240-cochon/"},
             "type": "scenery",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/"
         },
         {
             "id": "torch-stand",
@@ -1131,6 +1252,7 @@
             "paint": { "name": "Cochon", "link": "https://the-overlord.com/index.php?/profile/5240-cochon/"},
             "type": "scenery",
             "origins": ["stretchgoal", "king"],
+            "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/",
             "count": 5
         },
         
@@ -1141,6 +1263,7 @@
             "paint": null,
             "type": "scenery",
             "origins": ["adventurepack"],
+            "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/",
             "count": 5
         },
         {
@@ -1149,7 +1272,8 @@
             "images": ["data/models/img/animal-skin_1.jpg", "data/models/img/animal-skin_2.jpg"],
             "paint": null,
             "type": "scenery",
-            "origins": ["adventurepack"]
+            "origins": ["adventurepack"],
+            "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/"
         },
         
         {
@@ -1159,6 +1283,7 @@
             "paint": null,
             "type": "scenery",
             "origins": ["doorpack"],
+            "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/",
             "count": 10
         }
     ]

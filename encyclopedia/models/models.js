@@ -9,7 +9,7 @@ var EncyclopediaModels = {
             'paintedBy': "Peint par: ",
             'zoom': "Zoom",
             'print': "Imprimer",
-            'forum': "Forum",
+            'forum': "Besoin d'inspiration pour peindre ? Regardez sur le forum !",
             'heroes': "Utilisée par les héros :",
             'tiles': "Utilisée par les tuiles :",
             'tokens': "Remplace le jeton :"
@@ -23,7 +23,7 @@ var EncyclopediaModels = {
             'paintedBy': "Painted par: ",
             'zoom': "Zoom",
             'print': "Print",
-            'forum': "Forum",
+            'forum': "Need inspiration to paint? Look at the forum!",
             'heroes': "Used by the heroes:",
             'tiles': "Used by the tiles:",
             'tokens': "Replace the token:"
@@ -546,6 +546,24 @@ var EncyclopediaModels = {
         var tokens = EncyclopediaModels._findTokensByModel(model).map(token => EncyclopediaTokens._linkToToken(token.id));
         if (tokens.length > 0) tokens = "<div class='tokens'>" + EncyclopediaModels._i18n[Language].tokens + " " + tokens[0] + "</div>";
 
+        var dialogActions = [{
+            label: EncyclopediaModels._i18n[Language].zoom,
+            icon: "encyclopedia-models-zoom",
+            fn: "EncyclopediaModels._zoom();"
+        }, {
+            label: EncyclopediaModels._i18n[Language].print,
+            icon: "encyclopedia-models-print",
+            fn: "window.print()"
+        }];
+
+        if (model.forum) {
+            dialogActions.push({
+                label: EncyclopediaModels._i18n[Language].forum, 
+                icon: "encyclopedia-models-forum",
+                fn: "window.open('" + model.forum + "');"
+            });
+        }
+        
         Nav.dialog(EncyclopediaModels._findModelNames(model) || "",
             "<div class='modeldetails'>"
                 + "<div class='from'>" + EncyclopediaModels._i18n[Language].from + " "
@@ -558,15 +576,7 @@ var EncyclopediaModels = {
                 + photos
             + "</div>",
             null,
-            [{
-                label: EncyclopediaModels._i18n[Language].zoom,
-                icon: "encyclopedia-models-zoom",
-                fn: "EncyclopediaModels._zoom();"
-            }, {
-                label: EncyclopediaModels._i18n[Language].print,
-                icon: "encyclopedia-models-print",
-                fn: "window.print()"
-            }]
+            dialogActions 
         );
     },
 
