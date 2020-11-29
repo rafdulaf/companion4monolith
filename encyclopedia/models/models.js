@@ -12,7 +12,9 @@ var EncyclopediaModels = {
             'forum': "Besoin d'inspiration pour peindre ? Regardez sur le forum !",
             'heroes': "Utilisée par les héros :",
             'tiles': "Utilisée par les tuiles :",
-            'tokens': "Remplace le jeton :"
+            'tokens': "Remplace le jeton :",
+            'copyright': "Les figurines sont celles du jeu Conan de Monolith.<br/>Les peintures sont l'oeuvre de leurs auteurs respectifs (voir le détail de chaque image).<br/>Merci à <a href='https://the-overlord.com/index.php?/profile/56-teil/'>@teil</a> pour avoir réuni la liste des sujets du forum qui parle de chaque figurine."
+            
         },
         'en': {
             'tab': "Minia<wbr/>tures",
@@ -26,7 +28,8 @@ var EncyclopediaModels = {
             'forum': "Need inspiration to paint? Look at the forum!",
             'heroes': "Used by the heroes:",
             'tiles': "Used by the tiles:",
-            'tokens': "Replace the token:"
+            'tokens': "Replace the token:",
+            'copyright': "The miniatures are those of the game Conan from Monolith.<br/>The paintings are the work of their respective authors (see the detail of each image).<br/>Thanks to <a href = 'https: // the- overlord.com/index.php?/profile/56-teil/'>@teil </a> for putting together the list of forum topics that talk about each miniature."
         },
         'it': {
             'tab': "Minia<wbr/>ture",
@@ -40,7 +43,8 @@ var EncyclopediaModels = {
             'forum': "TODO_TRANSLATE",
             'heroes': "Usata dagli Eroi :",
             'tiles': "Usata nelle tessere :",
-            'tokens': "TODO_TRANSLATE"
+            'tokens': "TODO_TRANSLATE",
+            'copyright': "TODO_TRANSLATE"
         }
     },
 
@@ -282,6 +286,8 @@ var EncyclopediaModels = {
         $("#encyclopedia-models").append(Encyclopedia.displaySearchEngine(EncyclopediaModels._facets, "EncyclopediaModels.updateDisplayModels()", "ems"));
         $("#encyclopedia-models").append("<div id='encyclopedia-models-wrapper'></div>");
         EncyclopediaModels.displayModels();
+        
+        ConanAbout.addCopyright(EncyclopediaModels._i18n[Language].tab, EncyclopediaModels._i18n[Language].copyright);
     },
 
     displayModels: function()
