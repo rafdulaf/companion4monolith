@@ -40,11 +40,11 @@ var EncyclopediaModels = {
             'paintedBy': "Dipinta da: ",
             'zoom': "Zoom",
             'print': "Stampa",
-            'forum': "TODO_TRANSLATE",
+            'forum': "Hai bisogno di ispirazione per la pittura ? Consulta il forum !",
             'heroes': "Usata dagli Eroi :",
             'tiles': "Usata nelle tessere :",
             'tokens': "Sostituisci il segnalino :",
-            'copyright': "TODO_TRANSLATE"
+            'copyright': "Le miniature sono quelle del gioco Conan della Monolith <br/> Il lavoro di pittura è opera dei rispettivi autori (vedi il dettaglio su ogni immagine).<br/>Grazie a <a href = 'https: // the- overlord.com/index.php?/profile/56-teil/'>@teil </a> per aver raccolto la lista dei topic inerenti a ciascuna miniatura."
         }
     },
 
