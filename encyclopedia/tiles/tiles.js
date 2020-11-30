@@ -589,7 +589,7 @@ var EncyclopediaTiles = {
             dices: { 0: tile.dices[0], 1: tile.dices[1], 2: tile.dices[2], 3: tile.dices[3] },
             skills: { 0: tile.skills[0], 1: tile.skills[1], 2: tile.skills[2], 3: tile.skills[3] },
             reinforcement: tile.reinforcement || "",
-            image: tile.imageHD && hd ? tile.imageHD + "?version=" + Version : (tile.image ? tile.image + "?version=" + Version : null),
+            image: tile.imageHD && hd ? (tile.imageHD + "?version=" + Version) : (tile.image ? (tile.image + "?version=" + Version) : null),
             imagelocation: {x: tile.image_location.x, y: tile.image_location.y},
             imagezoom: tile.image_zoom,
             imagerotation: "0",
