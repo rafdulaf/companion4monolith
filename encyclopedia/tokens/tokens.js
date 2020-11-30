@@ -424,9 +424,6 @@ var EncyclopediaTokens = {
             s += "</a>";
         }
         return s;
-
-
-        return "<a href='javascript:void(0)' onclick='EncyclopediaTokens.openToken(\"" + id + "\")'>" + token.name[Language] + "</a>";
     }
 
 }
