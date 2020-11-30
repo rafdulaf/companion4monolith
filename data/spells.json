@@ -402,6 +402,8 @@
 
             "image": "data/spells/img/mitras_halo.png",
             "origins": ["corebox", "stretchgoal", "king"],
+            
+            "tokens": ["mitra-halo"],
 
             "textStyle": {
                 "fr": { "textSize": 136, "textInter": 66 },
@@ -567,6 +569,8 @@
             "image": "data/spells/img/sets_halo.png",
             "origins": ["corebox", "stretchgoal", "king"],
 
+            "tokens": ["set-halo"],
+
             "textStyle": {
                 "fr": { "textSize": 136, "textInter": 66 },
                 "en": { "textSize": 150, "textInter": 66 },
@@ -607,6 +611,8 @@
 
             "image": "data/spells/img/sets_halo.png",
             "origins": ["campaignbook"],
+
+            "tokens": ["set-halo"],
 
             "textStyle": {
                 "fr": { "textSize": 136, "textInter": 66 },
