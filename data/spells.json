@@ -159,7 +159,7 @@
 
             "textStyle": {
                 "fr": { "textSize": 140, "textInter": 66 },
-                "en": { "textSize": 144, "textInter": 66 },
+                "en": { "textSize": 144, "textInter": 65 },
                 "it": { "textSize": 144, "textInter": 66 }
             }
         },
@@ -323,7 +323,7 @@
 
             "textStyle": {
                 "fr": { "textSize": 149, "textInter": 66 },
-                "en": { "textSize": 130, "textInter": 66 },
+                "en": { "textSize": 130, "textInter": 65 },
                 "it": { "textSize": 130, "textInter": 66 }
             }
         },
@@ -364,7 +364,7 @@
 
             "textStyle": {
                 "fr": { "textSize": 140, "textInter": 66 },
-                "en": { "textSize": 131, "textInter": 66 },
+                "en": { "textSize": 131, "textInter": 65 },
                 "it": { "textSize": 140, "textInter": 66 }
             }
         },
@@ -447,8 +447,8 @@
             "origins": ["corebox", "stretchgoal", "king"],
 
             "textStyle": {
-                "fr": { "textSize": 134, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
+                "fr": { "textSize": 134, "textInter": 65 },
+                "en": { "textSize": 150, "textInter": 65 },
                 "it": { "textSize": 150, "textInter": 66 }
             }
         },
@@ -531,7 +531,7 @@
             "textStyle": {
                 "fr": { "textSize": 148, "textInter": 66 },
                 "en": { "textSize": 122, "textInter": 70 },
-                "it": { "textSize": 148, "textInter": 66 }
+                "it": { "textSize": 148, "textInter": 65 }
             }
         },
 
@@ -1076,7 +1076,7 @@
             "textStyle": {
                 "fr": { "textSize": 140, "textInter": 66 },
                 "en": { "textSize": 140, "textInter": 66 },
-                "it": { "textSize": 130, "textInter": 66 }
+                "it": { "textSize": 130, "textInter": 64 }
             }
         },
 
@@ -1287,9 +1287,9 @@
             "origins": ["stretchgoal", "king"],
 
             "textStyle": {
-                "fr": { "textSize": 130, "textInter": 66 },
-                "en": { "textSize": 148, "textInter": 66 },
-                "it": { "textSize": 130, "textInter": 66 }
+                "fr": { "textSize": 130, "textInter": 65 },
+                "en": { "textSize": 148, "textInter": 63 },
+                "it": { "textSize": 130, "textInter": 63 }
             }
         },
 
@@ -1412,7 +1412,7 @@
             "textStyle": {
                 "fr": { "textSize": 130, "textInter": 66 },
                 "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 130, "textInter": 66 }
+                "it": { "textSize": 130, "textInter": 64 }
             }
         },
 
@@ -1493,8 +1493,8 @@
 
             "textStyle": {
                 "fr": { "textSize": 130, "textInter": 66 },
-                "en": { "textSize": 148, "textInter": 66 },
-                "it": { "textSize": 130, "textInter": 66 }
+                "en": { "textSize": 148, "textInter": 63 },
+                "it": { "textSize": 130, "textInter": 64 }
             }
         },
 
@@ -1575,7 +1575,7 @@
 
             "textStyle": {
                 "fr": { "textSize": 150, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 65 },
                 "it": { "textSize": 150, "textInter": 66 }
             }
         },
@@ -1779,9 +1779,9 @@
             "origins": ["stretchgoal", "king"],
 
             "textStyle": {
-                "fr": { "textSize": 134, "textInter": 66 },
+                "fr": { "textSize": 134, "textInter": 65 },
                 "en": { "textSize": 115, "textInter": 66 },
-                "it": { "textSize": 115, "textInter": 66 }
+                "it": { "textSize": 130, "textInter": 64 }
             }
         },
 
@@ -2442,7 +2442,7 @@
 
             "textStyle": {
                 "fr": { "textSize": 148, "textInter": 66 },
-                "en": { "textSize": 133, "textInter": 66 },
+                "en": { "textSize": 133, "textInter": 64 },
                 "it": { "textSize": 123, "textInter": 66 }
             }
         },
@@ -2565,7 +2565,7 @@
 
             "textStyle": {
                 "fr": { "textSize": 131, "textInter": 72 },
-                "en": { "textSize": 150, "textInter": 66 },
+                "en": { "textSize": 150, "textInter": 65 },
                 "it": { "textSize": 121, "textInter": 72 }
             }
         },
@@ -2731,7 +2731,7 @@
 
             "textStyle": {
                 "fr": { "textSize": 137, "textInter": 66 },
-                "en": { "textSize": 125, "textInter": 72 },
+                "en": { "textSize": 125, "textInter": 68 },
                 "it": { "textSize": 115, "textInter": 72 }
             }
         }
