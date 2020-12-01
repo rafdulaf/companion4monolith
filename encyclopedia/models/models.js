@@ -22,13 +22,13 @@ var EncyclopediaModels = {
             'fromAnd': "<br/>and",
             'model': "miniature",
             'models': "miniatures",
-            'paintedBy': "Painted par: ",
+            'paintedBy': "Painted by: ",
             'zoom': "Zoom",
             'print': "Print",
             'forum': "Need inspiration to paint? Look at the forum!",
             'heroes': "Used by the heroes:",
             'tiles': "Used by the tiles:",
-            'tokens': "Replace the token:",
+            'tokens': "Replaces the token:",
             'copyright': "The miniatures are those of the game Conan from Monolith.<br/>The paintings are the work of their respective authors (see the detail of each image).<br/>Thanks to <a href = 'https: // the- overlord.com/index.php?/profile/56-teil/'>@teil </a> for putting together the list of forum topics that talk about each miniature."
         },
         'it': {

@@ -16,7 +16,7 @@ var EncyclopediaTokens = {
             'token': "copy",
             'tokens': "copies",
             'skills': "Used by skill:",
-            'spells': "Utilisé par le sort :"
+            'spells': "Used by the spell:"
         },
         'it': {
             'tab': "Altro",
