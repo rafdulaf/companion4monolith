@@ -2614,7 +2614,7 @@
                             "en": "A character in an area marked with the Leap icon may leap in the pond's area of level 1 by spending 1 extra movement point. The character rolls {dice_orange}{dice_orange} for falling damage with no possible defense. If the character has Leap, the character rolls {dice_orange} instead.",
                             "it": "Un personaggio può saltare dalle aree segnate con l'icona del salto, all'area dello stagno al livello 1, spendendo un (1) punto movimento extra. Il personaggio che salta subisce {dice_orange}{dice_orange} di danni da caduta non difendibili. Se il personaggio ha l'abilità Saltare i danni da caduta si riducono a {dice_orange}. "
                         },
-                        "coordinates": []
+                        "coordinates": [[90,40], [90,90]]
                     }, {
                         "title": {
                             "fr": "Mur de pierre",
@@ -2650,7 +2650,7 @@
                             "en": "A character with Climb may:<br/>• Move from level « 1 » to level « 2 » (and the other way) by climbing the tree and spending 1 extra movement point<br/>• Move from level « 2 » to level « 3 » (and the other way) or from level « 3 » to level « 4 » (and the other way) by climbing the outside walls of the tower and spending 2 extra movement points.",
                             "it": "Un personaggio con l'abilità Arrampicarsi può :<br/>• passare dal livello 1 al livello 2 (e viceversa) arrampicandosi sull'albero e spendendo un (1) punto movimento extra,<br/>• passare dal livello 2 al livello 3 (e viceversa) o dal livello 3 al livello 4 (e viceversa) arrampicandosi sui muri esterni della torre e spendendo 2 punti movimento extra."
                         },
-                        "coordinates": []
+                        "coordinates": [[40,45], [80,45], [80,94], [96,45], [96,94], [96,8], [96,62], [80,8], [80,62]]
                     }, {
                         "title": {
                             "fr": "Table et escaliers",
@@ -2662,7 +2662,7 @@
                             "en": "The stairs provide an Elevation bonus for Ranged Attacks against an enemy on a lower area. A character with or without Leap or Climb may move onto the table on level",
                             "it": "Le scale forniscono un bonous di Elevazione sulle zone situate più in basso. É possibile salire sul tavolo del livello 2 con o senza l'abilità Saltare/Arrampicarsi, al costo di un (1) punto movimento extra. Un personaggio sul tavolo ottiene un bonus di Elevazione per i suoi attacchi a Distanza e per quelli in Mischia. É possibile attaccare in Mischia le zone adiacenti al tavolo sia con che senza l'abilità Allungo. L'area del tavolo non blocca la linea di vista. "
                         },
-                        "coordinates": []
+                        "coordinates": [[86,27], [89,7], [65,25]]
                     }
                 ],
                 "totopic": {
