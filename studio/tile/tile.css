@@ -222,6 +222,7 @@
 }
 .tile.tokens .token img {
     position: absolute;
+    top: 0 !important;
 }
 .tile.tokens.tokensOver {
     position: absolute;
