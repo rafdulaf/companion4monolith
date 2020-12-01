@@ -498,21 +498,24 @@ var EncyclopediaTiles = {
         var tiles = "";
 
         Encyclopedia.tiles.list.sort(function(s1, s2) {
-            if (!s2.name[Language] && !s1.name[Language])
+            var s1Name = s1.sort && s1.sort[Language] ? s1.sort[Language] : s1.name[Language];
+            var s2Name = s2.sort && s2.sort[Language] ? s2.sort[Language] : s2.name[Language];
+            
+            if (!s2Name && !s1Name)
             {
                 return s1.image && s2.image ? s1.image.toLowerCase().localeCompare(s2.image.toLowerCase()) : 0;
             }
-            else if (!s2.name[Language])
+            else if (!s2Name)
             {
                 return 1;
             }
-            else if (!s1.name[Language])
+            else if (!s1Name)
             {
                 return -1;
             }
             else
             {
-                var c = s1.name[Language].toLowerCase().localeCompare(s2.name[Language].toLowerCase())
+                var c = s1Name.toLowerCase().localeCompare(s2Name.toLowerCase())
                 if (c != 0)
                 {
                     return c;

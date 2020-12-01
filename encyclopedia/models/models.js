@@ -419,6 +419,11 @@ var EncyclopediaModels = {
 
         if (model)
         {
+            if (model.name)
+            {
+                names.push(model.name[Language]);
+            }
+            
             var heroes = EncyclopediaModels._findHeroesByModel(model);
             for (var i in heroes)
             {

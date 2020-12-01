@@ -2640,6 +2640,9 @@
                 "en": "Black Dragons",
                 "it": "Dragoni Neri"
             },
+            "sort": {
+                "fr": "Dragons Noirs"
+            }, 
     
             "colors": ["gray"],
             "movement": "2",
@@ -2682,6 +2685,9 @@
                 "en": "Black Ones",
                 "it": "I Neri"
             },
+            "sort": {
+                "fr": "Hommes noirs"
+            }, 
     
             "colors": ["gray", "purple", "green"],
             "movement": "3",

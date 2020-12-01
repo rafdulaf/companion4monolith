@@ -1131,7 +1131,12 @@
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
             "origins": ["stretchgoal", "king"],
-            "forum": "https://the-overlord.com/index.php?/topic/4228-peinture-spartiates/"
+            "forum": "https://the-overlord.com/index.php?/topic/4228-peinture-spartiates/",
+            "name": {
+                "fr": "Spartiate",
+                "en": "Spartan",
+                "it": "TODO_TRANSLATE"
+            }
         },
         
         {
@@ -1206,7 +1211,12 @@
             "type": "scenery",
             "origins": ["stretchgoal", "king"],
             "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/",
-            "count": 2
+            "count": 2,
+            "name": {
+                "fr": "Pile de crânes",
+                "en": "Pile of Skulls",
+                "it": "TODO_TRANSLATE"
+            }
         },
         {
             "id": "bones",
@@ -1216,7 +1226,12 @@
             "type": "scenery",
             "origins": ["adventurepack"],
             "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/",
-            "count": 2
+            "count": 2,
+            "name": {
+                "fr": "Pile de crânes",
+                "en": "Pile of Skulls",
+                "it": "TODO_TRANSLATE"
+            }
         },
         {
             "id": "sarcophagus",
@@ -1225,7 +1240,12 @@
             "paint": { "name": "Cochon", "link": "https://the-overlord.com/index.php?/profile/5240-cochon/"},
             "type": "scenery",
             "origins": ["stretchgoal", "king"],
-            "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/"
+            "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/",
+            "name": {
+                "fr": "Sarcophage",
+                "en": "Sarcophagus",
+                "it": "TODO_TRANSLATE"
+            }
         },
         {
             "id": "sarcophagus",
@@ -1234,7 +1254,12 @@
             "paint": { "name": "Cochon", "link": "https://the-overlord.com/index.php?/profile/5240-cochon/"},
             "type": "scenery",
             "origins": ["adventurepack"],
-            "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/"
+            "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/",
+            "name": {
+                "fr": "Sarcophage",
+                "en": "Sarcophagus",
+                "it": "TODO_TRANSLATE"
+            }
         },
         {
             "id": "bookcase",
@@ -1243,7 +1268,12 @@
             "paint": { "name": "Cochon", "link": "https://the-overlord.com/index.php?/profile/5240-cochon/"},
             "type": "scenery",
             "origins": ["stretchgoal", "king"],
-            "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/"
+            "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/",
+            "name": {
+                "fr": "Bibliothèque",
+                "en": "Bookcase",
+                "it": "TODO_TRANSLATE"
+            }
         },
         {
             "id": "torch-stand",
@@ -1273,7 +1303,12 @@
             "paint": null,
             "type": "scenery",
             "origins": ["adventurepack"],
-            "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/"
+            "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/",
+            "name": {
+                "fr": "Peau de bête",
+                "en": "Animal skin",
+                "it": "TODO_TRANSLATE"
+            }
         },
         
         {
