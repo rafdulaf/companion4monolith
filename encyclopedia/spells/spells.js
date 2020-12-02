@@ -380,7 +380,11 @@ var EncyclopediaSpells = {
     {
         var spells = "";
 
-        Encyclopedia.spells.list.sort(function(s1, s2) { return s1.title[Language].toLowerCase().localeCompare(s2.title[Language].toLowerCase()); })
+        Encyclopedia.spells.list.sort(function(s1, s2) { 
+            var name1 = s1.sort && s1.sort[Language] ? s1.sort[Language] : s1.title[Language];
+            var name2 = s2.sort && s2.sort[Language] ? s2.sort[Language] : s2.title[Language];
+            return name1.toLowerCase().localeCompare(name2.toLowerCase()); 
+        })
 
         var spellList = Encyclopedia.spells.list;
         var ignoredPrevious = 0;

@@ -2454,6 +2454,10 @@
                 "en": "Weight of the Years",
                 "it": "Il peso degli anni"
             },
+            "sort": {
+                "fr": "Poids des Ages",
+                "it": "Peso degli anni"
+            },
             "text": {
                 "fr": "L'Overlord lance {dice_orange}. Tous les Héros avec ou sans ligne de vue, subissent autant de blessure sans aucune défense possible.",
                 "en": "The Overlord rolls {dice_orange}. Each hero, with or without line of sight, suffers that many damage with no possible defense.",

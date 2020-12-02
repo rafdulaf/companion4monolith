@@ -294,7 +294,7 @@ var EncyclopediaModels = {
     {
         var models = "";
 
-        Encyclopedia.models.list.sort(function(s1, s2) { return EncyclopediaModels._findModelNames(s1).toLowerCase().localeCompare(EncyclopediaModels._findModelNames(s2).toLowerCase()); })
+        Encyclopedia.models.list.sort(function(s1, s2) { return EncyclopediaModels._findModelNames(s1, true).toLowerCase().localeCompare(EncyclopediaModels._findModelNames(s2, true).toLowerCase()); })
 
         var modelList = Encyclopedia.models.list;
         var ignoredPrevious = 0;
@@ -413,7 +413,7 @@ var EncyclopediaModels = {
         return tokens;
     },
     
-    _findModelNames: function(model)
+    _findModelNames: function(model, sort)
     {
         var names = [];
 
@@ -421,14 +421,15 @@ var EncyclopediaModels = {
         {
             if (model.name)
             {
-                names.push(model.name[Language]);
+                names.push((sort && model.sort && model.sort[Lanugage]) ? model.sort[Lanugage] : model.name[Language]);
             }
             
             var heroes = EncyclopediaModels._findHeroesByModel(model);
             for (var i in heroes)
             {
                 var hero = heroes[i];
-                var name = hero.name[Language] + (hero.subname ? " <span>" + hero.subname[Language] + "</span>" : "");
+                var name = (sort && hero.sort && hero.sort[Language]) ? hero.sort[Language] : hero.name[Language]; 
+                name += (hero.subname ? " <span>" + hero.subname[Language] + "</span>" : "");
                 if (names.indexOf(name) == -1)
                 {
                     names.push(name);
@@ -439,7 +440,7 @@ var EncyclopediaModels = {
             for (var i in tiles)
             {
                 var tile = tiles[i];
-                var name = tile.name[Language];
+                var name = (sort && tile.sort && tile.sort[Language]) ? tile.sort[Language] : tile.name[Language];
                 if (names.indexOf(name) == -1)
                 {
                     names.push(name);
@@ -450,7 +451,7 @@ var EncyclopediaModels = {
             for (var i in tokens)
             {
                 var token = tokens[i];
-                var name = token.name[Language];
+                var name = (sort && token.sort && token.sort[Language]) ? token.sort[Language] : token.name[Language];
                 if (names.indexOf(name) == -1)
                 {
                     names.push(name);
