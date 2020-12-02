@@ -1135,7 +1135,7 @@
             "name": {
                 "fr": "Spartiate",
                 "en": "Spartan",
-                "it": "TODO_TRANSLATE"
+                "it": "Spartano"
             }
         },
         
@@ -1215,7 +1215,7 @@
             "name": {
                 "fr": "Pile de crânes",
                 "en": "Pile of Skulls",
-                "it": "TODO_TRANSLATE"
+                "it": "Pila di teschi"
             }
         },
         {
@@ -1230,7 +1230,7 @@
             "name": {
                 "fr": "Pile de crânes",
                 "en": "Pile of Skulls",
-                "it": "TODO_TRANSLATE"
+                "it": "Pila di teschi"
             }
         },
         {
@@ -1244,7 +1244,7 @@
             "name": {
                 "fr": "Sarcophage",
                 "en": "Sarcophagus",
-                "it": "TODO_TRANSLATE"
+                "it": "Sarcofago"
             }
         },
         {
@@ -1258,7 +1258,7 @@
             "name": {
                 "fr": "Sarcophage",
                 "en": "Sarcophagus",
-                "it": "TODO_TRANSLATE"
+                "it": "Sarcofago"
             }
         },
         {
@@ -1272,7 +1272,7 @@
             "name": {
                 "fr": "Bibliothèque",
                 "en": "Bookcase",
-                "it": "TODO_TRANSLATE"
+                "it": "Libreria"
             }
         },
         {
@@ -1283,6 +1283,11 @@
             "type": "scenery",
             "origins": ["stretchgoal", "king"],
             "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/",
+            "name": {
+                "fr": "Torche",
+                "en": "Torch",
+                "it": "Torcia"
+            },
             "count": 5
         },
         
@@ -1307,7 +1312,7 @@
             "name": {
                 "fr": "Peau de bête",
                 "en": "Animal skin",
-                "it": "TODO_TRANSLATE"
+                "it": "Pelle animale"
             }
         },
         
