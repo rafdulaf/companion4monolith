@@ -386,9 +386,9 @@ var EncyclopediaTiles = {
             {
                 id: 'dice',
                 label: {
-                    'fr': "Puissance",
-                    'en': "Power",
-                    'it': "Forza"
+                    'fr': "Attaque ~",
+                    'en': "Attack ~",
+                    'it': "Attacco ~"
                 },
                 values: (function() {
                     var dices = [];
