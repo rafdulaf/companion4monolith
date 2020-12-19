@@ -83,7 +83,7 @@ var ConanRules = {
             'copyright': "Le regole sono basate sul regolamento ufficiale e sui suoi complementi, ma sono parzialmente riscritte.",
 
             'heroes': "Libro degli Eroi",
-            'heroesPDF': "http://www.monolithedition.com/download/rules/CONAN_Heroesrulebook_V2_US_SD.pdf",
+            'heroesPDF': "https://the-overlord.net/index.php?/files/file/156-conan-heroesrulebook-v21-ita/&do=download&csrfKey=13ba91465f0a9eabcc05c76aca3e785f",
             'overlord': "Libro dell'Overlord",
             'overlordPDF': "http://www.monolithedition.com/download/rules/CONAN_King_Overlordbook_V2_US_SD.pdf"
         }

@@ -1,5 +1,5 @@
 function autoZoom() {
-    var zoom = Math.floor(window.innerWidth / 909.0 * 100.0) / 100.0;
+    var zoom = Math.floor(window.innerWidth / 914.0 * 100.0) / 100.0;
     
     if (navigator.userAgent.indexOf('Firefox') != -1)
     {
