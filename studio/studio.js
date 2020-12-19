@@ -102,7 +102,7 @@ var ConanStudio = {
 
     _printCards: function()
     {
-        if ($(".printcards label ~input:checked").length == 0)
+        if ($(".printcards > ~input:checked").length == 0)
         {
             ConanAbout.warnToast(ConanStudio._i18n[Language].printcardEmpty);
             return;
