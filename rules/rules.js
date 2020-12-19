@@ -85,7 +85,7 @@ var ConanRules = {
             'heroes': "Libro degli Eroi",
             'heroesPDF': "https://the-overlord.net/index.php?/files/file/156-conan-heroesrulebook-v21-ita/&do=download&csrfKey=13ba91465f0a9eabcc05c76aca3e785f",
             'overlord': "Libro dell'Overlord",
-            'overlordPDF': "http://www.monolithedition.com/download/rules/CONAN_King_Overlordbook_V2_US_SD.pdf"
+            'overlordPDF': "https://the-overlord.net/index.php?/files/file/157-conan_king_overlordbook_v21_ita_txt/&do=download&csrfKey=13ba91465f0a9eabcc05c76aca3e785f"
         }
     },
 
