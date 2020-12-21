@@ -168,7 +168,7 @@ Nav = {
         var toSelect = $("#" + id);
         
         var t = $(".header .title div")
-        t.removeClass("small smaller smallest twolines").html(toSelect.attr('title') || "Conan");
+        t.removeClass("small smaller smallest twolines").html(toSelect.attr('title') || About._i18n[Language].smallName);
 
         var tb = $(".header .toolbar")
 
@@ -198,7 +198,7 @@ Nav = {
         
         this._id = "nav-" + parseInt(Math.random() * 1000);
         var code = "<header class=\"header\">"
-                    + "<div class=\"title\"><div>Conan</div></div>"
+                    + "<div class=\"title\"><div>" + About._i18n[Language].smallName + "</div></div>"
                     + "<nav class=\"toolbar\" id=\"" + this._id + "-toolbar\">"
                         + this._drawActions()
                     + "</nav>"

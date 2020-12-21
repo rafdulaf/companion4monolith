@@ -1,6 +1,7 @@
 About = mergeObject(About, {
     _i18n: {
         'fr': {
+            'smallName': "Conan",
             'name': "Compagnon<br/>de Conan",
             'title': "Le compagnon de Conan",
             'text': "'Compagnion de Conan' est une application indépendante pour accompagner les joueurs dans le jeu 'Conan'.<h1>Important</h1>Cette application n'a aucun lien avec l'édteur du jeu Conan : Monolith.<br/>Elle a été réalisée par <a href='https://the-overlord.com/index.php?/profile/5240-cochon/' target='_blank'>@cochon</a> en s'appuyant sur l'aide de la communauté de <a href='https://the-overlord.com'>The Overlord</a> et divers outils et ressources existantes.",
@@ -12,6 +13,7 @@ About = mergeObject(About, {
             'contribute_hof_dataIT': "(traduction italienne)"
         },
         'en': {
+            'smallName': "Conan",
             'name': "Companion<br/>to Conan",
             'title': "The companion to Conan",
             'text': "'Companion to Conan' is an independant application to help the players in the game 'Conan'.<h1>Disclamer</h1>This application has no link with the producer of the game Conan: Monolith.<br/>It was realized by <a href='https://the-overlord.com/index.php?/profile/5240-cochon/' target='_blank'>@cochon</a> relying the community of <a href='https://the-overlord.com'>The Overlord</a> and several existing tools or resources.",
@@ -23,6 +25,7 @@ About = mergeObject(About, {
             'contribute_hof_dataIT': "(italian translation)"
         },
         'it': {
+            'smallName': "Conan",
             'name': "Conan<br/>Companion",
             'title': "Conan Companion",
             'text': "'Conan Companion' è un'applicazione indipendente di supporto per i giocatori del gioco 'Conan'.<h1>Importante</h1>Questa applicazione non ha nessun legame con il gioco Conan: Monolith.",
