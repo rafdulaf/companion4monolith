@@ -22,12 +22,7 @@ var Rules = {
             'search-inputPh': "Entrez un mot clé à chercher (3 caractères minimum)",
             'search-loose': "Aucun résultat ne correspond au mot clé saisi",
 
-            'copyright': "Les règles proposés sont basées sur les règles officielles et leurs compléments mais ont été en partie reformulées.",
-
-            'heroes': "Livre des héros",
-            'heroesPDF': "http://www.monolithedition.com/download/rules/CONAN_Heroesrulebook_V2_FR_SD.pdf",
-            'overlord': "Livre de l'Overlord",
-            'overlordPDF': "http://www.monolithedition.com/download/rules/CONAN_King_Overlordbook_V2_FR_SD.pdf"
+            'copyright': "Les règles proposés sont basées sur les règles officielles et leurs compléments mais ont été en partie reformulées."
         },
         'en': {
             'menu': "Rules",
@@ -51,12 +46,7 @@ var Rules = {
             'search-inputPh': "Enter the keyword to search (3 characters minimum)",
             'search-loose': "No result is matching the entered keyword",
 
-            'copyright': "The proposed rules are based upon the official rules and their complements but were partially rewriten.",
-
-            'heroes': "Heroes's book",
-            'heroesPDF': "http://www.monolithedition.com/download/rules/CONAN_Heroesrulebook_V2_US_SD.pdf",
-            'overlord': "Overlord's book",
-            'overlordPDF': "http://www.monolithedition.com/download/rules/CONAN_King_Overlordbook_V2_US_SD.pdf"
+            'copyright': "The proposed rules are based upon the official rules and their complements but were partially rewriten."
         },
         'it': {
             'menu': "Regole",
@@ -80,21 +70,8 @@ var Rules = {
             'search-inputPh': "Inserisci la parola chiave da cercare (minimo 3 caratteri)",
             'search-loose': "Nessun risultato corrispondente alla parola cercata",
 
-            'copyright': "Le regole sono basate sul regolamento ufficiale e sui suoi complementi, ma sono parzialmente riscritte.",
-
-            'heroes': "Libro degli Eroi",
-            'heroesPDF': "https://the-overlord.net/index.php?/files/file/156-conan-heroesrulebook-v21-ita/&do=download&csrfKey=13ba91465f0a9eabcc05c76aca3e785f",
-            'overlord': "Libro dell'Overlord",
-            'overlordPDF': "https://the-overlord.net/index.php?/files/file/157-conan_king_overlordbook_v21_ita_txt/&do=download&csrfKey=13ba91465f0a9eabcc05c76aca3e785f"
+            'copyright': "Le regole sono basate sul regolamento ufficiale e sui suoi complementi, ma sono parzialmente riscritte."
         }
-    },
-
-    _allSkills: {
-        'attack' : ['reach', 'ambidextrous', 'constriction', 'circular_strike', 'precision_strike', 'attack_from_beyond', 'counterattack', 'elite_shooter', 'precision_shot'],
-        'movement': ['blocking', 'evasive', 'swimming', 'intangible', 'wall_wrecker', 'web_projection', 'leap', 'feline_grace', 'flying', 'climb'],
-        'miscellaneous': ['alchemy', 'concentration', 'lock_picking', 'fascination', 'leadership', 'horror', 'jinx', 'poison', 'support'],
-        'defense': ['sacrifice', 'bodyguard', 'untouchable', 'protected'],
-        'magic': ['spell_caster', 'teleportation']
     },
 
     init: function()
@@ -103,18 +80,31 @@ var Rules = {
 
         Nav.addIcon(Rules._i18n[Language].menu, "rules-icon", "rules");
 
-        Nav.createTabs('rules', [
-            {label: Rules._i18n[Language].skills, id: "skills"},
-            {label: Rules._i18n[Language].heroes, id: "heroes"},
-            {label: Rules._i18n[Language].overlord, id: "overlord"}
-        ], Rules._onChange);
+        Rules._rules = [{
+            label: Rules._i18n[Language].skills, 
+            id: "skills", 
+            download: Encyclopedia.skills.link[Language]
+        }];
+        for (var i = 0; i < Encyclopedia.rules.list.length; i++)
+        {
+            Rules._rules.push({
+                label: Encyclopedia.rules.list[i].title[Language], 
+                id: Encyclopedia.rules.list[i].id,
+                download: Encyclopedia.rules.list[i].download[Language],
+                pages: Encyclopedia.rules.list[i].pages[Language]
+            });
+        }
+        
+        Nav.createTabs('rules', Rules._rules, Rules._onChange);
 
         Rules._initSkills();
 
-        $("#heroes").addClass("zoom0 rules-viewer").html("<div>" + this._createViewer("rules/heroes/" + Language + "/book", 24) + "</div>");
-        Rules._attachEvents("#heroes");
-        $("#overlord").addClass("zoom0 rules-viewer").html("<div>" + this._createViewer("rules/overlord/" + Language + "/book", 14) + "</div>");
-        Rules._attachEvents("#overlord");
+        for (var i = 0; i < Encyclopedia.rules.list.length; i++)
+        {
+            $("#" + Encyclopedia.rules.list[i].id).addClass("zoom0 rules-viewer").html("<div>" + this._createViewer("data/rules/" + Encyclopedia.rules.list[i].id + "/" + Language, Encyclopedia.rules.list[i].pages[Language]) + "</div>");
+            Rules._attachEvents("#" + Encyclopedia.rules.list[i].id);
+        }
+        
 
         Nav.addAction("rules", Rules._i18n[Language]['viewer-zoomin'], "rules-zoomin-icon", "zoomin", Rules._zoomIn);
         Nav.addAction("rules", Rules._i18n[Language]['viewer-zoomout'], "rules-zoomout-icon", "zoomout", Rules._zoomOut);
@@ -127,18 +117,7 @@ var Rules = {
 
     _download: function()
     {
-        switch (Rules._currentSlide)
-        {
-            case 0:
-                window.open(Encyclopedia.skills.link[Language]);
-                break;
-            case 1:
-                window.open(Rules._i18n[Language].heroesPDF);
-                break;
-            case 2:
-                window.open(Rules._i18n[Language].overlordPDF);
-                break;
-        }
+        window.open(Rules._rules[Rules._currentSlide].download);
     },
 
     _search: function()
@@ -160,7 +139,7 @@ var Rules = {
         {
             $("#rulessearch input").prop('disabled', true);
             Rules.keywords = Rules.keywords || {};
-            $.getJSON("rules/" + (Rules._currentSlide == 1 ? "heroes" : "overlord") + "/" + Language + "/book/search.json?version=" + Version, null, function(data) { Rules.keywords[Rules._currentSlide] = data; $("#rulessearch input").prop('disabled', false).focus(); Rules._doSearch(true); });
+            $.getJSON("data/rules/" + Rules._rules[Rules._currentSlide].id + "/" + Language + "/search.json?version=" + Version, null, function(data) { Rules.keywords[Rules._currentSlide] = data; $("#rulessearch input").prop('disabled', false).focus(); Rules._doSearch(true); });
         }
         else
         {
@@ -239,7 +218,7 @@ var Rules = {
 
                     var guessRatioY = (index / pageContent.length) * 0.8 + 0.1;
 
-                    if (!pageHasResults) results += "<li><a href='#' onclick='Rules._endPageSearch(this, arguments[0], " + (i+1) + ")'><img src=\"rules/" + (Rules._currentSlide == 1 ? "heroes" : "overlord") + "/" + Language + "/book/thumbnails/" + (i+1) + ".jpg?version=" + Version + "\"/><br/>Page " + (i+1) + "</a><ul>";
+                    if (!pageHasResults) results += "<li><a href='#' onclick='Rules._endPageSearch(this, arguments[0], " + (i+1) + ")'><img src=\"data/rules/" + Rules._rules[Rules._currentSlide].id + "/" + Language + "/thumbnails/" + (i+1) + ".jpg?version=" + Version + "\"/><br/>Page " + (i+1) + "</a><ul>";
                     results += "<li>"
                                     + "<a href='#' onclick='Rules._endSearch(" + (i+1) +", 0, " + guessRatioY + ")'>"
                                         + prefix + textContent[i].substr(snippetStart, snippetEnd - snippetStart).replace(foundExact, '<em>' + foundExact + '</em>') + suffix
@@ -273,7 +252,7 @@ var Rules = {
 
     _endSearch: function(page, ratioX, ratioY)
     {
-        var div = $(["#heroes", "#overlord"][Rules._currentSlide - 1]);
+        var div = $("#" + Rules._rules[Rules._currentSlide].id);
         if (!div.is("zoom3") && !div.is("zoom2"))
         {
             div.removeClass("zoom1").removeClass("zoom0").addClass("zoom2");
@@ -314,7 +293,7 @@ var Rules = {
         var slide = slick && slick.currentSlide || 0;
         Rules._currentSlide = slide;
 
-        if (slide == 0)
+        if (!Rules._rules[Rules._currentSlide].pages)
         {
             Nav.hideAction("rules", "zoomin");
             Nav.hideAction("rules", "zoomout");
@@ -364,7 +343,7 @@ var Rules = {
 
     _scrollTo: function(specificPage, ratioX, ratioY)
     {
-        var div = $(["#heroes", "#overlord"][Rules._currentSlide - 1]);
+        var div = $("#" + Rules._rules[Rules._currentSlide].id);
 
         ratioX = ratioX || 0;
         ratioY = ratioY || 0;
@@ -389,7 +368,7 @@ var Rules = {
 
     _zoom: function(direction, specificPage, ratioX, ratioY)
     {
-        var div = $(["#heroes", "#overlord"][Rules._currentSlide - 1]);
+        var div = $("#" + Rules._rules[Rules._currentSlide].id);
 
         var top = div.scrollTop();
         var height = div.height();
@@ -564,6 +543,5 @@ var Rules = {
             null,
             []
         );
-//        alert(id)
     }
 }
