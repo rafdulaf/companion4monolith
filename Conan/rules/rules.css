@@ -1,29 +1,3 @@
-.rules-icon:before {
-    font-family: "Font Awesome 5 Free";
-    content: "\f545";  
-}
-
-.rules-search-icon:before {
-    font-family: "Font Awesome 5 Free";
-    content: "\f002";  
-}
-.rules-zoomin-icon:before {
-    font-family: "Font Awesome 5 Free";
-    content: "\f00e";  
-}
-.rules-zoomout-icon:before {
-    font-family: "Font Awesome 5 Free";
-    content: "\f010";  
-}
-.rules-download-icon:before {
-    font-family: "Font Awesome 5 Free";
-    content: "\f56d";  
-}
-
-#rules {
-    height: 100%;
-}
-
 #rules #skills {
     overflow: auto;    
     box-sizing: border-box;
@@ -71,6 +45,15 @@
     line-height: 20px;
     color: #000;
 }
+
+.dialog a.openskill:hover {
+    text-decoration: none;
+}
+.dialog a:hover.openskill .skills-title {
+    text-decoration: underline;
+}
+
+
 #rules .rules-character,
 .dialog .rules-character  {
     margin: 0;
@@ -80,16 +63,10 @@
     display: inline;
 }
 
-.dialog a.openskill:hover {
-    text-decoration: none;
-}
-.dialog a:hover.openskill .skills-title {
-    text-decoration: underline;
-}
-
 #skills a {
     color: #000000;
 }
+
 
 .skillsdetails .heroes,
 .skillsdetails .tiles,
@@ -111,8 +88,6 @@
         width: 33.3%;
     }
 }
-
-
 
 .skillsdetails .tokens .othertoken {
     display: inline-block;
