@@ -80,7 +80,7 @@ var Rules = {
 
         for (var i = 0; i < Encyclopedia.rules.list.length; i++)
         {
-            $("#" + Encyclopedia.rules.list[i].id).addClass("zoom0 rules-viewer").html("<div>" + this._createViewer("data/rules/" + Encyclopedia.rules.list[i].id + "/" + Language, Encyclopedia.rules.list[i].pages[Language]) + "</div>");
+            $("#" + Encyclopedia.rules.list[i].id).addClass("zoom0 rules-viewer").html("<div>" + Rules._createViewer("data/rules/" + Encyclopedia.rules.list[i].id + "/" + Language, Encyclopedia.rules.list[i].pages[Language]) + "</div>");
             Rules._attachEvents("#" + Encyclopedia.rules.list[i].id);
         }
         
@@ -378,3 +378,5 @@ var Rules = {
         }
     }
 }
+
+Utils._toInitialize.push(Rules.init);

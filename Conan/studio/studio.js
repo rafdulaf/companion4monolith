@@ -113,3 +113,5 @@ var Studio = {
         }
     }
 };
+
+Utils._toInitialize.push(Studio.init);
