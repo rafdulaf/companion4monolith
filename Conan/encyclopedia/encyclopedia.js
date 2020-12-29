@@ -1,20 +1,6 @@
 var Encyclopedia = {
     load: function()
     {
-        function _load(url, cb)
-        {
-            return new Promise(function (resolve, reject) { 
-                url += '?version=' + Version;
-                
-                $.ajax({
-                  dataType: "json",
-                  url: url,
-                  success: function(data) { cb(data); resolve(url); },
-                  error: function() { reject(url); }
-                });
-            });
-        }
-        
         function _handleCount(object)
         {
             var newItemsForArray = [];
@@ -62,16 +48,16 @@ var Encyclopedia = {
         }
 
         return Promise.all([
-            _load("data/skills.json", function(data) { Encyclopedia.skills = data; }),
-            _load("data/spells.json", function(data) { Encyclopedia.spells = data; }),
-            _load("data/equipments.json", function(data) { Encyclopedia.equipments = _handleCount(data); }),
-            _load("data/expansions.json", function(data) { Encyclopedia.expansions = data; }),
-            _load("data/maps.json", function(data) { Encyclopedia.maps = data; }),
-            _load("data/models.json", function(data) { Encyclopedia.models = _handleCount(data); }),
-            _load("data/tiles.json", function(data) { Encyclopedia.tiles = _handleColors(_handleCount(data)); }),
-            _load("data/tokens.json", function(data) { Encyclopedia.tokens = _handleCount(data); }),
-            _load("data/heroes.json", function(data) { Encyclopedia.heroes = data; }),
-            _load("data/rules.json", function(data) { Encyclopedia.rules = data; })
+            Utils.loadJSON("data/skills.json")      .then(function(data) { Encyclopedia.skills = data; }),
+            Utils.loadJSON("data/spells.json")      .then(function(data) { Encyclopedia.spells = data; }),
+            Utils.loadJSON("data/equipments.json")  .then(function(data) { Encyclopedia.equipments = _handleCount(data); }),
+            Utils.loadJSON("data/expansions.json")  .then(function(data) { Encyclopedia.expansions = data; }),
+            Utils.loadJSON("data/maps.json")        .then(function(data) { Encyclopedia.maps = data; }),
+            Utils.loadJSON("data/models.json")      .then(function(data) { Encyclopedia.models = _handleCount(data); }),
+            Utils.loadJSON("data/tiles.json")       .then(function(data) { Encyclopedia.tiles = _handleColors(_handleCount(data)); }),
+            Utils.loadJSON("data/tokens.json")      .then(function(data) { Encyclopedia.tokens = _handleCount(data); }),
+            Utils.loadJSON("data/heroes.json")      .then(function(data) { Encyclopedia.heroes = data; }),
+            Utils.loadJSON("data/rules.json")       .then(function(data) { Encyclopedia.rules = data; })
         ]);
     },
     
@@ -402,3 +388,5 @@ var Encyclopedia = {
         }
     }    
 };
+
+Utils._toInitialize.push(Encyclopedia.init);

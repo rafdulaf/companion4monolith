@@ -109,6 +109,8 @@ var About = {
 
     init: function()
     {
+        $(document.head).append("<title>" + About._i18n[Language].title + "</title>");
+
         const isInStandaloneMode = window.matchMedia('(display-mode: standalone)').matches || (window.navigator.standalone) || document.referrer.includes('android-app://');
 
         if (!isInStandaloneMode) {
@@ -402,4 +404,4 @@ var About = {
     }
 }
 
-window.setTimeout('$(document.head).append("<title>" + About._i18n[Language].title + "</title>");', 1);
+Utils._toInitialize.push(About.init);

@@ -10,21 +10,21 @@ Menu = {
             action: action,
             line: line
         };
-        this._items.push(item);
+        Menu._items.push(item);
         
-        if (this._id)
+        if (Menu._id)
         {
-            var code = this._drawItem(item);
-            $("#" + this._id).find("ul").append(code);
+            var code = Menu._drawItem(item);
+            $("#" + Menu._id).find("ul").append(code);
         }
     },
 
     _drawItems: function ()
     {
         var s = "";
-        for (var i in this._items)
+        for (var i in Menu._items)
         {
-            s += this._drawItem(this._items[i]);
+            s += Menu._drawItem(Menu._items[i]);
         }
         return s;
     },
@@ -36,17 +36,19 @@ Menu = {
 
     initialize: function()
     {
-        this._id = "menu-" + parseInt(Math.random() * 1000);
-        var code = "<nav class=\"menu\" id=\"" + this._id + "\">" 
+        Menu._id = "menu-" + parseInt(Math.random() * 1000);
+        var code = "<nav class=\"menu\" id=\"" + Menu._id + "\">" 
                         + "<div>"
-                            + "<input id=\"" + this._id + "-input\" type=\"checkbox\" />"
+                            + "<input id=\"" + Menu._id + "-input\" type=\"checkbox\" />"
                             + "<span></span><span></span><span></span>"
-                            + "<label for=\"" + this._id + "-input\"></label>"
+                            + "<label for=\"" + Menu._id + "-input\"></label>"
                             + "<ul>"
-                            + this._drawItems()
+                            + Menu._drawItems()
                             + "</ul>"
                         + "</div>"
                     + "</nav>";
         $(document.body).prepend(code);
     }
 }
+
+Utils._toInitialize.push(Menu.initialize);

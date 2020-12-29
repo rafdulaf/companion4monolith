@@ -12,26 +12,26 @@ Nav = {
             id: id,
             onSelect: onSelect
         };
-        this._icons.push(item);
-        this._actions[id] = [];
+        Nav._icons.push(item);
+        Nav._actions[id] = [];
         
-        if (this._id)
+        if (Nav._id)
         {
-            var code = this._drawIcon(item);
-            $("#" + this._id).children("ul").append(code);
-            code = this._drawContent(item);
-            $("#" + this._id + "-contents").append(code);
+            var code = Nav._drawIcon(item);
+            $("#" + Nav._id).children("ul").append(code);
+            code = Nav._drawContent(item);
+            $("#" + Nav._id + "-contents").append(code);
             code = "<ul for=\"" + id + "\"></ul>";
-            $("#" + this._id + "-toolbar").append(code);
+            $("#" + Nav._id + "-toolbar").append(code);
         }
     },
 
     _drawIcons: function ()
     {
         var s = "";
-        for (var i in this._icons)
+        for (var i in Nav._icons)
         {
-            s += this._drawIcon(this._icons[i]);
+            s += Nav._drawIcon(Nav._icons[i]);
         }
         return s;
     },
@@ -44,9 +44,9 @@ Nav = {
     _drawContents: function ()
     {
         var s = "";
-        for (var i in this._icons)
+        for (var i in Nav._icons)
         {
-            s += this._drawContent(this._icons[i]);
+            s += Nav._drawContent(Nav._icons[i]);
         }
         return s;
     },
@@ -65,25 +65,25 @@ Nav = {
             fn: fn,
             hidden: false
         };
-        this._actions[iconId].push(item);
+        Nav._actions[iconId].push(item);
         
-        if (this._id)
+        if (Nav._id)
         {
-            var code = this._drawAction(iconId, item);
-            $("#" + this._id + "-toolbar").children("ul[for='" + iconId + "']").append(code);
+            var code = Nav._drawAction(iconId, item);
+            $("#" + Nav._id + "-toolbar").children("ul[for='" + iconId + "']").append(code);
         }
     },
     
     showAction: function(iconId, id)
     {
-        for (var i in this._actions[iconId])
+        for (var i in Nav._actions[iconId])
         {
-            if (this._actions[iconId][i].id == id && this._actions[iconId][i].hidden)
+            if (Nav._actions[iconId][i].id == id && Nav._actions[iconId][i].hidden)
             {
-                this._actions[iconId][i].hidden = false;
+                Nav._actions[iconId][i].hidden = false;
                 anychange = true;
-                $('#actions-' + iconId + "-" + this._actions[iconId][i].id).show();
-                this.updateTitle();
+                $('#actions-' + iconId + "-" + Nav._actions[iconId][i].id).show();
+                Nav.updateTitle();
                 return;
             }
         }        
@@ -91,13 +91,13 @@ Nav = {
 
     hideAction: function(iconId, id)
     {
-        for (var i in this._actions[iconId])
+        for (var i in Nav._actions[iconId])
         {
-            if (this._actions[iconId][i].id == id && !this._actions[iconId][i].hidden)
+            if (Nav._actions[iconId][i].id == id && !Nav._actions[iconId][i].hidden)
             {
-                this._actions[iconId][i].hidden = true;
-                $('#actions-' + iconId + "-" + this._actions[iconId][i].id).hide();
-                this.updateTitle();
+                Nav._actions[iconId][i].hidden = true;
+                $('#actions-' + iconId + "-" + Nav._actions[iconId][i].id).hide();
+                Nav.updateTitle();
                 return;
             }
         }        
@@ -107,10 +107,10 @@ Nav = {
     {
         var s = "";
         
-        for (var i in this._icons)
+        for (var i in Nav._icons)
         {
-            s = "<ul for=\"" + this._icons[i].id + "\">";
-            s += this._drawAction(i, this._actions[this._icons[i]]);
+            s = "<ul for=\"" + Nav._icons[i].id + "\">";
+            s += Nav._drawAction(i, Nav._actions[Nav._icons[i]]);
             s += "</ul>";
         }
         
@@ -133,15 +133,15 @@ Nav = {
         {
             window.location.hash = "#" + id;
     
-            $("#" + this._id + "-toolbar ul.active").removeClass("active");
-            $("#" + this._id + "-toolbar ul[for='" + id + "']").addClass("active");
+            $("#" + Nav._id + "-toolbar ul.active").removeClass("active");
+            $("#" + Nav._id + "-toolbar ul[for='" + id + "']").addClass("active");
     
-            $("#" + this._id + "-contents > .active").removeClass("active");
+            $("#" + Nav._id + "-contents > .active").removeClass("active");
             toSelect.addClass("active");
             toSelect.trigger("show");
             
-            $("#" + this._id + " ul li a.active").removeClass("active");
-            $("#" + this._id + " ul li a[for=" + id + "]").addClass("active");
+            $("#" + Nav._id + " ul li a.active").removeClass("active");
+            $("#" + Nav._id + " ul li a[for=" + id + "]").addClass("active");
             
             Nav.updateTitle();
         }
@@ -153,18 +153,18 @@ Nav = {
         var iconId = elt.parentNode.parentNode.getAttribute("for");
         id = id.substring(iconId.length + 1);
 
-        for (var i in this._actions[iconId])
+        for (var i in Nav._actions[iconId])
         {
-            if (this._actions[iconId][i].id == id)
+            if (Nav._actions[iconId][i].id == id)
             {
-                this._actions[iconId][i].fn();
+                Nav._actions[iconId][i].fn();
             }
         }
     },
     
     updateTitle: function()
     {
-        var id = $("#" + this._id + " ul li a.active").attr("for");
+        var id = $("#" + Nav._id + " ul li a.active").attr("for");
         var toSelect = $("#" + id);
         
         var t = $(".header .title div")
@@ -196,20 +196,20 @@ Nav = {
     initialize: function()
     {
         
-        this._id = "nav-" + parseInt(Math.random() * 1000);
+        Nav._id = "nav-" + parseInt(Math.random() * 1000);
         var code = "<header class=\"header\">"
                     + "<div class=\"title\"><div>" + About._i18n[Language].smallName + "</div></div>"
-                    + "<nav class=\"toolbar\" id=\"" + this._id + "-toolbar\">"
-                        + this._drawActions()
+                    + "<nav class=\"toolbar\" id=\"" + Nav._id + "-toolbar\">"
+                        + Nav._drawActions()
                     + "</nav>"
                     + "</header>"
-                    + "<nav class=\"nav\" id=\"" + this._id + "\">"
+                    + "<nav class=\"nav\" id=\"" + Nav._id + "\">"
                         + "<ul>" 
-                            + this._drawIcons()
+                            + Nav._drawIcons()
                         + "</ul>"
                     + "</nav>"
-                    + "<div class=\"contents\" id=\"" + this._id + "-contents\">"
-                        + this._drawContents()
+                    + "<div class=\"contents\" id=\"" + Nav._id + "-contents\">"
+                        + Nav._drawContents()
                     + "</div>";
         $(document.body).prepend(code);
         
@@ -374,3 +374,5 @@ Nav = {
         }
     }
 }
+
+Utils._toInitialize.push(Nav.initialize);

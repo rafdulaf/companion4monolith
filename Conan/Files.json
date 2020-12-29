@@ -1,0 +1,42 @@
+{
+    "css": [
+        "vendors/css/fonts-1.3.0.css",
+        "general/body.css",
+        "general/nav.css",
+        "general/search.css",
+        "about/about.css",
+        "maps/maps.css",
+        "rules/rules.css",
+        
+        "encyclopedia/encyclopedia.css",
+        "encyclopedia/equipments/equipments.css",
+        "encyclopedia/spells/spells.css",
+        "encyclopedia/heroes/heroes.css",
+        "encyclopedia/tiles/tiles.css",
+        "encyclopedia/tokens/tokens.css",
+        "encyclopedia/models/models.css",
+        
+        "studio/studio.css",
+        "studio/card_equipment/card_equipment.css",
+        "studio/card_spell/card_spell.css",
+        "studio/hero_sheet/hero_sheet.css",
+        "studio/tile/tile.css"
+    ],
+    "scripts": [
+        "general/default.js",
+        "about/about.js",
+        "encyclopedia/encyclopedia.js",
+        "encyclopedia/equipments/equipments.js",
+        "encyclopedia/spells/spells.js",
+        "encyclopedia/heroes/heroes.js",
+        "encyclopedia/tiles/tiles.js",
+        "encyclopedia/tokens/tokens.js",
+        "encyclopedia/models/models.js",
+        "rules/rules.js",
+        "studio/studio.js",
+        "studio/card_equipment/card_equipment.js",
+        "studio/card_spell/card_spell.js",
+        "studio/hero_sheet/hero_sheet.js",
+        "studio/tile/tile.js"
+    ]
+}

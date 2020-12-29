@@ -639,3 +639,5 @@ var Maps = {
         );
     }
 }
+
+Utils._toInitialize.push(Maps.init);
