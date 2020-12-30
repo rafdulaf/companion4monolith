@@ -39,19 +39,19 @@ Tutorial = {
     },
 
     init: function() {
-        if (localStorage.getItem("Language") == null)
+        if (localStorage.getItem(Application + "_Language") == null)
         {
             window.setTimeout(function() {
                 About.actionToast("tutorial-settings", Tutorial._i18n[Language].settings_message, [{ text: Tutorial._i18n[Language].settings_switch, act: "Tutorial._swithLanguage()" }, { text: Tutorial._i18n[Language].settings_continue, act: "Tutorial._keepLanguage()" }]);
             }, 1000);
         }
-        else if (!localStorage.getItem("Extensions"))
+        else if (!localStorage.getItem(Application + "_Extensions"))
         {
             window.setTimeout(function() {
                 About.actionToast("tutorial-extensions", Tutorial._i18n[Language].extensions_message, [{ text: Tutorial._i18n[Language].extensions_continue, act: "Tutorial._ignoreCustom()" }, { text: Tutorial._i18n[Language].extensions_act, act: "Tutorial._custom()" }]);
             }, 1000);
         }
-        else if (!localStorage.getItem("Audience"))
+        else if (!localStorage.getItem(Application + "_Audience"))
         {
             window.setTimeout(function() {
                 About.actionToast("tutorial-audience", Tutorial._i18n[Language].audience_message, [{ text: Tutorial._i18n[Language].audience_ok, act: "Tutorial._audience()" }]);
@@ -59,30 +59,30 @@ Tutorial = {
         }
     },
     _custom: function() {
-        localStorage.setItem("Extensions", JSON.stringify(Extensions));
+        localStorage.setItem(Application + "_Extensions", JSON.stringify(Extensions));
         About.hideActionToast();
         About._custom();
         Tutorial.init();
     },
     _ignoreCustom: function() {
-        localStorage.setItem("Extensions", JSON.stringify(Extensions));
+        localStorage.setItem(Application + "_Extensions", JSON.stringify(Extensions));
         About.hideActionToast();
         $(document.body).append("<div class=\"blinkmenu\"></div>");
         Tutorial.init();
     },
     _swithLanguage: function() {
-        localStorage.setItem("Language", Language == 'en' ? 'fr' : 'en');
+        localStorage.setItem(Application + "_Language", Language == 'en' ? 'fr' : 'en');
         $(document.body).append("<div class=\"blinkmenu\"></div>");
         window.setTimeout("window.location.reload(true);", 1000);
     },
     _keepLanguage: function() {
-        localStorage.setItem("Language", Language);
+        localStorage.setItem(Application + "_Language", Language);
         About.hideActionToast();
         $(document.body).append("<div class=\"blinkmenu\"></div>");
         Tutorial.init();
     },
     _audience: function() {
-        localStorage.setItem("Audience", new Date());
+        localStorage.setItem(Application + "_Audience", new Date());
         About.hideActionToast();
         Tutorial.init();
     }

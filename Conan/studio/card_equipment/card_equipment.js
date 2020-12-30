@@ -163,7 +163,7 @@ var CardEquipment = {
     {
         var html = "";
 
-        var cards = JSON.parse(localStorage.getItem("StudioEquipmentCards")) || [];
+        var cards = JSON.parse(localStorage.getItem(Application + "_StudioEquipmentCards")) || [];
         if (cards.length > 0)
         {
             for (var i in cards)
@@ -171,7 +171,7 @@ var CardEquipment = {
                 var prefix = "", suffix = "";
                 if (withEditLink !== false)
                 {
-                    prefix = "<a href='javascript:void(0)' onclick='CardEquipment.add(JSON.parse(localStorage.getItem(\"StudioEquipmentCards\"))[" + i + "])'>";
+                    prefix = "<a href='javascript:void(0)' onclick='CardEquipment.add(JSON.parse(localStorage.getItem(\"" + Application + "_StudioEquipmentCards\"))[" + i + "])'>";
                     suffix = "</a>";
                 }
                 else
@@ -567,7 +567,7 @@ var CardEquipment = {
         {
             var card = CardEquipment._form2card();
 
-            var cards = JSON.parse(localStorage.getItem("StudioEquipmentCards")) || [];
+            var cards = JSON.parse(localStorage.getItem(Application + "_StudioEquipmentCards")) || [];
             var newCards = [];
 
             for (var c in cards)
@@ -582,7 +582,7 @@ var CardEquipment = {
                 }
             }
 
-            localStorage.setItem("StudioEquipmentCards", JSON.stringify(newCards));
+            localStorage.setItem(Application + "_StudioEquipmentCards", JSON.stringify(newCards));
             CardEquipment._displayCards();
             Nav.closeDialog();
         }
@@ -605,7 +605,7 @@ var CardEquipment = {
             return;
         }
 
-        var cards = JSON.parse(localStorage.getItem("StudioEquipmentCards")) || [];
+        var cards = JSON.parse(localStorage.getItem(Application + "_StudioEquipmentCards")) || [];
         var newCards = [];
 
         var done = false;
@@ -626,7 +626,7 @@ var CardEquipment = {
             newCards.push(card);
         }
 
-        localStorage.setItem("StudioEquipmentCards", JSON.stringify(newCards));
+        localStorage.setItem(Application + "_StudioEquipmentCards", JSON.stringify(newCards));
         CardEquipment._displayCards();
         Nav.closeDialog();
     },

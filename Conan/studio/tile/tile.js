@@ -181,7 +181,7 @@ var Tile = {
     {
         var html = "";
 
-        var tiles = JSON.parse(localStorage.getItem("StudioTiles")) || [];
+        var tiles = JSON.parse(localStorage.getItem(Application + "_StudioTiles")) || [];
         if (tiles.length > 0)
         {
             for (var i in tiles)
@@ -189,7 +189,7 @@ var Tile = {
                 var prefix = "", suffix = "";
                 if (withEditLink !== false)
                 {
-                    prefix = "<a href='javascript:void(0)' onclick='Tile.add(JSON.parse(localStorage.getItem(\"StudioTiles\"))[" + i + "])'>";
+                    prefix = "<a href='javascript:void(0)' onclick='Tile.add(JSON.parse(localStorage.getItem(\"" + Application + "_StudioTiles\"))[" + i + "])'>";
                     suffix = "</a>";
                 }
                 else
@@ -679,7 +679,7 @@ var Tile = {
         {
             var tile = Tile._form2tile();
 
-            var tiles = JSON.parse(localStorage.getItem("StudioTiles")) || [];
+            var tiles = JSON.parse(localStorage.getItem(Application + "_StudioTiles")) || [];
             var newTiles = [];
 
             for (var c in tiles)
@@ -694,7 +694,7 @@ var Tile = {
                 }
             }
 
-            localStorage.setItem("StudioTiles", JSON.stringify(newTiles));
+            localStorage.setItem(Application + "_StudioTiles", JSON.stringify(newTiles));
             Tile._displayTiles();
             Nav.closeDialog();
         }
@@ -717,7 +717,7 @@ var Tile = {
             return;
         }
 
-        var tiles = JSON.parse(localStorage.getItem("StudioTiles")) || [];
+        var tiles = JSON.parse(localStorage.getItem(Application + "_StudioTiles")) || [];
         var newTiles = [];
 
         var done = false;
@@ -738,7 +738,7 @@ var Tile = {
             newTiles.push(tile);
         }
 
-        localStorage.setItem("StudioTiles", JSON.stringify(newTiles));
+        localStorage.setItem(Application + "_StudioTiles", JSON.stringify(newTiles));
         Tile._displayTiles();
         Nav.closeDialog();
     },

@@ -1,0 +1,71 @@
+{
+    "types": [
+        {
+            "id": "box",
+            "text": {
+                "fr": "Boîte de jeu",
+                "en": "Game box"
+            },
+            "single": true
+        }, {
+            "id": "other",
+            "text": {
+                "fr": "Extensions",
+                "en": "Expansions"
+            },
+            "single": false
+        }
+    ],
+
+    "list": [
+        {
+            "id": "corebox",
+            "type": "box",
+            "title": {
+                "fr": "Boîte de base",
+                "en": "Core box"
+            },
+            "short": {
+                "fr": "Boîte de base",
+                "en": "Core box"
+            }
+        }, 
+        
+         {
+            "id": "arkham-asylum",
+            "type": "other",
+            "title": {
+                "fr": "Boîte d'extension \"Arkham asylum\"",
+                "en": "\"Arkham asylum\" expansion box"
+            },
+            "short": {
+                "fr": "Boîte Arkham asylum",
+                "en": "Arkham asylum box"
+            }
+        }, 
+        {
+            "id": "wayne-manor",
+            "type": "other",
+            "title": {
+                "fr": "Boîte d'extension \"Wayne Manor\"",
+                "en": "\"Wayne Manor\" expansion box"
+            },
+            "short": {
+                "fr": "Boîte Wayne Manor",
+                "en": "Wayne Manor box"
+            }
+        }, 
+        {
+            "id": "maps-pack",
+            "type": "other",
+            "title": {
+                "fr": "Extensions cartes GCPD/Egouts",
+                "en": "GCPD/Sewers maps expansion"
+            },
+            "short": {
+                "fr": "Pack de cartes",
+                "en": "Maps pack"
+            }
+        }
+    ]
+}

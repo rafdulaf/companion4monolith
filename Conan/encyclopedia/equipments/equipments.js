@@ -507,7 +507,7 @@ var EncyclopediaEquipments = {
     _transfert: function(id) {
         if (confirm(EncyclopediaEquipments._i18n[Language].transfertConfirm))
         {
-            var cards = JSON.parse(localStorage.getItem("StudioEquipmentCards")) || [];
+            var cards = JSON.parse(localStorage.getItem(Application + "_StudioEquipmentCards")) || [];
             
             var images = {};
             
@@ -526,7 +526,7 @@ var EncyclopediaEquipments = {
                 cards.push(studioEquipment);
             }
             
-            localStorage.setItem("StudioEquipmentCards", JSON.stringify(cards));
+            localStorage.setItem(Application + "_StudioEquipmentCards", JSON.stringify(cards));
             
             CardEquipment._displayCards();
             

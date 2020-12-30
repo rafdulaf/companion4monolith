@@ -579,9 +579,9 @@ var EncyclopediaSpells = {
             var spell = EncyclopediaSpells._findSpellsById(id)[0];
             var studioSpell = EncyclopediaSpells._convertSpellToStudio(spell);
 
-            var cards = JSON.parse(localStorage.getItem("StudioSpellCards")) || [];
+            var cards = JSON.parse(localStorage.getItem(Application + "_StudioSpellCards")) || [];
             cards.push(studioSpell);
-            localStorage.setItem("StudioSpellCards", JSON.stringify(cards));
+            localStorage.setItem(Application + "_StudioSpellCards", JSON.stringify(cards));
 
             CardSpell._displayCards();
 
