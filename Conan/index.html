@@ -39,6 +39,16 @@
         <script>
             Application = "Conan";
             Languages = ["fr", "en", "it"];
+            
+            // Old data conversion
+            ["Extensions", "Language", "StudioTiles", "StudioHeroSheets", "StudioSpellCards", "StudioEquipmentCards", "Audience"].forEach(function(id) {
+            	var oldValue = localStorage.getItem(id);
+            	if (oldValue)
+           		{
+            		localStorage.setItem(Application + "_" + id, oldValue);
+            		localStorage.removeItem(id);
+           		}
+            });
         </script>
         <script src="../_common/general/utils.0.16.js"></script>
         

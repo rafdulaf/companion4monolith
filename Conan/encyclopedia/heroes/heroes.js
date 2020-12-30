@@ -394,7 +394,7 @@ var EncyclopediaHeroes = {
     _transfert: function(id) {
         if (confirm(EncyclopediaHeroes._i18n[Language].transfertConfirm))
         {
-            var cards = JSON.parse(localStorage.getItem("StudioHeroSheets")) || [];
+            var cards = JSON.parse(localStorage.getItem(Application + "_StudioHeroSheets")) || [];
 
             var images = {};
 
@@ -402,7 +402,7 @@ var EncyclopediaHeroes = {
             var studioHero = EncyclopediaHeroes._convertHeroToStudio(hero, true);
             cards.push(studioHero);
 
-            localStorage.setItem("StudioHeroSheets", JSON.stringify(cards));
+            localStorage.setItem(Application + "_StudioHeroSheets", JSON.stringify(cards));
 
             HeroSheet._displayCards();
 

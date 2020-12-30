@@ -163,7 +163,7 @@ var HeroSheet = {
     {
         var html = "";
 
-        var cards = JSON.parse(localStorage.getItem("StudioHeroSheets")) || [];
+        var cards = JSON.parse(localStorage.getItem(Application + "_StudioHeroSheets")) || [];
         if (cards.length > 0)
         {
             for (var i in cards)
@@ -171,7 +171,7 @@ var HeroSheet = {
                 var prefix = "", suffix = "";
                 if (withEditLink !== false)
                 {
-                    prefix = "<a href='javascript:void(0)' onclick='HeroSheet.add(JSON.parse(localStorage.getItem(\"StudioHeroSheets\"))[" + i + "])'>";
+                    prefix = "<a href='javascript:void(0)' onclick='HeroSheet.add(JSON.parse(localStorage.getItem(\"" + Application + "_StudioHeroSheets\"))[" + i + "])'>";
                     suffix = "</a>";
                 }
                 else
@@ -557,7 +557,7 @@ var HeroSheet = {
         {
             var sheet = HeroSheet._form2sheet();
 
-            var sheets = JSON.parse(localStorage.getItem("StudioHeroSheets")) || [];
+            var sheets = JSON.parse(localStorage.getItem(Application + "_StudioHeroSheets")) || [];
             var newSheets = [];
 
             for (var c in sheets)
@@ -572,7 +572,7 @@ var HeroSheet = {
                 }
             }
 
-            localStorage.setItem("StudioHeroSheets", JSON.stringify(newSheets));
+            localStorage.setItem(Application + "_StudioHeroSheets", JSON.stringify(newSheets));
             HeroSheet._displayCards();
             Nav.closeDialog();
         }
@@ -611,7 +611,7 @@ var HeroSheet = {
             return;
         }
 
-        var sheets = JSON.parse(localStorage.getItem("StudioHeroSheets")) || [];
+        var sheets = JSON.parse(localStorage.getItem(Application + "_StudioHeroSheets")) || [];
         var newSheets = [];
 
         var done = false;
@@ -632,7 +632,7 @@ var HeroSheet = {
             newSheets.push(sheet);
         }
 
-        localStorage.setItem("StudioHeroSheets", JSON.stringify(newSheets));
+        localStorage.setItem(Application + "_StudioHeroSheets", JSON.stringify(newSheets));
         HeroSheet._displayCards();
         Nav.closeDialog();
     },

@@ -179,32 +179,35 @@ var About = {
     {
         $("nav.menu input")[0].checked = false;
 
-        Nav.dialog(About._i18n[Language].preferences,
-            "<div class=\"custom\">"
+        var s =             "<div class=\"custom\">"
             +       "<div>" + About._i18n[Language].preferences_text + "</div>"
 
             +       "<div class=\"custom-wrap\">"
             +       "<fieldset><legend>" + About._i18n[Language].preferences_general + "</legend>"
             +           "<label for=\"custom-lang\">" + About._i18n[Language].custom_langlabel + "</label>"
             +           "<select id=\"custom-lang\" name=\"custom-lang\">"
-            +               "<option value=\"\">" + About._i18n[Language].custom_automatic_lang + "</option>"
-            +               "<option value=\"fr\">" + About._i18n['fr'].custom_lang + "</option>"
-            +               "<option value=\"en\">" + About._i18n['en'].custom_lang + "</option>"
-            +               "<option value=\"it\">" + About._i18n['it'].custom_lang + "</option>"
-            +           "</select>"
+            +               "<option value=\"\">" + About._i18n[Language].custom_automatic_lang + "</option>";
+        
+        Languages.forEach(code => s += "<option value=\"" + code + "\">" + About._i18n[code].custom_lang + "</option>");
+            
+        s += "</select>"
             +           "</fieldset>"
             +       "</div>"
 
-            + "</div>",
+            + "</div>"
+ 
+        
+        Nav.dialog(About._i18n[Language].preferences,
+            s,
 
             function()
             {
-                var oldLanguage = localStorage.getItem("Language");
+                var oldLanguage = localStorage.getItem(Application + "_Language");
 
                 // Save
                 var selectedLanguage = $(".custom *[name=custom-lang]")[0].value;
                 Language = selectedLanguage || autodetectLanguage();
-                localStorage.setItem("Language", selectedLanguage);
+                localStorage.setItem(Application + "_Language", selectedLanguage);
 
                 if (oldLanguage != selectedLanguage)
                 {
@@ -213,7 +216,7 @@ var About = {
             }
         );
 
-        $(".custom *[name=custom-lang]")[0].value = localStorage.getItem("Language") || "";
+        $(".custom *[name=custom-lang]")[0].value = localStorage.getItem(Application + "_Language") || "";
 
         var display = false;
         $(".custom input, .custom select").on('change', function() {
@@ -323,7 +326,7 @@ var About = {
                     }
                 });
 
-                localStorage.setItem("Extensions", JSON.stringify(Extensions));
+                localStorage.setItem(Application + "_Extensions", JSON.stringify(Extensions));
 
                 function _notEquals(a, b)
                 {

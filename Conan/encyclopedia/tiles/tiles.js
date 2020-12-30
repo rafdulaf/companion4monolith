@@ -745,7 +745,7 @@ var EncyclopediaTiles = {
     _transfert: function(id) {
         if (confirm(EncyclopediaTiles._i18n[Language].transfertConfirm))
         {
-            var studiotiles = JSON.parse(localStorage.getItem("StudioTiles")) || [];
+            var studiotiles = JSON.parse(localStorage.getItem(Application + "_StudioTiles")) || [];
 
             var colors = {};
 
@@ -764,7 +764,7 @@ var EncyclopediaTiles = {
                 studiotiles.push(studioTile);
             }
 
-            localStorage.setItem("StudioTiles", JSON.stringify(studiotiles));
+            localStorage.setItem(Application + "_StudioTiles", JSON.stringify(studiotiles));
 
             Tile._displayTiles();
 

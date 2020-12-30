@@ -34,11 +34,8 @@ Utils = {
     
     loadApplication: async function()
     {
-        // Initialize application storage
-        localStorage.setItem(Application, localStorage.getItem(Application) || {});
-        
         // Set language
-        Language = localStorage.getItem(Application).Language || Utils.autodetectLanguage();
+        Language = localStorage.getItem(Application + "_Language") || Utils.autodetectLanguage();
         
         // Load version
         Version = (await Utils.loadJSON("../_common/Version.json")).version;

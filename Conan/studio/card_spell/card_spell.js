@@ -139,7 +139,7 @@ var CardSpell = {
     {
         var html = "";
 
-        var cards = JSON.parse(localStorage.getItem("StudioSpellCards")) || [];
+        var cards = JSON.parse(localStorage.getItem(Application + "_StudioSpellCards")) || [];
         if (cards.length > 0)
         {
             for (var i in cards)
@@ -147,7 +147,7 @@ var CardSpell = {
                 var prefix = "", suffix = "";
                 if (withEditLink !== false)
                 {
-                    prefix = "<a href='javascript:void(0)' onclick='CardSpell.add(JSON.parse(localStorage.getItem(\"StudioSpellCards\"))[" + i + "])'>";
+                    prefix = "<a href='javascript:void(0)' onclick='CardSpell.add(JSON.parse(localStorage.getItem(\"" + Application + "_StudioSpellCards\"))[" + i + "])'>";
                     suffix = "</a>";
                 }
                 else
@@ -388,7 +388,7 @@ var CardSpell = {
         {
             var card = CardSpell._form2card();
 
-            var cards = JSON.parse(localStorage.getItem("StudioSpellCards")) || [];
+            var cards = JSON.parse(localStorage.getItem(Application + "_StudioSpellCards")) || [];
             var newCards = [];
 
             for (var c in cards)
@@ -403,7 +403,7 @@ var CardSpell = {
                 }
             }
 
-            localStorage.setItem("StudioSpellCards", JSON.stringify(newCards));
+            localStorage.setItem(Application + "_StudioSpellCards", JSON.stringify(newCards));
             CardSpell._displayCards();
             Nav.closeDialog();
         }
@@ -426,7 +426,7 @@ var CardSpell = {
             return;
         }
 
-        var cards = JSON.parse(localStorage.getItem("StudioSpellCards")) || [];
+        var cards = JSON.parse(localStorage.getItem(Application + "_StudioSpellCards")) || [];
         var newCards = [];
 
         var done = false;
@@ -447,7 +447,7 @@ var CardSpell = {
             newCards.push(card);
         }
 
-        localStorage.setItem("StudioSpellCards", JSON.stringify(newCards));
+        localStorage.setItem(Application + "_StudioSpellCards", JSON.stringify(newCards));
         CardSpell._displayCards();
         Nav.closeDialog();
     },
