@@ -1,0 +1,29 @@
+.header {
+    background-color: #3037ff;
+}
+
+.header .title, 
+.nav {
+    font-family: 'Rajdhani-Bold_1x';
+}
+    
+.nav li a.active {
+    color: #3037ff;
+}   
+
+.dialog-title {
+    font-family: 'Rajdhani-Bold_1x';
+}
+.dialog-content {
+    font-family: 'ZillaSlab-Light_1m';
+} 
+.dialog-content a {
+    color: #c39f76;
+}
+
+.nav-menu a {
+    font-family: 'Rajdhani-Bold_1x';
+}
+.nav-menu a.slick-current {
+    border-bottom-color: #3037ff;
+}
