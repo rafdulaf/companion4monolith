@@ -8,14 +8,14 @@
 }
 
 #hero {
-    font-family: 'Hyborian';
+    font-family: 'Primary';
     overflow: auto;
     position: relative;
 }
 
 
 .sheet.herosheet {
-    font-family: 'Hyborian';
+    font-family: 'Primary';
     text-align: left;
     
     position: relative;
@@ -122,7 +122,7 @@
 .sheet.herosheet div.name {
     position: absolute;
     font-size: 42%;
-    font-family: 'Hyborian';
+    font-family: 'Primary';
     left: 1.5%;
     top: 68%;
     color: #363131;
@@ -255,7 +255,7 @@
     border-radius: 40px;
     z-index: 10;
     pointer-events: none;
-    font-family: "Hyborian";
+    font-family: "Primary";
 }
 
 
@@ -323,7 +323,7 @@
 .dialog .sheet .field input#hsname,
 .dialog .sheet .field input#hssubname {
    font-size: 20px;
-   font-family: 'Hyborian';
+   font-family: 'Primary';
    text-align: right;
    color: #000000;
    width: 60%;
@@ -515,7 +515,7 @@
     width: calc(100% - 54px);
     height: 30px;
     font-size: 26px;
-    font-family: 'Moolbor';
+    font-family: 'Secondary';
     margin-left: 10px;
 }
 .dialog .sheet .field.skills .skill input {
@@ -597,7 +597,7 @@
 .dialog .sheet .field input#shimagerotation {
    font-size: 22px;
    line-height: 36px;
-   font-family: 'Moolbor';
+   font-family: 'Secondary';
 }
 
 .dialog .sheet input#shimage {
@@ -616,7 +616,7 @@
     margin-bottom: 0.5em;
     margin-top: 0;
     text-align: center;
-    font-family: 'Hyborian';
+    font-family: 'Primary';
     font-size: 16px;
     vertical-align: top;
 }

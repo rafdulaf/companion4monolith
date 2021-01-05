@@ -26,14 +26,14 @@
     margin-bottom: 0.5em;
     margin-top: 0.5em;
     text-align: left;
-    font-family: 'Hyborian';
+    font-family: 'Primary';
     font-size: 16px;
     vertical-align: top;
 }
 
 .dialog .printcards .print { text-align: center; margin: 20px; }
 .dialog .printcards .print button {
-    font-family: 'Hyborian';
+    font-family: 'Primary';
     padding: 5px 15px;
     background-color: #3f3f3f;
     color: #FFF;

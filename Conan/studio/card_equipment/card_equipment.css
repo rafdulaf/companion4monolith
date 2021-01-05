@@ -8,12 +8,12 @@
 }
 
 #equipment {
-    font-family: 'Hyborian';
+    font-family: 'Primary';
     overflow: auto;
     position: relative;
 }
 .card.equipement {
-    font-family: 'Hyborian';
+    font-family: 'Primary';
     text-align: left;
     
     position: relative;
@@ -216,7 +216,7 @@
     border-radius: 40px;
     z-index: 10;
     pointer-events: none;
-    font-family: "Hyborian";
+    font-family: "Primary";
 }
 
 
@@ -249,7 +249,7 @@
 .dialog .equipment .field input#eqname {
    font-size: 34px;
    height: 72px;
-   font-family: 'Hyborian';
+   font-family: 'Primary';
    text-align: center;
    color: #000000;
    background-image: url(img/name-background.png);
@@ -401,7 +401,7 @@
 .dialog .equipment .field input#eqimagerotation {
    font-size: 22px;
    line-height: 36px;
-   font-family: 'Moolbor';
+   font-family: 'Secondary';
 }
 .dialog .equipment .field select.dice
 {
@@ -485,7 +485,7 @@
 }
 .dialog .equipment .imageatfront input[type=checkbox] + label {
     font-size: 24px;
-    font-family: 'Moolbor';
+    font-family: 'Secondary';
 }
 
 .dialog .equipment-save:before {
@@ -536,7 +536,7 @@
 .dialog .equipment .ui-selectmenu-icon.ui-icon.ui-icon-triangle-1-s { background-image: none; }
 .dialog .equipment .ui-menu-item, .dialog .equipment .ui-menu-item-wrapper { height: 40px; position: relative; }
 .dialog .equipment .ui-selectmenu-button.ui-button.ui-widget.ui-selectmenu-button-closed.ui-corner-all { border-color: transparent; }
-.dialog .equipment .dice ~ .ui-selectmenu-menu ul li:nth-child(1):before, .dialog .equipment select[data-value=none] + span .ui-selectmenu-text:before { content: "?"; font-size: 26px; font-family: 'Hyborian'; color: #7F7F7F; position: absolute; top: 0; left: 32%; }
+.dialog .equipment .dice ~ .ui-selectmenu-menu ul li:nth-child(1):before, .dialog .equipment select[data-value=none] + span .ui-selectmenu-text:before { content: "?"; font-size: 26px; font-family: 'Primary'; color: #7F7F7F; position: absolute; top: 0; left: 32%; }
 .dialog .equipment .dice ~ .ui-selectmenu-menu ul li:nth-child(2):before, .dialog .equipment select[data-value=red] + span { background-image: url(img/dice_red.png) !important; }
 .dialog .equipment .dice ~ .ui-selectmenu-menu ul li:nth-child(3):before, .dialog .equipment select[data-value=redreroll] + span { background-image: url(img/dice_redreroll.png) !important; }
 .dialog .equipment .dice ~ .ui-selectmenu-menu ul li:nth-child(4):before, .dialog .equipment select[data-value=orange] + span { background-image: url(img/dice_orange.png) !important; }
@@ -544,7 +544,7 @@
 .dialog .equipment .dice ~ .ui-selectmenu-menu ul li:nth-child(6):before, .dialog .equipment select[data-value=yellow] + span { background-image: url(img/dice_yellow.png) !important; }
 .dialog .equipment .dice ~ .ui-selectmenu-menu ul li:nth-child(7):before, .dialog .equipment select[data-value=yellowreroll] + span { background-image: url(img/dice_yellowreroll.png) !important; }
 
-.dialog .equipment select.skills { font-family: 'Moolbor'; font-size: 19px; }
+.dialog .equipment select.skills { font-family: 'Secondary'; font-size: 19px; }
 .dialog .equipment .field.skills select[data-value=none] ~ select {
     display: none;
 }
@@ -558,7 +558,7 @@
     margin-bottom: 0.5em;
     margin-top: 0;
     text-align: center;
-    font-family: 'Hyborian';
+    font-family: 'Primary';
     font-size: 16px;
     vertical-align: top;
 }

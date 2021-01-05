@@ -1,12 +1,12 @@
 @font-face {
-    font-family: 'Hyborian';
+    font-family: 'Primary';
     font-weight: normal;
     font-style: normal;
     src: url("../fonts/Hyborian.woff");
 }
 
 @font-face {
-  font-family: 'Moolbor';
+  font-family: 'Secondary';
   font-style: normal;
   font-weight: 400;
   font-display: auto;

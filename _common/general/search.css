@@ -14,6 +14,7 @@
 .search-engine .facet > span span {
     display: inline-block;
     vertical-align: middle;
+    font-family: 'Secondary';
     padding-top: 4px;
     margin-left: 5px;
     line-height: 50%;
@@ -26,7 +27,7 @@
     width: 100%;
 }
 
-.search-engine .facet label *{
+.search-engine .facet label * {
     display: inline-block;
     vertical-align: top;
 }
@@ -34,6 +35,7 @@
     white-space: nowrap;
     display: block;
     font-size: 140%;
+    font-family: 'Secondary';
     line-height: 120%;
     height: 18px;
 }

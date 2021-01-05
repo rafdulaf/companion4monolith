@@ -1,5 +1,5 @@
 #encyclopedia-heroes {
-    font-family: 'Hyborian';
+    font-family: 'Primary';
     overflow: auto;
     position: relative;
 }
@@ -53,7 +53,7 @@
 .herodetails .models a > span {
     display: block;
     position: absolute;
-    font-family: 'Hyborian';
+    font-family: 'Primary';
     font-size: 16px;
     text-align: center;
     left: 0;
