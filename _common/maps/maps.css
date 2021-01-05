@@ -69,6 +69,7 @@
     padding: 15px 5px 5px 10px;
     background-color: rgba(0,0,0,0.3);
     font-family: 'Primary';
+    text-transform: uppercase;
 }
 .map-index > ul > li > a > .map-index-board-sublegend {
     position: absolute;
@@ -96,10 +97,10 @@
     padding: 5px 5px 5px 5px;
 }
 .map-index > ul > li > a > .map-index-board-legend {
-    font-size: 0.8125rem;
+    font-size: calc(var(--primary-size) * 0.8125rem);
 }
 .map-index > ul > li > a > .map-index-board-sublegend {
-    font-size: 0.8125rem;
+    font-size: calc(var(--secondary-size) * 0.8125rem);
 }
 @media screen and (min-width: 380px) {
     .map-index > ul > li > a > .map-index-board-image {
@@ -108,10 +109,10 @@
         padding: 5px 5px 5px 5px;
     }
     .map-index > ul > li > a > .map-index-board-legend {
-        font-size: 0.8125rem;
+        font-size: calc(var(--primary-size) * 0.8125rem);
     }
     .map-index > ul > li > a > .map-index-board-sublegend {
-        font-size: 1.0625rem;
+        font-size: calc(var(--secondary-size) * 1.0625rem);
     }
 }
 @media screen and (min-width: 640px) {
@@ -121,10 +122,10 @@
         padding: 5px 5px 5px 5px;
     }
     .map-index > ul > li > a > .map-index-board-legend {
-        font-size: 0.8125rem;
+        font-size: calc(var(--primary-size) * 0.8125rem);
     }
     .map-index > ul > li > a > .map-index-board-sublegend {
-        font-size: 1.0625rem;
+        font-size: calc(var(--secondary-size) * 1.0625rem);
     }
 }
 @media screen and (min-width: 768px) {
@@ -134,10 +135,10 @@
         padding: 5px 5px 5px 5px;
     }
     .map-index > ul > li > a > .map-index-board-legend {
-        font-size: 0.9375rem;
+        font-size: calc(var(--primary-size) * 0.9375rem);
     }
     .map-index > ul > li > a > .map-index-board-sublegend {
-        font-size: 1.125rem;
+        font-size: calc(var(--secondary-size) * 1.125rem);
     }
 }
 @media screen and (min-width: 1024px) {
@@ -147,10 +148,10 @@
         padding: 5px 5px 5px 5px;
     }
     .map-index > ul > li > a > .map-index-board-legend {
-        font-size: 1.375rem;
+        font-size: calc(var(--primary-size) * 1.375rem);
     }
     .map-index > ul > li > a > .map-index-board-sublegend {
-        font-size: 1.375rem;
+        font-size: calc(var(--secondary-size) * 1.375rem);
     }
 }
 
@@ -263,12 +264,13 @@
     border-radius: 40px;
     z-index: 10;
     pointer-events: none;
-    font-family: "Primary";
+    font-family: 'Primary';
+    text-transform: uppercase;
 }
 
 .map-map-help {
     padding: 10px;
-    font-size: 1.5rem;
+    font-size: calc(var(--secondary-size) * 1.5rem);
 }
 
 .map-map-help h1 {
@@ -330,7 +332,7 @@
     border-radius: 30px;
     width: 20px;
     height: 20px;
-    font-size: 1.25rem;
+    font-size: calc(var(--secondary-size) * 1.25rem);
     font-family: 'Secondary';
     text-shadow: 0px 0px 3px #000;
     z-index: 1;
@@ -356,13 +358,13 @@
     display: inline-block;
     width: 16px;
     height: 16px;
-    font-size: 1.4375rem;
+    font-size: calc(var(--secondary-size) * 1.4375rem);
     text-align: center;
     line-height: 26px;
 }
 .map-help-rule-title {
     font-weight: bold;    
-    font-size: 1.625rem;
+    font-size: calc(var(--secondary-size) * 1.625rem);
     line-height: 22px;
 }
 .map-help-rule-title[data-num='1']:before { border-color: #2F5496; }
@@ -380,7 +382,7 @@
 
 .map-help-rule-description, .map-help-rule-areas {
     padding-left: 33px;
-    font-size: 1.5625rem;
+    font-size: calc(var(--secondary-size) * 1.5625rem);
     line-height: 20px;
 }
 .map-help-rule-areas .map-help-rule-areas-square {

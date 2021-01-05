@@ -34,7 +34,7 @@
 .search-engine .facet label {
     white-space: nowrap;
     display: block;
-    font-size: 140%;
+    font-size: calc(var(--secondary-size) * 1.4rem);
     font-family: 'Secondary';
     line-height: 120%;
     height: 18px;

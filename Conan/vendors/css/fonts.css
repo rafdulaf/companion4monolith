@@ -1,5 +1,11 @@
+:root {
+    --primary-size: 1;
+    --secondary-size: 1;
+}
+
 @font-face {
     font-family: 'Primary';
+    font-display: block;
     font-weight: normal;
     font-style: normal;
     src: url("../fonts/Hyborian.woff");
@@ -7,6 +13,7 @@
 
 @font-face {
   font-family: 'Secondary';
+  font-display: block;
   font-style: normal;
   font-weight: 400;
   font-display: auto;

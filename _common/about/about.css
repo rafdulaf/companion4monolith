@@ -36,7 +36,7 @@
 }
 
 .about {
-    font-size: 1.5rem;
+    font-size: calc(var(--secondary-size) * 1.5rem);
     font-family: 'Secondary';
 }
 .about .about-zone-about img {
@@ -48,17 +48,17 @@
 
 .about h1, .contribute h1 {
     margin-bottom: 0px;
-    font-size: 2.25rem;
+    font-size: calc(var(--secondary-size) * 2.25rem);
 }
 .about h2, .contribute h2 {
     margin-bottom: 0px;
     margin-top: 5px;
-    font-size: 1.5rem;
+    font-size: calc(var(--secondary-size) * 1.5rem);
 }
 .about h3, .contribute h3 {
     margin-bottom: 0px;
     margin-top: 5px;
-    font-size: 1.25rem;
+    font-size: calc(var(--secondary-size) * 1.25rem);
 }
 .about p, .contribute p {
     margin-top: 0;
@@ -72,12 +72,12 @@
 .custom fieldset select {
     width: 100%;
     font-family: 'Secondary';
-    font-size: 1.25rem;
+    font-size: calc(var(--secondary-size) * 1.25rem);
     border-width: 0 0 1px 0;
     margin-bottom: 10px;
 }
 .custom fieldset legend {
-    font-size: 1.5rem;
+    font-size: calc(var(--secondary-size) * 1.5rem);
 }
 .custom fieldset label {
     vertical-align: middle;
@@ -108,7 +108,7 @@
     width: 80vW;
     padding: 30px;
     z-index: 100001;
-    font-size: 1.25rem;
+    font-size: calc(var(--secondary-size) * 1.25rem);
     font-family: 'Secondary';
     
     transition-property: bottom opacity;
@@ -130,7 +130,7 @@
     justify-content: flex-end;
     top: 65px;
     width: 100%;
-    font-size: 1.25rem;
+    font-size: calc(var(--secondary-size) * 1.25rem);
     font-family: 'Secondary';
 
     transition-property: opacity;
@@ -142,7 +142,7 @@
     vertical-align: top;
     height: 100%;
     line-height: 36px;
-    font-size: 2.25rem;
+    font-size: calc(var(--secondary-size) * 2.25rem);
     color: #e64443;
     text-align: center;
     padding-right: 16px;
