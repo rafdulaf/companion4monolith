@@ -129,8 +129,9 @@
 
 .menu > div > ul > li > a
 {
-  font-size: 22px;
+  font-size: calc(var(--primary-size) * 0.95rem);
   font-family: 'Primary';
+  text-transform: uppercase;
   display: block;
   text-decoration: none;
   color: #232323;

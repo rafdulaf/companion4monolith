@@ -213,6 +213,7 @@ Nav = {
                     + "</div>";
         $(document.body).prepend(code);
         
+        document.fonts.ready.then(function() { Nav.updateTitle() });
         $(window).on('resize', function() { Nav.updateTitle() });
         $(window).on('hashchange', function() { Nav._hashChange() });
 
