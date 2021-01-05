@@ -130,6 +130,7 @@
 .menu > div > ul > li > a
 {
   font-size: 22px;
+  font-family: 'Primary';
   display: block;
   text-decoration: none;
   color: #232323;

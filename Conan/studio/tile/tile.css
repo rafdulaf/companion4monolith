@@ -8,12 +8,12 @@
 }
 
 #tile {
-    font-family: 'Hyborian';
+    font-family: 'Primary';
     overflow: auto;
     position: relative;
 }
 .tile.tiletile {
-    font-family: 'Hyborian';
+    font-family: 'Primary';
     text-align: left;
     
     position: relative;
@@ -280,7 +280,7 @@
     border-radius: 40px;
     z-index: 10;
     pointer-events: none;
-    font-family: "Hyborian";
+    font-family: "Primary";
 }
 
 .dialog .tile .field {
@@ -320,7 +320,7 @@
 .dialog .tile .field input#tname {
    font-size: 34px;
    height: 72px;
-   font-family: 'Hyborian';
+   font-family: 'Primary';
    text-align: center;
    color: #000000;
    background-image: url(img/name-background.png);
@@ -523,7 +523,7 @@
 .dialog .tile .field input#timagerotation {
    font-size: 22px;
    line-height: 36px;
-   font-family: 'Moolbor';
+   font-family: 'Secondary';
 }
 .dialog .tile .field select.dice
 {
@@ -622,7 +622,7 @@
 .dialog .tile .attackdices .ui-selectmenu-icon.ui-icon.ui-icon-triangle-1-s { background-image: none; }
 .dialog .tile .attackdices .ui-menu-item, .dialog .tile .attackdices .ui-menu-item-wrapper { height: 40px; position: relative; }
 .dialog .tile .attackdices .ui-selectmenu-button.ui-button.ui-widget.ui-selectmenu-button-closed.ui-corner-all { border-color: transparent; }
-.dialog .tile .dice ~ .ui-selectmenu-menu ul li:nth-child(1):before, .dialog .tile .attackdices select[data-value=none] + span .ui-selectmenu-text:before { content: "?"; font-size: 26px; font-family: 'Hyborian'; color: #7F7F7F; position: absolute; top: 0; left: 32%; }
+.dialog .tile .dice ~ .ui-selectmenu-menu ul li:nth-child(1):before, .dialog .tile .attackdices select[data-value=none] + span .ui-selectmenu-text:before { content: "?"; font-size: 26px; font-family: 'Primary'; color: #7F7F7F; position: absolute; top: 0; left: 32%; }
 .dialog .tile .dice ~ .ui-selectmenu-menu ul li:nth-child(2):before, .dialog .tile .attackdices select[data-value=red] + span { background-image: url(img/dice_red.png) !important; }
 .dialog .tile .dice ~ .ui-selectmenu-menu ul li:nth-child(3):before, .dialog .tile .attackdices select[data-value=redreroll] + span { background-image: url(img/dice_redreroll.png) !important; }
 .dialog .tile .dice ~ .ui-selectmenu-menu ul li:nth-child(4):before, .dialog .tile .attackdices select[data-value=orange] + span { background-image: url(img/dice_orange.png) !important; }
@@ -640,7 +640,7 @@
 .dialog .tile .color select ~ .ui-selectmenu-menu ul li:nth-child(5):before, .dialog .tile .color select[data-value=orange] + span { background-image: url(img/background_orange.png) !important; }
 .dialog .tile .color select ~ .ui-selectmenu-menu ul li:nth-child(6):before, .dialog .tile .color select[data-value=purple] + span { background-image: url(img/background_purple.png) !important; }
 
-.dialog .tile select.skills { font-family: 'Moolbor'; font-size: 19px; }
+.dialog .tile select.skills { font-family: 'Secondary'; font-size: 19px; }
 
 .dialog .tile-preview .preview {
     text-align: center;
@@ -651,7 +651,7 @@
     margin-bottom: 0.5em;
     margin-top: 0;
     text-align: center;
-    font-family: 'Hyborian';
+    font-family: 'Primary';
     font-size: 16px;
     vertical-align: top;
 }

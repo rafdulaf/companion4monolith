@@ -1,5 +1,5 @@
 #encyclopedia-spell {
-    font-family: 'Hyborian';
+    font-family: 'Primary';
     overflow: auto;
     position: relative;
 }
@@ -80,7 +80,7 @@
     left: 0; 
     right: 0;
     text-align: center;
-    font-family: 'Hyborian';
+    font-family: 'Primary';
     font-size: 16px;
     background-color: rgba(0,0,0,0.3);
     color: #fff;

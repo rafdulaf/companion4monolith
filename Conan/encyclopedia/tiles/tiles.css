@@ -1,5 +1,5 @@
 #encyclopedia-tile {
-    font-family: 'Hyborian';
+    font-family: 'Primary';
     overflow: auto;
     position: relative;
 }
@@ -43,7 +43,7 @@
 .tiledetails .models a > span {
     display: block;
     position: absolute;
-    font-family: 'Hyborian';
+    font-family: 'Primary';
     font-size: 16px;
     text-align: center;
     left: 0;
@@ -102,7 +102,7 @@ div.tile-wrapindetails[data-count]::after,
     height: 45px;
     line-height: 45px;
     font-size: 18px;
-    font-family: "Hyborian";
+    font-family: "Primary";
     text-align: center;
     background-color: #e64443;
     color: #ffffff;

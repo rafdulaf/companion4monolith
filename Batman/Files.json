@@ -2,11 +2,7 @@
     "css": [
         "vendors/css/fonts.css",
         "general/body.css",
-        "general/nav.css",
-        "general/search.css",
-        "general/menu.css",
-        "about/about.css",
-        "maps/maps.css"
+        "general/nav.css"
     ],
     "scripts": [
         "general/default.js",

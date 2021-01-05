@@ -1,5 +1,5 @@
 #encyclopedia-token {
-    font-family: 'Hyborian';
+    font-family: 'Primary';
     overflow: auto;
     position: relative;
 }
@@ -46,7 +46,7 @@ div.token-wrapindetails  .othertoken .name,
     left: 0; 
     right: 0;
     text-align: center;
-    font-family: 'Hyborian';
+    font-family: 'Primary';
     font-size: 16px;
     background-color: rgba(0,0,0,0.3);
     color: #fff;
@@ -69,7 +69,7 @@ div.token-wrapindetails[data-count]::after,
     height: 45px;
     line-height: 45px;
     font-size: 18px;
-    font-family: "Hyborian";
+    font-family: "Primary";
     text-align: center;
     background-color: #e64443;
     color: #ffffff;
@@ -129,7 +129,7 @@ div.token-wrapindetails .othertoken img.back + img {
 .tokendetails .models a > span {
     display: block;
     position: absolute;
-    font-family: 'Hyborian';
+    font-family: 'Primary';
     font-size: 16px;
     text-align: center;
     left: 0;

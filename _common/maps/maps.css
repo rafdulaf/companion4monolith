@@ -68,6 +68,7 @@
     text-align: left;
     padding: 15px 5px 5px 10px;
     background-color: rgba(0,0,0,0.3);
+    font-family: 'Primary';
 }
 .map-index > ul > li > a > .map-index-board-sublegend {
     position: absolute;
@@ -77,6 +78,7 @@
     color: #CFCFCF;
     text-align: left;
     padding: 2px 5px 5px 9px;
+    font-family: 'Secondary';
 }
 
 .map-card a, .map-card a:link, .map-card a:hover, .map-card a:visited {
@@ -261,6 +263,7 @@
     border-radius: 40px;
     z-index: 10;
     pointer-events: none;
+    font-family: "Primary";
 }
 
 .map-map-help {
@@ -328,6 +331,7 @@
     width: 20px;
     height: 20px;
     font-size: 1.25rem;
+    font-family: 'Secondary';
     text-shadow: 0px 0px 3px #000;
     z-index: 1;
 }
@@ -341,6 +345,7 @@
 
 .map-help-rule-title, .map-help-rule-description, .map-help-rule-areas {
     display: block;
+    font-family: 'Secondary';
 }
 
 .map-help-rule-title:before {

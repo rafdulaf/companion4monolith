@@ -2,28 +2,14 @@
     background-color: #e64443;
 }
 
-.header .title, 
-.nav {
-    font-family: 'Hyborian';
-}
-    
 .nav li a.active {
     color: #e64443;
 }   
 
-.dialog-title {
-    font-family: 'Hyborian';
-}
-.dialog-content {
-    font-family: 'Moolbor';
-} 
 .dialog-content a {
     color: #c39f76;
 }
 
-.nav-menu a {
-    font-family: 'Hyborian';
-}
 .nav-menu a.slick-current {
     border-bottom-color: red;
 }
