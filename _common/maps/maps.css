@@ -333,6 +333,7 @@
     width: 20px;
     height: 20px;
     font-size: calc(var(--secondary-size) * 1.25rem);
+    line-height: calc(var(--secondary-size) * 1.625rem);
     font-family: 'Secondary';
     text-shadow: 0px 0px 3px #000;
     z-index: 1;
@@ -358,14 +359,14 @@
     display: inline-block;
     width: 16px;
     height: 16px;
-    font-size: calc(var(--secondary-size) * 1.4375rem);
     text-align: center;
-    line-height: 26px;
+    font-size: calc(var(--secondary-size) * 1.4375rem);
+    line-height: calc(var(--secondary-size) * 1.5rem);
 }
 .map-help-rule-title {
     font-weight: bold;    
     font-size: calc(var(--secondary-size) * 1.625rem);
-    line-height: 22px;
+    line-height: calc(var(--secondary-size) * 1.625rem);
 }
 .map-help-rule-title[data-num='1']:before { border-color: #2F5496; }
 .map-help-legend[data-num='1'] { background-color: #2F5496; }
