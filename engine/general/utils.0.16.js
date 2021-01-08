@@ -38,12 +38,12 @@ Utils = {
         Language = localStorage.getItem(Application + "_Language") || Utils.autodetectLanguage();
         
         // Load version
-        Version = (await Utils.loadJSON("../_common/Version.json")).version;
+        Version = (await Utils.loadJSON("../engine/Version.json")).version;
         
         // Load CSS files
-        var commonFiles = await Utils.loadJSON("../_common/Files.json");
+        var commonFiles = await Utils.loadJSON("../engine/Files.json");
         commonFiles.css.forEach(function(file) {
-            $('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', '../_common/' + file) );
+            $('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', '../engine/' + file) );
         });
         
         var applicationFiles = await Utils.loadJSON("Files.json");
@@ -53,7 +53,7 @@ Utils = {
         
         // Load JS files
         commonFiles.scripts.forEach(function(file) {
-            $('head').append( $('<script/>').attr('src', '../_common/' + file) );
+            $('head').append( $('<script/>').attr('src', '../engine/' + file) );
         });
 
         applicationFiles.scripts.forEach(function(file) {
