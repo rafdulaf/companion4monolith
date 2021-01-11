@@ -69,19 +69,6 @@ Rules = mergeObject(Rules, {
         }
 
         var handled = [];
-        for (var i in Encyclopedia.spells.list)
-        {
-            var spell = Encyclopedia.spells.list[i];
-            if (spell.clarification && spell.clarification[Language] && About._hasExpansion(spell.origins) && handled.indexOf(spell.id) == -1)
-            {
-                handled.push(spell.id)
-                Rules._addSkill(null,
-                                    'magic',
-                                     spell.image,
-                                     spell.title[Language],
-                                     Rules._i18n[Language].spell_clarification + spell.clarification[Language]);
-            }
-        }
     },
 
     _addSkill: function(id, type, image, title, text)

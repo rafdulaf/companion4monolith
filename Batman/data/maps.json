@@ -3118,7 +3118,7 @@
                             "fr": "Un saut de niveau 1 est possible entre ces zones, de proche en proche.",
                             "en": "A level 1 jump can be performed between those closest areas."
                         },
-                        "coordinates": [[31,34.65],[68.74,34.65],[85,45],[97,50],[97,65],[85,80],[68.74,90],[31,90]],
+                        "coordinates": [[31,34.65],[68.74,34.65],[85,45],[97,50],[97,75],[85,80],[68.74,90],[31,90]],
                         "areas": ["16", "19", "22", "31", "32", "36", "38", "40", "45", "47", "49"],
                         "areasColor": "turquoise",
                         "areasText": {

@@ -7,6 +7,7 @@
     "scripts": [
         "general/default.js",
         "about/about.js",        
-        "encyclopedia/encyclopedia.js"
+        "encyclopedia/encyclopedia.js",
+        "rules/rules.js"
     ]
 }
