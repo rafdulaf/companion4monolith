@@ -57,7 +57,11 @@
                 },
                 "thumbnail": "data/maps/Bank/thumb.png",
                 "board": "data/maps/Bank/board.png",
-                "losFile": "data/maps/Bank/los.png"
+                "losFile": "data/maps/Bank/los.png",
+                "pdf": {
+                    "fr": "data/maps/Bank/rules_fr.pdf",
+                    "en": "data/maps/Bank/rules_en.pdf"
+                }
             },
             "size": [1217, 910],
             "zones": {
@@ -382,7 +386,11 @@
                 },
                 "thumbnail": "data/maps/ACE_Chemicals/thumb.png",
                 "board": "data/maps/ACE_Chemicals/board.png",
-                "losFile": "data/maps/ACE_Chemicals/los.png"
+                "losFile": "data/maps/ACE_Chemicals/los.png",
+                "pdf": {
+                    "fr": "data/maps/ACE_Chemicals/rules_fr.pdf",
+                    "en": "data/maps/ACE_Chemicals/rules_en.pdf"
+                }
             },
             "size": [1217, 910],
            "zones": {
@@ -705,7 +713,11 @@
                 },
                 "thumbnail": "data/maps/Crime_Alley/thumb.png",
                 "board": "data/maps/Crime_Alley/board.png",
-                "losFile": "data/maps/Crime_Alley/los.png"
+                "losFile": "data/maps/Crime_Alley/los.png",
+                "pdf": {
+                    "fr": "data/maps/Crime_Alley/rules_fr.pdf",
+                    "en": "data/maps/Crime_Alley/rules_en.pdf"
+                }
             },
             "size": [1217, 910],
             "zones": {
@@ -966,7 +978,11 @@
                 },
                 "thumbnail": "data/maps/Subway/thumb.png",
                 "board": "data/maps/Subway/board.png",
-                "losFile": "data/maps/Subway/los.png"
+                "losFile": "data/maps/Subway/los.png",
+                "pdf": {
+                    "fr": "data/maps/Subway/rules_fr.pdf",
+                    "en": "data/maps/Subway/rules_en.pdf"
+                }
             },
             "size": [1217, 910],
             "zones": {
@@ -1277,7 +1293,11 @@
                 },
                 "thumbnail": "data/maps/Arkham_Asylum/thumb.png",
                 "board": "data/maps/Arkham_Asylum/board.png",
-                "losFile": "data/maps/Arkham_Asylum/los.png"
+                "losFile": "data/maps/Arkham_Asylum/los.png",
+                "pdf": {
+                    "fr": "data/maps/Arkham_Asylum/rules_fr.pdf",
+                    "en": "data/maps/Arkham_Asylum/rules_en.pdf"
+                }
             },
             "size": [1217, 910],
             "zones": {
@@ -1642,7 +1662,11 @@
                 },
                 "thumbnail": "data/maps/Joker_Funhouse/thumb.png",
                 "board": "data/maps/Joker_Funhouse/board.png",
-                "losFile": "data/maps/Joker_Funhouse/los.png"
+                "losFile": "data/maps/Joker_Funhouse/los.png",
+                "pdf": {
+                    "fr": "data/maps/Joker_Funhouse/rules_fr.pdf",
+                    "en": "data/maps/Joker_Funhouse/rules_en.pdf"
+                }
             },
             "size": [1217, 910],
             "zones": {
@@ -1921,7 +1945,11 @@
                 },
                 "thumbnail": "data/maps/Batcave/thumb.png",
                 "board": "data/maps/Batcave/board.png",
-                "losFile": "data/maps/Batcave/los.png"
+                "losFile": "data/maps/Batcave/los.png",
+                "pdf": {
+                    "fr": "data/maps/Batcave/rules_fr.pdf",
+                    "en": "data/maps/Batcave/rules_en.pdf"
+                }
             },
             "size": [1217, 910],
             "zones": {
@@ -2286,7 +2314,11 @@
                 },
                 "thumbnail": "data/maps/Crime_Alley_Night/thumb.png",
                 "board": "data/maps/Crime_Alley_Night/board.png",
-                "losFile": "data/maps/Crime_Alley_Night/los.png"
+                "losFile": "data/maps/Crime_Alley_Night/los.png",
+                "pdf": {
+                    "fr": "data/maps/Crime_Alley/rules_fr.pdf",
+                    "en": "data/maps/Crime_Alley/rules_en.pdf"
+                }
             },
             "size": [1217, 910],
             "zones": {
@@ -2525,7 +2557,11 @@
                 },
                 "thumbnail": "data/maps/Wayne_Manor/thumb.png",
                 "board": "data/maps/Wayne_Manor/board.png",
-                "losFile": "data/maps/Wayne_Manor/los.png"
+                "losFile": "data/maps/Wayne_Manor/los.png",
+                "pdf": {
+                    "fr": "data/maps/Wayne_Manor/rules_fr.pdf",
+                    "en": "data/maps/Wayne_Manor/rules_en.pdf"
+                }
             },
             "size": [1217, 910],
             "zones": {
@@ -2831,7 +2867,11 @@
                 },
                 "thumbnail": "data/maps/Sewers/thumb.png",
                 "board": "data/maps/Sewers/board.png",
-                "losFile": "data/maps/Sewers/los.png"
+                "losFile": "data/maps/Sewers/los.png",
+                "pdf": {
+                    "fr": "data/maps/Sewers/rules_fr.pdf",
+                    "en": "data/maps/Sewers/rules_en.pdf"
+                }
             },
             "size": [1217, 910],
             "zones": {
@@ -3105,7 +3145,11 @@
                 },
                 "thumbnail": "data/maps/GCPD/thumb.png",
                 "board": "data/maps/GCPD/board.png",
-                "losFile": "data/maps/GCPD/los.png"
+                "losFile": "data/maps/GCPD/los.png",
+                "pdf": {
+                    "fr": "data/maps/GCPD/rules_fr.pdf",
+                    "en": "data/maps/GCPD/rules_en.pdf"
+                }
             },
             "size": [1217, 910],
             "zones": {
