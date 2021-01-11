@@ -24,7 +24,7 @@ var About = {
                         + "<li>Vous avez une idée d'amélioration ?</li>"
                         + "<li>Vous souhaitez proposer un patch ?</li>"
                     + "</ul>"
-                    + "Le projet est hébergé sur Github : vous pouvez donc y déposer vos idées voire proposer vos pmodifications, mais vous pouvez aussi participer via le forum The Overlord.",
+                    + "Le projet est hébergé sur Github : vous pouvez donc y déposer vos idées voire proposer vos modifications, mais vous pouvez aussi participer via le forum The Overlord.",
             'contribute_version': "Version actuelle : ",
             'contribute_hof': "Temple de la renommée",
             'contribute_hof_coders': "Codage de l'application",
