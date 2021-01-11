@@ -159,7 +159,7 @@ var About = {
                     + "<div class=\"contribute\">"
                         + "<h1>" + About._i18n[Language].contribute + "</h1>"
                         + "<div>" + About._i18n[Language].contribute_text + "</div>"
-                        + "<a target=\"_blank\" href=\"https://github.com/rafdulaf/companion4conan\" class=\"github\">Github</a>"
+                        + "<a target=\"_blank\" href=\"https://github.com/rafdulaf/companion4monolith\" class=\"github\">Github</a>"
                         + "<a target=\"_blank\" href=\"" + About._i18n[Language].tolink + "\" class=\"to\">The Overlord</a>"
                         + "<div>" + About._i18n[Language].contribute_version + Version + ".</div>"
                     + "</div>"
