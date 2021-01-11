@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg viewBox="0 0 909 1286" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<clipPath id="c0_5"><path d="M0,375.4V.1H374.7V375.4Z"/></clipPath>
+<clipPath id="c1_5"><path d="M373.8,375.4V.1H749.3V375.4Z"/></clipPath>
+<clipPath id="c2_5"><path d="M748.4,858.1V.1H909v858Z"/></clipPath>
+<clipPath id="c3_5"><path d="M0,750.7V374.5H374.7V750.7Z"/></clipPath>
+<clipPath id="c4_5"><path d="M374,750.6v-376H749.2v376Z"/></clipPath>
+<clipPath id="c5_5"><path d="M0,1126.3V749.8H374.7v376.5Z"/></clipPath>
+<clipPath id="c6_5"><path d="M374,1126.2V749.9H749.2v376.3Z"/></clipPath>
+<clipPath id="c7_5"><path d="M748.4,1286.2v-429H909v429Z"/></clipPath>
+<clipPath id="c8_5"><path d="M0,1286.2V1125.4H749.3v160.8Z"/></clipPath>
+</defs>
+<image clip-path="url(#c0_5)" preserveAspectRatio="none" x="0" y="0" width="375" height="375" xlink:href="img/1.jpg"/>
+<image clip-path="url(#c1_5)" preserveAspectRatio="none" x="374" y="0" width="375" height="375" xlink:href="img/2.jpg"/>
+<image clip-path="url(#c2_5)" preserveAspectRatio="none" x="748" y="0" width="162" height="858" xlink:href="img/3.jpg"/>
+<image clip-path="url(#c3_5)" preserveAspectRatio="none" x="0" y="374" width="375" height="377" xlink:href="img/4.jpg"/>
+<image clip-path="url(#c4_5)" preserveAspectRatio="none" x="374" y="374" width="375" height="377" xlink:href="img/5.jpg"/>
+<image clip-path="url(#c5_5)" preserveAspectRatio="none" x="0" y="750" width="375" height="376" xlink:href="img/6.jpg"/>
+<image clip-path="url(#c6_5)" preserveAspectRatio="none" x="374" y="750" width="375" height="376" xlink:href="img/7.jpg"/>
+<image clip-path="url(#c7_5)" preserveAspectRatio="none" x="748" y="857" width="162" height="430" xlink:href="img/8.jpg"/>
+<image clip-path="url(#c8_5)" preserveAspectRatio="none" x="0" y="1125" width="749" height="162" xlink:href="img/9.jpg"/>
+</svg>
