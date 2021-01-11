@@ -2,7 +2,8 @@
     "css": [
         "vendors/css/fonts.css",
         "general/body.css",
-        "general/nav.css"
+        "general/nav.css",
+        "rules/rules.css"
     ],
     "scripts": [
         "general/default.js",
