@@ -15,8 +15,55 @@
                 "en": 46
             },
             "origins": ["corebox"]
-        },
-        
+        },        
+        {
+            "id": "batmobile",
+            "title": {
+                "fr": "Batmobile",
+                "en": "Batmobile"
+            },
+            "download": {
+                "fr": "https://the-overlord.com/index.php?/files/file/161-batman-gotham-city-chronicles-livret-de-r%C3%A8gles-batmobile/&do=download&csrfKey=1aab082bed1ee824d34579c9ed2e4cf7",
+                "en": "https://the-overlord.net/index.php?/files/file/100-batman-gotham-city-chronicles-batmobile-rulebook/&do=download&csrfKey=37a764e1a920be703e8cd4179343c9a8"
+            },
+            "pages": {
+                "fr": 8,
+                "en": 8
+            },
+            "origins": ["batmobile"]
+        } ,        
+        {
+            "id": "versus",
+            "title": {
+                "fr": "Versus",
+                "en": "Versus"
+            },
+            "download": {
+                "fr": "https://the-overlord.com/index.php?/files/file/163-batman-gotham-city-chronicles-livret-mode-versus/&do=download&csrfKey=1aab082bed1ee824d34579c9ed2e4cf7",
+                "en": "https://the-overlord.net/index.php?/files/file/101-batman-gotham-city-chronicles-versus-mode-booklet/&do=download&csrfKey=37a764e1a920be703e8cd4179343c9a8"
+            },
+            "pages": {
+                "fr": 21,
+                "en": 21
+            },
+            "origins": ["versus"]
+        } ,        
+        {
+            "id": "wayne-manor",
+            "title": {
+                "fr": "Narrows Chronicles",
+                "en": "Narrows Chronicles"
+            },
+            "download": {
+                "fr": "https://the-overlord.com/index.php?/files/file/162-batman-gotham-city-chronicles-livret-wayne-manor/&do=download&csrfKey=1aab082bed1ee824d34579c9ed2e4cf7",
+                "en": "https://the-overlord.net/index.php?/files/file/102-batman-gotham-city-chronicles-wayne-manor-booklet/&do=download&csrfKey=37a764e1a920be703e8cd4179343c9a8"
+            },
+            "pages": {
+                "fr": 5,
+                "en": 5
+            },
+            "origins": ["wayne-manor"]
+        } ,        
         {
             "id": "narrows",
             "title": {
