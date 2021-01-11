@@ -15,6 +15,23 @@
                 "en": 46
             },
             "origins": ["corebox"]
-        }
+        },
+        
+        {
+            "id": "narrows",
+            "title": {
+                "fr": "Narrows Chronicles",
+                "en": "Narrows Chronicles"
+            },
+            "download": {
+                "fr": "https://the-overlord.com/index.php?/files/file/159-batman-gotham-city-chronicles-livret-narrows-chronicles/&do=download&csrfKey=6511709efb90be88ce81de8ae0973d19",
+                "en": "https://the-overlord.net/index.php?/files/file/98-batman-gotham-city-chronicles-narrows-chronicles-booklet/&do=download&csrfKey=13ba91465f0a9eabcc05c76aca3e785f"
+            },
+            "pages": {
+                "fr": 1,
+                "en": 1
+            },
+            "origins": ["corebox"]
+        }        
     ]
 }
