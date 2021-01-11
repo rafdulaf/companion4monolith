@@ -22,7 +22,10 @@
    font-family: "Font Awesome 5 Free";
    content: "\f129";  
 }
-
+.maps-icon-pdf:before {
+   font-family: "Font Awesome 5 Free";
+   content: "\f545";  
+}
 
 
 .map {

@@ -9,6 +9,7 @@ var Maps = {
             'rotate': "Tourner le plateau",
             'forum': "Une question sur la carte ? Demandez sur le forum !",
             'losfile': "Télécharger la carte statique des lignes de vue",
+            'pdf': "Télécharger les règles de la carte",
             'start': "Cliquez sur une zone pour voir les lignes de vue",
             'legend': "Légende",
             'clickhelp1': "La zone actuellement selectionnée est en bleu et offre des lignes de vues vers toutes les zones colorées.",
@@ -31,6 +32,7 @@ var Maps = {
             'rotate': "Turn the board",
             'forum': "A question on this board? Ask the forum!",
             'losfile': "Download the static lines of sight board",
+            'pdf': "Download the rules for this map",
             'start': "Click in an area to see the lines of sight",
             'legend': "Legend",
             'clickhelp1': "Blue area is the selected area. It has has line of sight to all colored areas.",
@@ -53,6 +55,7 @@ var Maps = {
             'rotate': "Ruota la mappa",
             'forum': "Domande su questa mappa? Falle sul forum!",
             'losfile': "Scarica la mappa statica con le linee di vista",
+            'pdf': "Scarica le regole delle carte",
             'start': "Click in un'area per visualizzare le linee di vista",
             'legend': "Legenda",
             'clickhelp1': "Le aree blu sono le aree selezionate. Hanno linea di vista libera verso tutte le aree colorate.",
@@ -73,12 +76,14 @@ var Maps = {
         Nav.addIcon(Maps._i18n[Language].menu, "maps-icon", "maps");
 
         Nav.addAction("maps", Maps._i18n[Language].back, "maps-icon-index", "index", Maps._displayIndex);
+        Nav.addAction("maps", Maps._i18n[Language].pdf, "maps-icon-pdf", "pdf", Maps._downloadPdf);
         Nav.addAction("maps", Maps._i18n[Language].forum, "maps-icon-forum", "forum", Maps._openForum);
         Nav.addAction("maps", Maps._i18n[Language].losfile, "maps-icon-losfile", "losfile", Maps._losFile);
         Nav.addAction("maps", Maps._i18n[Language].legend, "maps-icon-legend", "legend", Maps._legend );
         Nav.addAction("maps", Maps._i18n[Language].rotate, "maps-icon-rotate", "rotate", function() { Maps._rotate(-1); } );
 
         Nav.hideAction("maps", "index");
+        Nav.hideAction("maps", "pdf");
         Nav.hideAction("maps", "forum");
         Nav.hideAction("maps", "losfile");
         Nav.hideAction("maps", "rotate");
@@ -166,6 +171,7 @@ var Maps = {
 	{
 		Maps._hideAll();
         Nav.hideAction("maps", "index");
+        Nav.hideAction("maps", "pdf");
         Nav.hideAction("maps", "forum");
         Nav.hideAction("maps", "losfile");
         Nav.hideAction("maps", "rotate");
@@ -231,6 +237,7 @@ var Maps = {
 
         if ((slick.currentSlide || 0) == 0)
         {
+            Nav.hideAction("maps", "pdf");
             Nav.hideAction("maps", "forum");
             if (map.description.losFile)
             {
@@ -244,6 +251,10 @@ var Maps = {
             if (map.description.totopic)
             {
                 Nav.showAction("maps", "forum");
+            }
+            if (map.description.pdf[Language])
+            {
+                Nav.showAction("maps", "pdf");
             }
             Nav.hideAction("maps", "losfile");
             Nav.showAction("maps", "rotate");
@@ -620,6 +631,13 @@ var Maps = {
         window.open(map.description.totopic[Language] + "#elContent");
     },
 
+    _downloadPdf: function()
+    {
+        var map = Maps._getMap();
+
+        window.open(map.description.pdf[Language] + "?version=" + Version);
+    },
+    
     _losFile: function()
     {
         var map = Maps._getMap();
