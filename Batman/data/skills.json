@@ -378,7 +378,7 @@
                 "fr": "Permet  à  son  possesseur  d’obtenir  X  succès  automatiques  de  défense contre les attaques au corps-à-corps",
                 "en": "Allows its possessor to benefit from [X] automatic defense successes against melee attacks"
             },
-            "image": "data/skills/img/attack/impenetrable_defense.png"
+            "image": "data/skills/img/defense/impenetrable_defense.png"
         }, {
             "id": "body_guard",
             "type": "defense",
@@ -390,7 +390,7 @@
                 "fr": "Le  possesseur  augmente  de  X  succès  automatiques  la défense des figurines amies situées dans sa zone.",
                 "en": "Its  possessor  increases  by  [X]  automatic  successes  the defense of allied miniatures located in the same area."
             },
-            "image": "data/skills/img/attack/body_guard.png"
+            "image": "data/skills/img/defense/body_guard.png"
         }, {
             "id": "untouchable",
             "type": "defense",
@@ -402,7 +402,7 @@
                 "fr": "Permet  à  son  possesseur  d’ajouter  X  succès  automatiques  de  défense contre les attaques à distance qui le ciblent.",
                 "en": "Allows its possessor to benefit from [X] automatic defense successes against ranged attacks."
             },
-            "image": "data/skills/img/attack/untouchable.png"
+            "image": "data/skills/img/defense/untouchable.png"
         }, {
             "id": "protected",
             "type": "defense",
@@ -414,7 +414,7 @@
                 "fr": "Permet à son possesseur, s’il est accompagné d’au moins X figurines  amies  sans  cette  compétence,  d’éviter  d’être  pris pour cible d’une attaque.",
                 "en": "Allows its possessor, if they are accompanied by at least [X] allied miniatures without this skill, to avoid being the target of an attack."
             },
-            "image": "data/skills/img/attack/protected.png"
+            "image": "data/skills/img/defense/protected.png"
         }, {
             "id": "wall_breaker",
             "type": "movement",
