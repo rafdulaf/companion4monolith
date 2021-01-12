@@ -252,7 +252,7 @@ var Maps = {
             {
                 Nav.showAction("maps", "forum");
             }
-            if (map.description.pdf[Language])
+            if (map.description.pdf && map.description.pdf[Language])
             {
                 Nav.showAction("maps", "pdf");
             }

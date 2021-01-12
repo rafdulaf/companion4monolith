@@ -21,6 +21,7 @@
     color: #fff;
     text-align: center;
     padding: 5px 0;
+    text-transform: uppercase;
 }
 
 #rules .skills-skill .clear,
@@ -37,6 +38,7 @@
 #rules .skills-title,
 .dialog .skills-title  {
     margin-bottom: 5px;
+    text-transform: uppercase;
 }
 #rules .skills-text,
 .dialog .skills-text {

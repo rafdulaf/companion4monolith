@@ -6,11 +6,10 @@
 @font-face {
     font-family: Primary;
     font-display: block;
-    src: url("../fonts/Rajdhani-Bold_1x.woff") format("woff");
+    src: url("../fonts/Rajdhani-Bold.woff2") format("woff2");
 }
-
 @font-face {
     font-family: Secondary;
     font-display: block;
-    src: url("../fonts/ZillaSlab-Light_1m.woff") format("woff");
+    src: url("../fonts/ZillaSlab-Regular.woff2") format("woff2");
 }

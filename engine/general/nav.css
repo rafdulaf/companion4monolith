@@ -15,9 +15,9 @@
     vertical-align: top;
     min-height: 100%;
     font-size: calc(var(--primary-size) * 2.1875rem);
+    line-height: calc(var(--primary-size) * 2.292rem);
     font-family: 'Primary';
     text-transform: uppercase;
-    line-height: 2.75rem;
     overflow: hidden;
     flex: 1;
 }
@@ -31,7 +31,8 @@
     font-size: calc(var(--primary-size) * 1.375rem);
 }
 .header .title .smallest.twolines {
-    font-size: calc(var(--primary-size) * 1.1875rem);
+    font-size: calc(var(--primary-size) * 1.375rem);
+    line-height: calc(var(--primary-size) * 1.1rem);
 }
 
 .header .toolbar {

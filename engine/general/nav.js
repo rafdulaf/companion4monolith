@@ -173,7 +173,8 @@ Nav = {
         var tb = $(".header .toolbar")
 
         var width = $(".header").width() - tb.width();
-        var height = $(".header").height();
+        var height = $(".header").css("white-space", "nowrap").find(".title div").height();
+        $(".header").css("white-space", "unset");
         
         if (t.width() > width || t.height() > height)
         {
