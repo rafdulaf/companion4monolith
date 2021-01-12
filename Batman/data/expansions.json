@@ -8,6 +8,13 @@
             },
             "single": true
         }, {
+            "id": "season2-picking-zone",
+            "text": {
+                "fr": "Picking zone",
+                "en": "Picking zone"
+            },
+            "single": false
+        }, {
             "id": "season1-expansions",
             "text": {
                 "fr": "Extensions de la saison 1",
@@ -26,13 +33,6 @@
             "text": {
                 "fr": "Add-on de la saison 2",
                 "en": "Season 2 add-on"
-            },
-            "single": false
-        }, {
-            "id": "season2-picking-zone",
-            "text": {
-                "fr": "Picking zone",
-                "en": "Picking zone"
             },
             "single": false
         }

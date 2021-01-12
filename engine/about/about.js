@@ -265,11 +265,12 @@ var About = {
         {
             var expansionType = Encyclopedia.expansions.types[i];
 
-            s += "<fieldset><legend>" + expansionType.text[Language] + "</legend>";
+            var localS = "<fieldset><legend>" + expansionType.text[Language] + "</legend>";
+            var nbChoice = 0;
 
             if (expansionType.single)
             {
-                s += "<select id=\"" + expansionType.id + "\" name=\"" + expansionType.id + "\">";
+                localS += "<select id=\"" + expansionType.id + "\" name=\"" + expansionType.id + "\">";
             }
 
             for (var j in Encyclopedia.expansions.list)
@@ -277,13 +278,14 @@ var About = {
                 var expansion = Encyclopedia.expansions.list[j];
                 if (expansion.type == expansionType.id)
                 {
+                    nbChoice++;
                     if (expansionType.single)
                     {
-                        s += "<option value=\"" + expansion.id + "\">" + expansion.title[Language] + "</option>"
+                        localS += "<option value=\"" + expansion.id + "\">" + expansion.title[Language] + "</option>"
                     }
                     else
                     {
-                        s += "<div>"
+                        localS += "<div>"
                            +    "<input type=\"checkbox\" name=\"" + expansion.id + "\"\ id=\"" + expansion.id + "\">"
                            +    "<label for=\"" + expansion.id + "\">"
                            +        expansion.title[Language]
@@ -295,10 +297,19 @@ var About = {
 
             if (expansionType.single)
             {
-                s += "</select>";
+                localS += "</select>";
             }
 
-            s += "</fieldset>";
+            localS += "</fieldset>";
+            
+            if (!expansionType.single || nbChoice > 1)
+            {
+                s += localS;
+            }
+            else
+            {
+                s += "<div style='position:absolute; top: -10000px; left: -10000px;'>" + localS + "</div>";
+            }
         }
 
         Nav.dialog(About._i18n[Language].custom,
