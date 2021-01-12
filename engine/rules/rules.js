@@ -65,12 +65,15 @@ var Rules = {
 
         for (var i = 0; i < Encyclopedia.rules.list.length; i++)
         {
-            Rules._rules.push({
-                label: Encyclopedia.rules.list[i].title[Language], 
-                id: Encyclopedia.rules.list[i].id,
-                download: Encyclopedia.rules.list[i].download[Language],
-                pages: Encyclopedia.rules.list[i].pages[Language]
-            });
+            if (About._hasExpansion(Encyclopedia.rules.list[i].origins))
+            {
+                Rules._rules.push({
+                    label: Encyclopedia.rules.list[i].title[Language], 
+                    id: Encyclopedia.rules.list[i].id,
+                    download: Encyclopedia.rules.list[i].download[Language],
+                    pages: Encyclopedia.rules.list[i].pages[Language]
+                });
+            }
         }
         Rules._beforeRuleList();
         
@@ -80,8 +83,11 @@ var Rules = {
 
         for (var i = 0; i < Encyclopedia.rules.list.length; i++)
         {
-            $("#" + Encyclopedia.rules.list[i].id).addClass("zoom0 rules-viewer").html("<div>" + Rules._createViewer("data/rules/" + Encyclopedia.rules.list[i].id + "/" + Language, Encyclopedia.rules.list[i].pages[Language]) + "</div>");
-            Rules._attachEvents("#" + Encyclopedia.rules.list[i].id);
+            if (About._hasExpansion(Encyclopedia.rules.list[i].origins))
+            {
+                $("#" + Encyclopedia.rules.list[i].id).addClass("zoom0 rules-viewer").html("<div>" + Rules._createViewer("data/rules/" + Encyclopedia.rules.list[i].id + "/" + Language, Encyclopedia.rules.list[i].pages[Language]) + "</div>");
+                Rules._attachEvents("#" + Encyclopedia.rules.list[i].id);
+            }
         }
         
 
