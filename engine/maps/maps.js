@@ -41,9 +41,9 @@ var Maps = {
             'clickhelp5': "Turquoise areas are above the blue area.",
             'clickhelp3': "Note: The green circles around the dots show elevation levels.",
             'copyright': "The help text of the boards are proposed by their respective creators. Some of them were modified.<br/>"
-                        + "Some card allow to download a static ligne of sight view. This views were realized by <a href='https://the-overlord.com/index.php?/profile/13-roolz/' target='_blank'>@Roolz</a>.<br/>"
-                        + "The principal of the dynamic line of sights is based on a idea of <a href='https://the-overlord.com/index.php?/profile/88-pamplerousse/' target='_blank'>@Pamplerousse</a>.<br/>"
-                        + "The card:" ,
+                        + "Some maps allow to download a static ligne of sight view. This views were realized by <a href='https://the-overlord.com/index.php?/profile/13-roolz/' target='_blank'>@Roolz</a>.<br/>"
+                        + "The principle of the dynamic line of sights is based on a idea of <a href='https://the-overlord.com/index.php?/profile/88-pamplerousse/' target='_blank'>@Pamplerousse</a>.<br/>"
+                        + "The map:" ,
             'copyright_prop': "is the property of"
         },
 	    'it': {
