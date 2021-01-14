@@ -2,6 +2,7 @@ var Rules = {
     _i18n: {
         'fr': {
             'menu': "Règles",
+            'skills': "Compétences",
 
             'viewer-search': "Recherche dans le document",
             'viewer-download': "Télécharger le document",
@@ -17,6 +18,7 @@ var Rules = {
         },
         'en': {
             'menu': "Rules",
+            'skills': "Skills",
 
             'viewer-search': "Search in the document",
             'viewer-download': "Download the document",
@@ -32,6 +34,7 @@ var Rules = {
         },
         'it': {
             'menu': "Regole",
+            'skills': "Abilità",
 
             'viewer-search': "Cerca nell'intero documento",
             'viewer-download': "Scarica il pdf",
@@ -47,22 +50,17 @@ var Rules = {
         }
     },
     
-    _beforeRuleList: function() {
-        // Nothing
-    },
-    
-    _afterRuleList: function() {
-        // Nothing
-    },
-    
-    _rules: [],
-
     init: function()
     {
         Rules._lastSearch = "";
 
         Nav.addIcon(Rules._i18n[Language].menu, "rules-icon", "rules");
 
+        Rules._rules = [{
+            label: Rules._i18n[Language].skills, 
+            id: "skills", 
+            download: Encyclopedia.skills.link[Language]
+        }];
         for (var i = 0; i < Encyclopedia.rules.list.length; i++)
         {
             if (About._hasExpansion(Encyclopedia.rules.list[i].origins))
@@ -75,11 +73,10 @@ var Rules = {
                 });
             }
         }
-        Rules._beforeRuleList();
         
         Nav.createTabs('rules', Rules._rules, Rules._onChange);
 
-        Rules._afterRuleList();
+        Rules._initSkills();
 
         for (var i = 0; i < Encyclopedia.rules.list.length; i++)
         {
@@ -98,6 +95,124 @@ var Rules = {
         Rules._onChange();
 
         About.addCopyright(Rules._i18n[Language].menu, Rules._i18n[Language].copyright);
+    },
+    
+    _initSkills: function()
+    {
+        $("#skills").html("<div></div>");
+
+        for (var i in Encyclopedia.skills.types)
+        {
+            var type = Encyclopedia.skills.types[i];
+
+            $('#skills > div').append("<div id='skills_" + type.id + "' class='skill-tab'><h2>" + type.title[Language] + "</h2></div>");
+
+            for (var j in Encyclopedia.skills.list)
+            {
+                var skill = Encyclopedia.skills.list[j];
+                if (skill.type == type.id)
+                {
+                    Rules._addSkill(skill.id,
+                                         skill.type,
+                                         skill.image,
+                                         skill.title[Language],
+                                         skill.text[Language]);
+                }
+            }
+        }
+        Rules._initSkillsSpecific();
+    },
+    
+    _initSkillsSpecific: function() {
+        // for inheritance
+    },
+    
+        _addSkill: function(id, type, image, title, text)
+    {
+        $('#skills_' + type).append((id ? "<a href='javascript:void(0)' onclick='Rules.openSkill(\"" + id + "\")'>" : "")
+            + Rules._skill2HTML(id, type, image, title, text)
+            + (id ? "</a>" : ""));
+    },
+
+    _skill2HTML: function(id, type, image, title, text)
+    {
+        return "<div class='skills-skill'>"
+            +   "<img loading=\"lazy\" src='" + image + "?version=" + Version + "'/>"
+            +   "<div class='skills-title'>" + title + "</div>"
+            +   "<div class='skills-text'>" + Rules._replace(text) + "</div>"
+            +   "<div class='clear'></div>"
+            + "</div>";
+    },
+
+    _replace: function(text)
+    {
+        text = text.replace(/\{(.*?)\}/g, "<img src='resources/img/$1.png?version=" + Version + "' class='rules-character'/>");
+        return text;
+    },
+
+    _linkToSkill: function(id, big)
+    {
+        big = big || false;
+
+        var index = id.indexOf('/');
+        if (index > 0)
+        {
+            id = id.substring(index + 1);
+        }
+
+        var skill = Rules._findSkillById(id);
+
+        var s = "<a href='javascript:void(0)' class='openskill' onclick='Rules.openSkill(\"" + id + "\")'>";
+        if (!big)
+        {
+            s += skill.title[Language];
+        }
+        else
+        {
+            s += Rules._skill2HTML(skill.id, skill.type, skill.image, skill.title[Language], skill.text[Language]);
+        }
+        s += "</a>";
+
+        return s;
+    },
+
+    _findSkillById: function(id)
+    {
+        var index = id.indexOf('/');
+        if (index > 0)
+        {
+            id = id.substring(index + 1);
+        }
+
+        for (var i in Encyclopedia.skills.list)
+        {
+            var skill = Encyclopedia.skills.list[i];
+            if (skill.id == id)
+            {
+                return skill;
+            }
+        }
+
+        throw new Error("Cannot find skill " + id);
+    },
+    
+    openSkill: function(id) {
+        var skill = Rules._findSkillById(id);
+
+        Nav.dialog(skill.title[Language],
+            "<div class='skillsdetails'>"
+                + Rules._skill2HTML(skill.id, skill.type, skill.image, skill.title[Language], skill.text[Language])
+                + Rules._openSkillSpecific(skill)
+            + "</div>",
+            null,
+            []
+        );
+    },
+    
+    _openSkillSpecific: function(skill)
+    {
+        // For inheritance
+        return "";
     },
 
     _download: function()

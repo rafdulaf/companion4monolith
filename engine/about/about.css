@@ -83,7 +83,7 @@
     display: inline-block;
     vertical-align: top;
     margin-left: 3px;
-    line-height: calc(var(--secondary-size) * 2rem);
+    line-height: calc(var(--secondary-line-height) * 2rem);
 }
 .custom input[type='checkbox'] {
     width: 16px;
@@ -145,7 +145,7 @@
     display: inline-block;
     vertical-align: top;
     height: 100%;
-    line-height: 36px;
+    line-height: calc(var(--secondary-line-height) * 2.25rem);
     font-size: calc(var(--secondary-size) * 2.25rem);
     color: #e64443;
     text-align: center;
@@ -155,7 +155,7 @@
 }
 .toast-action-text {
     height: 100%;
-    line-height: 20px;
+    line-height: calc(var(--secondary-line-height) * 1.25rem);
     display: inline-block;
     vertical-align: top;
     flex: 1;

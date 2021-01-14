@@ -274,7 +274,7 @@
 @media screen and (max-width: 610px) {
     .nav-menu a {
         font-size: calc(var(--primary-size) * 0.875rem);
-        line-height: 1.1875rem;
+        line-height: calc(var(--primary-size) * 1.1875rem);
     }
 }
 @media screen and (max-width: 700px) {

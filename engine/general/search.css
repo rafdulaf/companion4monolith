@@ -17,7 +17,7 @@
     font-family: 'Secondary';
     padding-top: 4px;
     margin-left: 5px;
-    line-height: 50%;
+    line-height: calc(var(--secondary-line-height) * 0.5rem);
 }
 .search-engine .facet > span span:before { content: "("; }
 .search-engine .facet > span span:after { content: ")"; }
@@ -36,7 +36,7 @@
     display: block;
     font-size: calc(var(--secondary-size) * 1.4rem);
     font-family: 'Secondary';
-    line-height: 120%;
+    line-height: calc(var(--secondary-line-height) * 1.2rem);
     height: 18px;
 }
 

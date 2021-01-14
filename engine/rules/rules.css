@@ -24,3 +24,88 @@
     height: 100%;
 }
 
+
+
+#rules #skills {
+    overflow: auto;    
+    box-sizing: border-box;
+    font-family: 'Primary';
+    font-size: calc(var(--primary-size) * 1rem);
+}
+#rules #skills > div {
+    padding: 10px;
+}
+
+#rules .skills-skill {
+    margin-bottom: 10px;
+    width: 50%;
+    padding-right: 5px;
+    display: inline-block;
+    vertical-align: top;  
+}
+
+.skill-tab h2 {
+    margin-top: 0.4em;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    text-transform: uppercase;
+}
+
+#rules .skills-skill .clear,
+.dialog .skills-skill .clear {
+    clear: both;  
+}
+#rules .skills-skill > img,
+.dialog .skills-skill > img {
+    float: left;
+    margin-right: 12px;
+    margin-bottom: 4px;
+    width: 80px;
+}
+#rules .skills-title,
+.dialog .skills-title  {
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+#rules .skills-text,
+.dialog .skills-text {
+    font-family: 'Secondary';
+    font-size: calc(var(--secondary-size) * 1.375rem);
+    line-height: calc(var(--secondary-line-height) * 1.25rem);
+    color: #000;
+}
+
+.dialog a.openskill:hover {
+    text-decoration: none;
+}
+.dialog a:hover.openskill .skills-title {
+    text-decoration: underline;
+}
+
+
+#rules .rules-character,
+.dialog .rules-character  {
+    margin: 0;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    display: inline;
+}
+
+#skills a {
+    color: #000000;
+}
+
+@media screen and (max-width: 536px) {
+    #rules .skills-skill {
+        width: 100%;
+        padding-right: 0;
+    }
+}
+@media screen and (min-width: 1024px) {
+    #rules .skills-skill {
+        width: 33.3%;
+    }
+}

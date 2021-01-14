@@ -2,13 +2,11 @@
     "css": [
         "vendors/css/fonts.css",
         "general/body.css",
-        "general/nav.css",
-        "rules/rules.css"
+        "general/nav.css"
     ],
     "scripts": [
         "general/default.js",
         "about/about.js",        
-        "encyclopedia/encyclopedia.js",
-        "rules/rules.js"
+        "encyclopedia/encyclopedia.js"
     ]
 }

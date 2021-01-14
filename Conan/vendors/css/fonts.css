@@ -1,6 +1,7 @@
 :root {
     --primary-size: 1;
     --secondary-size: 1;
+    --secondary-line-height: 1;
 }
 
 @font-face {
