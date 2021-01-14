@@ -137,7 +137,7 @@ var Rules = {
     _skill2HTML: function(id, type, image, title, text)
     {
         return "<div class='skills-skill'>"
-            +   "<img loading=\"lazy\" src='" + image + "?version=" + Version + "'/>"
+            +   "<img " + LazyImage + " src='" + image + "?version=" + Version + "'/>"
             +   "<div class='skills-title'>" + title + "</div>"
             +   "<div class='skills-text'>" + Rules._replace(text) + "</div>"
             +   "<div class='clear'></div>"

@@ -216,7 +216,7 @@ var CardSpell = {
         code += "<div class='imagebg'><img src=\"studio/card_spell/img/image-bg.png?version=" + Version + "\"/></div>"
         if (card.image)
         {
-            code += "<div class='image'><img loading=\"lazy\" src='" + card.image + "' style=\"left: " + card.imagelocation.x + "%; top: " + card.imagelocation.y + "%; width: " + card.imagezoom + "%; transform: translate(-50%, -50%) rotate(" + card.imagerotation + "deg)\"/></div>"
+            code += "<div class='image'><img " + LazyImage + " src='" + card.image + "' style=\"left: " + card.imagelocation.x + "%; top: " + card.imagelocation.y + "%; width: " + card.imagezoom + "%; transform: translate(-50%, -50%) rotate(" + card.imagerotation + "deg)\"/></div>"
         }
 
         code += "</div>";

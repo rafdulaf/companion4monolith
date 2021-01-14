@@ -69,6 +69,4 @@ Utils = {
     }
 }
 
-//var LazyImage = " loading=\"lazy\"";
-//if (/firefox/.test(navigator.userAgent.toLowerCase())) LazyImage = ""; // Not working correctly on FF75/FF76
-var LazyImage = "";
+var LazyImage = " loading=\"lazy\"";

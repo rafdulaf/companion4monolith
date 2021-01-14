@@ -395,8 +395,8 @@ var EncyclopediaTokens = {
         var style = token.size.shape == "circle" || token.size.width >= token.size.height ? "width: " + (token.size.width*ratio) +  "rem;" : "height: " + (token.size.height*ratio) +  "rem;"
         code += "<div class='othertoken " + token.size.shape + "'>"
                     + "<div class='img'>"
-                        + (details && token.faceB ? "<img class='back' src='" + token.faceA.image + "\?version=" + Version + "' style='" + style + "'/>" : "")
-                        + "<img src='" + (token.faceB ? token.faceB.image : token.faceA.image) + "\?version=" + Version + "' style='" + style + "'/>"
+                        + (details && token.faceB ? "<img class='back' " + LazyImage + " src='" + token.faceA.image + "\?version=" + Version + "' style='" + style + "'/>" : "")
+                        + "<img " + LazyImage + " src='" + (token.faceB ? token.faceB.image : token.faceA.image) + "\?version=" + Version + "' style='" + style + "'/>"
                     + "</div>"
                     + "<span class='name'>" + token.name[Language] + "</span>"
               + "</div>"

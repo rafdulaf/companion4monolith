@@ -36,7 +36,7 @@
     display: block;
     font-size: calc(var(--secondary-size) * 1.4rem);
     font-family: 'Secondary';
-    line-height: calc(var(--secondary-line-height) * 1.2rem);
+    line-height: calc(var(--secondary-line-height) * 1.68rem);
     height: 18px;
 }
 

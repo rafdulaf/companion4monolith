@@ -314,7 +314,7 @@ var EncyclopediaModels = {
 
             models += "<a id='model-" + model.id + "' href='javascript:void(0)' data-count='" + (ignoredPrevious+1) + "' onclick='EncyclopediaModels.openModel(\"" + model.id + "\")'>";
             models += "<div>";
-            models += "<img src='" + model.thumb + "?version=" + Version + "'/>";
+            models += "<img " + LazyImage + " src='" + model.thumb + "?version=" + Version + "'/>";
             models += "<span>" + EncyclopediaModels._findModelNames(model) + "</span>"
             models += "</div>";
             models += "</a>";
