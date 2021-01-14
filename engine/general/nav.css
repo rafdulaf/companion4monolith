@@ -156,7 +156,7 @@
 .contents > div {
     display: block;
     opacity: 0;
-    overflow: auto;
+    overflow: hidden;
     position: absolute;
     top: 0;
     left: 0;
