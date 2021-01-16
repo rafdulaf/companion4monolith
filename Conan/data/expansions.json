@@ -48,6 +48,14 @@
                 "it": "Accessori"
             },
             "single": false
+        }, {
+            "id": "internet",
+            "text": {
+                "fr": "Internet",
+                "en": "Internet",
+                "it": "TODO_TRANSLATION"
+            },
+            "single": false
         }
     ],
 
@@ -373,6 +381,19 @@
                 "fr": "Pack aventure",
                 "en": "Adventure pack",
                 "it": "Arredi"
+            }
+        }, {
+            "id": "official",
+            "type": "internet",
+            "title": {
+                "fr": "Site Monolith",
+                "en": "Monolith site",
+                "it": "TODO_TRANSLATE"
+            },
+            "short": {
+                "fr": "Monolith",
+                "en": "Monolith",
+                "it": "Monolith"
             }
         }
     ]

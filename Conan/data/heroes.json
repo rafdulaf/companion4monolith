@@ -1750,6 +1750,193 @@
             "image_location": { "x": "4", "y": "62" },
             "model": "ikhmet",
             "origins": ["stygia"]
+        },
+        
+        {
+            "id": "octavia",
+            "name": {
+                "fr": "Octavia",
+                "en": "Octavia",
+                "it": "Octavia"
+            },
+            "class": "rogue",
+
+            "gems": 10,
+            "encumbrance": [9, 8, 9],
+
+            "melee": { "dice": "yellowreroll", "exertion": 5 },
+            "ranged": { "dice": "orangereroll", "exertion": 4 },
+            "defense": { "dice": "yellowreroll" },
+            "movement": { "base": "2", "exertion": 3 },
+            "manipulation": { "dice": "orangereroll", "exertion": 3 },
+
+            "skills": [
+                { "id": "ambidextrous", "exertion": 5 },
+                { "id": "feline_grace", "exertion": 5 },
+                { "id": "lock_picking", "exertion": 6 },
+                { "id": "leadership" },
+                { "id": "support" },
+                { "id": "protected" }
+            ],
+
+            "image": "data/heroes/img/princess.png",
+            "imageHD": "data/heroes/img/princess_hd.png",
+            "image_zoom": "89",
+            "image_location": { "x": "9", "y": "50" },
+            "model": "princess",
+            "origins": ["official"],
+            "pdf": "https://www.kickstarter.com/projects/806316071/conan-the-conqueror-adventure-mode-expansion/posts/2779014?ref=ksr_email_backer_project_update_registered_users"
+        },
+        
+        {
+            "id": "afari",
+            "name": {
+                "fr": "Afari",
+                "en": "Afari",
+                "it": "Afari"
+            },
+            "quote": {
+                "text": {
+                    "fr": "- Tuthmes ! Laisse-moi entrer ! Le démon est lâché dans Shumballa ! La porte s'ouvrit, et celui qui venait de parler s'engouffra dans la pièce, un individu sec, au corps noueux, vêtu d'une djebbeh blanche, le teint mat, le blanc des yeux brillant. Il fut accueilli par Tuthmes, grand, mince, sombre de peau, avec les traits droits typiques de sa caste. -Que dis-tu, Afari ? Afari ferma la porte avant de répondre; il haletait comme après une longue course. Il était plus petit que Tuthmes, et ses traits étaient nettement plus négroïdes. - Amboola! Il est mort ! Dans la Tour Rouge !",
+                    "en": "Tuthmes ! Let me in ! The devil is loose in Shumballa !” The door was opened, and the speaker burst into the room – a lean, wiry man in a white djebbeh, dark skinned, the whites of his eyes gleaming. He was met by Tuthmes, tall, slender, dusky, with the straight features of his caste. “What are you saying, Afari ?” Afari closed the door before he answered ; he was panting as if from a long run. He was shorter than Tuthmes, and the negroid was more predominant in his features. “Amboola ! He is dead! In the Red Tower !",
+                    "it": "— Lord Tuthmes! Fammi entrare! Il demone è di nuovo in libertà!\nLa porta si aprì e Tuthmes comparve sulla soglia: un uomo alto, snello, aristocratico, con i lineamenti sottili e la pelle bruna della sua casta. Era avvolto in una veste di seta bianca e teneva in mano una piccola lampada di bronzo.\n— Cosa succede, Afari? — chiese.\nII visitatore, con gli occhi sbarrati, si precipitò nella stanza. Ansimava come per una lunga corsa. Era un uomo snello e muscoloso, dalla pelle nera, più basso di Tuthmes: sul suo viso, i tratti ancestrali dei negri erano molto accentuati. Nonostante la fretta che aveva, si premurò di chiudere la porta prima di rispondere.\n— Amboola! È morto! Nella Torre Rossa!"
+                },
+                "origin": {
+                    "fr": "Histoire inachevée - sans titre",
+                    "en": "Untitled draft",
+                    "it": "Il Muso nel Buio"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "gems": 11,
+            "encumbrance": [11, 8, 10],
+
+            "melee": { "dice": "red", "exertion": 4 },
+            "ranged": { "dice": "orange", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "2", "exertion": 4 },
+            "manipulation": { "dice": "orange", "exertion": 3 },
+
+            "skills": [
+                { "id": "climb", "exertion": 6 },
+                { "id": "precision_strike", "exertion": 8 },
+                { "id": "leap", "exertion": 8 },
+                { "id": "wall_wrecker" },
+                { "id": "counterattack" }
+            ],
+
+            "image": "data/heroes/img/afari.png",
+            "imageHD": "data/heroes/img/afari_hd.png",
+            "image_zoom": "89",
+            "image_location": { "x": "7.5", "y": "50" },
+            "model": "afari",
+            "origins": ["official"],
+            "pdf": "https://the-overlord.net/applications/core/interface/file/attachment.php?id=3841"
+        },
+                
+        {
+            "id": "ghayoor",
+            "name": {
+                "fr": "Ghayoor",
+                "en": "Ghayoor",
+                "it": "Ghayoor"
+            },
+
+            "gems": 10,
+            "encumbrance": [10, 8, 10],
+
+            "melee": { "dice": "orange", "exertion": 4 },
+            "ranged": { "dice": "orangereroll", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "3", "exertion": 3 },
+            "manipulation": { "dice": "orangereroll", "exertion": 4 },
+
+            "skills": [
+                { "id": "climb", "exertion": 6 },
+                { "id": "leap", "exertion": 6 },
+                { "id": "feline_grace", "exertion": 8 },
+                { "id": "elite_shooter" },
+                { "id": "lock_picking" }
+            ],
+
+            "image": "data/heroes/img/ghayoor.png",
+            "imageHD": "data/heroes/img/ghayoor_hd.png",
+            "image_zoom": "89",
+            "image_location": { "x": "7.5", "y": "50" },
+            "model": "ghayoor",
+            "origins": ["official"],
+            "pdf": "https://the-overlord.net/applications/core/interface/file/attachment.php?id=3841"
+        },
+                
+        {
+            "id": "shafiah",
+            "name": {
+                "fr": "Shafiah",
+                "en": "Shafiah",
+                "it": "Shafiah"
+            },
+
+            "gems": 10,
+            "encumbrance": [10, 8, 10],
+
+            "melee": { "dice": "orangereroll", "exertion": 4 },
+            "ranged": { "dice": "yellow", "exertion": 4 },
+            "defense": { "dice": "orangereroll" },
+            "movement": { "base": "2", "exertion": 4 },
+            "manipulation": { "dice": "yellow", "exertion": 3 },
+
+            "skills": [
+                { "id": "climb", "exertion": 6 },
+                { "id": "leap", "exertion": 6 },
+                { "id": "ambidextrous", "exertion": 8 },
+                { "id": "bodyguard" },
+                { "id": "leadership" }
+            ],
+
+            "image": "data/heroes/img/shafiah.png",
+            "imageHD": "data/heroes/img/shafiah_hd.png",
+            "image_zoom": "90",
+            "image_location": { "x": "6", "y": "51" },
+            "model": "shafiah",
+            "origins": ["official"],
+            "pdf": "https://the-overlord.net/applications/core/interface/file/attachment.php?id=3841"
+        },
+                
+        {
+            "id": "shubba",
+            "name": {
+                "fr": "Shubba",
+                "en": "Shubba",
+                "it": "Shubba"
+            },
+
+            "gems": 10,
+            "encumbrance": [8, 7, 8],
+
+            "melee": { "dice": "yellowreroll", "exertion": 4 },
+            "ranged": { "dice": "yellowreroll", "exertion": 4 },
+            "defense": { "dice": "yellowreroll" },
+            "movement": { "base": "2", "exertion": 3 },
+            "manipulation": { "dice": "yellowreroll", "exertion": 3 },
+
+            "skills": [
+                { "id": "feline_grace", "exertion": 5 },
+                { "id": "leap", "exertion": 5 },
+                { "id": "climb", "exertion": 5 },
+                { "id": "spell_caster" , "exertion": 7 },
+                { "id": "jinx" }
+            ],
+
+            "image": "data/heroes/img/shubba.png",
+            "imageHD": "data/heroes/img/shubba_hd.png",
+            "image_zoom": "90",
+            "image_location": { "x": "6", "y": "51" },
+            "model": "shubba",
+            "origins": ["official"],
+            "pdf": "https://the-overlord.net/applications/core/interface/file/attachment.php?id=3841"
         }
     ]
 }

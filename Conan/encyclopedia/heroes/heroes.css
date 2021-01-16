@@ -11,6 +11,10 @@
     content: "\f591";
     font-family: 'Font Awesome 5 Free';
 }
+.encyclopedia-heroes-download::before {
+   font-family: "Font Awesome 5 Free";
+   content: "\f56d";  
+}
 
 #encyclopedia-heroessheet-wrapper a {
     position: relative;

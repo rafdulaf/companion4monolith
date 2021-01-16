@@ -5,6 +5,7 @@ var EncyclopediaHeroes = {
             'transfertToStudio': "Copier la fiche dans le studio",
             'transfertOK': "La fiche a été copiée dans le studio des fiches de héros",
             'transfertConfirm': "Voulez-vous copier la fiche dans le studio pour pouvoir la modifier ou l'imprimer ?",
+            'download': "Télécharger le document",
             'from': "Disponible dans :",
             'fromAnd': "<br/>et",
             'skill': "Compétences :",
@@ -15,6 +16,7 @@ var EncyclopediaHeroes = {
             'transfertToStudio': "Copy the sheet into the studio",
             'transfertOK': "The sheet was copied to the heroes sheets studio",
             'transfertConfirm': "Do you want to copy the sheet into the studio in order to edit it or print it?",
+            'download': "Download the document",
             'from': "Available in:",
             'fromAnd': "<br/>and",
             'skill': "Skills:",
@@ -25,6 +27,7 @@ var EncyclopediaHeroes = {
             'transfertToStudio': "Copia nello Studio",
             'transfertOK': "La scheda dell'Eroe è stata copiata nello Studio",
             'transfertConfirm': "Vuoi copiare la scheda nello Studio per modificarla o stamparla?",
+            'download': "Scarica il documento",
             'from': "Disponibile in:",
             'fromAnd': "<br/>e",
             'skill': "Abilità:",
@@ -371,6 +374,21 @@ var EncyclopediaHeroes = {
                     + EncyclopediaModels._linkToModel(sheet.model, true)
                     + "</div>";
         }
+        
+        var actions = [];
+        if (sheet.pdf)
+        {
+            actions.push({
+                label: EncyclopediaHeroes._i18n[Language].download,
+                icon: "encyclopedia-heroes-download",
+                fn: "EncyclopediaHeroes._download('" + id + "');"
+            });
+        }
+        actions.push({
+            label: EncyclopediaHeroes._i18n[Language].transfertToStudio,
+            icon: "encyclopedia-heroes-tostudio",
+            fn: "EncyclopediaHeroes._transfert('" + id + "');"
+        });
 
         Nav.dialog((sheet.name[Language] + (sheet.subname ? " " + sheet.subname[Language] : "")) || "",
             "<div class='herodetails'>"
@@ -383,12 +401,13 @@ var EncyclopediaHeroes = {
                 + superdetails
             + "</div>",
             null,
-            [{
-                label: EncyclopediaHeroes._i18n[Language].transfertToStudio,
-                icon: "encyclopedia-heroes-tostudio",
-                fn: "EncyclopediaHeroes._transfert('" + id + "');"
-            }]
+            actions
         );
+    },
+
+    _download: function(id) {
+        var hero = EncyclopediaHeroes._findHeroById(id);
+        window.open(hero.pdf);
     },
 
     _transfert: function(id) {

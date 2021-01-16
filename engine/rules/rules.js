@@ -37,7 +37,7 @@ var Rules = {
             'skills': "Abilità",
 
             'viewer-search': "Cerca nell'intero documento",
-            'viewer-download': "Scarica il pdf",
+            'viewer-download': "Scarica il documento",
             'viewer-zoomin': "Zoom in",
             'viewer-zoomout': "Zoom out",
 
