@@ -1784,7 +1784,7 @@
             "image_zoom": "89",
             "image_location": { "x": "9", "y": "50" },
             "model": "princess",
-            "origins": ["official"],
+            "origins": ["monolith-site"],
             "pdf": "https://www.kickstarter.com/projects/806316071/conan-the-conqueror-adventure-mode-expansion/posts/2779014?ref=ksr_email_backer_project_update_registered_users"
         },
         
@@ -1833,7 +1833,7 @@
             "image_zoom": "89",
             "image_location": { "x": "7.5", "y": "50" },
             "model": "afari",
-            "origins": ["official"],
+            "origins": ["monolith-site"],
             "pdf": "https://the-overlord.net/applications/core/interface/file/attachment.php?id=3841"
         },
                 
@@ -1867,7 +1867,7 @@
             "image_zoom": "89",
             "image_location": { "x": "7.5", "y": "50" },
             "model": "ghayoor",
-            "origins": ["official"],
+            "origins": ["monolith-site"],
             "pdf": "https://the-overlord.net/applications/core/interface/file/attachment.php?id=3841"
         },
                 
@@ -1901,7 +1901,7 @@
             "image_zoom": "90",
             "image_location": { "x": "6", "y": "51" },
             "model": "shafiah",
-            "origins": ["official"],
+            "origins": ["monolith-site"],
             "pdf": "https://the-overlord.net/applications/core/interface/file/attachment.php?id=3841"
         },
                 
@@ -1935,8 +1935,174 @@
             "image_zoom": "90",
             "image_location": { "x": "6", "y": "51" },
             "model": "shubba",
-            "origins": ["official"],
+            "origins": ["monolith-site"],
             "pdf": "https://the-overlord.net/applications/core/interface/file/attachment.php?id=3841"
+        },
+                
+        {
+            "id": "achilles",
+            "name": {
+                "fr": "Achille",
+                "en": "Achilles",
+                "it": "TODO_TRANSLATE"
+            },
+
+            "gems": 10,
+            "encumbrance": [12, 8, 10],
+
+            "melee": { "dice": "orange", "exertion": 5 },
+            "ranged": { "dice": "orange", "exertion": 4 },
+            "defense": { "dice": "orangereroll" },
+            "movement": { "base": "3", "exertion": 4 },
+            "manipulation": { "dice": "yellowreroll", "exertion": 4 },
+
+            "skills": [
+                { "id": "swimming", "exertion": 8 },
+                { "id": "leap", "exertion": 9 },
+                { "id": "climb", "exertion": 10 },
+                { "id": "counterattack" },
+                { "id": "ambidextrous" }
+            ],
+
+            "image": "data/heroes/img/achilles.png",
+            "imageHD": "data/heroes/img/achilles_hd.png",
+            "image_zoom": "90",
+            "image_location": { "x": "6", "y": "51" },
+            "model": null,
+            "origins": ["corinthia"]
+        },
+                
+        {
+            "id": "atalanta",
+            "name": {
+                "fr": "Atalante",
+                "en": "Atalanta",
+                "it": "TODO_TRANSLATE"
+            },
+
+            "gems": 10,
+            "encumbrance": [11, 6, 8],
+
+            "melee": { "dice": "orange", "exertion": 4 },
+            "ranged": { "dice": "orange", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "2", "exertion": 4 },
+            "manipulation": { "dice": "orange", "exertion": 3 },
+
+            "skills": [
+                { "id": "swimming", "exertion": 6 },
+                { "id": "leap", "exertion": 7 },
+                { "id": "feline_grace", "exertion": 7 },
+                { "id": "elite_shooter", "exertion": 8 },
+                { "id": "precision_shot", "exertion": 8 },
+                { "id": "climb", "exertion": 8 }
+            ],
+
+            "image": "data/heroes/img/atalanta.png",
+            "imageHD": "data/heroes/img/atalanta_hd.png",
+            "image_zoom": "90",
+            "image_location": { "x": "6", "y": "51" },
+            "model": null,
+            "origins": ["corinthia"]
+        },
+                
+        {
+            "id": "heracles",
+            "name": {
+                "fr": "Héraclès",
+                "en": "Heracles",
+                "it": "TODO_TRANSLATE"
+            },
+
+            "gems": 11,
+            "encumbrance": [13, 8, 10],
+
+            "melee": { "dice": "red", "exertion": 5 },
+            "ranged": { "dice": "orange", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "2", "exertion": 4 },
+            "manipulation": { "dice": "orange", "exertion": 3 },
+
+            "skills": [
+                { "id": "swimming", "exertion": 8 },
+                { "id": "leap", "exertion": 9 },
+                { "id": "constriction", "exertion": 10 },
+                { "id": "wall_wrecker", "exertion": 11 },
+                { "id": "circular_strike" }
+            ],
+
+            "image": "data/heroes/img/heracles.png",
+            "imageHD": "data/heroes/img/heracles_hd.png",
+            "image_zoom": "90",
+            "image_location": { "x": "6", "y": "51" },
+            "model": null,
+            "origins": ["corinthia"]
+        },
+                
+        {
+            "id": "leonidas",
+            "name": {
+                "fr": "Léonidas",
+                "en": "Leonidas",
+                "it": "TODO_TRANSLATE"
+            },
+
+            "gems": 10,
+            "encumbrance": [11, 7, 10],
+
+            "melee": { "dice": "orangereroll", "exertion": 4 },
+            "ranged": { "dice": "orange", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "2", "exertion": 4 },
+            "manipulation": { "dice": "orange", "exertion": 3 },
+
+            "skills": [
+                { "id": "leap", "exertion": 8 },
+                { "id": "support", "exertion": 9 },
+                { "id": "protected", "exertion": 9 },
+                { "id": "reach" },
+                { "id": "leadership" }
+            ],
+
+            "image": "data/heroes/img/leonidas.png",
+            "imageHD": "data/heroes/img/leonidas_hd.png",
+            "image_zoom": "90",
+            "image_location": { "x": "6", "y": "51" },
+            "model": null,
+            "origins": ["corinthia"]
+        },
+                
+        {
+            "id": "odysseus",
+            "name": {
+                "fr": "Ulysse",
+                "en": "Odysseus",
+                "it": "TODO_TRANSLATE"
+            },
+
+            "gems": 10,
+            "encumbrance": [9, 6, 8],
+
+            "melee": { "dice": "yellowreroll", "exertion": 3 },
+            "ranged": { "dice": "orange", "exertion": 4 },
+            "defense": { "dice": "yellowreroll" },
+            "movement": { "base": "2", "exertion": 4 },
+            "manipulation": { "dice": "orangereroll", "exertion": 3 },
+
+            "skills": [
+                { "id": "swimming", "exertion": 6 },
+                { "id": "elite_shooter", "exertion": 6 },
+                { "id": "leap", "exertion": 7 },
+                { "id": "support" },
+                { "id": "leadership" }
+            ],
+
+            "image": "data/heroes/img/odysseus.png",
+            "imageHD": "data/heroes/img/odysseus_hd.png",
+            "image_zoom": "90",
+            "image_location": { "x": "6", "y": "51" },
+            "model": null,
+            "origins": ["corinthia"]
         }
     ]
 }

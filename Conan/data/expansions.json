@@ -19,9 +19,9 @@
         }, {
             "id": "other",
             "text": {
-                "fr": "Autres extensions",
-                "en": "Other expansions",
-                "it": "Altre espansioni"
+                "fr": "Extensions simples",
+                "en": "Simple expansions",
+                "it": "TODO_TRANSLATE"
             },
             "single": false
         }, {
@@ -49,10 +49,10 @@
             },
             "single": false
         }, {
-            "id": "internet",
+            "id": "misc",
             "text": {
-                "fr": "Internet",
-                "en": "Internet",
+                "fr": "Divers",
+                "en": "Miscellaneous",
                 "it": "TODO_TRANSLATION"
             },
             "single": false
@@ -383,8 +383,8 @@
                 "it": "Arredi"
             }
         }, {
-            "id": "official",
-            "type": "internet",
+            "id": "monolith-site",
+            "type": "misc",
             "title": {
                 "fr": "Site Monolith",
                 "en": "Monolith site",
@@ -394,6 +394,19 @@
                 "fr": "Monolith",
                 "en": "Monolith",
                 "it": "Monolith"
+            }
+        }, {
+            "id": "corinthia",
+            "type": "misc",
+            "title": {
+                "fr": "Corinthia (Crossover avec MBP)",
+                "en": "Corinthia (MBP crossover)",
+                "it": "Corinthia (TODO_TRANSLATE)"
+            },
+            "short": {
+                "fr": "Corinthia",
+                "en": "Corinthia",
+                "it": "Corinthia"
             }
         }
     ]
