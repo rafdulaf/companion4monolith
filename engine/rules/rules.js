@@ -352,6 +352,8 @@ var Rules = {
 
     _endSearch: function(page, ratioX, ratioY)
     {
+        Rules._loadIframes();
+        
         var div = $("#" + Rules._rules[Rules._currentSlide].id);
         if (!div.is("zoom3") && !div.is("zoom2"))
         {
@@ -425,7 +427,7 @@ var Rules = {
         // pages
         for (var i = 1; i <= size; i++)
         {
-            s += "<iframe loading=\"lazy\" data-page='" + i + "' src=\"" + url + "/" + i + ".html?version=" + Version + "\"></iframe>";
+            s += "<iframe loading=\"lazy\" data-page='" + i + "' src=\"\about:blank\" data-src=\"" + url + "/" + i + ".html?version=" + Version + "\"></iframe>";
         }
 
         return s;
@@ -465,11 +467,22 @@ var Rules = {
         div.scrollTop(top);
         div.scrollLeft(left);
     },
+    
+    _loadIframes: function()
+    {
+        // Ensure iframes are lazy loaded
+        $("#" + Rules._rules[Rules._currentSlide].id + " iframe[data-src]").each(function(index, iframe) {
+            var $iframe = $(iframe);
+            iframe.src = $iframe.attr("data-src");
+            $iframe.attr("data-src", null)
+        });
+    },
 
     _zoom: function(direction, specificPage, ratioX, ratioY)
     {
+        Rules._loadIframes();
+        
         var div = $("#" + Rules._rules[Rules._currentSlide].id);
-
         var top = div.scrollTop();
         var height = div.height();
 
