@@ -1966,8 +1966,8 @@
 
             "image": "data/heroes/img/achilles.png",
             "imageHD": "data/heroes/img/achilles_hd.png",
-            "image_zoom": "90",
-            "image_location": { "x": "6", "y": "51" },
+            "image_zoom": "108",
+            "image_location": { "x": "9", "y": "59" },
             "model": null,
             "origins": ["corinthia"]
         },
@@ -1999,9 +1999,8 @@
             ],
 
             "image": "data/heroes/img/atalanta.png",
-            "imageHD": "data/heroes/img/atalanta_hd.png",
-            "image_zoom": "90",
-            "image_location": { "x": "6", "y": "51" },
+            "image_zoom": "106",
+            "image_location": { "x": "-2", "y": "49" },
             "model": null,
             "origins": ["corinthia"]
         },
@@ -2032,9 +2031,8 @@
             ],
 
             "image": "data/heroes/img/heracles.png",
-            "imageHD": "data/heroes/img/heracles_hd.png",
-            "image_zoom": "90",
-            "image_location": { "x": "6", "y": "51" },
+            "image_zoom": "134",
+            "image_location": { "x": "-8", "y": "72" },
             "model": null,
             "origins": ["corinthia"]
         },
@@ -2065,9 +2063,8 @@
             ],
 
             "image": "data/heroes/img/leonidas.png",
-            "imageHD": "data/heroes/img/leonidas_hd.png",
-            "image_zoom": "90",
-            "image_location": { "x": "6", "y": "51" },
+            "image_zoom": "109",
+            "image_location": { "x": "-20", "y": "50" },
             "model": null,
             "origins": ["corinthia"]
         },
@@ -2099,8 +2096,8 @@
 
             "image": "data/heroes/img/odysseus.png",
             "imageHD": "data/heroes/img/odysseus_hd.png",
-            "image_zoom": "90",
-            "image_location": { "x": "6", "y": "51" },
+            "image_zoom": "127",
+            "image_location": { "x": "0", "y": "70" },
             "model": null,
             "origins": ["corinthia"]
         }
