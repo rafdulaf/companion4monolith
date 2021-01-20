@@ -386,21 +386,21 @@
             "id": "monolith-site",
             "type": "misc",
             "title": {
-                "fr": "Site Monolith",
-                "en": "Monolith site",
+                "fr": "Cadeaux Monolith (site web ou actualités)",
+                "en": "Monolith's gifts (website or news)",
                 "it": "TODO_TRANSLATE"
             },
             "short": {
-                "fr": "Monolith",
-                "en": "Monolith",
-                "it": "Monolith"
+                "fr": "Cadeaux Monolith",
+                "en": "Monolith's gifts",
+                "it": "TODO_TRANSLATE"
             }
         }, {
             "id": "corinthia",
             "type": "misc",
             "title": {
-                "fr": "Corinthia (Crossover avec MBP)",
-                "en": "Corinthia (MBP crossover)",
+                "fr": "Corinthia (Crossover avec Mythic Battles Panthéon)",
+                "en": "Corinthia (Crossover wuth Mythic Battles Pantheon)",
                 "it": "Corinthia (TODO_TRANSLATE)"
             },
             "short": {

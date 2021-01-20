@@ -79,17 +79,16 @@
 .custom fieldset legend {
     font-size: calc(var(--secondary-size) * 1.5rem);
 }
+.custom fieldset >  div {
+    display: flex;
+}
 .custom fieldset label {
-    display: inline-block;
-    vertical-align: top;
     margin-left: 3px;
     line-height: calc(var(--secondary-line-height) * 2rem);
 }
 .custom input[type='checkbox'] {
     width: 16px;
     height: 16px;
-    display: inline-block;
-    vertical-align: top;
 }
 
 @media screen and (min-width: 600px) {
