@@ -446,39 +446,28 @@ var EncyclopediaTiles = {
     {
         var tokens = [];
 
-        // Tokens can be shared by several tiles. Model links them
-        var model = null;
-        for (var i = 0; i < Encyclopedia.models.list.length; i++)
+        if (tile.model)
         {
-            if (tile.model == Encyclopedia.models.list[i].id)
+            // Tokens can be shared by several tiles. Model links them
+            var tiles = [];
+            for (var i in Encyclopedia.tiles.list)
             {
-                model = Encyclopedia.models.list[i];
-                break;
-            }
-        }
-        if (model == null)
-        {
-            return tokens;
-        }
-
-        var tiles = [];
-        for (var i in Encyclopedia.tiles.list)
-        {
-            var tile = Encyclopedia.tiles.list[i];
-            if (tile.model == model.id)
-            {
-                tiles.push(tile);
-            }
-        }
-
-        for (var j = 0; j < tiles.length; j++)
-        {
-            var tile = tiles[j];
-            if (tile.tokens)
-            {
-                for (var k = 0; k < tile.tokens.length; k++)
+                var stile = Encyclopedia.tiles.list[i];
+                if (stile.model == tile.model)
                 {
-                    tokens.push(tile.tokens[k]);
+                    tiles.push(stile);
+                }
+            }
+    
+            for (var j = 0; j < tiles.length; j++)
+            {
+                var stile = tiles[j];
+                if (stile.tokens)
+                {
+                    for (var k = 0; k < stile.tokens.length; k++)
+                    {
+                        tokens.push(stile.tokens[k]);
+                    }
                 }
             }
         }
@@ -717,9 +706,12 @@ var EncyclopediaTiles = {
         if (tile.model)
         {
             var m = EncyclopediaModels._findModelsById(tile.model)[0];
-            model = "<div class='models'>"
-                    + EncyclopediaModels._linkToModel(tile.model, true)
-                    + "</div>";
+            if (m)
+            {
+                model = "<div class='models'>"
+                        + EncyclopediaModels._linkToModel(tile.model, true)
+                        + "</div>";
+            }
         }
 
         Nav.dialog(tile.name[Language] || "",

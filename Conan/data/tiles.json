@@ -365,7 +365,49 @@
     
             "count": 2
         },
+
+        {
+            "id": "giant-snake-2",
+            "name": {
+                "fr": "Serpent Géant",
+                "en": "Giant Snake",
+                "it": "Serpente Gigante"
+            },
     
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "orangereroll", "2": "orangereroll", "3": "none" },
+            "skills": { "0": "attack/counterattack", "1": "attack/constriction", "2": "none", "3": "none" },
+            "reinforcement": "",
+    
+            "quote": {
+                "text": {
+                    "fr": "C'était un serpent gigantesque, apparemment taillé dans une substance qui ressemblait à du jade. La moindre écaille était plus vraie que nature, et les couleurs iridescentes étaient reproduites à merveille. La grande tête triangulaire était à demi enfouie dans les replis de son corps sinueux, dissimulant à la vue du Cimmérien les yeux et la mâchoire de la bête. {...} Conan admira le tronc écaillé, aussi épais que sa cuisse et d'une longueur impressionnante et, curieux, tendit son bras pour toucher la chose. Son cœur faillit alors s'arrêter de battre. Son sang se glaça dans ses veines et les poils de sa nuque se hérissèrent. Ce n'était pas la surface polie et cassante du verre qu'il avait senti sous ses doigts, ni même du métal ou de la pierre, mais la substance souple et charnue d'une créature vivante.",
+                    "en": "It was a gigantic snake, apparently carved of some jadelike substance. Each scale stood out as distinctly as in real life, and the iridescent colors were vividly reproduced. The great wedge-shaped head was half submerged in the folds of its trunk; so neither the eyes nor jaws were visible. (…) Conan admired the scaly torso, thick as his thigh and obviously of great length, and he reached out and laid a curious hand on the thing. And as he did so, his heart nearly stopped. An icy chill congealed the blood in his veins and lifted the short hair on his scalp. Under his hand there was not the smooth, brittle surface of glass or metal or stone, but the yielding, fibrous mass of a living thing.",
+                    "it": "Era un serpente gigantesco, scolpito in una pietra simile alla giada. Ogni scaglia spiccava nitida, e i colori iridescenti erano riprodotti con estrema fedeltà. La grande testa a forma di cuneo era seminascosta tra le spire, e non erano visibili né gli occhi né le fauci. (...)Conan ammirò il tronco scaglioso, grosso come la sua coscia ed evidentemente lunghissimo; poi, incuriosito, tese la mano per toccarlo. In quell'istante, per poco il suo cuore non si arrestò. Un brivido diaccio gli gelò il sangue nelle vene e gli fece rizzare i capelli. Sotto la sua mano non sentiva la superficie levigata e fragile del vetro o del metallo o della pietra, ma la massa fibrosa e cedevole di una cosa viva. "
+                },
+                "origin": {
+                    "fr": "Diable d'Airain",
+                    "en": "The Devil in Iron",
+                    "it": "Il Diavolo di Ferro"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+    
+            "image": "data/tiles/img/giant-snake.png",
+            "imageHD": "data/tiles/img/giant-snake_hd.png",
+            "image_location": {"x":45, "y":45},
+            "image_zoom": 119,
+            "model": "giant-snake",
+            "origins": ["corinthia"],
+    
+            "count": 2
+        },   
+            
         {
             "id": "khosatral-khel",
             "name": {
@@ -701,6 +743,48 @@
             "image_zoom": 105,
             "model": "hyenas",
             "origins": ["corebox", "stretchgoal", "king"],
+    
+            "count": 2
+        },
+    
+        {
+            "id": "hyenas-enraged",
+            "name": {
+                "fr": "Hyènes Enragées",
+                "en": "Enraged Hyenas",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "colors": ["gray"],
+            "movement": "4",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "movement/leap", "1": "defense/untouchable", "2": "none", "3": "none" },
+            "reinforcement": "1",
+    
+            "quote": {
+                "text": {
+                    "fr": "Quelque chose bougea dans les ténèbres sous les arbres. Conan aperçut une tête et des épaules aux contours sombres et massifs se découper sous la lune naissante. De l'obscurité surgirent des formes sinistres ... elles s'approchèrent rapidement, en trottinant ... vingt hyènes mouchetées, énormes. Leurs crocs dégouttant de bave étincelaient dans la clarté lunaire ; leurs yeux flamboyaient comme jamais ceux d'un animal de ce monde n'ont brillé.",
+                    "en": "Something moved in the blackness under the trees. Etched abruptly in the rising moon, Conan saw a darkly blocked-out head and shoulders, brutish in outline. And now from the shadows dark shapes came silently, swiftly, running low—twenty great spotted hyenas. Their slavering fangs flashed in the moonlight, their eyes blazed as no true beast's eyes ever blazed.",
+                    "it": "Qualcosa si mosse nell'oscurità sotto gli alberi. Stagliate d'improvviso sullo sfondo della luna che s'innalzava, Conan vide una testa scura e un paio di spalle dal profilo animalesco. E poi dall'ombra si fecero avanti silenziosamente, rapidamente, alcune forme scure che correvano basse: venti enormi iene maculate. Le loro zanne schiumanti lampeggiavano al chiarore lunare, i loro occhi brillavano come mai avevano brillato gli occhi di un animale vero."
+                },
+                "origin": {
+                    "fr": "La Reine de la Côte Noire",
+                    "en": "Queen of the Black Coast",
+                    "it": "La Regina della Costa Nera"
+                },
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+    
+            "image": "data/tiles/img/hyenas.png",
+            "imageHD": "data/tiles/img/hyenas_hd.png",
+            "image_location": {"x":74, "y":57},
+            "image_zoom": 105,
+            "model": "hyenas",
+            "origins": ["corinthia"],
     
             "count": 2
         },
@@ -4108,6 +4192,590 @@
             "image_zoom": 100,
             "model": "assassins",
             "origins": ["stygia"]
-        }        
+        },
+
+        {
+            "id": "hoplites",
+            "name": {
+                "fr": "Hoplites",
+                "en": "Hoplites",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "colors": ["red", "green"],
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "attack/reach", "1": "defense/sacrifice", "2": "none", "3": "none" },
+            "reinforcement": "1",
+    
+            "image": "data/tiles/img/hoplites.png",
+            "imageHD": "data/tiles/img/hoplites_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "hoplites",
+            "origins": ["corinthia"]
+        },
+
+        {
+            "id": "winged-ape",
+            "name": {
+                "fr": "Singe Volant",
+                "en": "Winged Ape",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "colors": ["gray"],
+            "movement": "5",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "red", "2": "red", "3": "none" },
+            "skills": { "0": "miscellaneous/horror", "1": "movement/flying", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image_location": {"x":-4, "y":212}, "image_zoom": 440 }
+            ],
+    
+            "image": "data/tiles/img/hoplites.png",
+            "imageHD": "data/tiles/img/hoplites_hd.png",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "winged-ape",
+            "origins": ["corinthia"],
+            
+            "count": 2
+        },
+
+        {
+            "id": "heracles",
+            "name": {
+                "fr": "Héraclès",
+                "en": "Heracles",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "red", "2": "none", "3": "none" },
+            "skills": { "0": "attack/constriction", "1": "movement/wall_wrecker", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image_location": {"x":27, "y":224}, "image_zoom": 300 }
+            ],
+    
+            "image": "data/tiles/img/heracles.png",
+            "image_location": {"x":45, "y":74},
+            "image_zoom": 125,
+            "model": "heracles",
+            "origins": ["corinthia"]
+        },
+
+        {
+            "id": "leonidas",
+            "name": {
+                "fr": "Léonidas",
+                "en": "Leonidas",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "defense/protected", "1": "attack/reach", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image_location": {"x":44, "y":118}, "image_zoom": 360 }
+            ],
+    
+            "image": "data/tiles/img/leonidas.png",
+            "image_location": {"x":44, "y":46},
+            "image_zoom": 150,
+            "model": "leonidas",
+            "origins": ["corinthia"]
+        },
+
+        {
+            "id": "achilles",
+            "name": {
+                "fr": "Achille",
+                "en": "Achilles",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "orange", "2": "orange", "3": "none" },
+            "skills": { "0": "attack/counterattack", "1": "miscellaneous/support", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image_location": {"x":42, "y":182}, "image_zoom": 210 }
+            ],
+    
+            "image": "data/tiles/img/achilles.png",
+            "imageHD": "data/tiles/img/achilles_hd.png",
+            "image_location": {"x":53, "y":69},
+            "image_zoom": 85,
+            "model": "achilles",
+            "origins": ["corinthia"]
+        },
+
+        {
+            "id": "spartan",
+            "name": {
+                "fr": "Spartiates",
+                "en": "Spartans",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "attack/counterattack", "1": "movement/blocking", "2": "none", "3": "none" },
+            "reinforcement": "2",
+    
+            "image": "data/tiles/img/spartan.png",
+            "imageHD": "data/tiles/img/spartan_hd.png",
+            "image_location": {"x":53, "y":69},
+            "image_zoom": 85,
+            "model": "spartan",
+            "origins": ["corinthia"]
+        },
+
+        {
+            "id": "hell-warriors",
+            "name": {
+                "fr": "Guerriers des Enfers",
+                "en": "Hell Warriors",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "movement/climb", "1": "defense/sacrifice", "2": "none", "3": "none" },
+            "reinforcement": "2",
+    
+            "image": "data/tiles/img/hell-warriors.png",
+            "imageHD": "data/tiles/img/hell-warriors_hd.png",
+            "image_location": {"x":53, "y":69},
+            "image_zoom": 85,
+            "model": "hell-warriors",
+            "origins": ["corinthia"]
+        },
+
+        {
+            "id": "amazons",
+            "name": {
+                "fr": "Amazones",
+                "en": "Amazons",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "ranged",
+            "dices": { "0": "orange", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "movement/climb", "1": "attack/precision_shot", "2": "none", "3": "none" },
+            "reinforcement": "2",
+    
+            "image": "data/tiles/img/amazons.png",
+            "imageHD": "data/tiles/img/amazons_hd.png",
+            "image_location": {"x":53, "y":69},
+            "image_zoom": 85,
+            "model": "amazons",
+            "origins": ["corinthia"]
+        },
+
+        {
+            "id": "centaurs",
+            "name": {
+                "fr": "Centaures",
+                "en": "Centaurs",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "ranged",
+            "dices": { "0": "orangereroll", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "attack/elite_shooter", "1": "movement/evasive", "2": "none", "3": "none" },
+            "reinforcement": "3",
+    
+            "image": "data/tiles/img/centaurs.png",
+            "imageHD": "data/tiles/img/centaurs_hd.png",
+            "image_location": {"x":53, "y":69},
+            "image_zoom": 85,
+            "model": "centaurs",
+            "origins": ["corinthia"]
+        },
+
+        {
+            "id": "hellhounds",
+            "name": {
+                "fr": "Chiens des Enfers",
+                "en": "Hellhounds",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "colors": ["gray"],
+            "movement": "4",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "movement/feline_grace", "1": "miscellaneous/jinx", "2": "none", "3": "none" },
+            "reinforcement": "1",
+    
+            "image": "data/tiles/img/hellhounds.png",
+            "imageHD": "data/tiles/img/hellhounds_hd.png",
+            "image_location": {"x":53, "y":69},
+            "image_zoom": 85,
+            "model": "hellhounds",
+            "origins": ["corinthia"]
+        },
+
+        {
+            "id": "civilian-1",
+            "name": {
+                "fr": "Civil",
+                "en": "Civilian",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "0",
+            "attacktype": "contact",
+            "dices": { "0": "yellow", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+    
+            "image": "data/tiles/img/civilian-1.png",
+            "imageHD": "data/tiles/img/civilian-1_hd.png",
+            "image_location": {"x":53, "y":69},
+            "image_zoom": 85,
+            "model": "civilian-1",
+            "origins": ["corinthia"]
+        },
+
+        {
+            "id": "civilian-2",
+            "name": {
+                "fr": "Civil",
+                "en": "Civilian",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "0",
+            "attacktype": "contact",
+            "dices": { "0": "yellow", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+    
+            "image": "data/tiles/img/civilian-2.png",
+            "imageHD": "data/tiles/img/civilian-2_hd.png",
+            "image_location": {"x":53, "y":69},
+            "image_zoom": 85,
+            "model": "civilian-2",
+            "origins": ["corinthia"]
+        },
+
+        {
+            "id": "civilian-3",
+            "name": {
+                "fr": "Civile",
+                "en": "Civilian",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "0",
+            "attacktype": "contact",
+            "dices": { "0": "yellow", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+    
+            "image": "data/tiles/img/civilian-3.png",
+            "imageHD": "data/tiles/img/civilian-3_hd.png",
+            "image_location": {"x":53, "y":69},
+            "image_zoom": 85,
+            "model": "civilian-3",
+            "origins": ["corinthia"]
+        },
+
+        {
+            "id": "cerberus",
+            "name": {
+                "fr": "Cerbère",
+                "en": "Cerberus",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "orangereroll", "2": "orange", "3": "none" },
+            "skills": { "0": "attack/precision_strike", "1": "miscellaneous/horror", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image_location": {"x":-4, "y":212}, "image_zoom": 440 }
+            ],
+    
+            "image": "data/tiles/img/cerberus.png",
+            "imageHD": "data/tiles/img/cerberus_hd.png",
+            "image_location": {"x":53, "y":69},
+            "image_zoom": 85,
+            "model": "cerberus",
+            "origins": ["corinthia"]
+        },
+
+        {
+            "id": "medusa",
+            "name": {
+                "fr": "Méduse",
+                "en": "Medusa",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "3",
+            "attacktype": "ranged",
+            "dices": { "0": "yellow", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/fascination", "1": "magic/spell_caster", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image_location": {"x":-4, "y":212}, "image_zoom": 440 }
+            ],
+    
+            "image": "data/tiles/img/medusa.png",
+            "imageHD": "data/tiles/img/medusa_hd.png",
+            "image_location": {"x":53, "y":69},
+            "image_zoom": 85,
+            "model": "medusa",
+            "origins": ["corinthia"],
+            
+            "count": 2
+        },
+
+        {
+            "id": "ares",
+            "name": {
+                "fr": "Arès",
+                "en": "Ares",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "9",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "orangereroll", "3": "orangereroll" },
+            "skills": { "0": "attack/circular_strike", "1": "movement/evasive", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image_location": {"x":-4, "y":212}, "image_zoom": 440 }
+            ],
+    
+            "image": "data/tiles/img/ares.png",
+            "imageHD": "data/tiles/img/ares_hd.png",
+            "image_location": {"x":53, "y":69},
+            "image_zoom": 85,
+            "model": "ares",
+            "origins": ["corinthia"]
+        },
+
+        {
+            "id": "minotaur",
+            "name": {
+                "fr": "Minotaure",
+                "en": "Minotaur",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "red", "2": "red", "3": "none" },
+            "skills": { "0": "movement/wall_wrecker", "1": "movement/blocking", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image_location": {"x":-4, "y":212}, "image_zoom": 440 }
+            ],
+    
+            "image": "data/tiles/img/minotaur.png",
+            "imageHD": "data/tiles/img/minotaur_hd.png",
+            "image_location": {"x":53, "y":69},
+            "image_zoom": 85,
+            "model": "minotaur",
+            "origins": ["corinthia"]
+        },
+
+        {
+            "id": "odysseus",
+            "name": {
+                "fr": "Ulysse",
+                "en": "Odysseus",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "ranged",
+            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "attack/elite_shooter", "1": "miscellaneous/support", "2": "none", "3": "none" },
+            "reinforcement": "",
+             "tokens": [
+                { "image_location": {"x":43, "y":196}, "image_zoom": 260 }
+            ],
+    
+            "image": "data/tiles/img/odysseus.png",
+            "imageHD": "data/tiles/img/odysseus_hd.png",
+            "image_location": {"x":54, "y":53},
+            "image_zoom": 85,
+            "model": "odysseus",
+            "origins": ["corinthia"]
+        },
+
+        {
+            "id": "hydra-1",
+            "name": {
+                "fr": "Hydre",
+                "en": "Hydra",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "colors": ["gray"],
+            "movement": "1",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/jinx", "1": "attack/precision_strike", "2": "none", "3": "none" },
+            "reinforcement": "",
+             "tokens": [
+                { "image_location": {"x":-4, "y":212}, "image_zoom": 440 }
+            ],
+    
+            "image": "data/tiles/img/hydra.png",
+            "imageHD": "data/tiles/img/hydra_hd.png",
+            "image_location": {"x":53, "y":69},
+            "image_zoom": 85,
+            "model": "hydra",
+            "origins": ["corinthia"]
+        },
+
+        {
+            "id": "hydra-2",
+            "name": {
+                "fr": "Hydre",
+                "en": "Hydra",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "colors": ["gray"],
+            "movement": "1",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "defense/sacrifice", "1": "attack/attack_from_beyond", "2": "none", "3": "none" },
+            "reinforcement": "",
+    
+            "image": "data/tiles/img/hydra.png",
+            "imageHD": "data/tiles/img/hydra_hd.png",
+            "image_location": {"x":53, "y":69},
+            "image_zoom": 85,
+            "model": "hydra",
+            "origins": ["corinthia"]
+        },
+
+        {
+            "id": "hydra-3",
+            "name": {
+                "fr": "Hydre",
+                "en": "Hydra",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "colors": ["gray"],
+            "movement": "1",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "attack/counterattack", "1": "miscellaneous/horror", "2": "none", "3": "none" },
+            "reinforcement": "",
+    
+            "image": "data/tiles/img/hydra.png",
+            "imageHD": "data/tiles/img/hydra_hd.png",
+            "image_location": {"x":53, "y":69},
+            "image_zoom": 85,
+            "model": "hydra",
+            "origins": ["corinthia"]
+        },
+
+        {
+            "id": "hydra-4",
+            "name": {
+                "fr": "Hydre",
+                "en": "Hydra",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "colors": ["gray"],
+            "movement": "1",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "attack/constriction", "1": "attack/reach", "2": "none", "3": "none" },
+            "reinforcement": "",
+    
+            "image": "data/tiles/img/hydra.png",
+            "imageHD": "data/tiles/img/hydra_hd.png",
+            "image_location": {"x":53, "y":69},
+            "image_zoom": 85,
+            "model": "hydra",
+            "origins": ["corinthia"]
+        },
+
+        {
+            "id": "hydra-5",
+            "name": {
+                "fr": "Hydre",
+                "en": "Hydra",
+                "it": "TODO_TRANSLATE"
+            },
+    
+            "colors": ["gray"],
+            "movement": "1",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "movement/climb", "1": "movement/blocking", "2": "none", "3": "none" },
+            "reinforcement": "",
+    
+            "image": "data/tiles/img/hydra.png",
+            "imageHD": "data/tiles/img/hydra_hd.png",
+            "image_location": {"x":53, "y":69},
+            "image_zoom": 85,
+            "model": "hydra",
+            "origins": ["corinthia"]
+        }
     ]
 }

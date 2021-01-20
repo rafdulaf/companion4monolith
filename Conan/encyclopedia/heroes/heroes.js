@@ -370,9 +370,12 @@ var EncyclopediaHeroes = {
         if (sheet.model)
         {
             var m = EncyclopediaModels._findModelsById(sheet.model)[0];
-            model = "<div class='models'>"
-                    + EncyclopediaModels._linkToModel(sheet.model, true)
-                    + "</div>";
+            if (m)
+            {
+                model = "<div class='models'>"
+                        + EncyclopediaModels._linkToModel(sheet.model, true)
+                        + "</div>";
+            }
         }
         
         var actions = [];

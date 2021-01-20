@@ -1968,7 +1968,7 @@
             "imageHD": "data/heroes/img/achilles_hd.png",
             "image_zoom": "108",
             "image_location": { "x": "9", "y": "59" },
-            "model": null,
+            "model": "achilles",
             "origins": ["corinthia"]
         },
                 
@@ -2001,7 +2001,7 @@
             "image": "data/heroes/img/atalanta.png",
             "image_zoom": "106",
             "image_location": { "x": "-2", "y": "49" },
-            "model": null,
+            "model": "atalanta",
             "origins": ["corinthia"]
         },
                 
@@ -2033,7 +2033,7 @@
             "image": "data/heroes/img/heracles.png",
             "image_zoom": "134",
             "image_location": { "x": "-8", "y": "72" },
-            "model": null,
+            "model": "heracles",
             "origins": ["corinthia"]
         },
                 
@@ -2065,7 +2065,7 @@
             "image": "data/heroes/img/leonidas.png",
             "image_zoom": "109",
             "image_location": { "x": "-20", "y": "50" },
-            "model": null,
+            "model": "leonidas",
             "origins": ["corinthia"]
         },
                 
@@ -2098,7 +2098,7 @@
             "imageHD": "data/heroes/img/odysseus_hd.png",
             "image_zoom": "127",
             "image_location": { "x": "0", "y": "70" },
-            "model": null,
+            "model": "odysseus",
             "origins": ["corinthia"]
         }
     ]
