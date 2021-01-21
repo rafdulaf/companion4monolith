@@ -999,7 +999,7 @@
             "skills": { "0": "movement/leap", "1": "defense/sacrifice", "2": "none", "3": "none" },
             "reinforcement": "4",
             "tokens": [
-                { "image_location": {"x":67, "y":144}, "image_zoom": 280 }
+                { "image_location": {"x":44, "y":139}, "image_zoom": 220 }
             ],
     
             "quote": {
@@ -1021,7 +1021,7 @@
             "image": "data/tiles/img/zelatas-wolf.png",
             "imageHD": "data/tiles/img/zelatas-wolf_hd.png",
             "image_location": {"x":67, "y":59},
-            "image_zoom": 115,
+            "image_zoom": 87,
             "model": "giant-wolves",
             "origins": ["king"]
         },
@@ -3010,8 +3010,8 @@
     
             "image": "data/tiles/img/giant-wolves.png",
             "imageHD": "data/tiles/img/giant-wolves_hd.png",
-            "image_location": {"x":52, "y":60},
-            "image_zoom": 107,
+            "image_location": {"x":67, "y":59},
+            "image_zoom": 87,
             "model": "giant-wolves",
             "origins": ["giantwolves"],
     
@@ -3707,8 +3707,8 @@
     
             "image": "data/tiles/img/wolves.png",
             "imageHD": "data/tiles/img/wolves_hd.png",
-            "image_location": {"x":75, "y":57},
-            "image_zoom": 100,
+            "image_location": {"x":67, "y":59},
+            "image_zoom": 87,
             "model": "giant-wolves",
             "origins": ["nordheim"],
     
