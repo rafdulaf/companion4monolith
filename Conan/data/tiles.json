@@ -4237,8 +4237,7 @@
                 { "image_location": {"x":-4, "y":212}, "image_zoom": 440 }
             ],
     
-            "image": "data/tiles/img/hoplites.png",
-            "imageHD": "data/tiles/img/hoplites_hd.png",
+            "image": "data/tiles/img/winged-ape.png",
             "image_location": {"x":50, "y":50},
             "image_zoom": 100,
             "model": "winged-ape",
@@ -4343,7 +4342,6 @@
             "reinforcement": "2",
     
             "image": "data/tiles/img/spartan.png",
-            "imageHD": "data/tiles/img/spartan_hd.png",
             "image_location": {"x":53, "y":69},
             "image_zoom": 85,
             "model": "spartan",
