@@ -4536,7 +4536,6 @@
             ],
     
             "image": "data/tiles/img/cerberus.png",
-            "imageHD": "data/tiles/img/cerberus_hd.png",
             "image_location": {"x":53, "y":69},
             "image_zoom": 85,
             "model": "cerberus",
@@ -4563,7 +4562,6 @@
             ],
     
             "image": "data/tiles/img/medusa.png",
-            "imageHD": "data/tiles/img/medusa_hd.png",
             "image_location": {"x":53, "y":69},
             "image_zoom": 85,
             "model": "medusa",
