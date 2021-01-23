@@ -4212,8 +4212,8 @@
     
             "image": "data/tiles/img/hoplites.png",
             "imageHD": "data/tiles/img/hoplites_hd.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":43, "y":63},
+            "image_zoom": 130,
             "model": "hoplites",
             "origins": ["corinthia"]
         },
@@ -4234,12 +4234,12 @@
             "skills": { "0": "miscellaneous/horror", "1": "movement/flying", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":-4, "y":212}, "image_zoom": 440 }
+                { "image_location": {"x":115, "y":88}, "image_zoom": 466, "image": "data/tiles/img/winged-ape_token.png" }
             ],
     
             "image": "data/tiles/img/winged-ape.png",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":40, "y":56},
+            "image_zoom": 210,
             "model": "winged-ape",
             "origins": ["corinthia"],
             
@@ -4366,8 +4366,8 @@
     
             "image": "data/tiles/img/hell-warriors.png",
             "imageHD": "data/tiles/img/hell-warriors_hd.png",
-            "image_location": {"x":53, "y":69},
-            "image_zoom": 85,
+            "image_location": {"x":35, "y":56},
+            "image_zoom": 132,
             "model": "hell-warriors",
             "origins": ["corinthia"]
         },
@@ -4532,12 +4532,12 @@
             "skills": { "0": "attack/precision_strike", "1": "miscellaneous/horror", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":-4, "y":212}, "image_zoom": 440 }
+                { "image_location": {"x":78, "y":74}, "image_zoom": 260, "image": "data/tiles/img/cerberus_token.png" }
             ],
     
             "image": "data/tiles/img/cerberus.png",
-            "image_location": {"x":53, "y":69},
-            "image_zoom": 85,
+            "image_location": {"x":33, "y":54},
+            "image_zoom": 170,
             "model": "cerberus",
             "origins": ["corinthia"]
         },
@@ -4558,12 +4558,12 @@
             "skills": { "0": "miscellaneous/fascination", "1": "magic/spell_caster", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":-4, "y":212}, "image_zoom": 440 }
+                { "image_location": {"x":49, "y":121}, "image_zoom": 230 }
             ],
     
             "image": "data/tiles/img/medusa.png",
-            "image_location": {"x":53, "y":69},
-            "image_zoom": 85,
+            "image_location": {"x":55, "y":58},
+            "image_zoom": 140,
             "model": "medusa",
             "origins": ["corinthia"],
             
@@ -4586,13 +4586,13 @@
             "skills": { "0": "attack/circular_strike", "1": "movement/evasive", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":-4, "y":212}, "image_zoom": 440 }
+                { "image_location": {"x":45, "y":99}, "image_zoom": 250 }
             ],
     
             "image": "data/tiles/img/ares.png",
             "imageHD": "data/tiles/img/ares_hd.png",
-            "image_location": {"x":53, "y":69},
-            "image_zoom": 85,
+            "image_location": {"x":50, "y":43},
+            "image_zoom": 110,
             "model": "ares",
             "origins": ["corinthia"]
         },
@@ -4613,13 +4613,13 @@
             "skills": { "0": "movement/wall_wrecker", "1": "movement/blocking", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":-4, "y":212}, "image_zoom": 440 }
+                { "image_location": {"x":150, "y":107}, "image_zoom": 354, "image": "data/tiles/img/minotaur_token.png" }
             ],
     
             "image": "data/tiles/img/minotaur.png",
             "imageHD": "data/tiles/img/minotaur_hd.png",
-            "image_location": {"x":53, "y":69},
-            "image_zoom": 85,
+            "image_location": {"x":8, "y":60},
+            "image_zoom": 235,
             "model": "minotaur",
             "origins": ["corinthia"]
         },
@@ -4667,13 +4667,13 @@
             "skills": { "0": "miscellaneous/jinx", "1": "attack/precision_strike", "2": "none", "3": "none" },
             "reinforcement": "",
              "tokens": [
-                { "image_location": {"x":-4, "y":212}, "image_zoom": 440 }
+                { "image_location": {"x":-97, "y":158}, "image_zoom": 500 }
             ],
     
             "image": "data/tiles/img/hydra.png",
             "imageHD": "data/tiles/img/hydra_hd.png",
-            "image_location": {"x":53, "y":69},
-            "image_zoom": 85,
+            "image_location": {"x":6, "y":53},
+            "image_zoom": 220,
             "model": "hydra",
             "origins": ["corinthia"]
         },
@@ -4696,8 +4696,8 @@
     
             "image": "data/tiles/img/hydra.png",
             "imageHD": "data/tiles/img/hydra_hd.png",
-            "image_location": {"x":53, "y":69},
-            "image_zoom": 85,
+            "image_location": {"x":6, "y":53},
+            "image_zoom": 220,
             "model": "hydra",
             "origins": ["corinthia"]
         },
@@ -4720,8 +4720,8 @@
     
             "image": "data/tiles/img/hydra.png",
             "imageHD": "data/tiles/img/hydra_hd.png",
-            "image_location": {"x":53, "y":69},
-            "image_zoom": 85,
+            "image_location": {"x":6, "y":53},
+            "image_zoom": 220,
             "model": "hydra",
             "origins": ["corinthia"]
         },
@@ -4744,8 +4744,8 @@
     
             "image": "data/tiles/img/hydra.png",
             "imageHD": "data/tiles/img/hydra_hd.png",
-            "image_location": {"x":53, "y":69},
-            "image_zoom": 85,
+            "image_location": {"x":6, "y":53},
+            "image_zoom": 220,
             "model": "hydra",
             "origins": ["corinthia"]
         },
@@ -4768,8 +4768,8 @@
     
             "image": "data/tiles/img/hydra.png",
             "imageHD": "data/tiles/img/hydra_hd.png",
-            "image_location": {"x":53, "y":69},
-            "image_zoom": 85,
+            "image_location": {"x":6, "y":53},
+            "image_zoom": 220,
             "model": "hydra",
             "origins": ["corinthia"]
         }
