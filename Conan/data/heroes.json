@@ -1789,6 +1789,40 @@
         },
         
         {
+            "id": "othryades",
+            "name": {
+                "fr": "Othryades",
+                "en": "Othryades",
+                "it": "Othryades"
+            },
+
+            "gems": 10,
+            "encumbrance": [11, 8, 10],
+
+            "melee": { "dice": "red", "exertion": 4 },
+            "ranged": { "dice": "orange", "exertion": 5 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "2", "exertion": 4 },
+            "manipulation": { "dice": "yellowreroll", "exertion": 4 },
+
+            "skills": [
+                { "id": "leap", "exertion": 7 },
+                { "id": "climb", "exertion": 8 },
+                { "id": "precision_shot", "exertion": 8 },
+                { "id": "bodyguard", "exertion": 8 },
+                { "id": "counterattack", "exertion": 9 }
+            ],
+
+            "image": "data/heroes/img/othryades.png",
+            "imageHD": "data/heroes/img/othryades_hd.png",
+            "image_zoom": "111",
+            "image_location": { "x": "7", "y": "64" },
+            "model": "spartan",
+            "origins": ["monolith-site"],
+            "pdf": "https://the-overlord.com/index.php?/files/file/18-fiche-h%C3%A9ro-du-sparte-sans-nom/&do=download&csrfKey=6511709efb90be88ce81de8ae0973d19"
+        },        
+        
+        {
             "id": "afari",
             "name": {
                 "fr": "Afari",

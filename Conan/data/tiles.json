@@ -4342,8 +4342,9 @@
             "reinforcement": "2",
     
             "image": "data/tiles/img/spartan.png",
-            "image_location": {"x":53, "y":69},
-            "image_zoom": 85,
+            "imageHD": "data/tiles/img/spartan_hd.png",
+            "image_location": {"x":45, "y":63},
+            "image_zoom": 115,
             "model": "spartan",
             "origins": ["corinthia"]
         },
@@ -4390,8 +4391,8 @@
     
             "image": "data/tiles/img/amazons.png",
             "imageHD": "data/tiles/img/amazons_hd.png",
-            "image_location": {"x":53, "y":69},
-            "image_zoom": 85,
+            "image_location": {"x":44, "y":54},
+            "image_zoom": 121,
             "model": "amazons",
             "origins": ["corinthia"]
         },
@@ -4414,8 +4415,8 @@
     
             "image": "data/tiles/img/centaurs.png",
             "imageHD": "data/tiles/img/centaurs_hd.png",
-            "image_location": {"x":53, "y":69},
-            "image_zoom": 85,
+            "image_location": {"x":81, "y":77},
+            "image_zoom": 166,
             "model": "centaurs",
             "origins": ["corinthia"]
         },
@@ -4437,9 +4438,8 @@
             "reinforcement": "1",
     
             "image": "data/tiles/img/hellhounds.png",
-            "imageHD": "data/tiles/img/hellhounds_hd.png",
-            "image_location": {"x":53, "y":69},
-            "image_zoom": 85,
+            "image_location": {"x":49, "y":50},
+            "image_zoom": 107,
             "model": "hellhounds",
             "origins": ["corinthia"]
         },
@@ -4461,9 +4461,8 @@
             "reinforcement": "1",
     
             "image": "data/tiles/img/civilian-1.png",
-            "imageHD": "data/tiles/img/civilian-1_hd.png",
-            "image_location": {"x":53, "y":69},
-            "image_zoom": 85,
+            "image_location": {"x":54, "y":56},
+            "image_zoom": 50,
             "model": "civilian-1",
             "origins": ["corinthia"]
         },
@@ -4485,7 +4484,6 @@
             "reinforcement": "1",
     
             "image": "data/tiles/img/civilian-2.png",
-            "imageHD": "data/tiles/img/civilian-2_hd.png",
             "image_location": {"x":53, "y":69},
             "image_zoom": 85,
             "model": "civilian-2",
@@ -4509,7 +4507,6 @@
             "reinforcement": "1",
     
             "image": "data/tiles/img/civilian-3.png",
-            "imageHD": "data/tiles/img/civilian-3_hd.png",
             "image_location": {"x":53, "y":69},
             "image_zoom": 85,
             "model": "civilian-3",
