@@ -117,7 +117,8 @@
 
 .sheet.herosheet div.image img {
     position: absolute;
-    min-width: 100px; /* against lazy loading bug */
+    min-width: 100%; /* against lazy loading issue */
+    opacity: 0;  /* against lazy loading issue */
 }
 
 .sheet.herosheet div.name {

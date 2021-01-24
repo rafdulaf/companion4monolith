@@ -4484,8 +4484,8 @@
             "reinforcement": "1",
     
             "image": "data/tiles/img/civilian-2.png",
-            "image_location": {"x":53, "y":69},
-            "image_zoom": 85,
+            "image_location": {"x":53, "y":57},
+            "image_zoom": 72,
             "model": "civilian-2",
             "origins": ["corinthia"]
         },
@@ -4507,8 +4507,8 @@
             "reinforcement": "1",
     
             "image": "data/tiles/img/civilian-3.png",
-            "image_location": {"x":53, "y":69},
-            "image_zoom": 85,
+            "image_location": {"x":48.5, "y":55.5},
+            "image_zoom": 57,
             "model": "civilian-3",
             "origins": ["corinthia"]
         },

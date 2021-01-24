@@ -252,7 +252,7 @@ var Tile = {
 
         if (tile.image)
         {
-            code += "<div class=\"image\"><img " + LazyImage + " src=\"" + tile.image + "\" style=\"left: " + tile.imagelocation.x + "%; top: " + tile.imagelocation.y + "%; width: " + tile.imagezoom + "%; transform: translate(-50%, -50%) rotate(" + tile.imagerotation + "deg)\"/></div>";
+            code += "<div class=\"image\"><img " + LazyImage + " src=\"" + tile.image + "\" onload=\"this.style.minHeight = 0; this.style.opacity = 1\" style=\"left: " + tile.imagelocation.x + "%; top: " + tile.imagelocation.y + "%; width: " + tile.imagezoom + "%; transform: translate(-50%, -50%) rotate(" + tile.imagerotation + "deg)\"/></div>";
         }
 
         if (tile.name !== undefined && tile.name !== null)
