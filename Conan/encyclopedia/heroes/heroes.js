@@ -220,6 +220,50 @@ var EncyclopediaHeroes = {
                     }
                     return false;
                 }
+            },
+            
+            {
+                id: 'class',
+                label: {
+                    'fr': "Classe COOP",
+                    'en': "COOP class",
+                    'it': "TODO_TRANSLATE"
+                },
+                operator: "or/and",
+                values: [
+                    { id: 'warrior', label: {'fr':"Guerrier", 'en':"Warrior", 'it':"TODO_TRANSLATE" } },
+                    { id: 'rogue', label: {'fr':"Voleur", 'en':"Rogue", 'it':"TODO_TRANSLATE"} },
+                    { id: 'sorcerer', label: {'fr':"Sorcier", 'en':"Sorcerer", 'it':"TODO_TRANSLATE"} },
+                    { id: 'mercenary', label: {'fr':"Mercenaire", 'en':"Mercenary", 'it':"TODO_TRANSLATE"} },
+                    { id: 'warrior-nr', label: {'fr':"Guerrier (déconseillé)", 'en':"Warrior (not recommanded)", 'it':"TODO_TRANSLATE"} },
+                    { id: 'rogue-nr', label: {'fr':"Voleur (déconseillé)", 'en':"Rogue (not recommanded)", 'it':"TODO_TRANSLATE"} },
+                    { id: 'sorcerer-nr', label: {'fr':"Sorcier (déconseillé)", 'en':"Sorcerer (not recommanded)", 'it':"TODO_TRANSLATE"} },
+                    { id: 'mercenary-nr', label: {'fr':"Mercenaire (déconseillé)", 'en':"Mercenary (not recommanded)", 'it':"TODO_TRANSLATE"} },
+                    { id: 'none', label: {'fr':"Aucun", 'en':"None", 'it':"TODO_TRANSLATE"} }
+                ],
+                filter: function(item, selectedValues) {
+                    for (var i=0 ; i < selectedValues.length; i++)
+                    {
+                        if (item['class'] && item['class'].length > 0)
+                        {
+                            for (var j=0; j < item['class'].length; j++)
+                            {
+                                var clazz = item['class'][j];
+                                if ((selectedValues[i].startsWith(clazz['type'])
+                                    && ((clazz['not-recommanded'] && selectedValues[i].endsWith("-nr"))
+                                        || (!clazz['not-recommanded'] && !selectedValues[i].endsWith("-nr")))))
+                                {
+                                    return true;
+                                }
+                            }
+                        }
+                        else if (selectedValues[i] == "none")
+                        {
+                            return true;
+                        }
+                    }
+                    return false;
+                }
             }
         ]
     },

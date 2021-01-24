@@ -22,6 +22,7 @@
                     "name": "Robert E. Howard"
                 }
             },
+            "class": [{ "type": "rogue" }, { "type": "mercenary" }],
 
             "gems": 9,
             "encumbrance": [9, 7, 9],
@@ -70,6 +71,7 @@
                     "name": "Robert E. Howard"
                 }
             },
+            "class": [{ "type": "warrior" }],
 
             "gems": 11,
             "encumbrance": [12, 8, 10],
@@ -118,6 +120,7 @@
                     "name": "Robert E. Howard"
                 }
             },
+            "class": [{ "type": "sorcerer" }],
 
             "gems": 10,
             "encumbrance": [8, 5, 7],
@@ -164,6 +167,7 @@
                     "name": "Robert E. Howard"
                 }
             },
+            "class": [{ "type" : "rogue" }],
 
             "gems": 10,
             "encumbrance": [10, 6, 9],
@@ -212,6 +216,7 @@
                     "name": "Robert E. Howard"
                 }
             },
+            "class": [{ "type": "warrior" }],
 
             "gems": 11,
             "encumbrance": [11, 10, 11],
@@ -260,6 +265,7 @@
                     "name": "Robert E. Howard"
                 }
             },
+            "class": [{ "type" : "rogue" }, { "type": "mercenary" }],
 
             "gems": 11,
             "encumbrance": [12, 8, 10],
@@ -308,6 +314,7 @@
                     "name": "Robert E. Howard"
                 }
             },
+            "class": [{ "type" : "rogue" }],
 
             "gems": 10,
             "encumbrance": [10, 6, 8],
@@ -354,6 +361,7 @@
                     "name": "Robert E. Howard"
                 }
             },
+            "class": [{ "type": "sorcerer" }],
 
             "gems": 9,
             "encumbrance": [9, 7, 9],
@@ -403,6 +411,7 @@
                     "name": "Robert E. Howard"
                 }
             },
+            "class": [{ "type" : "rogue" }, { "type": "mercenary" }],
 
             "gems": 10,
             "encumbrance": [10, 9, 10],
@@ -450,6 +459,7 @@
                     "name": "Robert E. Howard"
                 }
             },
+            "class": [{ "type" : "rogue" }],
 
             "gems": 10,
             "encumbrance": [10, 7, 10],
@@ -504,6 +514,7 @@
                     "name": "Robert E. Howard"
                 }
             },
+            "class": [{"type": "warrior", "not-recommanded": true }],
 
             "gems": 11,
             "encumbrance": [12, 8, 10],
@@ -557,6 +568,7 @@
                     "name": "Robert E. Howard"
                 }
             },
+            "class": [{ "type": "warrior" }],
 
             "gems": 11,
             "encumbrance": [12, 8, 10],
@@ -610,6 +622,7 @@
                     "name": "Robert E. Howard"
                 }
             },
+            "class": [{ "type": "warrior" }],
 
             "gems": 11,
             "encumbrance": [12, 8, 10],
@@ -663,6 +676,7 @@
                     "name": "Robert E. Howard"
                 }
             },
+            "class": [{ "type": "warrior" }],
 
             "gems": 11,
             "encumbrance": [12, 9, 11],
@@ -711,6 +725,7 @@
                     "name": "Robert E. Howard"
                 }
             },
+            "class": [{ "type": "rogue" }],
 
             "gems": 10,
             "encumbrance": [10, 9, 10],
@@ -759,6 +774,7 @@
                     "name": "Robert E. Howard"
                 }
             },
+            "class": [{ "type": "warrior" }],
 
             "gems": 11,
             "encumbrance": [11, 8, 10],
@@ -806,6 +822,7 @@
                     "name": "Robert E. Howard"
                 }
             },
+            "class": [{ "type": "warrior" }],
 
             "gems": 11,
             "encumbrance": [11, 8, 10],
@@ -854,6 +871,7 @@
                     "name": "Robert E. Howard"
                 }
             },
+            "class": [{ "type": "sorcerer" }],
 
             "gems": 11,
             "encumbrance": [9, 6, 8],
@@ -907,6 +925,7 @@
                     "name": "Robert E. Howard"
                 }
             },
+            "class": [{ "type": "rogue" }],
 
             "gems": 10,
             "encumbrance": [9, 7, 8],
@@ -955,6 +974,7 @@
                     "name": "Robert E. Howard"
                 }
             },
+            "class": [{ "type": "rogue" }, { "type" : "mercenary" }],
 
             "gems": 10,
             "encumbrance": [11, 8, 10],
@@ -1003,6 +1023,7 @@
                     "name": "Robert E. Howard"
                 }
             },
+            "class": [{ "type": "warrior" }, { "type": "mercenary" }],
 
             "gems": 11,
             "encumbrance": [12, 8, 10],
@@ -1050,6 +1071,7 @@
                     "name": "Robert E. Howard"
                 }
             },
+            "class": [{ "type": "sorcerer" }],
 
             "gems": 10,
             "encumbrance": [10, 7, 9],
@@ -1096,6 +1118,7 @@
                     "name": "Robert E. Howard"
                 }
             },
+            "class": [{ "type": "warrior", "not-recommanded": true }],
 
             "gems": 14,
             "encumbrance": [14, 10, 12],
@@ -1143,6 +1166,7 @@
                     "name": "Robert E. Howard"
                 }
             },
+            "class": [{ "type": "warrior", "not-recommanded": true }],
 
             "gems": 10,
             "encumbrance": [12, 8, 10],
@@ -1191,6 +1215,7 @@
                     "name": "Robert E. Howard"
                 }
             },
+            "class": [{ "type": "sorcerer", "not-recommanded": true }],
 
             "gems": 10,
             "encumbrance": [8, 6, 8],
@@ -1238,6 +1263,7 @@
                     "name": "Robert E. Howard"
                 }
             },
+            "class": [{ "type": "warrior", "not-recommanded": true }],
 
             "gems": 10,
             "encumbrance": [10, 7, 9],
@@ -1286,6 +1312,7 @@
                     "name": "Robert E. Howard"
                 }
             },
+            "class": [],
 
             "gems": 12,
             "encumbrance": [13, 8, 10],
@@ -1339,6 +1366,7 @@
                     "name": "Robert E. Howard"
                 }
             },
+            "class": [{ "type": "rogue" }],
 
             "gems": 9,
             "encumbrance": [9, 7, 9],
@@ -1393,6 +1421,7 @@
                     "name": "Robert E. Howard"
                 }
             },
+            "class": [{ "type": "warrior" }],
 
             "gems": 11,
             "encumbrance": [11, 10, 11],
@@ -1446,6 +1475,7 @@
                     "name": "Robert E. Howard"
                 }
             },
+            "class": [{ "type": "mercenary" }],
 
             "gems": 9,
             "encumbrance": [9, 7, 9],
@@ -1499,6 +1529,7 @@
                     "name": "Robert E. Howard"
                 }
             },
+            "class": [{ "type": "warrior" }],
 
             "gems": 11,
             "encumbrance": [12, 8, 10],
@@ -1547,6 +1578,7 @@
                     "name": "Robert E. Howard"
                 }
             },
+            "class": [{ "type": "sorcerer" }],
 
             "gems": 9,
             "encumbrance": [9, 7, 8],
@@ -1600,6 +1632,7 @@
                     "name": "Robert E. Howard"
                 }
             },
+            "class": [{ "type": "warrior" }, { "type": "rogue" }],
 
             "gems": 10,
             "encumbrance": [10, 6, 8],
@@ -1647,6 +1680,7 @@
                     "name": "Robert E. Howard"
                 }
             },
+            "class": [{ "type": "rogue" }],
 
             "gems": 11,
             "encumbrance": [12, 8, 10],
@@ -1681,6 +1715,7 @@
                 "it": "Shentu"
             },
             "quote": null,
+            "class": [{ "type": "mercenary" }, { "type": "warrior" }],
 
             "gems": 10,
             "encumbrance": [11, 7, 9],
@@ -1727,6 +1762,7 @@
                     "name": ""
                 }
             },
+            "class": [{ "type": "rogue" }, { "type": "mercenary" }],
 
             "gems": 10,
             "encumbrance": [9, 6, 9],
@@ -1759,7 +1795,7 @@
                 "en": "Octavia",
                 "it": "Octavia"
             },
-            "class": "rogue",
+            "class": [{ "type": "rogue" }],
 
             "gems": 10,
             "encumbrance": [9, 8, 9],
@@ -1795,6 +1831,7 @@
                 "en": "Othryades",
                 "it": "Othryades"
             },
+            "class": [],
 
             "gems": 10,
             "encumbrance": [11, 8, 10],
@@ -1844,6 +1881,7 @@
                     "name": "Robert E. Howard"
                 }
             },
+            "class": [ { "type": "warrior" } ],
 
             "gems": 11,
             "encumbrance": [11, 8, 10],
@@ -1878,6 +1916,7 @@
                 "en": "Ghayoor",
                 "it": "Ghayoor"
             },
+            "class": [ { "type": "rogue" } ],
 
             "gems": 10,
             "encumbrance": [10, 8, 10],
@@ -1912,6 +1951,7 @@
                 "en": "Shafiah",
                 "it": "Shafiah"
             },
+            "class": [ { "type": "mercenary" } ],
 
             "gems": 10,
             "encumbrance": [10, 8, 10],
@@ -1946,6 +1986,7 @@
                 "en": "Shubba",
                 "it": "Shubba"
             },
+            "class": [{ "type": "sorcerer" }],
 
             "gems": 10,
             "encumbrance": [8, 7, 8],
@@ -1980,6 +2021,7 @@
                 "en": "Achilles",
                 "it": "TODO_TRANSLATE"
             },
+            "class": [],
 
             "gems": 10,
             "encumbrance": [12, 8, 10],
@@ -2013,6 +2055,7 @@
                 "en": "Atalanta",
                 "it": "TODO_TRANSLATE"
             },
+            "class": [],
 
             "gems": 10,
             "encumbrance": [11, 6, 8],
@@ -2046,6 +2089,7 @@
                 "en": "Heracles",
                 "it": "TODO_TRANSLATE"
             },
+            "class": [],
 
             "gems": 11,
             "encumbrance": [13, 8, 10],
@@ -2078,6 +2122,7 @@
                 "en": "Leonidas",
                 "it": "TODO_TRANSLATE"
             },
+            "class": [],
 
             "gems": 10,
             "encumbrance": [11, 7, 10],
@@ -2110,6 +2155,7 @@
                 "en": "Odysseus",
                 "it": "TODO_TRANSLATE"
             },
+            "class": [],
 
             "gems": 10,
             "encumbrance": [9, 6, 8],
