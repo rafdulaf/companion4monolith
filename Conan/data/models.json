@@ -1315,7 +1315,7 @@
             "id": "doors",
             "thumb": "data/models/img/doors_sd.jpg",
             "images": ["data/models/img/doors_1.jpg", "data/models/img/doors_2.jpg"],
-            "paint": null,
+            "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
             "type": "scenery",
             "origins": ["doorpack"],
             "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/",
@@ -1325,9 +1325,10 @@
         {
             "id": "winged-ape",
             "thumb": "data/models/img/winged-ape_sd.jpg",
-            "images": ["data/models/img/winged-ape.jpg"],
-            "paint": null,
+            "images": ["data/models/img/winged-ape_1.jpg", "data/models/img/winged-ape_2.jpg"],
+            "paint": { "name": "Epaka", "link": "https://the-overlord.net/index.php?/profile/266-epaka/" },
             "type": "monster",
+            "forum": "https://the-overlord.net/index.php?/topic/562-neither-man-beast-nor-devil-show-your-winged-ape/",
             "origins": ["corinthia"]
         },
         
@@ -1335,7 +1336,7 @@
             "id": "civilian",
             "thumb": "data/models/img/civilian_sd.jpg",
             "images": ["data/models/img/civilian-1.jpg", "data/models/img/civilian-2.jpg", "data/models/img/civilian-3.jpg"],
-            "paint": null,
+            "paint": { "name": "Jared Rutledge", "link": "https://boardgamegeek.com/user/biosludge"},
             "type": "human",
             "origins": ["corinthia"],
             "count": 15

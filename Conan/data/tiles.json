@@ -779,8 +779,8 @@
                 }
             },
     
-            "image": "data/tiles/img/hyenas.png",
-            "imageHD": "data/tiles/img/hyenas_hd.png",
+            "image": "data/tiles/img/enraged-hyenas.png",
+            "imageHD": "data/tiles/img/enraged-hyenas_hd.png",
             "image_location": {"x":74, "y":57},
             "image_zoom": 105,
             "model": "hyenas",
