@@ -268,18 +268,23 @@ var EncyclopediaTiles = {
                     }
                 ],
                 filter: function(item, selectedValues) {
-                    var model = null;
-                    for (var i = 0; i < Encyclopedia.models.list.length; i++)
+                    var modelType = item.modelType; // modelType specified on tile => no model (corinthia...)
+                    if (modelType == null)
                     {
-                        if (item.model == Encyclopedia.models.list[i].id)
+                        // otherwise seek type on model
+                        for (var i = 0; i < Encyclopedia.models.list.length; i++)
                         {
-                            model = Encyclopedia.models.list[i];
-                            break;
+                            if (item.model == Encyclopedia.models.list[i].id)
+                            {
+                                modelType = Encyclopedia.models.list[i].type;
+                                break;
+                            }
                         }
                     }
+                    // Depend on modelType
                     for (var i = 0; i < selectedValues.length; i++)
                     {
-                        if (selectedValues[i] == (model != null ? model.type : 'none'))
+                        if (selectedValues[i] == (modelType || 'none'))
                         {
                             return true;
                         }

@@ -1320,6 +1320,25 @@
             "origins": ["doorpack"],
             "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/",
             "count": 10
+        },
+        
+        {
+            "id": "winged-ape",
+            "thumb": "data/models/img/winged-ape_sd.jpg",
+            "images": ["data/models/img/winged-ape.jpg"],
+            "paint": null,
+            "type": "monster",
+            "origins": ["corinthia"]
+        },
+        
+        {
+            "id": "civilian",
+            "thumb": "data/models/img/civilian_sd.jpg",
+            "images": ["data/models/img/civilian-1.jpg", "data/models/img/civilian-2.jpg", "data/models/img/civilian-3.jpg"],
+            "paint": null,
+            "type": "human",
+            "origins": ["corinthia"],
+            "count": 15
         }
     ]
 }

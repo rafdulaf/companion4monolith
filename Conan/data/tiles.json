@@ -4214,7 +4214,7 @@
             "imageHD": "data/tiles/img/hoplites_hd.png",
             "image_location": {"x":43, "y":63},
             "image_zoom": 130,
-            "model": "hoplites",
+            "model": "hoplites", "modelType": "human",
             "origins": ["corinthia"]
         },
 
@@ -4268,7 +4268,7 @@
             "image": "data/tiles/img/heracles.png",
             "image_location": {"x":45, "y":74},
             "image_zoom": 125,
-            "model": "heracles",
+            "model": "heracles", "modelType": "human",
             "origins": ["corinthia"]
         },
 
@@ -4294,7 +4294,7 @@
             "image": "data/tiles/img/leonidas.png",
             "image_location": {"x":44, "y":46},
             "image_zoom": 150,
-            "model": "leonidas",
+            "model": "leonidas", "modelType": "human",
             "origins": ["corinthia"]
         },
 
@@ -4321,7 +4321,7 @@
             "imageHD": "data/tiles/img/achilles_hd.png",
             "image_location": {"x":53, "y":69},
             "image_zoom": 85,
-            "model": "achilles",
+            "model": "achilles", "modelType": "human",
             "origins": ["corinthia"]
         },
 
@@ -4369,7 +4369,7 @@
             "imageHD": "data/tiles/img/hell-warriors_hd.png",
             "image_location": {"x":35, "y":56},
             "image_zoom": 132,
-            "model": "hell-warriors",
+            "model": "hell-warriors", "modelType": "monster",
             "origins": ["corinthia"]
         },
 
@@ -4393,7 +4393,7 @@
             "imageHD": "data/tiles/img/amazons_hd.png",
             "image_location": {"x":44, "y":54},
             "image_zoom": 121,
-            "model": "amazons",
+            "model": "amazons", "modelType": "human",
             "origins": ["corinthia"]
         },
 
@@ -4417,7 +4417,7 @@
             "imageHD": "data/tiles/img/centaurs_hd.png",
             "image_location": {"x":81, "y":77},
             "image_zoom": 166,
-            "model": "centaurs",
+            "model": "centaurs", "modelType": "monster",
             "origins": ["corinthia"]
         },
 
@@ -4440,7 +4440,7 @@
             "image": "data/tiles/img/hellhounds.png",
             "image_location": {"x":49, "y":50},
             "image_zoom": 107,
-            "model": "hellhounds",
+            "model": "hellhounds", "modelType": "monster",
             "origins": ["corinthia"]
         },
 
@@ -4463,7 +4463,7 @@
             "image": "data/tiles/img/civilian-1.png",
             "image_location": {"x":54, "y":56},
             "image_zoom": 50,
-            "model": "civilian-1",
+            "model": "civilian",
             "origins": ["corinthia"]
         },
 
@@ -4486,7 +4486,7 @@
             "image": "data/tiles/img/civilian-2.png",
             "image_location": {"x":53, "y":57},
             "image_zoom": 72,
-            "model": "civilian-2",
+            "model": "civilian",
             "origins": ["corinthia"]
         },
 
@@ -4509,7 +4509,7 @@
             "image": "data/tiles/img/civilian-3.png",
             "image_location": {"x":48.5, "y":55.5},
             "image_zoom": 57,
-            "model": "civilian-3",
+            "model": "civilian",
             "origins": ["corinthia"]
         },
 
@@ -4535,7 +4535,7 @@
             "image": "data/tiles/img/cerberus.png",
             "image_location": {"x":33, "y":54},
             "image_zoom": 170,
-            "model": "cerberus",
+            "model": "cerberus", "modelType": "monster",
             "origins": ["corinthia"]
         },
 
@@ -4561,7 +4561,7 @@
             "image": "data/tiles/img/medusa.png",
             "image_location": {"x":55, "y":58},
             "image_zoom": 140,
-            "model": "medusa",
+            "model": "medusa", "modelType": "monster",
             "origins": ["corinthia"],
             
             "count": 2
@@ -4590,7 +4590,7 @@
             "imageHD": "data/tiles/img/ares_hd.png",
             "image_location": {"x":50, "y":43},
             "image_zoom": 110,
-            "model": "ares",
+            "model": "ares", "modelType": "human",
             "origins": ["corinthia"]
         },
 
@@ -4617,7 +4617,7 @@
             "imageHD": "data/tiles/img/minotaur_hd.png",
             "image_location": {"x":8, "y":60},
             "image_zoom": 235,
-            "model": "minotaur",
+            "model": "minotaur", "modelType": "monster",
             "origins": ["corinthia"]
         },
 
@@ -4644,7 +4644,7 @@
             "imageHD": "data/tiles/img/odysseus_hd.png",
             "image_location": {"x":54, "y":53},
             "image_zoom": 85,
-            "model": "odysseus",
+            "model": "odysseus", "modelType": "human",
             "origins": ["corinthia"]
         },
 
@@ -4671,7 +4671,7 @@
             "imageHD": "data/tiles/img/hydra_hd.png",
             "image_location": {"x":6, "y":53},
             "image_zoom": 220,
-            "model": "hydra",
+            "model": "hydra", "modelType": "monster",
             "origins": ["corinthia"]
         },
 
@@ -4695,7 +4695,7 @@
             "imageHD": "data/tiles/img/hydra_hd.png",
             "image_location": {"x":6, "y":53},
             "image_zoom": 220,
-            "model": "hydra",
+            "model": "hydra", "modelType": "monster",
             "origins": ["corinthia"]
         },
 
@@ -4719,7 +4719,7 @@
             "imageHD": "data/tiles/img/hydra_hd.png",
             "image_location": {"x":6, "y":53},
             "image_zoom": 220,
-            "model": "hydra",
+            "model": "hydra", "modelType": "monster",
             "origins": ["corinthia"]
         },
 
@@ -4743,7 +4743,7 @@
             "imageHD": "data/tiles/img/hydra_hd.png",
             "image_location": {"x":6, "y":53},
             "image_zoom": 220,
-            "model": "hydra",
+            "model": "hydra", "modelType": "monster",
             "origins": ["corinthia"]
         },
 
@@ -4767,7 +4767,7 @@
             "imageHD": "data/tiles/img/hydra_hd.png",
             "image_location": {"x":6, "y":53},
             "image_zoom": 220,
-            "model": "hydra",
+            "model": "hydra", "modelType": "monster",
             "origins": ["corinthia"]
         }
     ]
