@@ -9,7 +9,7 @@ About = mergeObject(About, {
                     + "Le logo Conan et les polices de caractères utilisées sont la propriété de Monolith.<br/>"
                     + "L'image du 'Compagnion de Conan' a été créée à partir du logo Conan.<br/>",
             'tolink': "https://the-overlord.com/index.php?/topic/3095-application-de-compagnon-de-jeu/",
-            
+
             'contribute_hof_dataIT': "(traduction italienne)",
             'contribute_hof_dataCorinthia': "(données Corinthia)"
         },
@@ -22,7 +22,7 @@ About = mergeObject(About, {
                     + "The Conan logo and the fonts used are the property of Monolith.<br/>"
                     + "The image of 'Companion to Conan' was created by adapting the Conan logo.<br/>",
             'tolink': "https://the-overlord.net/index.php?/topic/756-companion-application-for-conan/",
-            
+
             'contribute_hof_dataIT': "(italian translation)",
             'contribute_hof_dataCorinthia': "(Corinthia data)"
         },
@@ -35,12 +35,12 @@ About = mergeObject(About, {
                     + "Il logo di Conan e i fonts usati sono proprietà della Monolith.<br/>"
                     + "Le immagini di 'Conan Companion' sono state create adattando il logo di Conan.<br/>",
             'tolink': "https://the-overlord.net/index.php?/topic/756-companion-application-for-conan/",
-            
+
             'contribute_hof_dataIT': "(traduzione italiana)",
-            'contribute_hof_dataCorinthia': "TODO_TRANSLATE"
+            'contribute_hof_dataCorinthia': "(contributo su Corinthia)"
         }
     },
-    
+
     _haf: function() {
         return {
             'coders' : "<div><a href=\"https://the-overlord.com/index.php?/profile/5240-cochon/\" target='_blank'>@cochon</a></div>",

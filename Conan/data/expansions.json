@@ -21,7 +21,7 @@
             "text": {
                 "fr": "Extensions simples",
                 "en": "Simple expansions",
-                "it": "TODO_TRANSLATE"
+                "it": "Espansioni base"
             },
             "single": false
         }, {
@@ -53,7 +53,7 @@
             "text": {
                 "fr": "Divers",
                 "en": "Miscellaneous",
-                "it": "TODO_TRANSLATION"
+                "it": "Altre"
             },
             "single": false
         }
@@ -99,8 +99,8 @@
                 "en": "King box",
                 "it": "King box"
             }
-        }, 
-        
+        },
+
         {
             "id": "stygia",
             "type": "regional",
@@ -140,8 +140,8 @@
                 "en": "Khitaï",
                 "it": "Khitai"
             }
-        }, 
-        
+        },
+
         {
             "id": "crossbowmen",
             "type": "other",
@@ -285,8 +285,8 @@
                 "en": "Sabretooth tiger",
                 "it": "Tigre dai denti a sciabola"
             }
-        }, 
-        
+        },
+
         {
             "id": "campaignbook",
             "type": "books",
@@ -313,8 +313,8 @@
                 "en": "Book of Set",
                 "it": "Libro di Set"
             }
-        }, 
-        
+        },
+
         {
             "id": "xcbox",
             "type": "artists",
@@ -354,8 +354,8 @@
                 "en": "Paolo Parente Box",
                 "it": "Paolo Parente Box"
             }
-        }, 
-        
+        },
+
         {
             "id": "doorpack",
             "type": "decoration",
@@ -388,12 +388,12 @@
             "title": {
                 "fr": "Cadeaux Monolith (site web ou actualités)",
                 "en": "Monolith's gifts (website or news)",
-                "it": "TODO_TRANSLATE"
+                "it": "Regali Monolith (sito web o novità)"
             },
             "short": {
                 "fr": "Cadeaux Monolith",
                 "en": "Monolith's gifts",
-                "it": "TODO_TRANSLATE"
+                "it": "Regali Monolith"
             }
         }, {
             "id": "corinthia",
@@ -401,7 +401,7 @@
             "title": {
                 "fr": "Corinthia (Crossover avec Mythic Battles Panthéon)",
                 "en": "Corinthia (Crossover wuth Mythic Battles Pantheon)",
-                "it": "Corinthia (TODO_TRANSLATE)"
+                "it": "Corinthia (Crossover con Mytic Battles Pantheon)"
             },
             "short": {
                 "fr": "Corinthia",
