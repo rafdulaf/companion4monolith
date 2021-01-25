@@ -1,37 +1,2496 @@
 {
     "list": [
         {
+            "id": "security-pass",
+            "title": {
+                "fr": "Security pass",
+                "en": "Security pass"
+            },
+            "batgadget": false,
+            "type": "object",
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 0, 
+            "image": "data/equipments/img/security-pass-orange.png",
+            "origins": ["corebox"]
+        },
+        {
+            "id": "security-pass",
+            "title": {
+                "fr": "Security pass",
+                "en": "Security pass"
+            },
+            "batgadget": false,
+            "type": "object",
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 0, 
+            "image": "data/equipments/img/security-pass-white.png",
+            "origins": ["corebox"]
+        },
+        {
+            "id": "security-pass",
+            "title": {
+                "fr": "Security pass",
+                "en": "Security pass"
+            },
+            "batgadget": false,
+            "type": "object",
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 0, 
+            "image": "data/equipments/img/security-pass-black.png",
+            "origins": ["corebox"]
+        },
+        {
+            "id": "information",
+            "title": {
+                "fr": "Information",
+                "en": "Information"
+            },
+            "batgadget": false,
+            "type": "object",
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 0, 
+            "image": "data/equipments/img/information.png",
+            "origins": ["corebox"]
+        },
+        {
+            "id": "gas-mask",
+            "title": {
+                "fr": "Gas mask",
+                "en": "Gas mask"
+            },
+            "batgadget": false,
+            "type": "tool",
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 1, 
+ 			"bonus" : {
+				"0": {
+					"type": "infinite",
+					"dice": [],
+					"effects": [
+						{ 
+						   "type": "gas_immunity"
+						}
+					]
+				}
+			},
+			"image": "data/equipments/img/gas-mask.png",
+            "origins": ["corebox"]
+        },
+        {
+            "id": "baton",
+            "title": {
+                "fr": "Baton",
+                "en": "Baton"
+            },
+            "batgadget": false,
+            "type": "melee-weapon",
+            "restricted": { "name" : "Nightwing", "position": "bottomleft" }, 
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 1, 
+ 			"bonus" : {
+				"0": {
+					"type": "melee",
+					"dice": ["yellowreroll"],
+					"effects": [
+						{ 
+							"type": "electricity",
+							"value": 1
+						}
+					]
+				}
+			},
+			"image": "data/equipments/img/baton.png",
+            "origins": ["corebox"],
+			"count": 2
+        },
+        {
+            "id": "police-badge",
+            "title": {
+                "fr": "Police badge",
+                "en": "Police badge"
+            },
+            "batgadget": false,
+            "type": "object",
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 0, 
+            "image": "data/equipments/img/police-badge.png",
+            "origins": ["corebox"]
+        },
+        {
+            "id": "service-revolver",
+            "title": {
+                "fr": "Service revolver",
+                "en": "Service revolver"
+            },
+            "batgadget": false,
+            "type": "ranged-weapon",
+            "lethal": true,
+            "discard": false,
+            "encumbrance": 2, 
+ 			"bonus" : {
+				"0": {
+					"type": "range",
+					"dice": ["black"]
+				}
+			},
+			"image": "data/equipments/img/service-revolver.png",
+            "origins": ["corebox"]
+        },		
+        {
+            "id": "service-gun",
+            "title": {
+                "fr": "Service gun",
+                "en": "Service gun"
+            },
+            "batgadget": false,
+            "type": "ranged-weapon",
+            "lethal": true,
+            "discard": false,
+            "encumbrance": 1, 
+ 			"bonus" : {
+				"0": {
+					"type": "range",
+					"dice": ["orange"]
+				}
+			},
+			"image": "data/equipments/img/service-gun.png",
+            "origins": ["corebox"],
+			"count": 3
+        },			
+        {
+            "id": "revolver",
+            "title": {
+                "fr": "Revolver",
+                "en": "Revolver"
+            },
+            "batgadget": false,
+            "type": "ranged-weapon",
+            "restricted": { "name" : "Red Hood", "position": "topleft" }, 
+            "lethal": true,
+            "discard": false,
+            "encumbrance": 1, 
+ 			"bonus" : {
+				"0": {
+					"type": "range",
+					"dice": ["redreroll"]
+				}
+			},
+			"image": "data/equipments/img/revolver.png",
+            "origins": ["corebox"]
+        },			
+        {
+            "id": "claws",
+            "title": {
+                "fr": "Claws",
+                "en": "Claws"
+            },
+            "batgadget": false,
+            "type": "melee-weapon",
+            "restricted": { "name" : "Catwoman", "position": "right" }, 
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 0, 
+ 			"bonus" : {
+				"0": {
+					"type": "melee",
+					"dice": ["yellow"]
+				}
+			},
+			"image": "data/equipments/img/claws.png",
+            "origins": ["corebox"]
+        },		
+        {
+            "id": "hacking-equipment",
+            "title": {
+                "fr": "Hacking equipment",
+                "en": "Hacking equipment"
+            },
+            "batgadget": false,
+            "type": "tool",
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 0, 
+ 			"bonus" : {
+				"0": {
+					"type": "thought",
+					"effects": [
+						{ 
+							"type": "hacking",
+							"value": 1
+						}
+					]
+				}
+			},
+			"image": "data/equipments/img/hacking-equipment.png",
+            "origins": ["corebox"]
+        },			
+        {
+            "id": "medikit",
+            "title": {
+                "fr": "Medikit",
+                "en": "Medikit"
+            },
+            "batgadget": false,
+            "type": "tool",
+            "lethal": false,
+            "discard": true,
+            "encumbrance": 1, 
+ 			"bonus" : {
+				"0": {
+					"type": "infinite",
+					"effects": [
+						{ 
+							"type": "regeneration",
+							"value": 2
+						}
+					]
+				}
+			},
+			"image": "data/equipments/img/medikit.png",
+            "origins": ["corebox"],
+			"count" : 2
+        },			
+        {
+            "id": "whip",
+            "title": {
+                "fr": "Whip",
+                "en": "Whip"
+            },
+            "batgadget": false,
+            "type": "melee-weapon",
+            "restricted": { "name" : "Catwoman", "position": "bottom" }, 
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 2, 
+ 			"bonus" : {
+				"0": {
+					"type": "melee",
+					"dice": ["yellowreroll"],
+					"effects": [
+						{ 
+							"type": "reach",
+							"value": 1
+						}
+					]
+				}
+			},
+			"image": "data/equipments/img/whip.png",
+            "origins": ["corebox"]
+        },				
+        {
+            "id": "crowbar",
+            "title": {
+                "fr": "Crowbar",
+                "en": "Crowbar"
+            },
+            "batgadget": false,
+            "type": "melee-weapon",
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 1, 
+ 			"bonus" : {
+				"0": {
+					"type": "melee",
+					"dice": ["orange"]
+				}
+			},
+			"image": "data/equipments/img/crowbar.png",
+            "origins": ["corebox"]
+        },			
+        {
+            "id": "long-baton",
+            "title": {
+                "fr": "Long baton",
+                "en": "Long baton"
+            },
+            "batgadget": false,
+            "type": "melee-weapon",
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 2, 
+ 			"bonus" : {
+				"0": {
+					"type": "melee",
+					"dice": ["orange"],
+					"effects": [
+						{ 
+							"type": "circular_strike",
+							"value": 2
+						}
+					]
+				}
+			},
+			"image": "data/equipments/img/long-baton.png",
+            "origins": ["corebox"]
+        },			
+        {
+            "id": "bulletproof-vest",
+            "title": {
+                "fr": "Bulletproof vest",
+                "en": "Bulletproof vest"
+            },
+            "batgadget": false,
+            "type": "tool",
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 2, 
+ 			"bonus" : {
+				"0": {
+					"type": "defense",
+					"dice": ["orange"]
+				}
+			},
+			"image": "data/equipments/img/bulletproof-vest.png",
+            "origins": ["corebox"]
+        },			
+        {
+            "id": "shotgun",
+            "title": {
+                "fr": "Shotgun",
+                "en": "Shotgun"
+            },
+            "batgadget": false,
+            "type": "ranged-weapon",
+            "lethal": true,
+            "discard": false,
+            "encumbrance": 3, 
+ 			"bonus" : {
+				"0": {
+					"type": "range",
+					"dice": ["black"],
+					"effects": [
+						{ 
+							"type": "pointblank",
+							"value": 1
+						}
+					]
+				}
+			},
+			"image": "data/equipments/img/shotgun.png",
+            "origins": ["corebox"]
+        },		
+        {
+            "id": "throwing-blades",
+            "title": {
+                "fr": "Throwing blades",
+                "en": "Throwing blades"
+            },
+            "batgadget": false,
+            "type": "ranged-weapon",
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 1, 
+ 			"bonus" : {
+				"0": {
+					"type": "range",
+					"dice": ["yellowreroll"]
+				}
+			},
+			"image": "data/equipments/img/throwing-blades.png",
+            "origins": ["corebox"]
+        },			
+        {
+            "id": "flaming-sword",
+            "title": {
+                "fr": "Flaming sword",
+                "en": "Flaming sword"
+            },
+            "batgadget": false,
+            "type": "melee-weapon",
+            "restricted": { "name" : "Azrael", "position": "bottom" }, 
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 2, 
+ 			"bonus" : {
+				"0": {
+					"type": "melee",
+					"dice": ["red"]
+				}
+			},
+			"image": "data/equipments/img/flaming-sword.png",
+            "origins": ["corebox"]
+        },			
+        {
+            "id": "nunchaku",
+            "title": {
+                "fr": "Nunchaku",
+                "en": "Nunchaku"
+            },
+            "batgadget": false,
+            "type": "melee-weapon",
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 1, 
+ 			"bonus" : {
+				"0": {
+					"type": "melee",
+					"dice": ["orange"],
+					"effects": [
+						{ 
+							"type": "circular_strike",
+							"value": 1
+						}
+					]
+				}
+			},
+			"image": "data/equipments/img/nunchaku.png",
+            "origins": ["corebox"]
+        },		
+        {
+            "id": "gas-capsule",
+            "title": {
+                "fr": "Gas capsule",
+                "en": "Gas capsule"
+            },
+            "batgadget": false,
+            "type": "object",
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 0,
+			"image": "data/equipments/img/gas-capsule.png",
+            "origins": ["corebox"]
+        },			
+        {
+            "id": "taser-rifle",
+            "title": {
+                "fr": "Taser rifle",
+                "en": "Taser rifle"
+            },
+            "batgadget": false,
+            "type": "ranged-weapon",
+            "restricted": { "name" : "Bluebird", "position": "bottom" }, 
+            "lethal": true,
+            "discard": false,
+            "encumbrance": 3, 
+ 			"bonus" : {
+				"0": {
+					"type": "range",
+					"dice": ["red"],
+					"effects": [
+						{ 
+							"type": "electricity",
+							"value": 2
+						}
+					]
+				}
+			},
+			"image": "data/equipments/img/taser-rifle.png",
+            "origins": ["corebox"]
+        },			
+		{
+            "id": "taser-handgun",
+            "title": {
+                "fr": "Taser handgun",
+                "en": "Taser handgun"
+            },
+            "batgadget": false,
+            "type": "melee-weapon",
+            "restricted": { "name" : "Bluebird", "position": "bottomleft" }, 
+            "lethal": true,
+            "discard": false,
+            "encumbrance": 1, 
+ 			"bonus" : {
+				"0": {
+					"type": "melee",
+					"dice": ["orange"],
+					"effects": [
+						{ 
+							"type": "electricity",
+							"value": 1
+						}
+					]
+				}
+			},
+			"image": "data/equipments/img/taser-handgun.png",
+            "origins": ["corebox"],
+			"count": 2
+        },	
+        {
+            "id": "sniper-rifle",
+            "title": {
+                "fr": "Sniper rifle",
+                "en": "Sniper rifle"
+            },
+            "batgadget": false,
+            "type": "ranged-weapon",
+            "lethal": true,
+            "discard": false,
+            "encumbrance": 3, 
+ 			"bonus" : {
+				"0": {
+					"type": "range",
+					"dice": ["redreroll"],
+					"automatic-success" : 1
+				}
+			},
+			"image": "data/equipments/img/sniper-rifle.png",
+            "origins": ["corebox"]
+        },		
+		{
+            "id": "katana",
+            "title": {
+                "fr": "Katana",
+                "en": "Katana"
+            },
+            "batgadget": false,
+            "type": "melee-weapon",
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 2, 
+ 			"bonus" : {
+				"0": {
+					"type": "melee",
+					"dice": ["orangereroll"]
+				}
+			},
+			"image": "data/equipments/img/katana.png",
+            "origins": ["corebox"]
+        },	
+		{
+            "id": "kryptonite-fragment",
+            "title": {
+                "fr": "Kryptonite fragment",
+                "en": "Kryptonite fragment"
+            },
+            "batgadget": false,
+            "type": "object",
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 0,
+			"image": "data/equipments/img/kryptonite-fragment.png",
+            "origins": ["corebox"]
+        }, 		
+        {
+            "id": "machine-pistol",
+            "title": {
+                "fr": "Machine pistol",
+                "en": "Machine pistol"
+            },
+            "batgadget": false,
+            "type": "ranged-weapon",
+            "lethal": true,
+            "discard": false,
+            "encumbrance": 1, 
+ 			"bonus" : {
+				"0": {
+					"type": "range",
+					"dice": ["white","white"],
+					"effects": [
+						{ 
+							"type": "burst",
+							"value": 2
+						}
+					]
+				}
+			},
+			"image": "data/equipments/img/machine-pistol.png",
+            "origins": ["corebox"]
+        },		
+        {
+            "id": "short-baton",
+            "title": {
+                "fr": "Short baton",
+                "en": "Short baton"
+            },
+            "batgadget": false,
+            "type": "melee-weapon",
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 1, 
+ 			"bonus" : {
+				"0": {
+					"type": "melee",
+					"dice": ["yellowreroll"]
+				}
+			},
+			"image": "data/equipments/img/short-baton.png",
+            "origins": ["corebox"]
+        },
+        {
+            "id": "lockpicking-equipment",
+            "title": {
+                "fr": "Lockpicking equipment",
+                "en": "Lockpicking equipment"
+            },
+            "batgadget": false,
+            "type": "tool",
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 0, 
+ 			"bonus" : {
+				"0": {
+					"type": "manipulation",
+					"effects": [
+						{ 
+							"type": "lock_piking",
+							"value": 1
+						}
+					]
+				}
+			},
+			"image": "data/equipments/img/lockpicking-equipment.png",
+            "origins": ["corebox"]
+        },			
+        {
+            "id": "baseball-bat",
+            "title": {
+                "fr": "Baseball bat",
+                "en": "Baseball bat"
+            },
+            "batgadget": false,
+            "type": "melee-weapon",
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 2, 
+ 			"bonus" : {
+				"0": {
+					"type": "melee",
+					"dice": ["whitereroll"]
+				}
+			},
+			"image": "data/equipments/img/baseball-bat.png",
+            "origins": ["corebox"]
+        },		
+        {
+            "id": "tonfa",
+            "title": {
+                "fr": "Tonfa",
+                "en": "Tonfa"
+            },
+            "batgadget": false,
+            "type": "melee-weapon",
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 1, 
+ 			"bonus" : {
+				"0": {
+					"type": "melee",
+					"dice": ["yellow"]
+				},
+				"1": {
+					"type": "infinite",
+					"effects": [
+						{ 
+							"type": "counterattack",
+							"value": 1
+						}
+					]
+				}
+				
+			},
+			"image": "data/equipments/img/tonfa.png",
+            "origins": ["corebox"]
+        },			
+        {
+            "id": "fire-axe",
+            "title": {
+                "fr": "Fire axe",
+                "en": "Fire axe"
+            },
+            "batgadget": false,
+            "type": "melee-weapon",
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 3, 
+ 			"bonus" : {
+				"0": {
+					"type": "melee",
+					"dice": ["red"]
+				},
+				"1": {
+					"type": "infinite",
+					"effects": [
+						{ 
+							"type": "wall_breaker",
+							"value": 1
+						}
+					]
+				}
+				
+			},
+			"image": "data/equipments/img/fire-axe.png",
+            "origins": ["corebox"]
+        },			
+        {
+            "id": "submachine-gun",
+            "title": {
+                "fr": "Submachine gun",
+                "en": "Submachine gun"
+            },
+            "batgadget": false,
+            "type": "ranged-weapon",
+            "lethal": true,
+            "discard": false,
+            "encumbrance": 4, 
+ 			"bonus" : {
+				"0": {
+					"type": "range",
+					"dice": ["white","white","white"],
+					"effects": [
+						{ 
+							"type": "burst",
+							"value": 2
+						}
+					]
+				}
+			},
+			"image": "data/equipments/img/submachine-gun.png",
+            "origins": ["corebox"]
+        },		
+        {
+            "id": "brass-knuckles",
+            "title": {
+                "fr": "Brass knuckles",
+                "en": "Brass knuckles"
+            },
+            "batgadget": false,
+            "type": "melee-weapon",
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 0, 
+ 			"bonus" : {
+				"0": {
+					"type": "melee",
+					"dice": ["white"],
+					"effects": [
+						{ 
+							"type": "combo",
+							"value": 1
+						}
+					]
+				}
+				
+			},
+			"image": "data/equipments/img/brass-knuckles.png",
+            "origins": ["corebox"]
+        },			
+        {
+            "id": "crossbow",
+            "title": {
+                "fr": "Crossbow",
+                "en": "Crossbow"
+            },
+            "batgadget": false,
+            "type": "ranged-weapon",
+            "restricted": { "name" : "Huntress", "position": "topleft" }, 
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 1, 
+ 			"bonus" : {
+				"0": {
+					"type": "range",
+					"dice": ["orange"]
+				},
+				"1": {
+					"type": "infinite",
+					"effects": [
+						{ 
+							"type": "retaliation",
+							"value": 1
+						}
+					]
+				}
+			},
+			"image": "data/equipments/img/crossbow.png",
+            "origins": ["corebox"]
+        },			
+        {
+            "id": "c4-block",
+            "title": {
+                "fr": "C4 block",
+                "en": "C4 block"
+            },
+            "batgadget": false,
+            "type": "tool",
+            "lethal": false,
+            "discard": true,
+            "encumbrance": 1, 
+ 			"bonus" : {
+				"0": {
+					"type": "infinite",
+					"effects": [
+						{ 
+							"type": "wall_breaker",
+							"value": 3
+						}
+					]
+				}
+				
+			},
+			"image": "data/equipments/img/c4-block.png",
+            "origins": ["corebox"],
+			"count" : 2
+        },	
+        {
+            "id": "minigun",
+            "title": {
+                "fr": "Minigun",
+                "en": "Minigun"
+            },
+            "batgadget": false,
+            "type": "ranged-weapon",
+            "restricted": { "name" : "Red Hood", "position": "bottomright" }, 
+            "lethal": true,
+            "discard": false,
+            "encumbrance": "6", 
+ 			"bonus" : {
+				"0": {
+					"type": "range",
+					"dice": ["redreroll","redreroll"]
+				},
+				"1": {
+					"type": "infinite",
+					"effects": [
+						{ 
+							"type": "burst",
+							"value": 3
+						}
+					]
+				}
+			},
+			"image": "data/equipments/img/minigun.png",
+            "origins": ["corebox"]
+        },	
+        {
+            "id": "bow",
+            "title": {
+                "fr": "Bow",
+                "en": "Bow"
+            },
+            "batgadget": false,
+            "type": "ranged-weapon",
+            "restricted": { "name" : "Green Arrow", "position": "bottomleft" }, 
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 2, 
+ 			"bonus" : {
+				"0": {
+					"type": "range",
+					"dice": ["orangereroll"]
+				},
+				"1": {
+					"type": "range",
+					"dice": ["yellowreroll"],
+					"effects": [
+						{ 
+							"type": "immobilization",
+							"value": 1
+						}
+					]
+				}
+			},
+			"image": "data/equipments/img/bow.png",
+            "origins": ["corebox"]
+        },	
+        {
+            "id": "hunting-rifle",
+            "title": {
+                "fr": "Hunting rifle",
+                "en": "Hunting rifle"
+            },
+            "batgadget": false,
+            "type": "ranged-weapon",
+            "lethal": true,
+            "discard": false,
+            "encumbrance": 3, 
+ 			"bonus" : {
+				"0": {
+					"type": "range",
+					"dice": ["redreroll"]
+				}
+			},
+			"image": "data/equipments/img/hunting-rifle.png",
+            "origins": ["corebox"]
+        },	
+        {
+            "id": "blunderbuss",
+            "title": {
+                "fr": "Blunderbuss",
+                "en": "Blunderbuss"
+            },
+            "batgadget": false,
+            "type": "ranged-weapon",
+            "lethal": true,
+            "discard": true,
+            "encumbrance": 2, 
+ 			"bonus" : {
+				"0": {
+					"type": "range",
+					"dice": ["black","black"],
+					"effects": [
+						{ 
+							"type": "pointblank",
+							"value": 1
+						}
+					]
+				}
+			},
+			"image": "data/equipments/img/blunderbuss.png",
+            "origins": ["corebox"]
+        },	
+        {
+            "id": "cavalry-saber",
+            "title": {
+                "fr": "Cavalry saber",
+                "en": "Cavalry saber"
+            },
+            "batgadget": false,
+            "type": "melee-weapon",
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 2, 
+ 			"bonus" : {
+				"0": {
+					"type": "melee",
+					"dice": ["orangereroll"]
+				}
+				
+			},
+			"image": "data/equipments/img/cavalry-saber.png",
+            "origins": ["corebox"]
+        },	
+        {
+            "id": "halberd",
+            "title": {
+                "fr": "Halberd",
+                "en": "Halberd"
+            },
+            "batgadget": false,
+            "type": "melee-weapon",
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 3, 
+ 			"bonus" : {
+				"0": {
+					"type": "melee",
+					"dice": ["red"],
+					"effects": [
+						{ 
+							"type": "reach",
+							"value": 1
+						}
+					]
+				}
+				
+			},
+			"image": "data/equipments/img/halberd.png",
+            "origins": ["corebox"]
+        },			
+        {
+            "id": "rolling-pin",
+            "title": {
+                "fr": "Rolling pin",
+                "en": "Rolling pin"
+            },
+            "batgadget": false,
+            "type": "melee-weapon",
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 1, 
+ 			"bonus" : {
+				"0": {
+					"type": "melee",
+					"dice": ["yellow"]
+				}
+				
+			},
+			"image": "data/equipments/img/rolling-pin.png",
+            "origins": ["corebox"]
+        },		
+       {
+            "id": "rocket-launcher",
+            "title": {
+                "fr": "Rocket launcher",
+                "en": "Rocket launcher"
+            },
+            "batgadget": false,
+            "type": "ranged-weapon",
+            "lethal": true,
+            "discard": false,
+            "encumbrance": 4, 
+ 			"bonus" : {
+				"0": {
+					"type": "range",
+					"dice": ["blakreroll","blakreroll"],
+					"effects": [
+						{ 
+							"type": "flame",
+							"value": 5
+						}
+					]
+				}
+			},
+			"image": "data/equipments/img/rocket-launcher.png",
+            "origins": ["corebox"]
+        },			
+		   {
+            "id": "handgun",
+            "title": {
+                "fr": "Handgun",
+                "en": "Handgun"
+            },
+            "batgadget": false,
+            "type": "ranged-weapon",
+            "restricted": { "name" : "Julia Pennyworth", "position": "bottomright" }, 
+            "lethal": true,
+            "discard": false,
+            "encumbrance": 1, 
+ 			"bonus" : {
+				"0": {
+					"type": "range",
+					"dice": ["yellow"],
+					"effects": [
+						{ 
+							"type": "marksman",
+							"value": 1
+						}
+					]
+				}
+			},
+			"image": "data/equipments/img/handgun.png",
+            "origins": ["wayne-manor"]
+        },		
+	   {
+            "id": "tranquilizing-gun",
+            "title": {
+                "fr": "Tranquilizing gun",
+                "en": "Tranquilizing gun"
+            },
+            "batgadget": false,
+            "type": "ranged-weapon",
+            "restricted": { "name" : "Oracle", "position": "bottomleft" }, 
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 2, 
+ 			"bonus" : {
+				"0": {
+					"type": "range",
+					"dice": ["orange"],
+					"effects": [
+						{ 
+							"type": "poison",
+							"value": 1
+						}
+					]
+				}
+			},
+			"image": "data/equipments/img/tranquilizing-gun.png",
+            "origins": ["wayne-manor"]
+        },	
+	   {
+            "id": "portable-computer",
+            "title": {
+                "fr": "Portable computer",
+                "en": "Portable computer"
+            },
+            "batgadget": false,
+            "type": "tool",
+            "restricted": { "name" : "Oracle", "position": "bottomleft" }, 
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 1, 
+ 			"bonus" : {
+				"0": {
+					"type": "thought",
+					"effects": [
+						{ 
+							"type": "hacking",
+							"value": 1
+						},
+						{ 
+							"type": "investigation",
+							"value": 1
+						}
+					]
+				}
+			},
+			"image": "data/equipments/img/portable-computer.png",
+            "origins": ["wayne-manor"]
+        },	
+	   {
+            "id": "ultrasonic-emitter",
+            "title": {
+                "fr": "Ultrasonic emitter",
+                "en": "Ultrasonic emitter"
+            },
+            "batgadget": false,
+            "type": "tool",
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 1,
+			"image": "data/equipments/img/ultrasonic-emitter.png",
+            "origins": ["wayne-manor"]
+        },			
+	   {
+            "id": "headset",
+            "title": {
+                "fr": "Headset",
+                "en": "Headset"
+            },
+            "batgadget": false,
+            "type": "tool",
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 0,
+			"image": "data/equipments/img/headset.png",
+            "origins": ["wayne-manor"]
+        },			
+        {
+            "id": "electric-boomerang",
+            "title": {
+                "fr": "Electric boomerang",
+                "en": "Electric boomerang"
+            },
+            "batgadget": false,
+            "type": "ranged-weapon",
+            "restricted": { "name" : "Captain Boomerang", "position": "topright" }, 
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 1, 
+			"bonus" : {
+				"0": {
+					"type": "range",
+					"dice": ["yellowreroll"],
+					"effects": [
+						{ 
+							"type": "electricity",
+							"value": 1
+						}
+					]
+				}
+			},
+            "image": "data/equipments/img/electric-boomerang.png",
+            "origins": ["suicide-squad"]
+        },		
+        {
+            "id": "combat-boomerang",
+            "title": {
+                "fr": "Combat boomerang",
+                "en": "Combat boomerang"
+            },
+            "batgadget": false,
+            "type": "both-weapon",
+            "restricted": { "name" : "Captain Boomerang", "position": "topright" }, 
+            "lethal": true,
+            "discard": false,
+            "encumbrance": 1, 
+			"bonus" : {
+				"0": {
+					"type": "melee",
+					"dice": ["yellowreroll"]
+				},
+				"1": {
+					"type": "range",
+					"dice": ["yellow"]
+				}
+			},
+            "image": "data/equipments/img/combat-boomerang.png",
+            "origins": ["suicide-squad"]
+        },
+        {
+            "id": "smasher-squad",
+            "title": {
+                "fr": "The smasher",
+                "en": "The smasher"
+            },
+            "batgadget": false,
+            "type": "melee-weapon",
+            "restricted": { "name" : "Harley Quinn", "position": "bottom" }, 
+            "lethal": true,
+            "discard": false,
+            "encumbrance": 2, 
+			"bonus" : {
+				"0": {
+					"type": "melee",
+					"dice": ["orangereroll"],
+					"effects": [
+						{ 
+							"type": "circular_strike",
+							"value": 2
+						}
+					]
+				}
+			},
+            "image": "data/equipments/img/smasher-squad.png",
+            "origins": ["suicide-squad"]
+        },
+        {
+            "id": "wrist-gun",
+            "title": {
+                "fr": "Wrist gun",
+                "en": "Wrist gun"
+            },
+            "batgadget": false,
+            "type": "ranged-weapon",
+            "restricted": { "name" : "Deadshot", "position": "topleft" }, 
+            "lethal": true,
+            "discard": false,
+            "encumbrance": 1, 
+			"bonus" : {
+				"0": {
+					"type": "range",
+					"dice": ["yellow"],
+					"effects": [
+						{ 
+							"type": "pointblank",
+							"value": 1
+						}
+					]
+				}
+			},
+            "image": "data/equipments/img/wrist-gun.png",
+            "origins": ["suicide-squad"],
+			"count" : 2
+        },
+       {
+            "id": "long-sniper-rifle",
+            "title": {
+                "fr": "Long sniper rifle",
+                "en": "Long sniper rifle"
+            },
+            "batgadget": false,
+            "type": "ranged-weapon",
+            "restricted": { "name" : "Deadshot", "position": "bottom" }, 
+            "lethal": true,
+            "discard": false,
+            "encumbrance": 3, 
+			"bonus" : {
+				"0": {
+					"type": "range",
+					"dice": ["redreroll"]
+				}
+			},
+            "image": "data/equipments/img/long-sniper-rifle.png",
+            "origins": ["suicide-squad"]
+        },
+        {
+            "id": "assault-rifle",
+            "title": {
+                "fr": "Assault rifle",
+                "en": "Assault rifle"
+            },
+            "batgadget": false,
+            "type": "ranged-weapon",
+            "restricted": { "name" : "Deathstroke", "position": "bottomleft" }, 
+            "lethal": true,
+            "discard": false,
+            "encumbrance": 2, 
+			"bonus" : {
+				"0": {
+					"type": "range",
+					"dice": ["yellow","yellow"],
+					"effects": [
+						{ 
+							"type": "burst",
+							"value": 2
+						}
+					]
+				}
+			},
+            "image": "data/equipments/img/assault-rifle.png",
+            "origins": ["suicide-squad"]
+        },
+         {
+            "id": "deathstroke",
+            "title": {
+                "fr": "The deathstroke",
+                "en": "The deathstroke"
+            },
+            "batgadget": false,
+            "type": "melee-weapon",
+            "restricted": { "name" : "Deathstroke", "position": "bottomleft" }, 
+            "lethal": true,
+            "discard": false,
+            "encumbrance": 1, 
+			"bonus" : {
+				"0": {
+					"type": "melee",
+					"dice": ["orangereroll"]
+				}
+			},
+            "image": "data/equipments/img/deathstroke.png",
+            "origins": ["suicide-squad"]
+        },
+         {
+            "id": "infantry-automatic-rifle",
+            "title": {
+                "fr": "Infantry automatic rifle",
+                "en": "Infantry automatic rifle"
+            },
+            "batgadget": false,
+            "type": "ranged-weapon",
+            "restricted": { "name" : "Rick Flag", "position": "bottomleft" }, 
+            "lethal": true,
+            "discard": false,
+            "encumbrance": 2, 
+			"bonus" : {
+				"0": {
+					"type": "melee",
+					"dice": ["yellow","yellow"],
+					"effects": [
+						{ 
+							"type": "burst",
+							"value": 1
+						}
+					]
+				}
+			},
+            "image": "data/equipments/img/infantry-automatic-rifle.png",
+            "origins": ["suicide-squad"]
+        },
+         {
+            "id": "stun-grenade",
+            "title": {
+                "fr": "Stun grenade",
+                "en": "Stun grenade"
+            },
+            "batgadget": false,
+            "type": "tool",
+            "lethal": false,
+            "discard": true,
+            "encumbrance": 1, 
+			"bonus" : {
+				"0": {
+					"type": "infinite",
+					"effects": [
+						{ 
+							"type": "grenade",
+							"value": 3
+						}
+					]
+				}
+			},
+            "image": "data/equipments/img/stun-grenade.png",
+            "origins": ["suicide-squad"]
+        },		
+         {
+            "id": "tear-gas",
+            "title": {
+                "fr": "Tear gas",
+                "en": "Tear gas"
+            },
+            "batgadget": true,
+            "type": "tool",
+            "lethal": false,
+            "discard": true,
+            "encumbrance": 1, 
+			"bonus" : {
+				"0": {
+					"type": "infinite",
+					"effects": [
+						{ 
+							"type": "grenade",
+							"value": 0
+						},
+						{ 
+							"type": "toxic_gas",
+							"value": 1
+						}						
+					]
+				}
+			},
+            "image": "data/equipments/img/tear-gas.png",
+            "origins": ["corebox"]
+        },			
+         {
+            "id": "electric-batgloves",
+            "title": {
+                "fr": "Electric batgloves",
+                "en": "Electric batgloves"
+            },
+            "batgadget": true,
+            "type": "melee-weapon",
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 1, 
+			"bonus" : {
+				"0": {
+					"type": "melee",
+					"effects": [
+						{ 
+							"type": "electricity",
+							"value": 2
+						}					
+					]
+				}
+			},
+            "image": "data/equipments/img/electric-batgloves.png",
+            "origins": ["corebox"]
+        },			
+         {
+            "id": "batarangs",
+            "title": {
+                "fr": "Batarangs",
+                "en": "Batarangs"
+            },
+            "batgadget": true,
+            "type": "ranged-weapon",
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 1, 
+			"bonus" : {
+				"0": {
+					"type": "range",
+					"dice": ["yellowreroll"]
+				}
+			},
+            "image": "data/equipments/img/batarangs.png",
+            "origins": ["corebox"],
+			"count" : 2
+        },			
+         {
+            "id": "armband-computer",
+            "title": {
+                "fr": "Armband computer",
+                "en": "Armband computer"
+            },
+            "batgadget": true,
+            "type": "tool",
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 1, 
+			"bonus" : {
+				"0": {
+					"type": "thought",
+					"effects": [
+						{ 
+							"type": "hacking",
+							"value": 1
+						}
+					]
+				}
+			},
+            "image": "data/equipments/img/armband-computer.png",
+            "origins": ["corebox"]
+        },			
+         {
+            "id": "compact-gas-mask",
+            "title": {
+                "fr": "Compact gas mask",
+                "en": "Compact gas mask"
+            },
+            "batgadget": true,
+            "type": "tool",
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 1, 
+			"bonus" : {
+				"0": {
+					"type": "infinite",
+					"effects": [
+						{ 
+							"type": "gas_immunity",
+							"value": 1
+						}
+					]
+				}
+			},
+            "image": "data/equipments/img/compact-gas-mask.png",
+            "origins": ["corebox"]
+        },	
+         {
+            "id": "grappling-hook",
+            "title": {
+                "fr": "Grappling hook",
+                "en": "Grappling hook"
+            },
+            "batgadget": true,
+            "type": "tool",
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 2, 
+			"bonus" : {
+				"0": {
+					"type": "infinite",
+					"effects": [
+						{ 
+							"type": "parkour",
+							"value": 3
+						}
+					]
+				}
+			},
+            "image": "data/equipments/img/grappling-hook.png",
+            "origins": ["corebox"],
+			"count" : 3
+        },			
+         {
+            "id": "perforating-batarang",
+            "title": {
+                "fr": "Perforating batarang",
+                "en": "Perforating batarang"
+            },
+            "batgadget": true,
+            "type": "ranged-weapon",
+            "lethal": false,
+            "discard": true,
+            "encumbrance": 1, 
+			"bonus" : {
+				"0": {
+					"type": "range",
+					"dice": ["red","red"]
+				}
+			},
+            "image": "data/equipments/img/perforating-batarang.png",
+            "origins": ["corebox"],
+			"count" : 2
+        },			
+         {
+            "id": "batcape",
+            "title": {
+                "fr": "Batcape",
+                "en": "Batcape"
+            },
+            "batgadget": true,
+            "type": "tool",
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 2, 
+			"bonus" : {
+				"0": {
+					"type": "infinite",
+					"effects": [
+						{ 
+							"type": "untouchable",
+							"value": 1
+						}
+					]
+				}
+			},
+            "image": "data/equipments/img/batcape.png",
+            "origins": ["corebox"],
+			"count" : 2
+        },			
+         {
+            "id": "compact-master-key",
+            "title": {
+                "fr": "Compact master key",
+                "en": "Compact master key"
+            },
+            "batgadget": true,
+            "type": "tool",
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 1, 
+			"bonus" : {
+				"0": {
+					"type": "manipulation",
+					"effects": [
+						{ 
+							"type": "lock_piking",
+							"value": 1
+						}
+					]
+				}
+			},
+            "image": "data/equipments/img/compact-master-key.png",
+            "origins": ["corebox"]
+        },			
+         {
+            "id": "explosive-batarang",
+            "title": {
+                "fr": "Explosive batarang",
+                "en": "Explosive batarang"
+            },
+            "batgadget": true,
+            "type": "ranged-weapon",
+            "lethal": false,
+            "discard": true,
+            "encumbrance": 1, 
+			"bonus" : {
+				"0": {
+					"type": "range",
+					"dice": ["black","black"]
+				}
+			},
+            "image": "data/equipments/img/explosive-batarang.png",
+            "origins": ["corebox"],
+			"count" : 2
+        },					
+         {
+            "id": "claw",
+            "title": {
+                "fr": "Claw",
+                "en": "Claw"
+            },
+            "batgadget": true,
+            "type": "melee-weapon",
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 2, 
+			"bonus" : {
+				"0": {
+					"type": "infinite",
+					"effects": [
+						{ 
+							"type": "attraction",
+							"value": 1
+						},
+						{ 
+							"type": "parkour",
+							"value": 1
+						}
+					]
+				}
+			},
+            "image": "data/equipments/img/claw.png",
+            "origins": ["corebox"]
+        },			
+         {
+            "id": "explosive-gel",
+            "title": {
+                "fr": "Explosive gel",
+                "en": "Explosive gel"
+            },
+            "batgadget": true,
+            "type": "tool",
+            "lethal": false,
+            "discard": true,
+            "encumbrance": 2, 
+			"bonus" : {
+				"0": {
+					"type": "infinite",
+					"effects": [
+						{ 
+							"type": "wall_breaker",
+							"value": 2
+						}
+					]
+				}
+			},
+            "image": "data/equipments/img/explosive-gel.png",
+            "origins": ["corebox"]
+        },			
+         {
+            "id": "portable-forensics-scanner",
+            "title": {
+                "fr": "Portable forensics scanner",
+                "en": "Portable forensics scanner"
+            },
+            "batgadget": true,
+            "type": "tool",
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 1, 
+			"bonus" : {
+				"0": {
+					"type": "thought",
+					"effects": [
+						{ 
+							"type": "investigation",
+							"value": 1
+						}
+					]
+				}
+			},
+            "image": "data/equipments/img/portable-forensics-scanner.png",
+            "origins": ["corebox"]
+        },			
+         {
+            "id": "smoke-pellets",
+            "title": {
+                "fr": "Smoke pellets",
+                "en": "Smoke pellets"
+            },
+            "batgadget": true,
+            "type": "tool",
+            "lethal": false,
+            "discard": true,
+            "encumbrance": 1, 
+			"bonus" : {
+				"0": {
+					"type": "infinite",
+					"effects": [
+						{ 
+							"type": "grenade",
+							"value": 0
+						},
+						{ 
+							"type": "smoke_grenade",
+							"value": 2
+						}
+					]
+				}
+			},
+            "image": "data/equipments/img/smoke-pellets.png",
+            "origins": ["corebox"]
+        },			
+         {
+            "id": "freezing-grenade",
+            "title": {
+                "fr": "Freezing grenade",
+                "en": "Freezing grenade"
+            },
+            "batgadget": true,
+            "type": "tool",
+            "lethal": false,
+            "discard": true,
+            "encumbrance": 2, 
+			"bonus" : {
+				"0": {
+					"type": "infinite",
+					"effects": [
+						{ 
+							"type": "grenade",
+							"value": 0
+						},
+						{ 
+							"type": "frost",
+							"value": 1
+						}
+					]
+				}
+			},
+            "image": "data/equipments/img/freezing-grenade.png",
+            "origins": ["corebox"]
+        },			
+         {
+            "id": "tranquilizer-dart",
+            "title": {
+                "fr": "Tranquilizer dart",
+                "en": "Tranquilizer dart"
+            },
+            "batgadget": true,
+            "type": "ranged-weapon",
+            "lethal": false,
+            "discard": true,
+            "encumbrance": 1, 
+			"bonus" : {
+				"0": {
+					"type": "range",
+					"effects": [
+						{ 
+							"type": "poison",
+							"value": 4
+						},
+						{ 
+							"type": "harmless"
+						}
+					]
+				}
+			},
+            "image": "data/equipments/img/tranquilizer-dart.png",
+            "origins": ["corebox"],
+			"count" : 2
+        },			
+         {
+            "id": "taser-gun",
+            "title": {
+                "fr": "Taser gun",
+                "en": "Taser gun"
+            },
+            "batgadget": true,
+            "type": "melee-weapon",
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 1, 
+			"bonus" : {
+				"0": {
+					"type": "melee",
+					"dice": ["orange"],
+					"effects": [
+						{ 
+							"type": "electricity",
+							"value": 1
+						}
+					]
+				}
+			},
+            "image": "data/equipments/img/taser-gun.png",
+            "origins": ["corebox"]
+        },			
+         {
+            "id": "telescopic-baton",
+            "title": {
+                "fr": "Telescopic baton",
+                "en": "Telescopic baton"
+            },
+            "batgadget": true,
+            "type": "melee-weapon",
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 2, 
+			"bonus" : {
+				"0": {
+					"type": "melee",
+					"dice": ["orange"],
+					"effects": [
+						{ 
+							"type": "circular_strike",
+							"value": 1
+						}
+					]
+				}
+			},
+            "image": "data/equipments/img/telescopic-baton.png",
+            "origins": ["corebox"]
+        },			
+         {
+            "id": "guided-batarang",
+            "title": {
+                "fr": "Guided batarang",
+                "en": "Guided batarang"
+            },
+            "batgadget": true,
+            "type": "ranged-weapon",
+            "lethal": false,
+            "discard": true,
+            "encumbrance": 1, 
+			"bonus" : {
+				"0": {
+					"type": "range",
+					"effects": [
+						{ 
+							"type": "marksman",
+							"value": 3
+						}
+					]
+				}
+			},
+            "image": "data/equipments/img/guided-batarang.png",
+            "origins": ["corebox"],
+			"count" : 2
+        },
+         {
+            "id": "bolas",
+            "title": {
+                "fr": "Bolas",
+                "en": "Bolas"
+            },
+            "batgadget": true,
+            "type": "ranged-weapon",
+            "lethal": false,
+            "discard": true,
+            "encumbrance": 1, 
+			"bonus" : {
+				"0": {
+					"type": "range",
+					"dice": ["yellow"],
+					"effects": [
+						{ 
+							"type": "immobilization",
+							"value": 1
+						}
+					]
+				}
+			},
+            "image": "data/equipments/img/bolas.png",
+            "origins": ["corebox"]
+        },			
+         {
+            "id": "cable-tie-handcuffs",
+            "title": {
+                "fr": "Cable tie handcuffs",
+                "en": "Cable tie handcuffs"
+            },
+            "batgadget": true,
+            "type": "tool",
+            "lethal": false,
+            "discard": true,
+            "encumbrance": 1, 
+			"bonus" : {
+				"0": {
+					"type": "melee",
+					"effects": [
+						{ 
+							"type": "shackle",
+							"value": 2
+						}
+					]
+				}
+			},
+            "image": "data/equipments/img/cable-tie-handcuffs.png",
+            "origins": ["corebox"]
+        },
+        {
+            "id": "venom",
+            "title": {
+                "fr": "Venom",
+                "en": "Venom"
+            },
+            "batgadget": false,
+            "type": "tool",
+            "lethal": false,
+            "discard": true,
+            "encumbrance": 0, 
+			"bonus" : {
+				"0": {
+					"type": "infinite",
+					"effects": [
+						{ 
+							"type": "pushing_limits",
+							"value": 2
+						}
+					]
+				}
+			},
+            "image": "data/equipments/img/venom.png",
+            "origins": ["corebox"],
+			"count" : 4
+        },
+        {
+            "id": "riddle-cane",
+            "title": {
+                "fr": "Riddle cane",
+                "en": "Riddle cane"
+            },
+            "batgadget": false,
+            "type": "melee-weapon",
+            "restricted": { "name" : "The Riddler", "position": "bottomleft" }, 
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 1, 
+			"bonus" : {
+				"0": {
+					"type": "melee",
+					"dice": ["yellowreroll"]
+				}
+			},
+            "image": "data/equipments/img/riddle-cane.png",
+            "origins": ["corebox"]
+        },		
+        {
+            "id": "wireless-headset",
+            "title": {
+                "fr": "Wireless headset",
+                "en": "Wireless headset"
+            },
+            "batgadget": false,
+            "type": "tool",
+            "restricted": { "name" : "The Riddler", "position": "bottomleft" }, 
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 0, 
+			"bonus" : {
+				"0": {
+					"type": "infinite",
+					"effects": [
+						{ 
+							"type": "tactician",
+							"value": 1
+						}
+					]
+				}
+			},
+            "image": "data/equipments/img/wireless-headset.png",
+            "origins": ["corebox"]
+        },			
+        {
+            "id": "stick",
+            "title": {
+                "fr": "Stick",
+                "en": "Stick"
+            },
+            "batgadget": false,
+            "type": "melee-weapon",
+            "restricted": { "name" : "The Penguin", "position": "bottomright" }, 
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 1, 
+			"bonus" : {
+				"0": {
+					"type": "melee",
+					"effects": [
+						{ 
+							"type": "poison",
+							"value": 2
+						}
+					]
+				}
+			},
+            "image": "data/equipments/img/stick.png",
+            "origins": ["corebox"]
+        },			
+        {
+            "id": "multifunction-umbrella",
+            "title": {
+                "fr": "Multifunction umbrella",
+                "en": "Multifunction umbrella"
+            },
+            "batgadget": false,
+            "type": "ranged-weapon",
+            "restricted": { "name" : "The Penguin", "position": "bottom" }, 
+            "lethal": true,
+            "discard": false,
+            "encumbrance": 1, 
+			"bonus" : {
+				"0": {
+					"type": "range",
+					"dice": ["yellowreroll"],
+					"effects": [
+						{ 
+							"type": "pointblank",
+							"value": 1
+						}
+					]
+				}
+			},
+            "image": "data/equipments/img/multifunction-umbrella.png",
+            "origins": ["corebox"]
+        },			
+        {
+            "id": "reaper",
+            "title": {
+                "fr": "The reaper",
+                "en": "The reaper"
+            },
+            "batgadget": false,
+            "type": "melee-weapon",
+            "restricted": { "name" : "Scarecrow", "position": "bottom" }, 
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 2, 
+			"bonus" : {
+				"0": {
+					"type": "melee",
+					"dice": ["orange"],
+					"effects": [
+						{ 
+							"type": "circular_strike",
+							"value": 1
+						}
+					]
+				}
+			},
+            "image": "data/equipments/img/reaper.png",
+            "origins": ["corebox"]
+        },			
+        {
+            "id": "fear-gas",
+            "title": {
+                "fr": "Fear gas",
+                "en": "Fear gas"
+            },
+            "batgadget": false,
+            "type": "tool",
+            "restricted": { "name" : "Scarecrow", "position": "bottomright" }, 
+            "lethal": false,
+            "discard": true,
+            "encumbrance": 1, 
+			"bonus" : {
+				"0": {
+					"type": "infinite",
+					"effects": [
+						{ 
+							"type": "grenade",
+							"value": 0
+						},
+						{ 
+							"type": "toxic_gas",
+							"value": 3
+						}						
+					]
+				}
+			},
+            "image": "data/equipments/img/fear-gas.png",
+            "origins": ["corebox"]
+        },	
+        {
+            "id": "dirk",
+            "title": {
+                "fr": "Dirk",
+                "en": "Dirk"
+            },
+            "batgadget": false,
+            "type": "melee-weapon",
+            "restricted": { "name" : "The Joker", "position": "bottom" }, 
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 1, 
+			"bonus" : {
+				"0": {
+					"type": "infinite",
+					"dice": ["yellowreroll"],
+					"effects": [
+						{ 
+							"type": "counterattack",
+							"value": 1
+						}					
+					]
+				}
+			},
+            "image": "data/equipments/img/dirk.png",
+            "origins": ["corebox"]
+        },	
+        {
+            "id": "smasher",
+            "title": {
+                "fr": "The smasher",
+                "en": "The smasher"
+            },
+            "batgadget": false,
+            "type": "melee-weapon",
+            "restricted": { "name" : "Harley Quinn", "position": "bottomleft" }, 
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 2, 
+			"bonus" : {
+				"0": {
+					"type": "melee",
+					"dice": ["orangereroll"],
+					"effects": [
+						{ 
+							"type": "circular_strike",
+							"value": 1
+						}
+					]
+				}
+			},
+            "image": "data/equipments/img/smasher.png",
+            "origins": ["suicide-squad"]
+        },
+        {
+            "id": "boots",
+            "title": {
+                "fr": "Boots",
+                "en": "Boots"
+            },
+            "batgadget": false,
+            "type": "tool",
+            "restricted": { "name" : "Harley Quinn", "position": "bottomright" }, 
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 0, 
+			"bonus" : {
+				"0": {
+					"type": "infinite",
+					"effects": [
+						{ 
+							"type": "mobility",
+							"value": 1
+						},
+						{ 
+							"type": "parkour",
+							"value": 1
+						}
+						
+					]
+				}
+			},
+            "image": "data/equipments/img/boots.png",
+            "origins": ["corebox"]
+        },
+        {
+            "id": "judge",
+            "title": {
+                "fr": "The judge",
+                "en": "The judge"
+            },
+            "batgadget": false,
+            "type": "ranged-weapon",
+            "restricted": { "name" : "Two-Face", "position": "bottomleft" }, 
+            "lethal": true,
+            "discard": false,
+            "encumbrance": 1, 
+			"bonus" : {
+				"0": {
+					"type": "range",
+					"dice": ["orange"],
+					"effects": [
+						{ 
+							"type": "pointblank",
+							"value": 1
+						}
+					]
+				}
+			},
+            "image": "data/equipments/img/judge.png",
+            "origins": ["corebox"]
+        },
+        {
+            "id": "scimitar",
+            "title": {
+                "fr": "Scimitar",
+                "en": "The Scimitar"
+            },
+            "batgadget": false,
+            "type": "melee-weapon",
+            "restricted": { "name" : "Bronze Tiger", "position": "bottomleft" }, 
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 2, 
+			"bonus" : {
+				"0": {
+					"type": "melee",
+					"dice": ["orange"]
+				}
+			},
+            "image": "data/equipments/img/scimitar.png",
+            "origins": ["suicide-squad"]
+        },		
+        {
+            "id": "juror",
+            "title": {
+                "fr": "The juror",
+                "en": "The juror"
+            },
+            "batgadget": false,
+            "type": "tool",
+            "restricted": { "name" : "Two-Face", "position": "bottomleft" }, 
+            "lethal": false,
+            "discard": true,
+            "encumbrance": 0, 
+			"bonus" : {
+				"0": {
+					"type": "infinite",
+					"effects": [
+						{ 
+							"type": "luck",
+							"value": 2
+						}
+					]
+				}
+			},
+            "image": "data/equipments/img/juror.png",
+            "origins": ["corebox"]
+        },
+        {
+            "id": "fighting_blade",
+            "title": {
+                "fr": "Fighting_blade",
+                "en": "Fighting blade"
+            },
+            "batgadget": false,
+            "type": "melee-weapon-weapon",
+            "restricted": { "name" : "Black Manta", "position": "topright" }, 
+            "lethal": true,
+            "discard": false,
+            "encumbrance": 1, 
+			"bonus" : {
+				"0": {
+					"type": "melee",
+					"dice": ["yellow"],
+					"effects": [
+						{ 
+							"type": "sneak",
+							"value": 1
+						}
+					]
+				}
+			},
+            "image": "data/equipments/img/fighting_blade.png",
+            "origins": ["suicide-squad"]
+        },		
+        {
+            "id": "wolf-trap",
+            "title": {
+                "fr": "Wolf trap",
+                "en": "Wolf trap"
+            },
+            "batgadget": false,
+            "type": "tool",
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 2,
+            "image": "data/equipments/img/wolf-trap.png",
+            "origins": ["suicide-squad"],
+			"count" : 4
+        },		
+        {
+            "id": "acid-gun",
+            "title": {
+                "fr": "Acid gun",
+                "en": "Acid gun"
+            },
+            "batgadget": false,
+            "type": "ranged-weapon",
+            "restricted": { "name" : "Duela Dent", "position": "bottomleft" }, 
+            "lethal": true,
+            "discard": false,
+            "encumbrance": 1, 
+			"bonus" : {
+				"0": {
+					"type": "range",
+					"dice": ["orangereroll"],
+					"effects": [
+						{ 
+							"type": "toxic_gas",
+							"value": 1
+						}
+					]
+				}
+			},
+            "image": "data/equipments/img/acid-gun.png",
+            "origins": ["suicide-squad"]
+        },		
+        {
+            "id": "carnivorous-seeds",
+            "title": {
+                "fr": "Carnivorous seeds",
+                "en": "Carnivorous seeds"
+            },
+            "batgadget": false,
+            "type": "object",
+            "restricted": { "name" : "Poison Ivy", "position": "bottomleft" }, 
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 0,
+            "image": "data/equipments/img/carnivorous-seeds.png",
+            "origins": ["corebox"]
+        },			
+        {
+            "id": "paralyzing-grenade",
+            "title": {
+                "fr": "Paralyzing grenade",
+                "en": "Paralyzing grenade"
+            },
+            "batgadget": false,
+            "type": "tool",
+            "restricted": { "name" : "Rick Flag", "position": "top" }, 
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 1, 
+			"bonus" : {
+				"0": {
+					"type": "infinite",
+					"effects": [
+						{ 
+							"type": "grenade",
+							"value": 2
+						},
+						{ 
+							"type": "immobilization",
+							"value": 1
+						}
+					]
+				}
+			},
+            "image": "data/equipments/img/paralyzing-grenade.png",
+            "origins": ["suicide-squad"]
+        },		
+        {
             "id": "laser_helmet",
             "title": {
                 "fr": "Laser Helmet",
                 "en": "Laser Helmet"
             },
             "batgadget": false,
-            "type": "range",
+            "type": "ranged-weapon",
             "restricted": { "name" : "Black Manta", "position": "top" }, 
             "lethal": true,
             "discard": false,
-            "encumbrance": "2", 
-
+            "encumbrance": 2, 
 			"bonus" : {
 				"0": {
 					"type": "range",
-					"dices": [],
 					"effects": [
 						{ 
-						   "type": "grenade",
+							"type": "grenade",
 							"value": 2
-						},
+						}
+					]
+				},
+				"1": {
+					"type": "range",
+					"dice": ["orange"],
+					"effects": [
 						{ 
-						   "type": "pointblank",
+							"type": "pointblank",
 							"value": 1
 						}
 					]
 				}
 			},
-
             "image": "data/equipments/img/laser_helmet.png",
             "origins": ["suicide-squad"]
+        },
+        {
+            "id": "super-medkit",
+            "title": {
+                "fr": "Super medkit",
+                "en": "Super medkit"
+            },
+            "batgadget": false,
+            "type": "tool",
+            "lethal": false,
+            "discard": true,
+            "encumbrance": 2, 
+			"bonus" : {
+				"0": {
+					"type": "infinite",
+					"effects": [
+						{ 
+							"type": "regeneration",
+							"value": 3
+						}
+					]
+				}
+			},
+            "image": "data/equipments/img/super-medkit.png",
+            "origins": ["corebox"]
+        },
+        {
+            "id": "fireworks",
+            "title": {
+                "fr": "Fireworks",
+                "en": "Fireworks"
+            },
+            "batgadget": false,
+            "type": "ranged-weapon",
+            "lethal": false,
+            "discard": true,
+            "encumbrance": 1, 
+			"bonus" : {
+				"0": {
+					"type": "range",
+					"dice": ["orange"],
+					"effects": [
+						{ 
+							"type": "toxic_gas",
+							"value": 2
+						}
+					]
+				}
+			},
+            "image": "data/equipments/img/fireworks.png",
+            "origins": ["corebox"]
+        },
+        {
+            "id": "boxing-glove-gun",
+            "title": {
+                "fr": "Boxing glove gun",
+                "en": "Boxing glove gun"
+            },
+            "batgadget": false,
+            "type": "object",
+            "lethal": false,
+            "discard": true,
+            "encumbrance": 2, 
+			"bonus" : {
+				"0": {
+					"type": "melee",
+					"dice": ["orange"],
+					"effects": [
+						{ 
+							"type": "reach",
+							"value": 1
+						}
+					]
+				}
+			},
+            "image": "data/equipments/img/boxing-glove-gun.png",
+            "origins": ["corebox"]
+        },
+		{
+            "id": "shark-repellent",
+            "title": {
+                "fr": "Shark repellent",
+                "en": "Shark repellent"
+            },
+            "batgadget": false,
+            "type": "tool",
+            "lethal": false,
+            "discard": false,
+            "encumbrance": 0,
+            "image": "data/equipments/img/shark-repellent.png",
+            "origins": ["corebox"]
         }
     ]
 }
