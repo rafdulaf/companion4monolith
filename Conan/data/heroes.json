@@ -1787,7 +1787,7 @@
             "model": "ikhmet",
             "origins": ["stygia"]
         },
-        
+
         {
             "id": "octavia",
             "name": {
@@ -1823,7 +1823,7 @@
             "origins": ["monolith-site"],
             "pdf": "https://www.kickstarter.com/projects/806316071/conan-the-conqueror-adventure-mode-expansion/posts/2779014?ref=ksr_email_backer_project_update_registered_users"
         },
-        
+
         {
             "id": "othryades",
             "name": {
@@ -1857,8 +1857,8 @@
             "model": "spartan",
             "origins": ["monolith-site"],
             "pdf": "https://the-overlord.com/index.php?/files/file/18-fiche-h%C3%A9ro-du-sparte-sans-nom/&do=download&csrfKey=6511709efb90be88ce81de8ae0973d19"
-        },        
-        
+        },
+
         {
             "id": "afari",
             "name": {
@@ -1908,7 +1908,7 @@
             "origins": ["monolith-site"],
             "pdf": "https://the-overlord.net/applications/core/interface/file/attachment.php?id=3841"
         },
-                
+
         {
             "id": "ghayoor",
             "name": {
@@ -1943,7 +1943,7 @@
             "origins": ["monolith-site"],
             "pdf": "https://the-overlord.net/applications/core/interface/file/attachment.php?id=3841"
         },
-                
+
         {
             "id": "shafiah",
             "name": {
@@ -1978,7 +1978,7 @@
             "origins": ["monolith-site"],
             "pdf": "https://the-overlord.net/applications/core/interface/file/attachment.php?id=3841"
         },
-                
+
         {
             "id": "shubba",
             "name": {
@@ -2013,13 +2013,13 @@
             "origins": ["monolith-site"],
             "pdf": "https://the-overlord.net/applications/core/interface/file/attachment.php?id=3841"
         },
-                
+
         {
             "id": "achilles",
             "name": {
                 "fr": "Achille",
                 "en": "Achilles",
-                "it": "TODO_TRANSLATE"
+                "it": "Achille"
             },
             "class": [],
 
@@ -2047,13 +2047,13 @@
             "model": "achilles",
             "origins": ["corinthia"]
         },
-                
+
         {
             "id": "atalanta",
             "name": {
                 "fr": "Atalante",
                 "en": "Atalanta",
-                "it": "TODO_TRANSLATE"
+                "it": "Atalanta"
             },
             "class": [],
 
@@ -2081,13 +2081,13 @@
             "model": "atalanta",
             "origins": ["corinthia"]
         },
-                
+
         {
             "id": "heracles",
             "name": {
                 "fr": "Héraclès",
                 "en": "Heracles",
-                "it": "TODO_TRANSLATE"
+                "it": "Ercole"
             },
             "class": [],
 
@@ -2114,13 +2114,13 @@
             "model": "heracles",
             "origins": ["corinthia"]
         },
-                
+
         {
             "id": "leonidas",
             "name": {
                 "fr": "Léonidas",
                 "en": "Leonidas",
-                "it": "TODO_TRANSLATE"
+                "it": "Leonida"
             },
             "class": [],
 
@@ -2147,13 +2147,13 @@
             "model": "leonidas",
             "origins": ["corinthia"]
         },
-                
+
         {
             "id": "odysseus",
             "name": {
                 "fr": "Ulysse",
                 "en": "Odysseus",
-                "it": "TODO_TRANSLATE"
+                "it": "Ulisse"
             },
             "class": [],
 
