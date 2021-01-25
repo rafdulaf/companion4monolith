@@ -1,0 +1,37 @@
+{
+    "list": [
+        {
+            "id": "laser_helmet",
+            "title": {
+                "fr": "Laser Helmet",
+                "en": "Laser Helmet"
+            },
+            "batgadget": false,
+            "type": "range",
+            "restricted": { "name" : "Black Manta", "position": "top" }, 
+            "lethal": true,
+            "discard": false,
+            "encumbrance": "2", 
+
+			"bonus" : {
+				"0": {
+					"type": "range",
+					"dices": [],
+					"effects": [
+						{ 
+						   "type": "grenade",
+							"value": 2
+						},
+						{ 
+						   "type": "pointblank",
+							"value": 1
+						}
+					]
+				}
+			},
+
+            "image": "data/equipments/img/laser_helmet.png",
+            "origins": ["suicide-squad"]
+        }
+    ]
+}
