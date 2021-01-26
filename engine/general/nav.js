@@ -168,28 +168,23 @@ Nav = {
         var toSelect = $("#" + id);
         
         var t = $(".header .title div")
-        t.removeClass("small smaller smallest twolines").html(toSelect.attr('title') || About._i18n[Language].smallName);
+        t.html((toSelect.attr('title') || About._i18n[Language].smallName));
 
-        var tb = $(".header .toolbar")
-
-        var width = $(".header").width() - tb.width();
-        var height = $(".header").css("white-space", "nowrap").find(".title div").height();
-        $(".header").css("white-space", "unset");
+        var sizes = ["size10", "size9", "size8", "size7", "size6", "size5", "size4", "size3", "size2", "size1", "size0", "size-1", "size-2"];
+        t.removeClass(sizes.join(" "));
         
-        if (t.width() > width || t.height() > height)
+        var tb = $(".header .toolbar")
+        var maxWidth = $(".header").width() - tb.width();
+        
+        for (var i = 0; i < sizes.length; i++)
         {
-            t.addClass("small");
-        }
-        if (t.width() > width || t.height() > height)
-        {
-            t.addClass("smaller");
-        }
-        if (t.width() > width || t.height() > height)
-        {
-            t.addClass("smallest");
-            if (t.height() > height)
+            if (t.width() > maxWidth)
             {
-                t.addClass("twolines");
+                t.addClass(sizes[i]);
+            }
+            else
+            {
+                break;
             }
         }
     },

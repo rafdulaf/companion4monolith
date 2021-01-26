@@ -14,8 +14,6 @@
     display: inline-block;
     vertical-align: top;
     min-height: 100%;
-    font-size: calc(var(--primary-size) * 2.1875rem);
-    line-height: calc(var(--primary-line-height) * 2.292rem);
     font-family: 'Primary';
     text-transform: uppercase;
     overflow: hidden;
@@ -24,16 +22,55 @@
 .header .title div {
     display: inline;
 }
-.header .title .smaller {
+
+
+.header .title div {
+    font-size: calc(var(--primary-size) * 2.1875rem);
+    line-height: calc(var(--primary-line-height) * 2.292rem);
+    white-space: nowrap;
+}
+.header .title .size10 {
+    font-size: calc(var(--primary-size) * 2rem);
+}
+.header .title .size9 {
     font-size: calc(var(--primary-size) * 1.875rem);
 }
-.header .title .smallest {
-    font-size: calc(var(--primary-size) * 1.375rem);
+.header .title .size8 {
+    font-size: calc(var(--primary-size) * 1.75rem);
 }
-.header .title .smallest.twolines {
+.header .title .size7 {
+    font-size: calc(var(--primary-size) * 1.625rem);
+}
+.header .title .size6 {
+    font-size: calc(var(--primary-size) * 1.5rem);
+}
+.header .title .size5 {
     font-size: calc(var(--primary-size) * 1.375rem);
+    }
+.header .title .size4 {
+    font-size: calc(var(--primary-size) * 1.75rem);
     line-height: calc(var(--primary-line-height) * 1.1rem);
+    white-space: unset;
 }
+.header .title .size3 {
+    font-size: calc(var(--primary-size) * 1.625rem);
+}
+.header .title .size2 {
+    font-size: calc(var(--primary-size) * 1.5rem);
+}
+.header .title .size1 {
+    font-size: calc(var(--primary-size) * 1.375rem);
+}
+.header .title .size0 {
+    font-size: calc(var(--primary-size) * 1.25rem);
+}
+.header .title .size-1 {
+    font-size: calc(var(--primary-size) * 1.125rem);
+}
+.header .title .size-2 {
+    font-size: calc(var(--primary-size) * 1rem);
+}
+
 
 .header .toolbar {
     display: inline-block;
