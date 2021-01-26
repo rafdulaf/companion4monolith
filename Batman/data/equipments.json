@@ -1176,7 +1176,8 @@
                 "en": "Combat boomerang"
             },
             "batgadget": false,
-            "type": "both-weapon",
+            "type": "ranged-weapon",
+            "type-complement": "melee-weapon",
             "restricted": { "name" : "Captain Boomerang", "position": "topright" }, 
             "lethal": true,
             "discard": false,
