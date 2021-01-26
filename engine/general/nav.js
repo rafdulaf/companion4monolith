@@ -38,7 +38,7 @@ Nav = {
 
     _drawIcon: function (item)
     {
-        return "<li><a class=\"" + item.icon + "\" href=\"javascript:void(0);\" for=\"" + item.id + "\" onclick=\"Nav.switchTo(this)\">" + item.label + "</a></li>"
+        return "<li><a class=\"" + item.icon + "\" href=\"javascript:void(0);\" for=\"" + item.id + "\" onclick=\"Nav.switchTo(this)\"><span>" + item.label + "</span></a></li>"
     },
 
     _drawContents: function ()
@@ -188,6 +188,38 @@ Nav = {
             }
         }
     },
+    
+    updateNav: function()
+    {
+        var nav = $("#" + Nav._id);
+        
+        var sizes = ["size10", "size9", "size8", "size7", "size6", "size5", "size4", "size3", "size2", "size1"];
+
+        nav.removeClass(sizes.join(" "));
+        
+        var tabs = nav.find("a");
+        var maxWidth = tabs.width();
+
+        for (var i = 0; i < sizes.length; i++)
+        {
+            var tooSmall = false;
+            tabs.each(function(tindex, t) {
+                if ($("span", t).width() > maxWidth)
+                {
+                    tooSmall = true;
+                    return false;
+                }
+            });
+            if (tooSmall)
+            {
+                nav.addClass(sizes[i]);
+            }
+            else
+            {
+                break;
+            }
+        }
+    },
 
     initialize: function()
     {
@@ -209,8 +241,8 @@ Nav = {
                     + "</div>";
         $(document.body).prepend(code);
         
-        document.fonts.ready.then(function() { Nav.updateTitle() });
-        $(window).on('resize', function() { Nav.updateTitle() });
+        document.fonts.ready.then(function() { Nav.updateTitle(); Nav.updateNav(); });
+        $(window).on('resize', function() { Nav.updateTitle(); Nav.updateNav(); });
         $(window).on('hashchange', function() { Nav._hashChange() });
         
         function resize()
