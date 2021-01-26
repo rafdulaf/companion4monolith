@@ -9,43 +9,50 @@
             "title": {
                 "fr": "Attaque",
                 "en": "Attack"
-            }
+            },
+            "image": "data/skills/img/attack/attack.png"
         }, {
             "id": "melee",
             "title": {
                 "fr": "Attaque au corps-à-corps",
                 "en": "Melee attack"
-            }
+            },
+            "image": "data/skills/img/attack/melee.png"
         }, {
             "id": "range",
             "title": {
                 "fr": "Attaque à distance",
                 "en": "Range attack"
-            }
+            },
+            "image": "data/skills/img/attack/range.png"
         }, {
             "id": "manipulation",
             "title": {
                 "fr": "Manipulation",
                 "en": "Manipulation"
-            }
+            },
+            "image": "data/skills/img/attack/manipulation.png"
         }, {
             "id": "thought",
             "title": {
                 "fr": "Réflexion",
                 "en": "Thought"
-            }
+            },
+            "image": "data/skills/img/attack/thought.png"
         }, {
             "id": "defense",
             "title": {
                 "fr": "Défense",
                 "en": "Defense"
-            }
+            },
+            "image": "data/skills/img/attack/defense.png"
         }, {
             "id": "movement",
             "title": {
                 "fr": "Mouvement",
                 "en": "Movement"
-            }
+            },
+            "image": "data/skills/img/attack/movement.png"
         }, {
             "id": "miscellaneous",
             "title": {
@@ -64,6 +71,13 @@
                 "fr": "Traits",
                 "en": "Traits"
             }
+        }, {
+            "id": "permanent",
+            "title": {
+                "fr": "Effet permanent",
+                "en": "Permanent effect"
+            },
+            "image": "data/skills/img/attack/permanent.png"
         }
     ],
     "list": [
