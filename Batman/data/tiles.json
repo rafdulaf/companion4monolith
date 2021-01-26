@@ -1,0 +1,234 @@
+{
+	"ranks": [
+        {
+            "id": "leader",
+            "name": {
+                "fr": "Leader/lieutenant",
+                "en": "Leader/lieutenant"
+            },
+            "image": "data/tiles/img/leader.png",
+            "imageHD": "data/tiles/img/leader.png"
+        },
+        {
+            "id": "elite",
+            "name": {
+                "fr": "Elite",
+                "en": "Elite"
+            },
+            "image": "data/tiles/img/elite.png",
+            "imageHD": "data/tiles/img/elite.png"
+        },
+        {
+            "id": "henchman",
+            "name": {
+                "fr": "Henchman",
+                "en": "Henchman"
+            },
+            "image": "data/tiles/img/henchman.png",
+            "imageHD": "data/tiles/img/henchman.png"
+        }
+	], 
+
+	"list": [
+        {
+            "id": "batman",
+            "name": {
+                "fr": "Batman",
+                "en": "Batman"
+            },
+            "color": ["blue"],
+            "tile-size": "single",
+            "life-points": 5,
+            "auto-defense": 3,
+            "movement": 3,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["red","red"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 3
+				}
+			},
+            "ranged": {
+				"0": {
+					"dice": ["yellow","yellow"],
+					"action-multiplyer" : 3
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["red","black"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "parkour",
+						"value": 1
+					},
+				"1": {
+						"type": "investigation",
+						"value": 2
+					},
+				"2": {
+						"type": "hacking",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/batman.png",
+            "imageHD": "data/tiles/img/batman_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "batman",
+            "origins": "corebox",
+        },
+		{
+            "id": "batman-dkr",
+            "name": {
+                "fr": "Batman",
+                "en": "Batman"
+            },
+            "subtitle": {
+                "fr": "The Dark Knight Returns",
+                "en": "The Dark Knight Returns"
+            },
+            "color": ["blue"],
+            "tile-size": "single",
+            "life-points": 5,
+            "auto-defense": 2,
+            "movement": 2,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["red","black"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 3
+				}
+			},
+            "ranged": {
+				"0": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 2
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["red","black"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "support",
+						"value": 2
+					},
+				"1": {
+						"type": "circular_strike",
+						"value": 1
+					},
+				"2": {
+						"type": "berserk",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/batman-dkr.png",
+            "imageHD": "data/tiles/img/batman-dkr_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "batman-dkr",
+            "origins": "corebox",
+        },
+		
+		
+		{
+            "id": "model",
+            "name": {
+                "fr": "model",
+                "en": "model"
+            },
+            "color": ["blue"],
+            "tile-size": "single",
+            "life-points": 5,
+            "auto-defense": 3,
+            "movement": 3,
+            "size": 1,
+            "menace": 1,
+            "trait": "none",
+            "melee" : {
+				"0": {
+					"dice": ["red","red"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 3
+				}
+			},
+            "ranged": {
+				"0": {
+					"dice": ["yellow","yellow"],
+					"action-multiplyer" : 3
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["red","black"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "parkour",
+						"value": 1
+					},
+				"1": {
+						"type": "investigation",
+						"value": 2
+					},
+				"2": {
+						"type": "hacking",
+						"value": 1
+					}					
+				},
+            "reinforcement": 0,
+            "rank": "leader",
+            "image": "data/tiles/img/model.png",
+            "imageHD": "data/tiles/img/model_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "model",
+            "origins": "corebox",
+            "count": 1
+        }
+		
+		
+    ]
+}
