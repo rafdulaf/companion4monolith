@@ -1,4 +1,15 @@
 {
+    "skilltypes": [
+	{
+            "id": "permanent",
+            "title": {
+                "fr": "Effet permanent",
+                "en": "Permanent effect"
+            },
+            "image": "data/skills/img/attack/permanent.png"
+        }
+	],
+	
     "types": [
         {
             "id": "object",
