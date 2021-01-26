@@ -160,11 +160,982 @@
             "model": "batman-dkr",
             "origins": "corebox",
         },
+		{
+            "id": "batman-zero",
+            "name": {
+                "fr": "Batman",
+                "en": "Batman"
+            },
+            "subtitle": {
+                "fr": "Zero Year",
+                "en": "Zero Year"
+            },
+            "color": ["blue"],
+            "tile-size": "single",
+            "life-points": 5,
+            "auto-defense": 2,
+            "movement": 3,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["orangereroll","orangereroll"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["yellowreroll","orange"],
+					"action-multiplyer" : 3
+				}
+			},
+            "ranged": {
+				"0": {
+					"dice": ["blackreroll"],
+					"action-multiplyer" : 1
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["red","black"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "parkour",
+						"value": 2
+					},
+				"1": {
+						"type": "mobility",
+						"value": 1
+					},
+				"2": {
+						"type": "investigation",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/batman-zero.png",
+            "imageHD": "data/tiles/img/batman-zero_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "batman-zero",
+            "origins": "corebox",
+        },
+		{
+            "id": "batman-100",
+            "name": {
+                "fr": "Batman",
+                "en": "Batman"
+            },
+            "subtitle": {
+                "fr": "Year 100",
+                "en": "Year 100"
+            },
+            "color": ["blue"],
+            "tile-size": "single",
+            "life-points": 5,
+            "auto-defense": 3,
+            "movement": 3,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["orange","red"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 2
+				}
+			},
+            "ranged": {
+				"0": {
+					"dice": ["yellow","yellow"],
+					"action-multiplyer" : 3
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["red","black"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "parkour",
+						"value": 1
+					},
+				"1": {
+						"type": "mobility",
+						"value": 1
+					},
+				"2": {
+						"type": "martial_arts",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/batman-100.png",
+            "imageHD": "data/tiles/img/batman-100_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "batman-100",
+            "origins": "corebox",
+        },
+		{
+            "id": "catwoman",
+            "name": {
+                "fr": "Catwoman",
+                "en": "Catwoman"
+            },
+            "color": ["blue"],
+            "tile-size": "single",
+            "life-points": 4,
+            "auto-defense": 2,
+            "movement": 4,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["yellow","yellow"],
+					"action-multiplyer" : 5
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["red","black"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["black"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "parkour",
+						"value": 3
+					},
+				"1": {
+						"type": "lock_piking",
+						"value": 2
+					},
+				"2": {
+						"type": "elusive",
+						"value": 2
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/catwoman.png",
+            "imageHD": "data/tiles/img/catwoman_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "catwoman",
+            "origins": "corebox",
+        },
+		{
+            "id": "catwoman-halloween",
+            "name": {
+                "fr": "Catwoman",
+                "en": "Catwoman"
+            },
+            "subtitle": {
+                "fr": "The Long Halloween",
+                "en": "The Long Halloween"
+            },
+            "color": ["blue"],
+            "tile-size": "single",
+            "life-points": 4,
+            "auto-defense": 2,
+            "movement": 4,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["whitereroll","whitereroll"],
+					"action-multiplyer" : 2
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["red","blackreroll"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["blackreroll"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "parkour",
+						"value": 3
+					},
+				"1": {
+						"type": "elusive",
+						"value": 2
+					},
+				"2": {
+						"type": "martial_arts",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/catwoman-halloween.png",
+            "imageHD": "data/tiles/img/catwoman-halloween_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "catwoman-halloween",
+            "origins": "corebox",
+        },
+		{
+            "id": "red-hood-todd",
+            "name": {
+                "fr": "Red Hood",
+                "en": "Red Hood"
+            },
+            "subtitle": {
+                "fr": "Jason Todd",
+                "en": "Jason Todd"
+            },
+            "color": ["blue"],
+            "tile-size": "single",
+            "life-points": 5,
+            "auto-defense": 2,
+            "movement": 1,
+            "size": 1,
+            "menace": 1,
+            "trait": "reduced_mobility",
+            "ranged" : {
+				"0": {
+					"dice": ["whitereroll","whitereroll","whitereroll","whitereroll"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "burst",
+						"value": 4
+					},
+				"1": {
+						"type": "marksman",
+						"value": 1
+					},
+				"2": {
+						"type": "nerves_steel",
+						"value": 2
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/red-hood-todd.png",
+            "imageHD": "data/tiles/img/red-hood-todd_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "red-hood-todd",
+            "origins": "corebox",
+        },
+		{
+            "id": "nightwing",
+            "name": {
+                "fr": "Nightwing",
+                "en": "Nightwing"
+            },
+            "color": ["blue"],
+            "tile-size": "single",
+            "life-points": 5,
+            "auto-defense": 2,
+            "movement": 3,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["orange","red"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["yellow","orange"],
+					"action-multiplyer" : 3
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["orange","orangereroll"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["orange","orangereroll"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "parkour",
+						"value": 3
+					},
+				"1": {
+						"type": "mobility",
+						"value": 2
+					},
+				"2": {
+						"type": "counterattack",
+						"value": 2
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/nightwing.png",
+            "imageHD": "data/tiles/img/nightwing_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "nightwing",
+            "origins": "corebox"
+        },
+		{
+            "id": "robin-drake",
+            "name": {
+                "fr": "Robin",
+                "en": "Robin"
+            },
+            "subtitle": {
+                "fr": "Tim Drake",
+                "en": "Tim Drake"
+            },
+            "color": ["blue"],
+            "tile-size": "single",
+            "life-points": 5,
+            "auto-defense": 2,
+            "movement": 3,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["yellow","yellow"],
+					"action-multiplyer" : 3
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["orange","red"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["orangereroll","red"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "parkour",
+						"value": 1
+					},
+				"1": {
+						"type": "support",
+						"value": 1
+					},
+				"2": {
+						"type": "hacking",
+						"value": 2
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/robin-drake.png",
+            "imageHD": "data/tiles/img/robin-drake_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "robin-drake",
+            "origins": "corebox"
+        },
+		{
+            "id": "robin-damian",
+            "name": {
+                "fr": "Robin",
+                "en": "Robin"
+            },
+            "subtitle": {
+                "fr": "Damian Wayne",
+                "en": "Damian Wayne"
+            },
+            "color": ["blue"],
+            "tile-size": "single",
+            "life-points": 5,
+            "auto-defense": 2,
+            "movement": 3,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["white","white","white","white"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["redreroll"],
+					"action-multiplyer" : 2
+				}
+			},
+            "ranged": {
+				"0": {
+					"dice": ["whitereroll","orange"],
+					"action-multiplyer" : 2
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["orangereroll","orangereroll"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["orangereroll","orangereroll"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "parkour",
+						"value": 2
+					},
+				"1": {
+						"type": "elusive",
+						"value": 1
+					},
+				"2": {
+						"type": "sneak",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/robin-damian.png",
+            "imageHD": "data/tiles/img/robin-damian_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "robin-damian",
+            "origins": "corebox"
+        },
+		{
+            "id": "gordon",
+            "name": {
+                "fr": "Commissioner Gordon",
+                "en": "Commissioner Gordon"
+            },
+            "color": ["blue"],
+            "tile-size": "single",
+            "life-points": 4,
+            "auto-defense": 2,
+            "movement": 2,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "ranged": {
+				"0": {
+					"dice": ["yellow","red"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 3
+				}				
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["white","yellow"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["yellow","yellow"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "support",
+						"value": 2
+					},
+				"1": {
+						"type": "retaliation",
+						"value": 2
+					},
+				"2": {
+						"type": "investigation",
+						"value": 2
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/gordon.png",
+            "imageHD": "data/tiles/img/gordon_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "gordon",
+            "origins": "corebox"
+        },
+		{
+            "id": "bullock",
+            "name": {
+                "fr": "Harvey Bullock",
+                "en": "Harvey Bullock"
+            },
+            "color": ["blue"],
+            "tile-size": "single",
+            "life-points": 4,
+            "auto-defense": 2,
+            "movement": 2,
+            "size": 1,
+            "menace": 1,
+            "ranged": {
+				"0": {
+					"dice": ["white","yellow","red"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["white","white"],
+					"action-multiplyer" : 2
+				}				
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["orangereroll"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "counterattack",
+						"value": 2
+					},
+				"1": {
+						"type": "investigation",
+						"value": 2
+					},
+				"2": {
+						"type": "pointblank",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/bullock.png",
+            "imageHD": "data/tiles/img/bullock_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "bullock",
+            "origins": "corebox"
+        },	
+		{
+            "id": "montoya",
+            "name": {
+                "fr": "Renee Montoya",
+                "en": "Renee Montoya"
+            },
+            "color": ["blue"],
+            "tile-size": "single",
+            "life-points": 4,
+            "auto-defense": 2,
+            "movement": 2,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["yellow","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "ranged": {
+				"0": {
+					"dice": ["orange","red"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["whitereroll","whitereroll"],
+					"action-multiplyer" : 2
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["white","yellow"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["white","yellow"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "protected",
+						"value": 1
+					},
+				"1": {
+						"type": "luck",
+						"value": 1
+					},
+				"2": {
+						"type": "investigation",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/montoya.png",
+            "imageHD": "data/tiles/img/montoya_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "montoya",
+            "origins": "corebox"
+        },	
+		{
+            "id": "azrael",
+            "name": {
+                "fr": "Azrael",
+                "en": "Azrael"
+            },
+            "color": ["blue"],
+            "tile-size": "single",
+            "life-points": 5,
+            "auto-defense": 3,
+            "movement": 3,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["yellow"],
+					"action-multiplyer" : 4
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["white","white"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "martial_arts",
+						"value": 2
+					},
+				"1": {
+						"type": "parkour",
+						"value": 1
+					},
+				"2": {
+						"type": "counterattack",
+						"value": 2
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/azrael.png",
+            "imageHD": "data/tiles/img/azrael_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "azrael",
+            "origins": "corebox"
+        },
+		{
+            "id": "batgirl",
+            "name": {
+                "fr": "Batgirl",
+                "en": "batgirl"
+            },
+            "subtitle": {
+                "fr": "Barbara Gordon",
+                "en": "Barbara Gordon"
+            },
+            "color": ["blue"],
+            "tile-size": "single",
+            "life-points": 5,
+            "auto-defense": 2,
+            "movement": 3,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["white"],
+					"action-multiplyer" : 3
+				}
+			},
+            "ranged": {
+				"0": {
+					"dice": ["yellow","yellow"],
+					"action-multiplyer" : 2
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["white","red"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "martial_arts",
+						"value": 1
+					},
+				"1": {
+						"type": "parkour",
+						"value": 1
+					},
+				"2": {
+						"type": "investigation",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/batgirl.png",
+            "imageHD": "data/tiles/img/batgirl_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "batgirl",
+            "origins": "corebox"
+        },
+		{
+            "id": "green-arrow",
+            "name": {
+                "fr": "Green Arrow",
+                "en": "Green Arrow"
+            },
+            "color": ["blue"],
+            "tile-size": "single",
+            "life-points": 5,
+            "auto-defense": 2,
+            "movement": 3,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "ranged": {
+				"0": {
+					"dice": ["blackreroll","orangereroll"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["orangereroll","orange"],
+					"action-multiplyer" : 2
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["white","yellowreroll"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "parkour",
+						"value": 2
+					},
+				"1": {
+						"type": "marksman",
+						"value": 1
+					},
+				"2": {
+						"type": "retaliation",
+						"value": 2
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/green-arrow.png",
+            "imageHD": "data/tiles/img/green-arrow_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "green-arrow",
+            "origins": "corebox"
+        },
+		{
+            "id": "black-canary",
+            "name": {
+                "fr": "Black Canary",
+                "en": "Black Canary"
+            },
+            "color": ["blue"],
+            "tile-size": "single",
+            "life-points": 4,
+            "auto-defense": 2,
+            "movement": 3,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["orangereroll","orangereroll"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["yellowreroll","yellowreroll"],
+					"action-multiplyer" : 3
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "parkour",
+						"value": 1
+					},
+				"1": {
+						"type": "blast",
+						"value": 2
+					},
+				"2": {
+						"type": "martial_arts",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/black-canary.png",
+            "imageHD": "data/tiles/img/black-canary_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "black-canary",
+            "origins": "corebox"
+        },
+		{
+            "id": "katana",
+            "name": {
+                "fr": "Katana",
+                "en": "katana"
+            },
+            "color": ["blue"],
+            "tile-size": "single",
+            "life-points": 5,
+            "auto-defense": 2,
+            "movement": 3,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["yellow","yellow","orange"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["yellow"],
+					"action-multiplyer" : 4
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "parkour",
+						"value": 1
+					},
+				"1": {
+						"type": "counterattack",
+						"value": 2
+					},
+				"2": {
+						"type": "martial_arts",
+						"value": 2
+					}					
+				},
+            "reinforcement": 0,
+            "rank": "leader",
+            "image": "data/tiles/img/katana.png",
+            "imageHD": "data/tiles/img/katana_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "katana",
+            "origins": "corebox"
+        }		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		{
-            "id": "model",
+            "id": "template",
             "name": {
+                "fr": "model",
+                "en": "model"
+            },
+            "subtitle": {
                 "fr": "model",
                 "en": "model"
             },
@@ -220,11 +1191,11 @@
 				},
             "reinforcement": 0,
             "rank": "leader",
-            "image": "data/tiles/img/model.png",
-            "imageHD": "data/tiles/img/model_hd.png",
+            "image": "data/tiles/img/template.png",
+            "imageHD": "data/tiles/img/template_hd.png",
             "image_location": {"x":66, "y":48},
             "image_zoom": 96,
-            "model": "model",
+            "model": "template",
             "origins": "corebox",
             "count": 1
         }
