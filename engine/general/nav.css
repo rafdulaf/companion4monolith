@@ -49,14 +49,16 @@
     }
 .header .title .size4 {
     font-size: calc(var(--primary-size) * 1.75rem);
-    line-height: calc(var(--primary-line-height) * 1.1rem);
+    line-height: calc(var(--primary-line-height) * 1.4rem);
     white-space: unset;
 }
 .header .title .size3 {
     font-size: calc(var(--primary-size) * 1.625rem);
+    line-height: calc(var(--primary-line-height) * 1.3rem);
 }
 .header .title .size2 {
     font-size: calc(var(--primary-size) * 1.5rem);
+    line-height: calc(var(--primary-line-height) * 1.2rem);
 }
 .header .title .size1 {
     font-size: calc(var(--primary-size) * 1.375rem);

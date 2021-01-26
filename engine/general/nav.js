@@ -175,10 +175,11 @@ Nav = {
         
         var tb = $(".header .toolbar")
         var maxWidth = $(".header").width() - tb.width();
+        var maxHeight = 60;
         
         for (var i = 0; i < sizes.length; i++)
         {
-            if (t.width() > maxWidth)
+            if (t.width() > maxWidth || t.height() > maxHeight)
             {
                 t.addClass(sizes[i]);
             }
@@ -204,7 +205,8 @@ Nav = {
         {
             var tooSmall = false;
             tabs.each(function(tindex, t) {
-                if ($("span", t).width() > maxWidth)
+                var st = $("span", t); 
+                if (st.width() > maxWidth)
                 {
                     tooSmall = true;
                     return false;
