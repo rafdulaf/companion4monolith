@@ -1,4 +1,39 @@
 {
+    "types": [
+        {
+            "id": "object",
+            "title": {
+                "fr": "Objet",
+                "en": "Object"
+            },
+	    "image": "data/skills/img/attack/object.png"
+        },
+        {
+            "id": "tool",
+            "title": {
+                "fr": "Outil",
+                "en": "Tool"
+            },
+	    "image": "data/skills/img/attack/tool.png"
+        },
+        {
+            "id": "ranged-weapon",
+            "title": {
+                "fr": "Arme à distance",
+                "en": "Ranges Weapon"
+            },
+	    "image": "data/skills/img/attack/ranged-weapon.png"
+        },
+        {
+            "id": "melee-weapon",
+            "title": {
+                "fr": "Arme au corps-à-corps",
+                "en": "Melee weapon"
+            },
+	    "image": "data/skills/img/attack/melee-weapon.png"
+        }
+    ],
+           	
     "list": [
         {
             "id": "security-pass",
