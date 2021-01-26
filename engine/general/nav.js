@@ -217,7 +217,7 @@ Nav = {
         document.fonts.ready.then(function() { Nav.updateTitle() });
         $(window).on('resize', function() { Nav.updateTitle() });
         $(window).on('hashchange', function() { Nav._hashChange() });
-
+        
         function resize()
         {
            a = (window.innerHeight) + "px"
@@ -325,13 +325,45 @@ Nav = {
         }
     },
     
+    updateTabsSize: function(s)
+    {
+            var slider = $(s);
+            
+            var sizes = ["size10", "size9", "size8", "size7", "size6", "size5", "size4", "size3", "size2", "size1"];
+            
+            slider.removeClass(sizes.join(" "));
+            
+            var tabs = slider.find("a");
+            var maxWidth = tabs.width();
+
+            for (var i = 0; i < sizes.length; i++)
+            {
+                var tooSmall = false;
+                tabs.each(function(tindex, t) {
+                    if ($("span", t).width() > maxWidth)
+                    {
+                        tooSmall = true;
+                        return false;
+                    }
+                });
+                if (tooSmall)
+                {
+                    slider.addClass(sizes[i]);
+                }
+                else
+                {
+                    break;
+                }
+            }
+    },
+    
     createTabs: function(id, tabs, onSetPosition)
     {
         var subcode = "";
         var subzone = "";
         for (var i in tabs)
         {
-            subcode += "<a href=\"javascript:void(0)\">" + tabs[i].label + "</a>";
+            subcode += "<a href=\"javascript:void(0)\"><span>" + tabs[i].label + "</span></a>";
             subzone += "<div id=\"" + tabs[i].id + "\"></div>";
         }
         
@@ -342,7 +374,7 @@ Nav = {
                  +      subzone
                  + "</div>";
         
-        $("#" + id).append(code);
+        $("#" + id).attr("data-navsize", tabs.length).append(code);
         
         var m = "#" + id + " .nav-menu";
         var w = "#" + id + " .nav-wrapper";
@@ -350,7 +382,7 @@ Nav = {
         var $m = $(m);
         var $w = $(w);
 
-        $m.slick({
+        var aaa = $m.slick({
             slidesToShow: tabs.length + 0.5,
             slidesToScroll: 1,
             arrows: true,
@@ -360,6 +392,13 @@ Nav = {
             touchThreshold: 10,
             asNavFor: w 
         });
+        var t = aaa[0].slick.setDimensions;
+        aaa[0].slick.setDimensions = function() {
+            t.apply(aaa[0].slick);
+            Nav.updateTabsSize(aaa[0]);
+        }
+        Nav.updateTabsSize(aaa[0]);
+        
         $w.slick({
             slidesToShow: 1,
             slidesToScroll: 1,

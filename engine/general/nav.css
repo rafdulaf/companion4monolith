@@ -15,7 +15,7 @@
     vertical-align: top;
     min-height: 100%;
     font-size: calc(var(--primary-size) * 2.1875rem);
-    line-height: calc(var(--primary-size) * 2.292rem);
+    line-height: calc(var(--primary-line-height) * 2.292rem);
     font-family: 'Primary';
     text-transform: uppercase;
     overflow: hidden;
@@ -32,7 +32,7 @@
 }
 .header .title .smallest.twolines {
     font-size: calc(var(--primary-size) * 1.375rem);
-    line-height: calc(var(--primary-size) * 1.1rem);
+    line-height: calc(var(--primary-line-height) * 1.1rem);
 }
 
 .header .toolbar {
@@ -257,7 +257,6 @@
     height: 39px;
     line-height: 39px;
     font-family: 'Primary';
-    font-size: calc(var(--primary-size) * 1rem);
     text-transform: uppercase;
     border-bottom: 3px solid transparent;
     
@@ -271,17 +270,47 @@
     outline: none;
 }
 
-@media screen and (max-width: 610px) {
-    .nav-menu a {
-        font-size: calc(var(--primary-size) * 0.875rem);
-        line-height: calc(var(--primary-size) * 1.1875rem);
-    }
+
+.nav-menu a {
+    font-size: calc(var(--primary-size) * 1rem);
+    white-space: nowrap;
 }
-@media screen and (max-width: 700px) {
-    .nav-menu a {
-        font-size: calc(var(--primary-size) * 0.875rem);
-    }
+.nav-menu a wbr { display: none; }
+
+.nav-menu.size10 a {
+    font-size: calc(var(--primary-size) * 0.975rem);
 }
+.nav-menu.size9 a {
+    font-size: calc(var(--primary-size) * 0.95rem);
+}
+.nav-menu.size8 a {
+    font-size: calc(var(--primary-size) * 0.925rem);
+}
+.nav-menu.size7 a {
+    font-size: calc(var(--primary-size) * 0.9rem);
+}
+.nav-menu.size6 a {
+    font-size: calc(var(--primary-size) * 0.875rem);
+}
+.nav-menu.size5 a {
+    font-size: calc(var(--primary-size) * 0.925rem);
+    line-height: calc(var(--primary-line-height) * 1.1875rem);
+    white-space: unset;
+}
+.nav-menu.size5 a wbr { display: unset; }
+.nav-menu.size4 a {
+    font-size: calc(var(--primary-size) * 0.9rem);
+}
+.nav-menu.size3 a {
+    font-size: calc(var(--primary-size) * 0.875rem);
+}
+.nav-menu.size2 a {
+    font-size: calc(var(--primary-size) * 0.85rem);
+}
+.nav-menu.size1 a {
+    font-size: calc(var(--primary-size) * 0.825rem);
+}
+
 
 
 
