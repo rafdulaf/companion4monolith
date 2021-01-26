@@ -243,7 +243,7 @@ Nav = {
                     + "</div>";
         $(document.body).prepend(code);
         
-        document.fonts.ready.then(function() { Nav.updateTitle(); Nav.updateNav(); });
+        document.fonts.ready.then(function() { Nav.updateTitle(); Nav.updateNav(); $(".nav-menu").each(function(i, s) { Nav.updateTabsSize(s) }); });
         $(window).on('resize', function() { Nav.updateTitle(); Nav.updateNav(); });
         $(window).on('hashchange', function() { Nav._hashChange() });
         
