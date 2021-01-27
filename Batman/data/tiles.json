@@ -30,14 +30,34 @@
 	], 
 
 	"list": [
-        {
+ 		{
+            "id": "warning-white",
+            "name": {
+                "fr": "Warning",
+                "en": "Warning"
+            },
+            "color": "gray",
+            "tile-type": "warning",
+            "origins": "corebox"
+        },
+		{
+            "id": "warning-blue",
+            "name": {
+                "fr": "Warning",
+                "en": "Warning"
+            },
+            "color": "blue",
+            "tile-type": "warning",
+            "origins": "corebox"
+        },
+		{
             "id": "batman",
             "name": {
                 "fr": "Batman",
                 "en": "Batman"
             },
-            "color": ["blue"],
-            "tile-size": "single",
+            "color": "blue",
+            "tile-type": "single",
             "life-points": 5,
             "auto-defense": 3,
             "movement": 3,
@@ -91,7 +111,7 @@
             "image_location": {"x":66, "y":48},
             "image_zoom": 96,
             "model": "batman",
-            "origins": "corebox",
+            "origins": "corebox"
         },
 		{
             "id": "batman-dkr",
@@ -103,8 +123,8 @@
                 "fr": "The Dark Knight Returns",
                 "en": "The Dark Knight Returns"
             },
-            "color": ["blue"],
-            "tile-size": "single",
+            "color": "blue",
+            "tile-type": "single",
             "life-points": 5,
             "auto-defense": 2,
             "movement": 2,
@@ -158,7 +178,7 @@
             "image_location": {"x":66, "y":48},
             "image_zoom": 96,
             "model": "batman-dkr",
-            "origins": "corebox",
+            "origins": "corebox"
         },
 		{
             "id": "batman-zero",
@@ -170,8 +190,8 @@
                 "fr": "Zero Year",
                 "en": "Zero Year"
             },
-            "color": ["blue"],
-            "tile-size": "single",
+            "color": "blue",
+            "tile-type": "single",
             "life-points": 5,
             "auto-defense": 2,
             "movement": 3,
@@ -225,7 +245,7 @@
             "image_location": {"x":66, "y":48},
             "image_zoom": 96,
             "model": "batman-zero",
-            "origins": "corebox",
+            "origins": "corebox"
         },
 		{
             "id": "batman-100",
@@ -237,8 +257,8 @@
                 "fr": "Year 100",
                 "en": "Year 100"
             },
-            "color": ["blue"],
-            "tile-size": "single",
+            "color": "blue",
+            "tile-type": "single",
             "life-points": 5,
             "auto-defense": 3,
             "movement": 3,
@@ -292,7 +312,7 @@
             "image_location": {"x":66, "y":48},
             "image_zoom": 96,
             "model": "batman-100",
-            "origins": "corebox",
+            "origins": "corebox"
         },
 		{
             "id": "catwoman",
@@ -300,8 +320,8 @@
                 "fr": "Catwoman",
                 "en": "Catwoman"
             },
-            "color": ["blue"],
-            "tile-size": "single",
+            "color": "blue",
+            "tile-type": "single",
             "life-points": 4,
             "auto-defense": 2,
             "movement": 4,
@@ -345,7 +365,7 @@
             "image_location": {"x":66, "y":48},
             "image_zoom": 96,
             "model": "catwoman",
-            "origins": "corebox",
+            "origins": "corebox"
         },
 		{
             "id": "catwoman-halloween",
@@ -357,8 +377,8 @@
                 "fr": "The Long Halloween",
                 "en": "The Long Halloween"
             },
-            "color": ["blue"],
-            "tile-size": "single",
+            "color": "blue",
+            "tile-type": "single",
             "life-points": 4,
             "auto-defense": 2,
             "movement": 4,
@@ -402,7 +422,7 @@
             "image_location": {"x":66, "y":48},
             "image_zoom": 96,
             "model": "catwoman-halloween",
-            "origins": "corebox",
+            "origins": "corebox"
         },
 		{
             "id": "red-hood-todd",
@@ -414,8 +434,8 @@
                 "fr": "Jason Todd",
                 "en": "Jason Todd"
             },
-            "color": ["blue"],
-            "tile-size": "single",
+            "color": "blue",
+            "tile-type": "single",
             "life-points": 5,
             "auto-defense": 2,
             "movement": 1,
@@ -448,7 +468,7 @@
             "image_location": {"x":66, "y":48},
             "image_zoom": 96,
             "model": "red-hood-todd",
-            "origins": "corebox",
+            "origins": "corebox"
         },
 		{
             "id": "nightwing",
@@ -456,8 +476,8 @@
                 "fr": "Nightwing",
                 "en": "Nightwing"
             },
-            "color": ["blue"],
-            "tile-size": "single",
+            "color": "blue",
+            "tile-type": "single",
             "life-points": 5,
             "auto-defense": 2,
             "movement": 3,
@@ -517,8 +537,8 @@
                 "fr": "Tim Drake",
                 "en": "Tim Drake"
             },
-            "color": ["blue"],
-            "tile-size": "single",
+            "color": "blue",
+            "tile-type": "single",
             "life-points": 5,
             "auto-defense": 2,
             "movement": 3,
@@ -578,8 +598,8 @@
                 "fr": "Damian Wayne",
                 "en": "Damian Wayne"
             },
-            "color": ["blue"],
-            "tile-size": "single",
+            "color": "blue",
+            "tile-type": "single",
             "life-points": 5,
             "auto-defense": 2,
             "movement": 3,
@@ -641,8 +661,8 @@
                 "fr": "Commissioner Gordon",
                 "en": "Commissioner Gordon"
             },
-            "color": ["blue"],
-            "tile-size": "single",
+            "color": "blue",
+            "tile-type": "single",
             "life-points": 4,
             "auto-defense": 2,
             "movement": 2,
@@ -704,8 +724,8 @@
                 "fr": "Harvey Bullock",
                 "en": "Harvey Bullock"
             },
-            "color": ["blue"],
-            "tile-size": "single",
+            "color": "blue",
+            "tile-type": "single",
             "life-points": 4,
             "auto-defense": 2,
             "movement": 2,
@@ -761,8 +781,8 @@
                 "fr": "Renee Montoya",
                 "en": "Renee Montoya"
             },
-            "color": ["blue"],
-            "tile-size": "single",
+            "color": "blue",
+            "tile-type": "single",
             "life-points": 4,
             "auto-defense": 2,
             "movement": 2,
@@ -824,8 +844,8 @@
                 "fr": "Azrael",
                 "en": "Azrael"
             },
-            "color": ["blue"],
-            "tile-size": "single",
+            "color": "blue",
+            "tile-type": "single",
             "life-points": 5,
             "auto-defense": 3,
             "movement": 3,
@@ -882,11 +902,11 @@
                 "en": "batgirl"
             },
             "subtitle": {
-                "fr": "Barbara Gordon",
-                "en": "Barbara Gordon"
+                "fr": "(BARBARA GORDON)",
+                "en": "(BARBARA GORDON)"
             },
-            "color": ["blue"],
-            "tile-size": "single",
+            "color": "blue",
+            "tile-type": "single",
             "life-points": 5,
             "auto-defense": 2,
             "movement": 3,
@@ -942,14 +962,77 @@
             "model": "batgirl",
             "origins": "corebox"
         },
+{
+            "id": "batwoman",
+            "name": {
+                "fr": "Batwoman",
+                "en": "Batwoman"
+            },
+            "color": "blue",
+            "tile-type": "single",
+            "life-points": 5,
+            "auto-defense": 2,
+            "movement": 3,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["orangereroll","orangereroll"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["whitereroll","whitereroll"],
+					"action-multiplyer" : 3
+				}
+			},
+            "ranged": {
+				"0": {
+					"dice": ["yellow","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["yellowreroll","yellowreroll"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "martial_arts",
+						"value": 1
+					},
+				"1": {
+						"type": "parkour",
+						"value": 1
+					},
+				"2": {
+						"type": "counterattack",
+						"value": 2
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/batwoman.png",
+            "imageHD": "data/tiles/img/batwoman_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "batwoman",
+            "origins": "corebox"
+        },		
 		{
             "id": "green-arrow",
             "name": {
                 "fr": "Green Arrow",
                 "en": "Green Arrow"
             },
-            "color": ["blue"],
-            "tile-size": "single",
+            "color": "blue",
+            "tile-type": "single",
             "life-points": 5,
             "auto-defense": 2,
             "movement": 3,
@@ -1011,8 +1094,8 @@
                 "fr": "Black Canary",
                 "en": "Black Canary"
             },
-            "color": ["blue"],
-            "tile-size": "single",
+            "color": "blue",
+            "tile-type": "single",
             "life-points": 4,
             "auto-defense": 2,
             "movement": 3,
@@ -1062,8 +1145,8 @@
                 "fr": "Katana",
                 "en": "katana"
             },
-            "color": ["blue"],
-            "tile-size": "single",
+            "color": "blue",
+            "tile-type": "single",
             "life-points": 5,
             "auto-defense": 2,
             "movement": 3,
@@ -1120,8 +1203,8 @@
                 "fr": "Huntress",
                 "en": "Huntress"
             },
-            "color": ["blue"],
-            "tile-size": "single",
+            "color": "blue",
+            "tile-type": "single",
             "life-points": 5,
             "auto-defense": 2,
             "movement": 2,
@@ -1187,8 +1270,8 @@
                 "fr": "Cassandra Cain",
                 "en": "Cassandra Cain"
             },
-            "color": ["blue"],
-            "tile-size": "single",
+            "color": "blue",
+            "tile-type": "single",
             "life-points": 4,
             "auto-defense": 3,
             "movement": 3,
@@ -1244,8 +1327,8 @@
                 "fr": "Spoiler",
                 "en": "Spoiler"
             },
-            "color": ["blue"],
-            "tile-size": "single",
+            "color": "blue",
+            "tile-type": "single",
             "life-points": 5,
             "auto-defense": 3,
             "movement": 3,
@@ -1303,8 +1386,8 @@
                 "fr": "Duke",
                 "en": "Duke"
             },
-            "color": ["blue"],
-            "tile-size": "single",
+            "color": "blue",
+            "tile-type": "single",
             "life-points": 5,
             "auto-defense": 2,
             "movement": 3,
@@ -1366,8 +1449,8 @@
                 "fr": "Bluebird",
                 "en": "Bluebird"
             },
-            "color": ["blue"],
-            "tile-size": "single",
+            "color": "blue",
+            "tile-type": "single",
             "life-points": 5,
             "auto-defense": 2,
             "movement": 3,
@@ -1431,8 +1514,8 @@
                 "fr": "with BATON",
                 "en": "with BATON"
             },
-            "color": ["blue"],
-            "tile-size": "single",
+            "color": "blue",
+            "tile-type": "single",
             "life-points": 1,
             "auto-defense": 1,
             "movement": 2,
@@ -1475,8 +1558,8 @@
                 "fr": "with HANDGUN",
                 "en": "with HANDGUN"
             },
-            "color": ["blue"],
-            "tile-size": "single",
+            "color": "blue",
+            "tile-type": "single",
             "life-points": 1,
             "auto-defense": 1,
             "movement": 2,
@@ -1515,8 +1598,8 @@
                 "fr": "Guards",
                 "en": "Guards"
             },
-            "color": ["blue"],
-            "tile-size": "single",
+            "color": "blue",
+            "tile-type": "single",
             "life-points": 1,
             "auto-defense": 1,
             "movement": 2,
@@ -1559,8 +1642,8 @@
                 "fr": "with BRIEFCASE",
                 "en": "with BRIEFCASE"
             },
-            "color": ["blue"],
-            "tile-size": "single",
+            "color": "blue",
+            "tile-type": "single",
             "life-points": 1,
             "auto-defense": 2,
             "movement": 2,
@@ -1607,8 +1690,8 @@
                 "fr": "with RIFLE",
                 "en": "with RIFLE"
             },
-            "color": ["blue"],
-            "tile-size": "single",
+            "color": "blue",
+            "tile-type": "single",
             "life-points": 1,
             "auto-defense": 2,
             "movement": 2,
@@ -1655,8 +1738,8 @@
                 "fr": "with TURRET",
                 "en": "with TURRET"
             },
-            "color": ["blue"],
-            "tile-size": "single",
+            "color": "blue",
+            "tile-type": "single",
             "life-points": 1,
             "auto-defense": 0,
             "movement": 5,
@@ -1690,8 +1773,8 @@
                 "fr": "Drone",
                 "en": "Drone"
             },
-            "color": ["blue"],
-            "tile-size": "single",
+            "color": "blue",
+            "tile-type": "single",
             "life-points": 1,
             "auto-defense": 0,
             "movement": 5,
@@ -1725,8 +1808,8 @@
                 "fr": "DEVGRU",
                 "en": "DEVGRU"
             },
-            "color": ["blue"],
-            "tile-size": "single",
+            "color": "blue",
+            "tile-type": "single",
             "life-points": 1,
             "auto-defense": 2,
             "movement": 3,
@@ -1764,13 +1847,61 @@
             "origins": "versus"
         },
 		{
+            "id": "heavy-gcpd",
+            "name": {
+                "fr": "GCPD",
+                "en": "GCPD"
+            },
+            "overtitle": {
+                "fr": "Heavy",
+                "en": "Heavy"
+            },
+            "color": "blue",
+            "tile-type": "single",
+            "life-points": 1,
+            "auto-defense": 3,
+            "movement": 2,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["white","yellowreroll"],
+					"action-multiplyer" : 1
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["yellow"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "munitions_specialist",
+						"value": 2
+					},
+					"1": {
+						"type": "shackle",
+						"value": 1
+					}
+				},
+            "reinforcement": 2,
+            "rank": "elite",
+            "image": "data/tiles/img/heavy-gcpd.png",
+            "imageHD": "data/tiles/img/heavy-gcpd_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "heavy-gcpd",
+            "origins": "versus"
+        },
+		{
             "id": "alfred",
             "name": {
                 "fr": "Alfred",
                 "en": "Alfred"
             },
-            "color": ["blue"],
-            "tile-size": "single",
+            "color": "blue",
+            "tile-type": "single",
             "life-points": 4,
             "auto-defense": 2,
             "movement": 2,
@@ -1822,8 +1953,8 @@
                 "fr": "Batwing",
                 "en": "Batwing"
             },
-            "color": ["blue"],
-            "tile-size": "single",
+            "color": "blue",
+            "tile-type": "single",
             "life-points": 4,
             "auto-defense": 3,
             "movement": 5,
@@ -1880,8 +2011,8 @@
                 "fr": "Bruce Wayne",
                 "en": "Bruce Wayne"
             },
-            "color": ["blue"],
-            "tile-size": "single",
+            "color": "blue",
+            "tile-type": "single",
             "life-points": 5,
             "auto-defense": 2,
             "movement": 3,
@@ -1937,8 +2068,8 @@
                 "fr": "Julia Penniworth",
                 "en": "Julia Penniworth"
             },
-            "color": ["blue"],
-            "tile-size": "single",
+            "color": "blue",
+            "tile-type": "single",
             "life-points": 5,
             "auto-defense": 2,
             "movement": 3,
@@ -1996,8 +2127,8 @@
                 "fr": "Oracle",
                 "en": "Oracle"
             },
-            "color": ["blue"],
-            "tile-size": "single",
+            "color": "blue",
+            "tile-type": "single",
             "life-points": 4,
             "auto-defense": 2,
             "movement": 2,
@@ -2044,8 +2175,8 @@
                 "fr": "Red Robin",
                 "en": "Red Robin"
             },
-            "color": ["blue"],
-            "tile-size": "single",
+            "color": "blue",
+            "tile-type": "single",
             "life-points": 5,
             "auto-defense": 2,
             "movement": 3,
@@ -2111,8 +2242,8 @@
                 "fr": "Bat-robots",
                 "en": "Bat-robots"
             },
-            "color": ["blue"],
-            "tile-size": "single",
+            "color": "blue",
+            "tile-type": "single",
             "life-points": 1,
             "auto-defense": 3,
             "movement": 2,
@@ -2156,8 +2287,8 @@
                 "fr": "Bats",
                 "en": "Bats"
             },
-            "color": ["blue"],
-            "tile-size": "single",
+            "color": "blue",
+            "tile-type": "single",
             "life-points": 1,
             "auto-defense": 2,
             "movement": 5,
@@ -2179,8 +2310,8 @@
                 "fr": "T-Rex",
                 "en": "T-Rex"
             },
-            "color": ["blue"],
-            "tile-size": "double",
+            "color": "blue",
+            "tile-type": "double",
             "life-points": 10,
             "auto-defense": 3,
             "movement": 2,
@@ -2210,13 +2341,4823 @@
             "model": "t-rex",
             "origins": "wayne-manor"
         },
+		{
+            "id": "batman-thrasher",
+            "name": {
+                "fr": "Batman Thrasher suit",
+                "en": "Batman Thrasher suit"
+            },
+            "color": "blue",
+            "tile-type": "double",
+            "life-points": 6,
+            "auto-defense": 3,
+            "movement": 2,
+            "size": 2,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["blackreroll","blackreroll"],
+					"action-multiplyer" : 1
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["yellow","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["orangereroll","orangereroll"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "nerves_steel",
+						"value": 2
+					},
+				"1": {
+						"type": "circular_strike",
+						"value": 2
+					},
+				"2": {
+						"type": "parkour",
+						"value": 2
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/batman-thrasher.png",
+            "imageHD": "data/tiles/img/batman-thrasher_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "batman-thrasher",
+            "origins": "wayne-manor"
+        },		
+		{
+            "id": "citizens",
+            "name": {
+                "fr": "Citizens",
+                "en": "Citizens"
+            },
+            "color": "orange",
+            "tile-type": "single",
+            "life-points": 1,
+            "auto-defense": 1,
+            "movement": 2,
+            "size": 0,
+            "menace": 0,
+            "rank": "henchman",
+            "image": "data/tiles/img/citizens.png",
+            "imageHD": "data/tiles/img/citizens_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "citizens",
+            "origins": "corebox"
+        },
+		{
+            "id": "possessed-citizens",
+            "name": {
+                "fr": "Citizens",
+                "en": "Citizens"
+            },
+            "overtitle": {
+                "fr": "Possessed",
+                "en": "Possessed"
+            },
+            "color": "orange",
+            "tile-type": "single",
+            "life-points": 1,
+            "auto-defense": 1,
+            "movement": 2,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["yellow"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "sneak",
+						"value": 1
+					}					
+				},
+            "rank": "henchman",
+            "image": "data/tiles/img/possessed-citizens.png",
+            "imageHD": "data/tiles/img/possessed-citizens.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "possessed-citizens",
+            "origins": "corebox"
+        },
+		{
+            "id": "bystanders",
+            "name": {
+                "fr": "By-standers",
+                "en": "By-standers"
+            },
+            "color": "orange",
+            "tile-type": "single",
+            "life-points": 1,
+            "auto-defense": 1,
+            "movement": 2,
+            "size": 0,
+            "menace": 0,
+            "rank": "henchman",
+            "image": "data/tiles/img/bystanders.png",
+            "imageHD": "data/tiles/img/bystanders_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "bystanders",
+            "origins": "corebox"
+        },
+		{
+            "id": "possessed-bystanders",
+            "name": {
+                "fr": "By-standers",
+                "en": "By-standers"
+            },
+            "overtitle": {
+                "fr": "Possessed",
+                "en": "Possessed"
+            },
+            "color": "orange",
+            "tile-type": "single",
+            "life-points": 1,
+            "auto-defense": 1,
+            "movement": 2,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["yellow"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "sneak",
+						"value": 1
+					}				
+				},
+            "rank": "henchman",
+            "image": "data/tiles/img/possessed-bystanders.png",
+            "imageHD": "data/tiles/img/possessed-bystanders_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "possessed-bystanders",
+            "origins": "corebox"
+        },
+		{
+            "id": "brutes-chains",
+            "name": {
+                "fr": "Brutes",
+                "en": "Brutes"
+            },
+            "subtitle": {
+                "fr": "with CHAINS",
+                "en": "with CHAINS"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 1,
+            "auto-defense": 2,
+            "movement": 3,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["white","white","yellow"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "parkour",
+						"value": 1
+					},
+				"1": {
+						"type": "circular_strike",
+						"value": 3
+					}					
+				},
+            "reinforcement": 2,
+            "rank": "elite",
+            "image": "data/tiles/img/brutes-chains.png",
+            "imageHD": "data/tiles/img/brutes-chains_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "brutes-chains",
+            "origins": "corebox"
+        },
+		{
+            "id": "brutes-firearm",
+            "name": {
+                "fr": "Brutes",
+                "en": "Brutes"
+            },
+            "subtitle": {
+                "fr": "with FIREARM",
+                "en": "with FIREARM"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 1,
+            "auto-defense": 2,
+            "movement": 3,
+            "size": 1,
+            "menace": 1,
+            "ranged": {
+				"0": {
+					"dice": ["black"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "pointblank",
+						"value": 1
+					},
+				"1": {
+						"type": "counterattack",
+						"value": 2
+					}					
+				},
+            "reinforcement": 2,
+            "rank": "elite",
+            "image": "data/tiles/img/brutes-firearm.png",
+            "imageHD": "data/tiles/img/brutes-firearm_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "brutes-firearm",
+            "origins": "corebox"
+        },
+		{
+            "id": "thugs-crowbar",
+            "name": {
+                "fr": "Thugs",
+                "en": "Thugs"
+            },
+            "subtitle": {
+                "fr": "with CROWBAR",
+                "en": "with CROWBAR"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 1,
+            "auto-defense": 1,
+            "movement": 3,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["yellowreroll","yellowreroll"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["whitereroll","yellow"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "elusive",
+						"value": 1
+					}					
+				},
+            "reinforcement": 1,
+            "rank": "henchman",
+            "image": "data/tiles/img/thugs-crowbar.png",
+            "imageHD": "data/tiles/img/thugs-crowbar_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "thugs-crowbar",
+            "origins": "corebox"
+        },
+		{
+            "id": "thugs-firearm",
+            "name": {
+                "fr": "Thugs",
+                "en": "Thugs"
+            },
+            "subtitle": {
+                "fr": "with FIREARM",
+                "en": "with FIREARM"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 1,
+            "auto-defense": 1,
+            "movement": 2,
+            "size": 1,
+            "menace": 1,
+            "ranged": {
+				"0": {
+					"dice": ["whitereroll","whitereroll"],
+					"action-multiplyer" : 1
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "parkour",
+						"value": 1
+					}					
+				},
+            "reinforcement": 1,
+            "rank": "henchman",
+            "image": "data/tiles/img/thugs-firearm.png",
+            "imageHD": "data/tiles/img/thugs-firearm_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "thugs-firearm",
+            "origins": "corebox"
+        },
+		{
+            "id": "hazmat-thugs",
+            "name": {
+                "fr": "Hazmat Thugs",
+                "en": "Hazmat Thugs"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 1,
+            "auto-defense": 1,
+            "movement": 2,
+            "size": 1,
+            "menace": 1,
+            "trait": "gas_immunity",
+            "ranged": {
+				"0": {
+					"dice": ["whitereroll","whitereroll"],
+					"action-multiplyer" : 1
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "reinforcement": 1,
+            "rank": "henchman",
+            "image": "data/tiles/img/hazmat-thugs.png",
+            "imageHD": "data/tiles/img/hazmat-thugs_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "hazmat-thugs",
+            "origins": "corebox"
+        },
+		{
+            "id": "prisoners",
+            "name": {
+                "fr": "Prisoners",
+                "en": "Prisoners"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 1,
+            "auto-defense": 1,
+            "movement": 3,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["white","yellow"],
+					"action-multiplyer" : 1
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["white","yellowreroll"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "sneak",
+						"value": 1
+					}					
+				},
+            "reinforcement": 1,
+            "rank": "henchman",
+            "image": "data/tiles/img/prisoners.png",
+            "imageHD": "data/tiles/img/prisoners_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "prisoners",
+            "origins": "corebox"
+        },
+		{
+            "id": "joker",
+            "name": {
+                "fr": "The Joker",
+                "en": "The Joker"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 6,
+            "auto-defense": 2,
+            "movement": 3,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["whitereroll","orange"],
+					"action-multiplyer" : 2
+				}
+			},
+            "ranged": {
+				"0": {
+					"dice": ["whitereroll","red"],
+					"action-multiplyer" : 1
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["blackreroll"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "nerves_steel",
+						"value": 4
+					},
+				"1": {
+						"type": "support",
+						"value": 2
+					},
+				"2": {
+						"type": "untouchable",
+						"value": 2
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/joker.png",
+            "imageHD": "data/tiles/img/joker_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "joker",
+            "origins": "corebox"
+        },
+		{
+            "id": "bane",
+            "name": {
+                "fr": "Bane",
+                "en": "Bane"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 6,
+            "auto-defense": 2,
+            "movement": 2,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["orangereroll","orangereroll"],
+					"action-multiplyer" : 1
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "munitions_specialist",
+						"value": 1
+					},
+				"1": {
+						"type": "support",
+						"value": 1
+					},
+				"2": {
+						"type": "martial_arts",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/bane.png",
+            "imageHD": "data/tiles/img/bane_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "bane",
+            "origins": "corebox"
+        },
+		{
+            "id": "bane-venom",
+            "name": {
+                "fr": "Bane",
+                "en": "Bane"
+            },
+            "subtitle": {
+                "fr": "VENOM INJECTED",
+                "en": "VENOM INJECTED"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 6,
+            "auto-defense": 2,
+            "movement": 3,
+            "size": 2,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["black","black"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["yellow","yellow"],
+					"action-multiplyer" : 3
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["white","yellow"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["white","white"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "parkour",
+						"value": 2
+					},
+				"1": {
+						"type": "martial_arts",
+						"value": 1
+					},
+				"2": {
+						"type": "wall_breaker",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/bane-venom.png",
+            "imageHD": "data/tiles/img/bane-venom_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "bane-venom",
+            "origins": "corebox"
+        },
+		{
+            "id": "harley-queen",
+            "name": {
+                "fr": "Harley Queen",
+                "en": "Harley Queen"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 4,
+            "auto-defense": 2,
+            "movement": 4,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["white","white","yellow"],
+					"action-multiplyer" : 1
+				}
+			},
+            "ranged": {
+				"0": {
+					"dice": ["yellow","red"],
+					"action-multiplyer" : 1
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["orange","orangereroll"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["black"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "imaginary_friend",
+						"value": 1
+					},
+				"1": {
+						"type": "parkour",
+						"value": 3
+					},
+				"2": {
+						"type": "elusive",
+						"value": 2
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/harley-queen.png",
+            "imageHD": "data/tiles/img/harley-queen_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "harley-queen",
+            "origins": "corebox"
+        },		
+		{
+            "id": "harley-queen-gang",
+            "name": {
+                "fr": "Harley Queen's gang",
+                "en": "Harley Queen's gang"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 1,
+            "auto-defense": 1,
+            "movement": 2,
+            "size": 1,
+            "menace": 1,
+            "ranged": {
+				"0": {
+					"dice": ["white","white","white"],
+					"action-multiplyer" : 1
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "burst",
+						"value": 2
+					}					
+				},
+            "reinforcement": 1,
+            "rank": "henchman",
+            "image": "data/tiles/img/harley-queen-gang.png",
+            "imageHD": "data/tiles/img/harley-queen-gang_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "harley-queen-gang",
+            "origins": "corebox"
+        },
+		{
+            "id": "harley-queen-hammer",
+            "name": {
+                "fr": "Harley Queen",
+                "en": "Harley Queen"
+            },
+            "subtitle": {
+                "fr": "with HAMMER",
+                "en": "with HAMMER"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 4,
+            "auto-defense": 2,
+            "movement": 4,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["white","white","black"],
+					"action-multiplyer" : 1
+				}	
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["orange","orangereroll"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["black"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "elusive",
+						"value": 2
+					},
+				"1": {
+						"type": "circular_strike",
+						"value": 3
+					},
+				"2": {
+						"type": "imaginary_friend",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/harley-queen-hammer.png",
+            "imageHD": "data/tiles/img/harley-queen-hammer_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "harley-queen-hammer",
+            "origins": "corebox"
+        },
+		{
+            "id": "bud-lou",
+            "name": {
+                "fr": "Bud & Lou",
+                "en": "Bud & Lou"
+            },
+            "color": "gray",
+            "tile-type": "double",
+            "life-points": 4,
+            "auto-defense": 2,
+            "movement": 5,
+            "size": 1,
+            "menace": 1,
+            "trait": "reduced_mobility",
+            "melee" : {
+				"0": {
+					"dice": ["white","red"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "elusive",
+						"value": 2
+					},
+				"1": {
+						"type": "berserk",
+						"value": 2
+					},
+				"2": {
+						"type": "sneak",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/bud-lou.png",
+            "imageHD": "data/tiles/img/bud-lou_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "bud-lou",
+            "origins": "corebox"
+        },		
+		{
+            "id": "poison-ivy",
+            "name": {
+                "fr": "Poison Ivy",
+                "en": "Poison Ivy"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 4,
+            "auto-defense": 2,
+            "movement": 2,
+            "size": 1,
+            "menace": 1,
+            "trait": "harmless",
+            "melee" : {
+				"0": {
+					"dice": ["whitereroll","whitereroll","whitereroll"],
+					"action-multiplyer" : 1
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["yellow","yellow"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["white","red"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "poison",
+						"value": 4
+					},
+				"1": {
+						"type": "elusive",
+						"value": 2
+					},
+				"2": {
+						"type": "impenetrable_defense",
+						"value": 2
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/poison-ivy.png",
+            "imageHD": "data/tiles/img/poison-ivy_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "poison-ivy",
+            "origins": "corebox"
+        },
+		{
+            "id": "carnivorous-plants",
+            "name": {
+                "fr": "Carnivorous plants",
+                "en": "Carnivorous plants"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 1,
+            "auto-defense": 2,
+            "movement": 0,
+            "size": 2,
+            "menace": 2,
+            "trait": "reduced_mobility",
+            "melee" : {
+				"0": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 2
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "poison",
+						"value": 1
+					},
+				"1": {
+						"type": "attraction",
+						"value": 2
+					}				
+				},
+            "reinforcement": 2,
+            "rank": "elite",
+            "image": "data/tiles/img/carnivorous-plants.png",
+            "imageHD": "data/tiles/img/carnivorous-plants_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "carnivorous-plants",
+            "origins": "corebox"
+        },
+		{
+            "id": "penguin",
+            "name": {
+                "fr": "The Penguin",
+                "en": "The Penguin"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 4,
+            "auto-defense": 2,
+            "movement": 2,
+            "size": 1,
+            "menace": 1,
+            "ranged": {
+				"0": {
+					"dice": ["yellow","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["black"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "untouchable",
+						"value": 1
+					},
+				"1": {
+						"type": "support",
+						"value": 2
+					},
+				"2": {
+						"type": "sneak",
+						"value": 2
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/penguin.png",
+            "imageHD": "data/tiles/img/penguin_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "penguin",
+            "origins": "corebox"
+        },
+		{
+            "id": "penguin-gang",
+            "name": {
+                "fr": "Penguin's gang",
+                "en": "Penguin's gang"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 1,
+            "auto-defense": 2,
+            "movement": 2,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["yellowreroll","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["whitereroll","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "shackle",
+						"value": 1
+					},
+				"1": {
+						"type": "reach",
+						"value": 1
+					}				
+				},
+            "reinforcement": 2,
+            "rank": "elite",
+            "image": "data/tiles/img/penguin-gang.png",
+            "imageHD": "data/tiles/img/penguin-gang_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "penguin-gang",
+            "origins": "corebox"
+        },
+		{
+            "id": "riddler",
+            "name": {
+                "fr": "The Riddler",
+                "en": "The Riddler"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 4,
+            "auto-defense": 2,
+            "movement": 2,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["white","white"],
+					"action-multiplyer" : 1
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["yellow","red"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["red","black"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 2
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "hacking",
+						"value": 2
+					},
+				"1": {
+						"type": "investigation",
+						"value": 1
+					},
+				"2": {
+						"type": "protected",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/riddler.png",
+            "imageHD": "data/tiles/img/riddler_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "riddler",
+            "origins": "corebox"
+        },
+		{
+            "id": "riddler-year0",
+            "name": {
+                "fr": "The Riddler",
+                "en": "The Riddler"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 4,
+            "auto-defense": 2,
+            "movement": 2,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["white","white"],
+					"action-multiplyer" : 1
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["yellow","red"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["red","black"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 2
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "hacking",
+						"value": 2
+					},
+				"1": {
+						"type": "investigation",
+						"value": 1
+					},
+				"2": {
+						"type": "protected",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/riddler-year0.png",
+            "imageHD": "data/tiles/img/riddler-year0_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "riddler-year0",
+            "origins": "corebox"
+        },
+		{
+            "id": "riddler-gang-handgun",
+            "name": {
+                "fr": "Riddler's gang",
+                "en": "Riddler's gang"
+            },
+            "subtitle": {
+                "fr": "with HANDGUN",
+                "en": "with HANDGUN"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 1,
+            "auto-defense": 2,
+            "movement": 2,
+            "size": 1,
+            "menace": 1,
+            "ranged": {
+				"0": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "retaliation",
+						"value": 2
+					},
+				"1": {
+						"type": "nerves_steel",
+						"value": 2
+					}					
+				},
+            "reinforcement": 2,
+            "rank": "elite",
+            "image": "data/tiles/img/riddler-gang-handgun.png",
+            "imageHD": "data/tiles/img/riddler-gang-handgun_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "riddler-gang-handgun",
+            "origins": "corebox"
+        },
+		{
+            "id": "riddler-gang-baton",
+            "name": {
+                "fr": "Riddler's gang",
+                "en": "Riddler's gang"
+            },
+            "subtitle": {
+                "fr": "with BATON",
+                "en": "with BATON"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 1,
+            "auto-defense": 1,
+            "movement": 2,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["yellow","yellow","yellow"],
+					"action-multiplyer" : 1
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["whitereroll","yellow"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "parkour",
+						"value": 1
+					}					
+				},
+            "reinforcement": 1,
+            "rank": "henchman",
+            "image": "data/tiles/img/riddler-gang-baton.png",
+            "imageHD": "data/tiles/img/riddler-gang-baton_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "riddler-gang-baton",
+            "origins": "corebox"
+        },
+		{
+            "id": "two-face-heads",
+            "name": {
+                "fr": "Two-Face",
+                "en": "Two-Face"
+            },
+            "subtitle": {
+                "fr": "Heads",
+                "en": "Heads"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 5,
+            "auto-defense": 2,
+            "movement": 2,
+            "size": 1,
+            "menace": 1,
+            "ranged": {
+				"0": {
+					"dice": ["white","red"],
+					"action-multiplyer" : 1
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["white","red"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "retaliation",
+						"value": 3
+					},
+				"1": {
+						"type": "tactician",
+						"value": 2
+					}				
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/two-face-heads.png",
+            "imageHD": "data/tiles/img/two-face-heads_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "two-face-heads",
+            "origins": "corebox"
+        },		
+		{
+            "id": "two-face-tails",
+            "name": {
+                "fr": "Two-Face",
+                "en": "Two-Face"
+            },
+            "subtitle": {
+                "fr": "Tails",
+                "en": "Tails"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 5,
+            "auto-defense": 2,
+            "movement": 2,
+            "size": 1,
+            "menace": 1,
+            "ranged": {
+				"0": {
+					"dice": ["white","white"],
+					"action-multiplyer" : 3
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["white","red"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "retaliation",
+						"value": 3
+					},
+				"1": {
+						"type": "pointblank",
+						"value": 2
+					}				
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/two-face-tails.png",
+            "imageHD": "data/tiles/img/two-face-tails_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "two-face-tails",
+            "origins": "corebox"
+        },	
+		{
+            "id": "clayface",
+            "name": {
+                "fr": "Clayface",
+                "en": "Clayface"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 7,
+            "auto-defense": 3,
+            "movement": 3,
+            "size": 3,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["black","blackreroll"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 2
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "wall_breaker",
+						"value": 1
+					},
+				"1": {
+						"type": "parkour",
+						"value": 3
+					},
+				"2": {
+						"type": "reach",
+						"value": 2
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/clayface.png",
+            "imageHD": "data/tiles/img/clayface_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "clayface",
+            "origins": "corebox"
+        },
+		{
+            "id": "killer-croc",
+            "name": {
+                "fr": "Killer Croc",
+                "en": "Killer Croc"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 6,
+            "auto-defense": 3,
+            "movement": 3,
+            "size": 2,
+            "menace": 2,
+            "melee" : {
+				"0": {
+					"dice": ["yellowreroll","blackreroll"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["yellow","yellowreroll"],
+					"action-multiplyer" : 4
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "mobility",
+						"value": 3
+					},
+				"1": {
+						"type": "parkour",
+						"value": 1
+					},
+				"2": {
+						"type": "berserk",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/killer-croc.png",
+            "imageHD": "data/tiles/img/killer-croc_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "killer-croc",
+            "origins": "corebox"
+        },
+		{
+            "id": "killer-croc-hush",
+            "name": {
+                "fr": "Killer Croc",
+                "en": "Killer Croc"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 6,
+            "auto-defense": 3,
+            "movement": 3,
+            "size": 2,
+            "menace": 2,
+            "melee" : {
+				"0": {
+					"dice": ["yellowreroll","blackreroll"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["yellow","yellowreroll"],
+					"action-multiplyer" : 4
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "mobility",
+						"value": 3
+					},
+				"1": {
+						"type": "parkour",
+						"value": 1
+					},
+				"2": {
+						"type": "berserk",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/killer-croc-hush.png",
+            "imageHD": "data/tiles/img/killer-croc-hush_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "killer-croc-hush",
+            "origins": "corebox"
+        },
+		{
+            "id": "mr-freeze",
+            "name": {
+                "fr": "Mr. Freeze",
+                "en": "Mr. Freeze"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 4,
+            "auto-defense": 3,
+            "movement": 2,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["white","red"],
+					"action-multiplyer" : 1
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["white","red"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "grenade",
+						"value": 2
+					},
+				"1": {
+						"type": "frost",
+						"value": 1
+					},
+				"2": {
+						"type": "blast",
+						"value": 2
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/mr-freeze.png",
+            "imageHD": "data/tiles/img/mr-freeze_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "mr-freeze",
+            "origins": "corebox"
+        },
+		{
+            "id": "scarecrow",
+            "name": {
+                "fr": "Scarecrow",
+                "en": "Scarecrow"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 4,
+            "auto-defense": 2,
+            "movement": 2,
+            "size": 1,
+            "menace": 3,
+            "trait": "gas_immunity",
+            "melee" : {
+				"0": {
+					"dice": ["white","white"],
+					"action-multiplyer" : 1
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["white","black"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "misfortune",
+						"value": 2
+					},
+				"1": {
+						"type": "horror",
+						"value": 2
+					},
+				"2": {
+						"type": "protected",
+						"value": 2
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/scarecrow.png",
+            "imageHD": "data/tiles/img/scarecrow_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "scarecrow",
+            "origins": "corebox"
+        },
+		{
+            "id": "scarecrow-finch",
+            "name": {
+                "fr": "Scarecrow",
+                "en": "Scarecrow"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 4,
+            "auto-defense": 2,
+            "movement": 2,
+            "size": 1,
+            "menace": 3,
+            "trait": "gas_immunity",
+            "melee" : {
+				"0": {
+					"dice": ["white","white"],
+					"action-multiplyer" : 1
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["white","black"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "misfortune",
+						"value": 2
+					},
+				"1": {
+						"type": "horror",
+						"value": 2
+					},
+				"2": {
+						"type": "protected",
+						"value": 2
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/scarecrow-finch.png",
+            "imageHD": "data/tiles/img/scarecrow-finch_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "scarecrow-finch",
+            "origins": "corebox"
+        },
+		{
+            "id": "black-mask",
+            "name": {
+                "fr": "Black Mask",
+                "en": "Black Mask"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 4,
+            "auto-defense": 2,
+            "movement": 2,
+            "size": 1,
+            "menace": 2,
+            "melee" : {
+				"0": {
+					"dice": ["yellow","red"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["white","red"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "martial_arts",
+						"value": 1
+					},
+				"1": {
+						"type": "support",
+						"value": 2
+					},
+				"2": {
+						"type": "tactician",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/black-mask.png",
+            "imageHD": "data/tiles/img/black-mask_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "black-mask",
+            "origins": "corebox"
+        },
+		{
+            "id": "deadshot",
+            "name": {
+                "fr": "Deadshot",
+                "en": "Deadshot"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 5,
+            "auto-defense": 2,
+            "movement": 2,
+            "size": 1,
+            "menace": 1,
+            "ranged": {
+				"0": {
+					"dice": ["yellowreroll","orangereroll","redreroll"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["yellow","yellowreroll"],
+					"action-multiplyer" : 3
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["black"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "nerves_steel",
+						"value": 3
+					},
+				"1": {
+						"type": "marksman",
+						"value": 1
+					},
+				"2": {
+						"type": "retaliation",
+						"value": 2
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/deadshot.png",
+            "imageHD": "data/tiles/img/deadshot_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "deadshot",
+            "origins": "corebox"
+        },
+		{
+            "id": "deathstroke",
+            "name": {
+                "fr": "Deathstroke",
+                "en": "Deathstroke"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 5,
+            "auto-defense": 3,
+            "movement": 3,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["orangereroll","orangereroll"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["white"],
+					"action-multiplyer" : 4
+				}
+			},
+            "ranged": {
+				"0": {
+					"dice": ["yellow","red"],
+					"action-multiplyer" : 1
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["black"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "martial_arts",
+						"value": 1
+					},
+				"1": {
+						"type": "parkour",
+						"value": 1
+					},
+				"2": {
+						"type": "counterattack",
+						"value": 2
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/deathstroke.png",
+            "imageHD": "data/tiles/img/deathstroke_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "deathstroke",
+            "origins": "corebox"
+        },
+		{
+            "id": "doctor-death",
+            "name": {
+                "fr": "Doctor Death",
+                "en": "Doctor Death"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 4,
+            "auto-defense": 3,
+            "movement": 2,
+            "size": 2,
+            "menace": 2,
+            "melee" : {
+				"0": {
+					"dice": ["white","black"],
+					"action-multiplyer" : 1
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["white","black"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "regeneration",
+						"value": 2
+					},
+				"1": {
+						"type": "misfortune",
+						"value": 2
+					},
+				"2": {
+						"type": "horror",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/doctor-death.png",
+            "imageHD": "data/tiles/img/doctor-death_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "doctor-death",
+            "origins": "corebox"
+        },
+		{
+            "id": "hush",
+            "name": {
+                "fr": "Hush",
+                "en": "Hush"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 5,
+            "auto-defense": 2,
+            "movement": 2,
+            "size": 1,
+            "menace": 1,
+            "ranged": {
+				"0": {
+					"dice": ["white","yellow"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["yellow"],
+					"action-multiplyer" : 4
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["orange","red"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["orange","red"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "marksman",
+						"value": 2
+					},
+				"1": {
+						"type": "retaliation",
+						"value": 1
+					},
+				"2": {
+						"type": "nerves_steel",
+						"value": 2
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/hush.png",
+            "imageHD": "data/tiles/img/hush_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "hush",
+            "origins": "corebox"
+        },
+		{
+            "id": "jason-todd-hush",
+            "name": {
+                "fr": "Jason Todd",
+                "en": "Jason Todd"
+            },
+            "subtitle": {
+                "fr": "HUSH",
+                "en": "HUSH"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 5,
+            "auto-defense": 2,
+            "movement": 2,
+            "size": 1,
+            "menace": 1,
+            "ranged": {
+				"0": {
+					"dice": ["red","red"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 3
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "retaliation",
+						"value": 3
+					},
+				"1": {
+						"type": "parkour",
+						"value": 1
+					},
+				"2": {
+						"type": "nerves_steel",
+						"value": 3
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/jason-todd-hush.png",
+            "imageHD": "data/tiles/img/jason-todd-hush_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "jason-todd-hush",
+            "origins": "corebox"
+        },
+		{
+            "id": "manbat",
+            "name": {
+                "fr": "Man bat",
+                "en": "Man bat"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 5,
+            "auto-defense": 2,
+            "movement": 4,
+            "size": 2,
+            "menace": 2,
+            "trait": "fly",
+            "melee" : {
+				"0": {
+					"dice": ["orange","red"],
+					"action-multiplyer" : 1
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["yellow","yellow"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "berserk",
+						"value": 1
+					},
+				"1": {
+						"type": "horror",
+						"value": 1
+					},
+				"2": {
+						"type": "untouchable",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/manbat.png",
+            "imageHD": "data/tiles/img/manbat_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "manbat",
+            "origins": "corebox"
+        },
+		{
+            "id": "rasalghul",
+            "name": {
+                "fr": "Ra's al Ghul",
+                "en": "Ra's al Ghul"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 5,
+            "auto-defense": 2,
+            "movement": 3,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["yellow","yellow","yellow"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["yellow"],
+					"action-multiplyer" : 3
+				}
+			},
+            "ranged": {
+				"0": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["yellow","yellow"],
+					"action-multiplyer" : 3
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "martial_arts",
+						"value": 2
+					},
+				"1": {
+						"type": "support",
+						"value": 1
+					},
+				"2": {
+						"type": "counterattack",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/rasalghul.png",
+            "imageHD": "data/tiles/img/rasalghul_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "rasalghul",
+            "origins": "corebox"
+        },
+		{
+            "id": "solomon-grundy",
+            "name": {
+                "fr": "Solomon Grundy",
+                "en": "Solomon Grundy"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 8,
+            "auto-defense": 1,
+            "movement": 2,
+            "size": 2,
+            "menace": 2,
+            "melee" : {
+				"0": {
+					"dice": ["blackreroll","blackreroll"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "berserk",
+						"value": 2
+					},
+				"1": {
+						"type": "regeneration",
+						"value": 2
+					},
+				"2": {
+						"type": "wall_breaker",
+						"value": 2
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/solomon-grundy.png",
+            "imageHD": "data/tiles/img/solomon-grundy_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "solomon-grundy",
+            "origins": "corebox"
+        },
+		{
+            "id": "talon",
+            "name": {
+                "fr": "Talon",
+                "en": "Talon"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 5,
+            "auto-defense": 2,
+            "movement": 3,
+            "size": 1,
+            "menace": 1,
+            "trait": "none",
+            "melee" : {
+				"0": {
+					"dice": ["whitereroll","whitereroll","whitereroll","whitereroll"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["red"],
+					"action-multiplyer" : 2
+				}
+			},
+            "ranged": {
+				"0": {
+					"dice": ["yellow","yellow","yellow"],
+					"action-multiplyer" : 1
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "parkour",
+						"value": 2
+					},
+				"1": {
+						"type": "martial_arts",
+						"value": 1
+					},
+				"2": {
+						"type": "regeneration",
+						"value": 2
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/talon.png",
+            "imageHD": "data/tiles/img/talon_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "talon",
+            "origins": "corebox"
+        },
+		{
+            "id": "owls-handgun",
+            "name": {
+                "fr": "Owls",
+                "en": "Owls"
+            },
+            "subtitle": {
+                "fr": "with HANDGUN",
+                "en": "with HANDGUN"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 1,
+            "auto-defense": 2,
+            "movement": 2,
+            "size": 1,
+            "menace": 1,
+            "ranged": {
+				"0": {
+					"dice": ["yellow","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "protected",
+						"value": 2
+					},
+				"1": {
+						"type": "marksman",
+						"value": 1
+					}					
+				},
+            "reinforcement": 2,
+            "rank": "elite",
+            "image": "data/tiles/img/owls-handgun.png",
+            "imageHD": "data/tiles/img/owls-handgun_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "owls-handgun",
+            "origins": "corebox"
+        },
+		{
+            "id": "owls-katana",
+            "name": {
+                "fr": "Owls",
+                "en": "Owls"
+            },
+            "subtitle": {
+                "fr": "with KATANA",
+                "en": "with KATANA"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 1,
+            "auto-defense": 1,
+            "movement": 3,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["white","yellow"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "martial_arts",
+						"value": 1
+					}					
+				},
+            "reinforcement": 1,
+            "rank": "henchman",
+            "image": "data/tiles/img/owls-katana.png",
+            "imageHD": "data/tiles/img/owls-katana_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "owls-katana",
+            "origins": "corebox"
+        },		
+		{
+            "id": "red-hood",
+            "name": {
+                "fr": "Red Hood",
+                "en": "Red Hood"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 5,
+            "auto-defense": 2,
+            "movement": 3,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["whitereroll","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "ranged": {
+				"0": {
+					"dice": ["whitereroll","whitereroll","whitereroll"],
+					"action-multiplyer" : 1
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["black"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "burst",
+						"value": 2
+					},
+				"1": {
+						"type": "luck",
+						"value": 1
+					},
+				"2": {
+						"type": "tactician",
+						"value": 2
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/red-hood.png",
+            "imageHD": "data/tiles/img/red-hood_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "red-hood",
+            "origins": "corebox"
+        },
+		{
+            "id": "red-hood-gang",
+            "name": {
+                "fr": "Red Hood's gang",
+                "en": "Red Hood's gang"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 1,
+            "auto-defense": 1,
+            "movement": 3,
+            "size": 1,
+            "menace": 1,
+            "ranged": {
+				"0": {
+					"dice": ["red"],
+					"action-multiplyer" : 1
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["yellow","yellow","yellow"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "marksman",
+						"value": 1
+					}				
+				},
+            "reinforcement": 1,
+            "rank": "henchman",
+            "image": "data/tiles/img/red-hood-gang.png",
+            "imageHD": "data/tiles/img/red-hood-gang_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "red-hood-gang",
+            "origins": "corebox"
+        },
+		{
+            "id": "mr-bloom",
+            "name": {
+                "fr": "Mr. Bloom",
+                "en": "Mr. Bloom"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 5,
+            "auto-defense": 2,
+            "movement": 3,
+            "size": 3,
+            "menace": 2,
+            "melee" : {
+				"0": {
+					"dice": ["orangereroll","redreroll"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["yellow","yellow"],
+					"action-multiplyer" : 4
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["blackreroll"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "horror",
+						"value": 2
+					},
+				"1": {
+						"type": "reach",
+						"value": 1
+					},
+				"2": {
+						"type": "regeneration",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/mr-bloom.png",
+            "imageHD": "data/tiles/img/mr-bloom_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "mr-bloom",
+            "origins": "corebox"
+        },
+		{
+            "id": "bloom-gang",
+            "name": {
+                "fr": "Bloom's gang",
+                "en": "Bloom's gang"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 1,
+            "auto-defense": 1,
+            "movement": 2,
+            "size": 1,
+            "menace": 2,
+            "melee" : {
+				"0": {
+					"dice": ["whitereroll","whitereroll"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "horror",
+						"value": 1
+					}					
+				},
+            "reinforcement": 1,
+            "rank": "henchman",
+            "image": "data/tiles/img/bloom-gang.png",
+            "imageHD": "data/tiles/img/bloom-gang_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "bloom-gang",
+            "origins": "corebox"
+        },
+		{
+            "id": "firefly",
+            "name": {
+                "fr": "Firefly",
+                "en": "Firefly"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 4,
+            "auto-defense": 2,
+            "movement": 5,
+            "size": 1,
+            "menace": 1,
+            "trait": "fly",
+            "melee" : {
+				"0": {
+					"dice": ["yellow","yellow"],
+					"action-multiplyer" : 1
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "flame",
+						"value": 1
+					},
+				"1": {
+						"type": "blast",
+						"value": 2
+					},
+				"2": {
+						"type": "munitions_specialist",
+						"value": 2
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/firefly.png",
+            "imageHD": "data/tiles/img/firefly_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "firefly",
+            "origins": "corebox"
+        },
+		{
+            "id": "killer-moth",
+            "name": {
+                "fr": "Killer Moth",
+                "en": "Killer Moth"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 4,
+            "auto-defense": 2,
+            "movement": 2,
+            "size": 1,
+            "menace": 1,
+            "trait": "gas_immunity",
+            "ranged": {
+				"0": {
+					"dice": ["yellow","yellow"],
+					"action-multiplyer" : 1
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "toxic_gas",
+						"value": 1
+					},
+				"1": {
+						"type": "blast",
+						"value": 2
+					},
+				"2": {
+						"type": "poison",
+						"value": 2
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/killer-moth.png",
+            "imageHD": "data/tiles/img/killer-moth_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "killer-moth",
+            "origins": "corebox"
+        },
+		{
+            "id": "orphan-david-cain",
+            "name": {
+                "fr": "Orphan",
+                "en": "Orphan"
+            },
+            "subtitle": {
+                "fr": "(DAVID CAIN)",
+                "en": "(DAVID CAIN)"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 5,
+            "auto-defense": 2,
+            "movement": 2,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["red","red"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 3
+				}
+            },
+            "manipulation": {
+				"0": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "martial_arts",
+						"value": 1
+					},
+				"1": {
+						"type": "counterattack",
+						"value": 3
+					},
+				"2": {
+						"type": "body_guard",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/orphan-david-cain.png",
+            "imageHD": "data/tiles/img/orphan-david-cain_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "orphan-david-cain",
+            "origins": "corebox"
+        },
+		{
+            "id": "ratcatcher",
+            "name": {
+                "fr": "Ratcatcher",
+                "en": "Ratcatcher"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 5,
+            "auto-defense": 2,
+            "movement": 2,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+             "thought": {
+				"0": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "horror",
+						"value": 1
+					},
+				"1": {
+						"type": "luck",
+						"value": 2
+					},
+				"2": {
+						"type": "mobility",
+						"value": 2
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/ratcatcher.png",
+            "imageHD": "data/tiles/img/ratcatcher_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "ratcatcher",
+            "origins": "corebox"
+        },
+		{
+            "id": "tusk",
+            "name": {
+                "fr": "Tusk",
+                "en": "Tusk"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 6,
+            "auto-defense": 3,
+            "movement": 2,
+            "size": 2,
+            "menace": 2,
+            "melee" : {
+				"0": {
+					"dice": ["orange","blackreroll"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["black"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "wall_breaker",
+						"value": 2
+					},
+				"1": {
+						"type": "berserk",
+						"value": 1
+					},
+				"2": {
+						"type": "counterattack",
+						"value": 3
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/tusk.png",
+            "imageHD": "data/tiles/img/tusk_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "tusk",
+            "origins": "corebox"
+        },
+		{
+            "id": "wrath",
+            "name": {
+                "fr": "Wrath",
+                "en": "Wrath"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 5,
+            "auto-defense": 2,
+            "movement": 2,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["orangereroll","red"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 3
+				}
+			},
+            "ranged": {
+				"0": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["yellow","yellow"],
+					"action-multiplyer" : 3
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["redreroll"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["yellowreroll","red"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "munitions_specialist",
+						"value": 2
+					},
+				"1": {
+						"type": "marksman",
+						"value": 1
+					},
+				"2": {
+						"type": "nerves_steel",
+						"value": 2
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/wrath.png",
+            "imageHD": "data/tiles/img/wrath_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "wrath",
+            "origins": "corebox"
+        },
+		{
+            "id": "azrael-st-dumas-angel",
+            "name": {
+                "fr": "Azrael",
+                "en": "Azrael"
+            },
+            "subtitle": {
+                "fr": "(ST DUMAS ANGEL)",
+                "en": "(ST DUMAS ANGEL)"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 1,
+            "auto-defense": 3,
+            "movement": 3,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["red"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "martial_arts",
+						"value": 1
+					},
+				"1": {
+						"type": "counterattack",
+						"value": 1
+					},
+				"2": {
+						"type": "parkour",
+						"value": 1
+					}					
+				},
+            "image": "data/tiles/img/azrael-st-dumas-angel.png",
+            "imageHD": "data/tiles/img/azrael-st-dumas-angel_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "azrael-st-dumas-angel",
+            "origins": "corebox"
+        },		
+		{
+            "id": "crazy-inmates",
+            "name": {
+                "fr": "Crazy inmates",
+                "en": "Crazy inmates"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 1,
+            "auto-defense": 1,
+            "movement": 3,
+            "size": 1,
+            "menace": 2,
+            "melee" : {
+				"0": {
+					"dice": ["whitereroll","whitereroll"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["black"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "nerves_steel",
+						"value": 4
+					}				
+				},
+            "reinforcement": 1,
+            "rank": "henchman",
+            "image": "data/tiles/img/crazy-inmates.png",
+            "imageHD": "data/tiles/img/crazy-inmates_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "crazy-inmates",
+            "origins": "arkham-asylum"
+        },
+		{
+            "id": "hugo-strange",
+            "name": {
+                "fr": "Hugo Strange",
+                "en": "Hugo Strange"
+            },
+            "subtitle": {
+                "fr": "template",
+                "en": "template"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 4,
+            "auto-defense": 2,
+            "movement": 2,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["yellow","orange","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "investigation",
+						"value": 1
+					},
+				"1": {
+						"type": "tactician",
+						"value": 2
+					},
+				"2": {
+						"type": "support",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/hugo-strange.png",
+            "imageHD": "data/tiles/img/hugo-strange_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "hugo-strange",
+            "origins": "arkham-asylum"
+        },
+		{
+            "id": "jarvis-thetch",
+            "name": {
+                "fr": "Jarvis Thetch",
+                "en": "Jarvis Thetch"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 4,
+            "auto-defense": 2,
+            "movement": 3,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["white","white"],
+					"action-multiplyer" : 1
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["orangereroll","orangereroll"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "untouchable",
+						"value": 1
+					},
+				"1": {
+						"type": "elusive",
+						"value": 1
+					},
+				"2": {
+						"type": "support",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/jarvis-thetch.png",
+            "imageHD": "data/tiles/img/jarvis-thetch_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "jarvis-thetch",
+            "origins": "arkham-asylum"
+        },
+		{
+            "id": "joker-clayface",
+            "name": {
+                "fr": "The Joker",
+                "en": "The Joker"
+            },
+            "subtitle": {
+                "fr": "(CLAYFACE)",
+                "en": "(CLAYFACE)"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 7,
+            "auto-defense": 3,
+            "movement": 3,
+            "size": 3,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["black","blackreroll"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 2
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "wall_breaker",
+						"value": 1
+					},
+				"1": {
+						"type": "parkour",
+						"value": 3
+					},
+				"2": {
+						"type": "circular_strike",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/joker-clayface.png",
+            "imageHD": "data/tiles/img/joker-clayface_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "joker-clayface",
+            "origins": "arkham-asylum"
+        },
+		{
+            "id": "joker-mr-joe",
+            "name": {
+                "fr": "The Joker",
+                "en": "The Joker"
+            },
+            "subtitle": {
+                "fr": "(Mr. JOE)",
+                "en": "(Mr. JOE)"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 5,
+            "auto-defense": 2,
+            "movement": 3,
+            "size": 1,
+            "menace": 3,
+            "melee" : {
+				"0": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["white","white"],
+					"action-multiplyer" : 2
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["blackreroll"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "sneak",
+						"value": 1
+					},
+				"1": {
+						"type": "misfortune",
+						"value": 1
+					},
+				"2": {
+						"type": "support",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/joker-mr-joe.png",
+            "imageHD": "data/tiles/img/joker-mr-joe_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "joker-mr-joe",
+            "origins": "arkham-asylum"
+        },
+		{
+            "id": "joker-gang-handgun",
+            "name": {
+                "fr": "Joker's gang",
+                "en": "Joker's gang"
+            },
+            "subtitle": {
+                "fr": "with HANDGUN",
+                "en": "with HANDGUN"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 1,
+            "auto-defense": 2,
+            "movement": 2,
+            "size": 1,
+            "menace": 1,
+            "ranged": {
+				"0": {
+					"dice": ["white","yellowreroll"],
+					"action-multiplyer" : 2
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["white","whitereroll"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "nerves_steel",
+						"value": 1
+					},
+				"1": {
+						"type": "untouchable",
+						"value": 1
+					}					
+				},
+            "reinforcement": 2,
+            "rank": "elite",
+            "image": "data/tiles/img/joker-gang-handgun.png",
+            "imageHD": "data/tiles/img/joker-gang-handgun_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "joker-gang-handgun",
+            "origins": "arkham-asylum"
+        },		
+		{
+            "id": "joker-gang-hammer",
+            "name": {
+                "fr": "Joker's gang",
+                "en": "Joker's gang"
+            },
+            "subtitle": {
+                "fr": "with HAMMER",
+                "en": "with HAMMER"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 1,
+            "auto-defense": 1,
+            "movement": 3,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["whitereroll","whitereroll"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["white","white"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "counterattack",
+						"value": 2
+					}					
+				},
+            "reinforcement": 1,
+            "rank": "henchman",
+            "image": "data/tiles/img/joker-gang-hammer.png",
+            "imageHD": "data/tiles/img/joker-gang-hammer_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "joker-gang-hammer",
+            "origins": "arkham-asylum"
+        },
+		{
+            "id": "prof-pyg",
+            "name": {
+                "fr": "Prof. PYG",
+                "en": "Prof. PYG"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 4,
+            "auto-defense": 2,
+            "movement": 2,
+            "size": 1,
+            "menace": 2,
+            "melee" : {
+				"0": {
+					"dice": ["yellow","yellow","yellow"],
+					"action-multiplyer" : 1
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["blackreroll"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "sneak",
+						"value": 2
+					},
+				"1": {
+						"type": "horror",
+						"value": 1
+					},
+				"2": {
+						"type": "tactician",
+						"value": 2
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/prof-pyg.png",
+            "imageHD": "data/tiles/img/prof-pyg_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "prof-pyg",
+            "origins": "arkham-asylum"
+        },		
+		{
+            "id": "tweedledee-tweedledum",
+            "name": {
+                "fr": "Tweedledee & Tweedledum",
+                "en": "Tweedledee & Tweedledum"
+            },
+            "color": "gray",
+            "tile-type": "double",
+            "life-points": 5,
+            "auto-defense": 2,
+            "movement": 2,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["red","red"],
+					"action-multiplyer" : 1
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "counterattack",
+						"value": 2
+					},
+				"1": {
+						"type": "body_guard",
+						"value": 2
+					},
+				"2": {
+						"type": "circular_strike",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/tweedledee-tweedledum.png",
+            "imageHD": "data/tiles/img/tweedledee-tweedledum_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "tweedledee-tweedledum",
+            "origins": "arkham-asylum"
+        },		
+		{
+            "id": "zsasz",
+            "name": {
+                "fr": "Zsasz",
+                "en": "Zsasz"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 5,
+            "auto-defense": 2,
+            "movement": 3,
+            "size": 1,
+            "menace": 2,
+            "melee" : {
+				"0": {
+					"dice": ["yellowreroll","yellowreroll","yellowreroll"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["yellow","yellow"],
+					"action-multiplyer" : 4
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "sneak",
+						"value": 2
+					},
+				"1": {
+						"type": "misfortune",
+						"value": 2
+					},
+				"2": {
+						"type": "berserk",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/zsasz.png",
+            "imageHD": "data/tiles/img/zsasz_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "zsasz",
+            "origins": "arkham-asylum"
+        },
+		{
+            "id": "batman-japan",
+            "name": {
+                "fr": "Batman of Japan",
+                "en": "Batman of Japan"
+            },
+            "color": "blue",
+            "tile-type": "single",
+            "life-points": 5,
+            "auto-defense": 2,
+            "movement": 3,
+            "size": 1,
+            "menace": 1,
+            "trait": "none",
+            "melee" : {
+				"0": {
+					"dice": ["orangereroll","redreroll"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["yellowreroll"],
+					"action-multiplyer" : 3
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["yellowreroll","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "martial_arts",
+						"value": 2
+					},
+				"1": {
+						"type": "parkour",
+						"value": 1
+					},
+				"2": {
+						"type": "hacking",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/batman-japan.png",
+            "imageHD": "data/tiles/img/batman-japan_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "batman-japan",
+            "origins": "batman-inc"
+        },
+		{
+            "id": "batman-moscow",
+            "name": {
+                "fr": "Batman of Moscow",
+                "en": "Batman of Moscow"
+            },
+            "color": "blue",
+            "tile-type": "single",
+            "life-points": 5,
+            "auto-defense": 3,
+            "movement": 3,
+            "size": 1,
+            "menace": 1,
+            "trait": "none",
+            "melee" : {
+				"0": {
+					"dice": ["yellowreroll","red"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["white"],
+					"action-multiplyer" : 2
+				}
+			},
+            "ranged": {
+				"0": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 3
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["yellow","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["white","yellowreroll"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "martial_arts",
+						"value": 1
+					},
+				"1": {
+						"type": "nerves_steel",
+						"value": 1
+					},
+				"2": {
+						"type": "munitions_specialist",
+						"value": 2
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/batman-moscow.png",
+            "imageHD": "data/tiles/img/batman-moscow_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "batman-moscow",
+            "origins": "batman-inc"
+        },		
+		{
+            "id": "dark-ranger",
+            "name": {
+                "fr": "Dark Ranger",
+                "en": "Dark Ranger"
+            },
+            "color": "blue",
+            "tile-type": "single",
+            "life-points": 4,
+            "auto-defense": 2,
+            "movement": 5,
+            "size": 1,
+            "menace": 1,
+            "trait": "fly",
+            "melee" : {
+				"0": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "ranged": {
+				"0": {
+					"dice": ["white","red"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["yellow","yellow"],
+					"action-multiplyer" : 2
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["yellowreroll","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "martial_arts",
+						"value": 1
+					},
+				"1": {
+						"type": "electricity",
+						"value": 1
+					},
+				"2": {
+						"type": "investigation",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/dark-ranger.png",
+            "imageHD": "data/tiles/img/dark-ranger_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "dark-ranger",
+            "origins": "batman-inc"
+        },
+		{
+            "id": "el-gaucho",
+            "name": {
+                "fr": "El Gaucho",
+                "en": "El Gaucho"
+            },
+            "color": "blue",
+            "tile-type": "single",
+            "life-points": 5,
+            "auto-defense": 3,
+            "movement": 3,
+            "size": 1,
+            "menace": 1,
+            "trait": "none",
+            "melee" : {
+				"0": {
+					"dice": ["whitereroll","red"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["yellow"],
+					"action-multiplyer" : 3
+				}
+			},
+            "ranged": {
+				"0": {
+					"dice": ["yellow","yellow"],
+					"action-multiplyer" : 2
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["orange","orangereroll"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "martial_arts",
+						"value": 1
+					},
+				"1": {
+						"type": "counterattack",
+						"value": 2
+					},
+				"2": {
+						"type": "munitions_specialist",
+						"value": 2
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/el-gaucho.png",
+            "imageHD": "data/tiles/img/el-gaucho_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "el-gaucho",
+            "origins": "batman-inc"
+        },	
+		{
+            "id": "knight",
+            "name": {
+                "fr": "The Knight",
+                "en": "The Knight"
+            },
+            "color": "blue",
+            "tile-type": "single",
+            "life-points": 5,
+            "auto-defense": 3,
+            "movement": 3,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["whitereroll","red"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["yellow"],
+					"action-multiplyer" : 2
+				}
+			},
+            "ranged": {
+				"0": {
+					"dice": ["yellow","yellow"],
+					"action-multiplyer" : 2
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["whitereroll","red"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "martial_arts",
+						"value": 1
+					},
+				"1": {
+						"type": "investigation",
+						"value": 1
+					},
+				"2": {
+						"type": "parkour",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/knight.png",
+            "imageHD": "data/tiles/img/knight_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "knight",
+            "origins": "batman-inc"
+        },
+		{
+            "id": "nightrunner",
+            "name": {
+                "fr": "Nightrunner",
+                "en": "Nightrunner"
+            },
+            "color": "blue",
+            "tile-type": "single",
+            "life-points": 4,
+            "auto-defense": 2,
+            "movement": 4,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["orangereroll","orangereroll"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["orangereroll"],
+					"action-multiplyer" : 3
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "elusive",
+						"value": 1
+					},
+				"1": {
+						"type": "parkour",
+						"value": 4
+					},
+				"2": {
+						"type": "mobility",
+						"value": 2
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/nightrunner.png",
+            "imageHD": "data/tiles/img/nightrunner_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "nightrunner",
+            "origins": "batman-inc"
+        },
+		{
+            "id": "chief-man-of-bats",
+            "name": {
+                "fr": "CHIEF  MAN-of-BATS",
+                "en": "CHIEF  MAN-of-BATS"
+            },
+            "color": "blue",
+            "tile-type": "single",
+            "life-points": 5,
+            "auto-defense": 2,
+            "movement": 3,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 2
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["whitereroll","red"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "support",
+						"value": 1
+					},
+				"1": {
+						"type": "martial_arts",
+						"value": 1
+					},
+				"2": {
+						"type": "regeneration",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/chief-man-of-bats.png",
+            "imageHD": "data/tiles/img/chief-man-of-bats_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "chief-man-of-bats",
+            "origins": "batman-inc"
+        },		
+		{
+            "id": "raven-red",
+            "name": {
+                "fr": "Raven Red",
+                "en": "Raven Red"
+            },
+            "color": "blue",
+            "tile-type": "single",
+            "life-points": 4,
+            "auto-defense": 2,
+            "movement": 3,
+            "size": 1,
+            "menace": 1,
+            "trait": "none",
+            "melee" : {
+				"0": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 2
+				}
+			},
+            "ranged": {
+				"0": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["yellow","yellowreroll"],
+					"action-multiplyer" : 2
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["whitereroll","yellow"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["whitereroll","yellow"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "marksman",
+						"value": 1
+					},
+				"1": {
+						"type": "nerves_steel",
+						"value": 2
+					},
+				"2": {
+						"type": "parkour",
+						"value": 2
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/raven-red.png",
+            "imageHD": "data/tiles/img/raven-red_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "raven-red",
+            "origins": "batman-inc"
+        },		
+		{
+            "id": "heretic",
+            "name": {
+                "fr": "The Heretic",
+                "en": "The Heretic"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 6,
+            "auto-defense": 3,
+            "movement": 2,
+            "size": 1,
+            "menace": 2,
+            "melee" : {
+				"0": {
+					"dice": ["red","blackreroll"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "martial_arts",
+						"value": 2
+					},
+				"1": {
+						"type": "circular_strike",
+						"value": 3
+					},
+				"2": {
+						"type": "counterattack",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/heretic.png",
+            "imageHD": "data/tiles/img/heretic_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "heretic",
+            "origins": "league-of-assassins"
+        },
+		{
+            "id": "lady-shiva",
+            "name": {
+                "fr": "Lady Shiva",
+                "en": "Lady Shiva"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 5,
+            "auto-defense": 2,
+            "movement": 3,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["whitereroll","whitereroll","whitereroll"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["yellow","yellow"],
+					"action-multiplyer" : 3
+				}
+			},
+            "ranged": {
+				"0": {
+					"dice": ["white","yellow"],
+					"action-multiplyer" : 2
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["white","yellow"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "parkour",
+						"value": 2
+					},
+				"1": {
+						"type": "martial_arts",
+						"value": 1
+					},
+				"2": {
+						"type": "counterattack",
+						"value": 3
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/lady-shiva.png",
+            "imageHD": "data/tiles/img/lady-shiva_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "lady-shiva",
+            "origins": "league-of-assassins"
+        },
+		{
+            "id": "rasalghul-demons-head",
+            "name": {
+                "fr": "Ra's al Ghul",
+                "en": "Ra's al Ghul"
+            },
+            "subtitle": {
+                "fr": "(DEMON'S HEAD)",
+                "en": "(DEMON'S HEAD)"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 5,
+            "auto-defense": 2,
+            "movement": 3,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["white"],
+					"action-multiplyer" : 2
+				}
+			},
+            "ranged": {
+				"0": {
+					"dice": ["yellow","orange"],
+					"action-multiplyer" : 2
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["yellow","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "munitions_specialist",
+						"value": 1
+					},
+				"1": {
+						"type": "regeneration",
+						"value": 1
+					},
+				"2": {
+						"type": "martial_arts",
+						"value": 2
+					},
+				"3": {
+						"type": "counterattack",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/rasalghul-demons-head.png",
+            "imageHD": "data/tiles/img/rasalghul-demons-head_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "rasalghul-demons-head",
+            "origins": "league-of-assassins"
+        },		
+		{
+            "id": "taliaalghul",
+            "name": {
+                "fr": "Talia al Ghul",
+                "en": "Talia al Ghul"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 5,
+            "auto-defense": 2,
+            "movement": 3,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["orange","red"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["yellow","yellow"],
+					"action-multiplyer" : 2
+				}
+			},
+            "ranged": {
+				"0": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 2
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["yellow","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "munitions_specialist",
+						"value": 1
+					},
+				"1": {
+						"type": "martial_arts",
+						"value": 1
+					},
+				"2": {
+						"type": "marksman",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/taliaalghul.png",
+            "imageHD": "data/tiles/img/taliaalghul_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "taliaalghul",
+            "origins": "league-of-assassins"
+        },
+		{
+            "id": "assassins",
+            "name": {
+                "fr": "Assassins",
+                "en": "Assassins"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 1,
+            "auto-defense": 1,
+            "movement": 3,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["red"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["yellow"],
+					"action-multiplyer" : 2
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["white","white"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "parkour",
+						"value": 1
+					},
+				"1": {
+						"type": "martial_arts",
+						"value": 2
+					},
+				"2": {
+						"type": "untouchable",
+						"value": 1
+					}					
+				},
+            "reinforcement": 2,
+            "rank": "elite",
+            "image": "data/tiles/img/assassins.png",
+            "imageHD": "data/tiles/img/assassins_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "assassins",
+            "origins": "league-of-assassins"
+        },
+		{
+            "id": "assassins-rifle",
+            "name": {
+                "fr": "Assassins",
+                "en": "Assassins"
+            },
+            "subtitle": {
+                "fr": "with RIFLE",
+                "en": "with RIFLE"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 1,
+            "auto-defense": 1,
+            "movement": 2,
+            "size": 1,
+            "menace": 1,
+            "ranged": {
+				"0": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 3
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["white","yellow"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "munitions_specialist",
+						"value": 1
+					}					
+				},
+            "reinforcement": 1,
+            "rank": "henchman",
+            "image": "data/tiles/img/assassins-rifle.png",
+            "imageHD": "data/tiles/img/assassins-rifle_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "assassins-rifle",
+            "origins": "league-of-assassins"
+        },		
+		{
+            "id": "manbat-commando-proto",
+            "name": {
+                "fr": "Man-Bat",
+                "en": "Man-Bat"
+            },
+            "subtitle": {
+                "fr": "COMMANDO PROTO",
+                "en": "COMMANDO PROTO"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 1,
+            "auto-defense": 2,
+            "movement": 3,
+            "size": 2,
+            "menace": 2,
+            "trait": "fly",
+            "melee" : {
+				"0": {
+					"dice": ["yellow","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["white","yellow"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "martial_arts",
+						"value": 1
+					},
+				"1": {
+						"type": "horror",
+						"value": 1
+					}					
+				},
+            "reinforcement": 2,
+            "image": "data/tiles/img/manbat-commando-proto.png",
+            "imageHD": "data/tiles/img/manbat-commando-proto_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "manbat-commando-proto",
+            "origins": "league-of-assassins"
+        },		
+		{
+            "id": "manbat-commando-ultra",
+            "name": {
+                "fr": "Man-Bat",
+                "en": "Man-Bat"
+            },
+            "subtitle": {
+                "fr": "COMMANDO ULTRA",
+                "en": "COMMANDO ULTRA"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 1,
+            "auto-defense": 2,
+            "movement": 4,
+            "size": 2,
+            "menace": 2,
+            "trait": "fly",
+            "melee" : {
+				"0": {
+					"dice": ["white","yellow","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["whitereroll","yellowreroll"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "martial_arts",
+						"value": 1
+					},
+				"1": {
+						"type": "horror",
+						"value": 1
+					},
+				"2": {
+						"type": "untouchable",
+						"value": 1
+					}					
+				},
+            "reinforcement": 3,
+            "image": "data/tiles/img/manbat-commando-ultra.png",
+            "imageHD": "data/tiles/img/manbat-commando-ultra_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "manbat-commando-ultra",
+            "origins": "league-of-assassins"
+        },	
+		{
+            "id": "amanda-waller",
+            "name": {
+                "fr": "Amanda Waller",
+                "en": "Amanda Waller"
+            },
+            "color": "blue",
+            "tile-type": "single",
+            "life-points": 4,
+            "auto-defense": 2,
+            "movement": 2,
+            "size": 1,
+            "menace": 1,
+            "ranged": {
+				"0": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["whitereroll","yellow"],
+					"action-multiplyer" : 2
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["yellowreroll","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["yellowreroll","red"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "protected",
+						"value": 2
+					},
+				"1": {
+						"type": "investigation",
+						"value": 1
+					},
+				"2": {
+						"type": "tactician",
+						"value": 2
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/amanda-waller.png",
+            "imageHD": "data/tiles/img/amanda-waller_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "amanda-waller",
+            "origins": "suicide-squad"
+        },
+		{
+            "id": "bronze-tiger",
+            "name": {
+                "fr": "Bronze Tiger",
+                "en": "Bronze Tiger"
+            },
+            "color": "blue",
+            "tile-type": "single",
+            "life-points": 5,
+            "auto-defense": 2,
+            "movement": 3,
+            "size": 2,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["yellow","yellow","orange"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["yellow"],
+					"action-multiplyer" : 4
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "martial_arts",
+						"value": 2
+					},
+				"1": {
+						"type": "counterattack",
+						"value": 2
+					},
+				"2": {
+						"type": "investigation",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/bronze-tiger.png",
+            "imageHD": "data/tiles/img/bronze-tiger_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "bronze-tiger",
+            "origins": "suicide-squad"
+        },
+		{
+            "id": "rick-flag",
+            "name": {
+                "fr": "Rick Flag",
+                "en": "Rick Flag"
+            },
+            "color": "blue",
+            "tile-type": "single",
+            "life-points": 5,
+            "auto-defense": 2,
+            "movement": 2,
+            "size": 1,
+            "menace": 1,
+            "ranged": {
+				"0": {
+					"dice": ["orangereroll","red"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["whitereroll","whitereroll"],
+					"action-multiplyer" : 2
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["orange","orangereroll"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["orange","orangereroll"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "munitions_specialist",
+						"value": 1
+					},
+				"1": {
+						"type": "smoke_grenade",
+						"value": 1
+					},
+				"2": {
+						"type": "grenade",
+						"value": 0
+					},
+				"3": {
+						"type": "tactician",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/rick-flag.png",
+            "imageHD": "data/tiles/img/rick-flag_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "rick-flag",
+            "origins": "suicide-squad"
+        },
+		{
+            "id": "belle-reve-guard",
+            "name": {
+                "fr": "Belle Reve's guard",
+                "en": "Belle Reve's guard"
+            },
+            "color": "blue",
+            "tile-type": "single",
+            "life-points": 1,
+            "auto-defense": 1,
+            "movement": 2,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["yellowreroll","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["whitereroll","yellow"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "shackle",
+						"value": 1
+					}					
+				},
+            "reinforcement": 1,
+            "rank": "henchman",
+            "image": "data/tiles/img/belle-reve-guard.png",
+            "imageHD": "data/tiles/img/belle-reve-guard_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "belle-reve-guard",
+            "origins": "suicide-squad"
+        },
+		{
+            "id": "deadshot-suicide-squad",
+            "name": {
+                "fr": "Deadshot",
+                "en": "Deadshot"
+            },
+            "subtitle": {
+                "fr": "SUICIDE SQUAD",
+                "en": "SUICIDE SQUAD"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 5,
+            "auto-defense": 2,
+            "movement": 2,
+            "size": 1,
+            "menace": 1,
+            "ranged": {
+				"0": {
+					"dice": ["yellowreroll","blackreroll"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["yellowreroll"],
+					"action-multiplyer" : 3
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["black"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "nerves_steel",
+						"value": 2
+					},
+				"1": {
+						"type": "marksman",
+						"value": 2
+					},
+				"2": {
+						"type": "retaliation",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/deadshot-suicide-squad.png",
+            "imageHD": "data/tiles/img/deadshot-suicide-squad_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "deadshot-suicide-squad",
+            "origins": "suicide-squad"
+        },
+		{
+            "id": "duela-dent",
+            "name": {
+                "fr": "Duela Dent",
+                "en": "Duela Dent"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 4,
+            "auto-defense": 2,
+            "movement": 3,
+            "size": 1,
+            "menace": 2,
+            "melee" : {
+				"0": {
+					"dice": ["yellow","orange","orange"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["whitereroll","yellow"],
+					"action-multiplyer" : 2
+				}
+			},
+            "ranged": {
+				"0": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["black"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["black"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "sneak",
+						"value": 1
+					},
+				"1": {
+						"type": "parkour",
+						"value": 2
+					},
+				"2": {
+						"type": "horror",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/duela-dent.png",
+            "imageHD": "data/tiles/img/duela-dent_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "duela-dent",
+            "origins": "suicide-squad"
+        },
+		{
+            "id": "black-manta",
+            "name": {
+                "fr": "Black Manta",
+                "en": "Black Manta"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 5,
+            "auto-defense": 3,
+            "movement": 2,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["orangereroll","red"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 2
+				}
+			},
+            "ranged": {
+				"0": {
+					"dice": ["orangereroll","orangereroll"],
+					"action-multiplyer" : 1
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["white","yellow"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "munitions_specialist",
+						"value": 1
+					},
+				"1": {
+						"type": "electricity",
+						"value": 1
+					},
+				"2": {
+						"type": "mobility",
+						"value": 3
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/black-manta.png",
+            "imageHD": "data/tiles/img/black-manta_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "black-manta",
+            "origins": "suicide-squad"
+        },
+		{
+            "id": "captain-boomerang",
+            "name": {
+                "fr": "Captain Boomerang",
+                "en": "Captain Boomerang"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 4,
+            "auto-defense": 2,
+            "movement": 2,
+            "size": 1,
+            "menace": 1,
+            "ranged": {
+				"0": {
+					"dice": ["whitereroll","orangereroll","orangereroll"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["yellow"],
+					"action-multiplyer" : 3
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["whitereroll","yellow"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["whitereroll","yellow"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "sneak",
+						"value": 1
+					},
+				"1": {
+						"type": "marksman",
+						"value": 1
+					},
+				"2": {
+						"type": "lock_piking",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/captain-boomerang.png",
+            "imageHD": "data/tiles/img/captain-boomerang_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "captain-boomerang",
+            "origins": "suicide-squad"
+        },
+		{
+            "id": "eldiablo",
+            "name": {
+                "fr": "El Diablo",
+                "en": "El Diablo"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 4,
+            "auto-defense": 2,
+            "movement": 2,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "ranged": {
+				"0": {
+					"dice": ["orange","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["yellow","yellow"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["white","yellow"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "flame",
+						"value": 1
+					},
+				"1": {
+						"type": "grenade",
+						"value": 2
+					},
+				"2": {
+						"type": "blast",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/eldiablo.png",
+            "imageHD": "data/tiles/img/eldiablo_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "eldiablo",
+            "origins": "suicide-squad"
+        },
+		{
+            "id": "deathstroke-suicide-squad",
+            "name": {
+                "fr": "Deathstroke",
+                "en": "Deathstroke"
+            },
+            "subtitle": {
+                "fr": "SUICIDE SQUAD",
+                "en": "SUICIDE SQUAD"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 5,
+            "auto-defense": 3,
+            "movement": 3,
+            "size": 1,
+            "menace": 1,
+            "melee" : {
+				"0": {
+					"dice": ["yellowreroll","red"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["yellowreroll"],
+					"action-multiplyer" : 3
+				}
+			},
+            "ranged": {
+				"0": {
+					"dice": ["orangereroll","orangereroll"],
+					"action-multiplyer" : 3
+				}
+			},
+            "manipulation": {
+				"0": {
+					"dice": ["black"],
+					"action-multiplyer" : 1
+				}
+			},
+            "thought": {
+				"0": {
+					"dice": ["white","orange"],
+					"action-multiplyer" : 1
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "counterattack",
+						"value": 2
+					},
+				"1": {
+						"type": "martial_arts",
+						"value": 1
+					},
+				"2": {
+						"type": "parkour",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/deathstroke-suicide-squad.png",
+            "imageHD": "data/tiles/img/deathstroke-suicide-squad_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "deathstroke-suicide-squad",
+            "origins": "suicide-squad"
+        },
+		{
+            "id": "king-shark",
+            "name": {
+                "fr": "King Shark",
+                "en": "King Shark"
+            },
+            "color": "gray",
+            "tile-type": "single",
+            "life-points": 6,
+            "auto-defense": 3,
+            "movement": 3,
+            "size": 2,
+            "menace": 2,
+            "melee" : {
+				"0": {
+					"dice": ["red","red"],
+					"action-multiplyer" : 1
+				},
+				"1": {
+					"dice": ["yellow","orange"],
+					"action-multiplyer" : 2
+				}
+			},
+            "skills": {
+				"0": {
+						"type": "counterattack",
+						"value": 2
+					},
+				"1": {
+						"type": "berserk",
+						"value": 1
+					},
+				"2": {
+						"type": "mobility",
+						"value": 1
+					}					
+				},
+            "rank": "leader",
+            "image": "data/tiles/img/king-shark.png",
+            "imageHD": "data/tiles/img/king-shark_hd.png",
+            "image_location": {"x":66, "y":48},
+            "image_zoom": 96,
+            "model": "king-shark",
+            "origins": "suicide-squad"
+        },
 		
 		
 		
 		
 		
-		
-		
+
 		
 		
 		
@@ -2230,8 +7171,8 @@
                 "fr": "template",
                 "en": "template"
             },
-            "color": ["blue"],
-            "tile-size": "single",
+            "color": "gray",
+            "tile-type": "single",
             "life-points": 5,
             "auto-defense": 3,
             "movement": 3,
@@ -2287,7 +7228,7 @@
             "image_location": {"x":66, "y":48},
             "image_zoom": 96,
             "model": "template",
-            "origins": "corebox",
+            "origins": "suicide-squad",
             "count": 1
         }
 		
