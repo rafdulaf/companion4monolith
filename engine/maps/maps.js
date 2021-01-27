@@ -16,7 +16,7 @@ var Maps = {
             'clickhelp4': "Les zones colorées en jaune sont en contrebas et donnent le bonus d'élévation d'un dé jaune.",
             'clickhelp6': "Les zones vertes sont au même niveau que la zone bleue.",
             'clickhelp5': "Les zones colorées en turquoise sont au dessus.",
-            'clickhelp3': "Les cercles verts indique le niveau d'élévation d'une zone.",
+            'clickhelp3': "Le nombre de cercles verts imbriqués au centre d'une zone indique le niveau d'élévation.",
             'copyright': "Les textes d'aide des cartes sont issus des textes proposés par leurs créateurs respectifs. Certains sont retouchés.<br/>"
                         + "Certaines cartes proposent de télécharger une vue statique des lignes de vue. Ces vues ont été réalisées par <a href='https://the-overlord.com/index.php?/profile/13-roolz/' target='_blank'>@Roolz</a>.<br/>"
                         + "Le principe des lignes de vues dynamiques est une idée de <a href='https://the-overlord.com/index.php?/profile/88-pamplerousse/' target='_blank'>@Pamplerousse</a>.<br/>"
@@ -39,7 +39,7 @@ var Maps = {
             'clickhelp4': "Yellow areas are below the blue area: Ranged attacks to these areas get an Elevation bonus of 1 yellow die.",
             'clickhelp6': "Green areas are at the same level as the blue area.",
             'clickhelp5': "Turquoise areas are above the blue area.",
-            'clickhelp3': "Note: The green circles around the dots show elevation levels.",
+            'clickhelp3': "The number of nested green circles in the center of an area show its elevation level.",
             'copyright': "The help text of the boards are proposed by their respective creators. Some of them were modified.<br/>"
                         + "Some boards allow to download a static ligne of sight view. This views were realized by <a href='https://the-overlord.com/index.php?/profile/13-roolz/' target='_blank'>@Roolz</a>.<br/>"
                         + "The principle of the dynamic line of sights is based on a idea of <a href='https://the-overlord.com/index.php?/profile/88-pamplerousse/' target='_blank'>@Pamplerousse</a>.<br/>"
