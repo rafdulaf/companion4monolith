@@ -8157,7 +8157,7 @@
             "movement": 2,
             "size": 1,
             "menace": 1,
-            "trait": ["???"],
+            "trait": ["multiple_personalities"],
             "ranged": {
 				"0": {
 					"dice": ["whitereroll"],
@@ -8215,7 +8215,7 @@
             "movement": 2,
             "size": 1,
             "menace": 2,
-            "trait": ["???"],
+            "trait": ["multiple_personalities"],
             "ranged": {
 				"0": {
 					"dice": ["white","white","whitereroll"],
@@ -8273,7 +8273,7 @@
             "movement": 2,
             "size": 1,
             "menace": 1,
-            "trait": ["???"],
+            "trait": ["multiple_personalities"],
             "ranged": {
 				"0": {
 					"dice": ["whitereroll"],
@@ -8331,7 +8331,7 @@
             "movement": 2,
             "size": 1,
             "menace": 2,
-            "trait": ["???"],
+            "trait": ["multiple_personalities"],
             "ranged": {
 				"0": {
 					"dice": ["white","white","whitereroll"],
