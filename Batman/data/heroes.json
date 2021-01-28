@@ -1,0 +1,163 @@
+{
+      {
+            "id": "batman",
+            "name": {
+                "fr": "BATMAN",
+                "en": "BATMAN"
+            },
+            "back": {
+                "text": {
+                    "fr": "template",
+					"en": "template"
+					},
+					"ID": "Bruce Wayne",
+					"size": {
+						"fr": "1,87",
+						"en": "6ft 2in"
+					},
+					"weight": {
+						"fr": "95,25",
+						"en": "210"
+					}
+				},
+            "color": "blue",
+            "total-gems": 11,
+            "active-gems": 2,
+            "rest-gems": 6,
+            "freemovement": { 
+				"baselevel": 2,
+				"encombrances": [
+					{ "weight": 4, "movement": 1},
+					{ "weight": 6, "movement": 0},
+				]
+			},
+            "beltsize": 4,
+            "size": 1,
+            "menace": 1,
+
+            "melee": { "dice": "red", "saturation": 3 },
+            "ranged": { "dice": "orange", "saturation": 3 },
+            "manipulation": { "dice": "orange", "saturation":3 },
+            "thought": { "dice": "red", "saturation": 4 },
+            "defense": { "dice": "orange", "saturation": 5 },
+            "passive-defense": { "dice": "orange"},
+            "reroll": {"saturation": 4},
+            "movement": {"saturation": 4},
+            "skills": [
+                { "id": "combo", "level": 1 , "encombrance": 4 },
+                { "id": "martial_arts", "level": 1, "encombrance": 4 },
+                { "id": "pushing_limits", "level": 1 },
+                { "id": "munitions_specialist", "level": 1},
+                { "id": "hacking", "level": 1},
+                { "id": "investigation", "level": 2},
+                { "id": "protected", "level": 2},
+                { "id": "parkour", "level": 1, "encombrance": 3 },
+                { "id": "mobility", "level": 1, "encombrance": 3 }
+            ],
+            "traits": [
+                {"id": "moral_code"}
+            ],
+            "image": "data/heroes/img/batman.png",
+            "imageHD": "data/heroes/img/batman_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/batman_back.png",
+            "imageHD_back": "data/heroes/img/batman_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "batman",
+            "origins": "corebox"
+        },	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+        {
+            "id": "template",
+            "name": {
+                "fr": "template",
+                "en": "template"
+            },
+            "subtitle": {
+                "fr": "template",
+                "en": "template"
+            },
+           "back": {
+                "text": {
+                    "fr": "template",
+					"en": "template"
+					},
+					"ID": "template",
+					"size": {
+						"fr": "template",
+						"en": "template"
+					},
+					"weight": {
+						"fr": "template",
+						"en": "template"
+					}
+				},
+            "color": "blue",
+            "total-gems": 10,
+            "active-gems": 2,
+            "rest-gems": 5,
+            "freemovement": { 
+				"baselevel": 2,
+				"encombrances": [
+					{ "weight": 3, "movement": 1},
+					{ "weight": 4, "movement": 0},
+				]
+			},
+            "beltsize": 1,
+            "size": 1,
+            "menace": 1,
+
+            "melee": { "dice": "orange", "saturation": 4 },
+            "ranged": { "dice": "yellow", "saturation": 3 },
+            "manipulation": { "dice": "orange", "saturation": 5 },
+            "thought": { "dice": "orange", "saturation": 5 },
+            "defense": { "dice": "yellow", "saturation": 5 },
+            "passive-defense": { "dice": "yellow"},
+            "reroll": {"saturation": 5},
+            "movement": {"saturation": 4},
+            "skills": [
+                { "id": "investigation", "level": 1 , "encombrance": 6 },
+                { "id": "marksman", "level": 1, "encombrance": 4 },
+            ],
+            "traits": [
+                {"id": "harmless"},
+                {"id": "harmless"},
+            ],
+            "image": "data/heroes/img/template.png",
+            "imageHD": "data/heroes/img/template_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/template_back.png",
+            "imageHD_back": "data/heroes/img/template_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "template",
+            "origins": "corebox"
+        }
+		
+    ]
+}
