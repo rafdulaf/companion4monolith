@@ -706,10 +706,22 @@
                 "en": "Fly"
             },
             "text": {
-                "fr": "Le  possesseur  du  trait  se  déplace  en volant.  Il  ne  tient  pas compte des phénomènes de gêne ni des terrains difficiles lorsqu’il effectue un mouvement. Il ignore les surcoûts et les effets des déplacements spéciaux",
+                "fr": "Le  possesseur  du  trait  se  déplace  en volant.  Il  ne  tient  pas compte des phénomènes de gêne ni des terrains difficiles lorsqu’il effectue un mouvement. Il ignore les surcoûts et les effets des déplacements spéciaux.",
                 "en": "Its possessor moves by flying. They then ignore hindering and  difficult  terrain  when  moving.  They  ignore  additional costs and effects of special moves."
             },
             "image": "data/skills/img/traits/fly.png"
+        }, {
+            "id": "multiple_personalities",
+            "type": "traits",
+            "title": {
+                "fr": "Personnalités multiples",
+                "en": "Multiple personalities"
+            },
+            "text": {
+                "fr": "Le possesseur du trait change de personnalité au gré de ses activations. Sa dernière activation définit son comportement. Les caractéristiques de Ventriloquist sont définies par sa tuile la plus à droite de la rivière.",
+                "en": "Its possessor changes personalities depending on activations. Its behaviour is set by the latest activation. Ventriloquist's characteristics are defined by the rightmost tile in the river."
+            },
+            "image": "data/skills/img/traits/multiple_personalities.png"
         }
     ]
 }
