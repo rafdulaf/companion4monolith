@@ -38,7 +38,8 @@
             },
             "color": "gray",
             "tile-type": "warning",
-            "origins": "corebox"
+            "origins": "corebox",
+			"count": 2
         },
 		{
             "id": "warning-blue",
@@ -3295,7 +3296,8 @@
             "image_location": {"x":66, "y":48},
             "image_zoom": 96,
             "model": "penguin",
-            "origins": "corebox"
+            "origins": "corebox",
+			"count": 2
         },
 		{
             "id": "penguin-gang",
@@ -3396,7 +3398,8 @@
             "image_location": {"x":66, "y":48},
             "image_zoom": 96,
             "model": "riddler",
-            "origins": "corebox"
+            "origins": "corebox",
+			"count": 2
         },
 		{
             "id": "riddler-year0",
@@ -3453,7 +3456,8 @@
             "image_location": {"x":66, "y":48},
             "image_zoom": 96,
             "model": "riddler-year0",
-            "origins": "corebox"
+            "origins": "corebox",
+			"count": 2
         },
 		{
             "id": "riddler-gang-handgun",
@@ -3839,7 +3843,8 @@
             "image_location": {"x":66, "y":48},
             "image_zoom": 96,
             "model": "mr-freeze",
-            "origins": "corebox"
+            "origins": "corebox",
+			"count": 2
         },
 		{
             "id": "scarecrow",
@@ -4114,7 +4119,8 @@
             "image_location": {"x":66, "y":48},
             "image_zoom": 96,
             "model": "deathstroke",
-            "origins": "corebox"
+            "origins": "corebox",
+			"count": 2
         },
 		{
             "id": "doctor-death",
@@ -4400,7 +4406,8 @@
             "image_location": {"x":66, "y":48},
             "image_zoom": 96,
             "model": "rasalghul",
-            "origins": "corebox"
+            "origins": "corebox",
+			"count": 2
         },
 		{
             "id": "solomon-grundy",
@@ -4499,7 +4506,8 @@
             "image_location": {"x":66, "y":48},
             "image_zoom": 96,
             "model": "talon",
-            "origins": "corebox"
+            "origins": "corebox",
+			"count": 2
         },
 		{
             "id": "owls-handgun",
@@ -4735,7 +4743,8 @@
             "image_location": {"x":66, "y":48},
             "image_zoom": 96,
             "model": "mr-bloom",
-            "origins": "corebox"
+            "origins": "corebox",
+			"count": 2
         },
 		{
             "id": "bloom-gang",
@@ -5228,7 +5237,8 @@
             "image_location": {"x":66, "y":48},
             "image_zoom": 96,
             "model": "hugo-strange",
-            "origins": "arkham-asylum"
+            "origins": "arkham-asylum",
+			"count": 2
         },
 		{
             "id": "jarvis-thetch",
@@ -5281,7 +5291,8 @@
             "image_location": {"x":66, "y":48},
             "image_zoom": 96,
             "model": "jarvis-thetch",
-            "origins": "arkham-asylum"
+            "origins": "arkham-asylum",
+			"count": 2
         },
 		{
             "id": "joker-clayface",
@@ -5330,7 +5341,8 @@
             "image_location": {"x":66, "y":48},
             "image_zoom": 96,
             "model": "joker-clayface",
-            "origins": "arkham-asylum"
+            "origins": "arkham-asylum",
+			"count": 2
         },
 		{
             "id": "joker-mr-joe",
@@ -5391,7 +5403,8 @@
             "image_location": {"x":66, "y":48},
             "image_zoom": 96,
             "model": "joker-mr-joe",
-            "origins": "arkham-asylum"
+            "origins": "arkham-asylum",
+			"count": 2
         },
 		{
             "id": "joker-gang-handgun",
@@ -5536,7 +5549,8 @@
             "image_location": {"x":66, "y":48},
             "image_zoom": 96,
             "model": "prof-pyg",
-            "origins": "arkham-asylum"
+            "origins": "arkham-asylum",
+			"count": 2
         },		
 		{
             "id": "tweedledee-tweedledum",
@@ -5634,7 +5648,8 @@
             "image_location": {"x":66, "y":48},
             "image_zoom": 96,
             "model": "zsasz",
-            "origins": "arkham-asylum"
+            "origins": "arkham-asylum",
+			"count": 2
         },
 		{
             "id": "batman-japan",
