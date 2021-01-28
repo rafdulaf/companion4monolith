@@ -62,7 +62,7 @@ var Maps = {
             'clickhelp4': "Le aree gialle sono un livello superiore alle aree blu: Attacchi a distanza da queste aree guadagnano un bonus Elevazione di +1 Dado giallo.",
             'clickhelp6': "Le aree verdi sono allo stesso livello delle aree blu.",
             'clickhelp5': "Le aree celesti sono un livello inferiore a quelle blu.",
-            'clickhelp3': "Nota: I cerchi verdi intorno ai punti mostrano il livello di elevazione.",
+            'clickhelp3': "Il numero di cerchi verdi concentrici al centro dell'area indica il suo livello di elevazione.",
             'copyright': "I testi esplicativi per ogni mappa sono stati redatti dai loro rispettivi creatori. Alcuni di questi sono stati modificati.<br/>"
                         + "In alcune mappe è possibile scaricare uno schema delle linee di vista statiche. Questi schemi sono stati realizzati da: <a href='https://the-overlord.com/index.php?/profile/13-roolz/' target='_blank'>@Roolz</a>.<br/>"
                         + "I principi delle linee di vista dinamiche sono basati su un'idea di: <a href='https://the-overlord.com/index.php?/profile/88-pamplerousse/' target='_blank'>@Pamplerousse</a>.<br/>"
