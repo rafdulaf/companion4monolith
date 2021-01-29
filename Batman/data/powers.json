@@ -1,0 +1,1727 @@
+{
+	"list": [
+ 		{
+            "id": "alfred",
+            "origins": "wayne-manor",
+            "image": "data/powers/img/alfred.png",
+            "name": {
+                "fr": "ALFRED",
+                "en": "ALFRED"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "SOIN",
+						"en": "CARE"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Le héros soigne son lieutenant.",
+								"en": "The hero takes care of their lieutenant."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros place le pion point de vie du lieutenant à son niveau de départ.",
+										"en": "The hero resets the lieutenant’s life point marker back to its initial value."
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "Alfred effectue immédiatement un mouvement.",
+								"en": "Alfred immediately performs a movement."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Alfred. Il effectue seulement sa première étape de mouvement.",
+										"en": "The hero immediately performs a character activation with Alfred. They only carry out their First Movement Step."
+							}
+						}
+					}
+				}
+			}
+        },
+ 		{
+            "id": "azrael",
+            "origins": "corebox",
+            "image": "data/powers/img/azrael.png",
+            "name": {
+                "fr": "AZRAEL",
+                "en": "AZRAEL"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "LAME ENFLAMMÉE",
+						"en": "FLAMING SWORD"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Azrael effectue immédiatement une attaque à l'aide de sa lame enflammée.",
+								"en": "Azrael immediately performs an attack using his flaming sword."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Azrael. Il effectue seulement une attaque au corps-à-corps avec sa caractéristique 2 dés oranges. Pour cette attaque, le vilain ignore l'étape de dépense de cubes d'énergie lors de la défense.",
+										"en": "The hero immediately performs a character activation with Azrael. They only carry out a melee attack with 2 orange dice. The villain ignores the Spend Energy Cubes step during defense for this attack."
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "Azrael effectue immédiatement un mouvement.",
+								"en": "Azrael immediately performs a movement."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Azrael. Il effectue seulement sa première étape de mouvement.",
+										"en": "The hero immediately performs a character activation with Azrael. They only carry out their First Movement Step."
+							}
+						}
+					}
+				}
+			}
+        },
+ 		{
+            "id": "batgirl",
+            "origins": "corebox",
+            "image": "data/powers/img/batgirl.png",
+            "name": {
+                "fr": "BATGIRL",
+                "en": "BATGIRL"
+            },
+            "subtitle": {
+                "fr": "(BARBARA GORDON)",
+                "en": "(BARBARA GORDON)"
+            },
+            "tokens" : {
+				"0": {
+					"name": {
+						"fr": "BATARANG TÉLÉGUIDÉ",
+						"en": "RADIO-CONTROLLED BATARANG"
+						},
+					"image": ["data/powers/img/batgirl.png"]
+					}					
+				},
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "BATARANG TÉLÉGUIDÉ",
+						"en": "RADIO-CONTROLLED BATARANG"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Batgirl effectue une attaque à distance à l'aide d'un batarang téléguidé.",
+								"en": "Batgirl performs a ranged attack using a radiocontrolled batarang."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Batgirl. Elle effectue seulement une attaque à distance avec les exceptions suivantes : \n-- Batgirl ne doit pas nécessairement avoir une ligne de vue sur le défenseur,\n-- le défenseur doit se trouver à une distance maximale de 3 zones de Batgirl,\n-- lors de l'étape constitution de la réserve de dés, sa caractéristique d'attaque est 1 dé noir relançable + 1 dé jaune.",
+										"en": "The hero immediately performs a character activation with Batgirl. They only carry out a ranged attack with the following exceptions:\n-- Batgirl does not necessarily need a line of sight to the defender.\n-- The defender must be within a maximum distance of 3 areas from Batgirl.\n-- During the Create the Dice Pool step, the attack characteristic of the hero is 1 black die with reroll + I yellow die."
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "Batgirl effectue immédiatement un mouvement.",
+								"en": "Batgirl immediately performs a movement."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Batgirl. Elle effectue seulement sa première étape de mouvement.",
+										"en": "The hero immediately performs a character activation with Batgirl. They only carry out their First Movement Step."
+							}
+						}
+					}
+				}
+			}
+        },
+ 		{
+            "id": "batman",
+            "origins": "corebox",
+            "image": "data/powers/img/batman.png",
+            "name": {
+                "fr": "BATMAN",
+                "en": "BATMAN"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "CACHÉ DANS LES OMBRES",
+						"en": "HIDE IN THE SHADOWS"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Batman se cache dans les ombres, prêt à fondre sur sa proie.",
+								"en": "Batman conceals his location with a smoke bomb."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros place un pion fumigène dans la zone de Batman, puis place un deuxième pion dans une zone à 1 de distance du premier. Enfin, il en place un troisième dans une zone à 1 de distance du second.\n Ensuite, le héros répartit comme il le souhaite, sans les montrer au vilain, les 3 pions ombre (face ombre visible) dans les 3 zones dans lesquelles il a précédemment placé des pions fumigènes. Le héros retire la figurine de Batman et la place dans sa réserve.\n Un pion ombre peut être pris pour cible d'attaques et d'explosions. Dans ce cas, le héros le retourne :\n-- si la face révélée est une face vide, l'action d'attaque ou l’explosion n’ont aucun effet sur le pion ombre. Celui-ci est ensuite retiré,\n-- si la face révélée est la face Batman, le héros place la figurine de Batman depuis sa réserve dans la zone du pion. Les pions ombre restant sont retirés. L'attaque est ensuite résolue normalement.\nLorsque Batman est activé, s'il reste des pions ombre et que sa figurine n'est pas en jeu, le héros la place depuis sa réserve dans la zone du pion ombre au dos duquel se trouve la face Batman. Batman peut immédiatement effectuer une action d'attaque au corps-à-corps avec sa caractéristique de 1 dé rouge + 1 dé rouge. Le héros active ensuite Batman normalement.",
+										"en": "The hero places a smoke grenade token in the same area as Batman and then places a second token in an area that is at a distance of 1 away from the first one. They then finally place a third token in an area that is at a distance of 1 away from the second one.\n The hero then places, without showing the villain, their 3 shadow tokens (shadow side up) as they choose in the 3 areas with the smoke grenade tokens. The hero then removes the Batman miniature and places him in their reserve pool.\nA shadow token can be targeted for attacks and explosions. In this case, the hero turns over the token:\n-- If the revealed side is blank, the attack action or the explosion have no effect on the shadow token. The shadow token is then removed.\n-- If the revealed side is the Batman side, the hero replaces the Batman miniature in the token’s area. The remaining shadow tokens are removed. The attack is then triggered as usual.\n When Batman is activated, if there are shadow tokens on the board and his miniature is not in play, the hero swaps the Batman miniature from the reserve pool with the shadow token showing the Batman side. Batman can immediately perform a melee attack action with 2 red dice. The hero then activates Batman as usual."
+							},
+							"tokens" : {
+								"0": {
+									"name": {
+										"fr": "PION OMBRE",
+										"en": "SHADOW TOKEN"
+										},
+									"image": ["data/powers/img/shadow.png"]
+								}					
+							}
+						}
+					}
+				}
+			}
+        },
+ 		{
+            "id": "batman-dkr",
+            "origins": "corebox",
+            "image": "data/powers/img/batman-dkr.png",
+            "name": {
+                "fr": "BATMAN",
+                "en": "BATMAN"
+            },
+            "subtitle": {
+                "fr": "(THE DARK KNIGHT RETURNS)",
+                "en": "(THE DARK KNIGHT RETURNS)"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "SANS LIMITES",
+						"en": "NO LIMITS"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Batman effectue immédiatement un mouvement et plusieurs attaques en se blessant.",
+								"en": "Batman immediately performs a movement and several attacks, injuring himself."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Batman. Pour cela, il suit les étapes d'activation d'un personnage contrôlé par une tuile avec les exceptions suivantes :\n-- il peut effectuer sa première étape de mouvement mais pas la seconde,\n-- lors de l'étape de déclaration d'une action autre que le mouvement, il ne peut que déclarer des actions d'attaque au corps-à-corps avec sa caractéristique 2 dés oranges et son multiplicateur d’actions de 3. Il subit ensuite 1 blessure.",
+										"en": "The hero immediately performs a character activation with Batman. To do so, they follow the Activate a Character Controlled by a Tile steps with the following exceptions:\n-- They can perform their First Movement Step but not the second.\n-- During the Declare an Action Other than Movement step, they can only declare melee attack actions with 2 orange dice and an action multiplier of 3. They then suffer one wound."
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "Batman effectue immédiatement un mouvement et une grosse attaque en se blessant.",
+								"en": "Batman immediately performs a movement and a big attack injuring himself."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Batman. Pour cela, il suit les étapes d'activation d'un personnage contrôlé par une tuile avec les exceptions suivantes :\n-- il peut effectuer sa première étape de mouvement mais pas la seconde.\n-- lors de l'étape de déclaration d'une action autre que le mouvement, il ne peut déclarer qu'une action d'attaque au corps-à-corps avec la caractéristique de 2 dés noirs + 1 dé rouge. Il subit ensuite 2 blessures.",
+										"en": "The hero immediately performs a character activation with Batman. To do so, they follow the Activate a Character Controlled by a Tile steps with the following exceptions:\n-- They can perform their First Movement Step but not the second.\n-- During the Declare an Action Other than Movement step, they can only declare a melee attack action with 2 black dice + 1 red die. They then suffer two wounds."
+							}
+						}
+					}
+				}
+			}
+        },
+		{
+            "id": "batman-zero",
+            "origins": "corebox",
+            "image": "data/powers/img/batman-zero.png",
+            "name": {
+                "fr": "BATMAN",
+                "en": "BATMAN"
+            },
+            "subtitle": {
+                "fr": "(ZERO YEAR)",
+                "en": "(ZERO YEAR)"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "TIR PRÉCIS",
+						"en": "PRECISE SHOT"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Batman effectue immédiatement une attaque à distance à l'aide de son arbalète.",
+								"en": "Batman immediately performs a ranged attack using his crossbow."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "le héros réalise immédiatement une activation de personnage avec Batman. Il effectue seulement une attaque à distance pour laquelle il bénéficie de la compétence tireur d'élite de niveau 2",
+										"en": "The hero immediately performs a character activation with Batman. They only carry out a ranged attack for which they benefit from the marksman skill level 2."
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "Batman effectue immédiatement un mouvement.",
+								"en": "Batman immediately performs a movement."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Batman zero year. Il effectue seulement sa première étape de mouvement.",
+										"en": "The hero immediately performs a character activation with Batman. They only carry out their First Movement Step."
+							}
+						}
+					}
+				}
+			}
+        },		
+  		{
+            "id": "batman-100",
+            "origins": "corebox",
+            "image": "data/powers/img/batman-100.png",
+            "name": {
+                "fr": "BATMAN",
+                "en": "BATMAN"
+            },
+            "subtitle": {
+                "fr": "(YEAR 100)",
+                "en": "(YEAR 100)"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "ÉCHAPPÉE BELLE",
+						"en": "LUCKY ESCAPE"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Batman effectue immédiatement un mouvement pour se mettre à l'abris et se soigner.",
+								"en": "Batman immediately performs a movement to take cover and heal."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Batman. Il effectue sa première étape de mouvement, lors de laquelle il bénéficie de la compétence insaisissable de niveau 3. Si la zone dans laquelle Batman termine son mouvement ne contient aucun personnage du camp du vilain, il récupère jusqu'à 2 points de vie. Il ne peut pas récupérer plus de points de vie que son attribut de points de vie.",
+										"en": "The hero immediately performs a character activation with Batman. They only carry out their First Movement Step. For this movement, they benefit from the elusive skill level 3. If the area in which Batman finishes his movement does not contain any character from the villain’s side, Batman recovers up to 2 life points. He cannot recover more life points than his life point characteristic."
+							}
+						}
+					}
+				}
+			}
+        },
+  		{
+            "id": "batwing",
+            "origins": "wayne-manor",
+            "image": "data/powers/img/batwing.png",
+            "name": {
+                "fr": "BATWING",
+                "en": "BATWING"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "CHOC ÉLECTRIQUE",
+						"en": "ELECTRIC SHOCK"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Batwing déclenche un choc électrique dans sa zone.",
+								"en": "Batwing triggers an electric shock in his zone."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros déclenche une explosion de niveau 3 dans la zone de Batwing. Il ignore cette explosion.",
+										"en": "The hero triggers a level 3 explosion in the same area as Batwing. He ignores this explosion."
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "Batwing ne fait rien.",
+								"en": "Batwing does nothing."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Aucun effet.",
+										"en": "No effect."
+							}
+						}
+					}
+				}
+			}
+        },		
+  		{
+            "id": "batwoman",
+            "origins": "corebox",
+            "image": "data/powers/img/batwoman.png",
+            "name": {
+                "fr": "BATWOMAN",
+                "en": "BATWOMAN"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "AVANTAGE STRATÉGIQUE",
+						"en": "STRATEGIC ADVANTAGE"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Batwoman se sert de son enseignement militaire pour prendre l'avantage stratégique.",
+								"en": "Batwoman uses her military education to take a strategic advantage."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain transfère un DPA depuis sa zone de potentiel d'activation indisponible vers sa zone de dépense de potentiel d'activation.\nLors du prochain tour du vilain, on considère qu'il a déjà réalisé une activation.",
+										"en": "The villain transfers an APD from their unavailable activation potential zone to their spend activation potential zone.\nDuring the next villain turn, they are considered to have already performed an activation."
+							}
+						}
+					}
+				}
+			}
+        },		
+  		{
+            "id": "black-canary",
+            "origins": "corebox",
+            "image": "data/powers/img/black-canary.png",
+            "name": {
+                "fr": "BLACK CANARY",
+                "en": "BLACK CANARY"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "CRI",
+						"en": "CRY"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Black Canary utilise son cri pour attaquer les adversaires.",
+								"en": "Black Canary uses her cry to attack opponents."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Black Canary. Elle effectue seulement une action de manipulation automatique en utilisant sa compétence souffle de niveau 2.",
+										"en": "The hero immediately performs a character activation with Black Canary. They only carry out an automatic manipulation by using the blast skill level 2."
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "Black Canary effectue immédiatement un mouvement.",
+								"en": "Black Canary immediately performs a movement."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Black Canary. Elle effectue seulement sa première étape de mouvement.",
+										"en": "The hero immediately performs a character activation with Black Canary. They only carry out their First Movement Step."
+							}
+						}
+					}
+				}
+			}
+        },		
+  		{
+            "id": "bluebird",
+            "origins": "corebox",
+            "image": "data/powers/img/bluebird.png",
+            "name": {
+                "fr": "BLUE BIRD",
+                "en": "BLUE BIRD"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "TASER RIFLE",
+						"en": "TASER RIFLE"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Blue Bird effectue une attaque à distance à l'aide de son taser rifle.",
+								"en": "Blue Bird performs a ranged attack using a taser rifle."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Blue Bird. Elle effectue seulement une attaque à distance avec la caractéristique de 1 dé blanc relançable + 1 dé orange. Pour cette action, elle bénéficie de la compétence électricité de niveau 3.",
+										"en": "The hero immediately performs a character activation with Blue Bird. They may only carry out a ranged attack with 1 white die with reroll + 1 orange die. For this attack, they benefit from the electricity skill level 3."
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "Blue Bird effectue immédiatement un mouvement.",
+								"en": "Blue Bird immediately performs a movement."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Blue Bird. Elle effectue seulement sa première étape de mouvement.",
+										"en": "The hero immediately performs a character activation with Blue Bird. They only carry out their First Movement Step."
+							}
+						}
+					}
+				}
+			}
+        },
+ 		{
+            "id": "bruce-wayne",
+            "origins": "wayne-manor",
+            "image": "data/powers/img/bruce-wayne.png",
+            "name": {
+                "fr": "BRUCE WAYNE",
+                "en": "BRUCE WAYNE"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "GARDE DU CORPS",
+						"en": "BODYGUARD"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Bruce Wayne arrive sur les lieux, accompagné de ses gardes personnels.",
+								"en": "Bruce Wayne arrives on the scene, accompanied by his personal bodyguards."
+							},
+							"type" : "permanent",
+							"longdescription": {
+										"fr": "À la fin de l'étape de sélection du QG, le héros remplace la tuile événement de sa rivière par la tuile de Bat-Robots. Il place ensuite 2 figurines de Bat-Robots dans la zone de Bruce Wayne.",
+										"en": "At the end of the Leader Selection step, the hero replaces the event tile in their river with a Bat-Robots tile. They then place 2 Bat-Robots miniatures in the same area as Bruce Wayne."
+									}
+						}
+					}
+				}
+			}
+        },	
+  		{
+            "id": "catwoman",
+            "origins": "corebox",
+            "image": "data/powers/img/catwoman.png",
+            "name": {
+                "fr": "CATWOMAN",
+                "en": "CATWOMAN"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "VOLEUSE HORS-PAIR",
+						"en": "MASTER THIEF"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Catwoman se déplace puis effectue une manipulation dans sa zone",
+								"en": "Catwoman moves then performs a manipulation in the same area."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Catwoman. Pour cela, il suit les étapes d'activation d'un personnage contrôlé par une tuile avec les exceptions suivantes :\n-- Catwoman peut effectuer sa première étape de mouvement mais pas la seconde.\n-- lors de l'étape de déclaration d'une action autre que le mouvement, elle ne peut déclarer qu'une action de manipulation.",
+										"en": "The hero immediately performs a character activation with Catwoman. To do so, they follow the Activate a Character Controlled by a Tile steps with the following exceptions:\n-- Catwoman can perform her First Movement Step but not the second.\n-- During the Declare an Action Other than Movement step, she can only declare one manipulation action."
+							}
+						}
+					}
+				}
+			}
+        },  		{
+            "id": "catwoman-halloween",
+            "origins": "corebox",
+            "image": "data/powers/img/catwoman-halloween.png",
+            "name": {
+                "fr": "CATWOMAN",
+                "en": "CATWOMAN"
+            },
+            "subtitle": {
+                "fr": "(THE LONG HALLOWEEN)",
+                "en": "(THE LONG HALLOWEEN)"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "VOLEUSE HORS-PAIR",
+						"en": "MASTER THIEF"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Catwoman se déplace puis effectue une manipulation dans sa zone",
+								"en": "Catwoman moves then performs a manipulation in the same area."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Catwoman. Pour cela, il suit les étapes d'activation d'un personnage contrôlé par une tuile avec les exceptions suivantes :\n-- Catwoman peut effectuer sa première étape de mouvement mais pas la seconde.\n-- lors de l'étape de déclaration d'une action autre que le mouvement, elle ne peut déclarer qu'une action de manipulation.",
+										"en": "The hero immediately performs a character activation with Catwoman. To do so, they follow the Activate a Character Controlled by a Tile steps with the following exceptions:\n-- Catwoman can perform her First Movement Step but not the second.\n-- During the Declare an Action Other than Movement step, she can only declare one manipulation action."
+							}
+						}
+					}
+				}
+			}
+        },		
+  		{
+            "id": "gordon",
+            "origins": "corebox",
+            "image": "data/powers/img/gordon.png",
+            "name": {
+                "fr": "COMMISSIONER GORDON",
+                "en": "COMMISSIONER GORDON"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "ESCOUADE D'ÉLITE",
+						"en": "ELITE SQUAD"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Commissioner Gordon arrive sur les lieux, accompagné d'une escouade d'élite.",
+								"en": "Commissioner Gordon arrives on the scene, accompanied by an elite squad."
+							},
+							"type" : "permanent",
+							"longdescription": {
+										"fr": "À la fin de l'étape de sélection du QG, le héros remplace la tuile événement de sa rivière par la tuile de Heavy GCPD. Il place ensuite 2 figurines de Heavy GCPD dans la zone du Commissioner Gordon.",
+										"en": "At the end of the Leader Selection step, the hero replaces the event tile in their river with the Heavy GCPD tile. They then place 2 Heavy GCPD miniatures in the same area as Commissioner Gordon."
+							}
+						}
+					}
+				}
+			}
+        },		
+ 		{
+            "id": "duke",
+            "origins": "corebox",
+            "image": "data/powers/img/duke.png",
+            "name": {
+                "fr": "DUKE",
+                "en": "DUKE"
+            },
+            "subtitle": {
+                "fr": "PRÉCOGNITION",
+                "en": "PRECOGNITION"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "template",
+						"en": "template"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Duke se sert de ses capacités pour prédire les mouvements de son adversaire.",
+								"en": "Duke uses his abilities to predict the movements of his opponent."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros désigne un personnage situé dans la même zone que lui et lance deux dés oranges. Le personnage désigné subit autant de blessures que de succès obtenus.",
+										"en": "The hero designates a character located in the same area as Duke and rolls two orange dice. The designated character suffers as many wounds as the number of successes obtained."
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "Duke effectue immédiatement un mouvement.",
+								"en": "Duke immediately performs a movement."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Duke. Il effectue seulement sa première étape de mouvement.",
+										"en": "The hero immediately performs a character activation with Duke. They only carry out their First Movement Step."
+							}
+						}
+					}
+				}
+			}
+        },
+  		{
+            "id": "green-arrow",
+            "origins": "corebox",
+            "image": "data/powers/img/green-arrow.png",
+            "name": {
+                "fr": "GREEN ARROW",
+                "en": "GREEN ARROW"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "CHASSEUR-NÉ",
+						"en": "BORN HUNTER"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Green Arrow se sert de ses capacités de chasseur pour traquer et atteindre sa proie.",
+								"en": "Green Arrow uses his hunting abilities to track down his prey."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Green Arrow. Pour cela, il suit les étapes d'activation d'un personnage contrôlé par une tuile avec les exceptions suivantes :\n-- il peut effectuer sa première étape de mouvement mais pas la seconde.\n-- lors de l'étape de déclaration d'une action autre que le mouvement, il ne peut déclarer qu'une action d'attaque à distance avec la caractéristique de 1 dé noir relançable + 1 dé orange relançable.",
+										"en": "The hero immediately performs a character activation with Green Arrow. To do so, they follow the Activate a Character Controlled by a Tile steps with the following exceptions:\n-- They can perform their First Movement Step but not the second.\n-- During the Declare an Action Other than Movement step, they can only declare a ranged attack with 1 black die with a reroll + 1 orange die with a reroll."
+							}
+						}
+					}
+				}
+			}
+        },
+  		{
+            "id": "bullock",
+            "origins": "corebox",
+            "image": "data/powers/img/bullock.png",
+            "name": {
+                "fr": "HARVEY BULLOCK",
+                "en": "HARVEY BULLOCK"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "OFFICIER VÉTÉRAN",
+						"en": "VETERAN OFFICER"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Harvey Bullock dirige son escouade d’une main de fer.",
+								"en": "Harvey Bullock uses his experience to lead a squad."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros active immédiatement tous les personnages d'une tuile de sbires ou d'élites qu'il contrôle.",
+										"en": "The hero immediately activates all the characters of a henchmen or elite tile that they control."
+							}
+						}
+					}
+				}
+			}
+        },
+  		{
+            "id": "huntress",
+            "origins": "corebox",
+            "image": "data/powers/img/huntress.png",
+            "name": {
+                "fr": "HUNTRESS",
+                "en": "HUNTRESS"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "ATTAQUE TOURNOYANTE",
+						"en": "SPINNING ATTACK"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Huntress effectue une attaque tournoyante avec son bâton.",
+								"en": "Huntress performs a spinning attack with her Bo staff."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Huntress. Elle effectue seulement des attaques au corps à corps avec la caractéristique de 2 dés jaunes et un multiplicateur d’actions de 5",
+										"en": "The hero immediately performs a character activation with Huntress. They may only carry out melee attacks with 2 yellow dice and an action multiplier of 5."
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "Huntress effectue immédiatement un mouvement.",
+								"en": "Huntress immediately performs a movement."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Huntress. Elle effectue seulement sa première étape de mouvement.",
+										"en": "The hero immediately performs a character activation with Huntress. They only carry out their First OR Movement Step."
+							}
+						}
+					}
+				}
+			}
+        },		
+  		{
+            "id": "julia-penniworth",
+            "origins": "corebox",
+            "image": "data/powers/img/julia-penniworth.png",
+            "name": {
+                "fr": "JULIA PENNYWORTH",
+                "en": "JULIA PENNYWORTH"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "PLANIFICATION MILITAIRE",
+						"en": "MILITARY PLANNING"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Julia Pennyworth se sert de son enseignement militaire pour diriger les opérations.",
+								"en": "Julia Pennyworth uses her military education to lead operations."
+							},
+							"type" : "permanent",
+							"longdescription": {
+										"fr": "Si Julia Pennyworth n'est pas neutralisée, lors de l'étape d’entretien du tour du héros, le héros récupère 2 cubes d'énergie supplémentaires.\nLors de l'activation de la tuile événement, ce pouvoir n'apporte aucun effet.",
+										"en": "If Julia Pennyworth is not neutralized, the hero recovers 2 additional Energy cubes during the Upkeep Hero phase.\nDuring the activation of the event tile, this power has no effect."
+							}
+						}
+					}
+				}
+			}
+        },
+  		{
+            "id": "katana",
+            "origins": "corebox",
+            "image": "data/powers/img/katana.png",
+            "name": {
+                "fr": "KATANA",
+                "en": "KATANA"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "SOULTAKER",
+						"en": "SOULTAKER"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Katana fonce sur sa cible et l’attaque en libérant des âmes enfermées dans son sabre.",
+								"en": "Katana performs a charge and attacks by freeing the souls trapped in her sword."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Lorsqu'un personnage est neutralisé par Katana, le héros prend la figurine neutralisée et la place à côté de son poste de commandement. Elle ne va pas dans la réserve de personnages adverse. À la place, on considère qu'elle se trouve dans Soultaker (son katana).\nLorsque le héros active la tuile événement, il réalise immédiatement une activation de personnage avec Katana. Pour cela, il suit les étapes d'activation d'un personnage contrôlé par une tuile avec les exceptions suivantes :\n-- Katana peut effectuer sa première étape de mouvement mais pas la seconde.\n-- lors de l'étape de déclaration d'une action autre que le mouvement, elle ne peut déclarer qu'une action d'attaque au corps-à-corps avec sa caractéristique 1 dé orange + 2 dés jaunes. Lors de l'étape de constitution de la réserve de dés, le héros ajoute un dé blanc par figurine dans Soultaker. Il prend ensuite les figurines qui se trouvent dans le katana et les place dans la réserve de personnages de leur contrôleur.",
+										"en": "When a character is neutralized by Katana, the hero takes the neutralized miniature and places it next to their command post. This miniature no longer belongs to their opponent’s character pool. Instead, it is said that they are now trapped in Soultaker (Katana’s samurai sword). \nWhen the hero activates the event tile, they immediately perform a character activation with Katana. To do so, they follow the Activate a Character Controlled by a Tile steps with the following exceptions:\n-- They can perform their First Movement Step but not the second.\n-- During the Declare an Action Other than Movement step, they can only declare a melee attack with 1 orange die + 2 yellow dice. The hero then takes the miniatures that have been trapped in the sword and places them in their controller’s character pool."
+							}
+						}
+					}
+				}
+			}
+        },
+  		{
+            "id": "nightwing",
+            "origins": "corebox",
+            "image": "data/powers/img/nightwing.png",
+            "name": {
+                "fr": "NIGHTWING",
+                "en": "NIGHTWING"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "IMPÉTUEUX",
+						"en": "IMPETUOUS"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Nightwing réalise une charge.",
+								"en": "Nightwing performs a charge."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Nightwing. Pour cela, il suit les étapes d'activation d'un personnage contrôlé par une tuile en respectant les exceptions suivantes :\n-- Nightwing ne peut effectuer qu’une seule de ses deux étapes de mouvement,\n-- Lors de l'étape de déclaration d'une action autre que le mouvement, il ne peut que déclarer des actions d'attaque au corps-à-corps.",
+										"en": "The hero immediately performs a character activation with Nightwing. To do so, they follow the Activate a Character Controlled by a Tile steps with the following exceptions:\n-- Nightwing can only perform one of the two movement steps.\n-- During the Declare an Action Other than a Movement step, they can only declare melee attacks."
+							}
+						}
+					}
+				}
+			}
+        },		
+  		{
+            "id": "oracle",
+            "origins": "wayne-manor",
+            "image": "data/powers/img/oracle.png",
+            "name": {
+                "fr": "ORACLE",
+                "en": "ORACLE"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "ACCOMPLISHED STRATEGIST",
+						"en": "STRATÈGE AGUERRIE"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Oracle est à la tête des opérations.",
+								"en": "Oracle is at the head of operations."
+							},
+							"type" : "permanent",
+							"longdescription": {
+										"fr": "Si Oracle n'est pas neutralisée, lors de l'étape d’entretien du tour du héros, le héros récupère 1 point de potentiel d'activation supplémentaire.\nLors de l'activation de la tuile événement, ce pouvoir n'apporte aucun effet.",
+										"en": "If Oracle is not neutralized, the hero recovers 1 additional activation potential point during the Upkeep Hero phase.\nThis power has no effect during the activation of the event tile."
+							}
+						}
+					}
+				}
+			}
+        },
+  		{
+            "id": "orphan",
+            "origins": "corebox",
+            "image": "data/powers/img/orphan.png",
+            "name": {
+                "fr": "ORPHAN",
+                "en": "ORPHAN"
+            },
+            "subtitle": {
+                "fr": "(CASSANDRA CAIN)",
+                "en": "(CASSANDRA CAIN)"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "POSTURE DÉFENSIVE",
+						"en": "DEFENSIVE STANCE"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Orphan opte pour une posture défensive.",
+								"en": "Orphan opts for a defensive stance."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros place le pion posture défensive sur le socle d'Orphan. Lorsque le héros active Orphan ou qu'elle est neutralisée, si le pion posture défensive est présent sur son socle, alors le héros le retire.\nTant que le pion posture défensive est sur le socle d’Orphan, sa défense automatique est de 4 et elle bénéficie de la compétence contre-attaque de niveau 3.",
+										"en": "The hero places the Defensive Stance token on Orphan’s base. If there is a Defensive Stance token on Orphan’s base when the hero activates her, or if she is neutralized, it is removed.\nWhile the defensive stance token is on Orphan’s base, her automatic defense is 4 and she has the counterattack skill level 3."
+							},
+							"tokens" : {
+								"0": {
+									"name": {
+										"fr": "PION POSTURE DÉFENSIVE",
+										"en": "DEFENSIVE STANCE TOKEN"
+										},
+									"image": ["data/powers/img/defensive-stance.png"]
+								}					
+							}
+						}
+					}
+				}
+			}
+        },
+  		{
+            "id": "red-hood-todd",
+            "origins": "corebox",
+            "image": "data/powers/img/red-hood-todd.png",
+            "name": {
+                "fr": "RED HOOD",
+                "en": "RED HOOD"
+            },
+            "subtitle": {
+                "fr": "(JASON TODD)",
+                "en": "(JASON TODD)"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "REPOSITIONNEMENT",
+						"en": "REPOSITIONING"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Red Hood se repositionne rapidement sur le terrain.",
+								"en": "Red Hood quickly repositions himself in the field."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Red Hood. Il effectue seulement sa première étape de mouvement. Son bonus de points de déplacement au premier mouvement est de 4 et il perd le trait mobilité réduite. De plus, il bénéficie de la compétence parkour de niveau 1.",
+										"en": "The hero immediately performs a character activation with Red Hood. During this activation, they only perform their First Movement Step and their move point bonus is 4. They lose the reduced mobility trait and have the parkour skill level 1."
+							}
+						}
+					}
+				}
+			}
+        },
+  		{
+            "id": "red-robin",
+            "origins": "wayne-manor",
+            "image": "data/powers/img/template.png",
+            "name": {
+                "fr": "RED ROBIN",
+                "en": "RED ROBIN"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "CYBERATTAQUE",
+						"en": "CYBERATTACK"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Red Robin pirate les communications adverses afin de les perturber.",
+								"en": "Red Robin hacks into enemy communications."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros peut pirater le poste de commandement adverse. Pour cela, il prend un pion piratage et le pose dans une des cases du poste de commandement adverse qui ne contient pas déjà un pion piratage : mouvement, défense ou relance.",
+										"en": "The hero can hack the enemy command post. To do so, they take a Hacking token and place it in one of the following spaces of the enemy command post that does not yet contain a Hacking token: movement, defense or reroll."
+							},
+							"tokens" : {
+								"0": {
+									"name": {
+										"fr": "PIONS PIRATAGE",
+										"en": "HACKING TOKEN"
+										},
+									"image": ["data/powers/img/hacking1.png","data/powers/img/hacking2.png","data/powers/img/hacking3.png"]
+								}					
+							}
+						},
+						"1": {
+							"cumulative": true,
+							"shortdescription": {
+								"fr": "Les communications sont piratées.",
+								"en": "Communications are hacked."
+							},
+							"type" : "permanent",
+							"longdescription": {
+										"fr": "Une case de mouvement, défense ou relance qui contient un pion piratage voit sa saturation diminuée de 1.",
+										"en": "The exertion limit of a movement, defense or reroll space that contains a Hacking token is reduced by 1."
+							}
+						}
+					}
+				}
+			}
+        },	
+  		{
+            "id": "montoya",
+            "origins": "corebox",
+            "image": "data/powers/img/montoya.png",
+            "name": {
+                "fr": "RENEE MONTOYA",
+                "en": "RENEE MONTOYA"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "FREEZE",
+						"en": "FREEZE"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Renee Montoya tient en joue ses adversaires.",
+								"en": "Renee Montoya holds several opponents at gunpoint."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros place le pion freeze dans la zone de Renee Montoya.\nLorsque le héros active Renee Montoya ou qu'elle est neutralisée, si le pion freeze est présent sur le plateau, il le retire.\nLes personnages sbires ou élite du camp du vilain situés dans la zone du pion freeze ne peuvent pas être activés",
+										"en": "The hero places the Freeze token in the same area as Renee Montoya.\nIf there is a Freeze token on the board when the hero activates Renee Montoya, or if she is neutralized, it is removed.FREEZE TOKEN\nThe henchmen or elite characters from the villain’s side in the same area as the Freeze token cannot be activated."
+							},
+							"tokens" : {
+								"0": {
+									"name": {
+										"fr": "PION FREEZE",
+										"en": "template"
+										},
+									"image": ["data/powers/img/frozen.png"]
+								}					
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "Renee Montoya effectue immédiatement un mouvement.",
+								"en": "Renee Montoya immediately performs a movement."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Montoya. Elle effectue seulement sa première étape de mouvement.",
+										"en": "The hero immediately performs a character activation with Renee Montoya. They only carry out their First Movement Step."
+							}
+						}
+					}
+				}
+			}
+        },	
+  		{
+            "id": "robin-damian",
+            "origins": "corebox",
+            "image": "data/powers/img/robin-damian.png",
+            "name": {
+                "fr": "ROBIN",
+                "en": "ROBIN"
+            },
+            "subtitle": {
+                "fr": "(DAMIAN WAYNE)",
+                "en": "(DAMIAN WAYNE)"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "ENFANT PRODIGE",
+						"en": "CHILD PRODIGY"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Robin est capable de se réactiver grâce à ses capacités exceptionnelles.",
+								"en": "Robin is able to reactivate thanks to his exceptional abilities."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros effectue immédiatement une activation de personnage avec Robin.",
+										"en": "The hero immediately performs a character activation with Robin."
+							}
+						},
+						"1": {
+							"cumulative": true,
+							"shortdescription": {
+								"fr": "Robin a de grandes difficultés à faire équipe avec quelqu’un.",
+								"en": "Robin isn’t much of a team player."
+							},
+							"type" : "permanent",
+							"longdescription": {
+										"fr": "Tant que Robin n'est pas neutralisé, le coût en DPAs pour activer la tuile du lieutenant est augmenté de 1.",
+										"en": "While Robin is not neutralized, the lieutenant’s tile costs an additional APD to activate."
+							}
+						}
+					}
+				}
+			}
+        },		
+  		{
+            "id": "robin-drake",
+            "origins": "corebox",
+            "image": "data/powers/img/robin-drake.png",
+            "name": {
+                "fr": "ROBIN",
+                "en": "ROBIN"
+            },
+            "subtitle": {
+                "fr": "(TIM DRAKE)",
+                "en": "(TIM DRAKE)"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "HACKEUR NÉ",
+						"en": "COMPUTER WIZ"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Robin utilise un dispositif pour effectuer une réflexion à distance.",
+								"en": "Robin uses a device to carry out a remote thought."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros sélectionne un personnage ami capable de réaliser une action de réflexion. Robin effectue immédiatement une action de reflexion complexe avec ses caractéristiques comme s'il se trouvait dans la zone du personnage ami.",
+										"en": "The hero selects an ally character to carry out a thought action. Robin then performs a complex thought with his characteristics as though he was in the same area as the ally character."
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "Robin effectue immédiatement un mouvement.",
+								"en": "Robin immediately performs a movement."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Robin. Il effectue seulement sa première étape de mouvement.",
+										"en": "The hero immediately performs a character activation with Robin. They only carry out their First Movement Step."
+							}
+						}
+					}
+				}
+			}
+        },	
+  		{
+            "id": "spoiler",
+            "origins": "corebox",
+            "image": "data/powers/img/spoiler.png",
+            "name": {
+                "fr": "SPOILER",
+                "en": "SPOILER"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "FURTIVITÉ",
+						"en": "STEALTH"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Spoiler se cache dans les ombres afin de rester discrète.",
+								"en": "Spoiler sticks to the shadows."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Spoiler. Elle effectue seulement sa première étape de mouvement, lors de laquelle elle bénéficie de la compétence insaisissable de niveau 5. Après avoir effectué ce mouvement, le héros place le pion furtivité sur le socle de Spoiler.\nLorsque le héros active Spoiler ou qu'elle est neutralisée, si le pion furtivité est présent sur son socle, il le retire.\nTant que le pion furtivité est sur le socle de Spoiler, elle bénéficie de la compétence intouchable de niveau 5.",
+										"en": "The hero immediately performs a character activation with Spoiler. They only perform their First Movement Step during which Spoiler has the elusive skill level 5. After this movement, the hero places the Stealth token on Spoiler’s base. \nIf there is a Stealth token on Spoiler’s base when the hero activates her, or if she is neutralized, it is removed.\nWhile the Stealth token in on Spoiler’s base, she has the untouchable skill level 5."
+							},
+							"tokens" : {
+								"0": {
+									"name": {
+										"fr": "PION FURTIVITÉ",
+										"en": "STEALTH TOKEN"
+										},
+									"image": ["data/powers/img/stealth.png"]
+								}					
+							}
+						}
+					}
+				}
+			}
+        },
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+  		{
+            "id": "template",
+            "origins": "corebox",
+            "image": "data/powers/img/template.png",
+            "name": {
+                "fr": "template",
+                "en": "template"
+            },
+            "subtitle": {
+                "fr": "template",
+                "en": "template"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "template",
+						"en": "template"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "template",
+								"en": "template"
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "template",
+										"en": "template"
+							},
+							"tokens" : {
+								"0": {
+									"name": {
+										"fr": "template",
+										"en": "template"
+										},
+									"image": ["data/powers/img/template.png"]
+								}					
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "template",
+								"en": "template"
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "template",
+										"en": "template"
+							},
+							"tokens" : {
+								"0": {
+									"name": {
+										"fr": "template",
+										"en": "template"
+										},
+									"image": ["data/powers/img/template.png"]
+								}					
+							}
+						}
+					}
+				}
+			}
+        }
+
+		
+	]
+
+
+
+
+
+
+
+
+
+,	"tiles_ids": [
+ 
+		{
+            "id": "catwoman",
+            "origins": "corebox"
+        },
+		{
+            "id": "catwoman-halloween",
+            "origins": "corebox"
+        },
+		{
+            "id": "red-hood-todd",
+            "origins": "corebox"
+        },
+		{
+            "id": "nightwing",
+            "origins": "corebox"
+        },
+		{
+            "id": "robin-drake",
+            "origins": "corebox"
+        },
+		{
+            "id": "robin-damian",
+            "origins": "corebox"
+        },
+		{
+            "id": "gordon",
+            "origins": "corebox"
+        },
+		{
+            "id": "bullock",
+            "origins": "corebox"
+        },	
+		{
+            "id": "montoya",
+            "origins": "corebox"
+        },	
+		{
+            "id": "green-arrow",
+            "origins": "corebox"
+        },
+		{
+            "id": "katana",
+            "origins": "corebox"
+        },
+		{
+            "id": "huntress",
+            "origins": "corebox"
+        },
+{
+            "id": "orphan",
+            "origins": "corebox"
+        },
+		{
+            "id": "spoiler",
+            "origins": "corebox"
+        },
+		{
+            "id": "duke",
+            "origins": "corebox"
+        },
+		{
+            "id": "julia-penniworth",
+            "origins": "wayne-manor"
+        },
+		{
+            "id": "oracle",
+            "origins": "wayne-manor"
+        },
+		{
+            "id": "red-robin",
+            "origins": "wayne-manor"
+        },
+		{
+            "id": "joker",
+            "origins": "corebox"
+        },
+		{
+            "id": "bane",
+            "origins": "corebox"
+        },
+		{
+            "id": "bane-venom",
+            "origins": "corebox"
+        },
+		{
+            "id": "harley-queen",
+            "origins": "corebox"
+        },		
+		{
+            "id": "harley-queen-hammer",
+            "origins": "corebox"
+        },
+		{
+            "id": "bud-lou",
+            "origins": "corebox"
+        },		
+		{
+            "id": "poison-ivy",
+            "origins": "corebox"
+        },
+		{
+            "id": "penguin",
+            "origins": "corebox",
+			"count": 2
+        },
+		{
+            "id": "riddler",
+            "origins": "corebox",
+			"count": 2
+        },
+		{
+            "id": "riddler-year0",
+            "origins": "corebox",
+			"count": 2
+        },
+		{
+            "id": "two-face-heads",
+            "origins": "corebox"
+        },		
+		{
+            "id": "two-face-tails",
+            "origins": "corebox"
+        },	
+		{
+            "id": "clayface",
+            "origins": "corebox"
+        },
+		{
+            "id": "killer-croc",
+            "origins": "corebox"
+        },
+		{
+            "id": "killer-croc-hush",
+            "origins": "corebox"
+        },
+		{
+            "id": "mr-freeze",
+            "origins": "corebox",
+			"count": 2
+        },
+		{
+            "id": "scarecrow",
+            "origins": "corebox"
+        },
+		{
+            "id": "scarecrow-finch",
+            "origins": "corebox"        },
+		{
+            "id": "black-mask",
+            "origins": "corebox"
+        },
+		{
+            "id": "deadshot",
+            "origins": "corebox"
+        },
+		{
+            "id": "deathstroke",
+            "origins": "corebox",
+			"count": 2
+        },
+		{
+            "id": "doctor-death",
+            "model": "doctor-death",
+            "origins": "corebox"
+        },
+		{
+            "id": "hush",
+            "origins": "corebox"
+        },
+		{
+            "id": "jason-todd-hush",
+            "origins": "corebox"
+        },
+		{
+            "id": "manbat",
+            "origins": "corebox"
+        },
+		{
+            "id": "rasalghul",
+            "origins": "corebox",
+			"count": 2
+        },
+		{
+            "id": "solomon-grundy",
+            "origins": "corebox"
+        },
+		{
+            "id": "talon",
+            "origins": "corebox",
+			"count": 2
+        },
+		{
+            "id": "red-hood",
+            "origins": "corebox"
+        },
+		{
+            "id": "mr-bloom",
+            "origins": "corebox",
+			"count": 2
+        },
+		{
+            "id": "firefly",
+            "origins": "corebox"
+        },
+		{
+            "id": "killer-moth",
+            "origins": "corebox"
+        },
+		{
+            "id": "orphan-david-cain",
+            "origins": "corebox"
+        },
+		{
+            "id": "ratcatcher",
+            "origins": "corebox"
+        },
+		{
+            "id": "tusk",
+            "origins": "corebox"
+        },
+		{
+            "id": "wrath",
+            "origins": "corebox"
+        },
+		{
+            "id": "azrael-st-dumas-angel",
+            "origins": "corebox"
+        },	
+		{
+            "id": "hugo-strange",
+            "origins": "arkham-asylum",
+			"count": 2
+        },
+		{
+            "id": "jarvis-thetch",
+            "origins": "arkham-asylum",
+			"count": 2
+        },
+		{
+            "id": "joker-clayface",
+            "origins": "arkham-asylum",
+			"count": 2
+        },
+		{
+            "id": "joker-mr-joe",
+            "origins": "arkham-asylum",
+			"count": 2
+        },
+		{
+            "id": "prof-pyg",
+            "origins": "arkham-asylum",
+			"count": 2
+        },		
+		{
+            "id": "tweedledee-tweedledum",
+            "origins": "arkham-asylum"
+        },		
+		{
+            "id": "zsasz",
+            "origins": "arkham-asylum",
+			"count": 2
+        },
+		{
+            "id": "batman-japan",
+            "origins": "batman-inc"
+        },
+		{
+            "id": "batman-moscow",
+            "origins": "batman-inc"
+        },		
+		{
+            "id": "dark-ranger",
+            "origins": "batman-inc"
+        },
+		{
+            "id": "el-gaucho",
+            "origins": "batman-inc"
+        },	
+		{
+            "id": "knight",
+            "origins": "batman-inc"
+        },
+		{
+            "id": "nightrunner",
+            "origins": "batman-inc"
+        },
+		{
+            "id": "chief-man-of-bats",
+            "origins": "batman-inc"
+        },		
+		{
+            "id": "raven-red",
+            "origins": "batman-inc"
+        },		
+		{
+            "id": "heretic",
+            "origins": "league-of-assassins"
+        },
+		{
+            "id": "lady-shiva",
+            "origins": "league-of-assassins"
+        },
+		{
+            "id": "rasalghul-demons-head",
+            "origins": "league-of-assassins"
+        },		
+		{
+            "id": "taliaalghul",
+            "origins": "league-of-assassins"
+        },
+		{
+            "id": "amanda-waller",
+            "origins": "suicide-squad"
+        },
+		{
+            "id": "bronze-tiger",
+            "origins": "suicide-squad"
+        },
+		{
+            "id": "rick-flag",
+            "origins": "suicide-squad"
+        },
+		{
+            "id": "deadshot-suicide-squad",
+            "origins": "suicide-squad"
+        },
+		{
+            "id": "duela-dent",
+            "origins": "suicide-squad"
+        },
+		{
+            "id": "black-manta",
+            "origins": "suicide-squad"
+        },
+		{
+            "id": "captain-boomerang",
+            "origins": "suicide-squad"
+        },
+		{
+            "id": "eldiablo",
+            "origins": "suicide-squad"
+        },
+		{
+            "id": "deathstroke-suicide-squad",
+            "origins": "suicide-squad"
+        },
+		{
+            "id": "king-shark",
+            "origins": "suicide-squad"
+        },
+		{
+            "id": "red-hood-new52",
+            "origins": "red-hood"
+        },
+		{
+            "id": "poison-ivy-new52",
+            "origins": "poison-ivy-new-52"
+        },	
+		{
+            "id": "batman-gordon",
+            "origins": "batman-new-52"
+        },		
+		{
+            "id": "rookie",
+            "origins": "batman-new-52"
+        },
+		{
+            "id": "batman-beyond",
+            "origins": "batman-beyond"
+        },
+		{
+            "id": "batman-rebirth",
+            "origins": "batman-rebirth"
+        },
+		{
+            "id": "hawkfire",
+            "origins": "hawkfire"
+        },		
+		{
+            "id": "etrigan",
+            "origins": "etrigan"
+        },		
+		{
+            "id": "catwoman-hush",
+            "origins": "catwoman"
+        },	
+		{
+            "id": "reaper",
+            "origins": "reaper"
+        },		
+		{
+            "id": "carmine-falcone",
+            "origins": "carmine-falcone"
+        },		
+		{
+            "id": "arnold-wesker",
+            "origins": "arnold-wesker"
+        },		
+		{
+            "id": "arnold-wesker-scarface",
+            "origins": "arnold-wesker"
+        },		
+		{
+            "id": "peyton-riley",
+            "origins": "peyton-riley"
+        },		
+		{
+            "id": "peyton-riley-scarface",
+            "origins": "peyton-riley"
+        },		
+		{
+            "id": "white-rabbit",
+            "origins": "white-rabbit"
+        },
+		{
+            "id": "uriah-boone",
+            "origins": "uriah-boone"
+        },
+		{
+            "id": "shen-fang",
+            "origins": "shen-fang"
+        },
+		{
+            "id": "cluemaster",
+            "origins": "cluemaster"
+        },
+		{
+            "id": "deacon-blackfire",
+            "origins": "deacon-blackfire"
+        },
+		{
+            "id": "kgbeast",
+            "origins": "kgbeast"
+        },		
+		{
+            "id": "nobody",
+            "origins": "nobody"
+        },		
+		{
+            "id": "owlman-lincoln-march",
+            "origins": "owlman-lincoln-march"
+        },		
+		{
+            "id": "amygdala",
+            "origins": "amygdala"
+        },
+		{
+            "id": "architect",
+            "origins": "architect"
+        },
+		{
+            "id": "ghost-dragons",
+            "origins": "ghost-dragons"
+        },		
+		{
+            "id": "great-white-shark",
+            "origins": "great-white-shark"
+        },	
+		{
+            "id": "mr-freeze-new52",
+            "origins": "mr-freeze"
+        }
+		
+    ]
+	
+	
+	
+	
+	
+}
+
+
+
+
+
