@@ -2525,6 +2525,7 @@
             "image_location": {"x":51, "y":48},
             "image_zoom": 113,
             "model": "pict-warriors",
+            "alternate_model": "pict-hunters",
             "origins": ["corebox", "stretchgoal", "king"]
         },
 
