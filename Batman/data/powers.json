@@ -2606,657 +2606,502 @@
 				}
 			}
         },		
-		
-
-
-
-		
   		{
-            "id": "template",
-            "origins": "corebox",
-            "image": "data/powers/img/template.png",
+            "id": "heretic",
+            "origins": "league-of-assassins",
+            "image": "data/powers/img/heretic.png",
             "name": {
-                "fr": "template",
-                "en": "template"
-            },
-            "subtitle": {
-                "fr": "template",
-                "en": "template"
+                "fr": "THE HERETIC",
+                "en": "THE HERETIC"
             },
             "powers" : {
 				"0": {
 					"name": {
-						"fr": "template",
-						"en": "template"
+						"fr": "FUREUR DU CLONE",
+						"en": "FURY OF THE CLONE"
 						},
 					"actions" : {
 						"0": {
 							"shortdescription": {
-								"fr": "template",
-								"en": "template"
+								"fr": "The Heretic canalise sa rage et la déchaîne dans un coup dévastateur.",
+								"en": "The Heretic channels his rage and unleashes a devastating blow."
 							},
 							"type" : "special-event",
 							"longdescription": {
-										"fr": "template",
-										"en": "template"
-							},
-							"tokens" : {
-								"0": {
-									"name": {
-										"fr": "template",
-										"en": "template"
-										},
-									"image": ["data/powers/img/template.png"]
-								}					
+										"fr": "Le vilain réalise immédiatement une activation de personnage avec The Heretic. Il effectue seulement une attaque au corps-à-corps. Pour cette attaque, il bénéfi cie de la compétence fureur de niveau 2.",
+										"en": "The villain immediately performs a character activation with The Heretic. They only carry out a melee attack. For this attack, The Heretic benefi ts from the berserk skill level 2."
 							}
 						},
 						"1": {
 							"cumulative": false,
 							"shortdescription": {
-								"fr": "template",
-								"en": "template"
+								"fr": "The Heretic eff ectue immédiatement un mouvement.",
+								"en": "The Heretic immediately performs a movement."
 							},
 							"type" : "special-event",
 							"longdescription": {
-										"fr": "template",
-										"en": "template"
+										"fr": "Le vilain réalise immédiatement une activation de personnage avec The Heretic. Il effectue seulement sa première étape de mouvement.",
+										"en": "The villain immediately performs a character activation with The Heretic. They only carry out their First Movement Step."
+							}
+						}
+					}
+				}
+			}
+        },
+  		{
+            "id": "lady-shiva",
+            "origins": "league-of-assassins",
+            "image": "data/powers/img/lady-shiva.png",
+            "name": {
+                "fr": "LADY SHIVA",
+                "en": "LADY SHIVA"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "FATALITÉ",
+						"en": "FATALITY"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Cet assassin surentraîné ne laisse aucune chance à sa cible.",
+								"en": "This highly-trained assassin always hits her target."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain réalise immédiatement une activation de personnage avec Lady Shiva. Pour cela, il suit les étapes d’activation d’un personnage contrôlé par une tuile avec les exceptions suivantes :\n- Lady Shiva peut eff ectuer sa première étape de mouvement mais pas la seconde ;\n- lors de l’étape de déclaration d’une action autre que le mouvement, il ne peut déclarer qu’une attaque au corps-à-corps avec la caractéristique de 2 dés orange. Pour cette attaque, Lady Shiva bénéfi cie de la compétence poison de niveau 2.",
+										"en": "The villain immediately performs a character activation with Lady Shiva. To do so, they follow the Activate a Character Controlled by a Tile steps with the following exceptions:\n- Lady Shiva can perform her First Movement Step but not the second.\n- During the Declare an Action Other than Movement step, the villain can only declare a melee attack with 2 orange dice. For this attack, Lady Shiva benefi ts from the poison skill level 2."
+							}
+						}
+					}
+				}
+			}
+        },
+  		{
+            "id": "rasalghul-demons-head",
+            "origins": "league-of-assassins",
+            "image": "data/powers/img/rasalghul-demons-head.png",
+            "name": {
+                "fr": "RA’S AL GHUL",
+                "en": "RA’S AL GHUL"
+            },
+            "subtitle": {
+                "fr": "(DEMON’S HEAD)",
+                "en": "(DEMON’S HEAD)"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "ENDOCTRINEMENT",
+						"en": "INDOCTRINATION"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Ra’s Al Ghul reste toujours accompagné de ses fi dèles assassins.",
+								"en": "Ra’s Al Ghul always keeps his faithful assassins by his side."
+							},
+							"type" : "permanent",
+							"longdescription": {
+										"fr": "À la fin de l’étape de sélection du QG, le vilain remplace sa tuile événement par la tuile des Assassins. Il place ensuite 2 figurines d’assassins dans la zone de Ra’s Al Ghul.",
+										"en": "At the end of the Leader Selection step, the villain replaces the event tile in their river with the Assassins tile. They then place 2 Assassins miniatures in Ra’s Al Ghul’s area."
+							}
+						}
+					}
+				}
+			}
+        },
+  		{
+            "id": "taliaalghul",
+            "origins": "league-of-assassins",
+            "image": "data/powers/img/taliaalghul.png",
+            "name": {
+                "fr": "TALIA AL GHUL",
+                "en": "TALIA AL GHUL"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "GARDE RAPPROCHÉE",
+						"en": "BODYGUARD"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Talia se déplace toujours protégée par sa garde personnelle.",
+								"en": "Talia always moves under the protection of her bodyguard."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "À la fin de l’étape de sélection du QG, le vilain remplace sa tuile événement par la tuile des Assassins with rifle. Il place ensuite 3 figurines d’assassins with rifle dans la zone de Talia Al Ghul.",
+										"en": "At the end of the Leader Selection step, the villain replaces the event tile in their river with the Assassins with rifle tile. They then place 3 Assassins with rifle miniatures in Talia Al Ghul’s area."
+							}
+						}
+					}
+				}
+			}
+        },		
+  		{
+            "id": "amanda-waller",
+            "origins": "suicide-squad",
+            "image": "data/powers/img/amanda-waller.png",
+            "name": {
+                "fr": "AMANDA WALLER",
+                "en": "AMANDA WALLER"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "PROTOCOLE DE SOUTIEN",
+						"en": "SUPPORT PROTOCOL"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Amanda Waller n’enfile jamais de gants de velours. Elle ne sait diriger que d’une main de fer.",
+								"en": "Amanda Waller never wears velvet gloves. She only knows how to lead with an iron fist."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros active immédiatement tous les personnages d’une tuile de sbires ou d’élites qu’il contrôle.",
+										"en": "The hero activates all the characters of a henchmen or elite tile that they control."
+							}
+						}
+					}
+				}
+			}
+        },
+  		{
+            "id": "black-manta",
+            "origins": "suicide-squad",
+            "image": "data/powers/img/black-manta.png",
+            "name": {
+                "fr": "BLACK MANTA",
+                "en": "BLACK MANTA"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "LASER",
+						"en": "LASER"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Black Manta peut répandre la destruction avec les tirs de lasers de son casque.",
+								"en": "Black Manta spreads destruction with his helmet lasers."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain déclenche une explosion de niveau 2 dans une zone avec ligne de vue et jusqu’à 2 zones de distance de Black Manta.",
+										"en": "The villain can cause a level 2 explosion in an area that Black Manta has a clear line of sight to, up to 2 areas distance from Black Manta."
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "Black Manta eff ectue immédiatement un mouvement.",
+								"en": "Black Manta immediately performs a movement."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain réalise immédiatement une activation de personnage avec Black Manta. Il eff ectue seulement sa première étape de mouvement.",
+										"en": "The villain immediately performs a character activation with Black Manta. They only carry out their First Movement Step."
+							}
+						}
+					}
+				}
+			}
+        },
+		{
+            "id": "bronze-tiger",
+            "origins": "suicide-squad",
+            "image": "data/powers/img/bronze-tiger.png",
+            "name": {
+                "fr": "BRONZE TIGER",
+                "en": "BRONZE TIGER"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "LA FORME DU TIGRE",
+						"en": "TIGER BY NATURE"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Agile, le tigre se déplace rapidement et sans un bruit.",
+								"en": "Agile, the tiger moves quickly and silently."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Bronze Tiger. Il effectue seulement sa première étape de mouvement. Son bonus de points de déplacement au premier mouvement est de 4. De plus, il bénéficie de la compétence insaisissable de niveau 2.",
+										"en": "The hero immediately performs a character activation with Bronze Tiger. They only carry out their First Movement Step. His move points bonus for the first movement is 4 and he benefits from the elusive skill level 2."
+							}
+						}
+					}
+				}
+			}
+        },
+  		{
+            "id": "captain-boomerang",
+            "origins": "suicide-squad",
+            "image": "data/powers/img/captain-boomerang.png",
+            "name": {
+                "fr": "CAPTAIN BOOMERANG",
+                "en": "CAPTAIN BOOMERANG"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "LE COUP DU KANGOUROU",
+						"en": "THE KANGAROO BLOW"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Personne ne lance le boomerang comme le Captain !",
+								"en": "No one throws a boomerang quite like the Captain!"
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Captain Boomerang effectue une attaque à distance sur une cible jusqu’à 3 zones de distance sans nécessité de ligne de vue avec la caractéristique 2 dés orange relançables + 1 dé blanc relançable.",
+										"en": "Captain Boomerang carries out a ranged attack on a target up to 3 areas away that doesn’t require line of sight with 2 orange dice with reroll + 1 white die with reroll."
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+										"fr": "Captain Boomerang effectue immédiatement un mouvement.",
+										"en": "Captain Boomerang immediately performs a movement."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain réalise immédiatement une activation de personnage avec Captain Boomerang. Il effectue seulement sa première étape de mouvement.",
+										"en": "The villain immediately performs a character activation with Captain Boomerang. They only carry out their First Movement Step."
+							}
+						}
+					}
+				}
+			}
+        },		
+  		{
+            "id": "deadshot-suicide-squad",
+            "origins": "suicide-squad",
+            "image": "data/powers/img/deadshot-suicide-squad.png",
+            "name": {
+                "fr": "DEADSHOT",
+                "en": "DEADSHOT"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "RICOCHET",
+						"en": "RICOCHET"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Deadshot effectue un tir spécial.",
+								"en": "Deadshot makes a special shot."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain réalise immédiatement une activation de personnage avec Deadshot. Il effectue seulement une attaque à distance avec la caractéristique de 2 dés blancs. Pour cette action, il ignore les restrictions liées aux lignes de vue.",
+										"en": "The villain immediately performs a character activation with Deadshot. They can only carry out a ranged attack with 2 white dice. The restrictions related to lines of sight are ignored."
+							}
+						}
+					}
+				}
+			}
+        },		
+  		{
+            "id": "deathstroke-suicide-squad",
+            "origins": "suicide-squad",
+            "image": "data/powers/img/deathstroke-suicide-squad.png",
+            "name": {
+                "fr": "DEATHSTROKE",
+                "en": "DEATHSTROKE"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "POINT FAIBLE",
+						"en": "WEAK SPOT"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Deathstroke effectue une charge et attaque directement le point faible de son adversaire.",
+								"en": "Deathstroke charges ahead, attacking an opponent’s weak spot."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain réalise immédiatement une activation de personnage avec Deathstroke. Il effectue seulement sa première étape de mouvement.\nLe vilain désigne ensuite un personnage situé dans la même zone que Deathstroke et lance un dé rouge. Ce personnage subit autant de blessures que de succès obtenus.",
+										"en": "The villain immediately performs a character activation with Deathstroke. They only carry out their First Movement Step.\nThe villain then chooses a character in the same area as Deathstroke and rolls a red die. The designated character suffers as many wounds as the number of successes."
+							}
+						}
+					}
+				}
+			}
+        },
+  		{
+            "id": "eldiablo",
+            "origins": "suicide-squad",
+            "image": "data/powers/img/eldiablo.png",
+            "name": {
+                "fr": "EL DIABLO",
+                "en": "EL DIABLO"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "COMBUSTION SPONTANÉE",
+						"en": "SPONTANEOUS COMBUSTION"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "El Diablo ne peut se contenir et déverse un torrent de flammes.",
+								"en": "El Diablo cannot contain his own power and releases a torrent of flames."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain place 2 pions flamme dans la zone d’El Diablo ainsi que dans une zone adjacente.",
+										"en": "The villain places 2 flame tokens in El Diablo’s area and 2 flame tokens in a single adjacent area."
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "El Diablo effectue immédiatement un mouvement.",
+								"en": "El Diablo immediately performs a movement."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain réalise immédiatement une activation de personnage avec El Diablo. Il effectue seulement sa première étape de mouvement.",
+										"en": "The villain immediately performs a character activation with El Diablo. They only carry out their First Movement Step."
+							}
+						}
+					}
+				}
+			}
+        },
+  		{
+            "id": "duela-dent",
+            "origins": "suicide-squad",
+            "image": "data/powers/img/duela-dent.png",
+            "name": {
+                "fr": "DUELA DENT",
+                "en": "DUELA DENT"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "COMME PAPA",
+						"en": "JUST LIKE DADDY"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Elle se déplace et vaporise un gaz toxique étrangement familier.",
+								"en": "She moves and releases a strangely familiar toxic gas."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain réalise immédiatement une activation de personnage avec The Joker’s Daughter. Elle effectue seulement sa première étape de mouvement. À la fi n de ce mouvement, le vilain place un pion Venin dans la zone de The Joker’s Daughter.\nCe pion suit les mêmes règles que les pions gaz et augmente de 1 le niveau de terrain dangereux de la zone. The Joker’s Daughter n’est pas affectée par le pion venin.",
+										"en": "The villain immediately performs a character activation with The Joker’s Daughter. They only carry out their First Movement Step. At the end of this movement, the villain places a venom token in the area of The Joker’s Daughter.\nThis token follows the same rules as gas tokens and adds 1 to the level of “dangerous terrain” of the area in which it is placed. The Joker’s Daughter is not affected by the venom token."
 							},
 							"tokens" : {
 								"0": {
 									"name": {
-										"fr": "template",
-										"en": "template"
+										"fr": "PION VENIN",
+										"en": "VENOM TOKEN"
 										},
-									"image": ["data/powers/img/template.png"]
+									"image": ["data/powers/img/venom.png"]
 								}					
 							}
 						}
 					}
 				}
 			}
-        },
-		
-		
-		
-		
-		
-  		{
-            "id": "red-hood-new52",
-            "origins": "red-hood-new52",
-            "image": "data/powers/img/red-hood-new52.png",
-            "name": {
-                "fr": "RED HOOD",
-                "en": "RED HOOD"
-            },
-            "subtitle": {
-                "fr": "(NEW 52)",
-                "en": "(NEW 52)"
-            },
-            "powers" : {
-				"0": {
-					"name": {
-						"fr": "LA LOI DU TALION",
-						"en": "LAW OF RETRIBUTION"
-						},
-					"actions" : {
-						"0": {
-							"shortdescription": {
-								"fr": "Le bien, le mal, tout n'est qu'un question de point de vue.",
-								"en": "Good, evil... it just depends on your point of view."
-							},
-							"type" : "special-event",
-							"longdescription": {
-										"fr": "Le héros choisit une zone sur laquelle Red Hood dispose d'une ligne de vue. Il lance un unique dé rouge. Chaque figurine dans a zone (y compris les alliés) subit autant de blessures que de succès obtenus sur ce dé.",
-										"en": "The hero chooses an area with clear line of sight from Red Hood. They roll a single red die. Each miniature in the area (including allies) suffers this number of wounds."
-							}
-						}
-					}
-				}
-			}
-        },
-  		{
-            "id": "batman-beyond",
-            "origins": "batman-beyond",
-            "image": "data/powers/img/batman-beyond.png",
-            "name": {
-                "fr": "BATMAN BEYOND",
-                "en": "BATMAN BEYOND"
-            },
-            "powers" : {
-				"0": {
-					"name": {
-						"fr": "VIF COMME L'ÉCLAIR",
-						"en": "QUICK AS LIGHTNING"
-						},
-					"actions" : {
-						"0": {
-							"shortdescription": {
-								"fr": "La jeunesse permet des actions d'éclat.",
-								"en": "Youth allows spectacular actions."
-							},
-							"type" : "special-event",
-							"longdescription": {
-										"fr": "Le héros réalise immédiatement une activation de personnage avec Batman Beyond. Pour cela, il suit les étapes d'ctivation d'un personnage contrôlé par une tuile avec les exceptions suivantes :\n--il peut effectuer sa première étape de mouvement mais pas la seconde;\n--lors de l'étape de déclaration d'une action autre que le mouvement, il ne peut déclarer qu'une action d'attaque au corps-à-corps acec la caractéristique suivante : 1 dé rouge + 1 dé orange.",
-										"en": "The hero immediately performs a character activation with Batman Beyond. To do so, they follow the Activate a Character Controlled by a Tile steps with the following exceptions:\n--They can perform their First Movement Step but not the second.\n--During the Declare an Action Other than Movement step, they can only declare a melee attack with 1 red die + 1 orange die."
-							}
-						}
-					}
-				}
-			}
         },		
   		{
-            "id": "batman-new-52",
-            "origins": "batman-new-52",
-            "image": "data/powers/img/batman-new-52.png",
-            "name": {
-                "fr": "BATMAN",
-                "en": "BATMAN"
-            },
-            "subtitle": {
-                "fr": "(JAMES GORDON)",
-                "en": "(JAMES GORDON)"
-            },
-            "powers" : {
-				"0": {
-					"name": {
-						"fr": "SOUTIEN OFFENSIF",
-						"en": "OFFENSIVE SUPPORT"
-						},
-					"actions" : {
-						"0": {
-							"shortdescription": {
-								"fr": "Quand le danger est à son paroxysme, Rookie est la solution.",
-								"en": "When danger is at its highest level - uneash Rookie is the answer"
-							},
-							"type" : "special-event",
-							"longdescription": {
-										"fr": "A la fin de l'étape de sélection du QG, le héros sélectionne la tuile de Rookie et tant que lieutenant. Lors de l'activation de la tuile évènement, le héros réalise une activation de personnage avec Batman (James Gordon). Il effectue seulement sa première étape de mouvement. S'il termine son déplacement dans la zone de Rookie, il rentre dans son robot. Sa figurine est retirée du plateau. Puis, le héros réalise une ctivation de personnage avec Rookie. Il effectue seulement sa première étape de mouvement. L héros peut ensuite effectuer une explosion de niveau 2 dans une zone jusqu'à 2 de distance de Rookie et avec laquelle il partage une ligne de vue. Enfin, la figurine de Batman (James Gordon) est remise dans la zone de Rookie.\nSi Rookie est neutralisé, Batman (James Gordon) effectue seulement sa première étape de mouvement.",
-										"en": "At the end of the Leader Selection step, the hero selets Rookie's tile as heir lieutement. hen the event tile is activated, the heri performs a character activation with Batman (James Gordon). They only carry out their First Movement Step. If Batman ends his movement in Rookie's area, he can transfer into the robotic suit. Batman's miniature is removed from the board. The hero then performs a character activation with Rookie. During this activation, they only carry out their First Movement Step.\nThe hero may then cause a level 2 explosion in an area that Rookie has a clear line of sight, up to 2 areas distance from Rookie. Finally, Batman's miniature is placed back in Rookie's area.\nIf Rookie is neutralized, Batman (James Gordon) only carries out his First Movvement Step."
-							}
-						}
-					}
-				}
-			}
-        }		
-	]
-
-
-
-
-
-
-
-
-
-,	"tiles_ids": [
- 
-		{
-            "id": "catwoman",
-            "origins": "corebox"
-        },
-		{
-            "id": "catwoman-halloween",
-            "origins": "corebox"
-        },
-		{
-            "id": "red-hood-todd",
-            "origins": "corebox"
-        },
-		{
-            "id": "nightwing",
-            "origins": "corebox"
-        },
-		{
-            "id": "robin-drake",
-            "origins": "corebox"
-        },
-		{
-            "id": "robin-damian",
-            "origins": "corebox"
-        },
-		{
-            "id": "gordon",
-            "origins": "corebox"
-        },
-		{
-            "id": "bullock",
-            "origins": "corebox"
-        },	
-		{
-            "id": "montoya",
-            "origins": "corebox"
-        },	
-		{
-            "id": "green-arrow",
-            "origins": "corebox"
-        },
-		{
-            "id": "katana",
-            "origins": "corebox"
-        },
-		{
-            "id": "huntress",
-            "origins": "corebox"
-        },
-{
-            "id": "orphan",
-            "origins": "corebox"
-        },
-		{
-            "id": "spoiler",
-            "origins": "corebox"
-        },
-		{
-            "id": "duke",
-            "origins": "corebox"
-        },
-		{
-            "id": "julia-penniworth",
-            "origins": "wayne-manor"
-        },
-		{
-            "id": "oracle",
-            "origins": "wayne-manor"
-        },
-		{
-            "id": "red-robin",
-            "origins": "wayne-manor"
-        },
-		{
-            "id": "joker",
-            "origins": "corebox"
-        },
-		{
-            "id": "bane",
-            "origins": "corebox"
-        },
-		{
-            "id": "bane-venom",
-            "origins": "corebox"
-        },
-		{
-            "id": "harley-queen",
-            "origins": "corebox"
-        },		
-		{
-            "id": "harley-queen-hammer",
-            "origins": "corebox"
-        },
-		{
-            "id": "bud-lou",
-            "origins": "corebox"
-        },		
-		{
-            "id": "poison-ivy",
-            "origins": "corebox"
-        },
-		{
-            "id": "penguin",
-            "origins": "corebox",
-			"count": 2
-        },
-		{
-            "id": "riddler",
-            "origins": "corebox",
-			"count": 2
-        },
-		{
-            "id": "riddler-year0",
-            "origins": "corebox",
-			"count": 2
-        },
-		{
-            "id": "two-face-heads",
-            "origins": "corebox"
-        },		
-		{
-            "id": "two-face-tails",
-            "origins": "corebox"
-        },	
-		{
-            "id": "clayface",
-            "origins": "corebox"
-        },
-		{
-            "id": "killer-croc",
-            "origins": "corebox"
-        },
-		{
-            "id": "killer-croc-hush",
-            "origins": "corebox"
-        },
-		{
-            "id": "mr-freeze",
-            "origins": "corebox",
-			"count": 2
-        },
-		{
-            "id": "scarecrow",
-            "origins": "corebox"
-        },
-		{
-            "id": "scarecrow-finch",
-            "origins": "corebox"        },
-		{
-            "id": "black-mask",
-            "origins": "corebox"
-        },
-		{
-            "id": "deadshot",
-            "origins": "corebox"
-        },
-		{
-            "id": "deathstroke",
-            "origins": "corebox",
-			"count": 2
-        },
-		{
-            "id": "doctor-death",
-            "model": "doctor-death",
-            "origins": "corebox"
-        },
-		{
-            "id": "hush",
-            "origins": "corebox"
-        },
-		{
-            "id": "jason-todd-hush",
-            "origins": "corebox"
-        },
-		{
-            "id": "manbat",
-            "origins": "corebox"
-        },
-		{
-            "id": "rasalghul",
-            "origins": "corebox",
-			"count": 2
-        },
-		{
-            "id": "solomon-grundy",
-            "origins": "corebox"
-        },
-		{
-            "id": "talon",
-            "origins": "corebox",
-			"count": 2
-        },
-		{
-            "id": "red-hood",
-            "origins": "corebox"
-        },
-		{
-            "id": "mr-bloom",
-            "origins": "corebox",
-			"count": 2
-        },
-		{
-            "id": "firefly",
-            "origins": "corebox"
-        },
-		{
-            "id": "killer-moth",
-            "origins": "corebox"
-        },
-		{
-            "id": "orphan-david-cain",
-            "origins": "corebox"
-        },
-		{
-            "id": "ratcatcher",
-            "origins": "corebox"
-        },
-		{
-            "id": "tusk",
-            "origins": "corebox"
-        },
-		{
-            "id": "wrath",
-            "origins": "corebox"
-        },
-		{
-            "id": "azrael-st-dumas-angel",
-            "origins": "corebox"
-        },	
-		{
-            "id": "hugo-strange",
-            "origins": "arkham-asylum",
-			"count": 2
-        },
-		{
-            "id": "jarvis-thetch",
-            "origins": "arkham-asylum",
-			"count": 2
-        },
-		{
-            "id": "joker-clayface",
-            "origins": "arkham-asylum",
-			"count": 2
-        },
-		{
-            "id": "joker-mr-joe",
-            "origins": "arkham-asylum",
-			"count": 2
-        },
-		{
-            "id": "prof-pyg",
-            "origins": "arkham-asylum",
-			"count": 2
-        },		
-		{
-            "id": "tweedledee-tweedledum",
-            "origins": "arkham-asylum"
-        },		
-		{
-            "id": "zsasz",
-            "origins": "arkham-asylum",
-			"count": 2
-        },
-		{
-            "id": "batman-japan",
-            "origins": "batman-inc"
-        },
-		{
-            "id": "batman-moscow",
-            "origins": "batman-inc"
-        },		
-		{
-            "id": "dark-ranger",
-            "origins": "batman-inc"
-        },
-		{
-            "id": "el-gaucho",
-            "origins": "batman-inc"
-        },	
-		{
-            "id": "knight",
-            "origins": "batman-inc"
-        },
-		{
-            "id": "nightrunner",
-            "origins": "batman-inc"
-        },
-		{
-            "id": "chief-man-of-bats",
-            "origins": "batman-inc"
-        },		
-		{
-            "id": "raven-red",
-            "origins": "batman-inc"
-        },		
-		{
-            "id": "heretic",
-            "origins": "league-of-assassins"
-        },
-		{
-            "id": "lady-shiva",
-            "origins": "league-of-assassins"
-        },
-		{
-            "id": "rasalghul-demons-head",
-            "origins": "league-of-assassins"
-        },		
-		{
-            "id": "taliaalghul",
-            "origins": "league-of-assassins"
-        },
-		{
-            "id": "amanda-waller",
-            "origins": "suicide-squad"
-        },
-		{
-            "id": "bronze-tiger",
-            "origins": "suicide-squad"
-        },
-		{
-            "id": "rick-flag",
-            "origins": "suicide-squad"
-        },
-		{
-            "id": "deadshot-suicide-squad",
-            "origins": "suicide-squad"
-        },
-		{
-            "id": "duela-dent",
-            "origins": "suicide-squad"
-        },
-		{
-            "id": "black-manta",
-            "origins": "suicide-squad"
-        },
-		{
-            "id": "captain-boomerang",
-            "origins": "suicide-squad"
-        },
-		{
-            "id": "eldiablo",
-            "origins": "suicide-squad"
-        },
-		{
-            "id": "deathstroke-suicide-squad",
-            "origins": "suicide-squad"
-        },
-		{
             "id": "king-shark",
-            "origins": "suicide-squad"
-        },
-		{
-            "id": "red-hood-new52",
-            "origins": "red-hood"
-        },
-		{
-            "id": "poison-ivy-new52",
-            "origins": "poison-ivy-new-52"
-        },	
-		{
-            "id": "batman-gordon",
-            "origins": "batman-new-52"
+            "origins": "suicide-squad",
+            "image": "data/powers/img/king-shark.png",
+            "name": {
+                "fr": "KING SHARK",
+                "en": "KING SHARK"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "GOÛT DU SANG",
+						"en": "A TASTE OF BLOOD"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Le sang excite toujours les requins.",
+								"en": "There’s blood in the water."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain réalise immédiatement une activation de personnage avec King Shark. Il peut seulement effectuer une attaque au corps-à-corps avec la caractéristique de 2 dés rouges. Pour cette attaque, il bénéficie de la compétence coup circulaire de niveau 2.",
+										"en": "The villain immediately performs a character activation with King Shark. They only carry out a melee attack with 2 red dice. For this attack, King Shark benefits from the circular strike skill level 2."
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "King Shark effectue immédiatement un mouvement.",
+								"en": "King Shark immediately performs a movement."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain réalise immédiatement une activation de personnage avec King Shark. Il effectue seulement sa première étape de mouvement.",
+										"en": "The villain immediately performs a character activation with King Shark. They only carry out their First Movement Step."
+							}
+						}
+					}
+				}
+			}
         },		
-		{
-            "id": "rookie",
-            "origins": "batman-new-52"
-        },
-		{
-            "id": "batman-beyond",
-            "origins": "batman-beyond"
-        },
-		{
-            "id": "batman-rebirth",
-            "origins": "batman-rebirth"
-        },
-		{
-            "id": "hawkfire",
-            "origins": "hawkfire"
-        },		
-		{
-            "id": "etrigan",
-            "origins": "etrigan"
-        },		
-		{
-            "id": "catwoman-hush",
-            "origins": "catwoman"
-        },	
-		{
-            "id": "reaper",
-            "origins": "reaper"
-        },		
-		{
-            "id": "carmine-falcone",
-            "origins": "carmine-falcone"
-        },		
-		{
-            "id": "arnold-wesker",
-            "origins": "arnold-wesker"
-        },		
-		{
-            "id": "arnold-wesker-scarface",
-            "origins": "arnold-wesker"
-        },		
-		{
-            "id": "peyton-riley",
-            "origins": "peyton-riley"
-        },		
-		{
-            "id": "peyton-riley-scarface",
-            "origins": "peyton-riley"
-        },		
-		{
-            "id": "white-rabbit",
-            "origins": "white-rabbit"
-        },
-		{
-            "id": "uriah-boone",
-            "origins": "uriah-boone"
-        },
-		{
-            "id": "shen-fang",
-            "origins": "shen-fang"
-        },
-		{
-            "id": "cluemaster",
-            "origins": "cluemaster"
-        },
-		{
-            "id": "deacon-blackfire",
-            "origins": "deacon-blackfire"
-        },
-		{
-            "id": "kgbeast",
-            "origins": "kgbeast"
-        },		
-		{
-            "id": "nobody",
-            "origins": "nobody"
-        },		
-		{
-            "id": "owlman-lincoln-march",
-            "origins": "owlman-lincoln-march"
-        },		
-		{
-            "id": "amygdala",
-            "origins": "amygdala"
-        },
-		{
-            "id": "architect",
-            "origins": "architect"
-        },
-		{
-            "id": "ghost-dragons",
-            "origins": "ghost-dragons"
-        },		
-		{
-            "id": "great-white-shark",
-            "origins": "great-white-shark"
-        },	
-		{
-            "id": "mr-freeze-new52",
-            "origins": "mr-freeze"
+  		{
+            "id": "rick-flag",
+            "origins": "suicide-squad",
+            "image": "data/powers/img/rick-flag.png",
+            "name": {
+                "fr": "RICK FLAG",
+                "en": "RICK FLAG"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "TACTIQUE MILITAIRE",
+						"en": "MILITARY TACTICS"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "D’ascendance militaire, il a toujours su mener ses hommes au combat.",
+								"en": "Of military descent, he always knew how to lead his men into battle."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros active immédiatement tous les personnages d’une tuile de sbires qu’il contrôle.",
+										"en": "The hero activates all the characters of a henchmen tile that they control."
+							}
+						}
+					}
+				}
+			}
         }
 		
-    ]
-	
-	
-	
+		
+	]
 	
 	
 }
