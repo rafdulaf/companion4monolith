@@ -306,15 +306,19 @@ var Maps = {
         mapC = $('#' + id);
         mapC.html("");
         mapC.show();
+        
+        var tabs = [{label: Maps._i18n[Language]['los'], id: "map-map-map"}];
+        var map = Maps._getMap();
+        var rules = map.description.rules;
+        if (rules)
+        {
+            tabs.push({label: Maps._i18n[Language]['help'], id: "map-map-help"});
+        }
+        
+        Nav.createTabs(id, tabs, Maps._onSetPosition);
 
-        Nav.createTabs(id, [
-                {label: Maps._i18n[Language]['los'], id: "map-map-map"},
-                {label: Maps._i18n[Language]['help'], id: "map-map-help"}
-            ],
-            Maps._onSetPosition);
-
-        $("#map-map-help")
-            .addClass("map-map-help");
+        $("#map-map-help").append("<div class='map-map-help'></div>");
+        
         $("#map-map-map")
             .addClass("map-map-wrapper map-map-wrapper-display-help")
             .attr("data-help", Maps._i18n[Language]['start'])
@@ -328,30 +332,30 @@ var Maps = {
         var map = Maps._getMap();
         var rules = map.description.rules;
 
-        var id = "maps-map";
-        var mapC = $('#' + id + " .map-map-help");
-
-        var helpImageSize = $(document.body).height() * .3; // Css says 30vh
-        var bbSize = 10 / helpImageSize * 100; // 1 legend is 20px. so center is 10px at left/top
-
-        function _applyRotate(a, n1, n2)
-        {
-            switch (Maps._rotation)
-            {
-                case 0: return a ? n1 - bbSize        : n2 - bbSize;
-                case 1: return a ? n2 - bbSize        : 100 - n1 - bbSize;
-                case 2: return a ? 100 - n1 - bbSize  : 100 - n2 - bbSize;
-                case 3: return a ? 100 - n2 - bbSize  : n1 - bbSize;
-            }
-        }
-
-        var aide = "";
-            aide += "<div class='map-help-thumb'>";
-            aide += "<div style=\"transform: rotate(" + (-90*Maps._rotation) + "deg)\">";
-
-        var code = "";
         if (rules)
         {
+            var id = "maps-map";
+            var mapC = $('#' + id + " .map-map-help");
+    
+            var helpImageSize = $(document.body).height() * .3; // Css says 30vh
+            var bbSize = 10 / helpImageSize * 100; // 1 legend is 20px. so center is 10px at left/top
+    
+            function _applyRotate(a, n1, n2)
+            {
+                switch (Maps._rotation)
+                {
+                    case 0: return a ? n1 - bbSize        : n2 - bbSize;
+                    case 1: return a ? n2 - bbSize        : 100 - n1 - bbSize;
+                    case 2: return a ? 100 - n1 - bbSize  : 100 - n2 - bbSize;
+                    case 3: return a ? 100 - n2 - bbSize  : n1 - bbSize;
+                }
+            }
+    
+            var aide = "";
+                aide += "<div class='map-help-thumb'>";
+                aide += "<div style=\"transform: rotate(" + (-90*Maps._rotation) + "deg)\">";
+    
+            var code = "";
             for (var i=0; i < rules.length; i++) {
                 if (rules[i].areas)
                 {
@@ -383,9 +387,7 @@ var Maps = {
                     }
                 }
             }
-
-        }
-
+    
             aide += "<div class='img-wrap'>"
             if (code)
             {
@@ -398,8 +400,6 @@ var Maps = {
             aide += "</div>";
 
 
-        if (rules)
-        {
             aide += "<ul>";
             for (var i=0; i < rules.length; i++)
             {
@@ -416,9 +416,9 @@ var Maps = {
                 + "</li>";
             }
             aide += "</ul>"
+    
+            mapC.html(aide);
         }
-
-        mapC.html(aide);
     },
 
     _replace: function(text)

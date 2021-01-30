@@ -178,7 +178,6 @@
     box-sizing: border-box;
     overflow: auto;
     position: relative;
-    width: 50% !important;
 }
 
 .map-map .map-map-wrapper {
@@ -276,8 +275,8 @@
 }
 
 .map-map-help {
-    padding: 10px;
     font-size: calc(var(--secondary-size) * 1.5rem);
+    padding: 10px;
 }
 
 .map-map-help h1 {
