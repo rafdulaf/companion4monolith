@@ -5241,10 +5241,10 @@
 			"count": 2
         },
 		{
-            "id": "jarvis-thetch",
+            "id": "jervis-thetch",
             "name": {
-                "fr": "JARVIS THETCH",
-                "en": "JARVIS THETCH"
+                "fr": "JERVIS THETCH",
+                "en": "JERVIS THETCH"
             },
             "color": "gray",
             "tile-type": "single",
@@ -5286,11 +5286,11 @@
 					}					
 				},
             "rank": "leader",
-            "image": "data/tiles/img/jarvis-thetch.png",
-            "imageHD": "data/tiles/img/jarvis-thetch_hd.png",
+            "image": "data/tiles/img/jervis-thetch.png",
+            "imageHD": "data/tiles/img/jervis-thetch_hd.png",
             "image_location": {"x":66, "y":48},
             "image_zoom": 96,
-            "model": "jarvis-thetch",
+            "model": "jervis-thetch",
             "origins": "arkham-asylum",
 			"count": 2
         },
