@@ -1161,16 +1161,1455 @@
 				}
 			}
         },
+		 		{
+            "id": "bane",
+            "origins": "corebox",
+            "image": "data/powers/img/bane.png",
+            "name": {
+                "fr": "BANE",
+                "en": "BANE"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "INJECTION DE VENIN",
+						"en": "VENOM INJECTION"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Bane s’injecte une grande dose de venin.",
+								"en": "Bane injects himself with a massive dose of Venom."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain peut transformer Bane en Bane Venom. Pour cela, il remplace la figurine, la tuile et le pion point de vie de Bane par ceux de Venom Bane. L’événement devient celui de Venom Bane.",
+										"en": "The villain can transform Bane into Venom Bane. To do so, they replace Bane’s tile, miniature and life point marker with those of Venom Bane. The event then becomes that of Venom Bane."
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "Bane s’injecte une petite dose de venin.",
+								"en": "Bane injects himself with a small dose of Venom."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain réalise immédiatement une activation de personnage avec Bane durant laquelle il ne peut effectuer qu’une action.",
+										"en": "The villain immediately performs a character activation with Bane during which they can only carry out one action."
+							}
+						}
+					}
+				}
+			}
+        },
+  		{
+            "id": "bane-venom",
+            "origins": "corebox",
+            "image": "data/powers/img/bane-venom.png",
+            "name": {
+                "fr": "BANE",
+                "en": "BANE"
+            },
+            "subtitle": {
+                "fr": "(VENOM INJECTED)",
+                "en": "(VENOM INJECTED)"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "INJECTION INCONTRÔLÉE",
+						"en": "UNCONTROLLED INJECTION"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Bane ne peut plus s’empêcher de s’injecter du venin.",
+								"en": "Bane cannot stop himself from injecting Venom."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain réalise immédiatement une activation de personnage avec Venom Bane. À la fin de cette activation, il subit 2 blessures.",
+										"en": "The villain immediately performs a character activation with Venom Bane. At the end of the activation, he suffers 2 wounds."
+							}
+						}
+					}
+				}
+			}
+        },		
+  		{
+            "id": "black-mask",
+            "origins": "corebox",
+            "image": "data/powers/img/black-mask.png",
+            "name": {
+                "fr": "BLACK MASK",
+                "en": "BLACK MASK"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "MOTIVATION EXTRÊME",
+						"en": "EXTREME MOTIVATION"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Black Mask s’en prend aux siens pour motiver ses troupes.",
+								"en": "Black Mask hurts one of his own to motivate the rest."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain neutralise un personnage ami dans la ligne de vue de Black Mask. Dans ce cas, il réalise une activation de personnage avec chacun des personnages d’une tuile de sbires ou d’élites qu’il contrôle .",
+										"en": "The villain neutralizes an ally character within line of sight of Black Mask. Then, they may perform a character activation with each character of one of the henchmen or elite tiles they control."
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "Black Mask ne fait rien.",
+								"en": "Black Mask does nothing."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Aucun effet.",
+										"en": "No effect."
+							}
+						}
+					}
+				}
+			}
+        },
+  		{
+            "id": "clayface",
+            "origins": "corebox",
+            "image": "data/powers/img/clayface.png",
+            "name": {
+                "fr": "CLAYFACE",
+                "en": "CLAYFACE"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "AVATAR",
+						"en": "AVATAR"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Clayface prend l’apparence d’un autre.",
+								"en": "Clayface takes on the appearance of someone else."
+							},
+							"type" : "permanent",
+							"longdescription": {
+										"fr": "Lors de la composition de l’équipe, immédiatement après que les deux joueurs ont choisi leur QG, le vilain sélectionne une tuile de QG Héros ou Vilain. On appelle le personnage ainsi sélectionné «avatar».\nIl récupère la figurine et la tuile correspondante et les place à côté de son poste de commandement.\nLors de l’activation de la tuile évènement :\n-- si l’avatar n’est pas en jeu, le vilain remplace la tuile et la figurine de Clayface par celles de l’avatar,\n-- si l’avatar est en jeu, le vilain remplace la tuile et la figurine de l’avatar par celles de Clayface.\nLorsque l’avatar est en jeu, il ne possède aucun trait ni pouvoir de QG. À chaque fois qu’il doit subir une ou plusieurs blessures, les points de vie sont retirés à Clayface. Lorsque Clayface est neutralisé, l’avatar l’est également.\nTant que l’avatar ou Clayface est en jeu, cet événement spécial est associé à la tuile événement.",
+										"en": "During the Team Composition step, immediately after the two players have chosen their Leader, the villain chooses a Hero or Villain Leader/Lieutenant tile (separate from the ones they’ve already chosen). The character selected is called the «avatar».\nThe villain takes the miniature and the corresponding tile and places them next to their command post.\nDuring the activation of the event tile: \n-- If the avatar is not in play, the villain replaces Clayface’s tile and miniature with that of the avatar.\n-- If the avatar is in play, the villain replaces the avatar’s tile and miniature with that of Clayface. \nWhen the avatar is in play, they have no traits or Leader powers. Each time the avatar must suffer one or several wounds, the life points are taken away from Clayface instead. When Clayface is neutralized, so is the avatar.\nAs long as the avatar or Clayface is in play, this special event is associated with the event tile."
+							}
+						}
+					}
+				}
+			}
+        },		
+  		{
+            "id": "deadshot",
+            "origins": "corebox",
+            "image": "data/powers/img/deadshot.png",
+            "name": {
+                "fr": "DEADSHOT",
+                "en": "DEADSHOT"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "RICOCHET",
+						"en": "RICOCHET"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Deadshot effectue un tir spécial.",
+								"en": "Deadshot makes a special shot."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain réalise immédiatement une activation de personnage avec Deadshot. Il effectue seulement une attaque à distance avec la caractéristique de 2 dés blancs. Pour cette action, il ignore les restrictions liées aux lignes de vue.",
+										"en": "The villain immediately performs a character activation with Deadshot. They can only carry out a ranged attack with 2 white dice. The restrictions related to lines of sight are ignored."
+							}
+						}
+					}
+				}
+			}
+        },		
+  		{
+            "id": "deathstroke",
+            "origins": "corebox",
+            "image": "data/powers/img/deathstroke.png",
+            "name": {
+                "fr": "DEATHSTROKE",
+                "en": "DEATHSTROKE"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "POINT FAIBLE",
+						"en": "WEAK SPOT"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Deathstroke effectue une charge et attaque directement le point faible de son adversaire.",
+								"en": "Deathstroke charges ahead, attacking an opponent’s weak spot."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain réalise immédiatement une activation de personnage avec Deathstroke. Il effectue seulement sa première étape de mouvement.\nLe vilain désigne ensuite un personnage situé dans la même zone que Deathstroke et lance un dé rouge. Ce personnage subit autant de blessures que de succès obtenus.",
+										"en": "The villain immediately performs a character activation with Deathstroke. They only carry out their First Movement Step.\nThe villain then chooses a character in the same area as Deathstroke and rolls a red die. The designated character suffers as many wounds as the number of successes."
+							}
+						}
+					}
+				}
+			}
+        },
+  		{
+            "id": "doctor-death",
+            "origins": "corebox",
+            "image": "data/powers/img/doctor-death.png",
+            "name": {
+                "fr": "DOCTOR DEATH",
+                "en": "DOCTOR DEATH"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "SÉRUM DU BERSERK",
+						"en": "BERSERK SERUM"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Doctor Death injecte son sérum à un allié.",
+								"en": "Doctor Death injects an ally with serum."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain réalise immédiatement une activation de personnage avec une figurine amie située dans la zone de Doctor Death. Pour cela, il suit les étapes d’activation d’un personnage contrôlé par une tuile avec les exceptions suivantes :\n-- le personnage peut effectuer sa première étape de mouvement mais pas la seconde.\n-- lors de l’étape de déclaration d’une action autre que le mouvement, il ne peut déclarer qu’une action d’attaque au corps à corps pour laquelle il ajoute 2 dés blanc à sa caractéristique d’attaque.\nÀ la suite de cette activation, il est neutralisé",
+										"en": "The villain immediately performs a character activation with an ally miniature in the same area as Doctor Death. To do so, they follow the Activate a Character Controlled by a Tile steps with the following exceptions:\n-- The character can perform their First Movement Step but not the second.\n-- During the Declare an Action Other than Movement step, they can only declare a melee attack during which they add 2 white dice to their attack characteristic.\nFollowing this activation, the character is neutralized."
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "Doctor Death ne fait rien.",
+								"en": "Doctor Death does nothing.No effect."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Aucun effet.",
+										"en": ""
+							}
+						}
+					}
+				}
+			}
+        },
+  		{
+            "id": "firefly",
+            "origins": "corebox",
+            "image": "data/powers/img/firefly.png",
+            "name": {
+                "fr": "FIREFLY",
+                "en": "FIREFLY"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "PURIFICATION PAR LE FEU",
+						"en": "PURIFICATION BY FIRE"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Firefly réalimente tous les incendies sur le plateau.",
+								"en": "Firefly feeds all fires on the board."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain retourne tous les pions flamme face en dissipation sur leurs face pleine visible",
+										"en": "The villain turns all the flame tokens dissipating side up to their full side up."
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "Firefly effectue immédiatement un mouvement.",
+								"en": "Firefly immediately performs a movement."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain réalise immédiatement une activation de personnage avec Firefly. Il effectue seulement sa première étape de mouvement.",
+										"en": "The villain immediately performs a character activation with Firefly. They only carry out their First Movement Step."
+							}
+						}
+					}
+				}
+			}
+        },		
+  		{
+            "id": "harley-queen",
+            "origins": "corebox",
+            "image": "data/powers/img/harley-queen.png",
+            "name": {
+                "fr": "HARLEY QUINN",
+                "en": "HARLEY QUINN"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "FOLIE DOUCE",
+						"en": "SWEET MADNESS"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Harley Quinn agit de manière imprévisible.",
+								"en": "Harley Quinn acts unpredictably."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain lance 1 dé orange sans relance possible. Le nombre de succès obtenus indique l’effet de l’événement :\n-- 2 succès (cleptomanie) : le vilain peut prendre un DPA de la zone de potentiel d’activation indisponible du héros et le met dans sa propre zone de potentiel d’activation disponible,\n-- 1 succès (schizophrénie) : le vilain intervertit les positions de la figurine d’Harley Quinn et d’une figurine qu’il contrôle située sur une autre zone,\n-- 0 succès (bipolaire) : le vilain intervertit les positions de deux tuiles de sa rivière, autre que la tuile événement.",
+										"en": "The villain rolls 1 orange die that cannot be rerolled. The number of successes indicate the effect of the event:\n-- 2 successes (kleptomania): the villain can take an APD from the hero’s unavailable activation potential zone and put it in their own available activation potential zone.\n-- 1 success (schizophrenia): the villain exchanges Harley Quinn’s miniature with another miniature they control, from a different area.\n-- 0 success (bipolar): the villain exchanges the positions of two tiles in their river other than the event tile."
+							}
+						}
+					}
+				}
+			}
+        },		
+  		{
+            "id": "harley-queen-hammer",
+            "origins": "corebox",
+            "image": "data/powers/img/harley-queen-hammer.png",
+            "name": {
+                "fr": "HARLEY QUINN",
+                "en": "HARLEY QUINN"
+            },
+            "subtitle": {
+                "fr": "(WITH HAMMER)",
+                "en": "(WITH HAMMER)"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "FOLIE DOUCE",
+						"en": "SWEET MADNESS"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Harley Quinn agit de manière imprévisible.",
+								"en": "Harley Quinn acts unpredictably."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain lance 1 dé orange sans relance possible. Le nombre de succès obtenus indique l’effet de l’événement :\n-- 2 succès (cleptomanie) : le vilain peut prendre un DPA de la zone de potentiel d’activation indisponible du héros et le met dans sa propre zone de potentiel d’activation disponible,\n-- 1 succès (schizophrénie) : le vilain intervertit les positions de la figurine d’Harley Quinn et d’une figurine qu’il contrôle située sur une autre zone,\n-- 0 succès (bipolaire) : le vilain intervertit les positions de deux tuiles de sa rivière, autre que la tuile événement.",
+										"en": "The villain rolls 1 orange die that cannot be rerolled. The number of successes indicate the effect of the event:\n-- 2 successes (kleptomania): the villain can take an APD from the hero’s unavailable activation potential zone and put it in their own available activation potential zone.\n-- 1 success (schizophrenia): the villain exchanges Harley Quinn’s miniature with another miniature they control, from a different area.\n-- 0 success (bipolar): the villain exchanges the positions of two tiles in their river other than the event tile."
+							}
+						}
+					}
+				}
+			}
+        },			
+  		{
+            "id": "hugo-strange",
+            "origins": "arkham-asylum",
+            "image": "data/powers/img/hugo-strange.png",
+            "name": {
+                "fr": "HUGO STRANGE",
+                "en": "HUGO STRANGE"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "HYPNOSE",
+						"en": "HYPNOSIS"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Hugo Strange se sert de ses connaissances de l’esprit humain pour contrôler ses adversaires",
+								"en": "Hugo Strange uses his knowledge of the human spirit to control his opponents."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain réalise immédiatement une activation de personnage avec une ou deux figurines différentes de sbires ou d’élites d’une même tuile contrôlée par le héros. Il effectue seulement sa première étape de mouvement et ne peut pas effectuer de chute ni entrer dans une zone de terrain dangereux.",
+										"en": "The villain immediately performs a character activation with one or two different henchmen or elite miniatures of the same tile controlled by the hero. They only carry out their First Movement Step. During this activation, they cannot perform a fall or enter a dangerous terrain area."
+							}
+						}
+					}
+				}
+			}
+        },
+  		{
+            "id": "hush",
+            "origins": "corebox",
+            "image": "data/powers/img/hush.png",
+            "name": {
+                "fr": "HUSH",
+                "en": "HUSH"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "LEADER CHARISMATIQUE",
+						"en": "CHARISMATIC LEADER"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Hush a réussi à engager un lieutenant supplémentaire dans son équipe.",
+								"en": "Hush has managed to hire an additional lieutenant."
+							},
+							"type" : "permanent",
+							"longdescription": {
+										"fr": "Immédiatement après avoir choisi son QG, le vilain choisit une tuile de QG/lieutenant de son camp. Celle-ci remplace la tuile événement.\nLors de la mise en place, la figurine correspondante est placée sur la même zone que celle de Hush. Ce personnage commence la partie avec sa valeur de points de vie divisée par deux, arrondie à l’inférieur.",
+										"en": "Immediately after having chosen their Leader, the villain choses a Leader/Lieutenant tile from their side. This tile replaces the event tile.\nDuring setup, place the miniature that corresponds to this tile in the same area as the Hush miniature. This character starts the game with their life point value divided by two and rounded down to the nearest number."
+							}
+						}
+					}
+				}
+			}
+        },
+  		{
+            "id": "jason-todd-hush",
+            "origins": "corebox",
+            "image": "data/powers/img/jason-todd-hush.png",
+            "name": {
+                "fr": "JASON TODD",
+                "en": "JASON TODD"
+            },
+            "subtitle": {
+                "fr": "(HUSH)",
+                "en": "(HUSH)"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "CHARGE BRUTALE",
+						"en": "BRUTAL CHARGE"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Jason Todd fonce sur un adversaire pour lui asséner uncoup puissant.",
+								"en": "Jason Todd charges at an enemy to strike them with a powerful blow."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain réalise immédiatement une activation de personnage avec Jason Todd Hush. Pour cela, il suit les étapes d’activation d’un personnage contrôlé par une tuile avec les exceptions suivantes :\n-- Jason Todd peut effectuer sa première étape de mouvement mais pas la seconde;\n-- Lors de l’étape de déclaration d’une action autre que le mouvement, il ne peut déclarer qu’une action d’attaque au corps-à-corps avec la caractéristique de 2 dés rouges.",
+										"en": "The villain immediately performs a character activation with Jason Todd. To do so, they follow the Activate a Character Controlled by a Tile steps with the following exceptions:\n-- Jason Todd can perform his First Movement Step but not the second.\n-- During the Declare an Action Other than Movement step, they can only declare a melee attack with 2 red dice."
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "Jason Todd ne fait rien.",
+								"en": "Jason Todd does nothing."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Aucun effet.",
+										"en": "No effect."
+							}
+						}
+					}
+				}
+			}
+        },
+  		{
+            "id": "jervis-thetch",
+            "origins": "arkham-asylum",
+            "image": "data/powers/img/jervis-thetch.png",
+            "name": {
+                "fr": "JERVIS TETCH",
+                "en": "JERVIS TETCH"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "CONTRÔLE MENTAL",
+						"en": "MIND CONTROL"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Jervis Tetch se sert d’un de ses dispositifs de contrôle mental pour augmenter les membres de son gang.",
+								"en": "Jervis Tetch uses one of his mind control devices to add members to his gang."
+							},
+							"type" : "permanent",
+							"longdescription": {
+										"fr": "Lors de la fin de l’étape de composition de l’équipe, le vilain remplace sa tuile événement par une tuile disponible de sbire ou d’élite du camp du héros. Il la contrôle. Si c’est une tuile de sbires, le vilain place 3 figurines correspondantes dans la zone de Jervis Tetch. Si c’est une tuile d’élites, le vilain place 2 figurines correspondantes dans la zone de Jervis Tetch.",
+										"en": "At the end of the Team Composition step, the villain replaces their event tile with an available henchmen or elite tile from the hero side. They now control it. If this is a henchmen tile, the villain places the 3 corresponding miniatures in the same area as Jervis Tetch. If this is an elite tile, the villain places the 2 corresponding miniatures in the same area as Jervis Tetch."
+							}
+						}
+					}
+				}
+			}
+        },
+ 		{
+            "id": "joker",
+            "origins": "corebox",
+            "image": "data/powers/img/joker.png",
+            "name": {
+                "fr": "THE JOKER",
+                "en": "THE JOKER"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "VENIN DU JOKER",
+						"en": "JOKER VENOM"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "The Joker déploie son venin sur le terrain.",
+								"en": "The Joker spreads his venom on the battlefield."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain place immédiatement un pion venin du Joker dans la zone d’un personnage du camp du vilain.\nCe pion suit les mêmes règles que les pions gaz et augmente de 2 le niveau de terrain dangereux de la zone où il se situe.",
+										"en": "The villain immediately places a Joker venom token in the same area as a character from the villain’s side.\nThis token follows the same rules as gas tokens and increases the dangerous terrain level by 2 in the same area as it is located."
+							},
+							"tokens" : {
+								"0": {
+									"name": {
+										"fr": "PION VENIN DU JOKER",
+										"en": "JOKER VENOM TOKEN"
+										},
+									"image": ["data/powers/img/joker-venom.png"]
+								}					
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "The Joker effectue immédiatement un mouvement.",
+								"en": "The Joker immediately performs a movement."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain réalise immédiatement une activation de personnage avec The Joker. Il effectue seulement sa première étape de mouvement.",
+										"en": "The villain immediately performs a character activation with The Joker. They only carry out their First Movement Step."
+							}
+						}
+					}
+				}
+			}
+        },
+  		{
+            "id": "joker-mr-joe",
+            "origins": "corebox",
+            "image": "data/powers/img/joker-mr-joe.png",
+            "name": {
+                "fr": "The JOKER",
+                "en": "The JOKER"
+            },
+            "subtitle": {
+                "fr": "(Mr. JOE)",
+                "en": "(Mr. JOE)"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "TERREUR",
+						"en": "TERROR"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "The Joker Mr. Joe se mutile afin d’effrayer ses adversaires.",
+								"en": "The Joker Mr. Joe mutilates himself to scare his opponents."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "The Joker Mr. Joe subit immédiatement 1 blessure. Puis le vilain place la tuile d’un personnage contrôlé par le héros situé dans la zone de The Joker Mr. Joe en dernière position de la rivière du héros",
+										"en": "The Joker Mr. Joe immediately suffers 1 wound. Then, the villain places the tile of a character controlled by the hero, located in the same area as The Joker Mr. Joe, in the last position of the hero’s river."
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "The Joker Mr. Joe effectue immédiatement un mouvement.",
+								"en": "The Joker Mr. Joe immediately performs a movement."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain réalise immédiatement une activation de personnage avec The Joker Mr. Joe. Il effectue seulement sa première étape de mouvement.",
+										"en": "The villain immediately performs a character activation with The Joker Mr. Joe. They only carry out their First Movement Step."
+							}
+						}
+					}
+				}
+			}
+        },
+  		{
+            "id": "killer-croc-hush",
+            "origins": "corebox",
+            "image": "data/powers/img/killer-croc-hush.png",
+            "name": {
+                "fr": "KILLER CROC",
+                "en": "KILLER CROC"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "CHARGE BESTIALE",
+						"en": "BESTIAL CHARGE"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Killer Croc effectue une charge féroce.",
+								"en": "Killer Croc performs a ferocious charge."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain réalise immédiatement une activation de personnage avec Killer Croc. Pour cela, il suit les étapes d’activation d’un personnage contrôlé par une tuile avec les exceptions suivantes :\n-- Killer Croc peut effectuer sa première étape de mouvement mais pas la seconde.\n-- lors de l’étape de déclaration d’une action autre que le mouvement, il ne peut déclarer qu’une action d’attaque au corps-à-corps avec la caractéristique de 1 dé orange par limite de zone franchie au cours du mouvement précédent.",
+										"en": "The villain immediately performs a character activation with Killer Croc. To do so, they follow the Activate a Character Controlled by a Tile steps with the following exceptions: \n-- Killer Croc can perform his First Movement Step but not the second.\n-- During the Declare an Action Other than Movement step, they can only declare a melee attack with 1 orange die per number of boundaries crossed during the previous movement."
+							}
+						}
+					}
+				}
+			}
+        },
+  		{
+            "id": "killer-croc",
+            "origins": "corebox",
+            "image": "data/powers/img/killer-croc.png",
+            "name": {
+                "fr": "KILLER CROC",
+                "en": "KILLER CROC"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "CHARGE BESTIALE",
+						"en": "BESTIAL CHARGE"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Killer Croc effectue une charge féroce.",
+								"en": "Killer Croc performs a ferocious charge."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain réalise immédiatement une activation de personnage avec Killer Croc. Pour cela, il suit les étapes d’activation d’un personnage contrôlé par une tuile avec les exceptions suivantes :\n-- Killer Croc peut effectuer sa première étape de mouvement mais pas la seconde.\n-- lors de l’étape de déclaration d’une action autre que le mouvement, il ne peut déclarer qu’une action d’attaque au corps-à-corps avec la caractéristique de 1 dé orange par limite de zone franchie au cours du mouvement précédent.",
+										"en": "The villain immediately performs a character activation with Killer Croc. To do so, they follow the Activate a Character Controlled by a Tile steps with the following exceptions: \n-- Killer Croc can perform his First Movement Step but not the second.\n-- During the Declare an Action Other than Movement step, they can only declare a melee attack with 1 orange die per number of boundaries crossed during the previous movement."
+							}
+						}
+					}
+				}
+			}
+        },	
+  		{
+            "id": "killer-moth",
+            "origins": "corebox",
+            "image": "data/powers/img/killer-moth.png",
+            "name": {
+                "fr": "KILLER MOTH",
+                "en": "KILLER MOTH"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "MIASME",
+						"en": "MIASMA"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Le gaz toxique de Killer Moth s’intensifie.",
+								"en": "Killer Moth’s toxic gas intensifies."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain retourne tous les pions gaz face en dissipation sur leurs face pleine visible",
+										"en": "The villain turns all the gaz tokens dissipating side up to their full side up."
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "Killer Moth effectue immédiatement un mouvement.",
+								"en": "Killer Moth immediately performs a movement."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain réalise immédiatement une activation de personnage avec Killer Moth. Il effectue seulement sa première étape de mouvement.",
+										"en": "The villain immediately performs a character activation with Killer Moth. They only carry out their First Movement Step."
+							}
+						}
+					}
+				}
+			}
+        },
+  		{
+            "id": "manbat",
+            "origins": "corebox",
+            "image": "data/powers/img/manbat.png",
+            "name": {
+                "fr": "MAN-BAT",
+                "en": "MAN-BAT"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "LE TRANSPORTEUR",
+						"en": "THE TRANSPORTER"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Man-Bat transporte avec lui une figurine de son camp.",
+								"en": "Man-Bat transports a miniature of his own side."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain réalise immédiatement une activation de personnage avec Man-Bat. Il effectue seulement sa première étape de mouvement. Pour ce mouvement, le vilain doit respecter les exceptions suivantes :\n-- au début du mouvement, il choisit une figurine située dans la zone de Man-Bat qu’il retire du plateau. Cette figurine est appelée le passager.\n-- pour ce mouvement, l’envergure de Man-Bat est égale à celle de Man-Bat plus celle du passager,\n-- à la fin du mouvement de Man-Bat, le vilain place la figurine du passager dans la zone de Man-Bat",
+										"en": "The villain immediately performs a character activation with Man-Bat. They only carry out their First Movement Step with the following exceptions:\n-- At the start of the movement step, the villain choses a miniature located in the same area as Man-Bat and removes it from the board. This miniature is called the passenger.\n-- For this movement, the size index of Man-Bat is that of Man-Bat plus that of his passenger.\n-- At the end of Man-Bat’s movement, the villain places the miniature of the passenger in the same area as Man-Bat."
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "Man-Bat effectue immédiatement un mouvement.",
+								"en": "Man-Bat immediately performs a movement."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain réalise immédiatement une activation de personnage avec Man-Bat. Il effectue seulement sa première étape de mouvement.",
+										"en": "The villain immediately performs a character activation with Man-Bat. They only carry out their First Movement Step."
+							}
+						}
+					}
+				}
+			}
+        },
+  		{
+            "id": "mr-freeze",
+            "origins": "corebox",
+            "image": "data/powers/img/mr-freeze.png",
+            "name": {
+                "fr": "Mr. FREEZE",
+                "en": "Mr. FREEZE"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "ÈRE GLACIAIRE",
+						"en": "ICE AGE"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Mr. Freeze déclenche une bombe de givre.",
+								"en": "Mr. Freeze triggers a frost bomb."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain choisit une zone qui contient un personnage ami. Tous les personnages de cette zone subissent les effets de la compétence immobilisation comme si elles avaient subi une blessure.\nMr. Freeze ignore cet effet .",
+										"en": "The villain chooses an area containing an ally character. All the characters in the same area suffer the effects of the immobilization skill as if they had suffered a wound.\nMr. Freeze ignores this effect."
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "Mr. Freeze effectue immédiatement un mouvement.",
+								"en": "Mr. Freeze immediately performs a movement."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain réalise immédiatement une activation de personnage avec Mr. Freeze. Il effectue seulement sa première étape de mouvement.",
+										"en": "The villain immediately performs a character activation with Mr. Freeze. They only carry out their First Movement Step."
+							}
+						}
+					}
+				}
+			}
+        },		
+  		{
+            "id": "mr-bloom",
+            "origins": "corebox",
+            "image": "data/powers/img/mr-bloom.png",
+            "name": {
+                "fr": "Mr. BLOOM",
+                "en": "Mr. BLOOM"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "MUTATION",
+						"en": "MUTATION"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Mr. Bloom fait muter ses adversaires.",
+								"en": "Mr. Bloom mutates his opponents."
+							},
+							"type" : "permanent",
+							"longdescription": {
+										"fr": "Lors de la composition de l’équipe, le vilain remplace la tuile événement par la tuile de Bloom’s gang. Celle-ci ne peut pas être sélectionnée lors de la composition d’équipe.\nLors de la mise en place, une figurine de Bloom’s gang est mise dans la zone de Mr. Bloom. Les 3 autres figurines sont placées dans la réserve du joueur.\nLorsque Mr. Bloom neutralise un personnage avec une attaque au corps-à-corps, il peut le remplacer par une figurine de Bloom’s gang de sa réserve. Le personnage neutralisé est replacé dans la réserve du joueur qui le contrôle.",
+										"en": "During the Team Composition step, the villain replaces the event tile by the Bloom’s Gang tile. This tile cannot be selected during the composition of the team.\nDuring setup, a Bloom’s Gang miniature is put in the same area as Mr. Bloom. The 3 other miniatures are placed in the player’s character pool.\nWhen Mr. Bloom neutralizes a character with a melee attack, that character may be replaced with a Bloom’s Gang miniature from their pool. The neutralized character is then placed in the controlling player’s character pool."
+							}
+						}
+					}
+				}
+			}
+        },		
+		{
+            "id": "orphan-david-cain",
+            "origins": "corebox",
+            "image": "data/powers/img/orphan-david-cain.png",
+            "name": {
+                "fr": "ORPHAN",
+                "en": "ORPHAN"
+            },
+            "subtitle": {
+                "fr": "(DAVID CAIN)",
+                "en": "(DAVID CAIN)"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "CHÂTIMENT",
+						"en": "PUNISHMENT"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Orphan fonce sur ses ennemis pour les neutraliser.",
+								"en": "Orphan charges in to battle his enemies."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain réalise immédiatement une activation de personnage avec Orphan. Pour cela, il suit les étapes d’activation d’un personnage contrôlé par une tuile avec les exceptions suivantes :\n-- Orphan peut effectuer sa première étape de mouvement mais pas la seconde.\n-- lors de l’étape de déclaration d’une action autre que le mouvement, il ne peut déclarer qu’une action d’attaque au corps-à-corps avec la caractéristique de 2 dés rouges.",
+										"en": "The villain immediately performs a character activation with Orphan. To do so, they follow the Activate a Character Controlled by a Tile steps with the following exceptions:\n-- Orphan can perform his First Movement Step but not the second.\n-- During the Declare an Action Other than Movement step, they can only declare a melee attack with 2 red dice."
+							}
+						}
+					}
+				}
+			}
+        },
+  		{
+            "id": "penguin",
+            "origins": "corebox",
+            "image": "data/powers/img/penguin.png",
+            "name": {
+                "fr": "The PENGUIN",
+                "en": "The PENGUIN"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "PARAPLUIE MULTIFONCTION",
+						"en": "MULTIFUNCTION UMBRELLA"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "The Penguin se sert de son parapluie pour tirer dans le dos de son adversaire.",
+								"en": "The Penguin uses his umbrella to shoot his opponent in the back."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain cible un personnage qui partage une ligne de vue avec The Penguin. Il lance ensuite 1 dé blanc relançable. Le personnage subit autant de blessures que de succès obtenus.",
+										"en": "The villain targets a character that shares a line of sight with The Penguin. They then roll a white die with a reroll. The chosen character suffers as many wounds as successes obtained."
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "The Penguin attaque un adversaire a l’aide d’une lame empoisonnée cachée dans son parapluie.",
+								"en": "The Penguin attacks an opponent with a poisoned blade concealed in his umbrella."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain réalise immédiatement une activation de personnage avec The Penguin. Il effectue seulement une action d’attaque au corps-à-corps avec la caractéristique de 1 dé orange + 1 dé jaune. Pour cette attaque, The Penguin bénéficie de la compétence poison de niveau 2.",
+										"en": "The villain immediately performs a character activation with The Penguin. During this activation, they only carry out a melee attack with 1 orange die + 1 yellow die. For this attack, The Penguin has the poison skill level 2."
+							}
+						}
+					}
+				}
+			}
+        },		
+  		{
+            "id": "poison-ivy",
+            "origins": "corebox",
+            "image": "data/powers/img/poison-ivy.png",
+            "name": {
+                "fr": "POISON IVY",
+                "en": "POISON IVY"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "PHÉROMONE",
+						"en": "PHEROMONE"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Poison Ivy utilise ses phéromones pour contrôler sesadversaires.",
+								"en": "Poison Ivy uses her pheromones to control her opponents."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain réalise immédiatement une activation de personnage avec une figurine contrôlée par le héros, située dans la zone d’une figurine qu’il contrôle luimême. Cette figurine est considérée comme amie du camp des vilains pour l’activation en cours. Le vilain ne peut pas effectuer de chute ni entrer dans une zone de terrain dangereux pendant cette activation.",
+										"en": "The villain immediately performs a character activation with a miniature controlled by the hero and in the same area as a miniature controlled by themselves. This miniature is considered an ally of the villain’s side for the current activation. The villain cannot perform a fall or enter an area of dangerous terrain during this activation."
+							}
+						}
+					}
+				}
+			}
+        },		
+  		{
+            "id": "prof-pyg",
+            "origins": "arkham-asylum",
+            "image": "data/powers/img/prof-pyg.png",
+            "name": {
+                "fr": "Prof. PYG",
+                "en": "Prof. PYG"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "EXPÉRIENCE INHUMAINE",
+						"en": "INHUMAN EXPERIMENT"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Prof. Pyg a transformé des membres de son équipe à l’aide de ses expériences.",
+								"en": "Prof. Pyg has experimented on the members of his team, transforming them."
+							},
+							"type" : "permanent",
+							"longdescription": {
+										"fr": "À la fin de l’étape de composition de l’équipe, le vilain place un pion opération inhumaine sur le socle de chaque figurine d’une tuile de sbire ou d’élite de sa rivière. Cette tuile est appelée tuile opérée.\nLes personnages de la tuile opérée gagnent la compétence horreur de niveau 1. Ils ne peuvent pas effectuer d’action de manipulation ni de réflexion.\nLorsque la tuile événement est activée, le vilain active immédiatement les personnages de la tuile opérée.",
+										"en": "At the end of the Team Composition step, the villain places an Inhuman Experiment token on each miniature’s base of a henchmen or elite tile of their river. This tile is called the Experiment tile.\nThe characters controlled by the Experiment tile gain the horror skill level 1. They cannot perform manipulation or thought actions.\nWhen the event tile is activated, the villain immediately activates the characters controlled by the Experiment tile."
+							},
+							"tokens" : {
+								"0": {
+									"name": {
+										"fr": "PION OPÉRATION INHUMAINE",
+										"en": "INHUMAN EXPERIMENT TOKEN"
+										},
+									"image": ["data/powers/img/inhuman-experiment.png"]
+								}					
+							}
+						}
+					}
+				}
+			}
+        },		
+  		{
+            "id": "rasalghul",
+            "origins": "corebox",
+            "image": "data/powers/img/rasalghul.png",
+            "name": {
+                "fr": "RA’S AL GHUL",
+                "en": "RA’S AL GHUL"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "LEADER VÉTÉRAN",
+						"en": "VETERAN LEADER"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Ra’s Al Ghul dirige ses troupes d’une main de maitre grâce à sa grande expérience du terrain.",
+								"en": "Ra’s Al Ghul commands his troops like a true master of the battlefield."
+							},
+							"warning": {
+								"fr": "Attention : l’étape de dépense du potentiel d’activation ne fait pas partie de l’étape d’activation d’une tuile.",
+								"en": "Important: the Spend the Activation Potential step is not part of the activation step of a tile."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain réalise immédiatement une activation de tuile sauf que son coût d’activation est de 0.",
+										"en": "The villain immediately performs a tile activation, but does not spend any cubes for the activation cost."
+							}
+						}
+					}
+				}
+			}
+        },		
+  		{
+            "id": "ratcatcher",
+            "origins": "corebox",
+            "image": "data/powers/img/ratcatcher.png",
+            "name": {
+                "fr": "RATCATCHER",
+                "en": "RATCATCHER"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "NUÉE DE RATS",
+						"en": "RAT SWARM"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Ratcatcher attire des nuées de rats.",
+								"en": "Ratcatcher attracts hordes of rats."
+							},
+							"type" : "permanent",
+							"longdescription": {
+										"fr": "Lors de l’activation de la tuile événement, le vilain met dans la zone de Ratcatcher un pion nuée de rat si elle n’en contient pas déjà un. Un personnage autre que Ratcatcher qui effectue un déplacement vers une zone avec un pion nuée de rats considère qu’un personnage adverse avec la compétence horreur de niveau 2 s’y trouve.",
+										"en": "During the activation of the event tile, if Ratcatcher’s area does not already contain a Rat Swarm token, the villain places one there. A character (other than the Ratcatcher) that moves to the same area as a Rat Swarm token acts as if an enemy character with the horror skill level 2 is in that area."
+							},
+							"tokens" : {
+								"0": {
+									"name": {
+										"fr": "PION NUÉE DE RAT (4 PIONS)",
+										"en": "RAT SWARM TOKENS (4 TOKENS)"
+										},
+									"image": ["data/powers/img/ratswarm.png","data/powers/img/ratswarm.png","data/powers/img/ratswarm.png","data/powers/img/ratswarm.png"]
+								}					
+							}
+						}
+					}
+				}
+			}
+        },
+  		{
+            "id": "red-hood",
+            "origins": "corebox",
+            "image": "data/powers/img/red-hood.png",
+            "name": {
+                "fr": "RED HOOD",
+                "en": "RED HOOD"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "GANG",
+						"en": "GANG"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Red Hood ne se déplace jamais sans ses acolytes.",
+								"en": "Red Hood never moves without his cronies."
+							},
+							"type" : "permanent",
+							"longdescription": {
+										"fr": "Immédiatement après avoir sélectionné Red Hood lors de l’étape de composition de l’équipe, le vilain remplace la tuile événement par celle de Red Hood’s gang. Lors de la mise en place, trois figurines de Red Hood’s gang sont placées dans la zone de Red Hood.",
+										"en": "Immediately after having selected Red Hood during the Team Composition step, the villain replaces the event tile with the Red Hood’s Gang tile. During setup, three miniatures of Red Hood’s Gang are placed in the same area as Red Hood."
+							}
+						}
+					}
+				}
+			}
+        },
+  		{
+            "id": "scarecrow",
+            "origins": "corebox",
+            "image": "data/powers/img/scarecrow.png",
+            "name": {
+                "fr": "SCARECROW",
+                "en": "SCARECROW"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "GAZ PHOBIQUE",
+						"en": "FEAR TOXIN"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Scarecrow déploie son gaz terrifiant sur le terrain",
+								"en": "Scarecrow uses his terrifying gas on the field."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain place un pion gaz phobique dans la zone d’un personnage qu’il contrôle.\nCe pion suit les mêmes règles que les pions gaz. Les personnages qui effectuent des actions dans la même zone qu’un pion gaz phobique ajoutent 3 à la menace adverse lors du calcul de menace adverse. Les personnages qui possèdent le trait immunité au gaz ignorent les effets de ce pion.",
+										"en": "The villain places a Fear Toxin token in the same area as a character under their control.\nThis token follows the same rules as the gas tokens. Characters that perform actions in the same area as a Fear Toxin token add 3 to the total when calculating the total opposing threat. The characters with the gas immunity trait ignore the effects of this token."
+							},
+							"tokens" : {
+								"0": {
+									"name": {
+										"fr": "PION GAZ PHOBIQUE",
+										"en": "FEAR TOXIN TOKEN"
+										},
+									"image": ["data/powers/img/fear-toxin.png"]
+								}					
+							}
+						}
+					}
+				}
+			}
+        },
+  		{
+            "id": "scarecrow-finch",
+            "origins": "corebox",
+            "image": "data/powers/img/scarecrow-finch.png",
+            "name": {
+                "fr": "SCARECROW",
+                "en": "SCARECROW"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "GAZ PHOBIQUE",
+						"en": "FEAR TOXIN"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Scarecrow déploie son gaz terrifiant sur le terrain",
+								"en": "Scarecrow uses his terrifying gas on the field."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain place un pion gaz phobique dans la zone d’un personnage qu’il contrôle.\nCe pion suit les mêmes règles que les pions gaz. Les personnages qui effectuent des actions dans la même zone qu’un pion gaz phobique ajoutent 3 à la menace adverse lors du calcul de menace adverse. Les personnages qui possèdent le trait immunité au gaz ignorent les effets de ce pion.",
+										"en": "The villain places a Fear Toxin token in the same area as a character under their control.\nThis token follows the same rules as the gas tokens. Characters that perform actions in the same area as a Fear Toxin token add 3 to the total when calculating the total opposing threat. The characters with the gas immunity trait ignore the effects of this token."
+							},
+							"tokens" : {
+								"0": {
+									"name": {
+										"fr": "PION GAZ PHOBIQUE",
+										"en": "FEAR TOXIN TOKEN"
+										},
+									"image": ["data/powers/img/fear-toxin.png"]
+								}					
+							}
+						}
+					}
+				}
+			}
+        },
+  		{
+            "id": "solomon-grundy",
+            "origins": "corebox",
+            "image": "data/powers/img/solomon-grundy.png",
+            "name": {
+                "fr": "SOLOMON GRUNDY",
+                "en": "SOLOMON GRUNDY"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "RÉSURRECTION",
+						"en": "RESURRECTION"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Solomon Grundy est immortel.",
+								"en": "Solomon Grundy is immortal."
+							},
+							"type" : "permanent",
+							"longdescription": {
+										"fr": "Lorsque Solomon Grundy est neutralisé, le vilain suit les étapes habituelles sauf que sa figurine n’est pas retirée du plateau. Elle est couchée dans sa zone (Solomon Grundy est toujours considéré comme neutralisé). Lors de l’activation de la tuile événement, le vilain redresse sa figurine et retourne sa tuile face active visible. Il met ensuite le jeton points de vie sur sa valeur de départ.\nLa tuile événement du vilain ne peut en aucun cas être neutralisée",
+										"en": "When Solomon Grundy is neutralized, the villain follows the usual steps when a character is neutralized with the exception that his miniature is not removed from the board. Instead, it is laid down in his area (Solomon Grundy is still considered neutralized). During the activation of the event tile, the villain sets his miniature upright and turns his tile active side up in the river. They then set his life point marker at its initial value.\nThe villain’s event tile cannot, under any circumstances, be neutralized."
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "Solomon Grundy effectue une course.",
+								"en": "Solomon Grundy picks up the pace."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain réalise immédiatement une activation de personnage avec Solomon Grundy. Il effectue seulement sa première étape de mouvement. Pour ce mouvement, le bonus au premier mouvement de Solomon Grundy est de 4.",
+										"en": "The villain immediately performs a character activation with Solomon Grundy. They only carry out their First Movement Step and the move point bonus for Solomon Grundy’s first movement is 4."
+							}
+						}
+					}
+				}
+			}
+        },		
+  		{
+            "id": "talon",
+            "origins": "corebox",
+            "image": "data/powers/img/talon.png",
+            "name": {
+                "fr": "TALON",
+                "en": "TALON"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "RÉSURRECTION",
+						"en": "RESURRECTION"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Talon est immortel.",
+								"en": "Talon is immortal."
+							},
+							"type" : "permanent",
+							"longdescription": {
+										"fr": "Lorsque Talon est neutralisé, le vilain suit les étapes habituelles sauf que la figurine de Talon n’est pas retirée du plateau. Elle est couchée dans sa zone (Talon est toujours considéré comme neutralisé).\nLors de l’activation de la tuile événement, le vilain redresse sa figurine et retourne sa tuile face active visible. Il met ensuite le jeton points de vie sur sa valeur de départ.\nLa tuile événement du vilain ne peut en aucun cas être neutralisée.",
+										"en": "When Talon is neutralized, the villain follows the usual steps with the exception that Talon’s miniature is not removed from the board. Instead, it is laid down in his area (Talon is still considered neutralized).\nDuring the activation of the event tile, the villain sets his miniature upright and turns his tile active side up. They then set his life point marker at its initial value.\nThe villain’s event tile cannot, under any circumstances, be neutralized."
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "Talon effectue un tir multiple.",
+								"en": "Talon performs a multi shot."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain réalise immédiatement une activation de personnage avec Talon. Pour cela, il suit les étapes d’activation d’un personnage contrôlé par une tuile avec les exceptions suivantes :\n-- Talon ne peut pas déclarer de mouvement,\n-- lors de l’étape de déclaration d’une action autre que le mouvement, il ne peut déclarer que des actions d’attaque à distance avec la caractéristique de 2 dés blancs et un multiplicateur d’action de 3.",
+										"en": "The villain immediately performs a character activation with Talon. During this activation, they only carry out a ranged attack with 2 white dice and an action multiplier of 3."
+							}
+						}
+					}
+				}
+			}
+        },
+  		{
+            "id": "riddler",
+            "origins": "corebox",
+            "image": "data/powers/img/riddler.png",
+            "name": {
+                "fr": "The RIDDLER",
+                "en": "The RIDDLER"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "DUEL D’ESPRIT",
+						"en": "MIND GAMES"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "The Riddler prend l’avantage tactique.",
+								"en": "The Riddler gains a tactical advantage."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain et le héros comparent le nombre de DPAs de leurs zones de potentiel d’activation disponible :\n-- si le vilain en possède moins que le héros, il transfère la différence de DPAs depuis sa zone de potentiel d’activation indisponible vers sa zone de potentiel d’activation disponible. Le héros, quant à lui, transfère autant de DPAs depuis sa zone de potentiel d’activation disponible vers sa zone de potentiel d’activation indisponible. \n-- si le vilain possède autant ou plus de DPAs que le héros, il transfère 1 DPA depuis sa zone de potentiel d’activation indisponible vers sa zone de potentiel d’activation disponible, ainsi que 3 cubes d’énergie depuis sa zone de fatigue vers sa zone d’énergie disponible.",
+										"en": "The villain and the hero compare the number of APDs in their available activation potential zones:\n-- If the villain has fewer than the hero, they transfer the difference in APDs from their unavailable activation potential zone to their available activation potential zone. As for the hero, they transfer this amount of APDs from their available activation potential zone to their unavailable activation potential zone.\n-- If the villain has as many or more APDs than the hero, the villain transfers 1 APD from their unavailable activation potential zone to their available activation potential zone, as well as 3 energy cubes from their fatigue zone to their reserve zone."
+							}
+						}
+					}
+				}
+			}
+        },
+  		{
+            "id": "riddler-year0",
+            "origins": "corebox",
+            "image": "data/powers/img/riddler-year0.png",
+            "name": {
+                "fr": "The RIDDLER",
+                "en": "The RIDDLER"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "DUEL D’ESPRIT",
+						"en": "MIND GAMES"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "The Riddler prend l’avantage tactique.",
+								"en": "The Riddler gains a tactical advantage."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain et le héros comparent le nombre de DPAs de leurs zones de potentiel d’activation disponible :\n-- si le vilain en possède moins que le héros, il transfère la différence de DPAs depuis sa zone de potentiel d’activation indisponible vers sa zone de potentiel d’activation disponible. Le héros, quant à lui, transfère autant de DPAs depuis sa zone de potentiel d’activation disponible vers sa zone de potentiel d’activation indisponible. \n-- si le vilain possède autant ou plus de DPAs que le héros, il transfère 1 DPA depuis sa zone de potentiel d’activation indisponible vers sa zone de potentiel d’activation disponible, ainsi que 3 cubes d’énergie depuis sa zone de fatigue vers sa zone d’énergie disponible.",
+										"en": "The villain and the hero compare the number of APDs in their available activation potential zones:\n-- If the villain has fewer than the hero, they transfer the difference in APDs from their unavailable activation potential zone to their available activation potential zone. As for the hero, they transfer this amount of APDs from their available activation potential zone to their unavailable activation potential zone.\n-- If the villain has as many or more APDs than the hero, the villain transfers 1 APD from their unavailable activation potential zone to their available activation potential zone, as well as 3 energy cubes from their fatigue zone to their reserve zone."
+							}
+						}
+					}
+				}
+			}
+        },		
+  		{
+            "id": "tusk",
+            "origins": "corebox",
+            "image": "data/powers/img/tusk.png",
+            "name": {
+                "fr": "TUSK",
+                "en": "TUSK"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "CHARGE FÉROCE",
+						"en": "FEROCIOUS CHARGE"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Tusk effectue une charge féroce.",
+								"en": "Tusk performs a ferocious charge."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain réalise immédiatement une activation de personnage avec Tusk. Pour cela, il suit les étapes d’activation d’un personnage contrôlé par une tuile avec les exceptions suivantes :\n-- Tusk peut effectuer a première étape de mouvement mais pas la seconde.\n-- lors de l’étape de déclaration d’une action autre que le mouvement, il doit déclarer une action d’attaque au corps-à-corps contre chaque personnage situé dans sa zone.",
+										"en": "The villain immediately performs a character activation with Tusk. To do so, they follow the Activate a Character Controlled by a Tile steps with the following exceptions:\n-- Tusk can perform his First Movement Step but not the second.\n-- During the Declare an Action Other than Movement step, he can only declare a melee attack against each character in his area."
+							}
+						}
+					}
+				}
+			}
+        },
+  		{
+            "id": "two-face-heads",
+            "origins": "corebox",
+            "image": "data/powers/img/two-face-heads.png",
+            "name": {
+                "fr": "TWO-FACE",
+                "en": "TWO-FACE"
+            },
+            "subtitle": {
+                "fr": "(HEADS)",
+                "en": "(HEADS)"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "PERSONNALITÉ MULTIPLE",
+						"en": "SPLIT PERSONALITY"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Two-Face est tiraillé par ses deux facettes.",
+								"en": "Two-face is torn between his two identities."
+							},
+							"type" : "permanent",
+							"longdescription": {
+										"fr": "Immédiatement après avoir sélectionné le QG, le vilain remplace la tuile événement par celle de Twoface Tails.",
+										"en": "Immediately after having selected the Leader, the villain replaces the event tile with Two-face Tails’ tile."
+							}
+						}
+					}
+				}
+			}
+        },
+  		{
+            "id": "two-face-tails",
+            "origins": "corebox",
+            "image": "data/powers/img/two-face-tails.png",
+            "name": {
+                "fr": "TWO-FACE",
+                "en": "TWO-FACE"
+            },
+            "subtitle": {
+                "fr": "(TAILS)",
+                "en": "(TAILS)"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "PERSONNALITÉ MULTIPLE",
+						"en": "SPLIT PERSONALITY"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Two-Face est tiraillé par ses deux facettes.",
+								"en": "Two-face is torn between his two identities."
+							},
+							"type" : "permanent",
+							"longdescription": {
+										"fr": "Immédiatement après avoir sélectionné le QG, le vilain remplace la tuile événement par celle de Twoface Heads.",
+										"en": "Immediately after having selected the Leader, the villain replaces the event tile with Two-face Heads’ tile."
+							}
+						}
+					}
+				}
+			}
+        },
+  		{
+            "id": "wrath",
+            "origins": "corebox",
+            "image": "data/powers/img/wrath.png",
+            "name": {
+                "fr": "WRATH",
+                "en": "WRATH"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "GADGETS",
+						"en": "GADGETS"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Wrath se sert de ses différents gadgets.",
+								"en": "Wrath uses his various gadgets."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain réalise immédiatement une activation de personnage avec Wrath. Il effectue une action parmi celles-ci :\n-- un mouvement. Pour cette action, il effectue seulement sa première étape de mouvement avec la compétence parkour de niveau 3,\n-- une attaque de corps-à-corps. Pour cette action, il bénéficie de la compétence arts martiaux de niveau 1,\n-- une attaque à distance. Pour cette action, il bénéficie de la compétence rafale de niveau 1,\n-- une manipulation complexe. Pour cette action, il bénéficie de la compétence chance de niveau 2,\n-- une réflexion complexe. Pour cette action, il bénéficie de la compétence piratage de niveau 2.",
+										"en": "The villain immediately performs a character activation with Wrath. They perform one of the following actions:\n-- A movement. For this action, Wrath benefits from the parkour skill level 3.\n-- A melee attack. For this action, Wrath benefits from the martial arts skill level 1.\n-- A ranged attack. For this action, Wrath benefits from the burst skill level 1.\n-- A complex manipulation. For this action, Wrath benefits from the luck skill level 2.\n-- A complex thought. For this action, Wrath benefits from the hacking skill level 2."
+							}
+						}
+					}
+				}
+			}
+        },
+  		{
+            "id": "zsasz",
+            "origins": "arkham-asylum",
+            "image": "data/powers/img/zsasz.png",
+            "name": {
+                "fr": "ZSASZ",
+                "en": "ZSASZ"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "SCARIFICATION",
+						"en": "LEAVING SCARS"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Zsasz attaque un adversaire dans sa zone.",
+								"en": "Zsasz attacks an opponent in the same area."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Un personnage du héros dans la zone de Zsasz subit 2 blessures, puis Zsasz en subit 1.",
+										"en": "A hero’s character in the same area as Zsasz suffers two wounds, then Zsasz also suffers 1 wound."
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "Zsasz effectue immédiatement un mouvement.",
+								"en": "Zsasz immediately performs a movement."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain réalise immédiatement une activation de personnage avec Zsasz. Il effectue seulement sa première étape de mouvement.",
+										"en": "The villain immediately performs a character activation with Zsasz. They only carry out their First Movement Step."
+							}
+						}
+					}
+				}
+			}
+        },		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
+
+
 		
   		{
             "id": "template",
@@ -1235,9 +2674,110 @@
 					}
 				}
 			}
-        }
-
+        },
 		
+		
+		
+		
+		
+  		{
+            "id": "red-hood-new52",
+            "origins": "red-hood-new52",
+            "image": "data/powers/img/red-hood-new52.png",
+            "name": {
+                "fr": "RED HOOD",
+                "en": "RED HOOD"
+            },
+            "subtitle": {
+                "fr": "(NEW 52)",
+                "en": "(NEW 52)"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "LA LOI DU TALION",
+						"en": "LAW OF RETRIBUTION"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Le bien, le mal, tout n'est qu'un question de point de vue.",
+								"en": "Good, evil... it just depends on your point of view."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros choisit une zone sur laquelle Red Hood dispose d'une ligne de vue. Il lance un unique dé rouge. Chaque figurine dans a zone (y compris les alliés) subit autant de blessures que de succès obtenus sur ce dé.",
+										"en": "The hero chooses an area with clear line of sight from Red Hood. They roll a single red die. Each miniature in the area (including allies) suffers this number of wounds."
+							}
+						}
+					}
+				}
+			}
+        },
+  		{
+            "id": "batman-beyond",
+            "origins": "batman-beyond",
+            "image": "data/powers/img/batman-beyond.png",
+            "name": {
+                "fr": "BATMAN BEYOND",
+                "en": "BATMAN BEYOND"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "VIF COMME L'ÉCLAIR",
+						"en": "QUICK AS LIGHTNING"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "La jeunesse permet des actions d'éclat.",
+								"en": "Youth allows spectacular actions."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Batman Beyond. Pour cela, il suit les étapes d'ctivation d'un personnage contrôlé par une tuile avec les exceptions suivantes :\n--il peut effectuer sa première étape de mouvement mais pas la seconde;\n--lors de l'étape de déclaration d'une action autre que le mouvement, il ne peut déclarer qu'une action d'attaque au corps-à-corps acec la caractéristique suivante : 1 dé rouge + 1 dé orange.",
+										"en": "The hero immediately performs a character activation with Batman Beyond. To do so, they follow the Activate a Character Controlled by a Tile steps with the following exceptions:\n--They can perform their First Movement Step but not the second.\n--During the Declare an Action Other than Movement step, they can only declare a melee attack with 1 red die + 1 orange die."
+							}
+						}
+					}
+				}
+			}
+        },		
+  		{
+            "id": "batman-new-52",
+            "origins": "batman-new-52",
+            "image": "data/powers/img/batman-new-52.png",
+            "name": {
+                "fr": "BATMAN",
+                "en": "BATMAN"
+            },
+            "subtitle": {
+                "fr": "(JAMES GORDON)",
+                "en": "(JAMES GORDON)"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "SOUTIEN OFFENSIF",
+						"en": "OFFENSIVE SUPPORT"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Quand le danger est à son paroxysme, Rookie est la solution.",
+								"en": "When danger is at its highest level - uneash Rookie is the answer"
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "A la fin de l'étape de sélection du QG, le héros sélectionne la tuile de Rookie et tant que lieutenant. Lors de l'activation de la tuile évènement, le héros réalise une activation de personnage avec Batman (James Gordon). Il effectue seulement sa première étape de mouvement. S'il termine son déplacement dans la zone de Rookie, il rentre dans son robot. Sa figurine est retirée du plateau. Puis, le héros réalise une ctivation de personnage avec Rookie. Il effectue seulement sa première étape de mouvement. L héros peut ensuite effectuer une explosion de niveau 2 dans une zone jusqu'à 2 de distance de Rookie et avec laquelle il partage une ligne de vue. Enfin, la figurine de Batman (James Gordon) est remise dans la zone de Rookie.\nSi Rookie est neutralisé, Batman (James Gordon) effectue seulement sa première étape de mouvement.",
+										"en": "At the end of the Leader Selection step, the hero selets Rookie's tile as heir lieutement. hen the event tile is activated, the heri performs a character activation with Batman (James Gordon). They only carry out their First Movement Step. If Batman ends his movement in Rookie's area, he can transfer into the robotic suit. Batman's miniature is removed from the board. The hero then performs a character activation with Rookie. During this activation, they only carry out their First Movement Step.\nThe hero may then cause a level 2 explosion in an area that Rookie has a clear line of sight, up to 2 areas distance from Rookie. Finally, Batman's miniature is placed back in Rookie's area.\nIf Rookie is neutralized, Batman (James Gordon) only carries out his First Movvement Step."
+							}
+						}
+					}
+				}
+			}
+        }		
 	]
 
 
