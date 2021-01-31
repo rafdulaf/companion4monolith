@@ -1,5 +1,6 @@
 {
-      {
+	"list": [
+		{
             "id": "batman",
             "name": {
                 "fr": "BATMAN",
@@ -7,52 +8,79 @@
             },
             "back": {
                 "text": {
-                    "fr": "template",
-					"en": "template"
+                    "fr": "Témoin de l'assassinat de ses parents alors qu'il n'était qu'un enfant, le richissime Bruce Wayne a juré de livrer une guerre sans merci contre le crime. Il a parcouru le monde pour recevoir l'enseignement des meilleurs détectives et des meilleurs combattants de chaque discipline. De retour à Gotham City pour mettre en oeuvre son plan, il ne lui manquait plus que l'idée d'un totem pour symboliser sa lutte. Il l'a trouvé le jour où une chauve-souris s'est  introduite chez lui. Puisque les criminels sont généralement superstitieux et peureux, Bruce a décidé d'incarner une créature de la nuit. Il est depuis le Batman.",
+					"en": "As a child, Bruce Wayne witnessed the brutal murder of his parents. From that day forward, he resolved to do something about the incessant crime plaguing Gotham City. To prepare himself, he travelled the world, learning from the best detectives and warriors of every discipline. Arriving back in Gotham City, ready to begin his ceaseless fight, he realized something was missing. He needed an emblem-something to symbolize his crusade against crime. One day, when a bat flew into his room, he knew he'd found it. In time, Gotham City's criminal underworld came to understand the meaning of fear. And this fear was given a name: Batman"
 					},
 					"ID": "Bruce Wayne",
 					"size": {
-						"fr": "1,87",
+						"fr": "1,87 m",
 						"en": "6ft 2in"
 					},
 					"weight": {
-						"fr": "95,25",
-						"en": "210"
+						"fr": "95,25 Kg",
+						"en": "210 lbs"
 					}
 				},
             "color": "blue",
             "total-gems": 11,
-            "active-gems": 2,
-            "rest-gems": 6,
+            "active-recup": 2,
+            "rest-recup": 6,
             "freemovement": { 
 				"baselevel": 2,
 				"encombrances": [
 					{ "weight": 4, "movement": 1},
-					{ "weight": 6, "movement": 0},
+					{ "weight": 6, "movement": 0}
 				]
 			},
             "beltsize": 4,
             "size": 1,
             "menace": 1,
 
-            "melee": { "dice": "red", "saturation": 3 },
-            "ranged": { "dice": "orange", "saturation": 3 },
-            "manipulation": { "dice": "orange", "saturation":3 },
-            "thought": { "dice": "red", "saturation": 4 },
-            "defense": { "dice": "orange", "saturation": 5 },
+            "melee": { 
+				"dice": "red", 
+				"saturation": 3, 
+				"skills": [
+					{ "id": "combo", "level": 1 , "encombrance": 4 },
+					{ "id": "martial_arts", "level": 1, "encombrance": 4 }
+				]
+			},
+            "ranged": {
+				"dice": "orange", 
+				"saturation": 3 
+			},
+            "manipulation": { 
+				"dice": "orange", 
+				"saturation":3, 
+				"skills": [
+					{ "id": "munitions_specialist", "level": 1}
+				]
+			},
+            "thought": { 
+				"dice": "red", 
+				"saturation": 4, 
+				"skills": [
+					{ "id": "hacking", "level": 1},
+					{ "id": "investigation", "level": 2}
+				]
+			},
+            "defense": { 
+				"dice": "orange", 
+				"saturation": 5, 
+				"skills": [
+					{ "id": "protected", "level": 2}
+				]
+			},
             "passive-defense": { "dice": "orange"},
             "reroll": {"saturation": 4},
-            "movement": {"saturation": 4},
-            "skills": [
-                { "id": "combo", "level": 1 , "encombrance": 4 },
-                { "id": "martial_arts", "level": 1, "encombrance": 4 },
-                { "id": "pushing_limits", "level": 1 },
-                { "id": "munitions_specialist", "level": 1},
-                { "id": "hacking", "level": 1},
-                { "id": "investigation", "level": 2},
-                { "id": "protected", "level": 2},
-                { "id": "parkour", "level": 1, "encombrance": 3 },
-                { "id": "mobility", "level": 1, "encombrance": 3 }
+            "movement": {
+				"saturation": 4, 
+				"skills": [
+					{ "id": "parkour", "level": 1, "encombrance": 3 },
+					{ "id": "mobility", "level": 1, "encombrance": 3 }
+				]
+			},
+            "otherskills": [
+                { "id": "pushing_limits", "level": 1 }
             ],
             "traits": [
                 {"id": "moral_code"}
@@ -66,11 +94,365 @@
             "image_zoom_back": "176",
             "image_location_back": { "x": "-12", "y": "56" },
             "model": "batman",
-            "origins": "corebox"
-        },	
-		
-		
-		
+            "origins": "corebox",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "CACHÉ DANS LES OMBRES",
+						"en": "HIDE IN THE SHADOWS"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Batman se cache dans les ombres, prêt à fondre sur sa proie.",
+								"en": "Batman conceals his location with a smoke bomb."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros place un pion fumigène dans la zone de Batman, puis place un deuxième pion dans une zone à 1 de distance du premier. Enfin, il en place un troisième dans une zone à 1 de distance du second.\n Ensuite, le héros répartit comme il le souhaite, sans les montrer au vilain, les 3 pions ombre (face ombre visible) dans les 3 zones dans lesquelles il a précédemment placé des pions fumigènes. Le héros retire la figurine de Batman et la place dans sa réserve.\n Un pion ombre peut être pris pour cible d'attaques et d'explosions. Dans ce cas, le héros le retourne :\n-- si la face révélée est une face vide, l'action d'attaque ou l’explosion n’ont aucun effet sur le pion ombre. Celui-ci est ensuite retiré,\n-- si la face révélée est la face Batman, le héros place la figurine de Batman depuis sa réserve dans la zone du pion. Les pions ombre restant sont retirés. L'attaque est ensuite résolue normalement.\nLorsque Batman est activé, s'il reste des pions ombre et que sa figurine n'est pas en jeu, le héros la place depuis sa réserve dans la zone du pion ombre au dos duquel se trouve la face Batman. Batman peut immédiatement effectuer une action d'attaque au corps-à-corps avec sa caractéristique de 1 dé rouge + 1 dé rouge. Le héros active ensuite Batman normalement.",
+										"en": "The hero places a smoke grenade token in the same area as Batman and then places a second token in an area that is at a distance of 1 away from the first one. They then finally place a third token in an area that is at a distance of 1 away from the second one.\n The hero then places, without showing the villain, their 3 shadow tokens (shadow side up) as they choose in the 3 areas with the smoke grenade tokens. The hero then removes the Batman miniature and places him in their reserve pool.\nA shadow token can be targeted for attacks and explosions. In this case, the hero turns over the token:\n-- If the revealed side is blank, the attack action or the explosion have no effect on the shadow token. The shadow token is then removed.\n-- If the revealed side is the Batman side, the hero replaces the Batman miniature in the token’s area. The remaining shadow tokens are removed. The attack is then triggered as usual.\n When Batman is activated, if there are shadow tokens on the board and his miniature is not in play, the hero swaps the Batman miniature from the reserve pool with the shadow token showing the Batman side. Batman can immediately perform a melee attack action with 2 red dice. The hero then activates Batman as usual."
+							},
+							"tokens" : {
+								"0": {
+									"name": {
+										"fr": "PION OMBRE",
+										"en": "SHADOW TOKEN"
+										},
+									"image": ["data/powers/img/shadow.png"]
+								}					
+							}
+						}
+					}
+				}
+			}
+		},	
+        {
+            "id": "nightwing",
+            "name": {
+                "fr": "NIGHTWING",
+                "en": "NIGHTWING"
+            },
+            "back": {
+                "text": {
+                    "fr": "Dick Grayson, un enfant de la balle, fut le premier Robin. Mais les enfants grandissent et le costume bariolé devient trop petit. Puis l'autorité d'un parent aussi dur que Batman peut les éloigner. Ainsi, Dick Grayson a raccroché sa cape jaune pour adopter des couleurs plus proches de celles de son mentor. ll combat le crime sous l'identité de Nightwing, à New York, puis à Blüdhaven, une ville en banlieue de Gotham City. Mais si ses relations avec Batman sont parfois tendues, Nightwinq vient souvent lui prêter main-forte. Acrobate hors pair, bon combattant, il a toutes les qualités de Batman, le sourire en plus.",
+					"en": "Dick Grayson, a young acrobat, became the first Robin, But children grow up, and they grow out of brightly colored costumes. A parent as demanding as Batman can, understandably, push them away. So, Dick Grayson hung up his yellow cape for good and struck out on his own-leaving behind his status as a sidekick, Now he fights under the name Nightwing, both in New York and in Blüdhaven, a city in the suburbs of Gotham City. Though Nightwing's relationship with Batman is often strained, he is always ready to lend a hand when the need arises. An outstanding acrobat and a highly effective fighter, Nightwing has all the qualities of Batman, plus the smile."
+					},
+					"ID": "Dick Grayson",
+					"size": {
+						"fr": "1,11 m",
+						"en": "5ft l0in"
+					},
+					"weight": {
+						"fr": "79,3 Kg",
+						"en": "175 lbs"
+					}
+				},
+            "color": "blue",
+            "total-gems": 10,
+            "active-gems": 2,
+            "rest-gems": 5,
+            "freemovement": { 
+				"baselevel": 2,
+				"encombrances": [
+					{ "weight": 4, "movement": 1},
+					{ "weight": 6, "movement": 0}
+				]
+			},
+            "beltsize": 3,
+            "size": 1,
+            "menace": 1,
+            "melee": { 
+				"dice": "orangereroll", 
+				"saturation": 3, 
+				"skills": [
+					{ "id": "combo", "level": 1 , "encombrance": 4 },
+					{ "id": "martial_arts", "level": 1 , "encombrance": 4 },
+					{ "id": "counterattack", "level": 1, "encombrance": 3 }
+				]
+			},
+            "ranged": { 
+				"dice": "orange", 
+				"saturation": 4
+			},
+            "manipulation": { 
+				"dice": "yellowreroll", 
+				"saturation": 4
+			},
+            "thought": { 
+				"dice": "orange", 
+				"saturation": 4
+			},
+            "defense": { 
+				"dice": "orange", 
+				"saturation": 4
+			},
+            "passive-defense": { "dice": "yellow"},
+            "reroll": {"saturation": 4},
+            "movement": {
+				"saturation": 5, 
+				"skills": [
+					{ "id": "parkour", "level": 2 , "encombrance": 4 },
+					{ "id": "mobility", "level": 1, "encombrance": 4 }
+				]
+			},
+            "otherskills": [
+                { "id": "ambidextry", "level": 1 }
+            ],
+            "traits": [
+                {"id": "moral_code"}
+            ],
+            "image": "data/heroes/img/nightwing.png",
+            "imageHD": "data/heroes/img/nightwing_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/nightwing_back.png",
+            "imageHD_back": "data/heroes/img/nightwing_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "nightwing",
+            "origins": "corebox",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "IMPÉTUEUX",
+						"en": "IMPETUOUS"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Nightwing réalise une charge.",
+								"en": "Nightwing performs a charge."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Nightwing. Pour cela, il suit les étapes d'activation d'un personnage contrôlé par une tuile en respectant les exceptions suivantes :\n-- Nightwing ne peut effectuer qu’une seule de ses deux étapes de mouvement,\n-- Lors de l'étape de déclaration d'une action autre que le mouvement, il ne peut que déclarer des actions d'attaque au corps-à-corps.",
+										"en": "The hero immediately performs a character activation with Nightwing. To do so, they follow the Activate a Character Controlled by a Tile steps with the following exceptions:\n-- Nightwing can only perform one of the two movement steps.\n-- During the Declare an Action Other than a Movement step, they can only declare melee attacks."
+							}
+						}
+					}
+				}
+			}
+        },		
+        {
+            "id": "azrael",
+            "name": {
+                "fr": "AZRAEL",
+                "en": "AZRAEL"
+            },
+            "back": {
+                "text": {
+                    "fr": "Jean-Paul Valley était un étudiant somme toute ordinaire, jusqu'à ce que son père soit tué. Jean-Paul découvrit alors qu'il était le descendant d'une liqnée d'exécuteurs des basses oeuvres au service de l'0rdre de Saint Dumas, et appelé à succéder à son géniteur, nanti d'une armure et d'une épée de flammes. Mais après s'être retourné contre ceux qui tentaient de le manipuler, c'est à Batmon qu'il finit par brièvement succéder, inquiétant ses alliés par sa brutalité et son comportement psychotique. Depuis que Bruce Wayne a repris son masque, Azrael se cherche une identité, un but...",
+					"en": "Jean-Paul Valley was just an ordinary student before the brutal murder of his father. It was then, in the grips of grief, that he discovered his dark heritage. Valley was the descendant of a long line of servants of the Order of Saint Dumas. The Order called on him to succeed his father and carry out the Order's bloody deeds. And serve he did-with an intricate and powerful suit of armar and a flaming sword. Eventually, Jean-Paul broke free of his manipulators and for a brief stint took on the role of Batman. His stranqe demeanor and brutal methods scared both enemies and allies alike."
+					},
+					"ID": "Jean-Paul Valley",
+					"size": {
+						"fr": "1,88 m",
+						"en": "6ft 2in"
+					},
+					"weight": {
+						"fr": "95 Kg",
+						"en": "209 lbs"
+					}
+				},
+            "color": "blue",
+            "total-gems": 11,
+            "active-gems": 2,
+            "rest-gems": 5,
+            "freemovement": { 
+				"baselevel": 2,
+				"encombrances": [
+					{ "weight": 4, "movement": 1},
+					{ "weight": 6, "movement": 0}
+				]
+			},
+            "size": 1,
+            "menace": 1,
+            "melee": { 
+				"dice": "red", 
+				"saturation": 3, 
+				"skills": [
+					{ "id": "combo", "level": 1 , "encombrance": 4 },
+					{ "id": "counterattack", "level": 2 , "encombrance": 4 },
+					{ "id": "martial_arts", "level": 1, "encombrance": 4 }
+				]
+			},
+            "ranged": { 
+				"dice": "yellowreroll", 
+				"saturation": 3
+			},
+            "manipulation": { 
+				"dice": "yellow", 
+				"saturation": 5
+			},
+            "thought": { 
+				"dice": "yellow", 
+				"saturation": 5 
+			},
+            "defense": { 
+				"dice": "orange", 
+				"saturation": 4
+			},
+            "passive-defense": { "dice": "orange"},
+            "reroll": {"saturation": 5},
+            "movement": {
+				"saturation": 4, 
+				"skills": [
+					{ "id": "mobility", "level": 1 , "encombrance": 3 },
+					{ "id": "parkour", "level": 1, "encombrance": 3 }
+				]
+			},
+            "otherskills": [
+                { "id": "pushing_limits", "level": 1 }
+            ],
+            "image": "data/heroes/img/azrael.png",
+            "imageHD": "data/heroes/img/azrael_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/azrael.png",
+            "imageHD_back": "data/heroes/img/azrael_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "azrael",
+            "origins": "corebox",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "LAME ENFLAMMÉE",
+						"en": "FLAMING SWORD"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Azrael effectue immédiatement une attaque à l'aide de sa lame enflammée.",
+								"en": "Azrael immediately performs an attack using his flaming sword."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Azrael. Il effectue seulement une attaque au corps-à-corps avec sa caractéristique 2 dés oranges. Pour cette attaque, le vilain ignore l'étape de dépense de cubes d'énergie lors de la défense.",
+										"en": "The hero immediately performs a character activation with Azrael. They only carry out a melee attack with 2 orange dice. The villain ignores the Spend Energy Cubes step during defense for this attack."
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "Azrael effectue immédiatement un mouvement.",
+								"en": "Azrael immediately performs a movement."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Azrael. Il effectue seulement sa première étape de mouvement.",
+										"en": "The hero immediately performs a character activation with Azrael. They only carry out their First Movement Step."
+							}
+						}
+					}
+				}
+			}
+		},		
+        {
+            "id": "gordon",
+            "name": {
+                "fr": "COMMISSIONER GORDON",
+                "en": "COMMISSIONER GORDON"
+            },
+            "back": {
+                "text": {
+                    "fr": "A son arrivée à Gotham City, Jim Gordon reste intègre dans une force de police qui ne l'a jamais été. Il se fait vite des ennemis parmi ses collègues. Il réussit, avec l'aide d'Harvey Dent et de Batman, à purger la police de ses éléments corrompus. Une relation de confiance s'est installée entre le policier, devenu commissaire, et le justicier masqué. L'infatigable activité de Gordon lui a coûté cher. 0utre les nombreux ennemis qu'il s'est fait, aussi bien parmi ses collègues que les criminels, il y a également laissé son mariage, The Joker s'est attaqué à sa fille, et son fils est devenu un tueur incroyablement malveillant.",
+					"en": "Determined to remain pure in a corrupted police force, James Gordon quickly makes enemies among hos c0lleagues. However, he managed, with the help of Harvey Dent and Batman, to rid the police of its worst elements and to take back control. A relationship of trust was established over time between this police officer who became commissioner and the masked crusoder. Gordon's tireless dedication cost him dearly. Besides the many enemies he made, both amonq his colleagues and among criminals, it also cost him his marriage. Worse yet, his daughter was attacked by The Joker and his son turned into a vicious killer."
+					},
+					"ID": "James Gordon",
+					"size": {
+						"fr": "1,75 m",
+						"en": "5ft 7in"
+					},
+					"weight": {
+						"fr": "76 Kg",
+						"en": "167 lbs"
+					}
+				},
+            "color": "blue",
+            "total-gems": 9,
+            "active-gems": 2,
+            "rest-gems": 5,
+            "freemovement": { 
+				"baselevel": 2,
+				"encombrances": [
+					{ "weight": 3, "movement": 1},
+					{ "weight": 6, "movement": 0}
+				]
+			},
+            "size": 1,
+            "menace": 1,
+            "melee": { 
+				"dice": "orange", 
+				"saturation": 4
+			},
+            "ranged": { 
+				"dice": "orange", 
+				"saturation": 5,  
+				"skills": [
+					{ "id": "marksman", "level": 2, "encombrance": 5 }
+				]
+			},
+            "manipulation": { 
+				"dice": "yellow", 
+				"saturation": 4
+			},
+            "thought": { 
+				"dice": "yellow", 
+				"saturation": 6,   
+				"skills": [
+					{ "id": "investigation", "level": 2 }
+				]
+			},
+            "defense": { 
+				"dice": "yellowreroll", 
+				"saturation": 4,  
+				"skills": [
+					{ "id": "protected", "level": 1}
+				]
+			},
+            "reroll": {"saturation": 5},
+            "movement": {
+				"saturation": 4
+			},
+            "otherskills": [
+                { "id": "nerves_steel", "level": 2 },
+                { "id": "elite_command", "level": 2 },
+                { "id": "support", "level": 1},
+                { "id": "henchman_command", "level": 3 }
+            ],
+            "image": "data/heroes/img/gordon.png",
+            "imageHD": "data/heroes/img/gordon_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/gordon_back.png",
+            "imageHD_back": "data/heroes/img/gordon_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "gordon",
+            "origins": "corebox",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "ESCOUADE D'ÉLITE",
+						"en": "ELITE SQUAD"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Commissioner Gordon arrive sur les lieux, accompagné d'une escouade d'élite.",
+								"en": "Commissioner Gordon arrives on the scene, accompanied by an elite squad."
+							},
+							"type" : "permanent",
+							"longdescription": {
+										"fr": "À la fin de l'étape de sélection du QG, le héros remplace la tuile événement de sa rivière par la tuile de Heavy GCPD. Il place ensuite 2 figurines de Heavy GCPD dans la zone du Commissioner Gordon.",
+										"en": "At the end of the Leader Selection step, the hero replaces the event tile in their river with the Heavy GCPD tile. They then place 2 Heavy GCPD miniatures in the same area as Commissioner Gordon."
+							}
+						}
+					}
+				}
+			}
+        },		
 		
 		
 		
@@ -124,28 +506,68 @@
 				"baselevel": 2,
 				"encombrances": [
 					{ "weight": 3, "movement": 1},
-					{ "weight": 4, "movement": 0},
+					{ "weight": 4, "movement": 0}
 				]
 			},
             "beltsize": 1,
             "size": 1,
             "menace": 1,
-
-            "melee": { "dice": "orange", "saturation": 4 },
-            "ranged": { "dice": "yellow", "saturation": 3 },
-            "manipulation": { "dice": "orange", "saturation": 5 },
-            "thought": { "dice": "orange", "saturation": 5 },
-            "defense": { "dice": "yellow", "saturation": 5 },
+            "melee": { 
+				"dice": "orange", 
+				"saturation": 4, 
+				"skills": [
+					{ "id": "investigation", "level": 1 , "encombrance": 6 },
+					{ "id": "marksman", "level": 1, "encombrance": 4 }
+				]
+			},
+            "ranged": { 
+				"dice": "yellow", 
+				"saturation": 3,  
+				"skills": [
+					{ "id": "investigation", "level": 1 , "encombrance": 6 },
+					{ "id": "marksman", "level": 1, "encombrance": 4 }
+				]
+			},
+            "manipulation": { 
+				"dice": "orange", 
+				"saturation": 5,   
+				"skills": [
+					{ "id": "investigation", "level": 1 , "encombrance": 6 },
+					{ "id": "marksman", "level": 1, "encombrance": 4 }
+				]
+			},
+            "thought": { 
+				"dice": "orange", 
+				"saturation": 5,   
+				"skills": [
+					{ "id": "investigation", "level": 1 , "encombrance": 6 },
+					{ "id": "marksman", "level": 1, "encombrance": 4 }
+				]
+			},
+            "defense": { 
+				"dice": "yellow", 
+				"saturation": 5,  
+				"skills": [
+					{ "id": "investigation", "level": 1 , "encombrance": 6 },
+					{ "id": "marksman", "level": 1, "encombrance": 4 }
+				]
+			},
             "passive-defense": { "dice": "yellow"},
             "reroll": {"saturation": 5},
-            "movement": {"saturation": 4},
-            "skills": [
+            "movement": {
+				"saturation": 4,  
+				"skills": [
+					{ "id": "investigation", "level": 1 , "encombrance": 6 },
+					{ "id": "marksman", "level": 1, "encombrance": 4 }
+				]
+			},
+            "otherskills": [
                 { "id": "investigation", "level": 1 , "encombrance": 6 },
-                { "id": "marksman", "level": 1, "encombrance": 4 },
+                { "id": "marksman", "level": 1, "encombrance": 4 }
             ],
             "traits": [
                 {"id": "harmless"},
-                {"id": "harmless"},
+                {"id": "harmless"}
             ],
             "image": "data/heroes/img/template.png",
             "imageHD": "data/heroes/img/template_hd.png",
@@ -161,3 +583,7 @@
 		
     ]
 }
+
+
+
+
