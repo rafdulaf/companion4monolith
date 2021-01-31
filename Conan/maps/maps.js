@@ -1,5 +1,10 @@
 Maps = mergeObject(Maps, {
-    _legendAreas: function(map, helpImageSize)
+    _legendImage: function(map) {
+        return Maps._legendAreas(map) 
+                + Maps._legendNumbers(map);
+    },
+    
+    _legendAreas: function(map)
     {
         var code = "";
         
@@ -31,17 +36,20 @@ Maps = mergeObject(Maps, {
             }
         }
         
+        if (code)
+        {
+            code = "<svg  viewBox=\"0 0 100 100\" preserveAspectRatio=\"none\">" + code + "</svg>";
+        }
+        
         return code;
     },
-    _legendNumbers: function(map, helpImageSize) 
+    _legendNumbers: function(map) 
     {
         var aide = "";
         
         var rules = map.description.rules;
         if (rules)
         {
-            var bbSize = 10 / helpImageSize * 100; // 1 legend is 20px. so center is 10px at left/top
-
             for (var i=0; i < rules.length; i++) 
             {
                 // Draw numbers on the map
@@ -50,7 +58,7 @@ Maps = mergeObject(Maps, {
                     for (var j=0; j < rules[i].coordinates.length; j++)
                     {
                         var coo = rules[i].coordinates[j];
-                        aide += "<span class='map-help-legend' data-num='" + (i+1) + "' style='left: " + (coo[0]-bbSize) + "%; top: " + (coo[1]-bbSize) + "%; transform: rotate(" + (90*Maps._rotation) + "deg)'>" + (i+1) + "</span>";
+                        aide += "<span class='map-help-legend' data-num='" + (i+1) + "' style='left: " + coo[0] + "%; top: " + coo[1] + "%;'>" + (i+1) + "</span>";
                     }
                 }
 

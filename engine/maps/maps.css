@@ -279,6 +279,17 @@
     padding: 10px;
 }
 
+:root {
+    --map-ratio: 1.16;
+}
+
+.map-map-help .map-help-thumb > div.rotate-0 { transform: rotate(0deg); }
+.map-map-help .map-help-thumb > div.rotate-90 { transform: rotate(-90deg); }
+.map-map-help .map-help-thumb > div.rotate-180 { transform: rotate(-180deg); }
+.map-map-help .map-help-thumb > div.rotate-270 { transform: rotate(-270deg);  }
+.map-map-help .map-help-thumb > div.rotate-90 .img-wrap,
+.map-map-help .map-help-thumb > div.rotate-270 .img-wrap { margin: calc((var(--map-ratio) - 0.823) * 23.73%) 0; }
+
 
 
 

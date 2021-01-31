@@ -1,24 +1,21 @@
-.map-map-help {
-    height: 30vh;
-}
-
 @media (orientation: portrait) {
+    .map-map-help .map-help-thumb img {
+        height: 30vh;
+    }
+    
     .map-map-help .map-help-thumb {
         text-align: center;
-        margin-bottom: 20px;
     }
     
     .map-map-help .map-help-thumb div {
         display: inline-block;
         position: relative;
     }
-    
-    .map-map-help .map-help-thumb img {
-        height: 30vh;
-    }
-    
+
+    .map-map-help {
+        flex-direction: column;
+    }    
     .map-map-help ul {
-        height: calc(100% - 30vh - 20px);
         vertical-align: top;
     }
 }
@@ -41,17 +38,20 @@
     
     .map-map-help ul {
         height: 100%;
-        width: calc(100% - 30vw - 20px);
         display: inline-block;
         vertical-align: top;
     }
 }
 
+.map-map-help {
+    display: flex;
+}
 .map-map-help ul {
     list-style-type: none;
     margin: 0;
     padding: 0;    
     overflow: auto;
+    flex: 1;
 }
 
 
@@ -79,8 +79,6 @@
     line-height: calc(var(--secondary-line-height) * 1.625rem);
 }
 
-
-
 .map-help-legend {
     position: absolute;
     background-color: #000000;
@@ -95,6 +93,11 @@
     text-shadow: 0px 0px 3px #000;
     z-index: 1;
 }
+
+.map-map-help .map-help-thumb > div.rotate-0 .map-help-legend { transform: translate(-10px, -10px) rotate(0deg); }
+.map-map-help .map-help-thumb > div.rotate-90 .map-help-legend { transform: translate(-10px, -10px) rotate(90deg); }
+.map-map-help .map-help-thumb > div.rotate-180 .map-help-legend { transform: translate(-10px, -10px) rotate(180deg); }
+.map-map-help .map-help-thumb > div.rotate-270 .map-help-legend { transform: translate(-10px, -10px) rotate(270deg);}
 
 .map-help-rule-title[data-num='1']:before { border-color: #2F5496; }
 .map-help-legend[data-num='1'] { background-color: #2F5496; }

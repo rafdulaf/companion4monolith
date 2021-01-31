@@ -334,29 +334,26 @@ var Maps = {
     _helpPoints: function()
     {
         var map = Maps._getMap();
+    
+        
         var rules = map.description.rules;
-
         if (rules)
         {
+            document.documentElement.style.setProperty('--map-ratio', map.description.rules.ratio || map.description.ratio || 1.16);
+            
             var id = "maps-map";
             var mapC = $('#' + id + " .map-map-help");
     
-            var helpImageSize = $(document.body).height() * .3; // Css says 30vh
-
             var aide = "";
                 aide += "<div class='map-help-thumb'>";
-                aide += "<div style=\"transform: rotate(" + (-90*Maps._rotation) + "deg)\">";
+                aide += "<div class=\"rotate-" + (90*Maps._rotation) + "\">";
     
-            aide += Maps._legendNumbers(map, helpImageSize);
     
             aide += "<div class='img-wrap'>"
             
-            var code = Maps._legendAreas(map, helpImageSize);
-            if (code)
-            {
-                aide += "<svg  viewBox=\"0 0 100 100\" preserveAspectRatio=\"none\">" + code + "</svg>";
-            }
-            aide += "<img src=\"" + map.description.board + "?version=" + Version + "\"/></div>";
+            aide += Maps._legendImage(map);
+            
+            aide += "<img src=\"" + Maps._helpImage(map) + "?version=" + Version + "\"/></div>";
             aide += "</div>";
 
 
@@ -368,10 +365,13 @@ var Maps = {
         }
     },
     
-    _legendNumbers: function(map, helpImageSize) {
+    _helpImage: function(map) {
+        return map.description.board;
+    },
+    _legendImage: function(map) {
         return ""; // Default for inheritance
     },
-    _legendAreas: function(map) {
+    _legendText: function(map) {
         return ""; // Default for inheritance
     },
 

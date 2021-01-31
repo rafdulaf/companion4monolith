@@ -1,0 +1,41 @@
+.map-map-help .map-help-thumb img {
+    max-height: calc(100vh - 64px - 56px - 20px - 20px);
+    max-width: calc(100vw - 20px - 20px);
+    object-fit: contain;
+}
+
+.map-map-help .map-map-legend {
+    display: inline-block;
+    width: 250px;
+    padding: 0 10px 10px 10px;
+}
+
+@media (orientation: portrait) {
+    .map-map-help .map-help-thumb img {
+        width: 100%;
+    }
+
+    .map-map-help .map-help-thumb {
+        text-align: center;
+    }
+    
+    .map-map-help .map-help-thumb div {
+        display: inline-block;
+        position: relative;
+    }
+}
+@media (orientation: landscape) {
+    .map-map-help .map-help-thumb img {
+        height: 100%;
+    }
+
+    .map-map-help .map-help-thumb {
+        display: inline-block;
+        vertical-align: top;
+    }
+    
+    .map-map-help .map-help-thumb div {
+        display: inline-block;
+        position: relative;
+    }
+}

@@ -247,6 +247,10 @@
                 "version": "1.0",
                 "origins": ["corebox"],
                 "copyright": "Monolith",
+                "rules2": {
+                    "image": "data/maps/ACE_Chemicals/help.png",
+                    "ratio": 1.24
+                },
                 "totopic": {
                     "fr": "https://the-overlord.com/index.php?/topic/4350-core-carte-ace-chemicals/",
                     "en": "https://the-overlord.net/index.php?/topic/923-core-ace-chemicals/"
