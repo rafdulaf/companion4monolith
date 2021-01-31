@@ -139,15 +139,9 @@ var Rules = {
         return "<div class='skills-skill'>"
             +   "<img " + LazyImage + " src='" + image + "?version=" + Version + "'/>"
             +   "<div class='skills-title'>" + title + "</div>"
-            +   "<div class='skills-text'>" + Rules._replace(text) + "</div>"
+            +   "<div class='skills-text'>" + About._replace(text) + "</div>"
             +   "<div class='clear'></div>"
             + "</div>";
-    },
-
-    _replace: function(text)
-    {
-        text = text.replace(/\{(.*?)\}/g, "<img src='resources/img/$1.png?version=" + Version + "' class='rules-character'/>");
-        return text;
     },
 
     _linkToSkill: function(id, big)

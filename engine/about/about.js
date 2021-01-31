@@ -415,6 +415,12 @@ var About = {
             }
         }
         return false;
+    },
+    
+    _replace: function(text, cls)
+    {
+        text = text.replace(/\{(.*?)\}/g, "<img src=\"resources/img/$1.png?version=" + Version + "\"" + (cls ? " class='" + cls + "'" : "") + "/>");
+        return text;
     }
 }
 

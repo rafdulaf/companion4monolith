@@ -3,6 +3,7 @@
         "vendors/css/fonts.css",
         "general/body.css",
         "general/nav.css",
+        "maps/maps.css",
         "rules/rules.css",
         
         "encyclopedia/encyclopedia.css",
@@ -22,6 +23,7 @@
     "scripts": [
         "general/default.js",
         "about/about.js",
+        "maps/maps.js",
         "encyclopedia/encyclopedia.js",
         "encyclopedia/equipments/equipments.js",
         "encyclopedia/spells/spells.js",

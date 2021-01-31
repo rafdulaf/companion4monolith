@@ -321,12 +321,12 @@ var Maps = {
         
         Nav.createTabs(id, tabs, Maps._onSetPosition);
 
-        $("#map-map-help").append("<div class='map-map-help'></div>");
-        
         $("#map-map-map")
             .addClass("map-map-wrapper map-map-wrapper-display-help")
             .attr("data-help", Maps._i18n[Language]['start'])
             .html("<img class='map-bg' src='" + map.description.board + "?version=" + Version + "'/>" + "<div class='map-map-area'></div>");
+            
+        $("#map-map-help").append("<div class='map-map-help'></div>");
 
         Maps._rotate();
     },
@@ -342,57 +342,16 @@ var Maps = {
             var mapC = $('#' + id + " .map-map-help");
     
             var helpImageSize = $(document.body).height() * .3; // Css says 30vh
-            var bbSize = 10 / helpImageSize * 100; // 1 legend is 20px. so center is 10px at left/top
-    
-            function _applyRotate(a, n1, n2)
-            {
-                switch (Maps._rotation)
-                {
-                    case 0: return a ? n1 - bbSize        : n2 - bbSize;
-                    case 1: return a ? n2 - bbSize        : 100 - n1 - bbSize;
-                    case 2: return a ? 100 - n1 - bbSize  : 100 - n2 - bbSize;
-                    case 3: return a ? 100 - n2 - bbSize  : n1 - bbSize;
-                }
-            }
-    
+
             var aide = "";
                 aide += "<div class='map-help-thumb'>";
                 aide += "<div style=\"transform: rotate(" + (-90*Maps._rotation) + "deg)\">";
     
-            var code = "";
-            for (var i=0; i < rules.length; i++) {
-                if (rules[i].areas)
-                {
-                    for (var j=0; j < rules[i].areas.length; j++)
-                    {
-                        var areaName = rules[i].areas[j];
-                        var zone = map.zones[areaName];
-
-                        var line = "";
-                        for (var k=0; k < zone.area.length; k++)
-                        {
-                            line += (k == 0 ? "M" : "L") + zone.area[k][0] + "," + zone.area[k][1] + "";
-                        }
-
-                        code += "<path style=\"fill: " + rules[i].areasColor + "\"" +
-                            "d='" + line + "' " +
-                            "class='map-map-area-zone-mini'>" +
-                        "</path>";
-
-                    }
-
-                }
-                if (rules[i].coordinates)
-                {
-                    for (var j=0; j < rules[i].coordinates.length; j++)
-                    {
-                        var coo = rules[i].coordinates[j];
-                        aide += "<span class='map-help-legend' data-num='" + (i+1) + "' style='left: " + (coo[0]-bbSize) + "%; top: " + (coo[1]-bbSize) + "%; transform: rotate(" + (90*Maps._rotation) + "deg)'>" + (i+1) + "</span>";
-                    }
-                }
-            }
+            aide += Maps._legendNumbers(map, helpImageSize);
     
             aide += "<div class='img-wrap'>"
+            
+            var code = Maps._legendAreas(map, helpImageSize);
             if (code)
             {
                 aide += "<svg  viewBox=\"0 0 100 100\" preserveAspectRatio=\"none\">" + code + "</svg>";
@@ -403,32 +362,17 @@ var Maps = {
 
             aide += "</div>";
 
-
-            aide += "<ul>";
-            for (var i=0; i < rules.length; i++)
-            {
-                var areaAide = "";
-                if (rules[i].areas)
-                {
-                    areaAide += "<span class='map-help-rule-areas'><span class='map-help-rule-areas-square' style='background-color: " + rules[i].areasColor + "'></span>" + rules[i].areasText[Language] + "</span>"
-                }
-
-                aide += "<li>"
-                + "<span class='map-help-rule-title' data-num='" + (i + 1) + "'>" + rules[i].title[Language] + "</span>"
-                + "<span class='map-help-rule-description'>" + Maps._replace(rules[i].description[Language]) + "</span>"
-                + areaAide
-                + "</li>";
-            }
-            aide += "</ul>"
+            aide += Maps._legendText(map);
     
             mapC.html(aide);
         }
     },
-
-    _replace: function(text)
-    {
-        text = text.replace(/\{(.*?)\}/g, "<img src=\"resources/img/$1.png?version=" + Version + "\" class='map-help-character'/>");
-        return text;
+    
+    _legendNumbers: function(map, helpImageSize) {
+        return ""; // Default for inheritance
+    },
+    _legendAreas: function(map) {
+        return ""; // Default for inheritance
     },
 
     _rotate: function(direction)

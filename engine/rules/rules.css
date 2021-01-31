@@ -85,8 +85,8 @@
 }
 
 
-#rules .rules-character,
-.dialog .rules-character  {
+#rules .skills-text img,
+.dialog .skills-text img {
     margin: 0;
     width: 14px;
     height: 14px;

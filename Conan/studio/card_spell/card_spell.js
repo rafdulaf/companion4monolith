@@ -193,7 +193,7 @@ var CardSpell = {
                 + "</picture>";
 
         code += "<div class=\"name" + (card.longName === true ? " long" : "") + "\">" + card.name + "</div>";
-        code += "<div class=\"text\" style=\"font-size: " + card.textSize + "%; line-height: " + card.textInter + "%; \">" + CardSpell._replace(card.text) + "</div>";
+        code += "<div class=\"text\" style=\"font-size: " + card.textSize + "%; line-height: " + card.textInter + "%; \">" + About._replace(card.text) + "</div>";
 
         var hasCost = parseInt(card.cost) > 0;
         var hasSaturation = parseInt(card.saturation) > 0;
@@ -222,13 +222,6 @@ var CardSpell = {
         code += "</div>";
         return code;
     },
-
-    _replace: function(text)
-    {
-        text = text.replace(/\n/g, '<br/>').replace(/\{(.*?)\}/g, "<img src=\"resources/img/$1.png?version=" + Version + "\"/>");
-        return text;
-    },
-
 
     add: function(card) {
         var actions = [{
