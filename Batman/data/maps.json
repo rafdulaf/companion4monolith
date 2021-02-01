@@ -19,21 +19,23 @@
                             { "level": "1", "color": "#1B94CB" },
                             { "level": "2", "color": "#83C5E7" }
                         ],
-                        "boundaries": {
-                            "orange": true,
-                            "white": true,
-                            "special": true,
-                            "wall": true,
-                            "wall_level": true
-                        },
+                        "boundaries": {},
                         "special_moves": {
                             "jumb": false,
                             "climb": false,
+<<<<<<< Upstream, based on branch 'master' of git@github.com:rafdulaf/companion4monolith.git
                             "fall": false,
                             "climb_fall": true
                         }
                     },
                     "totopic": {
+=======
+                            "fall": false
+                        }
+                    }
+                },
+                "totopic": {
+>>>>>>> 66c7f99 Maps rules: make render specifiable for each application #119
                     "fr": "https://the-overlord.com/index.php?/topic/4351-core-carte-banque/",
                     "en": "https://the-overlord.net/index.php?/topic/925-core-bank/"
                 },
@@ -517,22 +519,17 @@
                             { "level": "5", "color": "#83C5E7" },
                             { "level": "6", "color": "#FFCA45" }
                         ],
-                        "boundaries": {
-                            "orange": true,
-                            "white": true,
-                            "special": true,
-                            "wall": true,
-                            "wall_level": true
-                        },
-                        "special_moves": {
-                            "jumb": true,
-                            "climb": true,
-                            "fall": true,
-                            "climb_fall": true
-                        },
+                        "boundaries": {},
+                        "special_moves": {},
                         "areas": [ "promontory" ]
+<<<<<<< Upstream, based on branch 'master' of git@github.com:rafdulaf/companion4monolith.git
                     },
                     "totopic": {
+=======
+                    }
+                },
+                "totopic": {
+>>>>>>> 66c7f99 Maps rules: make render specifiable for each application #119
                     "fr": "https://the-overlord.com/index.php?/topic/4352-core-carte-crime-alley/",
                     "en": "https://the-overlord.net/index.php?/topic/927-core-crime-alley/"
                 },
@@ -747,20 +744,21 @@
                             { "level": "2", "color": "#83C5E7" },
                             { "level": "3", "color": "#FFCA45" }
                         ],
-                        "boundaries": {
-                            "orange": true,
-                            "white": true,
-                            "special": true,
-                            "wall": true,
-                            "wall_level": true
-                        },
+                        "boundaries": {},
                         "special_moves": {
                             "jumb": false,
                             "climb": false,
+<<<<<<< Upstream, based on branch 'master' of git@github.com:rafdulaf/companion4monolith.git
                             "fall": false,
                             "climb_fall": true
                         },
                     },              
+=======
+                            "fall": false
+                        }
+                    }
+                },                
+>>>>>>> 66c7f99 Maps rules: make render specifiable for each application #119
                 "totopic": {
                     "fr": "https://the-overlord.com/index.php?/topic/4354-core-carte-metrosubway/",
                     "en": "https://the-overlord.net/index.php?/topic/931-core-subway/"
@@ -1044,9 +1042,10 @@
                     "ratio": 1.24,
                     "legend": {
                         "elevation": [
-                            { "level": "1", "color": "#1B94CB" },
+                            { "level": "1", "color": "#1B94CB" }
                         ],
                         "boundaries": {
+<<<<<<< Upstream, based on branch 'master' of git@github.com:rafdulaf/companion4monolith.git
                             "orange": true|,
                             "white": true,
                             "special": false,
@@ -1054,6 +1053,12 @@
                             "wall_level": true
                         },
                     },
+=======
+                            "special": false
+                        }
+                    }
+                },
+>>>>>>> 66c7f99 Maps rules: make render specifiable for each application #119
                 "totopic": {
                     "fr": "https://the-overlord.com/index.php?/topic/4358-arkham-asylum-carte-arkham-asylum/",
                     "en": "https://the-overlord.net/index.php?/topic/924-arkham-asylum-arkham-asylum/"
@@ -1392,19 +1397,19 @@
                         ],
                         "boundaries": {
                             "orange": false,
-                            "white": true,
-                            "special": true,
-                            "wall": true,
                             "wall_level": false
                         },
                         "special_moves": {
                             "jumb": false,
-                            "climb": true,
-                            "fall": false,
-                            "climb_fall": true
+                            "fall": false
                         },
                         "areas": [ "promontory" ]
+<<<<<<< Upstream, based on branch 'master' of git@github.com:rafdulaf/companion4monolith.git
                     },
+=======
+                    }
+                },
+>>>>>>> 66c7f99 Maps rules: make render specifiable for each application #119
                 "totopic": {
                     "fr": "https://the-overlord.com/index.php?/topic/4359-arkham-asylum-cartes-f%C3%AAte-foraine-du-joker/",
                     "en": "https://the-overlord.net/index.php?/topic/928-arkham-asylum-joker-funhouse/"
@@ -1633,21 +1638,17 @@
                             { "level": "2", "color": "#83C5E7" },
                             { "level": "4", "color": "#FFCA45" }
                         ],
-                        "boundaries": {
-                            "orange": true,
-                            "white": true,
-                            "special": true,
-                            "wall": true,
-                            "wall_level": true
-                        },
+                        "boundaries": {},
                         "special_moves": {
-                            "jumb": false,
-                            "climb": true,
-                            "fall": true,
-                            "climb_fall": true
+                            "jumb": false
                         },
                         "areas": [  "elevators_entrance", "elevators_shaft", "promontory", "elevator_orientation"  ]
+<<<<<<< Upstream, based on branch 'master' of git@github.com:rafdulaf/companion4monolith.git
                     },
+=======
+                    }
+                },
+>>>>>>> 66c7f99 Maps rules: make render specifiable for each application #119
                 "totopic": {
                     "fr": "https://the-overlord.com/index.php?/topic/4357-wayne-manor-cartes-batcave/",
                     "en": "https://the-overlord.net/index.php?/topic/926-wayne-manor-batcave/"
@@ -1919,21 +1920,15 @@
                             { "level": "5", "color": "#83C5E7" },
                             { "level": "6", "color": "#FFCA45" }
                         ],
-                        "boundaries": {
-                            "orange": true,
-                            "white": true,
-                            "special": true,
-                            "wall": true,
-                            "wall_level": true
-                        },
-                        "special_moves": {
-                            "jumb": true,
-                            "climb": true,
-                            "fall": true,
-                            "climb_fall": true
-                        },
+                        "boundaries": {},
+                        "special_moves": {},
                         "areas": [ "promontory" ]
+<<<<<<< Upstream, based on branch 'master' of git@github.com:rafdulaf/companion4monolith.git
                     },
+=======
+                    }
+                },
+>>>>>>> 66c7f99 Maps rules: make render specifiable for each application #119
                 "totopic": {
                     "fr": "https://the-overlord.com/index.php?/topic/4352-core-carte-crime-alley/",
                     "en": "https://the-overlord.net/index.php?/topic/927-core-crime-alley/"
@@ -2146,17 +2141,16 @@
                     "legend": {
                         "elevation": [
                             { "level": "1", "color": "#1B94CB" },
-                            { "level": "2", "color": "#83C5E7" },
+                            { "level": "2", "color": "#83C5E7" }
                         ],
-                        "boundaries": {
-                            "orange": true,
-                            "white": true,
-                            "special": true,
-                            "wall": true,
-                            "wall_level": true
-                        },
+                        "boundaries": {},
                         "areas": [ "elevators_entrance", "elevators_shaft", "elevator_orientation" ]
+<<<<<<< Upstream, based on branch 'master' of git@github.com:rafdulaf/companion4monolith.git
                     },                
+=======
+                    }
+                },                
+>>>>>>> 66c7f99 Maps rules: make render specifiable for each application #119
                 "totopic": {
                     "fr": "https://the-overlord.com/index.php?/topic/4356-wayne-manor-carte-wayne-manor/",
                     "en": "https://the-overlord.net/index.php?/topic/932-wayne-manor-wayne-manor/"
@@ -2375,8 +2369,9 @@
                     "legend": {
                         "elevation": [
                             { "level": "0", "color": "#897A73" },
-                            { "level": "2", "color": "#199BD7" },
+                            { "level": "2", "color": "#199BD7" }
                         ],
+<<<<<<< Upstream, based on branch 'master' of git@github.com:rafdulaf/companion4monolith.git
                         "boundaries": {
                             "orange": true,
                             "white": true,
@@ -2391,6 +2386,12 @@
                             "climb_fall": true
                         },
                     },                
+=======
+                        "boundaries": {},
+                        "special_moves": {}
+                    }                
+                },
+>>>>>>> 66c7f99 Maps rules: make render specifiable for each application #119
                 "totopic": {
                     "fr": "https://the-overlord.com/index.php?/topic/4353-maps-pack-carte-egoutssewers/",
                     "en": "https://the-overlord.net/index.php?/topic/930-maps-pack-sewers/"
@@ -2625,20 +2626,20 @@
                             { "level": "2", "color": "#0668AF" },
                             { "level": "4", "color": "#81C4E8" }
                         ],
-                        "boundaries": {
-                            "orange": true,
-                            "white": true,
-                            "special": true,
-                            "wall": true,
-                            "wall_level": true
-                        },
+                        "boundaries": {},
                         "special_moves": {
-                            "jumb": true,
                             "climb": false,
+<<<<<<< Upstream, based on branch 'master' of git@github.com:rafdulaf/companion4monolith.git
                             "fall": false,
                             "climb_fall": true
                         },
                     },                
+=======
+                            "fall": false
+                        }
+                    }  
+                },              
+>>>>>>> 66c7f99 Maps rules: make render specifiable for each application #119
                 "totopic": {
                     "fr": "https://the-overlord.com/index.php?/topic/4355-maps-pack-carte-gcpd/",
                     "en": "https://the-overlord.net/index.php?/topic/929-maps-pack-gcpd/"
