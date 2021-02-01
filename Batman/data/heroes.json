@@ -544,8 +544,41 @@
             "image_zoom_back": "176",
             "image_location_back": { "x": "-12", "y": "56" },
             "model": "robin-drake",
-            "origins": "corebox"
-        },		
+            "origins": "corebox",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "HACKEUR NÉ",
+						"en": "COMPUTER WIZ"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Robin utilise un dispositif pour effectuer une réflexion à distance.",
+								"en": "Robin uses a device to carry out a remote thought."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros sélectionne un personnage ami capable de réaliser une action de réflexion. Robin effectue immédiatement une action de reflexion complexe avec ses caractéristiques comme s'il se trouvait dans la zone du personnage ami.",
+										"en": "The hero selects an ally character to carry out a thought action. Robin then performs a complex thought with his characteristics as though he was in the same area as the ally character."
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "Robin effectue immédiatement un mouvement.",
+								"en": "Robin immediately performs a movement."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Robin. Il effectue seulement sa première étape de mouvement.",
+										"en": "The hero immediately performs a character activation with Robin. They only carry out their First Movement Step."
+							}
+						}
+					}
+				}
+			}
+         },		
         {
             "id": "robin-damian",
             "name": {
@@ -635,7 +668,40 @@
             "image_zoom_back": "176",
             "image_location_back": { "x": "-12", "y": "56" },
             "model": "robin-damian",
-            "origins": "corebox"
+            "origins": "corebox",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "ENFANT PRODIGE",
+						"en": "CHILD PRODIGY"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Robin est capable de se réactiver grâce à ses capacités exceptionnelles.",
+								"en": "Robin is able to reactivate thanks to his exceptional abilities."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros effectue immédiatement une activation de personnage avec Robin.",
+										"en": "The hero immediately performs a character activation with Robin."
+							}
+						},
+						"1": {
+							"cumulative": true,
+							"shortdescription": {
+								"fr": "Robin a de grandes difficultés à faire équipe avec quelqu’un.",
+								"en": "Robin isn’t much of a team player."
+							},
+							"type" : "permanent",
+							"longdescription": {
+										"fr": "Tant que Robin n'est pas neutralisé, le coût en DPAs pour activer la tuile du lieutenant est augmenté de 1.",
+										"en": "While Robin is not neutralized, the lieutenant’s tile costs an additional APD to activate."
+							}
+						}
+					}
+				}
+			}
         },		
         {
             "id": "catwoman",
@@ -723,7 +789,28 @@
             "image_zoom_back": "176",
             "image_location_back": { "x": "-12", "y": "56" },
             "model": "catwoman",
-            "origins": "corebox"
+            "origins": "corebox",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "VOLEUSE HORS-PAIR",
+						"en": "MASTER THIEF"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Catwoman se déplace puis effectue une manipulation dans sa zone",
+								"en": "Catwoman moves then performs a manipulation in the same area."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Catwoman. Pour cela, il suit les étapes d'activation d'un personnage contrôlé par une tuile avec les exceptions suivantes :\n-- Catwoman peut effectuer sa première étape de mouvement mais pas la seconde.\n-- lors de l'étape de déclaration d'une action autre que le mouvement, elle ne peut déclarer qu'une action de manipulation.",
+										"en": "The hero immediately performs a character activation with Catwoman. To do so, they follow the Activate a Character Controlled by a Tile steps with the following exceptions:\n-- Catwoman can perform her First Movement Step but not the second.\n-- During the Declare an Action Other than Movement step, she can only declare one manipulation action."
+							}
+						}
+					}
+				}
+			}
         },		
         {
             "id": "batwoman",
@@ -811,7 +898,28 @@
             "image_zoom_back": "176",
             "image_location_back": { "x": "-12", "y": "56" },
             "model": "batwoman",
-            "origins": "corebox"
+            "origins": "corebox",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "AVANTAGE STRATÉGIQUE",
+						"en": "STRATEGIC ADVANTAGE"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Batwoman se sert de son enseignement militaire pour prendre l'avantage stratégique.",
+								"en": "Batwoman uses her military education to take a strategic advantage."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain transfère un DPA depuis sa zone de potentiel d'activation indisponible vers sa zone de dépense de potentiel d'activation.\nLors du prochain tour du vilain, on considère qu'il a déjà réalisé une activation.",
+										"en": "The villain transfers an APD from their unavailable activation potential zone to their spend activation potential zone.\nDuring the next villain turn, they are considered to have already performed an activation."
+							}
+						}
+					}
+				}
+			}
         },		
         {
             "id": "orphan",
@@ -901,10 +1009,272 @@
             "image_zoom_back": "176",
             "image_location_back": { "x": "-12", "y": "56" },
             "model": "orphan",
-            "origins": "corebox"
+            "origins": "corebox",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "POSTURE DÉFENSIVE",
+						"en": "DEFENSIVE STANCE"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Orphan opte pour une posture défensive.",
+								"en": "Orphan opts for a defensive stance."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros place le pion posture défensive sur le socle d'Orphan. Lorsque le héros active Orphan ou qu'elle est neutralisée, si le pion posture défensive est présent sur son socle, alors le héros le retire.\nTant que le pion posture défensive est sur le socle d’Orphan, sa défense automatique est de 4 et elle bénéficie de la compétence contre-attaque de niveau 3.",
+										"en": "The hero places the Defensive Stance token on Orphan’s base. If there is a Defensive Stance token on Orphan’s base when the hero activates her, or if she is neutralized, it is removed.\nWhile the defensive stance token is on Orphan’s base, her automatic defense is 4 and she has the counterattack skill level 3."
+							},
+							"tokens" : {
+								"0": {
+									"name": {
+										"fr": "PION POSTURE DÉFENSIVE",
+										"en": "DEFENSIVE STANCE TOKEN"
+										},
+									"image": ["data/powers/img/defensive-stance.png"]
+								}					
+							}
+						}
+					}
+				}
+			}
         },		
-		
-		
+        {
+            "id": "montoya",
+            "name": {
+                "fr": "RENEE MONTOYA",
+                "en": "RENEE MONTOYA"
+            },
+            "back": {
+                "text": {
+                    "fr": "Renee Montoya s'est enqagée tôt dans lo police. Aux côtés de son coéquipier Harvey Bullock, elle fut confrontée de près à la criminalité de Gotham City. Elle intégra l'Unité des Crimes Majeurs, spécialisée dans les criminels costumés. Mais elle finit par attirer l'attention de Two-Face, qui s'entiche d'elle. Il tenta en vain de détruire sa vie pour la pousser vers la marqinalité et donc vers lui. Confrontée à lo corruption, Mont0ya ne se sentait plus en confiance dans son unité et quitta la police. Contactée par le justicier nommé La Question, elle l'assistât et finit même par le remplacer, adoptant son masque sans visage.",
+					"en": "Not wanting to spend her li1e working at her parents' qrocery store, Renee Montoya enlisted in the GCPD at an early age. After cutting her teeth in smaller units, she joined Major Crimes-a unit focused on the fight aqainst costumed thugs. Soon she became one of the pillars of the team, but this success would not last. Scarred from her run-ins with the villain Two-Face and disillusioned by police corruption, she eventually left the force and was contacted by the costumed viqilante called The Question. First, she became his assistant and later replaced him, adopting his faceless mask."
+					},
+					"ID": "Renee Montoya",
+					"size": {
+						"fr": "1,73 m",
+						"en": "5ft 8in"
+					},
+					"weight": {
+						"fr": "65,5 Kg",
+						"en": "143 lbs"
+					}
+				},
+            "color": "blue",
+            "total-gems": 9,
+            "active-gems": 2,
+            "rest-gems": 6,
+            "freemovement": { 
+				"baselevel": 2,
+				"encombrances": [
+					{ "weight": 3, "movement": 1},
+					{ "weight": 5, "movement": 0}
+				]
+			},
+            "size": 1,
+            "menace": 1,
+            "melee": { 
+				"dice": "yellowreroll", 
+				"saturation": 4
+			},
+            "ranged": { 
+				"dice": "orangereroll", 
+				"saturation": 3
+			},
+            "manipulation": { 
+				"dice": "yellow", 
+				"saturation": 5,   
+				"skills": [
+					{ "id": "munitions_specialist", "level": 2 },
+					{ "id": "lock_piking", "level": 1 }
+				]
+			},
+            "thought": { 
+				"dice": "orange", 
+				"saturation": 4,   
+				"skills": [
+					{ "id": "investigation", "level": 1 }
+				]
+			},
+            "defense": { 
+				"dice": "yellowreroll", 
+				"saturation": 4,  
+				"skills": [
+					{ "id": "protected", "level": 1 },
+					{ "id": "untouchable", "level": 1, "encombrance": 4 }
+				]
+			},
+            "passive-defense": { "dice": "orange"},
+            "reroll": {"saturation": 5},
+            "movement": {
+				"saturation": 4
+			},
+            "otherskills": [
+                { "id": "luck", "level": 1},
+                { "id": "support", "level": 2 },
+                { "id": "henchman_command", "level": 3 }
+            ],
+            "image": "data/heroes/img/montoya.png",
+            "imageHD": "data/heroes/img/montoya_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/montoya_back.png",
+            "imageHD_back": "data/heroes/img/montoya_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "montoya",
+            "origins": "corebox",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "FREEZE",
+						"en": "FREEZE"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Renee Montoya tient en joue ses adversaires.",
+								"en": "Renee Montoya holds several opponents at gunpoint."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros place le pion freeze dans la zone de Renee Montoya.\nLorsque le héros active Renee Montoya ou qu'elle est neutralisée, si le pion freeze est présent sur le plateau, il le retire.\nLes personnages sbires ou élite du camp du vilain situés dans la zone du pion freeze ne peuvent pas être activés",
+										"en": "The hero places the Freeze token in the same area as Renee Montoya.\nIf there is a Freeze token on the board when the hero activates Renee Montoya, or if she is neutralized, it is removed.FREEZE TOKEN\nThe henchmen or elite characters from the villain’s side in the same area as the Freeze token cannot be activated."
+							},
+							"tokens" : {
+								"0": {
+									"name": {
+										"fr": "PION FREEZE",
+										"en": "template"
+										},
+									"image": ["data/powers/img/frozen.png"]
+								}					
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "Renee Montoya effectue immédiatement un mouvement.",
+								"en": "Renee Montoya immediately performs a movement."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Montoya. Elle effectue seulement sa première étape de mouvement.",
+										"en": "The hero immediately performs a character activation with Renee Montoya. They only carry out their First Movement Step."
+							}
+						}
+					}
+				}
+			}
+        },	
+        {
+            "id": "bullock",
+            "name": {
+                "fr": "HARVEY BULLOCK",
+                "en": "HARVEY BULLOCK"
+            },
+            "back": {
+                "text": {
+                    "fr": "Harvey Bullock est un flic à l'ancienne. Sa silhouette massive peut sembler pataude, mais il sait se servir de ses poings et de son arme de service. C'est un enquêteur peu subtil mais efficare dans son genre. Très méfiant quant aux justiciers masqués du genre de Batman, il préfère le travail de policier classique, avec parfois des entorses au rèqlement. Les circonstances peuvent l'amener à solliciter l'aide de Batman. Renee Montoya devient son équipière lors de sa nomination à l'Unité des Crimes Majeurs. Il dut démissionner suite à un excès de zèle. Il devint détective privé, mais fut réintégré quelque temps plus tard.",
+					"en": "Harvey Bullock is an old-fashioned cop and doesn't always do things 'by the book'. Ever-suspicious of the masked vigilantes inhabiting Gotham City, he prefers and advocates for the classic work of a classic cop. But when Commissioner Gordon was kidnapped, Harvey Bullock enlisted Batman's help and even gained a small measure of respect for the costumed hero. Though he may not always look or act the part, Harvey Bullock is an accomplished investigator. Don't be fooled by his portly frame and clumsy demeanor; the man knows how to use his fists and his service weapon."
+					},
+					"ID": "Harvey Bullock",
+					"size": {
+						"fr": "1,78 m",
+						"en": "5ft 10in"
+					},
+					"weight": {
+						"fr": "112 Kg",
+						"en": "247 lbs"
+					}
+				},
+            "color": "blue",
+            "total-gems": 9,
+            "active-gems": 2,
+            "rest-gems": 5,
+            "freemovement": { 
+				"baselevel": 2,
+				"encombrances": [
+					{ "weight": 3, "movement": 1},
+					{ "weight": 5, "movement": 0}
+				]
+			},
+            "size": 1,
+            "menace": 1,
+            "melee": { 
+				"dice": "yellowreroll", 
+				"saturation": 4
+			},
+            "ranged": { 
+				"dice": "yellowreroll", 
+				"saturation": 4,  
+				"skills": [
+					{ "id": "retaliation", "level": 2 , "encombrance": 4 },
+					{ "id": "pointblank", "level": 2 }
+				]
+			},
+            "manipulation": { 
+				"dice": "yellow", 
+				"saturation": 4
+			},
+            "thought": { 
+				"dice": "yellow", 
+				"saturation": 4,   
+				"skills": [
+					{ "id": "investigation", "level": 1 }
+				]
+			},
+            "defense": { 
+				"dice": "yellowreroll", 
+				"saturation": 3,  
+				"skills": [
+					{ "id": "untouchable", "level": 1 , "encombrance": 4 },
+					{ "id": "protected", "level": 1 }
+				]
+			},
+            "reroll": {"saturation": 5},
+            "movement": {
+				"saturation": 4
+			},
+            "otherskills": [
+                { "id": "luck", "level": 2 },
+                { "id": "support", "level": 1 },
+                { "id": "henchman_command", "level": 3 }
+            ],
+            "image": "data/heroes/img/bullock.png",
+            "imageHD": "data/heroes/img/bullock_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/bullock_back.png",
+            "imageHD_back": "data/heroes/img/bullock_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "bullock",
+            "origins": "corebox",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "OFFICIER VÉTÉRAN",
+						"en": "VETERAN OFFICER"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Harvey Bullock dirige son escouade d’une main de fer.",
+								"en": "Harvey Bullock uses his experience to lead a squad."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros active immédiatement tous les personnages d'une tuile de sbires ou d'élites qu'il contrôle.",
+										"en": "The hero immediately activates all the characters of a henchmen or elite tile that they control."
+							}
+						}
+					}
+				}
+			}
+        }		
 		
 		
 		
