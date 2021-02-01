@@ -11,7 +11,29 @@
                 "version": "1.0",
                 "origins": ["corebox"],
                 "copyright": "Monolith",
-                "totopic": {
+                "rules": {
+                    "image": "data/maps/Bank/help.png",
+                    "ratio": 1.24,
+                    "legend": {
+                        "elevation": [
+                            { "level": "1", "color": "#1B94CB" },
+                            { "level": "2", "color": "#83C5E7" },
+                        ],
+                        "boundaries": {
+                            "orange": true,
+                            "white": true,
+                            "special": true,
+                            "wall": true,
+                            "wall_level": true
+                        },
+                        "special_moves": {
+                            "jumb": false,
+                            "climb": false,
+                            "fall": false,
+                            "climb_fall": true
+                        },
+                    }
+                    "totopic": {
                     "fr": "https://the-overlord.com/index.php?/topic/4351-core-carte-banque/",
                     "en": "https://the-overlord.net/index.php?/topic/925-core-bank/"
                 },
@@ -247,10 +269,31 @@
                 "version": "1.0",
                 "origins": ["corebox"],
                 "copyright": "Monolith",
-                "rules2": {
+                "rules": {
                     "image": "data/maps/ACE_Chemicals/help.png",
-                    "ratio": 1.24
-                },
+                    "ratio": 1.24,
+                    "legend": {
+                        "elevation": [
+                            { "level": "0", "color": "#493E3A" },
+                            { "level": "1", "color": "#1B94CB" },
+                            { "level": "2", "color": "#83C5E7" },
+                            { "level": "4", "color": "#FFCA45" }
+                        ],
+                        "boundaries": {
+                            "orange": true,
+                            "white": true,
+                            "special": true,
+                            "wall": true,
+                            "wall_level": true
+                        },
+                        "special_moves": {
+                            "jumb": true,
+                            "climb": true,
+                            "fall": true,
+                            "climb_fall": true
+                        },
+                        "areas": [ "promontory" ]
+                    }
                 "totopic": {
                     "fr": "https://the-overlord.com/index.php?/topic/4350-core-carte-ace-chemicals/",
                     "en": "https://the-overlord.net/index.php?/topic/923-core-ace-chemicals/"
@@ -469,7 +512,33 @@
                 "version": "1.0",
                 "origins": ["corebox"],
                 "copyright": "Monolith",
-                "totopic": {
+                "rules": {
+                    "image": "data/maps/Crime_Alley/help.png",
+                    "ratio": 1.24,
+                    "legend": {
+                        "elevation": [
+                            { "level": "0", "color": "#4C4638" },
+                            { "level": "0", "color": "#493E3A" },
+                            { "level": "2", "color": "#1B94CB" },
+                            { "level": "5", "color": "#83C5E7" },
+                            { "level": "6", "color": "#FFCA45" }
+                        ],
+                        "boundaries": {
+                            "orange": true,
+                            "white": true,
+                            "special": true,
+                            "wall": true,
+                            "wall_level": true
+                        },
+                        "special_moves": {
+                            "jumb": true,
+                            "climb": true,
+                            "fall": true,
+                            "climb_fall": true
+                        },
+                        "areas": [ "promontory" ]
+                    }
+                    "totopic": {
                     "fr": "https://the-overlord.com/index.php?/topic/4352-core-carte-crime-alley/",
                     "en": "https://the-overlord.net/index.php?/topic/927-core-crime-alley/"
                 },
@@ -675,6 +744,29 @@
                 "version": "1.0",
                 "origins": ["corebox"],
                 "copyright": "Monolith",
+                "rules": {
+                    "image": "data/maps/Subway/help.png",
+                    "ratio": 1.24,
+                    "legend": {
+                        "elevation": [
+                            { "level": "1", "color": "#1B94CB" },
+                            { "level": "2", "color": "#83C5E7" },
+                            { "level": "3", "color": "#FFCA45" }
+                        ],
+                        "boundaries": {
+                            "orange": true,
+                            "white": true,
+                            "special": true,
+                            "wall": true,
+                            "wall_level": true
+                        },
+                        "special_moves": {
+                            "jumb": false,
+                            "climb": false,
+                            "fall": false,
+                            "climb_fall": true
+                        },
+                    }                
                 "totopic": {
                     "fr": "https://the-overlord.com/index.php?/topic/4354-core-carte-metrosubway/",
                     "en": "https://the-overlord.net/index.php?/topic/931-core-subway/"
@@ -953,6 +1045,21 @@
                 "version": "1.0",
                 "origins": ["arkham-asylum"],
                 "copyright": "Monolith",
+                "rules": {
+                    "image": "data/maps/Arkham_Asylum/help.png",
+                    "ratio": 1.24,
+                    "legend": {
+                        "elevation": [
+                            { "level": "1", "color": "#1B94CB" },
+                        ],
+                        "boundaries": {
+                            "orange": true|,
+                            "white": true,
+                            "special": false,
+                            "wall": true,
+                            "wall_level": true
+                        },
+                    }
                 "totopic": {
                     "fr": "https://the-overlord.com/index.php?/topic/4358-arkham-asylum-carte-arkham-asylum/",
                     "en": "https://the-overlord.net/index.php?/topic/924-arkham-asylum-arkham-asylum/"
@@ -1279,6 +1386,31 @@
                 "version": "1.0",
                 "origins": ["arkham-asylum"],
                 "copyright": "Monolith",
+                "rules": {
+                    "image": "data/maps/Joker_Funhouse/help.png",
+                    "ratio": 1.24,
+                    "legend": {
+                        "elevation": [
+                            { "level": "0", "color": "#493E3A" },
+                            { "level": "1", "color": "#1B94CB" },
+                            { "level": "2", "color": "#83C5E7" },
+                            { "level": "3", "color": "#FFCA45" }
+                        ],
+                        "boundaries": {
+                            "orange": false,
+                            "white": true,
+                            "special": true,
+                            "wall": true,
+                            "wall_level": false
+                        },
+                        "special_moves": {
+                            "jumb": false,
+                            "climb": true,
+                            "fall": false,
+                            "climb_fall": true
+                        },
+                        "areas": [ "promontory" ]
+                    }
                 "totopic": {
                     "fr": "https://the-overlord.com/index.php?/topic/4359-arkham-asylum-cartes-f%C3%AAte-foraine-du-joker/",
                     "en": "https://the-overlord.net/index.php?/topic/928-arkham-asylum-joker-funhouse/"
@@ -1497,6 +1629,31 @@
                 "version": "1.0",
                 "origins": ["wayne-manor"],
                 "copyright": "Monolith",
+                "rules": {
+                    "image": "data/maps/Batcave/help.png",
+                    "ratio": 1.24,
+                    "legend": {
+                        "elevation": [
+                            { "level": "0", "color": "#493E3A" },
+                            { "level": "1", "color": "#1B94CB" },
+                            { "level": "2", "color": "#83C5E7" },
+                            { "level": "4", "color": "#FFCA45" }
+                        ],
+                        "boundaries": {
+                            "orange": true,
+                            "white": true,
+                            "special": true,
+                            "wall": true,
+                            "wall_level": true
+                        },
+                        "special_moves": {
+                            "jumb": false,
+                            "climb": true,
+                            "fall": true,
+                            "climb_fall": true
+                        },
+                        "areas": [  "elevators_entrance", "elevators_shaft", "promontory", "elevator_orientation"  ]
+                    }
                 "totopic": {
                     "fr": "https://the-overlord.com/index.php?/topic/4357-wayne-manor-cartes-batcave/",
                     "en": "https://the-overlord.net/index.php?/topic/926-wayne-manor-batcave/"
@@ -1757,6 +1914,32 @@
                 "version": "1.0",
                 "origins": ["wayne-manor"],
                 "copyright": "Monolith",
+                "rules": {
+                    "image": "data/maps/Crime_Alley/help.png",
+                    "ratio": 1.24,
+                    "legend": {
+                        "elevation": [
+                            { "level": "0", "color": "#4C4638" },
+                            { "level": "0", "color": "#493E3A" },
+                            { "level": "2", "color": "#1B94CB" },
+                            { "level": "5", "color": "#83C5E7" },
+                            { "level": "6", "color": "#FFCA45" }
+                        ],
+                        "boundaries": {
+                            "orange": true,
+                            "white": true,
+                            "special": true,
+                            "wall": true,
+                            "wall_level": true
+                        },
+                        "special_moves": {
+                            "jumb": true,
+                            "climb": true,
+                            "fall": true,
+                            "climb_fall": true
+                        },
+                        "areas": [ "promontory" ]
+                    }
                 "totopic": {
                     "fr": "https://the-overlord.com/index.php?/topic/4352-core-carte-crime-alley/",
                     "en": "https://the-overlord.net/index.php?/topic/927-core-crime-alley/"
@@ -1963,6 +2146,23 @@
                 "version": "1.0",
                 "origins": ["wayne-manor"],
                 "copyright": "Monolith",
+                "rules": {
+                    "image": "data/maps/Wayne_Manor/help.png",
+                    "ratio": 1.24,
+                    "legend": {
+                        "elevation": [
+                            { "level": "1", "color": "#1B94CB" },
+                            { "level": "2", "color": "#83C5E7" },
+                        ],
+                        "boundaries": {
+                            "orange": true,
+                            "white": true,
+                            "special": true,
+                            "wall": true,
+                            "wall_level": true
+                        },
+                        "areas": [ "elevators_entrance", "elevators_shaft", "elevator_orientation" ]
+                    }                
                 "totopic": {
                     "fr": "https://the-overlord.com/index.php?/topic/4356-wayne-manor-carte-wayne-manor/",
                     "en": "https://the-overlord.net/index.php?/topic/932-wayne-manor-wayne-manor/"
@@ -2175,6 +2375,28 @@
                 "version": "1.0",
                 "origins": ["maps-pack"],
                 "copyright": "Monolith",
+                "rules": {
+                    "image": "data/maps/Sewers/help.png",
+                    "ratio": 1.24,
+                    "legend": {
+                        "elevation": [
+                            { "level": "0", "color": "#897A73" },
+                            { "level": "2", "color": "#199BD7" },
+                        ],
+                        "boundaries": {
+                            "orange": true,
+                            "white": true,
+                            "special": true,
+                            "wall": true,
+                            "wall_level": true
+                        },
+                        "special_moves": {
+                            "jumb": true,
+                            "climb": true,
+                            "fall": true,
+                            "climb_fall": true
+                        },
+                    }                
                 "totopic": {
                     "fr": "https://the-overlord.com/index.php?/topic/4353-maps-pack-carte-egoutssewers/",
                     "en": "https://the-overlord.net/index.php?/topic/930-maps-pack-sewers/"
@@ -2399,6 +2621,30 @@
                 "version": "1.0",
                 "origins": ["maps-pack"],
                 "copyright": "Monolith",
+                "rules": {
+                    "image": "data/maps/GCPD/help.png",
+                    "ratio": 1.24,
+                    "legend": {
+                        "elevation": [
+                            { "level": "0", "color": "#84756E" },
+                            { "level": "1", "color": "#002535" },
+                            { "level": "2", "color": "#0668AF" },
+                            { "level": "4", "color": "#81C4E8" }
+                        ],
+                        "boundaries": {
+                            "orange": true,
+                            "white": true,
+                            "special": true,
+                            "wall": true,
+                            "wall_level": true
+                        },
+                        "special_moves": {
+                            "jumb": true,
+                            "climb": false,
+                            "fall": false,
+                            "climb_fall": true
+                        },
+                    }                
                 "totopic": {
                     "fr": "https://the-overlord.com/index.php?/topic/4355-maps-pack-carte-gcpd/",
                     "en": "https://the-overlord.net/index.php?/topic/929-maps-pack-gcpd/"
