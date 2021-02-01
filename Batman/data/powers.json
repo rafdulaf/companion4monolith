@@ -3098,12 +3098,107 @@
 					}
 				}
 			}
-        }
+        },
+	{
+            "id": "red-hood-new52",
+            "origins": "red-hood-new52",
+            "image": "data/powers/img/red-hood-new52.png",
+            "name": {
+                "fr": "RED HOOD",
+                "en": "RED HOOD"
+            },
+            "subtitle": {
+                "fr": "(NEW 52)",
+                "en": "(NEW 52)"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "LA LOI DU TALION",
+						"en": "LAW OF RETRIBUTION"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Le bien, le mal, tout n'est qu'un question de point de vue.",
+								"en": "Good, evil... it just depends on your point of view."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros choisit une zone sur laquelle Red Hood dispose d'une ligne de vue. Il lance un unique dé rouge. Chaque figurine dans a zone (y compris les alliés) subit autant de blessures que de succès obtenus sur ce dé.",
+										"en": "The hero chooses an area with clear line of sight from Red Hood. They roll a single red die. Each miniature in the area (including allies) suffers this number of wounds."
+							}
+						}
+					}
+				}
+			}
+        },
+	{
+            "id": "batman-beyond",
+            "origins": "batman-beyond",
+            "image": "data/powers/img/batman-beyond.png",
+            "name": {
+                "fr": "BATMAN BEYOND",
+                "en": "BATMAN BEYOND"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "VIF COMME L'ÉCLAIR",
+						"en": "QUICK AS LIGHTNING"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "La jeunesse permet des actions d'éclat.",
+								"en": "Youth allows spectacular actions."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Batman Beyond. Pour cela, il suit les étapes d'ctivation d'un personnage contrôlé par une tuile avec les exceptions suivantes :\n--il peut effectuer sa première étape de mouvement mais pas la seconde;\n--lors de l'étape de déclaration d'une action autre que le mouvement, il ne peut déclarer qu'une action d'attaque au corps-à-corps acec la caractéristique suivante : 1 dé rouge + 1 dé orange.",
+										"en": "The hero immediately performs a character activation with Batman Beyond. To do so, they follow the Activate a Character Controlled by a Tile steps with the following exceptions:\n--They can perform their First Movement Step but not the second.\n--During the Declare an Action Other than Movement step, they can only declare a melee attack with 1 red die + 1 orange die."
+							}
+						}
+					}
+				}
+			}
+        },		
+	{
+            "id": "batman-new-52",
+            "origins": "batman-new-52",
+            "image": "data/powers/img/batman-new-52.png",
+            "name": {
+                "fr": "BATMAN",
+                "en": "BATMAN"
+            },
+            "subtitle": {
+                "fr": "(JAMES GORDON)",
+                "en": "(JAMES GORDON)"
+            },
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "SOUTIEN OFFENSIF",
+						"en": "OFFENSIVE SUPPORT"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Quand le danger est à son paroxysme, Rookie est la solution.",
+								"en": "When danger is at its highest level - uneash Rookie is the answer"
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "A la fin de l'étape de sélection du QG, le héros sélectionne la tuile de Rookie et tant que lieutenant. Lors de l'activation de la tuile évènement, le héros réalise une activation de personnage avec Batman (James Gordon). Il effectue seulement sa première étape de mouvement. S'il termine son déplacement dans la zone de Rookie, il rentre dans son robot. Sa figurine est retirée du plateau. Puis, le héros réalise une ctivation de personnage avec Rookie. Il effectue seulement sa première étape de mouvement. L héros peut ensuite effectuer une explosion de niveau 2 dans une zone jusqu'à 2 de distance de Rookie et avec laquelle il partage une ligne de vue. Enfin, la figurine de Batman (James Gordon) est remise dans la zone de Rookie.\nSi Rookie est neutralisé, Batman (James Gordon) effectue seulement sa première étape de mouvement.",
+										"en": "At the end of the Leader Selection step, the hero selets Rookie's tile as heir lieutement. hen the event tile is activated, the heri performs a character activation with Batman (James Gordon). They only carry out their First Movement Step. If Batman ends his movement in Rookie's area, he can transfer into the robotic suit. Batman's miniature is removed from the board. The hero then performs a character activation with Rookie. During this activation, they only carry out their First Movement Step.\nThe hero may then cause a level 2 explosion in an area that Rookie has a clear line of sight, up to 2 areas distance from Rookie. Finally, Batman's miniature is placed back in Rookie's area.\nIf Rookie is neutralized, Batman (James Gordon) only carries out his First Movvement Step."
+							}
+						}
+					}
+				}
+			}
+		}		
 		
-		
-	]
-	
-	
+	]	
 }
 
 
