@@ -43,21 +43,21 @@ Utils = {
         // Load CSS files
         var commonFiles = await Utils.loadJSON("../engine/Files.json");
         commonFiles.css.forEach(function(file) {
-            $('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', '../engine/' + file) );
+            $('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', '../engine/' + file + "?version=" + Version) );
         });
         
         var applicationFiles = await Utils.loadJSON("Files.json");
         applicationFiles.css.forEach(function(file) {
-            $('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', file) );
+            $('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', file + "?version=" + Version) );
         });
         
         // Load JS files
         commonFiles.scripts.forEach(function(file) {
-            $('head').append( $('<script/>').attr('src', '../engine/' + file) );
+            $('head').append( $('<script/>').attr('src', '../engine/' + file + "?version=" + Version) );
         });
 
         applicationFiles.scripts.forEach(function(file) {
-            $('head').append( $('<script/>').attr('src', file) );
+            $('head').append( $('<script/>').attr('src', file + "?version=" + Version) );
         });
     },
     
