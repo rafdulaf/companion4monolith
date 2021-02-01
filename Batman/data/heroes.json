@@ -453,11 +453,456 @@
 				}
 			}
         },		
-		
-		
-		
-		
-		
+        {
+            "id": "robin-drake",
+            "name": {
+                "fr": "ROBIN",
+                "en": "ROBIN"
+            },
+            "subtitle": {
+                "fr": "TIM DRAKE",
+                "en": "TIM DRAKE"
+            },
+           "back": {
+                "text": {
+                    "fr": "Tim Drake est un bon détective, il a découvert la véritable identité de Batman, mais c'est aussi le premier Robin à s'intéresser à l'informatique et à la programmation. Au début, Tlm se distingue aussi par sa vision des choses. Il ne se voit pas en Batman ou en justicier masqué adulte, il s'imagine être Robin seulement un temps, puis faire carrière dans les servires de renseignements. Des années plus tard, après la mort du père de Tim, Bruce Wayne l'adoptera dans sa famille. Les relations entre Bruce et Tim se compliqueront un peu avec le temps, Tim n'accceptant pas toujours les décisions les plus «martiales» de Batman.",
+					"en": "Tim Drake was a qood detective-so good he managed to deduce Batman's true identity. His excellent computer and hacking skills set him apart from other Robins. But the differences didn't end there. Despite being the third in a line of Robins, Tim never saw himself becoming the next Batman or as being a masked vigilante in adulthood. He dreamed of someday having a career in intelligence services. Years later, after the death of Tim's father, Bruce Wayne formally adopted him into the family. Over time, their relationship grew in complexity as Tim didn't always agree with Batman's violent methods."
+					},
+					"ID": "Timothy Drake",
+					"size": {
+						"fr": "1,67 m",
+						"en": "5ft 6in"
+					},
+					"weight": {
+						"fr": "59,4 Kg",
+						"en": "131 lbs"
+					}
+				},
+            "color": "blue",
+            "total-gems": 10,
+            "active-gems": 2,
+            "rest-gems": 5,
+            "freemovement": { 
+				"baselevel": 2,
+				"encombrances": [
+					{ "weight": 3, "movement": 1},
+					{ "weight": 5, "movement": 0}
+				]
+			},
+            "beltsize": 3,
+            "size": 1,
+            "menace": 1,
+            "melee": { 
+				"dice": "orange", 
+				"saturation": 4, 
+				"skills": [
+					{ "id": "martial_arts", "level": 1 , "encombrance": 4 }
+				]
+			},
+            "ranged": { 
+				"dice": "yellowreroll", 
+				"saturation": 4
+			},
+            "manipulation": { 
+				"dice": "orange", 
+				"saturation": 5,   
+				"skills": [
+					{ "id": "munitions_specialist", "level": 1 }
+				]
+			},
+            "thought": { 
+				"dice": "red", 
+				"saturation": 3,   
+				"skills": [
+					{ "id": "hacking", "level": 2 },
+					{ "id": "investigation", "level": 1}
+				]
+			},
+            "defense": { 
+				"dice": "orange", 
+				"saturation": 4
+			},
+            "passive-defense": { "dice": "yellow"},
+            "reroll": {"saturation": 4},
+            "movement": {
+				"saturation": 4,  
+				"skills": [
+					{ "id": "parkour", "level": 1 , "encombrance": 3 },
+					{ "id": "elusive", "level": 1 , "encombrance": 3 },
+					{ "id": "mobility", "level": 1, "encombrance": 3 }
+				]
+			},
+            "traits": [
+                {"id": "moral_code"}
+            ],
+            "image": "data/heroes/img/robin-drake.png",
+            "imageHD": "data/heroes/img/robin-drake_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/robin-drake_back.png",
+            "imageHD_back": "data/heroes/img/robin-drake_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "robin-drake",
+            "origins": "corebox"
+        },		
+        {
+            "id": "robin-damian",
+            "name": {
+                "fr": "ROBIN",
+                "en": "ROBIN"
+            },
+            "subtitle": {
+                "fr": "DAMIAN WAYNE",
+                "en": "DAMIAN WAYNE"
+            },
+           "back": {
+                "text": {
+                    "fr": "Qu'attendre d'un garçon élevé par la Ligue des Assassins ? Quand Talia Al Ghul, fille du plus grand terroriste du monde, met Damian dans les pattes de Bruce Wayne et lui annonce qu'il est leur fils, Batman est confronté à un sérieux problème. Car l'enfant est violent, expert dans bien des formes de combat et à peu près incontrôlable. Assumant à la fois l'héritage de sa mère et de son père, il défie Tim Drake et prend sa place. Mais peu à peu, Alfred et Batman parviennent à l'apprivoiser. Damian s'impose alors comme le Robin ultime : redoutable stratège, combattant implacable, il se destine à devenir Batman à son tour.",
+					"en": "What do you expect from a boy raised by the League of Assassins? When Talia Al Ghul, daughter of the biggest terrorist in the world, put Damian in Bruce Wayne's hands and announced that he is their son, Batman faced a serious problem. The child was violent, adept in many forms of combat, and almost uncontrollable. Inheriting the qualities of both his mother and his father, he defied Tim Drake and took his place. But qradually, Alfred and Batman managed ta tame him. Damian then imposed himself as the ultimate Robin: formidable strategist, implacable fighter, and destined to one day become Batman."
+					},
+					"ID": "Damian Wayne",
+					"size": {
+						"fr": "4ft 6in",
+						"en": "1,37 m"
+					},
+					"weight": {
+						"fr": "38 Kg",
+						"en": "84 lbs"
+					}
+				},
+            "color": "blue",
+            "total-gems": 10,
+            "active-gems": 2,
+            "rest-gems": 5,
+            "freemovement": { 
+				"baselevel": 2,
+				"encombrances": [
+					{ "weight": 3, "movement": 1},
+					{ "weight": 5, "movement": 0}
+				]
+			},
+            "beltsize": 3,
+            "size": 1,
+            "menace": 1,
+            "melee": { 
+				"dice": "orangereroll", 
+				"saturation": 4, 
+				"skills": [
+					{ "id": "combo", "level": 1 , "encombrance": 4 },
+					{ "id": "counterattack", "level": 1 , "encombrance": 4 },
+					{ "id": "martial_arts", "level": 1, "encombrance": 4 }
+				]
+			},
+            "ranged": { 
+				"dice": "orange", 
+				"saturation": 3
+			},
+            "manipulation": { 
+				"dice": "orange", 
+				"saturation": 5
+			},
+            "thought": { 
+				"dice": "orange", 
+				"saturation": 5,   
+				"skills": [
+					{ "id": "investigation", "level": 1 , "encombrance": 6 },
+					{ "id": "marksman", "level": 1, "encombrance": 4 }
+				]
+			},
+            "defense": { 
+				"dice": "orange", 
+				"saturation": 5
+			},
+            "passive-defense": { "dice": "yellow"},
+            "reroll": {"saturation": 4},
+            "movement": {
+				"saturation": 5,  
+				"skills": [
+					{ "id": "elusive", "level": 1 , "encombrance": 3 },
+					{ "id": "parkour", "level": 1, "encombrance": 3 }
+				]
+			},
+            "otherskills": [
+                { "id": "tactician", "level": 1 }
+            ],
+            "image": "data/heroes/img/robin-damian.png",
+            "imageHD": "data/heroes/img/robin-damian_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/robin-damian_back.png",
+            "imageHD_back": "data/heroes/img/robin-damian_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "robin-damian",
+            "origins": "corebox"
+        },		
+        {
+            "id": "catwoman",
+            "name": {
+                "fr": "CATWOMAN",
+                "en": "CATWOMAN"
+            },
+           "back": {
+                "text": {
+                    "fr": "Selina Kyle a défini sa personnalité autour du symbole du chat, là ou Bruce Wayne s'est inspiré de la chauve souris. Naturellement agile, c'est une extraordinaire cambrioleuse dont le costume est équipé de griffes, pratiques aussi bien pour escalader les gratte-ciels,que pour affronter un adversaire. La relation particulière entre Batman et Catwoman est ambigüe. Ils s'opposent régulièrement, sans que leurs affrontements ne tournent en la faveur de l'un ou de l'autre. Ces oppositions sont devenues des jeux de séduction. Catwoman est le grand amour de Batman et elle finira d'ailleurs par connaître sa double identité.",
+					"en": "Just as Bruce chose the bat as his totem, Selina Kyle chose the cat. She and the Dark Knight have always had a volatile relationship. Being a master thief certainly puts her at odds with the world's greatest detective. And yet most times they meet, it is not only punches and kicks they exchange. Perhaps it is destiny that keeps these two in constant contact. Or perhaps it is their two extremely complex personalities-an attraction born of deeply buried desperation-for who else would these loners find on the dark streets of Gotham City?"
+					},
+					"ID": "Selina Kyle",
+					"size": {
+						"fr": "1,70 m",
+						"en": "5ft 7in"
+					},
+					"weight": {
+						"fr": "58 Kg",
+						"en": "128 lbs"
+					}
+				},
+            "color": "blue",
+            "total-gems": 10,
+            "active-gems": 2,
+            "rest-gems": 5,
+            "freemovement": { 
+				"baselevel": 3,
+				"encombrances": [
+					{ "weight": 3, "movement": 2},
+					{ "weight": 4, "movement": 1},
+					{ "weight": 5, "movement": 0}
+				]
+			},
+            "size": 1,
+            "menace": 1,
+            "melee": { 
+				"dice": "yellowreroll", 
+				"saturation": 5, 
+				"skills": [
+					{ "id": "martial_arts", "level": 1 , "encombrance": 4 }
+				]
+			},
+            "ranged": { 
+				"dice": "orange", 
+				"saturation": 4
+			},
+            "manipulation": { 
+				"dice": "red", 
+				"saturation": 4,   
+				"skills": [
+					{ "id": "munitions_specialist", "level": 1 },
+					{ "id": "lock_piking", "level": 2 }
+				]
+			},
+            "thought": { 
+				"dice": "orange", 
+				"saturation": 4
+			},
+            "defense": { 
+				"dice": "orange", 
+				"saturation": 5,  
+				"skills": [
+					{ "id": "untouchable", "level": 1 , "encombrance": 5 }
+				]
+			},
+            "reroll": {"saturation": 6},
+            "movement": {
+				"saturation": 4,  
+				"skills": [
+					{ "id": "parkour", "level": 3 , "encombrance": 4 },
+					{ "id": "elusive", "level": 2 , "encombrance": 3 },
+					{ "id": "mobility", "level": 2, "encombrance": 3 }
+				]
+			},
+            "traits": [
+                {"id": "moral_code"}
+            ],
+            "image": "data/heroes/img/catwoman.png",
+            "imageHD": "data/heroes/img/catwoman_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/catwoman_back.png",
+            "imageHD_back": "data/heroes/img/catwoman_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "catwoman",
+            "origins": "corebox"
+        },		
+        {
+            "id": "batwoman",
+            "name": {
+                "fr": "BATWOMAN",
+                "en": "BATWOMAN"
+            },
+            "back": {
+                "text": {
+                    "fr": "Cette héroïne rousse, drapée dans un costume rouge et noir, est la cousine de Bruce Wayne. Victime dans son enfance d'un enlèvement coûtant la vie à sa mère, Kate Kane a suivi une stricte éducation militaire sous la direction de son père, qui est fasciné par les méthodes de Batman. Batwoman s'impose parmi les justiciers de Gotham City. Attirante, elle ne se laisse jamais séduire par les hommes. Elle est au contraire tour à tour l'amante de l'agent Renee Montoya puis de la commissaire Maggie Sawyer. Quand Bruce Wayne lui fait assez confiance pour lui révéler sa propre identité, elle lui avoue l'avoir deviné depuis des années.",
+					"en": "Batwoman first appeared in Detective Comics #233. Dressed in red and yellow, Kathy Kane was merely playinq the role of a hero in order to impress Batman. In 2006, a more modern and capable Batwoman debuted. This time it was Bruce Wayne's cousin, Kate Kane, dressed in a suit of red and black. Kate had a traumatic childhood which involved a kidnapping and the loss of her mother. Since that time, she endured a strict upbringing and military-level education, touqht by her father-a man fascinated by Batman's crusade against crime. This new Batwoman quickly established herself among the most feared of Gotham City's vigilantes."
+					},
+					"ID": "Kate Kane",
+					"size": {
+						"fr": "1,80 m",
+						"en": "5ft 11in"
+					},
+					"weight": {
+						"fr": "64 Kg",
+						"en": "141 lbs"
+					}
+				},
+            "color": "blue",
+            "total-gems": 10,
+            "active-gems": 2,
+            "rest-gems": 5,
+            "freemovement": { 
+				"baselevel": 2,
+				"encombrances": [
+					{ "weight": 3, "movement": 1},
+					{ "weight": 5, "movement": 0}
+				]
+			},
+            "beltsize": 4,
+            "size": 1,
+            "menace": 1,
+            "melee": { 
+				"dice": "orangereroll", 
+				"saturation": 4, 
+				"skills": [
+					{ "id": "martial_arts", "level": 1 , "encombrance": 4 }
+				]
+			},
+            "ranged": { 
+				"dice": "orange", 
+				"saturation": 4
+			},
+            "manipulation": { 
+				"dice": "yellowreroll", 
+				"saturation": 4,   
+				"skills": [
+					{ "id": "munitions_specialist", "level": 2}
+				]
+			},
+            "thought": { 
+				"dice": "yellowreroll", 
+				"saturation": 4
+			},
+            "defense": { 
+				"dice": "orange", 
+				"saturation": 5
+			},
+            "passive-defense": { "dice": "yellow"},
+            "reroll": {"saturation": 4},
+            "movement": {
+				"saturation": 4,  
+				"skills": [
+					{ "id": "parkour", "level": 1 , "encombrance": 3 }
+				]
+			},
+            "otherskills": [
+                { "id": "ambidextry", "level": 1 },
+                { "id": "support", "level": 1 },
+                { "id": "tactician", "level": 2 }
+            ],
+            "traits": [
+                {"id": "moral_code"}
+            ],
+            "image": "data/heroes/img/batwoman.png",
+            "imageHD": "data/heroes/img/batwoman_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/batwoman_back.png",
+            "imageHD_back": "data/heroes/img/batwoman_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "batwoman",
+            "origins": "corebox"
+        },		
+        {
+            "id": "orphan",
+            "name": {
+                "fr": "ORPHAN",
+                "en": "ORPHAN"
+            },
+            "subtitle": {
+                "fr": "CASSANDRA CAIN",
+                "en": "CASSANDRA CAIN"
+            },
+           "back": {
+                "text": {
+                    "fr": "David Cain voulait créer l'assassin ultime et éleva dans ce but Cassandra, la fille qu'il a eue avec Sandra Wu-San. Il se livra à une expérience abominable sur elle : dès son plus jeune âge le seul langage qu'il lui apprit fut celui de la violence et du combat. Elle lit depuis lors instinctivement les attitudes corporelles, ce qui en fait une guerrière experte qu'il est très difficile de surprendre. Mais Cassandra, devenue à son tour Orphan, n'était pas du genre à se laisser manipuler et, quoique capable de mettre Batman en difficulté au corps-à-corps, c'est dans le camp de la chauve-souris qu'elle finira par se ranger.",
+					"en": "David Cain wanted to create the ultimate assassin and raised his daughter Cassandra to become a deadly weapon. It was an abominable experiment that he conducted on her: from her earlier childhood the only language she learned was violence and combat. She was able to read her opponents' physical aptitudes, making her an expert warrior nearly impossible to surprise. But Cassandra, who became Orphan, was not one to be manipulated and, even though she was able to match Batman in hand-to-hand combat, she eventually allied with the Dark Kniqht."
+					},
+					"ID": "Cassandra Cain",
+					"size": {
+						"fr": "1,65 m",
+						"en": "5ft 5in"
+					},
+					"weight": {
+						"fr": "50 Kg",
+						"en": "110 lbs"
+					}
+				},
+            "color": "blue",
+            "total-gems": 8,
+            "active-gems": 3,
+            "rest-gems": 5,
+            "freemovement": { 
+				"baselevel": 3,
+				"encombrances": [
+					{ "weight": 3, "movement": 2},
+					{ "weight": 4, "movement": 1},
+					{ "weight": 5, "movement": 0}
+				]
+			},
+            "beltsize": 1,
+            "size": 1,
+            "menace": 1,
+            "melee": { 
+				"dice": "orangereroll", 
+				"saturation": 3, 
+				"skills": [
+					{ "id": "combo", "level": 1 , "encombrance": 3 },
+					{ "id": "martial_arts", "level": 2, "encombrance": 3 }
+				]
+			},
+            "ranged": { 
+				"dice": "orange", 
+				"saturation": 3
+			},
+            "manipulation": { 
+				"dice": "yellowreroll", 
+				"saturation": 3
+			},
+            "thought": { 
+				"dice": "yellow", 
+				"saturation": 4
+			},
+            "defense": { 
+				"dice": "red", 
+				"saturation": 3,  
+				"skills": [
+					{ "id": "impenetrable_defense", "level": 1 },
+					{ "id": "untouchable", "level": 1 }
+				]
+			},
+            "reroll": {"saturation": 4},
+            "movement": {
+				"saturation": 4,  
+				"skills": [
+					{ "id": "elusive", "level": 1 , "encombrance": 3 },
+					{ "id": "parkour", "level": 2, "encombrance": 3 }
+				]
+			},
+            "otherskills": [
+                { "id": "pushing_limits", "level": 1  }
+            ],
+            "image": "data/heroes/img/orphan.png",
+            "imageHD": "data/heroes/img/orphan_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/orphan_back.png",
+            "imageHD_back": "data/heroes/img/orphan_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "orphan",
+            "origins": "corebox"
+        },		
 		
 		
 		
