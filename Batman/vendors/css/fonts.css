@@ -8,7 +8,14 @@
 @font-face {
     font-family: Primary;
     font-display: block;
+    font-weight: 200;
     src: url("../fonts/Rajdhani-Bold.woff2") format("woff2");
+}
+@font-face {
+    font-family: Primary;
+    font-display: block;
+    font-weight: 100;
+    src: url("../fonts/Rajdhani-Medium.woff2") format("woff2");
 }
 @font-face {
     font-family: Secondary;

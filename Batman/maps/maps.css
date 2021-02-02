@@ -1,6 +1,6 @@
 .map-map-help {
-    font-family: 'Secondary';
-    font-size: calc(var(--secondary-size) * 1rem);
+    font-family: 'Primary';
+    font-size: calc(var(--primary-size) * 1rem);
 }
 .map-map-help .map-help-thumb img {
     /*max-height: calc(100vh - 64px - 56px - 20px - 20px);*/
@@ -12,11 +12,12 @@
 .map-map-help .map-map-legend {
     display: inline-block;
     vertical-align: top;
-    width: 230px;
+    width: 175px;
     margin: 10px 5px 0;
     padding: 0 10px 10px 10px;
     border: 1px solid #f2981a;
     border-top-width: 0;
+    background-color: #F8F9F4
 }
 
 @media (orientation: portrait) {
@@ -47,15 +48,18 @@
     background-color: #fff;
 }
 
+.map-map-help .map-map-legend div {
+    font-size: calc(var(--primary-size) * 0.8rem);
+}
 .map-map-help .map-map-legend h1 div {
     text-transform: uppercase;
-    font-size: calc(var(--secondary-size) * 1rem);
+    font-size: calc(var(--primary-size) * 0.7rem);
     color: #FFF;
     background-color: #F2981A;
     text-align: center;
     position: relative;
     width: 150px;
-    margin: 0 auto;
+    margin: 0 auto -1px 5px;
 }
 .map-map-help .map-map-legend h1 div::after,
 .map-map-help .map-map-legend h1 div::before {
@@ -71,10 +75,64 @@
     padding: 5px;
 }
 
-.map-map-help .map-map-legend-elevation span:first-child { 
-    display: inline-block;
-    vertical-align: top;
-    width: 30px;
+/* ELEVATION */
+.map-map-help .map-map-legend-elevation {
+    width: 160px;
+}
+.map-map-help .map-map-legend-elevation > div {
+    display: flex;
+    align-items: center;
+}
+.map-map-help .map-map-legend-elevation span {
+    flex: 1;
+    line-height: calc(var(--primary-line-height) * 0.7rem);
+}
+.map-map-help .map-map-legend-elevation span:first-child {
+    flex: unset;
+    width: 20px;
     height: 20px; 
     margin-right: 5px;
+}
+
+/* BOUNDARIES */
+.map-map-help .map-map-legend-boundaries {
+    width: 160px;
+}
+.map-map-help .map-map-legend-boundaries > div {
+    display: flex;
+    align-items: center;
+}
+.map-map-help .map-map-legend-boundaries span {
+    line-height: calc(var(--primary-line-height) * 0.7rem);
+    flex: 1;
+}
+.map-map-help .map-map-legend-boundaries span:first-child { 
+    flex: unset;
+    width: 40px;
+    height: 20px; 
+    margin-right: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* SPECIAL MOVES */
+.map-map-help .map-map-legend-specialmoves {
+    width: 355px;
+}
+.map-map-help .map-map-legend-specialmoves > div {
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+}
+.map-map-help .map-map-legend-specialmoves span {
+    line-height: calc(var(--primary-line-height) * 0.7rem);
+    flex: 1;
+}
+.map-map-help .map-map-legend-specialmoves span:first-child {
+    flex: unset;
+    width: 20px;
+    height: 40px; 
+    margin-right: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
 }

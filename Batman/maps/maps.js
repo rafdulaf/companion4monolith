@@ -25,12 +25,12 @@ Maps = mergeObject(Maps, {
         },
         'en': {
             'legend_elevation_title': "Elevation levels",
-            'legend_elevation_text': "Elevation level",
+            'legend_elevation_text': "Elevation<br/>level",
             
             'legend_boundaries_title': "Area Boundaries",
-            'legend_boundaries_orange': "Orange area boundaries",
-            'legend_boundaries_white': "White area boundaries",
-            'legend_boundaries_special': "Special area boundaries",
+            'legend_boundaries_orange': "Orange area<br/>boundaries",
+            'legend_boundaries_white': "White area<br/>boundaries",
+            'legend_boundaries_special': "Special area<br/>boundaries",
             'legend_boundaries_wall': "Wall",
             'legend_boundaries_wall_level': "Level X wall",
             
@@ -92,36 +92,16 @@ Maps = mergeObject(Maps, {
                     aide += "<div class='map-map-legend map-map-legend-boundaries'>"
                             + "<h1><div>" + Maps._i18n[Language].legend_boundaries_title + "</div></h1>";
 
-                    if (!(rules.legend.boundaries.orange === false))
-                    {
-                        aide += "<div class='map-map-legend-boundaries-orange'>"
-                                    + Maps._i18n[Language].legend_boundaries_orange
-                              + "</div>"
-                    }
-                    if (!(rules.legend.boundaries.white === false))
-                    {
-                        aide += "<div class='map-map-legend-boundaries-white'>"
-                                    + Maps._i18n[Language].legend_boundaries_white
-                              + "</div>"
-                    }
-                    if (!(rules.legend.boundaries.special === false))
-                    {
-                        aide += "<div class='map-map-legend-boundaries-special'>"
-                                    + Maps._i18n[Language].legend_boundaries_special
-                              + "</div>"
-                    }
-                    if (!(rules.legend.boundaries.wall === false))
-                    {
-                        aide += "<div class='map-map-legend-boundaries-wall'>"
-                                    + Maps._i18n[Language].legend_boundaries_wall
-                              + "</div>"
-                    }
-                    if (!(rules.legend.boundaries.wall_level === false))
-                    {
-                        aide += "<div class='map-map-legend-boundaries-walllevel'>"
-                                    + Maps._i18n[Language].legend_boundaries_wall_level
-                              + "</div>"
-                    }
+                        
+                    ["orange", "white", "special", "wall", "wall_level"].forEach(function(item) {
+                        if (!(rules.legend.boundaries[item] === false))
+                        {
+                            aide += "<div>"
+                                  + "<span style=\"background-image: url('maps/img/boundaries_" + item + ".png?version=" + Version + "')\"></span>" 
+                                  + "<span>" + Maps._i18n[Language]['legend_boundaries_' + item] + "</span>"
+                                  + "</div>"
+                        }
+                    });
                     
                     aide += "</div>";
                 }
@@ -131,30 +111,15 @@ Maps = mergeObject(Maps, {
                     aide += "<div class='map-map-legend map-map-legend-specialmoves'>"
                             + "<h1><div>" + Maps._i18n[Language].legend_specialmoves_title + "</div></h1>";
 
-                    if (!(rules.legend.special_moves.jumb === false))
-                    {
-                        aide += "<div class='map-map-legend-specialmoves-jumb'>"
-                                    + Maps._i18n[Language].legend_specialmoves_jump
-                              + "</div>"
-                    }
-                    if (!(rules.legend.special_moves.climb === false))
-                    {
-                        aide += "<div class='map-map-legend-specialmoves-climb'>"
-                                    + Maps._i18n[Language].legend_specialmoves_climb
-                              + "</div>"
-                    }
-                    if (!(rules.legend.special_moves.fall === false))
-                    {
-                        aide += "<div class='map-map-legend-specialmoves-fall'>"
-                                    + Maps._i18n[Language].legend_specialmoves_fall
-                              + "</div>"
-                    }
-                    if (!(rules.legend.special_moves.climb_fall === false))
-                    {
-                        aide += "<div class='map-map-legend-specialmoves-climb_fall'>"
-                                    + Maps._i18n[Language].legend_specialmoves_climb_fall.replace(/\n/g, '<br/>')
-                              + "</div>"
-                    }
+                    ["jump", "climb", "fall", "climb_fall"].forEach(function(item) {
+                        if (!(rules.legend.special_moves[item] === false))
+                        {
+                            aide += "<div>"
+                                  + "<span style=\"background-image: url('maps/img/specialmoves_" + item + ".png?version=" + Version + "')\"></span>" 
+                                  + "<span>" + Maps._i18n[Language]['legend_specialmoves_' + item].replace(/\n/g, '<br/>') + "</span>"
+                                  + "</div>";
+                        }
+                    });
 
                     aide += "</div>";
                 }
@@ -164,13 +129,11 @@ Maps = mergeObject(Maps, {
                     aide += "<div class='map-map-legend map-map-legend-areas'>"
                             + "<h1><div>" + Maps._i18n[Language].legend_areas_title + "</div></h1>";
 
-                    for (var i=0; i< rules.legend.areas.length; i++)
-                    {
-                        var area = rules.legend.areas[i];
+                    rules.legend.areas.forEach(function (area) {
                         aide += "<div class=\"map-map-legend-areas-" + area + "\">"
                             + Maps._i18n[Language]['legend_areas_' + area]
                             + "</div>"
-                    }
+                    });
                             
                     aide += "</div>";
                 }
