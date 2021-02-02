@@ -1274,11 +1274,464 @@
 					}
 				}
 			}
-        }		
-		
-		
-		
-		
+        },		
+        {
+            "id": "black-canary",
+            "name": {
+                "fr": "BLACK CANARY",
+                "en": "BLACK CANARY"
+            },
+            "back": {
+                "text": {
+                    "fr": "Dinah Lance est la deuxième Black Canary. Ce nom était porté par sa mère, qui n'avait comme atout qu'une bonne connaissance des arts martiaux. Dinah a repris à son compte cette identité et est à présent l'une des meilleures combattantes de l'univers DC. Elle possède un superpouvoir qu'elle doit à une malédiction. Il s'aqit d'un \"cri sonique\", souvent qualifié de \"cri du Canary\", qui lui permet de crier à de hautes fréquences, pouvant désorienter ses adversaires, voire les repousser. Elle a été recrutée par Barbara Gordon pour former les Birds of Prey. C'est la compagne de Green Arrow. Elle fait partie de la Justice League.",
+					"en": "Dinah Lance took over the role of Black Canary from her mother, a master martial artist. Not only did she live up to her mother's legacy, she also became one of the more skilled fighters in the DC universe. This was due, in part, to an enhancement her mother never had: the Canary Cry. This allowed her to scream at such a high frequency that her opponents became disoriented or even physically pushed away. Thouqh this modern Black Canary is famous as a companion to Green Arrow, she has also fought alonqside Batman and with Barbara Gordon on the team known as the Birds of Prey."
+					},
+					"ID": "Dinah Drake Lance",
+					"size": {
+						"fr": "1,63 m",
+						"en": "5ft 4in"
+					},
+					"weight": {
+						"fr": "52 Kg",
+						"en": "115 lbs"
+					}
+				},
+            "color": "blue",
+            "total-gems": 10,
+            "active-gems": 2,
+            "rest-gems": 5,
+            "freemovement": { 
+				"baselevel": 2,
+				"encombrances": [
+					{ "weight": 3, "movement": 1},
+					{ "weight": 5, "movement": 0}
+				]
+			},
+            "size": 1,
+            "menace": 1,
+            "melee": { 
+				"dice": "orange", 
+				"saturation": 4, 
+				"skills": [
+					{ "id": "martial_arts", "level": 1 , "encombrance": 4 }
+				]
+			},
+            "ranged": { 
+				"dice": "orange", 
+				"saturation": 4
+			},
+            "manipulation": { 
+				"dice": "orangereroll", 
+				"saturation": 3
+			},
+            "thought": { 
+				"dice": "orange", 
+				"saturation": 3
+			},
+            "defense": { 
+				"dice": "orange", 
+				"saturation": 4,  
+				"skills": [
+					{ "id": "untouchable", "level": 1 , "encombrance": 4 }
+				]
+			},
+            "reroll": {"saturation": 4},
+            "movement": {
+				"saturation": 4,  
+				"skills": [
+					{ "id": "parkour", "level": 1 , "encombrance": 6 },
+					{ "id": "marksman", "level": 1, "encombrance": 4 }
+				]
+			},
+            "otherskills": [
+                { "id": "cry", "level": 2 }
+            ],
+            "image": "data/heroes/img/black-canary.png",
+            "imageHD": "data/heroes/img/black-canary_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/black-canary_back.png",
+            "imageHD_back": "data/heroes/img/black-canary_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "black-canary",
+            "origins": "corebox",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "CRI",
+						"en": "CRY"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Black Canary utilise son cri pour attaquer les adversaires.",
+								"en": "Black Canary uses her cry to attack opponents."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Black Canary. Elle effectue seulement une action de manipulation automatique en utilisant sa compétence souffle de niveau 2.",
+										"en": "The hero immediately performs a character activation with Black Canary. They only carry out an automatic manipulation by using the blast skill level 2."
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "Black Canary effectue immédiatement un mouvement.",
+								"en": "Black Canary immediately performs a movement."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Black Canary. Elle effectue seulement sa première étape de mouvement.",
+										"en": "The hero immediately performs a character activation with Black Canary. They only carry out their First Movement Step."
+							}
+						}
+					}
+				}
+			}
+        },		
+        {
+            "id": "bluebird",
+            "name": {
+                "fr": "BLUE BIRD",
+                "en": "BLUE BIRD"
+            },
+			"back": {
+                "text": {
+                    "fr": "Après que Batman les a sauvés elle et son frère, la jeune Harper Row réalise à quel point le héros est nécessaire à Gotham City. Harper est une bricoleuse surdouée et experte en électronique au point d'arriver à améliorer les bat-gadgets de Batman. Elle vient en aide plusieurs fois au justicier malgré son refus. Mais au fil du temps, Batman va apprendre à lui faire confiance. C'est à ce moment-là qu'elle adopte le nom de Bluebird et porte le costume. Comme la plupart des alliés de Batman, Bluebird est athlétique. Elle a une excellente connaissance des bas-fonds de Gotham City et s'entend très bien avec Orphan et Spoiler.",
+					"en": "Harper Row had always been gifted. She was a natural tinkerer-adept at fixing and manipulating electronics and gadgets. She was also extremely agile and physically capable and wanted to put these talents to use. It was only after Harper and her brother were rescued by the Dark Knight that she came to truly understand Batman's importance and asked to join the fight. At first Batman refused to put her in harm's way, but eventually Harper became the masked hero known as Bluebird. Like most of Batman's allies, she was athletic, smart, and possessed thorouqh knowledqe of Gotham City's slums and the denizens who haunted them."
+					},
+					"ID": "Harper Row",
+					"size": {
+						"fr": "'1,65 m",
+						"en": "5ft 5in"
+					},
+					"weight": {
+						"fr": "51 Kg",
+						"en": "112 lbs"
+					}
+				},
+            "color": "blue",
+            "total-gems": 10,
+            "active-gems": 2,
+            "rest-gems": 5,
+            "freemovement": { 
+				"baselevel": 2,
+				"encombrances": [
+					{ "weight": 3, "movement": 1},
+					{ "weight": 5, "movement": 0}
+				]
+			},
+            "beltsize": 2,
+            "size": 1,
+            "menace": 1,
+            "melee": { 
+				"dice": "orange", 
+				"saturation": 4
+			},
+            "ranged": { 
+				"dice": "yellowreroll", 
+				"saturation": 4
+			},
+            "manipulation": { 
+				"dice": "red", 
+				"saturation": 3,   
+				"skills": [
+					{ "id": "munitions_specialist", "level": 2 }
+				]
+			},
+            "thought": { 
+				"dice": "orangereroll", 
+				"saturation": 4,   
+				"skills": [
+					{ "id": "hacking", "level": 2 }
+				]
+			},
+            "defense": { 
+				"dice": "yellowreroll", 
+				"saturation": 4,  
+				"skills": [
+					{ "id": "impenetrable_defense", "level": 1 , "encombrance": 4 }
+				]
+			},
+            "reroll": {"saturation": 4},
+            "movement": {
+				"saturation": 4,  
+				"skills": [
+					{ "id": "parkour", "level": 1 , "encombrance": 3 },
+					{ "id": "elusive", "level": 1, "encombrance": 3 }
+				]
+			},
+            "otherskills": [
+                { "id": "ambidextry", "level": 1 }
+            ],
+            "traits": [
+                {"id": "moral_code"}
+            ],
+            "image": "data/heroes/img/bluebird.png",
+            "imageHD": "data/heroes/img/bluebird_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/bluebird_back.png",
+            "imageHD_back": "data/heroes/img/bluebird_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "bluebird",
+            "origins": "corebox",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "TASER RIFLE",
+						"en": "TASER RIFLE"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Blue Bird effectue une attaque à distance à l'aide de son taser rifle.",
+								"en": "Blue Bird performs a ranged attack using a taser rifle."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Blue Bird. Elle effectue seulement une attaque à distance avec la caractéristique de 1 dé blanc relançable + 1 dé orange. Pour cette action, elle bénéficie de la compétence électricité de niveau 3.",
+										"en": "The hero immediately performs a character activation with Blue Bird. They may only carry out a ranged attack with 1 white die with reroll + 1 orange die. For this attack, they benefit from the electricity skill level 3."
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "Blue Bird effectue immédiatement un mouvement.",
+								"en": "Blue Bird immediately performs a movement."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Blue Bird. Elle effectue seulement sa première étape de mouvement.",
+										"en": "The hero immediately performs a character activation with Blue Bird. They only carry out their First Movement Step."
+							}
+						}
+					}
+				}
+			}
+        },		
+        {
+            "id": "red-hood-todd",
+            "name": {
+                "fr": "RED HOOD",
+                "en": "RED HOOD"
+            },
+            "subtitle": {
+                "fr": "JASON TODD",
+                "en": "JASON TODD"
+            },
+           "back": {
+                "text": {
+                    "fr": "Jason Todd fut le deuxième Robin. Tué lors d'une mission contre le Joker, il a été ramené à la vie grâce à un puits de Lazare. Rendu plus fort mais aussi plus instable, il a pris le nom de Red Hood en référence au passé du Joker. C'était une manière de s'émanciper du Bat-symbole omniprésent chez les alliés de Batman. Car Red Hood en voulait à Batman de l'avoir laissé mourir. Leurs relations se sont améliorées, mais Red Hood conserve des méthodes plus expéditives que Batman. C'est l'un de ses seuls alliés à faire usage des armes à feu. Red Hood a lo qâchette facile et n'hésite pas à tuer ses adversaires s'il le juqe utile.",
+					"en": "Jason Todd was the second Robin, replacing Dick Grayson as Batman's accomplice. He was more free-spirited than Dick and less obedient. When Jason was killed bv The Joker, Batman blamed himself for years, but that wasnt the end of Jason's story. He was mystically resurrected by a Lazarus pit and, though he came back stronger, he was even more erratic and less trustworthy than before. For a time, he adopted the disguise of the Red Hood, formerly worn by the Joker, to disassociate himself from the Bat-Family. Eventually he realigned himself with Batman, even thouqh he favored using firearms over Batman's non-lethal force."
+					},
+					"ID": "Jason Todd",
+					"size": {
+						"fr": "1,83 m",
+						"en": "6ft"
+					},
+					"weight": {
+						"fr": "82 Kg",
+						"en": "181 lbs"
+					}
+				},
+            "color": "blue",
+            "total-gems": 10,
+            "active-gems": 2,
+            "rest-gems": 5,
+            "freemovement": { 
+				"baselevel": 2,
+				"encombrances": [
+					{ "weight": 4, "movement": 1},
+					{ "weight": 6, "movement": 0}
+				]
+			},
+            "beltsize": 2,
+            "size": 1,
+            "menace": 1,
+            "melee": { 
+				"dice": "orange", 
+				"saturation": 5, 
+				"skills": [
+					{ "id": "martial_arts", "level": 1 , "encombrance": 4 }
+				]
+			},
+            "ranged": { 
+				"dice": "red", 
+				"saturation": 3,  
+				"skills": [
+					{ "id": "retaliation", "level": 2 , "encombrance": 5 }
+				]
+			},
+            "manipulation": { 
+				"dice": "yellow", 
+				"saturation": 6
+			},
+            "thought": { 
+				"dice": "yellow", 
+				"saturation": 5
+			},
+            "defense": { 
+				"dice": "orange", 
+				"saturation": 4
+			},
+            "passive-defense": { "dice": "yellow"},
+            "reroll": {"saturation": 5},
+            "movement": {
+				"saturation": 4,  
+				"skills": [
+					{ "id": "parkour", "level": 1 , "encombrance": 3 }
+				]
+			},
+            "otherskills": [
+                { "id": "ambidextry", "level": 1},
+                { "id": "nerves_steel", "level": 2 },
+                { "id": "pushing_limits", "level": 1 }
+            ],
+            "image": "data/heroes/img/red-hood-todd.png",
+            "imageHD": "data/heroes/img/red-hood-todd_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/red-hood-todd_back.png",
+            "imageHD_back": "data/heroes/img/red-hood-todd_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "red-hood-todd",
+            "origins": "corebox",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "REPOSITIONNEMENT",
+						"en": "REPOSITIONING"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Red Hood se repositionne rapidement sur le terrain.",
+								"en": "Red Hood quickly repositions himself in the field."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Red Hood. Il effectue seulement sa première étape de mouvement. Son bonus de points de déplacement au premier mouvement est de 4 et il perd le trait mobilité réduite. De plus, il bénéficie de la compétence parkour de niveau 1.",
+										"en": "The hero immediately performs a character activation with Red Hood. During this activation, they only perform their First Movement Step and their move point bonus is 4. They lose the reduced mobility trait and have the parkour skill level 1."
+							}
+						}
+					}
+				}
+			}
+        },		
+        {
+            "id": "catwoman-halloween",
+            "name": {
+                "fr": "CATWOMAN",
+                "en": "CATWOMAN"
+            },
+            "subtitle": {
+                "fr": "THE LONG HALLOWEEN",
+                "en": "THE LONG HALLOWEEN"
+            },
+           "back": {
+                "text": {
+                    "fr": "Parmi les multiples versions de Catwoman, celle du scénariste J. Loeb et du dessinateur T. Sale correspond à un moment précis de la vie du personnaqe. Les histoires racontées par le tandem forment un tout qui a lieu peu après les débuts de Batman. Bruce Wayne et Selina Kyle se sont déjà rapprochés mais une suite d'événements va les éloigner. Batman échoue à sauver le procureur Harvey Dent qui, défiguré, devient Two-Face. Ce fut un coup dur pour Bruce, d'autant plus qu'il fut victime du gaz de Scarecrow. Batman perdit alors confiance en lui-même et les autres et Catwoman devint un renfort important ainsi qu'une conscience.",
+					"en": "Bruce Wayne and Selina Kyle had already met, but the series of events told in Batman: The Long Halloween, Batman: Dark Victory, and Catwoman: When in Rome, served to develop their relationship. At that time, Batman was unable to rescue Attorney Harvey Dent. After suffering a brutal disfigurement, the promising lawyer became the villain called Two-Face. This was tough on Bruce and made worse after suffering an attack involving Scarecrow's qas. Batman lost confidence in himself and in others. It was then that he turned to Catwoman, who both supported and served as a conscience for a Batman that was losing control."
+					},
+					"ID": "Selina Kyle",
+					"size": {
+						"fr": "1,70 m",
+						"en": "5ft 7in"
+					},
+					"weight": {
+						"fr": "58 Kg",
+						"en": "128 lbs"
+					}
+				},
+            "color": "blue",
+            "total-gems": 9,
+            "active-gems": 3,
+            "rest-gems": 5,
+            "freemovement": { 
+				"baselevel": 3,
+				"encombrances": [
+					{ "weight": 4, "movement": 2},
+					{ "weight": 5, "movement": 1},
+					{ "weight": 6, "movement": 0}
+				]
+			},
+            "size": 1,
+            "menace": 1,
+            "melee": { 
+				"dice": "orange", 
+				"saturation": 4
+			},
+            "ranged": { 
+				"dice": "yellowreroll", 
+				"saturation": 5
+			},
+            "manipulation": { 
+				"dice": "red", 
+				"saturation": 4,   
+				"skills": [
+					{ "id": "lock_piking", "level": 2 }
+				]
+			},
+            "thought": { 
+				"dice": "orange", 
+				"saturation": 4
+			},
+            "defense": { 
+				"dice": "orange", 
+				"saturation": 4,  
+				"skills": [
+					{ "id": "untouchable", "level": 1 , "encombrance": 4 }
+				]
+			},
+            "reroll": {"saturation": 5},
+            "movement": {
+				"saturation": 4,  
+				"skills": [
+					{ "id": "parkour", "level": 3 , "encombrance": 4 },
+					{ "id": "elusive", "level": 2 , "encombrance": 4 },
+					{ "id": "mobility", "level": 2, "encombrance": 4 }
+				]
+			},
+            "otherskills": [
+                { "id": "luck", "level": 1 },
+                { "id": "nerves_steel", "level": 1 }
+            ],
+            "image": "data/heroes/img/catwoman-halloween.png",
+            "imageHD": "data/heroes/img/catwoman-halloween_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/catwoman-halloween_back.png",
+            "imageHD_back": "data/heroes/img/catwoman-halloween_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "catwoman-halloween",
+            "origins": "corebox",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "VOLEUSE HORS-PAIR",
+						"en": "MASTER THIEF"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Catwoman se déplace puis effectue une manipulation dans sa zone",
+								"en": "Catwoman moves then performs a manipulation in the same area."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Catwoman. Pour cela, il suit les étapes d'activation d'un personnage contrôlé par une tuile avec les exceptions suivantes :\n-- Catwoman peut effectuer sa première étape de mouvement mais pas la seconde.\n-- lors de l'étape de déclaration d'une action autre que le mouvement, elle ne peut déclarer qu'une action de manipulation.",
+										"en": "The hero immediately performs a character activation with Catwoman. To do so, they follow the Activate a Character Controlled by a Tile steps with the following exceptions:\n-- Catwoman can perform her First Movement Step but not the second.\n-- During the Declare an Action Other than Movement step, she can only declare one manipulation action."
+							}
+						}
+					}
+				}
+			}
+        },		
 		
 		
 		
