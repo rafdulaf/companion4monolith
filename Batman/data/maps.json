@@ -502,7 +502,7 @@
                     "legend": {
                         "elevation": [
                             { "level": "0", "color": "#4C4638" },
-                            { "level": "0", "color": "#493E3A" },
+                            { "level": "1", "color": "#493E3A" },
                             { "level": "2", "color": "#1B94CB" },
                             { "level": "5", "color": "#83C5E7" },
                             { "level": "6", "color": "#FFCA45" }
@@ -1597,8 +1597,7 @@
                         "elevation": [
                             { "level": "0", "color": "#493E3A" },
                             { "level": "1", "color": "#1B94CB" },
-                            { "level": "2", "color": "#83C5E7" },
-                            { "level": "4", "color": "#FFCA45" }
+                            { "level": "2", "color": "#83C5E7" }
                         ],
                         "boundaries": {},
                         "special_moves": {
@@ -1873,7 +1872,7 @@
                     "legend": {
                         "elevation": [
                             { "level": "0", "color": "#4C4638" },
-                            { "level": "0", "color": "#493E3A" },
+                            { "level": "1", "color": "#493E3A" },
                             { "level": "2", "color": "#1B94CB" },
                             { "level": "5", "color": "#83C5E7" },
                             { "level": "6", "color": "#FFCA45" }
