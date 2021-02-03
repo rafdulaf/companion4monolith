@@ -21,7 +21,7 @@
                         ],
                         "boundaries": {},
                         "special_moves": {
-                            "jumb": false,
+                            "jump": false,
                             "climb": false,
                             "fall": false
                         }
@@ -729,7 +729,7 @@
                         ],
                         "boundaries": {},
                         "special_moves": {
-                            "jumb": false,
+                            "jump": false,
                             "climb": false,
                             "fall": false
                         }
@@ -1366,7 +1366,7 @@
                             "wall_level": false
                         },
                         "special_moves": {
-                            "jumb": false,
+                            "jump": false,
                             "fall": false
                         },
                         "areas": [ "promontory" ]
@@ -1601,7 +1601,7 @@
                         ],
                         "boundaries": {},
                         "special_moves": {
-                            "jumb": false
+                            "jump": false
                         },
                         "areas": [  "elevators_entrance", "elevator_shaft", "promontory", "elevator_orientation"  ]
                     }

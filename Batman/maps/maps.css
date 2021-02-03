@@ -57,8 +57,9 @@
     background-color: #F2981A;
     text-align: center;
     position: relative;
-    width: 150px;
-    margin: 0 auto -1px 5px;
+    width: 156px;
+    margin: 0 auto -1px 2px;
+    padding-top: 2px;
 }
 .map-map-help .map-map-legend h1 div::after,
 .map-map-help .map-map-legend h1 div::before {
@@ -72,6 +73,13 @@
 
 .map-map-help .map-map-legend > div {
     padding: 5px;
+}
+
+.map-map-help .map-map-legend hr {
+    width: 0;
+    height: 0;
+    margin: 1px;
+    opacity: 0;
 }
 
 /* ELEVATION */
@@ -95,7 +103,7 @@
 
 /* BOUNDARIES */
 .map-map-help .map-map-legend-boundaries {
-    width: 160px;
+    width: 170px;
 }
 .map-map-help .map-map-legend-boundaries > div {
     display: flex;
@@ -116,7 +124,7 @@
 
 /* SPECIAL MOVES */
 .map-map-help .map-map-legend-specialmoves {
-    width: 355px;
+    width: 372px;
 }
 .map-map-help .map-map-legend-specialmoves > div {
     font-weight: 100;
@@ -124,7 +132,7 @@
     align-items: center;
 }
 .map-map-help .map-map-legend-specialmoves span {
-    line-height: calc(var(--primary-line-height) * 0.7rem);
+    line-height: calc(var(--primary-line-height) * 0.8rem);
     flex: 1;
 }
 .map-map-help .map-map-legend-specialmoves span:first-child {
