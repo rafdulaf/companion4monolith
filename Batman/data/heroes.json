@@ -1732,9 +1732,1840 @@
 				}
 			}
         },		
-		
-		
-		
+        {
+            "id": "batman-dkr",
+            "name": {
+                "fr": "BATMAN",
+                "en": "BATMAN"
+            },
+            "subtitle": {
+                "fr": "THE DARK KNIGHT RETURNS",
+                "en": "THE DARK KNIGHT RETURNS"
+            },
+           "back": {
+                "text": {
+                    "fr": "Cette BD phare des années 80 de Frank Miller décrit une Amérique où règnent l'insécurité et l'utraviolence. Les superhéros sont devenus des hors-la-loi, sauf Superman qui travaille pour le gouvernement. Batman a pris sa retraite depuis lonqtemps. Il n'est plus qu'un Bruce Wayne vieillissant, qui n'est plus en état de se livrer à ses anciennes aventures. À cause des troubles provoqués par le gang des mutants, il décide de reprendre son costume pour ramener l'ordre à Gotham City, il sera déclaré hors-la-loi et affrontera le Joker prêt à tout ainsi que Superman qui a pour mission de le faire plier.",
+					"en": "ln his classic comic book from the 80s, Frank Miller envisions a dystopian future where the US becomes a country of ultraviolence. Superheroes are now outlaws except for Superman who follows government orders. As for Batman, he has been retired for decades, prompted by Robin's murder at the hands of The Joker. But one day, Bruce is mugged in the street and decides that it is time to once more don the mantle of Batman and restore order to Gotham City. Even if he has to fiqht the gang known as the Mutants, become an outlaw, battle The Joker, and facedown a god-1ike Supeman, nothinq will stand in his way."
+					},
+					"ID": "Bruce Wayne",
+					"size": {
+						"fr": "1,87 m",
+						"en": "6ft 2in"
+					},
+					"weight": {
+						"fr": "95,25 Kg",
+						"en": "210 lbs"
+					}
+				},
+            "color": "blue",
+            "total-gems": 10,
+            "active-gems": 2,
+            "rest-gems": 5,
+            "freemovement": { 
+				"baselevel": 2,
+				"encombrances": [
+					{ "weight": 4, "movement": 1},
+					{ "weight": 6, "movement": 0}
+				]
+			},
+            "beltsize": 4,
+            "size": 1,
+            "menace": 1,
+            "melee": { 
+				"dice": "red", 
+				"saturation": 4, 
+				"skills": [
+					{ "id": "martial_arts", "level": 1 , "encombrance": 4 },
+					{ "id": "berserk", "level": 1 },
+					{ "id": "combo", "level": 2, "encombrance": 4 }
+				]
+			},
+            "ranged": { 
+				"dice": "orange", 
+				"saturation": 3
+			},
+            "manipulation": { 
+				"dice": "orangereroll", 
+				"saturation": 3
+			},
+            "thought": { 
+				"dice": "red", 
+				"saturation": 4,   
+				"skills": [
+					{ "id": "investigation", "level": 2 }
+				]
+			},
+            "defense": { 
+				"dice": "orange", 
+				"saturation": 4,  
+				"skills": [
+					{ "id": "protected", "level": 3 }
+				]
+			},
+            "passive-defense": { "dice": "orange"},
+            "reroll": {"saturation": 4},
+            "movement": {
+				"saturation": 3,  
+				"skills": [
+					{ "id": "parkour", "level": 1 , "encombrance": 3 }
+				]
+			},
+            "otherskills": [
+                { "id": "pushing_limits", "level": 2 }
+            ],
+            "traits": [
+                {"id": "moral_code"}
+            ],
+            "image": "data/heroes/img/batman-dkr.png",
+            "imageHD": "data/heroes/img/batman-dkr_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/batman-dkr_back.png",
+            "imageHD_back": "data/heroes/img/batman-dkr_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "batman-dkr",
+            "origins": "corebox",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "SANS LIMITES",
+						"en": "NO LIMITS"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Batman effectue immédiatement un mouvement et plusieurs attaques en se blessant.",
+								"en": "Batman immediately performs a movement and several attacks, injuring himself."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Batman. Pour cela, il suit les étapes d'activation d'un personnage contrôlé par une tuile avec les exceptions suivantes :\n-- il peut effectuer sa première étape de mouvement mais pas la seconde,\n-- lors de l'étape de déclaration d'une action autre que le mouvement, il ne peut que déclarer des actions d'attaque au corps-à-corps avec sa caractéristique 2 dés oranges et son multiplicateur d’actions de 3. Il subit ensuite 1 blessure.",
+										"en": "The hero immediately performs a character activation with Batman. To do so, they follow the Activate a Character Controlled by a Tile steps with the following exceptions:\n-- They can perform their First Movement Step but not the second.\n-- During the Declare an Action Other than Movement step, they can only declare melee attack actions with 2 orange dice and an action multiplier of 3. They then suffer one wound."
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "Batman effectue immédiatement un mouvement et une grosse attaque en se blessant.",
+								"en": "Batman immediately performs a movement and a big attack injuring himself."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Batman. Pour cela, il suit les étapes d'activation d'un personnage contrôlé par une tuile avec les exceptions suivantes :\n-- il peut effectuer sa première étape de mouvement mais pas la seconde.\n-- lors de l'étape de déclaration d'une action autre que le mouvement, il ne peut déclarer qu'une action d'attaque au corps-à-corps avec la caractéristique de 2 dés noirs + 1 dé rouge. Il subit ensuite 2 blessures.",
+										"en": "The hero immediately performs a character activation with Batman. To do so, they follow the Activate a Character Controlled by a Tile steps with the following exceptions:\n-- They can perform their First Movement Step but not the second.\n-- During the Declare an Action Other than Movement step, they can only declare a melee attack action with 2 black dice + 1 red die. They then suffer two wounds."
+							}
+						}
+					}
+				}
+			}
+        },		
+        {
+            "id": "katana",
+            "name": {
+                "fr": "KATANA",
+                "en": "KATANA"
+            },
+            "back": {
+                "text": {
+                    "fr": "Yamashiro Tatsu est une guerrière experte en arts martiaux et dans le maniement du katana, ce qui lui vaut son nam de code. Cette lame magique peut trancher les matériaux réputés indestructibles et absorber l'âme de ses adversaires. Katana a intégré différents qroupes : les Outsiders, 1a Ligue de Justice, les Birds of Prey. Chose plus problématique pour Batman, Katana est devenue, ces dernières années, membre de la Suicide Squad. Ce groupe composé des pires criminels de l'univers DC, aux ordres du gouvernement, est susceptible d'être envoyé combattre Batman. À qui Katana sera-t-elle plus fidèle ?",
+					"en": "Tatsu Yamashiro is a fiqhter well-versed ln martial arts and an expert with the katana, hence her code name. Her unusual blade can slice through just about anythinq, even materials deemed to be indestructible, and may even absorb the souls of her opponents. First introduced as a member of the Outsiders, she has faught for the Justice League, the Birds of Prey, and to Batman's detriment, the Suicide Squad. This group, comprised of the cruelest villains in the DC Universe, has been sent to fight Batman by order of the Government. But to whom is Katana most loyal?"
+					},
+					"ID": "Tatsu Yamashiro",
+					"size": {
+						"fr": "1,57 m",
+						"en": "5ft 2in"
+					},
+					"weight": {
+						"fr": "43,5 Kg",
+						"en": "95 lbs"
+					}
+				},
+            "color": "blue",
+            "total-gems": 10,
+            "active-gems": 2,
+            "rest-gems": 5,
+            "freemovement": { 
+				"baselevel": 2,
+				"encombrances": [
+					{ "weight": 3, "movement": 1},
+					{ "weight": 5, "movement": 0}
+				]
+			},
+            "size": 1,
+            "menace": 1,
+            "melee": { 
+				"dice": "yellowreroll", 
+				"saturation": 4, 
+				"skills": [
+					{ "id": "martial_arts", "level": 2 , "encombrance": 4 },
+					{ "id": "combo", "level": 2, "encombrance": 4 }
+				]
+			},
+            "ranged": { 
+				"dice": "yellow", 
+				"saturation": 5
+			},
+            "manipulation": { 
+				"dice": "orangereroll", 
+				"saturation": 4
+			},
+            "thought": { 
+				"dice": "yellowreroll", 
+				"saturation": 4
+			},
+            "defense": { 
+				"dice": "orange", 
+				"saturation": 4,  
+				"skills": [
+					{ "id": "body_guard", "level": 2 , "encombrance": 3 },
+					{ "id": "untouchable", "level": 1, "encombrance": 4 }
+				]
+			},
+            "passive-defense": { "dice": "yellow"},
+            "reroll": {"saturation": 5},
+            "movement": {
+				"saturation": 4,  
+				"skills": [
+					{ "id": "mobility", "level": 1 , "encombrance": 3 }
+				]
+			},
+            "image": "data/heroes/img/katana.png",
+            "imageHD": "data/heroes/img/katana_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/katana_back.png",
+            "imageHD_back": "data/heroes/img/katana_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "katana",
+            "origins": "corebox",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "SOULTAKER",
+						"en": "SOULTAKER"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Katana fonce sur sa cible et l’attaque en libérant des âmes enfermées dans son sabre.",
+								"en": "Katana performs a charge and attacks by freeing the souls trapped in her sword."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Lorsqu'un personnage est neutralisé par Katana, le héros prend la figurine neutralisée et la place à côté de son poste de commandement. Elle ne va pas dans la réserve de personnages adverse. À la place, on considère qu'elle se trouve dans Soultaker (son katana).\nLorsque le héros active la tuile événement, il réalise immédiatement une activation de personnage avec Katana. Pour cela, il suit les étapes d'activation d'un personnage contrôlé par une tuile avec les exceptions suivantes :\n-- Katana peut effectuer sa première étape de mouvement mais pas la seconde.\n-- lors de l'étape de déclaration d'une action autre que le mouvement, elle ne peut déclarer qu'une action d'attaque au corps-à-corps avec sa caractéristique 1 dé orange + 2 dés jaunes. Lors de l'étape de constitution de la réserve de dés, le héros ajoute un dé blanc par figurine dans Soultaker. Il prend ensuite les figurines qui se trouvent dans le katana et les place dans la réserve de personnages de leur contrôleur.",
+										"en": "When a character is neutralized by Katana, the hero takes the neutralized miniature and places it next to their command post. This miniature no longer belongs to their opponent’s character pool. Instead, it is said that they are now trapped in Soultaker (Katana’s samurai sword). \nWhen the hero activates the event tile, they immediately perform a character activation with Katana. To do so, they follow the Activate a Character Controlled by a Tile steps with the following exceptions:\n-- They can perform their First Movement Step but not the second.\n-- During the Declare an Action Other than Movement step, they can only declare a melee attack with 1 orange die + 2 yellow dice. The hero then takes the miniatures that have been trapped in the sword and places them in their controller’s character pool."
+							}
+						}
+					}
+				}
+			}
+        },
+        {
+            "id": "batman-zero",
+            "name": {
+                "fr": "BATMAN",
+                "en": "BATMAN"
+            },
+            "subtitle": {
+                "fr": "ZERO YEAR",
+                "en": "ZERO YEAR"
+            },
+           "back": {
+                "text": {
+                    "fr": "L'An Zéro correspond à la période où Bruce Wayne débute sous le masque de Batman. C'est durant cette période que Gotham City, après être frappée par une terrible inondation, tombe sous le contrôle d'Edward Nigma. Sous cette véritable dictature, Batman doit alors devenir un véritable résistant pour libérer une Gotham City à l'abandon où la végétation a repris ses droits. Sans son équipement habituel, il opte plutôt pour une arbalète. C'est toujours à cette même époque que le premier Red Hood chuta dans une cuve de produits chimiques et devint le Joker, ainsi qu'a eu lieu le premier affrontement contre le terrible Docteur Death.",
+					"en": "Zero Year was the period when Bruce Wayne donned the mask and became Batman. He was less comfortable, less aware of his own methods, and not quite the indomitable hero he'd later become. Zero Year also refers to a lost time in Gotham City's history after a devastating flood. The city was weakened and vulnerable and for several months fell under the control of The Riddler. Forced to live on the fringes of this dictatorship, Batman was without his usual high-tech equipment and adopted more rudimentary tools of the trade to free the city from the clutches of this eccentric madman."
+					},
+					"ID": "Bruce Wayne",
+					"size": {
+						"fr": "1,87 m",
+						"en": "6ft 2in"
+					},
+					"weight": {
+						"fr": "95,25 Kg",
+						"en": "210 lbs"
+					}
+				},
+            "color": "blue",
+            "total-gems": 9,
+            "active-gems": 3,
+            "rest-gems": 6,
+            "freemovement": { 
+				"baselevel": 2,
+				"encombrances": [
+					{ "weight": 3, "movement": 1},
+					{ "weight": 5, "movement": 0}
+				]
+			},
+            "beltsize": 4,
+            "size": 1,
+            "menace": 1,
+            "melee": { 
+				"dice": "orangereroll", 
+				"saturation": 4, 
+				"skills": [
+					{ "id": "combo", "level": 1 , "encombrance": 4 },
+					{ "id": "counterattack", "level": 2 , "encombrance": 4 },
+					{ "id": "martial_arts", "level": 1, "encombrance": 4 }
+				]
+			},
+            "ranged": { 
+				"dice": "orange", 
+				"saturation": 3
+			},
+            "manipulation": { 
+				"dice": "orange", 
+				"saturation": 3, 
+				"skills": [
+					{ "id": "munitions_specialist", "level": 1 }
+				]
+			},
+            "thought": { 
+				"dice": "red", 
+				"saturation": 4
+			},
+            "defense": { 
+				"dice": "orange", 
+				"saturation": 4
+			},
+            "passive-defense": { "dice": "yellow"},
+            "reroll": {"saturation": 4},
+            "movement": {
+				"saturation": 4,  
+				"skills": [
+					{ "id": "mobility", "level": 1 , "encombrance": 3 },
+					{ "id": "parkour", "level": 2, "encombrance": 3 }
+				]
+			},
+            "traits": [
+                {"id": "moral_code"}
+            ],
+            "image": "data/heroes/img/batman-zero.png",
+            "imageHD": "data/heroes/img/batman-zero_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/batman-zero_back.png",
+            "imageHD_back": "data/heroes/img/batman-zero_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "batman-zero",
+            "origins": "corebox",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "TIR PRÉCIS",
+						"en": "PRECISE SHOT"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Batman effectue immédiatement une attaque à distance à l'aide de son arbalète.",
+								"en": "Batman immediately performs a ranged attack using his crossbow."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "le héros réalise immédiatement une activation de personnage avec Batman. Il effectue seulement une attaque à distance pour laquelle il bénéficie de la compétence tireur d'élite de niveau 2",
+										"en": "The hero immediately performs a character activation with Batman. They only carry out a ranged attack for which they benefit from the marksman skill level 2."
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "Batman effectue immédiatement un mouvement.",
+								"en": "Batman immediately performs a movement."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Batman zero year. Il effectue seulement sa première étape de mouvement.",
+										"en": "The hero immediately performs a character activation with Batman. They only carry out their First Movement Step."
+							}
+						}
+					}
+				}
+			}
+        },
+        {
+            "id": "batman-100",
+            "name": {
+                "fr": "BATMAN",
+                "en": "BATMAN"
+            },
+            "subtitle": {
+                "fr": "YEAR 100",
+                "en": "YEAR 100"
+            },
+           "back": {
+                "text": {
+                    "fr": "Cent ans plus tard. Qui est ce terroriste masqué portant le costume d'une légende urbaine oubliée ? Et est-ce bien un terroriste ? Le père et prédécesseur du policier Commissioner Gordon en savait beaucoup sur ce mystérieux personnage. Mais les temps ont changé. Entre les bases de données globales et les agents fédéraux télépathes, il est impossible qu'un homme échappe au fichage généralisé. Tout comme un justicier âgé de plus d'un siècle, pourtant, il court encore sur les toits et hante les rues de Gotham City à la recherche d'indices. Malgré la traque des fédéraux, Batman mettra-t'il à jour le sinistre complot sur lequel il enquête ?",
+					"en": "ln an alternate future, Gotham City became a police state. All citizens were tracked, and with telepathic government agents in the mix, no data was private. Along came an urban legend-one who emulated the look and methods of a hero from the past. But in this age, the one who assumed the mantle of the Batman wos considered a terrorist by the media. Not only did this mysterious outlaw elude a sophisticated and supernatural tracking system, he also managed to benefit from police networks and government data. After a hundred years, could the Dark Knight have somehow returned?"
+					},
+					"ID": "Bruce Wayne",
+					"size": {
+						"fr": "1,87 m",
+						"en": "6ft 2in"
+					},
+					"weight": {
+						"fr": "95,25 Kg",
+						"en": "210 lbs"
+					}
+				},
+            "color": "blue",
+            "total-gems": 11,
+            "active-gems": 2,
+            "rest-gems": 6,
+            "freemovement": { 
+				"baselevel": 2,
+				"encombrances": [
+					{ "weight": 4, "movement": 1},
+					{ "weight": 6, "movement": 0}
+				]
+			},
+            "beltsize": 4,
+            "size": 1,
+            "menace": 1,
+            "melee": { 
+				"dice": "red", 
+				"saturation": 3, 
+				"skills": [
+					{ "id": "counterattack", "level": 2 , "encombrance": 4 },
+					{ "id": "martial_arts", "level": 1, "encombrance": 4 }
+				]
+			},
+            "ranged": { 
+				"dice": "orange", 
+				"saturation": 3,  
+				"skills": [
+					{ "id": "retaliation", "level": 2 , "encombrance": 4 }
+				]
+			},
+            "manipulation": { 
+				"dice": "orange", 
+				"saturation": 3
+			},
+            "thought": { 
+				"dice": "red", 
+				"saturation": 4,   
+				"skills": [
+					{ "id": "investigation", "level": 1 },
+					{ "id": "hacking", "level": 1 }
+				]
+			},
+            "defense": { 
+				"dice": "orange", 
+				"saturation": 5
+			},
+            "passive-defense": { "dice": "orange"},
+            "reroll": {"saturation": 4},
+            "movement": {
+				"saturation": 4,  
+				"skills": [
+					{ "id": "mobility", "level": 2 , "encombrance": 3 },
+					{ "id": "parkour", "level": 1, "encombrance": 3 }
+				]
+			},
+            "otherskills": [
+                { "id": "pushing_limits", "level": 1 },
+                { "id": "support", "level": 1 }
+            ],
+            "traits": [
+                {"id": "moral_code"}
+            ],
+            "image": "data/heroes/img/batman-100.png",
+            "imageHD": "data/heroes/img/batman-100_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/batman-100_back.png",
+            "imageHD_back": "data/heroes/img/batman-100_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "batman-100",
+            "origins": "corebox",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "ÉCHAPPÉE BELLE",
+						"en": "LUCKY ESCAPE"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Batman effectue immédiatement un mouvement pour se mettre à l'abris et se soigner.",
+								"en": "Batman immediately performs a movement to take cover and heal."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Batman. Il effectue sa première étape de mouvement, lors de laquelle il bénéficie de la compétence insaisissable de niveau 3. Si la zone dans laquelle Batman termine son mouvement ne contient aucun personnage du camp du vilain, il récupère jusqu'à 2 points de vie. Il ne peut pas récupérer plus de points de vie que son attribut de points de vie.",
+										"en": "The hero immediately performs a character activation with Batman. They only carry out their First Movement Step. For this movement, they benefit from the elusive skill level 3. If the area in which Batman finishes his movement does not contain any character from the villain’s side, Batman recovers up to 2 life points. He cannot recover more life points than his life point characteristic."
+							}
+						}
+					}
+				}
+			}
+        },
+        {
+            "id": "duke",
+            "name": {
+                "fr": "DUKE",
+                "en": "DUKE"
+            },
+            "back": {
+                "text": {
+                    "fr": "Le jeune Duke Thomas a été un allié de Batman lors de l'An Zéro. Il a ensuite participé, sans son aval, à la création des Robin's gang. Lorsque Batman lui propose de devenir son assistant, il décide de faire les choses à sa manière et devient Signal et non un autre Robin. Duke profite alors de l'entraînement prodigué par Batman. Toutefois, il possède des super-pouvoirs qui reposent sur sa perception de la lumière. Il est capable de percevoir certaines formes d'énergie. Il peut rembobiner la lumière et voir ce qui s'est produit quelques heures plus tôt dans un lieu. Une aptitude bien pratique pour mener des enquetes.",
+					"en": "During the events of Zero Year, Bruce Wayne really needed a friend. The city had been taken over by The Riddler and Batman was living on the frinqe. Duke Thomas sheltered Bruce during this time of great turmoil, and though their relationship was somewhat tumultuous, they eventually joined forces in their fight against crime. Duke followed a strict training regime imposed by Batman and infused his own unique abilities into the mix, such as controlling liqht and even time itself."
+					},
+					"ID": "Duke Thomas",
+					"size": {
+						"fr": "1,86 m",
+						"en": "6ft 1in"
+					},
+					"weight": {
+						"fr": "58,5 Kg",
+						"en": "128 lbs"
+					}
+				},
+            "color": "blue",
+            "total-gems": 10,
+            "active-gems": 3,
+            "rest-gems": 5,
+            "freemovement": { 
+				"baselevel": 2,
+				"encombrances": [
+					{ "weight": 4, "movement": 1},
+					{ "weight": 5, "movement": 0}
+				]
+			},
+            "beltsize": 2,
+            "size": 1,
+            "menace": 1,
+            "melee": { 
+				"dice": "orange", 
+				"saturation": 4, 
+				"skills": [
+					{ "id": "counterattack", "level": 2 }
+				]
+			},
+            "ranged": { 
+				"dice": "orange", 
+				"saturation": 3
+			},
+            "manipulation": { 
+				"dice": "orange", 
+				"saturation": 4
+			},
+            "thought": { 
+				"dice": "orangereroll", 
+				"saturation": 3,   
+				"skills": [
+					{ "id": "investigation", "level": 1 }
+				]
+			},
+            "defense": { 
+				"dice": "orange", 
+				"saturation": 4
+			},
+            "passive-defense": { "dice": "yellow"},
+            "reroll": {"saturation": 4},
+            "movement": {
+				"saturation": 5,  
+				"skills": [
+					{ "id": "parkour", "level": 1 , "encombrance": 3 },
+					{ "id": "elusive", "level": 2 , "encombrance": 4 },
+					{ "id": "mobility", "level": 1, "encombrance": 3 }
+				]
+			},
+            "otherskills": [
+                { "id": "luck", "level": 2 },
+                { "id": "nerves_steel", "level": 1 }
+            ],
+            "traits": [
+                {"id": "moral_code"}
+            ],
+            "image": "data/heroes/img/duke.png",
+            "imageHD": "data/heroes/img/duke_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/duke_back.png",
+            "imageHD_back": "data/heroes/img/duke_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "duke",
+            "origins": "corebox",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "template",
+						"en": "template"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Duke se sert de ses capacités pour prédire les mouvements de son adversaire.",
+								"en": "Duke uses his abilities to predict the movements of his opponent."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros désigne un personnage situé dans la même zone que lui et lance deux dés oranges. Le personnage désigné subit autant de blessures que de succès obtenus.",
+										"en": "The hero designates a character located in the same area as Duke and rolls two orange dice. The designated character suffers as many wounds as the number of successes obtained."
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "Duke effectue immédiatement un mouvement.",
+								"en": "Duke immediately performs a movement."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Duke. Il effectue seulement sa première étape de mouvement.",
+										"en": "The hero immediately performs a character activation with Duke. They only carry out their First Movement Step."
+							}
+						}
+					}
+				}
+			}
+        },
+        {
+            "id": "spoiler",
+            "name": {
+                "fr": "SPOILER",
+                "en": "SPOILER"
+            },
+            "back": {
+                "text": {
+                    "fr": "Stéphanie Brown a découvert avec horreur que son père n'est autre que le criminel Cluemaster. Contrairement à lui, elle décide de lutter du côté du bien sous l'identité de Spoiler. Bonne enquêtrice, agile, elle utilise des gadgets basés sur la même technologie que son père. Batman s'est d'abord méfié de cette jeune fille masquée. Puis il a été suffisamment impressionné pour lui proposer de devenir à son tour Robin, sans pour autant lui révéler sa double identité. Si elle est généralement une alliée de Batmon, elle entretient un regard très critique envers lui et conserve donc son indépendance.",
+					"en": "Stephanie Brown discovered with horror that her fother was the criminal known as Cluemaster. Unlike him, she decided to fight on the side of good under the identity of Spoiler. A good investigator and agile, she used her gadgets based on the same technology as her father. Batman was initially suspicious of her, but became so impressed by her skills that he offered her the role of Robin (though he did not reveal his true identity). Although she is generally an ally to Batman, she is often critical of his methods and maintains her distance."
+					},
+					"ID": "Stephanie Brown",
+					"size": {
+						"fr": "1,65 m",
+						"en": "5ft 5in"
+					},
+					"weight": {
+						"fr": "50 Kg",
+						"en": "110 lbs"
+					}
+				},
+            "color": "blue",
+            "total-gems": 10,
+            "active-gems": 2,
+            "rest-gems": 6,
+            "freemovement": { 
+				"baselevel": 2,
+				"encombrances": [
+					{ "weight": 3, "movement": 1},
+					{ "weight": 5, "movement": 0}
+				]
+			},
+            "beltsize": 2,
+            "size": 1,
+            "menace": 1,
+            "melee": { 
+				"dice": "orange", 
+				"saturation": 3
+			},
+            "ranged": { 
+				"dice": "yellowreroll", 
+				"saturation": 4
+			},
+            "manipulation": { 
+				"dice": "orange", 
+				"saturation": 5
+			},
+            "thought": { 
+				"dice": "orange", 
+				"saturation": 5
+			},
+            "defense": { 
+				"dice": "orange", 
+				"saturation": 5,  
+				"skills": [
+					{ "id": "impenetrable_defense", "level": 1 },
+					{ "id": "protected", "level": 2 },
+					{ "id": "untouchable", "level": 1 }
+				]
+			},
+            "reroll": {"saturation": 5},
+            "movement": {
+				"saturation": 4,  
+				"skills": [
+					{ "id": "parkour", "level": 1 , "encombrance": 3 },
+					{ "id": "elusive", "level": 1 , "encombrance": 3 },
+					{ "id": "mobility", "level": 1, "encombrance": 3 }
+				]
+			},
+            "otherskills": [
+                { "id": "luck", "level": 1 }
+            ],
+            "traits": [
+                {"id": "moral_code"}
+            ],
+            "image": "data/heroes/img/spoiler.png",
+            "imageHD": "data/heroes/img/spoiler_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/spoiler_back.png",
+            "imageHD_back": "data/heroes/img/spoiler_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "spoiler",
+            "origins": "corebox",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "FURTIVITÉ",
+						"en": "STEALTH"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Spoiler se cache dans les ombres afin de rester discrète.",
+								"en": "Spoiler sticks to the shadows."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Spoiler. Elle effectue seulement sa première étape de mouvement, lors de laquelle elle bénéficie de la compétence insaisissable de niveau 5. Après avoir effectué ce mouvement, le héros place le pion furtivité sur le socle de Spoiler.\nLorsque le héros active Spoiler ou qu'elle est neutralisée, si le pion furtivité est présent sur son socle, il le retire.\nTant que le pion furtivité est sur le socle de Spoiler, elle bénéficie de la compétence intouchable de niveau 5.",
+										"en": "The hero immediately performs a character activation with Spoiler. They only perform their First Movement Step during which Spoiler has the elusive skill level 5. After this movement, the hero places the Stealth token on Spoiler’s base. \nIf there is a Stealth token on Spoiler’s base when the hero activates her, or if she is neutralized, it is removed.\nWhile the Stealth token in on Spoiler’s base, she has the untouchable skill level 5."
+							},
+							"tokens" : {
+								"0": {
+									"name": {
+										"fr": "PION FURTIVITÉ",
+										"en": "STEALTH TOKEN"
+										},
+									"image": ["data/powers/img/stealth.png"]
+								}					
+							}
+						}
+					}
+				}
+			}
+        },
+        {
+            "id": "batwing",
+            "name": {
+                "fr": "BATWING",
+                "en": "BATWING"
+            },
+            "back": {
+                "text": {
+                    "fr": "Désireux d'avoir un agent en Afrique, Batman a recruté le policier congolais David Zavimbe. Dans une armure volante bourrée de technologie, David est donc devenu Batwing. Après quelques années, il a repris une vie normale en rendant l'armure à Batman. Le rôle de Batwing est ensuite revenu à Luke Fox, expert en technologie, capable de mettre à jour lui-même son armure. Il améliore aussi les ordinateurs ou les véhicules de la «Bat-Family». Si à l'oriqine Batwing est fidèle à Batman, il a lié une amitié forte avec Batwoman et Azraël qui préfèrent une justice plus impitoyable. Batwing est donc parfois en désaccord avec Batman.",
+					"en": "Wishing to have an agent in Africa, Batmcn recruited Congolese cop David Zavimbe. Equipped with a flying armored suit, David became the hero known as Batwing. After only a few short years, though, he decided to go back to civilian life and returned the armor to Batman. The role of Batwing then passed to Luke Fox, a technoloqy expert who was able to updote the armor himself. He also improved the computers and vehicles used by the 'Bat-Family', Although Batwing was devoted to Batman, he also developed a strong friendship with Batwoman and Azrael both of whom, like him, preferred to deal out merciless justice."
+					},
+					"ID": "Lucas \"Luke\" Fox",
+					"size": {
+						"fr": "1,75 m",
+						"en": " 5ft 9in"
+					},
+					"weight": {
+						"fr": "77 Kg",
+						"en": "170 lbs"
+					}
+				},
+            "color": "blue",
+            "total-gems": 10,
+            "active-gems": 2,
+            "rest-gems": 5,
+            "freemovement": { 
+				"baselevel": 4,
+				"encombrances": [
+					{ "weight": 3, "movement": 3},
+					{ "weight": 4, "movement": 2},
+					{ "weight": 5, "movement": 1}
+				]
+			},
+            "beltsize": 3,
+            "size": 1,
+            "menace": 1,
+            "melee": { 
+				"dice": "orange", 
+				"saturation": 4, 
+				"skills": [
+					{ "id": "martial_arts", "level": 1 , "encombrance": 4 }
+				]
+			},
+            "ranged": { 
+				"dice": "yellowreroll", 
+				"saturation": 4
+			},
+            "manipulation": { 
+				"dice": "red", 
+				"saturation": 3,   
+				"skills": [
+					{ "id": "munitions_specialist", "level": 1 }
+				]
+			},
+            "thought": { 
+				"dice": "red", 
+				"saturation": 3,   
+				"skills": [
+					{ "id": "hacking", "level": 1 }
+				]
+			},
+            "defense": { 
+				"dice": "yellowreroll", 
+				"saturation": 4,  
+				"skills": [
+					{ "id": "protected", "level": 3 }
+				]
+			},
+            "passive-defense": { "dice": "yellowreroll"},
+            "reroll": {"saturation": 4},
+            "movement": {
+				"saturation": 3
+			},
+            "traits": [
+                {"id": "moral_code"},
+                {"id": "fly"}
+            ],
+            "image": "data/heroes/img/batwing.png",
+            "imageHD": "data/heroes/img/batwing_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/batwing_back.png",
+            "imageHD_back": "data/heroes/img/batwing_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "batwing",
+            "origins": "wayne-manor",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "CHOC ÉLECTRIQUE",
+						"en": "ELECTRIC SHOCK"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Batwing déclenche un choc électrique dans sa zone.",
+								"en": "Batwing triggers an electric shock in his zone."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros déclenche une explosion de niveau 3 dans la zone de Batwing. Il ignore cette explosion.",
+										"en": "The hero triggers a level 3 explosion in the same area as Batwing. He ignores this explosion."
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "Batwing ne fait rien.",
+								"en": "Batwing does nothing."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Aucun effet.",
+										"en": "No effect."
+							}
+						}
+					}
+				}
+			}
+        },
+        {
+            "id": "batcow",
+            "name": {
+                "fr": "BATCOW",
+                "en": "BATCOW"
+            },
+            "back": {
+                "text": {
+                    "fr": "Enquêtant dans l'enceinte d'un abattoir, Batman et Robin (Damian Wayne) tombent sur une vache dont les taches sur le front forment un contour similaire au logo de Batman. Damian décide alors de garder l'animal. Batman accepte en partant du principe que la présence de l'animal peut influencer positivement son fils et le rendre moins cynique. Généralement, Bat-Cow se trouve à l'intérieur de la Batcave, où Alfred et Damian prennent soin d'elle. Mais il lui arrive de vivre quelques aventures. Elle a le chic d'être au bon endroit au bon moment pour avoir un rôle à jouer. Bat-Cow porte la poisse à ceux qui le méritent.",
+					"en": "When investigating a slaughterhouse, Batman and Robin (Damian Wayne) stumbled across a cow with markings on its forehead resembling the bat-logo, Damian decided to keep the animal. Hoping its presence in the Batcave would make Damian less cynical, Batman agreed to keep her in the Batcave. Now Alfred and Damian take care of her, but she sometimes escapes and even has her own adventures. Her actions, without apparent logic, are often interpreted as omens by the humans she meets. It seems, Bat-Cow brings further bad luck for those who brinq it upon themselves!"
+					},
+					"ID": "a cow / une vache",
+					"size": {
+						"fr": "1,52 m",
+						"en": "4ft 12in"
+					},
+					"weight": {
+						"fr": "568 Kg",
+						"en": "1252 lbs"
+					}
+				},
+            "color": "blue",
+            "total-gems": 12,
+            "active-gems": "X",
+            "rest-gems": 8,
+            "freemovement": { 
+				"baselevel": 3,
+				"encombrances": [
+					{ "weight": 6, "movement": 2},
+					{ "weight": 7, "movement": 1},
+					{ "weight": 9, "movement": 0}
+				]
+			},
+            "beltsize": 4,
+            "size": 1,
+            "menace": 1,
+            "melee": { 
+				"dice": "yellowreroll", 
+				"saturation": 3, 
+				"skills": [
+					{ "id": "combo", "level": "X" },
+					{ "id": "martial_arts", "level": "X" }
+				]
+			},
+            "ranged": { 
+				"dice": "yellowreroll", 
+				"saturation": 3,  
+				"skills": [
+					{ "id": "marksman", "level": "X" }
+				]
+			},
+            "manipulation": { 
+				"dice": "orangereroll", 
+				"saturation": 3,   
+				"skills": [
+					{ "id": "munitions_specialist", "level": "X" },
+					{ "id": "lock_piking", "level": "X" }
+				]
+			},
+            "thought": { 
+				"dice": "orangereroll", 
+				"saturation": 3,   
+				"skills": [
+					{ "id": "hacking", "level": "X" },
+					{ "id": "investigating", "level": "X" }
+				]
+			},
+            "defense": { 
+				"dice": "orange", 
+				"saturation": 5
+			},
+            "passive-defense": { "dice": "orange"},
+            "reroll": {"saturation": 5},
+            "movement": {
+				"saturation": 3,
+				"cube_value": 2
+			},
+            "otherskills": [
+                { "id": "nerves_steel", "level": "X" },
+                { "id": "ambidextry", "level": "X" }
+            ],
+            "image": "data/heroes/img/batcow.png",
+            "imageHD": "data/heroes/img/batcow_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/batcow_back.png",
+            "imageHD_back": "data/heroes/img/batcow_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "batcow",
+            "origins": "corebox"
+        },
+        {
+            "id": "oracle",
+            "name": {
+                "fr": "ORACLE",
+                "en": "ORACLE"
+            },
+            "back": {
+                "text": {
+                    "fr": "Le Joker mit fin définitivement à la carrière de Barbara en tant que Batgirl, la colonne vertébrale abîmée par les balles du clown assassin. Clouée dans un fauteuil roulant, elle se jeta à corps perdu dans l'informatique ou service de la lutte contre le crime. E1le ne négligea pas pour autant sa sécurité physique et s'entraîna aux arts martiaux malgré son handicap. Très vite, elle devint une informatrice privilégiée de la Suicide Squad et de la JLA, sous sa nouvelle identité secrète d'Oracle. Barbara a aussi été blbliothécaire, connaît bien la criminologie et a une licence d'avocate qu'elle n'utilise guère.",
+					"en": "Being the Commissioner's daughter placed Barbara Gordon in The Joker's crosshairs. One fateful evening, he showed up at her house and with a single shot severed her spine. Since then, Barbara was confined to a wheelchair, but rather than allow her disability to define her capabilities, she continued her martial arts training. She also focused her keen technical expertise as a crime-fightinq tool. Soon after, she became an informant for the Suicide Squad and Justice League of America. Under her new identity as Oracle, she quickly became an urban legend on the networks and someone to be feared among the criminal underworld."
+					},
+					"ID": "Barbara Gordon",
+					"size": {
+						"fr": "1,80 m",
+						"en": "5ft 11in"
+					},
+					"weight": {
+						"fr": "61 Kg",
+						"en": "135 lbs"
+					}
+				},
+            "color": "blue",
+            "total-gems": 9,
+            "active-gems": 2,
+            "rest-gems": 5,
+            "freemovement": { 
+				"baselevel": 2,
+				"encombrances": [
+					{ "weight": 5, "movement": 0}
+				]
+			},
+            "size": 1,
+            "menace": 0,
+            "melee": { 
+				"dice": "yellow", 
+				"saturation": 1
+			},
+            "ranged": { 
+				"dice": "orange", 
+				"saturation": 4
+			},
+            "manipulation": { 
+				"dice": "red", 
+				"saturation": 4,   
+				"skills": [
+					{ "id": "munitions_specialist", "level": 2 }
+				]
+			},
+            "thought": { 
+				"dice": "orangereroll", 
+				"saturation": 6,   
+				"skills": [
+					{ "id": "hacking", "level": 2 }
+				]
+			},
+            "defense": { 
+				"dice": "yellow", 
+				"saturation": 4,  
+				"skills": [
+					{ "id": "protected", "level": 1 },
+					{ "id": "untouchable", "level": 1, "encombrance": 4 }
+				]
+			},
+            "reroll": {"saturation": 4},
+            "movement": {
+				"saturation": 4
+			},
+            "otherskills": [
+                { "id": "tactician", "level": 3 },
+                { "id": "support", "level": 2 },
+                { "id": "henchman_command", "level": 3 }
+            ],
+            "traits": [
+                {"id": "moral_code"},
+                {"id": "reduced_mobility"}
+            ],
+            "image": "data/heroes/img/oracle.png",
+            "imageHD": "data/heroes/img/oracle_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/oracle_back.png",
+            "imageHD_back": "data/heroes/img/oracle_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "oracle",
+            "origins": "wayne-manor",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "ACCOMPLISHED STRATEGIST",
+						"en": "STRATÈGE AGUERRIE"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Oracle est à la tête des opérations.",
+								"en": "Oracle is at the head of operations."
+							},
+							"type" : "permanent",
+							"longdescription": {
+										"fr": "Si Oracle n'est pas neutralisée, lors de l'étape d’entretien du tour du héros, le héros récupère 1 point de potentiel d'activation supplémentaire.\nLors de l'activation de la tuile événement, ce pouvoir n'apporte aucun effet.",
+										"en": "If Oracle is not neutralized, the hero recovers 1 additional activation potential point during the Upkeep Hero phase.\nThis power has no effect during the activation of the event tile."
+							}
+						}
+					}
+				}
+			}
+        },		
+        {
+            "id": "red-robin",
+            "name": {
+                "fr": "RED ROBIN",
+                "en": "RED ROBIN"
+            },
+            "back": {
+                "text": {
+                    "fr": "Tim Drake, troisième Robin du nom, s'est émancipé de Batman pour devenir Red Robin. Très agile, il est souvent équipé d'un bâton dont il se sert en combat ou lors de ses acrobaties. Bien qu'il ne soit pas toujours d'accord avec Batman, Red Robin est néanmoins son fils adoptif, au même titre que Nightwing. Parmi les anciens Robin, Tim Drake se distingue par le fait qu'il est généralement le plus optimiste et le moins violent. ll est également le petit ami de Spoiler (Stéphanie Brown). Tim se distingue aussi par une excellente pratique de l'informatique, qui fait de lui l'un des meilleurs hackers de Gotham City.",
+					"en": "Once the sidekick of Batman, Tim Drake eventually left this role behind and forged his own identity as Red Robin. With his keen martial arts skills and bo staff, he is an extremely agile and feared warrior. Like previous Robins, he is an adopted son, but unlike them he is less damaged and violent and even has a healthy relationship with the crime fighter known as Spoiler. Though a qreat hand-to-hand fiqhter, it is perhaps his computer skills that make him a true asset to the Bat-Family. Simply put, Tim Drake is one of the greatest hackers in all of Gotham City-an indispensible skill in the world of crime fighting."
+					},
+					"ID": "Timothy Drake",
+					"size": {
+						"fr": "1,68 m",
+						"en": "5ft 6in"
+					},
+					"weight": {
+						"fr": "59 Kg",
+						"en": "131 lbs"
+					}
+				},
+            "color": "blue",
+            "total-gems": 10,
+            "active-gems": 2,
+            "rest-gems": 5,
+            "freemovement": { 
+				"baselevel": 2,
+				"encombrances": [
+					{ "weight": 4, "movement": 1},
+					{ "weight": 6, "movement": 0}
+				]
+			},
+            "beltsize": 4,
+            "size": 1,
+            "menace": 1,
+            "melee": { 
+				"dice": "orange", 
+				"saturation": 5, 
+				"skills": [
+					{ "id": "martial_arts", "level": 1 , "encombrance": 4 }
+				]
+			},
+            "ranged": { 
+				"dice": "orange", 
+				"saturation": 4
+			},
+            "manipulation": { 
+				"dice": "orangereroll", 
+				"saturation": 4,   
+				"skills": [
+					{ "id": "munitions_specialist", "level": 1}
+				]
+			},
+            "thought": { 
+				"dice": "red", 
+				"saturation": 4,   
+				"skills": [
+					{ "id": "hacking", "level": 2 }
+				]
+			},
+            "defense": { 
+				"dice": "orange", 
+				"saturation": 4,  
+				"skills": [
+					{ "id": "protected", "level": 2 }
+				]
+			},
+            "passive-defense": { "dice": "yellow"},
+            "reroll": {"saturation": 4},
+            "movement": {
+				"saturation": 4,
+				"skills": [
+					{ "id": "parkour", "level": 1 , "encombrance": 4 }
+				]
+			},
+            "otherskills": [
+                { "id": "tactician", "level": 1 }
+            ],
+            "traits": [
+                {"id": "moral_code"}
+            ],
+            "image": "data/heroes/img/red-robin.png",
+            "imageHD": "data/heroes/img/red-robin_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/red-robin_back.png",
+            "imageHD_back": "data/heroes/img/red-robin_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "red-robin",
+            "origins": "wayne-manor",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "CYBERATTAQUE",
+						"en": "CYBERATTACK"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Red Robin pirate les communications adverses afin de les perturber.",
+								"en": "Red Robin hacks into enemy communications."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros peut pirater le poste de commandement adverse. Pour cela, il prend un pion piratage et le pose dans une des cases du poste de commandement adverse qui ne contient pas déjà un pion piratage : mouvement, défense ou relance.",
+										"en": "The hero can hack the enemy command post. To do so, they take a Hacking token and place it in one of the following spaces of the enemy command post that does not yet contain a Hacking token: movement, defense or reroll."
+							},
+							"tokens" : {
+								"0": {
+									"name": {
+										"fr": "PIONS PIRATAGE",
+										"en": "HACKING TOKEN"
+										},
+									"image": ["data/powers/img/hacking1.png","data/powers/img/hacking2.png","data/powers/img/hacking3.png"]
+								}					
+							}
+						},
+						"1": {
+							"cumulative": true,
+							"shortdescription": {
+								"fr": "Les communications sont piratées.",
+								"en": "Communications are hacked."
+							},
+							"type" : "permanent",
+							"longdescription": {
+										"fr": "Une case de mouvement, défense ou relance qui contient un pion piratage voit sa saturation diminuée de 1.",
+										"en": "The exertion limit of a movement, defense or reroll space that contains a Hacking token is reduced by 1."
+							}
+						}
+					}
+				}
+			}
+        },		
+        {
+            "id": "bruce-wayne",
+            "name": {
+                "fr": "BRUCE WAYNE",
+                "en": "BRUCE WAYNE"
+            },
+            "back": {
+                "text": {
+                    "fr": "Ses parents assassinés sous ses yeux, le jeune Bruce est devenu en un instant orphelin et milliardaire. S'il a mis son héritage au service de la guerre contre le crime, il doit néanmoins conserver une façade de respectabilité. Batman est inquiétant et froid quand le visage public de Bruce Wayne se doit d'être moins teffifiant. Le ]usticier se mue en playboy noceur. Cet habitué des pages people est aussi un philanthrope qui mène des projets de réhabilitation urbaine, finance des cliniques et dirige les entreprises Wayne. Être Bruce est pour Batman un effort constant. Ce masque ne doit se fendiller sous aucun prétexte...",
+					"en": "The moment his parents were murdered before his eyes, younq Bruce became both an orphan and a billionaire. Years later, as Batman, he waged a legendary war on crime, but the Wayne legacy also needed his attention. Ever since, he maintained a rigid dichotomy. To the public, he is Bruce Wayne: charming philanthropist, but to the criminal underworld, he is the Dark Knight: terrifying emblem of justice. Some days he funds urban renewal projects, other days, he battles psychotic crime lords obsessed with power and pageantry. Whichever role he plays, Bruce Wayne must wear one mask... or the other."
+					},
+					"ID": "Bruce Wayne",
+					"size": {
+						"fr": "1,87 m",
+						"en": "6ft 2in"
+					},
+					"weight": {
+						"fr": "95 Kg",
+						"en": "210 lbs"
+					}
+				},
+            "color": "blue",
+            "total-gems": 11,
+            "active-gems": 2,
+            "rest-gems": 5,
+            "freemovement": { 
+				"baselevel": 3,
+				"encombrances": [
+					{ "weight": 4, "movement": 2},
+					{ "weight": 5, "movement": 1},
+					{ "weight": 6, "movement": 0}
+				]
+			},
+            "size": 1,
+            "menace": 1,
+            "melee": { 
+				"dice": "red", 
+				"saturation": 4, 
+				"skills": [
+					{ "id": "martial_arts", "level": 1 , "encombrance": 4 }
+				]
+			},
+            "ranged": { 
+				"dice": "orange", 
+				"saturation": 4
+			},
+            "manipulation": { 
+				"dice": "orangereroll", 
+				"saturation": 4
+			},
+            "thought": { 
+				"dice": "red", 
+				"saturation": 3,   
+				"skills": [
+					{ "id": "investigation", "level": 2 },
+					{ "id": "hacking", "level": 1 }
+				]
+			},
+            "defense": { 
+				"dice": "orange", 
+				"saturation": 5,  
+				"skills": [
+					{ "id": "protected", "level": 2 }
+				]
+			},
+            "reroll": {"saturation": 5},
+            "movement": {
+				"saturation": 4,
+				"skills": [
+					{ "id": "parkour", "level": 1 , "encombrance": 4 },
+					{ "id": "elusive", "level": 1 , "encombrance": 3 },
+					{ "id": "mobility", "level": 2, "encombrance": 3 }
+				]
+			},
+            "otherskills": [
+                { "id": "pushing_limits", "level": 1}
+            ],
+            "traits": [
+                {"id": "moral_code"}
+            ],
+            "image": "data/heroes/img/bruce-wayne.png",
+            "imageHD": "data/heroes/img/bruce-wayne_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/bruce-wayne_back.png",
+            "imageHD_back": "data/heroes/img/bruce-wayne_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "bruce-wayne",
+            "origins": "wayne-manor",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "GARDE DU CORPS",
+						"en": "BODYGUARD"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Bruce Wayne arrive sur les lieux, accompagné de ses gardes personnels.",
+								"en": "Bruce Wayne arrives on the scene, accompanied by his personal bodyguards."
+							},
+							"type" : "permanent",
+							"longdescription": {
+										"fr": "À la fin de l'étape de sélection du QG, le héros remplace la tuile événement de sa rivière par la tuile de Bat-Robots. Il place ensuite 2 figurines de Bat-Robots dans la zone de Bruce Wayne.",
+										"en": "At the end of the Leader Selection step, the hero replaces the event tile in their river with a Bat-Robots tile. They then place 2 Bat-Robots miniatures in the same area as Bruce Wayne."
+									}
+						}
+					}
+				}
+			}
+        },		
+        {
+            "id": "julia-penniworth",
+            "name": {
+                "fr": "JULIA PENNIWORTH",
+                "en": "JULIA PENNIWORTH"
+            },
+            "back": {
+                "text": {
+                    "fr": "Alfred, si dévoué 24 heures sur 24 à son maître ? Mais quand a-t-il trouvé ie temps de fonder une famille ? Mais rappelons-nous qu'Alfred a eu une vie avont d'entrer ou service des Wayne. Et Julla en est une relique, ayant suivi la voie paternelle en intégrant non pas le service d'une grande famille, mais les services spéciaux de son pays. Membre des SAS britanniques, Julia est une redoutable combattante et, une fois découverte la vraie nature de l'emploi paternel, elle est devenue un membre très utile de la Bat-Family.",
+					"en": "With Alfred seeminqly devoted to Brure Wayne 24 hours a day, it begs the question: when did he find time to start a family? After all, let's not forget that Alfred lived a storied life before entering the service of Bruce Wayne. Perhaps it is appropriate, then, that his daughter, Julia, upheld the family tradition to serve. But in Julia's case it is not a wealthy family that she serves, but rather, her country. As a member of the British SAS, Julia is a formidable soldier and once she discovered the true nature of her father's employment, she became a very useful member of the Bat-Family."
+					},
+					"ID": "Julia Penniworth",
+					"size": {
+						"fr": "1,73 m",
+						"en": "5ft 8in"
+					},
+					"weight": {
+						"fr": "58,5 Kg",
+						"en": "129 lbs"
+					}
+				},
+            "color": "blue",
+            "total-gems": 10,
+            "active-gems": 3,
+            "rest-gems": 5,
+            "freemovement": { 
+				"baselevel": 3,
+				"encombrances": [
+					{ "weight": 3, "movement": 2},
+					{ "weight": 4, "movement": 1},
+					{ "weight": 5, "movement": 0}
+				]
+			},
+            "size": 1,
+            "menace": 1,
+            "melee": { 
+				"dice": "orange", 
+				"saturation": 4, 
+				"skills": [
+					{ "id": "martial_arts", "level": 1 , "encombrance": 4 }
+				]
+			},
+            "ranged": { 
+				"dice": "orangereroll", 
+				"saturation": 4
+			},
+            "manipulation": { 
+				"dice": "red", 
+				"saturation": 3,   
+				"skills": [
+					{ "id": "munitions_specialist", "level": 2 }
+				]
+			},
+            "thought": { 
+				"dice": "orange", 
+				"saturation": 4,   
+				"skills": [
+					{ "id": "hacking", "level": 1 }
+				]
+			},
+            "defense": { 
+				"dice": "orange", 
+				"saturation": 4
+			},
+            "reroll": {"saturation": 4},
+            "movement": {
+				"saturation": 4,
+				"skills": [
+					{ "id": "mobility", "level": 1 , "encombrance": 4 }
+				]
+			},
+            "otherskills": [
+                { "id": "nerves_steel", "level": 1 }
+            ],
+            "image": "data/heroes/img/julia-penniworth.png",
+            "imageHD": "data/heroes/img/julia-penniworth_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/julia-penniworth_back.png",
+            "imageHD_back": "data/heroes/img/julia-penniworth_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "julia-penniworth",
+            "origins": "wayne-manor",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "PLANIFICATION MILITAIRE",
+						"en": "MILITARY PLANNING"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Julia Pennyworth se sert de son enseignement militaire pour diriger les opérations.",
+								"en": "Julia Pennyworth uses her military education to lead operations."
+							},
+							"type" : "permanent",
+							"longdescription": {
+										"fr": "Si Julia Pennyworth n'est pas neutralisée, lors de l'étape d’entretien du tour du héros, le héros récupère 2 cubes d'énergie supplémentaires.\nLors de l'activation de la tuile événement, ce pouvoir n'apporte aucun effet.",
+										"en": "If Julia Pennyworth is not neutralized, the hero recovers 2 additional Energy cubes during the Upkeep Hero phase.\nDuring the activation of the event tile, this power has no effect."
+							}
+						}
+					}
+				}
+			}
+        },
+        {
+            "id": "alfred",
+            "name": {
+                "fr": "ALFRED",
+                "en": "ALFRED"
+            },
+            "back": {
+                "text": {
+                    "fr": "Il semble faire partie des meubles du manoir Wayne. Mais Alfred n'a pas toujours été ce maître d'hôtel entre deux âges. Ne voulant pas au départ être le serviteur d'une grande famille comme ses ancêtres, il s'engagea dans l'armée puis dans les services secrets. Il fut aussi acteur mais la mort de son père le conduisit à entrer au service des Wayne. À leur mort, il servit de tuteur à leur fils Bruce. Depuis que ce dernier est devenu Batman, Alfred assure l'entretien du manoir mais aussi la logistique de sa croisade contre le crime, il soigne les blessures, voire se grime pour infiltrer des milieux louches.",
+					"en": "Though he is best known as an elderly English butler, at one point in his life Alfred was a man of action. Not wishing to become a servant like so many others in his family, he enrolled in the army and came to work for the Secret Services. He even became an actor for a stretch, but the death of his father brought him back to work for the Wayne family. After the murder of Thomas and Martha Wayne, Alfred became young Bruce's tutor and closest friend. Now, not only does Alfred maintain the manor, but he also aids Batman in his crusade against crime-managinq logistics, sewing wounds, and launching reconnaissance missions."
+					},
+					"ID": "Alfred Pennyworth",
+					"size": {
+						"fr": "1,83 m",
+						"en": "6ft"
+					},
+					"weight": {
+						"fr": "72,5 Kg",
+						"en": "160 lbs"
+					}
+				},
+            "color": "blue",
+            "total-gems": 10,
+            "active-gems": 2,
+            "rest-gems": 5,
+            "freemovement": { 
+				"baselevel": 2,
+				"encombrances": [
+					{ "weight": 3, "movement": 1},
+					{ "weight": 4, "movement": 0}
+				]
+			},
+            "size": 1,
+            "menace": 1,
+            "melee": { 
+				"dice": "white"
+			},
+            "ranged": { 
+				"dice": "yellow", 
+				"saturation": 4
+			},
+            "manipulation": { 
+				"dice": "orange", 
+				"saturation": 4,   
+				"skills": [
+					{ "id": "munitions_specialist", "level": 1 }
+				]
+			},
+            "thought": { 
+				"dice": "orangereroll", 
+				"saturation": 3
+			},
+            "defense": { 
+				"dice": "orange", 
+				"saturation": 5,  
+				"skills": [
+					{ "id": "protected", "level": 3 },
+					{ "id": "untouchable", "level": 1 , "encombrance": 4 },
+					{ "id": "impenetrable_defense", "level": 1, "encombrance": 4 }
+				]
+			},
+            "reroll": {"saturation": 5},
+            "movement": {
+				"saturation": 4
+			},
+            "otherskills": [
+                { "id": "luck", "level": 2 },
+                { "id": "tactician", "level": 2 }
+            ],
+            "image": "data/heroes/img/alfred.png",
+            "imageHD": "data/heroes/img/alfred_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/alfred_back.png",
+            "imageHD_back": "data/heroes/img/alfred_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "alfred",
+            "origins": "wayne-manor",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "SOIN",
+						"en": "CARE"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Le héros soigne son lieutenant.",
+								"en": "The hero takes care of their lieutenant."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros place le pion point de vie du lieutenant à son niveau de départ.",
+										"en": "The hero resets the lieutenant’s life point marker back to its initial value."
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "Alfred effectue immédiatement un mouvement.",
+								"en": "Alfred immediately performs a movement."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Alfred. Il effectue seulement sa première étape de mouvement.",
+										"en": "The hero immediately performs a character activation with Alfred. They only carry out their First Movement Step."
+							}
+						}
+					}
+				}
+			}
+        },
+        {
+            "id": "batman-thrasher",
+            "name": {
+                "fr": "BATMAN",
+                "en": "BATMAN"
+            },
+            "subtitle": {
+                "fr": "THRASHER SUIT",
+                "en": "THRASHER SUIT"
+            },
+			"back": {
+                "text": {
+                    "fr": "Lorsque la situation l'exige, Batman n'hésite pas à revêtir son imposant costume blindé pour faire régner 1a justice au sein de GOtham. Faute de pouvoirs et d'invulnérabilité, cette armure de combat lui permet de palier à ses faiblesses lorsqu'il affronte des ennemis supérieurs en nombre ou surpuissants. D'autres héros de Gotham City ont revêtu cette armure, tel qu'Azraë1, lorsqu'il remplaça Batman. Récemment, Jim Gordon a accepté la tâche que le gouvernement lui a confié, à savoir de patrouiller et sécuriser les rues de Gotham City en pilotant ce type d'armure. Mais ceci est une autre histoire.",
+					"en": "Usually, fightinq street thugs requires armor that is liqht weight and flexible, but Batman comes prepared for anything. Lacking super-strength and invulnerability, he created special armored suits to level the playing field against certain foes. And sometimes, it is not even Bruce Wayne who wears the armor. Jean-Paul Valley, aka Azrael, once strapped on a suit of armor during his stint as Batman. And the latest of these armored Batmen was none other than Jim Gordon. To compensate for the disappearance of the Dark Knight, he agreed to don an armored suit designed by the government to patrol the streets of Gotham City."
+					},
+					"ID": "Bruce Wayne",
+					"size": {
+						"fr": "NC",
+						"en": "NC"
+					},
+					"weight": {
+						"fr": "NC",
+						"en": "NC"
+					}
+				},
+            "color": "blue",
+            "total-gems": 11,
+            "active-gems": 1,
+            "rest-gems": 7,
+            "freemovement": { 
+				"baselevel": 2,
+				"encombrances": [
+					{ "weight": 5, "movement": 1},
+					{ "weight": 9, "movement": 0}
+				]
+			},
+            "size": 2,
+            "menace": 1,
+            "melee": { 
+				"dice": "black", 
+				"saturation": 5, 
+				"skills": [
+					{ "id": "circular_strike", "level": 2 }
+				]
+			},
+            "ranged": { 
+				"dice": "yellow", 
+				"saturation": 0
+			},
+            "manipulation": { 
+				"dice": "yellow", 
+				"saturation": 3
+			},
+            "thought": { 
+				"dice": "red", 
+				"saturation": 3,   
+				"skills": [
+					{ "id": "hacking", "level": 2 },
+					{ "id": "investigation", "level": 1 }
+				]
+			},
+            "defense": { 
+				"dice": "white", 
+				"saturation": 6
+			},
+            "passive-defense": { "dice": "redreroll"},
+            "reroll": {"saturation": 4},
+            "movement": {
+				"saturation": 3,
+				"cube_value": 2,  
+				"skills": [
+					{ "id": "elusive", "level": 3 },
+					{ "id": "parkour", "level": 2 }
+				]
+			},
+            "otherskills": [
+                { "id": "nerves_steel", "level": 3 }
+            ],
+            "traits": [
+                {"id": "moral_code"}
+            ],
+            "image": "data/heroes/img/batman-thrasher.png",
+            "imageHD": "data/heroes/img/batman-thrasher_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/batman-thrasher_back.png",
+            "imageHD_back": "data/heroes/img/batman-thrasher_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "batman-thrasher",
+            "origins": "wayne-manor"
+        },		
+        {
+            "id": "batgirl",
+            "name": {
+                "fr": "BATGIRL",
+                "en": "BATGIRL"
+            },
+            "back": {
+                "text": {
+                    "fr": "Fille biologique ou adoptive du commissaire Gordon ? Nul ne le sait. Bien des rumeurs ont couru sur elle. Mais ce qui est certain, c'est qu'elle a une mémoire phénoménale et une intelligence acérée. Son goût du risque la conduisit pendant quelques années à rejoindre la croisade de Batman et Robin sous l'identité de Batgirl. Elle a développé pendant un temps une relation suivie avec Dick Grayson, le premier Robin. Dans sa jeunesse, Barbara combattit donc le crime et devint rapidement un atout pour la «Bat-Family».",
+					"en": "Is she the biological or adopted daughter of Commissioner Gordon? Many rumors have circulated about her, but her phenomenal memory, keen intellect, and taste for danger are undisputed. It is this last trait that led her to join Batman and Robin's crusade against crime as Batgirl. For a time, she developed a close relationship with Dick Grayson, the first Robin. During her youth, Barbara fought crime ond quickly became an important asset to the \"Bat-Family\"."
+					},
+					"ID": "Barbara Gordon",
+					"size": {
+						"fr": "1,80 m",
+						"en": "5ft 11in"
+					},
+					"weight": {
+						"fr": "61,23 Kg",
+						"en": "135 lbs"
+					}
+				},
+            "color": "blue",
+            "total-gems": 10,
+            "active-gems": 2,
+            "rest-gems": 5,
+            "freemovement": { 
+				"baselevel": 2,
+				"encombrances": [
+					{ "weight": 3, "movement": 1},
+					{ "weight": 5, "movement": 0}
+				]
+			},
+            "beltsize": 3,
+            "size": 1,
+            "menace": 1,
+            "melee": { 
+				"dice": "orange", 
+				"saturation": 4, 
+				"skills": [
+					{ "id": "martial_arts", "level": 1 , "encombrance": 4 }
+				]
+			},
+            "ranged": { 
+				"dice": "orange", 
+				"saturation": 4
+			},
+            "manipulation": { 
+				"dice": "orange", 
+				"saturation": 4
+			},
+            "thought": { 
+				"dice": "orangereroll", 
+				"saturation": 4,   
+				"skills": [
+					{ "id": "investigation", "level": 2},
+					{ "id": "hacking", "level": 1 }
+				]
+			},
+            "defense": { 
+				"dice": "orange", 
+				"saturation": 4,  
+				"skills": [
+					{ "id": "untouchable", "level": 1 , "encombrance": 4 }
+				]
+			},
+            "passive-defense": { "dice": "yellow"},
+            "reroll": {"saturation": 4},
+            "movement": {
+				"saturation": 4,
+				"cube_value": 1,  
+				"skills": [
+					{ "id": "parkour", "level": 1 , "encombrance": 3 },
+					{ "id": "mobility", "level": 1, "encombrance": 3 }
+				]
+			},
+            "otherskills": [
+                { "id": "support", "level": 1 }
+            ],
+            "traits": [
+                {"id": "moral_code"}
+            ],
+            "image": "data/heroes/img/batgirl.png",
+            "imageHD": "data/heroes/img/batgirl_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/batgirl_back.png",
+            "imageHD_back": "data/heroes/img/batgirl_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "batgirl",
+            "origins": "corebox",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "BATARANG TÉLÉGUIDÉ",
+						"en": "RADIO-CONTROLLED BATARANG"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Batgirl effectue une attaque à distance à l'aide d'un batarang téléguidé.",
+								"en": "Batgirl performs a ranged attack using a radiocontrolled batarang."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Batgirl. Elle effectue seulement une attaque à distance avec les exceptions suivantes : \n-- Batgirl ne doit pas nécessairement avoir une ligne de vue sur le défenseur,\n-- le défenseur doit se trouver à une distance maximale de 3 zones de Batgirl,\n-- lors de l'étape constitution de la réserve de dés, sa caractéristique d'attaque est 1 dé noir relançable + 1 dé jaune.",
+										"en": "The hero immediately performs a character activation with Batgirl. They only carry out a ranged attack with the following exceptions:\n-- Batgirl does not necessarily need a line of sight to the defender.\n-- The defender must be within a maximum distance of 3 areas from Batgirl.\n-- During the Create the Dice Pool step, the attack characteristic of the hero is 1 black die with reroll + I yellow die."
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "Batgirl effectue immédiatement un mouvement.",
+								"en": "Batgirl immediately performs a movement."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Batgirl. Elle effectue seulement sa première étape de mouvement.",
+										"en": "The hero immediately performs a character activation with Batgirl. They only carry out their First Movement Step."
+							}
+						}
+					}
+				}
+			}
+        },		
+        {
+            "id": "huntress",
+            "name": {
+                "fr": "HUNTRESS",
+                "en": "HUNTRESS"
+            },
+            "back": {
+                "text": {
+                    "fr": "Helena Bertinelli est née dans une famille mafleuse de Gotham City. Elle vit ses parents massacrés, comme cela arrive parfois à l'occasion de rivalités entre gangs. Recueillie par un oncle et envoyée en Sicile, elle y apprit à se défendre. De retour à Gotham City, elle s'aperçut qu'elle haïssait ce milieu de gangsters hypocrites. Elle décida donc de travailler auprès d'enfants. Mais la nuit, elle devint autre chose. Armée d'une arbalète, elle hante la ville en mettant à mal les opérations criminelles. Huntress a opéré avec les Birds of Prey, la Lique de Justice, les Outsiders et même les organisations secrètes Checkmate et Spyral.",
+					"en": "Helena Bertinelli was born to a family at the heart of the Gotham City Mafia. After she witnessed the massacre of her parents, she was sent, by her uncle, to toughen-up in Sicily. Upon returning to Gotham City, she realized how much she hated the place decided to become schoolmistress to try and escape the city's double-dealinq thugs. But she became somethinq else, too. Armed with a crossbow, she patrols the city at night to hunt and disrupt the operations of her extended family and their rivals. She has worked with the Birds of Prey, the Justice League, the Outsiders and even the Checkmate and Spyral covert operations agencies."
+					},
+					"ID": "Helena Bertinelli",
+					"size": {
+						"fr": "1,80 m",
+						"en": "5ft 11in"
+					},
+					"weight": {
+						"fr": "59 Kg",
+						"en": "130 lbs"
+					}
+				},
+            "color": "blue",
+            "total-gems": 10,
+            "active-gems": 2,
+            "rest-gems": 5,
+            "freemovement": { 
+				"baselevel": 2,
+				"encombrances": [
+					{ "weight": 4, "movement": 1},
+					{ "weight": 6, "movement": 0}
+				]
+			},
+            "beltsize": 1,
+            "size": 1,
+            "menace": 1,
+            "melee": { 
+				"dice": "orange", 
+				"saturation": 4, 
+				"skills": [
+					{ "id": "circular_strike", "level": 3 , "encombrance": 4 },
+					{ "id": "martial_arts", "level": 1, "encombrance": 4 }
+				]
+			},
+            "ranged": { 
+				"dice": "orange", 
+				"saturation": 4,  
+				"skills": [
+					{ "id": "marksman", "level": 1, "encombrance": 4 }
+				]
+			},
+            "manipulation": { 
+				"dice": "orangereroll", 
+				"saturation": 3,   
+				"skills": [
+					{ "id": "munitions_specialist", "level": 1  }
+				]
+			},
+            "thought": { 
+				"dice": "orangereroll", 
+				"saturation": 3
+			},
+            "defense": { 
+				"dice": "yellowreroll", 
+				"saturation": 5
+			},
+            "reroll": {"saturation": 5},
+            "movement": {
+				"saturation": 4,  
+				"skills": [
+					{ "id": "parkour", "level": 1 , "encombrance": 3 },
+					{ "id": "mobility", "level": 1, "encombrance": 3 }
+				]
+			},
+            "image": "data/heroes/img/huntress.png",
+            "imageHD": "data/heroes/img/huntress_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/huntress_back.png",
+            "imageHD_back": "data/heroes/img/huntress_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "huntress",
+            "origins": "corebox",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "ATTAQUE TOURNOYANTE",
+						"en": "SPINNING ATTACK"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Huntress effectue une attaque tournoyante avec son bâton.",
+								"en": "Huntress performs a spinning attack with her Bo staff."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Huntress. Elle effectue seulement des attaques au corps à corps avec la caractéristique de 2 dés jaunes et un multiplicateur d’actions de 5",
+										"en": "The hero immediately performs a character activation with Huntress. They may only carry out melee attacks with 2 yellow dice and an action multiplier of 5."
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "Huntress effectue immédiatement un mouvement.",
+								"en": "Huntress immediately performs a movement."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Huntress. Elle effectue seulement sa première étape de mouvement.",
+										"en": "The hero immediately performs a character activation with Huntress. They only carry out their First OR Movement Step."
+							}
+						}
+					}
+				}
+			}
+        },
+
+
+
+
+
 		
 		
 		
@@ -1751,7 +3582,7 @@
                 "fr": "template",
                 "en": "template"
             },
-           "back": {
+			"back": {
                 "text": {
                     "fr": "template",
 					"en": "template"
@@ -1823,7 +3654,8 @@
             "passive-defense": { "dice": "yellow"},
             "reroll": {"saturation": 5},
             "movement": {
-				"saturation": 4,  
+				"saturation": 4,
+				"cube_value": 2,  
 				"skills": [
 					{ "id": "investigation", "level": 1 , "encombrance": 6 },
 					{ "id": "marksman", "level": 1, "encombrance": 4 }
