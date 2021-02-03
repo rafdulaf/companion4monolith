@@ -1603,7 +1603,7 @@
                         "special_moves": {
                             "jumb": false
                         },
-                        "areas": [  "elevators_entrance", "elevators_shaft", "promontory", "elevator_orientation"  ]
+                        "areas": [  "elevators_entrance", "elevator_shaft", "promontory", "elevator_orientation"  ]
                     }
                 },
                 "totopic": {
@@ -2097,7 +2097,7 @@
                             { "level": "2", "color": "#83C5E7" }
                         ],
                         "boundaries": {},
-                        "areas": [ "elevators_entrance", "elevators_shaft", "elevator_orientation" ]
+                        "areas": [ "elevators_entrance", "elevator_shaft", "elevator_orientation" ]
                     }
                 },                
                 "totopic": {

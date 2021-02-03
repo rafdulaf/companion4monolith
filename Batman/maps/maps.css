@@ -12,7 +12,6 @@
 .map-map-help .map-map-legend {
     display: inline-block;
     vertical-align: top;
-    width: 175px;
     margin: 10px 5px 0;
     padding: 0 10px 10px 10px;
     border: 1px solid #f2981a;
@@ -135,4 +134,32 @@
     margin-right: 5px;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+/* AREAS */
+.map-map-help .map-map-legend-areas {
+    width: 250px;
+}
+.map-map-help .map-map-legend-areas > div {
+    display: flex;
+    align-items: center;
+}
+.map-map-help .map-map-legend-areas span {
+    line-height: calc(var(--primary-line-height) * 0.7rem);
+    flex: 1;
+}
+.map-map-help .map-map-legend-areas span:first-child { 
+    flex: unset;
+    width: 40px;
+    height: 50px;
+    margin-right: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.map-map-help .map-map-legend-areas .map-map-legend-areas-elevators_entrance span:first-child {
+    height: 60px;
+}
+.map-map-help .map-map-legend-areas .map-map-legend-areas-elevator_orientation span {
+    font-weight: 100;
 }

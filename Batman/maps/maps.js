@@ -19,7 +19,7 @@ Maps = mergeObject(Maps, {
             
             'legend_areas_title': "TODO_TRANSLATE",
             'legend_areas_elevators_entrance': "TODO_TRANSLATE",
-            'legend_areas_elevators_shaft': "TODO_TRANSLATE",
+            'legend_areas_elevator_shaft': "TODO_TRANSLATE",
             'legend_areas_promontory': "TODO_TRANSLATE",
             'legend_areas_elevator_orientation': "TODO_TRANSLATE"
         },
@@ -42,7 +42,7 @@ Maps = mergeObject(Maps, {
             
             'legend_areas_title': "Areas",
             'legend_areas_elevators_entrance': "<strong>Elevator's entrance area.</strong>",
-            'legend_areas_elevators_shaft': "<strong>Elevator shaft</strong>",
+            'legend_areas_elevator_shaft': "<strong>Elevator shaft</strong>",
             'legend_areas_promontory': "<strong>Promontory</strong>",
             'legend_areas_elevator_orientation': "Indicates the elevator tile's orientation."
         }
@@ -131,7 +131,8 @@ Maps = mergeObject(Maps, {
 
                     rules.legend.areas.forEach(function (area) {
                         aide += "<div class=\"map-map-legend-areas-" + area + "\">"
-                            + Maps._i18n[Language]['legend_areas_' + area]
+                                  + "<span style=\"background-image: url('maps/img/areas_" + area + ".png?version=" + Version + "')\"></span>" 
+                                  + "<span>" + Maps._i18n[Language]['legend_areas_' + area].replace(/\n/g, '<br/>') + "</span>"
                             + "</div>"
                     });
                             
