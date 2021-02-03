@@ -243,10 +243,6 @@ var Maps = {
             {
                 Nav.showAction("maps", "losfile");
             }
-            if (map.description.pdf && map.description.pdf[Language])
-            {
-                Nav.showAction("maps", "pdf");
-            }
             Nav.showAction("maps", "rotate");
             Nav.showAction("maps", "legend");
         }
