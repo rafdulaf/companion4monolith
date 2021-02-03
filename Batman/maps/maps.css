@@ -125,6 +125,7 @@
 /* SPECIAL MOVES */
 .map-map-help .map-map-legend-specialmoves {
     width: 372px;
+    max-width: 92vw;
 }
 .map-map-help .map-map-legend-specialmoves > div {
     font-weight: 100;
