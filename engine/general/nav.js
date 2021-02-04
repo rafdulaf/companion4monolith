@@ -362,8 +362,15 @@ Nav = {
             
             slider.removeClass(sizes.join(" "));
             
+            
             var tabs = slider.find("a");
             var maxWidth = tabs.width();
+            
+            var button = slider.prev();
+            if (button)
+            {
+                $(button).width(tabs.offset().left);
+            }
 
             for (var i = 0; i < sizes.length; i++)
             {
@@ -386,7 +393,7 @@ Nav = {
             }
     },
     
-    createTabs: function(id, tabs, onSetPosition)
+    createTabs: function(id, tabs, onSetPosition, button)
     {
         var subcode = "";
         var subzone = "";
@@ -396,12 +403,17 @@ Nav = {
             subzone += "<div id=\"" + tabs[i].id + "\"></div>";
         }
         
-        var code = "<div class=\"nav-menu\">"
-                 +      subcode
-                 + "</div>"
-                 + "<div class=\"nav-wrapper\">"
-                 +      subzone
-                 + "</div>";
+        var code = "";
+        if (button)
+        {
+            code += "<a class='nav-button " + button.cls + "' onclick=\"" + button.action + "\" href='javascript:void(0)' title=\"" + button.label + "\"></a>"
+        }
+        code += "<div class=\"nav-menu\">"
+              +      subcode
+              + "</div>"
+              + "<div class=\"nav-wrapper\">"
+              +      subzone
+              + "</div>";
         
         $("#" + id).attr("data-navsize", tabs.length).append(code);
         

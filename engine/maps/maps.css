@@ -172,6 +172,12 @@
     position: relative;
 }
 
+.map-map .map-back:before {
+   font-family: "Font Awesome 5 Free";
+   content: "\f00a";  
+   font-size: 24px;
+}
+
 .map-map .map-map-wrapper,
 .map-map .map-map-help {
     height: 100%;

@@ -305,6 +305,19 @@
     border-bottom-color: red;
 }
 
+.nav-button {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    min-width: 39px;
+    height: 39px;
+    text-align: center;
+    line-height: 39px;
+    cursor: pointer;
+    z-index: 1;
+}
+
 .slick-slide {
     outline: none;
 }

@@ -75,14 +75,12 @@ var Maps = {
 	{
         Nav.addIcon(Maps._i18n[Language].menu, "maps-icon", "maps");
 
-        Nav.addAction("maps", Maps._i18n[Language].back, "maps-icon-index", "index", Maps._displayIndex);
-        Nav.addAction("maps", Maps._i18n[Language].pdf, "maps-icon-pdf", "pdf", Maps._downloadPdf);
-        Nav.addAction("maps", Maps._i18n[Language].forum, "maps-icon-forum", "forum", Maps._openForum);
-        Nav.addAction("maps", Maps._i18n[Language].losfile, "maps-icon-losfile", "losfile", Maps._losFile);
         Nav.addAction("maps", Maps._i18n[Language].legend, "maps-icon-legend", "legend", Maps._legend );
+        Nav.addAction("maps", Maps._i18n[Language].pdf, "maps-icon-pdf", "pdf", Maps._downloadPdf);
+        Nav.addAction("maps", Maps._i18n[Language].losfile, "maps-icon-losfile", "losfile", Maps._losFile);
+        Nav.addAction("maps", Maps._i18n[Language].forum, "maps-icon-forum", "forum", Maps._openForum);
         Nav.addAction("maps", Maps._i18n[Language].rotate, "maps-icon-rotate", "rotate", function() { Maps._rotate(-1); } );
 
-        Nav.hideAction("maps", "index");
         Nav.hideAction("maps", "pdf");
         Nav.hideAction("maps", "forum");
         Nav.hideAction("maps", "losfile");
@@ -170,7 +168,6 @@ var Maps = {
 	_displayIndex: function()
 	{
 		Maps._hideAll();
-        Nav.hideAction("maps", "index");
         Nav.hideAction("maps", "pdf");
         Nav.hideAction("maps", "forum");
         Nav.hideAction("maps", "losfile");
@@ -238,7 +235,10 @@ var Maps = {
         if ((slick.currentSlide || 0) == 0)
         {
             Nav.hideAction("maps", "pdf");
-            Nav.hideAction("maps", "forum");
+            if (map.description.totopic)
+            {
+                Nav.showAction("maps", "forum");
+            }
             if (map.description.losFile)
             {
                 Nav.showAction("maps", "losfile");
@@ -288,7 +288,6 @@ var Maps = {
         Maps._hideAll();
         Maps._currentMap = mapId;
 
-        Nav.showAction("maps", "index");
         Maps._onSetPosition(null, 0);
 
         var map = Maps._getMap();
@@ -315,7 +314,7 @@ var Maps = {
             tabs.push({label: Maps._i18n[Language]['help'], id: "map-map-help"});
         }
         
-        Nav.createTabs(id, tabs, Maps._onSetPosition);
+        Nav.createTabs(id, tabs, Maps._onSetPosition, { label: Maps._i18n[Language].back, action: "Maps._displayIndex()", cls: "map-back" });
 
         $("#map-map-map")
             .addClass("map-map-wrapper map-map-wrapper-display-help")
