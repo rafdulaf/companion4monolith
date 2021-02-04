@@ -28,6 +28,18 @@
     position: relative;
 }
 
+@media screen and (min-width: 1366px) {
+    .map-map-help {
+        display: flex;
+    }
+    .map-map-help .map-help-thumb {
+        flex: 1;
+    }
+    .map-map-help .map-map-legends {
+        width: 382px;
+    }
+}
+
 .map-map-help .map-map-legend h1 {
     border-bottom: 1px solid #f2981a;
     margin: 0 -11px 10px;
