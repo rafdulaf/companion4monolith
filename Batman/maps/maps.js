@@ -141,6 +141,11 @@ Maps = mergeObject(Maps, {
             }
         }
         
+        if (aide)
+        {
+            aide = "<div class='map-map-legends'>" + aide + "</div>";
+        }
+        
         return aide;
     }
 });

@@ -19,26 +19,13 @@
     background-color: #F8F9F4
 }
 
-@media (orientation: portrait) {
-    .map-map-help .map-help-thumb {
-        text-align: center;
-    }
-    
-    .map-map-help .map-help-thumb div {
-        display: inline-block;
-        position: relative;
-    }
+.map-map-help .map-help-thumb {
+    text-align: center;
 }
-@media (orientation: landscape) {
-    .map-map-help .map-help-thumb {
-        display: inline-block;
-        vertical-align: top;
-    }
-    
-    .map-map-help .map-help-thumb div {
-        display: inline-block;
-        position: relative;
-    }
+
+.map-map-help .map-help-thumb div {
+    display: inline-block;
+    position: relative;
 }
 
 .map-map-help .map-map-legend h1 {
