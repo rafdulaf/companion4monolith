@@ -2,24 +2,15 @@
 	"list": [
 		{
             "id": "batman",
-            "name": {
-                "fr": "BATMAN",
-                "en": "BATMAN"
-            },
+            "name": "BATMAN",
             "back": {
                 "text": {
                     "fr": "Témoin de l'assassinat de ses parents alors qu'il n'était qu'un enfant, le richissime Bruce Wayne a juré de livrer une guerre sans merci contre le crime. Il a parcouru le monde pour recevoir l'enseignement des meilleurs détectives et des meilleurs combattants de chaque discipline. De retour à Gotham City pour mettre en oeuvre son plan, il ne lui manquait plus que l'idée d'un totem pour symboliser sa lutte. Il l'a trouvé le jour où une chauve-souris s'est  introduite chez lui. Puisque les criminels sont généralement superstitieux et peureux, Bruce a décidé d'incarner une créature de la nuit. Il est depuis le Batman.",
 					"en": "As a child, Bruce Wayne witnessed the brutal murder of his parents. From that day forward, he resolved to do something about the incessant crime plaguing Gotham City. To prepare himself, he travelled the world, learning from the best detectives and warriors of every discipline. Arriving back in Gotham City, ready to begin his ceaseless fight, he realized something was missing. He needed an emblem-something to symbolize his crusade against crime. One day, when a bat flew into his room, he knew he'd found it. In time, Gotham City's criminal underworld came to understand the meaning of fear. And this fear was given a name: Batman"
 					},
 					"ID": "Bruce Wayne",
-					"size": {
-						"fr": "1,87 m",
-						"en": "6ft 2in"
-					},
-					"weight": {
-						"fr": "95,25 Kg",
-						"en": "210 lbs"
-					}
+					"size": "6ft 2in / 1,87 m",
+					"weight": "210 lbs / 95,25 Kg"
 				},
             "color": "blue",
             "total-gems": 11,
@@ -128,24 +119,15 @@
 		},	
         {
             "id": "nightwing",
-            "name": {
-                "fr": "NIGHTWING",
-                "en": "NIGHTWING"
-            },
+            "name": "NIGHTWING",
             "back": {
                 "text": {
-                    "fr": "Dick Grayson, un enfant de la balle, fut le premier Robin. Mais les enfants grandissent et le costume bariolé devient trop petit. Puis l'autorité d'un parent aussi dur que Batman peut les éloigner. Ainsi, Dick Grayson a raccroché sa cape jaune pour adopter des couleurs plus proches de celles de son mentor. ll combat le crime sous l'identité de Nightwing, à New York, puis à Blüdhaven, une ville en banlieue de Gotham City. Mais si ses relations avec Batman sont parfois tendues, Nightwinq vient souvent lui prêter main-forte. Acrobate hors pair, bon combattant, il a toutes les qualités de Batman, le sourire en plus.",
+                    "fr": "Dick Grayson, un enfant de la balle, fut le premier Robin. Mais les enfants grandissent et le costume bariolé devient trop petit. Puis l'autorité d'un parent aussi dur que Batman peut les éloigner. Ainsi, Dick Grayson a raccroché sa cape jaune pour adopter des couleurs plus proches de celles de son mentor. ll combat le crime sous l'identité de Nightwing, à New York, puis à Blüdhaven, une ville en banlieue de Gotham City. Mais si ses relations avec Batman sont parfois tendues, Nightwing vient souvent lui prêter main-forte. Acrobate hors pair, bon combattant, il a toutes les qualités de Batman, le sourire en plus.",
 					"en": "Dick Grayson, a young acrobat, became the first Robin, But children grow up, and they grow out of brightly colored costumes. A parent as demanding as Batman can, understandably, push them away. So, Dick Grayson hung up his yellow cape for good and struck out on his own-leaving behind his status as a sidekick, Now he fights under the name Nightwing, both in New York and in Blüdhaven, a city in the suburbs of Gotham City. Though Nightwing's relationship with Batman is often strained, he is always ready to lend a hand when the need arises. An outstanding acrobat and a highly effective fighter, Nightwing has all the qualities of Batman, plus the smile."
 					},
 					"ID": "Dick Grayson",
-					"size": {
-						"fr": "1,11 m",
-						"en": "5ft l0in"
-					},
-					"weight": {
-						"fr": "79,3 Kg",
-						"en": "175 lbs"
-					}
+					"size": "5ft l0in / 1,11 m",
+					"weight": "175 lbs / 79,3 Kg"
 				},
             "color": "blue",
             "total-gems": 10,
@@ -235,24 +217,15 @@
         },		
         {
             "id": "azrael",
-            "name": {
-                "fr": "AZRAEL",
-                "en": "AZRAEL"
-            },
+            "name": "AZRAEL",
             "back": {
                 "text": {
-                    "fr": "Jean-Paul Valley était un étudiant somme toute ordinaire, jusqu'à ce que son père soit tué. Jean-Paul découvrit alors qu'il était le descendant d'une liqnée d'exécuteurs des basses oeuvres au service de l'0rdre de Saint Dumas, et appelé à succéder à son géniteur, nanti d'une armure et d'une épée de flammes. Mais après s'être retourné contre ceux qui tentaient de le manipuler, c'est à Batmon qu'il finit par brièvement succéder, inquiétant ses alliés par sa brutalité et son comportement psychotique. Depuis que Bruce Wayne a repris son masque, Azrael se cherche une identité, un but...",
-					"en": "Jean-Paul Valley was just an ordinary student before the brutal murder of his father. It was then, in the grips of grief, that he discovered his dark heritage. Valley was the descendant of a long line of servants of the Order of Saint Dumas. The Order called on him to succeed his father and carry out the Order's bloody deeds. And serve he did-with an intricate and powerful suit of armar and a flaming sword. Eventually, Jean-Paul broke free of his manipulators and for a brief stint took on the role of Batman. His stranqe demeanor and brutal methods scared both enemies and allies alike."
+                    "fr": "Jean-Paul Valley était un étudiant somme toute ordinaire, jusqu'à ce que son père soit tué. Jean-Paul découvrit alors qu'il était le descendant d'une lignée d'exécuteurs des basses oeuvres au service de l'0rdre de Saint Dumas, et appelé à succéder à son géniteur, nanti d'une armure et d'une épée de flammes. Mais après s'être retourné contre ceux qui tentaient de le manipuler, c'est à Batmon qu'il finit par brièvement succéder, inquiétant ses alliés par sa brutalité et son comportement psychotique. Depuis que Bruce Wayne a repris son masque, Azrael se cherche une identité, un but...",
+					"en": "Jean-Paul Valley was just an ordinary student before the brutal murder of his father. It was then, in the grips of grief, that he discovered his dark heritage. Valley was the descendant of a long line of servants of the Order of Saint Dumas. The Order called on him to succeed his father and carry out the Order's bloody deeds. And serve he did-with an intricate and powerful suit of armar and a flaming sword. Eventually, Jean-Paul broke free of his manipulators and for a brief stint took on the role of Batman. His strange demeanor and brutal methods scared both enemies and allies alike."
 					},
 					"ID": "Jean-Paul Valley",
-					"size": {
-						"fr": "1,88 m",
-						"en": "6ft 2in"
-					},
-					"weight": {
-						"fr": "95 Kg",
-						"en": "209 lbs"
-					}
+					"size": "6ft 2in / 1,88 m",
+					"weight": "209 lbs / 95 Kg"
 				},
             "color": "blue",
             "total-gems": 11,
@@ -350,24 +323,15 @@
 		},		
         {
             "id": "gordon",
-            "name": {
-                "fr": "COMMISSIONER GORDON",
-                "en": "COMMISSIONER GORDON"
-            },
+            "name": "COMMISSIONER GORDON",
             "back": {
                 "text": {
                     "fr": "A son arrivée à Gotham City, Jim Gordon reste intègre dans une force de police qui ne l'a jamais été. Il se fait vite des ennemis parmi ses collègues. Il réussit, avec l'aide d'Harvey Dent et de Batman, à purger la police de ses éléments corrompus. Une relation de confiance s'est installée entre le policier, devenu commissaire, et le justicier masqué. L'infatigable activité de Gordon lui a coûté cher. 0utre les nombreux ennemis qu'il s'est fait, aussi bien parmi ses collègues que les criminels, il y a également laissé son mariage, The Joker s'est attaqué à sa fille, et son fils est devenu un tueur incroyablement malveillant.",
-					"en": "Determined to remain pure in a corrupted police force, James Gordon quickly makes enemies among hos c0lleagues. However, he managed, with the help of Harvey Dent and Batman, to rid the police of its worst elements and to take back control. A relationship of trust was established over time between this police officer who became commissioner and the masked crusoder. Gordon's tireless dedication cost him dearly. Besides the many enemies he made, both amonq his colleagues and among criminals, it also cost him his marriage. Worse yet, his daughter was attacked by The Joker and his son turned into a vicious killer."
+					"en": "Determined to remain pure in a corrupted police force, James Gordon quickly makes enemies among hos c0lleagues. However, he managed, with the help of Harvey Dent and Batman, to rid the police of its worst elements and to take back control. A relationship of trust was established over time between this police officer who became commissioner and the masked crusoder. Gordon's tireless dedication cost him dearly. Besides the many enemies he made, both among his colleagues and among criminals, it also cost him his marriage. Worse yet, his daughter was attacked by The Joker and his son turned into a vicious killer."
 					},
 					"ID": "James Gordon",
-					"size": {
-						"fr": "1,75 m",
-						"en": "5ft 7in"
-					},
-					"weight": {
-						"fr": "76 Kg",
-						"en": "167 lbs"
-					}
+					"size": "5ft 7in / 1,75 m",
+					"weight": "167 lbs / 76 Kg"
 				},
             "color": "blue",
             "total-gems": 9,
@@ -455,28 +419,16 @@
         },		
         {
             "id": "robin-drake",
-            "name": {
-                "fr": "ROBIN",
-                "en": "ROBIN"
-            },
-            "subtitle": {
-                "fr": "TIM DRAKE",
-                "en": "TIM DRAKE"
-            },
-           "back": {
+            "name": "ROBIN",
+            "subtitle": "TIM DRAKE",
+            "back": {
                 "text": {
                     "fr": "Tim Drake est un bon détective, il a découvert la véritable identité de Batman, mais c'est aussi le premier Robin à s'intéresser à l'informatique et à la programmation. Au début, Tlm se distingue aussi par sa vision des choses. Il ne se voit pas en Batman ou en justicier masqué adulte, il s'imagine être Robin seulement un temps, puis faire carrière dans les servires de renseignements. Des années plus tard, après la mort du père de Tim, Bruce Wayne l'adoptera dans sa famille. Les relations entre Bruce et Tim se compliqueront un peu avec le temps, Tim n'accceptant pas toujours les décisions les plus «martiales» de Batman.",
-					"en": "Tim Drake was a qood detective-so good he managed to deduce Batman's true identity. His excellent computer and hacking skills set him apart from other Robins. But the differences didn't end there. Despite being the third in a line of Robins, Tim never saw himself becoming the next Batman or as being a masked vigilante in adulthood. He dreamed of someday having a career in intelligence services. Years later, after the death of Tim's father, Bruce Wayne formally adopted him into the family. Over time, their relationship grew in complexity as Tim didn't always agree with Batman's violent methods."
+					"en": "Tim Drake was a good detective-so good he managed to deduce Batman's true identity. His excellent computer and hacking skills set him apart from other Robins. But the differences didn't end there. Despite being the third in a line of Robins, Tim never saw himself becoming the next Batman or as being a masked vigilante in adulthood. He dreamed of someday having a career in intelligence services. Years later, after the death of Tim's father, Bruce Wayne formally adopted him into the family. Over time, their relationship grew in complexity as Tim didn't always agree with Batman's violent methods."
 					},
 					"ID": "Timothy Drake",
-					"size": {
-						"fr": "1,67 m",
-						"en": "5ft 6in"
-					},
-					"weight": {
-						"fr": "59,4 Kg",
-						"en": "131 lbs"
-					}
+					"size": "5ft 6in / 1,67 m",
+					"weight": "131 lbs / 59,4 Kg"
 				},
             "color": "blue",
             "total-gems": 10,
@@ -581,28 +533,16 @@
          },		
         {
             "id": "robin-damian",
-            "name": {
-                "fr": "ROBIN",
-                "en": "ROBIN"
-            },
-            "subtitle": {
-                "fr": "DAMIAN WAYNE",
-                "en": "DAMIAN WAYNE"
-            },
+            "name": "ROBIN",
+            "subtitle": "DAMIAN WAYNE",
            "back": {
                 "text": {
                     "fr": "Qu'attendre d'un garçon élevé par la Ligue des Assassins ? Quand Talia Al Ghul, fille du plus grand terroriste du monde, met Damian dans les pattes de Bruce Wayne et lui annonce qu'il est leur fils, Batman est confronté à un sérieux problème. Car l'enfant est violent, expert dans bien des formes de combat et à peu près incontrôlable. Assumant à la fois l'héritage de sa mère et de son père, il défie Tim Drake et prend sa place. Mais peu à peu, Alfred et Batman parviennent à l'apprivoiser. Damian s'impose alors comme le Robin ultime : redoutable stratège, combattant implacable, il se destine à devenir Batman à son tour.",
-					"en": "What do you expect from a boy raised by the League of Assassins? When Talia Al Ghul, daughter of the biggest terrorist in the world, put Damian in Bruce Wayne's hands and announced that he is their son, Batman faced a serious problem. The child was violent, adept in many forms of combat, and almost uncontrollable. Inheriting the qualities of both his mother and his father, he defied Tim Drake and took his place. But qradually, Alfred and Batman managed ta tame him. Damian then imposed himself as the ultimate Robin: formidable strategist, implacable fighter, and destined to one day become Batman."
+					"en": "What do you expect from a boy raised by the League of Assassins? When Talia Al Ghul, daughter of the biggest terrorist in the world, put Damian in Bruce Wayne's hands and announced that he is their son, Batman faced a serious problem. The child was violent, adept in many forms of combat, and almost uncontrollable. Inheriting the qualities of both his mother and his father, he defied Tim Drake and took his place. But gradually, Alfred and Batman managed ta tame him. Damian then imposed himself as the ultimate Robin: formidable strategist, implacable fighter, and destined to one day become Batman."
 					},
 					"ID": "Damian Wayne",
-					"size": {
-						"fr": "4ft 6in",
-						"en": "1,37 m"
-					},
-					"weight": {
-						"fr": "38 Kg",
-						"en": "84 lbs"
-					}
+					"size": "4ft 6in / 1,37 m",
+					"weight": "84 lbs / 38 Kg"
 				},
             "color": "blue",
             "total-gems": 10,
@@ -705,24 +645,15 @@
         },		
         {
             "id": "catwoman",
-            "name": {
-                "fr": "CATWOMAN",
-                "en": "CATWOMAN"
-            },
-           "back": {
+            "name": "CATWOMAN",
+            "back": {
                 "text": {
-                    "fr": "Selina Kyle a défini sa personnalité autour du symbole du chat, là ou Bruce Wayne s'est inspiré de la chauve souris. Naturellement agile, c'est une extraordinaire cambrioleuse dont le costume est équipé de griffes, pratiques aussi bien pour escalader les gratte-ciels,que pour affronter un adversaire. La relation particulière entre Batman et Catwoman est ambigüe. Ils s'opposent régulièrement, sans que leurs affrontements ne tournent en la faveur de l'un ou de l'autre. Ces oppositions sont devenues des jeux de séduction. Catwoman est le grand amour de Batman et elle finira d'ailleurs par connaître sa double identité.",
+                    "fr": "Selina Kyle a défini sa personnalité autour du symbole du chat, là ou Bruce Wayne s'est inspiré de la chauve souris. Naturellement agile, c'est une extraordinaire cambrioleuse dont le costume est équipé de griffes, pratiques aussi bien pour escalader les gratte-ciels, que pour affronter un adversaire. La relation particulière entre Batman et Catwoman est ambigüe. Ils s'opposent régulièrement, sans que leurs affrontements ne tournent en la faveur de l'un ou de l'autre. Ces oppositions sont devenues des jeux de séduction. Catwoman est le grand amour de Batman et elle finira d'ailleurs par connaître sa double identité.",
 					"en": "Just as Bruce chose the bat as his totem, Selina Kyle chose the cat. She and the Dark Knight have always had a volatile relationship. Being a master thief certainly puts her at odds with the world's greatest detective. And yet most times they meet, it is not only punches and kicks they exchange. Perhaps it is destiny that keeps these two in constant contact. Or perhaps it is their two extremely complex personalities-an attraction born of deeply buried desperation-for who else would these loners find on the dark streets of Gotham City?"
 					},
 					"ID": "Selina Kyle",
-					"size": {
-						"fr": "1,70 m",
-						"en": "5ft 7in"
-					},
-					"weight": {
-						"fr": "58 Kg",
-						"en": "128 lbs"
-					}
+					"size": "5ft 7in / 1,70 m",
+					"weight": "128 lbs / 58 Kg"
 				},
             "color": "blue",
             "total-gems": 10,
@@ -814,24 +745,15 @@
         },		
         {
             "id": "batwoman",
-            "name": {
-                "fr": "BATWOMAN",
-                "en": "BATWOMAN"
-            },
+            "name": "BATWOMAN",
             "back": {
                 "text": {
                     "fr": "Cette héroïne rousse, drapée dans un costume rouge et noir, est la cousine de Bruce Wayne. Victime dans son enfance d'un enlèvement coûtant la vie à sa mère, Kate Kane a suivi une stricte éducation militaire sous la direction de son père, qui est fasciné par les méthodes de Batman. Batwoman s'impose parmi les justiciers de Gotham City. Attirante, elle ne se laisse jamais séduire par les hommes. Elle est au contraire tour à tour l'amante de l'agent Renee Montoya puis de la commissaire Maggie Sawyer. Quand Bruce Wayne lui fait assez confiance pour lui révéler sa propre identité, elle lui avoue l'avoir deviné depuis des années.",
-					"en": "Batwoman first appeared in Detective Comics #233. Dressed in red and yellow, Kathy Kane was merely playinq the role of a hero in order to impress Batman. In 2006, a more modern and capable Batwoman debuted. This time it was Bruce Wayne's cousin, Kate Kane, dressed in a suit of red and black. Kate had a traumatic childhood which involved a kidnapping and the loss of her mother. Since that time, she endured a strict upbringing and military-level education, touqht by her father-a man fascinated by Batman's crusade against crime. This new Batwoman quickly established herself among the most feared of Gotham City's vigilantes."
+					"en": "Batwoman first appeared in Detective Comics #233. Dressed in red and yellow, Kathy Kane was merely playing the role of a hero in order to impress Batman. In 2006, a more modern and capable Batwoman debuted. This time it was Bruce Wayne's cousin, Kate Kane, dressed in a suit of red and black. Kate had a traumatic childhood which involved a kidnapping and the loss of her mother. Since that time, she endured a strict upbringing and military-level education, tought by her father-a man fascinated by Batman's crusade against crime. This new Batwoman quickly established herself among the most feared of Gotham City's vigilantes."
 					},
 					"ID": "Kate Kane",
-					"size": {
-						"fr": "1,80 m",
-						"en": "5ft 11in"
-					},
-					"weight": {
-						"fr": "64 Kg",
-						"en": "141 lbs"
-					}
+					"size": "5ft 11in / 1,80 m",
+					"weight": "141 lbs / 64 Kg"
 				},
             "color": "blue",
             "total-gems": 10,
@@ -923,28 +845,16 @@
         },		
         {
             "id": "orphan",
-            "name": {
-                "fr": "ORPHAN",
-                "en": "ORPHAN"
-            },
-            "subtitle": {
-                "fr": "CASSANDRA CAIN",
-                "en": "CASSANDRA CAIN"
-            },
-           "back": {
+            "name": "ORPHAN",
+            "subtitle": "CASSANDRA CAIN",
+            "back": {
                 "text": {
                     "fr": "David Cain voulait créer l'assassin ultime et éleva dans ce but Cassandra, la fille qu'il a eue avec Sandra Wu-San. Il se livra à une expérience abominable sur elle : dès son plus jeune âge le seul langage qu'il lui apprit fut celui de la violence et du combat. Elle lit depuis lors instinctivement les attitudes corporelles, ce qui en fait une guerrière experte qu'il est très difficile de surprendre. Mais Cassandra, devenue à son tour Orphan, n'était pas du genre à se laisser manipuler et, quoique capable de mettre Batman en difficulté au corps-à-corps, c'est dans le camp de la chauve-souris qu'elle finira par se ranger.",
-					"en": "David Cain wanted to create the ultimate assassin and raised his daughter Cassandra to become a deadly weapon. It was an abominable experiment that he conducted on her: from her earlier childhood the only language she learned was violence and combat. She was able to read her opponents' physical aptitudes, making her an expert warrior nearly impossible to surprise. But Cassandra, who became Orphan, was not one to be manipulated and, even though she was able to match Batman in hand-to-hand combat, she eventually allied with the Dark Kniqht."
+					"en": "David Cain wanted to create the ultimate assassin and raised his daughter Cassandra to become a deadly weapon. It was an abominable experiment that he conducted on her: from her earlier childhood the only language she learned was violence and combat. She was able to read her opponents' physical aptitudes, making her an expert warrior nearly impossible to surprise. But Cassandra, who became Orphan, was not one to be manipulated and, even though she was able to match Batman in hand-to-hand combat, she eventually allied with the Dark Knight."
 					},
 					"ID": "Cassandra Cain",
-					"size": {
-						"fr": "1,65 m",
-						"en": "5ft 5in"
-					},
-					"weight": {
-						"fr": "50 Kg",
-						"en": "110 lbs"
-					}
+					"size": "5ft 5in / 1,65 m",
+					"weight": "110 lbs / 50 Kg"
 				},
             "color": "blue",
             "total-gems": 8,
@@ -1043,24 +953,15 @@
         },		
         {
             "id": "montoya",
-            "name": {
-                "fr": "RENEE MONTOYA",
-                "en": "RENEE MONTOYA"
-            },
+            "name": "RENEE MONTOYA",
             "back": {
                 "text": {
-                    "fr": "Renee Montoya s'est enqagée tôt dans lo police. Aux côtés de son coéquipier Harvey Bullock, elle fut confrontée de près à la criminalité de Gotham City. Elle intégra l'Unité des Crimes Majeurs, spécialisée dans les criminels costumés. Mais elle finit par attirer l'attention de Two-Face, qui s'entiche d'elle. Il tenta en vain de détruire sa vie pour la pousser vers la marqinalité et donc vers lui. Confrontée à lo corruption, Mont0ya ne se sentait plus en confiance dans son unité et quitta la police. Contactée par le justicier nommé La Question, elle l'assistât et finit même par le remplacer, adoptant son masque sans visage.",
-					"en": "Not wanting to spend her li1e working at her parents' qrocery store, Renee Montoya enlisted in the GCPD at an early age. After cutting her teeth in smaller units, she joined Major Crimes-a unit focused on the fight aqainst costumed thugs. Soon she became one of the pillars of the team, but this success would not last. Scarred from her run-ins with the villain Two-Face and disillusioned by police corruption, she eventually left the force and was contacted by the costumed viqilante called The Question. First, she became his assistant and later replaced him, adopting his faceless mask."
+                    "fr": "Renee Montoya s'est engagée tôt dans lo police. Aux côtés de son coéquipier Harvey Bullock, elle fut confrontée de près à la criminalité de Gotham City. Elle intégra l'Unité des Crimes Majeurs, spécialisée dans les criminels costumés. Mais elle finit par attirer l'attention de Two-Face, qui s'entiche d'elle. Il tenta en vain de détruire sa vie pour la pousser vers la marginalité et donc vers lui. Confrontée à lo corruption, Mont0ya ne se sentait plus en confiance dans son unité et quitta la police. Contactée par le justicier nommé La Question, elle l'assistât et finit même par le remplacer, adoptant son masque sans visage.",
+					"en": "Not wanting to spend her li1e working at her parents' grocery store, Renee Montoya enlisted in the GCPD at an early age. After cutting her teeth in smaller units, she joined Major Crimes-a unit focused on the fight against costumed thugs. Soon she became one of the pillars of the team, but this success would not last. Scarred from her run-ins with the villain Two-Face and disillusioned by police corruption, she eventually left the force and was contacted by the costumed vigilante called The Question. First, she became his assistant and later replaced him, adopting his faceless mask."
 					},
 					"ID": "Renee Montoya",
-					"size": {
-						"fr": "1,73 m",
-						"en": "5ft 8in"
-					},
-					"weight": {
-						"fr": "65,5 Kg",
-						"en": "143 lbs"
-					}
+					"size": "5ft 8in / 1,73 m",
+					"weight": "143 lbs / 65,5 Kg"
 				},
             "color": "blue",
             "total-gems": 9,
@@ -1171,24 +1072,15 @@
         },	
         {
             "id": "bullock",
-            "name": {
-                "fr": "HARVEY BULLOCK",
-                "en": "HARVEY BULLOCK"
-            },
+            "name": "HARVEY BULLOCK",
             "back": {
                 "text": {
-                    "fr": "Harvey Bullock est un flic à l'ancienne. Sa silhouette massive peut sembler pataude, mais il sait se servir de ses poings et de son arme de service. C'est un enquêteur peu subtil mais efficare dans son genre. Très méfiant quant aux justiciers masqués du genre de Batman, il préfère le travail de policier classique, avec parfois des entorses au rèqlement. Les circonstances peuvent l'amener à solliciter l'aide de Batman. Renee Montoya devient son équipière lors de sa nomination à l'Unité des Crimes Majeurs. Il dut démissionner suite à un excès de zèle. Il devint détective privé, mais fut réintégré quelque temps plus tard.",
+                    "fr": "Harvey Bullock est un flic à l'ancienne. Sa silhouette massive peut sembler pataude, mais il sait se servir de ses poings et de son arme de service. C'est un enquêteur peu subtil mais efficare dans son genre. Très méfiant quant aux justiciers masqués du genre de Batman, il préfère le travail de policier classique, avec parfois des entorses au règlement. Les circonstances peuvent l'amener à solliciter l'aide de Batman. Renee Montoya devient son équipière lors de sa nomination à l'Unité des Crimes Majeurs. Il dut démissionner suite à un excès de zèle. Il devint détective privé, mais fut réintégré quelque temps plus tard.",
 					"en": "Harvey Bullock is an old-fashioned cop and doesn't always do things 'by the book'. Ever-suspicious of the masked vigilantes inhabiting Gotham City, he prefers and advocates for the classic work of a classic cop. But when Commissioner Gordon was kidnapped, Harvey Bullock enlisted Batman's help and even gained a small measure of respect for the costumed hero. Though he may not always look or act the part, Harvey Bullock is an accomplished investigator. Don't be fooled by his portly frame and clumsy demeanor; the man knows how to use his fists and his service weapon."
 					},
 					"ID": "Harvey Bullock",
-					"size": {
-						"fr": "1,78 m",
-						"en": "5ft 10in"
-					},
-					"weight": {
-						"fr": "112 Kg",
-						"en": "247 lbs"
-					}
+					"size": "5ft 10in / 1,78 m",
+					"weight": "247 lbs / 112 Kg"
 				},
             "color": "blue",
             "total-gems": 9,
@@ -1277,24 +1169,15 @@
         },		
         {
             "id": "black-canary",
-            "name": {
-                "fr": "BLACK CANARY",
-                "en": "BLACK CANARY"
-            },
+            "name": "BLACK CANARY",
             "back": {
                 "text": {
-                    "fr": "Dinah Lance est la deuxième Black Canary. Ce nom était porté par sa mère, qui n'avait comme atout qu'une bonne connaissance des arts martiaux. Dinah a repris à son compte cette identité et est à présent l'une des meilleures combattantes de l'univers DC. Elle possède un superpouvoir qu'elle doit à une malédiction. Il s'aqit d'un \"cri sonique\", souvent qualifié de \"cri du Canary\", qui lui permet de crier à de hautes fréquences, pouvant désorienter ses adversaires, voire les repousser. Elle a été recrutée par Barbara Gordon pour former les Birds of Prey. C'est la compagne de Green Arrow. Elle fait partie de la Justice League.",
-					"en": "Dinah Lance took over the role of Black Canary from her mother, a master martial artist. Not only did she live up to her mother's legacy, she also became one of the more skilled fighters in the DC universe. This was due, in part, to an enhancement her mother never had: the Canary Cry. This allowed her to scream at such a high frequency that her opponents became disoriented or even physically pushed away. Thouqh this modern Black Canary is famous as a companion to Green Arrow, she has also fought alonqside Batman and with Barbara Gordon on the team known as the Birds of Prey."
+                    "fr": "Dinah Lance est la deuxième Black Canary. Ce nom était porté par sa mère, qui n'avait comme atout qu'une bonne connaissance des arts martiaux. Dinah a repris à son compte cette identité et est à présent l'une des meilleures combattantes de l'univers DC. Elle possède un superpouvoir qu'elle doit à une malédiction. Il s'agit d'un \"cri sonique\", souvent qualifié de \"cri du Canary\", qui lui permet de crier à de hautes fréquences, pouvant désorienter ses adversaires, voire les repousser. Elle a été recrutée par Barbara Gordon pour former les Birds of Prey. C'est la compagne de Green Arrow. Elle fait partie de la Justice League.",
+					"en": "Dinah Lance took over the role of Black Canary from her mother, a master martial artist. Not only did she live up to her mother's legacy, she also became one of the more skilled fighters in the DC universe. This was due, in part, to an enhancement her mother never had: the Canary Cry. This allowed her to scream at such a high frequency that her opponents became disoriented or even physically pushed away. Though this modern Black Canary is famous as a companion to Green Arrow, she has also fought alongside Batman and with Barbara Gordon on the team known as the Birds of Prey."
 					},
 					"ID": "Dinah Drake Lance",
-					"size": {
-						"fr": "1,63 m",
-						"en": "5ft 4in"
-					},
-					"weight": {
-						"fr": "52 Kg",
-						"en": "115 lbs"
-					}
+					"size": "5ft 4in / 1,63 m",
+					"weight": "115 lbs / 52 Kg"
 				},
             "color": "blue",
             "total-gems": 10,
@@ -1392,24 +1275,15 @@
         },		
         {
             "id": "bluebird",
-            "name": {
-                "fr": "BLUE BIRD",
-                "en": "BLUE BIRD"
-            },
+            "name": "BLUE BIRD",
 			"back": {
                 "text": {
                     "fr": "Après que Batman les a sauvés elle et son frère, la jeune Harper Row réalise à quel point le héros est nécessaire à Gotham City. Harper est une bricoleuse surdouée et experte en électronique au point d'arriver à améliorer les bat-gadgets de Batman. Elle vient en aide plusieurs fois au justicier malgré son refus. Mais au fil du temps, Batman va apprendre à lui faire confiance. C'est à ce moment-là qu'elle adopte le nom de Bluebird et porte le costume. Comme la plupart des alliés de Batman, Bluebird est athlétique. Elle a une excellente connaissance des bas-fonds de Gotham City et s'entend très bien avec Orphan et Spoiler.",
-					"en": "Harper Row had always been gifted. She was a natural tinkerer-adept at fixing and manipulating electronics and gadgets. She was also extremely agile and physically capable and wanted to put these talents to use. It was only after Harper and her brother were rescued by the Dark Knight that she came to truly understand Batman's importance and asked to join the fight. At first Batman refused to put her in harm's way, but eventually Harper became the masked hero known as Bluebird. Like most of Batman's allies, she was athletic, smart, and possessed thorouqh knowledqe of Gotham City's slums and the denizens who haunted them."
+					"en": "Harper Row had always been gifted. She was a natural tinkerer-adept at fixing and manipulating electronics and gadgets. She was also extremely agile and physically capable and wanted to put these talents to use. It was only after Harper and her brother were rescued by the Dark Knight that she came to truly understand Batman's importance and asked to join the fight. At first Batman refused to put her in harm's way, but eventually Harper became the masked hero known as Bluebird. Like most of Batman's allies, she was athletic, smart, and possessed thorough knowledge of Gotham City's slums and the denizens who haunted them."
 					},
 					"ID": "Harper Row",
-					"size": {
-						"fr": "'1,65 m",
-						"en": "5ft 5in"
-					},
-					"weight": {
-						"fr": "51 Kg",
-						"en": "112 lbs"
-					}
+					"size": "5ft 5in / 1,65 m",
+					"weight": "112 lbs / 51 Kg"
 				},
             "color": "blue",
             "total-gems": 10,
@@ -1514,28 +1388,16 @@
         },		
         {
             "id": "red-hood-todd",
-            "name": {
-                "fr": "RED HOOD",
-                "en": "RED HOOD"
-            },
-            "subtitle": {
-                "fr": "JASON TODD",
-                "en": "JASON TODD"
-            },
-           "back": {
+            "name": "RED HOOD",
+            "subtitle": "JASON TODD",
+            "back": {
                 "text": {
-                    "fr": "Jason Todd fut le deuxième Robin. Tué lors d'une mission contre le Joker, il a été ramené à la vie grâce à un puits de Lazare. Rendu plus fort mais aussi plus instable, il a pris le nom de Red Hood en référence au passé du Joker. C'était une manière de s'émanciper du Bat-symbole omniprésent chez les alliés de Batman. Car Red Hood en voulait à Batman de l'avoir laissé mourir. Leurs relations se sont améliorées, mais Red Hood conserve des méthodes plus expéditives que Batman. C'est l'un de ses seuls alliés à faire usage des armes à feu. Red Hood a lo qâchette facile et n'hésite pas à tuer ses adversaires s'il le juqe utile.",
-					"en": "Jason Todd was the second Robin, replacing Dick Grayson as Batman's accomplice. He was more free-spirited than Dick and less obedient. When Jason was killed bv The Joker, Batman blamed himself for years, but that wasnt the end of Jason's story. He was mystically resurrected by a Lazarus pit and, though he came back stronger, he was even more erratic and less trustworthy than before. For a time, he adopted the disguise of the Red Hood, formerly worn by the Joker, to disassociate himself from the Bat-Family. Eventually he realigned himself with Batman, even thouqh he favored using firearms over Batman's non-lethal force."
+                    "fr": "Jason Todd fut le deuxième Robin. Tué lors d'une mission contre le Joker, il a été ramené à la vie grâce à un puits de Lazare. Rendu plus fort mais aussi plus instable, il a pris le nom de Red Hood en référence au passé du Joker. C'était une manière de s'émanciper du Bat-symbole omniprésent chez les alliés de Batman. Car Red Hood en voulait à Batman de l'avoir laissé mourir. Leurs relations se sont améliorées, mais Red Hood conserve des méthodes plus expéditives que Batman. C'est l'un de ses seuls alliés à faire usage des armes à feu. Red Hood a la gâchette facile et n'hésite pas à tuer ses adversaires s'il le juge utile.",
+					"en": "Jason Todd was the second Robin, replacing Dick Grayson as Batman's accomplice. He was more free-spirited than Dick and less obedient. When Jason was killed bv The Joker, Batman blamed himself for years, but that wasnt the end of Jason's story. He was mystically resurrected by a Lazarus pit and, though he came back stronger, he was even more erratic and less trustworthy than before. For a time, he adopted the disguise of the Red Hood, formerly worn by the Joker, to disassociate himself from the Bat-Family. Eventually he realigned himself with Batman, even though he favored using firearms over Batman's non-lethal force."
 					},
 					"ID": "Jason Todd",
-					"size": {
-						"fr": "1,83 m",
-						"en": "6ft"
-					},
-					"weight": {
-						"fr": "82 Kg",
-						"en": "181 lbs"
-					}
+					"size": "6ft / 1,83 m",
+					"weight": "181 lbs / 82 Kg"
 				},
             "color": "blue",
             "total-gems": 10,
@@ -1624,28 +1486,16 @@
         },		
         {
             "id": "catwoman-halloween",
-            "name": {
-                "fr": "CATWOMAN",
-                "en": "CATWOMAN"
-            },
-            "subtitle": {
-                "fr": "THE LONG HALLOWEEN",
-                "en": "THE LONG HALLOWEEN"
-            },
-           "back": {
+            "name": "CATWOMAN",
+            "subtitle": "THE LONG HALLOWEEN",
+            "back": {
                 "text": {
-                    "fr": "Parmi les multiples versions de Catwoman, celle du scénariste J. Loeb et du dessinateur T. Sale correspond à un moment précis de la vie du personnaqe. Les histoires racontées par le tandem forment un tout qui a lieu peu après les débuts de Batman. Bruce Wayne et Selina Kyle se sont déjà rapprochés mais une suite d'événements va les éloigner. Batman échoue à sauver le procureur Harvey Dent qui, défiguré, devient Two-Face. Ce fut un coup dur pour Bruce, d'autant plus qu'il fut victime du gaz de Scarecrow. Batman perdit alors confiance en lui-même et les autres et Catwoman devint un renfort important ainsi qu'une conscience.",
-					"en": "Bruce Wayne and Selina Kyle had already met, but the series of events told in Batman: The Long Halloween, Batman: Dark Victory, and Catwoman: When in Rome, served to develop their relationship. At that time, Batman was unable to rescue Attorney Harvey Dent. After suffering a brutal disfigurement, the promising lawyer became the villain called Two-Face. This was tough on Bruce and made worse after suffering an attack involving Scarecrow's qas. Batman lost confidence in himself and in others. It was then that he turned to Catwoman, who both supported and served as a conscience for a Batman that was losing control."
+                    "fr": "Parmi les multiples versions de Catwoman, celle du scénariste J. Loeb et du dessinateur T. Sale correspond à un moment précis de la vie du personnage. Les histoires racontées par le tandem forment un tout qui a lieu peu après les débuts de Batman. Bruce Wayne et Selina Kyle se sont déjà rapprochés mais une suite d'événements va les éloigner. Batman échoue à sauver le procureur Harvey Dent qui, défiguré, devient Two-Face. Ce fut un coup dur pour Bruce, d'autant plus qu'il fut victime du gaz de Scarecrow. Batman perdit alors confiance en lui-même et les autres et Catwoman devint un renfort important ainsi qu'une conscience.",
+					"en": "Bruce Wayne and Selina Kyle had already met, but the series of events told in Batman: The Long Halloween, Batman: Dark Victory, and Catwoman: When in Rome, served to develop their relationship. At that time, Batman was unable to rescue Attorney Harvey Dent. After suffering a brutal disfigurement, the promising lawyer became the villain called Two-Face. This was tough on Bruce and made worse after suffering an attack involving Scarecrow's gas. Batman lost confidence in himself and in others. It was then that he turned to Catwoman, who both supported and served as a conscience for a Batman that was losing control."
 					},
 					"ID": "Selina Kyle",
-					"size": {
-						"fr": "1,70 m",
-						"en": "5ft 7in"
-					},
-					"weight": {
-						"fr": "58 Kg",
-						"en": "128 lbs"
-					}
+					"size": "5ft 7in / 1,70 m",
+					"weight": "128 lbs / 58 Kg"
 				},
             "color": "blue",
             "total-gems": 9,
@@ -1734,28 +1584,16 @@
         },		
         {
             "id": "batman-dkr",
-            "name": {
-                "fr": "BATMAN",
-                "en": "BATMAN"
-            },
-            "subtitle": {
-                "fr": "THE DARK KNIGHT RETURNS",
-                "en": "THE DARK KNIGHT RETURNS"
-            },
-           "back": {
+            "name": "BATMAN",
+            "subtitle": "THE DARK KNIGHT RETURNS",
+            "back": {
                 "text": {
-                    "fr": "Cette BD phare des années 80 de Frank Miller décrit une Amérique où règnent l'insécurité et l'utraviolence. Les superhéros sont devenus des hors-la-loi, sauf Superman qui travaille pour le gouvernement. Batman a pris sa retraite depuis lonqtemps. Il n'est plus qu'un Bruce Wayne vieillissant, qui n'est plus en état de se livrer à ses anciennes aventures. À cause des troubles provoqués par le gang des mutants, il décide de reprendre son costume pour ramener l'ordre à Gotham City, il sera déclaré hors-la-loi et affrontera le Joker prêt à tout ainsi que Superman qui a pour mission de le faire plier.",
-					"en": "ln his classic comic book from the 80s, Frank Miller envisions a dystopian future where the US becomes a country of ultraviolence. Superheroes are now outlaws except for Superman who follows government orders. As for Batman, he has been retired for decades, prompted by Robin's murder at the hands of The Joker. But one day, Bruce is mugged in the street and decides that it is time to once more don the mantle of Batman and restore order to Gotham City. Even if he has to fiqht the gang known as the Mutants, become an outlaw, battle The Joker, and facedown a god-1ike Supeman, nothinq will stand in his way."
+                    "fr": "Cette BD phare des années 80 de Frank Miller décrit une Amérique où règnent l'insécurité et l'utraviolence. Les superhéros sont devenus des hors-la-loi, sauf Superman qui travaille pour le gouvernement. Batman a pris sa retraite depuis longtemps. Il n'est plus qu'un Bruce Wayne vieillissant, qui n'est plus en état de se livrer à ses anciennes aventures. À cause des troubles provoqués par le gang des mutants, il décide de reprendre son costume pour ramener l'ordre à Gotham City, il sera déclaré hors-la-loi et affrontera le Joker prêt à tout ainsi que Superman qui a pour mission de le faire plier.",
+					"en": "ln his classic comic book from the 80s, Frank Miller envisions a dystopian future where the US becomes a country of ultraviolence. Superheroes are now outlaws except for Superman who follows government orders. As for Batman, he has been retired for decades, prompted by Robin's murder at the hands of The Joker. But one day, Bruce is mugged in the street and decides that it is time to once more don the mantle of Batman and restore order to Gotham City. Even if he has to fight the gang known as the Mutants, become an outlaw, battle The Joker, and facedown a god-1ike Supeman, nothing will stand in his way."
 					},
 					"ID": "Bruce Wayne",
-					"size": {
-						"fr": "1,87 m",
-						"en": "6ft 2in"
-					},
-					"weight": {
-						"fr": "95,25 Kg",
-						"en": "210 lbs"
-					}
+					"size": "6ft 2in / 1,87 m",
+					"weight": "210 lbs / 95,25 Kg"
 				},
             "color": "blue",
             "total-gems": 10,
@@ -1862,24 +1700,15 @@
         },		
         {
             "id": "katana",
-            "name": {
-                "fr": "KATANA",
-                "en": "KATANA"
-            },
+            "name": "KATANA",
             "back": {
                 "text": {
-                    "fr": "Yamashiro Tatsu est une guerrière experte en arts martiaux et dans le maniement du katana, ce qui lui vaut son nam de code. Cette lame magique peut trancher les matériaux réputés indestructibles et absorber l'âme de ses adversaires. Katana a intégré différents qroupes : les Outsiders, 1a Ligue de Justice, les Birds of Prey. Chose plus problématique pour Batman, Katana est devenue, ces dernières années, membre de la Suicide Squad. Ce groupe composé des pires criminels de l'univers DC, aux ordres du gouvernement, est susceptible d'être envoyé combattre Batman. À qui Katana sera-t-elle plus fidèle ?",
-					"en": "Tatsu Yamashiro is a fiqhter well-versed ln martial arts and an expert with the katana, hence her code name. Her unusual blade can slice through just about anythinq, even materials deemed to be indestructible, and may even absorb the souls of her opponents. First introduced as a member of the Outsiders, she has faught for the Justice League, the Birds of Prey, and to Batman's detriment, the Suicide Squad. This group, comprised of the cruelest villains in the DC Universe, has been sent to fight Batman by order of the Government. But to whom is Katana most loyal?"
+                    "fr": "Yamashiro Tatsu est une guerrière experte en arts martiaux et dans le maniement du katana, ce qui lui vaut son nam de code. Cette lame magique peut trancher les matériaux réputés indestructibles et absorber l'âme de ses adversaires. Katana a intégré différents groupes : les Outsiders, 1a Ligue de Justice, les Birds of Prey. Chose plus problématique pour Batman, Katana est devenue, ces dernières années, membre de la Suicide Squad. Ce groupe composé des pires criminels de l'univers DC, aux ordres du gouvernement, est susceptible d'être envoyé combattre Batman. À qui Katana sera-t-elle plus fidèle ?",
+					"en": "Tatsu Yamashiro is a fighter well-versed ln martial arts and an expert with the katana, hence her code name. Her unusual blade can slice through just about anything, even materials deemed to be indestructible, and may even absorb the souls of her opponents. First introduced as a member of the Outsiders, she has faught for the Justice League, the Birds of Prey, and to Batman's detriment, the Suicide Squad. This group, comprised of the cruelest villains in the DC Universe, has been sent to fight Batman by order of the Government. But to whom is Katana most loyal?"
 					},
 					"ID": "Tatsu Yamashiro",
-					"size": {
-						"fr": "1,57 m",
-						"en": "5ft 2in"
-					},
-					"weight": {
-						"fr": "43,5 Kg",
-						"en": "95 lbs"
-					}
+					"size": "5ft 2in / 1,57 m",
+					"weight": "95 lbs / 43,5 Kg"
 				},
             "color": "blue",
             "total-gems": 10,
@@ -1964,28 +1793,16 @@
         },
         {
             "id": "batman-zero",
-            "name": {
-                "fr": "BATMAN",
-                "en": "BATMAN"
-            },
-            "subtitle": {
-                "fr": "ZERO YEAR",
-                "en": "ZERO YEAR"
-            },
-           "back": {
+            "name": "BATMAN",
+            "subtitle": "ZERO YEAR",
+            "back": {
                 "text": {
                     "fr": "L'An Zéro correspond à la période où Bruce Wayne débute sous le masque de Batman. C'est durant cette période que Gotham City, après être frappée par une terrible inondation, tombe sous le contrôle d'Edward Nigma. Sous cette véritable dictature, Batman doit alors devenir un véritable résistant pour libérer une Gotham City à l'abandon où la végétation a repris ses droits. Sans son équipement habituel, il opte plutôt pour une arbalète. C'est toujours à cette même époque que le premier Red Hood chuta dans une cuve de produits chimiques et devint le Joker, ainsi qu'a eu lieu le premier affrontement contre le terrible Docteur Death.",
 					"en": "Zero Year was the period when Bruce Wayne donned the mask and became Batman. He was less comfortable, less aware of his own methods, and not quite the indomitable hero he'd later become. Zero Year also refers to a lost time in Gotham City's history after a devastating flood. The city was weakened and vulnerable and for several months fell under the control of The Riddler. Forced to live on the fringes of this dictatorship, Batman was without his usual high-tech equipment and adopted more rudimentary tools of the trade to free the city from the clutches of this eccentric madman."
 					},
 					"ID": "Bruce Wayne",
-					"size": {
-						"fr": "1,87 m",
-						"en": "6ft 2in"
-					},
-					"weight": {
-						"fr": "95,25 Kg",
-						"en": "210 lbs"
-					}
+					"size": "6ft 2in / 1,87 m",
+					"weight": "210 lbs / 95,25 Kg"
 				},
             "color": "blue",
             "total-gems": 9,
@@ -2087,28 +1904,16 @@
         },
         {
             "id": "batman-100",
-            "name": {
-                "fr": "BATMAN",
-                "en": "BATMAN"
-            },
-            "subtitle": {
-                "fr": "YEAR 100",
-                "en": "YEAR 100"
-            },
-           "back": {
+            "name": "BATMAN",
+            "subtitle": "YEAR 100",
+            "back": {
                 "text": {
                     "fr": "Cent ans plus tard. Qui est ce terroriste masqué portant le costume d'une légende urbaine oubliée ? Et est-ce bien un terroriste ? Le père et prédécesseur du policier Commissioner Gordon en savait beaucoup sur ce mystérieux personnage. Mais les temps ont changé. Entre les bases de données globales et les agents fédéraux télépathes, il est impossible qu'un homme échappe au fichage généralisé. Tout comme un justicier âgé de plus d'un siècle, pourtant, il court encore sur les toits et hante les rues de Gotham City à la recherche d'indices. Malgré la traque des fédéraux, Batman mettra-t'il à jour le sinistre complot sur lequel il enquête ?",
 					"en": "ln an alternate future, Gotham City became a police state. All citizens were tracked, and with telepathic government agents in the mix, no data was private. Along came an urban legend-one who emulated the look and methods of a hero from the past. But in this age, the one who assumed the mantle of the Batman wos considered a terrorist by the media. Not only did this mysterious outlaw elude a sophisticated and supernatural tracking system, he also managed to benefit from police networks and government data. After a hundred years, could the Dark Knight have somehow returned?"
 					},
 					"ID": "Bruce Wayne",
-					"size": {
-						"fr": "1,87 m",
-						"en": "6ft 2in"
-					},
-					"weight": {
-						"fr": "95,25 Kg",
-						"en": "210 lbs"
-					}
+					"size": "6ft 2in / 1,87 m",
+					"weight": "210 lbs / 95,25 Kg"
 				},
             "color": "blue",
             "total-gems": 11,
@@ -2205,24 +2010,15 @@
         },
         {
             "id": "duke",
-            "name": {
-                "fr": "DUKE",
-                "en": "DUKE"
-            },
+            "name": "DUKE",
             "back": {
                 "text": {
                     "fr": "Le jeune Duke Thomas a été un allié de Batman lors de l'An Zéro. Il a ensuite participé, sans son aval, à la création des Robin's gang. Lorsque Batman lui propose de devenir son assistant, il décide de faire les choses à sa manière et devient Signal et non un autre Robin. Duke profite alors de l'entraînement prodigué par Batman. Toutefois, il possède des super-pouvoirs qui reposent sur sa perception de la lumière. Il est capable de percevoir certaines formes d'énergie. Il peut rembobiner la lumière et voir ce qui s'est produit quelques heures plus tôt dans un lieu. Une aptitude bien pratique pour mener des enquetes.",
-					"en": "During the events of Zero Year, Bruce Wayne really needed a friend. The city had been taken over by The Riddler and Batman was living on the frinqe. Duke Thomas sheltered Bruce during this time of great turmoil, and though their relationship was somewhat tumultuous, they eventually joined forces in their fight against crime. Duke followed a strict training regime imposed by Batman and infused his own unique abilities into the mix, such as controlling liqht and even time itself."
+					"en": "During the events of Zero Year, Bruce Wayne really needed a friend. The city had been taken over by The Riddler and Batman was living on the fringe. Duke Thomas sheltered Bruce during this time of great turmoil, and though their relationship was somewhat tumultuous, they eventually joined forces in their fight against crime. Duke followed a strict training regime imposed by Batman and infused his own unique abilities into the mix, such as controlling light and even time itself."
 					},
 					"ID": "Duke Thomas",
-					"size": {
-						"fr": "1,86 m",
-						"en": "6ft 1in"
-					},
-					"weight": {
-						"fr": "58,5 Kg",
-						"en": "128 lbs"
-					}
+					"size": "6ft 1in / 1,86 m",
+					"weight": "128 lbs / 58,5 Kg"
 				},
             "color": "blue",
             "total-gems": 10,
@@ -2327,24 +2123,15 @@
         },
         {
             "id": "spoiler",
-            "name": {
-                "fr": "SPOILER",
-                "en": "SPOILER"
-            },
+            "name": "SPOILER",
             "back": {
                 "text": {
                     "fr": "Stéphanie Brown a découvert avec horreur que son père n'est autre que le criminel Cluemaster. Contrairement à lui, elle décide de lutter du côté du bien sous l'identité de Spoiler. Bonne enquêtrice, agile, elle utilise des gadgets basés sur la même technologie que son père. Batman s'est d'abord méfié de cette jeune fille masquée. Puis il a été suffisamment impressionné pour lui proposer de devenir à son tour Robin, sans pour autant lui révéler sa double identité. Si elle est généralement une alliée de Batmon, elle entretient un regard très critique envers lui et conserve donc son indépendance.",
 					"en": "Stephanie Brown discovered with horror that her fother was the criminal known as Cluemaster. Unlike him, she decided to fight on the side of good under the identity of Spoiler. A good investigator and agile, she used her gadgets based on the same technology as her father. Batman was initially suspicious of her, but became so impressed by her skills that he offered her the role of Robin (though he did not reveal his true identity). Although she is generally an ally to Batman, she is often critical of his methods and maintains her distance."
 					},
 					"ID": "Stephanie Brown",
-					"size": {
-						"fr": "1,65 m",
-						"en": "5ft 5in"
-					},
-					"weight": {
-						"fr": "50 Kg",
-						"en": "110 lbs"
-					}
+					"size": "5ft 5in / 1,65 m",
+					"weight": "110 lbs / 50 Kg"
 				},
             "color": "blue",
             "total-gems": 10,
@@ -2443,24 +2230,15 @@
         },
         {
             "id": "batwing",
-            "name": {
-                "fr": "BATWING",
-                "en": "BATWING"
-            },
+            "name": "BATWING",
             "back": {
                 "text": {
-                    "fr": "Désireux d'avoir un agent en Afrique, Batman a recruté le policier congolais David Zavimbe. Dans une armure volante bourrée de technologie, David est donc devenu Batwing. Après quelques années, il a repris une vie normale en rendant l'armure à Batman. Le rôle de Batwing est ensuite revenu à Luke Fox, expert en technologie, capable de mettre à jour lui-même son armure. Il améliore aussi les ordinateurs ou les véhicules de la «Bat-Family». Si à l'oriqine Batwing est fidèle à Batman, il a lié une amitié forte avec Batwoman et Azraël qui préfèrent une justice plus impitoyable. Batwing est donc parfois en désaccord avec Batman.",
-					"en": "Wishing to have an agent in Africa, Batmcn recruited Congolese cop David Zavimbe. Equipped with a flying armored suit, David became the hero known as Batwing. After only a few short years, though, he decided to go back to civilian life and returned the armor to Batman. The role of Batwing then passed to Luke Fox, a technoloqy expert who was able to updote the armor himself. He also improved the computers and vehicles used by the 'Bat-Family', Although Batwing was devoted to Batman, he also developed a strong friendship with Batwoman and Azrael both of whom, like him, preferred to deal out merciless justice."
+                    "fr": "Désireux d'avoir un agent en Afrique, Batman a recruté le policier congolais David Zavimbe. Dans une armure volante bourrée de technologie, David est donc devenu Batwing. Après quelques années, il a repris une vie normale en rendant l'armure à Batman. Le rôle de Batwing est ensuite revenu à Luke Fox, expert en technologie, capable de mettre à jour lui-même son armure. Il améliore aussi les ordinateurs ou les véhicules de la «Bat-Family». Si à l'origine Batwing est fidèle à Batman, il a lié une amitié forte avec Batwoman et Azraël qui préfèrent une justice plus impitoyable. Batwing est donc parfois en désaccord avec Batman.",
+					"en": "Wishing to have an agent in Africa, Batmcn recruited Congolese cop David Zavimbe. Equipped with a flying armored suit, David became the hero known as Batwing. After only a few short years, though, he decided to go back to civilian life and returned the armor to Batman. The role of Batwing then passed to Luke Fox, a technology expert who was able to updote the armor himself. He also improved the computers and vehicles used by the 'Bat-Family', Although Batwing was devoted to Batman, he also developed a strong friendship with Batwoman and Azrael both of whom, like him, preferred to deal out merciless justice."
 					},
 					"ID": "Lucas \"Luke\" Fox",
-					"size": {
-						"fr": "1,75 m",
-						"en": " 5ft 9in"
-					},
-					"weight": {
-						"fr": "77 Kg",
-						"en": "170 lbs"
-					}
+					"size": "5ft 9in / 1,75 m",
+					"weight": "170 lbs / 77 Kg"
 				},
             "color": "blue",
             "total-gems": 10,
@@ -2564,24 +2342,15 @@
         },
         {
             "id": "batcow",
-            "name": {
-                "fr": "BATCOW",
-                "en": "BATCOW"
-            },
+            "name": "BATCOW",
             "back": {
                 "text": {
                     "fr": "Enquêtant dans l'enceinte d'un abattoir, Batman et Robin (Damian Wayne) tombent sur une vache dont les taches sur le front forment un contour similaire au logo de Batman. Damian décide alors de garder l'animal. Batman accepte en partant du principe que la présence de l'animal peut influencer positivement son fils et le rendre moins cynique. Généralement, Bat-Cow se trouve à l'intérieur de la Batcave, où Alfred et Damian prennent soin d'elle. Mais il lui arrive de vivre quelques aventures. Elle a le chic d'être au bon endroit au bon moment pour avoir un rôle à jouer. Bat-Cow porte la poisse à ceux qui le méritent.",
-					"en": "When investigating a slaughterhouse, Batman and Robin (Damian Wayne) stumbled across a cow with markings on its forehead resembling the bat-logo, Damian decided to keep the animal. Hoping its presence in the Batcave would make Damian less cynical, Batman agreed to keep her in the Batcave. Now Alfred and Damian take care of her, but she sometimes escapes and even has her own adventures. Her actions, without apparent logic, are often interpreted as omens by the humans she meets. It seems, Bat-Cow brings further bad luck for those who brinq it upon themselves!"
+					"en": "When investigating a slaughterhouse, Batman and Robin (Damian Wayne) stumbled across a cow with markings on its forehead resembling the bat-logo, Damian decided to keep the animal. Hoping its presence in the Batcave would make Damian less cynical, Batman agreed to keep her in the Batcave. Now Alfred and Damian take care of her, but she sometimes escapes and even has her own adventures. Her actions, without apparent logic, are often interpreted as omens by the humans she meets. It seems, Bat-Cow brings further bad luck for those who bring it upon themselves!"
 					},
 					"ID": "a cow / une vache",
-					"size": {
-						"fr": "1,52 m",
-						"en": "4ft 12in"
-					},
-					"weight": {
-						"fr": "568 Kg",
-						"en": "1252 lbs"
-					}
+					"size": "4ft 12in / 1,52 m",
+					"weight": "1252 lbs / 568 Kg"
 				},
             "color": "blue",
             "total-gems": 12,
@@ -2656,24 +2425,15 @@
         },
         {
             "id": "oracle",
-            "name": {
-                "fr": "ORACLE",
-                "en": "ORACLE"
-            },
+            "name": "ORACLE",
             "back": {
                 "text": {
                     "fr": "Le Joker mit fin définitivement à la carrière de Barbara en tant que Batgirl, la colonne vertébrale abîmée par les balles du clown assassin. Clouée dans un fauteuil roulant, elle se jeta à corps perdu dans l'informatique ou service de la lutte contre le crime. E1le ne négligea pas pour autant sa sécurité physique et s'entraîna aux arts martiaux malgré son handicap. Très vite, elle devint une informatrice privilégiée de la Suicide Squad et de la JLA, sous sa nouvelle identité secrète d'Oracle. Barbara a aussi été blbliothécaire, connaît bien la criminologie et a une licence d'avocate qu'elle n'utilise guère.",
-					"en": "Being the Commissioner's daughter placed Barbara Gordon in The Joker's crosshairs. One fateful evening, he showed up at her house and with a single shot severed her spine. Since then, Barbara was confined to a wheelchair, but rather than allow her disability to define her capabilities, she continued her martial arts training. She also focused her keen technical expertise as a crime-fightinq tool. Soon after, she became an informant for the Suicide Squad and Justice League of America. Under her new identity as Oracle, she quickly became an urban legend on the networks and someone to be feared among the criminal underworld."
+					"en": "Being the Commissioner's daughter placed Barbara Gordon in The Joker's crosshairs. One fateful evening, he showed up at her house and with a single shot severed her spine. Since then, Barbara was confined to a wheelchair, but rather than allow her disability to define her capabilities, she continued her martial arts training. She also focused her keen technical expertise as a crime-fighting tool. Soon after, she became an informant for the Suicide Squad and Justice League of America. Under her new identity as Oracle, she quickly became an urban legend on the networks and someone to be feared among the criminal underworld."
 					},
 					"ID": "Barbara Gordon",
-					"size": {
-						"fr": "1,80 m",
-						"en": "5ft 11in"
-					},
-					"weight": {
-						"fr": "61 Kg",
-						"en": "135 lbs"
-					}
+					"size": "5ft 11in / 1,80 m",
+					"weight": "135 lbs / 61 Kg"
 				},
             "color": "blue",
             "total-gems": 9,
@@ -2764,24 +2524,15 @@
         },		
         {
             "id": "red-robin",
-            "name": {
-                "fr": "RED ROBIN",
-                "en": "RED ROBIN"
-            },
+            "name": "RED ROBIN",
             "back": {
                 "text": {
                     "fr": "Tim Drake, troisième Robin du nom, s'est émancipé de Batman pour devenir Red Robin. Très agile, il est souvent équipé d'un bâton dont il se sert en combat ou lors de ses acrobaties. Bien qu'il ne soit pas toujours d'accord avec Batman, Red Robin est néanmoins son fils adoptif, au même titre que Nightwing. Parmi les anciens Robin, Tim Drake se distingue par le fait qu'il est généralement le plus optimiste et le moins violent. ll est également le petit ami de Spoiler (Stéphanie Brown). Tim se distingue aussi par une excellente pratique de l'informatique, qui fait de lui l'un des meilleurs hackers de Gotham City.",
-					"en": "Once the sidekick of Batman, Tim Drake eventually left this role behind and forged his own identity as Red Robin. With his keen martial arts skills and bo staff, he is an extremely agile and feared warrior. Like previous Robins, he is an adopted son, but unlike them he is less damaged and violent and even has a healthy relationship with the crime fighter known as Spoiler. Though a qreat hand-to-hand fiqhter, it is perhaps his computer skills that make him a true asset to the Bat-Family. Simply put, Tim Drake is one of the greatest hackers in all of Gotham City-an indispensible skill in the world of crime fighting."
+					"en": "Once the sidekick of Batman, Tim Drake eventually left this role behind and forged his own identity as Red Robin. With his keen martial arts skills and bo staff, he is an extremely agile and feared warrior. Like previous Robins, he is an adopted son, but unlike them he is less damaged and violent and even has a healthy relationship with the crime fighter known as Spoiler. Though a great hand-to-hand fighter, it is perhaps his computer skills that make him a true asset to the Bat-Family. Simply put, Tim Drake is one of the greatest hackers in all of Gotham City-an indispensible skill in the world of crime fighting."
 					},
 					"ID": "Timothy Drake",
-					"size": {
-						"fr": "1,68 m",
-						"en": "5ft 6in"
-					},
-					"weight": {
-						"fr": "59 Kg",
-						"en": "131 lbs"
-					}
+					"size": "5ft 6in / 1,68 m",
+					"weight": "131 lbs / 59 Kg"
 				},
             "color": "blue",
             "total-gems": 10,
@@ -2898,24 +2649,15 @@
         },		
         {
             "id": "bruce-wayne",
-            "name": {
-                "fr": "BRUCE WAYNE",
-                "en": "BRUCE WAYNE"
-            },
+            "name": "BRUCE WAYNE",
             "back": {
                 "text": {
                     "fr": "Ses parents assassinés sous ses yeux, le jeune Bruce est devenu en un instant orphelin et milliardaire. S'il a mis son héritage au service de la guerre contre le crime, il doit néanmoins conserver une façade de respectabilité. Batman est inquiétant et froid quand le visage public de Bruce Wayne se doit d'être moins teffifiant. Le ]usticier se mue en playboy noceur. Cet habitué des pages people est aussi un philanthrope qui mène des projets de réhabilitation urbaine, finance des cliniques et dirige les entreprises Wayne. Être Bruce est pour Batman un effort constant. Ce masque ne doit se fendiller sous aucun prétexte...",
-					"en": "The moment his parents were murdered before his eyes, younq Bruce became both an orphan and a billionaire. Years later, as Batman, he waged a legendary war on crime, but the Wayne legacy also needed his attention. Ever since, he maintained a rigid dichotomy. To the public, he is Bruce Wayne: charming philanthropist, but to the criminal underworld, he is the Dark Knight: terrifying emblem of justice. Some days he funds urban renewal projects, other days, he battles psychotic crime lords obsessed with power and pageantry. Whichever role he plays, Bruce Wayne must wear one mask... or the other."
+					"en": "The moment his parents were murdered before his eyes, young Bruce became both an orphan and a billionaire. Years later, as Batman, he waged a legendary war on crime, but the Wayne legacy also needed his attention. Ever since, he maintained a rigid dichotomy. To the public, he is Bruce Wayne: charming philanthropist, but to the criminal underworld, he is the Dark Knight: terrifying emblem of justice. Some days he funds urban renewal projects, other days, he battles psychotic crime lords obsessed with power and pageantry. Whichever role he plays, Bruce Wayne must wear one mask... or the other."
 					},
 					"ID": "Bruce Wayne",
-					"size": {
-						"fr": "1,87 m",
-						"en": "6ft 2in"
-					},
-					"weight": {
-						"fr": "95 Kg",
-						"en": "210 lbs"
-					}
+					"size": "6ft 2in / 1,87 m",
+					"weight": "210 lbs / 95 Kg"
 				},
             "color": "blue",
             "total-gems": 11,
@@ -3010,24 +2752,15 @@
         },		
         {
             "id": "julia-penniworth",
-            "name": {
-                "fr": "JULIA PENNIWORTH",
-                "en": "JULIA PENNIWORTH"
-            },
+            "name": "JULIA PENNIWORTH",
             "back": {
                 "text": {
                     "fr": "Alfred, si dévoué 24 heures sur 24 à son maître ? Mais quand a-t-il trouvé ie temps de fonder une famille ? Mais rappelons-nous qu'Alfred a eu une vie avont d'entrer ou service des Wayne. Et Julla en est une relique, ayant suivi la voie paternelle en intégrant non pas le service d'une grande famille, mais les services spéciaux de son pays. Membre des SAS britanniques, Julia est une redoutable combattante et, une fois découverte la vraie nature de l'emploi paternel, elle est devenue un membre très utile de la Bat-Family.",
-					"en": "With Alfred seeminqly devoted to Brure Wayne 24 hours a day, it begs the question: when did he find time to start a family? After all, let's not forget that Alfred lived a storied life before entering the service of Bruce Wayne. Perhaps it is appropriate, then, that his daughter, Julia, upheld the family tradition to serve. But in Julia's case it is not a wealthy family that she serves, but rather, her country. As a member of the British SAS, Julia is a formidable soldier and once she discovered the true nature of her father's employment, she became a very useful member of the Bat-Family."
+					"en": "With Alfred seemingly devoted to Brure Wayne 24 hours a day, it begs the question: when did he find time to start a family? After all, let's not forget that Alfred lived a storied life before entering the service of Bruce Wayne. Perhaps it is appropriate, then, that his daughter, Julia, upheld the family tradition to serve. But in Julia's case it is not a wealthy family that she serves, but rather, her country. As a member of the British SAS, Julia is a formidable soldier and once she discovered the true nature of her father's employment, she became a very useful member of the Bat-Family."
 					},
 					"ID": "Julia Penniworth",
-					"size": {
-						"fr": "1,73 m",
-						"en": "5ft 8in"
-					},
-					"weight": {
-						"fr": "58,5 Kg",
-						"en": "129 lbs"
-					}
+					"size": "5ft 8in / 1,73 m",
+					"weight": "129 lbs / 58,5 Kg"
 				},
             "color": "blue",
             "total-gems": 10,
@@ -3116,24 +2849,15 @@
         },
         {
             "id": "alfred",
-            "name": {
-                "fr": "ALFRED",
-                "en": "ALFRED"
-            },
+            "name": "ALFRED",
             "back": {
                 "text": {
                     "fr": "Il semble faire partie des meubles du manoir Wayne. Mais Alfred n'a pas toujours été ce maître d'hôtel entre deux âges. Ne voulant pas au départ être le serviteur d'une grande famille comme ses ancêtres, il s'engagea dans l'armée puis dans les services secrets. Il fut aussi acteur mais la mort de son père le conduisit à entrer au service des Wayne. À leur mort, il servit de tuteur à leur fils Bruce. Depuis que ce dernier est devenu Batman, Alfred assure l'entretien du manoir mais aussi la logistique de sa croisade contre le crime, il soigne les blessures, voire se grime pour infiltrer des milieux louches.",
-					"en": "Though he is best known as an elderly English butler, at one point in his life Alfred was a man of action. Not wishing to become a servant like so many others in his family, he enrolled in the army and came to work for the Secret Services. He even became an actor for a stretch, but the death of his father brought him back to work for the Wayne family. After the murder of Thomas and Martha Wayne, Alfred became young Bruce's tutor and closest friend. Now, not only does Alfred maintain the manor, but he also aids Batman in his crusade against crime-managinq logistics, sewing wounds, and launching reconnaissance missions."
+					"en": "Though he is best known as an elderly English butler, at one point in his life Alfred was a man of action. Not wishing to become a servant like so many others in his family, he enrolled in the army and came to work for the Secret Services. He even became an actor for a stretch, but the death of his father brought him back to work for the Wayne family. After the murder of Thomas and Martha Wayne, Alfred became young Bruce's tutor and closest friend. Now, not only does Alfred maintain the manor, but he also aids Batman in his crusade against crime-managing logistics, sewing wounds, and launching reconnaissance missions."
 					},
 					"ID": "Alfred Pennyworth",
-					"size": {
-						"fr": "1,83 m",
-						"en": "6ft"
-					},
-					"weight": {
-						"fr": "72,5 Kg",
-						"en": "160 lbs"
-					}
+					"size": "6ft / 1,83 m",
+					"weight": "160 lbs / 72,5 Kg"
 				},
             "color": "blue",
             "total-gems": 10,
@@ -3229,28 +2953,16 @@
         },
         {
             "id": "batman-thrasher",
-            "name": {
-                "fr": "BATMAN",
-                "en": "BATMAN"
-            },
-            "subtitle": {
-                "fr": "THRASHER SUIT",
-                "en": "THRASHER SUIT"
-            },
+            "name": "BATMAN",
+            "subtitle": "THRASHER SUIT",
 			"back": {
                 "text": {
                     "fr": "Lorsque la situation l'exige, Batman n'hésite pas à revêtir son imposant costume blindé pour faire régner 1a justice au sein de GOtham. Faute de pouvoirs et d'invulnérabilité, cette armure de combat lui permet de palier à ses faiblesses lorsqu'il affronte des ennemis supérieurs en nombre ou surpuissants. D'autres héros de Gotham City ont revêtu cette armure, tel qu'Azraë1, lorsqu'il remplaça Batman. Récemment, Jim Gordon a accepté la tâche que le gouvernement lui a confié, à savoir de patrouiller et sécuriser les rues de Gotham City en pilotant ce type d'armure. Mais ceci est une autre histoire.",
-					"en": "Usually, fightinq street thugs requires armor that is liqht weight and flexible, but Batman comes prepared for anything. Lacking super-strength and invulnerability, he created special armored suits to level the playing field against certain foes. And sometimes, it is not even Bruce Wayne who wears the armor. Jean-Paul Valley, aka Azrael, once strapped on a suit of armor during his stint as Batman. And the latest of these armored Batmen was none other than Jim Gordon. To compensate for the disappearance of the Dark Knight, he agreed to don an armored suit designed by the government to patrol the streets of Gotham City."
+					"en": "Usually, fighting street thugs requires armor that is light weight and flexible, but Batman comes prepared for anything. Lacking super-strength and invulnerability, he created special armored suits to level the playing field against certain foes. And sometimes, it is not even Bruce Wayne who wears the armor. Jean-Paul Valley, aka Azrael, once strapped on a suit of armor during his stint as Batman. And the latest of these armored Batmen was none other than Jim Gordon. To compensate for the disappearance of the Dark Knight, he agreed to don an armored suit designed by the government to patrol the streets of Gotham City."
 					},
 					"ID": "Bruce Wayne",
-					"size": {
-						"fr": "NC",
-						"en": "NC"
-					},
-					"weight": {
-						"fr": "NC",
-						"en": "NC"
-					}
+					"size": "NC",
+					"weight": "NC"
 				},
             "color": "blue",
             "total-gems": 11,
@@ -3321,24 +3033,15 @@
         },		
         {
             "id": "batgirl",
-            "name": {
-                "fr": "BATGIRL",
-                "en": "BATGIRL"
-            },
+            "name": "BATGIRL",
             "back": {
                 "text": {
                     "fr": "Fille biologique ou adoptive du commissaire Gordon ? Nul ne le sait. Bien des rumeurs ont couru sur elle. Mais ce qui est certain, c'est qu'elle a une mémoire phénoménale et une intelligence acérée. Son goût du risque la conduisit pendant quelques années à rejoindre la croisade de Batman et Robin sous l'identité de Batgirl. Elle a développé pendant un temps une relation suivie avec Dick Grayson, le premier Robin. Dans sa jeunesse, Barbara combattit donc le crime et devint rapidement un atout pour la «Bat-Family».",
 					"en": "Is she the biological or adopted daughter of Commissioner Gordon? Many rumors have circulated about her, but her phenomenal memory, keen intellect, and taste for danger are undisputed. It is this last trait that led her to join Batman and Robin's crusade against crime as Batgirl. For a time, she developed a close relationship with Dick Grayson, the first Robin. During her youth, Barbara fought crime ond quickly became an important asset to the \"Bat-Family\"."
 					},
 					"ID": "Barbara Gordon",
-					"size": {
-						"fr": "1,80 m",
-						"en": "5ft 11in"
-					},
-					"weight": {
-						"fr": "61,23 Kg",
-						"en": "135 lbs"
-					}
+					"size": "5ft 11in / 1,80 m",
+					"weight": "135 lbs / 61,23 Kg"
 				},
             "color": "blue",
             "total-gems": 10,
@@ -3446,24 +3149,15 @@
         },		
         {
             "id": "huntress",
-            "name": {
-                "fr": "HUNTRESS",
-                "en": "HUNTRESS"
-            },
+            "name": "HUNTRESS",
             "back": {
                 "text": {
-                    "fr": "Helena Bertinelli est née dans une famille mafleuse de Gotham City. Elle vit ses parents massacrés, comme cela arrive parfois à l'occasion de rivalités entre gangs. Recueillie par un oncle et envoyée en Sicile, elle y apprit à se défendre. De retour à Gotham City, elle s'aperçut qu'elle haïssait ce milieu de gangsters hypocrites. Elle décida donc de travailler auprès d'enfants. Mais la nuit, elle devint autre chose. Armée d'une arbalète, elle hante la ville en mettant à mal les opérations criminelles. Huntress a opéré avec les Birds of Prey, la Lique de Justice, les Outsiders et même les organisations secrètes Checkmate et Spyral.",
-					"en": "Helena Bertinelli was born to a family at the heart of the Gotham City Mafia. After she witnessed the massacre of her parents, she was sent, by her uncle, to toughen-up in Sicily. Upon returning to Gotham City, she realized how much she hated the place decided to become schoolmistress to try and escape the city's double-dealinq thugs. But she became somethinq else, too. Armed with a crossbow, she patrols the city at night to hunt and disrupt the operations of her extended family and their rivals. She has worked with the Birds of Prey, the Justice League, the Outsiders and even the Checkmate and Spyral covert operations agencies."
+                    "fr": "Helena Bertinelli est née dans une famille mafleuse de Gotham City. Elle vit ses parents massacrés, comme cela arrive parfois à l'occasion de rivalités entre gangs. Recueillie par un oncle et envoyée en Sicile, elle y apprit à se défendre. De retour à Gotham City, elle s'aperçut qu'elle haïssait ce milieu de gangsters hypocrites. Elle décida donc de travailler auprès d'enfants. Mais la nuit, elle devint autre chose. Armée d'une arbalète, elle hante la ville en mettant à mal les opérations criminelles. Huntress a opéré avec les Birds of Prey, la Ligue de Justice, les Outsiders et même les organisations secrètes Checkmate et Spyral.",
+					"en": "Helena Bertinelli was born to a family at the heart of the Gotham City Mafia. After she witnessed the massacre of her parents, she was sent, by her uncle, to toughen-up in Sicily. Upon returning to Gotham City, she realized how much she hated the place decided to become schoolmistress to try and escape the city's double-dealing thugs. But she became something else, too. Armed with a crossbow, she patrols the city at night to hunt and disrupt the operations of her extended family and their rivals. She has worked with the Birds of Prey, the Justice League, the Outsiders and even the Checkmate and Spyral covert operations agencies."
 					},
 					"ID": "Helena Bertinelli",
-					"size": {
-						"fr": "1,80 m",
-						"en": "5ft 11in"
-					},
-					"weight": {
-						"fr": "59 Kg",
-						"en": "130 lbs"
-					}
+					"size": "5ft 11in / 1,80 m",
+					"weight": "130 lbs / 59 Kg"
 				},
             "color": "blue",
             "total-gems": 10,
@@ -3561,11 +3255,695 @@
 				}
 			}
         },
-
-
-
-
-
+        {
+            "id": "joker",
+            "name": "JOKER",
+            "back": {
+                "text": {
+                    "fr": "Le Joker est l'un des plus anciens adversaires de Batman et en est même l'antithèse. Là où Bruce Wayne enfile une tenue sombre pour défendre le bien, le Joker a les attributs d'un clown mais se révèle un serial killer de la pire sorte. Tueur froid à ses débuts, le Joker adopte une conduite de plus en plus hystérique et pense ses méthodes d'après des gags meurtriers. Ne lui serrez pas la main, elle pourrait déclencher un choc électrique assassin. Ne sentez pas la fleur qu'il porte à la boutonnière, elle peut vous asperger d'un poison mortel qui donnera à votre cadavre le rictus du Joker. C'est un coup à mourir de rire...",
+					"en": "The Joker is the perfect antagonist. Though there are many contenders, no other villain in Gotham City is capable of mixing violence and pageantry with such finesse. Batman's every virtue becomes a weakness for tje Clown Prince of Crime to exploit, and over the years, he's found every flaw in the Dark Knight's armor. Where Batman stands as a beacon of hope, sacrificing his own happiness and well-being for the good of Gotham City, the Joker is a homicidal maniac who will gladly destroy the world with a smile on his face."
+					},
+					"ID": "Unknown",
+					"size": "6ft 5in / 1,95 m",
+					"weight": "192 lbs / 87 Kg"
+				},
+            "color": "gray",
+            "total-gems": 11,
+            "active-gems": 2,
+            "rest-gems": 5,
+            "freemovement": { 
+				"baselevel": 2,
+				"encombrances": [
+					{ "weight": 4, "movement": 1},
+					{ "weight": 5, "movement": 0}
+				]
+			},
+            "size": 1,
+            "menace": 1,
+            "melee": { 
+				"dice": "red", 
+				"saturation": 3, 
+				"skills": [
+					{ "id": "combo", "level": 1 , "encombrance": 4 },
+					{ "id": "martial_arts", "level": 1, "encombrance": 4 }
+				]
+			},
+            "ranged": { 
+				"dice": "orange", 
+				"saturation": 4
+			},
+            "manipulation": { 
+				"dice": "orange", 
+				"saturation": 4,   
+				"skills": [
+					{ "id": "munitions_specialist", "level": 1 },
+					{ "id": "lock_piking", "level": 1 }
+				]
+			},
+            "thought": { 
+				"dice": "orangereroll", 
+				"saturation": 3
+			},
+            "defense": { 
+				"dice": "orange", 
+				"saturation": 5
+			},
+            "passive-defense": { "dice": "yellow"},
+            "reroll": {"saturation": 5},
+            "movement": {
+				"saturation": 4,  
+				"skills": [
+					{ "id": "parkour", "level": 1 , "encombrance": 3 }
+				]
+			},
+            "otherskills": [
+                { "id": "nerves_steel", "level": 1 },
+                { "id": "pushing_limits", "level": 1 }
+            ],
+            "image": "data/heroes/img/joker.png",
+            "imageHD": "data/heroes/img/joker_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/joker_back.png",
+            "imageHD_back": "data/heroes/img/joker_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "joker",
+            "origins": "corebox",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "VENIN DU JOKER",
+						"en": "JOKER VENOM"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "The Joker déploie son venin sur le terrain.",
+								"en": "The Joker spreads his venom on the battlefield."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain place immédiatement un pion venin du Joker dans la zone d’un personnage du camp du vilain.\nCe pion suit les mêmes règles que les pions gaz et augmente de 2 le niveau de terrain dangereux de la zone où il se situe.",
+										"en": "The villain immediately places a Joker venom token in the same area as a character from the villain’s side.\nThis token follows the same rules as gas tokens and increases the dangerous terrain level by 2 in the same area as it is located."
+							},
+							"tokens" : {
+								"0": {
+									"name": {
+										"fr": "PION VENIN DU JOKER",
+										"en": "JOKER VENOM TOKEN"
+										},
+									"image": ["data/powers/img/joker-venom.png"]
+								}					
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "The Joker effectue immédiatement un mouvement.",
+								"en": "The Joker immediately performs a movement."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain réalise immédiatement une activation de personnage avec The Joker. Il effectue seulement sa première étape de mouvement.",
+										"en": "The villain immediately performs a character activation with The Joker. They only carry out their First Movement Step."
+							}
+						}
+					}
+				}
+			}
+        },
+        {
+            "id": "green-arrow",
+            "name": "GREEN ARROW",
+            "back": {
+                "text": {
+                    "fr": "Exilé sur une île déserte pendant plusieurs mois, le jeune millionnaire Oliver Queen y apprit à survivre en chassant à l'aide d'un arc et de flèches. Revenu en Amérique, il décida d'employer ses compétences nouvelles pour combattre le crime, en faisant cela, il y laissa l'ensemble de sa fortune. C'est ce qui le conduisit à des prises de conscience politiques qui en firent une sorte de Robin des Bois moderne. Mais le fait que le bandit de la forêt de Sherwood fut son idole lorsqu'il était enfant y est sans doute aussi pour quelque chose.",
+					"en": "While exiled on a desert island for several months, young millionaire Oliver Queen learned to survive by hunting with a bow and arrows. When he returned to America, he decided to use these new-found skills to fight back against the crime infecting the streets. Unfortunately, he lost his fortune in the process. This led to a political awakening that turned him into a sort of modern-day Robin Hood. As a child, he idolized the legendary outlaw of Sherwood forest, and when it came time to create a costume, he decided to adopt aspects of the archer's motif."
+					},
+					"ID": "Oliver Queen",
+					"size": "6ft 1in / 1,80 m",
+					"weight": "185 lbs / 84 Kg"
+				},
+            "color": "blue",
+            "total-gems": 10,
+            "active-gems": 3,
+            "rest-gems": 5,
+            "freemovement": { 
+				"baselevel": 2,
+				"encombrances": [
+					{ "weight": 4, "movement": 1},
+					{ "weight": 5, "movement": 0}
+				]
+			},
+            "size": 1,
+            "menace": 1,
+            "melee": { 
+				"dice": "orange", 
+				"saturation": 4, 
+				"skills": [
+					{ "id": "martial_arts", "level": 1 , "encombrance": 4 }
+				]
+			},
+            "ranged": { 
+				"dice": "red", 
+				"saturation": 3,  
+				"skills": [
+					{ "id": "retaliation", "level": 2 , "encombrance": 3 },
+					{ "id": "marksman", "level": 1, "encombrance": 4 }
+				]
+			},
+            "manipulation": { 
+				"dice": "orange", 
+				"saturation": 4
+			},
+            "thought": { 
+				"dice": "yellowreroll", 
+				"saturation": 5,   
+				"skills": [
+					{ "id": "investigation", "level": 1 }
+				]
+			},
+            "defense": { 
+				"dice": "orange", 
+				"saturation": 4
+			},
+            "passive-defense": { "dice": "yellowreroll"},
+            "reroll": {"saturation": 5},
+            "movement": {
+				"saturation": 5,  
+				"skills": [
+					{ "id": "parkour", "level": 1 , "encombrance": 4 },
+					{ "id": "mobility", "level": 1, "encombrance": 3 }
+				]
+			},
+            "otherskills": [
+                { "id": "nerves_steel", "level": 2 }
+            ],
+            "image": "data/heroes/img/green-arrow.png",
+            "imageHD": "data/heroes/img/green-arrow_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/green-arrow_back.png",
+            "imageHD_back": "data/heroes/img/green-arrow_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "green-arrow",
+            "origins": "corebox",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "CHASSEUR-NÉ",
+						"en": "BORN HUNTER"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Green Arrow se sert de ses capacités de chasseur pour traquer et atteindre sa proie.",
+								"en": "Green Arrow uses his hunting abilities to track down his prey."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Green Arrow. Pour cela, il suit les étapes d'activation d'un personnage contrôlé par une tuile avec les exceptions suivantes :\n-- il peut effectuer sa première étape de mouvement mais pas la seconde.\n-- lors de l'étape de déclaration d'une action autre que le mouvement, il ne peut déclarer qu'une action d'attaque à distance avec la caractéristique de 1 dé noir relançable + 1 dé orange relançable.",
+										"en": "The hero immediately performs a character activation with Green Arrow. To do so, they follow the Activate a Character Controlled by a Tile steps with the following exceptions:\n-- They can perform their First Movement Step but not the second.\n-- During the Declare an Action Other than Movement step, they can only declare a ranged attack with 1 black die with a reroll + 1 orange die with a reroll."
+							}
+						}
+					}
+				}
+			}
+        },
+        {
+            "id": "batman-beyond",
+            "name": "BATMAN",
+            "subtitle": "BEYOND",
+			"back": {
+                "text": {
+                    "fr": "Dans le futur, vingt ans après que Batman a pris sa retraite, le jeune Terry McGinnis découvre par hasard la double identité du vieux Bruce Wayne. Plus tard, quand le père de Terry est assassiné, il demonde l'aide de Bruce. Mais celui-ci refuse. Terry s'introduit alors dans la batcave et vole ce qui aurait dû être le costume ultime de Batman, une tenue bourrée de gadgets. Il devient un nouveau Batman mais encore inexpérimenté. Après cette aventure, Bruce accepte qu'il continue ses activités à sa place mais sous sa surveillance. C'est que Gothom City, privée de protecteur pendant 20 ans, a plus que jamais besoin d'un bat-héros.",
+					"en": "Twenty years after Batman's retirement, a young Terry McGinnis discovers the true identity of the masked vigilante. After learning of his father's murder, Terry turns to Bruce Wayne for help. The aged, former crime fighter refuses, but Terry persists and makes an exceptionally bold move. Needing the proper equipment to avenge his father, he breaks into the Batcave and steals the Batsuit. Though inexperienced, Terry proves himself to be a capable fighter. Eventually, Terry is permitted to continue his mission, but only under Bruce's supervision and guidance. After 20 years without a protector, Gotham City needs Batman more than ever."
+					},
+					"ID": "Terrence \"Terry\" McGuinnis",
+					"size": "5ft 10in / 1,78 m",
+					"weight": "170 lbs / 77 Kg"
+				},
+            "color": "blue",
+            "total-gems": 10,
+            "active-gems": 2,
+            "rest-gems": 5,
+            "freemovement": { 
+				"baselevel": 3,
+				"encombrances": [
+					{ "weight": 3, "movement": 2},
+					{ "weight": 4, "movement": 1},
+					{ "weight": 5, "movement": 0}
+				]
+			},
+            "beltsize": 3,
+            "size": 1,
+            "menace": 1,
+            "melee": { 
+				"dice": "orangereroll", 
+				"saturation": 3, 
+				"skills": [
+					{ "id": "combo", "level": 1 , "encombrance": 3 },
+					{ "id": "martial_arts", "level": 1, "encombrance": 3 }
+				]
+			},
+            "ranged": { 
+				"dice": "orange", 
+				"saturation": 4
+			},
+            "manipulation": { 
+				"dice": "orange", 
+				"saturation": 3
+			},
+            "thought": { 
+				"dice": "orangereroll", 
+				"saturation": 4,   
+				"skills": [
+					{ "id": "investigation", "level": 1 }
+				]
+			},
+            "defense": { 
+				"dice": "orange", 
+				"saturation": 4
+			},
+            "passive-defense": { "dice": "yellowreroll"},
+            "reroll": {"saturation": 4},
+            "movement": {
+				"saturation": 4,  
+				"skills": [
+					{ "id": "parkour", "level": 2 , "encombrance": 4 },
+					{ "id": "elusive", "level": 1 , "encombrance": 4 },
+					{ "id": "mobility", "level": 2, "encombrance": 4 }
+				]
+			},
+            "otherskills": [
+                { "id": "protected", "level": 1 },
+                { "id": "pushing_limits", "level": 1 }
+            ],
+            "traits": [
+                {"id": "moral_code"}
+            ],
+            "image": "data/heroes/img/batman-beyond.png",
+            "imageHD": "data/heroes/img/batman-beyond_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/batman-beyond_back.png",
+            "imageHD_back": "data/heroes/img/batman-beyond_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "batman-beyond",
+            "origins": "batman-beyond",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "VIF COMME L'ÉCLAIR",
+						"en": "QUICK AS LIGHTNING"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "La jeunesse permet des actions d'éclat.",
+								"en": "Youth allows spectacular actions."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le héros réalise immédiatement une activation de personnage avec Batman Beyond. Pour cela, il suit les étapes d'ctivation d'un personnage contrôlé par une tuile avec les exceptions suivantes :\n--il peut effectuer sa première étape de mouvement mais pas la seconde;\n--lors de l'étape de déclaration d'une action autre que le mouvement, il ne peut déclarer qu'une action d'attaque au corps-à-corps acec la caractéristique suivante : 1 dé rouge + 1 dé orange.",
+										"en": "The hero immediately performs a character activation with Batman Beyond. To do so, they follow the Activate a Character Controlled by a Tile steps with the following exceptions:\n--They can perform their First Movement Step but not the second.\n--During the Declare an Action Other than Movement step, they can only declare a melee attack with 1 red die + 1 orange die."
+							}
+						}
+					}
+				}
+			}
+        },
+        {
+            "id": "batman-new-52",
+            "name": "BATMAN",
+            "subtitle": "(JAMES GORDON)",
+			"back": {
+                "text": {
+                    "fr": "Récemment, la disparition de Batman a conduit l'ex commissaire Gordon à le remplacer. Mais si le commissaire est un homme bien entraîné, il ne boxe néanmoins pas dans la même catégorie que l'homme chauve-souris original. C'est donc dans une armure high-tech que Jim Gordon joue pendant quelques temps le rôle du protecteur de Gotham, un dispositif qui le rend bien plus fort, et surtout bien plus résistant aux balles.",
+					"en": "After Batman's mysterious disappearance, former police commissioner James Gordon stepped in to replace him. Though highly skilled in his own right, Gordon did not quite possess the same strength or talents of the Dark Knight. To truly embody this role, he required something capable of withstanding the power and fury of Gothom City's fiercest criminals. It was only by stepping into a high-powered, bulletresistant super-suit called \"Rookie\" that Gordon was able to level the playing field."
+					},
+					"ID": "James Gordon",
+					"size": "5ft 9in / 1,75 m",
+					"weight": "168 lbs / 76 Kg"
+				},
+            "color": "blue",
+            "total-gems": 10,
+            "active-gems": 2,
+            "rest-gems": 5,
+            "freemovement": { 
+				"baselevel": 2,
+				"encombrances": [
+					{ "weight": 4, "movement": 1},
+					{ "weight": 5, "movement": 0}
+				]
+			},
+            "beltsize": 2,
+            "size": 1,
+            "menace": 1,
+            "melee": { 
+				"dice": "orange", 
+				"saturation": 4, 
+				"skills": [
+					{ "id": "martial_arts", "level": 1 , "encombrance": 4 }
+				]
+			},
+            "ranged": { 
+				"dice": "orange", 
+				"saturation": 4
+			},
+            "manipulation": { 
+				"dice": "orange", 
+				"saturation": 4
+			},
+            "thought": { 
+				"dice": "orange", 
+				"saturation": 4,   
+				"skills": [
+					{ "id": "investigation", "level": 2 }
+				]
+			},
+            "defense": { 
+				"dice": "orange", 
+				"saturation": 4
+			},
+            "passive-defense": { "dice": "orange"},
+            "reroll": {"saturation": 4},
+            "movement": {
+				"saturation": 4,  
+				"skills": [
+					{ "id": "parkour", "level": 1 , "encombrance": 3 },
+					{ "id": "elusive", "level": 1 , "encombrance": 3 },
+					{ "id": "mobility", "level": 1, "encombrance": 4 }
+				]
+			},
+            "otherskills": [
+                { "id": "nerves_steel", "level": 2 },
+                { "id": "pushing_limits", "level": 1 }
+            ],
+            "traits": [
+                {"id": "moral_code"}
+            ],
+            "image": "data/heroes/img/batman-new-52.png",
+            "imageHD": "data/heroes/img/batman-new-52_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/batman-new-52_back.png",
+            "imageHD_back": "data/heroes/img/batman-new-52_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "batman-new-52",
+            "origins": "batman-new-52",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "SOUTIEN OFFENSIF",
+						"en": "OFFENSIVE SUPPORT"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Quand le danger est à son paroxysme, Rookie est la solution.",
+								"en": "When danger is at its highest level - uneash Rookie is the answer"
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "A la fin de l'étape de sélection du QG, le héros sélectionne la tuile de Rookie et tant que lieutenant. Lors de l'activation de la tuile évènement, le héros réalise une activation de personnage avec Batman (James Gordon). Il effectue seulement sa première étape de mouvement. S'il termine son déplacement dans la zone de Rookie, il rentre dans son robot. Sa figurine est retirée du plateau. Puis, le héros réalise une ctivation de personnage avec Rookie. Il effectue seulement sa première étape de mouvement. L héros peut ensuite effectuer une explosion de niveau 2 dans une zone jusqu'à 2 de distance de Rookie et avec laquelle il partage une ligne de vue. Enfin, la figurine de Batman (James Gordon) est remise dans la zone de Rookie.\nSi Rookie est neutralisé, Batman (James Gordon) effectue seulement sa première étape de mouvement.",
+										"en": "At the end of the Leader Selection step, the hero selets Rookie's tile as heir lieutement. hen the event tile is activated, the heri performs a character activation with Batman (James Gordon). They only carry out their First Movement Step. If Batman ends his movement in Rookie's area, he can transfer into the robotic suit. Batman's miniature is removed from the board. The hero then performs a character activation with Rookie. During this activation, they only carry out their First Movement Step.\nThe hero may then cause a level 2 explosion in an area that Rookie has a clear line of sight, up to 2 areas distance from Rookie. Finally, Batman's miniature is placed back in Rookie's area.\nIf Rookie is neutralized, Batman (James Gordon) only carries out his First Movvement Step."
+							}
+						}
+					}
+				}
+			}
+        },
+        {
+            "id": "hawkfire",
+            "name": "HAWKFIRE",
+            "back": {
+                "text": {
+                    "fr": "Bette Kane est l'une des plus anciennes héroïnes liée à Batman, mais également la partenaire de la première Batwoman. Elle était surtout motivée par son admiration et même son amour pour Dick Grayson. Après être passée par différentes autres identités, elle a découvert que la nouvelle Batwoman était cette fois sa cousine, Kate Kane, bien plus compétente. Inspirée par son exemple, elle décide alors de se réinventer sous la nouvelle identité de Hawkfire, avec un arsenal pyrotechnique mais aussi une meilleure pratique des arts martiaux qui la rendent bien dangereuse.",
+					"en": "Bette Kane was the partner of the first Batwoman. Her heroic efforts were partially motivated by her admiration and love of Dick Grayson. When the new Batwoman arrived on the scene, Bette was surprised to discover she was actually her cousin Kate-a formidable fighter. Inspired by Kate's example, Bette decided to reinvent herself. She took on the name Hawkfire and combined a pyrotechnic arsenal with her comprehensive martial arts skills."
+					},
+					"ID": "Mary Elizabeth \"Bette\" Kane",
+					"size": "5ft 6in / 1,68 m",
+					"weight": "119 lbs / 54 Kg"
+				},
+            "color": "blue",
+            "total-gems": 10,
+            "active-gems": 2,
+            "rest-gems": 5,
+            "freemovement": { 
+				"baselevel": 4,
+				"encombrances": [
+					{ "weight": 3, "movement": 3},
+					{ "weight": 4, "movement": 2},
+					{ "weight": 5, "movement": 1}
+				]
+			},
+            "beltsize": 2,
+            "size": 1,
+            "menace": 1,
+            "melee": { 
+				"dice": "orangereroll", 
+				"saturation": 4, 
+				"skills": [
+					{ "id": "martial_arts", "level": 1 , "encombrance": 3 }
+				]
+			},
+            "ranged": { 
+				"dice": "yellow", 
+				"saturation": 3
+			},
+            "manipulation": { 
+				"dice": "orange", 
+				"saturation": 3,   
+				"skills": [
+					{ "id": "munitions_specialist", "level": 1 }
+				]
+			},
+            "thought": { 
+				"dice": "orange", 
+				"saturation": 5,   
+				"skills": [
+					{ "id": "investigation", "level": 1 }
+				]
+			},
+            "defense": { 
+				"dice": "orangereroll", 
+				"saturation": 3,  
+				"skills": [
+					{ "id": "impenetrable_defense", "level": 1 , "encombrance": 4 }
+				]
+			},
+            "passive-defense": { "dice": "yellow"},
+            "reroll": {"saturation": 4},
+            "movement": {
+				"saturation": 3
+			},
+            "otherskills": [
+                { "id": "flame", "level": 1 }
+            ],
+            "traits": [
+                {"id": "fly"},
+                {"id": "moral_code"}
+            ],
+            "image": "data/heroes/img/hawkfire.png",
+            "imageHD": "data/heroes/img/hawkfire_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/hawkfire_back.png",
+            "imageHD_back": "data/heroes/img/hawkfire_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "hawkfire",
+            "origins": "hawkfire"
+        },
+        {
+            "id": "batman-rebirth",
+            "name": "BATMAN",
+            "subtitle": "REBIRTH",
+			"back": {
+                "text": {
+                    "fr": "Dans l'arc narratif Rebirth des comics Batman, le chevalier noir a été une fois encore mis au goût du jour pour être aussi moderne que possible. Bien qu'il combatte toujours seul la plupart du temps, il bénéficie régulièrement de l'appui d'autres justiciers. En tont que chef de la Bat-Family, il supervise l'entraînement de jeunes héros comme The Signal, Gotham Girl et mème son propre fils, Damian, qui a endossé le costume de Robin. De plus, dans ses récentes aventures, Batman est fiancé à Catwoman ! Cependant tout n'est pas ou beau fixe dans la vie du chevalier noir. Son ennemi, Bane, s'est rendu compte qu'il serait plus aisé de retourner les alliés de Batman contre lui pour briser son esprit plutôt que son corps. Afin de faire face à cette nouvelle menace, Batman se doit d'employer des moyens...",
+					"en": "In the Rebirth era of Batman comics, the Dark Knight has been updated once again to be as modern and current as possible. Though he still often fights alone, he frequently enlists the help of others. As the head of the Bat-Family, he oversees the training of young heroes such as The Signal, Gotham Girl, and his own son, Damian, who has taken on the role of Robin. And, in these recent storylines, Batman is even engaged to Catwoman! But, that's not to say that all is bright and sunny for the Dark Knight. His enemy Bane has come to realize it's better to turn Batman's allies into enemies and to breok his mind rather than his body. To face this threat, Batman must employ unconventional methods and form uneasy alliances with criminals."
+					},
+					"ID": "Bruce Wayne",
+					"size": "6ft 2in / 1,87 m",
+					"weight": "210 lbs / 95,25 Kg"
+				},
+            "color": "blue",
+            "total-gems": 11,
+            "active-gems": 2,
+            "rest-gems": 6,
+            "freemovement": { 
+				"baselevel": 2,
+				"encombrances": [
+					{ "weight": 4, "movement": 1},
+					{ "weight": 6, "movement": 0}
+				]
+			},
+            "beltsize": 4,
+            "size": 1,
+            "menace": 1,
+            "melee": { 
+				"dice": "red", 
+				"saturation": 3, 
+				"skills": [
+					{ "id": "combo", "level": 1 , "encombrance": 4 },
+					{ "id": "martial_arts", "level": 1, "encombrance": 4 }
+				]
+			},
+            "ranged": { 
+				"dice": "orange", 
+				"saturation": 3
+			},
+            "manipulation": { 
+				"dice": "orange", 
+				"saturation": 3,   
+				"skills": [
+					{ "id": "munitions_specialist", "level": 1 }
+				]
+			},
+            "thought": { 
+				"dice": "red", 
+				"saturation": 3,   
+				"skills": [
+					{ "id": "hackin", "level": 1 },
+					{ "id": "investigation", "level": 2 }
+				]
+			},
+            "defense": { 
+				"dice": "yellowreroll", 
+				"saturation": 5
+			},
+            "passive-defense": { "dice": "orangereroll"},
+            "reroll": {"saturation": 4},
+            "movement": {
+				"saturation": 4,  
+				"skills": [
+					{ "id": "parkour", "level": 1 , "encombrance": 3 },
+					{ "id": "mobility", "level": 1, "encombrance": 3 }
+				]
+			},
+            "otherskills": [
+                { "id": "protected", "level": 2 },
+                { "id": "pushing_limits", "level": 2 }
+            ],
+            "traits": [
+                {"id": "moral_code"}
+            ],
+            "image": "data/heroes/img/batman-rebirth.png",
+            "imageHD": "data/heroes/img/batman-rebirth_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/batman-rebirth_back.png",
+            "imageHD_back": "data/heroes/img/batman-rebirth_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "batman-rebirth",
+            "origins": "batman-rebirth"
+        },		
+        {
+            "id": "killer_croc",
+            "name": "KILLER CROC",
+            "back": {
+                "text": {
+                    "fr": "Waylon Jones est mieux connu sous le nom de Killer Croc en raison de son apparence crocodilienne. Ce n'est pourtant qu'un homme atteint d'une maladie de peau. Des années de traitements et de mésaventures ont fait de lui ce monstre reptilien. Hush lui a injecté un virus accentuant son aspect. A l'inverse la doctoresse Maria Belleza a aussi essayé de le guérir... en vain. Son état n'est pas stable et il subit des mues d'un apparition à l'autre : parfois une sorte d'être crocodile qui dévore ses victimes... et parfois moins sauvage, plus humanoïde. Même ainsi, il conserve sa force mais retrouve surtout son intelligence et sa ruse.",
+					"en": "As a young boy, Waylon Jones suffured the wrath of bullies. A genetic defect made his skin look like that of a crocodile, and that's exactly what his classmates called him. Later, he joined a circus freak show, but eventually decided he'd had enough of that life and escaped into the sewers. There in the dark, he grew distant from civilization, his mind twisting and scheming. Though he isn't very smart, he is strong, ruthless, and half mad. Some even believe he's a cannibal. While it's unlikely that a rejected child would turn into a man-eating monster, in the shadows of Gotham City, no crime should be considered impossible."
+					},
+					"ID": "Waylon Jones",
+					"size": "6ft 5in / 1,96 m",
+					"weight": "268 lbs / 121,5 Kg"
+				},
+            "color": "gray",
+            "total-gems": 11,
+            "active-gems": 2,
+            "rest-gems": 5,
+            "freemovement": { 
+				"baselevel": 3,
+				"encombrances": [
+					{ "weight": 5, "movement": 2},
+					{ "weight": 6, "movement": 1},
+					{ "weight": 7, "movement": 0}
+				]
+			},
+            "size": 2,
+            "menace": 2,
+            "melee": { 
+				"dice": "redreroll", 
+				"saturation": 4, 
+				"skills": [
+					{ "id": "combo", "level": 2 , "encombrance": 5 },
+					{ "id": "berserk", "level": 1 },
+					{ "id": "martial_arts", "level": 1 }
+				]
+			},
+            "ranged": { 
+				"dice": "white", 
+				"saturation": 2
+			},
+            "manipulation": { 
+				"dice": "yellow", 
+				"saturation": 4
+			},
+            "thought": { 
+				"dice": "yellow", 
+				"saturation": 4
+			},
+            "defense": { 
+				"dice": "orangereroll", 
+				"saturation": 3,  
+				"skills": [
+					{ "id": "impenetrable_defense", "level": 1 , "encombrance": 6 }
+				]
+			},
+            "passive-defense": { "dice": "orange"},
+            "reroll": {"saturation": 3},
+            "movement": {
+				"saturation": 5,  
+				"skills": [
+					{ "id": "parkour", "level": 1 , "encombrance": 5 },
+					{ "id": "immobilization", "level": 1 },
+					{ "id": "mobility", "level": 3, "encombrance": 6 }
+				]
+			},
+            "image": "data/heroes/img/killer_croc.png",
+            "imageHD": "data/heroes/img/killer_croc_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/killer_croc.png",
+            "imageHD_back": "data/heroes/img/killer_croc_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "killer_croc",
+            "origins": "corebox",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "CHARGE BESTIALE",
+						"en": "BESTIAL CHARGE"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Killer Croc effectue une charge féroce.",
+								"en": "Killer Croc performs a ferocious charge."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain réalise immédiatement une activation de personnage avec Killer Croc. Pour cela, il suit les étapes d’activation d’un personnage contrôlé par une tuile avec les exceptions suivantes :\n-- Killer Croc peut effectuer sa première étape de mouvement mais pas la seconde.\n-- lors de l’étape de déclaration d’une action autre que le mouvement, il ne peut déclarer qu’une action d’attaque au corps-à-corps avec la caractéristique de 1 dé orange par limite de zone franchie au cours du mouvement précédent.",
+										"en": "The villain immediately performs a character activation with Killer Croc. To do so, they follow the Activate a Character Controlled by a Tile steps with the following exceptions: \n-- Killer Croc can perform his First Movement Step but not the second.\n-- During the Declare an Action Other than Movement step, they can only declare a melee attack with 1 orange die per number of boundaries crossed during the previous movement."
+							}
+						}
+					}
+				}
+			}
+        },		
+		
+		
+		
 		
 		
 		
@@ -3574,28 +3952,16 @@
 		
         {
             "id": "template",
-            "name": {
-                "fr": "template",
-                "en": "template"
-            },
-            "subtitle": {
-                "fr": "template",
-                "en": "template"
-            },
+            "name": "template",
+            "subtitle": "template",
 			"back": {
                 "text": {
                     "fr": "template",
 					"en": "template"
 					},
 					"ID": "template",
-					"size": {
-						"fr": "template",
-						"en": "template"
-					},
-					"weight": {
-						"fr": "template",
-						"en": "template"
-					}
+					"size": "template",
+					"weight": "template"
 				},
             "color": "blue",
             "total-gems": 10,
