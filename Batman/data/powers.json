@@ -1454,9 +1454,9 @@
 			}
         },		
   		{
-            "id": "harley-queen",
+            "id": "harley-quinn",
             "origins": "corebox",
-            "image": "data/powers/img/harley-queen.png",
+            "image": "data/powers/img/harley-quinn.png",
             "name": {
                 "fr": "HARLEY QUINN",
                 "en": "HARLEY QUINN"
@@ -1484,9 +1484,9 @@
 			}
         },		
   		{
-            "id": "harley-queen-hammer",
+            "id": "harley-quinn-hammer",
             "origins": "corebox",
-            "image": "data/powers/img/harley-queen-hammer.png",
+            "image": "data/powers/img/harley-quinn-hammer.png",
             "name": {
                 "fr": "HARLEY QUINN",
                 "en": "HARLEY QUINN"

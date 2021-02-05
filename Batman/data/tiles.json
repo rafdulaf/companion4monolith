@@ -2955,10 +2955,10 @@
             "origins": "corebox"
         },
 		{
-            "id": "harley-queen",
+            "id": "harley-quinn",
             "name": {
-                "fr": "HARLEY QUEEN",
-                "en": "HARLEY QUEEN"
+                "fr": "HARLEY QUINN",
+                "en": "HARLEY QUINN"
             },
             "color": "gray",
             "tile-type": "single",
@@ -3006,18 +3006,18 @@
 					}					
 				},
             "rank": "leader",
-            "image": "data/tiles/img/harley-queen.png",
-            "imageHD": "data/tiles/img/harley-queen_hd.png",
+            "image": "data/tiles/img/harley-quinn.png",
+            "imageHD": "data/tiles/img/harley-quinn_hd.png",
             "image_location": {"x":66, "y":48},
             "image_zoom": 96,
-            "model": "harley-queen",
+            "model": "harley-quinn",
             "origins": "corebox"
         },		
 		{
-            "id": "harley-queen-gang",
+            "id": "harley-quinn-gang",
             "name": {
-                "fr": "HARLEY QUEEN'S GANG",
-                "en": "HARLEY QUEEN'S GANG"
+                "fr": "HARLEY QUINN'S GANG",
+                "en": "HARLEY QUINN'S GANG"
             },
             "color": "gray",
             "tile-type": "single",
@@ -3046,18 +3046,18 @@
 				},
             "reinforcement": 1,
             "rank": "henchman",
-            "image": "data/tiles/img/harley-queen-gang.png",
-            "imageHD": "data/tiles/img/harley-queen-gang_hd.png",
+            "image": "data/tiles/img/harley-quinn-gang.png",
+            "imageHD": "data/tiles/img/harley-quinn-gang_hd.png",
             "image_location": {"x":66, "y":48},
             "image_zoom": 96,
-            "model": "harley-queen-gang",
+            "model": "harley-quinn-gang",
             "origins": "corebox"
         },
 		{
-            "id": "harley-queen-hammer",
+            "id": "harley-quinn-hammer",
             "name": {
-                "fr": "HARLEY QUEEN",
-                "en": "HARLEY QUEEN"
+                "fr": "HARLEY QUINN",
+                "en": "HARLEY QUINN"
             },
             "subtitle": {
                 "fr": "with HAMMER",
@@ -3103,11 +3103,11 @@
 					}					
 				},
             "rank": "leader",
-            "image": "data/tiles/img/harley-queen-hammer.png",
-            "imageHD": "data/tiles/img/harley-queen-hammer_hd.png",
+            "image": "data/tiles/img/harley-quinn-hammer.png",
+            "imageHD": "data/tiles/img/harley-quinn-hammer_hd.png",
             "image_location": {"x":66, "y":48},
             "image_zoom": 96,
-            "model": "harley-queen-hammer",
+            "model": "harley-quinn-hammer",
             "origins": "corebox"
         },
 		{
