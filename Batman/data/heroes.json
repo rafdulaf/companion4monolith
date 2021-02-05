@@ -2883,7 +2883,7 @@
 				"dice": "red", 
 				"saturation": 3,   
 				"skills": [
-					{ "id": "hackin", "level": 1 },
+					{ "id": "hacking", "level": 1 },
 					{ "id": "investigation", "level": 2 }
 				]
 			},
@@ -2993,10 +2993,751 @@
             "model": "killer_croc",
             "origins": "suicide-squad"
         },		
-		
-		
-		
-		
+        {
+            "id": "clayface",
+            "name": "CLAYFACE",
+            "subtitle": "DETECTIVE COMICS",
+			"back": {
+                "text": {
+                    "fr": "Qui aurait pensé que «Gueule d'Argile» finirait par devenir un allié régulier de Batman et des autres héros de Gotham City ? Basil Karlo devient d'abord brièvement amnésique. Bien qu'au courant de son propre passé criminel, il choisit cependant d'aider Batwoman (Kate Kane). Plus tard, Batman et Batwoman lui offrent une chance de se racheter en rejoigant leurs forces. Il accepte et se sert de ses pouvoirs pour la justice, en vrai héros. Mais Basil est face à un dilemne, il est mourant sous sa forme humaine. Mais s'il reste trop longtemps sous sa forme de Clayface, il devient dément. C'est un allié puissant mais instable.",
+					"en": "Few would have guessed that Clayface would become an ally to Batman and the other heroes of Gotham City. After a struggle with amnesia Basil Karlo awoke from the spell, became aware of his criminal past, and decided to aid Batwoman. After Karlo proved himself worthy of redemption, Batman and Batwoman offered him to join their ranks and become a hero. But Basil faced a dilemna. In his human form, he was slowly dying, while in the form of Clayface he was going insane. This made Clayface an unstable yet powerful ally."
+					},
+					"ID": "Basil Karlo",
+					"size": "Variable",
+					"weight": "Variable"
+				},
+            "color": "blue",
+            "total-gems": 11,
+            "active-gems": 2,
+            "rest-gems": 6,
+            "freemovement": { 
+				"baselevel": 2,
+				"encombrances": [
+					{ "weight": 6, "movement": 1},
+					{ "weight": 7, "movement": 0}
+				]
+			},
+            "size": 2,
+            "menace": 1,
+            "melee": { 
+				"dice": "redreroll", 
+				"saturation": 5, 
+				"skills": [
+					{ "id": "circular_strike", "level": 2 },
+					{ "id": "reach", "level": 1 },
+					{ "id": "berserk", "level": 2 }
+				]
+			},
+            "ranged": { 
+				"dice": "yellow", 
+				"saturation": 2
+			},
+            "manipulation": { 
+				"dice": "orange", 
+				"saturation": 5,   
+				"skills": [
+					{ "id": "attraction", "level": 1 }
+				]
+			},
+            "thought": { 
+				"dice": "yellow", 
+				"saturation": 4
+			},
+            "defense": { 
+				"dice": "orange", 
+				"saturation": 5
+			},
+            "passive-defense": { "dice": "yellow"},
+            "reroll": {"saturation": 4},
+            "movement": {
+				"saturation": 2,  
+				"skills": [
+					{ "id": "wall_breaker", "level": 1 }
+				]
+			},
+            "otherskills": [
+					{ "id": "protected", "level": 2 },
+					{ "id": "regeneration", "level": 1 }
+            ],
+            "traits": [
+                {"id": "moral_code"}
+            ],
+            "image": "data/heroes/img/clayface.png",
+            "imageHD": "data/heroes/img/clayface_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/clayface_back.png",
+            "imageHD_back": "data/heroes/img/clayface_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "clayface",
+            "origins": "corebox"
+        },
+        {
+            "id": "deadshot-suicide-squad",
+            "name": "DEADSHOT",
+            "back": {
+                "text": {
+                    "fr": "A sa première apparition, Floyd Lawton se fait passer pour un héros, virtuose de la gâchette désirant faire régner l'ordre à Gotham City à la place de Batman ! Ce n'est pourtant qu'un faux semblant, et il passe des années en prison avant de s'évader et de vouloir se venger du chevalier noir à l'aide d'une armure dont les poignets cachent des mitrailleuses. Il est ensuite intégré à la Suicide Squad, équipe de criminels forcés de travailler pour le gouvernement américain. Reprenant ses activités de tueur à gages dès qu'il échappe au Squad, Lawton est un obstiné prêt à tout pour accomplir la mission même quand son client change d'avis.",
+					"en": "Deadshot (Floyd Lawton) introduced himself as a masked hero ready to bring law and order to Gotham City. He even seemed to replace Batman for a time! But something bothered the Dark Knight. He quickly realized that Deadshot was a gangster merely posing as a hero. It wasn't long before Lawton was incarcerated and served hard time. When he was finally freed, he had one goal: take revenge on Batman. He upgraded his armor and attached a pair of machine guns to his forearms. Whether it's working for the Suicide Squad or fulfilling his own independant contracts, nothing stops Deadshot from finishing a job."
+					},
+					"ID": "Floyd Lawton",
+					"size": "6ft 1in / 1,85 m",
+					"weight": "193 lbs / 87,5 Kg"
+				},
+            "color": "gray",
+            "total-gems": 10,
+            "active-gems": 2,
+            "rest-gems": 5,
+            "freemovement": { 
+				"baselevel": 2,
+				"encombrances": [
+					{ "weight": 4, "movement": 1},
+					{ "weight": 6, "movement": 0}
+				]
+			},
+            "size": 1,
+            "menace": 1,
+            "melee": { 
+				"dice": "orange", 
+				"saturation": 3
+			},
+            "ranged": { 
+				"dice": "red", 
+				"saturation": 3,  
+				"skills": [
+					{ "id": "marksman", "level": 1 , "encombrance": 5 },
+					{ "id": "retaliation", "level": 2, "encombrance": 3 }
+				]
+			},
+            "manipulation": { 
+				"dice": "orange", 
+				"saturation": 4,   
+				"skills": [
+					{ "id": "munitions_specialist", "level": 1 }
+				]
+			},
+            "thought": { 
+				"dice": "yellow", 
+				"saturation": 4
+			},
+            "defense": { 
+				"dice": "orange", 
+				"saturation": 4
+			},
+            "passive-defense": { "dice": "orange"},
+            "reroll": {"saturation": 4},
+            "movement": {
+				"saturation": 4
+			},
+            "otherskills": [
+                { "id": "nerves_steel", "level": 2 },
+                { "id": "pushing_limits", "level": 1 },
+                { "id": "ambidextry", "level": 1 }
+            ],
+            "image": "data/heroes/img/deadshot-suicide-squad.png",
+            "imageHD": "data/heroes/img/deadshot-suicide-squad_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/deadshot-suicide-squad_back.png",
+            "imageHD_back": "data/heroes/img/deadshot-suicide-squad_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "deadshot-suicide-squad",
+            "origins": "suicide-squad"
+        },		
+        {
+            "id": "harley-quinn-hammer",
+            "name": "HARLEY QUINN",
+            "subtitle": "SUICIDE SQUAD",
+			"back": {
+                "text": {
+                    "fr": "Harleen Quinzel était une jeune psychiatre venue travailler à l'asile d'Arkham, au contact des criminels les plus dérangés. Elle y tomba sous le charme et la coupe du Joker qui l'utilisa pour s'évader. Ils ont ensuite entretenu une relation toxique et passionnelle jusqu'à une séparation houleuse. Depuis, Harley Quinn met ses talents de bagarreuse et de psychologue à profit d'incroyables larcins, mais aussi comme agent, entre autres, de la Suicide Squad. Son arme de prédilection est un énorme maillet mais elle sait aussi manier batte, pistolets et mitrailleuses. Mais le plus redoutable chez elle, c'est son imprévisibilité.",
+					"en": "Harleen Quinzeln a promising psychiatrist, went to Arkham Asylum to study the most disturbed criminal minds. As it happened, she fell in love with The Joker. The deranged villain used her to make his escape, but after a passionate and toxic relationship the two parted ways. Since then, Harley put her talents to use in heigh stakes heists and, occasionally, as a member of the Suicide Squad. Her weapon of choice is a huge mallet, but she is also known to use baseball bats, handguns, and automatic rifles. As lethal as these weapons can be, none are more dangerous than her unpredictability."
+					},
+					"ID": "Harleen Quinzel",
+					"size": "5ft 7in / 1,70 m",
+					"weight": "115 lbs / 52,16 Kg"
+				},
+            "color": "gray",
+            "total-gems": 10,
+            "active-gems": 2,
+            "rest-gems": 5,
+            "freemovement": { 
+				"baselevel": 3,
+				"encombrances": [
+					{ "weight": 3, "movement": 2},
+					{ "weight": 4, "movement": 1},
+					{ "weight": 5, "movement": 0}
+				]
+			},
+            "size": 1,
+            "menace": 1,
+            "melee": { 
+				"dice": "orange", 
+				"saturation": 4, 
+				"skills": [
+					{ "id": "martial_arts", "level": 1 , "encombrance": 4 }
+				]
+			},
+            "ranged": { 
+				"dice": "yellow", 
+				"saturation": 4
+			},
+            "manipulation": { 
+				"dice": "orange", 
+				"saturation": 4,   
+				"skills": [
+					{ "id": "munitions_specialist", "level": 1}
+				]
+			},
+            "thought": { 
+				"dice": "orange", 
+				"saturation": 4
+			},
+            "defense": { 
+				"dice": "yellowreroll", 
+				"saturation": 4
+			},
+            "passive-defense": { "dice": "yellow"},
+            "reroll": {"saturation": 5},
+            "movement": {
+				"saturation": 4,  
+				"skills": [
+					{ "id": "parkour", "level": 2 , "encombrance": 4 },
+					{ "id": "elusive", "level": 1 , "encombrance": 3 },
+					{ "id": "mobility", "level": 1, "encombrance": 4 }
+				]
+			},
+            "otherskills": [
+                { "id": "nerves_steel", "level": 1},
+                { "id": "imaginary_friend", "level": 1 }
+            ],
+            "image": "data/heroes/img/harley-quinn-hammer.png",
+            "imageHD": "data/heroes/img/harley-quinn-hammer_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/harley-quinn-hammer_back.png",
+            "imageHD_back": "data/heroes/img/harley-quinn-hammer_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "harley-quinn-hammer",
+            "origins": "suicide-squad"
+        },		
+        {
+            "id": "deathstoke-suicide-squad",
+            "name": "DEATHSTROKE",
+            "back": {
+                "text": {
+                    "fr": "Slade Wilson est le produit d'expériences visant à créer un super-soldat. Si bien qu'il utilise à fond des capacités du cerveau humain, latentes chez les personnes normales. Ses réflexes et sa rapidité d'action sont magnifiés mais la procédure a déséquilibré son esprit, exarcerbant ses côtés violents. Au lieu d'être un soldat parfait, c'est un tueur ultra-dangereux rompu à l'usage de nombreuses armes, avec une prédilection pour l'épée et le tir de précision. Ses penchants destructeurs lui on couté sa famille. Mercenaire, Wilson loue ses services au plus offrant mais est également forcé de travailler au sein de la Suicide Squad.",
+					"en": "Salde Wilson is the product of the army's attempts to create a super-soldier. Dangerous experiments granted him the ability to access dormant areas of the human brain wich enhanced his reflexes and speed. But the procedure also twisted his mind and amplified his violent urges. Instead of the perfect soldier, Wilson became an adept assassin, well-versed  in the use of myriad weapons. His volatile temperament eventually cost him his family, and with nothing left he offered his services to the highest bidder and--sometimes--to the Suicide Squad."
+					},
+					"ID": "Slade Wilson",
+					"size": "6ft 4in / 1,93 m",
+					"weight": "225 lbs / 102 Kg"
+				},
+            "color": "gray",
+            "total-gems": 10,
+            "active-gems": 2,
+            "rest-gems": 5,
+            "freemovement": { 
+				"baselevel": 2,
+				"encombrances": [
+					{ "weight": 4, "movement": 1},
+					{ "weight": 5, "movement": 0}
+				]
+			},
+            "size": 1,
+            "menace": 1,
+            "melee": { 
+				"dice": "red", 
+				"saturation": 3, 
+				"skills": [
+					{ "id": "combo", "level": 1 , "encombrance": 4 },
+					{ "id": "martial_arts", "level": 1 , "encombrance": 4 },
+					{ "id": "counterattack", "level": 2, "encombrance": 3 }
+				]
+			},
+            "ranged": { 
+				"dice": "orangereroll", 
+				"saturation": 4,  
+				"skills": [
+					{ "id": "marksman", "level": 1, "encombrance": 4 }
+				]
+			},
+            "manipulation": { 
+				"dice": "orange", 
+				"saturation": 4,   
+				"skills": [
+					{ "id": "munitions_specialist", "level": 1 }
+				]
+			},
+            "thought": { 
+				"dice": "orange", 
+				"saturation": 5,   
+				"skills": [
+					{ "id": "investigation", "level": 1 }
+				]
+			},
+            "defense": { 
+				"dice": "orangereroll", 
+				"saturation": 4
+			},
+            "passive-defense": { "dice": "orange"},
+            "reroll": {"saturation": 4},
+            "movement": {
+				"saturation": 4,  
+				"skills": [
+					{ "id": "parkour", "level": 1, "encombrance": 4 }
+				]
+			},
+            "otherskills": [
+                { "id": "regeneration", "level": 1 }
+            ],
+            "image": "data/heroes/img/deathstoke-suicide-squad.png",
+            "imageHD": "data/heroes/img/deathstoke-suicide-squad_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/deathstoke-suicide-squad_back.png",
+            "imageHD_back": "data/heroes/img/deathstoke-suicide-squad_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "deathstoke-suicide-squad",
+            "origins": "suicide-squad"
+        },		
+        {
+            "id": "captain-boomerang",
+            "name": "CAPTAIN BOOMERANG",
+            "back": {
+                "text": {
+                    "fr": "Il y a des gens qui se refusent à forcer leur nature. L'australien Digger Harkness, lui, n'est bon qu'à voler, à lancer et rattrapper des boomerangs. Il mena une carrière profitable de petit braqueur. Mais être un bon voleur peut vous attirer des ennuis et vous envoyer en prison, surtout quand on rencontre des gens qui vont plus vite que vos boomerangs, comme Flash. Et c'est en prison qu'Amanda Waller recrute les membres du Suicide Squad. Peu de gens prennent Captain Boomerang au sérieux? C'est un tort : son habileté avec ses boomerangs gadgets le rend redoutable.",
+					"en": "None would call Digger Harkness a criminal mastermind, but he's a man who can play his strengths. He grew up in Korumburra, Autralia, as an impoverished young thief with a freakish talent for boomerangs. Harkness eventually carved out a profitable career as a bank robber, but after realizing nobody can outrun The Flash, he found himself locked away in Belle Reve. There he met Amanda Waller, who saw his potential and recruited him for the Suicide Squad. Though few people take Harkness seriously, his peerless mastery of the boomerang makes him a formidable foe."
+					},
+					"ID": "Digger Harkness",
+					"size": "5ft 9in / 1,75 m",
+					"weight": "167 lbs / 76 Kg"
+				},
+            "color": "gray",
+            "total-gems": 10,
+            "active-gems": 2,
+            "rest-gems": 5,
+            "freemovement": { 
+				"baselevel": 2,
+				"encombrances": [
+					{ "weight": 4, "movement": 1},
+					{ "weight": 5, "movement": 0}
+				]
+			},
+            "size": 1,
+            "menace": 1,
+            "melee": { 
+				"dice": "orange", 
+				"saturation": 3, 
+				"skills": [
+					{ "id": "martial_arts", "level": 1 , "encombrance": 3 }
+				]
+			},
+            "ranged": { 
+				"dice": "orangereroll", 
+				"saturation": 5,  
+				"skills": [
+					{ "id": "marksman", "level": 1, "encombrance": 4 }
+				]
+			},
+            "manipulation": { 
+				"dice": "orange", 
+				"saturation": 4,   
+				"skills": [
+					{ "id": "lock_piking", "level": 1 }
+				]
+			},
+            "thought": { 
+				"dice": "yellow", 
+				"saturation": 4
+			},
+            "defense": { 
+				"dice": "orange", 
+				"saturation": 3
+			},
+            "passive-defense": { "dice": "yellow"},
+            "reroll": {"saturation": 4},
+            "movement": {
+				"saturation": 4
+			},
+            "otherskills": [
+                { "id": "nerves_steel", "level": 1 },
+                { "id": "sneak", "level": 1 },
+                { "id": "ambidextry", "level": 1 }
+            ],
+            "image": "data/heroes/img/captain-boomerang.png",
+            "imageHD": "data/heroes/img/captain-boomerang_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/captain-boomerang_back.png",
+            "imageHD_back": "data/heroes/img/captain-boomerang_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "captain-boomerang",
+            "origins": "suicide-squad"
+        },		
+        {
+            "id": "poison-ivy-new52",
+            "name": "POISON IVY",
+            "subtitle": "NEW 52",
+			"color": "gray",
+            "total-gems": 9,
+            "active-gems": 2,
+            "rest-gems": 5,
+            "freemovement": { 
+				"baselevel": 2,
+				"encombrances": [
+					{ "weight": 3, "movement": 1},
+					{ "weight": 4, "movement": 0}
+				]
+			},
+            "size": 1,
+            "menace": 1,
+            "melee": { 
+				"dice": "blackreroll", 
+				"saturation": 3, 
+				"skills": [
+					{ "id": "reach", "level": 1}
+				]
+			},
+            "ranged": { 
+				"dice": "yellow", 
+				"saturation": 3
+			},
+            "manipulation": { 
+				"dice": "orange", 
+				"saturation": 5
+			},
+            "thought": { 
+				"dice": "red", 
+				"saturation": 4
+			},
+            "defense": { 
+				"dice": "yellow", 
+				"saturation": 4,  
+				"skills": [
+					{ "id": "protected", "level": 1 }
+				]
+			},
+            "passive-defense": { "dice": "white"},
+            "reroll": {"saturation": 4},
+            "movement": {
+				"saturation": 4
+			},
+            "otherskills": [
+                { "id": "support", "level": 1 },
+                { "id": "elite_command", "level": 1 },
+                { "id": "misfortune", "level": 1 },
+                { "id": "attraction", "level": 1 },
+                { "id": "poison", "level": 1 }
+            ],
+            "traits": [
+                {"id": "harmless"}
+            ],
+            "image": "data/heroes/img/poison-ivy-new52.png",
+            "imageHD": "data/heroes/img/poison-ivy-new52_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/poison-ivy-new52_back.png",
+            "imageHD_back": "data/heroes/img/poison-ivy-new52_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "poison-ivy-new52",
+            "origins": "suicide-squad"
+        },
+        {
+            "id": "poison-ivy",
+            "name": "POISON IVY",
+            "color": "gray",
+            "total-gems": 9,
+            "active-gems": 2,
+            "rest-gems": 5,
+            "freemovement": { 
+				"baselevel": 2,
+				"encombrances": [
+					{ "weight": 3, "movement": 1},
+					{ "weight": 4, "movement": 0}
+				]
+			},
+            "size": 1,
+            "menace": 1,
+            "melee": { 
+				"dice": "blackreroll", 
+				"saturation": 3, 
+				"skills": [
+					{ "id": "reach", "level": 1 }
+				]
+			},
+            "ranged": { 
+				"dice": "yellow", 
+				"saturation": 3
+			},
+            "manipulation": { 
+				"dice": "orange", 
+				"saturation": 5,   
+				"skills": [
+					{ "id": "attraction", "level": 1}
+				]
+			},
+            "thought": { 
+				"dice": "red", 
+				"saturation": 5
+			},
+            "defense": { 
+				"dice": "yellow", 
+				"saturation": 4,  
+				"skills": [
+					{ "id": "protected", "level": 2 }
+				]
+			},
+            "passive-defense": { "dice": "white"},
+            "reroll": {"saturation": 4},
+            "movement": {
+				"saturation": 4
+			},
+            "otherskills": [
+                { "id": "poison", "level": 4 },
+                { "id": "support", "level": 1  },
+                { "id": "elite_command", "level": 2 },
+                { "id": "misfortune", "level": 1 }
+            ],
+            "traits": [
+                {"id": "harmless"}
+            ],
+            "image": "data/heroes/img/poison-ivy.png",
+            "imageHD": "data/heroes/img/poison-ivy_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/poison-ivy_back.png",
+            "imageHD_back": "data/heroes/img/poison-ivy_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "poison-ivy",
+            "origins": "suicide-squad"
+        },		
+		{
+            "id": "eldiablo",
+            "name": "EL DIABLO",
+            "back": {
+                "text": {
+                    "fr": "La Pyrokinésie est un pouvoir dangereux, et El Diablo l'a appris à ses dépens. Dans le coma après avoir été trahi par des membres de sa bande il voyagea dans le monde des esprits, qui lui promirent de lui donner les moyens de sa vengeance. Lors d'une bagarre avec un gang, Chato Santana découvrit la nature de ce moyen en mettant accidentellement le feu à immeuble, tuant tous ses occupants. Dont des femmes et des enfants. Depuis, il vit son pouvoir comme une malédiction. Mais cette «malédiction» est très utile au combat, et c'est pourquoi Amanda Waller le recruta pour faire bénéficier le Suicide Squad de... sa puissance de feu !",
+					"en": "After his gang betrayed him, Chato Santana fought back and accidently burned down a building, taking the lives of innocent men, women and children. Pyokinesis is an unpredictable and dangerous power--a power Santana now saw as a curse. But Amanda Waller didn't see a curse: she saw an oppurtunity and recruited Santana to join the Suicide Squad where he may just find new purpose."
+					},
+					"ID": "Chato Santana",
+					"size": "6ft / 1,83 m",
+					"weight": "182 lbs / 68 Kg"
+				},
+            "color": "gray",
+            "total-gems": 10,
+            "active-gems": 2,
+            "rest-gems": 5,
+            "freemovement": { 
+				"baselevel": 2,
+				"encombrances": [
+					{ "weight": 4, "movement": 1},
+					{ "weight": 5, "movement": 0}
+				]
+			},
+            "size": 1,
+            "menace": 1,
+            "melee": { 
+				"dice": "orange", 
+				"saturation": 3
+			},
+            "ranged": { 
+				"dice": "orange", 
+				"saturation": 3
+			},
+            "manipulation": { 
+				"dice": "orange", 
+				"saturation": 5
+			},
+            "thought": { 
+				"dice": "yellow", 
+				"saturation": 4
+			},
+            "defense": { 
+				"dice": "yellowreroll", 
+				"saturation": 4
+			},
+            "passive-defense": { "dice": "yellow"},
+            "reroll": {"saturation": 4},
+            "movement": {
+				"saturation": 4
+			},
+            "otherskills": [
+                { "id": "grenade", "level": 1 },
+                { "id": "blast", "level": 1 },
+                { "id": "flame", "level": 1 }
+            ],
+            "image": "data/heroes/img/eldiablo.png",
+            "imageHD": "data/heroes/img/eldiablo_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/eldiablo_back.png",
+            "imageHD_back": "data/heroes/img/eldiablo_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "eldiablo",
+            "origins": "suicide-squad"
+        },		
+        {
+            "id": "duela-dent",
+            "name": "DUELA DENT",
+            "back": {
+                "text": {
+                    "fr": "Vous pensez être la ou le plus grand fan de Batman ? La Fille du Joker, c'est une groupie absolue du Joker. Une admiratrice totalement démente et qui, à la différence d'Harley Quinn n'est pas motivée spécialement par l'amour. Elle se voit comme l'héritière spirituelle du Joker, qu'elle considère comme un père (ce qui est faux). La Fille du Joker porte comme masque la peau du visage arraché du Joker, perdue lors d'une précédente aventure. A l'occasion employée par la Suicide Squad, elle utilise certaines techniques ou gadgets inspirés du Joker. Si c'est bien une ennemie de Batman, elle est également fascinée par Nightwing.",
+					"en": "Strangely, The Joker has many fans, but none with the fervor of The Joker's Daughter. Unlike Harley Quinn, this clown-faced criminal is not motivated by love, but rather a desire to become the spiritual successor to the Clown Prince of Crime. Her claim that she's The Joker's daughter has been proven false, but that doesn't stop her from wearing his severed face as a mask, or emulating his use of weird gadgets. Of course, as her namesake implies, she considers Batman an ennemy, but she is also fascinated with hus ally Nightwing. When she's not embroiled in her own deranged plots, she serves as a member of the Suicide Squad."
+					},
+					"ID": "Duela Dent",
+					"size": "5ft 4in / 1,63 m",
+					"weight": "119 lbs / 54 Kg"
+				},
+            "color": "gray",
+            "total-gems": 10,
+            "active-gems": 2,
+            "rest-gems": 5,
+            "freemovement": { 
+				"baselevel": 2,
+				"encombrances": [
+					{ "weight": 4, "movement": 1},
+					{ "weight": 5, "movement": 0}
+				]
+			},
+            "size": 1,
+            "menace": 2,
+            "melee": { 
+				"dice": "orange", 
+				"saturation": 4, 
+				"skills": [
+					{ "id": "martial_arts", "level": 1 }
+				]
+			},
+            "ranged": { 
+				"dice": "orange", 
+				"saturation": 4,  
+				"skills": [
+					{ "id": "pointblank", "level": 1 }
+				]
+			},
+            "manipulation": { 
+				"dice": "yellow", 
+				"saturation": 5,   
+				"skills": [
+					{ "id": "munitions_specialist", "level": 1  }
+				]
+			},
+            "thought": { 
+				"dice": "black", 
+				"saturation": 3
+			},
+            "defense": { 
+				"dice": "yellowreroll", 
+				"saturation": 4
+			},
+            "passive-defense": { "dice": "yellowreroll"},
+            "reroll": {"saturation": 4},
+            "movement": {
+				"saturation": 4
+			},
+            "otherskills": [
+                { "id": "nerves_steel", "level": 1  },
+                { "id": "horror", "level": 1 },
+                { "id": "imaginary_friend", "level": 1 }
+            ],
+            "image": "data/heroes/img/duela-dent.png",
+            "imageHD": "data/heroes/img/duela-dent_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/duela-dent_back.png",
+            "imageHD_back": "data/heroes/img/duela-dent_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "duela-dent",
+            "origins": "suicide-squad"
+        },
+        {
+            "id": "black-manta",
+            "name": "BLACK MANTA",
+            "back": {
+                "text": {
+                    "fr": "Naufrageur, pilleur d'épaves, voleur de sous-marins, David Hyne, alias Black Manta, tient à la fois du pirate et du terroriste. Agissant surtout sous la surface des océans, ce malfrat ne pouvait que croiser la route d'Aquaman. Mais les activités criminelles de Black Manta en ont également fait de lui une recrue de choix pour le Suicide Squad. Il est aussi, cette fois volontairement, un membre de la Légion de la Fatalité, opposée à la Ligue des Justiciers. Ne le croyez pas sans pouvoirs en dehors de l'eau. Son casque émet de puissants lasers. Son armure résiste à la pression des profondeurs et peut soulever des tonnes.",
+					"en": "David Hyne--aka Black Manta-- is a special combination of pirate and terrorist. He's known to hijack submarines and sink vessels only to plunder their wrecks. These underwater antics frequently bring him in conflict with the Protector of the Deep--Aquaman. Though Manta is dangerous in the water, his pressure-resistant armor grants him a tough exterior and super-strenght, and his iconic helmet emits powerful lasers. Perhaps it was Manta's special skillset that made him an attractive prospect for the Suicide Squad. He is also known to serve as a member of the Legion of Doom."
+					},
+					"ID": "David Hyde",
+					"size": "6ft 4in / 1,93 m",
+					"weight": "250 lbs / 113 Kg"
+				},
+            "color": "gray",
+            "total-gems": 11,
+            "active-gems": 2,
+            "rest-gems": 5,
+            "freemovement": { 
+				"baselevel": 2,
+				"encombrances": [
+					{ "weight": 4, "movement": 1},
+					{ "weight": 5, "movement": 0}
+				]
+			},
+            "size": 1,
+            "menace": 1,
+            "melee": { 
+				"dice": "red", 
+				"saturation": 4, 
+				"skills": [
+					{ "id": "combo", "level": 1 , "encombrance": 4 }
+				]
+			},
+            "ranged": { 
+				"dice": "orange", 
+				"saturation": 4
+			},
+            "manipulation": { 
+				"dice": "orange", 
+				"saturation": 4,   
+				"skills": [
+					{ "id": "munitions_specialist", "level": 1 }
+				]
+			},
+            "thought": { 
+				"dice": "orangereroll", 
+				"saturation": 4,   
+				"skills": [
+					{ "id": "hacking", "level": 1 },
+					{ "id": "tactician", "level": 1 }
+				]
+			},
+            "defense": { 
+				"dice": "orange", 
+				"saturation": 3
+			},
+            "passive-defense": { "dice": "orangereroll"},
+            "reroll": {"saturation": 4},
+            "movement": {
+				"saturation": 4,  
+				"skills": [
+					{ "id": "parkour", "level": 1 , "encombrance": 4 },
+					{ "id": "mobility", "level": 3, "encombrance": 4 }
+				]
+			},
+            "otherskills": [
+                { "id": "electricity", "level": 1 }
+            ],
+            "image": "data/heroes/img/black-manta.png",
+            "imageHD": "data/heroes/img/black-manta_hd.png",
+            "image_zoom": "176",
+            "image_location": { "x": "-12", "y": "56" },
+            "image_back": "data/heroes/img/black-manta_back.png",
+            "imageHD_back": "data/heroes/img/black-manta_hd_back.png",
+            "image_zoom_back": "176",
+            "image_location_back": { "x": "-12", "y": "56" },
+            "model": "black-manta",
+            "origins": "suicide-squad"
+        },		
 		
 		
 		
