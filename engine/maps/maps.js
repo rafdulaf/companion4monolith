@@ -1,15 +1,15 @@
 var Maps = {
     _i18n: {
         'fr': {
-            'menu': "Cartes",
-            'back': "Retour au choix des cartes",
-            'openMap': "Cliquez pour voir la carte: ",
+            'menu': "Plateaux",
+            'back': "Retour au choix des plateaux",
+            'openMap': "Cliquez pour voir le plateau : ",
             'los': "Lignes de vue",
             'help': "Règles du plateau",
             'rotate': "Tourner le plateau",
-            'forum': "Une question sur la carte ? Demandez sur le forum !",
-            'losfile': "Télécharger la carte statique des lignes de vue",
-            'pdf': "Télécharger les règles de la carte",
+            'forum': "Une question sur le plateau ? Demandez sur le forum !",
+            'losfile': "Télécharger l'image des lignes de vue du plateau",
+            'pdf': "Télécharger les règles du plateau",
             'start': "Cliquez sur une zone pour voir les lignes de vue",
             'legend': "Légende",
             'clickhelp1': "La zone actuellement selectionnée est en bleu et offre des lignes de vues vers toutes les zones colorées.",
@@ -17,10 +17,10 @@ var Maps = {
             'clickhelp6': "Les zones vertes sont au même niveau que la zone bleue.",
             'clickhelp5': "Les zones colorées en turquoise sont au dessus.",
             'clickhelp3': "Le nombre de cercles verts imbriqués au centre d'une zone indique le niveau d'élévation.",
-            'copyright': "Les textes d'aide des cartes sont issus des textes proposés par leurs créateurs respectifs. Certains sont retouchés.<br/>"
-                        + "Certaines cartes proposent de télécharger une vue statique des lignes de vue. Ces vues ont été réalisées par <a href='https://the-overlord.com/index.php?/profile/13-roolz/' target='_blank'>@Roolz</a>.<br/>"
+            'copyright': "Les textes d'aide des plateaux sont issus des textes proposés par leurs créateurs respectifs. Certains sont retouchés.<br/>"
+                        + "Certains plateaux proposent de télécharger une vue statique des lignes de vue. Ces vues ont été réalisées par <a href='https://the-overlord.com/index.php?/profile/13-roolz/' target='_blank'>@Roolz</a>.<br/>"
                         + "Le principe des lignes de vues dynamiques est une idée de <a href='https://the-overlord.com/index.php?/profile/88-pamplerousse/' target='_blank'>@Pamplerousse</a>.<br/>"
-                        + "La carte :",
+                        + "Le plateau :",
             'copyright_prop': "est la propriété de"
         },
         'en': {
@@ -32,7 +32,7 @@ var Maps = {
             'rotate': "Turn the board",
             'forum': "A question on this board? Ask the forum!",
             'losfile': "Download the static lines of sight board",
-            'pdf': "Download the rules for this map",
+            'pdf': "Download the board rules",
             'start': "Click in an area to see the lines of sight",
             'legend': "Legend",
             'clickhelp1': "Blue area is the selected area. It has has line of sight to all colored areas.",
@@ -55,7 +55,7 @@ var Maps = {
             'rotate': "Ruota la mappa",
             'forum': "Domande su questa mappa? Falle sul forum!",
             'losfile': "Scarica la mappa statica con le linee di vista",
-            'pdf': "Scarica le regole delle carte",
+            'pdf': "Scarica le regole delle mappa",
             'start': "Click in un'area per visualizzare le linee di vista",
             'legend': "Legenda",
             'clickhelp1': "Le aree blu sono le aree selezionate. Hanno linea di vista libera verso tutte le aree colorate.",
