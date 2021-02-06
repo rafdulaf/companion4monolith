@@ -9723,7 +9723,28 @@
             "image_location": {"x":66, "y":48},
             "image_zoom": 96,
             "model": "catwoman-hush",
-            "origins": "catwoman"
+            "origins": "catwoman",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "L'ATTAQUE DU CHAT",
+						"en": "CAT ATTACK"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Furtivement, le félin se déplace. Et s'il se laisse approcher, c'est pour mieux mordre la main qui lui est tendue.",
+								"en": "The cat slinks close, earns your trust, and bites your hand."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain réalise immédiatement une activation de personnage avec Catwoman. Pour cela, il suit les étapes d'activation d'un personnage contrôlé par une tuile en respectant les exceeptions suivantes :\n--Catwoman ne peut effectuer qu'une seule de ses deux étapes de mouvement ;\n--lors de l'étape de déclaration d'une action autre que le mouvement, il ne peut que déclarer des actions d'attaque au corps-à-corps.",
+										"en": "The villain immediately performs a character activation with Catwoman. To do so, they follow the Activate a Character Controlled by a Tile steps with the following exceptions:\n--Catwoman can only perform one of the two movement steps.\n--During the Declare an Action Other than Movement step, they can only declare a melee attack."
+							}
+						}
+					}
+				}
+			}
         },		
 		{
             "id": "hounds-gray",
@@ -9843,7 +9864,28 @@
             "image_location": {"x":66, "y":48},
             "image_zoom": 96,
             "model": "reaper",
-            "origins": "reaper"
+            "origins": "reaper",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "PROCESSION MORTUAIRE",
+						"en": "FUNERAL PROCESSION"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Nappé dans des volutes de fumée, il terrifie sa proie avant de la faucher.",
+								"en": "Surrounded by swirls of smoke, he terrifies his prey before cutting them down."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain réalise immédiatement une activation de personnage avec The Reaper. Il effectue sa première étape de mouvement mais pas la seconde. Lors de ce mouvement, il ignore la gêne due aux envergures adverses. Le vilain place un pion fumigène sur chaque zone traversée par The Reaper, y compris ses zones de départ et d'arrivée.\nÀ l'issue du déplacement, The Reaper peut effectuer un attaque au corps-à-corps avec la caractéristique suivante : 2 dés orange.",
+										"en": "The villain immediately performs a character activation with The Reaper. They carry out their First Movement Step but not the second. During this movement, they ignore the hindering caused by enemy size indexes. The villain places a smoke grenade token on each area that The Reaper crosses, including the departure and arrival areas. After the movement, The Reaper performs a melee attack with 2 orange dice."
+							}
+						}
+					}
+				}
+			}
         },		
 		{
             "id": "carmine-falcone",
@@ -9887,7 +9929,28 @@
             "image_location": {"x":66, "y":48},
             "image_zoom": 96,
             "model": "carmine-falcone",
-            "origins": "carmine-falcone"
+            "origins": "carmine-falcone",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "LE PARRAIN",
+						"en": "THE GODFATHER"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Grand stratège, il déplace ses pions comme bon lui semble, même au cœur de la bataille",
+								"en": "A master strategist, Falcone moves his pieces as neede, even in the heart of the battle."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain réalise immédiatement une activation de personnage avec Carmine Falcone. Il effectue seulement sa première étape de mouvement.\nLe vilain effectue ensuite deux activations avec un personnage de niveau sbire et avec un personnage de niveau élite qu'il contrôle.",
+										"en": "The villain immediately performs a character activation with Carmine Falcone. They only carry out their First Movement Step. The villain then performs two activations of characters that they control. One must be a henchman character and the other an elite character."
+							}
+						}
+					}
+				}
+			}
         },		
 		{
             "id": "arnold-wesker",
@@ -10234,7 +10297,29 @@
             "image_location": {"x":66, "y":48},
             "image_zoom": 96,
             "model": "shen-fang",
-            "origins": "shen-fang"
+            "origins": "shen-fang",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "MAÎTRE DES DRAGONS",
+						"en": "MASTER OF DRAGONS"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Un bon leader ne sort jamais sans ses hommes.",
+								"en": "A true leader never leaves his followers behind."
+							},
+							"type" : "permanent",
+							"longdescription": {
+										"fr": "À la fin de l'étape de sélection du QG, le vilain remplace sa tuile évènement soit par la tuile de Ghost Dragons, soit par la tuile de Brutes with firearm. Il place ensuite 2 figurines correspondantes dans la zone de Shen Fang.",
+										"en": "At the end of the Leader Selection step, the villain replaced their event tile either with the Ghost Dragons tile or the Brutes with firearm tile. They then place 2 Ghost Dragons or Brutes with firearm miniatures in Shen Fang's area."
+							}
+							
+						}
+					}
+				}
+			}
         },
 		{
             "id": "cluemaster",
@@ -10417,7 +10502,40 @@
             "image_location": {"x":66, "y":48},
             "image_zoom": 96,
             "model": "kgbeast",
-            "origins": "kgbeast"
+            "origins": "kgbeast",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "MERCENAIRE AGUERRI",
+						"en": "SEASONED MERCENARY"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Tout ce qui se dresse face à The Beast finit par tomber.",
+								"en": "All who stand before The Beast end up falling."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain réalise immédiatement une activation de personnage avec The Beast. Il peut seulement effectuer une attaque au corps-à-corps avec la caractéristique suivante : 1 dé orange + 1 dé jaune. Il peut ensuite effectuer une attaque à distance avec la caractéristique suivante : 1 dé orange + 1 dé jaune.",
+										"en": "The villain immediately performs a character activation with The Beast. They only carry out a melee attack with 1 orange die + 1 yellow die. They can then carry out a ranged attack with 1 orange die + 1 yellow die."
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "The Beast effectue immédiatement un mouvement.",
+								"en": "The Beast immediately performs a movement."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain réalise immédiatement une activation de personnage avec The Beast. Il effectue seulement sa première étape de mouvement.",
+										"en": "The villain immediately performs a character activation with The Beast. They only carry out theii First Movement Step."
+							}
+						}
+					}
+				}
+			}
         },		
 		{
             "id": "nobody",
@@ -10477,7 +10595,37 @@
             "image_location": {"x":66, "y":48},
             "image_zoom": 96,
             "model": "nobody",
-            "origins": "nobody"
+            "origins": "nobody",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "INVISIBILITÉ",
+						"en": "INVISIBILITY"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Sa tenue lui permet de contourner ses adversaires, invisible, pour les frapper lorsqu'ils s'y attendent le moins",
+								"en": "You won't see him coming"
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Si la figurine de Nobody est sur le plateau, le vilain place un pion invisibilité dans deux zones différentes, chacune jusqu'à 3 de distance de Nobody. Il retire ensuite Nobody du plateau.\nLorsque Nobody est activé, si sa figurine n'est pas en jeu, le vilain la place dans la zone d'un pion d'invisibilité, puis il retire ces pions. Il active ensuite Nobody normalement.",
+										"en": "If the miniature of Nobody is on the board, the villain places an invisibility token in two different areas, each one up to 3 areas distance from Nobody. Nobody is then removed from the board.\nWhen Nobody is activated, if his miniature is not in play, the villain places his miniature in the area of an invisibility token. The tokens are then removed. Nobody is then activated in the normal way."
+							},
+							"tokens" : {
+								"0": {
+									"name": {
+										"fr": "PION INVISIBILITÉ X2",
+										"en": "INVISIBILITY TOKEN"
+										},
+									"image": ["data/powers/img/invisibility.png", "data/powers/img/invisibility.png"]
+								}					
+							}
+						}
+					}
+				}
+			}
         },		
 		{
             "id": "owlman-lincoln-march",
@@ -10533,7 +10681,28 @@
             "image_location": {"x":66, "y":48},
             "image_zoom": 96,
             "model": "owlman-lincoln-march",
-            "origins": "owlman-lincoln-march"
+            "origins": "owlman-lincoln-march",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "DUPERIE",
+						"en": "DECEPTION"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Il est tellement impossible de déchiffrer ses intentions que ses adversaires doivent s'adapter à chacun de ses mouvements.",
+								"en": "Owlman is an unpredictable opponent. His foes must stay on their toes."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Lors du prochain tour du héros, le coût d'activation de chacune de ses tuiles est augmenté de 1.",
+										"en": "During the next hero turn, the cost of activating each of their tiles is increased by 1."
+							}
+						}
+					}
+				}
+			}
         },		
 		{
             "id": "amygdala",
@@ -10571,7 +10740,40 @@
             "image_location": {"x":66, "y":48},
             "image_zoom": 96,
             "model": "amygdala",
-            "origins": "amygdala"
+            "origins": "amygdala",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "TREMBLEMENT DE TERRE",
+						"en": "EARTHQUAKE"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Amydgala fait trembler le sol sous les coups",
+								"en": "Amydgala's mighty blows shake the earth"
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Tous les personnages dans la zone d'Amydgala subissent l'effet de la compétence immobilisation comme s'ils avaient subi une blessure. Amydgala ignore cet effet.",
+										"en": "All characters other than Amydgala ocated in the same area suffer the effect of the immobilization skill."
+							}
+						},
+						"1": {
+							"cumulative": false,
+							"shortdescription": {
+								"fr": "Amydgala effectue immédiatement un mouvement.",
+								"en": "Amydgala immediately performs a movement"
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain réalise immédiatement une activation de personnage avec Amydgala. Il effectue seulement sa première étape de mouvement.",
+										"en": "The villain immediately performs a character activation with Amydgala. They only carry out their First Movement Step."
+							}
+						}
+					}
+				}
+			}
         },
 		{
             "id": "architect",
@@ -10626,7 +10828,28 @@
             "image_location": {"x":66, "y":48},
             "image_zoom": 96,
             "model": "architect",
-            "origins": "architect"
+            "origins": "architect",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "POSEUR DE BOMBES",
+						"en": "BOMBEUR"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "The Architect a repéré les lieux et a déjà placé ses jouets",
+								"en": "The Architect has located the site and has already planted his toys."
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "Le vilain choisit une zone jusqu'à 3 de distance de The Architect. Il y déclenche une explosion de niveau 2.",
+										"en": "The villain choses an area up to 3 areas distance from The Architect. They trigger a level 2 explosion in this area."
+							}
+						}
+					}
+				}
+			}
         },
 		{
             "id": "ghost-dragons",
