@@ -1,7 +1,7 @@
 var CardEquipment = {
     _i18n: {
         'fr': {
-            'tab': "Équipe<wbr/>ment",
+            'tab': "Équipe<wbr/>ments",
             'nocard': "Vous n'avez aucune carte pour le moment.",
             'nocard2': " Cliquez sur le bouton + en haut pour en creer une.",
             'newcard': "Créer une carte",
@@ -48,7 +48,7 @@ var CardEquipment = {
             'copyright': "Basé sur le fichier PSD proposé par <a href='https://the-overlord.com/index.php?/profile/9-genesteal28/'>@genesteal28</a> et converti au format GIMP par <a href='https://the-overlord.com/index.php?/profile/31-jabbathehatt/'>@jabbathehatt</a> et <a href='https://the-overlord.com/index.php?/profile/1-sentma/'>SentMa</a> pour le dos de carte."
         },
         'en': {
-            'tab': "Equip<wbr/>ment",
+            'tab': "Equip<wbr/>ments",
             'nocard': "You have no card for the moment.",
             'nocard2': " Click on the + button in the header to create one.",
             'newcard': "Create a new card",

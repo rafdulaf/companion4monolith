@@ -48,7 +48,7 @@ var HeroSheet = {
             'copyright': "Basé sur le fichier PSD proposé par <a href='https://the-overlord.com/index.php?/profile/13-roolz/'>@Roolz</a>/<a href='https://the-overlord.com/index.php?/profile/4-doucefeuille/'>@Doucefeuille</a> et converti au format GIMP par <a href='https://the-overlord.com/index.php?/profile/31-jabbathehatt/'>@jabbathehatt</a>."
         },
         'en': {
-            'tab': "Hero",
+            'tab': "Heroes",
             'nocard': "You have no sheet for the moment.",
             'nocard2': " Click on the + button in the header to create one.",
             'newcard': "Create a new sheet",

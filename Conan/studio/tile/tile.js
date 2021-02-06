@@ -1,7 +1,7 @@
 var Tile = {
     _i18n: {
         'fr': {
-            'tab': "Tuile",
+            'tab': "Tuiles",
             'notile': "Vous n'avez aucune tuile pour le moment.",
             'notile2': " Cliquez sur le bouton + en haut pour en creer une.",
             'newtile': "Créer une tuile",
@@ -54,7 +54,7 @@ var Tile = {
             'copyright': "Basé sur le fichier PSD proposé par <a href='https://the-overlord.com/index.php?/profile/9-genesteal28/'>@genesteal28</a> et converti au format GIMP par <a href='https://the-overlord.com/index.php?/profile/31-jabbathehatt/'>@jabbathehatt</a>."
         },
         'en': {
-            'tab': "Tile",
+            'tab': "Tiles",
             'notile': "You have no tile for the moment.",
             'notile2': " Click on the + button in the header to create one.",
             'newtile': "Create a new tile",
@@ -107,7 +107,7 @@ var Tile = {
             'copyright': "Based on the PSD file proposed by <a href='https://the-overlord.com/index.php?/profile/9-genesteal28/'>@genesteal28</a> and converted at the GIMP format by <a href='https://the-overlord.com/index.php?/profile/31-jabbathehatt/'>@jabbathehatt</a>."
         },
         'it': {
-            'tab': "Tessera",
+            'tab': "Tessere",
             'notile': "Non hai tessere al momento.",
             'notile2': " Clicca + sulla barra degli strumenti per crearne una.",
             'newtile': "Crea nuova tessera",
