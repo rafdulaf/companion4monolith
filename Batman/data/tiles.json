@@ -1102,7 +1102,7 @@
 								"0": {
 									"name": {
 										"fr": "PION FREEZE",
-										"en": "template"
+										"en": "FROZEN TOKEN"
 										},
 									"image": ["data/powers/img/frozen.png"]
 								}					
@@ -1950,8 +1950,8 @@
             "powers" : {
 				"0": {
 					"name": {
-						"fr": "template",
-						"en": "template"
+						"fr": "PRÉCOGNITION",
+						"en": "PRECOGNITION"
 						},
 					"actions" : {
 						"0": {
@@ -6545,10 +6545,6 @@
 		{
             "id": "hugo-strange",
             "name": "HUGO STRANGE",
-            "subtitle": {
-                "fr": "template",
-                "en": "template"
-            },
             "color": "gray",
             "tile-type": "single",
             "life-points": 4,
@@ -9142,7 +9138,28 @@
             "image_location": {"x":66, "y":48},
             "image_zoom": 96,
             "model": "batman-gordon",
-            "origins": "batman-new-52"
+            "origins": "batman-new-52",
+            "powers" : {
+				"0": {
+					"name": {
+						"fr": "SOUTIEN OFFENSIF",
+						"en": "OFFENSIVE SUPPORT"
+						},
+					"actions" : {
+						"0": {
+							"shortdescription": {
+								"fr": "Quand le danger est à son paroxysme, Rookie est la solution.",
+								"en": "When danger is at its highest level - uneash Rookie is the answer"
+							},
+							"type" : "special-event",
+							"longdescription": {
+										"fr": "A la fin de l'étape de sélection du QG, le héros sélectionne la tuile de Rookie et tant que lieutenant. Lors de l'activation de la tuile évènement, le héros réalise une activation de personnage avec Batman (James Gordon). Il effectue seulement sa première étape de mouvement. S'il termine son déplacement dans la zone de Rookie, il rentre dans son robot. Sa figurine est retirée du plateau. Puis, le héros réalise une ctivation de personnage avec Rookie. Il effectue seulement sa première étape de mouvement. L héros peut ensuite effectuer une explosion de niveau 2 dans une zone jusqu'à 2 de distance de Rookie et avec laquelle il partage une ligne de vue. Enfin, la figurine de Batman (James Gordon) est remise dans la zone de Rookie.\nSi Rookie est neutralisé, Batman (James Gordon) effectue seulement sa première étape de mouvement.",
+										"en": "At the end of the Leader Selection step, the hero selets Rookie's tile as heir lieutement. hen the event tile is activated, the heri performs a character activation with Batman (James Gordon). They only carry out their First Movement Step. If Batman ends his movement in Rookie's area, he can transfer into the robotic suit. Batman's miniature is removed from the board. The hero then performs a character activation with Rookie. During this activation, they only carry out their First Movement Step.\nThe hero may then cause a level 2 explosion in an area that Rookie has a clear line of sight, up to 2 areas distance from Rookie. Finally, Batman's miniature is placed back in Rookie's area.\nIf Rookie is neutralized, Batman (James Gordon) only carries out his First Movvement Step."
+							}
+						}
+					}
+				}
+			}
         },		
 		{
             "id": "rookie",
@@ -9420,19 +9437,28 @@
             "powers" : {
 				"0": {
 					"name": {
-						"fr": "SOUTIEN OFFENSIF",
-						"en": "OFFENSIVE SUPPORT"
+						"fr": "CACHÉ DANS LES OMBRES",
+						"en": "HIDE IN THE SHADOWS"
 						},
 					"actions" : {
 						"0": {
 							"shortdescription": {
-								"fr": "Quand le danger est à son paroxysme, Rookie est la solution.",
-								"en": "When danger is at its highest level - uneash Rookie is the answer"
+								"fr": "Batman se cache dans les ombres, prêt à fondre sur sa proie.",
+								"en": "Batman conceals his location with a smoke bomb."
 							},
 							"type" : "special-event",
 							"longdescription": {
-										"fr": "A la fin de l'étape de sélection du QG, le héros sélectionne la tuile de Rookie et tant que lieutenant. Lors de l'activation de la tuile évènement, le héros réalise une activation de personnage avec Batman (James Gordon). Il effectue seulement sa première étape de mouvement. S'il termine son déplacement dans la zone de Rookie, il rentre dans son robot. Sa figurine est retirée du plateau. Puis, le héros réalise une ctivation de personnage avec Rookie. Il effectue seulement sa première étape de mouvement. L héros peut ensuite effectuer une explosion de niveau 2 dans une zone jusqu'à 2 de distance de Rookie et avec laquelle il partage une ligne de vue. Enfin, la figurine de Batman (James Gordon) est remise dans la zone de Rookie.\nSi Rookie est neutralisé, Batman (James Gordon) effectue seulement sa première étape de mouvement.",
-										"en": "At the end of the Leader Selection step, the hero selets Rookie's tile as heir lieutement. hen the event tile is activated, the heri performs a character activation with Batman (James Gordon). They only carry out their First Movement Step. If Batman ends his movement in Rookie's area, he can transfer into the robotic suit. Batman's miniature is removed from the board. The hero then performs a character activation with Rookie. During this activation, they only carry out their First Movement Step.\nThe hero may then cause a level 2 explosion in an area that Rookie has a clear line of sight, up to 2 areas distance from Rookie. Finally, Batman's miniature is placed back in Rookie's area.\nIf Rookie is neutralized, Batman (James Gordon) only carries out his First Movvement Step."
+										"fr": "Le héros place un pion fumigène dans la zone de Batman, puis place un deuxième pion dans une zone à 1 de distance du premier. Enfin, il en place un troisième dans une zone à 1 de distance du second.\n Ensuite, le héros répartit comme il le souhaite, sans les montrer au vilain, les 3 pions ombre (face ombre visible) dans les 3 zones dans lesquelles il a précédemment placé des pions fumigènes. Le héros retire la figurine de Batman et la place dans sa réserve.\n Un pion ombre peut être pris pour cible d'attaques et d'explosions. Dans ce cas, le héros le retourne :\n-- si la face révélée est une face vide, l'action d'attaque ou l’explosion n’ont aucun effet sur le pion ombre. Celui-ci est ensuite retiré,\n-- si la face révélée est la face Batman, le héros place la figurine de Batman depuis sa réserve dans la zone du pion. Les pions ombre restant sont retirés. L'attaque est ensuite résolue normalement.\nLorsque Batman est activé, s'il reste des pions ombre et que sa figurine n'est pas en jeu, le héros la place depuis sa réserve dans la zone du pion ombre au dos duquel se trouve la face Batman. Batman peut immédiatement effectuer une action d'attaque au corps-à-corps avec sa caractéristique de 1 dé rouge + 1 dé rouge. Le héros active ensuite Batman normalement.",
+										"en": "The hero places a smoke grenade token in the same area as Batman and then places a second token in an area that is at a distance of 1 away from the first one. They then finally place a third token in an area that is at a distance of 1 away from the second one.\n The hero then places, without showing the villain, their 3 shadow tokens (shadow side up) as they choose in the 3 areas with the smoke grenade tokens. The hero then removes the Batman miniature and places him in their reserve pool.\nA shadow token can be targeted for attacks and explosions. In this case, the hero turns over the token:\n-- If the revealed side is blank, the attack action or the explosion have no effect on the shadow token. The shadow token is then removed.\n-- If the revealed side is the Batman side, the hero replaces the Batman miniature in the token’s area. The remaining shadow tokens are removed. The attack is then triggered as usual.\n When Batman is activated, if there are shadow tokens on the board and his miniature is not in play, the hero swaps the Batman miniature from the reserve pool with the shadow token showing the Batman side. Batman can immediately perform a melee attack action with 2 red dice. The hero then activates Batman as usual."
+							},
+							"tokens" : {
+								"0": {
+									"name": {
+										"fr": "PION OMBRE",
+										"en": "SHADOW TOKEN"
+										},
+									"image": ["data/powers/img/shadow.png"]
+								}					
 							}
 						}
 					}
