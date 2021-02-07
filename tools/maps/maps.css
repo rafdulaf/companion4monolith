@@ -1,0 +1,129 @@
+html, body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+.left {
+    width: 320px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;    
+    background-color: #EFEFEF;
+    position: fixed;
+    top: 0;
+}
+.image {
+    margin: 5px 5px 5px 325px;
+}
+.image img {
+    cursor: crosshair;
+    width: 100%;
+}
+
+div.form {
+    padding: 5px;
+    height: 100%;
+    overflow: auto;
+}
+
+div.form > div + div {
+    margin-top: 5px;
+}
+
+#map-area {
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+}
+svg path {
+    opacity: 0.3;
+    fill: #00ff00;
+    stroke: #ff0000;
+    stroke-width:10px;
+    stroke-linejoin: round;
+}
+svg text {
+    fill: #0000ff;
+    stroke: #ffffff;
+}
+svg circle.center1 {
+    fill: #FFFFFF;
+    pointer-events: none;
+}
+svg circle.center2 {
+    fill: none;
+    stroke: #FFFFFF;
+    pointer-events: none;
+}
+svg circle.level {
+    fill: none;
+    stroke: #00FF00;
+    pointer-events: none;
+}
+
+
+.position {
+    display: inline-block;
+    vertical-align: top;
+    font-family: 'monospace';
+}
+
+label {
+    display: block;
+    font-size: 0.9rem;
+}
+input, select, textarea {
+    display: block;
+    width: 100%;
+    resize: none;
+    white-space: nowrap;
+}
+
+input[type='checkbox'] {
+    display: inline-block;
+    vertical-align: top;
+    width: 20px;
+}
+input[type='checkbox'] + label {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 27px);
+}
+
+.half {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(50% - 3px);
+}
+
+.file button {
+    width: 100%;
+}
+
+.languages div div {
+    display: flex;
+}
+.languages div div label {
+    width: 30px;
+    text-align: right;
+    margin-right: 5px;
+}
+
+.actions {
+    border-bottom: 1px solid #7f7f7f;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#batman, #conan {
+    display: none;
+}
+select[data-value='batman'] ~ #batman,
+select[data-value='conan'] ~ #conan {
+    display: unset;
+}
+

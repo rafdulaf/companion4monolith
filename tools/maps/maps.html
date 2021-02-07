@@ -1,0 +1,148 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Map creation tool</title>
+        
+        <link href="maps.css" rel="stylesheet" type="text/css"/>
+        <script src="../../engine/vendors/js/jquery-3.1.1.js"></script>
+        <script src="maps.js"></script>
+    </head>
+    <body>
+        <div class="left">
+             <div class="actions">
+                 <div>
+                    <button onclick="$('#import-file')[0].click()">Import</button>
+                    <input id="import-file" style="position: absolute; left: -1000px" type="file" onchange="doImport(this)"/>
+                    <button onclick="doExport()">Export</button>
+                 </div>
+                 <div>
+                     <button onclick="zoom(+1)">Zoom +</button>
+                     <button onclick="zoom(-1)">Zoom -</button>
+                     <span id="position"></span>
+                 </div>
+             </div>
+            <div class='form'>
+                <div class='file'>
+                    <button onclick="$('#image-file')[0].click()">Local image</label>
+                    <input id="image-file" style="position: absolute; left: -1000px" type="file" onchange="displayImage(this)"/>
+                </div>
+                
+                <div class='id'>
+                    <label for="id">Identifier</label><input id="id" value="My_New_Map"/>
+                </div>
+                <div class='title languages'>
+                    <div>Title</div>
+                    <div>
+                        <div><label for="title-fr">fr</label><input id="title-fr" value="Ma carte"/></div>
+                        <div><label for="title-en">en</label><input id="title-en" value="My map"/></div>
+                        <div><label for="title-it">it</label><input id="title-it"/></div>
+                    </div>
+                </div>
+                <div class='version'>
+                    <label for="version">Version</label><input id="version" value="1.0"/>
+                </div>
+                <div class='origins'>
+                    <label for="origins">Origins (1 per line)</label><textarea id="origins">corebox</textarea>
+                </div>
+                <div class='copyright'>
+                    <label for="copyright">Copyright</label><input id="copyright" value="Monolith"/>
+                </div>
+                <div class='rules'>
+                    <label for="rules">Rules</label>
+                    <select id="rulesselector" data-value="batman" onchange='$(this).attr("data-value", this.value)'><option value='batman'>Batman</option><option value='conan'>Conan</option></select>
+                    <div id="batman">
+                        <div class='rules-image'>
+                            <label for="rules-image-ratio">Help image ratio (width / height)</label><input id="rules-image-ratio" value="1.24"/>
+                        </div>
+                        <div class='half'>
+                            <label for="rules-elevation">Elevation</label>
+                            <textarea id="rules-elevation" rows="6">1 #1B94CB
+2 #83C5E7</textarea>
+                        </div>
+                        <div class='half'>
+                            <label>Boundaries</label>
+                            <input type="checkbox" id="rules-boundaries-orange" checked="checked"/><label for="rules-boundaries-orange">Orange</label>
+                            <input type="checkbox" id="rules-boundaries-white" checked="checked"/><label for="rules-boundaries-white">White</label>
+                            <input type="checkbox" id="rules-boundaries-special" checked="checked"/><label for="rules-boundaries-special">Special</label>
+                            <input type="checkbox" id="rules-boundaries-wall" checked="checked"/><label for="rules-boundaries-wall">Wall</label>
+                            <input type="checkbox" id="rules-boundaries-wall_level" checked="checked"/><label for="rules-boundaries-wall_level">Wall level</label>
+                        </div>
+                        <div class='half'>
+                            <label>Special moves</label>
+                            <input type="checkbox" id="rules-specialmoves-jump" checked="checked"/><label for="rules-specialmoves-jump">Jump</label>
+                            <input type="checkbox" id="rules-specialmoves-climb" checked="checked"/><label for="rules-specialmoves-climb">Clim</label>
+                            <input type="checkbox" id="rules-specialmoves-fall" checked="checked"/><label for="rules-specialmoves-fall">Fall</label>
+                            <input type="checkbox" id="rules-specialmoves-climb_fall" checked="checked"/><label for="rules-specialmoves-climb_fall">Clim Fall</label>
+                        </div>
+                        <div class='half'>
+                            <label>Areas</label>
+                            <input type="checkbox" id="rules-areas-elevators_entrance" checked="checked"/><label for="rules-areas-elevators_entrance">Elevators'entrance</label>
+                            <input type="checkbox" id="rules-areas-elevator_shaft" checked="checked"/><label for="rules-areas-elevator_shaft">Elevator shaft</label>
+                            <input type="checkbox" id="rules-areas-promontory" checked="checked"/><label for="rules-areas-promontory">Promontory</label>
+                            <input type="checkbox" id="rules-areas-elevator_orientation" checked="checked"/><label for="rules-areas-elevator_orientation">Elevator orientation</label>
+                        </div>
+                    </div>
+                    <div id="conan">
+                        <textarea id="rules-conan" rows="14">[
+    {
+        "title": {
+            "fr": "",
+            "en": "",
+            "it": ""
+        },
+        "description": {
+            "fr": "",
+            "en": "",
+            "it": ""
+        },
+        "coordinates": [],
+        "areas": [],
+        "areasColor": "turquoise",
+        "areasText": {
+            "fr": "",
+            "en": "",
+            "it": ""
+        }
+    }
+]</textarea>
+                    </div>    
+    
+                </div>
+                <div class='totopic languages'>
+                    <div>The-Overlord topic url</div>
+                    <div>
+                        <div><label for="totopic-fr">fr</label><input id="totopic-fr"/></div>
+                        <div><label for="totopic-en">en</label><input id="totopic-en"/></div>
+                        <div><label for="totopic-it">it</label><input id="totopic-it"/></div>
+                    </div>
+                </div>
+                <div class='thumbnail'>
+                    <label for="thumbnail">Thumbnail</label><input id="thumbnail" value="thumb.png"/>
+                </div>
+                <div class='board'>
+                    <label for="board">Board</label><input id="board" value="board.png"/>
+                </div>
+                <div class='losFile'>
+                    <label for="losFile">Static line of sight</label><input id="losFile" value="los-v1.png"/>
+                </div>
+                <div class='pdf languages'>
+                    <div>PDF file for rules</div>
+                    <div>
+                        <div><label for="pdf-fr">fr</label><input id="pdf-fr" value=""/></div>
+                        <div><label for="pdf-en">en</label><input id="pdf-en" value=""/></div>
+                        <div><label for="pdf-it">it</label><input id="pdf-it" value=""/></div>
+                    </div>
+                </div>
+                <div class='zones'>
+                    <label for="zones">Zones</label>
+                    <button onclick="renumbers()">Rename</button>
+                    <textarea id="zones" rows="20" onchange="displayZones()">{}</textarea>
+                </div>
+            </div>
+         </div>
+         <div class='image'>
+             <div id="map-area"></div>
+             <img id="image" onload="displayZones()"/>
+         </div>
+    </body>
+</html>
