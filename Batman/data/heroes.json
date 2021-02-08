@@ -2653,7 +2653,7 @@
 				]
 			},
             "otherskills": [
-                { "id": "protected", "level": 1 },
+                { "id": "sacrifice", "level": 1 },
                 { "id": "pushing_limits", "level": 1 }
             ],
             "traits": [
@@ -2901,7 +2901,7 @@
 				]
 			},
             "otherskills": [
-                { "id": "protected", "level": 2 },
+                { "id": "sacrifice", "level": 2 },
                 { "id": "pushing_limits", "level": 2 }
             ],
             "traits": [
@@ -3056,7 +3056,7 @@
 				]
 			},
             "otherskills": [
-					{ "id": "protected", "level": 2 },
+					{ "id": "sacrifice", "level": 2 },
 					{ "id": "regeneration", "level": 1 }
             ],
             "traits": [
