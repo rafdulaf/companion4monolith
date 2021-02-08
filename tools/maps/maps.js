@@ -372,17 +372,20 @@ function renumbers()
         throw e;
     }
     
-    var action = prompt("To change numbers enter:\n*1->2 to rename zone 1 in 2\n1->2,2->1 to exchange zone 1 and 2")
+    var action = prompt("To change numbers enter:\n * 1->2 to rename zone 1 in 2\n * 1->2,2->1 to exchange zone 1 and 2")
     if (!action) return;
  
     
     var actions = action.split(",");
     actions = actions.map(function (item) { return { from: item.substring(0, item.indexOf('->')), to: item.substring(item.indexOf('->') + 2) } });
+    
+    // Rename zones to tmp name (to allow exchange)
     for (var i=0; i < actions.length; i++)
     {
         zones[actions[i].from + '-tmp'] = zones[actions[i].from]
         delete zones[actions[i].from]
     }
+    // Rename zones to final name (to allow exchange)
     for (var i=0; i < actions.length; i++)
     {
         if (zones[actions[i].from + '-tmp'])
@@ -396,6 +399,37 @@ function renumbers()
             delete zones[actions[i].from]
         }
     }
+    // Rename zones relations
+    for (var i=0; i < actions.length; i++)
+    {
+        for (var z in zones)
+        {
+            for (var j=0; j < zones[z].links.length; j++)
+            {
+                var link = zones[z].links[j];
+                
+                var result = /^([0-9]+)#(.+)#([0-9]+)$/.exec(link)
+                if (!result)
+                {
+                    alert("Error in zone '" + z + "', the link n°" + l + " is not readable: " + link);
+                    return;
+                }
+                else
+                {
+                    var centerOfZ = parseInt(result[1]);
+                    var targetZoneName = result[2];
+                    var centerOfTarget = parseInt(result[3]);
+                    
+                    if (targetZoneName == actions[i].from)
+                    {
+                        var newLink = centerOfZ + "#" + actions[i].to + "#" + centerOfTarget
+                        zones[z].links[j] = newLink;
+                    }
+                }
+            }
+        }
+    }
+
     
     $("#zones")[0].value = stringify(zones);
     displayZones();
