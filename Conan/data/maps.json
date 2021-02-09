@@ -24,7 +24,7 @@
                             "en": "The hut flaps at the entrance of each hut block lines of sight. A character must spend 1 extra movement point to move across a border into or out of a hut.",
                             "it": "I tendaggi all'ingresso di ogni capanna bloccano la linea di vista. Un personaggio deve spendere un (1) punto movimento extra per entrare o uscire da una capanna."
                         },
-                        "coordinates": [[63,23], [18,52], [26,57], [39,83], [34,43], [55,54], [67,76], [79,57]]
+                        "coordinates": [[63, 23], [18, 52], [26, 57], [39, 83], [34, 43], [55, 54], [67, 76], [79, 57]]
                     }, {
                         "title": {
                             "fr": "Défoncer les cloisons",
@@ -36,7 +36,7 @@
                             "en": "The huts with stone walls cannot be wrecked using Wall Wrecker.",
                             "it": "Non si possono aprire brecce nei muri delle capanne in pietra."
                         },
-                        "coordinates": [[55,20], [40,75]]
+                        "coordinates": [[55, 20], [40, 75]]
                     }, {
                         "title": {
                             "fr": "Murs d'enceinte",
@@ -48,7 +48,7 @@
                             "en": "The outer walls cannot be climbed over, or wrecked using Wall Wrecker.",
                             "it": "Non si possono aprire brecce nel recinto esterno e non è possibile scalarlo."
                         },
-                        "coordinates": [[43,4], [93,49], [62,94], [4,50]]
+                        "coordinates": [[43, 4], [93, 49], [62, 94], [4, 50]]
                     }, {
                         "title": {
                             "fr": "Lignes de vue",
@@ -60,7 +60,7 @@
                             "en": "The bushes do not block lines of sight.",
                             "it": "I cespugli non bloccano la linea di vista."
                         },
-                        "coordinates": [[5,15], [18,24], [26,36], [46,9], [59,9], [41,34], [41,58], [63,61], [4,82], [17,79], [44,92], [54,94], [86,93]]
+                        "coordinates": [[5, 15], [18, 24], [26, 36], [46, 9], [59, 9], [41, 34], [41, 58], [63, 61], [4, 82], [17, 79], [44, 92], [54, 94], [86, 93]]
                     }, {
                         "title": {
                             "fr": "Huttes en bois",
@@ -84,7 +84,7 @@
                             "en": "A character with Climb can move across boulders as though they were a border by spending 2 extra movement points.",
                             "it": "Scalare le rocce richiede l'abilità Arrampicarsi e 2 punti movimento extra."
                         },
-                        "coordinates": [[66,90]]
+                        "coordinates": [[66, 90]]
                     }
                 ],
                 "totopic": {

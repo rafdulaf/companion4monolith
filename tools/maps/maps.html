@@ -20,6 +20,9 @@
                      <button onclick="zoom(-1)">Zoom -</button>
                      <span id="position"></span>
                  </div>
+                 <div>
+                    <input id="draw" onkeyup="draw()" onchange="draw()" placeholder="Click on the map to write coordinates here"/>
+                 </div>
              </div>
             <div class='form'>
                 <div class='file'>
@@ -136,13 +139,14 @@
                 <div class='zones'>
                     <label for="zones">Zones</label>
                     <button onclick="renumbers()">Rename</button>
+                    <button onclick="transform()">Transform</button>
                     <textarea id="zones" rows="20" onchange="displayZones()">{}</textarea>
                 </div>
             </div>
          </div>
          <div class='image'>
              <div id="map-area"></div>
-             <img id="image" onload="displayZones()"/>
+             <img id="image" onload="displayZones()" ondragstart="return false;"/>
          </div>
     </body>
 </html>

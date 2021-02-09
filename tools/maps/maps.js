@@ -103,9 +103,9 @@ function doExport()
     data.description.totopic = _getLanguageJson('totopic');
     data.description.thumbnail = _getPath() + $("#thumbnail")[0].value;
     data.description.board = _getPath() + $("#board")[0].value;
-    data.description.lofFile = _getPath() + $("#losFile")[0].value;
-    data.description.pdf = _getLanguageJson('pdf');
-    data.size = [$('#image').width(), $('#image').height()];
+    if ($("#losFile")[0].value) data.description.losFile = _getPath() + $("#losFile")[0].value;
+    var pdf = _getLanguageJson('pdf'); if (pdf.fr || pdf.en || pdf.it) data.description.pdf = pdf;
+    data.size = [$('#image').prop("naturalWidth"), $('#image').prop("naturalHeight")];
     data.zones = zones;
 
     data = stringify(data);
@@ -131,9 +131,12 @@ function stringify(data)
     // Oneline coords
     data = data.replace(/\[\s*([0-9.]+),\s*([0-9.]+)\s*]/g, "[$1, $2]");
     // Oneline coords arrays
-    data = data.replace(/\[\s*(\[([0-9.]+), ([0-9.]+)\])/g, "[ $1").replace(/(\[([0-9.]+), ([0-9.]+)\]),\s*(?=(\[([0-9.]+), ([0-9.]+)\]))/g, "$1, ").replace(/(\[([0-9.]+), ([0-9.]+)\])\s*\]/g, "$1 ]");
+    data = data.replace(/\[\s*(\[([0-9.]+), ([0-9.]+)\])/g, "[$1").replace(/(\[([0-9.]+), ([0-9.]+)\]),\s*(?=(\[([0-9.]+), ([0-9.]+)\]))/g, "$1, ").replace(/(\[([0-9.]+), ([0-9.]+)\])\s*\]/g, "$1]");
     // Oneline string arrays
-    data = data.replace(/\[\s*(".*")/g, "[ $1").replace(/("[0-9]#[^"]+#[0-9]"),\s*(?="[0-9]#[^"]+#[0-9]")/g, "$1, ").replace(/(".*")\s*\]/g, "$1 ]");
+    data = data.replace(/\[\s*(".*")/g, "[$1").replace(/("[0-9]#[^"]+#[0-9]"),\s*(?="[0-9]#[^"]+#[0-9]")/g, "$1, ").replace(/(".*")\s*\]/g, "$1]");
+    data = data.replace(/\["corebox",\n\s+"stretchgoal",\n\s+"king"/g, '["corebox", "stretchgoal", "king"');
+    // Oneline successive brackets
+    data = data.replace(/\},\n\s+{/g, '}, {');
 
     return data; 
 }
@@ -266,33 +269,48 @@ function zoom(direction)
 {
     var newWidth = parseInt(($("#image").attr('data-width') || 100)) + direction*10;
     $("#image").attr('data-width', newWidth).css('width', newWidth + '%');
-    displayZones();
+    window.setTimeout("displayZones()", 1);
 }
 
 function position(x, y)
 {
-    if (x != "-")
-    {
-        x = parseInt(x * 10000.0)/100.0;
-        y = parseInt(y * 10000.0)/100.0;
-    }
     $("#position").html("x: " + x + "%, y: " + y + "%");
 }
 
 $(window).on('resize', displayZones);
 $(document).ready(function() {
     position("-", "-");
+    
+    function getXY(event)
+    {
+        var iPos = $("#image").offset();
+        return {
+            x: parseInt(((event.clientX + $(document.body).scrollLeft() - iPos.left) / $("#image").width()) * 10000.0)/100.0, 
+            y: parseInt(((event.clientY + $(document.body).scrollTop()  - iPos.top ) / $("#image").height()) * 10000.0)/100.0
+        };
+    }
+    
+    
     $("#image").on('mouseout', function(event) {
         position("-", "-");
     });
     $("#image").on('mousemove', function(event) {
-        var iPos = $("#image").offset();
-        position((event.clientX + $(document.body).scrollLeft() - iPos.left) / $("#image").width(), 
-                 (event.clientY + $(document.body).scrollTop()  - iPos.top ) / $("#image").height());
+        var pos = getXY(event);
+        position(pos.x, pos.y);
+    });
+    $("#image").on('click', function(event) {
+        var pos = getXY(event);
+        var v = $("#draw")[0].value;
+        if (v) v+= ", "
+        v+= "[" + pos.x + ", " + pos.y + "]"
+        $("#draw")[0].value = v;
+        draw();
     });
 })
 
-
+function draw() {
+    
+}
 
 
 function displayZones()
@@ -351,7 +369,7 @@ function displayZones()
                 {
                     code += "<circle class='level' cx='" + svgWidth*zone.centers[i][0]/100 + "' cy='" + svgHeight*zone.centers[i][1]/100 + "' r='" + (0.65 + 0.3*lev)*svgWidth/100.0 + "'/>";
                 }
-                code += "<text x=\""+ (svgWidth*zone.centers[i][0]/100 - 10) + "\" y=\"" + (svgHeight*zone.centers[i][1]/100 - 10) + "\" font-size=\"25\" font-weight=\"bold\">" + z + "</text>"
+                code += "<text x=\""+ (svgWidth*zone.centers[i][0]/100 - 10) + "\" y=\"" + (svgHeight*zone.centers[i][1]/100 - 10) + "\" font-size=\"25\" font-weight=\"bold\">" + z + " (" + (i+1) + ")</text>"
             }
 
         }
@@ -372,7 +390,7 @@ function renumbers()
         throw e;
     }
     
-    var action = prompt("To change numbers enter:\n * 1->2 to rename zone 1 in 2\n * 1->2,2->1 to exchange zone 1 and 2")
+    var action = prompt("To change zone name enter a comma-separated list of\n'OldName->Newname'. For example:\n * 1->2 to rename zone 1 in 2\n * 1->2,2->1 to exchange zone 1 and 2")
     if (!action) return;
  
     
@@ -382,13 +400,31 @@ function renumbers()
     // Rename zones to tmp name (to allow exchange)
     for (var i=0; i < actions.length; i++)
     {
-        zones[actions[i].from + '-tmp'] = zones[actions[i].from]
-        delete zones[actions[i].from]
+        if (!actions[i].from || !actions[i].to)
+        {
+            alert("A zonename is empty. Canceling operation.")
+            return;
+        }
+        else if (!zones[actions[i].from])
+        {
+            alert("Zone '" + actions[i].from + "' does not exist. Canceling operation.")
+            return;
+        }
+        else
+        {
+            zones[actions[i].from + '-tmp'] = zones[actions[i].from]
+            delete zones[actions[i].from]
+        }
     }
     // Rename zones to final name (to allow exchange)
     for (var i=0; i < actions.length; i++)
     {
-        if (zones[actions[i].from + '-tmp'])
+        if (zones[actions[i].to] != null)
+        {
+            alert("Zone '" + actions[i].to + "' already exists. Canceling operation.")
+            return;
+        }
+        else if (zones[actions[i].from + '-tmp'])
         {
             zones[actions[i].to] = zones[actions[i].from + '-tmp']  
             delete zones[actions[i].from + '-tmp']
@@ -433,4 +469,10 @@ function renumbers()
     
     $("#zones")[0].value = stringify(zones);
     displayZones();
+}
+
+
+function transform()
+{
+    
 }
