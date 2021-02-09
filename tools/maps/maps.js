@@ -474,5 +474,11 @@ function renumbers()
 
 function transform()
 {
+    var trans = prompt("Put code here (based upon 2 vars: x and y) to transform all zones (area and centers)?\nNote that if any item of the zone is < 0 or > 100, the zone will be removed (but not links to it)")
+    if (!trans)
+    {
+        return;
+    }
     
+    // TODO
 }
