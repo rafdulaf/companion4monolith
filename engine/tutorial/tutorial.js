@@ -17,7 +17,7 @@ Tutorial = {
             'settings_switch': "Passer en français",
             'settings_continue': "Thank you",
 
-            'extensions_message': "By specifying the game elements you own you will obtnain a customized application",
+            'extensions_message': "By specifying the game elements you own you will obtain a customized application",
             'extensions_act': "Customize",
             'extensions_continue': "Default",
 
