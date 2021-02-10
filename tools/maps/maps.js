@@ -297,6 +297,7 @@ $(document).ready(function() {
     $("#image").on('mousemove', function(event) {
         var pos = getXY(event);
         position(pos.x, pos.y);
+        detectCenters(pos.x, pos.y);
     });
     $("#image").on('click', function(event) {
         var pos = getXY(event);
@@ -304,28 +305,16 @@ $(document).ready(function() {
         if (v) v+= ", "
         v+= "[" + pos.x + ", " + pos.y + "]"
         $("#draw")[0].value = v;
-        draw();
+        _displayZones();
     });
 })
 
-function draw() {
-    
-}
-
-
-function displayZones()
+function detectCenters(x, y)
 {
-        var mapArea = $("#map-area");
-    
-        try 
-        {
-            var zones = JSON.parse($('#zones')[0].value);
-        }
-        catch (e)
-        {
-            mapArea.html("");
-        }
-    
+    try 
+    {
+        var zones = JSON.parse($('#zones')[0].value);
+
         var zNames = [];
         for (var z in zones)
         {
@@ -333,47 +322,137 @@ function displayZones()
         }
         zNames = zNames.sort();
 
-        var svgWidth = $("#image").width();
-        var svgHeight = $("#image").height();
-        
-        var code = "<svg style=\"width: " + svgWidth + "px; height: " + svgHeight + "px\">";
         for (var kz=0; kz < zNames.length; kz++)
         {
             var z = zNames[kz];
             var zone = zones[z];
-
-            var line = "";
-            for (var i=0; i < zone.area.length; i++)
-            {
-                line += (i == 0 ? "M" : "L") + svgWidth*zone.area[i][0]/100 + "," + svgHeight*zone.area[i][1]/100;
-            }
-            if (zone.area.length)
-            {
-                // ensure close
-                line += "L" + svgWidth*zone.area[0][0]/100 + "," + svgHeight*zone.area[0][1]/100;
-            }
-            code += "<path " +
-                            "d='" + line + "' " +
-                            "data-zone='" + z + "' " +
-                            "class=''>" +
-                    "</path>";
-                    
-
-            // Display level around centers
+            
             for (var i=0; i < zone.centers.length; i++)
             {
-                code += "<circle class='center1' cx='" + svgWidth*zone.centers[i][0]/100 + "' cy='" + svgHeight*zone.centers[i][1]/100 + "' r='" + (0.30)*svgWidth/100.0 + "'/>";
-                code += "<circle class='center2' cx='" + svgWidth*zone.centers[i][0]/100 + "' cy='" + svgHeight*zone.centers[i][1]/100 + "' r='" + (0.40)*svgWidth/100.0 + "'/>";
-                code += "<circle class='center2' cx='" + svgWidth*zone.centers[i][0]/100 + "' cy='" + svgHeight*zone.centers[i][1]/100 + "' r='" + (0.45)*svgWidth/100.0 + "'/>";
-                for (var lev=0; lev < zone.level; lev++)
+                var center = zone.centers[i];
+                if (center[0] < x+0.5 && center[0] > x-0.5
+                    && center[1] < y+0.5 && center[1] > y-0.5)
                 {
-                    code += "<circle class='level' cx='" + svgWidth*zone.centers[i][0]/100 + "' cy='" + svgHeight*zone.centers[i][1]/100 + "' r='" + (0.65 + 0.3*lev)*svgWidth/100.0 + "'/>";
+                    window.lastKnownCenter = z;
+                    displayZones();
+                    return;
                 }
-                code += "<text x=\""+ (svgWidth*zone.centers[i][0]/100 - 10) + "\" y=\"" + (svgHeight*zone.centers[i][1]/100 - 10) + "\" font-size=\"25\" font-weight=\"bold\">" + z + (zone.centers.length > 1 ? (" (" + (i+1) + ")") : '') + "</text>"
             }
-
         }
-            code += "</svg>";
+    }
+    catch (e)
+    {
+        
+    }
+}
+
+function draw(svgWidth, svgHeight) {
+    try
+    {
+        var d = JSON.parse("[" + $("#draw")[0].value + "]");
+        
+        var line = "";
+        for (var i=0; i < d.length; i++)
+        {
+            line += (i == 0 ? "M" : "L") + svgWidth*d[i][0]/100 + "," + svgHeight*d[i][1]/100;
+        }
+        return "<path " +
+                        "d='" + line + "' " +
+                        "class='draw'>" +
+                "</path>";
+    }
+    catch(e)
+    {
+        return "";
+    }
+}
+
+var displayZones = $.debounce(250, _displayZones);
+function _displayZones()
+{
+        var mapArea = $("#map-area");
+
+        var svgWidth = $("#image").width();
+        var svgHeight = $("#image").height();
+        
+        var code = "<svg style=\"width: " + svgWidth + "px; height: " + svgHeight + "px\">";
+        try 
+        {
+            var zones = JSON.parse($('#zones')[0].value);
+
+            var zNames = [];
+            for (var z in zones)
+            {
+                zNames.push(z);
+            }
+            zNames = zNames.sort();
+    
+            var lastKnownZone = null;
+            for (var kz=0; kz < zNames.length; kz++)
+            {
+                var z = zNames[kz];
+                var zone = zones[z];
+                
+                if (z == window.lastKnownCenter)
+                {
+                    lastKnownZone = zone;
+                }
+    
+                var line = "";
+                for (var i=0; i < zone.area.length; i++)
+                {
+                    line += (i == 0 ? "M" : "L") + svgWidth*zone.area[i][0]/100 + "," + svgHeight*zone.area[i][1]/100;
+                }
+                if (zone.area.length)
+                {
+                    // ensure close
+                    line += "L" + svgWidth*zone.area[0][0]/100 + "," + svgHeight*zone.area[0][1]/100;
+                }
+                code += "<path " +
+                                "d='" + line + "' " +
+                                "data-zone='" + z + "' " +
+                                "class=''>" +
+                        "</path>";
+                        
+    
+                // Display level around centers
+                for (var i=0; i < zone.centers.length; i++)
+                {
+                    code += "<circle class='center1' cx='" + svgWidth*zone.centers[i][0]/100 + "' cy='" + svgHeight*zone.centers[i][1]/100 + "' r='" + (0.30)*svgWidth/100.0 + "'/>";
+                    code += "<circle class='center2' cx='" + svgWidth*zone.centers[i][0]/100 + "' cy='" + svgHeight*zone.centers[i][1]/100 + "' r='" + (0.40)*svgWidth/100.0 + "'/>";
+                    code += "<circle class='center2' cx='" + svgWidth*zone.centers[i][0]/100 + "' cy='" + svgHeight*zone.centers[i][1]/100 + "' r='" + (0.45)*svgWidth/100.0 + "'/>";
+                    for (var lev=0; lev < zone.level; lev++)
+                    {
+                        code += "<circle class='level' cx='" + svgWidth*zone.centers[i][0]/100 + "' cy='" + svgHeight*zone.centers[i][1]/100 + "' r='" + (0.65 + 0.3*lev)*svgWidth/100.0 + "'/>";
+                    }
+                    code += "<text x=\""+ (svgWidth*zone.centers[i][0]/100 - 10) + "\" y=\"" + (svgHeight*zone.centers[i][1]/100 - 10) + "\" font-size=\"25\" font-weight=\"bold\">" + z + (zone.centers.length > 1 ? (" (" + (i+1) + ")") : '') + "</text>"
+                }
+            }
+            
+            if (lastKnownZone)
+            {
+                for (var a=0; a < lastKnownZone.links.length; a++)
+                {
+                    var link = lastKnownZone.links[a];
+                    /^([0-9]+)#(.+)#([0-9]+)$/.exec(link);
+            
+                    var center1 = parseInt(RegExp.$1) - 1; // 0 based
+                    var target = RegExp.$2;
+                    var center2 = parseInt(RegExp.$3) - 1; // 0 based
+            
+            
+                    var zoneTarget = zones[target];
+                    code += "<line class='los' x1='" + svgWidth*lastKnownZone.centers[center1][0]/100 + "' y1='" + svgHeight*lastKnownZone.centers[center1][1]/100 + "' x2='" + svgWidth*zoneTarget.centers[center2][0]/100 + "' y2='" + svgHeight*zoneTarget.centers[center2][1]/100 + "' />";
+                }
+            }
+        }
+        catch (e)
+        {
+            console.error(e)
+        }
+        
+        code += draw(svgWidth, svgHeight);
+        code += "</svg>";
 
         mapArea.html(code);
 

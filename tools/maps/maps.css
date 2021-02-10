@@ -50,9 +50,21 @@ svg path {
     stroke-width:10px;
     stroke-linejoin: round;
 }
+svg path.draw {
+    opacity: 1;
+    fill: transparent;
+    stroke: #0000ff;
+    stroke-width: 5px;
+    stroke-linejoin: round;
+}
 svg text {
     fill: #0000ff;
     stroke: #ffffff;
+}
+svg line.los {
+    stroke: #ffffff;
+    stroke-width: 2px;
+    stroke-dasharray: 4,2;
 }
 svg circle.center1 {
     fill: #FFFFFF;

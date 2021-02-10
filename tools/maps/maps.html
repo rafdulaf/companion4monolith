@@ -5,6 +5,7 @@
         
         <link href="maps.css" rel="stylesheet" type="text/css"/>
         <script src="../../engine/vendors/js/jquery-3.1.1.js"></script>
+        <script src="jquery.ba-throttle-debounce.js"></script>
         <script src="maps.js"></script>
     </head>
     <body>
@@ -21,7 +22,7 @@
                      <span id="position"></span>
                  </div>
                  <div>
-                    <input id="draw" onkeyup="draw()" onchange="draw()" placeholder="Click on the map to write coordinates here"/>
+                    <input id="draw" onkeyup="displayZones()" onchange="displayZones" placeholder="Click on the map to write coordinates here"/>
                  </div>
              </div>
             <div class='form'>
@@ -140,7 +141,7 @@
                     <label for="zones">Zones</label>
                     <button onclick="renumbers()">Rename</button>
                     <button onclick="transform()">Transform</button>
-                    <textarea id="zones" rows="20" onchange="displayZones()">{}</textarea>
+                    <textarea id="zones" rows="20" onkeyup="displayZones()" onchange="displayZones()">{}</textarea>
                 </div>
             </div>
          </div>
