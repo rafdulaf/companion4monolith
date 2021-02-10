@@ -474,11 +474,62 @@ function renumbers()
 
 function transform()
 {
+    try {
+        var zones = JSON.parse($("#zones")[0].value)
+    }
+    catch (e) {
+        alert("Zones is not a correct json. Cannot apply any transformation.")
+        throw e;
+    }
+    
+
     var trans = prompt("Put code here (based upon 2 vars: x and y) to transform all zones (area and centers)?\nNote that if any item of the zone is < 0 or > 100, the zone will be removed (but not links to it)")
     if (!trans)
     {
         return;
     }
     
-    // TODO
+    try
+    {
+        eval("function f(x, y) { " + trans + "; return [x, y]; }")
+    }
+    catch (e)
+    {
+        alert("The code you entered is not a valid js")
+        throw e;
+    }
+    
+    for (var z in zones)
+    {
+        var anyOutOfRange = false;
+        
+        for (var j=0; !anyOutOfRange && j < zones[z].area.length; j++)
+        {
+            zones[z].area[j] = f(zones[z].area[j][0], zones[z].area[j][1]);
+            
+            if (zones[z].area[j][0] < 0 || zones[z].area[j][0] > 100   
+                || zones[z].area[j][1] < 0 || zones[z].area[j][1] > 100)
+            {
+                anyOutOfRange = true;
+            }
+        }
+        for (var j=0; !anyOutOfRange && j < zones[z].centers.length; j++)
+        {
+            zones[z].centers[j] = f(zones[z].centers[j][0], zones[z].centers[j][1]);
+
+            if (zones[z].centers[j][0] < 0 || zones[z].centers[j][0] > 100   
+                || zones[z].centers[j][1] < 0 || zones[z].centers[j][1] > 100)
+            {
+                anyOutOfRange = true;
+            }
+        }
+        
+        if (anyOutOfRange)
+        {
+            delete zones[z];
+        }
+    }
+    
+    $("#zones")[0].value = stringify(zones);
+    displayZones();
 }
