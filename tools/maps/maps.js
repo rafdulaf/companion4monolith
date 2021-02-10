@@ -369,7 +369,7 @@ function displayZones()
                 {
                     code += "<circle class='level' cx='" + svgWidth*zone.centers[i][0]/100 + "' cy='" + svgHeight*zone.centers[i][1]/100 + "' r='" + (0.65 + 0.3*lev)*svgWidth/100.0 + "'/>";
                 }
-                code += "<text x=\""+ (svgWidth*zone.centers[i][0]/100 - 10) + "\" y=\"" + (svgHeight*zone.centers[i][1]/100 - 10) + "\" font-size=\"25\" font-weight=\"bold\">" + z + " (" + (i+1) + ")</text>"
+                code += "<text x=\""+ (svgWidth*zone.centers[i][0]/100 - 10) + "\" y=\"" + (svgHeight*zone.centers[i][1]/100 - 10) + "\" font-size=\"25\" font-weight=\"bold\">" + z + (zone.centers.length > 1 ? (" (" + (i+1) + ")") : '') + "</text>"
             }
 
         }
