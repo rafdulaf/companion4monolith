@@ -314,7 +314,7 @@
                     "name": "Robert E. Howard"
                 }
             },
-            "class": [{ "type" : "rogue" }],
+            "class": [{ "type" : "mercenary" }],
 
             "gems": 10,
             "encumbrance": [10, 6, 8],
@@ -514,7 +514,7 @@
                     "name": "Robert E. Howard"
                 }
             },
-            "class": [{"type": "warrior", "not-recommanded": true }],
+            "class": [{"type": "warrior"}],
 
             "gems": 11,
             "encumbrance": [12, 8, 10],
@@ -725,7 +725,7 @@
                     "name": "Robert E. Howard"
                 }
             },
-            "class": [{ "type": "rogue" }],
+            "class": [{ "type" : "mercenary" }],
 
             "gems": 10,
             "encumbrance": [10, 9, 10],
@@ -974,7 +974,7 @@
                     "name": "Robert E. Howard"
                 }
             },
-            "class": [{ "type": "rogue" }, { "type" : "mercenary" }],
+            "class": [{ "type": "rogue" }],
 
             "gems": 10,
             "encumbrance": [11, 8, 10],
@@ -1312,7 +1312,7 @@
                     "name": "Robert E. Howard"
                 }
             },
-            "class": [],
+            "class": [{"type": "warrior", "not-recommanded": true}, {"type": "sorcerer", "not-recommanded": true}],
 
             "gems": 12,
             "encumbrance": [13, 8, 10],
@@ -1632,7 +1632,7 @@
                     "name": "Robert E. Howard"
                 }
             },
-            "class": [{ "type": "warrior" }, { "type": "rogue" }],
+            "class": [{ "type": "warrior" }],
 
             "gems": 10,
             "encumbrance": [10, 6, 8],
@@ -1715,7 +1715,7 @@
                 "it": "Shentu"
             },
             "quote": null,
-            "class": [{ "type": "mercenary" }, { "type": "warrior" }],
+            "class": [{ "type": "warrior" }],
 
             "gems": 10,
             "encumbrance": [11, 7, 9],
@@ -1831,7 +1831,7 @@
                 "en": "Othryades",
                 "it": "Othryades"
             },
-            "class": [],
+            "class": [{"type": "warrior"}],
 
             "gems": 10,
             "encumbrance": [11, 8, 10],
@@ -2021,7 +2021,7 @@
                 "en": "Achilles",
                 "it": "Achille"
             },
-            "class": [],
+            "class": [{ "type": "warrior"}],
 
             "gems": 10,
             "encumbrance": [12, 8, 10],
@@ -2055,7 +2055,7 @@
                 "en": "Atalanta",
                 "it": "Atalanta"
             },
-            "class": [],
+            "class": [{"type": "rogue"}],
 
             "gems": 10,
             "encumbrance": [11, 6, 8],
@@ -2089,7 +2089,7 @@
                 "en": "Heracles",
                 "it": "Eracle"
             },
-            "class": [],
+            "class": [{"type": "warrior"}],
 
             "gems": 11,
             "encumbrance": [13, 8, 10],
@@ -2122,7 +2122,7 @@
                 "en": "Leonidas",
                 "it": "Leonida"
             },
-            "class": [],
+            "class": [{ "type" : "mercenary" }],
 
             "gems": 10,
             "encumbrance": [11, 7, 10],
@@ -2155,7 +2155,7 @@
                 "en": "Odysseus",
                 "it": "Ulisse"
             },
-            "class": [],
+            "class": [{ "type" : "mercenary" }],
 
             "gems": 10,
             "encumbrance": [9, 6, 8],
