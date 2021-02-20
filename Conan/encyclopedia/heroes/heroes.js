@@ -9,7 +9,13 @@ var EncyclopediaHeroes = {
             'from': "Disponible dans :",
             'fromAnd': "<br/>et",
             'skill': "Compétences :",
-            'story': "Histoire :"
+            'story': "Histoire :",
+            'class': "Classe en mode coopératif :",
+            'class-warrior': "Guerrier",
+            'class-rogue': "Voleur",
+            'class-sorcerer': "Sorcier",
+            'class-mercenary': "Mercenaire",
+            'class-nr': " (déconseillé pour raison thématique ou pour leur potentiel à déséquilibrer le jeu)"
         },
         'en': {
             'tab': "Heroes",
@@ -20,7 +26,13 @@ var EncyclopediaHeroes = {
             'from': "Available in:",
             'fromAnd': "<br/>and",
             'skill': "Skills:",
-            'story': "Story :"
+            'story': "Story :",
+            'class': "Class in cooperative mode:",
+            'class-warrior': "Warrior",
+            'class-rogue': "Rogue",
+            'class-sorcerer': "Sorcerer",
+            'class-mercenary': "Sellsword",
+            'class-nr': " (not recommended for thematic readons or due to their potential to affect balance)"
         },
         'it': {
             'tab': "Eroi",
@@ -31,7 +43,13 @@ var EncyclopediaHeroes = {
             'from': "Disponibile in:",
             'fromAnd': "<br/>e",
             'skill': "Abilità:",
-            'story': "Storia:"
+            'story': "Storia:",
+            'class': "Classe in modalità cooperativa:",
+            'class-warrior': "Guerriero",
+            'class-rogue': "Ladro",
+            'class-sorcerer': "Mago",
+            'class-mercenary': "Mercenario",
+            'class-nr': " (sconsigliato per motivi tematici o per la loro potenzialità di sbilanciare il gioco)"
         }
     },
 
@@ -421,6 +439,26 @@ var EncyclopediaHeroes = {
                         + "</div>";
             }
         }
+        
+        var classText = "";
+        if (sheet['class'])
+        {
+            classText = "<div class='classtext'>" + EncyclopediaHeroes._i18n[Language]['class'] + " ";
+            for (var i = 0; i < sheet['class'].length; i++)
+            {
+                if (i != 0)
+                {
+                    classText += ", ";
+                }
+                
+                classText += EncyclopediaHeroes._i18n[Language]['class-' + sheet['class'][i].type];
+                if (sheet['class'][i]['not-recommanded'])
+                {
+                    classText += EncyclopediaHeroes._i18n[Language]['class-nr'];
+                }
+            }
+            classText += ".</div>";
+        }
 
         var actions = [];
         if (sheet.pdf)
@@ -444,6 +482,7 @@ var EncyclopediaHeroes = {
                 + "</div>"
                 + model
                 + HeroSheet._sheetCode(EncyclopediaHeroes._convertHeroToStudio(sheet, false))
+                + classText
                 + skills
                 + superdetails
             + "</div>",
