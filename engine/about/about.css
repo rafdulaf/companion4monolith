@@ -18,6 +18,10 @@
     content: "\f447";
     font-family: 'Font Awesome 5 Free';
 }
+.about-other:before {
+    content: "\f0c0";
+    font-family: 'Font Awesome 5 Free';
+}
 
 .contribute .github:before {
     content: "\f092";

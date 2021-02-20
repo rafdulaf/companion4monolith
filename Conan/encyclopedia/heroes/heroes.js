@@ -234,11 +234,11 @@ var EncyclopediaHeroes = {
                     { id: 'warrior', label: {'fr':"Guerrier", 'en':"Warrior", 'it':"Guerriero" } },
                     { id: 'rogue', label: {'fr':"Voleur", 'en':"Rogue", 'it':"Ladro"} },
                     { id: 'sorcerer', label: {'fr':"Sorcier", 'en':"Sorcerer", 'it':"Mago"} },
-                    { id: 'mercenary', label: {'fr':"Mercenaire", 'en':"Mercenary", 'it':"Mercenario"} },
-                    { id: 'warrior-nr', label: {'fr':"Guerrier (déconseillé)", 'en':"Warrior (not recommanded)", 'it':"Guerriero (sconsigliato)"} },
-                    { id: 'rogue-nr', label: {'fr':"Voleur (déconseillé)", 'en':"Rogue (not recommanded)", 'it':"Ladro (sconsigliato)"} },
-                    { id: 'sorcerer-nr', label: {'fr':"Sorcier (déconseillé)", 'en':"Sorcerer (not recommanded)", 'it':"Mago (sconsigliato)"} },
-                    { id: 'mercenary-nr', label: {'fr':"Mercenaire (déconseillé)", 'en':"Mercenary (not recommanded)", 'it':"Mercenario (sconsigliato)"} },
+                    { id: 'mercenary', label: {'fr':"Mercenaire", 'en':"Sellsword", 'it':"Mercenario"} },
+                    { id: 'warrior-nr', label: {'fr':"Guerrier (déconseillé)", 'en':"Warrior (not recommended)", 'it':"Guerriero (sconsigliato)"} },
+                    { id: 'rogue-nr', label: {'fr':"Voleur (déconseillé)", 'en':"Rogue (not recommended)", 'it':"Ladro (sconsigliato)"} },
+                    { id: 'sorcerer-nr', label: {'fr':"Sorcier (déconseillé)", 'en':"Sorcerer (not recommended)", 'it':"Mago (sconsigliato)"} },
+                    { id: 'mercenary-nr', label: {'fr':"Mercenaire (déconseillé)", 'en':"Sellsword (not recommended)", 'it':"Mercenario (sconsigliato)"} },
                     { id: 'none', label: {'fr':"Aucun", 'en':"None", 'it':"Nessuna"} }
                 ],
                 filter: function(item, selectedValues) {

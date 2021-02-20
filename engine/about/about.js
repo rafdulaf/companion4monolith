@@ -2,6 +2,7 @@ var About = {
     _i18n: {
         'fr': {
             'fullscreen': "Plein écran",
+            'other': "Les autres compagnions",
             'about': "A propos",
             'licence': "Licence",
             'licence_text': "Ce logiciel est développé sous licence LGPL-3.0",
@@ -33,6 +34,7 @@ var About = {
         },
         'en': {
             'fullscreen': "Fullscreen",
+            'other': "Other companions",
             'about': "About",
             'licence': "Licence",
             'licence_text': "This software is developped under the LGPL-3.0 licence",
@@ -63,6 +65,7 @@ var About = {
         },
         'it': {
             'fullscreen': "A tutto schermo",
+            'other': "TODO_TRANSLATE",
             'about': "Crediti",
             'licence': "Licenze",
             'licence_text': "Questo software è sviluppato sotto licenza LGPL-3.0.",
@@ -94,6 +97,8 @@ var About = {
     },
     _copyright: "",
 
+    isInStandaloneMode: window.matchMedia('(display-mode: standalone)').matches || (window.navigator.standalone) || document.referrer.includes('android-app://'),
+    
     _toggleFullscreen: function() {
         $("nav.menu input")[0].checked = false;
 
@@ -106,21 +111,32 @@ var About = {
             }
           }
     },
-
+    
     init: function()
     {
         $(document.head).append("<title>" + About._i18n[Language].title + "</title>");
 
-        const isInStandaloneMode = window.matchMedia('(display-mode: standalone)').matches || (window.navigator.standalone) || document.referrer.includes('android-app://');
-
-        if (!isInStandaloneMode) {
+        if (!About.isInStandaloneMode) {
             Menu.addMenu(About._i18n[Language].fullscreen, "about-fullscreen", "About._toggleFullscreen()");
         }
 
-        Menu.addMenu(About._i18n[Language].custom, "about-custom", "About._custom()", !isInStandaloneMode);
+        Menu.addMenu(About._i18n[Language].custom, "about-custom", "About._custom()", !About.isInStandaloneMode);
         Menu.addMenu(About._i18n[Language].preferences, "about-preferences", "About._preferences()");
 
         Menu.addMenu(About._i18n[Language].about, "about-about", "About._about()", true);
+        
+        Menu.addMenu(About._i18n[Language].other, "about-other", "About._other()", true);
+    },
+    
+    _other: function() {
+        if (About.isInStandaloneMode)
+        {
+            window.open("..")
+        }
+        else
+        {
+            document.location.href = "..";
+        }
     },
 
     _about: function()
