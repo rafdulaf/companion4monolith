@@ -65,7 +65,7 @@ var About = {
         },
         'it': {
             'fullscreen': "A tutto schermo",
-            'other': "TODO_TRANSLATE",
+            'other': "Gli altri compagni",
             'about': "Crediti",
             'licence': "Licenze",
             'licence_text': "Questo software è sviluppato sotto licenza LGPL-3.0.",
