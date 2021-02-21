@@ -17,7 +17,7 @@ var CardSpell = mergeObject(StudioItem, {
             'namePh': "?",
             'text': "Effet",
             'textPh': "?",
-            'textHelp': "Pour insérer des images, utilisez: {dice_yellow}, {dice_orange}, {dice_red}, {dice_yellow_reroll}, {dice_orange_reroll} ou {dice_red_reroll}.",
+            'textHelp': "Pour insérer des images, utilisez: {dice_yellow}, {dice_orange}, {dice_red}, {dice_yellow_reroll}, {dice_orange_reroll}, {dice_red_reroll}, {gem_blue} ou {gem_red}.",
             'textSize': "Taille",
             'textSizePh': "0",
             'textInter': "Interligne",
@@ -54,7 +54,7 @@ var CardSpell = mergeObject(StudioItem, {
             'namePh': "?",
             'text': "Effect",
             'textPh': "?",
-            'textHelp': "To insert images, use: {dice_yellow}, {dice_orange}, {dice_red}, {dice_yellow_reroll}, {dice_orange_reroll} or {dice_red_reroll}.",
+            'textHelp': "To insert images, use: {dice_yellow}, {dice_orange}, {dice_red}, {dice_yellow_reroll}, {dice_orange_reroll}, {dice_red_reroll}, {gem_blue} or {gem_red}.",
             'textSize': "Size",
             'textSizePh': "0",
             'textInter': "Line height",
@@ -91,7 +91,7 @@ var CardSpell = mergeObject(StudioItem, {
             'namePh': "?",
             'text': "Effetto",
             'textPh': "?",
-            'textHelp': "Per inserire queste immagini, usa: {dice_yellow}, {dice_orange}, {dice_red}, {dice_yellow_reroll}, {dice_orange_reroll} o {dice_red_reroll}.",
+            'textHelp': "Per inserire queste immagini, usa: {dice_yellow}, {dice_orange}, {dice_red}, {dice_yellow_reroll}, {dice_orange_reroll}, {dice_red_reroll}, {gem_blue} o {gem_red}.",
             'textSize': "Dimensioni",
             'textSizePh': "0",
             'textInter': "Interlinea",
@@ -167,7 +167,7 @@ var CardSpell = mergeObject(StudioItem, {
                 + "</picture>";
 
         code += "<div class=\"name" + (card.longName === true ? " long" : "") + "\">" + card.name + "</div>";
-        code += "<div class=\"text\" style=\"font-size: " + card.textSize + "%; line-height: " + card.textInter + "%; \">" + About._replace(card.text) + "</div>";
+        code += "<div class=\"text\" style=\"font-size: " + card.textSize + "%; line-height: " + card.textInter + "%; \">" + About._replace(card.text).replace(/\n/g, '<br/>') + "</div>";
 
         var hasCost = parseInt(card.cost) > 0;
         var hasSaturation = parseInt(card.saturation) > 0;

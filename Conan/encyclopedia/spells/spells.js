@@ -105,7 +105,6 @@ var EncyclopediaSpells = {
                     'en': "Origin",
                     'it': "Origine"
                 },
-                sort: true,
                 values: (function() {
                     var values = [];
                     for (var i in Encyclopedia.expansions.types)
@@ -562,7 +561,7 @@ var EncyclopediaSpells = {
                 + "<div class='from'>" + EncyclopediaSpells._i18n[Language].from + " "
                     + originString
                 + "</div>"
-                + ((spell.clarification && spell.clarification[Language]) ?"<div class='clarification'>" + EncyclopediaSpells._i18n[Language].clarification + " " + spell.clarification[Language] + "</div>" : "")
+                + ((spell.clarification && spell.clarification[Language]) ?"<div class='clarification'>" + EncyclopediaSpells._i18n[Language].clarification + " " + spell.clarification[Language].replace(/\n/g, "<br/>") + "</div>" : "")
                 + (spell.forSkill ? "<div class='skill'>" + EncyclopediaSpells._i18n[Language].skill + " " + Rules._linkToSkill(spell.forSkill, true) + "</div>" : "")
                 + (tokens ? ("<div class='tokens'>" + EncyclopediaSpells._i18n[Language].tokensUsed + " " + tokens + "</div>") : "")
             + "</div>",

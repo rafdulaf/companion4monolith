@@ -10,7 +10,7 @@
 .blinkmenu {
     position: absolute;
     z-index: 1;
-    background-color: blue;
+    background-color: var(--highlight-color);
     border-radius: 100%;
     width: 0;
     height: 0;

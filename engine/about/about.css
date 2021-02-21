@@ -22,6 +22,10 @@
     content: "\f0c0";
     font-family: 'Font Awesome 5 Free';
 }
+.about-allin:before {
+    content: "\f14a";
+    font-family: 'Font Awesome 5 Free';
+}
 
 .contribute .github:before {
     content: "\f092";

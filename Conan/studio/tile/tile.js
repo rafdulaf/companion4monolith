@@ -22,6 +22,8 @@ var Tile = mergeObject(StudioItem, {
             'colorGreen': "Verte",
             'colorOrange': "Orange",
             'colorPurple': "Violet",
+            'colorBlack': "Noir",
+            'colorNone': 'Aucune',
             'movement': "Mouvement",
             'movementPh': "?",
             'defense': "Défense",
@@ -31,6 +33,7 @@ var Tile = mergeObject(StudioItem, {
             'skills': "Compétences",
             'skillsPh': "?",
             'skillsNone': "Aucune",
+            'skillsSpace': "Espace vide",
             'reinforcement': "Renfort",
             'reinforcementPh': "?",
             'image': "Image (fond transparent)",
@@ -73,6 +76,8 @@ var Tile = mergeObject(StudioItem, {
             'colorGreen': "Green",
             'colorOrange': "Orange",
             'colorPurple': "Purple",
+            'colorBlack': "Black",
+            'colorNone': 'None',
             'movement': "Move",
             'movementPh': "?",
             'defense': "Defense",
@@ -82,6 +87,7 @@ var Tile = mergeObject(StudioItem, {
             'skills': "Skills",
             'skillsPh': "?",
             'skillsNone': "None",
+            'skillsSpace': "Empty space",
             'reinforcement': "Renfort",
             'reinforcementPh': "?",
             'image': "Image (transparent background)",
@@ -124,6 +130,8 @@ var Tile = mergeObject(StudioItem, {
             'colorGreen': "Verde",
             'colorOrange': "Arancione",
             'colorPurple': "Viola",
+            'colorBlack': "TODO_TRANSLATE",
+            'colorNone': 'TODO_TRANSLATE',
             'movement': "Movimento",
             'movementPh': "?",
             'defense': "Difesa",
@@ -133,6 +141,7 @@ var Tile = mergeObject(StudioItem, {
             'skills': "Abilità",
             'skillsPh': "?",
             'skillsNone': "Nessuna",
+            'skillsSpace': "TODO_TRANSLATE",
             'reinforcement': "Rinforzo",
             'reinforcementPh': "?",
             'image': "Immagine (sfondo trasparente)",
@@ -218,11 +227,15 @@ var Tile = mergeObject(StudioItem, {
     },
     
     _cardCode: function(tile, tokenAside, tokenMode, printPurpose) {
-        var code = "<div class=\"tile tiletile\">"
-                + "<picture class=\"background\">"
-                    + "<source media=\"print\" srcset=\"studio/tile/img/background_" + tile.color + "_hd.png?version=" + Version + "\"/>"
-                    + "<img src=\"studio/tile/img/background_" + tile.color + ".png?version=" + Version + "\"/>"
-                + "</picture>";
+        var code = "<div class=\"tile tiletile\">";
+        
+        if (tile.color != 'none')
+        {
+            code += "<picture class=\"background\">"
+                        + "<source media=\"print\" srcset=\"studio/tile/img/background_" + tile.color + "_hd.png?version=" + Version + "\"/>"
+                        + "<img src=\"studio/tile/img/background_" + tile.color + ".png?version=" + Version + "\"/>"
+                    + "</picture>";
+        }
 
         if (tile.image)
         {
@@ -291,34 +304,49 @@ var Tile = mergeObject(StudioItem, {
 
         if (tile.skills && tile.skills[0] != 'none')
         {
-            code += "<div class=\"skills-separator level" + level + "\">"
-                     + "<img class=\"background-separator\" src=\"studio/tile/img/separator.png?version=" + Version + "\"/>"
-                   + "</div>";
+            if (level != 0)
+            {
+                code += "<div class=\"skills-separator level" + level + "\">"
+                         + "<img class=\"background-separator\" src=\"studio/tile/img/separator.png?version=" + Version + "\"/>"
+                       + "</div>";
+            }
 
-            code += "<div class=\"skills level" + level + "\">"
-                     + "<img class=\"background-skills\" src=\"" + Tile._getSkillImage(tile.skills[0]) + "?version=" + Version + "\"/>"
-                   + "</div>";
+            if (tile.skills[0] != 'space')
+            {
+                code += "<div class=\"skills level" + level + "\">"
+                         + "<img class=\"background-skills\" src=\"" + Tile._getSkillImage(tile.skills[0]) + "?version=" + Version + "\"/>"
+                       + "</div>";
+            }
             level++;
 
             if (tile.skills && tile.skills[1] != 'none')
             {
-                code += "<div class=\"skills level" + level + "\">"
-                     + "<img class=\"background-skills\" src=\"" + Tile._getSkillImage(tile.skills[1]) + "?version=" + Version + "\"/>"
-                   + "</div>";
+                if (tile.skills[1] != 'space')
+                {
+                    code += "<div class=\"skills level" + level + "\">"
+                         + "<img class=\"background-skills\" src=\"" + Tile._getSkillImage(tile.skills[1]) + "?version=" + Version + "\"/>"
+                       + "</div>";
+                }
                 level++;
 
                 if (tile.skills && tile.skills[2] != 'none')
                 {
-                    code += "<div class=\"skills level" + level + "\">"
-                         + "<img class=\"background-skills\" src=\"" + Tile._getSkillImage(tile.skills[2]) + "?version=" + Version + "\"/>"
-                       + "</div>";
+                    if (tile.skills[2] != 'space')
+                    {
+                        code += "<div class=\"skills level" + level + "\">"
+                             + "<img class=\"background-skills\" src=\"" + Tile._getSkillImage(tile.skills[2]) + "?version=" + Version + "\"/>"
+                           + "</div>";
+                    }
                     level++;
 
                     if (tile.skills && tile.skills[3] != 'none')
                     {
-                        code += "<div class=\"skills level" + level + "\">"
-                             + "<img class=\"background-skills\" src=\"" + Tile._getSkillImage(tile.skills[3]) + "?version=" + Version + "\"/>"
-                           + "</div>";
+                        if (tile.skills[3] != 'space')
+                        {
+                            code += "<div class=\"skills level" + level + "\">"
+                                 + "<img class=\"background-skills\" src=\"" + Tile._getSkillImage(tile.skills[3]) + "?version=" + Version + "\"/>"
+                               + "</div>";
+                        }
                         level++;
                     }
                 }
@@ -401,6 +429,8 @@ var Tile = mergeObject(StudioItem, {
                     +     "<option value='green'>" + Tile._i18n[Language].colorGreen + "</option>"
                     +     "<option value='orange'>" + Tile._i18n[Language].colorOrange + "</option>"
                     +     "<option value='purple'>" + Tile._i18n[Language].colorPurple + "</option>"
+                    +     "<option value='black'>" + Tile._i18n[Language].colorBlack + "</option>"
+                    +     "<option value='none'>" + Tile._i18n[Language].colorNone + "</option>"
                     + "</select>"
                 + "</div>"
                 + "<div class=\"field movement\">"
@@ -423,10 +453,10 @@ var Tile = mergeObject(StudioItem, {
                 + "</div>"
                 + "<div class=\"field skills\">"
                     + "<label for=\"tskills\">" + Tile._i18n[Language].skills + "</label>"
-                    + "<select id=\"tskills\" class=\"skills\" name=\"tileskills1\" onchange=\"Tile._preview();\"><option value=\"none\">" + Tile._i18n[Language].skillsNone + "</option>" + _skills() + "</select>"
-                    + "<select id=\"tskills2\" class=\"skills\" name=\"tileskills2\" onchange=\"Tile._preview();\"><option value=\"none\">" + Tile._i18n[Language].skillsNone + "</option>" + _skills() + "</select>"
-                    + "<select id=\"tskills3\" class=\"skills\" name=\"tileskills3\" onchange=\"Tile._preview();\"><option value=\"none\">" + Tile._i18n[Language].skillsNone + "</option>" + _skills() + "</select>"
-                    + "<select id=\"tskills4\" class=\"skills\" name=\"tileskills4\" onchange=\"Tile._preview();\"><option value=\"none\">" + Tile._i18n[Language].skillsNone + "</option>" + _skills() + "</select>"
+                    + "<select id=\"tskills\" class=\"skills\" name=\"tileskills1\" onchange=\"Tile._preview();\"><option value=\"none\">" + Tile._i18n[Language].skillsNone + "</option><option value=\"space\">" + Tile._i18n[Language].skillsSpace + "</option>" + _skills() + "</select>"
+                    + "<select id=\"tskills2\" class=\"skills\" name=\"tileskills2\" onchange=\"Tile._preview();\"><option value=\"none\">" + Tile._i18n[Language].skillsNone + "</option><option value=\"space\">" + Tile._i18n[Language].skillsSpace + "</option>" + _skills() + "</select>"
+                    + "<select id=\"tskills3\" class=\"skills\" name=\"tileskills3\" onchange=\"Tile._preview();\"><option value=\"none\">" + Tile._i18n[Language].skillsNone + "</option><option value=\"space\">" + Tile._i18n[Language].skillsSpace + "</option>" + _skills() + "</select>"
+                    + "<select id=\"tskills4\" class=\"skills\" name=\"tileskills4\" onchange=\"Tile._preview();\"><option value=\"none\">" + Tile._i18n[Language].skillsNone + "</option><option value=\"space\">" + Tile._i18n[Language].skillsSpace + "</option>" + _skills() + "</select>"
                 + "</div>"
                 + "<div class=\"field reinforcement\">"
                     + "<label for=\"treinforcement\">" + Tile._i18n[Language].reinforcement + "</label>"

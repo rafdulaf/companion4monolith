@@ -93,7 +93,6 @@ var EncyclopediaTokens = {
                     'en': "Origin",
                     'it': "Origine"
                 },
-                sort: true,
                 values: (function() {
                     var values = [];
                     for (var i in Encyclopedia.expansions.types)
@@ -319,9 +318,11 @@ var EncyclopediaTokens = {
 
         var subids = {};
         var originsCount = {};
+        var totalCount = 0;
         for (var e in tokens)
         {
             var token = tokens[e];
+            totalCount += token.count || 1;
 
             var origins = token.origins.slice();
             for (var i in origins)
@@ -332,12 +333,12 @@ var EncyclopediaTokens = {
 
             if (!subids[token.subid])
             {
-                subids[token.subid] = 1;
+                subids[token.subid] = origins.length;
                 displayTokens.push(token);
             }
             else
             {
-                subids[token.subid] += 1;
+                subids[token.subid] += origins.length;
             }
         }
 
@@ -349,11 +350,11 @@ var EncyclopediaTokens = {
             originString += Encyclopedia._getOrigin(i) + " (" + originsCount[i] + " " + (originsCount[i] == 1 ? EncyclopediaTokens._i18n[Language].token : EncyclopediaTokens._i18n[Language].tokens) + ")";
         }
 
-        var c = "<div class='token-wraperindetails'>";
+        var c = "<div class='token-wraperindetails' data-totalcount='" + totalCount + "'>";
         for (var e in displayTokens)
         {
             var token = displayTokens[e];
-            c += "<div class='token-wrapindetails' data-count='" + subids[token.subid] + "'>" + EncyclopediaTokens._tokenCode(token, true) + "</div>";
+            c += "<div class='token-wrapindetails' data-count='" + subids[token.subid] + "'>" + EncyclopediaTokens._tokenCode(token, true, totalCount) + "</div>";
         }
         c += "</div>";
 
@@ -390,18 +391,32 @@ var EncyclopediaTokens = {
         );
     },
 
-    _tokenCode: function(token, details) {
+    _tokenCode: function(token, details, count) {
         var code = "";
-
+        
         var ratio = 7.2/25.0;
         var style = token.size.shape == "circle" || token.size.width >= token.size.height ? "width: " + (token.size.width*ratio) +  "rem;" : "height: " + (token.size.height*ratio) +  "rem;"
+        
+        var separateBack = count == 1 && details && token.size.shape == "square" && token.faceB && token.faceB.image != token.faceA.image;
+        var backImage = (details && token.faceB ? "<img " + (separateBack ? "" : "class='back'") + LazyImage + " src='" + token.faceA.image + "\?version=" + Version + "' style='" + style + "'/>" : "");
+        
         code += "<div class='othertoken " + token.size.shape + "'>"
                     + "<div class='img'>"
-                        + (details && token.faceB ? "<img class='back' " + LazyImage + " src='" + token.faceA.image + "\?version=" + Version + "' style='" + style + "'/>" : "")
-                        + "<img " + LazyImage + " src='" + (token.faceB ? token.faceB.image : token.faceA.image) + "\?version=" + Version + "' style='" + style + "'/>"
+                        + (separateBack ? "" : backImage)
+                        + "<img " + LazyImage + " src='" + (!details && token.preview ? token.preview.image : (token.faceB ? token.faceB.image : token.faceA.image)) + "\?version=" + Version + "' style='" + style + "'/>"
                     + "</div>"
-                    + "<span class='name'>" + token.name[Language] + "</span>"
-              + "</div>"
+                    + "<span class='name'>" + (separateBack ? token.name[Language].split(" / ")[0] : token.name[Language] ) + "</span>"
+              + "</div>";
+              
+        if (separateBack)
+        {
+            code += "<div class='othertoken " + token.size.shape + "'>"
+                        + "<div class='img'>"
+                            + backImage
+                        + "</div>"
+                        + "<span class='name'>" + (separateBack ? token.name[Language].split(" / ")[1] : token.name[Language] ) + "</span>"
+                  + "</div>";
+        }
 
         return code;
     },
@@ -417,7 +432,7 @@ var EncyclopediaTokens = {
             s += "<a href='javascript:void(0)' onclick='EncyclopediaTokens.openToken(\"" + id + "\")'>";
             if (image)
             {
-                s += EncyclopediaTokens._tokenCode(token, false);
+                s += EncyclopediaTokens._tokenCode(token);
             }
             else
             {

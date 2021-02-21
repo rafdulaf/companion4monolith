@@ -46,8 +46,10 @@ div.token-wrapindetails  .othertoken .name,
     text-align: center;
     font-family: 'Primary';
     font-size: 16px;
+    line-height: 1.5;
     background-color: rgba(0,0,0,0.3);
     color: #fff;
+    z-index: 1;
 }
 
 div.token-wrapindetails,
@@ -96,6 +98,20 @@ div.token-wrapindetails .othertoken img.back {
 }
 div.token-wrapindetails .othertoken img.back + img {
     transform: translate(-35%, -65%);
+}
+
+div.token-wrapindetails .othertoken.square {
+    overflow: unset;
+}
+div.token-wrapindetails .othertoken.square img.back + img {
+    top: 0;
+    left: 0;    
+    transform: none;
+}
+div.token-wrapindetails .othertoken.square img.back {
+    top: 0;
+    left: 0;    
+    transform: translate(7%, -7%);
 }
 
 

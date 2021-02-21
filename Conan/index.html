@@ -42,32 +42,7 @@
         <link rel="apple-touch-startup-image" href="resources/favico/apple-splash-1136-640.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
 
         <script src="../engine/vendors/js/jquery-3.1.1.js"></script>
-        <script>
-            if (window.location.search && window.location.search.substring(1).split("&").indexOf("error") != -1)
-           	{
-            	window.onerror = function (msg, url, line, col, error) {
-            	    var chaine = msg.toLowerCase();
-            	    var souschaine = "script error";
-            	    if (chaine.indexOf(souschaine) > -1)
-            	    {
-            	        alert('Script Error: see console');
-            	    } 
-            	    else 
-            	    {
-            	    	var origin = window.location.href.substring(0, window.location.href.lastIndexOf("/", window.location.href.lastIndexOf("/") - 1));
-            	    	
-            	        var message = 
-            	            msg + "\n"
-            	            + "at " + url  + ":" + line + ":" + col + "\n\n"
-            	            + (error && error.stack ? error.stack : JSON.stringify(error));
-
-            	        alert(message.replaceAll(origin, ''));
-            	    }
-
-            	    return false;
-            	};
-           	}
-        </script>
+        <script src="../engine/general/errors.1.js"></script>
         <script>
             Application = "Conan";
             Languages = ["fr", "en", "it"];
@@ -99,16 +74,11 @@
         
         <script type="text/javascript">
             (async function () {
-        		var hash = window.location.hash;
-        		
             	await Utils.loadApplication();
 	        	await Encyclopedia.load();
         		Utils.initialize();
         		
-                if (!Nav._hashChange())
-                {
-                    Nav.switchTo();
-                }
+        		Nav.startUp();
                    
                 $(".loading").addClass('loaded');
             })();

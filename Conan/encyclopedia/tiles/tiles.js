@@ -102,7 +102,6 @@ var EncyclopediaTiles = {
                     'en': "Origin",
                     'it': "Origine"
                 },
-                sort: true,
                 values: (function() {
                     var values = [];
                     for (var i in Encyclopedia.expansions.types)
@@ -591,7 +590,7 @@ var EncyclopediaTiles = {
             image: tile.imageHD && hd ? (tile.imageHD + "?version=" + Version) : (tile.image ? (tile.image + "?version=" + Version) : null),
             imagelocation: {x: tile.image_location.x, y: tile.image_location.y},
             imagezoom: tile.image_zoom,
-            imagerotation: "0",
+            imagerotation: tile.image_rotation ||"0",
             tokens: (tile.tokens || []).map(function(t) { return {active: true, image: t.image, imagelocation: {x: t.image_location.x, y: t.image_location.y}, imagezoom: t.image_zoom, imagerotation: 0}})
         };
     },
@@ -695,10 +694,10 @@ var EncyclopediaTiles = {
         ("<div class='skill'>"
             + EncyclopediaTiles._i18n[Language].skill
             + " "
-            + (tile.skills[1] != 'none' && tile.skills[2] != 'none' && tile.skills[3] != 'none'? "" + Rules._linkToSkill(tile.skills[3], true) : "")
-            + (tile.skills[1] != 'none' && tile.skills[2] != 'none' ? "" + Rules._linkToSkill(tile.skills[2], true) : "")
-            + (tile.skills[1] != 'none' ? "" + Rules._linkToSkill(tile.skills[1], true) : "")
-            + Rules._linkToSkill(tile.skills[0], true)
+            + (tile.skills[1] != 'none' && tile.skills[2] != 'none' && tile.skills[3] != 'none' && tile.skills[3] != 'space' ? "" + Rules._linkToSkill(tile.skills[3], true) : "")
+            + (tile.skills[1] != 'none' && tile.skills[2] != 'none' && tile.skills[2] != 'space' ? "" + Rules._linkToSkill(tile.skills[2], true) : "")
+            + (tile.skills[1] != 'none' && tile.skills[1] != 'space' ? "" + Rules._linkToSkill(tile.skills[1], true) : "")
+            + (tile.skills[0] != 'space' ? Rules._linkToSkill(tile.skills[0], true) : "")
         + "</div>") : "")
 
         var superdetails = "";
@@ -747,18 +746,20 @@ var EncyclopediaTiles = {
             var studiotiles = JSON.parse(localStorage.getItem(Application + "_StudioTiles")) || [];
 
             var colors = {};
+            var images = {};
 
             var tiles = EncyclopediaTiles._findTilesById(id);
             for (var i in tiles)
             {
                 var tile = tiles[i];
 
-                if (colors[tile.color])
+                if (colors[tile.color] && images[tile.image])
                 {
                     continue;
                 }
 
                 colors[tile.color] = true;
+                images[tile.image] = true;
                 var studioTile = EncyclopediaTiles._convertTileToStudio(tile, true);
                 studiotiles.push(studioTile);
             }

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg viewBox="0 0 907 1284" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<clipPath id="c0_2"><path d="M80.2,262V224.3H41.3V262Zm0,-40.7V183.1H41.3v38.2ZM797,100.6V48.2H91.1v52.4ZM0,1284.4V0H907.6V1284.4Z"/></clipPath>
+<clipPath id="c1_2"><path d="M91.1,100.6V48.2H797v52.4Z"/></clipPath>
+<clipPath id="c2_2"><path d="M41.3,221.3V183.1H80.2v38.2Z"/></clipPath>
+<clipPath id="c3_2"><path d="M41.3,262V224.3H80.2V262Z"/></clipPath>
+<clipPath id="c4_2"><path d="M0,1284.4V0H907.6V1284.4Z"/></clipPath>
+<style type="text/css"><![CDATA[
+.g0_2{
+fill: none;
+stroke: #231916;
+stroke-width: 0.763;
+stroke-linecap: butt;
+stroke-linejoin: miter;
+}
+.g1_2{
+fill: none;
+stroke: #FFFFFF;
+stroke-width: 1.909;
+stroke-linecap: butt;
+stroke-linejoin: miter;
+}
+.g2_2{
+fill: none;
+stroke: #000000;
+stroke-width: 0.381;
+stroke-linecap: butt;
+stroke-linejoin: miter;
+}
+]]></style>
+</defs>
+<image clip-path="url(#c0_2)" preserveAspectRatio="none" x="0" y="-22" width="930" height="1329" xlink:href="img/1.jpg"/>
+<image clip-path="url(#c1_2)" preserveAspectRatio="none" x="91" y="48" width="706" height="53" xlink:href="img/2.jpg"/>
+<path d="M42.4,584.8h88.3m-88.3,82H83M42.4,772.2H83.2M42.4,840.1H80.8m-38.4,178H143.1m-100.7,150h76.4M477.6,204.5h94.5M477.6,455.8h71.9m-71.9,136H567M477.6,696.4h95.2m-95.2,68h52.1M477.6,891.8H577.7M477.6,1051.4h39.1" class="g0_2"/>
+<image clip-path="url(#c2_2)" preserveAspectRatio="none" x="41" y="183" width="40" height="39" xlink:href="img/3.jpg"/>
+<image clip-path="url(#c3_2)" preserveAspectRatio="none" x="41" y="224" width="40" height="38" xlink:href="img/4.jpg"/>
+<g clip-path="url(#c4_2)">
+<path d="M-10,-.8H-32.9m950.6,0h22.9M-10,1285.3H-32.9m950.6,0h22.9M-.8,-10V-32.9m0,1327.4v22.9M908.5,-10V-32.9m0,1327.4v22.9" class="g1_2"/>
+<path d="M-10,-.8H-32.9m950.6,0h22.9M-10,1285.3H-32.9m950.6,0h22.9M-.8,-10V-32.9m0,1327.4v22.9M908.5,-10V-32.9m0,1327.4v22.9" class="g2_2"/>
+</g>
+</svg>

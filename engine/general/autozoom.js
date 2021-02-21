@@ -10,7 +10,7 @@ var AutoZoom = {
     },
     _resize: function(id, width, height) {
         let elt = $("#" + id);
-        let locationWidth = elt[0].clientWidth;
+        let locationWidth = Math.floor(elt.width());
         
         if (elt.attr('data-width') == locationWidth) return;
         elt.attr('data-width', locationWidth);

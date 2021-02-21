@@ -99,7 +99,6 @@ var EncyclopediaEquipments = {
                     'en': "Origin",
                     'it': "Origine"
                 },
-                sort: true,
                 values: (function() {
                     var values = [];
                     for (var i in Encyclopedia.expansions.types)
@@ -383,6 +382,7 @@ var EncyclopediaEquipments = {
         return {
             id: equipment.id + "-" + Math.random(),
             name: equipment.title[Language],
+            text: equipment.text ? equipment.text[Language] : "",
             encumbrance: equipment.encumbrance,
             movement: equipment.movement || "",
             melee: equipment.melee,
@@ -391,9 +391,10 @@ var EncyclopediaEquipments = {
             active: equipment.active,
             passive: equipment.passive,
             skills: equipment.skills || { 0: "none", 1: "none" },
+            skillsatbottom: equipment.skillsatbottom || false,
             image: equipment.image ? equipment.image + "?version=" + Version : null,
-            imagelocation: {x: "50", y: "50"},
-            imagezoom: "100",
+            imagelocation: equipment.imagelocation || {x: "50", y: "50"},
+            imagezoom: equipment.imagezoom || "100",
             imagerotation: "0"
         };
     },
