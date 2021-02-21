@@ -3,6 +3,7 @@ var Rules = {
         'fr': {
             'menu': "Règles",
             'skills': "Compétences",
+            'clarification': "Clarification :",
 
             'viewer-search': "Recherche dans le document",
             'viewer-download': "Télécharger le document",
@@ -14,11 +15,14 @@ var Rules = {
             'search-inputPh': "Entrez un mot clé à chercher (3 caractères minimum)",
             'search-loose': "Aucun résultat ne correspond au mot clé saisi",
 
-            'copyright': "Les règles proposés sont basées sur les règles officielles et leurs compléments mais ont été en partie reformulées."
+            'copyright': "Les règles proposés sont basées sur les règles officielles et leurs compléments mais ont été en partie reformulées.",
+            
+            'userpref_showall': "Afficher seulement les livre de règles que je possède"
         },
         'en': {
             'menu': "Rules",
             'skills': "Skills",
+            'clarification': "Clarification:",
 
             'viewer-search': "Search in the document",
             'viewer-download': "Download the document",
@@ -30,11 +34,14 @@ var Rules = {
             'search-inputPh': "Enter the keyword to search (3 characters minimum)",
             'search-loose': "No result is matching the entered keyword",
 
-            'copyright': "The proposed rules are based upon the official rules and their complements but were partially rewriten."
+            'copyright': "The proposed rules are based upon the official rules and their complements but were partially rewriten.",
+            
+            'userpref_showall': "Display only rule books that I own"
         },
         'it': {
             'menu': "Regole",
             'skills': "Abilità",
+            'clarification': "Chiarificazione:",
 
             'viewer-search': "Cerca nell'intero documento",
             'viewer-download': "Scarica il documento",
@@ -46,13 +53,17 @@ var Rules = {
             'search-inputPh': "Inserisci la parola chiave da cercare (minimo 3 caratteri)",
             'search-loose': "Nessun risultato corrispondente alla parola cercata",
 
-            'copyright': "Le regole sono basate sul regolamento ufficiale e sui suoi complementi, ma sono parzialmente riscritte."
+            'copyright': "Le regole sono basate sul regolamento ufficiale e sui suoi complementi, ma sono parzialmente riscritte.",
+            
+            'userpref_showall': "TODO_TRANSLATE"
         }
     },
     
     init: function()
     {
-        Rules._lastSearch = "";
+		About.addPreference("rules-showmine", Rules._i18n[Language].menu, Rules._i18n[Language].userpref_showall, 'boolean', 'true');
+
+		Rules._lastSearch = "";
 
         Nav.addIcon(Rules._i18n[Language].menu, "rules-icon", "rules");
 
@@ -63,7 +74,7 @@ var Rules = {
         }];
         for (var i = 0; i < Encyclopedia.rules.list.length; i++)
         {
-            if (About._hasExpansion(Encyclopedia.rules.list[i].origins))
+            if (About._hasExpansion(Encyclopedia.rules.list[i].origins) || window.About && About.getPreference("rules-showmine") === "false")
             {
                 Rules._rules.push({
                     label: Encyclopedia.rules.list[i].title[Language], 
@@ -116,7 +127,8 @@ var Rules = {
                                          skill.type,
                                          skill.image,
                                          skill.title[Language],
-                                         skill.text[Language]);
+                                         skill.text[Language],
+                                         skill.clarification ? skill.clarification[Language] : null);
                 }
             }
         }
@@ -127,19 +139,21 @@ var Rules = {
         // for inheritance
     },
     
-        _addSkill: function(id, type, image, title, text)
+    _addSkill: function(id, type, image, title, text, clarification)
     {
-        $('#skills_' + type + " .cols").append((id ? "<a href='javascript:void(0)' onclick='Rules.openSkill(\"" + id + "\")'>" : "")
-            + Rules._skill2HTML(id, type, image, title, text)
-            + (id ? "</a>" : ""));
+        $('#skills_' + type + " .cols").append("<a href='javascript:void(0)'" + (id ? " onclick='Rules.openSkill(\"" + id + "\")'" : "") + ">"
+            + Rules._skill2HTML(id, type, image, title, text, clarification)
+            + "</a>");
     },
 
-    _skill2HTML: function(id, type, image, title, text)
+    _skill2HTML: function(id, type, image, title, text, clarification)
     {
         return "<div class='skills-skill'>"
             +   "<img " + LazyImage + " src='" + image + "?version=" + Version + "'/>"
             +   "<div class='skills-title'>" + title + "</div>"
-            +   "<div class='skills-text'>" + About._replace(text) + "</div>"
+            +   "<div class='skills-text'>" + About._replace(text) + " " 
+            + (clarification ? "<span title=\"" + Rules._i18n[Language].clarification + " " + clarification + "\">[...]</span>" : "") 
+            + "</div>"
             + "</div>";
     },
 
@@ -162,7 +176,7 @@ var Rules = {
         }
         else
         {
-            s += Rules._skill2HTML(skill.id, skill.type, skill.image, skill.title[Language], skill.text[Language]);
+            s += Rules._skill2HTML(skill.id, skill.type, skill.image, skill.title[Language], skill.text[Language], skill.clarification ? skill.clarification[Language] : null);
         }
         s += "</a>";
 
@@ -191,10 +205,14 @@ var Rules = {
     
     openSkill: function(id) {
         var skill = Rules._findSkillById(id);
+        
+        let clarifications = ((skill.clarification && skill.clarification[Language]) ?"<div class='clarification'>" + Rules._i18n[Language].clarification + " " + skill.clarification[Language].replace(/\n/g, "<br/>") + "</div>" : "")
+        
 
         Nav.dialog(skill.title[Language],
             "<div class='skillsdetails'>"
-                + Rules._skill2HTML(skill.id, skill.type, skill.image, skill.title[Language], skill.text[Language])
+                + Rules._skill2HTML(skill.id, skill.type, skill.image, skill.title[Language], skill.text[Language], null)
+                + clarifications
                 + Rules._openSkillSpecific(skill)
             + "</div>",
             null,
@@ -394,13 +412,23 @@ var Rules = {
 
         if (!Rules._rules[Rules._currentSlide].pages)
         {
+        	Nav.showAction("rules", "download");
             Nav.hideAction("rules", "zoomin");
             Nav.hideAction("rules", "zoomout");
             Nav.hideFloatingAction("rules", "search");
         }
         else
         {
-            Nav.showAction("rules", "zoomin");
+        	if (Rules._rules[Rules._currentSlide].download)
+    		{
+        		Nav.showAction("rules", "download");
+    		}
+        	else
+    		{
+        		Nav.hideAction("rules", "download");
+    		}
+
+        	Nav.showAction("rules", "zoomin");
             Nav.showAction("rules", "zoomout");
             Nav.showFloatingAction("rules", "search");
         }

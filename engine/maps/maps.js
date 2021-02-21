@@ -18,10 +18,11 @@ var Maps = {
             'clickhelp5': "Les zones colorées en turquoise sont au dessus.",
             'clickhelp3': "Le nombre de cercles verts imbriqués au centre d'une zone indique le niveau d'élévation.",
             'copyright': "Les textes d'aide des plateaux sont issus des textes proposés par leurs créateurs respectifs. Certains sont retouchés.<br/>"
-                        + "Certains plateaux proposent de télécharger une vue statique des lignes de vue. Ces vues ont été réalisées par <a href='https://the-overlord.com/index.php?/profile/13-roolz/' target='_blank'>@Roolz</a>.<br/>"
+                        + "Certains plateaux proposent de télécharger une vue statique des lignes de vue réalisée par <a href='https://the-overlord.com/index.php?/profile/13-roolz/' target='_blank'>@Roolz</a> qui a donc fait tout le travail de calcul des lignes de vue, d'interrogations des auteurs et la synthèse des résultats.<br/>"
                         + "Le principe des lignes de vues dynamiques est une idée de <a href='https://the-overlord.com/index.php?/profile/88-pamplerousse/' target='_blank'>@Pamplerousse</a>.<br/>"
                         + "Le plateau :",
-            'copyright_prop': "est la propriété de"
+            'copyright_prop': "est la propriété de",
+            'userpref_showall': "Afficher seulement les plateaux que je possède"
         },
         'en': {
             'menu': "Boards",
@@ -41,10 +42,11 @@ var Maps = {
             'clickhelp5': "Turquoise areas are above the blue area.",
             'clickhelp3': "The number of nested green circles in the center of an area show its elevation level.",
             'copyright': "The help text of the boards are proposed by their respective creators. Some of them were modified.<br/>"
-                        + "Some boards allow to download a static ligne of sight view. This views were realized by <a href='https://the-overlord.com/index.php?/profile/13-roolz/' target='_blank'>@Roolz</a>.<br/>"
+                        + "Some boards allow to download a static ligne of sight view that was realized by <a href='https://the-overlord.com/index.php?/profile/13-roolz/' target='_blank'>@Roolz</a> who did all the work of computing line of sights, questionning the authors and sumup the results.<br/>"
                         + "The principle of the dynamic line of sights is based on a idea of <a href='https://the-overlord.com/index.php?/profile/88-pamplerousse/' target='_blank'>@Pamplerousse</a>.<br/>"
                         + "The board:" ,
-            'copyright_prop': "is the property of"
+            'copyright_prop': "is the property of",
+            'userpref_showall': "Display only boards that I own"
         },
 	    'it': {
             'menu': "Mappe",
@@ -64,16 +66,30 @@ var Maps = {
             'clickhelp5': "Le aree celesti sono un livello inferiore a quelle blu.",
             'clickhelp3': "Il numero di cerchi verdi concentrici al centro dell'area indica il suo livello di elevazione.",
             'copyright': "I testi esplicativi per ogni mappa sono stati redatti dai loro rispettivi creatori. Alcuni di questi sono stati modificati.<br/>"
-                        + "In alcune mappe è possibile scaricare uno schema delle linee di vista statiche. Questi schemi sono stati realizzati da: <a href='https://the-overlord.com/index.php?/profile/13-roolz/' target='_blank'>@Roolz</a>.<br/>"
+                        + "TODO_TRANSLATE<br/>"
                         + "I principi delle linee di vista dinamiche sono basati su un'idea di: <a href='https://the-overlord.com/index.php?/profile/88-pamplerousse/' target='_blank'>@Pamplerousse</a>.<br/>"
                         + "Le mappe:" ,
-            'copyright_prop': "è proprietà di:"
+            'copyright_prop': "è proprietà di:",
+            'userpref_showall': "TODO_TRANSLATE"
         }
     },
+    
+    _applySubHash: function(hash) {
+    	try
+    	{
+    		Maps._displayMap(hash);
+    	}
+    	catch (e)
+    	{
+    		// non existing map
+    	}
+    },
 
-	init: function(config)
+	init: function()
 	{
-        Nav.addIcon(Maps._i18n[Language].menu, "maps-icon", "maps");
+		About.addPreference("maps-showmine", Maps._i18n[Language].menu, Maps._i18n[Language].userpref_showall, 'boolean', 'false');
+		
+        Nav.addIcon(Maps._i18n[Language].menu, "maps-icon", "maps", Maps._applySubHash);
 
         Nav.addAction("maps", Maps._i18n[Language].legend, "maps-icon-legend", "legend", Maps._legend );
         Nav.addAction("maps", Maps._i18n[Language].pdf, "maps-icon-pdf", "pdf", Maps._downloadPdf);
@@ -87,28 +103,226 @@ var Maps = {
         Nav.hideAction("maps", "rotate");
         Nav.hideAction("maps", "legend");
 
-        Maps._rotation = window.screen.width / window.screen.height > 1.2 ? 0 : 3;
-
-		var toRemove = [];
-
+        Maps.externalInit();
+        
 		for (var i in Encyclopedia.maps.list)
 		{
 			var map = Encyclopedia.maps.list[i];
 
-            if (!About._hasExpansion(map.description.origins))
+            if (!About._hasExpansion(map.description.origins, true))
             {
                 map.discard = true;
             }
 
-            Maps._check(map);
+            if (!map.composed)
+            {
+            	// Composed maps can have errors since some zone can be removed during composition
+            	Maps._check(map);
+            }
 		}
-
-        $(window).on('resize', Maps._onResize);
-        $(window).on('orientationchange', Maps._onResize);
+        
 		Maps._displayIndex();
 
         About.addCopyright(Maps._i18n[Language].menu, Maps._i18n[Language].copyright + Maps._copyright());
 	},
+	
+	standalone: false,
+	
+	externalInit: function()
+	{
+        Maps._rotation = window.screen.width / window.screen.height > 1.2 ? 0 : 3;
+        
+        Maps._addCompositionsToList();
+
+        $(window).on('resize', Maps._onResize);
+        $(window).on('orientationchange', Maps._onResize);
+	},
+    
+    _findMapById: function(id) {
+        for (var i in Encyclopedia.maps.list)
+        {
+            var map = Encyclopedia.maps.list[i];
+            if (map.id == id)
+            {
+                return map;
+            }
+        }        
+
+        for (var i in Encyclopedia.maps.parts)
+        {
+            var map = Encyclopedia.maps.parts[i];
+            if (map.id == id)
+            {
+                return map;
+            }
+        }      
+        
+        throw new Error("Find no map with id " + id);
+    },
+    
+    _rulesComposition: function(composition) 
+    {
+        return composition.description.rules;
+    },
+
+    _composeCoordinates: function(coordArray, transformInfo, removeIfOut)
+    {
+        var newArray = [];
+        if (coordArray.length == 0) return newArray;
+        
+        var atLeastOneIn = false;
+        for (var i = 0; i < coordArray.length; i++)
+        {
+            var coord = [ coordArray[i][0], coordArray[i][1] ];
+            
+            if (coord[0] < transformInfo.source[0][0]
+                || coord[1] < transformInfo.source[0][1]
+                || coord[0] > transformInfo.source[1][0]
+                || coord[1] > transformInfo.source[1][1])
+            {
+                if (removeIfOut)
+                {
+                    continue;
+                }
+                else
+                {
+                    coord[0] = Math.max(coord[0], transformInfo.source[0][0]);
+                    coord[0] = Math.min(coord[0], transformInfo.source[1][0]);
+                    coord[1] = Math.max(coord[1], transformInfo.source[0][1]);
+                    coord[1] = Math.min(coord[1], transformInfo.source[1][1]);
+                }
+            }
+            else
+            {
+                atLeastOneIn = true;
+            }
+            
+            var newCoord = [
+                (coord[0] - transformInfo.source[0][0])*(transformInfo.destination[1][0] - transformInfo.destination[0][0])/(transformInfo.source[1][0] - transformInfo.source[0][0]) + transformInfo.destination[0][0], 
+                (coord[1] - transformInfo.source[0][1])*(transformInfo.destination[1][1] - transformInfo.destination[0][1])/(transformInfo.source[1][1] - transformInfo.source[0][1]) + transformInfo.destination[0][1] 
+            ];
+            
+            newArray.push(newCoord);
+        }
+        
+        if (!atLeastOneIn)
+        {
+            return null;
+        }
+        
+        return newArray;
+    },
+    
+    _prefixLinks: function(oldLinks, prefix)
+    {
+        var newLinks = [];
+        
+        for (let i = 0; i < oldLinks.length; i++)
+        {
+            let values = oldLinks[i].split("#");
+            newLinks.push(values[0] + "#" + prefix + values[1] + "#" + values[2]); 
+        }
+        
+        return newLinks;
+    },
+    
+    _addReversedLinks: function(links) {
+        var newLinks = {};
+        
+        for (var l in links)
+        {
+            var linkArray = links[l];
+            for (var i = 0; i < linkArray.length; i++)
+            {
+                var values = linkArray[i].split('#');
+                
+                newLinks[values[1]] = newLinks[values[1]] || [];
+                newLinks[values[1]].push(values[2] + "#" + l + "#" + values[0]);
+            }
+        }
+        
+        for (var l in newLinks)
+        {
+            links[l] = newLinks[l];
+        }
+        
+    },
+    
+    _addCompositionsToList: function() {
+        for (var i in Encyclopedia.maps.compositions)
+        {
+            var composition = Encyclopedia.maps.compositions[i];
+            
+            if (composition.reverseLinks)
+            {
+                Maps._addReversedLinks(composition.links)
+            }
+            
+            var map = {};
+            map.id = composition.id;
+            map.composed = true;
+            map.description = composition.description;
+            map.description.origins = [];
+            map.size = composition.size;
+            map.zones = [];
+
+            for (var submapId in composition.zones)
+            {
+                var transformationInfo = composition.zones[submapId];
+                transformationInfo.source = transformationInfo.source || [[0,0],[100,100]];
+                
+                var zoneMap = Maps._findMapById(submapId);
+                for (var z in zoneMap.zones)
+                {
+                    var oldZone = zoneMap.zones[z];
+                    var prefix = submapId + "-";
+                    var newZoneId = prefix + z;
+                    var newZone = {};
+                    
+                    newZone.area = Maps._composeCoordinates(oldZone.area, transformationInfo, false);
+                    newZone.centers = Maps._composeCoordinates(oldZone.centers, transformationInfo, false);
+                    newZone.links = Maps._prefixLinks(oldZone.links, prefix);
+                    newZone.level = oldZone.level;
+                    
+                    if (composition.links && composition.links[newZoneId])
+                    {
+                        for (let cb = 0; cb < composition.links[newZoneId].length; cb++)
+                        {
+                            newZone.links.push(composition.links[newZoneId][cb]);
+                        }
+                    }
+                    
+                    if (!newZone.area || !newZone.centers)
+                    {
+                        // Discard this zone (out of scope)
+                        continue;
+                    }
+
+                    map.zones[newZoneId] = newZone;
+                }
+                
+                for (var o in zoneMap.description.origins)
+                {
+                    var origin = zoneMap.description.origins[0];
+                    if (map.description.origins.indexOf(origin) == -1)
+                    {
+                        map.description.origins.push(origin);
+                    }
+                }
+            }
+
+            map.description.rules = Maps._rulesComposition(composition);
+            
+            if (composition.insertAfter)
+            {
+                Encyclopedia.maps.list.splice(Encyclopedia.maps.list.indexOf(Maps._findMapById(composition.insertAfter)) + 1, 0, map);
+            }
+            else
+            {
+                Encyclopedia.maps.list.push(map);
+            }
+        }
+    },
 
 	_hideAll: function()
 	{
@@ -135,7 +349,7 @@ var Maps = {
                     var targetZoneName = result[2];
                     var centerOfTarget = parseInt(result[3]);
 
-                    if (centerOfZ < 1 || centerOfZ > nbZCenters)
+                    if (centerOfZ > nbZCenters)
                     {
                         console.error("    Error in zone '" + z + "', the link n°" + l + " starts from an unexisting center: " + link);
                     }
@@ -148,7 +362,7 @@ var Maps = {
                     else
                     {
                         var nbTargetZoneCenters = targetZone.centers.length;
-                        if (centerOfTarget < 1 || centerOfTarget > nbTargetZoneCenters)
+                        if (centerOfTarget > nbTargetZoneCenters)
                         {
                             console.error("    Error in zone '" + z + "', the link n°" + l + " leads to an unexisting center: " + link);
                         }
@@ -169,18 +383,22 @@ var Maps = {
 	_displayIndex: function()
 	{
 		Maps._hideAll();
-        Nav.hideAction("maps", "pdf");
-        Nav.hideAction("maps", "forum");
-        Nav.hideAction("maps", "losfile");
-        Nav.hideAction("maps", "rotate");
-        Nav.hideAction("maps", "legend");
+		
+		if (!Maps.standalone)
+		{
+			Nav.hideAction("maps", "pdf");
+			Nav.hideAction("maps", "forum");
+			Nav.hideAction("maps", "losfile");
+			Nav.hideAction("maps", "rotate");
+			Nav.hideAction("maps", "legend");
+			
+			$('#maps').attr('title', Maps._i18n[Language].menu);
+			Nav.updateTitle();
+		}
 
 		var id = "maps-index";
 
 		var index = $('#' + id);
-
-        $('#maps').attr('title', Maps._i18n[Language].menu);
-        Nav.updateTitle();
 
 		if (index.length == 0)
 		{
@@ -188,12 +406,20 @@ var Maps = {
 			for (var i in Encyclopedia.maps.list)
 			{
                 var map = Encyclopedia.maps.list[i];
-                if (!map.discard)
+                if (!map.discard || window.About && About.getPreference("maps-showmine") === "false")
                 {
     				var imgCode = "<div class='map-index-board-image' style=\"background-image: url('" + map.description.thumbnail + "?version=" + Version + "\');\"/>"
                     var subtitleCode = "<div class='map-index-board-sublegend'>" + Maps._getOrigin(map) + "</div>";
     				var titleCode = "<div class='map-index-board-legend'>" + map.description.title[Language] + "</div>";
-    				code += "<li><a href=\"javascript:void(0);\" title=\"" + Maps._i18n[Language].openMap + map.description.title[Language] + "\" onclick=\"Maps._displayMap('" + map.id + "')\">" + imgCode + titleCode + subtitleCode + "</a></li>";
+    				
+    				if (Maps.standalone)
+    				{
+    					code += "<li><a href=\"?id=" + map.id + "\" title=\"" + Maps._i18n[Language].openMap + map.description.title[Language] + "\">" + imgCode + titleCode + subtitleCode + "</a></li>";
+    				}
+    				else
+    				{
+    					code += "<li><a href=\"javascript:void(0);\" title=\"" + Maps._i18n[Language].openMap + map.description.title[Language] + "\" onclick=\"Maps._displayMap('" + map.id + "')\">" + imgCode + titleCode + subtitleCode + "</a></li>";
+    				}
                 }
 			}
 
@@ -206,16 +432,17 @@ var Maps = {
 
     _getOrigin: function(map)
     {
-        var origin = "";
-        for (var j in Encyclopedia.expansions.list)
-        {
-            var expansion = Encyclopedia.expansions.list[j];
-            if (map.description.origins.indexOf(expansion.id) != -1)
-            {
-                return expansion.short[Language];
-            }
-        }
-        return null;
+		var origin = "";
+		for (var j in Encyclopedia.expansions.list)
+		{
+			var expansion = Encyclopedia.expansions.list[j];
+			if (map.description.origins.indexOf(expansion.id) != -1)
+			{
+				if (origin) origin += " / ";
+				origin += expansion.short[Language];
+			}
+		}
+		return origin;
     },
 
     _onSetPosition: function(event, slick)
@@ -236,7 +463,7 @@ var Maps = {
         if ((slick.currentSlide || 0) == 0)
         {
             Nav.hideAction("maps", "pdf");
-            if (map.description.totopic)
+            if (map.description.totopic && map.description.totopic[Language])
             {
                 Nav.showAction("maps", "forum");
             }
@@ -249,7 +476,7 @@ var Maps = {
         }
         else
         {
-            if (map.description.totopic)
+            if (map.description.totopic && map.description.totopic[Language])
             {
                 Nav.showAction("maps", "forum");
             }
@@ -271,6 +498,10 @@ var Maps = {
             : 
             (Maps._rotation == 1 || Maps._rotation == 2 ? 1 : 3);
         Maps.onresize = true;
+        if (Maps.standalone)
+    	{
+        	Maps._rotate()
+    	}
     },
 
     _getMap: function()
@@ -289,16 +520,29 @@ var Maps = {
 
     _displayMap: function(mapId)
     {
+    	Maps._currentMap = mapId;
+    	
+    	try
+    	{
+    		var map = Maps._getMap();
+    	}
+    	catch (e)
+    	{
+    		Maps._displayIndex();
+    		return;
+    	}
+    	
         Maps._lastSelectedZone = null;
         Maps._hideAll();
-        Maps._currentMap = mapId;
 
-        Maps._onSetPosition(null, 0);
+        if (!Maps.standalone)
+        {
+	        Maps._onSetPosition(null, 0);
 
-        var map = Maps._getMap();
+	    	$('#maps').attr('title', map.description.title[Language]);
+	    	Nav.updateTitle();	    	
+        }
 
-        $('#maps').attr('title', map.description.title[Language]);
-        Nav.updateTitle();
 
         var id = "maps-map";
 
@@ -311,15 +555,22 @@ var Maps = {
         mapC.html("");
         mapC.show();
         
-        var tabs = [{label: Maps._i18n[Language]['los'], id: "map-map-map"}];
-        var map = Maps._getMap();
-        var rules = map.description.rules;
-        if (rules)
+        if (!Maps.standalone)
         {
-            tabs.push({label: Maps._i18n[Language]['help'], id: "map-map-help"});
+        	var tabs = [{label: Maps._i18n[Language]['los'], id: "map-map-map"}];
+        	
+        	var rules = map.description.rules;
+        	if (rules)
+        	{
+        		tabs.push({label: Maps._i18n[Language]['help'], id: "map-map-help"});
+        	}
+        	
+        	Nav.createTabs(id, tabs, Maps._onSetPosition, { label: Maps._i18n[Language].back, action: "Maps._displayIndex()", cls: "map-back" });
         }
-        
-        Nav.createTabs(id, tabs, Maps._onSetPosition, { label: Maps._i18n[Language].back, action: "Maps._displayIndex()", cls: "map-back" });
+        else
+    	{
+        	mapC.append("<div id='map-map-map'></div>")
+    	}
 
         $("#map-map-map")
             .addClass("map-map-wrapper map-map-wrapper-display-help")
@@ -335,9 +586,8 @@ var Maps = {
     {
         var map = Maps._getMap();
     
-        
         var rules = map.description.rules;
-        if (rules)
+        if (window.Nav && rules)
         {
             document.documentElement.style.setProperty('--map-ratio', map.description.rules.ratio || map.description.ratio || 1.16);
             
@@ -534,18 +784,26 @@ var Maps = {
             var lclass="";
 
             var zoneTarget = map.zones[target];
-            if (zone.level > zoneTarget.level)
+            if (zoneTarget)
             {
-                okp.addClass("map-map-area-zone-target-upper");
-                lclass=" class='map-map-area-line-target-upper'";
+                if (zone.level > zoneTarget.level)
+                {
+                    okp.addClass("map-map-area-zone-target-upper");
+                    lclass=" class='map-map-area-line-target-upper'";
+                }
+                else if (zone.level < zoneTarget.level)
+                {
+                    okp.addClass("map-map-area-zone-target-lower");
+                    lclass=" class='map-map-area-line-target-lower'";
+                }
+    
+                let c1 = zone.centers[center1];
+                let c2 = zoneTarget.centers[center2];
+                if (c1 && c2)
+                {
+                    $(".map-map-area svg").append("<line" + lclass + " x1='" + _applyRotate(true, c1) + "' y1='" + _applyRotate(false, c1) + "' x2='" + _applyRotate(true, c2) + "' y2='" + _applyRotate(false, c2) + "' />");
+                }
             }
-            else if (zone.level < zoneTarget.level)
-            {
-                okp.addClass("map-map-area-zone-target-lower");
-                lclass=" class='map-map-area-line-target-lower'";
-            }
-
-            $(".map-map-area svg").append("<line" + lclass + " x1='" + _applyRotate(true, zone.centers[center1]) + "' y1='" + _applyRotate(false, zone.centers[center1]) + "' x2='" + _applyRotate(true, zoneTarget.centers[center2]) + "' y2='" + _applyRotate(false, zoneTarget.centers[center2]) + "' />");
         }
 
         // SVG fix

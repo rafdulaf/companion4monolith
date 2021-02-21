@@ -22,6 +22,7 @@ var About = {
             'custom_automatic_theme': "Auto-détection",
             'custom_theme_light': "Clair",
             'custom_theme_dark': "Foncé",
+            'custom_allin': "La totale !", 
             'contribute': "Contribuer !",
             'contribute_text': "Vous pouvez contribuer à cette application de nombreuses façons :"
                     + "<ul>"
@@ -57,6 +58,7 @@ var About = {
             'custom_automatic_theme': "Autodetection",
             'custom_theme_light': "Light",
             'custom_theme_dark': "Dark",
+            'custom_allin': "All in!", 
             'custom_reload': "The modification of your configuration will require an automatic application reload",
             'contribute': "Contribute!",
             'contribute_text': "You can contribute to this application in several ways:"
@@ -93,6 +95,7 @@ var About = {
             'custom_automatic_theme': "TODO_TRANSLATE",
             'custom_theme_light': "TODO_TRANSLATE",
             'custom_theme_dark': "TODO_TRANSLATE",
+            'custom_allin': "TODO_TRANSLATE", 
             'custom_reload': "Le modifiche della tua configurazione richiederanno un riavvio automatico dell'applicazione",
             'contribute': "Collabora!",
             'contribute_text': "Puoi collaborare a questa applicazione in molti modi:"
@@ -111,6 +114,7 @@ var About = {
         }
     },
     _copyright: "",
+    _customPrefs: [],
 
     isInStandaloneMode: window.matchMedia('(display-mode: standalone)').matches || (window.navigator.standalone) || document.referrer.includes('android-app://'),
     
@@ -207,6 +211,32 @@ var About = {
     {
         About._copyright += "<h2>" + title + "</h2>" + text;
     },
+    
+    addPreference: function(id, category, title, type, defaultValue)
+    {
+    	About._customPrefs.push({
+    		id: id,
+    		category: category,
+    		title: title,
+    		type: type,
+    		defaultValue: defaultValue,
+    	});
+    },
+    
+    getPreference: function(id)
+    {
+    	var value = null;
+    	
+    	About._customPrefs.forEach(function (p){
+    		if (p.id == id)
+			{
+    			value = localStorage.getItem(Application + "_UserPref_" + p.id);
+    			value = (value !== null ? value : p.defaultValue);
+			}
+    	});
+    	
+    	return value;
+    },
 
     _preferences: function()
     {
@@ -221,7 +251,7 @@ var About = {
             +           "<select id=\"custom-lang\" name=\"custom-lang\">"
             +               "<option value=\"\">" + About._i18n[Language].custom_automatic_lang + "</option>";
         
-        Languages.forEach(code => s += "<option value=\"" + code + "\">" + About._i18n[code].custom_lang + "</option>");
+        					Languages.forEach(code => s += "<option value=\"" + code + "\">" + About._i18n[code].custom_lang + "</option>");
             
         s   +=          "</select>"
             +           "<label for=\"custom-theme\">" + About._i18n[Language].custom_themelabel + "</label>"
@@ -231,10 +261,31 @@ var About = {
             +               "<option value=\"dark\">" + About._i18n[Language].custom_theme_dark + "</option>"
             +           "</select>"
             +       "</fieldset>"
-            +       "</div>"
-
-            + "</div>"
+            +       "</div>";
  
+        var subS = {};
+        About._customPrefs.forEach(function (p) {
+        	subS[p.category] = subS[p.category] || "";
+        	
+        	if (p.type == 'boolean')
+    		{
+        		subS[p.category] += "<input type='checkbox' id='userpref-" + p.id + "' name='userpref-" + p.id + "'/>"
+        							+ "<label for='userpref-" + p.id + "'>" + p.title + "</label>"
+    		}
+        	else
+    		{
+        		throw new Error("Unsupported type for preferences: " + p.type);
+    		}
+        });
+        
+        for (let c in subS)
+    	{
+        	s += "<fieldset><legend>" + c + "</legend>"
+        		 + subS[c]
+        		 + "</fieldset>";
+    	}
+        
+        s += "</div>";
         
         Nav.dialog(About._i18n[Language].preferences,
             s,
@@ -244,20 +295,38 @@ var About = {
                 var oldLanguage = localStorage.getItem(Application + "_Language") || "";
                 var oldTheme = localStorage.getItem(Application + "_Theme") || "";
 
+                var hasChanged = false;
+                
                 // Save
                 var autodetectLanguage = Utils.autodetectLanguage();
                 var selectedLanguage = $(".custom *[name=custom-lang]")[0].value;
                 Language = selectedLanguage || autodetectLanguage;
                 localStorage.setItem(Application + "_Language", selectedLanguage);
+                hasChanged = hasChanged || (oldLanguage || autodetectLanguage) != (selectedLanguage || autodetectLanguage);
                 
                 var autodetectTheme = Utils.autodetectTheme();
                 var selectedTheme = $(".custom *[name=custom-theme]")[0].value;
                 Theme = selectedTheme || autodetectTheme;
                 localStorage.setItem(Application + "_Theme", selectedTheme);
-                
+                hasChanged = hasChanged || (oldTheme || autodetectTheme) != (selectedTheme || autodetectTheme);
 
-                if ((oldLanguage || autodetectLanguage) != (selectedLanguage || autodetectLanguage)
-                 || (oldTheme || autodetectTheme) != (selectedTheme || autodetectTheme))
+                About._customPrefs.forEach(function (p) {
+                	var oldValue = About.getPreference(p.id);
+                	
+                	if (p.type == 'boolean')
+            		{
+                		var newValue = $(".custom *[name=userpref-" + p.id + "]")[0].checked + "";
+            		}
+                	else
+            		{
+                		throw new Error("Unsupported type for preferences: " + p.type);
+            		}
+                	
+                	localStorage.setItem(Application + "_UserPref_" + p.id, newValue);
+                	hasChanged = hasChanged || newValue != oldValue;
+                });
+
+                if (hasChanged)
                 {
                     window.location.reload(true);
                 }
@@ -266,6 +335,17 @@ var About = {
 
         $(".custom *[name=custom-lang]")[0].value = localStorage.getItem(Application + "_Language") || "";
         $(".custom *[name=custom-theme]")[0].value = localStorage.getItem(Application + "_Theme") || "";
+        
+        About._customPrefs.forEach(function (p) {
+        	if (p.type == 'boolean')
+    		{
+        		$(".custom *[name=userpref-" + p.id + "]")[0].checked = About.getPreference(p.id) === "true";
+    		}
+        	else
+    		{
+        		throw new Error("Unsupported type for preferences: " + p.type);
+    		}
+        });
 
         var display = false;
         $(".custom input, .custom select").on('change', function() {
@@ -400,7 +480,13 @@ var About = {
                 {
                     window.location.reload(true);
                 }
-            }
+            },
+            
+            [{
+                label: About._i18n[Language].custom_allin,
+                icon: "about-allin",
+                fn: "About._allin();"
+            }]
         );
 
         for (var i in Extensions)
@@ -420,22 +506,36 @@ var About = {
             display = true;
         })
     },
-
-    _hasExpansion: function(origins)
+    
+    _allin: function()
     {
+    	$(".custom input:not(:checked)").click()
+    },
+
+    _hasExpansion: function(origins, allOfThem)
+    {
+        allOfThem = allOfThem === true;
+
         for (var i in Encyclopedia.expansions.types)
         {
-            var type = Encyclopedia.expansions.types[i];
             for (var j in origins)
             {
                 var origin = origins[j];
-                if (Extensions[origin])
+                if (Extensions[origin] && !allOfThem)
                 {
+                    // I have one at least and we do not want all of them
                     return true;
+                }
+                else if (!Extensions[origin] && allOfThem)
+                {
+                    // One is missing at least but we wanted all of them
+                    return false;
                 }
             }
         }
-        return false;
+        // We do not wanted all of them, and we found no match
+        // Or we wanted all of them and had no unmatch
+        return allOfThem;
     },
     
     _replace: function(text, cls)

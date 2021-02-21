@@ -12,7 +12,7 @@ var EncyclopediaHeroes = {
             'story': "Histoire :",
             'class': "Classe en mode coopératif :",
             'class-warrior': "Guerrier",
-            'class-rogue': "Voleur",
+            'class-rogue': "Maraudeur",
             'class-sorcerer': "Sorcier",
             'class-mercenary': "Mercenaire",
             'class-nr': " (déconseillé pour raison thématique ou pour leur potentiel à déséquilibrer le jeu)"
@@ -118,7 +118,6 @@ var EncyclopediaHeroes = {
                     'en': "Origin",
                     'it': "Origine"
                 },
-                sort: true,
                 values: (function() {
                     var values = [];
                     for (var i in Encyclopedia.expansions.types)
@@ -250,7 +249,7 @@ var EncyclopediaHeroes = {
                 operator: "or/and",
                 values: [
                     { id: 'warrior', label: {'fr':"Guerrier", 'en':"Warrior", 'it':"Guerriero" } },
-                    { id: 'rogue', label: {'fr':"Voleur", 'en':"Rogue", 'it':"Ladro"} },
+                    { id: 'rogue', label: {'fr':"Maraudeur", 'en':"Rogue", 'it':"Ladro"} },
                     { id: 'sorcerer', label: {'fr':"Sorcier", 'en':"Sorcerer", 'it':"Mago"} },
                     { id: 'mercenary', label: {'fr':"Mercenaire", 'en':"Sellsword", 'it':"Mercenario"} },
                     { id: 'warrior-nr', label: {'fr':"Guerrier (déconseillé)", 'en':"Warrior (not recommended)", 'it':"Guerriero (sconsigliato)"} },

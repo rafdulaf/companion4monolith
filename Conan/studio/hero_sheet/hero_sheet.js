@@ -5,7 +5,7 @@ var HeroSheet = mergeObject(StudioItem, {
     _itemWidth: 604,
     _itemHeight: 346.9,
 
-    _maxSkills: 6,
+    _maxSkills: 7,
     
     _i18n: {
         'fr': {

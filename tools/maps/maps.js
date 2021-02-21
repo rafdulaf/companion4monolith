@@ -42,19 +42,36 @@ function _doImport(text)
 
     try
     {
-        if (json.list)
+        if (json.list || json.parts)
         {
             var cards = "";
-            for (var i =0; i <json.list.length; i++)
+            for (var i =0; i < json.list.length; i++)
             {
                 var card = json.list[i];
                 
                 cards += "\n" + (i+1) + ") " + (card.description.title.en || card.description.title.fr || card.description.title.it  || card.id)
             }
+            for (var i =0; i < json.parts.length; i++)
+            {
+                if (i == 0)
+                    cards += "\n---------------------------"
+                
+                var card = json.parts[i];
+                
+                cards += "\n" + (i+1+json.list.length) + ") " + (card.description.title.en || card.description.title.fr || card.description.title.it  || card.id)
+            }
             
             var number = prompt("Choisissez la carte à importer" + cards)
             if (number != parseInt(number)) return;
-            json = json.list[number - 1]
+            
+            if (number - 1 < json.list.length)
+            {
+                json = json.list[number - 1]
+            }
+            else
+            {
+                json = json.parts[number - 1 - json.list.length]
+            }
         }
         
         $("#id")[0].value = json.id;
@@ -428,6 +445,19 @@ function _displayZones()
                     }
                     code += "<text x=\""+ (svgWidth*zone.centers[i][0]/100 - 10) + "\" y=\"" + (svgHeight*zone.centers[i][1]/100 - 10) + "\" font-size=\"25\" font-weight=\"bold\">" + z + (zone.centers.length > 1 ? (" (" + (i+1) + ")") : '') + "</text>"
                 }
+                if (zone.centers.length == 0)
+                {
+                    var x = 0.0, y = 0.0;
+                    for (var i=0; i < zone.area.length; i++)
+                    {
+                        x += zone.area[i][0];
+                        y += zone.area[i][1];
+                    }
+                    x /= zone.area.length;
+                    y /= zone.area.length;
+                    
+                    code += "<text x=\""+ (svgWidth*x/100 - 10) + "\" y=\"" + (svgHeight*y/100 - 10) + "\" font-size=\"25\" font-weight=\"bold\">" + z + "</text>"
+                }
             }
             
             if (lastKnownZone)
@@ -443,7 +473,10 @@ function _displayZones()
             
             
                     var zoneTarget = zones[target];
-                    code += "<line class='los' x1='" + svgWidth*lastKnownZone.centers[center1][0]/100 + "' y1='" + svgHeight*lastKnownZone.centers[center1][1]/100 + "' x2='" + svgWidth*zoneTarget.centers[center2][0]/100 + "' y2='" + svgHeight*zoneTarget.centers[center2][1]/100 + "' />";
+                    if (zoneTarget)
+                    {
+                        code += "<line class='los' x1='" + svgWidth*lastKnownZone.centers[center1][0]/100 + "' y1='" + svgHeight*lastKnownZone.centers[center1][1]/100 + "' x2='" + svgWidth*zoneTarget.centers[center2][0]/100 + "' y2='" + svgHeight*zoneTarget.centers[center2][1]/100 + "' />";
+                    }
                 }
             }
         }
@@ -459,6 +492,52 @@ function _displayZones()
 
 }
 
+function add()
+{
+    try {
+        var zones = JSON.parse($("#zones")[0].value)
+    }
+    catch (e) {
+        alert("Zones is not a correct json. Cannot add zone")
+        throw e;
+    }
+    
+    var action = prompt("Enter new zone name")
+    if (!action) return;
+ 
+    if (zones[action])
+    {
+        alert("Zone '" + action + "' already exists")
+        return
+    }
+    
+    var linksToAll = [];
+    for (let z in zones)
+	{
+    	let zone = zones[z];
+	    if (zone.centers && zone.centers.length > 0)
+    	{
+    	    for (let c = 0; c < zone.centers.length; c++)
+	    	{
+    	    	linksToAll.push("1#" + z + "#" + (c+1));
+	    	}
+    	}
+	    else
+	    {
+	    	linksToAll.push("1#" + z + "#0");
+	    }
+	}
+    
+    zones[action] = {
+        "area": [],
+        "centers": [],
+        "links": linksToAll,
+        "level": 0
+    }
+        
+    $("#zones")[0].value = stringify(zones);
+    displayZones();
+}
 
 function renumbers()
 {
@@ -537,6 +616,35 @@ function renumbers()
                     var centerOfTarget = parseInt(result[3]);
                     
                     if (targetZoneName == actions[i].from)
+                    {
+                        var newLink = centerOfZ + "#" + actions[i].from + "-tmp#" + centerOfTarget
+                        zones[z].links[j] = newLink;
+                    }
+                }
+            }
+        }
+    }
+    for (var i=0; i < actions.length; i++)
+    {
+        for (var z in zones)
+        {
+            for (var j=0; j < zones[z].links.length; j++)
+            {
+                var link = zones[z].links[j];
+                
+                var result = /^([0-9]+)#(.+)#([0-9]+)$/.exec(link)
+                if (!result)
+                {
+                    alert("Error in zone '" + z + "', the link n°" + l + " is not readable: " + link);
+                    return;
+                }
+                else
+                {
+                    var centerOfZ = parseInt(result[1]);
+                    var targetZoneName = result[2];
+                    var centerOfTarget = parseInt(result[3]);
+                    
+                    if (targetZoneName == actions[i].from + "-tmp")
                     {
                         var newLink = centerOfZ + "#" + actions[i].to + "#" + centerOfTarget
                         zones[z].links[j] = newLink;
@@ -640,4 +748,69 @@ function transform()
     }
     $("#zones")[0].value = stringify(zones);
     displayZones();
+}
+
+function reverseLinks()
+{
+    try {
+        var zones = JSON.parse($("#zones")[0].value)
+    }
+    catch (e) {
+        alert("Zones is not a correct json. Cannot apply any transformation.")
+        throw e;
+    }
+
+    var log = "";
+    
+    for (var z in zones)
+    {
+        for (var l in zones[z].links)
+        {
+            var link = zones[z].links[l];
+            var result = /^([0-9]+)#(.+)#([0-9]+)$/.exec(link)
+            if (!result)
+            {
+                alert("Error in zone '" + z + "', the link n°" + l + " is not readable: " + link);
+                return;
+            }
+            else
+            {
+                var centerOfZ = parseInt(result[1]);
+                var targetZoneName = result[2];
+                var centerOfTarget = parseInt(result[3]);
+                
+                if (!zones[targetZoneName])
+                {
+                    alert("Zone " + z + " links to unexisting zone " + targetZoneName);
+                    return;
+                }
+                
+                if (zones[targetZoneName].centers.length < centerOfTarget)
+                {
+                    alert("Zone " + z + " links to zone " + targetZoneName + " at center n°" + centerOfTarget + ". But zone " + targetZoneName + " has no such center.");
+                    return;
+                }
+                
+                var tlink = "" + centerOfTarget + "#" + z + "#" + centerOfZ;
+                if (zones[targetZoneName].links.indexOf(tlink) == -1)
+                {
+                    log += "\n* " + targetZoneName + "#" + centerOfTarget + " => " + z + "#" + centerOfZ;
+                    zones[targetZoneName].links.push(tlink)
+                }
+            }
+        }
+    }
+    
+    if (log)
+    {
+        if (confirm("Adding" + log))
+        {
+            $("#zones")[0].value = stringify(zones);
+            displayZones();
+        }
+    }
+    else
+    {
+        alert("Nothing to do")
+    }
 }

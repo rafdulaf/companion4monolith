@@ -19,6 +19,7 @@
     width: 200px;
     height: calc(200px / 0.67);
     font-size: 18px;
+    line-height: normal;
 }
 
 .printcards input[name=spell] { position: absolute; top:-5000px; }
@@ -153,9 +154,9 @@
 }
 .card.spell .imagebg {
     position: absolute;
-    width: 33%;
-    left: 34%;
-    top: 3%;
+    width: 30%;
+    left: 35%;
+    top: 4%;
 }
 .card.spell .image img {
     position: absolute;
@@ -196,9 +197,14 @@
     padding-top: 2%;
 }
 .card.spell .text img {
-    width: 15%;
+    width: 24px;
     vertical-align: sub;
     display: inline;
+    margin-top: -7px;
+    margin-bottom: -3px;
+}
+.card.spell .text img + img {
+    margin-left: -3px;
 }
 
 
@@ -373,7 +379,8 @@
     background-color: #FFFFFF;
     font-size: 18px;
     line-height: 18px;
-    box-shadow: 0px 0px 5px #000000;}
+    box-shadow: 0px 0px 5px #000000;
+}
 
 .dialog .spell .field.imagelocation,
 .dialog .spell .field.imagezoom,

@@ -56,6 +56,11 @@
                 "en": "This character can attack a character in an adjacent area with a line of sight, with a Melee Attack if there is no obstacle (wall, door, bar, flap, etc.) between the characters’ areas.",
                 "it": "Il personaggio può attaccare in Mischia un nemico in linea di vista in un'area adiacente se tra le due aree non sono presenti ostacoli (muri, porte, barriere, tende, ecc)."
             },
+            "clarification": {
+                "fr": "Pour utiliser Allonge, les unités doivent se trouver au même niveau. On considère que les zones de transition comme les escaliers ou les éboulis de la Forteresse sont à la fois aux niveaux supérieur et inférieur. Attaquer une unité qui se trouve à un niveau différent nécessite de recourir à une Attaque à distance ou à un Sort.\nAllonge ne procure de bonus de surplomb que lorsque les règles spéciales de la carte Auberge sont utilisées.",
+                "en": "Reach requires units be on the same level. Connecting areas like stairs or the Fortress rock slides are considered to be at both the higher and lower levels. Attacking a unit at a different level, however, requires a Ranged Attack or Spel\nThe only time Reach incurs an elevation bonus is if the special rules are used for the Inn game board.",
+                "it": "TODO_TRANSLATE"
+            },
             "image": "data/skills/img/attack/reach.png"
         }, {
             "id": "circular_strike",
@@ -69,6 +74,11 @@
                 "fr": "Avec toute arme de corps-à-corps à deux main (dont l’encombrement est supérieur ou égal à 3), le personnage peut donner un coup circulaire. Si l’attaque, résolue normalement, tue le premier adversaire désigné, le reliquat de dégâts est reporté sur le suivant (choisit par l'attaquant) et ainsi de suite jusqu’à ce qu’il n’y ait plus de reliquat.",
                 "en": "When this character kills an enemy character with a 2-handed Melee Attack, another enemy character in the same area suffers the excess damage from the attack (if that character is killed, repeat the process). The attacker decides the order in which damage is dealt to defending enemies. Resolve the attack normally (determining attack power, defense power, etc.) on one enemy before proceeding with the next one if there is still damage left to be dealt.",
                 "it": "Quando questo personaggio uccide in un attacco in Mischia un personaggio nemico con la propria arma a due mani, i danni in eccesso dell'attacco vengono assegnati a un altro personaggio nemico nella stessa (se questo personaggio viene ucciso, si continui l'assegnazione al successivo personaggio). L'attaccante decide l'ordine di assegnazione tra i nemici. Si risolvano gli attacchi normalmente (determinazione del potere dell'attacco, potere della difesa, ecc) sul singono nemico prima di procedere al successivo se ci sono ancora dei danni da assegnare."
+            },
+            "clarification": {
+                "fr": "Si un personnage dispose aussi de Coup Précis, le joueur doit choisir s’il utilise Coup Précis ou Coup Circulaire avant de lancer les dés.",
+                "en": "If someone has also Precision Strike, The player must choose if they are making a Precision Strike or a Circular Strike before they roll.",
+                "it": "TODO_TRANSLATE"
             },
             "image": "data/skills/img/attack/circular_strike.png"
         }, {
@@ -98,6 +108,11 @@
                 "en": "When this character's attack power is determined, if any die shows 2 or more symbols, move the defender’s model close to the attacker’s one so their bases touch. As long as they remain in the same area, the defender treats the attacker as thought the attacker has Blocking. A character with Evasive ignores Constriction’s Blocking effect, but not the damage from the attack.",
                 "it": "Una volta determinato il potere d'attacco di questo personaggio, se uno qualsiasi dei suoi dadi mostra 2 o più simboli, muovi il difensore a contatto di base con l'attaccante. Fin quando i due modelli restano nella stessa area, il difensore tratta l'attaccante come se quest'ultimo avesse l'abilità Bloccare. Un personaggio con l'abilità Inafferrabile ignora gli effetti di Costrizione, ma non il danno associato all'attacco."
             },
+            "clarification": {
+                "fr": "Si une unité dispose à la fois de Constriction et Allonge, Constriction permet logiquement de déplacer une cible d’une zone vers une autre. C’est le mouvement associé à la Constriction qui intervient en premier. Ainsi, une unité alliée disposant des compétences Garde du corps ou Soutien devrait déjà se trouver dans la zone de l’attaquant pour que les effets de la compétence s’appliquent.",
+                "en": "If a unit has Constriction and Reach, Constriction can possibly move the target from one area to another. The movement from Constriction happens first. Thus, an Allied unit with Bodyguard or Support would already need to be in the attacker’s area for the skill’s effects to apply.",
+                "it": "TODO_TRANSLATE"
+            },
             "image": "data/skills/img/attack/constriction.png"
         }, {
             "id": "precision_strike",
@@ -111,6 +126,11 @@
                 "fr": "Lorsqu’il réalise une attaque au corps-à-corps, le personnage ignore systématiquement le premier point de défense de sa cible.",
                 "en": "When a character with this skill performs a Melee Attack, they automatically reduce the defender’s defense power by 1.",
                 "it": "Quando un personaggio con questa abilità effettua un attacco in Mischia, automaticamente riduce il potere di difesa del nemico di 1."
+            },
+            "clarification": {
+                "fr": "Si un personnage dispose aussi de Coup Circulaire, le joueur doit choisir s’il utilise Coup Précis ou Coup Circulaire avant de lancer les dés.",
+                "en": "If someone has also Circular Strike, The player must choose if they are making a Precision Strike or a Circular Strike before they roll.",
+                "it": "TODO_TRANSLATE"
             },
             "image": "data/skills/img/attack/precision_strike.png"
         }, {
@@ -255,6 +275,11 @@
                 "en": "Instead of their normal attack, this character can perform a Ranged Attack, rolling {dice_orange}{dice_orange}{dice_orange} instead of their normal die. If the attack power is higher than the defense power, the defender places a web token on their model and suffers no damage. A character with a web token cannot move, but can spend 4 movement points to discard the token.",
                 "it": "Al posto del suo normale attacco, questo personaggio può effettuare un attacco a Distanza tirando {dice_orange}{dice_orange}{dice_orange}, invece dei suoi normali dadi. Se il potere d'attacco è maggiore del potere di difesa, il nemico piazza un segnalino Ragnatela sul proprio modello senza subire alcun danno. Un personaggio Intrappolato non può muovere, ma può spendere 4 punti movimento in un unico turno per scartare il segnalino Ragnatela."
             },
+            "clarification": {
+                "fr": "Si une unité ne dispose pas de suffisamment de Points de Mouvement pour s’extraire en raison d’un empoisonnement, un Héros peut toujours dépenser tous ses Points de Mouvement gratuits et autant de points que nécessaire, jusqu’à sa limite de saturation.\nEn mode Aventure, si une unité de l’Overlord est prise dans une toile (suite à l’utilisation d’un Filet), l’Overlord peut utiliser les Points de Mouvement gratuits de l’unité et y ajouter des gemmes pour atteindre les 4 points nécessaires à son extraction, même si l’unité n’est pas normalement en mesure d’atteindre les 4 Points de Mouvement.\nEn mode Solo/coop, l’unité de l’Overlord utilise simplement tous ses Points de Mouvement gratuits pour s’extraire",
+                "en": "If a unit doesn’t have enough movement points to escape because they have been poisoned, a hero may escape by spending all of their free movement points and all points up to their exertion limit.\n In Adventure Mode, if an Overlord tile is caught in a web (by use of the Net item), the Overlord may use the unit’s free movement points and gems to reach the 4 points to escape, even if the unit would not normally be able to reach 4 movement points.\nIn Solo/Coop Mode, the Overlord tile simply uses all free movement points to escape.",
+                "it": "TODO_TRANSLATE"
+            },
             "token": "web",
             "image": "data/skills/img/movement/web_projection.png"
         }, {
@@ -384,6 +409,11 @@
                 "en": "A character with this skill cannot be attacked by another character unless that character has been previously attacked by the character with Fascination.",
                 "it": "Il personaggio con questa abilità non può essere attaccato da un altro personaggio a meno che non sia il personaggio con Fascinazione ad attaccarlo per primo."
             },
+            "clarification": {
+                "fr": "Une unité ne peut cibler une unité ennemie disposant de Fascination même avec un sort, quelle qu’en soit la raison, tant que cette unité ennemie ne l’a pas attaquée.\nSauf mention contraire dans le scénario, Les personnages disposant de Fascination peuvent subir les dégâts causés par les attaques de zone.",
+                "en": "A unit cannot target, even with a spell, an enemy unit with Fascination for any reason until they attack the unit.\nUnless the scenario dictates otherwise, characters with Fascination can be damaged with area attacks.",
+                "it": "TODO_TRANSLATE"
+            },
             "image": "data/skills/img/miscellaneous/fascination.png"
         }, {
             "id": "horror",
@@ -445,19 +475,19 @@
         },
 
         {
-            "id": "untouchable",
+            "id": "sacrifice",
             "type": "defense",
             "title": {
-                "fr": "Intouchable",
-                "en": "Untouchable",
-                "it": "Intoccabile"
+                "fr": "Sacrfice",
+                "en": "Sacrifice",
+                "it": "Sacrificio"
             },
             "text": {
-                "fr": "Le personnage ayant cette compétence ignore le premier succès d’une attaque à distance portée contre lui.",
-                "en": "A character with this skill ignores the first rolled symbol when defending against a Ranged Attack.",
-                "it": "Il personaggio con questa abilità ignora il primo successo di un attacco a Distanza condotto verso di lui."
+                "fr": "Le personnage peut décider, avant le lancé de dés, de subir une attaque à la place de la cible initiale. Il ne peut par contre ni la parer ni l'esquiver. Il ne peut utiliser que sa défense passive pour se défendre. Ce personnage encaisse donc la totalité des dégâts causés par l’attaque à la place de la cible initiale.",
+                "en": "When a friendly character in this character's area is attacked, before the die are rolled, this character may choose to be attacked instead. This character cannot Guard for that defense and can only use their Armor. That character suffers any damage from the attack to prevent the character who was initially attacked from suffering damage.",
+                "it": "Il personaggio può decidere, prima del lancio dei dadi, di subire l'attacco al posto del bersaglio designato. Chi ha Sacrificio non può di contro né parare, né schivare. Non può utilizzare che la propria Armatura per difendersi. Questo personaggio subisce tutti i danni causati dall'attacco al posto del bersaglio designato."
             },
-            "image": "data/skills/img/defense/untouchable.png"
+            "image": "data/skills/img/defense/sacrifice.png"
         }, {
             "id": "protected",
             "type": "defense",
@@ -473,19 +503,19 @@
             },
             "image": "data/skills/img/defense/protected.png"
         }, {
-            "id": "sacrifice",
+            "id": "untouchable",
             "type": "defense",
             "title": {
-                "fr": "Sacrfice",
-                "en": "Sacrifice",
-                "it": "Sacrificio"
+                "fr": "Intouchable",
+                "en": "Untouchable",
+                "it": "Intoccabile"
             },
             "text": {
-                "fr": "Le personnage peut décider, avant le lancé de dés, de subir une attaque à la place de la cible initiale. Il ne peut par contre ni la parer ni l'esquiver. Il ne peut utiliser que sa défense passive pour se défendre. Ce personnage encaisse donc la totalité des dégâts causés par l’attaque à la place de la cible initiale.",
-                "en": "When a friendly character in this character's area is attacked, before the die are rolled, this character may choose to be attacked instead. This character cannot Guard for that defense and can only use their Armor. That character suffers any damage from the attack to prevent the character who was initially attacked from suffering damage.",
-                "it": "Il personaggio può decidere, prima del lancio dei dadi, di subire l'attacco al posto del bersaglio designato. Chi ha Sacrificio non può di contro né parare, né schivare. Non può utilizzare che la propria Armatura per difendersi. Questo personaggio subisce tutti i danni causati dall'attacco al posto del bersaglio designato."
+                "fr": "Le personnage ayant cette compétence ignore le premier succès d’une attaque à distance portée contre lui.",
+                "en": "A character with this skill ignores the first rolled symbol when defending against a Ranged Attack.",
+                "it": "Il personaggio con questa abilità ignora il primo successo di un attacco a Distanza condotto verso di lui."
             },
-            "image": "data/skills/img/defense/sacrifice.png"
+            "image": "data/skills/img/defense/untouchable.png"
         }, {
             "id": "bodyguard",
             "type": "defense",

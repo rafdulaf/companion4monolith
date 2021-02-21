@@ -113,7 +113,6 @@ var EncyclopediaModels = {
                     'en': "Origin",
                     'it': "Origine"
                 },
-                sort: true,
                 values: (function() {
                     var values = [];
                     for (var i in Encyclopedia.expansions.types)
@@ -418,12 +417,20 @@ var EncyclopediaModels = {
     _findModelNames: function(model, sort)
     {
         var names = [];
+        var noSpanNames = [];
+
+        function withoutSpan(name)
+        {
+            return name.replace(/<\/?span>/g, '');
+        }
 
         if (model)
         {
             if (model.name)
             {
-                names.push((sort && model.sort && model.sort[Lanugage]) ? model.sort[Lanugage] : model.name[Language]);
+                let name = (sort && model.sort && model.sort[Lanugage]) ? model.sort[Lanugage] : model.name[Language];
+                names.push(name);
+                noSpanNames.push(name);
             }
             
             var heroes = EncyclopediaModels._findHeroesByModel(model);
@@ -432,9 +439,11 @@ var EncyclopediaModels = {
                 var hero = heroes[i];
                 var name = (sort && hero.sort && hero.sort[Language]) ? hero.sort[Language] : hero.name[Language]; 
                 name += (hero.subname ? " <span>" + hero.subname[Language] + "</span>" : "");
-                if (names.indexOf(name) == -1)
+                let nameWithoutSpan = withoutSpan(name);
+                if (noSpanNames.indexOf(nameWithoutSpan) == -1)
                 {
                     names.push(name);
+                    noSpanNames.push(nameWithoutSpan)
                 }
             }
 
@@ -443,9 +452,11 @@ var EncyclopediaModels = {
             {
                 var tile = tiles[i];
                 var name = (sort && tile.sort && tile.sort[Language]) ? tile.sort[Language] : tile.name[Language];
-                if (names.indexOf(name) == -1)
+                let nameWithoutSpan = withoutSpan(name);
+                if (noSpanNames.indexOf(nameWithoutSpan) == -1)
                 {
                     names.push(name);
+                    noSpanNames.push(nameWithoutSpan)
                 }
             }
 
@@ -454,9 +465,11 @@ var EncyclopediaModels = {
             {
                 var token = tokens[i];
                 var name = (sort && token.sort && token.sort[Language]) ? token.sort[Language] : token.name[Language];
-                if (names.indexOf(name) == -1)
+                let nameWithoutSpan = withoutSpan(name);
+                if (noSpanNames.indexOf(nameWithoutSpan) == -1)
                 {
                     names.push(name);
+                    noSpanNames.push(nameWithoutSpan)
                 }
             }
         }

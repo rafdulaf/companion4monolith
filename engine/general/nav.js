@@ -4,15 +4,16 @@ Nav = {
     _actions: {},
     _floatingActions: {},
     _cb: [],
+    _applyHash: {},
     
-    addIcon: function(label, icon, id, onSelect) 
+    addIcon: function(label, icon, id, applyHash) 
     {
         var item = {
             label: label,
             icon: icon,
-            id: id,
-            onSelect: onSelect
+            id: id
         };
+        Nav._applyHash[id] = applyHash;
         Nav._icons.push(item);
         Nav._actions[id] = [];
         
@@ -192,7 +193,7 @@ Nav = {
         var toSelect = $('#' + id);
         if (!toSelect.is(".active"))
         {
-            window.location.hash = "#" + id;
+        	Nav.setHash(id);
     
             $("#" + Nav._id + "-toolbar ul.active").removeClass("active");
             $("#" + Nav._id + "-toolbar ul[for='" + id + "']").addClass("active");
@@ -337,7 +338,7 @@ Nav = {
         document.fonts.ready.then(function() { Nav.updateTitle(); Nav.updateNav(); $(".nav-menu").each(function(i, s) { Nav.updateTabsSize(s) }); });
         $(window).on('resize', function() { Nav.updateTitle(); Nav.updateNav(); });
         $(window).on('orientationchange', function() { Nav.updateTitle(); Nav.updateNav(); });
-        $(window).on('hashchange', function() { Nav._hashChange() });
+        $(window).on('hashchange', function(e) { Nav._hashChange(e) });
         
         function resize()
         {
@@ -351,10 +352,49 @@ Nav = {
         window.scrollTo(0, 111111)
     },
     
+    startUp: function()
+    {
+    	Nav._canChangeHash = true;
+        if (!Nav._hashChange())
+        {
+            Nav.switchTo();
+        }
+    },
+    
+    setHash: function(hash) {
+    	if (!Nav._canChangeHash)
+		{
+    		return;
+		}
+    	
+    	var newHash = "#" + hash;
+    	if (window.location.hash != newHash)
+    	{
+    		Nav._changingHash = true;
+    		window.location.hash = newHash
+    	}
+    },
+    setHashDialog: function(quit) {
+        if (quit && window.location.hash.endsWith("-dialog"))
+        {
+        	Nav.setHash(window.location.hash.substring(1, window.location.hash.indexOf('-dialog')));
+        }
+		if (!quit && !window.location.hash.endsWith("-dialog"))
+		{
+        	Nav.setHash(window.location.hash.substring(1) + "-dialog");
+		}
+    },
+    
     _hashChange: function(e)
     {
+    	if (Nav._changingHash)
+		{
+    		Nav._changingHash = false;
+    		return;
+		}
+    		
         window.scrollTo(0, 0);
-        
+
         if (e && e.originalEvent.oldURL.endsWith("-dialog"))
         {
             Nav.closeDialog(true);
@@ -368,11 +408,20 @@ Nav = {
 
         var elt;
         
-        var matcher = /#([a-z0-9_-]*)/i.exec(hash);
+        var matcher = /#([a-z0-9_]*)(?:-([a-z0-9_]*))?/i.exec(hash);
         if (matcher
+        	&& matcher[1]
             && (elt = $("nav a[for=" + matcher[1] + "]")[0]))
         {
             Nav.switchTo(elt);
+            if (matcher[2])
+        	{
+            	var applyHash = Nav._applyHash[matcher[1]];
+            	if (applyHash)
+        		{
+            		applyHash(matcher[2])
+        		}
+        	}
             return true;
         }
         else
@@ -429,10 +478,7 @@ Nav = {
                 + "</div>"
               + "</div>";
         $(document.body).append(code);
-        if (!window.location.hash.endsWith("-dialog"))
-        {
-            window.location.hash += "-dialog";
-        }
+        Nav.setHashDialog();
         
         Nav._cb.push(callback);
     },
@@ -452,10 +498,7 @@ Nav = {
             
             if ($(".dialog").length == 0)
             {
-                if (window.location.hash.endsWith("-dialog"))
-                {
-                    window.location.hash = window.location.hash.substring(0, window.location.hash.indexOf('-dialog'));
-                }
+            	Nav.setHashDialog(true);
             }
             else if (all)
             {

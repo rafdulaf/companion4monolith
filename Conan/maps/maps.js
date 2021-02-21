@@ -4,6 +4,37 @@ Maps = mergeObject(Maps, {
                 + Maps._legendNumbers(map);
     },
     
+    _rulesComposition: function(composition) 
+    {
+        var allRules = [];
+        for (var r in composition.description.rules)
+        {
+            allRules.push(composition.description.rules[r]);
+        }
+        
+        for (var zoneId in composition.zones)
+        {
+            var zoneMap = Maps._findMapById(zoneId);
+            
+            for (var r in zoneMap.description.rules)
+            {
+                let newRule = JSON.parse(JSON.stringify(zoneMap.description.rules[r]));
+                if (newRule.coordinates)
+                {                
+                    newRule.coordinates = Maps._composeCoordinates(newRule.coordinates, composition.zones[zoneId], true);
+                    if (!newRule.coordinates || zoneMap.description.rules[r].coordinates.length > 0 && newRule.coordinates.length == 0)
+                    {
+                        // discard rule
+                        continue;
+                    }
+                }
+                allRules.push(newRule);
+            }
+        }
+        
+        return allRules;
+    },
+    
     _legendAreas: function(map)
     {
         var code = "";

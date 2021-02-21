@@ -92,35 +92,61 @@
 
 .card.equipement .name {
     text-align: center;
-    width: 90%;
+    width: 97%;
     position: absolute;
     left: 50%;
     transform: translate(-50%,-50%);
     top: 7%;
     line-height: 100%;
-    font-size: 89%;
-    text-shadow: 0 0 3px #FFF;
-    color: #000;
+    font-size: 83.5%;
+    -webkit-text-stroke: 0.1px #fff;
+    color: #393024;
 }
 
-.card.equipement .skills + .skills img { bottom: 5%; }
+.card.equipement .skills img.background-skills { top: 33%; }
+.card.equipement .skills + .skills img.background-skills { top: unset; bottom: -28%; }
+.card.equipement .skills-separator ~ .skills img.background-skills { top: 0; }
+.card.equipement .skills-separator ~ .skills + .skills img.background-skills { top: unset; bottom: 5%; }
+
+.card.equipement .skillsbonus .bonus {
+    height: 50%;
+    position: absolute;
+    top: 46%;
+}
+.card.equipement .skillsbonus .background-skills {
+    height: 49%;
+    left: 26%;
+    top: 56%;
+}
 
 .card.equipement .level0, 
+.card.equipement .level10, 
 .card.equipement .level1,
+.card.equipement .level11,
 .card.equipement .level2,
+.card.equipement .level12,
 .card.equipement .level3,
+.card.equipement .level13,
 .card.equipement .level4,
-.card.equipement .level5 {
+.card.equipement .level14,
+.card.equipement .level5,
+.card.equipement .level15 {
     position: absolute;
     left: 6%;
     width: 88%;
     height: 26.4%;
 }
+.card.equipement .level10 { bottom: 6.2%; }
 .card.equipement .level0 { bottom: 3.2%; }
+.card.equipement .level11 { bottom: 18.4%; }
 .card.equipement .level1 { bottom: 30.4%; }
+.card.equipement .level12 { bottom: 45.6%; }
 .card.equipement .level2 { bottom: 57.6%; }
+.card.equipement .level13 { bottom: 71.8%; }
 .card.equipement .level3 { bottom: 85.8%; }
-.card.equipement .level4,
+.card.equipement .level14  { bottom: 113%; }
+.card.equipement .level4  { bottom: 113%; }
+.card.equipement .level15 { bottom: 113%; }
 .card.equipement .level5 { bottom: 113%; }
 
 .card.equipement .background-passive { height: 90.9%; position: absolute; top: 9.1%; }
@@ -154,10 +180,10 @@
 .card.equipement > div > img.background-active + img { left: 24%; }
 .card.equipement > div > img.background-active + img + img { left: 43%; }
 
-.card.equipement > div > img.background-ranged + img { left: 29%; bottom: 7%; }
+.card.equipement > div > img.background-ranged + img { left: 23%; bottom: 7%; }
 .card.equipement > div > img.background-ranged.duo + img { left: 23%; bottom: 7%; }
 .card.equipement > div > img.background-ranged + img + img { left: 41%; }
-.card.equipement > div.throw > img.background-ranged + img { left: 28%; }
+.card.equipement > div.throw > img.background-ranged + img { left: 21%; }
 .card.equipement > div.throw > img.background-ranged.duo + img { left: 23%; }
 .card.equipement > div.throw > img.background-ranged + img + img { left: 41%; bottom: 7%; }
 
@@ -168,6 +194,54 @@
 
 .card.equipement > div > img.background-melee + img { left: 24%; }
 .card.equipement > div > img.background-melee + img + img { left: 43%; }
+
+.card.equipement div.text-separator {
+    position: absolute;
+    top: 59%;
+    left: 7%;
+    right: 7%;
+}
+.card.equipement div.text-separator .background-text-separator {
+    width: 100%;
+}
+.card.equipement div.text {
+    color: #231F20;
+    font-family: 'Secondary';
+    font-size: 100%;
+    line-height: 0.7;
+    left: 37%;
+    width: 55%;
+}
+.card.equipement div.text div {
+    position: absolute;
+    bottom: -100%; 
+}
+.card.equipement div.text.lastIsLarge-true div {
+    bottom: -55%;
+}
+
+.card.equipement div.text.level0 {
+    padding: 0 7%;
+    text-align: center;
+    height: 31%;
+    left: 0;
+    width: 100%;
+}
+.card.equipement div.text.level0 div {
+    position: static;
+}
+.card.equipement div.text img {
+    width: 18px;
+    vertical-align: sub;
+    display: inline;
+    margin-top: -7px;
+    margin-bottom: 0px;
+}
+.card.equipement div.text img + img {
+    margin-left: -3px;
+}
+
+
 
 .card.equipement div.image {
     position: absolute;
@@ -203,8 +277,10 @@
     text-align: left;
 }
 .dialog .equipment .field input,
-.dialog .equipment .field select {
+.dialog .equipment .field select,
+.dialog .equipment .field textarea {
     width: 100%;
+    resize: none;
 }
 
 .dialog .equipment .field input#eqname {
@@ -240,7 +316,7 @@
 .dialog .equipment .field.imagelocation,
 .dialog .equipment .field.imagezoom,
 .dialog .equipment .field.imagerotation {
-    height: 85px
+    height: 112px
 }
 
 .dialog .equipment .field.imagelocation {
@@ -430,19 +506,52 @@
     background-image: url(img/explosive.png);
 }
 
+.dialog .equipment .field textarea#eqtext {
+    font-size: 24px;
+    height: 82px;
+    line-height: 20px;
+    font-family: 'Secondary';
+    text-align: justify;
+}
+.dialog .equipment .field.text label span:before {
+    content: "\f059";
+    font-family: 'Font Awesome 5 Free';
+    float: right;
+    font-size: 20px;
+}
+.dialog .equipment .field.text label span:hover:after {
+    content: attr(data-help);
+    position: absolute;
+    right: 0;
+    top: 25px;
+    display: block;
+    width: 210px;
+    padding: 5px;
+    border: 1px solid black;
+    background-color: #FFFFFF;
+    font-size: 18px;
+    line-height: 18px;
+    box-shadow: 0px 0px 5px #000000;
+}
+
+
+
 .dialog .equipment input#eqimage {
     padding-left: 10px;
 }
 
-.dialog .equipment .imageatfront {
+.dialog .equipment .imageatfront,
+.dialog .equipment .skillsatbottom {
     text-align: left;
 }
-.dialog .equipment .imageatfront input[type=checkbox] {
+.dialog .equipment .imageatfront input[type=checkbox],
+.dialog .equipment .skillsatbottom input[type=checkbox] {
     width: 16px;
     height: 16px;
     margin-left: 0;
 }
-.dialog .equipment .imageatfront input[type=checkbox] + label {
+.dialog .equipment .imageatfront input[type=checkbox] + label,
+.dialog .equipment .skillsatbottom input[type=checkbox] + label {
     font-size: 24px;
     line-height: 33px;
     font-family: 'Secondary';
@@ -506,6 +615,9 @@
 
 .dialog .equipment select.skills { font-family: 'Secondary'; font-size: 19px; }
 .dialog .equipment .field.skills select[data-value=none] ~ select {
+    display: none;
+}
+.dialog .equipment select[data-value=none] + select + .skillsatbottom {
     display: none;
 }
 

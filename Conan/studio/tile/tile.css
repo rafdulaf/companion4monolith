@@ -10,7 +10,7 @@
     display: inline-block; 
     
     margin: 2px;
-    border-radius: 3%;
+    border-radius: 0.6rem;
 
     overflow: hidden;    
 }
@@ -60,9 +60,9 @@
 
 .tile.tiletile picture.background img {
     position: absolute;
-    width: 147.5%;
-    left: -24%;
-    top: -14.5%;
+    width: 151.5%;
+    left: -27%;
+    top: -16.5%;
 }
 .tile.tiletile div.image {
     position: absolute;
@@ -84,11 +84,11 @@
     position: absolute;
     left: 50%;
     transform: translate(-50%,-50%);
-    top: 6.5%;
+    top: 6.1%;
     line-height: 100%;
-    font-size: 81%;
-    text-shadow: 0 0 3px #FFF;
-    color: #000;
+    font-size: 88%;
+    -webkit-text-stroke: 0.2px #fff;
+    color: #393024;
 }
 .tile.tiletile .background-reinforcement {
     position: absolute;
@@ -98,15 +98,15 @@
 }
 .tile.tiletile .reinforcement {
     position: absolute;
-    bottom: 1.6%;
+    bottom: 1.2%;
     right: 5.2%;
     width: 15%;
     font-family: "Motrg";
-    font-size: 200%;
+    font-size: 213%;
     line-height: normal;
     text-align: center;
     color: #000;
-    text-shadow: 0 0 3px #FFF;
+    -webkit-text-stroke: 0.1px #fff;
     -webkit-print-color-adjust: exact;
 }
 
@@ -173,14 +173,17 @@
 }
 
 .tile.tiletile .background-separator {
-    width: 27%;
+    width: 23%;
     position: absolute;
-    left: 2%;
-    bottom: 8%;
+    left: 2.5%;
+    bottom: 5%;
 }
 .tile.tiletile img.background-skills {
     height: 100%;
     position: relative;
+}
+
+.tile.tiletile .skills-separator ~.skills img.background-skills {
     top: -33%;
 }
 
@@ -604,6 +607,7 @@
 .dialog .tile .color select ~ .ui-selectmenu-menu ul li:nth-child(4):before, .dialog .tile .color select[data-value=green] + span { background-image: url(img/background_green.png) !important; }
 .dialog .tile .color select ~ .ui-selectmenu-menu ul li:nth-child(5):before, .dialog .tile .color select[data-value=orange] + span { background-image: url(img/background_orange.png) !important; }
 .dialog .tile .color select ~ .ui-selectmenu-menu ul li:nth-child(6):before, .dialog .tile .color select[data-value=purple] + span { background-image: url(img/background_purple.png) !important; }
+.dialog .tile .color select ~ .ui-selectmenu-menu ul li:nth-child(7):before, .dialog .tile .color select[data-value=black] + span { background-image: url(img/background_black.png) !important; }
 .dialog .tile .color  {
     margin-top: 0 !important;
 }

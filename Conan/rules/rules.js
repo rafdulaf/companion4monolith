@@ -42,7 +42,7 @@ Rules = mergeObject(Rules, {
                                     'magic',
                                      spell.image,
                                      spell.title[Language],
-                                     Rules._i18n[Language].spell_clarification + spell.clarification[Language]);
+                                     Rules._i18n[Language].spell_clarification + spell.clarification[Language].replace(/\n/g, "<br/>"));
             }
         }
     },
