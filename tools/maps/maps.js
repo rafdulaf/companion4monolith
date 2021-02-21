@@ -101,6 +101,7 @@ function doExport()
     data.description.copyright = $("#copyright")[0].value;
     data.description.rules = _getRules();
     data.description.totopic = _getLanguageJson('totopic');
+    data.description.ratio = Math.round($('#image').prop("naturalWidth") / $('#image').prop("naturalHeight") * 100) / 100.0;
     data.description.thumbnail = _getPath() + $("#thumbnail")[0].value;
     data.description.board = _getPath() + $("#board")[0].value;
     if ($("#losFile")[0].value) data.description.losFile = _getPath() + $("#losFile")[0].value;
@@ -560,7 +561,18 @@ function transform()
         alert("Zones is not a correct json. Cannot apply any transformation.")
         throw e;
     }
-    
+
+    if ($("#rulesselector")[0].value != 'batman') 
+    {
+        try {
+            var rules = JSON.parse($("#rules-conan")[0].value)
+        }
+        catch (e) {
+            alert("Conan rules is not a correct json. Cannot apply any transformation.")
+            throw e;
+        }
+    }
+
 
     var trans = prompt("Put code here (based upon 2 vars: x and y) to transform all zones (area and centers)?\nNote that if any item of the zone is < 0 or > 100, the zone will be removed (but not links to it)")
     if (!trans)
@@ -608,7 +620,24 @@ function transform()
             delete zones[z];
         }
     }
-    
+
+    if (rules)
+    {
+        for (var i=0; i < rules.length; i++)
+        {
+            var rule = rules[i];
+            if (rule.coordinates)
+            {
+                for (var j=0; j < rule.coordinates.length; j++)
+                {
+                    var coo = rule.coordinates[j];
+                    rule.coordinates[j] = f(coo[0], coo[1]);
+                }
+            }
+        }
+        
+        $("#rules-conan")[0].value = stringify(rules);
+    }
     $("#zones")[0].value = stringify(zones);
     displayZones();
 }
