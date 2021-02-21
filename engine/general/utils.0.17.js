@@ -59,6 +59,11 @@ Utils = {
         applicationFiles.scripts.forEach(function(file) {
             $('head').append( $('<script/>').attr('src', file + "?version=" + Version) );
         });
+        
+        if (navigator.userAgent.indexOf('Firefox') != -1)
+        {
+            $(document.body).addClass('ff');
+        }
     },
     
     _toInitialize: [],

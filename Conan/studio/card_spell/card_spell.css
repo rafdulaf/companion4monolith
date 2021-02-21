@@ -1,6 +1,5 @@
 #spell {
     font-family: 'Primary';
-    overflow: auto;
     position: relative;
 }
 
@@ -21,11 +20,7 @@
     height: calc(200px / 0.67);
     font-size: 18px;
 }
-.printcards .card.spell {
-    width: 100px;
-    height: calc(100px / 0.67);
-    font-size: 9px;
-}
+
 .printcards input[name=spell] { position: absolute; top:-5000px; }
 .printcards input[name=spell] + label { position: relative; display: inline-block; margin-right: 5px; }
 .printcards input[name=spell] + label:before { position: absolute; content: " "; z-index: 1; top: 0; left: 0; right: 0; bottom: 0; background-color: #000000; opacity: 0.2; }
@@ -33,19 +28,6 @@
 .printcards input[name=spell]:checked + label:before { display: none; }
 .printcards input[name=spell]:checked + label:after { content: "\f058"; color: green; }
 @media print { .printcards input[name=spell] + label { margin-right: 0; } }
-
-@media screen and (max-width: 400px) {
-    .card.spell {
-        width: 160px;
-        height: calc(160px / 0.67);
-        font-size: 14.4px;
-    }
-    .printcards .card.spell {
-        width: 80px;
-        height: calc(80px / 0.67);
-        font-size: 7.2px;
-    }
-}
 
 @media print {
     .printcards .card.spell,
@@ -56,6 +38,9 @@
         font-size: 0.4cm;
         border-radius: 0.3cm;
         position: relative;
+        zoom: unset;
+        transform: unset;
+        transform-origin: unset;
     }
     .printcards.cut .card.spell {
         overflow: visible;
@@ -249,9 +234,7 @@
 .dialog .spell .field input,
 .dialog .spell .field select,
 .dialog .spell .field textarea {
-    border: none;
     width: 100%;
-    outline: none;
     resize: none;
 }
 
@@ -291,12 +274,14 @@
 .dialog .spell .field.textsize input,
 .dialog .spell .field.textinter input {
     width: 40%;
+    padding-right: 15px;
     text-align: right;
     display: inline-block;
 }
 .dialog .spell .field.textsize:after,
 .dialog .spell .field.textinter:after {
-    margin-left: 3px;
+    position: relative;
+    left: -12px;
     content: "%";
     display: inline-block;
 }
@@ -411,17 +396,20 @@
 }
 .dialog .spell .field.imagezoom:after,
 .dialog .spell .field.imagelocation div:after {
-    margin-left: 3px;
+    position: relative;
+    left: -12px;
     content: "%";
 }
 .dialog .spell .field.imagerotation:after {
-    margin-left: 3px;
+    position: relative;
+    left: -12px;
     content: "°";
 }
 .dialog .spell .field.imagelocation input,
 .dialog .spell .field.imagezoom input,
 .dialog .spell .field.imagerotation input {
-    width: 34px;
+    width: 49px;
+    padding-right: 15px;
     text-align: right;
 }
 .dialog .spell .field.imagelocation, .dialog .spell .field.imagezoom
@@ -457,6 +445,9 @@
 .dialog .spell-preview .preview {
     text-align: center;
     margin-top: 20px;
+}
+.dialog .spell {
+    margin-bottom: 10px;
 }
 .dialog .spell h1,
 .dialog .spell-preview h1 {
@@ -509,7 +500,15 @@
     }
 }
 
+.ff .printcards label[for^=spell-] .printoverflow {
+    margin-right: -102px;
+    margin-bottom: -151.75px;
+}
 
+#spell .inside > a {
+    display: inline-block;
+    vertical-align: top;
+}
 
 #spell .nocards {
     background-image: url('img/nocard.png');

@@ -44,6 +44,7 @@ About = mergeObject(About, {
     _haf: function() {
         return {
             'coders' : "<div><a href=\"https://the-overlord.com/index.php?/profile/5240-cochon/\" target='_blank'>@cochon</a></div>",
+            'relooking' : "<div><a href=\"https://the-overlord.com/index.php?/profile/5236-renand/\" target='_blank'>@Renand</a></div>",
             'data': "<div><a href=\"https://the-overlord.com/index.php?/profile/5240-cochon/\" target='_blank'>@cochon</a></div>"
                     + "<div><a href=\"https://the-overlord.net/index.php?/profile/6029-pensareadaltro/\" target='_blank'>@pensareadaltro</a> " + About._i18n[Language].contribute_hof_dataIT + "</div>"
                     + "<div><a href=\"https://the-overlord.com/index.php?/profile/107-corwin/\" target='_blank'>@Corwin</a> " + About._i18n[Language].contribute_hof_dataCorinthia + "</div>",

@@ -294,7 +294,10 @@
             "dices": { "0": "redreroll", "1": "redreroll", "2": "redreroll", "3": "none" },
             "skills": { "0": "movement/blocking", "1": "miscellaneous/jinx", "2": "none", "3": "none" },
             "reinforcement": "",
-
+            "tokens": [
+                { "image_location": {"x":40, "y":120}, "image_zoom": 450 }
+            ],
+            
             "quote": {
                 "text": {
                     "fr": "Il y avait cependant quelque chose d'autre dans la pièce. Conan l'aperçut à travers les volutes de fumée ... une silhouette noire et monstrueuse, qui se découpait sur cette lueur infernale. Le contour en était vaguement humain, mais l'ombre projetée sur le mur en feu ne l'était pas du tout. {...} Le monstre noir se redressa, paraissant gigantesque sur les flammes, avec ses grands bras écartés ; un visage sinistre grimaça à travers les volutes de fumée, à moitié humain, à moitié démoniaque, et totalement horrible. Conan aperçut les cornes rapprochées, la gueule béante, les oreilles pointues ... La créature s'avançait vers lui à travers la fumée d'une démarche pesante...",

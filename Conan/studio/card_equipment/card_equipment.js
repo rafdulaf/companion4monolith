@@ -2,6 +2,8 @@ var CardEquipment = mergeObject(StudioItem, {
     name: 'equipment',
     cls: 'CardEquipment',
     storage: Application + "_StudioEquipmentCards", 
+    _itemWidth: 204,
+    _itemHeight: 302.5,
     
     _i18n: {
         'fr': {
@@ -141,7 +143,7 @@ var CardEquipment = mergeObject(StudioItem, {
         }
     },
     
-    _getDisplayItemsCode: function(withEditLink)
+    _getDisplayItemsCode: function(withEditLink, printPurpose)
     {
         var html = "";
 
@@ -344,7 +346,8 @@ var CardEquipment = mergeObject(StudioItem, {
 
 
         Nav.dialog(dlabel,
-            "<div class=\"eqcol\">"
+            "<div class=\"studiodialog\">"
+            + "<div class=\"eqcol\">"
             + "<div class=\"equipment\">"
                 + "<h1>" + CardEquipment._i18n[Language].header1 + "</h1>"
                 + "<input type=\"hidden\" name=\"cardpos\"/>"
@@ -420,6 +423,7 @@ var CardEquipment = mergeObject(StudioItem, {
                 + "<h1>" + CardEquipment._i18n[Language].header2 + "</h1>"
                 + "<div class=\"preview\"></div>"
             + "</div>"
+            + "</div>"
             + "</div>",
             null,
             actions
@@ -460,6 +464,8 @@ var CardEquipment = mergeObject(StudioItem, {
         CardEquipment._card2form(card);
 
         CardEquipment._preview();
+        
+        $("#eqname").focus();
     },
 
     _form2card: function()

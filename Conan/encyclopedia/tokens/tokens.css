@@ -1,11 +1,9 @@
 #encyclopedia-token {
     font-family: 'Primary';
-    overflow: auto;
     position: relative;
 }
 #encyclopedia-token-wrapper {
-    margin-left: 156px;
-    text-align: center;
+    margin-left: var(--search-placeholder);
 }
 
 #encyclopedia-token-wrapper a {
@@ -53,7 +51,7 @@ div.token-wrapindetails  .othertoken .name,
 }
 
 div.token-wrapindetails,
-#encyclopedia-tile-wrapper a {
+#encyclopedia-token-wrapper a {
     position: relative;
     display: inline-block;
 }
@@ -64,7 +62,7 @@ div.token-wrapindetails[data-count]::after,
     position: absolute;
     z-index: 2;
     top: 10%;
-    right: -5%;
+    right: 0;
     width: 45px;
     height: 45px;
     line-height: 45px;
@@ -74,7 +72,9 @@ div.token-wrapindetails[data-count]::after,
     background-color: #e64443;
     color: #ffffff;
     border-radius: 100%;
+    text-align: center;
 }
+
 div.token-wrapindetails[data-count='1']::after,
 #encyclopedia-token-wrapper a[data-count='1']::after {
     content: none;

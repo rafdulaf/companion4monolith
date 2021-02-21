@@ -103,7 +103,8 @@ var Maps = {
             Maps._check(map);
 		}
 
-        $(window).resize(Maps._onResize);
+        $(window).on('resize', Maps._onResize);
+        $(window).on('orientationchange', Maps._onResize);
 		Maps._displayIndex();
 
         About.addCopyright(Maps._i18n[Language].menu, Maps._i18n[Language].copyright + Maps._copyright());
@@ -265,6 +266,10 @@ var Maps = {
 
     _onResize: function()
     {
+        Maps._rotation = window.screen.width / window.screen.height > 1.2 ? 
+            (Maps._rotation == 1 || Maps._rotation == 2 ? 2 : 0) 
+            : 
+            (Maps._rotation == 1 || Maps._rotation == 2 ? 1 : 3);
         Maps.onresize = true;
     },
 

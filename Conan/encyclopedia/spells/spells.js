@@ -55,7 +55,7 @@ var EncyclopediaSpells = {
                 },
                 filter: function(item, value)
                 {
-                    return Rules._deemphasize(item.title[Language] + item.text[Language]).indexOf(Rules._deemphasize(value)) != -1;
+                    return (item.title[Language + '_deemphasized'] + item.text[Language + '_deemphasized']).indexOf(Rules._deemphasize(value)) != -1;
                 }
             },
 
@@ -371,8 +371,10 @@ var EncyclopediaSpells = {
 
     init: function()
     {
-        $("#encyclopedia-spell").append(Encyclopedia.displaySearchEngine(EncyclopediaSpells._facets, "EncyclopediaSpells.updateDisplaySpells()", "es"));
-        $("#encyclopedia-spell").append("<div id='encyclopedia-spell-wrapper'></div>");
+        EncyclopediaSpells.debouncedUpdateDisplaySpells = $.debounce(250, EncyclopediaSpells.updateDisplaySpells);
+        Encyclopedia.displaySearchEngine("encyclopedia-spell", EncyclopediaSpells._facets, "EncyclopediaSpells.updateDisplaySpells()", "EncyclopediaSpells.debouncedUpdateDisplaySpells()", "es");
+        $("#encyclopedia-spell .search-wrapper").append("<div id='encyclopedia-spell-wrapper'></div>");
+        AutoZoom.autozoom("encyclopedia-spell-wrapper", 204, 302.5);        
         EncyclopediaSpells.displaySpells();
     },
 

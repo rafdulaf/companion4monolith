@@ -54,6 +54,7 @@ var Studio = {
         Studio._items.forEach(item => item.preinit());
 
         Nav.createTabs('studio', Studio._slides, Studio.onChange);
+        Nav.addAction("studio", Studio._i18n[Language].printcardsLabel, "studio-icon-printcards", this.name + "-print", Studio.printCards);
 
         Studio._items.forEach(item => item.init());
 
@@ -86,17 +87,18 @@ var Studio = {
             + "<p class='hint'><input type='checkbox' id='printback' checked='checked'  onchange='$(this.parentNode.parentNode).toggleClass(\"back\")'><label for='printback'>" + Studio._i18n[Language].printfaces + "</label></p>"
             + "<p class='hint'><input type='checkbox' id='printcut' checked='checked' onchange='$(this.parentNode.parentNode).toggleClass(\"cut\")'><label for='printcut'>" + Studio._i18n[Language].printmargin + "</label></p>"
 
-            + "<div class=\"print\"><button onclick=\"Studio._printCards();\">" + Studio._i18n[Language].printcardsLabel + "</button></div>"
-
             + studiosCode
-
-            + "<div class=\"print\"><button onclick=\"Studio._printCards();\">" + Studio._i18n[Language].printcardsLabel + "</button></div>"
 
             + "<div class=\"newpage\"></div>"
 
             + "</div>",
             null,
-            []
+            [],
+            [{
+                icon: 'studio-icon-printcards',
+                label: Studio._i18n[Language].printcardsLabel,
+                fn: "Studio._printCards()"
+            }]
         );
         // share back of spell and equipment
         $(".newpage").append($(".printcards .back"));

@@ -2,6 +2,8 @@ var CardSpell = mergeObject(StudioItem, {
     name: 'spell',
     cls: 'CardSpell',
     storage: Application + "_StudioSpellCards",
+    _itemWidth: 204,
+    _itemHeight: 302.5,    
     
     _i18n: {
         'fr': {
@@ -117,7 +119,7 @@ var CardSpell = mergeObject(StudioItem, {
         }
     },
     
-    _getDisplayItemsCode: function(withEditLink)
+    _getDisplayItemsCode: function(withEditLink, printPurpose)
     {
         var html = "";
 
@@ -198,13 +200,14 @@ var CardSpell = mergeObject(StudioItem, {
     _add: function(card, dlabel, actions)
     {
         Nav.dialog(dlabel,
-            "<div class=\"eqcolspell\">"
+            "<div class=\"studiodialog\">"
+            + "<div class=\"eqcolspell\">"
             + "<div class=\"spell\">"
                 + "<h1>" + CardSpell._i18n[Language].header1 + "</h1>"
                 + "<input type=\"hidden\" name=\"cardpos\"/>"
                 + "<div class=\"field name\">"
                     + "<label for=\"eqname\">" + CardSpell._i18n[Language].name + "</label>"
-                    + "<input id=\"eqname\" name=\"cardname\" autocomplete=\"off\" placeholder=\"" + CardSpell._i18n[Language].namePh + "\" onkeyup=\"CardSpell._preview();\" onchange=\"CardSpell._preview();\"/>"
+                    + "<input id=\"eqname\" spellcheck='false' name=\"cardname\" autocomplete=\"off\" placeholder=\"" + CardSpell._i18n[Language].namePh + "\" onkeyup=\"CardSpell._preview();\" onchange=\"CardSpell._preview();\"/>"
                 + "</div>"
                 + "<div class=\"field cost\">"
                     + "<label for=\"eqcost\">" + CardSpell._i18n[Language].cost + "</label>"
@@ -237,7 +240,7 @@ var CardSpell = mergeObject(StudioItem, {
                 + "<h1>" + CardSpell._i18n[Language].header1bis + "</h1>"
                 + "<div class=\"field\">"
                     + "<label for=\"eqimage\">" + CardSpell._i18n[Language].image + "</label>"
-                    + "<input id=\"eqimage\" name=\"cardimage\" autocomplete=\"off\" placeholder=\"" + CardSpell._i18n[Language].imagePh + "\" onkeyup=\"CardSpell._preview();\" onchange=\"CardSpell._preview();\"/>"
+                    + "<input id=\"eqimage\" spellcheck='false' name=\"cardimage\" autocomplete=\"off\" placeholder=\"" + CardSpell._i18n[Language].imagePh + "\" onkeyup=\"CardSpell._preview();\" onchange=\"CardSpell._preview();\"/>"
                     + "<div class=\"imageeffect\"><input type=\"checkbox\" id=\"eqspellimageeffect\" name=\"cardimageeffect\" onchange=\"CardSpell._preview();\"/><label for=\"eqspellimageeffect\">" + CardSpell._i18n[Language].imageeffect + "</label></div>"
                 + "</div>"
                 + "<div class=\"field imagelocation\">"
@@ -259,6 +262,7 @@ var CardSpell = mergeObject(StudioItem, {
             + "<div class=\"spell-preview\">"
                 + "<h1>" + CardSpell._i18n[Language].header2 + "</h1>"
                 + "<div class=\"preview\"></div>"
+            + "</div>"
             + "</div>"
             + "</div>",
             null,
@@ -285,6 +289,8 @@ var CardSpell = mergeObject(StudioItem, {
         CardSpell._card2form(card);
 
         CardSpell._preview();
+        
+        $("#eqname").focus();
     },
 
     _form2card: function()

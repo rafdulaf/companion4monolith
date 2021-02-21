@@ -15,7 +15,6 @@ Nav = {
         };
         Nav._icons.push(item);
         Nav._actions[id] = [];
-        Nav._floatingActions[id] = [];
         
         if (Nav._id)
         {
@@ -25,7 +24,6 @@ Nav = {
             $("#" + Nav._id + "-contents").append(code);
             code = "<ul for=\"" + id + "\"></ul>";
             $("#" + Nav._id + "-toolbar").append(code);
-            $("#" + Nav._id + "-floatingtoolbar").append(code);
         }
     },
 
@@ -41,7 +39,7 @@ Nav = {
 
     _drawIcon: function (item)
     {
-        return "<li><a class=\"" + item.icon + "\" href=\"javascript:void(0);\" for=\"" + item.id + "\" onclick=\"Nav.switchTo(this)\"><span>" + item.label + "</span></a></li>"
+        return "<li><a class=\"" + item.icon + "\" href=\"javascript:void(0);\" for=\"" + item.id + "\" onclick=\"Nav.switchTo(this)\"><div><span>" + item.label + "</span></div></a></li>"
     },
 
     _drawContents: function ()
@@ -86,13 +84,11 @@ Nav = {
             fn: fn,
             hidden: false
         };
+        Nav._floatingActions[iconId] = Nav._floatingActions[iconId] || [];
         Nav._floatingActions[iconId].push(item);
-        
-        if (Nav._id)
-        {
-            var code = Nav._drawFloatingAction(iconId, item);
-            $("#" + Nav._id + "-floatingtoolbar").children("ul[for='" + iconId + "']").append(code);
-        }
+    
+        var code = Nav._drawFloatingAction(iconId, item);
+        $("ul[for='" + iconId + "']").append(code);
     },
 
     showAction: function(iconId, id)
@@ -158,7 +154,6 @@ Nav = {
         for (var i in Nav._icons)
         {
             s = "<ul for=\"" + Nav._icons[i].id + "\">";
-            s += Nav._drawAction(i, Nav._actions[Nav._icons[i]]);
             s += "</ul>";
         }
         
@@ -172,7 +167,6 @@ Nav = {
         for (var i in Nav._icons)
         {
             s = "<ul for=\"" + Nav._icons[i].id + "\">";
-            s += Nav._drawAction(i, Nav._actions[Nav._icons[i]]);
             s += "</ul>";
         }
         
@@ -201,9 +195,7 @@ Nav = {
             window.location.hash = "#" + id;
     
             $("#" + Nav._id + "-toolbar ul.active").removeClass("active");
-            $("#" + Nav._id + "-floatingtoolbar ul.active").removeClass("active");
             $("#" + Nav._id + "-toolbar ul[for='" + id + "']").addClass("active");
-            $("#" + Nav._id + "-floatingtoolbar ul[for='" + id + "']").addClass("active");
     
             $("#" + Nav._id + "-contents > .active").removeClass("active");
             toSelect.addClass("active");
@@ -283,7 +275,7 @@ Nav = {
 
         nav.removeClass(sizes.join(" "));
         
-        var tabs = nav.find("a");
+        var tabs = nav.find("a div");
         var maxWidth = tabs.width();
 
         for (var i = 0; i < sizes.length; i++)
@@ -307,6 +299,20 @@ Nav = {
             }
         }
     },
+    
+    createFloatingBar: function(id, cls) {
+        Nav._floatingActions[id] = Nav._floatingActions[id] || [];
+        
+        let s = "<ul for=\"" + id + "\" class='floatingactions" + (cls ? ' ' + cls : '') + "'>";
+        for (let item of Nav._floatingActions[id])
+        {
+            s += Nav._drawFloatingAction(id, item);
+        }
+        s += "</ul>"; 
+        
+        $('#' + id).css('transform', 'translateX(0)') // hack for fixed toolbars to be relative to this
+                   .append(s);
+    },
 
     initialize: function()
     {
@@ -318,9 +324,6 @@ Nav = {
                         + Nav._drawActions()
                     + "</nav>"
                     + "</header>"
-                    + "<nav class=\"floating-toolbar\" id=\"" + Nav._id + "-floatingtoolbar\">"
-                        + Nav._drawFloatingActions()
-                    + "</nav>"
                     + "<nav class=\"nav\" id=\"" + Nav._id + "\">"
                         + "<ul>" 
                             + Nav._drawIcons()
@@ -333,6 +336,7 @@ Nav = {
         
         document.fonts.ready.then(function() { Nav.updateTitle(); Nav.updateNav(); $(".nav-menu").each(function(i, s) { Nav.updateTabsSize(s) }); });
         $(window).on('resize', function() { Nav.updateTitle(); Nav.updateNav(); });
+        $(window).on('orientationchange', function() { Nav.updateTitle(); Nav.updateNav(); });
         $(window).on('hashchange', function() { Nav._hashChange() });
         
         function resize()
@@ -341,6 +345,7 @@ Nav = {
            document.body.parentNode.style.height = a;
         }
         $(window).on('resize', resize);
+        $(window).on('orientationchange', resize);
         resize();  
         
         window.scrollTo(0, 111111)
@@ -377,7 +382,7 @@ Nav = {
         }
     },
     
-    dialog: function(title, code, callback, actions)
+    dialog: function(title, code, callback, actions, floatingactions)
     {
         function drawactions()
         {
@@ -395,6 +400,22 @@ Nav = {
             }
             return c;
         }
+        function drawfloatingactions()
+        {
+            var c = "";
+            if (floatingactions)
+            {
+                c += "<ul class='floatingactions'>";
+                for (var i in floatingactions)
+                {
+                    c += "<li>"
+                    c += "<a href=\"javascript:void(0);\" onclick=\"" + floatingactions[i].fn + "\" class=\"" + floatingactions[i].icon + "\" title=\"" + floatingactions[i].label + "\"><span>" + floatingactions[i].label + "</span></a>"
+                    c += "</li>"
+                }
+                c += "</ul>";
+            }
+            return c;
+        }
         
         code = "<div id=\"dialog\" class=\"dialog\">"
                 + "<div class=\"dialog-header\">"
@@ -403,6 +424,7 @@ Nav = {
                     + drawactions()
                 + "</div>"
                 + "<div class=\"dialog-content\">"
+                    + drawfloatingactions()
                     + code 
                 + "</div>"
               + "</div>";

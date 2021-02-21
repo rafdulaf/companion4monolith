@@ -1,11 +1,9 @@
 #encyclopedia-heroes {
     font-family: 'Primary';
-    overflow: auto;
     position: relative;
 }
 #encyclopedia-heroessheet-wrapper {
-    margin-left: 156px;
-    text-align: center;
+    margin-left: var(--search-placeholder);
 }
 .encyclopedia-heroes-tostudio::before {
     content: "\f591";
@@ -97,12 +95,6 @@
 .herodetails .superdetails p:first-child::after { content: " »"; }
 
 
-.herodetails .sheet.herosheet {
-    width: 472px;
-    height: calc(472px / 1.75);
-    font-size: 35.4px;
-}
-
 .herodetails a.openskill {
     display: inline-block;
     vertical-align: top;
@@ -116,11 +108,6 @@
 }
 
 @media screen and (max-width: 500px) {
-    .herodetails  .sheet.herosheet {
-        width: 320px;
-        height: calc(320px / 1.75);
-        font-size: 24px;
-    }
     .herodetails .superdetails div.img {
         width: 100px;
     }

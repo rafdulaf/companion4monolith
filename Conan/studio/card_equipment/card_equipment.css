@@ -1,6 +1,5 @@
 #equipment {
     font-family: 'Primary';
-    overflow: auto;
     position: relative;
 }
 .card.equipement {
@@ -20,11 +19,7 @@
     height: calc(200px / 0.67);
     font-size: 18px;
 }
-.printcards .card.equipement {
-    width: 100px;
-    height: calc(100px / 0.67);
-    font-size: 9px;
-}
+
 .printcards input[name=equipment] { position: absolute; top:-5000px; }
 .printcards input[name=equipment] + label { position: relative; display: inline-block; margin-right: 5px; }
 .printcards input[name=equipment] + label:before { position: absolute; content: " "; z-index: 1; top: 0; left: 0; right: 0; bottom: 0; background-color: #000000; opacity: 0.2; }
@@ -33,18 +28,6 @@
 .printcards input[name=equipment]:checked + label:after { content: "\f058"; color: green; }
 @media print { .printcards input[name=equipment] + label { margin-right: 0; } }
 
-@media screen and (max-width: 400px) {
-    .card.equipement {
-        width: 160px;
-        height: calc(160px / 0.67);
-        font-size: 14.4px;
-    }
-    .printcards .card.equipement {
-        width: 80px;
-        height: calc(80px / 0.67);
-        font-size: 7.2px;
-    }
-}
 
 @media print {
     .printcards .card.equipement,
@@ -55,6 +38,9 @@
         font-size: 0.4cm;
         border-radius: 0.3cm;
         position: relative;
+        zoom: unset;
+        transform: unset;
+        transform-origin: unset;
     }
     .printcards.cut .card.equipement {
         overflow: visible;
@@ -218,9 +204,7 @@
 }
 .dialog .equipment .field input,
 .dialog .equipment .field select {
-    border: none;
     width: 100%;
-    outline: none;
 }
 
 .dialog .equipment .field input#eqname {
@@ -272,17 +256,20 @@
 }
 .dialog .equipment .field.imagezoom:after,
 .dialog .equipment .field.imagelocation div:after {
-    margin-left: 3px;
+    position: relative;
+    left: -12px;
     content: "%";
 }
 .dialog .equipment .field.imagerotation:after {
-    margin-left: 3px;
+    position: relative;
+    left: -12px;
     content: "°";
 }
 .dialog .equipment .field.imagelocation input,
 .dialog .equipment .field.imagezoom input,
 .dialog .equipment .field.imagerotation input {
-    width: 34px;
+    width: 49px;
+    padding-right: 15px;
     text-align: right;
 }
 .dialog .equipment .field.imagelocation, .dialog .equipment .field.imagezoom
@@ -343,7 +330,7 @@
 }
 
 .dialog .equipment .field input#eqmovement {
-   font-size: 36px;
+   font-size: 48px;
    font-family: "Motrg";
    text-align: center;
    color: #FFFFFF;
@@ -351,6 +338,10 @@
    background-position: calc(50% - 6px);
    background-size: contain;
    width: 54px;
+   height: unset;
+   z-index: 1;
+   position: relative;
+   background-color: transparent;
 }
 .dialog .equipment .field input#eqweight { 
    font-size: 36px;
@@ -358,28 +349,17 @@
    text-align: left;
    color: #FFFFFF;
    padding-left: 12px;
-   width: 54px;
+   width: 34px;
+   height: unset;
    background-repeat: no-repeat;
    background-position: left;
    background-size: contain;
    background-image: url(img/weight.png); 
 }
-.dialog .equipment .field input#eqmovement {
-    z-index: 1;
-    position: relative;
-    background-color: transparent;
-    font-size: 48px;
+.dialog .equipment .field input#eqweight::placeholder {
+    font-size: 28px;
 }
 
-.dialog .equipment .field input#eqimage,
-.dialog .equipment .field input#eqimagelocation,
-.dialog .equipment .field input#eqimagelocation2,
-.dialog .equipment .field input#eqimagezoom,
-.dialog .equipment .field input#eqimagerotation {
-   font-size: 22px;
-   line-height: 36px;
-   font-family: 'Secondary';
-}
 .dialog .equipment .field select.dice
 {
   font-family: "Font Awesome 5 Free";
@@ -462,6 +442,7 @@
 }
 .dialog .equipment .imageatfront input[type=checkbox] + label {
     font-size: 24px;
+    line-height: 33px;
     font-family: 'Secondary';
 }
 
@@ -548,6 +529,9 @@
     border-radius: 100%;
     margin-right: 10px;
 }
+.dialog .eqcol {
+    margin-bottom: 10px;
+}
 .dialog .eqcol:nth-child(1) .equipment h1:before {
     content: "1";
 }
@@ -566,7 +550,15 @@
     }
 }
 
+.ff .printcards label[for^=equipment-] .printoverflow {
+    margin-right: -102px;
+    margin-bottom: -151.75px;
+}
 
+#equipment .inside > a {
+    display: inline-block;
+    vertical-align: top;
+}
 #equipment .nocards {
     background-image: url('img/nocard.png');
 }

@@ -292,8 +292,10 @@ var EncyclopediaEquipments = {
     
     init: function() 
     {
-        $("#encyclopedia-equipment").append(Encyclopedia.displaySearchEngine(EncyclopediaEquipments._facets, "EncyclopediaEquipments.updateDisplayEquipments()", "ee"));
-        $("#encyclopedia-equipment").append("<div id='encyclopedia-equipment-wrapper'></div>");
+        EncyclopediaEquipments.debouncedUpdateDisplayEquipments = $.debounce(250, EncyclopediaEquipments.updateDisplayEquipments);
+        Encyclopedia.displaySearchEngine("encyclopedia-equipment", EncyclopediaEquipments._facets, "EncyclopediaEquipments.updateDisplayEquipments()", "EncyclopediaEquipments.debouncedUpdateDisplayEquipments()", "ee");
+        $("#encyclopedia-equipment .search-wrapper").append("<div id='encyclopedia-equipment-wrapper'></div>");
+        AutoZoom.autozoom("encyclopedia-equipment-wrapper", 204, 302.5);  
         EncyclopediaEquipments.displayEquipments();
     },
     

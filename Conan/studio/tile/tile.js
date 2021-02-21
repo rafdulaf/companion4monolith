@@ -2,6 +2,8 @@ var Tile = mergeObject(StudioItem, {
     name: 'tile',
     cls: 'Tile',
     storage: Application + "_StudioTiles",
+    _itemWidth: 204,
+    _itemHeight: 309,
     
     _i18n: {
         'fr': {
@@ -159,7 +161,7 @@ var Tile = mergeObject(StudioItem, {
         }
     },
 
-    _getDisplayItemsCode: function(withEditLink)
+    _getDisplayItemsCode: function(withEditLink, printPurpose)
     {
         var html = "";
 
@@ -182,13 +184,13 @@ var Tile = mergeObject(StudioItem, {
 
                 if (withEditLink)
                 {
-                    html += prefix + "<div class='printoverflow'>" + Tile._cardCode(tiles[i]) + "</div>" + suffix;
+                    html += prefix + "<div class='printoverflow'>" + Tile._cardCode(tiles[i], null, null, printPurpose) + "</div>" + suffix;
                 }
                 else
                 {
                     html += prefix 
-                            + "<div class='printoverflow'>" + Tile._cardCode(tiles[i], true, false) + "</div>" 
-                            + "<div class='printoverflow'>" + Tile._cardCode(tiles[i], true, true) + "</div>" 
+                            + "<div class='printoverflow'>" + Tile._cardCode(tiles[i], true, false, printPurpose) + "</div>" 
+                            + "<div class='printoverflow'>" + Tile._cardCode(tiles[i], true, true, printPurpose) + "</div>" 
                             + suffix;
                 }
             }
@@ -204,10 +206,10 @@ var Tile = mergeObject(StudioItem, {
             {
                 html += "<div id=\"tile-back-" + i + "\"  class='printoverflow back invisible'>"
                             + "<img class=\"blood\" src=\"studio/tile/img/blood.png?version=" + Version + "\"/>"
-                            + Tile._cardCode(tiles[i], !withEditLink, false) 
+                            + Tile._cardCode(tiles[i], !withEditLink, false, printPurpose) 
                         + "</div>"
                 html += "<div id=\"tile-back2-" + i + "\"  class='printoverflow back invisible'>"
-                            + Tile._cardCode(tiles[i], !withEditLink, true) 
+                            + Tile._cardCode(tiles[i], !withEditLink, true, printPurpose) 
                         + "</div>"
             }
         }
@@ -215,7 +217,7 @@ var Tile = mergeObject(StudioItem, {
         return html;
     },
     
-    _cardCode: function(tile, tokenAside, tokenMode) {
+    _cardCode: function(tile, tokenAside, tokenMode, printPurpose) {
         var code = "<div class=\"tile tiletile\">"
                 + "<picture class=\"background\">"
                     + "<source media=\"print\" srcset=\"studio/tile/img/background_" + tile.color + "_hd.png?version=" + Version + "\"/>"
@@ -224,7 +226,7 @@ var Tile = mergeObject(StudioItem, {
 
         if (tile.image)
         {
-            code += "<div class=\"image\"><img " + LazyImage + " src=\"" + tile.image + "\" onload=\"this.style.minHeight = 0; this.style.opacity = 1\" style=\"left: " + tile.imagelocation.x + "%; top: " + tile.imagelocation.y + "%; width: " + tile.imagezoom + "%; transform: translate(-50%, -50%) rotate(" + tile.imagerotation + "deg)\"/></div>";
+            code += "<div class=\"image\"><img " + (!printPurpose ? LazyImage : "") + " src=\"" + tile.image + "\" onload=\"this.style.minHeight = 0; this.style.opacity = 1\" style=\"left: " + tile.imagelocation.x + "%; top: " + tile.imagelocation.y + "%; width: " + tile.imagezoom + "%; transform: translate(-50%, -50%) rotate(" + tile.imagerotation + "deg)\"/></div>";
         }
 
         if (tile.name !== undefined && tile.name !== null)
@@ -329,10 +331,10 @@ var Tile = mergeObject(StudioItem, {
         if ((tokenMode == null || tokenMode == true) && tile.tokens && tile.tokens.length > 0 && tile.tokens[0].active)
         {
             code += "<div class=\"tile tokens" + (tokenAside ? " tokensAside" : " tokensOver") + "\">";
-            code += "<div class=\"token\"><img " + LazyImage + " src=\"" + (tile.tokens[0].image || tile.image) + "\" onload=\"this.style.cssText += '; top: " + tile.tokens[0].imagelocation.y + "% !important'\" style=\"left: " + tile.tokens[0].imagelocation.x + "%; top: " + tile.tokens[0].imagelocation.y + "%; width: " + tile.tokens[0].imagezoom + "%; transform: translate(-50%, -50%) rotate(" + tile.tokens[0].imagerotation + "deg)\"/></div>";
+            code += "<div class=\"token\"><img " + (!printPurpose ? LazyImage : "") + " src=\"" + (tile.tokens[0].image || tile.image) + "\" onload=\"this.style.cssText += '; top: " + tile.tokens[0].imagelocation.y + "% !important'\" style=\"left: " + tile.tokens[0].imagelocation.x + "%; top: " + tile.tokens[0].imagelocation.y + "%; width: " + tile.tokens[0].imagezoom + "%; transform: translate(-50%, -50%) rotate(" + tile.tokens[0].imagerotation + "deg)\"/></div>";
             if (tile.tokens.length > 1 && tile.tokens[1].active)
             {
-                code += "<div class=\"token\"><img " + LazyImage + " src=\"" + (tile.tokens[1].image || tile.image) + "\" onload=\"this.style.cssText += '; top: " + tile.tokens[1].imagelocation.y + "% !important'\"style=\"left: " + tile.tokens[1].imagelocation.x + "%; top: " + tile.tokens[1].imagelocation.y + "%; width: " + tile.tokens[1].imagezoom + "%; transform: translate(-50%, -50%) rotate(" + tile.tokens[1].imagerotation + "deg)\"/></div>";
+                code += "<div class=\"token\"><img " + (!printPurpose ? LazyImage : "") + " src=\"" + (tile.tokens[1].image || tile.image) + "\" onload=\"this.style.cssText += '; top: " + tile.tokens[1].imagelocation.y + "% !important'\"style=\"left: " + tile.tokens[1].imagelocation.x + "%; top: " + tile.tokens[1].imagelocation.y + "%; width: " + tile.tokens[1].imagezoom + "%; transform: translate(-50%, -50%) rotate(" + tile.tokens[1].imagerotation + "deg)\"/></div>";
             }
             code += "</div>";
         }
@@ -381,13 +383,14 @@ var Tile = mergeObject(StudioItem, {
         }
 
         Nav.dialog(dlabel,
-            "<div class=\"eqcol\">"
+            "<div class=\"studiodialog\">"
+            + "<div class=\"ticol\">"
             + "<div class=\"tile\">"
                 + "<h1>" + Tile._i18n[Language].header1 + "</h1>"
                 + "<input type=\"hidden\" name=\"tilepos\"/>"
                 + "<div class=\"field name\">"
                     + "<label for=\"tname\">" + Tile._i18n[Language].name + "</label>"
-                    + "<input id=\"tname\" name=\"tilename\" autocomplete=\"off\" placeholder=\"" + Tile._i18n[Language].namePh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
+                    + "<input id=\"tname\" spellcheck='false' name=\"tilename\" autocomplete=\"off\" placeholder=\"" + Tile._i18n[Language].namePh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
                 + "</div>"
                 + "<div class=\"field color\">"
                     + "<label for=\"tcolor\">" + Tile._i18n[Language].color + "</label>"
@@ -431,12 +434,12 @@ var Tile = mergeObject(StudioItem, {
                 + "</div>"
             + "</div>"
             + "</div>"
-            + "<div class=\"eqcol\">"
+            + "<div class=\"ticol\">"
             + "<div class=\"tile\">"
                 + "<h1>" + Tile._i18n[Language].header1bis + "</h1>"
                 + "<div class=\"field\">"
                     + "<label for=\"timage\">" + Tile._i18n[Language].image + "</label>"
-                    + "<input id=\"timage\" name=\"tileimage\" autocomplete=\"off\" placeholder=\"" + Tile._i18n[Language].imagePh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
+                    + "<input id=\"timage\" spellcheck='false' name=\"tileimage\" autocomplete=\"off\" placeholder=\"" + Tile._i18n[Language].imagePh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
                 + "</div>"
                 + "<div class=\"field imagelocation\">"
                     + "<label for=\"timagelocation\">" + Tile._i18n[Language].imagelocation + "</label>"
@@ -457,7 +460,7 @@ var Tile = mergeObject(StudioItem, {
                 + "<input class=\"imagetoken\" type=\"checkbox\" id=\"timagetokenactive\" name=\"timagetokenactive\" onchange=\"Tile._preview();\"/><label for=\"timagetokenactive\">" + Tile._i18n[Language].imagetokenactive + "</label>"
                 + "<div class=\"field\">"
                     + "<label for=\"timagetoken\">" + Tile._i18n[Language].imagetoken + "</label>"
-                    + "<input id=\"timagetoken\" name=\"tileimagetoken\" autocomplete=\"off\" placeholder=\"" + Tile._i18n[Language].imagePh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
+                    + "<input id=\"timagetoken\" spellcheck='false' name=\"tileimagetoken\" autocomplete=\"off\" placeholder=\"" + Tile._i18n[Language].imagePh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
                 + "</div>"
                 + "<div class=\"field imagelocation\">"
                     + "<label for=\"timagetokenlocation\">" + Tile._i18n[Language].imagelocation + "</label>"
@@ -475,7 +478,7 @@ var Tile = mergeObject(StudioItem, {
                 + "<input class=\"imagetoken\" type=\"checkbox\" id=\"timagetoken2active\" name=\"timagetoken2active\" onchange=\"Tile._preview();\"/><label for=\"timagetoken2active\">" + Tile._i18n[Language].imagetokenactive + "</label>"
                 + "<div class=\"field\">"
                     + "<label for=\"timagetoken2\">" + Tile._i18n[Language].imagetoken + "</label>"
-                    + "<input id=\"timagetoken2\" name=\"tileimagetoken2\" autocomplete=\"off\" placeholder=\"" + Tile._i18n[Language].imagePh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
+                    + "<input id=\"timagetoken2\" spellcheck='false' name=\"tileimagetoken2\" autocomplete=\"off\" placeholder=\"" + Tile._i18n[Language].imagePh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
                 + "</div>"
                 + "<div class=\"field imagelocation\">"
                     + "<label for=\"timagetoken2location\">" + Tile._i18n[Language].imagelocation + "</label>"
@@ -494,6 +497,7 @@ var Tile = mergeObject(StudioItem, {
             + "<div class=\"tile-preview\">"
                 + "<h1>" + Tile._i18n[Language].header2 + "</h1>"
                 + "<div class=\"preview\"></div>"
+            + "</div>"
             + "</div>"
             + "</div>",
             null,
@@ -550,6 +554,8 @@ var Tile = mergeObject(StudioItem, {
         Tile._card2form(tile);
 
         Tile._preview();
+        
+        $("#tname").focus();
     },    
 
     _form2card: function()

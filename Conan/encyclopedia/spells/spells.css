@@ -1,11 +1,9 @@
 #encyclopedia-spell {
     font-family: 'Primary';
-    overflow: auto;
     position: relative;
 }
 #encyclopedia-spell-wrapper {
-    margin-left: 156px;
-    text-align: center;
+    margin-left: var(--search-placeholder);
 }
 .encyclopedia-spell-tostudio::before {
     content: "\f591";
@@ -38,7 +36,7 @@
     position: absolute;
     z-index: 2;
     top: 10%;
-    right: -5%;
+    right: 0;
     width: 45px;
     height: 45px;
     line-height: 45px;
@@ -46,6 +44,7 @@
     background-color: #e64443;
     color: #ffffff;
     border-radius: 100%;
+    text-align: center;
 }
 #encyclopedia-spell-wrapper a[data-count='1']::after {
     content: none;

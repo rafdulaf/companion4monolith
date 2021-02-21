@@ -6,36 +6,38 @@ var StudioItem = {
     _checkForm: function() { return 0; },
     copyright: function() { return ""; },
     _printCode: function () { return ""; },
+    _itemWidth: 200,
+    _itemHeight: 300,
     
     preinit: function() {
         Studio._slides.push({   label: this._i18n[Language].tab, id: this.name, onShow: this.onShow.bind(this),  onHide: this.onHide.bind(this) });
     },
 
     init: function() {
-        Nav.addFloatingAction("studio", this._i18n[Language].newcard, "studio-icon-add", this.name + "-add", this.add.bind(this));
-        Nav.addAction("studio", Studio._i18n[Language].printcardsLabel, "studio-icon-printcards", this.name + "-print", Studio.printCards);
+        Nav.addFloatingAction(this.name, this._i18n[Language].newcard, "studio-icon-add", this.name + "-add", this.add.bind(this));
         this.onHide();
+        $("#" + this.name).html("<div id='" + this.name + "-inside' class='inside'></div>");
+        Nav.createFloatingBar(this.name);
         this._displayCards();
+        AutoZoom.autozoom(this.name + "-inside", this._itemWidth, this._itemHeight);
     },
 
     _displayCards: function()
     {
-        $("#" + this.name).html(this._getDisplayItemsCode(true));
+        $("#" + this.name + "-inside").html(this._getDisplayItemsCode(true));
     },
         
     printCode: function ()
     {
-          return this._printCode() + this._getDisplayItemsCode(false);
+          return this._printCode() + this._getDisplayItemsCode(false, true);
     },
     
     onShow: function() {
-        Nav.showFloatingAction("studio", this.name + "-add");
-        Nav.showAction("studio", this.name + "-print");
+        // Nothing
     },
 
     onHide: function() {
-        Nav.hideFloatingAction("studio", this.name + "-add");
-        Nav.hideAction("studio", this.name + "-print");
+        // Nothing
     },
 
     add: function(card)

@@ -68,7 +68,7 @@ var EncyclopediaHeroes = {
                 },
                 filter: function(item, value)
                 {
-                    return Rules._deemphasize(item.name[Language] + (item.subname ? " " + item.subname[Language] : "")).indexOf(Rules._deemphasize(value)) != -1;
+                    return (item.name[Language + '_deemphasized'] + (item.subname ? ' ' + item.subname[Language + '_deemphasized'] : '')).indexOf(Rules._deemphasize(value)) != -1;
                 }
             },
 
@@ -288,8 +288,10 @@ var EncyclopediaHeroes = {
 
     init: function()
     {
-        $("#encyclopedia-heroes").append(Encyclopedia.displaySearchEngine(EncyclopediaHeroes._facets, "EncyclopediaHeroes.updateDisplayHeroes()", "ehs"));
-        $("#encyclopedia-heroes").append("<div id='encyclopedia-heroessheet-wrapper'></div>");
+        EncyclopediaHeroes.debouncedUpdateDisplayHeroes = $.debounce(250, EncyclopediaHeroes.updateDisplayHeroes);
+        Encyclopedia.displaySearchEngine("encyclopedia-heroes", EncyclopediaHeroes._facets, "EncyclopediaHeroes.updateDisplayHeroes()", "EncyclopediaHeroes.debouncedUpdateDisplayHeroes()", "ehs");
+        $("#encyclopedia-heroes .search-wrapper").append("<div id='encyclopedia-heroessheet-wrapper'></div>");
+        AutoZoom.autozoom("encyclopedia-heroessheet-wrapper", 604, 346.9);
         EncyclopediaHeroes.displayHeroes();
     },
 
