@@ -82,15 +82,15 @@ var Rules = {
         {
             if (About._hasExpansion(Encyclopedia.rules.list[i].origins))
             {
-                $("#" + Encyclopedia.rules.list[i].id).addClass("zoom0 rules-viewer").html("<div>" + Rules._createViewer("data/rules/" + Encyclopedia.rules.list[i].id + "/" + Language, Encyclopedia.rules.list[i].pages[Language]) + "</div>");
+                Nav.addFloatingAction(Encyclopedia.rules.list[i].id, Rules._i18n[Language]['viewer-search'], "rules-search-icon", "search", Rules._search);
+                $("#" + Encyclopedia.rules.list[i].id).html("<div class='zoom0 rules-viewer'><div>" + Rules._createViewer("data/rules/" + Encyclopedia.rules.list[i].id + "/" + Language, Encyclopedia.rules.list[i].pages[Language]) + "</div></div>");
+                Nav.createFloatingBar(Encyclopedia.rules.list[i].id);
                 Rules._attachEvents("#" + Encyclopedia.rules.list[i].id);
             }
         }
         
-
         Nav.addAction("rules", Rules._i18n[Language]['viewer-zoomin'], "rules-zoomin-icon", "zoomin", Rules._zoomIn);
         Nav.addAction("rules", Rules._i18n[Language]['viewer-zoomout'], "rules-zoomout-icon", "zoomout", Rules._zoomOut);
-        Nav.addAction("rules", Rules._i18n[Language]['viewer-search'], "rules-search-icon", "search", Rules._search);
         Nav.addAction("rules", Rules._i18n[Language]['viewer-download'], "rules-download-icon", "download", Rules._download);
         Rules._onChange();
 
@@ -240,32 +240,36 @@ var Rules = {
         }
     },
 
+    _deemphasizeRegexp: {
+        'A': new RegExp(/[ÀÁÂÃÄÅ]/g),
+        'AE': new RegExp(/Æ/g),
+        'C': new RegExp(/Ç/g),
+        'E': new RegExp(/[ÈÉÊË]/g),
+        'I': new RegExp(/[ÌÍÎÏ]/g),
+        'N': new RegExp(/Ñ/g),
+        'O': new RegExp(/[ÒÓÔÕÖ]/g),
+        'OE': new RegExp(/Œ/g),
+        'U': new RegExp(/[ÙÚÛÜ]/g),
+        'Y': new RegExp(/[ÝŸ]/g)
+    },
+    _cache:  {},
     _deemphasize: function (s)
     {
         if (!s) return s;
-
-        s = s.replace(new RegExp(/[ÀÁÂÃÄÅ]/g),"A");
-        s = s.replace(new RegExp(/[àáâãäå]/g),"a");
-        s = s.replace(new RegExp(/Æ/g),"AE");
-        s = s.replace(new RegExp(/æ/g),"ae");
-        s = s.replace(new RegExp(/Ç/g),"C");
-        s = s.replace(new RegExp(/ç/g),"c");
-        s = s.replace(new RegExp(/[ÈÉÊË]/g),"E");
-        s = s.replace(new RegExp(/[èéêë]/g),"e");
-        s = s.replace(new RegExp(/[ÌÍÎÏ]/g),"I");
-        s = s.replace(new RegExp(/[ìíîï]/g),"i");
-        s = s.replace(new RegExp(/Ñ/g),"N");
-        s = s.replace(new RegExp(/ñ/g),"n");
-        s = s.replace(new RegExp(/[ÒÓÔÕÖ]/g),"O");
-        s = s.replace(new RegExp(/[òóôõö]/g),"o");
-        s = s.replace(new RegExp(/Œ/g),"OE");
-        s = s.replace(new RegExp(/œ/g),"oe");
-        s = s.replace(new RegExp(/[ÙÚÛÜ]/g),"U");
-        s = s.replace(new RegExp(/[ùúûü]/g),"u");
-        s = s.replace(new RegExp(/[ÝŸ]/g),"y");
-        s = s.replace(new RegExp(/[ýÿ]/g),"y");
-
-        return s.toUpperCase();
+        
+        return Rules._cache[s]
+               || 
+             (Rules._cache[s] = s.toUpperCase()
+             .replace(Rules._deemphasizeRegexp.A,"A")
+             .replace(Rules._deemphasizeRegexp.AE,"AE")
+             .replace(Rules._deemphasizeRegexp.C,"C")
+             .replace(Rules._deemphasizeRegexp.E,"E")
+             .replace(Rules._deemphasizeRegexp.I,"I")
+             .replace(Rules._deemphasizeRegexp.N,"N")
+             .replace(Rules._deemphasizeRegexp.O,"O")
+             .replace(Rules._deemphasizeRegexp.OE,"OE")
+             .replace(Rules._deemphasizeRegexp.U,"U")
+             .replace(Rules._deemphasizeRegexp.Y,"Y"));
     },
 
     _doSearch: function(force)
@@ -347,7 +351,7 @@ var Rules = {
     {
         Rules._loadIframes();
         
-        var div = $("#" + Rules._rules[Rules._currentSlide].id);
+        var div = $("#" + Rules._rules[Rules._currentSlide].id + " div.rules-viewer");
         if (!div.is("zoom3") && !div.is("zoom2"))
         {
             div.removeClass("zoom1").removeClass("zoom0").addClass("zoom2");
@@ -392,13 +396,13 @@ var Rules = {
         {
             Nav.hideAction("rules", "zoomin");
             Nav.hideAction("rules", "zoomout");
-            Nav.hideAction("rules", "search");
+            Nav.hideFloatingAction("rules", "search");
         }
         else
         {
             Nav.showAction("rules", "zoomin");
             Nav.showAction("rules", "zoomout");
-            Nav.showAction("rules", "search");
+            Nav.showFloatingAction("rules", "search");
         }
     },
 
@@ -420,7 +424,8 @@ var Rules = {
         // pages
         for (var i = 1; i <= size; i++)
         {
-            s += "<iframe loading=\"lazy\" data-page='" + i + "' src=\"\about:blank\" data-src=\"" + url + "/" + i + ".html?version=" + Version + "\"></iframe>";
+            var id = "rules-" + Math.round(Math.random() * 100000);
+            s += "<iframe name=\"" + id + "\" id=\"" + id + "\" loading=\"lazy\" data-page='" + i + "' src=\"\about:blank\" data-src=\"" + url + "/" + i + ".html?version=" + Version + "\"></iframe>";
         }
 
         return s;
@@ -438,7 +443,7 @@ var Rules = {
 
     _scrollTo: function(specificPage, ratioX, ratioY)
     {
-        var div = $("#" + Rules._rules[Rules._currentSlide].id);
+        var div = $("#" + Rules._rules[Rules._currentSlide].id + " div.rules-viewer");
 
         ratioX = ratioX || 0;
         ratioY = ratioY || 0;
@@ -475,7 +480,7 @@ var Rules = {
     {
         Rules._loadIframes();
         
-        var div = $("#" + Rules._rules[Rules._currentSlide].id);
+        var div = $("#" + Rules._rules[Rules._currentSlide].id + " div.rules-viewer");
         var top = div.scrollTop();
         var height = div.height();
 

@@ -10,7 +10,7 @@ var Encyclopedia = {
             {
                 for (var k = 1; k < item.count ; k++)
                 {
-                    newItemsForArray.push({...item});
+                    newItemsForArray.push(mergeObject(item, {}));
                 }
                 
                 item.count = undefined;
@@ -22,6 +22,22 @@ var Encyclopedia = {
         return object;
     },
 
+    _loadDeemphasize: function(object, properties)
+    {
+        for (var property of properties)
+        {
+            for (var j in object.list)
+            {
+                var item = object.list[j];
+                if (item[property])
+                {
+                    Languages.forEach(lang => item[property][lang + "_deemphasized"] = Rules._deemphasize(item[property][lang]));
+                }
+            }
+        }
+        return object;
+    },
+    
     _loadHandleColors(object)
     {
         var newItemsForArray = [];
@@ -33,7 +49,7 @@ var Encyclopedia = {
             {
                 for (var k = 1; k < item.colors.length ; k++)
                 {
-                    newItemsForArray.push({...item, color: item.colors[k]});
+                    newItemsForArray.push(mergeObject(item, { color: item.colors[k] }));
                 }
                 
                 item.color = item.colors[0];
@@ -53,21 +69,21 @@ var Encyclopedia = {
     _i18n: {
         'fr': {
             'menu': "Encyclopédie",
-            'copyright': "Données anglaises récupérées sur le site <a target='_blank' href='https://conan-companion.herokuapp.com/'>conan-companion.herokuapp.com</a> avec l'aimable autorisation de David Abel.<br/>Traductions françaises saisies par <a href='https://the-overlord.com/index.php?/profile/5240-cochon/' target='_blank'>@cochon</a>.<br/>Traductions italiennes réalisées par <a href=\"https://the-overlord.net/index.php?/profile/6029-pensareadaltro/\">@pensareadaltro</a>.<br/>Les photos des figurines et les textes associés ont été repris du site <a href='http://conan.paintings.free.fr/'>Conan paintings</a>.",
             'operatorAnd': "et",
-            'operatorOr': "ou"
+            'operatorOr': "ou",
+            'search': "Chercher"
         },
         'en': {
             'menu': "Encyclopedia",
-            'copyright': "English data collected on the site <a target='_blank' href='https://conan-companion.herokuapp.com/'>conan-companion.herokuapp.com</a> with the kind authorization of David Abel.<br/>French translations entered by <a href='https://the-overlord.com/index.php?/profile/5240-cochon/' target='_blank'>@cochon</a>.<br/>Italian translations done by <a href=\"https://the-overlord.net/index.php?/profile/6029-pensareadaltro/\">@pensareadaltro</a>.<br/>Models photos and associated texts where gather on the <a href='http://conan.paintings.free.fr/'>Conan paintings</a> site.",
             'operatorAnd': "and",
-            'operatorOr': "or"
+            'operatorOr': "or",
+            'search': "Search"
         },
         'it': {
             'menu': "Enciclopedia",
-            'copyright': "Le informazioni in inglese sono ottenute dal sito: <a target='_blank' href='https://conan-companion.herokuapp.com/'>conan-companion.herokuapp.com</a> con la cortese autorizzazione di David Abel.<br/>Traduzione in francese inserite da <a href='https://the-overlord.com/index.php?/profile/5240-cochon/' target='_blank'>@cochon</a>.<br/>Traduzione in italiano di <a href=\"https://the-overlord.net/index.php?/profile/6029-pensareadaltro/\">@pensareadaltro</a>.<br/>Miniature, foto e testi associati sono stati recuperati dal sito: <a href='http://conan.paintings.free.fr/'>Conan paintings</a>.",
             'operatorAnd': "e",
-            'operatorOr': "o"
+            'operatorOr': "o",
+            'search': "TODO_TRANSLATE"
         }
     },
     
@@ -99,6 +115,7 @@ var Encyclopedia = {
         
         // Watch search engine
         $(window).on('resize', Encyclopedia.onResize);
+        $(window).on('orientationchange', Encyclopedia.onResize);
         Encyclopedia.onResize();
     },
     
@@ -111,12 +128,6 @@ var Encyclopedia = {
         Encyclopedia._currentSlide = slide;
         Encyclopedia._slides[Encyclopedia._currentSlide].onShow();
         Encyclopedia.onResize();
-    },
-
-    
-    copyright: function() 
-    {
-        return "<p>" + Encyclopedia._i18n[Language].copyright + "</p>"
     },
     
     _getOrigin: function(origin)
@@ -163,9 +174,9 @@ var Encyclopedia = {
         }
     },
     
-    displaySearchEngine: function(facets, displayFunc, prefix)
+    displaySearchEngine: function(parentId, facets, displayFunc, debouncedDisplayFunc, prefix)
     {
-        var se = "<div class='search-engine'>";
+        var se = "<div class='search-wrapper'><div class='search-engine-mobileoverlay'></div><div class='search-engine'>";
         
         for (var f in facets)
         {
@@ -204,14 +215,20 @@ var Encyclopedia = {
             }
             else
             {
-                se += "<input type='text' id='" + prefix + "-" + facet.id + "-input' onkeyup='" + displayFunc + "' onchange='" + displayFunc + "'/>";
+                se += "<input type='text' id='" + prefix + "-" + facet.id + "-input' onkeyup='" + debouncedDisplayFunc + "' onchange='" + debouncedDisplayFunc + "'/>";
             }
             se += "</div>"
         }
         
-        se += "</div>"
+        se += "</div></div>"
         
-        return se;
+        $("#" + parentId).append(se);
+        $("#" + parentId + " .search-engine-mobileoverlay").on("click", this._openSearch.bind(this, parentId));
+        Nav.addFloatingAction(parentId, this._i18n[Language].search, "encycloppedia-search-icon", "encyclopedia-" + prefix + "-search", this._openSearch.bind(this, parentId));
+        Nav.createFloatingBar(parentId, 'mobile-only');
+    },
+    _openSearch: function(parentId) {
+        $("#" + parentId).toggleClass("displaySearch");
     },
     updateFacets: function(facets, items, prefix)
     {
@@ -241,25 +258,26 @@ var Encyclopedia = {
                 
                 if (facet.sort)
                 {
-                    $("#" + prefix + "-" + facet.id + " label").sort(function (a,b) {
-                        var $a = $(a);
-                        var $b = $(b);
-                        
-                        var aCount = parseInt($a.attr("data-count"));
-                        var bCount = parseInt($b.attr("data-count"));
-                        
-                        if (aCount != bCount) return bCount - aCount;
-                        else return $a.text().localeCompare($b.text()); 
-                    }).appendTo("#" + prefix + "-" + facet.id);
+                    $("#" + prefix + "-" + facet.id + " label").sort(Encyclopedia._sort).appendTo("#" + prefix + "-" + facet.id);
                     $("#" + prefix + "-" + facet.id + " a").appendTo("#" + prefix + "-" + facet.id);
                 }
             }
         }
         Encyclopedia.onResize();
     },
+    _sort: function(a,b) {
+        var $a = $(a);
+        var $b = $(b);
+        
+        var aCount = parseInt($a.attr("data-count"));
+        var bCount = parseInt($b.attr("data-count"));
+        
+        if (aCount != bCount) return bCount - aCount;
+        else return $a.text().localeCompare($b.text()); 
+    },
     filter: function(facets, prefix, forcedFacet, forcedValue)
     {
-        return function(e) {
+        return function _filter(e) {
             for (var i in facets)
             {
                 var facet = facets[i];

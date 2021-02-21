@@ -6,6 +6,7 @@
 .rules-search-icon:before {
     font-family: "Font Awesome 5 Free";
     content: "\f002";  
+    font-size: 24px;
 }
 .rules-zoomin-icon:before {
     font-family: "Font Awesome 5 Free";

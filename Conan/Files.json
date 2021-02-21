@@ -1,8 +1,7 @@
 {
     "css": [
         "vendors/css/fonts.css",
-        "general/body.css",
-        "general/nav.css",
+        "general/skin.css",
         "maps/maps.css",
         "rules/rules.css",
         

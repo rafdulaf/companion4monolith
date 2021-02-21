@@ -1,6 +1,5 @@
 #encyclopedia-models {
     font-family: 'Primary';
-    overflow: auto;
     position: relative;
 }
 .encyclopedia-models-zoom::before {
@@ -16,8 +15,7 @@
    content: "\f086";  
 }
 #encyclopedia-models-wrapper {
-    margin-left: 156px;
-    text-align: center;
+    margin-left: var(--search-placeholder);
 }
 #encyclopedia-models-wrapper a {
     position: relative;
@@ -63,7 +61,7 @@
     position: absolute;
     z-index: 2;
     top: 10%;
-    right: -5%;
+    right: 0;
     width: 45px;
     height: 45px;
     line-height: 45px;
@@ -71,6 +69,7 @@
     background-color: #e64443;
     color: #ffffff;
     border-radius: 100%;
+    text-align: center;
 }
 #encyclopedia-models-wrapper a[data-count='1']::after {
     content: none;

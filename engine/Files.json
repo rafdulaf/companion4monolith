@@ -21,8 +21,10 @@
         "vendors/js/jquery-ui-1.12.1.min.js",
         "vendors/js/slick-1.8.0.js",
         "vendors/js/deepmerge.js",
+        "vendors/js/jquery.ba-throttle-debounce.js",
         "general/menu.js",
         "general/nav.js",
+        "general/autozoom.js",
         "about/about.js",
         "tutorial/tutorial.js",
         

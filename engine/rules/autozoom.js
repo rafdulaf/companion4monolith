@@ -1,5 +1,6 @@
+var width;
 function autoZoom() {
-    var zoom = Math.floor(window.innerWidth / 914.0 * 100.0) / 100.0;
+    var zoom = Math.floor(window.innerWidth / width * 10000.0) / 10000.0;
     
     if (navigator.userAgent.indexOf('Firefox') != -1)
     {
@@ -13,4 +14,12 @@ function autoZoom() {
     }
 }
 window.onresize = autoZoom;
-autoZoom();
+window.onorientationchange = autoZoom;
+
+var iframe = parent.document.getElementById(window.name);
+iframe.style.opacity = 0;
+window.onload = function() {
+    width = parseInt(document.querySelector("body > div").style.width);
+    autoZoom();
+    iframe.style.opacity = null;
+}

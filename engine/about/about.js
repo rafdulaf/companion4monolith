@@ -29,6 +29,7 @@ var About = {
             'contribute_version': "Version actuelle : ",
             'contribute_hof': "Temple de la renommée",
             'contribute_hof_coders': "Codage de l'application",
+            'contribute_hof_relooking': "Aide sur la charte graphique",
             'contribute_hof_data': "Saisie des données",
             'contribute_hof_test': "Tests et relectures"
         },
@@ -60,6 +61,7 @@ var About = {
             'contribute_version': "Current version: ",
             'contribute_hof': "Hall of fame",
             'contribute_hof_coders': "Application coding",
+            'contribute_hof_relooking': "Help on skin",
             'contribute_hof_data': "Data inputs",
             'contribute_hof_test': "Tests and rereadings"
         },
@@ -91,6 +93,7 @@ var About = {
             'contribute_version': "Versione attuale: ",
             'contribute_hof': "Albo d'oro",
             'contribute_hof_coders': "Codice Applicazione",
+            'contribute_hof_relooking': "TODO_TRANSLATE",
             'contribute_hof_data': "Aquisizione dei dati",
             'contribute_hof_test': "Test e riscritture"
         }
@@ -123,9 +126,9 @@ var About = {
         Menu.addMenu(About._i18n[Language].custom, "about-custom", "About._custom()", !About.isInStandaloneMode);
         Menu.addMenu(About._i18n[Language].preferences, "about-preferences", "About._preferences()");
 
-        Menu.addMenu(About._i18n[Language].about, "about-about", "About._about()", true);
-        
         Menu.addMenu(About._i18n[Language].other, "about-other", "About._other()", true);
+        Menu.addMenu(About._i18n[Language].about, "about-about", "About._about()", false);
+        
     },
     
     _other: function() {
@@ -147,7 +150,7 @@ var About = {
             "<div id='about' class='about'>"
                     + "<div class='about-zone-about'>"
                             + "<h1 style='text-align: center '>" + About._i18n[Language].title + " v" + Version + "</h1>"
-                            + "<img src='about/logo.jpg?version=" + Version + "'/>" +
+                            + "<img src='about/logo.png?version=" + Version + "'/>" +
                             "<a class='fullscreen' onclick='About._toggleFullscreen(); return false' href='javascript:void(0);' title=\"" + About._i18n[Language].fullscreen + "\"></a>" +
                             "<span>" + About._i18n[Language].text + "</span>"
                     + "</div>"
@@ -167,6 +170,8 @@ var About = {
                         + "<h1>" + About._i18n[Language].contribute_hof + "</h1>"
                         + "<h2>" + About._i18n[Language].contribute_hof_coders + "</h2>"
                         + About._haf().coders
+                        + "<h2>" + About._i18n[Language].contribute_hof_relooking + "</h2>"
+                        + About._haf().relooking
                         + "<h2>" + About._i18n[Language].contribute_hof_data + "</h2>"
                         + About._haf().data
                         + "<h2>" + About._i18n[Language].contribute_hof_test + "</h2>"

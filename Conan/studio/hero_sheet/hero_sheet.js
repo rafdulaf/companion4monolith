@@ -2,6 +2,8 @@ var HeroSheet = mergeObject(StudioItem, {
     name: 'hero',
     cls: 'HeroSheet',
     storage: Application + "_StudioHeroSheets",
+    _itemWidth: 604,
+    _itemHeight: 346.9,
     
     _i18n: {
         'fr': {
@@ -143,7 +145,7 @@ var HeroSheet = mergeObject(StudioItem, {
           return "<p class='subhint'>" + HeroSheet._i18n[Language].printHint + "</p>";
     },
     
-    _getDisplayItemsCode: function(withEditLink)
+    _getDisplayItemsCode: function(withEditLink, printPurpose)
     {
         var html = "";
 
@@ -164,7 +166,7 @@ var HeroSheet = mergeObject(StudioItem, {
                     suffix = "</label>";
                 }
 
-                html += prefix + "<div class='printoverflow'>" + HeroSheet._cardCode(cards[i]) + "</div>" + suffix;
+                html += prefix + "<div class='printoverflow'>" + HeroSheet._cardCode(cards[i], printPurpose) + "</div>" + suffix;
             }
         }
         else
@@ -176,14 +178,14 @@ var HeroSheet = mergeObject(StudioItem, {
         {
             for (var i in cards)
             {
-                html += "<div class='printoverflow back invisible' id='herosheet-back-" + i + "'>" + HeroSheet._cardCode(cards[i]) + "</div>";
+                html += "<div class='printoverflow back invisible' id='herosheet-back-" + i + "'>" + HeroSheet._cardCode(cards[i], printPurpose) + "</div>";
             }
         }
 
         return html;
     },
 
-    _cardCode: function(sheet) {
+    _cardCode: function(sheet, printPurpose) {
         var code = "<div class=\"herosheet sheet\">";
 
         code += "<picture class=\"background-l1\">"
@@ -193,7 +195,7 @@ var HeroSheet = mergeObject(StudioItem, {
 
         if (sheet.image)
         {
-            code += "<div class=\"image\"><img" + LazyImage + " src=\"" + sheet.image + "\" onload=\"this.style.minWidth = 0; this.style.opacity = 1;\" style=\"left: " + sheet.imagelocation.x + "%; top: " + sheet.imagelocation.y + "%; height: " + sheet.imagezoom + "%; transform: translate(0%, -50%) rotate(" + sheet.imagerotation + "deg)\"/></div>";
+            code += "<div class=\"image\"><img" + (!printPurpose ? LazyImage : "") + " src=\"" + sheet.image + "\" onload=\"this.style.minWidth = 0; this.style.opacity = 1;\" style=\"left: " + sheet.imagelocation.x + "%; top: " + sheet.imagelocation.y + "%; height: " + sheet.imagezoom + "%; transform: translate(0%, -50%) rotate(" + sheet.imagerotation + "deg)\"/></div>";
         }
 
         code += "<picture class=\"background-l3\">"
@@ -263,14 +265,15 @@ var HeroSheet = mergeObject(StudioItem, {
     _add: function(sheet, dlabel, actions)
     {
         Nav.dialog(dlabel,
-            "<div class=\"hscol\">"
+            "<div class=\"studiodialog\">"
+            + "<div class=\"hscol\">"
             + "<div class=\"sheet\">"
                 + "<h1>" + HeroSheet._i18n[Language].header1 + "</h1>"
                 + "<input type=\"hidden\" name=\"sheetpos\"/>"
                 + "<div class=\"field name\">"
                     + "<label for=\"hsname\">" + HeroSheet._i18n[Language].name + "</label>"
-                    + "<input id=\"hsname\" name=\"sheetname\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].namePh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
-                    + "<input id=\"hssubname\" name=\"sheetsubname\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].subnamePh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+                    + "<input id=\"hsname\" spellcheck='false' name=\"sheetname\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].namePh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+                    + "<input id=\"hssubname\" spellcheck='false' name=\"sheetsubname\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].subnamePh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
                 + "</div>"
                 + "<div class=\"field gems\">"
                     + "<label for=\"hsgems\">" + HeroSheet._i18n[Language].gems + "</label>"
@@ -338,25 +341,26 @@ var HeroSheet = mergeObject(StudioItem, {
                 + "<h1>" + HeroSheet._i18n[Language].header1bis + "</h1>"
                 + "<div class=\"field\">"
                     + "<label for=\"hsimage\">" + HeroSheet._i18n[Language].image + "</label>"
-                    + "<input id=\"hsimage\" name=\"sheetimage\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].imagePh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+                    + "<input id=\"hsimage\" name=\"sheetimage\" spellcheck='false' autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].imagePh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
                 + "</div>"
                 + "<div class=\"field imagelocation\">"
                     + "<label for=\"hsimagelocation\">" + HeroSheet._i18n[Language].imagelocation + "</label>"
                     + "<div><input id=\"hsimagelocation\" name=\"sheetimagelocation\" type=\"number\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].imagelocationPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"\"/></div>"
-                    + "<div><input id=\"shimagelocation2\" name=\"sheetimagelocation2\" type=\"number\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].imagelocationPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/></div>"
+                    + "<div><input id=\"hsimagelocation2\" name=\"sheetimagelocation2\" type=\"number\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].imagelocationPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/></div>"
                 + "</div>"
                 + "<div class=\"field imagezoom\">"
-                    + "<label for=\"shimagezoom\">" + HeroSheet._i18n[Language].imagezoom + "</label>"
-                    + "<input id=\"shimagezoom\" name=\"sheetimagezoom\" type=\"number\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].imagezoomPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+                    + "<label for=\"hsimagezoom\">" + HeroSheet._i18n[Language].imagezoom + "</label>"
+                    + "<input id=\"hsimagezoom\" name=\"sheetimagezoom\" type=\"number\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].imagezoomPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
                 + "</div>"
                 + "<div class=\"field imagerotation\">"
-                    + "<label for=\"shimagerotation\">" + HeroSheet._i18n[Language].imagerotation + "</label>"
-                    + "<input id=\"shimagerotation\" name=\"sheetimagerotation\" type=\"number\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].imagerotationPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+                    + "<label for=\"hsimagerotation\">" + HeroSheet._i18n[Language].imagerotation + "</label>"
+                    + "<input id=\"hsimagerotation\" name=\"sheetimagerotation\" type=\"number\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].imagerotationPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
                 + "</div>"
             + "</div>"
             + "<div class=\"sheet-preview\">"
                 + "<h1>" + HeroSheet._i18n[Language].header2 + "</h1>"
                 + "<div class=\"preview\"></div>"
+            + "</div>"
             + "</div>"
             + "</div>",
             null,
@@ -431,6 +435,8 @@ var HeroSheet = mergeObject(StudioItem, {
         HeroSheet._card2form(sheet);
 
         HeroSheet._preview();
+        
+        $("#hsname").focus();
     },
 
     _form2card: function()

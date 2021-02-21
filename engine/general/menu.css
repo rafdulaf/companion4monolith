@@ -34,7 +34,7 @@
   margin-bottom: 5px;
   position: relative;
   
-  background: #FFF;
+  background-color: var(--header-menu-color);
   border-radius: 3px;
   
   z-index: 1;
@@ -75,23 +75,27 @@
 }
 
 .menu > div label {
-    display: none;
-}
-
-.menu > div input:checked ~ label {
+    background-color: rgba(0,0,0,0);
+    transition: background-color 0.3s ease;
     position: absolute;
     display: block;
     top: 0;
-    height: 100vh;
     left: 0;
     width: 100vw;
+    height: 100vh;
     z-index: 0;
+    pointer-events: none;
+}
+
+.menu > div input:checked ~ label {
+    background-color: rgba(0,0,0,0.2);
+    pointer-events: unset;
 } 
 
 .menu > div input,
 .menu > div span
 {
-    top: 20px;
+    top: calc(10px + var(--header-padding));
     left: 20px;
 }
 
@@ -106,8 +110,8 @@
   top: 0;
   left: 0;
   box-sizing: border-box;
+  background-color: var(--menu-bg-color);
   
-  background: #ededed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -115,11 +119,28 @@
   transform-origin: 0% 0%;
   
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  overflow: auto;
+  
+  width: 300px;
+  height: 100vh;
+  padding: 125px 20px 50px 20px;
+  transform: translate(-100%, 0);
+}
+.menu > div > ul:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 45px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .menu > div > ul > li 
 {
-   margin-bottom: 5px; 
+   margin-bottom: 5px;
+   position: relative; 
 }
 .menu > div > ul > li.line {
     margin-top: 15px; 
@@ -129,12 +150,12 @@
 
 .menu > div > ul > li > a
 {
-  font-size: calc(var(--primary-size) * 0.95rem);
-  font-family: 'Primary';
+  font-size: calc(var(--secondary-size) * 1.51rem);
+  font-family: 'Secondary';
   text-transform: uppercase;
   display: block;
   text-decoration: none;
-  color: #232323;
+  color: var(--menu-color);
   
   transition: color 0.3s ease;
 }
@@ -143,25 +164,19 @@
   padding-right: 10px;
   width: 24px;
   display: inline-block;
-  text-align: center;    
+  text-align: center;   
+  font-size: 0.6em; 
 }
 .menu > div > ul > li > a:hover
 {
-  color: tomato;
+  color: var(--menu-active-color);
 }
 
-
-.menu > div > ul
-{
-  width: 300px;
-  height: 100vh;
-  padding: 125px 20px 50px 20px;
-  transform: translate(-100%, 0);
-}
 
 .menu > div input:checked ~ ul
 {
   transform: none;
+  box-shadow: 0 8px 10px -5px rgb(0 0 0 / 20%), 0 16px 24px 2px rgb(0 0 0 / 14%), 0 6px 30px 5px rgb(0 0 0 / 12%);
 }
 
 /* -------------------------------- */

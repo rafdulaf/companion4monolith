@@ -1,11 +1,9 @@
 #encyclopedia-tile {
     font-family: 'Primary';
-    overflow: auto;
     position: relative;
 }
 #encyclopedia-tile-wrapper {
-    margin-left: 156px;
-    text-align: center;
+    margin-left: var(--search-placeholder);
 }
 .encyclopedia-tile-tostudio::before {
     content: "\f591";
@@ -107,6 +105,12 @@ div.tile-wrapindetails[data-count]::after,
     background-color: #e64443;
     color: #ffffff;
     border-radius: 100%;
+}
+#encyclopedia-tile-wrapper a[data-count]::after {
+    right: 0;
+}
+#encyclopedia-tile-wrapper .tile.tokens.tokensOver .token {
+    left: -6rem;
 }
 div.tile-wrapindetails[data-count='1']::after,
 #encyclopedia-tile-wrapper a[data-count='1']::after {

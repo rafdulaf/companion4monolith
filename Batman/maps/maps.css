@@ -43,7 +43,7 @@
 .map-map-help .map-map-legend h1 {
     border-bottom: 1px solid #f2981a;
     margin: 0 -11px 10px;
-    background-color: #fff;
+    background-color: var(--body-bg-color);
 }
 
 .map-map-help .map-map-legend div {
@@ -67,8 +67,8 @@
     top: -7px;
     border: 7px solid transparent;
 }
-.map-map-help .map-map-legend h1 div::before { border-left: 7px solid #fff; left: 0; }
-.map-map-help .map-map-legend h1 div::after { border-right: 7px solid #fff; right: 0; }
+.map-map-help .map-map-legend h1 div::before { border-left: 7px solid var(--body-bg-color); left: 0; }
+.map-map-help .map-map-legend h1 div::after { border-right: 7px solid var(--body-bg-color); right: 0; }
 
 .map-map-help .map-map-legend > div {
     padding: 5px;

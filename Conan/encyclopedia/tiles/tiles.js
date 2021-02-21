@@ -52,7 +52,7 @@ var EncyclopediaTiles = {
                 },
                 filter: function(item, value)
                 {
-                    return item.name[Language] && Rules._deemphasize(item.name[Language]).indexOf(Rules._deemphasize(value)) != -1;
+                    return item.name[Language] && item.name[Language + '_deemphasized'].indexOf(Rules._deemphasize(value)) != -1;
                 }
             },
 
@@ -482,8 +482,10 @@ var EncyclopediaTiles = {
 
     init: function()
     {
-        $("#encyclopedia-tile").append(Encyclopedia.displaySearchEngine(EncyclopediaTiles._facets, "EncyclopediaTiles.updateDisplayTiles()", "et"));
-        $("#encyclopedia-tile").append("<div id='encyclopedia-tile-wrapper'></div>");
+        EncyclopediaTiles.debouncedUpdateDisplayTiles = $.debounce(250, EncyclopediaTiles.updateDisplayTiles);
+        Encyclopedia.displaySearchEngine("encyclopedia-tile", EncyclopediaTiles._facets, "EncyclopediaTiles.updateDisplayTiles()", "EncyclopediaTiles.debouncedUpdateDisplayTiles()", "et");
+        $("#encyclopedia-tile .search-wrapper").append("<div id='encyclopedia-tile-wrapper'></div>");
+        AutoZoom.autozoom("encyclopedia-tile-wrapper", 204, 308.9);
         EncyclopediaTiles.displayTiles();
     },
 

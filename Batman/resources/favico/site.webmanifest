@@ -28,8 +28,8 @@
             "type": "image/png"
         }        
     ],
-    "theme_color": "#3037ff",
-    "background_color": "#3037ff",
+    "theme_color": "#252525",
+    "background_color": "#252525",
     "display": "standalone",
     "android_package_name": "com.github.rafdulaf.companion4monolith.batman"
 }

@@ -24,18 +24,18 @@
 }
 
 .rules-viewer.zoom1  iframe {
-    width: calc(49vw - 9px);
+    width: calc(50vw - 3px);
     height: 69.75vw;
 }
 .rules-viewer.zoom1  iframe:first-of-type {
-    margin-left: 50vw;
+    margin-left: calc(50vw - 3px);
 }
 
 .rules-viewer.zoom2 iframe {
     display: inline-block;
     vertical-align: top;
     border-width: 0;
-    width: calc(100vw - 17px);
+    width: calc(100vw - 6px);
     height: 139.5vw;
 }
 
@@ -43,7 +43,7 @@
     display: inline-block;
     vertical-align: top;
     border-width: 0;
-    width: calc(200vw - 17px);
+    width: calc(200vw - 6px);
     height: 279vw;
 }
 

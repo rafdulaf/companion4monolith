@@ -1,6 +1,5 @@
 #hero {
     font-family: 'Primary';
-    overflow: auto;
     position: relative;
 }
 
@@ -31,46 +30,6 @@
     height: calc(600px / 1.75);
     font-size: 45px;
 }
-.printcards .sheet.herosheet {
-    width: 250px;
-    height: calc(250px / 1.75);
-    font-size: 18.75px;
-}
-@media screen and (max-width: 1480px) {
-    .sheet.herosheet {
-        width: 400px;
-        height: calc(400px / 1.75);
-        font-size: 30px;
-    }
-}
-@media screen and (max-width: 966px) {
-    .sheet.herosheet {
-        width: 350px;
-        height: calc(350px / 1.75);
-        font-size: 26.25px;
-    }
-}
-@media screen and (max-width: 866px) {
-    .sheet.herosheet {
-        width: 300px;
-        height: calc(300px / 1.75);
-        font-size: 22.5px;
-    }
-}
-@media screen and (max-width: 766px) {
-    .sheet.herosheet {
-        width: 250px;
-        height: calc(250px / 1.75);
-        font-size: 18.75px;
-    }
-}
-@media screen and (max-width: 664px) {
-    .sheet.herosheet {
-        width: 200px;
-        height: calc(200px / 1.75);
-        font-size: 15px;
-    }
-}
 
 @media print {
     .printcards .sheet.herosheet {
@@ -78,6 +37,9 @@
         width: 21cm;
         height: calc(21cm / 1.75);
         font-size: 1.575cm;
+        zoom: unset;
+        transform: unset;
+        transform-origin: unset;
     }
     .printcards.cut .sheet.herosheet {
         overflow: visible;
@@ -99,6 +61,7 @@
 .sheet.herosheet picture.background-l1 img,
 .sheet.herosheet picture.background-l3 img {
     width: 107%;
+    min-height: 50px; /* Bug to ensure visibility on mobile devices */
 }
 
 .sheet.herosheet div.image {
@@ -149,6 +112,7 @@
     bottom: 31%;
     text-align: right;
     font-size: 40%;
+    line-height: normal;
     color: #D42627;
     direction: ltr;
 }
@@ -163,7 +127,7 @@
 .sheet.herosheet div.skillline div.encumbrance_movement-2 {
     width: 4%;
     text-align: center;
-    padding-top: 2.9%;
+    padding-top: 2.7%;
     margin-left: 0.5%;
 }
 .sheet.herosheet div.skillline div.encumbrance_movement-1 {
@@ -256,7 +220,9 @@
 
 
 
-
+.dialog .sheet {
+    margin-bottom: 10px;
+}
 .dialog .sheet .field {
     padding: 0 20px 5px 20px;
     position: relative;
@@ -278,9 +244,7 @@
 }
 .dialog .sheet .field input,
 .dialog .sheet .field select {
-    border: none;
     width: 100%;
-    outline: none;
 }
 
 .dialog .sheet .field input#hsname,
@@ -290,10 +254,12 @@
    text-align: right;
    color: #000000;
    width: 60%;
+   height: unset;
    padding: 0 3px 0 0;
 }
 .dialog .sheet .field input#hssubname {
    font-size: 12px;
+   line-height: 19px;
    padding: 0 0 0 3px;
    text-align: left;
    width: 40%;
@@ -311,6 +277,7 @@
    font-family: "Motrg";
    text-align: center;
    width: 54px;
+   height: unset;
    color: #FFFFFF;
    background-color: #000000;
 }
@@ -325,9 +292,9 @@
 .dialog .sheet .field input#hsencumbrance { 
    font-size: 36px;
    font-family: "Motrg";
-   text-align: left;
-   padding-left: 8px;
-   width: 54px;
+   text-align: center;
+   width: 33px;
+   height: unset;
    color: #FFFFFF;
    background-repeat: no-repeat;
    background-position: left;
@@ -354,16 +321,16 @@
     top: -26px;
     text-align: right;
     padding-right: calc(35% - 59px);
-    padding-top: 13px;
+    padding-top: 21px;
 }
 .dialog .sheet .field input#hsencumbrancemov1, 
 .dialog .sheet .field input#hsencumbrancemov2 {
     width: 33px;
+    height: 31px;
     color: #D42627;
     font-size: 36px;
     font-family: "Motrg";
     text-align: center;
-    color: #D42627;
     background-color: #000;
     background-color: transparent;
 }
@@ -385,6 +352,7 @@
     font-family: "Motrg";
     font-size: 36px;
     width: 34px;
+    height: unset;
     color: #D42627;
     background-color: transparent;
     position: absolute;
@@ -395,11 +363,13 @@
     font-family: "Motrg";
     font-size: 55px;
     width: 42px;
+    height: 52px;
     color: #FFFF;
     background-color: transparent;
     position: absolute;
-    top: 48px;
-    left: calc(50% + 27px);
+    top: 58px;
+    left: calc(50% + 14px);
+    text-align: center;
 }
 .dialog .sheet .field.caracs .carac.melee { background-image: url(img/d_melee.png); }
 .dialog .sheet .field.caracs .carac.ranged { background-image: url(img/d_ranged.png); }
@@ -529,17 +499,20 @@
 }
 .dialog .sheet .field.imagezoom:after,
 .dialog .sheet .field.imagelocation div:after {
-    margin-left: 3px;
+    position: relative;
+    left: -12px;
     content: "%";
 }
 .dialog .sheet .field.imagerotation:after {
-    margin-left: 3px;
+    position: relative;
+    left: -12px;
     content: "°";
 }
 .dialog .sheet .field.imagelocation input,
 .dialog .sheet .field.imagezoom input,
 .dialog .sheet .field.imagerotation input {
-    width: 34px;
+    width: 49px;
+    padding-right: 15px;
     text-align: right;
 }
 .dialog .sheet .field.imagelocation, .dialog .sheet .field.imagezoom
@@ -553,17 +526,8 @@
     vertical-align: top;
 }
 
-.dialog .sheet .field input#shimage,
-.dialog .sheet .field input#shimagelocation,
-.dialog .sheet .field input#shimagelocation2,
-.dialog .sheet .field input#shimagezoom,
-.dialog .sheet .field input#shimagerotation {
-   font-size: 22px;
-   line-height: 36px;
-   font-family: 'Secondary';
-}
 
-.dialog .sheet input#shimage {
+.dialog .sheet input#hsimage {
     padding-left: 10px;
 }
 
@@ -615,6 +579,36 @@
     }
 }
 
+@media screen and (max-width: 639px) {
+    .dialog .sheet.herosheet {
+        zoom: 0.67;
+    }
+    
+    .ff .dialog .sheet.herosheet {
+        transform-origin: top left;
+        transform: scale(0.67);
+    } 
+}
+@media screen and (max-width: 444px) {
+    .dialog .sheet.herosheet {
+        zoom: 0.53;
+    }
+    
+    .ff .dialog .sheet.herosheet {
+        transform-origin: top left;
+        transform: scale(0.53);
+    } 
+}
+
+.ff .printcards label[for^=herosheet-] .printoverflow {
+    margin-right: -303px;
+    margin-bottom: -181.75px;
+}
+
+#hero .inside > a {
+    display: inline-block;
+    vertical-align: top;
+}
 
 #hero .nocards {
     background-image: url('img/nocard.png');

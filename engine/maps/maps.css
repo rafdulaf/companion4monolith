@@ -54,6 +54,7 @@
 	padding: 5px;
 	box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
 	margin: 5px;
+    background-color: #fff;
 }
 .map-index > ul > li > a {
 	display: block;
@@ -89,9 +90,9 @@
     font-family: 'Secondary';
 }
 
-.map-card a, .map-card a:link, .map-card a:hover, .map-card a:visited {
-    color: black;	
-	text-decoration: none;
+.map-card a.map-back, .map-card a.map-back:link, .map-card a.map-back:hover, .map-card a.map-back:active, .map-card a.map-back:focus, .map-card a.map-back:visited {
+    color: var(--header-color);   
+    text-decoration: none;
 }
 .map-index a:hover {
 	color: #FFFFFF;
