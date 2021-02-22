@@ -9,11 +9,11 @@
             },
             "column": "left"
         }, {
-            "id": "regional",
+            "id": "thematic",
             "text": {
-                "fr": "Extensions régionales",
-                "en": "Regional expansions",
-                "it": "Espansioni geografiche"
+                "fr": "Extensions thématiques",
+                "en": "Thematic expansions",
+                "it": "TODO_TRANSLATE"
             },
             "column": "left"
         }, {
@@ -40,7 +40,7 @@
                 "en": "Artists expansions",
                 "it": "Espansioni VIP"
             },
-            "column": "left"
+            "column": "right"
         }, {
             "id": "decoration",
             "text": {
@@ -79,21 +79,21 @@
             "id": "stretchgoal",
             "type": "corebox",
             "title": {
-                "fr": "\"Barbarian\" Boîte de récompenses",
-                "en": "\"Barbarian\" Stretch goals box",
+                "fr": "Boîte de récompenses \"Barbarian\" (2015)",
+                "en": "\"Barbarian\" Stretch goals box (2015)",
                 "it": "TODO_TRANSLATE"
             },
             "short": {
-                "fr": "Boîte Barbarian",
-                "en": "Barbarian box",
+                "fr": "Boîte \"Barbarian\"",
+                "en": "\"Barbarian\" box",
                 "it": "TODO_TRANSLATE"
             }
         }, {
             "id": "king",
             "type": "corebox",
             "title": {
-                "fr": "\"King\" Contenu exclusif",
-                "en": "\"King\" Exclusive content",
+                "fr": "Contenu \"King\" exclusif",
+                "en": "Exclusive King content",
                 "it": "TODO_TRANSLATE"
             },
             "short": {
@@ -105,10 +105,10 @@
 
         {
             "id": "stygia",
-            "type": "regional",
+            "type": "thematic",
             "title": {
-                "fr": "Extension Stygie",
-                "en": "Stygia expansion",
+                "fr": "Stygie",
+                "en": "Stygia",
                 "it": "Stygia"
             },
             "short": {
@@ -118,10 +118,10 @@
             }
         }, {
             "id": "nordheim",
-            "type": "regional",
+            "type": "thematic",
             "title": {
-                "fr": "Extension Nordheim",
-                "en": "Nordheim expansion",
+                "fr": "Nordheim",
+                "en": "Nordheim",
                 "it": "Nordheim"
             },
             "short": {
@@ -131,10 +131,10 @@
             }
         }, {
             "id": "khitai",
-            "type": "regional",
+            "type": "thematic",
             "title": {
-                "fr": "Extension Khitaï",
-                "en": "Khitaï expansion",
+                "fr": "Khitaï",
+                "en": "Khitaï",
                 "it": "Khitai"
             },
             "short": {
@@ -318,19 +318,6 @@
         },
 
         {
-            "id": "xcbox",
-            "type": "artists",
-            "title": {
-                "fr": "Xavier Colette Box",
-                "en": "Xavier Colette Box",
-                "it": "Xavier Colette Box"
-            },
-            "short": {
-                "fr": "Xavier Colette Box",
-                "en": "Xavier Colette Box",
-                "it": "Xavier Colette Box"
-            }
-        }, {
             "id": "bbox",
             "type": "artists",
             "title": {
@@ -355,6 +342,19 @@
                 "fr": "Paolo Parente Box",
                 "en": "Paolo Parente Box",
                 "it": "Paolo Parente Box"
+            }
+        }, {
+            "id": "xcbox",
+            "type": "artists",
+            "title": {
+                "fr": "Xavier Colette Box",
+                "en": "Xavier Colette Box",
+                "it": "Xavier Colette Box"
+            },
+            "short": {
+                "fr": "Xavier Colette Box",
+                "en": "Xavier Colette Box",
+                "it": "Xavier Colette Box"
             }
         },
 
