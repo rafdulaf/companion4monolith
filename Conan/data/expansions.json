@@ -23,7 +23,8 @@
                 "en": "Simple expansions",
                 "it": "Espansioni base"
             },
-            "column": "right"
+            "column": "right",
+            "sort": true
         }, {
             "id": "books",
             "text": {

@@ -285,9 +285,17 @@ var About = {
             var localS = "<fieldset><legend>" + expansionType.text[Language] + "</legend>";
             var nbChoice = 0;
 
-            for (var j in Encyclopedia.expansions.list)
+            var list = Encyclopedia.expansions.list;
+            if (expansionType.sort)
             {
-                var expansion = Encyclopedia.expansions.list[j];
+                list = Encyclopedia.expansions.list.slice().sort(function (a, b) {
+                    return a.title[Language].toLowerCase().localeCompare(b.title[Language].toLowerCase());
+                });
+            }
+            
+            for (var j in list)
+            {
+                var expansion = list[j];
                 if (expansion.type == expansionType.id)
                 {
                     localS += "<div>"
