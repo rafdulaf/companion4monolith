@@ -321,7 +321,7 @@ var EncyclopediaTokens = {
         {
             var token = tokens[e];
 
-            var origins = Encyclopedia._removeExtraExpansion(token.origins.slice());
+            var origins = token.origins.slice();
             for (var i in origins)
             {
                 var origin = origins[i];

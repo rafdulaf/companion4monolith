@@ -6,35 +6,35 @@
                 "fr": "Boîte de jeu",
                 "en": "Game box"
             },
-            "single": true
-        }, {
-            "id": "season2-picking-zone",
-            "text": {
-                "fr": "Picking zone",
-                "en": "Picking zone"
-            },
-            "single": false
+            "column": "left"
         }, {
             "id": "season1-expansions",
             "text": {
                 "fr": "Extensions de la saison 1",
                 "en": "Season 1 Expansions"
             },
-            "single": false
+            "column": "left"
         }, {
             "id": "season2-expansions",
             "text": {
                 "fr": "Extensions de la saison 2",
                 "en": "Season 2 Expansions"
             },
-            "single": false
+            "column": "left"
         }, {
             "id": "season2-add-on",
             "text": {
                 "fr": "Add-ons de la saison 2",
                 "en": "Season 2 add-ons"
             },
-            "single": false
+            "column": "left"
+        }, {
+            "id": "season2-picking-zone",
+            "text": {
+                "fr": "Picking zone",
+                "en": "Picking zone"
+            },
+            "column": "right"
         }
     ],
 
@@ -49,7 +49,8 @@
             "short": {
                 "fr": "Boîte de base",
                 "en": "Core box"
-            }
+            },
+            "mandatory": true
         }, 
         
          {

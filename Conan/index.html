@@ -49,6 +49,19 @@
             		localStorage.removeItem(id);
            		}
             });
+           	var oldExtensionValue = JSON.parse(localStorage.getItem("Conan_Extensions"));
+            if (oldExtensionValue['custom-box'])
+           	{
+                switch (oldExtensionValue['custom-box'])
+                {
+                    case 'king': oldExtensionValue.king = 'true';
+                    case 'stretchgoal': oldExtensionValue.stretchgoal = 'true';
+                    case 'corebox': oldExtensionValue.corebox = 'true';
+                }
+                delete oldExtensionValue['custom-box'];
+                
+                localStorage.setItem("Conan_Extensions", JSON.stringify(oldExtensionValue));
+           	}
         </script>
         <script src="../engine/general/utils.0.17.js"></script>
         

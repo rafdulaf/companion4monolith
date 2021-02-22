@@ -130,44 +130,6 @@ var Encyclopedia = {
         return "<p>" + Encyclopedia._i18n[Language].copyright + "</p>"
     },
     
-    _removeExtraExpansion: function(origins)
-    {
-        for (var i in Encyclopedia.expansions.types)
-        {
-            var type = Encyclopedia.expansions.types[i];
-            if (type.single)
-            {
-                var values = [];
-                for (var j in Encyclopedia.expansions.list)
-                {
-                    var expansion = Encyclopedia.expansions.list[j];
-                    if (expansion.type == type.id)
-                    {
-                        values.push(expansion.id);
-                    }
-                }
-
-                var neworigins = [];
-                for (var l=0; l < origins.length; l++)
-                {
-                    var origin = origins[l];
-                    for (var k in values)
-                    {
-                        var value = values[k];
-                        if (origin == value)
-                        {
-                            l += values.length - 1 - k;
-                            break;
-                        }
-                    }
-                    neworigins.push(origin);
-                }
-                origins = neworigins;
-            }
-        }
-        return origins;
-    },
-    
     _getOrigin: function(origin)
     {
         for (var j in Encyclopedia.expansions.list)

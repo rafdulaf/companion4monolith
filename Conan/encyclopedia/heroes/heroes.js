@@ -405,7 +405,7 @@ var EncyclopediaHeroes = {
         var sheet = EncyclopediaHeroes._findHeroById(id);
 
         var originString = "";
-        var origins = Encyclopedia._removeExtraExpansion(sheet.origins.slice());
+        var origins = sheet.origins.slice();
         for (var i in origins)
         {
             if (originString) originString += " " + EncyclopediaHeroes._i18n[Language].fromAnd + " ";

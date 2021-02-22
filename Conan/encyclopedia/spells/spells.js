@@ -527,7 +527,7 @@ var EncyclopediaSpells = {
         {
             var spell = spells[e];
 
-            var origins = Encyclopedia._removeExtraExpansion(spell.origins.slice());
+            var origins = spell.origins.slice();
             for (var i in origins)
             {
                 var origin = origins[i];

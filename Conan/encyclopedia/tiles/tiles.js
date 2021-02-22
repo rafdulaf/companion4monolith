@@ -652,7 +652,7 @@ var EncyclopediaTiles = {
         {
             var tile = tiles[e];
 
-            var origins = Encyclopedia._removeExtraExpansion(tile.origins.slice());
+            var origins = tile.origins.slice();
             for (var i in origins)
             {
                 var origin = origins[i];

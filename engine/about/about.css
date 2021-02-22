@@ -96,10 +96,9 @@
 }
 
 @media screen and (min-width: 600px) {
-    .custom fieldset {
+    .custom .col {
         vertical-align: top;
         width: 48%;
-        float: left;
         display: inline-block;
     }
 }

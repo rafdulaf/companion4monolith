@@ -10,7 +10,7 @@
                     "it": "Villaggio Pitto"
                 },
                 "version": "1.0",
-                "origins": ["corebox", "stretchgoal", "king"],
+                "origins": ["corebox"],
                 "copyright": "Monolith",
                 "rules": [
                     {
@@ -278,7 +278,7 @@
                     "it": "Locanda"
                 },
                 "version": "1.0",
-                "origins": ["corebox", "stretchgoal", "king"],
+                "origins": ["corebox"],
                 "copyright": "Monolith",
                 "rules": [
                     {
@@ -594,7 +594,7 @@
                     "it": "Navi"
                 },
                 "version": "1.0",
-                "origins": ["corebox", "stretchgoal", "king"],
+                "origins": ["corebox"],
                 "copyright": "Monolith",
                 "rules": [
                     {
@@ -946,7 +946,7 @@
                     "it": "Forte abbandonato"
                 },
                 "version": "1.0",
-                "origins": ["corebox", "stretchgoal", "king"],
+                "origins": ["corebox"],
                 "copyright": "Monolith",
                 "rules": [
                     {
@@ -1250,7 +1250,7 @@
                     "it": "Cittadella"
                 },
                 "version": "1.0",
-                "origins": ["stretchgoal", "king"],
+                "origins": ["stretchgoal"],
                 "copyright": "Monolith",
                 "rules": [
                     {
@@ -1500,7 +1500,7 @@
                     "it": "Paludi"
                 },
                 "version": "1.0",
-                "origins": ["stretchgoal", "king"],
+                "origins": ["stretchgoal"],
                 "copyright": "Monolith",
                 "rules": [
                     {

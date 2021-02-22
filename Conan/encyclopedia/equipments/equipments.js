@@ -452,7 +452,7 @@ var EncyclopediaEquipments = {
         {
             var equipment = equipments[e];
             
-            var origins = Encyclopedia._removeExtraExpansion(equipment.origins.slice());
+            var origins = equipment.origins.slice();
             for (var i in origins)
             {
                 var origin = origins[i];

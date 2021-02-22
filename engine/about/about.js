@@ -276,7 +276,8 @@ var About = {
     {
         $("nav.menu input")[0].checked = false;
 
-        var s = "";
+        var leftS = "";
+        var rightS = "";
         for (var i in Encyclopedia.expansions.types)
         {
             var expansionType = Encyclopedia.expansions.types[i];
@@ -284,47 +285,29 @@ var About = {
             var localS = "<fieldset><legend>" + expansionType.text[Language] + "</legend>";
             var nbChoice = 0;
 
-            if (expansionType.single)
-            {
-                localS += "<select id=\"" + expansionType.id + "\" name=\"" + expansionType.id + "\">";
-            }
-
             for (var j in Encyclopedia.expansions.list)
             {
                 var expansion = Encyclopedia.expansions.list[j];
                 if (expansion.type == expansionType.id)
                 {
-                    nbChoice++;
-                    if (expansionType.single)
-                    {
-                        localS += "<option value=\"" + expansion.id + "\">" + expansion.title[Language] + "</option>"
-                    }
-                    else
-                    {
-                        localS += "<div>"
-                           +    "<input type=\"checkbox\" name=\"" + expansion.id + "\"\ id=\"" + expansion.id + "\">"
-                           +    "<label for=\"" + expansion.id + "\">"
-                           +        expansion.title[Language]
-                           +    "</label>"
-                           + "</div>";
-                    }
+                    localS += "<div>"
+                       +    "<input type=\"checkbox\" name=\"" + expansion.id + "\"\ id=\"" + expansion.id + "\"" + (expansion.mandatory ? " checked='checked' disabled='disabled'": "") + ">"
+                       +    "<label for=\"" + expansion.id + "\">"
+                       +        expansion.title[Language]
+                       +    "</label>"
+                       + "</div>";
                 }
-            }
-
-            if (expansionType.single)
-            {
-                localS += "</select>";
             }
 
             localS += "</fieldset>";
             
-            if (!expansionType.single || nbChoice > 1)
+            if (expansionType.column !== "right")
             {
-                s += localS;
+                leftS += localS;
             }
             else
             {
-                s += "<div style='position:absolute; top: -10000px; left: -10000px;'>" + localS + "</div>";
+                rightS += localS
             }
         }
 
@@ -332,7 +315,12 @@ var About = {
             "<div class=\"custom\">"
             +       "<div>" + About._i18n[Language].custom_text + "</div>"
             +       "<div class=\"custom-wrap\">"
-            +           s
+            +            "<div class=\"col col-left\">"
+            +                leftS
+            +            "</div>"
+            +            "<div class=\"col col-right\">"
+            +                rightS
+            +            "</div>"
             +       "</div>"
             + "</div>",
 
@@ -341,16 +329,9 @@ var About = {
 
                 // Save
                 Extensions = {};
-                $(".custom *").each(function (i) {
+                $(".custom input").each(function (i) {
                     var $this = $(this);
-                    if ($this.is('select'))
-                    {
-                        Extensions[this.name] = this.value;
-                    }
-                    else if ($this.is('input'))
-                    {
-                        Extensions[this.name] = this.checked ? true : false;
-                    }
+                    Extensions[this.name] = this.checked ? true : false;
                 });
 
                 localStorage.setItem(Application + "_Extensions", JSON.stringify(Extensions));
@@ -385,19 +366,12 @@ var About = {
         {
             $(".custom *[name=" + i + "]").each(function (i) {
                 var $this = $(this);
-                if ($this.is('select'))
-                {
-                    this.value = Extensions[this.name];
-                }
-                else if ($this.is('input'))
-                {
-                    this.checked = Extensions[this.name];
-                }
+                this.checked = Extensions[this.name];
             });
         }
 
         var display = false;
-        $(".custom input, .custom select").on('change', function() {
+        $(".custom input").on('change', function() {
             if (!display)
             {
                 About.warnToast(About._i18n[Language].custom_reload);
@@ -411,22 +385,12 @@ var About = {
         for (var i in Encyclopedia.expansions.types)
         {
             var type = Encyclopedia.expansions.types[i];
-            if (type.single)
+            for (var j in origins)
             {
-                if (origins.indexOf(Extensions[type.id]) != -1)
+                var origin = origins[j];
+                if (Extensions[origin])
                 {
                     return true;
-                }
-            }
-            else
-            {
-                for (var j in origins)
-                {
-                    var origin = origins[j];
-                    if (Extensions[origin])
-                    {
-                        return true;
-                    }
                 }
             }
         }

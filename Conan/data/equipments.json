@@ -16,7 +16,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/battle_axe.png",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox"]
         },
 
         {
@@ -35,7 +35,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/bossonian_bow.png",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox"]
         },
 
         {
@@ -54,7 +54,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/dagger_1.png",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox"]
         },
 
         {
@@ -73,7 +73,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/dagger_2.png",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox"]
         },
 
         {
@@ -92,7 +92,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/conans_sword_1.png",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox"]
         },
 
         {
@@ -130,7 +130,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/crossbow.png",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox"]
         },
 
         {
@@ -149,7 +149,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/explosive_orb.png",
-            "origins": ["corebox", "stretchgoal", "king"],
+            "origins": ["corebox"],
 
             "count": 3
         },
@@ -170,7 +170,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/explosive_orb.png",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -189,7 +189,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/halberd.png",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox"]
         },
 
         {
@@ -208,7 +208,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/javelin.png",
-            "origins": ["corebox", "stretchgoal", "king"],
+            "origins": ["corebox"],
 
             "count": 2
         },
@@ -229,7 +229,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/kris.png",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox"]
         },
 
         {
@@ -248,7 +248,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/ornamental_spear.png",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox"]
         },
 
         {
@@ -267,7 +267,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/parrying_dagger_1.png",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox"]
         },
 
         {
@@ -305,7 +305,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/sword.png",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox"]
         },
 
         {
@@ -362,7 +362,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/throwing_knives.png",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox"]
         },
 
         {
@@ -381,7 +381,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/tribal_mace.png",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox"]
         },
 
         {
@@ -400,7 +400,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/yuetshi_knife.png",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox"]
         },
 
         {
@@ -419,7 +419,7 @@
             "passive": { "0": "orange", "1": "none" },
 
             "image": "data/equipments/img/chain_mail.png",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox"]
         },
 
         {
@@ -438,7 +438,7 @@
             "passive": { "0": "yellow", "1": "none" },
 
             "image": "data/equipments/img/leather_armor.png",
-            "origins": ["corebox", "stretchgoal", "king"],
+            "origins": ["corebox"],
 
             "count": 2
         },
@@ -499,7 +499,7 @@
             "passive": { "0": "red", "1": "none" },
 
             "image": "data/equipments/img/scale_mail.png",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox"]
         },
 
         {
@@ -518,7 +518,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/buckler.png",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox"]
         },
 
         {
@@ -537,7 +537,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/shield.png",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox"]
         },
 
         {
@@ -556,7 +556,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/tribal_shield.png",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox"]
         },
 
         {
@@ -575,7 +575,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/life_potion.png",
-            "origins": ["corebox", "stretchgoal", "king"],
+            "origins": ["corebox"],
 
             "count": 3
         },
@@ -596,7 +596,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/life_potion.png",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -636,7 +636,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/empty_chest_1.png",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox"]
         },
 
         {
@@ -655,7 +655,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/empty_chest_2.png",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox"]
         },
 
         {
@@ -673,7 +673,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/key.png",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox"]
         },
 
         {
@@ -692,7 +692,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/pictish_fetish.png",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox"]
         },
 
         {
@@ -711,7 +711,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/shamans_staff.png",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox"]
         },
 
         {
@@ -730,7 +730,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/sorcerers_scepter.png",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox"]
         },
 
         {
@@ -749,7 +749,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/spellbook.png",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox"]
         },
 
         {
@@ -768,7 +768,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/stygian_artifact.png",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox"]
         },
 
         {
@@ -787,7 +787,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/tools.png",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox"]
         },
 
         {
@@ -806,7 +806,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/xuthal_crown.png",
-            "origins": ["corebox", "stretchgoal", "king"],
+            "origins": ["corebox"],
 
             "count": 2
         },
@@ -827,7 +827,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/axe.png",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -846,7 +846,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/mitras_mace.png",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -865,7 +865,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/pirate_saber.png",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -884,7 +884,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/sacrificial_dagger.png",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -903,7 +903,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/stygian_scepter.png",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -922,7 +922,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/turanian_sword.png",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -941,7 +941,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/two_handed_sword.png",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -960,7 +960,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/zingaran_bow.png",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -979,7 +979,7 @@
             "passive": { "0": "yellowreroll", "1": "none" },
 
             "image": "data/equipments/img/zingaran_breastplate.png",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -998,7 +998,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/black_staff.png",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -1017,7 +1017,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/mitras_staff.png",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -1036,7 +1036,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/pictish_drink.png",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "count": 2
         },
@@ -1078,7 +1078,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/cape.png",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -1097,7 +1097,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/censer.png",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -1116,7 +1116,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/elixir.png",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -1135,7 +1135,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/heart_of_ahriman.png",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -1154,7 +1154,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/hyrkanian_mirror.png",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -1173,7 +1173,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/idol_of_yag-kosha.png",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -1192,7 +1192,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/phial.png",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -1211,7 +1211,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/potion.png",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -1230,7 +1230,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/ring.png",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -1249,7 +1249,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/sacred_treasure_1.png",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -1268,7 +1268,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/sacred_treasure_2.png",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -1287,7 +1287,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/sacred_treasure_3.png",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -1306,7 +1306,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/unguent.png",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -1325,7 +1325,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": null,
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -1344,7 +1344,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": null,
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -1363,7 +1363,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": null,
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -1382,7 +1382,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": null,
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -1401,7 +1401,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": null,
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -1420,7 +1420,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/a.png",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -1439,7 +1439,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/b.png",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -1458,7 +1458,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/c.png",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -1477,7 +1477,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/d.png",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -1496,7 +1496,7 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/e.png",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {

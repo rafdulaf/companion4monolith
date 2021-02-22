@@ -493,7 +493,7 @@ var EncyclopediaModels = {
         {
             var model = models[e];
 
-            var origins = Encyclopedia._removeExtraExpansion(model.origins.slice());
+            var origins = model.origins.slice();
             for (var i in origins)
             {
                 var origin = origins[i];

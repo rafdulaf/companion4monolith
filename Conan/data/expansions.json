@@ -1,13 +1,13 @@
 {
     "types": [
         {
-            "id": "custom-box",
+            "id": "corebox",
             "text": {
                 "fr": "Boîte de jeu",
                 "en": "Game box",
                 "it": "Gioco base"
             },
-            "single": true
+            "column": "left"
         }, {
             "id": "regional",
             "text": {
@@ -15,7 +15,7 @@
                 "en": "Regional expansions",
                 "it": "Espansioni geografiche"
             },
-            "single": false
+            "column": "left"
         }, {
             "id": "other",
             "text": {
@@ -23,7 +23,7 @@
                 "en": "Simple expansions",
                 "it": "Espansioni base"
             },
-            "single": false
+            "column": "right"
         }, {
             "id": "books",
             "text": {
@@ -31,7 +31,7 @@
                 "en": "Books",
                 "it": "Libri"
             },
-            "single": false
+            "column": "left"
         }, {
             "id": "artists",
             "text": {
@@ -39,7 +39,7 @@
                 "en": "Artists expansions",
                 "it": "Espansioni VIP"
             },
-            "single": false
+            "column": "left"
         }, {
             "id": "decoration",
             "text": {
@@ -47,7 +47,7 @@
                 "en": "Scenery",
                 "it": "Accessori"
             },
-            "single": false
+            "column": "left"
         }, {
             "id": "misc",
             "text": {
@@ -55,14 +55,14 @@
                 "en": "Miscellaneous",
                 "it": "Altre"
             },
-            "single": false
+            "column": "right"
         }
     ],
 
     "list": [
         {
             "id": "corebox",
-            "type": "custom-box",
+            "type": "corebox",
             "title": {
                 "fr": "Boîte de base",
                 "en": "Core box",
@@ -72,32 +72,33 @@
                 "fr": "Boîte de base",
                 "en": "Core box",
                 "it": "Gioco base"
-            }
+            },
+            "mandatory": true
         }, {
             "id": "stretchgoal",
-            "type": "custom-box",
+            "type": "corebox",
             "title": {
-                "fr": "Boîte de base étendue \"Barbarian\"",
-                "en": "\"Barbarian\" expanded core box",
-                "it": "\"Barbarian\" espande gioco base"
+                "fr": "\"Barbarian\" Boîte de récompenses",
+                "en": "\"Barbarian\" Stretch goals box",
+                "it": "TODO_TRANSLATE"
             },
             "short": {
                 "fr": "Boîte Barbarian",
                 "en": "Barbarian box",
-                "it": "Barbarian box"
+                "it": "TODO_TRANSLATE"
             }
         }, {
             "id": "king",
-            "type": "custom-box",
+            "type": "corebox",
             "title": {
-                "fr": "Boîte de base étendue \"King\"",
-                "en": "\"King\" expanded core box",
-                "it": "\"King\" espande gioco base"
+                "fr": "\"King\" Contenu exclusif",
+                "en": "\"King\" Exclusive content",
+                "it": "TODO_TRANSLATE"
             },
             "short": {
-                "fr": "Boîte King",
-                "en": "King box",
-                "it": "King box"
+                "fr": "Contenu King",
+                "en": "King content",
+                "it": "TODO_TRANSLATE"
             }
         },
 
