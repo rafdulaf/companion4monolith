@@ -44,12 +44,12 @@ var EncyclopediaHeroes = {
             'fromAnd': "<br/>e",
             'skill': "Abilità:",
             'story': "Storia:",
-            'class': "Classe in modalità cooperativa:",
+            'class': "Classe in modalità cooperativa:TODO_TRANSLATE",
             'class-warrior': "Guerriero",
             'class-rogue': "Ladro",
             'class-sorcerer': "Mago",
             'class-mercenary': "Mercenario",
-            'class-nr': " (sconsigliato per motivi tematici o per la loro potenzialità di sbilanciare il gioco)"
+            'class-nr': " (sconsigliato per motivi tematici o per la loro potenzialità di sbilanciare il gioco)TODO_TRANSLATE"
         }
     },
 
