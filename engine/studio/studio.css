@@ -27,13 +27,14 @@
     margin-top: 0.5em;
     text-align: left;
     font-family: 'Primary';
-    font-size: 16px;
+    font-size: calc(var(--primary-size) * 1rem);
     vertical-align: top;
 }
 
 .dialog .printcards .print { text-align: center; margin: 20px; }
 .dialog .printcards .print button {
     font-family: 'Primary';
+    font-size: calc(var(--primary-size) * 0.8rem);
     padding: 5px 15px;
     background-color: #3f3f3f;
     color: #FFF;
@@ -57,22 +58,10 @@
             margin-right: 0%;
     }
     .dialog .printcards { text-align: center }
-    .dialog .printcards input[name=equipment] + label { display: none; }
-    .dialog .printcards input[name=equipment]:checked + label { display: inline-block; }    
-    .dialog .printcards input[name=equipment]:checked + label:before,
-    .dialog .printcards input[name=equipment]:checked + label:after,
-    .dialog .printcards input[name=spell] + label { display: none; }
-    .dialog .printcards input[name=spell]:checked + label { display: inline-block; }    
-    .dialog .printcards input[name=spell]:checked + label:before,
-    .dialog .printcards input[name=spell]:checked + label:after,
-    .dialog .printcards input[name=herosheet] + label { display: none; }
-    .dialog .printcards input[name=herosheet]:checked + label { display: inline-block; }    
-    .dialog .printcards input[name=herosheet]:checked + label:before,
-    .dialog .printcards input[name=herosheet]:checked + label:after,
-    .dialog .printcards input[name=tile] + label { display: none; }
-    .dialog .printcards input[name=tile]:checked + label { display: inline-block; }    
-    .dialog .printcards input[name=tile]:checked + label:before,
-    .dialog .printcards input[name=tile]:checked + label:after,
+    .dialog .printcards input[name] + label { display: none; }
+    .dialog .printcards input[name]:checked + label { display: inline-block; }    
+    .dialog .printcards input[name]:checked + label:before,
+    .dialog .printcards input[name]:checked + label:after,
     .dialog .dialog-header,
     .dialog .printcards h1,
     .dialog .printcards .hint,

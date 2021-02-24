@@ -6,7 +6,6 @@
         "maps/maps.css",
         "rules/rules.css",
         
-        "encyclopedia/encyclopedia.css",
         "encyclopedia/equipments/equipments.css",
         "encyclopedia/spells/spells.css",
         "encyclopedia/heroes/heroes.css",
@@ -14,7 +13,6 @@
         "encyclopedia/tokens/tokens.css",
         "encyclopedia/models/models.css",
         
-        "studio/studio.css",
         "studio/card_equipment/card_equipment.css",
         "studio/card_spell/card_spell.css",
         "studio/hero_sheet/hero_sheet.css",
@@ -24,6 +22,9 @@
         "general/default.js",
         "about/about.js",
         "maps/maps.js",
+
+        "rules/rules.js",
+        
         "encyclopedia/encyclopedia.js",
         "encyclopedia/equipments/equipments.js",
         "encyclopedia/spells/spells.js",
@@ -31,7 +32,7 @@
         "encyclopedia/tiles/tiles.js",
         "encyclopedia/tokens/tokens.js",
         "encyclopedia/models/models.js",
-        "rules/rules.js",
+
         "studio/studio.js",
         "studio/card_equipment/card_equipment.js",
         "studio/card_spell/card_spell.js",

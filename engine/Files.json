@@ -12,7 +12,10 @@
         "tutorial/tutorial.css",
         "maps/maps.css",
         "rules/viewer.css",
-        "rules/rules.css"
+        "rules/rules.css",
+        
+        "encyclopedia/encyclopedia.css",
+        "studio/studio.css"
     ],
     "scripts": [
         "vendors/js/jquery-ui-1.12.1.min.js",
@@ -22,7 +25,10 @@
         "general/nav.js",
         "about/about.js",
         "tutorial/tutorial.js",
+        
         "maps/maps.js",
-        "rules/rules.js"
+        "rules/rules.js",
+        "encyclopedia/encyclopedia.js",
+        "studio/studio.js"
     ]
 }
