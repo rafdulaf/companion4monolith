@@ -46,7 +46,7 @@
             "image_zoom": "176",
             "image_location": { "x": "-12", "y": "56" },
             "model": "belit",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox"]
         },
 
         {
@@ -95,7 +95,7 @@
             "image_zoom": "130",
             "image_location": { "x": "0", "y": "44" },
             "model": "conan",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox"]
         },
 
         {
@@ -142,7 +142,7 @@
             "image_zoom": "131",
             "image_location": { "x": "-1", "y": "49" },
             "model": "hadrathus",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox"]
         },
 
         {
@@ -191,7 +191,7 @@
             "image_zoom": "157",
             "image_location": { "x": "1", "y": "52" },
             "model": "shevatas",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox"]
         },
 
         {
@@ -434,7 +434,7 @@
             "image_zoom": "111",
             "image_location": { "x": "11", "y": "62" },
             "model": "amboola",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -484,7 +484,7 @@
             "image_zoom": "136",
             "image_location": { "x": "2", "y": "51" },
             "model": "balthus",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -538,7 +538,7 @@
             "image_zoom": "115",
             "image_location": { "x": "-2", "y": "53" },
             "model": "conan-general",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -592,7 +592,7 @@
             "image_zoom": "143",
             "image_location": { "x": "-6", "y": "70" },
             "model": "conan-mercenary",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -646,7 +646,7 @@
             "image_zoom": "100",
             "image_location": { "x": "-9", "y": "56" },
             "model": "conan-wanderer",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -700,7 +700,7 @@
             "image_zoom": "117",
             "image_location": { "x": "-1", "y": "65" },
             "model": "conan-warlord",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -749,7 +749,7 @@
             "image_zoom": "133",
             "image_location": { "x": "-1", "y": "58" },
             "model": "kerim-shah",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -797,7 +797,7 @@
             "image_zoom": "125",
             "image_location": { "x": "-1", "y": "64" },
             "model": "olgerd-vladislav",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -846,7 +846,7 @@
             "image_zoom": "130",
             "image_location": { "x": "2", "y": "64" },
             "model": "pallantides",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -895,7 +895,7 @@
             "image_zoom": "115",
             "image_location": { "x": "10", "y": "64" },
             "model": "pelias",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -949,7 +949,7 @@
             "image_zoom": "135",
             "image_location": { "x": "-13", "y": "76" },
             "model": "savage-belit",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -998,7 +998,7 @@
             "image_zoom": "166",
             "image_location": { "x": "-6", "y": "56" },
             "model": "taurus",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -1046,7 +1046,7 @@
             "image_zoom": "143",
             "image_location": { "x": "-8", "y": "72" },
             "model": "constantius",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -1093,7 +1093,7 @@
             "image_zoom": "119",
             "image_location": { "x": "4", "y": "64" },
             "model": "skuthus",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -1141,7 +1141,7 @@
             "image_zoom": "139",
             "image_location": { "x": "-5", "y": "49" },
             "model": "thak",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -1190,7 +1190,7 @@
             "image_zoom": "124",
             "image_location": { "x": "3", "y": "60" },
             "model": "zaporavo",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -1238,7 +1238,7 @@
             "image_zoom": "135",
             "image_location": { "x": "2", "y": "42" },
             "model": "zogar-sag",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {

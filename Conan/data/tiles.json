@@ -21,7 +21,7 @@
             "image_location": {"x":50, "y":50},
             "image_zoom": 100,
             "model": null,
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox"]
         },
 
         {
@@ -45,7 +45,7 @@
             "image_location": {"x":50, "y":50},
             "image_zoom": 100,
             "model": null,
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox"]
         },
 
         {
@@ -69,7 +69,7 @@
             "image_location": {"x":50, "y":50},
             "image_zoom": 100,
             "model": null,
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -112,7 +112,7 @@
             "image_location": {"x":52, "y":54},
             "image_zoom": 117,
             "model": "captain",
-            "origins": ["corebox", "stretchgoal", "king"],
+            "origins": ["corebox"],
 
             "count": 2
         },
@@ -157,7 +157,7 @@
             "image_location": {"x":66, "y":56},
             "image_zoom": 65,
             "model": "skuthus",
-            "origins": ["corebox", "stretchgoal", "king"],
+            "origins": ["corebox"],
 
             "count": 2
         },
@@ -186,7 +186,7 @@
             "image_location": {"x":64, "y":56},
             "image_zoom": 72,
             "model": "princess",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox"]
         },
 
         {
@@ -229,7 +229,7 @@
             "image_location": {"x":59, "y":41},
             "image_zoom": 96,
             "model": "zogar-sag",
-            "origins": ["corebox", "stretchgoal", "king"],
+            "origins": ["corebox"],
 
             "count": 2
         },
@@ -274,7 +274,7 @@
             "image_location": {"x":63, "y":51},
             "image_zoom": 78,
             "model": "zaporavo",
-            "origins": ["corebox", "stretchgoal", "king"],
+            "origins": ["corebox"],
 
             "count": 2
         },
@@ -316,7 +316,7 @@
             "image_location": {"x":58, "y":46},
             "image_zoom": 132,
             "model": "dark-demon",
-            "origins": ["corebox", "stretchgoal", "king"],
+            "origins": ["corebox"],
 
             "count": 2
         },
@@ -361,7 +361,7 @@
             "image_location": {"x":45, "y":45},
             "image_zoom": 119,
             "model": "giant-snake",
-            "origins": ["corebox", "stretchgoal", "king"],
+            "origins": ["corebox"],
 
             "count": 2
         },
@@ -448,7 +448,7 @@
             "image_location": {"x":61, "y":61},
             "image_zoom": 108,
             "model": "khosatral-khel",
-            "origins": ["corebox", "stretchgoal", "king"],
+            "origins": ["corebox"],
 
             "count": 2
         },
@@ -493,7 +493,7 @@
             "image_location": {"x":59, "y":45},
             "image_zoom": 100,
             "model": "outer-dark-demon",
-            "origins": ["corebox", "stretchgoal", "king"],
+            "origins": ["corebox"],
 
             "count": 2
         },
@@ -538,7 +538,7 @@
             "image_location": {"x":60, "y":54},
             "image_zoom": 115,
             "model": "thak",
-            "origins": ["corebox", "stretchgoal", "king"],
+            "origins": ["corebox"],
 
             "count": 2
         },
@@ -580,7 +580,7 @@
             "image_location": {"x":71, "y":52},
             "image_zoom": 136,
             "model": "belits-guards",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox"]
         },
 
         {
@@ -620,7 +620,7 @@
             "image_location": {"x":64, "y":56},
             "image_zoom": 72,
             "model": "princess",
-            "origins": ["corebox", "stretchgoal", "king"],
+            "origins": ["corebox"],
 
             "count": 1
         },
@@ -662,7 +662,7 @@
             "image_location": {"x":54, "y":57},
             "image_zoom": 115,
             "model": "bossonian-archers",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox"]
         },
 
         {
@@ -702,7 +702,7 @@
             "image_location": {"x":59, "y":54},
             "image_zoom": 122,
             "model": "bossonian-guards",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox"]
         },
 
         {
@@ -742,7 +742,7 @@
             "image_location": {"x":74, "y":57},
             "image_zoom": 105,
             "model": "hyenas",
-            "origins": ["corebox", "stretchgoal", "king"],
+            "origins": ["corebox"],
 
             "count": 2
         },
@@ -826,7 +826,7 @@
             "image_location": {"x":68, "y":49},
             "image_zoom": 111,
             "model": "pict-hunters",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox"]
         },
 
         {
@@ -866,7 +866,7 @@
             "image_location": {"x":68, "y":55},
             "image_zoom": 91,
             "model": "pirates",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox"]
         },
 
         {
@@ -1146,7 +1146,7 @@
             "image_location": {"x":67, "y":57},
             "image_zoom": 60,
             "model": "ageera",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "count": 2
         },
@@ -1191,7 +1191,7 @@
             "image_location": {"x":66, "y":57},
             "image_zoom": 67,
             "model": "akivasha",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "count": 2
         },
@@ -1236,7 +1236,7 @@
             "image_location": {"x":62, "y":58},
             "image_zoom": 112,
             "model": "constantius",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "count": 2
         },
@@ -1281,7 +1281,7 @@
             "image_location": {"x":69, "y":50},
             "image_zoom": 89,
             "model": "gitara",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "count": 2
         },
@@ -1326,7 +1326,7 @@
             "image_location": {"x":68, "y":59},
             "image_zoom": 105,
             "model": "hyperborean-primitive",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "count": 2
         },
@@ -1371,7 +1371,7 @@
             "image_location": {"x":58, "y":52},
             "image_zoom": 105,
             "model": "khemsa",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "count": 2
         },
@@ -1416,7 +1416,7 @@
             "image_location": {"x":52, "y":59},
             "image_zoom": 100,
             "model": "natohk",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "count": 2
         },
@@ -1461,7 +1461,7 @@
             "image_location": {"x":61, "y":57},
             "image_zoom": 99,
             "model": "warlock",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "count": 2
         },
@@ -1506,7 +1506,7 @@
             "image_location": {"x":58, "y":55},
             "image_zoom": 58,
             "model": "amboola",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -1549,7 +1549,7 @@
             "image_location": {"x":56, "y":49},
             "image_zoom": 96,
             "model": "balthus",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -1592,7 +1592,7 @@
             "image_location": {"x":63, "y":46},
             "image_zoom": 120,
             "model": "belit",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -1635,7 +1635,7 @@
             "image_location": {"x":66, "y":48},
             "image_zoom": 96,
             "model": "conan",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "count": 2
         },
@@ -1680,7 +1680,7 @@
             "image_location": {"x":64, "y":47},
             "image_zoom": 90,
             "model": "hadrathus",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -1723,7 +1723,7 @@
             "image_location": {"x":56, "y":53},
             "image_zoom": 83,
             "model": "kerim-shah",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -1766,7 +1766,7 @@
             "image_location": {"x":66, "y":54},
             "image_zoom": 92,
             "model": "ngora",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -1808,7 +1808,7 @@
             "image_location": {"x":65, "y":54},
             "image_zoom": 104,
             "model": "olgerd-vladislav",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -1851,7 +1851,7 @@
             "image_location": {"x":64, "y":53},
             "image_zoom": 87,
             "model": "pallantides",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -1894,7 +1894,7 @@
             "image_location": {"x":62, "y":49},
             "image_zoom": 92,
             "model": "shevatas",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -1937,7 +1937,7 @@
             "image_location": {"x":61, "y":46},
             "image_zoom": 101,
             "model": "taurus",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "count": 1
         },
@@ -1982,7 +1982,7 @@
             "image_location": {"x":64, "y":57},
             "image_zoom": 108,
             "model": "valeria",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -2025,7 +2025,7 @@
             "image_location": {"x":61, "y":57},
             "image_zoom": 94,
             "model": "zelata",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -2052,7 +2052,7 @@
             "image_location": {"x":75, "y":54},
             "image_zoom": 142,
             "model": "camel",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -2079,7 +2079,7 @@
             "image_location": {"x":67, "y":55},
             "image_zoom": 111,
             "model": "kothian-archer",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -2106,7 +2106,7 @@
             "image_location": {"x":52, "y":61},
             "image_zoom": 95,
             "model": "slasher",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -2133,7 +2133,7 @@
             "image_location": {"x":60, "y":55},
             "image_zoom": 126,
             "model": "bone-golem",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "count": 2
         },
@@ -2178,7 +2178,7 @@
             "image_location": {"x":66, "y":58},
             "image_zoom": 133,
             "model": "forest-demon",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "count": 2
         },
@@ -2223,7 +2223,7 @@
             "image_location": {"x":54, "y":41},
             "image_zoom": 112,
             "model": "giant-scorpion",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "count": 2
         },
@@ -2268,7 +2268,7 @@
             "image_location": {"x":65, "y":53},
             "image_zoom": 113,
             "model": "giant-spider",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "count": 2
         },
@@ -2313,7 +2313,7 @@
             "image_location": {"x":59, "y":56},
             "image_zoom": 91,
             "model": "gray-man-ape",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "count": 2
         },
@@ -2358,7 +2358,7 @@
             "image_location": {"x":55, "y":63},
             "image_zoom": 100,
             "model": "swamp-demon",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "count": 2
         },
@@ -2403,7 +2403,7 @@
             "image_location": {"x":37, "y":50},
             "image_zoom": 276,
             "model": "thaug",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "count": 2
         },
@@ -2445,7 +2445,7 @@
             "image_location": {"x":58, "y":52},
             "image_zoom": 83,
             "model": "mummies",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -2485,7 +2485,7 @@
             "image_location": {"x":58, "y":56},
             "image_zoom": 114,
             "model": "pict-archers",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -2526,7 +2526,7 @@
             "image_zoom": 113,
             "model": "pict-warriors",
             "alternate_model": "pict-hunters",
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox"]
         },
 
         {
@@ -2566,7 +2566,7 @@
             "image_location": {"x":51, "y":48},
             "image_zoom": 113,
             "model": "pict-warriors",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -2606,7 +2606,7 @@
             "image_location": {"x":68, "y":55},
             "image_zoom": 91,
             "model": "pirates",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -2646,7 +2646,7 @@
             "image_location": {"x":64, "y":50},
             "image_zoom": 123,
             "model": "skeletons",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {
@@ -2670,7 +2670,7 @@
             "image_location": {"x":67, "y":59},
             "image_zoom": 50,
             "model": "tentacles",
-            "origins": ["stretchgoal", "king"]
+            "origins": ["stretchgoal"]
         },
 
         {

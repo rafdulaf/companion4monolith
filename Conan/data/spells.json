@@ -32,7 +32,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/boris_rage.png",
-            "origins": ["corebox", "stretchgoal", "king"],
+            "origins": ["corebox"],
 
             "textStyle": {
                 "fr": { "textSize": 150, "textInter": 66 },
@@ -73,7 +73,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/borne_by_the_wind.png",
-            "origins": ["corebox", "stretchgoal", "king"],
+            "origins": ["corebox"],
 
             "textStyle": {
                 "fr": { "textSize": 150, "textInter": 66 },
@@ -155,7 +155,7 @@
             "forEnergy": true,
 
             "image": "data/spells/img/energy_drain.png",
-            "origins": ["corebox", "stretchgoal", "king"],
+            "origins": ["corebox"],
 
             "textStyle": {
                 "fr": { "textSize": 140, "textInter": 66 },
@@ -196,7 +196,7 @@
             "forEnergy": true,
 
             "image": "data/spells/img/gift_of_life.png",
-            "origins": ["corebox", "stretchgoal", "king"],
+            "origins": ["corebox"],
 
             "textStyle": {
                 "fr": { "textSize": 150, "textInter": 66 },
@@ -237,7 +237,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/kiss_of_death.png",
-            "origins": ["corebox", "stretchgoal", "king"],
+            "origins": ["corebox"],
 
             "textStyle": {
                 "fr": { "textSize": 150, "textInter": 66 },
@@ -278,7 +278,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/lightning_storm.png",
-            "origins": ["corebox", "stretchgoal", "king"],
+            "origins": ["corebox"],
 
             "textStyle": {
                 "fr": { "textSize": 150, "textInter": 66 },
@@ -319,7 +319,7 @@
             "forEnergy": true,
 
             "image": "data/spells/img/magical_dizziness.png",
-            "origins": ["corebox", "stretchgoal", "king"],
+            "origins": ["corebox"],
 
             "textStyle": {
                 "fr": { "textSize": 149, "textInter": 66 },
@@ -360,7 +360,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/mind_control.png",
-            "origins": ["corebox", "stretchgoal", "king"],
+            "origins": ["corebox"],
 
             "textStyle": {
                 "fr": { "textSize": 140, "textInter": 66 },
@@ -401,7 +401,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/mitras_halo.png",
-            "origins": ["corebox", "stretchgoal", "king"],
+            "origins": ["corebox"],
             
             "tokens": ["mitra-halo"],
 
@@ -444,7 +444,7 @@
             "forEnergy": true,
 
             "image": "data/spells/img/mitras_healing.png",
-            "origins": ["corebox", "stretchgoal", "king"],
+            "origins": ["corebox"],
 
             "textStyle": {
                 "fr": { "textSize": 134, "textInter": 65 },
@@ -485,7 +485,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/pestilential_swarm.png",
-            "origins": ["corebox", "stretchgoal", "king"],
+            "origins": ["corebox"],
 
             "textStyle": {
                 "fr": { "textSize": 142, "textInter": 66 },
@@ -526,7 +526,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/sets_bite.png",
-            "origins": ["corebox", "stretchgoal", "king"],
+            "origins": ["corebox"],
 
             "textStyle": {
                 "fr": { "textSize": 148, "textInter": 66 },
@@ -567,7 +567,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/sets_halo.png",
-            "origins": ["corebox", "stretchgoal", "king"],
+            "origins": ["corebox"],
 
             "tokens": ["set-halo"],
 
@@ -653,7 +653,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/sets_possession.png",
-            "origins": ["corebox", "stretchgoal", "king"],
+            "origins": ["corebox"],
 
             "textStyle": {
                 "fr": { "textSize": 127, "textInter": 66 },
@@ -694,7 +694,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/telekinesis.png",
-            "origins": ["corebox", "stretchgoal", "king"],
+            "origins": ["corebox"],
 
             "textStyle": {
                 "fr": { "textSize": 150, "textInter": 66 },
@@ -739,7 +739,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/teleportation.png",
-            "origins": ["corebox", "stretchgoal", "king"],
+            "origins": ["corebox"],
 
             "textStyle": {
                 "fr": { "textSize": 127, "textInter": 66 },
@@ -784,7 +784,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/teleportation.png",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "textStyle": {
                 "fr": { "textSize": 127, "textInter": 66 },
@@ -825,7 +825,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/archer_of_acheron.png",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "textStyle": {
                 "fr": { "textSize": 130, "textInter": 66 },
@@ -866,7 +866,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/bad_luck.png",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "textStyle": {
                 "fr": { "textSize": 150, "textInter": 66 },
@@ -907,7 +907,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/barrier_of_the_winds.png",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "textStyle": {
                 "fr": { "textSize": 150, "textInter": 66 },
@@ -948,7 +948,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/bels_caress.png",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "textStyle": {
                 "fr": { "textSize": 150, "textInter": 66 },
@@ -989,7 +989,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/bels_hand.png",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "textStyle": {
                 "fr": { "textSize": 130, "textInter": 69 },
@@ -1030,7 +1030,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/blessing_of_ibis.png",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "textStyle": {
                 "fr": { "textSize": 150, "textInter": 66 },
@@ -1071,7 +1071,7 @@
             "forEnergy": true,
 
             "image": "data/spells/img/changing_destiny.png",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "textStyle": {
                 "fr": { "textSize": 140, "textInter": 66 },
@@ -1112,7 +1112,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/dagons_attack.png",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "forOverlord": true,
             "forHeroes": false,
@@ -1156,7 +1156,7 @@
             "forEnergy": false,
 
             "image": null,
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "textStyle": {
                 "fr": { "textSize": 150, "textInter": 66 },
@@ -1197,7 +1197,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/deceleration.png",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "textStyle": {
                 "fr": { "textSize": 150, "textInter": 66 },
@@ -1238,7 +1238,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/divine_charisma.png",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "textStyle": {
                 "fr": { "textSize": 150, "textInter": 66 },
@@ -1284,7 +1284,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/drying_earth.png",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "textStyle": {
                 "fr": { "textSize": 130, "textInter": 65 },
@@ -1325,7 +1325,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/eagle_eye.png",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "textStyle": {
                 "fr": { "textSize": 150, "textInter": 66 },
@@ -1366,7 +1366,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/eel_skin.png",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "textStyle": {
                 "fr": { "textSize": 150, "textInter": 66 },
@@ -1407,7 +1407,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/escape_route.png",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "textStyle": {
                 "fr": { "textSize": 130, "textInter": 66 },
@@ -1448,7 +1448,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/fleet_runner.png",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "textStyle": {
                 "fr": { "textSize": 150, "textInter": 66 },
@@ -1489,7 +1489,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/gullahs_strength.png",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "textStyle": {
                 "fr": { "textSize": 130, "textInter": 66 },
@@ -1530,7 +1530,7 @@
             "forEnergy": false,
 
             "image": null,
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "textStyle": {
                 "fr": { "textSize": 150, "textInter": 66 },
@@ -1571,7 +1571,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/hand_of_death.png",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "textStyle": {
                 "fr": { "textSize": 150, "textInter": 66 },
@@ -1612,7 +1612,7 @@
             "forEnergy": false,
 
             "image": null,
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "textStyle": {
                 "fr": { "textSize": 150, "textInter": 66 },
@@ -1653,7 +1653,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/inversion.png",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "textStyle": {
                 "fr": { "textSize": 150, "textInter": 66 },
@@ -1694,7 +1694,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/ishtars_gaze.png",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "textStyle": {
                 "fr": { "textSize": 150, "textInter": 66 },
@@ -1735,7 +1735,7 @@
             "forEnergy": false,
 
             "image": null,
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "textStyle": {
                 "fr": { "textSize": 150, "textInter": 66 },
@@ -1776,7 +1776,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/lethal_cloud.png",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "textStyle": {
                 "fr": { "textSize": 134, "textInter": 65 },
@@ -1817,7 +1817,7 @@
             "forEnergy": true,
 
             "image": "data/spells/img/life_transfer.png",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "textStyle": {
                 "fr": { "textSize": 150, "textInter": 66 },
@@ -1864,7 +1864,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/light_as_a_feather.png",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "textStyle": {
                 "fr": { "textSize": 150, "textInter": 66 },
@@ -1905,7 +1905,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/magic_block.png",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "textStyle": {
                 "fr": { "textSize": 150, "textInter": 66 },
@@ -1946,7 +1946,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/mystic_barrier.png",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "textStyle": {
                 "fr": { "textSize": 150, "textInter": 66 },
@@ -1987,7 +1987,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/putrescence.png",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "textStyle": {
                 "fr": { "textSize": 150, "textInter": 66 },
@@ -2028,7 +2028,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/recall.png",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "textStyle": {
                 "fr": { "textSize": 150, "textInter": 66 },
@@ -2069,7 +2069,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/return_of_the_brave.png",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "textStyle": {
                 "fr": { "textSize": 150, "textInter": 66 },
@@ -2110,7 +2110,7 @@
             "forEnergy": false,
 
             "image": null,
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "textStyle": {
                 "fr": { "textSize": 150, "textInter": 66 },
@@ -2151,7 +2151,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/sets_illusion.png",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "textStyle": {
                 "fr": { "textSize": 150, "textInter": 66 },
@@ -2192,7 +2192,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/shapechanger.png",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "textStyle": {
                 "fr": { "textSize": 150, "textInter": 66 },
@@ -2233,7 +2233,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/stone_skin.png",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "textStyle": {
                 "fr": { "textSize": 150, "textInter": 66 },
@@ -2274,7 +2274,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/tears_of_dagon.png",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "textStyle": {
                 "fr": { "textSize": 132, "textInter": 69 },
@@ -2315,7 +2315,7 @@
             "forEnergy": false,
 
             "image": null,
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "textStyle": {
                 "fr": { "textSize": 150, "textInter": 66 },
@@ -2356,7 +2356,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/withering.png",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "textStyle": {
                 "fr": { "textSize": 150, "textInter": 66 },
@@ -2397,7 +2397,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/yajurs_awakening.png",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "textStyle": {
                 "fr": { "textSize": 150, "textInter": 66 },
@@ -2438,7 +2438,7 @@
             "forEnergy": false,
 
             "image": "data/spells/img/ymirs_rage.png",
-            "origins": ["stretchgoal", "king"],
+            "origins": ["stretchgoal"],
 
             "textStyle": {
                 "fr": { "textSize": 148, "textInter": 66 },

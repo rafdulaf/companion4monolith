@@ -17,7 +17,7 @@
                 "en": 24,
                 "it": 24
             },
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox"]
         },
         {
             "id": "overlord",
@@ -36,7 +36,7 @@
                 "en": 14,
                 "it": 14
             },
-            "origins": ["corebox", "stretchgoal", "king"]
+            "origins": ["corebox"]
         }
     ]
 }
