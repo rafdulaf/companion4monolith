@@ -134,6 +134,11 @@ var CardSpell = {
     {
         $("#spell").html(CardSpell._getDisplayCardsCode(true));
     },
+        
+    printCode: function ()
+    {
+          return CardSpell._getDisplayCardsCode(false);
+    },
 
     _getDisplayCardsCode: function(withEditLink)
     {

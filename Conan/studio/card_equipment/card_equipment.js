@@ -158,7 +158,12 @@ var CardEquipment = {
     {
         $("#equipment").html(CardEquipment._getDisplayCardsCode(true));
     },
-
+        
+    printCode: function ()
+    {
+          return CardEquipment._getDisplayCardsCode(false);
+    },
+    
     _getDisplayCardsCode: function(withEditLink)
     {
         var html = "";

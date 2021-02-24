@@ -176,6 +176,11 @@ var Tile = {
     {
         $("#tile").html(Tile._getDisplayTileCode(true));
     },
+    
+    printCode: function ()
+    {
+          return Tile._getDisplayTileCode(false);
+    },
 
     _getDisplayTileCode: function(withEditLink)
     {

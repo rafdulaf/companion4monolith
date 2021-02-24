@@ -158,6 +158,12 @@ var HeroSheet = {
     {
         $("#hero").html(HeroSheet._getDisplayCardsCode(true));
     },
+        
+    printCode: function ()
+    {
+          return "<p class='subhint'>" + HeroSheet._i18n[Language].printHint + "</p>"
+                + HeroSheet._getDisplayCardsCode(false);
+    },
 
     _getDisplayCardsCode: function(withEditLink)
     {

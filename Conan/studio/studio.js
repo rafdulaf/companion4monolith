@@ -28,30 +28,25 @@ var Studio = {
 
     _currentSlide: null,
     _slides: [],
+    
+    _items: [],
 
     init: function() {
         Nav.addIcon(Studio._i18n[Language].menu, "studio-icon", "studio");
 
-        CardEquipment.preinit();
-        CardSpell.preinit();
-        HeroSheet.preinit();
-        Tile.preinit();
+        Studio._items = [CardEquipment, CardSpell, HeroSheet, Tile];
+        
+        Studio._items.forEach(item => item.preinit());
 
         Nav.createTabs('studio', Studio._slides, Studio.onChange);
 
-        CardEquipment.init();
-        CardSpell.init();
-        HeroSheet.init();
-        Tile.init();
+        Studio._items.forEach(item => item.init());
 
         Studio.onChange();
 
-        About.addCopyright(Studio._i18n[Language].menu,
-            CardEquipment.copyright()
-            + CardSpell.copyright()
-            + HeroSheet.copyright()
-            + Tile.copyright()
-        );
+        let copyright = "";
+        Studio._items.forEach(item => copyright += item.copyright());
+        About.addCopyright(Studio._i18n[Language].menu, copyright);
     },
 
     onChange: function(event, slick) {
@@ -66,6 +61,9 @@ var Studio = {
 
     printCards: function()
     {
+        let studiosCode = "";
+        Studio._items.forEach(item => studiosCode += "<h1>" + item._i18n[Language].tab + "</h1>" + item.printCode());
+        
         Nav.dialog(Studio._i18n[Language].printcardsLabel,
             "<div class=\"printcards back cut\">"
 
@@ -75,18 +73,7 @@ var Studio = {
 
             + "<div class=\"print\"><button onclick=\"Studio._printCards();\">" + Studio._i18n[Language].printcardsLabel + "</button></div>"
 
-            + "<h1>" + CardEquipment._i18n[Language].tab + "</h1>"
-            + CardEquipment._getDisplayCardsCode(false)
-
-            + "<h1>" + CardSpell._i18n[Language].tab + "</h1>"
-            + CardSpell._getDisplayCardsCode(false)
-
-            + "<h1>" + HeroSheet._i18n[Language].tab + "</h1>"
-            + "<p class='subhint'>" + HeroSheet._i18n[Language].printHint + "</p>"
-            + HeroSheet._getDisplayCardsCode(false)
-
-            + "<h1>" + Tile._i18n[Language].tab + "</h1>"
-            + Tile._getDisplayTileCode(false)
+            + studiosCode
 
             + "<div class=\"print\"><button onclick=\"Studio._printCards();\">" + Studio._i18n[Language].printcardsLabel + "</button></div>"
 
