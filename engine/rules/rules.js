@@ -105,7 +105,7 @@ var Rules = {
         {
             var type = Encyclopedia.skills.types[i];
 
-            $('#skills > div').append("<div id='skills_" + type.id + "' class='skill-tab'><h2>" + type.title[Language] + "</h2></div>");
+            $('#skills > div').append("<div id='skills_" + type.id + "' class='skill-tab'><h2>" + type.title[Language] + "</h2><div class='cols'></div></div>");
 
             for (var j in Encyclopedia.skills.list)
             {
@@ -129,7 +129,7 @@ var Rules = {
     
         _addSkill: function(id, type, image, title, text)
     {
-        $('#skills_' + type).append((id ? "<a href='javascript:void(0)' onclick='Rules.openSkill(\"" + id + "\")'>" : "")
+        $('#skills_' + type + " .cols").append((id ? "<a href='javascript:void(0)' onclick='Rules.openSkill(\"" + id + "\")'>" : "")
             + Rules._skill2HTML(id, type, image, title, text)
             + (id ? "</a>" : ""));
     },
@@ -140,7 +140,6 @@ var Rules = {
             +   "<img " + LazyImage + " src='" + image + "?version=" + Version + "'/>"
             +   "<div class='skills-title'>" + title + "</div>"
             +   "<div class='skills-text'>" + About._replace(text) + "</div>"
-            +   "<div class='clear'></div>"
             + "</div>";
     },
 

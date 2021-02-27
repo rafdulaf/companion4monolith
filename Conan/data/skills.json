@@ -58,6 +58,20 @@
             },
             "image": "data/skills/img/attack/reach.png"
         }, {
+            "id": "circular_strike",
+            "type": "attack",
+            "title": {
+                "fr": "Coup circulaire",
+                "en": "Circular Strike",
+                "it": "Colpo circolare"
+            },
+            "text": {
+                "fr": "Avec toute arme de corps-à-corps à deux main (dont l’encombrement est supérieur ou égal à 3), le personnage peut donner un coup circulaire. Si l’attaque, résolue normalement, tue le premier adversaire désigné, le reliquat de dégâts est reporté sur le suivant (choisit par l'attaquant) et ainsi de suite jusqu’à ce qu’il n’y ait plus de reliquat.",
+                "en": "When this character kills an enemy character with a 2-handed Melee Attack, another enemy character in the same area suffers the excess damage from the attack (if that character is killed, repeat the process). The attacker decides the order in which damage is dealt to defending enemies. Resolve the attack normally (determining attack power, defense power, etc.) on one enemy before proceeding with the next one if there is still damage left to be dealt.",
+                "it": "Quando questo personaggio uccide in un attacco in Mischia un personaggio nemico con la propria arma a due mani, i danni in eccesso dell'attacco vengono assegnati a un altro personaggio nemico nella stessa (se questo personaggio viene ucciso, si continui l'assegnazione al successivo personaggio). L'attaccante decide l'ordine di assegnazione tra i nemici. Si risolvano gli attacchi normalmente (determinazione del potere dell'attacco, potere della difesa, ecc) sul singono nemico prima di procedere al successivo se ci sono ancora dei danni da assegnare."
+            },
+            "image": "data/skills/img/attack/circular_strike.png"
+        }, {
             "id": "ambidextrous",
             "type": "attack",
             "title": {
@@ -85,20 +99,6 @@
                 "it": "Una volta determinato il potere d'attacco di questo personaggio, se uno qualsiasi dei suoi dadi mostra 2 o più simboli, muovi il difensore a contatto di base con l'attaccante. Fin quando i due modelli restano nella stessa area, il difensore tratta l'attaccante come se quest'ultimo avesse l'abilità Bloccare. Un personaggio con l'abilità Inafferrabile ignora gli effetti di Costrizione, ma non il danno associato all'attacco."
             },
             "image": "data/skills/img/attack/constriction.png"
-        }, {
-            "id": "circular_strike",
-            "type": "attack",
-            "title": {
-                "fr": "Coup circulaire",
-                "en": "Circular Strike",
-                "it": "Colpo circolare"
-            },
-            "text": {
-                "fr": "Avec toute arme de corps-à-corps à deux main (dont l’encombrement est supérieur ou égal à 3), le personnage peut donner un coup circulaire. Si l’attaque, résolue normalement, tue le premier adversaire désigné, le reliquat de dégâts est reporté sur le suivant (choisit par l'attaquant) et ainsi de suite jusqu’à ce qu’il n’y ait plus de reliquat.",
-                "en": "When this character kills an enemy character with a 2-handed Melee Attack, another enemy character in the same area suffers the excess damage from the attack (if that character is killed, repeat the process). The attacker decides the order in which damage is dealt to defending enemies. Resolve the attack normally (determining attack power, defense power, etc.) on one enemy before proceeding with the next one if there is still damage left to be dealt.",
-                "it": "Quando questo personaggio uccide in un attacco in Mischia un personaggio nemico con la propria arma a due mani, i danni in eccesso dell'attacco vengono assegnati a un altro personaggio nemico nella stessa (se questo personaggio viene ucciso, si continui l'assegnazione al successivo personaggio). L'attaccante decide l'ordine di assegnazione tra i nemici. Si risolvano gli attacchi normalmente (determinazione del potere dell'attacco, potere della difesa, ecc) sul singono nemico prima di procedere al successivo se ci sono ancora dei danni da assegnare."
-            },
-            "image": "data/skills/img/attack/circular_strike.png"
         }, {
             "id": "precision_strike",
             "type": "attack",
@@ -186,6 +186,21 @@
             },
             "image": "data/skills/img/movement/blocking.png"
         }, {
+            "id": "wall_wrecker",
+            "type": "movement",
+            "title": {
+                "fr": "Défoncer les cloisons",
+                "en": "Wall Wrecker",
+                "it": "Spacca Muri"
+            },
+            "text": {
+                "fr": "Le personnage peut traverser les cloisons et les portes en bois, au cours de son mouvement, pour un surcout de 2 points de mouvement. Il laisse derrière lui une ouverture (symbolisée par un pion) : le personnage se déplace de l'autre côté de la cloison qu'il vient de défoncer. Les deux zones deviennent adjascentes sans pénalité de mouvement pour passer de l'une à l'autre et l'ouverture donne une ligne de vue entre ces deux zones.",
+                "en": "This character can spend 2 movement points to move across a wooden wall or door from one area to an adjacent area, and place a \"Wall Wrecker\" token on that obstacle. Then they immediately move to the other side of the wall they just wrecked. From now on, the two areas are adjacent, there is no penalty for moving from one to the other, and they have line of sight on each other.",
+                "it": "Questo personaggio può spendere 2 punti movimento per muovere attraverso un muro di legno o una porta che separa due aree adiacenti. Piazza un segnalino \"Breccia\" sull'ostacolo, quindi muovi il  personaggio dall'altra parte del muro/porta abbattuto/a. Da adesso le due aree sono adiacenti: non c'è nessun malus per muoversi dall'una all'altra e tra esse la linea di vista è libera."
+            },
+            "image": "data/skills/img/movement/wall_wrecker.png",
+            "token": "wrecked-wall"
+        }, {
             "id": "evasive",
             "type": "movement",
             "title": {
@@ -228,21 +243,6 @@
             },
             "image": "data/skills/img/movement/intangible.png"
         }, {
-            "id": "wall_wrecker",
-            "type": "movement",
-            "title": {
-                "fr": "Défoncer les cloisons",
-                "en": "Wall Wrecker",
-                "it": "Spacca Muri"
-            },
-            "text": {
-                "fr": "Le personnage peut traverser les cloisons et les portes en bois, au cours de son mouvement, pour un surcout de 2 points de mouvement. Il laisse derrière lui une ouverture (symbolisée par un pion) : le personnage se déplace de l'autre côté de la cloison qu'il vient de défoncer. Les deux zones deviennent adjascentes sans pénalité de mouvement pour passer de l'une à l'autre et l'ouverture donne une ligne de vue entre ces deux zones.",
-                "en": "This character can spend 2 movement points to move across a wooden wall or door from one area to an adjacent area, and place a \"Wall Wrecker\" token on that obstacle. Then they immediately move to the other side of the wall they just wrecked. From now on, the two areas are adjacent, there is no penalty for moving from one to the other, and they have line of sight on each other.",
-                "it": "Questo personaggio può spendere 2 punti movimento per muovere attraverso un muro di legno o una porta che separa due aree adiacenti. Piazza un segnalino \"Breccia\" sull'ostacolo, quindi muovi il  personaggio dall'altra parte del muro/porta abbattuto/a. Da adesso le due aree sono adiacenti: non c'è nessun malus per muoversi dall'una all'altra e tra esse la linea di vista è libera."
-            },
-            "image": "data/skills/img/movement/wall_wrecker.png",
-            "token": "wrecked-wall"
-        }, {
             "id": "web_projection",
             "type": "movement",
             "title": {
@@ -258,20 +258,6 @@
             "token": "web",
             "image": "data/skills/img/movement/web_projection.png"
         }, {
-            "id": "leap",
-            "type": "movement",
-            "title": {
-                "fr": "Saut",
-                "en": "Leap",
-                "it": "Saltare"
-            },
-            "text": {
-                "fr": "Le personnage peut sauter par-dessus les endroits prévus à cet effet. Pour ce faire, il lance {dice_red} et doit égaler ou dépasser l'indice de difficulté. Le saut n'est pas soumis au phénomène de gène. Sauter coûte 1 point de mouvement par zone traversée. Par exemple, sauter d'un bateau à l'autre coûte 2 points de mouvements.",
-                "en": "This character can leap over areas defined by the scenario. The character rolls {dice_red}, the leap is successful if the die shows symbols equal to or higher than the leap area's difficulty. Leaping costs 1 movement point per crossed area border. For example, when leaping from one ship to another, a character must spend 2 movement points to leap. Leaping is not affected by hindering.",
-                "it": "Questo personaggio può saltare alcune aree definite nello scenario. Il personaggio tira {dice_red}: il salto riesce se il punteggio è uguale o superiore alla difficoltà indicata nell'area da saltare. Saltare costa un (1) punto movimento per ogni bordo attraversato. Ad esempio, quando salta da una nave all'altra, il personaggio deve spendere 2 punti movimento per saltare. Saltare non è affetto da intralcio."
-            },
-            "image": "data/skills/img/movement/leap.png"
-        }, {
             "id": "feline_grace",
             "type": "movement",
             "title": {
@@ -285,6 +271,20 @@
                 "it": "Il personaggio, nella sua area, ignora un (1) punto di penalità fornito da un eventuale intralcio."
             },
             "image": "data/skills/img/movement/feline_grace.png"
+        }, {
+            "id": "leap",
+            "type": "movement",
+            "title": {
+                "fr": "Saut",
+                "en": "Leap",
+                "it": "Saltare"
+            },
+            "text": {
+                "fr": "Le personnage peut sauter par-dessus les endroits prévus à cet effet. Pour ce faire, il lance {dice_red} et doit égaler ou dépasser l'indice de difficulté. Le saut n'est pas soumis au phénomène de gène. Sauter coûte 1 point de mouvement par zone traversée. Par exemple, sauter d'un bateau à l'autre coûte 2 points de mouvements.",
+                "en": "This character can leap over areas defined by the scenario. The character rolls {dice_red}, the leap is successful if the die shows symbols equal to or higher than the leap area's difficulty. Leaping costs 1 movement point per crossed area border. For example, when leaping from one ship to another, a character must spend 2 movement points to leap. Leaping is not affected by hindering.",
+                "it": "Questo personaggio può saltare alcune aree definite nello scenario. Il personaggio tira {dice_red}: il salto riesce se il punteggio è uguale o superiore alla difficoltà indicata nell'area da saltare. Saltare costa un (1) punto movimento per ogni bordo attraversato. Ad esempio, quando salta da una nave all'altra, il personaggio deve spendere 2 punti movimento per saltare. Saltare non è affetto da intralcio."
+            },
+            "image": "data/skills/img/movement/leap.png"
         }, {
             "id": "flying",
             "type": "movement",
@@ -330,6 +330,20 @@
             },
             "image": "data/skills/img/miscellaneous/alchemy.png"
         }, {
+            "id": "leadership",
+            "type": "miscellaneous",
+            "title": {
+                "fr": "Commandement",
+                "en": "Leadership",
+                "it": "Comando"
+            },
+            "text": {
+                "fr": "Pour chaque gemme dépensée, le héros peut activer un de ses Alliés. Un Allié activé peut se déplacer et attaquer comme une unité. Il ne peut activer qu'une fois par tour chacun de ses Alliés.",
+                "en": "This hero can move 1 gem from their Reserve zone to their Fatigue zone to activate an ally. Activated allies move and attack like units. Each ally can be activated only once per turn.",
+                "it": "Per ogni gemma spesa, l'Eroe può attivare uno dei suoi Alleati. Un Alleato attivato può muovere e attaccare come un'unità. Il personaggio con Comando non può attivare un proprio Alleato più di una volta per turno."
+            },
+            "image": "data/skills/img/miscellaneous/leadership.png"
+        }, {
             "id": "concentration",
             "type": "miscellaneous",
             "title": {
@@ -371,20 +385,6 @@
                 "it": "Il personaggio con questa abilità non può essere attaccato da un altro personaggio a meno che non sia il personaggio con Fascinazione ad attaccarlo per primo."
             },
             "image": "data/skills/img/miscellaneous/fascination.png"
-        }, {
-            "id": "leadership",
-            "type": "miscellaneous",
-            "title": {
-                "fr": "Commandement",
-                "en": "Leadership",
-                "it": "Comando"
-            },
-            "text": {
-                "fr": "Pour chaque gemme dépensée, le héros peut activer un de ses Alliés. Un Allié activé peut se déplacer et attaquer comme une unité. Il ne peut activer qu'une fois par tour chacun de ses Alliés.",
-                "en": "This hero can move 1 gem from their Reserve zone to their Fatigue zone to activate an ally. Activated allies move and attack like units. Each ally can be activated only once per turn.",
-                "it": "Per ogni gemma spesa, l'Eroe può attivare uno dei suoi Alleati. Un Alleato attivato può muovere e attaccare come un'unità. Il personaggio con Comando non può attivare un proprio Alleato più di una volta per turno."
-            },
-            "image": "data/skills/img/miscellaneous/leadership.png"
         }, {
             "id": "horror",
             "type": "miscellaneous",
@@ -445,34 +445,6 @@
         },
 
         {
-            "id": "sacrifice",
-            "type": "defense",
-            "title": {
-                "fr": "Sacrfice",
-                "en": "Sacrifice",
-                "it": "Sacrificio"
-            },
-            "text": {
-                "fr": "Le personnage peut décider, avant le lancé de dés, de subir une attaque à la place de la cible initiale. Il ne peut par contre ni la parer ni l'esquiver. Il ne peut utiliser que sa défense passive pour se défendre. Ce personnage encaisse donc la totalité des dégâts causés par l’attaque à la place de la cible initiale.",
-                "en": "When a friendly character in this character's area is attacked, before the die are rolled, this character may choose to be attacked instead. This character cannot Guard for that defense and can only use their Armor. That character suffers any damage from the attack to prevent the character who was initially attacked from suffering damage.",
-                "it": "Il personaggio può decidere, prima del lancio dei dadi, di subire l'attacco al posto del bersaglio designato. Chi ha Sacrificio non può di contro né parare, né schivare. Non può utilizzare che la propria Armatura per difendersi. Questo personaggio subisce tutti i danni causati dall'attacco al posto del bersaglio designato."
-            },
-            "image": "data/skills/img/defense/sacrifice.png"
-        }, {
-            "id": "bodyguard",
-            "type": "defense",
-            "title": {
-                "fr": "Garde du corps",
-                "en": "Bodyguard",
-                "it": "Guardia del corpo"
-            },
-            "text": {
-                "fr": "Le personnage peut parer (c’est-à-dire utiliser un équipement pour défendre comme un bouclier par exemple) à leur place, les attaques portées contre ses amis présents sur sa zone. Il ne peut pas simplement esquiver. L'usage de la compétence remplace la défense active de la cible mais pas sa défense passive. C’est la cible initiale de l’attaque qui en subit les éventuelles blessures.",
-                "en": "When a friendly character in this character's area defends, this character can parry (i.e. use an equipment card to defend against that attack, like a shield) instead of that character's Guard action, adding the symbols shown on the dice to the character defense power. They cannot dodge (see page 11) to defend a friendly character. Any damage is dealt to the character who was initially attacked, not the character using Bodyguard.",
-                "it": "Il personaggio può parare (ovvero utilizzare dell'equipaggiamento per difendere come uno Scudo per esempio) gli attacchi rivolti verso i personaggi amici che occupano la sua stessa area. Non può schivare. L'uso dell'abilità rimpiazza il bonus di Difesa del bersaglio ma non quello della sua Armatura. É comunque il bersaglio designato a subire gli eventuali danni non parati."
-            },
-            "image": "data/skills/img/defense/bodyguard.png"
-        }, {
             "id": "untouchable",
             "type": "defense",
             "title": {
@@ -500,6 +472,34 @@
                 "it": "Questo personaggio può essere attaccato solo da attacchi ad area fintantoché è presente un personaggio amico senza l'abilità Protetto nella sua area. Due o più personaggi con questa abilità non possono proteggersi a vicenda."
             },
             "image": "data/skills/img/defense/protected.png"
+        }, {
+            "id": "sacrifice",
+            "type": "defense",
+            "title": {
+                "fr": "Sacrfice",
+                "en": "Sacrifice",
+                "it": "Sacrificio"
+            },
+            "text": {
+                "fr": "Le personnage peut décider, avant le lancé de dés, de subir une attaque à la place de la cible initiale. Il ne peut par contre ni la parer ni l'esquiver. Il ne peut utiliser que sa défense passive pour se défendre. Ce personnage encaisse donc la totalité des dégâts causés par l’attaque à la place de la cible initiale.",
+                "en": "When a friendly character in this character's area is attacked, before the die are rolled, this character may choose to be attacked instead. This character cannot Guard for that defense and can only use their Armor. That character suffers any damage from the attack to prevent the character who was initially attacked from suffering damage.",
+                "it": "Il personaggio può decidere, prima del lancio dei dadi, di subire l'attacco al posto del bersaglio designato. Chi ha Sacrificio non può di contro né parare, né schivare. Non può utilizzare che la propria Armatura per difendersi. Questo personaggio subisce tutti i danni causati dall'attacco al posto del bersaglio designato."
+            },
+            "image": "data/skills/img/defense/sacrifice.png"
+        }, {
+            "id": "bodyguard",
+            "type": "defense",
+            "title": {
+                "fr": "Garde du corps",
+                "en": "Bodyguard",
+                "it": "Guardia del corpo"
+            },
+            "text": {
+                "fr": "Le personnage peut parer (c’est-à-dire utiliser un équipement pour défendre comme un bouclier par exemple) à leur place, les attaques portées contre ses amis présents sur sa zone. Il ne peut pas simplement esquiver. L'usage de la compétence remplace la défense active de la cible mais pas sa défense passive. C’est la cible initiale de l’attaque qui en subit les éventuelles blessures.",
+                "en": "When a friendly character in this character's area defends, this character can parry (i.e. use an equipment card to defend against that attack, like a shield) instead of that character's Guard action, adding the symbols shown on the dice to the character defense power. They cannot dodge (see page 11) to defend a friendly character. Any damage is dealt to the character who was initially attacked, not the character using Bodyguard.",
+                "it": "Il personaggio può parare (ovvero utilizzare dell'equipaggiamento per difendere come uno Scudo per esempio) gli attacchi rivolti verso i personaggi amici che occupano la sua stessa area. Non può schivare. L'uso dell'abilità rimpiazza il bonus di Difesa del bersaglio ma non quello della sua Armatura. É comunque il bersaglio designato a subire gli eventuali danni non parati."
+            },
+            "image": "data/skills/img/defense/bodyguard.png"
         },
 
         {
