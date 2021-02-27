@@ -1,15 +1,16 @@
-var CardSpell = {
+var CardSpell = mergeObject(StudioItem, {
+    name: 'spell',
+    cls: 'CardSpell',
+    storage: Application + "_StudioSpellCards",
+    
     _i18n: {
         'fr': {
             'tab': "Sorts",
-            'nocard': "Vous n'avez aucune carte pour le moment.",
-            'nocard2': " Cliquez sur le bouton + en haut pour en creer une.",
-            'newcard': "Créer une carte",
-            'print': "Imprimer des cartes",
+            'nocard': "Vous n'avez aucune carte de sort pour le moment",
+            'nocard2': "<br/><br/>Cliquez sur le bouton + pour en creer une",
+            'newcard': "Créer un sort",
             'editcard': "Modifier",
-            'save': "Enregistrer",
-            'remove': "Effacer",
-            'removeConfirm': "Etes-vous sûr de vouloir effacer cette carte ?",
+            
             'name': "Nom",
             'namePh': "?",
             'text': "Effet",
@@ -37,18 +38,16 @@ var CardSpell = {
             'header1': "Saisissez les données de la carte",
             'header1bis': "Mettez une image",
             'header2': "Prévisualiser la carte",
+            
             'copyright': "Basé sur le fichier PSD proposé par <a href='https://the-overlord.com/index.php?/profile/9-genesteal28/'>@genesteal28</a> et converti au format GIMP par <a href='https://the-overlord.com/index.php?/profile/31-jabbathehatt/'>@jabbathehatt</a> et <a href='https://the-overlord.com/index.php?/profile/1-sentma/'>SentMa</a> pour le dos de carte."
         },
         'en': {
             'tab': "Spells",
-            'nocard': "You have no card for the moment.",
-            'nocard2': " Click on the + button in the header to create one.",
-            'newcard': "Create a new card",
-            'print': "Print cards",
+            'nocard': "You have no card for the moment",
+            'nocard2': "<br/><br/>Click on the + button to create one",
+            'newcard': "Create a spell",
             'editcard': "Edit a card",
-            'save': "Save",
-            'remove': "Delete",
-            'removeConfirm': "Are you sure that you want to delete this card?",
+            
             'name': "Name",
             'namePh': "?",
             'text': "Effect",
@@ -76,18 +75,16 @@ var CardSpell = {
             'header1': "Fill the card data",
             'header1bis': "Set a picture",
             'header2': "Preview the final result",
+            
             'copyright': "Based on the PSD file proposed by <a href='https://the-overlord.com/index.php?/profile/9-genesteal28/'>@genesteal28</a> and converted at the GIMP format by <a href='https://the-overlord.com/index.php?/profile/31-jabbathehatt/'>@jabbathehatt</a> and <a href='https://the-overlord.com/index.php?/profile/1-sentma/'>SentMa</a> for the back of the card."
         },
         'it': {
             'tab': "Incantesimi",
-            'nocard': "Al momento non hai carte. ",
-            'nocard2': "Clicca + sulla barra degli strumenti per crearne una.",
-            'newcard': "Crea una nuova carta",
-            'print': "Stampa le carte",
+            'nocard': "Al momento non hai carte",
+            'nocard2': "<br/><br/>TODO_TRANSLATE",
+            'newcard': "TODO_TRANSLATE",
             'editcard': "Modifica una carta",
-            'save': "Salva",
-            'remove': "Cancella",
-            'removeConfirm': "Sei sicuro che vuoi cancellare questa carta?",
+
             'name': "Nome",
             'namePh': "?",
             'text': "Effetto",
@@ -115,36 +112,16 @@ var CardSpell = {
             'header1': "Riempi le informazioni della carta",
             'header1bis': "Scegli un'immagine",
             'header2': "Anteprima del risultato finale",
+            
             'copyright': "Basati sui file PSD di <a href='https://the-overlord.com/index.php?/profile/9-genesteal28/'>@genesteal28</a> e convertiti nel formato GIMP da <a href='https://the-overlord.com/index.php?/profile/31-jabbathehatt/'>@jabbathehatt</a> e <a href='https://the-overlord.com/index.php?/profile/1-sentma/'>SentMa</a> per il retro delle carte."
         }
     },
     
-    preinit: function() {
-        Studio._slides.push({   label: CardSpell._i18n[Language].tab, id: "spell", onShow: CardSpell.onShow,  onHide: CardSpell.onHide });
-    },
-
-    init: function() {
-        Nav.addAction("studio", CardSpell._i18n[Language].newcard, "spell-icon-add", "spell-add", CardSpell.add);
-        Nav.addAction("studio", CardSpell._i18n[Language].print, "spell-icon-print", "spell-print", Studio.printCards);
-        CardSpell.onHide();
-        CardSpell._displayCards();
-    },
-
-    _displayCards: function()
-    {
-        $("#spell").html(CardSpell._getDisplayCardsCode(true));
-    },
-        
-    printCode: function ()
-    {
-          return CardSpell._getDisplayCardsCode(false);
-    },
-
-    _getDisplayCardsCode: function(withEditLink)
+    _getDisplayItemsCode: function(withEditLink)
     {
         var html = "";
 
-        var cards = JSON.parse(localStorage.getItem(Application + "_StudioSpellCards")) || [];
+        var cards = JSON.parse(localStorage.getItem(this.storage)) || [];
         if (cards.length > 0)
         {
             for (var i in cards)
@@ -152,7 +129,7 @@ var CardSpell = {
                 var prefix = "", suffix = "";
                 if (withEditLink !== false)
                 {
-                    prefix = "<a href='javascript:void(0)' onclick='CardSpell.add(JSON.parse(localStorage.getItem(\"" + Application + "_StudioSpellCards\"))[" + i + "])'>";
+                    prefix = "<a href='javascript:void(0)' onclick='CardSpell.add(JSON.parse(localStorage.getItem(\"" + this.storage + "\"))[" + i + "])'>";
                     suffix = "</a>";
                 }
                 else
@@ -178,16 +155,6 @@ var CardSpell = {
         }
 
         return html;
-    },
-
-    onShow: function() {
-        Nav.showAction("studio", "spell-add");
-        Nav.showAction("studio", "spell-print");
-    },
-
-    onHide: function() {
-        Nav.hideAction("studio", "spell-add");
-        Nav.hideAction("studio", "spell-print");
     },
 
     _cardCode: function(card) {
@@ -228,23 +195,8 @@ var CardSpell = {
         return code;
     },
 
-    add: function(card) {
-        var actions = [{
-                label: CardSpell._i18n[Language].save,
-                icon: "spell-save",
-                fn: "CardSpell._save();"
-        }];
-        if (card != undefined)
-        {
-            actions.push({
-                label: CardSpell._i18n[Language].remove,
-                icon: "spell-remove",
-                fn: "CardSpell._remove();"
-            });
-        }
-
-        var dlabel = card == undefined ? CardSpell._i18n[Language].newcard : CardSpell._i18n[Language].editcard;
-
+    _add: function(card, dlabel, actions)
+    {
         Nav.dialog(dlabel,
             "<div class=\"eqcolspell\">"
             + "<div class=\"spell\">"
@@ -335,13 +287,6 @@ var CardSpell = {
         CardSpell._preview();
     },
 
-    _preview: function()
-    {
-        var card = CardSpell._form2card();
-        var code = CardSpell._cardCode(card);
-        $(".dialog .preview").html(code);
-    },
-
     _form2card: function()
     {
         return {
@@ -380,79 +325,20 @@ var CardSpell = {
         $(".dialog input[name=cardreaction]")[0].checked = card.reaction;
     },
 
-    _remove: function()
+    _checkForm: function(card)
     {
-        if (confirm(CardSpell._i18n[Language].removeConfirm))
-        {
-            var card = CardSpell._form2card();
-
-            var cards = JSON.parse(localStorage.getItem(Application + "_StudioSpellCards")) || [];
-            var newCards = [];
-
-            for (var c in cards)
-            {
-                if (cards[c].id == card.id)
-                {
-                    // nothing here, to remove
-                }
-                else
-                {
-                    newCards.push(cards[c]);
-                }
-            }
-
-            localStorage.setItem(Application + "_StudioSpellCards", JSON.stringify(newCards));
-            CardSpell._displayCards();
-            Nav.closeDialog();
-        }
-    },
-
-    _save: function()
-    {
-        var card = CardSpell._form2card();
-
-        $(".dialog .field.error").removeClass("error");
-
         var errors = 0;
         if (!card.name)
         {
             $(".dialog input[name=cardname]").parent().addClass("error");
             errors++;
         }
-        if (errors > 0)
-        {
-            return;
-        }
-
-        var cards = JSON.parse(localStorage.getItem(Application + "_StudioSpellCards")) || [];
-        var newCards = [];
-
-        var done = false;
-        for (var c in cards)
-        {
-            if (cards[c].id == card.id)
-            {
-                newCards.push(card);
-                done = true;
-            }
-            else
-            {
-                newCards.push(cards[c]);
-            }
-        }
-        if (!done)
-        {
-            newCards.push(card);
-        }
-
-        localStorage.setItem(Application + "_StudioSpellCards", JSON.stringify(newCards));
-        CardSpell._displayCards();
-        Nav.closeDialog();
+        return errors;
     },
-
+    
     copyright: function()
     {
         return "<h3>" + CardSpell._i18n[Language].tab + "</h3>"
             + "<p>" + CardSpell._i18n[Language].copyright + "</p>"
     }
-}
+});

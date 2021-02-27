@@ -312,7 +312,7 @@ var EncyclopediaHeroes = {
             var hero = heroList[i];
 
             heroes += "<a id='hero-" + hero.id + "' href='javascript:void(0)' onclick='EncyclopediaHeroes.openSheet(\"" + hero.id + "\")'>";
-            heroes += HeroSheet._sheetCode(EncyclopediaHeroes._convertHeroToStudio(hero, false));
+            heroes += HeroSheet._cardCode(EncyclopediaHeroes._convertHeroToStudio(hero, false));
             heroes += "</a>";
         }
 
@@ -481,7 +481,7 @@ var EncyclopediaHeroes = {
                     + originString
                 + "</div>"
                 + model
-                + HeroSheet._sheetCode(EncyclopediaHeroes._convertHeroToStudio(sheet, false))
+                + HeroSheet._cardCode(EncyclopediaHeroes._convertHeroToStudio(sheet, false))
                 + classText
                 + skills
                 + superdetails
@@ -499,7 +499,7 @@ var EncyclopediaHeroes = {
     _transfert: function(id) {
         if (confirm(EncyclopediaHeroes._i18n[Language].transfertConfirm))
         {
-            var cards = JSON.parse(localStorage.getItem(Application + "_StudioHeroSheets")) || [];
+            var cards = JSON.parse(localStorage.getItem(HeroSheet.storage)) || [];
 
             var images = {};
 
@@ -507,7 +507,7 @@ var EncyclopediaHeroes = {
             var studioHero = EncyclopediaHeroes._convertHeroToStudio(hero, true);
             cards.push(studioHero);
 
-            localStorage.setItem(Application + "_StudioHeroSheets", JSON.stringify(cards));
+            localStorage.setItem(HeroSheet.storage, JSON.stringify(cards));
 
             HeroSheet._displayCards();
 

@@ -29,6 +29,7 @@
         "maps/maps.js",
         "rules/rules.js",
         "encyclopedia/encyclopedia.js",
-        "studio/studio.js"
+        "studio/studio.js",
+        "studio/studio_item.js"
     ]
 }

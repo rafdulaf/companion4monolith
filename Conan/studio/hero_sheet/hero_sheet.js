@@ -1,16 +1,16 @@
-var HeroSheet = {
+var HeroSheet = mergeObject(StudioItem, {
+    name: 'hero',
+    cls: 'HeroSheet',
+    storage: Application + "_StudioHeroSheets",
+    
     _i18n: {
         'fr': {
             'tab': "Héros",
-            'nocard': "Vous n'avez aucune fiche pour le moment.",
-            'nocard2': " Cliquez sur le bouton + en haut pour en creer une.",
-            'newcard': "Créer une fiche",
-            'print': "Imprimer des fiches",
+            'nocard': "Vous n'avez aucune fiche de héros pour le moment",
+            'nocard2': "<br/><br/>Cliquez sur le bouton + pour en créer une",
+            'newcard': "Créer un héros",
             'printHint': "Une fiche de héros mesure 21cm. Si vous souhaitez imprimer avec les marges de découpe, vous devrez imprimer en mode paysage 1 seule fiche à la fois. Si vous imprimez sans les magres de découpe, vous pouvez imprimer 2 fiches à la fois en mode portrait.",
             'editcard': "Modifier",
-            'save': "Enregistrer",
-            'remove': "Effacer",
-            'removeConfirm': "Etes-vous sûr de vouloir effacer cette fiche ?",
 
             'name': "Nom",
             'namePh': "?",
@@ -45,19 +45,16 @@ var HeroSheet = {
             'header1': "Saisissez les données de la fiche",
             'header1bis': "Mettez une image",
             'header2': "Prévisualiser la fiche",
+            
             'copyright': "Basé sur le fichier PSD proposé par <a href='https://the-overlord.com/index.php?/profile/13-roolz/'>@Roolz</a>/<a href='https://the-overlord.com/index.php?/profile/4-doucefeuille/'>@Doucefeuille</a> et converti au format GIMP par <a href='https://the-overlord.com/index.php?/profile/31-jabbathehatt/'>@jabbathehatt</a>."
         },
         'en': {
             'tab': "Heroes",
-            'nocard': "You have no sheet for the moment.",
-            'nocard2': " Click on the + button in the header to create one.",
-            'newcard': "Create a new sheet",
-            'print': "Print sheets",
+            'nocard': "You have no hero sheet for the moment",
+            'nocard2': "<br/><br/>Click on the + button to create one",
+            'newcard': "Create a new hero",
             'printHint': "A hero sheet is 21cm (8.3\") wide. If you want to print with cut margins, you have to print in landscape mode and only 1 sheet at a time. If you want to print without cut margins, you can print up to 2 sheets at a time in portrait mode.",
             'editcard': "Edit a card",
-            'save': "Save",
-            'remove': "Delete",
-            'removeConfirm': "Are you sure that you want to delete this sheet?",
 
             'name': "Name",
             'namePh': "?",
@@ -92,19 +89,16 @@ var HeroSheet = {
             'header1': "Fill the sheet data",
             'header1bis': "Set a picture",
             'header2': "Preview the final result",
+            
             'copyright': "Based on the PSD file proposed by <a href='https://the-overlord.com/index.php?/profile/13-roolz/'>@Roolz</a>/<a href='https://the-overlord.com/index.php?/profile/4-doucefeuille/'>@Doucefeuille</a> and converted at the GIMP format by <a href='https://the-overlord.com/index.php?/profile/31-jabbathehatt/'>@jabbathehatt</a>."
         },
         'it': {
             'tab': "Eroi",
-            'nocard': "Al momento non hai schede-Eroe. ",
-            'nocard2': " Clicca + sulla barra degli strumenti per crearne una",
-            'newcard': "Crea una nuova scheda",
-            'print': "Stampa le schede",
+            'nocard': "Al momento non hai schede-Eroe",
+            'nocard2': "<br/><br/>TODO_TRANSLATE",
+            'newcard': "TODO_TRANSLATE",
             'printHint': "Una scheda eroe misura 21cm (8.3\") in larghezza. Se vuoi stampare con gli indicatori di taglio, devi stampare in orizzontale e solo una scheda alla volta. Se vuoi stampare senza gli indicatori di taglio, puoi stampare fino a 2 schede alla volta con l'orientamento del foglio in verticale.",
             'editcard': "Modifica una carta",
-            'save': "Salva",
-            'remove': "Cancella",
-            'removeConfirm': "Sei sicuro che vuoi cancellare questa scheda?",
 
             'name': "Nome",
             'namePh': "?",
@@ -139,37 +133,21 @@ var HeroSheet = {
             'header1': "Completa le informazioni della scheda",
             'header1bis': "Scegli un'immagine",
             'header2': "Anteprima del risultato finale",
+            
             'copyright': "Basati sui file PSD di <a href='https://the-overlord.com/index.php?/profile/13-roolz/'>@Roolz</a>/<a href='https://the-overlord.com/index.php?/profile/4-doucefeuille/'>@Doucefeuille</a> e convertiti nel formato GIMP da <a href='https://the-overlord.com/index.php?/profile/31-jabbathehatt/'>@jabbathehatt</a>."
         }
     },
-
-    preinit: function() {
-        Studio._slides.push({   label: HeroSheet._i18n[Language].tab, id: "hero", onShow: HeroSheet.onShow,  onHide: HeroSheet.onHide });
-    },
-
-    init: function() {
-        Nav.addAction("studio", HeroSheet._i18n[Language].newcard, "hero-icon-add", "hero-add", HeroSheet.add);
-        Nav.addAction("studio", HeroSheet._i18n[Language].print, "hero-icon-print", "hero-print", Studio.printCards);
-        HeroSheet.onHide();
-        HeroSheet._displayCards();
-    },
-
-    _displayCards: function()
+    
+    _printCode: function ()
     {
-        $("#hero").html(HeroSheet._getDisplayCardsCode(true));
+          return "<p class='subhint'>" + HeroSheet._i18n[Language].printHint + "</p>";
     },
-        
-    printCode: function ()
-    {
-          return "<p class='subhint'>" + HeroSheet._i18n[Language].printHint + "</p>"
-                + HeroSheet._getDisplayCardsCode(false);
-    },
-
-    _getDisplayCardsCode: function(withEditLink)
+    
+    _getDisplayItemsCode: function(withEditLink)
     {
         var html = "";
 
-        var cards = JSON.parse(localStorage.getItem(Application + "_StudioHeroSheets")) || [];
+        var cards = JSON.parse(localStorage.getItem(this.storage)) || [];
         if (cards.length > 0)
         {
             for (var i in cards)
@@ -177,7 +155,7 @@ var HeroSheet = {
                 var prefix = "", suffix = "";
                 if (withEditLink !== false)
                 {
-                    prefix = "<a href='javascript:void(0)' onclick='HeroSheet.add(JSON.parse(localStorage.getItem(\"" + Application + "_StudioHeroSheets\"))[" + i + "])'>";
+                    prefix = "<a href='javascript:void(0)' onclick='HeroSheet.add(JSON.parse(localStorage.getItem(\"" + this.storage + "\"))[" + i + "])'>";
                     suffix = "</a>";
                 }
                 else
@@ -186,7 +164,7 @@ var HeroSheet = {
                     suffix = "</label>";
                 }
 
-                html += prefix + "<div class='printoverflow'>" + HeroSheet._sheetCode(cards[i]) + "</div>" + suffix;
+                html += prefix + "<div class='printoverflow'>" + HeroSheet._cardCode(cards[i]) + "</div>" + suffix;
             }
         }
         else
@@ -198,24 +176,14 @@ var HeroSheet = {
         {
             for (var i in cards)
             {
-                html += "<div class='printoverflow back invisible' id='herosheet-back-" + i + "'>" + HeroSheet._sheetCode(cards[i]) + "</div>";
+                html += "<div class='printoverflow back invisible' id='herosheet-back-" + i + "'>" + HeroSheet._cardCode(cards[i]) + "</div>";
             }
         }
 
         return html;
     },
 
-    onShow: function() {
-        Nav.showAction("studio", "hero-add");
-        Nav.showAction("studio", "hero-print");
-    },
-
-    onHide: function() {
-        Nav.hideAction("studio", "hero-add");
-        Nav.hideAction("studio", "hero-print");
-    },
-
-    _sheetCode: function(sheet) {
+    _cardCode: function(sheet) {
         var code = "<div class=\"herosheet sheet\">";
 
         code += "<picture class=\"background-l1\">"
@@ -292,23 +260,8 @@ var HeroSheet = {
         return code;
     },
 
-    add: function(sheet)
+    _add: function(sheet, dlabel, actions)
     {
-        var actions = [{
-                label: HeroSheet._i18n[Language].save,
-                icon: "hero-save",
-                fn: "HeroSheet._save();"
-        }];
-        if (sheet != undefined)
-        {
-            actions.push({
-                label: HeroSheet._i18n[Language].remove,
-                icon: "hero-remove",
-                fn: "HeroSheet._remove();"
-            });
-        }
-
-        var dlabel = sheet == undefined ? HeroSheet._i18n[Language].newcard : HeroSheet._i18n[Language].editcard;
         Nav.dialog(dlabel,
             "<div class=\"hscol\">"
             + "<div class=\"sheet\">"
@@ -475,19 +428,12 @@ var HeroSheet = {
                 }});
         });
 
-        HeroSheet._sheet2form(sheet);
+        HeroSheet._card2form(sheet);
 
         HeroSheet._preview();
     },
 
-    _preview: function()
-    {
-        var sheet = HeroSheet._form2sheet();
-        var code = HeroSheet._sheetCode(sheet);
-        $(".dialog .preview").html(code);
-    },
-
-    _form2sheet: function()
+    _form2card: function()
     {
         var skills = [];
         for (var i = 0; i < 5; i++)
@@ -526,7 +472,8 @@ var HeroSheet = {
             skills: skills
         }
     },
-    _sheet2form: function(sheet)
+    
+    _card2form: function(sheet)
     {
         $(".dialog input[name=sheetpos]")[0].value = sheet.id;
         $(".dialog input[name=sheetname]")[0].value = sheet.name;
@@ -557,39 +504,8 @@ var HeroSheet = {
         }
     },
 
-    _remove: function()
+    _checkForm: function(sheet)
     {
-        if (confirm(HeroSheet._i18n[Language].removeConfirm))
-        {
-            var sheet = HeroSheet._form2sheet();
-
-            var sheets = JSON.parse(localStorage.getItem(Application + "_StudioHeroSheets")) || [];
-            var newSheets = [];
-
-            for (var c in sheets)
-            {
-                if (sheets[c].id == sheet.id)
-                {
-                    // nothing here, to remove
-                }
-                else
-                {
-                    newSheets.push(sheets[c]);
-                }
-            }
-
-            localStorage.setItem(Application + "_StudioHeroSheets", JSON.stringify(newSheets));
-            HeroSheet._displayCards();
-            Nav.closeDialog();
-        }
-    },
-
-     _save: function()
-    {
-        var sheet = HeroSheet._form2sheet();
-
-        $(".dialog .field.error").removeClass("error");
-
         var errors = 0;
         if (!sheet.name)
         {
@@ -611,36 +527,7 @@ var HeroSheet = {
             $(".dialog .field.caracs").addClass("error");
             errors++;
         }
-
-        if (errors > 0)
-        {
-            return;
-        }
-
-        var sheets = JSON.parse(localStorage.getItem(Application + "_StudioHeroSheets")) || [];
-        var newSheets = [];
-
-        var done = false;
-        for (var c in sheets)
-        {
-            if (sheets[c].id == sheet.id)
-            {
-                newSheets.push(sheet);
-                done = true;
-            }
-            else
-            {
-                newSheets.push(sheets[c]);
-            }
-        }
-        if (!done)
-        {
-            newSheets.push(sheet);
-        }
-
-        localStorage.setItem(Application + "_StudioHeroSheets", JSON.stringify(newSheets));
-        HeroSheet._displayCards();
-        Nav.closeDialog();
+        return errors;
     },
 
     copyright: function()
@@ -648,4 +535,4 @@ var HeroSheet = {
         return "<h3>" + HeroSheet._i18n[Language].tab + "</h3>"
             + "<p>" + HeroSheet._i18n[Language].copyright + "</p>"
     }
-}
+});

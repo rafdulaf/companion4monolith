@@ -1,15 +1,16 @@
-var CardEquipment = {
+var CardEquipment = mergeObject(StudioItem, {
+    name: 'equipment',
+    cls: 'CardEquipment',
+    storage: Application + "_StudioEquipmentCards", 
+    
     _i18n: {
         'fr': {
             'tab': "Équipe<wbr/>ments",
-            'nocard': "Vous n'avez aucune carte pour le moment.",
-            'nocard2': " Cliquez sur le bouton + en haut pour en creer une.",
-            'newcard': "Créer une carte",
-            'print': "Imprimer des cartes",
+            'nocard': "Vous n'avez aucune carte d'équipement pour le moment",
+            'nocard2': "<br/><br/>Cliquez sur le bouton + pour en creer une",
+            'newcard': "Créer un équipement",
             'editcard': "Modifier",
-            'save': "Enregistrer",
-            'remove': "Effacer",
-            'removeConfirm': "Etes-vous sûr de vouloir effacer cette carte ?",
+            
             'name': "Nom",
             'namePh': "?",
             'weight': "Encombrement",
@@ -45,18 +46,16 @@ var CardEquipment = {
             'header1': "Saisissez les données de la carte",
             'header1bis': "Mettez une image",
             'header2': "Prévisualiser la carte",
+            
             'copyright': "Basé sur le fichier PSD proposé par <a href='https://the-overlord.com/index.php?/profile/9-genesteal28/'>@genesteal28</a> et converti au format GIMP par <a href='https://the-overlord.com/index.php?/profile/31-jabbathehatt/'>@jabbathehatt</a> et <a href='https://the-overlord.com/index.php?/profile/1-sentma/'>SentMa</a> pour le dos de carte."
         },
         'en': {
             'tab': "Equip<wbr/>ments",
-            'nocard': "You have no card for the moment.",
-            'nocard2': " Click on the + button in the header to create one.",
-            'newcard': "Create a new card",
-            'print': "Print cards",
+            'nocard': "You have no card for the moment",
+            'nocard2': "<br/><br/>Click on the + button to create one",
+            'newcard': "Create an equipment",
             'editcard': "Edit a card",
-            'save': "Save",
-            'remove': "Delete",
-            'removeConfirm': "Are you sure that you want to delete this card?",
+            
             'name': "Name",
             'namePh': "?",
             'weight': "Encumbrance",
@@ -92,18 +91,16 @@ var CardEquipment = {
             'header1': "Fill the card data",
             'header1bis': "Set a picture",
             'header2': "Preview the final result",
+            
             'copyright': "Based on the PSD file proposed by <a href='https://the-overlord.com/index.php?/profile/9-genesteal28/'>@genesteal28</a> and converted at the GIMP format by <a href='https://the-overlord.com/index.php?/profile/31-jabbathehatt/'>@jabbathehatt</a> and <a href='https://the-overlord.com/index.php?/profile/1-sentma/'>SentMa</a> for the back of the card."
         },
         'it': {
             'tab': "Equip<wbr/>aggiamento",
-            'nocard': "Al momento non hai carte. ",
-            'nocard2': "Clicca + sulla barra degli strumenti per aggiungerne una",
-            'newcard': "Crea una nuova carta",
-            'print': "Stampa carte",
+            'nocard': "Al momento non hai carte",
+            'nocard2': "<br/><br/>TODO_TRANSLATE",
+            'newcard': "TODO_TRANSLATE",
             'editcard': "Modifica una carta",
-            'save': "Salva",
-            'remove': "Cancella",
-            'removeConfirm': "Sei sicuro di voler cancellare questa carta?",
+            
             'name': "Nome",
             'namePh': "?",
             'weight': "Ingombro",
@@ -139,36 +136,16 @@ var CardEquipment = {
             'header1': "Completa le informazioni sulla carta",
             'header1bis': "Scegli un'immagine",
             'header2': "Anteprima risultato finale",
+            
             'copyright': "Basato sui file PSD di <a href='https://the-overlord.com/index.php?/profile/9-genesteal28/'>@genesteal28</a> e convertiti nel formato GIMP da <a href='https://the-overlord.com/index.php?/profile/31-jabbathehatt/'>@jabbathehatt</a> e <a href='https://the-overlord.com/index.php?/profile/1-sentma/'>SentMa</a> per il retro delle carte."
         }
     },
-
-    preinit: function() {
-        Studio._slides.push({   label: CardEquipment._i18n[Language].tab, id: "equipment", onShow: CardEquipment.onShow,  onHide: CardEquipment.onHide });
-    },
-
-    init: function() {
-        Nav.addAction("studio", CardEquipment._i18n[Language].newcard, "equipment-icon-add", "equipment-add", CardEquipment.add);
-        Nav.addAction("studio", CardEquipment._i18n[Language].print, "equipment-icon-print", "equipment-print", Studio.printCards);
-        CardEquipment.onHide();
-        CardEquipment._displayCards();
-    },
-
-    _displayCards: function()
-    {
-        $("#equipment").html(CardEquipment._getDisplayCardsCode(true));
-    },
-        
-    printCode: function ()
-    {
-          return CardEquipment._getDisplayCardsCode(false);
-    },
     
-    _getDisplayCardsCode: function(withEditLink)
+    _getDisplayItemsCode: function(withEditLink)
     {
         var html = "";
 
-        var cards = JSON.parse(localStorage.getItem(Application + "_StudioEquipmentCards")) || [];
+        var cards = JSON.parse(localStorage.getItem(this.storage)) || [];
         if (cards.length > 0)
         {
             for (var i in cards)
@@ -176,7 +153,7 @@ var CardEquipment = {
                 var prefix = "", suffix = "";
                 if (withEditLink !== false)
                 {
-                    prefix = "<a href='javascript:void(0)' onclick='CardEquipment.add(JSON.parse(localStorage.getItem(\"" + Application + "_StudioEquipmentCards\"))[" + i + "])'>";
+                    prefix = "<a href='javascript:void(0)' onclick='CardEquipment.add(JSON.parse(localStorage.getItem(\"" + this.storage + "\"))[" + i + "])'>";
                     suffix = "</a>";
                 }
                 else
@@ -202,16 +179,6 @@ var CardEquipment = {
         }
 
         return html;
-    },
-
-    onShow: function() {
-        Nav.showAction("studio", "equipment-add");
-        Nav.showAction("studio", "equipment-print");
-    },
-
-    onHide: function() {
-        Nav.hideAction("studio", "equipment-add");
-        Nav.hideAction("studio", "equipment-print");
     },
 
     _cardCode: function(card) {
@@ -349,24 +316,8 @@ var CardEquipment = {
         return undefined;
     },
 
-    add: function(card)
+    _add: function(card, dlabel, actions)
     {
-        var actions = [{
-                label: CardEquipment._i18n[Language].save,
-                icon: "equipment-save",
-                fn: "CardEquipment._save();"
-        }];
-        if (card != undefined)
-        {
-            actions.push({
-                label: CardEquipment._i18n[Language].remove,
-                icon: "equipment-remove",
-                fn: "CardEquipment._remove();"
-            });
-        }
-
-        var dlabel = card == undefined ? CardEquipment._i18n[Language].newcard : CardEquipment._i18n[Language].editcard;
-
         function _skills()
         {
             var s = "";
@@ -511,13 +462,6 @@ var CardEquipment = {
         CardEquipment._preview();
     },
 
-    _preview: function()
-    {
-        var card = CardEquipment._form2card();
-        var code = CardEquipment._cardCode(card);
-        $(".dialog .preview").html(code);
-    },
-
     _form2card: function()
     {
         return {
@@ -566,74 +510,15 @@ var CardEquipment = {
         $(".dialog input[name=cardimageatfront]")[0].checked = card.imageatfront;
     },
 
-    _remove: function()
+    _checkForm: function(card)
     {
-        if (confirm(CardEquipment._i18n[Language].removeConfirm))
-        {
-            var card = CardEquipment._form2card();
-
-            var cards = JSON.parse(localStorage.getItem(Application + "_StudioEquipmentCards")) || [];
-            var newCards = [];
-
-            for (var c in cards)
-            {
-                if (cards[c].id == card.id)
-                {
-                    // nothing here, to remove
-                }
-                else
-                {
-                    newCards.push(cards[c]);
-                }
-            }
-
-            localStorage.setItem(Application + "_StudioEquipmentCards", JSON.stringify(newCards));
-            CardEquipment._displayCards();
-            Nav.closeDialog();
-        }
-    },
-
-    _save: function()
-    {
-        var card = CardEquipment._form2card();
-
-        $(".dialog .field.error").removeClass("error");
-
         var errors = 0;
         if (!card.name)
         {
             $(".dialog input[name=cardname]").parent().addClass("error");
             errors++;
         }
-        if (errors > 0)
-        {
-            return;
-        }
-
-        var cards = JSON.parse(localStorage.getItem(Application + "_StudioEquipmentCards")) || [];
-        var newCards = [];
-
-        var done = false;
-        for (var c in cards)
-        {
-            if (cards[c].id == card.id)
-            {
-                newCards.push(card);
-                done = true;
-            }
-            else
-            {
-                newCards.push(cards[c]);
-            }
-        }
-        if (!done)
-        {
-            newCards.push(card);
-        }
-
-        localStorage.setItem(Application + "_StudioEquipmentCards", JSON.stringify(newCards));
-        CardEquipment._displayCards();
-        Nav.closeDialog();
+        return errors;
     },
 
     copyright: function()
@@ -641,4 +526,4 @@ var CardEquipment = {
         return "<h3>" + CardEquipment._i18n[Language].tab + "</h3>"
             + "<p>" + CardEquipment._i18n[Language].copyright + "</p>"
     }
-}
+});

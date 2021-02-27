@@ -2,6 +2,9 @@ var Studio = {
       _i18n: {
         'fr': {
             'menu': "Studio",
+            'save': "Enregistrer",
+            'remove': "Effacer",
+            'removeConfirm': "Etes-vous sûr de vouloir effacer cette carte ?",
             'printcardsLabel': "Imprimer",
             'printcardsHint': "Sélectionnez les éléments à imprimer puis cliquez sur le bouton imprimer.",
             'printfaces': "Imprimer les dos sur des pages séparées",
@@ -10,6 +13,9 @@ var Studio = {
         },
         'en': {
             'menu': "Studio",
+            'save': "Save",
+            'remove': "Delete",
+            'removeConfirm': "Are you sure that you want to delete this card?",
             'printcardsLabel': "Print",
             'printcardsHint': "Select the items to print and then click on the print button.",
             'printfaces': "Print the backs on separated pages",
@@ -18,6 +24,9 @@ var Studio = {
         },
         'it': {
             'menu': "Studio",
+            'save': "Salva",
+            'remove': "Cancella",
+            'removeConfirm': "Sei sicuro di voler cancellare questa carta?",
             'printcardsLabel': "Stampa",
             'printcardsHint': "Seleziona gli oggetti da stampare e clicca su Stampa.",
             'printfaces': "Stampa i retri su pagine separate",

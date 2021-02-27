@@ -1,12 +1,3 @@
-.hero-icon-add:before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f055";  
-}
-.hero-icon-print:before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f02f";  
-}
-
 #hero {
     font-family: 'Primary';
     overflow: auto;
@@ -245,20 +236,6 @@
 .sheet.herosheet div.manipulation { top: 40%; left: 62.8%; }
 
 
-#hero .nocards {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 80%;
-    transform: translate(-50%,-50%);
-    background-color: rgba(200,200,200,0.5);
-    display: block;
-    padding: 40px;
-    border-radius: 40px;
-    z-index: 10;
-    pointer-events: none;
-    font-family: "Primary";
-}
 
 
 
@@ -277,22 +254,6 @@
 
 
 
-
-
-
-
-
-
-
-
-.dialog .hero-save:before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f0c7";  
-}
-.dialog .hero-remove:before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f2ed";  
-}
 
 
 
@@ -652,4 +613,9 @@
         display: inline-block;
         vertical-align: top;
     }
+}
+
+
+#hero .nocards {
+    background-image: url('img/nocard.png');
 }

@@ -2,6 +2,7 @@ Nav = {
     _id: null,
     _icons: [],
     _actions: {},
+    _floatingActions: {},
     _cb: [],
     
     addIcon: function(label, icon, id, onSelect) 
@@ -14,6 +15,7 @@ Nav = {
         };
         Nav._icons.push(item);
         Nav._actions[id] = [];
+        Nav._floatingActions[id] = [];
         
         if (Nav._id)
         {
@@ -23,6 +25,7 @@ Nav = {
             $("#" + Nav._id + "-contents").append(code);
             code = "<ul for=\"" + id + "\"></ul>";
             $("#" + Nav._id + "-toolbar").append(code);
+            $("#" + Nav._id + "-floatingtoolbar").append(code);
         }
     },
 
@@ -74,6 +77,24 @@ Nav = {
         }
     },
     
+    addFloatingAction: function(iconId, label, icon, id, fn)
+    {
+        var item = {
+            label: label,
+            icon: icon,
+            id: id,
+            fn: fn,
+            hidden: false
+        };
+        Nav._floatingActions[iconId].push(item);
+        
+        if (Nav._id)
+        {
+            var code = Nav._drawFloatingAction(iconId, item);
+            $("#" + Nav._id + "-floatingtoolbar").children("ul[for='" + iconId + "']").append(code);
+        }
+    },
+
     showAction: function(iconId, id)
     {
         for (var i in Nav._actions[iconId])
@@ -84,6 +105,20 @@ Nav = {
                 anychange = true;
                 $('#actions-' + iconId + "-" + Nav._actions[iconId][i].id).show();
                 Nav.updateTitle();
+                return;
+            }
+        }        
+    },
+
+    showFloatingAction: function(iconId, id)
+    {
+        for (var i in Nav._floatingActions[iconId])
+        {
+            if (Nav._floatingActions[iconId][i].id == id && Nav._floatingActions[iconId][i].hidden)
+            {
+                Nav._floatingActions[iconId][i].hidden = false;
+                anychange = true;
+                $('#floatingactions-' + iconId + "-" + Nav._floatingActions[iconId][i].id).show();
                 return;
             }
         }        
@@ -103,7 +138,34 @@ Nav = {
         }        
     },
 
+    hideFloatingAction: function(iconId, id)
+    {
+        for (var i in Nav._floatingActions[iconId])
+        {
+            if (Nav._floatingActions[iconId][i].id == id && !Nav._floatingActions[iconId][i].hidden)
+            {
+                Nav._floatingActions[iconId][i].hidden = true;
+                $('#floatingactions-' + iconId + "-" + Nav._floatingActions[iconId][i].id).hide();
+                return;
+            }
+        }        
+    },
+
     _drawActions: function ()
+    {
+        var s = "";
+        
+        for (var i in Nav._icons)
+        {
+            s = "<ul for=\"" + Nav._icons[i].id + "\">";
+            s += Nav._drawAction(i, Nav._actions[Nav._icons[i]]);
+            s += "</ul>";
+        }
+        
+        return s ;
+    },
+
+    _drawFloatingActions: function ()
     {
         var s = "";
         
@@ -122,6 +184,11 @@ Nav = {
         return "<li><a class=\"" + item.icon + "\" href=\"javascript:void(0);\" id=\"actions-" + iconId + "-" + item.id + "\" onclick=\"Nav.act(this)\" title=\"" + item.label + "\"></a></li>";
     },
 
+    _drawFloatingAction: function (iconId, item)
+    {
+        return "<li><a class=\"" + item.icon + "\" href=\"javascript:void(0);\" id=\"floatingactions-" + iconId + "-" + item.id + "\" onclick=\"Nav.floatingAct(this)\" title=\"" + item.label + "\"><span>" + item.label + "</span></a></li>";
+    },
+
     switchTo: function(elt)
     {
         elt = elt || $('.nav > ul > li > a')[0];
@@ -134,7 +201,9 @@ Nav = {
             window.location.hash = "#" + id;
     
             $("#" + Nav._id + "-toolbar ul.active").removeClass("active");
+            $("#" + Nav._id + "-floatingtoolbar ul.active").removeClass("active");
             $("#" + Nav._id + "-toolbar ul[for='" + id + "']").addClass("active");
+            $("#" + Nav._id + "-floatingtoolbar ul[for='" + id + "']").addClass("active");
     
             $("#" + Nav._id + "-contents > .active").removeClass("active");
             toSelect.addClass("active");
@@ -161,6 +230,22 @@ Nav = {
             }
         }
     },
+    
+    
+    floatingAct: function(elt)
+    {
+        var id = elt.getAttribute("id").substring("floatingactions-".length);
+        var iconId = elt.parentNode.parentNode.getAttribute("for");
+        id = id.substring(iconId.length + 1);
+
+        for (var i in Nav._floatingActions[iconId])
+        {
+            if (Nav._floatingActions[iconId][i].id == id)
+            {
+                Nav._floatingActions[iconId][i].fn();
+            }
+        }
+    },    
     
     updateTitle: function()
     {
@@ -233,6 +318,9 @@ Nav = {
                         + Nav._drawActions()
                     + "</nav>"
                     + "</header>"
+                    + "<nav class=\"floating-toolbar\" id=\"" + Nav._id + "-floatingtoolbar\">"
+                        + Nav._drawFloatingActions()
+                    + "</nav>"
                     + "<nav class=\"nav\" id=\"" + Nav._id + "\">"
                         + "<ul>" 
                             + Nav._drawIcons()

@@ -536,7 +536,7 @@ var EncyclopediaTiles = {
             tile = tileList[i - ignoredPrevious];
 
             tiles += "<a id='tile-" + tile.id + "' href='javascript:void(0)' data-count='" + (ignoredPrevious+1) + "' onclick='EncyclopediaTiles.openTile(\"" + tile.id + "\")'>";
-            tiles += Tile._tileCode(EncyclopediaTiles._convertTileToStudio(tile, false));
+            tiles += Tile._cardCode(EncyclopediaTiles._convertTileToStudio(tile, false));
             tiles += "</a>";
 
             ignoredPrevious = 0;
@@ -686,7 +686,7 @@ var EncyclopediaTiles = {
         for (var e in displayTiles)
         {
             var tile = displayTiles[e];
-            c += "<div class='tile-wrapindetails' data-count='" + colors[tile.color] + "'>" + Tile._tileCode(EncyclopediaTiles._convertTileToStudio(tile, false)) + "</div>";
+            c += "<div class='tile-wrapindetails' data-count='" + colors[tile.color] + "'>" + Tile._cardCode(EncyclopediaTiles._convertTileToStudio(tile, false)) + "</div>";
         }
 
         var skills = ((tile.skills && tile.skills[0] != 'none') ?
@@ -763,7 +763,7 @@ var EncyclopediaTiles = {
 
             localStorage.setItem(Application + "_StudioTiles", JSON.stringify(studiotiles));
 
-            Tile._displayTiles();
+            Tile._displayCards();
 
             Nav.switchTo($("*[for=studio]")[0]);
             $("#studio .nav-wrapper").slick('slickGoTo', $("#tile").index());

@@ -1,15 +1,16 @@
-var Tile = {
+var Tile = mergeObject(StudioItem, {
+    name: 'tile',
+    cls: 'Tile',
+    storage: Application + "_StudioTiles",
+    
     _i18n: {
         'fr': {
             'tab': "Tuiles",
-            'notile': "Vous n'avez aucune tuile pour le moment.",
-            'notile2': " Cliquez sur le bouton + en haut pour en creer une.",
-            'newtile': "Créer une tuile",
-            'print': "Imprimer des tuiles",
-            'edittile': "Modifier",
-            'save': "Enregistrer",
-            'remove': "Effacer",
-            'removeConfirm': "Etes-vous sûr de vouloir effacer cette tuile ?",
+            'nocard': "Vous n'avez aucune tuile pour le moment",
+            'nocard2': "<br/><br/>Cliquez sur le bouton + pour en creer une",
+            'newcard': "Créer une tuile",
+            'editcard': "Modifier",
+
             'name': "Nom",
             'namePh': "?",
             'color': "Couleur",
@@ -51,18 +52,16 @@ var Tile = {
             'header1bis': "Mettez une image",
             'header1ter': "Ajouter des jetons",
             'header2': "Prévisualiser la tuile",
+            
             'copyright': "Basé sur le fichier PSD proposé par <a href='https://the-overlord.com/index.php?/profile/9-genesteal28/'>@genesteal28</a> et converti au format GIMP par <a href='https://the-overlord.com/index.php?/profile/31-jabbathehatt/'>@jabbathehatt</a>."
         },
         'en': {
             'tab': "Tiles",
-            'notile': "You have no tile for the moment.",
-            'notile2': " Click on the + button in the header to create one.",
-            'newtile': "Create a new tile",
-            'print': "Print tiles",
-            'edittile': "Edit a tile",
-            'save': "Save",
-            'remove': "Delete",
-            'removeConfirm': "Are you sure that you want to delete this tile?",
+            'nocard': "You have no tile for the moment",
+            'nocard2': "<br/><br/>Click on the + button to create one",
+            'newcard': "Create a tile",
+            'editcard': "Edit a tile",
+
             'name': "Name",
             'namePh': "?",
             'color': "Color",
@@ -104,18 +103,16 @@ var Tile = {
             'header1bis': "Set a picture",
             'header1ter': "Add tokens",
             'header2': "Preview the final result",
+            
             'copyright': "Based on the PSD file proposed by <a href='https://the-overlord.com/index.php?/profile/9-genesteal28/'>@genesteal28</a> and converted at the GIMP format by <a href='https://the-overlord.com/index.php?/profile/31-jabbathehatt/'>@jabbathehatt</a>."
         },
         'it': {
             'tab': "Tessere",
-            'notile': "Non hai tessere al momento.",
-            'notile2': " Clicca + sulla barra degli strumenti per crearne una.",
-            'newtile': "Crea nuova tessera",
-            'print': "Stampa la tessera",
-            'edittile': "Modifica al tessera",
-            'save': "Salva",
-            'remove': "Elimina",
-            'removeConfirm': "Sei sicuro di voler eliminare questa tessera?",
+            'nocard': "Non hai tessere al momento",
+            'nocard2': "<br/><br/>TODO_TRANSLATE",
+            'newcard': "TODO_TRANSLATE",
+            'editcard': "Modifica al tessera",
+
             'name': "Nome",
             'namePh': "?",
             'color': "Colore",
@@ -157,36 +154,16 @@ var Tile = {
             'header1bis': "Scegli un'immagine",
             'header1ter': "Aggiungi un segnalino",
             'header2': "Anteprima risultato finale",
+            
             'copyright': "Basato sui file PSD di <a href='https://the-overlord.com/index.php?/profile/9-genesteal28/'>@genesteal28</a> e convertiti nel formato GIMP da <a href='https://the-overlord.com/index.php?/profile/31-jabbathehatt/'>@jabbathehatt</a>."
         }
     },
 
-    preinit: function() {
-        Studio._slides.push({   label: Tile._i18n[Language].tab, id: "tile", onShow: Tile.onShow,  onHide: Tile.onHide });
-    },
-
-    init: function() {
-        Nav.addAction("studio", Tile._i18n[Language].newtile, "tile-icon-add", "tile-add", Tile.add);
-        Nav.addAction("studio", Tile._i18n[Language].print, "tile-icon-print", "tile-print", Studio.printCards);
-        Tile.onHide();
-        Tile._displayTiles();
-    },
-
-    _displayTiles: function()
-    {
-        $("#tile").html(Tile._getDisplayTileCode(true));
-    },
-    
-    printCode: function ()
-    {
-          return Tile._getDisplayTileCode(false);
-    },
-
-    _getDisplayTileCode: function(withEditLink)
+    _getDisplayItemsCode: function(withEditLink)
     {
         var html = "";
 
-        var tiles = JSON.parse(localStorage.getItem(Application + "_StudioTiles")) || [];
+        var tiles = JSON.parse(localStorage.getItem(this.storage)) || [];
         if (tiles.length > 0)
         {
             for (var i in tiles)
@@ -194,7 +171,7 @@ var Tile = {
                 var prefix = "", suffix = "";
                 if (withEditLink !== false)
                 {
-                    prefix = "<a href='javascript:void(0)' onclick='Tile.add(JSON.parse(localStorage.getItem(\"" + Application + "_StudioTiles\"))[" + i + "])'>";
+                    prefix = "<a href='javascript:void(0)' onclick='Tile.add(JSON.parse(localStorage.getItem(\"" + this.storage + "\"))[" + i + "])'>";
                     suffix = "</a>";
                 }
                 else
@@ -205,20 +182,20 @@ var Tile = {
 
                 if (withEditLink)
                 {
-                    html += prefix + "<div class='printoverflow'>" + Tile._tileCode(tiles[i]) + "</div>" + suffix;
+                    html += prefix + "<div class='printoverflow'>" + Tile._cardCode(tiles[i]) + "</div>" + suffix;
                 }
                 else
                 {
                     html += prefix 
-                            + "<div class='printoverflow'>" + Tile._tileCode(tiles[i], true, false) + "</div>" 
-                            + "<div class='printoverflow'>" + Tile._tileCode(tiles[i], true, true) + "</div>" 
+                            + "<div class='printoverflow'>" + Tile._cardCode(tiles[i], true, false) + "</div>" 
+                            + "<div class='printoverflow'>" + Tile._cardCode(tiles[i], true, true) + "</div>" 
                             + suffix;
                 }
             }
         }
         else
         {
-            html += "<div class=\"notiles\">" + Tile._i18n[Language].notile + (withEditLink !== false ? Tile._i18n[Language].notile2 : '') + "</div>";
+            html += "<div class=\"nocards\">" + Tile._i18n[Language].nocard + (withEditLink !== false ? Tile._i18n[Language].nocard2 : '') + "</div>";
         }
 
         if (!withEditLink)
@@ -227,10 +204,10 @@ var Tile = {
             {
                 html += "<div id=\"tile-back-" + i + "\"  class='printoverflow back invisible'>"
                             + "<img class=\"blood\" src=\"studio/tile/img/blood.png?version=" + Version + "\"/>"
-                            + Tile._tileCode(tiles[i], !withEditLink, false) 
+                            + Tile._cardCode(tiles[i], !withEditLink, false) 
                         + "</div>"
                 html += "<div id=\"tile-back2-" + i + "\"  class='printoverflow back invisible'>"
-                            + Tile._tileCode(tiles[i], !withEditLink, true) 
+                            + Tile._cardCode(tiles[i], !withEditLink, true) 
                         + "</div>"
             }
         }
@@ -238,17 +215,7 @@ var Tile = {
         return html;
     },
     
-    onShow: function() {
-        Nav.showAction("studio", "tile-add");
-        Nav.showAction("studio", "tile-print");
-    },
-
-    onHide: function() {
-        Nav.hideAction("studio", "tile-add");
-        Nav.hideAction("studio", "tile-print");
-    },
-    
-    _tileCode: function(tile, tokenAside, tokenMode) {
+    _cardCode: function(tile, tokenAside, tokenMode) {
         var code = "<div class=\"tile tiletile\">"
                 + "<picture class=\"background\">"
                     + "<source media=\"print\" srcset=\"studio/tile/img/background_" + tile.color + "_hd.png?version=" + Version + "\"/>"
@@ -388,24 +355,8 @@ var Tile = {
         return undefined;
     },
     
-    add: function(tile)
+    _add: function(tile, dlabel, actions)
     {
-        var actions = [{
-                label: Tile._i18n[Language].save,
-                icon: "tile-save",
-                fn: "Tile._save();"
-        }];
-        if (tile != undefined)
-        {
-            actions.push({
-                label: Tile._i18n[Language].remove,
-                icon: "tile-remove",
-                fn: "Tile._remove();"
-            });
-        }
-
-        var dlabel = tile == undefined ? Tile._i18n[Language].newtile : Tile._i18n[Language].edittile;
-
         function _skills()
         {
             var s = "";
@@ -428,8 +379,6 @@ var Tile = {
 
             return s;
         }
-
-
 
         Nav.dialog(dlabel,
             "<div class=\"eqcol\">"
@@ -598,19 +547,12 @@ var Tile = {
                     Tile._preview();
                 }});
         });
-        Tile._tile2form(tile);
+        Tile._card2form(tile);
 
         Tile._preview();
     },    
 
-    _preview: function()
-    {
-        var tile= Tile._form2tile();
-        var code = Tile._tileCode(tile, true);
-        $(".dialog .preview").html(code);
-    },
-
-    _form2tile: function()
+    _form2card: function()
     {
         return {
             id: $(".dialog input[name=tilepos]")[0].value,
@@ -632,19 +574,19 @@ var Tile = {
                     image: $(".dialog input[name=tileimagetoken]")[0].value,
                     imagelocation: {x: $(".dialog input[name=tileimagetokenlocation]")[0].value, y: $(".dialog input[name=tileimagetokenlocation2]")[0].value}, 
                     imagezoom: $(".dialog input[name=tileimagetokenzoom]")[0].value,
-                    imagerotation: $(".dialog input[name=tileimagetokenrotation]")[0].value,
+                    imagerotation: $(".dialog input[name=tileimagetokenrotation]")[0].value
                 },
                 { 
                     active: $(".dialog input[name=timagetoken2active]")[0].checked,
                     image: $(".dialog input[name=tileimagetoken2]")[0].value,
                     imagelocation: {x: $(".dialog input[name=tileimagetoken2location]")[0].value, y: $(".dialog input[name=tileimagetoken2location2]")[0].value}, 
                     imagezoom: $(".dialog input[name=tileimagetoken2zoom]")[0].value,
-                    imagerotation: $(".dialog input[name=tileimagetoken2rotation]")[0].value,
+                    imagerotation: $(".dialog input[name=tileimagetoken2rotation]")[0].value
                 }
             ]
         }
     },
-    _tile2form: function(tile)
+    _card2form: function(tile)
     {
         $(".dialog input[name=tilepos]")[0].value = tile.id;
         $(".dialog input[name=tilename]")[0].value = tile.name;
@@ -678,79 +620,20 @@ var Tile = {
         $(".dialog input[name=tileimagetoken2rotation]")[0].value = tile.tokens && tile.tokens.length > 1 ? tile.tokens[1].imagerotation : "0";
     },
     
-    _remove: function()
+    _checkForm: function(tile)
     {
-        if (confirm(Tile._i18n[Language].removeConfirm))
-        {
-            var tile = Tile._form2tile();
-
-            var tiles = JSON.parse(localStorage.getItem(Application + "_StudioTiles")) || [];
-            var newTiles = [];
-
-            for (var c in tiles)
-            {
-                if (tiles[c].id == tile.id)
-                {
-                    // nothing here, to remove
-                }
-                else
-                {
-                    newTiles.push(tiles[c]);
-                }
-            }
-
-            localStorage.setItem(Application + "_StudioTiles", JSON.stringify(newTiles));
-            Tile._displayTiles();
-            Nav.closeDialog();
-        }
-    },
-
-    _save: function()
-    {
-        var tile = Tile._form2tile();
-
-        $(".dialog .field.error").removeClass("error");
-
         var errors = 0;
         if (!tile.name)
         {
             $(".dialog input[name=tilename]").parent().addClass("error");
             errors++;
         }
-        if (errors > 0)
-        {
-            return;
-        }
-
-        var tiles = JSON.parse(localStorage.getItem(Application + "_StudioTiles")) || [];
-        var newTiles = [];
-
-        var done = false;
-        for (var c in tiles)
-        {
-            if (tiles[c].id == tile.id)
-            {
-                newTiles.push(tile);
-                done = true;
-            }
-            else
-            {
-                newTiles.push(tiles[c]);
-            }
-        }
-        if (!done)
-        {
-            newTiles.push(tile);
-        }
-
-        localStorage.setItem(Application + "_StudioTiles", JSON.stringify(newTiles));
-        Tile._displayTiles();
-        Nav.closeDialog();
+        return errors;
     },
-
+    
     copyright: function()
     {
         return "<h3>" + Tile._i18n[Language].tab + "</h3>"
             + "<p>" + Tile._i18n[Language].copyright + "</p>"
     }    
-}
+});
