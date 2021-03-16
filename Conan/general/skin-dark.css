@@ -1,8 +1,8 @@
 :root {
-    --main-color: #542f23;
+    --main-color: #FEFFFF;
     --highlight-color: #ff7900;
     
-    --header-bg-color: #f8f6f6;
+    --header-bg-color: #1C1B20;
     --header-color: var(--main-color);
     --header-title-color: var(--header-color); 
     --header-menu-color: var(--header-color); 
@@ -14,29 +14,29 @@
     --floating-icon-active-bgcolor: #a48f83;
     
     --tabs-color:  var(--header-color);
-    --tabs-bg-color:  transparent;
+    --tabs-bg-color:  var(--header-bg-color);
     
-    --body-bg-color: #f8f6f6;
-    --body-slick-bg-color: transparent;
+    --body-color: var(--main-color);
+    --body-bg-color: #000;
     
-    --dialog-header-bg-color: var(--main-color);
-    --dialog-header-color: #fff;
+    --dialog-header-bg-color: #542f23;
+    --dialog-header-color: var(--main-color);
     --dialog-header-action-color: var(--dialog-header-color); 
     --dialog-header-back-color: var(--highlight-color);
-    --dialog-color: #000;
+    --dialog-color: var(--body-color); 
     --dialog-bg-color: var(--body-bg-color);
     
-    --footer-bg-color: #C2C2C3;
-    --footer-link-color: #3C3C3C;
-    --footer-active-link-color: #fff;
-    --footer-active-link-bg-color: var(--main-color);
+    --footer-bg-color: #3C3B40;
+    --footer-link-color: #565555;
+    --footer-active-link-color: var(--highlight-color);
+    --footer-active-link-bg-color: transparent;
     
     --menu-bg-color: #ededed;
-    --menu-color: var(--main-color);
+    --menu-color: var(--dialog-header-bg-color);
     --menu-active-color: var(--highlight-color);
     
     --rules-skills-title-color: var(--main-color);
-    --rules-skills-text-color: var(--dialog-color);
+    --rules-skills-text-color: var(--body-color);
 }
 
 .menu > div > ul {

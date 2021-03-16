@@ -16,14 +16,14 @@
     --tabs-color:  var(--header-color);
     --tabs-bg-color:  transparent;
     
+    --body-color: #000;
     --body-bg-color: #f8f6f6;
-    --body-slick-bg-color: transparent;
     
     --dialog-header-bg-color: var(--main-color);
     --dialog-header-color: #fff;
     --dialog-header-action-color: var(--dialog-header-color); 
     --dialog-header-back-color: var(--highlight-color);
-    --dialog-color: #000;
+    --dialog-color: var(--body-color);
     --dialog-bg-color: var(--body-bg-color);
     
     --footer-bg-color: #C2C2C3;
@@ -36,7 +36,7 @@
     --menu-active-color: var(--highlight-color);
     
     --rules-skills-title-color: var(--main-color);
-    --rules-skills-text-color: var(--dialog-color);
+    --rules-skills-text-color: var(--body-color);
 }
 
 .menu > div > ul {

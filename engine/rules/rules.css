@@ -88,9 +88,6 @@
 .dialog a.openskill:hover {
     text-decoration: none;
 }
-.dialog a:hover.openskill .skills-title {
-    text-decoration: underline;
-}
 
 
 #rules .skills-text img,

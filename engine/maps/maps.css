@@ -267,6 +267,7 @@
 
 .map-map .map-map-wrapper.map-map-wrapper-display-help:before {
     content: attr(data-help);
+    color: #000;
     position: absolute;
     top: 50%;
     left: 50%;

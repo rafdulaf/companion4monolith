@@ -14,16 +14,16 @@
     --floating-icon-active-bgcolor: #a9FFFF;
     
     --tabs-color:  var(--header-color);
-    --tabs-bg-color:  transparent;
+    --tabs-bg-color:  var(--header-bg-color);
     
+    --body-color: #fff;
     --body-bg-color: #000;
-    --body-slick-bg-color: var(--header-bg-color);
     
     --dialog-header-bg-color: #252525;
     --dialog-header-color: #59BEF9;
     --dialog-header-action-color: var(--dialog-header-color); 
     --dialog-header-back-color: var(--highlight-color);
-    --dialog-color: #fff;
+    --dialog-color: var(--body-color);
     --dialog-bg-color: var(--body-bg-color);
     
     --footer-bg-color: #1B1A1B;
@@ -36,7 +36,7 @@
     --menu-active-color: var(--highlight-color);
     
     --rules-skills-title-color: var(--main-color);
-    --rules-skills-text-color: var(--dialog-color);
+    --rules-skills-text-color: var(--body-color);
 }
 
 .menu > div > ul {

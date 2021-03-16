@@ -320,7 +320,7 @@
 
 .nav-menu {
     border-bottom: 1px solid #cfcfcf;
-    background-color: var(--body-slick-bg-color);
+    background-color: var(--tabs-bg-color);
 }
 .nav-wrapper {
     height: calc(100% - 40px);
