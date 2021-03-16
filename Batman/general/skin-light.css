@@ -16,14 +16,14 @@
     --tabs-color:  var(--header-color);
     --tabs-bg-color:  transparent;
     
-    --body-bg-color: #000;
+    --body-bg-color: #f6f5ef;
     --body-slick-bg-color: var(--header-bg-color);
     
     --dialog-header-bg-color: #252525;
     --dialog-header-color: #59BEF9;
     --dialog-header-action-color: var(--dialog-header-color); 
     --dialog-header-back-color: var(--highlight-color);
-    --dialog-color: #fff;
+    --dialog-color: #1b1b1b;
     --dialog-bg-color: var(--body-bg-color);
     
     --footer-bg-color: #1B1A1B;
@@ -34,13 +34,16 @@
     --menu-bg-color: #ededed;
     --menu-color: #252525;
     --menu-active-color: var(--highlight-color);
+    
+    --rules-skills-title-color: #0d71a0;
+    --rules-skills-text-color: #var(--dialog-color);
 }
 
 .menu > div > ul {
     padding-top: 180px;
 }
 .menu > div > ul:before {
-    background-image: url(../about/logo.png);
+    background-image: url(../about/logo-light.png);
     height: 120px;
 }
 
@@ -50,6 +53,4 @@ ul.floatingactions li a span {
 
 #rules #skills h2 { background-color: var(--header-bg-color); color: var(--main-color); }
 
-.map-index > ul > li { padding: 1px; background-color: var(--main-color); }
-
-::-webkit-scrollbar-track { background-color: #252525; }
+.map-index > ul > li { padding: 1px; background-color: #0d71a0; }

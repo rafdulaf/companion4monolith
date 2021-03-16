@@ -44,6 +44,7 @@ Utils = {
     {
         // Set language
         Language = localStorage.getItem(Application + "_Language") || Utils.autodetectLanguage();
+        Theme = localStorage.getItem(Application + "_Theme") || Utils.autodetectTheme();
         
         // Load version
         Version = (await Utils.loadJSON("../engine/Version.json")).version;
@@ -55,7 +56,7 @@ Utils = {
         });
         
         var applicationFiles = await Utils.loadJSON("Files.json");
-        applicationFiles.css.push("general/skin-" + (localStorage.getItem(Application + "_Theme") || Utils.autodetectTheme()) + ".css");
+        applicationFiles.css.push("general/skin-" + Theme + ".css");
         applicationFiles.css.forEach(function(file) {
             $('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', file + "?version=" + Version) );
         });

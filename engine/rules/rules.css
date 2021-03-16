@@ -70,7 +70,7 @@
 .dialog .skills-title  {
     margin-bottom: 5px;
     text-transform: uppercase;
-    color: var(--main-color);
+    color: var(--rules-skills-title-color);
     font-family: 'Primary';
     font-size: calc(var(--primary-size) * 1rem);
 }
@@ -82,7 +82,7 @@
     font-family: 'Secondary';
     font-size: calc(var(--secondary-size) * 1.375rem);
     line-height: calc(var(--secondary-line-height) * 1.25rem);
-    color: var(--dialog-color);
+    color: var(--rules-skills-text-color);
 }
 
 .dialog a.openskill:hover {

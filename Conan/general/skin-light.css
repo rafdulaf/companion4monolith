@@ -34,12 +34,15 @@
     --menu-bg-color: #ededed;
     --menu-color: var(--main-color);
     --menu-active-color: var(--highlight-color);
+    
+    --rules-skills-title-color: var(--main-color);
+    --rules-skills-text-color: var(--dialog-color);
 }
 
 .menu > div > ul {
     padding-top: 180px;
 }
 .menu > div > ul:before {
-    background-image: url(../about/logo.png);
+    background-image: url(../about/logo-light.png);
     height: 120px;
 }

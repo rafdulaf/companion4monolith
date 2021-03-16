@@ -162,7 +162,7 @@ var About = {
             "<div id='about' class='about'>"
                     + "<div class='about-zone-about'>"
                             + "<h1 style='text-align: center '>" + About._i18n[Language].title + " v" + Version + "</h1>"
-                            + "<img src='about/logo.png?version=" + Version + "'/>" +
+                            + "<img src='about/logo-" + Theme + ".png?version=" + Version + "'/>" +
                             "<a class='fullscreen' onclick='About._toggleFullscreen(); return false' href='javascript:void(0);' title=\"" + About._i18n[Language].fullscreen + "\"></a>" +
                             "<span>" + About._i18n[Language].text + "</span>"
                     + "</div>"
@@ -252,6 +252,7 @@ var About = {
                 
                 var autodetectTheme = Utils.autodetectTheme();
                 var selectedTheme = $(".custom *[name=custom-theme]")[0].value;
+                Theme = selectedTheme || autodetectTheme;
                 localStorage.setItem(Application + "_Theme", selectedTheme);
                 
 
