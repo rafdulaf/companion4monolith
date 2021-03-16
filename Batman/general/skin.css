@@ -6,7 +6,7 @@
     --header-color: var(--main-color);
     --header-title-color: var(--header-color); 
     --header-menu-color: var(--header-color); 
-    --header-icon-color: var(--header-color); 
+    --header-icon-color: var(--header-color);
     
     --floating-icon-color: #000;
     --floating-icon-bgcolor: #59BEF9;
@@ -17,11 +17,13 @@
     --tabs-bg-color:  transparent;
     
     --body-bg-color: #000;
+    --body-slick-bg-color: var(--header-bg-color);
     
     --dialog-header-bg-color: #252525;
     --dialog-header-color: #59BEF9;
     --dialog-header-action-color: var(--dialog-header-color); 
     --dialog-header-back-color: var(--highlight-color);
+    --dialog-color: #fff;
     --dialog-bg-color: var(--body-bg-color);
     
     --footer-bg-color: #1B1A1B;
@@ -47,10 +49,7 @@ ul.floatingactions li a span {
 }
 
 #rules #skills h2 { background-color: var(--header-bg-color); color: var(--main-color); }
-#rules #skills .skills-title { color: var(--main-color); }
-#rules #skills .skills-text { color: #cfcfcf; }
 
-.nav-menu { background-color: var(--header-bg-color); }
 .map-index > ul > li { padding: 1px; background-color: var(--main-color); }
 
 ::-webkit-scrollbar-track { background-color: #252525; }

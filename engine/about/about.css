@@ -53,6 +53,7 @@
 .about h1, .contribute h1 {
     margin-bottom: 0px;
     font-size: calc(var(--secondary-size) * 2.25rem);
+    color: var(--main-color);
 }
 .about h2, .contribute h2 {
     margin-bottom: 0px;

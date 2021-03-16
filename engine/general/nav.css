@@ -255,6 +255,7 @@
     right: 0;
     z-index: 100000;
     background-color: var(--dialog-bg-color);
+    color: var(--dialog-color);
 }
 .dialog-header {
     box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);
@@ -291,7 +292,6 @@
     height: calc(100vh - var(--header-height));
     line-height: 1.5rem;
     overflow: auto;
-    background-color: #FFFFFF;
 } 
 .dialog-content a {
     text-decoration: none;
@@ -320,6 +320,7 @@
 
 .nav-menu {
     border-bottom: 1px solid #cfcfcf;
+    background-color: var(--body-slick-bg-color);
 }
 .nav-wrapper {
     height: calc(100% - 40px);
