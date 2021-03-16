@@ -1,0 +1,55 @@
+:root {
+    --main-color: #59BEF9;
+    --highlight-color: #ED7F33;
+    
+    --header-bg-color: #252525;
+    --header-color: var(--main-color);
+    --header-title-color: var(--header-color); 
+    --header-menu-color: var(--header-color); 
+    --header-icon-color: var(--header-color);
+    
+    --floating-icon-color: #000;
+    --floating-icon-bgcolor: #59BEF9;
+    --floating-icon-hover-bgcolor: #89DEFF;
+    --floating-icon-active-bgcolor: #a9FFFF;
+    
+    --tabs-color:  var(--header-color);
+    --tabs-bg-color:  transparent;
+    
+    --body-bg-color: #000;
+    --body-slick-bg-color: var(--header-bg-color);
+    
+    --dialog-header-bg-color: #252525;
+    --dialog-header-color: #59BEF9;
+    --dialog-header-action-color: var(--dialog-header-color); 
+    --dialog-header-back-color: var(--highlight-color);
+    --dialog-color: #fff;
+    --dialog-bg-color: var(--body-bg-color);
+    
+    --footer-bg-color: #1B1A1B;
+    --footer-link-color: #565555;
+    --footer-active-link-color: var(--main-color);
+    --footer-active-link-bg-color: transparent;
+    
+    --menu-bg-color: #ededed;
+    --menu-color: #252525;
+    --menu-active-color: var(--highlight-color);
+}
+
+.menu > div > ul {
+    padding-top: 180px;
+}
+.menu > div > ul:before {
+    background-image: url(../about/logo.png);
+    height: 120px;
+}
+
+ul.floatingactions li a span {
+    padding-top: 0;
+}
+
+#rules #skills h2 { background-color: var(--header-bg-color); color: var(--main-color); }
+
+.map-index > ul > li { padding: 1px; background-color: var(--main-color); }
+
+::-webkit-scrollbar-track { background-color: #252525; }

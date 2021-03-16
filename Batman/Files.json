@@ -1,7 +1,6 @@
 {
     "css": [
         "vendors/css/fonts.css",
-        "general/skin.css",
         "maps/maps.css"
     ],
     "scripts": [

@@ -1,0 +1,45 @@
+:root {
+    --main-color: #542f23;
+    --highlight-color: #ff7900;
+    
+    --header-bg-color: #f8f6f6;
+    --header-color: var(--main-color);
+    --header-title-color: var(--header-color); 
+    --header-menu-color: var(--header-color); 
+    --header-icon-color: var(--header-color); 
+    
+    --floating-icon-color: #fff;
+    --floating-icon-bgcolor: #542f23;
+    --floating-icon-hover-bgcolor: #845f53;
+    --floating-icon-active-bgcolor: #a48f83;
+    
+    --tabs-color:  var(--header-color);
+    --tabs-bg-color:  transparent;
+    
+    --body-bg-color: #f8f6f6;
+    --body-slick-bg-color: transparent;
+    
+    --dialog-header-bg-color: var(--main-color);
+    --dialog-header-color: #fff;
+    --dialog-header-action-color: var(--dialog-header-color); 
+    --dialog-header-back-color: var(--highlight-color);
+    --dialog-color: #000;
+    --dialog-bg-color: var(--body-bg-color);
+    
+    --footer-bg-color: #C2C2C3;
+    --footer-link-color: #3C3C3C;
+    --footer-active-link-color: #fff;
+    --footer-active-link-bg-color: var(--main-color);
+    
+    --menu-bg-color: #ededed;
+    --menu-color: var(--main-color);
+    --menu-active-color: var(--highlight-color);
+}
+
+.menu > div > ul {
+    padding-top: 180px;
+}
+.menu > div > ul:before {
+    background-image: url(../about/logo.png);
+    height: 120px;
+}

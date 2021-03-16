@@ -18,6 +18,10 @@ var About = {
             'custom_langlabel': "Langue de l'interface",
             'custom_automatic_lang': "Auto-détection",
             'custom_reload': "La modification de votre configuration entrainera un redémarage automatique de l'application",
+            'custom_themelabel': "Thème",
+            'custom_automatic_theme': "Auto-détection",
+            'custom_theme_light': "Clair",
+            'custom_theme_dark': "Foncé",
             'contribute': "Contribuer !",
             'contribute_text': "Vous pouvez contribuer à cette application de nombreuses façons :"
                     + "<ul>"
@@ -49,6 +53,10 @@ var About = {
             'custom_lang': "English",
             'custom_langlabel': "Language",
             'custom_automatic_lang': "Autodetection",
+            'custom_themelabel': "Theme",
+            'custom_automatic_theme': "Autodetection",
+            'custom_theme_light': "Light",
+            'custom_theme_dark': "Dark",
             'custom_reload': "The modification of your configuration will require an automatic application reload",
             'contribute': "Contribute!",
             'contribute_text': "You can contribute to this application in several ways:"
@@ -81,6 +89,10 @@ var About = {
             'custom_lang': "Italiano",
             'custom_langlabel': "Lingua",
             'custom_automatic_lang': "Rivela automaticamente",
+            'custom_themelabel': "TODO_TRANSLATE",
+            'custom_automatic_theme': "TODO_TRANSLATE",
+            'custom_theme_light': "TODO_TRANSLATE",
+            'custom_theme_dark': "TODO_TRANSLATE",
             'custom_reload': "Le modifiche della tua configurazione richiederanno un riavvio automatico dell'applicazione",
             'contribute': "Collabora!",
             'contribute_text': "Puoi collaborare a questa applicazione in molti modi:"
@@ -211,8 +223,14 @@ var About = {
         
         Languages.forEach(code => s += "<option value=\"" + code + "\">" + About._i18n[code].custom_lang + "</option>");
             
-        s += "</select>"
-            +           "</fieldset>"
+        s   +=          "</select>"
+            +           "<label for=\"custom-theme\">" + About._i18n[Language].custom_themelabel + "</label>"
+            +           "<select id=\"custom-theme\" name=\"custom-theme\">"
+            +               "<option value=\"\">" + About._i18n[Language].custom_automatic_theme + "</option>"
+            +               "<option value=\"light\">" + About._i18n[Language].custom_theme_light + "</option>"
+            +               "<option value=\"dark\">" + About._i18n[Language].custom_theme_dark + "</option>"
+            +           "</select>"
+            +       "</fieldset>"
             +       "</div>"
 
             + "</div>"
@@ -223,14 +241,22 @@ var About = {
 
             function()
             {
-                var oldLanguage = localStorage.getItem(Application + "_Language");
+                var oldLanguage = localStorage.getItem(Application + "_Language") || "";
+                var oldTheme = localStorage.getItem(Application + "_Theme") || "";
 
                 // Save
+                var autodetectLanguage = Utils.autodetectLanguage();
                 var selectedLanguage = $(".custom *[name=custom-lang]")[0].value;
-                Language = selectedLanguage || autodetectLanguage();
+                Language = selectedLanguage || autodetectLanguage;
                 localStorage.setItem(Application + "_Language", selectedLanguage);
+                
+                var autodetectTheme = Utils.autodetectTheme();
+                var selectedTheme = $(".custom *[name=custom-theme]")[0].value;
+                localStorage.setItem(Application + "_Theme", selectedTheme);
+                
 
-                if (oldLanguage != selectedLanguage)
+                if ((oldLanguage || autodetectLanguage) != (selectedLanguage || autodetectLanguage)
+                 || (oldTheme || autodetectTheme) != (selectedTheme || autodetectTheme))
                 {
                     window.location.reload(true);
                 }
@@ -238,6 +264,7 @@ var About = {
         );
 
         $(".custom *[name=custom-lang]")[0].value = localStorage.getItem(Application + "_Language") || "";
+        $(".custom *[name=custom-theme]")[0].value = localStorage.getItem(Application + "_Theme") || "";
 
         var display = false;
         $(".custom input, .custom select").on('change', function() {

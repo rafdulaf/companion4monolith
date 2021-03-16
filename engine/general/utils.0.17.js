@@ -11,6 +11,14 @@ Utils = {
         return "en"; 
     },
     
+    autodetectTheme: function() {
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            return "dark";
+        } else {
+            return "light";
+        }
+    },
+    
     loadJSON: function(url)
     {
         try 
@@ -47,6 +55,7 @@ Utils = {
         });
         
         var applicationFiles = await Utils.loadJSON("Files.json");
+        applicationFiles.css.push("general/skin-" + (localStorage.getItem(Application + "_Theme") || Utils.autodetectTheme()) + ".css");
         applicationFiles.css.forEach(function(file) {
             $('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', file + "?version=" + Version) );
         });
