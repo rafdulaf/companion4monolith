@@ -1,0 +1,615 @@
+#hero {
+    font-family: 'Primary';
+    position: relative;
+}
+
+
+.sheet.herosheet {
+    font-family: 'Primary';
+    text-align: left;
+    
+    position: relative;
+    display: inline-block; 
+    
+    margin: 2px;
+
+    overflow: hidden;    
+    font-family: "Motrg";
+    text-shadow: 0 0 3px #FFF;
+}
+
+.printcards input[name=herosheet] { position: absolute; top:-5000px; }
+.printcards input[name=herosheet] + label { position: relative; display: inline-block; margin-right: 5px; }
+.printcards input[name=herosheet] + label:before { position: absolute; content: " "; z-index: 1; top: 0; left: 0; right: 0; bottom: 0; background-color: #000000; opacity: 0.2; }
+.printcards input[name=herosheet] + label:after { position: absolute; content: "\f057"; font-family: 'Font Awesome 5 Free'; font-size: 40px; left: -7px; top: -7px; color: red; }
+.printcards input[name=herosheet]:checked + label:before { display: none; }
+.printcards input[name=herosheet]:checked + label:after { content: "\f058"; color: green; }
+
+.sheet.herosheet {
+    width: 600px;
+    height: calc(600px / 1.75);
+    font-size: 45px;
+}
+
+@media print {
+    .printcards .sheet.herosheet {
+        margin: 0.1cm 0cm;
+        width: 21cm;
+        height: calc(21cm / 1.75);
+        font-size: 1.575cm;
+        zoom: unset;
+        transform: unset;
+        transform-origin: unset;
+    }
+    .printcards.cut .sheet.herosheet {
+        overflow: visible;
+        margin: 0.6cm 0.55cm;
+        break-before: page;
+        break-after: page;
+    }
+    .printcards input[name=herosheet] + label { margin-right: 0; }
+}
+
+.sheet.herosheet picture.background-l1 img,
+.sheet.herosheet div.image,
+.sheet.herosheet picture.background-l3 img {
+    position: absolute;
+    left: -3.5%;
+    top: -6.1%;
+}
+
+.sheet.herosheet picture.background-l1 img,
+.sheet.herosheet picture.background-l3 img {
+    width: 107%;
+    min-height: 50px; /* Bug to ensure visibility on mobile devices */
+}
+
+.sheet.herosheet div.image {
+    height: 112%;
+    width: 100%;
+}
+
+.sheet.herosheet div.image img {
+    position: absolute;
+    min-width: 100%; /* against lazy loading issue */
+    opacity: 0;  /* against lazy loading issue */
+}
+
+.sheet.herosheet div.name {
+    position: absolute;
+    font-size: 42%;
+    font-family: 'Primary';
+    left: 1.5%;
+    top: 68%;
+    color: #363131;
+    transform: translate(-50%, -50%) rotate(-90deg) translate(50%, 50%);
+    text-transform: uppercase;
+}
+.sheet.herosheet div.name span:before {
+    content: " ";
+}
+.sheet.herosheet div.name span {
+    font-size: 60%;
+    color: #565151;
+}
+
+.sheet.herosheet div.gem {
+    position: absolute;
+    left: 1%;
+    width: 3.5%;
+    display: block;
+    text-align: center;
+    top: 88%;
+    color: #FFF;
+    font-size: 65%;
+}
+
+.sheet.herosheet div.skillline {
+    position: absolute;
+    right: 3%;
+    left: 20%;
+    top: 54%;
+    bottom: 31%;
+    text-align: right;
+    font-size: 40%;
+    line-height: normal;
+    color: #D42627;
+    direction: ltr;
+}
+
+.sheet.herosheet div.skillline > * {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    height: 100%;
+}
+.sheet.herosheet div.skillline div.encumbrance_movement-1,
+.sheet.herosheet div.skillline div.encumbrance_movement-2 {
+    width: 4%;
+    text-align: center;
+    padding-top: 2.7%;
+    margin-left: 0.5%;
+}
+.sheet.herosheet div.skillline div.encumbrance_movement-1 {
+    margin-left: 10.5%;
+}
+.sheet.herosheet div.skillline img.background-encumbrance {
+    position: absolute;
+    height: 57%;
+    top: 10%;
+}
+.sheet.herosheet div.skillline div.encumbrance {
+    position: relative;
+    font-size: 177%;
+    width: 4.4%;
+    text-align: center;
+    top: -1.5%;
+    margin-right: 1.5%;
+}
+
+.sheet.herosheet div.skillline div.skill {
+    width: 11%;
+}
+.sheet.herosheet div.skillline div.skill img.skill {
+    width: 78%;
+    display: block;
+}
+.sheet.herosheet div.skillline div.skill .exertion {
+    position: absolute;
+    height: 49%;
+    bottom: 0%;
+    width: 40.6%;
+    right: 2%;
+    text-align: center;
+    font-size: 167%;
+    line-height: 63%;
+}
+
+.sheet.herosheet div.base {
+    position: absolute;
+    width: 12%;
+    height: 9%;
+}
+.sheet.herosheet div.base div.dice {
+    position: absolute;
+    right: 1%;
+    bottom: 1.5%;
+    width: 33%;
+    height: 76%;
+    line-height: 30%;
+    text-align: center;
+    color: #fff;
+    -webkit-print-color-adjust: exact;
+}
+.sheet.herosheet div.base div.dice img {
+    height: 100%;
+}
+.sheet.herosheet div.base div.exertion {
+    position: absolute;
+    left: 2%;
+    top: 5%;
+    color: #D42627;
+    line-height: 40%;
+    font-size: 64%;
+}
+
+.sheet.herosheet div.melee { top: 15%; left: 47.3%; }
+.sheet.herosheet div.ranged { top: 15%; left: 62.8%; }
+.sheet.herosheet div.defense { top: 15%; left: 78.2%; }
+.sheet.herosheet div.movement { top: 40%; left: 47.3%; }
+.sheet.herosheet div.manipulation { top: 40%; left: 62.8%; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dialog .sheet {
+    margin-bottom: 10px;
+}
+.dialog .sheet .field {
+    padding: 0 20px 5px 20px;
+    position: relative;
+    text-align: center;
+}
+.dialog .sheet .field.error {
+    border: 1px solid #FF0000;
+}
+.dialog .sheet .field + .field {
+    margin-top: 10px;
+}
+    
+.dialog .sheet .field label {
+    display: block;
+    font-size: 26px;
+    line-height: 26px;
+    position: relative;
+    text-align: left;
+}
+.dialog .sheet .field input,
+.dialog .sheet .field select {
+    width: 100%;
+}
+
+.dialog .sheet .field input#hsname,
+.dialog .sheet .field input#hssubname {
+   font-size: 20px;
+   font-family: 'Primary';
+   text-align: right;
+   color: #000000;
+   width: 60%;
+   height: unset;
+   padding: 0 3px 0 0;
+}
+.dialog .sheet .field input#hssubname {
+   font-size: 12px;
+   line-height: 19px;
+   padding: 0 0 0 3px;
+   text-align: left;
+   width: 40%;
+}
+
+.dialog .sheet .field.gems {
+    width: 34%;
+    height: 85px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.dialog .sheet .field input#hsgems {
+   font-size: 36px;
+   font-family: "Motrg";
+   text-align: center;
+   width: 54px;
+   height: unset;
+   color: #FFFFFF;
+   background-color: #000000;
+}
+
+.dialog .sheet .field.encumbrance {
+    width: 66%;
+    height: 85px;
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 0;
+}
+.dialog .sheet .field input#hsencumbrance { 
+   font-size: 36px;
+   font-family: "Motrg";
+   text-align: center;
+   width: 33px;
+   height: unset;
+   color: #FFFFFF;
+   background-repeat: no-repeat;
+   background-position: left;
+   background-size: contain;
+   background-image: url(img/weight.png); 
+}
+
+.dialog .sheet .encumbrance,
+.dialog .sheet .encumbrancemov {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+}
+.dialog .sheet .encumbrancemov {
+    width: 70%;
+}
+.dialog .sheet .encumbrancemov {
+    background-repeat: no-repeat;
+    background-position: calc(50% - 6px);
+    background-size: contain;
+    background-image: url(img/weightmov.png); 
+    height: 74px;
+    position: relative;
+    top: -26px;
+    text-align: right;
+    padding-right: calc(35% - 59px);
+    padding-top: 21px;
+}
+.dialog .sheet .field input#hsencumbrancemov1, 
+.dialog .sheet .field input#hsencumbrancemov2 {
+    width: 33px;
+    height: 31px;
+    color: #D42627;
+    font-size: 36px;
+    font-family: "Motrg";
+    text-align: center;
+    background-color: #000;
+    background-color: transparent;
+}
+
+.dialog .sheet .field.caracs {
+    text-align: left;
+}
+.dialog .sheet .field.caracs .carac {
+    display: inline-block;
+    vertical-align: top;
+    width: 33%;
+    height: 113px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+.dialog .sheet .field.caracs .carac input[name$=exertion] {
+    font-family: "Motrg";
+    font-size: 36px;
+    width: 34px;
+    height: unset;
+    color: #D42627;
+    background-color: transparent;
+    position: absolute;
+    top: 47px;
+    left: calc(50% - 47px);
+}
+.dialog .sheet .field.caracs .carac input[name=sheetmovement] {
+    font-family: "Motrg";
+    font-size: 55px;
+    width: 42px;
+    height: 52px;
+    color: #FFFF;
+    background-color: transparent;
+    position: absolute;
+    top: 58px;
+    left: calc(50% + 14px);
+    text-align: center;
+}
+.dialog .sheet .field.caracs .carac.melee { background-image: url(img/d_melee.png); }
+.dialog .sheet .field.caracs .carac.ranged { background-image: url(img/d_ranged.png); }
+.dialog .sheet .field.caracs .carac.defense { background-image: url(img/d_defense.png); }
+.dialog .sheet .field.caracs .carac.movement { background-image: url(img/d_movement.png); }
+.dialog .sheet .field.caracs .carac.manipulation { background-image: url(img/d_manipulation.png); }
+
+.dialog .sheet .ui-menu { width: 100% !important; text-align: right; }
+.dialog .sheet .ui-menu .ui-menu-item { display: inline-block; vertical-align: top; width: 16.6%; text-align: center; }
+.dialog .sheet .skills ~ .ui-selectmenu-menu { width: 58px; } 
+
+@media screen and (max-width: 450px) {
+    .dialog .sheet .ui-menu .ui-menu-item { width: 33%; }
+}
+
+.dialog .sheet .field select.dice
+{
+  font-family: "Font Awesome 5 Free";
+  font-size: 35px;
+  width: 60px;
+  display: inline-block;
+  vertical-align: top;
+  height: 44px;
+}
+.dialog .sheet .ui-front {
+    z-index: 100000;
+    left: 0 !important;
+    right: 0 !important;
+}
+.dialog .sheet .ui-button .ui-icon { background-image: none; }
+.dialog .sheet .ui-selectmenu-menu ul li:before {
+    content: " ";
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+.dialog .sheet span[role=combobox] {
+    background-color: transparent !important;
+    background-position: center !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+}
+
+.dialog .sheet .ui-selectmenu-text, .dialog .sheet .ui-menu .ui-menu-item-wrapper { color: transparent; font-size: 1px; }
+.dialog .sheet .ui-selectmenu-icon.ui-icon.ui-icon-triangle-1-s { background-image: none; }
+.dialog .sheet .ui-menu-item, .dialog .sheet .ui-menu-item-wrapper { height: 40px; position: relative; }
+.dialog .sheet .ui-selectmenu-button.ui-button.ui-widget.ui-selectmenu-button-closed.ui-corner-all { border-color: transparent; }
+
+.dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(1):before, .dialog .sheet select[data-value=red] + span { background-image: url(img/dice_red.png) !important; }
+.dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(2):before, .dialog .sheet select[data-value=redreroll] + span { background-image: url(img/dice_redreroll.png) !important; }
+.dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(3):before, .dialog .sheet select[data-value=orange] + span { background-image: url(img/dice_orange.png) !important; }
+.dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(4):before, .dialog .sheet select[data-value=orangereroll] + span { background-image: url(img/dice_orangereroll.png) !important; }
+.dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(5):before, .dialog .sheet select[data-value=yellow] + span { background-image: url(img/dice_yellow.png) !important; }
+.dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(6):before, .dialog .sheet select[data-value=yellowreroll] + span { background-image: url(img/dice_yellowreroll.png) !important; }
+    
+    
+.dialog .sheet .field.caracs .carac .ui-selectmenu-button {
+    position: absolute;
+    top: 73px;
+    left: calc(50% + 11px);
+}
+
+.dialog .sheet .field.skills .skill {
+    padding-bottom: 5px;
+}
+
+.dialog .sheet .field.skills .skill select   {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 54px);
+    height: 30px;
+    font-size: 26px;
+    font-family: 'Secondary';
+    margin-left: 10px;
+}
+.dialog .sheet .field.skills .skill input {
+    display: inline-block;
+    vertical-align: top;
+    font-family: "Motrg";
+    font-size: 30px;
+    width: 34px;
+    height: 30px;
+    margin-left: 10px;
+    color: #D42627;
+    background-color: #000;
+    text-align: center;
+    padding-bottom: 6px;
+}
+.dialog .sheet .field.skills .skill[data-value=none] ~ .skill {
+    display: none;
+}
+
+
+
+    
+.dialog .sheet .field.imagelocation,
+.dialog .sheet .field.imagezoom,
+.dialog .sheet .field.imagerotation {
+    height: 113px;
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.dialog .sheet .field.imagelocation,
+.dialog .sheet .field.imagezoom,
+.dialog .sheet .field.imagerotation {
+    height: 85px
+}
+
+.dialog .sheet .field.imagelocation {
+    width: 50%;
+    margin-top: 0;
+    text-align: left;
+}
+.dialog .sheet .field.imagezoom,
+.dialog .sheet .field.imagerotation {
+    width: 25%;
+    margin-top: 0;
+    text-align: left;
+}
+.dialog .sheet .field.imagezoom:after,
+.dialog .sheet .field.imagelocation div:after {
+    position: relative;
+    left: -12px;
+    content: "%";
+}
+.dialog .sheet .field.imagerotation:after {
+    position: relative;
+    left: -12px;
+    content: "°";
+}
+.dialog .sheet .field.imagelocation input,
+.dialog .sheet .field.imagezoom input,
+.dialog .sheet .field.imagerotation input {
+    width: 49px;
+    padding-right: 15px;
+    text-align: right;
+}
+.dialog .sheet .field.imagelocation, .dialog .sheet .field.imagezoom
+{ padding-right: 0; }
+.dialog .sheet .field.imagezoom, .dialog .sheet .field.imagerotation
+{ padding-left: 0; }
+
+.dialog .sheet .field.imagelocation > div {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.dialog .sheet input#hsimage {
+    padding-left: 10px;
+}
+
+
+
+
+.dialog .sheet-preview .preview {
+    text-align: center;
+    margin-top: 20px;
+}
+.dialog .sheet h1,
+.dialog .sheet-preview h1 {
+    margin-bottom: 0.5em;
+    margin-top: 0;
+    text-align: center;
+    font-family: 'Primary';
+    font-size: 16px;
+    vertical-align: top;
+}
+.dialog .sheet h1:before,
+.dialog .sheet-preview h1:before {
+    display: inline-block;
+    color: #FFF;
+    background-color: #000;
+    width: 20px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.dialog .hscol:nth-child(1) .sheet h1:before {
+    content: "1";
+}
+.dialog .hscol:nth-child(2) .sheet h1:before {
+    content: "2";
+}
+.dialog .hscol:nth-child(2) .sheet-preview h1:before {
+    content: "3";
+}
+
+@media screen and (max-width: 418px) {
+    .dialog .sheet .field.caracs .carac {
+        width: 50%;
+    }
+}
+@media screen and (min-width: 840px) {
+    .dialog .hscol {
+        width: 50%;
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .dialog .sheet.herosheet {
+        zoom: 0.67;
+    }
+    
+    .ff .dialog .sheet.herosheet {
+        transform-origin: top left;
+        transform: scale(0.67);
+    } 
+}
+@media screen and (max-width: 444px) {
+    .dialog .sheet.herosheet {
+        zoom: 0.53;
+    }
+    
+    .ff .dialog .sheet.herosheet {
+        transform-origin: top left;
+        transform: scale(0.53);
+    } 
+}
+
+.ff .printcards label[for^=herosheet-] .printoverflow {
+    margin-right: -303px;
+    margin-bottom: -181.75px;
+}
+
+#hero .inside > a {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#hero .nocards {
+    background-image: url('img/nocard.png');
+}

@@ -2,11 +2,11 @@ var width;
 function autoZoom() {
     var zoom = Math.floor(window.innerWidth / width * 10000.0) / 10000.0;
     
+    document.body.style.overflow = "hidden";
     if (navigator.userAgent.indexOf('Firefox') != -1)
     {
         document.body.style.transform = "scale(" + zoom + ")";
         document.body.style.transformOrigin = "top left";
-        document.body.style.overflow = "hidden";
     }
     else
     {
