@@ -18,31 +18,36 @@ var HeroSheet = mergeObject(StudioItem, {
             'namePh': "?",
             'subname': "Qualificatif",
             'subnamePh': "?",
+            'type': "Type",
+            'typeHero': "Héros",
+            'typeVillain': "Vilain",
             'gems': "Gemmes",
             'gemsPh': "?",
-            'encumbrance': "Encombrement",
-            'encumbrancePh': "?",
-            'encumbrancemov1Ph': "?",
-            'encumbrancemov2Ph': "?",
+            'gems2': "Repos",
+            'gems2Ph': "?",
+            'gems3': "Actif",
+            'gems3Ph': "?",
+            'move': "Déplacement",
+            'movePh': "?",
+            'belt': "Bat-ceinture",
+            'beltPh': "?",
+            'size': "Envergure",
+            'sizePh': "?",
+            'menace': "Menace",
+            'menacePh': "?",
             'caracs': "Caractéristiques",
             'caracPh': "?",
-            'skills': "Compétences",
-            'skillsPh': "-",
-            'skillsNone' : "Aucune",
+
+            'diceBlack': "Noir",
+            'diceBlackReroll': "Noir \uf01e",
             'diceRed': "Rouge",
             'diceRedReroll': "Rouge \uf01e",
             'diceOrange': "Orange",
             'diceOrangeReroll': "Orange \uf01e",
             'diceYellow': "Jaune",
             'diceYellowReroll': "Jaune \uf01e",
-            'image': "Image (fond transparent)",
-            'imagePh': "Entrer l'adresse de l'image (http://)",
-            'imagelocation': "Emplacement",
-            'imagelocationPh': "0",
-            'imagezoom': "Zoom",
-            'imagezoomPh': "0",
-            'imagerotation': "Rotation",
-            'imagerotationPh': "0",
+            'diceWhite': "Blanc",
+            'diceWhiteReroll': "Blanc \uf01e",
 
             'header1': "Saisissez les données de la fiche",
             'header1bis': "Mettez une image",
@@ -62,32 +67,37 @@ var HeroSheet = mergeObject(StudioItem, {
             'namePh': "?",
             'subname': "Qualifier",
             'subnamePh': "?",
+            'type': "Type",
+            'typeHero': "Hero",
+            'typeVillain': "Villain",
             'gems': "Gems",
             'gemsPh': "?",
-            'encumbrance': "Encumbrance",
-            'encumbrancePh': "?",
-            'encumbrancemov1Ph': "?",
-            'encumbrancemov2Ph': "?",
+            'gems2': "Rest",
+            'gems2Ph': "?",
+            'gems3': "Active",
+            'gems3Ph': "?",
+            'move': "Move",
+            'movePh': "?",
+            'belt': "Belt",
+            'beltPh': "?",
+            'size': "Size",
+            'sizePh': "?",
+            'menace': "Menace",
+            'menacePh': "?",
             'caracs': "Characteristics",
             'caracPh': "?",
-            'skills': "Skills",
-            'skillsPh': "-",
-            'skillsNone' : "None",
+
+            'diceBlack': "Black",
+            'diceBlackReroll': "Black \uf01e",
             'diceRed': "Red",
             'diceRedReroll': "Red \uf01e",
             'diceOrange': "Orange",
             'diceOrangeReroll': "Orange \uf01e",
             'diceYellow': "Yellow",
             'diceYellowReroll': "Yellow \uf01e",
-            'image': "Image (transparent background)",
-            'imagePh': "Enter the image address (http://...)",
-            'imagelocation': "Location",
-            'imagelocationPh': "0",
-            'imagezoom': "Zoom",
-            'imagezoomPh': "0",
-            'imagerotation': "Rotation",
-            'imagerotationPh': "0",
-
+            'diceWhite': "White",
+            'diceWhiteReroll': "White \uf01e",
+            
             'header1': "Fill the sheet data",
             'header1bis': "Set a picture",
             'header2': "Preview the final result",
@@ -144,21 +154,6 @@ var HeroSheet = mergeObject(StudioItem, {
     _cardCode: function(sheet, printPurpose) {
         var code = "<div class=\"herosheet sheet\">";
 
-        code += "<picture class=\"background-l1\">"
-                    + "<source media=\"print\" srcset=\"studio/hero_sheet/img/background_layer_1hd.png?version=" + Version + "\"/>"
-                    + "<img src=\"studio/hero_sheet/img/background_layer_1.png?version=" + Version + "\"/>"
-                + "</picture>";
-
-        if (sheet.image)
-        {
-            code += "<div class=\"image\"><img" + (!printPurpose ? LazyImage : "") + " src=\"" + sheet.image + "\" onload=\"this.style.minWidth = 0; this.style.opacity = 1;\" style=\"left: " + sheet.imagelocation.x + "%; top: " + sheet.imagelocation.y + "%; height: " + sheet.imagezoom + "%; transform: translate(0%, -50%) rotate(" + sheet.imagerotation + "deg)\"/></div>";
-        }
-
-        code += "<picture class=\"background-l3\">"
-                    + "<source media=\"print\" srcset=\"studio/hero_sheet/img/background_layer_3hd.png?version=" + Version + "\"/>"
-                    + "<img src=\"studio/hero_sheet/img/background_layer_3.png?version=" + Version + "\"/>"
-                + "</picture>";
-
         if (sheet.name)
         {
             code += "<div class=\"name\">" + sheet.name + (sheet.subname ? "<span>" + sheet.subname + "</span>" : " ") + "</div>";
@@ -167,54 +162,7 @@ var HeroSheet = mergeObject(StudioItem, {
         {
             code += "<div class=\"gem\">" + sheet.gem + "</div>";
         }
-
-        code += "<div class=\"skillline\">";
-        if (sheet.encumbrance)
-        {
-            code += "<img class=\"background-encumbrance\" src=\"studio/hero_sheet/img/weight.png?version=" + Version + "\"/>";
-            code += "<div class=\"encumbrance\">" + sheet.encumbrance + "</div>";
-
-            for (var s=0; s < sheet.skills.length; s++)
-            {
-                var skill = sheet.skills[s];
-                var encyclopediaSkill = Rules._findSkillById(skill.id);
-
-                code += "<div class=\"skill\">";
-                    code += "<img class=\"skill\" src=\"" + encyclopediaSkill.image + "?version=" + Version + "\"/>";
-                    if (skill.exertion)
-                    {
-                        code += "<img class=\"exertion\" src=\"studio/hero_sheet/img/skill_weight.png?version=" + Version + "\"/>";
-                        code += "<div class=\"exertion\">" + skill.exertion + "</div>";
-                    }
-                code += "</div>";
-            }
-
-            code += "<div class=\"encumbrance_movement-1\">" + sheet.encumbrance_movement[0] + "</div>";
-            code += "<div class=\"encumbrance_movement-2\">" + sheet.encumbrance_movement[1] + "</div>";
-        }
-        code += "</div>";
-
-        code += "<div class=\"base melee\">";
-        code +=     "<div class=\"exertion\">" + sheet.melee.exertion + "</div>";
-        code +=     "<div class=\"dice\"><img src=\"studio/hero_sheet/img/dice_" + sheet.melee.dice + ".png?version=" + Version + "\"/></div>";
-        code += "</div>";
-        code += "<div class=\"base ranged\">";
-        code +=     "<div class=\"exertion\">" + sheet.ranged.exertion + "</div>";
-        code +=     "<div class=\"dice\"><img src=\"studio/hero_sheet/img/dice_" + sheet.ranged.dice + ".png?version=" + Version + "\"/></div>";
-        code += "</div>";
-        code += "<div class=\"base defense\">";
-        code +=     "<div class=\"dice\"><img src=\"studio/hero_sheet/img/dice_" + sheet.defense.dice + ".png?version=" + Version + "\"/></div>";
-        code += "</div>";
-        code += "<div class=\"base movement\">";
-        code +=     "<div class=\"exertion\">" + sheet.movement.exertion + "</div>";
-        code +=     "<div class=\"dice\">" + sheet.movement.base + "</div>";
-        code += "</div>";
-        code += "<div class=\"base manipulation\">";
-        code +=     "<div class=\"exertion\">" + sheet.manipulation.exertion + "</div>";
-        code +=     "<div class=\"dice\"><img src=\"studio/hero_sheet/img/dice_" + sheet.manipulation.dice + ".png?version=" + Version + "\"/></div>";
-        code += "</div>";
-
-        code += "</div>";
+        
         return code;
     },
 
@@ -226,92 +174,78 @@ var HeroSheet = mergeObject(StudioItem, {
             + "<div class=\"sheet\">"
                 + "<h1>" + HeroSheet._i18n[Language].header1 + "</h1>"
                 + "<input type=\"hidden\" name=\"sheetpos\"/>"
+                
                 + "<div class=\"field name\">"
                     + "<label for=\"hsname\">" + HeroSheet._i18n[Language].name + "</label>"
                     + "<input id=\"hsname\" spellcheck='false' name=\"sheetname\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].namePh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
                     + "<input id=\"hssubname\" spellcheck='false' name=\"sheetsubname\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].subnamePh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
                 + "</div>"
+                
+                + "<div class=\"field type\">"
+                    + "<label for=\"hstype\">" + HeroSheet._i18n[Language].type + "</label>"
+                    + "<select id='hstype' name='sheettype'>"
+                        + "<option value='hero'>" + HeroSheet._i18n[Language].typeHero + "</option>" 
+                        + "<option value='villain'>" + HeroSheet._i18n[Language].typeVillain + "</option>" 
+                    + "</select>"
+                + "</div>"
+                
                 + "<div class=\"field gems\">"
                     + "<label for=\"hsgems\">" + HeroSheet._i18n[Language].gems + "</label>"
                     + "<input type=\"number\" min=\"1\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsgems\" name=\"sheetgems\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].gemsPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+                    + "<label for=\"hsgems2\">" + HeroSheet._i18n[Language].gems2 + "</label>"
+                    + "<input type=\"number\" min=\"1\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsgems2\" name=\"sheetgems2\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].gems2Ph + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+                    + "<label for=\"hsgems3\">" + HeroSheet._i18n[Language].gems3 + "</label>"
+                    + "<input type=\"number\" min=\"1\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsgems3\" name=\"sheetgems3\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].gems3Ph + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
                 + "</div>"
-                + "<div class=\"field encumbrance\">"
-                    + "<label for=\"hsencumbrance\">" + HeroSheet._i18n[Language].encumbrance + "</label>"
-                    + "<div class='encumbrance'>"
-                    + "<input type=\"number\" min=\"1\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsencumbrance\" name=\"sheetencumbrance\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].encumbrancePh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
-                    + "</div>"
-                    + "<div class='encumbrancemov'>"
-                    + "<input type=\"number\" min=\"1\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsencumbrancemov1\" name=\"sheetencumbrancemov1\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].encumbrancemov1Ph + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
-                    + "<input type=\"number\" min=\"1\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsencumbrancemov2\" name=\"sheetencumbrancemov2\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].encumbrancemov2Ph + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
-                    + "</div>"
+                
+                + "<div class=\"field move\">"
+                    + "<label for=\"hsmove\">" + HeroSheet._i18n[Language].move + "</label>"
+                    + "<input type=\"number\" min=\"1\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsmove\" name=\"sheetmove\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].movePh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+
+                    + "<input type=\"number\" min=\"1\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsmove2encumbrance\" name=\"sheetmove2encumbrance\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].movePh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+                    + "<input type=\"number\" min=\"1\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsmove2\" name=\"sheetmove2\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].movePh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+
+                    + "<input type=\"number\" min=\"1\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsmove3encumbrance\" name=\"sheetmove3encumbrance\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].movePh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+                    + "<input type=\"number\" min=\"1\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsmove3\" name=\"sheetmove3\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].movePh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+
+                    + "<input type=\"number\" min=\"1\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsmove4encumbrance\" name=\"sheetmove4encumbrance\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].movePh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+                    + "<input type=\"number\" min=\"1\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsmove4\" name=\"sheetmove4\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].movePh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
                 + "</div>"
+
+                + "<div class=\"field index\">"
+                    + "<label for=\"hsbelt\">" + HeroSheet._i18n[Language].belt + "</label>"
+                    + "<input type=\"number\" min=\"1\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsbelt\" name=\"sheetbelt\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].beltPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+                    + "<label for=\"hssize\">" + HeroSheet._i18n[Language].size + "</label>"
+                    + "<input type=\"number\" min=\"1\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hssize\" name=\"sheetsize\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].sizePh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+                    + "<label for=\"hsmenace\">" + HeroSheet._i18n[Language].menace + "</label>"
+                    + "<input type=\"number\" min=\"1\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsmenace\" name=\"sheetmenace\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].menacePh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+                + "</div>"
+
                 + "<div class=\"field caracs\">"
                     + "<label for=\"hscaracmeleeexertion\">" + HeroSheet._i18n[Language].caracs + "</label>"
                     + "<div class='carac melee'>"
                         + "<input type=\"number\" min=\"1\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"hscaracmeleeexertion\" name=\"sheetmeleeexertion\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].caracPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
-                        + "<select id=\"hscaracmeleedice\" class=\"dice\" name=\"sheetmeleedice\"><option value=\"red\">" + HeroSheet._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + HeroSheet._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + HeroSheet._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + HeroSheet._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + HeroSheet._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + HeroSheet._i18n[Language].diceYellowReroll + "</option></select>"
+                        + "<select id=\"hscaracmeleedice\" class=\"dice\" name=\"sheetmeleedice\"><option value=\"black\">" + HeroSheet._i18n[Language].diceBlack + "</option><option value=\"blackreroll\">" + HeroSheet._i18n[Language].diceBlackReroll + "</option><option value=\"red\">" + HeroSheet._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + HeroSheet._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + HeroSheet._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + HeroSheet._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + HeroSheet._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + HeroSheet._i18n[Language].diceYellowReroll + "</option><option value=\"white\">" + HeroSheet._i18n[Language].diceWhite + "</option><option value=\"whitereroll\">" + HeroSheet._i18n[Language].diceWhiteReroll + "</option></select>"
                     + "</div>"
                     + "<div class='carac ranged'>"
                         + "<input type=\"number\" min=\"1\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"hscaracrangedexertion\" name=\"sheetrangedexertion\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].caracPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
-                        + "<select id=\"hscaracrangeddice\" class=\"dice\" name=\"sheetrangeddice\"><option value=\"red\">" + HeroSheet._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + HeroSheet._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + HeroSheet._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + HeroSheet._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + HeroSheet._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + HeroSheet._i18n[Language].diceYellowReroll + "</option></select>"
-                    + "</div>"
-                    + "<div class='carac defense'>"
-                        + "<select id=\"hscaracdefensedice\" class=\"dice\" name=\"sheetdefensedice\"><option value=\"red\">" + HeroSheet._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + HeroSheet._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + HeroSheet._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + HeroSheet._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + HeroSheet._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + HeroSheet._i18n[Language].diceYellowReroll + "</option></select>"
-                    + "</div>"
-                    + "<div class='carac movement'>"
-                        + "<input type=\"number\" min=\"1\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"hscaracmovementexertion\" name=\"sheetmovementexertion\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].caracPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
-                        + "<input type=\"number\" min=\"1\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"hscaracmovement\" name=\"sheetmovement\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].caracPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+                        + "<select id=\"hscaracrangeddice\" class=\"dice\" name=\"sheetrangeddice\"><option value=\"black\">" + HeroSheet._i18n[Language].diceBlack + "</option><option value=\"blackreroll\">" + HeroSheet._i18n[Language].diceBlackReroll + "</option><option value=\"red\">" + HeroSheet._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + HeroSheet._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + HeroSheet._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + HeroSheet._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + HeroSheet._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + HeroSheet._i18n[Language].diceYellowReroll + "</option><option value=\"white\">" + HeroSheet._i18n[Language].diceWhite + "</option><option value=\"whitereroll\">" + HeroSheet._i18n[Language].diceWhiteReroll + "</option></select>"
                     + "</div>"
                     + "<div class='carac manipulation'>"
                         + "<input type=\"number\" min=\"1\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"hscaracmanipulationexertion\" name=\"sheetmanipulationexertion\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].caracPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
-                        + "<select id=\"hscaracmanipulationdice\" class=\"dice\" name=\"sheetmanipulationdice\"><option value=\"red\">" + HeroSheet._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + HeroSheet._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + HeroSheet._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + HeroSheet._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + HeroSheet._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + HeroSheet._i18n[Language].diceYellowReroll + "</option></select>"
+                        + "<select id=\"hscaracmanipulationdice\" class=\"dice\" name=\"sheetmanipulationdice\"><option value=\"black\">" + HeroSheet._i18n[Language].diceBlack + "</option><option value=\"blackreroll\">" + HeroSheet._i18n[Language].diceBlackReroll + "</option><option value=\"red\">" + HeroSheet._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + HeroSheet._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + HeroSheet._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + HeroSheet._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + HeroSheet._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + HeroSheet._i18n[Language].diceYellowReroll + "</option><option value=\"white\">" + HeroSheet._i18n[Language].diceWhite + "</option><option value=\"whitereroll\">" + HeroSheet._i18n[Language].diceWhiteReroll + "</option></select>"
+                    + "</div>"
+                    + "<div class='carac thought'>"
+                        + "<input type=\"number\" min=\"1\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"hscaracthoughtexertion\" name=\"sheetthoughtexertion\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].caracPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+                        + "<select id=\"hscaracthoughtdice\" class=\"dice\" name=\"sheetthoughtdice\"><option value=\"black\">" + HeroSheet._i18n[Language].diceBlack + "</option><option value=\"blackreroll\">" + HeroSheet._i18n[Language].diceBlackReroll + "</option><option value=\"red\">" + HeroSheet._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + HeroSheet._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + HeroSheet._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + HeroSheet._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + HeroSheet._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + HeroSheet._i18n[Language].diceYellowReroll + "</option><option value=\"white\">" + HeroSheet._i18n[Language].diceWhite + "</option><option value=\"whitereroll\">" + HeroSheet._i18n[Language].diceWhiteReroll + "</option></select>"
                     + "</div>"
                 + "</div>"
-                + "<div class=\"field skills\">"
-                    + "<label for=\"hsskills1\">" + HeroSheet._i18n[Language].skills + "</label>"
-                    + "<div class='skill skill1'>"
-                        + "<select id=\"hsskills1\" class=\"skills\" name=\"sheetskills1\" onchange=\"HeroSheet._preview();\"><option value=\"none\">" + HeroSheet._i18n[Language].skillsNone + "</option>" + _skills() + "</select>"
-                        + "<input type=\"number\" min=\"0\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsskillexertion1\" name=\"sheetskillsexertion1\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].skillsPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
-                    + "</div>"
-                    + "<div class='skill skill2'>"
-                        + "<select id=\"hsskills2\" class=\"skills\" name=\"sheetskills2\" onchange=\"HeroSheet._preview();\"><option value=\"none\">" + HeroSheet._i18n[Language].skillsNone + "</option>" + _skills() + "</select>"
-                        + "<input type=\"number\" min=\"0\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsskillexertion2\" name=\"sheetskillsexertion2\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].skillsPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
-                    + "</div>"
-                    + "<div class='skill skill3'>"
-                        + "<select id=\"hsskills3\" class=\"skills\" name=\"sheetskills3\" onchange=\"HeroSheet._preview();\"><option value=\"none\">" + HeroSheet._i18n[Language].skillsNone + "</option>" + _skills() + "</select>"
-                        + "<input type=\"number\" min=\"0\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsskillexertion3\" name=\"sheetskillsexertion3\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].skillsPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
-                    + "</div>"
-                    + "<div class='skill skill4'>"
-                        + "<select id=\"hsskills4\" class=\"skills\" name=\"sheetskills4\" onchange=\"HeroSheet._preview();\"><option value=\"none\">" + HeroSheet._i18n[Language].skillsNone + "</option>" + _skills() + "</select>"
-                        + "<input type=\"number\" min=\"0\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsskillexertion4\" name=\"sheetskillsexertion4\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].skillsPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
-                    + "</div>"
-                    + "<div class='skill skill5'>"
-                        + "<select id=\"hsskills5\" class=\"skills\" name=\"sheetskills5\" onchange=\"HeroSheet._preview();\"><option value=\"none\">" + HeroSheet._i18n[Language].skillsNone + "</option>" + _skills() + "</select>"
-                        + "<input type=\"number\" min=\"0\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsskillexertion5\" name=\"sheetskillsexertion5\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].skillsPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
-                    + "</div>"
-                + "</div>"
+
             + "</div>"
             + "</div>"
             + "<div class=\"hscol\">"
             + "<div class=\"sheet\">"
                 + "<h1>" + HeroSheet._i18n[Language].header1bis + "</h1>"
-                + "<div class=\"field\">"
-                    + "<label for=\"hsimage\">" + HeroSheet._i18n[Language].image + "</label>"
-                    + "<input id=\"hsimage\" name=\"sheetimage\" spellcheck='false' autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].imagePh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
-                + "</div>"
-                + "<div class=\"field imagelocation\">"
-                    + "<label for=\"hsimagelocation\">" + HeroSheet._i18n[Language].imagelocation + "</label>"
-                    + "<div><input id=\"hsimagelocation\" name=\"sheetimagelocation\" type=\"number\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].imagelocationPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"\"/></div>"
-                    + "<div><input id=\"hsimagelocation2\" name=\"sheetimagelocation2\" type=\"number\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].imagelocationPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/></div>"
-                + "</div>"
-                + "<div class=\"field imagezoom\">"
-                    + "<label for=\"hsimagezoom\">" + HeroSheet._i18n[Language].imagezoom + "</label>"
-                    + "<input id=\"hsimagezoom\" name=\"sheetimagezoom\" type=\"number\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].imagezoomPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
-                + "</div>"
-                + "<div class=\"field imagerotation\">"
-                    + "<label for=\"hsimagerotation\">" + HeroSheet._i18n[Language].imagerotation + "</label>"
-                    + "<input id=\"hsimagerotation\" name=\"sheetimagerotation\" type=\"number\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].imagerotationPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
-                + "</div>"
             + "</div>"
             + "<div class=\"sheet-preview\">"
                 + "<h1>" + HeroSheet._i18n[Language].header2 + "</h1>"
@@ -351,24 +285,7 @@ var HeroSheet = mergeObject(StudioItem, {
         sheet = sheet || {
             id: Math.random(),
             name: "",
-            subname: "",
-
-            image: "",
-            imagelocation: {x: "0", y: "50"},
-            imagezoom: "100",
-            imagerotation: "0",
-
-            gem: 10,
-            encumbrance: 10,
-            encumbrance_movement: [8, 10],
-
-            melee: { "dice": "yellow", "exertion": 3 },
-            ranged: { "dice": "yellow", "exertion": 3 },
-            defense: { "dice": "yellow" },
-            movement: { "base": 2, "exertion": 4 },
-            manipulation: { "dice": "yellow", "exertion": 3 },
-
-            skills: []
+            subname: ""
         };
 
         $("#hsskills1,#hsskills2,#hsskills3,#hsskills4,#hsskills5").each (function (i) {
@@ -379,7 +296,7 @@ var HeroSheet = mergeObject(StudioItem, {
              })
         });
 
-        $("#hscaracmeleedice, #hscaracrangeddice, #hscaracdefensedice, #hscaracmanipulationdice").each (function (i) {
+        $("#hscaracmeleedice, #hscaracrangeddice, #hscaracmanipulationdice, #hscaracthoughtdice").each (function (i) {
             var k = $(this);
             k.attr("data-value", "")
                 .selectmenu({ appendTo: k.parent(), width: k.is(".dice") ? 40 : 58, change: function(event, selection) {
@@ -397,7 +314,7 @@ var HeroSheet = mergeObject(StudioItem, {
 
     _form2card: function()
     {
-        var skills = [];
+        /*var skills = [];
         for (var i = 0; i < 5; i++)
         {
             var id = $(".dialog select[name=sheetskills" + (i+1) + "]")[0].value;
@@ -413,25 +330,12 @@ var HeroSheet = mergeObject(StudioItem, {
 
                 skills.push(skill);
             }
-        }
+        }*/
 
         return {
             id: $(".dialog input[name=sheetpos]")[0].value,
             name: $(".dialog input[name=sheetname]")[0].value,
-            subname: $(".dialog input[name=sheetsubname]")[0].value,
-            image: $(".dialog input[name=sheetimage]")[0].value,
-            imagelocation: {x: $(".dialog input[name=sheetimagelocation]")[0].value || "0", y: $(".dialog input[name=sheetimagelocation2]")[0].value || "50"},
-            imagezoom: $(".dialog input[name=sheetimagezoom]")[0].value || "100",
-            imagerotation: $(".dialog input[name=sheetimagerotation]")[0].value || "0",
-            gem: parseInt($(".dialog input[name=sheetgems]")[0].value || 0),
-            encumbrance: parseInt($(".dialog input[name=sheetencumbrance]")[0].value),
-            encumbrance_movement: [parseInt($(".dialog input[name=sheetencumbrancemov1]")[0].value),parseInt($(".dialog input[name=sheetencumbrancemov2]")[0].value)],
-            melee: { "dice": $(".dialog select[name=sheetmeleedice]")[0].value, "exertion": parseInt($(".dialog input[name=sheetmeleeexertion]")[0].value || 0) },
-            ranged: { "dice": $(".dialog select[name=sheetrangeddice]")[0].value, "exertion": parseInt($(".dialog input[name=sheetrangedexertion]")[0].value || 0) },
-            defense: { "dice": $(".dialog select[name=sheetdefensedice]")[0].value },
-            movement: { "base": parseInt($(".dialog input[name=sheetmovement]")[0].value || 0), "exertion": parseInt($(".dialog input[name=sheetmovementexertion]")[0].value || 0) },
-            manipulation: { "dice": $(".dialog select[name=sheetmanipulationdice]")[0].value, "exertion": parseInt($(".dialog input[name=sheetmanipulationexertion]")[0].value || 0) },
-            skills: skills
+            subname: $(".dialog input[name=sheetsubname]")[0].value
         }
     },
     
@@ -440,30 +344,6 @@ var HeroSheet = mergeObject(StudioItem, {
         $(".dialog input[name=sheetpos]")[0].value = sheet.id;
         $(".dialog input[name=sheetname]")[0].value = sheet.name;
         $(".dialog input[name=sheetsubname]")[0].value = sheet.subname;
-        $(".dialog input[name=sheetimage]")[0].value = sheet.image;
-        $(".dialog input[name=sheetimagelocation]")[0].value = sheet.imagelocation.x;
-        $(".dialog input[name=sheetimagelocation2]")[0].value = sheet.imagelocation.y;
-        $(".dialog input[name=sheetimagezoom]")[0].value = sheet.imagezoom;
-        $(".dialog input[name=sheetimagerotation]")[0].value = sheet.imagerotation;
-        $(".dialog input[name=sheetgems]")[0].value = sheet.gem;
-        $(".dialog input[name=sheetencumbrance]")[0].value = sheet.encumbrance;
-        $(".dialog input[name=sheetencumbrancemov1]")[0].value = sheet.encumbrance_movement[0];
-        $(".dialog input[name=sheetencumbrancemov2]")[0].value = sheet.encumbrance_movement[1];
-        $(".dialog select[name=sheetmeleedice]")[0].value = sheet.melee.dice; $(".dialog select[name=sheetmeleedice]").attr("data-value",sheet.melee.dice);
-        $(".dialog input[name=sheetmeleeexertion]")[0].value = sheet.melee.exertion;
-        $(".dialog select[name=sheetrangeddice]")[0].value = sheet.ranged.dice; $(".dialog select[name=sheetrangeddice]").attr("data-value",sheet.ranged.dice);
-        $(".dialog input[name=sheetrangedexertion]")[0].value = sheet.ranged.exertion;
-        $(".dialog select[name=sheetdefensedice]")[0].value = sheet.defense.dice; $(".dialog select[name=sheetdefensedice]").attr("data-value",sheet.defense.dice);
-        $(".dialog input[name=sheetmovement]")[0].value = sheet.movement.base;
-        $(".dialog input[name=sheetmovementexertion]")[0].value = sheet.movement.exertion;
-        $(".dialog select[name=sheetmanipulationdice]")[0].value = sheet.manipulation.dice; $(".dialog select[name=sheetmanipulationdice]").attr("data-value",sheet.manipulation.dice);
-        $(".dialog input[name=sheetmanipulationexertion]")[0].value = sheet.manipulation.exertion;
-        for (var i = 0; i < sheet.skills.length && i < 5; i++)
-        {
-            $(".dialog select[name=sheetskills" + (i+1) + "]")[0].value = sheet.skills[i].id;
-            $(".dialog select[name=sheetskills" + (i+1) + "]").parent().attr("data-value", sheet.skills[i].id);
-            $(".dialog input[name=sheetskillsexertion" + (i+1) + "]")[0].value = sheet.skills[i].exertion;
-        }
     },
 
     _checkForm: function(sheet)
@@ -482,11 +362,6 @@ var HeroSheet = mergeObject(StudioItem, {
         if (!sheet.encumbrance || !sheet.encumbrance_movement[0] || !sheet.encumbrance_movement[1])
         {
             $(".dialog input[name=sheetencumbrance]").parent().parent().addClass("error");
-            errors++;
-        }
-        if (!sheet.melee.exertion || !sheet.ranged.exertion || !sheet.movement.base || !sheet.movement.exertion || !sheet.manipulation.exertion)
-        {
-            $(".dialog .field.caracs").addClass("error");
             errors++;
         }
         return errors;
