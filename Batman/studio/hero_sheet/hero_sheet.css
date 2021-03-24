@@ -145,6 +145,26 @@
 }
 
 
+
+
+
+
+
+.dialog .sheet .field.skills .skill[data-exertion=false] [data-type=exertion] { display: none; }
+.dialog .sheet .field.skills .skill[data-level=false] [data-type=level] { display: none; }
+.dialog .sheet .field.skills .skill[data-position=false] [data-type=position] { display: none; }
+.dialog .sheet .field.skills .skill[data-value=none] ~ .skill { display: none; }
+
+
+
+
+
+
+
+
+
+
+
 #hero .inside > a {
     display: inline-block;
     vertical-align: top;

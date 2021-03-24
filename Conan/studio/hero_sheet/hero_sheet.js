@@ -4,6 +4,8 @@ var HeroSheet = mergeObject(StudioItem, {
     storage: Application + "_StudioHeroSheets",
     _itemWidth: 604,
     _itemHeight: 346.9,
+
+    _maxSkills: 6,
     
     _i18n: {
         'fr': {
@@ -313,26 +315,7 @@ var HeroSheet = mergeObject(StudioItem, {
                 + "</div>"
                 + "<div class=\"field skills\">"
                     + "<label for=\"hsskills1\">" + HeroSheet._i18n[Language].skills + "</label>"
-                    + "<div class='skill skill1'>"
-                        + "<select id=\"hsskills1\" class=\"skills\" name=\"sheetskills1\" onchange=\"HeroSheet._preview();\"><option value=\"none\">" + HeroSheet._i18n[Language].skillsNone + "</option>" + _skills() + "</select>"
-                        + "<input type=\"number\" min=\"0\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsskillexertion1\" name=\"sheetskillsexertion1\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].skillsPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
-                    + "</div>"
-                    + "<div class='skill skill2'>"
-                        + "<select id=\"hsskills2\" class=\"skills\" name=\"sheetskills2\" onchange=\"HeroSheet._preview();\"><option value=\"none\">" + HeroSheet._i18n[Language].skillsNone + "</option>" + _skills() + "</select>"
-                        + "<input type=\"number\" min=\"0\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsskillexertion2\" name=\"sheetskillsexertion2\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].skillsPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
-                    + "</div>"
-                    + "<div class='skill skill3'>"
-                        + "<select id=\"hsskills3\" class=\"skills\" name=\"sheetskills3\" onchange=\"HeroSheet._preview();\"><option value=\"none\">" + HeroSheet._i18n[Language].skillsNone + "</option>" + _skills() + "</select>"
-                        + "<input type=\"number\" min=\"0\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsskillexertion3\" name=\"sheetskillsexertion3\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].skillsPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
-                    + "</div>"
-                    + "<div class='skill skill4'>"
-                        + "<select id=\"hsskills4\" class=\"skills\" name=\"sheetskills4\" onchange=\"HeroSheet._preview();\"><option value=\"none\">" + HeroSheet._i18n[Language].skillsNone + "</option>" + _skills() + "</select>"
-                        + "<input type=\"number\" min=\"0\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsskillexertion4\" name=\"sheetskillsexertion4\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].skillsPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
-                    + "</div>"
-                    + "<div class='skill skill5'>"
-                        + "<select id=\"hsskills5\" class=\"skills\" name=\"sheetskills5\" onchange=\"HeroSheet._preview();\"><option value=\"none\">" + HeroSheet._i18n[Language].skillsNone + "</option>" + _skills() + "</select>"
-                        + "<input type=\"number\" min=\"0\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsskillexertion5\" name=\"sheetskillsexertion5\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].skillsPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
-                    + "</div>"
+                    + skills()
                 + "</div>"
             + "</div>"
             + "</div>"
@@ -367,10 +350,20 @@ var HeroSheet = mergeObject(StudioItem, {
             actions
         );
 
-        function _skills()
+        function skills(number)
         {
-            var s = "";
-
+            if (number == undefined)
+            {
+                let as = '';
+                for (var i = 1; i <= HeroSheet._maxSkills; i++)
+                {
+                    as += skills(i);
+                }
+                return as;
+            }
+            
+            var s = "<div class='skill skill" + number + "'>"
+                        + "<select id=\"hsskills" + number + "\" class=\"skills\" name=\"sheetskills" + number + "\" onchange=\"HeroSheet._preview();\"><option value=\"none\">" + HeroSheet._i18n[Language].skillsNone + "</option>"; 
 
             for (var i in Encyclopedia.skills.types)
             {
@@ -386,7 +379,13 @@ var HeroSheet = mergeObject(StudioItem, {
                         s += "<option value=\"" + skill.id + "\">" + skill.title[Language] + "</option>";
                     }
                 }
+                
+                s += "</optgroup>"
             }
+
+            s += "</select>"
+                + "<input type=\"number\" min=\"0\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsskillexertion" + number + "\" name=\"sheetskillsexertion" + number + "\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].skillsPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+                + "</div>";
 
             return s;
         }
@@ -415,7 +414,7 @@ var HeroSheet = mergeObject(StudioItem, {
             skills: []
         };
 
-        $("#hsskills1,#hsskills2,#hsskills3,#hsskills4,#hsskills5").each (function (i) {
+        $(".studiodialog .field.skills select.skills").each (function (i) {
             var k = $(this);
             k.parent().attr("data-value", "none");
             k.on("change", function() {
@@ -442,7 +441,7 @@ var HeroSheet = mergeObject(StudioItem, {
     _form2card: function()
     {
         var skills = [];
-        for (var i = 0; i < 5; i++)
+        for (var i = 0; i < HeroSheet._maxSkills; i++)
         {
             var id = $(".dialog select[name=sheetskills" + (i+1) + "]")[0].value;
             var exertion = parseInt($(".dialog input[name=sheetskillsexertion" + (i+1) + "]")[0].value || 0);
@@ -502,7 +501,7 @@ var HeroSheet = mergeObject(StudioItem, {
         $(".dialog input[name=sheetmovementexertion]")[0].value = sheet.movement.exertion;
         $(".dialog select[name=sheetmanipulationdice]")[0].value = sheet.manipulation.dice; $(".dialog select[name=sheetmanipulationdice]").attr("data-value",sheet.manipulation.dice);
         $(".dialog input[name=sheetmanipulationexertion]")[0].value = sheet.manipulation.exertion;
-        for (var i = 0; i < sheet.skills.length && i < 5; i++)
+        for (var i = 0; i < sheet.skills.length && i < HeroSheet._maxSkills; i++)
         {
             $(".dialog select[name=sheetskills" + (i+1) + "]")[0].value = sheet.skills[i].id;
             $(".dialog select[name=sheetskills" + (i+1) + "]").parent().attr("data-value", sheet.skills[i].id);

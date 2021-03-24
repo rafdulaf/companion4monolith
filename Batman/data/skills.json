@@ -17,42 +17,48 @@
                 "fr": "Attaque au corps-à-corps",
                 "en": "Melee attack"
             },
-            "image": "data/skills/img/attack/melee.png"
+            "image": "data/skills/img/attack/melee.png",
+            "location": 1
         }, {
             "id": "range",
             "title": {
                 "fr": "Attaque à distance",
                 "en": "Range attack"
             },
-            "image": "data/skills/img/attack/range.png"
+            "image": "data/skills/img/attack/range.png",
+            "location": 2
         }, {
             "id": "manipulation",
             "title": {
                 "fr": "Manipulation",
                 "en": "Manipulation"
             },
-            "image": "data/skills/img/attack/manipulation.png"
+            "image": "data/skills/img/attack/manipulation.png",
+            "location": 3
         }, {
             "id": "thought",
             "title": {
                 "fr": "Réflexion",
                 "en": "Thought"
             },
-            "image": "data/skills/img/attack/thought.png"
+            "image": "data/skills/img/attack/thought.png",
+            "location": 4
         }, {
             "id": "defense",
             "title": {
                 "fr": "Défense",
                 "en": "Defense"
             },
-            "image": "data/skills/img/attack/defense.png"
+            "image": "data/skills/img/attack/defense.png",
+            "location": 5
         }, {
             "id": "movement",
             "title": {
                 "fr": "Mouvement",
                 "en": "Movement"
             },
-            "image": "data/skills/img/attack/movement.png"
+            "image": "data/skills/img/attack/movement.png",
+            "location": 7
         }, {
             "id": "miscellaneous",
             "title": {
@@ -70,7 +76,9 @@
             "title": {
                 "fr": "Traits",
                 "en": "Traits"
-            }
+            },
+            "exertion": false,
+            "level": false
         }
     ],
     "list": [

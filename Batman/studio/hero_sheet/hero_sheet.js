@@ -5,6 +5,8 @@ var HeroSheet = mergeObject(StudioItem, {
     _itemWidth: 604,
     _itemHeight: 346.9,
     
+    _maxSkills: 6,
+    
     _i18n: {
         'fr': {
             'tab': "Héros",
@@ -37,6 +39,9 @@ var HeroSheet = mergeObject(StudioItem, {
             'menacePh': "?",
             'caracs': "Caractéristiques",
             'caracPh': "?",
+            'skills': "Compétences",
+            'skillsPh': "-",
+            'skillsNone' : "Aucune",
 
             'diceBlack': "Noir",
             'diceBlackReroll': "Noir \uf01e",
@@ -86,6 +91,9 @@ var HeroSheet = mergeObject(StudioItem, {
             'menacePh': "?",
             'caracs': "Characteristics",
             'caracPh': "?",
+            'skills': "Skills",
+            'skillsPh': "-",
+            'skillsNone' : "None",
 
             'diceBlack': "Black",
             'diceBlackReroll': "Black \uf01e",
@@ -210,6 +218,10 @@ var HeroSheet = mergeObject(StudioItem, {
 
                     + "<input type=\"number\" min=\"1\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsmove4encumbrance\" name=\"sheetmove4encumbrance\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].movePh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
                     + "<input type=\"number\" min=\"1\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsmove4\" name=\"sheetmove4\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].movePh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+
+                    + "<input type=\"number\" min=\"1\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsmoveexertion\" name=\"sheetmoveexertion\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].movePh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+                    + "<input type=\"number\" min=\"1\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsmovegemfactor\" name=\"sheetmovegemfactor\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].movePh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+
                 + "</div>"
 
                 + "<div class=\"field index\">"
@@ -225,22 +237,34 @@ var HeroSheet = mergeObject(StudioItem, {
                     + "<label for=\"hscaracmeleeexertion\">" + HeroSheet._i18n[Language].caracs + "</label>"
                     + "<div class='carac melee'>"
                         + "<input type=\"number\" min=\"1\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"hscaracmeleeexertion\" name=\"sheetmeleeexertion\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].caracPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
-                        + "<select id=\"hscaracmeleedice\" class=\"dice\" name=\"sheetmeleedice\"><option value=\"black\">" + HeroSheet._i18n[Language].diceBlack + "</option><option value=\"blackreroll\">" + HeroSheet._i18n[Language].diceBlackReroll + "</option><option value=\"red\">" + HeroSheet._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + HeroSheet._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + HeroSheet._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + HeroSheet._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + HeroSheet._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + HeroSheet._i18n[Language].diceYellowReroll + "</option><option value=\"white\">" + HeroSheet._i18n[Language].diceWhite + "</option><option value=\"whitereroll\">" + HeroSheet._i18n[Language].diceWhiteReroll + "</option></select>"
+                        + dices("melee")
                     + "</div>"
                     + "<div class='carac ranged'>"
                         + "<input type=\"number\" min=\"1\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"hscaracrangedexertion\" name=\"sheetrangedexertion\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].caracPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
-                        + "<select id=\"hscaracrangeddice\" class=\"dice\" name=\"sheetrangeddice\"><option value=\"black\">" + HeroSheet._i18n[Language].diceBlack + "</option><option value=\"blackreroll\">" + HeroSheet._i18n[Language].diceBlackReroll + "</option><option value=\"red\">" + HeroSheet._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + HeroSheet._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + HeroSheet._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + HeroSheet._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + HeroSheet._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + HeroSheet._i18n[Language].diceYellowReroll + "</option><option value=\"white\">" + HeroSheet._i18n[Language].diceWhite + "</option><option value=\"whitereroll\">" + HeroSheet._i18n[Language].diceWhiteReroll + "</option></select>"
+                        + dices("ranged")
                     + "</div>"
                     + "<div class='carac manipulation'>"
                         + "<input type=\"number\" min=\"1\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"hscaracmanipulationexertion\" name=\"sheetmanipulationexertion\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].caracPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
-                        + "<select id=\"hscaracmanipulationdice\" class=\"dice\" name=\"sheetmanipulationdice\"><option value=\"black\">" + HeroSheet._i18n[Language].diceBlack + "</option><option value=\"blackreroll\">" + HeroSheet._i18n[Language].diceBlackReroll + "</option><option value=\"red\">" + HeroSheet._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + HeroSheet._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + HeroSheet._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + HeroSheet._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + HeroSheet._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + HeroSheet._i18n[Language].diceYellowReroll + "</option><option value=\"white\">" + HeroSheet._i18n[Language].diceWhite + "</option><option value=\"whitereroll\">" + HeroSheet._i18n[Language].diceWhiteReroll + "</option></select>"
+                        + dices("manipulation")
                     + "</div>"
                     + "<div class='carac thought'>"
                         + "<input type=\"number\" min=\"1\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"hscaracthoughtexertion\" name=\"sheetthoughtexertion\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].caracPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
-                        + "<select id=\"hscaracthoughtdice\" class=\"dice\" name=\"sheetthoughtdice\"><option value=\"black\">" + HeroSheet._i18n[Language].diceBlack + "</option><option value=\"blackreroll\">" + HeroSheet._i18n[Language].diceBlackReroll + "</option><option value=\"red\">" + HeroSheet._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + HeroSheet._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + HeroSheet._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + HeroSheet._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + HeroSheet._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + HeroSheet._i18n[Language].diceYellowReroll + "</option><option value=\"white\">" + HeroSheet._i18n[Language].diceWhite + "</option><option value=\"whitereroll\">" + HeroSheet._i18n[Language].diceWhiteReroll + "</option></select>"
+                        + dices("thought")
+                    + "</div>"
+                    + "<div class='carac defense'>"
+                        + "<input type=\"number\" min=\"1\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"hscaracdefenseexertion\" name=\"sheetdefenseexertion\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].caracPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+                        + dices("defense")
+                        + dices("defensepassive")
+                    + "</div>"
+                    + "<div class='carac reroll'>"
+                        + "<input type=\"number\" min=\"1\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"hscaracrerollexertion\" name=\"sheetrerollexertion\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].caracPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
                     + "</div>"
                 + "</div>"
 
+                + "<div class=\"field skills\">"
+                    + "<label for=\"hsskills1\">" + HeroSheet._i18n[Language].skills + "</label>"
+                    + skills()
+                + "</div>"
             + "</div>"
             + "</div>"
             + "<div class=\"hscol\">"
@@ -257,16 +281,33 @@ var HeroSheet = mergeObject(StudioItem, {
             actions
         );
 
-        function _skills()
+        function dices(id)
         {
-            var s = "";
+            return "<select id=\"hscarac" + id + "dice\" class=\"dice\" name=\"sheet" + id + "dice\">"
+                   + "<option value=\"black\">" + HeroSheet._i18n[Language].diceBlack + "</option><option value=\"blackreroll\">" + HeroSheet._i18n[Language].diceBlackReroll + "</option><option value=\"red\">" + HeroSheet._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + HeroSheet._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + HeroSheet._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + HeroSheet._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + HeroSheet._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + HeroSheet._i18n[Language].diceYellowReroll + "</option><option value=\"white\">" + HeroSheet._i18n[Language].diceWhite + "</option><option value=\"whitereroll\">" + HeroSheet._i18n[Language].diceWhiteReroll + "</option>"
+                   + "</select>";
+        }
 
-
+        function skills(number)
+        {
+            if (number == undefined)
+            {
+                let as = '';
+                for (var i = 1; i <= HeroSheet._maxSkills; i++)
+                {
+                    as += skills(i);
+                }
+                return as;
+            }
+            
+            let s = "<div class='skill skill" + number + "'>" 
+                    + "<select id=\"hsskills" + number + "\" class=\"skills\" name=\"sheetskills" + number + "\" onchange=\"HeroSheet._preview();\"><option value=\"none\">" + HeroSheet._i18n[Language].skillsNone + "</option>";
+            
             for (var i in Encyclopedia.skills.types)
             {
                 var type = Encyclopedia.skills.types[i];
 
-                s += "<optgroup label=\"" + type.title[Language] + "\">";
+                s += "<optgroup label=\"" + type.title[Language] + "\" data-exertion='" + (type.exertion === false ? "false" : "true") + "' data-level='" + (type.level === false ? "false" : "true") + "' data-position='" + (!type.location ? "true" : "false") + "'>";
 
                 for (var j in Encyclopedia.skills.list)
                 {
@@ -276,8 +317,22 @@ var HeroSheet = mergeObject(StudioItem, {
                         s += "<option value=\"" + skill.id + "\">" + skill.title[Language] + "</option>";
                     }
                 }
+                
+                s += "</optgroup>"
             }
-
+            
+            s += "</select>"
+                 + "<input data-type='exertion' type=\"number\" min=\"0\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsskillexertion" + number + "\" name=\"sheetskillsexertion" + number + "\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].skillsPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+                 + "<input data-type='level' type=\"number\" min=\"0\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsskilllevel" + number + "\" name=\"sheetskillslevel" + number + "\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].skillsPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+                 + "<select data-type='position' class='skillposition' id='hsskillsposition" + number + "' name='sheetskillsposition" + number + "'>"
+                 +     "<option value='0' selected>Haut gauche</option>"
+                 +     "<option value='1'>Gauche</option>"
+                 +     "<option value='2'>Bas gauche</option>"
+                 +     "<option value='3'>Haut droite</option>"
+                 +     "<option value='4'>Droite</option>"
+                 +     "<option value='4'>Bas droite</option>"
+                 + "</select>"
+                 + "</div>";
             return s;
         }
 
@@ -288,15 +343,21 @@ var HeroSheet = mergeObject(StudioItem, {
             subname: ""
         };
 
-        $("#hsskills1,#hsskills2,#hsskills3,#hsskills4,#hsskills5").each (function (i) {
+        $(".studiodialog .field.skills select.skills").each (function (i) {
             var k = $(this);
             k.parent().attr("data-value", "none");
+            k.parent().attr("data-exertion", "false");
+            k.parent().attr("data-level", "false");
+            k.parent().attr("data-position", "false");
             k.on("change", function() {
                 $(this).parent().attr("data-value", this.value);
+                $(this).parent().attr("data-exertion", $(this).find("option[value=" + this.value + "]").parent().attr("data-exertion"));
+                $(this).parent().attr("data-level", $(this).find("option[value=" + this.value + "]").parent().attr("data-level"));
+                $(this).parent().attr("data-position", $(this).find("option[value=" + this.value + "]").parent().attr("data-position"));
              })
         });
 
-        $("#hscaracmeleedice, #hscaracrangeddice, #hscaracmanipulationdice, #hscaracthoughtdice").each (function (i) {
+        $(".studiodialog .field.caracs select.dice").each (function (i) {
             var k = $(this);
             k.attr("data-value", "")
                 .selectmenu({ appendTo: k.parent(), width: k.is(".dice") ? 40 : 58, change: function(event, selection) {
