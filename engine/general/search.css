@@ -120,7 +120,7 @@
     display: none;
     text-align: center;
     text-decoration: none;
-    color: #000;
+    color: var(--body-color);
 }
 
 .search-engine .facet[data-mode=hide] a:before {
