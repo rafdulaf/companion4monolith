@@ -96,6 +96,7 @@
     .dialog .printcards.back .newpage { display: block; page-break-before: always; direction: rtl; }
     .dialog .printcards .back { display: inline-block; }
     .dialog .printcards .back.invisible { display: none; }
+    .dialog ul.floatingactions { display: none; }
 }
 
 .printoverflow { 

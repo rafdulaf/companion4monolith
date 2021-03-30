@@ -259,11 +259,13 @@
     position: relative;
     left: -12px;
     content: "%";
+    color: #000;
 }
 .dialog .equipment .field.imagerotation:after {
     position: relative;
     left: -12px;
     content: "°";
+    color: #000;
 }
 .dialog .equipment .field.imagelocation input,
 .dialog .equipment .field.imagezoom input,

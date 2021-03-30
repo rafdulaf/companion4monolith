@@ -2,31 +2,31 @@
     --main-color: #FEFFFF;
     --highlight-color: #ff7900;
     
-    --header-bg-color: #1C1B20;
+    --header-bg-color: #312420;
     --header-color: var(--main-color);
     --header-title-color: var(--header-color); 
     --header-menu-color: var(--header-color); 
     --header-icon-color: var(--header-color); 
     
     --floating-icon-color: #fff;
-    --floating-icon-bgcolor: #542f23;
-    --floating-icon-hover-bgcolor: #845f53;
-    --floating-icon-active-bgcolor: #a48f83;
+    --floating-icon-bgcolor: #312420;
+    --floating-icon-hover-bgcolor: #422a21;
+    --floating-icon-active-bgcolor: #542f23;
     
     --tabs-color:  var(--header-color);
     --tabs-bg-color:  var(--header-bg-color);
     
     --body-color: var(--main-color);
-    --body-bg-color: #000;
+    --body-bg-color: #151515;
     
-    --dialog-header-bg-color: #542f23;
+    --dialog-header-bg-color: var(--header-bg-color);
     --dialog-header-color: var(--main-color);
     --dialog-header-action-color: var(--dialog-header-color); 
     --dialog-header-back-color: var(--highlight-color);
     --dialog-color: var(--body-color); 
     --dialog-bg-color: var(--body-bg-color);
     
-    --footer-bg-color: #3C3B40;
+    --footer-bg-color: #312420;
     --footer-link-color: #565555;
     --footer-active-link-color: var(--highlight-color);
     --footer-active-link-bg-color: transparent;
@@ -46,5 +46,7 @@
     background-image: url(../about/logo-light.png);
     height: 120px;
 }
+
+.map-index > ul > li { padding: 2px; background-color: #9C928E; }
 
 ::-webkit-scrollbar-track { background-color: #252525; }

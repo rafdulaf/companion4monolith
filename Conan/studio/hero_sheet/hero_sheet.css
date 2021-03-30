@@ -102,6 +102,7 @@
     top: 88%;
     color: #FFF;
     font-size: 65%;
+    line-height: normal;
 }
 
 .sheet.herosheet div.skillline {
@@ -502,11 +503,13 @@
     position: relative;
     left: -12px;
     content: "%";
+    color: #000;
 }
 .dialog .sheet .field.imagerotation:after {
     position: relative;
     left: -12px;
     content: "°";
+    color: #000;
 }
 .dialog .sheet .field.imagelocation input,
 .dialog .sheet .field.imagezoom input,

@@ -36,6 +36,7 @@
         width: 4.2cm;
         height: calc(4.2cm / 0.67);
         font-size: 0.4cm;
+        line-height: normal;
         border-radius: 0.3cm;
         position: relative;
         zoom: unset;
@@ -399,11 +400,13 @@
     position: relative;
     left: -12px;
     content: "%";
+    color: #000;
 }
 .dialog .spell .field.imagerotation:after {
     position: relative;
     left: -12px;
     content: "°";
+    color: #000;
 }
 .dialog .spell .field.imagelocation input,
 .dialog .spell .field.imagezoom input,

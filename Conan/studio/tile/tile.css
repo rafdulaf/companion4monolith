@@ -344,11 +344,13 @@
     position: relative;
     left: -12px;
     content: "%";
+    color: #000;
 }
 .dialog .tile .field.imagerotation:after {
     position: relative;
     left: -12px;
     content: "°";
+    color: #000;
 }
 .dialog .tile .field.imagelocation input,
 .dialog .tile .field.imagezoom input,
