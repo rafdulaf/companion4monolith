@@ -123,11 +123,7 @@
 							},
 							"tokens" : {
 								"0": {
-									"name": {
-										"fr": "PION OMBRE",
-										"en": "SHADOW TOKEN"
-										},
-									"image": ["data/powers/img/shadow.png"]
+									"id": "shadow"
 								}					
 							}
 						}
@@ -1100,11 +1096,7 @@
 							},
 							"tokens" : {
 								"0": {
-									"name": {
-										"fr": "PION FREEZE",
-										"en": "FROZEN TOKEN"
-										},
-									"image": ["data/powers/img/frozen.png"]
+									"id": "freeze"
 								}					
 							}
 						},
@@ -1790,11 +1782,7 @@
 							},
 							"tokens" : {
 								"0": {
-									"name": {
-										"fr": "PION POSTURE DÉFENSIVE",
-										"en": "DEFENSIVE STANCE TOKEN"
-										},
-									"image": ["data/powers/img/defensive-stance.png"]
+									"id": "defensivestance"
 								}					
 							}
 						}
@@ -1876,11 +1864,7 @@
 							},
 							"tokens" : {
 								"0": {
-									"name": {
-										"fr": "PION FURTIVITÉ",
-										"en": "STEALTH TOKEN"
-										},
-									"image": ["data/powers/img/stealth.png"]
+									"id": "stealth"
 								}					
 							}
 						}
@@ -2894,11 +2878,13 @@
 							},
 							"tokens" : {
 								"0": {
-									"name": {
-										"fr": "PIONS PIRATAGE",
-										"en": "HACKING TOKEN"
-										},
-									"image": ["data/powers/img/hacking1.png","data/powers/img/hacking2.png","data/powers/img/hacking3.png"]
+									"id": "hacking-defense"
+								},
+								"1": {
+									"id": "hacking-movement"
+								},
+								"1": {
+									"id": "hacking-reroll"
 								}					
 							}
 						},
@@ -3470,11 +3456,7 @@
 							},
 							"tokens" : {
 								"0": {
-									"name": {
-										"fr": "PION VENIN DU JOKER",
-										"en": "JOKER VENOM TOKEN"
-										},
-									"image": ["data/powers/img/joker-venom.png"]
+									"id": "jokersvenom"
 								}					
 							}
 						},
@@ -4821,11 +4803,7 @@
 							},
 							"tokens" : {
 								"0": {
-									"name": {
-										"fr": "PION GAZ PHOBIQUE",
-										"en": "FEAR TOXIN TOKEN"
-										},
-									"image": ["data/powers/img/fear-toxin.png"]
+									"id": "feartoxin"
 								}					
 							}
 						}
@@ -4902,11 +4880,7 @@
 							},
 							"tokens" : {
 								"0": {
-									"name": {
-										"fr": "PION GAZ PHOBIQUE",
-										"en": "FEAR TOXIN TOKEN"
-										},
-									"image": ["data/powers/img/fear-toxin.png"]
+									"id": "feartoxin"
 								}					
 							}
 						}
@@ -6305,11 +6279,8 @@
 							},
 							"tokens" : {
 								"0": {
-									"name": {
-										"fr": "PION NUÉE DE RAT (4 PIONS)",
-										"en": "RAT SWARM TOKENS (4 TOKENS)"
-										},
-									"image": ["data/powers/img/ratswarm.png","data/powers/img/ratswarm.png","data/powers/img/ratswarm.png","data/powers/img/ratswarm.png"]
+									"id": "ratswarm",
+									"count": 4
 								}					
 							}
 						}
@@ -6968,11 +6939,7 @@
 							},
 							"tokens" : {
 								"0": {
-									"name": {
-										"fr": "PION OPÉRATION INHUMAINE",
-										"en": "INHUMAN EXPERIMENT TOKEN"
-										},
-									"image": ["data/powers/img/inhuman-experiment.png"]
+									"id": "inhumanexperiment"
 								}					
 							}
 						}
@@ -8479,11 +8446,7 @@
 							},
 							"tokens" : {
 								"0": {
-									"name": {
-										"fr": "PION VENIN",
-										"en": "VENOM TOKEN"
-										},
-									"image": ["data/powers/img/venom.png"]
+									"id": "jokersvenom"
 								}					
 							}
 						}
@@ -9453,11 +9416,7 @@
 							},
 							"tokens" : {
 								"0": {
-									"name": {
-										"fr": "PION OMBRE",
-										"en": "SHADOW TOKEN"
-										},
-									"image": ["data/powers/img/shadow.png"]
+									"id": "shadow"
 								}					
 							}
 						}
@@ -10615,11 +10574,8 @@
 							},
 							"tokens" : {
 								"0": {
-									"name": {
-										"fr": "PION INVISIBILITÉ X2",
-										"en": "INVISIBILITY TOKEN"
-										},
-									"image": ["data/powers/img/invisibility.png", "data/powers/img/invisibility.png"]
+									"id": "invisibility",
+									"count": 2
 								}					
 							}
 						}
