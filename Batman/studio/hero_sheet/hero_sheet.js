@@ -211,13 +211,10 @@ var HeroSheet = mergeObject(StudioItem, {
                     + "<input type=\"number\" min=\"1\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsmove\" name=\"sheetmove\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].movePh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
 
                     + "<input type=\"number\" min=\"1\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsmove2encumbrance\" name=\"sheetmove2encumbrance\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].movePh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
-                    + "<input type=\"number\" min=\"1\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsmove2\" name=\"sheetmove2\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].movePh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
 
                     + "<input type=\"number\" min=\"1\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsmove3encumbrance\" name=\"sheetmove3encumbrance\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].movePh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
-                    + "<input type=\"number\" min=\"1\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsmove3\" name=\"sheetmove3\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].movePh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
 
                     + "<input type=\"number\" min=\"1\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsmove4encumbrance\" name=\"sheetmove4encumbrance\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].movePh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
-                    + "<input type=\"number\" min=\"1\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsmove4\" name=\"sheetmove4\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].movePh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
 
                     + "<input type=\"number\" min=\"1\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsmoveexertion\" name=\"sheetmoveexertion\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].movePh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
                     + "<input type=\"number\" min=\"1\" max=\"99\" step=\"1\" maxlength=\"2\" id=\"hsmovegemfactor\" name=\"sheetmovegemfactor\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n[Language].movePh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
@@ -340,7 +337,49 @@ var HeroSheet = mergeObject(StudioItem, {
         sheet = sheet || {
             id: Math.random(),
             name: "",
-            subname: ""
+            subname: "",
+            type: "hero",
+            gems: {
+            	total: 10,
+            	active: 2,
+            	rest: 5
+            },
+            move: {
+            	free: 2,
+            	exertion: 4,
+            	gemfactor: 1,
+            	weight: [4 ,6] 
+            },
+            belt: 0,
+            size: 1,
+            menace: 1,
+            
+            caracs: {
+            	melee: {
+            		exertion: 4,
+            		dice: 'orange'
+            	},
+	        	ranged: {
+	        		exertion: 4,
+	        		dice: 'orange'
+	        	},
+	        	manipulation: {
+	        		exertion: 4,
+	        		dice: 'orange'
+	        	},
+	        	thought: {
+	        		exertion: 4,
+	        		dice: 'orange'
+	        	},
+	        	defense: {
+	        		exertion: 4,
+	        		dice: 'orange',
+		        	passive: ''
+	        	},
+	        	reroll: {
+	        		exertion: 4
+	        	}
+            }
         };
 
         $(".studiodialog .field.skills select.skills").each (function (i) {
@@ -359,7 +398,7 @@ var HeroSheet = mergeObject(StudioItem, {
 
         $(".studiodialog .field.caracs select.dice").each (function (i) {
             var k = $(this);
-            k.attr("data-value", "")
+            k.attr("data-value", "black")
                 .selectmenu({ appendTo: k.parent(), width: k.is(".dice") ? 40 : 58, change: function(event, selection) {
                     $(this).attr("data-value", selection.item.value);
                     HeroSheet._preview();
@@ -392,11 +431,59 @@ var HeroSheet = mergeObject(StudioItem, {
                 skills.push(skill);
             }
         }*/
+    	
+    	function arrayFromNonNull(...values)
+    	{
+    		let array = [];
+    		values.forEach(function(v) { if (v) array.push(v) });
+    		return array;
+    	}
 
         return {
             id: $(".dialog input[name=sheetpos]")[0].value,
             name: $(".dialog input[name=sheetname]")[0].value,
-            subname: $(".dialog input[name=sheetsubname]")[0].value
+            subname: $(".dialog input[name=sheetsubname]")[0].value,
+            type: $(".dialog select[name=sheettype]")[0].value,
+            gems: {
+            	total: parseInt($(".dialog input[name=sheetgems]")[0].value || 0),
+            	active: parseInt($(".dialog input[name=sheetgems2]")[0].value || 0),
+            	rest: parseInt($(".dialog input[name=sheetgems3]")[0].value || 0)
+            },
+            move: {
+            	free: parseInt($(".dialog input[name=sheetmove]")[0].value || 0),
+            	exertion: parseInt($(".dialog input[name=sheetmoveexertion]")[0].value || 0),
+            	gemfactor: parseInt($(".dialog input[name=sheetmovegemfactor]")[0].value || 0),
+            	weight: arrayFromNonNull(parseInt($(".dialog input[name=sheetmove2encumbrance]")[0].value), parseInt($(".dialog input[name=sheetmove3encumbrance]")[0].value), parseInt($(".dialog input[name=sheetmove4encumbrance]")[0].value))
+            },
+            belt: parseInt($(".dialog input[name=sheetbelt]")[0].value || 0),
+            size: parseInt($(".dialog input[name=sheetsize]")[0].value || 0),
+            menace: parseInt($(".dialog input[name=sheetmenace]")[0].value || 0),
+            caracs: {
+            	melee: {
+            		exertion: parseInt($(".dialog input[name=sheetmeleeexertion]")[0].value || 0),
+            		dice: $(".dialog select[name=sheetmeleedice]")[0].value
+            	},
+	        	ranged: {
+            		exertion: parseInt($(".dialog input[name=sheetrangedexertion]")[0].value || 0),
+            		dice: $(".dialog select[name=sheetrangeddice]")[0].value
+	        	},
+	        	manipulation: {
+            		exertion: parseInt($(".dialog input[name=sheetmanipulationexertion]")[0].value || 0),
+            		dice: $(".dialog select[name=sheetmanipulationdice]")[0].value
+	        	},
+	        	thought: {
+            		exertion: parseInt($(".dialog input[name=sheetthoughtexertion]")[0].value || 0),
+            		dice: $(".dialog select[name=sheetthoughtdice]")[0].value
+	        	},
+	        	defense: {
+            		exertion: parseInt($(".dialog input[name=sheetdefenseexertion]")[0].value || 0),
+            		dice: $(".dialog select[name=sheetdefensedice]")[0].value,
+		        	passive: $(".dialog select[name=sheetdefensepassivedice]")[0].value
+	        	},
+	        	reroll: {
+	        		exertion: parseInt($(".dialog input[name=sheetrerollexertion]")[0].value || 0)
+	        	}
+            }
         }
     },
     
@@ -405,6 +492,31 @@ var HeroSheet = mergeObject(StudioItem, {
         $(".dialog input[name=sheetpos]")[0].value = sheet.id;
         $(".dialog input[name=sheetname]")[0].value = sheet.name;
         $(".dialog input[name=sheetsubname]")[0].value = sheet.subname;
+        $(".dialog select[name=sheettype]")[0].value = sheet.type;
+        $(".dialog input[name=sheetgems]")[0].value = sheet.gems.total;
+        $(".dialog input[name=sheetgems2]")[0].value = sheet.gems.active;
+        $(".dialog input[name=sheetgems3]")[0].value = sheet.gems.rest;
+        $(".dialog input[name=sheetmove]")[0].value = sheet.move.free;
+        $(".dialog input[name=sheetmoveexertion]")[0].value = sheet.move.exertion;
+        $(".dialog input[name=sheetmovegemfactor]")[0].value = sheet.move.gemfactor;
+        $(".dialog input[name=sheetmove2encumbrance]")[0].value = sheet.move.weight[0] || "";
+        $(".dialog input[name=sheetmove3encumbrance]")[0].value = sheet.move.weight[1] || "";
+        $(".dialog input[name=sheetmove4encumbrance]")[0].value = sheet.move.weight[2] || "";
+        $(".dialog input[name=sheetbelt]")[0].value = sheet.belt;
+        $(".dialog input[name=sheetsize]")[0].value = sheet.menace;
+        $(".dialog input[name=sheetmenace]")[0].value = sheet.size;
+        $(".dialog input[name=sheetmeleeexertion]")[0].value = sheet.caracs.melee.exertion;
+        $(".dialog select[name=sheetmeleedice]")[0].value = sheet.caracs.melee.dice; $(".dialog select[name=sheetmeleedice]").attr("data-value",sheet.caracs.melee.dice);
+        $(".dialog input[name=sheetrangedexertion]")[0].value = sheet.caracs.ranged.exertion;
+        $(".dialog select[name=sheetrangeddice]")[0].value = sheet.caracs.ranged.dice; $(".dialog select[name=sheetrangeddice]").attr("data-value",sheet.caracs.ranged.dice);
+        $(".dialog input[name=sheetmanipulationexertion]")[0].value = sheet.caracs.manipulation.exertion;
+        $(".dialog select[name=sheetmanipulationdice]")[0].value = sheet.caracs.manipulation.dice; $(".dialog select[name=sheetmanipulationdice]").attr("data-value",sheet.caracs.manipulation.dice);
+        $(".dialog input[name=sheetthoughtexertion]")[0].value = sheet.caracs.thought.exertion;
+        $(".dialog select[name=sheetthoughtdice]")[0].value = sheet.caracs.thought.dice; $(".dialog select[name=sheetthoughtdice]").attr("data-value",sheet.caracs.thought.dice);
+        $(".dialog input[name=sheetdefenseexertion]")[0].value = sheet.caracs.defense.exertion;
+        $(".dialog select[name=sheetdefensedice]")[0].value = sheet.caracs.defense.dice; $(".dialog select[name=sheetdefensedice]").attr("data-value",sheet.caracs.defense.dice);
+        $(".dialog select[name=sheetdefensepassivedice]")[0].value = sheet.caracs.defense.passive; $(".dialog select[name=sheetdefensepassivedice]").attr("data-value",sheet.caracs.defense.passive);
+        $(".dialog input[name=sheetrerollexertion]")[0].value = sheet.caracs.reroll.exertion;
     },
 
     _checkForm: function(sheet)

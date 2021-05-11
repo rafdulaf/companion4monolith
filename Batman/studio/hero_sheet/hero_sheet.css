@@ -51,7 +51,7 @@
     width: 100%;
 }
 
-.dialog .sheet .ui-menu { width: 100% !important; text-align: right; }
+.dialog .sheet .ui-menu { width: 100% !important; }
 .dialog .sheet .ui-menu .ui-menu-item { display: inline-block; vertical-align: top; width: 16.6%; text-align: center; }
 .dialog .sheet .skills ~ .ui-selectmenu-menu { width: 58px; } 
 
@@ -144,6 +144,15 @@
     content: "3";
 }
 
+
+
+@media screen and (min-width: 840px) {
+    .dialog .hscol {
+        width: 50%;
+        display: inline-block;
+        vertical-align: top;
+    }
+}
 
 
 
