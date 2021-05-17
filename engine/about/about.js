@@ -34,7 +34,7 @@ var About = {
             'contribute_version': "Version actuelle : ",
             'contribute_hof': "Temple de la renommée",
             'contribute_hof_coders': "Codage de l'application",
-            'contribute_hof_relooking': "Aide sur la charte graphique",
+            'contribute_hof_relooking': "Logo Companion4Monolith et Aide sur la charte graphique",
             'contribute_hof_data': "Saisie des données",
             'contribute_hof_test': "Tests et relectures"
         },
@@ -71,7 +71,7 @@ var About = {
             'contribute_version': "Current version: ",
             'contribute_hof': "Hall of fame",
             'contribute_hof_coders': "Application coding",
-            'contribute_hof_relooking': "Help on skin",
+            'contribute_hof_relooking': "Companion4Monolith logo and Help on skin",
             'contribute_hof_data': "Data inputs",
             'contribute_hof_test': "Tests and rereadings"
         },
@@ -166,9 +166,10 @@ var About = {
             "<div id='about' class='about'>"
                     + "<div class='about-zone-about'>"
                             + "<h1 style='text-align: center '>" + About._i18n[Language].title + " v" + Version + "</h1>"
-                            + "<img src='about/logo-" + Theme + ".png?version=" + Version + "'/>" +
-                            "<a class='fullscreen' onclick='About._toggleFullscreen(); return false' href='javascript:void(0);' title=\"" + About._i18n[Language].fullscreen + "\"></a>" +
-                            "<span>" + About._i18n[Language].text + "</span>"
+                            + "<img src='about/logo-" + Theme + ".png?version=" + Version + "'/>"
+                            + "<img src='about/companion4monolith.png?version=" + Version + "' style='margin-right: 0'/>"
+                            + "<a class='fullscreen' onclick='About._toggleFullscreen(); return false' href='javascript:void(0);' title=\"" + About._i18n[Language].fullscreen + "\"></a>"
+                            + "<span>" + About._i18n[Language].text + "</span>"
                     + "</div>"
                     + "<div>"
                        + "<ul>"

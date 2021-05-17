@@ -46,6 +46,9 @@
     background-image: url(../about/logo-light.png);
     height: 120px;
 }
+.menu > div > ul:after {
+    background-image: url(../about/companion4monolith-small.png);
+}
 
 .map-index > ul > li { padding: 2px; background-color: #9C928E; }
 

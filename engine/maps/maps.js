@@ -818,12 +818,15 @@ var Maps = {
         {
             var map = Encyclopedia.maps.list[i];
 
-            c += "<li>"
-                + "<strong>" + map.description.title[Language] + "</strong>"
-                + " " + Maps._i18n[Language].copyright_prop
-                + " <em>" + map.description.copyright + "</em>"
-                + " (" + Maps._getOrigin(map) + ")"
-                + "</li>"
+            if (map.description.copyright)
+        	{
+            	c += "<li>"
+            		+ "<strong>" + map.description.title[Language] + "</strong>"
+            		+ " " + Maps._i18n[Language].copyright_prop
+            		+ " <em>" + map.description.copyright + "</em>"
+            		+ " (" + Maps._getOrigin(map) + ")"
+            		+ "</li>";
+        	}
         }
 
         c += "</ul>";
