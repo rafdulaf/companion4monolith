@@ -130,7 +130,7 @@ var Maps = {
 	
 	externalInit: function()
 	{
-        Maps._rotation = window.screen.width / window.screen.height > 1.2 ? 0 : 3;
+        Maps._rotation = 0;
         
         Maps._addCompositionsToList();
 
@@ -493,14 +493,24 @@ var Maps = {
 
     _onResize: function()
     {
-        Maps._rotation = window.screen.width / window.screen.height > 1.2 ? 
-            (Maps._rotation == 1 || Maps._rotation == 2 ? 2 : 0) 
-            : 
-            (Maps._rotation == 1 || Maps._rotation == 2 ? 1 : 3);
-        Maps.onresize = true;
-        if (Maps.standalone)
+    	try
     	{
-        	Maps._rotate()
+	    	var map = Maps._getMap();
+	    	let screenHorizontal = window.screen.width / (window.screen.height - 150) > 1;
+	    	let mapHorizontal = map.size[0] / map.size[1] > 1;
+	        Maps._rotation = screenHorizontal == mapHorizontal ? 
+	            (Maps._rotation == 1 || Maps._rotation == 2 ? 2 : 0) 
+	            : 
+	            (Maps._rotation == 1 || Maps._rotation == 2 ? 1 : 3);
+	        Maps.onresize = true;
+	        if (Maps.standalone)
+	    	{
+	        	Maps._rotate()
+	    	}
+    	}
+    	catch (e)
+    	{
+    		// Nothing
     	}
     },
 
@@ -532,6 +542,10 @@ var Maps = {
     		return;
     	}
     	
+    	
+    	let screenHorizontal = window.screen.width / (window.screen.height - 150) > 1;
+    	let mapHorizontal = map.size[0] / map.size[1] > 1;
+    	Maps._rotation = screenHorizontal == mapHorizontal ? 0 : 3;
         Maps._lastSelectedZone = null;
         Maps._hideAll();
 
