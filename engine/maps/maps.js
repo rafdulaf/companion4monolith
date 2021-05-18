@@ -66,11 +66,11 @@ var Maps = {
             'clickhelp5': "Le aree celesti sono un livello inferiore a quelle blu.",
             'clickhelp3': "Il numero di cerchi verdi concentrici al centro dell'area indica il suo livello di elevazione.",
             'copyright': "I testi esplicativi per ogni mappa sono stati redatti dai loro rispettivi creatori. Alcuni di questi sono stati modificati.<br/>"
-                        + "TODO_TRANSLATE<br/>"
+                        + "Alcuni tabelloni permettono di scaricare uno schema statico delle linee di vista che è stato realizzato da <a href='https://the-overlord.com/index.php?/profile/13-roolz/' target='_blank'>@Roolz</a> ha realizzato la digitalizzazione delle linee di vista, consultando l'autore e integrando i risultati delle risposte.<br/>"
                         + "I principi delle linee di vista dinamiche sono basati su un'idea di: <a href='https://the-overlord.com/index.php?/profile/88-pamplerousse/' target='_blank'>@Pamplerousse</a>.<br/>"
                         + "Le mappe:" ,
             'copyright_prop': "è proprietà di:",
-            'userpref_showall': "TODO_TRANSLATE"
+            'userpref_showall': "Mostra solo i tabelloni che ho"
         }
     },
     

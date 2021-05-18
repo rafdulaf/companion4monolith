@@ -99,8 +99,8 @@ var HeroSheet = mergeObject(StudioItem, {
         'it': {
             'tab': "Eroi",
             'nocard': "Al momento non hai schede-Eroe",
-            'nocard2': "<br/><br/>TODO_TRANSLATE",
-            'newcard': "TODO_TRANSLATE",
+            'nocard2': "<br/><br/>Clicca su + per crearne una",
+            'newcard': "Crea un nuovo Eroe",
             'printHint': "Una scheda eroe misura 21cm (8.3\") in larghezza. Se vuoi stampare con gli indicatori di taglio, devi stampare in orizzontale e solo una scheda alla volta. Se vuoi stampare senza gli indicatori di taglio, puoi stampare fino a 2 schede alla volta con l'orientamento del foglio in verticale.",
             'editcard': "Modifica una carta",
 

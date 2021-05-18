@@ -83,7 +83,7 @@ var Encyclopedia = {
             'menu': "Enciclopedia",
             'operatorAnd': "e",
             'operatorOr': "o",
-            'search': "TODO_TRANSLATE"
+            'search': "Ricerca"
         }
     },
     

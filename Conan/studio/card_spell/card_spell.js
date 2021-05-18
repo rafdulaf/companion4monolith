@@ -83,8 +83,8 @@ var CardSpell = mergeObject(StudioItem, {
         'it': {
             'tab': "Incantesimi",
             'nocard': "Al momento non hai carte",
-            'nocard2': "<br/><br/>TODO_TRANSLATE",
-            'newcard': "TODO_TRANSLATE",
+            'nocard2': "<br/><br/>Clicca su + per crearne una",
+            'newcard': "Crea una carta incantesimo",
             'editcard': "Modifica una carta",
 
             'name': "Nome",

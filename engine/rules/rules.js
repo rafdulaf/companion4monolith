@@ -55,7 +55,7 @@ var Rules = {
 
             'copyright': "Le regole sono basate sul regolamento ufficiale e sui suoi complementi, ma sono parzialmente riscritte.",
             
-            'userpref_showall': "TODO_TRANSLATE"
+            'userpref_showall': "Mostra solo le regole che ho"
         }
     },
     

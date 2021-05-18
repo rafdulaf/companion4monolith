@@ -77,7 +77,7 @@ var About = {
         },
         'it': {
             'fullscreen': "A tutto schermo",
-            'other': "Gli altri compagniTODO_TRANSLATE",
+            'other': "Altri compagni",
             'about': "Crediti",
             'licence': "Licenze",
             'licence_text': "Questo software è sviluppato sotto licenza LGPL-3.0.",
@@ -91,11 +91,11 @@ var About = {
             'custom_lang': "Italiano",
             'custom_langlabel': "Lingua",
             'custom_automatic_lang': "Rivela automaticamente",
-            'custom_themelabel': "TODO_TRANSLATE",
-            'custom_automatic_theme': "TODO_TRANSLATE",
-            'custom_theme_light': "TODO_TRANSLATE",
-            'custom_theme_dark': "TODO_TRANSLATE",
-            'custom_allin': "TODO_TRANSLATE", 
+            'custom_themelabel': "Tema",
+            'custom_automatic_theme': "Rivela automaticamente",
+            'custom_theme_light': "Chiaro",
+            'custom_theme_dark': "Scuro",
+            'custom_allin': "TUTTO!", 
             'custom_reload': "Le modifiche della tua configurazione richiederanno un riavvio automatico dell'applicazione",
             'contribute': "Collabora!",
             'contribute_text': "Puoi collaborare a questa applicazione in molti modi:"
@@ -108,7 +108,7 @@ var About = {
             'contribute_version': "Versione attuale: ",
             'contribute_hof': "Albo d'oro",
             'contribute_hof_coders': "Codice Applicazione",
-            'contribute_hof_relooking': "TODO_TRANSLATE",
+            'contribute_hof_relooking': "Aiuto sullo stile grafico",
             'contribute_hof_data': "Aquisizione dei dati",
             'contribute_hof_test': "Test e riscritture"
         }

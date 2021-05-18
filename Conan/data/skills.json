@@ -59,7 +59,7 @@
             "clarification": {
                 "fr": "Pour utiliser Allonge, les unités doivent se trouver au même niveau. On considère que les zones de transition comme les escaliers ou les éboulis de la Forteresse sont à la fois aux niveaux supérieur et inférieur. Attaquer une unité qui se trouve à un niveau différent nécessite de recourir à une Attaque à distance ou à un Sort.\nAllonge ne procure de bonus de surplomb que lorsque les règles spéciales de la carte Auberge sont utilisées.",
                 "en": "Reach requires units be on the same level. Connecting areas like stairs or the Fortress rock slides are considered to be at both the higher and lower levels. Attacking a unit at a different level, however, requires a Ranged Attack or Spel\nThe only time Reach incurs an elevation bonus is if the special rules are used for the Inn game board.",
-                "it": "TODO_TRANSLATE"
+                "it": "Per utilizzare Allungo, le unità devono trovarsi allo stesso livello. Le aree di transizione tra livelli differenti - come le scale della Locanda o le aree franate del Forte - sono considerate essere contemporaneamente allo stesso livello delle aree che congiungono. Per attaccare un'unità che si trova su un altro livello, bisogna quindi effettuare un attacco a Distanza oppure ricorrere a un Incantesimo.\nAllungo non conferisce bonus di soprelevazione tranne nel caso delle regola speciale dei banconi e tavoli della Locanda."
             },
             "image": "data/skills/img/attack/reach.png"
         }, {
@@ -78,7 +78,7 @@
             "clarification": {
                 "fr": "Si un personnage dispose aussi de Coup Précis, le joueur doit choisir s’il utilise Coup Précis ou Coup Circulaire avant de lancer les dés.",
                 "en": "If someone has also Precision Strike, The player must choose if they are making a Precision Strike or a Circular Strike before they roll.",
-                "it": "TODO_TRANSLATE"
+                "it": "Se un personaggio ha anche l'abilità Colpo Preciso, il giocatore, prima di lanciare i dadi, deve scegliere se utilizzare Colpo Preciso o Colpo Circolare."
             },
             "image": "data/skills/img/attack/circular_strike.png"
         }, {
@@ -111,7 +111,7 @@
             "clarification": {
                 "fr": "Si une unité dispose à la fois de Constriction et Allonge, Constriction permet logiquement de déplacer une cible d’une zone vers une autre. C’est le mouvement associé à la Constriction qui intervient en premier. Ainsi, une unité alliée disposant des compétences Garde du corps ou Soutien devrait déjà se trouver dans la zone de l’attaquant pour que les effets de la compétence s’appliquent.",
                 "en": "If a unit has Constriction and Reach, Constriction can possibly move the target from one area to another. The movement from Constriction happens first. Thus, an Allied unit with Bodyguard or Support would already need to be in the attacker’s area for the skill’s effects to apply.",
-                "it": "TODO_TRANSLATE"
+                "it": "Se un'unità ha le abilità Costrizione e Allungo, Costrizione gli permette di spostare il bersaglio da un'area a un'altra. È il movimento associato a Costrizione che viene effettuato per primo. Perciò, un'unità alleata che possiede le abilità Guardia del Corpo o Supporto dovrà già trovarsi nell'area dell'attaccante affinché si possano applicare gli effetti della sua abilità."
             },
             "image": "data/skills/img/attack/constriction.png"
         }, {
@@ -130,7 +130,7 @@
             "clarification": {
                 "fr": "Si un personnage dispose aussi de Coup Circulaire, le joueur doit choisir s’il utilise Coup Précis ou Coup Circulaire avant de lancer les dés.",
                 "en": "If someone has also Circular Strike, The player must choose if they are making a Precision Strike or a Circular Strike before they roll.",
-                "it": "TODO_TRANSLATE"
+                "it": "Se un personaggio ha anche l'abilità Colpo Circolare, il giocatore, prima di lanciare i dadi, deve scegliere se utilizzare Colpo Preciso o Colpo Circolare."
             },
             "image": "data/skills/img/attack/precision_strike.png"
         }, {
@@ -278,7 +278,7 @@
             "clarification": {
                 "fr": "Si une unité ne dispose pas de suffisamment de Points de Mouvement pour s’extraire en raison d’un empoisonnement, un Héros peut toujours dépenser tous ses Points de Mouvement gratuits et autant de points que nécessaire, jusqu’à sa limite de saturation.\nEn mode Aventure, si une unité de l’Overlord est prise dans une toile (suite à l’utilisation d’un Filet), l’Overlord peut utiliser les Points de Mouvement gratuits de l’unité et y ajouter des gemmes pour atteindre les 4 points nécessaires à son extraction, même si l’unité n’est pas normalement en mesure d’atteindre les 4 Points de Mouvement.\nEn mode Solo/coop, l’unité de l’Overlord utilise simplement tous ses Points de Mouvement gratuits pour s’extraire",
                 "en": "If a unit doesn’t have enough movement points to escape because they have been poisoned, a hero may escape by spending all of their free movement points and all points up to their exertion limit.\n In Adventure Mode, if an Overlord tile is caught in a web (by use of the Net item), the Overlord may use the unit’s free movement points and gems to reach the 4 points to escape, even if the unit would not normally be able to reach 4 movement points.\nIn Solo/Coop Mode, the Overlord tile simply uses all free movement points to escape.",
-                "it": "TODO_TRANSLATE"
+                "it": "Se un'untà non ha sufficienti punti Movimento per liberarsi da una condizione di Intrappolato, un Eroe può sempre usare tutto il suo Movimento Base e aggiungere altri punti movimento senza superare il suo indice di saturazione. \nNella modalità Avventura, se un'unità dell'Overlord è intrappolata (in seguito all'uso di una Rete), l'Overlord può utilizzare il Movimento Base dell'unità e aggiungere delle gemme per raggiungere i 4 punti movimento necessari a liberarla, anche se l'unità normalmente non potrebbe avere 4 punti movimento. \nNella modalità Solo/Coop, l'Overlord spende semplicemente tutto il Movimento Base dell'unità."
             },
             "token": "web",
             "image": "data/skills/img/movement/web_projection.png"

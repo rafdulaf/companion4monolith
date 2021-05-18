@@ -22,7 +22,7 @@ Tutorial = {
             'extensions_continue': "Standard",
 
             'audience_message': "Statistiche anonime e senza cookie sono utilizzate su questa applicazione.",
-            'audience_ok': "TODO_TRANSLATE"
+            'audience_ok': "Accetto"
             }
     },
 
