@@ -510,7 +510,10 @@ var About = {
     
     _allin: function()
     {
-    	$(".custom input:not(:checked)").click()
+    	if ($(".custom input:not(:checked)").length > 0)
+    		$(".custom input:not(:checked)").click()
+    	else
+    		$(".custom input").click()
     },
 
     _hasExpansion: function(origins, allOfThem)
