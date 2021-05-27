@@ -1,8 +1,11 @@
 :root {
     --header-padding: 10px;
-    --footer-height: 56px;    
+    --footer-height: 56px; 
+    --toolbar-height: 44px;
+    --toolbar-font-size: 24px; 
+    --header-icon-opacity: 1;  
     
-    --header-height: calc(var(--header-padding) * 2 + 44px);
+    --header-height: calc(var(--header-padding) * 2 + var(--toolbar-height));
 }
 @media screen and (max-height: 500px) {
     :root {
@@ -10,7 +13,6 @@
         --footer-height: 40px;    
     }
 }
-
 
 .header {
     position: absolute;
@@ -98,6 +100,10 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    background-color: var(--header-icon-bg-color);
+    border-radius: 10px;
+    min-width: var(--toolbar-height);
+    text-align: center;
 }
 .header .toolbar ul.active {
     display: block;
@@ -110,14 +116,15 @@
 }
 .header .toolbar a {
     color: var(--header-icon-color);
-    font-size: 24px;
-    line-height: 44px;
+    font-size: var(--toolbar-font-size);
+    line-height: var(--toolbar-height);
+    height: var(--toolbar-height);
     text-decoration: none;
     display: block;
     text-align: center;
     width: 40px;
-    height: 44px;
     overflow: hidden;
+    opacity: var(--header-icon-opacity);
 }    
     
 .nav {
@@ -302,14 +309,18 @@
     list-style: none;
     padding: 0;
     margin: var(--header-padding) 10px;
+    background-color: var(--dialog-header-action-bg-color);
+    border-radius: 10px;
+    min-width: var(--toolbar-height);
+    text-align: center; 
 }   
 .dialog-header .actions li {
      display: inline-block;
 }   
 .dialog-header .actions li a {
     color: var(--dialog-header-action-color);
-    font-size: 1.5rem;
-    line-height: 44px;
+    font-size: var(--toolbar-font-size);
+    line-height: var(--toolbar-height);
     text-decoration: none;
     display: block;
     text-align: center;

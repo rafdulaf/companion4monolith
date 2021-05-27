@@ -7,7 +7,8 @@
     --header-title-color: var(--header-color); 
     --header-menu-color: var(--header-color); 
     --header-icon-color: var(--header-color); 
-    
+    --header-icon-bg-color: #97918F; 
+        
     --floating-icon-color: #fff;
     --floating-icon-bgcolor: #312420;
     --floating-icon-hover-bgcolor: #422a21;
@@ -21,7 +22,8 @@
     
     --dialog-header-bg-color: var(--header-bg-color);
     --dialog-header-color: var(--main-color);
-    --dialog-header-action-color: var(--dialog-header-color); 
+    --dialog-header-action-color: var(--dialog-header-bg-color); 
+    --dialog-header-action-bg-color: var(--dialog-header-color); 
     --dialog-header-back-color: var(--highlight-color);
     --dialog-color: var(--body-color); 
     --dialog-bg-color: var(--body-bg-color);
@@ -53,3 +55,12 @@
 .map-index > ul > li { padding: 2px; background-color: #9C928E; }
 
 ::-webkit-scrollbar-track { background-color: #252525; }
+
+@media screen and (max-width: 700px) {
+    :root {
+        --header-icon-opacity: 0.7; 
+        --header-icon-bg-color: var(--header-bg-color); 
+        --dialog-header-action-color: var(--dialog-header-color); 
+        --dialog-header-action-bg-color: var(--dialog-header-bg-color); 
+    }
+}

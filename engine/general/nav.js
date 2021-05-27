@@ -436,7 +436,7 @@ Nav = {
         function drawactions()
         {
             var c = "";
-            if (actions)
+            if (actions && actions.length > 0)
             {
                 c += "<ul class='actions'>";
                 for (var i in actions)
@@ -452,7 +452,7 @@ Nav = {
         function drawfloatingactions()
         {
             var c = "";
-            if (floatingactions)
+            if (floatingactions && floatingactions.length > 0)
             {
                 c += "<ul class='floatingactions'>";
                 for (var i in floatingactions)

@@ -57,7 +57,7 @@
 
 .search-wrapper {
     height: 100%;
-    overflow: auto;
+    overflow: hidden scroll;
 }
 
 .search-engine {

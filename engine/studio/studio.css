@@ -15,8 +15,7 @@
 }
 
 #studio .inside {
-    overflow-x: auto;
-    overflow-y: scroll;
+    overflow: hidden scroll;
     height: 100%;
 }
 
