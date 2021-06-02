@@ -2,7 +2,7 @@ var About = {
     _i18n: {
         'fr': {
             'fullscreen': "Plein écran",
-            'other': "Les autres compagnions",
+            'other': "Les autres compagnons",
             'about': "A propos",
             'licence': "Licence",
             'licence_text': "Ce logiciel est développé sous licence LGPL-3.0",
