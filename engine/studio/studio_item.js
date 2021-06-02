@@ -16,7 +16,7 @@ var StudioItem = {
     init: function() {
         Nav.addFloatingAction(this.name, this._i18n[Language].newcard, "studio-icon-add", this.name + "-add", this.add.bind(this));
         this.onHide();
-        $("#" + this.name).html("<div id='" + this.name + "-inside' class='inside'></div>");
+        $("#" + this.name).html("<div class='inside'><div id='" + this.name + "-inside'></div></div>");
         Nav.createFloatingBar(this.name);
         this._displayCards();
         AutoZoom.autozoom(this.name + "-inside", this._itemWidth, this._itemHeight);
