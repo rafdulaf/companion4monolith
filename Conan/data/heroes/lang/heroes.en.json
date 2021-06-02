@@ -132,7 +132,6 @@
         },
         "savage-belit": {
             "name": "Savage Bêlit",
-            "subname": "",
             "quote": {
                 "text": "Bêlit turned toward Conan, her bosom heaving, her eyes flashing. Fierce fingers of wonder caught at his heart. She was slender, yet formed like a goddess: at once lithe and voluptuous. Her only garment was a broad silken girdle. Her white ivory limbs and the ivory globes of her breasts drove a beat of fierce passion through the Cimmerian’s pulse, even in the panting fury of battle. Her rich black hair, black as a Stygian night, fell in rippling burnished clusters down her supple back. Her dark eyes burned on the Cimmerian.\nShe was untamed as a desert wind, supple and dangerous as a she-panther.",
                 "origin": "Queen of the Black Coast"
@@ -204,7 +203,6 @@
         },
         "king-conan": {
             "name": "King Conan",
-            "subname": "",
             "quote": {
                 "text": "It floated hazily, then leaped into startling clarity--a tall man, mightily shouldered and deep of chest, with a massive corded neck and heavily muscled limbs. He was clad in silk and velvet, with the royal lions of Aquilonia worked in gold upon his rich jupon, and the crown of Aquilonia shone on his square-cut black mane; but the great sword at his side seemed more natural to him than the regal accouterments. His brow was low and broad, his eyes a volcanic blue that smoldered as if with some inner fire. His dark, scarred, almost sinister face was that of a fighting-man, and his velvet garments could not conceal the hard, dangerous lines of his limbs.",
                 "origin": "The Hour of the Dragon"
@@ -254,6 +252,9 @@
         "ikhmet": {
             "name": "Ikhmet"
         },
+        "octavia": {
+            "name": "Octavia"
+        },
         "othryades": {
             "name": "Othryades"
         },
@@ -293,6 +294,68 @@
         },
         "odysseus": {
             "name": "Odysseus"
+        },
+        "conan-the-pirate": {
+            "name": "Conan the Pirate",
+            "quote": {
+                "text": "Water ran in rivulets from his great shoulders and down his heavy arms. His single garment—a pair of bright crimson silk breeks— was soaking wet, as was his broad gold-buckled girdle and the sheathed sword it supported. As he stood at the rail, the rising sun etched him like a great bronze statue. He ran his fingers through his streaming black mane, and his blue eyes lit as they rested on the girl.",
+                "origin": "Pool of the Black One"
+            }
+        },
+        "zenobia": {
+            "name": "Zenobia",
+            "quote": {
+                "text": "But I am no painted toy; I am of flesh and blood. I breathe, hate, fear, rejoice and love. And I have loved you, King Conan, ever since I saw you riding at the head of your knights along the streets of Belverus when you visited King Nimed, years ago. My heart tugged at its strings to leap from my bosom and fall in the dust of the street under your horse’s hoofs.”\nColor flooded her countenance as she spoke, but her dark eyes did not waver. Conan did not at once reply; wild and passionate and untamed he was, yet any but the most brutish of men must be touched with a certain awe or wonder at the baring of a woman’s naked soul.",
+                "origin": "Hour of the Dragon"
+            }
+        },
+        "gorm": {
+            "name": "Gorm",
+            "quote": {
+                "text": "Gorm had behind him a heritage of a hundred thousand years of screaming savagery—the pad of the tiger was in his stealthy step, the grip of the gorilla in his black-nailed hands, the fire that burns in a leopard’s eyes burned in his.\nAnd Gorm, by virtue of this new craft, began to assert his dominance over other clans, partly by war, partly by craft and diplomacy, in which latter art he excelled all other barbarians.",
+                "origin": "The Hyborian Age"
+            }
+        },
+        "xaltotun": {
+            "name": "Xaltotun",
+            "quote": {
+                "text": "In that light the figure seated in a silver, thronelike chair before him seemed unreal and fantastic, with an illusiveness of outline that was heightened by a filmy silken robe. But the features were distinct—unnaturally so in that uncertain light. It was almost as if a weird nimbus played about the man’s head, casting the bearded face into bold relief, so that it was the only definite and distinct reality in that mystic, ghostly chamber. It was a magnificent face, with strongly chiseled features of classical beauty. There was, indeed, something disquieting about the calm tranquility of its aspect, a suggestion of more than human knowledge, of a profound certitude beyond human assurance.",
+                "origin": "Hour of the Dragon"
+            }
+        },
+        "nyaga": {
+            "name": "N'Yaga",
+            "quote": {
+                "text": "Ho, N’Yaga!” her voice twanged like a bowstring.\n“Fetch herbs and dress your master’s wounds! The rest of you bring aboard the plunder and cast off.”\nAs Conan sat with his back against the poop-rail, while the old shaman attended to the cuts on his hands and limbs, the cargo of the ill-fated Argus was quickly shifted aboard the Tigress and stored in small cabins below deck.",
+                "origin": "Queen of the Black Coast"
+            }
+        },
+        "nameless-horror": {
+            "name": "Nameless Horror"
+        },
+        "winged-one": {
+            "name": "Winged One"
+        },
+        "baal-pteor": {
+            "name": "Baal Pteor",
+            "quote": {
+                "text": "Your head, Cimmerian!” taunted Baal-pteor. “I shall take it with my bare hands, twisting it from your shoulders as the head of a fowl is twisted! Thus the sons of Kosala offer sacrifice to Yajur. Barbarian, you look upon a strangler of Yotapong. I was chosen by the priests of Yajur in my infancy, and throughout childhood, boyhood and youth I trained in the art of slaying with the naked hands—for only thus are the sacrifices enacted. Yajur loves blood, and we waste not a drop from the victim’s veins...With my hands, barbarian, I shall break your neck!”",
+                "origin": "Shadows in Zamboula"
+            }
+        },
+        "conan-the-conqueror": {
+            "name": "Conan",
+            "subname": "the Conqueror",
+            "quote": {
+                "text": "What do I know of cultured ways, the gilt, the craft and the lie? I, who was born in a naked land and bred in the open sky. The subtle tongue, the sophist guile, they fail when the broadswords sing; Rush in and die, dogs—I was a man before I was a king.”",
+                "origin": "The Phoenix on the Sword"
+            }
+        },
+        "kull": {
+            "name": "King Kull"
+        },
+        "brule": {
+            "name": "Brule"
         }
     }
 }

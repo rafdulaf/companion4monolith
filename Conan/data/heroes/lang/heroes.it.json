@@ -184,7 +184,7 @@
             "name": "Valchiria Vanir",
             "quote": {
                 "text": "Che tipo di gente sono gli uomini del Settentrione? —  chiese Prospero. — Sono alti, biondi e con gli occhi azzurri. Il loro dio è Ymir, il gigante di ghiaccio, e ogni tribù ha il proprio Re. Sono ostinati e fieri. Combattono tutto il giorno e passano la notte a bere birra e a ruggire le loro selvagge canzoni.",
-                "origin": "La Fenice sulla lama"
+                "origin": "La Fenice sulla Lama"
             }
         },
         "yogah-of-yag": {
@@ -254,8 +254,11 @@
         "ikhmet": {
             "name": "Ikhmet"
         },
+        "octavia": {
+            "name": "Octavia"
+        },
         "othryades": {
-            "name": "Othryades"
+            "name": "Otriade"
         },
         "afari": {
             "name": "Afari",
@@ -293,6 +296,68 @@
         },
         "odysseus": {
             "name": "Ulisse"
+        },
+        "conan-the-pirate": {
+            "name": "Conan il Pirata",
+            "quote": {
+                "text": "L'acqua gli scorreva in rivoli dalle larghe spalle lungo le braccia muscolose. Il suo unico indumento, un paio di calzoni di lucida seta scarlatta, era bagnato fradicio, come l'ampia cintura dal fermaglio dorato che sorreggeva il fodero della spada. Fermo sulla murata, l'uomo si stagliò contro il sole nascente come una gigantesca statua di bronzo. Fece scorrere le dita fra i lunghi capelli neri, e gli occhi azzurri si accesero quando si posarono sul corpo della ragazza.",
+                "origin": "Lo stagno dei Neri"
+            }
+        },
+        "zenobia": {
+            "name": "Zenobia",
+            "quote": {
+                "text": "Ma non sono un giocattolo: anch'io sono fatta di carne. Respiro, odio, temo, esulto e amo. E amo voi, Re Conan, fin da quando vi ho visto cavalcare alla testa dei vostri cavalieri per le strade di Belvero, quando avete fatto visita a Re Numa, anni fa. Il mio cuore impazzito minacciava di saltare fuori dal petto e gettarsi nella polvere della strada sotto gli zoccoli del vostro cavallo. »\n Mentre così parlava, la ragazza arrossì visibilmente, ma i suoi occhi non tremarono. Conan rimase muto; era portato ad agire selvaggiamente, impetuosamente, indomitamente, ma anche l'uomo più feroce prova un senso di rispetto e di meraviglia, quando una donna gli svela la propria anima.",
+                "origin": "Conan il Conquistatore"
+            }
+        },
+        "gorm": {
+            "name": "Gorm",
+            "quote": {
+                "text": "Gorm aveva in sé l'eredità di centomila anni di vita selvaggia, sanguinaria e violenta : \nnel suo passo furtivo vi era l'avanzare felpato della tigre, nelle sue mani dalle unghie listate di nero la stretta implacabile e mortale del gorilla, e il fuoco che ardeva negli occhi del leopardo mandava un uguale bagliore dai suoi occhi. \nGorm, grazie appunto alla nuova metallurgia, cominciò a imporre il suo dominio agli altri clan, in parte con la guerra, in parte con l'astuzia e la diplomazia, arte quest'ultima nella quale sovrastava ampiamente ogni altro barbaro.",
+                "origin": "L'Era Hyboriana"
+            }
+        },
+        "xaltotun": {
+            "name": "Xaltotun",
+            "quote": {
+                "text": "In quella luce la figura seduta davanti a lui, su un seggio d'argento a forma di trono, sembrava fantastica e irreale. Una leggera veste di seta ne sottolineava i contorni ingannevoli, ma i connotati del volto si scorgevano distintamente nonostante la luce incerta, ed era appunto questo a farla apparire irreale. Era come se intorno alla testa dell'uomo ci fosse una nube sovrannaturale che ne mettesse in rilievo il volto adorno di barba, per farlo apparire come l'unica realtà distinta e definita nella stanza spettrale e misteriosa. Era un volto magnifico, con lineamenti di bellezza classica modellati con decisione. E nella serenità e nella calma del suo aspetto c'era anche un non so che di inquietante, qualcosa che suggeriva una sapienza più che umana, una salda sicurezza che oltrepassava ogni umana fiducia.",
+                "origin": "Conan il Conquistatore"
+            }
+        },
+        "nyaga": {
+            "name": "N'Yaga",
+            "quote": {
+                "text": "— Tu, N'Yaga! — La voce della donna schioccò come la corda di un arco.\n — Prendi le erbe e medica le ferite del tuo padrone! Voialtri, portate a bordo il bottino, e tagliamo i grappini.\n Conan si sedette con la schiena contro la murata di poppa, mentre il vecchio sciamano gli curava le ferite alle mani e alle gambe, e il carico della sfortunata Argus veniva rapidamente trasferito sulla Tigre e ammassato in piccole cabine sotto il ponte.",
+                "origin": "La Regina della Costa Nera"
+            }
+        },
+        "nameless-horror": {
+            "name": "Orrore senza nome"
+        },
+        "winged-one": {
+            "name": "Terrore Alato"
+        },
+        "baal-pteor": {
+            "name": "Baal Pteor",
+            "quote": {
+                "text": "— La tua testa, Cimmero! — esclamò Baal-pteor in tono di scherno. — La prenderò a mani nude, strappandotela dalle spalle come se fosse la testa di un pollo! Così i figli di Kosala offrono sacrifici a Yajur. Barbaro, tu vedi davanti a te uno strangolatore di Yota-pong. Sono stato prescelto dai sacerdoti di Yajur quand'ero ancora bambino, e durante l'infanzia, l'adolescenza e la giovinezza sono stato addestrato nell'arte di uccidere a mani nude, perché solo così si devono compiere i sacrifici. Yajur ama il sangue, e noi non sprechiamo una sola goccia delle vene della vittima... Ti spezzerò il collo con queste mani, barbaro!",
+                "origin": "Ombre a Zamboula"
+            }
+        },
+        "conan-the-conqueror": {
+            "name": "Conan",
+            "subname": "il Conquistatore",
+            "quote": {
+                "text": "Che cosa io so dei modi civili, d'oro, inganni,\nMenzogne, io che son nato in una terra spoglia\nE vissi sotto il cielo? L'abilità sottile\nDel parlare sofista fallisce quando canta\nLa gran spada fidata; correte a morte cani\nBastardi, che fui uomo prim'ancora che sire.",
+                "origin": "La Fenice sulla Lama"
+            }
+        },
+        "kull": {
+            "name": "Re Kull"
+        },
+        "brule": {
+            "name": "Brule"
         }
     }
 }

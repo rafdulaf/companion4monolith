@@ -36,6 +36,14 @@
             "title": "Contenuto \"King\" esclusivo",
             "short": "Contentuto King"
         },
+        "conqueror": {
+            "title": "Conan il Conquistatore",
+            "short": "Conqueror box"
+        },
+        "conqueror-sg": {
+            "title": "Ricompense \"Conqueror\" (2020)",
+            "short": "Conqueror Strech goals"
+        },
 
         "stygia": {
             "title": "Stygia",
@@ -48,6 +56,14 @@
         "khitai": {
             "title": "Khitaï",
             "short": "Khitaï"
+        },
+        "shadow-kingdom": {
+            "title": "Il Regno Fantasma",
+            "short": "Regno Fantasma"
+        },
+        "red-brotherhood": {
+            "title": "Racconti della Fratellanza Rossa",
+            "short": "Fratellanza Rossa"
         },
 
         "crossbowmen": {
@@ -103,6 +119,10 @@
             "title": "Libro di Set",
             "short": "Libro di Set"
         },
+        "tomeofskelos": {
+            "title": "Libro di Skelos",
+            "short": "Libro di Skelos"
+        },
 
         "bbox": {
             "title": "Brom Box",
@@ -125,6 +145,10 @@
             "title": "Arredi",
             "short": "Arredi"
         }, 
+        "hidden-chambers": {
+            "title": "Stanze Segrete",
+            "short": "Stanze Segrete"
+        },
         "monolith-site": {
             "title": "Regali Monolith (sito web o novità)",
             "short": "Regali Monolith"

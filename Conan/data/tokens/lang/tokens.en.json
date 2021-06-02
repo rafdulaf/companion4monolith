@@ -92,6 +92,21 @@
         },
         "bridge": {
             "name": "Bridge"
+        },
+        "gangplank": {
+            "name": "Gangplank"
+        },
+        "pit": {
+            "name": "Oubliette / Pauper's grave"
+        },
+        "cellar": {
+            "name": "Treasure room / Cellar"
+        },
+        "jail": {
+            "name": "Crevasse / Dungeon"
+        },
+        "trap-door": {
+            "name": "Trap door"
         }
     }
 }

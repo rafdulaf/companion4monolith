@@ -257,17 +257,124 @@
                 ],
                 "totopic": "https://the-overlord.net/index.php?/topic/34-stygia-port/"
             }
+        },
+        
+        "Citadel2": {
+            "description": {
+                "title": "Cittadella",
+                "rules": [
+                    {
+                        "title": "Saltare dal/Arrampicarsi sul ballatoio",
+                        "description": "Saltare nel cortile dal ballatorio infligge {dice_yellow}{dice_yellow} danni non difendibili, se il personaggio ha l'abilità Saltare, il danno si riduce a {dice_yellow}. Arrampicarsi sul ballatoio costa un (1) punto movimento extra per un personaggio con l'abilità Arrampicarsi."
+                    }, {
+                        "title": "Feritoie",
+                        "description": "Queste aperture non sono abbastanza larghe da consentire il movimento, anche per le unità volanti."
+                    }, {
+                        "title": "Letto",
+                        "description": "Un letto comodo dove dormire"
+                    }
+                ],
+                "totopic": null
+            }
+        },
+        
+        "Temple": {
+            "description": {
+                "title": "Tempio",
+                "rules": [
+                    {
+                        "title": "Pilastro crollato",
+                        "description": "Un personaggio può muoversi nell'area del pilastro da un'area adiacente. Questo personaggio deve spendere 2 Punti Movimento aggiuntivi a meno che non abbia l'abilità Arrampicarsi. Il pilastro crollato non genera bonus di soprelevazione."
+                    }, {
+                        "title": "Navata",
+                        "description": "Lasciare quest'area per raggiungere l'altare richiede 2 Punti Movimento aggiuntivi, a meno che l'unità non abbia l'abilità Arrampicarsi."
+                    }, {
+                        "title": "Pozzo",
+                        "description": "Le unità non possono entrare nel pozzo, così come non possono essere lanciati degli oggetti nel pozzo. Gli oggetti finiti nel pozzo sono persi."
+                    }
+                ],
+                "totopic": null
+            }
         }
     },
 
     "compositions": {
+        "Chebek": {
+            "description": {
+                "title": "Chebek",
+                "rules": [
+                    {
+                        "title": "Scale",
+                        "description": "Se una delle aree delle scale (sia del ponte che di coperta) è satura, è possibile effettuare un'azione di attacco in Mischia dall'altra area di queste scale."
+                    }
+                ],
+                "totopic": null
+            }
+        },
+        
+        "Galley": {
+            "description": {
+                "title": "Galea",
+                "rules": [
+                    {
+                        "title": "Scale",
+                        "description": "Se una delle aree delle scale (sia del ponte che di coperta) è satura, è possibile effettuare un'azione di attacco in Mischia dall'altra area di queste scale."
+                    }
+                ],
+                "totopic": null
+            }
+        },
+        
+        "Chebek_Galley": {
+            "description": {
+                "title": "Sciabecco & Galea",
+                "totopic": null
+            }
+        },
+        
         "Port_Ship": {
             "description": {
-                "title": "Nave ormeggiata"
+                "title": "Nave ormeggiata",
+                "totopic": null
             }
         }        
     },
     
     "parts": {
+        "Chebek_Deck": {
+            "description": {
+                "title": "Sciabecco (ponte)",
+                "rules": [
+                    {
+                        "title": "Ponte di poppa",
+                        "description": "Saltare sul ponte dal ponte di poppa infligge {dice_red}{dice_red} danni da caduta senza nessuna difesa e {dice_red} se l'Eroe, l'Alleato o il personaggio dell'Overlord ha l'abilità Saltare. È possibile accedere al ponte di poppa solo dalle scale. L'abilità Arrampicarsi non permette di accedere di al castello di prua dal ponte principale."
+                    }
+                ]
+            }
+        },
+        
+        "Chebek_Hold": {
+            "description": {
+                "title": "Sciabecco (stiva)"
+            }
+        },
+        
+        "Galley_Deck": {
+            "description": {
+                "title": "Galera (ponte)",
+                "rules": [
+                    {
+                        "title": "Castello di prua e ponte di poppa",
+                        "description": "Saltare dal castello di prua o dal ponte di poppa verso il ponte infligge {dice_red}{dice_red} danni da caduta senza nessuna difesa e {dice_red} se l'Eroe, l'Alleato o il personaggio dell'Overlord ha l'abilità Saltare. È possibile accedere al castello di prua e al ponte di poppa solo dalle scale. L'abilità Arrampicarsi non permette di accedere di al castello di prua dal ponte principale."
+                    }
+                ]
+            }
+        },
+        
+        "Galley_Hold": {
+            "description": {
+                "title": "Galea (stiva)"
+            }
+        }
     }
 }

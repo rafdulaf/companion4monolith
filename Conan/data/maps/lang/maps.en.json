@@ -257,17 +257,124 @@
                 ],
                 "totopic": "https://the-overlord.net/index.php?/topic/34-stygia-port/"
             }
+        },
+        
+        "Citadel2": {
+            "description": {
+                "title": "Citadel",
+                "rules": [
+                    {
+                        "title": "Leaping From/Climbing a Balcony",
+                        "description": "A character can move across a railing from a balcony area to a ground floor area as though it were a border. The character rolls {dice_yellow}{dice_yellow} for falling damage. If the character has Leap, the character rolls {dice_yellow} instead. A character with Climb can move across a railing from a ground floor area to a balcony area by spending 1 extra movement point."
+                    }, {
+                        "title": "Wall Openings",
+                        "description": "These wall openings are not large enough to allow movement, even by flying units."
+                    }, {
+                        "title": "Bed",
+                        "description": "This bed is cosy to sleep in"
+                    }
+                ],
+                "totopic": null
+            }
+        },
+        
+        "Temple": {
+            "description": {
+                "title": "Temple",
+                "rules": [
+                    {
+                        "title": "Collapsed Pillar",
+                        "description": "A character can move into the collapsed pillar area from an adjacent area. The character must spend 2 extra movement points unless they have Climbing. The collapsed pillar does not provide an Elevation bonus."
+                    }, {
+                        "title": "Nave",
+                        "description": "Moving from the nave to the altar requires 2 additional movement points unless the unit has Climbing."
+                    }, {
+                        "title": "Pit",
+                        "description": "Units cannot enter the pit, although items can be thrown into the pit. Items thrown in the pit are lost."
+                    }
+                ],
+                "totopic": null
+            }
         }
     },
 
     "compositions": {
+        "Chebek": {
+            "description": {
+                "title": "Chebek",
+                "rules": [
+                    {
+                        "title": "Stairs",
+                        "description": "If one area of the stairs (deck or hold) is occupied, a Melee Attack action can be made from the other area of the stairs."
+                    }
+                ],
+                "totopic": null
+            }
+        },
+        
+        "Galley": {
+            "description": {
+                "title": "Galley",
+                "rules": [
+                    {
+                        "title": "Stairs",
+                        "description": "If one area of the stairs (deck or hold) is occupied, a Melee Attack action can be made from the other area of the stairs."
+                    }
+                ],
+                "totopic": null
+            }
+        },
+        
+        "Chebek_Galley": {
+            "description": {
+                "title": "Chebek & Galley",
+                "totopic": null
+            }
+        },
+        
         "Port_Ship": {
             "description": {
-                "title": "Ship at port"
+                "title": "Ship at port",
+                "totopic": null
             }
         }        
     },
     
     "parts": {
+        "Chebek_Deck": {
+            "description": {
+                "title": "Chebeck (deck)",
+                "rules": [
+                    {
+                        "title": "Poop deck",
+                        "description": "A character leaping from the poop deck onto the bridge rolls {dice_red}{dice_red} for falling damage, with no possible defense, and {dice_red} for Heroes, Allies, or Overlord characters with the Leap skill. The Poop deck can only be accessed by their stairways. You cannot use the Climb skill to enter the Forecastle from the Main deck."
+                    }
+                ]
+            }
+        },
+        
+        "Chebek_Hold": {
+            "description": {
+                "title": "Chebeck (hold)"
+            }
+        },
+        
+        "Galley_Deck": {
+            "description": {
+                "title": "Galley (deck)",
+                "rules": [
+                    {
+                        "title": "Forecastle and Poop deck",
+                        "description": "A character leaping from the Forecastle or the Poop deck onto the bridge rolls {dice_red}{dice_red} for falling damage, with no possible defense, and {dice_red} for Heroes, Allies, or Overlord characters with the Leap skill. The Forecastle or the Poop deck can only be accessed by their stairways. You cannot use the Climb skill to enter the Forecastle from the Main deck."
+                    }
+                ]
+            }
+        },
+        
+        "Galley_Hold": {
+            "description": {
+                "title": "Galley (hold)"
+            }
+        }
     }
 }

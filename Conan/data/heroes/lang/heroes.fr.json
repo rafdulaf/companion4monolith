@@ -254,6 +254,9 @@
         "ikhmet": {
             "name": "Ikhmet"
         },
+        "octavia": {
+            "name": "Octavia"
+        },
         "othryades": {
             "name": "Othryades"
         },
@@ -293,6 +296,68 @@
         },
         "odysseus": {
             "name": "Ulysse"
+        },
+        "conan-the-pirate": {
+            "name": "Conan le Pirate",
+            "quote": {
+                "text": "L’eau s’écoulait en ruisselant de ses épaules, glissant le long de ses bras puissants. Son unique vêtement - des culottes de soie rouge - était trempé, tout comme sa large ceinture à boucle d’or et l’épée gainée dans le fourreau qu’elle soutenait. Tandis qu’il finissait d’escalader ainsi la lisse, les rayons du soleil levant découpèrent sa silhouette, le faisant ressembler à une grande statue de bronze. Il passa ses doigts dans sa sombre crinière ruisselante d’eau et ses yeux bleus brillèrent comme ils se posaient sur la jeune fille.",
+                "origin": "Le Bassin de l’homme noir"
+            }
+        },
+        "zenobia": {
+            "name": "Zenobia",
+            "quote": {
+                "text": "Mais je ne suis pas une poupée fardée, je suis un être de chair et de sang. Je respire, je connais la haine, la peur, la joie et l’amour. Et je vous aime, roi Conan, depuis ce jour où je vous ai vu dans les rues de Belverus, avançant à la tête de vos chevaliers, quand vous avez rendu visite au roi Nimed, il y a des années de cela. Mon cœur a bondi dans ma poitrine et a menacé de s’envoler pour venir tomber dans la poussière de la rue sous les sabots de votre cheval. »\nSes traits s’empourpraient au fur et à mesure qu’elle parlait, mais ses yeux noirs ne vacillèrent pas. Conan ne répondit pas toute de suite. Aussi sauvage, passionnée et indomptée soit-elle, il aurait fallu être une brute insondable pour ne pas être ému, et même quelque peu intimidé et émerveillé, par cette femme qui mettait son âme à nu.",
+                "origin": "L’Heure du dragon"
+            }
+        },
+        "gorm": {
+            "name": "Gorm",
+            "quote": {
+                "text": "Gorm avait derrière lui un héritage de cent mille ans de sauvagerie hurlante ; \nle pas feutré du tigre était le sien, la poigne du gorille était celle de ses mains aux ongles noircis, le feu qui couve dans les yeux du léopard brûlait au fond des siens. \nGorm, fort de cette nouvelle activité et de ses connaissances accrues, commença à exercer sa domination sur les autres clans, en partie par la guerre, en partie par la ruse et la diplomatie, art dans lequel il surpassait tous les autres barbares.",
+                "origin": "L’Âge hyborien"
+            }
+        },
+        "xaltotun": {
+            "name": "Xaltotun",
+            "quote": {
+                "text": "Éclairée de la sorte, la silhouette enfoncée dans le fauteuil d’argent en forme de trône et qui lui faisait face paraissait irréelle et fantastique. Sa légère robe de soie accentuait cette impression de flou dans ses contours. Mais ses traits étaient, eux, parfaitement distincts, bien plus qu’ils n’auraient dû l’être dans cette lumière incertaine. C’était comme si un nimbe entourait cette tête, faisant ressortir nettement ce visage barbu, qui devenait l’unique réalité tangible et distincte dans cette pièce mystique et spectrale. Son visage était magnifique et ses traits bien découpés étaient empreints d’une beauté classique. Il y avait, en effet, quelque chose d’inquiétant qui émanait de cette apparence paisible et tranquille, quelque chose qui dépassait l’entendement, une certitude profonde au-delà du savoir humain.",
+                "origin": "L’Heure du dragon"
+            }
+        },
+        "nyaga": {
+            "name": "N'Yaga",
+            "quote": {
+                "text": "Ho, N’Yaga ! » (Sa voix vibra comme la corde d’un arc.) « Apporte des herbes et soigne les blessures de ton maître !\nVous autres, transbordez le butin sans perdre de temps et détachez les grappins. »\nTandis que Conan était assis, le dos au bastingage du gaillard d’arrière et que le vieux chaman s’occupait de ses blessures aux mains et aux membres, la cargaison de l’infortuné Argus était rapidement portée à bord de la Tigresse et entreposée dans les petites cabines aménagées sous le pont.",
+                "origin": "La Reine de la Côte Noire"
+            }
+        },
+        "nameless-horror": {
+            "name": "Horreur sans nom"
+        },
+        "winged-one": {
+            "name": "Terreur Ailée"
+        },
+        "baal-pteor": {
+            "name": "Baal Pteor",
+            "quote": {
+                "text": "Ta tête, Cimmérien ! » se moqua Baal-pteor. « Je la prendrai, de mes mains nues, pour la tordre sur tes épaules comme on tord le cou à un poulet ! C’est ainsi que les fils de Kosala offrent leurs sacrifices à Yajur ! Barbare, tu as face à toi un des Étrangleurs de Yota-pong ! J’ai été choisi alors que je n’étais qu’un jeune garçon par les prêtres de Yajur. Durant toutes mes premières années, mon enfance et mon adolescence, j’ai été entraîné dans l’art de tuer de mes mains nues.. car c’est seulement ainsi que se font les sacrifices. Yajur aime le sang et nous ne perdons ainsi aucune goutte de celui de nos victimes ! De mes mains, barbare, je vais te briser le cou ! »",
+                "origin": "Les Mangeurs d’hommes de Zamboula"
+            }
+        },
+        "conan-the-conqueror": {
+            "name": "Conan",
+            "subname": "le Conquérant",
+            "quote": {
+                "text": "Que sais-je du raffinement, des dorures, de l’artifice et du mensonge ? Moi, qui suis né dans une terre désolée et ai grandi à ciel ouvert. La langue subtile, la ruse du sophiste ne peuvent rien quand chante la grande épée ; Accourez et venez mourir, chiens - j’étais un homme avant d’être roi. »",
+                "origin": "Le Phénix sur l’épée"
+            }
+        },
+        "kull": {
+            "name": "Roi Kull"
+        },
+        "brule": {
+            "name": "Brule"
         }
     }
 }

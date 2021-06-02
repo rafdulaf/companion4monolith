@@ -3288,6 +3288,790 @@
             "image_zoom": 220,
             "model": "scourge-of-set",
             "origins": ["corinthia"]
+        },
+        
+        {
+            "id": "ghouls",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "yellow", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "movement/climb", "1": "attack/precision_strike", "2": "none", "3": "none" },
+            "reinforcement": "1",
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+            
+            "image": "data/tiles/img/ghouls.png",
+            "imageHD": "data/tiles/img/ghouls_hd.png",
+            "image_location": {"x":62, "y":55},
+            "image_zoom": 100,
+            "model": "ghouls",
+            "origins": ["conqueror"]
+        },
+        
+        {
+            "id": "ghouls-2",
+
+            "colors": ["red", "blue"],
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "yellow", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "movement/climb", "1": "attack/precision_strike", "2": "none", "3": "none" },
+            "reinforcement": "1",
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+            
+            "image": "data/tiles/img/ghouls.png",
+            "imageHD": "data/tiles/img/ghouls_hd.png",
+            "image_location": {"x":62, "y":55},
+            "image_zoom": 100,
+            "model": "ghouls",
+            "origins": ["conqueror"]
+        },
+        
+        {
+            "id": "khitan-acolytes",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "defense/sacrifice", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/tiles/img/khitan-acolytes.png",
+            "imageHD": "data/tiles/img/khitan-acolytes_hd.png",
+            "image_location": {"x":57, "y":50},
+            "image_zoom": 118,
+            "model": "khitan-acolytes",
+            "origins": ["conqueror"]
+        },
+        
+        {
+            "id": "khitan-acolytes-2",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "orangereroll", "2": "none", "3": "none" },
+            "skills": { "0": "movement/feline_grace", "1": "attack/attack_from_beyond", "2": "none", "3": "none" },
+            "reinforcement": "2",
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/tiles/img/khitan-acolytes.png",
+            "imageHD": "data/tiles/img/khitan-acolytes_hd.png",
+            "image_location": {"x":57, "y":50},
+            "image_zoom": 118,
+            "model": "khitan-acolytes",
+            "origins": ["conqueror"]
+        },
+        
+        {
+            "id": "khitan-acolytes-3",
+
+            "colors": ["black"],
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "orangereroll", "2": "none", "3": "none" },
+            "skills": { "0": "movement/feline_grace", "1": "miscellaneous/jinx", "2": "none", "3": "none" },
+            "reinforcement": "2",
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/tiles/img/khitan-acolytes.png",
+            "imageHD": "data/tiles/img/khitan-acolytes_hd.png",
+            "image_location": {"x":57, "y":50},
+            "image_zoom": 118,
+            "model": "khitan-acolytes",
+            "origins": ["conqueror"]
+        },
+        
+        {
+            "id": "pirate-archers",
+
+            "colors": ["gray", "black"],
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "ranged",
+            "dices": { "0": "yellowreroll", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "movement/leap", "1": "miscellaneous/concentration", "2": "none", "3": "none" },
+            "reinforcement": "1",
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/tiles/img/pirate-archers.png",
+            "imageHD": "data/tiles/img/pirate-archers_hd.png",
+            "image_location": {"x":60, "y":60},
+            "image_zoom": 110,
+            "model": "pirate-archers",
+            "origins": ["conqueror"]
+        },
+        
+        {
+            "id": "children-of-gullah",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "orange", "2": "yellowreroll", "3": "none" },
+            "skills": { "0": "movement/feline_grace", "1": "defense/untouchable", "2": "none", "3": "none" },
+            "reinforcement": "3",
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/tiles/img/children-of-gullah.png",
+            "imageHD": "data/tiles/img/children-of-gullah_hd.png",
+            "image_location": {"x":57, "y":60},
+            "image_zoom": 115,
+            "model": "children-of-gullah",
+            "origins": ["conqueror"]
+        },
+        
+        {
+            "id": "haunter-of-the-picts",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "4",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "orangereroll", "2": "yellowreroll", "3": "none" },
+            "skills": { "0": "movement/blocking", "1": "defense/untouchable", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":47, "y":169}, "image_zoom": 310 }
+            ],
+
+            "quote": {
+                "author": {
+                    "name": "-"
+                }
+            },
+
+            "image": "data/tiles/img/haunter-of-the-picts.png",
+            "imageHD": "data/tiles/img/haunter-of-the-picts_hd.png",
+            "image_location": {"x":57, "y":60},
+            "image_zoom": 115,
+            "model": "children-of-gullah",
+            "origins": ["conqueror"]
+        },
+        
+        {
+            "id": "ballista-pirates",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "3",
+            "attacktype": "ranged",
+            "dices": { "0": "red", "1": "red", "2": "none", "3": "none" },
+            "skills": { "0": "attack/precision_shot", "1": "miscellaneous/concentration", "2": "none", "3": "none" },
+            "reinforcement": "3",
+
+            "image": "data/tiles/img/ballista-pirates.png",
+            "imageHD": "data/tiles/img/ballista-pirates_hd.png",
+            "image_location": {"x":48, "y":48},
+            "image_zoom": 105,
+            "model": "ballista-pirates",
+            "origins": ["conqueror"]
+        },
+        
+        {
+            "id": "elite-ballista",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "3",
+            "attacktype": "ranged",
+            "dices": { "0": "red", "1": "red", "2": "red", "3": "none" },
+            "skills": { "0": "attack/precision_shot", "1": "miscellaneous/concentration", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":32, "y":75}, "image_zoom": 140 }
+            ],
+
+            "image": "data/tiles/img/elite-ballista.png",
+            "imageHD": "data/tiles/img/elite-ballista_hd.png",
+            "image_location": {"x":48, "y":48},
+            "image_zoom": 105,
+            "model": "ballista-pirates",
+            "origins": ["conqueror"]
+        },
+        
+        {
+            "id": "deep-ones",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "yellowreroll", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/poison", "1": "attack/reach", "2": "none", "3": "none" },
+            "reinforcement": "2",
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/tiles/img/deep-ones.png",
+            "imageHD": "data/tiles/img/deep-ones_hd.png",
+            "image_location": {"x":52, "y":50},
+            "image_zoom": 125,
+            "model": "deep-ones",
+            "origins": ["conqueror"]
+        },
+        
+        {
+            "id": "deep-one-champion",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "orange", "2": "yellowreroll", "3": "none" },
+            "skills": { "0": "miscellaneous/poison", "1": "attack/reach", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":50, "y":50}, "image_zoom": 130, "image": "data/tiles/img/deep-one-champion_token.png" }
+            ],
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/tiles/img/deep-one-champion.png",
+            "imageHD": "data/tiles/img/deep-one-champion_hd.png",
+            "image_location": {"x":52, "y":50},
+            "image_zoom": 125,
+            "model": "deep-ones",
+            "origins": ["conqueror"]
+        },
+        
+        {
+            "id": "zenobia",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/support", "1": "miscellaneous/poison", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":29, "y":194}, "image_zoom": 360 }
+            ],
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/tiles/img/zenobia.png",
+            "imageHD": "data/tiles/img/zenobia_hd.png",
+            "image_location": {"x":60, "y":49},
+            "image_zoom": 112,
+            "model": "zenobia",
+            "origins": ["conqueror"]
+        },
+        
+        {
+            "id": "manifestation-of-mitra",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "10",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "red", "2": "red", "3": "none" },
+            "skills": { "0": "movement/wall_wrecker", "1": "attack/reach", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":9, "y":199}, "image_zoom": 400 }
+            ],
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/tiles/img/manifestation-of-mitra.png",
+            "imageHD": "data/tiles/img/manifestation-of-mitra_hd.png",
+            "image_location": {"x":53, "y":50},
+            "image_zoom": 122,
+            "model": "manifestation-of-mitra",
+            "origins": ["conqueror"],
+            
+            "count": 2
+        },
+        
+        {
+            "id": "xaltotun",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "ranged",
+            "dices": { "0": "orangereroll", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "defense/protected", "1": "magic/spell_caster", "2": "miscellaneous/horror", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":26, "y":220}, "image_zoom": 460 }
+            ],
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/tiles/img/xaltotun.png",
+            "imageHD": "data/tiles/img/xaltotun_hd.png",
+            "image_location": {"x":58, "y":50},
+            "image_zoom": 116,
+            "model": "xaltotun",
+            "origins": ["conqueror"],
+            
+            "count": 2
+        },
+        
+        {
+            "id": "conan-the-pirate",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "red", "2": "red", "3": "none" },
+            "skills": { "0": "movement/wall_wrecker", "1": "attack/circular_strike", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":-4, "y":224}, "image_zoom": 440 }
+            ],
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/tiles/img/conan-the-pirate.png",
+            "imageHD": "data/tiles/img/conan-the-pirate_hd.png",
+            "image_location": {"x":55, "y":52},
+            "image_zoom": 120,
+            "model": "conan-the-pirate",
+            "origins": ["conqueror"]
+        },
+        
+        {
+            "id": "nyaga",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "ranged",
+            "dices": { "0": "yellowreroll", "1": "yellowreroll", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/concentration", "1": "miscellaneous/jinx", "2": "space", "3": "magic/spell_caster" },
+            "tokens": [
+                { "image_location": {"x":4, "y":200}, "image_zoom": 400 }
+            ],
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/tiles/img/nyaga.png",
+            "imageHD": "data/tiles/img/nyaga_hd.png",
+            "image_location": {"x":55, "y":50},
+            "image_zoom": 117,
+            "model": "nyaga",
+            "origins": ["conqueror"]
+        },
+        
+        {
+            "id": "gorm",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "orange", "2": "yellow", "3": "none" },
+            "skills": { "0": "miscellaneous/support", "1": "attack/precision_strike", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":56, "y":154}, "image_zoom": 350 }
+            ],
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/tiles/img/gorm.png",
+            "imageHD": "data/tiles/img/gorm_hd.png",
+            "image_location": {"x":64, "y":53.5},
+            "image_zoom": 103,
+            "model": "gorm",
+            "origins": ["conqueror"],
+            
+            "count": 2
+        },
+        
+        {
+            "id": "baal-pteor-2",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "orange", "3": "none" },
+            "skills": { "0": "attack/constriction", "1": "attack/precision_strike", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":77, "y":223}, "image_zoom": 400 }
+            ],
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/tiles/img/baal-pteor-2.png",
+            "imageHD": "data/tiles/img/baal-pteor-2_hd.png",
+            "image_location": {"x":59, "y":52},
+            "image_zoom": 114,
+            "model": "baal-pteor",
+            "origins": ["conqueror"],
+            
+            "count": 2
+        },
+        
+        {
+            "id": "zamorian-spider",
+
+            "colors": ["gray"],
+            "movement": "5",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "orange", "2": "orange", "3": "none" },
+            "skills": { "0": "movement/climb", "1": "movement/web_projection", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":50, "y":50}, "image_zoom": 130, "image": "data/tiles/img/zamorian-spider_token.png" }
+            ],
+
+            "image": "data/tiles/img/zamorian-spider.png",
+            "imageHD": "data/tiles/img/zamorian-spider_hd.png",
+            "image_location": {"x":51, "y":54},
+            "image_zoom": 126,
+            "model": "zamorian-spider",
+            "origins": ["conqueror"],
+            
+            "count": 2
+        },
+        
+        {
+            "id": "manifestation-of-yog",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "6",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "red", "2": "orange", "3": "orange" },
+            "skills": { "0": "movement/intangible", "1": "miscellaneous/horror", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":23, "y":116}, "image_zoom": 300 }
+            ],
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/tiles/img/manifestation-of-yog.png",
+            "imageHD": "data/tiles/img/manifestation-of-yog_hd.png",
+            "image_location": {"x":50, "y":48},
+            "image_zoom": 125,
+            "model": "manifestation-of-yog",
+            "origins": ["conqueror"],
+            
+            "count": 2
+        },
+        
+        {
+            "id": "conan-the-conqueror",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "4",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "redreroll", "3": "none" },
+            "skills": { "0": "movement/wall_wrecker", "1": "attack/circular_strike", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":77, "y":180}, "image_zoom": 350 }
+            ],
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/tiles/img/conan-the-conqueror.png",
+            "imageHD": "data/tiles/img/conan-the-conqueror_hd.png",
+            "image_location": {"x":65, "y":48},
+            "image_zoom": 101,
+            "model": "conan-the-conqueror",
+            "origins": ["conqueror"]
+        },
+        
+        {
+            "id": "winged-one",
+
+            "colors": ["gray"],
+            "movement": "5",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "red", "2": "red", "3": "none" },
+            "skills": { "0": "miscellaneous/horror", "1": "movement/flying", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":115, "y":88}, "image_zoom": 466 }
+            ],
+
+            "image": "data/tiles/img/winged-one.png",
+            "image_location": {"x":87, "y":55},
+            "image_zoom": 225,
+            "model": "winged-ape",
+            "origins": ["conqueror"],
+            
+            "count": 2
+        },
+        
+        {
+            "id": "son-of-set",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "orangereroll", "2": "orangereroll", "3": "none" },
+            "skills": { "0": "attack/constriction", "1": "attack/reach", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":17, "y":124}, "image_zoom": 300 }
+            ],
+
+            "image": "data/tiles/img/son-of-set.png",
+            "imageHD": "data/tiles/img/son-of-set_hd.png",
+            "image_location": {"x":52, "y":58},
+            "image_zoom": 125,
+            "model": "son-of-set",
+            "origins": ["conqueror"],
+            
+            "count": 2
+        },
+        
+        {
+            "id": "nameless-horror",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "6",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "redreroll", "3": "redreroll" },
+            "skills": { "0": "attack/constriction", "1": "movement/flying", "2": "attack/precision_strike", "3": "miscellaneous/horror" },
+            "tokens": [
+                { "image_location": {"x":-41, "y":160}, "image_zoom": 550 }
+            ],
+
+            "image": "data/tiles/img/nameless-horror.png",
+            "imageHD": "data/tiles/img/nameless-horror_hd.png",
+            "image_location": {"x":52, "y":51},
+            "image_zoom": 125,
+            "model": "nameless-horror",
+            "origins": ["conqueror"],
+            
+            "count": 2
+        },
+        
+        {
+            "id": "servant-of-ahriman",
+
+            "colors": ["gray"],
+            "movement": "4",
+            "defense": "4",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "red", "2": "red", "3": "red" },
+            "skills": { "0": "defense/untouchable", "1": "movement/blocking", "2": "attack/counterattack", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":10, "y":143}, "image_zoom": 300 }
+            ],
+
+            "image": "data/tiles/img/servant-of-ahriman.png",
+            "imageHD": "data/tiles/img/servant-of-ahriman_hd.png",
+            "image_location": {"x":64, "y":58},
+            "image_zoom": 131,
+            "image_rotation": -15,
+            "model": "servant-of-ahriman",
+            "origins": ["conqueror"]
+        },
+        
+        {
+            "id": "scourge-of-set",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "5",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "orangereroll", "2": "orangereroll", "3": "none" },
+            "skills": { "0": "attack/counterattack", "1": "attack/reach", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":-7, "y":79}, "image_zoom": 240 }
+            ],
+
+            "image": "data/tiles/img/hydra.png",
+            "imageHD": "data/tiles/img/hydra_hd.png",
+            "image_location": {"x":11, "y":61},
+            "image_zoom": 209,
+            "model": "scourge-of-set",
+            "origins": ["conqueror"],
+            
+            "count": 2
+        },
+        
+        {
+            "id": "serpent-men",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "yellowreroll", "1": "yellowreroll", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/jinx", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "2",
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/tiles/img/serpent-men.png",
+            "imageHD": "data/tiles/img/serpent-men_hd.png",
+            "image_location": {"x":53, "y":52},
+            "image_zoom": 124,
+            "model": "serpent-men",
+            "origins": ["conqueror"]
+        },
+        
+        {
+            "id": "serpent-men-2",
+
+            "colors": ["green"],
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "yellowreroll", "1": "yellowreroll", "2": "none", "3": "none" },
+            "skills": { "0": "defense/protected", "1": "attack/precision_strike", "2": "none", "3": "none" },
+            "reinforcement": "2",
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/tiles/img/serpent-men.png",
+            "imageHD": "data/tiles/img/serpent-men_hd.png",
+            "image_location": {"x":53, "y":52},
+            "image_zoom": 124,
+            "model": "serpent-men",
+            "origins": ["conqueror"]
+        },
+        
+        {
+            "id": "thulsa-doom",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "red", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/jinx", "1": "magic/spell_caster", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":-56, "y":180}, "image_zoom": 400 }
+            ],
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/tiles/img/thulsa-doom.png",
+            "imageHD": "data/tiles/img/thulsa-doom_hd.png",
+            "image_location": {"x":47, "y":50},
+            "image_zoom": 112,
+            "model": "thulsa-doom",
+            "origins": ["conqueror"]
+        },
+        
+        {
+            "id": "thulsa-doom-2",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "red", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/jinx", "1": "magic/spell_caster", "2": "space", "3": "attack/attack_from_beyond" },
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/tiles/img/thulsa-doom.png",
+            "imageHD": "data/tiles/img/thulsa-doom_hd.png",
+            "image_location": {"x":47, "y":50},
+            "image_zoom": 112,
+            "model": "thulsa-doom",
+            "origins": ["conqueror"]
         }
     ]
 }
