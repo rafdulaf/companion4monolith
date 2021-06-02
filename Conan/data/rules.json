@@ -7,6 +7,10 @@
         {
             "id": "overlord",
             "origins": ["corebox"]
+        },
+        {
+            "id": "tomeofskelos",
+            "origins": ["conqueror"]
         }
     ]
 }

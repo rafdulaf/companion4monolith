@@ -506,6 +506,46 @@
                 "textSize": 125,
                 "textInter": 68
             }
+        },
+        "rending_the_veil": {
+            "title": "Rending the Veil",
+            "text": "Choose an enemy that is not in line of sight.\n\nThat enemy’s area is considered in line of sight of the caster, or an allied unit in the caster’s line of sight, for one action.",
+            "textStyle": {
+                "textSize": 138,
+                "textInter": 68
+            }
+        },
+        "whirlwind": {
+            "title": "Whirlwind",
+            "text": "Attack an area in your line of sight, roll {dice_orange}{dice_orange} and add one {dice_yellow} for each unit in that area. You may assign the attack results among any number of targets in the area that do not benefit from Protected. The chosen targets may defend against this attack.",
+            "textStyle": {
+                "textSize": 118,
+                "textInter": 71
+            }
+        },
+        "ymirs_retribution": {
+            "title": "Ymir’s Retribution",
+            "text": "Attack a character in your line of sight, roll {dice_red}{dice_red}. If the attack power is greater than the defense power, the defender suffers damage equal to the difference.",
+            "textStyle": {
+                "textSize": 128,
+                "textInter": 74
+            }
+        },
+        "summon_demon": {
+            "title": "Summon Demon",
+            "text": "Place a Demon (as specified in the scenario) in the caster’s area. The Demon disappears at the end of the round unless the caster leaves the gems on this spell card. The caster may move the gems to their Fatigue zone at any time to dismiss the demon. The caster may control tiles summoned in this manner as if they had the Leadership skill.",
+            "textStyle": {
+                "textSize": 107,
+                "textInter": 68
+            }
+        },
+        "yogs_hunger": {
+            "title": "Yog’s Hunger",
+            "text": "Attack a character in your line of sight; roll {dice_orange}.\n\nThat character cannot defend against this attack, and suffers damage equal to the attack power.",
+            "textStyle": {
+                "textSize": 126,
+                "textInter": 75
+            }
         }
     }
 }

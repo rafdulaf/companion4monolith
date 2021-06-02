@@ -36,6 +36,14 @@
             "title": "Exclusive King content",
             "short": "King content"
         },
+        "conqueror": {
+            "title": "Conan the Conqueror",
+            "short": "Conqueror box"
+        },
+        "conqueror-sg": {
+            "title": "\"Conqueror\" Stretch goals (2020)",
+            "short": "Conqueror SG"
+        },
 
         "stygia": {
             "title": "Stygia",
@@ -48,6 +56,14 @@
         "khitai": {
             "title": "Khitaï",
             "short": "Khitaï"
+        },
+        "shadow-kingdom": {
+            "title": "The Shadow Kingdom",
+            "short": "Shadow Kingdom"
+        },
+        "red-brotherhood": {
+            "title": "Tales of the Red Brotherhood",
+            "short": "Red Brotherhood"
         },
 
         "crossbowmen": {
@@ -103,6 +119,10 @@
             "title": "Book of Set",
             "short": "Book of Set"
         },
+        "tomeofskelos": {
+            "title": "Tome of Skelos",
+            "short": "Tome of Skelos"
+        },
 
         "bbox": {
             "title": "Brom Box",
@@ -124,7 +144,11 @@
         "adventurepack": {
             "title": "Adventure pack",
             "short": "Adventure pack"
-        }, 
+        },
+        "hidden-chambers": {
+            "title": "Hidden Chambers",
+            "short": "Hidden Chambers"
+        },
         "monolith-site": {
             "title": "Monolith's gifts (website or news)",
             "short": "Monolith's gifts"

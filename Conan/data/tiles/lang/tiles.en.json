@@ -705,6 +705,191 @@
         },
         "hydra-5": {
             "name": "Hydra"
+        },
+        "ghouls": {
+            "name": "Ghouls",
+            "quote": {
+                "text": "Ghouls, men called them, eaters of human flesh, spawn of darkness, children of unholy matings of a lost and forgotten race with the demons of the underworld. Somewhere in these primitive forests were the ruins of an ancient, accursed city, men whispered, and among its tombs slunk gray, anthropomorphic shadows...",
+                "origin": "Hour of the Dragon"
+            }
+        },
+        "ghouls-2": {
+            "name": "Ghouls",
+            "quote": {
+                "text": "Ghouls, men called them, eaters of human flesh, spawn of darkness, children of unholy matings of a lost and forgotten race with the demons of the underworld. Somewhere in these primitive forests were the ruins of an ancient, accursed city, men whispered, and among its tombs slunk gray, anthropomorphic shadows...",
+                "origin": "Hour of the Dragon"
+            }
+        },
+        "khitan-acolytes": {
+            "name": "Khitan Acolytes",
+            "quote": {
+                "text": "Far have I followed you, oh king of Aquilonia,” said the Khitan calmly. “Down the long river, and over the mountains, across Poitain and Zingara and through the hills of Argos and down the coast. Not easily did we pick up your trail from Tarantia, for the priests of Asura are crafty. We lost it in Zingara, but we found your helmet in the forest below the border hills, where you had fought with the ghouls of the forests. Almost we lost the trail again tonight among these labyrinths...the long trail ends here.”",
+                "origin": "Hour of the Dragon"
+            }
+        },
+        "khitan-acolytes-2": {
+            "name": "Khitan Acolytes",
+            "quote": {
+                "text": "Far have I followed you, oh king of Aquilonia,” said the Khitan calmly. “Down the long river, and over the mountains, across Poitain and Zingara and through the hills of Argos and down the coast. Not easily did we pick up your trail from Tarantia, for the priests of Asura are crafty. We lost it in Zingara, but we found your helmet in the forest below the border hills, where you had fought with the ghouls of the forests. Almost we lost the trail again tonight among these labyrinths...the long trail ends here.”",
+                "origin": "Hour of the Dragon"
+            }
+        },
+        "khitan-acolytes-3": {
+            "name": "Khitan Acolytes",
+            "quote": {
+                "text": "Far have I followed you, oh king of Aquilonia,” said the Khitan calmly. “Down the long river, and over the mountains, across Poitain and Zingara and through the hills of Argos and down the coast. Not easily did we pick up your trail from Tarantia, for the priests of Asura are crafty. We lost it in Zingara, but we found your helmet in the forest below the border hills, where you had fought with the ghouls of the forests. Almost we lost the trail again tonight among these labyrinths...the long trail ends here.”",
+                "origin": "Hour of the Dragon"
+            }
+        },
+        "pirate-archers": {
+            "name": "Pirate Archers",
+            "quote": {
+                "text": "Conan stepped out from among the boulders and faced them, sword in hand. They gave back with yells of menace and surprise; then halted uncertainly to glare at this figure which had appeared so suddenly from the rocks. There were some seventy of them, a wild horde made up of men from many nations: Kothians, Zamorians, Brythunians, Corinthians, Shemites. Their features reflected the wildness of their natures. Many bore the scars of the lash or the branding-iron. There were cropped ears, slit noses, gaping eye-sockets, stumps of wrists— marks of the hangman as well as scars of battle. Most of them were half naked, but the garments they wore were fine; gold-braided jackets, satin girdles, silken breeches, tattered, stained with tar and blood, vied with pieces of silver-chased armor. Jewels glittered in nose-rings and earrings, and in the hilts of their daggers.",
+                "origin": "Iron Shadows in the Moon"
+            }
+        },
+        "children-of-gullah": {
+            "name": "Children of Gullah",
+            "quote": {
+                "text": "A gray man-ape,” he grunted. “Dumb, and man eating. They dwell in the hills that border the eastern shore of this sea. How this one got to this island, I can’t say. Maybe he floated here on driftwood, blown out from the mainland in a storm.” \n“And it was he that threw the stone?” \n“Yes...These creatures always lurk in the deepest woods they can find, and seldom emerge. What brought him into the open, I can’t say, but it was lucky for us; I’d have had no chance with him among the trees...His kind are creatures of darkness and the silent places, haters of sun and moon.”",
+                "origin": "Iron Shadows in the Moon"
+            }
+        },
+        "haunter-of-the-picts": {
+            "name": "Haunter of the Picts",
+            "quote": {
+                "text": "Half mythical and altogether horrible, these apes were the goblins of Hyborian legendry.",
+                "origin": "-"
+            }
+        },
+        "ballista-pirates": {
+            "name": "Ballista Pirates"
+        },
+        "elite-ballista": {
+            "name": "Ballista Pirates"
+        },
+        "deep-ones": {
+            "name": "Deep Ones",
+            "quote": {
+                "text": "In his wanderings he came upon a primitive people inhabiting the island of Dagonia, and it pleased him to give this race culture and civilization, and by his aid they built the city of Dagon and they abode there and worshipped him.",
+                "origin": "The Devil in Iron"
+            }
+        },
+        "deep-one-champion": {
+            "name": "Deep One Champion",
+            "quote": {
+                "text": "In his wanderings he came upon a primitive people inhabiting the island of Dagonia, and it pleased him to give this race culture and civilization, and by his aid they built the city of Dagon and they abode there and worshipped him.",
+                "origin": "The Devil in Iron"
+            }
+        },
+        "zenobia": {
+            "name": "Zenobia",
+            "quote": {
+                "text": "But I am no painted toy; I am of flesh and blood. I breathe, hate, fear, rejoice and love. And I have loved you, King Conan, ever since I saw you riding at the head of your knights along the streets of Belverus when you visited King Nimed, years ago. My heart tugged at its strings to leap from my bosom and fall in the dust of the street under your horse’s hoofs.”\nColor flooded her countenance as she spoke, but her dark eyes did not waver. Conan did not at once reply; wild and passionate and untamed he was, yet any but the most brutish of men must be touched with a certain awe or wonder at the baring of a woman’s naked soul.",
+                "origin": "Hour of the Dragon"
+            }
+        },
+        "manifestation-of-mitra": {
+            "name": "Manifestation of Mitra",
+            "quote": {
+                "text": "Behind an altar of clear green jade, unstained with sacrifice, stood the pedestal whereon sat the material manifestation of the deity. Yasmela looked in awe at the sweep of the magnificent shoulders, the clear-cut features—the wide straight eyes, the patriarchal beard, the thick curls of the hair, confined by a simple band about the temples. This, though she did not know it, was art in its highest form—the free, uncramped artistic expression of a highly esthetic race, unhampered by conventional symbolism. \n“This is but the emblem of the god. None pretends to know what Mitra looks like. This but represents him in idealized human form, as near perfection as the human mind can conceive. He does not inhabit this cold stone, as your priests tell you Ishtar does. He is everywhere—above us, and about us, and he dreams betimes in the high places among the stars. But here his being focusses. Therefore call upon him.” \n...Then both girls started violently as a voice began in the air above them. The deep, calm, bell-like tones emanated no more from the image than from anywhere else in the chamber. Again Yasmela trembled before a bodiless voice speaking to her, but this time it was not from horror or repulsion.",
+                "origin": "Black Colossus"
+            }
+        },
+        "xaltotun": {
+            "name": "Xaltotun",
+            "quote": {
+                "text": "In that light the figure seated in a silver, thronelike chair before him seemed unreal and fantastic, with an illusiveness of outline that was heightened by a filmy silken robe. But the features were distinct—unnaturally so in that uncertain light. It was almost as if a weird nimbus played about the man’s head, casting the bearded face into bold relief, so that it was the only definite and distinct reality in that mystic, ghostly chamber. It was a magnificent face, with strongly chiseled features of classical beauty. There was, indeed, something disquieting about the calm tranquility of its aspect, a suggestion of more than human knowledge, of a profound certitude beyond human assurance.",
+                "origin": "Hour of the Dragon"
+            }
+        },
+        "conan-the-pirate": {
+            "name": "Conan the Pirate",
+            "quote": {
+                "text": "Water ran in rivulets from his great shoulders and down his heavy arms. His single garment—a pair of bright crimson silk breeks— was soaking wet, as was his broad gold-buckled girdle and the sheathed sword it supported. As he stood at the rail, the rising sun etched him like a great bronze statue. He ran his fingers through his streaming black mane, and his blue eyes lit as they rested on the girl.",
+                "origin": "Pool of the Black One"
+            }
+        },
+        "nyaga": {
+            "name": "N'Yaga",
+            "quote": {
+                "text": "Ho, N’Yaga!” her voice twanged like a bowstring.\n“Fetch herbs and dress your master’s wounds! The rest of you bring aboard the plunder and cast off.”\nAs Conan sat with his back against the poop-rail, while the old shaman attended to the cuts on his hands and limbs, the cargo of the ill-fated Argus was quickly shifted aboard the Tigress and stored in small cabins below deck.",
+                "origin": "Queen of the Black Coast"
+            }
+        },
+        "gorm": {
+            "name": "Gorm",
+            "quote": {
+                "text": "Gorm had behind him a heritage of a hundred thousand years of screaming savagery—the pad of the tiger was in his stealthy step, the grip of the gorilla in his black-nailed hands, the fire that burns in a leopard’s eyes burned in his.\nAnd Gorm, by virtue of this new craft, began to assert his dominance over other clans, partly by war, partly by craft and diplomacy, in which latter art he excelled all other barbarians.",
+                "origin": "The Hyborian Age"
+            }
+        },
+        "baal-pteor-2": {
+            "name": "Baal Pteor",
+            "quote": {
+                "text": "Your head, Cimmerian!” taunted Baal-pteor. “I shall take it with my bare hands, twisting it from your shoulders as the head of a fowl is twisted! Thus the sons of Kosala offer sacrifice to Yajur. Barbarian, you look upon a strangler of Yotapong. I was chosen by the priests of Yajur in my infancy, and throughout childhood, boyhood and youth I trained in the art of slaying with the naked hands—for only thus are the sacrifices enacted. Yajur loves blood, and we waste not a drop from the victim’s veins...With my hands, barbarian, I shall break your neck!”",
+                "origin": "Shadows in Zamboula"
+            }
+        },
+        "zamorian-spider": {
+            "name": "Zamorian Spider"
+        },
+        "manifestation-of-yog": {
+            "name": "Manifestation of Yog",
+            "quote": {
+                "text": "The people of the city would not suffer him to slay their people, but they care naught for the strangers who fall into his hands. Conan, you are of the West, and know not the secrets of this ancient land. But, since the beginning of happenings, the demons of the desert have worshipped Yog, the Lord of the Empty Abodes, with fire—fire that devours human victims.",
+                "origin": "Shadows in Zamboula"
+            }
+        },
+        "conan-the-conqueror": {
+            "name": "Conan the Conqueror",
+            "quote": {
+                "text": "What do I know of cultured ways, the gilt, the craft and the lie? I, who was born in a naked land and bred in the open sky. The subtle tongue, the sophist guile, they fail when the broadswords sing; Rush in and die, dogs—I was a man before I was a king.”",
+                "origin": "The Phoenix on the Sword"
+            }
+        },
+        "winged-one": {
+            "name": "Winged One"
+        },
+        "son-of-set": {
+            "name": "Son of Set"
+        },
+        "nameless-horror": {
+            "name": "Nameless Horror"
+        },
+        "servant-of-ahriman": {
+            "name": "Servant of Ahriman"
+        },
+        "scourge-of-set": {
+            "name": "Scourge of Set"
+        },
+        "serpent-men": {
+            "name": "Serpent-Men",
+            "quote": {
+                "text": "A man with the head of a snake!” Kull murmured. “This, then, is a priest of the serpent god?” \n“Aye. Tu sleeps unknowing. These fiends can take any form they will. That is, they can, by a magic charm or the like, fling a web of sorcery about their faces, as an actor dons a mask, so that they resemble anyone they wish to.”",
+                "origin": "The Shadow Kingdom"
+            }
+        },
+        "serpent-men-2": {
+            "name": "Serpent-Men",
+            "quote": {
+                "text": "A man with the head of a snake!” Kull murmured. “This, then, is a priest of the serpent god?” \n“Aye. Tu sleeps unknowing. These fiends can take any form they will. That is, they can, by a magic charm or the like, fling a web of sorcery about their faces, as an actor dons a mask, so that they resemble anyone they wish to.”",
+                "origin": "The Shadow Kingdom"
+            }
+        },
+        "thulsa-doom": {
+            "name": "Thulsa Doom",
+            "quote": {
+                "text": "The skull-faced one laughed. “Ages ago I died as men did!” he taunted. “Nay, I shall pass to some other sphere when my time comes, not before. I bleed not, for my veins are empty, and I feel only a slight coldness which shall pass when the wound closes, as it is even now closing. Stand back, fool, your master goes; but he shall come again to you, and you shall scream and shrivel and die in that coming. Kull, I salute you.”",
+                "origin": "Delcardes Cat"
+            }
+        },
+        "thulsa-doom-2": {
+            "name": "Thulsa Doom",
+            "quote": {
+                "text": "The skull-faced one laughed. “Ages ago I died as men did!” he taunted. “Nay, I shall pass to some other sphere when my time comes, not before. I bleed not, for my veins are empty, and I feel only a slight coldness which shall pass when the wound closes, as it is even now closing. Stand back, fool, your master goes; but he shall come again to you, and you shall scream and shrivel and die in that coming. Kull, I salute you.”",
+                "origin": "Delcardes Cat"
+            }
         }
     }
 }

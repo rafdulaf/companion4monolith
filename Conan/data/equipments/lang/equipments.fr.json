@@ -281,6 +281,66 @@
         },
         "sacred_treasure": {
             "title": "Trésor sacré"
+        },
+        "anchor": {
+            "title": "Ancre"
+        },
+        "atlantean_axe": {
+            "title": "Hache Atlante"
+        },
+        "cutlass": {
+            "title": "Coutelas"
+        },
+        "akbitanan_sword": {
+            "title": "épée Akbitanienne"
+        },
+        "khitan_staff": {
+            "title": "Bâton Khitien"
+        },
+        "net": {
+            "title": "Filet",
+            "text": "Le Héros peut dépenser 1 {gem_blue} en attaque à distance pour effectuer une Projection de toile."
+        },
+        "heavy_spear": {
+            "title": "Lance Lourde"
+        },
+        "map": {
+            "title": "Carte"
+        },
+        "spiked_shield": {
+            "title": "Bouclier à Pointe"
+        },
+        "zamorian_chain": {
+            "title": "Chaîne Zamorienne"
+        },
+        "nemedian_poniard": {
+            "title": "Poignard Némédien"
+        },
+        "spiked_mace": {
+            "title": "Masse à Pointes"
+        },
+        "caestus": {
+            "title": "Ceste",
+            "text": "Un Héros portant le Ceste ne subit pas de pénalité s’il est désarmé."
+        },
+        "dagons_circlet": {
+            "title": "Bracelet de Dagon",
+            "text": "Augmentez l’indice de surchage de chaque compétence de 1."
+        },
+        "mantle_of_gullah": {
+            "title": "Manteau de Gullah",
+            "text": "Regagnez 1 {gem_blue} supplémentaire lorsque vous êtes en récupération."
+        },
+        "stygian_cloak": {
+            "title": "Cape Stygienne",
+            "text": "Regagnez 1 {gem_blue} supplémentaire lorsque vous êtes actif."
+        },
+        "lockpick": {
+            "title": "Outil de Crochetage",
+            "text": "Placez 1 {gem_red} sur l’outil de crochetage. Un Héros peut utiliser cette gemme pour crocheter des serrures. Pendant les phases de début et de fin      \ndu tour des Héros, remettez      \nla {gem_red} sur la carte.           "
+        },
+        "conans_great_sword": {
+            "title": "Grande Épée de Conan"
         }
     }
 }

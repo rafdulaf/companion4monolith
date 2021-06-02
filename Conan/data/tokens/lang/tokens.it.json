@@ -92,6 +92,21 @@
         },
         "bridge": {
             "name": "Ponte"
+        },
+        "gangplank": {
+            "name": "Passerella"
+        },
+        "pit": {
+            "name": "Oubliette / Fossa comune"
+        },
+        "cellar": {
+            "name": "Sala del Tesoro / Prigione"
+        },
+        "jail": {
+            "name": "Crepaccio / Sotterraneo"
+        },
+        "trap-door": {
+            "name": "Botola"
         }
     }
 }

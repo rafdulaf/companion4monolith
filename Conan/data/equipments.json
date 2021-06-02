@@ -1793,6 +1793,306 @@
 
             "image": "data/equipments/img/information.png",
             "origins": ["campaignbook"]
+        },
+
+        {
+            "id": "anchor",
+            "encumbrance": "5",
+            "skills": {"0": "attack/circular_strike", "1": "none"},
+            "skillsatbottom": true,
+
+            "melee": { "0": "red", "1": "orangereroll" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/anchor.png",
+            "imagelocation": {"x": "50", "y": "47"},
+            "imagezoom": "90",
+            "origins": ["conqueror"]
+        },
+
+        {
+            "id": "atlantean_axe",
+            "encumbrance": "3",
+
+            "melee": { "0": "redreroll", "1": "none" },
+            "ranged": { "0": "redreroll", "1": "none", "throwable": true },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "yellow", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/atlantean_axe.png",
+            "imagelocation": {"x": "72", "y": "48"},
+            "imagezoom": "59",
+            "origins": ["conqueror"]
+        },
+
+        {
+            "id": "cutlass",
+            "encumbrance": "1",
+
+            "melee": { "0": "orangereroll", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "yellow", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/cutlass.png",
+            "imagelocation": {"x": "71", "y": "46"},
+            "imagezoom": "51",
+            "origins": ["conqueror"]
+        },
+
+        {
+            "id": "akbitanan_sword",
+            "encumbrance": "2",
+
+            "melee": { "0": "yellowreroll", "1": "yellowreroll" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "yellowreroll", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/akbitanan_sword.png",
+            "imagelocation": {"x": "50", "y": "32"},
+            "imagezoom": "85",
+            "origins": ["conqueror"]
+        },
+
+        {
+            "id": "khitan_staff",
+            "encumbrance": "3",
+            "skills": {"0": "attack/reach", "1": "none"},
+            "skillsatbottom": true,
+
+            "melee": { "0": "red", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/khitan_staff.png",
+            "imagelocation": {"x": "63", "y": "60"},
+            "imagezoom": "73",
+            "origins": ["conqueror"]
+        },
+
+        {
+            "id": "net",
+            "encumbrance": "1",
+            "skills": {"0": "movement/web_projection", "1": "none"},
+            "skillsatbottom": true,
+
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": true },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+            
+            "image": "data/equipments/img/net.png",
+            "imagelocation": {"x": "50", "y": "36"},
+            "imagezoom": "82",
+            "origins": ["conqueror"]
+        },
+
+        {
+            "id": "heavy_spear",
+            "encumbrance": "3",
+
+            "melee": { "0": "red", "1": "none" },
+            "ranged": { "0": "red", "1": "none", "throwable": true },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/heavy_spear.png",
+            "imagelocation": {"x": "72", "y": "56"},
+            "imagezoom": "56",
+            "origins": ["conqueror"]
+        },
+
+        {
+            "id": "map",
+            "encumbrance": "0",
+
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/map.png",
+            "imagelocation": {"x": "50", "y": "50"},
+            "imagezoom": "84",
+            "origins": ["conqueror"]
+        },
+
+        {
+            "id": "spiked_shield",
+            "encumbrance": "2",
+            "skills": {"0": "attack/counterattack", "1": "none"},
+            "skillsatbottom": true,
+
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "yellow", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/spiked_shield.png",
+            "imagelocation": {"x": "50", "y": "41"},
+            "imagezoom": "84",
+            "origins": ["conqueror"]
+        },
+
+        {
+            "id": "zamorian_chain",
+            "encumbrance": "1",
+            "skills": {"0": "attack/constriction", "1": "none"},
+            "skillsatbottom": true,
+
+            "melee": { "0": "yellow", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/zamorian_chain.png",
+            "imagelocation": {"x": "50", "y": "52"},
+            "imagezoom": "80",
+            "origins": ["conqueror"]
+        },
+
+        {
+            "id": "nemedian_poniard",
+            "encumbrance": "1",
+            "skills": {"0": "attack/ambidextrous", "1": "none"},
+            "skillsatbottom": true,
+
+            "melee": { "0": "yellow", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/nemedian_poniard.png",
+            "imagelocation": {"x": "64", "y": "49"},
+            "imagezoom": "59",
+            "origins": ["conqueror"]
+        },
+
+        {
+            "id": "spiked_mace",
+            "encumbrance": "2",
+
+            "melee": { "0": "orange", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/spiked_mace.png",
+            "imagelocation": {"x": "58", "y": "49"},
+            "imagezoom": "55",
+            "origins": ["conqueror"]
+        },
+
+        {
+            "id": "caestus",
+            "encumbrance": "0",
+
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/caestus.png",
+            "imagelocation": {"x": "50", "y": "36"},
+            "imagezoom": "84",
+            "origins": ["conqueror"]
+        },
+
+        {
+            "id": "dagons_circlet",
+            "encumbrance": "0",
+
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/dagons_circlet.png",
+            "imagelocation": {"x": "50", "y": "35"},
+            "imagezoom": "75",
+            "origins": ["conqueror"]
+        },
+
+        {
+            "id": "mantle_of_gullah",
+            "encumbrance": "3",
+
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "orange", "1": "none" },
+
+            "image": "data/equipments/img/mantle_of_gullah.png",
+            "imagelocation": {"x": "53", "y": "44"},
+            "imagezoom": "75",
+            "origins": ["conqueror"]
+        },
+
+        {
+            "id": "stygian_cloak",
+            "encumbrance": "1",
+
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "yellow", "1": "none" },
+
+            "image": "data/equipments/img/stygian_cloak.png",
+            "imagelocation": {"x": "50", "y": "39"},
+            "imagezoom": "76",
+            "origins": ["conqueror"]
+        },
+        
+        {
+            "id": "lockpick",
+            "encumbrance": "1",
+
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/lockpick.png",
+            "imagelocation": {"x": "50", "y": "36"},
+            "imagezoom": "55",
+            "origins": ["conqueror"]
+        },
+
+        {
+            "id": "conans_great_sword",
+            "encumbrance": "3",
+
+            "melee": { "0": "redreroll", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "orange", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/conans_great_sword.png",
+            "imagelocation": {"x": "66", "y": "54"},
+            "imagezoom": "42",
+            "origins": ["conqueror"]
         }
     ]
 }

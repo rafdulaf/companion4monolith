@@ -281,6 +281,66 @@
         },
         "sacred_treasure": {
             "title": "Sacred Treasure"
+        },
+        "anchor": {
+            "title": "Anchor"
+        },
+        "atlantean_axe": {
+            "title": "Atlantean Axe"
+        },
+        "cutlass": {
+            "title": "Cutlass"
+        },
+        "akbitanan_sword": {
+            "title": "Akbitanan Sword"
+        },
+        "khitan_staff": {
+            "title": "Khitan Staff"
+        },
+        "net": {
+            "title": "Net",
+            "text": "A Hero may place 1 {gem_blue} in their Ranged Attack space to make a web projection attack."
+        },
+        "heavy_spear": {
+            "title": "Heavy Spear"
+        },
+        "map": {
+            "title": "Map"
+        },
+        "spiked_shield": {
+            "title": "Spiked Shield"
+        },
+        "zamorian_chain": {
+            "title": "Zamorian Chain"
+        },
+        "nemedian_poniard": {
+            "title": "Nemedian Poniard"
+        },
+        "spiked_mace": {
+            "title": "Spiked Mace"
+        },
+        "caestus": {
+            "title": "Caestus",
+            "text": "A Hero wearing the Caestus does not suffer the effects of the unarmed penalty."
+        },
+        "dagons_circlet": {
+            "title": "Dagon's Circlet",
+            "text": "Increase encumbrance limit by 1 for all skills."
+        },
+        "mantle_of_gullah": {
+            "title": "Mantle of Gullah",
+            "text": "Recover 1 extra {gem_blue} when in cautious stance."
+        },
+        "stygian_cloak": {
+            "title": "Stygian Cloak",
+            "text": "Recover 1 extra {gem_blue} when in aggressive stance."
+        },
+        "lockpick": {
+            "title": "Lockpick",
+            "text": "Place 1 {gem_red} on the lockpick.\nA hero may use this gem to pick locks. During the start and end phase of the heroes’ turn, move the {gem_red} to the card."
+        },
+        "conans_great_sword": {
+            "title": "Conan's Great Sword"
         }
     }
 }

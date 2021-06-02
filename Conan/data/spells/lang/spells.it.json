@@ -509,6 +509,46 @@
                 "textSize": 115,
                 "textInter": 72
             }
+        },
+        "rending_the_veil": {
+            "title": "Lacerare il Velo",
+            "text": "Scegliete un nemico che non sia in linea di vista. Adesso per una sola azione, o il mago, o un'unità alleata in linea di vista con il mago, è in grado di stabilire una linea di vista verso l'area occupata dal nemico.",
+            "textStyle": {
+                "textSize": 115,
+                "textInter": 72
+            }
+        },
+        "whirlwind": {
+            "title": "Vortice",
+            "text": "Attacca un'area in linea di vista, lancia {dice_orange}{dice_orange} e aggiungi un {dice_yellow} per ogni unità in quell'area. Puoi assegnare liberamente i risultati dell'attacco tra i bersagli presenti nell'area. I bersagli scelti non beneficiano dell'abilità Protetto e non possono difendersi da questo attacco.",
+            "textStyle": {
+                "textSize": 112,
+                "textInter": 72
+            }
+        },
+        "ymirs_retribution": {
+            "title": "Punizione di Ymir",
+            "text": "Attacca un personaggio in linea di vista e lancia {dice_red}{dice_red}. Se la potenza dell'attacco è maggiore della potenza della difesa, il difensore subisce un ammontare di danni pari alla differenza.",
+            "textStyle": {
+                "textSize": 115,
+                "textInter": 72
+            }
+        },
+        "summon_demon": {
+            "title": "Evoca Demone",
+            "text": "Piazza un Demone (indicato nello scenario) nell'area del mago. Il Demone sparirà alla fine del turno a meno che il mago non sceglie di lasciare su questa carta le sue gemme. Il mago può spostare in qualsiasi momento le gemme di questo incantesimo nella sua Fatica per far sparire il demone. Il mago può controllare le tessere così evocate come se avesse l'abilità Comando.",
+            "textStyle": {
+                "textSize": 105,
+                "textInter": 68
+            }
+        },
+        "yogs_hunger": {
+            "title": "Fame di Yog",
+            "text": "Attacca un personaggio in linea di vista e lancia {dice_orange}.\nQuesto personaggio non può difendersi contro questo attacco e subisce l'ammontare di danni pari alla potenza dell'attacco.",
+            "textStyle": {
+                "textSize": 115,
+                "textInter": 72
+            }
         }
     }
 }

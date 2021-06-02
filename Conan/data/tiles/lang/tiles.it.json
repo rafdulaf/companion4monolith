@@ -410,7 +410,7 @@
             "name": "Tentacoli"
         },
         "baal-pteor": {
-            "name": "Baal-Pteor",
+            "name": "Baal Pteor",
             "quote": {
                 "text": "Era nudo: portava solo un perizoma e un paio di sandali. Aveva la pelle bruna, i capelli neri tagliati cortissimi, e irrequieti occhi neri che spiccavano nel largo volto arrogante. Era enorme, con membra immani e muscoli che si gonfiavano e guizzavano al minimo movimento. Le mani erano le più grandi che Conan avesse mai visto. La consapevolezza della propria forza fisica colorava ogni azione, ogni inflessione del gigante.\n— Chi diavolo sei? — ringhiò.\n— Io sono Baal-pteor — rispose l'uomo. — Una volta, molto tempo fa e in un'altra terra, avevo un altro nome. Ma questo è un bel nome; e perché Totrasmek me l'ha assegnato, può dirtelo ogni ancella del tempio.",
                 "origin": "Ombre a Zamboula"
@@ -705,6 +705,191 @@
         },
         "hydra-5": {
             "name": "Idra"
+        },
+        "ghouls": {
+            "name": "Ghoul",
+            "quote": {
+                "text": "Ghoul, li chiamava la gente, divoratori di carne umana, progenie delle tenebre, frutto di esecrandi connubi tra una razza perduta e dimenticata e i Demoni degli inferi. Da qualche parte, in quelle foreste primitive, c'erano le rovine di un'antica città maledetta, così sussurrava la gente, e fra le sue tombe scivolavano grigie ombre antropomorfe...",
+                "origin": "Conan il Conquistatore"
+            }
+        },
+        "ghouls-2": {
+            "name": "Ghoul",
+            "quote": {
+                "text": "Ghoul, li chiamava la gente, divoratori di carne umana, progenie delle tenebre, frutto di esecrandi connubi tra una razza perduta e dimenticata e i Demoni degli inferi. Da qualche parte, in quelle foreste primitive, c'erano le rovine di un'antica città maledetta, così sussurrava la gente, e fra le sue tombe scivolavano grigie ombre antropomorfe...",
+                "origin": "Conan il Conquistatore"
+            }
+        },
+        "khitan-acolytes": {
+            "name": "Accoliti del Khitai",
+            "quote": {
+                "text": "— Da terre lontane ti ho seguito, o Re di Aquilonia — disse il khitano con voce priva di emozione. — Lungo la corrente del grande fiume e per i monti, attraverso Poitain e Zingara, sulle montagne di Argos e lungo la costa. Non è sempre stato facile trovare le tue tracce, dopo la tua uscita da Tarantia: i sacerdoti di Asura sono molto astuti. E a Zingara le avevamo perdute, ma poi abbiamo trovato il tuo elmetto nelle foreste ai piedi delle montagne, al confine, là dove hai combattuto con i ghoul. E questa stessa notte, in questi labirinti, le avevamo quasi perdute un'altra volta... la lunga caccia termina qui.",
+                "origin": "Conan il Conquistatore"
+            }
+        },
+        "khitan-acolytes-2": {
+            "name": "Accoliti del Khitai",
+            "quote": {
+                "text": "— Da terre lontane ti ho seguito, o Re di Aquilonia — disse il khitano con voce priva di emozione. — Lungo la corrente del grande fiume e per i monti, attraverso Poitain e Zingara, sulle montagne di Argos e lungo la costa. Non è sempre stato facile trovare le tue tracce, dopo la tua uscita da Tarantia: i sacerdoti di Asura sono molto astuti. E a Zingara le avevamo perdute, ma poi abbiamo trovato il tuo elmetto nelle foreste ai piedi delle montagne, al confine, là dove hai combattuto con i ghoul. E questa stessa notte, in questi labirinti, le avevamo quasi perdute un'altra volta... la lunga caccia termina qui.",
+                "origin": "Conan il Conquistatore"
+            }
+        },
+        "khitan-acolytes-3": {
+            "name": "Accoliti del Khitai",
+            "quote": {
+                "text": "— Da terre lontane ti ho seguito, o Re di Aquilonia — disse il khitano con voce priva di emozione. — Lungo la corrente del grande fiume e per i monti, attraverso Poitain e Zingara, sulle montagne di Argos e lungo la costa. Non è sempre stato facile trovare le tue tracce, dopo la tua uscita da Tarantia: i sacerdoti di Asura sono molto astuti. E a Zingara le avevamo perdute, ma poi abbiamo trovato il tuo elmetto nelle foreste ai piedi delle montagne, al confine, là dove hai combattuto con i ghoul. E questa stessa notte, in questi labirinti, le avevamo quasi perdute un'altra volta... la lunga caccia termina qui.",
+                "origin": "Conan il Conquistatore"
+            }
+        },
+        "pirate-archers": {
+            "name": "Arcieri Pirati",
+            "quote": {
+                "text": "Conan uscì dai macigni e fronteggiò i pirati, con la spada in pugno. Quelli arretrarono, tra grida di minaccia e di stupore; poi si fermarono incerti, squadrando l'uomo apparso così all'improvviso. Erano una settantina: un'orda selvaggia di uomini provenienti da molte nazioni, kothiani, zamoriani, brythuni, corinzi, shemiti. I volti rispecchiavano indoli feroci. Molti mostravano le cicatrici delle fruste e dei marchi d'infamia. C'erano orecchie mozze, nasi squarciati, occhiaie cieche, polsi troncati… segni lasciati dal boia, e non solo dalle battaglie. Erano quasi tutti seminudi, ma gli indumenti che portavano erano splendidi: giubbe gallonate d'oro, cinture seriche, brache di raso, rovinate e sporche di catrame e di sangue, gareggiavano in lusso con le armi intarsiate d'argento. Le gemme brillavano sui nasi e alle orecchie, e sulle impugnature delle daghe.",
+                "origin": "Ombre al chiaro di luna"
+            }
+        },
+        "children-of-gullah": {
+            "name": "Figli di Gullah",
+            "quote": {
+                "text": "— Un uomo-scimmia grigio — borbottò lui. — Muto e antropofago. Vivono tra le colline che costeggiano le sponde orientali di questo mare. Non so come questo abbia potuto giungere sull'isola. Forse c'è arrivato aggrappandosi a un tronco gettato in acqua da una tempesta.\n— Ed era stato lui a scagliare la pietra?\n— Sì... Questi esseri stanno sempre nelle foreste più fitte, e raramente ne escono. Non so cosa l'abbia indotto ad avventurarsi all'aperto, ma per noi è stata una fortuna; tra gli alberi, non avrei avuto nessuna possibilità di vincerlo... Sono creature dell'oscurità e dei luoghi silenziosi, e odiano il sole e la luna.",
+                "origin": "Ombre al chiaro di luna"
+            }
+        },
+        "haunter-of-the-picts": {
+            "name": "Orrore delle Fosse",
+            "quote": {
+                "text": "Mitiche e orribili, quelle scimmie erano gli orchi delle leggende hyboriane.",
+                "origin": "Ombre al chiaro di luna"
+            }
+        },
+        "ballista-pirates": {
+            "name": "Balista Pirata"
+        },
+        "elite-ballista": {
+            "name": "Balista d'élite"
+        },
+        "deep-ones": {
+            "name": "Abitatori del profondo",
+            "quote": {
+                "text": "Nei suoi vagabondaggi s'imbatté in un popolo primitivo che abitava nell'isola di Dagonia; e si compiacque di donare cultura e civiltà a quella razza, che col suo aiuto eresse la città di Dagon e vi dimorò, adorandolo.",
+                "origin": "Il Diavolo di Ferro"
+            }
+        },
+        "deep-one-champion": {
+            "name": "Campione degli abissi",
+            "quote": {
+                "text": "Nei suoi vagabondaggi s'imbatté in un popolo primitivo che abitava nell'isola di Dagonia; e si compiacque di donare cultura e civiltà a quella razza, che col suo aiuto eresse la città di Dagon e vi dimorò, adorandolo.",
+                "origin": "Il Diavolo di Ferro"
+            }
+        },
+        "zenobia": {
+            "name": "Zenobia",
+            "quote": {
+                "text": "Ma non sono un giocattolo: anch'io sono fatta di carne. Respiro, odio, temo, esulto e amo. E amo voi, Re Conan, fin da quando vi ho visto cavalcare alla testa dei vostri cavalieri per le strade di Belvero, quando avete fatto visita a Re Numa, anni fa. Il mio cuore impazzito minacciava di saltare fuori dal petto e gettarsi nella polvere della strada sotto gli zoccoli del vostro cavallo.\nMentre così parlava, la ragazza arrossì visibilmente, ma i suoi occhi non tremarono. Conan rimase muto; era portato ad agire selvaggiamente, impetuosamente, indomitamente, ma anche l'uomo più feroce prova un senso di rispetto e di meraviglia, quando una donna gli svela la propria anima.",
+                "origin": "Conan il Conquistatore"
+            }
+        },
+        "manifestation-of-mitra": {
+            "name": "Manifestazione di Mitra",
+            "quote": {
+                "text": "Dietro un altare di verde giada trasparente, mai macchiato da sacrifici, stava il piedestallo su cui sedeva la manifestazione materiale della divinità. Yasmela guardò intimorita le spalle magnifiche, i lineamenti nitidi… i grandi occhi, la barba patriarcale, i capelli ricciuti e stretti da una semplice fascia alle tempie. Sebbene lei non lo sapesse, quella era un'opera d'arte nella forma più elevata… la libera espressione artistica di una razza ascetica, non ostacolata da simbolismi convenzionali. \n— Questo è solo un emblema del dio. Nessuno può pretendere di conoscere l'aspetto di Mitra. La statua lo rappresenta in una forma umana idealizzata, vicina alla perfezione per quanto può concepirla una mente mortale. Ma il dio non dimora in questa fredda pietra, come i sacerdoti di Ishtar dicono che faccia la dea. Egli è dovunque… sopra di noi, e intorno a noi, eppure sogna nei luoghi tra le stelle. Ma qui si concentra il suo essere. Perciò chiamalo. \n...Poi le due fanciulle trasalirono quando una voce risuonò nell'aria sopra di loro. I toni profondi, sereni, scanditi, non emanavano dall'immagine né da altri punti della sala. Ancora una volta, Yasmela tremò di fronte ad una voce incorporea che le parlava: ma questa volta non provava orrore o ripugnanza.",
+                "origin": "Colosso Nero"
+            }
+        },
+        "xaltotun": {
+            "name": "Xaltotun",
+            "quote": {
+                "text": "In quella luce la figura seduta davanti a lui, su un seggio d'argento a forma di trono, sembrava fantastica e irreale. Una leggera veste di seta ne sottolineava i contorni ingannevoli, ma i connotati del volto si scorgevano distintamente nonostante la luce incerta, ed era appunto questo a farla apparire irreale. Era come se intorno alla testa dell'uomo ci fosse una nube sovrannaturale che ne mettesse in rilievo il volto adorno di barba, per farlo apparire come l'unica realtà distinta e definita nella stanza spettrale e misteriosa. Era un volto magnifico, con lineamenti di bellezza classica modellati con decisione. E nella serenità e nella calma del suo aspetto c'era anche un non so che di inquietante, qualcosa che suggeriva una sapienza più che umana, una salda sicurezza che oltrepassava ogni umana fiducia.",
+                "origin": "Conan il Conquistatore"
+            }
+        },
+        "conan-the-pirate": {
+            "name": "Conan il Pirata",
+            "quote": {
+                "text": "L'acqua gli scorreva in rivoli dalle larghe spalle lungo le braccia muscolose. Il suo unico indumento, un paio di calzoni di lucida seta scarlatta, era bagnato fradicio, come l'ampia cintura dal fermaglio dorato che sorreggeva il fodero della spada. Fermo sulla murata, l'uomo si stagliò contro il sole nascente come una gigantesca statua di bronzo. Fece scorrere le dita fra i lunghi capelli neri, e gli occhi azzurri si accesero quando si posarono sul corpo della ragazza.",
+                "origin": "Lo stagno dei Neri"
+            }
+        },
+        "nyaga": {
+            "name": "N'Yaga",
+            "quote": {
+                "text": "— Tu, N'Yaga! — La voce della donna schioccò come la corda di un arco.\n — Prendi le erbe e medica le ferite del tuo padrone! Voialtri, portate a bordo il bottino, e tagliamo i grappini.\n Conan si sedette con la schiena contro la murata di poppa, mentre il vecchio sciamano gli curava le ferite alle mani e alle gambe, e il carico della sfortunata Argus veniva rapidamente trasferito sulla Tigre e ammassato in piccole cabine sotto il ponte.",
+                "origin": "La Regina della Costa Nera"
+            }
+        },
+        "gorm": {
+            "name": "Gorm",
+            "quote": {
+                "text": "Gorm aveva in sé l'eredità di centomila anni di vita selvaggia, sanguinaria e violenta: nel suo passo furtivo vi era l'avanzare felpato della tigre, nelle sue mani dalle unghie listate di nero la stretta implacabile e mortale del gorilla, e il fuoco che ardeva negli occhi del leopardo mandava un uguale bagliore dai suoi occhi.\nE Gorm, grazie appunto alla nuova metallurgia, cominciò a imporre il suo dominio agli altri clan, in parte con la guerra, in parte con l'astuzia e la diplomazia, arte quest'ultima nella quale sovrastava ampiamente ogni altro barbaro.",
+                "origin": "L'Era Hyboriana"
+            }
+        },
+        "baal-pteor-2": {
+            "name": "Baal Pteor",
+            "quote": {
+                "text": "— La tua testa, Cimmero! — esclamò Baal-pteor in tono di scherno. — La prenderò a mani nude, strappandotela dalle spalle come se fosse la testa di un pollo! Così i figli di Kosala offrono sacrifici a Yajur. Barbaro, tu vedi davanti a te uno strangolatore di Yota-pong. Sono stato prescelto dai sacerdoti di Yajur quand'ero ancora bambino, e durante l'infanzia, l'adolescenza e la giovinezza sono stato addestrato nell'arte di uccidere a mani nude, perché solo così si devono compiere i sacrifici. Yajur ama il sangue, e noi non sprechiamo una sola goccia delle vene della vittima... Ti spezzerò il collo con queste mani, barbaro!",
+                "origin": "Ombre a Zamboula"
+            }
+        },
+        "zamorian-spider": {
+            "name": "Ragno Zamoriano"
+        },
+        "manifestation-of-yog": {
+            "name": "Manifestazione di Yog",
+            "quote": {
+                "text": "— Gli abitanti della città non lo tollererebbero, se uccidesse uno di loro, ma non si curano degli stranieri che cadono nelle sue mani. Conan, tu vieni dall'occidente e non conosci i segreti di questa terra antica. Ma fin dall'inizio dei tempi, i demoni del deserto adorano Yog, il Signore del Vuoto, con il fuoco... il fuoco che divora vittime umane.",
+                "origin": "Ombre a Zamboula"
+            }
+        },
+        "conan-the-conqueror": {
+            "name": "Conan il Conquistatore",
+            "quote": {
+                "text": "Che cosa io so dei modi civili, d'oro, inganni,\nMenzogne, io che son nato in una terra spoglia\nE vissi sotto il cielo? L'abilità sottile\nDel parlare sofista fallisce quando canta\nLa gran spada fidata; correte a morte cani\nBastardi, che fui uomo prim'ancora che sire.",
+                "origin": "La Fenice sulla Lama"
+            }
+        },
+        "winged-one": {
+            "name": "Terrore Alato"
+        },
+        "son-of-set": {
+            "name": "Figlio di Set"
+        },
+        "nameless-horror": {
+            "name": "Orrore senza nome"
+        },
+        "servant-of-ahriman": {
+            "name": "Servitore di Ahriman"
+        },
+        "scourge-of-set": {
+            "name": "Flagello di Set"
+        },
+        "serpent-men": {
+            "name": "Uomini Serpente",
+            "quote": {
+                "text": "- Un uomo dalla testa di serpente - mormorò. - Allora era un sacerdote del dio serpente?\n- Sì. Tu dorme, ignaro di tutto. Questi mostri assumono la forma che credono, o meglio riescono, con un incantesimo, coprendosi il volto con una ragnatela magica, un po' come un attore quando mette la maschera, e a riprodurre la fisionomia di chi vogliono.",
+                "origin": "Il Regno Fantasma"
+            }
+        },
+        "serpent-men-2": {
+            "name": "Uomini Serpente",
+            "quote": {
+                "text": "- Un uomo dalla testa di serpente - mormorò. - Allora era un sacerdote del dio serpente?\n- Sì. Tu dorme, ignaro di tutto. Questi mostri assumono la forma che credono, o meglio riescono, con un incantesimo, coprendosi il volto con una ragnatela magica, un po' come un attore quando mette la maschera, e a riprodurre la fisionomia di chi vogliono.",
+                "origin": "Il Regno Fantasma"
+            }
+        },
+        "thulsa-doom": {
+            "name": "Thulsa Doom",
+            "quote": {
+                "text": "- Sono morto di morte umana molti secoli fa e passerò a qualche sfera quando verrà la mia ora, non prima - esclamò con disprezzo -\nNon sanguino, perché le mie vene sono vuote e avverto solo un certo freddo, che passerà appena la ferita si richiuderà, cosa che ha già cominciato a fare. Indietro, idiota, il tuo padrone adesso se ne va, ma un giorno tornerà e allora urlerai e ti accartoccerai e morrai! Ti saluto, Kull!",
+                "origin": "Il gatto di Delcardes"
+            }
+        },
+        "thulsa-doom-2": {
+            "name": "Thulsa Doom",
+            "quote": {
+                "text": "- Sono morto di morte umana molti secoli fa e passerò a qualche sfera quando verrà la mia ora, non prima - esclamò con disprezzo -\nNon sanguino, perché le mie vene sono vuote e avverto solo un certo freddo, che passerà appena la ferita si richiuderà, cosa che ha già cominciato a fare. Indietro, idiota, il tuo padrone adesso se ne va, ma un giorno tornerà e allora urlerai e ti accartoccerai e morrai! Ti saluto, Kull!",
+                "origin": "Il gatto di Delcardes"
+            }
         }
     }
 }

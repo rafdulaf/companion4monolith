@@ -509,6 +509,46 @@
                 "textSize": 137,
                 "textInter": 66
             }
+        },
+        "rending_the_veil": {
+            "title": "Déchirer le Voile",
+            "text": "Choisissez un ennemi vers lequel il n’existe pas de ligne de vue. Considérez qu’il existe désormais une ligne de vue entre la zone de cet ennemi et le lanceur de sort, ou une unité alliée dans la ligne de vue du lanceur de sort, pour une action.",
+            "textStyle": {
+                "textSize": 123,
+                "textInter": 70
+            }
+        },
+        "whirlwind": {
+            "title": "Tourbillon",
+            "text": "Attaquez une zone en ligne de vue, lancez {dice_orange}{dice_orange} et ajoutez un {dice_yellow} pour chaque unité dans cette zone. Vous pouvez répartir les résultats de l’attaque entre les cibles de votre choix dans la zone. Celles-ci ne bénéfi cient pas de Sous Protection. Les cibles choisies peuvent se défendre contre cette attaque.",
+            "textStyle": {
+                "textSize": 110,
+                "textInter": 70
+            }
+        },
+        "ymirs_retribution": {
+            "title": "Châtiment d’Ymir",
+            "text": "Attaquez un personnage dans votre ligne de vue et lancez {dice_red}{dice_red}. Si la puissance de l’attaque est supérieure à la puissance de la défense, le défenseur subit autant de dégâts que la différence.",
+            "textStyle": {
+                "textSize": 129,
+                "textInter": 73
+            }
+        },
+        "summon_demon": {
+            "title": "Invocation de Démon",
+            "text": "Placez un Démon (indiqué dans le scénario) dans la zone du lanceur de sort. Le Démon disparaît à la fin du tour, à moins que le lanceur de sort ne laisse les gemmes sur cette carte de sort. Le lanceur de sort peut déplacer les gemmes en zone de Fatigue à tout moment pour renvoyer le démon. Le lanceur de sort peut contrôler les tuiles ainsi invoquées comme s’il avait la compétence Commandement",
+            "textStyle": {
+                "textSize": 102,
+                "textInter": 63
+            }
+        },
+        "yogs_hunger": {
+            "title": "Faim de Yog",
+            "text": "Attaquez un personnage en ligne de vue et lancez {dice_orange}.\nCe personnage ne peut pas se défendre contre cette attaque et subit des dégâts correspondants à la puissance de l’attaque.",
+            "textStyle": {
+                "textSize": 128,
+                "textInter": 78
+            }
         }
     }
 }

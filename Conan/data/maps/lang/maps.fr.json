@@ -257,17 +257,124 @@
                 ],
                 "totopic": "https://the-overlord.com/index.php?/topic/807-stygie-carte-port/"
             }
+        },
+        
+        "Citadel2": {
+            "description": {
+                "title": "Citadelle",
+                "rules": [
+                    {
+                        "title": "Saut/Escalade depuis le balcon",
+                        "description": "Sauter depuis le balcon inflige {dice_yellow}{dice_yellow} sans défense possible, {dice_yellow} si la figurine possède la compétence Saut. Remonter sur le balcon coûte 1 point de mouvement supplémentaire pour un personnage ayant la compétence Escalade."
+                    }, {
+                        "title": "Meurtrières",
+                        "description": "Ces meurtrières ne sont pas suffisamment larges pour permettre le passage, même pour les unités volantes."
+                    }, {
+                        "title": "Lit",
+                        "description": "Un lit bien confortable où dormir"
+                    }
+                ],
+                "totopic": null
+            }
+        },
+        
+        "Temple": {
+            "description": {
+                "title": "Temple",
+                "rules": [
+                    {
+                        "title": "Pilier effondré",
+                        "description": "Un personnage peut se déplacer dans la zone du pilier effondré depuis une zone adjacente. Ce personnage doit dépenser 2 Points de Mouvement supplémentaires, à moins qu’il dispose de la compétence Escalade. Le pilier effondré ne procure pas de bonus de surplomb."
+                    }, {
+                        "title": "Nef",
+                        "description": "Quitter cette zone pour accéder à l’autel nécessite 2 Points de Mouvement supplémentaires, à moins que l’unité dispose de la compétence Escalade."
+                    }, {
+                        "title": "Fosse",
+                        "description": "Les unités ne peuvent pas pénétrer dans la fosse, bien que des objets puissent y être jetés. Les objets jetés dans la fosse sont perdus."
+                    }
+                ],
+                "totopic": null
+            }
         }
     },
 
     "compositions": {
+        "Chebek": {
+            "description": {
+                "title": "Chebek",
+                "rules": [
+                    {
+                        "title": "Escaliers",
+                        "description": "Si l’une des zones des escaliers (pont ou cale) est saturée, une action d’Attaque au corps-à-corps peut être menée de l’autre zone de cet escalier."
+                    }
+                ],
+                "totopic": null
+            }
+        },
+        
+        "Galley": {
+            "description": {
+                "title": "Galère",
+                "rules": [
+                    {
+                        "title": "Escaliers",
+                        "description": "Si l’une des zones des escaliers (pont ou cale) est saturée, une action d’Attaque au corps-à-corps peut être menée de l’autre zone de cet escalier."
+                    }
+                ],
+                "totopic": null
+            }
+        },
+        
+        "Chebek_Galley": {
+            "description": {
+                "title": "Chebek & Galère",
+                "totopic": null
+            }
+        },
+        
         "Port_Ship": {
             "description": {
-                "title": "Bateau au port"
+                "title": "Bateau au port",
+                "totopic": null
             }
         }        
     },
     
     "parts": {
+        "Chebek_Deck": {
+            "description": {
+                "title": "Chebek (pont)",
+                "rules": [
+                    {
+                        "title": "Dunette arrière",
+                        "description": "Sauter de la Dunette arrièrevers le pont inflige {dice_red}{dice_red} sans défense possible et {dice_red} si le Héros, l’Allié ou le personnage de l’Overlord possède la compétence Saut. Se déplacer vers la Dunette arrière ne peut se faire que par les escaliers. La compétence Escalade ne permet pas d’y accéder autrement."
+                    }
+                ]
+            }
+        },
+        
+        "Chebek_Hold": {
+            "description": {
+                "title": "Chebek (cale)"
+            }
+        },
+        
+        "Galley_Deck": {
+            "description": {
+                "title": "Galère (pont)",
+                "rules": [
+                    {
+                        "title": "Gaillard et Dunette arrière",
+                        "description": "Sauter du Gaillard ou de la Dunette arrière vers le pont inflige {dice_red}{dice_red} sans défense possible et {dice_red} si le Héros, l’Allié ou le personnage de l’Overlord possède la compétence Saut. Se déplacer vers le Gaillard ou la Dunette arrière ne peut se faire que par les escaliers. La compétence Escalade ne permet pas d’y accéder autrement."
+                    }
+                ]
+            }
+        },
+        
+        "Galley_Hold": {
+            "description": {
+                "title": "Galère (cale)"
+            }
+        }
     }
 }

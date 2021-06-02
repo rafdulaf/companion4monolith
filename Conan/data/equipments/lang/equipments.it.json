@@ -281,6 +281,66 @@
         },
         "sacred_treasure": {
             "title": "Tesoro sacro"
+        },
+        "anchor": {
+            "title": "Ancora"
+        },
+        "atlantean_axe": {
+            "title": "Ascia Atlantidea"
+        },
+        "cutlass": {
+            "title": "Coltellaccio"
+        },
+        "akbitanan_sword": {
+            "title": "Spada Akbitana"
+        },
+        "khitan_staff": {
+            "title": "Bastone Khitano"
+        },
+        "net": {
+            "title": "Rete",
+            "text": "Gli Eroi possono spendere una (1) {gem_blue} in Attacco a Distanza per usare l'abilità Intrappolare."
+        },
+        "heavy_spear": {
+            "title": "Azza"
+        },
+        "map": {
+            "title": "Mappa"
+        },
+        "spiked_shield": {
+            "title": "Scudo Chiodato"
+        },
+        "zamorian_chain": {
+            "title": "Catena Zamoriana"
+        },
+        "nemedian_poniard": {
+            "title": "Pugnale Nemediano"
+        },
+        "spiked_mace": {
+            "title": "Mazzafrusto"
+        },
+        "caestus": {
+            "title": "Caestus",
+            "text": "Un Eroe che indoosa un Caestus non subisce penalità se combatte disarmato."
+        },
+        "dagons_circlet": {
+            "title": "Corona di Dagon",
+            "text": "Aumenta il valore dell'ingombro delle abilità di 1."
+        },
+        "mantle_of_gullah": {
+            "title": "Mantella di Gullah",
+            "text": "Guadagni una (1) {gem_blue} aggiuntiva fin quando sei In Recupero."
+        },
+        "stygian_cloak": {
+            "title": "Mantello Stygiano",
+            "text": "Guadagni una (1) {gem_blue} aggiuntiva fin quando sei Attivo."
+        },
+        "lockpick": {
+            "title": "Attrezzi da scasso",
+            "text": "Piazza una (1) {gem_red} sugli attrezzi da scasso. Un Eroe può spendere questa gemma per scassinare una serratura. Durante la fase iniziale e la fase finale\n del turno degli Eroi, rimettete\n la {gem_red} sulla carta."
+        },
+        "conans_great_sword": {
+            "title": "Grande Spada di Conan"
         }
     }
 }

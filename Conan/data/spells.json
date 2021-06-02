@@ -1590,6 +1590,150 @@
             "origins": ["stygia"],
 
             "tokens": ["secret", "well"]
+        },
+
+        {
+            "id": "rending_the_veil",
+
+            "cost": "2",
+            "saturation": "2",
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": true,
+            "forHeroes": true,
+
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": false,
+
+            "image": "data/spells/img/rending_the_veil.png",
+            "origins": ["conqueror"]
+        },
+
+        {
+            "id": "whirlwind",
+
+            "cost": "3",
+            "saturation": "3",
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": true,
+            "forHeroes": true,
+
+            "forSkill": false,
+            "forAttack": true,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": false,
+
+            "image": "data/spells/img/whirlwind.png",
+            "origins": ["conqueror"]
+        },
+
+        {
+            "id": "ymirs_retribution",
+
+            "cost": "2",
+            "saturation": "2",
+            "explosion": true,
+            "reaction": false,
+
+            "forOverlord": true,
+            "forHeroes": true,
+
+            "forSkill": false,
+            "forAttack": true,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": false,
+
+            "image": "data/spells/img/ymirs_retribution.png",
+            "origins": ["conqueror"]
+        },
+
+        {
+            "id": "summon_demon",
+
+            "cost": "2",
+            "saturation": "2",
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": true,
+            "forHeroes": true,
+
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": false,
+            "forEnergy": false,
+
+            "image": "data/spells/img/summon_demon.png",
+            "origins": ["conqueror"]
+        },
+
+        {
+            "id": "yogs_hunger",
+
+            "cost": "2",
+            "saturation": "2",
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": true,
+            "forHeroes": true,
+
+            "forSkill": false,
+            "forAttack": true,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": false,
+
+            "image": "data/spells/img/yogs_hunger.png",
+            "origins": ["conqueror"]
+        },
+
+        {
+            "id": "changing_destiny",
+
+            "cost": "4",
+            "saturation": "4",
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": true,
+            "forHeroes": true,
+
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": false,
+
+            "image": "data/spells/img/changing_destiny.png",
+            "origins": ["conqueror"]
         }
     ]
 }

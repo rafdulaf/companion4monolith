@@ -36,6 +36,12 @@
         }, {
             "id": "king",
             "type": "corebox"
+        }, {
+            "id": "conqueror",
+            "type": "corebox"
+        }, {
+            "id": "conqueror-sg",
+            "type": "corebox"
         },
 
         {
@@ -46,6 +52,12 @@
             "type": "thematic"
         }, {
             "id": "khitai",
+            "type": "thematic"
+        }, {
+            "id": "shadow-kingdom",
+            "type": "thematic"
+        }, {
+            "id": "red-brotherhood",
             "type": "thematic"
         },
 
@@ -90,6 +102,9 @@
         }, {
             "id": "setbook",
             "type": "books"
+        }, {
+            "id": "tomeofskelos",
+            "type": "books"
         },
 
         {
@@ -109,6 +124,9 @@
         }, {
             "id": "adventurepack",
             "type": "decoration"
+        }, {
+            "id": "hidden-chambers",
+            "type": "misc"
         }, {
             "id": "monolith-site",
             "type": "misc"
