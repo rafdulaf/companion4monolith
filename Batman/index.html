@@ -46,6 +46,15 @@
         <script>
             Application = "Batman";
             Languages = ["fr", "en"];
+
+            var oldExtensionValue = JSON.parse(localStorage.getItem("Batman_Extensions"));
+            if (oldExtensionValue)
+            {
+            	oldExtensionValue.corebox = true;
+                delete oldExtensionValue.box;
+                
+                localStorage.setItem("Batman_Extensions", JSON.stringify(oldExtensionValue));
+            }
         </script>
         <script src="../engine/general/utils.0.17.js"></script>
         
