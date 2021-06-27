@@ -160,15 +160,17 @@ var HeroSheet = mergeObject(StudioItem, {
     },
 
     _cardCode: function(sheet, printPurpose) {
-        var code = "<div class=\"herosheet sheet\">";
+        var code = "<div class='herosheet sheet " + sheet.type + "'>";
+
+        code += "<div class='background'><img src='studio/hero_sheet/img/sheet_" + sheet.type + ".png?version=" + Version + "'/></div>"
 
         if (sheet.name)
         {
-            code += "<div class=\"name\">" + sheet.name + (sheet.subname ? "<span>" + sheet.subname + "</span>" : " ") + "</div>";
+            code += "<div class='name" + (sheet.subname ? ' subname' : '') + "'>" + sheet.name + (sheet.subname ? "<span>" + sheet.subname + "</span>" : " ") + "</div>";
         }
         if (sheet.gem)
         {
-            code += "<div class=\"gem\">" + sheet.gem + "</div>";
+            code += "<div class='gem'>" + sheet.gem + "</div>";
         }
         
         return code;
@@ -191,7 +193,7 @@ var HeroSheet = mergeObject(StudioItem, {
                 
                 + "<div class=\"field type\">"
                     + "<label for=\"hstype\">" + HeroSheet._i18n[Language].type + "</label>"
-                    + "<select id='hstype' name='sheettype'>"
+                    + "<select id='hstype' name='sheettype' onchange='HeroSheet._preview();'>"
                         + "<option value='hero'>" + HeroSheet._i18n[Language].typeHero + "</option>" 
                         + "<option value='villain'>" + HeroSheet._i18n[Language].typeVillain + "</option>" 
                     + "</select>"

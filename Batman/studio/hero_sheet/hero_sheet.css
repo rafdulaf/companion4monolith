@@ -182,3 +182,54 @@
 #hero .nocards {
     background-image: url('img/nocard.png');
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.herosheet.sheet {
+    width: 600px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 40px;
+    font-family: "Primary";
+} 
+
+.herosheet.sheet .background img {
+    width: 100%;
+}
+.herosheet.sheet .name {
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 20px;
+    top: 7.8%;
+    left: 75.3%;
+    transform: translate(-50%, -50%);
+}
+.herosheet.sheet .name.subname {
+    top: 7.1%;
+    font-size: 19px;
+}
+.herosheet.sheet .name.subname span {
+    font-size: 10px;
+    /* font-style: italic; */
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 22px;
+    white-space: nowrap;
+}
+
+.herosheet.sheet.hero .name { color: #7DC0CB; }
+.herosheet.sheet.villain .name { color: #58686E; }
+.herosheet.sheet.hero .name.subname .span { color: #7DC0CB; }
+.herosheet.sheet.villain .name.subname .span { color: #909E9E; }
