@@ -313,6 +313,34 @@ var Maps = {
 
             map.description.rules = Maps._rulesComposition(composition);
             
+            (composition.merge || []).forEach(function(mergeAction, index) {
+                let z1Id = mergeAction[0];
+                let z2Id = mergeAction[1];
+                
+                let z1 = map.zones[z1Id];
+                let z2 = map.zones[z2Id];
+                
+                delete map.zones[z1Id];
+                delete map.zones[z2Id];
+                
+                let newZoneId = z1Id + "-" + z2Id;
+                
+                let newZone = {};
+                newZone.area = z1.area.concat(z2.area);
+                newZone.centers = z1.centers.concat(z2.centers);
+                newZone.links = z1.links.concat(Maps._moveLeftNumber(z2.links, z1.centers.length));
+                newZone.level = z1.level; // should be also z2.level
+                
+                
+                // TODO change all existing links to z1 and z2
+                for (var z in map.zones)
+                {
+                    map.zones[z].links = Maps._moveCenterAndRightNumber(map.zones[z].links, newZoneId, z1Id, z2Id, z1.centers.length);
+                }
+                
+                map.zones[newZoneId] = newZone;
+            })
+            
             if (composition.insertAfter)
             {
                 Encyclopedia.maps.list.splice(Encyclopedia.maps.list.indexOf(Maps._findMapById(composition.insertAfter)) + 1, 0, map);
@@ -322,6 +350,41 @@ var Maps = {
                 Encyclopedia.maps.list.push(map);
             }
         }
+    },
+    
+    _moveCenterAndRightNumber: function(links, newZoneId, z1Id, z2Id, offset)
+    {
+        var newLinks = [];
+
+        links.forEach(function(value) {
+            let values = value.split("#");
+            if (values[1] == z1Id)
+            {
+                newLinks.push(values[0] + "#" + newZoneId + "#" + values[2]); 
+            }
+            else if (values[1] == z2Id)
+            {
+                newLinks.push(values[0] + "#" + newZoneId + "#" + (parseInt(values[2]) + offset)); 
+            }
+            else
+            {
+                newLinks.push(values[0] + "#" + values[1] + "#" + values[2]); 
+            }
+        });
+
+        return newLinks;
+    },
+    
+    _moveLeftNumber: function(links, offset)
+    {
+        var newLinks = [];
+
+        links.forEach(function(value) {
+            let values = value.split("#");
+            newLinks.push((parseInt(values[0]) + offset) + "#" + values[1] + "#" + values[2]); 
+        });
+
+        return newLinks;
     },
 
 	_hideAll: function()
