@@ -4,18 +4,6 @@
 }
 
 
-.sheet.herosheet {
-    font-family: 'Primary';
-    text-align: left;
-    
-    position: relative;
-    display: inline-block; 
-    
-    margin: 2px;
-
-    overflow: hidden;    
-}
-
 .printcards input[name=herosheet] { position: absolute; top:-5000px; }
 .printcards input[name=herosheet] + label { position: relative; display: inline-block; margin-right: 5px; }
 .printcards input[name=herosheet] + label:before { position: absolute; content: " "; z-index: 1; top: 0; left: 0; right: 0; bottom: 0; background-color: #000000; opacity: 0.2; }
@@ -47,8 +35,14 @@
     text-align: left;
 }
 .dialog .sheet .field input,
+.dialog .sheet .field textarea,
 .dialog .sheet .field select {
     width: 100%;
+}
+.dialog .sheet .field textarea {
+    resize: none;
+    height: 70px;
+    font-size: 80%;
 }
 
 .dialog .sheet .ui-menu { width: 100% !important; }
@@ -108,7 +102,60 @@
 .dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(8):before, .dialog .sheet select[data-value=yellowreroll] + span { background-image: url(../../resources/img/dice_yellowreroll.webp) !important; }
 .dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(9):before, .dialog .sheet select[data-value=white] + span { background-image: url(../../resources/img/dice_white.webp) !important; }
 .dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(10):before, .dialog .sheet select[data-value=whitereroll] + span { background-image: url(../../resources/img/dice_whitereroll.webp) !important; }
+.dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(1):before, .dialog .sheet select[data-value=black] + span { background-image: url(../../resources/img/dice_black.png) !important; }
+.dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(11):before, .dialog .sheet select[data-value=''] + span { background-image: url(img/nodice.png) !important; }
     
+.dialog .sheet .field.imagelocation,
+.dialog .sheet .field.imagezoom,
+.dialog .sheet .field.imagerotation {
+    height: 60px;
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0;
+    text-align: left;
+}
+
+.dialog .sheet .field.imagezoom,
+.dialog .sheet .field.imagerotation {
+    width: 25%;
+}
+.dialog .sheet .field.imagezoom:after,
+.dialog .sheet .field.imagelocation div:after {
+    position: relative;
+    left: -12px;
+    content: "%";
+    color: #000;
+}
+.dialog .sheet .field.imagerotation:after {
+    position: relative;
+    left: -12px;
+    content: "°";
+    color: #000;
+}
+.dialog .sheet .field.imagelocation input,
+.dialog .sheet .field.imagezoom input,
+.dialog .sheet .field.imagerotation input {
+    width: 51px;
+    padding-right: 15px;
+    text-align: right;
+}
+.dialog .sheet .field.imagelocation, .dialog .sheet .field.imagezoom
+{ padding-right: 0; }
+.dialog .sheet .field.imagezoom, .dialog .sheet .field.imagerotation
+{ padding-left: 0; }
+
+.dialog .sheet .field.imagelocation > div {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.dialog .sheet input#hsimage, .dialog .sheet input#hsimage2 {
+    padding-left: 10px;
+}
+
 
 
 
@@ -130,20 +177,39 @@
     display: inline-block;
     color: #FFF;
     background-color: #000;
-    width: 20px;
+    width: 24px;
+    height: 24px;
     border-radius: 100%;
     margin-right: 10px;
 }
 .dialog .hscol:nth-child(1) .sheet h1:before {
     content: "1";
 }
-.dialog .hscol:nth-child(2) .sheet h1:before {
+.dialog .hscol:nth-child(2) .sheet:nth-child(1) h1:before {
     content: "2";
 }
-.dialog .hscol:nth-child(2) .sheet-preview h1:before {
+.dialog .hscol:nth-child(2) .sheet:nth-child(2) h1:before {
     content: "3";
 }
+.dialog .hscol:nth-child(2) .sheet-preview h1:before {
+    content: "4";
+}
 
+.dialog .sheet .field input#hsname { width: 60%; padding: 0 3px 0 0; text-align: right; }
+.dialog .sheet .field input#hssubname { width: 40%; font-size: 80%; vertical-align: top; }
+.dialog .sheet .field.gems label ~ label { display: inline-block; width: calc((100% - 150px) / 3); text-align: right; padding-right: 5px; padding-left: 5px; font-size: 80%; white-space: nowrap; overflow: hidden; }
+.dialog .sheet .field.gems label ~ input { display: inline-block; width: 50px; text-align: center; }
+.dialog .sheet .field.move label ~ label { display: inline-block; width: calc((100% - 150px) / 3); text-align: right; padding-right: 5px; padding-left: 5px; font-size: 80%; white-space: nowrap; overflow: hidden; }
+.dialog .sheet .field.move label ~ input { display: inline-block; width: 50px; text-align: center; }
+.dialog .sheet .field.index label ~ label { display: inline-block; width: calc((100% - 150px) / 3); text-align: right; padding-right: 5px; padding-left: 5px; font-size: 80%; white-space: nowrap; overflow: hidden; }
+.dialog .sheet .field.index label ~ input { display: inline-block; width: 50px; text-align: center; }
+.dialog .sheet .field.caracs div label { display: inline-block; width: calc(50% - 100px); text-align: right; padding-right: 5px; padding-left: 5px; font-size: 80%; white-space: nowrap; overflow: hidden; }
+.dialog .sheet .field.caracs div input { display: inline-block; width: 50px; text-align: center; } 
+.dialog .sheet .field.caracs div select { display: inline-block; width: 50px; text-align: center; }
+.dialog .sheet .field.caracs div.defense label ~ label ~ select + span { margin-right: 50px; }
+.dialog .sheet .field.caracs div.reroll { text-align :left; }
+.dialog .sheet .field.caracs div.reroll label { margin-right: 50px; }
+.dialog .sheet .field.description label ~ label { font-size: 80%; }
 
 
 @media screen and (min-width: 840px) {
@@ -193,43 +259,331 @@
 
 
 
+.sheet.herosheet {
+    text-align: left;
+    
+    position: relative;
+    display: inline-block; 
+    
+    margin: 2px;
 
-
-.herosheet.sheet {
+    overflow: hidden;    
+    
     width: 600px;
     text-align: center;
     font-weight: normal;
-    font-size: 40px;
     font-family: "Primary";
-} 
+    font-size: 40px;
+    line-height: 1.5rem;
+}
+
+.sheet.herosheet.withboard, 
+.dialog .sheet.herosheet {
+    background-image: url(img/player_board.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 94px;
+    padding-right: 94px;
+    padding-bottom: 93px;
+    font-size: 27.47px;
+    line-height: 1.03rem;
+}
+.sheet.herosheet + .sheet.herosheet {
+    background-image: none;
+}
+
+.sheet.herosheet > div {
+    position: relative;
+}
 
 .herosheet.sheet .background img {
     width: 100%;
 }
+.herosheet.sheet.back .background > img ~ img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .herosheet.sheet .name {
     position: absolute;
     text-transform: uppercase;
     font-weight: 100;
-    font-size: 20px;
+    font-size: 50%;
     top: 7.8%;
     left: 75.3%;
+    height: 6.4%;
     transform: translate(-50%, -50%);
 }
 .herosheet.sheet .name.subname {
     top: 7.1%;
-    font-size: 19px;
+    font-size: 47.5%;
 }
 .herosheet.sheet .name.subname span {
-    font-size: 10px;
-    /* font-style: italic; */
+    font-size: 52.63%;
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
-    top: 22px;
+    top: 92.94%;
     white-space: nowrap;
 }
+
+.herosheet.sheet .carac {
+    position: absolute;
+    width: 6.33%;
+    height: 11.91%;
+}
+.herosheet.sheet .carac img {
+    width: 100%;
+}
+.herosheet.sheet .carac span.exertion {
+    font-size: 32.5%;
+    position: absolute;
+    top: -31.81%;
+    right: -21%;
+    transform: rotate(43deg);
+}
+.herosheet.sheet .carac.right span.exertion {
+    transform: rotate(-43deg);
+    right: 100%;
+}
+
+.herosheet.sheet .carac span.gemfactor {
+    font-size: 37.5%;
+    position: absolute;
+    top: 25%;
+    right: 15.7%;
+    transform: rotateX(-45deg) rotateY(45deg);
+}
+.herosheet.sheet .carac span.gemfactor:before {
+    content: '=';
+}
+
+.herosheet.sheet .passivedefense {
+    position: absolute;
+    left: 67.33%;
+    top: 56.85%;
+    width: 16.17%;
+}
+.herosheet.sheet .passivedefense img.bg {
+    width: 100%;
+}
+.herosheet.sheet .passivedefense img.dice {
+    position: absolute;
+    left: 69%;
+    top: 39.66%;
+    width: 23.7%;
+}
+
+.herosheet.sheet .gems .total {
+    position: absolute;
+    left: 35.5%;
+    top: 79.64%;
+    width: 5%;
+    font-size: 50%;
+    text-align: center;
+}
+.herosheet.sheet .gems .active {
+    position: absolute;
+    left: 32.95%;
+    top: 83.5%;
+    width: 2.17%;
+    font-size: 25%;
+    text-align: center;
+}
+.herosheet.sheet .gems .rest {
+    position: absolute;
+    left: 40.83%;
+    top: 83.5%;
+    width: 2.13%;
+    font-size: 25%;
+    text-align: center;
+}
+
+.herosheet.sheet .move .free {
+    position: absolute;
+    left: 53.5%;
+    top: 73.4%;
+    width: 5%;
+    font-size: 50%;
+    text-align: center;
+}
+.herosheet.sheet .move .weight {
+    position: absolute;
+    top: 86.9%;
+    width: 2.17%;
+    font-size: 25%;
+    text-align: center;
+}
+.herosheet.sheet .move .weight.weight1 { left: 53.25%; }
+.herosheet.sheet .move .weight.weight2 { left: 57.32%; }
+.herosheet.sheet .move .weight.weight3 { left: 61.43%; }
+
+.herosheet.sheet .move .value {
+    position: absolute;
+    top: 92.6%;
+    width: 2.33%;
+    font-size: 27.5%;
+    text-align: center;
+}
+.herosheet.sheet .move .value.value1 { left: 53.25%; }
+.herosheet.sheet .move .value.value2 { left: 57.32%; }
+.herosheet.sheet .move .value.value3 { left: 61.43%; }
+
+.herosheet.sheet .move .bg {
+    position: absolute;
+    left: 55.17%;
+    top: 85.54%;
+    width: 9.5%;
+}
+
+.herosheet.sheet .topright span {
+    position: absolute;
+    top: 15.16%;
+    width: 2.33%;
+    font-size: 27.5%;
+    text-align: center;
+}
+.herosheet.sheet .topright .menace { left: 85%; }
+.herosheet.sheet .topright .size { left: 79%; }
+.herosheet.sheet .topright .belt { left: 73%; }
+
+.herosheet.sheet .topright img.bg {
+    position: absolute;
+    top: 14.54%;
+    left: 71.62%;
+    width: 8.52%;
+}
+
+
+.herosheet.sheet .carac.melee { top: 9.5%; left: 7.67%; }
+.herosheet.sheet .carac.ranged { top: 34.92%; left: 4.67%; }
+.herosheet.sheet .carac.manipulation { top: 60.37%; left: 1.67%; }
+.herosheet.sheet .carac.thought { top: 85.81%; left: 4.67%; }
+.herosheet.sheet .carac.defense { top: 34.92%; left: 89%; }
+.herosheet.sheet .carac.reroll { top: 60.37%; left: 92%; }
+.herosheet.sheet .carac.move { top: 85.81%; left: 89%; }
+
+.sheet.herosheet div.image {
+    position: absolute;
+    left: 20%;
+    top: 0;
+    height: 66%;
+    width: 60%;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,0));    
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,0));    
+}
+
+.sheet.herosheet div.image img {
+    position: absolute;
+    min-width: 100%; /* against lazy loading issue */
+    opacity: 0;  /* against lazy loading issue */
+}
+
+.sheet.herosheet.back div.image {
+    -webkit-mask-image: none;    
+    mask-image: none;  
+    left: 8%;
+    height: 98%;
+}
+.sheet.herosheet.back div.image img {
+    width: auto;
+}
+
+
+.herosheet.sheet.back .name {
+    left: 12.9%;
+    top: 75.5%;
+    transform: none;
+    font-size: 44%;
+}
+.herosheet.sheet.back .name.subname span {
+    position: relative;
+    top: 0;
+    left: 4px;
+    font-size: 60%;
+}
+
+.herosheet.sheet.back .identity {
+    position: absolute;
+    font-weight: 100;
+    font-size: 26.5%;
+    top: 79%;
+    left: 15.8%;
+}
+.herosheet.sheet.back .description {
+    position: absolute;
+    font-weight: 100;
+    font-size: 26.1%;
+    left: 46.0%;
+    width: 43%;
+    line-height: 1.3;
+    text-align: justify;
+}
+.herosheet.sheet.back .description.en {
+    top: 7%;
+}
+.herosheet.sheet.back .description.fr {
+    top: 52.7%;
+}
+.herosheet.sheet.back .measurementsize,
+.herosheet.sheet.back .measurementweight {
+    position: absolute;
+    font-weight: 100;
+    font-size: 26.5%;
+}
+.herosheet.sheet.back .measurementsize {
+    top: 82.6%;
+    left: 22.8%;
+}
+.herosheet.sheet.back .measurementweight {
+    top: 86%;
+    left: 25%;
+}
+
+
 
 .herosheet.sheet.hero .name { color: #7DC0CB; }
 .herosheet.sheet.villain .name { color: #58686E; }
 .herosheet.sheet.hero .name.subname .span { color: #7DC0CB; }
 .herosheet.sheet.villain .name.subname .span { color: #909E9E; }
+.herosheet.sheet.hero .carac span.exertion { color: #FFFFFF; }
+.herosheet.sheet.villain .carac span.exertion { color: #FFFFFF; }
+.herosheet.sheet.hero .carac span.exertion:before { color: #1F7C7D; }
+.herosheet.sheet.villain .carac span.exertion:before { color: #5D665E; }
+.herosheet.sheet.hero .carac span.gemfactor { color: #FFFFFF; }
+.herosheet.sheet.villain .carac span.gemfactor { color: #FFFFFF; }
+.herosheet.sheet.hero .passivedefense { color: #FFFFFF; }
+.herosheet.sheet.villain .passivedefense { color: #335044; }
+.herosheet.sheet.hero .gems { color: #FFFFFF; }
+.herosheet.sheet.villain .gems { color: #2F4445; }
+.herosheet.sheet.hero .move { color: #FFFFFF; }
+.herosheet.sheet.villain .move { color: #2F4445; }
+.herosheet.sheet.hero .move .weight { color: #2F4445; }
+.herosheet.sheet.villain .move .weight { color: #2F4445; }
+.herosheet.sheet.hero .move .value { color: #FFFFFF; }
+.herosheet.sheet.villain .move .value { color: #2F4445; }
+.herosheet.sheet.hero .topright span { color: #FFFFFF; }
+.herosheet.sheet.villain .topright span { color: #2F4445; }
+.herosheet.sheet.back.hero .name { color: #7DC0CB; }
+.herosheet.sheet.back.villain .name { color: #FFFFFF; }
+.herosheet.sheet.hero .identity { color: #FFFFFF; }
+.herosheet.sheet.villain .identity { color: #FFFFFF; }
+.herosheet.sheet.hero .measurementsize { color: #FFFFFF; }
+.herosheet.sheet.villain .measurementsize { color: #FFFFFF; }
+.herosheet.sheet.hero .measurementweight { color: #FFFFFF; }
+.herosheet.sheet.villain .measurementweight { color: #FFFFFF; }
+.herosheet.sheet.hero .description { color: #FFFFFF; }
+.herosheet.sheet.villain .description { color: #FFFFFF; }
+
+                                       .dialog .sheet.herosheet { zoom: 0.54; } .ff .dialog .sheet.herosheet { transform-origin: top left; transform: scale(0.54); }
+@media screen and (min-width: 470px) { .dialog .sheet.herosheet { zoom: 0.72; } .ff .dialog .sheet.herosheet { transform-origin: top left; transform: scale(0.72); } }
+@media screen and (min-width: 558px) { .dialog .sheet.herosheet { zoom: 0.87; } .ff .dialog .sheet.herosheet { transform-origin: top left; transform: scale(0.87); } }
+@media screen and (min-width: 648px) { .dialog .sheet.herosheet { zoom: unset; } .ff .dialog .sheet.herosheet { transform-origin: unset; transform: unset; } }
+@media screen and (min-width: 738px) { .dialog .sheet.herosheet { zoom: 1.16; } .ff .dialog .sheet.herosheet { transform-origin: top left; transform: scale(1.16); } }
+@media screen and (min-width: 840px) { .dialog .sheet.herosheet { zoom: 0.68; } .ff .dialog .sheet.herosheet { transform-origin: top left; transform: scale(0.68); } }
+@media screen and (min-width: 1068px) { .dialog .sheet.herosheet { zoom: 0.87; } .ff .dialog .sheet.herosheet { transform-origin: top left; transform: scale(0.87); } }
+@media screen and (min-width: 1244px) { .dialog .sheet.herosheet { zoom: unset; } .ff .dialog .sheet.herosheet { transform-origin: unset; transform: unset; } }
+@media screen and (min-width: 1510px) { .dialog .sheet.herosheet { zoom: 1.13; } .ff .dialog .sheet.herosheet { transform-origin: top left; transform: scale(1.13); } }
+@media screen and (min-width: 1774px) { .dialog .sheet.herosheet { zoom: 1.45; } .ff .dialog .sheet.herosheet { transform-origin: top left; transform: scale(1.45); } }
