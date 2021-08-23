@@ -5,171 +5,6 @@ var Tile = mergeObject(StudioItem, {
     _itemWidth: 204,
     _itemHeight: 309,
     
-    _i18n: {
-        'fr': {
-            'tab': "Tuiles",
-            'nocard': "Vous n'avez aucune tuile pour le moment",
-            'nocard2': "<br/><br/>Cliquez sur le bouton + pour en creer une",
-            'newcard': "Créer une tuile",
-            'editcard': "Modifier",
-
-            'name': "Nom",
-            'namePh': "?",
-            'color': "Couleur",
-            'colorGray': "Grise",
-            'colorBlue': "Bleue",
-            'colorRed': "Rouge",
-            'colorGreen': "Verte",
-            'colorOrange': "Orange",
-            'colorPurple': "Violet",
-            'colorBlack': "Noir",
-            'colorNone': 'Aucune',
-            'movement': "Mouvement",
-            'movementPh': "?",
-            'defense': "Défense",
-            'defensePh': "?",
-            'attacktype': "Type d'attaque",
-            'dices': "Attaque",
-            'skills': "Compétences",
-            'skillsPh': "?",
-            'skillsNone': "Aucune",
-            'skillsSpace': "Espace vide",
-            'reinforcement': "Renfort",
-            'reinforcementPh': "?",
-            'image': "Image (fond transparent)",
-            'imagetoken': "Image si différente",
-            'imagePh': "Entrer l'adresse de l'image (http://)",
-            'imagetokenactive': "Activer un jeton",
-            'imagelocation': "Emplacement",
-            'imagelocationPh': "0",
-            'imagezoom': "Zoom",
-            'imagezoomPh': "0",
-            'imagerotation': "Rotation",
-            'imagerotationPh': "0",
-            'diceNone': "Aucun",
-            'diceRed': "Rouge",
-            'diceRedReroll': "Rouge \uf01e",
-            'diceOrange': "Orange",
-            'diceOrangeReroll': "Orange \uf01e",
-            'diceYellow': "Jaune",
-            'diceYellowReroll': "Jaune \uf01e",
-            'header1': "Saisissez les données de la tuile",
-            'header1bis': "Mettez une image",
-            'header1ter': "Ajouter des jetons",
-            'header2': "Prévisualiser la tuile",
-            
-            'copyright': "Basé sur le fichier PSD proposé par <a href='https://the-overlord.com/index.php?/profile/9-genesteal28/'>@genesteal28</a> et converti au format GIMP par <a href='https://the-overlord.com/index.php?/profile/31-jabbathehatt/'>@jabbathehatt</a>."
-        },
-        'en': {
-            'tab': "Tiles",
-            'nocard': "You have no tile for the moment",
-            'nocard2': "<br/><br/>Click on the + button to create one",
-            'newcard': "Create a tile",
-            'editcard': "Edit a tile",
-
-            'name': "Name",
-            'namePh': "?",
-            'color': "Color",
-            'colorGray': "Gray",
-            'colorBlue': "Blue",
-            'colorRed': "Red",
-            'colorGreen': "Green",
-            'colorOrange': "Orange",
-            'colorPurple': "Purple",
-            'colorBlack': "Black",
-            'colorNone': 'None',
-            'movement': "Move",
-            'movementPh': "?",
-            'defense': "Defense",
-            'defensePh': "?",
-            'attacktype': "Attack type",
-            'dices': "Attack",
-            'skills': "Skills",
-            'skillsPh': "?",
-            'skillsNone': "None",
-            'skillsSpace': "Empty space",
-            'reinforcement': "Renfort",
-            'reinforcementPh': "?",
-            'image': "Image (transparent background)",
-            'imagetoken': "Image if différent",
-            'imagePh': "Enter the image address (http://...)",
-            'imagetokenactive': "Activate a token",
-            'imagelocation': "Location",
-            'imagelocationPh': "0",
-            'imagezoom': "Zoom",
-            'imagezoomPh': "0",
-            'imagerotation': "Rotation",
-            'imagerotationPh': "0",
-            'diceNone': "None",
-            'diceRed': "Red",
-            'diceRedReroll': "Red \uf01e",
-            'diceOrange': "Orange",
-            'diceOrangeReroll': "Orange \uf01e",
-            'diceYellow': "Yellow",
-            'diceYellowReroll': "Yellow \uf01e",
-            'header1': "Fill the tile data",
-            'header1bis': "Set a picture",
-            'header1ter': "Add tokens",
-            'header2': "Preview the final result",
-            
-            'copyright': "Based on the PSD file proposed by <a href='https://the-overlord.com/index.php?/profile/9-genesteal28/'>@genesteal28</a> and converted at the GIMP format by <a href='https://the-overlord.com/index.php?/profile/31-jabbathehatt/'>@jabbathehatt</a>."
-        },
-        'it': {
-            'tab': "Tessere",
-            'nocard': "Non hai tessere al momento",
-            'nocard2': "<br/><br/>CLicca su + per crearne una",
-            'newcard': "Crea una tessera",
-            'editcard': "Modifica al tessera",
-
-            'name': "Nome",
-            'namePh': "?",
-            'color': "Colore",
-            'colorGray': "Grigia",
-            'colorBlue': "Blu",
-            'colorRed': "Rossa",
-            'colorGreen': "Verde",
-            'colorOrange': "Arancione",
-            'colorPurple': "Viola",
-            'colorBlack': "Nera",
-            'colorNone': 'Nessuno',
-            'movement': "Movimento",
-            'movementPh': "?",
-            'defense': "Difesa",
-            'defensePh': "?",
-            'attacktype': "Tipo di attacco",
-            'dices': "Attacco",
-            'skills': "Abilità",
-            'skillsPh': "?",
-            'skillsNone': "Nessuna",
-            'skillsSpace': "Spazio vuoto",
-            'reinforcement': "Rinforzo",
-            'reinforcementPh': "?",
-            'image': "Immagine (sfondo trasparente)",
-            'imagetoken': "Immagine, se diversa",
-            'imagePh': "Inserisci l'URL dell'immagine (http://...)",
-            'imagetokenactive': "Attiva un segnalino",
-            'imagelocation': "Posizione",
-            'imagelocationPh': "0",
-            'imagezoom': "Zoom",
-            'imagezoomPh': "0",
-            'imagerotation': "Rotazione",
-            'imagerotationPh': "0",
-            'diceNone': "Nessuno",
-            'diceRed': "Rosso",
-            'diceRedReroll': "Rosso \uf01e",
-            'diceOrange': "Arancione",
-            'diceOrangeReroll': "Arancione \uf01e",
-            'diceYellow': "Giallo",
-            'diceYellowReroll': "Giallo \uf01e",
-            'header1': "Completa le informazioni sulla tessera",
-            'header1bis': "Scegli un'immagine",
-            'header1ter': "Aggiungi un segnalino",
-            'header2': "Anteprima risultato finale",
-            
-            'copyright': "Basato sui file PSD di <a href='https://the-overlord.com/index.php?/profile/9-genesteal28/'>@genesteal28</a> e convertiti nel formato GIMP da <a href='https://the-overlord.com/index.php?/profile/31-jabbathehatt/'>@jabbathehatt</a>."
-        }
-    },
-
     _getDisplayItemsCode: function(withEditLink, printPurpose)
     {
         var html = "";
@@ -206,7 +41,7 @@ var Tile = mergeObject(StudioItem, {
         }
         else
         {
-            html += "<div class=\"nocards\">" + Tile._i18n[Language].nocard + (withEditLink !== false ? Tile._i18n[Language].nocard2 : '') + "</div>";
+            html += "<div class=\"nocards\">" + Tile._i18n.nocard + (withEditLink !== false ? Tile._i18n.nocard2 : '') + "</div>";
         }
 
         if (!withEditLink)
@@ -395,14 +230,14 @@ var Tile = mergeObject(StudioItem, {
             {
                 var type = Encyclopedia.skills.types[i];
 
-                s += "<optgroup label=\"" + type.title[Language] + "\">";
+                s += "<optgroup label=\"" + type.title + "\">";
 
                 for (var j in Encyclopedia.skills.list)
                 {
                     var skill = Encyclopedia.skills.list[j];
                     if (skill.type == type.id)
                     {
-                        s += "<option value=\"" + type.id  + "/" + skill.id + "\">" + skill.title[Language] + "</option>";
+                        s += "<option value=\"" + type.id  + "/" + skill.id + "\">" + skill.title + "</option>";
                     }
                 }
             }
@@ -414,118 +249,118 @@ var Tile = mergeObject(StudioItem, {
             "<div class=\"studiodialog\">"
             + "<div class=\"ticol\">"
             + "<div class=\"tile\">"
-                + "<h1>" + Tile._i18n[Language].header1 + "</h1>"
+                + "<h1>" + Tile._i18n.header1 + "</h1>"
                 + "<input type=\"hidden\" name=\"tilepos\"/>"
                 + "<div class=\"field name\">"
-                    + "<label for=\"tname\">" + Tile._i18n[Language].name + "</label>"
-                    + "<input id=\"tname\" spellcheck='false' name=\"tilename\" autocomplete=\"off\" placeholder=\"" + Tile._i18n[Language].namePh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
+                    + "<label for=\"tname\">" + Tile._i18n.name + "</label>"
+                    + "<input id=\"tname\" spellcheck='false' name=\"tilename\" autocomplete=\"off\" placeholder=\"" + Tile._i18n.namePh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
                 + "</div>"
                 + "<div class=\"field color\">"
-                    + "<label for=\"tcolor\">" + Tile._i18n[Language].color + "</label>"
+                    + "<label for=\"tcolor\">" + Tile._i18n.color + "</label>"
                     + "<select id='tcolor' name='tcolor'>"
-                    +     "<option value='gray'>" + Tile._i18n[Language].colorGray + "</option>"
-                    +     "<option value='blue'>" + Tile._i18n[Language].colorBlue + "</option>"
-                    +     "<option value='red'>" + Tile._i18n[Language].colorRed + "</option>"
-                    +     "<option value='green'>" + Tile._i18n[Language].colorGreen + "</option>"
-                    +     "<option value='orange'>" + Tile._i18n[Language].colorOrange + "</option>"
-                    +     "<option value='purple'>" + Tile._i18n[Language].colorPurple + "</option>"
-                    +     "<option value='black'>" + Tile._i18n[Language].colorBlack + "</option>"
-                    +     "<option value='none'>" + Tile._i18n[Language].colorNone + "</option>"
+                    +     "<option value='gray'>" + Tile._i18n.colorGray + "</option>"
+                    +     "<option value='blue'>" + Tile._i18n.colorBlue + "</option>"
+                    +     "<option value='red'>" + Tile._i18n.colorRed + "</option>"
+                    +     "<option value='green'>" + Tile._i18n.colorGreen + "</option>"
+                    +     "<option value='orange'>" + Tile._i18n.colorOrange + "</option>"
+                    +     "<option value='purple'>" + Tile._i18n.colorPurple + "</option>"
+                    +     "<option value='black'>" + Tile._i18n.colorBlack + "</option>"
+                    +     "<option value='none'>" + Tile._i18n.colorNone + "</option>"
                     + "</select>"
                 + "</div>"
                 + "<div class=\"field movement\">"
-                    + "<label for=\"tmovement\">" + Tile._i18n[Language].movement + "</label>"
-                    + "<input type=\"number\" min=\"0\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"tmovement\" name=\"tilemovement\" autocomplete=\"off\" placeholder=\"" + Tile._i18n[Language].movementPh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
+                    + "<label for=\"tmovement\">" + Tile._i18n.movement + "</label>"
+                    + "<input type=\"number\" min=\"0\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"tmovement\" name=\"tilemovement\" autocomplete=\"off\" placeholder=\"" + Tile._i18n.movementPh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
                 + "</div>"
                 + "<div class=\"field defense\">"
-                    + "<label for=\"tdefense\">" + Tile._i18n[Language].defense + "</label>"
-                    + "<input type=\"number\" min=\"0\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"tdefense\" name=\"tiledefense\" autocomplete=\"off\" placeholder=\"" + Tile._i18n[Language].defensePh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
+                    + "<label for=\"tdefense\">" + Tile._i18n.defense + "</label>"
+                    + "<input type=\"number\" min=\"0\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"tdefense\" name=\"tiledefense\" autocomplete=\"off\" placeholder=\"" + Tile._i18n.defensePh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
                 + "</div>"
                 + "<div class=\"field attackdices\">"
-                    + "<label for=\"tdices\">" + Tile._i18n[Language].dices + "</label>"
-                    + "<input type=\"checkbox\" id=\"tattacktype\" name=\"tileattacktype\" onchange=\"Tile._preview();\" title=\"" + Tile._i18n[Language].attacktype + "\"/>"
+                    + "<label for=\"tdices\">" + Tile._i18n.dices + "</label>"
+                    + "<input type=\"checkbox\" id=\"tattacktype\" name=\"tileattacktype\" onchange=\"Tile._preview();\" title=\"" + Tile._i18n.attacktype + "\"/>"
                     + "<div>"
-                        + "<select id=\"tdices\" class=\"dice\" name=\"tiledices1\"><option value=\"none\">" + Tile._i18n[Language].diceNone + "</option><option value=\"red\">" + Tile._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + Tile._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + Tile._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + Tile._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + Tile._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + Tile._i18n[Language].diceYellowReroll + "</option></select>"
-                        + "<select id=\"tdices2\" class=\"dice\" name=\"tiledices2\"><option value=\"none\">" + Tile._i18n[Language].diceNone + "</option><option value=\"red\">" + Tile._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + Tile._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + Tile._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + Tile._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + Tile._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + Tile._i18n[Language].diceYellowReroll + "</option></select>"
-                        + "<select id=\"tdices3\" class=\"dice\" name=\"tiledices3\"><option value=\"none\">" + Tile._i18n[Language].diceNone + "</option><option value=\"red\">" + Tile._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + Tile._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + Tile._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + Tile._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + Tile._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + Tile._i18n[Language].diceYellowReroll + "</option></select>"
-                        + "<select id=\"tdices4\" class=\"dice\" name=\"tiledices4\"><option value=\"none\">" + Tile._i18n[Language].diceNone + "</option><option value=\"red\">" + Tile._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + Tile._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + Tile._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + Tile._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + Tile._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + Tile._i18n[Language].diceYellowReroll + "</option></select>"
+                        + "<select id=\"tdices\" class=\"dice\" name=\"tiledices1\"><option value=\"none\">" + Tile._i18n.diceNone + "</option><option value=\"red\">" + Tile._i18n.diceRed + "</option><option value=\"redreroll\">" + Tile._i18n.diceRedReroll + "</option><option value=\"orange\">" + Tile._i18n.diceOrange + "</option><option value=\"orangereroll\">" + Tile._i18n.diceOrangeReroll + "</option><option value=\"yellow\">" + Tile._i18n.diceYellow + "</option><option value=\"yellowreroll\">" + Tile._i18n.diceYellowReroll + "</option></select>"
+                        + "<select id=\"tdices2\" class=\"dice\" name=\"tiledices2\"><option value=\"none\">" + Tile._i18n.diceNone + "</option><option value=\"red\">" + Tile._i18n.diceRed + "</option><option value=\"redreroll\">" + Tile._i18n.diceRedReroll + "</option><option value=\"orange\">" + Tile._i18n.diceOrange + "</option><option value=\"orangereroll\">" + Tile._i18n.diceOrangeReroll + "</option><option value=\"yellow\">" + Tile._i18n.diceYellow + "</option><option value=\"yellowreroll\">" + Tile._i18n.diceYellowReroll + "</option></select>"
+                        + "<select id=\"tdices3\" class=\"dice\" name=\"tiledices3\"><option value=\"none\">" + Tile._i18n.diceNone + "</option><option value=\"red\">" + Tile._i18n.diceRed + "</option><option value=\"redreroll\">" + Tile._i18n.diceRedReroll + "</option><option value=\"orange\">" + Tile._i18n.diceOrange + "</option><option value=\"orangereroll\">" + Tile._i18n.diceOrangeReroll + "</option><option value=\"yellow\">" + Tile._i18n.diceYellow + "</option><option value=\"yellowreroll\">" + Tile._i18n.diceYellowReroll + "</option></select>"
+                        + "<select id=\"tdices4\" class=\"dice\" name=\"tiledices4\"><option value=\"none\">" + Tile._i18n.diceNone + "</option><option value=\"red\">" + Tile._i18n.diceRed + "</option><option value=\"redreroll\">" + Tile._i18n.diceRedReroll + "</option><option value=\"orange\">" + Tile._i18n.diceOrange + "</option><option value=\"orangereroll\">" + Tile._i18n.diceOrangeReroll + "</option><option value=\"yellow\">" + Tile._i18n.diceYellow + "</option><option value=\"yellowreroll\">" + Tile._i18n.diceYellowReroll + "</option></select>"
                     + "</div>"
                 + "</div>"
                 + "<div class=\"field skills\">"
-                    + "<label for=\"tskills\">" + Tile._i18n[Language].skills + "</label>"
-                    + "<select id=\"tskills\" class=\"skills\" name=\"tileskills1\" onchange=\"Tile._preview();\"><option value=\"none\">" + Tile._i18n[Language].skillsNone + "</option><option value=\"space\">" + Tile._i18n[Language].skillsSpace + "</option>" + _skills() + "</select>"
-                    + "<select id=\"tskills2\" class=\"skills\" name=\"tileskills2\" onchange=\"Tile._preview();\"><option value=\"none\">" + Tile._i18n[Language].skillsNone + "</option><option value=\"space\">" + Tile._i18n[Language].skillsSpace + "</option>" + _skills() + "</select>"
-                    + "<select id=\"tskills3\" class=\"skills\" name=\"tileskills3\" onchange=\"Tile._preview();\"><option value=\"none\">" + Tile._i18n[Language].skillsNone + "</option><option value=\"space\">" + Tile._i18n[Language].skillsSpace + "</option>" + _skills() + "</select>"
-                    + "<select id=\"tskills4\" class=\"skills\" name=\"tileskills4\" onchange=\"Tile._preview();\"><option value=\"none\">" + Tile._i18n[Language].skillsNone + "</option><option value=\"space\">" + Tile._i18n[Language].skillsSpace + "</option>" + _skills() + "</select>"
+                    + "<label for=\"tskills\">" + Tile._i18n.skills + "</label>"
+                    + "<select id=\"tskills\" class=\"skills\" name=\"tileskills1\" onchange=\"Tile._preview();\"><option value=\"none\">" + Tile._i18n.skillsNone + "</option><option value=\"space\">" + Tile._i18n.skillsSpace + "</option>" + _skills() + "</select>"
+                    + "<select id=\"tskills2\" class=\"skills\" name=\"tileskills2\" onchange=\"Tile._preview();\"><option value=\"none\">" + Tile._i18n.skillsNone + "</option><option value=\"space\">" + Tile._i18n.skillsSpace + "</option>" + _skills() + "</select>"
+                    + "<select id=\"tskills3\" class=\"skills\" name=\"tileskills3\" onchange=\"Tile._preview();\"><option value=\"none\">" + Tile._i18n.skillsNone + "</option><option value=\"space\">" + Tile._i18n.skillsSpace + "</option>" + _skills() + "</select>"
+                    + "<select id=\"tskills4\" class=\"skills\" name=\"tileskills4\" onchange=\"Tile._preview();\"><option value=\"none\">" + Tile._i18n.skillsNone + "</option><option value=\"space\">" + Tile._i18n.skillsSpace + "</option>" + _skills() + "</select>"
                 + "</div>"
                 + "<div class=\"field reinforcement\">"
-                    + "<label for=\"treinforcement\">" + Tile._i18n[Language].reinforcement + "</label>"
-                    + "<input type=\"number\" min=\"0\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"treinforcement\" name=\"tilereinforcement\" autocomplete=\"off\" placeholder=\"" + Tile._i18n[Language].reinforcementPh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
+                    + "<label for=\"treinforcement\">" + Tile._i18n.reinforcement + "</label>"
+                    + "<input type=\"number\" min=\"0\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"treinforcement\" name=\"tilereinforcement\" autocomplete=\"off\" placeholder=\"" + Tile._i18n.reinforcementPh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
                 + "</div>"
             + "</div>"
             + "</div>"
             + "<div class=\"ticol\">"
             + "<div class=\"tile\">"
-                + "<h1>" + Tile._i18n[Language].header1bis + "</h1>"
+                + "<h1>" + Tile._i18n.header1bis + "</h1>"
                 + "<div class=\"field\">"
-                    + "<label for=\"timage\">" + Tile._i18n[Language].image + "</label>"
-                    + "<input id=\"timage\" spellcheck='false' name=\"tileimage\" autocomplete=\"off\" placeholder=\"" + Tile._i18n[Language].imagePh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
+                    + "<label for=\"timage\">" + Tile._i18n.image + "</label>"
+                    + "<input id=\"timage\" spellcheck='false' name=\"tileimage\" autocomplete=\"off\" placeholder=\"" + Tile._i18n.imagePh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
                 + "</div>"
                 + "<div class=\"field imagelocation\">"
-                    + "<label for=\"timagelocation\">" + Tile._i18n[Language].imagelocation + "</label>"
-                    + "<div><input id=\"timagelocation\" name=\"tileimagelocation\" type=\"number\" autocomplete=\"off\" placeholder=\"" + Tile._i18n[Language].imagelocationPh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"\"/></div>"
-                    + "<div><input id=\"timagelocation2\" name=\"tileimagelocation2\" type=\"number\" autocomplete=\"off\" placeholder=\"" + Tile._i18n[Language].imagelocationPh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/></div>"
+                    + "<label for=\"timagelocation\">" + Tile._i18n.imagelocation + "</label>"
+                    + "<div><input id=\"timagelocation\" name=\"tileimagelocation\" type=\"number\" autocomplete=\"off\" placeholder=\"" + Tile._i18n.imagelocationPh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"\"/></div>"
+                    + "<div><input id=\"timagelocation2\" name=\"tileimagelocation2\" type=\"number\" autocomplete=\"off\" placeholder=\"" + Tile._i18n.imagelocationPh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/></div>"
                 + "</div>"
                 + "<div class=\"field imagezoom\">"
-                    + "<label for=\"timagezoom\">" + Tile._i18n[Language].imagezoom + "</label>"
-                    + "<input id=\"timagezoom\" name=\"tileimagezoom\" type=\"number\" autocomplete=\"off\" placeholder=\"" + Tile._i18n[Language].imagezoomPh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
+                    + "<label for=\"timagezoom\">" + Tile._i18n.imagezoom + "</label>"
+                    + "<input id=\"timagezoom\" name=\"tileimagezoom\" type=\"number\" autocomplete=\"off\" placeholder=\"" + Tile._i18n.imagezoomPh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
                 + "</div>"
                 + "<div class=\"field imagerotation\">"
-                    + "<label for=\"timagerotation\">" + Tile._i18n[Language].imagerotation + "</label>"
-                    + "<input id=\"timagerotation\" name=\"tileimagerotation\" type=\"number\" autocomplete=\"off\" placeholder=\"" + Tile._i18n[Language].imagerotationPh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
+                    + "<label for=\"timagerotation\">" + Tile._i18n.imagerotation + "</label>"
+                    + "<input id=\"timagerotation\" name=\"tileimagerotation\" type=\"number\" autocomplete=\"off\" placeholder=\"" + Tile._i18n.imagerotationPh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
                 + "</div>"
             + "</div>"
             + "<div class=\"tile\">"
-                + "<h1>" + Tile._i18n[Language].header1ter + "</h1>"
-                + "<input class=\"imagetoken\" type=\"checkbox\" id=\"timagetokenactive\" name=\"timagetokenactive\" onchange=\"Tile._preview();\"/><label for=\"timagetokenactive\">" + Tile._i18n[Language].imagetokenactive + "</label>"
+                + "<h1>" + Tile._i18n.header1ter + "</h1>"
+                + "<input class=\"imagetoken\" type=\"checkbox\" id=\"timagetokenactive\" name=\"timagetokenactive\" onchange=\"Tile._preview();\"/><label for=\"timagetokenactive\">" + Tile._i18n.imagetokenactive + "</label>"
                 + "<div class=\"field\">"
-                    + "<label for=\"timagetoken\">" + Tile._i18n[Language].imagetoken + "</label>"
-                    + "<input id=\"timagetoken\" spellcheck='false' name=\"tileimagetoken\" autocomplete=\"off\" placeholder=\"" + Tile._i18n[Language].imagePh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
+                    + "<label for=\"timagetoken\">" + Tile._i18n.imagetoken + "</label>"
+                    + "<input id=\"timagetoken\" spellcheck='false' name=\"tileimagetoken\" autocomplete=\"off\" placeholder=\"" + Tile._i18n.imagePh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
                 + "</div>"
                 + "<div class=\"field imagelocation\">"
-                    + "<label for=\"timagetokenlocation\">" + Tile._i18n[Language].imagelocation + "</label>"
-                    + "<div><input id=\"timagetokenlocation\" name=\"tileimagetokenlocation\" type=\"number\" autocomplete=\"off\" placeholder=\"" + Tile._i18n[Language].imagelocationPh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"\"/></div>"
-                    + "<div><input id=\"timagetokenlocation2\" name=\"tileimagetokenlocation2\" type=\"number\" autocomplete=\"off\" placeholder=\"" + Tile._i18n[Language].imagelocationPh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/></div>"
+                    + "<label for=\"timagetokenlocation\">" + Tile._i18n.imagelocation + "</label>"
+                    + "<div><input id=\"timagetokenlocation\" name=\"tileimagetokenlocation\" type=\"number\" autocomplete=\"off\" placeholder=\"" + Tile._i18n.imagelocationPh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"\"/></div>"
+                    + "<div><input id=\"timagetokenlocation2\" name=\"tileimagetokenlocation2\" type=\"number\" autocomplete=\"off\" placeholder=\"" + Tile._i18n.imagelocationPh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/></div>"
                 + "</div>"
                 + "<div class=\"field imagezoom\">"
-                    + "<label for=\"timagetokenzoom\">" + Tile._i18n[Language].imagezoom + "</label>"
-                    + "<input id=\"timagetokenzoom\" name=\"tileimagetokenzoom\" type=\"number\" autocomplete=\"off\" placeholder=\"" + Tile._i18n[Language].imagezoomPh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
+                    + "<label for=\"timagetokenzoom\">" + Tile._i18n.imagezoom + "</label>"
+                    + "<input id=\"timagetokenzoom\" name=\"tileimagetokenzoom\" type=\"number\" autocomplete=\"off\" placeholder=\"" + Tile._i18n.imagezoomPh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
                 + "</div>"
                 + "<div class=\"field imagerotation\">"
-                    + "<label for=\"timagetokenrotation\">" + Tile._i18n[Language].imagerotation + "</label>"
-                    + "<input id=\"timagetokenrotation\" name=\"tileimagetokenrotation\" type=\"number\" autocomplete=\"off\" placeholder=\"" + Tile._i18n[Language].imagerotationPh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
+                    + "<label for=\"timagetokenrotation\">" + Tile._i18n.imagerotation + "</label>"
+                    + "<input id=\"timagetokenrotation\" name=\"tileimagetokenrotation\" type=\"number\" autocomplete=\"off\" placeholder=\"" + Tile._i18n.imagerotationPh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
                 + "</div>"
-                + "<input class=\"imagetoken\" type=\"checkbox\" id=\"timagetoken2active\" name=\"timagetoken2active\" onchange=\"Tile._preview();\"/><label for=\"timagetoken2active\">" + Tile._i18n[Language].imagetokenactive + "</label>"
+                + "<input class=\"imagetoken\" type=\"checkbox\" id=\"timagetoken2active\" name=\"timagetoken2active\" onchange=\"Tile._preview();\"/><label for=\"timagetoken2active\">" + Tile._i18n.imagetokenactive + "</label>"
                 + "<div class=\"field\">"
-                    + "<label for=\"timagetoken2\">" + Tile._i18n[Language].imagetoken + "</label>"
-                    + "<input id=\"timagetoken2\" spellcheck='false' name=\"tileimagetoken2\" autocomplete=\"off\" placeholder=\"" + Tile._i18n[Language].imagePh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
+                    + "<label for=\"timagetoken2\">" + Tile._i18n.imagetoken + "</label>"
+                    + "<input id=\"timagetoken2\" spellcheck='false' name=\"tileimagetoken2\" autocomplete=\"off\" placeholder=\"" + Tile._i18n.imagePh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
                 + "</div>"
                 + "<div class=\"field imagelocation\">"
-                    + "<label for=\"timagetoken2location\">" + Tile._i18n[Language].imagelocation + "</label>"
-                    + "<div><input id=\"timagetoken2location\" name=\"tileimagetoken2location\" type=\"number\" autocomplete=\"off\" placeholder=\"" + Tile._i18n[Language].imagelocationPh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"\"/></div>"
-                    + "<div><input id=\"timagetoken2location2\" name=\"tileimagetoken2location2\" type=\"number\" autocomplete=\"off\" placeholder=\"" + Tile._i18n[Language].imagelocationPh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/></div>"
+                    + "<label for=\"timagetoken2location\">" + Tile._i18n.imagelocation + "</label>"
+                    + "<div><input id=\"timagetoken2location\" name=\"tileimagetoken2location\" type=\"number\" autocomplete=\"off\" placeholder=\"" + Tile._i18n.imagelocationPh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"\"/></div>"
+                    + "<div><input id=\"timagetoken2location2\" name=\"tileimagetoken2location2\" type=\"number\" autocomplete=\"off\" placeholder=\"" + Tile._i18n.imagelocationPh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/></div>"
                 + "</div>"
                 + "<div class=\"field imagezoom\">"
-                    + "<label for=\"timagetoken2zoom\">" + Tile._i18n[Language].imagezoom + "</label>"
-                    + "<input id=\"timagetoken2zoom\" name=\"tileimagetoken2zoom\" type=\"number\" autocomplete=\"off\" placeholder=\"" + Tile._i18n[Language].imagezoomPh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
+                    + "<label for=\"timagetoken2zoom\">" + Tile._i18n.imagezoom + "</label>"
+                    + "<input id=\"timagetoken2zoom\" name=\"tileimagetoken2zoom\" type=\"number\" autocomplete=\"off\" placeholder=\"" + Tile._i18n.imagezoomPh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
                 + "</div>"
                 + "<div class=\"field imagerotation\">"
-                    + "<label for=\"timagetoken2rotation\">" + Tile._i18n[Language].imagerotation + "</label>"
-                    + "<input id=\"timagetoken2rotation\" name=\"tileimagetoken2rotation\" type=\"number\" autocomplete=\"off\" placeholder=\"" + Tile._i18n[Language].imagerotationPh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
+                    + "<label for=\"timagetoken2rotation\">" + Tile._i18n.imagerotation + "</label>"
+                    + "<input id=\"timagetoken2rotation\" name=\"tileimagetoken2rotation\" type=\"number\" autocomplete=\"off\" placeholder=\"" + Tile._i18n.imagerotationPh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
                 + "</div>"
             + "</div>"
             + "<div class=\"tile-preview\">"
-                + "<h1>" + Tile._i18n[Language].header2 + "</h1>"
+                + "<h1>" + Tile._i18n.header2 + "</h1>"
                 + "<div class=\"preview\"></div>"
             + "</div>"
             + "</div>"
@@ -669,7 +504,7 @@ var Tile = mergeObject(StudioItem, {
     
     copyright: function()
     {
-        return "<h3>" + Tile._i18n[Language].tab + "</h3>"
-            + "<p>" + Tile._i18n[Language].copyright + "</p>"
+        return "<h3>" + Tile._i18n.tab + "</h3>"
+            + "<p>" + Tile._i18n.copyright + "</p>"
     }    
 });

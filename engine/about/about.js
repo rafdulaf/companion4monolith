@@ -1,120 +1,12 @@
 var About = {
-    _i18n: {
-        'fr': {
-            'fullscreen': "Plein écran",
-            'other': "Les autres compagnons",
-            'about': "A propos",
-            'licence': "Licence",
-            'licence_text': "Ce logiciel est développé sous licence LGPL-3.0",
-            'licence_text2': "mais toutes les ressources (images, textes, caractéristiques...) restent la propriété de leurs auteurs respectifs selon les droits applicables.",
-            'about': "A propos",
-            'copyright': "Copyright",
-            'preferences': 'Mes préferences',
-            'preferences_text': "Sélectionnez vos préférences qui seront enregistrées sur votre appareil.",
-            'preferences_general': "Généralités",
-            'custom': "Mon jeu et extensions",
-            'custom_text': "Sélectionnez vos extensions qui seront enregistrés sur votre appareil.",
-            'custom_lang': "Français",
-            'custom_langlabel': "Langue de l'interface",
-            'custom_automatic_lang': "Auto-détection",
-            'custom_reload': "La modification de votre configuration entrainera un redémarage automatique de l'application",
-            'custom_themelabel': "Thème",
-            'custom_automatic_theme': "Auto-détection",
-            'custom_theme_light': "Clair",
-            'custom_theme_dark': "Foncé",
-            'custom_allin': "La totale !", 
-            'contribute': "Contribuer !",
-            'contribute_text': "Vous pouvez contribuer à cette application de nombreuses façons :"
-                    + "<ul>"
-                        + "<li>Vous avez repéré un bug ?</li>"
-                        + "<li>Vous avez une idée d'amélioration ?</li>"
-                        + "<li>Vous souhaitez proposer un patch ?</li>"
-                    + "</ul>"
-                    + "Le projet est hébergé sur Github : vous pouvez donc y déposer vos idées voire proposer vos modifications, mais vous pouvez aussi participer via le forum The Overlord.",
-            'contribute_version': "Version actuelle : ",
-            'contribute_hof': "Temple de la renommée",
-            'contribute_hof_coders': "Codage de l'application",
-            'contribute_hof_relooking': "Logo Companion4Monolith et Aide sur la charte graphique",
-            'contribute_hof_data': "Saisie des données",
-            'contribute_hof_test': "Tests et relectures"
-        },
-        'en': {
-            'fullscreen': "Fullscreen",
-            'other': "Other companions",
-            'about': "About",
-            'licence': "Licence",
-            'licence_text': "This software is developped under the LGPL-3.0 licence",
-            'licence_text2': "but all resources (images, texts, caracteristics...) stay the property of their respective authors following the applyable rights.",
-            'copyright': "Copyright",
-            'preferences': 'My settings',
-            'preferences_text': "Select your settings that will be stored on your device.",
-            'preferences_general': "General",
-            'custom': "My game and expansions",
-            'custom_text': "Select your expansions that will be stored on your device.",
-            'custom_lang': "English",
-            'custom_langlabel': "Language",
-            'custom_automatic_lang': "Autodetection",
-            'custom_themelabel': "Theme",
-            'custom_automatic_theme': "Autodetection",
-            'custom_theme_light': "Light",
-            'custom_theme_dark': "Dark",
-            'custom_allin': "All in!", 
-            'custom_reload': "The modification of your configuration will require an automatic application reload",
-            'contribute': "Contribute!",
-            'contribute_text': "You can contribute to this application in several ways:"
-                    + "<ul>"
-                        + "<li>Did you spot a bug?</li>"
-                        + "<li>Do you have an idea to enhance this application?</li>"
-                        + "<li>Do you want to propose a patch?</li>"
-                    + "</ul>"
-                    + "The project is hosted on Github: you can thus send your ideas there or event propose your modifications, but you can also participate through The Overlord forum.",
-            'contribute_version': "Current version: ",
-            'contribute_hof': "Hall of fame",
-            'contribute_hof_coders': "Application coding",
-            'contribute_hof_relooking': "Companion4Monolith logo and Help on skin",
-            'contribute_hof_data': "Data inputs",
-            'contribute_hof_test': "Tests and rereadings"
-        },
-        'it': {
-            'fullscreen': "A tutto schermo",
-            'other': "Altri compagni",
-            'about': "Crediti",
-            'licence': "Licenze",
-            'licence_text': "Questo software è sviluppato sotto licenza LGPL-3.0.",
-            'licence_text2': "Tutto il materiale (immagini, testi, caratteristiche...) resta proprietà dei singoli autori nel rispetto dei diritti applicabili",
-            'copyright': "Copyright",
-            'preferences': 'Le mie preferenze',
-            'preferences_text': "Scegli le preferenze che saranno salvate sul tuo device.",
-            'preferences_general': "Generali",
-            'custom': "Gioco ed espansioni",
-            'custom_text': "Scegli le espansioni che saranno salvate sul tuo device.",
-            'custom_lang': "Italiano",
-            'custom_langlabel': "Lingua",
-            'custom_automatic_lang': "Rivela automaticamente",
-            'custom_themelabel': "Tema",
-            'custom_automatic_theme': "Rivela automaticamente",
-            'custom_theme_light': "Chiaro",
-            'custom_theme_dark': "Scuro",
-            'custom_allin': "TUTTO!", 
-            'custom_reload': "Le modifiche della tua configurazione richiederanno un riavvio automatico dell'applicazione",
-            'contribute': "Collabora!",
-            'contribute_text': "Puoi collaborare a questa applicazione in molti modi:"
-                    + "<ul>"
-                        + "<li>Hai notato un errore?</li>"
-                        + "<li>Hai un'idea per una miglioria?</li>"
-                        + "<li>Vuoi proporre una modifica?</li>"
-                    + "</ul>"
-                    + "Il progetto è ospitato su Github: puoi pertanto mandare lì le tue richieste o le tue proposte, o contribuire sul forum The Overlord.",
-            'contribute_version': "Versione attuale: ",
-            'contribute_hof': "Albo d'oro",
-            'contribute_hof_coders': "Codice Applicazione",
-            'contribute_hof_relooking': "Aiuto sullo stile grafico",
-            'contribute_hof_data': "Aquisizione dei dati",
-            'contribute_hof_test': "Test e riscritture"
-        }
-    },
     _copyright: "",
     _customPrefs: [],
+    
+    _languages: {
+        'fr': "Français",
+        'en': "English",
+        'it': "Italiano"
+    },
 
     isInStandaloneMode: window.matchMedia('(display-mode: standalone)').matches || (window.navigator.standalone) || document.referrer.includes('android-app://'),
     
@@ -133,17 +25,17 @@ var About = {
     
     init: function()
     {
-        $(document.head).append("<title>" + About._i18n[Language].title + "</title>");
+        $(document.head).append("<title>" + About._i18n.title + "</title>");
 
         if (!About.isInStandaloneMode) {
-            Menu.addMenu(About._i18n[Language].fullscreen, "about-fullscreen", "About._toggleFullscreen()");
+            Menu.addMenu(About._i18n.fullscreen, "about-fullscreen", "About._toggleFullscreen()");
         }
 
-        Menu.addMenu(About._i18n[Language].custom, "about-custom", "About._custom()", !About.isInStandaloneMode);
-        Menu.addMenu(About._i18n[Language].preferences, "about-preferences", "About._preferences()");
+        Menu.addMenu(About._i18n.custom, "about-custom", "About._custom()", !About.isInStandaloneMode);
+        Menu.addMenu(About._i18n.preferences, "about-preferences", "About._preferences()");
 
-        Menu.addMenu(About._i18n[Language].other, "about-other", "About._other()", true);
-        Menu.addMenu(About._i18n[Language].about, "about-about", "About._about()", false);
+        Menu.addMenu(About._i18n.other, "about-other", "About._other()", true);
+        Menu.addMenu(About._i18n.about, "about-about", "About._about()", false);
         
     },
     
@@ -162,47 +54,47 @@ var About = {
     {
         $("nav.menu input")[0].checked = false;
         
-        Nav.dialog(About._i18n[Language].about,
+        Nav.dialog(About._i18n.about,
             "<div id='about' class='about'>"
                     + "<div class='about-zone-about'>"
-                            + "<h1 style='text-align: center '>" + About._i18n[Language].title + " v" + Version + "</h1>"
+                            + "<h1 style='text-align: center '>" + About._i18n.title + " v" + Version + "</h1>"
                             + "<img src='about/logo-" + Theme + ".png?version=" + Version + "'/>"
                             + "<img src='about/companion4monolith.png?version=" + Version + "' style='margin-right: 0'/>"
-                            + "<a class='fullscreen' onclick='About._toggleFullscreen(); return false' href='javascript:void(0);' title=\"" + About._i18n[Language].fullscreen + "\"></a>"
-                            + "<span>" + About._i18n[Language].text + "</span>"
+                            + "<a class='fullscreen' onclick='About._toggleFullscreen(); return false' href='javascript:void(0);' title=\"" + About._i18n.fullscreen + "\"></a>"
+                            + "<span>" + About._i18n.text + "</span>"
                     + "</div>"
                     + "<div>"
                        + "<ul>"
-                       + "<li>" + About._i18n[Language].licence + "</li>"
-                       + "<li>" + About._i18n[Language].contribute_hof + "</li>"
-                       + "<li>" + About._i18n[Language].contribute + "</li>"
-                       + "<li>" + About._i18n[Language].copyright + "</li>"
+                       + "<li>" + About._i18n.licence + "</li>"
+                       + "<li>" + About._i18n.contribute_hof + "</li>"
+                       + "<li>" + About._i18n.contribute + "</li>"
+                       + "<li>" + About._i18n.copyright + "</li>"
                        + "</ul>"
                     + "</div>"
                     + "<div>"
-                        + "<h1>" + About._i18n[Language].licence + "</h1>"
-                        + "<div><a href='https://github.com/rafdulaf/companion4conan/blob/master/LICENSE'>" + About._i18n[Language]['licence_text'] + "</a> " + About._i18n[Language]['licence_text2'] + "</div>"
+                        + "<h1>" + About._i18n.licence + "</h1>"
+                        + "<div><a href='https://github.com/rafdulaf/companion4conan/blob/master/LICENSE'>" + About._i18n['licence_text'] + "</a> " + About._i18n['licence_text2'] + "</div>"
                     + "</div>"
                     + "<div>"
-                        + "<h1>" + About._i18n[Language].contribute_hof + "</h1>"
-                        + "<h2>" + About._i18n[Language].contribute_hof_coders + "</h2>"
+                        + "<h1>" + About._i18n.contribute_hof + "</h1>"
+                        + "<h2>" + About._i18n.contribute_hof_coders + "</h2>"
                         + About._haf().coders
-                        + "<h2>" + About._i18n[Language].contribute_hof_relooking + "</h2>"
+                        + "<h2>" + About._i18n.contribute_hof_relooking + "</h2>"
                         + About._haf().relooking
-                        + "<h2>" + About._i18n[Language].contribute_hof_data + "</h2>"
+                        + "<h2>" + About._i18n.contribute_hof_data + "</h2>"
                         + About._haf().data
-                        + "<h2>" + About._i18n[Language].contribute_hof_test + "</h2>"
+                        + "<h2>" + About._i18n.contribute_hof_test + "</h2>"
                         + About._haf().tests
                     + "</div>"
                     + "<div class=\"contribute\">"
-                        + "<h1>" + About._i18n[Language].contribute + "</h1>"
-                        + "<div>" + About._i18n[Language].contribute_text + "</div>"
+                        + "<h1>" + About._i18n.contribute + "</h1>"
+                        + "<div>" + About._i18n.contribute_text + "</div>"
                         + "<a target=\"_blank\" href=\"https://github.com/rafdulaf/companion4monolith\" class=\"github\">Github</a>"
-                        + "<a target=\"_blank\" href=\"" + About._i18n[Language].tolink + "\" class=\"to\">The Overlord</a>"
-                        + "<div>" + About._i18n[Language].contribute_version + Version + ".</div>"
+                        + "<a target=\"_blank\" href=\"" + About._i18n.tolink + "\" class=\"to\">The Overlord</a>"
+                        + "<div>" + About._i18n.contribute_version + Version + ".</div>"
                     + "</div>"
                     + "<div class='about-copyright'><div>"
-                        + "<div class='about-copyright-text'><h1>" + About._i18n[Language].copyright + "</h1>" + About._i18n[Language]['copyright-text'] + About._copyright + "</div>"
+                        + "<div class='about-copyright-text'><h1>" + About._i18n.copyright + "</h1>" + About._i18n['copyright-text'] + About._copyright + "</div>"
                     + "</div></div>"
                 + "</div>"
         );
@@ -244,22 +136,22 @@ var About = {
         $("nav.menu input")[0].checked = false;
 
         var s =             "<div class=\"custom\">"
-            +       "<div>" + About._i18n[Language].preferences_text + "</div>"
+            +       "<div>" + About._i18n.preferences_text + "</div>"
 
             +       "<div class=\"custom-wrap\">"
-            +       "<fieldset><legend>" + About._i18n[Language].preferences_general + "</legend>"
-            +           "<label for=\"custom-lang\">" + About._i18n[Language].custom_langlabel + "</label>"
+            +       "<fieldset><legend>" + About._i18n.preferences_general + "</legend>"
+            +           "<label for=\"custom-lang\">" + About._i18n.custom_langlabel + "</label>"
             +           "<select id=\"custom-lang\" name=\"custom-lang\">"
-            +               "<option value=\"\">" + About._i18n[Language].custom_automatic_lang + "</option>";
+            +               "<option value=\"\">" + About._i18n.custom_automatic_lang + "</option>";
         
-        					Languages.forEach(code => s += "<option value=\"" + code + "\">" + About._i18n[code].custom_lang + "</option>");
+        					Languages.forEach(code => s += "<option value=\"" + code + "\">" + About._languages[code] + "</option>");
             
         s   +=          "</select>"
-            +           "<label for=\"custom-theme\">" + About._i18n[Language].custom_themelabel + "</label>"
+            +           "<label for=\"custom-theme\">" + About._i18n.custom_themelabel + "</label>"
             +           "<select id=\"custom-theme\" name=\"custom-theme\">"
-            +               "<option value=\"\">" + About._i18n[Language].custom_automatic_theme + "</option>"
-            +               "<option value=\"light\">" + About._i18n[Language].custom_theme_light + "</option>"
-            +               "<option value=\"dark\">" + About._i18n[Language].custom_theme_dark + "</option>"
+            +               "<option value=\"\">" + About._i18n.custom_automatic_theme + "</option>"
+            +               "<option value=\"light\">" + About._i18n.custom_theme_light + "</option>"
+            +               "<option value=\"dark\">" + About._i18n.custom_theme_dark + "</option>"
             +           "</select>"
             +       "</fieldset>"
             +       "</div>";
@@ -288,7 +180,7 @@ var About = {
         
         s += "</div>";
         
-        Nav.dialog(About._i18n[Language].preferences,
+        Nav.dialog(About._i18n.preferences,
             s,
 
             function()
@@ -352,7 +244,7 @@ var About = {
         $(".custom input, .custom select").on('change', function() {
             if (!display)
             {
-                About.warnToast(About._i18n[Language].custom_reload);
+                About.warnToast(About._i18n.custom_reload);
             }
             display = true;
         })
@@ -396,14 +288,14 @@ var About = {
         {
             var expansionType = Encyclopedia.expansions.types[i];
 
-            var localS = "<fieldset><legend>" + expansionType.text[Language] + "</legend>";
+            var localS = "<fieldset><legend>" + expansionType.text + "</legend>";
             var nbChoice = 0;
 
             var list = Encyclopedia.expansions.list;
             if (expansionType.sort)
             {
                 list = Encyclopedia.expansions.list.slice().sort(function (a, b) {
-                    return a.title[Language].toLowerCase().localeCompare(b.title[Language].toLowerCase());
+                    return a.title.toLowerCase().localeCompare(b.title.toLowerCase());
                 });
             }
             
@@ -415,7 +307,7 @@ var About = {
                     localS += "<div>"
                        +    "<input type=\"checkbox\" name=\"" + expansion.id + "\"\ id=\"" + expansion.id + "\"" + (expansion.mandatory ? " checked='checked' disabled='disabled'": "") + ">"
                        +    "<label for=\"" + expansion.id + "\">"
-                       +        expansion.title[Language]
+                       +        expansion.title
                        +    "</label>"
                        + "</div>";
                 }
@@ -433,9 +325,9 @@ var About = {
             }
         }
 
-        Nav.dialog(About._i18n[Language].custom,
+        Nav.dialog(About._i18n.custom,
             "<div class=\"custom\">"
-            +       "<div>" + About._i18n[Language].custom_text + "</div>"
+            +       "<div>" + About._i18n.custom_text + "</div>"
             +       "<div class=\"custom-wrap\">"
             +            "<div class=\"col col-left\">"
             +                leftS
@@ -484,7 +376,7 @@ var About = {
             },
             
             [{
-                label: About._i18n[Language].custom_allin,
+                label: About._i18n.custom_allin,
                 icon: "about-allin",
                 fn: "About._allin();"
             }]
@@ -502,7 +394,7 @@ var About = {
         $(".custom input").on('change', function() {
             if (!display)
             {
-                About.warnToast(About._i18n[Language].custom_reload);
+                About.warnToast(About._i18n.custom_reload);
             }
             display = true;
         })

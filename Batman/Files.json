@@ -8,12 +8,15 @@
     "scripts": [
         "general/default.js",
         "about/about.js",        
+        "about/lang/about.LANGUAGE.js",        
         "maps/maps.js",
+        "maps/lang/maps.LANGUAGE.js",
         
         "encyclopedia/encyclopedia.js",
         
         "studio/studio.js",
-        "studio/hero_sheet/hero_sheet.js"
+        "studio/hero_sheet/hero_sheet.js",
+        "studio/hero_sheet/lang/hero_sheet.LANGUAGE.js"
         
     ]
 }

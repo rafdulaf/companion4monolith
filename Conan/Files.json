@@ -19,22 +19,35 @@
     "scripts": [
         "general/default.js",
         "about/about.js",
+        "about/lang/about.LANGUAGE.js",
         "maps/maps.js",
 
         "rules/rules.js",
+        "rules/lang/rules.LANGUAGE.js",
         
         "encyclopedia/encyclopedia.js",
+        "encyclopedia/lang/encyclopedia.LANGUAGE.js",
         "encyclopedia/equipments/equipments.js",
+        "encyclopedia/equipments/lang/equipments.LANGUAGE.js",
         "encyclopedia/spells/spells.js",
+        "encyclopedia/spells/lang/spells.LANGUAGE.js",
         "encyclopedia/heroes/heroes.js",
+        "encyclopedia/heroes/lang/heroes.LANGUAGE.js",
         "encyclopedia/tiles/tiles.js",
+        "encyclopedia/tiles/lang/tiles.LANGUAGE.js",
         "encyclopedia/tokens/tokens.js",
+        "encyclopedia/tokens/lang/tokens.LANGUAGE.js",
         "encyclopedia/models/models.js",
+        "encyclopedia/models/lang/models.LANGUAGE.js",
 
         "studio/studio.js",
         "studio/card_equipment/card_equipment.js",
+        "studio/card_equipment/lang/card_equipment.LANGUAGE.js",
         "studio/card_spell/card_spell.js",
+        "studio/card_spell/lang/card_spell.LANGUAGE.js",
         "studio/hero_sheet/hero_sheet.js",
-        "studio/tile/tile.js"
+        "studio/hero_sheet/lang/hero_sheet.LANGUAGE.js",
+        "studio/tile/tile.js",
+        "studio/tile/lang/tile.LANGUAGE.js"
     ]
 }

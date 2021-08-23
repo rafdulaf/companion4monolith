@@ -1,0 +1,710 @@
+{
+    "list": {
+        "event": {
+            "name": ""
+        },
+        "captain": {
+            "name": "Capitano",
+            "quote": {
+                "text": "La gente dentro la palizzata osservò impaurita il temuto emblema. Poi tutti alzarono gli occhi verso la torre, dove il signore del forte stava immobile e corrucciato, il mantello svolazzante nel vento. (...) La massiccia porta era stata sprangata e il capitano, riconoscibile dall'armatura scintillante, stava facendo schierare i suoi armigeri, alcuni sui bastioni, altri accanto alle feritoie più in basso e faceva ammassare il grosso delle forze lungo la palizzata occidentale, quella su cui si apriva la porta.",
+                "origin": "Il Tesoro di Tranicos"
+            }
+        },
+        "skuthus": {
+            "name": "Skuthus",
+            "quote": {
+                "text": "La mia conoscenza delle Arti Magiche è superiore a quella di tutti gli altri mortali. (...) Come facevano i sacerdoti di Set a sapere che il Cuore di Ahriman era sceso fino al Sud? Eppure la cosa non era più fantastica della Magia Nera che riusciva a uccidere un uomo armato con il semplice tocco di una mano aperta e vuota. (...)Per compiere un prodigio non basta semplicemente agitare la bacchetta magica...",
+                "origin": "Conan il Conquistatore"
+            }
+        },
+        "thalis": {
+            "name": "Thalis"
+        },
+        "zogar-sag": {
+            "name": "Zogar Sag",
+            "quote": {
+                "text": "Balthus scorse un uomo magro, di media statura, quasi nascosto dalle piume di struzzo fissate a una bardatura di cuoio e di rame. Tra le piume spiccava una faccia orrenda e malevola. Quelle piume destarono in Balthus un senso di stupore. Svolazzavano con un fruscio maligno mentre lo sciamano spiccava balzi e piroettava.\nA salti e passi di danza, entrò nel cerchio, turbinando davanti ai prigionieri ammutoliti. Un altro uomo sarebbe apparso ridicolo: un selvaggio che danzava assurdamente in un vortice di piume. Ma il volto feroce che spuntava nella massa ondeggiante conferiva alla scena un significato mostruoso. Un uomo con quella faccia non poteva apparire ridicolo: sembrava quel demonio che era in realtà.\nAll'improvviso si arrestò, in un'immobilità statuaria; le piume ondeggiarono ancora una volta e si afflosciarono intorno a lui. I guerrieri smisero di ululare. Zogar Sag rimase eretto, immoto, e parve diventare più alto... come se crescesse e si espandesse. Balthus ebbe l'illusione che il pitto torreggiasse sopra di lui, squadrandolo sprezzante da una grande altezza, anche se lui sapeva di essere più alto.",
+                "origin": "Oltre il fiume Nero"
+            }
+        },
+        "zaporavo": {
+            "name": "Zaporavo",
+            "quote": {
+                "text": "Era un uomo alto, almeno quanto Conan, anche se meno massiccio. Il morione d'acciaio incorniciava il suo volto scuro, melanconico, da uccello da preda: per il suo volto, i suoi uomini lo chiamavano l'Avvoltoio. Indossava vesti e armatura riccamente adorni, secondo la moda della nobiltà zingarana. Non aveva mai allontanato la mano dall'elsa della spada.\nNon c'era molta benevolenza nello sguardo che posava su Conan. Zaporavo, giocherellava con l'elsa della spada e osservava accigliato l'ospite non invitato. Conan non lasciò trasparire traccia di quelli che potessero essere i suoi pensieri.\n“Lavorerai per la pagnotta” — ringhiò. — “Via dalla poppa! E ricordati: qui l'unica legge sono io.”",
+                "origin": "Lo stagno dei Neri"
+            }
+        },
+        "dark-demon": {
+            "name": "Demone Nero",
+            "quote": {
+                "text": "Ma c'era qualcos'altro nella sala. Conan la vide attraverso la cortina di fumo: una mostruosa forma nera, delineata contro il bagliore infernale. I contorni erano vagamente umani, sebbene l'ombra riflessa sul muro infuocato non lo fosse affatto. (...) Il mostro nero si innalzò, gigantesco, illuminato dalle fiamme, le enormi braccia spalancate. Un volto indistinto guardò biecamente attraverso il fumo; un volto disumano, demoniaco, orrendo. Conan intravide le corna ravvicinate, la bocca spalancata, gli orecchi appuntiti. L'essere si mosse pesantemente verso il cimmero attraverso il fumo, risvegliando un antico ricordo e la disperazione.",
+                "origin": "Il Tesoro di Tranicos"
+            }
+        },
+        "giant-snake": {
+            "name": "Serpente Gigante",
+            "quote": {
+                "text": "Era un serpente gigantesco, scolpito in una pietra simile alla giada. Ogni scaglia spiccava nitida, e i colori iridescenti erano riprodotti con estrema fedeltà. La grande testa a forma di cuneo era seminascosta tra le spire, e non erano visibili né gli occhi né le fauci. (...)Conan ammirò il tronco scaglioso, grosso come la sua coscia ed evidentemente lunghissimo; poi, incuriosito, tese la mano per toccarlo. In quell'istante, per poco il suo cuore non si arrestò. Un brivido diaccio gli gelò il sangue nelle vene e gli fece rizzare i capelli. Sotto la sua mano non sentiva la superficie levigata e fragile del vetro o del metallo o della pietra, ma la massa fibrosa e cedevole di una cosa viva. ",
+                "origin": "Il Diavolo di Ferro"
+            }
+        },
+        "giant-snake-2": {
+            "name": "Serpente Gigante",
+            "quote": {
+                "text": "Era un serpente gigantesco, scolpito in una pietra simile alla giada. Ogni scaglia spiccava nitida, e i colori iridescenti erano riprodotti con estrema fedeltà. La grande testa a forma di cuneo era seminascosta tra le spire, e non erano visibili né gli occhi né le fauci. (...)Conan ammirò il tronco scaglioso, grosso come la sua coscia ed evidentemente lunghissimo; poi, incuriosito, tese la mano per toccarlo. In quell'istante, per poco il suo cuore non si arrestò. Un brivido diaccio gli gelò il sangue nelle vene e gli fece rizzare i capelli. Sotto la sua mano non sentiva la superficie levigata e fragile del vetro o del metallo o della pietra, ma la massa fibrosa e cedevole di una cosa viva. ",
+                "origin": "Il Diavolo di Ferro"
+            }
+        },
+        "khosatral-khel": {
+            "name": "Khosatral Khel",
+            "quote": {
+                "text": "Vide una testa e due spalle gigantesche spiccare nella semioscurità. Non ci fu un suono di passi, ma la grande forma scura divenne più distinta finché lui riconobbe una figura maschile. Portava sandali, un gonnellino, e un'ampia cintura di pelle di zigrino. La chioma era trattenuta da un cerchio d'oro. Conan fissò l'ampiezza delle mostruose spalle, il petto che si gonfiava nel respiro, i fasci di muscoli sul torace e sugli arti. La faccia non tradiva debolezze, non prometteva misericordia. Gli occhi erano sfere di fuoco buio. E Conan comprese che quell'uomo era Khosatral Khel, l'antico venuto dall'Abisso, il dio di Dagonia.",
+                "origin": "Il Diavolo di Ferro"
+            }
+        },
+        "outer-dark-demon": {
+            "name": "Demone delle Tenebre",
+            "quote": {
+                "text": "Dapprima, molto in alto, ella vide un punto nero fra le stelle, che crebbe espandendosi; le si avvicinò; si tramutò in un pipistrello; e continuò a crescere, anche se la sua forma non subì ulteriori mutamenti. Si librò su di lei in mezzo alle stelle, scese come una piuma verso la terra, con le grandi ali spalancate su di lei; ed ella rimase nella sua ombra.\nOra l'essere incombeva direttamente su di lei, e l'anima della ragazza si strinse e divenne gelida e piccola a quella vista. Le ali assomigliavano a quelle di un pipistrello; ma il corpo e la faccia indistinta che la fissava non assomigliavano ad alcuna creatura del mare, della terra o dell'aria; ella comprese di osservare l'orrore insuperabile, la nera cosmica vergogna, nata negli abissi notturni che stanno al di là dei più pazzi sogni di un folle.",
+                "origin": "La Valle delle Donne Perdute"
+            }
+        },
+        "thak": {
+            "name": "Thak",
+            "quote": {
+                "text": "“È Thak” — rispose il prete, accarezzandosi la tempia. — “Qualcuno lo definirebbe una scimmia, ma è differente da una vera scimmia quasi quanto lo è da un uomo. Il suo popolo abita nell'estremo oriente, nelle montagne che limitano le frontiere orientali della Zamora.”\nRabbrividì alla vista di quelle grandi mani nere ricoperte da una peluria fitta come una pelliccia. Il corpo era massiccio, ampio e incurvato. L'innaturale imponenza delle spalle aveva strappato la toga scarlatta e Murilo notò su di esse la stessa fioritura di folta peluria nera. La faccia che spuntava dal rosso cappuccio era completamente bestiale e tuttavia Murilo si rese conto che Nabonidus era nel vero affermando che Thak non era del tutto un animale. C'era qualcosa in quei tenebrosi occhi rossi, qualcosa nel rozzo atteggiamento della creatura, qualcosa nell'intero aspetto di quell'essere, che lo collocava fuori del regno animale. Quel corpo mostruoso ospitava un cervello e un'anima che stavano germogliando terribilmente in qualcosa di vagamente umano. Murilo rimase stupefatto nel ravvisare una debole e odiosa affinità tra la propria specie e quella mostruosità accovacciata e fu nauseato dalla fugace percezione degli abissi di urlante bestialità attraverso i quali l'umanità era faticosamente avanzata.",
+                "origin": "Gli intrusi a palazzo"
+            }
+        },
+        "belits-guards": {
+            "name": "Guardie di Bêlit",
+            "quote": {
+                "text": "Era appena l'alba quando la vedetta diede l'allarme. Una lunga sagoma funesta scivolava verso tribordo attorno al lungo promontorio di un'isola: una galea snella e affilata, con un ponte sopraelevato che correva dal dritto di prua a poppa. Quaranta remi da ciascun lato la spingevano velocemente sull'acqua, e le murate basse formicolavano di negri nudi che cantavano e battevano le lance sugli scudi ovali. In cima all'albero maestro sventolava un lungo pennone cremisi.",
+                "origin": "La Regina della Costa Nera"
+            }
+        },
+        "princess": {
+            "name": "Principessa",
+            "quote": {
+                "text": "Intanto, il governo del regno era nelle bianche mani della giovane principessa Yasmela, sorella del re.\nLa sua bellezza era cantata dai menestrelli in tutto il mondo occidentale, ed aveva l'orgoglio d'una dinastia sovrana. Ma quella notte, l'orgoglio le era caduto dalle spalle come un mantello. Nella sua camera dal soffitto a volta di lapislazzuli, dal pavimento marmoreo coperto di rare pellicce e dalle pareti ornate di fregi d'oro, dieci fanciulle di nobile nascita, cariche di cerchi incrostati di gemme che cingevano loro le braccia e le caviglie sottili, dormivano su divani di velluto intorno al letto regale, con la pedana dorata e il baldacchino di seta. Ma la principessa Yasmela non oziava nel letto serico. Giaceva nuda, distesa sul ventre, sul pavimento di marmo, come la più umile supplice, con i capelli scuri sparsi sulle spalle candide, le dita esili intrecciate. Fremeva d'un orrore che le gelava il sangue nelle vene e le dilatava gli occhi bellissimi, aggricciandole il cuoio capelluto e la morbida epidermide della schiena.",
+                "origin": "Colosso Nero"
+            }
+        },
+        "bossonian-archers": {
+            "name": "Arcieri Bossoniani",
+            "quote": {
+                "text": "I bossoniani sono di altezza e colorito medio, gli occhi sono neri o grigi, e i loro crani sono mesocefalici.\nBande di Bossoniani furono scorte muoversi lungo i confini delle Marche: uomini massicci, decisi, in brigantina ed elmetto d'acciaio, con in pugno l'arco da guerra.",
+                "origin": "L'Era Hyboriana - Conan il Conquistatore"
+            }
+        },
+        "bossonian-guards": {
+            "name": "Guardie Bossoniane",
+            "quote": {
+                "text": "Nessuna fanteria poteva competere con i selvaggi Gunderiani, la cui patria, la provincia più settentrionale di Aquilonia, non era che a un giorno di marcia attraverso le Marche bossoniane ai confini della Cimmeria, e che, nati e allevati per la battaglia, avevano il sangue più puro di tutti i popoli Hyboriani.\nGli Aquiloniani (...) in guerra facevano affidamento soprattutto sulla loro cavalleria, cavalieri pesantemente armati. I loro picchieri e i loro lancieri erano principalmente Gunderiani, mentre i loro arcieri venivano dalle Marche bossoniane.",
+                "origin": "La Cittadella Scarlatta - Note sui Popoli dell'Era Hyboriana"
+            }
+        },
+        "hyenas": {
+            "name": "Iene",
+            "quote": {
+                "text": "Qualcosa si mosse nell'oscurità sotto gli alberi. Stagliate d'improvviso sullo sfondo della luna che s'innalzava, Conan vide una testa scura e un paio di spalle dal profilo animalesco. E poi dall'ombra si fecero avanti silenziosamente, rapidamente, alcune forme scure che correvano basse: venti enormi iene maculate. Le loro zanne schiumanti lampeggiavano al chiarore lunare, i loro occhi brillavano come mai avevano brillato gli occhi di un animale vero.",
+                "origin": "La Regina della Costa Nera"
+            }
+        },
+        "hyenas-enraged": {
+            "name": "Iene Feroci",
+            "quote": {
+                "text": "Qualcosa si mosse nell'oscurità sotto gli alberi. Stagliate d'improvviso sullo sfondo della luna che s'innalzava, Conan vide una testa scura e un paio di spalle dal profilo animalesco. E poi dall'ombra si fecero avanti silenziosamente, rapidamente, alcune forme scure che correvano basse: venti enormi iene maculate. Le loro zanne schiumanti lampeggiavano al chiarore lunare, i loro occhi brillavano come mai avevano brillato gli occhi di un animale vero.",
+                "origin": "La Regina della Costa Nera"
+            }
+        },
+        "pict-hunters": {
+            "name": "Cacciatori Pitti",
+            "quote": {
+                "text": "Anche i pitti appartengono alla razza bianca, nel senso che non sono né neri né bruni né gialli, ma hanno occhi e capelli neri e sono scuri di pelle.\nNon potevo fraintendere il suono. Solo un tamburo al mondo può emettere quel profondo, minaccioso, lugubre brontolio: un tamburo di guerra pitto, percosso dalle mani di quei selvaggi dipinti che infestano la foresta oltre il confine della Marca Occidentale.",
+                "origin": "Lupi oltre la Frontiera"
+            }
+        },
+        "pirates": {
+            "name": "Pirati",
+            "quote": {
+                "text": "— Pirati! — mormorò Conan, con un sorriso torvo sulle labbra sottili. (...) Erano una settantina: un'orda selvaggia di uomini provenienti da molte nazioni, kothiani, zamoriani, brythuni, corinzi, shemiti. I volti rispecchiavano indoli feroci. Molti mostravano le cicatrici delle fruste e dei marchi d'infamia. C'erano orecchie mozze, nasi squarciati, occhiaie cieche, polsi troncati… segni lasciati dal boia, e non solo dalle battaglie. Erano quasi tutti seminudi, ma gli indumenti che portavano erano splendidi: giubbe gallonate d'oro, cinture seriche, brache di raso, rovinate e sporche di catrame e di sangue, gareggiavano in lusso con le armi intarsiate d'argento. Le gemme brillavano sui nasi e alle orecchie, e sulle impugnature delle daghe.",
+                "origin": "Ombre al Chiaro di Luna"
+            }
+        },
+        "thog-1": {
+            "name": "Thog",
+            "quote": {
+                "text": "E così Conan, guardando da sotto la chioma scarmigliata, vide la figura bianca e nuda di Natala che si agitava nella stretta oscena di una nera forma d'incubo che poteva esser stata generata soltanto negli abissi sperduti dell'inferno. Persino il cimmero sarebbe impietrito di paura se avesse visto solo quella figura spaventosa. (...) L'essere sembrava mordere, azzannare, stritolare, randellare, tutto in una volta. Sentiva unghie e artigli lacerargli la carne; flaccide funi, resistenti come acciaio, gli circondavano le membra e il corpo; e peggio di tutto, qualcosa simile a una frusta di scorpioni lo sferzava in continuazione sulle spalle, dal petto alla schiena, strappandogli la pelle e riempiendogli le vene di un veleno che era fuoco liquido.",
+                "origin": "L'Ombra che Scivola"
+            }
+        },
+        "thog-2": {
+            "name": "Thog",
+            "quote": {
+                "text": "E così Conan, guardando da sotto la chioma scarmigliata, vide la figura bianca e nuda di Natala che si agitava nella stretta oscena di una nera forma d'incubo che poteva esser stata generata soltanto negli abissi sperduti dell'inferno. Persino il cimmero sarebbe impietrito di paura se avesse visto solo quella figura spaventosa. (...) L'essere sembrava mordere, azzannare, stritolare, randellare, tutto in una volta. Sentiva unghie e artigli lacerargli la carne; flaccide funi, resistenti come acciaio, gli circondavano le membra e il corpo; e peggio di tutto, qualcosa simile a una frusta di scorpioni lo sferzava in continuazione sulle spalle, dal petto alla schiena, strappandogli la pelle e riempiendogli le vene di un veleno che era fuoco liquido.",
+                "origin": "L'ombra che Scivola"
+            }
+        },
+        "conans-lion": {
+            "name": "Leone di Conan"
+        },
+        "zelatas-wolf": {
+            "name": "Lupo di Zelata",
+            "quote": {
+                "text": "Il nemediano rise trionfalmente e balzò in avanti, sollevando a due mani la spada sulla spalla sinistra e allargando le gambe per calare il colpo... ma in quel momento, saltando al di sopra della forma stesa a terra del cimmero, qualcosa di grosso e peloso si avventò come un fulmine contro il soldato e lo colpì in pieno petto: l'urlo di trionfo si trasformò istantaneamente in un lamento di agonia. Conan, scattando in piedi, vide che l'uomo era morto, con la gola squarciata; un grosso lupo grigio, fermo accanto a lui, fiutava la pozza di sangue che si era formata sull'erba.",
+                "origin": "Conan il Conquistatore"
+            }
+        },
+        "mummies": {
+            "name": "Mummie",
+            "quote": {
+                "text": "Del gruppo, dieci erano sacerdoti, e anche se si erano tolti le maschere, Conan era sicuro che si trattasse dei sacerdoti che lo avevano accompagnato alla piramide. Erano tutti fermi davanti a un uomo alto e dal volto aquilino; a fianco dell'uomo c'era un altare nero su cui era deposta una mummia avvolta in fasciature quasi disfatte.",
+                "origin": "Conan il Conquistatore"
+            }
+        },
+        "skeletons": {
+            "name": "Scheletri",
+            "quote": {
+                "text": "In un angolo della cella, vicino alla porta da cui erano entrati, un mucchio di catene arrugginite pendeva da un basso anello di ferro incastrato nella pietra, e tra le catene si scorgevano le forme di uno scheletro. Conan lo osservò con una certa curiosità, notando lo stato di quelle ossa spoglie, alcune delle quali erano spezzate. Il teschio, caduto dalle vertebre, appariva schiacciato da un colpo vibrato con forza selvaggia, terribile.",
+                "origin": "Conan il Conquistatore"
+            }
+        },
+        "ageera": {
+            "name": "Ageera",
+            "quote": {
+                "text": "«Poi vai alla città esterna e trova il vecchio Ageera, lo stregone. Non dirgli apertamente che Tananda è stata la causa dell'accaduto, ma lascialo capire». (...) Poi, improvvisamente, dalla casa degli spiriti uscì una snella figura negra. Era il vecchio Ageera, lo stregone, vestito solo di un pezzo di stoffa attorno alle reni. Indicando Tananda con un dito, gridò: — Eccola lì a cavallo, colei le cui mani grondano sangue! Colei che ha assassinato Amboola!",
+                "origin": "Il Muso nel Buio"
+            }
+        },
+        "akivasha": {
+            "name": "Akivasha",
+            "quote": {
+                "text": "La sua pelle d'avorio mostrava che era una stygiana di famiglia nobile e antica, e come tutte le donne della sua casta era alta e sottile e aveva una figura sensuale; sui suoi capelli neri, raccolti in alto sul capo, splendeva un rubino fiammeggiante. Ad eccezione di un paio di sandali di velluto e di un'ampia cintura incastonata di gemme alla vita, la ragazza era completamente nuda.",
+                "origin": "Conan il Conquistatore"
+            }
+        },
+        "constantius": {
+            "name": "Constantius",
+            "quote": {
+                "text": "Constantius, che gli uomini chiamavano Falco, era alto, con le spalle ampie e i fianchi snelli, agile e forte come l'acciaio. Aveva una sua bellezza grifagna e spietata. Il volto era brunito dal sole, e i capelli, ributtati all'indietro dalla fronte stretta ed alta, erano neri come l'ala d'un corvo. Gli occhi scuri erano penetranti e vigili, e la durezza delle labbra sottili era accentuata dai radi baffi neri. Gli stivali erano di cuoio kordavano, le calze e il farsetto di semplice seta scura, sciupati dall'usura degli accampamenti e dalla ruggine dell'armatura.",
+                "origin": "Nascerà una strega"
+            }
+        },
+        "gitara": {
+            "name": "Gitara",
+            "quote": {
+                "text": "La ragazza gli mise le braccia flessuose attorno al collo. Respirava affannosamente, e non solo per lo sforzo. Al chiarore delle stelle gli occhi le rilucevano come due gemme. Il volto proteso era vicinissimo a quello di Khemsa, che si lasciò baciare senza ricambiare le effusioni. (...) — Io ti amo! — gridò lei con passione, stringendoglisi addosso, quasi strangolandolo in un abbraccio selvaggio, scuotendolo con intensa emozione. — Di te farò un re!",
+                "origin": "Gli Accoliti del Cerchio Nero"
+            }
+        },
+        "hyperborean-primitive": {
+            "name": "Antico Hyperboreano",
+            "quote": {
+                "text": "C'era un gigantesco rinnegato hyperboreano, taciturno e pericoloso, con uno spadone assicurato al grande corpo sottile: nel Maul, infatti, gli uomini portavano apertamente l'acciaio.\nC'erano gli alti hyperborei, magri, con le ossa massicce, taciturni e violenti.\n La parte occidentale del Vanaheim si trova lungo le rive del mare occidentale e ad est di Asgard si trova il paese degli Hyperborei, che sono civilizzati e dimorano nelle città.",
+                "origin": "La Torre dell'Elefante - Colosso Nero - La Fenice sulla Lama (versione rifiutata da Weird Tales)"
+            }
+        },
+        "khemsa": {
+            "name": "Khemsa",
+            "quote": {
+                "text": "Quest'ultimo indossava una tunica marrone di pelo di cammello e un paio di sandali, e portava un turbante verde. Aveva un'espressione tranquilla e uno sguardo impersonale.",
+                "origin": "Gli Accoliti del Cerchio Nero"
+            }
+        },
+        "natohk": {
+            "name": "Natohk",
+            "quote": {
+                "text": "Natohk si volse verso il cimmero… inumanamente alto e magro, abbigliato di luccicante seta verde. Buttò all'indietro il velo, e Conan scorse il volto che aveva visto raffigurato sulla moneta zugita.",
+                "origin": "Colosso Nero"
+            }
+        },
+        "warlock": {
+            "name": "Stregone",
+            "quote": {
+                "text": "In cima alle scale c'era un'altra figura. Anche la sua veste era nera, ma di velluto riccamente ricamato; in testa portava un copricapo di velluto. (...) Tese la mano come se dovesse ricevervi qualcosa, e il turaniano mandò un grido atroce, di insopportabile agonia. Barcollò come un ubriaco e poi, con un rumore di ossa spezzate, di carne e muscoli lacerati, di maglia d'acciaio strappata, il petto gli scoppiò con uno spruzzo di sangue, e attraverso l'orribile squarcio una cosa rossastra e gocciolante schizzò a mezz'aria fino alla mano tesa del Maestro, come un pezzo di ferro verso la calamita. Kerim Scià scivolò a terra e giacque immobile; il Maestro rise e lanciò quella cosa ai piedi di Conan... un cuore umano ancora palpitante.",
+                "origin": "Gli Accoliti del Cerchio Nero"
+            }
+        },
+        "amboola": {
+            "name": "Amboola",
+            "quote": {
+                "text": "Amboola del Kush si destò lentamente, con i sensi ancora appannati dal vino che aveva bevuto nel festino della notte precedente. Per un attimo non riuscì a ricordare dove si trovasse. Il chiaro di luna che penetrava dalla finestrella con le sbarre, posta in alto nella parete, gli mostrava un ambiente poco familiare. Poi ricordò che si trovava nella cella della prigione in cui la regina Tananda lo aveva gettato. Anche Tananda doveva pensarci due volte sopra, prima di uccidere il comandante dei Lancieri Neri, spina dorsale dell'esercito kushita ed eroe per le caste più basse del regno.",
+                "origin": "Il muso nel buio"
+            }
+        },
+        "balthus": {
+            "name": "Balthus",
+            "quote": {
+                "text": "Era un giovane di media statura, col volto aperto e un ciuffo di capelli castani disordinati, senza berretto e senza elmo. Il suo abbigliamento era piuttosto comune, in quel territorio: una rozza tunica stretta in vita da una cintura, corte brache di pelle, e morbidi stivali che arrivavano fin quasi al ginocchio. L'impugnatura di un coltello spuntava dal bordo di uno stivale. L'alta cintura di cuoio sosteneva una spada corta e pesante e una borsa di pelle. Non c'era turbamento nei grandi occhi che scrutavano le verdi pareti intorno al sentiero. Benché non fosse alto, l'uomo era ben portante, e le sue braccia — lasciate scoperte dalle corte e ampie maniche della tunica — erano gonfie di muscoli.",
+                "origin": "Oltre il fiume Nero"
+            }
+        },
+        "belit": {
+            "name": "Bêlit",
+            "quote": {
+                "text": "Si volse verso Conan, gonfiando il petto, con gli occhi lampeggianti. Dita ardenti di meraviglia si impadronirono del cuore del cimmero. La donna era snella, ma ben tornita come una dea: agile e formosa nello stesso tempo. Indossava solamente un'ampia fascia di seta. Le membra bianche come l'avorio e i globi eburnei dei seni procurarono un'accelerazione di feroce passione nelle pulsazioni del cimmero, perfino nella tensione furibonda della battaglia. Gli splendidi capelli neri, scuri come una notte stygiana, le cadevano in ciocche ondulate e lucenti lungo la schiena. I suoi occhi scuri bruciarono il cimmero.\nEra indomita come il vento del deserto, agile e pericolosa come una pantera.",
+                "origin": "La Regina della Costa Nera"
+            }
+        },
+        "conan": {
+            "name": "Conan",
+            "quote": {
+                "text": "Arus lanciò un'occhiata nervosa alle ampie spalle, al torace massiccio e alle forti braccia. Una sola occhiata ai lineamenti severi e alle spesse sopracciglia gli bastò per capire che l'uomo non era un nemediano. Sotto il ciuffo arruffato di capelli neri covavano due pericolosi occhi azzurri. Una lunga spada, chiusa in un fodero di cuoio, gli pendeva dalla cintura.",
+                "origin": "Il Dio nell'urna"
+            }
+        },
+        "hadrathus": {
+            "name": "Hadrato",
+            "quote": {
+                "text": "Quando la porta fu chiusa, Conan vide che era rimasto solo con un uomo smilzo, mascherato da un mantello nero col cappuccio. L'uomo si tolse quest'ultimo e mise in mostra il pallido ovale di un volto dai lineamenti sereni e finemente cesellati. {...} Non c'è al mondo qualche mago in grado di combattere la stregoneria di Xaltotun? — chiese infine Conan. Hadrato scosse la testa. — Se ci fosse, noi di Asura lo conosceremmo. La gente dice che il nostro culto è una sopravvivenza dell'antico culto del dio serpente di Stygia. È una menzogna. I nostri antenati vennero da Vendhya, al di là del Mare di Vilayet e delle violacee montagne himeliane. Siamo figli dell'Est, non del Sud, e conosciamo tutti i maghi dell'Est, che sono più grandi dei maghi dell'Ovest. E nessuno di essi sarebbe più che un fuscello nel vento, di fronte alla nera potenza di Xaltotun.",
+                "origin": "Conan il Conquistatore"
+            }
+        },
+        "kerim-shah": {
+            "name": "Kerim Shah",
+            "quote": {
+                "text": "L'uomo scrollò le ampie spalle e rientrò nella stanza arabescata. Era alto, ben piantato, riccamente vestito. (…) \nIo, conosciuto dagli kshatriyani come Kerim Scià, principe iranistano, porto la maschera come tanti altri. Tutti sono dei traditori, per un verso o per l'altro, e, di essi, la metà non sa nemmeno per chi lavora. In questo almeno io non ho dubbi, perché lavoro per re Yezdigerd del Turan...",
+                "origin": "Gli Accoliti del Cerchio Nero"
+            }
+        },
+        "ngora": {
+            "name": "N'Gora",
+            "quote": {
+                "text": "Adesso poteva vedere chiaramente i particolari della nave pirata. I rematori erano protetti da una fila di schermi alzati lungo i fianchi, ma i guerrieri che danzavano sullo stretto ponte erano in piena vista. Erano dipinti e ornati di piume, e in maggior parte nudi, e brandivano lunghe lance e scudi maculati. (...) Conan si fermò all'improvviso e i suoi guerrieri si immobilizzarono come statue di basalto. Nel silenzio teso che seguì, il cimmero scosse il capo irritato. - Andate avanti - disse al suo sottocapo N'Gora.",
+                "origin": "La Regina della Costa Nera"
+            }
+        },
+        "olgerd-vladislav": {
+            "name": "Olgerd Vladislav",
+            "quote": {
+                "text": "Scrollandosi dagli occhi il sudore e il sangue, Conan scorse quattro cavalieri che, fermi nel crepuscolo, lo fissavano. Tre erano magri e vestiti di bianco, senza dubbio zuagir, nomadi dei territori oltre il fiume. L'altro era abbigliato come loro di un bianco khalat stretto in vita e di un copricapo fluente che, fissato alle tempie da un triplice cerchio di pelo di cammello intrecciato, ricadeva sulle spalle. Ma non era shemita. L'oscurità non era ancora così fitta, e la vista aquilina di Conan non era così offuscata da impedirgli di distinguere il volto dell'uomo. Era alto come lui, ma non altrettanto massiccio. Le spalle erano ampie, e l'agile figura era dura come l'acciaio e l'osso di balena. La corta barba nera non mascherava del tutto la linea aggressiva della scarna mascella, e gli occhi grigi, freddi e penetranti come spade, brillavano sotto l'ombra della kaffia.",
+                "origin": "Nascerà una strega"
+            }
+        },
+        "pallantides": {
+            "name": "Pallantides",
+            "quote": {
+                "text": "Pallantide uscì in fretta dal padiglione, tra il clangore dell'armatura che aveva indossato a mezzanotte, dopo un breve riposo. (…) Un alto guerriero in armatura lucente abbassò la lancia e caricò per scontrarsi con il Signore di Tor. Si scontrarono con il fragore del tuono. La lancia del nemediano, colpendo l'elmo del nemico, spezzò chiodi e legacci e gli strappò di testa la calotta, mostrando il volto di Pallantide. Ma la punta della lancia dell'aquiloniano squarciò scudo e pettorale trafiggendo il cuore del Barone.",
+                "origin": "Conan il Conquistatore"
+            }
+        },
+        "shevatas": {
+            "name": "Shevatas",
+            "quote": {
+                "text": "Shevatas era agile e solido, come si addiceva ad un grande ladro di Zamora. La testa piccola e rotonda era rasata, e il suo unico indumento era un perizoma di seta scarlatta. Come tutti quelli della sua razza, era molto scuro di carnagione, e la magra faccia d'avvoltoio faceva spiccare gli acuti occhi neri. Le dita sottili e affusolate erano svelte e nervose come le ali d'una falena. Dalla cintura a scaglie d'oro pendeva uno spadino sottile dall' elsa ingemmata, in un fodero di cuoio lavorato. Shevatas maneggiava quell'arma con cautela apparentemente esagerata, e quasi sembrava rifuggire dal contatto del fodero contro la coscia nuda. E quella prudenza non era senza motivo.\nQuesto era Shevatas, ladro tra i ladri, il cui nome veniva pronunciato con timore nei locali malfamati del Maul e nei cupi recessi sotterranei dei templi di Bel, destinato a vivere per mille anni nelle ballate e nei miti. Aveva viaggiato molto, ed aveva depredato i tesori di molti regni.",
+                "origin": "Colosso Nero"
+            }
+        },
+        "taurus": {
+            "name": "Taurus",
+            "quote": {
+                "text": "Taurus era alto quanto il cimmero e più pesante; era corpulento e grasso, ma ogni suo movimento suggeriva l'idea di un indefinibile e dinamico magnetismo che si rifletteva nei suoi occhi acuti, scintillanti di vigore persino alla luce delle stelle. Era scalzo e trasportava in un rotolo ciò che sembrava essere una corda sottile ma resistente, annodata a intervalli regolari.",
+                "origin": "La Torre dell'Elefante"
+            }
+        },
+        "valeria": {
+            "name": "Valeria",
+            "quote": {
+                "text": "Era alta, col seno colmo, le membra robuste e le spalle solide. La sua figura irradiava una forza eccezionale, senza per questo sminuire la femminilità del suo aspetto. Era interamente donna, nonostante il portamento e l'abito. Anziché una gonna, portava brache di seta corte e larghe che le arrivavano a una spanna dal ginocchio, trattenute da un'ampia fusciacca di seta che fungeva da cintura. Gli stivali svasati di pelle morbida le arrivavano fin quasi alle ginocchia, e una camicia serica scollata e dalle maniche ampie completava il suo abbigliamento. Nei suoi grandi occhi c'era il colore del mare. E questo era giusto, perché era Valeria della Confraternita Rossa, le cui imprese vengono celebrate in canti e ballate dovunque si radunano i navigatori.\n“Perché voi uomini non volete saperne di lasciarmi vivere una vita da uomo?”\n“Nessun uomo al mondo sarebbe stato in grado di disarmare a mani nude Valeria della Confraternita Rossa.”",
+                "origin": "Chiodi Rossi"
+            }
+        },
+        "zelata": {
+            "name": "Zelata",
+            "quote": {
+                "text": "La vecchia parlò, e il Re si voltò verso di lei. Era in piedi vicino a Conan, alta e diritta; nonostante la veste stracciata, la sua fisionomia chiara e aquilina e gli occhi neri e profondi non erano quelli di una qualsiasi contadina. La vecchia chiamò il lupo, e la belva le si pose a fianco come un grosso cane, strofinando la spalla contro il suo ginocchio; intanto continuava a osservare Conan con i grandi occhi verdi e splendenti, e Conan si sentì un po' a disagio sotto quello sguardo, anche se non gli mostrava ostilità.\n“Crom!” esclamò Conan, fissando la vecchia. “Sei una maga anche tu?”\n“Sono Zelata” — disse lei. — “La gente delle valli dice che sono una strega.”",
+                "origin": "Conan il Conquistatore"
+            }
+        },
+        "camel": {
+            "name": "Cammello"
+        },
+        "kothian-archer": {
+            "name": "Arciere Kothiano"
+        },
+        "slasher": {
+            "name": "Zanna"
+        },
+        "bone-golem": {
+            "name": "Golem di Ossa"
+        },
+        "forest-demon": {
+            "name": "Diavolo della Foresta",
+            "quote": {
+                "text": "Conan scrollò la testa, impaziente.\n— Un uomo del Tauran non può confondere il segno degli artigli di una pantera. No. È un diavolo della foresta evocato da Zogar Sag per compiere la vendetta.",
+                "origin": "Oltre il Fiume Nero"
+            }
+        },
+        "giant-scorpion": {
+            "name": "Scorpione Gigante",
+            "quote": {
+                "text": "Nella mano protesa, qualcosa fremeva e sbavava. Questa volta non era un trucco. Nella mano nuda, Thugra Khotan stringeva uno scorpione nero, lungo quasi due spanne, l'essere più mortale del deserto, che con il pungiglione avvelenato dava una fine istantanea.",
+                "origin": "Colosso Nero"
+            }
+        },
+        "giant-spider": {
+            "name": "Ragno Gigante",
+            "quote": {
+                "text": "Tirandosi indietro, con la spada in alto, vide l'orrore toccare il pavimento, ruotare e correre velocemente verso di lui con una rapidità spaventosa; era un gigantesco ragno nero, grande come lo si può vedere grande solo in un incubo notturno. Era largo quanto un maiale, e le otto gambe spesse e pelose guidavano quel corpo da orco sul pavimento a un'andatura precipitosa; quattro occhi, infernali e brillanti, splendevano di una orribile intelligenza, e le zanne stillavano veleno. Conan capi dal bruciore della spalla, che era stata toccata solo da qualche goccia quando la bestia lo aveva mancato, che quel veleno dava una morte rapida e silenziosa.",
+                "origin": "La Torre dell'Elefante"
+            }
+        },
+        "gray-man-ape": {
+            "name": "Uomo-Scimmia",
+            "quote": {
+                "text": "Dalle ombre dei precipizi avanzò una forma mostruosa… un orrore antropomorfo, una grottesca parodia della creazione.\nLa sagoma non era troppo dissimile da quella d'un uomo. Ma la faccia, rivelata dal chiaro di luna, era bestiale, con gli occhi vicini, le nari dilatate, ed una grossa bocca dalle labbra flaccide in cui lucevano zanne bianchissime. Era coperto d'un irsuto pelame grigiastro screziato d'argento, che splendeva nella luce lunare, e le grandi braccia deformi pendevano sin quasi a sfiorare il suolo. La sua mole era immensa: ritto sulle gambe corte ed arcuate, torreggiava con tutta la testa aguzza al di sopra dell'uomo che lo fronteggiava: l'ampiezza del petto villoso e delle spalle gigantesche era agghiacciante; le braccia immani sembravano alberi nocchiuti.",
+                "origin": "Ombre al Chiaro di Luna"
+            }
+        },
+        "swamp-demon": {
+            "name": "Diavolo della Palude",
+            "quote": {
+                "text": "- Ma cos'è che può gridare come una donna e ridere come un demonio, e brillare come un fuoco fatuo mentre scivola tra gli alberi? — ansimò Balthus, tergendosi il sudore dal pallido volto.\n— Un diavolo della palude — rispose cupo Conan.",
+                "origin": "Oltre il Fiume Neeo"
+            }
+        },
+        "thaug": {
+            "name": "Thaug",
+            "quote": {
+                "text": "— Thaug! — urlò la strega, dalla soglia. — Thaug! — Quasi in risposta a quella spaventosa invocazione tuonò un gracidio tremendo, all'interno del tempio, uno schianto di legno e di metallo. (...) Dall'oscurità, in fondo alla grande navata, si sollevò un'enorme forma scura… si precipitò verso di lui in giganteschi balzi da rospo. Valerius scorse il brillio dei grandi occhi ultraterreni, lo scintillio delle zanne e degli artigli. (...) Valerius lo sentì incombere dietro di lui, colossale e tenebroso, come una parodia della natura ricavata dal cuore della notte, un'informità nera in cui si distinguevano solo gli occhi sbarrati e le zanne scintillanti.",
+                "origin": "Nascerà una Strega"
+            }
+        },
+        "mummies-alt": {
+            "name": "Mummie",
+            "quote": {
+                "text": "Del gruppo, dieci erano sacerdoti, e anche se si erano tolti le maschere, Conan era sicuro che si trattasse dei sacerdoti che lo avevano accompagnato alla piramide. Erano tutti fermi davanti a un uomo alto e dal volto aquilino; a fianco dell'uomo c'era un altare nero su cui era deposta una mummia avvolta in fasciature quasi disfatte.",
+                "origin": "Conan il Conquistatore"
+            }
+        },
+        "pict-archers": {
+            "name": "Arcieri Pitti",
+            "quote": {
+                "text": "Anche i pitti appartengono alla razza bianca, nel senso che non sono né neri né bruni né gialli, ma hanno occhi e capelli neri e sono scuri di pelle.\nNon potevo fraintendere il suono. Solo un tamburo al mondo può emettere quel profondo, minaccioso, lugubre brontolio: un tamburo di guerra pitto, percosso dalle mani di quei selvaggi dipinti che infestano la foresta oltre il confine della Marca Occidentale.",
+                "origin": "Lupi oltre la Frontiera"
+            }
+        },
+        "pict-warriors": {
+            "name": "Guerrieri Pitti",
+            "quote": {
+                "text": "Anche i pitti appartengono alla razza bianca, nel senso che non sono né neri né bruni né gialli, ma hanno occhi e capelli neri e sono scuri di pelle.\nNon potevo fraintendere il suono. Solo un tamburo al mondo può emettere quel profondo, minaccioso, lugubre brontolio: un tamburo di guerra pitto, percosso dalle mani di quei selvaggi dipinti che infestano la foresta oltre il confine della Marca Occidentale.",
+                "origin": "Lupi oltre la Frontiera"
+            }
+        },
+        "pirates-alt": {
+            "name": "Pirati",
+            "quote": {
+                "text": "— Pirati! — mormorò Conan, con un sorriso torvo sulle labbra sottili. (...) Erano una settantina: un'orda selvaggia di uomini provenienti da molte nazioni, kothiani, zamoriani, brythuni, corinzi, shemiti. I volti rispecchiavano indoli feroci. Molti mostravano le cicatrici delle fruste e dei marchi d'infamia. C'erano orecchie mozze, nasi squarciati, occhiaie cieche, polsi troncati… segni lasciati dal boia, e non solo dalle battaglie. Erano quasi tutti seminudi, ma gli indumenti che portavano erano splendidi: giubbe gallonate d'oro, cinture seriche, brache di raso, rovinate e sporche di catrame e di sangue, gareggiavano in lusso con le armi intarsiate d'argento. Le gemme brillavano sui nasi e alle orecchie, e sulle impugnature delle daghe.",
+                "origin": "Ombre al Chiaro di Luna"
+            }
+        },
+        "skeletons-alt": {
+            "name": "Scheletri",
+            "quote": {
+                "text": "In un angolo della cella, vicino alla porta da cui erano entrati, un mucchio di catene arrugginite pendeva da un basso anello di ferro incastrato nella pietra, e tra le catene si scorgevano le forme di uno scheletro. Conan lo osservò con una certa curiosità, notando lo stato di quelle ossa spoglie, alcune delle quali erano spezzate. Il teschio, caduto dalle vertebre, appariva schiacciato da un colpo vibrato con forza selvaggia, terribile.",
+                "origin": "Conan il Conquistatore"
+            }
+        },
+        "tentacles": {
+            "name": "Tentacoli"
+        },
+        "baal-pteor": {
+            "name": "Baal-Pteor",
+            "quote": {
+                "text": "Era nudo: portava solo un perizoma e un paio di sandali. Aveva la pelle bruna, i capelli neri tagliati cortissimi, e irrequieti occhi neri che spiccavano nel largo volto arrogante. Era enorme, con membra immani e muscoli che si gonfiavano e guizzavano al minimo movimento. Le mani erano le più grandi che Conan avesse mai visto. La consapevolezza della propria forza fisica colorava ogni azione, ogni inflessione del gigante.\n— Chi diavolo sei? — ringhiò.\n— Io sono Baal-pteor — rispose l'uomo. — Una volta, molto tempo fa e in un'altra terra, avevo un altro nome. Ma questo è un bel nome; e perché Totrasmek me l'ha assegnato, può dirtelo ogni ancella del tempio.",
+                "origin": "Ombre a Zamboula"
+            }
+        },
+        "black-dragons": {
+            "name": "Dragoni Neri",
+            "quote": {
+                "text": "Poi un guazzabuglio di voci gli giunse alle orecchie e la stanza si riempì di gente: signori, cavalieri, dame, armigeri, consiglieri, tutti vociavano e gridavano, ostacolandosi l'un l'altro. I Dragoni Neri, furiosi di rabbia, imprecavano e si agitavano, stringendo l'elsa della spada e imprecando a mezza voce.",
+                "origin": "La Fenice sulla Lama"
+            }
+        },
+        "the-black-ones": {
+            "name": "I Neri",
+            "quote": {
+                "text": "Quegli esseri erano neri e nudi, fatti come uomini, ma il più basso di essi, in piedi, avrebbe superato di tutta la spalla il più alto dei pirati. Erano longilinei anziché massicci, ma ben proporzionati, senza nessun sospetto di deformità o di anormalità, eccettuata l'altezza, fuori del comune. Ma anche a quella distanza Conan riusciva a cogliere la innata malignità dei loro lineamenti. (...) Mentalmente il cimmero si riferiva a quelle creature come negri, per mancanza di un termine migliore; istintivamente però sapeva che quegli esseri non erano uomini, nel senso che si dà al termine.",
+                "origin": "Lo Stagno dei Neri"
+            }
+        },
+        "crossbowmen": {
+            "name": "Balestrieri",
+            "quote": {
+                "text": "Il Re e i suoi marciarono a Occidente, alla testa di cinquantamila uomini: cavalieri con le armature fulgide e i gagliardetti spiegati alti sulle lance, fanti in elmo d'acciaio e brigantina, balestrieri in giustacuore di cuoio.",
+                "origin": "Conan il Conquistatore"
+            }
+        },
+        "crossbowmen-green": {
+            "name": "Balestrieri",
+            "quote": {
+                "text": "Il Re e i suoi marciarono a Occidente, alla testa di cinquantamila uomini: cavalieri con le armature fulgide e i gagliardetti spiegati alti sulle lance, fanti in elmo d'acciaio e brigantina, balestrieri in giustacuore di cuoio.",
+                "origin": "Conan il Conquistatore"
+            }
+        },
+        "demon-of-the-earth": {
+            "name": "Demone della Terra",
+            "quote": {
+                "text": "Io sono Thugra Khotan, che regnerà sul mondo, nonostante i tuoi dei meschini! Il deserto è pieno di miei seguaci; i demoni della terra obbediranno ai miei comandi, come mi obbediscono i rettili.",
+                "origin": "Colosso Nero"
+            }
+        },
+        "dragon": {
+            "name": "Drago",
+            "quote": {
+                "text": "Dal macchione si sporse la testa di un essere d'incubo e di follia. Le fauci socchiuse lasciavano snudate file e file di gialle zanne sgocciolanti; al disopra della bocca, il muso grinzoso era quello di un rettile. Gli enormi occhi, simili agli occhi di un pitone ma ingranditi mille volte, fissavano i due esseri umani, che, impietriti, si tenevano aggrappati alla roccia, più in alto. Del sangue macchiava le labbra, flaccide e squamose, e sgocciolava dall'enorme bocca.\nLa testa, più grande di quella di un coccodrillo, s'innestava su un lungo collo a scaglie sovrastato da file di creste appuntite: il corpo, che schiacciava rovi e arboscelli, era quello di un titano, con un torace gigantesco a forma di botte sorretto da zampe assurdamente corte. Il ventre biancastro sfiorava quasi il suolo, e la spina dorsale crestata era così alta che Conan avrebbe stentato a sfiorarla anche alzandosi in punta di pie Una lunga coda uncinata, come quella di un colossale scorpione, si trascinava al suolo.",
+                "origin": "Chiodi Rossi"
+            }
+        },
+        "giant-wolves": {
+            "name": "Lupi Giganti",
+            "quote": {
+                "text": "Il nemediano rise trionfalmente e balzò in avanti, sollevando a due mani la spada sulla spalla sinistra e allargando le gambe per calare il colpo... ma in quel momento, saltando al di sopra della forma stesa a terra del cimmero, qualcosa di grosso e peloso si avventò come un fulmine contro il soldato e lo colpì in pieno petto: l'urlo di trionfo si trasformò istantaneamente in un lamento di agonia. Conan, scattando in piedi, vide che l'uomo era morto, con la gola squarciata; un grosso lupo grigio, fermo accanto a lui, fiutava la pozza di sangue che si era formata sull'erba.",
+                "origin": "Conan il Conquistatore"
+            }
+        },
+        "sabertooth-tiger": {
+            "name": "Tigre dai denti a sciabola",
+            "quote": {
+                "text": "Un'esclamazione soffocata percorse l'intero villaggio, e gli uomini si affrettarono a indietreggiare infilandosi tra le casupole. Balthus si sentì rizzare i capelli in testa. L'essere che stava all'ingresso pareva l'incarnazione di una leggenda d'incubo. Il colore pallido lo faceva apparire spettrale e irreale nella fioca luce. Ma non c'era nulla d'irreale nella selvaggia testa protesa in avanti, nelle grandi zanne ricurve che luccicavano nella luce del fuoco. Procedendo su zampe vellutate e silenziose si avvicinò come un fantasma uscito dal passato. Era un superstite di un'epoca più antica e truce, l'orco di molte leggende antiche: una tigre dai denti a sciabola. Nessun cacciatore hyboriano, ormai da secoli, aveva visto uno di quei mostri primordiali. Miti antichissimi conferivano alla belva qualcosa di soprannaturale, forse a causa del colore spettrale e della ferocia diabolica.\nLa belva che avanzava verso gli uomini legati ai pali era più lunga e grande di una comune tigre striata: la sua mole era quasi quella di un orso. Le spalle e le zampe anteriori erano così poderosamente muscolose da dare una bizzarra sensazione di squilibrio, benché i quarti posteriori fossero più potenti di quelli di un leone. Le fauci erano enormi, ma la testa aveva una modellatura rozza. La capacità cranica era limitata: in quel cervello c'era posto solo per l'istinto di distruzione. Era una mostruosità nell'evoluzione dei carnivori, un'orrida follia di zanne e di artigli.",
+                "origin": "Oltre il Fiume Nero"
+            }
+        },
+        "afari": {
+            "name": "Afari",
+            "quote": {
+                "text": "— Lord Tuthmes! Fammi entrare! Il demone è di nuovo in libertà!\nLa porta si aprì e Tuthmes comparve sulla soglia: un uomo alto, snello, aristocratico, con i lineamenti sottili e la pelle bruna della sua casta. Era avvolto in una veste di seta bianca e teneva in mano una piccola lampada di bronzo.\n— Cosa succede, Afari? — chiese.\nII visitatore, con gli occhi sbarrati, si precipitò nella stanza. Ansimava come per una lunga corsa. Era un uomo snello e muscoloso, dalla pelle nera, più basso di Tuthmes: sul suo viso, i tratti ancestrali dei negri erano molto accentuati. Nonostante la fretta che aveva, si premurò di chiudere la porta prima di rispondere.\n— Amboola! È morto! Nella Torre Rossa!",
+                "origin": "Il Muso nel Buio"
+            }
+        },
+        "ghayoor": {
+            "name": "Ghayoor"
+        },
+        "shafiah": {
+            "name": "Shafiah"
+        },
+        "shubba": {
+            "name": "Shubba",
+            "quote": {
+                "text": "Shubba, servitore di Tuthmes, fu di ritorno a Meroê. Quando si recò da Tuthmes, nella camera di questi, dove il pavimento marmoreo era coperto di pelli di leoni, annunciò: — Ho trovato la donna da te desiderata, o padrone... una ragazza nemediana, catturata su una nave mercantile di Argos. Per lei ho pagato al mercante di schiavi shemita numerosi grossi pezzi d'oro.\n— Fammela vedere — ordinò Tuthmes.\nShubba lasciò la camera e ritornò un momento più tardi, conducendo per il polso una ragazza. Era snella, e il suo corpo bianco faceva uno stridente contrasto con le carnagioni brune e nere a cui Tuthmes era abituato. I suoi capelli ricadevano in un ruscello arricciato, ondulato, dorato sulle bianche spalle. Indossava soltanto una veste stracciata. Shubba gliela tolse, ed ella, completamente nuda, cercò di coprirsi con le braccia.",
+                "origin": "Il Muso nel Buio"
+            }
+        },
+        "vanir-valkyrie": {
+            "name": "Valchiria Vanir"
+        },
+        "salome": {
+            "name": "Salome",
+            "quote": {
+                "text": "E fu quella vista a raggelare il grido nella gola di Taramis. I lineamenti erano i suoi! Era come se si guardasse in uno specchio che alterava sottilmente la sua immagine, aggiungendole lo scintillio tigrino degli occhi, l'aggricciarsi vendicativo delle labbra.\n“Ishtar!” — gemette Taramis. — “È una stregoneria!”\n“Stregoneria? No, dolce sorella! Non c'è nessuna stregoneria.”\n“Sorella? Io non ho sorelle.”\nSalome rise rabbiosamente, e si batté la mano sul petto. La tunica scollata scopriva la parte superiore dei seni torniti, in mezzo a cui splendeva un marchio bizzarro… una mezzaluna rossa come sangue.\n“Il marchio della strega!” esclamò Taramis, rabbrividendo.\n“Sì! La maledizione dei re di Khauran! Raccontano che la prima regina della nostra dinastia ebbe commercio con un demone delle tenebre e gli partorì una figlia che ancora oggi vive nelle leggende immonde. Da allora, ogni secolo, nasce nella dinastia askhauriana una bimba con una mezzaluna scarlatta sul petto che indica il suo destino. ‘Ogni secolo nascerà una strega.’ Così diceva l'antica maledizione. E così è sempre accaduto. \n“Bene, questo mondo racchiude tutto ciò che desidero… potenza e sfarzo, e lusso scintillante, uomini prestanti destinati a diventare i miei amanti, tenere donne adatte a diventare mie schiave.Sono tornata per prendere ciò che spetta di diritto a me non meno che a te.”",
+                "origin": "Nascerà una strega"
+            }
+        },
+        "atali": {
+            "name": "Atali",
+            "quote": {
+                "text": "Davanti a lui, tremula come un alberello nel vento, era ferma una ragazza. Ai suoi occhi velati, il corpo della nuova venuta pareva d'avorio; ad eccezione di un lieve velo di organza, era nuda come il giorno. I suoi piedi esili erano più candidi della neve che calpestavano. Ella rise, fissando dall'alto il guerriero stupito, e la sua risata era più dolce del gorgoglio di una fonte argentina, ma conteneva gli accenti velenosi di una derisione crudele. (...) Lo sguardo di Conan si posò nuovamente sui riccioli scarmigliati della ragazza, che a prima vista gli erano parsi rossi. Adesso poté vedere che non erano né rossi né biondi, ma uno splendido miscuglio di entrambi i colori. La fissò affascinato. Quei capelli erano come l'oro degli elfi; il sole li colpiva con un riflesso così abbagliante, che Conan non riuscì quasi a sopportarne la vista. E anche gli occhi della ragazza non erano né del tutto azzurri, né del tutto grigi, ma di colori cangianti, con tracce di tinte che non avevano nome. Le labbra, piene e rosse, sorridevano ancora; e dai piedi sottili, fino all'accecante corona dei suoi capelli ondulati, il corpo eburneo della ragazza era perfetto come il sogno di un dio.",
+                "origin": "La Figlia del Gigante dei Ghiacci"
+            }
+        },
+        "yazdigerd": {
+            "name": "Yazdigerd"
+        },
+        "nijgor": {
+            "name": "Nijgor",
+            "quote": {
+                "text": "Non provò meraviglia per la stranezza del paesaggio... nemmeno quando due gigantesche figure sorsero a sbarrargli la strada. Le piastre della loro corazza erano bianche di brina; il loro elmo e la loro ascia erano coperti di ghiaccio. I loro capelli erano spruzzati di neve, la loro barba era incrostata di ghiaccioli, i loro occhi erano freddi come le luci che fluttuavano nel cielo sopra di loro.",
+                "origin": "La Figlia del Gigante dei Ghiacci"
+            }
+        },
+        "seski": {
+            "name": "Seski",
+            "quote": {
+                "text": "Non provò meraviglia per la stranezza del paesaggio... nemmeno quando due gigantesche figure sorsero a sbarrargli la strada. Le piastre della loro corazza erano bianche di brina; il loro elmo e la loro ascia erano coperti di ghiaccio. I loro capelli erano spruzzati di neve, la loro barba era incrostata di ghiaccioli, i loro occhi erano freddi come le luci che fluttuavano nel cielo sopra di loro.",
+                "origin": "La Figlia del Gigante dei Ghiacci"
+            }
+        },
+        "vanir-warriors": {
+            "name": "Guerrieri Vanir",
+            "quote": {
+                "text": "— Che tipo di gente sono gli uomini del Settentrione? —  chiese Prospero.\n— Sono alti, biondi e con gli occhi azzurri. Il loro dio è Ymir, il gigante di ghiaccio, e ogni tribù ha il proprio Re. Sono ostinati e fieri. Combattono tutto il giorno e passano la notte a bere birra e a ruggire le loro selvagge canzoni.",
+                "origin": "La Fenice sulla Lama"
+            }
+        },
+        "vanir-warriors-blue": {
+            "name": "Guerrieri Vanir",
+            "quote": {
+                "text": "— Che tipo di gente sono gli uomini del Settentrione? —  chiese Prospero.\n— Sono alti, biondi e con gli occhi azzurri. Il loro dio è Ymir, il gigante di ghiaccio, e ogni tribù ha il proprio Re. Sono ostinati e fieri. Combattono tutto il giorno e passano la notte a bere birra e a ruggire le loro selvagge canzoni.",
+                "origin": "La Fenice sulla Lama"
+            }
+        },
+        "vanir-zombies": {
+            "name": "Non-morti Vanir",
+            "quote": {
+                "text": "— Che tipo di gente sono gli uomini del Settentrione? —  chiese Prospero.\n— Sono alti, biondi e con gli occhi azzurri. Il loro dio è Ymir, il gigante di ghiaccio, e ogni tribù ha il proprio Re. Sono ostinati e fieri. Combattono tutto il giorno e passano la notte a bere birra e a ruggire le loro selvagge canzoni.",
+                "origin": "La Fenice sulla Lama"
+            }
+        },
+        "vanir-primitives": {
+            "name": "Vanir Selvaggi"
+        },
+        "crows": {
+            "name": "Corvi",
+            "quote": {
+                "text": "Mentre superava l'orlo della depressione, udì alto sulla sua testa uno scoppio di grida rauche; guardando in su, vide il corvo che volteggiava su di lui, gracchiando senza interruzione. E, mentre Conan galoppava, il corvo lo seguiva, mantenendo la propria posizione e rovinandogli la mattinata con grida stridule, a dispetto di ogni sforzo per cacciarlo via.\nLa cosa continuò per ore, e alla fine i nervi di Conan erano a fior di pelle: si sentiva disposto a dare metà del suo regno, pur di torcere quel collo scuro. — Demoni dell'inferno! — ruggiva vanamente, agitando in direzione di quell'uccello impazzito il pugno rivestito di maglia di ferro. — Perché mi perseguiti con i tuoi versacci? Vattene, maledetto figlio della perdizione, vattene dai contadini a beccare il grano dei campi!",
+                "origin": "Conan il Conquistatore"
+            }
+        },
+        "crows-red": {
+            "name": "Corvi",
+            "quote": {
+                "text": "Mentre superava l'orlo della depressione, udì alto sulla sua testa uno scoppio di grida rauche; guardando in su, vide il corvo che volteggiava su di lui, gracchiando senza interruzione. E, mentre Conan galoppava, il corvo lo seguiva, mantenendo la propria posizione e rovinandogli la mattinata con grida stridule, a dispetto di ogni sforzo per cacciarlo via.\nLa cosa continuò per ore, e alla fine i nervi di Conan erano a fior di pelle: si sentiva disposto a dare metà del suo regno, pur di torcere quel collo scuro. — Demoni dell'inferno! — ruggiva vanamente, agitando in direzione di quell'uccello impazzito il pugno rivestito di maglia di ferro. — Perché mi perseguiti con i tuoi versacci? Vattene, maledetto figlio della perdizione, vattene dai contadini a beccare il grano dei campi!",
+                "origin": "Conan il Conquistatore"
+            }
+        },
+        "wolves": {
+            "name": "Lupi",
+            "quote": {
+                "text": "Il nemediano rise trionfalmente e balzò in avanti, sollevando a due mani la spada sulla spalla sinistra e allargando le gambe per calare il colpo... ma in quel momento, saltando al di sopra della forma stesa a terra del cimmero, qualcosa di grosso e peloso si avventò come un fulmine contro il soldato e lo colpì in pieno petto: l'urlo di trionfo si trasformò istantaneamente in un lamento di agonia. Conan, scattando in piedi, vide che l'uomo era morto, con la gola squarciata; un grosso lupo grigio, fermo accanto a lui, fiutava la pozza di sangue che si era formata sull'erba.",
+                "origin": "Conan il Conquistatore"
+            }
+        },
+        "aesir-zombies": {
+            "name": "Non-morti Aesir",
+            "quote": {
+                "text": "— Che tipo di gente sono gli uomini del Settentrione? —  chiese Prospero.\n— Sono alti, biondi e con gli occhi azzurri. Il loro dio è Ymir, il gigante di ghiaccio, e ogni tribù ha il proprio Re. Sono ostinati e fieri. Combattono tutto il giorno e passano la notte a bere birra e a ruggire le loro selvagge canzoni.",
+                "origin": "La Fenice sulla Lama"
+            }
+        },
+        "aesir-warriors": {
+            "name": "Guerrieri Aesir",
+            "quote": {
+                "text": "— Che tipo di gente sono gli uomini del Settentrione? —  chiese Prospero.\n— Sono alti, biondi e con gli occhi azzurri. Il loro dio è Ymir, il gigante di ghiaccio, e ogni tribù ha il proprio Re. Sono ostinati e fieri. Combattono tutto il giorno e passano la notte a bere birra e a ruggire le loro selvagge canzoni.",
+                "origin": "La Fenice sulla Lama"
+            }
+        },
+        "aesir-warriors-red": {
+            "name": "Guerrieri Aesir",
+            "quote": {
+                "text": "— Che tipo di gente sono gli uomini del Settentrione? —  chiese Prospero.\n— Sono alti, biondi e con gli occhi azzurri. Il loro dio è Ymir, il gigante di ghiaccio, e ogni tribù ha il proprio Re. Sono ostinati e fieri. Combattono tutto il giorno e passano la notte a bere birra e a ruggire le loro selvagge canzoni.",
+                "origin": "La Fenice sulla Lama"
+            }
+        },
+        "shuang-mian": {
+            "name": "Shuang Miàn",
+            "quote": {
+                "text": "Era sicuro di aver chiuso la porta a chiave, dal di dentro, eppure adesso era aperta, e quattro uomini stavano entrando nella stanza. Guardandoli gli venne la pelle d'oca. Nella sua vita aveva visto molti esseri strani, ma nessuno che assomigliasse a quelli. Erano alti e magri, vestiti di nero; nell'ombra dei cappucci i loro volti apparivano come gialli ovali indistinti. Non avrebbe potuto dire molto dei loro lineamenti ma, inspiegabilmente, era lieto che fosse così. Tutti e quattro portavano un lungo bastone curiosamente istoriato.",
+                "origin": "Conan il Conquistatore"
+            }
+        },
+        "evil-hound": {
+            "name": "Segugio Infernale"
+        },
+        "khitan-guards": {
+            "name": "Guardie del Khitai"
+        },
+        "honor-guards": {
+            "name": "Guardie d'Onore"
+        },
+        "javelin-throwers": {
+            "name": "Guerrieri Yün-nan"
+        },
+        "foo-dogs": {
+            "name": "Leoni Guardiani"
+        },
+        "thot-amon": {
+            "name": "Thoth-Amon",
+            "quote": {
+                "text": "Era un individuo gigantesco e cupo, la cui pelle scura rivelava sangue stygiano. (...) Ascoltami, Barone. Ero un grande stregone, nel mio paese. Il nome di Thoth-Amon era famoso quanto quello di Rammon. Re Ctesphon di Stygia mi concesse grandi onori, allontanò tutti i maghi dalle altre cariche per innalzare me sopra di loro. Essi mi odiavano, ma avevano paura di me, poiché io controllavo esseri sovrumani, che accorrevano al mio comando ed eseguivano i miei voleri. Per Set, un mio nemico non sapeva mai quando poteva svegliarsi all'improvviso nel cuore della notte e sentirsi attorno alla gola le dita artigliate di un orrore senza nome! Compii terribili e tenebrose magie con l'Anello di Serpenti di Set, da me ritrovato in una tomba buia sepolta sotto una lega di terra, già dimenticata quando il primo uomo strisciò fuori dal mare fangoso.",
+                "origin": "La Fenice sulla Lama"
+            }
+        },
+        "scorpion-broodmother": {
+            "name": "Scorpione Regina"
+        },
+        "giant-scorpions": {
+            "name": "Scorpioni Giganti",
+            "quote": {
+                "text": "Nella mano protesa, qualcosa fremeva e sbavava. Questa volta non era un trucco. Nella mano nuda, Thugra Khotan stringeva uno scorpione nero, lungo quasi due spanne, l'essere più mortale del deserto, che con il pungiglione avvelenato dava una fine istantanea.",
+                "origin": "Colosso Nero"
+            }
+        },
+        "eternal-guard": {
+            "name": "Guardie Eterne"
+        },
+        "assassins": {
+            "name": "Assassini"
+        },
+        "hoplites": {
+            "name": "Opliti"
+        },
+        "winged-ape": {
+            "name": "Scimmia Volante"
+        },
+        "heracles": {
+            "name": "Eracle"
+        },
+        "leonidas": {
+            "name": "Leonida"
+        },
+        "achilles": {
+            "name": "Achille"
+        },
+        "spartan": {
+            "name": "Spartani"
+        },
+        "hell-warriors": {
+            "name": "Guerrieri degli Inferi"
+        },
+        "amazons": {
+            "name": "Amazzoni"
+        },
+        "centaurs": {
+            "name": "Centauri"
+        },
+        "hellhounds": {
+            "name": "Segugi Infernali"
+        },
+        "civilian-1": {
+            "name": "Civile"
+        },
+        "civilian-2": {
+            "name": "Civile"
+        },
+        "civilian-3": {
+            "name": "Civile"
+        },
+        "cerberus": {
+            "name": "Cerbero"
+        },
+        "medusa": {
+            "name": "Medusa"
+        },
+        "ares": {
+            "name": "Ares"
+        },
+        "minotaur": {
+            "name": "Minotauro"
+        },
+        "odysseus": {
+            "name": "Ulisse"
+        },
+        "hydra-1": {
+            "name": "Idra"
+        },
+        "hydra-2": {
+            "name": "Idra"
+        },
+        "hydra-3": {
+            "name": "Idra"
+        },
+        "hydra-4": {
+            "name": "Idra"
+        },
+        "hydra-5": {
+            "name": "Idra"
+        }
+    }
+}

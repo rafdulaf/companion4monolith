@@ -2,82 +2,22 @@
     "list": [
         {
             "id": "corebox",
-            "title": {
-                "fr": "Livre des règles",
-                "en": "Rule<wbr/>book"
-            },
-            "download": {
-                "fr": "https://the-overlord.com/index.php?/files/file/147-batman-gotham-city-chronicles-livret-de-r%C3%A8gles-bo%C3%AEtes-de-base/&do=download&csrfKey=6511709efb90be88ce81de8ae0973d19",
-                "en": "https://the-overlord.net/index.php?/files/file/91-batman-gotham-city-chronicles-rulebook-coreboxes/&do=download&csrfKey=13ba91465f0a9eabcc05c76aca3e785f"
-            },
-            "pages": {
-                "fr": 46,
-                "en": 46
-            },
             "origins": ["corebox"]
         },        
         {
             "id": "batmobile",
-            "title": {
-                "fr": "Bat<wbr/>mobile",
-                "en": "Bat<wbr/>mobile"
-            },
-            "download": {
-                "fr": "https://the-overlord.com/index.php?/files/file/161-batman-gotham-city-chronicles-livret-de-r%C3%A8gles-batmobile/&do=download&csrfKey=1aab082bed1ee824d34579c9ed2e4cf7",
-                "en": "https://the-overlord.net/index.php?/files/file/100-batman-gotham-city-chronicles-batmobile-rulebook/&do=download&csrfKey=37a764e1a920be703e8cd4179343c9a8"
-            },
-            "pages": {
-                "fr": 8,
-                "en": 8
-            },
             "origins": ["batmobile"]
         } ,        
         {
             "id": "versus",
-            "title": {
-                "fr": "Versus",
-                "en": "Versus"
-            },
-            "download": {
-                "fr": "https://the-overlord.com/index.php?/files/file/163-batman-gotham-city-chronicles-livret-mode-versus/&do=download&csrfKey=1aab082bed1ee824d34579c9ed2e4cf7",
-                "en": "https://the-overlord.net/index.php?/files/file/101-batman-gotham-city-chronicles-versus-mode-booklet/&do=download&csrfKey=37a764e1a920be703e8cd4179343c9a8"
-            },
-            "pages": {
-                "fr": 21,
-                "en": 21
-            },
             "origins": ["versus"]
         } ,        
         {
             "id": "wayne-manor",
-            "title": {
-                "fr": "Wayne Manor",
-                "en": "Wayne Manor"
-            },
-            "download": {
-                "fr": "https://the-overlord.com/index.php?/files/file/162-batman-gotham-city-chronicles-livret-wayne-manor/&do=download&csrfKey=1aab082bed1ee824d34579c9ed2e4cf7",
-                "en": "https://the-overlord.net/index.php?/files/file/102-batman-gotham-city-chronicles-wayne-manor-booklet/&do=download&csrfKey=37a764e1a920be703e8cd4179343c9a8"
-            },
-            "pages": {
-                "fr": 5,
-                "en": 5
-            },
             "origins": ["wayne-manor"]
         } ,        
         {
             "id": "narrows",
-            "title": {
-                "fr": "Narrows Chronicles",
-                "en": "Narrows Chronicles"
-            },
-            "download": {
-                "fr": "https://the-overlord.com/index.php?/files/file/159-batman-gotham-city-chronicles-livret-narrows-chronicles/&do=download&csrfKey=6511709efb90be88ce81de8ae0973d19",
-                "en": "https://the-overlord.net/index.php?/files/file/98-batman-gotham-city-chronicles-narrows-chronicles-booklet/&do=download&csrfKey=13ba91465f0a9eabcc05c76aca3e785f"
-            },
-            "pages": {
-                "fr": 1,
-                "en": 1
-            },
             "origins": ["narrows-chronicles"]
         }        
     ]

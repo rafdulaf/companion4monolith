@@ -1,0 +1,182 @@
+{
+    "types": {
+        "box": {
+            "text": "Game box"
+        },
+        "season1-expansions": {
+            "text": "Season 1 Expansions"
+        },
+        "season2-expansions": {
+            "text": "Season 2 Expansions"
+        },
+        "season2-add-on": {
+            "text": "Season 2 add-ons"
+        },
+        "season2-picking-zone": {
+            "text": "Picking zone"
+        }
+    },
+    "list": {
+        "corebox": {
+            "title": "Core box",
+            "short": "Core box"
+        },
+        "arkham-asylum": {
+            "title": "\"Arkham asylum\" expansion box",
+            "short": "Arkham asylum box"
+        },
+        "wayne-manor": {
+            "title": "\"Wayne Manor\" expansion box",
+            "short": "Wayne Manor box"
+        },
+        "batmobile": {
+            "title": "Batmobile",
+            "short": "Batmobile"
+        },
+        "versus": {
+            "title": "Versus mode",
+            "short": "Versus mode"
+        },
+        "narrows-chronicles": {
+            "title": "The Narrows Chronicles",
+            "short": "The Narrows Chronicles"
+        },
+        "dice-pack": {
+            "title": "Dice pack",
+            "short": "Dice pack"
+        },
+        "suicide-squad": {
+            "title": "Suicide Squad",
+            "short": "Suicide Squad"
+        },
+        "batman-inc": {
+            "title": "Batman Inc.",
+            "short": "Batman Inc."
+        },
+        "league-of-assassins": {
+            "title": "League of assassins",
+            "short": "League of assassins"
+        },
+        "5-player": {
+            "title": "5 player",
+            "short": "5 player"
+        },
+        "maps-pack": {
+            "title": "GCPD/Sewers maps expansion",
+            "short": "Maps pack"
+        },
+        "poison-ivy-new-52": {
+            "title": "Poison Ivy New 52",
+            "short": "Poison Ivy New 52"
+        },
+        "batman-new-52": {
+            "title": "Batman new 52",
+            "short": "Batman new 52"
+        },
+        "prof-pyg-gang": {
+            "title": "Prof. Pyg's gang",
+            "short": "Prof. Pyg's gang"
+        },
+        "batman-beyond": {
+            "title": "Batman Beyond",
+            "short": "Batman Beyond"
+        },
+        "batman-rebirth": {
+            "title": "Batman Rebirth",
+            "short": "Batman Rebirth"
+        },
+        "gang-robin": {
+            "title": "Gang of Robin",
+            "short": "Gang of Robin"
+        },
+        "hawkfire": {
+            "title": "Hawkfire",
+            "short": "Hawkfire"
+        },
+        "etrigan": {
+            "title": "Etrigan",
+            "short": "Etrigan"
+        },
+        "catwoman": {
+            "title": "Catwoman",
+            "short": "Catwoman"
+        },
+        "hounds": {
+            "title": "Hounds",
+            "short": "Hounds"
+        },
+        "reaper": {
+            "title": "Reaper",
+            "short": "Reaper"
+        },
+        "carmine-falcone": {
+            "title": "Carmine Falcone",
+            "short": "Carmine Falcone"
+        },
+        "arnold-wesker": {
+            "title": "Ventriloquist (Arnold Wesker)",
+            "short": "Arnold Wesker"
+        },
+        "peyton-riley": {
+            "title": "Ventriloquist (Peyton Riley)",
+            "short": "Peyton Riley"
+        },
+        "white-rabbit": {
+            "title": "White Rabbit",
+            "short": "White Rabbit"
+        },
+        "uriah-boone": {
+            "title": "Talon (Uriah Boone)",
+            "short": "Talon (Uriah Boone)"
+        },
+        "shen-fang": {
+            "title": "Shen Fang",
+            "short": "Shen Fang"
+        },
+        "cluemaster": {
+            "title": "Cluemaster",
+            "short": "Cluemaster"
+        },
+        "deacon-blackfire": {
+            "title": "Deacon Blackfire",
+            "short": "Deacon Blackfire"
+        },
+        "kgbeast": {
+            "title": "KGBeast",
+            "short": "KGBeast"
+        },
+        "nobody": {
+            "title": "Nobody",
+            "short": "Nobody"
+        },
+        "owlman-lincoln-march": {
+            "title": "Owlman (Lincoln March)",
+            "short": "Owlman (Lincoln March)"
+        },
+        "amygdala": {
+            "title": "Amygdala",
+            "short": "Amygdala"
+        },
+        "architect": {
+            "title": "The Architect",
+            "short": "The Architect"
+        },
+        "ghost-dragons": {
+            "title": "Ghost Dragons",
+            "short": "Ghost Dragons"
+        },
+        "great-white-shark": {
+            "title": "The Great White Shark",
+            "short": "The Great White Shark"
+        },
+        "mr-freeze": {
+            "title": "Mr. Freeze",
+            "short": "Mr. Freeze"
+        },
+        "red-hood": {
+            "title": "Red Hood",
+            "short": "Red Hood"
+        }
+    }
+}
+    

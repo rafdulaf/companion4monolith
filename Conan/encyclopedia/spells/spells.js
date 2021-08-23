@@ -1,89 +1,20 @@
 var EncyclopediaSpells = {
-    _i18n: {
-        'fr': {
-            'tab': "Sorts",
-            'transfertToStudio': "Copier la carte dans le studio",
-            'transfertOK': "La carte a été copiée dans le studio des cartes de sorts",
-            'transfertConfirm': "Voulez-vous copier la carte dans le studio pour pouvoir la modifier ou l'imprimer ?",
-            'from': "Disponible dans :",
-            'fromAnd': "et",
-            'card': "exemplaire",
-            'cards': "exemplaires",
-            'clarification': "Clarification :",
-            'skill': "Compétence :",
-            'tokensUsed': "Utilise les jetons :"
-        },
-        'en': {
-            'tab': "Spells",
-            'transfertToStudio': "Copy the card into the studio",
-            'transfertOK': "The card was copied to the spell cards studio",
-            'transfertConfirm': "Do you want to copy the card into the studio in order to edit it or print it?",
-            'from': "Available in:",
-            'fromAnd': "and",
-            'card': "copy",
-            'cards': "copies",
-            'clarification': "Clarification:",
-            'skill': "Skill:",
-            'tokensUsed': "Use the tokens:"
-          },
-          'it': {
-              'tab': "Incantesimi",
-              'transfertToStudio': "Copia la carta nello Studio",
-              'transfertOK': "La carta è stata copiata nello Studio",
-              'transfertConfirm': "Vuoi copiare la carta nello Studio per modificarla o stamparla?",
-              'from': "Disponibile in:",
-              'fromAnd': "e",
-              'card': "copia",
-              'cards': "copie",
-              'clarification': "Chiarificazione:",
-              'skill': "Abilità:",
-              'tokensUsed': "Usa il segnalino :"
-          }
-    },
-
     preinit: function()
     {
-        Encyclopedia._slides.push({   label: EncyclopediaSpells._i18n[Language].tab, id: "encyclopedia-spell", onShow: EncyclopediaSpells.onShow,  onHide: EncyclopediaSpells.onHide });
+        Encyclopedia._slides.push({   label: EncyclopediaSpells._i18n.tab, id: "encyclopedia-spell", onShow: EncyclopediaSpells.onShow,  onHide: EncyclopediaSpells.onHide });
 
-        EncyclopediaSpells._facets = [
+        EncyclopediaSpells._facets = Utils.mergeObject([
             {
                 id: 'keyword',
-                label: {
-                    'fr': "Mot-clé",
-                    'en': "Keyword",
-                    'it': "Parola chiave"
-                },
                 filter: function(item, value)
                 {
-                    return (item.title[Language + '_deemphasized'] + item.text[Language + '_deemphasized']).indexOf(Rules._deemphasize(value)) != -1;
+                    return (item.title_deemphasized + item.text_deemphasized).indexOf(Rules._deemphasize(value)) != -1;
                 }
             },
 
             {
                 id: 'expansions',
-                label: {
-                    'fr': "Status",
-                    'en': "Status",
-                    'it': "Stato"
-                },
-                values: [
-                    {
-                        id: "yes",
-                        label: {
-                            'fr': "Possédées",
-                            'en': "Owned",
-                            'it': "Nella collezione"
-                        }
-                    },
-                    {
-                        id: "no",
-                        label: {
-                            'fr': "Manquantes",
-                            'en': "Missing",
-                            'it': "Mancante"
-                        }
-                    }
-                ],
+                values: [ { id: "yes" }, { id: "no" } ],
                 filter: function(item, selectedValues) {
                     if (selectedValues.length != 1)
                     {
@@ -100,11 +31,6 @@ var EncyclopediaSpells = {
 
             {
                 id: 'origins',
-                label: {
-                    'fr': "Origine",
-                    'en': "Origin",
-                    'it': "Origine"
-                },
                 values: (function() {
                     var values = [];
                     for (var i in Encyclopedia.expansions.types)
@@ -155,29 +81,7 @@ var EncyclopediaSpells = {
 
             {
                 id:'zone',
-                label: {
-                    'fr': "Sort de zone",
-                    'en': "Area spell",
-                    'it': "Ad Area"
-                },
-                values: [
-                    {
-                        id: "no",
-                        label: {
-                            'fr': "Non",
-                            'en': "No",
-                            'it': "No"
-                        }
-                    },
-                    {
-                        id: "yes",
-                        label: {
-                            'fr': "Oui",
-                            'en': "Yes",
-                            'it': "Sì"
-                        }
-                    }
-                ],
+                values: [ { id: "no" }, { id: "yes" } ],
                 filter: function(item, selectedValues) {
                     return (item.explosion == true && (selectedValues.indexOf('yes')!=-1))
                         || (item.explosion == false && (selectedValues.indexOf('no')!=-1));
@@ -186,29 +90,7 @@ var EncyclopediaSpells = {
 
             {
                 id:'reaction',
-                label: {
-                    'fr': "Sort réaction",
-                    'en': "Reaction spell",
-                    'it': "Di Reazione"
-                },
-                values: [
-                    {
-                        id: "no",
-                        label: {
-                            'fr': "Non",
-                            'en': "No",
-                            'it': "No"
-                        }
-                    },
-                    {
-                        id: "yes",
-                        label: {
-                            'fr': "Oui",
-                            'en': "Yes",
-                            'it': "Sì"
-                        }
-                    }
-                ],
+                values: [ { id: "no" }, { id: "yes" } ],
                 filter: function(item, selectedValues) {
                     return (item.reaction == true && (selectedValues.indexOf('yes')!=-1))
                         || (item.reaction == false && (selectedValues.indexOf('no')!=-1));
@@ -217,30 +99,8 @@ var EncyclopediaSpells = {
 
             {
                 id:'side',
-                label: {
-                    'fr': "Camp",
-                    'en': "Side",
-                    'it': "Fazione"
-                },
                 operator: "or/and",
-                values: [
-                    {
-                        id: "heroes",
-                        label: {
-                            'fr': "Héros",
-                            'en': "Heroes",
-                            'it': "Eroi"
-                        }
-                    },
-                    {
-                        id: "overlord",
-                        label: {
-                            'fr': "Overlord",
-                            'en': "Overlord",
-                            'it': "Overlord"
-                        }
-                    }
-                ],
+                values: [ { id: "heroes" }, { id: "overlord" } ],
                 filter: function(item, selectedValues) {
                     return (item.forOverlord == true && (selectedValues.indexOf('overlord')!=-1))
                         || (item.forHeroes == true && (selectedValues.indexOf('heroes')!=-1));
@@ -249,78 +109,11 @@ var EncyclopediaSpells = {
 
             {
                 id:'theme',
-                label: {
-                    'fr': "Thème",
-                    'en': "Theme",
-                    'it': "Tipologia"
-                },
                 sort: true,
                 operator: "or/and",
                 values: [
-                    {
-                        id: "forAttack",
-                        label: {
-                            'fr': "Attaque",
-                            'en': "Attack",
-                            'it': "Attacco"
-                        }
-                    },
-                    {
-                        id: "forFight",
-                        label: {
-                            'fr': "Dé de combat",
-                            'en': "Fight die",
-                            'it': "Combattimento"
-                        }
-                    },
-                    {
-                        id: "forDefense",
-                        label: {
-                            'fr': "Dé de défense",
-                            'en': "Defense die",
-                            'it': "Difesa"
-                        }
-                    },
-                    {
-                        id: "forMove",
-                        label: {
-                            'fr': "Déplacement",
-                            'en': "Move",
-                            'it': "Movimento"
-                        }
-                    },
-                    {
-                        id: "forManipulation",
-                        label: {
-                            'fr': "Manipulation",
-                            'en': "Manipulation",
-                            'it': "Manipolazione"
-                        }
-                    },
-                    {
-                        id: "forSkill",
-                        label: {
-                            'fr': "Compétence",
-                            'en': "Skill",
-                            'it': "Abilità"
-                        }
-                    },
-                    {
-                        id: "forRange",
-                        label: {
-                            'fr': "A distance",
-                            'en': "Range",
-                            'it': "Distanza"
-                        }
-                    },
-                    {
-                        id: "forEnergy",
-                        label: {
-                            'fr': "Gemmes",
-                            'en': "Gems",
-                            'it': "Gemme"
-                        }
-                    }
+                    { id: "forAttack" }, { id: "forFight" }, { id: "forDefense" }, { id: "forMove" },
+                    { id: "forManipulation" }, { id: "forSkill" }, { id: "forRange" }, { id: "forEnergy" }
                 ],
                 filter: function(item, selectedValues) {
                     return (item.forSkill != false && (selectedValues.indexOf('forSkill')!=-1))
@@ -336,36 +129,13 @@ var EncyclopediaSpells = {
 
             {
                 id:'empty',
-                label: {
-                    'fr': "Cartes",
-                    'en': "Cards",
-                    'it': "Carte"
-                },
-                values: [
-                    {
-                        id: "no",
-                        label: {
-                            'fr': "Remplies",
-                            'en': "Filled",
-                            'it': "Piene"
-                        },
-                        defaults: true
-                    },
-                    {
-                        id: "yes",
-                        label: {
-                            'fr': "Vierges",
-                            'en': "Blank",
-                            'it': "Vuote"
-                        }
-                    }
-                ],
+                values: [ { id: "no", defaults: true }, { id: "yes" } ],
                 filter: function(item, selectedValues) {
-                    return (item.text[Language] == '' && (selectedValues.indexOf('yes')!=-1))
-                        || (item.text[Language] != '' && (selectedValues.indexOf('no')!=-1));
+                    return (item.text == '' && (selectedValues.indexOf('yes')!=-1))
+                        || (item.text != '' && (selectedValues.indexOf('no')!=-1));
                 }
             }
-        ]
+        ], EncyclopediaSpells._facets);
     },
 
     init: function()
@@ -382,8 +152,8 @@ var EncyclopediaSpells = {
         var spells = "";
 
         Encyclopedia.spells.list.sort(function(s1, s2) { 
-            var name1 = s1.sort && s1.sort[Language] ? s1.sort[Language] : s1.title[Language];
-            var name2 = s2.sort && s2.sort[Language] ? s2.sort[Language] : s2.title[Language];
+            var name1 = s1.sort && s1.sort ? s1.sort : s1.title;
+            var name2 = s2.sort && s2.sort ? s2.sort : s2.title;
             return name1.toLowerCase().localeCompare(name2.toLowerCase()); 
         })
 
@@ -446,11 +216,11 @@ var EncyclopediaSpells = {
     {
         return {
             id: spell.id + "-" + Math.random(),
-            name: spell.title[Language],
-            longName: spell.titleLong && spell.titleLong[Language],
-            text: spell.text[Language],
-            textSize: spell.textStyle[Language].textSize,
-            textInter: spell.textStyle[Language].textInter,
+            name: spell.title,
+            longName: spell.titleLong && spell.titleLong,
+            text: spell.text,
+            textSize: spell.textStyle.textSize,
+            textInter: spell.textStyle.textInter,
             cost: spell.cost,
             saturation: spell.saturation,
             image: spell.image ? spell.image + "?version=" + Version : null,
@@ -539,8 +309,8 @@ var EncyclopediaSpells = {
         var originString = "";
         for (var i in originsCount)
         {
-            if (originString) originString += " " + EncyclopediaSpells._i18n[Language].fromAnd + " ";
-            originString += Encyclopedia._getOrigin(i) + " (" + originsCount[i] + " " + (originsCount[i] == 1 ? EncyclopediaSpells._i18n[Language].card : EncyclopediaSpells._i18n[Language].cards) + ")";
+            if (originString) originString += " " + EncyclopediaSpells._i18n.fromAnd + " ";
+            originString += Encyclopedia._getOrigin(i) + " (" + originsCount[i] + " " + (originsCount[i] == 1 ? EncyclopediaSpells._i18n.card : EncyclopediaSpells._i18n.cards) + ")";
         }
 
         var tokens = "";
@@ -554,20 +324,20 @@ var EncyclopediaSpells = {
         }
 
         var spell = spells[0];
-        Nav.dialog(spell.title[Language],
+        Nav.dialog(spell.title,
             "<div class='spelldetails'>"
                 + CardSpell._cardCode(EncyclopediaSpells._convertSpellToStudio(spell))
                 + "<div class='minwidth'></div>"
-                + "<div class='from'>" + EncyclopediaSpells._i18n[Language].from + " "
+                + "<div class='from'>" + EncyclopediaSpells._i18n.from + " "
                     + originString
                 + "</div>"
-                + ((spell.clarification && spell.clarification[Language]) ?"<div class='clarification'>" + EncyclopediaSpells._i18n[Language].clarification + " " + spell.clarification[Language].replace(/\n/g, "<br/>") + "</div>" : "")
-                + (spell.forSkill ? "<div class='skill'>" + EncyclopediaSpells._i18n[Language].skill + " " + Rules._linkToSkill(spell.forSkill, true) + "</div>" : "")
-                + (tokens ? ("<div class='tokens'>" + EncyclopediaSpells._i18n[Language].tokensUsed + " " + tokens + "</div>") : "")
+                + ((spell.clarification && spell.clarification) ?"<div class='clarification'>" + EncyclopediaSpells._i18n.clarification + " " + spell.clarification.replace(/\n/g, "<br/>") + "</div>" : "")
+                + (spell.forSkill ? "<div class='skill'>" + EncyclopediaSpells._i18n.skill + " " + Rules._linkToSkill(spell.forSkill, true) + "</div>" : "")
+                + (tokens ? ("<div class='tokens'>" + EncyclopediaSpells._i18n.tokensUsed + " " + tokens + "</div>") : "")
             + "</div>",
             null,
             [{
-                label: EncyclopediaSpells._i18n[Language].transfertToStudio,
+                label: EncyclopediaSpells._i18n.transfertToStudio,
                 icon: "encyclopedia-spell-tostudio",
                 fn: "EncyclopediaSpells._transfert('" + id + "');"
             }]
@@ -575,7 +345,7 @@ var EncyclopediaSpells = {
     },
 
     _transfert: function(id) {
-        if (confirm(EncyclopediaSpells._i18n[Language].transfertConfirm))
+        if (confirm(EncyclopediaSpells._i18n.transfertConfirm))
         {
             var spell = EncyclopediaSpells._findSpellsById(id)[0];
             var studioSpell = EncyclopediaSpells._convertSpellToStudio(spell);
@@ -590,13 +360,13 @@ var EncyclopediaSpells = {
             $("#studio .nav-wrapper").slick('slickGoTo', $("#spell").index());
             $("#spell").animate({ scrollTop: $('#spell > *:last()').position().top },500);
 
-            About.warnToast(EncyclopediaSpells._i18n[Language].transfertOK)
+            About.warnToast(EncyclopediaSpells._i18n.transfertOK)
             Nav.closeDialog(true);
         }
     },
 
     _linkToSpell: function(id) {
-        return "<a href='javascript:void(0)' onclick='EncyclopediaSpells.openSpell(\"" + id + "\")'>" + EncyclopediaSpells._findSpellsById(id)[0].title[Language] + "</a>";
+        return "<a href='javascript:void(0)' onclick='EncyclopediaSpells.openSpell(\"" + id + "\")'>" + EncyclopediaSpells._findSpellsById(id)[0].title + "</a>";
     }
 
 }

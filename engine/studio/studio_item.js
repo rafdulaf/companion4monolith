@@ -10,11 +10,11 @@ var StudioItem = {
     _itemHeight: 300,
     
     preinit: function() {
-        Studio._slides.push({   label: this._i18n[Language].tab, id: this.name, onShow: this.onShow.bind(this),  onHide: this.onHide.bind(this) });
+        Studio._slides.push({   label: this._i18n.tab, id: this.name, onShow: this.onShow.bind(this),  onHide: this.onHide.bind(this) });
     },
 
     init: function() {
-        Nav.addFloatingAction(this.name, this._i18n[Language].newcard, "studio-icon-add", this.name + "-add", this.add.bind(this));
+        Nav.addFloatingAction(this.name, this._i18n.newcard, "studio-icon-add", this.name + "-add", this.add.bind(this));
         this.onHide();
         $("#" + this.name).html("<div class='inside'><div id='" + this.name + "-inside'></div></div>");
         Nav.createFloatingBar(this.name);
@@ -43,20 +43,20 @@ var StudioItem = {
     add: function(card)
     {
         var actions = [{
-                label: Studio._i18n[Language].save,
+                label: Studio._i18n.save,
                 icon: "studio-save",
                 fn: this.cls + "._save();"
         }];
         if (card != undefined)
         {
             actions.push({
-                label: Studio._i18n[Language].remove,
+                label: Studio._i18n.remove,
                 icon: "studio-remove",
                 fn: this.cls + "._remove();"
             });
         }
 
-        var dlabel = card == undefined ? this._i18n[Language].newcard : this._i18n[Language].editcard;
+        var dlabel = card == undefined ? this._i18n.newcard : this._i18n.editcard;
         this._add(card, dlabel, actions);
     },
     
@@ -69,7 +69,7 @@ var StudioItem = {
 
     _remove: function()
     {
-        if (confirm(Studio._i18n[Language].removeConfirm))
+        if (confirm(Studio._i18n.removeConfirm))
         {
             var card = this._form2card();
 

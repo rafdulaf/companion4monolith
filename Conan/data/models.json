@@ -1206,12 +1206,7 @@
             "type": "scenery",
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/",
-            "count": 2,
-            "name": {
-                "fr": "Pile de crânes",
-                "en": "Pile of Skulls",
-                "it": "Pila di teschi"
-            }
+            "count": 2
         },
         {
             "id": "bones",
@@ -1221,12 +1216,7 @@
             "type": "scenery",
             "origins": ["adventurepack"],
             "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/",
-            "count": 2,
-            "name": {
-                "fr": "Pile de crânes",
-                "en": "Pile of Skulls",
-                "it": "Pila di teschi"
-            }
+            "count": 2
         },
         {
             "id": "sarcophagus",
@@ -1235,12 +1225,7 @@
             "paint": { "name": "Cochon", "link": "https://the-overlord.com/index.php?/profile/5240-cochon/"},
             "type": "scenery",
             "origins": ["stretchgoal"],
-            "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/",
-            "name": {
-                "fr": "Sarcophage",
-                "en": "Sarcophagus",
-                "it": "Sarcofago"
-            }
+            "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/"
         },
         {
             "id": "sarcophagus",
@@ -1249,12 +1234,7 @@
             "paint": { "name": "Cochon", "link": "https://the-overlord.com/index.php?/profile/5240-cochon/"},
             "type": "scenery",
             "origins": ["adventurepack"],
-            "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/",
-            "name": {
-                "fr": "Sarcophage",
-                "en": "Sarcophagus",
-                "it": "Sarcofago"
-            }
+            "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/"
         },
         {
             "id": "bookcase",
@@ -1263,12 +1243,7 @@
             "paint": { "name": "Cochon", "link": "https://the-overlord.com/index.php?/profile/5240-cochon/"},
             "type": "scenery",
             "origins": ["stretchgoal"],
-            "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/",
-            "name": {
-                "fr": "Bibliothèque",
-                "en": "Bookcase",
-                "it": "Libreria"
-            }
+            "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/"
         },
         {
             "id": "torch-stand",
@@ -1278,11 +1253,6 @@
             "type": "scenery",
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/",
-            "name": {
-                "fr": "Torche",
-                "en": "Torch",
-                "it": "Torcia"
-            },
             "count": 5
         },
         
@@ -1303,12 +1273,7 @@
             "paint": null,
             "type": "scenery",
             "origins": ["adventurepack"],
-            "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/",
-            "name": {
-                "fr": "Peau de bête",
-                "en": "Animal skin",
-                "it": "Pelle animale"
-            }
+            "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/"
         },
         
         {

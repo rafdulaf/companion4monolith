@@ -1,0 +1,97 @@
+{
+    "list": {
+        "trap": {
+            "name": "Fossa"
+        },
+        "chair": {
+            "name": "Sedia"
+        },
+        "palisade": {
+            "name": "Palizzata"
+        },
+        "palisade-life": {
+            "name": "Punti vita delle palizzate"
+        },
+        "reinforcement": {
+            "name": "Rinforzo"
+        },
+        "barrel": {
+            "name": "Barile"
+        },
+        "time": {
+            "name": "Segnalino Turno"
+        },
+        "invocation": {
+            "name": "Invocazione"
+        },
+        "alarm": {
+            "name": "Allarme"
+        },
+        "energy": {
+            "name": "Energia"
+        },
+        "mitra-halo": {
+            "name": "Aura di Mitra"
+        },
+        "set-halo": {
+            "name": "Aura di Set"
+        },
+        "wrecked-wall": {
+            "name": "Breccia"
+        },
+        "chest-mark": {
+            "name": "Segnalino Tesoro"
+        },
+        "marker": {
+            "name": "Segnalino numerato"
+        },
+        "scree": {
+            "name": "Frana"
+        },
+        "water": {
+            "name": "Acqua"
+        },
+        "web": {
+            "name": "Ragnatela"
+        },
+        "door": {
+            "name": "Porta"
+        },
+        "chest": {
+            "name": "Forziere"
+        },
+        "table": {
+            "name": "Tavolo"
+        },
+        "stairs": {
+            "name": "Scale"
+        },
+        "fire": {
+            "name": "Fiamma"
+        },
+        "well-big": {
+            "name": "Pozzo grande"
+        },
+        "iced-atali": {
+            "name": "Atali congelata"
+        },
+        "iced-armor": {
+            "name": "Armatura congelata"
+        },
+        "assassins": {
+            "name": "Assassino"
+        },
+        "well": {
+            "name": "Pozzo"
+        },
+        "secret": {
+            "name": "Passaggio segreto"
+        },
+        "poison": {
+            "name": "Veleno"
+        },
+        "bridge": {
+            "name": "Ponte"
+        }
+    }
+}

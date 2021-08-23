@@ -1,102 +1,21 @@
 var EncyclopediaHeroes = {
-    _i18n: {
-        'fr': {
-            'tab': "Héros",
-            'transfertToStudio': "Copier la fiche dans le studio",
-            'transfertOK': "La fiche a été copiée dans le studio des fiches de héros",
-            'transfertConfirm': "Voulez-vous copier la fiche dans le studio pour pouvoir la modifier ou l'imprimer ?",
-            'download': "Télécharger le document",
-            'from': "Disponible dans :",
-            'fromAnd': "<br/>et",
-            'skill': "Compétences :",
-            'story': "Histoire :",
-            'class': "Classe en mode coopératif :",
-            'class-warrior': "Guerrier",
-            'class-rogue': "Maraudeur",
-            'class-sorcerer': "Sorcier",
-            'class-mercenary': "Mercenaire",
-            'class-nr': " (déconseillé pour raison thématique ou pour leur potentiel à déséquilibrer le jeu)"
-        },
-        'en': {
-            'tab': "Heroes",
-            'transfertToStudio': "Copy the sheet into the studio",
-            'transfertOK': "The sheet was copied to the heroes sheets studio",
-            'transfertConfirm': "Do you want to copy the sheet into the studio in order to edit it or print it?",
-            'download': "Download the document",
-            'from': "Available in:",
-            'fromAnd': "<br/>and",
-            'skill': "Skills:",
-            'story': "Story :",
-            'class': "Class in cooperative mode:",
-            'class-warrior': "Warrior",
-            'class-rogue': "Rogue",
-            'class-sorcerer': "Sorcerer",
-            'class-mercenary': "Sellsword",
-            'class-nr': " (not recommended for thematic readons or due to their potential to affect balance)"
-        },
-        'it': {
-            'tab': "Eroi",
-            'transfertToStudio': "Copia nello Studio",
-            'transfertOK': "La scheda dell'Eroe è stata copiata nello Studio",
-            'transfertConfirm': "Vuoi copiare la scheda nello Studio per modificarla o stamparla?",
-            'download': "Scarica il documento",
-            'from': "Disponibile in:",
-            'fromAnd': "<br/>e",
-            'skill': "Abilità:",
-            'story': "Storia:",
-            'class': "Classe in modalità cooperativa:",
-            'class-warrior': "Guerriero",
-            'class-rogue': "Ladro",
-            'class-sorcerer': "Mago",
-            'class-mercenary': "Mercenario",
-            'class-nr': " (sconsigliato per motivi tematici o per la loro potenzialità di sbilanciare il gioco)"
-        }
-    },
-
     preinit: function()
     {
-        Encyclopedia._slides.push({   label: EncyclopediaHeroes._i18n[Language].tab, id: "encyclopedia-heroes", onShow: EncyclopediaHeroes.onShow,  onHide: EncyclopediaHeroes.onHide });
+        Encyclopedia._slides.push({   label: EncyclopediaHeroes._i18n.tab, id: "encyclopedia-heroes", onShow: EncyclopediaHeroes.onShow,  onHide: EncyclopediaHeroes.onHide });
 
 
-        EncyclopediaHeroes._facets = [
+        EncyclopediaHeroes._facets = Utils.mergeObject([
             {
                 id: 'keyword',
-                label: {
-                    'fr': "Mot-clé",
-                    'en': "Keyword",
-                    'it': "Parola chiave"
-                },
                 filter: function(item, value)
                 {
-                    return (item.name[Language + '_deemphasized'] + (item.subname ? ' ' + item.subname[Language + '_deemphasized'] : '')).indexOf(Rules._deemphasize(value)) != -1;
+                    return (item.name_deemphasized + (item.subname ? ' ' + item.subname_deemphasized : '')).indexOf(Rules._deemphasize(value)) != -1;
                 }
             },
 
             {
                 id: 'expansions',
-                label: {
-                    'fr': "Status",
-                    'en': "Status",
-                    'it': "Stato"
-                },
-                values: [
-                    {
-                        id: "yes",
-                        label: {
-                            'fr': "Possédées",
-                            'en': "Owned",
-                            'it': "Nella collezione"
-                        }
-                    },
-                    {
-                        id: "no",
-                        label: {
-                            'fr': "Manquantes",
-                            'en': "Missing",
-                            'it': "Mancante"
-                        }
-                    }
-                ],
+                values: [ { id: "yes" }, { id: "no" } ],
                 filter: function(item, selectedValues) {
                     if (selectedValues.length != 1)
                     {
@@ -113,11 +32,6 @@ var EncyclopediaHeroes = {
 
             {
                 id: 'origins',
-                label: {
-                    'fr': "Origine",
-                    'en': "Origin",
-                    'it': "Origine"
-                },
                 values: (function() {
                     var values = [];
                     for (var i in Encyclopedia.expansions.types)
@@ -168,16 +82,7 @@ var EncyclopediaHeroes = {
 
             {
                 id: 'gems',
-                label: {
-                    'fr': "Gemmes",
-                    'en': "Gems",
-                    'it': "Gemme"
-                },
-                values: [
-                        { id: '-9', label: { 'fr': 'Moins de 9', 'en': 'Less than 9', 'it': 'Meno di 9' }},
-                        { id: '10-11', label: { 'fr': '10 ou 11', 'en': '10 or 11', 'it': '10 o 11' }},
-                        { id: '12-', label: { 'fr': 'Plus de 12', 'en': 'More than 12', 'it': 'Più di 12' }}
-                ],
+                values: [ { id: '-9' }, { id: '10-11' }, { id: '12-' } ],
                 filter: function(item, selectedValues) {
                     return (item.gems <= 9 && selectedValues.indexOf('-9') != -1)
                         || (item.gems > 9 && item.gems < 12 && selectedValues.indexOf('10-11') != -1)
@@ -187,19 +92,9 @@ var EncyclopediaHeroes = {
 
             {
                 id: 'reddie',
-                label: {
-                    'fr': "Force",
-                    'en': "Strenght",
-                    'it': "Talento"
-                },
                 sort: true,
                 operator: "or/and",
-                values: [
-                    { id: 'melee', label: {'fr':"Corps à corps", 'en':"Melee", 'it':"Mischia" } },
-                    { id: 'ranged', label: {'fr':"A distance", 'en':"Ranged", 'it':"Distanza"} },
-                    { id: 'guard', label: {'fr':"Défense", 'en':"Guard", 'it':"Difesa"} },
-                    { id: 'manipulation', label: {'fr':"Manipulation", 'en':"Manipulation", 'it':"Manipolazione"} }
-                ],
+                values: [ { id: 'melee' }, { id: 'ranged' }, { id: 'guard' }, { id: 'manipulation' } ],
                 filter: function(item, selectedValues) {
                     return (selectedValues.indexOf("melee") != -1 && (item.melee.dice.startsWith("red") || item.melee.dice.startsWith("orangereroll")))
                         || (selectedValues.indexOf("ranged") != -1 && (item.ranged.dice.startsWith("red") || item.ranged.dice.startsWith("orangereroll")))
@@ -210,11 +105,6 @@ var EncyclopediaHeroes = {
 
             {
                 id: 'skills',
-                label: {
-                    'fr': "Compétences",
-                    'en': "Skills",
-                    'it': "Abilità"
-                },
                 sort: true,
                 operator: "or/and",
                 values: (function() {
@@ -241,22 +131,11 @@ var EncyclopediaHeroes = {
 
             {
                 id: 'class',
-                label: {
-                    'fr': "Classe COOP",
-                    'en': "COOP class",
-                    'it': "Classe COOP"
-                },
                 operator: "or/and",
                 values: [
-                    { id: 'warrior', label: {'fr':"Guerrier", 'en':"Warrior", 'it':"Guerriero" } },
-                    { id: 'rogue', label: {'fr':"Maraudeur", 'en':"Rogue", 'it':"Ladro"} },
-                    { id: 'sorcerer', label: {'fr':"Sorcier", 'en':"Sorcerer", 'it':"Mago"} },
-                    { id: 'mercenary', label: {'fr':"Mercenaire", 'en':"Sellsword", 'it':"Mercenario"} },
-                    { id: 'warrior-nr', label: {'fr':"Guerrier (déconseillé)", 'en':"Warrior (not recommended)", 'it':"Guerriero (sconsigliato)"} },
-                    { id: 'rogue-nr', label: {'fr':"Voleur (déconseillé)", 'en':"Rogue (not recommended)", 'it':"Ladro (sconsigliato)"} },
-                    { id: 'sorcerer-nr', label: {'fr':"Sorcier (déconseillé)", 'en':"Sorcerer (not recommended)", 'it':"Mago (sconsigliato)"} },
-                    { id: 'mercenary-nr', label: {'fr':"Mercenaire (déconseillé)", 'en':"Sellsword (not recommended)", 'it':"Mercenario (sconsigliato)"} },
-                    { id: 'none', label: {'fr':"Aucun", 'en':"None", 'it':"Nessuna"} }
+                    { id: 'warrior' }, { id: 'rogue' }, { id: 'sorcerer' }, { id: 'mercenary' },
+                    { id: 'warrior-nr' }, { id: 'rogue-nr' }, { id: 'sorcerer-nr' }, { id: 'mercenary-nr' },
+                    { id: 'none' }
                 ],
                 filter: function(item, selectedValues) {
                     for (var i=0 ; i < selectedValues.length; i++)
@@ -282,7 +161,7 @@ var EncyclopediaHeroes = {
                     return false;
                 }
             }
-        ]
+        ], EncyclopediaHeroes._facets);
     },
 
     init: function()
@@ -299,9 +178,9 @@ var EncyclopediaHeroes = {
         var heroes = "";
 
         Encyclopedia.heroes.list.sort(function(s1, s2) {
-            var c = s1.name[Language].toLowerCase().localeCompare(s2.name[Language].toLowerCase());
+            var c = s1.name.toLowerCase().localeCompare(s2.name.toLowerCase());
             if (c == 0)
-                return (s1.subname ? s1.subname[Language] : "").localeCompare(s2.subname ? s2.subname[Language] : "");
+                return (s1.subname ? s1.subname : "").localeCompare(s2.subname ? s2.subname : "");
             else
                 return c;
         });
@@ -341,8 +220,8 @@ var EncyclopediaHeroes = {
     {
         return {
             id: hero.id + "-" + Math.random(),
-            name: hero.name[Language],
-            subname: hero.subname ? hero.subname[Language] : "",
+            name: hero.name,
+            subname: hero.subname ? hero.subname : "",
 
             image: hero.imageHD && hd ? hero.imageHD + "?version=" + Version : (hero.image ? hero.image + "?version=" + Version : null),
             imagelocation: hero.image_location || {x: "0", y: "50"},
@@ -409,7 +288,7 @@ var EncyclopediaHeroes = {
         var origins = sheet.origins.slice();
         for (var i in origins)
         {
-            if (originString) originString += " " + EncyclopediaHeroes._i18n[Language].fromAnd + " ";
+            if (originString) originString += " " + EncyclopediaHeroes._i18n.fromAnd + " ";
             originString += Encyclopedia._getOrigin(origins[i]);
         }
 
@@ -418,14 +297,14 @@ var EncyclopediaHeroes = {
         {
             skills += Rules._linkToSkill(sheet.skills[s].id, true);
         }
-        skills = "<div class='skill'>" + EncyclopediaHeroes._i18n[Language].skill + "<br/>" + skills;
+        skills = "<div class='skill'>" + EncyclopediaHeroes._i18n.skill + "<br/>" + skills;
         skills += "</div>";
 
         var superdetails = "";
         if (sheet.quote)
         {
-            superdetails += "<div class='superdetails'>" + EncyclopediaHeroes._i18n[Language].story + "<br/><div class='img' style='background-image: url(" + sheet.image + "?version=" + Version + ")'></div>";
-            superdetails += "<div><p>" + sheet.quote.text[Language].replace(/\n/g,'<br/><br/>') + "</p><p><span>" + sheet.quote.author.name + " - " + sheet.quote.origin[Language] + "</span></p>";
+            superdetails += "<div class='superdetails'>" + EncyclopediaHeroes._i18n.story + "<br/><div class='img' style='background-image: url(" + sheet.image + "?version=" + Version + ")'></div>";
+            superdetails += "<div><p>" + sheet.quote.text.replace(/\n/g,'<br/><br/>') + "</p><p><span>" + sheet.quote.author.name + " - " + sheet.quote.origin + "</span></p>";
             superdetails += "</div></div>";
         }
 
@@ -444,7 +323,7 @@ var EncyclopediaHeroes = {
         var classText = "";
         if (sheet['class'])
         {
-            classText = "<div class='classtext'>" + EncyclopediaHeroes._i18n[Language]['class'] + " ";
+            classText = "<div class='classtext'>" + EncyclopediaHeroes._i18n['class'] + " ";
             for (var i = 0; i < sheet['class'].length; i++)
             {
                 if (i != 0)
@@ -452,10 +331,10 @@ var EncyclopediaHeroes = {
                     classText += ", ";
                 }
                 
-                classText += EncyclopediaHeroes._i18n[Language]['class-' + sheet['class'][i].type];
+                classText += EncyclopediaHeroes._i18n['class-' + sheet['class'][i].type];
                 if (sheet['class'][i]['not-recommanded'])
                 {
-                    classText += EncyclopediaHeroes._i18n[Language]['class-nr'];
+                    classText += EncyclopediaHeroes._i18n['class-nr'];
                 }
             }
             classText += ".</div>";
@@ -465,20 +344,20 @@ var EncyclopediaHeroes = {
         if (sheet.pdf)
         {
             actions.push({
-                label: EncyclopediaHeroes._i18n[Language].download,
+                label: EncyclopediaHeroes._i18n.download,
                 icon: "encyclopedia-heroes-download",
                 fn: "EncyclopediaHeroes._download('" + id + "');"
             });
         }
         actions.push({
-            label: EncyclopediaHeroes._i18n[Language].transfertToStudio,
+            label: EncyclopediaHeroes._i18n.transfertToStudio,
             icon: "encyclopedia-heroes-tostudio",
             fn: "EncyclopediaHeroes._transfert('" + id + "');"
         });
 
-        Nav.dialog((sheet.name[Language] + (sheet.subname ? " " + sheet.subname[Language] : "")) || "",
+        Nav.dialog((sheet.name + (sheet.subname ? " " + sheet.subname : "")) || "",
             "<div class='herodetails'>"
-                + "<div class='from'>" + EncyclopediaHeroes._i18n[Language].from + " "
+                + "<div class='from'>" + EncyclopediaHeroes._i18n.from + " "
                     + originString
                 + "</div>"
                 + model
@@ -498,11 +377,9 @@ var EncyclopediaHeroes = {
     },
 
     _transfert: function(id) {
-        if (confirm(EncyclopediaHeroes._i18n[Language].transfertConfirm))
+        if (confirm(EncyclopediaHeroes._i18n.transfertConfirm))
         {
             var cards = JSON.parse(localStorage.getItem(HeroSheet.storage)) || [];
-
-            var images = {};
 
             var hero = EncyclopediaHeroes._findHeroById(id);
             var studioHero = EncyclopediaHeroes._convertHeroToStudio(hero, true);
@@ -516,13 +393,13 @@ var EncyclopediaHeroes = {
             $("#studio .nav-wrapper").slick('slickGoTo', $("#hero").index());
             $("#hero").animate({ scrollTop: $('#hero > *:last()').position().top },500);
 
-            About.warnToast(EncyclopediaHeroes._i18n[Language].transfertOK)
+            About.warnToast(EncyclopediaHeroes._i18n.transfertOK)
             Nav.closeDialog(true);
         }
     },
 
     _linkToHero: function(id) {
         var hero = EncyclopediaHeroes._findHeroById(id);
-        return "<a href='javascript:void(0)' onclick='EncyclopediaHeroes.openSheet(\"" + id + "\")'>" + hero.name[Language] + (hero.subname ? " " + hero.subname[Language] : "") + "</a>";
+        return "<a href='javascript:void(0)' onclick='EncyclopediaHeroes.openSheet(\"" + id + "\")'>" + hero.name + (hero.subname ? " " + hero.subname : "") + "</a>";
     }
 };

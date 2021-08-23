@@ -1,0 +1,273 @@
+{
+    "list" : {
+        "Pict_Village": {
+            "description": {
+                "title": "Pict village",
+                "rules": [
+                    {
+                        "title": "The hut flaps",
+                        "description": "The hut flaps at the entrance of each hut block lines of sight. A character must spend 1 extra movement point to move across a border into or out of a hut."
+                    }, {
+                        "title": "Wall wrecker",
+                        "description": "The huts with stone walls cannot be wrecked using Wall Wrecker."
+                    }, {
+                        "title": "Outer walls",
+                        "description": "The outer walls cannot be climbed over, or wrecked using Wall Wrecker."
+                    }, {
+                        "title": "Lines of sight",
+                        "description": "The bushes do not block lines of sight."
+                    }, {
+                        "title": "Wooden Huts",
+                        "description": "A character with Wall Wrecker can use it to move across the wall of one of the wooden huts. The walls of an occupied hut (see page 22 of the Revised Heroes’ Book) cannot be wrecked using Wall Wrecker."
+                    }, {
+                        "title": "Climbing",
+                        "description": "A character with Climb can move across boulders as though they were a border by spending 2 extra movement points."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/27-core-pict-village/"
+            }
+        },
+
+        "Inn": {
+            "description": {
+                "title": "Inn",
+                "rules": [
+                    {
+                        "title": "Bar and tables",
+                        "description": "Apply this rule only if specified in the special rules section. A character with or without Leap or Climb may move onto the bar areas or a table area by spending 1 extra movement point. These areas provide an Elevation bonus of {dice_yellow}. A character in the bar’s area or in a table’s area, with or without Reach, may attack a character in an adjacent area with a Melee Attack. These areas do not block lines of sight. A character may exit these areas with no movement penalty."
+                    }, {
+                        "title": "Bar stools and benches",
+                        "description": "Apply this rule only if specified in the special rules section. Bar Stools: A character in a chair token’s area may pick it up for free when performing a Melee Attack. The chair token is immediately returned to the box and that character benefits from the chair’s attack bonus as specified in the scenario (in addition to any weapon’s Melee Attack bonus)."
+                    }, {
+                        "title": "Walls",
+                        "description": "A character with Wall Wrecker cannot use it to move across an outer wall of the inn or to move between areas of different elevations."
+                    }, {
+                        "title": "Leaping From/Climbing a Balcony",
+                        "description": "A character can move across a railing from a balcony area to a ground floor area as though it were a border. The character rolls {dice_orange}{dice_orange} for falling damage. If the character has Leap, the character rolls {dice_orange} instead. A character with Climb can move across a railing from a ground floor area to a balcony area by spending 2 extra movement points."
+                    }, {
+                        "title": "Leaping From/Climbing a Stairwell",
+                        "description": "A character can move across a banister from a stair area to a ground floor area as though it were a border. The character rolls {dice_yellow}{dice_yellow} for falling damage. If the character has Leap, the character rolls {dice_yellow} instead. A character with Climb can move across a banister from a ground floor area to a stair area by spending 1 extra movement point."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/28-core-inn/"
+            }
+        },
+
+        "Ships": {
+            "description": {
+                "title": "Ships",
+                "rules": [
+                    {
+                        "title": "Hold",
+                        "description": "A character coming out of the hold must move in the area in front of its exit."
+                    }, {
+                        "title": "Masts",
+                        "description": "All the areas of the game board have lines of sight on the masts’areas."
+                    }, {
+                        "title": "Line of sight",
+                        "description": "There is a line of sight from a ship area to a water area if the line of sight does not cross more than one ship area, including the line of sight starting area. The ship areas provide an Elevation bonus of {dice_yellow} on the water areas. There is a line of sight from a water area to a ship area if the line of sight does not cross more than one ship area, including the line of sight finishing area."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/29-core-ships/"
+            }
+        },
+
+        "Abandoned_Fort": {
+            "description": {
+                "title": "Abandoned fort",
+                "rules": [
+                    {
+                        "title": "Parapet and tower",
+                        "description": "Only the areas directly adjacent to the towers areas have lines of sight on the tower areas"
+                    }, {
+                        "title": "Courtyard room",
+                        "description": "The areas inside the fort do not have a roof. A character in a parapet area has lines of sight on these areas and may jump into these areas."
+                    }, {
+                        "title": "Border",
+                        "description": "The nine areas at the edge of the board are adjacent to one another. A character may move through them normally to go around the abandoned fort."
+                    }, {
+                        "title": "Lines of sight",
+                        "description": "A character in a wall area has lines of sight to each ground area within the fortress walls."
+                    }, {
+                        "title": "Leaping from Walls",
+                        "description": "A character can move across a parapet from a wall area to a ground area as though it were a border. The character rolls {dice_red}{dice_red} for falling damage. If the character has Leap, the character rolls {dice_red} instead. A character cannot move from a ground area to a wall area."
+                    }, {
+                        "title": "Rock Slide",
+                        "description": "A character can move into a rock slide area from an adjacent area. The character must spend 2 extra movement points unless the character has Climbing."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/26-core-ruined-fort/"
+            }
+        },
+
+        "Citadel": {
+            "description": {
+                "title": "Citadel",
+                "rules": [
+                    {
+                        "title": "Leaping From/Climbing a Balcony",
+                        "description": "A character can move across a railing from a balcony area to a ground floor area as though it were a border. The character rolls {dice_yellow}{dice_yellow} for falling damage. If the character has Leap, the character rolls {dice_yellow} instead. A character with Climb can move across a railing from a ground floor area to a balcony area by spending 1 extra movement point."
+                    }, {
+                        "title": "Pit",
+                        "description": "A character must spend 1 extra movement point to move out of the pit area"
+                    }, {
+                        "title": "Cellar windows",
+                        "description": "The cellar windows do not block lines of sight."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/31-sg-citadel/"
+            }
+        },
+
+        "Swamp": {
+            "description": {
+                "title": "Swamp",
+                "rules": [
+                    {
+                        "title": "Water areas",
+                        "description": "A character must spend 1 extra movement point to move out of a water area. A character can move from a water area to an adjacent wood area by spending 2 extra movement points.",
+                        "areasText": "The water areas are visible in turquoise."
+                    }, {
+                        "title": "Leap",
+                        "description": "Leaping over the water area around the altar in a single movement is not possible. The character must stop in the altar area before performing a second leap."
+                    }, {
+                        "title": "Wooden Huts",
+                        "description": "A character with Wall Wrecker can use it to move across the wall of one of the wooden huts."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/30-sg-swamp/"
+            }
+        },
+
+        "Forest": {
+            "description": {
+                "title": "Forest",
+                "rules": [
+                    {
+                        "title": "Impenetrable Forest",
+                        "description": "These 3 Forest zones block Lines of Sight. A character can aim from but not shoot inside or through these areas. Entering the area costs an additional movement point. Leaving the area does not cost any extra movement points."
+                    }, {
+                        "title": "Rocky Outcrop",
+                        "description": "The 2 Rocky Outcrop areas block Lines of Sight and grant the Elevation Bonus. Climb costs 1 additional movement point. Climbing down does not cost any extra movement point."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/32-nordheim-forest/"
+            }
+        },
+
+        "Mound": {
+            "description": {
+                "title": "Mound",
+                "rules": [
+                    {
+                        "title": "Blood! Gore! Slush!",
+                        "description": "Every time a hero spends movement points to move, they must add 1 additional gem to the Movement point total. This gem is placed in the hero’s Move space, but does not add a movement point. This effect occurs once per Move action regardless of how many areas the hero moves through. Niord, Aesir Warriors and the Overlord’s units are not affected."
+                    }, {
+                        "title": "That’s Not a Mountain",
+                        "description": "The hill does not affect movement. The area at the top of the hill still provides the Elevation bonus, as do the cliffs at the corners of the game board."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/33-nordheim-mound/"
+            }
+        },
+
+        "Market": {
+            "description": {
+                "title": "Market",
+                "rules": [
+                    {
+                        "title": "Reinforced Walls",
+                        "description": "A character with Wall Wrecker cannot move through the reinforced walls of the barracks (south of the board) and the smoking room (north of the board)."
+                    }, {
+                        "title": "Boats",
+                        "description": "The areas with boats are considered normal terrain for Movement."
+                    }, {
+                        "title": "Swimming",
+                        "description": "A character with Swimming may move through the areas of water next to the cemetery."
+                    }, {
+                        "title": "Leap",
+                        "description": "A character with Leap may leap over the areas marked with the Leap icon . If a hero fails to leap, the character remains in its area."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/36-khitai-market/"
+            }
+        },
+
+        "Tower": {
+            "description": {
+                "title": "Tower",
+                "rules": [
+                    {
+                        "title": "Dive",
+                        "description": "A character in an area marked with the Leap icon may leap in the pond's area of level 1 by spending 1 extra movement point. The character rolls {dice_orange}{dice_orange} for falling damage with no possible defense. If the character has Leap, the character rolls {dice_orange} instead."
+                    }, {
+                        "title": "Stone wall",
+                        "description": "A character with Wall Wrecker cannot use it to move across an outer wall of the tower or a stone wall."
+                    }, {
+                        "title": "Windows",
+                        "description": "The windows on level « 2 » and « 3 » have a line of sight on the areas of level « 1 » directly below them"
+                    }, {
+                        "title": "Climbing",
+                        "description": "A character with Climb may:<br/>• Move from level « 1 » to level « 2 » (and the other way) by climbing the tree and spending 1 extra movement point<br/>• Move from level « 2 » to level « 3 » (and the other way) or from level « 3 » to level « 4 » (and the other way) by climbing the outside walls of the tower and spending 2 extra movement points."
+                    }, {
+                        "title": "Table and stairs",
+                        "description": "The stairs provide an Elevation bonus for Ranged Attacks against an enemy on a lower area. A character with or without Leap or Climb may move onto the table on level 2 of the tower by spending 1 extra movement point. That area provides an Elevation bonus. A character in the table's area, with or without Reach, may attack a character in an adjacent area with a Melee Attack. That area does not block line of sight."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/37-khitai-tower/"
+            }
+        },
+        
+        "Underground": {
+            "description": {
+                "title": "Underground",
+                "rules": [
+                    {
+                        "title": "Moving Through a Well",
+                        "description": "The game board represents 2 levels of a Stygian temple with level « 1 » being exactly on top of level « 0 ».<br/>The level is indicated by an icon on the lower-left corner of each level. A character with or without Climb in the opened well's area may move from level « 1 » to level « 0 » (and the other way) by spending 2 extra movement points.<br/>Moving through a well takes a character's model to the area with a well token directly above or below. The Giant Scorpions may move through all the wells, opened or not, with no movement penalty."
+                    }, {
+                        "title": "Moving Through Secret Passages",
+                        "description": "Each level is traversed by a network of secret passages which entrances are represented by secret passage tokens. A character in an area with a secret passage may move to another area with a secret passage of the same level by spending 2 extra movement points.<br/>To move through a secret passage, both areas with the entrance and the exit must be clear of enemies. The Overlord's units and Ikhmet know the nooks of the temple and may move through a secret passage with no movement penalty."
+                    }, {
+                        "title": "Darkness",
+                        "description": "The maze of tunnels is plunged into an impenetrable darkness. There is no line of sight between two different areas of the whole board. Each action that requires a line of sight can only be performed within a single area."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/35-stygia-underground/"
+            }
+        },
+
+        "Port": {
+            "description": {
+                "title": "Port",
+                "rules": [
+                    {
+                        "title": "Jumping into Water",
+                        "description": "A character adjacent to a water area may move into that area with no movement penalty. When a character without Swimming moves into a water area, that character dies immediately."
+                    }, {
+                        "title": "Moving back onto the docks",
+                        "description": "A character in a water area adjacent to a ladder may move back onto the docks by spending 1 extra movement point."
+                    }, {
+                        "title": "Roof Top",
+                        "description": "The areas located on the roof top of the building on the left side of the board provide an elevation bonus, including on the stairs areas. A character may jump from these areas to the areas of the street level. That character rolls {dice_orange}{dice_orange} for falling damage. If that character has Leap, that character rolls {dice_orange}. A character cannot move onto the roof top areas directly from the street level except when moving through the stairs areas."
+                    }, {
+                        "title": "Wall Wrecker",
+                        "description": "A character with Wall Wrecker can only use this skill to move across the wall in the warehouse on the right side of the board."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/34-stygia-port/"
+            }
+        }
+    },
+
+    "compositions": {
+        "Port_Ship": {
+            "description": {
+                "title": "Ship at port"
+            }
+        }        
+    },
+    
+    "parts": {
+    }
+}

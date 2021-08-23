@@ -2,17 +2,6 @@
     "list": [
         {
             "id": "boris_rage",
-            "title": {
-                "fr": "Rage de Bori",
-                "en": "Bori's Rage",
-                "it": "Furia di Bori"
-            },
-            "text": {
-                "fr": "Ciblez une figurine avec ligne de vue.\nLa cible subit des dégâts de : {dice_orange}{dice_orange}",
-                "en": "Attack a character in your line of sight; roll {dice_orange}{dice_orange}. If the attack power is greater than the defense power, the defender suffers damage equal to the difference.",
-                "it": "Scegli un modello in linea di vista.\nIl bersaglio subisce un danno di: {dice_orange}{dice_orange}."
-            },
-            "clarification": null,
 
             "cost": "2",
             "saturation": "2",
@@ -32,28 +21,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/boris_rage.png",
-            "origins": ["corebox"],
-
-            "textStyle": {
-                "fr": { "textSize": 150, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 150, "textInter": 66 }
-            }
+            "origins": ["corebox"]
         },
 
         {
             "id": "borne_by_the_wind",
-            "title": {
-                "fr": "Porté par le vent",
-                "en": "Borne by the Wind",
-                "it": "Trasportato dal vento"
-            },
-            "text": {
-                "fr": "Le lanceur gagne la compétence Vol jusqu'à la fin de son tour.",
-                "en": "Gain Flying until end of turn.",
-                "it": "Il Mago guadagna l'abilità Volare fino alla fine del proprio turno."
-            },
-            "clarification": null,
 
             "cost": "1",
             "saturation": "1",
@@ -73,29 +45,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/borne_by_the_wind.png",
-            "origins": ["corebox"],
-
-            "textStyle": {
-                "fr": { "textSize": 150, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 150, "textInter": 66 }
-            }
+            "origins": ["corebox"]
         },
 
         {
             "id": "borne_by_the_wind",
-            "title": {
-                "fr": "Porté par le vent",
-                "en": "Borne by the Wind",
-                "it": "Trasportato dal vento"
-
-            },
-            "text": {
-                "fr": "Le lanceur gagne la compétence Vol jusqu'à la fin de son tour.",
-                "en": "Gain Flying until end of turn.",
-                "it": "Il Mago guadagna l'abilità Volare fino alla fine del proprio turno."
-            },
-            "clarification": null,
 
             "cost": "1",
             "saturation": "1",
@@ -115,27 +69,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/borne_by_the_wind.png",
-            "origins": ["campaignbook"],
-
-            "textStyle": {
-                "fr": { "textSize": 150, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 }
-            }
+            "origins": ["campaignbook"]
         },
 
         {
             "id": "energy_drain",
-            "title": {
-                "fr": "Drain d'énergie",
-                "en": "Energy Drain",
-                "it": "Consuma energia"
-            },
-            "text": {
-                "fr": "Ciblez une figurine avec ligne de vue sur une zone adjacente.\nLe Héros transfère une gemme de sa zone d'énergie disponible vers sa zone de fatigue. L'Overlord récupère 3 gemmes de sa zone de fatigue.",
-                "en": "Choose a hero in an area adjacent to you in your line of sight. That hero moves 1 gem from their Reserve zone to their Fatigue zone and you move 3 gems from your Fatigue zone to your Reserve zone.",
-                "it": "Scegli un modello adiacente e in linea di vista.\nL'Eroe trasferisce una gemma dalla sua Riserva alla sua Fatica. L'Overlord recupera 3 gemme dalla sua Fatica."
-            },
-            "clarification": null,
 
             "cost": "1",
             "saturation": "1",
@@ -155,28 +93,11 @@
             "forEnergy": true,
 
             "image": "data/spells/img/energy_drain.png",
-            "origins": ["corebox"],
-
-            "textStyle": {
-                "fr": { "textSize": 140, "textInter": 66 },
-                "en": { "textSize": 144, "textInter": 65 },
-                "it": { "textSize": 144, "textInter": 66 }
-            }
+            "origins": ["corebox"]
         },
 
         {
             "id": "gift_of_life",
-            "title": {
-                "fr": "Don de vie",
-                "en": "Gift of Life",
-                "it": "Dono della vita"
-            },
-            "text": {
-                "fr": "Ciblez un Héros avec ligne de vue.\nLe Lanceur transfère 2 gemmes de sa propre zone d'énergie disponible vers la zone d'énergie disponible de la cible.",
-                "en": "Choose a hero in your line of sight. Move up to 2 gems from your Reserve to the chosen hero's Reserve zone.",
-                "it": "Scegli un Eroe in linea di vista.\nIl Mago trasferisce 2 gemme dalla propria Riserva a  quella del bersaglio."
-            },
-            "clarification": null,
 
             "cost": "2",
             "saturation": "2",
@@ -196,28 +117,11 @@
             "forEnergy": true,
 
             "image": "data/spells/img/gift_of_life.png",
-            "origins": ["corebox"],
-
-            "textStyle": {
-                "fr": { "textSize": 150, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 150, "textInter": 66 }
-            }
+            "origins": ["corebox"]
         },
 
         {
             "id": "kiss_of_death",
-            "title": {
-                "fr": "Baiser de la mort",
-                "en": "Kiss of Death",
-                "it": "Bacio della morte"
-            },
-            "text": {
-                "fr": "Le lanceur est retiré du plateau et toutes les figurines sur la zone subissent des dégâts de : {dice_red_reroll}{dice_red_reroll}{dice_red_reroll}.",
-                "en": "Attack your area, excluding yourself; roll {dice_red_reroll}{dice_red_reroll}{dice_red_reroll}. If the attack power is greater than the defense power, the defender suffers damage equal to the difference. Remove your model from the board.",
-                "it": "Rimuovi il Mago dal gioco.\nTutti i modelli che erano nell'area del Mago subiscono un danno di {dice_red_reroll}{dice_red_reroll}{dice_red_reroll}."
-            },
-            "clarification": null,
 
             "cost": "3",
             "saturation": "3",
@@ -237,28 +141,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/kiss_of_death.png",
-            "origins": ["corebox"],
-
-            "textStyle": {
-                "fr": { "textSize": 150, "textInter": 66 },
-                "en": { "textSize": 132, "textInter": 73 },
-                "it": { "textSize": 132, "textInter": 73 }
-            }
+            "origins": ["corebox"]
         },
 
         {
             "id": "lightning_storm",
-            "title": {
-                "fr": "Tempête d'éclairs",
-                "en": "Lightning Storm",
-                "it": "Tempesta di fulmini"
-            },
-            "text": {
-                "fr": "Ciblez une zone avec ligne de vue.\nToutes les figurines sur la zone subissent des dégâts de : {dice_red}{dice_red}.",
-                "en": "Attack an area in your line of sight; roll {dice_red}{dice_red}. If the attack power is greater than the defense power, the defender suffers damage equal to the difference.",
-                "it": "Scegli un'area in linea di vista.\nTutti i modelli nell'area subiscono un attacco pari a: {dice_red}{dice_red}."
-            },
-            "clarification": null,
 
             "cost": "3",
             "saturation": "3",
@@ -278,28 +165,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/lightning_storm.png",
-            "origins": ["corebox"],
-
-            "textStyle": {
-                "fr": { "textSize": 150, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 150, "textInter": 66 }
-            }
+            "origins": ["corebox"]
         },
 
         {
             "id": "magical_dizziness",
-            "title": {
-                "fr": "Etourdissement",
-                "en": "Magical Dizziness",
-                "it": "Stordimento"
-            },
-            "text": {
-                "fr": "Ciblez un lanceur de sort avec ligne de vue. La cible paye 1 gemme de plus pour lancer des sorts pendant 1 tour.\nLe sort se dissipe au début du tour suivant du lanceur de sort.",
-                "en": "Choose a character with Spell Caster in your line of sight. That character's controller must move 1 gem from their Reserve zone to their Fatigue zone in addition to paying the cost to cast a spell. This effect ends at the beginning of your next turn or activation.",
-                "it": "Scegli un Mago in linea di vista.\nIl bersaglio spende una (1) gemma in più per lanciare i suoi incantesimi. Lo Stordimento termina all'inizio del prossimo turno del bersaglio."
-            },
-            "clarification": null,
 
             "cost": "2",
             "saturation": "2",
@@ -319,32 +189,11 @@
             "forEnergy": true,
 
             "image": "data/spells/img/magical_dizziness.png",
-            "origins": ["corebox"],
-
-            "textStyle": {
-                "fr": { "textSize": 149, "textInter": 66 },
-                "en": { "textSize": 130, "textInter": 65 },
-                "it": { "textSize": 130, "textInter": 66 }
-            }
+            "origins": ["corebox"]
         },
 
         {
             "id": "mind_control",
-            "title": {
-                "fr": "Contrôle mental",
-                "en": "Mind Control",
-                "it": "Controllo mentale"
-            },
-            "text": {
-                "fr": "Ciblez une figurine adverse sans ligne de vue. Déplacez-la d'1 zone + 1 zone par gemme d'énergie dépensée, en suivant les restrictions de déplacement et sans que cela ne provoque de dégâts à la figurine.",
-                "en": "Assign a number of gems from your Reserve zone to this card and choose an enemy not in your line of sight. That enemy gains that many movement points, which you must spend to move that enemy in a way that would not cause it to suffer damage.",
-                "it": "Scegli un nemico non in linea di vista.\nMuovilo di un'area (+1 per ogni gemma spesa) secondo le regole del movimento e senza che questo gli procuri dei danni."
-            },
-            "clarification": {
-                "fr": "La ligne de vue n’a pas d’incidence sur la cible que peut choisir le lanceur de sort.\nUne unité ne peut cibler une unité ennemie disposant de Fascination, quelle qu’en soit la raison, tant que cette unité ennemie ne l’a pas attaquée.",
-                "en": "Line of sight does not affect whom the caster can target with this spell.\nA unit cannot target an enemy unit with Fascination for any reason until they attack the unit.",
-                "it": "La linea di vista non inflenza la scelta del bersaglio che il mago può scegliere di controllare.\nUn'unità non può bersagliare un'unità nemica che ha Fascinazione, qualunque sia la ragione, a meno che questa unità nemica non l'abbia attaccata."
-            },
 
             "cost": "1",
             "saturation": "3",
@@ -364,28 +213,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/mind_control.png",
-            "origins": ["corebox"],
-
-            "textStyle": {
-                "fr": { "textSize": 134, "textInter": 66 },
-                "en": { "textSize": 131, "textInter": 65 },
-                "it": { "textSize": 140, "textInter": 66 }
-            }
+            "origins": ["corebox"]
         },
 
         {
             "id": "mitras_halo",
-            "title": {
-                "fr": "Halo de Mitra",
-                "en": "Mitra's Halo",
-                "it": "Aura di Mitra"
-            },
-            "text": {
-                "fr": "Le lanceur augmente sa défense passive de 2. Le halo se dissipe au début du tour où le Héros lanceur redevient actif après un tour de récupération, ou à l'activation de la tuile du lanceur de sort pour l'Overlord.",
-                "en": "Your armor value is increased by 2. This effect ends when you change from cautious to aggressive or when your group is activated.",
-                "it": "Il Mago aumenta la sua Armatura di 2.\nL'Aura si dissipa all'inizio del turno del Mago dopo un suo turno di Recupero, oppure all'attivazione della tessera del Mago per l'Overlord."
-            },
-            "clarification": null,
 
             "cost": "3",
             "saturation": "3",
@@ -407,32 +239,11 @@
             "image": "data/spells/img/mitras_halo.png",
             "origins": ["corebox"],
             
-            "tokens": ["mitra-halo"],
-
-            "textStyle": {
-                "fr": { "textSize": 136, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 136, "textInter": 66 }
-            }
+            "tokens": ["mitra-halo"]
         },
 
         {
             "id": "mitras_healing",
-            "title": {
-                "fr": "Guérison de Mitra",
-                "en": "Mitra's Healing",
-                "it": "Guarigione di Mitra"
-            },
-            "text": {
-                "fr": "Ciblez un Héros dans la même zone que le lanceur ou le lanceur lui-même. Lancez : {dice_orange_reroll} Le résultat indique le nombre de gemmes transférées depuis la zone de blessure vers la zone d'énergie disponible du Héros.",
-                "en": "Choose a hero in your area and roll {dice_orange_reroll}. That hero moves a number of gems from their Wound zone to their Reserve zone equal to the number of symbols shown on the die.",
-                "it": "Scegli un Eroe (anche te stesso) nella tua area. Lancia {dice_orange_reroll}.\nIl risultato è il numero di gemme che l'Eroe trasferisce dalle sue Ferite alla sua Riserva."
-            },
-            "clarification": {
-                "fr": "Le lanceur peut se cibler lui-même.",
-                "en": "Caster can use Mitra’s Healing on himself",
-                "it": "Il mago può lanciare Guarigione di Mitra su se stesso"
-            },
 
             "cost": "2",
             "saturation": "2",
@@ -452,28 +263,11 @@
             "forEnergy": true,
 
             "image": "data/spells/img/mitras_healing.png",
-            "origins": ["corebox"],
-
-            "textStyle": {
-                "fr": { "textSize": 134, "textInter": 65 },
-                "en": { "textSize": 150, "textInter": 65 },
-                "it": { "textSize": 150, "textInter": 66 }
-            }
+            "origins": ["corebox"]
         },
 
         {
             "id": "pestilential_swarm",
-            "title": {
-                "fr": "Nuée pestilentielle",
-                "en": "Pestilential Swarm",
-                "it": "Sciame pestilenziale"
-            },
-            "text": {
-                "fr": "Toute figurine, à l'exception des morts-vivants, située dans la même zone que le lanceur subit des dégâts de : {dice_yellow}{dice_yellow}{dice_yellow}\nAucune défense n'est possible. Le lanceur du sort est immunisé.",
-                "en": "Attack your area, excluding yourself and undead characters; roll {dice_yellow}{dice_yellow}{dice_yellow}. Characters cannot defend against this attack. Attacked characters suffer damage equal to the attack power.",
-                "it": "Tutti i modelli nell'area del Mago (tranne se stesso e i Non-Morti), subiscono un danno di {dice_yellow}{dice_yellow}{dice_yellow}.\nNessuna difesa è possibile."
-            },
-            "clarification": null,
 
             "cost": "3",
             "saturation": "3",
@@ -493,28 +287,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/pestilential_swarm.png",
-            "origins": ["corebox"],
-
-            "textStyle": {
-                "fr": { "textSize": 142, "textInter": 66 },
-                "en": { "textSize": 141, "textInter": 66 },
-                "it": { "textSize": 141, "textInter": 66 }
-            }
+            "origins": ["corebox"]
         },
 
         {
             "id": "sets_bite",
-            "title": {
-                "fr": "Morsure de Set",
-                "en": "Set's Bite",
-                "it": "Morso di Set"
-            },
-            "text": {
-                "fr": "Ciblez une figurine avec ligne de vue.\nLa cible ou l'Overlord transfère une gemme de sa zone d'énergie disponible vers sa zone de fatigue. La cible subit des dégâts de : {dice_orange}{dice_orange}",
-                "en": "Attack a character in your line of sight; roll {dice_orange}{dice_orange}. That character's controller moves 1 gem from their Reserve zone to their Fatigue zone. If the attack power is greater than the defense power, the defender suffers damage equal to the difference.",
-                "it": "Scegli un modello in linea di vista.\nIl bersaglio (o l'Overlord) sposta una (1) gemma dalla sua Riserva alla sua Fatica.\nIl bersaglio subisce un danno di {dice_orange}{dice_orange}."
-            },
-            "clarification": null,
 
             "cost": "2",
             "saturation": "2",
@@ -534,28 +311,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/sets_bite.png",
-            "origins": ["corebox"],
-
-            "textStyle": {
-                "fr": { "textSize": 148, "textInter": 66 },
-                "en": { "textSize": 122, "textInter": 70 },
-                "it": { "textSize": 148, "textInter": 65 }
-            }
+            "origins": ["corebox"]
         },
 
         {
             "id": "sets_halo",
-            "title": {
-                "fr": "Halo de Set",
-                "en": "Set's Halo",
-                "it": "Aura di Set"
-            },
-            "text": {
-                "fr": "Le lanceur augmente sa défense passive de 1. Le halo se dissipe au début du tour où le Héros lanceur redevient actif après un tour de récupération, ou à l'activation de la tuile du lanceur de sort pour l'Overlord.",
-                "en": "Your armor value is increased by 1. This effect ends when you change from cautious to aggressive or when your group is activated.",
-                "it": "Il Mago aumenta la sua Armatura di 1.\nL'Aura si dissipa all'inizio del turno del Mago dopo un suo turno di Recupero, oppure all'attivazione della tessera del Mago per l'Overlord."
-            },
-            "clarification": null,
 
             "cost": "2",
             "saturation": "2",
@@ -577,28 +337,11 @@
             "image": "data/spells/img/sets_halo.png",
             "origins": ["corebox"],
 
-            "tokens": ["set-halo"],
-
-            "textStyle": {
-                "fr": { "textSize": 136, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 136, "textInter": 66 }
-            }
+            "tokens": ["set-halo"]
         },
 
         {
             "id": "sets_halo",
-            "title": {
-                "fr": "Halo de Set",
-                "en": "Set's Halo",
-                "it": "Aura di Set"
-            },
-            "text": {
-                "fr": "Le lanceur augmente sa défense passive de 1. Le halo se dissipe au début du tour où le Héros lanceur redevient actif après un tour de récupération, ou à l'activation de la tuile du lanceur de sort pour l'Overlord.",
-                "en": "Your armor value is increased by 1. This effect ends when you change from cautious to aggressive or when your group is activated.",
-                "it": "Il Mago aumenta la sua Armatura di 1.\nL'Aura si dissipa all'inizio del turno del Mago dopo un suo turno di Recupero, oppure all'attivazione della tessera del Mago per l'Overlord."
-            },
-            "clarification": null,
 
             "cost": "2",
             "saturation": "2",
@@ -620,28 +363,11 @@
             "image": "data/spells/img/sets_halo.png",
             "origins": ["campaignbook"],
 
-            "tokens": ["set-halo"],
-
-            "textStyle": {
-                "fr": { "textSize": 136, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 136, "textInter": 66 }
-            }
+            "tokens": ["set-halo"]
         },
 
         {
             "id": "sets_possession",
-            "title": {
-                "fr": "Possession de Set",
-                "en": "Set's Possession",
-                "it": "Possessione di Set"
-            },
-            "text": {
-                "fr": "Ciblez une figurine sans ligne de vue jusqu'à 2 zones de distance.\nLors de sa prochaine activation, la cible ne pourra pas se déplacer. Si la cible dispose de la compétence Blocage, elle pourra se déplacer mais perd cette compétence pour ce tour.",
-                "en": "Choose a character up to 2 areas away from you. If the character does not have Blocking, the character cannot move during their next activation or during the Action phase in which the character is aggressive. Otherwise, the character loses Blocking during that turn.",
-                "it": "Scegli un modello entro 2 aree e non in linea di vista.\nSe il personaggio ha l'abilità Bloccare, la perde per l'intero turno, altrimenti non potrà muoversi fino alla prossima attivazione."
-            },
-            "clarification": null,
 
             "cost": "2",
             "saturation": "4",
@@ -661,28 +387,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/sets_possession.png",
-            "origins": ["corebox"],
-
-            "textStyle": {
-                "fr": { "textSize": 127, "textInter": 66 },
-                "en": { "textSize": 121, "textInter": 69 },
-                "it": { "textSize": 127, "textInter": 66 }
-            }
+            "origins": ["corebox"]
         },
 
         {
             "id": "telekinesis",
-            "title": {
-                "fr": "Télékinésie",
-                "en": "Telekinesis",
-                "it": "Telecinesi"
-            },
-            "text": {
-                "fr": "Ciblez un objet avec ligne de vue. Le lanceur peut immédiatement le ramasser.\nL'encombrement de l'objet ne peut être supérieur à 3.",
-                "en": "Pick up an object un your line of sight with an encumbrance value of 3 or less.",
-                "it": "Scegli un oggetto in linea di vista.\nIl Mago può immediatamente raccoglierlo.\nL'oggetto non può avere Ingombro superiore a 3."
-            },
-            "clarification": null,
 
             "cost": "1",
             "saturation": "1",
@@ -702,32 +411,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/telekinesis.png",
-            "origins": ["corebox"],
-
-            "textStyle": {
-                "fr": { "textSize": 150, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 150, "textInter": 66 }
-            }
+            "origins": ["corebox"]
         },
 
         {
             "id": "teleportation",
-            "title": {
-                "fr": "Téléportation",
-                "en": "Teleportation",
-                "it": "Teletrasporto"
-            },
-            "text": {
-                "fr": "Pour toute gemme dépensée après avoir payé le coût du sort, le lanceur peut se déplacer d'une zone.\nCe mouvement n'est affecté par aucun obstacle. Le lanceur n'a pas besoin d'avoir une ligne de vue avec sa destination.",
-                "en": "Assign a number of gems from your Reserve zone to this card. For each gem assigned, move your model to an adjacent space.",
-                "it": "Per ogni gemma spesa oltre il costo del Teletrasporto, il Mago può spostarsi di un'area.\nQuesto movimento non è affetto da ostacoli."
-            },
-            "clarification": {
-                "fr": "Le lanceur de sort n'est pas soumis au phénomène de gêne ni à la compétence Bloqueur.",
-                "en": "A character who casts this spell is not affected by hindering or by Blocking to move.",
-                "it": " Il movimento del Mago non è influenzato nè da intralcio né dall'abilità Bloccare."
-            },
 
             "cost": "1",
             "saturation": "0",
@@ -747,32 +435,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/teleportation.png",
-            "origins": ["corebox"],
-
-            "textStyle": {
-                "fr": { "textSize": 127, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 150, "textInter": 66 }
-            }
+            "origins": ["corebox"]
         },
 
         {
             "id": "teleportation",
-            "title": {
-                "fr": "Téléportation",
-                "en": "Teleportation",
-                "it": "Teletrasporto"
-            },
-            "text": {
-                "fr": "Pour toute gemme dépensée après avoir payé le coût du sort, le lanceur peut se déplacer d'une zone.\nCe mouvement n'est affecté par aucun obstacle. Le lanceur n'a pas besoin d'avoir une ligne de vue avec sa destination.",
-                "en": "Assign a number of gems from your Reserve zone to this card. For each gem assigned, move your model to an adjacent space.",
-                "it": "Per ogni gemma spesa oltre il costo del Teletrasporto, il Mago può spostarsi di un'area.\nQuesto movimento non è affetto da ostacoli."
-            },
-            "clarification": {
-                "fr": "Le lanceur de sort n'est pas soumis au phénomène de gêne ni à la compétence Bloqueur.",
-                "en": "A character who casts this spell is not affected by hindering or by Blocking to move.",
-                "it": " Il movimento del Mago non è influenzato nè da intralcio né dall'abilità Bloccare."
-            },
 
             "cost": "1",
             "saturation": "0",
@@ -792,28 +459,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/teleportation.png",
-            "origins": ["stretchgoal"],
-
-            "textStyle": {
-                "fr": { "textSize": 127, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 150, "textInter": 66 }
-            }
+            "origins": ["stretchgoal"]
         },
 
         {
             "id": "archer_of_acheron",
-            "title": {
-                "fr": "Archer d'Acheron",
-                "en": "Archer of Acheron",
-                "it": "Dardo di Acheron"
-            },
-            "text": {
-                "fr": "Ciblez une figurine de Héros avec ligne de vue. Le Héros améliore son type de dé au combat à distance (de jaune à orange ou de orange à rouge) jusqu'à la fin du tour du camp du lanceur. Si son dé initial était relançable, il le reste.",
-                "en": "Choose a hero in your line of sight. Improve the die on that hero's Ranged Attack space until the end of their turn (yellow to orange, or orange to red). If the die could be rerolled, it still can be.",
-                "it": "Scegli un Eroe in linea di vista. L'Eroe migliora al dado superiore la capacità di Attacco a distanza fino alla fine del suo turno (da giallo ad arancione o da arancione a rosso). Se il dado è rilanciabile, resta tale."
-            },
-            "clarification": null,
 
             "cost": "2",
             "saturation": "2",
@@ -833,28 +483,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/archer_of_acheron.png",
-            "origins": ["stretchgoal"],
-
-            "textStyle": {
-                "fr": { "textSize": 130, "textInter": 66 },
-                "en": { "textSize": 142, "textInter": 70 },
-                "it": { "textSize": 130, "textInter": 66 }
-            }
+            "origins": ["stretchgoal"]
         },
 
         {
             "id": "bad_luck",
-            "title": {
-                "fr": "Malchance",
-                "en": "Bad Luck",
-                "it": "Sfortuna"
-            },
-            "text": {
-                "fr": "Ciblez une figurine avec ligne de vue.\nLa cible gagne la compétence Malchance jusqu'au début du tour suivant du camp du lanceur.",
-                "en": "Choose a character in your line of sight. That character gains Jinx until your next turn.",
-                "it": "Scegli un pesonaggio in linea di vista.\nIl bersaglio acquisisce l'abilità Menagramo fino all'inizio del prossimo turno del Mago."
-            },
-            "clarification": null,
 
             "cost": "3",
             "saturation": "3",
@@ -874,28 +507,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/bad_luck.png",
-            "origins": ["stretchgoal"],
-
-            "textStyle": {
-                "fr": { "textSize": 150, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 150, "textInter": 66 }
-            }
+            "origins": ["stretchgoal"]
         },
 
         {
             "id": "barrier_of_the_winds",
-            "title": {
-                "fr": "Barrière des Vents",
-                "en": "Barrier of the Winds",
-                "it": "Barriera dei venti"
-            },
-            "text": {
-                "fr": "Ciblez une figurine avec ligne de vue.\nLa figurine ne peut plus être la cible d'attaques à distance jusqu'au début du tour suivant du camp du lanceur.",
-                "en": "Choose a character in your line of sight. That character cannot be attacked with ranged attacks until your next turn.",
-                "it": "Scegli un personaggio in linea di vista.\nIl modello non può più essere il bersaglio di attacchi a distanza fino all'inizio del prossimo turno del Mago."
-            },
-            "clarification": null,
 
             "cost": "1",
             "saturation": "1",
@@ -915,28 +531,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/barrier_of_the_winds.png",
-            "origins": ["stretchgoal"],
-
-            "textStyle": {
-                "fr": { "textSize": 150, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 150, "textInter": 66 }
-            }
+            "origins": ["stretchgoal"]
         },
 
         {
             "id": "bels_caress",
-            "title": {
-                "fr": "Caresse de Bel",
-                "en": "Bel's Caress",
-                "it": "Carezza di Bel"
-            },
-            "text": {
-                "fr": "Le lanceur ouvre une porte ou un coffre fermé à clef dans sa zone.",
-                "en": "Choose a chest in your area or a door adjacent to your area. You successfully pick its lock.",
-                "it": "Il Mago apre una porta o un forziere chiuso a chiave che si trova nella sua area."
-            },
-            "clarification": null,
 
             "cost": "1",
             "saturation": "2",
@@ -956,28 +555,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/bels_caress.png",
-            "origins": ["stretchgoal"],
-
-            "textStyle": {
-                "fr": { "textSize": 150, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 150, "textInter": 66 }
-            }
+            "origins": ["stretchgoal"]
         },
 
         {
             "id": "bels_hand",
-            "title": {
-                "fr": "Main de Bel",
-                "en": "Bel's Hand",
-                "it": "Mano di Bel"
-            },
-            "text": {
-                "fr": "Ciblez une figurine de Héros avec ligne de vue.\nLe Héros améliore son type de dé en manipulation (de jaune à orange ou orange à rouge) jusqu'à la fin du tour du camp du lanceur.\nSi son dé initial était relançable, il le reste.",
-                "en": "Choose a hero in your line of sight. Improve the die on that hero's Manipulation space until the end of their turn (yellow to orange, or orange to red). If the die could be rerolled, it still can be.",
-                "it": "Scegli un Eroe in linea di vista.\nL'Eroe migliora al dado superiore la capacità di Manipolazione fino alla fine del suo turno (da giallo ad arancione o da arancione a rosso).\nSe il dado è rilanciabile, resta tale."
-            },
-            "clarification": null,
 
             "cost": "2",
             "saturation": "2",
@@ -997,28 +579,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/bels_hand.png",
-            "origins": ["stretchgoal"],
-
-            "textStyle": {
-                "fr": { "textSize": 130, "textInter": 69 },
-                "en": { "textSize": 142, "textInter": 70 },
-                "it": { "textSize": 130, "textInter": 69 }
-            }
+            "origins": ["stretchgoal"]
         },
 
         {
             "id": "blessing_of_ibis",
-            "title": {
-                "fr": "Bénédiction d'Ibis",
-                "en": "Blessing of Ibis",
-                "it": "Benedizione di Ibis"
-            },
-            "text": {
-                "fr": "Ciblez une figurine avec ligne de vue.\nLa cible gagne la compétence Intouchable jusqu'au début du tour suivant du camp du lanceur.",
-                "en": "Choose a character in your line of sight. That character gains Untouchable until your next turn.",
-                "it": "Scegli un personaggio in linea di vista.\nIl bersaglio ottiene l'abilità Intoccabile fino all'inizio del prossimo turno del Mago."
-            },
-            "clarification": null,
 
             "cost": "2",
             "saturation": "2",
@@ -1038,28 +603,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/blessing_of_ibis.png",
-            "origins": ["stretchgoal"],
-
-            "textStyle": {
-                "fr": { "textSize": 150, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 150, "textInter": 66 }
-            }
+            "origins": ["stretchgoal"]
         },
 
         {
             "id": "changing_destiny",
-            "title": {
-                "fr": "Destin changeant",
-                "en": "Changing Destiny",
-                "it": "Destino mutevole"
-            },
-            "text": {
-                "fr": "Ciblez une figurine avec ligne de vue.\nS'il s'agit d'un Héros, il est obligé de se mettre en récupération à son prochain tour. S'il s'agit d'une figurine de l'Overlord, il ne peut pas activer la tuile correspondante.",
-                "en": "Choose a character in your line of sight. If the character is a hero, the hero must choose to be cautious during the next Stance phase. If the character is a unit, their tile cannot be activated during the next Overlord turn.",
-                "it": "Scegli un personaggio in linea di vista.\nSe è un Eroe, egli è obbligato a essere Cauto nella sua prossima fase di Atteggiamento. Se il personaggio non è un Eroe, l'Overlord non può attivare la tessera corrispondente al modello scelto."
-            },
-            "clarification": null,
 
             "cost": "4",
             "saturation": "4",
@@ -1079,28 +627,11 @@
             "forEnergy": true,
 
             "image": "data/spells/img/changing_destiny.png",
-            "origins": ["stretchgoal"],
-
-            "textStyle": {
-                "fr": { "textSize": 140, "textInter": 66 },
-                "en": { "textSize": 140, "textInter": 66 },
-                "it": { "textSize": 130, "textInter": 64 }
-            }
+            "origins": ["stretchgoal"]
         },
 
         {
             "id": "dagons_attack",
-            "title": {
-                "fr": "Attaque de Dagon",
-                "en": "Dagon's Attack",
-                "it": "Attacco di Dagon"
-            },
-            "text": {
-                "fr": "Ciblez un tentacule avec ligne de vue.\nLe tentacule peut être déplacé jusqu'à 3 zones puis attaquer au corps à corps.",
-                "en": "Choose a Tentacle in your line of sight. Move that Tentacle up to 3 areas, then the Tentacle may perform a Melee Attack.",
-                "it": "Scegli un Tentacolo in linea di vista.\nIl Tentacolo si sposta fino a un massimo di 3 aree e poi sferra un attacco in mischia."
-            },
-            "clarification": null,
 
             "cost": "1",
             "saturation": "4",
@@ -1120,31 +651,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/dagons_attack.png",
-            "origins": ["stretchgoal"],
-
-            "forOverlord": true,
-            "forHeroes": false,
-
-            "textStyle": {
-                "fr": { "textSize": 150, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 150, "textInter": 66 }
-            }
+            "origins": ["stretchgoal"]
         },
 
         {
             "id": "dagons_awakening",
-            "title": {
-                "fr": "Réveil de Dagon",
-                "en": "Dagon's Awakening",
-                "it": "Risveglio di Dagon"
-            },
-            "text": {
-                "fr": "",
-                "en": "",
-                "it": ""
-            },
-            "clarification": null,
 
             "cost": "",
             "saturation": "",
@@ -1164,28 +675,11 @@
             "forEnergy": false,
 
             "image": null,
-            "origins": ["stretchgoal"],
-
-            "textStyle": {
-                "fr": { "textSize": 150, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 150, "textInter": 66 }
-            }
+            "origins": ["stretchgoal"]
         },
 
         {
             "id": "deceleration",
-            "title": {
-                "fr": "Ralentissement",
-                "en": "Deceleration",
-                "it": "Rallentamento"
-            },
-            "text": {
-                "fr": "Ciblez une figurine avec ligne de vue.\nLa cible perd sa base de points de mouvement jusqu'au début du tour suivant du camp du lanceur.",
-                "en": "Choose a character in your line of sight. That character's movement value is 0 until your next turn.",
-                "it": "Scegli un personaggio in linea di vista.\nIl bersaglio ha 0 come valore di Movimento base fino all'inzio del prossimo turno del Mago."
-            },
-            "clarification": null,
 
             "cost": "2",
             "saturation": "2",
@@ -1205,28 +699,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/deceleration.png",
-            "origins": ["stretchgoal"],
-
-            "textStyle": {
-                "fr": { "textSize": 150, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 150, "textInter": 66 }
-            }
+            "origins": ["stretchgoal"]
         },
 
         {
             "id": "divine_charisma",
-            "title": {
-                "fr": "Charisme divin",
-                "en": "Divine Charisma",
-                "it": "Carisma divino"
-            },
-            "text": {
-                "fr": "Ciblez une figurine avec ligne de vue.\nLa cible gagne la compétence Soutien jusqu'au début du tour suivant du camp du lanceur.",
-                "en": "Choose a character in your line of sight. That character gains Support until your next turn.",
-                "it": "Scegli un personaggio in linea di vista.\nIl bersaglio ottiene l'abilità Supporto fino all'inizio del prossimo turno del Mago."
-            },
-            "clarification": null,
 
             "cost": "3",
             "saturation": "3",
@@ -1246,33 +723,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/divine_charisma.png",
-            "origins": ["stretchgoal"],
-
-            "textStyle": {
-                "fr": { "textSize": 150, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 150, "textInter": 66 }
-            }
+            "origins": ["stretchgoal"]
         },
 
         {
             "id": "drying_earth",
-            "title": {
-                "fr": "Assèchement de la terre",
-                "en": "Drying Earth",
-                "it": "Prosciugamento della Terra"
-            },
-            "titleLong": {
-                "fr": true,
-                "en": false,
-                "it": true
-            },
-            "text": {
-                "fr": "Ciblez une zone au terrain instable (marécageuse...) avec ligne de vue. Le sol de la zone devient stable. Il n'y a plus de pénalité de mouvement associé à cette zone.\nLe sort se dissipe au début du tour suivant du camp du lanceur.",
-                "en": "Choose an unstable area in your line of sight. That area becomes stable until your next turn. Characters do not spend extra movement points to move out of a stable area.",
-                "it": "Scegli un'area di terreno instabile (paludosa...) in linea di vista. Il terreno dell'area diventa stabile. Le penalità al movimento non sono più applicabili. L'effetto dell'incantesimo termina all'inizio del prossimo turno del Mago."
-            },
-            "clarification": null,
 
             "cost": "1",
             "saturation": "2",
@@ -1292,28 +747,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/drying_earth.png",
-            "origins": ["stretchgoal"],
-
-            "textStyle": {
-                "fr": { "textSize": 123, "textInter": 70 },
-                "en": { "textSize": 148, "textInter": 63 },
-                "it": { "textSize": 130, "textInter": 63 }
-            }
+            "origins": ["stretchgoal"]
         },
 
         {
             "id": "eagle_eye",
-            "title": {
-                "fr": "Oeil de faucon",
-                "en": "Eagle Eye",
-                "it": "Occhio di falco"
-            },
-            "text": {
-                "fr": "Ciblez une figurine avec ligne de vue.\nLa cible gagne la compétence Tir précis jusqu'à la fin du tour du camp du lanceur.",
-                "en": "Choose a character in your line of sight. That character gains Precision Shot until the end of your turn.",
-                "it": "Scegli un personaggio in linea di vista.\nIl bersaglio ottiene l'abilità Tiro di precisione fino alla fine del turno del Mago."
-            },
-            "clarification": null,
 
             "cost": "2",
             "saturation": "2",
@@ -1333,28 +771,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/eagle_eye.png",
-            "origins": ["stretchgoal"],
-
-            "textStyle": {
-                "fr": { "textSize": 150, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 150, "textInter": 66 }
-            }
+            "origins": ["stretchgoal"]
         },
 
         {
             "id": "eel_skin",
-            "title": {
-                "fr": "Peau d'anguille",
-                "en": "Eel Skin",
-                "it": "Pelle di anguilla"
-            },
-            "text": {
-                "fr": "Ciblez une figurine avec ligne de vue.\nLa cible gagne la compétence Insaisissable jusqu'à la fin du tour du camp du lanceur.",
-                "en": "Choose a character in your line of sight. That character gains Evasive until the end of your next turn.",
-                "it": "Scegli un personaggio in linea di vista.\nIl bersaglio ottiene l'abilità Inafferrabile fino alla fine del turno del Mago."
-            },
-            "clarification": null,
 
             "cost": "2",
             "saturation": "2",
@@ -1374,28 +795,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/eel_skin.png",
-            "origins": ["stretchgoal"],
-
-            "textStyle": {
-                "fr": { "textSize": 150, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 150, "textInter": 66 }
-            }
+            "origins": ["stretchgoal"]
         },
 
         {
             "id": "escape_route",
-            "title": {
-                "fr": "Echappatoire",
-                "en": "Escape Route",
-                "it": "Via di fuga"
-            },
-            "text": {
-                "fr": "Ciblez une figurine de Héros avec ligne de vue.\nLe Héros améliore son type de dé en défense (de jaune à orange ou orange à rouge) jusqu'au début du tour suivant du camp du lanceur. Si son dé initial était relançable, il le reste.",
-                "en": "Choose a hero in your line of sight. Improve that hero's Guard space until their next turn (yellow to orange, or orange to red). If the die could be rerolled, it still can be.",
-                "it": "Scegli un Eroe in linea di vista.\nL'Eroe migliora al dado superiore la capacità di Difesa (da giallo ad arancione o da arancione a rosso) fino all'inzio del prossimo turno del Mago.\nSe il dado è rilanciabile, resta tale."
-            },
-            "clarification": null,
 
             "cost": "2",
             "saturation": "2",
@@ -1415,28 +819,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/escape_route.png",
-            "origins": ["stretchgoal"],
-
-            "textStyle": {
-                "fr": { "textSize": 130, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 130, "textInter": 64 }
-            }
+            "origins": ["stretchgoal"]
         },
 
         {
             "id": "fleet_runner",
-            "title": {
-                "fr": "Course vive",
-                "en": "Fleet Runner",
-                "it": "Pie' veloce"
-            },
-            "text": {
-                "fr": "Ciblez une figurine avec ligne de vue.\nLa cible améliore sa base de points de mouvement et l'indice de saturation correspondant de 1 jusqu'à la fin du tour du camp du lanceur.",
-                "en": "Choose a character in your line of sight. That character's movement value and exertion limit are increased by 1 until the end of your turn.",
-                "it": "Scegli un personaggio in linea di vista.\nIl bersaglio aumenta di 1 il punteggio base e il punteggio limite del suo Movimento fino alla fine del turno del Mago."
-            },
-            "clarification": null,
 
             "cost": "3",
             "saturation": "3",
@@ -1456,28 +843,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/fleet_runner.png",
-            "origins": ["stretchgoal"],
-
-            "textStyle": {
-                "fr": { "textSize": 150, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 150, "textInter": 66 }
-            }
+            "origins": ["stretchgoal"]
         },
 
         {
             "id": "gullahs_strength",
-            "title": {
-                "fr": "Force de Gullah",
-                "en": "Gullah's Strength",
-                "it": "Ferocia di Gullah"
-            },
-            "text": {
-                "fr": "Ciblez une figurine de Héros avec ligne de vue.\nLe Héros améliore son type de dé au combat au corps-à-corps (de jaune à orange ou orange à rouge) jusqu'à la fin du tour du camp du lanceur.\nSi son dé initial était relançable, il le reste.",
-                "en": "Choose a hero in your line of sight. Improve the die on that hero's Melee Attack space until the end of their turn (yellow to orange, or orange to red). If the die could be rerolled, it still can be.",
-                "it": "Scegli un Eroe in linea di vista.\nL'Eroe migliora al dado superiore la capacità di Attacco in mischia (da giallo ad arancione o da arancione a rosso) fino all'inzio del turno del Mago.\nSe il dado è rilanciabile, resta tale."
-            },
-            "clarification": null,
 
             "cost": "2",
             "saturation": "2",
@@ -1497,28 +867,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/gullahs_strength.png",
-            "origins": ["stretchgoal"],
-
-            "textStyle": {
-                "fr": { "textSize": 130, "textInter": 66 },
-                "en": { "textSize": 148, "textInter": 63 },
-                "it": { "textSize": 130, "textInter": 64 }
-            }
+            "origins": ["stretchgoal"]
         },
 
         {
             "id": "gwahlurs_darkness",
-            "title": {
-                "fr": "Noirceur de Gwahlur",
-                "en": "Gwahlur's Darkness",
-                "it": "Oscurità di Gwahlur"
-            },
-            "text": {
-                "fr": "",
-                "en": "",
-                "it": ""
-            },
-            "clarification": null,
 
             "cost": "",
             "saturation": "",
@@ -1538,28 +891,11 @@
             "forEnergy": false,
 
             "image": null,
-            "origins": ["stretchgoal"],
-
-            "textStyle": {
-                "fr": { "textSize": 150, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 150, "textInter": 66 }
-            }
+            "origins": ["stretchgoal"]
         },
 
         {
             "id": "hand_of_death",
-            "title": {
-                "fr": "Main de la mort",
-                "en": "Hand of Death",
-                "it": "Mano della morte"
-            },
-            "text": {
-                "fr": "Ciblez une figurine dans la zone du lanceur.\nLa cible subit des dégâts de {dice_red}{dice_red}, puis le lanceur subit 1 blessure.",
-                "en": "Attack a model in your area; roll {dice_red}{dice_red}. If the attack power is greater than the defense power, the defender suffers damage equal to the difference. You suffer 1 damage.",
-                "it": "Scegli un personaggio nella stessa area del Mago.\nIl bersaglio subisce un danno di {dice_red}{dice_red}. Il Mago subisce un (1) danno."
-            },
-            "clarification": null,
 
             "cost": "2",
             "saturation": "2",
@@ -1579,28 +915,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/hand_of_death.png",
-            "origins": ["stretchgoal"],
-
-            "textStyle": {
-                "fr": { "textSize": 150, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 65 },
-                "it": { "textSize": 150, "textInter": 66 }
-            }
+            "origins": ["stretchgoal"]
         },
 
         {
             "id": "hanumans_body",
-            "title": {
-                "fr": "Corps d'Hanuman",
-                "en": "Hanuman's Body",
-                "it": "Corpo di Hanuman"
-            },
-            "text": {
-                "fr": "",
-                "en": "",
-                "it": ""
-            },
-            "clarification": null,
 
             "cost": "",
             "saturation": "",
@@ -1620,28 +939,11 @@
             "forEnergy": false,
 
             "image": null,
-            "origins": ["stretchgoal"],
-
-            "textStyle": {
-                "fr": { "textSize": 150, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 150, "textInter": 66 }
-            }
+            "origins": ["stretchgoal"]
         },
 
         {
             "id": "inversion",
-            "title": {
-                "fr": "Inversion",
-                "en": "Inversion",
-                "it": "Scambio"
-            },
-            "text": {
-                "fr": "Ciblez une figurine avec ligne de vue.\nLe lanceur échange sa position avec celle de la cible en payant 1 gemme par zone le séparant de sa cible, en plus du coût du sort.",
-                "en": "Assign a number of gems from your Reserve zone to this card and choose a character within that number of areas of you. Exchange the position of your model and the chosen character's model.",
-                "it": "Scegli un personaggio in linea di vista.\nIl Mago scambia la sua posizione con quella del bersaglio, pagando una (1) gemma per ogni area che lo separa dal bersaglio, oltre al costo dell'incantesimo."
-            },
-            "clarification": null,
 
             "cost": "1",
             "saturation": "",
@@ -1661,28 +963,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/inversion.png",
-            "origins": ["stretchgoal"],
-
-            "textStyle": {
-                "fr": { "textSize": 150, "textInter": 66 },
-                "en": { "textSize": 141, "textInter": 66 },
-                "it": { "textSize": 141, "textInter": 66 }
-            }
+            "origins": ["stretchgoal"]
         },
 
         {
             "id": "ishtars_gaze",
-            "title": {
-                "fr": "Regard d'Ishtar",
-                "en": "Ishtar's Gaze",
-                "it": "Sguardo di Ishtar"
-            },
-            "text": {
-                "fr": "Ciblez une figurine avec ligne de vue.\nLa cible gagne la compétence Sous protection jusqu'au début du tour suivant du camp du lanceur.",
-                "en": "Choose a character in your line of sight. That character gains Protected until your next turn.",
-                "it": "Scegli un personaggio in linea di vista.\nIl bersaglio ottiene l'abilità Protetto fino all'inizio del prossimo turno del Mago."
-            },
-            "clarification": null,
 
             "cost": "3",
             "saturation": "3",
@@ -1702,28 +987,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/ishtars_gaze.png",
-            "origins": ["stretchgoal"],
-
-            "textStyle": {
-                "fr": { "textSize": 150, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 150, "textInter": 66 }
-            }
+            "origins": ["stretchgoal"]
         },
 
         {
             "id": "jhebbal_sags_rage",
-            "title": {
-                "fr": "Rage de Jhebbal Sag",
-                "en": "Jhebbal Sag's Rage",
-                "it": "Furia di Jhebbal Sag"
-            },
-            "text": {
-                "fr": "",
-                "en": "",
-                "it": ""
-            },
-            "clarification": null,
 
             "cost": "",
             "saturation": "",
@@ -1743,28 +1011,11 @@
             "forEnergy": false,
 
             "image": null,
-            "origins": ["stretchgoal"],
-
-            "textStyle": {
-                "fr": { "textSize": 150, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 150, "textInter": 66 }
-            }
+            "origins": ["stretchgoal"]
         },
 
         {
             "id": "lethal_cloud",
-            "title": {
-                "fr": "Nuage mortel",
-                "en": "Lethal Cloud",
-                "it": "Nube mortale"
-            },
-            "text": {
-                "fr": "Ciblez une zone avec ligne de vue. Chaque figurine qui s'y trouve, y entre ou en sort, encaisse une seule fois des dégâts de : {dice_red}{dice_red}\nLe sort se dissipe au début du tour suivant du camp du lanceur de sort.",
-                "en": "Attack an area in your line of sight; roll {dice_red}{dice_red}. If any character moves into or out of that area until your next turn, attack that character with the same attack power. If the attack power is greater that the defense power, the defender suffers damage equal to the difference.",
-                "it": "Scegli un'area in linea di vista. Ogni modello che si trova (o che entra o esce) da quest'area subisce una sola volta un danno di {dice_red}{dice_red}. Gli effetti dell'incantesimo terminano all'inizio del prossimo turno del Mago."
-            },
-            "clarification": null,
 
             "cost": "2",
             "saturation": "2",
@@ -1784,28 +1035,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/lethal_cloud.png",
-            "origins": ["stretchgoal"],
-
-            "textStyle": {
-                "fr": { "textSize": 134, "textInter": 65 },
-                "en": { "textSize": 115, "textInter": 66 },
-                "it": { "textSize": 130, "textInter": 64 }
-            }
+            "origins": ["stretchgoal"]
         },
 
         {
             "id": "life_transfer",
-            "title": {
-                "fr": "Transfert de vie",
-                "en": "Life Transfer",
-                "it": "Trasferimento vitale"
-            },
-            "text": {
-                "fr": "Ciblez un Héros et son allié avec lignes de vue. Sacrifiez l'allié pour transférer 2 gemmes de la zone de blessure du Héros vers sa zone de fatigue.",
-                "en": "Choose a hero and an ally in your line of sight. Remove that ally's model from the board, and that hero moves up to 2 gems from their Wound zone to their Fatigue zone.",
-                "it": "Scegli un Eroe e un suo Alleato in linea di vista. Sacrifica l'Alleato (rimuovendolo dal gioco) per trasferire 2 gemme dalle Ferite del Mago alla sua Fatica."
-            },
-            "clarification": null,
 
             "cost": "1",
             "saturation": "1",
@@ -1825,34 +1059,11 @@
             "forEnergy": true,
 
             "image": "data/spells/img/life_transfer.png",
-            "origins": ["stretchgoal"],
-
-            "textStyle": {
-                "fr": { "textSize": 150, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 150, "textInter": 66 }
-            }
+            "origins": ["stretchgoal"]
         },
 
         {
             "id": "light_as_a_feather",
-            "title": {
-                "fr": "Léger comme une plume",
-                "en": "Light as a Feather",
-                "it": "Leggero come una piuma"
-            },
-            "titleLong": {
-                "fr": true,
-                "en": false,
-                "it": true
-            },
-
-            "text": {
-                "fr": "Ciblez une figurine avec ligne de vue.\nLa cible diminue de 3 son encombrement actuel jusqu'à la fin du tour du camp du lanceur.",
-                "en": "Choose a character in your line of sight. That character's encumbrance level is decreased by 3 until the end of your turn.",
-                "it": "Scegli un personaggio in linea di vista.\nIl bersaglio diminuisce di 3 l'attuale valore di Ingombro fino alla fine del turno del Mago."
-            },
-            "clarification": null,
 
             "cost": "1",
             "saturation": "2",
@@ -1872,28 +1083,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/light_as_a_feather.png",
-            "origins": ["stretchgoal"],
-
-            "textStyle": {
-                "fr": { "textSize": 150, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 150, "textInter": 66 }
-            }
+            "origins": ["stretchgoal"]
         },
 
         {
             "id": "magic_block",
-            "title": {
-                "fr": "Blocage magique",
-                "en": "Magic Block",
-                "it": "Blocco magico"
-            },
-            "text": {
-                "fr": "Ciblez une figurine avec ligne de vue.\nLa cible gagne la compétence Bloqueur jusqu'au début du tour suivant du camp du lanceur.",
-                "en": "Choose a character in your line of sight. That character gains Blocking until your next turn.",
-                "it": "Scegli un personaggio in linea di vista.\nIl bersaglio acquisisce l'abilità Bloccare fino all'inizio del prossimo turno del Mago."
-            },
-            "clarification": null,
 
             "cost": "2",
             "saturation": "2",
@@ -1913,28 +1107,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/magic_block.png",
-            "origins": ["stretchgoal"],
-
-            "textStyle": {
-                "fr": { "textSize": 150, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 150, "textInter": 66 }
-            }
+            "origins": ["stretchgoal"]
         },
 
         {
             "id": "mystic_barrier",
-            "title": {
-                "fr": "Barrière mystique",
-                "en": "Mystic Barrier",
-                "it": "Barriera mistica"
-            },
-            "text": {
-                "fr": "Le lanceur empèche toutes les autres figurines d'entrer dans sa zone jusqu'au début du tour suivant du camp du lanceur.",
-                "en": "No character can move into the caster's area until the caster's next turn or activation.",
-                "it": "Il Mago impedisce a tutti gli altri personaggi di entrare nella sua area fino all'inizio del suo prossimo turno."
-            },
-            "clarification": null,
 
             "cost": "2",
             "saturation": "2",
@@ -1954,28 +1131,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/mystic_barrier.png",
-            "origins": ["stretchgoal"],
-
-            "textStyle": {
-                "fr": { "textSize": 150, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 150, "textInter": 66 }
-            }
+            "origins": ["stretchgoal"]
         },
 
         {
             "id": "putrescence",
-            "title": {
-                "fr": "Putrescence",
-                "en": "Putrescence",
-                "it": "Putrescenza"
-            },
-            "text": {
-                "fr": "Le lanceur ne peut pas être attaqué par des morts-vivants (momie ou squelette) jusqu'au début du tour suivant du camp du lanceur.",
-                "en": "Undead characters (Mummies and Skeletons) cannot attack you until your next turn or activation.",
-                "it": "Il Mago non può essere attaccato dai Non-Morti (Mummie e Scheletri), fino all'inizio del suo prossimo turno."
-            },
-            "clarification": null,
 
             "cost": "2",
             "saturation": "2",
@@ -1995,28 +1155,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/putrescence.png",
-            "origins": ["stretchgoal"],
-
-            "textStyle": {
-                "fr": { "textSize": 150, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 150, "textInter": 66 }
-            }
+            "origins": ["stretchgoal"]
         },
 
         {
             "id": "recall",
-            "title": {
-                "fr": "Rappel",
-                "en": "Recall",
-                "it": "Richiamo"
-            },
-            "text": {
-                "fr": "Ciblez une figurine avec ligne de vue.\nToutes les figurines amies de la zone ciblée sont déplacées sur la zone du lanceur.",
-                "en": "Choose an area in your line of sight. Take each friendly model in that area and place it in your area.",
-                "it": "Scegli un'area in linea di vista.\nTutti i modelli amici nell'area bersaglio sono spostati nell'area occupata dal Mago."
-            },
-            "clarification": null,
 
             "cost": "3",
             "saturation": "3",
@@ -2036,28 +1179,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/recall.png",
-            "origins": ["stretchgoal"],
-
-            "textStyle": {
-                "fr": { "textSize": 150, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 150, "textInter": 66 }
-            }
+            "origins": ["stretchgoal"]
         },
 
         {
             "id": "return_of_the_brave",
-            "title": {
-                "fr": "Retour des braves",
-                "en": "Return of the Brave",
-                "it": "Ritorno degli impavidi"
-            },
-            "text": {
-                "fr": "En payant le coût de renfort d'une unité alliée, le lanceur peut ramener en renfort l'unité dans sa zone.",
-                "en": "Choose a dead unit model whose tile is in the river; this spell's cost is equal to that model's reinforcement cost. Place that model on the board in the caster's area as though it were reinforced.",
-                "it": "Scegli un modello morto la cui tessera è nel Fiume; il costo di questo incantesimo è uguale al costo di Rinfozo del modello. Piazza il modello sul tabellone nell'area del Mago come se fosse un rinforzo."
-            },
-            "clarification": null,
 
             "cost": "0",
             "saturation": "5",
@@ -2077,28 +1203,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/return_of_the_brave.png",
-            "origins": ["stretchgoal"],
-
-            "textStyle": {
-                "fr": { "textSize": 150, "textInter": 66 },
-                "en": { "textSize": 143, "textInter": 72 },
-                "it": { "textSize": 133, "textInter": 72 }
-            }
+            "origins": ["stretchgoal"]
         },
 
         {
             "id": "sets_blood",
-            "title": {
-                "fr": "Sang de Set",
-                "en": "Set's Blood",
-                "it": "Sangue di Set"
-            },
-            "text": {
-                "fr": "",
-                "en": "",
-                "it": ""
-            },
-            "clarification": null,
 
             "cost": "",
             "saturation": "",
@@ -2118,28 +1227,11 @@
             "forEnergy": false,
 
             "image": null,
-            "origins": ["stretchgoal"],
-
-            "textStyle": {
-                "fr": { "textSize": 150, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 150, "textInter": 66 }
-            }
+            "origins": ["stretchgoal"]
         },
 
         {
             "id": "sets_illusion",
-            "title": {
-                "fr": "Illusion de Set",
-                "en": "Set's Illusion",
-                "it": "Illusione di Set"
-            },
-            "text": {
-                "fr": "Ciblez une figurine avec ligne de vue.\nLa cible gagne la compéténce Horreur jusqu'au début du tour suivant du camp du lanceur.",
-                "en": "Choose a character in your line of sight. That character gains Horror until your next turn.",
-                "it": "Scegli un personaggio in linea di vista.\nIl bersaglio ottiene l'abilità Orrore fino all'inizio del prossimo turno del Mago."
-            },
-            "clarification": null,
 
             "cost": "4",
             "saturation": "4",
@@ -2159,28 +1251,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/sets_illusion.png",
-            "origins": ["stretchgoal"],
-
-            "textStyle": {
-                "fr": { "textSize": 150, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 150, "textInter": 66 }
-            }
+            "origins": ["stretchgoal"]
         },
 
         {
             "id": "shapechanger",
-            "title": {
-                "fr": "Change-forme",
-                "en": "Shapechanger",
-                "it": "Mutaforma"
-            },
-            "text": {
-                "fr": "Le lanceur est retiré du plateau et reviendra sur sa zone de départ ou une zone adjacente, à son prochain tour ou activation.",
-                "en": "Remove the caster's model from its area on the board. At the beginning of their next turn or activation, place the caster's model in that area or an area adjacent to it.",
-                "it": "Rimuovi il Mago dalla sua area. All'inizio del suo prossimo turno o della sua prossima attivazione, egli ricompare nella sua area o in un'area ad essa adiacente."
-            },
-            "clarification": null,
 
             "cost": "3",
             "saturation": "3",
@@ -2200,28 +1275,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/shapechanger.png",
-            "origins": ["stretchgoal"],
-
-            "textStyle": {
-                "fr": { "textSize": 150, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 150, "textInter": 66 }
-            }
+            "origins": ["stretchgoal"]
         },
 
         {
             "id": "stone_skin",
-            "title": {
-                "fr": "Peau de pierre",
-                "en": "Stone Skin",
-                "it": "Pelle di pietra"
-            },
-            "text": {
-                "fr": "Ciblez une figurine avec ligne de vue.\nLa cible améliore sa défense passive de 2 jusqu'au début du tour suivant du camp du lanceur.",
-                "en": "Choose a character in your line of sight. That character's armor value is increased by 2 until your next turn.",
-                "it": "Scegli un personaggio in linea di vista.\nIl bersaglio aumenta la sua Armatura di 2 punti fino all'inizio del prossimo turno del Mago."
-            },
-            "clarification": null,
 
             "cost": "3",
             "saturation": "3",
@@ -2241,28 +1299,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/stone_skin.png",
-            "origins": ["stretchgoal"],
-
-            "textStyle": {
-                "fr": { "textSize": 150, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 150, "textInter": 66 }
-            }
+            "origins": ["stretchgoal"]
         },
 
         {
             "id": "tears_of_dagon",
-            "title": {
-                "fr": "Larmes de Dagon",
-                "en": "Tears of Dagon",
-                "it": "Lacrime di Dagon"
-            },
-            "text": {
-                "fr": "Ciblez une zone au terrain stable avec ligne de vue. Le sol de la zone devient instable.\nQuitter cette zone coûte 1 point de mouvement supplémentaire.\nLe sort se dissipe au début du tour suivant du camp du lanceur.",
-                "en": "Choose a stable area in your line of sight. That area becomes unstable until your next turn. A character must spend 1 extra movement point to move out of an unstable area.",
-                "it": "Scegli un'area di terreno stabile in linea di vista. Il suolo dell'area diventa instabile. Attraversare quest'area costa un (1) punto movimento extra. Gli effetti dell'incantesimo terminano all'inizio del prossimo turno del Mago."
-            },
-            "clarification": null,
 
             "cost": "1",
             "saturation": "2",
@@ -2282,28 +1323,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/tears_of_dagon.png",
-            "origins": ["stretchgoal"],
-
-            "textStyle": {
-                "fr": { "textSize": 132, "textInter": 69 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 122, "textInter": 69 }
-            }
+            "origins": ["stretchgoal"]
         },
 
         {
             "id": "warmth_of_ishtar",
-            "title": {
-                "fr": "Chaleur d'Ishtar",
-                "en": "Warmth of Ishtar",
-                "it": "Calore di Ishtar"
-            },
-            "text": {
-                "fr": "",
-                "en": "",
-                "it": ""
-            },
-            "clarification": null,
 
             "cost": "",
             "saturation": "",
@@ -2323,28 +1347,11 @@
             "forEnergy": false,
 
             "image": null,
-            "origins": ["stretchgoal"],
-
-            "textStyle": {
-                "fr": { "textSize": 150, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 150, "textInter": 66 }
-            }
+            "origins": ["stretchgoal"]
         },
 
         {
             "id": "withering",
-            "title": {
-                "fr": "Flétrissement",
-                "en": "Withering",
-                "it": "Avvizzimento"
-            },
-            "text": {
-                "fr": "Ciblez une figurine avec ligne de vue.\nLa cible subit des blessures de : {dice_yellow_reroll}\nAucune défense n'est possible.",
-                "en": "Attack a character in your line of sight; roll {dice_yellow_reroll}. That character cannot defend against this attack, and suffers damage equal to the attack power.",
-                "it": "Scegli un personaggio in linea di vista.\nIl bersaglio subisce un danno di {dice_yellow_reroll}.\nNessuna difesa è possibile."
-            },
-            "clarification": null,
 
             "cost": "2",
             "saturation": "2",
@@ -2364,28 +1371,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/withering.png",
-            "origins": ["stretchgoal"],
-
-            "textStyle": {
-                "fr": { "textSize": 150, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 150, "textInter": 66 }
-            }
+            "origins": ["stretchgoal"]
         },
 
         {
             "id": "yajurs_awakening",
-            "title": {
-                "fr": "Réveil de Yajur",
-                "en": "Yajur's Awakening",
-                "it": "Risveglio di Yajur"
-            },
-            "text": {
-                "fr": "En payant le coût de renfort d'une figurine de mort-vivant (momie ou squelette), le lanceur peut la ramener en renfort dans sa zone.",
-                "en": "Choose a dead undead unit model (Mummy or Skeleton) whose tile is in the river; this spell's cost is equal to that model's reinforcement cost. Place that model on the board in the caster's area as though it were reinforced.",
-                "it": "Pagando il costo di Rinforzo di un modello Non-Morto (mummia o scheletro) la cui tessera è presente sul Fiume, il Mago può evocarlo come rinforzo nella sua area."
-            },
-            "clarification": null,
 
             "cost": "0",
             "saturation": "5",
@@ -2405,28 +1395,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/yajurs_awakening.png",
-            "origins": ["stretchgoal"],
-
-            "textStyle": {
-                "fr": { "textSize": 150, "textInter": 66 },
-                "en": { "textSize": 138, "textInter": 66 },
-                "it": { "textSize": 138, "textInter": 66 }
-            }
+            "origins": ["stretchgoal"]
         },
 
         {
             "id": "ymirs_rage",
-            "title": {
-                "fr": "Rage d'Ymir",
-                "en": "Ymir's Rage",
-                "it": "Furia di Ymir"
-            },
-            "text": {
-                "fr": "Les figurines amies et le lanceur de sort voient toutes leurs attaques augmentées de {dice_orange} et leur défense diminuée de 1.\nLe sort se dissipe au début du tour suivant du camp du lanceur.",
-                "en": "When you or a friendly character attack, the attacker rolls an extra {dice_orange} for that attack. Your armor value and the armor value of each friendly character is reduced by 1. This effect ends at the beginning of your next turn.",
-                "it": "Quando il Mago e i modelli amici attaccano, tirano un un {dice_orange} in più. L'Armatura del Mago e dei modelli amici è ridotta di 1. L'effetto dell'incantesimo termina all'inizio del prossimo turno del Mago."
-            },
-            "clarification": null,
 
             "cost": "3",
             "saturation": "3",
@@ -2446,32 +1419,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/ymirs_rage.png",
-            "origins": ["stretchgoal"],
-
-            "textStyle": {
-                "fr": { "textSize": 148, "textInter": 66 },
-                "en": { "textSize": 133, "textInter": 64 },
-                "it": { "textSize": 123, "textInter": 66 }
-            }
+            "origins": ["stretchgoal"]
         },
 
         {
             "id": "weight_of_the_years",
-            "title": {
-                "fr": "Le Poids des Ages",
-                "en": "Weight of the Years",
-                "it": "Il peso degli anni"
-            },
-            "sort": {
-                "fr": "Poids des Ages",
-                "it": "Peso degli anni"
-            },
-            "text": {
-                "fr": "L'Overlord lance {dice_orange}. Tous les Héros avec ou sans ligne de vue, subissent autant de blessure sans aucune défense possible.",
-                "en": "The Overlord rolls {dice_orange}. Each hero, with or without line of sight, suffers that many damage with no possible defense.",
-                "it": "L'Overlord lancia {dice_orange}. Tutti gli Eroi subiscono questi danni senza possibilità di difendersi."
-            },
-            "clarification": null,
 
             "cost": "2",
             "saturation": "2",
@@ -2491,28 +1443,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/weight_of_the_years.png",
-            "origins": ["nordheim"],
-
-            "textStyle": {
-                "fr": { "textSize": 150, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 150, "textInter": 66 }
-            }
+            "origins": ["nordheim"]
         },
 
         {
             "id": "blaze",
-            "title": {
-                "fr": "Brasier",
-                "en": "Blaze",
-                "it": "Esplosione"
-            },
-            "text": {
-                "fr": "Le lanceur de sort cible une zone dans sa ligne de vue. Toutes les figurines présentes sur cette zone subissent une attaque de {dice_red}.",
-                "en": "Attack an area in your line of sight; roll {dice_red}. If the attack power is greater than the defense power, the defender suffers damage equal to the difference.",
-                "it": "Scegli un'area in linea di vista. Tutti i modelli in quest'area subiscono un attacco di {dice_red}."
-            },
-            "clarification": null,
 
             "cost": "2",
             "saturation": "2",
@@ -2532,28 +1467,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/blaze.png",
-            "origins": ["khitai"],
-
-            "textStyle": {
-                "fr": { "textSize": 150, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 150, "textInter": 66 }
-            }
+            "origins": ["khitai"]
         },
 
         {
             "id": "mental_torture",
-            "title": {
-                "fr": "Torture mentale",
-                "en": "Mental Torture",
-                "it": "Tortura mentale"
-            },
-            "text": {
-                "fr": "Ciblez une figurine dans la même zone que le lanceur de sort. La cible subit une attaque de {dice_orange} par gemme dépensée. Aucune défense n'est possible. Ce sort ne peut être lancé qu'une seule fois par tour.",
-                "en": "Attack a character in your area; roll {dice_orange} for each gem assigned to this spell. That character cannot defend against this attack. This spell can be cast only once per turn.",
-                "it": "Scegli un personaggio nella stessa area del Mago. Il bersaglio subisce un attacco di un {dice_orange} per ogni gemma utilizzata. Nessuna difesa è possibile. Questo incantesimo può essere lanciato una sola volta per turno."
-            },
-            "clarification": null,
 
             "cost": "0",
             "saturation": "3",
@@ -2573,28 +1491,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/mental_torture.png",
-            "origins": ["khitai"],
-
-            "textStyle": {
-                "fr": { "textSize": 131, "textInter": 72 },
-                "en": { "textSize": 150, "textInter": 65 },
-                "it": { "textSize": 121, "textInter": 72 }
-            }
+            "origins": ["khitai"]
         },
 
         {
             "id": "push_back",
-            "title": {
-                "fr": "Repousser",
-                "en": "Push Back",
-                "it": "Respingere"
-            },
-            "text": {
-                "fr": "Le lanceur de sort cible une figurine ennemie dans sa zone. Il peut déplacer cette figurine d'une zone en ignorant le phénomène de gêne et sans que cela ne provoque de dégâts à cette figurine.",
-                "en": "Choose an enemy in your area. Move that enemy one area in a way that would not cause it to suffer damage. This movement is not affected by hindering.",
-                "it": "Il Mago sceglie un personaggio nella sua area. Il bersaglio è spostato di un'area adiacente ignorando gli effetti dell'intralcio. Il bersaglio spostato in questo modo non può subire danni."
-            },
-            "clarification": null,
 
             "cost": "1",
             "saturation": "3",
@@ -2614,28 +1515,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/push_back.png",
-            "origins": ["khitai"],
-
-            "textStyle": {
-                "fr": { "textSize": 141, "textInter": 72 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 141, "textInter": 72 }
-            }
+            "origins": ["khitai"]
         },
 
         {
             "id": "pass_through_wall",
-            "title": {
-                "fr": "Passe-muraille",
-                "en": "Pass through Wall",
-                "it": "Attraversa muri"
-            },
-            "text": {
-                "fr": "Le lanceur de sort peut traverser une paroi le séparant d'une zone adjacente du même niveau comme s'il s'agissait d'une limite de zone normale. Son déplacement reste impacté par le phénomène de gêne.",
-                "en": "Spend 1 movement point to move across an obstacle to an adjacent area of same elevation. This movement is affected by hindering.",
-                "it": "Il Mago può attraversare una parete che separa due aree adiacenti allo stesso livello come se la parete non ci fosse. Questo movimento è affetto da intralcio."
-            },
-            "clarification": null,
 
             "cost": "1",
             "saturation": "1",
@@ -2655,28 +1539,11 @@
             "forEnergy": false,
 
             "image": "data/spells/img/pass_through_wall.png",
-            "origins": ["stygia"],
-
-            "textStyle": {
-                "fr": { "textSize": 140, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 140, "textInter": 66 }
-            }
+            "origins": ["stygia"]
         },
 
         {
             "id": "psychic_strike",
-            "title": {
-                "fr": "Attaque psychique",
-                "en": "Psychic Strike",
-                "it": "Attacco psichico"
-            },
-            "text": {
-                "fr": "Le lanceur de sort cible un héros situé à x zones. Ce héros passe toutes ses gemmes de sa zone d'énergie à sa zone de fatigue.",
-                "en": "Choose a hero X areas away from you. That hero moves all gems from their Reserve zone to their Fatigue zone.",
-                "it": "Il Mago bersaglia un Eroe distante X aree (con X numero di gemme speso). Questo Eroe sposta tutte le sue gemme dalla Riserva alla Fatica."
-            },
-            "clarification": null,
 
             "cost": "0",
             "saturation": "0",
@@ -2696,28 +1563,11 @@
             "forEnergy": true,
 
             "image": "data/spells/img/psychic_strike.png",
-            "origins": ["stygia"],
-
-            "textStyle": {
-                "fr": { "textSize": 150, "textInter": 66 },
-                "en": { "textSize": 150, "textInter": 66 },
-                "it": { "textSize": 150, "textInter": 66 }
-            }
+            "origins": ["stygia"]
         },
 
         {
             "id": "stone_rain",
-            "title": {
-                "fr": "Pluie de Pierres",
-                "en": "Stone Rain",
-                "it": "Pioggia di pietre"
-            },
-            "text": {
-                "fr": "Le lanceur de sort choisit une zone avec un pion \"Passage secret\" ou \"Puits\" situé à X zones et le retire du jeu. Les occupants de cette zone subissent une attaque de {dice_red}{dice_red} sans défense possible.",
-                "en": "Choose an area X areas away from you with a secret passage or well token. Remove that token and attack that area; roll {dice_red}{dice_red}. Characters cannot defend against this attack and suffer damage equal to the attack power.",
-                "it": "Il Mago sceglie un'area con un segnalino \"Passaggio segreto\" o \"Pozzo\" situato a X (con X numero di gemme speso) aree da lui e lo rimuove dal gioco. Gli occupanti dell'area subiscono un attacco di {dice_red}{dice_red} senza nessuna difesa."
-            },
-            "clarification": null,
 
             "cost": "0",
             "saturation": "0",
@@ -2739,13 +1589,7 @@
             "image": "data/spells/img/stone_rain.png",
             "origins": ["stygia"],
 
-            "tokens": ["secret", "well"],
-
-            "textStyle": {
-                "fr": { "textSize": 137, "textInter": 66 },
-                "en": { "textSize": 125, "textInter": 68 },
-                "it": { "textSize": 115, "textInter": 72 }
-            }
+            "tokens": ["secret", "well"]
         }
     ]
 }

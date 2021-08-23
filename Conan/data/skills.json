@@ -1,550 +1,160 @@
 {
-    "link": {
-        "fr": "http://www.monolithedition.com/download/rules/Aides-de-jeu-FR.pdf",
-        "en": "http://www.monolithedition.com/download/rules/Game-aids-EN.pdf",
-        "it": "https://the-overlord.net/index.php?/files/file/143-conan-schede-aiuto-abilit%C3%A0/&do=download&csrfKey=13ba91465f0a9eabcc05c76aca3e785f"
-    },
     "types": [
         {
-            "id": "attack",
-            "title": {
-                "fr": "Attaque",
-                "en": "Attack",
-                "it": "Attacco"
-            }
+            "id": "attack"
         }, {
-            "id": "movement",
-            "title": {
-                "fr": "Mouvement",
-                "en": "Movement",
-                "it": "Movimento"
-            }
+            "id": "movement"
         }, {
-            "id": "miscellaneous",
-            "title": {
-                "fr": "Diverses",
-                "en": "Miscellaneous",
-                "it": "Miste"
-            }
+            "id": "miscellaneous"
         }, {
-            "id": "defense",
-            "title": {
-                "fr": "Défense",
-                "en": "Defense",
-                "it": "Difesa"
-            }
+            "id": "defense"
         }, {
-            "id": "magic",
-            "title": {
-                "fr": "Magie",
-                "en": "Magic",
-                "it": "Magiche"
-            }
+            "id": "magic"
         }
     ],
     "list": [
         {
             "id": "reach",
             "type": "attack",
-            "title": {
-                "fr": "Allonge",
-                "en": "Reach",
-                "it": "Allungo"
-            },
-            "text": {
-                "fr": "Le personnage peut attaquer au corps-à-corps sur une zone adjacente avec ligne de vue et s’il n’y a pas d’obstacle (mur, porte, barreaux, tentures…) entre sa cible et lui.",
-                "en": "This character can attack a character in an adjacent area with a line of sight, with a Melee Attack if there is no obstacle (wall, door, bar, flap, etc.) between the characters’ areas.",
-                "it": "Il personaggio può attaccare in Mischia un nemico in linea di vista in un'area adiacente se tra le due aree non sono presenti ostacoli (muri, porte, barriere, tende, ecc)."
-            },
-            "clarification": {
-                "fr": "Pour utiliser Allonge, les unités doivent se trouver au même niveau. On considère que les zones de transition comme les escaliers ou les éboulis de la Forteresse sont à la fois aux niveaux supérieur et inférieur. Attaquer une unité qui se trouve à un niveau différent nécessite de recourir à une Attaque à distance ou à un Sort.\nAllonge ne procure de bonus de surplomb que lorsque les règles spéciales de la carte Auberge sont utilisées.",
-                "en": "Reach requires units be on the same level. Connecting areas like stairs or the Fortress rock slides are considered to be at both the higher and lower levels. Attacking a unit at a different level, however, requires a Ranged Attack or Spel\nThe only time Reach incurs an elevation bonus is if the special rules are used for the Inn game board.",
-                "it": "Per utilizzare Allungo, le unità devono trovarsi allo stesso livello. Le aree di transizione tra livelli differenti - come le scale della Locanda o le aree franate del Forte - sono considerate essere contemporaneamente allo stesso livello delle aree che congiungono. Per attaccare un'unità che si trova su un altro livello, bisogna quindi effettuare un attacco a Distanza oppure ricorrere a un Incantesimo.\nAllungo non conferisce bonus di soprelevazione tranne nel caso delle regola speciale dei banconi e tavoli della Locanda."
-            },
             "image": "data/skills/img/attack/reach.png"
         }, {
             "id": "circular_strike",
             "type": "attack",
-            "title": {
-                "fr": "Coup circulaire",
-                "en": "Circular Strike",
-                "it": "Colpo circolare"
-            },
-            "text": {
-                "fr": "Avec toute arme de corps-à-corps à deux main (dont l’encombrement est supérieur ou égal à 3), le personnage peut donner un coup circulaire. Si l’attaque, résolue normalement, tue le premier adversaire désigné, le reliquat de dégâts est reporté sur le suivant (choisit par l'attaquant) et ainsi de suite jusqu’à ce qu’il n’y ait plus de reliquat.",
-                "en": "When this character kills an enemy character with a 2-handed Melee Attack, another enemy character in the same area suffers the excess damage from the attack (if that character is killed, repeat the process). The attacker decides the order in which damage is dealt to defending enemies. Resolve the attack normally (determining attack power, defense power, etc.) on one enemy before proceeding with the next one if there is still damage left to be dealt.",
-                "it": "Quando questo personaggio uccide in un attacco in Mischia un personaggio nemico con la propria arma a due mani, i danni in eccesso dell'attacco vengono assegnati a un altro personaggio nemico nella stessa (se questo personaggio viene ucciso, si continui l'assegnazione al successivo personaggio). L'attaccante decide l'ordine di assegnazione tra i nemici. Si risolvano gli attacchi normalmente (determinazione del potere dell'attacco, potere della difesa, ecc) sul singono nemico prima di procedere al successivo se ci sono ancora dei danni da assegnare."
-            },
-            "clarification": {
-                "fr": "Si un personnage dispose aussi de Coup Précis, le joueur doit choisir s’il utilise Coup Précis ou Coup Circulaire avant de lancer les dés.",
-                "en": "If someone has also Precision Strike, The player must choose if they are making a Precision Strike or a Circular Strike before they roll.",
-                "it": "Se un personaggio ha anche l'abilità Colpo Preciso, il giocatore, prima di lanciare i dadi, deve scegliere se utilizzare Colpo Preciso o Colpo Circolare."
-            },
             "image": "data/skills/img/attack/circular_strike.png"
         }, {
             "id": "ambidextrous",
             "type": "attack",
-            "title": {
-                "fr": "Ambidextrie",
-                "en": "Ambidextrous",
-                "it": "Ambidestro"
-            },
-            "text": {
-                "fr": "S’il dispose de deux armes à une main, le personnage peut cumuler leur bonus lors de chacune de ses attaques au corps-à-corps (ne fonctionne pas en défense).",
-                "en": "When this character performs a Melee Attack, the character can choose 2 of their 1-handed weapon cards to attack with. Cannot be used to perform a Guard action.",
-                "it": "Quando questo personaggio effettua un attacco in Mischia, Il personaggio può sommare i bonus di due delle sue armi a una mano per attaccare. Non può usarle entrambe in difesa."
-            },
             "image": "data/skills/img/attack/ambidextrous.png"
         }, {
             "id": "constriction",
             "type": "attack",
-            "title": {
-                "fr": "Constriction",
-                "en": "Constriction",
-                "it": "Costrizione"
-            },
-            "text": {
-                "fr": "Si, lors de son attaque, la créature obtient au moins une face avec 2 symboles sur l’un de ses dés, sa cible est « saisie », en plus des blessures éventuelles. La figurine du personnage saisi est ramenée au contact de la figurine de la créature et est considérée comme bloquée. Un personnage ayant la compétence Insaisissable ignore le blocage dû à Constriction, pas les dégâts associés à l’attaque.",
-                "en": "When this character's attack power is determined, if any die shows 2 or more symbols, move the defender’s model close to the attacker’s one so their bases touch. As long as they remain in the same area, the defender treats the attacker as thought the attacker has Blocking. A character with Evasive ignores Constriction’s Blocking effect, but not the damage from the attack.",
-                "it": "Una volta determinato il potere d'attacco di questo personaggio, se uno qualsiasi dei suoi dadi mostra 2 o più simboli, muovi il difensore a contatto di base con l'attaccante. Fin quando i due modelli restano nella stessa area, il difensore tratta l'attaccante come se quest'ultimo avesse l'abilità Bloccare. Un personaggio con l'abilità Inafferrabile ignora gli effetti di Costrizione, ma non il danno associato all'attacco."
-            },
-            "clarification": {
-                "fr": "Si une unité dispose à la fois de Constriction et Allonge, Constriction permet logiquement de déplacer une cible d’une zone vers une autre. C’est le mouvement associé à la Constriction qui intervient en premier. Ainsi, une unité alliée disposant des compétences Garde du corps ou Soutien devrait déjà se trouver dans la zone de l’attaquant pour que les effets de la compétence s’appliquent.",
-                "en": "If a unit has Constriction and Reach, Constriction can possibly move the target from one area to another. The movement from Constriction happens first. Thus, an Allied unit with Bodyguard or Support would already need to be in the attacker’s area for the skill’s effects to apply.",
-                "it": "Se un'unità ha le abilità Costrizione e Allungo, Costrizione gli permette di spostare il bersaglio da un'area a un'altra. È il movimento associato a Costrizione che viene effettuato per primo. Perciò, un'unità alleata che possiede le abilità Guardia del Corpo o Supporto dovrà già trovarsi nell'area dell'attaccante affinché si possano applicare gli effetti della sua abilità."
-            },
             "image": "data/skills/img/attack/constriction.png"
         }, {
             "id": "precision_strike",
             "type": "attack",
-            "title": {
-                "fr": "Coup précis",
-                "en": "Precision strike",
-                "it": "Colpo preciso"
-            },
-            "text": {
-                "fr": "Lorsqu’il réalise une attaque au corps-à-corps, le personnage ignore systématiquement le premier point de défense de sa cible.",
-                "en": "When a character with this skill performs a Melee Attack, they automatically reduce the defender’s defense power by 1.",
-                "it": "Quando un personaggio con questa abilità effettua un attacco in Mischia, automaticamente riduce il potere di difesa del nemico di 1."
-            },
-            "clarification": {
-                "fr": "Si un personnage dispose aussi de Coup Circulaire, le joueur doit choisir s’il utilise Coup Précis ou Coup Circulaire avant de lancer les dés.",
-                "en": "If someone has also Circular Strike, The player must choose if they are making a Precision Strike or a Circular Strike before they roll.",
-                "it": "Se un personaggio ha anche l'abilità Colpo Circolare, il giocatore, prima di lanciare i dadi, deve scegliere se utilizzare Colpo Preciso o Colpo Circolare."
-            },
             "image": "data/skills/img/attack/precision_strike.png"
         }, {
             "id": "attack_from_beyond",
             "type": "attack",
-            "title": {
-                "fr": "Retour de l’Au-delà",
-                "en": "Attack from Beyond",
-                "it": "Ritorno dall'Aldilà"
-            },
-            "text": {
-                "fr": "Juste après sa mort, le personnage peut porter une ultime attaque au corps-à-corps d’une puissance de {dice_red}{dice_red}{dice_red}, sans bonus d’arme et sans malus d’attaque à mains nues.",
-                "en": "When his character dies, before the model is removed from the board, the character may perform a free unarmed Melee Attack, rolling {dice_red}{dice_red}{dice_red} instead of their normal dice (the character ignores penalties from unarmed attacks and cannot benefit from Melee Attack bonuses from weapons).",
-                "it": "Quando questo personaggio muore, prima che il modello sia rimosso dal tabellone, egli effettua un ultimo attacco in Mischia con una potenza d'attacco pari a {dice_red}{dice_red}{dice_red}, senza nessuna penalità e nessun bonus dovuto alle armi."
-            },
             "image": "data/skills/img/attack/attack_from_beyond.png"
         }, {
             "id": "counterattack",
             "type": "attack",
-            "title": {
-                "fr": "Riposte",
-                "en": "Counterattack",
-                "it": "Contrattacco"
-            },
-            "text": {
-                "fr": "Chaque fois que le personnage est attaqué au corps-à-corps (que l’attaque ait causé des dégâts ou non), il peut gratuitement riposter (s’il survit à l’attaque) de {dice_red}, sans bonus d’arme et sans malus d’attaque à mains nues.",
-                "en": "When a character attacks this character with a Melee Attack, after the attack is resolved (whether damage was dealt or not), this character (if still alive) may immediately counterattack that character with a free unarmed Melee Attack, rolling {dice_red} instead of their normal die (the character ignores penalties from unarmed attacks and cannot benefit from Melee Attack bonuses from weapons).",
-                "it": "Quando questo personaggio viene attaccato in Mischia, dopo che l'attacco è stato risolto (indipendentemente dall'assegnazione dei danni), se è ancora vivo può immediatamente contrattaccare tirando {dice_red} al posto dei normali dadi in attacco, senza nessuna penalità e senza nessun bonus dovuto alle armi."
-            },
             "image": "data/skills/img/attack/counterattack.png"
         }, {
             "id": "elite_shooter",
             "type": "attack",
-            "title": {
-                "fr": "Tireur d’élite",
-                "en": "Elite Shooter",
-                "it": "Tiratore scelto"
-            },
-            "text": {
-                "fr": "Le personnage ignore les effets du phénomène de gêne lorsqu’il réalise une attaque à distance. De plus, il ignore la compétence Sous protection de sa cible.",
-                "en": "This character’s Ranged Attacks are not affected by hindering and ignore Protected.",
-                "it": "Gli attacchi a Distanza di questo personaggio non sono affetti da intralcio e ignorano l'abilità Protetto."
-            },
             "image": "data/skills/img/attack/elite_shooter.png"
         }, {
             "id": "precision_shot",
             "type": "attack",
-            "title": {
-                "fr": "Tir précis",
-                "en": "Precision Shot",
-                "it": "Tiro di precisione"
-            },
-            "text": {
-                "fr": "Lorsqu’il réalise une attaque à distance, le personnage ignore systématiquement le premier point de défense passive de sa cible.",
-                "en": "When this character performs a Ranged Attack, the defender’s armor value is reduced by 1 for that attack.",
-                "it": "Quando questo personaggio effettua un attacco a Distanza, il valore dell'armatura del difensore, per questo attacco, è ridotto di 1."
-            },
             "image": "data/skills/img/attack/precision_shot.png"
         },
 
         {
             "id": "blocking",
             "type": "movement",
-            "title": {
-                "fr": "Bloqueur",
-                "en": "Blocking",
-                "it": "Bloccare"
-            },
-            "text": {
-                "fr": "Le personnage bloque tout mouvement des adversaires présents sur sa zone, à l'exception de ceux possédant la compétence Insaisissable.",
-                "en": "Enemy characters without Evasive cannot move out of this character's area.",
-                "it": "Personaggi nemici che non hanno l'abilità Inafferrabile, non possono uscire dall'area occupata da questo personaggio."
-            },
             "image": "data/skills/img/movement/blocking.png"
         }, {
             "id": "wall_wrecker",
             "type": "movement",
-            "title": {
-                "fr": "Défoncer les cloisons",
-                "en": "Wall Wrecker",
-                "it": "Spacca Muri"
-            },
-            "text": {
-                "fr": "Le personnage peut traverser les cloisons et les portes en bois, au cours de son mouvement, pour un surcout de 2 points de mouvement. Il laisse derrière lui une ouverture (symbolisée par un pion) : le personnage se déplace de l'autre côté de la cloison qu'il vient de défoncer. Les deux zones deviennent adjascentes sans pénalité de mouvement pour passer de l'une à l'autre et l'ouverture donne une ligne de vue entre ces deux zones.",
-                "en": "This character can spend 2 movement points to move across a wooden wall or door from one area to an adjacent area, and place a \"Wall Wrecker\" token on that obstacle. Then they immediately move to the other side of the wall they just wrecked. From now on, the two areas are adjacent, there is no penalty for moving from one to the other, and they have line of sight on each other.",
-                "it": "Questo personaggio può spendere 2 punti movimento per muovere attraverso un muro di legno o una porta che separa due aree adiacenti. Piazza un segnalino \"Breccia\" sull'ostacolo, quindi muovi il  personaggio dall'altra parte del muro/porta abbattuto/a. Da adesso le due aree sono adiacenti: non c'è nessun malus per muoversi dall'una all'altra e tra esse la linea di vista è libera."
-            },
             "image": "data/skills/img/movement/wall_wrecker.png",
             "token": "wrecked-wall"
         }, {
             "id": "evasive",
             "type": "movement",
-            "title": {
-                "fr": "Insaisissable",
-                "en": "Evasive",
-                "it": "Inafferrabile"
-            },
-            "text": {
-                "fr": "Le personnage ignore toute pénalité de mouvement liée à la présence d'adversaires dans sa zone, quand bien même ceux-ci auraient la compétence Bloqueur.",
-                "en": "This character can move as if there were no enemy characters in the character's area.",
-                "it": "Questo personaggio ignora tutte le penalità al movimento dovute alla presenza di avversarsi nella sua area, anche se essi possiedono l'abilità Bloccare."
-            },
             "image": "data/skills/img/movement/evasive.png"
         }, {
             "id": "swimming",
             "type": "movement",
-            "title": {
-                "fr": "Natation",
-                "en": "Swimming",
-                "it": "Nuotare"
-            },
-            "text": {
-                "fr": "Le personnage est capable de se déplacer à travers les zones liquides. Le surcoût pour quitter une zone liquide est de 1 point de mouvement.",
-                "en": "This character can move into water areas. Moving out of a water area cost 1 extra movement point.",
-                "it": "Questo personaggio può muoversi attraverso aree con l'acqua. Uscire da un'area con l'acqua costa un (1) punto movimento extra."
-            },
             "image": "data/skills/img/movement/swimming.png"
         }, {
             "id": "intangible",
             "type": "movement",
-            "title": {
-                "fr": "Intangible",
-                "en": "Intangible",
-                "it": "Intangibile"
-            },
-            "text": {
-                "fr": "Le personnage peut traverser un obstacle normalement infranchissable en dépensant ses points de mouvement comme s'il s'agissait d'une limite normale. Le personnage n'est jamais affecté par le phénomène de gêne.",
-                "en": "This character can spend 1 movement point to move across an obstacle from 1 area to an adjacent area. This character's movement is not affected by hindering.",
-                "it": "Questo personaggio può spendere un (1) punto movimento per muovere attraverso un ostacolo tra due aree come se l'ostacolo non esistesse. Quando si muove così il personaggio non è mai affetto da intralcio."
-            },
             "image": "data/skills/img/movement/intangible.png"
         }, {
             "id": "web_projection",
             "type": "movement",
-            "title": {
-                "fr": "Projection de toile",
-                "en": "Web Projection",
-                "it": "Intrappolare"
-            },
-            "text": {
-                "fr": "Plutôt que de réaliser une attaque classique, le personnage peut projeter une toile sur un adversaire. Pour cela il réalise une attaque à distance avec {dice_orange}{dice_orange}{dice_orange}. Si l'attaque dépasse la défense, elle n'engendre pas de blessure mais la victime est immobilisée (on place le pion Toile contre son socle). Pour s'en extraire il lui en coûtera 4 points de mouvements en un seul tour.",
-                "en": "Instead of their normal attack, this character can perform a Ranged Attack, rolling {dice_orange}{dice_orange}{dice_orange} instead of their normal die. If the attack power is higher than the defense power, the defender places a web token on their model and suffers no damage. A character with a web token cannot move, but can spend 4 movement points to discard the token.",
-                "it": "Al posto del suo normale attacco, questo personaggio può effettuare un attacco a Distanza tirando {dice_orange}{dice_orange}{dice_orange}, invece dei suoi normali dadi. Se il potere d'attacco è maggiore del potere di difesa, il nemico piazza un segnalino Ragnatela sul proprio modello senza subire alcun danno. Un personaggio Intrappolato non può muovere, ma può spendere 4 punti movimento in un unico turno per scartare il segnalino Ragnatela."
-            },
-            "clarification": {
-                "fr": "Si une unité ne dispose pas de suffisamment de Points de Mouvement pour s’extraire en raison d’un empoisonnement, un Héros peut toujours dépenser tous ses Points de Mouvement gratuits et autant de points que nécessaire, jusqu’à sa limite de saturation.\nEn mode Aventure, si une unité de l’Overlord est prise dans une toile (suite à l’utilisation d’un Filet), l’Overlord peut utiliser les Points de Mouvement gratuits de l’unité et y ajouter des gemmes pour atteindre les 4 points nécessaires à son extraction, même si l’unité n’est pas normalement en mesure d’atteindre les 4 Points de Mouvement.\nEn mode Solo/coop, l’unité de l’Overlord utilise simplement tous ses Points de Mouvement gratuits pour s’extraire",
-                "en": "If a unit doesn’t have enough movement points to escape because they have been poisoned, a hero may escape by spending all of their free movement points and all points up to their exertion limit.\n In Adventure Mode, if an Overlord tile is caught in a web (by use of the Net item), the Overlord may use the unit’s free movement points and gems to reach the 4 points to escape, even if the unit would not normally be able to reach 4 movement points.\nIn Solo/Coop Mode, the Overlord tile simply uses all free movement points to escape.",
-                "it": "Se un'untà non ha sufficienti punti Movimento per liberarsi da una condizione di Intrappolato, un Eroe può sempre usare tutto il suo Movimento Base e aggiungere altri punti movimento senza superare il suo indice di saturazione. \nNella modalità Avventura, se un'unità dell'Overlord è intrappolata (in seguito all'uso di una Rete), l'Overlord può utilizzare il Movimento Base dell'unità e aggiungere delle gemme per raggiungere i 4 punti movimento necessari a liberarla, anche se l'unità normalmente non potrebbe avere 4 punti movimento. \nNella modalità Solo/Coop, l'Overlord spende semplicemente tutto il Movimento Base dell'unità."
-            },
             "token": "web",
             "image": "data/skills/img/movement/web_projection.png"
         }, {
             "id": "feline_grace",
             "type": "movement",
-            "title": {
-                "fr": "Souplesse féline",
-                "en": "Feline Grace",
-                "it": "Grazia felina"
-            },
-            "text": {
-                "fr": "Dans chaque zone empruntée, le personnage ignore un point de malus lié au phénomène de gêne.",
-                "en": "Moving cost this character 1 fewer movement point if the movement is affected by hindering.",
-                "it": "Il personaggio, nella sua area, ignora un (1) punto di penalità fornito da un eventuale intralcio."
-            },
             "image": "data/skills/img/movement/feline_grace.png"
         }, {
             "id": "leap",
             "type": "movement",
-            "title": {
-                "fr": "Saut",
-                "en": "Leap",
-                "it": "Saltare"
-            },
-            "text": {
-                "fr": "Le personnage peut sauter par-dessus les endroits prévus à cet effet. Pour ce faire, il lance {dice_red} et doit égaler ou dépasser l'indice de difficulté. Le saut n'est pas soumis au phénomène de gène. Sauter coûte 1 point de mouvement par zone traversée. Par exemple, sauter d'un bateau à l'autre coûte 2 points de mouvements.",
-                "en": "This character can leap over areas defined by the scenario. The character rolls {dice_red}, the leap is successful if the die shows symbols equal to or higher than the leap area's difficulty. Leaping costs 1 movement point per crossed area border. For example, when leaping from one ship to another, a character must spend 2 movement points to leap. Leaping is not affected by hindering.",
-                "it": "Questo personaggio può saltare alcune aree definite nello scenario. Il personaggio tira {dice_red}: il salto riesce se il punteggio è uguale o superiore alla difficoltà indicata nell'area da saltare. Saltare costa un (1) punto movimento per ogni bordo attraversato. Ad esempio, quando salta da una nave all'altra, il personaggio deve spendere 2 punti movimento per saltare. Saltare non è affetto da intralcio."
-            },
             "image": "data/skills/img/movement/leap.png"
         }, {
             "id": "flying",
             "type": "movement",
-            "title": {
-                "fr": "Vol",
-                "en": "Flying",
-                "it": "Volare"
-            },
-            "text": {
-                "fr": "Le personnage peut voler par-dessus les éléments du décor. Il ignore les contraintes de déplacement liés au décor. Le vol n'est pas soumis au phénomène de gène.",
-                "en": "This character can fly over the elements of the scenery. Flight ignores the movement contraints and penalties of the terrain, and is not affected by hindering.",
-                "it": "Questo personaggio può volare sugli elementi dello scenario. Volare permette di ignorare tutte le restrizioni e le penalità del terreno e ogni effetto dell'intralcio."
-            },
             "image": "data/skills/img/movement/flying.png"
         }, {
             "id": "climb",
             "type": "movement",
-            "title": {
-                "fr": "Escalade",
-                "en": "Climb",
-                "it": "Arrampicarsi"
-            },
-            "text": {
-                "fr": "Le personnage est capable de franchir les limites de zone qui requièrent cette compétence, en payant le surcoût de mouvement lié à la difficulté du franchissement comme décrit dans le scénario.",
-                "en": "This character can move across borders of areas that require this skill, paying the extra movement cost defined by the scenario.",
-                "it": "Questo personaggio può muovere attraverso i bordi delle aree che richiedono questa abilità, pagando il costo extra in punti movimento definito dallo scenario."
-            },
             "image": "data/skills/img/movement/climb.png"
         },
 
         {
             "id": "alchemy",
             "type": "miscellaneous",
-            "title": {
-                "fr": "Alchimie",
-                "en": "Alchemy",
-                "it": "Alchimia"
-            },
-            "text": {
-                "fr": "Alchimie est une compétence générique pouvant être utilisée dans certains scénarios.",
-                "en": "This skill's effect is defined by the scenario.",
-                "it": "Alchimia è un'abilità generica che può essere utilizzata in alcuni scenari."
-            },
             "image": "data/skills/img/miscellaneous/alchemy.png"
         }, {
             "id": "leadership",
             "type": "miscellaneous",
-            "title": {
-                "fr": "Commandement",
-                "en": "Leadership",
-                "it": "Comando"
-            },
-            "text": {
-                "fr": "Pour chaque gemme dépensée, le héros peut activer un de ses Alliés. Un Allié activé peut se déplacer et attaquer comme une unité. Il ne peut activer qu'une fois par tour chacun de ses Alliés.",
-                "en": "This hero can move 1 gem from their Reserve zone to their Fatigue zone to activate an ally. Activated allies move and attack like units. Each ally can be activated only once per turn.",
-                "it": "Per ogni gemma spesa, l'Eroe può attivare uno dei suoi Alleati. Un Alleato attivato può muovere e attaccare come un'unità. Il personaggio con Comando non può attivare un proprio Alleato più di una volta per turno."
-            },
             "image": "data/skills/img/miscellaneous/leadership.png"
         }, {
             "id": "concentration",
             "type": "miscellaneous",
-            "title": {
-                "fr": "Concentration",
-                "en": "Concentration",
-                "it": "Concentrazione"
-            },
-            "text": {
-                "fr": "Le personnage ignore toutes les pénalités liées au phénomène de gêne pour toutes les actions nécessitant un lancer de dé.",
-                "en": "This character's dice rolls are not affected by hindering.",
-                "it": "Il personaggio ignora tutte le penalità dovute all'intralcio per tutte le azioni che necessitano di un lancio di dadi."
-            },
             "image": "data/skills/img/miscellaneous/concentration.png"
         }, {
             "id": "lock_picking",
             "type": "miscellaneous",
-            "title": {
-                "fr": "Crochetage",
-                "en": "Lock-picking",
-                "it": "Scassinare"
-            },
-            "text": {
-                "fr": "Chaque fois qu'il tente une manipulation complexe pour crocheter une serrure, le personnage dispose d'un bonus de {dice_red}.",
-                "en": "This character can rolls an extra {dice_red} when picking a lock.",
-                "it": "Ogni volta che il personaggio effettua una Manipolazione complessa per scassinare una serratura, egli ha un bonus di {dice_red}."
-            },
             "image": "data/skills/img/miscellaneous/lock_picking.png"
         }, {
             "id": "fascination",
             "type": "miscellaneous",
-            "title": {
-                "fr": "Fascination",
-                "en": "Fascination",
-                "it": "Fascinazione"
-            },
-            "text": {
-                "fr": "Le personnage ne peut pas être attaqué par un autre personnage qu’il n’a pas lui-même attaqué au préalable pendant la partie.",
-                "en": "A character with this skill cannot be attacked by another character unless that character has been previously attacked by the character with Fascination.",
-                "it": "Il personaggio con questa abilità non può essere attaccato da un altro personaggio a meno che non sia il personaggio con Fascinazione ad attaccarlo per primo."
-            },
-            "clarification": {
-                "fr": "Une unité ne peut cibler une unité ennemie disposant de Fascination même avec un sort, quelle qu’en soit la raison, tant que cette unité ennemie ne l’a pas attaquée.\nSauf mention contraire dans le scénario, Les personnages disposant de Fascination peuvent subir les dégâts causés par les attaques de zone.",
-                "en": "A unit cannot target, even with a spell, an enemy unit with Fascination for any reason until they attack the unit.\nUnless the scenario dictates otherwise, characters with Fascination can be damaged with area attacks.",
-                "it": "Un'unità non può mai scegliere come bersaglio un'unità nemica dotata anch'essa di Fascinazione, qualsiasi sia la ragione a meno che quest'ultima non l'attacchi. \nSalvo eccezioni nello scenario, i personaggi dotati di Fascinazione possono subire danni causati da attacchi ad area."
-            },
             "image": "data/skills/img/miscellaneous/fascination.png"
         }, {
             "id": "horror",
             "type": "miscellaneous",
-            "title": {
-                "fr": "Horreur",
-                "en": "Horror",
-                "it": "Orrore"
-            },
-            "text": {
-                "fr": "Le personnage a une apparence si hideuse qu'elle provoque la terreur chez ses adversaires. Chaque adversaire qui se trouve dans sa zone voit le niveau de saturation de ses caractéristiques limité à 2 (sauf pour la défense et la relance).",
-                "en": "The exertion limit of Melee Attack, Ranged Attack, Move and Manipulation actions of enemy characters in this character's area is 2.",
-                "it": "Il personaggio ha un aspetto così spaventoso che genera terrore nei suoi avversari. Ogni nemico che si trova nella sua area avrà il livello massimo delle sue caratteristiche (attacco in Mischia, attacco a Distanza, Movimento e Manipolazione) limitato a 2 (fatta eccezione per Difesa e Rilancio)."
-            },
             "image": "data/skills/img/miscellaneous/horror.png"
         }, {
             "id": "jinx",
             "type": "miscellaneous",
-            "title": {
-                "fr": "Malchance",
-                "en": "Jinx",
-                "it": "Menagramo"
-            },
-            "text": {
-                "fr": "Aucune relance d’aucune sorte (payante ou gratuite) n’est autorisée dans la zone d’un adversaire ayant cette compétence.",
-                "en": "Reroll actions and free rerolls are not allowed in the area occupied by an enemy with this skill.",
-                "it": "Ogni rilancio (sia pagato che gratuito) non è permesso nell'area occupata da un nemico con questa abilità."
-            },
             "image": "data/skills/img/miscellaneous/jinx.png"
         }, {
             "id": "poison",
             "type": "miscellaneous",
-            "title": {
-                "fr": "Poison",
-                "en": "Poison",
-                "it": "Velenoso"
-            },
-            "text": {
-                "fr": "Poison est une compétence générique pouvant être utilisée dans certains scénarios.",
-                "en": "This skill's effect is defined by the scenario.",
-                "it": "Velenoso è un'abilità generica che può essere utilizzata in alcuni scenari."
-            },
             "token": "poison",
             "image": "data/skills/img/miscellaneous/poison.png"
         }, {
             "id": "support",
             "type": "miscellaneous",
-            "title": {
-                "fr": "Soutien",
-                "en": "Support",
-                "it": "Supporto"
-            },
-            "text": {
-                "fr": "Les figurines amies du personnage présentes sur sa zone bénéficient d'une relance gratuite à chaque fois qu'elles réalisent une action. Soutien permet la relance gratuite d’un seul dé, y compris sur un dé déjà relancé gratuitement (exception à la règle page 22).",
-                "en": "This skill allows friendly characters in the same zone as this character to reroll a single die for free, each time they perform an action, even if that die has already been rerolled (exception to the rule on page 22).",
-                "it": "I personaggi amici che si trovano nella stessa area del personaggio che possiede questa abilità, beneficiano di un rilancio gratuito per ogni loro azione effettuata. L'abilità Supporto permette il rilancio di un solo dado anche se il dado è già stato rilanciato gratuitamente (eccezione della regola a pagina 22)."
-            },
             "image": "data/skills/img/miscellaneous/support.png"
         },
 
         {
             "id": "sacrifice",
             "type": "defense",
-            "title": {
-                "fr": "Sacrfice",
-                "en": "Sacrifice",
-                "it": "Sacrificio"
-            },
-            "text": {
-                "fr": "Le personnage peut décider, avant le lancé de dés, de subir une attaque à la place de la cible initiale. Il ne peut par contre ni la parer ni l'esquiver. Il ne peut utiliser que sa défense passive pour se défendre. Ce personnage encaisse donc la totalité des dégâts causés par l’attaque à la place de la cible initiale.",
-                "en": "When a friendly character in this character's area is attacked, before the die are rolled, this character may choose to be attacked instead. This character cannot Guard for that defense and can only use their Armor. That character suffers any damage from the attack to prevent the character who was initially attacked from suffering damage.",
-                "it": "Il personaggio può decidere, prima del lancio dei dadi, di subire l'attacco al posto del bersaglio designato. Chi ha Sacrificio non può di contro né parare, né schivare. Non può utilizzare che la propria Armatura per difendersi. Questo personaggio subisce tutti i danni causati dall'attacco al posto del bersaglio designato."
-            },
             "image": "data/skills/img/defense/sacrifice.png"
         }, {
             "id": "protected",
             "type": "defense",
-            "title": {
-                "fr": "Sous protection",
-                "en": "Protected",
-                "it": "Protetto"
-            },
-            "text": {
-                "fr": "Le personnage ne peut être attaqué tant que demeure sur sa zone au moins l'un de ses amis dépourvu de cette compétence. Les attaques de zone ne sont pas soumises à l'effet de cette compétence.",
-                "en": "This character can be attacked only with area attacks if there is a friendly character without Protected in their area. Two or more characters with this skill cannot protect each other.",
-                "it": "Questo personaggio può essere attaccato solo da attacchi ad area fintantoché è presente un personaggio amico senza l'abilità Protetto nella sua area. Due o più personaggi con questa abilità non possono proteggersi a vicenda."
-            },
             "image": "data/skills/img/defense/protected.png"
         }, {
             "id": "untouchable",
             "type": "defense",
-            "title": {
-                "fr": "Intouchable",
-                "en": "Untouchable",
-                "it": "Intoccabile"
-            },
-            "text": {
-                "fr": "Le personnage ayant cette compétence ignore le premier succès d’une attaque à distance portée contre lui.",
-                "en": "A character with this skill ignores the first rolled symbol when defending against a Ranged Attack.",
-                "it": "Il personaggio con questa abilità ignora il primo successo di un attacco a Distanza condotto verso di lui."
-            },
             "image": "data/skills/img/defense/untouchable.png"
         }, {
             "id": "bodyguard",
             "type": "defense",
-            "title": {
-                "fr": "Garde du corps",
-                "en": "Bodyguard",
-                "it": "Guardia del corpo"
-            },
-            "text": {
-                "fr": "Le personnage peut parer (c’est-à-dire utiliser un équipement pour défendre comme un bouclier par exemple) à leur place, les attaques portées contre ses amis présents sur sa zone. Il ne peut pas simplement esquiver. L'usage de la compétence remplace la défense active de la cible mais pas sa défense passive. C’est la cible initiale de l’attaque qui en subit les éventuelles blessures.",
-                "en": "When a friendly character in this character's area defends, this character can parry (i.e. use an equipment card to defend against that attack, like a shield) instead of that character's Guard action, adding the symbols shown on the dice to the character defense power. They cannot dodge (see page 11) to defend a friendly character. Any damage is dealt to the character who was initially attacked, not the character using Bodyguard.",
-                "it": "Il personaggio può parare (ovvero utilizzare dell'equipaggiamento per difendere come uno Scudo per esempio) gli attacchi rivolti verso i personaggi amici che occupano la sua stessa area. Non può schivare. L'uso dell'abilità rimpiazza il bonus di Difesa del bersaglio ma non quello della sua Armatura. É comunque il bersaglio designato a subire gli eventuali danni non parati."
-            },
             "image": "data/skills/img/defense/bodyguard.png"
         },
 
         {
             "id": "spell_caster",
             "type": "magic",
-            "title": {
-                "fr": "Lanceur de sort",
-                "en": "Spell Caster",
-                "it": "Mago"
-            },
-            "text": {
-                "fr": "Le personnage est capable d'utiliser les cartes Sorts à sa disposition, en leur allouant les gemmes d'énergie requises. Lorsqu'un personnage perd la compétence (du fait de son encombrement par exemple), les sorts déjà actifs le restent jusqu'à ce qu'ils s'épuisent comme décrit par le sort.",
-                "en": "This character can have and cast spells. Whenever the character loses the skill (because of encumbrance for example), any active spell remain active for their specified duration.",
-                "it": "Il personaggio è in grado di utilizzare le carte incantesimo a sua disposizione, spendendo le gemme da queste richieste. Quando un personaggio perde questa abilità (a causa del proprio ingombro, ad esempio), gli incantesimi già attivi restano tali per la durata descritta nell'incantesimo."
-            },
             "image": "data/skills/img/magic/spell_caster.png"
         }
     ]

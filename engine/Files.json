@@ -26,12 +26,18 @@
         "general/nav.js",
         "general/autozoom.js",
         "about/about.js",
+        "about/lang/about.LANGUAGE.js",
         "tutorial/tutorial.js",
+        "tutorial/lang/tutorial.LANGUAGE.js",
         
         "maps/maps.js",
+        "maps/lang/maps.LANGUAGE.js",
         "rules/rules.js",
+        "rules/lang/rules.LANGUAGE.js",
         "encyclopedia/encyclopedia.js",
+        "encyclopedia/lang/encyclopedia.LANGUAGE.js",
         "studio/studio.js",
+        "studio/lang/studio.LANGUAGE.js",
         "studio/studio_item.js"
     ]
 }

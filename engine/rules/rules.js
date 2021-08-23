@@ -1,86 +1,26 @@
 var Rules = {
-    _i18n: {
-        'fr': {
-            'menu': "Règles",
-            'skills': "Compétences",
-            'clarification': "Clarification :",
-
-            'viewer-search': "Recherche dans le document",
-            'viewer-download': "Télécharger le document",
-            'viewer-zoomin': "Zoomer",
-            'viewer-zoomout': "Dézoomer",
-
-            'search': "Rechercher",
-            'search-input': "Mot clé",
-            'search-inputPh': "Entrez un mot clé à chercher (3 caractères minimum)",
-            'search-loose': "Aucun résultat ne correspond au mot clé saisi",
-
-            'copyright': "Les règles proposés sont basées sur les règles officielles et leurs compléments mais ont été en partie reformulées.",
-            
-            'userpref_showall': "Afficher seulement les livre de règles que je possède"
-        },
-        'en': {
-            'menu': "Rules",
-            'skills': "Skills",
-            'clarification': "Clarification:",
-
-            'viewer-search': "Search in the document",
-            'viewer-download': "Download the document",
-            'viewer-zoomin': "Zoom in",
-            'viewer-zoomout': "Zoom out",
-
-            'search': "Search",
-            'search-input': "Keyword",
-            'search-inputPh': "Enter the keyword to search (3 characters minimum)",
-            'search-loose': "No result is matching the entered keyword",
-
-            'copyright': "The proposed rules are based upon the official rules and their complements but were partially rewriten.",
-            
-            'userpref_showall': "Display only rule books that I own"
-        },
-        'it': {
-            'menu': "Regole",
-            'skills': "Abilità",
-            'clarification': "Chiarificazione:",
-
-            'viewer-search': "Cerca nell'intero documento",
-            'viewer-download': "Scarica il documento",
-            'viewer-zoomin': "Zoom in",
-            'viewer-zoomout': "Zoom out",
-
-            'search': "Cerca",
-            'search-input': "Parola chiave",
-            'search-inputPh': "Inserisci la parola chiave da cercare (minimo 3 caratteri)",
-            'search-loose': "Nessun risultato corrispondente alla parola cercata",
-
-            'copyright': "Le regole sono basate sul regolamento ufficiale e sui suoi complementi, ma sono parzialmente riscritte.",
-            
-            'userpref_showall': "Mostra solo le regole che ho"
-        }
-    },
-    
     init: function()
     {
-		About.addPreference("rules-showmine", Rules._i18n[Language].menu, Rules._i18n[Language].userpref_showall, 'boolean', 'true');
+		About.addPreference("rules-showmine", Rules._i18n.menu, Rules._i18n.userpref_showall, 'boolean', 'true');
 
 		Rules._lastSearch = "";
 
-        Nav.addIcon(Rules._i18n[Language].menu, "rules-icon", "rules");
+        Nav.addIcon(Rules._i18n.menu, "rules-icon", "rules");
 
         Rules._rules = [{
-            label: Rules._i18n[Language].skills, 
+            label: Rules._i18n.skills, 
             id: "skills", 
-            download: Encyclopedia.skills.link[Language]
+            download: Encyclopedia.skills.link
         }];
         for (var i = 0; i < Encyclopedia.rules.list.length; i++)
         {
             if (About._hasExpansion(Encyclopedia.rules.list[i].origins) || window.About && About.getPreference("rules-showmine") === "false")
             {
                 Rules._rules.push({
-                    label: Encyclopedia.rules.list[i].title[Language], 
+                    label: Encyclopedia.rules.list[i].title, 
                     id: Encyclopedia.rules.list[i].id,
-                    download: Encyclopedia.rules.list[i].download[Language],
-                    pages: Encyclopedia.rules.list[i].pages[Language]
+                    download: Encyclopedia.rules.list[i].download,
+                    pages: Encyclopedia.rules.list[i].pages
                 });
             }
         }
@@ -91,21 +31,21 @@ var Rules = {
 
         for (var i = 0; i < Encyclopedia.rules.list.length; i++)
         {
-            if (About._hasExpansion(Encyclopedia.rules.list[i].origins))
+            if (About._hasExpansion(Encyclopedia.rules.list[i].origins) || window.About && About.getPreference("rules-showmine") === "false")
             {
-                Nav.addFloatingAction(Encyclopedia.rules.list[i].id, Rules._i18n[Language]['viewer-search'], "rules-search-icon", "search", Rules._search);
-                $("#" + Encyclopedia.rules.list[i].id).html("<div class='zoom0 rules-viewer'><div>" + Rules._createViewer("data/rules/" + Encyclopedia.rules.list[i].id + "/" + Language, Encyclopedia.rules.list[i].pages[Language]) + "</div></div>");
+                Nav.addFloatingAction(Encyclopedia.rules.list[i].id, Rules._i18n['viewer-search'], "rules-search-icon", "search", Rules._search);
+                $("#" + Encyclopedia.rules.list[i].id).html("<div class='zoom0 rules-viewer'><div>" + Rules._createViewer("data/rules/books/" + Encyclopedia.rules.list[i].id + "/" + Language, Encyclopedia.rules.list[i].pages) + "</div></div>");
                 Nav.createFloatingBar(Encyclopedia.rules.list[i].id);
                 Rules._attachEvents("#" + Encyclopedia.rules.list[i].id);
             }
         }
         
-        Nav.addAction("rules", Rules._i18n[Language]['viewer-zoomin'], "rules-zoomin-icon", "zoomin", Rules._zoomIn);
-        Nav.addAction("rules", Rules._i18n[Language]['viewer-zoomout'], "rules-zoomout-icon", "zoomout", Rules._zoomOut);
-        Nav.addAction("rules", Rules._i18n[Language]['viewer-download'], "rules-download-icon", "download", Rules._download);
+        Nav.addAction("rules", Rules._i18n['viewer-zoomin'], "rules-zoomin-icon", "zoomin", Rules._zoomIn);
+        Nav.addAction("rules", Rules._i18n['viewer-zoomout'], "rules-zoomout-icon", "zoomout", Rules._zoomOut);
+        Nav.addAction("rules", Rules._i18n['viewer-download'], "rules-download-icon", "download", Rules._download);
         Rules._onChange();
 
-        About.addCopyright(Rules._i18n[Language].menu, Rules._i18n[Language].copyright);
+        About.addCopyright(Rules._i18n.menu, Rules._i18n.copyright);
     },
     
     _initSkills: function()
@@ -116,7 +56,7 @@ var Rules = {
         {
             var type = Encyclopedia.skills.types[i];
 
-            $('#skills > div').append("<div id='skills_" + type.id + "' class='skill-tab'><h2>" + type.title[Language] + "</h2><div class='cols'></div></div>");
+            $('#skills > div').append("<div id='skills_" + type.id + "' class='skill-tab'><h2>" + type.title + "</h2><div class='cols'></div></div>");
 
             for (var j in Encyclopedia.skills.list)
             {
@@ -126,9 +66,9 @@ var Rules = {
                     Rules._addSkill(skill.id,
                                          skill.type,
                                          skill.image,
-                                         skill.title[Language],
-                                         skill.text[Language],
-                                         skill.clarification ? skill.clarification[Language] : null);
+                                         skill.title,
+                                         skill.text,
+                                         skill.clarification);
                 }
             }
         }
@@ -152,7 +92,7 @@ var Rules = {
             +   "<img " + LazyImage + " src='" + image + "?version=" + Version + "'/>"
             +   "<div class='skills-title'>" + title + "</div>"
             +   "<div class='skills-text'>" + About._replace(text) + " " 
-            + (clarification ? "<span title=\"" + Rules._i18n[Language].clarification + " " + clarification + "\">[...]</span>" : "") 
+            + (clarification ? "<span title=\"" + Rules._i18n.clarification + " " + clarification + "\">[...]</span>" : "") 
             + "</div>"
             + "</div>";
     },
@@ -172,11 +112,11 @@ var Rules = {
         var s = "<a href='javascript:void(0)' class='openskill' onclick='Rules.openSkill(\"" + id + "\")'>";
         if (!big)
         {
-            s += skill.title[Language];
+            s += skill.title;
         }
         else
         {
-            s += Rules._skill2HTML(skill.id, skill.type, skill.image, skill.title[Language], skill.text[Language], skill.clarification ? skill.clarification[Language] : null);
+            s += Rules._skill2HTML(skill.id, skill.type, skill.image, skill.title, skill.text, skill.clarification);
         }
         s += "</a>";
 
@@ -206,12 +146,12 @@ var Rules = {
     openSkill: function(id) {
         var skill = Rules._findSkillById(id);
         
-        let clarifications = ((skill.clarification && skill.clarification[Language]) ?"<div class='clarification'>" + Rules._i18n[Language].clarification + " " + skill.clarification[Language].replace(/\n/g, "<br/>") + "</div>" : "")
+        let clarifications = (skill.clarification ?"<div class='clarification'>" + Rules._i18n.clarification + " " + skill.clarification.replace(/\n/g, "<br/>") + "</div>" : "")
         
 
-        Nav.dialog(skill.title[Language],
+        Nav.dialog(skill.title,
             "<div class='skillsdetails'>"
-                + Rules._skill2HTML(skill.id, skill.type, skill.image, skill.title[Language], skill.text[Language], null)
+                + Rules._skill2HTML(skill.id, skill.type, skill.image, skill.title, skill.text, null)
                 + clarifications
                 + Rules._openSkillSpecific(skill)
             + "</div>",
@@ -233,11 +173,11 @@ var Rules = {
 
     _search: function()
     {
-        Nav.dialog(Rules._i18n[Language].search,
+        Nav.dialog(Rules._i18n.search,
             "<div id='rulessearch' class='rulessearch'>"
             +   "<div class='form'>"
-            +       "<label for='rulessearch'>" + Rules._i18n[Language]['search-input'] + "</label>"
-            +       "<input type='text' id='rulessearch' onkeyup='Rules._doSearch()' onchange='Rules._doSearch()' placeholder='" + Rules._i18n[Language]['search-inputPh'] + "'/>"
+            +       "<label for='rulessearch'>" + Rules._i18n['search-input'] + "</label>"
+            +       "<input type='text' id='rulessearch' onkeyup='Rules._doSearch()' onchange='Rules._doSearch()' placeholder='" + Rules._i18n['search-inputPh'] + "'/>"
             +   "</div>"
             +   "<div class='results'>"
             +   "</div>"
@@ -250,7 +190,7 @@ var Rules = {
         {
             $("#rulessearch input").prop('disabled', true);
             Rules.keywords = Rules.keywords || {};
-            $.getJSON("data/rules/" + Rules._rules[Rules._currentSlide].id + "/" + Language + "/search.json?version=" + Version, null, function(data) { Rules.keywords[Rules._currentSlide] = data; $("#rulessearch input").prop('disabled', false).focus(); Rules._doSearch(true); });
+            $.getJSON("data/rules/books/" + Rules._rules[Rules._currentSlide].id + "/" + Language + "/search.json?version=" + Version, null, function(data) { Rules.keywords[Rules._currentSlide] = data; $("#rulessearch input").prop('disabled', false).focus(); Rules._doSearch(true); });
         }
         else
         {
@@ -333,7 +273,7 @@ var Rules = {
 
                     var guessRatioY = (index / pageContent.length) * 0.8 + 0.1;
 
-                    if (!pageHasResults) results += "<li><a href='#' onclick='Rules._endPageSearch(this, arguments[0], " + (i+1) + ")'><img src=\"data/rules/" + Rules._rules[Rules._currentSlide].id + "/" + Language + "/thumbnails/" + (i+1) + ".jpg?version=" + Version + "\"/><br/>Page " + (i+1) + "</a><ul>";
+                    if (!pageHasResults) results += "<li><a href='#' onclick='Rules._endPageSearch(this, arguments[0], " + (i+1) + ")'><img src=\"data/rules/books/" + Rules._rules[Rules._currentSlide].id + "/" + Language + "/thumbnails/" + (i+1) + ".jpg?version=" + Version + "\"/><br/>Page " + (i+1) + "</a><ul>";
                     results += "<li>"
                                     + "<a href='#rules' onclick='Rules._endSearch(" + (i+1) +", 0, " + guessRatioY + ")'>"
                                         + prefix + textContent[i].substr(snippetStart, snippetEnd - snippetStart).replace(foundExact, '<em>' + foundExact + '</em>') + suffix
@@ -352,7 +292,7 @@ var Rules = {
         }
         else
         {
-            $("#rulessearch .results").html(Rules._i18n[Language]['search-loose'])
+            $("#rulessearch .results").html(Rules._i18n['search-loose'])
         }
     },
 
@@ -370,7 +310,7 @@ var Rules = {
         Rules._loadIframes();
         
         var div = $("#" + Rules._rules[Rules._currentSlide].id + " div.rules-viewer");
-        if (!div.is("zoom3") && !div.is("zoom2"))
+        if (!div.hasClass("zoom3") && !div.hasClass("zoom2"))
         {
             div.removeClass("zoom1").removeClass("zoom0").addClass("zoom2");
         }

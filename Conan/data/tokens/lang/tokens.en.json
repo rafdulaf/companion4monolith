@@ -1,0 +1,97 @@
+{
+    "list": {
+        "trap": {
+            "name": "Pit"
+        },
+        "chair": {
+            "name": "Chair"
+        },
+        "palisade": {
+            "name": "Barricade"
+        },
+        "palisade-life": {
+            "name": "Barricade life"
+        },
+        "reinforcement": {
+            "name": "Reinforcement"
+        },
+        "barrel": {
+            "name": "Barrel"
+        },
+        "time": {
+            "name": "Turn marker"
+        },
+        "invocation": {
+            "name": "Invocation"
+        },
+        "alarm": {
+            "name": "Alarm"
+        },
+        "energy": {
+            "name": "Energy"
+        },
+        "mitra-halo": {
+            "name": "Mitra's Halo"
+        },
+        "set-halo": {
+            "name": "Set's Halo"
+        },
+        "wrecked-wall": {
+            "name": "Wrecked wall"
+        },
+        "chest-mark": {
+            "name": "Treasure token"
+        },
+        "marker": {
+            "name": "Numbered token"
+        },
+        "scree": {
+            "name": "Boulder"
+        },
+        "water": {
+            "name": "Water"
+        },
+        "web": {
+            "name": "Web"
+        },
+        "door": {
+            "name": "Door"
+        },
+        "chest": {
+            "name": "Chest"
+        },
+        "table": {
+            "name": "Table"
+        },
+        "stairs": {
+            "name": "Stairs"
+        },
+        "fire": {
+            "name": "Flame"
+        },
+        "well-big": {
+            "name": "Well"
+        },
+        "iced-atali": {
+            "name": "Iced Atali"
+        },
+        "iced-armor": {
+            "name": "Iced armor"
+        },
+        "assassins": {
+            "name": "Assassin"
+        },
+        "well": {
+            "name": "Well token"
+        },
+        "secret": {
+            "name": "Secret passage"
+        },
+        "poison": {
+            "name": "Poison"
+        },
+        "bridge": {
+            "name": "Bridge"
+        }
+    }
+}

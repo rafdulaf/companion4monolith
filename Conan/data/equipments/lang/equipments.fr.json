@@ -1,0 +1,286 @@
+{
+    "list": {
+        "blank": {
+            "title": ""
+        },
+        "letters": {
+            "title": null
+        },
+        "pictish_drink": {
+            "title": "Alcool Picte"
+        },
+        "amulet": {
+            "title": "Amulette"
+        },
+        "ring": {
+            "title": "Anneau"
+        },
+        "crossbow": {
+            "title": "Arbalète"
+        },
+        "bossonian_bow": {
+            "title": "Arc bossonien"
+        },
+        "shemite_bow": {
+            "title": "Arc shémite"
+        },
+        "zingaran_bow": {
+            "title": "Arc zingaréen"
+        },
+        "scale_mail": {
+            "title": "Armure d'écaille"
+        },
+        "leather_armor": {
+            "title": "Armure de cuir"
+        },
+        "stygian_artifact": {
+            "title": "Artefact Stygien"
+        },
+        "mitras_staff": {
+            "title": "Bâton de Mitra"
+        },
+        "shamans_staff": {
+            "title": "Bâton de Shaman"
+        },
+        "black_staff": {
+            "title": "Bâton noir"
+        },
+        "kordava_boots": {
+            "title": "Bottes de Kordava"
+        },
+        "buckler": {
+            "title": "Bouclier"
+        },
+        "shield_of_mitra": {
+            "title": "Bouclier de Mitra"
+        },
+        "tribal_shield": {
+            "title": "Bouclier tribal"
+        },
+        "armbands_of_bel": {
+            "title": "Brassards de Bel"
+        },
+        "cape": {
+            "title": "Cape"
+        },
+        "toxic_mushrooms": {
+            "title": "Champignon toxique"
+        },
+        "akbitanas_claymore": {
+            "title": "Claymore d'Akbitana"
+        },
+        "key": {
+            "title": "Clef"
+        },
+        "tower_key": {
+            "title": "Clef de la tour"
+        },
+        "heart_of_ahriman": {
+            "title": "Coeur d'Ahriman"
+        },
+        "trapped_chest": {
+            "title": "Coffre piégé"
+        },
+        "empty_chest": {
+            "title": "Coffre vide"
+        },
+        "chain_mail": {
+            "title": "Cotte de Mailles"
+        },
+        "xuthal_crown": {
+            "title": "Couronne de Xuthal"
+        },
+        "asshuri_cuirass": {
+            "title": "Cuirasse Asshuri"
+        },
+        "dagger": {
+            "title": "Dague"
+        },
+        "assassins_dagger": {
+            "title": "Dague d'assassin"
+        },
+        "parrying_dagger": {
+            "title": "Dague de parade"
+        },
+        "sacrificial_dagger": {
+            "title": "Dague sacrificielle"
+        },
+        "warlock_documents": {
+            "title": "Document du Sorcier"
+        },
+        "shield": {
+            "title": "Écu"
+        },
+        "elixir": {
+            "title": "Elixir"
+        },
+        "poisoned": {
+            "title": "Empoisonné"
+        },
+        "censer": {
+            "title": "Encensoir"
+        },
+        "sword": {
+            "title": "Épée"
+        },
+        "two_handed_sword": {
+            "title": "Épée à deux mains"
+        },
+        "aesir_blade": {
+            "title": "Épée Aesir"
+        },
+        "short_sword": {
+            "title": "Épée courte"
+        },
+        "khitan_short_sword": {
+            "title": "Épée courte Khitane"
+        },
+        "conans_sword": {
+            "title": "Épée de Conan"
+        },
+        "phoenix_sword": {
+            "title": "Épée du phoenix"
+        },
+        "khitan_sword": {
+            "title": "Épée Khitane"
+        },
+        "turanian_sword": {
+            "title": "Épée Turanienne"
+        },
+        "false_evidence": {
+            "title": "Fausse preuve"
+        },
+        "pictish_fetish": {
+            "title": "Fétiche picte"
+        },
+        "phial": {
+            "title": "Fiole"
+        },
+        "amulet_fragment": {
+            "title": "Fragment d'amulette"
+        },
+        "ginger": {
+            "title": "Gingembre"
+        },
+        "spellbook": {
+            "title": "Grimoire"
+        },
+        "axe": {
+            "title": "Hache"
+        },
+        "battle_axe": {
+            "title": "Hache de bataille"
+        },
+        "halberd": {
+            "title": "Hallebarde"
+        },
+        "idol_of_yag-kosha": {
+            "title": "Idole Yag-Kosha"
+        },
+        "information": {
+            "title": "Informations"
+        },
+        "javelin": {
+            "title": "Javelot"
+        },
+        "kris": {
+            "title": "Kriss"
+        },
+        "throwing_knives": {
+            "title": "Lames de lancer"
+        },
+        "spear": {
+            "title": "Lance"
+        },
+        "ornamental_spear": {
+            "title": "Lance d'ornement"
+        },
+        "black_lotus": {
+            "title": "Lotus noir"
+        },
+        "shadow_mantel": {
+            "title": "Mantel des ombres"
+        },
+        "boris_hammer": {
+            "title": "Marteau de Bori"
+        },
+        "mitras_mace": {
+            "title": "Masse de Mitra"
+        },
+        "tribal_mace": {
+            "title": "Masse tribale"
+        },
+        "hyrkanian_mirror": {
+            "title": "Miroir Hyrkanien"
+        },
+        "toad_mucus": {
+            "title": "Mucus de crapaud"
+        },
+        "unguent": {
+            "title": "Onguent"
+        },
+        "orb_blue": {
+            "title": "Orbe bleu"
+        },
+        "explosive_orb": {
+            "title": "Orbe explosif"
+        },
+        "orb_red": {
+            "title": "Orbe rouge"
+        },
+        "orb_green": {
+            "title": "Orbe vert"
+        },
+        "tools": {
+            "title": "Outils"
+        },
+        "zingaran_breastplate": {
+            "title": "Plastron zingaréen"
+        },
+        "knife": {
+            "title": "Poignard"
+        },
+        "yuetshi_knife": {
+            "title": "Poignard Yuetshi"
+        },
+        "orb_red_position": {
+            "title": "Position orbe"
+        },
+        "orb_green_position": {
+            "title": "Position orbe"
+        },
+        "orb_blue_position": {
+            "title": "Position orbe"
+        },
+        "potion": {
+            "title": "Potion"
+        },
+        "antidote": {
+            "title": "Potion anti-poison"
+        },
+        "life_potion": {
+            "title": "Potion de vie"
+        },
+        "pirate_saber": {
+            "title": "Sabre de pirate"
+        },
+        "saltpeter": {
+            "title": "Salpêtre"
+        },
+        "warlocks_blood": {
+            "title": "Sang de sorcier"
+        },
+        "sorcerers_scepter": {
+            "title": "Sceptre de sorcier"
+        },
+        "stygian_scepter": {
+            "title": "Sceptre stygien"
+        },
+        "torch": {
+            "title": "Torche"
+        },
+        "sacred_treasure": {
+            "title": "Trésor sacré"
+        }
+    }
+}

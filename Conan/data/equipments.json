@@ -2,11 +2,6 @@
     "list": [
         {
             "id": "battle_axe",
-            "title": {
-                "fr": "Hache de bataille",
-                "en": "Battle Axe",
-                "it": "Ascia da battaglia"
-            },
             "encumbrance": "3",
 
             "melee": { "0": "redreroll", "1": "none" },
@@ -21,11 +16,6 @@
 
         {
             "id": "bossonian_bow",
-            "title": {
-                "fr": "Arc bossonien",
-                "en": "Bossonian Bow",
-                "it": "Arco bossoniano"
-            },
             "encumbrance": "2",
 
             "melee": { "0": "none", "1": "none" },
@@ -40,11 +30,6 @@
 
         {
             "id": "dagger",
-            "title": {
-                "fr": "Dague",
-                "en": "Dagger",
-                "it": "Pugnale"
-            },
             "encumbrance": "1",
 
             "melee": { "0": "yellow", "1": "none" },
@@ -59,11 +44,6 @@
 
         {
             "id": "dagger",
-            "title": {
-                "fr": "Dague",
-                "en": "Dagger",
-                "it": "Pugnale"
-            },
             "encumbrance": "1",
 
             "melee": { "0": "yellow", "1": "none" },
@@ -78,11 +58,6 @@
 
         {
             "id": "conans_sword",
-            "title": {
-                "fr": "Épée de Conan",
-                "en": "Conan’s Sword",
-                "it": "Spada di Conan"
-            },
             "encumbrance": "2",
 
             "melee": { "0": "orange", "1": "none" },
@@ -97,11 +72,6 @@
 
         {
             "id": "conans_sword",
-            "title": {
-                "fr": "Épée de Conan",
-                "en": "Conan’s Sword",
-                "it": "Spada di Conan"
-            },
             "encumbrance": "2",
 
             "melee": { "0": "orange", "1": "none" },
@@ -116,11 +86,6 @@
 
         {
             "id": "crossbow",
-            "title": {
-                "fr": "Arbalète",
-                "en": "Crossbow",
-                "it": "Balestra"
-            },
             "encumbrance": "3",
 
             "melee": { "0": "none", "1": "none" },
@@ -135,11 +100,6 @@
 
         {
             "id": "explosive_orb",
-            "title": {
-                "fr": "Orbe explosif",
-                "en": "Explosive Orb",
-                "it": "Globo esplosivo"
-            },
             "encumbrance": "1",
 
             "melee": { "0": "none", "1": "none" },
@@ -156,11 +116,6 @@
 
         {
             "id": "explosive_orb",
-            "title": {
-                "fr": "Orbe explosif",
-                "en": "Explosive Orb",
-                "it": "Globo esplosivo"
-            },
             "encumbrance": "1",
 
             "melee": { "0": "none", "1": "none" },
@@ -175,11 +130,6 @@
 
         {
             "id": "halberd",
-            "title": {
-                "fr": "Hallebarde",
-                "en": "Halberd",
-                "it": "Alabarda"
-            },
             "encumbrance": "3",
 
             "melee": { "0": "red", "1": "red" },
@@ -194,11 +144,6 @@
 
         {
             "id": "javelin",
-            "title": {
-                "fr": "Javelot",
-                "en": "Javelin",
-                "it": "Giavellotto"
-            },
             "encumbrance": "1",
 
             "melee": { "0": "none", "1": "none" },
@@ -215,11 +160,6 @@
 
         {
             "id": "kris",
-            "title": {
-                "fr": "Kriss",
-                "en": "Kris",
-                "it": "Kriss"
-            },
             "encumbrance": "1",
 
             "melee": { "0": "yellowreroll", "1": "none" },
@@ -234,11 +174,6 @@
 
         {
             "id": "ornamental_spear",
-            "title": {
-                "fr": "Lance d'ornement",
-                "en": "Ornamental Spear",
-                "it": "Lancia ornamentale"
-            },
             "encumbrance": "2",
 
             "melee": { "0": "orangereroll", "1": "none" },
@@ -253,11 +188,6 @@
 
         {
             "id": "parrying_dagger",
-            "title": {
-                "fr": "Dague de parade",
-                "en": "Parrying Dagger",
-                "it": "Manosinistra"
-            },
             "encumbrance": "1",
 
             "melee": { "0": "yellowreroll", "1": "none" },
@@ -272,11 +202,6 @@
 
         {
             "id": "parrying_dagger",
-            "title": {
-                "fr": "Dague de parade",
-                "en": "Parrying Dagger",
-                "it": "Manosinistra"
-            },
             "encumbrance": "1",
 
             "melee": { "0": "yellowreroll", "1": "none" },
@@ -291,11 +216,6 @@
 
         {
             "id": "sword",
-            "title": {
-                "fr": "Épée",
-                "en": "Sword",
-                "it": "Spada"
-            },
             "encumbrance": "2",
 
             "melee": { "0": "orangereroll", "1": "none" },
@@ -310,11 +230,6 @@
 
         {
             "id": "sword",
-            "title": {
-                "fr": "Épée",
-                "en": "Sword",
-                "it": "Spada"
-            },
             "encumbrance": "2",
 
             "melee": { "0": "orangereroll", "1": "none" },
@@ -329,11 +244,6 @@
 
         {
             "id": "sword",
-            "title": {
-                "fr": "Épée",
-                "en": "Sword",
-                "it": "Spada"
-            },
             "encumbrance": "2",
 
             "melee": { "0": "orangereroll", "1": "none" },
@@ -348,11 +258,6 @@
 
         {
             "id": "throwing_knives",
-            "title": {
-                "fr": "Lames de lancer",
-                "en": "Throwing Knives",
-                "it": "Coltelli da lancio"
-            },
             "encumbrance": "0",
 
             "melee": { "0": "none", "1": "none" },
@@ -367,11 +272,6 @@
 
         {
             "id": "tribal_mace",
-            "title": {
-                "fr": "Masse tribale",
-                "en": "Tribal Mace",
-                "it": "Mazza tribale"
-            },
             "encumbrance": "2",
 
             "melee": { "0": "orangereroll", "1": "none" },
@@ -386,11 +286,6 @@
 
         {
             "id": "yuetshi_knife",
-            "title": {
-                "fr": "Poignard Yuetshi",
-                "en": "Yuetshi Knife",
-                "it": "Pugnale Yuetshi"
-            },
             "encumbrance": "2",
 
             "melee": { "0": "orangereroll", "1": "none" },
@@ -405,11 +300,6 @@
 
         {
             "id": "chain_mail",
-            "title": {
-                "fr": "Cotte de Mailles",
-                "en": "Chain Mail",
-                "it": "Cotta di maglia"
-            },
             "encumbrance": "3",
 
             "melee": { "0": "none", "1": "none" },
@@ -424,11 +314,6 @@
 
         {
             "id": "leather_armor",
-            "title": {
-                "fr": "Armure de cuir",
-                "en": "Leather Armor",
-                "it": "Armatura di cuoio"
-            },
             "encumbrance": "2",
 
             "melee": { "0": "none", "1": "none" },
@@ -445,11 +330,6 @@
 
         {
             "id": "leather_armor",
-            "title": {
-                "fr": "Armure de cuir",
-                "en": "Leather Armor",
-                "it": "Armatura di cuoio"
-            },
             "encumbrance": "2",
 
             "melee": { "0": "none", "1": "none" },
@@ -464,11 +344,6 @@
 
         {
             "id": "leather_armor",
-            "title": {
-                "fr": "Armure de cuir",
-                "en": "Leather Armor",
-                "it": "Armatura di cuoio"
-            },
             "encumbrance": "2",
 
             "melee": { "0": "none", "1": "none" },
@@ -485,11 +360,6 @@
 
         {
             "id": "scale_mail",
-            "title": {
-                "fr": "Armure d'écaille",
-                "en": "Scale Mail",
-                "it": "Armatura a scaglie"
-            },
             "encumbrance": "5",
 
             "melee": { "0": "none", "1": "none" },
@@ -504,11 +374,6 @@
 
         {
             "id": "buckler",
-            "title": {
-                "fr": "Bouclier",
-                "en": "Buckler",
-                "it": "Brocchiero"
-            },
             "encumbrance": "2",
 
             "melee": { "0": "none", "1": "none" },
@@ -523,11 +388,6 @@
 
         {
             "id": "shield",
-            "title": {
-                "fr": "Écu",
-                "en": "Shield",
-                "it": "Scudo"
-            },
             "encumbrance": "2",
 
             "melee": { "0": "none", "1": "none" },
@@ -542,11 +402,6 @@
 
         {
             "id": "tribal_shield",
-            "title": {
-                "fr": "Bouclier tribal",
-                "en": "Tribal Shield",
-                "it": "Scudo tribale"
-            },
             "encumbrance": "3",
 
             "melee": { "0": "none", "1": "none" },
@@ -561,11 +416,6 @@
 
         {
             "id": "life_potion",
-            "title": {
-                "fr": "Potion de vie",
-                "en": "Life Potion",
-                "it": "Pozione curativa"
-            },
             "encumbrance": "0",
 
             "melee": { "0": "none", "1": "none" },
@@ -582,11 +432,6 @@
 
         {
             "id": "life_potion",
-            "title": {
-                "fr": "Potion de vie",
-                "en": "Life Potion",
-                "it": "Pozione curativa"
-            },
             "encumbrance": "0",
 
             "melee": { "0": "none", "1": "none" },
@@ -601,11 +446,6 @@
 
         {
             "id": "life_potion",
-            "title": {
-                "fr": "Potion de vie",
-                "en": "Life Potion",
-                "it": "Pozione curativa"
-            },
             "encumbrance": "0",
 
             "melee": { "0": "none", "1": "none" },
@@ -622,11 +462,6 @@
 
         {
             "id": "empty_chest",
-            "title": {
-                "fr": "Coffre vide",
-                "en": "Empty Chest",
-                "it": "Forziere vuoto"
-            },
             "encumbrance": "3",
 
             "melee": { "0": "none", "1": "none" },
@@ -641,11 +476,6 @@
 
         {
             "id": "empty_chest",
-            "title": {
-                "fr": "Coffre vide",
-                "en": "Empty Chest",
-                "it": "Forziere vuoto"
-            },
             "encumbrance": "3",
 
             "melee": { "0": "none", "1": "none" },
@@ -660,11 +490,6 @@
 
         {
             "id": "key",
-            "title": {
-                "fr": "Clef",
-                "en": "Key",
-                "it": "Chiave"
-            },
 
             "melee": { "0": "none", "1": "none" },
             "ranged": { "0": "none", "1": "none", "throwable": false },
@@ -678,11 +503,6 @@
 
         {
             "id": "pictish_fetish",
-            "title": {
-                "fr": "Fétiche picte",
-                "en": "Pictish Fetish",
-                "it": "Feticcio pitto"
-            },
             "encumbrance": "1",
 
             "melee": { "0": "none", "1": "none" },
@@ -697,11 +517,6 @@
 
         {
             "id": "shamans_staff",
-            "title": {
-                "fr": "Bâton de Shaman",
-                "en": "Shaman’s Staff",
-                "it": "Bastone dello sciamano"
-            },
             "encumbrance": "1",
 
             "melee": { "0": "none", "1": "none" },
@@ -716,11 +531,6 @@
 
         {
             "id": "sorcerers_scepter",
-            "title": {
-                "fr": "Sceptre de sorcier",
-                "en": "Sorcerer’s Scepter",
-                "it": "Scettro dello stregone"
-            },
             "encumbrance": "1",
 
             "melee": { "0": "none", "1": "none" },
@@ -735,11 +545,6 @@
 
         {
             "id": "spellbook",
-            "title": {
-                "fr": "Grimoire",
-                "en": "Spellbook",
-                "it": "Grimorio"
-            },
             "encumbrance": "2",
 
             "melee": { "0": "none", "1": "none" },
@@ -754,11 +559,6 @@
 
         {
             "id": "stygian_artifact",
-            "title": {
-                "fr": "Artefact Stygien",
-                "en": "Stygian Artifact",
-                "it": "Artefatto stygiano"
-            },
             "encumbrance": "1",
 
             "melee": { "0": "none", "1": "none" },
@@ -773,11 +573,6 @@
 
         {
             "id": "tools",
-            "title": {
-                "fr": "Outils",
-                "en": "Tools",
-                "it": "Utensili"
-            },
             "encumbrance": "1",
 
             "melee": { "0": "none", "1": "none" },
@@ -792,11 +587,6 @@
 
         {
             "id": "xuthal_crown",
-            "title": {
-                "fr": "Couronne de Xuthal",
-                "en": "Xuthal Crown",
-                "it": "Corona di Xuthal"
-            },
             "encumbrance": "1",
 
             "melee": { "0": "none", "1": "none" },
@@ -813,11 +603,6 @@
 
         {
             "id": "axe",
-            "title": {
-                "fr": "Hache",
-                "en": "Axe",
-                "it": "Ascia"
-            },
             "encumbrance": "2",
 
             "melee": { "0": "yellow", "1": "yellow" },
@@ -832,11 +617,6 @@
 
         {
             "id": "mitras_mace",
-            "title": {
-                "fr": "Masse de Mitra",
-                "en": "Mitra’s Mace",
-                "it": "Mazza di Mitra"
-            },
             "encumbrance": "2",
 
             "melee": { "0": "red", "1": "none" },
@@ -851,11 +631,6 @@
 
         {
             "id": "pirate_saber",
-            "title": {
-                "fr": "Sabre de pirate",
-                "en": "Pirate Saber",
-                "it": "Sciabola"
-            },
             "encumbrance": "1",
 
             "melee": { "0": "orange", "1": "none" },
@@ -870,11 +645,6 @@
 
         {
             "id": "sacrificial_dagger",
-            "title": {
-                "fr": "Dague sacrificielle",
-                "en": "Sacrificial Dagger",
-                "it": "Pugnale sacrificale"
-            },
             "encumbrance": "1",
 
             "melee": { "0": "yellow", "1": "yellow" },
@@ -889,11 +659,6 @@
 
         {
             "id": "stygian_scepter",
-            "title": {
-                "fr": "Sceptre stygien",
-                "en": "Stygian Scepter",
-                "it": "Scettro stygiano"
-            },
             "encumbrance": "1",
 
             "melee": { "0": "redreroll", "1": "none" },
@@ -908,11 +673,6 @@
 
         {
             "id": "turanian_sword",
-            "title": {
-                "fr": "Épée Turanienne",
-                "en": "Turanian Sword",
-                "it": "Spada turaniana"
-            },
             "encumbrance": "2",
 
             "melee": { "0": "orangereroll", "1": "none" },
@@ -927,11 +687,6 @@
 
         {
             "id": "two_handed_sword",
-            "title": {
-                "fr": "Épée à deux mains",
-                "en": "Two-Handed Sword",
-                "it": "Spadone a due mani"
-            },
             "encumbrance": "3",
 
             "melee": { "0": "redreroll", "1": "none" },
@@ -946,11 +701,6 @@
 
         {
             "id": "zingaran_bow",
-            "title": {
-                "fr": "Arc zingaréen",
-                "en": "Zingaran Bow",
-                "it": "Arco zingariano"
-            },
             "encumbrance": "1",
 
             "melee": { "0": "none", "1": "none" },
@@ -965,11 +715,6 @@
 
         {
             "id": "zingaran_breastplate",
-            "title": {
-                "fr": "Plastron zingaréen",
-                "en": "Zingaran Breastplate",
-                "it": "Corazza zingariana"
-            },
             "encumbrance": "3",
 
             "melee": { "0": "none", "1": "none" },
@@ -984,11 +729,6 @@
 
         {
             "id": "black_staff",
-            "title": {
-                "fr": "Bâton noir",
-                "en": "Black Staff",
-                "it": "Bastone nero"
-            },
             "encumbrance": "1",
 
             "melee": { "0": "none", "1": "none" },
@@ -1003,11 +743,6 @@
 
         {
             "id": "mitras_staff",
-            "title": {
-                "fr": "Bâton de Mitra",
-                "en": "Mitra’s Staff",
-                "it": "Bastone di Mitra"
-            },
             "encumbrance": "2",
 
             "melee": { "0": "none", "1": "none" },
@@ -1022,11 +757,6 @@
 
         {
             "id": "pictish_drink",
-            "title": {
-                "fr": "Alcool Picte",
-                "en": "Pictish Drink",
-                "it": "Intruglio pitto"
-            },
             "encumbrance": "0",
 
             "melee": { "0": "none", "1": "none" },
@@ -1043,11 +773,6 @@
 
         {
             "id": "pictish_drink",
-            "title": {
-                "fr": "Alcool Picte",
-                "en": "Pictish Drink",
-                "it": "Intruglio pitto"
-            },
             "encumbrance": "0",
 
             "melee": { "0": "none", "1": "none" },
@@ -1064,11 +789,6 @@
 
         {
             "id": "cape",
-            "title": {
-                "fr": "Cape",
-                "en": "Cape",
-                "it": "Mantello"
-            },
             "encumbrance": "2",
 
             "melee": { "0": "none", "1": "none" },
@@ -1083,11 +803,6 @@
 
         {
             "id": "censer",
-            "title": {
-                "fr": "Encensoir",
-                "en": "Censer",
-                "it": "Incensiere"
-            },
             "encumbrance": "1",
 
             "melee": { "0": "none", "1": "none" },
@@ -1102,11 +817,6 @@
 
         {
             "id": "elixir",
-            "title": {
-                "fr": "Elixir",
-                "en": "Elixir",
-                "it": "Elisir"
-            },
             "encumbrance": "0",
 
             "melee": { "0": "none", "1": "none" },
@@ -1121,11 +831,6 @@
 
         {
             "id": "heart_of_ahriman",
-            "title": {
-                "fr": "Coeur d'Ahriman",
-                "en": "Heart of Ahriman",
-                "it": "Cuore di Ahriman"
-            },
             "encumbrance": "0",
 
             "melee": { "0": "none", "1": "none" },
@@ -1140,11 +845,6 @@
 
         {
             "id": "hyrkanian_mirror",
-            "title": {
-                "fr": "Miroir Hyrkanien",
-                "en": "Hyrkanian Mirror",
-                "it": "Specchio hyrkaniano"
-            },
             "encumbrance": "1",
 
             "melee": { "0": "none", "1": "none" },
@@ -1159,11 +859,6 @@
 
         {
             "id": "idol_of_yag-kosha",
-            "title": {
-                "fr": "Idole Yag-Kosha",
-                "en": "Idol of Yag-Kosha",
-                "it": "Idolo di Yag-Kosha"
-            },
             "encumbrance": "4",
 
             "melee": { "0": "none", "1": "none" },
@@ -1178,11 +873,6 @@
 
         {
             "id": "phial",
-            "title": {
-                "fr": "Fiole",
-                "en": "Phial",
-                "it": "Ampolla"
-            },
             "encumbrance": "0",
 
             "melee": { "0": "none", "1": "none" },
@@ -1197,11 +887,6 @@
 
         {
             "id": "potion",
-            "title": {
-                "fr": "Potion",
-                "en": "Potion",
-                "it": "Pozione"
-            },
             "encumbrance": "0",
 
             "melee": { "0": "none", "1": "none" },
@@ -1216,11 +901,6 @@
 
         {
             "id": "ring",
-            "title": {
-                "fr": "Anneau",
-                "en": "Ring",
-                "it": "Anello"
-            },
             "encumbrance": "0",
 
             "melee": { "0": "none", "1": "none" },
@@ -1235,11 +915,6 @@
 
         {
             "id": "sacred_treasure",
-            "title": {
-                "fr": "Trésor sacré",
-                "en": "Sacred Treasure",
-                "it": "Tesoro sacro"
-            },
             "encumbrance": "3",
 
             "melee": { "0": "none", "1": "none" },
@@ -1254,11 +929,6 @@
 
         {
             "id": "sacred_treasure",
-            "title": {
-                "fr": "Trésor sacré",
-                "en": "Sacred Treasure",
-                "it": "Tesoro sacro"
-            },
             "encumbrance": "3",
 
             "melee": { "0": "none", "1": "none" },
@@ -1273,11 +943,6 @@
 
         {
             "id": "sacred_treasure",
-            "title": {
-                "fr": "Trésor sacré",
-                "en": "Sacred Treasure",
-                "it": "Tesoro sacro"
-            },
             "encumbrance": "3",
 
             "melee": { "0": "none", "1": "none" },
@@ -1292,11 +957,6 @@
 
         {
             "id": "unguent",
-            "title": {
-                "fr": "Onguent",
-                "en": "Unguent",
-                "it": "Unguento"
-            },
             "encumbrance": "0",
 
             "melee": { "0": "none", "1": "none" },
@@ -1311,11 +971,6 @@
 
         {
             "id": "blank",
-            "title": {
-                "fr": "",
-                "en": "",
-                "it": ""
-            },
             "encumbrance": "",
 
             "melee": { "0": "none", "1": "none" },
@@ -1330,11 +985,6 @@
 
         {
             "id": "blank",
-            "title": {
-                "fr": "",
-                "en": "",
-                "it": ""
-            },
             "encumbrance": "",
 
             "melee": { "0": "none", "1": "none" },
@@ -1349,11 +999,6 @@
 
         {
             "id": "blank",
-            "title": {
-                "fr": "",
-                "en": "",
-                "it": ""
-            },
             "encumbrance": "",
 
             "melee": { "0": "none", "1": "none" },
@@ -1368,11 +1013,6 @@
 
         {
             "id": "blank",
-            "title": {
-                "fr": "",
-                "en": "",
-                "it": ""
-            },
             "encumbrance": "",
 
             "melee": { "0": "none", "1": "none" },
@@ -1387,11 +1027,6 @@
 
         {
             "id": "blank",
-            "title": {
-                "fr": "",
-                "en": "",
-                "it": ""
-            },
             "encumbrance": "",
 
             "melee": { "0": "none", "1": "none" },
@@ -1406,11 +1041,6 @@
 
         {
             "id": "letters",
-            "title": {
-                "fr": null,
-                "en": null,
-                "it": null
-            },
             "encumbrance": "",
 
             "melee": { "0": "none", "1": "none" },
@@ -1425,11 +1055,6 @@
 
         {
             "id": "letters",
-            "title": {
-                "fr": null,
-                "en": null,
-                "it": null
-            },
             "encumbrance": "",
 
             "melee": { "0": "none", "1": "none" },
@@ -1444,11 +1069,6 @@
 
         {
             "id": "letters",
-            "title": {
-                "fr": null,
-                "en": null,
-                "it": null
-            },
             "encumbrance": "",
 
             "melee": { "0": "none", "1": "none" },
@@ -1463,11 +1083,6 @@
 
         {
             "id": "letters",
-            "title": {
-                "fr": null,
-                "en": null,
-                "it": null
-            },
             "encumbrance": "",
 
             "melee": { "0": "none", "1": "none" },
@@ -1482,11 +1097,6 @@
 
         {
             "id": "letters",
-            "title": {
-                "fr": null,
-                "en": null,
-                "it": null
-            },
             "encumbrance": "",
 
             "melee": { "0": "none", "1": "none" },
@@ -1501,11 +1111,6 @@
 
         {
             "id": "aesir_blade",
-            "title": {
-                "fr": "Épée Aesir",
-                "en": "Aesir Blade",
-                "it": "Spada degli Aesir"
-            },
             "encumbrance": "2",
 
             "melee": { "0": "orange", "1": "none" },
@@ -1522,11 +1127,6 @@
 
         {
             "id": "amulet_fragment",
-            "title": {
-                "fr": "Fragment d'amulette",
-                "en": "Amulet Fragment",
-                "it": "Frammento di amuleto"
-            },
             "encumbrance": "0",
 
             "melee": { "0": "none", "1": "none" },
@@ -1541,11 +1141,6 @@
 
         {
             "id": "amulet_fragment",
-            "title": {
-                "fr": "Fragment d'amulette",
-                "en": "Amulet Fragment",
-                "it": "Frammento di amuleto"
-            },
             "encumbrance": "0",
 
             "melee": { "0": "none", "1": "none" },
@@ -1560,11 +1155,6 @@
 
         {
             "id": "amulet_fragment",
-            "title": {
-                "fr": "Fragment d'amulette",
-                "en": "Amulet Fragment",
-                "it": "Frammento di amuleto"
-            },
             "encumbrance": "0",
 
             "melee": { "0": "none", "1": "none" },
@@ -1579,11 +1169,6 @@
 
         {
             "id": "khitan_short_sword",
-            "title": {
-                "fr": "Épée courte Khitane",
-                "en": "Khitan Short Sword",
-                "it": "Spada corta khitana"
-            },
             "encumbrance": "2",
 
             "melee": { "0": "yellowreroll", "1": "none" },
@@ -1598,11 +1183,6 @@
 
         {
             "id": "khitan_sword",
-            "title": {
-                "fr": "Épée Khitane",
-                "en": "Khitan Sword",
-                "it": "Spada khitana"
-            },
             "encumbrance": "2",
 
             "melee": { "0": "orangereroll", "1": "none" },
@@ -1617,11 +1197,6 @@
 
         {
             "id": "black_lotus",
-            "title": {
-                "fr": "Lotus noir",
-                "en": "Black Lotus",
-                "it": "Loto nero"
-            },
             "encumbrance": "2",
 
             "melee": { "0": "none", "1": "none" },
@@ -1638,11 +1213,6 @@
 
         {
             "id": "false_evidence",
-            "title": {
-                "fr": "Fausse preuve",
-                "en": "False Evidence",
-                "it": "Falso indizio"
-            },
             "encumbrance": "0",
 
             "melee": { "0": "none", "1": "none" },
@@ -1657,11 +1227,6 @@
 
         {
             "id": "ginger",
-            "title": {
-                "fr": "Gingembre",
-                "en": "Ginger",
-                "it": "Zenzero"
-            },
             "encumbrance": "2",
 
             "melee": { "0": "none", "1": "none" },
@@ -1678,11 +1243,6 @@
 
         {
             "id": "saltpeter",
-            "title": {
-                "fr": "Salpêtre",
-                "en": "Saltpeter",
-                "it": "Salnitro"
-            },
             "encumbrance": "2",
 
             "melee": { "0": "none", "1": "none" },
@@ -1699,11 +1259,6 @@
 
         {
             "id": "toad_mucus",
-            "title": {
-                "fr": "Mucus de crapaud",
-                "en": "Toad Mucus",
-                "it": "Bava di rospo"
-            },
             "encumbrance": "2",
 
             "melee": { "0": "none", "1": "none" },
@@ -1720,11 +1275,6 @@
 
         {
             "id": "tower_key",
-            "title": {
-                "fr": "Clef de la tour",
-                "en": "Tower Key",
-                "it": "Chiave della torre"
-            },
             "encumbrance": "2",
 
             "melee": { "0": "none", "1": "none" },
@@ -1739,11 +1289,6 @@
 
         {
             "id": "toxic_mushrooms",
-            "title": {
-                "fr": "Champignon toxique",
-                "en": "Toxic Mushrooms",
-                "it": "Funghi velenosi"
-            },
             "encumbrance": "2",
 
             "melee": { "0": "none", "1": "none" },
@@ -1760,11 +1305,6 @@
 
         {
             "id": "warlock_documents",
-            "title": {
-                "fr": "Document du Sorcier",
-                "en": "Warlock Documents",
-                "it": "Libri dello Stregone"
-            },
             "encumbrance": "0",
 
             "melee": { "0": "none", "1": "none" },
@@ -1779,11 +1319,6 @@
 
         {
             "id": "warlocks_blood",
-            "title": {
-                "fr": "Sang de sorcier",
-                "en": "Warlock’s Blood",
-                "it": "Sangue dello Stregone"
-            },
             "encumbrance": "1",
 
             "melee": { "0": "none", "1": "none" },
@@ -1800,11 +1335,6 @@
 
         {
             "id": "assassins_dagger",
-            "title": {
-                "fr": "Dague d'assassin",
-                "en": "Assassin’s Dagger",
-                "it": "Pugnale dell'assassino"
-            },
             "encumbrance": "1",
 
             "melee": { "0": "yellowreroll", "1": "none" },
@@ -1821,11 +1351,6 @@
 
         {
             "id": "antidote",
-            "title": {
-                "fr": "Potion anti-poison",
-                "en": "Antidote",
-                "it": "Antidoto"
-            },
             "encumbrance": "0",
 
             "melee": { "0": "none", "1": "none" },
@@ -1842,11 +1367,6 @@
 
         {
             "id": "torch",
-            "title": {
-                "fr": "Torche",
-                "en": "Torch",
-                "it": "Torcia"
-            },
             "encumbrance": "0",
 
             "melee": { "0": "none", "1": "none" },
@@ -1863,11 +1383,6 @@
 
         {
             "id": "trapped_chest",
-            "title": {
-                "fr": "Coffre piégé",
-                "en": "Trapped Chest",
-                "it": "Forziere-trappola"
-            },
             "encumbrance": "3",
 
             "melee": { "0": "none", "1": "none" },
@@ -1884,11 +1399,6 @@
 
         {
             "id": "short_sword",
-            "title": {
-                "fr": "Épée courte",
-                "en": "Short Sword",
-                "it": "Daga"
-            },
             "encumbrance": "2",
 
             "melee": { "0": "orangereroll", "1": "none" },
@@ -1903,11 +1413,6 @@
 
         {
             "id": "knife",
-            "title": {
-                "fr": "Poignard",
-                "en": "Knife",
-                "it": "Coltello"
-            },
             "encumbrance": "1",
 
             "melee": { "0": "yellowreroll", "1": "none" },
@@ -1922,11 +1427,6 @@
 
         {
             "id": "amulet",
-            "title": {
-                "fr": "Amulette",
-                "en": "Amulet",
-                "it": "Amuleto"
-            },
             "encumbrance": "0",
 
             "melee": { "0": "none", "1": "none" },
@@ -1941,11 +1441,6 @@
 
         {
             "id": "amulet",
-            "title": {
-                "fr": "Amulette",
-                "en": "Amulet",
-                "it": "Amuleto"
-            },
             "encumbrance": "0",
 
             "melee": { "0": "none", "1": "none" },
@@ -1960,11 +1455,6 @@
 
         {
             "id": "orb_red",
-            "title": {
-                "fr": "Orbe rouge",
-                "en": "Red orb",
-                "it": "Globo rosso"
-            },
             "encumbrance": "1",
 
             "melee": { "0": "none", "1": "none" },
@@ -1979,11 +1469,6 @@
 
         {
             "id": "orb_red_position",
-            "title": {
-                "fr": "Position orbe",
-                "en": "Orb position",
-                "it": "Posizione globo"
-            },
             "encumbrance": "",
 
             "melee": { "0": "none", "1": "none" },
@@ -1998,11 +1483,6 @@
 
         {
             "id": "orb_red_position",
-            "title": {
-                "fr": "Position orbe",
-                "en": "Orb position",
-                "it": "Posizione globo"
-            },
             "encumbrance": "",
 
             "melee": { "0": "none", "1": "none" },
@@ -2017,11 +1497,6 @@
 
         {
             "id": "orb_red_position",
-            "title": {
-                "fr": "Position orbe",
-                "en": "Orb position",
-                "it": "Posizione globo"
-            },
             "encumbrance": "",
 
             "melee": { "0": "none", "1": "none" },
@@ -2036,11 +1511,6 @@
 
         {
             "id": "orb_green",
-            "title": {
-                "fr": "Orbe vert",
-                "en": "Green orb",
-                "it": "Globo verde"
-            },
             "encumbrance": "1",
 
             "melee": { "0": "none", "1": "none" },
@@ -2055,11 +1525,6 @@
 
         {
             "id": "orb_green_position",
-            "title": {
-                "fr": "Position orbe",
-                "en": "Orb position",
-                "it": "Posizione globo"
-            },
             "encumbrance": "",
 
             "melee": { "0": "none", "1": "none" },
@@ -2074,11 +1539,6 @@
 
         {
             "id": "orb_green_position",
-            "title": {
-                "fr": "Position orbe",
-                "en": "Orb position",
-                "it": "Posizione globo"
-            },
             "encumbrance": "",
 
             "melee": { "0": "none", "1": "none" },
@@ -2093,11 +1553,6 @@
 
         {
             "id": "orb_green_position",
-            "title": {
-                "fr": "Position orbe",
-                "en": "Orb position",
-                "it": "Posizione globo"
-            },
             "encumbrance": "",
 
             "melee": { "0": "none", "1": "none" },
@@ -2112,11 +1567,6 @@
 
         {
             "id": "orb_blue",
-            "title": {
-                "fr": "Orbe bleu",
-                "en": "Blue orb",
-                "it": "Globo blu"
-            },
             "encumbrance": "1",
 
             "melee": { "0": "none", "1": "none" },
@@ -2131,11 +1581,6 @@
 
         {
             "id": "orb_blue_position",
-            "title": {
-                "fr": "Position orbe",
-                "en": "Orb position",
-                "it": "Posizione globo"
-            },
             "encumbrance": "",
 
             "melee": { "0": "none", "1": "none" },
@@ -2150,11 +1595,6 @@
 
         {
             "id": "orb_blue_position",
-            "title": {
-                "fr": "Position orbe",
-                "en": "Orb position",
-                "it": "Posizione globo"
-            },
             "encumbrance": "",
 
             "melee": { "0": "none", "1": "none" },
@@ -2169,11 +1609,6 @@
 
         {
             "id": "orb_blue_position",
-            "title": {
-                "fr": "Position orbe",
-                "en": "Orb position",
-                "it": "Posizione globo"
-            },
             "encumbrance": "",
 
             "melee": { "0": "none", "1": "none" },
@@ -2188,11 +1623,6 @@
 
         {
             "id": "poisoned",
-            "title": {
-                "fr": "Empoisonné",
-                "en": "Poisoned",
-                "it": "Avvelenato"
-            },
             "encumbrance": "",
 
             "melee": { "0": "none", "1": "none" },
@@ -2209,11 +1639,6 @@
 
         {
             "id": "kordava_boots",
-            "title": {
-                "fr": "Bottes de Kordava",
-                "en": "Kordava boots",
-                "it": "Stivali di Kordava"
-            },
             "encumbrance": "0",
             "movement": 1,
 
@@ -2229,11 +1654,6 @@
 
         {
             "id": "armbands_of_bel",
-            "title": {
-                "fr": "Brassards de Bel",
-                "en": "Armbands of Bel",
-                "it": "Bracciali di Bel"
-            },
             "encumbrance": "1",
 
             "melee": { "0": "none", "1": "none" },
@@ -2248,11 +1668,6 @@
 
         {
             "id": "akbitanas_claymore",
-            "title": {
-                "fr": "Claymore d'Akbitana",
-                "en": "Akbitana's claymore",
-                "it": "Spadone di Akbitana"
-            },
             "encumbrance": "3",
             "skills": {"0": "attack/counterattack", "1": "none"},
 
@@ -2268,11 +1683,6 @@
 
         {
             "id": "shemite_bow",
-            "title": {
-                "fr": "Arc shémite",
-                "en": "Shemite bow",
-                "it": "Arco shemita"
-            },
             "encumbrance": "2",
 
             "melee": { "0": "none", "1": "none" },
@@ -2287,11 +1697,6 @@
 
         {
             "id": "asshuri_cuirass",
-            "title": {
-                "fr": "Cuirasse Asshuri",
-                "en": "Asshuri cuirass",
-                "it": "Corazza asshuri"
-            },
             "encumbrance": "4",
 
             "melee": { "0": "none", "1": "none" },
@@ -2306,11 +1711,6 @@
 
         {
             "id": "shadow_mantel",
-            "title": {
-                "fr": "Mantel des ombres",
-                "en": "Shadow mantel",
-                "it": "Mantello delle ombre"
-            },
             "encumbrance": "0",
             "skills": {"0": "defense/untouchable", "1": "none"},
 
@@ -2326,11 +1726,6 @@
 
         {
             "id": "phoenix_sword",
-            "title": {
-                "fr": "Épée du phoenix",
-                "en": "Phoenix sword",
-                "it": "Spada della fenice"
-            },
             "encumbrance": "2",
 
             "melee": { "0": "orangereroll", "1": "yellow" },
@@ -2345,11 +1740,6 @@
 
         {
             "id": "boris_hammer",
-            "title": {
-                "fr": "Marteau de Bori",
-                "en": "Bori's hammer",
-                "it": "Martello di Bori"
-            },
             "encumbrance": "3",
             "skills": {"0": "movement/wall_wrecker", "1": "none"},
 
@@ -2365,11 +1755,6 @@
 
         {
             "id": "shield_of_mitra",
-            "title": {
-                "fr": "Bouclier de Mitra",
-                "en": "Shield of Mitra",
-                "it": "Scudo di Mitra"
-            },
             "encumbrance": "3",
 
             "melee": { "0": "none", "1": "none" },
@@ -2384,11 +1769,6 @@
 
         {
             "id": "spear",
-            "title": {
-                "fr": "Lance",
-                "en": "Spear",
-                "it": "Lancia"
-            },
             "encumbrance": "2",
 
             "melee": { "0": "orange", "1": "none" },
@@ -2403,11 +1783,6 @@
 
         {
             "id": "information",
-            "title": {
-                "fr": "Informations",
-                "en": "Information",
-                "it": "Informazione"
-            },
             "encumbrance": "0",
 
             "melee": { "0": "none", "1": "none" },

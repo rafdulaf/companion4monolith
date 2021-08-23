@@ -1,0 +1,160 @@
+{
+    "link": "http://www.monolithedition.com/download/rules/Aides-de-jeu-FR.pdf",
+    "types": {
+        "attack": {
+            "title": "Attaque"
+        },
+        "movement": {
+            "title": "Mouvement"
+        },
+        "miscellaneous": {
+            "title": "Diverses"
+        },
+        "defense": {
+            "title": "Défense"
+        },
+        "magic": {
+            "title": "Magie"
+        }
+    },
+    "list": {
+        "reach": {
+            "title": "Allonge",
+            "text": "Le personnage peut attaquer au corps-à-corps sur une zone adjacente avec ligne de vue et s’il n’y a pas d’obstacle (mur, porte, barreaux, tentures…) entre sa cible et lui.",
+            "clarification": "Pour utiliser Allonge, les unités doivent se trouver au même niveau. On considère que les zones de transition comme les escaliers ou les éboulis de la Forteresse sont à la fois aux niveaux supérieur et inférieur. Attaquer une unité qui se trouve à un niveau différent nécessite de recourir à une Attaque à distance ou à un Sort.\nAllonge ne procure de bonus de surplomb que lorsque les règles spéciales de la carte Auberge sont utilisées."
+        },
+        "circular_strike": {
+            "title": "Coup circulaire",
+            "text": "Avec toute arme de corps-à-corps à deux main (dont l’encombrement est supérieur ou égal à 3), le personnage peut donner un coup circulaire. Si l’attaque, résolue normalement, tue le premier adversaire désigné, le reliquat de dégâts est reporté sur le suivant (choisit par l'attaquant) et ainsi de suite jusqu’à ce qu’il n’y ait plus de reliquat.",
+            "clarification": "Si un personnage dispose aussi de Coup Précis, le joueur doit choisir s’il utilise Coup Précis ou Coup Circulaire avant de lancer les dés."
+        },
+        "ambidextrous": {
+            "title": "Ambidextrie",
+            "text": "S’il dispose de deux armes à une main, le personnage peut cumuler leur bonus lors de chacune de ses attaques au corps-à-corps (ne fonctionne pas en défense)."
+        },
+        "constriction": {
+            "title": "Constriction",
+            "text": "Si, lors de son attaque, la créature obtient au moins une face avec 2 symboles sur l’un de ses dés, sa cible est « saisie », en plus des blessures éventuelles. La figurine du personnage saisi est ramenée au contact de la figurine de la créature et est considérée comme bloquée. Un personnage ayant la compétence Insaisissable ignore le blocage dû à Constriction, pas les dégâts associés à l’attaque.",
+            "clarification": "Si une unité dispose à la fois de Constriction et Allonge, Constriction permet logiquement de déplacer une cible d’une zone vers une autre. C’est le mouvement associé à la Constriction qui intervient en premier. Ainsi, une unité alliée disposant des compétences Garde du corps ou Soutien devrait déjà se trouver dans la zone de l’attaquant pour que les effets de la compétence s’appliquent."
+        },
+        "precision_strike": {
+            "title": "Coup précis",
+            "text": "Lorsqu’il réalise une attaque au corps-à-corps, le personnage ignore systématiquement le premier point de défense de sa cible.",
+            "clarification": "Si un personnage dispose aussi de Coup Circulaire, le joueur doit choisir s’il utilise Coup Précis ou Coup Circulaire avant de lancer les dés."
+        },
+        "attack_from_beyond": {
+            "title": "Retour de l’Au-delà",
+            "text": "Juste après sa mort, le personnage peut porter une ultime attaque au corps-à-corps d’une puissance de {dice_red}{dice_red}{dice_red}, sans bonus d’arme et sans malus d’attaque à mains nues."
+        },
+        "counterattack": {
+            "title": "Riposte",
+            "text": "Chaque fois que le personnage est attaqué au corps-à-corps (que l’attaque ait causé des dégâts ou non), il peut gratuitement riposter (s’il survit à l’attaque) de {dice_red}, sans bonus d’arme et sans malus d’attaque à mains nues."
+        },
+        "elite_shooter": {
+            "title": "Tireur d’élite",
+            "text": "Le personnage ignore les effets du phénomène de gêne lorsqu’il réalise une attaque à distance. De plus, il ignore la compétence Sous protection de sa cible."
+        },
+        "precision_shot": {
+            "title": "Tir précis",
+            "text": "Lorsqu’il réalise une attaque à distance, le personnage ignore systématiquement le premier point de défense passive de sa cible."
+        },
+        "blocking": {
+            "title": "Bloqueur",
+            "text": "Le personnage bloque tout mouvement des adversaires présents sur sa zone, à l'exception de ceux possédant la compétence Insaisissable."
+        },
+        "wall_wrecker": {
+            "title": "Défoncer les cloisons",
+            "text": "Le personnage peut traverser les cloisons et les portes en bois, au cours de son mouvement, pour un surcout de 2 points de mouvement. Il laisse derrière lui une ouverture (symbolisée par un pion) : le personnage se déplace de l'autre côté de la cloison qu'il vient de défoncer. Les deux zones deviennent adjascentes sans pénalité de mouvement pour passer de l'une à l'autre et l'ouverture donne une ligne de vue entre ces deux zones."
+        },
+        "evasive": {
+            "title": "Insaisissable",
+            "text": "Le personnage ignore toute pénalité de mouvement liée à la présence d'adversaires dans sa zone, quand bien même ceux-ci auraient la compétence Bloqueur."
+        },
+        "swimming": {
+            "title": "Natation",
+            "text": "Le personnage est capable de se déplacer à travers les zones liquides. Le surcoût pour quitter une zone liquide est de 1 point de mouvement."
+        },
+        "intangible": {
+            "title": "Intangible",
+            "text": "Le personnage peut traverser un obstacle normalement infranchissable en dépensant ses points de mouvement comme s'il s'agissait d'une limite normale. Le personnage n'est jamais affecté par le phénomène de gêne."
+        },
+        "web_projection": {
+            "title": "Projection de toile",
+            "text": "Plutôt que de réaliser une attaque classique, le personnage peut projeter une toile sur un adversaire. Pour cela il réalise une attaque à distance avec {dice_orange}{dice_orange}{dice_orange}. Si l'attaque dépasse la défense, elle n'engendre pas de blessure mais la victime est immobilisée (on place le pion Toile contre son socle). Pour s'en extraire il lui en coûtera 4 points de mouvements en un seul tour.",
+            "clarification": "Si une unité ne dispose pas de suffisamment de Points de Mouvement pour s’extraire en raison d’un empoisonnement, un Héros peut toujours dépenser tous ses Points de Mouvement gratuits et autant de points que nécessaire, jusqu’à sa limite de saturation.\nEn mode Aventure, si une unité de l’Overlord est prise dans une toile (suite à l’utilisation d’un Filet), l’Overlord peut utiliser les Points de Mouvement gratuits de l’unité et y ajouter des gemmes pour atteindre les 4 points nécessaires à son extraction, même si l’unité n’est pas normalement en mesure d’atteindre les 4 Points de Mouvement.\nEn mode Solo/coop, l’unité de l’Overlord utilise simplement tous ses Points de Mouvement gratuits pour s’extraire"
+        },
+        "feline_grace": {
+            "title": "Souplesse féline",
+            "text": "Dans chaque zone empruntée, le personnage ignore un point de malus lié au phénomène de gêne."
+        },
+        "leap": {
+            "title": "Saut",
+            "text": "Le personnage peut sauter par-dessus les endroits prévus à cet effet. Pour ce faire, il lance {dice_red} et doit égaler ou dépasser l'indice de difficulté. Le saut n'est pas soumis au phénomène de gène. Sauter coûte 1 point de mouvement par zone traversée. Par exemple, sauter d'un bateau à l'autre coûte 2 points de mouvements."
+        },
+        "flying": {
+            "title": "Vol",
+            "text": "Le personnage peut voler par-dessus les éléments du décor. Il ignore les contraintes de déplacement liés au décor. Le vol n'est pas soumis au phénomène de gène."
+        },
+        "climb": {
+            "title": "Escalade",
+            "text": "Le personnage est capable de franchir les limites de zone qui requièrent cette compétence, en payant le surcoût de mouvement lié à la difficulté du franchissement comme décrit dans le scénario."
+        },
+        "alchemy": {
+            "title": "Alchimie",
+            "text": "Alchimie est une compétence générique pouvant être utilisée dans certains scénarios."
+        },
+        "leadership": {
+            "title": "Commandement",
+            "text": "Pour chaque gemme dépensée, le héros peut activer un de ses Alliés. Un Allié activé peut se déplacer et attaquer comme une unité. Il ne peut activer qu'une fois par tour chacun de ses Alliés."
+        },
+        "concentration": {
+            "title": "Concentration",
+            "text": "Le personnage ignore toutes les pénalités liées au phénomène de gêne pour toutes les actions nécessitant un lancer de dé."
+        },
+        "lock_picking": {
+            "title": "Crochetage",
+            "text": "Chaque fois qu'il tente une manipulation complexe pour crocheter une serrure, le personnage dispose d'un bonus de {dice_red}."
+        },
+        "fascination": {
+            "title": "Fascination",
+            "text": "Le personnage ne peut pas être attaqué par un autre personnage qu’il n’a pas lui-même attaqué au préalable pendant la partie.",
+            "clarification": "Une unité ne peut cibler une unité ennemie disposant de Fascination même avec un sort, quelle qu’en soit la raison, tant que cette unité ennemie ne l’a pas attaquée.\nSauf mention contraire dans le scénario, Les personnages disposant de Fascination peuvent subir les dégâts causés par les attaques de zone."
+        },
+        "horror": {
+            "title": "Horreur",
+            "text": "Le personnage a une apparence si hideuse qu'elle provoque la terreur chez ses adversaires. Chaque adversaire qui se trouve dans sa zone voit le niveau de saturation de ses caractéristiques limité à 2 (sauf pour la défense et la relance)."
+        },
+        "jinx": {
+            "title": "Malchance",
+            "text": "Aucune relance d’aucune sorte (payante ou gratuite) n’est autorisée dans la zone d’un adversaire ayant cette compétence."
+        },
+        "poison": {
+            "title": "Poison",
+            "text": "Poison est une compétence générique pouvant être utilisée dans certains scénarios."
+        },
+        "support": {
+            "title": "Soutien",
+            "text": "Les figurines amies du personnage présentes sur sa zone bénéficient d'une relance gratuite à chaque fois qu'elles réalisent une action. Soutien permet la relance gratuite d’un seul dé, y compris sur un dé déjà relancé gratuitement (exception à la règle page 22)."
+        },
+        "sacrifice": {
+            "title": "Sacrfice",
+            "text": "Le personnage peut décider, avant le lancé de dés, de subir une attaque à la place de la cible initiale. Il ne peut par contre ni la parer ni l'esquiver. Il ne peut utiliser que sa défense passive pour se défendre. Ce personnage encaisse donc la totalité des dégâts causés par l’attaque à la place de la cible initiale."
+        },
+        "protected": {
+            "title": "Sous protection",
+            "text": "Le personnage ne peut être attaqué tant que demeure sur sa zone au moins l'un de ses amis dépourvu de cette compétence. Les attaques de zone ne sont pas soumises à l'effet de cette compétence."
+        },
+        "untouchable": {
+            "title": "Intouchable",
+            "text": "Le personnage ayant cette compétence ignore le premier succès d’une attaque à distance portée contre lui."
+        },
+        "bodyguard": {
+            "title": "Garde du corps",
+            "text": "Le personnage peut parer (c’est-à-dire utiliser un équipement pour défendre comme un bouclier par exemple) à leur place, les attaques portées contre ses amis présents sur sa zone. Il ne peut pas simplement esquiver. L'usage de la compétence remplace la défense active de la cible mais pas sa défense passive. C’est la cible initiale de l’attaque qui en subit les éventuelles blessures."
+        },
+        "spell_caster": {
+            "title": "Lanceur de sort",
+            "text": "Le personnage est capable d'utiliser les cartes Sorts à sa disposition, en leur allouant les gemmes d'énergie requises. Lorsqu'un personnage perd la compétence (du fait de son encombrement par exemple), les sorts déjà actifs le restent jusqu'à ce qu'ils s'épuisent comme décrit par le sort."
+        }
+    }
+}

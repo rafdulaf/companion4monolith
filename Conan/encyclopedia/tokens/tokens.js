@@ -1,77 +1,20 @@
 var EncyclopediaTokens = {
-    _i18n: {
-        'fr': {
-            'tab': "Autre",
-            'from': "Disponible dans :",
-            'fromAnd': "et",
-            'token': "exemplaire",
-            'tokens': "exemplaires",
-            'skills': "Utilisé par la compétence :",
-            'spells': "Utilisé par le sort :"
-        },
-        'en': {
-            'tab': "Other",
-            'from': "Available in:",
-            'fromAnd': "and",
-            'token': "copy",
-            'tokens': "copies",
-            'skills': "Used by skill:",
-            'spells': "Used by the spell:"
-        },
-        'it': {
-            'tab': "Altro",
-            'from': "Disponibile in :",
-            'fromAnd': "e",
-            'token': "copia",
-            'tokens': "copie",
-            'skills': "Utilizzato dall'abilità :",
-            'spells': "Utilizzato dall'incantesimo :"
-        }
-    },
-
     preinit: function()
     {
-        Encyclopedia._slides.push({   label: EncyclopediaTokens._i18n[Language].tab, id: "encyclopedia-token", onShow: EncyclopediaTokens.onShow,  onHide: EncyclopediaTokens.onHide });
+        Encyclopedia._slides.push({   label: EncyclopediaTokens._i18n.tab, id: "encyclopedia-token", onShow: EncyclopediaTokens.onShow,  onHide: EncyclopediaTokens.onHide });
 
-        EncyclopediaTokens._facets = [
+        EncyclopediaTokens._facets = Utils.mergeObject([
             {
                 id: 'keyword',
-                label: {
-                    'fr': "Mot-clé",
-                    'en': "Keyword",
-                    'it': "Parola chiave"
-                },
                 filter: function(item, value)
                 {
-                    return item.name[Language] && item.name[Language + '_deemphasized'].indexOf(Rules._deemphasize(value)) != -1;
+                    return item.name && item.name_deemphasized.indexOf(Rules._deemphasize(value)) != -1;
                 }
             },
 
             {
                 id: 'expansions',
-                label: {
-                    'fr': "Status",
-                    'en': "Status",
-                    'it': "Stato"
-                },
-                values: [
-                    {
-                        id: "yes",
-                        label: {
-                            'fr': "Possédées",
-                            'en': "Owned",
-                            'it': "Nella collezione"
-                        }
-                    },
-                    {
-                        id: "no",
-                        label: {
-                            'fr': "Manquantes",
-                            'en': "Missing",
-                            'it': "Mancante"
-                        }
-                    }
-                ],
+                values: [ { id: "yes" }, { id: "no" } ],
                 filter: function(item, selectedValues) {
                     if (selectedValues.length != 1)
                     {
@@ -88,11 +31,6 @@ var EncyclopediaTokens = {
 
             {
                 id: 'origins',
-                label: {
-                    'fr': "Origine",
-                    'en': "Origin",
-                    'it': "Origine"
-                },
                 values: (function() {
                     var values = [];
                     for (var i in Encyclopedia.expansions.types)
@@ -144,38 +82,8 @@ var EncyclopediaTokens = {
 
             {
                 id: 'usage',
-                label: {
-                    'fr': "Divers",
-                    'en': "Misc.",
-                    'it': "Altro"
-                },
                 sort: true,
-                values: [
-                    {
-                        id: "model",
-                        label: {
-                            'fr': "Figurine",
-                            'en': "Model",
-                            'it': "Miniatura"
-                        }
-                    },
-                    {
-                        id: "skill",
-                        label: {
-                            'fr': "Compétence",
-                            'en': "Skill",
-                            'it': "Abilità"
-                        }
-                    },
-                    {
-                        id: "spell",
-                        label: {
-                            'fr': "Sort",
-                            'en': "Spell",
-                            'it': "Incantesimo"
-                        }
-                    }
-                ],
+                values: [ { id: "model", }, { id: "skill" }, { id: "spell" } ],
                 filter: function(item, selectedValues) {
                     for (var i = 0; i < selectedValues.length; i++)
                     {
@@ -203,7 +111,7 @@ var EncyclopediaTokens = {
                     return false;
                 }
             }
-        ]
+        ], EncyclopediaTokens._facets);
     },
 
     init: function()
@@ -220,7 +128,7 @@ var EncyclopediaTokens = {
         var tokens = "";
 
         Encyclopedia.tokens.list.sort(function(s1, s2) {
-            var c = s1.name[Language].toLowerCase().localeCompare(s2.name[Language].toLowerCase())
+            var c = s1.name.toLowerCase().localeCompare(s2.name.toLowerCase())
             if (c != 0)
             {
                 return c;
@@ -346,8 +254,8 @@ var EncyclopediaTokens = {
         var originString = "";
         for (var i in originsCount)
         {
-            if (originString) originString += " " + EncyclopediaTokens._i18n[Language].fromAnd + " ";
-            originString += Encyclopedia._getOrigin(i) + " (" + originsCount[i] + " " + (originsCount[i] == 1 ? EncyclopediaTokens._i18n[Language].token : EncyclopediaTokens._i18n[Language].tokens) + ")";
+            if (originString) originString += " " + EncyclopediaTokens._i18n.fromAnd + " ";
+            originString += Encyclopedia._getOrigin(i) + " (" + originsCount[i] + " " + (originsCount[i] == 1 ? EncyclopediaTokens._i18n.token : EncyclopediaTokens._i18n.tokens) + ")";
         }
 
         var c = "<div class='token-wraperindetails' data-totalcount='" + totalCount + "'>";
@@ -370,19 +278,19 @@ var EncyclopediaTokens = {
         var skills = Rules._findSkillByToken(token.id) || "";
         if (skills)
         {
-            skills = "<div class='skills'>" + EncyclopediaTokens._i18n[Language].skills + " " + Rules._linkToSkill(skills.id, false) + "</div>";
+            skills = "<div class='skills'>" + EncyclopediaTokens._i18n.skills + " " + Rules._linkToSkill(skills.id, false) + "</div>";
         }
 
         var spells = EncyclopediaSpells._findSpellsByToken(token.id).map(s => EncyclopediaSpells._linkToSpell(s.id, false)).join(", ");
 
-        Nav.dialog(token.name[Language] || "",
+        Nav.dialog(token.name || "",
             "<div class='tokendetails'>"
                 + "<div class='minwidth'></div>"
-                + "<div class='from'>" + EncyclopediaTokens._i18n[Language].from + " "
+                + "<div class='from'>" + EncyclopediaTokens._i18n.from + " "
                     + originString
                 + "</div>"
                 + skills
-                + (spells ? "<div class='spells'>" + EncyclopediaTokens._i18n[Language].spells + " " + spells + "</div>" : "")
+                + (spells ? "<div class='spells'>" + EncyclopediaTokens._i18n.spells + " " + spells + "</div>" : "")
                 + model
                 + c
             + "</div>",
@@ -405,7 +313,7 @@ var EncyclopediaTokens = {
                         + (separateBack ? "" : backImage)
                         + "<img " + LazyImage + " src='" + (!details && token.preview ? token.preview.image : (token.faceB ? token.faceB.image : token.faceA.image)) + "\?version=" + Version + "' style='" + style + "'/>"
                     + "</div>"
-                    + "<span class='name'>" + (separateBack ? token.name[Language].split(" / ")[0] : token.name[Language] ) + "</span>"
+                    + "<span class='name'>" + (separateBack ? token.name.split(" / ")[0] : token.name ) + "</span>"
               + "</div>";
               
         if (separateBack)
@@ -414,7 +322,7 @@ var EncyclopediaTokens = {
                         + "<div class='img'>"
                             + backImage
                         + "</div>"
-                        + "<span class='name'>" + (separateBack ? token.name[Language].split(" / ")[1] : token.name[Language] ) + "</span>"
+                        + "<span class='name'>" + (separateBack ? token.name.split(" / ")[1] : token.name ) + "</span>"
                   + "</div>";
         }
 
@@ -424,7 +332,7 @@ var EncyclopediaTokens = {
 
     _linkToToken: function(id, image) {
         var token = EncyclopediaTokens._findTokensById(id)[0];
-        var name = token.name[Language];
+        var name = token.name;
 
         var s = "";
         if (token)

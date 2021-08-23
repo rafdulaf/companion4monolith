@@ -5,156 +5,6 @@ var CardEquipment = mergeObject(StudioItem, {
     _itemWidth: 204,
     _itemHeight: 302.5,
     
-    _i18n: {
-        'fr': {
-            'tab': "Équipe<wbr/>ments",
-            'nocard': "Vous n'avez aucune carte d'équipement pour le moment",
-            'nocard2': "<br/><br/>Cliquez sur le bouton + pour en creer une",
-            'newcard': "Créer un équipement",
-            'editcard': "Modifier",
-            
-            'name': "Nom",
-            'namePh': "?",
-            'text': "Texte",
-            'textPh': "?",
-            'textHelp': "Pour insérer des images, utilisez: {dice_yellow}, {dice_orange}, {dice_red}, {dice_yellow_reroll}, {dice_orange_reroll}, {dice_red_reroll}, {gem_blue} ou {gem_red}.",
-            'weight': "Encombrement",
-            'weightPh': "?",
-            'movement': "Mouvement",
-            'movementPh': "?",
-            'skills': "Compétences",
-            'skillsPh': "?",
-            'skillsNone': "Aucune",
-            'skillsBottom': "Afficher comme bonus",
-            'meleeAttack': "Corps à corps",
-            'manipulation': "Manipulation",
-            'manipulationExplosive': "Explosif",
-            'rangedAttack': "Distance",
-            'rangedAttackThrowable': "Lançable",
-            'activeDefense': "Défense",
-            'passiveDefense': "Armure",
-            'image': "Image (fond transparent)",
-            'imagePh': "Entrer l'adresse de l'image (http://)",
-            'imagelocation': "Emplacement",
-            'imagelocationPh': "0",
-            'imagezoom': "Zoom",
-            'imagezoomPh': "0",
-            'imagerotation': "Rotation",
-            'imagerotationPh': "0",
-            'imageatfront': "Mettre l'image devant les symboles",
-            'diceNone': "Aucun",
-            'diceRed': "Rouge",
-            'diceRedReroll': "Rouge \uf01e",
-            'diceOrange': "Orange",
-            'diceOrangeReroll': "Orange \uf01e",
-            'diceYellow': "Jaune",
-            'diceYellowReroll': "Jaune \uf01e",
-            'header1': "Saisissez les données de la carte",
-            'header1bis': "Mettez une image",
-            'header2': "Prévisualiser la carte",
-            
-            'copyright': "Basé sur le fichier PSD proposé par <a href='https://the-overlord.com/index.php?/profile/9-genesteal28/'>@genesteal28</a> et converti au format GIMP par <a href='https://the-overlord.com/index.php?/profile/31-jabbathehatt/'>@jabbathehatt</a> et <a href='https://the-overlord.com/index.php?/profile/1-sentma/'>SentMa</a> pour le dos de carte."
-        },
-        'en': {
-            'tab': "Equip<wbr/>ments",
-            'nocard': "You have no card for the moment",
-            'nocard2': "<br/><br/>Click on the + button to create one",
-            'newcard': "Create an equipment",
-            'editcard': "Edit a card",
-            
-            'name': "Name",
-            'namePh': "?",
-            'text': "Text",
-            'textPh': "?",
-            'textHelp': "To insert images, use: {dice_yellow}, {dice_orange}, {dice_red}, {dice_yellow_reroll}, {dice_orange_reroll}, {dice_red_reroll}, {gem_blue} or {gem_red}.",
-            'weight': "Encumbrance",
-            'weightPh': "?",
-            'movement': "Move",
-            'movementPh': "?",
-            'skills': "Skills",
-            'skillsPh': "?",
-            'skillsNone': "None",
-            'skillsBottom': "Display as bonus",
-            'meleeAttack': "Melee attack",
-            'manipulation': "Manipulation",
-            'manipulationExplosive': "Explosive",
-            'rangedAttack': "Ranged attack",
-            'rangedAttackThrowable': "Throwable",
-            'activeDefense': "Guard",
-            'passiveDefense': "Armor",
-            'image': "Image (transparent background)",
-            'imagePh': "Enter the image address (http://...)",
-            'imagelocation': "Location",
-            'imagelocationPh': "0",
-            'imagezoom': "Zoom",
-            'imagezoomPh': "0",
-            'imagerotation': "Rotation",
-            'imagerotationPh': "0",
-            'imageatfront': "Image in front of symbols",
-            'diceNone': "None",
-            'diceRed': "Red",
-            'diceRedReroll': "Red \uf01e",
-            'diceOrange': "Orange",
-            'diceOrangeReroll': "Orange \uf01e",
-            'diceYellow': "Yellow",
-            'diceYellowReroll': "Yellow \uf01e",
-            'header1': "Fill the card data",
-            'header1bis': "Set a picture",
-            'header2': "Preview the final result",
-            
-            'copyright': "Based on the PSD file proposed by <a href='https://the-overlord.com/index.php?/profile/9-genesteal28/'>@genesteal28</a> and converted at the GIMP format by <a href='https://the-overlord.com/index.php?/profile/31-jabbathehatt/'>@jabbathehatt</a> and <a href='https://the-overlord.com/index.php?/profile/1-sentma/'>SentMa</a> for the back of the card."
-        },
-        'it': {
-            'tab': "Equip<wbr/>aggiamento",
-            'nocard': "Al momento non hai carte",
-            'nocard2': "<br/><br/>Clicca su + per crearne una",
-            'newcard': "Crea una carta equipaggiamento",
-            'editcard': "Modifica una carta",
-            
-            'name': "Nome",
-            'namePh': "?",
-            'text': "Testo",
-            'textPh': "?",
-            'textHelp': "Per inserire queste immagini, usa: {dice_yellow}, {dice_orange}, {dice_red}, {dice_yellow_reroll}, {dice_orange_reroll}, {dice_red_reroll}, {gem_blue} o {gem_red}.",
-            'weight': "Ingombro",
-            'weightPh': "?",
-            'movement': "Movimento",
-            'movementPh': "?",
-            'skills': "Abilità",
-            'skillsPh': "?",
-            'skillsNone': "Nessuna",
-            'skillsBottom': "Mostra come bonus",
-            'meleeAttack': "Attacco in mischia",
-            'manipulation': "Manipolazione",
-            'manipulationExplosive': "Esplosiva",
-            'rangedAttack': "Attacco a distanza",
-            'rangedAttackThrowable': "Lanciabile",
-            'activeDefense': "Difesa",
-            'passiveDefense': "Armatura",
-            'image': "Immagine (sfondo trasparente)",
-            'imagePh': "Inserisci l'URL dell'immagine (http://...)",
-            'imagelocation': "Posizione",
-            'imagelocationPh': "0",
-            'imagezoom': "Zoom",
-            'imagezoomPh': "0",
-            'imagerotation': "Rotazione",
-            'imagerotationPh': "0",
-            'imageatfront': "Immagine davanti alle icone",
-            'diceNone': "Nessuno",
-            'diceRed': "Rosso",
-            'diceRedReroll': "Rosso \uf01e",
-            'diceOrange': "Arancione",
-            'diceOrangeReroll': "Arancione \uf01e",
-            'diceYellow': "Giallo",
-            'diceYellowReroll': "Giallo \uf01e",
-            'header1': "Completa le informazioni sulla carta",
-            'header1bis': "Scegli un'immagine",
-            'header2': "Anteprima risultato finale",
-            
-            'copyright': "Basato sui file PSD di <a href='https://the-overlord.com/index.php?/profile/9-genesteal28/'>@genesteal28</a> e convertiti nel formato GIMP da <a href='https://the-overlord.com/index.php?/profile/31-jabbathehatt/'>@jabbathehatt</a> e <a href='https://the-overlord.com/index.php?/profile/1-sentma/'>SentMa</a> per il retro delle carte."
-        }
-    },
-    
     _getDisplayItemsCode: function(withEditLink, printPurpose)
     {
         var html = "";
@@ -181,7 +31,7 @@ var CardEquipment = mergeObject(StudioItem, {
         }
         else
         {
-            html += "<div class=\"nocards\">" + CardEquipment._i18n[Language].nocard + (withEditLink !== false ? CardEquipment._i18n[Language].nocard2 : '') + "</div>";
+            html += "<div class=\"nocards\">" + CardEquipment._i18n.nocard + (withEditLink !== false ? CardEquipment._i18n.nocard2 : '') + "</div>";
         }
 
         if (!withEditLink)
@@ -382,14 +232,14 @@ var CardEquipment = mergeObject(StudioItem, {
             {
                 var type = Encyclopedia.skills.types[i];
 
-                s += "<optgroup label=\"" + type.title[Language] + "\">";
+                s += "<optgroup label=\"" + type.title + "\">";
 
                 for (var j in Encyclopedia.skills.list)
                 {
                     var skill = Encyclopedia.skills.list[j];
                     if (skill.type == type.id)
                     {
-                        s += "<option value=\"" + type.id  + "/" + skill.id + "\">" + skill.title[Language] + "</option>";
+                        s += "<option value=\"" + type.id  + "/" + skill.id + "\">" + skill.title + "</option>";
                     }
                 }
             }
@@ -403,83 +253,83 @@ var CardEquipment = mergeObject(StudioItem, {
             "<div class=\"studiodialog\">"
             + "<div class=\"eqcol\">"
             + "<div class=\"equipment\">"
-                + "<h1>" + CardEquipment._i18n[Language].header1 + "</h1>"
+                + "<h1>" + CardEquipment._i18n.header1 + "</h1>"
                 + "<input type=\"hidden\" name=\"cardpos\"/>"
                 + "<div class=\"field name\">"
-                    + "<label for=\"eqname\">" + CardEquipment._i18n[Language].name + "</label>"
-                    + "<input id=\"eqname\" name=\"cardname\" autocomplete=\"off\" placeholder=\"" + CardEquipment._i18n[Language].namePh + "\" onkeyup=\"CardEquipment._preview();\" onchange=\"CardEquipment._preview();\"/>"
+                    + "<label for=\"eqname\">" + CardEquipment._i18n.name + "</label>"
+                    + "<input id=\"eqname\" name=\"cardname\" autocomplete=\"off\" placeholder=\"" + CardEquipment._i18n.namePh + "\" onkeyup=\"CardEquipment._preview();\" onchange=\"CardEquipment._preview();\"/>"
                 + "</div>"
                 + "<div class=\"field melee\">"
-                    + "<label for=\"eqmelee\">" + CardEquipment._i18n[Language].meleeAttack + "</label>"
-                    + "<select id=\"eqmelee\" class=\"dice\" name=\"cardmelee1\"><option value=\"none\">" + CardEquipment._i18n[Language].diceNone + "</option><option value=\"red\">" + CardEquipment._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + CardEquipment._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + CardEquipment._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + CardEquipment._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + CardEquipment._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + CardEquipment._i18n[Language].diceYellowReroll + "</option></select>"
-                    + "<select id=\"eqmelee2\" class=\"dice\" name=\"cardmelee2\"><option value=\"none\">" + CardEquipment._i18n[Language].diceNone + "</option><option value=\"red\">" + CardEquipment._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + CardEquipment._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + CardEquipment._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + CardEquipment._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + CardEquipment._i18n[Language].diceYellow + "</option><option data-class=\"yellowreroll\" value=\"yellowreroll\">" + CardEquipment._i18n[Language].diceYellowReroll + "</option></select>"
+                    + "<label for=\"eqmelee\">" + CardEquipment._i18n.meleeAttack + "</label>"
+                    + "<select id=\"eqmelee\" class=\"dice\" name=\"cardmelee1\"><option value=\"none\">" + CardEquipment._i18n.diceNone + "</option><option value=\"red\">" + CardEquipment._i18n.diceRed + "</option><option value=\"redreroll\">" + CardEquipment._i18n.diceRedReroll + "</option><option value=\"orange\">" + CardEquipment._i18n.diceOrange + "</option><option value=\"orangereroll\">" + CardEquipment._i18n.diceOrangeReroll + "</option><option value=\"yellow\">" + CardEquipment._i18n.diceYellow + "</option><option value=\"yellowreroll\">" + CardEquipment._i18n.diceYellowReroll + "</option></select>"
+                    + "<select id=\"eqmelee2\" class=\"dice\" name=\"cardmelee2\"><option value=\"none\">" + CardEquipment._i18n.diceNone + "</option><option value=\"red\">" + CardEquipment._i18n.diceRed + "</option><option value=\"redreroll\">" + CardEquipment._i18n.diceRedReroll + "</option><option value=\"orange\">" + CardEquipment._i18n.diceOrange + "</option><option value=\"orangereroll\">" + CardEquipment._i18n.diceOrangeReroll + "</option><option value=\"yellow\">" + CardEquipment._i18n.diceYellow + "</option><option data-class=\"yellowreroll\" value=\"yellowreroll\">" + CardEquipment._i18n.diceYellowReroll + "</option></select>"
                 + "</div>"
                 + "<div class=\"field ranged\">"
-                    + "<label for=\"eqranged\">" + CardEquipment._i18n[Language].rangedAttack + "</label>"
-                    + "<select id=\"eqranged\" class=\"dice\" name=\"cardranged1\"><option value=\"none\">" + CardEquipment._i18n[Language].diceNone + "</option><option value=\"red\">" + CardEquipment._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + CardEquipment._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + CardEquipment._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + CardEquipment._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + CardEquipment._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + CardEquipment._i18n[Language].diceYellowReroll + "</option></select>"
-                    + "<select id=\"eqranged2\" class=\"dice\" name=\"cardranged2\"><option value=\"none\">" + CardEquipment._i18n[Language].diceNone + "</option><option value=\"red\">" + CardEquipment._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + CardEquipment._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + CardEquipment._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + CardEquipment._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + CardEquipment._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + CardEquipment._i18n[Language].diceYellowReroll + "</option></select>"
-                    + "<div class=\"rangedthrow\"><input type=\"checkbox\" id=\"eqthrowable\" name=\"cardthrowable\" onchange=\"CardEquipment._preview();\"/><label for=\"eqthrowable\">" + CardEquipment._i18n[Language].rangedAttackThrowable + "</label></div>"
+                    + "<label for=\"eqranged\">" + CardEquipment._i18n.rangedAttack + "</label>"
+                    + "<select id=\"eqranged\" class=\"dice\" name=\"cardranged1\"><option value=\"none\">" + CardEquipment._i18n.diceNone + "</option><option value=\"red\">" + CardEquipment._i18n.diceRed + "</option><option value=\"redreroll\">" + CardEquipment._i18n.diceRedReroll + "</option><option value=\"orange\">" + CardEquipment._i18n.diceOrange + "</option><option value=\"orangereroll\">" + CardEquipment._i18n.diceOrangeReroll + "</option><option value=\"yellow\">" + CardEquipment._i18n.diceYellow + "</option><option value=\"yellowreroll\">" + CardEquipment._i18n.diceYellowReroll + "</option></select>"
+                    + "<select id=\"eqranged2\" class=\"dice\" name=\"cardranged2\"><option value=\"none\">" + CardEquipment._i18n.diceNone + "</option><option value=\"red\">" + CardEquipment._i18n.diceRed + "</option><option value=\"redreroll\">" + CardEquipment._i18n.diceRedReroll + "</option><option value=\"orange\">" + CardEquipment._i18n.diceOrange + "</option><option value=\"orangereroll\">" + CardEquipment._i18n.diceOrangeReroll + "</option><option value=\"yellow\">" + CardEquipment._i18n.diceYellow + "</option><option value=\"yellowreroll\">" + CardEquipment._i18n.diceYellowReroll + "</option></select>"
+                    + "<div class=\"rangedthrow\"><input type=\"checkbox\" id=\"eqthrowable\" name=\"cardthrowable\" onchange=\"CardEquipment._preview();\"/><label for=\"eqthrowable\">" + CardEquipment._i18n.rangedAttackThrowable + "</label></div>"
                 + "</div>"
                 + "<div class=\"field active\">"
-                    + "<label for=\"eqactive\">" + CardEquipment._i18n[Language].activeDefense + "</label>"
-                    + "<select id=\"eqactive\" class=\"dice\" name=\"cardactive1\"><option value=\"none\">" + CardEquipment._i18n[Language].diceNone + "</option><option value=\"red\">" + CardEquipment._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + CardEquipment._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + CardEquipment._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + CardEquipment._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + CardEquipment._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + CardEquipment._i18n[Language].diceYellowReroll + "</option></select>"
-                    + "<select id=\"eqactive2\" class=\"dice\" name=\"cardactive2\"><option value=\"none\">" + CardEquipment._i18n[Language].diceNone + "</option><option value=\"red\">" + CardEquipment._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + CardEquipment._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + CardEquipment._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + CardEquipment._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + CardEquipment._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + CardEquipment._i18n[Language].diceYellowReroll + "</option></select>"
+                    + "<label for=\"eqactive\">" + CardEquipment._i18n.activeDefense + "</label>"
+                    + "<select id=\"eqactive\" class=\"dice\" name=\"cardactive1\"><option value=\"none\">" + CardEquipment._i18n.diceNone + "</option><option value=\"red\">" + CardEquipment._i18n.diceRed + "</option><option value=\"redreroll\">" + CardEquipment._i18n.diceRedReroll + "</option><option value=\"orange\">" + CardEquipment._i18n.diceOrange + "</option><option value=\"orangereroll\">" + CardEquipment._i18n.diceOrangeReroll + "</option><option value=\"yellow\">" + CardEquipment._i18n.diceYellow + "</option><option value=\"yellowreroll\">" + CardEquipment._i18n.diceYellowReroll + "</option></select>"
+                    + "<select id=\"eqactive2\" class=\"dice\" name=\"cardactive2\"><option value=\"none\">" + CardEquipment._i18n.diceNone + "</option><option value=\"red\">" + CardEquipment._i18n.diceRed + "</option><option value=\"redreroll\">" + CardEquipment._i18n.diceRedReroll + "</option><option value=\"orange\">" + CardEquipment._i18n.diceOrange + "</option><option value=\"orangereroll\">" + CardEquipment._i18n.diceOrangeReroll + "</option><option value=\"yellow\">" + CardEquipment._i18n.diceYellow + "</option><option value=\"yellowreroll\">" + CardEquipment._i18n.diceYellowReroll + "</option></select>"
                 + "</div>"
                 + "<div class=\"field passive\">"
-                    + "<label for=\"eqpassive\">" + CardEquipment._i18n[Language].passiveDefense + "</label>"
-                    + "<select id=\"eqpassive\" class=\"dice\" name=\"cardpassive1\"><option value=\"none\">" + CardEquipment._i18n[Language].diceNone + "</option><option value=\"red\">" + CardEquipment._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + CardEquipment._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + CardEquipment._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + CardEquipment._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + CardEquipment._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + CardEquipment._i18n[Language].diceYellowReroll + "</option></select>"
-                    + "<select id=\"eqpassive2\" class=\"dice\" name=\"cardpassive2\"><option value=\"none\">" + CardEquipment._i18n[Language].diceNone + "</option><option value=\"red\">" + CardEquipment._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + CardEquipment._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + CardEquipment._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + CardEquipment._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + CardEquipment._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + CardEquipment._i18n[Language].diceYellowReroll + "</option></select>"
+                    + "<label for=\"eqpassive\">" + CardEquipment._i18n.passiveDefense + "</label>"
+                    + "<select id=\"eqpassive\" class=\"dice\" name=\"cardpassive1\"><option value=\"none\">" + CardEquipment._i18n.diceNone + "</option><option value=\"red\">" + CardEquipment._i18n.diceRed + "</option><option value=\"redreroll\">" + CardEquipment._i18n.diceRedReroll + "</option><option value=\"orange\">" + CardEquipment._i18n.diceOrange + "</option><option value=\"orangereroll\">" + CardEquipment._i18n.diceOrangeReroll + "</option><option value=\"yellow\">" + CardEquipment._i18n.diceYellow + "</option><option value=\"yellowreroll\">" + CardEquipment._i18n.diceYellowReroll + "</option></select>"
+                    + "<select id=\"eqpassive2\" class=\"dice\" name=\"cardpassive2\"><option value=\"none\">" + CardEquipment._i18n.diceNone + "</option><option value=\"red\">" + CardEquipment._i18n.diceRed + "</option><option value=\"redreroll\">" + CardEquipment._i18n.diceRedReroll + "</option><option value=\"orange\">" + CardEquipment._i18n.diceOrange + "</option><option value=\"orangereroll\">" + CardEquipment._i18n.diceOrangeReroll + "</option><option value=\"yellow\">" + CardEquipment._i18n.diceYellow + "</option><option value=\"yellowreroll\">" + CardEquipment._i18n.diceYellowReroll + "</option></select>"
                 + "</div>"
                 + "<div class=\"field manipulation\">"
-                    + "<label for=\"eqmanipulation\">" + CardEquipment._i18n[Language].manipulation + "</label>"
-                    + "<select id=\"eqmanipulation\" class=\"dice\" name=\"cardmanip1\"><option value=\"none\">" + CardEquipment._i18n[Language].diceNone + "</option><option value=\"red\">" + CardEquipment._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + CardEquipment._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + CardEquipment._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + CardEquipment._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + CardEquipment._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + CardEquipment._i18n[Language].diceYellowReroll + "</option></select>"
-                    + "<select id=\"eqmanipulation2\" class=\"dice\" name=\"cardmanip2\"><option value=\"none\">" + CardEquipment._i18n[Language].diceNone + "</option><option value=\"red\">" + CardEquipment._i18n[Language].diceRed + "</option><option value=\"redreroll\">" + CardEquipment._i18n[Language].diceRedReroll + "</option><option value=\"orange\">" + CardEquipment._i18n[Language].diceOrange + "</option><option value=\"orangereroll\">" + CardEquipment._i18n[Language].diceOrangeReroll + "</option><option value=\"yellow\">" + CardEquipment._i18n[Language].diceYellow + "</option><option value=\"yellowreroll\">" + CardEquipment._i18n[Language].diceYellowReroll + "</option></select>"
-                    + "<div class=\"manipexplosive\"><input type=\"checkbox\" id=\"eqexplosive\" name=\"cardexplosive\" onchange=\"CardEquipment._preview();\"/><label for=\"eqexplosive\">" + CardEquipment._i18n[Language].manipulationExplosive + "</label></div>"
+                    + "<label for=\"eqmanipulation\">" + CardEquipment._i18n.manipulation + "</label>"
+                    + "<select id=\"eqmanipulation\" class=\"dice\" name=\"cardmanip1\"><option value=\"none\">" + CardEquipment._i18n.diceNone + "</option><option value=\"red\">" + CardEquipment._i18n.diceRed + "</option><option value=\"redreroll\">" + CardEquipment._i18n.diceRedReroll + "</option><option value=\"orange\">" + CardEquipment._i18n.diceOrange + "</option><option value=\"orangereroll\">" + CardEquipment._i18n.diceOrangeReroll + "</option><option value=\"yellow\">" + CardEquipment._i18n.diceYellow + "</option><option value=\"yellowreroll\">" + CardEquipment._i18n.diceYellowReroll + "</option></select>"
+                    + "<select id=\"eqmanipulation2\" class=\"dice\" name=\"cardmanip2\"><option value=\"none\">" + CardEquipment._i18n.diceNone + "</option><option value=\"red\">" + CardEquipment._i18n.diceRed + "</option><option value=\"redreroll\">" + CardEquipment._i18n.diceRedReroll + "</option><option value=\"orange\">" + CardEquipment._i18n.diceOrange + "</option><option value=\"orangereroll\">" + CardEquipment._i18n.diceOrangeReroll + "</option><option value=\"yellow\">" + CardEquipment._i18n.diceYellow + "</option><option value=\"yellowreroll\">" + CardEquipment._i18n.diceYellowReroll + "</option></select>"
+                    + "<div class=\"manipexplosive\"><input type=\"checkbox\" id=\"eqexplosive\" name=\"cardexplosive\" onchange=\"CardEquipment._preview();\"/><label for=\"eqexplosive\">" + CardEquipment._i18n.manipulationExplosive + "</label></div>"
                 + "</div>"
                 + "<div class=\"field movement\">"
-                    + "<label for=\"eqmovement\">" + CardEquipment._i18n[Language].movement + "</label>"
-                    + "<input type=\"number\" min=\"0\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"eqmovement\" name=\"cardmovement\" autocomplete=\"off\" placeholder=\"" + CardEquipment._i18n[Language].movementPh + "\" onkeyup=\"CardEquipment._preview();\" onchange=\"CardEquipment._preview();\"/>"
+                    + "<label for=\"eqmovement\">" + CardEquipment._i18n.movement + "</label>"
+                    + "<input type=\"number\" min=\"0\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"eqmovement\" name=\"cardmovement\" autocomplete=\"off\" placeholder=\"" + CardEquipment._i18n.movementPh + "\" onkeyup=\"CardEquipment._preview();\" onchange=\"CardEquipment._preview();\"/>"
                 + "</div>"
                 + "<div class=\"field skills\">"
-                    + "<label for=\"eqskills\">" + CardEquipment._i18n[Language].skills + "</label>"
-                    + "<select id=\"eqskills\" class=\"skills\" name=\"cardskills1\" onchange=\"CardEquipment._preview();\"><option value=\"none\">" + CardEquipment._i18n[Language].skillsNone + "</option>" + _skills() + "</select>"
-                    + "<select id=\"eqskills2\" class=\"skills\" name=\"cardskills2\" onchange=\"CardEquipment._preview();\"><option value=\"none\">" + CardEquipment._i18n[Language].skillsNone + "</option>" + _skills() + "</select>"
-                    + "<div class=\"skillsatbottom\"><input type=\"checkbox\" id=\"eqskillsatbottom\" name=\"cardskillsatbottom\" onchange=\"CardEquipment._preview();\"/><label for=\"eqskillsatbottom\">" + CardEquipment._i18n[Language].skillsBottom + "</label></div>"
+                    + "<label for=\"eqskills\">" + CardEquipment._i18n.skills + "</label>"
+                    + "<select id=\"eqskills\" class=\"skills\" name=\"cardskills1\" onchange=\"CardEquipment._preview();\"><option value=\"none\">" + CardEquipment._i18n.skillsNone + "</option>" + _skills() + "</select>"
+                    + "<select id=\"eqskills2\" class=\"skills\" name=\"cardskills2\" onchange=\"CardEquipment._preview();\"><option value=\"none\">" + CardEquipment._i18n.skillsNone + "</option>" + _skills() + "</select>"
+                    + "<div class=\"skillsatbottom\"><input type=\"checkbox\" id=\"eqskillsatbottom\" name=\"cardskillsatbottom\" onchange=\"CardEquipment._preview();\"/><label for=\"eqskillsatbottom\">" + CardEquipment._i18n.skillsBottom + "</label></div>"
                 + "</div>"
                 + "<div class=\"field weight\">"
-                    + "<label for=\"eqweight\">" + CardEquipment._i18n[Language].weight + "</label>"
-                    + "<input type=\"number\" min=\"0\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"eqweight\" name=\"cardweight\" autocomplete=\"off\" placeholder=\"" + CardEquipment._i18n[Language].weightPh + "\" onkeyup=\"CardEquipment._preview();\" onchange=\"CardEquipment._preview();\"/>"
+                    + "<label for=\"eqweight\">" + CardEquipment._i18n.weight + "</label>"
+                    + "<input type=\"number\" min=\"0\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"eqweight\" name=\"cardweight\" autocomplete=\"off\" placeholder=\"" + CardEquipment._i18n.weightPh + "\" onkeyup=\"CardEquipment._preview();\" onchange=\"CardEquipment._preview();\"/>"
                 + "</div>"
                 + "<div class=\"field text\">"
-                    + "<label for=\"eqtext\"><span data-help=\"" + CardEquipment._i18n[Language].textHelp + "\"></span>" + CardEquipment._i18n[Language].text + "</label>"
-                    + "<textarea id=\"eqtext\" name=\"cardtext\" autocomplete=\"off\" placeholder=\"" + CardEquipment._i18n[Language].textPh + "\" onkeyup=\"CardEquipment._preview();\" onchange=\"CardEquipment._preview();\"></textarea>"
+                    + "<label for=\"eqtext\"><span data-help=\"" + CardEquipment._i18n.textHelp + "\"></span>" + CardEquipment._i18n.text + "</label>"
+                    + "<textarea id=\"eqtext\" name=\"cardtext\" autocomplete=\"off\" placeholder=\"" + CardEquipment._i18n.textPh + "\" onkeyup=\"CardEquipment._preview();\" onchange=\"CardEquipment._preview();\"></textarea>"
                 + "</div>"
             + "</div>"
             + "</div>"
             + "<div class=\"eqcol\">"
             + "<div class=\"equipment\">"
-                + "<h1>" + CardEquipment._i18n[Language].header1bis + "</h1>"
+                + "<h1>" + CardEquipment._i18n.header1bis + "</h1>"
                 + "<div class=\"field\">"
-                    + "<label for=\"eqimage\">" + CardEquipment._i18n[Language].image + "</label>"
-                    + "<input id=\"eqimage\" name=\"cardimage\" autocomplete=\"off\" placeholder=\"" + CardEquipment._i18n[Language].imagePh + "\" onkeyup=\"CardEquipment._preview();\" onchange=\"CardEquipment._preview();\"/>"
-                    + "<div class=\"imageatfront\"><input type=\"checkbox\" id=\"eqimageatfront\" name=\"cardimageatfront\" onchange=\"CardEquipment._preview();\"/><label for=\"eqimageatfront\">" + CardEquipment._i18n[Language].imageatfront + "</label></div>"
+                    + "<label for=\"eqimage\">" + CardEquipment._i18n.image + "</label>"
+                    + "<input id=\"eqimage\" name=\"cardimage\" autocomplete=\"off\" placeholder=\"" + CardEquipment._i18n.imagePh + "\" onkeyup=\"CardEquipment._preview();\" onchange=\"CardEquipment._preview();\"/>"
+                    + "<div class=\"imageatfront\"><input type=\"checkbox\" id=\"eqimageatfront\" name=\"cardimageatfront\" onchange=\"CardEquipment._preview();\"/><label for=\"eqimageatfront\">" + CardEquipment._i18n.imageatfront + "</label></div>"
                 + "</div>"
                 + "<div class=\"field imagelocation\">"
-                    + "<label for=\"eqimagelocation\">" + CardEquipment._i18n[Language].imagelocation + "</label>"
-                    + "<div><input id=\"eqimagelocation\" name=\"cardimagelocation\" type=\"number\" autocomplete=\"off\" placeholder=\"" + CardEquipment._i18n[Language].imagelocationPh + "\" onkeyup=\"CardEquipment._preview();\" onchange=\"CardEquipment._preview();\"\"/></div>"
-                    + "<div><input id=\"eqimagelocation2\" name=\"cardimagelocation2\" type=\"number\" autocomplete=\"off\" placeholder=\"" + CardEquipment._i18n[Language].imagelocationPh + "\" onkeyup=\"CardEquipment._preview();\" onchange=\"CardEquipment._preview();\"/></div>"
+                    + "<label for=\"eqimagelocation\">" + CardEquipment._i18n.imagelocation + "</label>"
+                    + "<div><input id=\"eqimagelocation\" name=\"cardimagelocation\" type=\"number\" autocomplete=\"off\" placeholder=\"" + CardEquipment._i18n.imagelocationPh + "\" onkeyup=\"CardEquipment._preview();\" onchange=\"CardEquipment._preview();\"\"/></div>"
+                    + "<div><input id=\"eqimagelocation2\" name=\"cardimagelocation2\" type=\"number\" autocomplete=\"off\" placeholder=\"" + CardEquipment._i18n.imagelocationPh + "\" onkeyup=\"CardEquipment._preview();\" onchange=\"CardEquipment._preview();\"/></div>"
                 + "</div>"
                 + "<div class=\"field imagezoom\">"
-                    + "<label for=\"eqimagezoom\">" + CardEquipment._i18n[Language].imagezoom + "</label>"
-                    + "<input id=\"eqimagezoom\" name=\"cardimagezoom\" type=\"number\" autocomplete=\"off\" placeholder=\"" + CardEquipment._i18n[Language].imagezoomPh + "\" onkeyup=\"CardEquipment._preview();\" onchange=\"CardEquipment._preview();\"/>"
+                    + "<label for=\"eqimagezoom\">" + CardEquipment._i18n.imagezoom + "</label>"
+                    + "<input id=\"eqimagezoom\" name=\"cardimagezoom\" type=\"number\" autocomplete=\"off\" placeholder=\"" + CardEquipment._i18n.imagezoomPh + "\" onkeyup=\"CardEquipment._preview();\" onchange=\"CardEquipment._preview();\"/>"
                 + "</div>"
                 + "<div class=\"field imagerotation\">"
-                    + "<label for=\"eqimagerotation\">" + CardEquipment._i18n[Language].imagerotation + "</label>"
-                    + "<input id=\"eqimagerotation\" name=\"cardimagerotation\" type=\"number\" autocomplete=\"off\" placeholder=\"" + CardEquipment._i18n[Language].imagerotationPh + "\" onkeyup=\"CardEquipment._preview();\" onchange=\"CardEquipment._preview();\"/>"
+                    + "<label for=\"eqimagerotation\">" + CardEquipment._i18n.imagerotation + "</label>"
+                    + "<input id=\"eqimagerotation\" name=\"cardimagerotation\" type=\"number\" autocomplete=\"off\" placeholder=\"" + CardEquipment._i18n.imagerotationPh + "\" onkeyup=\"CardEquipment._preview();\" onchange=\"CardEquipment._preview();\"/>"
                 + "</div>"
             + "</div>"
             + "<div class=\"equipment-preview\">"
-                + "<h1>" + CardEquipment._i18n[Language].header2 + "</h1>"
+                + "<h1>" + CardEquipment._i18n.header2 + "</h1>"
                 + "<div class=\"preview\"></div>"
             + "</div>"
             + "</div>"
@@ -592,7 +442,7 @@ var CardEquipment = mergeObject(StudioItem, {
 
     copyright: function()
     {
-        return "<h3>" + CardEquipment._i18n[Language].tab + "</h3>"
-            + "<p>" + CardEquipment._i18n[Language].copyright + "</p>"
+        return "<h3>" + CardEquipment._i18n.tab + "</h3>"
+            + "<p>" + CardEquipment._i18n.copyright + "</p>"
     }
 });

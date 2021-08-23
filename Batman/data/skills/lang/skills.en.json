@@ -1,0 +1,253 @@
+{
+    "link": "https://the-overlord.net/index.php?/files/file/117-batman-gotham-city-chronicles-player-aid-skills-and-traits/",
+    "types": {
+        "attack": {
+            "title": "Attack"
+        },
+        "melee": {
+            "title": "Melee attack"
+        },
+        "range": {
+            "title": "Range attack"
+        },
+        "manipulation": {
+            "title": "Manipulation"
+        },
+        "thought": {
+            "title": "Thought"
+        },
+        "defense": {
+            "title": "Defense"
+        },
+        "movement": {
+            "title": "Movement"
+        },
+        "miscellaneous": {
+            "title": "Miscellaneous"
+        },
+        "area_modifier": {
+            "title": "Area modifier"
+        },
+        "traits": {
+            "title": "Traits"
+        }
+    },
+    "list": {
+        "sneak": {
+            "title": "Sneak attack",
+            "text": "Allows  its  possessor  to  add  [X]  automatic  successes  during attacks in their area, if the total menace indexes of allies is equal to or higher than the total menace indexes of the enemies."
+        },
+        "poison": {
+            "title": "Poison",
+            "text": "Allows  its  possessor,  if  they  manage  to  exceed  their  opponent’s  defense,  to  inflict  [X]  automatic wounds,  before  the attack’s  wounds  are  inflicted.  The  rest  of  the  wounds  are then applied as usual."
+        },
+        "electricity": {
+            "title": "Electricity",
+            "text": "Allows  its  possessor,  if  they  manage  to  exceed  their  opponent’s  defense,  to  inflict  [X]  automatic wounds,  before  the attack’s  wounds  are  inflicted.  The  rest  of  the  wounds  are then applied as usual."
+        },
+        "reach": {
+            "title": "Reach",
+            "text": "Allows its possessor to target a miniature that is not present in their area for a melee attack. They must share a clear line of sight and be at a distance lower or equal to [X]."
+        },
+        "martial_arts": {
+            "title": "Martial arts",
+            "text": "Allows  its  possessor  to  add  [X]  automatic  successes  during  a melee attack, if they have obtained at least one success."
+        },
+        "counterattack": {
+            "title": "Counterattack",
+            "text": "After a melee attack has been resolved against its possessor, they can perform a free melee attack upon the attacker with [X] yellow dice, for which they don’t benefit from any weapon bonuses."
+        },
+        "circular_strike": {
+            "title": "Circular Strike",
+            "text": "After having neutralized an enemy with a melee attack, its possessor can use their remaining successes on [X] other miniatures."
+        },
+        "combo": {
+            "title": "Combo",
+            "text": "When the possessor neutralizes a miniature during a melee attack,  the  possessor  gains  a  free  melee  attack  of  [X]  dice corresponding to their characteristic, without any weapon bonuses, against another miniature."
+        },
+        "shackle": {
+            "title": "Shackle",
+            "text": "Allows the possessor, if they successfully perform  a  melee  attack,  to  place  [X] shackle  tokens  on  the  defender.  No wounds are inflicted by the attack. The number  of  successes  obtained  by  the shackled  miniature  when  performing attacks, thoughts, manipulations or defenses are reduced by [X]. These tokens can be removed if the affected miniature (or another allied miniature in the same area) successfully performs a complex manipulation of difficulty [X]."
+        },
+        "berserk": {
+            "title": "Berserk",
+            "text": "Allows  its  possessor  to  increase  the  strength  of  their  melee  attacks by adding [X] white dice to each of them. If they are a hero, they must have at least half their energy cubes in their wound zone. If they are a character, they must have lost at least half their life points."
+        },
+        "pointblank": {
+            "title": "Point blank",
+            "text": "Allows its possessor to benefit from [X] free rerolls during a ranged attack targeting a miniature in their area"
+        },
+        "burst": {
+            "title": "Burst",
+            "text": "After having neutralized an enemy with a ranged attack, its possessor  can  use  their  remaining  successes  on  [X]  other miniatures they share a clear line of sight with."
+        },
+        "retaliation": {
+            "title": "Retaliation",
+            "text": "After a ranged attack has been resolved against its possessor, they can perform a free ranged attack upon the attacker with [X] yellow dice, for which they don’t benefit from any weapon or elevation bonuses. To use this skill, its possessor must have a ranged weapon."
+        },
+        "marksman": {
+            "title": "Marksman",
+            "text": "Allows  its  possessor  to  add  [X]  automatic  successes  during  a ranged attack if they have obtained at least one success."
+        },
+        "munitions_specialist": {
+            "title": "Munitions specialist",
+            "text": "Allows  its  possessor  to  benefit  from  [X]  automatic  successes  during  certain  manipulation  actions  indicated  by the missions."
+        },
+        "attraction": {
+            "title": "Attraction",
+            "text": "Allows its possessor, at the cost of an automatic manipulation, to attract a miniature they share a clear line of sight with  and  draw  it  into  their  area. The  target  must  be  at  a lower or equal distance than [X] and their size index must be lower or equal to that of its possessor."
+        },
+        "cry": {
+            "title": "Cry",
+            "text": "Allows  its  possessor,  once  per  turn,  to  trigger  a  level  [X] explosion  in  their  area  and  in  an  adjacent  area  with  a  clear  line of sight."
+        },
+        "lock_piking": {
+            "title": "Lock piking",
+            "text": "Allows  its  possessor  to  benefit  from  [X]  automatic  successes  during  certain  manipulation  actions  indicated  by the missions"
+        },
+        "grenade": {
+            "title": "Grenade",
+            "text": "Allows  its  possessor  to  trigger  a  level  [X]  explosion  in  a targeted area by performing a complex manipulation. Its difficulty is equal to the distance between its possessor’s area and the targeted area. In case of failure, the level [X] explosion is triggered in an area located at a distance equal to the number of successes obtained, along the line of sight."
+        },
+        "blast": {
+            "title": "Blast",
+            "text": "Allows  its  possessor,  once  per  turn  and  at  the  cost  of  an automatic manipulation, to trigger a level [X] explosion in their area and in an adjacent area with a clear line of sight."
+        },
+        "elite_command": {
+            "title": "Elite command",
+            "text": "Allows  its  possessor  to  control  friendly  elite  units.  They choose  an  elite  level  tile  from  their  side  and  [X]  miniatures.  These  friendly  miniatures  start  the  mission  in  [the possessor]’s area. They can activate them once per turn by performing an automatic thought. Each energy cube spent on  defense,  reroll,  or  move  for  the  friendly  miniatures  is moved to [the possessor]’s thought space."
+        },
+        "henchman_command": {
+            "title": "Henchman command",
+            "text": "This skill works in the same way as the Elite command skill, replacing the term ‘elite’ with ‘henchman’."
+        },
+        "investigation": {
+            "title": "Investigation",
+            "text": "Allows its possessor to benefit from [X] automatic successes during certain thought actions indicated by missions."
+        },
+        "hacking": {
+            "title": "Hacking",
+            "text": "Allows its possessor to benefit from [X] automatic successes during certain thought actions indicated by missions."
+        },
+        "tactician": {
+            "title": "Tactician",
+            "text": "Allows  its  possessor  to  perform  an  automatic  thought  to immediately grant [X] free move points to an allied miniature  that  hasn’t  been  the  target  of  this  effect  this  turn.  If the miniature is a character, they also get their Move Point Bonus for the First Movement."
+        },
+        "impenetrable_defense": {
+            "title": "Impenetrable defense",
+            "text": "Allows its possessor to benefit from [X] automatic defense successes against melee attacks"
+        },
+        "body_guard": {
+            "title": "Body guard",
+            "text": "Its  possessor  increases  by  [X]  automatic  successes  the defense of allied miniatures located in the same area."
+        },
+        "untouchable": {
+            "title": "Untouchable",
+            "text": "Allows its possessor to benefit from [X] automatic defense successes against ranged attacks."
+        },
+        "protected": {
+            "title": "Protected",
+            "text": "Allows its possessor, if they are accompanied by at least [X] allied miniatures without this skill, to avoid being the target of an attack."
+        },
+        "wall_breaker": {
+            "title": "Wall breaker",
+            "text": "Allows  its  possessor  to  move  through  a level [X] or lower wall, then to put a broken wall token on it. The cost of this movement is  raised  by  2.  The  two  areas  become adjacent, a clear line of sight can be drawn between them, and movement is possible."
+        },
+        "immobilization": {
+            "title": "Immobilization",
+            "text": "Allows its possessor, after an attack or an explosion that inflicts at  least  [X]  wounds,  to  lay  down  the  wounded  miniature.  To stand back up, they must spend their Move Point Bonus for the First Movement."
+        },
+        "elusive": {
+            "title": "Elusive",
+            "text": "Allows its possessor to ignore [X] enemy size indexes when moving."
+        },
+        "mobility": {
+            "title": "Mobility",
+            "text": "Allows  its  possessor  to  ignore  [X]  difficult  terrain  levels when moving."
+        },
+        "parkour": {
+            "title": "Parkour",
+            "text": "Allows its possessor to ignore [X] jump or climb levels when performing a special move, and [X] wounds caused by a fall."
+        },
+        "ambidextry": {
+            "title": "Ambidextry",
+            "text": "Allows its possessor to use two weapons of the same type simultaneously  during  their  attacks,  and  therefore  to  add their bonuses. Their encumbrance or size must be lower or equal to [X]."
+        },
+        "imaginary_friend": {
+            "title": "Imaginary friend",
+            "text": "Allows its possessor to gain assistance from the `little voice in their head’. For their actions, they have an additional yellow  die  while  they  are  accompanied  by  their  imaginary friend. To nullify this effect, an opponent in their area must perform a complex thought of difficulty [X]."
+        },
+        "luck": {
+            "title": "Luck",
+            "text": "Allows its possessor to benefit from [X] free rerolls."
+        },
+        "pushing_limits": {
+            "title": "Pushing limits",
+            "text": "Allows  its  possessor  to  wound  themselves  to  perform actions. They suffer [X] wounds. Energy cubes moved in this way to the wound zone are considered to have been spent on the current action space, regardless of its exertion limit."
+        },
+        "horror": {
+            "title": "Horror",
+            "text": "Allows its possessor to increase by [X] the move point cost for enemy miniatures wishing to enter the area in which its possessor is located."
+        },
+        "misfortune": {
+            "title": "Misfortune",
+            "text": "Allows its possessor to force an enemy in their area to reroll [X] dice. Its possessor chooses the dice to reroll after the free rerolls."
+        },
+        "nerves_steel": {
+            "title": "Nerves of steel",
+            "text": "Allows  its  possessor  to  ignore  [X]  enemy  menace  indexes when performing ranged attacks, manipulations, or thoughts."
+        },
+        "regeneration": {
+            "title": "Regeneration",
+            "text": "Allows its possessor to regenerate. If they are a hero, during the Declare Heroes’ Stance step, they move [X] energy cubes from their wound zone to their fatigue zone. If they are a character, at the start of their activation, they recover [X] life points."
+        },
+        "sacrifice": {
+            "title": "Sacrifice",
+            "text": "Its possessor must declare the use of this skill during the Create the Dice Pool step of an attack. They take [X] successes from the attack if it targets an ally miniature in their area. They cannot defend against it. The remaining successes are applied as usual to the defender."
+        },
+        "support": {
+            "title": "Support",
+            "text": "Allows its possessor to provide [X] free rerolls to all the allied miniatures in their area."
+        },
+        "flame": {
+            "title": "Flame",
+            "text": "Allows its possessor, during an attack or  after  an  explosion,  to  place  [X] flame/gas  tokens  on  the  area  of  the attack or the explosion (see Dissipation page  44). Each token adds 1 level of dangerous terrain to its area. Its possessor is immune to this effect"
+        },
+        "toxic_gas": {
+            "title": "Toxic gas",
+            "text": "Allows its possessor, during an attack or  after  an  explosion,  to  place  [X] flame/gas  tokens  on  the  area  of  the attack or the explosion (see Dissipation page  44). Each token adds 1 level of dangerous terrain to its area. Its possessor is immune to this effect"
+        },
+        "smoke_grenade": {
+            "title": "Smoke grenade",
+            "text": "Allows  its  possessor,  after  having  triggered  an explosion, to place [X] smoke grenade tokens in this area   (see   Dissipation   page   44).  During  a  ranged attack,  the  attacker  must  count  the  number  of smoke  grenade  tokens  on  the  areas  their  line  of  sight  crosses  and subtract it from the number of the attack’s successes."
+        },
+        "frost": {
+            "title": "Frost",
+            "text": "Allows  its  possessor,  during  an  attack  or  after  an explosion,  to  freeze  the  terrain  by  placing  [X]  frost tokens on the area of the attack or the explosion (see Dissipation  page  44). Each token adds 1 level of difficult terrain to its area. Its possessor is immune to this effect."
+        },
+        "moral_code": {
+            "title": "Moral code",
+            "text": "Its possessor cannot use lethal items."
+        },
+        "gas_immunity": {
+            "title": "Gas immunity",
+            "text": "Its possessor ignores wounds caused by gas tokens."
+        },
+        "harmless": {
+            "title": "Harmless",
+            "text": "Its possessor has a weak constitution. During an attack, the wounds they inflict are reduced to 0."
+        },
+        "reduced_mobility": {
+            "title": "Reduced mobility",
+            "text": "Its possessor has limited mobility. They cannot perform special moves (climb, jump and fall)"
+        },
+        "fly": {
+            "title": "Fly",
+            "text": "Its possessor moves by flying. They then ignore hindering and  difficult  terrain  when  moving.  They  ignore  additional costs and effects of special moves."
+        },
+        "multiple_personalities": {
+            "title": "Multiple personalities",
+            "text": "Its possessor changes personalities depending on activations. Their behaviour is set by the latest activation. The possessor's characteristics are defined by the rightmost tile in the river."
+        }
+    }
+}

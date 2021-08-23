@@ -4,15 +4,11 @@
         {
             "id": "Bank",
             "description": {
-                "title": {
-                    "fr": "La Banque",
-                    "en": "The Bank"
-                },
                 "version": "1.0",
                 "origins": ["corebox"],
                 "copyright": "Monolith",
                 "rules": {
-                    "image": "data/maps/Bank/help.png",
+                    "image": "data/maps/data/Bank/help.png",
                     "ratio": 1.3,
                     "legend": {
                         "elevation": [
@@ -27,16 +23,8 @@
                         }
                     }
                 },
-                "totopic": {
-                    "fr": "https://the-overlord.com/index.php?/topic/4351-core-carte-banque/",
-                    "en": "https://the-overlord.net/index.php?/topic/925-core-bank/"
-                },
-                "thumbnail": "data/maps/Bank/thumb.png",
-                "board": "data/maps/Bank/board.png",
-                "pdf": {
-                    "fr": "data/maps/Bank/rules_fr.pdf",
-                    "en": "data/maps/Bank/rules_en.pdf"
-                }
+                "thumbnail": "data/maps/data/Bank/thumb.png",
+                "board": "data/maps/data/Bank/board.png"
             },
             "size": [1217, 910],
             "zones": {
@@ -256,15 +244,11 @@
         {
             "id": "ACE_Chemicals",
             "description": {
-                "title": {
-                    "fr": "ACE Chemicals",
-                    "en": "ACE Chemicals"
-                },
                 "version": "1.0",
                 "origins": ["corebox"],
                 "copyright": "Monolith",
                 "rules": {
-                    "image": "data/maps/ACE_Chemicals/help.png",
+                    "image": "data/maps/data/ACE_Chemicals/help.png",
                     "ratio": 1.3,
                     "legend": {
                         "elevation": [
@@ -278,16 +262,8 @@
                         "areas": [ "promontory" ]
                     }
                 },
-                "totopic": {
-                    "fr": "https://the-overlord.com/index.php?/topic/4350-core-carte-ace-chemicals/",
-                    "en": "https://the-overlord.net/index.php?/topic/923-core-ace-chemicals/"
-                },
-                "thumbnail": "data/maps/ACE_Chemicals/thumb.png",
-                "board": "data/maps/ACE_Chemicals/board.png",
-                "pdf": {
-                    "fr": "data/maps/ACE_Chemicals/rules_fr.pdf",
-                    "en": "data/maps/ACE_Chemicals/rules_en.pdf"
-                }
+                "thumbnail": "data/maps/data/ACE_Chemicals/thumb.png",
+                "board": "data/maps/data/ACE_Chemicals/board.png"
             },
             "size": [1217, 910],
            "zones": {
@@ -489,15 +465,11 @@
         {
             "id": "Crime_Alley",
             "description": {
-                "title": {
-                    "fr": "Crime Alley",
-                    "en": "Crime Alley"
-                },
                 "version": "1.0",
                 "origins": ["corebox"],
                 "copyright": "Monolith",
                 "rules": {
-                    "image": "data/maps/Crime_Alley/help.png",
+                    "image": "data/maps/data/Crime_Alley/help.png",
                     "ratio": 1.3,
                     "legend": {
                         "elevation": [
@@ -512,16 +484,8 @@
                         "areas": [ "promontory" ]
                     }
                 },
-                "totopic": {
-                    "fr": "https://the-overlord.com/index.php?/topic/4352-core-carte-crime-alley/",
-                    "en": "https://the-overlord.net/index.php?/topic/927-core-crime-alley/"
-                },
-                "thumbnail": "data/maps/Crime_Alley/thumb.png",
-                "board": "data/maps/Crime_Alley/board.png",
-                "pdf": {
-                    "fr": "data/maps/Crime_Alley/rules_fr.pdf",
-                    "en": "data/maps/Crime_Alley/rules_en.pdf"
-                }
+                "thumbnail": "data/maps/data/Crime_Alley/thumb.png",
+                "board": "data/maps/data/Crime_Alley/board.png"
             },
             "size": [1217, 910],
             "zones": {
@@ -711,15 +675,11 @@
         {
             "id": "Subway",
             "description": {
-                "title": {
-                    "fr": "Métro",
-                    "en": "Subway"
-                },
                 "version": "1.0",
                 "origins": ["corebox"],
                 "copyright": "Monolith",
                 "rules": {
-                    "image": "data/maps/Subway/help.png",
+                    "image": "data/maps/data/Subway/help.png",
                     "ratio": 1.3,
                     "legend": {
                         "elevation": [
@@ -735,16 +695,8 @@
                         }
                     }
                 },                
-                "totopic": {
-                    "fr": "https://the-overlord.com/index.php?/topic/4354-core-carte-metrosubway/",
-                    "en": "https://the-overlord.net/index.php?/topic/931-core-subway/"
-                },
-                "thumbnail": "data/maps/Subway/thumb.png",
-                "board": "data/maps/Subway/board.png",
-                "pdf": {
-                    "fr": "data/maps/Subway/rules_fr.pdf",
-                    "en": "data/maps/Subway/rules_en.pdf"
-                }
+                "thumbnail": "data/maps/data/Subway/thumb.png",
+                "board": "data/maps/data/Subway/board.png"
             },
             "size": [1217, 910],
             "zones": {
@@ -1006,15 +958,11 @@
         {
             "id": "Arkham_Asylum",
             "description": {
-                "title": {
-                    "fr": "L'asile d'Arkham",
-                    "en": "Arkham asylum"
-                },
                 "version": "1.0",
                 "origins": ["arkham-asylum"],
                 "copyright": "Monolith",
                 "rules": {
-                    "image": "data/maps/Arkham_Asylum/help.png",
+                    "image": "data/maps/data/Arkham_Asylum/help.png",
                     "ratio": 1.33,
                     "legend": {
                         "elevation": [
@@ -1025,16 +973,8 @@
                         }
                     }
                 },
-                "totopic": {
-                    "fr": "https://the-overlord.com/index.php?/topic/4358-arkham-asylum-carte-arkham-asylum/",
-                    "en": "https://the-overlord.net/index.php?/topic/924-arkham-asylum-arkham-asylum/"
-                },
-                "thumbnail": "data/maps/Arkham_Asylum/thumb.png",
-                "board": "data/maps/Arkham_Asylum/board.png",
-                "pdf": {
-                    "fr": "data/maps/Arkham_Asylum/rules_fr.pdf",
-                    "en": "data/maps/Arkham_Asylum/rules_en.pdf"
-                }
+                "thumbnail": "data/maps/data/Arkham_Asylum/thumb.png",
+                "board": "data/maps/data/Arkham_Asylum/board.png"
             },
             "size": [1217, 910],
             "zones": {
@@ -1344,15 +1284,11 @@
         {
             "id": "Joker_Funhouse",
             "description": {
-                "title": {
-                    "fr": "La fête foraine du Joker",
-                    "en": "Joker's Funhouse"
-                },
                 "version": "1.0",
                 "origins": ["arkham-asylum"],
                 "copyright": "Monolith",
                 "rules": {
-                    "image": "data/maps/Joker_Funhouse/help.png",
+                    "image": "data/maps/data/Joker_Funhouse/help.png",
                     "ratio": 1.33,
                     "legend": {
                         "elevation": [
@@ -1372,16 +1308,8 @@
                         "areas": [ "promontory" ]
                     }
                 },
-                "totopic": {
-                    "fr": "https://the-overlord.com/index.php?/topic/4359-arkham-asylum-cartes-f%C3%AAte-foraine-du-joker/",
-                    "en": "https://the-overlord.net/index.php?/topic/928-arkham-asylum-joker-funhouse/"
-                },
-                "thumbnail": "data/maps/Joker_Funhouse/thumb.png",
-                "board": "data/maps/Joker_Funhouse/board.png",
-                "pdf": {
-                    "fr": "data/maps/Joker_Funhouse/rules_fr.pdf",
-                    "en": "data/maps/Joker_Funhouse/rules_en.pdf"
-                }
+                "thumbnail": "data/maps/data/Joker_Funhouse/thumb.png",
+                "board": "data/maps/data/Joker_Funhouse/board.png"
             },
             "size": [1217, 910],
             "zones": {
@@ -1583,15 +1511,11 @@
         {
             "id": "Batcave",
             "description": {
-                "title": {
-                    "fr": "La Batcave",
-                    "en": "The Batcave"
-                },
                 "version": "1.0",
                 "origins": ["wayne-manor"],
                 "copyright": "Monolith",
                 "rules": {
-                    "image": "data/maps/Batcave/help.png",
+                    "image": "data/maps/data/Batcave/help.png",
                     "ratio": 1.33,
                     "legend": {
                         "elevation": [
@@ -1606,16 +1530,8 @@
                         "areas": [  "elevators_entrance", "elevator_shaft", "promontory", "elevator_orientation"  ]
                     }
                 },
-                "totopic": {
-                    "fr": "https://the-overlord.com/index.php?/topic/4357-wayne-manor-cartes-batcave/",
-                    "en": "https://the-overlord.net/index.php?/topic/926-wayne-manor-batcave/"
-                },
-                "thumbnail": "data/maps/Batcave/thumb.png",
-                "board": "data/maps/Batcave/board.png",
-                "pdf": {
-                    "fr": "data/maps/Batcave/rules_fr.pdf",
-                    "en": "data/maps/Batcave/rules_en.pdf"
-                }
+                "thumbnail": "data/maps/data/Batcave/thumb.png",
+                "board": "data/maps/data/Batcave/board.png"
             },
             "size": [1217, 910],
             "zones": {
@@ -1859,15 +1775,11 @@
         {
             "id": "Crime_Alley_Night",
             "description": {
-                "title": {
-                    "fr": "Crime Alley de nuit",
-                    "en": "Crime Alley by night"
-                },
                 "version": "1.0",
                 "origins": ["wayne-manor"],
                 "copyright": "Monolith",
                 "rules": {
-                    "image": "data/maps/Crime_Alley/help.png",
+                    "image": "data/maps/data/Crime_Alley/help.png",
                     "ratio": 1.3,
                     "legend": {
                         "elevation": [
@@ -1882,16 +1794,8 @@
                         "areas": [ "promontory" ]
                     }
                 },
-                "totopic": {
-                    "fr": "https://the-overlord.com/index.php?/topic/4352-core-carte-crime-alley/",
-                    "en": "https://the-overlord.net/index.php?/topic/927-core-crime-alley/"
-                },
-                "thumbnail": "data/maps/Crime_Alley_Night/thumb.png",
-                "board": "data/maps/Crime_Alley_Night/board.png",
-                "pdf": {
-                    "fr": "data/maps/Crime_Alley/rules_fr.pdf",
-                    "en": "data/maps/Crime_Alley/rules_en.pdf"
-                }
+                "thumbnail": "data/maps/data/Crime_Alley_Night/thumb.png",
+                "board": "data/maps/data/Crime_Alley_Night/board.png"
             },
             "size": [1217, 910],
             "zones": {
@@ -2081,15 +1985,11 @@
         {
             "id": "Wayne_Manor",
             "description": {
-                "title": {
-                    "fr": "Le manoir Wayne",
-                    "en": "Wayne Manor"
-                },
                 "version": "1.0",
                 "origins": ["wayne-manor"],
                 "copyright": "Monolith",
                 "rules": {
-                    "image": "data/maps/Wayne_Manor/help.png",
+                    "image": "data/maps/data/Wayne_Manor/help.png",
                     "ratio": 1.3,
                     "legend": {
                         "elevation": [
@@ -2100,16 +2000,8 @@
                         "areas": [ "elevators_entrance", "elevator_shaft", "elevator_orientation" ]
                     }
                 },                
-                "totopic": {
-                    "fr": "https://the-overlord.com/index.php?/topic/4356-wayne-manor-carte-wayne-manor/",
-                    "en": "https://the-overlord.net/index.php?/topic/932-wayne-manor-wayne-manor/"
-                },
-                "thumbnail": "data/maps/Wayne_Manor/thumb.png",
-                "board": "data/maps/Wayne_Manor/board.png",
-                "pdf": {
-                    "fr": "data/maps/Wayne_Manor/rules_fr.pdf",
-                    "en": "data/maps/Wayne_Manor/rules_en.pdf"
-                }
+                "thumbnail": "data/maps/data/Wayne_Manor/thumb.png",
+                "board": "data/maps/data/Wayne_Manor/board.png"
             },
             "size": [1217, 910],
             "zones": {
@@ -2305,15 +2197,11 @@
        {
             "id": "Sewers",
             "description": {
-                "title": {
-                    "fr": "Les égouts",
-                    "en": "Sewers"
-                },
                 "version": "1.0",
                 "origins": ["maps-pack"],
                 "copyright": "Monolith",
                 "rules": {
-                    "image": "data/maps/Sewers/help.png",
+                    "image": "data/maps/data/Sewers/help.png",
                     "ratio": 1.33,
                     "legend": {
                         "elevation": [
@@ -2324,16 +2212,8 @@
                         "special_moves": {}
                     }                
                 },
-                "totopic": {
-                    "fr": "https://the-overlord.com/index.php?/topic/4353-maps-pack-carte-egoutssewers/",
-                    "en": "https://the-overlord.net/index.php?/topic/930-maps-pack-sewers/"
-                },
-                "thumbnail": "data/maps/Sewers/thumb.png",
-                "board": "data/maps/Sewers/board.png",
-                "pdf": {
-                    "fr": "data/maps/Sewers/rules_fr.pdf",
-                    "en": "data/maps/Sewers/rules_en.pdf"
-                }
+                "thumbnail": "data/maps/data/Sewers/thumb.png",
+                "board": "data/maps/data/Sewers/board.png"
             },
             "size": [1217, 910],
             "zones": {
@@ -2541,15 +2421,11 @@
        {
             "id": "GCPD",
             "description": {
-                "title": {
-                    "fr": "GCPD",
-                    "en": "GCPD"
-                },
                 "version": "1.0",
                 "origins": ["maps-pack"],
                 "copyright": "Monolith",
                 "rules": {
-                    "image": "data/maps/GCPD/help.png",
+                    "image": "data/maps/data/GCPD/help.png",
                     "ratio": 1.33,
                     "legend": {
                         "elevation": [
@@ -2565,16 +2441,8 @@
                         }
                     }  
                 },              
-                "totopic": {
-                    "fr": "https://the-overlord.com/index.php?/topic/4355-maps-pack-carte-gcpd/",
-                    "en": "https://the-overlord.net/index.php?/topic/929-maps-pack-gcpd/"
-                },
-                "thumbnail": "data/maps/GCPD/thumb.png",
-                "board": "data/maps/GCPD/board.png",
-                "pdf": {
-                    "fr": "data/maps/GCPD/rules_fr.pdf",
-                    "en": "data/maps/GCPD/rules_en.pdf"
-                }
+                "thumbnail": "data/maps/data/GCPD/thumb.png",
+                "board": "data/maps/data/GCPD/board.png"
             },
             "size": [1217, 910],
             "zones": {

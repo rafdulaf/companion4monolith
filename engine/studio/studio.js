@@ -1,40 +1,4 @@
 var Studio = {
-      _i18n: {
-        'fr': {
-            'menu': "Studio",
-            'save': "Enregistrer",
-            'remove': "Effacer",
-            'removeConfirm': "Etes-vous sûr de vouloir effacer cette carte ?",
-            'printcardsLabel': "Imprimer",
-            'printcardsHint': "Sélectionnez les éléments à imprimer puis cliquez sur le bouton imprimer.",
-            'printfaces': "Imprimer les dos sur des pages séparées",
-            'printmargin': "Imprimer avec les marges pour la découpe",
-            'printcardEmpty': "Vous n'avez sélectionné aucun élément à imprimer"
-        },
-        'en': {
-            'menu': "Studio",
-            'save': "Save",
-            'remove': "Delete",
-            'removeConfirm': "Are you sure that you want to delete this card?",
-            'printcardsLabel': "Print",
-            'printcardsHint': "Select the items to print and then click on the print button.",
-            'printfaces': "Print the backs on separated pages",
-            'printmargin': "Print with cut margins",
-            'printcardEmpty': "You did not select any element to print"
-        },
-        'it': {
-            'menu': "Studio",
-            'save': "Salva",
-            'remove': "Cancella",
-            'removeConfirm': "Sei sicuro di voler cancellare questa carta?",
-            'printcardsLabel': "Stampa",
-            'printcardsHint': "Seleziona gli oggetti da stampare e clicca su Stampa.",
-            'printfaces': "Stampa i retri su pagine separate",
-            'printmargin': "Stampa gli indicatori di taglio",
-            'printcardEmpty': "Non hai selezionato nessun elemento da stampare"
-            }
-    },
-
     _currentSlide: null,
     _slides: [],
     
@@ -49,12 +13,12 @@ var Studio = {
             return;
         }
 
-        Nav.addIcon(Studio._i18n[Language].menu, "studio-icon", "studio");
+        Nav.addIcon(Studio._i18n.menu, "studio-icon", "studio");
         
         Studio._items.forEach(item => item.preinit());
 
         Nav.createTabs('studio', Studio._slides, Studio.onChange);
-        Nav.addAction("studio", Studio._i18n[Language].printcardsLabel, "studio-icon-printcards", this.name + "-print", Studio.printCards);
+        Nav.addAction("studio", Studio._i18n.printcardsLabel, "studio-icon-printcards", this.name + "-print", Studio.printCards);
 
         Studio._items.forEach(item => item.init());
 
@@ -62,7 +26,7 @@ var Studio = {
 
         let copyright = "";
         Studio._items.forEach(item => copyright += item.copyright());
-        About.addCopyright(Studio._i18n[Language].menu, copyright);
+        About.addCopyright(Studio._i18n.menu, copyright);
     },
 
     onChange: function(event, slick) {
@@ -78,14 +42,14 @@ var Studio = {
     printCards: function()
     {
         let studiosCode = "";
-        Studio._items.forEach(item => studiosCode += "<h1>" + item._i18n[Language].tab + "</h1>" + item.printCode());
+        Studio._items.forEach(item => studiosCode += "<h1>" + item._i18n.tab + "</h1>" + item.printCode());
         
-        Nav.dialog(Studio._i18n[Language].printcardsLabel,
+        Nav.dialog(Studio._i18n.printcardsLabel,
             "<div class=\"printcards back cut\">"
 
-            + "<p class='hint'>" + Studio._i18n[Language].printcardsHint + "</p>"
-            + "<p class='hint'><input type='checkbox' id='printback' checked='checked'  onchange='$(this.parentNode.parentNode).toggleClass(\"back\")'><label for='printback'>" + Studio._i18n[Language].printfaces + "</label></p>"
-            + "<p class='hint'><input type='checkbox' id='printcut' checked='checked' onchange='$(this.parentNode.parentNode).toggleClass(\"cut\")'><label for='printcut'>" + Studio._i18n[Language].printmargin + "</label></p>"
+            + "<p class='hint'>" + Studio._i18n.printcardsHint + "</p>"
+            + "<p class='hint'><input type='checkbox' id='printback' checked='checked'  onchange='$(this.parentNode.parentNode).toggleClass(\"back\")'><label for='printback'>" + Studio._i18n.printfaces + "</label></p>"
+            + "<p class='hint'><input type='checkbox' id='printcut' checked='checked' onchange='$(this.parentNode.parentNode).toggleClass(\"cut\")'><label for='printcut'>" + Studio._i18n.printmargin + "</label></p>"
 
             + studiosCode
 
@@ -96,7 +60,7 @@ var Studio = {
             [],
             [{
                 icon: 'studio-icon-printcards',
-                label: Studio._i18n[Language].printcardsLabel,
+                label: Studio._i18n.printcardsLabel,
                 fn: "Studio._printCards()"
             }]
         );
@@ -108,7 +72,7 @@ var Studio = {
     {
         if ($(".printcards > ~input:checked").length == 0)
         {
-            About.warnToast(Studio._i18n[Language].printcardEmpty);
+            About.warnToast(Studio._i18n.printcardEmpty);
             return;
         }
         else

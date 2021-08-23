@@ -1,83 +1,20 @@
 var EncyclopediaEquipments = {
-    _i18n: {
-        'fr': {
-            'tab': "Equipe<wbr/>ments",
-            'transfertToStudio': "Copier la carte dans le studio",
-            'transfertOK': "La carte a été copiée dans le studio des cartes d'équipements",
-            'transfertConfirm': "Voulez-vous copier la carte dans le studio pour pouvoir la modifier ou l'imprimer ?",
-            'from': "Disponible dans :",
-            'fromAnd': "et",
-            'card': "exemplaire",
-            'cards': "exemplaires",
-            'skill': "Compétence :"
-        },
-        'en': {
-            'tab': "Equip<wbr/>ments",
-            'transfertToStudio': "Copy the card into the studio",
-            'transfertOK': "The card was copied to the equipment cards studio",
-            'transfertConfirm': "Do you want to copy the card into the studio in order to edit it or print it?",
-            'from': "Available in:",
-            'fromAnd': "and",
-            'card': "copy",
-            'cards': "copies",
-            'skill': "Skill:"
-        },
-        'it': {
-            'tab': "Equip<wbr/>aggiamento",
-            'transfertToStudio': "Copia la carta nello Studio",
-            'transfertOK': "La carta è stata copiata nelle carte equipaggiamento dello Studio.",
-            'transfertConfirm': "Vuoi copiare la carta nello Studio per modificarla o stamparla?",
-            'from': "Disponibile in:",
-            'fromAnd': "e",
-            'card': "copia",
-            'cards': "copie",
-            'skill': "Abilità:"
-        }
-    },
-    
     preinit: function()
     {
-        Encyclopedia._slides.push({   label: EncyclopediaEquipments._i18n[Language].tab, id: "encyclopedia-equipment", onShow: EncyclopediaEquipments.onShow,  onHide: EncyclopediaEquipments.onHide });
-        
-        EncyclopediaEquipments._facets = [
+        Encyclopedia._slides.push({   label: EncyclopediaEquipments._i18n.tab, id: "encyclopedia-equipment", onShow: EncyclopediaEquipments.onShow,  onHide: EncyclopediaEquipments.onHide });
+
+        EncyclopediaEquipments._facets = Utils.mergeObject([
             {
                 id: 'keyword',
-                label: {
-                    'fr': "Mot-clé",
-                    'en': "Keyword",
-                    'it': "Parola chiave"
-                },
                 filter: function(item, value)
                 {
-                    return item.title[Language] && Rules._deemphasize(item.title[Language]).indexOf(Rules._deemphasize(value)) != -1;
+                    return item.title && Rules._deemphasize(item.title).indexOf(Rules._deemphasize(value)) != -1;
                 }
             },
             
             {
                 id: 'expansions',
-                label: {
-                    'fr': "Status",
-                    'en': "Status",
-                    'it': "Stato"
-                },
-                values: [
-                    {
-                        id: "yes",
-                        label: {
-                            'fr': "Possédées",
-                            'en': "Owned",
-                            'it': "Nella collezione"
-                        }
-                    },
-                    {
-                        id: "no",
-                        label: {
-                            'fr': "Manquantes",
-                            'en': "Missing",
-                            'it': "Mancante"
-                        }
-                    }
-                ],
+                values: [ { id: "yes" }, { id: "no" } ],
                 filter: function(item, selectedValues) {
                     if (selectedValues.length != 1)
                     {
@@ -94,11 +31,6 @@ var EncyclopediaEquipments = {
             
             {
                 id: 'origins',
-                label: {
-                    'fr': "Origine",
-                    'en': "Origin",
-                    'it': "Origine"
-                },
                 values: (function() {
                     var values = [];
                     for (var i in Encyclopedia.expansions.types)
@@ -151,86 +83,18 @@ var EncyclopediaEquipments = {
             
             {
                 id:'type',
-                label: {
-                    'fr': "Type",
-                    'en': "Kind",
-                    'it': "Tipologia"
-                },
                 sort: true,
                 operator: "or/and",
                 values: [
-                    {
-                        id: "melee",
-                        label: {
-                            'fr': "Corps-à-corps",
-                            'en': "Melee",
-                            'it': "Mischia"
-                        }
-                    },
-                    {
-                        id: "ranged",
-                        label: {
-                            'fr': "Distance",
-                            'en': "Ranged",
-                            'it': "A Distanza"
-                        }
-                    },
-                    {
-                        id: "manipulation",
-                        label: {
-                            'fr': "Manipulation",
-                            'en': "Manipulation",
-                            'it': "Manipolazione"
-                        }
-                    },
-                    {
-                        id: "throwable",
-                        label: {
-                            'fr': "Lançable",
-                            'en': "Throwable",
-                            'it': "Lanciabile"
-                        }
-                    },
-                    {
-                        id: "area",
-                        label: {
-                            'fr': "Zone",
-                            'en': "Area",
-                            'it': "Area"
-                        }
-                    },
-                    {
-                        id: "guard",
-                        label: {
-                            'fr': "Défense active",
-                            'en': "Guard",
-                            'it': "Difesa"
-                        }
-                    },
-                    {
-                        id: "armor",
-                        label: {
-                            'fr': "Défense passive",
-                            'en': "Armor",
-                            'it': "Armatura"
-                        }
-                    },
-                    {
-                        id: "skill",
-                        label: {
-                            'fr': "Compétence",
-                            'en': "Skill",
-                            'it': "Abilità"
-                        }
-                    },
-                    {
-                        id: "other",
-                        label: {
-                            'fr': "Divers",
-                            'en': "Misc.",
-                            'it': "Altro"
-                        }
-                    }
+                    { id: "melee" },
+                    { id: "ranged" },
+                    { id: "manipulation" },
+                    { id: "throwable" },
+                    { id: "area" },
+                    { id: "guard" },
+                    { id: "armor" },
+                    { id: "skill" },
+                    { id: "other" }
                 ],
                 filter: function(item, selectedValues) {
                     
@@ -248,32 +112,9 @@ var EncyclopediaEquipments = {
 
             {
                 id:'empty',
-                label: {
-                    'fr': "Cartes",
-                    'en': "Cards",
-                    'it': "Carte"
-                },
-                values: [
-                    {
-                        id: "no",
-                        label: {
-                            'fr': "Remplies",
-                            'en': "Filled",
-                            'it': "Piene"
-                        },
-                        defaults: true
-                    },
-                    {
-                        id: "yes",
-                        label: {
-                            'fr': "Vierges",
-                            'en': "Blank",
-                            'it': "Vuote"
-                        }
-                    }
-                ],
+                values: [ { id: "no", defaults: true }, { id: "yes" } ],
                 filter: function(item, selectedValues) {
-                    var nodata = item.title[Language] == ''
+                    var nodata = item.title == ''
                                 && !item.encumbrance
                                 && item.melee['0'] == "none"
                                 && item.ranged['0'] == "none"
@@ -286,7 +127,7 @@ var EncyclopediaEquipments = {
                         || (!nodata && (selectedValues.indexOf('no')!=-1));
                 }
             }
-        ]
+        ], EncyclopediaEquipments._facets);
     },
     
     init: function() 
@@ -303,21 +144,21 @@ var EncyclopediaEquipments = {
         var equipments = "";
         
         Encyclopedia.equipments.list.sort(function(s1, s2) {
-            if (!s2.title[Language] && !s1.title[Language])
+            if (!s2.title && !s1.title)
             {
                 return s1.image && s2.image ? s1.image.toLowerCase().localeCompare(s2.image.toLowerCase()) : 0;
             }
-            else if (!s2.title[Language])
+            else if (!s2.title)
             {
                 return 1;
             }
-            else if (!s1.title[Language])
+            else if (!s1.title)
             {
                 return -1;
             }
             else
             {
-                return s1.title[Language].toLowerCase().localeCompare(s2.title[Language].toLowerCase());
+                return s1.title.toLowerCase().localeCompare(s2.title.toLowerCase());
             }
         });
 
@@ -381,8 +222,8 @@ var EncyclopediaEquipments = {
         i = i ? i : 0;
         return {
             id: equipment.id + "-" + Math.random(),
-            name: equipment.title[Language],
-            text: equipment.text ? equipment.text[Language] : "",
+            name: equipment.title,
+            text: equipment.text ? equipment.text : "",
             encumbrance: equipment.encumbrance,
             movement: equipment.movement || "",
             melee: equipment.melee,
@@ -472,8 +313,8 @@ var EncyclopediaEquipments = {
         var originString = "";
         for (var i in originsCount)
         {
-            if (originString) originString += " " + EncyclopediaEquipments._i18n[Language].fromAnd + " ";
-            originString += Encyclopedia._getOrigin(i) + " (" + originsCount[i] + " " + (originsCount[i] == 1 ? EncyclopediaEquipments._i18n[Language].card : EncyclopediaEquipments._i18n[Language].cards) + ")";
+            if (originString) originString += " " + EncyclopediaEquipments._i18n.fromAnd + " ";
+            originString += Encyclopedia._getOrigin(i) + " (" + originsCount[i] + " " + (originsCount[i] == 1 ? EncyclopediaEquipments._i18n.card : EncyclopediaEquipments._i18n.cards) + ")";
         }
         
         var c = "";
@@ -483,16 +324,16 @@ var EncyclopediaEquipments = {
             c += CardEquipment._cardCode(EncyclopediaEquipments._convertEquipmentToStudio(equipment, i));
         }
         
-        Nav.dialog(equipment.title[Language] || "",
+        Nav.dialog(equipment.title || "",
             "<div class='equipmentdetails'>" 
                 + c
                 + "<div class='minwidth'></div>"
-                + "<div class='from'>" + EncyclopediaEquipments._i18n[Language].from + " "
+                + "<div class='from'>" + EncyclopediaEquipments._i18n.from + " "
                     + originString
                 + "</div>"
                 + ((equipment.skills && equipment.skills[0] != 'none') ?
                     ("<div class='skill'>" 
-                        + EncyclopediaEquipments._i18n[Language].skill 
+                        + EncyclopediaEquipments._i18n.skill 
                         + " " 
                         + Rules._linkToSkill(equipment.skills[0], true) 
                          + (equipment.skills[1] != 'none' ? ", " + Rules._linkToSkill(equipment.skills[1], true) : "")
@@ -500,7 +341,7 @@ var EncyclopediaEquipments = {
             + "</div>",
             null,
             [{
-                label: EncyclopediaEquipments._i18n[Language].transfertToStudio,
+                label: EncyclopediaEquipments._i18n.transfertToStudio,
                 icon: "encyclopedia-equipment-tostudio",
                 fn: "EncyclopediaEquipments._transfert('" + id + "');"
             }]
@@ -508,7 +349,7 @@ var EncyclopediaEquipments = {
     },
     
     _transfert: function(id) {
-        if (confirm(EncyclopediaEquipments._i18n[Language].transfertConfirm))
+        if (confirm(EncyclopediaEquipments._i18n.transfertConfirm))
         {
             var cards = JSON.parse(localStorage.getItem(Application + "_StudioEquipmentCards")) || [];
             
@@ -537,12 +378,12 @@ var EncyclopediaEquipments = {
             $("#studio .nav-wrapper").slick('slickGoTo', $("#equipment").index());
             $("#equipment").animate({ scrollTop: $('#equipment > *:last()').position().top },500);
             
-            About.warnToast(EncyclopediaEquipments._i18n[Language].transfertOK)
+            About.warnToast(EncyclopediaEquipments._i18n.transfertOK)
             Nav.closeDialog(true);
         }
     },
     
     _linkToEquipment: function(id) {
-        return "<a href='javascript:void(0)' onclick='EncyclopediaEquipments.openEquipment(\"" + id + "\")'>" + EncyclopediaEquipments._findEquipmentsById(id)[0].title[Language] + "</a>";
+        return "<a href='javascript:void(0)' onclick='EncyclopediaEquipments.openEquipment(\"" + id + "\")'>" + EncyclopediaEquipments._findEquipmentsById(id)[0].title + "</a>";
     }
 }

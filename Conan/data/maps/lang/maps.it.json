@@ -1,0 +1,273 @@
+{
+    "list" : {
+        "Pict_Village": {
+            "description": {
+                "title": "Villaggio Pitto",
+                "rules": [
+                    {
+                        "title": "Tendaggi",
+                        "description": "I tendaggi all'ingresso di ogni capanna bloccano la linea di vista. Un personaggio deve spendere un (1) punto movimento extra per entrare o uscire da una capanna."
+                    }, {
+                        "title": "Spacca Muri",
+                        "description": "Non si possono aprire brecce nei muri delle capanne in pietra."
+                    }, {
+                        "title": "Recinto esterno",
+                        "description": "Non si possono aprire brecce nel recinto esterno e non è possibile scalarlo."
+                    }, {
+                        "title": "Linee di vista",
+                        "description": "I cespugli non bloccano la linea di vista."
+                    }, {
+                        "title": "Capanne di legno",
+                        "description": "Un personaggio con l'abilità Spacca Muri per aprire una breccia nella parete di una capanna. Se l'area all'interno della capanna è satura (si veda pagina 22 del Libro degli Eroi V2) nessuna breccia è ammessa."
+                    }, {
+                        "title": "Arrampicarsi",
+                        "description": "Scalare le rocce richiede l'abilità Arrampicarsi e 2 punti movimento extra."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/27-core-pict-village/"
+            }
+        },
+
+        "Inn": {
+            "description": {
+                "title": "Locanda",
+                "rules": [
+                    {
+                        "title": "Bancone e tavoli",
+                        "description": "Questa regola si applica solo se specificato nella sezione Regole Speciali dello scenario. Un personaggio può entrare nelle aree occupate dal bancone o salire su un tavolo spendendo un (1) punto movimento extra, anche senza avere l'abilità Saltare o Arrampicarsi. Fintantoché un personaggio si trova sul bancone o su un tavolo, ottiene l'abilità Allungo e un bonus elevazione pari {dice_yellow} sia per gli attacchi in Mischia che per quelli a Distanza. Bancone e tavoli non bloccano la linea di vista. Un personaggio può scendere dal bancone e dai tavoli senza nessuna penalità al movimento."
+                    }, {
+                        "title": "Sgabelli e panche",
+                        "description": "Questa regola si applica solo se specificato nella sezione Regole Speciali dello scenario. Sgabelli della locanda: un personaggio che si trova in un'area con una sedia, può afferrarla gratuitamente per sferrare un attacco in Mischia. Il segnalino sedia viene immediatamente rimosso e il personaggio ottiene il bonus di attacco specifico indicato dello scenario (in aggiunta a qualsiasi altro bonus in Mischia ottenuto dalle armi)."
+                    }, {
+                        "title": "Pareti",
+                        "description": "È possibile aprire una breccia (da un personaggio con l'abilità Spacca Muri) in tutte le pareti che separano le stanze situate allo stesso piano. I muri perimetrali della locanda e quello che dà sulla strada sono invece indistruttibili."
+                    }, {
+                        "title": "Saltare dalla/Arrampicarsi sulla balaustrata",
+                        "description": "Saltare dalla balaustrata a terra infligge {dice_orange}{dice_orange} di danni non difendibili o {dice_orange} di danni non difendibili se il personaggio ha l'abilità Saltare. Arrampicarsi sulla balaustrata costa 2 punti movimento extra per un personaggio con l'abilità Arrampicarsi."
+                    }, {
+                        "title": "Saltare dalle/Risalire le scale",
+                        "description": "Saltare in basso dalle scale infligge {dice_yellow}{dice_yellow} di danni non difendibili e {dice_yellow} di danni non difendibili se il personaggio ha l'abilità Saltare. Montare sulle scale scavalcando la ringhiera laterale costa un (1) punto movimento extra per un personaggio con l'abilità Arrampicarsi. Salire lungo la scala normalmente non comporta penalità al movimento."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/28-core-inn/"
+            }
+        },
+
+        "Ships": {
+            "description": {
+                "title": "Navi",
+                "rules": [
+                    {
+                        "title": "Uscite",
+                        "description": "Un personaggio che arriva da sottocoperta deve muoversi nell'area di fronte alla propria uscita."
+                    }, {
+                        "title": "Alberi",
+                        "description": "É sempre possibile tracciare una linea di vista da e verso l'area occupata da un albero. L'albero blocca normalmente la linea di vista."
+                    }, {
+                        "title": "Linea di vista",
+                        "description": "Esiste sempre una linea di vista tra un'area di nave e un'area di mare, a meno che la linea di vista non attraversi più di un'area di nave (contando l'area di partenza della linea di vista). Le aree di nave ottengono un bonus Elevazione di un {dice_yellow} sulle aree di mare. Esiste una linea di vista da un'area di mare a un'area di nave, se la linea di vista non passa attraverso più di un'area di nave (includendo l'area d'arrivo della linea di vista)."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/29-core-ships/"
+            }
+        },
+
+        "Abandoned_Fort": {
+            "description": {
+                "title": "Forte abbandonato",
+                "rules": [
+                    {
+                        "title": "Mura e torri",
+                        "description": "Solo le aree delle mura direttamente adiacenti a una torre hanno una linea di vista libera verso l'interno della torre stessa."
+                    }, {
+                        "title": "Rovine della corte interna",
+                        "description": "Le rovine nella corte interna del forte non hanno il tetto. Dalle mura è possibile vedervi all'interno e saltarvi dentro."
+                    }, {
+                        "title": "Perimetro esterno",
+                        "description": "Le 9 aree all'esterno del perimetro del forte sono adiacenti tra loro ed è pertanto compiere un giro completo intorno al forte attraversandole normalmente."
+                    }, {
+                        "title": "Linee di vista",
+                        "description": "Dalle mura, un personaggio ha una linea di vista libera su tutte le zone della corte interna."
+                    }, {
+                        "title": "Saltare dalle/Arrampicarsi sulle mura",
+                        "description": "Saltare dalle mura (sia verso l'interno che verso l'esterno della corte) infligge {dice_red}{dice_red} danni non difendibili o {dice_red} se il personaggio ha l'abilità Saltare. Arrampicarsi sulle mura è impossibile."
+                    }, {
+                        "title": "Crolli",
+                        "description": "Entrare in un'area franata costa 2 punti movimento extra. Se il personaggio ha l'abilità Arrampicarsi, non deve spendere punti movimento extra."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/26-core-ruined-fort/"
+            }
+        },
+
+        "Citadel": {
+            "description": {
+                "title": "Cittadella",
+                "rules": [
+                    {
+                        "title": "Saltare dal/Arrampicarsi sul ballatoio",
+                        "description": "Saltare nel cortile dal ballatorio infligge {dice_yellow}{dice_yellow} danni non difendibili, se il personaggio ha l'abilità Saltare, il danno si riduce a {dice_yellow}. Arrampicarsi sul ballatoio costa un (1) punto movimento extra per un personaggio con l'abilità Arrampicarsi."
+                    }, {
+                        "title": "Fossa",
+                        "description": "Entrare nella fossa è considerato un normale movimento, uscirne costa un (1) punto movimento extra."
+                    }, {
+                        "title": "Grate",
+                        "description": "Le grate non bloccano le linee di vista."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/31-sg-citadel/"
+            }
+        },
+
+        "Swamp": {
+            "description": {
+                "title": "Paludi",
+                "rules": [
+                    {
+                        "title": "Uscire dall'acqua",
+                        "description": "Lasciare un'area di acqua costa un (1) punto movimento extra. Lasciare un'area di acqua per entrare direttamente in un'area di bosco costa 2 punti movimento extra.",
+                        "areasText": "Le aree d'acqua sono evidenziate in celeste."
+                    }, {
+                        "title": "Saltare",
+                        "description": "Non è possibile saltare l'area di acqua che circonda l'altare con un singolo movimento. Il personaggio dovrà fermarsi nell'area dell'altare prima di effettuare il secondo salto."
+                    }, {
+                        "title": "Capanne",
+                        "description": "Un personaggio con l'abilità Spacca Muri può aprire una breccia nelle pareti delle capanne."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/30-sg-swamp/"
+            }
+        },
+
+        "Forest": {
+            "description": {
+                "title": "Foresta",
+                "rules": [
+                    {
+                        "title": "Foresta impenetrabile",
+                        "description": "Le aree di foresta bloccano le linee di vista. Un personaggio può mirare dall'interno verso l'esterno, ma non può mirare all'interno o attraverso queste aree. Entrare in queste aree costa un (1) punto movimento extra, uscirne non costa punti movimento extra."
+                    }, {
+                        "title": "Sporgenze rocciose",
+                        "description": "Le zone rocciose bloccano le linee di vista e fanno ottenere un bonus elevazione. Arrampicarsi su queste rocce costa un (1) punto movimento extra, discendere non costa punti movimento extra."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/32-nordheim-forest/"
+            }
+        },
+
+        "Mound": {
+            "description": {
+                "title": "Tumulo",
+                "rules": [
+                    {
+                        "title": "Bianca come la neve e rossa come il sangue",
+                        "description": "Ogni volta che un personaggio spende dei punti movimento per spostarsi, dovrà spendere una gemma in più del normale costo per ogni area attraversata. Queste gemme sono piazzate nella zona di Movimento del personaggio, ma non sono considerate ai fini del raggiungimento dell'indice di saturazione. Niord, i Guerrieri Aesir e le unità dell'Overlord non subiscono nessuna penalità."
+                    }, {
+                        "title": "Leggera pendenza",
+                        "description": "La collina non influenza il movimento dei personaggi. L'area centrale in cima garantisce un bonus Elevazione così come le 3 sopraelevazioni agli angoli del tabellone."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/33-nordheim-mound/"
+            }
+        },
+
+        "Market": {
+            "description": {
+                "title": "Mercato",
+                "rules": [
+                    {
+                        "title": "Muri di legno",
+                        "description": "Un personaggio con l'abilità Spacca Muri non può aprire brecce nei muri della caserma a sud e dell'affumicatoio a nord poiché essi sono rinforzati da tronchi di legno."
+                    }, {
+                        "title": "Piroghe",
+                        "description": "Le aree d'acqua con le piroghe sono cosiderate delle normali aree ai fini del movimento."
+                    }, {
+                        "title": "Nuotare",
+                        "description": "Un personaggio che ha l'abilità Nuotare può attraversare le aree d'acqua prive di piroghe."
+                    }, {
+                        "title": "Saltare",
+                        "description": "Un personaggio con l'abilità Saltare può saltare tra le aree indicate sul tabellone. Se un Eroe fallisce il suo tentativo di salto, il suo movimento termina nell'area di partenza del salto."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/36-khitai-market/"
+            }
+        },
+
+        "Tower": {
+            "description": {
+                "title": "Torre",
+                "rules": [
+                    {
+                        "title": "Grande tuffo",
+                        "description": "Un personaggio può saltare dalle aree indicate dall'icona del salto, all'area dello stagno al livello 1, spendendo un (1) punto movimento extra. Il personaggio che salta subisce {dice_orange}{dice_orange} di danni da caduta non difendibili. Se il personaggio ha l'abilità Saltare i danni da caduta si riducono a {dice_orange}."
+                    }, {
+                        "title": "Muro di pietra",
+                        "description": "Un personaggio con l'abilità Spacca Muri non può usarla per aprire brecce nei muri della torre (sia interni che perimetrali)."
+                    }, {
+                        "title": "Finestre",
+                        "description": "Le finestre al livello 2 e 3 non bloccano la linea di vista verso le aree esterne ai piedi della torre del livello 1."
+                    }, {
+                        "title": "Arrampicarsi",
+                        "description": "Un personaggio con l'abilità Arrampicarsi può :<br/>• passare dal livello 1 al livello 2 (e viceversa) arrampicandosi sull'albero e spendendo un (1) punto movimento extra,<br/>• passare dal livello 2 al livello 3 (e viceversa) o dal livello 3 al livello 4 (e viceversa) arrampicandosi sui muri esterni della torre e spendendo 2 punti movimento extra."
+                    }, {
+                        "title": "Tavoli e scale",
+                        "description": "Le scale forniscono un bonous elevazione sulle zone situate più in basso. É possibile salire sul tavolo del livello 2 con o senza l'abilità Saltare/Arrampicarsi, al costo di un (1) punto movimento extra. Un personaggio sul tavolo ottiene un bonus elevazione per i suoi attacchi a Distanza e per quelli in Mischia. É possibile attaccare in Mischia le aree adiacenti al tavolo sia con che senza l'abilità Allungo. L'area del tavolo non blocca la linea di vista."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/37-khitai-tower/"
+            }
+        },
+        
+        "Underground": {
+            "description": {
+                "title": "Sottosuolo",
+                "rules": [
+                    {
+                        "title": "Muoversi attraverso un pozzo",
+                        "description": "Il tabellone è composto da due livelli sovrapposti in cui il livello 1 si trova in corrispondenza del livello 0.<br/> Il livello è indicato da un'icona in basso a sinistra. Un personaggio con o senza l'abilità Arrampicarsi che si trovi in un'area di un pozzo può percorrerlo per passare dal livello 1 al livello 0 (e viceversa) spendendo 2 punti movimento extra.<br/> Percorrere un pozzo permette al personaggio di muoversi nell'area di pozzo che si trova sulla sua verticale (sia al livello superiore che a quello inferiore). Gli Scorpioni Giganti possono percorrere i pozzi senza penalità al movimento."
+                    }, {
+                        "title": "Passaggi segreti",
+                        "description": "Ogni livello è percorso da una rete di passaggi segreti le cui entrate sono rappresentate da segnalini Passaggio Segreto. Un personaggio in un'area contentente un Passaggio Segreto può muoversi verso un'altra area omologa situata sul suo stesso livello, spendendo due punti movimento extra.<br/> Le unità dell'Overlord e Ikhmet conoscono i cunicoli del tempio e ignorano questa penalità.<br/>Le aree di arrivo e di partenza devono essere prive di nemici."
+                    }, {
+                        "title": "Oscurità",
+                        "description": "Il dedalo di cunicoli è immerso in un'oscurità impenetrabile. Non esiste nessuna linea di vista tra due zone diverse su tutto il tabellone. Tutte le azioni che richiedono una linea di vista possono essere effettuate solo nella stessa area di chi le vuole compiere."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/35-stygia-underground/"
+            }
+        },
+
+        "Port": {
+            "description": {
+                "title": "Porto",
+                "rules": [
+                    {
+                        "title": "Tuffarsi in acqua",
+                        "description": "Un personaggio che si trova in un'area adiacente a un'area di mare a sud della città, può tuffarsi in acqua senza penalità al movimento. Se questo personaggio non ha l'abilità Nuotare, morirà immediatamente."
+                    }, {
+                        "title": "Risalire sul molo",
+                        "description": "Un personaggio che si trova in un'area di acqua adiacente a una scaletta, può risalire sul molo spendendo un (1) punto movimento extra."
+                    }, {
+                        "title": "Tetti della città",
+                        "description": "Le aree situate sui tetti dell'edificio a ovest della città forniscono un bonus elevazione sulle zone situate in basso, incluse le aree con le scale. Saltare dal tetto alla strada infligge {dice_orange}{dice_orange} danni non difendibili o {dice_orange} danni non difendibili se il personaggio possiede l'abilità Saltare. Non è possibile risalire sul tetto direttamente dalla strada, ma lo si può fare usando le scale."
+                    }, {
+                        "title": "Sfondare le pareti",
+                        "description": "Le uniche pareti che possono essere demolite da un personaggio con l'abilità Spacca Muri sono quelle del magazzino a est della città."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/34-stygia-port/"
+            }
+        }
+    },
+
+    "compositions": {
+        "Port_Ship": {
+            "description": {
+                "title": "Nave ormeggiata"
+            }
+        }        
+    },
+    
+    "parts": {
+    }
+}
