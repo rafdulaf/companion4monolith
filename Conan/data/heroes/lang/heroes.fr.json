@@ -1,0 +1,299 @@
+{
+    "list": {
+        "belit": {
+            "name": "Bêlit",
+            "quote": {
+                "text": "Elle se tourna vers Conan. Sa poitrine se soulevait et ses yeux brillaient. Le Cimmérien fut saisi par une surprise teintée d’émerveillement. Elle avait un corps de déesse, élancé, tout à la fois souple et voluptueux. Son unique vêtement était une large ceinture de soie. Ses membres à la blancheur d'ivoire et les globes d'albâtre de ses seins firent battre sauvagement le sang dans les veines du Cimmérien bien qu'il fût encore sous l'emprise de la furie de la bataille. Les cheveux de Bêlit, noirs et brillants - aussi noirs qu'une nuit stygienne- retombaient en cascade soyeuses sur son dos souple. Ses yeux noirs s'embrasèrent quand ils se posèrent sur le Cimmérien.\nElle était indomptable comme un vent du désert, aussi souple et redoutable qu'une panthère. ",
+                "origin": "La Reine de la Côte Noire"
+            }
+        },
+        "conan": {
+            "name": "Conan",
+            "quote": {
+                "text": "Arus vit un homme jeune, grand et puissamment bâti, nu à l'exception d'un pagne et de sandales lacées haut sur les chevilles. Sa peau était tannée comme s'il venait des régions désertiques du globe, et Arus se sentit mal à l'aise en voyant ses épaules larges, son torse massif et ses bras puissants. Un simple coup d'oeil sur ce visage renfrogné au front large lui suffit pour comprendre qu'il n'avait pas affaire à un Némédien. Sous une tignasse de cheveux noirs ébouriffés, deux yeux bleus menaçants couvaient, prêts à s'embraser. Une longue épée dans son fourreau de cuir pendait à son ceinturon.",
+                "origin": "Le Dieu dans l'Urne"
+            }
+        },
+        "hadrathus": {
+            "name": "Hadrathus",
+            "quote": {
+                "text": "Une fois la porte fermée, Conan ne vit qu'un seul homme en face de lui : une mince silhouette dissimulée sous sa cape noire et sa capuche. L'homme rejeta cette dernière en arrière, révélant un visage pâle et ovale, aux traits sereins et bien dessinés. {...} N'y a-t-il aucun sorcier au monde dont la magie pourrait rivaliser avec celle de Xaltotun ? demanda-t-il enfin. Hadrathus secoua négativement la tête. -Si un tel homme existait, nous autres, prêtres d'Asura, en aurions entendu parler. On dit que notre religion n'est qu'une survivance de l'antique culte stygien du serpent. Ceci est un mensonge. Nos ancêtres venaient de Vendhya, par-delà la mer de Vilayet et les montagnes himéliennes bleutées. Nous sommes des fils de l'Orient, pas du Sud. Nous connaissons tous les sorciers de l'Orient, et ils sont plus puissants que ceux de l'Occident. Leur pouvoir serait aussi impuissant qu'un fétu de paille face au vent, confronté à la noire puissance de Xaltotun.",
+                "origin": "L'heure du Dragon"
+            }
+        },
+        "shevatas": {
+            "name": "Shevatas",
+            "quote": {
+                "text": "Shevatas était souple et nerveux, comme se devait de l'être un roi des voleurs de Zamora. Sa tête petite et ronde était entièrement rasée, son seul vêtement était un pagne de soie écarlate. Comme tous ceux de sa race, il avait une peau très foncée et ses yeux noirs au regard perçant faisaient ressortir ses traits étroits de vautour. Ses doigts, longs et minces, étaient aussi vifs et légers que les ailes d'un papillon de nuit.\nDe sa ceinture aux écailles d'or pendait une épée courte et fine, au pommeau incrusté de gemmes, glissée dans un fourreau de cuir travaillé.",
+                "origin": "Le Colosse noir"
+            }
+        },
+        "amra-the-lion": {
+            "name": "Amra Le Lion",
+            "quote": {
+                "text": "L'image flotta tout d'abord de manière indistincte puis prit soudain une netteté époustouflante: un homme de grande taille, aux épaules larges et puissantes, à la poitrine robuste, avec un cou de taureau et des membres épais et musclés. Il était vêtu de soie et de velours ; les lions royaux d'Aquilonie étaient brodés en fil d'or sur son justaucorps, et la couronne d'Aquilonie brillait sur ses longs cheveux noirs, coupés au carré. Pourtant, il semblait porter la grande épée qui pendait à son côté plus naturellement que son accoutrement royal. Son front était bas et large, et ses yeux d'un bleu volcanique semblaient couver quelque feu intérieur. Son visage, sombre, balafré, presque sinistre, était celui d'un combattant, et ses vêtements de velours ne pouvaient dissimuler les lignes dures et dangereuses de ses membres.",
+                "origin": "L'Heure du Dragon"
+            }
+        },
+        "ngora": {
+            "name": "N'Gora",
+            "quote": {
+                "text": "Il voyait à présent le navire pirate dans ses moindres détails. Les rameurs étaient protégés par une rangée de mantelets fixés sur les plats-bords, mais les guerriers qui dansaient sur le pont étroit étaient parfaitement visibles. Leurs corps étaient peints et parés de plumes; ils étaient pour la plupart nus et brandissaient des lances et des boucliers tachetés. (...) Conan fit halte brusquement ; ses guerriers s'immobilisèrent, se changeant en des statues de basalte. Dans le silence oppressé qui suivit, le Cimmérien secoua la tête avec irritation. - Continuez, ordonna-t-il à l'un de ses lieutenants, N'Gora.",
+                "origin": "La Reine de la Côte Noire"
+            }
+        },
+        "valeria": {
+            "name": "Valeria",
+            "quote": {
+                "text": "Elle était grande, avait une poitrine opulente, des membres longs et des épaules robustes. Toute sa silhouette témoignait d'une force peu commune, sans toutefois rien ôter de la grâce féminine qui se dégageait de son apparence. En dépit de son port et de ses vêtements, tout en elle respirait la féminité. Ses habits semblaient incongrus, étant donné le décor environnant. Elle ne portait pas une jupe, mais d'amples culottes de soie s'arrêtant à une largeur de main au-dessus des genoux, retenues par une large bande de soie enroulée autour de sa taille comme une ceinture. Ses bottes évasées en cuir souple lui arrivaient presque aux genoux et sa chemise de soie décolletée, aux manches et au col bouffants, complétaient son costume. Une épée droite à double tranchant pendait sur une de ses hanches gracieuses et une longue dague sur l'autre. Ses cheveux blonds et ébouriffés, coupés au carré à la hauteur des épaules, étaient retenus par un bandeau de satin écarlate.",
+                "origin": "Les Clous Rouges"
+            }
+        },
+        "zelata": {
+            "name": "Zelata",
+            "quote": {
+                "text": "Le roi se tourna lorsque la vieille femme lui adressa la parole. Elle se tenait devant lui, droite et grande. Elle avait beau être vêtue de guenilles, ses traits, droits et aquilins, et ses yeux, noirs et perçants, n'étaient pas ceux d'une paysanne ordinaire. Elle appela le loup et celui-ci trotta jusqu'à elle, puis frotta son épaule gigantesque contre son genou, fixant ses grands yeux verts étincelants sur Conan.",
+                "origin": "L'Heure du Dragon"
+            }
+        },
+        "amboola": {
+            "name": "Amboola",
+            "quote": {
+                "text": "Amboola se réveilla lentement, ses sens encore engourdis par le vin qu'il avait bu la nuit précédente. L'espace d'un moment confus, il lui fut impossible de se rappeler où il se trouvait. La clarté lunaire, filtrant entre les barreaux de la fenêtre, illuminait un décor qui lui était inconnu. Puis il se souvint qu'il gisait dans un des cachots des étages supérieurs de la prison où la reine Tanada, la soeur du roi de Kush, l'avait fait jeter dans son courroux. Ce n'était cependant pas un cachot ordinaire, car même Tanada n'avait osé aller trop loin avec le commandant des lanciers noirs, épine dorsale de l'armée de Kush.",
+                "origin": "Histoire inachevée, sans titre"
+            }
+        },
+        "balthus": {
+            "name": "Balthus",
+            "quote": {
+                "text": "C'était un jeune homme de taille moyenne et aux traits avenants ; ni toque, ni casque ne venait confiner sa tignasse de cheveux fauves en bataille. Ses vêtements étaient tout ce qu'il y a de plus normal pour la région : une tunique grossière resserrée à la taille par une ceinture, un court pantalon de cuir et des bottes souples en daim qui lui arrivaient juste au-dessous des genoux. La poignée d'une dague saillait du revers d'une de ses bottes. Une épée, courte et massive, et une besace en peau de daim pendaient à sa large ceinture de cuir. Bien qu'il ne soit pas très grand, l'homme était bien bâti et ses bras, que les courtes manches de sa tunique laissaient dénudés, étaient musclés et noueux.",
+                "origin": "Au-delà de la rivière Noire"
+            }
+        },
+        "conan-general": {
+            "name": "Conan",
+            "subname": "Le Géneral",
+            "quote": {
+                "text": "Sur son ordre, ils apportèrent un équipement complet pour remplacer la cotte de mailles de Conan : gorgerin, solerets, épaulières, cuissards, jambières, cuirasse et casque à visière. Lorsque Yasmela tira de nouveau les rideaux, un Conan entièrement revêtu d'acier luisant apparut à son auditoire. Avec l'armure à plaques, la visière relevée et ses traits taciturnes ombragés par les plumes noires ondoyant au-dessus de son casque, le Cimmérien donnait une telle impression de force et de résolution farouche que même Thespides en convint à contrecoeur. Amalric étouffa une plaisanterie.\n- Par Mitra, dit-il lentement, jamais je ne me serais attendu à te voir porter une armure, mais tu es loin d'en être indigne. Par les os de mes doigts, Conan, j'ai vu des rois qui portaient la leur moins royalement que toi.",
+                "origin": "Le Colosse Noir"
+            }
+        },
+        "conan-mercenary": {
+            "name": "Conan",
+            "subname": "Mercenaire",
+            "quote": {
+                "text": "L'étranger se tenait adossé au mât, les yeux réduits à des fentes, sur le qui-vive, et l'épée à la main. Le marin l'étudia posément, veillant à ne faire aucun mouvement vers le long couteau passé à sa ceinture. Il avait devant lui un homme de grande taille, puissamment charpenté, portant un haubert aux mailles d'acier noires, des jambières brunies et un casque de métal aux reflets bleus d'où saillaient deux cornes de taureau luisantes. De ses épaules bardées de fer tombait une cape écarlate qui se gonflait au vent du large. Un large ceinturon de chagrin à boucle en or retenait le fourreau de son épée à large lame. Sous le casque à cornes, sa crinière noire contrastait avec ses yeux bleus volcaniques.",
+                "origin": "La Reine de la Côte Noire"
+            }
+        },
+        "conan-wanderer": {
+            "name": "Conan",
+            "subname": "Le Vagabond",
+            "quote": {
+                "text": "Il vit alors un jeune homme robuste qui se tenait à ses côtés. L'homme semblait tout autant déplacé dans ce bouge qu'un loup gris parmi des rats de gouttière malingres. Sa tunique bon marché ne pouvait dissimuler les lignes dures et effilées de sa puissante charpente, ses épaules massives et larges, son torse puissant, sa taille élancée et ses bras noueux. Sa peau était tannée par le soleil des déserts, ses yeux étaient bleus et incandescents, et une tignasse de cheveux noirs ébouriffés surmontait son front large. Une épée dans un fourreau de cuir usagé pendait de sa ceinture.",
+                "origin": "La Tour de l'Elephant"
+            }
+        },
+        "conan-warlord": {
+            "name": "Conan",
+            "subname": "Seigneur de Guerre",
+            "quote": {
+                "text": "Alors qu'il passait près d'une torchère, Yasmela le vit avec netteté: c'était un homme de grande taille, portant le haubert des mercenaires. {...} Il se tint face à elle, sa main posée sur la longue poignée qui dépassait de sous le manteau écarlate flottant négligemment de ses épaules bardées de fer. La lueur de la torchère brillait sombrement sur l'acier bleuté et poli de ses jambières et de son casque. Une flamme encore plus funeste étincelait au fond de ses yeux bleus. {...} Il avait l'uniforme d'un capitaine des mercenaires et ces troupes aguerries comptaient des hommes de nombreux pays, des barbares aussi bien que des étrangers venus de royaumes civilisés. Son air de loup dénotait le barbare.",
+                "origin": "Le Colosse Noir"
+            }
+        },
+        "kerim-shah": {
+            "name": "Kerim Shah",
+            "quote": {
+                "text": "C'était un homme de grande taille, bien bâti et richement vêtu. {...}\nMoi-même, que les Kshatriyas connaissent sous le nom de Kerim Shah, prince d'lranistan, je porte un masque et je suis en cela semblable à tous les hommes. Tous sont des traîtres, d'une façon ou d'une autre, et la moitié d'entre eux ne savent même pas quel maître ils servent. De ce côté-là au moins, je n'ai pas de doute, car je suis au service du roi Yezdigerd de Turan.",
+                "origin": "Le Peuple du Cercle Noir"
+            }
+        },
+        "olgerd-vladislav": {
+            "name": "Olgerd Vladislav",
+            "quote": {
+                "text": "Conan vit quatre cavaliers assis sur leurs montures dans le soleil couchant, occupés à le regarder. Trois étaient des faucons émaciés vêtus de robes blanches ; il s'agissait sans nul doute de Zuagirs, une tribu venant de l'autre côté de la rivière. Le dernier était lui aussi vêtu de blanc, portant une khalat serrée à la ceinture et un couvre-chef retenu par un triple anneau de poil de chameau tissés, qui lui arrivait aux épaules et volait au vent. Celui-ci n'était pas un Shémite. Les ténèbres n'étaient pas si denses, ni la vue de Conan si embrumée qu'il ne pouvait distinguer les traits de l'homme. Il était aussi grand que Conan, quoique moins massif. Ses épaules étaient larges et son corps souple était aussi dur que l'acier. Sa courte barbe ne parvenait pas à masquer l'air arrogant que lui conférait un menton proéminent; ses yeux, gris et froids, aussi pénétrants qu'une épée, luisaient dans l'ombre de sa kafieh.",
+                "origin": "Une Sorcière viendra au monde"
+            }
+        },
+        "pallantides": {
+            "name": "Pallantides",
+            "quote": {
+                "text": "Pallantides sortit en hâte du pavillon royal dans le cliquetis de son armure, qu'il avait revêtue à minuit après quelques heures de sommeil. {...} Un guerrier de grande taille en armure étincelante abaissa sa lance et chargea en direction du seigneur de Tor. Le choc résonna comme un coup de tonnerre. La lance du Némédien, frappant le casque de son ennemi, fit céder rivets et fixations, arrachant le casque et révélant ainsi les traits de Pallantides. La pointe de la lance de l'Aquilonien avait quant à elle transpercé le bouclier et la plaque pectorale de son ennemi, perforant le coeur du baron.",
+                "origin": "L'Heure du Dragon"
+            }
+        },
+        "pelias": {
+            "name": "Pelias",
+            "quote": {
+                "text": "Les yeux de ce visage émacié n'étaient plus hagards. Sombres et songeurs, ils pétillaient d'intelligence et l'expression d'imbécillité avait glissé de son visage comme un masque. Sa tête était droite et bien faite, avec un front haut et splendide. Tout dans son apparence indiquait l'aristocrate. Il était grand et mince, avec des mains et des pieds fins et bien dessinés.",
+                "origin": "La Citadelle Écarlate"
+            }
+        },
+        "savage-belit": {
+            "name": "Bêlit",
+            "subname": "La Tigresse",
+            "quote": {
+                "text": "Elle se tourna vers Conan. Sa poitrine se soulevait et ses yeux brillaient. Le Cimmérien fut saisi par une surprise teintée d’émerveillement. Elle avait un corps de déesse, élancé, tout à la fois souple et voluptueux. Son unique vêtement était une large ceinture de soie. Ses membres à la blancheur d'ivoire et les globes d'albâtre de ses seins firent battre sauvagement le sang dans les veines du Cimmérien bien qu'il fût encore sous l'emprise de la furie de la bataille. Les cheveux de Bêlit, noirs et brillants - aussi noirs qu'une nuit stygienne- retombaient en cascade soyeuses sur son dos souple. Ses yeux noirs s'embrasèrent quand ils se posèrent sur le Cimmérien.\nElle était indomptable comme un vent du désert, aussi souple et redoutable qu'une panthère. ",
+                "origin": "La Reine de la Côte Noire"
+            }
+        },
+        "taurus": {
+            "name": "Taurus",
+            "quote": {
+                "text": "Taurus était aussi grand que le Cimmérien, mais plus massif ; il avait beau être gras et bedonnant, chacun de ses mouvements trahissait un magnétisme dynamique et subtil, que l'on retrouvait dans ses yeux perçants, brillant de vitalité en dépit de la faible clarté des étoiles. Il était pieds nus et portait ce qui ressemblait à une corde mince et solide, repliée sur elle-même et nouée à intervalles réguliers.",
+                "origin": "La Tour de l’Éléphant"
+            }
+        },
+        "constantius": {
+            "name": "Constantius",
+            "quote": {
+                "text": "Constantius, que l'on surnommait \"le Faucon\", était un homme de grande taille, aux épaules larges et à la taille fine, aussi souple et résistant qu'une lame d'acier flexible. C'était un bel homme dans son genre, avec ses traits de rapace impitoyable. Son visage était tanné par le soleil et ses cheveux, implantés très en arrière de son front haut et étroit, étaient d'un noir corbeau. Ses yeux sombres étaient pénétrants et vifs, et sa fine moustache noire ne parvenait pas à adoucir l'expression dure de ses lèvres fines. Ses bottes en cuir de Kordava, son pantalon et son pourpoint, de soie noire ordinaire, étaient ternis par l'usure liée à la vie dans un campement et par les taches de rouille dues à son armure.",
+                "origin": "Une Sorcière viendra au monde"
+            }
+        },
+        "skuthus": {
+            "name": "Skuthus",
+            "quote": {
+                "text": "Ma nécromancie est plus grande que la somme des connaissances de tous les hommes réunis. Comment les prêtres de Set avaient-ils pu savoir que le Coeur était arrivé par le sud ? Et pourtant ce n'était pas plus incroyable qu'une nécromancie permettant de tuer un homme armé rien qu'en le touchant de la paume de la main. Ce n'est pas en agitant une baguette magique que l'on peut accomplir une telle nécromancie.",
+                "origin": "L'heure du Dragon"
+            }
+        },
+        "thak": {
+            "name": "Thak",
+            "quote": {
+                "text": "C'est Thak, répondit le prêtre tout en massant sa tempe. D'aucuns diraient que c'est un grand singe, mais il est presque aussi différent d'un singe qu'il l'est d'un être humain. Son peuple habite très loin à l'est, dans les montagnes qui bordent les frontières orientales de Zamora.\nMurilo regarda la créature à travers le miroir; elle était assise devant la porte close, attendant avec une patience monstrueuse. Il frissonna à la vue de ces grandes mains noires, recouvertes de poils qui ressemblaient à une sorte de pelage. Son corps était massif, large et voûté. Ses épaules, anormalement larges, avaient déchiré la robe écarlate et, en les apercevant, Murilo vit qu'elles étaient recouvertes du même pelage épais et noir. Le visage qui saillait de sous le capuchon rouge était d'une bestialité sans nom, et pourtant Murilo réalisa que Nabonidus disait la vérité quand il disait que Thak n'était pas vraiment une bête sauvage. Il y avait quelque chose au fond de ces yeux rouge sombre, dans la posture maladroite de la créature, quelque chose dans son apparence générale qui la différenciait du règne animal. Ce corps monstrueux abritait un cerveau et une âme qui commençaient tout juste à s'épanouir dans une humanité encore vague.",
+                "origin": "La Maison aux trois bandits"
+            }
+        },
+        "zaporavo": {
+            "name": "Zaporavo",
+            "quote": {
+                "text": "C'était un homme de grande taille, aussi grand que Conan, bien que moins puissamment bâti. Sous son casque d'acier, son visage était sombre, taciturne et rapace. C'est pourquoi certains l'appelaient« le Faucon». Sa cuirasse et ses vêtements étaient somptueux et richement décorés, comme il sied à un grand de Zingara. Sa main ne s'éloignait jamais de la garde de son épée.",
+                "origin": "Le Bassin de l’homme noir"
+            }
+        },
+        "zogar-sag": {
+            "name": "Zogar Sag",
+            "quote": {
+                "text": "Balthus aperçut une forme mince et de taille moyenne, presque entièrement recouverte de plumes d'autruches fixées sur un harnachement de cuir et de cuivre. Entre les plumes apparaissait un visage hideux et maléfique. Les plumes intriguèrent Balthus. Il savait qu'elles provenaient d'un endroit situé à un demi-monde au sud. Elles s'agitaient et bruissaient au rythme des bonds et des déhanchements du chaman, produisant un son hideux. {...} Mais le visage féroce qui se détachait de cette masse ondoyante donnait au spectacle une signification sinistre. Aucun homme ayant un tel visage ne pouvait paraître ridicule ou évoquer autre chose que la créature démoniaque qu'il était.",
+                "origin": "Au-delà de la Rivière Noire"
+            }
+        },
+        "vanir-valkyrie": {
+            "name": "Valkyrie Vanir",
+            "quote": {
+                "text": "À quoi ressemblent ces gens du Nord ? demanda Prospero. - Ils sont grands et ont les yeux bleus ; leur sang et leur langue sont identiques, mais les Aesirs ont les cheveux blonds et les Vanirs, les cheveux roux. Leur principal dieu est Ymir, le géant du gel ; ils ne sont pas dirigés par un grand roi, mais chaque tribu a son propre suzerain. Ils sont sauvages, capricieux et féroces. Ils se battent toute la journée, et la nuit ils boivent de l'ale et mugissent leurs chants sauvages.",
+                "origin": "Le Phénix sur l’Epée"
+            }
+        },
+        "yogah-of-yag": {
+            "name": "Yogah de Yag",
+            "quote": {
+                "text": "Des volutes de fumée et l'odeur exotique de l'encens s'exhalaient d'un brasier posé sur un trépied en or, et derrière celui-ci reposait une idole, assise sur une sorte de divan de marbre. Conan regarda celle-ci, pantois; son corps était celui d'un homme nu et de couleur verte, mais sa tête était digne d'un cauchemar démentiel. Bien trop large pour un corps humain, elle n'en avait aucun des attributs. Conan resta immobile, fixant du regard les grandes oreilles évasées, la trompe recourbée et, de chaque côté de celle-ci, les défenses blanches à l'extrémité desquelles étaient fichées deux boules dorées. Ses yeux étaient clos, comme si elle dormait.",
+                "origin": "La Tour de l’Éléphant"
+            }
+        },
+        "belit-the-princess": {
+            "name": "Bêlit",
+            "subname": "La Princesse",
+            "quote": {
+                "text": "Elle se tourna vers Conan. Sa poitrine se soulevait et ses yeux brillaient. Le Cimmérien fut saisi par une surprise teintée d’émerveillement. Elle avait un corps de déesse, élancé, tout à la fois souple et voluptueux. Son unique vêtement était une large ceinture de soie. Ses membres à la blancheur d'ivoire et les globes d'albâtre de ses seins firent battre sauvagement le sang dans les veines du Cimmérien bien qu'il fût encore sous l'emprise de la furie de la bataille. Les cheveux de Bêlit, noirs et brillants - aussi noirs qu'une nuit stygienne- retombaient en cascade soyeuses sur son dos souple. Ses yeux noirs s'embrasèrent quand ils se posèrent sur le Cimmérien.\nElle était indomptable comme un vent du désert, aussi souple et redoutable qu'une panthère. ",
+                "origin": "La Reine de la Côte Noire"
+            }
+        },
+        "king-conan": {
+            "name": "Conan",
+            "subname": "Le Roi",
+            "quote": {
+                "text": "L'image flotta tout d'abord de manière indistincte puis prit soudain une netteté époustouflante: un homme de grande taille, aux épaules larges et puissantes, à la poitrine robuste, avec un cou de taureau et des membres épais et musclés. Il était vêtu de soie et de velours ; les lions royaux d'Aquilonie étaient brodés en fil d'or sur son justaucorps, et la couronne d'Aquilonie brillait sur ses longs cheveux noirs, coupés au carré. Pourtant, il semblait porter la grande épée qui pendait à son côté plus naturellement que son accoutrement royal. Son front était bas et large, et ses yeux d'un bleu volcanique semblaient couver quelque feu intérieur. Son visage, sombre, balafré, presque sinistre, était celui d'un combattant, et ses vêtements de velours ne pouvaient dissimuler les lignes dures et dangereuses de ses membres.",
+                "origin": "L'Heure du Dragon"
+            }
+        },
+        "belit-queen-of-the-black-coast": {
+            "name": "Bêlit",
+            "subname": "Reine de la Côte Noire",
+            "quote": {
+                "text": "Elle se tourna vers Conan. Sa poitrine se soulevait et ses yeux brillaient. Le Cimmérien fut saisi par une surprise teintée d’émerveillement. Elle avait un corps de déesse, élancé, tout à la fois souple et voluptueux. Son unique vêtement était une large ceinture de soie. Ses membres à la blancheur d'ivoire et les globes d'albâtre de ses seins firent battre sauvagement le sang dans les veines du Cimmérien bien qu'il fût encore sous l'emprise de la furie de la bataille. Les cheveux de Bêlit, noirs et brillants - aussi noirs qu'une nuit stygienne- retombaient en cascade soyeuses sur son dos souple. Ses yeux noirs s'embrasèrent quand ils se posèrent sur le Cimmérien.\nElle était indomptable comme un vent du désert, aussi souple et redoutable qu'une panthère. ",
+                "origin": "La Reine de la Côte Noire"
+            }
+        },
+        "conan-the-thief": {
+            "name": "Conan",
+            "subname": "Le Voleur",
+            "quote": {
+                "text": "Olivia, levant les yeux du sol, aperçut ce qu'elle prit pour un sauvage ou un fou s'avancer vers Shah Amurath dans une attitude de menace mortelle. Il était puissamment bâti et nu, à l'exception d'un pagne lui ceignant les reins. Son corps était couvert de sang et de boue séchés. Sa crinière noire était souillée de vase et de sang coagulé ; il y avait des traînées de sang séché sur sa poitrine, ses membres et sur la longue épée qu'il serrait dans sa main droite. De sous les mèches de ses cheveux en broussaille, des yeux injectés flamboyaient, tels des charbons ardents aux reflets bleutés.",
+                "origin": "Chimères de Fers dans la Clarté Lunaire"
+            }
+        },
+        "taramis": {
+            "name": "Taramis",
+            "quote": {
+                "text": "Un long serpent de lumière courut soudain le long des rideaux et les bougies dans leurs candélabres dorés se rallumèrent inexplicablement. Taramis se recroquevilla sur sa couche de velours, repliant ses jambes souples sous elle, regardant de ses yeux écarquillés cette silhouette féline et moqueuse qui se tenait devant elle. C'était comme si elle contemplait une seconde Taramis, identique à elle-même dans chacun des contours de ses traits et de ses membres, mais habitée par une personnalité inconnue et maléfique. Le visage de cette inconnue reflétait l'exact opposé de tout ce que celui de la reine dégageait. La luxure et le mystère scintillaient au fond de ses yeux lumineux, la cruauté affleurait dans la courbe de ses lèvres rouges et pleines. Chaque mouvement de son corps souple était subtilement provocateur. Sa coiffure imitait celle de la reine, et elle avait aux pieds des sandales identiques à celles que portait d'ordinaire Taramis dans son boudoir. Sa tunique de soie, sans manches et décolletée, retenue à la taille par un lien tissé d'or, était l'exacte réplique du vêtement de nuit de la reine.",
+                "origin": "Une Sorcière viendra au Monde"
+            }
+        },
+        "valeria-warrior": {
+            "name": "Valeria",
+            "subname": "La Guerrière",
+            "quote": {
+                "text": "Elle était grande, avait une poitrine opulente, des membres longs et des épaules robustes. Toute sa silhouette témoignait d'une force peu commune, sans toutefois rien ôter de la grâce féminine qui se dégageait de son apparence. En dépit de son port et de ses vêtements, tout en elle respirait la féminité. Ses habits semblaient incongrus, étant donné le décor environnant. Elle ne portait pas une jupe, mais d'amples culottes de soie s'arrêtant à une largeur de main au-dessus des genoux, retenues par une large bande de soie enroulée autour de sa taille comme une ceinture. Ses bottes évasées en cuir souple lui arrivaient presque aux genoux et sa chemise de soie décolletée, aux manches et au col bouffants, complétaient son costume. Une épée droite à double tranchant pendait sur une de ses hanches gracieuses et une longue dague sur l'autre. Ses cheveux blonds et ébouriffés, coupés au carré à la hauteur des épaules, étaient retenus par un bandeau de satin écarlate.",
+                "origin": "Les Clous Rouges"
+            }
+        },
+        "niord": {
+            "name": "Niord",
+            "quote": {
+                "text": "Conan ouvrit les yeux et regarda fixement les visages barbus penchés sur lui. Il était entouré de guerriers de grande taille, aux cheveux blonds, en cuirasses et fourrures.",
+                "origin": "La Fille du Géant du Gel"
+            }
+        },
+        "shentu": {
+            "name": "Shentu"
+        },
+        "ikhmet": {
+            "name": "Ikhmet"
+        },
+        "othryades": {
+            "name": "Othryades"
+        },
+        "afari": {
+            "name": "Afari",
+            "quote": {
+                "text": "- Tuthmes ! Laisse-moi entrer ! Le démon est lâché dans Shumballa ! La porte s'ouvrit, et celui qui venait de parler s'engouffra dans la pièce, un individu sec, au corps noueux, vêtu d'une djebbeh blanche, le teint mat, le blanc des yeux brillant. Il fut accueilli par Tuthmes, grand, mince, sombre de peau, avec les traits droits typiques de sa caste. -Que dis-tu, Afari ? Afari ferma la porte avant de répondre; il haletait comme après une longue course. Il était plus petit que Tuthmes, et ses traits étaient nettement plus négroïdes. - Amboola! Il est mort ! Dans la Tour Rouge !",
+                "origin": "Histoire inachevée - sans titre"
+            }
+        },
+        "ghayoor": {
+            "name": "Ghayoor"
+        },
+        "shafiah": {
+            "name": "Shafiah"
+        },
+        "shubba": {
+            "name": "Shubba"
+        },
+        "achilles": {
+            "name": "Achille"
+        },
+        "atalanta": {
+            "name": "Atalante"
+        },
+        "zenobia2": {
+            "name": "Zenobia"
+        },
+        "nyaga2": {
+            "name": "N'Yaga"
+        },
+        "heracles": {
+            "name": "Héraclès"
+        },
+        "leonidas": {
+            "name": "Léonidas"
+        },
+        "odysseus": {
+            "name": "Ulysse"
+        }
+    }
+}
+    

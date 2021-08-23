@@ -2,40 +2,10 @@
     "list": [
         {
             "id": "heroes",
-            "title": {
-                "fr": "Livre des héros",
-                "en": "Heroes's book",
-                "it": "Libro degli Eroi"
-            },
-            "download": {
-                "fr": "http://www.monolithedition.com/download/rules/CONAN_Heroesrulebook_V2_FR_SD.pdf",
-                "en": "http://www.monolithedition.com/download/rules/CONAN_Heroesrulebook_V2_US_SD.pdf",
-                "it": "https://the-overlord.net/index.php?/files/file/156-conan-heroesrulebook-v21-ita/&do=download&csrfKey=13ba91465f0a9eabcc05c76aca3e785f"
-            },
-            "pages": {
-                "fr": 24,
-                "en": 24,
-                "it": 24
-            },
             "origins": ["corebox"]
         },
         {
             "id": "overlord",
-            "title": {
-                "fr": "Livre de l'Overlord",
-                "en": "Overlord's book",
-                "it": "Libro dell'Overlord"
-            },
-            "download": {
-                "fr": "http://www.monolithedition.com/download/rules/CONAN_King_Overlordbook_V2_FR_SD.pdf",
-                "en": "http://www.monolithedition.com/download/rules/CONAN_King_Overlordbook_V2_US_SD.pdf",
-                "it": "https://the-overlord.net/index.php?/files/file/157-conan_king_overlordbook_v21_ita_txt/&do=download&csrfKey=13ba91465f0a9eabcc05c76aca3e785f"
-            },
-            "pages": {
-                "fr": 14,
-                "en": 14,
-                "it": 14
-            },
             "origins": ["corebox"]
         }
     ]

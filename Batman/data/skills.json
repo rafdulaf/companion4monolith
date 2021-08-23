@@ -1,82 +1,38 @@
 {
-    "link": {
-        "fr": "https://the-overlord.com/index.php?/files/file/174-batman-gotham-city-chronicles-aide-de-jeu-comp%C3%A9tences-et-traits/",
-        "en": "https://the-overlord.net/index.php?/files/file/117-batman-gotham-city-chronicles-player-aid-skills-and-traits/"
-    },
     "types": [
         {
             "id": "attack",
-            "title": {
-                "fr": "Attaque",
-                "en": "Attack"
-            },
             "image": "data/skills/img/attack/attack.png"
         }, {
             "id": "melee",
-            "title": {
-                "fr": "Attaque au corps-à-corps",
-                "en": "Melee attack"
-            },
             "image": "data/skills/img/attack/melee.png",
             "location": 1
         }, {
             "id": "range",
-            "title": {
-                "fr": "Attaque à distance",
-                "en": "Range attack"
-            },
             "image": "data/skills/img/attack/range.png",
             "location": 2
         }, {
             "id": "manipulation",
-            "title": {
-                "fr": "Manipulation",
-                "en": "Manipulation"
-            },
             "image": "data/skills/img/attack/manipulation.png",
             "location": 3
         }, {
             "id": "thought",
-            "title": {
-                "fr": "Réflexion",
-                "en": "Thought"
-            },
             "image": "data/skills/img/attack/thought.png",
             "location": 4
         }, {
             "id": "defense",
-            "title": {
-                "fr": "Défense",
-                "en": "Defense"
-            },
             "image": "data/skills/img/attack/defense.png",
             "location": 5
         }, {
             "id": "movement",
-            "title": {
-                "fr": "Mouvement",
-                "en": "Movement"
-            },
             "image": "data/skills/img/attack/movement.png",
             "location": 7
         }, {
-            "id": "miscellaneous",
-            "title": {
-                "fr": "Divers",
-                "en": "Miscellaneous"
-            }
+            "id": "miscellaneous"
         }, {
-            "id": "area_modifier",
-            "title": {
-                "fr": "Modificateurs de terrain",
-                "en": "Area modifier"
-            }
+            "id": "area_modifier"
         }, {
             "id": "traits",
-            "title": {
-                "fr": "Traits",
-                "en": "Traits"
-            },
             "exertion": false,
             "level": false
         }
@@ -85,650 +41,218 @@
         {
             "id": "sneak",
             "type": "attack",
-            "title": {
-                "fr": "Attaque sournoise",
-                "en": "Sneak attack"
-            },
-            "text": {
-                "fr": "Permet  à  son  possesseur  d’obtenir  X  succès  automatiques  lors des attaques qu’il effectue dans sa zone, si le total des indices de menace des figurines amies est supérieur ou égal à celui des figurines ennemies.",
-                "en": "Allows  its  possessor  to  add  [X]  automatic  successes  during attacks in their area, if the total menace indexes of allies is equal to or higher than the total menace indexes of the enemies."
-            },
             "image": "data/skills/img/attack/sneak_attack.png"
         }, {
             "id": "poison",
             "type": "attack",
-            "title": {
-                "fr": "Poison",
-                "en": "Poison"
-            },
-            "text": {
-                "fr": "Permet à son possesseur d’infliger X blessures automatiques si  l’attaque  a  obtenu  plus  de  succès  que  la  défense,  avant même de résoudre les blessures inhérentes à l’attaque. Puis, le reste des blessures est déterminé normalement.",
-                "en": "Allows  its  possessor,  if  they  manage  to  exceed  their  opponent’s  defense,  to  inflict  [X]  automatic wounds,  before  the attack’s  wounds  are  inflicted.  The  rest  of  the  wounds  are then applied as usual."
-            },
             "image": "data/skills/img/attack/poison.png"
         }, {
             "id": "electricity",
             "type": "attack",
-            "title": {
-                "fr": "Electricité",
-                "en": "Electricity"
-            },
-            "text": {
-                "fr": "Permet à son possesseur d’infliger X blessures automatiques si  l’attaque  a  obtenu  plus  de  succès  que  la  défense,  avant même de résoudre les blessures inhérentes à l’attaque. Puis, le reste des blessures est déterminé normalement.",
-                "en": "Allows  its  possessor,  if  they  manage  to  exceed  their  opponent’s  defense,  to  inflict  [X]  automatic wounds,  before  the attack’s  wounds  are  inflicted.  The  rest  of  the  wounds  are then applied as usual."
-            },
             "image": "data/skills/img/attack/electricity.png"
         }, {
             "id": "reach",
             "type": "melee",
-            "title": {
-                "fr": "Allonge",
-                "en": "Reach"
-            },
-            "text": {
-                "fr": "Permet à son possesseur de prendre pour cible de ses attaques au  corps-à-corps  une  figurine  qui  n’est  pas  dans  sa  zone.  Il doit partager une ligne de vue avec elle et être à une distance inférieure ou égale à X.",
-                "en": "Allows its possessor to target a miniature that is not present in their area for a melee attack. They must share a clear line of sight and be at a distance lower or equal to [X]."
-            },
             "image": "data/skills/img/melee/reach.png"
         }, {
             "id": "martial_arts",
             "type": "melee",
-            "title": {
-                "fr": "Arts martiaux",
-                "en": "Martial arts"
-            },
-            "text": {
-                "fr": "Permet  à  son  possesseur  d’ajouter  X  succès  automatiques  lors  d’une attaque au corps-à-corps, s’il a obtenu au moins un succès.",
-                "en": "Allows  its  possessor  to  add  [X]  automatic  successes  during  a melee attack, if they have obtained at least one success."
-            },
             "image": "data/skills/img/melee/martial_arts.png"
         }, {
             "id": "counterattack",
             "type": "melee",
-            "title": {
-                "fr": "Contre-attaque",
-                "en": "Counterattack"
-            },
-            "text": {
-                "fr": "Lorsque le possesseur a subi une attaque de corps-à-corps, il  peut  effectuer  une  attaque  gratuite  au  corps-à-corps contre l’attaquant avec X dés jaunes, mais sans bénéficier de ses bonus d’arme.",
-                "en": "After a melee attack has been resolved against its possessor, they can perform a free melee attack upon the attacker with [X] yellow dice, for which they don’t benefit from any weapon bonuses."
-            },
             "image": "data/skills/img/melee/counterattack.png"
         }, {
             "id": "circular_strike",
             "type": "melee",
-            "title": {
-                "fr": "Coup circulaire",
-                "en": "Circular Strike"
-            },
-            "text": {
-                "fr": "Après avoir neutralisé un adversaire au corps-à-corps, le possesseur peut reporter le reliquat de succès sur X autres figurines.",
-                "en": "After having neutralized an enemy with a melee attack, its possessor can use their remaining successes on [X] other miniatures."
-            },
             "image": "data/skills/img/melee/circular_strike.png"
         }, {
             "id": "combo",
             "type": "melee",
-            "title": {
-                "fr": "Enchaînement",
-                "en": "Combo"
-            },
-            "text": {
-                "fr": "Lorsque le possesseur de la compétence neutralise un adversaire  lors  d’une  attaque  au  corps-à-corps,  il  peut  effectuer gratuitement une nouvelle attaque à X dés de sa caractéristique, sans bonus d’arme, contre un autre adversaire.",
-                "en": "When the possessor neutralizes a miniature during a melee attack,  the  possessor  gains  a  free  melee  attack  of  [X]  dice corresponding to their characteristic, without any weapon bonuses, against another miniature."
-            },
             "image": "data/skills/img/melee/combo.png"
         }, {
             "id": "shackle",
             "type": "melee",
-            "title": {
-                "fr": "Entrave",
-                "en": "Shackle"
-            },
-            "text": {
-                "fr": "Permet  au  possesseur,  lorsqu’il  réussit une attaque de corps-à-corps, de placer X pions  entrave  sur  une  figurine  ennemie. Cette  attaque  n’inflige  aucune  blessure. En  contrepartie,  le  nombre  de  succès  de la  figurine  entravée  lors  de  ses  attaques, réflexions, manipulations et défenses est réduit de X. Ces pions peuvent être enlevés si la figurine entravée ou une figurine amie dans sa zone réussit une manipulation complexe de difficulté X.",
-                "en": "Allows the possessor, if they successfully perform  a  melee  attack,  to  place  [X] shackle  tokens  on  the  defender.  No wounds are inflicted by the attack. The number  of  successes  obtained  by  the shackled  miniature  when  performing attacks, thoughts, manipulations or defenses are reduced by [X]. These tokens can be removed if the affected miniature (or another allied miniature in the same area) successfully performs a complex manipulation of difficulty [X]."
-            },
             "image": "data/skills/img/melee/shackle.png"
         }, {
             "id": "berserk",
             "type": "melee",
-            "title": {
-                "fr": "Fureur",
-                "en": "Berserk"
-            },
-            "text": {
-                "fr": "Permet  à  son  possesseur  d’augmenter  la  puissance  de  chacunes  de  ses  attaques  au  corps-à-corps  en  rajoutant  X  dés blancs. Si c’est un héros, il doit avoir au moins la moitié de ses cubes en blessure. Si c’est un personnage, il doit avoir perdu au moins la moitié de ses points de vie.",
-                "en": "Allows  its  possessor  to  increase  the  strength  of  their  melee  attacks by adding [X] white dice to each of them. If they are a hero, they must have at least half their energy cubes in their wound zone. If they are a character, they must have lost at least half their life points."
-            },
             "image": "data/skills/img/melee/berserk.png"
         }, {
             "id": "pointblank",
             "type": "range",
-            "title": {
-                "fr": "Bout portant",
-                "en": "Point blank"
-            },
-            "text": {
-                "fr": "Permet  à  son  possesseur  de  bénéficier  de  X  relances  gratuites  lorsqu’il  cible  une  figurine  située  dans  sa  zone  lors d’une attaque à distance.",
-                "en": "Allows its possessor to benefit from [X] free rerolls during a ranged attack targeting a miniature in their area"
-            },
             "image": "data/skills/img/range/point_blank.png"
         }, {
             "id": "burst",
             "type": "range",
-            "title": {
-                "fr": "Rafale",
-                "en": "Burst"
-            },
-            "text": {
-                "fr": "Après avoir neutralisé un adversaire avec une attaque à distance, le possesseur peut reporter le reliquat de succès sur X autres figurines avec lesquelles il partage une ligne de vue.",
-                "en": "After having neutralized an enemy with a ranged attack, its possessor  can  use  their  remaining  successes  on  [X]  other miniatures they share a clear line of sight with."
-            },
             "image": "data/skills/img/range/burst.png"
         }, {
             "id": "retaliation",
             "type": "range",
-            "title": {
-                "fr": "Riposte",
-                "en": "Retaliation"
-            },
-            "text": {
-                "fr": "Lorsque le possesseur a subi une attaque à distance, il peut en  effectuer  une  gratuite  avec  X  dés  jaunes  contre  l’attaquant,  mais  sans  bénéficier  de  ses  bonus  d’arme  ou  de surplomb.  Pour  utiliser  cette  compétence,  il  doit  posséder une arme à distance.",
-                "en": "After a ranged attack has been resolved against its possessor, they can perform a free ranged attack upon the attacker with [X] yellow dice, for which they don’t benefit from any weapon or elevation bonuses. To use this skill, its possessor must have a ranged weapon."
-            },
             "image": "data/skills/img/range/retaliation.png"
         }, {
             "id": "marksman",
             "type": "range",
-            "title": {
-                "fr": "Tireur d'élite",
-                "en": "Marksman"
-            },
-            "text": {
-                "fr": "Permet à son possesseur d’ajouter X succès automatiques lors d’une attaque à distance, s’il a obtenu au moins un succès.",
-                "en": "Allows  its  possessor  to  add  [X]  automatic  successes  during  a ranged attack if they have obtained at least one success."
-            },
             "image": "data/skills/img/range/marksman.png"
         }, {
             "id": "munitions_specialist",
             "type": "manipulation",
-            "title": {
-                "fr": "Artificier",
-                "en": "Munitions specialist"
-            },
-            "text": {
-                "fr": "Permet à son possesseur d’obtenir X succès automatiques lors de certaines actions de manipulation indiquées dans les missions.",
-                "en": "Allows  its  possessor  to  benefit  from  [X]  automatic  successes  during  certain  manipulation  actions  indicated  by the missions."
-            },
             "image": "data/skills/img/manipulation/munitions_specialist.png"
         }, {
             "id": "attraction",
             "type": "manipulation",
-            "title": {
-                "fr": "Attraction",
-                "en": "Attraction"
-            },
-            "text": {
-                "fr": "Permet à son possesseur, au prix d’une manipulation automatique, d’attirer une figurine avec laquelle il partage une ligne de vue et située dans une zone à une distance inférieure ou égale à X, afin de la ramener dans sa propre zone. La cible doit être d’une envergure inférieure ou égale à la sienne",
-                "en": "Allows its possessor, at the cost of an automatic manipulation, to attract a miniature they share a clear line of sight with  and  draw  it  into  their  area. The  target  must  be  at  a lower or equal distance than [X] and their size index must be lower or equal to that of its possessor."
-            },
             "image": "data/skills/img/manipulation/attraction.png"
         }, {
             "id": "cry",
             "type": "manipulation",
-            "title": {
-                "fr": "Cri",
-                "en": "Cry"
-            },
-            "text": {
-                "fr": "Permet  à  son  possesseur,  une  fois  par  tour,  de  déclencher une  explosion  de  niveau X  qui  prend  pour  cible  toutes  les figurines de sa zone et d’une zone adjacente avec ligne de vue. Son possesseur est immunisé",
-                "en": "Allows  its  possessor,  once  per  turn,  to  trigger  a  level  [X] explosion  in  their  area  and  in  an  adjacent  area  with  a  clear  line of sight."
-            },
             "image": "data/skills/img/manipulation/cry.png"
         }, {
             "id": "lock_piking",
             "type": "manipulation",
-            "title": {
-                "fr": "Crochetage",
-                "en": "Lock piking"
-            },
-            "text": {
-                "fr": "Permet à son possesseur d’obtenir X succès automatiques lors de certaines actions de manipulation indiquées dans les missions.",
-                "en": "Allows  its  possessor  to  benefit  from  [X]  automatic  successes  during  certain  manipulation  actions  indicated  by the missions"
-            },
             "image": "data/skills/img/manipulation/lock_piking.png"
         }, {
             "id": "grenade",
             "type": "manipulation",
-            "title": {
-                "fr": "Grenade",
-                "en": "Grenade"
-            },
-            "text": {
-                "fr": "Permet  à  son  possesseur,  grâce  à  une  manipulation  complexe,  de  déclencher  une  explosion  de  niveau  X  dans  une zone  ciblée.  La  difficulté  de  la  manipulation  est  égale  à  la distance entre les zones. En cas de réussite, une explosion de niveau X se déclenche dans la zone ciblée. En cas d’échec, une explosion de niveau X se déclenche dans une zone à une distance égale au nombre de succès obtenus, le long de la ligne de vue vers la zone ciblée.",
-                "en": "Allows  its  possessor  to  trigger  a  level  [X]  explosion  in  a targeted area by performing a complex manipulation. Its difficulty is equal to the distance between its possessor’s area and the targeted area. In case of failure, the level [X] explosion is triggered in an area located at a distance equal to the number of successes obtained, along the line of sight."
-            },
             "image": "data/skills/img/manipulation/grenade.png"
         }, {
             "id": "blast",
             "type": "manipulation",
-            "title": {
-                "fr": "Souffle",
-                "en": "Blast"
-            },
-            "text": {
-                "fr": "Permet à son possesseur, une fois par tour et au prix d’une manipulation  automatique,  de  déclencher  une  explosion de niveau X qui prend pour cible toutes les figurines de sa zone et d’une zone adjacente avec ligne de vue. Son possesseur est immunisé.",
-                "en": "Allows  its  possessor,  once  per  turn  and  at  the  cost  of  an automatic manipulation, to trigger a level [X] explosion in their area and in an adjacent area with a clear line of sight."
-            },
             "image": "data/skills/img/manipulation/blast.png"
         }, {
             "id": "elite_command",
             "type": "thought",
-            "title": {
-                "fr": "Commandement élite",
-                "en": "Elite command"
-            },
-            "text": {
-                "fr": "Permet  à  son  possesseur  de  contrôler  des  unités  élites alliées. Il sélectionne une tuile de niveau élite de son camp ainsi que X figurines. Ces figurines alliées débutent la partie dans la zone du possesseur. Il peut, une fois par tour, les acti-ver en effectuant une réflexion automatique. Toute dépense de  cubes  pour  des  défenses,  relances  ou  mouvements  des alliés s’effectue dans sa case de réflexion.",
-                "en": "Allows  its  possessor  to  control  friendly  elite  units.  They choose  an  elite  level  tile  from  their  side  and  [X]  miniatures.  These  friendly  miniatures  start  the  mission  in  [the possessor]’s area. They can activate them once per turn by performing an automatic thought. Each energy cube spent on  defense,  reroll,  or  move  for  the  friendly  miniatures  is moved to [the possessor]’s thought space."
-            },
             "image": "data/skills/img/thought/elite_command.png"
         }, {
             "id": "henchman_command",
             "type": "thought",
-            "title": {
-                "fr": "Commandement sbire",
-                "en": "Henchman command"
-            },
-            "text": {
-                "fr": "Fonctionne comme la compétence commandement élite en remplaçant le terme « élite » par « sbire ».",
-                "en": "This skill works in the same way as the Elite command skill, replacing the term ‘elite’ with ‘henchman’."
-            },
             "image": "data/skills/img/thought/henchman_command.png"
         }, {
             "id": "investigation",
             "type": "thought",
-            "title": {
-                "fr": "Enquête",
-                "en": "Investigation"
-            },
-            "text": {
-                "fr": "Permet à son possesseur d’obtenir X succès automatiques lors de certaines actions de réflexion indiquées dans les missions.",
-                "en": "Allows its possessor to benefit from [X] automatic successes during certain thought actions indicated by missions."
-            },
             "image": "data/skills/img/thought/investigation.png"
         }, {
             "id": "hacking",
             "type": "thought",
-            "title": {
-                "fr": "Piratage",
-                "en": "Hacking"
-            },
-            "text": {
-                "fr": "Permet à son possesseur d’obtenir X succès automatiques lors de certaines actions de réflexion indiquées dans les missions.",
-                "en": "Allows its possessor to benefit from [X] automatic successes during certain thought actions indicated by missions."
-            },
             "image": "data/skills/img/thought/hacking.png"
         }, {
             "id": "tactician",
             "type": "thought",
-            "title": {
-                "fr": "Tacticien",
-                "en": "Tactician"
-            },
-            "text": {
-                "fr": "Permet  à  son  possesseur  de  réaliser  une  réflexion  automatique pour octroyer immédiatement X points de déplacement gratuits à une figurine amie qui n’a pas bénéficié de cet effet ce tour. Si la figurine est un personnage, elle gagne également son bonus de points de déplacement au premier mouvement.",
-                "en": "Allows  its  possessor  to  perform  an  automatic  thought  to immediately grant [X] free move points to an allied miniature  that  hasn’t  been  the  target  of  this  effect  this  turn.  If the miniature is a character, they also get their Move Point Bonus for the First Movement."
-            },
             "image": "data/skills/img/thought/tactician.png"
         }, {
             "id": "impenetrable_defense",
             "type": "defense",
-            "title": {
-                "fr": "Défense impénétrable",
-                "en": "Impenetrable defense"
-            },
-            "text": {
-                "fr": "Permet  à  son  possesseur  d’obtenir  X  succès  automatiques  de  défense contre les attaques au corps-à-corps",
-                "en": "Allows its possessor to benefit from [X] automatic defense successes against melee attacks"
-            },
             "image": "data/skills/img/defense/impenetrable_defense.png"
         }, {
             "id": "body_guard",
             "type": "defense",
-            "title": {
-                "fr": "Garde du corps",
-                "en": "Body guard"
-            },
-            "text": {
-                "fr": "Le  possesseur  augmente  de  X  succès  automatiques  la défense des figurines amies situées dans sa zone.",
-                "en": "Its  possessor  increases  by  [X]  automatic  successes  the defense of allied miniatures located in the same area."
-            },
             "image": "data/skills/img/defense/body_guard.png"
         }, {
             "id": "untouchable",
             "type": "defense",
-            "title": {
-                "fr": "Intouchable",
-                "en": "Untouchable"
-            },
-            "text": {
-                "fr": "Permet  à  son  possesseur  d’ajouter  X  succès  automatiques  de  défense contre les attaques à distance qui le ciblent.",
-                "en": "Allows its possessor to benefit from [X] automatic defense successes against ranged attacks."
-            },
             "image": "data/skills/img/defense/untouchable.png"
         }, {
             "id": "protected",
             "type": "defense",
-            "title": {
-                "fr": "Sous protection",
-                "en": "Protected"
-            },
-            "text": {
-                "fr": "Permet à son possesseur, s’il est accompagné d’au moins X figurines  amies  sans  cette  compétence,  d’éviter  d’être  pris pour cible d’une attaque.",
-                "en": "Allows its possessor, if they are accompanied by at least [X] allied miniatures without this skill, to avoid being the target of an attack."
-            },
             "image": "data/skills/img/defense/protected.png"
         }, {
             "id": "wall_breaker",
             "type": "movement",
-            "title": {
-                "fr": "Défoncer paroi",
-                "en": "Wall breaker"
-            },
-            "text": {
-                "fr": "Permet à son possesseur de se déplacer à travers une paroi d’un niveau inférieur ou égal à X, puis de poser un pion paroi défoncée sur celle-ci. Le coût de ce déplacement est augmenté de 2. Les deux zones deviennent adjacentes, une ligne de vue peut être tracée entre celles-ci et le déplacement est possible. ",
-                "en": "Allows  its  possessor  to  move  through  a level [X] or lower wall, then to put a broken wall token on it. The cost of this movement is  raised  by  2.  The  two  areas  become adjacent, a clear line of sight can be drawn between them, and movement is possible."
-            },
             "image": "data/skills/img/movement/wall_breaker.png"
         }, {
             "id": "immobilization",
             "type": "movement",
-            "title": {
-                "fr": "Immobilisation",
-                "en": "Immobilization"
-            },
-            "text": {
-                "fr": "Permet  à  son  possesseur,  à  la  fin  d’une  attaque  ou  d’une explosion qui inflige au moins X blessures à une figurine, de coucher la figurine. Pour se relever, elle doit dépenser son bonus de points de déplacement au premier mouvement.",
-                "en": "Allows its possessor, after an attack or an explosion that inflicts at  least  [X]  wounds,  to  lay  down  the  wounded  miniature.  To stand back up, they must spend their Move Point Bonus for the First Movement."
-            },
             "image": "data/skills/img/movement/immobilization.png"
         }, {
             "id": "elusive",
             "type": "movement",
-            "title": {
-                "fr": "Insaisissable",
-                "en": "Elusive"
-            },
-            "text": {
-                "fr": "Permet  à  son  possesseur  d’ignorer  X  indices  d’envergure ennemis lors de ses déplacements.",
-                "en": "Allows its possessor to ignore [X] enemy size indexes when moving."
-            },
             "image": "data/skills/img/movement/elusive.png"
         }, {
             "id": "mobility",
             "type": "movement",
-            "title": {
-                "fr": "Mobilité",
-                "en": "Mobility"
-            },
-            "text": {
-                "fr": "Permet à son possesseur d’ignorer X niveaux de terrain difficile lors d’un déplacement.",
-                "en": "Allows  its  possessor  to  ignore  [X]  difficult  terrain  levels when moving."
-            },
             "image": "data/skills/img/movement/mobility.png"
         }, {
             "id": "parkour",
             "type": "movement",
-            "title": {
-                "fr": "Parkour",
-                "en": "Parkour"
-            },
-            "text": {
-                "fr": "Permet  à  son  possesseur  d’ignorer  X  niveaux  de  saut  ou d’escalade  lors  de  ses  déplacements  spéciaux,  ainsi  que  X blessures liées à des chutes.",
-                "en": "Allows its possessor to ignore [X] jump or climb levels when performing a special move, and [X] wounds caused by a fall."
-            },
             "image": "data/skills/img/movement/parkour.png"
         }, {
             "id": "ambidextry",
             "type": "miscellaneous",
-            "title": {
-                "fr": "Ambidextrie",
-                "en": "Ambidextry"
-            },
-            "text": {
-                "fr": "Permet à son possesseur d’utiliser deux armes du même type lors de ses attaques et de cumuler leur bonus. Leur encombrement ou leur taille doit être inférieur ou égal à X.",
-                "en": "Allows its possessor to use two weapons of the same type simultaneously  during  their  attacks,  and  therefore  to  add their bonuses. Their encumbrance or size must be lower or equal to [X]."
-            },
             "image": "data/skills/img/miscellaneous/ambidextry.png"
         }, {
             "id": "imaginary_friend",
             "type": "miscellaneous",
-            "title": {
-                "fr": "Ami imaginaire",
-                "en": "Imaginary friend"
-            },
-            "text": {
-                "fr": "Permet  à  son  possesseur  d’obtenir  l’aide  de  sa  petite  voix intérieure  qui  l’accompagne  constamment.  Pour  ses actions, il gagne un dé jaune supplémentaire tant qu’il est accompagné  de  son  ami  imaginaire.  Pour  se  débarrasser de ce dernier, un adversaire dans sa zone peut réaliser une réflexion complexe de difficulté X.",
-                "en": "Allows its possessor to gain assistance from the `little voice in their head’. For their actions, they have an additional yellow  die  while  they  are  accompanied  by  their  imaginary friend. To nullify this effect, an opponent in their area must perform a complex thought of difficulty [X]."
-            },
             "image": "data/skills/img/miscellaneous/imaginary_friend.png"
         }, {
             "id": "luck",
             "type": "miscellaneous",
-            "title": {
-                "fr": "Chance",
-                "en": "Luck"
-            },
-            "text": {
-                "fr": "Permet à son possesseur de bénéficier de X relances gratuites.",
-                "en": "Allows its possessor to benefit from [X] free rerolls."
-            },
             "image": "data/skills/img/miscellaneous/luck.png"
         }, {
             "id": "pushing_limits",
             "type": "miscellaneous",
-            "title": {
-                "fr": "Dépasser ses limites",
-                "en": "Pushing limits"
-            },
-            "text": {
-                "fr": "Permet à son possesseur de se blesser pour effectuer plus d’actions.  Il  subit  X  blessures.  On  considère  les  cubes d’énergie  transférés  en  blessure  comme  s’ils  avaient  été dépensés sur la case de l’action choisie sans tenir compte de sa saturation.",
-                "en": "Allows  its  possessor  to  wound  themselves  to  perform actions. They suffer [X] wounds. Energy cubes moved in this way to the wound zone are considered to have been spent on the current action space, regardless of its exertion limit."
-            },
             "image": "data/skills/img/miscellaneous/pushing_limits.png"
         }, {
             "id": "horror",
             "type": "miscellaneous",
-            "title": {
-                "fr": "Horreur",
-                "en": "Horror"
-            },
-            "text": {
-                "fr": "Permet à son possesseur d’augmenter de X le coût en points de  déplacement  des  figurines  ennemies  qui  souhaitent entrer sur sa zone.",
-                "en": "Allows its possessor to increase by [X] the move point cost for enemy miniatures wishing to enter the area in which its possessor is located."
-            },
             "image": "data/skills/img/miscellaneous/horror.png"
         }, {
             "id": "misfortune",
             "type": "miscellaneous",
-            "title": {
-                "fr": "Malchance",
-                "en": "Misfortune"
-            },
-            "text": {
-                "fr": "Permet  à  son  possesseur  d’obliger  un  ennemi  dans  sa  zone à relancer X dés. Le possesseur choisit les dés à relancer une fois les relances gratuites effectuées.",
-                "en": "Allows its possessor to force an enemy in their area to reroll [X] dice. Its possessor chooses the dice to reroll after the free rerolls."
-            },
             "image": "data/skills/img/miscellaneous/misfortune.png"
         }, {
             "id": "nerves_steel",
             "type": "miscellaneous",
-            "title": {
-                "fr": "Nerf d'acier",
-                "en": "Nerves of steel"
-            },
-            "text": {
-                "fr": "Permet  à  son  possesseur  d’ignorer  X  indices  de  menace ennemis lors d’actions d’attaque à distance, de manipulation ou de réflexion.",
-                "en": "Allows  its  possessor  to  ignore  [X]  enemy  menace  indexes when performing ranged attacks, manipulations, or thoughts."
-            },
             "image": "data/skills/img/miscellaneous/nerves_steel.png"
         }, {
             "id": "regeneration",
             "type": "miscellaneous",
-            "title": {
-                "fr": "Régénération",
-                "en": "Regeneration"
-            },
-            "text": {
-                "fr": "Permet à son possesseur de se régénérer. Si c’est un héros, lors de la déclaration de l’état, il déplace X cubes d’énergie de sa zone de blessures vers sa zone de fatigue. Si c’est un personnage, au début de son activation, il récupère X points de vie.",
-                "en": "Allows its possessor to regenerate. If they are a hero, during the Declare Heroes’ Stance step, they move [X] energy cubes from their wound zone to their fatigue zone. If they are a character, at the start of their activation, they recover [X] life points."
-            },
             "image": "data/skills/img/miscellaneous/regeneration.png"
         }, {
             "id": "sacrifice",
             "type": "miscellaneous",
-            "title": {
-                "fr": "Sacrifice",
-                "en": "Sacrifice"
-            },
-            "text": {
-                "fr": "Le possesseur doit déclarer qu’il utilise sa compétence lors de  la  constitution  de  la  réserve  de  dés  de  l’attaquant.  Il encaisse X  succès  d’une  attaque  dirigée  contre  l’un  de  ses amis dans sa zone, sans pouvoir se défendre. Le reliquat est appliqué normalement au défenseur.",
-                "en": "Its possessor must declare the use of this skill during the Create the Dice Pool step of an attack. They take [X] successes from the attack if it targets an ally miniature in their area. They cannot defend against it. The remaining successes are applied as usual to the defender."
-            },
             "image": "data/skills/img/miscellaneous/sacrifice.png"
         }, {
             "id": "support",
             "type": "miscellaneous",
-            "title": {
-                "fr": "Soutien",
-                "en": "Support"
-            },
-            "text": {
-                "fr": "Permet  à  son  possesseur  de  faire  bénéficier  de  X  relances gratuites les figurines amies situées dans sa zone.",
-                "en": "Allows its possessor to provide [X] free rerolls to all the allied miniatures in their area."
-            },
             "image": "data/skills/img/miscellaneous/support.png"
         }, {
             "id": "flame",
             "type": "area_modifier",
-            "title": {
-                "fr": "Flamme",
-                "en": "Flame"
-            },
-            "text": {
-                "fr": "Permet  à  son  possesseur,  lors  d’une attaque ou après avoir déclenché une explosion,  de  poser  X  pions  flamme/gaz sur la zone de l’attaque ou de l’ex-plosion (cf. Dissipation page 44). Chaque pion ajoute à la zone où il est placé l’attribut « terrain dangereux » de niveau 1. Son possesseur y est immunisé.",
-                "en": "Allows its possessor, during an attack or  after  an  explosion,  to  place  [X] flame/gas  tokens  on  the  area  of  the attack or the explosion (see Dissipation page  44). Each token adds 1 level of dangerous terrain to its area. Its possessor is immune to this effect"
-            },
             "image": "data/skills/img/area_modifier/flame.png"
         }, {
             "id": "toxic_gas",
             "type": "area_modifier",
-            "title": {
-                "fr": "Gaz toxique",
-                "en": "Toxic gas"
-            },
-            "text": {
-                "fr": "Permet  à  son  possesseur,  lors  d’une attaque ou après avoir déclenché une explosion,  de  poser  X  pions  flamme/gaz sur la zone de l’attaque ou de l’ex-plosion (cf. Dissipation page 44). Chaque pion ajoute à la zone où il est placé l’attribut « terrain dangereux » de niveau 1. Son possesseur y est immunisé.",
-                "en": "Allows its possessor, during an attack or  after  an  explosion,  to  place  [X] flame/gas  tokens  on  the  area  of  the attack or the explosion (see Dissipation page  44). Each token adds 1 level of dangerous terrain to its area. Its possessor is immune to this effect"
-            },
             "image": "data/skills/img/area_modifier/toxic_gas.png"
         }, {
             "id": "smoke_grenade",
             "type": "area_modifier",
-            "title": {
-                "fr": "Fumigène",
-                "en": "Smoke grenade"
-            },
-            "text": {
-                "fr": "Permet  à  son  possesseur,  après  avoir  réalisé  une explosion,  de  poser  X  pions  fumigène  dans  cette zone (cf.  Dissipation  page  44). Lors d’une attaque à distance,  l’attaquant  compte  le  nombre  de  pions fumigène dans les zones traversées par la ligne de vue ; il déduit ce nombre de pions du nombre de succès obtenus.",
-                "en": "Allows  its  possessor,  after  having  triggered  an explosion, to place [X] smoke grenade tokens in this area   (see   Dissipation   page   44).  During  a  ranged attack,  the  attacker  must  count  the  number  of smoke  grenade  tokens  on  the  areas  their  line  of  sight  crosses  and subtract it from the number of the attack’s successes."
-            },
             "image": "data/skills/img/area_modifier/smoke_grenade.png"
         }, {
             "id": "frost",
             "type": "area_modifier",
-            "title": {
-                "fr": "Givre",
-                "en": "Frost"
-            },
-            "text": {
-                "fr": "Permet  à  son  possesseur,  lors  d’une  attaque  ou après avoir déclenché une explosion, de geler le terrain  en  plaçant  X  pions  givre  dans  la  zone  de l’attaque ou de l’explosion (cf.  Dissipation  page  44). Chaque pion ajoute à la zone où il est placé l’attribut « terrain difficile » de niveau 1. Son possesseur y est immunisé.",
-                "en": "Allows  its  possessor,  during  an  attack  or  after  an explosion,  to  freeze  the  terrain  by  placing  [X]  frost tokens on the area of the attack or the explosion (see Dissipation  page  44). Each token adds 1 level of difficult terrain to its area. Its possessor is immune to this effect."
-            },
             "image": "data/skills/img/area_modifier/frost.png"
         }, {
             "id": "moral_code",
             "type": "traits",
-            "title": {
-                "fr": "Code moral",
-                "en": "Moral code"
-            },
-            "text": {
-                "fr": "Le possesseur du trait ne peut pas utiliser de matériel létal.",
-                "en": "Its possessor cannot use lethal items."
-            },
             "image": "data/skills/img/traits/moral_code.png"
         }, {
             "id": "gas_immunity",
             "type": "traits",
-            "title": {
-                "fr": "Immunité au gaz",
-                "en": "Gas immunity"
-            },
-            "text": {
-                "fr": "Le possesseur du trait ignore les blessures dues à des pions gaz.",
-                "en": "Its possessor ignores wounds caused by gas tokens."
-            },
             "image": "data/skills/img/traits/gas_immunity.png"
         }, {
             "id": "harmless",
             "type": "traits",
-            "title": {
-                "fr": "Inoffensif",
-                "en": "Harmless"
-            },
-            "text": {
-                "fr": "Le  possesseur  du  trait  est  faible  de  constitution.  Lors  d’une attaque, les blessures qu’il inflige à sa cible sont réduites à 0.",
-                "en": "Its possessor has a weak constitution. During an attack, the wounds they inflict are reduced to 0."
-            },
             "image": "data/skills/img/traits/harmless.png"
         }, {
             "id": "reduced_mobility",
             "type": "traits",
-            "title": {
-                "fr": "Mobilité réduite",
-                "en": "Reduced mobility"
-            },
-            "text": {
-                "fr": "Le possesseur du trait a des difficultés à se déplacer. Il ne peut pas effectuer de déplacements spéciaux (escalade, saut et chute).",
-                "en": "Its possessor has limited mobility. They cannot perform special moves (climb, jump and fall)"
-            },
             "image": "data/skills/img/traits/reduced_mobility.png"
         }, {
             "id": "fly",
             "type": "traits",
-            "title": {
-                "fr": "Vol",
-                "en": "Fly"
-            },
-            "text": {
-                "fr": "Le  possesseur  du  trait  se  déplace  en volant.  Il  ne  tient  pas compte des phénomènes de gêne ni des terrains difficiles lorsqu’il effectue un mouvement. Il ignore les surcoûts et les effets des déplacements spéciaux.",
-                "en": "Its possessor moves by flying. They then ignore hindering and  difficult  terrain  when  moving.  They  ignore  additional costs and effects of special moves."
-            },
             "image": "data/skills/img/traits/fly.png"
         }, {
             "id": "multiple_personalities",
             "type": "traits",
-            "title": {
-                "fr": "Personnalités multiples",
-                "en": "Multiple personalities"
-            },
-            "text": {
-                "fr": "Le possesseur du trait change de personnalité au gré de ses activations. Sa dernière activation définit son comportement. Les caractéristiques du possesseur sont définies par sa tuile la plus à droite de la rivière.",
-                "en": "Its possessor changes personalities depending on activations. Their behaviour is set by the latest activation. The possessor's characteristics are defined by the rightmost tile in the river."
-            },
             "image": "data/skills/img/traits/multiple_personalities.png"
         }
     ]

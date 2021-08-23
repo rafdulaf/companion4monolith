@@ -1,0 +1,253 @@
+{
+    "link": "https://the-overlord.com/index.php?/files/file/174-batman-gotham-city-chronicles-aide-de-jeu-comp%C3%A9tences-et-traits/",
+    "types": {
+        "attack": {
+            "title": "Attaque"
+        },
+        "melee": {
+            "title": "Attaque au corps-à-corps"
+        },
+        "range": {
+            "title": "Attaque à distance"
+        },
+        "manipulation": {
+            "title": "Manipulation"
+        },
+        "thought": {
+            "title": "Réflexion"
+        },
+        "defense": {
+            "title": "Défense"
+        },
+        "movement": {
+            "title": "Mouvement"
+        },
+        "miscellaneous": {
+            "title": "Divers"
+        },
+        "area_modifier": {
+            "title": "Modificateurs de terrain"
+        },
+        "traits": {
+            "title": "Traits"
+        }
+    },
+    "list": {
+        "sneak": {
+            "title": "Attaque sournoise",
+            "text": "Permet  à  son  possesseur  d’obtenir  X  succès  automatiques  lors des attaques qu’il effectue dans sa zone, si le total des indices de menace des figurines amies est supérieur ou égal à celui des figurines ennemies."
+        },
+        "poison": {
+            "title": "Poison",
+            "text": "Permet à son possesseur d’infliger X blessures automatiques si  l’attaque  a  obtenu  plus  de  succès  que  la  défense,  avant même de résoudre les blessures inhérentes à l’attaque. Puis, le reste des blessures est déterminé normalement."
+        },
+        "electricity": {
+            "title": "Electricité",
+            "text": "Permet à son possesseur d’infliger X blessures automatiques si  l’attaque  a  obtenu  plus  de  succès  que  la  défense,  avant même de résoudre les blessures inhérentes à l’attaque. Puis, le reste des blessures est déterminé normalement."
+        },
+        "reach": {
+            "title": "Allonge",
+            "text": "Permet à son possesseur de prendre pour cible de ses attaques au  corps-à-corps  une  figurine  qui  n’est  pas  dans  sa  zone.  Il doit partager une ligne de vue avec elle et être à une distance inférieure ou égale à X."
+        },
+        "martial_arts": {
+            "title": "Arts martiaux",
+            "text": "Permet  à  son  possesseur  d’ajouter  X  succès  automatiques  lors  d’une attaque au corps-à-corps, s’il a obtenu au moins un succès."
+        },
+        "counterattack": {
+            "title": "Contre-attaque",
+            "text": "Lorsque le possesseur a subi une attaque de corps-à-corps, il  peut  effectuer  une  attaque  gratuite  au  corps-à-corps contre l’attaquant avec X dés jaunes, mais sans bénéficier de ses bonus d’arme."
+        },
+        "circular_strike": {
+            "title": "Coup circulaire",
+            "text": "Après avoir neutralisé un adversaire au corps-à-corps, le possesseur peut reporter le reliquat de succès sur X autres figurines."
+        },
+        "combo": {
+            "title": "Enchaînement",
+            "text": "Lorsque le possesseur de la compétence neutralise un adversaire  lors  d’une  attaque  au  corps-à-corps,  il  peut  effectuer gratuitement une nouvelle attaque à X dés de sa caractéristique, sans bonus d’arme, contre un autre adversaire."
+        },
+        "shackle": {
+            "title": "Entrave",
+            "text": "Permet  au  possesseur,  lorsqu’il  réussit une attaque de corps-à-corps, de placer X pions  entrave  sur  une  figurine  ennemie. Cette  attaque  n’inflige  aucune  blessure. En  contrepartie,  le  nombre  de  succès  de la  figurine  entravée  lors  de  ses  attaques, réflexions, manipulations et défenses est réduit de X. Ces pions peuvent être enlevés si la figurine entravée ou une figurine amie dans sa zone réussit une manipulation complexe de difficulté X."
+        },
+        "berserk": {
+            "title": "Fureur",
+            "text": "Permet  à  son  possesseur  d’augmenter  la  puissance  de  chacunes  de  ses  attaques  au  corps-à-corps  en  rajoutant  X  dés blancs. Si c’est un héros, il doit avoir au moins la moitié de ses cubes en blessure. Si c’est un personnage, il doit avoir perdu au moins la moitié de ses points de vie."
+        },
+        "pointblank": {
+            "title": "Bout portant",
+            "text": "Permet  à  son  possesseur  de  bénéficier  de  X  relances  gratuites  lorsqu’il  cible  une  figurine  située  dans  sa  zone  lors d’une attaque à distance."
+        },
+        "burst": {
+            "title": "Rafale",
+            "text": "Après avoir neutralisé un adversaire avec une attaque à distance, le possesseur peut reporter le reliquat de succès sur X autres figurines avec lesquelles il partage une ligne de vue."
+        },
+        "retaliation": {
+            "title": "Riposte",
+            "text": "Lorsque le possesseur a subi une attaque à distance, il peut en  effectuer  une  gratuite  avec  X  dés  jaunes  contre  l’attaquant,  mais  sans  bénéficier  de  ses  bonus  d’arme  ou  de surplomb.  Pour  utiliser  cette  compétence,  il  doit  posséder une arme à distance."
+        },
+        "marksman": {
+            "title": "Tireur d'élite",
+            "text": "Permet à son possesseur d’ajouter X succès automatiques lors d’une attaque à distance, s’il a obtenu au moins un succès."
+        },
+        "munitions_specialist": {
+            "title": "Artificier",
+            "text": "Permet à son possesseur d’obtenir X succès automatiques lors de certaines actions de manipulation indiquées dans les missions."
+        },
+        "attraction": {
+            "title": "Attraction",
+            "text": "Permet à son possesseur, au prix d’une manipulation automatique, d’attirer une figurine avec laquelle il partage une ligne de vue et située dans une zone à une distance inférieure ou égale à X, afin de la ramener dans sa propre zone. La cible doit être d’une envergure inférieure ou égale à la sienne"
+        },
+        "cry": {
+            "title": "Cri",
+            "text": "Permet  à  son  possesseur,  une  fois  par  tour,  de  déclencher une  explosion  de  niveau X  qui  prend  pour  cible  toutes  les figurines de sa zone et d’une zone adjacente avec ligne de vue. Son possesseur est immunisé"
+        },
+        "lock_piking": {
+            "title": "Crochetage",
+            "text": "Permet à son possesseur d’obtenir X succès automatiques lors de certaines actions de manipulation indiquées dans les missions."
+        },
+        "grenade": {
+            "title": "Grenade",
+            "text": "Permet  à  son  possesseur,  grâce  à  une  manipulation  complexe,  de  déclencher  une  explosion  de  niveau  X  dans  une zone  ciblée.  La  difficulté  de  la  manipulation  est  égale  à  la distance entre les zones. En cas de réussite, une explosion de niveau X se déclenche dans la zone ciblée. En cas d’échec, une explosion de niveau X se déclenche dans une zone à une distance égale au nombre de succès obtenus, le long de la ligne de vue vers la zone ciblée."
+        },
+        "blast": {
+            "title": "Souffle",
+            "text": "Permet à son possesseur, une fois par tour et au prix d’une manipulation  automatique,  de  déclencher  une  explosion de niveau X qui prend pour cible toutes les figurines de sa zone et d’une zone adjacente avec ligne de vue. Son possesseur est immunisé."
+        },
+        "elite_command": {
+            "title": "Commandement élite",
+            "text": "Permet  à  son  possesseur  de  contrôler  des  unités  élites alliées. Il sélectionne une tuile de niveau élite de son camp ainsi que X figurines. Ces figurines alliées débutent la partie dans la zone du possesseur. Il peut, une fois par tour, les acti-ver en effectuant une réflexion automatique. Toute dépense de  cubes  pour  des  défenses,  relances  ou  mouvements  des alliés s’effectue dans sa case de réflexion."
+        },
+        "henchman_command": {
+            "title": "Commandement sbire",
+            "text": "Fonctionne comme la compétence commandement élite en remplaçant le terme « élite » par « sbire »."
+        },
+        "investigation": {
+            "title": "Enquête",
+            "text": "Permet à son possesseur d’obtenir X succès automatiques lors de certaines actions de réflexion indiquées dans les missions."
+        },
+        "hacking": {
+            "title": "Piratage",
+            "text": "Permet à son possesseur d’obtenir X succès automatiques lors de certaines actions de réflexion indiquées dans les missions."
+        },
+        "tactician": {
+            "title": "Tacticien",
+            "text": "Permet  à  son  possesseur  de  réaliser  une  réflexion  automatique pour octroyer immédiatement X points de déplacement gratuits à une figurine amie qui n’a pas bénéficié de cet effet ce tour. Si la figurine est un personnage, elle gagne également son bonus de points de déplacement au premier mouvement."
+        },
+        "impenetrable_defense": {
+            "title": "Défense impénétrable",
+            "text": "Permet  à  son  possesseur  d’obtenir  X  succès  automatiques  de  défense contre les attaques au corps-à-corps"
+        },
+        "body_guard": {
+            "title": "Garde du corps",
+            "text": "Le  possesseur  augmente  de  X  succès  automatiques  la défense des figurines amies situées dans sa zone."
+        },
+        "untouchable": {
+            "title": "Intouchable",
+            "text": "Permet  à  son  possesseur  d’ajouter  X  succès  automatiques  de  défense contre les attaques à distance qui le ciblent."
+        },
+        "protected": {
+            "title": "Sous protection",
+            "text": "Permet à son possesseur, s’il est accompagné d’au moins X figurines  amies  sans  cette  compétence,  d’éviter  d’être  pris pour cible d’une attaque."
+        },
+        "wall_breaker": {
+            "title": "Défoncer paroi",
+            "text": "Permet à son possesseur de se déplacer à travers une paroi d’un niveau inférieur ou égal à X, puis de poser un pion paroi défoncée sur celle-ci. Le coût de ce déplacement est augmenté de 2. Les deux zones deviennent adjacentes, une ligne de vue peut être tracée entre celles-ci et le déplacement est possible. "
+        },
+        "immobilization": {
+            "title": "Immobilisation",
+            "text": "Permet  à  son  possesseur,  à  la  fin  d’une  attaque  ou  d’une explosion qui inflige au moins X blessures à une figurine, de coucher la figurine. Pour se relever, elle doit dépenser son bonus de points de déplacement au premier mouvement."
+        },
+        "elusive": {
+            "title": "Insaisissable",
+            "text": "Permet  à  son  possesseur  d’ignorer  X  indices  d’envergure ennemis lors de ses déplacements."
+        },
+        "mobility": {
+            "title": "Mobilité",
+            "text": "Permet à son possesseur d’ignorer X niveaux de terrain difficile lors d’un déplacement."
+        },
+        "parkour": {
+            "title": "Parkour",
+            "text": "Permet  à  son  possesseur  d’ignorer  X  niveaux  de  saut  ou d’escalade  lors  de  ses  déplacements  spéciaux,  ainsi  que  X blessures liées à des chutes."
+        },
+        "ambidextry": {
+            "title": "Ambidextrie",
+            "text": "Permet à son possesseur d’utiliser deux armes du même type lors de ses attaques et de cumuler leur bonus. Leur encombrement ou leur taille doit être inférieur ou égal à X."
+        },
+        "imaginary_friend": {
+            "title": "Ami imaginaire",
+            "text": "Permet  à  son  possesseur  d’obtenir  l’aide  de  sa  petite  voix intérieure  qui  l’accompagne  constamment.  Pour  ses actions, il gagne un dé jaune supplémentaire tant qu’il est accompagné  de  son  ami  imaginaire.  Pour  se  débarrasser de ce dernier, un adversaire dans sa zone peut réaliser une réflexion complexe de difficulté X."
+        },
+        "luck": {
+            "title": "Chance",
+            "text": "Permet à son possesseur de bénéficier de X relances gratuites."
+        },
+        "pushing_limits": {
+            "title": "Dépasser ses limites",
+            "text": "Permet à son possesseur de se blesser pour effectuer plus d’actions.  Il  subit  X  blessures.  On  considère  les  cubes d’énergie  transférés  en  blessure  comme  s’ils  avaient  été dépensés sur la case de l’action choisie sans tenir compte de sa saturation."
+        },
+        "horror": {
+            "title": "Horreur",
+            "text": "Permet à son possesseur d’augmenter de X le coût en points de  déplacement  des  figurines  ennemies  qui  souhaitent entrer sur sa zone."
+        },
+        "misfortune": {
+            "title": "Malchance",
+            "text": "Permet  à  son  possesseur  d’obliger  un  ennemi  dans  sa  zone à relancer X dés. Le possesseur choisit les dés à relancer une fois les relances gratuites effectuées."
+        },
+        "nerves_steel": {
+            "title": "Nerf d'acier",
+            "text": "Permet  à  son  possesseur  d’ignorer  X  indices  de  menace ennemis lors d’actions d’attaque à distance, de manipulation ou de réflexion."
+        },
+        "regeneration": {
+            "title": "Régénération",
+            "text": "Permet à son possesseur de se régénérer. Si c’est un héros, lors de la déclaration de l’état, il déplace X cubes d’énergie de sa zone de blessures vers sa zone de fatigue. Si c’est un personnage, au début de son activation, il récupère X points de vie."
+        },
+        "sacrifice": {
+            "title": "Sacrifice",
+            "text": "Le possesseur doit déclarer qu’il utilise sa compétence lors de  la  constitution  de  la  réserve  de  dés  de  l’attaquant.  Il encaisse X  succès  d’une  attaque  dirigée  contre  l’un  de  ses amis dans sa zone, sans pouvoir se défendre. Le reliquat est appliqué normalement au défenseur."
+        },
+        "support": {
+            "title": "Soutien",
+            "text": "Permet  à  son  possesseur  de  faire  bénéficier  de  X  relances gratuites les figurines amies situées dans sa zone."
+        },
+        "flame": {
+            "title": "Flamme",
+            "text": "Permet  à  son  possesseur,  lors  d’une attaque ou après avoir déclenché une explosion,  de  poser  X  pions  flamme/gaz sur la zone de l’attaque ou de l’ex-plosion (cf. Dissipation page 44). Chaque pion ajoute à la zone où il est placé l’attribut « terrain dangereux » de niveau 1. Son possesseur y est immunisé."
+        },
+        "toxic_gas": {
+            "title": "Gaz toxique",
+            "text": "Permet  à  son  possesseur,  lors  d’une attaque ou après avoir déclenché une explosion,  de  poser  X  pions  flamme/gaz sur la zone de l’attaque ou de l’ex-plosion (cf. Dissipation page 44). Chaque pion ajoute à la zone où il est placé l’attribut « terrain dangereux » de niveau 1. Son possesseur y est immunisé."
+        },
+        "smoke_grenade": {
+            "title": "Fumigène",
+            "text": "Permet  à  son  possesseur,  après  avoir  réalisé  une explosion,  de  poser  X  pions  fumigène  dans  cette zone (cf.  Dissipation  page  44). Lors d’une attaque à distance,  l’attaquant  compte  le  nombre  de  pions fumigène dans les zones traversées par la ligne de vue ; il déduit ce nombre de pions du nombre de succès obtenus."
+        },
+        "frost": {
+            "title": "Givre",
+            "text": "Permet  à  son  possesseur,  lors  d’une  attaque  ou après avoir déclenché une explosion, de geler le terrain  en  plaçant  X  pions  givre  dans  la  zone  de l’attaque ou de l’explosion (cf.  Dissipation  page  44). Chaque pion ajoute à la zone où il est placé l’attribut « terrain difficile » de niveau 1. Son possesseur y est immunisé."
+        },
+        "moral_code": {
+            "title": "Code moral",
+            "text": "Le possesseur du trait ne peut pas utiliser de matériel létal."
+        },
+        "gas_immunity": {
+            "title": "Immunité au gaz",
+            "text": "Le possesseur du trait ignore les blessures dues à des pions gaz."
+        },
+        "harmless": {
+            "title": "Inoffensif",
+            "text": "Le  possesseur  du  trait  est  faible  de  constitution.  Lors  d’une attaque, les blessures qu’il inflige à sa cible sont réduites à 0."
+        },
+        "reduced_mobility": {
+            "title": "Mobilité réduite",
+            "text": "Le possesseur du trait a des difficultés à se déplacer. Il ne peut pas effectuer de déplacements spéciaux (escalade, saut et chute)."
+        },
+        "fly": {
+            "title": "Vol",
+            "text": "Le  possesseur  du  trait  se  déplace  en volant.  Il  ne  tient  pas compte des phénomènes de gêne ni des terrains difficiles lorsqu’il effectue un mouvement. Il ignore les surcoûts et les effets des déplacements spéciaux."
+        },
+        "multiple_personalities": {
+            "title": "Personnalités multiples",
+            "text": "Le possesseur du trait change de personnalité au gré de ses activations. Sa dernière activation définit son comportement. Les caractéristiques du possesseur sont définies par sa tuile la plus à droite de la rivière."
+        }
+    }
+}

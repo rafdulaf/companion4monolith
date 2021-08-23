@@ -5,120 +5,6 @@ var CardSpell = mergeObject(StudioItem, {
     _itemWidth: 204,
     _itemHeight: 302.5,    
     
-    _i18n: {
-        'fr': {
-            'tab': "Sorts",
-            'nocard': "Vous n'avez aucune carte de sort pour le moment",
-            'nocard2': "<br/><br/>Cliquez sur le bouton + pour en creer une",
-            'newcard': "Créer un sort",
-            'editcard': "Modifier",
-            
-            'name': "Nom",
-            'namePh': "?",
-            'text': "Effet",
-            'textPh': "?",
-            'textHelp': "Pour insérer des images, utilisez: {dice_yellow}, {dice_orange}, {dice_red}, {dice_yellow_reroll}, {dice_orange_reroll}, {dice_red_reroll}, {gem_blue} ou {gem_red}.",
-            'textSize': "Taille",
-            'textSizePh': "0",
-            'textInter': "Interligne",
-            'textInterPh': "0",
-            'cost': "Coût en energie",
-            'costPh': "?",
-            'saturation': "Indice de saturation",
-            'saturationPh': "?",
-            'reaction': "Lançable en réaction",
-            'explosion': "Sort de zone",
-            'image': "Image (fond transparent)",
-            'imagePh': "Entrer l'adresse de l'image (http://)",
-            'imageeffect': "Effet automatique",
-            'imagelocation': "Emplacement",
-            'imagelocationPh': "0",
-            'imagezoom': "Zoom",
-            'imagezoomPh': "0",
-            'imagerotation': "Rotation",
-            'imagerotationPh': "0",
-            'header1': "Saisissez les données de la carte",
-            'header1bis': "Mettez une image",
-            'header2': "Prévisualiser la carte",
-            
-            'copyright': "Basé sur le fichier PSD proposé par <a href='https://the-overlord.com/index.php?/profile/9-genesteal28/'>@genesteal28</a> et converti au format GIMP par <a href='https://the-overlord.com/index.php?/profile/31-jabbathehatt/'>@jabbathehatt</a> et <a href='https://the-overlord.com/index.php?/profile/1-sentma/'>SentMa</a> pour le dos de carte."
-        },
-        'en': {
-            'tab': "Spells",
-            'nocard': "You have no card for the moment",
-            'nocard2': "<br/><br/>Click on the + button to create one",
-            'newcard': "Create a spell",
-            'editcard': "Edit a card",
-            
-            'name': "Name",
-            'namePh': "?",
-            'text': "Effect",
-            'textPh': "?",
-            'textHelp': "To insert images, use: {dice_yellow}, {dice_orange}, {dice_red}, {dice_yellow_reroll}, {dice_orange_reroll}, {dice_red_reroll}, {gem_blue} or {gem_red}.",
-            'textSize': "Size",
-            'textSizePh': "0",
-            'textInter': "Line height",
-            'textInterPh': "0",
-            'cost': "Energy cost",
-            'costPh': "?",
-            'saturation': "Exertion Limit",
-            'saturationPh': "?",
-            'reaction': "Reaction spell",
-            'explosion': "Area attack spell",
-            'image': "Image (transparent background)",
-            'imagePh': "Enter the image address (http://...)",
-            'imageeffect': "Automatic effect",
-            'imagelocation': "Location",
-            'imagelocationPh': "0",
-            'imagezoom': "Zoom",
-            'imagezoomPh': "0",
-            'imagerotation': "Rotation",
-            'imagerotationPh': "0",
-            'header1': "Fill the card data",
-            'header1bis': "Set a picture",
-            'header2': "Preview the final result",
-            
-            'copyright': "Based on the PSD file proposed by <a href='https://the-overlord.com/index.php?/profile/9-genesteal28/'>@genesteal28</a> and converted at the GIMP format by <a href='https://the-overlord.com/index.php?/profile/31-jabbathehatt/'>@jabbathehatt</a> and <a href='https://the-overlord.com/index.php?/profile/1-sentma/'>SentMa</a> for the back of the card."
-        },
-        'it': {
-            'tab': "Incantesimi",
-            'nocard': "Al momento non hai carte",
-            'nocard2': "<br/><br/>Clicca su + per crearne una",
-            'newcard': "Crea una carta incantesimo",
-            'editcard': "Modifica una carta",
-
-            'name': "Nome",
-            'namePh': "?",
-            'text': "Effetto",
-            'textPh': "?",
-            'textHelp': "Per inserire queste immagini, usa: {dice_yellow}, {dice_orange}, {dice_red}, {dice_yellow_reroll}, {dice_orange_reroll}, {dice_red_reroll}, {gem_blue} o {gem_red}.",
-            'textSize': "Dimensioni",
-            'textSizePh': "0",
-            'textInter': "Interlinea",
-            'textInterPh': "0",
-            'cost': "Costo energia",
-            'costPh': "?",
-            'saturation': "Indice di saturazione",
-            'saturationPh': "?",
-            'reaction': "Incantesimo di reazione",
-            'explosion': "Incantesimo di attacco ad area",
-            'image': "Immagine (sfondo trasparente)",
-            'imagePh': "Inserisci l'URL dell'immagine (http://...)",
-            'imageeffect': "Effetto automatico",
-            'imagelocation': "Posizione",
-            'imagelocationPh': "0",
-            'imagezoom': "Zoom",
-            'imagezoomPh': "0",
-            'imagerotation': "Rotazione",
-            'imagerotationPh': "0",
-            'header1': "Riempi le informazioni della carta",
-            'header1bis': "Scegli un'immagine",
-            'header2': "Anteprima del risultato finale",
-            
-            'copyright': "Basati sui file PSD di <a href='https://the-overlord.com/index.php?/profile/9-genesteal28/'>@genesteal28</a> e convertiti nel formato GIMP da <a href='https://the-overlord.com/index.php?/profile/31-jabbathehatt/'>@jabbathehatt</a> e <a href='https://the-overlord.com/index.php?/profile/1-sentma/'>SentMa</a> per il retro delle carte."
-        }
-    },
-    
     _getDisplayItemsCode: function(withEditLink, printPurpose)
     {
         var html = "";
@@ -145,7 +31,7 @@ var CardSpell = mergeObject(StudioItem, {
         }
         else
         {
-            html += "<div class=\"nocards\">" + CardSpell._i18n[Language].nocard + (withEditLink !== false ? CardSpell._i18n[Language].nocard2 : '') + "</div>";
+            html += "<div class=\"nocards\">" + CardSpell._i18n.nocard + (withEditLink !== false ? CardSpell._i18n.nocard2 : '') + "</div>";
         }
 
         if (!withEditLink)
@@ -203,64 +89,64 @@ var CardSpell = mergeObject(StudioItem, {
             "<div class=\"studiodialog\">"
             + "<div class=\"eqcolspell\">"
             + "<div class=\"spell\">"
-                + "<h1>" + CardSpell._i18n[Language].header1 + "</h1>"
+                + "<h1>" + CardSpell._i18n.header1 + "</h1>"
                 + "<input type=\"hidden\" name=\"cardpos\"/>"
                 + "<div class=\"field name\">"
-                    + "<label for=\"eqname\">" + CardSpell._i18n[Language].name + "</label>"
-                    + "<input id=\"eqname\" spellcheck='false' name=\"cardname\" autocomplete=\"off\" placeholder=\"" + CardSpell._i18n[Language].namePh + "\" onkeyup=\"CardSpell._preview();\" onchange=\"CardSpell._preview();\"/>"
+                    + "<label for=\"eqname\">" + CardSpell._i18n.name + "</label>"
+                    + "<input id=\"eqname\" spellcheck='false' name=\"cardname\" autocomplete=\"off\" placeholder=\"" + CardSpell._i18n.namePh + "\" onkeyup=\"CardSpell._preview();\" onchange=\"CardSpell._preview();\"/>"
                 + "</div>"
                 + "<div class=\"field cost\">"
-                    + "<label for=\"eqcost\">" + CardSpell._i18n[Language].cost + "</label>"
-                    + "<input type=\"number\" min=\"0\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"eqcost\" name=\"cardcost\" autocomplete=\"off\" placeholder=\"" + CardSpell._i18n[Language].costPh + "\" onkeyup=\"CardSpell._preview();\" onchange=\"CardSpell._preview();\"/>"
+                    + "<label for=\"eqcost\">" + CardSpell._i18n.cost + "</label>"
+                    + "<input type=\"number\" min=\"0\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"eqcost\" name=\"cardcost\" autocomplete=\"off\" placeholder=\"" + CardSpell._i18n.costPh + "\" onkeyup=\"CardSpell._preview();\" onchange=\"CardSpell._preview();\"/>"
                 + "</div>"
                 + "<div class=\"field saturation\">"
-                    + "<label for=\"eqsaturation\">" + CardSpell._i18n[Language].saturation + "</label>"
-                    + "<input type=\"number\" min=\"0\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"eqsaturation\" name=\"cardsaturation\" autocomplete=\"off\" placeholder=\"" + CardSpell._i18n[Language].saturationPh + "\" onkeyup=\"CardSpell._preview();\" onchange=\"CardSpell._preview();\"/>"
+                    + "<label for=\"eqsaturation\">" + CardSpell._i18n.saturation + "</label>"
+                    + "<input type=\"number\" min=\"0\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"eqsaturation\" name=\"cardsaturation\" autocomplete=\"off\" placeholder=\"" + CardSpell._i18n.saturationPh + "\" onkeyup=\"CardSpell._preview();\" onchange=\"CardSpell._preview();\"/>"
                 + "</div>"
                 + "<div class=\"field text\">"
-                    + "<label for=\"eqtext\"><span data-help=\"" + CardSpell._i18n[Language].textHelp + "\"></span>" + CardSpell._i18n[Language].text + "</label>"
-                    + "<textarea id=\"eqtext\" name=\"cardtext\" autocomplete=\"off\" placeholder=\"" + CardSpell._i18n[Language].textPh + "\" onkeyup=\"CardSpell._preview();\" onchange=\"CardSpell._preview();\"></textarea>"
+                    + "<label for=\"eqtext\"><span data-help=\"" + CardSpell._i18n.textHelp + "\"></span>" + CardSpell._i18n.text + "</label>"
+                    + "<textarea id=\"eqtext\" name=\"cardtext\" autocomplete=\"off\" placeholder=\"" + CardSpell._i18n.textPh + "\" onkeyup=\"CardSpell._preview();\" onchange=\"CardSpell._preview();\"></textarea>"
                 + "</div>"
                 + "<div class=\"field textsize\">"
-                    + "<label for=\"eqtextsize\">" + CardSpell._i18n[Language].textSize + "</label>"
-                    + "<input id=\"eqtextsize\" name=\"cardtextsize\" type=\"number\" autocomplete=\"off\" placeholder=\"" + CardSpell._i18n[Language].textSizePh + "\" onkeyup=\"CardSpell._preview();\" onchange=\"CardSpell._preview();\"\"/>"
+                    + "<label for=\"eqtextsize\">" + CardSpell._i18n.textSize + "</label>"
+                    + "<input id=\"eqtextsize\" name=\"cardtextsize\" type=\"number\" autocomplete=\"off\" placeholder=\"" + CardSpell._i18n.textSizePh + "\" onkeyup=\"CardSpell._preview();\" onchange=\"CardSpell._preview();\"\"/>"
                 + "</div>"
                 + "<div class=\"field textinter\">"
-                    + "<label for=\"eqtextinter\">" + CardSpell._i18n[Language].textInter + "</label>"
-                    + "<input id=\"eqtextinter\" name=\"cardtextinter\" type=\"number\" autocomplete=\"off\" placeholder=\"" + CardSpell._i18n[Language].textInterPh + "\" onkeyup=\"CardSpell._preview();\" onchange=\"CardSpell._preview();\"/>"
+                    + "<label for=\"eqtextinter\">" + CardSpell._i18n.textInter + "</label>"
+                    + "<input id=\"eqtextinter\" name=\"cardtextinter\" type=\"number\" autocomplete=\"off\" placeholder=\"" + CardSpell._i18n.textInterPh + "\" onkeyup=\"CardSpell._preview();\" onchange=\"CardSpell._preview();\"/>"
                 + "</div>"
 
                 + "<div class=\"field checkbox\">"
-                    + "<div class=\"explosion\"><input type=\"checkbox\" id=\"eqexplosion\" name=\"cardexplosion\" onchange=\"CardSpell._preview();\"/><label for=\"eqexplosion\">" + CardSpell._i18n[Language].explosion + "</label></div>"
-                    + "<div class=\"reaction\"><input type=\"checkbox\" id=\"eqreaction\" name=\"cardreaction\" onchange=\"CardSpell._preview();\"/><label for=\"eqreaction\">" + CardSpell._i18n[Language].reaction + "</label></div>"
+                    + "<div class=\"explosion\"><input type=\"checkbox\" id=\"eqexplosion\" name=\"cardexplosion\" onchange=\"CardSpell._preview();\"/><label for=\"eqexplosion\">" + CardSpell._i18n.explosion + "</label></div>"
+                    + "<div class=\"reaction\"><input type=\"checkbox\" id=\"eqreaction\" name=\"cardreaction\" onchange=\"CardSpell._preview();\"/><label for=\"eqreaction\">" + CardSpell._i18n.reaction + "</label></div>"
                 + "</div>"
 
             + "</div>"
             + "<div class=\"spell\">"
-                + "<h1>" + CardSpell._i18n[Language].header1bis + "</h1>"
+                + "<h1>" + CardSpell._i18n.header1bis + "</h1>"
                 + "<div class=\"field\">"
-                    + "<label for=\"eqimage\">" + CardSpell._i18n[Language].image + "</label>"
-                    + "<input id=\"eqimage\" spellcheck='false' name=\"cardimage\" autocomplete=\"off\" placeholder=\"" + CardSpell._i18n[Language].imagePh + "\" onkeyup=\"CardSpell._preview();\" onchange=\"CardSpell._preview();\"/>"
-                    + "<div class=\"imageeffect\"><input type=\"checkbox\" id=\"eqspellimageeffect\" name=\"cardimageeffect\" onchange=\"CardSpell._preview();\"/><label for=\"eqspellimageeffect\">" + CardSpell._i18n[Language].imageeffect + "</label></div>"
+                    + "<label for=\"eqimage\">" + CardSpell._i18n.image + "</label>"
+                    + "<input id=\"eqimage\" spellcheck='false' name=\"cardimage\" autocomplete=\"off\" placeholder=\"" + CardSpell._i18n.imagePh + "\" onkeyup=\"CardSpell._preview();\" onchange=\"CardSpell._preview();\"/>"
+                    + "<div class=\"imageeffect\"><input type=\"checkbox\" id=\"eqspellimageeffect\" name=\"cardimageeffect\" onchange=\"CardSpell._preview();\"/><label for=\"eqspellimageeffect\">" + CardSpell._i18n.imageeffect + "</label></div>"
                 + "</div>"
                 + "<div class=\"field imagelocation\">"
-                    + "<label for=\"eqimagelocation\">" + CardSpell._i18n[Language].imagelocation + "</label>"
-                    + "<div><input id=\"eqimagelocation\" name=\"cardimagelocation\" type=\"number\" autocomplete=\"off\" placeholder=\"" + CardSpell._i18n[Language].imagelocationPh + "\" onkeyup=\"CardSpell._preview();\" onchange=\"CardSpell._preview();\"\"/></div>"
-                    + "<div><input id=\"eqimagelocation2\" name=\"cardimagelocation2\" type=\"number\" autocomplete=\"off\" placeholder=\"" + CardSpell._i18n[Language].imagelocationPh + "\" onkeyup=\"CardSpell._preview();\" onchange=\"CardSpell._preview();\"/></div>"
+                    + "<label for=\"eqimagelocation\">" + CardSpell._i18n.imagelocation + "</label>"
+                    + "<div><input id=\"eqimagelocation\" name=\"cardimagelocation\" type=\"number\" autocomplete=\"off\" placeholder=\"" + CardSpell._i18n.imagelocationPh + "\" onkeyup=\"CardSpell._preview();\" onchange=\"CardSpell._preview();\"\"/></div>"
+                    + "<div><input id=\"eqimagelocation2\" name=\"cardimagelocation2\" type=\"number\" autocomplete=\"off\" placeholder=\"" + CardSpell._i18n.imagelocationPh + "\" onkeyup=\"CardSpell._preview();\" onchange=\"CardSpell._preview();\"/></div>"
                 + "</div>"
                 + "<div class=\"field imagezoom\">"
-                    + "<label for=\"eqimagezoom\">" + CardSpell._i18n[Language].imagezoom + "</label>"
-                    + "<input id=\"eqimagezoom\" name=\"cardimagezoom\" type=\"number\" autocomplete=\"off\" placeholder=\"" + CardSpell._i18n[Language].imagezoomPh + "\" onkeyup=\"CardSpell._preview();\" onchange=\"CardSpell._preview();\"/>"
+                    + "<label for=\"eqimagezoom\">" + CardSpell._i18n.imagezoom + "</label>"
+                    + "<input id=\"eqimagezoom\" name=\"cardimagezoom\" type=\"number\" autocomplete=\"off\" placeholder=\"" + CardSpell._i18n.imagezoomPh + "\" onkeyup=\"CardSpell._preview();\" onchange=\"CardSpell._preview();\"/>"
                 + "</div>"
                 + "<div class=\"field imagerotation\">"
-                    + "<label for=\"eqimagerotation\">" + CardSpell._i18n[Language].imagerotation + "</label>"
-                    + "<input id=\"eqimagerotation\" name=\"cardimagerotation\" type=\"number\" autocomplete=\"off\" placeholder=\"" + CardSpell._i18n[Language].imagerotationPh + "\" onkeyup=\"CardSpell._preview();\" onchange=\"CardSpell._preview();\"/>"
+                    + "<label for=\"eqimagerotation\">" + CardSpell._i18n.imagerotation + "</label>"
+                    + "<input id=\"eqimagerotation\" name=\"cardimagerotation\" type=\"number\" autocomplete=\"off\" placeholder=\"" + CardSpell._i18n.imagerotationPh + "\" onkeyup=\"CardSpell._preview();\" onchange=\"CardSpell._preview();\"/>"
                 + "</div>"
             + "</div>"
             + "</div>"
             + "<div class=\"eqcolspell\">"
             + "<div class=\"spell-preview\">"
-                + "<h1>" + CardSpell._i18n[Language].header2 + "</h1>"
+                + "<h1>" + CardSpell._i18n.header2 + "</h1>"
                 + "<div class=\"preview\"></div>"
             + "</div>"
             + "</div>"
@@ -344,7 +230,7 @@ var CardSpell = mergeObject(StudioItem, {
     
     copyright: function()
     {
-        return "<h3>" + CardSpell._i18n[Language].tab + "</h3>"
-            + "<p>" + CardSpell._i18n[Language].copyright + "</p>"
+        return "<h3>" + CardSpell._i18n.tab + "</h3>"
+            + "<p>" + CardSpell._i18n.copyright + "</p>"
     }
 });

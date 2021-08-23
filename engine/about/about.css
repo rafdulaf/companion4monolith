@@ -98,6 +98,7 @@
 .custom input[type='checkbox'] {
     width: 16px;
     height: 16px;
+    flex: none;
 }
 
 @media screen and (min-width: 600px) {

@@ -1,66 +1,11 @@
 var EncyclopediaModels = {
-    _i18n: {
-        'fr': {
-            'tab': "Figu<wbr/>rines",
-            'from': "Disponible dans :",
-            'fromAnd': "<br/>et",
-            'model': "figurine",
-            'models': "figurines",
-            'paintedBy': "Peint par: ",
-            'zoom': "Zoom",
-            'print': "Imprimer",
-            'forum': "Besoin d'inspiration pour peindre ? Regardez sur le forum !",
-            'heroes': "Utilisée par les héros :",
-            'tiles': "Utilisée par les tuiles :",
-            'tokens': "Remplace le jeton :",
-            'copyright': "Les figurines sont celles du jeu Conan de Monolith.<br/>Les peintures sont l'oeuvre de leurs auteurs respectifs (voir le détail de chaque image).<br/>Merci à <a href='https://the-overlord.com/index.php?/profile/56-teil/'>@teil</a> pour avoir réuni la liste des sujets du forum qui parle de chaque figurine."
-            
-        },
-        'en': {
-            'tab': "Minia<wbr/>tures",
-            'from': "Available in:",
-            'fromAnd': "<br/>and",
-            'model': "miniature",
-            'models': "miniatures",
-            'paintedBy': "Painted by: ",
-            'zoom': "Zoom",
-            'print': "Print",
-            'forum': "Need inspiration to paint? Look at the forum!",
-            'heroes': "Used by the heroes:",
-            'tiles': "Used by the tiles:",
-            'tokens': "Replaces the token:",
-            'copyright': "The miniatures are those of the game Conan from Monolith.<br/>The paintings are the work of their respective authors (see the detail of each image).<br/>Thanks to <a href = 'https: // the- overlord.com/index.php?/profile/56-teil/'>@teil </a> for putting together the list of forum topics that talk about each miniature."
-        },
-        'it': {
-            'tab': "Minia<wbr/>ture",
-            'from': "Disponibile in:",
-            'fromAnd': "<br/>e",
-            'model': "miniatura",
-            'models': "miniature",
-            'paintedBy': "Dipinta da: ",
-            'zoom': "Zoom",
-            'print': "Stampa",
-            'forum': "Hai bisogno di ispirazione per la pittura ? Consulta il forum !",
-            'heroes': "Usata dagli Eroi :",
-            'tiles': "Usata nelle tessere :",
-            'tokens': "Sostituisci il segnalino :",
-            'copyright': "Le miniature sono quelle del gioco Conan della Monolith <br/> Il lavoro di pittura è opera dei rispettivi autori (vedi il dettaglio su ogni immagine).<br/>Grazie a <a href = 'https: // the- overlord.com/index.php?/profile/56-teil/'>@teil </a> per aver raccolto la lista dei topic inerenti a ciascuna miniatura."
-        }
-    },
-
     preinit: function()
     {
-        Encyclopedia._slides.push({   label: EncyclopediaModels._i18n[Language].tab, id: "encyclopedia-models", onShow: EncyclopediaModels.onShow,  onHide: EncyclopediaModels.onHide });
+        Encyclopedia._slides.push({   label: EncyclopediaModels._i18n.tab, id: "encyclopedia-models", onShow: EncyclopediaModels.onShow,  onHide: EncyclopediaModels.onHide });
 
-
-        EncyclopediaModels._facets = [
+        EncyclopediaModels._facets = Utils.mergeObject([
             {
                 id: 'keyword',
-                label: {
-                    'fr': "Mot-clé",
-                    'en': "Keyword",
-                    'it': "Parola chiave"
-                },
                 filter: function(item, value)
                 {
                     return Rules._deemphasize(EncyclopediaModels._findModelNames(item)).indexOf(Rules._deemphasize(value)) != -1;
@@ -69,29 +14,7 @@ var EncyclopediaModels = {
 
             {
                 id: 'expansions',
-                label: {
-                    'fr': "Status",
-                    'en': "Status",
-                    'it': "Stato"
-                },
-                values: [
-                    {
-                        id: "yes",
-                        label: {
-                            'fr': "Possédées",
-                            'en': "Owned",
-                            'it': "Nella collezione"
-                        }
-                    },
-                    {
-                        id: "no",
-                        label: {
-                            'fr': "Manquantes",
-                            'en': "Missing",
-                            'it': "Mancante"
-                        }
-                    }
-                ],
+                values: [ { id: "yes" }, { id: "no" } ],
                 filter: function(item, selectedValues) {
                     if (selectedValues.length != 1)
                     {
@@ -108,11 +31,6 @@ var EncyclopediaModels = {
 
             {
                 id: 'origins',
-                label: {
-                    'fr': "Origine",
-                    'en': "Origin",
-                    'it': "Origine"
-                },
                 values: (function() {
                     var values = [];
                     for (var i in Encyclopedia.expansions.types)
@@ -163,38 +81,8 @@ var EncyclopediaModels = {
             
             {
                 id: 'usage',
-                label: {
-                    'fr': "Utilisé par",
-                    'en': "Used by",
-                    'it': "Utilizzata da"
-                },
                 sort: true,
-                values: [
-                    {
-                        id: "hero",
-                        label: {
-                            'fr': "Héros",
-                            'en': "Hero",
-                            'it': "Eroe"
-                        }
-                    },
-                    {
-                        id: "overlord",
-                        label: {
-                            'fr': "Overlord",
-                            'en': "Overlord",
-                            'it': "Overlord"
-                        }
-                    },
-                    {
-                        id: "none",
-                        label: {
-                            'fr': "Aucun",
-                            'en': "None",
-                            'it': "Nessuno"
-                        }
-                    }
-                ],
+                values: [ { id: "hero" }, { id: "overlord" }, { id: "none" } ],
                 filter: function(item, selectedValues) {
                     for (var i = 0; i < selectedValues.length; i++)
                     {
@@ -226,46 +114,8 @@ var EncyclopediaModels = {
             
             {
                 id: 'type',
-                label: {
-                    'fr': "Type",
-                    'en': "Type",
-                    'it': "Tipo"
-                },
                 sort: true,
-                values: [
-                    {
-                        id: "human",
-                        label: {
-                            'fr': "Humain",
-                            'en': "Human",
-                            'it': "Umano"
-                        }
-                    },
-                    {
-                        id: "animal",
-                        label: {
-                            'fr': "Animal",
-                            'en': "Animal",
-                            'it': "Animale"
-                        }
-                    },
-                    {
-                        id: "monster",
-                        label: {
-                            'fr': "Monstre",
-                            'en': "Monster",
-                            'it': "Mostro"
-                        }
-                    },
-                    {
-                        id: "scenery",
-                        label: {
-                            'fr': "Décor",
-                            'en': "Scenery",
-                            'it': "Accessorio"
-                        }
-                    }
-                ],
+                values: [ { id: "human" }, { id: "animal" }, { id: "monster" }, { id: "scenery" } ],
                 filter: function(item, selectedValues) {
                     for (var i = 0; i < selectedValues.length; i++)
                     {
@@ -277,7 +127,7 @@ var EncyclopediaModels = {
                     return false;
                 }
             }
-        ]
+        ], EncyclopediaModels._facets);
     },
 
     init: function()
@@ -288,7 +138,7 @@ var EncyclopediaModels = {
         AutoZoom.autozoom("encyclopedia-models-wrapper", 204, 274);
         EncyclopediaModels.displayModels();
         
-        About.addCopyright(EncyclopediaModels._i18n[Language].tab, EncyclopediaModels._i18n[Language].copyright);
+        About.addCopyright(EncyclopediaModels._i18n.tab, EncyclopediaModels._i18n.copyright);
     },
 
     displayModels: function()
@@ -428,7 +278,7 @@ var EncyclopediaModels = {
         {
             if (model.name)
             {
-                let name = (sort && model.sort && model.sort[Lanugage]) ? model.sort[Lanugage] : model.name[Language];
+                let name = (sort && model.sort && model.sort[Lanugage]) ? model.sort[Lanugage] : model.name;
                 names.push(name);
                 noSpanNames.push(name);
             }
@@ -437,8 +287,8 @@ var EncyclopediaModels = {
             for (var i in heroes)
             {
                 var hero = heroes[i];
-                var name = (sort && hero.sort && hero.sort[Language]) ? hero.sort[Language] : hero.name[Language]; 
-                name += (hero.subname ? " <span>" + hero.subname[Language] + "</span>" : "");
+                var name = (sort && hero.sort && hero.sort) ? hero.sort : hero.name; 
+                name += (hero.subname ? " <span>" + hero.subname + "</span>" : "");
                 let nameWithoutSpan = withoutSpan(name);
                 if (noSpanNames.indexOf(nameWithoutSpan) == -1)
                 {
@@ -451,7 +301,7 @@ var EncyclopediaModels = {
             for (var i in tiles)
             {
                 var tile = tiles[i];
-                var name = (sort && tile.sort && tile.sort[Language]) ? tile.sort[Language] : tile.name[Language];
+                var name = (sort && tile.sort && tile.sort) ? tile.sort : tile.name;
                 let nameWithoutSpan = withoutSpan(name);
                 if (noSpanNames.indexOf(nameWithoutSpan) == -1)
                 {
@@ -464,7 +314,7 @@ var EncyclopediaModels = {
             for (var i in tokens)
             {
                 var token = tokens[i];
-                var name = (sort && token.sort && token.sort[Language]) ? token.sort[Language] : token.name[Language];
+                var name = (sort && token.sort && token.sort) ? token.sort : token.name;
                 let nameWithoutSpan = withoutSpan(name);
                 if (noSpanNames.indexOf(nameWithoutSpan) == -1)
                 {
@@ -519,8 +369,8 @@ var EncyclopediaModels = {
         var originString = "";
         for (var i in originsCount)
         {
-            if (originString) originString += " " + EncyclopediaModels._i18n[Language].fromAnd + " ";
-            originString += Encyclopedia._getOrigin(i) + " (" + originsCount[i] + " " + (originsCount[i] == 1 ? EncyclopediaModels._i18n[Language].model : EncyclopediaModels._i18n[Language].models) + ")";
+            if (originString) originString += " " + EncyclopediaModels._i18n.fromAnd + " ";
+            originString += Encyclopedia._getOrigin(i) + " (" + originsCount[i] + " " + (originsCount[i] == 1 ? EncyclopediaModels._i18n.model : EncyclopediaModels._i18n.models) + ")";
         }
         
         
@@ -553,7 +403,7 @@ var EncyclopediaModels = {
         var painter = "";
         if (painters.length)
         {
-            painter = "<div class='painter'>" + EncyclopediaModels._i18n[Language].paintedBy; 
+            painter = "<div class='painter'>" + EncyclopediaModels._i18n.paintedBy; 
             for (var i in painters)
             {
                 if (i != 0) painter += ",";
@@ -565,27 +415,27 @@ var EncyclopediaModels = {
         var model = models[0];
         
         var heroes = EncyclopediaModels._findHeroesByModel(model).map(hero => EncyclopediaHeroes._linkToHero(hero.id)).join(", ")
-        if (heroes) heroes = "<div class='heroes'>" + EncyclopediaModels._i18n[Language].heroes + " " + heroes + "</div>";
+        if (heroes) heroes = "<div class='heroes'>" + EncyclopediaModels._i18n.heroes + " " + heroes + "</div>";
 
         var tiles = EncyclopediaModels._findTilesByModel(model).map(tile => EncyclopediaTiles._linkToTile(tile.id)).join(", ");
-        if (tiles) tiles = "<div class='tiles'>" + EncyclopediaModels._i18n[Language].tiles + " " + tiles + "</div>";
+        if (tiles) tiles = "<div class='tiles'>" + EncyclopediaModels._i18n.tiles + " " + tiles + "</div>";
         
         var tokens = EncyclopediaModels._findTokensByModel(model).map(token => EncyclopediaTokens._linkToToken(token.id));
-        if (tokens.length > 0) tokens = "<div class='tokens'>" + EncyclopediaModels._i18n[Language].tokens + " " + tokens[0] + "</div>";
+        if (tokens.length > 0) tokens = "<div class='tokens'>" + EncyclopediaModels._i18n.tokens + " " + tokens[0] + "</div>";
 
         var dialogActions = [{
-            label: EncyclopediaModels._i18n[Language].zoom,
+            label: EncyclopediaModels._i18n.zoom,
             icon: "encyclopedia-models-zoom",
             fn: "EncyclopediaModels._zoom();"
         }, {
-            label: EncyclopediaModels._i18n[Language].print,
+            label: EncyclopediaModels._i18n.print,
             icon: "encyclopedia-models-print",
             fn: "window.print()"
         }];
 
         if (model.forum) {
             dialogActions.push({
-                label: EncyclopediaModels._i18n[Language].forum, 
+                label: EncyclopediaModels._i18n.forum, 
                 icon: "encyclopedia-models-forum",
                 fn: "window.open('" + model.forum + "');"
             });
@@ -593,7 +443,7 @@ var EncyclopediaModels = {
         
         Nav.dialog(EncyclopediaModels._findModelNames(model) || "",
             "<div class='modeldetails'>"
-                + "<div class='from'>" + EncyclopediaModels._i18n[Language].from + " "
+                + "<div class='from'>" + EncyclopediaModels._i18n.from + " "
                     + originString
                 + "</div>"
                 + heroes

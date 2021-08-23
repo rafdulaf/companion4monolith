@@ -1,0 +1,3 @@
+Encyclopedia._i18n = mergeObject(Encyclopedia._i18n, {
+    'copyright': "Le informazioni in inglese provengono dal sito: <a target='_blank' href='https://conan-companion.herokuapp.com/'>conan-companion.herokuapp.com</a> con la cortese autorizzazione di David Abel.<br/>Traduzione in francese di <a href='https://the-overlord.com/index.php?/profile/5240-cochon/' target='_blank'>@cochon</a>.<br/>Traduzione in italiano di <a href=\"https://the-overlord.net/index.php?/profile/6029-pensareadaltro/\">@pensareadaltro</a>.Le informazioni su Corinthia provengono da <a href=\"https://the-overlord.com/index.php?/profile/107-corwin/\">@Corwin</a>.<br/>Miniature, foto e testi associati provengono dal sito: <a href='http://conan.paintings.free.fr/'>Conan paintings</a>."
+});

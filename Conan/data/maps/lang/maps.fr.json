@@ -1,0 +1,273 @@
+{
+    "list" : {
+        "Pict_Village": {
+            "description": {
+                "title": "Village Picte",
+                "rules": [
+                    {
+                        "title": "Tentures",
+                        "description": "Les tentures à l’entrée de chaque hutte (et à l'intérieur de la grande) bloquent la ligne de vue. Entrer ou sortir d’une hutte demande 1 point de mouvement supplémentaire à cause des tentures."
+                    }, {
+                        "title": "Défoncer les cloisons",
+                        "description": "On ne peut pas défoncer les cloisons des huttes en pierre."
+                    }, {
+                        "title": "Murs d'enceinte",
+                        "description": "On ne peut pas défoncer les murs d’enceinte, ni les escalader."
+                    }, {
+                        "title": "Lignes de vue",
+                        "description": "Les arbustes ne bloquent pas la ligne de vue."
+                    }, {
+                        "title": "Huttes en bois",
+                        "description": "Les cloisons des huttes peuvent être défoncées par la compétence Défoncer les cloisons. On ne peut pas défoncer les cloisons d’une hutte saturée."
+                    }, {
+                        "title": "Escalade",
+                        "description": "Franchir les rochers demande la compétence Escalade et 2 points de mouvement supplémentaires."
+                    }
+                ],
+                "totopic": "https://the-overlord.com/index.php?/topic/15-core-carte-village-picte/"
+            }
+        },
+
+        "Inn": {
+            "description": {
+                "title": "Auberge",
+                "rules": [
+                    {
+                        "title": "Bar et tables",
+                        "description": "Cette règle s’applique seulement si le scénario l’indique dans les règles spéciales. Un personnage peut monter sur le bar ou sur une table pour 1 point de mouvement supplémentaire, qu’il ait ou non la compétence Saut ou Escalade. Il gagne la compétence Allonge tant qu’il se trouve sur le bar ou sur une table et bénéficie du bonus de surplomb de {dice_yellow} pour ses attaques au Corps-à-corps et à distance. Le bar et les tables ne bloquent pas la ligne de vue. En descendre n’engendre pas de surcoût de points de mouvement."
+                    }, {
+                        "title": "Tabourets et bancs",
+                        "description": "Cette règle s’applique seulement si le scénario l’indique dans les règles spéciales. Tabourets du bar: ramasser un tabouret est gratuit et doit être réalisé lors de l’action d’attaque au corps-à-corps. Le tabouret est immédiatement utilisé par l’attaquant pour bénéficier du bonus de {dice_yellow}, en plus du bonus d’attaque de son arme s’il en utilise une. Il est ensuite défaussé."
+                    }, {
+                        "title": "Murs",
+                        "description": "Tous les murs situés entre deux salles du même étage sont destructibles (par une figurine avec la compétence Défoncer les cloisons) à l’exception des murs d’enceinte de la taverne y compris ceux donnant sur la rue."
+                    }, {
+                        "title": "Saut/Escalade depuis la balustrade",
+                        "description": "Sauter de la balustrade inflige {dice_orange}{dice_orange} sans défense possible et {dice_orange} si la figurine possède la compétence Saut. Remonter sur la balustrade coûte 2 points de mouvement supplémentaires pour un personnage ayant la compétence Escalade."
+                    }, {
+                        "title": "Saut/Escalade depuis un escalier",
+                        "description": "Sauter des escaliers inflige {dice_yellow}{dice_yellow} sans défense possible et {dice_yellow} si la figurine possède la compétence Saut. Remonter sur la zone d’un escalier par la rambarde sur le côté coûte 1 point de mouvement supplémentaire pour un personnage ayant la compétence Escalade. Emprunter l’escalier normalement n’engendre pas de surcoût de points de mouvement."
+                    }
+                ],
+                "totopic": "https://the-overlord.com/index.php?/topic/23-core-carte-taverne/"
+            }
+        },
+
+        "Ships": {
+            "description": {
+                "title": "Bateaux",
+                "rules": [
+                    {
+                        "title": "Soute",
+                        "description": "La sortie de la soute doit se faire par la zone directement en face des escaliers."
+                    }, {
+                        "title": "Mât",
+                        "description": "Il existe toujours une ligne de vue vers la zone d’un mât même si celui-ci bloque normalement la ligne de vue."
+                    }, {
+                        "title": "Ligne de vue",
+                        "description": "Il existe une ligne de vue depuis une zone de navire vers une zone d’eau, si la ligne de vue ne passe pas au travers de plus d’une zone de navire (en comptant la zone de départ de la ligne de vue), et permet de bénéficier du bonus de surplomb de {dice_yellow}. Il existe une ligne de vue depuis une zone d’eau vers une zone de navire, si la ligne de vue ne passe pas au travers de plus d’une zone de navire (en comptant la zone d’arriveé de la ligne de vue)."
+                    }
+                ],
+                "totopic": "https://the-overlord.com/index.php?/topic/21-core-carte-bateaux/"
+            }
+        },
+
+        "Abandoned_Fort": {
+            "description": {
+                "title": "Fortin abandonné",
+                "rules": [
+                    {
+                        "title": "Rempart et tour",
+                        "description": "Seules les zones de rempart directement adjacentes aux tours partagent une ligne de vue avec l’intérieur de la tour."
+                    }, {
+                        "title": "Pièces de la cour",
+                        "description": "Les pièces dans la cour du fortin n’ont pas de toit. Depuis les remparts, il est possible de voir et de sauter à l’intérieur de ces pièces."
+                    }, {
+                        "title": "Bordure",
+                        "description": "Les 9 zones en bordure du plateau de jeu sont adjacentes et il est possible de se déplacer normalement au travers de ces zones pour faire le tour du fortin."
+                    }, {
+                        "title": "Lignes de vue",
+                        "description": "Depuis les remparts, les figurines ont une ligne de vue sur toutes les zones de la cour."
+                    }, {
+                        "title": "Saut/Escalade depuis les remparts",
+                        "description": "Sauter depuis les remparts inflige {dice_red}{dice_red} sans défense possible et {dice_red} si la figurine possède la compétence Saut. Remonter sur les remparts est impossible."
+                    }, {
+                        "title": "Éboulis",
+                        "description": "Entrer dans une zone d’éboulis coûte 2 points de mouvement supplémentaires. Cependant, si la figurine possède la compétence Escalade, il n’y a pas de coût supplémentaire."
+                    }
+                ],
+                "totopic": "https://the-overlord.com/index.php?/topic/20-core-carte-fortin-en-ruines/"
+            }
+        },
+
+        "Citadel": {
+            "description": {
+                "title": "Citadelle",
+                "rules": [
+                    {
+                        "title": "Saut/Escalade depuis le balcon",
+                        "description": "Sauter depuis le balcon inflige {dice_yellow}{dice_yellow} sans défense possible, {dice_yellow} si la figurine possède la compétence Saut. Remonter sur le balcon coûte 1 point de mouvement supplémentaire pour un personnage ayant la compétence Escalade."
+                    }, {
+                        "title": "Fosse",
+                        "description": "Y entrer est un mouvement normal, en sortir coûte 1 point de mouvement supplémentaire."
+                    }, {
+                        "title": "Grilles",
+                        "description": "Les grilles ne bloquent pas les lignes de vue."
+                    }
+                ],
+                "totopic": "https://the-overlord.com/index.php?/topic/22-sg-carte-forteresse/"
+            }
+        },
+
+        "Swamp": {
+            "description": {
+                "title": "Marais",
+                "rules": [
+                    {
+                        "title": "Sortir de l'eau",
+                        "description": "Quitter une zone d’eau coûte 1 point de mouvement supplémentaire. Quitter une zone d’eau pour monter directement sur une zone de bois coûte 2 points de mouvement supplémentaires.",
+                        "areasText": "Les zones d'eau sont visibles en turquoise."
+                    }, {
+                        "title": "Saut",
+                        "description": "Il n’est pas possible de sauter la zone d’eau centrale autour de l’autel en un seul saut. Un arrêt intermédiaire sur l’autel est obligatoire"
+                    }, {
+                        "title": "Huttes en bois",
+                        "description": "Les cloisons des huttes peuvent être défoncées par la compétence Défoncer les cloisons."
+                    }
+                ],
+                "totopic": "https://the-overlord.com/index.php?/topic/24-sg-carte-marais/"
+            }
+        },
+
+        "Forest": {
+            "description": {
+                "title": "Forêt",
+                "rules": [
+                    {
+                        "title": "Forêt impénétrable",
+                        "description": "Les zones de forêt bloquent les lignes de vue. On peut tirer à partir d'une telle zone mais pas tirer dans cette zone ni au travers. Y entrer coûte 1 point de mouvement supplémentaire. En sortir ne coûte pas de point de mouvement supplémentaire."
+                    }, {
+                        "title": "Eperon rocheux",
+                        "description": "Les zones de rochers bloquent les lignes de vue et octroient un bonus de surplomb. Y grimper coûte 1 point de mouvement supplémentaire. En descendre ne coûte pas de point de mouvement supplémentaire."
+                    }
+                ],
+                "totopic": "https://the-overlord.com/index.php?/topic/808-nordheim-carte-for%C3%AAt/"
+            }
+        },
+
+        "Mound": {
+            "description": {
+                "title": "Tertre",
+                "rules": [
+                    {
+                        "title": "De la neige et du sang",
+                        "description": "A chaque fois qu’un Héros utilise des points de mouvement pour se déplacer, il doit dépenser 1 gemme en plus du coût normal, quel que soit le nombre de zones parcourues. Cette gemme est placée sur la case Mouvement mais n’octroie pas de point de mouvement au Héros. Niord, les alliés Aesirs et les unités de l’Overlord ne sont pas soumis à cette règle."
+                    }, {
+                        "title": "En pente douce",
+                        "description": "La colline n'affecte pas le déplacement des figurines. La zone au sommet de la colline centrale permet cependant de gagner le bonus de surplomb habituel tout comme les 3 tertres  aux angles de la carte"
+                    }
+                ],
+                "totopic": "https://the-overlord.com/index.php?/topic/809-nordheim-carte-tertre/"
+            }
+        },
+
+        "Market": {
+            "description": {
+                "title": "Marché",
+                "rules": [
+                    {
+                        "title": "Murs en bois",
+                        "description": "Un personnage disposant de la compétence Défoncer parois ne peut pas défoncer les murs de la caserne au sud, et du fumoir au nord car ils sont renforcés avec des rondins de bois."
+                    }, {
+                        "title": "Pirogues",
+                        "description": "Les zones d'eau avec pirogues sont considérées comme des zones normales pour le mouvement."
+                    }, {
+                        "title": "Natation",
+                        "description": "Un personnage disposant de la compétence Natation peut traverser les zones d'eau sans pirogue."
+                    }, {
+                        "title": "Saut",
+                        "description": "Un personnage ayant la compétence Saut peut franchir les zones marquées sur le plan. Si un héros échoue dans sa tentative de saut, son mouvement est perdu et il reste sur la zone de départ du saut."
+                    }
+                ],
+                "totopic": "https://the-overlord.com/index.php?/topic/804-khitai-carte-march%C3%A9/"
+            }
+        },
+
+        "Tower": {
+            "description": {
+                "title": "Tour",
+                "rules": [
+                    {
+                        "title": "Grand plongeon",
+                        "description": "Un Héros présent dans les zones peut essayer de sauter dans l’étang en contrebas. Pour cela, il doit se déplacer hors de la case et dépenser 1 point de mouvement supplémentaire pour plonger. Sauter dans l’étang inflige {dice_orange}{dice_orange} sans défense possible et {dice_orange} si la figurine possède la compétence saut."
+                    }, {
+                        "title": "Mur de pierre",
+                        "description": "Un personnage disposant de la compétence « Défoncer Parois » ne peut pas défoncer les parois extérieures de la tour et les murs en pierres."
+                    }, {
+                        "title": "Fenêtres",
+                        "description": "Les fenêtres au niveau « 2 » et « 3 » donnent une ligne de vue sur les zones à l’extérieur de la tour du niveau « 1 » directement placées à la verticale de celles-ci."
+                    }, {
+                        "title": "Escalade",
+                        "description": "Un personnage ayant la compétence Escalade peut :<br/>• passer du niveau « 1 » au niveau « 2 » (et inversement) en grimpant par l’arbre pour 1 point de mouvement supplémentaire,<br/>• passer du niveau « 2 » à « 3 » (et inversement) ou du niveau « 3 » à « 4 » (et inversement) en grimpant par l’extérieur de la tour pour 2 points de mouvement supplémentaires."
+                    }, {
+                        "title": "Table et escaliers",
+                        "description": "Les escaliers donnent un bonus de surplomb sur les zones situées en contrebas. Il est possible de monter sur la table située au niveau « 2 » avec ou sans les compétences Saut ou Escalade pour 1 point de mouvement supplémentaire. Un personnage sur la zone de la table bénéficie du bonus de surplomb pour ses attaques à distance et au corps-à-corps. Il est possible d’attaquer les zones adjacentes au corps-à-corps depuis cette zone avec ou sans la compétence Allonge. La zone de la table ne bloque pas la ligne de vue."
+                    }
+                ],
+                "totopic": "https://the-overlord.com/index.php?/topic/805-khitai-carte-tour/"
+            }
+        },
+        
+        "Underground": {
+            "description": {
+                "title": "Grotte",
+                "rules": [
+                    {
+                        "title": "Emprunter un puits",
+                        "description": "Le plateau est composé de deux niveaux dont le niveau « 1 » est exactement superposé au niveau « 0 ».<br/>Le niveau est indiqué par un pictogramme en bas à gauche de chaque niveau. Un personnage, avec ou sans la compétence Escalade, présent dans la zone d’un puits peut l’emprunter pour se déplacer du niveau « 1 » au niveau « 0 » (et inversement) pour un surcoût de 2 points de mouvement.<br/>Emprunter un puits permet de se déplacer dans la zone du puits trouvant exactement à sa verticale (au niveau supérieur ou inférieur). Les Scorpions géants peuvent emprunter les puits sans pénalité de mouvement."
+                    }, {
+                        "title": "Passages secrets",
+                        "description": "Chaque niveau est parcouru par un réseau de passages secrets dont les entrées sont représentées par un pion. Un personnage dans la zone d’un passage secret peut se déplacer vers une autre zone avec un passage secret du même niveau en dépensant 2 points de mouvement supplémentaires.<br/>Les unités de l’Overlord et Ikhmet connaissent les recoins du temple et ignorent cette pénalité.<br/>Les zones de départ et d’arrivée doivent être vides d’ennemis."
+                    }, {
+                        "title": "Obscurité",
+                        "description": "Le dédale des tunnels est plongé dans une obscurité impénétrable. Il n’existe pas de ligne de vue entre deux zones différentes sur tout le plateau. Toute action nécessitant une ligne de vue ne peut être réalisée que dans une même zone."
+                    }
+                ],
+                "totopic": "https://the-overlord.com/index.php?/topic/806-stygie-carte-souterrains/"
+            }
+        },
+
+        "Port": {
+            "description": {
+                "title": "Port",
+                "rules": [
+                    {
+                        "title": "Sauter à l'eau",
+                        "description": "Un personnage dans une zone adjacente à une des zones de mer situées au sud de la ville peut se jeter à l’eau sans pénalité de mouvement. Si ce personnage ne dispose pas de la compétence Natation, il meurt immédiatement."
+                    }, {
+                        "title": "Remonter sur le quai",
+                        "description": "Un personnage dans une zone d’eau adjacente à une échelle peut remonter sur le quai pour un surcoût de 1 point de mouvement."
+                    }, {
+                        "title": "Toits de la ville",
+                        "description": "Les zones situées sur le toit de l’immeuble à l’ouest de la ville donnent un bonus de surplomb sur les zones situées en contrebas, y compris les escaliers menant à ces toits. Sauter depuis les toits dans la rue inflige {dice_orange}{dice_orange} sans défense possible et {dice_orange} si le personnage possède la compétence Saut. Il n’est pas possible de remonter sur les toits depuis la rue autrement que par les escaliers."
+                    }, {
+                        "title": "Défoncer les cloisons",
+                        "description": "Le seul mur qui peut être défoncé est celui situé dans l'entrepôt à l'est de la ville"
+                    }
+                ],
+                "totopic": "https://the-overlord.com/index.php?/topic/807-stygie-carte-port/"
+            }
+        }
+    },
+
+    "compositions": {
+        "Port_Ship": {
+            "description": {
+                "title": "Bateau au port"
+            }
+        }        
+    },
+    
+    "parts": {
+    }
+}

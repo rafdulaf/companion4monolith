@@ -1,0 +1,91 @@
+{
+    "list" : {
+        "Bank": {
+            "description": {
+                "title": "La Banque",
+                "totopic": "https://the-overlord.com/index.php?/topic/4351-core-carte-banque/",
+                "pdf": "data/maps/data/Bank/rules_fr.pdf"
+            }
+        },
+
+        "ACE_Chemicals": {
+            "description": {
+                "title": "ACE Chemicals",
+                "totopic": "https://the-overlord.com/index.php?/topic/4350-core-carte-ace-chemicals/",
+                "pdf": "data/maps/data/ACE_Chemicals/rules_fr.pdf"
+            }
+        },
+
+        "Crime_Alley": {
+            "description": {
+                "title": "Crime Alley",
+                "totopic": "https://the-overlord.com/index.php?/topic/4352-core-carte-crime-alley/",
+                "pdf": "data/maps/data/Crime_Alley/rules_fr.pdf"
+            }
+        },
+
+        "Subway": {
+            "description": {
+                "title": "Métro",
+                "totopic": "https://the-overlord.com/index.php?/topic/4354-core-carte-metrosubway/",
+                "pdf": "data/maps/data/Subway/rules_fr.pdf"
+            }
+        },
+
+        "Arkham_Asylum": {
+            "description": {
+                "title": "L'asile d'Arkham",
+                "totopic": "https://the-overlord.com/index.php?/topic/4358-arkham-asylum-carte-arkham-asylum/",
+                "pdf": "data/maps/data/Arkham_Asylum/rules_fr.pdf"
+            }
+        },
+
+        "Joker_Funhouse": {
+            "description": {
+                "title": "La fête foraine du Joker",
+                "totopic": "https://the-overlord.com/index.php?/topic/4359-arkham-asylum-cartes-f%C3%AAte-foraine-du-joker/",
+                "pdf": "data/maps/data/Joker_Funhouse/rules_fr.pdf"
+            }
+        },
+
+        "Batcave": {
+            "description": {
+                "title": "La Batcave",
+                "totopic": "https://the-overlord.com/index.php?/topic/4357-wayne-manor-cartes-batcave/",
+                "pdf": "data/maps/data/Batcave/rules_fr.pdf"
+            }
+        },
+
+        "Crime_Alley_Night": {
+            "description": {
+                "title": "Crime Alley de nuit",
+                "totopic": "https://the-overlord.com/index.php?/topic/4352-core-carte-crime-alley/",
+                "pdf": "data/maps/data/Crime_Alley/rules_fr.pdf"
+            }
+        },
+
+        "Wayne_Manor": {
+            "description": {
+                "title": "Le manoir Wayne",
+                "totopic": "https://the-overlord.com/index.php?/topic/4356-wayne-manor-carte-wayne-manor/",
+                "pdf": "data/maps/data/Wayne_Manor/rules_fr.pdf"
+            }
+        },
+        
+       "Sewers": {
+            "description": {
+                "title": "Les égouts",
+                "totopic": "https://the-overlord.com/index.php?/topic/4353-maps-pack-carte-egoutssewers/",
+                "pdf": "data/maps/data/Sewers/rules_fr.pdf"
+            }
+        },
+
+       "GCPD": {
+            "description": {
+                "title": "GCPD",
+                "totopic": "https://the-overlord.com/index.php?/topic/4355-maps-pack-carte-gcpd/",
+                "pdf": "data/maps/data/GCPD/rules_fr.pdf"
+            }
+        }
+    }
+}

@@ -1,0 +1,286 @@
+{
+    "list": {
+        "blank": {
+            "title": ""
+        },
+        "letters": {
+            "title": null
+        },
+        "pictish_drink": {
+            "title": "Intruglio pitto"
+        },
+        "amulet": {
+            "title": "Amuleto"
+        },
+        "ring": {
+            "title": "Anello"
+        },
+        "crossbow": {
+            "title": "Balestra"
+        },
+        "bossonian_bow": {
+            "title": "Arco bossoniano"
+        },
+        "shemite_bow": {
+            "title": "Arco shemita"
+        },
+        "zingaran_bow": {
+            "title": "Arco zingariano"
+        },
+        "scale_mail": {
+            "title": "Armatura a scaglie"
+        },
+        "leather_armor": {
+            "title": "Armatura di cuoio"
+        },
+        "stygian_artifact": {
+            "title": "Artefatto stygiano"
+        },
+        "mitras_staff": {
+            "title": "Bastone di Mitra"
+        },
+        "shamans_staff": {
+            "title": "Bastone dello sciamano"
+        },
+        "black_staff": {
+            "title": "Bastone nero"
+        },
+        "kordava_boots": {
+            "title": "Stivali di Kordava"
+        },
+        "buckler": {
+            "title": "Brocchiero"
+        },
+        "shield_of_mitra": {
+            "title": "Scudo di Mitra"
+        },
+        "tribal_shield": {
+            "title": "Scudo tribale"
+        },
+        "armbands_of_bel": {
+            "title": "Bracciali di Bel"
+        },
+        "cape": {
+            "title": "Mantello"
+        },
+        "toxic_mushrooms": {
+            "title": "Funghi velenosi"
+        },
+        "akbitanas_claymore": {
+            "title": "Spadone di Akbitana"
+        },
+        "key": {
+            "title": "Chiave"
+        },
+        "tower_key": {
+            "title": "Chiave della torre"
+        },
+        "heart_of_ahriman": {
+            "title": "Cuore di Ahriman"
+        },
+        "trapped_chest": {
+            "title": "Forziere-trappola"
+        },
+        "empty_chest": {
+            "title": "Forziere vuoto"
+        },
+        "chain_mail": {
+            "title": "Cotta di maglia"
+        },
+        "xuthal_crown": {
+            "title": "Corona di Xuthal"
+        },
+        "asshuri_cuirass": {
+            "title": "Corazza asshuri"
+        },
+        "dagger": {
+            "title": "Pugnale"
+        },
+        "assassins_dagger": {
+            "title": "Pugnale dell'assassino"
+        },
+        "parrying_dagger": {
+            "title": "Manosinistra"
+        },
+        "sacrificial_dagger": {
+            "title": "Pugnale sacrificale"
+        },
+        "warlock_documents": {
+            "title": "Libri dello Stregone"
+        },
+        "shield": {
+            "title": "Scudo"
+        },
+        "elixir": {
+            "title": "Elisir"
+        },
+        "poisoned": {
+            "title": "Avvelenato"
+        },
+        "censer": {
+            "title": "Incensiere"
+        },
+        "sword": {
+            "title": "Spada"
+        },
+        "two_handed_sword": {
+            "title": "Spadone a due mani"
+        },
+        "aesir_blade": {
+            "title": "Spada degli Aesir"
+        },
+        "short_sword": {
+            "title": "Daga"
+        },
+        "khitan_short_sword": {
+            "title": "Spada corta khitana"
+        },
+        "conans_sword": {
+            "title": "Spada di Conan"
+        },
+        "phoenix_sword": {
+            "title": "Spada della fenice"
+        },
+        "khitan_sword": {
+            "title": "Spada khitana"
+        },
+        "turanian_sword": {
+            "title": "Spada turaniana"
+        },
+        "false_evidence": {
+            "title": "Falso indizio"
+        },
+        "pictish_fetish": {
+            "title": "Feticcio pitto"
+        },
+        "phial": {
+            "title": "Ampolla"
+        },
+        "amulet_fragment": {
+            "title": "Frammento di amuleto"
+        },
+        "ginger": {
+            "title": "Zenzero"
+        },
+        "spellbook": {
+            "title": "Grimorio"
+        },
+        "axe": {
+            "title": "Ascia"
+        },
+        "battle_axe": {
+            "title": "Ascia da battaglia"
+        },
+        "halberd": {
+            "title": "Alabarda"
+        },
+        "idol_of_yag-kosha": {
+            "title": "Idolo di Yag-Kosha"
+        },
+        "information": {
+            "title": "Informazione"
+        },
+        "javelin": {
+            "title": "Giavellotto"
+        },
+        "kris": {
+            "title": "Kriss"
+        },
+        "throwing_knives": {
+            "title": "Coltelli da lancio"
+        },
+        "spear": {
+            "title": "Lancia"
+        },
+        "ornamental_spear": {
+            "title": "Lancia ornamentale"
+        },
+        "black_lotus": {
+            "title": "Loto nero"
+        },
+        "shadow_mantel": {
+            "title": "Mantello delle ombre"
+        },
+        "boris_hammer": {
+            "title": "Martello di Bori"
+        },
+        "mitras_mace": {
+            "title": "Mazza di Mitra"
+        },
+        "tribal_mace": {
+            "title": "Mazza tribale"
+        },
+        "hyrkanian_mirror": {
+            "title": "Specchio hyrkaniano"
+        },
+        "toad_mucus": {
+            "title": "Bava di rospo"
+        },
+        "unguent": {
+            "title": "Unguento"
+        },
+        "orb_blue": {
+            "title": "Globo blu"
+        },
+        "explosive_orb": {
+            "title": "Globo esplosivo"
+        },
+        "orb_red": {
+            "title": "Globo rosso"
+        },
+        "orb_green": {
+            "title": "Globo verde"
+        },
+        "tools": {
+            "title": "Utensili"
+        },
+        "zingaran_breastplate": {
+            "title": "Corazza zingariana"
+        },
+        "knife": {
+            "title": "Coltello"
+        },
+        "yuetshi_knife": {
+            "title": "Pugnale Yuetshi"
+        },
+        "orb_red_position": {
+            "title": "Posizione globo"
+        },
+        "orb_green_position": {
+            "title": "Posizione globo"
+        },
+        "orb_blue_position": {
+            "title": "Posizione globo"
+        },
+        "potion": {
+            "title": "Pozione"
+        },
+        "antidote": {
+            "title": "Antidoto"
+        },
+        "life_potion": {
+            "title": "Pozione curativa"
+        },
+        "pirate_saber": {
+            "title": "Sciabola"
+        },
+        "saltpeter": {
+            "title": "Salnitro"
+        },
+        "warlocks_blood": {
+            "title": "Sangue dello Stregone"
+        },
+        "sorcerers_scepter": {
+            "title": "Scettro dello stregone"
+        },
+        "stygian_scepter": {
+            "title": "Scettro stygiano"
+        },
+        "torch": {
+            "title": "Torcia"
+        },
+        "sacred_treasure": {
+            "title": "Tesoro sacro"
+        }
+    }
+}

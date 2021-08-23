@@ -1,0 +1,97 @@
+{
+    "list": {
+        "trap": {
+            "name": "Fosse"
+        },
+        "chair": {
+            "name": "Chaise"
+        },
+        "palisade": {
+            "name": "Barricade"
+        },
+        "palisade-life": {
+            "name": "Vie de barricade"
+        },
+        "reinforcement": {
+            "name": "Renfort"
+        },
+        "barrel": {
+            "name": "Tonneau"
+        },
+        "time": {
+            "name": "Compte-tour"
+        },
+        "invocation": {
+            "name": "Invocation"
+        },
+        "alarm": {
+            "name": "Alarme"
+        },
+        "energy": {
+            "name": "Energie"
+        },
+        "mitra-halo": {
+            "name": "Halo de Mitra"
+        },
+        "set-halo": {
+            "name": "Halo de Set"
+        },
+        "wrecked-wall": {
+            "name": "Cloison défoncée"
+        },
+        "chest-mark": {
+            "name": "Pion trésor"
+        },
+        "marker": {
+            "name": "Marqueur numéroté"
+        },
+        "scree": {
+            "name": "Eboulis"
+        },
+        "water": {
+            "name": "Eau"
+        },
+        "web": {
+            "name": "Toile"
+        },
+        "door": {
+            "name": "Porte"
+        },
+        "chest": {
+            "name": "Coffre"
+        },
+        "table": {
+            "name": "Table"
+        },
+        "stairs": {
+            "name": "Escalier"
+        },
+        "fire": {
+            "name": "Fire"
+        },
+        "well-big": {
+            "name": "Puits"
+        },
+        "iced-atali": {
+            "name": "Atali gelée"
+        },
+        "iced-armor": {
+            "name": "Armure gelée"
+        },
+        "assassins": {
+            "name": "Assassin"
+        },
+        "well": {
+            "name": "Pion puits"
+        },
+        "secret": {
+            "name": "Passage secret"
+        },
+        "poison": {
+            "name": "Poison"
+        },
+        "bridge": {
+            "name": "Pont"
+        }
+    }
+}

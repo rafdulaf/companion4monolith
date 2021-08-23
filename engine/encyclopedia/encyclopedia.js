@@ -31,7 +31,7 @@ var Encyclopedia = {
                 var item = object.list[j];
                 if (item[property])
                 {
-                    Languages.forEach(lang => item[property][lang + "_deemphasized"] = Rules._deemphasize(item[property][lang]));
+                    Languages.forEach(lang => item[property + "_deemphasized"] = Rules._deemphasize(item[property]));
                 }
             }
         }
@@ -66,27 +66,6 @@ var Encyclopedia = {
         
     },
     
-    _i18n: {
-        'fr': {
-            'menu': "Encyclopédie",
-            'operatorAnd': "et",
-            'operatorOr': "ou",
-            'search': "Chercher"
-        },
-        'en': {
-            'menu': "Encyclopedia",
-            'operatorAnd': "and",
-            'operatorOr': "or",
-            'search': "Search"
-        },
-        'it': {
-            'menu': "Enciclopedia",
-            'operatorAnd': "e",
-            'operatorOr': "o",
-            'search': "Ricerca"
-        }
-    },
-    
     _slides: [],
     
     _loadItems: function() {
@@ -101,7 +80,7 @@ var Encyclopedia = {
             return;
         }
         
-        Nav.addIcon(Encyclopedia._i18n[Language].menu, "encyclopedia-icon", "encyclopedia");
+        Nav.addIcon(Encyclopedia._i18n.menu, "encyclopedia-icon", "encyclopedia");
         
         Encyclopedia._items.forEach(item => item.preinit());
         
@@ -111,7 +90,7 @@ var Encyclopedia = {
         
         Encyclopedia.onChange();
 
-        About.addCopyright(Encyclopedia._i18n[Language].menu, Encyclopedia.copyright());
+        About.addCopyright(Encyclopedia._i18n.menu, Encyclopedia.copyright());
         
         // Watch search engine
         $(window).on('resize', Encyclopedia.onResize);
@@ -137,7 +116,7 @@ var Encyclopedia = {
             var expansion = Encyclopedia.expansions.list[j];
             if (origin == expansion.id)
             {
-                return expansion.title[Language];  
+                return expansion.title;  
             }
         }
         return null;
@@ -165,12 +144,12 @@ var Encyclopedia = {
         if ($e.attr('data-operator') == 'and')
         {
             $e.attr('data-operator', 'or');
-            $c.html(Encyclopedia._i18n[Language].operatorOr);
+            $c.html(Encyclopedia._i18n.operatorOr);
         }
         else
         {
             $e.attr('data-operator', 'and');
-            $c.html(Encyclopedia._i18n[Language].operatorAnd);
+            $c.html(Encyclopedia._i18n.operatorAnd);
         }
     },
     
@@ -189,10 +168,10 @@ var Encyclopedia = {
                 se += " data-operator='and' onclick=\"Encyclopedia.switchOperator(this); " + displayFunc + "\""
             }
             se += ">"; 
-            se += facet.label[Language];
+            se += facet.label;
             if (facet.operator == "or/and")
             {
-                se += "<span >" + Encyclopedia._i18n[Language].operatorAnd + "</span>";
+                se += "<span >" + Encyclopedia._i18n.operatorAnd + "</span>";
             }
             se += "</span>";
             
@@ -207,7 +186,7 @@ var Encyclopedia = {
                     se += "<label>" 
                         + "<input type='checkbox' id='" + prefix + "-" + facet.id + "-" + value.id + "' onchange='" + displayFunc + "'" + a + "/>"
                         + "<span>" 
-                        + value.label[Language]
+                        + value.label
                         + "</span>"
                         + "</label>";
                 }
@@ -224,7 +203,7 @@ var Encyclopedia = {
         
         $("#" + parentId).append(se);
         $("#" + parentId + " .search-engine-mobileoverlay").on("click", this._openSearch.bind(this, parentId));
-        Nav.addFloatingAction(parentId, this._i18n[Language].search, "encycloppedia-search-icon", "encyclopedia-" + prefix + "-search", this._openSearch.bind(this, parentId));
+        Nav.addFloatingAction(parentId, this._i18n.search, "encycloppedia-search-icon", "encyclopedia-" + prefix + "-search", this._openSearch.bind(this, parentId));
         Nav.createFloatingBar(parentId, 'mobile-only');
     },
     _openSearch: function(parentId) {

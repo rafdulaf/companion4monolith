@@ -111,12 +111,12 @@ Maps = mergeObject(Maps, {
                 var areaAide = "";
                 if (rules[i].areas)
                 {
-                    areaAide += "<span class='map-help-rule-areas'><span class='map-help-rule-areas-square' style='background-color: " + rules[i].areasColor + "'></span>" + rules[i].areasText[Language] + "</span>"
+                    areaAide += "<span class='map-help-rule-areas'><span class='map-help-rule-areas-square' style='background-color: " + rules[i].areasColor + "'></span>" + rules[i].areasText + "</span>"
                 }
     
                 aide += "<li>"
-                + "<span class='map-help-rule-title' data-num='" + (i + 1) + "'>" + rules[i].title[Language] + "</span>"
-                + "<span class='map-help-rule-description'>" + About._replace(rules[i].description[Language]) + "</span>"
+                + "<span class='map-help-rule-title' data-num='" + (i + 1) + "'>" + rules[i].title + "</span>"
+                + "<span class='map-help-rule-description'>" + About._replace(rules[i].description) + "</span>"
                 + areaAide
                 + "</li>";
             }

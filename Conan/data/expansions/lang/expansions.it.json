@@ -1,0 +1,137 @@
+{
+    "types": {
+        "corebox": {
+            "text": "Gioco base"
+        }, 
+        "thematic": {
+            "text": "Espansioni tematiche"
+        }, 
+        "other": {
+            "text": "Espansioni base"
+        }, 
+        "books": {
+            "text": "Libri"
+        }, 
+        "artists": {
+            "text": "Espansioni VIP"
+        }, 
+        "decoration": {
+            "text": "Accessori"
+        }, 
+        "misc": {
+            "text": "Altre"
+        }
+    },
+
+    "list": {
+        "corebox": {
+            "title": "Gioco base",
+            "short": "Gioco base"
+        }, 
+        "stretchgoal": {
+            "title": "\"Barbarian\" Stretch goals box (2015)",
+            "short": "Barbarian box"
+        }, 
+        "king": {
+            "title": "Contenuto \"King\" esclusivo",
+            "short": "Contentuto King"
+        },
+
+        "stygia": {
+            "title": "Stygia",
+            "short": "Stygia"
+        }, 
+        "nordheim": {
+            "title": "Nordheim",
+            "short": "Nordheim"
+        }, 
+        "khitai": {
+            "title": "Khitaï",
+            "short": "Khitaï"
+        },
+
+        "crossbowmen": {
+            "title": "Balestrieri",
+            "short": "Balestrieri"
+        }, 
+        "blackdragons": {
+            "title": "Dragoni neri",
+            "short": "Dragoni neri"
+        }, 
+        "blackones": {
+            "title": "I Neri",
+            "short": "I Neri"
+        }, 
+        "kushwitchhunters": {
+            "title": "Cacciatori di streghe kushiti",
+            "short": "Kushiti"
+        }, 
+        "valvan": {
+            "title": "Valchiria Vanir",
+            "short": "Valchiria Vanir"
+        }, 
+        "yoy": {
+            "title": "Yogah di Yag",
+            "short": "Yogah di Yag"
+        }, 
+        "baalpteor": {
+            "title": "Baal-Pteor",
+            "short": "Baal-Pteor"
+        }, 
+        "demonearth": {
+            "title": "Demone della Terra",
+            "short": "Demone della Terra"
+        }, 
+        "dragon": {
+            "title": "Drago",
+            "short": "Drago"
+        }, 
+        "giantwolves": {
+            "title": "Lupi giganti",
+            "short": "Lupi giganti"
+        }, 
+        "sabretoothtiger": {
+            "title": "Tigre dai denti a sciabola",
+            "short": "Tigre dai denti a sciabola"
+        },
+
+        "campaignbook": {
+            "title": "Campagna - Il Diavolo di ferro",
+            "short": "Campagna"
+        }, 
+        "setbook": {
+            "title": "Libro di Set",
+            "short": "Libro di Set"
+        },
+
+        "bbox": {
+            "title": "Brom Box",
+            "short": "Brom Box"
+        }, 
+        "ppbox": {
+            "title": "Paolo Parente Box",
+            "short": "Paolo Parente Box"
+        }, 
+        "xcbox": {
+            "title": "Xavier Colette Box",
+            "short": "Xavier Colette Box"
+        },
+
+        "doorpack": {
+            "title": "Porte",
+            "short": "Porte"
+        }, 
+        "adventurepack": {
+            "title": "Arredi",
+            "short": "Arredi"
+        }, 
+        "monolith-site": {
+            "title": "Regali Monolith (sito web o novità)",
+            "short": "Regali Monolith"
+        }, 
+        "corinthia": {
+            "title": "Corinthia (Crossover con Mythic Battles Pantheon)",
+            "short": "Corinthia"
+        }
+    }
+}

@@ -1,0 +1,137 @@
+{
+    "types": {
+        "corebox": {
+            "text": "Boîte de jeu"
+        }, 
+        "thematic": {
+            "text": "Extensions thématiques"
+        }, 
+        "other": {
+            "text": "Extensions simples"
+        }, 
+        "books": {
+            "text": "Livres"
+        }, 
+        "artists": {
+            "text": "Extensions d'artistes"
+        }, 
+        "decoration": {
+            "text": "Décors"
+        }, 
+        "misc": {
+            "text": "Divers"
+        }
+    },
+
+    "list": {
+        "corebox": {
+            "title": "Boîte de base",
+            "short": "Boîte de base"
+        }, 
+        "stretchgoal": {
+            "title": "Boîte de récompenses \"Barbarian\" (2015)",
+            "short": "Boîte Barbarian"
+        }, 
+        "king": {
+            "title": "Contenu \"King\" exclusif",
+            "short": "Contenu King"
+        },
+
+        "stygia": {
+            "title": "Stygie",
+            "short": "Stygie"
+        }, 
+        "nordheim": {
+            "title": "Nordheim",
+            "short": "Nordheim"
+        }, 
+        "khitai": {
+            "title": "Khitaï",
+            "short": "Khitaï"
+        },
+
+        "crossbowmen": {
+            "title": "Arbalétriers",
+            "short": "Arbalétriers"
+        }, 
+        "blackdragons": {
+            "title": "Dragons Noirs",
+            "short": "Dragons Noirs"
+        }, 
+        "blackones": {
+            "title": "Hommes Noirs",
+            "short": "Hommes Noirs"
+        }, 
+        "kushwitchhunters": {
+            "title": "Chasseurs de sorcières Kushites",
+            "short": "Kushites"
+        }, 
+        "valvan": {
+            "title": "Valkyrie Vanir",
+            "short": "Valkyrie Vanir"
+        }, 
+        "yoy": {
+            "title": "Yogah de Yag",
+            "short": "Yogah de Yag"
+        }, 
+        "baalpteor": {
+            "title": "Baal-Pteor",
+            "short": "Baal-Pteor"
+        }, 
+        "demonearth": {
+            "title": "Démon de la Terre",
+            "short": "Démon de la Terre"
+        }, 
+        "dragon": {
+            "title": "Dragon",
+            "short": "Dragon"
+        }, 
+        "giantwolves": {
+            "title": "Loups géants",
+            "short": "Loups géants"
+        }, 
+        "sabretoothtiger": {
+            "title": "Tigre à dents de sabre",
+            "short": "Tigre à dents de sabre"
+        },
+
+        "campaignbook": {
+            "title": "Livre de Campagne - La légende du diable d'Airain",
+            "short": "Livre de campagne"
+        }, 
+        "setbook": {
+            "title": "Livre de Set",
+            "short": "Livre de Set"
+        },
+
+        "bbox": {
+            "title": "Brom Box",
+            "short": "Brom Box"
+        }, 
+        "ppbox": {
+            "title": "Paolo Parente Box",
+            "short": "Paolo Parente Box"
+        }, 
+        "xcbox": {
+            "title": "Xavier Colette Box",
+            "short": "Xavier Colette Box"
+        },
+
+        "doorpack": {
+            "title": "Pack de portes",
+            "short": "Pack de portes"
+        }, 
+        "adventurepack": {
+            "title": "Pack aventure",
+            "short": "Pack aventure"
+        }, 
+        "monolith-site": {
+            "title": "Cadeaux Monolith (site web ou actualités)",
+            "short": "Cadeaux Monolith"
+        }, 
+        "corinthia": {
+            "title": "Corinthia (Crossover avec Mythic Battles Panthéon)",
+            "short": "Corinthia"
+        }
+    }
+}

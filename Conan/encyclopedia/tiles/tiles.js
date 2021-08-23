@@ -1,86 +1,20 @@
 var EncyclopediaTiles = {
-    _i18n: {
-        'fr': {
-            'tab': "Tuiles",
-            'transfertToStudio': "Copier la carte dans le studio",
-            'transfertOK': "La carte a été copiée dans le studio des tuiles",
-            'transfertConfirm': "Voulez-vous copier la carte dans le studio pour pouvoir la modifier ou l'imprimer ?",
-            'from': "Disponible dans :",
-            'fromAnd': "et",
-            'card': "exemplaire",
-            'cards': "exemplaires",
-            'skill': "Compétences :",
-            'story': "Histoire :"
-        },
-        'en': {
-            'tab': "Tiles",
-            'transfertToStudio': "Copy the card into the studio",
-            'transfertOK': "The card was copied to the tiles studio",
-            'transfertConfirm': "Do you want to copy the card into the studio in order to edit it or print it?",
-            'from': "Available in:",
-            'fromAnd': "and",
-            'card': "copy",
-            'cards': "copies",
-            'skill': "Skills:",
-            'story': "Story :"
-          },
-          'it': {
-            'tab': "Tessere",
-            'transfertToStudio': "Copia la carta nello Studio",
-            'transfertOK': "La carta è stata copiata nello Studio",
-            'transfertConfirm': "Vuoi copiare la carta nello Studio per modificarla o stamparla?",
-            'from': "Disponibile in :",
-            'fromAnd': "e",
-            'card': "copia",
-            'cards': "copie",
-            'skill': "Abilità :",
-            'story': "Storia :"
-        }
-    },
-
     preinit: function()
     {
-        Encyclopedia._slides.push({   label: EncyclopediaTiles._i18n[Language].tab, id: "encyclopedia-tile", onShow: EncyclopediaTiles.onShow,  onHide: EncyclopediaTiles.onHide });
+        Encyclopedia._slides.push({   label: EncyclopediaTiles._i18n.tab, id: "encyclopedia-tile", onShow: EncyclopediaTiles.onShow,  onHide: EncyclopediaTiles.onHide });
 
-        EncyclopediaTiles._facets = [
+        EncyclopediaTiles._facets = Utils.mergeObject([
             {
                 id: 'keyword',
-                label: {
-                    'fr': "Mot-clé",
-                    'en': "Keyword",
-                    'it': "Parola chiave"
-                },
                 filter: function(item, value)
                 {
-                    return item.name[Language] && item.name[Language + '_deemphasized'].indexOf(Rules._deemphasize(value)) != -1;
+                    return item.name && item.name_deemphasized.indexOf(Rules._deemphasize(value)) != -1;
                 }
             },
 
             {
                 id: 'expansions',
-                label: {
-                    'fr': "Status",
-                    'en': "Status",
-                    'it': "Stato"
-                },
-                values: [
-                    {
-                        id: "yes",
-                        label: {
-                            'fr': "Possédées",
-                            'en': "Owned",
-                            'it': "Nella collezione"
-                        }
-                    },
-                    {
-                        id: "no",
-                        label: {
-                            'fr': "Manquantes",
-                            'en': "Missing",
-                            'it': "Mancante"
-                        }
-                    }
-                ],
+                values: [ { id: "yes" }, { id: "no" } ],
                 filter: function(item, selectedValues) {
                     if (selectedValues.length != 1)
                     {
@@ -97,11 +31,6 @@ var EncyclopediaTiles = {
 
             {
                 id: 'origins',
-                label: {
-                    'fr': "Origine",
-                    'en': "Origin",
-                    'it': "Origine"
-                },
                 values: (function() {
                     var values = [];
                     for (var i in Encyclopedia.expansions.types)
@@ -153,38 +82,8 @@ var EncyclopediaTiles = {
 
             {
                 id:'kind',
-                label: {
-                    'fr': "Typologie",
-                    'en': "Kind",
-                    'it': "Tipologia"
-                },
                 sort: true,
-                values: [
-                    {
-                        id: "melee",
-                        label: {
-                            'fr': "Corps-à-corps",
-                            'en': "Melee",
-                            'it': "Mischia"
-                        }
-                    },
-                    {
-                        id: "ranged",
-                        label: {
-                            'fr': "Distance",
-                            'en': "Ranged",
-                            'it': "A Distanza"
-                        }
-                    },
-                    {
-                        id: "none",
-                        label: {
-                            'fr': "Aucun",
-                            'en': "None",
-                            'it': "Nessuno"
-                        }
-                    }
-                ],
+                values: [ { id: "melee" }, { id: "ranged" }, { id: "none" } ],
                 filter: function(item, selectedValues) {
 
                     return (selectedValues.indexOf('melee')!=-1 && item.attacktype == "contact" && item.dices['0'] != "none")
@@ -195,11 +94,6 @@ var EncyclopediaTiles = {
 
             {
                 id: 'skills',
-                label: {
-                    'fr': "Compétences",
-                    'en': "Skills",
-                    'it': "Abilità"
-                },
                 sort: true,
                 operator: "or/and",
                 values: (function() {
@@ -226,46 +120,8 @@ var EncyclopediaTiles = {
 
             {
                 id: 'type',
-                label: {
-                    'fr': "Type",
-                    'en': "Type",
-                    'it': "Tipo"
-                },
                 sort: true,
-                values: [
-                    {
-                        id: "human",
-                        label: {
-                            'fr': "Humain",
-                            'en': "Human",
-                            'it': "Umano"
-                        }
-                    },
-                    {
-                        id: "animal",
-                        label: {
-                            'fr': "Animal",
-                            'en': "Animal",
-                            'it': "Animale"
-                        }
-                    },
-                    {
-                        id: "monster",
-                        label: {
-                            'fr': "Monstre",
-                            'en': "Monster",
-                            'it': "Mostro"
-                        }
-                    },
-                    {
-                        id: "none",
-                        label: {
-                            'fr': "Aucun",
-                            'en': "None",
-                            'it': "Nessuno"
-                        }
-                    }
-                ],
+                values: [ { id: "human" }, { id: "animal" }, { id: "monster" }, { id: "none" } ],
                 filter: function(item, selectedValues) {
                     var modelType = item.modelType; // modelType specified on tile => no model (corinthia...)
                     if (modelType == null)
@@ -294,30 +150,8 @@ var EncyclopediaTiles = {
 
             {
                 id: 'token',
-                label: {
-                    'fr': "Jeton",
-                    'en': "Token",
-                    'it': "Segnalino"
-                },
                 sort: true,
-                values: [
-                    {
-                        id: "with",
-                        label: {
-                            'fr': "Avec",
-                            'en': "With",
-                            'it': "Con"
-                        }
-                    },
-                    {
-                        id: "without",
-                        label: {
-                            'fr': "Sans",
-                            'en': "Without",
-                            'it': "Senza"
-                        }
-                    }
-                ],
+                values: [ { id: "with" }, { id: "without" } ],
                 filter: function(item, selectedValues) {
                     // Tokens can be shared by several tiles. Model links them
                     var tokens = EncyclopediaTiles._getTokensOrSharedTokens(item);
@@ -335,22 +169,13 @@ var EncyclopediaTiles = {
 
             {
                 id: 'move',
-                label: {
-                    'fr': "Déplacement",
-                    'en': "Move",
-                    'it': "Movimento"
-                },
                 values: (function() {
                     var v = [];
                     for (var i = 0 ; i < 10 ; i++)
                     {
                         v.push({
                             id: i + "",
-                            label: {
-                                'fr': i,
-                                'en': i,
-                                'it': i
-                            }
+                            label: i
                         })
                     }
                     return v;
@@ -362,22 +187,13 @@ var EncyclopediaTiles = {
 
             {
                 id: 'defense',
-                label: {
-                    'fr': "Défense",
-                    'en': "Defense",
-                    'it': "Difesa"
-                },
                 values: (function() {
                     var v = [];
                     for (var i = 0 ; i < 20 ; i++)
                     {
                         v.push({
                             id: i + "",
-                            label: {
-                                'fr': i,
-                                'en': i,
-                                'it': i
-                            }
+                            label: i
                         })
                     }
                     return v;
@@ -389,11 +205,6 @@ var EncyclopediaTiles = {
 
             {
                 id: 'dice',
-                label: {
-                    'fr': "Attaque ~",
-                    'en': "Attack ~",
-                    'it': "Attacco ~"
-                },
                 values: (function() {
                     var dices = [];
                     for (var i = 0 ; i < Encyclopedia.tiles.list.length ; i++)
@@ -412,11 +223,7 @@ var EncyclopediaTiles = {
                     {
                         v.push({
                             id: dices[i],
-                            label: {
-                                'fr': dices[i] + " à " + (dices[i] + 1) + " haches",
-                                'en': dices[i] + " to " + (dices[i] + 1) + " axes",
-                                'it': dices[i] + " a " + (dices[i] + 1) + " asce"
-                            }
+                            label: dices[i] + " " + EncyclopediaTiles._facets.dice.to +  " " + (dices[i] + 1) + " " + EncyclopediaTiles._facets.dice.axes
                         })
                     }
                     return v;
@@ -425,7 +232,7 @@ var EncyclopediaTiles = {
                     return selectedValues.indexOf(Math.floor(EncyclopediaTiles._tilePower(item))) != -1;
                 }
             }
-        ]        
+        ], EncyclopediaTiles._facets);    
     },
 
     _tilePower: function(tile)
@@ -493,8 +300,8 @@ var EncyclopediaTiles = {
         var tiles = "";
 
         Encyclopedia.tiles.list.sort(function(s1, s2) {
-            var s1Name = s1.sort && s1.sort[Language] ? s1.sort[Language] : s1.name[Language];
-            var s2Name = s2.sort && s2.sort[Language] ? s2.sort[Language] : s2.name[Language];
+            var s1Name = s1.sort && s1.sort ? s1.sort : s1.name;
+            var s2Name = s2.sort && s2.sort ? s2.sort : s2.name;
             
             if (!s2Name && !s1Name)
             {
@@ -579,7 +386,7 @@ var EncyclopediaTiles = {
     {
         return {
             id: tile.id + "-" + Math.random(),
-            name: tile.name[Language],
+            name: tile.name,
             color: tile.color,
             movement: tile.movement || "",
             defense: tile.defense || "",
@@ -679,8 +486,8 @@ var EncyclopediaTiles = {
         var originString = "";
         for (var i in originsCount)
         {
-            if (originString) originString += " " + EncyclopediaTiles._i18n[Language].fromAnd + " ";
-            originString += Encyclopedia._getOrigin(i) + " (" + originsCount[i] + " " + (originsCount[i] == 1 ? EncyclopediaTiles._i18n[Language].card : EncyclopediaTiles._i18n[Language].cards) + ")";
+            if (originString) originString += " " + EncyclopediaTiles._i18n.fromAnd + " ";
+            originString += Encyclopedia._getOrigin(i) + " (" + originsCount[i] + " " + (originsCount[i] == 1 ? EncyclopediaTiles._i18n.card : EncyclopediaTiles._i18n.cards) + ")";
         }
 
         var c = "";
@@ -692,7 +499,7 @@ var EncyclopediaTiles = {
 
         var skills = ((tile.skills && tile.skills[0] != 'none') ?
         ("<div class='skill'>"
-            + EncyclopediaTiles._i18n[Language].skill
+            + EncyclopediaTiles._i18n.skill
             + " "
             + (tile.skills[1] != 'none' && tile.skills[2] != 'none' && tile.skills[3] != 'none' && tile.skills[3] != 'space' ? "" + Rules._linkToSkill(tile.skills[3], true) : "")
             + (tile.skills[1] != 'none' && tile.skills[2] != 'none' && tile.skills[2] != 'space' ? "" + Rules._linkToSkill(tile.skills[2], true) : "")
@@ -703,8 +510,8 @@ var EncyclopediaTiles = {
         var superdetails = "";
         if (tile.quote)
         {
-            superdetails += "<div class='superdetails'>" + EncyclopediaTiles._i18n[Language].story + "<br/><div class='img' style='background-image: url(" + tile.image + "?version=" + Version + ")'></div>";
-            superdetails += "<div><p>" + tile.quote.text[Language].replace(/\n/g,'<br/><br/>') + "</p><p><span>" + tile.quote.author.name + " - " + tile.quote.origin[Language] + "</span></p>";
+            superdetails += "<div class='superdetails'>" + EncyclopediaTiles._i18n.story + "<br/><div class='img' style='background-image: url(" + tile.image + "?version=" + Version + ")'></div>";
+            superdetails += "<div><p>" + tile.quote.text.replace(/\n/g,'<br/><br/>') + "</p><p><span>" + tile.quote.author.name + " - " + tile.quote.origin + "</span></p>";
             superdetails += "</div></div>";
         }
 
@@ -720,10 +527,10 @@ var EncyclopediaTiles = {
             }
         }
 
-        Nav.dialog(tile.name[Language] || "",
+        Nav.dialog(tile.name || "",
             "<div class='tiledetails'>"
                 + "<div class='minwidth'></div>"
-                + "<div class='from'>" + EncyclopediaTiles._i18n[Language].from + " "
+                + "<div class='from'>" + EncyclopediaTiles._i18n.from + " "
                     + originString
                 + "</div>"
                 + model
@@ -733,7 +540,7 @@ var EncyclopediaTiles = {
             + "</div>",
             null,
             [{
-                label: EncyclopediaTiles._i18n[Language].transfertToStudio,
+                label: EncyclopediaTiles._i18n.transfertToStudio,
                 icon: "encyclopedia-tile-tostudio",
                 fn: "EncyclopediaTiles._transfert('" + id + "');"
             }]
@@ -741,7 +548,7 @@ var EncyclopediaTiles = {
     },
 
     _transfert: function(id) {
-        if (confirm(EncyclopediaTiles._i18n[Language].transfertConfirm))
+        if (confirm(EncyclopediaTiles._i18n.transfertConfirm))
         {
             var studiotiles = JSON.parse(localStorage.getItem(Application + "_StudioTiles")) || [];
 
@@ -772,7 +579,7 @@ var EncyclopediaTiles = {
             $("#studio .nav-wrapper").slick('slickGoTo', $("#tile").index());
             $("#tile").animate({ scrollTop: $('#tile > *:last()').position().top },500);
 
-            About.warnToast(EncyclopediaTiles._i18n[Language].transfertOK)
+            About.warnToast(EncyclopediaTiles._i18n.transfertOK)
             Nav.closeDialog(true);
         }
     },
@@ -783,10 +590,10 @@ var EncyclopediaTiles = {
         if (tile.colors.length > 1)
         {
             colors += " (";
-            colors += tile.colors.map(c => Tile._i18n[Language]['color' + c.charAt(0).toUpperCase() + c.slice(1)]).join(", ");
+            colors += tile.colors.map(c => Tile._i18n['color' + c.charAt(0).toUpperCase() + c.slice(1)]).join(", ");
             colors += ")";
         }
-        return "<a href='javascript:void(0)' onclick='EncyclopediaTiles.openTile(\"" + id + "\")'>" + tile.name[Language] + colors + "</a>";
+        return "<a href='javascript:void(0)' onclick='EncyclopediaTiles.openTile(\"" + id + "\")'>" + tile.name + colors + "</a>";
     }
 
 };

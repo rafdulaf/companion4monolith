@@ -1,79 +1,4 @@
 var Maps = {
-    _i18n: {
-        'fr': {
-            'menu': "Plateaux",
-            'back': "Retour au choix des plateaux",
-            'openMap': "Cliquez pour voir le plateau : ",
-            'los': "Lignes de vue",
-            'help': "Règles du plateau",
-            'rotate': "Tourner le plateau",
-            'forum': "Une question sur le plateau ? Demandez sur le forum !",
-            'losfile': "Télécharger l'image des lignes de vue du plateau",
-            'pdf': "Télécharger les règles du plateau",
-            'start': "Cliquez sur une zone pour voir les lignes de vue",
-            'legend': "Légende",
-            'clickhelp1': "La zone actuellement selectionnée est en bleu et offre des lignes de vues vers toutes les zones colorées.",
-            'clickhelp4': "Les zones colorées en jaune sont en contrebas et donnent le bonus d'élévation d'un dé jaune.",
-            'clickhelp6': "Les zones vertes sont au même niveau que la zone bleue.",
-            'clickhelp5': "Les zones colorées en turquoise sont au dessus.",
-            'clickhelp3': "Le nombre de cercles verts imbriqués au centre d'une zone indique le niveau d'élévation.",
-            'copyright': "Les textes d'aide des plateaux sont issus des textes proposés par leurs créateurs respectifs. Certains sont retouchés.<br/>"
-                        + "Certains plateaux proposent de télécharger une vue statique des lignes de vue réalisée par <a href='https://the-overlord.com/index.php?/profile/13-roolz/' target='_blank'>@Roolz</a> qui a donc fait tout le travail de calcul des lignes de vue, d'interrogations des auteurs et la synthèse des résultats.<br/>"
-                        + "Le principe des lignes de vues dynamiques est une idée de <a href='https://the-overlord.com/index.php?/profile/88-pamplerousse/' target='_blank'>@Pamplerousse</a>.<br/>"
-                        + "Le plateau :",
-            'copyright_prop': "est la propriété de",
-            'userpref_showall': "Afficher seulement les plateaux que je possède"
-        },
-        'en': {
-            'menu': "Boards",
-            'back': "Back to the boards choice",
-            'openMap': "Click to see the board: ",
-            'los': "Lines of sight",
-            'help': "Board rules",
-            'rotate': "Turn the board",
-            'forum': "A question on this board? Ask the forum!",
-            'losfile': "Download the static lines of sight board",
-            'pdf': "Download the board rules",
-            'start': "Click in an area to see the lines of sight",
-            'legend': "Legend",
-            'clickhelp1': "Blue area is the selected area. It has has line of sight to all colored areas.",
-            'clickhelp4': "Yellow areas are below the blue area: Ranged attacks to these areas get an Elevation bonus of 1 yellow die.",
-            'clickhelp6': "Green areas are at the same level as the blue area.",
-            'clickhelp5': "Turquoise areas are above the blue area.",
-            'clickhelp3': "The number of nested green circles in the center of an area show its elevation level.",
-            'copyright': "The help text of the boards are proposed by their respective creators. Some of them were modified.<br/>"
-                        + "Some boards allow to download a static ligne of sight view that was realized by <a href='https://the-overlord.com/index.php?/profile/13-roolz/' target='_blank'>@Roolz</a> who did all the work of computing line of sights, questionning the authors and sumup the results.<br/>"
-                        + "The principle of the dynamic line of sights is based on a idea of <a href='https://the-overlord.com/index.php?/profile/88-pamplerousse/' target='_blank'>@Pamplerousse</a>.<br/>"
-                        + "The board:" ,
-            'copyright_prop': "is the property of",
-            'userpref_showall': "Display only boards that I own"
-        },
-	    'it': {
-            'menu': "Mappe",
-            'back': "Ritorna alla scelta delle mappe",
-            'openMap': "Click per vedere la mappa: ",
-            'los': "Linee di vista",
-            'help': "Regole",
-            'rotate': "Ruota la mappa",
-            'forum': "Domande su questa mappa? Falle sul forum!",
-            'losfile': "Scarica la mappa statica con le linee di vista",
-            'pdf': "Scarica le regole delle mappa",
-            'start': "Click in un'area per visualizzare le linee di vista",
-            'legend': "Legenda",
-            'clickhelp1': "Le aree blu sono le aree selezionate. Hanno linea di vista libera verso tutte le aree colorate.",
-            'clickhelp4': "Le aree gialle sono un livello superiore alle aree blu: Attacchi a distanza da queste aree guadagnano un bonus Elevazione di +1 Dado giallo.",
-            'clickhelp6': "Le aree verdi sono allo stesso livello delle aree blu.",
-            'clickhelp5': "Le aree celesti sono un livello inferiore a quelle blu.",
-            'clickhelp3': "Il numero di cerchi verdi concentrici al centro dell'area indica il suo livello di elevazione.",
-            'copyright': "I testi esplicativi per ogni mappa sono stati redatti dai loro rispettivi creatori. Alcuni di questi sono stati modificati.<br/>"
-                        + "Alcuni tabelloni permettono di scaricare uno schema statico delle linee di vista che è stato realizzato da <a href='https://the-overlord.com/index.php?/profile/13-roolz/' target='_blank'>@Roolz</a> ha realizzato la digitalizzazione delle linee di vista, consultando l'autore e integrando i risultati delle risposte.<br/>"
-                        + "I principi delle linee di vista dinamiche sono basati su un'idea di: <a href='https://the-overlord.com/index.php?/profile/88-pamplerousse/' target='_blank'>@Pamplerousse</a>.<br/>"
-                        + "Le mappe:" ,
-            'copyright_prop': "è proprietà di:",
-            'userpref_showall': "Mostra solo i tabelloni che ho"
-        }
-    },
-    
     _applySubHash: function(hash) {
     	try
     	{
@@ -87,15 +12,15 @@ var Maps = {
 
 	init: function()
 	{
-		About.addPreference("maps-showmine", Maps._i18n[Language].menu, Maps._i18n[Language].userpref_showall, 'boolean', 'false');
+		About.addPreference("maps-showmine", Maps._i18n.menu, Maps._i18n.userpref_showall, 'boolean', 'false');
 		
-        Nav.addIcon(Maps._i18n[Language].menu, "maps-icon", "maps", Maps._applySubHash);
+        Nav.addIcon(Maps._i18n.menu, "maps-icon", "maps", Maps._applySubHash);
 
-        Nav.addAction("maps", Maps._i18n[Language].legend, "maps-icon-legend", "legend", Maps._legend );
-        Nav.addAction("maps", Maps._i18n[Language].pdf, "maps-icon-pdf", "pdf", Maps._downloadPdf);
-        Nav.addAction("maps", Maps._i18n[Language].losfile, "maps-icon-losfile", "losfile", Maps._losFile);
-        Nav.addAction("maps", Maps._i18n[Language].forum, "maps-icon-forum", "forum", Maps._openForum);
-        Nav.addAction("maps", Maps._i18n[Language].rotate, "maps-icon-rotate", "rotate", function() { Maps._rotate(-1); } );
+        Nav.addAction("maps", Maps._i18n.legend, "maps-icon-legend", "legend", Maps._legend );
+        Nav.addAction("maps", Maps._i18n.pdf, "maps-icon-pdf", "pdf", Maps._downloadPdf);
+        Nav.addAction("maps", Maps._i18n.losfile, "maps-icon-losfile", "losfile", Maps._losFile);
+        Nav.addAction("maps", Maps._i18n.forum, "maps-icon-forum", "forum", Maps._openForum);
+        Nav.addAction("maps", Maps._i18n.rotate, "maps-icon-rotate", "rotate", function() { Maps._rotate(-1); } );
 
         Nav.hideAction("maps", "pdf");
         Nav.hideAction("maps", "forum");
@@ -123,7 +48,7 @@ var Maps = {
         
 		Maps._displayIndex();
 
-        About.addCopyright(Maps._i18n[Language].menu, Maps._i18n[Language].copyright + Maps._copyright());
+        About.addCopyright(Maps._i18n.menu, Maps._i18n.copyright + Maps._copyright());
 	},
 	
 	standalone: false,
@@ -455,7 +380,7 @@ var Maps = {
 			Nav.hideAction("maps", "rotate");
 			Nav.hideAction("maps", "legend");
 			
-			$('#maps').attr('title', Maps._i18n[Language].menu);
+			$('#maps').attr('title', Maps._i18n.menu);
 			Nav.updateTitle();
 		}
 
@@ -473,15 +398,15 @@ var Maps = {
                 {
     				var imgCode = "<div class='map-index-board-image' style=\"background-image: url('" + map.description.thumbnail + "?version=" + Version + "\');\"/>"
                     var subtitleCode = "<div class='map-index-board-sublegend'>" + Maps._getOrigin(map) + "</div>";
-    				var titleCode = "<div class='map-index-board-legend'>" + map.description.title[Language] + "</div>";
+    				var titleCode = "<div class='map-index-board-legend'>" + map.description.title + "</div>";
     				
     				if (Maps.standalone)
     				{
-    					code += "<li><a href=\"?id=" + map.id + "\" title=\"" + Maps._i18n[Language].openMap + map.description.title[Language] + "\">" + imgCode + titleCode + subtitleCode + "</a></li>";
+    					code += "<li><a href=\"?id=" + map.id + "\" title=\"" + Maps._i18n.openMap + map.description.title + "\">" + imgCode + titleCode + subtitleCode + "</a></li>";
     				}
     				else
     				{
-    					code += "<li><a href=\"javascript:void(0);\" title=\"" + Maps._i18n[Language].openMap + map.description.title[Language] + "\" onclick=\"Maps._displayMap('" + map.id + "')\">" + imgCode + titleCode + subtitleCode + "</a></li>";
+    					code += "<li><a href=\"javascript:void(0);\" title=\"" + Maps._i18n.openMap + map.description.title + "\" onclick=\"Maps._displayMap('" + map.id + "')\">" + imgCode + titleCode + subtitleCode + "</a></li>";
     				}
                 }
 			}
@@ -502,7 +427,7 @@ var Maps = {
 			if (map.description.origins.indexOf(expansion.id) != -1)
 			{
 				if (origin) origin += " / ";
-				origin += expansion.short[Language];
+				origin += expansion.short;
 			}
 		}
 		return origin;
@@ -526,7 +451,7 @@ var Maps = {
         if ((slick.currentSlide || 0) == 0)
         {
             Nav.hideAction("maps", "pdf");
-            if (map.description.totopic && map.description.totopic[Language])
+            if (map.description.totopic)
             {
                 Nav.showAction("maps", "forum");
             }
@@ -539,11 +464,11 @@ var Maps = {
         }
         else
         {
-            if (map.description.totopic && map.description.totopic[Language])
+            if (map.description.totopic)
             {
                 Nav.showAction("maps", "forum");
             }
-            if (map.description.pdf && map.description.pdf[Language])
+            if (map.description.pdf)
             {
                 Nav.showAction("maps", "pdf");
             }
@@ -616,7 +541,7 @@ var Maps = {
         {
 	        Maps._onSetPosition(null, 0);
 
-	    	$('#maps').attr('title', map.description.title[Language]);
+	    	$('#maps').attr('title', map.description.title);
 	    	Nav.updateTitle();	    	
         }
 
@@ -634,15 +559,15 @@ var Maps = {
         
         if (!Maps.standalone)
         {
-        	var tabs = [{label: Maps._i18n[Language]['los'], id: "map-map-map"}];
+        	var tabs = [{label: Maps._i18n['los'], id: "map-map-map"}];
         	
         	var rules = map.description.rules;
         	if (rules)
         	{
-        		tabs.push({label: Maps._i18n[Language]['help'], id: "map-map-help"});
+        		tabs.push({label: Maps._i18n['help'], id: "map-map-help"});
         	}
         	
-        	Nav.createTabs(id, tabs, Maps._onSetPosition, { label: Maps._i18n[Language].back, action: "Maps._displayIndex()", cls: "map-back" });
+        	Nav.createTabs(id, tabs, Maps._onSetPosition, { label: Maps._i18n.back, action: "Maps._displayIndex()", cls: "map-back" });
         }
         else
     	{
@@ -651,7 +576,7 @@ var Maps = {
 
         $("#map-map-map")
             .addClass("map-map-wrapper map-map-wrapper-display-help")
-            .attr("data-help", Maps._i18n[Language]['start'])
+            .attr("data-help", Maps._i18n['start'])
             .html("<img class='map-bg' src='" + map.description.board + "?version=" + Version + "'/>" + "<div class='map-map-area'></div>");
             
         $("#map-map-help").append("<div class='map-map-help'></div>");
@@ -898,8 +823,8 @@ var Maps = {
             if (map.description.copyright)
         	{
             	c += "<li>"
-            		+ "<strong>" + map.description.title[Language] + "</strong>"
-            		+ " " + Maps._i18n[Language].copyright_prop
+            		+ "<strong>" + map.description.title + "</strong>"
+            		+ " " + Maps._i18n.copyright_prop
             		+ " <em>" + map.description.copyright + "</em>"
             		+ " (" + Maps._getOrigin(map) + ")"
             		+ "</li>";
@@ -914,14 +839,14 @@ var Maps = {
     {
         var map = Maps._getMap();
 
-        window.open(map.description.totopic[Language] + "#elContent");
+        window.open(map.description.totopic + "#elContent");
     },
 
     _downloadPdf: function()
     {
         var map = Maps._getMap();
 
-        window.open(map.description.pdf[Language] + "?version=" + Version);
+        window.open(map.description.pdf + "?version=" + Version);
     },
     
     _losFile: function()
@@ -933,13 +858,13 @@ var Maps = {
 
     _legend: function()
     {
-        Nav.dialog(Maps._i18n[Language].legend,
+        Nav.dialog(Maps._i18n.legend,
 
-                    "<div class='line1'>" + Maps._i18n[Language]['clickhelp1'] + "</div>"
-               +    "<div class='line4'>" + Maps._i18n[Language]['clickhelp4'] + "</div>"
-               +    "<div class='line6'>" + Maps._i18n[Language]['clickhelp6'] + "</div>"
-               +    "<div class='line5'>" + Maps._i18n[Language]['clickhelp5'] + "</div>"
-               +    "<div class='line3'>" + Maps._i18n[Language]['clickhelp3'] + "</div>"
+                    "<div class='line1'>" + Maps._i18n.clickhelp1 + "</div>"
+               +    "<div class='line4'>" + Maps._i18n.clickhelp4 + "</div>"
+               +    "<div class='line6'>" + Maps._i18n.clickhelp6 + "</div>"
+               +    "<div class='line5'>" + Maps._i18n.clickhelp5 + "</div>"
+               +    "<div class='line3'>" + Maps._i18n.clickhelp3 + "</div>"
         );
     }
 }

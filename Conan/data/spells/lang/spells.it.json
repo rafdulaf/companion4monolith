@@ -1,0 +1,514 @@
+{
+    "list": {
+        "boris_rage": {
+            "title": "Furia di Bori",
+            "text": "Scegli un modello in linea di vista.\nIl bersaglio subisce un danno di: {dice_orange}{dice_orange}.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
+        "borne_by_the_wind": {
+            "title": "Trasportato dal vento",
+            "text": "Il Mago guadagna l'abilità Volare fino alla fine del proprio turno.",
+             "textStyle": {
+                "textSize": 150, 
+                "textInter": 66
+            }
+        },
+        "energy_drain": {
+            "title": "Consuma energia",
+            "text": "Scegli un modello adiacente e in linea di vista.\nL'Eroe trasferisce una gemma dalla sua Riserva alla sua Fatica. L'Overlord recupera 3 gemme dalla sua Fatica.",
+            "textStyle": {
+                "textSize": 144,
+                "textInter": 66
+            }
+        },
+        "gift_of_life": {
+            "title": "Dono della vita",
+            "text": "Scegli un Eroe in linea di vista.\nIl Mago trasferisce 2 gemme dalla propria Riserva a  quella del bersaglio.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
+        "kiss_of_death": {
+            "title": "Bacio della morte",
+            "text": "Rimuovi il Mago dal gioco.\nTutti i modelli che erano nell'area del Mago subiscono un danno di {dice_red_reroll}{dice_red_reroll}{dice_red_reroll}.",
+            "textStyle": {
+                "textSize": 132,
+                "textInter": 73
+            }
+        },
+        "lightning_storm": {
+            "title": "Tempesta di fulmini",
+            "text": "Scegli un'area in linea di vista.\nTutti i modelli nell'area subiscono un attacco pari a: {dice_red}{dice_red}.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
+        "magical_dizziness": {
+            "title": "Stordimento",
+            "text": "Scegli un Mago in linea di vista.\nIl bersaglio spende una (1) gemma in più per lanciare i suoi incantesimi. Lo Stordimento termina all'inizio del prossimo turno del bersaglio.",
+            "textStyle": {
+                "textSize": 130,
+                "textInter": 66
+            }
+        },
+        "mind_control": {
+            "title": "Controllo mentale",
+            "text": "Scegli un nemico non in linea di vista.\nMuovilo di un'area (+1 per ogni gemma spesa) secondo le regole del movimento e senza che questo gli procuri dei danni.",
+            "clarification": "La linea di vista non inflenza la scelta del bersaglio che il mago può scegliere di controllare.\nUn'unità non può bersagliare un'unità nemica che ha Fascinazione, qualunque sia la ragione, a meno che questa unità nemica non l'abbia attaccata.",
+            "textStyle": {
+                "textSize": 140,
+                "textInter": 66
+            }
+        },
+        "mitras_halo": {
+            "title": "Aura di Mitra",
+            "text": "Il Mago aumenta la sua Armatura di 2.\nL'Aura si dissipa all'inizio del turno del Mago dopo un suo turno di Recupero, oppure all'attivazione della tessera del Mago per l'Overlord.",
+            "textStyle": {
+                "textSize": 136,
+                "textInter": 66
+            }
+        },
+        "mitras_healing": {
+            "title": "Guarigione di Mitra",
+            "text": "Scegli un Eroe (anche te stesso) nella tua area. Lancia {dice_orange_reroll}.\nIl risultato è il numero di gemme che l'Eroe trasferisce dalle sue Ferite alla sua Riserva.",
+            "clarification": "Il mago può lanciare Guarigione di Mitra su se stesso",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
+        "pestilential_swarm": {
+            "title": "Sciame pestilenziale",
+            "text": "Tutti i modelli nell'area del Mago (tranne se stesso e i Non-Morti), subiscono un danno di {dice_yellow}{dice_yellow}{dice_yellow}.\nNessuna difesa è possibile.",
+            "textStyle": {
+                "textSize": 141,
+                "textInter": 66
+            }
+        },
+        "sets_bite": {
+            "title": "Morso di Set",
+            "text": "Scegli un modello in linea di vista.\nIl bersaglio (o l'Overlord) sposta una (1) gemma dalla sua Riserva alla sua Fatica.\nIl bersaglio subisce un danno di {dice_orange}{dice_orange}.",
+            "textStyle": {
+                "textSize": 148,
+                "textInter": 65
+            }
+        },
+        "sets_halo": {
+            "title": "Aura di Set",
+            "text": "Il Mago aumenta la sua Armatura di 1.\nL'Aura si dissipa all'inizio del turno del Mago dopo un suo turno di Recupero, oppure all'attivazione della tessera del Mago per l'Overlord.",
+            "textStyle": {
+                "textSize": 136,
+                "textInter": 66
+            }
+        },
+        "sets_possession": {
+            "title": "Possessione di Set",
+            "text": "Scegli un modello entro 2 aree e non in linea di vista.\nSe il personaggio ha l'abilità Bloccare, la perde per l'intero turno, altrimenti non potrà muoversi fino alla prossima attivazione.",
+            "textStyle": {
+                "textSize": 127,
+                "textInter": 66
+            }
+        },
+        "telekinesis": {
+            "title": "Telecinesi",
+            "text": "Scegli un oggetto in linea di vista.\nIl Mago può immediatamente raccoglierlo.\nL'oggetto non può avere Ingombro superiore a 3.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
+        "teleportation": {
+            "title": "Teletrasporto",
+            "text": "Per ogni gemma spesa oltre il costo del Teletrasporto, il Mago può spostarsi di un'area.\nQuesto movimento non è affetto da ostacoli.",
+            "clarification": " Il movimento del Mago non è influenzato nè da intralcio né dall'abilità Bloccare.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
+        "archer_of_acheron": {
+            "title": "Dardo di Acheron",
+            "text": "Scegli un Eroe in linea di vista. L'Eroe migliora al dado superiore la capacità di Attacco a distanza fino alla fine del suo turno (da giallo ad arancione o da arancione a rosso). Se il dado è rilanciabile, resta tale.",
+            "textStyle": {
+                "textSize": 130,
+                "textInter": 66
+            }
+        },
+        "bad_luck": {
+            "title": "Sfortuna",
+            "text": "Scegli un pesonaggio in linea di vista.\nIl bersaglio acquisisce l'abilità Menagramo fino all'inizio del prossimo turno del Mago.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
+        "barrier_of_the_winds": {
+            "title": "Barriera dei venti",
+            "text": "Scegli un personaggio in linea di vista.\nIl modello non può più essere il bersaglio di attacchi a distanza fino all'inizio del prossimo turno del Mago.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
+        "bels_caress": {
+            "title": "Carezza di Bel",
+            "text": "Il Mago apre una porta o un forziere chiuso a chiave che si trova nella sua area.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
+        "bels_hand": {
+            "title": "Mano di Bel",
+            "text": "Scegli un Eroe in linea di vista.\nL'Eroe migliora al dado superiore la capacità di Manipolazione fino alla fine del suo turno (da giallo ad arancione o da arancione a rosso).\nSe il dado è rilanciabile, resta tale.",
+            "textStyle": {
+                "textSize": 130,
+                "textInter": 69
+            }
+        },
+        "blessing_of_ibis": {
+            "title": "Benedizione di Ibis",
+            "text": "Scegli un personaggio in linea di vista.\nIl bersaglio ottiene l'abilità Intoccabile fino all'inizio del prossimo turno del Mago.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
+        "changing_destiny": {
+            "title": "Destino mutevole",
+            "text": "Scegli un personaggio in linea di vista.\nSe è un Eroe, egli è obbligato a essere Cauto nella sua prossima fase di Atteggiamento. Se il personaggio non è un Eroe, l'Overlord non può attivare la tessera corrispondente al modello scelto.",
+            "textStyle": {
+                "textSize": 130,
+                "textInter": 64
+            }
+        },
+        "dagons_attack": {
+            "title": "Attacco di Dagon",
+            "text": "Scegli un Tentacolo in linea di vista.\nIl Tentacolo si sposta fino a un massimo di 3 aree e poi sferra un attacco in mischia.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
+        "dagons_awakening": {
+            "title": "Risveglio di Dagon",
+            "text": "",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
+        "deceleration": {
+            "title": "Rallentamento",
+            "text": "Scegli un personaggio in linea di vista.\nIl bersaglio ha 0 come valore di Movimento base fino all'inzio del prossimo turno del Mago.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
+        "divine_charisma": {
+            "title": "Carisma divino",
+            "text": "Scegli un personaggio in linea di vista.\nIl bersaglio ottiene l'abilità Supporto fino all'inizio del prossimo turno del Mago.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
+        "drying_earth": {
+            "title": "Prosciugamento della Terra",
+            "titleLong": true,
+            "text": "Scegli un'area di terreno instabile (paludosa...) in linea di vista. Il terreno dell'area diventa stabile. Le penalità al movimento non sono più applicabili. L'effetto dell'incantesimo termina all'inizio del prossimo turno del Mago.",
+            "textStyle": {
+                "textSize": 130,
+                "textInter": 63
+            }
+        },
+        "eagle_eye": {
+            "title": "Occhio di falco",
+            "text": "Scegli un personaggio in linea di vista.\nIl bersaglio ottiene l'abilità Tiro di precisione fino alla fine del turno del Mago.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
+        "eel_skin": {
+            "title": "Pelle di anguilla",
+            "text": "Scegli un personaggio in linea di vista.\nIl bersaglio ottiene l'abilità Inafferrabile fino alla fine del turno del Mago.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
+        "escape_route": {
+            "title": "Via di fuga",
+            "text": "Scegli un Eroe in linea di vista.\nL'Eroe migliora al dado superiore la capacità di Difesa (da giallo ad arancione o da arancione a rosso) fino all'inzio del prossimo turno del Mago.\nSe il dado è rilanciabile, resta tale.",
+            "textStyle": {
+                "textSize": 130,
+                "textInter": 64
+            }
+        },
+        "fleet_runner": {
+            "title": "Pie' veloce",
+            "text": "Scegli un personaggio in linea di vista.\nIl bersaglio aumenta di 1 il punteggio base e il punteggio limite del suo Movimento fino alla fine del turno del Mago.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
+        "gullahs_strength": {
+            "title": "Ferocia di Gullah",
+            "text": "Scegli un Eroe in linea di vista.\nL'Eroe migliora al dado superiore la capacità di Attacco in mischia (da giallo ad arancione o da arancione a rosso) fino all'inzio del turno del Mago.\nSe il dado è rilanciabile, resta tale.",
+            "textStyle": {
+                "textSize": 130,
+                "textInter": 64
+            }
+        },
+        "gwahlurs_darkness": {
+            "title": "Oscurità di Gwahlur",
+            "text": "",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
+        "hand_of_death": {
+            "title": "Mano della morte",
+            "text": "Scegli un personaggio nella stessa area del Mago.\nIl bersaglio subisce un danno di {dice_red}{dice_red}. Il Mago subisce un (1) danno.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
+        "hanumans_body": {
+            "title": "Corpo di Hanuman",
+            "text": "",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
+        "inversion": {
+            "title": "Scambio",
+            "text": "Scegli un personaggio in linea di vista.\nIl Mago scambia la sua posizione con quella del bersaglio, pagando una (1) gemma per ogni area che lo separa dal bersaglio, oltre al costo dell'incantesimo.",
+            "textStyle": {
+                "textSize": 141,
+                "textInter": 66
+            }
+        },
+        "ishtars_gaze": {
+            "title": "Sguardo di Ishtar",
+            "text": "Scegli un personaggio in linea di vista.\nIl bersaglio ottiene l'abilità Protetto fino all'inizio del prossimo turno del Mago.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
+        "jhebbal_sags_rage": {
+            "title": "Furia di Jhebbal Sag",
+            "text": "",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
+        "lethal_cloud": {
+            "title": "Nube mortale",
+            "text": "Scegli un'area in linea di vista. Ogni modello che si trova (o che entra o esce) da quest'area subisce una sola volta un danno di {dice_red}{dice_red}. Gli effetti dell'incantesimo terminano all'inizio del prossimo turno del Mago.",
+            "textStyle": {
+                "textSize": 130,
+                "textInter": 64
+            }
+        },
+        "life_transfer": {
+            "title": "Trasferimento vitale",
+            "text": "Scegli un Eroe e un suo Alleato in linea di vista. Sacrifica l'Alleato (rimuovendolo dal gioco) per trasferire 2 gemme dalle Ferite del Mago alla sua Fatica.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
+        "light_as_a_feather": {
+            "title": "Leggero come una piuma",
+            "titleLong": true,
+            "text": "Scegli un personaggio in linea di vista.\nIl bersaglio diminuisce di 3 l'attuale valore di Ingombro fino alla fine del turno del Mago.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
+        "magic_block": {
+            "title": "Blocco magico",
+            "text": "Scegli un personaggio in linea di vista.\nIl bersaglio acquisisce l'abilità Bloccare fino all'inizio del prossimo turno del Mago.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
+        "mystic_barrier": {
+            "title": "Barriera mistica",
+            "text": "Il Mago impedisce a tutti gli altri personaggi di entrare nella sua area fino all'inizio del suo prossimo turno.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
+        "putrescence": {
+            "title": "Putrescenza",
+            "text": "Il Mago non può essere attaccato dai Non-Morti (Mummie e Scheletri), fino all'inizio del suo prossimo turno.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
+        "recall": {
+            "title": "Richiamo",
+            "text": "Scegli un'area in linea di vista.\nTutti i modelli amici nell'area bersaglio sono spostati nell'area occupata dal Mago.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
+        "return_of_the_brave": {
+            "title": "Ritorno degli impavidi",
+            "text": "Scegli un modello morto la cui tessera è nel Fiume; il costo di questo incantesimo è uguale al costo di Rinfozo del modello. Piazza il modello sul tabellone nell'area del Mago come se fosse un rinforzo.",
+            "textStyle": {
+                "textSize": 133,
+                "textInter": 72
+            }
+        },
+        "sets_blood": {
+            "title": "Sangue di Set",
+            "text": "",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
+        "sets_illusion": {
+            "title": "Illusione di Set",
+            "text": "Scegli un personaggio in linea di vista.\nIl bersaglio ottiene l'abilità Orrore fino all'inizio del prossimo turno del Mago.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
+        "shapechanger": {
+            "title": "Mutaforma",
+            "text": "Rimuovi il Mago dalla sua area. All'inizio del suo prossimo turno o della sua prossima attivazione, egli ricompare nella sua area o in un'area ad essa adiacente.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
+        "stone_skin": {
+            "title": "Pelle di pietra",
+            "text": "Scegli un personaggio in linea di vista.\nIl bersaglio aumenta la sua Armatura di 2 punti fino all'inizio del prossimo turno del Mago.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
+        "tears_of_dagon": {
+            "title": "Lacrime di Dagon",
+            "text": "Scegli un'area di terreno stabile in linea di vista. Il suolo dell'area diventa instabile. Attraversare quest'area costa un (1) punto movimento extra. Gli effetti dell'incantesimo terminano all'inizio del prossimo turno del Mago.",
+            "textStyle": {
+                "textSize": 122,
+                "textInter": 69
+            }
+        },
+        "warmth_of_ishtar": {
+            "title": "Calore di Ishtar",
+            "text": "",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
+        "withering": {
+            "title": "Avvizzimento",
+            "text": "Scegli un personaggio in linea di vista.\nIl bersaglio subisce un danno di {dice_yellow_reroll}.\nNessuna difesa è possibile.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
+        "yajurs_awakening": {
+            "title": "Risveglio di Yajur",
+            "text": "Pagando il costo di Rinforzo di un modello Non-Morto (mummia o scheletro) la cui tessera è presente sul Fiume, il Mago può evocarlo come rinforzo nella sua area.",
+            "textStyle": {
+                "textSize": 138,
+                "textInter": 66
+            }
+        },
+        "ymirs_rage": {
+            "title": "Furia di Ymir",
+            "text": "Quando il Mago e i modelli amici attaccano, tirano un un {dice_orange} in più. L'Armatura del Mago e dei modelli amici è ridotta di 1. L'effetto dell'incantesimo termina all'inizio del prossimo turno del Mago.",
+            "textStyle": {
+                "textSize": 123,
+                "textInter": 66
+            }
+        },
+        "weight_of_the_years": {
+            "title": "Il peso degli anni",
+            "text": "L'Overlord lancia {dice_orange}. Tutti gli Eroi subiscono questi danni senza possibilità di difendersi.",
+            "sort": "Peso degli anni",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
+        "blaze": {
+            "title": "Esplosione",
+            "text": "Scegli un'area in linea di vista. Tutti i modelli in quest'area subiscono un attacco di {dice_red}.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
+        "mental_torture": {
+            "title": "Tortura mentale",
+            "text": "Scegli un personaggio nella stessa area del Mago. Il bersaglio subisce un attacco di un {dice_orange} per ogni gemma utilizzata. Nessuna difesa è possibile. Questo incantesimo può essere lanciato una sola volta per turno.",
+            "textStyle": {
+                "textSize": 121,
+                "textInter": 72
+            }
+        },
+        "push_back": {
+            "title": "Respingere",
+            "text": "Il Mago sceglie un personaggio nella sua area. Il bersaglio è spostato di un'area adiacente ignorando gli effetti dell'intralcio. Il bersaglio spostato in questo modo non può subire danni.",
+            "textStyle": {
+                "textSize": 141,
+                "textInter": 72
+            }
+        },
+        "pass_through_wall": {
+            "title": "Attraversa muri",
+            "text": "Il Mago può attraversare una parete che separa due aree adiacenti allo stesso livello come se la parete non ci fosse. Questo movimento è affetto da intralcio.",
+            "textStyle": {
+                "textSize": 140,
+                "textInter": 66
+            }
+        },
+        "psychic_strike": {
+            "title": "Attacco psichico",
+            "text": "Il Mago bersaglia un Eroe distante X aree (con X numero di gemme speso). Questo Eroe sposta tutte le sue gemme dalla Riserva alla Fatica.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
+        "stone_rain": {
+            "title": "Pioggia di pietre",
+            "text": "Il Mago sceglie un'area con un segnalino \"Passaggio segreto\" o \"Pozzo\" situato a X (con X numero di gemme speso) aree da lui e lo rimuove dal gioco. Gli occupanti dell'area subiscono un attacco di {dice_red}{dice_red} senza nessuna difesa.",
+            "textStyle": {
+                "textSize": 115,
+                "textInter": 72
+            }
+        }
+    }
+}

@@ -246,7 +246,7 @@ Nav = {
         var toSelect = $("#" + id);
         
         var t = $(".header .title div")
-        t.html((toSelect.attr('title') || About._i18n[Language].smallName));
+        t.html((toSelect.attr('title') || About._i18n.smallName));
 
         var sizes = ["size10", "size9", "size8", "size7", "size6", "size5", "size4", "size3", "size2", "size1", "size0", "size-1", "size-2"];
         t.removeClass(sizes.join(" "));
@@ -320,7 +320,7 @@ Nav = {
         
         Nav._id = "nav-" + parseInt(Math.random() * 1000);
         var code = "<header class=\"header\">"
-                    + "<div class=\"title\"><div>" + About._i18n[Language].smallName + "</div></div>"
+                    + "<div class=\"title\"><div>" + About._i18n.smallName + "</div></div>"
                     + "<nav class=\"toolbar\" id=\"" + Nav._id + "-toolbar\">"
                         + Nav._drawActions()
                     + "</nav>"

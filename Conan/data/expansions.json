@@ -2,60 +2,25 @@
     "types": [
         {
             "id": "corebox",
-            "text": {
-                "fr": "Boîte de jeu",
-                "en": "Game box",
-                "it": "Gioco base"
-            },
             "column": "left"
         }, {
             "id": "thematic",
-            "text": {
-                "fr": "Extensions thématiques",
-                "en": "Thematic expansions",
-                "it": "Espansioni tematiche"
-            },
             "column": "left"
         }, {
             "id": "other",
-            "text": {
-                "fr": "Extensions simples",
-                "en": "Simple expansions",
-                "it": "Espansioni base"
-            },
             "column": "right",
             "sort": true
         }, {
             "id": "books",
-            "text": {
-                "fr": "Livres",
-                "en": "Books",
-                "it": "Libri"
-            },
             "column": "left"
         }, {
             "id": "artists",
-            "text": {
-                "fr": "Extensions d'artistes",
-                "en": "Artists expansions",
-                "it": "Espansioni VIP"
-            },
             "column": "right"
         }, {
             "id": "decoration",
-            "text": {
-                "fr": "Décors",
-                "en": "Scenery",
-                "it": "Accessori"
-            },
             "column": "left"
         }, {
             "id": "misc",
-            "text": {
-                "fr": "Divers",
-                "en": "Miscellaneous",
-                "it": "Altre"
-            },
             "column": "right"
         }
     ],
@@ -64,352 +29,92 @@
         {
             "id": "corebox",
             "type": "corebox",
-            "title": {
-                "fr": "Boîte de base",
-                "en": "Core box",
-                "it": "Gioco base"
-            },
-            "short": {
-                "fr": "Boîte de base",
-                "en": "Core box",
-                "it": "Gioco base"
-            },
             "mandatory": true
         }, {
             "id": "stretchgoal",
-            "type": "corebox",
-            "title": {
-                "fr": "Boîte de récompenses \"Barbarian\" (2015)",
-                "en": "\"Barbarian\" Stretch goals box (2015)",
-                "it": "\"Barbarian\" Stretch goals box (2015)"
-            },
-            "short": {
-                "fr": "Boîte Barbarian",
-                "en": "Barbarian box",
-                "it": "Barbarian box"
-            }
+            "type": "corebox"
         }, {
             "id": "king",
-            "type": "corebox",
-            "title": {
-                "fr": "Contenu \"King\" exclusif",
-                "en": "Exclusive King content",
-                "it": "Contenuto \"King\" esclusivo"
-            },
-            "short": {
-                "fr": "Contenu King",
-                "en": "King content",
-                "it": "Contentuto King"
-            }
+            "type": "corebox"
         },
 
         {
             "id": "stygia",
-            "type": "thematic",
-            "title": {
-                "fr": "Stygie",
-                "en": "Stygia",
-                "it": "Stygia"
-            },
-            "short": {
-                "fr": "Stygie",
-                "en": "Stygia",
-                "it": "Stygia"
-            }
+            "type": "thematic"
         }, {
             "id": "nordheim",
-            "type": "thematic",
-            "title": {
-                "fr": "Nordheim",
-                "en": "Nordheim",
-                "it": "Nordheim"
-            },
-            "short": {
-                "fr": "Nordheim",
-                "en": "Nordheim",
-                "it": "Nordheim"
-            }
+            "type": "thematic"
         }, {
             "id": "khitai",
-            "type": "thematic",
-            "title": {
-                "fr": "Khitaï",
-                "en": "Khitaï",
-                "it": "Khitai"
-            },
-            "short": {
-                "fr": "Khitaï",
-                "en": "Khitaï",
-                "it": "Khitai"
-            }
+            "type": "thematic"
         },
 
         {
             "id": "crossbowmen",
-            "type": "other",
-            "title": {
-                "fr": "Arbalétriers",
-                "en": "Crossbowmen",
-                "it": "Balestrieri"
-            },
-            "short": {
-                "fr": "Arbalétriers",
-                "en": "Crossbowmen",
-                "it": "Balestrieri"
-            }
+            "type": "other"
         }, {
             "id": "blackdragons",
-            "type": "other",
-            "title": {
-                "fr": "Dragons Noirs",
-                "en": "Black dragons",
-                "it": "Dragoni neri"
-            },
-            "short": {
-                "fr": "Dragons Noirs",
-                "en": "Black dragons",
-                "it": "Dragoni neri"
-            }
+            "type": "other"
         }, {
             "id": "blackones",
-            "type": "other",
-            "title": {
-                "fr": "Hommes Noirs",
-                "en": "Black ones",
-                "it": "I Neri"
-            },
-            "short": {
-                "fr": "Hommes Noirs",
-                "en": "Black ones",
-                "it": "I Neri"
-            }
+            "type": "other"
         }, {
             "id": "kushwitchhunters",
-            "type": "other",
-            "title": {
-                "fr": "Chasseurs de sorcières Kushites",
-                "en": "Kushites witch-hunters",
-                "it": "Cacciatori di streghe kushiti"
-            },
-            "short": {
-                "fr": "Kushites",
-                "en": "Kushites",
-                "it": "Kushiti"
-            }
+            "type": "other"
         }, {
             "id": "valvan",
-            "type": "other",
-            "title": {
-                "fr": "Valkyrie Vanir",
-                "en": "Vanir Valkyrie",
-                "it": "Valchiria Vanir"
-            },
-            "short": {
-                "fr": "Valkyrie Vanir",
-                "en": "Vanir Valkyrie",
-                "it": "Valchiria Vanir"
-            }
+            "type": "other"
         }, {
             "id": "yoy",
-            "type": "other",
-            "title": {
-                "fr": "Yogah de Yag",
-                "en": "Yogah of Yag",
-                "it": "Yogah di Yag"
-            },
-            "short": {
-                "fr": "Yogah de Yag",
-                "en": "Yogah of Yag",
-                "it": "Yogah di Yag"
-            }
+            "type": "other"
         }, {
             "id": "baalpteor",
-            "type": "other",
-            "title": {
-                "fr": "Baal-Pteor",
-                "en": "Baal-Pteor",
-                "it": "Ball-Pteor"
-            },
-            "short": {
-                "fr": "Baal-Pteor",
-                "en": "Baal-Pteor",
-                "it": "Ball-Pteor"
-            }
+            "type": "other"
         }, {
             "id": "demonearth",
-            "type": "other",
-            "title": {
-                "fr": "Démon de la Terre",
-                "en": "Demon of the earth",
-                "it": "Demone della Terra"
-            },
-            "short": {
-                "fr": "Démon de la Terre",
-                "en": "Demon of the earth",
-                "it": "Demone della Terra"
-            }
+            "type": "other"
         }, {
             "id": "dragon",
-            "type": "other",
-            "title": {
-                "fr": "Dragon",
-                "en": "Dragon",
-                "it": "Drago"
-            },
-            "short": {
-                "fr": "Dragon",
-                "en": "Dragon",
-                "it": "Drago"
-            }
+            "type": "other"
         }, {
             "id": "giantwolves",
-            "type": "other",
-            "title": {
-                "fr": "Loups géants",
-                "en": "Giant wolves",
-                "it": "Lupi giganti"
-            },
-            "short": {
-                "fr": "Loups géants",
-                "en": "Giant wolves",
-                "it": "Lupi giganti"
-            }
+            "type": "other"
         }, {
             "id": "sabretoothtiger",
-            "type": "other",
-            "title": {
-                "fr": "Tigre à dents de sabre",
-                "en": "Sabretooth tiger",
-                "it": "Tigre dai denti a sciabola"
-            },
-            "short": {
-                "fr": "Tigre à dents de sabre",
-                "en": "Sabretooth tiger",
-                "it": "Tigre dai denti a sciabola"
-            }
+            "type": "other"
         },
 
         {
             "id": "campaignbook",
-            "type": "books",
-            "title": {
-                "fr": "Livre de Campagne - La légende du diable d'Airain",
-                "en": "Campaign book - The Devil in Iron",
-                "it": "Campagna - Il Diavolo di ferro"
-            },
-            "short": {
-                "fr": "Livre de campagne",
-                "en": "Campaign book",
-                "it": "Campagna"
-            }
+            "type": "books"
         }, {
             "id": "setbook",
-            "type": "books",
-            "title": {
-                "fr": "Livre de Set",
-                "en": "Book of Set",
-                "it": "Libro di Set"
-            },
-            "short": {
-                "fr": "Livre de Set",
-                "en": "Book of Set",
-                "it": "Libro di Set"
-            }
+            "type": "books"
         },
 
         {
             "id": "bbox",
-            "type": "artists",
-            "title": {
-                "fr": "Brom Box",
-                "en": "Brom Box",
-                "it": "Brom Box"
-            },
-            "short": {
-                "fr": "Brom Box",
-                "en": "Brom Box",
-                "it": "Brom Box"
-            }
+            "type": "artists"
         }, {
             "id": "ppbox",
-            "type": "artists",
-            "title": {
-                "fr": "Paolo Parente Box",
-                "en": "Paolo Parente Box",
-                "it": "Paolo Parente Box"
-            },
-            "short": {
-                "fr": "Paolo Parente Box",
-                "en": "Paolo Parente Box",
-                "it": "Paolo Parente Box"
-            }
+            "type": "artists"
         }, {
             "id": "xcbox",
-            "type": "artists",
-            "title": {
-                "fr": "Xavier Colette Box",
-                "en": "Xavier Colette Box",
-                "it": "Xavier Colette Box"
-            },
-            "short": {
-                "fr": "Xavier Colette Box",
-                "en": "Xavier Colette Box",
-                "it": "Xavier Colette Box"
-            }
+            "type": "artists"
         },
 
         {
             "id": "doorpack",
-            "type": "decoration",
-            "title": {
-                "fr": "Pack de portes",
-                "en": "Doors pack",
-                "it": "Porte"
-            },
-            "short": {
-                "fr": "Pack de portes",
-                "en": "Doors pack",
-                "it": "Porte"
-            }
+            "type": "decoration"
         }, {
             "id": "adventurepack",
-            "type": "decoration",
-            "title": {
-                "fr": "Pack aventure",
-                "en": "Adventure pack",
-                "it": "Arredi"
-            },
-            "short": {
-                "fr": "Pack aventure",
-                "en": "Adventure pack",
-                "it": "Arredi"
-            }
+            "type": "decoration"
         }, {
             "id": "monolith-site",
-            "type": "misc",
-            "title": {
-                "fr": "Cadeaux Monolith (site web ou actualités)",
-                "en": "Monolith's gifts (website or news)",
-                "it": "Regali Monolith (sito web o novità)"
-            },
-            "short": {
-                "fr": "Cadeaux Monolith",
-                "en": "Monolith's gifts",
-                "it": "Regali Monolith"
-            }
+            "type": "misc"
         }, {
             "id": "corinthia",
-            "type": "misc",
-            "title": {
-                "fr": "Corinthia (Crossover avec Mythic Battles Panthéon)",
-                "en": "Corinthia (Crossover with Mythic Battles Pantheon)",
-                "it": "Corinthia (Crossover con Mytic Battles Pantheon)"
-            },
-            "short": {
-                "fr": "Corinthia",
-                "en": "Corinthia",
-                "it": "Corinthia"
-            }
+            "type": "misc"
         }
     ]
 }

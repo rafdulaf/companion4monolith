@@ -1,0 +1,3 @@
+Encyclopedia._i18n = mergeObject(Encyclopedia._i18n, {
+    'copyright': "English data collected on the site <a target='_blank' href='https://conan-companion.herokuapp.com/'>conan-companion.herokuapp.com</a> with the kind authorization of David Abel.<br/>French translations entered by <a href='https://the-overlord.com/index.php?/profile/5240-cochon/' target='_blank'>@cochon</a>.<br/>Italian translations done by <a href=\"https://the-overlord.net/index.php?/profile/6029-pensareadaltro/\">@pensareadaltro</a>.<br/>Corinthia data transmited by <a href=\"https://the-overlord.com/index.php?/profile/107-corwin/\">@Corwin</a>.<br/>Models photos and associated texts where gather on the <a href='http://conan.paintings.free.fr/'>Conan paintings</a> site."
+});
