@@ -12,14 +12,15 @@
         <script src="../engine/general/utils.0.21.js"></script>
         <script src="../engine/vendors/js/deepmerge.js"></script>
         <script src="../engine/maps/maps.js"></script>
+        <script src="../engine/maps/lang/maps.fr.js"></script>
         <script src="maps/maps.js"></script>
         <script type="text/javascript">
             (async function () {
             	Maps.standalone = true;
                 Version = (await Utils.loadJSON("../engine/Version.json")).version;
                 Encyclopedia = {};
-                await Utils.loadJSON("data/expansions.json")  .then(function(data) { Encyclopedia.expansions = data; }),
-                await Utils.loadJSON("data/maps.json").then(function(data) { Encyclopedia.maps = data ; });
+                await Utils.loadJSON("data/expansions.json", true)  .then(function(data) { Encyclopedia.expansions = data; }),
+                await Utils.loadJSON("data/maps.json", true).then(function(data) { Encyclopedia.maps = data ; });
                 Maps.externalInit();
                 
                 $(".loading").addClass('loaded');
