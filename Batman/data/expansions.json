@@ -22,484 +22,164 @@
         {
             "id": "corebox",
             "type": "box",
-            "title": {
-                "fr": "Boîte de base",
-                "en": "Core box"
-            },
-            "short": {
-                "fr": "Boîte de base",
-                "en": "Core box"
-            },
             "mandatory": true
         }, 
         
          {
             "id": "arkham-asylum",
-            "type": "season1-expansions",
-            "title": {
-                "fr": "Boîte d'extension \"Arkham asylum\"",
-                "en": "\"Arkham asylum\" expansion box"
-            },
-            "short": {
-                "fr": "Boîte Arkham asylum",
-                "en": "Arkham asylum box"
-            }
+            "type": "season1-expansions"
         }, 
         {
             "id": "wayne-manor",
-            "type": "season1-expansions",
-            "title": {
-                "fr": "Boîte d'extension \"Wayne Manor\"",
-                "en": "\"Wayne Manor\" expansion box"
-            },
-            "short": {
-                "fr": "Boîte Wayne Manor",
-                "en": "Wayne Manor box"
-            }
+            "type": "season1-expansions"
         }, 
         {
             "id": "batmobile",
-            "type": "season1-expansions",
-            "title": {
-                "fr": "Batmobile",
-                "en": "Batmobile"
-            },
-            "short": {
-                "fr": "Batmobile",
-                "en": "Batmobile"
-            }
+            "type": "season1-expansions"
         }, 
         {
             "id": "versus",
-            "type": "season1-expansions",
-            "title": {
-                "fr": "Mode Versus",
-                "en": "Versus mode"
-            },
-            "short": {
-                "fr": "Mode Versus",
-                "en": "Versus mode"
-            }
+            "type": "season1-expansions"
         }, 
         {
             "id": "narrows-chronicles",
-            "type": "season1-expansions",
-            "title": {
-                "fr": "The Narrows Chronicles",
-                "en": "The Narrows Chronicles"
-            },
-            "short": {
-                "fr": "The Narrows Chronicles",
-                "en": "The Narrows Chronicles"
-            }
+            "type": "season1-expansions"
         }, 
         {
             "id": "dice-pack",
-            "type": "season1-expansions",
-            "title": {
-                "fr": "Pack de dés",
-                "en": "Dice pack"
-            },
-            "short": {
-                "fr": "Pack de dés",
-                "en": "Dice pack"
-            }
+            "type": "season1-expansions"
         }, 
         {
             "id": "suicide-squad",
-            "type": "season2-expansions",
-            "title": {
-                "fr": "Suicide Squad",
-                "en": "Suicide Squad"
-            },
-            "short": {
-                "fr": "Suicide Squad",
-                "en": "Suicide Squad"
-            }
+            "type": "season2-expansions"
         }, 
         {
             "id": "batman-inc",
-            "type": "season2-expansions",
-            "title": {
-                "fr": "Batman Inc.",
-                "en": "Batman Inc."
-            },
-            "short": {
-                "fr": "Batman Inc.",
-                "en": "Batman Inc."
-            }
+            "type": "season2-expansions"
         }, 
         {
             "id": "league-of-assassins",
-            "type": "season2-expansions",
-            "title": {
-                "fr": "Ligue des assassins",
-                "en": "League of assassins"
-            },
-            "short": {
-                "fr": "Ligue des assassins",
-                "en": "League of assassins"
-            }
+            "type": "season2-expansions"
         }, 
         {
             "id": "5-player",
-            "type": "season2-expansions",
-            "title": {
-                "fr": "5ème joueur",
-                "en": "5 player"
-            },
-            "short": {
-                "fr": "5ème joueur",
-                "en": "5 player"
-            }
+            "type": "season2-expansions"
         }, 
         {
             "id": "maps-pack",
-            "type": "season2-expansions",
-            "title": {
-                "fr": "Extensions cartes GCPD/Egouts",
-                "en": "GCPD/Sewers maps expansion"
-            },
-            "short": {
-                "fr": "Pack de cartes",
-                "en": "Maps pack"
-            }
+            "type": "season2-expansions"
         }, 
         {
             "id": "poison-ivy-new-52",
-            "type": "season2-add-on",
-            "title": {
-                "fr": "Poison Ivy New 52",
-                "en": "Poison Ivy New 52"
-            },
-            "short": {
-                "fr": "Poison Ivy New 52",
-                "en": "Poison Ivy New 52"
-            }
+            "type": "season2-add-on"
         }, 
         {
             "id": "batman-new-52",
-            "type": "season2-add-on",
-            "title": {
-                "fr": "Batman new 52",
-                "en": "Batman new 52"
-            },
-            "short": {
-                "fr": "Batman new 52",
-                "en": "Batman new 52"
-            }
+            "type": "season2-add-on"
         }, 
         {
             "id": "prof-pyg-gang",
-            "type": "season2-add-on",
-            "title": {
-                "fr": "Prof. Pyg's gang",
-                "en": "Prof. Pyg's gang"
-            },
-            "short": {
-                "fr": "Prof. Pyg's gang",
-                "en": "Prof. Pyg's gang"
-            }
+            "type": "season2-add-on"
         }, 
         {
             "id": "batman-beyond",
-            "type": "season2-picking-zone",
-            "title": {
-                "fr": "Batman Beyond",
-                "en": "Batman Beyond"
-            },
-            "short": {
-                "fr": "Batman Beyond",
-                "en": "Batman Beyond"
-            }
+            "type": "season2-picking-zone"
         }, 
         {
             "id": "batman-rebirth",
-            "type": "season2-picking-zone",
-            "title": {
-                "fr": "Batman Rebirth",
-                "en": "Batman Rebirth"
-            },
-            "short": {
-                "fr": "Batman Rebirth",
-                "en": "Batman Rebirth"
-            }
+            "type": "season2-picking-zone"
         }, 
         {
             "id": "gang-robin",
-            "type": "season2-picking-zone",
-            "title": {
-                "fr": "Gang of Robin",
-                "en": "Gang of Robin"
-            },
-            "short": {
-                "fr": "Gang of Robin",
-                "en": "Gang of Robin"
-            }
+            "type": "season2-picking-zone"
         }, 
         {
             "id": "hawkfire",
-            "type": "season2-picking-zone",
-            "title": {
-                "fr": "Hawkfire",
-                "en": "Hawkfire"
-            },
-            "short": {
-                "fr": "Hawkfire",
-                "en": "Hawkfire"
-            }
+            "type": "season2-picking-zone"
         }, 
         {
             "id": "etrigan",
-            "type": "season2-picking-zone",
-            "title": {
-                "fr": "Etrigan",
-                "en": "Etrigan"
-            },
-            "short": {
-                "fr": "Etrigan",
-                "en": "Etrigan"
-            }
+            "type": "season2-picking-zone"
         }, 
         {
             "id": "catwoman",
-            "type": "season2-picking-zone",
-            "title": {
-                "fr": "Catwoman",
-                "en": "Catwoman"
-            },
-            "short": {
-                "fr": "Catwoman",
-                "en": "Catwoman"
-            }
+            "type": "season2-picking-zone"
         }, 
         {
             "id": "hounds",
-            "type": "season2-picking-zone",
-            "title": {
-                "fr": "Hounds",
-                "en": "Hounds"
-            },
-            "short": {
-                "fr": "Hounds",
-                "en": "Hounds"
-            }
+            "type": "season2-picking-zone"
         }, 
         {
             "id": "reaper",
-            "type": "season2-picking-zone",
-            "title": {
-                "fr": "Reaper",
-                "en": "Reaper"
-            },
-            "short": {
-                "fr": "Reaper",
-                "en": "Reaper"
-            }
+            "type": "season2-picking-zone"
         }, 
         {
             "id": "carmine-falcone",
-            "type": "season2-picking-zone",
-            "title": {
-                "fr": "Carmine Falcone",
-                "en": "Carmine Falcone"
-            },
-            "short": {
-                "fr": "Carmine Falcone",
-                "en": "Carmine Falcone"
-            }
+            "type": "season2-picking-zone"
         }, 
         {
             "id": "arnold-wesker",
-            "type": "season2-picking-zone",
-            "title": {
-                "fr": "Ventriloquist (Arnold Wesker)",
-                "en": "Ventriloquist (Arnold Wesker)"
-            },
-            "short": {
-                "fr": "Arnold Wesker",
-                "en": "Arnold Wesker"
-            }
+            "type": "season2-picking-zone"
         }, 
         {
             "id": "peyton-riley",
-            "type": "season2-picking-zone",
-            "title": {
-                "fr": "Ventriloquist (Peyton Riley)",
-                "en": "Ventriloquist (Peyton Riley)"
-            },
-            "short": {
-                "fr": "Peyton Riley",
-                "en": "Peyton Riley"
-            }
+            "type": "season2-picking-zone"
         }, 
         {
             "id": "white-rabbit",
-            "type": "season2-picking-zone",
-            "title": {
-                "fr": "White Rabbit",
-                "en": "White Rabbit"
-            },
-            "short": {
-                "fr": "White Rabbit",
-                "en": "White Rabbit"
-            }
+            "type": "season2-picking-zone"
         }, 
         {
             "id": "uriah-boone",
-            "type": "season2-picking-zone",
-            "title": {
-                "fr": "Talon (Uriah Boone)",
-                "en": "Talon (Uriah Boone)"
-            },
-            "short": {
-                "fr": "Talon (Uriah Boone)",
-                "en": "Talon (Uriah Boone)"
-            }
+            "type": "season2-picking-zone"
         }, 
         {
             "id": "shen-fang",
-            "type": "season2-picking-zone",
-            "title": {
-                "fr": "Shen Fang",
-                "en": "Shen Fang"
-            },
-            "short": {
-                "fr": "Shen Fang",
-                "en": "Shen Fang"
-            }
+            "type": "season2-picking-zone"
         }, 
         {
             "id": "cluemaster",
-            "type": "season2-picking-zone",
-            "title": {
-                "fr": "Cluemaster",
-                "en": "Cluemaster"
-            },
-            "short": {
-                "fr": "Cluemaster",
-                "en": "Cluemaster"
-            }
+            "type": "season2-picking-zone"
         }, 
         {
             "id": "deacon-blackfire",
-            "type": "season2-picking-zone",
-            "title": {
-                "fr": "Deacon Blackfire",
-                "en": "Deacon Blackfire"
-            },
-            "short": {
-                "fr": "Deacon Blackfire",
-                "en": "Deacon Blackfire"
-            }
+            "type": "season2-picking-zone"
         }, 
         {
             "id": "kgbeast",
-            "type": "season2-picking-zone",
-            "title": {
-                "fr": "KGBeast",
-                "en": "KGBeast"
-            },
-            "short": {
-                "fr": "KGBeast",
-                "en": "KGBeast"
-            }
+            "type": "season2-picking-zone"
         }, 
         {
             "id": "nobody",
-            "type": "season2-picking-zone",
-            "title": {
-                "fr": "Nobody",
-                "en": "Nobody"
-            },
-            "short": {
-                "fr": "Nobody",
-                "en": "Nobody"
-            }
+            "type": "season2-picking-zone"
         }, 
         {
             "id": "owlman-lincoln-march",
-            "type": "season2-picking-zone",
-            "title": {
-                "fr": "Owlman (Lincoln March)",
-                "en": "Owlman (Lincoln March)"
-            },
-            "short": {
-                "fr": "Owlman (Lincoln March)",
-                "en": "Owlman (Lincoln March)"
-            }
+            "type": "season2-picking-zone"
         }, 
         {
             "id": "amygdala",
-            "type": "season2-picking-zone",
-            "title": {
-                "fr": "Amygdala",
-                "en": "Amygdala"
-            },
-            "short": {
-                "fr": "Amygdala",
-                "en": "Amygdala"
-            }
+            "type": "season2-picking-zone"
         }, 
         {
             "id": "architect",
-            "type": "season2-picking-zone",
-            "title": {
-                "fr": "The Architect",
-                "en": "The Architect"
-            },
-            "short": {
-                "fr": "The Architect",
-                "en": "The Architect"
-            }
+            "type": "season2-picking-zone"
         }, 
         {
             "id": "ghost-dragons",
-            "type": "season2-picking-zone",
-            "title": {
-                "fr": "Ghost Dragons",
-                "en": "Ghost Dragons"
-            },
-            "short": {
-                "fr": "Ghost Dragons",
-                "en": "Ghost Dragons"
-            }
+            "type": "season2-picking-zone"
         }, 
         {
             "id": "great-white-shark",
-            "type": "season2-picking-zone",
-            "title": {
-                "fr": "The Great White Shark",
-                "en": "The Great White Shark"
-            },
-            "short": {
-                "fr": "The Great White Shark",
-                "en": "The Great White Shark"
-            }
+            "type": "season2-picking-zone"
         }, 
         {
             "id": "mr-freeze",
-            "type": "season2-picking-zone",
-            "title": {
-                "fr": "Mr. Freeze",
-                "en": "Mr. Freeze"
-            },
-            "short": {
-                "fr": "Mr. Freeze",
-                "en": "Mr. Freeze"
-            }
+            "type": "season2-picking-zone"
         }, 
         {
             "id": "red-hood",
-            "type": "season2-picking-zone",
-            "title": {
-                "fr": "Red Hood",
-                "en": "Red Hood"
-            },
-            "short": {
-                "fr": "Red Hood",
-                "en": "Red Hood"
-            }
+            "type": "season2-picking-zone"
         }
     ]
 }
