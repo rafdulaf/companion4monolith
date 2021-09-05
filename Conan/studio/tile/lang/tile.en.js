@@ -26,7 +26,7 @@ Tile._i18n = {
     'skillsPh': "?",
     'skillsNone': "None",
     'skillsSpace': "Empty space",
-    'reinforcement': "Renfort",
+    'reinforcement': "Reinforcement",
     'reinforcementPh': "?",
     'image': "Image (transparent background)",
     'imagetoken': "Image if différent",
