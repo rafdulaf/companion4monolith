@@ -1,6 +1,6 @@
 About._i18n = {
     'fullscreen': "A tutto schermo",
-    'other': "Altri compagni",
+    'other': "Altri Companion",
     'about': "Crediti",
     'licence': "Licenze",
     'licence_text': "Questo software è sviluppato sotto licenza LGPL-3.0.",
