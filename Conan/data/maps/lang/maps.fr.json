@@ -274,7 +274,7 @@
                         "description": "Un lit bien confortable où dormir"
                     }
                 ],
-                "totopic": null
+                "totopic": "https://the-overlord.com/index.php?/topic/4778-conqu%C3%A9rant-citadelle/"
             }
         },
         
@@ -293,7 +293,7 @@
                         "description": "Les unités ne peuvent pas pénétrer dans la fosse, bien que des objets puissent y être jetés. Les objets jetés dans la fosse sont perdus."
                     }
                 ],
-                "totopic": null
+                "totopic": "https://the-overlord.com/index.php?/topic/4779-conqu%C3%A9rant-temple/"
             }
         }
     },
@@ -308,7 +308,7 @@
                         "description": "Si l’une des zones des escaliers (pont ou cale) est saturée, une action d’Attaque au corps-à-corps peut être menée de l’autre zone de cet escalier."
                     }
                 ],
-                "totopic": null
+                "totopic": "https://the-overlord.com/index.php?/topic/4780-fraternit%C3%A9-rouge-chebek-et-gal%C3%A8re/"
             }
         },
         
@@ -321,21 +321,21 @@
                         "description": "Si l’une des zones des escaliers (pont ou cale) est saturée, une action d’Attaque au corps-à-corps peut être menée de l’autre zone de cet escalier."
                     }
                 ],
-                "totopic": null
+                "totopic": "https://the-overlord.com/index.php?/topic/4780-fraternit%C3%A9-rouge-chebek-et-gal%C3%A8re/"
             }
         },
         
         "Chebek_Galley": {
             "description": {
                 "title": "Chebek & Galère",
-                "totopic": null
+                "totopic": "https://the-overlord.com/index.php?/topic/4780-fraternit%C3%A9-rouge-chebek-et-gal%C3%A8re/"
             }
         },
         
         "Port_Ship": {
             "description": {
                 "title": "Bateau au port",
-                "totopic": null
+                "totopic": "https://the-overlord.com/index.php?/topic/807-stygie-carte-port/"
             }
         }        
     },

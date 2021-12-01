@@ -274,7 +274,7 @@
                         "description": "Un letto comodo dove dormire"
                     }
                 ],
-                "totopic": null
+                "totopic": "https://the-overlord.net/index.php?/topic/1010-conqueror-citadel/"
             }
         },
         
@@ -293,7 +293,7 @@
                         "description": "Le unità non possono entrare nel pozzo, così come non possono essere lanciati degli oggetti nel pozzo. Gli oggetti finiti nel pozzo sono persi."
                     }
                 ],
-                "totopic": null
+                "totopic": "https://the-overlord.net/index.php?/topic/1011-conqueror-temple/"
             }
         }
     },
@@ -308,7 +308,7 @@
                         "description": "Se una delle aree delle scale (sia del ponte che di coperta) è satura, è possibile effettuare un'azione di attacco in Mischia dall'altra area di queste scale."
                     }
                 ],
-                "totopic": null
+                "totopic": "https://the-overlord.net/index.php?/topic/1012-red-brotherhood-chebek-and-galley/"
             }
         },
         
@@ -321,21 +321,21 @@
                         "description": "Se una delle aree delle scale (sia del ponte che di coperta) è satura, è possibile effettuare un'azione di attacco in Mischia dall'altra area di queste scale."
                     }
                 ],
-                "totopic": null
+                "totopic": "https://the-overlord.net/index.php?/topic/1012-red-brotherhood-chebek-and-galley/"
             }
         },
         
         "Chebek_Galley": {
             "description": {
                 "title": "Sciabecco & Galea",
-                "totopic": null
+                "totopic": "https://the-overlord.net/index.php?/topic/1012-red-brotherhood-chebek-and-galley/"
             }
         },
         
         "Port_Ship": {
             "description": {
                 "title": "Nave ormeggiata",
-                "totopic": null
+                "totopic": "https://the-overlord.net/index.php?/topic/34-stygia-port/"
             }
         }        
     },

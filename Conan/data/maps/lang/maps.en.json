@@ -274,7 +274,7 @@
                         "description": "This bed is cosy to sleep in"
                     }
                 ],
-                "totopic": null
+                "totopic": "https://the-overlord.net/index.php?/topic/1010-conqueror-citadel/"
             }
         },
         
@@ -293,7 +293,7 @@
                         "description": "Units cannot enter the pit, although items can be thrown into the pit. Items thrown in the pit are lost."
                     }
                 ],
-                "totopic": null
+                "totopic": "https://the-overlord.net/index.php?/topic/1011-conqueror-temple/"
             }
         }
     },
@@ -308,7 +308,7 @@
                         "description": "If one area of the stairs (deck or hold) is occupied, a Melee Attack action can be made from the other area of the stairs."
                     }
                 ],
-                "totopic": null
+                "totopic": "https://the-overlord.net/index.php?/topic/1012-red-brotherhood-chebek-and-galley/"
             }
         },
         
@@ -321,21 +321,21 @@
                         "description": "If one area of the stairs (deck or hold) is occupied, a Melee Attack action can be made from the other area of the stairs."
                     }
                 ],
-                "totopic": null
+                "totopic": "https://the-overlord.net/index.php?/topic/1012-red-brotherhood-chebek-and-galley/"
             }
         },
         
         "Chebek_Galley": {
             "description": {
                 "title": "Chebek & Galley",
-                "totopic": null
+                "totopic": "https://the-overlord.net/index.php?/topic/1012-red-brotherhood-chebek-and-galley/"
             }
         },
         
         "Port_Ship": {
             "description": {
                 "title": "Ship at port",
-                "totopic": null
+                "totopic": "https://the-overlord.net/index.php?/topic/34-stygia-port/"
             }
         }        
     },
