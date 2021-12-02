@@ -1293,7 +1293,7 @@
             "images": ["data/models/img/son-of-set_1.jpg", "data/models/img/son-of-set_2.jpg"],
             "paint": { "name": "Zalex", "link": "https://the-overlord.com/index.php?/profile/106-zalex/" },
             "type": "monster",
-            "forum": "https://the-overlord.com/index.php?/topic/4217-peinture-python/",
+            "forum": "https://the-overlord.com/index.php?/topic/4625-peinture-montrez-moi-vos-fils-de-set/",
             "origins": ["conqueror-sg"]
         },
         
@@ -1303,7 +1303,7 @@
             "images": ["data/models/img/scourge-of-set_1.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "monster",
-            "forum": "https://the-overlord.com/index.php?/topic/4205-peinture-hydre/",
+            "forum": "https://the-overlord.com/index.php?/topic/4635-peinture-montrez-moi-vos-fl%C3%A9aux-de-set/",
             "origins": ["conqueror-sg"]
         },   
         
@@ -1313,7 +1313,7 @@
             "images": ["data/models/img/servant-of-ahriman_1.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "monster",
-            "forum": "https://the-overlord.com/index.php?/topic/3756-peinture-le-fl%C3%A9au/",
+            "forum": "https://the-overlord.com/index.php?/topic/4630-peinture-montrez-moi-vos-serviteurs-dahriman/",
             "origins": ["conqueror-sg"]
         },   
         
@@ -1333,7 +1333,8 @@
             "images": ["data/models/img/nameless-horror_1.jpg", "data/models/img/nameless-horror_2.jpg"],
             "paint": { "name": "Telgar", "link": "https://the-overlord.com/index.php?/profile/291-telgar/" },
             "type": "monster",
-            "origins": ["conqueror-sg"]
+            "origins": ["conqueror-sg"],
+            "forum": "https://the-overlord.com/index.php?/topic/4627-peinture-montrez-moi-vos-horreurs-sans-nom/"
         },
         
         {
@@ -1364,7 +1365,8 @@
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "monster",
             "origins": ["conqueror"],
-            "count": 5
+            "count": 5,
+            "forum": "https://the-overlord.com/index.php?/topic/3741-peinture-montrez-moi-vos-profonds/"
         },
         
         {
@@ -1374,7 +1376,8 @@
             "paint": null,
             "type": "animal",
             "origins": ["conqueror"],
-            "count": 5
+            "count": 5,
+            "forum": "https://the-overlord.com/index.php?/topic/4624-peinture-montrez-moi-vos-enfants-de-gullah/"
         },
         
         {
@@ -1384,7 +1387,8 @@
             "paint": null,
             "type": "human",
             "origins": ["conqueror"],
-            "count": 5
+            "count": 5,
+            "forum": "https://the-overlord.com/index.php?/topic/4270-peinture-montrez-moi-vos-balistes-d%C3%A9lite/"
         },
         
         {
@@ -1394,7 +1398,8 @@
             "paint": null,
             "type": "monster",
             "origins": ["conqueror"],
-            "count": 10
+            "count": 10,
+            "forum": "https://the-overlord.com/index.php?/topic/4633-peinture-montrez-moi-vos-goules/"
         },
                 
         {
@@ -1404,7 +1409,8 @@
             "paint": null,
             "type": "human",
             "origins": ["conqueror"],
-            "count": 10
+            "count": 10,
+            "forum": "https://the-overlord.com/index.php?/topic/4632-peinture-montrez-moi-vos-archers-pirates/"
         },
 
         {
@@ -1414,7 +1420,8 @@
             "paint": { "name": "PiggyPog", "link": "https://www.facebook.com/PiggyPogWorkshop/" },
             "type": "human",
             "origins": ["conqueror"],
-            "count": 10
+            "count": 10,
+            "forum": "https://the-overlord.com/index.php?/topic/4285-peinture-montrez-moi-vos-acolytes-khityens/"
         },
 
         {
@@ -1423,7 +1430,8 @@
             "images": ["data/models/img/gorm_1.jpg"],
             "paint": null,
             "type": "monster",
-            "origins": ["conqueror"]
+            "origins": ["conqueror"],
+            "forum": "https://the-overlord.com/index.php?/topic/4626-peinture-montrez-moi-vos-gorm/"
         },
 
         {
@@ -1432,7 +1440,8 @@
             "images": ["data/models/img/baal-pteor-2_1.jpg"],
             "paint": null,
             "type": "human",
-            "origins": ["conqueror"]
+            "origins": ["conqueror"],
+            "forum": "https://the-overlord.com/index.php?/topic/1274-peinture-montrez-moi-vos-baal-pteor/"
         },
 
         {
@@ -1441,7 +1450,8 @@
             "images": ["data/models/img/conan-the-conqueror_1.jpg"],
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
             "type": "human",
-            "origins": ["conqueror"]
+            "origins": ["conqueror"],
+            "forum": "https://the-overlord.com/index.php?/topic/321-peinture-montrez-moi-vos-conan-par-crom/"
         },
 
         {
@@ -1450,7 +1460,8 @@
             "images": ["data/models/img/conan-the-pirate_1.jpg", "data/models/img/conan-the-pirate_2.jpg"],
             "paint": null,
             "type": "human",
-            "origins": ["conqueror"]
+            "origins": ["conqueror"],
+            "forum": "https://the-overlord.com/index.php?/topic/321-peinture-montrez-moi-vos-conan-par-crom/"
         },
 
         {
@@ -1459,7 +1470,8 @@
             "images": ["data/models/img/nyaga_1.jpg", "data/models/img/nyaga_2.jpg"],
             "paint": null,
             "type": "human",
-            "origins": ["conqueror"]
+            "origins": ["conqueror"],
+            "forum": "https://the-overlord.com/index.php?/topic/4268-peinture-montrez-moi-vos-nyaga/"
         },
 
         {
@@ -1468,7 +1480,8 @@
             "images": ["data/models/img/zenobia_1.jpg"],
             "paint": null,
             "type": "human",
-            "origins": ["conqueror"]
+            "origins": ["conqueror"],
+            "forum": "https://the-overlord.com/index.php?/topic/4620-peinture-montrez-moi-vos-zenobia/"
         },
 
         {
@@ -1477,7 +1490,8 @@
             "images": ["data/models/img/xaltotun_1.jpg"],
             "paint": null,
             "type": "human",
-            "origins": ["conqueror"]
+            "origins": ["conqueror"],
+            "forum": "https://the-overlord.com/index.php?/topic/4267-peinture-montrez-moi-vos-xaltotun/"
         },
         
         {
@@ -1486,7 +1500,8 @@
             "images": ["data/models/img/manifestation-of-mitra_1.jpg", "data/models/img/manifestation-of-mitra_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "monster",
-            "origins": ["conqueror"]
+            "origins": ["conqueror"],
+            "forum": "https://the-overlord.com/index.php?/topic/3742-peinture-montrez-moi-vos-manifestations-de-mitra/"
         },
         
         {
@@ -1495,7 +1510,8 @@
             "images": ["data/models/img/zamorian-spider_1.jpg", "data/models/img/zamorian-spider_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "monster",
-            "origins": ["conqueror"]
+            "origins": ["conqueror"],
+            "forum": "https://the-overlord.com/index.php?/topic/4269-peinture-montrez-moi-vos-araign%C3%A9es-zamoriennes/"
         },
         
         {
@@ -1504,7 +1520,8 @@
             "images": ["data/models/img/manifestation-of-yog.jpg", "data/models/img/manifestation-of-yog_2.jpg"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "monster",
-            "origins": ["conqueror"]
+            "origins": ["conqueror"],
+            "forum": "https://the-overlord.com/index.php?/topic/3743-peinture-montrez-moi-vos-manifestation-de-yog/"
         },
         
         {
@@ -1513,7 +1530,8 @@
             "images": ["data/models/img/thulsa-doom_1.jpg"],
             "paint": null,
             "type": "monster",
-            "origins": ["shadow-kingdom"]
+            "origins": ["shadow-kingdom"],
+            "forum": "https://the-overlord.com/index.php?/topic/4638-peinture-montrez-moi-vos-thulsa-doom/"
         },
         
         {
@@ -1522,7 +1540,8 @@
             "images": ["data/models/img/kull_1.jpg"],
             "paint": null,
             "type": "monster",
-            "origins": ["shadow-kingdom"]
+            "origins": ["shadow-kingdom"],
+            "forum": "https://the-overlord.com/index.php?/topic/4639-peinture-montrez-moi-vos-rois-kull/"
         },
         
         {
@@ -1531,7 +1550,8 @@
             "images": ["data/models/img/brule_1.jpg"],
             "paint": null,
             "type": "monster",
-            "origins": ["shadow-kingdom"]
+            "origins": ["shadow-kingdom"],
+            "forum": "https://the-overlord.com/index.php?/topic/4640-peinture-montrez-moi-vos-brule/"
         },
         
         {
@@ -1541,7 +1561,8 @@
             "paint": null,
             "type": "monster",
             "origins": ["shadow-kingdom"],
-            "count": 10
+            "count": 10,
+            "forum": "https://the-overlord.com/index.php?/topic/4631-peinture%C2%A0montrez-moi-vos-hommes-serpents/"
         }
     ]
 }
