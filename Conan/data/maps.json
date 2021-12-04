@@ -3458,7 +3458,7 @@
                 "ratio": 1.14,
                 "thumbnail": "data/maps/data/Chebek/thumb.png",
                 "board": "data/maps/data/Chebek/board.png",
-                "losFile": "data/maps/data/Chebek/los-v3.jpg"
+                "losFile": "data/maps/data/Chebek/los-v4.jpg"
             },
             "size": [1064, 937],
             "zones": {
@@ -3489,7 +3489,7 @@
                 "ratio": 1.14,
                 "thumbnail": "data/maps/data/Galley/thumb.png",
                 "board": "data/maps/data/Galley/board.png",
-                "losFile": "data/maps/data/Galley/los-v2.jpg"
+                "losFile": "data/maps/data/Galley/los-v3.jpg"
             },
             "size": [1064, 937],
             "zones": {
@@ -3517,7 +3517,8 @@
                 "totopic": {},
                 "ratio": 1.16,
                 "thumbnail": "data/maps/data/Chebek_Galley/thumb.png",
-                "board": "data/maps/data/Chebek_Galley/board.png"
+                "board": "data/maps/data/Chebek_Galley/board.png",
+                "losFile": "data/maps/data/Chebek_Galley/los-v2.jpg"
             },
             "size": [1064, 912],
             "zones": {
