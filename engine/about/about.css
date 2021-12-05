@@ -133,15 +133,16 @@
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #ffffff;
+    background-color: #FDFFC8;
+    color: #000000;
     padding: 16px;
-    box-shadow: 0 0 3px;
+    box-shadow: 0 0 3px, 0 5px 5px rgb(0 0 0 / 50%);
     z-index: 1;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    top: 65px;
-    width: 100%;
+    top: 90px;
+    width: 95%;
     font-size: calc(var(--secondary-size) * 1.25rem);
     font-family: 'Secondary';
 
