@@ -148,7 +148,7 @@
                         "description": "Le aree di foresta bloccano le linee di vista. Un personaggio può mirare dall'interno verso l'esterno, ma non può mirare all'interno o attraverso queste aree. Entrare in queste aree costa un (1) punto movimento extra, uscirne non costa punti movimento extra."
                     }, {
                         "title": "Sporgenze rocciose",
-                        "description": "Le zone rocciose bloccano le linee di vista e fanno ottenere un bonus elevazione. Arrampicarsi su queste rocce costa un (1) punto movimento extra, discendere non costa punti movimento extra."
+                        "description": "Le zone rocciose bloccano le linee di vista e fanno ottenere un bonus soprelevazione. Arrampicarsi su queste rocce costa un (1) punto movimento extra, discendere non costa punti movimento extra."
                     }
                 ],
                 "totopic": "https://the-overlord.net/index.php?/topic/32-nordheim-forest/"
@@ -161,10 +161,10 @@
                 "rules": [
                     {
                         "title": "Bianca come la neve e rossa come il sangue",
-                        "description": "Ogni volta che un personaggio spende dei punti movimento per spostarsi, dovrà spendere una gemma in più del normale costo per ogni area attraversata. Queste gemme sono piazzate nella zona di Movimento del personaggio, ma non sono considerate ai fini del raggiungimento dell'indice di saturazione. Niord, i Guerrieri Aesir e le unità dell'Overlord non subiscono nessuna penalità."
+                        "description": "Ogni volta che un Eroe spende dei punti movimento per spostarsi, deve aggiungere una gemma in più al totale, indipendentemente dal numero di aree attraversate e una sola volta per azione di Movimento. Queste gemme sono piazzate nella zona di Movimento del personaggio, ma non sono considerate ai fini del raggiungimento dell'indice di saturazione. Niord, i Guerrieri Aesir e le unità dell'Overlord non subiscono nessuna penalità."
                     }, {
-                        "title": "Leggera pendenza",
-                        "description": "La collina non influenza il movimento dei personaggi. L'area centrale in cima garantisce un bonus Elevazione così come le 3 sopraelevazioni agli angoli del tabellone."
+                        "title": "Dolce declivio",
+                        "description": "La collina non influenza il movimento dei personaggi. L'area centrale sulla cima garantisce un bonus soprelevazione così come le altre 3 alture agli angoli del tabellone."
                     }
                 ],
                 "totopic": "https://the-overlord.net/index.php?/topic/33-nordheim-mound/"
@@ -180,7 +180,7 @@
                         "description": "Un personaggio con l'abilità Spacca Muri non può aprire brecce nei muri della caserma a sud e dell'affumicatoio a nord poiché essi sono rinforzati da tronchi di legno."
                     }, {
                         "title": "Piroghe",
-                        "description": "Le aree d'acqua con le piroghe sono cosiderate delle normali aree ai fini del movimento."
+                        "description": "Le aree d'acqua con le piroghe sono considerate delle normali aree ai fini del movimento."
                     }, {
                         "title": "Nuotare",
                         "description": "Un personaggio che ha l'abilità Nuotare può attraversare le aree d'acqua prive di piroghe."
@@ -211,7 +211,7 @@
                         "description": "Un personaggio con l'abilità Arrampicarsi può :<br/>• passare dal livello 1 al livello 2 (e viceversa) arrampicandosi sull'albero e spendendo un (1) punto movimento extra,<br/>• passare dal livello 2 al livello 3 (e viceversa) o dal livello 3 al livello 4 (e viceversa) arrampicandosi sui muri esterni della torre e spendendo 2 punti movimento extra."
                     }, {
                         "title": "Tavoli e scale",
-                        "description": "Le scale forniscono un bonous elevazione sulle zone situate più in basso. É possibile salire sul tavolo del livello 2 con o senza l'abilità Saltare/Arrampicarsi, al costo di un (1) punto movimento extra. Un personaggio sul tavolo ottiene un bonus elevazione per i suoi attacchi a Distanza e per quelli in Mischia. É possibile attaccare in Mischia le aree adiacenti al tavolo sia con che senza l'abilità Allungo. L'area del tavolo non blocca la linea di vista."
+                        "description": "Le scale forniscono un bonus di soprelevazione sulle zone situate più in basso. É possibile salire sul tavolo del livello 2 con o senza l'abilità Saltare/Arrampicarsi, al costo di un (1) punto movimento extra. Un personaggio sul tavolo ottiene un bonus di soprelevazione per i suoi attacchi a Distanza e per quelli in Mischia. É possibile attaccare in Mischia le aree adiacenti al tavolo sia con che senza l'abilità Allungo. L'area del tavolo non blocca la linea di vista."
                     }
                 ],
                 "totopic": "https://the-overlord.net/index.php?/topic/37-khitai-tower/"
