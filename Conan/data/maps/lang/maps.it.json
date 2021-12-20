@@ -65,7 +65,7 @@
                         "description": "É sempre possibile tracciare una linea di vista da e verso l'area occupata da un albero. L'albero blocca normalmente la linea di vista."
                     }, {
                         "title": "Linea di vista",
-                        "description": "Esiste sempre una linea di vista tra un'area di nave e un'area di mare, a meno che la linea di vista non attraversi più di un'area di nave (contando l'area di partenza della linea di vista). Le aree di nave ottengono un bonus Elevazione di un {dice_yellow} sulle aree di mare. Esiste una linea di vista da un'area di mare a un'area di nave, se la linea di vista non passa attraverso più di un'area di nave (includendo l'area d'arrivo della linea di vista)."
+                        "description": "Esiste sempre una linea di vista tra un'area di nave e un'area di mare, a meno che la linea di vista non attraversi più di un'area di nave (contando l'area di partenza della linea di vista). Le aree di nave ottengono un bonus di soprelevazione di un {dice_yellow} sulle aree di mare. Esiste una linea di vista da un'area di mare a un'area di nave, se la linea di vista non passa attraverso più di un'area di nave (includendo l'area d'arrivo della linea di vista)."
                     }
                 ],
                 "totopic": "https://the-overlord.net/index.php?/topic/29-core-ships/"
@@ -249,7 +249,7 @@
                         "description": "Un personaggio che si trova in un'area di acqua adiacente a una scaletta, può risalire sul molo spendendo un (1) punto movimento extra."
                     }, {
                         "title": "Tetti della città",
-                        "description": "Le aree situate sui tetti dell'edificio a ovest della città forniscono un bonus elevazione sulle zone situate in basso, incluse le aree con le scale. Saltare dal tetto alla strada infligge {dice_orange}{dice_orange} danni non difendibili o {dice_orange} danni non difendibili se il personaggio possiede l'abilità Saltare. Non è possibile risalire sul tetto direttamente dalla strada, ma lo si può fare usando le scale."
+                        "description": "Le aree situate sui tetti dell'edificio a ovest della città forniscono un bonus di soprelevazione sulle zone situate in basso, incluse le aree con le scale. Saltare dal tetto alla strada infligge {dice_orange}{dice_orange} danni non difendibili o {dice_orange} danni non difendibili se il personaggio possiede l'abilità Saltare. Non è possibile risalire sul tetto direttamente dalla strada, ma lo si può fare usando le scale."
                     }, {
                         "title": "Sfondare le pareti",
                         "description": "Le uniche pareti che possono essere demolite da un personaggio con l'abilità Spacca Muri sono quelle del magazzino a est della città."
