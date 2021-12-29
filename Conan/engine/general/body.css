@@ -1,0 +1,58 @@
+html {
+    overflow: hidden;
+}
+html, body {
+    padding: 0;
+    margin: 0;
+    min-width: 320px;
+    position: relative;
+}
+body {
+    height: 100%;
+    color: var(--body-color);
+    background-color: var(--body-bg-color);
+}
+
+* 
+{
+    box-sizing: border-box;
+    scrollbar-width: thin;
+}
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+  background-color: #F0F0F0;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #CDCDCD;
+}
+
+.loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100000;
+    background-color: var(--main-color);
+}
+.loaded {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    pointer-events: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
