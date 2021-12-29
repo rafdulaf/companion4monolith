@@ -1,0 +1,136 @@
+:root {
+    --search-width: 180px;
+    --search-placeholder: var(--search-width);
+}
+
+.search-engine-mobileoverlay,
+.floatingactions.mobile-only {
+    display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+    :root {
+        --search-placeholder: 0px;
+    }   
+    .floatingactions.mobile-only {
+        display: block;
+    } 
+    .search-engine {
+        right: calc(-1 * var(--search-width));
+        opacity: 0;
+        transition: opacity 0.5s,  right 0.5s;
+    }
+    
+    .displaySearch .search-engine {
+        opacity: 0.9;
+        right: 0;
+        box-shadow: 0 -8px 10px -5px rgb(0 0 0 / 20%), 0 -16px 24px 2px rgb(0 0 0 / 14%), 0 -6px 30px 5px rgb(0 0 0 / 12%)
+    }
+    .search-engine-mobileoverlay {
+        display: block;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        z-index: 3;
+        opacity: 0;
+        transition: opacity 0.5s;
+        background-color: rgba(0,0,0,0.2);
+        pointer-events: none;
+    } 
+    .displaySearch .search-wrapper .search-engine-mobileoverlay {
+        pointer-events: all;
+        opacity: 1;
+    }
+    .displaySearch .floatingactions.mobile-only {
+        display: none;
+    }
+}
+
+.encycloppedia-search-icon:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f002";  
+    font-size: 24px;
+}
+
+.search-wrapper {
+    height: 100%;
+    overflow: hidden scroll;
+}
+
+.search-engine {
+    position: fixed;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: var(--search-width);
+    height: 100%;
+    padding: 5px;
+    z-index: 3;
+    background-color: var(--body-bg-color);
+}
+.search-engine .facet > span {
+    display: block;
+    margin-bottom: 2px;
+    white-space: nowrap;
+    margin: 10px 0 2px 0;
+}
+.search-engine .facet > span span {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'Secondary';
+    padding-top: 4px;
+    margin-left: 5px;
+    line-height: calc(var(--secondary-line-height) * 0.5rem);
+}
+.search-engine .facet > span span:before { content: "("; }
+.search-engine .facet > span span:after { content: ")"; }
+
+
+.search-engine .facet input[type=text] {
+    width: 100%;
+}
+
+.search-engine .facet label * {
+    display: inline-block;
+    vertical-align: top;
+}
+.search-engine .facet label {
+    white-space: nowrap;
+    display: block;
+    font-size: calc(var(--secondary-size) * 1.4rem);
+    font-family: 'Secondary';
+    line-height: calc(var(--secondary-line-height) * 1.68rem);
+    height: 18px;
+}
+
+.search-engine .facet label:after {
+    content: " (" attr(data-count) ")";
+}
+
+.search-engine .facet[data-count='0']:not(.checked),
+.search-engine .facet label[data-count='0']:not(.checked) {
+    display: none;
+}
+
+
+
+.search-engine .facet a {
+    display: none;
+    text-align: center;
+    text-decoration: none;
+    color: var(--body-color);
+}
+
+.search-engine .facet[data-mode=hide] a:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f13a";
+}
+.search-engine .facet[data-mode=show] a:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f139";
+}
+
+.search-engine.collapsible .facet label:not([data-count='0']) ~ label:not([data-count='0']) ~ label:not([data-count='0']) ~ label:not([data-count='0']) ~ a { display: block; }
+.search-engine.collapsible .facet[data-mode=hide] label:not([data-count='0']) ~ label:not([data-count='0']) ~ label:not([data-count='0']) ~ label:not([data-count='0']) { display: none; }

@@ -3,22 +3,22 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
         
-        <script src="../engine/vendors/js/jquery-3.1.1.js"></script>
-        <script src="../engine/general/errors.1.js"></script>
+        <script src="engine/vendors/js/jquery-3.1.1.js"></script>
+        <script src="engine/general/errors.1.js"></script>
         <script>
             Application = "Batman";
             Language = "fr";
         </script>
-        <script src="../engine/general/utils.0.21.js"></script>
-        <script src="../engine/vendors/js/deepmerge.js"></script>
-        <script src="../engine/maps/maps.js"></script>
-        <script src="../engine/maps/lang/maps.fr.js"></script>
+        <script src="engine/general/utils.0.24.js"></script>
+        <script src="engine/vendors/js/deepmerge.js"></script>
+        <script src="engine/maps/maps.js"></script>
+        <script src="engine/maps/lang/maps.fr.js"></script>
         <script src="maps/maps.js"></script>
         <script src="maps/lang.maps.fr.js"></script>
         <script type="text/javascript">
             (async function () {
             	Maps.standalone = true;
-                Version = (await Utils.loadJSON("../engine/Version.json")).version;
+                Version = (await Utils.loadJSON("engine/Version.json")).version;
                 Encyclopedia = {};
                 await Utils.loadJSON("data/expansions.json", true)  .then(function(data) { Encyclopedia.expansions = data; }),
                 await Utils.loadJSON("data/maps.json", true).then(function(data) { Encyclopedia.maps = data ; });
@@ -44,8 +44,8 @@
         
         <link href="general/skin-light.css" rel="stylesheet"/>
         <link href="vendors/css/fonts.css" rel="stylesheet"/>
-        <link href="../engine/general/body.css" rel="stylesheet"/>
-        <link href="../engine/maps/maps.css" rel="stylesheet"/>
+        <link href="engine/general/body.css" rel="stylesheet"/>
+        <link href="engine/maps/maps.css" rel="stylesheet"/>
         <link href="maps/maps.css" rel="stylesheet"/>
         <style>
             :root {

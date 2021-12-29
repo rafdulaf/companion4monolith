@@ -1221,7 +1221,7 @@
         {
             "id": "sarcophagus",
             "thumb": "data/models/img/sarcophagus_sd.webp",
-            "images": ["data/models/img/sarcophagus_1.webp"],
+            "images": ["data/models/img/sarcophagus_1.webp", "data/models/img/sarcophagus_2.webp"],
             "paint": { "name": "Cochon", "link": "https://the-overlord.com/index.php?/profile/5240-cochon/"},
             "type": "scenery",
             "origins": ["stretchgoal"],
@@ -1260,7 +1260,7 @@
             "id": "barrel",
             "thumb": "data/models/img/barrel_sd.webp",
             "images": ["data/models/img/barrel_1.webp"],
-            "paint": null,
+            "paint": { "name": "Cochon", "link": "https://the-overlord.com/index.php?/profile/5240-cochon/"},
             "type": "scenery",
             "origins": ["adventurepack"],
             "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/",
@@ -1270,7 +1270,7 @@
             "id": "animal-skin",
             "thumb": "data/models/img/animal-skin_sd.webp",
             "images": ["data/models/img/animal-skin_1.webp", "data/models/img/animal-skin_2.webp"],
-            "paint": null,
+            "paint": { "name": "Cochon", "link": "https://the-overlord.com/index.php?/profile/5240-cochon/"},
             "type": "scenery",
             "origins": ["adventurepack"],
             "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/"
@@ -1416,7 +1416,7 @@
         {
             "id": "khitan-acolytes",
             "thumb": "data/models/img/khitan-acolytes_sd.webp",
-            "images": ["data/models/img/khitan-acolytes_1.webp"],
+            "images": ["data/models/img/khitan-acolytes_1.webp", "data/models/img/khitan-acolytes_2.webp"],
             "paint": { "name": "PiggyPog", "link": "https://www.facebook.com/PiggyPogWorkshop/" },
             "type": "human",
             "origins": ["conqueror"],
@@ -1517,7 +1517,7 @@
         {
             "id": "manifestation-of-yog",
             "thumb": "data/models/img/manifestation-of-yog_sd.webp",
-            "images": ["data/models/img/manifestation-of-yog.webp", "data/models/img/manifestation-of-yog_2.webp"],
+            "images": ["data/models/img/manifestation-of-yog_1.webp", "data/models/img/manifestation-of-yog_2.webp"],
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "monster",
             "origins": ["conqueror"],

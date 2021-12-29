@@ -1,0 +1,201 @@
+.about-fullscreen:before {
+    content: "\f31e";
+    font-family: 'Font Awesome 5 Free';
+}
+.about-download:before {
+    content: "\f019";
+    font-family: 'Font Awesome 5 Free';
+}
+.about-custom:before {
+    content: "\f49e";
+    font-family: 'Font Awesome 5 Free';
+}
+.about-preferences:before {
+    content: "\f3e0";
+    font-family: 'Font Awesome 5 Free';
+}
+.about-contribute:before {
+    content: "\f188";
+    font-family: 'Font Awesome 5 Free';
+}
+.about-about:before {
+    content: "\f447";
+    font-family: 'Font Awesome 5 Free';
+}
+.about-other:before {
+    content: "\f0c0";
+    font-family: 'Font Awesome 5 Free';
+}
+.about-allin:before {
+    content: "\f560";
+    font-family: 'Font Awesome 5 Free';
+}
+
+.contribute .github:before {
+    content: "\f092";
+    font-family: 'Font Awesome 5 Brands';
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.contribute .to:before {
+    content: "\f086";
+    font-family: 'Font Awesome 5 Free';
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.about {
+    font-size: calc(var(--secondary-size) * 1.5rem);
+    font-family: 'Secondary';
+}
+.about .about-zone-about img {
+    max-width: 90%;
+    max-height: 40%;
+    display: block;
+    margin: 0 auto;
+}
+
+.about h1, .contribute h1 {
+    margin-bottom: 0px;
+    font-size: calc(var(--secondary-size) * 2.25rem);
+    color: var(--main-color);
+}
+.about h2, .contribute h2 {
+    margin-bottom: 0px;
+    margin-top: 5px;
+    font-size: calc(var(--secondary-size) * 1.5rem);
+}
+.about h3, .contribute h3 {
+    margin-bottom: 0px;
+    margin-top: 5px;
+    font-size: calc(var(--secondary-size) * 1.25rem);
+}
+.about p, .contribute p {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+
+.custom fieldset {
+    border-width: 1px 0 0 0;
+}
+.custom fieldset select {
+    width: 100%;
+    font-family: 'Secondary';
+    font-size: calc(var(--secondary-size) * 1.25rem);
+    border-width: 0 0 1px 0;
+    margin-bottom: 10px;
+}
+.custom fieldset legend {
+    font-size: calc(var(--secondary-size) * 1.5rem);
+}
+.custom fieldset >  div {
+    display: flex;
+}
+.custom fieldset label {
+    margin-left: 3px;
+    line-height: calc(var(--secondary-line-height) * 2rem);
+}
+.custom input[type='checkbox'] {
+    width: 16px;
+    height: 16px;
+    flex: none;
+}
+
+@media screen and (min-width: 600px) {
+    .custom .col {
+        vertical-align: top;
+        width: 48%;
+        display: inline-block;
+    }
+}
+
+.toast-warning {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top: 4px solid #DC7B00;
+    background-color: #fb8c00;
+    color: #FFFFFF;
+    box-shadow: 0 0 3px;
+    width: 80vW;
+    padding: 30px;
+    z-index: 100001;
+    font-size: calc(var(--secondary-size) * 1.25rem);
+    font-family: 'Secondary';
+    
+    transition-property: bottom, opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    
+}
+
+.toast-action {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FDFFC8;
+    color: #000000;
+    padding: 16px;
+    box-shadow: 0 0 3px, 0 5px 5px rgb(0 0 0 / 50%);
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    top: 90px;
+    width: 95%;
+    font-size: calc(var(--secondary-size) * 1.25rem);
+    font-family: 'Secondary';
+
+    transition-property: opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+.toast-action-icon {
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+    line-height: calc(var(--secondary-line-height) * 2.25rem);
+    font-size: calc(var(--secondary-size) * 2.25rem);
+    color: #e64443;
+    text-align: center;
+    padding-right: 16px;
+}
+.toast-action-icon:before {
+}
+.toast-action-text {
+    height: 100%;
+    line-height: calc(var(--secondary-line-height) * 1.25rem);
+    display: inline-block;
+    vertical-align: top;
+    flex: 1;
+    min-width: 60%;
+}
+.toast-action-act {
+    margin-top: auto;
+}
+.toast-action a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #e64443;
+    padding: 7px 16px 0 16px;;
+    border-radius: 5px;
+}
+.toast-action a:hover {
+    background-color: #e64443;
+    color: #ffffff; 
+}
+
+.download-dialog img {
+    width: 100%;
+    max-width: 90vh;
+    display: block;
+    margin: 0 auto;
+}
+.download-dialog .legend {
+    text-align: center;
+    color: #7F7F7F;
+}

@@ -26,6 +26,8 @@
     height: 270px;
     
     margin: 2px;
+    
+    background: linear-gradient(180deg, rgba(106,106,106,1) 0%, rgba(232,232,232,1) 100%);
 }
 #encyclopedia-models-wrapper a div {
     position: relative;
@@ -79,6 +81,7 @@
 .modeldetails img {
     width: 50%;
     vertical-align: top;
+    background: linear-gradient(180deg, rgba(106,106,106,1) 0%, rgba(232,232,232,1) 100%);
 }
 .modeldetails .zoom img {
     width: 100%;

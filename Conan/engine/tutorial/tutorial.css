@@ -1,0 +1,32 @@
+.tutorial-extensions:before {
+    content: "\f49e";
+    font-family: 'Font Awesome 5 Free';
+}
+.tutorial-settings:before {
+    content: "\f024";
+    font-family: 'Font Awesome 5 Free';
+}
+
+.blinkmenu {
+    position: absolute;
+    z-index: 1;
+    background-color: var(--highlight-color);
+    border-radius: 100%;
+    width: 0;
+    height: 0;
+    top: 31px;
+    left: 36px;
+    transform: translate(-50%,-50%);
+    animation-name: example;
+    animation-duration: 1s;
+}
+
+@keyframes example {
+  0% {width: 0; height: 0;}
+  16% {width: 80px; height: 80px;}
+  32% {width: 0; height: 0;}
+  48% {width: 80px; height: 80px;}
+  64% {width: 0; height: 0;}
+  80% {width: 80px; height: 80px;}
+  100% {width: 0; height: 0;}
+}
