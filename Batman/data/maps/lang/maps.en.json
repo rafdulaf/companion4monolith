@@ -3,88 +3,77 @@
         "Bank": {
             "description": {
                 "title": "The Bank",
-                "totopic": "https://the-overlord.net/index.php?/topic/925-core-bank/",
-                "pdf": "data/maps/data/Bank/rules_en.pdf"
+                "totopic": "https://the-overlord.net/index.php?/topic/925-core-bank/"
             }
         },
 
         "ACE_Chemicals": {
             "description": {
                 "title": "ACE Chemicals",
-                "totopic": "https://the-overlord.net/index.php?/topic/923-core-ace-chemicals/",
-                "pdf": "data/maps/data/ACE_Chemicals/rules_en.pdf"
+                "totopic": "https://the-overlord.net/index.php?/topic/923-core-ace-chemicals/"
             }
         },
 
         "Crime_Alley": {
             "description": {
                 "title": "Crime Alley",
-                "totopic": "https://the-overlord.net/index.php?/topic/927-core-crime-alley/",
-                "pdf": "data/maps/data/Crime_Alley/rules_en.pdf"
+                "totopic": "https://the-overlord.net/index.php?/topic/927-core-crime-alley/"
             }
         },
 
         "Subway": {
             "description": {
                 "title": "Subway",
-                "totopic": "https://the-overlord.net/index.php?/topic/931-core-subway/",
-                "pdf": "data/maps/data/Subway/rules_en.pdf"
+                "totopic": "https://the-overlord.net/index.php?/topic/931-core-subway/"
             }
         },
 
         "Arkham_Asylum": {
             "description": {
                 "title": "Arkham asylum",
-                "totopic": "https://the-overlord.net/index.php?/topic/924-arkham-asylum-arkham-asylum/",
-                "pdf": "data/maps/data/Arkham_Asylum/rules_en.pdf"
+                "totopic": "https://the-overlord.net/index.php?/topic/924-arkham-asylum-arkham-asylum/"
             }
         },
 
         "Joker_Funhouse": {
             "description": {
                 "title": "Joker's Funhouse",
-                "totopic": "https://the-overlord.net/index.php?/topic/928-arkham-asylum-joker-funhouse/",
-                "pdf": "data/maps/data/Joker_Funhouse/rules_en.pdf"
+                "totopic": "https://the-overlord.net/index.php?/topic/928-arkham-asylum-joker-funhouse/"
             }
         },
 
         "Batcave": {
             "description": {
                 "title": "The Batcave",
-                "totopic": "https://the-overlord.net/index.php?/topic/926-wayne-manor-batcave/",
-                "pdf": "data/maps/data/Batcave/rules_en.pdf"
+                "totopic": "https://the-overlord.net/index.php?/topic/926-wayne-manor-batcave/"
             }
         },
 
         "Crime_Alley_Night": {
             "description": {
                 "title": "Crime Alley by night",
-                "totopic": "https://the-overlord.net/index.php?/topic/927-core-crime-alley/",
-                "pdf": "data/maps/data/Crime_Alley/rules_en.pdf"
+                "totopic": "https://the-overlord.net/index.php?/topic/927-core-crime-alley/"
             }
         },
 
         "Wayne_Manor": {
             "description": {
                 "title": "Wayne Manor",
-                "totopic": "https://the-overlord.net/index.php?/topic/932-wayne-manor-wayne-manor/",
-                "pdf": "data/maps/data/Wayne_Manor/rules_en.pdf"
+                "totopic": "https://the-overlord.net/index.php?/topic/932-wayne-manor-wayne-manor/"
             }
         },
         
        "Sewers": {
             "description": {
                 "title": "Sewers",
-                "totopic": "https://the-overlord.net/index.php?/topic/930-maps-pack-sewers/",
-                "pdf": "data/maps/data/Sewers/rules_en.pdf"
+                "totopic": "https://the-overlord.net/index.php?/topic/930-maps-pack-sewers/"
             }
         },
 
        "GCPD": {
             "description": {
                 "title": "GCPD",
-                "totopic": "https://the-overlord.net/index.php?/topic/929-maps-pack-gcpd/",
-                "pdf": "data/maps/data/GCPD/rules_en.pdf"
+                "totopic": "https://the-overlord.net/index.php?/topic/929-maps-pack-gcpd/"
             }
         }
     }

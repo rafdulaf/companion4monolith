@@ -1,0 +1,103 @@
+.rules-viewer {
+    padding: 0;
+    margin: 0;
+}
+.rules-viewer {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.rules-viewer .thumbnails {
+    display: none;
+}
+.rules-viewer iframe {
+    border-style: none;
+}
+
+.rules-viewer.zoom0 iframe {
+    display: none;
+}
+.rules-viewer.zoom0 .thumbnails {
+    display: block;
+    margin: 0 auto;
+}
+
+.rules-viewer.zoom1  iframe {
+    width: calc(50vw - 3px);
+    height: 69.75vw;
+}
+.rules-viewer.zoom1  iframe:first-of-type {
+    margin-left: calc(50vw - 3px);
+}
+
+.rules-viewer.zoom2 iframe {
+    display: inline-block;
+    vertical-align: top;
+    border-width: 0;
+    width: calc(100vw - 6px);
+    height: 139.5vw;
+}
+
+.rules-viewer.zoom3 iframe {
+    display: inline-block;
+    vertical-align: top;
+    border-width: 0;
+    width: calc(200vw - 6px);
+    height: 279vw;
+}
+
+.rules-viewer .thumbnails div {
+    display: inline-block;
+    vertical-align: top;
+    width: 282px;
+    height: 200px;
+    margin: 5px;
+}
+                                        .rules-viewer .thumbnails { width: 292px}
+@media screen and (min-width: 601px)  { .rules-viewer .thumbnails { width: 584px} }
+@media screen and (min-width: 893px)  { .rules-viewer .thumbnails { width: 876px} }
+@media screen and (min-width: 1185px) { .rules-viewer .thumbnails { width: 1168px} }
+
+.rules-viewer .thumbnails img {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+.rules-viewer .thumbnails div:first-child img {
+    margin-left: 50%;
+}
+
+
+.rulessearch {
+    font-family: 'Secondary';
+}
+.rulessearch label {
+    display: block;
+}
+.rulessearch input {
+    display: block;
+    padding: 10px;
+    width: 100%;
+}
+.rulessearch .results {
+    margin-top: 10px;
+}
+.rulessearch .results ul { margin: 0; padding: 0; list-style: none; }
+
+.rulessearch .results > ul a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.rulessearch .results > ul > li {
+    display: flex;
+    border-top: 1px solid black;
+}
+.rulessearch .results ul ul li {
+    background-color: #EFEFEF;
+    margin: 5px;
+}
+.rulessearch .results ul ul em {
+    font-weight: bold;
+}

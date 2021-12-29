@@ -124,6 +124,7 @@ div.token-wrapindetails .othertoken.square img.back {
     vertical-align: top;
     width: 200px;
     height: 270px;
+    background: linear-gradient(180deg, rgba(106,106,106,1) 0%, rgba(232,232,232,1) 100%);    
 }
 
 .tokendetails .models a {

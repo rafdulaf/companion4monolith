@@ -1,0 +1,235 @@
+.menu > div
+{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  z-index: 2;
+  
+  user-select: none;
+}
+
+.menu > div input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  margin: -5px -4px;
+  position: absolute;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+.menu > div span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background-color: var(--header-menu-color);
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+.menu > div span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+.menu > div span:nth-last-child(3)
+{
+  transform-origin: 0% 100%;
+}
+
+.menu > div input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+.menu > div input:checked ~ span:nth-last-child(4)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.menu > div input:checked ~ span:nth-last-child(3)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+.menu > div label {
+    background-color: rgba(0,0,0,0);
+    transition: background-color 0.3s ease;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.menu > div input:checked ~ label {
+    background-color: rgba(0,0,0,0.2);
+    pointer-events: unset;
+} 
+
+.menu > div input,
+.menu > div span
+{
+    top: calc(10px + var(--header-padding));
+    left: 20px;
+}
+
+/* -------------------------------- */
+/* -------------------------------- */
+/* -------------------------------- */
+
+.menu > div > ul
+{
+  position: absolute;
+  margin: 0;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  background-color: var(--menu-bg-color);
+  
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  
+  width: 300px;
+  height: 100vh;
+  padding: 125px 20px 20px 20px;
+  transform: translate(-100%, 0);
+}
+.menu > div > ul:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 45px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.menu > div > ul:after {
+  content: " ";
+  display: block;
+  flex: 1;
+  min-height: 79px;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+.menu > div > ul > li 
+{
+   margin-bottom: 5px;
+   position: relative; 
+}
+.menu > div > ul > li.line {
+    margin-top: 15px; 
+    border-top: 1px solid #232323;
+    padding-top: 15px;    
+}
+
+.menu > div > ul > li > a
+{
+  font-size: calc(var(--secondary-size) * 1.51rem);
+  font-family: 'Secondary';
+  text-transform: uppercase;
+  display: block;
+  text-decoration: none;
+  color: var(--menu-color);
+  
+  transition: color 0.3s ease;
+}
+.menu > div > ul > li > a:before
+{
+  padding-right: 10px;
+  width: 24px;
+  display: inline-block;
+  text-align: center;   
+  font-size: 0.6em; 
+}
+.menu > div > ul > li > a:hover
+{
+  color: var(--menu-active-color);
+}
+
+
+.menu > div input:checked ~ ul
+{
+  transform: none;
+  box-shadow: 0 8px 10px -5px rgb(0 0 0 / 20%), 0 16px 24px 2px rgb(0 0 0 / 14%), 0 6px 30px 5px rgb(0 0 0 / 12%);
+}
+
+/* -------------------------------- */
+/* -------------------------------- */
+/* -------------------------------- */
+
+.menu > ul 
+{
+  list-style-type: none;
+  background-color: #000000;
+  margin: 0;
+  display: flex;
+}
+.menu > ul > li
+{
+    text-align: center;
+    flex: 1;
+    position: relative;
+}
+.menu > ul > li > a
+{
+    color: #FFF;
+    font-size: 12px;
+    text-decoration: none;
+    display: block;
+}
+.menu > ul > li > a:before
+{
+    color: #FFF;
+    font-size: 26px;
+    text-decoration: none;
+    display: block;  
+}
+
+.menu > ul 
+{
+  padding: 5px 10px 5px 70px;
+  width: 100%;
+  height: 60px;
+}        
+.menu > ul > li
+{
+    display: inline-block;
+    height: 100%;
+    padding: 5px 10px;
+} 
