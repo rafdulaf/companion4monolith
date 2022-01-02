@@ -71,24 +71,22 @@
            	}
         </script>
         <script src="../engine/general/utils.0.21.js"></script>
-        
-        <script type="text/javascript">
-            (async function () {
-            	await Utils.loadApplication();
-	        	await Encyclopedia.load();
-        		Utils.initialize();
-        		
-        		Nav.startUp();
-                   
-                $(".loading").addClass('loaded');
-            })();
-        </script>
 	<body>
 	   <div class="loading" style="display: none;"></div>
        <script>
             try {
-    	      eval('()=>{}');
+    	      eval('()=>{}; ResizeObserver;');
               $("div.loading").show();
+              
+              (async function () {
+                  await Utils.loadApplication();
+                  await Encyclopedia.load();
+                  Utils.initialize();
+                  
+                  Nav.startUp();
+                     
+                  $(".loading").addClass('loaded');
+              })();
     	    } 
             catch (e) 
     	    {
