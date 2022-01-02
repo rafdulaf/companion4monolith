@@ -1645,7 +1645,7 @@
 
             "cost": "2",
             "saturation": "2",
-            "explosion": true,
+            "explosion": false,
             "reaction": false,
 
             "forOverlord": true,
