@@ -3419,8 +3419,8 @@
             "id": "pirate-archers",
 
             "colors": ["gray", "black"],
-            "movement": "3",
-            "defense": "2",
+            "movement": "2",
+            "defense": "1",
             "attacktype": "ranged",
             "dices": { "0": "yellowreroll", "1": "yellow", "2": "none", "3": "none" },
             "skills": { "0": "movement/leap", "1": "miscellaneous/concentration", "2": "none", "3": "none" },
