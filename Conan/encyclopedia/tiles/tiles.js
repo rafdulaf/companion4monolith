@@ -508,7 +508,7 @@ var EncyclopediaTiles = {
         + "</div>") : "")
 
         var superdetails = "";
-        if (tile.quote)
+        if (tile.quote && tile.quote.text && tile.quote.author && tile.quote.author.name && tile.quote.origin)
         {
             superdetails += "<div class='superdetails'>" + EncyclopediaTiles._i18n.story + "<br/><div class='img' style='background-image: url(" + tile.image + "?version=" + Version + ")'></div>";
             superdetails += "<div><p>" + tile.quote.text.replace(/\n/g,'<br/><br/>') + "</p><p><span>" + tile.quote.author.name + " - " + tile.quote.origin + "</span></p>";

@@ -1765,7 +1765,7 @@
         {
             "id": "tentacles",
 
-            "colors": ["gray", "bleu", "orange", "red"],
+            "colors": ["gray", "blue", "orange", "red"],
             "movement": "0",
             "defense": "2",
             "attacktype": "contact",
