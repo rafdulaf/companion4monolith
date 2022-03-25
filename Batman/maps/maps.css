@@ -16,7 +16,8 @@
     padding: 0 10px 10px 10px;
     border: 1px solid #f2981a;
     border-top-width: 0;
-    background-color: #F8F9F4
+    background-color: #F8F9F4;
+    color: #1b1b1b;
 }
 
 .map-map-help .map-help-thumb {
