@@ -697,10 +697,22 @@ var Maps = {
             var z = zNames[kz];
             var zone = map.zones[z];
 
+            var minX = svgWidth, 
+                minY = svgHeight, 
+                maxX = 0, 
+                maxY = 0;
             var line = "";
             for (var i=0; i < zone.area.length; i++)
             {
-                line += (i == 0 ? "M" : "L") + _applyRotate(true, zone.area[i]) + "," + _applyRotate(false, zone.area[i]);
+                var x = _applyRotate(true, zone.area[i]), 
+                    y = _applyRotate(false, zone.area[i]);
+                     
+                minX = Math.min(minX, x);
+                minY = Math.min(minY, y);
+                maxX = Math.max(maxX, x);
+                maxY = Math.max(maxY, y);
+                
+                line += (i == 0 ? "M" : "L") + x + "," + y;
             }
             code += "<path " +
                             "d='" + line + "' " +
@@ -708,6 +720,9 @@ var Maps = {
                             "class='map-map-area-zone'" +
                             "onclick='Maps._click(this)'>" +
                     "</path>";
+            var imgX = zone.centers.length ? _applyRotate(true, zone.centers[0]) + svgWidth/150.0 : ((minX + maxX) / 2.0);
+            var imgY = zone.centers.length ? _applyRotate(false, zone.centers[0]) + svgWidth/500.0 : ((minY + maxY) / 2.0);
+            code += "<image xlink:href='resources/img/dice_yellow.png' class='map-map-upper-bonus' x='" + imgX + "' y='" + imgY + "' width='" + (svgWidth * 0.02) + "'/>"
 
             // Display level around centers
             for (var i=0; i < zone.centers.length; i++)

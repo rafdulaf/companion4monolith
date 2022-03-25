@@ -370,7 +370,12 @@
     fill-opacity: 0.4; 
 }
 
-
+.map-map-area svg image {
+    display: none;
+}
+svg path.map-map-area-zone-target-upper + image {
+    display: unset;
+}
 
 .img-wrap svg {
     position: absolute;
