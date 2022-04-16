@@ -1372,8 +1372,8 @@
         {
             "id": "children-of-gullah",
             "thumb": "data/models/img/children-of-gullah_sd.jpg",
-            "images": ["data/models/img/children-of-gullah_1.jpg"],
-            "paint": null,
+            "images": ["data/models/img/children-of-gullah_1.jpg", "data/models/img/children-of-gullah_2.jpg"],
+            "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "animal",
             "origins": ["conqueror"],
             "count": 5,
@@ -1383,8 +1383,8 @@
         {
             "id": "ballista-pirates",
             "thumb": "data/models/img/ballista-pirates_sd.jpg",
-            "images": ["data/models/img/ballista-pirates_1.jpg"],
-            "paint": null,
+            "images": ["data/models/img/ballista-pirates_1.jpg", "data/models/img/ballista-pirates_2.jpg", "data/models/img/ballista-pirates_3.jpg", "data/models/img/ballista-pirates_4.jpg"],
+            "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "human",
             "origins": ["conqueror"],
             "count": 5,
@@ -1395,7 +1395,7 @@
             "id": "ghouls",
             "thumb": "data/models/img/ghouls_sd.jpg",
             "images": ["data/models/img/ghouls_1.jpg"],
-            "paint": null,
+            "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "monster",
             "origins": ["conqueror"],
             "count": 10,
@@ -1406,7 +1406,7 @@
             "id": "pirate-archers",
             "thumb": "data/models/img/pirate-archers_sd.jpg",
             "images": ["data/models/img/pirate-archers_1.jpg"],
-            "paint": null,
+            "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "human",
             "origins": ["conqueror"],
             "count": 10,
@@ -1428,7 +1428,7 @@
             "id": "gorm",
             "thumb": "data/models/img/gorm_sd.jpg",
             "images": ["data/models/img/gorm_1.jpg"],
-            "paint": null,
+            "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "monster",
             "origins": ["conqueror"],
             "forum": "https://the-overlord.com/index.php?/topic/4626-peinture-montrez-moi-vos-gorm/"
@@ -1438,7 +1438,7 @@
             "id": "baal-pteor",
             "thumb": "data/models/img/baal-pteor-2_sd.jpg",
             "images": ["data/models/img/baal-pteor-2_1.jpg"],
-            "paint": null,
+            "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "human",
             "origins": ["conqueror"],
             "forum": "https://the-overlord.com/index.php?/topic/1274-peinture-montrez-moi-vos-baal-pteor/"
@@ -1457,8 +1457,8 @@
         {
             "id": "conan-the-pirate",
             "thumb": "data/models/img/conan-the-pirate_sd.jpg",
-            "images": ["data/models/img/conan-the-pirate_1.jpg", "data/models/img/conan-the-pirate_2.jpg"],
-            "paint": null,
+            "images": ["data/models/img/conan-the-pirate_1.jpg"],
+            "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "human",
             "origins": ["conqueror"],
             "forum": "https://the-overlord.com/index.php?/topic/321-peinture-montrez-moi-vos-conan-par-crom/"
@@ -1467,8 +1467,8 @@
         {
             "id": "nyaga",
             "thumb": "data/models/img/nyaga_sd.jpg",
-            "images": ["data/models/img/nyaga_1.jpg", "data/models/img/nyaga_2.jpg"],
-            "paint": null,
+            "images": ["data/models/img/nyaga_1.jpg"],
+            "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "human",
             "origins": ["conqueror"],
             "forum": "https://the-overlord.com/index.php?/topic/4268-peinture-montrez-moi-vos-nyaga/"
@@ -1478,7 +1478,7 @@
             "id": "zenobia",
             "thumb": "data/models/img/zenobia_sd.jpg",
             "images": ["data/models/img/zenobia_1.jpg"],
-            "paint": null,
+            "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "human",
             "origins": ["conqueror"],
             "forum": "https://the-overlord.com/index.php?/topic/4620-peinture-montrez-moi-vos-zenobia/"
@@ -1488,7 +1488,7 @@
             "id": "xaltotun",
             "thumb": "data/models/img/xaltotun_sd.jpg",
             "images": ["data/models/img/xaltotun_1.jpg"],
-            "paint": null,
+            "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "human",
             "origins": ["conqueror"],
             "forum": "https://the-overlord.com/index.php?/topic/4267-peinture-montrez-moi-vos-xaltotun/"
@@ -1528,7 +1528,7 @@
             "id": "thulsa-doom",
             "thumb": "data/models/img/thulsa-doom_sd.jpg",
             "images": ["data/models/img/thulsa-doom_1.jpg"],
-            "paint": null,
+            "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "monster",
             "origins": ["shadow-kingdom"],
             "forum": "https://the-overlord.com/index.php?/topic/4638-peinture-montrez-moi-vos-thulsa-doom/"
@@ -1538,7 +1538,7 @@
             "id": "kull",
             "thumb": "data/models/img/kull_sd.jpg",
             "images": ["data/models/img/kull_1.jpg"],
-            "paint": null,
+            "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "monster",
             "origins": ["shadow-kingdom"],
             "forum": "https://the-overlord.com/index.php?/topic/4639-peinture-montrez-moi-vos-rois-kull/"
@@ -1548,7 +1548,7 @@
             "id": "brule",
             "thumb": "data/models/img/brule_sd.jpg",
             "images": ["data/models/img/brule_1.jpg"],
-            "paint": null,
+            "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "monster",
             "origins": ["shadow-kingdom"],
             "forum": "https://the-overlord.com/index.php?/topic/4640-peinture-montrez-moi-vos-brule/"
@@ -1557,8 +1557,8 @@
         {
             "id": "serpent-men",
             "thumb": "data/models/img/serpent-men_sd.jpg",
-            "images": ["data/models/img/serpent-men_1.jpg"],
-            "paint": null,
+            "images": ["data/models/img/serpent-men_1.jpg", "data/models/img/serpent-men_2.jpg"],
+            "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "monster",
             "origins": ["shadow-kingdom"],
             "count": 10,
