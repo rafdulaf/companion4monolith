@@ -144,7 +144,7 @@
             "id": "kerim-shah",
             "thumb": "data/models/img/kerim-shah_sd.jpg",
             "images": ["data/models/img/kerim-shah_1.jpg"],
-            "paint": null,
+            "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "human",
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/2806-peinture-montrez-moi-votre-kerim-shah/"
@@ -274,7 +274,7 @@
             "id": "belit-the-princess",
             "thumb": "data/models/img/belit-the-princess_sd.jpg",
             "images": ["data/models/img/belit-the-princess_1.jpg"],
-            "paint": null,
+            "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "human",
             "origins": ["xcbox"],
             "forum": "https://the-overlord.com/index.php?/topic/486-peinture-montrez-moi-vos-belit/"
@@ -284,7 +284,7 @@
             "id": "king-conan",
             "thumb": "data/models/img/king-conan_sd.jpg",
             "images": ["data/models/img/king-conan_1.jpg"],
-            "paint": null,
+            "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "human",
             "origins": ["xcbox"],
             "forum": "https://the-overlord.com/index.php?/topic/321-peinture-montrez-moi-vos-conan-par-crom/"
@@ -314,7 +314,7 @@
             "id": "taramis-salome",
             "thumb": "data/models/img/taramis-salome_sd.jpg",
             "images": ["data/models/img/taramis-salome_1.jpg"],
-            "paint": null,
+            "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "human",
             "origins": ["ppbox"],
             "forum": "https://the-overlord.com/index.php?/topic/3715-peinture-montrez-moi-vos-taramis-salome/"
@@ -324,7 +324,7 @@
             "id": "valeria-warrior",
             "thumb": "data/models/img/valeria-warrior_sd.jpg",
             "images": ["data/models/img/valeria-warrior_1.jpg"],
-            "paint": null,
+            "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "human",
             "origins": ["ppbox"],
             "forum": "https://the-overlord.com/index.php?/topic/682-peinture-montrez-moi-vos-val%C3%A9ria/"
