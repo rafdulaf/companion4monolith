@@ -45,11 +45,11 @@
     padding-top: 180px;
 }
 .menu > div > ul:before {
-    background-image: url(../about/logo-light.png);
+    background-image: url(../about/logo-light.webp);
     height: 120px;
 }
 .menu > div > ul:after {
-    background-image: url(../about/companion4monolith-small.png);
+    background-image: url(../about/companion4monolith-small.webp);
 }
 
 @media screen and (max-width: 700px) {

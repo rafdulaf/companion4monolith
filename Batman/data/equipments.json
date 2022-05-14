@@ -6,7 +6,7 @@
                 "fr": "Effet permanent",
                 "en": "Permanent effect"
             },
-            "image": "data/skills/img/attack/permanent.png"
+            "image": "data/skills/img/attack/permanent.webp"
         }
 	],
 	
@@ -17,7 +17,7 @@
                 "fr": "Objet",
                 "en": "Object"
             },
-	    "image": "data/skills/img/attack/object.png"
+	    "image": "data/skills/img/attack/object.webp"
         },
         {
             "id": "tool",
@@ -25,7 +25,7 @@
                 "fr": "Outil",
                 "en": "Tool"
             },
-	    "image": "data/skills/img/attack/tool.png"
+	    "image": "data/skills/img/attack/tool.webp"
         },
         {
             "id": "ranged-weapon",
@@ -33,7 +33,7 @@
                 "fr": "Arme à distance",
                 "en": "Ranges Weapon"
             },
-	    "image": "data/skills/img/attack/ranged-weapon.png"
+	    "image": "data/skills/img/attack/ranged-weapon.webp"
         },
         {
             "id": "melee-weapon",
@@ -41,7 +41,7 @@
                 "fr": "Arme au corps-à-corps",
                 "en": "Melee weapon"
             },
-	    "image": "data/skills/img/attack/melee-weapon.png"
+	    "image": "data/skills/img/attack/melee-weapon.webp"
         }
     ],
            	
@@ -57,7 +57,7 @@
             "lethal": false,
             "discard": false,
             "encumbrance": 0, 
-            "image": "data/equipments/img/security-pass-orange.png",
+            "image": "data/equipments/img/security-pass-orange.webp",
             "origins": ["corebox"]
         },
         {
@@ -71,7 +71,7 @@
             "lethal": false,
             "discard": false,
             "encumbrance": 0, 
-            "image": "data/equipments/img/security-pass-white.png",
+            "image": "data/equipments/img/security-pass-white.webp",
             "origins": ["corebox"]
         },
         {
@@ -85,7 +85,7 @@
             "lethal": false,
             "discard": false,
             "encumbrance": 0, 
-            "image": "data/equipments/img/security-pass-black.png",
+            "image": "data/equipments/img/security-pass-black.webp",
             "origins": ["corebox"]
         },
         {
@@ -99,7 +99,7 @@
             "lethal": false,
             "discard": false,
             "encumbrance": 0, 
-            "image": "data/equipments/img/information.png",
+            "image": "data/equipments/img/information.webp",
             "origins": ["corebox"]
         },
         {
@@ -124,7 +124,7 @@
 					]
 				}
 			},
-			"image": "data/equipments/img/gas-mask.png",
+			"image": "data/equipments/img/gas-mask.webp",
             "origins": ["corebox"]
         },
         {
@@ -151,7 +151,7 @@
 					]
 				}
 			},
-			"image": "data/equipments/img/baton.png",
+			"image": "data/equipments/img/baton.webp",
             "origins": ["corebox"],
 			"count": 2
         },
@@ -166,7 +166,7 @@
             "lethal": false,
             "discard": false,
             "encumbrance": 0, 
-            "image": "data/equipments/img/police-badge.png",
+            "image": "data/equipments/img/police-badge.webp",
             "origins": ["corebox"]
         },
         {
@@ -186,7 +186,7 @@
 					"dice": ["black"]
 				}
 			},
-			"image": "data/equipments/img/service-revolver.png",
+			"image": "data/equipments/img/service-revolver.webp",
             "origins": ["corebox"]
         },		
         {
@@ -206,7 +206,7 @@
 					"dice": ["orange"]
 				}
 			},
-			"image": "data/equipments/img/service-gun.png",
+			"image": "data/equipments/img/service-gun.webp",
             "origins": ["corebox"],
 			"count": 3
         },			
@@ -228,7 +228,7 @@
 					"dice": ["redreroll"]
 				}
 			},
-			"image": "data/equipments/img/revolver.png",
+			"image": "data/equipments/img/revolver.webp",
             "origins": ["corebox"]
         },			
         {
@@ -249,7 +249,7 @@
 					"dice": ["yellow"]
 				}
 			},
-			"image": "data/equipments/img/claws.png",
+			"image": "data/equipments/img/claws.webp",
             "origins": ["corebox"]
         },		
         {
@@ -274,7 +274,7 @@
 					]
 				}
 			},
-			"image": "data/equipments/img/hacking-equipment.png",
+			"image": "data/equipments/img/hacking-equipment.webp",
             "origins": ["corebox"]
         },			
         {
@@ -299,7 +299,7 @@
 					]
 				}
 			},
-			"image": "data/equipments/img/medikit.png",
+			"image": "data/equipments/img/medikit.webp",
             "origins": ["corebox"],
 			"count" : 2
         },			
@@ -327,7 +327,7 @@
 					]
 				}
 			},
-			"image": "data/equipments/img/whip.png",
+			"image": "data/equipments/img/whip.webp",
             "origins": ["corebox"]
         },				
         {
@@ -347,7 +347,7 @@
 					"dice": ["orange"]
 				}
 			},
-			"image": "data/equipments/img/crowbar.png",
+			"image": "data/equipments/img/crowbar.webp",
             "origins": ["corebox"]
         },			
         {
@@ -373,7 +373,7 @@
 					]
 				}
 			},
-			"image": "data/equipments/img/long-baton.png",
+			"image": "data/equipments/img/long-baton.webp",
             "origins": ["corebox"]
         },			
         {
@@ -393,7 +393,7 @@
 					"dice": ["orange"]
 				}
 			},
-			"image": "data/equipments/img/bulletproof-vest.png",
+			"image": "data/equipments/img/bulletproof-vest.webp",
             "origins": ["corebox"]
         },			
         {
@@ -419,7 +419,7 @@
 					]
 				}
 			},
-			"image": "data/equipments/img/shotgun.png",
+			"image": "data/equipments/img/shotgun.webp",
             "origins": ["corebox"]
         },		
         {
@@ -439,7 +439,7 @@
 					"dice": ["yellowreroll"]
 				}
 			},
-			"image": "data/equipments/img/throwing-blades.png",
+			"image": "data/equipments/img/throwing-blades.webp",
             "origins": ["corebox"]
         },			
         {
@@ -460,7 +460,7 @@
 					"dice": ["red"]
 				}
 			},
-			"image": "data/equipments/img/flaming-sword.png",
+			"image": "data/equipments/img/flaming-sword.webp",
             "origins": ["corebox"]
         },			
         {
@@ -486,7 +486,7 @@
 					]
 				}
 			},
-			"image": "data/equipments/img/nunchaku.png",
+			"image": "data/equipments/img/nunchaku.webp",
             "origins": ["corebox"]
         },		
         {
@@ -500,7 +500,7 @@
             "lethal": false,
             "discard": false,
             "encumbrance": 0,
-			"image": "data/equipments/img/gas-capsule.png",
+			"image": "data/equipments/img/gas-capsule.webp",
             "origins": ["corebox"]
         },			
         {
@@ -527,7 +527,7 @@
 					]
 				}
 			},
-			"image": "data/equipments/img/taser-rifle.png",
+			"image": "data/equipments/img/taser-rifle.webp",
             "origins": ["corebox"]
         },			
 		{
@@ -554,7 +554,7 @@
 					]
 				}
 			},
-			"image": "data/equipments/img/taser-handgun.png",
+			"image": "data/equipments/img/taser-handgun.webp",
             "origins": ["corebox"],
 			"count": 2
         },	
@@ -576,7 +576,7 @@
 					"automatic-success" : 1
 				}
 			},
-			"image": "data/equipments/img/sniper-rifle.png",
+			"image": "data/equipments/img/sniper-rifle.webp",
             "origins": ["corebox"]
         },		
 		{
@@ -596,7 +596,7 @@
 					"dice": ["orangereroll"]
 				}
 			},
-			"image": "data/equipments/img/katana.png",
+			"image": "data/equipments/img/katana.webp",
             "origins": ["corebox"]
         },	
 		{
@@ -610,7 +610,7 @@
             "lethal": false,
             "discard": false,
             "encumbrance": 0,
-			"image": "data/equipments/img/kryptonite-fragment.png",
+			"image": "data/equipments/img/kryptonite-fragment.webp",
             "origins": ["corebox"]
         }, 		
         {
@@ -636,7 +636,7 @@
 					]
 				}
 			},
-			"image": "data/equipments/img/machine-pistol.png",
+			"image": "data/equipments/img/machine-pistol.webp",
             "origins": ["corebox"]
         },		
         {
@@ -656,7 +656,7 @@
 					"dice": ["yellowreroll"]
 				}
 			},
-			"image": "data/equipments/img/short-baton.png",
+			"image": "data/equipments/img/short-baton.webp",
             "origins": ["corebox"]
         },
         {
@@ -681,7 +681,7 @@
 					]
 				}
 			},
-			"image": "data/equipments/img/lockpicking-equipment.png",
+			"image": "data/equipments/img/lockpicking-equipment.webp",
             "origins": ["corebox"]
         },			
         {
@@ -701,7 +701,7 @@
 					"dice": ["whitereroll"]
 				}
 			},
-			"image": "data/equipments/img/baseball-bat.png",
+			"image": "data/equipments/img/baseball-bat.webp",
             "origins": ["corebox"]
         },		
         {
@@ -731,7 +731,7 @@
 				}
 				
 			},
-			"image": "data/equipments/img/tonfa.png",
+			"image": "data/equipments/img/tonfa.webp",
             "origins": ["corebox"]
         },			
         {
@@ -761,7 +761,7 @@
 				}
 				
 			},
-			"image": "data/equipments/img/fire-axe.png",
+			"image": "data/equipments/img/fire-axe.webp",
             "origins": ["corebox"]
         },			
         {
@@ -787,7 +787,7 @@
 					]
 				}
 			},
-			"image": "data/equipments/img/submachine-gun.png",
+			"image": "data/equipments/img/submachine-gun.webp",
             "origins": ["corebox"]
         },		
         {
@@ -814,7 +814,7 @@
 				}
 				
 			},
-			"image": "data/equipments/img/brass-knuckles.png",
+			"image": "data/equipments/img/brass-knuckles.webp",
             "origins": ["corebox"]
         },			
         {
@@ -844,7 +844,7 @@
 					]
 				}
 			},
-			"image": "data/equipments/img/crossbow.png",
+			"image": "data/equipments/img/crossbow.webp",
             "origins": ["corebox"]
         },			
         {
@@ -870,7 +870,7 @@
 				}
 				
 			},
-			"image": "data/equipments/img/c4-block.png",
+			"image": "data/equipments/img/c4-block.webp",
             "origins": ["corebox"],
 			"count" : 2
         },	
@@ -901,7 +901,7 @@
 					]
 				}
 			},
-			"image": "data/equipments/img/minigun.png",
+			"image": "data/equipments/img/minigun.webp",
             "origins": ["corebox"]
         },	
         {
@@ -932,7 +932,7 @@
 					]
 				}
 			},
-			"image": "data/equipments/img/bow.png",
+			"image": "data/equipments/img/bow.webp",
             "origins": ["corebox"]
         },	
         {
@@ -952,7 +952,7 @@
 					"dice": ["redreroll"]
 				}
 			},
-			"image": "data/equipments/img/hunting-rifle.png",
+			"image": "data/equipments/img/hunting-rifle.webp",
             "origins": ["wayne-manor"]
         },	
         {
@@ -978,7 +978,7 @@
 					]
 				}
 			},
-			"image": "data/equipments/img/blunderbuss.png",
+			"image": "data/equipments/img/blunderbuss.webp",
             "origins": ["wayne-manor"]
         },	
         {
@@ -999,7 +999,7 @@
 				}
 				
 			},
-			"image": "data/equipments/img/cavalry-saber.png",
+			"image": "data/equipments/img/cavalry-saber.webp",
             "origins": ["wayne-manor"]
         },	
         {
@@ -1026,7 +1026,7 @@
 				}
 				
 			},
-			"image": "data/equipments/img/halberd.png",
+			"image": "data/equipments/img/halberd.webp",
             "origins": ["wayne-manor"]
         },			
         {
@@ -1047,7 +1047,7 @@
 				}
 				
 			},
-			"image": "data/equipments/img/rolling-pin.png",
+			"image": "data/equipments/img/rolling-pin.webp",
             "origins": ["wayne-manor"]
         },		
        {
@@ -1073,7 +1073,7 @@
 					]
 				}
 			},
-			"image": "data/equipments/img/rocket-launcher.png",
+			"image": "data/equipments/img/rocket-launcher.webp",
             "origins": ["wayne-manor"]
         },			
 		   {
@@ -1100,7 +1100,7 @@
 					]
 				}
 			},
-			"image": "data/equipments/img/handgun.png",
+			"image": "data/equipments/img/handgun.webp",
             "origins": ["wayne-manor"]
         },		
 	   {
@@ -1127,7 +1127,7 @@
 					]
 				}
 			},
-			"image": "data/equipments/img/tranquilizing-gun.png",
+			"image": "data/equipments/img/tranquilizing-gun.webp",
             "origins": ["wayne-manor"]
         },	
 	   {
@@ -1157,7 +1157,7 @@
 					]
 				}
 			},
-			"image": "data/equipments/img/portable-computer.png",
+			"image": "data/equipments/img/portable-computer.webp",
             "origins": ["wayne-manor"]
         },	
 	   {
@@ -1171,7 +1171,7 @@
             "lethal": false,
             "discard": false,
             "encumbrance": 1,
-			"image": "data/equipments/img/ultrasonic-emitter.png",
+			"image": "data/equipments/img/ultrasonic-emitter.webp",
             "origins": ["wayne-manor"]
         },			
 	   {
@@ -1185,7 +1185,7 @@
             "lethal": false,
             "discard": false,
             "encumbrance": 0,
-			"image": "data/equipments/img/headset.png",
+			"image": "data/equipments/img/headset.webp",
             "origins": ["wayne-manor"]
         },			
         {
@@ -1212,7 +1212,7 @@
 					]
 				}
 			},
-            "image": "data/equipments/img/electric-boomerang.png",
+            "image": "data/equipments/img/electric-boomerang.webp",
             "origins": ["suicide-squad"]
         },		
         {
@@ -1238,7 +1238,7 @@
 					"dice": ["yellow"]
 				}
 			},
-            "image": "data/equipments/img/combat-boomerang.png",
+            "image": "data/equipments/img/combat-boomerang.webp",
             "origins": ["suicide-squad"]
         },
         {
@@ -1265,7 +1265,7 @@
 					]
 				}
 			},
-            "image": "data/equipments/img/smasher-squad.png",
+            "image": "data/equipments/img/smasher-squad.webp",
             "origins": ["suicide-squad"]
         },
         {
@@ -1292,7 +1292,7 @@
 					]
 				}
 			},
-            "image": "data/equipments/img/wrist-gun.png",
+            "image": "data/equipments/img/wrist-gun.webp",
             "origins": ["suicide-squad"],
 			"count" : 2
         },
@@ -1314,7 +1314,7 @@
 					"dice": ["redreroll"]
 				}
 			},
-            "image": "data/equipments/img/long-sniper-rifle.png",
+            "image": "data/equipments/img/long-sniper-rifle.webp",
             "origins": ["suicide-squad"]
         },
         {
@@ -1341,7 +1341,7 @@
 					]
 				}
 			},
-            "image": "data/equipments/img/assault-rifle.png",
+            "image": "data/equipments/img/assault-rifle.webp",
             "origins": ["suicide-squad"]
         },
          {
@@ -1362,7 +1362,7 @@
 					"dice": ["orangereroll"]
 				}
 			},
-            "image": "data/equipments/img/deathstroke.png",
+            "image": "data/equipments/img/deathstroke.webp",
             "origins": ["suicide-squad"]
         },
          {
@@ -1389,7 +1389,7 @@
 					]
 				}
 			},
-            "image": "data/equipments/img/infantry-automatic-rifle.png",
+            "image": "data/equipments/img/infantry-automatic-rifle.webp",
             "origins": ["suicide-squad"]
         },
          {
@@ -1414,7 +1414,7 @@
 					]
 				}
 			},
-            "image": "data/equipments/img/stun-grenade.png",
+            "image": "data/equipments/img/stun-grenade.webp",
             "origins": ["corebox"]
         },		
          {
@@ -1443,7 +1443,7 @@
 					]
 				}
 			},
-            "image": "data/equipments/img/tear-gas.png",
+            "image": "data/equipments/img/tear-gas.webp",
             "origins": ["corebox"]
         },			
          {
@@ -1468,7 +1468,7 @@
 					]
 				}
 			},
-            "image": "data/equipments/img/electric-batgloves.png",
+            "image": "data/equipments/img/electric-batgloves.webp",
             "origins": ["corebox"]
         },			
          {
@@ -1488,7 +1488,7 @@
 					"dice": ["yellowreroll"]
 				}
 			},
-            "image": "data/equipments/img/batarangs.png",
+            "image": "data/equipments/img/batarangs.webp",
             "origins": ["corebox"],
 			"count" : 2
         },			
@@ -1514,7 +1514,7 @@
 					]
 				}
 			},
-            "image": "data/equipments/img/armband-computer.png",
+            "image": "data/equipments/img/armband-computer.webp",
             "origins": ["corebox"]
         },			
          {
@@ -1539,7 +1539,7 @@
 					]
 				}
 			},
-            "image": "data/equipments/img/compact-gas-mask.png",
+            "image": "data/equipments/img/compact-gas-mask.webp",
             "origins": ["corebox"]
         },	
          {
@@ -1564,7 +1564,7 @@
 					]
 				}
 			},
-            "image": "data/equipments/img/grappling-hook.png",
+            "image": "data/equipments/img/grappling-hook.webp",
             "origins": ["corebox"],
 			"count" : 3
         },			
@@ -1585,7 +1585,7 @@
 					"dice": ["red","red"]
 				}
 			},
-            "image": "data/equipments/img/perforating-batarang.png",
+            "image": "data/equipments/img/perforating-batarang.webp",
             "origins": ["corebox"],
 			"count" : 2
         },			
@@ -1611,7 +1611,7 @@
 					]
 				}
 			},
-            "image": "data/equipments/img/batcape.png",
+            "image": "data/equipments/img/batcape.webp",
             "origins": ["corebox"],
 			"count" : 2
         },			
@@ -1637,7 +1637,7 @@
 					]
 				}
 			},
-            "image": "data/equipments/img/compact-master-key.png",
+            "image": "data/equipments/img/compact-master-key.webp",
             "origins": ["corebox"]
         },			
          {
@@ -1657,7 +1657,7 @@
 					"dice": ["black","black"]
 				}
 			},
-            "image": "data/equipments/img/explosive-batarang.png",
+            "image": "data/equipments/img/explosive-batarang.webp",
             "origins": ["corebox"],
 			"count" : 2
         },					
@@ -1687,7 +1687,7 @@
 					]
 				}
 			},
-            "image": "data/equipments/img/claw.png",
+            "image": "data/equipments/img/claw.webp",
             "origins": ["corebox"]
         },			
          {
@@ -1712,7 +1712,7 @@
 					]
 				}
 			},
-            "image": "data/equipments/img/explosive-gel.png",
+            "image": "data/equipments/img/explosive-gel.webp",
             "origins": ["corebox"]
         },			
          {
@@ -1737,7 +1737,7 @@
 					]
 				}
 			},
-            "image": "data/equipments/img/portable-forensics-scanner.png",
+            "image": "data/equipments/img/portable-forensics-scanner.webp",
             "origins": ["corebox"]
         },			
          {
@@ -1766,7 +1766,7 @@
 					]
 				}
 			},
-            "image": "data/equipments/img/smoke-pellets.png",
+            "image": "data/equipments/img/smoke-pellets.webp",
             "origins": ["corebox"]
         },			
          {
@@ -1795,7 +1795,7 @@
 					]
 				}
 			},
-            "image": "data/equipments/img/freezing-grenade.png",
+            "image": "data/equipments/img/freezing-grenade.webp",
             "origins": ["corebox"]
         },			
          {
@@ -1823,7 +1823,7 @@
 					]
 				}
 			},
-            "image": "data/equipments/img/tranquilizer-dart.png",
+            "image": "data/equipments/img/tranquilizer-dart.webp",
             "origins": ["corebox"],
 			"count" : 2
         },			
@@ -1850,7 +1850,7 @@
 					]
 				}
 			},
-            "image": "data/equipments/img/taser-gun.png",
+            "image": "data/equipments/img/taser-gun.webp",
             "origins": ["corebox"]
         },			
          {
@@ -1876,7 +1876,7 @@
 					]
 				}
 			},
-            "image": "data/equipments/img/telescopic-baton.png",
+            "image": "data/equipments/img/telescopic-baton.webp",
             "origins": ["wayne-manor"]
         },			
          {
@@ -1901,7 +1901,7 @@
 					]
 				}
 			},
-            "image": "data/equipments/img/guided-batarang.png",
+            "image": "data/equipments/img/guided-batarang.webp",
             "origins": ["wayne-manor"],
 			"count" : 2
         },
@@ -1928,7 +1928,7 @@
 					]
 				}
 			},
-            "image": "data/equipments/img/bolas.png",
+            "image": "data/equipments/img/bolas.webp",
             "origins": ["wayne-manor"]
         },			
          {
@@ -1953,7 +1953,7 @@
 					]
 				}
 			},
-            "image": "data/equipments/img/cable-tie-handcuffs.png",
+            "image": "data/equipments/img/cable-tie-handcuffs.webp",
             "origins": ["wayne-manor"]
         },
         {
@@ -1978,7 +1978,7 @@
 					]
 				}
 			},
-            "image": "data/equipments/img/venom.png",
+            "image": "data/equipments/img/venom.webp",
             "origins": ["narrows-chronicles"],
 			"count" : 4
         },
@@ -2000,7 +2000,7 @@
 					"dice": ["yellowreroll"]
 				}
 			},
-            "image": "data/equipments/img/riddle-cane.png",
+            "image": "data/equipments/img/riddle-cane.webp",
             "origins": ["narrows-chronicles"]
         },		
         {
@@ -2026,7 +2026,7 @@
 					]
 				}
 			},
-            "image": "data/equipments/img/wireless-headset.png",
+            "image": "data/equipments/img/wireless-headset.webp",
             "origins": ["narrows-chronicles"]
         },			
         {
@@ -2052,7 +2052,7 @@
 					]
 				}
 			},
-            "image": "data/equipments/img/stick.png",
+            "image": "data/equipments/img/stick.webp",
             "origins": ["narrows-chronicles"]
         },			
         {
@@ -2079,7 +2079,7 @@
 					]
 				}
 			},
-            "image": "data/equipments/img/multifunction-umbrella.png",
+            "image": "data/equipments/img/multifunction-umbrella.webp",
             "origins": ["narrows-chronicles"]
         },			
         {
@@ -2106,7 +2106,7 @@
 					]
 				}
 			},
-            "image": "data/equipments/img/reaper.png",
+            "image": "data/equipments/img/reaper.webp",
             "origins": ["narrows-chronicles"]
         },			
         {
@@ -2136,7 +2136,7 @@
 					]
 				}
 			},
-            "image": "data/equipments/img/fear-gas.png",
+            "image": "data/equipments/img/fear-gas.webp",
             "origins": ["narrows-chronicles"]
         },	
         {
@@ -2163,7 +2163,7 @@
 					]
 				}
 			},
-            "image": "data/equipments/img/dirk.png",
+            "image": "data/equipments/img/dirk.webp",
             "origins": ["narrows-chronicles"]
         },	
         {
@@ -2190,7 +2190,7 @@
 					]
 				}
 			},
-            "image": "data/equipments/img/smasher.png",
+            "image": "data/equipments/img/smasher.webp",
             "origins": ["narrows-chronicles"]
         },
         {
@@ -2221,7 +2221,7 @@
 					]
 				}
 			},
-            "image": "data/equipments/img/boots.png",
+            "image": "data/equipments/img/boots.webp",
             "origins": ["narrows-chronicles"]
         },
         {
@@ -2248,7 +2248,7 @@
 					]
 				}
 			},
-            "image": "data/equipments/img/judge.png",
+            "image": "data/equipments/img/judge.webp",
             "origins": ["narrows-chronicles"]
         },
         {
@@ -2269,7 +2269,7 @@
 					"dice": ["orange"]
 				}
 			},
-            "image": "data/equipments/img/scimitar.png",
+            "image": "data/equipments/img/scimitar.webp",
             "origins": ["suicide-squad"]
         },		
         {
@@ -2295,7 +2295,7 @@
 					]
 				}
 			},
-            "image": "data/equipments/img/juror.png",
+            "image": "data/equipments/img/juror.webp",
             "origins": ["narrows-chronicles"]
         },
         {
@@ -2322,7 +2322,7 @@
 					]
 				}
 			},
-            "image": "data/equipments/img/fighting_blade.png",
+            "image": "data/equipments/img/fighting_blade.webp",
             "origins": ["suicide-squad"]
         },		
         {
@@ -2336,7 +2336,7 @@
             "lethal": false,
             "discard": false,
             "encumbrance": 2,
-            "image": "data/equipments/img/wolf-trap.png",
+            "image": "data/equipments/img/wolf-trap.webp",
             "origins": ["arkham-asylum"],
 			"count" : 3
         },		
@@ -2364,7 +2364,7 @@
 					]
 				}
 			},
-            "image": "data/equipments/img/acid-gun.png",
+            "image": "data/equipments/img/acid-gun.webp",
             "origins": ["suicide-squad"]
         },		
         {
@@ -2379,7 +2379,7 @@
             "lethal": false,
             "discard": false,
             "encumbrance": 0,
-            "image": "data/equipments/img/carnivorous-seeds.png",
+            "image": "data/equipments/img/carnivorous-seeds.webp",
             "origins": ["suicide-squad"]
         },			
         {
@@ -2409,7 +2409,7 @@
 					]
 				}
 			},
-            "image": "data/equipments/img/paralyzing-grenade.png",
+            "image": "data/equipments/img/paralyzing-grenade.webp",
             "origins": ["suicide-squad"]
         },		
         {
@@ -2445,7 +2445,7 @@
 					]
 				}
 			},
-            "image": "data/equipments/img/laser_helmet.png",
+            "image": "data/equipments/img/laser_helmet.webp",
             "origins": ["suicide-squad"]
         },
         {
@@ -2470,7 +2470,7 @@
 					]
 				}
 			},
-            "image": "data/equipments/img/super-medkit.png",
+            "image": "data/equipments/img/super-medkit.webp",
             "origins": ["arkham-asylum"]
         },
         {
@@ -2496,7 +2496,7 @@
 					]
 				}
 			},
-            "image": "data/equipments/img/fireworks.png",
+            "image": "data/equipments/img/fireworks.webp",
             "origins": ["arkham-asylum"]
         },
         {
@@ -2522,7 +2522,7 @@
 					]
 				}
 			},
-            "image": "data/equipments/img/boxing-glove-gun.png",
+            "image": "data/equipments/img/boxing-glove-gun.webp",
             "origins": ["arkham-asylum"]
         },
 		{
@@ -2536,7 +2536,7 @@
             "lethal": false,
             "discard": false,
             "encumbrance": 0,
-            "image": "data/equipments/img/shark-repellent.png",
+            "image": "data/equipments/img/shark-repellent.webp",
             "origins": ["arkham-asylum"]
         }
     ]

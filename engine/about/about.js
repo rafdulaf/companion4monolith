@@ -58,8 +58,8 @@ var About = {
             "<div id='about' class='about'>"
                     + "<div class='about-zone-about'>"
                             + "<h1 style='text-align: center '>" + About._i18n.title + " v" + Version + "</h1>"
-                            + "<img src='about/logo-" + Theme + ".png?version=" + Version + "'/>"
-                            + "<img src='about/companion4monolith.png?version=" + Version + "' style='margin-right: 0'/>"
+                            + "<img src='about/logo-" + Theme + ".webp?version=" + Version + "'/>"
+                            + "<img src='about/companion4monolith.webp?version=" + Version + "' style='margin-right: 0'/>"
                             + "<a class='fullscreen' onclick='About._toggleFullscreen(); return false' href='javascript:void(0);' title=\"" + About._i18n.fullscreen + "\"></a>"
                             + "<span>" + About._i18n.text + "</span>"
                     + "</div>"
@@ -436,7 +436,7 @@ var About = {
     
     _replace: function(text, cls)
     {
-        text = text.replace(/\{(.*?)\}/g, "<img src=\"resources/img/$1.png?version=" + Version + "\"" + (cls ? " class='" + cls + "'" : "") + "/>");
+        text = text.replace(/\{(.*?)\}/g, "<img src=\"resources/img/$1.webp?version=" + Version + "\"" + (cls ? " class='" + cls + "'" : "") + "/>");
         return text;
     }
 }

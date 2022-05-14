@@ -11,8 +11,8 @@
             "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
 
-            "image": "data/tiles/img/event-1.png",
-            "imageHD": "data/tiles/img/event-1.png",
+            "image": "data/tiles/img/event-1.webp",
+            "imageHD": "data/tiles/img/event-1.webp",
             "image_location": {"x":50, "y":50},
             "image_zoom": 100,
             "model": null,
@@ -30,8 +30,8 @@
             "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
 
-            "image": "data/tiles/img/event-2.png",
-            "imageHD": "data/tiles/img/event-2.png",
+            "image": "data/tiles/img/event-2.webp",
+            "imageHD": "data/tiles/img/event-2.webp",
             "image_location": {"x":50, "y":50},
             "image_zoom": 100,
             "model": null,
@@ -49,8 +49,8 @@
             "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
 
-            "image": "data/tiles/img/event-3.png",
-            "imageHD": "data/tiles/img/event-3.png",
+            "image": "data/tiles/img/event-3.webp",
+            "imageHD": "data/tiles/img/event-3.webp",
             "image_location": {"x":50, "y":50},
             "image_zoom": 100,
             "model": null,
@@ -77,8 +77,8 @@
                 }
             },
 
-            "image": "data/tiles/img/captain.png",
-            "imageHD": "data/tiles/img/captain_hd.png",
+            "image": "data/tiles/img/captain.webp",
+            "imageHD": "data/tiles/img/captain_hd.webp",
             "image_location": {"x":52, "y":54},
             "image_zoom": 117,
             "model": "captain",
@@ -107,8 +107,8 @@
                 }
             },
 
-            "image": "data/tiles/img/skuthus.png",
-            "imageHD": "data/tiles/img/skuthus_hd.png",
+            "image": "data/tiles/img/skuthus.webp",
+            "imageHD": "data/tiles/img/skuthus_hd.webp",
             "image_location": {"x":66, "y":56},
             "image_zoom": 65,
             "model": "skuthus",
@@ -131,8 +131,8 @@
                 { "image_location": {"x":81, "y":270}, "image_zoom": 300 }
             ],
 
-            "image": "data/tiles/img/princess.png",
-            "imageHD": "data/tiles/img/princess_hd.png",
+            "image": "data/tiles/img/princess.webp",
+            "imageHD": "data/tiles/img/princess_hd.webp",
             "image_location": {"x":64, "y":56},
             "image_zoom": 72,
             "model": "princess",
@@ -159,8 +159,8 @@
                 }
             },
 
-            "image": "data/tiles/img/zogar-sag.png",
-            "imageHD": "data/tiles/img/zogar-sag_hd.png",
+            "image": "data/tiles/img/zogar-sag.webp",
+            "imageHD": "data/tiles/img/zogar-sag_hd.webp",
             "image_location": {"x":59, "y":41},
             "image_zoom": 96,
             "model": "zogar-sag",
@@ -189,8 +189,8 @@
                 }
             },
 
-            "image": "data/tiles/img/zaporavo.png",
-            "imageHD": "data/tiles/img/zaporavo_hd.png",
+            "image": "data/tiles/img/zaporavo.webp",
+            "imageHD": "data/tiles/img/zaporavo_hd.webp",
             "image_location": {"x":63, "y":51},
             "image_zoom": 78,
             "model": "zaporavo",
@@ -219,8 +219,8 @@
                 }
             },
 
-            "image": "data/tiles/img/dark-demon.png",
-            "imageHD": "data/tiles/img/dark-demon_hd.png",
+            "image": "data/tiles/img/dark-demon.webp",
+            "imageHD": "data/tiles/img/dark-demon_hd.webp",
             "image_location": {"x":58, "y":46},
             "image_zoom": 132,
             "model": "dark-demon",
@@ -249,8 +249,8 @@
                 }
             },
 
-            "image": "data/tiles/img/giant-snake.png",
-            "imageHD": "data/tiles/img/giant-snake_hd.png",
+            "image": "data/tiles/img/giant-snake.webp",
+            "imageHD": "data/tiles/img/giant-snake_hd.webp",
             "image_location": {"x":45, "y":45},
             "image_zoom": 119,
             "model": "giant-snake",
@@ -276,8 +276,8 @@
                 }
             },
 
-            "image": "data/tiles/img/giant-snake.png",
-            "imageHD": "data/tiles/img/giant-snake_hd.png",
+            "image": "data/tiles/img/giant-snake.webp",
+            "imageHD": "data/tiles/img/giant-snake_hd.webp",
             "image_location": {"x":45, "y":45},
             "image_zoom": 119,
             "model": "giant-snake",
@@ -306,8 +306,8 @@
                 }
             },
 
-            "image": "data/tiles/img/khosatral-khel.png",
-            "imageHD": "data/tiles/img/khosatral-khel_hd.png",
+            "image": "data/tiles/img/khosatral-khel.webp",
+            "imageHD": "data/tiles/img/khosatral-khel_hd.webp",
             "image_location": {"x":61, "y":61},
             "image_zoom": 108,
             "model": "khosatral-khel",
@@ -336,8 +336,8 @@
                 }
             },
 
-            "image": "data/tiles/img/outer-dark-demon.png",
-            "imageHD": "data/tiles/img/outer-dark-demon_hd.png",
+            "image": "data/tiles/img/outer-dark-demon.webp",
+            "imageHD": "data/tiles/img/outer-dark-demon_hd.webp",
             "image_location": {"x":59, "y":45},
             "image_zoom": 100,
             "model": "outer-dark-demon",
@@ -366,8 +366,8 @@
                 }
             },
 
-            "image": "data/tiles/img/thak.png",
-            "imageHD": "data/tiles/img/thak_hd.png",
+            "image": "data/tiles/img/thak.webp",
+            "imageHD": "data/tiles/img/thak_hd.webp",
             "image_location": {"x":60, "y":54},
             "image_zoom": 115,
             "model": "thak",
@@ -393,8 +393,8 @@
                 }
             },
 
-            "image": "data/tiles/img/belits-guards.png",
-            "imageHD": "data/tiles/img/belits-guards_hd.png",
+            "image": "data/tiles/img/belits-guards.webp",
+            "imageHD": "data/tiles/img/belits-guards_hd.webp",
             "image_location": {"x":71, "y":52},
             "image_zoom": 136,
             "model": "belits-guards",
@@ -418,8 +418,8 @@
                 }
             },
 
-            "image": "data/tiles/img/princess.png",
-            "imageHD": "data/tiles/img/princess_hd.png",
+            "image": "data/tiles/img/princess.webp",
+            "imageHD": "data/tiles/img/princess_hd.webp",
             "image_location": {"x":64, "y":56},
             "image_zoom": 72,
             "model": "princess",
@@ -445,8 +445,8 @@
                 }
             },
 
-            "image": "data/tiles/img/bossonian-archers.png",
-            "imageHD": "data/tiles/img/bossonian-archers_hd.png",
+            "image": "data/tiles/img/bossonian-archers.webp",
+            "imageHD": "data/tiles/img/bossonian-archers_hd.webp",
             "image_location": {"x":54, "y":57},
             "image_zoom": 115,
             "model": "bossonian-archers",
@@ -470,8 +470,8 @@
                 }
             },
 
-            "image": "data/tiles/img/bossonian-guards.png",
-            "imageHD": "data/tiles/img/bossonian-guards_hd.png",
+            "image": "data/tiles/img/bossonian-guards.webp",
+            "imageHD": "data/tiles/img/bossonian-guards_hd.webp",
             "image_location": {"x":59, "y":54},
             "image_zoom": 122,
             "model": "bossonian-guards",
@@ -495,8 +495,8 @@
                 }
             },
 
-            "image": "data/tiles/img/hyenas.png",
-            "imageHD": "data/tiles/img/hyenas_hd.png",
+            "image": "data/tiles/img/hyenas.webp",
+            "imageHD": "data/tiles/img/hyenas_hd.webp",
             "image_location": {"x":74, "y":57},
             "image_zoom": 105,
             "model": "hyenas",
@@ -522,8 +522,8 @@
                 }
             },
 
-            "image": "data/tiles/img/enraged-hyenas.png",
-            "imageHD": "data/tiles/img/enraged-hyenas_hd.png",
+            "image": "data/tiles/img/enraged-hyenas.webp",
+            "imageHD": "data/tiles/img/enraged-hyenas_hd.webp",
             "image_location": {"x":74, "y":57},
             "image_zoom": 105,
             "model": "hyenas",
@@ -549,8 +549,8 @@
                 }
             },
 
-            "image": "data/tiles/img/pict-hunters.png",
-            "imageHD": "data/tiles/img/pict-hunters_hd.png",
+            "image": "data/tiles/img/pict-hunters.webp",
+            "imageHD": "data/tiles/img/pict-hunters_hd.webp",
             "image_location": {"x":68, "y":49},
             "image_zoom": 111,
             "model": "pict-hunters",
@@ -574,8 +574,8 @@
                 }
             },
 
-            "image": "data/tiles/img/pirates.png",
-            "imageHD": "data/tiles/img/pirates_hd.png",
+            "image": "data/tiles/img/pirates.webp",
+            "imageHD": "data/tiles/img/pirates_hd.webp",
             "image_location": {"x":68, "y":55},
             "image_zoom": 91,
             "model": "pirates",
@@ -602,8 +602,8 @@
                 }
             },
 
-            "image": "data/tiles/img/thog.png",
-            "imageHD": "data/tiles/img/thog_hd.png",
+            "image": "data/tiles/img/thog.webp",
+            "imageHD": "data/tiles/img/thog_hd.webp",
             "image_location": {"x":57, "y":53},
             "image_zoom": 122,
             "model": "thog",
@@ -629,8 +629,8 @@
                 }
             },
 
-            "image": "data/tiles/img/thog.png",
-            "imageHD": "data/tiles/img/thog_hd.png",
+            "image": "data/tiles/img/thog.webp",
+            "imageHD": "data/tiles/img/thog_hd.webp",
             "image_location": {"x":57, "y":53},
             "image_zoom": 122,
             "model": "thog",
@@ -653,8 +653,8 @@
                 { "image_location": {"x":7, "y":63}, "image_zoom": 400 }
             ],
 
-            "image": "data/tiles/img/conans-lion.png",
-            "imageHD": "data/tiles/img/conans-lion_hd.png",
+            "image": "data/tiles/img/conans-lion.webp",
+            "imageHD": "data/tiles/img/conans-lion_hd.webp",
             "image_location": {"x":56, "y":61},
             "image_zoom": 144,
             "model": "conans-lion",
@@ -681,8 +681,8 @@
                 }
             },
 
-            "image": "data/tiles/img/zelatas-wolf.png",
-            "imageHD": "data/tiles/img/zelatas-wolf_hd.png",
+            "image": "data/tiles/img/zelatas-wolf.webp",
+            "imageHD": "data/tiles/img/zelatas-wolf_hd.webp",
             "image_location": {"x":67, "y":59},
             "image_zoom": 87,
             "model": "giant-wolves",
@@ -706,8 +706,8 @@
                 }
             },
 
-            "image": "data/tiles/img/mummies.png",
-            "imageHD": "data/tiles/img/mummies_hd.png",
+            "image": "data/tiles/img/mummies.webp",
+            "imageHD": "data/tiles/img/mummies_hd.webp",
             "image_location": {"x":58, "y":52},
             "image_zoom": 83,
             "model": "mummies",
@@ -731,8 +731,8 @@
                 }
             },
 
-            "image": "data/tiles/img/skeletons.png",
-            "imageHD": "data/tiles/img/skeletons_hd.png",
+            "image": "data/tiles/img/skeletons.webp",
+            "imageHD": "data/tiles/img/skeletons_hd.webp",
             "image_location": {"x":64, "y":50},
             "image_zoom": 123,
             "model": "skeletons",
@@ -759,8 +759,8 @@
                 }
             },
 
-            "image": "data/tiles/img/ageera.png",
-            "imageHD": "data/tiles/img/ageera_hd.png",
+            "image": "data/tiles/img/ageera.webp",
+            "imageHD": "data/tiles/img/ageera_hd.webp",
             "image_location": {"x":67, "y":57},
             "image_zoom": 60,
             "model": "ageera",
@@ -789,8 +789,8 @@
                 }
             },
 
-            "image": "data/tiles/img/akivasha.png",
-            "imageHD": "data/tiles/img/akivasha_hd.png",
+            "image": "data/tiles/img/akivasha.webp",
+            "imageHD": "data/tiles/img/akivasha_hd.webp",
             "image_location": {"x":66, "y":57},
             "image_zoom": 67,
             "model": "akivasha",
@@ -819,8 +819,8 @@
                 }
             },
 
-            "image": "data/tiles/img/constantius.png",
-            "imageHD": "data/tiles/img/constantius_hd.png",
+            "image": "data/tiles/img/constantius.webp",
+            "imageHD": "data/tiles/img/constantius_hd.webp",
             "image_location": {"x":62, "y":58},
             "image_zoom": 112,
             "model": "constantius",
@@ -849,8 +849,8 @@
                 }
             },
 
-            "image": "data/tiles/img/gitara.png",
-            "imageHD": "data/tiles/img/gitara_hd.png",
+            "image": "data/tiles/img/gitara.webp",
+            "imageHD": "data/tiles/img/gitara_hd.webp",
             "image_location": {"x":69, "y":50},
             "image_zoom": 89,
             "model": "gitara",
@@ -879,8 +879,8 @@
                 }
             },
 
-            "image": "data/tiles/img/hyperborean-primitive.png",
-            "imageHD": "data/tiles/img/hyperborean-primitive_hd.png",
+            "image": "data/tiles/img/hyperborean-primitive.webp",
+            "imageHD": "data/tiles/img/hyperborean-primitive_hd.webp",
             "image_location": {"x":68, "y":59},
             "image_zoom": 105,
             "model": "hyperborean-primitive",
@@ -909,8 +909,8 @@
                 }
             },
 
-            "image": "data/tiles/img/khemsa.png",
-            "imageHD": "data/tiles/img/khemsa_hd.png",
+            "image": "data/tiles/img/khemsa.webp",
+            "imageHD": "data/tiles/img/khemsa_hd.webp",
             "image_location": {"x":58, "y":52},
             "image_zoom": 105,
             "model": "khemsa",
@@ -939,8 +939,8 @@
                 }
             },
 
-            "image": "data/tiles/img/natohk.png",
-            "imageHD": "data/tiles/img/natohk_hd.png",
+            "image": "data/tiles/img/natohk.webp",
+            "imageHD": "data/tiles/img/natohk_hd.webp",
             "image_location": {"x":52, "y":59},
             "image_zoom": 100,
             "model": "natohk",
@@ -969,8 +969,8 @@
                 }
             },
 
-            "image": "data/tiles/img/warlock.png",
-            "imageHD": "data/tiles/img/warlock_hd.png",
+            "image": "data/tiles/img/warlock.webp",
+            "imageHD": "data/tiles/img/warlock_hd.webp",
             "image_location": {"x":61, "y":57},
             "image_zoom": 99,
             "model": "warlock",
@@ -999,8 +999,8 @@
                 }
             },
 
-            "image": "data/tiles/img/amboola.png",
-            "imageHD": "data/tiles/img/amboola_hd.png",
+            "image": "data/tiles/img/amboola.webp",
+            "imageHD": "data/tiles/img/amboola_hd.webp",
             "image_location": {"x":58, "y":55},
             "image_zoom": 58,
             "model": "amboola",
@@ -1027,8 +1027,8 @@
                 }
             },
 
-            "image": "data/tiles/img/balthus.png",
-            "imageHD": "data/tiles/img/balthus_hd.png",
+            "image": "data/tiles/img/balthus.webp",
+            "imageHD": "data/tiles/img/balthus_hd.webp",
             "image_location": {"x":56, "y":49},
             "image_zoom": 96,
             "model": "balthus",
@@ -1055,8 +1055,8 @@
                 }
             },
 
-            "image": "data/tiles/img/belit.png",
-            "imageHD": "data/tiles/img/belit_hd.png",
+            "image": "data/tiles/img/belit.webp",
+            "imageHD": "data/tiles/img/belit_hd.webp",
             "image_location": {"x":63, "y":46},
             "image_zoom": 120,
             "model": "belit",
@@ -1083,8 +1083,8 @@
                 }
             },
 
-            "image": "data/tiles/img/conan.png",
-            "imageHD": "data/tiles/img/conan_hd.png",
+            "image": "data/tiles/img/conan.webp",
+            "imageHD": "data/tiles/img/conan_hd.webp",
             "image_location": {"x":66, "y":48},
             "image_zoom": 96,
             "model": "conan",
@@ -1113,8 +1113,8 @@
                 }
             },
 
-            "image": "data/tiles/img/hadrathus.png",
-            "imageHD": "data/tiles/img/hadrathus_hd.png",
+            "image": "data/tiles/img/hadrathus.webp",
+            "imageHD": "data/tiles/img/hadrathus_hd.webp",
             "image_location": {"x":64, "y":47},
             "image_zoom": 90,
             "model": "hadrathus",
@@ -1141,8 +1141,8 @@
                 }
             },
 
-            "image": "data/tiles/img/kerim-shah.png",
-            "imageHD": "data/tiles/img/kerim-shah_hd.png",
+            "image": "data/tiles/img/kerim-shah.webp",
+            "imageHD": "data/tiles/img/kerim-shah_hd.webp",
             "image_location": {"x":56, "y":53},
             "image_zoom": 83,
             "model": "kerim-shah",
@@ -1169,8 +1169,8 @@
                 }
             },
 
-            "image": "data/tiles/img/ngora.png",
-            "imageHD": "data/tiles/img/ngora_hd.png",
+            "image": "data/tiles/img/ngora.webp",
+            "imageHD": "data/tiles/img/ngora_hd.webp",
             "image_location": {"x":66, "y":54},
             "image_zoom": 92,
             "model": "ngora",
@@ -1197,8 +1197,8 @@
                 }
             },
 
-            "image": "data/tiles/img/olgerd-vladislav.png",
-            "imageHD": "data/tiles/img/olgerd-vladislav_hd.png",
+            "image": "data/tiles/img/olgerd-vladislav.webp",
+            "imageHD": "data/tiles/img/olgerd-vladislav_hd.webp",
             "image_location": {"x":65, "y":54},
             "image_zoom": 104,
             "model": "olgerd-vladislav",
@@ -1225,8 +1225,8 @@
                 }
             },
 
-            "image": "data/tiles/img/pallantides.png",
-            "imageHD": "data/tiles/img/pallantides_hd.png",
+            "image": "data/tiles/img/pallantides.webp",
+            "imageHD": "data/tiles/img/pallantides_hd.webp",
             "image_location": {"x":64, "y":53},
             "image_zoom": 87,
             "model": "pallantides",
@@ -1253,8 +1253,8 @@
                 }
             },
 
-            "image": "data/tiles/img/shevatas.png",
-            "imageHD": "data/tiles/img/shevatas_hd.png",
+            "image": "data/tiles/img/shevatas.webp",
+            "imageHD": "data/tiles/img/shevatas_hd.webp",
             "image_location": {"x":62, "y":49},
             "image_zoom": 92,
             "model": "shevatas",
@@ -1281,8 +1281,8 @@
                 }
             },
 
-            "image": "data/tiles/img/taurus.png",
-            "imageHD": "data/tiles/img/taurus_hd.png",
+            "image": "data/tiles/img/taurus.webp",
+            "imageHD": "data/tiles/img/taurus_hd.webp",
             "image_location": {"x":61, "y":46},
             "image_zoom": 101,
             "model": "taurus",
@@ -1311,8 +1311,8 @@
                 }
             },
 
-            "image": "data/tiles/img/valeria.png",
-            "imageHD": "data/tiles/img/valeria_hd.png",
+            "image": "data/tiles/img/valeria.webp",
+            "imageHD": "data/tiles/img/valeria_hd.webp",
             "image_location": {"x":64, "y":57},
             "image_zoom": 108,
             "model": "valeria",
@@ -1339,8 +1339,8 @@
                 }
             },
 
-            "image": "data/tiles/img/zelata.png",
-            "imageHD": "data/tiles/img/zelata_hd.png",
+            "image": "data/tiles/img/zelata.webp",
+            "imageHD": "data/tiles/img/zelata_hd.webp",
             "image_location": {"x":61, "y":57},
             "image_zoom": 94,
             "model": "zelata",
@@ -1361,8 +1361,8 @@
                 { "image_location": {"x":195, "y":166}, "image_zoom": 400 }
             ],
 
-            "image": "data/tiles/img/camel.png",
-            "imageHD": "data/tiles/img/camel.png",
+            "image": "data/tiles/img/camel.webp",
+            "imageHD": "data/tiles/img/camel.webp",
             "image_location": {"x":75, "y":54},
             "image_zoom": 142,
             "model": "camel",
@@ -1383,8 +1383,8 @@
                 { "image_location": {"x":71, "y":243}, "image_zoom": 400 }
             ],
 
-            "image": "data/tiles/img/kothian-archer.png",
-            "imageHD": "data/tiles/img/kothian-archer_hd.png",
+            "image": "data/tiles/img/kothian-archer.webp",
+            "imageHD": "data/tiles/img/kothian-archer_hd.webp",
             "image_location": {"x":67, "y":55},
             "image_zoom": 111,
             "model": "kothian-archer",
@@ -1405,8 +1405,8 @@
                 { "image_location": {"x":5, "y":90}, "image_zoom": 200 }
             ],
 
-            "image": "data/tiles/img/slasher.png",
-            "imageHD": "data/tiles/img/slasher_hd.png",
+            "image": "data/tiles/img/slasher.webp",
+            "imageHD": "data/tiles/img/slasher_hd.webp",
             "image_location": {"x":52, "y":61},
             "image_zoom": 95,
             "model": "slasher",
@@ -1427,8 +1427,8 @@
                 { "image_location": {"x":53, "y":141}, "image_zoom": 420 }
             ],
 
-            "image": "data/tiles/img/bone-golem.png",
-            "imageHD": "data/tiles/img/bone-golem_hd.png",
+            "image": "data/tiles/img/bone-golem.webp",
+            "imageHD": "data/tiles/img/bone-golem_hd.webp",
             "image_location": {"x":60, "y":55},
             "image_zoom": 126,
             "model": "bone-golem",
@@ -1457,8 +1457,8 @@
                 }
             },
 
-            "image": "data/tiles/img/forest-demon.png",
-            "imageHD": "data/tiles/img/forest-demon_hd.png",
+            "image": "data/tiles/img/forest-demon.webp",
+            "imageHD": "data/tiles/img/forest-demon_hd.webp",
             "image_location": {"x":66, "y":58},
             "image_zoom": 133,
             "model": "forest-demon",
@@ -1487,8 +1487,8 @@
                 }
             },
 
-            "image": "data/tiles/img/giant-scorpion.png",
-            "imageHD": "data/tiles/img/giant-scorpion_hd.png",
+            "image": "data/tiles/img/giant-scorpion.webp",
+            "imageHD": "data/tiles/img/giant-scorpion_hd.webp",
             "image_location": {"x":54, "y":41},
             "image_zoom": 112,
             "model": "giant-scorpion",
@@ -1517,8 +1517,8 @@
                 }
             },
 
-            "image": "data/tiles/img/giant-spider.png",
-            "imageHD": "data/tiles/img/giant-spider_hd.png",
+            "image": "data/tiles/img/giant-spider.webp",
+            "imageHD": "data/tiles/img/giant-spider_hd.webp",
             "image_location": {"x":65, "y":53},
             "image_zoom": 113,
             "model": "giant-spider",
@@ -1547,8 +1547,8 @@
                 }
             },
 
-            "image": "data/tiles/img/gray-man-ape.png",
-            "imageHD": "data/tiles/img/gray-man-ape_hd.png",
+            "image": "data/tiles/img/gray-man-ape.webp",
+            "imageHD": "data/tiles/img/gray-man-ape_hd.webp",
             "image_location": {"x":59, "y":56},
             "image_zoom": 91,
             "model": "gray-man-ape",
@@ -1577,8 +1577,8 @@
                 }
             },
 
-            "image": "data/tiles/img/swamp-demon.png",
-            "imageHD": "data/tiles/img/swamp-demon_hd.png",
+            "image": "data/tiles/img/swamp-demon.webp",
+            "imageHD": "data/tiles/img/swamp-demon_hd.webp",
             "image_location": {"x":55, "y":63},
             "image_zoom": 100,
             "model": "swamp-demon",
@@ -1601,8 +1601,8 @@
                 { "image_location": {"x":15, "y":73}, "image_zoom": 550 }
             ],
 
-            "image": "data/tiles/img/thaug.png",
-            "imageHD": "data/tiles/img/thaug_hd.png",
+            "image": "data/tiles/img/thaug.webp",
+            "imageHD": "data/tiles/img/thaug_hd.webp",
             "image_location": {"x":37, "y":50},
             "image_zoom": 276,
             "model": "thaug",
@@ -1628,8 +1628,8 @@
                 }
             },
 
-            "image": "data/tiles/img/mummies.png",
-            "imageHD": "data/tiles/img/mummies_hd.png",
+            "image": "data/tiles/img/mummies.webp",
+            "imageHD": "data/tiles/img/mummies_hd.webp",
             "image_location": {"x":58, "y":52},
             "image_zoom": 83,
             "model": "mummies",
@@ -1653,8 +1653,8 @@
                 }
             },
 
-            "image": "data/tiles/img/pict-archers.png",
-            "imageHD": "data/tiles/img/pict-archers_hd.png",
+            "image": "data/tiles/img/pict-archers.webp",
+            "imageHD": "data/tiles/img/pict-archers_hd.webp",
             "image_location": {"x":58, "y":56},
             "image_zoom": 114,
             "model": "pict-archers",
@@ -1678,8 +1678,8 @@
                 }
             },
 
-            "image": "data/tiles/img/pict-warriors.png",
-            "imageHD": "data/tiles/img/pict-warriors_hd.png",
+            "image": "data/tiles/img/pict-warriors.webp",
+            "imageHD": "data/tiles/img/pict-warriors_hd.webp",
             "image_location": {"x":51, "y":48},
             "image_zoom": 113,
             "model": "pict-warriors",
@@ -1704,8 +1704,8 @@
                 }
             },
 
-            "image": "data/tiles/img/pict-warriors.png",
-            "imageHD": "data/tiles/img/pict-warriors_hd.png",
+            "image": "data/tiles/img/pict-warriors.webp",
+            "imageHD": "data/tiles/img/pict-warriors_hd.webp",
             "image_location": {"x":51, "y":48},
             "image_zoom": 113,
             "model": "pict-warriors",
@@ -1729,8 +1729,8 @@
                 }
             },
 
-            "image": "data/tiles/img/pirates.png",
-            "imageHD": "data/tiles/img/pirates_hd.png",
+            "image": "data/tiles/img/pirates.webp",
+            "imageHD": "data/tiles/img/pirates_hd.webp",
             "image_location": {"x":68, "y":55},
             "image_zoom": 91,
             "model": "pirates",
@@ -1754,8 +1754,8 @@
                 }
             },
 
-            "image": "data/tiles/img/skeletons.png",
-            "imageHD": "data/tiles/img/skeletons_hd.png",
+            "image": "data/tiles/img/skeletons.webp",
+            "imageHD": "data/tiles/img/skeletons_hd.webp",
             "image_location": {"x":64, "y":50},
             "image_zoom": 123,
             "model": "skeletons",
@@ -1779,8 +1779,8 @@
                 }
             },
 
-            "image": "data/tiles/img/tentacles.png",
-            "imageHD": "data/tiles/img/tentacles_hd.png",
+            "image": "data/tiles/img/tentacles.webp",
+            "imageHD": "data/tiles/img/tentacles_hd.webp",
             "image_location": {"x":67, "y":59},
             "image_zoom": 50,
             "model": "tentacles",
@@ -1807,8 +1807,8 @@
                 }
             },
 
-            "image": "data/tiles/img/baal-pteor.png",
-            "imageHD": "data/tiles/img/baal-pteor_hd.png",
+            "image": "data/tiles/img/baal-pteor.webp",
+            "imageHD": "data/tiles/img/baal-pteor_hd.webp",
             "image_location": {"x":62, "y":55},
             "image_zoom": 83,
             "model": "baal-pteor",
@@ -1834,8 +1834,8 @@
                 }
             },
 
-            "image": "data/tiles/img/black-dragons.png",
-            "imageHD": "data/tiles/img/black-dragons_hd.png",
+            "image": "data/tiles/img/black-dragons.webp",
+            "imageHD": "data/tiles/img/black-dragons_hd.webp",
             "image_location": {"x":60, "y":57},
             "image_zoom": 95,
             "model": "black-dragons",
@@ -1861,8 +1861,8 @@
                 }
             },
 
-            "image": "data/tiles/img/the-black-ones.png",
-            "imageHD": "data/tiles/img/the-black-ones_hd.png",
+            "image": "data/tiles/img/the-black-ones.webp",
+            "imageHD": "data/tiles/img/the-black-ones_hd.webp",
             "image_location": {"x":71, "y":56},
             "image_zoom": 80,
             "model": "the-black-ones",
@@ -1886,8 +1886,8 @@
                 }
             },
 
-            "image": "data/tiles/img/crossbowmen.png",
-            "imageHD": "data/tiles/img/crossbowmen_hd.png",
+            "image": "data/tiles/img/crossbowmen.webp",
+            "imageHD": "data/tiles/img/crossbowmen_hd.webp",
             "image_location": {"x":69, "y":57},
             "image_zoom": 94,
             "model": "crossbowmen",
@@ -1911,8 +1911,8 @@
                 }
             },
 
-            "image": "data/tiles/img/crossbowmen.png",
-            "imageHD": "data/tiles/img/crossbowmen_hd.png",
+            "image": "data/tiles/img/crossbowmen.webp",
+            "imageHD": "data/tiles/img/crossbowmen_hd.webp",
             "image_location": {"x":69, "y":57},
             "image_zoom": 94,
             "model": "crossbowmen",
@@ -1941,8 +1941,8 @@
                 }
             },            
 
-            "image": "data/tiles/img/demon-of-the-earth.png",
-            "imageHD": "data/tiles/img/demon-of-the-earth_hd.png",
+            "image": "data/tiles/img/demon-of-the-earth.webp",
+            "imageHD": "data/tiles/img/demon-of-the-earth_hd.webp",
             "image_location": {"x":43, "y":59},
             "image_zoom": 122,
             "model": "demon-of-the-earth",
@@ -1971,7 +1971,7 @@
                 }
             },
 
-            "image": "data/tiles/img/dragon.png",
+            "image": "data/tiles/img/dragon.webp",
             "image_location": {"x":-40, "y":59},
             "image_zoom": 278,
             "model": "dragon",
@@ -1997,8 +1997,8 @@
                 }
             },
 
-            "image": "data/tiles/img/giant-wolves.png",
-            "imageHD": "data/tiles/img/giant-wolves_hd.png",
+            "image": "data/tiles/img/giant-wolves.webp",
+            "imageHD": "data/tiles/img/giant-wolves_hd.webp",
             "image_location": {"x":67, "y":59},
             "image_zoom": 87,
             "model": "giant-wolves",
@@ -2027,7 +2027,7 @@
                 }
             },
 
-            "image": "data/tiles/img/sabertooth-tiger.png",
+            "image": "data/tiles/img/sabertooth-tiger.webp",
             "image_location": {"x":-4, "y":53},
             "image_zoom": 216,
             "model": "sabertooth-tiger",
@@ -2056,8 +2056,8 @@
                 }
             },
 
-            "image": "data/tiles/img/afari.png",
-            "imageHD": "data/tiles/img/afari_hd.png",
+            "image": "data/tiles/img/afari.webp",
+            "imageHD": "data/tiles/img/afari_hd.webp",
             "image_location": {"x":64, "y":54},
             "image_zoom": 62,
             "model": "afari",
@@ -2080,8 +2080,8 @@
                 { "image_location": {"x":59, "y":158}, "image_zoom": 150 }
             ],
 
-            "image": "data/tiles/img/ghayoor.png",
-            "imageHD": "data/tiles/img/ghayoor_hd.png",
+            "image": "data/tiles/img/ghayoor.webp",
+            "imageHD": "data/tiles/img/ghayoor_hd.webp",
             "image_location": {"x":67, "y":57},
             "image_zoom": 62,
             "model": "ghayoor",
@@ -2104,8 +2104,8 @@
                 { "image_location": {"x":47, "y":146}, "image_zoom": 150 }
             ],
 
-            "image": "data/tiles/img/shafiah.png",
-            "imageHD": "data/tiles/img/shafiah_hd.png",
+            "image": "data/tiles/img/shafiah.webp",
+            "imageHD": "data/tiles/img/shafiah_hd.webp",
             "image_location": {"x":63, "y":58},
             "image_zoom": 72,
             "model": "shafiah",
@@ -2134,8 +2134,8 @@
                 }
             },
 
-            "image": "data/tiles/img/shubba.png",
-            "imageHD": "data/tiles/img/shubba_hd.png",
+            "image": "data/tiles/img/shubba.webp",
+            "imageHD": "data/tiles/img/shubba_hd.webp",
             "image_location": {"x":69, "y":54},
             "image_zoom": 61,
             "model": "shubba",
@@ -2158,8 +2158,8 @@
                 { "image_location": {"x":55, "y":102}, "image_zoom": 210 }
             ],
 
-            "image": "data/tiles/img/vanir-valkyrie.png",
-            "imageHD": "data/tiles/img/vanir-valkyrie_hd.png",
+            "image": "data/tiles/img/vanir-valkyrie.webp",
+            "imageHD": "data/tiles/img/vanir-valkyrie_hd.webp",
             "image_location": {"x":71, "y":54},
             "image_zoom": 96,
             "model": "vanir-valkyrie",
@@ -2188,8 +2188,8 @@
                 }
             },
 
-            "image": "data/tiles/img/salome.png",
-            "imageHD": "data/tiles/img/salome_hd.png",
+            "image": "data/tiles/img/salome.webp",
+            "imageHD": "data/tiles/img/salome_hd.webp",
             "image_location": {"x":56, "y":53},
             "image_zoom": 56,
             "model": "taramis-salome",
@@ -2218,8 +2218,8 @@
                 }
             },
 
-            "image": "data/tiles/img/atali.png",
-            "imageHD": "data/tiles/img/atali_hd.png",
+            "image": "data/tiles/img/atali.webp",
+            "imageHD": "data/tiles/img/atali_hd.webp",
             "image_location": {"x":67, "y":63},
             "image_zoom": 90,
             "model": "atali",
@@ -2239,8 +2239,8 @@
             "skills": { "0": "magic/spell_caster", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
 
-            "image": "data/tiles/img/skuthus.png",
-            "imageHD": "data/tiles/img/skuthus_hd.png",
+            "image": "data/tiles/img/skuthus.webp",
+            "imageHD": "data/tiles/img/skuthus_hd.webp",
             "image_location": {"x":66, "y":56},
             "image_zoom": 65,
             "model": "skuthus",
@@ -2270,8 +2270,8 @@
                 }
             },
 
-            "image": "data/tiles/img/nijgor.png",
-            "imageHD": "data/tiles/img/nijgor.png",
+            "image": "data/tiles/img/nijgor.webp",
+            "imageHD": "data/tiles/img/nijgor.webp",
             "image_location": {"x":54, "y":49},
             "image_zoom": 99,
             "model": "nijgor",
@@ -2301,8 +2301,8 @@
                 }
             },
 
-            "image": "data/tiles/img/seski.png",
-            "imageHD": "data/tiles/img/seski.png",
+            "image": "data/tiles/img/seski.webp",
+            "imageHD": "data/tiles/img/seski.webp",
             "image_location": {"x":49, "y":49.5},
             "image_zoom": 99,
             "model": "seski",
@@ -2328,8 +2328,8 @@
                 }
             },
 
-            "image": "data/tiles/img/vanir-warriors.png",
-            "imageHD": "data/tiles/img/vanir-warriors_hd.png",
+            "image": "data/tiles/img/vanir-warriors.webp",
+            "imageHD": "data/tiles/img/vanir-warriors_hd.webp",
             "image_location": {"x":46, "y":63},
             "image_zoom": 177,
             "model": "vanir-warriors",
@@ -2355,8 +2355,8 @@
                 }
             },
 
-            "image": "data/tiles/img/vanir-warriors.png",
-            "imageHD": "data/tiles/img/vanir-warriors_hd.png",
+            "image": "data/tiles/img/vanir-warriors.webp",
+            "imageHD": "data/tiles/img/vanir-warriors_hd.webp",
             "image_location": {"x":46, "y":63},
             "image_zoom": 177,
             "model": "vanir-warriors",
@@ -2380,8 +2380,8 @@
                 }
             },
 
-            "image": "data/tiles/img/vanir-warriors.png",
-            "imageHD": "data/tiles/img/vanir-warriors_hd.png",
+            "image": "data/tiles/img/vanir-warriors.webp",
+            "imageHD": "data/tiles/img/vanir-warriors_hd.webp",
             "image_location": {"x":46, "y":63},
             "image_zoom": 177,
             "model": "vanir-warriors",
@@ -2399,8 +2399,8 @@
             "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
 
-            "image": "data/tiles/img/vanir-primitives.png",
-            "imageHD": "data/tiles/img/vanir-primitives_hd.png",
+            "image": "data/tiles/img/vanir-primitives.webp",
+            "imageHD": "data/tiles/img/vanir-primitives_hd.webp",
             "image_location": {"x":68, "y":49},
             "image_zoom": 111,
             "model": "pict-hunters",
@@ -2424,8 +2424,8 @@
                 }
             },
 
-            "image": "data/tiles/img/crows.png",
-            "imageHD": "data/tiles/img/crows_hd.png",
+            "image": "data/tiles/img/crows.webp",
+            "imageHD": "data/tiles/img/crows_hd.webp",
             "image_location": {"x":46, "y":54},
             "image_zoom": 168,
             "model": "crows",
@@ -2449,8 +2449,8 @@
                 }
             },
 
-            "image": "data/tiles/img/crows.png",
-            "imageHD": "data/tiles/img/crows_hd.png",
+            "image": "data/tiles/img/crows.webp",
+            "imageHD": "data/tiles/img/crows_hd.webp",
             "image_location": {"x":46, "y":54},
             "image_zoom": 168,
             "model": "crows",
@@ -2474,8 +2474,8 @@
                 }
             },
 
-            "image": "data/tiles/img/wolves.png",
-            "imageHD": "data/tiles/img/wolves_hd.png",
+            "image": "data/tiles/img/wolves.webp",
+            "imageHD": "data/tiles/img/wolves_hd.webp",
             "image_location": {"x":67, "y":59},
             "image_zoom": 87,
             "model": "giant-wolves",
@@ -2501,8 +2501,8 @@
                 }
             },
 
-            "image": "data/tiles/img/aesir-warriors.png",
-            "imageHD": "data/tiles/img/aesir-warriors_hd.png",
+            "image": "data/tiles/img/aesir-warriors.webp",
+            "imageHD": "data/tiles/img/aesir-warriors_hd.webp",
             "image_location": {"x":63, "y":68},
             "image_zoom": 107,
             "model": "aesir-warriors",
@@ -2526,8 +2526,8 @@
                 }
             },
 
-            "image": "data/tiles/img/aesir-warriors.png",
-            "imageHD": "data/tiles/img/aesir-warriors_hd.png",
+            "image": "data/tiles/img/aesir-warriors.webp",
+            "imageHD": "data/tiles/img/aesir-warriors_hd.webp",
             "image_location": {"x":63, "y":68},
             "image_zoom": 107,
             "model": "aesir-warriors",
@@ -2551,8 +2551,8 @@
                 }
             },
 
-            "image": "data/tiles/img/aesir-warriors.png",
-            "imageHD": "data/tiles/img/aesir-warriors_hd.png",
+            "image": "data/tiles/img/aesir-warriors.webp",
+            "imageHD": "data/tiles/img/aesir-warriors_hd.webp",
             "image_location": {"x":63, "y":68},
             "image_zoom": 107,
             "model": "aesir-warriors",
@@ -2580,7 +2580,7 @@
                 }
             },
 
-            "image": "data/tiles/img/shuang-mian.png",
+            "image": "data/tiles/img/shuang-mian.webp",
             "image_location": {"x":51, "y":53},
             "image_zoom": 97,
             "model": "shuang-mian",
@@ -2603,8 +2603,8 @@
                 { "image_location": {"x":50, "y":100}, "image_zoom": 245 }
             ],
 
-            "image": "data/tiles/img/dark-demon.png",
-            "imageHD": "data/tiles/img/dark-demon_hd.png",
+            "image": "data/tiles/img/dark-demon.webp",
+            "imageHD": "data/tiles/img/dark-demon_hd.webp",
             "image_location": {"x":58, "y":46},
             "image_zoom": 132,
             "model": "dark-demon",
@@ -2624,8 +2624,8 @@
             "skills": { "0": "movement/blocking", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
 
-            "image": "data/tiles/img/khitan-guards.png",
-            "imageHD": "data/tiles/img/khitan-guards_hd.png",
+            "image": "data/tiles/img/khitan-guards.webp",
+            "imageHD": "data/tiles/img/khitan-guards_hd.webp",
             "image_location": {"x":55, "y":61},
             "image_zoom": 128,
             "model": "khitan-guards",
@@ -2643,8 +2643,8 @@
             "skills": { "0": "defense/sacrifice", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "2",
 
-            "image": "data/tiles/img/honor-guards.png",
-            "imageHD": "data/tiles/img/honor-guards_hd.png",
+            "image": "data/tiles/img/honor-guards.webp",
+            "imageHD": "data/tiles/img/honor-guards_hd.webp",
             "image_location": {"x":50, "y":66},
             "image_zoom": 115,
             "model": "honor-guards",
@@ -2662,8 +2662,8 @@
             "skills": { "0": "attack/elite_shooter", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "2",
 
-            "image": "data/tiles/img/javelin-throwers.png",
-            "imageHD": "data/tiles/img/javelin-throwers_hd.png",
+            "image": "data/tiles/img/javelin-throwers.webp",
+            "imageHD": "data/tiles/img/javelin-throwers_hd.webp",
             "image_location": {"x":56, "y":55},
             "image_zoom": 84,
             "model": "javelin-throwers",
@@ -2681,8 +2681,8 @@
             "skills": { "0": "attack/counterattack", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
 
-            "image": "data/tiles/img/foo-dogs.png",
-            "imageHD": "data/tiles/img/foo-dogs_hd.png",
+            "image": "data/tiles/img/foo-dogs.webp",
+            "imageHD": "data/tiles/img/foo-dogs_hd.webp",
             "image_location": {"x":29, "y":48},
             "image_zoom": 195,
             "model": "foo-dogs",
@@ -2711,8 +2711,8 @@
                 }
             },
 
-            "image": "data/tiles/img/thot-amon.png",
-            "imageHD": "data/tiles/img/thot-amon_hd.png",
+            "image": "data/tiles/img/thot-amon.webp",
+            "imageHD": "data/tiles/img/thot-amon_hd.webp",
             "image_location": {"x":53, "y":70},
             "image_zoom": 117,
             "model": "thot-amon",
@@ -2735,7 +2735,7 @@
                 { "image_location": {"x":34, "y":27}, "image_zoom": 190 }
             ],
 
-            "image": "data/tiles/img/scorpion-broodmother.png",
+            "image": "data/tiles/img/scorpion-broodmother.webp",
             "image_location": {"x":50, "y":49},
             "image_zoom": 102,
             "model": "scorpion-broodmother",
@@ -2761,8 +2761,8 @@
                 }
             },
 
-            "image": "data/tiles/img/giant-scorpion.png",
-            "imageHD": "data/tiles/img/giant-scorpion_hd.png",
+            "image": "data/tiles/img/giant-scorpion.webp",
+            "imageHD": "data/tiles/img/giant-scorpion_hd.webp",
             "image_location": {"x":60, "y":52},
             "image_zoom": 119,
             "model": "giant-scorpion",
@@ -2782,8 +2782,8 @@
             "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
 
-            "image": "data/tiles/img/eternal-guard.png",
-            "imageHD": "data/tiles/img/eternal-guard_hd.png",
+            "image": "data/tiles/img/eternal-guard.webp",
+            "imageHD": "data/tiles/img/eternal-guard_hd.webp",
             "image_location": {"x":48, "y":58},
             "image_zoom": 94,
             "model": "eternal-guard",
@@ -2801,8 +2801,8 @@
             "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "2",
 
-            "image": "data/tiles/img/assassins.png",
-            "imageHD": "data/tiles/img/assassins_hd.png",
+            "image": "data/tiles/img/assassins.webp",
+            "imageHD": "data/tiles/img/assassins_hd.webp",
             "image_location": {"x":48, "y":57},
             "image_zoom": 113,
             "model": "assassins",
@@ -2820,8 +2820,8 @@
             "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
 
-            "image": "data/tiles/img/assassins.png",
-            "imageHD": "data/tiles/img/assassins_hd.png",
+            "image": "data/tiles/img/assassins.webp",
+            "imageHD": "data/tiles/img/assassins_hd.webp",
             "image_location": {"x":50, "y":50},
             "image_zoom": 100,
             "model": "assassins",
@@ -2839,8 +2839,8 @@
             "skills": { "0": "attack/reach", "1": "defense/sacrifice", "2": "none", "3": "none" },
             "reinforcement": "1",
 
-            "image": "data/tiles/img/hoplites.png",
-            "imageHD": "data/tiles/img/hoplites_hd.png",
+            "image": "data/tiles/img/hoplites.webp",
+            "imageHD": "data/tiles/img/hoplites_hd.webp",
             "image_location": {"x":43, "y":63},
             "image_zoom": 130,
             "model": "hoplites", "modelType": "human",
@@ -2858,10 +2858,10 @@
             "skills": { "0": "miscellaneous/horror", "1": "movement/flying", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":115, "y":88}, "image_zoom": 466, "image": "data/tiles/img/winged-one.png" }
+                { "image_location": {"x":115, "y":88}, "image_zoom": 466, "image": "data/tiles/img/winged-one.webp" }
             ],
 
-            "image": "data/tiles/img/winged-ape.png",
+            "image": "data/tiles/img/winged-ape.webp",
             "image_location": {"x":40, "y":56},
             "image_zoom": 210,
             "model": "winged-ape",
@@ -2884,7 +2884,7 @@
                 { "image_location": {"x":27, "y":224}, "image_zoom": 300 }
             ],
 
-            "image": "data/tiles/img/heracles.png",
+            "image": "data/tiles/img/heracles.webp",
             "image_location": {"x":45, "y":74},
             "image_zoom": 125,
             "model": "heracles", "modelType": "human",
@@ -2905,7 +2905,7 @@
                 { "image_location": {"x":44, "y":118}, "image_zoom": 360 }
             ],
 
-            "image": "data/tiles/img/leonidas.png",
+            "image": "data/tiles/img/leonidas.webp",
             "image_location": {"x":44, "y":46},
             "image_zoom": 150,
             "model": "leonidas", "modelType": "human",
@@ -2926,8 +2926,8 @@
                 { "image_location": {"x":42, "y":182}, "image_zoom": 210 }
             ],
 
-            "image": "data/tiles/img/achilles.png",
-            "imageHD": "data/tiles/img/achilles_hd.png",
+            "image": "data/tiles/img/achilles.webp",
+            "imageHD": "data/tiles/img/achilles_hd.webp",
             "image_location": {"x":53, "y":69},
             "image_zoom": 85,
             "model": "achilles", "modelType": "human",
@@ -2945,8 +2945,8 @@
             "skills": { "0": "attack/counterattack", "1": "movement/blocking", "2": "none", "3": "none" },
             "reinforcement": "2",
 
-            "image": "data/tiles/img/spartan.png",
-            "imageHD": "data/tiles/img/spartan_hd.png",
+            "image": "data/tiles/img/spartan.webp",
+            "imageHD": "data/tiles/img/spartan_hd.webp",
             "image_location": {"x":45, "y":63},
             "image_zoom": 115,
             "model": "spartan",
@@ -2964,8 +2964,8 @@
             "skills": { "0": "movement/climb", "1": "defense/sacrifice", "2": "none", "3": "none" },
             "reinforcement": "2",
 
-            "image": "data/tiles/img/hell-warriors.png",
-            "imageHD": "data/tiles/img/hell-warriors_hd.png",
+            "image": "data/tiles/img/hell-warriors.webp",
+            "imageHD": "data/tiles/img/hell-warriors_hd.webp",
             "image_location": {"x":35, "y":56},
             "image_zoom": 132,
             "model": "hell-warriors", "modelType": "monster",
@@ -2983,8 +2983,8 @@
             "skills": { "0": "movement/climb", "1": "attack/precision_shot", "2": "none", "3": "none" },
             "reinforcement": "2",
 
-            "image": "data/tiles/img/amazons.png",
-            "imageHD": "data/tiles/img/amazons_hd.png",
+            "image": "data/tiles/img/amazons.webp",
+            "imageHD": "data/tiles/img/amazons_hd.webp",
             "image_location": {"x":44, "y":54},
             "image_zoom": 121,
             "model": "amazons", "modelType": "human",
@@ -3002,8 +3002,8 @@
             "skills": { "0": "attack/elite_shooter", "1": "movement/evasive", "2": "none", "3": "none" },
             "reinforcement": "3",
 
-            "image": "data/tiles/img/centaurs.png",
-            "imageHD": "data/tiles/img/centaurs_hd.png",
+            "image": "data/tiles/img/centaurs.webp",
+            "imageHD": "data/tiles/img/centaurs_hd.webp",
             "image_location": {"x":81, "y":77},
             "image_zoom": 166,
             "model": "centaurs", "modelType": "monster",
@@ -3021,7 +3021,7 @@
             "skills": { "0": "movement/feline_grace", "1": "miscellaneous/jinx", "2": "none", "3": "none" },
             "reinforcement": "1",
 
-            "image": "data/tiles/img/hellhounds.png",
+            "image": "data/tiles/img/hellhounds.webp",
             "image_location": {"x":49, "y":50},
             "image_zoom": 107,
             "model": "hellhounds", "modelType": "monster",
@@ -3039,7 +3039,7 @@
             "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
 
-            "image": "data/tiles/img/civilian-1.png",
+            "image": "data/tiles/img/civilian-1.webp",
             "image_location": {"x":54, "y":56},
             "image_zoom": 50,
             "model": "civilian",
@@ -3057,7 +3057,7 @@
             "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
 
-            "image": "data/tiles/img/civilian-2.png",
+            "image": "data/tiles/img/civilian-2.webp",
             "image_location": {"x":53, "y":57},
             "image_zoom": 72,
             "model": "civilian",
@@ -3075,7 +3075,7 @@
             "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "1",
 
-            "image": "data/tiles/img/civilian-3.png",
+            "image": "data/tiles/img/civilian-3.webp",
             "image_location": {"x":48.5, "y":55.5},
             "image_zoom": 57,
             "model": "civilian",
@@ -3093,10 +3093,10 @@
             "skills": { "0": "attack/precision_strike", "1": "miscellaneous/horror", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":78, "y":74}, "image_zoom": 260, "image": "data/tiles/img/cerberus_token.png" }
+                { "image_location": {"x":78, "y":74}, "image_zoom": 260, "image": "data/tiles/img/cerberus_token.webp" }
             ],
 
-            "image": "data/tiles/img/cerberus.png",
+            "image": "data/tiles/img/cerberus.webp",
             "image_location": {"x":33, "y":54},
             "image_zoom": 170,
             "model": "cerberus", "modelType": "monster",
@@ -3117,7 +3117,7 @@
                 { "image_location": {"x":49, "y":121}, "image_zoom": 230 }
             ],
 
-            "image": "data/tiles/img/medusa.png",
+            "image": "data/tiles/img/medusa.webp",
             "image_location": {"x":55, "y":58},
             "image_zoom": 140,
             "model": "medusa", "modelType": "monster",
@@ -3140,8 +3140,8 @@
                 { "image_location": {"x":45, "y":99}, "image_zoom": 250 }
             ],
 
-            "image": "data/tiles/img/ares.png",
-            "imageHD": "data/tiles/img/ares_hd.png",
+            "image": "data/tiles/img/ares.webp",
+            "imageHD": "data/tiles/img/ares_hd.webp",
             "image_location": {"x":50, "y":43},
             "image_zoom": 110,
             "model": "ares", "modelType": "human",
@@ -3159,11 +3159,11 @@
             "skills": { "0": "movement/wall_wrecker", "1": "movement/blocking", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":150, "y":107}, "image_zoom": 354, "image": "data/tiles/img/minotaur_token.png" }
+                { "image_location": {"x":150, "y":107}, "image_zoom": 354, "image": "data/tiles/img/minotaur_token.webp" }
             ],
 
-            "image": "data/tiles/img/minotaur.png",
-            "imageHD": "data/tiles/img/minotaur_hd.png",
+            "image": "data/tiles/img/minotaur.webp",
+            "imageHD": "data/tiles/img/minotaur_hd.webp",
             "image_location": {"x":8, "y":60},
             "image_zoom": 235,
             "model": "minotaur", "modelType": "monster",
@@ -3184,8 +3184,8 @@
                 { "image_location": {"x":43, "y":196}, "image_zoom": 260 }
             ],
 
-            "image": "data/tiles/img/odysseus.png",
-            "imageHD": "data/tiles/img/odysseus_hd.png",
+            "image": "data/tiles/img/odysseus.webp",
+            "imageHD": "data/tiles/img/odysseus_hd.webp",
             "image_location": {"x":54, "y":53},
             "image_zoom": 85,
             "model": "odysseus", "modelType": "human",
@@ -3206,8 +3206,8 @@
                 { "image_location": {"x":-97, "y":158}, "image_zoom": 500 }
             ],
 
-            "image": "data/tiles/img/hydra.png",
-            "imageHD": "data/tiles/img/hydra_hd.png",
+            "image": "data/tiles/img/hydra.webp",
+            "imageHD": "data/tiles/img/hydra_hd.webp",
             "image_location": {"x":6, "y":53},
             "image_zoom": 220,
             "model": "scourge-of-set",
@@ -3225,8 +3225,8 @@
             "skills": { "0": "defense/sacrifice", "1": "attack/attack_from_beyond", "2": "none", "3": "none" },
             "reinforcement": "",
 
-            "image": "data/tiles/img/hydra.png",
-            "imageHD": "data/tiles/img/hydra_hd.png",
+            "image": "data/tiles/img/hydra.webp",
+            "imageHD": "data/tiles/img/hydra_hd.webp",
             "image_location": {"x":6, "y":53},
             "image_zoom": 220,
             "model": "scourge-of-set",
@@ -3244,8 +3244,8 @@
             "skills": { "0": "attack/counterattack", "1": "miscellaneous/horror", "2": "none", "3": "none" },
             "reinforcement": "",
 
-            "image": "data/tiles/img/hydra.png",
-            "imageHD": "data/tiles/img/hydra_hd.png",
+            "image": "data/tiles/img/hydra.webp",
+            "imageHD": "data/tiles/img/hydra_hd.webp",
             "image_location": {"x":6, "y":53},
             "image_zoom": 220,
             "model": "scourge-of-set",
@@ -3263,8 +3263,8 @@
             "skills": { "0": "attack/constriction", "1": "attack/reach", "2": "none", "3": "none" },
             "reinforcement": "",
 
-            "image": "data/tiles/img/hydra.png",
-            "imageHD": "data/tiles/img/hydra_hd.png",
+            "image": "data/tiles/img/hydra.webp",
+            "imageHD": "data/tiles/img/hydra_hd.webp",
             "image_location": {"x":6, "y":53},
             "image_zoom": 220,
             "model": "scourge-of-set",
@@ -3282,8 +3282,8 @@
             "skills": { "0": "movement/climb", "1": "movement/blocking", "2": "none", "3": "none" },
             "reinforcement": "",
 
-            "image": "data/tiles/img/hydra.png",
-            "imageHD": "data/tiles/img/hydra_hd.png",
+            "image": "data/tiles/img/hydra.webp",
+            "imageHD": "data/tiles/img/hydra_hd.webp",
             "image_location": {"x":6, "y":53},
             "image_zoom": 220,
             "model": "scourge-of-set",
@@ -3307,8 +3307,8 @@
                 }
             },
             
-            "image": "data/tiles/img/ghouls.png",
-            "imageHD": "data/tiles/img/ghouls_hd.png",
+            "image": "data/tiles/img/ghouls.webp",
+            "imageHD": "data/tiles/img/ghouls_hd.webp",
             "image_location": {"x":62, "y":55},
             "image_zoom": 100,
             "model": "ghouls",
@@ -3332,8 +3332,8 @@
                 }
             },
             
-            "image": "data/tiles/img/ghouls.png",
-            "imageHD": "data/tiles/img/ghouls_hd.png",
+            "image": "data/tiles/img/ghouls.webp",
+            "imageHD": "data/tiles/img/ghouls_hd.webp",
             "image_location": {"x":62, "y":55},
             "image_zoom": 100,
             "model": "ghouls",
@@ -3357,8 +3357,8 @@
                 }
             },
 
-            "image": "data/tiles/img/khitan-acolytes.png",
-            "imageHD": "data/tiles/img/khitan-acolytes_hd.png",
+            "image": "data/tiles/img/khitan-acolytes.webp",
+            "imageHD": "data/tiles/img/khitan-acolytes_hd.webp",
             "image_location": {"x":57, "y":50},
             "image_zoom": 118,
             "model": "khitan-acolytes",
@@ -3382,8 +3382,8 @@
                 }
             },
 
-            "image": "data/tiles/img/khitan-acolytes.png",
-            "imageHD": "data/tiles/img/khitan-acolytes_hd.png",
+            "image": "data/tiles/img/khitan-acolytes.webp",
+            "imageHD": "data/tiles/img/khitan-acolytes_hd.webp",
             "image_location": {"x":57, "y":50},
             "image_zoom": 118,
             "model": "khitan-acolytes",
@@ -3407,8 +3407,8 @@
                 }
             },
 
-            "image": "data/tiles/img/khitan-acolytes.png",
-            "imageHD": "data/tiles/img/khitan-acolytes_hd.png",
+            "image": "data/tiles/img/khitan-acolytes.webp",
+            "imageHD": "data/tiles/img/khitan-acolytes_hd.webp",
             "image_location": {"x":57, "y":50},
             "image_zoom": 118,
             "model": "khitan-acolytes",
@@ -3432,8 +3432,8 @@
                 }
             },
 
-            "image": "data/tiles/img/pirate-archers.png",
-            "imageHD": "data/tiles/img/pirate-archers_hd.png",
+            "image": "data/tiles/img/pirate-archers.webp",
+            "imageHD": "data/tiles/img/pirate-archers_hd.webp",
             "image_location": {"x":60, "y":60},
             "image_zoom": 110,
             "model": "pirate-archers",
@@ -3457,8 +3457,8 @@
                 }
             },
 
-            "image": "data/tiles/img/children-of-gullah.png",
-            "imageHD": "data/tiles/img/children-of-gullah_hd.png",
+            "image": "data/tiles/img/children-of-gullah.webp",
+            "imageHD": "data/tiles/img/children-of-gullah_hd.webp",
             "image_location": {"x":57, "y":60},
             "image_zoom": 115,
             "model": "children-of-gullah",
@@ -3484,8 +3484,8 @@
                 }
             },
 
-            "image": "data/tiles/img/haunter-of-the-picts.png",
-            "imageHD": "data/tiles/img/haunter-of-the-picts_hd.png",
+            "image": "data/tiles/img/haunter-of-the-picts.webp",
+            "imageHD": "data/tiles/img/haunter-of-the-picts_hd.webp",
             "image_location": {"x":57, "y":60},
             "image_zoom": 115,
             "model": "children-of-gullah",
@@ -3503,8 +3503,8 @@
             "skills": { "0": "attack/precision_shot", "1": "miscellaneous/concentration", "2": "none", "3": "none" },
             "reinforcement": "3",
 
-            "image": "data/tiles/img/ballista-pirates.png",
-            "imageHD": "data/tiles/img/ballista-pirates_hd.png",
+            "image": "data/tiles/img/ballista-pirates.webp",
+            "imageHD": "data/tiles/img/ballista-pirates_hd.webp",
             "image_location": {"x":48, "y":48},
             "image_zoom": 105,
             "model": "ballista-pirates",
@@ -3524,8 +3524,8 @@
                 { "image_location": {"x":32, "y":75}, "image_zoom": 140 }
             ],
 
-            "image": "data/tiles/img/elite-ballista.png",
-            "imageHD": "data/tiles/img/elite-ballista_hd.png",
+            "image": "data/tiles/img/elite-ballista.webp",
+            "imageHD": "data/tiles/img/elite-ballista_hd.webp",
             "image_location": {"x":48, "y":48},
             "image_zoom": 105,
             "model": "ballista-pirates",
@@ -3549,8 +3549,8 @@
                 }
             },
 
-            "image": "data/tiles/img/deep-ones.png",
-            "imageHD": "data/tiles/img/deep-ones_hd.png",
+            "image": "data/tiles/img/deep-ones.webp",
+            "imageHD": "data/tiles/img/deep-ones_hd.webp",
             "image_location": {"x":52, "y":50},
             "image_zoom": 125,
             "model": "deep-ones",
@@ -3567,7 +3567,7 @@
             "dices": { "0": "redreroll", "1": "orange", "2": "yellowreroll", "3": "none" },
             "skills": { "0": "miscellaneous/poison", "1": "attack/reach", "2": "none", "3": "none" },
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 130, "image": "data/tiles/img/deep-one-champion_token.png" }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 130, "image": "data/tiles/img/deep-one-champion_token.webp" }
             ],
 
             "quote": {
@@ -3576,8 +3576,8 @@
                 }
             },
 
-            "image": "data/tiles/img/deep-one-champion.png",
-            "imageHD": "data/tiles/img/deep-one-champion_hd.png",
+            "image": "data/tiles/img/deep-one-champion.webp",
+            "imageHD": "data/tiles/img/deep-one-champion_hd.webp",
             "image_location": {"x":52, "y":50},
             "image_zoom": 125,
             "model": "deep-ones",
@@ -3603,8 +3603,8 @@
                 }
             },
 
-            "image": "data/tiles/img/zenobia.png",
-            "imageHD": "data/tiles/img/zenobia_hd.png",
+            "image": "data/tiles/img/zenobia.webp",
+            "imageHD": "data/tiles/img/zenobia_hd.webp",
             "image_location": {"x":60, "y":49},
             "image_zoom": 112,
             "model": "zenobia",
@@ -3630,8 +3630,8 @@
                 }
             },
 
-            "image": "data/tiles/img/manifestation-of-mitra.png",
-            "imageHD": "data/tiles/img/manifestation-of-mitra_hd.png",
+            "image": "data/tiles/img/manifestation-of-mitra.webp",
+            "imageHD": "data/tiles/img/manifestation-of-mitra_hd.webp",
             "image_location": {"x":53, "y":50},
             "image_zoom": 122,
             "model": "manifestation-of-mitra",
@@ -3659,8 +3659,8 @@
                 }
             },
 
-            "image": "data/tiles/img/xaltotun.png",
-            "imageHD": "data/tiles/img/xaltotun_hd.png",
+            "image": "data/tiles/img/xaltotun.webp",
+            "imageHD": "data/tiles/img/xaltotun_hd.webp",
             "image_location": {"x":58, "y":50},
             "image_zoom": 116,
             "model": "xaltotun",
@@ -3688,8 +3688,8 @@
                 }
             },
 
-            "image": "data/tiles/img/conan-the-pirate.png",
-            "imageHD": "data/tiles/img/conan-the-pirate_hd.png",
+            "image": "data/tiles/img/conan-the-pirate.webp",
+            "imageHD": "data/tiles/img/conan-the-pirate_hd.webp",
             "image_location": {"x":55, "y":52},
             "image_zoom": 120,
             "model": "conan-the-pirate",
@@ -3715,8 +3715,8 @@
                 }
             },
 
-            "image": "data/tiles/img/nyaga.png",
-            "imageHD": "data/tiles/img/nyaga_hd.png",
+            "image": "data/tiles/img/nyaga.webp",
+            "imageHD": "data/tiles/img/nyaga_hd.webp",
             "image_location": {"x":55, "y":50},
             "image_zoom": 117,
             "model": "nyaga",
@@ -3742,8 +3742,8 @@
                 }
             },
 
-            "image": "data/tiles/img/gorm.png",
-            "imageHD": "data/tiles/img/gorm_hd.png",
+            "image": "data/tiles/img/gorm.webp",
+            "imageHD": "data/tiles/img/gorm_hd.webp",
             "image_location": {"x":64, "y":53.5},
             "image_zoom": 103,
             "model": "gorm",
@@ -3771,8 +3771,8 @@
                 }
             },
 
-            "image": "data/tiles/img/baal-pteor-2.png",
-            "imageHD": "data/tiles/img/baal-pteor-2_hd.png",
+            "image": "data/tiles/img/baal-pteor-2.webp",
+            "imageHD": "data/tiles/img/baal-pteor-2_hd.webp",
             "image_location": {"x":59, "y":52},
             "image_zoom": 114,
             "model": "baal-pteor",
@@ -3791,11 +3791,11 @@
             "dices": { "0": "redreroll", "1": "orange", "2": "orange", "3": "none" },
             "skills": { "0": "movement/climb", "1": "movement/web_projection", "2": "none", "3": "none" },
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 130, "image": "data/tiles/img/zamorian-spider_token.png" }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 130, "image": "data/tiles/img/zamorian-spider_token.webp" }
             ],
 
-            "image": "data/tiles/img/zamorian-spider.png",
-            "imageHD": "data/tiles/img/zamorian-spider_hd.png",
+            "image": "data/tiles/img/zamorian-spider.webp",
+            "imageHD": "data/tiles/img/zamorian-spider_hd.webp",
             "image_location": {"x":51, "y":54},
             "image_zoom": 126,
             "model": "zamorian-spider",
@@ -3823,8 +3823,8 @@
                 }
             },
 
-            "image": "data/tiles/img/manifestation-of-yog.png",
-            "imageHD": "data/tiles/img/manifestation-of-yog_hd.png",
+            "image": "data/tiles/img/manifestation-of-yog.webp",
+            "imageHD": "data/tiles/img/manifestation-of-yog_hd.webp",
             "image_location": {"x":50, "y":48},
             "image_zoom": 125,
             "model": "manifestation-of-yog",
@@ -3852,8 +3852,8 @@
                 }
             },
 
-            "image": "data/tiles/img/conan-the-conqueror.png",
-            "imageHD": "data/tiles/img/conan-the-conqueror_hd.png",
+            "image": "data/tiles/img/conan-the-conqueror.webp",
+            "imageHD": "data/tiles/img/conan-the-conqueror_hd.webp",
             "image_location": {"x":65, "y":48},
             "image_zoom": 101,
             "model": "conan-the-conqueror",
@@ -3873,7 +3873,7 @@
                 { "image_location": {"x":115, "y":88}, "image_zoom": 466 }
             ],
 
-            "image": "data/tiles/img/winged-one.png",
+            "image": "data/tiles/img/winged-one.webp",
             "image_location": {"x":87, "y":55},
             "image_zoom": 225,
             "model": "winged-ape",
@@ -3895,8 +3895,8 @@
                 { "image_location": {"x":17, "y":124}, "image_zoom": 300 }
             ],
 
-            "image": "data/tiles/img/son-of-set.png",
-            "imageHD": "data/tiles/img/son-of-set_hd.png",
+            "image": "data/tiles/img/son-of-set.webp",
+            "imageHD": "data/tiles/img/son-of-set_hd.webp",
             "image_location": {"x":52, "y":58},
             "image_zoom": 125,
             "model": "son-of-set",
@@ -3918,8 +3918,8 @@
                 { "image_location": {"x":-41, "y":160}, "image_zoom": 550 }
             ],
 
-            "image": "data/tiles/img/nameless-horror.png",
-            "imageHD": "data/tiles/img/nameless-horror_hd.png",
+            "image": "data/tiles/img/nameless-horror.webp",
+            "imageHD": "data/tiles/img/nameless-horror_hd.webp",
             "image_location": {"x":52, "y":51},
             "image_zoom": 125,
             "model": "nameless-horror",
@@ -3941,8 +3941,8 @@
                 { "image_location": {"x":10, "y":143}, "image_zoom": 300 }
             ],
 
-            "image": "data/tiles/img/servant-of-ahriman.png",
-            "imageHD": "data/tiles/img/servant-of-ahriman_hd.png",
+            "image": "data/tiles/img/servant-of-ahriman.webp",
+            "imageHD": "data/tiles/img/servant-of-ahriman_hd.webp",
             "image_location": {"x":64, "y":58},
             "image_zoom": 131,
             "image_rotation": -15,
@@ -3963,8 +3963,8 @@
                 { "image_location": {"x":-7, "y":79}, "image_zoom": 240 }
             ],
 
-            "image": "data/tiles/img/hydra.png",
-            "imageHD": "data/tiles/img/hydra_hd.png",
+            "image": "data/tiles/img/hydra.webp",
+            "imageHD": "data/tiles/img/hydra_hd.webp",
             "image_location": {"x":11, "y":61},
             "image_zoom": 209,
             "model": "scourge-of-set",
@@ -3990,8 +3990,8 @@
                 }
             },
 
-            "image": "data/tiles/img/serpent-men.png",
-            "imageHD": "data/tiles/img/serpent-men_hd.png",
+            "image": "data/tiles/img/serpent-men.webp",
+            "imageHD": "data/tiles/img/serpent-men_hd.webp",
             "image_location": {"x":53, "y":52},
             "image_zoom": 124,
             "model": "serpent-men",
@@ -4015,8 +4015,8 @@
                 }
             },
 
-            "image": "data/tiles/img/serpent-men.png",
-            "imageHD": "data/tiles/img/serpent-men_hd.png",
+            "image": "data/tiles/img/serpent-men.webp",
+            "imageHD": "data/tiles/img/serpent-men_hd.webp",
             "image_location": {"x":53, "y":52},
             "image_zoom": 124,
             "model": "serpent-men",
@@ -4042,8 +4042,8 @@
                 }
             },
 
-            "image": "data/tiles/img/thulsa-doom.png",
-            "imageHD": "data/tiles/img/thulsa-doom_hd.png",
+            "image": "data/tiles/img/thulsa-doom.webp",
+            "imageHD": "data/tiles/img/thulsa-doom_hd.webp",
             "image_location": {"x":47, "y":50},
             "image_zoom": 112,
             "model": "thulsa-doom",
@@ -4066,8 +4066,8 @@
                 }
             },
 
-            "image": "data/tiles/img/thulsa-doom.png",
-            "imageHD": "data/tiles/img/thulsa-doom_hd.png",
+            "image": "data/tiles/img/thulsa-doom.webp",
+            "imageHD": "data/tiles/img/thulsa-doom_hd.webp",
             "image_location": {"x":47, "y":50},
             "image_zoom": 112,
             "model": "thulsa-doom",

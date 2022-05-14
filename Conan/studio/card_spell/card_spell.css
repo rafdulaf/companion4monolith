@@ -251,7 +251,7 @@
     font-family: 'IMMORTAL';
     text-align: center;
     color: #FFFFFF;
-    background-image: url(img/name-background.png);
+    background-image: url(img/name-background.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -302,7 +302,7 @@
 }
 .dialog .spell .field.cost {
     width: calc(50% + 23px);
-    background-image: url(img/slash.png);
+    background-image: url(img/slash.webp);
     background-repeat: no-repeat;
     background-position: 100%;
 }
@@ -341,8 +341,8 @@
     content: " ";
     margin-right: 4px;
 }
-.dialog .spell .field .reaction label:before { background-image: url(img/reaction.png); }
-.dialog .spell .field .explosion label:before { background-image: url(img/explosion.png); }
+.dialog .spell .field .reaction label:before { background-image: url(img/reaction.webp); }
+.dialog .spell .field .explosion label:before { background-image: url(img/explosion.webp); }
 
 .dialog .spell .field.checkbox { margin-bottom: 10px; }
 
@@ -521,5 +521,5 @@
 }
 
 #spell .nocards {
-    background-image: url('img/nocard.png');
+    background-image: url('img/nocard.webp');
 }

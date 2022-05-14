@@ -48,7 +48,7 @@ Maps = mergeObject(Maps, {
                         if (!(rules.legend.boundaries[item] === false))
                         {
                             aide += "<div>"
-                                  + "<span style=\"background-image: url('maps/img/boundaries_" + item + ".png?version=" + Version + "')\"></span>" 
+                                  + "<span style=\"background-image: url('maps/img/boundaries_" + item + ".webp?version=" + Version + "')\"></span>" 
                                   + "<span>" + Maps._i18n['legend_boundaries_' + item] + "</span>"
                                   + "</div>"
                         }
@@ -66,7 +66,7 @@ Maps = mergeObject(Maps, {
                         if (!(rules.legend.special_moves[item] === false))
                         {
                             aide += "<div>"
-                                  + "<span style=\"background-image: url('maps/img/specialmoves_" + item + ".png?version=" + Version + "')\"></span>" 
+                                  + "<span style=\"background-image: url('maps/img/specialmoves_" + item + ".webp?version=" + Version + "')\"></span>" 
                                   + "<span>" + Maps._i18n['legend_specialmoves_' + item].replace(/\n\n/g, '<hr/>').replace(/\n/g, '<br/>') + "</span>"
                                   + "</div>";
                         }
@@ -82,7 +82,7 @@ Maps = mergeObject(Maps, {
 
                     rules.legend.areas.forEach(function (area) {
                         aide += "<div class=\"map-map-legend-areas-" + area + "\">"
-                                  + "<span style=\"background-image: url('maps/img/areas_" + area + ".png?version=" + Version + "')\"></span>" 
+                                  + "<span style=\"background-image: url('maps/img/areas_" + area + ".webp?version=" + Version + "')\"></span>" 
                                   + "<span>" + Maps._i18n['legend_areas_' + area] + "</span>"
                             + "</div>"
                     });

@@ -22,9 +22,9 @@
                         "coordinates": [[66, 90]]
                     }
                 ],
-                "thumbnail": "data/maps/data/Pict_Village/thumb.png",
-                "board": "data/maps/data/Pict_Village/board.png",
-                "losFile": "data/maps/data/Pict_Village/los-v7.jpg"
+                "thumbnail": "data/maps/data/Pict_Village/thumb.webp",
+                "board": "data/maps/data/Pict_Village/board.webp",
+                "losFile": "data/maps/data/Pict_Village/los-v7.webp"
             },
             "size": [1088, 932],
             "zones": {
@@ -218,9 +218,9 @@
                         "coordinates": [[13,33], [53,33]]
                     }
                 ],
-                "thumbnail": "data/maps/data/Inn/thumb.png",
-                "board": "data/maps/data/Inn/board.png",
-                "losFile": "data/maps/data/Inn/los-v5.jpg"
+                "thumbnail": "data/maps/data/Inn/thumb.webp",
+                "board": "data/maps/data/Inn/board.webp",
+                "losFile": "data/maps/data/Inn/los-v5.webp"
             },
             "size": [1062, 910],
             "zones": {
@@ -470,9 +470,9 @@
                         "coordinates": []
                     }
                 ],
-                "thumbnail": "data/maps/data/Ships/thumb.png",
-                "board": "data/maps/data/Ships/board.png",
-                "losFile": "data/maps/data/Ships/los-v5.jpg"
+                "thumbnail": "data/maps/data/Ships/thumb.webp",
+                "board": "data/maps/data/Ships/board.webp",
+                "losFile": "data/maps/data/Ships/los-v5.webp"
             },
             "size": [1062, 910],
             "zones": {
@@ -788,9 +788,9 @@
                         "coordinates": [[15,30], [25,15], [76,45], [95,60]]
                     }
                 ],
-                "thumbnail": "data/maps/data/Abandoned_Fort/thumb.png",
-                "board": "data/maps/data/Abandoned_Fort/board.png",
-                "losFile": "data/maps/data/Abandoned_Fort/los-v7.jpg"
+                "thumbnail": "data/maps/data/Abandoned_Fort/thumb.webp",
+                "board": "data/maps/data/Abandoned_Fort/board.webp",
+                "losFile": "data/maps/data/Abandoned_Fort/los-v7.webp"
             },
             "size": [1062, 910],
             "zones": {
@@ -1016,9 +1016,9 @@
                         "coordinates": [[ 60, 14 ], [ 72, 48 ], [ 72, 73 ]]
                     }
                 ],
-                "thumbnail": "data/maps/data/Citadel/thumb.png",
-                "board": "data/maps/data/Citadel/board.png",
-                "losFile": "data/maps/data/Citadel/los-v2.jpg"
+                "thumbnail": "data/maps/data/Citadel/thumb.webp",
+                "board": "data/maps/data/Citadel/board.webp",
+                "losFile": "data/maps/data/Citadel/los-v2.webp"
             },
             "size": [1065, 912],
             "zones": {
@@ -1228,9 +1228,9 @@
                         "coordinates": [[18,48], [30,43], [66,42], [15,85], [46,85], [87,85]]
                     }
                 ],
-                "thumbnail": "data/maps/data/Swamp/thumb.png",
-                "board": "data/maps/data/Swamp/board.png",
-                "losFile": "data/maps/data/Swamp/los-v3.jpg"
+                "thumbnail": "data/maps/data/Swamp/thumb.webp",
+                "board": "data/maps/data/Swamp/board.webp",
+                "losFile": "data/maps/data/Swamp/los-v3.webp"
             },
             "size": [1061, 910],
             "zones": {
@@ -1586,9 +1586,9 @@
                         "coordinates": [[19,12], [39,10]]
                     }
                 ],
-                "thumbnail": "data/maps/data/Forest/thumb.png",
-                "board": "data/maps/data/Forest/board.png",
-                "losFile": "data/maps/data/Forest/los-v1.jpg"
+                "thumbnail": "data/maps/data/Forest/thumb.webp",
+                "board": "data/maps/data/Forest/board.webp",
+                "losFile": "data/maps/data/Forest/los-v1.webp"
             },
             "size": [1062, 910],
             "zones": {
@@ -1761,9 +1761,9 @@
                         "coordinates": [[50,48], [6,8], [88,15], [86,97]]
                     }
                 ],
-                "thumbnail": "data/maps/data/Mound/thumb.png",
-                "board": "data/maps/data/Mound/board.png",
-                "losFile": "data/maps/data/Mound/los-v1.jpg"
+                "thumbnail": "data/maps/data/Mound/thumb.webp",
+                "board": "data/maps/data/Mound/board.webp",
+                "losFile": "data/maps/data/Mound/los-v1.webp"
             },
             "size": [1078, 924],
             "zones": {
@@ -1931,9 +1931,9 @@
                         "coordinates": [[67, 31], [73,52], [84,70]]
                     }
                 ],
-                "thumbnail": "data/maps/data/Market/thumb.png",
-                "board": "data/maps/data/Market/board.png",
-                "losFile": "data/maps/data/Market/los-v2.jpg"
+                "thumbnail": "data/maps/data/Market/thumb.webp",
+                "board": "data/maps/data/Market/board.webp",
+                "losFile": "data/maps/data/Market/los-v2.webp"
             },
             "size": [1039, 910],
             "zones": {
@@ -2176,9 +2176,9 @@
                     }
                 ],
                 "ratio": 1.74,
-                "thumbnail": "data/maps/data/Tower/thumb.png",
-                "board": "data/maps/data/Tower/board.png",
-                "losFile": "data/maps/data/Tower/los-v4.jpg"
+                "thumbnail": "data/maps/data/Tower/thumb.webp",
+                "board": "data/maps/data/Tower/board.webp",
+                "losFile": "data/maps/data/Tower/los-v4.webp"
             },
             "size": [1609, 923],
             "zones": {
@@ -2447,9 +2447,9 @@
                         "coordinates": []
                     }
                 ],
-                "thumbnail": "data/maps/data/Underground/thumb.png",
-                "board": "data/maps/data/Underground/board.png",
-                "losFile": "data/maps/data/Underground/los-v5.jpg"
+                "thumbnail": "data/maps/data/Underground/thumb.webp",
+                "board": "data/maps/data/Underground/board.webp",
+                "losFile": "data/maps/data/Underground/los-v5.webp"
             },
             "size": [1078, 924],
             "zones": {
@@ -2779,9 +2779,9 @@
                         "coordinates": [[74,53]]
                     }
                 ],
-                "thumbnail": "data/maps/data/Port/thumb.png",
-                "board": "data/maps/data/Port/board.png",
-                "losFile": "data/maps/data/Port/los-v2.jpg"
+                "thumbnail": "data/maps/data/Port/thumb.webp",
+                "board": "data/maps/data/Port/board.webp",
+                "losFile": "data/maps/data/Port/los-v2.webp"
             },
             "size": [1062, 910],
             "zones": {
@@ -3020,9 +3020,9 @@
                     }
                 ],
                 "ratio": 1.17,
-                "thumbnail": "data/maps/data/Citadel2/thumb.png",
-                "board": "data/maps/data/Citadel2/board.png",
-                "losFile": "data/maps/data/Citadel2/los-v3.jpg"
+                "thumbnail": "data/maps/data/Citadel2/thumb.webp",
+                "board": "data/maps/data/Citadel2/board.webp",
+                "losFile": "data/maps/data/Citadel2/los-v3.webp"
             },
             "size": [1067, 912],
             "zones": {
@@ -3243,9 +3243,9 @@
                     }
                 ],
                 "ratio": 1.17,
-                "thumbnail": "data/maps/data/Temple/thumb.png",
-                "board": "data/maps/data/Temple/board.png",
-                "losFile": "data/maps/data/Temple/los-v3.jpg"
+                "thumbnail": "data/maps/data/Temple/thumb.webp",
+                "board": "data/maps/data/Temple/board.webp",
+                "losFile": "data/maps/data/Temple/los-v3.webp"
             },
             "size": [1064, 912],
             "zones": {
@@ -3456,9 +3456,9 @@
                     }
                 ],
                 "ratio": 1.14,
-                "thumbnail": "data/maps/data/Chebek/thumb.png",
-                "board": "data/maps/data/Chebek/board.png",
-                "losFile": "data/maps/data/Chebek/los-v4.jpg"
+                "thumbnail": "data/maps/data/Chebek/thumb.webp",
+                "board": "data/maps/data/Chebek/board.webp",
+                "losFile": "data/maps/data/Chebek/los-v4.webp"
             },
             "size": [1064, 937],
             "zones": {
@@ -3487,9 +3487,9 @@
                     }
                 ],
                 "ratio": 1.14,
-                "thumbnail": "data/maps/data/Galley/thumb.png",
-                "board": "data/maps/data/Galley/board.png",
-                "losFile": "data/maps/data/Galley/los-v3.jpg"
+                "thumbnail": "data/maps/data/Galley/thumb.webp",
+                "board": "data/maps/data/Galley/board.webp",
+                "losFile": "data/maps/data/Galley/los-v3.webp"
             },
             "size": [1064, 937],
             "zones": {
@@ -3516,9 +3516,9 @@
                 ],
                 "totopic": {},
                 "ratio": 1.16,
-                "thumbnail": "data/maps/data/Chebek_Galley/thumb.png",
-                "board": "data/maps/data/Chebek_Galley/board.png",
-                "losFile": "data/maps/data/Chebek_Galley/los-v2.jpg"
+                "thumbnail": "data/maps/data/Chebek_Galley/thumb.webp",
+                "board": "data/maps/data/Chebek_Galley/board.webp",
+                "losFile": "data/maps/data/Chebek_Galley/los-v2.webp"
             },
             "size": [1064, 912],
             "zones": {
@@ -3563,8 +3563,8 @@
                 "version": "1.0",
                 "rules": [],
                 "ratio": 0.81,
-                "thumbnail": "data/maps/data/Port_Ship/thumb.png",
-                "board": "data/maps/data/Port_Ship/board.png",
+                "thumbnail": "data/maps/data/Port_Ship/thumb.webp",
+                "board": "data/maps/data/Port_Ship/board.webp",
                 "losFile": null
             },
             "size": [1062, 1309],
@@ -3616,9 +3616,9 @@
                         "coordinates": [[87.41, 52.66]]
                     }
                 ],
-                "thumbnail": "data/maps/data/Chebek_Hold/unused.png",
-                "board": "data/maps/data/Chebek_Hold/unused.png",
-                "losFile": "data/maps/data/Chebek_Hold/unused.png"
+                "thumbnail": "data/maps/data/Chebek_Hold/unused.webp",
+                "board": "data/maps/data/Chebek_Hold/unused.webp",
+                "losFile": "data/maps/data/Chebek_Hold/unused.webp"
             },
             "zones": {
                 "1": {
@@ -3764,9 +3764,9 @@
                 "copyright": "Monolith",
                 "rules": [
                 ],
-                "thumbnail": "data/maps/data/Chebek_Hold/unused.png",
-                "board": "data/maps/data/Chebek_Hold/unused.png",
-                "losFile": "data/maps/data/Chebek_Hold/unused.png"
+                "thumbnail": "data/maps/data/Chebek_Hold/unused.webp",
+                "board": "data/maps/data/Chebek_Hold/unused.webp",
+                "losFile": "data/maps/data/Chebek_Hold/unused.webp"
             },
             "zones": {
                 "1": {
@@ -3945,9 +3945,9 @@
                         "coordinates": [[86.9, 50.07], [11.69, 45.02]]
                     }
                 ],
-                "thumbnail": "data/maps/data/Gallery_Deck/unused.png",
-                "board": "data/maps/data/Gallery_Deck/unused.png",
-                "losFile": "data/maps/data/Gallery_Deck/unused.png"
+                "thumbnail": "data/maps/data/Gallery_Deck/unused.webp",
+                "board": "data/maps/data/Gallery_Deck/unused.webp",
+                "losFile": "data/maps/data/Gallery_Deck/unused.webp"
             },
             "zones": {
                 "1": {
@@ -4134,9 +4134,9 @@
                 "origins": ["red-brotherhood"],
                 "copyright": "Monolith",
                 "rules": [],
-                "thumbnail": "data/maps/data/Galley_Hold/unused.png",
-                "board": "data/maps/data/Galley_Hold/unused.png",
-                "losFile": "data/maps/data/Galley_Hold/unused.png"
+                "thumbnail": "data/maps/data/Galley_Hold/unused.webp",
+                "board": "data/maps/data/Galley_Hold/unused.webp",
+                "losFile": "data/maps/data/Galley_Hold/unused.webp"
             },
             "zones": {
                 "1": {

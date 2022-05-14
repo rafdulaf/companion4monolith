@@ -16,146 +16,146 @@
         {
             "id": "reach",
             "type": "attack",
-            "image": "data/skills/img/attack/reach.png"
+            "image": "data/skills/img/attack/reach.webp"
         }, {
             "id": "circular_strike",
             "type": "attack",
-            "image": "data/skills/img/attack/circular_strike.png"
+            "image": "data/skills/img/attack/circular_strike.webp"
         }, {
             "id": "ambidextrous",
             "type": "attack",
-            "image": "data/skills/img/attack/ambidextrous.png"
+            "image": "data/skills/img/attack/ambidextrous.webp"
         }, {
             "id": "constriction",
             "type": "attack",
-            "image": "data/skills/img/attack/constriction.png"
+            "image": "data/skills/img/attack/constriction.webp"
         }, {
             "id": "precision_strike",
             "type": "attack",
-            "image": "data/skills/img/attack/precision_strike.png"
+            "image": "data/skills/img/attack/precision_strike.webp"
         }, {
             "id": "attack_from_beyond",
             "type": "attack",
-            "image": "data/skills/img/attack/attack_from_beyond.png"
+            "image": "data/skills/img/attack/attack_from_beyond.webp"
         }, {
             "id": "counterattack",
             "type": "attack",
-            "image": "data/skills/img/attack/counterattack.png"
+            "image": "data/skills/img/attack/counterattack.webp"
         }, {
             "id": "elite_shooter",
             "type": "attack",
-            "image": "data/skills/img/attack/elite_shooter.png"
+            "image": "data/skills/img/attack/elite_shooter.webp"
         }, {
             "id": "precision_shot",
             "type": "attack",
-            "image": "data/skills/img/attack/precision_shot.png"
+            "image": "data/skills/img/attack/precision_shot.webp"
         },
 
         {
             "id": "blocking",
             "type": "movement",
-            "image": "data/skills/img/movement/blocking.png"
+            "image": "data/skills/img/movement/blocking.webp"
         }, {
             "id": "wall_wrecker",
             "type": "movement",
-            "image": "data/skills/img/movement/wall_wrecker.png",
+            "image": "data/skills/img/movement/wall_wrecker.webp",
             "token": "wrecked-wall"
         }, {
             "id": "evasive",
             "type": "movement",
-            "image": "data/skills/img/movement/evasive.png"
+            "image": "data/skills/img/movement/evasive.webp"
         }, {
             "id": "swimming",
             "type": "movement",
-            "image": "data/skills/img/movement/swimming.png"
+            "image": "data/skills/img/movement/swimming.webp"
         }, {
             "id": "intangible",
             "type": "movement",
-            "image": "data/skills/img/movement/intangible.png"
+            "image": "data/skills/img/movement/intangible.webp"
         }, {
             "id": "web_projection",
             "type": "movement",
             "token": "web",
-            "image": "data/skills/img/movement/web_projection.png"
+            "image": "data/skills/img/movement/web_projection.webp"
         }, {
             "id": "feline_grace",
             "type": "movement",
-            "image": "data/skills/img/movement/feline_grace.png"
+            "image": "data/skills/img/movement/feline_grace.webp"
         }, {
             "id": "leap",
             "type": "movement",
-            "image": "data/skills/img/movement/leap.png"
+            "image": "data/skills/img/movement/leap.webp"
         }, {
             "id": "flying",
             "type": "movement",
-            "image": "data/skills/img/movement/flying.png"
+            "image": "data/skills/img/movement/flying.webp"
         }, {
             "id": "climb",
             "type": "movement",
-            "image": "data/skills/img/movement/climb.png"
+            "image": "data/skills/img/movement/climb.webp"
         },
 
         {
             "id": "alchemy",
             "type": "miscellaneous",
-            "image": "data/skills/img/miscellaneous/alchemy.png"
+            "image": "data/skills/img/miscellaneous/alchemy.webp"
         }, {
             "id": "leadership",
             "type": "miscellaneous",
-            "image": "data/skills/img/miscellaneous/leadership.png"
+            "image": "data/skills/img/miscellaneous/leadership.webp"
         }, {
             "id": "concentration",
             "type": "miscellaneous",
-            "image": "data/skills/img/miscellaneous/concentration.png"
+            "image": "data/skills/img/miscellaneous/concentration.webp"
         }, {
             "id": "lock_picking",
             "type": "miscellaneous",
-            "image": "data/skills/img/miscellaneous/lock_picking.png"
+            "image": "data/skills/img/miscellaneous/lock_picking.webp"
         }, {
             "id": "fascination",
             "type": "miscellaneous",
-            "image": "data/skills/img/miscellaneous/fascination.png"
+            "image": "data/skills/img/miscellaneous/fascination.webp"
         }, {
             "id": "horror",
             "type": "miscellaneous",
-            "image": "data/skills/img/miscellaneous/horror.png"
+            "image": "data/skills/img/miscellaneous/horror.webp"
         }, {
             "id": "jinx",
             "type": "miscellaneous",
-            "image": "data/skills/img/miscellaneous/jinx.png"
+            "image": "data/skills/img/miscellaneous/jinx.webp"
         }, {
             "id": "poison",
             "type": "miscellaneous",
             "token": "poison",
-            "image": "data/skills/img/miscellaneous/poison.png"
+            "image": "data/skills/img/miscellaneous/poison.webp"
         }, {
             "id": "support",
             "type": "miscellaneous",
-            "image": "data/skills/img/miscellaneous/support.png"
+            "image": "data/skills/img/miscellaneous/support.webp"
         },
 
         {
             "id": "sacrifice",
             "type": "defense",
-            "image": "data/skills/img/defense/sacrifice.png"
+            "image": "data/skills/img/defense/sacrifice.webp"
         }, {
             "id": "protected",
             "type": "defense",
-            "image": "data/skills/img/defense/protected.png"
+            "image": "data/skills/img/defense/protected.webp"
         }, {
             "id": "untouchable",
             "type": "defense",
-            "image": "data/skills/img/defense/untouchable.png"
+            "image": "data/skills/img/defense/untouchable.webp"
         }, {
             "id": "bodyguard",
             "type": "defense",
-            "image": "data/skills/img/defense/bodyguard.png"
+            "image": "data/skills/img/defense/bodyguard.webp"
         },
 
         {
             "id": "spell_caster",
             "type": "magic",
-            "image": "data/skills/img/magic/spell_caster.png"
+            "image": "data/skills/img/magic/spell_caster.webp"
         }
     ]
 }

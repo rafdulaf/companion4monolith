@@ -262,7 +262,7 @@ function _getRules()
             if ($("#rules-areas-elevator_orientation")[0].checked) rules.areas.push("elevator_orientation");
         }
 
-        rules.image = _getPath() + "help.png";
+        rules.image = _getPath() + "help.webp";
         rules.ratio = $("#rules-image-ratio")[0].value;
         
         rules.elevation = $("#rules-elevation")[0].value.split('\n').filter(function(i) { return i != ""}).map(function(i) {return { level: i.replace(/^(.*) (.*)$/, '$1'), color: i.replace(/^(.*) (.*)$/, '$2') }});
