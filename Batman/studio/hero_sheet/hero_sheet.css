@@ -98,16 +98,16 @@
 .dialog .sheet .ui-menu-item, .dialog .sheet .ui-menu-item-wrapper { height: 40px; position: relative; }
 .dialog .sheet .ui-selectmenu-button.ui-button.ui-widget.ui-selectmenu-button-closed.ui-corner-all { border-color: transparent; }
 
-.dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(1):before, .dialog .sheet select[data-value=black] + span { background-image: url(../../resources/img/dice_black.png) !important; }
-.dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(2):before, .dialog .sheet select[data-value=blackreroll] + span { background-image: url(../../resources/img/dice_blackreroll.png) !important; }
-.dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(3):before, .dialog .sheet select[data-value=red] + span { background-image: url(../../resources/img/dice_red.png) !important; }
-.dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(4):before, .dialog .sheet select[data-value=redreroll] + span { background-image: url(../../resources/img/dice_redreroll.png) !important; }
-.dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(5):before, .dialog .sheet select[data-value=orange] + span { background-image: url(../../resources/img/dice_orange.png) !important; }
-.dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(6):before, .dialog .sheet select[data-value=orangereroll] + span { background-image: url(../../resources/img/dice_orangereroll.png) !important; }
-.dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(7):before, .dialog .sheet select[data-value=yellow] + span { background-image: url(../../resources/img/dice_yellow.png) !important; }
-.dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(8):before, .dialog .sheet select[data-value=yellowreroll] + span { background-image: url(../../resources/img/dice_yellowreroll.png) !important; }
-.dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(9):before, .dialog .sheet select[data-value=white] + span { background-image: url(../../resources/img/dice_white.png) !important; }
-.dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(10):before, .dialog .sheet select[data-value=whitereroll] + span { background-image: url(../../resources/img/dice_whitereroll.png) !important; }
+.dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(1):before, .dialog .sheet select[data-value=black] + span { background-image: url(../../resources/img/dice_black.webp) !important; }
+.dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(2):before, .dialog .sheet select[data-value=blackreroll] + span { background-image: url(../../resources/img/dice_blackreroll.webp) !important; }
+.dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(3):before, .dialog .sheet select[data-value=red] + span { background-image: url(../../resources/img/dice_red.webp) !important; }
+.dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(4):before, .dialog .sheet select[data-value=redreroll] + span { background-image: url(../../resources/img/dice_redreroll.webp) !important; }
+.dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(5):before, .dialog .sheet select[data-value=orange] + span { background-image: url(../../resources/img/dice_orange.webp) !important; }
+.dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(6):before, .dialog .sheet select[data-value=orangereroll] + span { background-image: url(../../resources/img/dice_orangereroll.webp) !important; }
+.dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(7):before, .dialog .sheet select[data-value=yellow] + span { background-image: url(../../resources/img/dice_yellow.webp) !important; }
+.dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(8):before, .dialog .sheet select[data-value=yellowreroll] + span { background-image: url(../../resources/img/dice_yellowreroll.webp) !important; }
+.dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(9):before, .dialog .sheet select[data-value=white] + span { background-image: url(../../resources/img/dice_white.webp) !important; }
+.dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(10):before, .dialog .sheet select[data-value=whitereroll] + span { background-image: url(../../resources/img/dice_whitereroll.webp) !important; }
     
 
 
@@ -180,7 +180,7 @@
 }
 
 #hero .nocards {
-    background-image: url('img/nocard.png');
+    background-image: url('img/nocard.webp');
 }
 
 

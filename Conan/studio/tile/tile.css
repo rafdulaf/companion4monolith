@@ -298,7 +298,7 @@
    font-family: 'Primary';
    text-align: center;
    color: #000000;
-   background-image: url(img/name-background.png);
+   background-image: url(img/name-background.webp);
    background-repeat: no-repeat;
    background-position: center;
    background-size: contain;
@@ -400,10 +400,10 @@
 }
 
 .dialog .tile .field.movement:before {
-   background-image: url(img/movement.png);
+   background-image: url(img/movement.webp);
 }
 .dialog .tile .field.defense:before {
-   background-image: url(img/defense.png);
+   background-image: url(img/defense.webp);
 }
 
 .dialog .tile .field input#tmovement,
@@ -459,10 +459,10 @@
 }
 
 .dialog .tile input#tattacktype:not(checked) + div:before {
-   background-image: url(img/attack_contact.png);
+   background-image: url(img/attack_contact.webp);
 }
 .dialog .tile input#tattacktype:checked + div:before {
-   background-image: url(img/attack_range.png);
+   background-image: url(img/attack_range.webp);
 }
 
 
@@ -484,7 +484,7 @@
 }
 
 .dialog .tile .field.reinforcement:before {
-   background-image: url(img/reinforcement.png);
+   background-image: url(img/reinforcement.webp);
 }
 
 .dialog .tile .field input#treinforcement {
@@ -591,23 +591,23 @@
 .dialog .tile .attackdices .ui-menu-item, .dialog .tile .attackdices .ui-menu-item-wrapper { height: 40px; position: relative; }
 .dialog .tile .attackdices .ui-selectmenu-button.ui-button.ui-widget.ui-selectmenu-button-closed.ui-corner-all { border-color: transparent; }
 .dialog .tile .dice ~ .ui-selectmenu-menu ul li:nth-child(1):before, .dialog .tile .attackdices select[data-value=none] + span .ui-selectmenu-text:before { content: "?"; font-size: 26px; font-family: 'Primary'; color: #7F7F7F; position: absolute; top: 0; left: 32%; }
-.dialog .tile .dice ~ .ui-selectmenu-menu ul li:nth-child(2):before, .dialog .tile .attackdices select[data-value=red] + span { background-image: url(img/dice_red.png) !important; }
-.dialog .tile .dice ~ .ui-selectmenu-menu ul li:nth-child(3):before, .dialog .tile .attackdices select[data-value=redreroll] + span { background-image: url(img/dice_redreroll.png) !important; }
-.dialog .tile .dice ~ .ui-selectmenu-menu ul li:nth-child(4):before, .dialog .tile .attackdices select[data-value=orange] + span { background-image: url(img/dice_orange.png) !important; }
-.dialog .tile .dice ~ .ui-selectmenu-menu ul li:nth-child(5):before, .dialog .tile .attackdices select[data-value=orangereroll] + span { background-image: url(img/dice_orangereroll.png) !important; }
-.dialog .tile .dice ~ .ui-selectmenu-menu ul li:nth-child(6):before, .dialog .tile .attackdices select[data-value=yellow] + span { background-image: url(img/dice_yellow.png) !important; }
-.dialog .tile .dice ~ .ui-selectmenu-menu ul li:nth-child(7):before, .dialog .tile .attackdices select[data-value=yellowreroll] + span { background-image: url(img/dice_yellowreroll.png) !important; }
+.dialog .tile .dice ~ .ui-selectmenu-menu ul li:nth-child(2):before, .dialog .tile .attackdices select[data-value=red] + span { background-image: url(img/dice_red.webp) !important; }
+.dialog .tile .dice ~ .ui-selectmenu-menu ul li:nth-child(3):before, .dialog .tile .attackdices select[data-value=redreroll] + span { background-image: url(img/dice_redreroll.webp) !important; }
+.dialog .tile .dice ~ .ui-selectmenu-menu ul li:nth-child(4):before, .dialog .tile .attackdices select[data-value=orange] + span { background-image: url(img/dice_orange.webp) !important; }
+.dialog .tile .dice ~ .ui-selectmenu-menu ul li:nth-child(5):before, .dialog .tile .attackdices select[data-value=orangereroll] + span { background-image: url(img/dice_orangereroll.webp) !important; }
+.dialog .tile .dice ~ .ui-selectmenu-menu ul li:nth-child(6):before, .dialog .tile .attackdices select[data-value=yellow] + span { background-image: url(img/dice_yellow.webp) !important; }
+.dialog .tile .dice ~ .ui-selectmenu-menu ul li:nth-child(7):before, .dialog .tile .attackdices select[data-value=yellowreroll] + span { background-image: url(img/dice_yellowreroll.webp) !important; }
 
 .dialog .tile .color .ui-selectmenu-text, .dialog .tile .color .ui-menu .ui-menu-item-wrapper { color: transparent; font-size: 1px; }
 .dialog .tile .color .ui-selectmenu-icon.ui-icon.ui-icon-triangle-1-s { background-image: none; }
 .dialog .tile .color .ui-menu-item, .dialog .tile .color .ui-menu-item-wrapper { height: 40px; position: relative; }
-.dialog .tile .color select ~ .ui-selectmenu-menu ul li:nth-child(1):before, .dialog .tile .color select[data-value=gray] + span { background-image: url(img/background_gray.png) !important; }
-.dialog .tile .color select ~ .ui-selectmenu-menu ul li:nth-child(2):before, .dialog .tile .color select[data-value=blue] + span { background-image: url(img/background_blue.png) !important; }
-.dialog .tile .color select ~ .ui-selectmenu-menu ul li:nth-child(3):before, .dialog .tile .color select[data-value=red] + span { background-image: url(img/background_red.png) !important; }
-.dialog .tile .color select ~ .ui-selectmenu-menu ul li:nth-child(4):before, .dialog .tile .color select[data-value=green] + span { background-image: url(img/background_green.png) !important; }
-.dialog .tile .color select ~ .ui-selectmenu-menu ul li:nth-child(5):before, .dialog .tile .color select[data-value=orange] + span { background-image: url(img/background_orange.png) !important; }
-.dialog .tile .color select ~ .ui-selectmenu-menu ul li:nth-child(6):before, .dialog .tile .color select[data-value=purple] + span { background-image: url(img/background_purple.png) !important; }
-.dialog .tile .color select ~ .ui-selectmenu-menu ul li:nth-child(7):before, .dialog .tile .color select[data-value=black] + span { background-image: url(img/background_black.png) !important; }
+.dialog .tile .color select ~ .ui-selectmenu-menu ul li:nth-child(1):before, .dialog .tile .color select[data-value=gray] + span { background-image: url(img/background_gray.webp) !important; }
+.dialog .tile .color select ~ .ui-selectmenu-menu ul li:nth-child(2):before, .dialog .tile .color select[data-value=blue] + span { background-image: url(img/background_blue.webp) !important; }
+.dialog .tile .color select ~ .ui-selectmenu-menu ul li:nth-child(3):before, .dialog .tile .color select[data-value=red] + span { background-image: url(img/background_red.webp) !important; }
+.dialog .tile .color select ~ .ui-selectmenu-menu ul li:nth-child(4):before, .dialog .tile .color select[data-value=green] + span { background-image: url(img/background_green.webp) !important; }
+.dialog .tile .color select ~ .ui-selectmenu-menu ul li:nth-child(5):before, .dialog .tile .color select[data-value=orange] + span { background-image: url(img/background_orange.webp) !important; }
+.dialog .tile .color select ~ .ui-selectmenu-menu ul li:nth-child(6):before, .dialog .tile .color select[data-value=purple] + span { background-image: url(img/background_purple.webp) !important; }
+.dialog .tile .color select ~ .ui-selectmenu-menu ul li:nth-child(7):before, .dialog .tile .color select[data-value=black] + span { background-image: url(img/background_black.webp) !important; }
 .dialog .tile .color  {
     margin-top: 0 !important;
 }
@@ -675,5 +675,5 @@
 }
 
 #tile .nocards {
-    background-image: url('img/nocard.png');
+    background-image: url('img/nocard.webp');
 }

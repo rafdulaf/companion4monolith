@@ -56,8 +56,8 @@ var HeroSheet = mergeObject(StudioItem, {
         var code = "<div class=\"herosheet sheet\">";
 
         code += "<picture class=\"background-l1\">"
-                    + "<source media=\"print\" srcset=\"studio/hero_sheet/img/background_layer_1hd.png?version=" + Version + "\"/>"
-                    + "<img src=\"studio/hero_sheet/img/background_layer_1.png?version=" + Version + "\"/>"
+                    + "<source media=\"print\" srcset=\"studio/hero_sheet/img/background_layer_1hd.webp?version=" + Version + "\"/>"
+                    + "<img src=\"studio/hero_sheet/img/background_layer_1.webp?version=" + Version + "\"/>"
                 + "</picture>";
 
         if (sheet.image)
@@ -66,8 +66,8 @@ var HeroSheet = mergeObject(StudioItem, {
         }
 
         code += "<picture class=\"background-l3\">"
-                    + "<source media=\"print\" srcset=\"studio/hero_sheet/img/background_layer_3hd.png?version=" + Version + "\"/>"
-                    + "<img src=\"studio/hero_sheet/img/background_layer_3.png?version=" + Version + "\"/>"
+                    + "<source media=\"print\" srcset=\"studio/hero_sheet/img/background_layer_3hd.webp?version=" + Version + "\"/>"
+                    + "<img src=\"studio/hero_sheet/img/background_layer_3.webp?version=" + Version + "\"/>"
                 + "</picture>";
 
         if (sheet.name)
@@ -82,7 +82,7 @@ var HeroSheet = mergeObject(StudioItem, {
         code += "<div class=\"skillline\">";
         if (sheet.encumbrance)
         {
-            code += "<img class=\"background-encumbrance\" src=\"studio/hero_sheet/img/weight.png?version=" + Version + "\"/>";
+            code += "<img class=\"background-encumbrance\" src=\"studio/hero_sheet/img/weight.webp?version=" + Version + "\"/>";
             code += "<div class=\"encumbrance\">" + sheet.encumbrance + "</div>";
 
             for (var s=0; s < sheet.skills.length; s++)
@@ -94,7 +94,7 @@ var HeroSheet = mergeObject(StudioItem, {
                     code += "<img class=\"skill\" src=\"" + encyclopediaSkill.image + "?version=" + Version + "\"/>";
                     if (skill.exertion)
                     {
-                        code += "<img class=\"exertion\" src=\"studio/hero_sheet/img/skill_weight.png?version=" + Version + "\"/>";
+                        code += "<img class=\"exertion\" src=\"studio/hero_sheet/img/skill_weight.webp?version=" + Version + "\"/>";
                         code += "<div class=\"exertion\">" + skill.exertion + "</div>";
                     }
                 code += "</div>";
@@ -107,14 +107,14 @@ var HeroSheet = mergeObject(StudioItem, {
 
         code += "<div class=\"base melee\">";
         code +=     "<div class=\"exertion\">" + sheet.melee.exertion + "</div>";
-        code +=     "<div class=\"dice\"><img src=\"studio/hero_sheet/img/dice_" + sheet.melee.dice + ".png?version=" + Version + "\"/></div>";
+        code +=     "<div class=\"dice\"><img src=\"studio/hero_sheet/img/dice_" + sheet.melee.dice + ".webp?version=" + Version + "\"/></div>";
         code += "</div>";
         code += "<div class=\"base ranged\">";
         code +=     "<div class=\"exertion\">" + sheet.ranged.exertion + "</div>";
-        code +=     "<div class=\"dice\"><img src=\"studio/hero_sheet/img/dice_" + sheet.ranged.dice + ".png?version=" + Version + "\"/></div>";
+        code +=     "<div class=\"dice\"><img src=\"studio/hero_sheet/img/dice_" + sheet.ranged.dice + ".webp?version=" + Version + "\"/></div>";
         code += "</div>";
         code += "<div class=\"base defense\">";
-        code +=     "<div class=\"dice\"><img src=\"studio/hero_sheet/img/dice_" + sheet.defense.dice + ".png?version=" + Version + "\"/></div>";
+        code +=     "<div class=\"dice\"><img src=\"studio/hero_sheet/img/dice_" + sheet.defense.dice + ".webp?version=" + Version + "\"/></div>";
         code += "</div>";
         code += "<div class=\"base movement\">";
         code +=     "<div class=\"exertion\">" + sheet.movement.exertion + "</div>";
@@ -122,7 +122,7 @@ var HeroSheet = mergeObject(StudioItem, {
         code += "</div>";
         code += "<div class=\"base manipulation\">";
         code +=     "<div class=\"exertion\">" + sheet.manipulation.exertion + "</div>";
-        code +=     "<div class=\"dice\"><img src=\"studio/hero_sheet/img/dice_" + sheet.manipulation.dice + ".png?version=" + Version + "\"/></div>";
+        code +=     "<div class=\"dice\"><img src=\"studio/hero_sheet/img/dice_" + sheet.manipulation.dice + ".webp?version=" + Version + "\"/></div>";
         code += "</div>";
 
         code += "</div>";

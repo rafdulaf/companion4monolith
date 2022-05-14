@@ -55,7 +55,7 @@ var HeroSheet = mergeObject(StudioItem, {
     _cardCode: function(sheet, printPurpose) {
         var code = "<div class='herosheet sheet " + sheet.type + "'>";
 
-        code += "<div class='background'><img src='studio/hero_sheet/img/sheet_" + sheet.type + ".png?version=" + Version + "'/></div>"
+        code += "<div class='background'><img src='studio/hero_sheet/img/sheet_" + sheet.type + ".webp?version=" + Version + "'/></div>"
 
         if (sheet.name)
         {

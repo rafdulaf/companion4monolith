@@ -8,7 +8,7 @@
                 "origins": ["corebox"],
                 "copyright": "Monolith",
                 "rules": {
-                    "image": "data/maps/data/Bank/help.png",
+                    "image": "data/maps/data/Bank/help.webp",
                     "ratio": 1.3,
                     "legend": {
                         "elevation": [
@@ -23,8 +23,8 @@
                         }
                     }
                 },
-                "thumbnail": "data/maps/data/Bank/thumb.png",
-                "board": "data/maps/data/Bank/board.png"
+                "thumbnail": "data/maps/data/Bank/thumb.webp",
+                "board": "data/maps/data/Bank/board.webp"
             },
             "size": [1217, 910],
             "zones": {
@@ -248,7 +248,7 @@
                 "origins": ["corebox"],
                 "copyright": "Monolith",
                 "rules": {
-                    "image": "data/maps/data/ACE_Chemicals/help.png",
+                    "image": "data/maps/data/ACE_Chemicals/help.webp",
                     "ratio": 1.3,
                     "legend": {
                         "elevation": [
@@ -262,8 +262,8 @@
                         "areas": [ "promontory" ]
                     }
                 },
-                "thumbnail": "data/maps/data/ACE_Chemicals/thumb.png",
-                "board": "data/maps/data/ACE_Chemicals/board.png"
+                "thumbnail": "data/maps/data/ACE_Chemicals/thumb.webp",
+                "board": "data/maps/data/ACE_Chemicals/board.webp"
             },
             "size": [1217, 910],
            "zones": {
@@ -469,7 +469,7 @@
                 "origins": ["corebox"],
                 "copyright": "Monolith",
                 "rules": {
-                    "image": "data/maps/data/Crime_Alley/help.png",
+                    "image": "data/maps/data/Crime_Alley/help.webp",
                     "ratio": 1.3,
                     "legend": {
                         "elevation": [
@@ -484,8 +484,8 @@
                         "areas": [ "promontory" ]
                     }
                 },
-                "thumbnail": "data/maps/data/Crime_Alley/thumb.png",
-                "board": "data/maps/data/Crime_Alley/board.png"
+                "thumbnail": "data/maps/data/Crime_Alley/thumb.webp",
+                "board": "data/maps/data/Crime_Alley/board.webp"
             },
             "size": [1217, 910],
             "zones": {
@@ -679,7 +679,7 @@
                 "origins": ["corebox"],
                 "copyright": "Monolith",
                 "rules": {
-                    "image": "data/maps/data/Subway/help.png",
+                    "image": "data/maps/data/Subway/help.webp",
                     "ratio": 1.3,
                     "legend": {
                         "elevation": [
@@ -695,8 +695,8 @@
                         }
                     }
                 },                
-                "thumbnail": "data/maps/data/Subway/thumb.png",
-                "board": "data/maps/data/Subway/board.png"
+                "thumbnail": "data/maps/data/Subway/thumb.webp",
+                "board": "data/maps/data/Subway/board.webp"
             },
             "size": [1217, 910],
             "zones": {
@@ -962,7 +962,7 @@
                 "origins": ["arkham-asylum"],
                 "copyright": "Monolith",
                 "rules": {
-                    "image": "data/maps/data/Arkham_Asylum/help.png",
+                    "image": "data/maps/data/Arkham_Asylum/help.webp",
                     "ratio": 1.33,
                     "legend": {
                         "elevation": [
@@ -973,8 +973,8 @@
                         }
                     }
                 },
-                "thumbnail": "data/maps/data/Arkham_Asylum/thumb.png",
-                "board": "data/maps/data/Arkham_Asylum/board.png"
+                "thumbnail": "data/maps/data/Arkham_Asylum/thumb.webp",
+                "board": "data/maps/data/Arkham_Asylum/board.webp"
             },
             "size": [1217, 910],
             "zones": {
@@ -1288,7 +1288,7 @@
                 "origins": ["arkham-asylum"],
                 "copyright": "Monolith",
                 "rules": {
-                    "image": "data/maps/data/Joker_Funhouse/help.png",
+                    "image": "data/maps/data/Joker_Funhouse/help.webp",
                     "ratio": 1.33,
                     "legend": {
                         "elevation": [
@@ -1308,8 +1308,8 @@
                         "areas": [ "promontory" ]
                     }
                 },
-                "thumbnail": "data/maps/data/Joker_Funhouse/thumb.png",
-                "board": "data/maps/data/Joker_Funhouse/board.png"
+                "thumbnail": "data/maps/data/Joker_Funhouse/thumb.webp",
+                "board": "data/maps/data/Joker_Funhouse/board.webp"
             },
             "size": [1217, 910],
             "zones": {
@@ -1515,7 +1515,7 @@
                 "origins": ["wayne-manor"],
                 "copyright": "Monolith",
                 "rules": {
-                    "image": "data/maps/data/Batcave/help.png",
+                    "image": "data/maps/data/Batcave/help.webp",
                     "ratio": 1.33,
                     "legend": {
                         "elevation": [
@@ -1530,8 +1530,8 @@
                         "areas": [  "elevators_entrance", "elevator_shaft", "promontory", "elevator_orientation"  ]
                     }
                 },
-                "thumbnail": "data/maps/data/Batcave/thumb.png",
-                "board": "data/maps/data/Batcave/board.png"
+                "thumbnail": "data/maps/data/Batcave/thumb.webp",
+                "board": "data/maps/data/Batcave/board.webp"
             },
             "size": [1217, 910],
             "zones": {
@@ -1779,7 +1779,7 @@
                 "origins": ["wayne-manor"],
                 "copyright": "Monolith",
                 "rules": {
-                    "image": "data/maps/data/Crime_Alley/help.png",
+                    "image": "data/maps/data/Crime_Alley/help.webp",
                     "ratio": 1.3,
                     "legend": {
                         "elevation": [
@@ -1794,8 +1794,8 @@
                         "areas": [ "promontory" ]
                     }
                 },
-                "thumbnail": "data/maps/data/Crime_Alley_Night/thumb.png",
-                "board": "data/maps/data/Crime_Alley_Night/board.png"
+                "thumbnail": "data/maps/data/Crime_Alley_Night/thumb.webp",
+                "board": "data/maps/data/Crime_Alley_Night/board.webp"
             },
             "size": [1217, 910],
             "zones": {
@@ -1989,7 +1989,7 @@
                 "origins": ["wayne-manor"],
                 "copyright": "Monolith",
                 "rules": {
-                    "image": "data/maps/data/Wayne_Manor/help.png",
+                    "image": "data/maps/data/Wayne_Manor/help.webp",
                     "ratio": 1.3,
                     "legend": {
                         "elevation": [
@@ -2000,8 +2000,8 @@
                         "areas": [ "elevators_entrance", "elevator_shaft", "elevator_orientation" ]
                     }
                 },                
-                "thumbnail": "data/maps/data/Wayne_Manor/thumb.png",
-                "board": "data/maps/data/Wayne_Manor/board.png"
+                "thumbnail": "data/maps/data/Wayne_Manor/thumb.webp",
+                "board": "data/maps/data/Wayne_Manor/board.webp"
             },
             "size": [1217, 910],
             "zones": {
@@ -2201,7 +2201,7 @@
                 "origins": ["maps-pack"],
                 "copyright": "Monolith",
                 "rules": {
-                    "image": "data/maps/data/Sewers/help.png",
+                    "image": "data/maps/data/Sewers/help.webp",
                     "ratio": 1.33,
                     "legend": {
                         "elevation": [
@@ -2212,8 +2212,8 @@
                         "special_moves": {}
                     }                
                 },
-                "thumbnail": "data/maps/data/Sewers/thumb.png",
-                "board": "data/maps/data/Sewers/board.png"
+                "thumbnail": "data/maps/data/Sewers/thumb.webp",
+                "board": "data/maps/data/Sewers/board.webp"
             },
             "size": [1217, 910],
             "zones": {
@@ -2425,7 +2425,7 @@
                 "origins": ["maps-pack"],
                 "copyright": "Monolith",
                 "rules": {
-                    "image": "data/maps/data/GCPD/help.png",
+                    "image": "data/maps/data/GCPD/help.webp",
                     "ratio": 1.33,
                     "legend": {
                         "elevation": [
@@ -2441,8 +2441,8 @@
                         }
                     }  
                 },              
-                "thumbnail": "data/maps/data/GCPD/thumb.png",
-                "board": "data/maps/data/GCPD/board.png"
+                "thumbnail": "data/maps/data/GCPD/thumb.webp",
+                "board": "data/maps/data/GCPD/board.webp"
             },
             "size": [1217, 910],
             "zones": {

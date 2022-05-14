@@ -3,7 +3,7 @@
  		{
             "id": "alfred",
             "origins": "wayne-manor",
-            "image": "data/powers/img/alfred.png",
+            "image": "data/powers/img/alfred.webp",
             "name": {
                 "fr": "ALFRED",
                 "en": "ALFRED"
@@ -45,7 +45,7 @@
  		{
             "id": "azrael",
             "origins": "corebox",
-            "image": "data/powers/img/azrael.png",
+            "image": "data/powers/img/azrael.webp",
             "name": {
                 "fr": "AZRAEL",
                 "en": "AZRAEL"
@@ -87,7 +87,7 @@
  		{
             "id": "batgirl",
             "origins": "corebox",
-            "image": "data/powers/img/batgirl.png",
+            "image": "data/powers/img/batgirl.webp",
             "name": {
                 "fr": "BATGIRL",
                 "en": "BATGIRL"
@@ -102,7 +102,7 @@
 						"fr": "BATARANG TÉLÉGUIDÉ",
 						"en": "RADIO-CONTROLLED BATARANG"
 						},
-					"image": ["data/powers/img/batgirl.png"]
+					"image": ["data/powers/img/batgirl.webp"]
 					}					
 				},
             "powers" : {
@@ -142,7 +142,7 @@
  		{
             "id": "batman",
             "origins": "corebox",
-            "image": "data/powers/img/batman.png",
+            "image": "data/powers/img/batman.webp",
             "name": {
                 "fr": "BATMAN",
                 "en": "BATMAN"
@@ -170,7 +170,7 @@
 										"fr": "PION OMBRE",
 										"en": "SHADOW TOKEN"
 										},
-									"image": ["data/powers/img/shadow.png"]
+									"image": ["data/powers/img/shadow.webp"]
 								}					
 							}
 						}
@@ -181,7 +181,7 @@
  		{
             "id": "batman-dkr",
             "origins": "corebox",
-            "image": "data/powers/img/batman-dkr.png",
+            "image": "data/powers/img/batman-dkr.webp",
             "name": {
                 "fr": "BATMAN",
                 "en": "BATMAN"
@@ -227,7 +227,7 @@
 		{
             "id": "batman-zero",
             "origins": "corebox",
-            "image": "data/powers/img/batman-zero.png",
+            "image": "data/powers/img/batman-zero.webp",
             "name": {
                 "fr": "BATMAN",
                 "en": "BATMAN"
@@ -273,7 +273,7 @@
   		{
             "id": "batman-100",
             "origins": "corebox",
-            "image": "data/powers/img/batman-100.png",
+            "image": "data/powers/img/batman-100.webp",
             "name": {
                 "fr": "BATMAN",
                 "en": "BATMAN"
@@ -307,7 +307,7 @@
   		{
             "id": "batwing",
             "origins": "wayne-manor",
-            "image": "data/powers/img/batwing.png",
+            "image": "data/powers/img/batwing.webp",
             "name": {
                 "fr": "BATWING",
                 "en": "BATWING"
@@ -349,7 +349,7 @@
   		{
             "id": "batwoman",
             "origins": "corebox",
-            "image": "data/powers/img/batwoman.png",
+            "image": "data/powers/img/batwoman.webp",
             "name": {
                 "fr": "BATWOMAN",
                 "en": "BATWOMAN"
@@ -379,7 +379,7 @@
   		{
             "id": "black-canary",
             "origins": "corebox",
-            "image": "data/powers/img/black-canary.png",
+            "image": "data/powers/img/black-canary.webp",
             "name": {
                 "fr": "BLACK CANARY",
                 "en": "BLACK CANARY"
@@ -421,7 +421,7 @@
   		{
             "id": "bluebird",
             "origins": "corebox",
-            "image": "data/powers/img/bluebird.png",
+            "image": "data/powers/img/bluebird.webp",
             "name": {
                 "fr": "BLUE BIRD",
                 "en": "BLUE BIRD"
@@ -463,7 +463,7 @@
  		{
             "id": "bruce-wayne",
             "origins": "wayne-manor",
-            "image": "data/powers/img/bruce-wayne.png",
+            "image": "data/powers/img/bruce-wayne.webp",
             "name": {
                 "fr": "BRUCE WAYNE",
                 "en": "BRUCE WAYNE"
@@ -493,7 +493,7 @@
   		{
             "id": "catwoman",
             "origins": "corebox",
-            "image": "data/powers/img/catwoman.png",
+            "image": "data/powers/img/catwoman.webp",
             "name": {
                 "fr": "CATWOMAN",
                 "en": "CATWOMAN"
@@ -522,7 +522,7 @@
         },  		{
             "id": "catwoman-halloween",
             "origins": "corebox",
-            "image": "data/powers/img/catwoman-halloween.png",
+            "image": "data/powers/img/catwoman-halloween.webp",
             "name": {
                 "fr": "CATWOMAN",
                 "en": "CATWOMAN"
@@ -556,7 +556,7 @@
   		{
             "id": "gordon",
             "origins": "corebox",
-            "image": "data/powers/img/gordon.png",
+            "image": "data/powers/img/gordon.webp",
             "name": {
                 "fr": "COMMISSIONER GORDON",
                 "en": "COMMISSIONER GORDON"
@@ -586,7 +586,7 @@
  		{
             "id": "duke",
             "origins": "corebox",
-            "image": "data/powers/img/duke.png",
+            "image": "data/powers/img/duke.webp",
             "name": {
                 "fr": "DUKE",
                 "en": "DUKE"
@@ -632,7 +632,7 @@
   		{
             "id": "green-arrow",
             "origins": "corebox",
-            "image": "data/powers/img/green-arrow.png",
+            "image": "data/powers/img/green-arrow.webp",
             "name": {
                 "fr": "GREEN ARROW",
                 "en": "GREEN ARROW"
@@ -662,7 +662,7 @@
   		{
             "id": "bullock",
             "origins": "corebox",
-            "image": "data/powers/img/bullock.png",
+            "image": "data/powers/img/bullock.webp",
             "name": {
                 "fr": "HARVEY BULLOCK",
                 "en": "HARVEY BULLOCK"
@@ -692,7 +692,7 @@
   		{
             "id": "huntress",
             "origins": "corebox",
-            "image": "data/powers/img/huntress.png",
+            "image": "data/powers/img/huntress.webp",
             "name": {
                 "fr": "HUNTRESS",
                 "en": "HUNTRESS"
@@ -734,7 +734,7 @@
   		{
             "id": "julia-penniworth",
             "origins": "corebox",
-            "image": "data/powers/img/julia-penniworth.png",
+            "image": "data/powers/img/julia-penniworth.webp",
             "name": {
                 "fr": "JULIA PENNYWORTH",
                 "en": "JULIA PENNYWORTH"
@@ -764,7 +764,7 @@
   		{
             "id": "katana",
             "origins": "corebox",
-            "image": "data/powers/img/katana.png",
+            "image": "data/powers/img/katana.webp",
             "name": {
                 "fr": "KATANA",
                 "en": "KATANA"
@@ -794,7 +794,7 @@
   		{
             "id": "nightwing",
             "origins": "corebox",
-            "image": "data/powers/img/nightwing.png",
+            "image": "data/powers/img/nightwing.webp",
             "name": {
                 "fr": "NIGHTWING",
                 "en": "NIGHTWING"
@@ -824,7 +824,7 @@
   		{
             "id": "oracle",
             "origins": "wayne-manor",
-            "image": "data/powers/img/oracle.png",
+            "image": "data/powers/img/oracle.webp",
             "name": {
                 "fr": "ORACLE",
                 "en": "ORACLE"
@@ -854,7 +854,7 @@
   		{
             "id": "orphan",
             "origins": "corebox",
-            "image": "data/powers/img/orphan.png",
+            "image": "data/powers/img/orphan.webp",
             "name": {
                 "fr": "ORPHAN",
                 "en": "ORPHAN"
@@ -886,7 +886,7 @@
 										"fr": "PION POSTURE DÉFENSIVE",
 										"en": "DEFENSIVE STANCE TOKEN"
 										},
-									"image": ["data/powers/img/defensive-stance.png"]
+									"image": ["data/powers/img/defensive-stance.webp"]
 								}					
 							}
 						}
@@ -897,7 +897,7 @@
   		{
             "id": "red-hood-todd",
             "origins": "corebox",
-            "image": "data/powers/img/red-hood-todd.png",
+            "image": "data/powers/img/red-hood-todd.webp",
             "name": {
                 "fr": "RED HOOD",
                 "en": "RED HOOD"
@@ -931,7 +931,7 @@
   		{
             "id": "red-robin",
             "origins": "wayne-manor",
-            "image": "data/powers/img/template.png",
+            "image": "data/powers/img/template.webp",
             "name": {
                 "fr": "RED ROBIN",
                 "en": "RED ROBIN"
@@ -959,7 +959,7 @@
 										"fr": "PIONS PIRATAGE",
 										"en": "HACKING TOKEN"
 										},
-									"image": ["data/powers/img/hacking1.png","data/powers/img/hacking2.png","data/powers/img/hacking3.png"]
+									"image": ["data/powers/img/hacking1.webp","data/powers/img/hacking2.webp","data/powers/img/hacking3.webp"]
 								}					
 							}
 						},
@@ -982,7 +982,7 @@
   		{
             "id": "montoya",
             "origins": "corebox",
-            "image": "data/powers/img/montoya.png",
+            "image": "data/powers/img/montoya.webp",
             "name": {
                 "fr": "RENEE MONTOYA",
                 "en": "RENEE MONTOYA"
@@ -1010,7 +1010,7 @@
 										"fr": "PION FREEZE",
 										"en": "template"
 										},
-									"image": ["data/powers/img/frozen.png"]
+									"image": ["data/powers/img/frozen.webp"]
 								}					
 							}
 						},
@@ -1033,7 +1033,7 @@
   		{
             "id": "robin-damian",
             "origins": "corebox",
-            "image": "data/powers/img/robin-damian.png",
+            "image": "data/powers/img/robin-damian.webp",
             "name": {
                 "fr": "ROBIN",
                 "en": "ROBIN"
@@ -1079,7 +1079,7 @@
   		{
             "id": "robin-drake",
             "origins": "corebox",
-            "image": "data/powers/img/robin-drake.png",
+            "image": "data/powers/img/robin-drake.webp",
             "name": {
                 "fr": "ROBIN",
                 "en": "ROBIN"
@@ -1125,7 +1125,7 @@
   		{
             "id": "spoiler",
             "origins": "corebox",
-            "image": "data/powers/img/spoiler.png",
+            "image": "data/powers/img/spoiler.webp",
             "name": {
                 "fr": "SPOILER",
                 "en": "SPOILER"
@@ -1153,7 +1153,7 @@
 										"fr": "PION FURTIVITÉ",
 										"en": "STEALTH TOKEN"
 										},
-									"image": ["data/powers/img/stealth.png"]
+									"image": ["data/powers/img/stealth.webp"]
 								}					
 							}
 						}
@@ -1164,7 +1164,7 @@
 		 		{
             "id": "bane",
             "origins": "corebox",
-            "image": "data/powers/img/bane.png",
+            "image": "data/powers/img/bane.webp",
             "name": {
                 "fr": "BANE",
                 "en": "BANE"
@@ -1206,7 +1206,7 @@
   		{
             "id": "bane-venom",
             "origins": "corebox",
-            "image": "data/powers/img/bane-venom.png",
+            "image": "data/powers/img/bane-venom.webp",
             "name": {
                 "fr": "BANE",
                 "en": "BANE"
@@ -1240,7 +1240,7 @@
   		{
             "id": "black-mask",
             "origins": "corebox",
-            "image": "data/powers/img/black-mask.png",
+            "image": "data/powers/img/black-mask.webp",
             "name": {
                 "fr": "BLACK MASK",
                 "en": "BLACK MASK"
@@ -1282,7 +1282,7 @@
   		{
             "id": "clayface",
             "origins": "corebox",
-            "image": "data/powers/img/clayface.png",
+            "image": "data/powers/img/clayface.webp",
             "name": {
                 "fr": "CLAYFACE",
                 "en": "CLAYFACE"
@@ -1312,7 +1312,7 @@
   		{
             "id": "deadshot",
             "origins": "corebox",
-            "image": "data/powers/img/deadshot.png",
+            "image": "data/powers/img/deadshot.webp",
             "name": {
                 "fr": "DEADSHOT",
                 "en": "DEADSHOT"
@@ -1342,7 +1342,7 @@
   		{
             "id": "deathstroke",
             "origins": "corebox",
-            "image": "data/powers/img/deathstroke.png",
+            "image": "data/powers/img/deathstroke.webp",
             "name": {
                 "fr": "DEATHSTROKE",
                 "en": "DEATHSTROKE"
@@ -1372,7 +1372,7 @@
   		{
             "id": "doctor-death",
             "origins": "corebox",
-            "image": "data/powers/img/doctor-death.png",
+            "image": "data/powers/img/doctor-death.webp",
             "name": {
                 "fr": "DOCTOR DEATH",
                 "en": "DOCTOR DEATH"
@@ -1414,7 +1414,7 @@
   		{
             "id": "firefly",
             "origins": "corebox",
-            "image": "data/powers/img/firefly.png",
+            "image": "data/powers/img/firefly.webp",
             "name": {
                 "fr": "FIREFLY",
                 "en": "FIREFLY"
@@ -1456,7 +1456,7 @@
   		{
             "id": "harley-quinn",
             "origins": "corebox",
-            "image": "data/powers/img/harley-quinn.png",
+            "image": "data/powers/img/harley-quinn.webp",
             "name": {
                 "fr": "HARLEY QUINN",
                 "en": "HARLEY QUINN"
@@ -1486,7 +1486,7 @@
   		{
             "id": "harley-quinn-hammer",
             "origins": "corebox",
-            "image": "data/powers/img/harley-quinn-hammer.png",
+            "image": "data/powers/img/harley-quinn-hammer.webp",
             "name": {
                 "fr": "HARLEY QUINN",
                 "en": "HARLEY QUINN"
@@ -1520,7 +1520,7 @@
   		{
             "id": "hugo-strange",
             "origins": "arkham-asylum",
-            "image": "data/powers/img/hugo-strange.png",
+            "image": "data/powers/img/hugo-strange.webp",
             "name": {
                 "fr": "HUGO STRANGE",
                 "en": "HUGO STRANGE"
@@ -1550,7 +1550,7 @@
   		{
             "id": "hush",
             "origins": "corebox",
-            "image": "data/powers/img/hush.png",
+            "image": "data/powers/img/hush.webp",
             "name": {
                 "fr": "HUSH",
                 "en": "HUSH"
@@ -1580,7 +1580,7 @@
   		{
             "id": "jason-todd-hush",
             "origins": "corebox",
-            "image": "data/powers/img/jason-todd-hush.png",
+            "image": "data/powers/img/jason-todd-hush.webp",
             "name": {
                 "fr": "JASON TODD",
                 "en": "JASON TODD"
@@ -1626,7 +1626,7 @@
   		{
             "id": "jervis-thetch",
             "origins": "arkham-asylum",
-            "image": "data/powers/img/jervis-thetch.png",
+            "image": "data/powers/img/jervis-thetch.webp",
             "name": {
                 "fr": "JERVIS TETCH",
                 "en": "JERVIS TETCH"
@@ -1656,7 +1656,7 @@
  		{
             "id": "joker",
             "origins": "corebox",
-            "image": "data/powers/img/joker.png",
+            "image": "data/powers/img/joker.webp",
             "name": {
                 "fr": "THE JOKER",
                 "en": "THE JOKER"
@@ -1684,7 +1684,7 @@
 										"fr": "PION VENIN DU JOKER",
 										"en": "JOKER VENOM TOKEN"
 										},
-									"image": ["data/powers/img/joker-venom.png"]
+									"image": ["data/powers/img/joker-venom.webp"]
 								}					
 							}
 						},
@@ -1707,7 +1707,7 @@
   		{
             "id": "joker-mr-joe",
             "origins": "corebox",
-            "image": "data/powers/img/joker-mr-joe.png",
+            "image": "data/powers/img/joker-mr-joe.webp",
             "name": {
                 "fr": "The JOKER",
                 "en": "The JOKER"
@@ -1753,7 +1753,7 @@
   		{
             "id": "killer-croc-hush",
             "origins": "corebox",
-            "image": "data/powers/img/killer-croc-hush.png",
+            "image": "data/powers/img/killer-croc-hush.webp",
             "name": {
                 "fr": "KILLER CROC",
                 "en": "KILLER CROC"
@@ -1783,7 +1783,7 @@
   		{
             "id": "killer-croc",
             "origins": "corebox",
-            "image": "data/powers/img/killer-croc.png",
+            "image": "data/powers/img/killer-croc.webp",
             "name": {
                 "fr": "KILLER CROC",
                 "en": "KILLER CROC"
@@ -1813,7 +1813,7 @@
   		{
             "id": "killer-moth",
             "origins": "corebox",
-            "image": "data/powers/img/killer-moth.png",
+            "image": "data/powers/img/killer-moth.webp",
             "name": {
                 "fr": "KILLER MOTH",
                 "en": "KILLER MOTH"
@@ -1855,7 +1855,7 @@
   		{
             "id": "manbat",
             "origins": "corebox",
-            "image": "data/powers/img/manbat.png",
+            "image": "data/powers/img/manbat.webp",
             "name": {
                 "fr": "MAN-BAT",
                 "en": "MAN-BAT"
@@ -1897,7 +1897,7 @@
   		{
             "id": "mr-freeze",
             "origins": "corebox",
-            "image": "data/powers/img/mr-freeze.png",
+            "image": "data/powers/img/mr-freeze.webp",
             "name": {
                 "fr": "Mr. FREEZE",
                 "en": "Mr. FREEZE"
@@ -1939,7 +1939,7 @@
   		{
             "id": "mr-bloom",
             "origins": "corebox",
-            "image": "data/powers/img/mr-bloom.png",
+            "image": "data/powers/img/mr-bloom.webp",
             "name": {
                 "fr": "Mr. BLOOM",
                 "en": "Mr. BLOOM"
@@ -1969,7 +1969,7 @@
 		{
             "id": "orphan-david-cain",
             "origins": "corebox",
-            "image": "data/powers/img/orphan-david-cain.png",
+            "image": "data/powers/img/orphan-david-cain.webp",
             "name": {
                 "fr": "ORPHAN",
                 "en": "ORPHAN"
@@ -2003,7 +2003,7 @@
   		{
             "id": "penguin",
             "origins": "corebox",
-            "image": "data/powers/img/penguin.png",
+            "image": "data/powers/img/penguin.webp",
             "name": {
                 "fr": "The PENGUIN",
                 "en": "The PENGUIN"
@@ -2045,7 +2045,7 @@
   		{
             "id": "poison-ivy",
             "origins": "corebox",
-            "image": "data/powers/img/poison-ivy.png",
+            "image": "data/powers/img/poison-ivy.webp",
             "name": {
                 "fr": "POISON IVY",
                 "en": "POISON IVY"
@@ -2075,7 +2075,7 @@
   		{
             "id": "prof-pyg",
             "origins": "arkham-asylum",
-            "image": "data/powers/img/prof-pyg.png",
+            "image": "data/powers/img/prof-pyg.webp",
             "name": {
                 "fr": "Prof. PYG",
                 "en": "Prof. PYG"
@@ -2103,7 +2103,7 @@
 										"fr": "PION OPÉRATION INHUMAINE",
 										"en": "INHUMAN EXPERIMENT TOKEN"
 										},
-									"image": ["data/powers/img/inhuman-experiment.png"]
+									"image": ["data/powers/img/inhuman-experiment.webp"]
 								}					
 							}
 						}
@@ -2114,7 +2114,7 @@
   		{
             "id": "rasalghul",
             "origins": "corebox",
-            "image": "data/powers/img/rasalghul.png",
+            "image": "data/powers/img/rasalghul.webp",
             "name": {
                 "fr": "RA’S AL GHUL",
                 "en": "RA’S AL GHUL"
@@ -2148,7 +2148,7 @@
   		{
             "id": "ratcatcher",
             "origins": "corebox",
-            "image": "data/powers/img/ratcatcher.png",
+            "image": "data/powers/img/ratcatcher.webp",
             "name": {
                 "fr": "RATCATCHER",
                 "en": "RATCATCHER"
@@ -2176,7 +2176,7 @@
 										"fr": "PION NUÉE DE RAT (4 PIONS)",
 										"en": "RAT SWARM TOKENS (4 TOKENS)"
 										},
-									"image": ["data/powers/img/ratswarm.png","data/powers/img/ratswarm.png","data/powers/img/ratswarm.png","data/powers/img/ratswarm.png"]
+									"image": ["data/powers/img/ratswarm.webp","data/powers/img/ratswarm.webp","data/powers/img/ratswarm.webp","data/powers/img/ratswarm.webp"]
 								}					
 							}
 						}
@@ -2187,7 +2187,7 @@
   		{
             "id": "red-hood",
             "origins": "corebox",
-            "image": "data/powers/img/red-hood.png",
+            "image": "data/powers/img/red-hood.webp",
             "name": {
                 "fr": "RED HOOD",
                 "en": "RED HOOD"
@@ -2217,7 +2217,7 @@
   		{
             "id": "scarecrow",
             "origins": "corebox",
-            "image": "data/powers/img/scarecrow.png",
+            "image": "data/powers/img/scarecrow.webp",
             "name": {
                 "fr": "SCARECROW",
                 "en": "SCARECROW"
@@ -2245,7 +2245,7 @@
 										"fr": "PION GAZ PHOBIQUE",
 										"en": "FEAR TOXIN TOKEN"
 										},
-									"image": ["data/powers/img/fear-toxin.png"]
+									"image": ["data/powers/img/fear-toxin.webp"]
 								}					
 							}
 						}
@@ -2256,7 +2256,7 @@
   		{
             "id": "scarecrow-finch",
             "origins": "corebox",
-            "image": "data/powers/img/scarecrow-finch.png",
+            "image": "data/powers/img/scarecrow-finch.webp",
             "name": {
                 "fr": "SCARECROW",
                 "en": "SCARECROW"
@@ -2284,7 +2284,7 @@
 										"fr": "PION GAZ PHOBIQUE",
 										"en": "FEAR TOXIN TOKEN"
 										},
-									"image": ["data/powers/img/fear-toxin.png"]
+									"image": ["data/powers/img/fear-toxin.webp"]
 								}					
 							}
 						}
@@ -2295,7 +2295,7 @@
   		{
             "id": "solomon-grundy",
             "origins": "corebox",
-            "image": "data/powers/img/solomon-grundy.png",
+            "image": "data/powers/img/solomon-grundy.webp",
             "name": {
                 "fr": "SOLOMON GRUNDY",
                 "en": "SOLOMON GRUNDY"
@@ -2337,7 +2337,7 @@
   		{
             "id": "talon",
             "origins": "corebox",
-            "image": "data/powers/img/talon.png",
+            "image": "data/powers/img/talon.webp",
             "name": {
                 "fr": "TALON",
                 "en": "TALON"
@@ -2379,7 +2379,7 @@
   		{
             "id": "riddler",
             "origins": "corebox",
-            "image": "data/powers/img/riddler.png",
+            "image": "data/powers/img/riddler.webp",
             "name": {
                 "fr": "The RIDDLER",
                 "en": "The RIDDLER"
@@ -2409,7 +2409,7 @@
   		{
             "id": "riddler-year0",
             "origins": "corebox",
-            "image": "data/powers/img/riddler-year0.png",
+            "image": "data/powers/img/riddler-year0.webp",
             "name": {
                 "fr": "The RIDDLER",
                 "en": "The RIDDLER"
@@ -2439,7 +2439,7 @@
   		{
             "id": "tusk",
             "origins": "corebox",
-            "image": "data/powers/img/tusk.png",
+            "image": "data/powers/img/tusk.webp",
             "name": {
                 "fr": "TUSK",
                 "en": "TUSK"
@@ -2469,7 +2469,7 @@
   		{
             "id": "two-face-heads",
             "origins": "corebox",
-            "image": "data/powers/img/two-face-heads.png",
+            "image": "data/powers/img/two-face-heads.webp",
             "name": {
                 "fr": "TWO-FACE",
                 "en": "TWO-FACE"
@@ -2503,7 +2503,7 @@
   		{
             "id": "two-face-tails",
             "origins": "corebox",
-            "image": "data/powers/img/two-face-tails.png",
+            "image": "data/powers/img/two-face-tails.webp",
             "name": {
                 "fr": "TWO-FACE",
                 "en": "TWO-FACE"
@@ -2537,7 +2537,7 @@
   		{
             "id": "wrath",
             "origins": "corebox",
-            "image": "data/powers/img/wrath.png",
+            "image": "data/powers/img/wrath.webp",
             "name": {
                 "fr": "WRATH",
                 "en": "WRATH"
@@ -2567,7 +2567,7 @@
   		{
             "id": "zsasz",
             "origins": "arkham-asylum",
-            "image": "data/powers/img/zsasz.png",
+            "image": "data/powers/img/zsasz.webp",
             "name": {
                 "fr": "ZSASZ",
                 "en": "ZSASZ"
@@ -2609,7 +2609,7 @@
   		{
             "id": "heretic",
             "origins": "league-of-assassins",
-            "image": "data/powers/img/heretic.png",
+            "image": "data/powers/img/heretic.webp",
             "name": {
                 "fr": "THE HERETIC",
                 "en": "THE HERETIC"
@@ -2651,7 +2651,7 @@
   		{
             "id": "lady-shiva",
             "origins": "league-of-assassins",
-            "image": "data/powers/img/lady-shiva.png",
+            "image": "data/powers/img/lady-shiva.webp",
             "name": {
                 "fr": "LADY SHIVA",
                 "en": "LADY SHIVA"
@@ -2681,7 +2681,7 @@
   		{
             "id": "rasalghul-demons-head",
             "origins": "league-of-assassins",
-            "image": "data/powers/img/rasalghul-demons-head.png",
+            "image": "data/powers/img/rasalghul-demons-head.webp",
             "name": {
                 "fr": "RA’S AL GHUL",
                 "en": "RA’S AL GHUL"
@@ -2715,7 +2715,7 @@
   		{
             "id": "taliaalghul",
             "origins": "league-of-assassins",
-            "image": "data/powers/img/taliaalghul.png",
+            "image": "data/powers/img/taliaalghul.webp",
             "name": {
                 "fr": "TALIA AL GHUL",
                 "en": "TALIA AL GHUL"
@@ -2745,7 +2745,7 @@
   		{
             "id": "amanda-waller",
             "origins": "suicide-squad",
-            "image": "data/powers/img/amanda-waller.png",
+            "image": "data/powers/img/amanda-waller.webp",
             "name": {
                 "fr": "AMANDA WALLER",
                 "en": "AMANDA WALLER"
@@ -2775,7 +2775,7 @@
   		{
             "id": "black-manta",
             "origins": "suicide-squad",
-            "image": "data/powers/img/black-manta.png",
+            "image": "data/powers/img/black-manta.webp",
             "name": {
                 "fr": "BLACK MANTA",
                 "en": "BLACK MANTA"
@@ -2817,7 +2817,7 @@
 		{
             "id": "bronze-tiger",
             "origins": "suicide-squad",
-            "image": "data/powers/img/bronze-tiger.png",
+            "image": "data/powers/img/bronze-tiger.webp",
             "name": {
                 "fr": "BRONZE TIGER",
                 "en": "BRONZE TIGER"
@@ -2847,7 +2847,7 @@
   		{
             "id": "captain-boomerang",
             "origins": "suicide-squad",
-            "image": "data/powers/img/captain-boomerang.png",
+            "image": "data/powers/img/captain-boomerang.webp",
             "name": {
                 "fr": "CAPTAIN BOOMERANG",
                 "en": "CAPTAIN BOOMERANG"
@@ -2889,7 +2889,7 @@
   		{
             "id": "deadshot-suicide-squad",
             "origins": "suicide-squad",
-            "image": "data/powers/img/deadshot-suicide-squad.png",
+            "image": "data/powers/img/deadshot-suicide-squad.webp",
             "name": {
                 "fr": "DEADSHOT",
                 "en": "DEADSHOT"
@@ -2919,7 +2919,7 @@
   		{
             "id": "deathstroke-suicide-squad",
             "origins": "suicide-squad",
-            "image": "data/powers/img/deathstroke-suicide-squad.png",
+            "image": "data/powers/img/deathstroke-suicide-squad.webp",
             "name": {
                 "fr": "DEATHSTROKE",
                 "en": "DEATHSTROKE"
@@ -2949,7 +2949,7 @@
   		{
             "id": "eldiablo",
             "origins": "suicide-squad",
-            "image": "data/powers/img/eldiablo.png",
+            "image": "data/powers/img/eldiablo.webp",
             "name": {
                 "fr": "EL DIABLO",
                 "en": "EL DIABLO"
@@ -2991,7 +2991,7 @@
   		{
             "id": "duela-dent",
             "origins": "suicide-squad",
-            "image": "data/powers/img/duela-dent.png",
+            "image": "data/powers/img/duela-dent.webp",
             "name": {
                 "fr": "DUELA DENT",
                 "en": "DUELA DENT"
@@ -3019,7 +3019,7 @@
 										"fr": "PION VENIN",
 										"en": "VENOM TOKEN"
 										},
-									"image": ["data/powers/img/venom.png"]
+									"image": ["data/powers/img/venom.webp"]
 								}					
 							}
 						}
@@ -3030,7 +3030,7 @@
   		{
             "id": "king-shark",
             "origins": "suicide-squad",
-            "image": "data/powers/img/king-shark.png",
+            "image": "data/powers/img/king-shark.webp",
             "name": {
                 "fr": "KING SHARK",
                 "en": "KING SHARK"
@@ -3072,7 +3072,7 @@
   		{
             "id": "rick-flag",
             "origins": "suicide-squad",
-            "image": "data/powers/img/rick-flag.png",
+            "image": "data/powers/img/rick-flag.webp",
             "name": {
                 "fr": "RICK FLAG",
                 "en": "RICK FLAG"
@@ -3102,7 +3102,7 @@
 	{
             "id": "red-hood-new52",
             "origins": "red-hood-new52",
-            "image": "data/powers/img/red-hood-new52.png",
+            "image": "data/powers/img/red-hood-new52.webp",
             "name": {
                 "fr": "RED HOOD",
                 "en": "RED HOOD"
@@ -3136,7 +3136,7 @@
 	{
             "id": "batman-beyond",
             "origins": "batman-beyond",
-            "image": "data/powers/img/batman-beyond.png",
+            "image": "data/powers/img/batman-beyond.webp",
             "name": {
                 "fr": "BATMAN BEYOND",
                 "en": "BATMAN BEYOND"
@@ -3166,7 +3166,7 @@
 	{
             "id": "batman-new-52",
             "origins": "batman-new-52",
-            "image": "data/powers/img/batman-new-52.png",
+            "image": "data/powers/img/batman-new-52.webp",
             "name": {
                 "fr": "BATMAN",
                 "en": "BATMAN"

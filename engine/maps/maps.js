@@ -722,7 +722,7 @@ var Maps = {
                     "</path>";
             var imgX = zone.centers.length ? _applyRotate(true, zone.centers[0]) + svgWidth/150.0 : ((minX + maxX) / 2.0);
             var imgY = zone.centers.length ? _applyRotate(false, zone.centers[0]) + svgWidth/500.0 : ((minY + maxY) / 2.0);
-            code += "<image xlink:href='resources/img/dice_yellow.png' class='map-map-upper-bonus' x='" + imgX + "' y='" + imgY + "' width='" + (svgWidth * 0.02) + "'/>"
+            code += "<image xlink:href='resources/img/dice_yellow.webp' class='map-map-upper-bonus' x='" + imgX + "' y='" + imgY + "' width='" + (svgWidth * 0.02) + "'/>"
 
             // Display level around centers
             for (var i=0; i < zone.centers.length; i++)

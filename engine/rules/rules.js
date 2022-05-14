@@ -273,7 +273,7 @@ var Rules = {
 
                     var guessRatioY = (index / pageContent.length) * 0.8 + 0.1;
 
-                    if (!pageHasResults) results += "<li><a href='#' onclick='Rules._endPageSearch(this, arguments[0], " + (i+1) + ")'><img src=\"data/rules/books/" + Rules._rules[Rules._currentSlide].id + "/" + Language + "/thumbnails/" + (i+1) + ".jpg?version=" + Version + "\"/><br/>Page " + (i+1) + "</a><ul>";
+                    if (!pageHasResults) results += "<li><a href='#' onclick='Rules._endPageSearch(this, arguments[0], " + (i+1) + ")'><img src=\"data/rules/books/" + Rules._rules[Rules._currentSlide].id + "/" + Language + "/thumbnails/" + (i+1) + ".webp?version=" + Version + "\"/><br/>Page " + (i+1) + "</a><ul>";
                     results += "<li>"
                                     + "<a href='#rules' onclick='Rules._endSearch(" + (i+1) +", 0, " + guessRatioY + ")'>"
                                         + prefix + textContent[i].substr(snippetStart, snippetEnd - snippetStart).replace(foundExact, '<em>' + foundExact + '</em>') + suffix
@@ -383,8 +383,8 @@ var Rules = {
         for (var i = 0; i <= size; i+=2)
         {
             s += "<div>"
-            if (i > 0) s += "<img" + LazyImage + " data-page='" + i + "' src='" + url + "/thumbnails/" + i + ".jpg?version=" + Version + "'/>"
-            if (i < size) s += "<img" + LazyImage + " data-page='" + (i+1) + "' src='" + url + "/thumbnails/" + (i+1) + ".jpg?version=" + Version + "'/>"
+            if (i > 0) s += "<img" + LazyImage + " data-page='" + i + "' src='" + url + "/thumbnails/" + i + ".webp?version=" + Version + "'/>"
+            if (i < size) s += "<img" + LazyImage + " data-page='" + (i+1) + "' src='" + url + "/thumbnails/" + (i+1) + ".webp?version=" + Version + "'/>"
             s += "</div>"
         }
         s += "</div>"

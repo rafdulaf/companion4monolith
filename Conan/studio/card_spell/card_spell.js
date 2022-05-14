@@ -38,7 +38,7 @@ var CardSpell = mergeObject(StudioItem, {
         {
             for (var i in cards)
             {
-                html += "<div id=\"spell-back-" + i + "\"  class='printoverflow back invisible'><img src=\"studio/card_spell/img/back.png?version=" + Version + "\"/></div>"
+                html += "<div id=\"spell-back-" + i + "\"  class='printoverflow back invisible'><img src=\"studio/card_spell/img/back.webp?version=" + Version + "\"/></div>"
             }
         }
 
@@ -48,8 +48,8 @@ var CardSpell = mergeObject(StudioItem, {
     _cardCode: function(card) {
         var code = "<div class=\"spell card" + (card.imageEffect !== false ? " effect" : "") + "\">"
                 + "<picture class=\"background\">"
-                    + "<source media=\"print\" srcset=\"studio/card_spell/img/background_hd.png?version=" + Version + "\"/>"
-                    + "<img src=\"studio/card_spell/img/background.png?version=" + Version + "\"/>"
+                    + "<source media=\"print\" srcset=\"studio/card_spell/img/background_hd.webp?version=" + Version + "\"/>"
+                    + "<img src=\"studio/card_spell/img/background.webp?version=" + Version + "\"/>"
                 + "</picture>";
 
         code += "<div class=\"name" + (card.longName === true ? " long" : "") + "\">" + card.name + "</div>";
@@ -60,20 +60,20 @@ var CardSpell = mergeObject(StudioItem, {
         code += "<div class=\"cost" + (hasSaturation ? "" : " noSaturation") + (hasCost ? "" : " noCost") + "\">" + (hasCost ? card.cost : "X") + "</div>";
         if (hasSaturation)
         {
-            code += "<div class='cost-and-saturation'><img src=\"studio/card_spell/img/slash2.png?version=" + Version + "\"/></div>";
+            code += "<div class='cost-and-saturation'><img src=\"studio/card_spell/img/slash2.webp?version=" + Version + "\"/></div>";
             code += "<div class=\"saturation\">" + card.saturation + "</div>";
         }
 
         if (card.explosion)
         {
-            code += "<div class='explosion" + (card.reaction ? " and-other" : "") + "'><img src=\"studio/card_spell/img/explosion.png?version=" + Version + "\"/></div>";
+            code += "<div class='explosion" + (card.reaction ? " and-other" : "") + "'><img src=\"studio/card_spell/img/explosion.webp?version=" + Version + "\"/></div>";
         }
         if (card.reaction)
         {
-            code += "<div class='reaction" + (card.explosion ? " and-other" : "") + "'><img src=\"studio/card_spell/img/reaction.png?version=" + Version + "\"/></div>";
+            code += "<div class='reaction" + (card.explosion ? " and-other" : "") + "'><img src=\"studio/card_spell/img/reaction.webp?version=" + Version + "\"/></div>";
         }
 
-        code += "<div class='imagebg'><img src=\"studio/card_spell/img/image-bg.png?version=" + Version + "\"/></div>"
+        code += "<div class='imagebg'><img src=\"studio/card_spell/img/image-bg.webp?version=" + Version + "\"/></div>"
         if (card.image)
         {
             code += "<div class='image'><img " + LazyImage + " src='" + card.image + "' style=\"left: " + card.imagelocation.x + "%; top: " + card.imagelocation.y + "%; width: " + card.imagezoom + "%; transform: translate(-50%, -50%) rotate(" + card.imagerotation + "deg)\"/></div>"

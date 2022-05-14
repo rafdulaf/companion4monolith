@@ -2,30 +2,30 @@
     "types": [
         {
             "id": "attack",
-            "image": "data/skills/img/attack/attack.png"
+            "image": "data/skills/img/attack/attack.webp"
         }, {
             "id": "melee",
-            "image": "data/skills/img/attack/melee.png",
+            "image": "data/skills/img/attack/melee.webp",
             "location": 1
         }, {
             "id": "range",
-            "image": "data/skills/img/attack/range.png",
+            "image": "data/skills/img/attack/range.webp",
             "location": 2
         }, {
             "id": "manipulation",
-            "image": "data/skills/img/attack/manipulation.png",
+            "image": "data/skills/img/attack/manipulation.webp",
             "location": 3
         }, {
             "id": "thought",
-            "image": "data/skills/img/attack/thought.png",
+            "image": "data/skills/img/attack/thought.webp",
             "location": 4
         }, {
             "id": "defense",
-            "image": "data/skills/img/attack/defense.png",
+            "image": "data/skills/img/attack/defense.webp",
             "location": 5
         }, {
             "id": "movement",
-            "image": "data/skills/img/attack/movement.png",
+            "image": "data/skills/img/attack/movement.webp",
             "location": 7
         }, {
             "id": "miscellaneous"
@@ -41,219 +41,219 @@
         {
             "id": "sneak",
             "type": "attack",
-            "image": "data/skills/img/attack/sneak_attack.png"
+            "image": "data/skills/img/attack/sneak_attack.webp"
         }, {
             "id": "poison",
             "type": "attack",
-            "image": "data/skills/img/attack/poison.png"
+            "image": "data/skills/img/attack/poison.webp"
         }, {
             "id": "electricity",
             "type": "attack",
-            "image": "data/skills/img/attack/electricity.png"
+            "image": "data/skills/img/attack/electricity.webp"
         }, {
             "id": "reach",
             "type": "melee",
-            "image": "data/skills/img/melee/reach.png"
+            "image": "data/skills/img/melee/reach.webp"
         }, {
             "id": "martial_arts",
             "type": "melee",
-            "image": "data/skills/img/melee/martial_arts.png"
+            "image": "data/skills/img/melee/martial_arts.webp"
         }, {
             "id": "counterattack",
             "type": "melee",
-            "image": "data/skills/img/melee/counterattack.png"
+            "image": "data/skills/img/melee/counterattack.webp"
         }, {
             "id": "circular_strike",
             "type": "melee",
-            "image": "data/skills/img/melee/circular_strike.png"
+            "image": "data/skills/img/melee/circular_strike.webp"
         }, {
             "id": "combo",
             "type": "melee",
-            "image": "data/skills/img/melee/combo.png"
+            "image": "data/skills/img/melee/combo.webp"
         }, {
             "id": "shackle",
             "type": "melee",
-            "image": "data/skills/img/melee/shackle.png"
+            "image": "data/skills/img/melee/shackle.webp"
         }, {
             "id": "berserk",
             "type": "melee",
-            "image": "data/skills/img/melee/berserk.png"
+            "image": "data/skills/img/melee/berserk.webp"
         }, {
             "id": "pointblank",
             "type": "range",
-            "image": "data/skills/img/range/point_blank.png"
+            "image": "data/skills/img/range/point_blank.webp"
         }, {
             "id": "burst",
             "type": "range",
-            "image": "data/skills/img/range/burst.png"
+            "image": "data/skills/img/range/burst.webp"
         }, {
             "id": "retaliation",
             "type": "range",
-            "image": "data/skills/img/range/retaliation.png"
+            "image": "data/skills/img/range/retaliation.webp"
         }, {
             "id": "marksman",
             "type": "range",
-            "image": "data/skills/img/range/marksman.png"
+            "image": "data/skills/img/range/marksman.webp"
         }, {
             "id": "munitions_specialist",
             "type": "manipulation",
-            "image": "data/skills/img/manipulation/munitions_specialist.png"
+            "image": "data/skills/img/manipulation/munitions_specialist.webp"
         }, {
             "id": "attraction",
             "type": "manipulation",
-            "image": "data/skills/img/manipulation/attraction.png"
+            "image": "data/skills/img/manipulation/attraction.webp"
         }, {
             "id": "cry",
             "type": "manipulation",
-            "image": "data/skills/img/manipulation/cry.png"
+            "image": "data/skills/img/manipulation/cry.webp"
         }, {
             "id": "lock_piking",
             "type": "manipulation",
-            "image": "data/skills/img/manipulation/lock_piking.png"
+            "image": "data/skills/img/manipulation/lock_piking.webp"
         }, {
             "id": "grenade",
             "type": "manipulation",
-            "image": "data/skills/img/manipulation/grenade.png"
+            "image": "data/skills/img/manipulation/grenade.webp"
         }, {
             "id": "blast",
             "type": "manipulation",
-            "image": "data/skills/img/manipulation/blast.png"
+            "image": "data/skills/img/manipulation/blast.webp"
         }, {
             "id": "elite_command",
             "type": "thought",
-            "image": "data/skills/img/thought/elite_command.png"
+            "image": "data/skills/img/thought/elite_command.webp"
         }, {
             "id": "henchman_command",
             "type": "thought",
-            "image": "data/skills/img/thought/henchman_command.png"
+            "image": "data/skills/img/thought/henchman_command.webp"
         }, {
             "id": "investigation",
             "type": "thought",
-            "image": "data/skills/img/thought/investigation.png"
+            "image": "data/skills/img/thought/investigation.webp"
         }, {
             "id": "hacking",
             "type": "thought",
-            "image": "data/skills/img/thought/hacking.png"
+            "image": "data/skills/img/thought/hacking.webp"
         }, {
             "id": "tactician",
             "type": "thought",
-            "image": "data/skills/img/thought/tactician.png"
+            "image": "data/skills/img/thought/tactician.webp"
         }, {
             "id": "impenetrable_defense",
             "type": "defense",
-            "image": "data/skills/img/defense/impenetrable_defense.png"
+            "image": "data/skills/img/defense/impenetrable_defense.webp"
         }, {
             "id": "body_guard",
             "type": "defense",
-            "image": "data/skills/img/defense/body_guard.png"
+            "image": "data/skills/img/defense/body_guard.webp"
         }, {
             "id": "untouchable",
             "type": "defense",
-            "image": "data/skills/img/defense/untouchable.png"
+            "image": "data/skills/img/defense/untouchable.webp"
         }, {
             "id": "protected",
             "type": "defense",
-            "image": "data/skills/img/defense/protected.png"
+            "image": "data/skills/img/defense/protected.webp"
         }, {
             "id": "wall_breaker",
             "type": "movement",
-            "image": "data/skills/img/movement/wall_breaker.png"
+            "image": "data/skills/img/movement/wall_breaker.webp"
         }, {
             "id": "immobilization",
             "type": "movement",
-            "image": "data/skills/img/movement/immobilization.png"
+            "image": "data/skills/img/movement/immobilization.webp"
         }, {
             "id": "elusive",
             "type": "movement",
-            "image": "data/skills/img/movement/elusive.png"
+            "image": "data/skills/img/movement/elusive.webp"
         }, {
             "id": "mobility",
             "type": "movement",
-            "image": "data/skills/img/movement/mobility.png"
+            "image": "data/skills/img/movement/mobility.webp"
         }, {
             "id": "parkour",
             "type": "movement",
-            "image": "data/skills/img/movement/parkour.png"
+            "image": "data/skills/img/movement/parkour.webp"
         }, {
             "id": "ambidextry",
             "type": "miscellaneous",
-            "image": "data/skills/img/miscellaneous/ambidextry.png"
+            "image": "data/skills/img/miscellaneous/ambidextry.webp"
         }, {
             "id": "imaginary_friend",
             "type": "miscellaneous",
-            "image": "data/skills/img/miscellaneous/imaginary_friend.png"
+            "image": "data/skills/img/miscellaneous/imaginary_friend.webp"
         }, {
             "id": "luck",
             "type": "miscellaneous",
-            "image": "data/skills/img/miscellaneous/luck.png"
+            "image": "data/skills/img/miscellaneous/luck.webp"
         }, {
             "id": "pushing_limits",
             "type": "miscellaneous",
-            "image": "data/skills/img/miscellaneous/pushing_limits.png"
+            "image": "data/skills/img/miscellaneous/pushing_limits.webp"
         }, {
             "id": "horror",
             "type": "miscellaneous",
-            "image": "data/skills/img/miscellaneous/horror.png"
+            "image": "data/skills/img/miscellaneous/horror.webp"
         }, {
             "id": "misfortune",
             "type": "miscellaneous",
-            "image": "data/skills/img/miscellaneous/misfortune.png"
+            "image": "data/skills/img/miscellaneous/misfortune.webp"
         }, {
             "id": "nerves_steel",
             "type": "miscellaneous",
-            "image": "data/skills/img/miscellaneous/nerves_steel.png"
+            "image": "data/skills/img/miscellaneous/nerves_steel.webp"
         }, {
             "id": "regeneration",
             "type": "miscellaneous",
-            "image": "data/skills/img/miscellaneous/regeneration.png"
+            "image": "data/skills/img/miscellaneous/regeneration.webp"
         }, {
             "id": "sacrifice",
             "type": "miscellaneous",
-            "image": "data/skills/img/miscellaneous/sacrifice.png"
+            "image": "data/skills/img/miscellaneous/sacrifice.webp"
         }, {
             "id": "support",
             "type": "miscellaneous",
-            "image": "data/skills/img/miscellaneous/support.png"
+            "image": "data/skills/img/miscellaneous/support.webp"
         }, {
             "id": "flame",
             "type": "area_modifier",
-            "image": "data/skills/img/area_modifier/flame.png"
+            "image": "data/skills/img/area_modifier/flame.webp"
         }, {
             "id": "toxic_gas",
             "type": "area_modifier",
-            "image": "data/skills/img/area_modifier/toxic_gas.png"
+            "image": "data/skills/img/area_modifier/toxic_gas.webp"
         }, {
             "id": "smoke_grenade",
             "type": "area_modifier",
-            "image": "data/skills/img/area_modifier/smoke_grenade.png"
+            "image": "data/skills/img/area_modifier/smoke_grenade.webp"
         }, {
             "id": "frost",
             "type": "area_modifier",
-            "image": "data/skills/img/area_modifier/frost.png"
+            "image": "data/skills/img/area_modifier/frost.webp"
         }, {
             "id": "moral_code",
             "type": "traits",
-            "image": "data/skills/img/traits/moral_code.png"
+            "image": "data/skills/img/traits/moral_code.webp"
         }, {
             "id": "gas_immunity",
             "type": "traits",
-            "image": "data/skills/img/traits/gas_immunity.png"
+            "image": "data/skills/img/traits/gas_immunity.webp"
         }, {
             "id": "harmless",
             "type": "traits",
-            "image": "data/skills/img/traits/harmless.png"
+            "image": "data/skills/img/traits/harmless.webp"
         }, {
             "id": "reduced_mobility",
             "type": "traits",
-            "image": "data/skills/img/traits/reduced_mobility.png"
+            "image": "data/skills/img/traits/reduced_mobility.webp"
         }, {
             "id": "fly",
             "type": "traits",
-            "image": "data/skills/img/traits/fly.png"
+            "image": "data/skills/img/traits/fly.webp"
         }, {
             "id": "multiple_personalities",
             "type": "traits",
-            "image": "data/skills/img/traits/multiple_personalities.png"
+            "image": "data/skills/img/traits/multiple_personalities.webp"
         }
     ]
 }

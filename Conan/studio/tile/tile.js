@@ -49,7 +49,7 @@ var Tile = mergeObject(StudioItem, {
             for (var i in tiles)
             {
                 html += "<div id=\"tile-back-" + i + "\"  class='printoverflow back invisible'>"
-                            + "<img class=\"blood\" src=\"studio/tile/img/blood.png?version=" + Version + "\"/>"
+                            + "<img class=\"blood\" src=\"studio/tile/img/blood.webp?version=" + Version + "\"/>"
                             + Tile._cardCode(tiles[i], !withEditLink, false, printPurpose) 
                         + "</div>"
                 html += "<div id=\"tile-back2-" + i + "\"  class='printoverflow back invisible'>"
@@ -67,8 +67,8 @@ var Tile = mergeObject(StudioItem, {
         if (tile.color != 'none')
         {
             code += "<picture class=\"background\">"
-                        + "<source media=\"print\" srcset=\"studio/tile/img/background_" + tile.color + "_hd.png?version=" + Version + "\"/>"
-                        + "<img src=\"studio/tile/img/background_" + tile.color + ".png?version=" + Version + "\"/>"
+                        + "<source media=\"print\" srcset=\"studio/tile/img/background_" + tile.color + "_hd.webp?version=" + Version + "\"/>"
+                        + "<img src=\"studio/tile/img/background_" + tile.color + ".webp?version=" + Version + "\"/>"
                     + "</picture>";
         }
 
@@ -84,7 +84,7 @@ var Tile = mergeObject(StudioItem, {
 
         if (tile.reinforcement || tile.reinforcement === "0")
         {
-            code += "<img class=\"background-reinforcement\" src=\"studio/tile/img/reinforcement.png?version=" + Version + "\"/>"
+            code += "<img class=\"background-reinforcement\" src=\"studio/tile/img/reinforcement.webp?version=" + Version + "\"/>"
                 + "<div class=\"reinforcement\">" + tile.reinforcement + "</div>";
         }
 
@@ -94,26 +94,26 @@ var Tile = mergeObject(StudioItem, {
             var nbDices = 1;
             
             var diceCode = ""
-            diceCode += "<img class='dice dice-1' src=\"studio/tile/img/dice_" + tile.dices[0] + ".png?version=" + Version + "\"/>";
+            diceCode += "<img class='dice dice-1' src=\"studio/tile/img/dice_" + tile.dices[0] + ".webp?version=" + Version + "\"/>";
             if (tile.dices[1] != "none")
             {
                 nbDices++;
-                diceCode += "<img class='dice dice-2' src=\"studio/tile/img/dice_" + tile.dices[1] + ".png?version=" + Version + "\"/>";
+                diceCode += "<img class='dice dice-2' src=\"studio/tile/img/dice_" + tile.dices[1] + ".webp?version=" + Version + "\"/>";
                 if (tile.dices[2] != "none")
                 {
                     nbDices++;
-                    diceCode += "<img class='dice dice-3' src=\"studio/tile/img/dice_" + tile.dices[2] + ".png?version=" + Version + "\"/>";
+                    diceCode += "<img class='dice dice-3' src=\"studio/tile/img/dice_" + tile.dices[2] + ".webp?version=" + Version + "\"/>";
                     if (tile.dices[3] != "none")
                     {
                         nbDices++;
-                        diceCode += "<img class='dice dice-4' src=\"studio/tile/img/dice_" + tile.dices[3] + ".png?version=" + Version + "\"/>";
+                        diceCode += "<img class='dice dice-4' src=\"studio/tile/img/dice_" + tile.dices[3] + ".webp?version=" + Version + "\"/>";
                     }
                 }
             }
             
             code += "<div class=\"attack level" + level + "\">";
-            code += "<img class='dice-background' src=\"studio/tile/img/dice-background-" + nbDices + ".png?version=" + Version + "\"/>";
-            code += "<img class=\"attacktype\" src=\"studio/tile/img/" + tile.attacktype + ".png?version=" + Version + "\"/>";
+            code += "<img class='dice-background' src=\"studio/tile/img/dice-background-" + nbDices + ".webp?version=" + Version + "\"/>";
+            code += "<img class=\"attacktype\" src=\"studio/tile/img/" + tile.attacktype + ".webp?version=" + Version + "\"/>";
             code += diceCode;
             code += "</div>";
             level++;
@@ -122,7 +122,7 @@ var Tile = mergeObject(StudioItem, {
         if (tile.defense)
         {
                code += "<div class=\"defense level" + level + "\">"
-                    + "<img class=\"background-defense\" src=\"studio/tile/img/defense.png?version=" + Version + "\"/>"
+                    + "<img class=\"background-defense\" src=\"studio/tile/img/defense.webp?version=" + Version + "\"/>"
                     + "<div class=\"defense\">" + tile.defense + "</div>"
                     + "</div>";
                level++
@@ -131,7 +131,7 @@ var Tile = mergeObject(StudioItem, {
         if (tile.movement)
         {
                code += "<div class=\"movement level" + level + "\">"
-                    + "<img class=\"background-movement\" src=\"studio/tile/img/movement.png?version=" + Version + "\"/>"
+                    + "<img class=\"background-movement\" src=\"studio/tile/img/movement.webp?version=" + Version + "\"/>"
                     + "<div class=\"movement\">" + tile.movement + "</div>"
                     + "</div>";
                level++
@@ -142,7 +142,7 @@ var Tile = mergeObject(StudioItem, {
             if (level != 0)
             {
                 code += "<div class=\"skills-separator level" + level + "\">"
-                         + "<img class=\"background-separator\" src=\"studio/tile/img/separator.png?version=" + Version + "\"/>"
+                         + "<img class=\"background-separator\" src=\"studio/tile/img/separator.webp?version=" + Version + "\"/>"
                        + "</div>";
             }
 

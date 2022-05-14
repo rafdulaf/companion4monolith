@@ -20,7 +20,7 @@
             "forRange": true,
             "forEnergy": false,
 
-            "image": "data/spells/img/boris_rage.png",
+            "image": "data/spells/img/boris_rage.webp",
             "origins": ["corebox"]
         },
 
@@ -44,7 +44,7 @@
             "forRange": false,
             "forEnergy": false,
 
-            "image": "data/spells/img/borne_by_the_wind.png",
+            "image": "data/spells/img/borne_by_the_wind.webp",
             "origins": ["corebox"]
         },
 
@@ -68,7 +68,7 @@
             "forRange": false,
             "forEnergy": false,
 
-            "image": "data/spells/img/borne_by_the_wind.png",
+            "image": "data/spells/img/borne_by_the_wind.webp",
             "origins": ["campaignbook"]
         },
 
@@ -92,7 +92,7 @@
             "forRange": true,
             "forEnergy": true,
 
-            "image": "data/spells/img/energy_drain.png",
+            "image": "data/spells/img/energy_drain.webp",
             "origins": ["corebox"]
         },
 
@@ -116,7 +116,7 @@
             "forRange": true,
             "forEnergy": true,
 
-            "image": "data/spells/img/gift_of_life.png",
+            "image": "data/spells/img/gift_of_life.webp",
             "origins": ["corebox"]
         },
 
@@ -140,7 +140,7 @@
             "forRange": false,
             "forEnergy": false,
 
-            "image": "data/spells/img/kiss_of_death.png",
+            "image": "data/spells/img/kiss_of_death.webp",
             "origins": ["corebox"]
         },
 
@@ -164,7 +164,7 @@
             "forRange": true,
             "forEnergy": false,
 
-            "image": "data/spells/img/lightning_storm.png",
+            "image": "data/spells/img/lightning_storm.webp",
             "origins": ["corebox"]
         },
 
@@ -188,7 +188,7 @@
             "forRange": true,
             "forEnergy": true,
 
-            "image": "data/spells/img/magical_dizziness.png",
+            "image": "data/spells/img/magical_dizziness.webp",
             "origins": ["corebox"]
         },
 
@@ -212,7 +212,7 @@
             "forRange": true,
             "forEnergy": false,
 
-            "image": "data/spells/img/mind_control.png",
+            "image": "data/spells/img/mind_control.webp",
             "origins": ["corebox"]
         },
 
@@ -236,7 +236,7 @@
             "forRange": false,
             "forEnergy": false,
 
-            "image": "data/spells/img/mitras_halo.png",
+            "image": "data/spells/img/mitras_halo.webp",
             "origins": ["corebox"],
             
             "tokens": ["mitra-halo"]
@@ -262,7 +262,7 @@
             "forRange": false,
             "forEnergy": true,
 
-            "image": "data/spells/img/mitras_healing.png",
+            "image": "data/spells/img/mitras_healing.webp",
             "origins": ["corebox"]
         },
 
@@ -286,7 +286,7 @@
             "forRange": false,
             "forEnergy": false,
 
-            "image": "data/spells/img/pestilential_swarm.png",
+            "image": "data/spells/img/pestilential_swarm.webp",
             "origins": ["corebox"]
         },
 
@@ -310,7 +310,7 @@
             "forRange": true,
             "forEnergy": false,
 
-            "image": "data/spells/img/sets_bite.png",
+            "image": "data/spells/img/sets_bite.webp",
             "origins": ["corebox"]
         },
 
@@ -334,7 +334,7 @@
             "forRange": false,
             "forEnergy": false,
 
-            "image": "data/spells/img/sets_halo.png",
+            "image": "data/spells/img/sets_halo.webp",
             "origins": ["corebox"],
 
             "tokens": ["set-halo"]
@@ -360,7 +360,7 @@
             "forRange": false,
             "forEnergy": false,
 
-            "image": "data/spells/img/sets_halo.png",
+            "image": "data/spells/img/sets_halo.webp",
             "origins": ["campaignbook"],
 
             "tokens": ["set-halo"]
@@ -386,7 +386,7 @@
             "forRange": true,
             "forEnergy": false,
 
-            "image": "data/spells/img/sets_possession.png",
+            "image": "data/spells/img/sets_possession.webp",
             "origins": ["corebox"]
         },
 
@@ -410,7 +410,7 @@
             "forRange": true,
             "forEnergy": false,
 
-            "image": "data/spells/img/telekinesis.png",
+            "image": "data/spells/img/telekinesis.webp",
             "origins": ["corebox"]
         },
 
@@ -434,7 +434,7 @@
             "forRange": false,
             "forEnergy": false,
 
-            "image": "data/spells/img/teleportation.png",
+            "image": "data/spells/img/teleportation.webp",
             "origins": ["corebox"]
         },
 
@@ -458,7 +458,7 @@
             "forRange": false,
             "forEnergy": false,
 
-            "image": "data/spells/img/teleportation.png",
+            "image": "data/spells/img/teleportation.webp",
             "origins": ["stretchgoal"]
         },
 
@@ -482,7 +482,7 @@
             "forRange": true,
             "forEnergy": false,
 
-            "image": "data/spells/img/archer_of_acheron.png",
+            "image": "data/spells/img/archer_of_acheron.webp",
             "origins": ["stretchgoal"]
         },
 
@@ -506,7 +506,7 @@
             "forRange": true,
             "forEnergy": false,
 
-            "image": "data/spells/img/bad_luck.png",
+            "image": "data/spells/img/bad_luck.webp",
             "origins": ["stretchgoal"]
         },
 
@@ -530,7 +530,7 @@
             "forRange": true,
             "forEnergy": false,
 
-            "image": "data/spells/img/barrier_of_the_winds.png",
+            "image": "data/spells/img/barrier_of_the_winds.webp",
             "origins": ["stretchgoal"]
         },
 
@@ -554,7 +554,7 @@
             "forRange": false,
             "forEnergy": false,
 
-            "image": "data/spells/img/bels_caress.png",
+            "image": "data/spells/img/bels_caress.webp",
             "origins": ["stretchgoal"]
         },
 
@@ -578,7 +578,7 @@
             "forRange": true,
             "forEnergy": false,
 
-            "image": "data/spells/img/bels_hand.png",
+            "image": "data/spells/img/bels_hand.webp",
             "origins": ["stretchgoal"]
         },
 
@@ -602,7 +602,7 @@
             "forRange": true,
             "forEnergy": false,
 
-            "image": "data/spells/img/blessing_of_ibis.png",
+            "image": "data/spells/img/blessing_of_ibis.webp",
             "origins": ["stretchgoal"]
         },
 
@@ -626,7 +626,7 @@
             "forRange": true,
             "forEnergy": true,
 
-            "image": "data/spells/img/changing_destiny.png",
+            "image": "data/spells/img/changing_destiny.webp",
             "origins": ["stretchgoal"]
         },
 
@@ -650,7 +650,7 @@
             "forRange": true,
             "forEnergy": false,
 
-            "image": "data/spells/img/dagons_attack.png",
+            "image": "data/spells/img/dagons_attack.webp",
             "origins": ["stretchgoal"]
         },
 
@@ -698,7 +698,7 @@
             "forRange": true,
             "forEnergy": false,
 
-            "image": "data/spells/img/deceleration.png",
+            "image": "data/spells/img/deceleration.webp",
             "origins": ["stretchgoal"]
         },
 
@@ -722,7 +722,7 @@
             "forRange": true,
             "forEnergy": false,
 
-            "image": "data/spells/img/divine_charisma.png",
+            "image": "data/spells/img/divine_charisma.webp",
             "origins": ["stretchgoal"]
         },
 
@@ -746,7 +746,7 @@
             "forRange": true,
             "forEnergy": false,
 
-            "image": "data/spells/img/drying_earth.png",
+            "image": "data/spells/img/drying_earth.webp",
             "origins": ["stretchgoal"]
         },
 
@@ -770,7 +770,7 @@
             "forRange": true,
             "forEnergy": false,
 
-            "image": "data/spells/img/eagle_eye.png",
+            "image": "data/spells/img/eagle_eye.webp",
             "origins": ["stretchgoal"]
         },
 
@@ -794,7 +794,7 @@
             "forRange": true,
             "forEnergy": false,
 
-            "image": "data/spells/img/eel_skin.png",
+            "image": "data/spells/img/eel_skin.webp",
             "origins": ["stretchgoal"]
         },
 
@@ -818,7 +818,7 @@
             "forRange": true,
             "forEnergy": false,
 
-            "image": "data/spells/img/escape_route.png",
+            "image": "data/spells/img/escape_route.webp",
             "origins": ["stretchgoal"]
         },
 
@@ -842,7 +842,7 @@
             "forRange": true,
             "forEnergy": false,
 
-            "image": "data/spells/img/fleet_runner.png",
+            "image": "data/spells/img/fleet_runner.webp",
             "origins": ["stretchgoal"]
         },
 
@@ -866,7 +866,7 @@
             "forRange": true,
             "forEnergy": false,
 
-            "image": "data/spells/img/gullahs_strength.png",
+            "image": "data/spells/img/gullahs_strength.webp",
             "origins": ["stretchgoal"]
         },
 
@@ -914,7 +914,7 @@
             "forRange": true,
             "forEnergy": false,
 
-            "image": "data/spells/img/hand_of_death.png",
+            "image": "data/spells/img/hand_of_death.webp",
             "origins": ["stretchgoal"]
         },
 
@@ -962,7 +962,7 @@
             "forRange": true,
             "forEnergy": false,
 
-            "image": "data/spells/img/inversion.png",
+            "image": "data/spells/img/inversion.webp",
             "origins": ["stretchgoal"]
         },
 
@@ -986,7 +986,7 @@
             "forRange": true,
             "forEnergy": false,
 
-            "image": "data/spells/img/ishtars_gaze.png",
+            "image": "data/spells/img/ishtars_gaze.webp",
             "origins": ["stretchgoal"]
         },
 
@@ -1034,7 +1034,7 @@
             "forRange": true,
             "forEnergy": false,
 
-            "image": "data/spells/img/lethal_cloud.png",
+            "image": "data/spells/img/lethal_cloud.webp",
             "origins": ["stretchgoal"]
         },
 
@@ -1058,7 +1058,7 @@
             "forRange": true,
             "forEnergy": true,
 
-            "image": "data/spells/img/life_transfer.png",
+            "image": "data/spells/img/life_transfer.webp",
             "origins": ["stretchgoal"]
         },
 
@@ -1082,7 +1082,7 @@
             "forRange": true,
             "forEnergy": false,
 
-            "image": "data/spells/img/light_as_a_feather.png",
+            "image": "data/spells/img/light_as_a_feather.webp",
             "origins": ["stretchgoal"]
         },
 
@@ -1106,7 +1106,7 @@
             "forRange": true,
             "forEnergy": false,
 
-            "image": "data/spells/img/magic_block.png",
+            "image": "data/spells/img/magic_block.webp",
             "origins": ["stretchgoal"]
         },
 
@@ -1130,7 +1130,7 @@
             "forRange": false,
             "forEnergy": false,
 
-            "image": "data/spells/img/mystic_barrier.png",
+            "image": "data/spells/img/mystic_barrier.webp",
             "origins": ["stretchgoal"]
         },
 
@@ -1154,7 +1154,7 @@
             "forRange": false,
             "forEnergy": false,
 
-            "image": "data/spells/img/putrescence.png",
+            "image": "data/spells/img/putrescence.webp",
             "origins": ["stretchgoal"]
         },
 
@@ -1178,7 +1178,7 @@
             "forRange": true,
             "forEnergy": false,
 
-            "image": "data/spells/img/recall.png",
+            "image": "data/spells/img/recall.webp",
             "origins": ["stretchgoal"]
         },
 
@@ -1202,7 +1202,7 @@
             "forRange": false,
             "forEnergy": false,
 
-            "image": "data/spells/img/return_of_the_brave.png",
+            "image": "data/spells/img/return_of_the_brave.webp",
             "origins": ["stretchgoal"]
         },
 
@@ -1250,7 +1250,7 @@
             "forRange": true,
             "forEnergy": false,
 
-            "image": "data/spells/img/sets_illusion.png",
+            "image": "data/spells/img/sets_illusion.webp",
             "origins": ["stretchgoal"]
         },
 
@@ -1274,7 +1274,7 @@
             "forRange": true,
             "forEnergy": false,
 
-            "image": "data/spells/img/shapechanger.png",
+            "image": "data/spells/img/shapechanger.webp",
             "origins": ["stretchgoal"]
         },
 
@@ -1298,7 +1298,7 @@
             "forRange": true,
             "forEnergy": false,
 
-            "image": "data/spells/img/stone_skin.png",
+            "image": "data/spells/img/stone_skin.webp",
             "origins": ["stretchgoal"]
         },
 
@@ -1322,7 +1322,7 @@
             "forRange": true,
             "forEnergy": false,
 
-            "image": "data/spells/img/tears_of_dagon.png",
+            "image": "data/spells/img/tears_of_dagon.webp",
             "origins": ["stretchgoal"]
         },
 
@@ -1370,7 +1370,7 @@
             "forRange": true,
             "forEnergy": false,
 
-            "image": "data/spells/img/withering.png",
+            "image": "data/spells/img/withering.webp",
             "origins": ["stretchgoal"]
         },
 
@@ -1394,7 +1394,7 @@
             "forRange": false,
             "forEnergy": false,
 
-            "image": "data/spells/img/yajurs_awakening.png",
+            "image": "data/spells/img/yajurs_awakening.webp",
             "origins": ["stretchgoal"]
         },
 
@@ -1418,7 +1418,7 @@
             "forRange": false,
             "forEnergy": false,
 
-            "image": "data/spells/img/ymirs_rage.png",
+            "image": "data/spells/img/ymirs_rage.webp",
             "origins": ["stretchgoal"]
         },
 
@@ -1442,7 +1442,7 @@
             "forRange": true,
             "forEnergy": false,
 
-            "image": "data/spells/img/weight_of_the_years.png",
+            "image": "data/spells/img/weight_of_the_years.webp",
             "origins": ["nordheim"]
         },
 
@@ -1466,7 +1466,7 @@
             "forRange": true,
             "forEnergy": false,
 
-            "image": "data/spells/img/blaze.png",
+            "image": "data/spells/img/blaze.webp",
             "origins": ["khitai"]
         },
 
@@ -1490,7 +1490,7 @@
             "forRange": false,
             "forEnergy": false,
 
-            "image": "data/spells/img/mental_torture.png",
+            "image": "data/spells/img/mental_torture.webp",
             "origins": ["khitai"]
         },
 
@@ -1514,7 +1514,7 @@
             "forRange": false,
             "forEnergy": false,
 
-            "image": "data/spells/img/push_back.png",
+            "image": "data/spells/img/push_back.webp",
             "origins": ["khitai"]
         },
 
@@ -1538,7 +1538,7 @@
             "forRange": false,
             "forEnergy": false,
 
-            "image": "data/spells/img/pass_through_wall.png",
+            "image": "data/spells/img/pass_through_wall.webp",
             "origins": ["stygia"]
         },
 
@@ -1562,7 +1562,7 @@
             "forRange": true,
             "forEnergy": true,
 
-            "image": "data/spells/img/psychic_strike.png",
+            "image": "data/spells/img/psychic_strike.webp",
             "origins": ["stygia"]
         },
 
@@ -1586,7 +1586,7 @@
             "forRange": true,
             "forEnergy": false,
 
-            "image": "data/spells/img/stone_rain.png",
+            "image": "data/spells/img/stone_rain.webp",
             "origins": ["stygia"],
 
             "tokens": ["secret", "well"]
@@ -1612,7 +1612,7 @@
             "forRange": true,
             "forEnergy": false,
 
-            "image": "data/spells/img/rending_the_veil.png",
+            "image": "data/spells/img/rending_the_veil.webp",
             "origins": ["conqueror"]
         },
 
@@ -1636,7 +1636,7 @@
             "forRange": true,
             "forEnergy": false,
 
-            "image": "data/spells/img/whirlwind.png",
+            "image": "data/spells/img/whirlwind.webp",
             "origins": ["conqueror"]
         },
 
@@ -1660,7 +1660,7 @@
             "forRange": true,
             "forEnergy": false,
 
-            "image": "data/spells/img/ymirs_retribution.png",
+            "image": "data/spells/img/ymirs_retribution.webp",
             "origins": ["conqueror"]
         },
 
@@ -1684,7 +1684,7 @@
             "forRange": false,
             "forEnergy": false,
 
-            "image": "data/spells/img/summon_demon.png",
+            "image": "data/spells/img/summon_demon.webp",
             "origins": ["conqueror"]
         },
 
@@ -1708,7 +1708,7 @@
             "forRange": true,
             "forEnergy": false,
 
-            "image": "data/spells/img/yogs_hunger.png",
+            "image": "data/spells/img/yogs_hunger.webp",
             "origins": ["conqueror"]
         },
 
@@ -1732,7 +1732,7 @@
             "forRange": true,
             "forEnergy": false,
 
-            "image": "data/spells/img/changing_destiny.png",
+            "image": "data/spells/img/changing_destiny.webp",
             "origins": ["conqueror"]
         }
     ]
