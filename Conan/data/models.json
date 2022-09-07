@@ -1539,7 +1539,7 @@
             "thumb": "data/models/img/kull_sd.webp",
             "images": ["data/models/img/kull_1.webp"],
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
-            "type": "monster",
+            "type": "human",
             "origins": ["shadow-kingdom"],
             "forum": "https://the-overlord.com/index.php?/topic/4639-peinture-montrez-moi-vos-rois-kull/"
         },
@@ -1549,7 +1549,7 @@
             "thumb": "data/models/img/brule_sd.webp",
             "images": ["data/models/img/brule_1.webp"],
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
-            "type": "monster",
+            "type": "human",
             "origins": ["shadow-kingdom"],
             "forum": "https://the-overlord.com/index.php?/topic/4640-peinture-montrez-moi-vos-brule/"
         },
