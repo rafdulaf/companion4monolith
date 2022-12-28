@@ -99,8 +99,8 @@ var EncyclopediaEquipments = {
                 filter: function(item, selectedValues) {
                     
                     return (selectedValues.indexOf('melee')!=-1 && item.melee['0'] != "none")
-                        || (selectedValues.indexOf('ranged')!=-1 && item.ranged['0'] != "none")
-                        || (selectedValues.indexOf('throwable')!=-1 && item.ranged['0'] != "none" && item.ranged['throwable'])
+                        || (selectedValues.indexOf('ranged')!=-1 && (item.ranged['0'] != "none" || item.ranged['throwable']))
+                        || (selectedValues.indexOf('throwable')!=-1 && item.ranged['throwable'])
                         || (selectedValues.indexOf('manipulation')!=-1 && item.manipulation['0'] != "none")
                         || (selectedValues.indexOf('area')!=-1 && item.manipulation['0'] != "none" && item.manipulation['explosive'])
                         || (selectedValues.indexOf('guard')!=-1 && item.active['0'] != "none")
