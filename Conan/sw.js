@@ -59,7 +59,7 @@ async function caching()
         console.log('Initial filling cache ' + CACHE_NAME + " with " + localizedURLsToCache.length + " files");
         await cache.addAll(localizedURLsToCache);
         console.log("Cache ready");
-        await delay(5000);
+
         const channel = new BroadcastChannel('sw-messages');
         channel.postMessage({type: 'cache_filled'});
     }
