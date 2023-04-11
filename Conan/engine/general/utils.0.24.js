@@ -99,28 +99,28 @@ Utils = {
         return {
             'fr': "Une nouvelle version est disponible. Voulez-vous mettre à jour maintenant ?",
             'en': "A new version is available. Do you want to update now?",
-            'it': "TODOTRANSLATE"
+            'it': "Una nuova versione è disponibile. Vuoi installarla adesso?"
         }[Language];
     },
     _getDownloadingMessage() {
         return {
             'fr': "Le téléchargement de l'application a commencé mais vous pouvez l'utiliser sans attendre.<br/>Lorsque le téléchargement sera terminé vous pourrez utiliser l'application hors-connexion.<br/>Téléchargement en cours :",
             'en': "The application is downloading but you can already use it.<br/>When the dowload is complete you may use the application offline.<br/>Downloading:",
-            'it': "TODOTRANSLATE"
+            'it': "Il download dell'applicazione è iniziato, ma puoi già usarla senza aspettare.<br/>Quando il download è terminato potrai utilizzare l'applicazione offline.<br/>Download in corso:"
         }[Language];
     },
     _getDownloadedMessage() {
         return {
             'fr': "Le téléchargement est terminé. Vous pouvez utiliser l'application hors-ligne.",
             'en': "The download is over. You can now use the application offline.",
-            'it': "TODOTRANSLATE"
+            'it': "Il download è finito. Adesso puoi utilizzare l'applicazione offline."
         }[Language];
     },
     _getLanguageChangeOfflineErrorMessage() {
         return {
             'fr': "Il n'est pas possible de changer de langue hors connexion",
             'en': "You cannot change the language when offline",
-            'it': "TODOTRANSLATE"
+            'it': "Non puoi cambiare la lingua quando sei offline"
         }[Language];
     },
     
