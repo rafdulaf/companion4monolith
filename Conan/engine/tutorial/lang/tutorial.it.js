@@ -6,7 +6,7 @@ Tutorial._i18n = {
     'audience_message': "Statistiche anonime e senza cookie sono utilizzate su questa applicazione.",
     'audience_ok': "Accetto",
     
-    'install_message': "TODOTRANSLATE",
-    'install_ok': "TODOTRANSLATE",
-    'install_ignore': "TODOTRANSLATE"
+    'install_message': "Vuoi scaricare e installare l'applicazione per utilizzarla offline?",
+    'install_ok': "Installa",
+    'install_ignore': "Successivametne"
 };
