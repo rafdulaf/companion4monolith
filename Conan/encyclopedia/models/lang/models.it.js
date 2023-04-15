@@ -4,6 +4,7 @@ EncyclopediaModels._i18n = {
     'fromAnd': "<br/>e",
     'model': "miniatura",
     'models': "miniature",
+    'sculptedBy': "Scolpito da: ",
     'paintedBy': "Dipinta da: ",
     'zoom': "Zoom",
     'print': "Stampa",
