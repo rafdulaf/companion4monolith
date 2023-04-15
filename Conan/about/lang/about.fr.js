@@ -8,5 +8,6 @@ About._i18n = mergeObject(About._i18n, {
             + "L'image du 'Compagnion de Conan' a été créée à partir du logo Conan.<br/>",
     'tolink': "https://the-overlord.com/index.php?/topic/3095-application-de-compagnon-de-jeu/",
 
-    'contribute_hof_dataIT': "(traduction italienne)"
+    'contribute_hof_dataIT': "(traduction italienne)",
+    'contribute_hof_dataSculptor': "(sculpteurs des figurines)"
 });

@@ -376,6 +376,7 @@ var EncyclopediaModels = {
         
         var modelImages = [];
         var painters = [];
+        var sculptors = [];
         for (var i in models)
         {
             var model = models[i];
@@ -391,8 +392,14 @@ var EncyclopediaModels = {
             {
                 painters.push(model.paint);
             }
+
+            if (model.sculptor
+                && sculptors.map(function (p) {return p.name;}).indexOf(model.sculptor.name) == -1)
+            {
+                sculptors.push(model.sculptor);
+            }
         }
-        
+
         var photos = "<div class='photos'>";
         for (var i in modelImages)
         {
@@ -410,6 +417,25 @@ var EncyclopediaModels = {
                 painter += " <a target='_blank' href='" + painters[i].link + "'>" + painters[i].name + "</a>";
             }
             painter += "</div>";
+        }
+        
+        var sculptor = "";
+        if (sculptors.length)
+        {
+            sculptor = "<div class='scultor'>" + EncyclopediaModels._i18n.sculptedBy; 
+            for (var i in sculptors)
+            {
+                if (i != 0) sculptor += ",";
+                if (sculptors[i].link)
+                {
+                    sculptor += " <a target='_blank' href='" + sculptors[i].link + "'>" + sculptors[i].name + "</a>";
+                }
+                else
+                {
+                    sculptor += " " + sculptors[i].name;
+                }
+            }
+            sculptor += "</div>";
         }
         
         var model = models[0];
@@ -449,6 +475,7 @@ var EncyclopediaModels = {
                 + heroes
                 + tiles
                 + tokens
+                + sculptor
                 + painter
                 + photos
             + "</div>",
