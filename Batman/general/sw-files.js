@@ -1001,7 +1001,7 @@ const urlsToCache = [
 	"engine/vendors/css/images/ui-icons_cc0000_256x240.webp",
 	"engine/vendors/css/images/ui-icons_ffffff_256x240.webp",
 	"engine/vendors/css/jquery-ui-1.12.1.min.css",
-	"engine/vendors/css/slick-1.8.0.css",
+	"engine/vendors/css/slick-1.8.0-fix.css",
 	"engine/vendors/css/slick-theme-1.8.0.css",
 	"engine/vendors/fonts/fa-brands-400.eot",
 	"engine/vendors/fonts/fa-brands-400.svg",
