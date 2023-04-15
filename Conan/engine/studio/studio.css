@@ -101,7 +101,8 @@
 .printoverflow { 
     display: inline-block; 
     overflow: hidden; 
-    vertical-align: top; 
+    vertical-align: top;
+    line-height: 0; 
 }
 .printcards .printoverflow {
     zoom: 0.5;

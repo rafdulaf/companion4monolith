@@ -100,7 +100,7 @@ Nav = {
             {
                 Nav._actions[iconId][i].hidden = false;
                 anychange = true;
-                $('#actions-' + iconId + "-" + Nav._actions[iconId][i].id).show();
+                $('#actions-' + iconId + "-" + Nav._actions[iconId][i].id).parent().show();
                 Nav.updateTitle();
                 return;
             }
@@ -128,7 +128,7 @@ Nav = {
             if (Nav._actions[iconId][i].id == id && !Nav._actions[iconId][i].hidden)
             {
                 Nav._actions[iconId][i].hidden = true;
-                $('#actions-' + iconId + "-" + Nav._actions[iconId][i].id).hide();
+                $('#actions-' + iconId + "-" + Nav._actions[iconId][i].id).parent().hide();
                 Nav.updateTitle();
                 return;
             }
