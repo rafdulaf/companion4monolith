@@ -339,6 +339,7 @@ Nav = {
         $(window).on('resize', function() { Nav.updateTitle(); Nav.updateNav(); });
         $(window).on('orientationchange', function() { Nav.updateTitle(); Nav.updateNav(); });
         $(window).on('hashchange', function(e) { Nav._hashChange(e) });
+        $(window).on('scroll', function(e) { window.scrollTo(0, 0); });
         
         function resize()
         {
