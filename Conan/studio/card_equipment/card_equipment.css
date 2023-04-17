@@ -200,6 +200,7 @@
     top: 59%;
     left: 7%;
     right: 7%;
+    line-height: 0;
 }
 .card.equipement div.text-separator .background-text-separator {
     width: 100%;
