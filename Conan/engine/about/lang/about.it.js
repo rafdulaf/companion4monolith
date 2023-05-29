@@ -1,0 +1,52 @@
+About._i18n = {
+    'fullscreen': "A tutto schermo",
+    'download': "Installa",
+    'other': "Altri Companion",
+    'about': "Crediti",
+    'licence': "Licenze",
+    'licence_text': "Questo software è sviluppato sotto licenza LGPL-3.0.",
+    'licence_text2': "Tutto il materiale (immagini, testi, caratteristiche...) resta proprietà dei singoli autori nel rispetto dei diritti applicabili",
+    'copyright': "Copyright",
+    'preferences': 'Le mie preferenze',
+    'preferences_text': "Scegli le preferenze che saranno salvate sul tuo device.",
+    'preferences_general': "Generali",
+    'custom': "Gioco ed espansioni",
+    'custom_text': "Scegli le espansioni che saranno salvate sul tuo device.",
+    'custom_lang': "Italiano",
+    'custom_langlabel': "Lingua",
+    'custom_automatic_lang': "Rivela automaticamente",
+    'custom_themelabel': "Tema",
+    'custom_automatic_theme': "Rivela automaticamente",
+    'custom_theme_light': "Chiaro",
+    'custom_theme_dark': "Scuro",
+    'custom_allin': "TUTTO!", 
+    'custom_reload': "Le modifiche della tua configurazione richiederanno un riavvio automatico dell'applicazione",
+    'contribute': "Collabora!",
+    'contribute_text': "Puoi collaborare a questa applicazione in molti modi:"
+            + "<ul>"
+                + "<li>Hai notato un errore?</li>"
+                + "<li>Hai un'idea per una miglioria?</li>"
+                + "<li>Vuoi proporre una modifica?</li>"
+            + "</ul>"
+            + "Il progetto è ospitato su Github: puoi pertanto mandare lì le tue richieste o le tue proposte, o contribuire sul forum The Overlord.",
+    'contribute_version': "Versione attuale: ",
+    'contribute_hof': "Albo d'oro",
+    'contribute_hof_coders': "Codice Applicazione",
+    'contribute_hof_relooking': "Aiuto sullo stile grafico",
+    'contribute_hof_data': "Aquisizione dei dati",
+    'contribute_hof_test': "Test e riscritture",
+    'download_title': "Installa",
+    'download_cannotinstall': "Il tuo spazio a disposizione",
+    'download_cannotinstall2': "non è abbastanza per installare l'applicazione che richiede",
+    'download_introduction': "L'applicazine può essere installata sui seguenti dispositivi compatibili usando i seguenti browser:",
+    'download_introduction2': "Se la tua configurazione non è presente nella lista qui sopra, allora non puoi installare l'applicazione. Puoi tuttavia continuare a usarla sul tuo browser.",
+    'download_ios': "iOS su smartphone o ipad (Safari)",
+    'download_ios2': "Installa su dispositivi iOS (Safari)",
+    'download_ios3': "1) Premi il tasto 'Condividi' in alto<br/>2) Seleziona dal popup 'Aggiungi alla schermata Home'<br/>3) Infine, sèunta 'Aggiungi' nell'angolo in alto a destra per completare l'installazione dell'applicazione<br>Adesso l'applicazione è installata sulla tua schermata Home.",
+    'download_android': "Android su smartphone o pad (Chrome)",
+    'download_android2': "Installa su dispositivi Android (Chrome)",
+    'download_android3': "1) Clicca sull'icona dei 'tre puntini' in alto a destra per aprire il menu<br/>2) Seleziona 'Installa app'<br/>3) Infine, seleziona nel popup 'Installa' <br/>Adesso l'applicazione è installata sulla tua schermata Home.",
+    'download_computer': "PC o Mac (Chrome o Edge)",
+    'download_computer2': "Installa sul computer (Chrome o Edge)",
+    'download_computer3': "1) Nella parte destra della barra degli indirizzi del tuo browser, clicca sull'icona installa<br/>2) Clicca sul pulsante 'Installa' nella finestra di dialogo<br/>L'applicazione è adesso disponibile nel menu start (Windows) o nel Launcher (Mac)."
+};

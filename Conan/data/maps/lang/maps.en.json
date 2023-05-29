@@ -198,9 +198,6 @@
                 "title": "Tower",
                 "rules": [
                     {
-                        "title": "Dive",
-                        "description": "A character in an area marked with the Leap icon may leap in the pond's area of level 1 by spending 1 extra movement point. The character rolls {dice_orange}{dice_orange} for falling damage with no possible defense. If the character has Leap, the character rolls {dice_orange} instead."
-                    }, {
                         "title": "Stone wall",
                         "description": "A character with Wall Wrecker cannot use it to move across an outer wall of the tower or a stone wall."
                     }, {

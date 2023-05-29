@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 	<head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -41,11 +42,12 @@
         <link rel="apple-touch-startup-image" href="resources/favico/apple-splash-640-1136.webp" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
         <link rel="apple-touch-startup-image" href="resources/favico/apple-splash-1136-640.webp" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
 
-        <script src="../engine/vendors/js/jquery-3.1.1.js"></script>
-        <script src="../engine/general/errors.1.js"></script>
+        <script src="engine/vendors/js/jquery-3.1.1.js"></script>
+        <script src="engine/general/errors.1.js"></script>
         <script>
             Application = "Conan";
             Languages = ["fr", "en", "it"];
+            const required = {"it": 43, "fr": 43, "en": 43};
             
             // Old data conversion
             ["Extensions", "Language", "StudioTiles", "StudioHeroSheets", "StudioSpellCards", "StudioEquipmentCards", "Audience"].forEach(function(id) {
@@ -70,7 +72,7 @@
                 localStorage.setItem("Conan_Extensions", JSON.stringify(oldExtensionValue));
            	}
         </script>
-        <script src="../engine/general/utils.0.21.js"></script>
+        <script src="engine/general/utils.0.24.js"></script>
 	<body>
 	   <div class="loading" style="display: none;"></div>
        <script>

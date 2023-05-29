@@ -24,6 +24,11 @@
         width: 30vw;
     }
     
+    .map-map-help .map-help-thumb > div.rotate-90,
+    .map-map-help .map-help-thumb > div.rotate-270 {
+          margin: 0 calc((1 - var(--map-ratio)) * 0.5 * 30vw);
+    }
+    
     .map-map-help .map-help-thumb {
         text-align: center;
         display: inline-block;

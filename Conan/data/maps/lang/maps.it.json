@@ -198,9 +198,6 @@
                 "title": "Torre",
                 "rules": [
                     {
-                        "title": "Grande tuffo",
-                        "description": "Un personaggio può saltare dalle aree indicate dall'icona del salto, all'area dello stagno al livello 1, spendendo un (1) punto movimento extra. Il personaggio che salta subisce {dice_orange}{dice_orange} di danni da caduta non difendibili. Se il personaggio ha l'abilità Saltare i danni da caduta si riducono a {dice_orange}."
-                    }, {
                         "title": "Muro di pietra",
                         "description": "Un personaggio con l'abilità Spacca Muri non può usarla per aprire brecce nei muri della torre (sia interni che perimetrali)."
                     }, {

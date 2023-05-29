@@ -198,9 +198,6 @@
                 "title": "Tour",
                 "rules": [
                     {
-                        "title": "Grand plongeon",
-                        "description": "Un Héros présent dans les zones peut essayer de sauter dans l’étang en contrebas. Pour cela, il doit se déplacer hors de la case et dépenser 1 point de mouvement supplémentaire pour plonger. Sauter dans l’étang inflige {dice_orange}{dice_orange} sans défense possible et {dice_orange} si la figurine possède la compétence saut."
-                    }, {
                         "title": "Mur de pierre",
                         "description": "Un personnage disposant de la compétence « Défoncer Parois » ne peut pas défoncer les parois extérieures de la tour et les murs en pierres."
                     }, {

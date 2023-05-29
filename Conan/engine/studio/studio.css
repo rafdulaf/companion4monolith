@@ -1,0 +1,185 @@
+.studio-icon:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f591";  
+}
+
+.studio-icon-printcards:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f02f";
+  font-size: 24px;  
+}
+
+.studio-icon-add:before {
+  font-family: "Arial";
+  content: "+";  
+}
+
+#studio .inside {
+    overflow: hidden scroll;
+    height: 100%;
+}
+
+.dialog .studio-save:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f0c7";  
+}
+.dialog .studio-remove:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f2ed";  
+}
+
+.dialog .printcards .hint {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.dialog .printcards .subhint {
+    text-align: left;
+    font-style: italic;
+    line-height: 75%;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+.dialog .printcards h1 {
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    text-align: left;
+    font-family: 'Primary';
+    font-size: calc(var(--primary-size) * 1rem);
+    vertical-align: top;
+}
+
+.dialog .printcards .print { text-align: center; margin: 20px; }
+
+.printcards .back, .printcards .newpage { display: none; }
+
+@media print {
+    @page {
+            margin-left: 0%; 
+            margin-right: 0%;
+    }
+    .dialog .printcards { text-align: center }
+    .dialog .printcards input[name] + label { display: none; }
+    .dialog .printcards input[name]:checked + label { display: inline-block; }    
+    .dialog .printcards input[name]:checked + label:before,
+    .dialog .printcards input[name]:checked + label:after,
+    .dialog .dialog-header,
+    .dialog .printcards h1,
+    .dialog .printcards .hint,
+    .dialog .printcards .subhint,
+    .dialog .printcards .nocards,
+    .dialog .printcards .print
+    { 
+        display: none; 
+    }
+    body > *, .header { display: none; }
+    html, body {
+        background-color: unset;
+    }
+    body > .dialog {
+        position: static;
+        display: block;
+        background-color: unset;
+        --webkit-print-color-adjust: exact
+    }
+    .dialog .dialog-content {
+        margin: 0;
+        padding: 0; 
+        height: unset;
+        overflow: unset;
+        background-color: unset;
+    }
+    
+    .dialog .printcards .newpage { display: unset; }
+    .dialog .printcards.back .newpage { display: block; page-break-before: always; direction: rtl; }
+    .dialog .printcards .back { display: inline-block; }
+    .dialog .printcards .back.invisible { display: none; }
+    .dialog ul.floatingactions { display: none; }
+}
+
+.printoverflow { 
+    display: inline-block; 
+    overflow: hidden; 
+    vertical-align: top;
+    line-height: 0; 
+}
+.printcards .printoverflow {
+    zoom: 0.5;
+}
+.ff .printcards .printoverflow {
+    transform: scale(0.5); 
+    transform-origin: top left;
+}
+@media print {
+    .printcards .printoverflow {
+        zoom: unset;
+    }
+    .ff .printcards .printoverflow {
+        transform: unset !important;
+        transform-origin: unset !important;
+        margin-right: unset !important;
+        margin-bottom: unset !important;
+    }
+}
+
+#studio .nocards {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%,-50%)  !important;
+    text-align: center;
+    display: block;
+    padding: 40px;
+    border-radius: 40px;
+    z-index: 10;
+    pointer-events: none;
+    font-family: "Primary";
+    
+    background-position: center top;
+    background-repeat: no-repeat;
+    
+    padding-top: 200px;
+    
+    transform-origin: unset !important;
+    margin-right: unset !important;
+    margin-bottom: unset !important;
+    zoom: unset !important;
+}
+
+
+.studiodialog input[type=text],
+.studiodialog input[type=number],
+.studiodialog input:not([type]),
+.studiodialog textarea {
+    border-width: 0 0 1px 0;
+    border-color: #7f7f7f;
+    outline: none;
+    font-size: 22px;
+    font-family: 'Secondary';
+}
+.studiodialog input[type=text],
+.studiodialog input[type=number],
+.studiodialog input:not([type]) {
+    height: 22px;
+}
+
+.studiodialog input[type=text]:focus,
+.studiodialog input[type=number]:focus,
+.studiodialog input:not([type]):focus,
+.studiodialog textarea:focus {
+    border-color: var(--highlight-color);
+    box-shadow: 0 2px 1px -1px var(--highlight-color);
+}
+
+.studiodialog select {
+    border-color: #7f7f7f;
+    border-radius: 3px;
+    outline: none;
+}
+
+.studiodialog select:focus {
+    border-color: var(--highlight-color);
+    box-shadow: 0 0 2px var(--highlight-color);
+}

@@ -1,0 +1,53 @@
+About._i18n = {
+    'fullscreen': "Plein écran",
+    'download': "Installer",
+    'other': "Les autres compagnons",
+    'about': "A propos",
+    'licence': "Licence",
+    'licence_text': "Ce logiciel est développé sous licence LGPL-3.0",
+    'licence_text2': "mais toutes les ressources (images, textes, caractéristiques...) restent la propriété de leurs auteurs respectifs selon les droits applicables.",
+    'about': "A propos",
+    'copyright': "Copyright",
+    'preferences': 'Mes préferences',
+    'preferences_text': "Sélectionnez vos préférences qui seront enregistrées sur votre appareil.",
+    'preferences_general': "Généralités",
+    'custom': "Mon jeu et extensions",
+    'custom_text': "Sélectionnez vos extensions qui seront enregistrés sur votre appareil.",
+    'custom_lang': "Français",
+    'custom_langlabel': "Langue de l'interface",
+    'custom_automatic_lang': "Auto-détection",
+    'custom_reload': "La modification de votre configuration entrainera un redémarage automatique de l'application",
+    'custom_themelabel': "Thème",
+    'custom_automatic_theme': "Auto-détection",
+    'custom_theme_light': "Clair",
+    'custom_theme_dark': "Foncé",
+    'custom_allin': "La totale !", 
+    'contribute': "Contribuer !",
+    'contribute_text': "Vous pouvez contribuer à cette application de nombreuses façons :"
+            + "<ul>"
+                + "<li>Vous avez repéré un bug ?</li>"
+                + "<li>Vous avez une idée d'amélioration ?</li>"
+                + "<li>Vous souhaitez proposer un patch ?</li>"
+            + "</ul>"
+            + "Le projet est hébergé sur Github : vous pouvez donc y déposer vos idées voire proposer vos modifications, mais vous pouvez aussi participer via le forum The Overlord.",
+    'contribute_version': "Version actuelle : ",
+    'contribute_hof': "Temple de la renommée",
+    'contribute_hof_coders': "Codage de l'application",
+    'contribute_hof_relooking': "Logo Companion4Monolith et Aide sur la charte graphique",
+    'contribute_hof_data': "Saisie des données",
+    'contribute_hof_test': "Tests et relectures",
+    'download_title': "Installation",
+    'download_cannotinstall': "Vous espace disponible",
+    'download_cannotinstall2': "est insuffisant pour installer l'application qui nécessite",
+    'download_introduction': "L'application peut être installée sur les périphériques compatibles suivants en utilisant les navigateurs indiqués :",
+    'download_introduction2': "Si votre configuration n'est pas listée ci-dessus, cela signifie qu'elle n'est pas supportée pour l'installation, dans ce cas vous pouvez continuer de l'utiliser directement dans votre navigateur.",
+    'download_ios': "Téléphone ou tablette iOS (Safari)",
+    'download_ios2': "Installer sur iOS (Safari)",
+    'download_ios3': "1) Appuyez sur le bouton  'Partager'<br/>2) Choisir 'Sur l'écran d'accueil' dans la fenêtre<br/>3) Enfin, appuyez sur 'Ajouter' en haut à droite pour finir l'installation<br>L'application est maintenant installée sur votre écran d'accueil.",
+    'download_android': "Téléphone ou tablette Android (Chrome)",
+    'download_android2': "Installer sur Android (Chrome)",
+    'download_android3': "1) Ouvrez le menu '3 points' en haut à droite<br/>2) Sélectionnez 'Installer l'application'<br/>3) Enfin, appuyez sur 'Installer' dans la boite de confirmation<br/>L'application est maintenant installée sur votre téléphone.",
+    'download_computer': "PC ou Mac (Chrome ou Edge)",
+    'download_computer2': "Installer sur ordinateur (Chrome ou Edge)",
+    'download_computer3': "1) Dans la barre d'adresse du navigateur, à droite, cliquez sur l'icône d'installation<br/>2) Cliquez sur 'Installer' dans la boite de dialogue<br/>L'application est maintenant disponible dans le menu démarrer (Windows) ou le lanceur d'application (Mac)."
+};
