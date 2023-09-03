@@ -5,6 +5,7 @@ EncyclopediaModels._i18n = {
     'model': "miniature",
     'models': "miniatures",
     'sculptedBy': "Sculpted by: ",
+    'sculptorUnknown': "(The sculptor name is not sure)",
     'paintedBy': "Painted by: ",
     'zoom': "Zoom",
     'print': "Print",
