@@ -434,6 +434,11 @@ var EncyclopediaModels = {
                 {
                     sculptor += " " + sculptors[i].name;
                 }
+                
+                if (sculptors[i].unsure)
+                {
+                    sculptor += " " + EncyclopediaModels._i18n.sculptorUnknown;
+                }
             }
             sculptor += "</div>";
         }
