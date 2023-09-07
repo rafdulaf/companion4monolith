@@ -81,7 +81,8 @@
         position: static;
         display: block;
         background-color: unset;
-        --webkit-print-color-adjust: exact
+        print-color-adjust: exact;
+        --webkit-print-color-adjust: exact;
     }
     .dialog .dialog-content {
         margin: 0;

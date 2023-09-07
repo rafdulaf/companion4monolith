@@ -107,6 +107,7 @@
     text-align: center;
     color: #000;
     -webkit-text-stroke: 0.1px #fff;
+    print-color-adjust: exact; 
     -webkit-print-color-adjust: exact;
 }
 
@@ -163,6 +164,7 @@
     position: absolute;
     top: -26%;
     color: #fff;
+    print-color-adjust: exact; 
     -webkit-print-color-adjust: exact;
     text-align: center;
     font-family: "Motrg";

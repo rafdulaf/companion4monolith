@@ -84,6 +84,7 @@
     width: 13.3%;
     text-align: center;
     color: #FFF;
+    print-color-adjust: exact;
     -webkit-print-color-adjust: exact;
     font-family: "Motrg";
     font-size: 200%;
@@ -164,6 +165,7 @@
     font-size: 250%;
     font-family: "Motrg";
     color: #FFF;
+    print-color-adjust: exact;
     -webkit-print-color-adjust: exact;
     position: relative;
     width: 20%;

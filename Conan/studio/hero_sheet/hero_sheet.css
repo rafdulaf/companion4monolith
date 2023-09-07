@@ -180,6 +180,7 @@
     line-height: 30%;
     text-align: center;
     color: #fff;
+    print-color-adjust: exact;
     -webkit-print-color-adjust: exact;
 }
 .sheet.herosheet div.base div.dice img {
