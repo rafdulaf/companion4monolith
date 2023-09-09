@@ -138,7 +138,7 @@ Utils = {
             || versions.resetLanguage
             || versions.newVersion && confirm(Utils._getUpdateMessage()))
         {
-            navigator.serviceWorker.getRegistration().then((registration) => { registration.unregister().then((success) => { window.location.reload(true); }); });
+            navigator.serviceWorker.getRegistration().then((registration) => { registration && registration.unregister().then((success) => { window.location.reload(true); }); });
         }
         if (versions.offlineLanguage && versions.offlineLanguage != Language)
         {

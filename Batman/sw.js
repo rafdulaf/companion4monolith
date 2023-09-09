@@ -37,7 +37,13 @@ async function isCacheComplete()
     const CACHE_NAME = CACHE_NAME_PREFIX + Language + "-" + Version;
     const cache = await caches.open(CACHE_NAME);
     const keys = await cache.keys();
-    return keys.length == urlsToCache.filter(f => acceptOnlyLanguagesUrl(f)).length + 1; 
+    const shouldBeCacheSize = urlsToCache.filter(f => acceptOnlyLanguagesUrl(f)).length;
+    const isComplete = keys.length == shouldBeCacheSize + 1;
+    if (!isComplete)
+    {
+        await caches.delete(CACHE_NAME);
+    } 
+    return isComplete;
 }
 
 async function caching()
@@ -48,12 +54,11 @@ async function caching()
     }
     
     const CACHE_NAME = CACHE_NAME_PREFIX + Language + "-" + Version;
-    const delay = ms => new Promise(res => setTimeout(res, ms));
     
     try
     {
-        const localizedURLsToCache = urlsToCache.map(f => f.replace('.LANGUAGE.', '.' + Language + '.')).filter(f => acceptOnlyLanguagesUrl(f));
-        localizedURLsToCache.push("./");
+        const localizedURLsToCache = urlsToCache.map(f => f.replace('.LANGUAGE.', '.' + Language + '.')).filter(f => acceptOnlyLanguagesUrl(f)).map(u => u + "?version=" + Version);
+        localizedURLsToCache.push("./?version=" + Version);
         
         const cache = await caches.open(CACHE_NAME);
         console.log('Initial filling cache ' + CACHE_NAME + " with " + localizedURLsToCache.length + " files");
@@ -81,11 +86,6 @@ async function caching()
           }));
         });
     }
-}
-
-async function uncaching()
-{
-    
 }
 
 self.addEventListener('activate', function(event) {
