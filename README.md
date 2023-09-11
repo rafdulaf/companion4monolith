@@ -7,6 +7,6 @@ All the data and resources (mostly images) are submitted to the copyright. See t
 
 [Production version (hosted by The-Overlord.com)](https://the-overlord.com/Companion/Conan/)
 
-[Beta version](https://c2c.yo.fr/)
+[Beta version](https://c2c.yo.fr/Companion)
 
 [Alpha version](https://rafdulaf.github.io/companion4monolith/)
