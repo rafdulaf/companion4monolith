@@ -58,7 +58,7 @@ async function caching()
     try
     {
         const localizedURLsToCache = urlsToCache.map(f => f.replace('.LANGUAGE.', '.' + Language + '.')).filter(f => acceptOnlyLanguagesUrl(f)).map(u => u + "?version=" + Version);
-        localizedURLsToCache.push("./?version=" + Version);
+        localizedURLsToCache.push("./?version=" + Version); // Cache needs to be filled with ?version= to ensure to fill the cache with the right memory/disk cache version
         
         const cache = await caches.open(CACHE_NAME);
         console.log('Initial filling cache ' + CACHE_NAME + " with " + localizedURLsToCache.length + " files");
@@ -152,10 +152,9 @@ self.addEventListener('fetch', (e) => {
         }
         else if (e.request.method !== "POST" && e.request.url.startsWith(self.registration.scope))
     	{
-            const searchPos = e.request.url.indexOf('?'); // To remove what is after ?
-            const modifiedUrl = searchPos > 0 ? e.request.url.substring(0, searchPos) : e.request.url;
+            const modifiedUrl = e.request.url.split('?')[0].split('#')[0]; // Remove after ? and/or #
             
-            const cachedResponse = await caches.match(modifiedUrl);
+            const cachedResponse = await caches.match(modifiedUrl + "?version=" + Version);
             if (cachedResponse) 
             {
     	       return cachedResponse;
@@ -183,7 +182,7 @@ self.addEventListener('fetch', (e) => {
                         }
                     }
                     
-                    throw new Error("Cannot fetch " + modifiedUrl);
+                    throw new Error("Cannot fetch " + modifiedUrl, ex);
                 }
             }
         }
