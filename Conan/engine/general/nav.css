@@ -297,7 +297,7 @@
     padding: 20px;
     font-size: calc(var(--secondary-size) * 1.5rem);
     font-family: 'Secondary';
-    height: calc(100vh - var(--header-height));
+    height: calc(100% - var(--header-height));
     line-height: 1.5rem;
     overflow: auto;
 } 
@@ -490,7 +490,7 @@ ul.floatingactions li a span {
     ul.floatingactions li a {
         min-width: 56px;
         height: 56px;
-        line-height: 26px; 
+        line-height: 24px; 
         font-size: 37px;
     }
     ul.floatingactions li a span {
