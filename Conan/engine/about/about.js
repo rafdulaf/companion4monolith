@@ -83,20 +83,15 @@ var About = {
         Menu.addMenu(About._i18n.custom, "about-custom", "About._custom()", !Utils.isInStandaloneMode);
         Menu.addMenu(About._i18n.preferences, "about-preferences", "About._preferences()");
 
-        Menu.addMenu(About._i18n.other, "about-other", "About._other()", true);
-        Menu.addMenu(About._i18n.about, "about-about", "About._about()", false);
+        if (!Utils.isInStandaloneMode) {
+            Menu.addMenu(About._i18n.other, "about-other", "About._other()", true);
+        }
+        Menu.addMenu(About._i18n.about, "about-about", "About._about()", Utils.isInStandaloneMode);
         
     },
     
     _other: function() {
-        if (Utils.isInStandaloneMode)
-        {
-            window.open("..")
-        }
-        else
-        {
-            document.location.href = "..";
-        }
+        document.location.href = "..";
     },
 
     _about: function()
