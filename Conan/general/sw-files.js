@@ -1749,7 +1749,6 @@ const urlsToCache = [
 	"resources/favico/maskable_icon_x96.webp",
 	"resources/favico/mstile-150x150.webp",
 	"resources/favico/regular_icon.webp",
-	"resources/favico/safari-pinned-tab.svg",
 	"resources/favico/site.webmanifest",
 	"resources/img/dice_orange.webp",
 	"resources/img/dice_orange_reroll.webp",
