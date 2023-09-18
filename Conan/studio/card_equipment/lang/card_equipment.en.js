@@ -1,5 +1,6 @@
 CardEquipment._i18n = {
-    'tab': "Equip<wbr/>ments",
+    'tab': "Equipments",
+    'shorttab': "Equip.",
     'nocard': "You have no card for the moment",
     'nocard2': "<br/><br/>Click on the + button to create one",
     'newcard': "Create an equipment",

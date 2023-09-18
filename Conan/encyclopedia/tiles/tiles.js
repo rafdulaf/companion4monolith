@@ -1,7 +1,7 @@
 var EncyclopediaTiles = {
     preinit: function()
     {
-        Encyclopedia._slides.push({   label: EncyclopediaTiles._i18n.tab, id: "encyclopedia-tile", onShow: EncyclopediaTiles.onShow,  onHide: EncyclopediaTiles.onHide });
+        Encyclopedia._slides.push({ label: EncyclopediaTiles._i18n.tab, shortLabel: EncyclopediaTiles._i18n.shorttab, id: "encyclopedia-tile", onShow: EncyclopediaTiles.onShow,  onHide: EncyclopediaTiles.onHide });
 
         EncyclopediaTiles._facets = Utils.mergeObject([
             {

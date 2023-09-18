@@ -1,7 +1,7 @@
 var EncyclopediaSpells = {
     preinit: function()
     {
-        Encyclopedia._slides.push({   label: EncyclopediaSpells._i18n.tab, id: "encyclopedia-spell", onShow: EncyclopediaSpells.onShow,  onHide: EncyclopediaSpells.onHide });
+        Encyclopedia._slides.push({ label: EncyclopediaSpells._i18n.tab, shortLabel: EncyclopediaSpells._i18n.shorttab, id: "encyclopedia-spell", onShow: EncyclopediaSpells.onShow,  onHide: EncyclopediaSpells.onHide });
 
         EncyclopediaSpells._facets = Utils.mergeObject([
             {

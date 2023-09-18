@@ -1,5 +1,6 @@
 Tile._i18n = {
     'tab': "Tessere",
+    'shorttab': "Tess.",
     'nocard': "Non hai tessere al momento",
     'nocard2': "<br/><br/>CLicca su + per crearne una",
     'newcard': "Crea una tessera",

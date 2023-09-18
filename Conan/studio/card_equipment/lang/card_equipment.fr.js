@@ -1,5 +1,6 @@
 CardEquipment._i18n = {
-    'tab': "Équipe<wbr/>ments",
+    'tab': "Équipements",
+    'shorttab': "Équip.",
     'nocard': "Vous n'avez aucune carte d'équipement pour le moment",
     'nocard2': "<br/><br/>Cliquez sur le bouton + pour en creer une",
     'newcard': "Créer un équipement",

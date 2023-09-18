@@ -1,5 +1,6 @@
 CardSpell._i18n = {
     'tab': "Incantesimi",
+    'shorttab': "Incant.",
     'nocard': "Al momento non hai carte",
     'nocard2': "<br/><br/>Clicca su + per crearne una",
     'newcard': "Crea una carta incantesimo",

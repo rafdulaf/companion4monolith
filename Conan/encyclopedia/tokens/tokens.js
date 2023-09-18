@@ -1,7 +1,7 @@
 var EncyclopediaTokens = {
     preinit: function()
     {
-        Encyclopedia._slides.push({   label: EncyclopediaTokens._i18n.tab, id: "encyclopedia-token", onShow: EncyclopediaTokens.onShow,  onHide: EncyclopediaTokens.onHide });
+        Encyclopedia._slides.push({ label: EncyclopediaTokens._i18n.tab, shortLabel: EncyclopediaTokens._i18n.shorttab, id: "encyclopedia-token", onShow: EncyclopediaTokens.onShow,  onHide: EncyclopediaTokens.onHide });
 
         EncyclopediaTokens._facets = Utils.mergeObject([
             {

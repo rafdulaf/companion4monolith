@@ -1,5 +1,6 @@
 CardEquipment._i18n = {
-    'tab': "Equip<wbr/>aggiamento",
+    'tab': "Equipaggiamento",
+    'shorttab': "Equip.",
     'nocard': "Al momento non hai carte",
     'nocard2': "<br/><br/>Clicca su + per crearne una",
     'newcard': "Crea una carta equipaggiamento",

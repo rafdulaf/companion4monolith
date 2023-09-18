@@ -1,5 +1,6 @@
 EncyclopediaSpells._i18n = {
     'tab': "Incantesimi",
+    'shorttab': "Incant.",
     'transfertToStudio': "Copia la carta nello Studio",
     'transfertOK': "La carta è stata copiata nello Studio",
     'transfertConfirm': "Vuoi copiare la carta nello Studio per modificarla o stamparla?",

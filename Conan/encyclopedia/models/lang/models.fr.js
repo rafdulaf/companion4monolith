@@ -1,5 +1,6 @@
 EncyclopediaModels._i18n = {
-    'tab': "Figu<wbr/>rines",
+    'tab': "Figurines",
+    'shorttab': "Figs",
     'from': "Disponible dans :",
     'fromAnd': "<br/>et",
     'model': "figurine",

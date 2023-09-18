@@ -1,5 +1,6 @@
 EncyclopediaEquipments._i18n = {
-    'tab': "Equip<wbr/>ments",
+    'tab': "Equipments",
+    'shorttab': "Equip.",
     'transfertToStudio': "Copy the card into the studio",
     'transfertOK': "The card was copied to the equipment cards studio",
     'transfertConfirm': "Do you want to copy the card into the studio in order to edit it or print it?",

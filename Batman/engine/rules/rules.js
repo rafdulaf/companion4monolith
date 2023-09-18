@@ -9,6 +9,7 @@ var Rules = {
 
         Rules._rules = [{
             label: Rules._i18n.skills, 
+            shortLabel: Rules._i18n.shortskills, 
             id: "skills", 
             download: Encyclopedia.skills.link
         }];
@@ -17,7 +18,8 @@ var Rules = {
             if (About._hasExpansion(Encyclopedia.rules.list[i].origins) || window.About && About.getPreference("rules-showmine") === "false")
             {
                 Rules._rules.push({
-                    label: Encyclopedia.rules.list[i].title, 
+                    label: Encyclopedia.rules.list[i].title,
+                    shortLabel: Encyclopedia.rules.list[i].shorttitle, 
                     id: Encyclopedia.rules.list[i].id,
                     download: Encyclopedia.rules.list[i].download,
                     pages: Encyclopedia.rules.list[i].pages

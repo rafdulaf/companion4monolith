@@ -1,5 +1,6 @@
 EncyclopediaEquipments._i18n = {
-    'tab': "Equipe<wbr/>ments",
+    'tab': "Equipements",
+    'shorttab': "Equip.",
     'transfertToStudio': "Copier la carte dans le studio",
     'transfertOK': "La carte a été copiée dans le studio des cartes d'équipements",
     'transfertConfirm': "Voulez-vous copier la carte dans le studio pour pouvoir la modifier ou l'imprimer ?",

@@ -1,5 +1,6 @@
 EncyclopediaModels._i18n = {
-    'tab': "Minia<wbr/>ture",
+    'tab': "Miniature",
+    'shorttab': "Mini",
     'from': "Disponibile in:",
     'fromAnd': "<br/>e",
     'model': "miniatura",

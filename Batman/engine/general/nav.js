@@ -253,7 +253,7 @@ Nav = {
         
         var tb = $(".header .toolbar")
         var maxWidth = $(".header").width() - tb.width();
-        var maxHeight = 60;
+        var maxHeight = 40;
         
         for (var i = 0; i < sizes.length; i++)
         {
@@ -512,10 +512,9 @@ Nav = {
     {
             var slider = $(s);
             
-            var sizes = ["size10", "size9", "size8", "size7", "size6", "size5", "size4", "size3", "size2", "size1"];
+            var sizes = ["size10", "size9", "size8", "size7", "size6", "size5", "size4", "size3", "size2", "size1", "size0", "size-1", "size-2", "size-3"];
             
             slider.removeClass(sizes.join(" "));
-            
             
             var tabs = slider.find("a");
             var maxWidth = tabs.width();
@@ -526,23 +525,35 @@ Nav = {
                 $(button).width(tabs.offset().left);
             }
 
-            for (var i = 0; i < sizes.length; i++)
+            var tooSmall;
+            slider.addClass("normal").removeClass("short");
+            resize("span.l");
+            if (tooSmall)
             {
-                var tooSmall = false;
-                tabs.each(function(tindex, t) {
-                    if ($("span", t).width() > maxWidth)
+                slider.removeClass(sizes.join(" "));
+                slider.addClass("short").removeClass("normal");
+                resize("span.s");
+            }
+            function resize(selector)
+            {
+                for (var i = 0; i < sizes.length; i++)
+                {
+                    tooSmall = false;
+                    tabs.each(function(tindex, t) {
+                        if ($(selector, t).width() > maxWidth)
+                        {
+                            tooSmall = true;
+                            return false;
+                        }
+                    });
+                    if (tooSmall)
                     {
-                        tooSmall = true;
-                        return false;
+                        slider.addClass(sizes[i]);
                     }
-                });
-                if (tooSmall)
-                {
-                    slider.addClass(sizes[i]);
-                }
-                else
-                {
-                    break;
+                    else
+                    {
+                        break;
+                    }
                 }
             }
     },
@@ -553,7 +564,7 @@ Nav = {
         var subzone = "";
         for (var i in tabs)
         {
-            subcode += "<a href=\"javascript:void(0)\"><span>" + tabs[i].label + "</span></a>";
+            subcode += "<a href=\"javascript:void(0)\"><span class='l'>" + tabs[i].label + "</span><span class='s'>" + (tabs[i].shortLabel || tabs[i].label) + "</span></a>";
             subzone += "<div id=\"" + tabs[i].id + "\"></div>";
         }
         

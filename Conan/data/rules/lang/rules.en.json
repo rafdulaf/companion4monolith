@@ -2,16 +2,19 @@
     "list": {
         "heroes": {
             "title": "Heroes's book",
+            "shorttitle": "Heroes",
             "download": "http://www.monolithedition.com/download/rules/CONAN_Heroesrulebook_V2_US_SD.pdf",
             "pages": 24
         },
         "overlord": {
             "title": "Overlord's book",
+            "shorttitle": "Overlord",
             "download": "http://www.monolithedition.com/download/rules/CONAN_King_Overlordbook_V2_US_SD.pdf",
             "pages": 14
         },
         "tomeofskelos": {
             "title": "Tome of Skelos",
+            "shorttitle": "Skelos",
             "download": "https://the-overlord.net/index.php?/files/file/174-tome-of-skelos-final-version-of-the-solocoop-rules/",
             "pages": 11
         }

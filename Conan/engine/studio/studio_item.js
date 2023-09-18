@@ -10,7 +10,7 @@ var StudioItem = {
     _itemHeight: 300,
     
     preinit: function() {
-        Studio._slides.push({   label: this._i18n.tab, id: this.name, onShow: this.onShow.bind(this),  onHide: this.onHide.bind(this) });
+        Studio._slides.push({ label: this._i18n.tab, shortLabel: this._i18n.shorttab, id: this.name, onShow: this.onShow.bind(this),  onHide: this.onHide.bind(this) });
     },
 
     init: function() {

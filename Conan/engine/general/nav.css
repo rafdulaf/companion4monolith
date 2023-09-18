@@ -373,6 +373,9 @@
 }
 
 
+.nav-menu .l, .nav-menu.short .s { display: unset; }
+.nav-menu .s, .nav-menu.short .l { display: none; }
+
 .nav-menu a {
     font-size: calc(var(--primary-size) * 1rem);
     white-space: nowrap;
@@ -389,31 +392,63 @@
     font-size: calc(var(--primary-size) * 0.925rem);
 }
 .nav-menu.size7 a {
-    font-size: calc(var(--primary-size) * 0.9rem);
-}
-.nav-menu.size6 a {
-    font-size: calc(var(--primary-size) * 0.875rem);
-}
-.nav-menu.size5 a {
-    font-size: calc(var(--primary-size) * 0.925rem);
     line-height: calc(var(--primary-line-height) * 1.1875rem);
     white-space: unset;
 }
-.nav-menu.size5 a wbr { display: unset; }
-.nav-menu.size4 a {
-    font-size: calc(var(--primary-size) * 0.9rem);
-}
-.nav-menu.size3 a {
+.nav-menu.size6 a {
     font-size: calc(var(--primary-size) * 0.875rem);
+    line-height: 39px;
+    white-space: nowrap;
 }
-.nav-menu.size2 a {
+.nav-menu.size5 a wbr { display: unset; }
+.nav-menu.size5 a {
+    line-height: calc(var(--primary-line-height) * 1.1875rem);
+    white-space: unset;
+}
+.nav-menu.size4 a wbr { display: none; }
+.nav-menu.size4 a {
     font-size: calc(var(--primary-size) * 0.85rem);
+    line-height: 39px;
+    white-space: nowrap;
 }
-.nav-menu.size1 a {
+.nav-menu.size3 a wbr { display: unset; }
+.nav-menu.size3 a {
+    line-height: calc(var(--primary-line-height) * 1.1875rem);
+    white-space: unset;
+}
+.nav-menu.size2 a wbr { display: none; }
+.nav-menu.size2 a {
     font-size: calc(var(--primary-size) * 0.825rem);
+    line-height: 39px;
+    white-space: nowrap;
 }
-
-
+.nav-menu.size1 a wbr { display: unset; }
+.nav-menu.size1 a {
+    line-height: calc(var(--primary-line-height) * 1.1875rem);
+    white-space: unset;
+}
+.nav-menu.size0 a wbr { display: none; }
+.nav-menu.size0 a {
+    font-size: calc(var(--primary-size) * 0.8rem);
+    line-height: 39px;
+    white-space: nowrap;
+}
+.nav-menu.size-1 a wbr { display: unset; }
+.nav-menu.size-1 a {
+    line-height: calc(var(--primary-line-height) * 1.1875rem);
+    white-space: unset;
+}
+.nav-menu.size-2 a wbr { display: none; }
+.nav-menu.size-2 a {
+    font-size: calc(var(--primary-size) * 0.775rem);
+    line-height: 39px;
+    white-space: nowrap;
+}
+.nav-menu.size-3 a wbr { display: unset; }
+.nav-menu.size-3 a {
+    line-height: calc(var(--primary-line-height) * 1.1875rem);
+    white-space: unset;
+}
 
 
 

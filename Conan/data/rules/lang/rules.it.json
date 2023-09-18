@@ -2,16 +2,19 @@
     "list": {
         "heroes": {
             "title": "Libro degli Eroi",
+            "shorttitle": "Eroi",
             "download": "https://the-overlord.net/index.php?/files/file/156-conan-heroesrulebook-v21-ita/",
             "pages": 24
         },
         "overlord": {
             "title": "Libro dell'Overlord",
+            "shorttitle": "Overlord",
             "download": "https://the-overlord.net/index.php?/files/file/157-conan_king_overlordbook_v21_ita_txt/",
             "pages": 14
         },
         "tomeofskelos": {
             "title": "Libro di Skelos",
+            "shorttitle": "Skelos",
             "download": "https://the-overlord.net/index.php?/files/file/173-tome-of-skelos-italian-translation-final-version-of-the-solocoop-rules/",
             "pages": 12
         }
