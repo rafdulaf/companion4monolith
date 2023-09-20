@@ -771,6 +771,7 @@
             "sculptor": { "name": "Viktor Dragosani", "link": "https://www.facebook.com/search/top?q=viktor%20dragosani" },
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "animal",
+            "size": { "base": { "type": "circle", "diameter": 35 }, "height": 25 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/3413-peinture-montrez-moi-vos-balthus-et-slasher/"
         },
@@ -954,6 +955,7 @@
             "sculptor": { "name": "Viktor Dragosani", "link": "https://www.facebook.com/search/top?q=viktor%20dragosani" },
             "paint": { "name": "Dahkon", "link": "https://the-overlord.com/index.php?/profile/44-dahkon/"},
             "type": "monster",
+            "size": { "base": { "type": "free", "width": 55, "height": 45 }, "height": 25 },
             "origins": ["dragon"],
             "forum": "https://the-overlord.com/index.php?/topic/611-peinture-montrez-moi-vos-dragons/"
         },

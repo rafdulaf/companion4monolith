@@ -349,8 +349,63 @@ var EncyclopediaModels = {
 
     onHide: function() {
     },
-
+    
     openModel: function(id) {
+        function deepEqual(object1, object2) {
+            const keys1 = Object.keys(object1);
+            const keys2 = Object.keys(object2);
+            
+            if (keys1.length !== keys2.length) {
+                return false;
+            }
+            
+            for (const key of keys1) {
+                const val1 = object1[key];
+                const val2 = object2[key];
+                const areObjects = isObject(val1) && isObject(val2);
+                if (areObjects && !deepEqual(val1, val2) ||
+                    !areObjects && val1 !== val2) {
+                    return false;
+                }
+            }
+            
+            return true;
+        }
+        function isObject(object) {
+            return object != null && typeof object === 'object';
+        }
+        function reduceSize(as) {
+            if (as.length < 2)
+            {
+                // 0 or 1 element
+                return as;
+            }
+            else
+            {
+                var diff = [];
+                
+                for (let a = 0; a < as.length; a++)
+                {
+                    var alreadyExists = false;
+                    for (let b = 0; b < diff.length; b++)
+                    {
+                        if (deepEqual(diff[b], as[a]))
+                        {
+                            alreadyExists = true;
+                            continue;
+                        }
+                    }
+                    if (!alreadyExists)
+                    {
+                        diff.push(as[a]);
+                    }
+                }
+                
+                // All the same
+                return diff;
+            }
+        }
+
         var models = EncyclopediaModels._findModelsById(id);
 
         var originsCount = {};
@@ -377,6 +432,7 @@ var EncyclopediaModels = {
         var modelImages = [];
         var painters = [];
         var sculptors = [];
+        var sizes = [];
         for (var i in models)
         {
             var model = models[i];
@@ -398,6 +454,45 @@ var EncyclopediaModels = {
             {
                 sculptors.push(model.sculptor);
             }
+            
+            sizes.push(model.size);
+        }
+        
+        sizes = reduceSize(sizes);
+        var sizeCode = "";
+        if (sizes.length > 1 || (sizes.length == 1 && sizes[0] != null))
+        {
+            sizeCode = "<div class='sizes'>" + EncyclopediaModels._i18n.size + " ";
+            for (var s in sizes)
+            {
+                if (s != 0) sizeCode += " " + EncyclopediaModels._i18n.sizeSeparator + " ";
+                
+                var size = sizes[s];
+                if (size == null) 
+                { 
+                    continue; 
+                }
+                
+                var code = [];
+                if (size.base)
+                {
+                    if (size.base.type == "circle")
+                    {
+                        code.push("⌀ " + size.base.diameter + " mm");
+                    }
+                    else if (size.base.type == "free")
+                    {
+                        code.push("⌀ " + size.base.width + " mm x " + size.base.height + " mm");
+                    }
+                }
+                if (size.height)
+                {
+                    code.push("↕️ " + size.height + " mm");
+                }
+                
+                sizeCode += code.join(" ");
+            }
+            sizeCode += "</div>";
         }
 
         var photos = "<div class='photos'>";
@@ -480,6 +575,7 @@ var EncyclopediaModels = {
                 + heroes
                 + tiles
                 + tokens
+                + sizeCode
                 + sculptor
                 + painter
                 + photos
