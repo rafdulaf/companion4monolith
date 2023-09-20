@@ -25,7 +25,7 @@
 .printcards input[name=spell] { position: absolute; top:-5000px; }
 .printcards input[name=spell] + label { position: relative; display: inline-block; margin-right: 5px; }
 .printcards input[name=spell] + label:before { position: absolute; content: " "; z-index: 1; top: 0; left: 0; right: 0; bottom: 0; background-color: #000000; opacity: 0.2; }
-.printcards input[name=spell] + label:after { position: absolute; content: "\f057"; font-family: 'Font Awesome 5 Free'; font-size: 40px; left: -7px; top: -7px; color: red; }
+.printcards input[name=spell] + label:after { position: absolute; content: "\f057"; font-family: 'Font Awesome 5 Free'; font-weight: 900; font-size: 40px; left: -7px; top: -7px; color: red; }
 .printcards input[name=spell]:checked + label:before { display: none; }
 .printcards input[name=spell]:checked + label:after { content: "\f058"; color: green; }
 @media print { .printcards input[name=spell] + label { margin-right: 0; } }
@@ -359,6 +359,7 @@
 .dialog .spell .field.checkbox label:after {
     content: "\f05e";
     font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
     position: absolute;
     line-height: 36px;
     font-size: 36px;
@@ -374,6 +375,7 @@
 .dialog .spell .field.text label span:before {
     content: "\f059";
     font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
     float: right;
     font-size: 20px;
 }
@@ -395,7 +397,7 @@
 .dialog .spell .field.imagelocation,
 .dialog .spell .field.imagezoom,
 .dialog .spell .field.imagerotation {
-    height: 85
+    height: 85px;
     width: 50%;
     display: inline-block;
     vertical-align: top;

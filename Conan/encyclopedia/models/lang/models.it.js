@@ -5,6 +5,8 @@ EncyclopediaModels._i18n = {
     'fromAnd': "<br/>e",
     'model': "miniatura",
     'models': "miniature",
+    'size': "Taglia:",
+    'sizeSeparator': "o",
     'sculptedBy': "Scolpito da: ",
     'sculptorUnknown': "(Il nome dello scultore non è sicuro)",
     'paintedBy': "Dipinta da: ",

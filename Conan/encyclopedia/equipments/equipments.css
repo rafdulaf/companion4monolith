@@ -8,6 +8,7 @@
 .encyclopedia-equipment-tostudio::before {
     content: "\f591";
     font-family: 'Font Awesome 5 Free';
+    font-weight: 900;;
 }
 
 .equipmentdetails .equipement.card {
