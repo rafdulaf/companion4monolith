@@ -4,14 +4,17 @@
 }
 .encyclopedia-models-zoom::before {
     content: "\f002";
+    font-weight: 900;;
     font-family: 'Font Awesome 5 Free';
 }
 .encyclopedia-models-print:before {
   font-family: "Font Awesome 5 Free";
+  font-weight: 900;;
   content: "\f02f";  
 }
 .encyclopedia-models-forum:before {
    font-family: "Font Awesome 5 Free";
+   font-weight: 900;;
    content: "\f086";  
 }
 #encyclopedia-models-wrapper {
@@ -93,7 +96,8 @@
 }
 
 .modeldetails .heroes,
-.modeldetails .tiles {
+.modeldetails .tiles,
+.modeldetails .sizes {
     line-height: 20px;
     margin: 10px 0;
 }
@@ -104,5 +108,44 @@
     .modeldetails > div.photos img { 
         page-break-before: always;
         width: unset;
+    }
+}
+
+.modeldetails {
+    
+    .size-circle {
+        padding-right: 5px;
+    
+        &::before {
+            content: "\f111";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 400;
+            font-size: 20px;
+            padding-right: 5px;
+        }
+    }
+    
+    .size-square {
+        padding-right: 5px;
+
+        &::before {
+            content: "\f0c8";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 400;
+            font-size: 20px;
+            padding-right: 5px;
+        }
+    }
+
+    .size-height {
+        padding-right: 5px;
+    
+        &::before {
+            content: "\f338";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            font-size: 20px;
+            padding-right: 5px;
+        }
     }
 }

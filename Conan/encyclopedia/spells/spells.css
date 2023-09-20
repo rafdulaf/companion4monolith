@@ -7,6 +7,7 @@
 }
 .encyclopedia-spell-tostudio::before {
     content: "\f591";
+    font-weight: 900;;
     font-family: 'Font Awesome 5 Free';
 }
 

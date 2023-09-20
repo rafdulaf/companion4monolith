@@ -23,7 +23,7 @@
 .printcards input[name=equipment] { position: absolute; top:-5000px; }
 .printcards input[name=equipment] + label { position: relative; display: inline-block; margin-right: 5px; }
 .printcards input[name=equipment] + label:before { position: absolute; content: " "; z-index: 1; top: 0; left: 0; right: 0; bottom: 0; background-color: #000000; opacity: 0.2; }
-.printcards input[name=equipment] + label:after { position: absolute; content: "\f057"; font-family: 'Font Awesome 5 Free'; font-size: 40px; left: -7px; top: -7px; color: red; }
+.printcards input[name=equipment] + label:after { position: absolute; content: "\f057"; font-family: 'Font Awesome 5 Free'; font-weight: 900; font-size: 40px; left: -7px; top: -7px; color: red; }
 .printcards input[name=equipment]:checked + label:before { display: none; }
 .printcards input[name=equipment]:checked + label:after { content: "\f058"; color: green; }
 @media print { .printcards input[name=equipment] + label { margin-right: 0; } }
@@ -416,6 +416,7 @@
 .dialog .equipment .field.require input + label:before {
     content: "\f05e";
     font-family: 'Font Awesome 5 Free';
+    font-weight: 900;;
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
     color: #7F7F7F;
@@ -579,6 +580,7 @@
 .dialog .equipment .field select.dice
 {
   font-family: "Font Awesome 5 Free";
+  font-weight: 900;;
   font-size: 35px;
   width: 60px;
   display: inline-block;
@@ -640,6 +642,7 @@
 .dialog .equipment .field.manipulation .manipexplosive input + label:before,
 .dialog .equipment .field.manipulation .manipnoadd input + label:before {
     content: "\f05e";
+    font-weight: 900;;
     font-family: 'Font Awesome 5 Free';
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
@@ -698,6 +701,7 @@
 }
 .dialog .equipment .field.text label span:before {
     content: "\f059";
+    font-weight: 900;;
     font-family: 'Font Awesome 5 Free';
     float: right;
     font-size: 20px;
@@ -769,12 +773,14 @@
 }
 
 .dialog .equipment-save:before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f0c7";  
+    font-weight: 900;;
+    font-family: "Font Awesome 5 Free";
+    content: "\f0c7";  
 }
 .dialog .equipment-remove:before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f2ed";  
+    font-weight: 900;;
+    font-family: "Font Awesome 5 Free";
+    content: "\f2ed";  
 }
 
 .dialog .equipment .ui-front {

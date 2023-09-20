@@ -7,6 +7,7 @@
             "sculptor": { "name": "Yannick Hennebo", "link": "https://www.facebook.com/yannick.hennebo" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 50 },
             "origins": ["corebox"],
             "forum": "https://the-overlord.com/index.php?/topic/486-peinture-montrez-moi-vos-belit/"
         },
@@ -18,6 +19,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["corebox"],
             "forum": "https://the-overlord.com/index.php?/topic/321-peinture-montrez-moi-vos-conan-par-crom/"
         },
@@ -29,6 +31,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 50 },
             "origins": ["corebox"],
             "forum": "https://the-overlord.com/index.php?/topic/323-peinture-montrez-moi-vos-hadratus/"
         },
@@ -40,6 +43,7 @@
             "sculptor": { "name": "Stéphane Simon", "link": "https://www.facebook.com/profile.php?id=100011531299652" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["corebox"],
             "forum": "https://the-overlord.com/index.php?/topic/322-peinture-montrez-moi-vos-shevatas/"
         },
@@ -51,6 +55,7 @@
             "sculptor": { "name": "Viktor Dragosani", "link": "https://www.facebook.com/search/top?q=viktor%20dragosani" },
             "paint": { "name": "gabzeta", "link": "https://the-overlord.com/index.php?/profile/232-gabzeta/"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["king"],
             "forum": "https://the-overlord.com/index.php?/topic/321-peinture-montrez-moi-vos-conan-par-crom/"
         },
@@ -62,6 +67,7 @@
             "sculptor": { "name": "Stéphane Simon", "link": "https://www.facebook.com/profile.php?id=100011531299652" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 45 },
             "origins": ["king"],
             "forum": "https://the-overlord.com/index.php?/topic/1887-peinture-montrez-moi-vos-ngora/"
         },
@@ -73,6 +79,7 @@
             "sculptor": { "name": "Yannick Hennebo", "link": "https://www.facebook.com/yannick.hennebo" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 35 },
             "origins": ["king"],
             "forum": "https://the-overlord.com/index.php?/topic/682-peinture-montrez-moi-vos-val%C3%A9ria/"
         },
@@ -84,6 +91,7 @@
             "sculptor": { "name": "Grégory Clavilier", "link": "https://www.facebook.com/CLAVILIERG" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["king"],
             "forum": "https://the-overlord.com/index.php?/topic/2231-peinture-montrez-moi-vos-zelata/"
         },
@@ -95,6 +103,7 @@
             "sculptor": { "name": "Stéphane Simon", "link": "https://www.facebook.com/profile.php?id=100011531299652" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/3714-peinture-montrez-moi-vos-amboola/"
         },
@@ -106,6 +115,7 @@
             "sculptor": { "name": "Viktor Dragosani", "link": "https://www.facebook.com/search/top?q=viktor%20dragosani" },
             "paint": { "name": "gabzeta", "link": "https://the-overlord.com/index.php?/profile/232-gabzeta/"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 50 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/3413-peinture-montrez-moi-vos-balthus-et-slasher/"
         },
@@ -117,6 +127,7 @@
             "sculptor": { "name": "Mikh", "link": "https://www.facebook.com/art.mikh" },
             "paint": { "name": "Codicier Ignatius", "link": "https://www.blogger.com/profile/15313921985581945781"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 35 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/321-peinture-montrez-moi-vos-conan-par-crom/"
         },
@@ -128,6 +139,7 @@
             "sculptor": { "name": "Stéphane Simon", "link": "https://www.facebook.com/profile.php?id=100011531299652" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 45 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/321-peinture-montrez-moi-vos-conan-par-crom/"
         },
@@ -139,6 +151,7 @@
             "sculptor": { "name": "Rafal Zelazo", "link": null },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/321-peinture-montrez-moi-vos-conan-par-crom/"
         },
@@ -150,6 +163,7 @@
             "sculptor": { "name": "Jacques-Alexandre Gillois", "link": null },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 45 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/321-peinture-montrez-moi-vos-conan-par-crom/"
         },
@@ -161,6 +175,7 @@
             "sculptor": { "name": "Laslo Forgach", "link": "https://www.facebook.com/LasloForgachsculptor" },
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 30 }, "height": 50 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/2806-peinture-montrez-moi-votre-kerim-shah/"
         },
@@ -172,6 +187,7 @@
             "sculptor": { "name": "Stéphane Simon", "link": "https://www.facebook.com/profile.php?id=100011531299652" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 50 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/3137-peinture-montrez-moi-votre-olgerd-vladislav/"
         },
@@ -183,6 +199,7 @@
             "sculptor": { "name": "Stéphane Simon", "link": "https://www.facebook.com/profile.php?id=100011531299652" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 45 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/3336-peinture-montrez-moi-vos-pallantides/"
         },
@@ -194,6 +211,7 @@
             "sculptor": { "name": "Viktor Dragosani", "link": "https://www.facebook.com/search/top?q=viktor%20dragosani" },
             "paint": { "name": "gabzeta", "link": "https://the-overlord.com/index.php?/profile/232-gabzeta/"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 45 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/2547-peinture-montrez-moi-vos-pelias/"
         },
@@ -205,6 +223,7 @@
             "sculptor": { "name": "Thomas David", "link": "https://www.facebook.com/thomas.david.790256" },
             "paint": { "name": "gabzeta", "link": "https://the-overlord.com/index.php?/profile/232-gabzeta/"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 35 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/486-peinture-montrez-moi-vos-belit/"
         },
@@ -216,6 +235,7 @@
             "sculptor": { "name": "Remy Tremblay", "link": "https://www.facebook.com/remy.tremblay.1232" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/2390-peinture-montrez-moi-vos-taurus/"
         },
@@ -227,6 +247,7 @@
             "sculptor": { "name": "Laslo Forgach", "link": "https://www.facebook.com/LasloForgachsculptor" },
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 30 }, "height": 40 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/3720-peinture-montrez-moi-vos-constantius/"
         },
@@ -238,6 +259,7 @@
             "sculptor": { "name": "Stéphane Simon", "link": "https://www.facebook.com/profile.php?id=100011531299652" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["corebox"],
             "forum": "https://the-overlord.com/index.php?/topic/1001-peinture-montrez-moi-vos-skulthus/"
         },
@@ -249,6 +271,7 @@
             "sculptor": { "name": "Thomas David", "link": "https://www.facebook.com/thomas.david.790256" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "monster",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["corebox"],
             "forum": "https://the-overlord.com/index.php?/topic/2950-peinture-montrez-moi-votre-thak/"
         },
@@ -260,6 +283,7 @@
             "sculptor": { "name": "Mikh", "link": "https://www.facebook.com/art.mikh" },
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["corebox"],
             "forum": "https://the-overlord.com/index.php?/topic/941-zaporavo-vos-versions/"
         },
@@ -271,6 +295,7 @@
             "sculptor": { "name": "Stéphane Simon", "link": "https://www.facebook.com/profile.php?id=100011531299652" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 50 },
             "origins": ["corebox"],
             "forum": "https://the-overlord.com/index.php?/topic/487-peinture-montrez-moi-vos-zogar-sag/"
         },
@@ -282,6 +307,7 @@
             "sculptor": { "name": "Viktor Dragosani", "link": "https://www.facebook.com/search/top?q=viktor%20dragosani" },
             "paint": { "name": "Not Quite Dead", "link": "https://the-overlord.com/index.php?/profile/891-not-quite-dead/"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 50 },
             "origins": ["valvan"],
             "forum": "https://the-overlord.com/index.php?/topic/2901-peinture-montrez-moi-votre-sonj-votre-valkyrie-vanir/"
         },
@@ -293,6 +319,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
             "type": "monster",
+            "size": { "base": { "type": "circle", "diameter": 40 }, "height": 85 },
             "origins": ["yoy"],
             "forum": "https://the-overlord.com/index.php?/topic/559-peinture-yogah-de-yag/"
         },
@@ -304,6 +331,7 @@
             "sculptor": { "name": "Viktor Dragosani", "link": "https://www.facebook.com/search/top?q=viktor%20dragosani" },
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["xcbox"],
             "forum": "https://the-overlord.com/index.php?/topic/486-peinture-montrez-moi-vos-belit/"
         },
@@ -315,6 +343,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron", "unsure": true },
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["xcbox"],
             "forum": "https://the-overlord.com/index.php?/topic/321-peinture-montrez-moi-vos-conan-par-crom/"
         },
@@ -326,6 +355,7 @@
             "sculptor": { "name": "Elfried Perochon", "link": null },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["bbox"],
             "forum": "https://the-overlord.com/index.php?/topic/486-peinture-montrez-moi-vos-belit/"
         },
@@ -337,6 +367,7 @@
             "sculptor": { "name": "Elfried Perochon", "link": null },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["bbox"],
             "forum": "https://the-overlord.com/index.php?/topic/321-peinture-montrez-moi-vos-conan-par-crom/"
         },
@@ -348,6 +379,7 @@
             "sculptor": { "name": "Viktor Dragosani", "link": "https://www.facebook.com/search/top?q=viktor%20dragosani" },
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["ppbox"],
             "forum": "https://the-overlord.com/index.php?/topic/3715-peinture-montrez-moi-vos-taramis-salome/"
         },
@@ -359,6 +391,7 @@
             "sculptor": { "name": "Viktor Dragosani", "link": "https://www.facebook.com/search/top?q=viktor%20dragosani" },
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["ppbox"],
             "forum": "https://the-overlord.com/index.php?/topic/682-peinture-montrez-moi-vos-val%C3%A9ria/"
         },
@@ -370,6 +403,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 60 },
             "origins": ["nordheim"],
             "forum": "https://the-overlord.com/index.php?/topic/776-extension-nordheim/"
         },
@@ -381,6 +415,7 @@
             "sculptor": { "name": "Stéphane Simon", "link": "https://www.facebook.com/profile.php?id=100011531299652" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["khitai"],
             "forum": "https://the-overlord.com/index.php?/topic/774-extension-khitai/"
         },
@@ -392,6 +427,7 @@
             "sculptor": { "name": "Gaël Goumon", "link": "https://www.facebook.com/gael.goumon" },
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["stygia"],
             "forum": "https://the-overlord.com/index.php?/topic/775-stygie/"
         },
@@ -403,6 +439,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 45 },
             "origins": ["corebox"],
             "forum": "https://the-overlord.com/index.php?/topic/2796-peinture-montrez-moi-votre-capitaine/"
         },
@@ -414,6 +451,7 @@
             "sculptor": { "name": "Stéphane Nguyen", "link": "https://www.facebook.com/profile.php?id=100014269356913" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "monster",
+            "size": { "base": { "type": "circle", "diameter": 35 }, "height": 50 },
             "origins": ["corebox"],
             "forum": "https://the-overlord.com/index.php?/topic/1000-peinture-montrez-moi-vos-d%C3%A9mons/"
         },
@@ -424,6 +462,7 @@
             "images": ["data/models/img/giant-snake_1.webp", "data/models/img/giant-snake_2.webp"],
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "size": { "base": { "type": "free", "width": 55, "height": 50 }, "height": 55 },
             "type": "monster",
             "origins": ["corebox"],
             "forum": "https://the-overlord.com/index.php?/topic/609-peinture-montrez-moi-vos-serpents/"
@@ -436,6 +475,7 @@
             "sculptor": { "name": "Jacques-Alexandre Gillois", "link": null },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 45 },
             "origins": ["corebox"],
             "forum": "https://the-overlord.com/index.php?/topic/308-peindre-khosatral-khel/"
         },
@@ -447,6 +487,7 @@
             "sculptor": { "name": "Stéphane Nguyen", "link": "https://www.facebook.com/profile.php?id=100014269356913" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "monster",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 60 },
             "origins": ["corebox"],
             "forum": "https://the-overlord.com/index.php?/topic/1000-peinture-montrez-moi-vos-d%C3%A9mons/"
         },
@@ -458,6 +499,7 @@
             "sculptor": { "name": "Stéphane Simon", "link": "https://www.facebook.com/profile.php?id=100011531299652" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 50 },
             "origins": ["corebox"],
             "forum": "https://the-overlord.com/index.php?/topic/1895-peinture-montrez-moi-vos-gardes-de-b%C3%AAlit/",
             "count": 5
@@ -470,6 +512,7 @@
             "sculptor": { "name": "Yannick Hennebo", "link": "https://www.facebook.com/yannick.hennebo" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 35 },
             "origins": ["corebox"],
             "forum": "https://the-overlord.com/index.php?/topic/608-peinture-montrez-moi-vos-princesses/"
         },
@@ -481,6 +524,7 @@
             "sculptor": { "name": "Stéphane Simon", "link": "https://www.facebook.com/profile.php?id=100011531299652" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["corebox"],
             "forum": "https://the-overlord.com/index.php?/topic/2052-peinture-montrez-moi-vos-archers-bossoniens/",
             "count": 5
@@ -493,6 +537,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 45 },
             "origins": ["corebox"],
             "forum": "https://the-overlord.com/index.php?/topic/2389-peinture-montrez-moi-vos-bossoniens/",
             "count": 15
@@ -505,6 +550,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 45 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/2389-peinture-montrez-moi-vos-bossoniens/",
             "count": 5
@@ -517,6 +563,7 @@
             "sculptor": { "name": "??? ... Gaël Goumon ... Viktor Dragosani", "link": null, "unsure": true },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "animal",
+            "size": { "base": { "type": "circle", "diameter": 35 }, "height": 30 },
             "origins": ["corebox"],
             "forum": "https://the-overlord.com/index.php?/topic/224-peinture-montrez-moi-vos-hy%C3%A8nes/",
             "count": 5
@@ -529,6 +576,7 @@
             "sculptor": { "name": "Stéphane Simon", "link": "https://www.facebook.com/profile.php?id=100011531299652" },
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["corebox"],
             "forum": "https://the-overlord.com/index.php?/topic/107-peinture-montrez-moi-vos-pictes/",
             "count": 15
@@ -541,6 +589,7 @@
             "sculptor": { "name": "Stéphane Simon", "link": "https://www.facebook.com/profile.php?id=100011531299652" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 55 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/107-peinture-montrez-moi-vos-pictes/",
             "count": 5
@@ -553,6 +602,7 @@
             "sculptor": { "name": "Grégory Clavilier", "link": "https://www.facebook.com/CLAVILIERG" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["corebox"],
             "forum": "https://the-overlord.com/index.php?/topic/1547-peinture-montrez-moi-vos-pirates/",
             "count": 15
@@ -565,6 +615,7 @@
             "sculptor": { "name": "??? ... Grégory Clavilier", "link": null, "unsure": true },
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/1547-peinture-montrez-moi-vos-pirates/",
             "count": 5
@@ -577,6 +628,7 @@
             "sculptor": { "name": "Stéphane Nguyen", "link": "https://www.facebook.com/profile.php?id=100014269356913" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "monster",
+            "size": { "base": { "type": "circle", "diameter": 50 }, "height": 65 },
             "origins": ["king"],
             "forum": "https://the-overlord.com/index.php?/topic/1232-peinture-montrez-nous-vos-thog/"
         },
@@ -588,6 +640,7 @@
             "sculptor": { "name": "Viktor Dragosani", "link": "https://www.facebook.com/search/top?q=viktor%20dragosani" },
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "animal",
+            "size": { "base": { "type": "circle", "diameter": 50 }, "height": 35 },
             "origins": ["king"],
             "forum": "https://the-overlord.com/index.php?/topic/936-une-id%C3%A9e-pour-le-lion/"
         },
@@ -599,6 +652,7 @@
             "sculptor": { "name": "??? ... Rafal Zelazo ... Elfried Perochon", "link": null, "unsure": true },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "monster",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/2223-peinture-montrez-moi-vos-momies/",
             "count": 5
@@ -611,6 +665,7 @@
             "sculptor": { "name": "??? ... Rafal Zelazo ... Elfried Perochon", "link": null, "unsure": true },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "monster",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/2223-peinture-montrez-moi-vos-momies/",
             "count": 5
@@ -623,6 +678,7 @@
             "sculptor": { "name": "... Rafal Zelazo ... Elfried Perochon", "link": null, "unsure": true },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "monster",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["king"],
             "forum": "https://the-overlord.com/index.php?/topic/2223-peinture-montrez-moi-vos-momies/",
             "count": 10
@@ -635,6 +691,7 @@
             "sculptor": { "name": "Elfried Perochon", "link": null },
             "paint": { "name": "gabzeta", "link": "https://the-overlord.com/index.php?/profile/232-gabzeta/"},
             "type": "monster",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/3070-peinture-montrez-moi-vos-squelettes/",
             "count": 5
@@ -647,6 +704,7 @@
             "sculptor": { "name": "Elfried Perochon", "link": null },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "monster",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/3070-peinture-montrez-moi-vos-squelettes/",
             "count": 5
@@ -659,6 +717,7 @@
             "sculptor": { "name": "Elfried Perochon", "link": null },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "monster",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["king"],
             "forum": "https://the-overlord.com/index.php?/topic/3070-peinture-montrez-moi-vos-squelettes/",
             "count": 15
@@ -671,6 +730,7 @@
             "sculptor": { "name": "Stéphane Simon", "link": "https://www.facebook.com/profile.php?id=100011531299652" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 50 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/2212-peinture-montrez-moi-vos-chasseurs-de-sorci%C3%A8res/"
         },
@@ -682,6 +742,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "gabzeta", "link": "https://the-overlord.com/index.php?/profile/232-gabzeta/"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/2549-peinture-montrez-moi-vos-akivasha/"
         },
@@ -693,6 +754,7 @@
             "sculptor": { "name": "Stéphane Simon", "link": "https://www.facebook.com/profile.php?id=100011531299652" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 45 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/3722-peinture-montrez-moi-vos-gitara/"
         },
@@ -704,6 +766,7 @@
             "sculptor": { "name": "Gautier Giroud", "link": "https://www.facebook.com/gautier.giroud" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "monster",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 45 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/2255-peinture-montrez-moi-vos-primitifs-hyperbor%C3%A9ens/"
         },
@@ -715,6 +778,7 @@
             "sculptor": { "name": "Stéphane Simon", "link": "https://www.facebook.com/profile.php?id=100011531299652" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 50 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/3721-peinture-montrez-moi-vos-khemsa/"
         },
@@ -726,6 +790,7 @@
             "sculptor": { "name": "Viktor Dragosani", "link": "https://www.facebook.com/search/top?q=viktor%20dragosani" },
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 50 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/3723-peinture-montrez-moi-vos-natohk/"
         },
@@ -737,6 +802,7 @@
             "sculptor": { "name": "Gaël Goumon", "link": "https://www.facebook.com/gael.goumon" },
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 45 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/2391-peinture-montrez-moi-vos-sorciers/"
         },
@@ -749,6 +815,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
             "type": "animal",
+            "size": { "base": { "type": "circle", "diameter": 45 }, "height": 50 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/3519-peinture-montrez-moi-votre-chameau/"
         },
@@ -760,6 +827,7 @@
             "sculptor": { "name": "Laslo Forgach", "link": "https://www.facebook.com/LasloForgachsculptor" },
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/3333-peinture-montrez-moi-votre-archer-kothien/"
         },
@@ -771,6 +839,7 @@
             "sculptor": { "name": "Viktor Dragosani", "link": "https://www.facebook.com/search/top?q=viktor%20dragosani" },
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "animal",
+            "size": { "base": { "type": "circle", "diameter": 35 }, "height": 25 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/3413-peinture-montrez-moi-vos-balthus-et-slasher/"
         },
@@ -782,6 +851,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "gabzeta", "link": "https://the-overlord.com/index.php?/profile/232-gabzeta/"},
             "type": "monster",
+            "size": { "base": { "type": "circle", "diameter": 35 }, "height": 55 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/2339-peinture-montrez-moi-vos-golem-dos/"
         },
@@ -793,6 +863,7 @@
             "sculptor": { "name": "Stéphane Nguyen", "link": "https://www.facebook.com/profile.php?id=100014269356913" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "monster",
+            "size": { "base": { "type": "circle", "diameter": 35 }, "height": 50 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/1000-peinture-montrez-moi-vos-d%C3%A9mons/"
         },
@@ -804,6 +875,7 @@
             "sculptor": { "name": "Gaël Goumon", "link": "https://www.facebook.com/gael.goumon" },
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "monster",
+            "size": { "base": { "type": "circle", "diameter": 35 }, "height": 15 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/2080-peinture-montrez-moi-vos-glups-vos-araign%C3%A9es/"
         },
@@ -815,6 +887,7 @@
             "sculptor": { "name": "Laslo Forgach", "link": "https://www.facebook.com/LasloForgachsculptor" },
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "monster",
+            "size": { "base": { "type": "circle", "diameter": 35 }, "height": 45 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/2238-peinture-montrez-moi-vos-sokoben/"
         },
@@ -826,6 +899,7 @@
             "sculptor": { "name": "Stéphane Nguyen", "link": "https://www.facebook.com/profile.php?id=100014269356913" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "monster",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 45 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/1000-peinture-montrez-moi-vos-d%C3%A9mons/"
         },
@@ -837,6 +911,7 @@
             "sculptor": { "name": "Stéphane Nguyen", "link": "https://www.facebook.com/profile.php?id=100014269356913" },
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
             "type": "monster",
+            "size": { "base": { "type": "free", "width": 85, "height": 100 }, "height": 55 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/2546-peinture-montrez-moi-vos-thaug/"
         },
@@ -848,6 +923,7 @@
             "sculptor": { "name": "Stéphane Simon", "link": "https://www.facebook.com/profile.php?id=100011531299652" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 50 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/107-peinture-montrez-moi-vos-pictes/",
             "count": 5
@@ -860,6 +936,7 @@
             "sculptor": { "name": "Grégory Clavilier", "link": "https://www.facebook.com/CLAVILIERG" },
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
             "type": "monster",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 45 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/2546-peinture-montrez-moi-vos-thaug/",
             "count": 5
@@ -872,6 +949,7 @@
             "sculptor": { "name": "Grégory Clavilier", "link": "https://www.facebook.com/CLAVILIERG" },
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
             "type": "monster",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 35 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/2546-peinture-montrez-moi-vos-thaug/",
             "count": 5
@@ -884,6 +962,7 @@
             "sculptor": { "name": "Grégory Clavilier", "link": "https://www.facebook.com/CLAVILIERG" },
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
             "type": "monster",
+            "size": { "base": { "type": "circle", "diameter": 45 }, "height": 90 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/2546-peinture-montrez-moi-vos-thaug/",
             "count": 3
@@ -896,6 +975,7 @@
             "sculptor": { "name": "Grégory Clavilier", "link": "https://www.facebook.com/CLAVILIERG" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 45 },
             "origins": ["baalpteor"],
             "forum": "https://the-overlord.com/index.php?/topic/1274-peinture-montrez-moi-vos-baal-pteor/"
         },
@@ -907,6 +987,7 @@
             "sculptor": { "name": "Gautier Giroud", "link": "https://www.facebook.com/gautier.giroud" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["blackdragons"],
             "forum": "https://the-overlord.com/index.php?/topic/3727-peinture-montrez-moi-vos-dragons-noirs/",
             "count": 5
@@ -919,6 +1000,7 @@
             "sculptor": { "name": "Gautier Giroud", "link": "https://www.facebook.com/gautier.giroud" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["versus-mode"],
             "forum": "https://the-overlord.com/index.php?/topic/3727-peinture-montrez-moi-vos-dragons-noirs/",
             "count": 5
@@ -931,6 +1013,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 45 },
             "origins": ["blackones"],
             "forum": "https://the-overlord.com/index.php?/topic/3725-peinture-montrez-moi-vos-hommes-noirs/",
             "count": 10
@@ -943,6 +1026,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["crossbowmen"],
             "forum": "https://the-overlord.com/index.php?/topic/3724-peinture-montrez-moi-vos-arbal%C3%A9triers/",
             "count": 10
@@ -955,6 +1039,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["versus-mode"],
             "forum": "https://the-overlord.com/index.php?/topic/3724-peinture-montrez-moi-vos-arbal%C3%A9triers/",
             "count": 5
@@ -967,6 +1052,7 @@
             "sculptor": { "name": "Stéphane Nguyen", "link": "https://www.facebook.com/profile.php?id=100014269356913" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "monster",
+            "size": { "base": { "type": "circle", "diameter": 65 }, "height": 60 },
             "origins": ["demonearth"],
             "forum": "https://the-overlord.com/index.php?/topic/1000-peinture-montrez-moi-vos-d%C3%A9mons/"
         },
@@ -978,6 +1064,7 @@
             "sculptor": { "name": "Viktor Dragosani", "link": "https://www.facebook.com/search/top?q=viktor%20dragosani" },
             "paint": { "name": "Dahkon", "link": "https://the-overlord.com/index.php?/profile/44-dahkon/"},
             "type": "monster",
+            "size": { "base": { "type": "free", "width": 70, "height": 50 }, "height": 60 },
             "origins": ["dragon"],
             "forum": "https://the-overlord.com/index.php?/topic/611-peinture-montrez-moi-vos-dragons/"
         },
@@ -989,6 +1076,7 @@
             "sculptor": { "name": "Elfried Perochon", "link": null },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "animal",
+            "size": { "base": { "type": "circle", "diameter": 35 }, "height": 30 },
             "origins": ["giantwolves"],
             "forum": "https://the-overlord.com/index.php?/topic/1863-peinture-montrez-moi-vos-loups-g%C3%A9ants/",
             "count": 10
@@ -1001,6 +1089,7 @@
             "sculptor": { "name": "Elfried Perochon", "link": null },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "animal",
+            "size": { "base": { "type": "circle", "diameter": 35 }, "height": 30 },
             "origins": ["king"],
             "forum": "https://the-overlord.com/index.php?/topic/1863-peinture-montrez-moi-vos-loups-g%C3%A9ants/"
         },
@@ -1012,6 +1101,7 @@
             "sculptor": { "name": "Laslo Forgach", "link": "https://www.facebook.com/LasloForgachsculptor" },
             "paint": { "name": "Not Quite Dead", "link": "https://the-overlord.com/index.php?/profile/891-not-quite-dead/"},
             "type": "monster",
+            "size": { "base": { "type": "circle", "diameter": 50 }, "height": 35 },
             "origins": ["sabretoothtiger"],
             "forum": "https://the-overlord.com/index.php?/topic/848-peindre-le-tigre-%C3%A0-dents-de-sabre/"
         },
@@ -1023,6 +1113,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["kushwitchhunters"],
             "forum": "https://the-overlord.com/index.php?/topic/2212-peinture-montrez-moi-vos-chasseurs-de-sorci%C3%A8res/"
         },
@@ -1034,6 +1125,7 @@
             "sculptor": { "name": "Stéphane Simon", "link": "https://www.facebook.com/profile.php?id=100011531299652" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["kushwitchhunters"],
             "forum": "https://the-overlord.com/index.php?/topic/2212-peinture-montrez-moi-vos-chasseurs-de-sorci%C3%A8res/"
         },
@@ -1045,6 +1137,7 @@
             "sculptor": { "name": "Stéphane Simon", "link": "https://www.facebook.com/profile.php?id=100011531299652" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["kushwitchhunters"],
             "forum": "https://the-overlord.com/index.php?/topic/2212-peinture-montrez-moi-vos-chasseurs-de-sorci%C3%A8res/"
         },
@@ -1056,6 +1149,7 @@
             "sculptor": { "name": "Gautier Giroud", "link": "https://www.facebook.com/gautier.giroud" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 50 },
             "origins": ["kushwitchhunters"],
             "forum": "https://the-overlord.com/index.php?/topic/2212-peinture-montrez-moi-vos-chasseurs-de-sorci%C3%A8res/"
         },
@@ -1067,6 +1161,7 @@
             "sculptor": { "name": "Viktor Dragosani", "link": "https://www.facebook.com/search/top?q=viktor%20dragosani" },
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["nordheim"],
             "forum": "https://the-overlord.com/index.php?/topic/776-extension-nordheim/"
         },
@@ -1078,6 +1173,7 @@
             "sculptor": { "name": "Viktor Dragosani", "link": "https://www.facebook.com/search/top?q=viktor%20dragosani" },
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
             "type": "monster",
+            "size": { "base": { "type": "circle", "diameter": 55 }, "height": 65 },
             "origins": ["nordheim"],
             "forum": "https://the-overlord.com/index.php?/topic/776-extension-nordheim/"
         },
@@ -1089,6 +1185,7 @@
             "sculptor": { "name": "Viktor Dragosani", "link": "https://www.facebook.com/search/top?q=viktor%20dragosani" },
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
             "type": "monster",
+            "size": { "base": { "type": "circle", "diameter": 55 }, "height": 65 },
             "origins": ["nordheim"],
             "forum": "https://the-overlord.com/index.php?/topic/776-extension-nordheim/"
         },
@@ -1100,6 +1197,7 @@
             "sculptor": { "name": "Gaël Goumon", "link": "https://www.facebook.com/gael.goumon" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["nordheim"],
             "forum": "https://the-overlord.com/index.php?/topic/776-extension-nordheim/",
             "count": 10
@@ -1112,6 +1210,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
             "type": "animal",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 35 },
             "origins": ["nordheim"],
             "forum": "https://the-overlord.com/index.php?/topic/776-extension-nordheim/",
             "count": 5
@@ -1124,6 +1223,7 @@
             "sculptor": { "name": "Stéphane Simon", "link": "https://www.facebook.com/profile.php?id=100011531299652" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["nordheim"],
             "forum": "https://the-overlord.com/index.php?/topic/776-extension-nordheim/",
             "count": 5
@@ -1136,6 +1236,7 @@
             "sculptor": { "name": "Stéphane Simon", "link": "https://www.facebook.com/profile.php?id=100011531299652" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 55 },
             "origins": ["khitai"],
             "forum": "https://the-overlord.com/index.php?/topic/774-extension-khitai/"
         },
@@ -1147,6 +1248,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 45 },
             "origins": ["khitai"],
             "forum": "https://the-overlord.com/index.php?/topic/774-extension-khitai/",
             "count": 5
@@ -1159,6 +1261,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 45 },
             "origins": ["khitai"],
             "forum": "https://the-overlord.com/index.php?/topic/774-extension-khitai/",
             "count": 5
@@ -1171,6 +1274,7 @@
             "sculptor": { "name": "Stéphane Simon", "link": "https://www.facebook.com/profile.php?id=100011531299652" },
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["khitai"],
             "forum": "https://the-overlord.com/index.php?/topic/774-extension-khitai/",
             "count": 5
@@ -1183,6 +1287,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
             "type": "animal",
+            "size": { "base": { "type": "circle", "diameter": 35 }, "height": 30 },
             "origins": ["khitai"],
             "forum": "https://the-overlord.com/index.php?/topic/774-extension-khitai/",
             "count": 5
@@ -1195,6 +1300,7 @@
             "sculptor": { "name": "Gautier Giroud", "link": "https://www.facebook.com/gautier.giroud" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 45 },
             "origins": ["stygia"],
             "forum": "https://the-overlord.com/index.php?/topic/775-stygie/"
         },
@@ -1206,6 +1312,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
             "type": "monster",
+            "size": { "base": { "type": "circle", "diameter": 60 }, "height": 40 },
             "origins": ["stygia"],
             "forum": "https://the-overlord.com/index.php?/topic/775-stygie/"
         },
@@ -1217,6 +1324,7 @@
             "sculptor": { "name": "Gaël Goumon", "link": "https://www.facebook.com/gael.goumon" },
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "monster",
+            "size": { "base": { "type": "circle", "diameter": 35 }, "height": 20 },
             "origins": ["stygia"],
             "forum": "https://the-overlord.com/index.php?/topic/775-stygie/",
             "count": 10
@@ -1229,6 +1337,7 @@
             "sculptor": { "name": "Gaël Goumon", "link": "https://www.facebook.com/gael.goumon" },
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "monster",
+            "size": { "base": { "type": "circle", "diameter": 35 }, "height": 20 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/775-stygie/"
         },
@@ -1240,6 +1349,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 45 },
             "origins": ["stygia"],
             "forum": "https://the-overlord.com/index.php?/topic/775-stygie/",
             "count": 5
@@ -1252,6 +1362,7 @@
             "sculptor": { "name": "Stéphane Simon", "link": "https://www.facebook.com/profile.php?id=100011531299652" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 35 },
             "origins": ["stygia"],
             "forum": "https://the-overlord.com/index.php?/topic/775-stygie/",
             "count": 5
@@ -1264,6 +1375,7 @@
             "sculptor": { "name": "Stéphane Simon", "link": "https://www.facebook.com/profile.php?id=100011531299652" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/4228-peinture-spartiates/"
         },
@@ -1275,6 +1387,7 @@
             "sculptor": { "name": "Grégory Clavilier", "link": "https://www.facebook.com/CLAVILIERG" },
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
             "type": "scenery",
+            "size": { "base": { "type": "free", "width": 25, "height": 15 }, "height": 15 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/",
             "count": 5
@@ -1287,6 +1400,7 @@
             "sculptor": { "name": "Grégory Clavilier", "link": "https://www.facebook.com/CLAVILIERG" },
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
             "type": "scenery",
+            "size": { "base": { "type": "free", "width": 25, "height": 15 }, "height": 15 },
             "origins": ["adventurepack"],
             "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/",
             "count": 5
@@ -1299,6 +1413,7 @@
             "sculptor": { "name": "Grégory Clavilier", "link": "https://www.facebook.com/CLAVILIERG" },
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
             "type": "scenery",
+            "size": { "base": { "type": "free", "width": 25, "height": 15 }, "height": 15 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/",
             "count": 5
@@ -1311,6 +1426,7 @@
             "sculptor": null,
             "paint": { "name": "Cochon", "link": "https://the-overlord.com/index.php?/profile/5240-cochon/"},
             "type": "scenery",
+            "size": { "base": { "type": "free", "width": 40, "height": 25 }, "height": 15 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/",
             "count": 3
@@ -1322,6 +1438,7 @@
             "sculptor": null,
             "paint": { "name": "Cochon", "link": "https://the-overlord.com/index.php?/profile/5240-cochon/"},
             "type": "scenery",
+            "size": { "base": { "type": "free", "width": 15, "height": 10 }, "height": 5 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/",
             "count": 5
@@ -1333,6 +1450,7 @@
             "sculptor": null,
             "paint": { "name": "Cochon", "link": "https://the-overlord.com/index.php?/profile/5240-cochon/"},
             "type": "scenery",
+            "size": { "base": { "type": "free", "width": 30, "height": 10 }, "height": 5 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/",
             "count": 5
@@ -1345,6 +1463,7 @@
             "sculptor": { "name": "Grégory Clavilier", "link": "https://www.facebook.com/CLAVILIERG" },
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
             "type": "scenery",
+            "size": { "base": { "type": "circle", "diameter": 20 }, "height": 30 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/",
             "count": 2
@@ -1356,6 +1475,7 @@
             "sculptor": { "name": "Grégory Clavilier", "link": "https://www.facebook.com/CLAVILIERG" },
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
             "type": "scenery",
+            "size": { "base": { "type": "circle", "diameter": 20 }, "height": 30 },
             "origins": ["adventurepack"],
             "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/",
             "count": 2
@@ -1367,6 +1487,7 @@
             "sculptor": { "name": "Grégory Clavilier", "link": "https://www.facebook.com/CLAVILIERG" },
             "paint": { "name": "Cochon", "link": "https://the-overlord.com/index.php?/profile/5240-cochon/"},
             "type": "scenery",
+            "size": { "base": { "type": "free", "width": 40, "height": 10 }, "height": 10 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/"
         },
@@ -1377,6 +1498,7 @@
             "sculptor": { "name": "Grégory Clavilier", "link": "https://www.facebook.com/CLAVILIERG" },
             "paint": { "name": "Cochon", "link": "https://the-overlord.com/index.php?/profile/5240-cochon/"},
             "type": "scenery",
+            "size": { "base": { "type": "free", "width": 40, "height": 10 }, "height": 10 },
             "origins": ["adventurepack"],
             "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/"
         },
@@ -1387,6 +1509,7 @@
             "sculptor": { "name": "Grégory Clavilier", "link": "https://www.facebook.com/CLAVILIERG" },
             "paint": { "name": "Cochon", "link": "https://the-overlord.com/index.php?/profile/5240-cochon/"},
             "type": "scenery",
+            "size": { "base": { "type": "free", "width": 25, "height": 10 }, "height": 45 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/"
         },
@@ -1397,6 +1520,7 @@
             "sculptor": { "name": "Grégory Clavilier", "link": "https://www.facebook.com/CLAVILIERG" },
             "paint": { "name": "Cochon", "link": "https://the-overlord.com/index.php?/profile/5240-cochon/"},
             "type": "scenery",
+            "size": { "base": { "type": "free", "width": 15, "height": 10 }, "height": 40 },
             "origins": ["stretchgoal"],
             "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/",
             "count": 5
@@ -1409,6 +1533,7 @@
             "sculptor": { "name": "Grégory Clavilier", "link": "https://www.facebook.com/CLAVILIERG" },
             "paint": { "name": "Cochon", "link": "https://the-overlord.com/index.php?/profile/5240-cochon/"},
             "type": "scenery",
+            "size": { "base": { "type": "circle", "diameter": 15 }, "height": 20 },
             "origins": ["adventurepack"],
             "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/",
             "count": 5
@@ -1420,6 +1545,7 @@
             "sculptor": { "name": "Grégory Clavilier", "link": "https://www.facebook.com/CLAVILIERG" },
             "paint": { "name": "Cochon", "link": "https://the-overlord.com/index.php?/profile/5240-cochon/"},
             "type": "scenery",
+            "size": { "base": { "type": "free", "width": 50, "height": 15 }, "height": 30 },
             "origins": ["adventurepack"],
             "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/"
         },
@@ -1431,6 +1557,7 @@
             "sculptor": { "name": "Grégory Clavilier", "link": "https://www.facebook.com/CLAVILIERG" },
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
             "type": "scenery",
+            "size": { "base": { "type": "free", "width": 30, "height": 25 }, "height": 50 },
             "origins": ["doorpack"],
             "forum": "https://the-overlord.com/index.php?/topic/1862-peinture-montrez-moi-votre-mobilier/",
             "count": 10
@@ -1443,6 +1570,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "Zalex", "link": "https://the-overlord.com/index.php?/profile/106-zalex/" },
             "type": "monster",
+            "size": { "base": { "type": "circle", "diameter": 60 }, "height": 55 },
             "forum": "https://the-overlord.com/index.php?/topic/4625-peinture-montrez-moi-vos-fils-de-set/",
             "origins": ["conqueror-sg"]
         },
@@ -1454,6 +1582,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "monster",
+            "size": { "base": { "type": "free", "width": 105, "height": 70 }, "height": 80 },
             "forum": "https://the-overlord.com/index.php?/topic/4635-peinture-montrez-moi-vos-fl%C3%A9aux-de-set/",
             "origins": ["conqueror-sg"]
         },   
@@ -1465,6 +1594,7 @@
             "sculptor": { "name": "Martin Lavat", "link": "https://www.facebook.com/martin.lavat.10" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "monster",
+            "size": { "base": { "type": "circle", "diameter": 60 }, "height": 60 },
             "forum": "https://the-overlord.com/index.php?/topic/4630-peinture-montrez-moi-vos-serviteurs-dahriman/",
             "origins": ["conqueror-sg"]
         },   
@@ -1476,6 +1606,7 @@
             "sculptor": { "name": "Stéphane Nguyen", "link": "https://www.facebook.com/profile.php?id=100014269356913" },
             "paint": { "name": "Epaka", "link": "https://the-overlord.net/index.php?/profile/266-epaka/" },
             "type": "monster",
+            "size": { "base": { "type": "circle", "diameter": 45 }, "height": 60 },
             "forum": "https://the-overlord.net/index.php?/topic/562-neither-man-beast-nor-devil-show-your-winged-ape/",
             "origins": ["conqueror-sg"]
         },
@@ -1487,6 +1618,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "Telgar", "link": "https://the-overlord.com/index.php?/profile/291-telgar/" },
             "type": "monster",
+            "size": { "base": { "type": "free", "width": 105, "height": 70 }, "height": 140 },
             "origins": ["conqueror-sg"],
             "forum": "https://the-overlord.com/index.php?/topic/4627-peinture-montrez-moi-vos-horreurs-sans-nom/"
         },
@@ -1498,6 +1630,7 @@
             "sculptor": { "name": "Stéphane Nguyen", "link": "https://www.facebook.com/profile.php?id=100014269356913" },
             "paint": { "name": "Epaka", "link": "https://the-overlord.net/index.php?/profile/266-epaka/" },
             "type": "monster",
+            "size": { "base": { "type": "circle", "diameter": 45 }, "height": 60 },
             "forum": "https://the-overlord.net/index.php?/topic/562-neither-man-beast-nor-devil-show-your-winged-ape/",
             "origins": ["corinthia"]
         },
@@ -1509,6 +1642,7 @@
             "sculptor": { "name": "Grégory Clavilier", "link": "https://www.facebook.com/CLAVILIERG" },
             "paint": { "name": "Jared Rutledge", "link": "https://boardgamegeek.com/user/biosludge"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "forum": "https://the-overlord.com/index.php?/topic/4642-peinture-montrez-moi-vos-civils/",
             "origins": ["corinthia"],
             "count": 15
@@ -1521,6 +1655,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "monster",
+            "size": { "base": { "type": "circle", "diameter": 45 }, "height": 60 },
             "origins": ["conqueror"],
             "count": 5,
             "forum": "https://the-overlord.com/index.php?/topic/3741-peinture-montrez-moi-vos-profonds/"
@@ -1533,6 +1668,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "animal",
+            "size": { "base": { "type": "circle", "diameter": 45 }, "height": 55 },
             "origins": ["conqueror"],
             "count": 5,
             "forum": "https://the-overlord.com/index.php?/topic/4624-peinture-montrez-moi-vos-enfants-de-gullah/"
@@ -1545,6 +1681,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 45 }, "height": 40 },
             "origins": ["conqueror"],
             "count": 5,
             "forum": "https://the-overlord.com/index.php?/topic/4270-peinture-montrez-moi-vos-balistes-d%C3%A9lite/"
@@ -1557,6 +1694,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "monster",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 30 },
             "origins": ["conqueror"],
             "count": 10,
             "forum": "https://the-overlord.com/index.php?/topic/4633-peinture-montrez-moi-vos-goules/"
@@ -1569,6 +1707,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["conqueror"],
             "count": 10,
             "forum": "https://the-overlord.com/index.php?/topic/4632-peinture-montrez-moi-vos-archers-pirates/"
@@ -1581,6 +1720,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "PiggyPog", "link": "https://www.facebook.com/PiggyPogWorkshop/" },
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 50 },
             "origins": ["conqueror"],
             "count": 10,
             "forum": "https://the-overlord.com/index.php?/topic/4285-peinture-montrez-moi-vos-acolytes-khityens/"
@@ -1593,6 +1733,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "monster",
+            "size": { "base": { "type": "circle", "diameter": 30 }, "height": 50 },
             "origins": ["conqueror"],
             "forum": "https://the-overlord.com/index.php?/topic/4626-peinture-montrez-moi-vos-gorm/"
         },
@@ -1604,6 +1745,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 30 }, "height": 40 },
             "origins": ["conqueror"],
             "forum": "https://the-overlord.com/index.php?/topic/1274-peinture-montrez-moi-vos-baal-pteor/"
         },
@@ -1615,6 +1757,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 55 },
             "origins": ["conqueror"],
             "forum": "https://the-overlord.com/index.php?/topic/321-peinture-montrez-moi-vos-conan-par-crom/"
         },
@@ -1626,6 +1769,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["conqueror"],
             "forum": "https://the-overlord.com/index.php?/topic/321-peinture-montrez-moi-vos-conan-par-crom/"
         },
@@ -1637,6 +1781,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 35 },
             "origins": ["conqueror"],
             "forum": "https://the-overlord.com/index.php?/topic/4268-peinture-montrez-moi-vos-nyaga/"
         },
@@ -1648,6 +1793,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 35 },
             "origins": ["conqueror"],
             "forum": "https://the-overlord.com/index.php?/topic/4620-peinture-montrez-moi-vos-zenobia/"
         },
@@ -1659,6 +1805,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 50 },
             "origins": ["conqueror"],
             "forum": "https://the-overlord.com/index.php?/topic/4267-peinture-montrez-moi-vos-xaltotun/"
         },
@@ -1670,6 +1817,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "monster",
+            "size": { "base": { "type": "circle", "diameter": 45 }, "height": 80 },
             "origins": ["conqueror"],
             "forum": "https://the-overlord.com/index.php?/topic/3742-peinture-montrez-moi-vos-manifestations-de-mitra/"
         },
@@ -1681,6 +1829,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "monster",
+            "size": { "base": { "type": "free", "width": 75, "height": 50 }, "height": 50 },
             "origins": ["conqueror"],
             "forum": "https://the-overlord.com/index.php?/topic/4269-peinture-montrez-moi-vos-araign%C3%A9es-zamoriennes/"
         },
@@ -1692,6 +1841,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
             "type": "monster",
+            "size": { "base": { "type": "free", "width": 100, "height": 60 }, "height": 65 },
             "origins": ["conqueror"],
             "forum": "https://the-overlord.com/index.php?/topic/3743-peinture-montrez-moi-vos-manifestation-de-yog/"
         },
@@ -1703,6 +1853,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "monster",
+            "size": { "base": { "type": "circle", "diameter": 30 }, "height": 45 },
             "origins": ["shadow-kingdom"],
             "forum": "https://the-overlord.com/index.php?/topic/4638-peinture-montrez-moi-vos-thulsa-doom/"
         },
@@ -1714,6 +1865,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["shadow-kingdom"],
             "forum": "https://the-overlord.com/index.php?/topic/4639-peinture-montrez-moi-vos-rois-kull/"
         },
@@ -1725,6 +1877,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 45 },
             "origins": ["shadow-kingdom"],
             "forum": "https://the-overlord.com/index.php?/topic/4640-peinture-montrez-moi-vos-brule/"
         },
@@ -1736,6 +1889,7 @@
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
             "type": "monster",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 30 },
             "origins": ["shadow-kingdom"],
             "count": 10,
             "forum": "https://the-overlord.com/index.php?/topic/4631-peinture%C2%A0montrez-moi-vos-hommes-serpents/"
@@ -1748,6 +1902,7 @@
             "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
             "paint": { "name": "Nicolas Deze", "link": "https://www.facebook.com/nikorasu.deze"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 45 },
             "origins": ["red-nails"],
             "forum": "https://the-overlord.com/index.php?/topic/321-peinture-montrez-moi-vos-conan-par-crom/"
         },
@@ -1759,6 +1914,7 @@
             "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
             "paint": { "name": "Nicolas Deze", "link": "https://www.facebook.com/nikorasu.deze"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 45 },
             "origins": ["red-nails"],
             "forum": "https://the-overlord.com/index.php?/topic/682-peinture-montrez-moi-vos-val%C3%A9ria/"
         },
@@ -1770,6 +1926,7 @@
             "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
             "paint": { "name": "Rémy Tremblay", "link": "https://www.facebook.com/remy.tremblay.1232"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 45 },
             "origins": ["red-nails"],
             "forum": "https://the-overlord.com/index.php?/topic/58551-peinture-montrez-moi-vos-olmec/"
         },
@@ -1781,6 +1938,7 @@
             "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
             "paint": { "name": "Jan-Willem van der Pijl", "link": "https://www.facebook.com/groups/1648339468780089/user/100000866181678" },
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 50 },
             "origins": ["red-nails"],
             "forum": "https://the-overlord.com/index.php?/topic/58558-peinture-montrez-moi-vos-tascela/"
         },
@@ -1792,6 +1950,7 @@
             "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
             "paint": { "name": "Rémy Tremblay", "link": "https://www.facebook.com/remy.tremblay.1232"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 50 },
             "origins": ["red-nails"],
             "forum": "https://the-overlord.com/index.php?/topic/58560-peinture-montrez-moi-vos-techotl/"
         },
@@ -1803,6 +1962,7 @@
             "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
             "paint": { "name": "Jan-Willem van der Pijl", "link": "https://www.facebook.com/groups/1648339468780089/user/100000866181678" },
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 45 },
             "origins": ["red-nails"],
             "forumTODO": ""
         },
@@ -1814,6 +1974,7 @@
             "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
             "paint": { "name": "Arzok", "link": "https://the-overlord.com/index.php?/profile/141-arzok/" },
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["red-nails"],
             "count": 5,
             "forum": "https://the-overlord.com/index.php?/topic/58542-peinture-montrez-moi-vos-chasseurs-xotalancas-lanciers-xotalancas/"
@@ -1826,6 +1987,7 @@
             "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
             "paint": { "name": "Jan-Willem van der Pijl", "link": "https://www.facebook.com/groups/1648339468780089/user/100000866181678" },
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["red-nails"],
             "count": 5,
             "forum": "https://the-overlord.com/index.php?/topic/58541-peinture-montrez-moi-vos-assassins-xotalancas-chasseuses-xotalancas-tlazitlans/"
@@ -1838,6 +2000,7 @@
             "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
             "paint": { "name": "Jan-Willem van der Pijl", "link": "https://www.facebook.com/groups/1648339468780089/user/100000866181678" },
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 45 },
             "origins": ["red-nails"],
             "count": 5,
             "forum": "https://the-overlord.com/index.php?/topic/58545-peinture-montrez-moi-vos-épéistes-tecuhltlis-tlazitlans/"
@@ -1850,6 +2013,7 @@
             "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
             "paint": { "name": "Jan-Willem van der Pijl", "link": "https://www.facebook.com/groups/1648339468780089/user/100000866181678" },
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["red-nails"],
             "count": 6,
             "forum": "https://the-overlord.com/index.php?/topic/58546-peinture-montrez-moi-vos-guerriers-xotalancas-tlazitlans/"
@@ -1862,6 +2026,7 @@
             "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
             "paint": { "name": "Nicolas Deze", "link": "https://www.facebook.com/nikorasu.deze"},
             "type": "monster",
+            "size": { "base": { "type": "circle", "diameter": 60 }, "height": 125 },
             "origins": ["red-nails"],
             "forum": "https://the-overlord.com/index.php?/topic/58539-peinture-montrez-moi-votre-dragon-de-xuchotl/"
         },
@@ -1873,6 +2038,7 @@
             "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
             "paint": { "name": "Jan-Willem van der Pijl", "link": "https://www.facebook.com/groups/1648339468780089/user/100000866181678" },
             "type": "monster",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 45 },
             "origins": ["red-nails"],
             "count": 6,
             "forum": "https://the-overlord.com/index.php?/topic/58543-peinture-montrez-moi-vos-crâne-ardent-squelettes-ardents/"
@@ -1885,6 +2051,7 @@
             "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
             "paint": { "name": "Jan-Willem van der Pijl", "link": "https://www.facebook.com/groups/1648339468780089/user/100000866181678" },
             "type": "monster",
+            "size": { "base": { "type": "circle", "diameter": 45 }, "height": 50 },
             "origins": ["red-nails"],
             "forum": "https://the-overlord.com/index.php?/topic/58540-peinture-montrez-moi-votre-être-rampant/"
         },
@@ -1896,6 +2063,7 @@
             "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
             "paint": { "name": "Arzok", "link": "https://the-overlord.com/index.php?/profile/141-arzok/" },
             "type": "animal",
+            "size": { "base": { "type": "circle", "diameter": 35 }, "height": 25 },
             "origins": ["red-nails"],
             "count": 5,
             "forum": "https://the-overlord.com/index.php?/topic/58544-peinture-montrez-moi-vos-crocodiles/"
@@ -1908,6 +2076,7 @@
             "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
             "paint": { "name": "Arzok", "link": "https://the-overlord.com/index.php?/profile/141-arzok/" },
             "type": "scenery",
+            "size": { "base": { "type": "circle", "diameter": 30 }, "height": 80 },
             "origins": ["red-nails"],
             "forum": "https://the-overlord.com/index.php?/topic/58552-peinture-montrez-moi-votre-pilier-18/"
         },
@@ -1919,6 +2088,7 @@
             "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
             "paint": { "name": "Jan-Willem van der Pijl", "link": "https://www.facebook.com/groups/1648339468780089/user/100000866181678" },
             "type": "monster",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 35 },
             "origins": ["worms-earth"],
             "count": 8,
             "forum": "https://the-overlord.com/index.php?/topic/58550-peinture-montrez-moi-vos-serviteurs-de-bran-vers-de-la-terre/"
@@ -1931,6 +2101,7 @@
             "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
             "paint": { "name": "Jan-Willem van der Pijl", "link": "https://www.facebook.com/groups/1648339468780089/user/100000866181678" },
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 45 },
             "origins": ["worms-earth"],
             "forum": "https://the-overlord.com/index.php?/topic/58561-peinture-montrez-moi-vos-atla/"
         },
@@ -1942,6 +2113,7 @@
             "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
             "paint": { "name": "Jan-Willem van der Pijl", "link": "https://www.facebook.com/groups/1648339468780089/user/100000866181678" },
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["worms-earth"],
             "forum": "https://the-overlord.com/index.php?/topic/58562-peinture-montrez-moi-vos-bran-mak-morn/"
         },
@@ -1953,6 +2125,7 @@
             "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
             "paint": { "name": "Elliott Abergel", "link": "https://www.facebook.com/elliott.abergel"},
             "type": "human",
+            "size": { "base": { "type": "free", "width": 60, "height": 30 }, "height": 70 },
             "origins": ["fbox"],
             "forum": "https://the-overlord.com/index.php?/topic/321-peinture-montrez-moi-vos-conan-par-crom/"
         },
@@ -1964,6 +2137,7 @@
             "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
             "paint": { "name": "Elliott Abergel", "link": "https://www.facebook.com/elliott.abergel"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 30 }, "height": 40 },
             "origins": ["fbox"],
             "forum": "https://the-overlord.com/index.php?/topic/321-peinture-montrez-moi-vos-conan-par-crom/"
         },
@@ -1975,6 +2149,7 @@
             "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
             "paint": { "name": "Elliott Abergel", "link": "https://www.facebook.com/elliott.abergel"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 35 },
             "origins": ["versus-mode"],
             "count": 4,
             "forum": "https://the-overlord.com/index.php?/topic/58547-peinture-montrez-moi-vos-mercenaires-kushites-aja/"
@@ -1987,6 +2162,7 @@
             "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
             "paint": { "name": "Elliott Abergel", "link": "https://www.facebook.com/elliott.abergel"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
             "origins": ["versus-mode"],
             "count": 4,
             "forum": "https://the-overlord.com/index.php?/topic/58549-peinture-montrez-moi-vos-mercenaires-gundermen-nestor/"
@@ -1999,6 +2175,7 @@
             "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
             "paint": { "name": "Elliott Abergel", "link": "https://www.facebook.com/elliott.abergel"},
             "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 55 },
             "origins": ["versus-mode"],
             "count": 4,
             "forum": "https://the-overlord.com/index.php?/topic/58548-peinture-montrez-moi-vos-mercenaires-hyrkaniens-ganbaatar/"
