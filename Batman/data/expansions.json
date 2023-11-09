@@ -10,10 +10,13 @@
             "id": "season2-expansions",
             "column": "left"
         }, {
-            "id": "season2-add-on",
+            "id": "season3-expansions",
             "column": "left"
         }, {
-            "id": "season2-picking-zone",
+            "id": "picking-zone-left",
+            "column": "left"
+        }, {
+            "id": "picking-zone-right",
             "column": "right"
         }
     ],
@@ -71,115 +74,143 @@
         }, 
         {
             "id": "poison-ivy-new-52",
-            "type": "season2-add-on"
+            "type": "picking-zone-left"
         }, 
         {
             "id": "batman-new-52",
-            "type": "season2-add-on"
+            "type": "picking-zone-left"
         }, 
         {
             "id": "prof-pyg-gang",
-            "type": "season2-add-on"
+            "type": "picking-zone-left"
         }, 
         {
             "id": "batman-beyond",
-            "type": "season2-picking-zone"
+            "type": "picking-zone-right"
         }, 
         {
             "id": "batman-rebirth",
-            "type": "season2-picking-zone"
+            "type": "picking-zone-right"
         }, 
         {
             "id": "gang-robin",
-            "type": "season2-picking-zone"
+            "type": "picking-zone-right"
         }, 
         {
             "id": "hawkfire",
-            "type": "season2-picking-zone"
+            "type": "picking-zone-right"
         }, 
         {
             "id": "etrigan",
-            "type": "season2-picking-zone"
+            "type": "picking-zone-right"
         }, 
         {
             "id": "catwoman",
-            "type": "season2-picking-zone"
+            "type": "picking-zone-right"
         }, 
         {
             "id": "hounds",
-            "type": "season2-picking-zone"
+            "type": "picking-zone-right"
         }, 
         {
             "id": "reaper",
-            "type": "season2-picking-zone"
+            "type": "picking-zone-right"
         }, 
         {
             "id": "carmine-falcone",
-            "type": "season2-picking-zone"
+            "type": "picking-zone-right"
         }, 
         {
             "id": "arnold-wesker",
-            "type": "season2-picking-zone"
+            "type": "picking-zone-right"
         }, 
         {
             "id": "peyton-riley",
-            "type": "season2-picking-zone"
+            "type": "picking-zone-right"
         }, 
         {
             "id": "white-rabbit",
-            "type": "season2-picking-zone"
+            "type": "picking-zone-right"
         }, 
         {
             "id": "uriah-boone",
-            "type": "season2-picking-zone"
+            "type": "picking-zone-right"
         }, 
         {
             "id": "shen-fang",
-            "type": "season2-picking-zone"
+            "type": "picking-zone-right"
         }, 
         {
             "id": "cluemaster",
-            "type": "season2-picking-zone"
+            "type": "picking-zone-right"
         }, 
         {
             "id": "deacon-blackfire",
-            "type": "season2-picking-zone"
+            "type": "picking-zone-right"
         }, 
         {
             "id": "kgbeast",
-            "type": "season2-picking-zone"
+            "type": "picking-zone-right"
         }, 
         {
             "id": "nobody",
-            "type": "season2-picking-zone"
+            "type": "picking-zone-right"
         }, 
         {
             "id": "owlman-lincoln-march",
-            "type": "season2-picking-zone"
+            "type": "picking-zone-right"
         }, 
         {
             "id": "amygdala",
-            "type": "season2-picking-zone"
+            "type": "picking-zone-right"
         }, 
         {
             "id": "architect",
-            "type": "season2-picking-zone"
+            "type": "picking-zone-right"
         }, 
         {
             "id": "ghost-dragons",
-            "type": "season2-picking-zone"
+            "type": "picking-zone-right"
         }, 
         {
             "id": "great-white-shark",
-            "type": "season2-picking-zone"
+            "type": "picking-zone-right"
         }, 
         {
             "id": "mr-freeze",
-            "type": "season2-picking-zone"
+            "type": "picking-zone-right"
         }, 
         {
             "id": "red-hood",
-            "type": "season2-picking-zone"
+            "type": "picking-zone-right"
+        }, 
+        {
+            "id": "gcif",
+            "type": "season3-expansions"
+        },
+        {
+            "id": "new-eden",
+            "type": "season3-expansions"
+        },
+        {
+            "id": "solo-coop",
+            "type": "season3-expansions"
+        },
+        {
+            "id": "bat-computer",
+            "type": "season3-expansions"
+        }, 
+        {
+            "id": "anarky",
+            "type": "picking-zone-right"
+        }, 
+        {
+            "id": "batman-who-laughs",
+            "type": "picking-zone-right"
+        }, 
+        {
+            "id": "s3-sg",
+            "type": "season3-expansions"
         }
     ]
 }
