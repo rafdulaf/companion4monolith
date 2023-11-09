@@ -1,8 +1,8 @@
 {
-    "link": "https://the-overlord.net/index.php?/files/file/117-batman-gotham-city-chronicles-player-aid-skills-and-traits/",
+    "link": "h",
     "types": {
-        "attack": {
-            "title": "Attack"
+        "attack_modifier": {
+            "title": "Attack Modifier"
         },
         "melee": {
             "title": "Melee attack"
@@ -25,9 +25,6 @@
         "miscellaneous": {
             "title": "Miscellaneous"
         },
-        "area_modifier": {
-            "title": "Area modifier"
-        },
         "traits": {
             "title": "Traits"
         }
@@ -35,219 +32,240 @@
     "list": {
         "sneak": {
             "title": "Sneak attack",
-            "text": "Allows  its  possessor  to  add  [X]  automatic  successes  during attacks in their area, if the total menace indexes of allies is equal to or higher than the total menace indexes of the enemies."
+            "text": "When performing a Melee or Ranged Attack against an enemy in their Area, the possessor gains X Automatic Successes, if the sum of the Menace Indexes of allied miniatures in the possessor’s Area is greater than or equal to the sum of the Menace Indexes of enemy miniatures.",
+            "clarification": "NOTE: The possessor’s Menace Index is not included in their allies’ total."
         },
         "poison": {
             "title": "Poison",
-            "text": "Allows  its  possessor,  if  they  manage  to  exceed  their  opponent’s  defense,  to  inflict  [X]  automatic wounds,  before  the attack’s  wounds  are  inflicted.  The  rest  of  the  wounds  are then applied as usual."
+            "text": "When the possessor performs a Melee or Ranged Attack, during the Determine and Apply Wounds step of the Defense, if there are 1 or more Attack Successes (after deducting the number of Defense Successes), the target suffers X Wounds before suffering any Wounds from the Attack Successes."
         },
         "electricity": {
             "title": "Electricity",
-            "text": "Allows  its  possessor,  if  they  manage  to  exceed  their  opponent’s  defense,  to  inflict  [X]  automatic wounds,  before  the attack’s  wounds  are  inflicted.  The  rest  of  the  wounds  are then applied as usual."
+            "text": "When the possessor performs a Melee or Ranged Attack, during the Determine and Apply Wounds step of the Defense, if there are 1 or more Attack Successes (after deducting the number of Defense Successes), the target suffers X Wounds before suffering any Wounds from the Attack Successes."
         },
         "reach": {
             "title": "Reach",
-            "text": "Allows its possessor to target a miniature that is not present in their area for a melee attack. They must share a clear line of sight and be at a distance lower or equal to [X]."
+            "text": "When performing a Melee Attack, the possessor may target a miniature in an Area up to Distance X from their Area as long as they have Line of Sight to the miniature being targeted (note that Elevation levels do not affect this Skill, as long as there is Line of Sight)."
         },
         "martial_arts": {
             "title": "Martial arts",
-            "text": "Allows  its  possessor  to  add  [X]  automatic  successes  during  a melee attack, if they have obtained at least one success."
+            "text": "When performing a Melee Attack (including those performed with Free Actions, i.e., Circular Strike, Combo, and Counterattack), if the possessor obtains at least 1 Success, they may add X Automatic Successes."
         },
         "counterattack": {
             "title": "Counterattack",
-            "text": "After a melee attack has been resolved against its possessor, they can perform a free melee attack upon the attacker with [X] yellow dice, for which they don’t benefit from any weapon bonuses."
+            "text": "After a Melee Attack has been resolved against the possessor, as long as they were not Neutralized by the Attack, they may, as a Free Action, perform a Counterattack against the original attacker with X Yellow dice, but without any Weapon bonuses.", 
+            "clarification": "The original Attack must not have been a Counterattack itself.\nThis Counterattack follows the normal rules for Melee Attacks, with the following changes:\n - During the Declare the Target step, the original attacker must be chosen as the target. If they are not a valid target, the Counterattack cannot be performed.\n - During the Spend Energy Cubes and Create the Dice Pool step, instead of the normal rules, simply take X Yellow dice to form the dice pool (without spending any Energy cubes).\n - Ignore the Add Weapon Bonuses step."
         },
         "circular_strike": {
             "title": "Circular Strike",
-            "text": "After having neutralized an enemy with a melee attack, its possessor can use their remaining successes on [X] other miniatures."
+            "text": "After Neutralizing an enemy with a Melee Attack, the possessor may, as a Free Action, immediately use their Remaining Successes as additional Attacks on up to X other miniatures they are able to target with a Melee Attack. The original Attack must not have been a Free Action.",
+            "clarification": "Each additional Attack follows the normal rules for Melee Attacks, with the following changes:\n - After the Declare the Target step, proceed directly to the Calculate the Number of Successes step.\n - During the Calculate the Number of Successes step, instead of the normal rules, the number of Successes is simply equal to the number of Remaining Successes from the previous Attack.\n - If this additional Attack also Neutralizes its target, any Remaining Successes may be used to perform another additional Melee Attack on a further enemy in the same way, and so on, provided the total number of additional miniatures attacked (i.e., not including the original target of the Attack) does not exceed X."
         },
         "combo": {
             "title": "Combo",
-            "text": "When the possessor neutralizes a miniature during a melee attack,  the  possessor  gains  a  free  melee  attack  of  [X]  dice corresponding to their characteristic, without any weapon bonuses, against another miniature."
+            "text": "After Neutralizing an enemy with a Melee Attack, the possessor may, as a Free Action, immediately perform 1 additional Melee Attack with X dice, but without any Weapon bonuses, against another miniature they are able to target with a Melee Attack. The original Attack must not have been a Free Action.",
+            "clarification": "This additional Attack follows the normal rules for Melee Attacks, with the following changes:\n - During the Spend Energy Cubes and Create the Dice Pool step, instead of the normal rules, simply take X dice corresponding to the possessor’s Melee Attack Characteristic, to form the dice pool (without spending any Energy cubes).\n - If the Characteristic has the Free Reroll symbol, Free Rerolls may be used as normal.\n - Ignore the Add Weapon Bonuses step."
         },
         "shackle": {
             "title": "Shackle",
-            "text": "Allows the possessor, if they successfully perform  a  melee  attack,  to  place  [X] shackle  tokens  on  the  defender.  No wounds are inflicted by the attack. The number  of  successes  obtained  by  the shackled  miniature  when  performing attacks, thoughts, manipulations or defenses are reduced by [X]. These tokens can be removed if the affected miniature (or another allied miniature in the same area) successfully performs a complex manipulation of difficulty [X]."
+            "text": "During a Melee Attack, if the possessor exceeds an enemy’s Defense, they may place up to X Shackle tokens on the Defender instead of inflicting Wounds.",
+            "clarification": "Use of this Skill must be announced during the Declare the Target step of a Melee Attack, and the possessor may not use a Weapon card for the Attack.\nDuring the Defense and Wounds step, if the Defender would suffer at least 1 Wound, apply no Wounds instead, and place up to X Shackle tokens on the Defender’s base.\nNOTE: There are 2 sizes of Shackle token (large and small), but their effects are identical; use whichever size better fits the corresponding miniature’s base. \nEach Shackle token on a miniature reduces the number of Successes obtained during that miniature’s actions or Defenses by 1. Movement is not affected. However, any Shackle tokens on a miniature must stay there, and move with the miniature wherever it moves, until they are removed.\nTo remove all Shackle tokens from a miniature, that miniature (or one of their allies in the same Area) must successfully perform a Complex Manipulation with a Difficulty equal to the number of Shackle tokens on their base. The Lock Picking Skill may be used for this.\nNOTE: If a miniature with Shackle tokens is attempting to remove their own Shackles, this Complex Manipulation’s Successes will still be reduced as described above, since the Shackle tokens’ effect applies until they are removed."
         },
         "berserk": {
             "title": "Berserk",
-            "text": "Allows  its  possessor  to  increase  the  strength  of  their  melee  attacks by adding [X] white dice to each of them. If they are a hero, they must have at least half their energy cubes in their wound zone. If they are a character, they must have lost at least half their life points."
+            "text": "When performing a Melee Attack, if the possessor has at least half of their Energy cubes in their Wound Zone (for Heroes), or have lost at least half of their Life Points (for Villains), they add X White dice to their pool before rolling."
         },
         "pointblank": {
             "title": "Point blank",
-            "text": "Allows its possessor to benefit from [X] free rerolls during a ranged attack targeting a miniature in their area"
+            "text": "During a Ranged Attack in which the possessor is targeting an enemy in the same Area as them, they may benefit from up to X additional Bonus Rerolls. This benefit occurs immediately before the Free Rerolls step of the Ranged Attack’s Reroll step, and each Bonus Reroll grants an optional Reroll of any 1 die.",
+            "clarification": "The same die may be Rerolled more than once. This has no effect on the Free Rerolls step (and specifically does not affect the dice that may be Rerolled in it); proceed with that step as normal after using this Skill."
         },
         "burst": {
             "title": "Burst",
-            "text": "After having neutralized an enemy with a ranged attack, its possessor  can  use  their  remaining  successes  on  [X]  other miniatures they share a clear line of sight with."
+            "text": "After Neutralizing an enemy with a Ranged Attack, the possessor may, as a Free Action, immediately use their Remaining Successes as additional Attacks on up to X other miniatures they are able to target with a Ranged Attack. The original Attack must not have been a Free Action.",
+            "clarification": "Each additional Attack follows the normal rules for Ranged Attacks, with the following changes:\n - After the Declare the Target step, proceed directly to the Calculate the Number of Successes step.\n - During the Calculate the Number of Successes step, instead of the normal rules, the number of Successes is simply equal to the number of Remaining Successes from the previous Attack.\n - If this additional Attack also Neutralizes its target, any Remaining Successes may be used to perform another additional Ranged Attack on another enemy in the same way, and so on, provided the total number of additional miniatures attacked (i.e., not including the original target of the Attack) does not exceed X."
         },
         "retaliation": {
             "title": "Retaliation",
-            "text": "After a ranged attack has been resolved against its possessor, they can perform a free ranged attack upon the attacker with [X] yellow dice, for which they don’t benefit from any weapon or elevation bonuses. To use this skill, its possessor must have a ranged weapon."
+            "text": "After a Ranged Attack has been resolved against the possessor, as long as they were not Neutralized by the Attack, they may, as a Free Action, perform a Retaliation against the original attacker with X Yellow dice, but without any Weapon or Elevation bonuses. The original Attack must not have been a Retaliation itself.",
+            "clarification": "A Retaliation follows the normal rules for Ranged Attacks, with the following changes:\n - In order for a Hero to Retaliate, they must be carrying a Ranged Weapon card that does not have the “One-time Use” restriction.\n - During the Declare the Target step, the original attacker must be chosen as the target. If they are not a valid target, the Retaliation cannot be performed.\n - During the Spend Energy Cubes and Create the Dice Pool step, instead of the normal rules, simply take X Yellow dice to form the dice pool (without spending any Energy cubes).\n - Ignore the Add Weapon and Elevation Bonus steps."
         },
         "marksman": {
             "title": "Marksman",
-            "text": "Allows  its  possessor  to  add  [X]  automatic  successes  during  a ranged attack if they have obtained at least one success."
+            "text": "When performing a Ranged Attack (including those performed with Free Actions, i.e., Burst and Retaliation), if the possessor obtains at least 1 Success, they may add X Automatic Successes."
         },
         "munitions_specialist": {
             "title": "Munitions specialist",
-            "text": "Allows  its  possessor  to  benefit  from  [X]  automatic  successes  during  certain  manipulation  actions  indicated  by the missions."
+            "text": "If (and only if) the Mission special rules specify that the Munitions Specialist Skill may be used, the possessor may benefit from X Automatic Successes during corresponding Complex Manipulation actions."
         },
         "attraction": {
             "title": "Attraction",
-            "text": "Allows its possessor, at the cost of an automatic manipulation, to attract a miniature they share a clear line of sight with  and  draw  it  into  their  area. The  target  must  be  at  a lower or equal distance than [X] and their size index must be lower or equal to that of its possessor."
+            "text": "The possessor may, as an Automatic Manipulation, move a miniature that they have Line of Sight to, into their Area. The miniature moved must:<br/> - Be at a Distance less than or equal to X from the possessor’s Area before they are moved;<br/> - Be at an Elevation level no more than X higher or lower than the Elevation level of the possessor’s Area.<br/> - Have a Size Index less than or equal to the possessor’s Size Index; and<br/> - Must not cause the possessor’s Area to become Over-Occupied.",
+            "clarification": "If the possessor’s Area contains Dangerous Terrain, the miniature moved must roll for Wounds as normal."
         },
         "cry": {
-            "title": "Cry",
-            "text": "Allows  its  possessor,  once  per  turn,  to  trigger  a  level  [X] explosion  in  their  area  and  in  an  adjacent  area  with  a  clear  line of sight."
+            "title": "Scream",
+            "text": "Once per round, the possessor may, as an Automatic Manipulation, trigger a level X Explosion in their own Area, and another level X Explosion in 1 Adjacent Area to which they have Line of Sight. As an exception to the normal rules for an Automatic Manipulation, ignore the Spend Energy Cube step. The possessor does not suffer any Wounds from this Explosion. See page 54 of the Rulebook for the rules on Explosions."
         },
         "lock_piking": {
             "title": "Lock piking",
-            "text": "Allows  its  possessor  to  benefit  from  [X]  automatic  successes  during  certain  manipulation  actions  indicated  by the missions"
+            "text": "If (and only if) the Mission special rules, or another Skill specify that the Lock Picking Skill may be used, the possessor may benefit from X Automatic Successes during corresponding Complex Manipulation actions."
         },
         "grenade": {
             "title": "Grenade",
-            "text": "Allows  its  possessor  to  trigger  a  level  [X]  explosion  in  a targeted area by performing a complex manipulation. Its difficulty is equal to the distance between its possessor’s area and the targeted area. In case of failure, the level [X] explosion is triggered in an area located at a distance equal to the number of successes obtained, along the line of sight."
+            "text": "The possessor may, as a Complex Manipulation, attempt to throw a grenade into a target Area to which they have Line of Sight. The Difficulty of the Complex Manipulation is equal to the Distance between the possessor’s Area and the target Area.<br/>During the Apply the Complex Manipulation step:<br/> - If the Complex Manipulation is successful, trigger a level X Explosion in the target Area.<br/> - If the Complex Manipulation is unsuccessful, the grenade falls short of the target Area. Trigger a level X Explosion in an Area that is at a Distance equal to the resulting number of Successes along the Line of Sight towards the target Area. If there is more than one possible Area at this Distance, the possessor chooses the Area in which the Explosion occurs.",
+            "clarification": "NOTE: If the resulting number of Successes is zero, trigger the Explosion in the possessor’s Area.\nSee page 54 of the Rulebook for the rules on Explosions."
         },
         "blast": {
             "title": "Blast",
-            "text": "Allows  its  possessor,  once  per  turn  and  at  the  cost  of  an automatic manipulation, to trigger a level [X] explosion in their area and in an adjacent area with a clear line of sight."
+            "text": "Once per round, the possessor may, as an Automatic Manipulation, trigger a level X Explosion in their own Area, and another level X Explosion in 1 Adjacent Area to which they have Line of Sight. The possessor does not suffer any Wounds from this Explosion.", 
+            "clarification": "See page 54 of the Rulebook for the rules on Explosions."
         },
-        "elite_command": {
-            "title": "Elite command",
-            "text": "Allows  its  possessor  to  control  friendly  elite  units.  They choose  an  elite  level  tile  from  their  side  and  [X]  miniatures.  These  friendly  miniatures  start  the  mission  in  [the possessor]’s area. They can activate them once per turn by performing an automatic thought. Each energy cube spent on  defense,  reroll,  or  move  for  the  friendly  miniatures  is moved to [the possessor]’s thought space."
-        },
-        "henchman_command": {
-            "title": "Henchman command",
-            "text": "This skill works in the same way as the Elite command skill, replacing the term ‘elite’ with ‘henchman’."
+        "command": {
+            "title": "Command",
+            "text": "This Skill allows the possessor to control 1 allied Character tile with X corresponding miniatures. During setup, the possessor chooses a Character tile from their side and places X miniatures in their starting Area. The number of chevrons shown in the icon indicates the type of the tile that must be selected:<br/>1 for Henchman and 2 for Elite.",
+            "clarification": "Once per round, the possessor may, as an Automatic Thought, activate the Character tile under their control. After activating the tile, they may then activate any number of its corresponding miniatures once each, following the same rules as in Activate a Miniature Controlled by a Tile (see page 31). No other actions may be performed until all of the corresponding miniatures have been activated (or skipped).\nWhen performing actions with these miniatures, follow the rules as if they were non-Heroes, with the following changes:\n - During Movement actions, Defenses, or Rerolls, move each Energy cube the possessor spends to their Thought action space (instead of their Movement, Defense, or Reroll space). The number of cubes spent may not cause the possessor to exceed the Exertion limit of their Thought action space.\n - During Movement actions, their Move Point multiplier is always 1.\n - During Defenses, their Defense Characteristic is always 1 Orange die.\nNOTE: Multiple instances of the Command Skill are not added together; they are instead treated as separate Skills. Each instance allows the possessor to control miniatures corresponding to a different allied Character tile which may be activated up to once per round (via separate Automatic Thought actions), as described above."
         },
         "investigation": {
             "title": "Investigation",
-            "text": "Allows its possessor to benefit from [X] automatic successes during certain thought actions indicated by missions."
+            "text": "If (and only if) the Mission special rules specify that the Investigation Skill may be used, the possessor may benefit from X Automatic Successes during corresponding Complex Thought actions."
         },
         "hacking": {
             "title": "Hacking",
-            "text": "Allows its possessor to benefit from [X] automatic successes during certain thought actions indicated by missions."
+            "text": "If (and only if) the Mission special rules specify that the Hacking Skill may be used, the possessor may benefit from X Automatic Successes during corresponding Complex Thought actions."
         },
         "tactician": {
             "title": "Tactician",
-            "text": "Allows  its  possessor  to  perform  an  automatic  thought  to immediately grant [X] free move points to an allied miniature  that  hasn’t  been  the  target  of  this  effect  this  turn.  If the miniature is a character, they also get their Move Point Bonus for the First Movement."
+            "text": "As an Automatic Thought, the possessor may immediately grant X free Move Points (plus a possible First Movement Bonus) to any allied miniature for them to use immediately. The target of this effect must not yet have benefited from the Tactician Skill this round. If the target is a Hero, they must have an Active Stance for this round.",
+            "clarification": "The target may immediately perform a Movement action, during which the following applies:\n - During the Create the Move Point Pool step, add X Move Points to their Move Point Pool.\n - If the target is a Hero, and if this Movement action is the first one for this Hero this round, also add their First Movement Bonus to their Move Point Pool.\n - If the target is a non-Hero, this counts as a separate activation for the miniature, so their First Movement Bonus is added to their Move Point Pool.\n - At the end of the target’s Movement action, any unused Move Points are lost as usual."
         },
         "impenetrable_defense": {
             "title": "Impenetrable defense",
-            "text": "Allows its possessor to benefit from [X] automatic defense successes against melee attacks"
+            "text": "When targeted by a Melee Attack, the possessor benefits from X Automatic Defense Successes."
         },
         "body_guard": {
             "title": "Body guard",
-            "text": "Its  possessor  increases  by  [X]  automatic  successes  the defense of allied miniatures located in the same area."
+            "text": "During the Calculate the Number of Successes step of the Defense of an allied miniature located in the same Area as the possessor, add X Automatic Defense Successes. Only 1 miniature may use this Skill during any given Defense."
         },
         "untouchable": {
             "title": "Untouchable",
-            "text": "Allows its possessor to benefit from [X] automatic defense successes against ranged attacks."
+            "text": "When targeted by a Ranged Attack, the possessor benefits from X Automatic Defense Successes."
         },
         "protected": {
             "title": "Protected",
-            "text": "Allows its possessor, if they are accompanied by at least [X] allied miniatures without this skill, to avoid being the target of an attack."
+            "text": "If there are X or more allied miniatures who do not have the Protected Skill in the possessor’s Area, the possessor cannot be targeted by an Attack."
         },
         "wall_breaker": {
             "title": "Wall breaker",
-            "text": "Allows  its  possessor  to  move  through  a level [X] or lower wall, then to put a broken wall token on it. The cost of this movement is  raised  by  2.  The  two  areas  become adjacent, a clear line of sight can be drawn between them, and movement is possible."
+            "text": "The possessor may, as an Adjacent Move with an additional cost of 2 Move Points, move through a Wall of level X or lower to place a Broken Wall token on the segment of Wall. A “segment” of Wall is a stretch of the Wall covering the boundary between exactly 2 Areas.",
+            "clarification": "NOTE: The two Areas separated by the Wall segment must be at the same Elevation level. Only the segment moved through and having a token placed on it with the use of this Skill is broken; the rest of the Wall remains unbroken.\nA Wall that is not associated with a level is not breakable. Once placed on the Map, a Broken Wall token has the following effects:\n - Adjacent Moves may now be performed between the two Areas on either side of the token. However, the two Areas are not Adjacent since the boundary is still neither white nor orange.\n - There is now Line of Sight between the two Areas on either side of the token. However, a Broken Wall token still blocks Lines of Sight drawn between Line of Sight markers in any Areas; i.e., a token does not impact Lines of Sight between any Areas other than the two Areas on either side of it."
         },
         "immobilization": {
             "title": "Immobilization",
-            "text": "Allows its possessor, after an attack or an explosion that inflicts at  least  [X]  wounds,  to  lay  down  the  wounded  miniature.  To stand back up, they must spend their Move Point Bonus for the First Movement."
+            "text": "Immediately after the possessor has performed a Melee or Ranged Attack (including with a Free Action) or triggered an Explosion, lay down every miniature (enemies and allies) that suffered at least X Wounds due to the Attack or Explosion.\nIf a miniature is laid down, at the start of its next activation/turn, stand it back up. For that turn/activation, their First Movement Bonus is reduced to zero.",
+            "clarification": "NOTE: Villains and other miniatures controlled by a Character tile are stood back up at the start of their next activation. Heroes are stood back up at the start of their next turn only if they choose an Active Stance."
         },
         "elusive": {
             "title": "Elusive",
-            "text": "Allows its possessor to ignore [X] enemy size indexes when moving."
+            "text": "The possessor may ignore up to X enemy total Size Indexes during Movement. During the Calculate the Move Cost step of a Movement action, subtract X when calculating the Hindering Modifier (this still cannot reduce the Hindering Modifier to less than zero)."
         },
         "mobility": {
             "title": "Mobility",
-            "text": "Allows  its  possessor  to  ignore  [X]  difficult  terrain  levels when moving."
+            "text": "The possessor may ignore up to X levels of Difficult Terrain during Movement. During the Calculate the Move Cost step of a Movement action, subtract X from the Difficult Terrain level of the start Area (this cannot reduce the Difficult Terrain level to less than zero)."
         },
         "parkour": {
             "title": "Parkour",
-            "text": "Allows its possessor to ignore [X] jump or climb levels when performing a special move, and [X] wounds caused by a fall."
+            "text": "During each of their Movement actions, the possessor may ignore up to X Jump or Climb levels, or up to X Wounds caused by a Drop.",
+            "clarification": " - For a Jump or a Climb, during the Calculate the Move Cost step, subtract X from the Jump/Climb level (this cannot reduce the Jump/Climb level to less than zero).\n - For a Drop, during the Apply the Effects of the Destination Area step, roll a number of Yellow dice according to the level of the Drop as usual, but reduce the number of Wounds suffered by X (to a minimum of zero Wounds)."
         },
         "ambidextry": {
             "title": "Ambidextry",
-            "text": "Allows its possessor to use two weapons of the same type simultaneously  during  their  attacks,  and  therefore  to  add their bonuses. Their encumbrance or size must be lower or equal to [X]."
+            "text": "The possessor may use 2 Weapon cards (and combine their bonuses) in the same Melee or Ranged Attack. These may be any 2 Equipment and/or Bat-Gadget cards which the possessor could use individually under the normal rules for the corresponding type of Attack, with the additional condition that each Weapon card must have an individual Encumbrance/ size value equal to or lower than X."
         },
         "imaginary_friend": {
             "title": "Imaginary friend",
-            "text": "Allows its possessor to gain assistance from the `little voice in their head’. For their actions, they have an additional yellow  die  while  they  are  accompanied  by  their  imaginary friend. To nullify this effect, an opponent in their area must perform a complex thought of difficulty [X]."
+            "text": "The possessor may gain assistance from the ‘little voice inside their head’. At the end of setup, the possessor takes 1 miniature of their choice that is not otherwise required for the Mission and places it in the possessor’s Area as their Imaginary Friend. The following rules apply:<br/> - While the Imaginary Friend is in play, the possessor may add 1 Yellow die to the dice pool when performing an action (not when rolling dice for other reasons, such as Defense).<br/> - While it is in play, the Imaginary Friend must always be located in the possessor’s Area; when the possessor’s miniature is moved for any reason, move the Imaginary Friend with them (at no additional cost).<br/>The Imaginary Friend has a Size Index of 0, a Menace Index of 0, and does not have any Life Points.<br/>To remove the Imaginary Friend from play, one of the possessor’s enemies must successfully perform a Complex Thought of Difficulty X while they are located in the possessor’s Area.<br/>After being removed, the Imaginary Friend cannot be returned to play, and the possessor loses its benefit for the remainder of the Mission.<br/>The Imaginary Friend is not considered to belong to any side, and cannot be targeted for any reason, other than to remove it from play (see above)."
         },
         "luck": {
             "title": "Luck",
-            "text": "Allows its possessor to benefit from [X] free rerolls."
+            "text": "Immediately before the Free Rerolls step of a Reroll, the possessor may benefit from up to X Bonus Rerolls, each of which grants an optional Reroll of any 1 die. They may Reroll the same die more than once. This has no effect on the Free Rerolls step (and in particular does not affect the dice they may Reroll in it); proceed with that step as normal after using Luck."
         },
         "pushing_limits": {
             "title": "Pushing limits",
-            "text": "Allows  its  possessor  to  wound  themselves  to  perform actions. They suffer [X] wounds. Energy cubes moved in this way to the wound zone are considered to have been spent on the current action space, regardless of its exertion limit."
+            "text": "Once per round, when performing an action, and before spending any other Energy cubes for the action, the possessor may suffer X Wounds. Each Energy cube just moved to the Wound Zone counts as if it were spent on the corresponding action space instead, regardless of its Exertion limit.",
+            "clarification": "NOTE: With this Skill, the possessor is allowed to perform an action by only suffering Wounds and not spending any Energy cubes."
         },
         "horror": {
             "title": "Horror",
-            "text": "Allows its possessor to increase by [X] the move point cost for enemy miniatures wishing to enter the area in which its possessor is located."
+            "text": "The Move Point cost for enemy miniatures to Move into the possessor’s Area during their Movement actions is increased by X."
         },
         "misfortune": {
             "title": "Misfortune",
-            "text": "Allows its possessor to force an enemy in their area to reroll [X] dice. Its possessor chooses the dice to reroll after the free rerolls."
+            "text": "The possessor may force an enemy in the same Area as them to perform X Rerolls (the possessor chooses which dice are Rerolled). These Rerolls occur immediately after the Free Rerolls step of the enemy’s Reroll (even if the enemy does not perform any Rerolls of their own). The same die may be Rerolled more than once. Then, the Paid Rerolls step follows as usual."
         },
         "nerves_steel": {
             "title": "Nerves of steel",
-            "text": "Allows  its  possessor  to  ignore  [X]  enemy  menace  indexes when performing ranged attacks, manipulations, or thoughts."
+            "text": "During a Ranged Attack, Complex Manipulation, or Complex Thought, the possessor may ignore up to X Menace Indexes from enemies. During the Calculate the Number of Successes step of the action, subtract X when calculating the Hindering Modifier (this still cannot reduce the Hindering Modifier to less than zero)."
         },
         "regeneration": {
             "title": "Regeneration",
-            "text": "Allows its possessor to regenerate. If they are a hero, during the Declare Heroes’ Stance step, they move [X] energy cubes from their wound zone to their fatigue zone. If they are a character, at the start of their activation, they recover [X] life points."
+            "text": "<b>HEROES</b>: Once per round, at the beginning of the Declare Heroes’ Stances step of the Heroes’ turn (and before recovering any cubes according to their chosen Stance), the possessor may move up to X Energy cubes from their Wound Zone to their Fatigue Zone.<br/><b>NON-HEROES</b>: Once each time they are activated, at the start of their activation, move the cube in their Life Point track up by X spaces, but never above the Life Point value on their Character tile."
         },
         "sacrifice": {
             "title": "Sacrifice",
-            "text": "Its possessor must declare the use of this skill during the Create the Dice Pool step of an attack. They take [X] successes from the attack if it targets an ally miniature in their area. They cannot defend against it. The remaining successes are applied as usual to the defender."
+            "text": "If an allied miniature who is the target of an Attack (including one from a Free Action) is in the same Area as the possessor, the possessor may suffer X Wounds in place of that ally.",
+            "clarification": "To do so, the possessor must declare the use of this Skill at the start of the Roll the Dice Pool step of a Melee or Ranged Attack against an allied miniature in their Area (before the dice are rolled). Then, at the end of the Calculate the Number of Successes step, the number of Successes the attacker obtains is reduced by X, and X Wounds are applied to the possessor.\nIf the attacker obtained fewer than X Successes, apply that number of Wounds instead, and reduce the attacker’s Successes to zero.\nAfter applying the effects of this Skill, any remaining attacker Successes, if any, are applied to the Defender, who may Defend against them, as per the normal rules.\nNOTE: The possessor cannot Defend against Wounds suffered with the use of this Skill."
         },
         "support": {
             "title": "Support",
-            "text": "Allows its possessor to provide [X] free rerolls to all the allied miniatures in their area."
+            "text": "Immediately before the Free Rerolls step of their Reroll(s), an ally in the same Area as the possessor may benefit from up to X Bonus Rerolls, each of which grants an optional Reroll of any 1 die. The same die may be Rerolled more than once. This has no effect on the Free Rerolls step (and specifically does not affect the dice that may be Rerolled in it); proceed with that step as normal after using this Skill."
         },
         "flame": {
             "title": "Flame",
-            "text": "Allows its possessor, during an attack or  after  an  explosion,  to  place  [X] flame/gas  tokens  on  the  area  of  the attack or the explosion (see Dissipation page  44). Each token adds 1 level of dangerous terrain to its area. Its possessor is immune to this effect"
+            "text": "Immediately after the possessor has performed a Melee or Ranged Attack (including with a Free Action) or triggered an Explosion, they may place up to X Flame tokens, “active” side up, in the corresponding Area (the one where the target was located, or where the Explosion was triggered; if the Explosion was triggered in more than 1 Area, up to X Flame tokens may be placed in each such Area).",
+            "clarification": "Each Flame token adds 1 level of Dangerous Terrain to that Area. Each token lasts for 2 rounds and is then removed (page 54 of the Rulebook).\nNOTE: A miniature that has this Skill on their Screen or Character tile is immune to the effect of all Flame tokens."
         },
         "toxic_gas": {
             "title": "Toxic gas",
-            "text": "Allows its possessor, during an attack or  after  an  explosion,  to  place  [X] flame/gas  tokens  on  the  area  of  the attack or the explosion (see Dissipation page  44). Each token adds 1 level of dangerous terrain to its area. Its possessor is immune to this effect"
+            "text": "Immediately after the possessor has performed a Melee or Ranged Attack (including with a Free Action) or triggered an Explosion, they may place up to X Gas tokens, “active” side up, in the corresponding Area (being the one where the target was located, or where the Explosion was triggered; if the Explosion was triggered in more than 1 Area, up to X Gas tokens may be placed in each such Area).",
+            "clarification": "Each Gas token adds 1 level of Dangerous Terrain to its Area. Each token lasts for 2 rounds and is then removed (page 54 of the Rulebook).\nNOTE: A miniature that has this Skill on their Screen or Character tile is immune to the effect of all Gas tokens."
         },
         "smoke_grenade": {
             "title": "Smoke grenade",
-            "text": "Allows  its  possessor,  after  having  triggered  an explosion, to place [X] smoke grenade tokens in this area   (see   Dissipation   page   44).  During  a  ranged attack,  the  attacker  must  count  the  number  of smoke  grenade  tokens  on  the  areas  their  line  of  sight  crosses  and subtract it from the number of the attack’s successes."
+            "text": "Immediately after the possessor has triggered an Explosion, they may place up to X Smoke Grenade tokens, “active” side up, in the Area where the Explosion was triggered (if the Explosion was triggered in more than 1 Area, up to X Smoke Grenade tokens are placed in each such Area).",
+            "clarification": "Each Smoke Grenade token along the Line of Sight of a Ranged Attack (by any miniature, including the possessor) reduces the number of Successes by 1.\nEach token lasts for 2 rounds and is then removed (page 54 of the Rulebook)."
         },
         "frost": {
             "title": "Frost",
-            "text": "Allows  its  possessor,  during  an  attack  or  after  an explosion,  to  freeze  the  terrain  by  placing  [X]  frost tokens on the area of the attack or the explosion (see Dissipation  page  44). Each token adds 1 level of difficult terrain to its area. Its possessor is immune to this effect."
+            "text": "Immediately after the possessor has performed a Melee or Ranged Attack (including with a Free Action) or triggered an Explosion, they may place up to X Frost tokens, “active” side up, in the corresponding Area (being the one where the target was located, or where the Explosion was triggered; if the Explosion was triggered in more than 1 Area, up to X Frost tokens may be placed in each such Area).",
+            "clarification": "Each Frost token adds 1 level of Difficult Terrain to its Area. Each token lasts for 2 rounds and is then removed (page 54 of the Rulebook).\nNOTE: A miniature that has this Skill on their Screen or Character tile is immune to the effect of all Frost tokens."
         },
         "moral_code": {
             "title": "Moral code",
-            "text": "Its possessor cannot use lethal items."
+            "text": "A miniature with this Trait cannot use or benefit from the bonuses of any Equipment or Bat-Gadget cards which show the Lethal item symbol in any of their actions.",
+            "clarification": "NOTE: The miniature may still carry such an item; this Trait only prevents their use."
         },
         "gas_immunity": {
             "title": "Gas immunity",
-            "text": "Its possessor ignores wounds caused by gas tokens."
+            "text": "A miniature with this Trait ignores all Wounds they would otherwise suffer from Gas tokens."
         },
         "harmless": {
             "title": "Harmless",
-            "text": "Its possessor has a weak constitution. During an attack, the wounds they inflict are reduced to 0."
+            "text": "When a miniature with this Trait performs an Attack, reduce the number of Wounds they inflict to 0 during the Determine and Apply Wounds step of the Defense.",
+            "clarification": "NOTE: Dice must still be rolled for their Attacks and the corresponding Defenses as usual, since determining the relative number of Successes the attacker and Defender each have may still be relevant for some Skills (see Electricity and Poison)."
         },
         "reduced_mobility": {
             "title": "Reduced mobility",
-            "text": "Its possessor has limited mobility. They cannot perform special moves (climb, jump and fall)"
+            "text": "A miniature with this Trait cannot perform Jumps, Climbs, or Drops. During Movement actions, they may only perform Adjacent Moves."
         },
         "fly": {
             "title": "Fly",
-            "text": "Its possessor moves by flying. They then ignore hindering and  difficult  terrain  when  moving.  They  ignore  additional costs and effects of special moves."
+            "text": "When a miniature with this Trait moves, they ignore Hindering and Difficult Terrain, as well as any additional costs and effects of Jumps, Climbs, and Drops. This means that during the Calculate the Move Cost step of their Movement actions, their Move Cost is always equal to 1 Move Point, and they do not suffer any Wounds from Drops."
         },
         "multiple_personalities": {
             "title": "Multiple personalities",
-            "text": "Its possessor changes personalities depending on activations. Their behaviour is set by the latest activation. The possessor's characteristics are defined by the rightmost tile in the river."
+            "text": "At any given time, the miniature’s rightmost Character tile in the River defines their stats, Skills, and Characteristics. When the leftmost Character tile is activated, it then becomes the new rightmost tile, and the miniature changes personality.",
+            "clarification": "NOTE: This Trait is not included in the base game and only appears in certain expansions."
         }
     }
 }

@@ -3,22 +3,6 @@
         {
             "id": "corebox",
             "origins": ["corebox"]
-        },        
-        {
-            "id": "batmobile",
-            "origins": ["batmobile"]
-        } ,        
-        {
-            "id": "versus",
-            "origins": ["versus"]
-        } ,        
-        {
-            "id": "wayne-manor",
-            "origins": ["wayne-manor"]
-        } ,        
-        {
-            "id": "narrows",
-            "origins": ["narrows-chronicles"]
-        }        
+        }
     ]
 }

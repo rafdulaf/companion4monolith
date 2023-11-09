@@ -228,7 +228,7 @@ var Maps = {
                 
                 for (var o in zoneMap.description.origins)
                 {
-                    var origin = zoneMap.description.origins[0];
+                    var origin = zoneMap.description.origins[o];
                     if (map.description.origins.indexOf(origin) == -1)
                     {
                         map.description.origins.push(origin);

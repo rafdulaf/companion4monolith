@@ -1,63 +1,34 @@
 {
     "types": [
         {
-            "id": "attack",
-            "image": "data/skills/img/attack/attack.webp"
+            "id": "movement"
         }, {
-            "id": "melee",
-            "image": "data/skills/img/attack/melee.webp",
-            "location": 1
+            "id": "melee"
         }, {
-            "id": "range",
-            "image": "data/skills/img/attack/range.webp",
-            "location": 2
+            "id": "range"
         }, {
-            "id": "manipulation",
-            "image": "data/skills/img/attack/manipulation.webp",
-            "location": 3
+            "id": "attack_modifier"
         }, {
-            "id": "thought",
-            "image": "data/skills/img/attack/thought.webp",
-            "location": 4
+            "id": "defense"
         }, {
-            "id": "defense",
-            "image": "data/skills/img/attack/defense.webp",
-            "location": 5
+            "id": "manipulation"
         }, {
-            "id": "movement",
-            "image": "data/skills/img/attack/movement.webp",
-            "location": 7
+            "id": "thought"
         }, {
             "id": "miscellaneous"
         }, {
-            "id": "area_modifier"
-        }, {
-            "id": "traits",
-            "exertion": false,
-            "level": false
+            "id": "traits"
         }
     ],
     "list": [
         {
-            "id": "sneak",
-            "type": "attack",
-            "image": "data/skills/img/attack/sneak_attack.webp"
-        }, {
-            "id": "poison",
-            "type": "attack",
-            "image": "data/skills/img/attack/poison.webp"
-        }, {
-            "id": "electricity",
-            "type": "attack",
-            "image": "data/skills/img/attack/electricity.webp"
-        }, {
             "id": "reach",
             "type": "melee",
             "image": "data/skills/img/melee/reach.webp"
         }, {
-            "id": "martial_arts",
+            "id": "shackle",
             "type": "melee",
-            "image": "data/skills/img/melee/martial_arts.webp"
+            "image": "data/skills/img/melee/shackle.webp"
         }, {
             "id": "counterattack",
             "type": "melee",
@@ -71,9 +42,9 @@
             "type": "melee",
             "image": "data/skills/img/melee/combo.webp"
         }, {
-            "id": "shackle",
+            "id": "martial_arts",
             "type": "melee",
-            "image": "data/skills/img/melee/shackle.webp"
+            "image": "data/skills/img/melee/martial_arts.webp"
         }, {
             "id": "berserk",
             "type": "melee",
@@ -119,13 +90,9 @@
             "type": "manipulation",
             "image": "data/skills/img/manipulation/blast.webp"
         }, {
-            "id": "elite_command",
+            "id": "command",
             "type": "thought",
-            "image": "data/skills/img/thought/elite_command.webp"
-        }, {
-            "id": "henchman_command",
-            "type": "thought",
-            "image": "data/skills/img/thought/henchman_command.webp"
+            "image": "data/skills/img/thought/command.webp"
         }, {
             "id": "investigation",
             "type": "thought",
@@ -143,25 +110,41 @@
             "type": "defense",
             "image": "data/skills/img/defense/impenetrable_defense.webp"
         }, {
-            "id": "body_guard",
-            "type": "defense",
-            "image": "data/skills/img/defense/body_guard.webp"
-        }, {
             "id": "untouchable",
             "type": "defense",
             "image": "data/skills/img/defense/untouchable.webp"
+        }, {
+            "id": "body_guard",
+            "type": "defense",
+            "image": "data/skills/img/defense/body_guard.webp"
         }, {
             "id": "protected",
             "type": "defense",
             "image": "data/skills/img/defense/protected.webp"
         }, {
+            "id": "sneak",
+            "type": "attack_modifier",
+            "image": "data/skills/img/attack_modifier/sneak_attack.webp"
+        }, {
+            "id": "poison",
+            "type": "attack_modifier",
+            "image": "data/skills/img/attack_modifier/poison.webp"
+        }, {
+            "id": "electricity",
+            "type": "attack_modifier",
+            "image": "data/skills/img/attack_modifier/electricity.webp"
+        }, {
+            "id": "immobilization",
+            "type": "attack_modifier",
+            "image": "data/skills/img/attack_modifier/immobilization.webp"
+        }, {
             "id": "wall_breaker",
             "type": "movement",
             "image": "data/skills/img/movement/wall_breaker.webp"
         }, {
-            "id": "immobilization",
+            "id": "parkour",
             "type": "movement",
-            "image": "data/skills/img/movement/immobilization.webp"
+            "image": "data/skills/img/movement/parkour.webp"
         }, {
             "id": "elusive",
             "type": "movement",
@@ -170,10 +153,6 @@
             "id": "mobility",
             "type": "movement",
             "image": "data/skills/img/movement/mobility.webp"
-        }, {
-            "id": "parkour",
-            "type": "movement",
-            "image": "data/skills/img/movement/parkour.webp"
         }, {
             "id": "ambidextry",
             "type": "miscellaneous",
@@ -216,20 +195,20 @@
             "image": "data/skills/img/miscellaneous/support.webp"
         }, {
             "id": "flame",
-            "type": "area_modifier",
-            "image": "data/skills/img/area_modifier/flame.webp"
+            "type": "attack_modifier",
+            "image": "data/skills/img/attack_modifier/flame.webp"
         }, {
             "id": "toxic_gas",
-            "type": "area_modifier",
-            "image": "data/skills/img/area_modifier/toxic_gas.webp"
+            "type": "attack_modifier",
+            "image": "data/skills/img/attack_modifier/toxic_gas.webp"
         }, {
             "id": "smoke_grenade",
-            "type": "area_modifier",
-            "image": "data/skills/img/area_modifier/smoke_grenade.webp"
+            "type": "attack_modifier",
+            "image": "data/skills/img/attack_modifier/smoke_grenade.webp"
         }, {
             "id": "frost",
-            "type": "area_modifier",
-            "image": "data/skills/img/area_modifier/frost.webp"
+            "type": "attack_modifier",
+            "image": "data/skills/img/attack_modifier/frost.webp"
         }, {
             "id": "moral_code",
             "type": "traits",

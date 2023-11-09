@@ -9,11 +9,14 @@
         "season2-expansions": {
             "text": "Extensions de la saison 2"
         },
-        "season2-add-on": {
-            "text": "Add-ons de la saison 2"
+        "season3-expansions": {
+            "text": "Extensions de la saison 3"
         },
-        "season2-picking-zone": {
-            "text": "Picking zone"
+        "picking-zone-left": {
+            "text": "Figurines séparées"
+        },
+        "picking-zone-right": {
+            "text": "Figurines séparées"
         }
     },
     "list": {
@@ -176,6 +179,34 @@
         "red-hood": {
             "title": "Red Hood",
             "short": "Red Hood"
+        },
+        "gcif": {
+            "title": "Gotham City en flammes",
+            "short": "Gotham City en flammes"
+        },
+        "new-eden": {
+            "title": "The Narrows Chronicles 2 : Un nouvel eden",
+            "short": "Un nouvel eden"
+        },
+        "solo-coop": {
+            "title": "Mode Solo-Coop",
+            "short": "Mode Solo-Coop"
+        },
+        "bat-computer": {
+            "title": "Les fichiers du Batcomputer",
+            "short": "Batcomputer"
+        },
+        "anarky": {
+            "title": "Anarky",
+            "short": "Anarky"
+        }, 
+        "batman-who-laughs": {
+            "title": "Batman qui rit",
+            "short": "Batman qui rit"
+        },
+        "s3-sg": {
+            "title": "Récompenses",
+            "short": "Récompenses"
         }
     }
 }

@@ -1,7 +1,6 @@
 Rules._i18n = {
     'menu': "Rules",
     'skills': "Skills",
-    'clarification': "Clarification:",
 
     'viewer-search': "Search in the document",
     'viewer-download': "Download the document",

@@ -2,7 +2,6 @@ Rules._i18n = {
     'menu': "Règles",
     'skills': "Compétences",
     'shortskills': "Comp.",
-    'clarification': "Clarification :",
 
     'viewer-search': "Recherche dans le document",
     'viewer-download': "Télécharger le document",
