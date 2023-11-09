@@ -23,7 +23,7 @@
 
         "Subway": {
             "description": {
-                "title": "Subway",
+                "title": "The Subway",
                 "totopic": "https://the-overlord.net/index.php?/topic/931-core-subway/"
             }
         },
@@ -37,7 +37,7 @@
 
         "Joker_Funhouse": {
             "description": {
-                "title": "Joker's Funhouse",
+                "title": "Jokerland",
                 "totopic": "https://the-overlord.net/index.php?/topic/928-arkham-asylum-joker-funhouse/"
             }
         },
@@ -63,18 +63,44 @@
             }
         },
         
-       "Sewers": {
+        "Sewers": {
             "description": {
-                "title": "Sewers",
+                "title": "The Sewers",
                 "totopic": "https://the-overlord.net/index.php?/topic/930-maps-pack-sewers/"
             }
         },
 
-       "GCPD": {
+        "GCPD": {
             "description": {
-                "title": "GCPD",
+                "title": "GCPD offices",
                 "totopic": "https://the-overlord.net/index.php?/topic/929-maps-pack-gcpd/"
             }
+        },
+        
+        "Zeppelin": {
+            "description": {
+                "title": "The Zeppelin"
+            }
+        },
+        
+        "Warehouse": {
+            "description": {
+                "title": "The warehouse"
+            }
+        },
+         
+        "Docks": {
+            "description": {
+                "title": "The Docks"
+            }
         }
-    }
+    },
+    
+    "compositions": {
+        "Docks_Warehouse": {
+            "description": {
+                "title": "The Docks & warehouse"
+            }
+        }
+    }    
 }

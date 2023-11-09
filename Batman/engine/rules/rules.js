@@ -94,7 +94,7 @@ var Rules = {
             +   "<img " + LazyImage + " src='" + image + "?version=" + Version + "'/>"
             +   "<div class='skills-title'>" + title + "</div>"
             +   "<div class='skills-text'>" + About._replace(text) + " " 
-            + (clarification ? "<span title=\"" + Rules._i18n.clarification + " " + clarification + "\">[...]</span>" : "") 
+            + (clarification ? "<span title=\"" + clarification + "\">[...]</span>" : "") 
             + "</div>"
             + "</div>";
     },
@@ -149,7 +149,7 @@ var Rules = {
         var skill = Rules._findSkillById(id);
         
         let html = Rules._skill2HTML(skill.id, skill.type, skill.image, skill.title, skill.text, null);
-        let clarifications = (skill.clarification ?"<div class='clarification'>" + Rules._i18n.clarification + " " + skill.clarification.replace(/\n/g, "<br/>") + "</div>" : "");
+        let clarifications = (skill.clarification ?"<div class='clarification'>" + skill.clarification.replace(/\n/g, "<br/>") + "</div>" : "")
         
         let skill2, html2 = '', clarifications2 = '';
         if (Language2 && Language2 != Language)
@@ -162,7 +162,7 @@ var Rules = {
                 }
                 skill2 = Rules._secondaryData.list[id];
                 html2 = Rules._skill2HTML(skill.id, skill.type, skill.image, skill2.title, skill2.text, null);
-                clarifications2 = (skill2.clarification ?"<div class='clarification'>" + Rules._i18n.clarification + " " + skill2.clarification.replace(/\n/g, "<br/>") + "</div>" : "");            }
+                clarifications2 = (skill2.clarification ?"<div class='clarification'>" + skill2.clarification.replace(/\n/g, "<br/>") + "</div>" : "");            }
             catch (e)
             {
                 console.error("Cannot download the " + Language2 + " file of skills", e);

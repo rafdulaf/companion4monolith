@@ -23,21 +23,21 @@
 
         "Subway": {
             "description": {
-                "title": "Métro",
+                "title": "Le Métro",
                 "totopic": "https://the-overlord.com/index.php?/topic/4354-core-carte-metrosubway/"
             }
         },
 
         "Arkham_Asylum": {
             "description": {
-                "title": "L'asile d'Arkham",
+                "title": "L'Asile d'Arkham",
                 "totopic": "https://the-overlord.com/index.php?/topic/4358-arkham-asylum-carte-arkham-asylum/"
             }
         },
 
         "Joker_Funhouse": {
             "description": {
-                "title": "La fête foraine du Joker",
+                "title": "Jokerland",
                 "totopic": "https://the-overlord.com/index.php?/topic/4359-arkham-asylum-cartes-f%C3%AAte-foraine-du-joker/"
             }
         },
@@ -58,23 +58,49 @@
 
         "Wayne_Manor": {
             "description": {
-                "title": "Le manoir Wayne",
+                "title": "Manoir Wayne",
                 "totopic": "https://the-overlord.com/index.php?/topic/4356-wayne-manor-carte-wayne-manor/"
             }
         },
         
-       "Sewers": {
+        "Sewers": {
             "description": {
                 "title": "Les égouts",
                 "totopic": "https://the-overlord.com/index.php?/topic/4353-maps-pack-carte-egoutssewers/"
             }
         },
 
-       "GCPD": {
+        "GCPD": {
             "description": {
-                "title": "GCPD",
+                "title": "Bureaux du GCPD",
                 "totopic": "https://the-overlord.com/index.php?/topic/4355-maps-pack-carte-gcpd/"
             }
+        },
+        
+        "Zeppelin": {
+            "description": {
+                "title": "Le Zeppelin"
+            }
+        },
+        
+        "Warehouse": {
+            "description": {
+                "title": "Les entrepôts"
+            }
+        },
+        
+        "Docks": {
+            "description": {
+                "title": "Les quais"
+            }
         }
-    }
+    },
+    
+    "compositions": {
+        "Docks_Warehouse": {
+            "description": {
+                "title": "Les quais & entrepôts"
+            }
+        }
+    }  
 }

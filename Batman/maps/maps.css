@@ -3,20 +3,23 @@
     font-size: calc(var(--primary-size) * 1rem);
 }
 .map-map-help .map-help-thumb img {
-    /*max-height: calc(100vh - 64px - 56px - 20px - 20px);*/
     width: 100%;
     max-width: calc(100vw - 20px - 20px);
+    height: 100%;
+    max-height: calc(100vh - 64px - 56px - 20px - 20px - 20px);
     object-fit: contain;
 }
+.map-map-help .map-help-thumb .rotate-90 img,
+.map-map-help .map-help-thumb .rotate-270 img {
+    max-height: calc(100vw - 20px - 20px);
+    max-width: calc(100vh - 64px - 56px - 20px - 20px - 20px);
+} 
 
 .map-map-help .map-map-legend {
     display: inline-block;
     vertical-align: top;
     margin: 10px 5px 0;
     padding: 0 10px 10px 10px;
-    border: 1px solid #f2981a;
-    border-top-width: 0;
-    background-color: #F8F9F4;
     color: #1b1b1b;
 }
 
@@ -41,36 +44,23 @@
     }
 }
 
-.map-map-help .map-map-legend h1 {
-    border-bottom: 1px solid #f2981a;
-    margin: 0 -11px 10px;
-    background-color: var(--body-bg-color);
-}
-
 .map-map-help .map-map-legend div {
     font-size: calc(var(--primary-size) * 0.8rem);
 }
-.map-map-help .map-map-legend h1 div {
+.map-map-help .map-map-legend h1 {
+    border-bottom: 1px solid #000;
+    margin: 0 -11px 10px;
+    background-color: var(--body-bg-color);
     text-transform: uppercase;
     font-size: calc(var(--primary-size) * 0.7rem);
     color: #FFF;
     background-color: #F2981A;
-    text-align: center;
+    text-align: left;
     position: relative;
-    width: 156px;
-    margin: 0 auto -1px 2px;
+    min-width: 156px;
     padding-top: 2px;
+    padding-left: 5px;
 }
-.map-map-help .map-map-legend h1 div::after,
-.map-map-help .map-map-legend h1 div::before {
-    content: " ";
-    position: absolute;
-    top: -7px;
-    border: 7px solid transparent;
-}
-.map-map-help .map-map-legend h1 div::before { border-left: 7px solid var(--body-bg-color); left: 0; }
-.map-map-help .map-map-legend h1 div::after { border-right: 7px solid var(--body-bg-color); right: 0; }
-
 .map-map-help .map-map-legend > div {
     padding: 5px;
 }
@@ -96,9 +86,13 @@
 }
 .map-map-help .map-map-legend-elevation span:first-child {
     flex: unset;
-    width: 20px;
-    height: 20px; 
+    width: 40px;
+    height: 30px; 
     margin-right: 5px;
+    box-shadow: #000 0 0 2px;
+    clip-path: polygon(23% -5%, -5% 33%, -5% 105%, 105% 105%, 105% -5%);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* BOUNDARIES */
@@ -120,6 +114,7 @@
     margin-right: 5px;
     background-position: center;
     background-repeat: no-repeat;
+    filter: drop-shadow(0 0 5px #222);
 }
 
 /* SPECIAL MOVES */
@@ -143,6 +138,7 @@
     margin-right: 5px;
     background-position: center;
     background-repeat: no-repeat;
+    filter: drop-shadow(0 0 5px #222);
 }
 
 /* AREAS */
@@ -166,9 +162,13 @@
     background-repeat: no-repeat;
 }
 
-.map-map-help .map-map-legend-areas .map-map-legend-areas-elevators_entrance span:first-child {
-    height: 60px;
-}
-.map-map-help .map-map-legend-areas .map-map-legend-areas-elevator_orientation span {
-    font-weight: 100;
+.map-map-help .map-map-legend-areas .map-map-legend-areas-promontory span:first-child {
+    flex: unset;
+    width: 40px;
+    height: 30px; 
+    margin-right: 5px;
+    box-shadow: #000 0 0 2px;
+    clip-path: polygon(23% -5%, -5% 33%, -5% 105%, 105% 105%, 105% -5%);
+    background-color: #A59FA2;
+    background-repeat: repeat;
 }

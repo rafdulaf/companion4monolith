@@ -45,20 +45,26 @@ function _doImport(text)
         if (json.list || json.parts)
         {
             var cards = "";
-            for (var i =0; i < json.list.length; i++)
+            if (json.list)
             {
-                var card = json.list[i];
-                
-                cards += "\n" + (i+1) + ") " + (card.id)
+                for (var i =0; i < json.list.length; i++)
+                {
+                    var card = json.list[i];
+                    
+                    cards += "\n" + (i+1) + ") " + (card.id)
+                }
             }
-            for (var i =0; i < json.parts.length; i++)
+            if (json.parts)
             {
-                if (i == 0)
-                    cards += "\n---------------------------"
-                
-                var card = json.parts[i];
-                
-                cards += "\n" + (i+1+json.list.length) + ") " + (card.id)
+                for (var i =0; i < json.parts.length; i++)
+                {
+                    if (i == 0)
+                        cards += "\n---------------------------"
+                    
+                    var card = json.parts[i];
+                    
+                    cards += "\n" + (i+1+json.list.length) + ") " + (card.id)
+                }
             }
             
             var number = prompt("Choisissez la carte à importer" + cards)
@@ -75,16 +81,13 @@ function _doImport(text)
         }
         
         $("#id")[0].value = json.id;
-        _setLanguageJson('title', json.description.title);
         $("#version")[0].value = json.description.version;
         $("#origins")[0].value = json.description.origins.join("\n");
         $("#copyright")[0].value = json.description.copyright;
         _setRules(json.description.rules);
-        _setLanguageJson('totopic', json.description.totopic);
         $("#thumbnail")[0].value = json.description.thumbnail.substring(json.description.thumbnail.lastIndexOf('/') + 1);
         $("#board")[0].value = json.description.board.substring(json.description.board.lastIndexOf('/') + 1);
-        $("#losFile")[0].value = json.description.losFile.substring(json.description.losFile.lastIndexOf('/') + 1);
-        _setLanguageJson('pdf', json.description.pdf);
+        $("#losFile")[0].value = '';// json.description.losFile.substring(json.description.losFile.lastIndexOf('/') + 1);
         
         $("#zones")[0].value = stringify(json.zones);
         $('#image').attr('src', "../../" + $("#rulesselector")[0].value.substring(0,1).toUpperCase() + $("#rulesselector")[0].value.substring(1) + "/" + json.description.board);
@@ -112,17 +115,13 @@ function doExport()
     var data = {};
     data.id = $("#id")[0].value 
     data.description = {};
-    data.description.title = _getLanguageJson('title');
     data.description.version = $("#version")[0].value;
     data.description.origins = $("#origins")[0].value.split("\n");
     data.description.copyright = $("#copyright")[0].value;
     data.description.rules = _getRules();
-    data.description.totopic = _getLanguageJson('totopic');
-    data.description.ratio = Math.round($('#image').prop("naturalWidth") / $('#image').prop("naturalHeight") * 100) / 100.0;
     data.description.thumbnail = _getPath() + $("#thumbnail")[0].value;
     data.description.board = _getPath() + $("#board")[0].value;
     if ($("#losFile")[0].value) data.description.losFile = _getPath() + $("#losFile")[0].value;
-    var pdf = _getLanguageJson('pdf'); if (pdf.fr || pdf.en || pdf.it) data.description.pdf = pdf;
     data.size = [$('#image').prop("naturalWidth"), $('#image').prop("naturalHeight")];
     data.zones = zones;
 
@@ -176,7 +175,7 @@ function _getLanguageJson(id)
 
 function _getPath()
 {
-    return "data/maps/" + $("#id")[0].value + "/";
+    return "data/maps/data/" + $("#id")[0].value + "/";
 }
 
 function _setRules(rules)
@@ -190,29 +189,27 @@ function _setRules(rules)
     }
     else
     {
-        rules.elevation = rules.elevation || [] 
+        rules.legend = rules.legend || {};
+        rules.legend.elevation = rules.legend.elevation || [] 
         
         $("#rulesselector")[0].value = 'batman'
         
         $("#rules-image-ratio")[0].value = rules.ratio;
         
-        $("#rules-elevation")[0].value = rules.elevation.map(o => o.level + " " + o.color).join("\n");
+        $("#rules-elevation")[0].value = rules.legend.elevation;
         
-        $("#rules-boundaries-orange")[0].checked = rules.boundaries && !(rules.boundaries.orange === false);
-        $("#rules-boundaries-white")[0].checked = rules.boundaries && !(rules.boundaries.white === false);
-        $("#rules-boundaries-special")[0].checked = rules.boundaries && !(rules.boundaries.special === false);
-        $("#rules-boundaries-wall")[0].checked = rules.boundaries && !(rules.boundaries.wall === false);
-        $("#rules-boundaries-wall_level")[0].checked = rules.boundaries && !(rules.boundaries.wall_level === false);
+        $("#rules-boundaries-orange")[0].checked = rules.legend.boundaries && !(rules.legend.boundaries.orange === false);
+        $("#rules-boundaries-white")[0].checked = rules.legend.boundaries && !(rules.legend.boundaries.white === false);
+        $("#rules-boundaries-special")[0].checked = rules.legend.boundaries && !(rules.legend.boundaries.special === false);
+        $("#rules-boundaries-wall")[0].checked = rules.legend.boundaries && !(rules.legend.boundaries.wall === false);
+        $("#rules-boundaries-wall_level")[0].checked = rules.legend.boundaries && !(rules.legend.boundaries.wall_level === false);
         
-        $("#rules-specialmoves-jump")[0].checked = rules.special_moves && !(rules.special_moves.jump === false);
-        $("#rules-specialmoves-climb")[0].checked = rules.special_moves && !(rules.special_moves.climb === false);
-        $("#rules-specialmoves-fall")[0].checked = rules.special_moves && !(rules.special_moves.fall === false);
-        $("#rules-specialmoves-climb_fall")[0].checked = rules.special_moves && !(rules.special_moves.climb_fall === false);
+        $("#rules-specialmoves-jump")[0].checked = rules.legend.special_moves && !(rules.legend.special_moves.jump === false);
+        $("#rules-specialmoves-climb")[0].checked = rules.legend.special_moves && !(rules.legend.special_moves.climb === false);
+        $("#rules-specialmoves-fall")[0].checked = rules.legend.special_moves && !(rules.legend.special_moves.fall === false);
+        $("#rules-specialmoves-climb_fall")[0].checked = rules.legend.special_moves && !(rules.legend.special_moves.climb_fall === false);
         
-        $("#rules-areas-elevators_entrance")[0].checked = rules.areas && rules.areas.indexOf('elevators_entrance') >= 0;
-        $("#rules-areas-elevator_shaft")[0].checked = rules.areas && rules.areas.indexOf('elevator_shaft') >= 0;
-        $("#rules-areas-promontory")[0].checked = rules.areas && rules.areas.indexOf('promontory') >= 0;
-        $("#rules-areas-elevator_orientation")[0].checked = rules.areas && rules.areas.indexOf('elevator_orientation') >= 0;
+        $("#rules-areas-promontory")[0].checked = rules.legend.areas && rules.legend.areas.indexOf('promontory') >= 0;
     }
     
     $("#rulesselector").attr("data-value", $("#rulesselector")[0].value)
@@ -222,7 +219,7 @@ function _getRules()
 {
     if ($("#rulesselector")[0].value == 'batman') 
     {
-        var rules = {}
+        var rules = { legend: {} }
         
         if ($("#rules-boundaries-orange")[0].checked
             || $("#rules-boundaries-white")[0].checked
@@ -230,12 +227,12 @@ function _getRules()
             || $("#rules-boundaries-wall")[0].checked
             || $("#rules-boundaries-wall_level")[0].checked)
         {
-            rules.boundaries = {};
-            if (!$("#rules-boundaries-orange")[0].checked) rules.boundarie.orange = false;
-            if (!$("#rules-boundaries-white")[0].checked) rules.boundarie.white = false;
-            if (!$("#rules-boundaries-special")[0].checked) rules.boundarie.special = false;
-            if (!$("#rules-boundaries-wall")[0].checked) rules.boundarie.wall = false;
-            if (!$("#rules-boundaries-wall_level")[0].checked) rules.boundarie.wall_level = false;
+            rules.legend.boundaries = {};
+            if (!$("#rules-boundaries-orange")[0].checked) rules.legend.boundaries.orange = false;
+            if (!$("#rules-boundaries-white")[0].checked) rules.legend.boundaries.white = false;
+            if (!$("#rules-boundaries-special")[0].checked) rules.legend.boundaries.special = false;
+            if (!$("#rules-boundaries-wall")[0].checked) rules.legend.boundaries.wall = false;
+            if (!$("#rules-boundaries-wall_level")[0].checked) rules.legend.boundaries.wall_level = false;
         }
 
         if ($("#rules-specialmoves-jump")[0].checked
@@ -243,29 +240,23 @@ function _getRules()
             || $("#rules-specialmoves-fall")[0].checked
             || $("#rules-specialmoves-climb_fall")[0].checked)
         {
-            rules.special_moves = {};
-            if (!$("#rules-specialmoves-jump")[0].checked) rules.special_moves.jump = false;
-            if (!$("#rules-specialmoves-climb")[0].checked) rules.special_moves.climb = false;
-            if (!$("#rules-specialmoves-fall")[0].checked) rules.special_moves.fall = false;
-            if (!$("#rules-specialmoves-climb_fall")[0].checked) rules.special_moves.climb_fall = false;
+            rules.legend.special_moves = {};
+            if (!$("#rules-specialmoves-jump")[0].checked) rules.legend.special_moves.jump = false;
+            if (!$("#rules-specialmoves-climb")[0].checked) rules.legend.special_moves.climb = false;
+            if (!$("#rules-specialmoves-fall")[0].checked) rules.legend.special_moves.fall = false;
+            if (!$("#rules-specialmoves-climb_fall")[0].checked) rules.legend.special_moves.climb_fall = false;
         }
 
-        if ($("#rules-areas-elevators_entrance")[0].checked
-            || $("#rules-areas-elevator_shaft")[0].checked
-            || $("#rules-areas-promontory")[0].checked
-            || $("#rules-areas-elevator_orientation")[0].checked)
+        if ($("#rules-areas-promontory")[0].checked)
         {
-            rules.areas = [];
-            if ($("#rules-areas-elevators_entrance")[0].checked) rules.areas.push("elevators_entrance");
-            if ($("#rules-areas-elevator_shaft")[0].checked) rules.areas.push("elevator_shaft");
-            if ($("#rules-areas-promontory")[0].checked) rules.areas.push("promontory");
-            if ($("#rules-areas-elevator_orientation")[0].checked) rules.areas.push("elevator_orientation");
+            rules.legend.areas = [];
+            if ($("#rules-areas-promontory")[0].checked) rules.legend.areas.push("promontory");
         }
 
         rules.image = _getPath() + "help.webp";
         rules.ratio = $("#rules-image-ratio")[0].value;
         
-        rules.elevation = $("#rules-elevation")[0].value.split('\n').filter(function(i) { return i != ""}).map(function(i) {return { level: i.replace(/^(.*) (.*)$/, '$1'), color: i.replace(/^(.*) (.*)$/, '$2') }});
+        rules.legend.elevation = $("#rules-elevation")[0].value.split(',').map(i => parseInt(i));
 
         return rules;
     }
@@ -473,7 +464,7 @@ function _displayZones()
             
             
                     var zoneTarget = zones[target];
-                    if (zoneTarget)
+                    if (zoneTarget && center1 != -1 && center2 != -1)
                     {
                         code += "<line class='los' x1='" + svgWidth*lastKnownZone.centers[center1][0]/100 + "' y1='" + svgHeight*lastKnownZone.centers[center1][1]/100 + "' x2='" + svgWidth*zoneTarget.centers[center2][0]/100 + "' y2='" + svgHeight*zoneTarget.centers[center2][1]/100 + "' />";
                     }

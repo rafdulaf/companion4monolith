@@ -1,7 +1,6 @@
 Rules._i18n = {
     'menu': "Regole",
     'skills': "Abilità",
-    'clarification': "Chiarificazione:",
 
     'viewer-search': "Cerca nell'intero documento",
     'viewer-download': "Scarica il documento",

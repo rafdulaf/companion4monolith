@@ -9,11 +9,14 @@
         "season2-expansions": {
             "text": "Season 2 Expansions"
         },
-        "season2-add-on": {
-            "text": "Season 2 add-ons"
+        "season3-expansions": {
+            "text": "Season 3 Expansions"
         },
-        "season2-picking-zone": {
-            "text": "Picking zone"
+        "picking-zone-left": {
+            "text": "Separate miniatures"
+        },
+        "picking-zone-right": {
+            "text": "Separate miniatures"
         }
     },
     "list": {
@@ -176,6 +179,34 @@
         "red-hood": {
             "title": "Red Hood",
             "short": "Red Hood"
+        },
+        "gcif": {
+            "title": "Gotham City in flames",
+            "short": "Gotham City in flames"
+        },
+        "new-eden": {
+            "title": "The Narrows Chronicles 2: A new eden",
+            "short": "A new eden"
+        },
+        "solo-coop": {
+            "title": "Solo-Coop mode",
+            "short": "Solo-Coop mode"
+        },
+        "bat-computer": {
+            "title": "The Batcomputer files",
+            "short": "Batcomputer"
+        },
+        "anarky": {
+            "title": "Anarky",
+            "short": "Anarky"
+        }, 
+        "batman-who-laughs": {
+            "title": "Batman who laughs",
+            "short": "Batman who laughs"
+        },
+        "s3-sg": {
+            "title": "Stretch goals",
+            "short": "Stretch goals"
         }
     }
 }
