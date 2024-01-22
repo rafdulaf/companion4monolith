@@ -6,16 +6,13 @@
                 "rules": [
                     {
                         "title": "The hut flaps",
-                        "description": "The hut flaps at the entrance of each hut block lines of sight. A character must spend 1 extra movement point to move across a border into or out of a hut."
+                        "description": "A character must spend 1 extra movement point to move across a border into or out of a hut because of the hut flaps at the entrance of each hut (and inside the big one)."
                     }, {
                         "title": "Wall wrecker",
                         "description": "The huts with stone walls cannot be wrecked using Wall Wrecker."
                     }, {
                         "title": "Outer walls",
                         "description": "The outer walls cannot be climbed over, or wrecked using Wall Wrecker."
-                    }, {
-                        "title": "Lines of sight",
-                        "description": "The bushes do not block lines of sight."
                     }, {
                         "title": "Wooden Huts",
                         "description": "A character with Wall Wrecker can use it to move across the wall of one of the wooden huts. The walls of an occupied hut (see page 22 of the Revised Heroes’ Book) cannot be wrecked using Wall Wrecker."
@@ -60,12 +57,6 @@
                     {
                         "title": "Hold",
                         "description": "A character coming out of the hold must move in the area in front of its exit."
-                    }, {
-                        "title": "Masts",
-                        "description": "All the areas of the game board have lines of sight on the masts’areas."
-                    }, {
-                        "title": "Line of sight",
-                        "description": "There is a line of sight from a ship area to a water area if the line of sight does not cross more than one ship area, including the line of sight starting area. The ship areas provide an Elevation bonus of {dice_yellow} on the water areas. There is a line of sight from a water area to a ship area if the line of sight does not cross more than one ship area, including the line of sight finishing area."
                     }
                 ],
                 "totopic": "https://the-overlord.net/index.php?/topic/29-core-ships/"
@@ -77,17 +68,11 @@
                 "title": "Abandoned fort",
                 "rules": [
                     {
-                        "title": "Parapet and tower",
-                        "description": "Only the areas directly adjacent to the towers areas have lines of sight on the tower areas"
-                    }, {
                         "title": "Courtyard room",
-                        "description": "The areas inside the fort do not have a roof. A character in a parapet area has lines of sight on these areas and may jump into these areas."
+                        "description": "The areas inside the fort do not have a roof. A character in a parapet area may jump into these areas."
                     }, {
                         "title": "Border",
                         "description": "The nine areas at the edge of the board are adjacent to one another. A character may move through them normally to go around the abandoned fort."
-                    }, {
-                        "title": "Lines of sight",
-                        "description": "A character in a wall area has lines of sight to each ground area within the fortress walls."
                     }, {
                         "title": "Leaping from Walls",
                         "description": "A character can move across a parapet from a wall area to a ground area as though it were a border. The character rolls {dice_red}{dice_red} for falling damage. If the character has Leap, the character rolls {dice_red} instead. A character cannot move from a ground area to a wall area."
@@ -110,9 +95,6 @@
                     }, {
                         "title": "Pit",
                         "description": "A character must spend 1 extra movement point to move out of the pit area"
-                    }, {
-                        "title": "Cellar windows",
-                        "description": "The cellar windows do not block lines of sight."
                     }
                 ],
                 "totopic": "https://the-overlord.net/index.php?/topic/31-sg-citadel/"
@@ -145,7 +127,7 @@
                 "rules": [
                     {
                         "title": "Impenetrable Forest",
-                        "description": "These 3 Forest zones block Lines of Sight. A character can aim from but not shoot inside or through these areas. Entering the area costs an additional movement point. Leaving the area does not cost any extra movement points."
+                        "description": "A character can aim from but not shoot inside or through these areas. Entering the area costs an additional movement point. Leaving the area does not cost any extra movement points."
                     }, {
                         "title": "Rocky Outcrop",
                         "description": "The 2 Rocky Outcrop areas block Lines of Sight and grant the Elevation Bonus. Climb costs 1 additional movement point. Climbing down does not cost any extra movement point."
@@ -201,9 +183,6 @@
                         "title": "Stone wall",
                         "description": "A character with Wall Wrecker cannot use it to move across an outer wall of the tower or a stone wall."
                     }, {
-                        "title": "Windows",
-                        "description": "The windows on level « 2 » and « 3 » have a line of sight on the areas of level « 1 » directly below them"
-                    }, {
                         "title": "Climbing",
                         "description": "A character with Climb may:<br/>• Move from level « 1 » to level « 2 » (and the other way) by climbing the tree and spending 1 extra movement point<br/>• Move from level « 2 » to level « 3 » (and the other way) or from level « 3 » to level « 4 » (and the other way) by climbing the outside walls of the tower and spending 2 extra movement points."
                     }, {
@@ -246,7 +225,7 @@
                         "description": "A character in a water area adjacent to a ladder may move back onto the docks by spending 1 extra movement point."
                     }, {
                         "title": "Roof Top",
-                        "description": "The areas located on the roof top of the building on the left side of the board provide an elevation bonus, including on the stairs areas. A character may jump from these areas to the areas of the street level. That character rolls {dice_orange}{dice_orange} for falling damage. If that character has Leap, that character rolls {dice_orange}. A character cannot move onto the roof top areas directly from the street level except when moving through the stairs areas."
+                        "description": "A character may jump from these areas to the areas of the street level. That character rolls {dice_orange}{dice_orange} for falling damage. If that character has Leap, that character rolls {dice_orange}. A character cannot move onto the roof top areas directly from the street level except when moving through the stairs areas."
                     }, {
                         "title": "Wall Wrecker",
                         "description": "A character with Wall Wrecker can only use this skill to move across the wall in the warehouse on the right side of the board."

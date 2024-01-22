@@ -6,16 +6,13 @@
                 "rules": [
                     {
                         "title": "Tendaggi",
-                        "description": "I tendaggi all'ingresso di ogni capanna bloccano la linea di vista. Un personaggio deve spendere un (1) punto movimento extra per entrare o uscire da una capanna."
+                        "description": "Un personaggio deve spendere un (1) punto movimento extra per entrare o uscire da una capanna a causa dei lembi all'ingresso di ogni capanna (e all'interno di quella grande)."
                     }, {
                         "title": "Spacca Muri",
                         "description": "Non si possono aprire brecce nei muri delle capanne in pietra."
                     }, {
                         "title": "Recinto esterno",
                         "description": "Non si possono aprire brecce nel recinto esterno e non è possibile scalarlo."
-                    }, {
-                        "title": "Linee di vista",
-                        "description": "I cespugli non bloccano la linea di vista."
                     }, {
                         "title": "Capanne di legno",
                         "description": "Un personaggio con l'abilità Spacca Muri per aprire una breccia nella parete di una capanna. Se l'area all'interno della capanna è satura (si veda pagina 22 del Libro degli Eroi V2) nessuna breccia è ammessa."
@@ -60,12 +57,6 @@
                     {
                         "title": "Uscite",
                         "description": "Un personaggio che arriva da sottocoperta deve muoversi nell'area di fronte alla propria uscita."
-                    }, {
-                        "title": "Alberi",
-                        "description": "É sempre possibile tracciare una linea di vista da e verso l'area occupata da un albero. L'albero blocca normalmente la linea di vista."
-                    }, {
-                        "title": "Linea di vista",
-                        "description": "Esiste sempre una linea di vista tra un'area di nave e un'area di mare, a meno che la linea di vista non attraversi più di un'area di nave (contando l'area di partenza della linea di vista). Le aree di nave ottengono un bonus di soprelevazione di un {dice_yellow} sulle aree di mare. Esiste una linea di vista da un'area di mare a un'area di nave, se la linea di vista non passa attraverso più di un'area di nave (includendo l'area d'arrivo della linea di vista)."
                     }
                 ],
                 "totopic": "https://the-overlord.net/index.php?/topic/29-core-ships/"
@@ -77,17 +68,11 @@
                 "title": "Forte abbandonato",
                 "rules": [
                     {
-                        "title": "Mura e torri",
-                        "description": "Solo le aree delle mura direttamente adiacenti a una torre hanno una linea di vista libera verso l'interno della torre stessa."
-                    }, {
                         "title": "Rovine della corte interna",
-                        "description": "Le rovine nella corte interna del forte non hanno il tetto. Dalle mura è possibile vedervi all'interno e saltarvi dentro."
+                        "description": "Le rovine nella corte interna del forte non hanno il tetto. Dalle mura è possibile saltare dentro."
                     }, {
                         "title": "Perimetro esterno",
                         "description": "Le 9 aree all'esterno del perimetro del forte sono adiacenti tra loro ed è pertanto compiere un giro completo intorno al forte attraversandole normalmente."
-                    }, {
-                        "title": "Linee di vista",
-                        "description": "Dalle mura, un personaggio ha una linea di vista libera su tutte le zone della corte interna."
                     }, {
                         "title": "Saltare dalle/Arrampicarsi sulle mura",
                         "description": "Saltare dalle mura (sia verso l'interno che verso l'esterno della corte) infligge {dice_red}{dice_red} danni non difendibili o {dice_red} se il personaggio ha l'abilità Saltare. Arrampicarsi sulle mura è impossibile."
@@ -110,9 +95,6 @@
                     }, {
                         "title": "Fossa",
                         "description": "Entrare nella fossa è considerato un normale movimento, uscirne costa un (1) punto movimento extra."
-                    }, {
-                        "title": "Grate",
-                        "description": "Le grate non bloccano le linee di vista."
                     }
                 ],
                 "totopic": "https://the-overlord.net/index.php?/topic/31-sg-citadel/"
@@ -145,7 +127,7 @@
                 "rules": [
                     {
                         "title": "Foresta impenetrabile",
-                        "description": "Le aree di foresta bloccano le linee di vista. Un personaggio può mirare dall'interno verso l'esterno, ma non può mirare all'interno o attraverso queste aree. Entrare in queste aree costa un (1) punto movimento extra, uscirne non costa punti movimento extra."
+                        "description": "Un personaggio può mirare dall'interno verso l'esterno, ma non può mirare all'interno o attraverso queste aree. Entrare in queste aree costa un (1) punto movimento extra, uscirne non costa punti movimento extra."
                     }, {
                         "title": "Sporgenze rocciose",
                         "description": "Le zone rocciose bloccano le linee di vista e fanno ottenere un bonus soprelevazione. Arrampicarsi su queste rocce costa un (1) punto movimento extra, discendere non costa punti movimento extra."
@@ -200,7 +182,6 @@
                     {
                         "title": "Muro di pietra",
                         "description": "Un personaggio con l'abilità Spacca Muri non può usarla per aprire brecce nei muri della torre (sia interni che perimetrali)."
-                    }, {
                         "title": "Finestre",
                         "description": "Le finestre al livello 2 e 3 non bloccano la linea di vista verso le aree esterne ai piedi della torre del livello 1."
                     }, {
@@ -246,7 +227,7 @@
                         "description": "Un personaggio che si trova in un'area di acqua adiacente a una scaletta, può risalire sul molo spendendo un (1) punto movimento extra."
                     }, {
                         "title": "Tetti della città",
-                        "description": "Le aree situate sui tetti dell'edificio a ovest della città forniscono un bonus di soprelevazione sulle zone situate in basso, incluse le aree con le scale. Saltare dal tetto alla strada infligge {dice_orange}{dice_orange} danni non difendibili o {dice_orange} danni non difendibili se il personaggio possiede l'abilità Saltare. Non è possibile risalire sul tetto direttamente dalla strada, ma lo si può fare usando le scale."
+                        "description": "Saltare dal tetto alla strada infligge {dice_orange}{dice_orange} danni non difendibili o {dice_orange} danni non difendibili se il personaggio possiede l'abilità Saltare. Non è possibile risalire sul tetto direttamente dalla strada, ma lo si può fare usando le scale."
                     }, {
                         "title": "Sfondare le pareti",
                         "description": "Le uniche pareti che possono essere demolite da un personaggio con l'abilità Spacca Muri sono quelle del magazzino a est della città."
