@@ -28,7 +28,7 @@ public class PutImagesInSVG
     public static void main(String[] args) throws IOException
     {
         Path rootPath = Path.of(args[0]);
-        // inline(rootPath, ".svg", PutImagesInSVG::_inlineImages);
+        inline(rootPath, ".svg", PutImagesInSVG::_inlineImages);
         inline(rootPath, ".html", PutImagesInSVG::_inlineSVG);
     }
 
