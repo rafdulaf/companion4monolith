@@ -49,7 +49,7 @@ function _doImport(text)
             {
                 var card = json.list[i];
                 
-                cards += "\n" + (i+1) + ") " + (card.description.title.en || card.description.title.fr || card.description.title.it  || card.id)
+                cards += "\n" + (i+1) + ") " + (card.id)
             }
             for (var i =0; i < json.parts.length; i++)
             {
@@ -58,7 +58,7 @@ function _doImport(text)
                 
                 var card = json.parts[i];
                 
-                cards += "\n" + (i+1+json.list.length) + ") " + (card.description.title.en || card.description.title.fr || card.description.title.it  || card.id)
+                cards += "\n" + (i+1+json.list.length) + ") " + (card.id)
             }
             
             var number = prompt("Choisissez la carte à importer" + cards)
