@@ -375,6 +375,7 @@
 }
 svg path.map-map-area-zone-target-upper + image {
     display: unset;
+    pointer-events: none;
 }
 
 .img-wrap svg {
