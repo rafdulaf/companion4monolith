@@ -1654,7 +1654,7 @@ const urlsToCache = [
 	"engine/general/nav.js",
 	"engine/general/search.css",
 	"engine/general/sw-register.js",
-	"engine/general/utils.0.24.js",
+	"engine/general/utils.0.26.js",
 	"engine/maps/lang/maps.LANGUAGE.js",
 	"engine/maps/maps.css",
 	"engine/maps/maps.js",

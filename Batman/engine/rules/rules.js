@@ -145,16 +145,36 @@ var Rules = {
         throw new Error("Cannot find skill " + id);
     },
     
-    openSkill: function(id) {
+    openSkill: async function(id) {
         var skill = Rules._findSkillById(id);
         
-        let clarifications = (skill.clarification ?"<div class='clarification'>" + Rules._i18n.clarification + " " + skill.clarification.replace(/\n/g, "<br/>") + "</div>" : "")
+        let html = Rules._skill2HTML(skill.id, skill.type, skill.image, skill.title, skill.text, null);
+        let clarifications = (skill.clarification ?"<div class='clarification'>" + Rules._i18n.clarification + " " + skill.clarification.replace(/\n/g, "<br/>") + "</div>" : "");
         
+        let skill2, html2 = '', clarifications2 = '';
+        if (Language2 && Language2 != Language)
+        {
+            try
+            {
+                if (!Rules._secondaryData)
+                {
+                    Rules._secondaryData = await Utils.loadJSON("data/skills/lang/skills." + Language2 + ".json");
+                }
+                skill2 = Rules._secondaryData.list[id];
+                html2 = Rules._skill2HTML(skill.id, skill.type, skill.image, skill2.title, skill2.text, null);
+                clarifications2 = (skill2.clarification ?"<div class='clarification'>" + Rules._i18n.clarification + " " + skill2.clarification.replace(/\n/g, "<br/>") + "</div>" : "");            }
+            catch (e)
+            {
+                console.error("Cannot download the " + Language2 + " file of skills", e);
+            }
+        }   
 
         Nav.dialog(skill.title,
             "<div class='skillsdetails'>"
-                + Rules._skill2HTML(skill.id, skill.type, skill.image, skill.title, skill.text, null)
+                + html
                 + clarifications
+                + html2
+                + clarifications2
                 + Rules._openSkillSpecific(skill)
             + "</div>",
             null,

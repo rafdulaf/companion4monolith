@@ -15,13 +15,15 @@ About._i18n = {
     'custom_text': "Sélectionnez vos extensions qui seront enregistrés sur votre appareil.",
     'custom_lang': "Français",
     'custom_langlabel': "Langue de l'interface",
+    'custom_lang2label': "Langue secondaire (nécessite une connexion)",
     'custom_automatic_lang': "Auto-détection",
-    'custom_reload': "La modification de votre configuration entrainera un redémarage automatique de l'application",
+    'custom_no_lang': "Aucune",
     'custom_themelabel': "Thème",
     'custom_automatic_theme': "Auto-détection",
     'custom_theme_light': "Clair",
     'custom_theme_dark': "Foncé",
     'custom_allin': "La totale !", 
+    'custom_reload': "La modification de votre configuration entrainera un redémarage automatique de l'application",
     'contribute': "Contribuer !",
     'contribute_text': "Vous pouvez contribuer à cette application de nombreuses façons :"
             + "<ul>"

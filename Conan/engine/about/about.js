@@ -186,9 +186,12 @@ var About = {
             +           "<label for=\"custom-lang\">" + About._i18n.custom_langlabel + "</label>"
             +           "<select id=\"custom-lang\" name=\"custom-lang\">"
             +               "<option value=\"\">" + About._i18n.custom_automatic_lang + "</option>";
-        
         					Languages.forEach(code => s += "<option value=\"" + code + "\">" + About._languages[code] + "</option>");
-            
+        s   +=          "</select>"
+            +           "<label for=\"custom-lang2\">" + About._i18n.custom_lang2label + "</label>"
+            +           "<select id=\"custom-lang2\" name=\"custom-lang2\">"
+            +               "<option value=\"\">" + About._i18n.custom_no_lang + "</option>";
+                            Languages.forEach(code => s += "<option value=\"" + code + "\">" + About._languages[code] + "</option>");
         s   +=          "</select>"
             +           "<label for=\"custom-theme\">" + About._i18n.custom_themelabel + "</label>"
             +           "<select id=\"custom-theme\" name=\"custom-theme\">"
@@ -229,6 +232,7 @@ var About = {
             function()
             {
                 var oldLanguage = localStorage.getItem(Application + "_Language") || "";
+                var oldLanguage2 = localStorage.getItem(Application + "_Language2") || "";
                 var oldTheme = localStorage.getItem(Application + "_Theme") || "";
 
                 var hasChanged = false;
@@ -239,6 +243,11 @@ var About = {
                 Language = selectedLanguage || autodetectLanguage;
                 localStorage.setItem(Application + "_Language", selectedLanguage);
                 hasChanged = hasChanged || (oldLanguage || autodetectLanguage) != (selectedLanguage || autodetectLanguage);
+
+                var selectedLanguage2 = $(".custom *[name=custom-lang2]")[0].value;
+                Language2 = selectedLanguage2 || "";
+                localStorage.setItem(Application + "_Language2", selectedLanguage2);
+                hasChanged = hasChanged || (oldLanguage2) != (selectedLanguage2);
                 
                 var autodetectTheme = Utils.autodetectTheme();
                 var selectedTheme = $(".custom *[name=custom-theme]")[0].value;
@@ -270,6 +279,7 @@ var About = {
         );
 
         $(".custom *[name=custom-lang]")[0].value = localStorage.getItem(Application + "_Language") || "";
+        $(".custom *[name=custom-lang2]")[0].value = localStorage.getItem(Application + "_Language2") || "";
         $(".custom *[name=custom-theme]")[0].value = localStorage.getItem(Application + "_Theme") || "";
         
         About._customPrefs.forEach(function (p) {
