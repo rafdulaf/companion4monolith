@@ -217,13 +217,12 @@ var EncyclopediaEquipments = {
         }
     },
     
-    _convertEquipmentToStudio: function(equipment, i)
+    _convertEquipmentToStudio: function(equipment, equipment2)
     {
-        i = i ? i : 0;
         return {
             id: equipment.id + "-" + Math.random(),
-            name: equipment.title,
-            text: equipment.text ? equipment.text : "",
+            name: (equipment2 || equipment).title,
+            text: (equipment2 || equipment).text || "",
             encumbrance: equipment.encumbrance,
             movement: equipment.movement || "",
             melee: equipment.melee,
@@ -286,7 +285,9 @@ var EncyclopediaEquipments = {
     onHide: function() {
     },
 
-    openEquipment: function(id) {
+    openEquipment: async function(id) {
+        EncyclopediaEquipments._language = Language;
+        
         var equipments = EncyclopediaEquipments._findEquipmentsById(id);
         var displayEquipments = [];
         
@@ -317,14 +318,46 @@ var EncyclopediaEquipments = {
             originString += Encyclopedia._getOrigin(i) + " (" + originsCount[i] + " " + (originsCount[i] == 1 ? EncyclopediaEquipments._i18n.card : EncyclopediaEquipments._i18n.cards) + ")";
         }
         
+        let anyText = false;
         var c = "";
         for (var e in displayEquipments)
         {
             var equipment = displayEquipments[e]; 
-            c += CardEquipment._cardCode(EncyclopediaEquipments._convertEquipmentToStudio(equipment, i));
+            anyText = anyText || (equipment.text != null);
+            c += CardEquipment._cardCode(EncyclopediaEquipments._convertEquipmentToStudio(equipment));
         }
         
-        Nav.dialog(equipment.title || "",
+        let altTitle = "";
+        if (Language2 && Language2 != Language)
+        {
+            try
+            {
+                if (!EncyclopediaEquipments._secondaryData)
+                {
+                    EncyclopediaEquipments._secondaryData = await Utils.loadJSON("data/equipments/lang/equipments." + Language2 + ".json");
+                }
+
+                for (var e in displayEquipments)
+                {
+                    let equipment = displayEquipments[e]; 
+                    let equipment2 = EncyclopediaEquipments._secondaryData.list[equipment.id]
+                    if (anyText)
+                    {
+                        c += CardEquipment._cardCode(EncyclopediaEquipments._convertEquipmentToStudio(equipment, equipment2));
+                    }
+                    else
+                    {
+                        altTitle = "/ " + equipment2.title;
+                    }
+                }
+            }
+            catch (e)
+            {
+                console.error("Cannot download the " + Language2 + " file of equipments", e);
+            }
+        }
+        
+        Nav.dialog((equipment.title || "") + altTitle,
             "<div class='equipmentdetails'>" 
                 + c
                 + "<div class='minwidth'></div>"

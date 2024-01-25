@@ -212,13 +212,13 @@ var EncyclopediaSpells = {
         }
     },
 
-    _convertSpellToStudio: function(spell)
+    _convertSpellToStudio: function(spell, spell2)
     {
         return {
             id: spell.id + "-" + Math.random(),
-            name: spell.title,
-            longName: spell.titleLong && spell.titleLong,
-            text: spell.text,
+            name: (spell2 || spell).title,
+            longName: (spell2 || spell).titleLong,
+            text: (spell2 || spell).text,
             textSize: spell.textStyle.textSize,
             textInter: spell.textStyle.textInter,
             cost: spell.cost,
@@ -289,7 +289,9 @@ var EncyclopediaSpells = {
     onHide: function() {
     },
 
-    openSpell: function(id) {
+    openSpell: async function(id) {
+        EncyclopediaSpells._language = Language;
+        
         var spells = EncyclopediaSpells._findSpellsById(id);
 
         var originsCount = {};
@@ -322,16 +324,34 @@ var EncyclopediaSpells = {
                 tokens += EncyclopediaTokens._linkToToken(token, true);
             }
         }
-
+        
         var spell = spells[0];
+
+        let spell2 = null;
+        if (Language2 && Language2 != Language)
+        {
+            try
+            {
+                if (!EncyclopediaSpells._secondaryData)
+                {
+                    EncyclopediaSpells._secondaryData = await Utils.loadJSON("data/spells/lang/spells." + Language2 + ".json");
+                }
+                spell2 = EncyclopediaSpells._secondaryData.list[id]
+            }
+            catch (e)
+            {
+                console.error("Cannot download the " + Language2 + " file of spells", e);
+            }
+        }
+
         Nav.dialog(spell.title,
             "<div class='spelldetails'>"
                 + CardSpell._cardCode(EncyclopediaSpells._convertSpellToStudio(spell))
+                + (spell2 ? CardSpell._cardCode(EncyclopediaSpells._convertSpellToStudio(spell, spell2)) : '')
                 + "<div class='minwidth'></div>"
-                + "<div class='from'>" + EncyclopediaSpells._i18n.from + " "
-                    + originString
-                + "</div>"
-                + ((spell.clarification && spell.clarification) ?"<div class='clarification'>" + EncyclopediaSpells._i18n.clarification + " " + spell.clarification.replace(/\n/g, "<br/>") + "</div>" : "")
+                + "<div class='from'>" + EncyclopediaSpells._i18n.from + " " + originString + "</div>"
+                + ((spell && spell.clarification) ?"<div class='clarification'>" + EncyclopediaSpells._i18n.clarification + " " + spell.clarification.replace(/\n/g, "<br/>") + "</div>" : "")
+                + ((spell2 && spell2.clarification) ?"<div class='clarification'>" + EncyclopediaSpells._i18n.clarification + " " + spell2.clarification.replace(/\n/g, "<br/>") + "</div>" : "")
                 + (spell.forSkill ? "<div class='skill'>" + EncyclopediaSpells._i18n.skill + " " + Rules._linkToSkill(spell.forSkill, true) + "</div>" : "")
                 + (tokens ? ("<div class='tokens'>" + EncyclopediaSpells._i18n.tokensUsed + " " + tokens + "</div>") : "")
             + "</div>",
@@ -368,5 +388,4 @@ var EncyclopediaSpells = {
     _linkToSpell: function(id) {
         return "<a href='javascript:void(0)' onclick='EncyclopediaSpells.openSpell(\"" + id + "\")'>" + EncyclopediaSpells._findSpellsById(id)[0].title + "</a>";
     }
-
 }

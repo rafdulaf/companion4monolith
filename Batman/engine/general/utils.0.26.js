@@ -128,6 +128,7 @@ Utils = {
     {
         // Set language
         Language = localStorage.getItem(Application + "_Language") || Utils.autodetectLanguage();
+        Language2 = localStorage.getItem(Application + "_Language2");        
         Theme = localStorage.getItem(Application + "_Theme") || Utils.autodetectTheme();
         
         // Load version

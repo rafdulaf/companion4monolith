@@ -281,7 +281,7 @@ var EncyclopediaHeroes = {
     onHide: function() {
     },
 
-    openSheet: function(id) {
+    openSheet: async function(id) {
         var sheet = EncyclopediaHeroes._findHeroById(id);
 
         var originString = "";
@@ -354,8 +354,28 @@ var EncyclopediaHeroes = {
             icon: "encyclopedia-heroes-tostudio",
             fn: "EncyclopediaHeroes._transfert('" + id + "');"
         });
+        
+        let altTitle = "";
+        if (Language2 && Language2 != Language)
+        {
+            try
+            {
+                if (!EncyclopediaHeroes._secondaryData)
+                {
+                    EncyclopediaHeroes._secondaryData = await Utils.loadJSON("data/heroes/lang/heroes." + Language2 + ".json");
+                }
+                let sheet2 = EncyclopediaHeroes._secondaryData.list[sheet.id];
+                altTitle = sheet2.name
+                        + (sheet2.subname ? " " + sheet2.subname : "");
+            }
+            catch (e)
+            {
+                console.error("Cannot download the " + Language2 + " file of heroes", e);
+            }
+        }   
+        let title =  ((sheet.name + (sheet.subname ? " " + sheet.subname : "")) || "");    
 
-        Nav.dialog((sheet.name + (sheet.subname ? " " + sheet.subname : "")) || "",
+        Nav.dialog(title + ((altTitle && altTitle != title) ? " / " + altTitle : ""),
             "<div class='herodetails'>"
                 + "<div class='from'>" + EncyclopediaHeroes._i18n.from + " "
                     + originString

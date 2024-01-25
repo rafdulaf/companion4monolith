@@ -449,7 +449,7 @@ var EncyclopediaTiles = {
     onHide: function() {
     },
 
-    openTile: function(id) {
+    openTile: async function(id) {
         var tiles = EncyclopediaTiles._findTilesById(id);
         var displayTiles = [];
 
@@ -526,8 +526,25 @@ var EncyclopediaTiles = {
                         + "</div>";
             }
         }
+        
+        let altTitle = "";
+        if (Language2 && Language2 != Language)
+        {
+            try
+            {
+                if (!EncyclopediaTiles._secondaryData)
+                {
+                    EncyclopediaTiles._secondaryData = await Utils.loadJSON("data/tiles/lang/tiles." + Language2 + ".json");
+                }
+                altTitle = " / " + EncyclopediaTiles._secondaryData.list[tile.id].name;
+            }
+            catch (e)
+            {
+                console.error("Cannot download the " + Language2 + " file of tiles", e);
+            }
+        }
 
-        Nav.dialog(tile.name || "",
+        Nav.dialog((tile.name || "") + altTitle,
             "<div class='tiledetails'>"
                 + "<div class='minwidth'></div>"
                 + "<div class='from'>" + EncyclopediaTiles._i18n.from + " "
