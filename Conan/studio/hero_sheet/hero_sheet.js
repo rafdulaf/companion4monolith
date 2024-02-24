@@ -55,9 +55,11 @@ var HeroSheet = mergeObject(StudioItem, {
     _cardCode: function(sheet, printPurpose) {
         var code = "<div class=\"herosheet sheet\">";
 
+        sheet.back = sheet.back || "gray";
+
         code += "<picture class=\"background-l1\">"
-                    + "<source media=\"print\" srcset=\"studio/hero_sheet/img/background_layer_1hd.webp?version=" + Version + "\"/>"
-                    + "<img src=\"studio/hero_sheet/img/background_layer_1.webp?version=" + Version + "\"/>"
+                    + "<source media=\"print\" srcset=\"studio/hero_sheet/img/background_layer_1-" + sheet.back + "-" + "hd.webp?version=" + Version + "\"/>"
+                    + "<img src=\"studio/hero_sheet/img/background_layer_1-" + sheet.back + ".webp?version=" + Version + "\"/>"
                 + "</picture>";
 
         if (sheet.image)
@@ -141,6 +143,14 @@ var HeroSheet = mergeObject(StudioItem, {
                     + "<label for=\"hsname\">" + HeroSheet._i18n.name + "</label>"
                     + "<input id=\"hsname\" spellcheck='false' name=\"sheetname\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n.namePh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
                     + "<input id=\"hssubname\" spellcheck='false' name=\"sheetsubname\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n.subnamePh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+                + "</div>"
+                + "<div class=\"field color\">"
+                    + "<label for=\"hsback\">" + HeroSheet._i18n.color + "</label>"
+                    + "<select id='hsback' name='sheetback' class='color'>"
+                    +     "<option value='gray'>" + HeroSheet._i18n.colorGray + "</option>"
+                    +     "<option value='blue'>" + HeroSheet._i18n.colorBlue + "</option>"
+                    +     "<option value='none'>" + HeroSheet._i18n.colorNone + "</option>"
+                    + "</select>"
                 + "</div>"
                 + "<div class=\"field gems\">"
                     + "<label for=\"hsgems\">" + HeroSheet._i18n.gems + "</label>"
@@ -260,6 +270,7 @@ var HeroSheet = mergeObject(StudioItem, {
             id: Math.random(),
             name: "",
             subname: "",
+            back: "gray",
 
             image: "",
             imagelocation: {x: "0", y: "50"},
@@ -291,6 +302,14 @@ var HeroSheet = mergeObject(StudioItem, {
             var k = $(this);
             k.attr("data-value", "")
                 .selectmenu({ appendTo: k.parent(), width: k.is(".dice") ? 40 : 58, change: function(event, selection) {
+                    $(this).attr("data-value", selection.item.value);
+                    HeroSheet._preview();
+                }});
+        });
+        $("#hsback").each (function (i) {
+            var k = $(this);
+            k.attr("data-value", "")
+                .selectmenu({ appendTo: k.parent(), change: function(event, selection) {
                     $(this).attr("data-value", selection.item.value);
                     HeroSheet._preview();
                 }});
@@ -327,6 +346,7 @@ var HeroSheet = mergeObject(StudioItem, {
             id: $(".dialog input[name=sheetpos]")[0].value,
             name: $(".dialog input[name=sheetname]")[0].value,
             subname: $(".dialog input[name=sheetsubname]")[0].value,
+            back: $(".dialog select[name=sheetback]")[0].value,
             image: $(".dialog input[name=sheetimage]")[0].value,
             imagelocation: {x: $(".dialog input[name=sheetimagelocation]")[0].value || "0", y: $(".dialog input[name=sheetimagelocation2]")[0].value || "50"},
             imagezoom: $(".dialog input[name=sheetimagezoom]")[0].value || "100",
@@ -348,6 +368,7 @@ var HeroSheet = mergeObject(StudioItem, {
         $(".dialog input[name=sheetpos]")[0].value = sheet.id;
         $(".dialog input[name=sheetname]")[0].value = sheet.name;
         $(".dialog input[name=sheetsubname]")[0].value = sheet.subname;
+        $(".dialog select[name=sheetback]")[0].value = sheet.back; $(".dialog select[name=sheetback]").attr("data-value", sheet.back);
         $(".dialog input[name=sheetimage]")[0].value = sheet.image;
         $(".dialog input[name=sheetimagelocation]")[0].value = sheet.imagelocation.x;
         $(".dialog input[name=sheetimagelocation2]")[0].value = sheet.imagelocation.y;

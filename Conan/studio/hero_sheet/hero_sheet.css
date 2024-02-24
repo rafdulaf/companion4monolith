@@ -320,7 +320,7 @@
     background-image: url(img/weightmov.webp); 
     height: 74px;
     position: relative;
-    top: -26px;
+    top: -20px;
     text-align: right;
     padding-right: calc(35% - 59px);
     padding-top: 21px;
@@ -382,6 +382,7 @@
 .dialog .sheet .ui-menu { width: 100% !important; text-align: right; }
 .dialog .sheet .ui-menu .ui-menu-item { display: inline-block; vertical-align: top; width: 16.6%; text-align: center; }
 .dialog .sheet .skills ~ .ui-selectmenu-menu { width: 58px; } 
+.dialog .sheet .color ~ .ui-selectmenu-menu .ui-menu-item { width: 33%; } 
 
 @media screen and (max-width: 450px) {
     .dialog .sheet .ui-menu .ui-menu-item { width: 33%; }
@@ -421,10 +422,38 @@
     background-repeat: no-repeat !important;
 }
 
+.dialog .sheet .color span[role=combobox] {
+    width: 100%;
+}
+
+.dialog .sheet .color .ui-selectmenu-menu ul li:before {
+    content: " ";
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    background-position: center 10%;
+    background-size: 133%;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+.dialog .sheet .color span[role=combobox] {
+    background-color: transparent !important;
+    background-position: center 36% !important;
+    background-size: 126% !important;
+    background-repeat: no-repeat !important;
+}
+
+.dialog .sheet .color select ~ .ui-selectmenu-menu ul li:nth-child(1):before, .dialog .sheet .color select[data-value=gray] + span { background-image: url(img/background_layer_1-gray.webp) !important; }
+.dialog .sheet .color select ~ .ui-selectmenu-menu ul li:nth-child(2):before, .dialog .sheet .color select[data-value=blue] + span { background-image: url(img/background_layer_1-blue.webp) !important; }
+.dialog .sheet .color select ~ .ui-selectmenu-menu ul li:nth-child(3):before, .dialog .sheet .color select[data-value=none] + span { background-image: url(img/background_layer_1-none.webp) !important; }
+
+
 .dialog .sheet .ui-selectmenu-text, .dialog .sheet .ui-menu .ui-menu-item-wrapper { color: transparent; font-size: 1px; }
 .dialog .sheet .ui-selectmenu-icon.ui-icon.ui-icon-triangle-1-s { background-image: none; }
 .dialog .sheet .ui-menu-item, .dialog .sheet .ui-menu-item-wrapper { height: 40px; position: relative; }
-.dialog .sheet .ui-selectmenu-button.ui-button.ui-widget.ui-selectmenu-button-closed.ui-corner-all { border-color: transparent; }
+.dialog .sheet .ui-selectmenu-button.ui-button.ui-widget.ui-selectmenu-button-closed.ui-corner-all:not(.color + span) { border-color: transparent; }
 
 .dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(1):before, .dialog .sheet select[data-value=red] + span { background-image: url(img/dice_red.webp) !important; }
 .dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(2):before, .dialog .sheet select[data-value=redreroll] + span { background-image: url(img/dice_redreroll.webp) !important; }
@@ -575,6 +604,7 @@
         width: 50%;
     }
 }
+
 @media screen and (min-width: 840px) {
     .dialog .hscol {
         width: 50%;
@@ -598,7 +628,12 @@
     .ff .dialog .sheet.herosheet {
         transform-origin: top left;
         transform: scale(0.85);
-    } 
+    }
+    
+    .dialog .sheet .name, .dialog .sheet .color { display: inline-block; }
+    .dialog .sheet .name { width: calc(100% - 100px); }
+    .dialog .sheet .color { width: 100px; }
+    .dialog .sheet .color ~ .ui-selectmenu-menu .ui-menu-item { width: 100%; } 
 }
 @media screen and (min-width: 1210px) {
     .dialog .sheet.herosheet {

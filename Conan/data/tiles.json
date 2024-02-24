@@ -4072,6 +4072,1447 @@
             "image_zoom": 112,
             "model": "thulsa-doom",
             "origins": ["conqueror"]
+        },
+        
+        {
+            "id": "asgrim",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
+            "skills": { "0": "attack/precision_strike", "1": "movement/evasive", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":23, "y":194}, "image_zoom": 260 }
+            ],
+
+            "image": "data/tiles/img/asgrim.webp",
+            "imageHD": "data/tiles/img/asgrim_hd.webp",
+            "image_location": {"x":58, "y":52},
+            "image_zoom": 75,
+            "model": "asgrim",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "atla",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "ranged",
+            "dices": { "0": "orange", "1": "orange", "2": "yellowreroll", "3": "none" },
+            "skills": { "0": "magic/spell_caster", "1": "miscellaneous/jinx", "2": "defense/protected", "3": "movement/evasive" },
+            "tokens": [
+                { "image_location": {"x":-11, "y":221}, "image_zoom": 315, "image": "data/tiles/img/atla_token.webp" }
+            ],
+
+            "image": "data/tiles/img/atla.webp",
+            "imageHD": "data/tiles/img/atla_hd.webp",
+            "image_location": {"x":92, "y":64},
+            "image_zoom": 108,
+            "model": "atla",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "bragi",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "ranged",
+            "dices": { "0": "orangereroll", "1": "orangereroll", "2": "none", "3": "none" },
+            "skills": { "0": "defense/protected", "1": "attack/elite_shooter", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":74, "y":236}, "image_zoom": 250, "image": "data/tiles/img/bragi_token.webp" }
+            ],
+
+            "image": "data/tiles/img/bragi.webp",
+            "imageHD": "data/tiles/img/bragi_hd.webp",
+            "image_location": {"x":57, "y":57},
+            "image_zoom": 73,
+            "model": "bragi",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "brunhilde",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "orangereroll", "2": "none", "3": "none" },
+            "skills": { "0": "movement/feline_grace", "1": "defense/untouchable", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":44, "y":182}, "image_zoom": 380, "image": "data/tiles/img/brunhilde_token.webp" }
+            ],
+
+            "image": "data/tiles/img/brunhilde.webp",
+            "imageHD": "data/tiles/img/brunhilde_hd.webp",
+            "image_location": {"x":58, "y":71},
+            "image_zoom": 167,
+            "model": "brunhilde",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "hialmar",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "red", "2": "none", "3": "none" },
+            "skills": { "0": "movement/leap", "1": "attack/precision_strike", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":27, "y":231}, "image_zoom": 400 }
+            ],
+
+            "image": "data/tiles/img/hialmar.webp",
+            "imageHD": "data/tiles/img/hialmar_hd.webp",
+            "image_location": {"x":51, "y":51},
+            "image_zoom": 98,
+            "model": "hialmar",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "lagertha",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "yellowreroll", "2": "yellowreroll", "3": "none" },
+            "skills": { "0": "movement/leap", "1": "attack/counterattack", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":61, "y":256}, "image_zoom": 430 }
+            ],
+
+            "image": "data/tiles/img/lagertha.webp",
+            "imageHD": "data/tiles/img/lagertha_hd.webp",
+            "image_location": {"x":53, "y":54},
+            "image_zoom": 108,
+            "model": "lagertha",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "sonya",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "4",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
+            "skills": { "0": "attack/precision_strike", "1": "miscellaneous/support", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":46, "y":205}, "image_zoom": 500, "image": "data/tiles/img/sonya_token.webp" }
+            ],
+
+            "image": "data/tiles/img/sonya.webp",
+            "imageHD": "data/tiles/img/sonya_hd.webp",
+            "image_location": {"x":61, "y":50},
+            "image_zoom": 115,
+            "model": "sonya",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "tostig",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "ranged",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
+            "skills": { "0": "defense/untouchable", "1": "attack/elite_shooter", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":61, "y":266}, "image_zoom": 320, "image": "data/tiles/img/tostig_token.webp" }
+            ],
+
+            "image": "data/tiles/img/tostig.webp",
+            "imageHD": "data/tiles/img/tostig_hd.webp",
+            "image_location": {"x":59, "y":54},
+            "image_zoom": 81,
+            "model": "tostig",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "wulfhere",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
+            "skills": { "0": "movement/swimming", "1": "defense/protected", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":59, "y":228}, "image_zoom": 350, "image": "data/tiles/img/wulfhere_token.webp" }
+            ],
+
+            "image": "data/tiles/img/wulfhere.webp",
+            "imageHD": "data/tiles/img/wulfhere_hd.webp",
+            "image_location": {"x":54, "y":59},
+            "image_zoom": 116,
+            "model": "wulfhere",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "zelata-wanderer",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "1",
+            "attacktype": "ranged",
+            "dices": { "0": "yellow", "1": "yellow", "2": "yellow", "3": "none" },
+            "skills": { "0": "magic/spell_caster", "1": "defense/untouchable", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":92, "y":198}, "image_zoom": 300, "image": "data/tiles/img/zelata-wanderer_token.webp" }
+            ],
+
+            "image": "data/tiles/img/zelata-wanderer.webp",
+            "imageHD": "data/tiles/img/zelata-wanderer_hd.webp",
+            "image_location": {"x":53, "y":52},
+            "image_zoom": 93,
+            "model": "zelata-wanderer",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "aesir-berserkers",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "orangereroll", "2": "none", "3": "none" },
+            "skills": { "0": "movement/climb", "1": "attack/circular_strike", "2": "none", "3": "none" },
+            "reinforcement": "2",
+
+            "image": "data/tiles/img/aesir-berserkers.webp",
+            "imageHD": "data/tiles/img/aesir-berserkers_hd.webp",
+            "image_location": {"x":50, "y":52},
+            "image_zoom": 110,
+            "model": "aesir-berserkers",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "aesir-chief",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "movement/leap", "1": "attack/counterattack", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":126, "y":73}, "image_zoom": 600 }
+            ],
+
+            "image": "data/tiles/img/aesir-chief.webp",
+            "imageHD": "data/tiles/img/aesir-chief_hd.webp",
+            "image_location": {"x":87, "y":43},
+            "image_zoom": 278,
+            "image_rotation": 20,
+            "model": "aesir-chief",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "aesir-reavers",
+
+            "colors": ["blue"],
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "orangereroll", "2": "none", "3": "none" },
+            "skills": { "0": "attack/precision_strike", "1": "defense/untouchable", "2": "none", "3": "none" },
+            "reinforcement": "2",
+
+            "image": "data/tiles/img/aesir-reavers.webp",
+            "imageHD": "data/tiles/img/aesir-reavers_hd.webp",
+            "image_location": {"x":47, "y":53},
+            "image_zoom": 116,
+            "model": "aesir-reavers",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "aesir-reavers-2",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "yellowreroll", "1": "yellowreroll", "2": "none", "3": "none" },
+            "skills": { "0": "attack/precision_strike", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+
+            "image": "data/tiles/img/aesir-reavers.webp",
+            "imageHD": "data/tiles/img/aesir-reavers_hd.webp",
+            "image_location": {"x":47, "y":53},
+            "image_zoom": 116,
+            "model": "aesir-reavers",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "aesir-spearmen",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "3",
+            "attacktype": "ranged",
+            "dices": { "0": "orange", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "attack/elite_shooter", "1": "miscellaneous/support", "2": "none", "3": "none" },
+            "reinforcement": "2",
+
+            "image": "data/tiles/img/aesir-spearmen.webp",
+            "imageHD": "data/tiles/img/aesir-spearmen_hd.webp",
+            "image_location": {"x":52, "y":52},
+            "image_zoom": 98,
+            "model": "aesir-spearmen",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "vanir-berserkers",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "attack/counterattack", "1": "defense/untouchable", "2": "none", "3": "none" },
+            "reinforcement": "1",
+
+            "image": "data/tiles/img/vanir-berserkers.webp",
+            "imageHD": "data/tiles/img/vanir-berserkers_hd.webp",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 109,
+            "model": "vanir-berserkers",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "vanir-berserkers-2",
+
+            "colors": ["green"],
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "orangereroll", "2": "none", "3": "none" },
+            "skills": { "0": "attack/counterattack", "1": "defense/untouchable", "2": "none", "3": "none" },
+            "reinforcement": "3",
+
+            "image": "data/tiles/img/vanir-berserkers.webp",
+            "imageHD": "data/tiles/img/vanir-berserkers_hd.webp",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 109,
+            "model": "vanir-berserkers",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "vanir-berserkers-3",
+
+            "colors": ["purple"],
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "yellowreroll", "2": "none", "3": "none" },
+            "skills": { "0": "attack/counterattack", "1": "defense/untouchable", "2": "none", "3": "none" },
+            "reinforcement": "2",
+
+            "image": "data/tiles/img/vanir-berserkers.webp",
+            "imageHD": "data/tiles/img/vanir-berserkers_hd.webp",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 109,
+            "model": "vanir-berserkers",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "vanir-chief",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "3",
+            "attacktype": "ranged",
+            "dices": { "0": "redreroll", "1": "orangereroll", "2": "none", "3": "none" },
+            "skills": { "0": "attack/elite_shooter", "1": "attack/precision_shot", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":52, "y":190}, "image_zoom": 350 }
+            ],
+
+            "image": "data/tiles/img/vanir-chief.webp",
+            "imageHD": "data/tiles/img/vanir-chief_hd.webp",
+            "image_location": {"x":55, "y":61},
+            "image_zoom": 112,
+            "model": "vanir-chief",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "vanir-fanatics",
+
+            "colors": ["gray"],
+            "movement": "4",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "orangereroll", "2": "none", "3": "none" },
+            "skills": { "0": "movement/wall_wrecker", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+
+            "image": "data/tiles/img/vanir-fanatics.webp",
+            "imageHD": "data/tiles/img/vanir-fanatics_hd.webp",
+            "image_location": {"x":45, "y":50},
+            "image_zoom": 140,
+            "image_rotation": -9,
+            "model": "vanir-fanatics",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "vanir-fanatics-2",
+
+            "colors": ["red"],
+            "movement": "4",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "orangereroll", "2": "none", "3": "none" },
+            "skills": { "0": "movement/wall_wrecker", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "2",
+
+            "image": "data/tiles/img/vanir-fanatics.webp",
+            "imageHD": "data/tiles/img/vanir-fanatics_hd.webp",
+            "image_location": {"x":45, "y":50},
+            "image_zoom": 140,
+            "image_rotation": -9,
+            "model": "vanir-fanatics",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "vanir-guards",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "defense/sacrifice", "1": "movement/climb", "2": "none", "3": "none" },
+            "reinforcement": "1",
+
+            "image": "data/tiles/img/vanir-guards.webp",
+            "imageHD": "data/tiles/img/vanir-guards_hd.webp",
+            "image_location": {"x":42, "y":52},
+            "image_zoom": 130,
+            "model": "vanir-guards",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "berserker-champion",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "red", "2": "none", "3": "none" },
+            "skills": { "0": "movement/wall_wrecker", "1": "attack/precision_strike", "2": "none", "3": "none" },
+
+            "image": "data/tiles/img/hialmar.webp",
+            "imageHD": "data/tiles/img/hialmar_hd.webp",
+            "image_location": {"x":51, "y":51},
+            "image_zoom": 98,
+            "model": "hialmar",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "hyperborean-mercenaries",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "yellowreroll", "2": "none", "3": "none" },
+            "skills": { "0": "defense/sacrifice", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+
+            "image": "data/tiles/img/hyperborean-mercenaries.webp",
+            "imageHD": "data/tiles/img/hyperborean-mercenaries_hd.webp",
+            "image_location": {"x":50, "y":52},
+            "image_zoom": 102,
+            "model": "hyperborean-mercenaries",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "mercenary-captain",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "yellowreroll", "2": "none", "3": "none" },
+            "skills": { "0": "defense/sacrifice", "1": "miscellaneous/support", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":6, "y":177}, "image_zoom": 300 }
+            ],
+
+            "image": "data/tiles/img/mercenary-captain.webp",
+            "imageHD": "data/tiles/img/mercenary-captain_hd.webp",
+            "image_location": {"x":47, "y":54},
+            "image_zoom": 101,
+            "model": "mercenary-captain",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "shield-maidens",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "defense/sacrifice", "1": "defense/untouchable", "2": "none", "3": "none" },
+            "reinforcement": "2",
+
+            "image": "data/tiles/img/shield-maidens.webp",
+            "imageHD": "data/tiles/img/shield-maidens_hd.webp",
+            "image_location": {"x":52, "y":53},
+            "image_zoom": 125,
+            "model": "shield-maidens",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "sorceresses",
+
+            "colors": ["orange"],
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "ranged",
+            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "magic/spell_caster", "1": "miscellaneous/jinx", "2": "none", "3": "none" },
+            "reinforcement": "2",
+
+            "image": "data/tiles/img/atla.webp",
+            "imageHD": "data/tiles/img/atla_hd.webp",
+            "image_location": {"x":75, "y":53},
+            "image_zoom": 86,
+            "model": "atla",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "sorceresses-2",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "ranged",
+            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "magic/spell_caster", "1": "miscellaneous/jinx", "2": "movement/flying", "3": "none" },
+            "reinforcement": "2",
+
+            "image": "data/tiles/img/atla.webp",
+            "imageHD": "data/tiles/img/atla_hd.webp",
+            "image_location": {"x":75, "y":53},
+            "image_zoom": 86,
+            "model": "atla",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "aesir-lynxes",
+
+            "colors": ["gray"],
+            "movement": "8",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "yellowreroll", "2": "none", "3": "none" },
+            "skills": { "0": "movement/feline_grace", "1": "defense/untouchable", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":83, "y":24}, "image_zoom": 240, "image": "data/tiles/img/aesir-lynxes_token.webp" }
+            ],
+
+            "image": "data/tiles/img/aesir-lynxes.webp",
+            "imageHD": "data/tiles/img/aesir-lynxes_hd.webp",
+            "image_location": {"x":63, "y":41},
+            "image_zoom": 130,
+            "model": "aesir-lynxes",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "goats",
+
+            "colors": ["gray"],
+            "movement": "4",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "yellow", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "movement/climb", "1": "defense/untouchable", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":26, "y":153}, "image_zoom": 360 }
+            ],
+
+            "image": "data/tiles/img/goats.webp",
+            "imageHD": "data/tiles/img/goats_hd.webp",
+            "image_location": {"x":45, "y":57},
+            "image_zoom": 140,
+            "model": "goats",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "squirrel",
+
+            "colors": ["gray"],
+            "movement": "6",
+            "defense": "0",
+            "attacktype": "contact",
+            "dices": { "0": "yellow", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "movement/evasive", "1": "defense/untouchable", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":51, "y":-10}, "image_zoom": 220, "image": "data/tiles/img/squirrel_token.webp" }
+            ],
+
+            "image": "data/tiles/img/squirrel.webp",
+            "imageHD": "data/tiles/img/squirrel_hd.webp",
+            "image_location": {"x":71, "y":52},
+            "image_zoom": 100,
+            "model": "squirrel",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "wolf-pack",
+
+            "colors": ["gray"],
+            "movement": "4",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "yellowreroll", "2": "none", "3": "none" },
+            "skills": { "0": "movement/blocking", "1": "movement/evasive", "2": "none", "3": "none" },
+            "reinforcement": "3",
+
+            "image": "data/tiles/img/wolf-pack.webp",
+            "imageHD": "data/tiles/img/wolf-pack_hd.webp",
+            "image_location": {"x":15, "y":50},
+            "image_zoom": 210,
+            "model": "wolf-pack",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "frost-giant-deceiver",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
+            "skills": { "0": "defense/protected", "1": "miscellaneous/jinx", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":20, "y":168}, "image_zoom": 350 }
+            ],
+
+            "image": "data/tiles/img/frost-giant-deceiver.webp",
+            "imageHD": "data/tiles/img/frost-giant-deceiver_hd.webp",
+            "image_location": {"x":53, "y":57.5},
+            "image_zoom": 141,
+            "model": "frost-giant-deceiver",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "frost-giant-temptress",
+
+            "colors": ["gray"],
+            "movement": "4",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "yellowreroll", "1": "yellowreroll", "2": "yellowreroll", "3": "none" },
+            "skills": { "0": "movement/blocking", "1": "miscellaneous/fascination", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":53, "y":184}, "image_zoom": 400, "image": "data/tiles/img/frost-giant-temptress_token.webp" }
+            ],
+
+            "image": "data/tiles/img/frost-giant-temptress.webp",
+            "imageHD": "data/tiles/img/frost-giant-temptress_hd.webp",
+            "image_location": {"x":54, "y":53},
+            "image_zoom": 140,
+            "model": "frost-giant-temptress",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "frost-giant-huntress",
+
+            "colors": ["gray"],
+            "movement": "4",
+            "defense": "2",
+            "attacktype": "ranged",
+            "dices": { "0": "redreroll", "1": "orangereroll", "2": "yellowreroll", "3": "none" },
+            "skills": { "0": "attack/elite_shooter", "1": "movement/climb", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":38, "y":152}, "image_zoom": 320 }
+            ],
+
+            "image": "data/tiles/img/frost-giant-huntress.webp",
+            "imageHD": "data/tiles/img/frost-giant-huntress_hd.webp",
+            "image_location": {"x":47, "y":50},
+            "image_zoom": 112,
+            "model": "frost-giant-huntress",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "frost-giant-jarl",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "orangereroll", "2": "yellowreroll", "3": "none" },
+            "skills": { "0": "movement/climb", "1": "defense/protected", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":65, "y":210}, "image_zoom": 440, "image": "data/tiles/img/frost-giant-jarl_token.webp" }
+            ],
+
+            "image": "data/tiles/img/frost-giant-jarl.webp",
+            "imageHD": "data/tiles/img/frost-giant-jarl_hd.webp",
+            "image_location": {"x":47, "y":53},
+            "image_zoom": 107,
+            "model": "frost-giant-jarl",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "frost-giant-oracle",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "yellowreroll", "2": "yellowreroll", "3": "none" },
+            "skills": { "0": "magic/spell_caster", "1": "attack/attack_from_beyond", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":68, "y":147}, "image_zoom": 305, "image": "data/tiles/img/frost-giant-oracle_token.webp" }
+            ],
+
+            "image": "data/tiles/img/frost-giant-oracle.webp",
+            "imageHD": "data/tiles/img/frost-giant-oracle_hd.webp",
+            "image_location": {"x":52, "y":57},
+            "image_zoom": 140,
+            "model": "frost-giant-oracle",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "frost-giant-savage",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "ranged",
+            "dices": { "0": "orange", "1": "orange", "2": "orange", "3": "none" },
+            "skills": { "0": "attack/elite_shooter", "1": "movement/blocking", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":14, "y":216}, "image_zoom": 460 }
+            ],
+
+            "image": "data/tiles/img/frost-giant-savage.webp",
+            "imageHD": "data/tiles/img/frost-giant-savage_hd.webp",
+            "image_location": {"x":54, "y":52},
+            "image_zoom": 135,
+            "model": "frost-giant-savage",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "frost-giant-sentinel",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "4",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "orangereroll", "2": "orange", "3": "none" },
+            "skills": { "0": "movement/blocking", "1": "attack/reach", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":55, "y":281}, "image_zoom": 450, "image": "data/tiles/img/frost-giant-sentinel_token.webp" }
+            ],
+
+            "image": "data/tiles/img/frost-giant-sentinel.webp",
+            "imageHD": "data/tiles/img/frost-giant-sentinel_hd.webp",
+            "image_location": {"x":53, "y":66},
+            "image_zoom": 130,
+            "model": "frost-giant-sentinel",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "frost-giant-shipwright",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
+            "skills": { "0": "movement/climb", "1": "attack/reach", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":40, "y":178}, "image_zoom": 360, "image": "data/tiles/img/frost-giant-shipwright_token.webp" }
+            ],
+
+            "image": "data/tiles/img/frost-giant-shipwright.webp",
+            "imageHD": "data/tiles/img/frost-giant-shipwright_hd.webp",
+            "image_location": {"x":50, "y":62},
+            "image_zoom": 142,
+            "model": "frost-giant-shipwright",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "frost-giant-veteran",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "yellowreroll", "1": "yellowreroll", "2": "yellowreroll", "3": "none" },
+            "skills": { "0": "miscellaneous/support", "1": "attack/precision_strike", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":42, "y":218}, "image_zoom": 470 }
+            ],
+
+            "image": "data/tiles/img/frost-giant-veteran.webp",
+            "imageHD": "data/tiles/img/frost-giant-veteran_hd.webp",
+            "image_location": {"x":51, "y":52},
+            "image_zoom": 130,
+            "model": "frost-giant-veteran",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "frost-giant-warlord",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "orange", "2": "orange", "3": "none" },
+            "skills": { "0": "defense/protected", "1": "attack/reach", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":39, "y":261}, "image_zoom": 400 }
+            ],
+
+            "image": "data/tiles/img/frost-giant-warlord.webp",
+            "imageHD": "data/tiles/img/frost-giant-warlord_hd.webp",
+            "image_location": {"x":52, "y":69},
+            "image_zoom": 133,
+            "model": "frost-giant-warlord",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "frost-giant-weaver",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "orange", "2": "orange", "3": "none" },
+            "skills": { "0": "movement/web_projection", "1": "miscellaneous/support", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":59, "y":157}, "image_zoom": 350 }
+            ],
+
+            "image": "data/tiles/img/frost-giant-weaver.webp",
+            "imageHD": "data/tiles/img/frost-giant-weaver_hd.webp",
+            "image_location": {"x":55, "y":53},
+            "image_zoom": 139,
+            "model": "frost-giant-weaver",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "gullveig",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "red", "2": "none", "3": "none" },
+            "skills": { "0": "magic/spell_caster", "1": "miscellaneous/horror", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":49, "y":231}, "image_zoom": 450 }
+            ],
+
+            "image": "data/tiles/img/gullveig.webp",
+            "imageHD": "data/tiles/img/gullveig_hd.webp",
+            "image_location": {"x":62, "y":51},
+            "image_zoom": 120,
+            "model": "gullveig",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "gullveig-2",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "red", "2": "none", "3": "none" },
+            "skills": { "0": "magic/spell_caster", "1": "miscellaneous/horror", "2": "movement/intangible", "3": "none" },
+
+            "image": "data/tiles/img/gullveig.webp",
+            "imageHD": "data/tiles/img/gullveig_hd.webp",
+            "image_location": {"x":64, "y":96},
+            "image_zoom": 260,
+            "model": "gullveig",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "half-giant",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "4",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "orange", "2": "orange", "3": "none" },
+            "skills": { "0": "attack/precision_strike", "1": "movement/blocking", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":74, "y":227}, "image_zoom": 450, "image": "data/tiles/img/half-giant_token.webp" }
+            ],
+
+            "image": "data/tiles/img/half-giant.webp",
+            "imageHD": "data/tiles/img/half-giant_hd.webp",
+            "image_location": {"x":53, "y":53},
+            "image_zoom": 130,
+            "model": "half-giant",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "abomination",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "red", "2": "yellowreroll", "3": "none" },
+            "skills": { "0": "attack/constriction", "1": "miscellaneous/horror", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":30, "y":169}, "image_zoom": 350 }
+            ],
+
+            "image": "data/tiles/img/abomination.webp",
+            "imageHD": "data/tiles/img/abomination_hd.webp",
+            "image_location": {"x":59, "y":53},
+            "image_zoom": 98,
+            "model": "abomination",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "child-of-jhil",
+
+            "colors": ["gray"],
+            "movement": "5",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "redreroll", "3": "none" },
+            "skills": { "0": "defense/untouchable", "1": "movement/flying", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":25, "y":58}, "image_zoom": 120 }
+            ],
+
+            "image": "data/tiles/img/child-of-jhil.webp",
+            "imageHD": "data/tiles/img/child-of-jhil_hd.webp",
+            "image_location": {"x":47, "y":54},
+            "image_zoom": 110,
+            "model": "child-of-jhil",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "colossal-crawler",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "4",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "redreroll", "3": "none" },
+            "skills": { "0": "movement/blocking", "1": "attack/precision_strike", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":49, "y":39}, "image_zoom": 190, "image": "data/tiles/img/colossal-crawler_token.webp" }
+            ],
+
+            "image": "data/tiles/img/colossal-crawler.webp",
+            "imageHD": "data/tiles/img/colossal-crawler_hd.webp",
+            "image_location": {"x":58, "y":59},
+            "image_zoom": 105,
+            "model": "colossal-crawler",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "demon-wolf",
+
+            "colors": ["gray"],
+            "movement": "4",
+            "defense": "5",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "redreroll", "3": "redreroll" },
+            "skills": { "0": "movement/evasive", "1": "attack/circular_strike", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":91, "y":85}, "image_zoom": 350, "image": "data/tiles/img/demon-wolf_token.webp"  }
+            ],
+
+            "image": "data/tiles/img/demon-wolf.webp",
+            "imageHD": "data/tiles/img/demon-wolf_hd.webp",
+            "image_location": {"x":48, "y":56},
+            "image_zoom": 145,
+            "model": "demon-wolf",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "injured-wolf",
+
+            "colors": ["gray"],
+            "movement": "4",
+            "defense": "5",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "orange", "3": "none" },
+            "skills": { "0": "movement/evasive", "1": "attack/precision_strike", "2": "none", "3": "none" },
+
+            "image": "data/tiles/img/demon-wolf.webp",
+            "imageHD": "data/tiles/img/demon-wolf_hd.webp",
+            "image_location": {"x":48, "y":56},
+            "image_zoom": 145,
+            "model": "demon-wolf",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "draugr",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "4",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "orangereroll", "3": "none" },
+            "skills": { "0": "movement/climb", "1": "miscellaneous/horror", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":51, "y":170}, "image_zoom": 320, "image": "data/tiles/img/draugr_token.webp" }
+            ],
+
+            "image": "data/tiles/img/draugr.webp",
+            "imageHD": "data/tiles/img/draugr_hd.webp",
+            "image_location": {"x":51, "y":54},
+            "image_zoom": 100,
+            "model": "draugr",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "rotting-draugr",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "4",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "orangereroll", "2": "orangereroll", "3": "none" },
+            "skills": { "0": "miscellaneous/poison", "1": "miscellaneous/horror", "2": "none", "3": "none" },
+
+            "image": "data/tiles/img/draugr.webp",
+            "imageHD": "data/tiles/img/draugr_hd.webp",
+            "image_location": {"x":51, "y":54},
+            "image_zoom": 100,
+            "model": "draugr",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "fiend-of-the-drifts",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "orangereroll", "2": "orange", "3": "none" },
+            "skills": { "0": "movement/leap", "1": "miscellaneous/jinx", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":114, "y":159}, "image_zoom": 300, "image": "data/tiles/img/fiend-of-the-drifts_token.webp" }
+            ],
+
+            "image": "data/tiles/img/fiend-of-the-drifts.webp",
+            "imageHD": "data/tiles/img/fiend-of-the-drifts_hd.webp",
+            "image_location": {"x":44, "y":63},
+            "image_zoom": 130,
+            "model": "fiend-of-the-drifts",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "fiend-of-ymir",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
+            "skills": { "0": "magic/spell_caster", "1": "attack/attack_from_beyond", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":92, "y":226}, "image_zoom": 380 }
+            ],
+
+            "image": "data/tiles/img/fiend-of-ymir.webp",
+            "imageHD": "data/tiles/img/fiend-of-ymir_hd.webp",
+            "image_location": {"x":66, "y":56},
+            "image_zoom": 107,
+            "model": "fiend-of-ymir",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "frozen-dead",
+
+            "colors": ["blue"],
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/horror", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "2",
+
+            "image": "data/tiles/img/frozen-dead.webp",
+            "imageHD": "data/tiles/img/frozen-dead_hd.webp",
+            "image_location": {"x":61, "y":59},
+            "image_zoom": 100,
+            "model": "frozen-dead",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "frozen-dead-2",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "attack/constriction", "1": "miscellaneous/horror", "2": "none", "3": "none" },
+            "reinforcement": "1",
+
+            "image": "data/tiles/img/frozen-dead.webp",
+            "imageHD": "data/tiles/img/frozen-dead_hd.webp",
+            "image_location": {"x":61, "y":59},
+            "image_zoom": 100,
+            "model": "frozen-dead",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "infernal-crone",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "ranged",
+            "dices": { "0": "yellowreroll", "1": "yellowreroll", "2": "none", "3": "none" },
+            "skills": { "0": "magic/spell_caster", "1": "miscellaneous/poison", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":84, "y":124}, "image_zoom": 350, "image": "data/tiles/img/infernal-crone_token.webp" }
+            ],
+
+            "image": "data/tiles/img/infernal-crone.webp",
+            "imageHD": "data/tiles/img/infernal-crone_hd.webp",
+            "image_location": {"x":72, "y":64},
+            "image_zoom": 195,
+            "image_rotation": -17,
+            "model": "infernal-crone",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "infernal-hound",
+
+            "colors": ["gray"],
+            "movement": "4",
+            "defense": "4",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "red", "2": "red", "3": "none" },
+            "skills": { "0": "movement/evasive", "1": "miscellaneous/horror", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":32, "y":42}, "image_zoom": 150 }
+            ],
+
+            "image": "data/tiles/img/infernal-hound.webp",
+            "imageHD": "data/tiles/img/infernal-hound_hd.webp",
+            "image_location": {"x":49, "y":54},
+            "image_zoom": 105,
+            "model": "infernal-hound",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "jormungand",
+
+            "colors": ["gray"],
+            "movement": "4",
+            "defense": "4",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "orangereroll", "3": "orangereroll" },
+            "skills": { "0": "attack/circular_strike", "1": "movement/swimming", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":54, "y":86}, "image_zoom": 140, "image": "data/tiles/img/jormungand_token.webp" }
+            ],
+
+            "image": "data/tiles/img/jormungand.webp",
+            "imageHD": "data/tiles/img/jormungand_hd.webp",
+            "image_location": {"x":50, "y":53},
+            "image_zoom": 106,
+            "model": "jormungand",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "injured-jormungand",
+
+            "colors": ["gray"],
+            "movement": "5",
+            "defense": "4",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "orangereroll", "2": "yellowreroll", "3": "yellowreroll" },
+            "skills": { "0": "miscellaneous/jinx", "1": "movement/swimming", "2": "none", "3": "none" },
+
+            "image": "data/tiles/img/jormungand.webp",
+            "imageHD": "data/tiles/img/jormungand_hd.webp",
+            "image_location": {"x":50, "y":53},
+            "image_zoom": 106,
+            "model": "jormungand",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "nidhogg",
+
+            "colors": ["gray"],
+            "movement": "5",
+            "defense": "4",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "red", "3": "none" },
+            "skills": { "0": "attack/precision_strike", "1": "movement/flying", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":16, "y":68}, "image_zoom": 140 }
+            ],
+
+            "image": "data/tiles/img/nidhogg.webp",
+            "imageHD": "data/tiles/img/nidhogg_hd.webp",
+            "image_location": {"x":49, "y":52},
+            "image_zoom": 102,
+            "model": "nidhogg",
+            "origins": ["godsofthenorth"]
+        }
+        ,
+        
+        {
+            "id": "manifestation-of-ymir",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "4",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "orangereroll", "3": "orangereroll" },
+            "skills": { "0": "movement/climb", "1": "miscellaneous/horror", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":44, "y":152}, "image_zoom": 300 }
+            ],
+
+            "image": "data/tiles/img/manifestation-of-ymir.webp",
+            "imageHD": "data/tiles/img/manifestation-of-ymir_hd.webp",
+            "image_location": {"x":48, "y":63},
+            "image_zoom": 140,
+            "model": "manifestation-of-ymir",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "injured-ymir",
+
+            "colors": ["gray"],
+            "movement": "4",
+            "defense": "4",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "orangereroll", "3": "none" },
+            "skills": { "0": "movement/climb", "1": "miscellaneous/horror", "2": "none", "3": "none" },
+
+            "image": "data/tiles/img/manifestation-of-ymir.webp",
+            "imageHD": "data/tiles/img/manifestation-of-ymir_hd.webp",
+            "image_location": {"x":48, "y":63},
+            "image_zoom": 140,
+            "model": "manifestation-of-ymir",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "son-of-ymir",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "orangereroll", "2": "yellowreroll", "3": "none" },
+            "skills": { "0": "movement/blocking", "1": "movement/wall_wrecker", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":88, "y":110}, "image_zoom": 270, "image": "data/tiles/img/son-of-ymir_token.webp" }
+            ],
+
+            "image": "data/tiles/img/son-of-ymir.webp",
+            "imageHD": "data/tiles/img/son-of-ymir_hd.webp",
+            "image_location": {"x":49, "y":57},
+            "image_zoom": 101,
+            "model": "son-of-ymir",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "ymir-s-herald",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "orangereroll", "2": "yellowreroll", "3": "none" },
+            "skills": { "0": "miscellaneous/support", "1": "defense/protected", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":35, "y":172}, "image_zoom": 380, "image": "data/tiles/img/ymir-s-herald_token.webp" }
+            ],
+
+            "image": "data/tiles/img/ymir-s-herald.webp",
+            "imageHD": "data/tiles/img/ymir-s-herald_hd.webp",
+            "image_location": {"x":53, "y":49},
+            "image_zoom": 95,
+            "model": "ymir-s-herald",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "ymir-s-hunt-master",
+
+            "colors": ["gray"],
+            "movement": "5",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "red", "2": "orangereroll", "3": "orange" },
+            "skills": { "0": "movement/evasive", "1": "attack/circular_strike", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":28, "y":152}, "image_zoom": 260 }
+            ],
+
+            "image": "data/tiles/img/ymir-s-hunt-master.webp",
+            "imageHD": "data/tiles/img/ymir-s-hunt-master_hd.webp",
+            "image_location": {"x":50, "y":54},
+            "image_zoom": 106,
+            "model": "ymir-s-hunt-master",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "seer-of-ymir",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "yellow", "1": "yellow", "2": "yellow", "3": "none" },
+            "skills": { "0": "miscellaneous/jinx", "1": "magic/spell_caster", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":55, "y":158}, "image_zoom": 300 }
+            ],
+
+            "image": "data/tiles/img/seer-of-ymir.webp",
+            "imageHD": "data/tiles/img/seer-of-ymir_hd.webp",
+            "image_location": {"x":56, "y":51},
+            "image_zoom": 78,
+            "model": "seer-of-ymir",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "son-of-muspell",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "4",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "redreroll", "3": "none" },
+            "skills": { "0": "movement/blocking", "1": "attack/attack_from_beyond", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":84, "y":180}, "image_zoom": 500, "image": "data/tiles/img/son-of-muspell_token.webp" }
+            ],
+
+            "image": "data/tiles/img/son-of-muspell.webp",
+            "imageHD": "data/tiles/img/son-of-muspell_hd.webp",
+            "image_location": {"x":36, "y":51},
+            "image_zoom": 165,
+            "model": "son-of-muspell",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "surt",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "6",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "redreroll", "3": "none" },
+            "skills": { "0": "attack/reach", "1": "miscellaneous/horror", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":50, "y":168}, "image_zoom": 320, "image": "data/tiles/img/surt_token.webp" }
+            ],
+
+            "image": "data/tiles/img/surt.webp",
+            "imageHD": "data/tiles/img/surt_hd.webp",
+            "image_location": {"x":58, "y":55},
+            "image_zoom": 130,
+            "model": "surt",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "injured-surt",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "5",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
+            "skills": { "0": "attack/attack_from_beyond", "1": "miscellaneous/horror", "2": "none", "3": "none" },
+
+            "image": "data/tiles/img/surt.webp",
+            "imageHD": "data/tiles/img/surt_hd.webp",
+            "image_location": {"x":58, "y":55},
+            "image_zoom": 130,
+            "model": "surt",
+            "origins": ["godsofthenorth"]
         }
     ]
 }

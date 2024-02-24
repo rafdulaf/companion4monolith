@@ -150,7 +150,8 @@
     .dialog ul.floatingactions { display: none; }
 }
 
-.printoverflow { 
+.printoverflow {
+    position: relative; 
     display: inline-block; 
     overflow: hidden; 
     vertical-align: top;

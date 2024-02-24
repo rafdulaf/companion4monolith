@@ -341,6 +341,29 @@
         },
         "conans_great_sword": {
             "title": "Grande Épée de Conan"
+        },
+        "heavy_sword": {
+            "title": "Épée Lourde"
+        },
+        "heavy_axe": {
+            "title": "Hache Lourde"
+        },
+        "throwing_axes": {
+            "title": "Haches de Lancer"
+        },
+        "studded_leather_armor": {
+            "title": "Armure de Cuir Cloutée"
+        },
+        "frost_armor": {
+            "title": "Armure de Givre",
+            "text": "La compétence Lanceur de Sorts est nécessaire pour utiliser cet objet."
+        },
+        "frost_dagger": {
+            "title": "Dague de Givre",
+            "text": "La compétence Lanceur de Sorts est nécessaire pour utiliser cet objet.",
+            "textStyle": {
+                "textInter": 53
+            }
         }
     }
 }

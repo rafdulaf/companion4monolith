@@ -546,6 +546,30 @@
                 "textSize": 126,
                 "textInter": 75
             }
+        },
+        "freeze": {
+            "title": "Freeze",
+            "text": "Choose an enemy on the game board. That enemy loses a free movement point during its next activation or during the Action phase in which the character is aggressive.",
+            "textStyle": {
+                "textSize": 136,
+                "textInter": 75
+            }
+        },
+        "chilling_grasp": {
+            "title": "Chilling Grasp",
+            "text": "Attack a character in your area; roll {dice_yellow_reroll}. That character cannot defend against this attack and suffers damage equal to the attack power.",
+            "textStyle": {
+                "textSize": 139,
+                "textInter": 78
+            }        
+        },
+        "ice_bolt": {
+            "title": "Ice Bolt",
+            "text": "Attack an area in your line of sight; role {dice_yellow}. If the attack power is greater than the defense power, the defender suffers damage equal to the difference.",
+            "textStyle": {
+                "textSize": 132,
+                "textInter": 86
+            }        
         }
     }
 }

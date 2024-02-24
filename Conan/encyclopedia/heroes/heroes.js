@@ -227,6 +227,7 @@ var EncyclopediaHeroes = {
             imagelocation: hero.image_location || {x: "0", y: "50"},
             imagezoom: hero.image_zoom || "100",
             imagerotation: "0",
+            back: hero.back || '',
 
             gem: hero.gems,
             encumbrance: hero.encumbrance[0],
