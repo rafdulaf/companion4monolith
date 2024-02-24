@@ -1665,6 +1665,30 @@
         },
 
         {
+            "id": "ymirs_retribution",
+
+            "cost": "2",
+            "saturation": "2",
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": true,
+            "forHeroes": true,
+
+            "forSkill": false,
+            "forAttack": true,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": false,
+
+            "image": "data/spells/img/ymirs_retribution.webp",
+            "origins": ["godsofthenorth"]
+        },
+
+        {
             "id": "summon_demon",
 
             "cost": "2",
@@ -1734,6 +1758,78 @@
 
             "image": "data/spells/img/changing_destiny.webp",
             "origins": ["conqueror"]
+        },
+
+        {
+            "id": "freeze",
+
+            "cost": "1",
+            "saturation": "3",
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": true,
+            "forHeroes": true,
+
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": true,
+            "forRange": true,
+            "forEnergy": false,
+
+            "image": "data/spells/img/freeze.webp",
+            "origins": ["godsofthenorth"]
+        },
+
+        {
+            "id": "chilling_grasp",
+
+            "cost": "2",
+            "saturation": "4",
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": true,
+            "forHeroes": true,
+
+            "forSkill": false,
+            "forAttack": true,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": false,
+            "forEnergy": false,
+
+            "image": "data/spells/img/chilling_grasp.webp",
+            "origins": ["godsofthenorth"]
+        },
+
+        {
+            "id": "ice_bolt",
+
+            "cost": "1",
+            "saturation": "1",
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": true,
+            "forHeroes": true,
+
+            "forSkill": false,
+            "forAttack": true,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": false,
+
+            "image": "data/spells/img/ice_bolt.webp",
+            "origins": ["godsofthenorth"]
         }
     ]
 }

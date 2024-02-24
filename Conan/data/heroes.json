@@ -1412,6 +1412,7 @@
             "imageHD": "data/heroes/img/achilles_hd.webp",
             "image_zoom": "108",
             "image_location": { "x": "9", "y": "59" },
+            "back": "none",
             "model": "achilles",
             "origins": ["corinthia"]
         },
@@ -1441,6 +1442,7 @@
             "image": "data/heroes/img/atalanta.webp",
             "image_zoom": "106",
             "image_location": { "x": "-2", "y": "49" },
+            "back": "none",
             "model": "atalanta",
             "origins": ["corinthia"]
         },
@@ -1529,6 +1531,7 @@
             "image": "data/heroes/img/heracles.webp",
             "image_zoom": "134",
             "image_location": { "x": "-8", "y": "72" },
+            "back": "none",
             "model": "heracles",
             "origins": ["corinthia"]
         },
@@ -1557,6 +1560,7 @@
             "image": "data/heroes/img/leonidas.webp",
             "image_zoom": "109",
             "image_location": { "x": "-20", "y": "50" },
+            "back": "none",
             "model": "leonidas",
             "origins": ["corinthia"]
         },
@@ -1586,6 +1590,7 @@
             "imageHD": "data/heroes/img/odysseus_hd.webp",
             "image_zoom": "127",
             "image_location": { "x": "0", "y": "70" },
+            "back": "none",
             "model": "odysseus",
             "origins": ["corinthia"]
         },
@@ -1950,6 +1955,518 @@
             "image_location": { "x": "11.5", "y": "51" },
             "model": "brule",
             "origins": ["shadow-kingdom"]
+        },
+        
+        {
+            "id": "asgrim",
+            "class": [{ "type": "rogue" }],
+
+            "gems": 10,
+            "encumbrance": [10, 7, 9],
+
+            "melee": { "dice": "orange", "exertion": 4 },
+            "ranged": { "dice": "yellow", "exertion": 4 },
+            "defense": { "dice": "yellowreroll" },
+            "movement": { "base": 2, "exertion": 4 },
+            "manipulation": { "dice": "red", "exertion": 3 },
+
+            "skills": [
+                { "id": "evasive", "exertion": 5 },
+                { "id": "leap", "exertion": 6 },
+                { "id": "precision_strike", "exertion": 6 },
+                { "id": "climb", "exertion": 7 },
+                { "id": "lock_picking" },
+                { "id": "protected" }
+            ],
+
+            "image": "data/heroes/img/asgrim.webp",
+            "imageHD": "data/heroes/img/asgrim_hd.webp",
+            "image_zoom": "91",
+            "image_location": { "x": "4", "y": "50.5" },
+            "back": "blue",
+            "model": "asgrim",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "aslaug",
+            "class": [{ "type": "rogue" }],
+
+            "gems": 10,
+            "encumbrance": [9, 7, 9],
+
+            "melee": { "dice": "orangereroll", "exertion": 3 },
+            "ranged": { "dice": "orange", "exertion": 4 },
+            "defense": { "dice": "yellowreroll" },
+            "movement": { "base": 2, "exertion": 4 },
+            "manipulation": { "dice": "red", "exertion": 3 },
+
+            "skills": [
+                { "id": "precision_shot", "exertion": 5 },
+                { "id": "untouchable", "exertion": 7 },
+                { "id": "climb", "exertion": 7 },
+                { "id": "leap" },
+                { "id": "elite_shooter" }
+            ],
+
+            "image": "data/heroes/img/aslaug.webp",
+            "imageHD": "data/heroes/img/aslaug_hd.webp",
+            "image_zoom": "95",
+            "image_location": { "x": "5", "y": "50" },
+            "back": "blue",
+            "model": "aslaug",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "bragi",
+            "class": [{ "type": "rogue" }],
+
+            "gems": 9,
+            "encumbrance": [9, 7, 9],
+
+            "melee": { "dice": "orange", "exertion": 3 },
+            "ranged": { "dice": "red", "exertion": 3 },
+            "defense": { "dice": "yellowreroll" },
+            "movement": { "base": 2, "exertion": 4 },
+            "manipulation": { "dice": "orange", "exertion": 5 },
+
+            "skills": [
+                { "id": "swimming", "exertion": 5 },
+                { "id": "leap", "exertion": 6 },
+                { "id": "counterattack", "exertion": 6 },
+                { "id": "leadership" },
+                { "id": "support" },
+                { "id": "protected" }
+            ],
+
+            "image": "data/heroes/img/bragi.webp",
+            "imageHD": "data/heroes/img/bragi_hd.webp",
+            "image_zoom": "85",
+            "image_location": { "x": "8", "y": "52" },
+            "back": "blue",
+            "model": "bragi",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "brunhilde",
+            "class": [{ "type": "warrior" }],
+
+            "gems": 11,
+            "encumbrance": [12, 8, 10],
+
+            "melee": { "dice": "red", "exertion": 5 },
+            "ranged": { "dice": "yellow", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": 2, "exertion": 4 },
+            "manipulation": { "dice": "orange", "exertion": 3 },
+
+            "skills": [
+                { "id": "swimming", "exertion": 6 },
+                { "id": "leap", "exertion": 8 },
+                { "id": "untouchable", "exertion": 9 },
+                { "id": "circular_strike" },
+                { "id": "wall_wrecker" }
+            ],
+
+            "image": "data/heroes/img/brunhilde.webp",
+            "imageHD": "data/heroes/img/brunhilde_hd.webp",
+            "image_zoom": "92",
+            "image_location": { "x": "3", "y": "51" },
+            "back": "blue",
+            "model": "brunhilde",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "gullveig",
+            "class": [{ "type": "sorcerer" }],
+
+            "gems": 10,
+            "encumbrance": [8, 6, 8],
+
+            "melee": { "dice": "yellowreroll", "exertion": 3},
+            "ranged": { "dice": "yellow", "exertion": 3 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": 2, "exertion": 2 },
+            "manipulation": { "dice": "orange", "exertion": 3 },
+
+            "skills": [
+                { "id": "counterattack", "exertion": 6 },
+                { "id": "spell_caster", "exertion": 6 },
+                { "id": "concentration", "exertion": 6 },
+                { "id": "attack_from_beyond" },
+                { "id": "jinx" }
+            ],
+
+            "image": "data/heroes/img/gullveig.webp",
+            "imageHD": "data/heroes/img/gullveig_hd.webp",
+            "image_zoom": "93",
+            "image_location": { "x": "2", "y": "50" },
+            "back": "blue",
+            "model": "gullveig",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "hialmar",
+            "class": [{ "type": "mercenary" }],
+
+            "gems": 10,
+            "encumbrance": [9, 7, 9],
+
+            "melee": { "dice": "orange", "exertion": 4},
+            "ranged": { "dice": "yellowreroll", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": 3, "exertion": 2 },
+            "manipulation": { "dice": "orange", "exertion": 5 },
+
+            "skills": [
+                { "id": "precision_strike", "exertion": 5 },
+                { "id": "swimming", "exertion": 7 },
+                { "id": "leap", "exertion": 7 },
+                { "id": "climb", "exertion": 7 },
+                { "id": "ambidextrous", "exertion": 7 }
+            ],
+
+            "image": "data/heroes/img/hialmar.webp",
+            "imageHD": "data/heroes/img/hialmar_hd.webp",
+            "image_zoom": "87",
+            "image_location": { "x": "3", "y": "53" },
+            "back": "blue",
+            "model": "hialmar",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "horsa",
+            "class": [{ "type": "mercenary" }],
+
+            "gems": 10,
+            "encumbrance": [10, 8, 10],
+
+            "melee": { "dice": "orangereroll", "exertion": 4},
+            "ranged": { "dice": "orange", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": 3, "exertion": 3 },
+            "manipulation": { "dice": "orange", "exertion": 3 },
+
+            "skills": [
+                { "id": "feline_grace", "exertion": 8 },
+                { "id": "leap", "exertion": 8 },
+                { "id": "climb", "exertion": 9 },
+                { "id": "leadership" }
+            ],
+
+            "image": "data/heroes/img/horsa.webp",
+            "image": "data/heroes/img/horsa_hd.webp",
+            "image_zoom": "119",
+            "image_location": { "x": "-4", "y": "49" },
+            "back": "blue",
+            "model": "horsa",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "heimdul",
+            "class": [{ "type": "warrior" }],
+
+            "gems": 10,
+            "encumbrance": [12, 8, 10],
+
+            "melee": { "dice": "red", "exertion": 4},
+            "ranged": { "dice": "yellow", "exertion": 4 },
+            "defense": { "dice": "orangereroll" },
+            "movement": { "base": 2, "exertion": 3 },
+            "manipulation": { "dice": "yellowreroll", "exertion": 3 },
+
+            "skills": [
+                { "id": "leap", "exertion": 8 },
+                { "id": "untouchable", "exertion": 9 },
+                { "id": "bodyguard", "exertion": 9 },
+                { "id": "climb", "exertion": 9 },
+                { "id": "precision_strike" },
+                { "id": "wall_wrecker" }
+            ],
+
+            "image": "data/heroes/img/heimdul.webp",
+            "imageHD": "data/heroes/img/heimdul_hd.webp",
+            "image_zoom": "95",
+            "image_location": { "x": "2", "y": "49" },
+            "back": "blue",
+            "model": "heimdul",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "hrym",
+            "class": [{ "type": "sorcerer" }],
+
+            "gems": 12,
+            "encumbrance": [13, 8, 10],
+
+            "melee": { "dice": "red", "exertion": 5},
+            "ranged": { "dice": "yellow", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": 2, "exertion": 3 },
+            "manipulation": { "dice": "yellow", "exertion": 3 },
+
+            "skills": [
+                { "id": "spell_caster", "exertion": 8 },
+                { "id": "concentration", "exertion": 8 },
+                { "id": "wall_wrecker", "exertion": 10 },
+                { "id": "sacrifice", "exertion": 10 },
+                { "id": "attack_from_beyond" }
+            ],
+
+            "image": "data/heroes/img/hrym.webp",
+            "imageHD": "data/heroes/img/hrym_hd.webp",
+            "image_zoom": "95",
+            "image_location": { "x": "2", "y": "50" },
+            "back": "blue",
+            "model": "hrym",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "lagertha",
+            "class": [{ "type": "warrior" }],
+
+            "gems": 10,
+            "encumbrance": [11, 8, 10],
+
+            "melee": { "dice": "orangereroll", "exertion": 5},
+            "ranged": { "dice": "orange", "exertion": 4 },
+            "defense": { "dice": "orangereroll" },
+            "movement": { "base": 2, "exertion": 4 },
+            "manipulation": { "dice": "orange", "exertion": 3 },
+
+            "skills": [
+                { "id": "climb", "exertion": 7 },
+                { "id": "leap", "exertion": 8 },
+                { "id": "precision_strike", "exertion": 8 },
+                { "id": "concentration" },
+                { "id": "leadership" }
+            ],
+
+            "image": "data/heroes/img/lagertha.webp",
+            "imageHD": "data/heroes/img/lagertha_hd.webp",
+            "image_zoom": "93",
+            "image_location": { "x": "2", "y": "51" },
+            "back": "blue",
+            "model": "lagertha",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "osric",
+            "class": [{ "type": "warrior" }],
+
+            "gems": 11,
+            "encumbrance": [12, 8, 10],
+
+            "melee": { "dice": "red", "exertion": 4},
+            "ranged": { "dice": "yellowreroll", "exertion": 4 },
+            "defense": { "dice": "orangereroll" },
+            "movement": { "base": 2, "exertion": 2 },
+            "manipulation": { "dice": "orange", "exertion": 3 },
+
+            "skills": [
+                { "id": "swimming", "exertion": 6 },
+                { "id": "climb", "exertion": 8 },
+                { "id": "circular_strike" },
+                { "id": "support" },
+                { "id": "leadership" }
+            ],
+
+            "image": "data/heroes/img/osric.webp",
+            "imageHD": "data/heroes/img/osric_hd.webp",
+            "image_zoom": "84",
+            "image_location": { "x": "2", "y": "52" },
+            "back": "blue",
+            "model": "osric",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "rudd",
+            "class": [{ "type": "warrior" }],
+
+            "gems": 11,
+            "encumbrance": [12, 8, 10],
+
+            "melee": { "dice": "red", "exertion": 4},
+            "ranged": { "dice": "yellowreroll", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": 2, "exertion": 4 },
+            "manipulation": { "dice": "orange", "exertion": 3 },
+
+            "skills": [
+                { "id": "ambidextrous", "exertion": 7 },
+                { "id": "climb", "exertion": 8 },
+                { "id": "wall_wrecker", "exertion": 9 },
+                { "id": "circular_strike" },
+                { "id": "leadership" }
+            ],
+
+            "image": "data/heroes/img/rudd.webp",
+            "imageHD": "data/heroes/img/rudd_hd.webp",
+            "image_zoom": "95",
+            "image_location": { "x": "2", "y": "50" },
+            "back": "blue",
+            "model": "rudd",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "sonya",
+            "class": [{ "type": "warrior" }],
+
+            "gems": 11,
+            "encumbrance": [12, 8, 10],
+
+            "melee": { "dice": "orangereroll", "exertion": 5},
+            "ranged": { "dice": "yellowreroll", "exertion": 4 },
+            "defense": { "dice": "red" },
+            "movement": { "base": 2, "exertion": 3 },
+            "manipulation": { "dice": "yellowreroll", "exertion": 3 },
+
+            "skills": [
+                { "id": "wall_wrecker", "exertion": 8 },
+                { "id": "support" },
+                { "id": "circular_strike" },
+                { "id": "untouchable" }
+            ],
+
+            "image": "data/heroes/img/sonya.webp",
+            "imageHD": "data/heroes/img/sonya_hd.webp",
+            "image_zoom": "94",
+            "image_location": { "x": "3", "y": "49.5" },
+            "back": "blue",
+            "model": "sonya",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "thorfinn",
+            "class": [{ "type": "mercenary" }],
+
+            "gems": 10,
+            "encumbrance": [11, 7, 10],
+
+            "melee": { "dice": "orangereroll", "exertion": 4},
+            "ranged": { "dice": "yellowreroll", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": 2, "exertion": 3 },
+            "manipulation": { "dice": "yellow", "exertion": 3 },
+
+            "skills": [
+                { "id": "climb", "exertion": 6 },
+                { "id": "leap", "exertion": 8 },
+                { "id": "precision_shot", "exertion": 8 },
+                { "id": "reach" },
+                { "id": "bodyguard" }
+            ],
+
+            "image": "data/heroes/img/thorfinn.webp",
+            "imageHD": "data/heroes/img/thorfinn_hd.webp",
+            "image_zoom": "95",
+            "image_location": { "x": "6", "y": "51" },
+            "back": "blue",
+            "model": "thorfinn",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "tostig",
+            "class": [{ "type": "rogue" }],
+
+            "gems": 10,
+            "encumbrance": [10, 7, 9],
+
+            "melee": { "dice": "yellowreroll", "exertion": 4},
+            "ranged": { "dice": "orangereroll", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": 2, "exertion": 4 },
+            "manipulation": { "dice": "orange", "exertion": 4 },
+
+            "skills": [
+                { "id": "feline_grace", "exertion": 7 },
+                { "id": "leap", "exertion": 7 },
+                { "id": "climb", "exertion": 7 },
+                { "id": "precision_shot", "exertion": 8 },
+                { "id": "lock_picking" }
+            ],
+
+            "image": "data/heroes/img/tostig.webp",
+            "imageHD": "data/heroes/img/tostig_hd.webp",
+            "image_zoom": "90",
+            "image_location": { "x": "3", "y": "52" },
+            "back": "blue",
+            "model": "tostig",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "wulfhere",
+            "class": [{ "type": "warrior" }],
+
+            "gems": 10,
+            "encumbrance": [10, 8, 10],
+
+            "melee": { "dice": "red", "exertion": 5},
+            "ranged": { "dice": "orange", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": 2, "exertion": 4 },
+            "manipulation": { "dice": "orange", "exertion": 4 },
+
+            "skills": [
+                { "id": "swimming", "exertion": 6 },
+                { "id": "leap", "exertion": 8 },
+                { "id": "feline_grace", "exertion": 9 },
+                { "id": "precision_strike" },
+                { "id": "leadership" }
+            ],
+
+            "image": "data/heroes/img/wulfhere.webp",
+            "imageHD": "data/heroes/img/wulfhere_hd.webp",
+            "image_zoom": "92",
+            "image_location": { "x": "5", "y": "51" },
+            "back": "blue",
+            "model": "wulfhere",
+            "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "zelata-wanderer",
+            "class": [{ "type": "sorcerer" }],
+
+            "gems": 10,
+            "encumbrance": [9, 6, 8],
+
+            "melee": { "dice": "orange", "exertion": 3},
+            "ranged": { "dice": "orange", "exertion": 3 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": 3, "exertion": 4 },
+            "manipulation": { "dice": "orange", "exertion": 3 },
+
+            "skills": [
+                { "id": "swimming", "exertion": 5 },
+                { "id": "untouchable", "exertion": 5 },
+                { "id": "feline_grace", "exertion": 5 },
+                { "id": "spell_caster", "exertion": 6 },
+                { "id": "concentration" },
+                { "id": "alchemy" }
+            ],
+
+            "image": "data/heroes/img/zelata-wanderer.webp",
+            "imageHD": "data/heroes/img/zelata-wanderer_hd.webp",
+            "image_zoom": "92",
+            "image_location": { "x": "2", "y": "52" },
+            "back": "blue",
+            "model": "zelata-wanderer",
+            "origins": ["godsofthenorth"]
         }
     ]
 }

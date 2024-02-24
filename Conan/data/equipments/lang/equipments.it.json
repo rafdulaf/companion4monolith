@@ -341,6 +341,29 @@
         },
         "conans_great_sword": {
             "title": "Grande Spada di Conan"
+        },
+        "heavy_sword": {
+            "title": "Spadone"
+        },
+        "heavy_axe": {
+            "title": "Ascia bipenne"
+        },
+        "throwing_axes": {
+            "title": "Asce da lancio"
+        },
+        "studded_leather_armor": {
+            "title": "Armatura di cuoio borchiato"
+        },
+        "frost_armor": {
+            "title": "Armatura di ghiaccio",
+            "text": "Per usare questo equipaggiamento, il personaggio deve avere l'abilità Mago"
+        },
+        "frost_dagger": {
+            "title": "Pugnale di ghiaccio",
+            "text": "Per usare questo equipaggiamento, il personaggio deve avere l'abilità Mago",
+            "textStyle": {
+                "textInter": 53
+            }
         }
     }
 }

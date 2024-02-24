@@ -892,6 +892,219 @@
                 "text": "L’être à tête de crâne éclata de rire. « Il y a une éternité de cela, je suis mort comme meurent les hommes ! » se vanta-t-il. « Non, je passerai dans quelque autre sphère d’existence lorsque mon heure sera venue, pas avant. Je ne saigne pas car mes veines sont vides, et je ne sens qu’un léger frisson, qui disparaîtra lorsque la blessure se refermera, ce qu’elle a déjà commencé à faire. Reculez, imbéciles, votre maître s’en va, mais il reviendra. Quand ce jour viendra, vous hurlerez, vous vous ratatinerez et vous mourrez ! Kull, je te salue ! »",
                 "origin": "Le Chat de Delcardes"
             }
+        },
+        "asgrim": {
+            "name": "Asgrim"
+        },
+        "atla": {
+            "name": "Atla"
+        },
+        "bragi": {
+            "name": "Bragi"
+        },
+        "brunhilde": {
+            "name": "Brunhilde"
+        },
+        "hialmar": {
+            "name": "Hialmar"
+        },
+        "lagertha": {
+            "name": "Lagertha"
+        },
+        "sonya": {
+            "name": "Sonya"
+        },
+        "tostig": {
+            "name": "Tostig"
+        },
+        "wulfhere": {
+            "name": "Wulfhere"
+        },
+        "zelata-wanderer": {
+            "name": "Zelata La Vagabonde"
+        },
+        "aesir-berserkers": {
+            "name": "Berserkers Aesirs"
+        },
+        "aesir-chief": {
+            "name": "Chef Aesir"
+        },
+        "aesir-reavers": {
+            "name": "Pillards Aesirs"
+        },
+        "aesir-reavers-2": {
+            "name": "Pillards Aesirs"
+        },
+        "aesir-spearmen": {
+            "name": "Lanciers Aesirs"
+        },
+        "vanir-berserkers": {
+            "name": "Berserkers Vanirs"
+        },
+        "vanir-berserkers-2": {
+            "name": "Berserkers Vanirs"
+        },
+        "vanir-berserkers-3": {
+            "name": "Berserkers Vanirs"
+        },
+        "vanir-chief": {
+            "name": "Chef Vanir"
+        },
+        "vanir-fanatics": {
+            "name": "Fanatiques Vanirs"
+        },
+        "vanir-fanatics-2": {
+            "name": "Fanatiques Vanirs"
+        },
+        "vanir-guards": {
+            "name": "Guardes Vanirs"
+        },
+        "berserker-champion": {
+            "name": "Champion Berserker"
+        },
+        "hyperborean-mercenaries": {
+            "name": "Mercenaires Hyperboréens"
+        },
+        "mercenary-captain": {
+            "name": "Capitaine Mercenaire"
+        },
+        "shield-maidens": {
+            "name": "Gardiennes"
+        },
+        "sorceresses": {
+            "name": "Sorcières"
+        },
+        "sorceresses-2": {
+            "name": "Sorcières"
+        },
+        "aesir-lynxes": {
+            "name": "Lynx Aesirs"
+        },
+        "goats": {
+            "name": "Chèvres"
+        },
+        "squirrel": {
+            "name": "Écureuil"
+        },
+        "wolf-pack": {
+            "name": "Meute de Loups"
+        },
+        "frost-giant-deceiver": {
+            "name": "Tompeur des Géants du gel"
+        },
+        "frost-giant-temptress": {
+            "name": "Géant du gel Tentatrice"
+        },
+        "frost-giant-huntress": {
+            "name": "Géants du gel Chasseresse"
+        },
+        "frost-giant-jarl": {
+            "name": "Géant du gel Jarl"
+        },
+        "frost-giant-oracle": {
+            "name": "Géant du gel Oracle"
+        },
+        "frost-giant-savage": {
+            "name": "Géant du gel Sauvage"
+        },
+        "frost-giant-sentinel": {
+            "name": "Géant du gel Sentinelle"
+        },
+        "frost-giant-shipwright": {
+            "name": "Géant du gel Charpentier"
+        },
+        "frost-giant-veteran": {
+            "name": "Géant du gel Vétéran"
+        },
+        "frost-giant-warlord": {
+            "name": "Géant du gel Conquérante"
+        },
+        "frost-giant-weaver": {
+            "name": "Géants du gel Tisserande"
+        },
+        "gullveig": {
+            "name": "Gullveig"
+        },
+        "gullveig-2": {
+            "name": "Gullveig"
+        },
+        "half-giant": {
+            "name": "Demi-Géant"
+        },
+        "abomination": {
+            "name": "Abomination"
+        },
+        "child-of-jhil": {
+            "name": "Enfant de Jhil"
+        },
+        "colossal-crawler": {
+            "name": "Ver Colossal"
+        },
+        "demon-wolf": {
+            "name": "Loup Démoniaque"
+        },
+        "injured-wolf": {
+            "name": "Loup Blessé"
+        },
+        "draugr": {
+            "name": "Draugr"
+        },
+        "rotting-draugr": {
+            "name": "Draugr Putréfié"
+        },
+        "fiend-of-the-drifts": {
+            "name": "Démon des Congères"
+        },
+        "fiend-of-ymir": {
+            "name": "Démone d'Ymir"
+        },
+        "frozen-dead": {
+            "name": "Mort Glacés"
+        },
+        "frozen-dead-2": {
+            "name": "Mort Glacés"
+        },
+        "infernal-crone": {
+            "name": "Mégère infernale"
+        },
+        "infernal-hound": {
+            "name": "Chien des Enfers"
+        },
+        "jormungand": {
+            "name": "Jormungand"
+        },
+        "injured-jormungand": {
+            "name": "Jormungand Blessé"
+        },
+        "nidhogg": {
+            "name": "Nidhogg"
+        },
+        "manifestation-of-ymir": {
+            "name": "Manifestation d'Ymir"
+        },
+        "injured-ymir": {
+            "name": "Ymir Blessé"
+        },
+        "son-of-ymir": {
+            "name": "Fils d'Ymir"
+        },
+        "ymir-s-herald": {
+            "name": "Héraut d'Ymir"
+        },
+        "ymir-s-hunt-master": {
+            "name": "Grand Veneur d'Ymir"
+        },
+        "seer-of-ymir": {
+            "name": "Devin d'Ymir"
+        },
+        "son-of-muspell": {
+            "name": "Fils de Muspell"
+        },
+        "surt": {
+            "name": "Surt"
+        },
+        "injured-surt": {
+            "name": "Surt Blessé"
         }
     }
 }

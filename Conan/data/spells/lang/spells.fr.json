@@ -549,6 +549,30 @@
                 "textSize": 128,
                 "textInter": 78
             }
+        },
+        "freeze": {
+            "title": "Gel",
+            "text": "Ciblez une figurine ennemie sur le pla-teau. La cible perd un point de sa base de mouvement lors de sa prochaine activation, ou de sa prochaine phase d'action durant laquelle il est actif.",
+            "textStyle": {
+                "textSize": 136,
+                "textInter": 70
+            }
+        },
+        "chilling_grasp": {
+            "title": "Etreinte Glaciale",
+            "text": "Ciblez une figurine dans la zone du lanc-ceur. La cible subit des dégats de  : {dice_yellow_reroll}. Aucune défense n'est possible.",
+            "textStyle": {
+                "textSize": 145,
+                "textInter": 78
+            }        
+        },
+        "ice_bolt": {
+            "title": "Flèche de glace",
+            "text": "Ciblez une zone avec ligne de vue et lancez {dice_yellow}. Si la puissance de l'attaque est supé-rieure à la puissance de la défense, le défen-seur subit autant de dégâts que la diffé-rence.",
+            "textStyle": {
+                "textSize": 134,
+                "textInter": 74
+            }        
         }
     }
 }

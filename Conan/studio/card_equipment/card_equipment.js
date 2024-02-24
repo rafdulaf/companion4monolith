@@ -74,6 +74,7 @@ var CardEquipment = mergeObject(StudioItem, {
         }
 
         var level = 0;
+        var textMalus = 0;
         if (card.skills && card.skillsatbottom && card.skills[0] != 'none')
         {
             level+=10;
@@ -97,6 +98,7 @@ var CardEquipment = mergeObject(StudioItem, {
         
         if (card.passive && card.passive[0] != 'none')
         {
+            textMalus++;
             code += "<div class=\"passive level" + level + "\">"
                    + (card.passive[1] == 'none' ?
                         "<img class=\"background-passive\" src=\"studio/card_equipment/img/armor-1.webp?version=" + Version + "\"/>" :
@@ -109,6 +111,7 @@ var CardEquipment = mergeObject(StudioItem, {
         }
         if (card.manipulation && (card.manipulation[0] != 'none' || card.manipulation.explosive))
         {
+            textMalus++;
             code += "<div class=\"manipulation" + (card.manipulation.explosive ? " explosive": "") + " level" + level + "\">"
                    + (card.manipulation[1] == 'none' ?
                         "<img class=\"background-manipulation\" src=\"studio/card_equipment/img/" + (!card.manipulation.explosive ? "manip" : "launch") + "-1.webp?version=" + Version + "\"/>" :
@@ -121,6 +124,7 @@ var CardEquipment = mergeObject(StudioItem, {
         }
         if (card.ranged && (card.ranged[0] != 'none' || card.ranged.throwable))
         {
+            textMalus++;
             code += "<div class=\"ranged" + (card.ranged.throwable ? " throw": "") + " level" + level + "\">"
                    + (card.ranged[0] == 'none' ? "<img class=\"background-ranged\" src=\"studio/card_equipment/img/throw-0.webp?version=" + Version + "\"/>" : 
                        (card.ranged[1] == 'none' ?
@@ -134,6 +138,7 @@ var CardEquipment = mergeObject(StudioItem, {
         }
         if (card.active && card.active[0] != 'none')
         {
+            textMalus++;
             code += "<div class=\"active level" + level + "\">"
                    + (card.active[1] == 'none' ?
                         "<img class=\"background-active\" src=\"studio/card_equipment/img/defense-1.webp?version=" + Version + "\"/>" :
@@ -146,6 +151,7 @@ var CardEquipment = mergeObject(StudioItem, {
         }
         if (card.melee && card.melee[0] != 'none')
         {
+            textMalus++;
             code += "<div class=\"melee level" + level + "\">"
                    + (card.melee[1] == 'none' ?
                         "<img class=\"background-melee\" src=\"studio/card_equipment/img/contact-1.webp?version=" + Version + "\"/>" :
@@ -159,6 +165,7 @@ var CardEquipment = mergeObject(StudioItem, {
 
         if (card.movement)
         {
+            textMalus++;
             code += "<div class=\"movement level" + level + "\">"
                         + "<img class=\"background-movement\" src=\"studio/card_equipment/img/movement.webp?version=" + Version + "\"/>"
                         + "<div>" + card.movement + "</div>"
@@ -173,7 +180,13 @@ var CardEquipment = mergeObject(StudioItem, {
             {
                 code += "<div class='text-separator'><img class=\"background-text-separator\" src=\"studio/card_equipment/img/text-separator.webp?version=" + Version + "\"/></div>";
             }
-            code += "<div class='text lastIsLarge-" + lastIsLarge + " level" + level + "'><div>" + About._replace(card.text).replace(/\n/g, '<br/>') + "</div></div>";
+            
+            if (textMalus > 0) textMalus--;
+            
+            function toText(text) {
+                return text.split('\n').map(s => s.replace(/^( *)|( *)\n|\n( *)|( *)$/gim, function(match){ return match.replaceAll(' ',' ') })).join('<br/>');
+            }
+            code += "<div class='text lastIsLarge-" + lastIsLarge + " level" + (level - textMalus) + "' style='font-size: " + card.textSize + "%; line-height: " + card.textInter + "%;'><div>" + toText(About._replace(card.text)) + "</div></div>";
         }
 
         if (card.skills && !card.skillsatbottom && card.skills[0] != 'none')
@@ -304,6 +317,14 @@ var CardEquipment = mergeObject(StudioItem, {
                     + "<label for=\"eqtext\"><span data-help=\"" + CardEquipment._i18n.textHelp + "\"></span>" + CardEquipment._i18n.text + "</label>"
                     + "<textarea id=\"eqtext\" name=\"cardtext\" autocomplete=\"off\" placeholder=\"" + CardEquipment._i18n.textPh + "\" onkeyup=\"CardEquipment._preview();\" onchange=\"CardEquipment._preview();\"></textarea>"
                 + "</div>"
+                + "<div class=\"field textsize\">"
+                    + "<label for=\"eqtextsize\">" + CardEquipment._i18n.textSize + "</label>"
+                    + "<input id=\"eqtextsize\" name=\"cardtextsize\" type=\"number\" autocomplete=\"off\" placeholder=\"" + CardEquipment._i18n.textSizePh + "\" onkeyup=\"CardEquipment._preview();\" onchange=\"CardEquipment._preview();\"\"/>"
+                + "</div>"
+                + "<div class=\"field textinter\">"
+                    + "<label for=\"eqtextinter\">" + CardEquipment._i18n.textInter + "</label>"
+                    + "<input id=\"eqtextinter\" name=\"cardtextinter\" type=\"number\" autocomplete=\"off\" placeholder=\"" + CardEquipment._i18n.textInterPh + "\" onkeyup=\"CardEquipment._preview();\" onchange=\"CardEquipment._preview();\"/>"
+                + "</div>"
             + "</div>"
             + "</div>"
             + "<div class=\"eqcol\">"
@@ -343,6 +364,9 @@ var CardEquipment = mergeObject(StudioItem, {
             name: "",
             encumbrance: "",
             movement: "",
+            text: "",
+            textSize: "100",
+            textInter: "70",
             melee: { 0: "none", 1: "none" },
             ranged: { 0: "none", 1: "none", throwable: false },
             manipulation: { 0: "none", 1: "none", explosive: false },
@@ -384,6 +408,8 @@ var CardEquipment = mergeObject(StudioItem, {
             name: $(".dialog input[name=cardname]")[0].value,
             encumbrance: $(".dialog input[name=cardweight]")[0].value,
             text: $(".dialog textarea[name=cardtext]")[0].value,
+            textSize: $(".dialog input[name=cardtextsize]")[0].value || "100",
+            textInter: $(".dialog input[name=cardtextinter]")[0].value || "70",
             movement: parseInt($(".dialog input[name=cardmovement]")[0].value),
             melee: { 0: $(".dialog select[name=cardmelee1]")[0].value, 1: $(".dialog select[name=cardmelee2]")[0].value },
             skills: { 0: $(".dialog select[name=cardskills1]")[0].value, 1: $(".dialog select[name=cardskills2]")[0].value },
@@ -405,6 +431,8 @@ var CardEquipment = mergeObject(StudioItem, {
         $(".dialog input[name=cardname]")[0].value = card.name;
         $(".dialog input[name=cardweight]")[0].value = card.encumbrance;
         $(".dialog textarea[name=cardtext]")[0].value = card.text || "";
+        $(".dialog input[name=cardtextsize]")[0].value = card.textSize;
+        $(".dialog input[name=cardtextinter]")[0].value = card.textInter;
         $(".dialog input[name=cardmovement]")[0].value = card.movement;
         $(".dialog select[name=cardmelee1]")[0].value = card.melee['0']; $(".dialog select[name=cardmelee1]").attr("data-value", card.melee['0']);
         $(".dialog select[name=cardmelee2]")[0].value = card.melee['1']; $(".dialog select[name=cardmelee2]").attr("data-value", card.melee['1']);

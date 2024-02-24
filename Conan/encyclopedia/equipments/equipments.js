@@ -223,6 +223,8 @@ var EncyclopediaEquipments = {
             id: equipment.id + "-" + Math.random(),
             name: (equipment2 || equipment).title,
             text: (equipment2 || equipment).text || "",
+            textSize: ((equipment2 || equipment).textStyle || {}).textSize || 100,
+            textInter: ((equipment2 || equipment).textStyle || {}).textInter || 70,
             encumbrance: equipment.encumbrance,
             movement: equipment.movement || "",
             melee: equipment.melee,

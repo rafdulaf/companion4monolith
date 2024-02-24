@@ -512,7 +512,7 @@
         },
         "rending_the_veil": {
             "title": "Lacerare il Velo",
-            "text": "Scegliete un nemico che non sia in linea di vista. Adesso per una sola azione, o il mago, o un'unità alleata in linea di vista con il mago, è in grado di stabilire una linea di vista verso l'area occupata dal nemico.",
+            "text": "Scegli un nemico che non sia in linea di vista. Adesso per una sola azione, o il Mago, o un'unità alleata in linea di vista con il mago, è in grado di stabilire una linea di vista verso l'area occupata dal nemico.",
             "textStyle": {
                 "textSize": 115,
                 "textInter": 72
@@ -530,8 +530,8 @@
             "title": "Punizione di Ymir",
             "text": "Attacca un personaggio in linea di vista e lancia {dice_red}{dice_red}. Se la potenza dell'attacco è maggiore della potenza della difesa, il difensore subisce un ammontare di danni pari alla differenza.",
             "textStyle": {
-                "textSize": 115,
-                "textInter": 72
+                "textSize": 132,
+                "textInter": 74
             }
         },
         "summon_demon": {
@@ -549,6 +549,30 @@
                 "textSize": 115,
                 "textInter": 72
             }
+        },
+        "freeze": {
+            "title": "Congelare",
+            "text": "Scegli un nemico ovunque sul tabellone. Questo nemico perde un punto movimento gratuito durante la sua prossima attivazione, oppure nella Fase di Azione in cui il Mago è attivo.",
+            "textStyle": {
+                "textSize": 136,
+                "textInter": 70
+            }
+        },
+        "chilling_grasp": {
+            "title": "Morsa Agghiacciante",
+            "text": "Effettua un attacco a un personaggio nella tua area; Tira un {dice_yellow_reroll}. Il bersaglio non può difendersi da quest'attacco e subisce un danno pari alla potenza dell'attacco.",
+            "textStyle": {
+                "textSize": 136,
+                "textInter": 75
+            }        
+        },
+        "ice_bolt": {
+            "title": "Dardo di Ghiaccio",
+            "text": "Attacca un'area in linea di vista; Tira un {dice_yellow_reroll}. Se la potenza dell'attacco è maggiore della potenza della difesa, infliggi danni pari alla differenza.",
+            "textStyle": {
+                "textSize": 139,
+                "textInter": 78
+            }        
         }
     }
 }

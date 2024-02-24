@@ -2093,6 +2093,102 @@
             "imagelocation": {"x": "66", "y": "54"},
             "imagezoom": "42",
             "origins": ["conqueror"]
+        },
+
+        {
+            "id": "heavy_sword",
+            "encumbrance": "3",
+
+            "melee": { "0": "orangereroll", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "yellowreroll", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/heavy_sword.webp",
+            "imagelocation": {"x": "61", "y": "54"},
+            "imagezoom": "100",
+            "origins": ["godsofthenorth"]
+        },
+
+        {
+            "id": "heavy_axe",
+            "encumbrance": "3",
+
+            "melee": { "0": "orange", "1": "yellow" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/heavy_axe.webp",
+            "imagelocation": {"x": "50", "y": "55"},
+            "imagezoom": "104",
+            "origins": ["godsofthenorth"]
+        },
+
+        {
+            "id": "throwing_axes",
+            "encumbrance": "1",
+
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "yellowreroll", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/throwing_axes.webp",
+            "imagelocation": {"x": "50", "y": "45"},
+            "imagezoom": "85",
+            "origins": ["godsofthenorth"]
+        },
+
+        {
+            "id": "studded_leather_armor",
+            "encumbrance": "3",
+
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "yellow", "1": "yellow" },
+
+            "image": "data/equipments/img/studded_leather_armor.webp",
+            "imagelocation": {"x": "52", "y": "45"},
+            "imagezoom": "88",
+            "origins": ["godsofthenorth"]
+        },
+
+        {
+            "id": "frost_armor",
+            "encumbrance": "2",
+
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "orange", "1": "none" },
+
+            "image": "data/equipments/img/frost_armor.webp",
+            "imagelocation": {"x": "50", "y": "41"},
+            "imagezoom": "82",
+            "origins": ["godsofthenorth"]
+        },
+
+        {
+            "id": "frost_dagger",
+            "encumbrance": "2",
+
+            "melee": { "0": "yellow", "1": "yellow" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "yellowreroll", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/frost_dagger.webp",
+            "imagelocation": {"x": "51", "y": "38"},
+            "imagezoom": "102",
+            "origins": ["godsofthenorth"]
         }
     ]
 }
