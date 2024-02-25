@@ -46,8 +46,8 @@ Utils = {
                     resolve(data); 
                 }
               },
-              error: function() {
-                  console.log("Error loading " + url); 
+              error: function(c, e, msg) {
+                  console.log("Error loading " + url + "\n" + e + "\n" + msg); 
                   reject(); 
               }
             });
