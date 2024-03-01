@@ -12,11 +12,11 @@ var HeroSheet = mergeObject(StudioItem, {
           return "<p class='subhint'>" + HeroSheet._i18n.printHint + "</p>";
     },
     
-    _getDisplayItemsCode: function(withEditLink, printPurpose)
+    _getDisplayItemsCode: function(withEditLink, printPurpose, data)
     {
         var html = "";
 
-        var cards = JSON.parse(localStorage.getItem(this.storage)) || [];
+        var cards = data || JSON.parse(localStorage.getItem(this.storage)) || [];
         if (cards.length > 0)
         {
             for (var i in cards)
@@ -29,7 +29,7 @@ var HeroSheet = mergeObject(StudioItem, {
                 }
                 else
                 {
-                    prefix = "<input type='checkbox' id='herosheet-" + i + "' name='herosheet' data-index='" + i + "' onchange=\"$('#herosheet-back-" + i + "').toggleClass('invisible');\"/><label for='herosheet-" + i + "'>";
+                    prefix = "<input type='checkbox'" + (cards[i].prechecked ? " checked='checked'" : "") + " id='hero-" + i + "' name='hero' data-index='" + i + "' onchange=\"$('#hero-back-" + i + "').toggleClass('invisible');\"/><label for='hero-" + i + "'>";
                     suffix = "</label>";
                 }
 
@@ -45,7 +45,7 @@ var HeroSheet = mergeObject(StudioItem, {
         {
             for (var i in cards)
             {
-                html += "<div class='printoverflow back invisible' id='herosheet-back-" + i + "'>" + HeroSheet._cardCode(cards[i], printPurpose) + "</div>";
+                html += "<div class='printoverflow back invisible' id='hero-back-" + i + "'>" + HeroSheet._cardCode(cards[i], printPurpose) + "</div>";
             }
         }
 
@@ -404,5 +404,9 @@ var HeroSheet = mergeObject(StudioItem, {
     {
         return "<h3>" + HeroSheet._i18n.tab + "</h3>"
             + "<p>" + HeroSheet._i18n.copyright + "</p>"
+    },
+    
+    importLabel: function(item) {
+        return item.name + (item.subname ? " " + item.subname : "");
     }
 });

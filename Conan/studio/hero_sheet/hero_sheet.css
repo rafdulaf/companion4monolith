@@ -18,12 +18,12 @@
     text-shadow: 0 0 3px #FFF;
 }
 
-.printcards input[name=herosheet] { position: absolute; top:-5000px; }
-.printcards input[name=herosheet] + label { position: relative; display: inline-block; margin-right: 5px; }
-.printcards input[name=herosheet] + label:before { position: absolute; content: " "; z-index: 1; top: 0; left: 0; right: 0; bottom: 0; background-color: #000000; opacity: 0.2; }
-.printcards input[name=herosheet] + label:after { position: absolute; content: "\f057"; font-family: 'Font Awesome 5 Free'; font-size: 40px; left: -7px; top: -7px; color: red; }
-.printcards input[name=herosheet]:checked + label:before { display: none; }
-.printcards input[name=herosheet]:checked + label:after { content: "\f058"; color: green; }
+.printcards input[name=hero] { position: absolute; top:-5000px; }
+.printcards input[name=hero] + label { position: relative; display: inline-block; margin-right: 5px; }
+.printcards input[name=hero] + label:before { position: absolute; content: " "; z-index: 1; top: 0; left: 0; right: 0; bottom: 0; background-color: #000000; opacity: 0.2; }
+.printcards input[name=hero] + label:after { position: absolute; content: "\f057"; font-family: 'Font Awesome 5 Free'; font-size: 40px; left: -7px; top: -7px; color: red; }
+.printcards input[name=hero]:checked + label:before { display: none; }
+.printcards input[name=hero]:checked + label:after { content: "\f058"; color: green; }
 
 .sheet.herosheet {
     width: 600px;
@@ -47,7 +47,7 @@
         break-before: page;
         break-after: page;
     }
-    .printcards input[name=herosheet] + label { margin-right: 0; }
+    .printcards input[name=hero] + label { margin-right: 0; }
 }
 
 .sheet.herosheet picture.background-l1 img,
@@ -633,7 +633,7 @@
     } 
 }
 
-.ff .printcards label[for^=herosheet-] .printoverflow {
+.ff .printcards label[for^=hero-] .printoverflow {
     margin-right: -303px;
     margin-bottom: -181.75px;
 }

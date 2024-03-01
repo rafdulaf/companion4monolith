@@ -3,11 +3,29 @@
   content: "\f591";  
 }
 
+.studio-icon-importcards:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f093";
+  font-size: 24px;  
+}
+
+.studio-icon-exportcards:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f019";
+  font-size: 24px;  
+}
+
 .studio-icon-printcards:before {
   font-family: "Font Awesome 5 Free";
   content: "\f02f";
   font-size: 24px;  
 }
+
+.studio-allin:before {
+    content: "\f560";
+    font-family: 'Font Awesome 5 Free';
+}
+
 
 .studio-icon-add:before {
   font-family: "Arial";
@@ -28,7 +46,8 @@
   content: "\f2ed";  
 }
 
-.dialog .printcards .hint {
+.dialog .printcards .hint ,
+.dialog .importcards .hint {
     text-align: center;
     font-style: italic;
     margin-bottom: 0;
@@ -48,6 +67,38 @@
     font-family: 'Primary';
     font-size: calc(var(--primary-size) * 1rem);
     vertical-align: top;
+}
+
+.dialog .importcards h1 {
+    margin-bottom: 0.5em;
+    margin-top: 0;
+    text-align: center;
+    font-family: 'Primary';
+    font-size: 16px;
+    vertical-align: top;
+}
+
+.dialog .importcards h1:before {
+    display: inline-block;
+    color: #FFF;
+    background-color: #000;
+    width: 20px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.dialog .importcards h1:nth-of-type(1):before {
+    content: "1";
+}
+.dialog .importcards h1:nth-of-type(2):before {
+    content: "2";
+}
+.dialog .importcards h1:nth-of-type(3):before {
+    content: "3";
+}
+.dialog .importcards input[type=file] {
+    position: absolute;
+    left: -10000px;
+    top: -5000px;
 }
 
 .dialog .printcards .print { text-align: center; margin: 20px; }

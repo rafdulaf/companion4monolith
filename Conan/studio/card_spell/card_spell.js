@@ -5,11 +5,11 @@ var CardSpell = mergeObject(StudioItem, {
     _itemWidth: 204,
     _itemHeight: 302.5,    
     
-    _getDisplayItemsCode: function(withEditLink, printPurpose)
+    _getDisplayItemsCode: function(withEditLink, printPurpose, data)
     {
         var html = "";
 
-        var cards = JSON.parse(localStorage.getItem(this.storage)) || [];
+        var cards = data || JSON.parse(localStorage.getItem(this.storage)) || [];
         if (cards.length > 0)
         {
             for (var i in cards)
@@ -22,7 +22,7 @@ var CardSpell = mergeObject(StudioItem, {
                 }
                 else
                 {
-                    prefix = "<input type='checkbox' id='spell-" + i + "' name='spell' data-index='" + i + "' onchange=\"$('#spell-back-" + i + "').toggleClass('invisible');\"/><label for='spell-" + i + "'>";
+                    prefix = "<input type='checkbox'" + (cards[i].prechecked ? " checked='checked'" : "") + " id='spell-" + i + "' name='spell' data-index='" + i + "' onchange=\"$('#spell-back-" + i + "').toggleClass('invisible');\"/><label for='spell-" + i + "'>";
                     suffix = "</label>";
                 }
 

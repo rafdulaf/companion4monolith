@@ -5,11 +5,11 @@ var CardEquipment = mergeObject(StudioItem, {
     _itemWidth: 204,
     _itemHeight: 302.5,
     
-    _getDisplayItemsCode: function(withEditLink, printPurpose)
+    _getDisplayItemsCode: function(withEditLink, printPurpose, data)
     {
         var html = "";
 
-        var cards = JSON.parse(localStorage.getItem(this.storage)) || [];
+        var cards = data || JSON.parse(localStorage.getItem(this.storage)) || [];
         if (cards.length > 0)
         {
             for (var i in cards)
@@ -22,7 +22,7 @@ var CardEquipment = mergeObject(StudioItem, {
                 }
                 else
                 {
-                    prefix = "<input type='checkbox' id='equipment-" + i + "' name='equipment' data-index='" + i + "' onchange=\"$('#equipment-back-" + i + "').toggleClass('invisible');\"/><label for='equipment-" + i + "'>";
+                    prefix = "<input type='checkbox'" + (cards[i].prechecked ? " checked='checked'" : "") + " id='equipment-" + i + "' name='equipment' data-index='" + i + "' onchange=\"$('#equipment-back-" + i + "').toggleClass('invisible');\"/><label for='equipment-" + i + "'>";
                     suffix = "</label>";
                 }
 
@@ -438,11 +438,5 @@ var CardEquipment = mergeObject(StudioItem, {
             errors++;
         }
         return errors;
-    },
-
-    copyright: function()
-    {
-        return "<h3>" + CardEquipment._i18n.tab + "</h3>"
-            + "<p>" + CardEquipment._i18n.copyright + "</p>"
     }
 });
