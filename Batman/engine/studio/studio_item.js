@@ -2,7 +2,7 @@ var StudioItem = {
     name: 'studio-item',
     cls: 'StudioItem',
     storage: '',
-    _getDisplayItemsCode: function(withEditLink) { return ""; },
+    _getDisplayItemsCode: function(withEditLink, printPurpose, data) { return ""; },
     _checkForm: function() { return 0; },
     copyright: function() { return ""; },
     _printCode: function () { return ""; },
@@ -30,6 +30,11 @@ var StudioItem = {
     printCode: function ()
     {
           return this._printCode() + this._getDisplayItemsCode(false, true);
+    },
+    
+    importCode: function (data)
+    {
+          return this._getDisplayItemsCode(false, true, data);
     },
     
     onShow: function() {
@@ -130,5 +135,60 @@ var StudioItem = {
         localStorage.setItem(this.storage, JSON.stringify(newCards));
         this._displayCards();
         Nav.closeDialog();
+    },
+    
+    export: function(indexes) {
+        let data = [];
+        
+        var items = JSON.parse(localStorage.getItem(this.storage)) || [];
+        for (let index of indexes)
+        {
+            data.push(items[index]);
+        }
+        
+        return data;
+    },
+    
+    importLabel: function(item) {
+        return item.name;
+    },
+    
+    import: function(item) {
+        let data = JSON.parse(localStorage.getItem(this.storage)) || [];
+        
+        let added = false;
+        
+        let newdata = [];
+        for (let d of data)
+        {
+            if (d.id == item.id)
+            {
+                newdata.push(item);
+                added = true;
+            }
+            else
+            {
+                newdata.push(d);
+            }
+        }
+        data = newdata;
+        
+        if (!added)
+        {
+            data.push(item);
+        }
+        
+        localStorage.setItem(this.storage, JSON.stringify(data));
+    },
+    
+    existsItem: function(item) {
+        for (let i of JSON.parse(localStorage.getItem(this.storage)) || [])
+        {
+            if (item.id == i.id)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 }

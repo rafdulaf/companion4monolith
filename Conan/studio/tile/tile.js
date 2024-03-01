@@ -5,11 +5,11 @@ var Tile = mergeObject(StudioItem, {
     _itemWidth: 204,
     _itemHeight: 309,
     
-    _getDisplayItemsCode: function(withEditLink, printPurpose)
+    _getDisplayItemsCode: function(withEditLink, printPurpose, data)
     {
         var html = "";
 
-        var tiles = JSON.parse(localStorage.getItem(this.storage)) || [];
+        var tiles = data || JSON.parse(localStorage.getItem(this.storage)) || [];
         if (tiles.length > 0)
         {
             for (var i in tiles)
@@ -22,7 +22,7 @@ var Tile = mergeObject(StudioItem, {
                 }
                 else
                 {
-                    prefix = "<input type='checkbox' id='tile-" + i + "' name='tile' data-index='" + i + "' onchange=\"$('#tile-back-" + i + ", #tile-back2-" + i + "').toggleClass('invisible');\"/><label for='tile-" + i + "'>";
+                    prefix = "<input type='checkbox'" + (tiles[i].prechecked ? " checked='checked'" : "") + " id='tile-" + i + "' name='tile' data-index='" + i + "' onchange=\"$('#tile-back-" + i + ", #tile-back2-" + i + "').toggleClass('invisible');\"/><label for='tile-" + i + "'>";
                     suffix = "</label>";
                 }
 
@@ -506,5 +506,5 @@ var Tile = mergeObject(StudioItem, {
     {
         return "<h3>" + Tile._i18n.tab + "</h3>"
             + "<p>" + Tile._i18n.copyright + "</p>"
-    }    
+    }  
 });
