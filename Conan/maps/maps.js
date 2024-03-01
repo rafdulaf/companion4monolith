@@ -89,7 +89,7 @@ Maps = mergeObject(Maps, {
                     for (var j=0; j < rules[i].coordinates.length; j++)
                     {
                         var coo = rules[i].coordinates[j];
-                        aide += "<span class='map-help-legend' data-num='" + (i+1) + "' style='left: " + coo[0] + "%; top: " + coo[1] + "%;'>" + (i+1) + "</span>";
+                        aide += "<span onclick='Maps._scrollIntoView(" + (i + 1) + ")' class='map-help-legend' data-num='" + (i+1) + "' style='left: " + coo[0] + "%; top: " + coo[1] + "%;'>" + (i+1) + "</span>";
                     }
                 }
 
@@ -97,6 +97,9 @@ Maps = mergeObject(Maps, {
         }
         
         return aide;
+    },
+    _scrollIntoView: function(number) {
+        $("*.map-help-rule-title[data-num='" + number + "']").parent()[0].scrollIntoView({ behavior: "smooth" });
     },
     _legendText: function(map)
     {
