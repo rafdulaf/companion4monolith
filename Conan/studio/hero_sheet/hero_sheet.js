@@ -368,7 +368,7 @@ var HeroSheet = mergeObject(StudioItem, {
         $(".dialog input[name=sheetpos]")[0].value = sheet.id;
         $(".dialog input[name=sheetname]")[0].value = sheet.name;
         $(".dialog input[name=sheetsubname]")[0].value = sheet.subname;
-        $(".dialog select[name=sheetback]")[0].value = sheet.back; $(".dialog select[name=sheetback]").attr("data-value", sheet.back);
+        $(".dialog select[name=sheetback]")[0].value = sheet.back || "gray"; $(".dialog select[name=sheetback]").attr("data-value", sheet.back || "gray");
         $(".dialog input[name=sheetimage]")[0].value = sheet.image;
         $(".dialog input[name=sheetimagelocation]")[0].value = sheet.imagelocation.x;
         $(".dialog input[name=sheetimagelocation2]")[0].value = sheet.imagelocation.y;
