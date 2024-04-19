@@ -26,6 +26,6 @@ var AutoZoom = {
             $("<style type='text/css' id='" + id + "-cssrule'></style>").appendTo("head");
             rules = $("#" + id + "-cssrule");
         }
-        rules.html("#" + id + " > * { zoom: " + zoom + " } .ff #" + id + " > * { transform: scale(" + zoom + "); transform-origin: top left; margin-right: -" + (width - width*zoom) + "px; margin-bottom: -" + (height - height*zoom) + "px; }")
+        rules.html("#" + id + " > * { zoom: " + zoom + " } .ff #" + id + " > * { transform: scale(" + zoom + "); transform-origin: top left; margin-right: -" + (width - width*zoom) + "px; margin-bottom: -" + (height - height*zoom) + "px; overflow: hidden; }")
     }
 }
