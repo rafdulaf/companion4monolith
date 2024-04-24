@@ -9,7 +9,7 @@ import java.nio.file.Path;
 import java.nio.file.SimpleFileVisitor;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.util.EnumSet;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 import java.util.Map;
 import java.util.Set;
@@ -19,10 +19,14 @@ public class GenerateSWListingFiles
 {
     private final static Set<String> EXCEPTIONS = Set.of(".git", "bin", "tools");
     
-    private final static Set<String> LANGUAGES = Set.of("en", "fr", "it");
+    private final static Set<String> LANGUAGES = new LinkedHashSet<>();
     
     public static void main(String[] args) throws IOException
     {
+        LANGUAGES.add("en");
+        LANGUAGES.add("fr");
+        LANGUAGES.add("it");
+        
         Path root = Path.of(args[0]);
         
         Files.list(root)
@@ -35,7 +39,7 @@ public class GenerateSWListingFiles
     
     private static void _createFiles(Path root, String application)
     {
-        Map<String, Long> size = new HashMap<>();
+        Map<String, Long> size = new LinkedHashMap<>();
         LANGUAGES.stream().forEach(lang -> size.put(lang, 0L));
         
         try
@@ -73,12 +77,12 @@ public class GenerateSWListingFiles
         
         final Set<String> languages = LANGUAGES;
         
-        Files.walkFileTree(directory, EnumSet.of(FileVisitOption.FOLLOW_LINKS), Integer.MAX_VALUE, new SimpleFileVisitor<Path>() { 
+        Files.walkFileTree(directory, EnumSet.of(FileVisitOption.FOLLOW_LINKS), Integer.MAX_VALUE, new SimpleFileVisitor<Path>() {
             @Override
             public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException
             {
                 if (Files.isRegularFile(file) // Not caching folders
-                    && !file.getFileName().toString().toLowerCase().endsWith("_hd.webp")) // Not caching HS images 
+                    && !file.getFileName().toString().toLowerCase().endsWith("_hd.webp")) // Not caching HS images
                 {
                     long fileSize = Files.size(file);
                     boolean onlyOneLanguage = false;
