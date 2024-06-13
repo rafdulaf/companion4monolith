@@ -79,19 +79,22 @@
         
         "Zeppelin": {
             "description": {
-                "title": "Le Zeppelin"
+                "title": "Le Zeppelin",
+                "totopic": "https://the-overlord.com/index.php?/topic/53316-gotham-city-in-flames-carte-zeppelin/"
             }
         },
         
         "Warehouse": {
             "description": {
-                "title": "Les entrepôts"
+                "title": "Les entrepôts",
+                "totopic": "https://the-overlord.com/index.php?/topic/53317-gotham-city-in-flames-carte-quais-entrepôts/"
             }
         },
         
         "Docks": {
             "description": {
-                "title": "Les quais"
+                "title": "Les quais",
+                "totopic": "https://the-overlord.com/index.php?/topic/53317-gotham-city-in-flames-carte-quais-entrepôts/"
             }
         }
     },
@@ -99,7 +102,8 @@
     "compositions": {
         "Docks_Warehouse": {
             "description": {
-                "title": "Les quais & entrepôts"
+                "title": "Les quais & entrepôts",
+                "totopic": "https://the-overlord.com/index.php?/topic/53317-gotham-city-in-flames-carte-quais-entrepôts/"
             }
         }
     }  

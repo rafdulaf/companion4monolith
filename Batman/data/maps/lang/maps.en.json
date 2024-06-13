@@ -79,19 +79,22 @@
         
         "Zeppelin": {
             "description": {
-                "title": "The Zeppelin"
+                "title": "The Zeppelin",
+                "totopic": "https://the-overlord.net/index.php?/topic/114590-gotham-city-in-flames-zeppelin/"
             }
         },
         
         "Warehouse": {
             "description": {
-                "title": "The warehouse"
+                "title": "The warehouse",
+                "totopic": "https://the-overlord.net/index.php?/topic/114591-gotham-city-in-flames-docks-warehouse/"
             }
         },
          
         "Docks": {
             "description": {
-                "title": "The Docks"
+                "title": "The Docks",
+                "totopic": "https://the-overlord.net/index.php?/topic/114591-gotham-city-in-flames-docks-warehouse/"
             }
         }
     },
@@ -99,7 +102,8 @@
     "compositions": {
         "Docks_Warehouse": {
             "description": {
-                "title": "The Docks & warehouse"
+                "title": "The Docks & warehouse",
+                "totopic": "https://the-overlord.net/index.php?/topic/114591-gotham-city-in-flames-docks-warehouse/"
             }
         }
     }    
