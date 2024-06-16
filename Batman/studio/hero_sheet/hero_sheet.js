@@ -81,7 +81,7 @@ var HeroSheet = mergeObject(StudioItem, {
         code +=     "<span class='free'>" + sheet.move.free + "</span>";
         if (sheet.move.weight.length > 1)
         {
-            code +=     "<img class='bg' src='studio/hero_sheet/img/walk" + sheet.move.weight.length + "_" + sheet.type + ".png?version=" + Version + "'/>";
+            code +=     "<img class='bg' src='studio/hero_sheet/img/walk" + sheet.move.weight.length + "_" + sheet.type + ".webp?version=" + Version + "'/>";
         }
         if (sheet.move.weight.length > 0 && sheet.move.free > 0) code +=     "<span class='weight weight1'>" + sheet.move.weight[0] + "</span>" + "<span class='value value1'>" + (sheet.move.free - 1) + "</span>";
         if (sheet.move.weight.length > 1 && sheet.move.free > 1) code +=     "<span class='weight weight2'>" + sheet.move.weight[1] + "</span>" + "<span class='value value2'>" + (sheet.move.free - 2) + "</span>";
@@ -89,23 +89,23 @@ var HeroSheet = mergeObject(StudioItem, {
         code += "</div>";
         
         code += "<div class='carac melee'>";
-        code +=     "<img class='dice' src='resources/img/dice_" + sheet.caracs.melee.dice + ".png?version=" + Version + "'/>";
+        code +=     "<img class='dice' src='resources/img/dice_" + sheet.caracs.melee.dice + ".webp?version=" + Version + "'/>";
         code +=     "<span class='exertion'>" + sheet.caracs.melee.exertion + "</span>";
         code += "</div>";
         code += "<div class='carac ranged'>";
-        code +=     "<img class='dice' src='resources/img/dice_" + sheet.caracs.ranged.dice + ".png?version=" + Version + "'/>";
+        code +=     "<img class='dice' src='resources/img/dice_" + sheet.caracs.ranged.dice + ".webp?version=" + Version + "'/>";
         code +=     "<span class='exertion'>" + sheet.caracs.ranged.exertion + "</span>";
         code += "</div>";
         code += "<div class='carac manipulation'>";
-        code +=     "<img class='dice' src='resources/img/dice_" + sheet.caracs.manipulation.dice + ".png?version=" + Version + "'/>";
+        code +=     "<img class='dice' src='resources/img/dice_" + sheet.caracs.manipulation.dice + ".webp?version=" + Version + "'/>";
         code +=     "<span class='exertion'>" + sheet.caracs.manipulation.exertion + "</span>";
         code += "</div>";
         code += "<div class='carac thought'>";
-        code +=     "<img class='dice' src='resources/img/dice_" + sheet.caracs.thought.dice + ".png?version=" + Version + "'/>";
+        code +=     "<img class='dice' src='resources/img/dice_" + sheet.caracs.thought.dice + ".webp?version=" + Version + "'/>";
         code +=     "<span class='exertion'>" + sheet.caracs.thought.exertion + "</span>";
         code += "</div>";
         code += "<div class='carac right defense'>";
-        code +=     "<img class='dice' src='resources/img/dice_" + sheet.caracs.defense.dice + ".png?version=" + Version + "'/>";
+        code +=     "<img class='dice' src='resources/img/dice_" + sheet.caracs.defense.dice + ".webp?version=" + Version + "'/>";
         code +=     "<span class='exertion'>" + sheet.caracs.defense.exertion + "</span>";
         code += "</div>";
         code += "<div class='carac right reroll'>";
@@ -119,8 +119,8 @@ var HeroSheet = mergeObject(StudioItem, {
         if (sheet.caracs.defense.passive)
         {
             code += "<div class='passivedefense'>";
-            code +=     "<img class='bg' src='studio/hero_sheet/img/armor_" + sheet.type + ".png?version=" + Version + "'/>";
-            code +=     "<img class='dice' src='resources/img/dice_" + sheet.caracs.defense.passive + ".png?version=" + Version + "'/>";
+            code +=     "<img class='bg' src='studio/hero_sheet/img/armor_" + sheet.type + ".webp?version=" + Version + "'/>";
+            code +=     "<img class='dice' src='resources/img/dice_" + sheet.caracs.defense.passive + ".webp?version=" + Version + "'/>";
             code += "</div>";
         }
         
@@ -129,7 +129,7 @@ var HeroSheet = mergeObject(StudioItem, {
         code +=     "<span class='size'>" + sheet.size + "</span>";
         if (sheet.belt)
         {
-            code +=     "<img class='bg' src='studio/hero_sheet/img/belt_" + sheet.type + ".png?version=" + Version + "'/>";
+            code +=     "<img class='bg' src='studio/hero_sheet/img/belt_" + sheet.type + ".webp?version=" + Version + "'/>";
             code +=     "<span class='belt'>" + sheet.belt + "</span>";
         }
         code += "</div>";
@@ -147,7 +147,7 @@ var HeroSheet = mergeObject(StudioItem, {
         {
             code += "<div class='herosheet sheet back " + sheet.type + "'><div>";
                 code += "<div class='background'>"
-                         + "<img src='studio/hero_sheet/img/sheet_back_l1_" + sheet.type + ".png?version=" + Version + "'/>";
+                         + "<img src='studio/hero_sheet/img/sheet_back_l1_" + sheet.type + ".webp?version=" + Version + "'/>";
 
             if (sheet.image || sheet.image2)
             {
@@ -155,7 +155,7 @@ var HeroSheet = mergeObject(StudioItem, {
             }
 
 
-                code += "<img src='studio/hero_sheet/img/sheet_back_l2_" + sheet.type + ".png?version=" + Version + "'/>"
+                code += "<img src='studio/hero_sheet/img/sheet_back_l2_" + sheet.type + ".webp?version=" + Version + "'/>"
                      + "</div>"
             if (sheet.name)
             {
