@@ -102,8 +102,7 @@
 .dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(8):before, .dialog .sheet select[data-value=yellowreroll] + span { background-image: url(../../resources/img/dice_yellowreroll.webp) !important; }
 .dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(9):before, .dialog .sheet select[data-value=white] + span { background-image: url(../../resources/img/dice_white.webp) !important; }
 .dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(10):before, .dialog .sheet select[data-value=whitereroll] + span { background-image: url(../../resources/img/dice_whitereroll.webp) !important; }
-.dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(1):before, .dialog .sheet select[data-value=black] + span { background-image: url(../../resources/img/dice_black.png) !important; }
-.dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(11):before, .dialog .sheet select[data-value=''] + span { background-image: url(img/nodice.png) !important; }
+.dialog .sheet .dice ~ .ui-selectmenu-menu ul li:nth-child(11):before, .dialog .sheet select[data-value=''] + span { background-image: url(img/nodice.webp) !important; }
     
 .dialog .sheet .field.imagelocation,
 .dialog .sheet .field.imagezoom,
@@ -279,7 +278,7 @@
 
 .sheet.herosheet.withboard, 
 .dialog .sheet.herosheet {
-    background-image: url(img/player_board.png);
+    background-image: url(img/player_board.webp);
     background-repeat: no-repeat;
     background-size: contain;
     padding-left: 94px;

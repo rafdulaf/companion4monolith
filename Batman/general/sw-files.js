@@ -691,7 +691,6 @@ const urlsToCache = [
 	"resources/favico/favicon.ico",
 	"resources/favico/logo-1024x1024.webp",
 	"resources/favico/logo-2048x2048.webp",
-	"resources/favico/logo-512x512.png",
 	"resources/favico/logo-512x512.webp",
 	"resources/favico/maskable_icon_x128.webp",
 	"resources/favico/maskable_icon_x192.webp",
