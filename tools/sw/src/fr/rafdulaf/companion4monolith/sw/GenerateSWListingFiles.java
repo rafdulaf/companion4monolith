@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
 
 public class GenerateSWListingFiles
 {
-    private final static Set<String> EXCEPTIONS = Set.of(".git", "bin", "tools");
+    private final static Set<String> EXCEPTIONS = Set.of(".git", "bin", "src", "tools");
     
     private final static Set<String> LANGUAGES = new LinkedHashSet<>();
     
