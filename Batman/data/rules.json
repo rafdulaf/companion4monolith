@@ -3,6 +3,10 @@
         {
             "id": "corebox",
             "origins": ["corebox"]
+        },
+        {
+            "id": "solo-coop",
+            "origins": ["solo-coop"]
         }
     ]
 }
