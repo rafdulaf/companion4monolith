@@ -364,6 +364,119 @@
             "textStyle": {
                 "textInter": 53
             }
+        },
+        "jade_wand": {
+            "title": "sceptre de jade",
+            "text": "Une fois par tour, ciblez une unité en ligne de vue ; elle subit 1 dégât inévitable par gemme dépensée (jusqu’à 3).\n\n\n\n\n\n",
+            "textStyle": {
+                "textInter": 72
+            },
+            "clarification": "Les unités de l’Overlord ne disposant pas de case Manipulation, l’Overlord dépense simplement ses gemmes de la Zone d’Énergie disponible vers la Zone de Fatigue."
+        },
+        "rope": {
+            "title": "Corde",
+            "text": "Défausser cette carte et placer un pion Corde dans la même zone.",
+            "clarification": "Un Héros dans la même zone que le pion Corde peut réaliser une Manipulation simple pour retirer ce pion du plateau et placer la carte Corde dans son inventaire."
+        },
+        "whip": {
+            "title": "Fouet",
+            "text": "Défausser cette carte et placer un pion Corde dans la même zone.",
+            "clarification": "Le Fouet est une arme qui peut aussi être utilisée comme une carte Corde lorsque le scénario indique qu’un pion Corde peut être placé."
+        },
+        "bow_of_set": {
+            "title": "Arc de Set"
+        },
+        "shuko": {
+            "title": "Shuko"
+        },
+        "pipes_of_madness": {
+            "title": "Calumets de la Folie"
+        },
+        "sorcerers_staff": {
+            "title": "Bâton de Sorcier"
+        },
+        "shuriken": {
+            "title": "Shuriken",
+            "text": "Ne peuvent être utilisés que sur des cibles dans votre zone ou une zone adjacente en ligne de vue.",
+            "textStyle": {
+                "textSize": 84,
+                "textInter": 64
+            },
+            "clarification": "Les Shuriken sont des armes légères à courte portée. Elles suivent toutes les règles de base des armes à distance (ligne de vue, phénomène de gêne...), mais elles ne peuvent être utilisées que pour cibler un ennemi dans la même zone que l’attaquant ou dans une zone adjacente. Cela comprend les zones d’élévations différentes, ce qui peut entraîner un bonus de surplomb."
+        },
+        "harpoon": {
+            "title": "Harpon"
+        },
+        "black_stone": {
+            "title": "Pierre Noire"
+        },
+        "serpent_crown": {
+            "title": "Couronne de Serpent",
+            "text": "Placez 3 {gem_red} sur cette carte. Un Héros peut dépenser ces gemmes pour utiliser la compétence Commandement. Au début du tour des Héros, replacez les 3 {gem_red} sur cette carte.\n\n\n\n\n\n",
+            "textStyle": {
+                "textSize": 81,
+                "textInter": 90
+            }
+        },
+        "tankard": {
+            "title": "Chope"
+        },
+        "minor_life_potion": {
+            "title": "Potion de vie Mineure"
+        },
+        "crowbill": {
+            "title": "Bec de Corbin"
+        },
+        "club": {
+            "title": "Gourdin"
+        },
+        "lemurian_blade": {
+            "title": "Lame Lémurienne"
+        },
+        "rapier": {
+            "title": "Rapière"
+        },
+        "mace_of_ibis": {
+            "title": "Masse d'Ibis"
+        },
+        "two-handed_axe": {
+            "title": "Hache à Deux Mains"
+        },
+        "hurlbat": {
+            "title": "Hache de Lancer"
+        },
+        "stiletto": {
+            "title": "Stylet"
+        },
+        "quiver": {
+            "title": "Carquois",
+            "text": "\n\n\n\n\nRéduisez de 1 l’Encombrement\nd’un Arc ou d’une Arbalète.",
+            "textStyle": {
+                "textSize": 89,
+                "textInter": 77
+            }
+        },
+        "heavy_armor": {
+            "title": "Armure lourde",
+            "text": "Ignorez les compétences Coup Précis et Tir Précis.",
+            "textStyle": {
+                "textSize": 88,
+                "textInter": 74
+            }
+        },
+        "hyrkanian_helmet": {
+            "title": "Casque Hyrkanien",
+            "text": "Peut être utilisé en plus d’une autre carte Équipement avec un bonus de Défense passive.",
+            "textStyle": {
+                "textSize": 100,
+                "textInter": 59
+            }
+        },
+        "nemedian_shield": {
+            "title": "Bouclier Némédien"
+        },
+        "stygian_shield": {
+            "title": "Bouclier Stygien"
         }
     }
 }

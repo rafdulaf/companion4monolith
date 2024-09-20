@@ -93,7 +93,8 @@
 
 
 #rules .skills-text img,
-.dialog .skills-text img {
+.dialog .skills-text img,
+.dialog .clarification img {
     margin: 0;
     width: 14px;
     height: 14px;

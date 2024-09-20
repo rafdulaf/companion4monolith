@@ -5,6 +5,7 @@ EncyclopediaSpells._i18n = {
     'transfertConfirm': "Do you want to copy the card into the studio in order to edit it or print it?",
     'from': "Available in:",
     'fromAnd': "and",
+    'forVersus': "Specially adapted for Versus mode",
     'card': "copy",
     'cards': "copies",
     'clarification': "Clarification:",
@@ -58,6 +59,13 @@ EncyclopediaSpells._facets = {
             'forSkill': { 'label': "Skill" },
             'forRange': { 'label': "Range" },
             'forEnergy': { 'label': "Gems" }
+        }
+    },
+    'type': {
+        'label': "Type",
+        'values': {
+            'normal': { 'label': "Normal" },
+            'versus': { 'label': "Versus" }
         }
     },
     'empty': {

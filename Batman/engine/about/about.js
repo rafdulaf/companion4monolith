@@ -497,8 +497,8 @@ var About = {
     
     _replace: function(text, cls)
     {
-        text = text.replace(/\{(.*?)\}/g, "<img src=\"resources/img/$1.webp?version=" + Version + "\"" + (cls ? " class='" + cls + "'" : "") + "/>");
-        return text;
+        text = text.replace(/\{(.*?)\}/g, "</span><img src=\"resources/img/$1.webp?version=" + Version + "\"" + (cls ? " class='" + cls + "'" : "") + "/><span>").replaceAll("<span></span>", "");
+        return "<span>" + text + "</span>";
     }
 }
 

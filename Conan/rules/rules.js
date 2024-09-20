@@ -1,20 +1,7 @@
 Rules = mergeObject(Rules, {
     _initSkillsSpecific: function()
     {
-        var handled = [];
-        for (var i in Encyclopedia.spells.list)
-        {
-            var spell = Encyclopedia.spells.list[i];
-            if (spell.clarification && spell.clarification && About._hasExpansion(spell.origins) && handled.indexOf(spell.id) == -1)
-            {
-                handled.push(spell.id)
-                Rules._addSkill(null,
-                                    'magic',
-                                     spell.image,
-                                     spell.title,
-                                     Rules._i18n.spell_clarification + spell.clarification.replace(/\n/g, "<br/>"));
-            }
-        }
+        // Nothing
     },
 
     _findSkillByToken: function(tokenId)

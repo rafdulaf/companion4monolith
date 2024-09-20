@@ -107,6 +107,18 @@
         },
         "trap-door": {
             "name": "Trappe"
+        },
+        "rope": {
+            "name": "Corde"
+        },
+        "spectral-shroud": {
+            "name": "Linceul Spectral"
+        },
+        "ossuary-cairn": {
+            "name": "Cairn / Ossuaire"
+        },
+        "black-stone": {
+            "name": "Pierre Noire"
         }
     }
 }

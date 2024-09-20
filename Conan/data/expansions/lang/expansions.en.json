@@ -44,6 +44,14 @@
             "title": "\"Conqueror\" Stretch goals (2020)",
             "short": "Conqueror SG"
         },
+        "red-nails": {
+            "title": "Red Nails",
+            "short": "Red Nails"
+        },
+        "versus-mode": {
+            "title": "Versus Mode",
+            "short": "Versus Mode"
+        },
 
         "stygia": {
             "title": "Stygia",
@@ -64,6 +72,10 @@
         "red-brotherhood": {
             "title": "Tales of the Red Brotherhood",
             "short": "Red Brotherhood"
+        },
+        "worms-earth": {
+            "title": "Worms of the Earth",
+            "short": "Worms of the Earth"
         },
 
         "crossbowmen": {
@@ -113,7 +125,7 @@
 
         "campaignbook": {
             "title": "Campaign book - The Devil in Iron",
-            "short": "Campaign book"
+            "short": "Devil in Iron"
         }, 
         "setbook": {
             "title": "Book of Set",
@@ -135,6 +147,10 @@
         "xcbox": {
             "title": "Xavier Colette Box",
             "short": "Xavier Colette Box"
+        },
+        "fbox": {
+            "title": "Frazetta Box",
+            "short": "Frazetta Box"
         },
 
         "doorpack": {

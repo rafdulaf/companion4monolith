@@ -7,5 +7,7 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="tools/pdf/buildvu-html.jar"/>
+	<classpathentry kind="lib" path="tools/pdf/c-webp-1.0.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

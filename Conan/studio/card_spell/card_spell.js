@@ -48,8 +48,8 @@ var CardSpell = mergeObject(StudioItem, {
     _cardCode: function(card) {
         var code = "<div class=\"spell card" + (card.imageEffect !== false ? " effect" : "") + "\">"
                 + "<picture class=\"background\">"
-                    + "<source media=\"print\" srcset=\"studio/card_spell/img/background_hd.webp?version=" + Version + "\"/>"
-                    + "<img src=\"studio/card_spell/img/background.webp?version=" + Version + "\"/>"
+                    + "<source media=\"print\" srcset=\"studio/card_spell/img/background-" + (card.type || "normal") + "_hd.webp?version=" + Version + "\"/>"
+                    + "<img src=\"studio/card_spell/img/background-" + (card.type || "normal") + ".webp?version=" + Version + "\"/>"
                 + "</picture>";
 
         code += "<div class=\"name" + (card.longName === true ? " long" : "") + "\">" + card.name + "</div>";
@@ -91,9 +91,18 @@ var CardSpell = mergeObject(StudioItem, {
             + "<div class=\"spell\">"
                 + "<h1>" + CardSpell._i18n.header1 + "</h1>"
                 + "<input type=\"hidden\" name=\"cardpos\"/>"
-                + "<div class=\"field name\">"
-                    + "<label for=\"eqname\">" + CardSpell._i18n.name + "</label>"
-                    + "<input id=\"eqname\" spellcheck='false' name=\"cardname\" autocomplete=\"off\" placeholder=\"" + CardSpell._i18n.namePh + "\" onkeyup=\"CardSpell._preview();\" onchange=\"CardSpell._preview();\"/>"
+                + "<div class=\"fields\">"
+                    + "<div class=\"field name\">"
+                        + "<label for=\"eqname\">" + CardSpell._i18n.name + "</label>"
+                        + "<input id=\"eqname\" spellcheck='false' name=\"cardname\" autocomplete=\"off\" placeholder=\"" + CardSpell._i18n.namePh + "\" onkeyup=\"CardSpell._preview();\" onchange=\"CardSpell._preview();\"/>"
+                    + "</div>"
+                    + "<div class=\"field type\">"
+                        + "<label for=\"eqtype\">" + CardSpell._i18n.type + "</label>"
+                        + "<select id='eqtype' name='cardtype'>"
+                        +     "<option value='normal'>" + CardSpell._i18n.typeNormal + "</option>"
+                        +     "<option value='versus'>" + CardSpell._i18n.typeVersus + "</option>"
+                        + "</select>"
+                    + "</div>"
                 + "</div>"
                 + "<div class=\"field cost\">"
                     + "<label for=\"eqcost\">" + CardSpell._i18n.cost + "</label>"
@@ -158,6 +167,7 @@ var CardSpell = mergeObject(StudioItem, {
         card = card || {
             id: Math.random(),
             name: "",
+            type: "normal",
             text: "",
             textSize: "150",
             textInter: "66",
@@ -171,6 +181,15 @@ var CardSpell = mergeObject(StudioItem, {
             explosion: false,
             reaction: false
         };
+        
+        $("#eqtype").each (function (i) {
+                var k = $(this);
+                k.attr("data-value", "")
+                    .selectmenu({ appendTo: k.parent(), width: k.is(".dice") ? 40 : 58, change: function(event, selection) {
+                        $(this).attr("data-value", selection.item.value);
+                        Tile._preview();
+                    }});
+            });        
 
         CardSpell._card2form(card);
 
@@ -184,6 +203,7 @@ var CardSpell = mergeObject(StudioItem, {
         return {
             id: $(".dialog input[name=cardpos]")[0].value,
             name: $(".dialog input[name=cardname]")[0].value,
+            type: $(".dialog select[name=cardtype]")[0].value,
             text: $(".dialog textarea[name=cardtext]")[0].value,
             textSize: $(".dialog input[name=cardtextsize]")[0].value || "150",
             textInter: $(".dialog input[name=cardtextinter]")[0].value || "66",
@@ -202,6 +222,7 @@ var CardSpell = mergeObject(StudioItem, {
     {
         $(".dialog input[name=cardpos]")[0].value = card.id;
         $(".dialog input[name=cardname]")[0].value = card.name;
+        $(".dialog select[name=cardtype]")[0].value = card.type || "normal";  $(".dialog select[name=cardtype]").attr("data-value", card.type || "normal");
         $(".dialog textarea[name=cardtext]")[0].value = card.text;
         $(".dialog input[name=cardtextsize]")[0].value = card.textSize;
         $(".dialog input[name=cardtextinter]")[0].value = card.textInter;

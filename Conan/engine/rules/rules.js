@@ -36,7 +36,7 @@ var Rules = {
             if (About._hasExpansion(Encyclopedia.rules.list[i].origins) || window.About && About.getPreference("rules-showmine") === "false")
             {
                 Nav.addFloatingAction(Encyclopedia.rules.list[i].id, Rules._i18n['viewer-search'], "rules-search-icon", "search", Rules._search);
-                $("#" + Encyclopedia.rules.list[i].id).html("<div class='zoom0 rules-viewer'><div>" + Rules._createViewer("data/rules/books/" + Encyclopedia.rules.list[i].id + "/" + Language, Encyclopedia.rules.list[i].pages) + "</div></div>");
+                $("#" + Encyclopedia.rules.list[i].id).html("<div class='zoom0 rules-viewer'><div>" + Rules._createViewer("data/rules/books/" + Encyclopedia.rules.list[i].id + "/" + Language, Encyclopedia.rules.list[i].pages, Encyclopedia.rules.list[i].pageOneAtLeft) + "</div></div>");
                 Nav.createFloatingBar(Encyclopedia.rules.list[i].id);
                 Rules._attachEvents("#" + Encyclopedia.rules.list[i].id);
             }
@@ -149,7 +149,7 @@ var Rules = {
         var skill = Rules._findSkillById(id);
         
         let html = Rules._skill2HTML(skill.id, skill.type, skill.image, skill.title, skill.text, null);
-        let clarifications = (skill.clarification ?"<div class='clarification'>" + skill.clarification.replace(/\n/g, "<br/>") + "</div>" : "")
+        let clarifications = (skill.clarification ?"<div class='clarification'>" + About._replace(skill.clarification).replace(/\n/g, "<br/>") + "</div>" : "")
         
         let skill2, html2 = '', clarifications2 = '';
         if (Language2 && Language2 != Language)
@@ -162,7 +162,7 @@ var Rules = {
                 }
                 skill2 = Rules._secondaryData.list[id];
                 html2 = Rules._skill2HTML(skill.id, skill.type, skill.image, skill2.title, skill2.text, null);
-                clarifications2 = (skill2.clarification ?"<div class='clarification'>" + skill2.clarification.replace(/\n/g, "<br/>") + "</div>" : "");            }
+                clarifications2 = (skill2.clarification ?"<div class='clarification'>" + About._replace(skill2.clarification).replace(/\n/g, "<br/>") + "</div>" : "");            }
             catch (e)
             {
                 console.error("Cannot download the " + Language2 + " file of skills", e);
@@ -396,7 +396,7 @@ var Rules = {
         }
     },
 
-    _createViewer: function(url, size)
+    _createViewer: function(url, size, pageOneAtLeft)
     {
         var s = "";
 
@@ -415,7 +415,7 @@ var Rules = {
         for (var i = 1; i <= size; i++)
         {
             var id = "rules-" + Math.round(Math.random() * 100000);
-            s += "<iframe name=\"" + id + "\" id=\"" + id + "\" loading=\"lazy\" data-page='" + i + "' src=\"\about:blank\" data-src=\"" + url + "/" + i + ".html?version=" + Version + "\"></iframe>";
+            s += "<iframe name=\"" + id + "\" id=\"" + id + "\" loading=\"lazy\" data-page='" + i + "' src=\"\about:blank\" data-src=\"" + url + "/" + i + ".html?version=" + Version + "\"" + (pageOneAtLeft ? " class=\"rules-viewer-pageOneAtLeft\"" : "") + "></iframe>";
         }
 
         return s;

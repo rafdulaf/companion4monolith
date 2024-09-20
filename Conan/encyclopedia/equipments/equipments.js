@@ -225,6 +225,7 @@ var EncyclopediaEquipments = {
             text: (equipment2 || equipment).text || "",
             textSize: ((equipment2 || equipment).textStyle || {}).textSize || 100,
             textInter: ((equipment2 || equipment).textStyle || {}).textInter || 70,
+            textStartLeft: equipment.textStartLeft,
             encumbrance: equipment.encumbrance,
             movement: equipment.movement || "",
             melee: equipment.melee,
@@ -233,11 +234,11 @@ var EncyclopediaEquipments = {
             active: equipment.active,
             passive: equipment.passive,
             skills: equipment.skills || { 0: "none", 1: "none" },
-            skillsatbottom: equipment.skillsatbottom || false,
+            skillsatbottom: equipment.skillsatbottom || "false",
             image: equipment.image ? equipment.image + "?version=" + Version : null,
             imagelocation: equipment.imagelocation || {x: "50", y: "50"},
             imagezoom: equipment.imagezoom || "100",
-            imagerotation: "0"
+            imagerotation: equipment.imagerotation || "0"
         };
     },
     
@@ -281,6 +282,24 @@ var EncyclopediaEquipments = {
         return equipments;
     },
 
+    _findEquipmentsByToken: function(tokenId)
+    {
+        var equipments = [];
+        var equipmentsIds = {};
+
+        for (var i in Encyclopedia.equipments.list)
+        {
+            var equipment = Encyclopedia.equipments.list[i];
+            if (!equipmentsIds[equipment.id] && equipment.tokens && equipment.tokens.indexOf(tokenId) >= 0)
+            {
+                equipments.push(equipment);
+                equipmentsIds[equipment.id] = true;
+            }
+        }
+
+        return equipments;
+    },
+        
     onShow: function() {
     },
     
@@ -329,7 +348,18 @@ var EncyclopediaEquipments = {
             c += CardEquipment._cardCode(EncyclopediaEquipments._convertEquipmentToStudio(equipment));
         }
         
+        var tokens = "";
+        if (equipment.tokens)
+        {
+            for (var i = 0; i < equipment.tokens.length; i++)
+            {
+                var token = equipment.tokens[i];
+                tokens += EncyclopediaTokens._linkToToken(token, true);
+            }
+        }
+
         let altTitle = "";
+        let equipment2 = null;
         if (Language2 && Language2 != Language)
         {
             try
@@ -342,7 +372,7 @@ var EncyclopediaEquipments = {
                 for (var e in displayEquipments)
                 {
                     let equipment = displayEquipments[e]; 
-                    let equipment2 = EncyclopediaEquipments._secondaryData.list[equipment.id]
+                    equipment2 = EncyclopediaEquipments._secondaryData.list[equipment.id]
                     if (anyText)
                     {
                         c += CardEquipment._cardCode(EncyclopediaEquipments._convertEquipmentToStudio(equipment, equipment2));
@@ -373,6 +403,9 @@ var EncyclopediaEquipments = {
                         + Rules._linkToSkill(equipment.skills[0], true) 
                          + (equipment.skills[1] != 'none' ? ", " + Rules._linkToSkill(equipment.skills[1], true) : "")
                     + "</div>") : "") 
+                + ((equipment.clarification) ?"<div class='clarification'>" + EncyclopediaEquipments._i18n.clarification + " " + equipment.clarification.replace(/\n/g, "<br/>") + "</div>" : "")
+                + ((equipment2 && equipment2.clarification) ?"<div class='clarification'>" + EncyclopediaEquipments._i18n.clarification + " " + equipment2.clarification.replace(/\n/g, "<br/>") + "</div>" : "")
+                + (tokens ? ("<div class='tokens'>" + EncyclopediaEquipments._i18n.tokensUsed + " " + tokens + "</div>") : "")
             + "</div>",
             null,
             [{

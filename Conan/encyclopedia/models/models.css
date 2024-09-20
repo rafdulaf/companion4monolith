@@ -55,9 +55,9 @@
     background-color: rgba(0,0,0,0.3);
     text-align: center;
 }
-#encyclopedia-models-wrapper a > div > span > span {
+/*#encyclopedia-models-wrapper a > div > span > span {
     font-size: 60%;
-}
+}*/
 
 #encyclopedia-models-wrapper a[data-count]::after {
     content: 'x' attr(data-count);

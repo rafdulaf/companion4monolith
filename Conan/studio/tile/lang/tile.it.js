@@ -8,6 +8,8 @@ Tile._i18n = {
 
     'name': "Nome",
     'namePh': "?",
+    'namesize': "Dimensione del testo",
+    'namesizePh': "?",
     'color': "Colore",
     'colorGray': "Grigia",
     'colorBlue': "Blu",
@@ -30,6 +32,7 @@ Tile._i18n = {
     'reinforcement': "Rinforzo",
     'reinforcementPh': "?",
     'image': "Immagine (sfondo trasparente)",
+    'imageflip': "TOTOTRANSLATEMiror",
     'imagetoken': "Immagine, se diversa",
     'imagePh': "Inserisci l'URL dell'immagine (http://...)",
     'imagetokenactive': "Attiva un segnalino",

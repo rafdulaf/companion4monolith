@@ -444,6 +444,13 @@
                 "origin": "The Hour of the Dragon"
             }
         },
+        "crossbowmen-blue": {
+            "name": "Crossbowmen",
+            "quote": {
+                "text": "The king and his allies moved westward at the head of fifty thousand men – knights in shining armor with their pennons streaming above their helmets, pikemen in steel caps and brigandines, crossbowmen in leather jerkins.",
+                "origin": "The Hour of the Dragon"
+            }
+        },
         "demon-of-the-earth": {
             "name": "Demon of the Earth",
             "quote": {
@@ -564,6 +571,13 @@
                 "origin": "The Hour of the Dragon"
             }
         },
+        "crows-2": {
+            "name": "Crows",
+            "quote": {
+                "text": "As he topped the farther crest of the slope, a raucous screaming burst out over his head, and looking up, he saw the raven flapping high above him, cawing incessantly. As he rode on, it followed him, maintaining its position and making the morning hideous with its strident cries, heedless of his efforts to drive it away. This kept up for hours, until Conan's teeth were on edge, and he felt that he would give half his kingdom to be allowed to wring that black neck. 'Devils of hell!' he roared to futile rage, shaking his mailed fist at the frantic bird. « Why do you harry me with your squawking? Begone, you black spawn of perdition, and peck for wheat to the farmers' fields! »",
+                "origin": "The Hour of the Dragon"
+            }
+        },
         "wolves": {
             "name": "Wolves",
             "quote": {
@@ -635,6 +649,9 @@
             "name": "Eternal Guard"
         },
         "assassins": {
+            "name": "Assassins"
+        },
+        "assassins-red": {
             "name": "Assassins"
         },
         "hoplites": {
@@ -894,7 +911,7 @@
         "asgrim": {
             "name": "Asgrim"
         },
-        "atla": {
+        "atla-gotn": {
             "name": "Atla"
         },
         "bragi": {
@@ -1103,6 +1120,246 @@
         },
         "injured-surt": {
             "name": "Injured Surt"
+        },
+        "xotalanc-spearmen": {
+            "name": "Xotalanc Spearmen"
+        },
+        "xotalanc-hunters": {
+            "name": "Xotalanc Hunters"
+        },
+        "xotalanc-assassins": {
+            "name": "Xotalanc Assassins"
+        },
+        "xotalanc-huntresses": {
+            "name": "Xotalanc Huntresses"
+        },
+        "dragon-xuchotl": {
+            "name": "Dragon of Xuchotl"
+        },
+        "dragon-2": {
+            "name": "Dragon",
+            "quote": {
+                "text": "Through the thicket was thrust a head of nightmare and lunacy. Grinning jaws bared rows of dripping yellow tusks; above the yawning mouth wrinkled a saurian-like snout. Huge eyes, like those of a python a thousand times magnified, stared unwinkingly at the petrified humans clinging to the rock above it. Blood smeared the scaly, flabby lips and dripped from the huge mouth.\nThe head, bigger than that of a crocodile, was further extended on a long scaled neck on which stood up rows of serrated spikes, and after it, crushing down the briars and saplings, waddled the body of a titan, a gigantic, barrel-bellied torso on absurdly short legs. The whitish belly almost raked the ground, while the serrated back-bone rose higher than Conan could have reached on tiptoe. A long spiked tail, like that of a gargantuan scorpion, trailed out behind.",
+                "origin": "Red Nails"
+            }
+        },
+        "burning-skull": {
+            "name": "Burning Skull"
+        },
+        "flaming-skeletons": {
+            "name": "Flaming Skeletons"
+        },
+        "tecuhltli-swordsmen": {
+            "name": "Tecuhltli Swordsmen"
+        },
+        "crawler": {
+            "name": "Crawler"
+        },
+        "olmec": {
+            "name": "Olmec"
+        },
+        "tascela": {
+            "name": "Tascela"
+        },
+        "tolkemec": {
+            "name": "Tolkemec"
+        },
+        "xotalanc-warriors": {
+            "name": "Xotalanc Warriors"
+        },
+        "kushite-warriors": {
+            "name": "Kushite Warriors"
+        },
+        "techotl": {
+            "name": "Techotl"
+        },
+        "stygian-captain": {
+            "name": "Stygian Captain"
+        },
+        "conan-free-companion": {
+            "name": "Conan Free Companion",
+            "quote": {
+                "text": "Arus saw a tall powerfully built youth, naked but for a loincloth, and sandals strapped high about his ankles. His skin was burned brown as by the suns of the wastelands, and Arus glanced nervously at the broad shoulders, massive chest and heavy arms. A single look at the moody, broad-browed features told the watchman that the man was no Nemedian. From under a mop of unruly black hair smoldered a pair of dangerous blue eyes. A long sword hung in a leather scabbard at his girdle.",
+                "origin": "The God in the Bowl"
+            }
+        },
+        "valeria-free-companion": {
+            "name": "Valeria Free Companion",
+            "quote": {
+                "text": "She was tall, full-bosomed and large-limbed, with compact shoulders. Her whole figure reflected an unusual strength, without detracting from the femininity of her appearance. She was all woman, in spite of her bearing and her garments. Instead of a skirt she wore short, wide-legged silk breeches, which ceased a hand’s breadth short of her knees, and were upheld by a wide silken sash worn as a girdle. Flaring-topped boots of soft leather came almost to her knees, and a low-necked, wide-collared, wide-sleeved silk shirt completed her costume. There was the color of the sea in her wide eyes. And that was as it should have been, because this was Valeria of the Red Brotherhood, whose deeds are celebrated in song and ballad wherever seafarers gather.\n“Why won’t men let me live a man’s life?”\n“No living man could disarm Valeria of the Brotherhood with his bare hands.”",
+                "origin": "Red Nails"
+            }
+        },
+        "soulless": {
+            "name": "Soulless",
+            "quote": {
+                "text": "Of this group ten were priests, and though they had discarded their masks Conan knew they were the priests he had accompanied to the pyramid. They stood before a tall, hawk-faced man beside a black altar on which lay a mummy in rotting swathings.",
+                "origin": "L'Heure du Dragon"
+            }
+        },
+        "xuchotlan-archers": {
+            "name": "Xuchotlan Archers"
+        },
+        "crocodiles": {
+            "name": "Crocodiles"
+        },
+        "tlazitlans": {
+            "name": "Tlazitlans"
+        },
+        "worms-of-the-earth": {
+            "name": "Worms of the Earth"
+        },
+        "brans-servants": {
+            "name": "Bran's Servants"
+        },
+        "atla": {
+            "name": "Atla"
+        },
+        "bran-mak-morn": {
+            "name": "Bran Mak Morn"
+        },
+        "drusus": {
+            "name": "Drusus"
+        },
+        "conan-the-berserker": {
+            "name": "Conan The Berserker",
+            "quote": {
+                "text": "Arus saw a tall powerfully built youth, naked but for a loincloth, and sandals strapped high about his ankles. His skin was burned brown as by the suns of the wastelands, and Arus glanced nervously at the broad shoulders, massive chest and heavy arms. A single look at the moody, broad-browed features told the watchman that the man was no Nemedian. From under a mop of unruly black hair smoldered a pair of dangerous blue eyes. A long sword hung in a leather scabbard at his girdle.",
+                "origin": "The God in the Bowl"
+            }
+        },
+        "conan-the-destroyer": {
+            "name": "Conan The Destroyer",
+            "quote": {
+                "text": "Arus saw a tall powerfully built youth, naked but for a loincloth, and sandals strapped high about his ankles. His skin was burned brown as by the suns of the wastelands, and Arus glanced nervously at the broad shoulders, massive chest and heavy arms. A single look at the moody, broad-browed features told the watchman that the man was no Nemedian. From under a mop of unruly black hair smoldered a pair of dangerous blue eyes. A long sword hung in a leather scabbard at his girdle.",
+                "origin": "The God in the Bowl"
+            }
+        },
+        "spectral-guards": {
+            "name": "Spectral Guards"
+        },
+        "veteran-bossonians": {
+            "name": "Veteran Bossonians"
+        },
+        "guardians": {
+            "name": "Guardians"
+        },
+        "pict-bloddhounds": {
+            "name": "Pict Bloddhounds"
+        },
+        "pict-trackers": {
+            "name": "Pict Trackers"
+        },
+        "black-dragons-2": {
+            "name": "Black Dragons",
+            "quote": {
+                "text": "Then a medley of voices reached his ears, and the room was thronged with the finally roused people of the court—knights, peers, ladies, men-at- arms, councillors—all babbling and shouting and getting in one another's way. The Black Dragons were on hand, wild with rage, swearing and ruffling, with their hands on their hilts and foreign oaths in their teeth.",
+                "origin": "The Phoenix on the Sword"
+            }
+        },
+        "elite-black-dragons": {
+            "name": "Elite Black Dragons",
+            "quote": {
+                "text": "Then a medley of voices reached his ears, and the room was thronged with the finally roused people of the court—knights, peers, ladies, men-at- arms, councillors—all babbling and shouting and getting in one another's way. The Black Dragons were on hand, wild with rage, swearing and ruffling, with their hands on their hilts and foreign oaths in their teeth.",
+                "origin": "The Phoenix on the Sword"
+            }
+        },
+        "risen-corpses": {
+            "name": "Risen Corpses",
+            "quote": {
+                "text": "Of this group ten were priests, and though they had discarded their masks Conan knew they were the priests he had accompanied to the pyramid. They stood before a tall, hawk-faced man beside a black altar on which lay a mummy in rotting swathings.",
+                "origin": "L'Heure du Dragon"
+            }
+        },
+        "bandits": {
+            "name": "Bandits",
+            "quote": {
+                "text": "« Pirates! » whispered Conan, a grim smile on his thin lips. (…) There were some seventy of them, a wild horde made up of men from many nations: Kothians, Zamorians, Brythunians, Corinthians, Shemites. Their features reflected the wildness of their natures. Many bore the scars of the lash or the branding-iron. There were cropped ears, slit noses, gaping eye-sockets, stumps of wrists—marks of the hangman as well as scars of battle. Most of them were half naked, but the garments they wore were fine; gold-braided jackets, satin girdles, silken breeches, tattered, stained with tar and blood, vied with pieces of silver- chased armor. Jewels glittered in nose-rings and earrings, and in the hilts of their daggers.",
+                "origin": "Iron Shadows in the Moon"
+            }
+        },
+        "the-dead": {
+            "name": "The Dead",
+            "quote": {
+                "text": "In one corner of the dungeon, near the door through which they had entered, a cluster of rusty chains hung from a great iron ring set in the stone. In these chains a skeleton dangled. Conan glared at it with some curiosity, noticing the state of the bare bones, most of which were splintered and broken; the skull, which had fallen from the vertebrae, was crushed as if by some savage blow of tremendous force.",
+                "origin": "The Hour of the Dragon"
+            }
+        },
+        "the-undead": {
+            "name": "The Undead",
+            "quote": {
+                "text": "In one corner of the dungeon, near the door through which they had entered, a cluster of rusty chains hung from a great iron ring set in the stone. In these chains a skeleton dangled. Conan glared at it with some curiosity, noticing the state of the bare bones, most of which were splintered and broken; the skull, which had fallen from the vertebrae, was crushed as if by some savage blow of tremendous force.",
+                "origin": "The Hour of the Dragon"
+            }
+        },
+        "revenants": {
+            "name": "Revenants"
+        },
+        "bog-ghouls": {
+            "name": "Bog Ghouls"
+        },
+        "othryades": {
+            "name": "Othryades"
+        },
+        "pelias": {
+            "name": "Pelias",
+            "quote": {
+                "text": "Conan stared, spellbound; then a sound brought him round, sword lifted. The freed man was on his feet, surveying him. Conan gaped in wonder. No longer were the eyes in the worn face expressionless. Dark and meditative, they were alive with intelligence, and the expression of imbecility had dropped from the face like a mask. The head was narrow and well-formed, with a high splendid forehead. The whole build of the man was aristocratic, evident no less in his tall slender frame than in his small trim feet and hands. His first words were strange and startling.",
+                "origin": "The Scarlet Citadel"
+            }
+        },
+        "conan-warlord": {
+            "name": "Conan Warlord",
+            "quote": {
+                "text": "He stood facing her, his hand on the long hilt that jutted forward from beneath the scarlet cloak which flowed carelessly from his mailed shoulders. The torchlight glinted dully on the polished blue steel of his greaves and basinet. A more baleful fire glittered bluely in his eyes. At first glance she saw he was no Kothian; when he spoke she knew he was no Hyborian. He was clad like a captain of the mercenaries, and in that desperate command there were men of many lands, barbarians as well as civilized foreigners. There was a wolfishness about this warrior that marked the barbarian. The eyes of no civilized man, however wild or criminal, ever blazed with such a fire. Wine scented his breath, but he neither staggered nor stammered.",
+                "origin": "Black Colossus"
+            }
+        },
+        "conan-mercenary": {
+            "name": "Conan Mercenary",
+            "quote": {
+                "text": "The stranger stood there with his back to the mast, eyes narrowed alertly, sword ready. The shipman eyed him steadily, careful not to make any move toward the long knife in his belt. He saw a tall powerfully built figure in a black scalemail hauberk, burnished greaves and a blue-steel helmet from which jutted bull's horns highly polished. From the mailed shoulders fell the scarlet cloak, blowing in the sea-wind. A broad shagreen belt with a golden buckle held the scabbard of the broadsword he bore. Under the horned helmet a square-cut black mane contrasted with smoldering blue eyes",
+                "origin": "Queen of the Black Coast"
+            }
+        },
+        "conan-general": {
+            "name": "Conan The General",
+            "quote": {
+                "text": "At her command they brought harness to replace Conan's chain-mail – gorget, sollerets, cuirass, pauldrons, jambes, cuisses and sallet. When Yasmela again drew the curtains, a Conan in burnished steel stood before his audience. Clad in the platearmor, vizor lifted and dark face shadowed by the black plumes that nodded above his helmet, there was a grim impressiveness about him that even Thespides grudgingly noted. A jest died suddenly on Amalric's lips.\n\"By Mitra,\" said he slowly, \"I never expected to see you cased in coat-armor, but you do not put it to shame. By my fingerbones, Conan, I have seen kings who wore their harness less regally than you!\"",
+                "origin": "Black Colossus"
+            }
+        },
+        "savage-belit": {
+            "name": "Savage Bêlit",
+            "quote": {
+                "text": "Bêlit turned toward Conan, her bosom heaving, her eyes flashing. Fierce fingers of wonder caught at his heart. She was slender, yet formed like a goddess: at once lithe and voluptuous. Her only garment was a broad silken girdle. Her white ivory limbs and the ivory globes of her breasts drove a beat of fierce passion through the Cimmerian’s pulse, even in the panting fury of battle. Her rich black hair, black as a Stygian night, fell in rippling burnished clusters down her supple back. Her dark eyes burned on the Cimmerian.\nShe was untamed as a desert wind, supple and dangerous as a she-panther.",
+                "origin": "Queen of the Black Coast"
+            }
+        },
+        "conan-wanderer": {
+            "name": "Conan The Wanderer",
+            "quote": {
+                "text": "He saw a tall, strongly made youth standing beside him. This person was as much out of place in that den as a gray wolf among mangy rats of the gutters. His cheap tunic could not conceal the hard, rangy lines of his powerful frame, the broad heavy shoulders, the massive chest, lean waist and heavy arms. His skin was brown from outland suns, his eyes blue and smoldering; a shock of tousled black hair crowned his broad forehead. From his girdle hung a sword in a worn leather scabbard.",
+                "origin": "The Tower of the Elephant"
+            }
+        },
+        "gundermen-mercenaries": {
+            "name": "Gundermen Mercenaries"
+        },
+        "nestor": {
+            "name": "Nestor"
+        },
+        "kushite-mercenaries": {
+            "name": "Kushite Mercenaries"
+        },
+        "aja": {
+            "name": "Aja"
+        },
+        "hyrkanian-mercenaries": {
+            "name": "Hyrkanian Mercenaries"
+        },
+        "ganbaatar": {
+            "name": "Ganbaatar"
         }
     }
 }

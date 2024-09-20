@@ -224,6 +224,16 @@
     position: relative;
     text-align: center;
 }
+.dialog .spell .fields {
+    display: flex;
+}
+.dialog .spell .fields .field.name {
+    flex: 1;
+}
+.dialog .spell .fields .field.type {
+    width: 50px;
+}
+
 .dialog .spell .field.error {
     border-color: #FF0000;
 }
@@ -431,6 +441,38 @@
     width: 50%;
     display: inline-block;
     vertical-align: top;
+}
+
+.dialog .spell .type .ui-selectmenu-menu ul li:before {
+    content: " ";
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    background-position: center 42%;
+    background-size: 133%;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+.dialog .spell .type span[role=combobox] {
+    background-color: transparent !important;
+    background-position: center 36% !important;
+    background-size: 126% !important;
+    background-repeat: no-repeat !important;
+}
+
+.dialog .spell .type .ui-menu { overflow-y: hidden; }
+.dialog .spell .type .ui-selectmenu-text, .dialog .spell .type .ui-menu .ui-menu-item-wrapper { color: transparent; font-size: 1px; }
+.dialog .spell .type .ui-selectmenu-icon.ui-icon.ui-icon-triangle-1-s { background-image: none; }
+.dialog .spell .type .ui-menu-item, .dialog .spell .type .ui-menu-item-wrapper { height: 68px; position: relative; }
+.dialog .spell .type select ~ .ui-selectmenu-menu ul li:nth-child(1):before, .dialog .spell .type select[data-value=normal] + span { background-image: url(img/background-normal.webp) !important; }
+.dialog .spell .type select ~ .ui-selectmenu-menu ul li:nth-child(2):before, .dialog .spell .type select[data-value=versus] + span { background-image: url(img/background-versus.webp) !important; }
+.dialog .spell .type  {
+    margin-top: 0 !important;
+}
+.dialog .spell .type select + span {
+    height: 72px;
 }
 
 

@@ -364,6 +364,103 @@
             "textStyle": {
                 "textInter": 53
             }
+        },
+        "jade_wand": {
+            "title": "Bastone di Giada",
+            "text": "Scegli una singola unità in linea di vista. Per ogni gemma assegnata su Manipolazione (fino a 3), l'unità subisce una (1) ferita non salvabile. Uso una volta per turno \n\n\n\n\n\n",
+            "textStyle": {
+                "textInter": 72
+            },
+            "clarification": "Poiché le unità dell'Overlord non hanno Manipolazione, l'Overlord spende l'appropriato numero di gemme."
+        },
+        "rope": {
+            "title": "Corda",
+            "text": "Scarta questa carta per piazzare un segnalino Corda nella tua area.",
+            "clarification": "Ogni Eroe in un'area con un segnalino Corda, può eseguire una Manipolazione semplice per rimuovere il segnalino dal tabellone e piazzare la carta Corda nel proprio inventario."
+        },
+        "whip": {
+            "title": "Frusta",
+            "text": "Scarta questa carta per piazzare un segnalino Corda nella tua area.",
+            "clarification": "La Frusta è un'arma che può essere usata come una carta Corda negli scenari dove viene usato il segnalino Corda."
+        },
+        "bow_of_set": {
+            "title": "Arco di Set"
+        },
+        "shuko": {
+            "title": "Shoku"
+        },
+        "pipes_of_madness": {
+            "title": "Flauto della Follia"
+        },
+        "sorcerers_staff": {
+            "title": "Bastone dello Stregone"
+        },
+        "shuriken": {
+            "title": "Shuriken",
+            "text": "Può essere usata solo contro bersagli nella tua area o nelle aree adiacenti e in linea di vista",
+            "textStyle": {
+                "textSize": 84,
+                "textInter": 64
+            },
+            "clarification": "Le Shuriken sono delle armi leggere e a corto raggio, seguono tutte le regole standard per le armi da lancio (è richiesta la linea di vista, Intralcio, ecc...), ma possono essere usate solo per colpire bersagli nell'area dell'attaccante o in aree adiacenti.\nSono incluse anche le aree a differenti altezze che hanno un bonus sopraelevazione."
+        },
+        "harpoon": {
+            "title": "Arpione"
+        },
+        "black_stone": {
+            "title": "Pietra Nera"
+        },
+        "serpent_crown": {
+            "title": "Corona del Serpente",
+            "text": "Piazza 3 {gem_red} su questa carta. Un Eroe può usare queste gemme per usare l'abilità Comando. Durante la fase Iniziale del turno degli Eroi, riposiziona nuovamente le 3 {gem_red} sulla carta."
+        },
+        "tankard": {
+            "title": "Boccale"
+        },
+        "minor_life_potion": {
+            "title": "Pozione Curativa Minore"
+        },
+        "crowbill": {
+            "title": "Mazzapicchio"
+        },
+        "club": {
+            "title": "Mazza"
+        },
+        "lemurian_blade": {
+            "title": "Lama Lemuriana"
+        },
+        "rapier": {
+            "title": "Stocco"
+        },
+        "mace_of_ibis": {
+            "title": "Mazza di Ibis"
+        },
+        "two-handed_axe": {
+            "title": "Ascia a due Mani"
+        },
+        "hurlbat": {
+            "title": "Ascia da Lancio Hurlbat"
+        },
+        "stiletto": {
+            "title": "Stiletto"
+        },
+        "quiver": {
+            "title": "Faretra",
+            "text": "\n\n\n\n\nRiduce di 1 il valore di \ningombro di un Arco o di una Balestra equipaggiati",
+            "textStyle": {
+                "textSize": 89,
+                "textInter": 72
+            }
+        },
+        "heavy_armor": {
+            "title": "Armatura Pesante",
+            "text": "Ignora gli effetti di Colpo Preciso e Tiro di Precisione"
+        },
+        "nemedian_shield": {
+            "title": "Scudo Nemediano"
+        },
+        "stygian_shield": {
+            "title": "Scudo Stygiano"
         }
     }
 }

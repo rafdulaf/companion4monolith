@@ -44,6 +44,14 @@
             "title": "Récompenses \"Conquérant\" (2020)",
             "short": "Réc. Conqueror"
         },
+        "red-nails": {
+            "title": "Les Clous Rouges",
+            "short": "Clous Rouges"
+        },
+        "versus-mode": {
+            "title": "Mode Versus",
+            "short": "Mode Versus"
+        },
 
         "stygia": {
             "title": "Stygie",
@@ -64,6 +72,10 @@
         "red-brotherhood": {
             "title": "Contes de la Fraternité Rouge",
             "short": "Fraternité Rouge"
+        },
+        "worms-earth": {
+            "title": "Les Vers de la Terre",
+            "short": "Vers de la Terre"
         },
 
         "crossbowmen": {
@@ -113,7 +125,7 @@
 
         "campaignbook": {
             "title": "Livre de Campagne - La légende du diable d'Airain",
-            "short": "Livre de campagne"
+            "short": "Diable d'Airain"
         }, 
         "setbook": {
             "title": "Livre de Set",
@@ -135,6 +147,10 @@
         "xcbox": {
             "title": "Xavier Colette Box",
             "short": "Xavier Colette Box"
+        },
+        "fbox": {
+            "title": "Frazetta Box",
+            "short": "Frazetta Box"
         },
 
         "doorpack": {

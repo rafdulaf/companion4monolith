@@ -271,6 +271,88 @@
                 ],
                 "totopic": "https://the-overlord.com/index.php?/topic/4779-conqu%C3%A9rant-temple/"
             }
+        },
+        
+        "Jungle": {
+            "description": {
+                "title": "Jungle",
+                "rules": [
+                    {
+                        "title": "Eau profonde",
+                        "description": "Entrer dans une zone d’eau profonde ne coûte pas de point de mouvement supplémentaire. Une unité sans la compétence Natation entrant dans une zone d’eau profonde meurt immédiatement."
+                    }, {
+                        "title": "Gué",
+                        "description": "Entrer dans la zone de gué coûte 2 points de mouvement supplémentaires que l’unité ait ou non la compétence Natation. Cependant, si l’unité possède la compétence Escalade, il n’y a pas de coût supplémentaire."
+                    }, {
+                        "title": "Échelle de vigne (montée)",
+                        "description": "Une unité possédant la compétence Escalade peut dépenser 2 points de mouvement pour utiliser l’échelle de vigne et grimper au sommet de la falaise. Ce mouvement est affecté par le phénomène de gêne."
+                    }, {
+                        "title": "Échelle de vigne (descente)",
+                        "description": "Une unité peut utiliser une échelle de vigne depuis le sommet d’une falaise pour descendre vers la zone en contrebas en réalisant une Manipulation complexe de difficulté 2 (Héros) ou en dépensant 2 points de mouvement (Overlord). Ces valeurs sont réduites à 1 si l’unité possède la compétence Escalade."
+                    }, {
+                        "title": "Sommet de falaise",
+                        "description": "Sauter depuis le sommet d’une falaise inflige {dice_red}{dice_red}{dice_red} inévitables et {dice_red}{dice_red} si l’unité possède la compétence Saut."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119069-red-nails-jungle/"
+            }
+        },
+        
+        "Xuchotl": {
+            "description": {
+                "title": "Xuchotl",
+                "rules": [
+                    {
+                        "title": "Zones surélevées",
+                        "description": "Une unité peut monter sur l’autel, le chevalet de torture ou sur l’estrade pour 1 point de mouvement supplémentaire (sauf si elle utilise l’escalier pour l’estrade), qu’elle ait ou non la compétence Saut ou Escalade. Elle gagne la compétence Allonge tant qu’elle s’y trouve et bénéficie du bonus de surplomb de {dice_yellow} pour ses Attaques au corps-à-corps et à distance. En descendre ne coûte pas de point de mouvement supplémentaire."
+                    }, {
+                        "title": "Balcons",
+                        "description": "Sauter depuis un balcon inflige {dice_red}{dice_red} inévitables et {dice_red} si l’unité possède la compétence Saut. Monter directement sur un balcon depuis le niveau inférieur n’est pas possible."
+                    }, {
+                        "title": "Cellule",
+                        "description": "Une unité ne peut entrer ou sortir de la cellule que par la porte à gauche."
+                    }, {
+                        "title": "Murs",
+                        "description": "Les murs sont solides et ne peuvent pas être détruits en utilisant la compétence Défoncer les cloisons."
+                    }
+                ],
+                "totopic": "https://the-overlord.com/index.php?/topic/58564-clous-rouges-xuchotl/"
+            }
+        },
+        
+        "Fort_Tuscelan": {
+            "description": {
+                "title": "Fort Tuscelan",
+                "rules": [
+                    {
+                        "title": "Autour du fort",
+                        "description": "Les zones de part et d’autre des tours du fort sont séparées par une limite de zone et sont donc adjacentes."
+                    }, {
+                        "title": "Chemin de ronde",
+                        "description": "Sauter depuis le chemin de ronde inflige {dice_orange}{dice_orange}{dice_orange} inévitables, ou {dice_orange} si l’unité possède la compétence Saut. Il est impossible de remonter sur le chemin de ronde autrement que par une échelle. Les zones du chemin de ronde permettent de bénéficier du bonus de surplomb de {dice_yellow}."
+                    }, {
+                        "title": "Échelles",
+                        "description": "Grimper ou descendre d’une échelle coûte 1 point de mouvement supplémentaire, sauf pour les unités avec la compétence Escalade.<br/>Les Attaques au corps-à-corps sont possibles entre deux zones séparées par une échelle, avec ou sans la compétence Allonge. Dans ce cas, les Attaques au corps-à-corps depuis la zone surélevée vers la zone en contrebas bénéficient d’un bonus de surplomb de {dice_yellow}."
+                    }, {
+                        "title": "Sortir de l’eau",
+                        "description": "Une unité dans une zone d’eau peut en sortir pour 1 point de mouvement supplémentaire."
+                    }
+                ],
+                "totopic": "https://the-overlord.com/index.php?/topic/58565-versus-fort-tuscelan/"
+            }
+        },
+        
+        "Catacombs": {
+            "description": {
+                "title": "Catacombes",
+                "rules": [
+                    {
+                        "title": "Parois",
+                        "description": "Il n’est pas possible d’escalader les parois des catacombes."
+                    }                
+                ],
+                "totopic": "https://the-overlord.com/index.php?/topic/58566-versus-catacombes/"
+            }
         }
     },
 

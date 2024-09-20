@@ -913,6 +913,18 @@
         },
     
         {
+            "id": "black-dragons",
+            "thumb": ["data/models/img/black-dragons_sd.webp"],
+            "images": ["data/models/img/black-dragons_1.webp", "data/models/img/black-dragons_2.webp"],
+            "sculptor": { "name": "Gautier Giroud", "link": "https://www.facebook.com/gautier.giroud" },
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
+            "origins": ["versus-mode"],
+            "forum": "https://the-overlord.com/index.php?/topic/3727-peinture-montrez-moi-vos-dragons-noirs/",
+            "count": 5
+        },
+    
+        {
             "id": "the-black-ones",
             "thumb": ["data/models/img/the-black-ones_sd.webp"],
             "images": ["data/models/img/the-black-ones_1.webp", "data/models/img/the-black-ones_2.webp"],
@@ -934,6 +946,18 @@
             "origins": ["crossbowmen"],
             "forum": "https://the-overlord.com/index.php?/topic/3724-peinture-montrez-moi-vos-arbal%C3%A9triers/",
             "count": 10
+        },
+    
+        {
+            "id": "crossbowmen",
+            "thumb": ["data/models/img/crossbowmen_sd.webp"],
+            "images": ["data/models/img/crossbowmen_1.webp", "data/models/img/crossbowmen_2.webp"],
+            "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
+            "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
+            "type": "human",
+            "origins": ["versus-mode"],
+            "forum": "https://the-overlord.com/index.php?/topic/3724-peinture-montrez-moi-vos-arbal%C3%A9triers/",
+            "count": 5
         },
     
         {
@@ -1574,7 +1598,7 @@
         },
 
         {
-            "id": "baal-pteor",
+            "id": "baal-pteor-2",
             "thumb": "data/models/img/baal-pteor-2_sd.webp",
             "images": ["data/models/img/baal-pteor-2_1.webp"],
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
@@ -1715,6 +1739,268 @@
             "origins": ["shadow-kingdom"],
             "count": 10,
             "forum": "https://the-overlord.com/index.php?/topic/4631-peinture%C2%A0montrez-moi-vos-hommes-serpents/"
+        },
+        
+        {
+            "id": "conan-free-companion",
+            "thumb": "data/models/img/conan-free-companion_sd.webp",
+            "images": ["data/models/img/conan-free-companion_1.webp"],
+            "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
+            "paint": { "name": "Nicolas Deze", "link": "https://www.facebook.com/nikorasu.deze"},
+            "type": "human",
+            "origins": ["red-nails"],
+            "forum": "https://the-overlord.com/index.php?/topic/321-peinture-montrez-moi-vos-conan-par-crom/"
+        },
+        
+        {
+            "id": "valeria-free-companion",
+            "thumb": "data/models/img/valeria-free-companion_sd.webp",
+            "images": ["data/models/img/valeria-free-companion_1.webp"],
+            "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
+            "paint": { "name": "Nicolas Deze", "link": "https://www.facebook.com/nikorasu.deze"},
+            "type": "human",
+            "origins": ["red-nails"],
+            "forum": "https://the-overlord.com/index.php?/topic/682-peinture-montrez-moi-vos-val%C3%A9ria/"
+        },
+        
+        {
+            "id": "olmec",
+            "thumb": "data/models/img/olmec_sd.webp",
+            "images": ["data/models/img/olmec_1.webp"],
+            "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
+            "paint": { "name": "Rémy Tremblay", "link": "https://www.facebook.com/remy.tremblay.1232"},
+            "type": "human",
+            "origins": ["red-nails"],
+            "forum": "https://the-overlord.com/index.php?/topic/58551-peinture-montrez-moi-vos-olmec/"
+        },
+        
+        {
+            "id": "tascela",
+            "thumb": "data/models/img/tascela_sd.webp",
+            "images": ["data/models/img/tascela_1.webp"],
+            "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
+            "paint": null,
+            "type": "human",
+            "origins": ["red-nails"],
+            "forum": "https://the-overlord.com/index.php?/topic/58558-peinture-montrez-moi-vos-tascela/"
+        },
+        
+        {
+            "id": "techotl",
+            "thumb": "data/models/img/techotl_sd.webp",
+            "images": ["data/models/img/techotl_1.webp"],
+            "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
+            "paint": { "name": "Rémy Tremblay", "link": "https://www.facebook.com/remy.tremblay.1232"},
+            "type": "human",
+            "origins": ["red-nails"],
+            "forum": "https://the-overlord.com/index.php?/topic/58560-peinture-montrez-moi-vos-techotl/"
+        },
+        
+        {
+            "id": "tolkemec",
+            "thumb": "data/models/img/tolkemec_sd.webp",
+            "images": [],
+            "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
+            "paint": null,
+            "type": "human",
+            "origins": ["red-nails"],
+            "forumTODO": ""
+        },
+        
+        {
+            "id": "xotalanc-men",
+            "thumb": "data/models/img/xotalanc-men_sd.webp",
+            "images": ["data/models/img/xotalanc-men_1.webp"],
+            "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
+            "paint": null,
+            "type": "human",
+            "origins": ["red-nails"],
+            "count": 5,
+            "forum": "https://the-overlord.com/index.php?/topic/58542-peinture-montrez-moi-vos-chasseurs-xotalancas-lanciers-xotalancas/"
+        },
+        
+        {
+            "id": "xotalanc-women",
+            "thumb": "data/models/img/xotalanc-women_sd.webp",
+            "images": ["data/models/img/xotalanc-women_1.webp"],
+            "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
+            "paint": null,
+            "type": "human",
+            "origins": ["red-nails"],
+            "count": 5,
+            "forum": "https://the-overlord.com/index.php?/topic/58541-peinture-montrez-moi-vos-assassins-xotalancas-chasseuses-xotalancas-tlazitlans/"
+        },
+        
+        {
+            "id": "tecuhltli-swordsmen",
+            "thumb": "data/models/img/tecuhltli-swordsmen_sd.webp",
+            "images": ["data/models/img/tecuhltli-swordsmen_1.webp"],
+            "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
+            "paint": null,
+            "type": "human",
+            "origins": ["red-nails"],
+            "count": 5,
+            "forum": "https://the-overlord.com/index.php?/topic/58545-peinture-montrez-moi-vos-épéistes-tecuhltlis-tlazitlans/"
+        },
+        
+        {
+            "id": "xotalanc-warriors",
+            "thumb": "data/models/img/xotalanc-warriors_sd.webp",
+            "images": ["data/models/img/xotalanc-warriors_1.webp"],
+            "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
+            "paint": null,
+            "type": "human",
+            "origins": ["red-nails"],
+            "count": 6,
+            "forum": "https://the-overlord.com/index.php?/topic/58546-peinture-montrez-moi-vos-guerriers-xotalancas-tlazitlans/"
+        },
+        
+        {
+            "id": "dragon-xuchotl",
+            "thumb": ["data/models/img/dragon-xuchotl_sd.webp"],
+            "images": ["data/models/img/dragon-xuchotl_1.webp"],
+            "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
+            "paint": { "name": "Nicolas Deze", "link": "https://www.facebook.com/nikorasu.deze"},
+            "type": "monster",
+            "origins": ["red-nails"],
+            "forum": "https://the-overlord.com/index.php?/topic/58539-peinture-montrez-moi-votre-dragon-de-xuchotl/"
+        },
+        
+        {
+            "id": "flaming-skeletons",
+            "thumb": ["data/models/img/flaming-skeletons_sd.webp"],
+            "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
+            "paint": null,
+            "type": "monster",
+            "origins": ["red-nails"],
+            "count": 6,
+            "forum": "https://the-overlord.com/index.php?/topic/58543-peinture-montrez-moi-vos-crâne-ardent-squelettes-ardents/"
+        },
+        
+        {
+            "id": "crawler",
+            "thumb": ["data/models/img/crawler_sd.webp"],
+            "images": ["data/models/img/crawler_1.webp"],
+            "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
+            "paint": null,
+            "type": "monster",
+            "origins": ["red-nails"],
+            "forum": "https://the-overlord.com/index.php?/topic/58540-peinture-montrez-moi-votre-être-rampant/"
+        },
+        
+        {
+            "id": "crocodiles",
+            "thumb": ["data/models/img/crocodile_sd.webp"],
+            "images": ["data/models/img/crocodile_1.webp", "data/models/img/crocodile_2.webp"],
+            "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
+            "paint": null,
+            "type": "animal",
+            "origins": ["red-nails"],
+            "count": 5,
+            "forum": "https://the-overlord.com/index.php?/topic/58544-peinture-montrez-moi-vos-crocodiles/"
+        },
+        
+        {
+            "id": "pillar",
+            "thumb": ["data/models/img/pillar_sd.webp"],
+            "images": ["data/models/img/pillar_1.webp"],
+            "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
+            "paint": null,
+            "type": "scenery",
+            "origins": ["red-nails"],
+            "forum": "https://the-overlord.com/index.php?/topic/58552-peinture-montrez-moi-votre-pilier-18/"
+        },
+        
+        {
+            "id": "worms-of-the-earth",
+            "thumb": ["data/models/img/worms-of-the-earth_sd.webp"],
+            "images": ["data/models/img/worms-of-the-earth_1.webp"],
+            "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
+            "paint": null,
+            "type": "monster",
+            "origins": ["worms-earth"],
+            "count": 8,
+            "forum": "https://the-overlord.com/index.php?/topic/58550-peinture-montrez-moi-vos-serviteurs-de-bran-vers-de-la-terre/"
+        },
+        
+        {
+            "id": "atla",
+            "thumb": ["data/models/img/atla_sd.webp"],
+            "images": ["data/models/img/atla_1.webp", "data/models/img/atla_2.webp"],
+            "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
+            "paint": null,
+            "type": "human",
+            "origins": ["worms-earth"],
+            "forum": "https://the-overlord.com/index.php?/topic/58561-peinture-montrez-moi-vos-atla/"
+        },
+        
+        {
+            "id": "bran-mak-morn",
+            "thumb": ["data/models/img/bran-mak-morn_sd.webp"],
+            "images": ["data/models/img/bran-mak-morn_1.webp", "data/models/img/bran-mak-morn_2.webp"],
+            "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
+            "paint": null,
+            "type": "human",
+            "origins": ["worms-earth"],
+            "forum": "https://the-overlord.com/index.php?/topic/58562-peinture-montrez-moi-vos-bran-mak-morn/"
+        },
+        
+        {
+            "id": "conan-the-berserker",
+            "thumb": "data/models/img/conan-the-berserker_sd.webp",
+            "images": ["data/models/img/conan-the-berserker_1.webp"],
+            "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
+            "paint": { "name": "Elliott Abergel", "link": "https://www.facebook.com/elliott.abergel"},
+            "type": "human",
+            "origins": ["fbox"],
+            "forum": "https://the-overlord.com/index.php?/topic/321-peinture-montrez-moi-vos-conan-par-crom/"
+        },
+        
+        {
+            "id": "conan-the-destroyer",
+            "thumb": "data/models/img/conan-the-destroyer_sd.webp",
+            "images": ["data/models/img/conan-the-destroyer_1.webp"],
+            "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
+            "paint": { "name": "Elliott Abergel", "link": "https://www.facebook.com/elliott.abergel"},
+            "type": "human",
+            "origins": ["fbox"],
+            "forum": "https://the-overlord.com/index.php?/topic/321-peinture-montrez-moi-vos-conan-par-crom/"
+        },
+        
+        {
+            "id": "kushite-mercenaries",
+            "thumb": "data/models/img/kushite-mercenaries_sd.webp",
+            "images": ["data/models/img/kushite-mercenaries_1.webp"],
+            "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
+            "paint": { "name": "Elliott Abergel", "link": "https://www.facebook.com/elliott.abergel"},
+            "type": "human",
+            "origins": ["versus-mode"],
+            "count": 4,
+            "forum": "https://the-overlord.com/index.php?/topic/58547-peinture-montrez-moi-vos-mercenaires-kushites-aja/"
+        },
+        
+        {
+            "id": "gundermen-mercenaries",
+            "thumb": "data/models/img/gundermen-mercenaries_sd.webp",
+            "images": ["data/models/img/gundermen-mercenaries_1.webp"],
+            "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
+            "paint": { "name": "Elliott Abergel", "link": "https://www.facebook.com/elliott.abergel"},
+            "type": "human",
+            "origins": ["versus-mode"],
+            "count": 4,
+            "forum": "https://the-overlord.com/index.php?/topic/58549-peinture-montrez-moi-vos-mercenaires-gundermen-nestor/"
+        },
+        
+        {
+            "id": "hyrkanian-mercenaries",
+            "thumb": "data/models/img/hyrkanian-mercenaries_sd.webp",
+            "images": ["data/models/img/hyrkanian-mercenaries_1.webp"],
+            "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
+            "paint": { "name": "Elliott Abergel", "link": "https://www.facebook.com/elliott.abergel"},
+            "type": "human",
+            "origins": ["versus-mode"],
+            "count": 4,
+            "forum": "https://the-overlord.com/index.php?/topic/58548-peinture-montrez-moi-vos-mercenaires-hyrkaniens-ganbaatar/"
         }
     ]
 }

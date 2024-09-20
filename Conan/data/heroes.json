@@ -1258,7 +1258,7 @@
             "image_zoom": "111",
             "image_location": { "x": "7", "y": "64" },
             "model": "spartan",
-            "origins": ["monolith-site"],
+            "origins": ["monolith-site", "red-nails"],
             "pdf": "https://the-overlord.com/index.php?/files/file/18-fiche-h%C3%A9ro-du-sparte-sans-nom/"
         },
 
@@ -1830,7 +1830,7 @@
         },
         
         {
-            "id": "baal-pteor",
+            "id": "baal-pteor-2",
             "quote": {
                 "author": {
                     "name": "Robert E. Howard"
@@ -1858,7 +1858,7 @@
             "imageHD": "data/heroes/img/baal-pteor-2_hd.webp",
             "image_zoom": "109",
             "image_location": { "x": "6", "y": "56" },
-            "model": "baal-pteor",
+            "model": "baal-pteor-2",
             "origins": ["conqueror"]
         },
         
@@ -2467,6 +2467,564 @@
             "back": "blue",
             "model": "zelata-wanderer",
             "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "conan-free-companion",
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+            "class": [{"type": "warrior"}],
+
+            "gems": 11,
+            "encumbrance": [11, 8, 10],
+
+            "melee": { "dice": "red", "exertion": 5 },
+            "ranged": { "dice": "orange", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "2", "exertion": 4 },
+            "manipulation": { "dice": "orange", "exertion": 3 },
+
+            "skills": [
+                { "id": "climb", "exertion": 6 },
+                { "id": "swimming", "exertion": 6 },
+                { "id": "leap", "exertion": 8 },
+                { "id": "wall_wrecker" },
+                { "id": "leadership" },
+                { "id": "circular_strike" }
+            ],
+
+            "image": "data/heroes/img/conan-free-companion.webp",
+            "imageHD": "data/heroes/img/conan-free-companion_hd.webp",
+            "image_zoom": "90",
+            "image_location": { "x": "-15", "y": "50" },
+            "model": "conan-free-companion",
+            "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "valeria-free-companion",
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+            "class": [{"type": "mercenary"}],
+
+            "gems": 10,
+            "encumbrance": [10, 6, 8],
+
+            "melee": { "dice": "orangereroll", "exertion": 4 },
+            "ranged": { "dice": "yellow", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "2", "exertion": 4 },
+            "manipulation": { "dice": "yellowreroll", "exertion": 3 },
+
+            "skills": [
+                { "id": "feline_grace", "exertion": 5 },
+                { "id": "swimming", "exertion": 5 },
+                { "id": "climb", "exertion": 5 },
+                { "id": "leap", "exertion": 5 },
+                { "id": "ambidextrous", "exertion": 6 },
+                { "id": "counterattack", "exertion": 7 }
+            ],
+
+            "image": "data/heroes/img/valeria-free-companion.webp",
+            "imageHD": "data/heroes/img/valeria-free-companion_hd.webp",
+            "image_zoom": "108",
+            "image_location": { "x": "5", "y": "44" },
+            "model": "valeria-free-companion",
+            "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "techotl",
+            "quote": null,
+            "class": [{"type": "rogue"}],
+
+            "gems": 10,
+            "encumbrance": [10, 8, 9],
+
+            "melee": { "dice": "red", "exertion": 3 },
+            "ranged": { "dice": "yellowreroll", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "3", "exertion": 3 },
+            "manipulation": { "dice": "red", "exertion": 3 },
+
+            "skills": [
+                { "id": "feline_grace", "exertion": 6 },
+                { "id": "untouchable", "exertion": 6 },
+                { "id": "leap", "exertion": 8 },
+                { "id": "climb", "exertion": 8 },
+                { "id": "leadership" },
+                { "id": "lock_picking" }
+            ],
+
+            "image": "data/heroes/img/techotl.webp",
+            "imageHD": "data/heroes/img/techotl_hd.webp",
+            "image_zoom": "107",
+            "image_location": { "x": "5", "y": "50" },
+            "model": "techotl",
+            "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "olmec",
+            "quote": null,
+            "class": [{"type": "warrior"}],
+
+            "gems": 11,
+            "encumbrance": [11, 8, 10],
+
+            "melee": { "dice": "red", "exertion": 4 },
+            "ranged": { "dice": "yellowreroll", "exertion": 3 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "2", "exertion": 4 },
+            "manipulation": { "dice": "orange", "exertion": 3 },
+
+            "skills": [
+                { "id": "climb", "exertion": 6 },
+                { "id": "wall_wrecker", "exertion": 8 },
+                { "id": "leap", "exertion": 8 },
+                { "id": "support" },
+                { "id": "leadership" }
+            ],
+
+            "image": "data/heroes/img/olmec.webp",
+            "imageHD": "data/heroes/img/olmec_hd.webp",
+            "image_zoom": "94",
+            "image_location": { "x": "3", "y": "48" },
+            "model": "olmec",
+            "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "tascela",
+            "quote": null,
+            "class": [{"type": "sorcerer"}],
+
+            "gems": 10,
+            "encumbrance": [9, 7, 9],
+
+            "melee": { "dice": "yellowreroll", "exertion": 4 },
+            "ranged": { "dice": "yellowreroll", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "3", "exertion": 3 },
+            "manipulation": { "dice": "orange", "exertion": 4 },
+
+            "skills": [
+                { "id": "concentration", "exertion": 5 },
+                { "id": "spell_caster", "exertion": 7 },
+                { "id": "protected", "exertion": 7 },
+                { "id": "leadership" }
+            ],
+
+            "image": "data/heroes/img/tascela.webp",
+            "imageHD": "data/heroes/img/tascela_hd.webp",
+            "image_zoom": "105",
+            "image_location": { "x": "3.5", "y": "48" },
+            "model": "tascela",
+            "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "tolkemec",
+            "quote": null,
+            "class": [{"type": "sorcerer", "not-recommanded": true}],
+
+            "gems": 9,
+            "encumbrance": [8, 5, 7],
+
+            "melee": { "dice": "yellow", "exertion": 4 },
+            "ranged": { "dice": "yellowreroll", "exertion": 3 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "2", "exertion": 2 },
+            "manipulation": { "dice": "orange", "exertion": 4 },
+
+            "skills": [
+                { "id": "climb", "exertion": 5 },
+                { "id": "concentration", "exertion": 6 },
+                { "id": "spell_caster" }
+            ],
+
+            "image": "data/heroes/img/tolkemec.webp",
+            "imageHD": "data/heroes/img/tolkemec_hd.webp",
+            "image_zoom": "100",
+            "image_location": { "x": "4", "y": "51" },
+            "model": "tolkemec",
+            "origins": ["red-nails"]
+        },
+
+
+        {
+            "id": "drusus",
+            "class": [{"type": "warrior"}],
+
+            "gems": 11,
+            "encumbrance": [11, 8, 10],
+
+            "melee": { "dice": "orange", "exertion": 6 },
+            "ranged": { "dice": "orange", "exertion": 3 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "2", "exertion": 4 },
+            "manipulation": { "dice": "yellowreroll", "exertion": 3 },
+
+            "skills": [
+                { "id": "leap", "exertion": 7 },
+                { "id": "climb", "exertion": 8 },
+                { "id": "precision_strike", "exertion": 8 },
+                { "id": "untouchable", "exertion": 8 },
+                { "id": "counterattack", "exertion": 9 }
+            ],
+
+            "image": "data/heroes/img/drusus.webp",
+            "imageHD": "data/heroes/img/drusus_hd.webp",
+            "image_zoom": "111",
+            "image_location": { "x": "-8.5", "y": "64" },
+            "model": "spartan",
+            "origins": ["red-nails"],
+            "pdf": "https://the-overlord.com/index.php?/files/file/18-fiche-h%C3%A9ro-du-sparte-sans-nom/"
+        },
+
+        {
+            "id": "ageera",
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+            "class": [{"type": "warrior"}],
+
+            "gems": 11,
+            "encumbrance": [11, 8, 10],
+
+            "melee": { "dice": "red", "exertion": 5 },
+            "ranged": { "dice": "yellowreroll", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "2", "exertion": 4 },
+            "manipulation": { "dice": "orange", "exertion": 3 },
+
+            "skills": [
+                { "id": "climb", "exertion": 6 },
+                { "id": "untouchable", "exertion": 8 },
+                { "id": "leap", "exertion": 8 },
+                { "id": "wall_wrecker" },
+                { "id": "circular_strike" }
+            ],
+
+            "image": "data/heroes/img/ageera.webp",
+            "imageHD": "data/heroes/img/ageera_hd.webp",
+            "image_zoom": "100",
+            "image_location": { "x": "11", "y": "58" },
+            "model": "ageera",
+            "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "conan-the-rogue",
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+            "class": [{ "type": "rogue" }],
+
+            "gems": 10,
+            "encumbrance": [11, 8, 10],
+
+            "melee": { "dice": "orange", "exertion": 4 },
+            "ranged": { "dice": "orange", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "3", "exertion": 3 },
+            "manipulation": { "dice": "red", "exertion": 3 },
+
+            "skills": [
+                { "id": "feline_grace", "exertion": 6 },
+                { "id": "ambidextrous", "exertion": 7 },
+                { "id": "leap", "exertion": 7 },
+                { "id": "climb", "exertion": 7 },
+                { "id": "concentration" },
+                { "id": "lock_picking" }
+            ],
+
+            "image": "data/heroes/img/conan-the-rogue.webp",
+            "imageHD": "data/heroes/img/conan-the-rogue_hd.webp",
+            "image_zoom": "82",
+            "image_location": { "x": "8", "y": "52" },
+            "model": "conan-wanderer",
+            "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "bran-mak-morn",
+            "class": [{ "type": "warrior" }],
+
+            "gems": 12,
+            "encumbrance": [11, 8, 9],
+
+            "melee": { "dice": "orangereroll", "exertion": 4 },
+            "ranged": { "dice": "red", "exertion": 2 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "3", "exertion": 3 },
+            "manipulation": { "dice": "yellowreroll", "exertion": 3 },
+
+            "skills": [
+                { "id": "swimming", "exertion": 6 },
+                { "id": "climb", "exertion": 7 },
+                { "id": "ambidextrous", "exertion": 8 },
+                { "id": "leap", "exertion": 8 },
+                { "id": "leadership" },
+                { "id": "support" }
+            ],
+
+            "image": "data/heroes/img/bran-mak-morn.webp",
+            "imageHD": "data/heroes/img/bran-mak-morn_hd.webp",
+            "image_zoom": "114",
+            "image_location": { "x": "0", "y": "54" },
+            "model": "bran-mak-morn",
+            "origins": ["worms-earth"]
+        },
+        
+        {
+            "id": "atla",
+            "class": [{ "type": "sorcerer" }],
+
+            "gems": 11,
+            "encumbrance": [8, 5, 7],
+
+            "melee": { "dice": "yellow", "exertion": 4 },
+            "ranged": { "dice": "yellow", "exertion": 3 },
+            "defense": { "dice": "yellowreroll" },
+            "movement": { "base": "2", "exertion": 2 },
+            "manipulation": { "dice": "orange", "exertion": 3 },
+
+            "skills": [
+                { "id": "leap", "exertion": 5 },
+                { "id": "concentration", "exertion": 5 },
+                { "id": "spell_caster", "exertion": 5 }
+            ],
+
+            "image": "data/heroes/img/atla.webp",
+            "imageHD": "data/heroes/img/atla_hd.webp",
+            "image_zoom": "108",
+            "image_location": { "x": "0.5", "y": "57" },
+            "model": "atla",
+            "origins": ["worms-earth"]
+        },
+        
+        {
+            "id": "othna",
+            "class": [{ "type": "mercenary" }],
+
+            "gems": 9,
+            "encumbrance": [9, 6, 9],
+
+            "melee": { "dice": "yellowreroll", "exertion": 4 },
+            "ranged": { "dice": "orangereroll", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "2", "exertion": 3 },
+            "manipulation": { "dice": "yellowreroll", "exertion": 4 },
+
+            "skills": [
+                { "id": "climb", "exertion": 7 },
+                { "id": "leap", "exertion": 8 },
+                { "id": "untouchable", "exertion": 8 },
+                { "id": "precision_shot", "exertion": 8 },
+                { "id": "elite_shooter", "exertion": 8 }
+            ],
+
+            "image": "data/heroes/img/othna.webp",
+            "imageHD": "data/heroes/img/othna_hd.webp",
+            "image_zoom": "73",
+            "image_location": { "x": "-1", "y": "56" },
+            "model": "pict-archers",
+            "origins": ["worms-earth"]
+        },
+        
+        {
+            "id": "grom",
+            "class": [{ "type": "warrior" }],
+
+            "gems": 10,
+            "encumbrance": [10, 8, 10],
+
+            "melee": { "dice": "red", "exertion": 5 },
+            "ranged": { "dice": "orange", "exertion": 3 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "2", "exertion": 4 },
+            "manipulation": { "dice": "orange", "exertion": 3 },
+
+            "skills": [
+                { "id": "swimming", "exertion": 6 },
+                { "id": "leap", "exertion": 8 },
+                { "id": "untouchable", "exertion": 8 },
+                { "id": "climb", "exertion": 9 },
+                { "id": "wall_wrecker", "exertion": 11 },
+                { "id": "circular_strike" }
+            ],
+
+            "image": "data/heroes/img/grom.webp",
+            "imageHD": "data/heroes/img/grom_hd.webp",
+            "image_zoom": "89",
+            "image_location": { "x": "6", "y": "51" },
+            "model": "pict-warriors",
+            "origins": ["worms-earth"]
+        },
+        
+        {
+            "id": "conan-the-berserker",
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },            
+            "class": [{ "type": "warrior", "not-recommanded": true }],
+
+            "gems": 12,
+            "encumbrance": [11, 8, 10],
+
+            "melee": { "dice": "redreroll", "exertion": 5 },
+            "ranged": { "dice": "yellow", "exertion": 3 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "5", "exertion": 4 },
+            "manipulation": { "dice": "none", "exertion": 4 },
+
+            "skills": [
+                { "id": "evasive", "exertion": 6 },
+                { "id": "leap", "exertion": 8 },
+                { "id": "reach" },
+                { "id": "leadership" },
+                { "id": "circular_strike" }
+            ],
+
+            "image": "data/heroes/img/conan-the-berserker.webp",
+            "image_zoom": "147",
+            "image_location": { "x": "-8", "y": "66" },
+            "model": "conan-the-berserker",
+            "origins": ["fbox"]
+        },
+        
+        {
+            "id": "conan-the-destroyer",
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },            
+            "class": [{ "type": "warrior" }],
+
+            "gems": 12,
+            "encumbrance": [11, 8, 10],
+
+            "melee": { "dice": "red", "exertion": 5 },
+            "ranged": { "dice": "orange", "exertion": 3 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "2", "exertion": 4 },
+            "manipulation": { "dice": "orange", "exertion": 4 },
+
+            "skills": [
+                { "id": "swimming", "exertion": 6 },
+                { "id": "leap", "exertion": 8 },
+                { "id": "climb", "exertion": 8 },
+                { "id": "leadership" },
+                { "id": "circular_strike" }
+            ],
+
+            "image": "data/heroes/img/conan-the-destroyer.webp",
+            "image_zoom": "175",
+            "image_location": { "x": "-25", "y": "56" },
+            "model": "conan-the-destroyer",
+            "origins": ["fbox"]
+        },
+        
+        {
+            "id": "nestor",
+            "class": [{ "type": "warrior" }],
+
+            "gems": 10,
+            "encumbrance": [10, 6, 8],
+
+            "melee": { "dice": "orangereroll", "exertion": 4 },
+            "ranged": { "dice": "orangereroll", "exertion": 3 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "3", "exertion": 3 },
+            "manipulation": { "dice": "yellow", "exertion": 3 },
+
+            "skills": [
+                { "id": "feline_grace", "exertion": 6 },
+                { "id": "swimming", "exertion": 6 },
+                { "id": "leap", "exertion": 6 },
+                { "id": "precision_shot", "exertion": 8 },
+                { "id": "precision_strike" }
+            ],
+
+            "image": "data/heroes/img/nestor.webp",
+            "imageHD": "data/heroes/img/nestor_hd.webp",
+            "image_zoom": "93",
+            "image_location": { "x": "-7", "y": "51" },
+            "model": "gundermen-mercenaries",
+            "origins": ["versus-mode"]
+        },
+        
+        {
+            "id": "ganbaatar",
+            "class": [{ "type": "warrior" }],
+
+            "gems": 10,
+            "encumbrance": [12, 10, 12],
+
+            "melee": { "dice": "red", "exertion": 3 },
+            "ranged": { "dice": "yellow", "exertion": 3 },
+            "defense": { "dice": "red" },
+            "movement": { "base": "2", "exertion": 3 },
+            "manipulation": { "dice": "yellow", "exertion": 4 },
+
+            "skills": [
+                { "id": "untouchable", "exertion": 9 },
+                { "id": "climb", "exertion": 9 },
+                { "id": "leap", "exertion": 9 },
+                { "id": "bodyguard" },
+                { "id": "wall_wrecker" },
+                { "id": "circular_strike" }
+            ],
+
+            "image": "data/heroes/img/ganbaatar.webp",
+            "imageHD": "data/heroes/img/ganbaatar_hd.webp",
+            "image_zoom": "108",
+            "image_location": { "x": "-20", "y": "44" },
+            "model": "hyrkanian-mercenaries",
+            "origins": ["versus-mode"]
+        },
+        
+        {
+            "id": "aja",
+            "class": [{ "type": "mercenary" }],
+
+            "gems": 10,
+            "encumbrance": [10, 8, 10],
+
+            "melee": { "dice": "orange", "exertion": 3 },
+            "ranged": { "dice": "orange", "exertion": 5 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "3", "exertion": 4 },
+            "manipulation": { "dice": "orange", "exertion": 3 },
+
+            "skills": [
+                { "id": "swimming", "exertion": 6 },
+                { "id": "ambidextrous", "exertion": 8 },
+                { "id": "climb", "exertion": 8 },
+                { "id": "counterattack" },
+                { "id": "elite_shooter" }
+            ],
+
+            "image": "data/heroes/img/aja.webp",
+            "imageHD": "data/heroes/img/aja_hd.webp",
+            "image_zoom": "101",
+            "image_location": { "x": "-16", "y": "50" },
+            "model": "kushite-mercenaries",
+            "origins": ["versus-mode"]
         }
     ]
 }

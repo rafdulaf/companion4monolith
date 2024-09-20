@@ -501,29 +501,21 @@ function add()
         alert("Zone '" + action + "' already exists")
         return
     }
-    
-    var linksToAll = [];
-    for (let z in zones)
-	{
-    	let zone = zones[z];
-	    if (zone.centers && zone.centers.length > 0)
-    	{
-    	    for (let c = 0; c < zone.centers.length; c++)
-	    	{
-    	    	linksToAll.push("1#" + z + "#" + (c+1));
-	    	}
-    	}
-	    else
-	    {
-	    	linksToAll.push("1#" + z + "#0");
-	    }
-	}
-    
+
+    var action2 = prompt("Enter new zone area points [x, y], [x, y], [x, y], [x, y], [x, y]...")
+    if (!action2) return;
+
+    var action3 = prompt("Enter new zone area centers [x, y], [x, y]")
+    if (!action3) return;
+
+    var action4 = prompt("Enter new zone area level", 0)
+    if (!action4) return;
+        
     zones[action] = {
-        "area": [],
-        "centers": [],
-        "links": linksToAll,
-        "level": 0
+        "area": JSON.parse("[" + action2 + "]"),
+        "centers": JSON.parse("[" + action3 + "]"),
+        "links": [],
+        "level": parseInt(action4)
     }
         
     $("#zones")[0].value = stringify(zones);
@@ -737,6 +729,123 @@ function transform()
         
         $("#rules-conan")[0].value = stringify(rules);
     }
+    $("#zones")[0].value = stringify(zones);
+    displayZones();
+}
+
+function _parseLink(s)
+{
+    let a = s.indexOf("(");
+    if (a == -1)
+    {
+        return {
+            name: s,
+            center: "1"
+        };
+    }
+    else
+    {
+        return {
+            name: s.substring(0, a),
+            center: s.substring(a + 1, s.length - 1)
+        };
+    }
+}
+
+function addLinks()
+{
+    let zones;
+    try {
+        zones = JSON.parse($("#zones")[0].value)
+    }
+    catch (e) {
+        alert("Zones is not a correct json. Cannot apply any transformation.")
+        throw e;
+    }
+
+    var lines = prompt("Add lines of sight (ex: 1-2,1-3-4(2))");
+    for (let line of lines.split(","))
+    {
+        line = line.trim();
+        let zonesImplied = line.split("-");
+        for (let zoneImplied of zonesImplied)
+        {
+            let z = _parseLink(zoneImplied);
+            
+            if (!zones[z.name])
+            {
+                alert("There is no zone " + z.name);
+                throw new Error("There is no zone " + z.name);
+            }
+        }
+        
+        for (let zoneImplied of zonesImplied)
+        {
+            let z = _parseLink(zoneImplied);
+            
+            for (let zoneTarget of zonesImplied)
+            {
+                let z2 = _parseLink(zoneTarget);
+
+                let txt = z.center + "#" + z2.name + "#" + z2.center;
+                let index = zones[z.name].links.indexOf(txt);
+                if (z.name != z2.name && index == -1)
+                {
+                    zones[z.name].links.push(txt);
+                }
+            }
+        }
+    }
+    
+    $("#zones")[0].value = stringify(zones);
+    displayZones();
+}
+
+function removeLinks()
+{
+    let zones;
+    try {
+        zones = JSON.parse($("#zones")[0].value)
+    }
+    catch (e) {
+        alert("Zones is not a correct json. Cannot apply any transformation.")
+        throw e;
+    }
+
+    var lines = prompt("Remove lines of sight (ex: 1-2,1-3-4(2))");
+    for (let line of lines.split(","))
+    {
+        line = line.trim();
+        let zonesImplied = line.split("-");
+        for (let zoneImplied of zonesImplied)
+        {
+            let z = _parseLink(zoneImplied);
+            
+            if (!zones[z.name])
+            {
+                alert("There is no zone " + z.name);
+                throw new Error("There is no zone " + z.name);
+            }
+        }
+        
+        for (let zoneImplied of zonesImplied)
+        {
+            let z = _parseLink(zoneImplied);
+
+            for (let zoneTarget of zonesImplied)
+            {
+                let z2 = _parseLink(zoneTarget);
+
+                let txt = z.center + "#" + z2.name + "#" + z2.center;
+                let index = zones[z.name].links.indexOf(txt);
+                if (z.name != z2.name && index != -1)
+                {
+                    zones[z.name].links.splice(index, 1);
+                }
+            }
+        }
+    }
+    
     $("#zones")[0].value = stringify(zones);
     displayZones();
 }

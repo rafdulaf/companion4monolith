@@ -8,15 +8,19 @@
         },
         "overlord": {
             "title": "Libro dell'Overlord",
-            "shorttitle": "Overlord",
+            "shorttitle": "Over<wbr/>lord",
             "download": "https://the-overlord.net/index.php?/files/file/157-conan_king_overlordbook_v21_ita_txt/",
             "pages": 14
         },
-        "tomeofskelos": {
-            "title": "Libro di Skelos",
-            "shorttitle": "Skelos",
-            "download": "https://the-overlord.net/index.php?/files/file/173-tome-of-skelos-italian-translation-final-version-of-the-solocoop-rules/",
-            "pages": 12
+        "versus": {
+            "title": "Modalità Versus",
+            "shorttitle": "Versus",
+            "pages": 4
+        },
+        "coop": {
+            "title": "Modalità Solo/Coop",
+            "shorttitle": "Solo/<wbr/>Coop",
+            "pages": 6
         }
     }
 }

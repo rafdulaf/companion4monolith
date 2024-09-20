@@ -107,6 +107,18 @@
         },
         "trap-door": {
             "name": "Botola"
+        },
+        "rope": {
+            "name": "Corda"
+        },
+        "spectral-shroud": {
+            "name": "Sudario Spettrale"
+        },
+        "ossuary-cairn": {
+            "name": "Tumulo / Ossario"
+        },
+        "black-stone": {
+            "name": "Pietra Nera"
         }
     }
 }

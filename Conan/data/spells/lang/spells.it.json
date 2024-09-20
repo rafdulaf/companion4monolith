@@ -16,17 +16,41 @@
                 "textInter": 66
             }
         },
+        "borne_by_the_wind-versus": {
+            "title": "Trasportato dal vento",
+            "text": "Scegli un'unità in linea di vista, o te stesso. Il bersaglio guadagna l'abilità Volare fino alla fine del proprio turno.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
         "energy_drain": {
             "title": "Consuma energia",
-            "text": "Scegli un modello adiacente e in linea di vista.\nL'Eroe trasferisce una gemma dalla sua Riserva alla sua Fatica. L'Overlord recupera 3 gemme dalla sua Fatica.",
+            "text": "Scegli un modello adiacente e in linea di vista.\nL'Eroe trasferisce una gemma dalla propria Riserva alla sua Fatica. L'Overlord recupera 3 gemme dalla sua Fatica.",
             "textStyle": {
                 "textSize": 144,
                 "textInter": 66
             }
         },
+        "energy_drain-versus": {
+            "title": "Consuma energia",
+            "text": "Scegli un'unità in linea di vista, o te stesso. Il giocatore che controlla il bersaglio trasferisce una (1) gemma dalla propria Riserva alla sua Fatica e tu trasferisci 2 gemme dalla tua Fatica alla tua Riserva.",
+            "textStyle": {
+                "textSize": 144,
+                "textInter": 65
+            }
+        },
         "gift_of_life": {
             "title": "Dono della vita",
-            "text": "Scegli un Eroe in linea di vista.\nIl Mago trasferisce 2 gemme dalla propria Riserva a  quella del bersaglio.",
+            "text": "Scegli un Eroe in linea di vista.\nIl Mago trasferisce 2 gemme dalla propria Riserva a quella del bersaglio.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
+        "gift_of_life-versus": {
+            "title": "Dono della vita",
+            "text": "Trasferisci una gemma dalla tua Fatica a questa carta. Le gemme su questa carta non possono essere trasferite nella propria Fatica nella fase Finale, ma sono trasferite nella Riserva nella successiva fase di Recupero.",
             "textStyle": {
                 "textSize": 150,
                 "textInter": 66
@@ -56,6 +80,14 @@
                 "textInter": 66
             }
         },
+        "magical_dizziness-versus": {
+            "title": "Stordimento",
+            "text": "Scegli una tessera sul Fiume del tuo avversario. Il tuo avversario deve spendere una (1) gemma aggiuntiva per attivare questa tessera fino all'inizio del tuo prossimo turno.",
+            "textStyle": {
+                "textSize": 130,
+                "textInter": 65
+            }
+        },
         "mind_control": {
             "title": "Controllo mentale",
             "text": "Scegli un nemico non in linea di vista.\nMuovilo di un'area (+1 per ogni gemma spesa) secondo le regole del movimento e senza che questo gli procuri dei danni.",
@@ -73,6 +105,14 @@
                 "textInter": 66
             }
         },
+        "mitras_halo-versus": {
+            "title": "Aura di Mitra",
+            "text": "Scegli una tessera del tuo Fiume. Durante il turno del tuo avversario, puoi ritirare un (1) dado difesa gratuitamente per ciascuna unità di questa tessera. Questo incantesimo termina all'inizio del tuo prossimo turno.",
+            "textStyle": {
+                "textSize": 136,
+                "textInter": 66
+            }
+        },
         "mitras_healing": {
             "title": "Guarigione di Mitra",
             "text": "Scegli un Eroe (anche te stesso) nella tua area. Lancia {dice_orange_reroll}.\nIl risultato è il numero di gemme che l'Eroe trasferisce dalle sue Ferite alla sua Riserva.",
@@ -80,6 +120,14 @@
             "textStyle": {
                 "textSize": 150,
                 "textInter": 66
+            }
+        },
+        "mitras_healing-versus": {
+            "title": "Guarigione di Mitra",
+            "text": "Recupera un {dice_orange} punti vita, senza superare il valore iniziale.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 65
             }
         },
         "pestilential_swarm": {
@@ -98,11 +146,27 @@
                 "textInter": 65
             }
         },
+        "sets_bite-versus": {
+            "title": "Morso di Set",
+            "text": "Scegli un modello in lina di vista. Il giocatore che controlla il bersaglio trasferisce una (1) gemma dalla propria Riserva alla sua Fatica e il bersaglio subisce un danno di {dice_orange}{dice_orange} indifendibile.",
+            "textStyle": {
+                "textSize": 133,
+                "textInter": 70
+            }
+        },
         "sets_halo": {
             "title": "Aura di Set",
             "text": "Il Mago aumenta la sua Armatura di 1.\nL'Aura si dissipa all'inizio del turno del Mago dopo un suo turno di Recupero, oppure all'attivazione della tessera del Mago per l'Overlord.",
             "textStyle": {
                 "textSize": 136,
+                "textInter": 66
+            }
+        },
+        "sets_halo-versus": {
+            "title": "Aura di Set",
+            "text": "Scegli una tessera del tuo Fiume. Durante il turno dell'avversario, puoi ritirare un (1) dado difesa gratuitamente per ogni unità di questa tessera. Questo incantesimo termina all'inizio del tuo prossimo turno.",
+            "textStyle": {
+                "textSize": 150,
                 "textInter": 66
             }
         },
@@ -122,10 +186,18 @@
                 "textInter": 66
             }
         },
+        "telekinesis-versus": {
+            "title": "Telecinesi",
+            "text": "Scegli un'unità in linea di vista. Sposta il bersaglio di un'area nella tua direzione. Questo movimento non è influenzato da Intralcio.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
         "teleportation": {
             "title": "Teletrasporto",
-            "text": "Per ogni gemma spesa oltre il costo del Teletrasporto, il Mago può spostarsi di un'area.\nQuesto movimento non è affetto da ostacoli.",
-            "clarification": " Il movimento del Mago non è influenzato nè da intralcio né dall'abilità Bloccare.",
+            "text": "Per ogni gemma spesa oltre il costo del Teletrasporto, il Mago può spostarsi di un'area.\nQuesto movimento non è influenzato da ostacoli.",
+            "clarification": " Il movimento del Mago non è influenzato nè da Intralcio né dall'abilità Bloccare.",
             "textStyle": {
                 "textSize": 150,
                 "textInter": 66
@@ -137,6 +209,14 @@
             "textStyle": {
                 "textSize": 130,
                 "textInter": 66
+            }
+        },
+        "archer_of_acheron-versus": {
+            "title": "Dardo di Acheron",
+            "text": "Scegli un'unità in linea di vista. Migliora un solo dado a scelta della sua capacità Attacco a distanza fino alla fine del tuo turno (da giallo ad arancione o da  arancione a rosso). Se il dado è rilanciabile, resta tale.",
+            "textStyle": {
+                "textSize": 142,
+                "textInter": 70
             }
         },
         "bad_luck": {
@@ -185,6 +265,14 @@
             "textStyle": {
                 "textSize": 130,
                 "textInter": 64
+            }
+        },
+        "changing_destiny-versus": {
+            "title": "Destino mutevole",
+            "text": "Scegli una tessera del Fiume dell'avversario. Il tuo avversario non può attivare questa tessera fino all'inizio del tuo prossimo turno.",
+            "textStyle": {
+                "textSize": 140,
+                "textInter": 66
             }
         },
         "dagons_attack": {
@@ -252,9 +340,25 @@
                 "textInter": 64
             }
         },
+        "escape_route-versus": {
+            "title": "Via di fuga",
+            "text": "Scegli un'unità in linea di vista. Migliora l'Armatura del bersaglio di 1 fino all'inizio del tuo prossimo turno.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
         "fleet_runner": {
             "title": "Pie' veloce",
             "text": "Scegli un personaggio in linea di vista.\nIl bersaglio aumenta di 1 il punteggio base e il punteggio limite del suo Movimento fino alla fine del turno del Mago.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
+        "fleet_runner-versus": {
+            "title": "Pie' veloce",
+            "text": "Scegli una tessera del tuo Fiume. Le unità di questa tessera guadagnano l'abilità Inafferrabile fino alla fine del tuo turno.",
             "textStyle": {
                 "textSize": 150,
                 "textInter": 66
@@ -266,6 +370,14 @@
             "textStyle": {
                 "textSize": 130,
                 "textInter": 64
+            }
+        },
+        "gullahs_strength-versus": {
+            "title": "Ferocia di Gullah",
+            "text": "Scegli un'unità in linea di vista. Scegli uno dei dadi e migliora la capacità di Attacco in mischia (da giallo ad arancione o da arancione a rosso) fino alla fine del tuo turno. Se il dado è rilanciabile, resta tale.",
+            "textStyle": {
+                "textSize": 148,
+                "textInter": 63
             }
         },
         "gwahlurs_darkness": {
@@ -327,6 +439,14 @@
         "life_transfer": {
             "title": "Trasferimento vitale",
             "text": "Scegli un Eroe e un suo Alleato in linea di vista. Sacrifica l'Alleato (rimuovendolo dal gioco) per trasferire 2 gemme dalle Ferite del Mago alla sua Fatica.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
+        "life_transfer-versus": {
+            "title": "Trasferimento vitale",
+            "text": "Scegli un'area in linea di vista. Recuperi un (1) punto vita per ogni unità amica in quell'area, senza eccedere il valore iniziale. Poi, tutte le unità amiche in quell'area sono uccise.",
             "textStyle": {
                 "textSize": 150,
                 "textInter": 66
@@ -572,6 +692,51 @@
             "textStyle": {
                 "textSize": 139,
                 "textInter": 78
+            }        
+        },
+        "soul_leech": {
+            "title": "Risucchio dell'Anima",
+            "text": "Scegli un Eroe o un Alleato nella tua area che subisce un (1) danno indifendibile. Tu guadagni un (1) punto vita. I tuoi punti vita non possono eccedere il punteggio iniziale.",
+            "textStyle": {
+                "textSize": 151,
+                "textInter": 72
+            }        
+        }
+        ,
+        "enthrallment": {
+            "title": "Seduzione",
+            "text": "Non puoi essere attaccato dai nemici nella tua area fino all'inizio della tuo prossimo turno o attivazione.",
+            "textStyle": {
+                "textSize": 139,
+                "textInter": 77
+            }        
+        }
+        ,
+        "eldritch_lance": {
+            "title": "Lancia Arcana",
+            "text": "Attacca un'unità in linea di vista; tira {dice_red}{dice_orange} e diminuisci di un (1) punto il valore di Aramtura del bersaglio. Se la potenza di attacco è maggiore della difesa, il difensore subisce un danno pari alla differenza dei due valori.",
+            "textStyle": {
+                "textSize": 141,
+                "textInter": 70
+            }        
+        }
+        ,
+        "spectral_shroud": {
+            "title": "Sudario Spettrale",
+            "text": "Piazza 3 segnalini {token_spectral-shroud} su questa carta (o riporta a 3 il valore). Ogni volta che subisci uno o più danni, rimuovi un segnalino {token_spectral-shroud} per evitare di subire quel danno.",
+            "textStyle": {
+                "textSize": 126,
+                "textInter": 90
+            },
+            "clarification": "Rimuovere segnalini per evitare i danni (danni dovuti ad attacchi, cadute, indifendibili...) non è opzionale."
+        }
+        ,
+        "protective_circle": {
+            "title": "Cerchio Protettivo",
+            "text": "I nemici non possono muoversi nella tua area o affettuare attacchi in Mischia fino al tuo prossimo turno o attivazione.",
+            "textStyle": {
+                "textSize": 146,
+                "textInter": 68
             }        
         }
     }

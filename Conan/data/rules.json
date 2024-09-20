@@ -9,8 +9,14 @@
             "origins": ["corebox"]
         },
         {
-            "id": "tomeofskelos",
-            "origins": ["conqueror"]
+            "id": "coop",
+            "origins": ["tomeofskelos", "red-nails", "worms-earth"],
+            "pageOneAtLeft": true
+        },
+        {
+            "id": "versus",
+            "origins": ["versus-mode"],
+            "pageOneAtLeft": true
         }
     ]
 }

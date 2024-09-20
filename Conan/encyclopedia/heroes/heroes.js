@@ -222,6 +222,7 @@ var EncyclopediaHeroes = {
             id: hero.id + "-" + Math.random(),
             name: hero.name,
             subname: hero.subname ? hero.subname : "",
+            subnameSize: hero.subnameSize ? hero.subnameSize : "60",
 
             image: hero.imageHD && hd ? hero.imageHD + "?version=" + Version : (hero.image ? hero.image + "?version=" + Version : null),
             imagelocation: hero.image_location || {x: "0", y: "50"},

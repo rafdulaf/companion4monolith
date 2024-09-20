@@ -62,5 +62,11 @@ EncyclopediaTiles._facets = {
         'label': "Attack ~",
         'to': "to",
         'axes': "axes"
+    },
+    'reinforcement': {
+        'label': "Reinforcement",
+        'values': {
+            'without': { 'label': "None" }
+        }
     }
 };

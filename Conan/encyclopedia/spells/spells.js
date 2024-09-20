@@ -128,6 +128,15 @@ var EncyclopediaSpells = {
             },
 
             {
+                id:'type',
+                values: [ { id: "normal" }, { id: "versus" } ],
+                filter: function(item, selectedValues) {
+                    return ((!item.type || item.type == "normal") && (selectedValues.indexOf('normal')!=-1))
+                        || (item.type == "versus" && (selectedValues.indexOf('versus')!=-1));
+                }
+            },
+
+            {
                 id:'empty',
                 values: [ { id: "no", defaults: true }, { id: "yes" } ],
                 filter: function(item, selectedValues) {
@@ -217,6 +226,7 @@ var EncyclopediaSpells = {
         return {
             id: spell.id + "-" + Math.random(),
             name: (spell2 || spell).title,
+            type: spell.type,
             longName: (spell2 || spell).titleLong,
             text: (spell2 || spell).text,
             textSize: (spell2 || spell).textStyle.textSize,
@@ -273,10 +283,10 @@ var EncyclopediaSpells = {
         for (var i in Encyclopedia.spells.list)
         {
             var spell = Encyclopedia.spells.list[i];
-            if (!spellsIds[tokenId] && spell.tokens && spell.tokens.indexOf(tokenId) >= 0)
+            if (!spellsIds[spell.id] && spell.tokens && spell.tokens.indexOf(tokenId) >= 0)
             {
                 spells.push(spell);
-                spellsIds[tokenId] = true;
+                spellsIds[spell.id] = true;
             }
         }
 
@@ -314,6 +324,12 @@ var EncyclopediaSpells = {
             if (originString) originString += " " + EncyclopediaSpells._i18n.fromAnd + " ";
             originString += Encyclopedia._getOrigin(i) + " (" + originsCount[i] + " " + (originsCount[i] == 1 ? EncyclopediaSpells._i18n.card : EncyclopediaSpells._i18n.cards) + ")";
         }
+        
+        var forVersus = "";
+        if (spell.type == "versus")
+        {
+            forVersus = "<div class='from'>" + EncyclopediaSpells._i18n.forVersus + "</div>";
+        }
 
         var tokens = "";
         if (spell.tokens)
@@ -350,6 +366,7 @@ var EncyclopediaSpells = {
                 + (spell2 ? CardSpell._cardCode(EncyclopediaSpells._convertSpellToStudio(spell, spell2)) : '')
                 + "<div class='minwidth'></div>"
                 + "<div class='from'>" + EncyclopediaSpells._i18n.from + " " + originString + "</div>"
+                + forVersus
                 + ((spell && spell.clarification) ?"<div class='clarification'>" + EncyclopediaSpells._i18n.clarification + " " + spell.clarification.replace(/\n/g, "<br/>") + "</div>" : "")
                 + ((spell2 && spell2.clarification) ?"<div class='clarification'>" + EncyclopediaSpells._i18n.clarification + " " + spell2.clarification.replace(/\n/g, "<br/>") + "</div>" : "")
                 + (spell.forSkill ? "<div class='skill'>" + EncyclopediaSpells._i18n.skill + " " + Rules._linkToSkill(spell.forSkill, true) + "</div>" : "")
