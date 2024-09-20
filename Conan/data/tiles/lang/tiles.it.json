@@ -444,6 +444,13 @@
                 "origin": "Conan il Conquistatore"
             }
         },
+        "crossbowmen-blue": {
+            "name": "Balestrieri",
+            "quote": {
+                "text": "Il Re e i suoi marciarono a Occidente, alla testa di cinquantamila uomini: cavalieri con le armature fulgide e i gagliardetti spiegati alti sulle lance, fanti in elmo d'acciaio e brigantina, balestrieri in giustacuore di cuoio.",
+                "origin": "Conan il Conquistatore"
+            }
+        },
         "demon-of-the-earth": {
             "name": "Demone della Terra",
             "quote": {
@@ -564,6 +571,13 @@
                 "origin": "Conan il Conquistatore"
             }
         },
+        "crows-2": {
+            "name": "Corvi",
+            "quote": {
+                "text": "Mentre superava l'orlo della depressione, udì alto sulla sua testa uno scoppio di grida rauche; guardando in su, vide il corvo che volteggiava su di lui, gracchiando senza interruzione. E, mentre Conan galoppava, il corvo lo seguiva, mantenendo la propria posizione e rovinandogli la mattinata con grida stridule, a dispetto di ogni sforzo per cacciarlo via.\nLa cosa continuò per ore, e alla fine i nervi di Conan erano a fior di pelle: si sentiva disposto a dare metà del suo regno, pur di torcere quel collo scuro. — Demoni dell'inferno! — ruggiva vanamente, agitando in direzione di quell'uccello impazzito il pugno rivestito di maglia di ferro. — Perché mi perseguiti con i tuoi versacci? Vattene, maledetto figlio della perdizione, vattene dai contadini a beccare il grano dei campi!",
+                "origin": "Conan il Conquistatore"
+            }
+        },
         "wolves": {
             "name": "Lupi",
             "quote": {
@@ -635,6 +649,9 @@
             "name": "Guardie Eterne"
         },
         "assassins": {
+            "name": "Assassini"
+        },
+        "assassins-red": {
             "name": "Assassini"
         },
         "hoplites": {
@@ -894,7 +911,7 @@
         "asgrim": {
             "name": "Asgrim"
         },
-        "atla": {
+        "atla-gotn": {
             "name": "Atla"
         },
         "bragi": {
@@ -1103,6 +1120,246 @@
         },
         "injured-surt": {
             "name": "Surt Ferito"
+        },
+        "xotalanc-spearmen": {
+            "name": "Lancieri di Xotalanc"
+        },
+        "xotalanc-hunters": {
+            "name": "Cacciatori di Xotalanc"
+        },
+        "xotalanc-assassins": {
+            "name": "Assassini di Xotalanc"
+        },
+        "xotalanc-huntresses": {
+            "name": "Cacciatrici di Xotalanc"
+        },
+        "dragon-xuchotl": {
+            "name": "Drago di Xuchotl"
+        },
+        "dragon-2": {
+            "name": "Drago",
+            "quote": {
+                "text": "Dal macchione si sporse la testa di un essere d'incubo e di follia. Le fauci socchiuse lasciavano snudate file e file di gialle zanne sgocciolanti; al disopra della bocca, il muso grinzoso era quello di un rettile. Gli enormi occhi, simili agli occhi di un pitone ma ingranditi mille volte, fissavano i due esseri umani, che, impietriti, si tenevano aggrappati alla roccia, più in alto. Del sangue macchiava le labbra, flaccide e squamose, e sgocciolava dall'enorme bocca.\nLa testa, più grande di quella di un coccodrillo, s'innestava su un lungo collo a scaglie sovrastato da file di creste appuntite: il corpo, che schiacciava rovi e arboscelli, era quello di un titano, con un torace gigantesco a forma di botte sorretto da zampe assurdamente corte. Il ventre biancastro sfiorava quasi il suolo, e la spina dorsale crestata era così alta che Conan avrebbe stentato a sfiorarla anche alzandosi in punta di pie Una lunga coda uncinata, come quella di un colossale scorpione, si trascinava al suolo.",
+                "origin": "Chiodi Rossi"
+            }
+        },
+        "burning-skull": {
+            "name": "Teschio Ardente"
+        },
+        "flaming-skeletons": {
+            "name": "Scheletri Maledetti"
+        },
+        "tecuhltli-swordsmen": {
+            "name": "Spadaccino di Tecuhltli"
+        },
+        "crawler": {
+            "name": "Strisciante"
+        },
+        "olmec": {
+            "name": "Olmec"
+        },
+        "tascela": {
+            "name": "Tascela"
+        },
+        "tolkemec": {
+            "name": "Tolkemec"
+        },
+        "xotalanc-warriors": {
+            "name": "Guerrieri di Xotalanc"
+        },
+        "kushite-warriors": {
+            "name": "Guerrieri Kushiti"
+        },
+        "techotl": {
+            "name": "Techotl"
+        },
+        "stygian-captain": {
+            "name": "Capitano Stigiano"
+        },
+        "conan-free-companion": {
+            "name": "Conan Compagno di ventura",
+            "quote": {
+                "text": "Arus lanciò un'occhiata nervosa alle ampie spalle, al torace massiccio e alle forti braccia. Una sola occhiata ai lineamenti severi e alle spesse sopracciglia gli bastò per capire che l'uomo non era un nemediano. Sotto il ciuffo arruffato di capelli neri covavano due pericolosi occhi azzurri. Una lunga spada, chiusa in un fodero di cuoio, gli pendeva dalla cintura.",
+                "origin": "Il Dio nell'urna"
+            }
+        },
+        "valeria-free-companion": {
+            "name": "Valeria Compagna di ventura",
+            "quote": {
+                "text": "Era alta, col seno colmo, le membra robuste e le spalle solide. La sua figura irradiava una forza eccezionale, senza per questo sminuire la femminilità del suo aspetto. Era interamente donna, nonostante il portamento e l'abito. Anziché una gonna, portava brache di seta corte e larghe che le arrivavano a una spanna dal ginocchio, trattenute da un'ampia fusciacca di seta che fungeva da cintura. Gli stivali svasati di pelle morbida le arrivavano fin quasi alle ginocchia, e una camicia serica scollata e dalle maniche ampie completava il suo abbigliamento. Nei suoi grandi occhi c'era il colore del mare. E questo era giusto, perché era Valeria della Confraternita Rossa, le cui imprese vengono celebrate in canti e ballate dovunque si radunano i navigatori.\n“Perché voi uomini non volete saperne di lasciarmi vivere una vita da uomo?”\n“Nessun uomo al mondo sarebbe stato in grado di disarmare a mani nude Valeria della Confraternita Rossa.”",
+                "origin": "Chiodi Rossi"
+            }
+        },
+        "soulless": {
+            "name": "Senzanima",
+            "quote": {
+                "text": "Del gruppo, dieci erano sacerdoti, e anche se si erano tolti le maschere, Conan era sicuro che si trattasse dei sacerdoti che lo avevano accompagnato alla piramide. Erano tutti fermi davanti a un uomo alto e dal volto aquilino; a fianco dell'uomo c'era un altare nero su cui era deposta una mummia avvolta in fasciature quasi disfatte.",
+                "origin": "Conan il Conquistatore"
+            }
+        },
+        "xuchotlan-archers": {
+            "name": "Arcieri di Xuchotlan"
+        },
+        "crocodiles": {
+            "name": "Coccodrilli"
+        },
+        "tlazitlans": {
+            "name": "Tlazitlani"
+        },
+        "worms-of-the-earth": {
+            "name": "Vermi della Terra"
+        },
+        "brans-servants": {
+            "name": "Servi di Bran"
+        },
+        "atla": {
+            "name": "Atla"
+        },
+        "bran-mak-morn": {
+            "name": "Bran Mak Morn"
+        },
+        "drusus": {
+            "name": "Drusus"
+        },
+        "conan-the-berserker": {
+            "name": "Conan Il Berserker",
+            "quote": {
+                "text": "Arus lanciò un'occhiata nervosa alle ampie spalle, al torace massiccio e alle forti braccia. Una sola occhiata ai lineamenti severi e alle spesse sopracciglia gli bastò per capire che l'uomo non era un nemediano. Sotto il ciuffo arruffato di capelli neri covavano due pericolosi occhi azzurri. Una lunga spada, chiusa in un fodero di cuoio, gli pendeva dalla cintura.",
+                "origin": "Il Dio dell'Urna"
+            }
+        },
+        "conan-the-destroyer": {
+            "name": "Conan Il Distruttore",
+            "quote": {
+                "text": "Arus lanciò un'occhiata nervosa alle ampie spalle, al torace massiccio e alle forti braccia. Una sola occhiata ai lineamenti severi e alle spesse sopracciglia gli bastò per capire che l'uomo non era un nemediano. Sotto il ciuffo arruffato di capelli neri covavano due pericolosi occhi azzurri. Una lunga spada, chiusa in un fodero di cuoio, gli pendeva dalla cintura.",
+                "origin": "Il Dio dell'Urna"
+            }
+        },
+        "spectral-guards": {
+            "name": "Guardie Spettrali"
+        },
+        "veteran-bossonians": {
+            "name": "Veterani Bossoniani"
+        },
+        "guardians": {
+            "name": "Guardiani"
+        },
+        "pict-bloddhounds": {
+            "name": "Segugi dei Pitti"
+        },
+        "pict-trackers": {
+            "name": "Battipista dei Pitti"
+        },
+        "black-dragons-2": {
+            "name": "Dragoni Neri",
+            "quote": {
+                "text": "Poi un guazzabuglio di voci gli giunse alle orecchie e la stanza si riempì di gente: signori, cavalieri, dame, armigeri, consiglieri, tutti vociavano e gridavano, ostacolandosi l'un l'altro. I Dragoni Neri, furiosi di rabbia, imprecavano e si agitavano, stringendo l'elsa della spada e imprecando a mezza voce.",
+                "origin": "La Fenice sulla Lama"
+            }
+        },
+        "elite-black-dragons": {
+            "name": "Elite dei Dragoni Neri",
+            "quote": {
+                "text": "Poi un guazzabuglio di voci gli giunse alle orecchie e la stanza si riempì di gente: signori, cavalieri, dame, armigeri, consiglieri, tutti vociavano e gridavano, ostacolandosi l'un l'altro. I Dragoni Neri, furiosi di rabbia, imprecavano e si agitavano, stringendo l'elsa della spada e imprecando a mezza voce.",
+                "origin": "La Fenice sulla Lama"
+            }
+        },
+        "risen-corpses": {
+            "name": "Morti viventi",
+            "quote": {
+                "text": "Del gruppo, dieci erano sacerdoti, e anche se si erano tolti le maschere, Conan era sicuro che si trattasse dei sacerdoti che lo avevano accompagnato alla piramide. Erano tutti fermi davanti a un uomo alto e dal volto aquilino; a fianco dell'uomo c'era un altare nero su cui era deposta una mummia avvolta in fasciature quasi disfatte.",
+                "origin": "Conan il Conquistatore"
+            }
+        },
+        "bandits": {
+            "name": "Banditi",
+            "quote": {
+                "text": "— Pirati! — mormorò Conan, con un sorriso torvo sulle labbra sottili. (...) Erano una settantina: un'orda selvaggia di uomini provenienti da molte nazioni, kothiani, zamoriani, brythuni, corinzi, shemiti. I volti rispecchiavano indoli feroci. Molti mostravano le cicatrici delle fruste e dei marchi d'infamia. C'erano orecchie mozze, nasi squarciati, occhiaie cieche, polsi troncati… segni lasciati dal boia, e non solo dalle battaglie. Erano quasi tutti seminudi, ma gli indumenti che portavano erano splendidi: giubbe gallonate d'oro, cinture seriche, brache di raso, rovinate e sporche di catrame e di sangue, gareggiavano in lusso con le armi intarsiate d'argento. Le gemme brillavano sui nasi e alle orecchie, e sulle impugnature delle daghe.",
+                "origin": "Ombre al Chiaro di Luna"
+            }
+        },
+        "the-dead": {
+            "name": "La Morte",
+            "quote": {
+                "text": "In un angolo della cella, vicino alla porta da cui erano entrati, un mucchio di catene arrugginite pendeva da un basso anello di ferro incastrato nella pietra, e tra le catene si scorgevano le forme di uno scheletro. Conan lo osservò con una certa curiosità, notando lo stato di quelle ossa spoglie, alcune delle quali erano spezzate. Il teschio, caduto dalle vertebre, appariva schiacciato da un colpo vibrato con forza selvaggia, terribile.",
+                "origin": "Conan il Conquistatore"
+            }
+        },
+        "the-undead": {
+            "name": "Il Nonmorto",
+            "quote": {
+                "text": "In un angolo della cella, vicino alla porta da cui erano entrati, un mucchio di catene arrugginite pendeva da un basso anello di ferro incastrato nella pietra, e tra le catene si scorgevano le forme di uno scheletro. Conan lo osservò con una certa curiosità, notando lo stato di quelle ossa spoglie, alcune delle quali erano spezzate. Il teschio, caduto dalle vertebre, appariva schiacciato da un colpo vibrato con forza selvaggia, terribile.",
+                "origin": "Conan il Conquistatore"
+            }
+        },
+        "revenants": {
+            "name": "Ritornanti"
+        },
+        "bog-ghouls": {
+            "name": "Ghouls delle Paludi"
+        },
+        "othryades": {
+            "name": "Othryades"
+        },
+        "pelias": {
+            "name": "Pelias",
+            "quote": {
+                "text": "Conan guardava come preso da un incantesimo; poi un suono lo fece voltare, la spada sollevata. Il prigioniero si era alzato in piedi e lo osservava. Conan rimase a bocca aperta per la meraviglia. Gli occhi, in quel volto esausto, non erano più vacui. Neri e pensosi, brillavano di intelligenza e l'espressione di imbecillità era caduta dal volto come una maschera. La testa dell'uomo era piccola e ben modellata, con una fronte alta e superba. L'intera costituzione dell'uomo era aristocratica, tanto nell'alta e snella ossatura, quanto nei piccoli piedi ben fatti e nelle mani. Le prime parole che pronunciò suonarono strane e stupefacenti.",
+                "origin": "La Cittadella Scarlatta"
+            }
+        },
+        "conan-warlord": {
+            "name": "Conan Signore della Guerra",
+            "quote": {
+                "text": "Lo sconosciuto si fermò davanti a lei, la mano posata sulla lunga elsa che sporgeva dal manto scarlatto gettato con disinvoltura sulle spalle coperte dall'usbergo metallico. La luce delle torce si rifletteva cupamente sul levigato acciaio azzurro degli schinieri e del bacinetto. Un fuoco ancora più minaccioso ardeva nei suoi occhi azzurri. Subito, Yasmela comprese che non era kothiano; e quando l'uomo parlò, seppe che non era neppure hyboriano. Vestiva come un capitano dei mercenari, e in quell'esercito di disperati c'erano uomini di molte terre, barbari e civili. Quel guerriero aveva un'aria di lupo che indicava in lui un barbaro. Ma mai gli occhi di un uomo, selvaggio o criminale, avevano brillato di un simile fuoco. Il suo alito odorava di vino, ma non vacillava né balbettava.",
+                "origin": "Colosso Nero"
+            }
+        },
+        "conan-mercenary": {
+            "name": "Conan Mercenario",
+            "quote": {
+                "text": "Lo straniero era lì, con la schiena poggiata all'albero maestro, gli occhi socchiusi e guardinghi, la spada pronta. Il marinaio lo guardò con fermezza, attento a non fare la minima mossa verso il lungo coltellaccio che portava alla cintura. Osservò la figura alta, possente, rivestita di un usbergo nero a piastre, lustri gambali, un elmo d'acciaio dai riflessi azzurrini dal quale sporgevano due levigate corna di toro. Dalle spalle protette dalla cotta scendeva il mantello scarlatto, ondeggiante alla brezza marina. Un largo cinturone zigrinato con una fibbia dorata reggeva il fodero dello spadone. Sotto l'elmetto ornato di corna, una chioma nera tagliata corta contrastava con lo splendore degli occhi azzurri.",
+                "origin": "La regina della Costa Nera"
+            }
+        },
+        "conan-general": {
+            "name": "Conan Il Condottiero",
+            "quote": {
+                "text": "Al suo comando, portarono un'armatura per sostituire la cotta di maglia di Conan: gorgera, solerette, corazza, gambali, cosciali, elmo, coprispalle. Quando Yasmela aprì di nuovo le tende, davanti ai nobili stava Conan rivestito d'acciaio brunito. Chiuso nell'armatura, con la visiera alzata e il volto scuro ombreggiato dalle piume nere che ondeggiavano sul cimiero, aveva una truce imponenza di cui persino Thespides dovette prendere atto. Una battuta scherzosa si spense sulle labbra di Amalric.\n\"Per Mitra\" disse lentamente. \"Non mi ero mai aspettato di vederti con una simile armatura, ma non la disonori. Per le ossa delle mie dita, Conan, ho visto molti re che portavano l'armatura meno regalmente di te!\"",
+                "origin": "Colosso Nero"
+            }
+        },
+        "savage-belit": {
+            "name": "Bêlit La Tigre",
+            "quote": {
+                "text": "Si volse verso Conan, gonfiando il petto, con gli occhi lampeggianti. Dita ardenti di meraviglia si impadronirono del cuore del cimmero. La donna era snella, ma ben tornita come una dea: agile e formosa nello stesso tempo. Indossava solamente un'ampia fascia di seta. Le membra bianche come l'avorio e i globi eburnei dei seni procurarono un'accelerazione di feroce passione nelle pulsazioni del cimmero, perfino nella tensione furibonda della battaglia. Gli splendidi capelli neri, scuri come una notte stygiana, le cadevano in ciocche ondulate e lucenti lungo la schiena. I suoi occhi scuri bruciarono il cimmero.\nEra indomita come il vento del deserto, agile e pericolosa come una pantera.",
+                "origin": "La Regina della Costa Nera"
+            }
+        },
+        "conan-wanderer": {
+            "name": "Conan Lo Zingaro",
+            "quote": {
+                "text": "Un giovane alto e forte stava in piedi dietro di lui. L'individuo era fuori posto in quel covo come un lupo grigio in mezzo a rognosi topi di fogna. L'umile tunica non riusciva a nascondere le forti linee slanciate del suo corpo possente, le ampie spalle, il petto massiccio, la vita sottile e le braccia vigorose. Aveva la pelle abbronzata dal sole di terre straniere, gli occhi azzurri e roventi; un ciuffo arruffato di capelli neri coronava l'ampia fronte. Dalla cintura gli pendeva una spada, tenuta in un consunto fodero di cuoio.",
+                "origin": "La Torre dell'Elefante"
+            }
+        },
+        "gundermen-mercenaries": {
+            "name": "Merceniari Gunderiani"
+        },
+        "nestor": {
+            "name": "Nestor"
+        },
+        "kushite-mercenaries": {
+            "name": "Mercenari Kushiti"
+        },
+        "aja": {
+            "name": "Aja"
+        },
+        "hyrkanian-mercenaries": {
+            "name": "Mercenari Hyrkaniani"
+        },
+        "ganbaatar": {
+            "name": "Ganbaatar"
         }
     }
 }

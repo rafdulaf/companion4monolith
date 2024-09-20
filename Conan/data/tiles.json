@@ -131,8 +131,9 @@
                 { "image_location": {"x":81, "y":270}, "image_zoom": 300 }
             ],
 
-            "image": "data/tiles/img/princess.webp",
-            "imageHD": "data/tiles/img/princess_hd.webp",
+            "image": "data/heroes/img/princess.webp",
+            "image_flip": true,
+            "imageHD": "data/heroes/img/princess_hd.webp",
             "image_location": {"x":64, "y":56},
             "image_zoom": 72,
             "model": "princess",
@@ -393,8 +394,8 @@
                 }
             },
 
-            "image": "data/tiles/img/belits-guards.webp",
-            "imageHD": "data/tiles/img/belits-guards_hd.webp",
+            "image": "data/heroes/img/belits-guards.webp",
+            "imageHD": "data/heroes/img/belits-guards_hd.webp",
             "image_location": {"x":71, "y":52},
             "image_zoom": 136,
             "model": "belits-guards",
@@ -418,8 +419,9 @@
                 }
             },
 
-            "image": "data/tiles/img/princess.webp",
-            "imageHD": "data/tiles/img/princess_hd.webp",
+            "image": "data/heroes/img/princess.webp",
+            "image_flip": true,
+            "imageHD": "data/heroes/img/princess_hd.webp",
             "image_location": {"x":64, "y":56},
             "image_zoom": 72,
             "model": "princess",
@@ -551,8 +553,8 @@
 
             "image": "data/tiles/img/pict-hunters.webp",
             "imageHD": "data/tiles/img/pict-hunters_hd.webp",
-            "image_location": {"x":68, "y":49},
-            "image_zoom": 111,
+            "image_location": {"x":63, "y":50},
+            "image_zoom": 114,
             "model": "pict-hunters",
             "origins": ["corebox"]
         },
@@ -681,8 +683,8 @@
                 }
             },
 
-            "image": "data/tiles/img/zelatas-wolf.webp",
-            "imageHD": "data/tiles/img/zelatas-wolf_hd.webp",
+            "image": "data/tiles/img/giant-wolves.webp",
+            "imageHD": "data/tiles/img/giant-wolves_hd.webp",
             "image_location": {"x":67, "y":59},
             "image_zoom": 87,
             "model": "giant-wolves",
@@ -759,8 +761,8 @@
                 }
             },
 
-            "image": "data/tiles/img/ageera.webp",
-            "imageHD": "data/tiles/img/ageera_hd.webp",
+            "image": "data/heroes/img/ageera.webp",
+            "imageHD": "data/heroes/img/ageera_hd.webp",
             "image_location": {"x":67, "y":57},
             "image_zoom": 60,
             "model": "ageera",
@@ -819,8 +821,8 @@
                 }
             },
 
-            "image": "data/tiles/img/constantius.webp",
-            "imageHD": "data/tiles/img/constantius_hd.webp",
+            "image": "data/heroes/img/constantius.webp",
+            "imageHD": "data/heroes/img/constantius_hd.webp",
             "image_location": {"x":62, "y":58},
             "image_zoom": 112,
             "model": "constantius",
@@ -999,8 +1001,8 @@
                 }
             },
 
-            "image": "data/tiles/img/amboola.webp",
-            "imageHD": "data/tiles/img/amboola_hd.webp",
+            "image": "data/heroes/img/amboola.webp",
+            "imageHD": "data/heroes/img/amboola_hd.webp",
             "image_location": {"x":58, "y":55},
             "image_zoom": 58,
             "model": "amboola",
@@ -1027,8 +1029,8 @@
                 }
             },
 
-            "image": "data/tiles/img/balthus.webp",
-            "imageHD": "data/tiles/img/balthus_hd.webp",
+            "image": "data/heroes/img/balthus.webp",
+            "imageHD": "data/heroes/img/balthus_hd.webp",
             "image_location": {"x":56, "y":49},
             "image_zoom": 96,
             "model": "balthus",
@@ -1046,7 +1048,7 @@
             "skills": { "0": "attack/attack_from_beyond", "1": "defense/protected", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":50, "y":152}, "image_zoom": 430 }
+                { "image_location": {"x":50, "y":152}, "image_zoom": 430, "image_flip": true }
             ],
 
             "quote": {
@@ -1055,8 +1057,9 @@
                 }
             },
 
-            "image": "data/tiles/img/belit.webp",
-            "imageHD": "data/tiles/img/belit_hd.webp",
+            "image": "data/heroes/img/belit.webp",
+            "image_flip": true,
+            "imageHD": "data/heroes/img/belit_hd.webp",
             "image_location": {"x":63, "y":46},
             "image_zoom": 120,
             "model": "belit",
@@ -1141,8 +1144,8 @@
                 }
             },
 
-            "image": "data/tiles/img/kerim-shah.webp",
-            "imageHD": "data/tiles/img/kerim-shah_hd.webp",
+            "image": "data/heroes/img/kerim-shah.webp",
+            "imageHD": "data/heroes/img/kerim-shah_hd.webp",
             "image_location": {"x":56, "y":53},
             "image_zoom": 83,
             "model": "kerim-shah",
@@ -1169,8 +1172,8 @@
                 }
             },
 
-            "image": "data/tiles/img/ngora.webp",
-            "imageHD": "data/tiles/img/ngora_hd.webp",
+            "image": "data/heroes/img/ngora.webp",
+            "imageHD": "data/heroes/img/ngora_hd.webp",
             "image_location": {"x":66, "y":54},
             "image_zoom": 92,
             "model": "ngora",
@@ -1197,8 +1200,8 @@
                 }
             },
 
-            "image": "data/tiles/img/olgerd-vladislav.webp",
-            "imageHD": "data/tiles/img/olgerd-vladislav_hd.webp",
+            "image": "data/heroes/img/olgerd-vladislav.webp",
+            "imageHD": "data/heroes/img/olgerd-vladislav_hd.webp",
             "image_location": {"x":65, "y":54},
             "image_zoom": 104,
             "model": "olgerd-vladislav",
@@ -1225,8 +1228,8 @@
                 }
             },
 
-            "image": "data/tiles/img/pallantides.webp",
-            "imageHD": "data/tiles/img/pallantides_hd.webp",
+            "image": "data/heroes/img/pallantides.webp",
+            "imageHD": "data/heroes/img/pallantides_hd.webp",
             "image_location": {"x":64, "y":53},
             "image_zoom": 87,
             "model": "pallantides",
@@ -1244,7 +1247,7 @@
             "skills": { "0": "defense/untouchable", "1": "movement/evasive", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":66, "y":179}, "image_zoom": 340 }
+                { "image_location": {"x":66, "y":179}, "image_zoom": 340, "image_flip": true }
             ],
 
             "quote": {
@@ -1253,8 +1256,9 @@
                 }
             },
 
-            "image": "data/tiles/img/shevatas.webp",
-            "imageHD": "data/tiles/img/shevatas_hd.webp",
+            "image": "data/heroes/img/shevatas.webp",
+            "image_flip": true,
+            "imageHD": "data/heroes/img/shevatas_hd.webp",
             "image_location": {"x":62, "y":49},
             "image_zoom": 92,
             "model": "shevatas",
@@ -1339,8 +1343,8 @@
                 }
             },
 
-            "image": "data/tiles/img/zelata.webp",
-            "imageHD": "data/tiles/img/zelata_hd.webp",
+            "image": "data/heroes/img/zelata.webp",
+            "imageHD": "data/heroes/img/zelata_hd.webp",
             "image_location": {"x":61, "y":57},
             "image_zoom": 94,
             "model": "zelata",
@@ -1653,8 +1657,8 @@
                 }
             },
 
-            "image": "data/tiles/img/pict-archers.webp",
-            "imageHD": "data/tiles/img/pict-archers_hd.webp",
+            "image": "data/heroes/img/othna.webp",
+            "imageHD": "data/heroes/img/othna_hd.webp",
             "image_location": {"x":58, "y":56},
             "image_zoom": 114,
             "model": "pict-archers",
@@ -1678,8 +1682,9 @@
                 }
             },
 
-            "image": "data/tiles/img/pict-warriors.webp",
-            "imageHD": "data/tiles/img/pict-warriors_hd.webp",
+            "image": "data/heroes/img/grom.webp",
+            "image_flip": true,
+            "imageHD": "data/heroes/img/grom_hd.webp",
             "image_location": {"x":51, "y":48},
             "image_zoom": 113,
             "model": "pict-warriors",
@@ -1895,6 +1900,31 @@
         },
 
         {
+            "id": "crossbowmen",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "ranged",
+            "dices": { "0": "red", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "defense/sacrifice", "1": "attack/elite_shooter", "2": "none", "3": "none" },
+            "reinforcement": "2",
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/tiles/img/crossbowmen.webp",
+            "imageHD": "data/tiles/img/crossbowmen_hd.webp",
+            "image_location": {"x":69, "y":57},
+            "image_zoom": 94,
+            "model": "crossbowmen",
+            "origins": ["versus-mode"]
+        },
+
+        {
             "id": "crossbowmen-green",
 
             "colors": ["green"],
@@ -1917,6 +1947,33 @@
             "image_zoom": 94,
             "model": "crossbowmen",
             "origins": ["crossbowmen"],
+
+            "count": 1
+        },
+
+        {
+            "id": "crossbowmen-blue",
+
+            "colors": ["blue"],
+            "movement": "1",
+            "defense": "1",
+            "attacktype": "ranged",
+            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "defense/untouchable", "1": "attack/precision_shot", "2": "none", "3": "none" },
+            "reinforcement": "2",
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/tiles/img/crossbowmen.webp",
+            "imageHD": "data/tiles/img/crossbowmen_hd.webp",
+            "image_location": {"x":69, "y":57},
+            "image_zoom": 94,
+            "model": "crossbowmen",
+            "origins": ["versus-mode"],
 
             "count": 1
         },
@@ -2056,8 +2113,8 @@
                 }
             },
 
-            "image": "data/tiles/img/afari.webp",
-            "imageHD": "data/tiles/img/afari_hd.webp",
+            "image": "data/heroes/img/afari.webp",
+            "imageHD": "data/heroes/img/afari_hd.webp",
             "image_location": {"x":64, "y":54},
             "image_zoom": 62,
             "model": "afari",
@@ -2080,8 +2137,8 @@
                 { "image_location": {"x":59, "y":158}, "image_zoom": 150 }
             ],
 
-            "image": "data/tiles/img/ghayoor.webp",
-            "imageHD": "data/tiles/img/ghayoor_hd.webp",
+            "image": "data/heroes/img/ghayoor.webp",
+            "imageHD": "data/heroes/img/ghayoor_hd.webp",
             "image_location": {"x":67, "y":57},
             "image_zoom": 62,
             "model": "ghayoor",
@@ -2104,8 +2161,8 @@
                 { "image_location": {"x":47, "y":146}, "image_zoom": 150 }
             ],
 
-            "image": "data/tiles/img/shafiah.webp",
-            "imageHD": "data/tiles/img/shafiah_hd.webp",
+            "image": "data/heroes/img/shafiah.webp",
+            "imageHD": "data/heroes/img/shafiah_hd.webp",
             "image_location": {"x":63, "y":58},
             "image_zoom": 72,
             "model": "shafiah",
@@ -2134,8 +2191,8 @@
                 }
             },
 
-            "image": "data/tiles/img/shubba.webp",
-            "imageHD": "data/tiles/img/shubba_hd.webp",
+            "image": "data/heroes/img/shubba.webp",
+            "imageHD": "data/heroes/img/shubba_hd.webp",
             "image_location": {"x":69, "y":54},
             "image_zoom": 61,
             "model": "shubba",
@@ -2158,8 +2215,8 @@
                 { "image_location": {"x":55, "y":102}, "image_zoom": 210 }
             ],
 
-            "image": "data/tiles/img/vanir-valkyrie.webp",
-            "imageHD": "data/tiles/img/vanir-valkyrie_hd.webp",
+            "image": "data/heroes/img/vanir-valkyrie.webp",
+            "imageHD": "data/heroes/img/vanir-valkyrie_hd.webp",
             "image_location": {"x":71, "y":54},
             "image_zoom": 96,
             "model": "vanir-valkyrie",
@@ -2188,8 +2245,8 @@
                 }
             },
 
-            "image": "data/tiles/img/salome.webp",
-            "imageHD": "data/tiles/img/salome_hd.webp",
+            "image": "data/heroes/img/taramis.webp",
+            "imageHD": "data/heroes/img/taramis_hd.webp",
             "image_location": {"x":56, "y":53},
             "image_zoom": 56,
             "model": "taramis-salome",
@@ -2455,6 +2512,31 @@
             "image_zoom": 168,
             "model": "crows",
             "origins": ["nordheim"]
+        },
+        
+        {
+            "id": "crows-2",
+
+            "colors": ["gray"],
+            "movement": "5",
+            "defense": "0",
+            "attacktype": "contact",
+            "dices": { "0": "yellow", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "movement/flying", "1": "miscellaneous/jinx", "2": "none", "3": "none" },
+            "reinforcement": "1",
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/tiles/img/crows.webp",
+            "imageHD": "data/tiles/img/crows_hd.webp",
+            "image_location": {"x":46, "y":54},
+            "image_zoom": 168,
+            "model": "crows",
+            "origins": ["versus-mode"]
         },
 
         {
@@ -2772,6 +2854,31 @@
         },
 
         {
+            "id": "giant-scorpions",
+
+            "colors": ["gray"],
+            "movement": "4",
+            "defense": "0",
+            "attacktype": "contact",
+            "dices": { "0": "yellow", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/poison", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/tiles/img/giant-scorpion.webp",
+            "imageHD": "data/tiles/img/giant-scorpion_hd.webp",
+            "image_location": {"x":60, "y":52},
+            "image_zoom": 119,
+            "model": "giant-scorpion",
+            "origins": ["versus-mode"]
+        },
+
+        {
             "id": "eternal-guard",
 
             "colors": ["gray", "gray", "blue"],
@@ -2810,7 +2917,7 @@
         },
 
         {
-            "id": "assassins",
+            "id": "assassins-red",
 
             "colors": ["red"],
             "movement": "3",
@@ -2858,10 +2965,10 @@
             "skills": { "0": "miscellaneous/horror", "1": "movement/flying", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":115, "y":88}, "image_zoom": 466, "image": "data/tiles/img/winged-one.webp" }
+                { "image_location": {"x":115, "y":88}, "image_zoom": 466, "image_flip": true }
             ],
 
-            "image": "data/tiles/img/winged-ape.webp",
+            "image": "data/heroes/img/winged-one.webp",
             "image_location": {"x":40, "y":56},
             "image_zoom": 210,
             "model": "winged-ape",
@@ -2884,7 +2991,7 @@
                 { "image_location": {"x":27, "y":224}, "image_zoom": 300 }
             ],
 
-            "image": "data/tiles/img/heracles.webp",
+            "image": "data/heroes/img/heracles.webp",
             "image_location": {"x":45, "y":74},
             "image_zoom": 125,
             "model": "heracles", "modelType": "human",
@@ -2905,7 +3012,7 @@
                 { "image_location": {"x":44, "y":118}, "image_zoom": 360 }
             ],
 
-            "image": "data/tiles/img/leonidas.webp",
+            "image": "data/heroes/img/leonidas.webp",
             "image_location": {"x":44, "y":46},
             "image_zoom": 150,
             "model": "leonidas", "modelType": "human",
@@ -2923,11 +3030,12 @@
             "skills": { "0": "attack/counterattack", "1": "miscellaneous/support", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":42, "y":182}, "image_zoom": 210 }
+                { "image_location": {"x":42, "y":182}, "image_zoom": 210, "image_flip": true }
             ],
 
-            "image": "data/tiles/img/achilles.webp",
-            "imageHD": "data/tiles/img/achilles_hd.webp",
+            "image": "data/heroes/img/achilles.webp",
+            "image_flip": true,
+            "imageHD": "data/heroes/img/achilles_hd.webp",
             "image_location": {"x":53, "y":69},
             "image_zoom": 85,
             "model": "achilles", "modelType": "human",
@@ -2945,8 +3053,8 @@
             "skills": { "0": "attack/counterattack", "1": "movement/blocking", "2": "none", "3": "none" },
             "reinforcement": "2",
 
-            "image": "data/tiles/img/spartan.webp",
-            "imageHD": "data/tiles/img/spartan_hd.webp",
+            "image": "data/heroes/img/drusus.webp",
+            "imageHD": "data/heroes/img/drusus_hd.webp",
             "image_location": {"x":45, "y":63},
             "image_zoom": 115,
             "model": "spartan",
@@ -3093,7 +3201,7 @@
             "skills": { "0": "attack/precision_strike", "1": "miscellaneous/horror", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":78, "y":74}, "image_zoom": 260, "image": "data/tiles/img/cerberus_token.webp" }
+                { "image_location": {"x":78, "y":74}, "image_zoom": 260, "image_flip": true }
             ],
 
             "image": "data/tiles/img/cerberus.webp",
@@ -3159,7 +3267,7 @@
             "skills": { "0": "movement/wall_wrecker", "1": "movement/blocking", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":150, "y":107}, "image_zoom": 354, "image": "data/tiles/img/minotaur_token.webp" }
+                { "image_location": {"x":150, "y":107}, "image_zoom": 354, "image_flip": true }
             ],
 
             "image": "data/tiles/img/minotaur.webp",
@@ -3184,8 +3292,8 @@
                 { "image_location": {"x":43, "y":196}, "image_zoom": 260 }
             ],
 
-            "image": "data/tiles/img/odysseus.webp",
-            "imageHD": "data/tiles/img/odysseus_hd.webp",
+            "image": "data/heroes/img/odysseus.webp",
+            "imageHD": "data/heroes/img/odysseus_hd.webp",
             "image_location": {"x":54, "y":53},
             "image_zoom": 85,
             "model": "odysseus", "modelType": "human",
@@ -3567,7 +3675,7 @@
             "dices": { "0": "redreroll", "1": "orange", "2": "yellowreroll", "3": "none" },
             "skills": { "0": "miscellaneous/poison", "1": "attack/reach", "2": "none", "3": "none" },
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 130, "image": "data/tiles/img/deep-one-champion_token.webp" }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 130, "image_flip": true }
             ],
 
             "quote": {
@@ -3603,8 +3711,8 @@
                 }
             },
 
-            "image": "data/tiles/img/zenobia.webp",
-            "imageHD": "data/tiles/img/zenobia_hd.webp",
+            "image": "data/heroes/img/zenobia.webp",
+            "imageHD": "data/heroes/img/zenobia_hd.webp",
             "image_location": {"x":60, "y":49},
             "image_zoom": 112,
             "model": "zenobia",
@@ -3679,7 +3787,7 @@
             "dices": { "0": "red", "1": "red", "2": "red", "3": "none" },
             "skills": { "0": "movement/wall_wrecker", "1": "attack/circular_strike", "2": "none", "3": "none" },
             "tokens": [
-                { "image_location": {"x":-4, "y":224}, "image_zoom": 440 }
+                { "image_location": {"x":-4, "y":224}, "image_zoom": 440, "image_flip": true }
             ],
 
             "quote": {
@@ -3688,8 +3796,9 @@
                 }
             },
 
-            "image": "data/tiles/img/conan-the-pirate.webp",
-            "imageHD": "data/tiles/img/conan-the-pirate_hd.webp",
+            "image": "data/heroes/img/conan-the-pirate.webp",
+            "image_flip": true,
+            "imageHD": "data/heroes/img/conan-the-pirate_hd.webp",
             "image_location": {"x":55, "y":52},
             "image_zoom": 120,
             "model": "conan-the-pirate",
@@ -3715,8 +3824,8 @@
                 }
             },
 
-            "image": "data/tiles/img/nyaga.webp",
-            "imageHD": "data/tiles/img/nyaga_hd.webp",
+            "image": "data/heroes/img/nyaga.webp",
+            "imageHD": "data/heroes/img/nyaga_hd.webp",
             "image_location": {"x":55, "y":50},
             "image_zoom": 117,
             "model": "nyaga",
@@ -3762,7 +3871,7 @@
             "dices": { "0": "redreroll", "1": "redreroll", "2": "orange", "3": "none" },
             "skills": { "0": "attack/constriction", "1": "attack/precision_strike", "2": "none", "3": "none" },
             "tokens": [
-                { "image_location": {"x":77, "y":223}, "image_zoom": 400 }
+                { "image_location": {"x":77, "y":223}, "image_zoom": 400, "image_flip": true }
             ],
 
             "quote": {
@@ -3771,11 +3880,12 @@
                 }
             },
 
-            "image": "data/tiles/img/baal-pteor-2.webp",
-            "imageHD": "data/tiles/img/baal-pteor-2_hd.webp",
+            "image": "data/heroes/img/baal-pteor-2.webp",
+            "image_flip": true,
+            "imageHD": "data/heroes/img/baal-pteor-2_hd.webp",
             "image_location": {"x":59, "y":52},
             "image_zoom": 114,
-            "model": "baal-pteor",
+            "model": "baal-pteor-2",
             "origins": ["conqueror"],
             
             "count": 2
@@ -3791,7 +3901,7 @@
             "dices": { "0": "redreroll", "1": "orange", "2": "orange", "3": "none" },
             "skills": { "0": "movement/climb", "1": "movement/web_projection", "2": "none", "3": "none" },
             "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 130, "image": "data/tiles/img/zamorian-spider_token.webp" }
+                { "image_location": {"x":50, "y":50}, "image_zoom": 130, "image_flip": true }
             ],
 
             "image": "data/tiles/img/zamorian-spider.webp",
@@ -3843,7 +3953,7 @@
             "dices": { "0": "redreroll", "1": "redreroll", "2": "redreroll", "3": "none" },
             "skills": { "0": "movement/wall_wrecker", "1": "attack/circular_strike", "2": "none", "3": "none" },
             "tokens": [
-                { "image_location": {"x":77, "y":180}, "image_zoom": 350 }
+                { "image_location": {"x":77, "y":180}, "image_zoom": 350, "image_flip": true }
             ],
 
             "quote": {
@@ -3852,8 +3962,9 @@
                 }
             },
 
-            "image": "data/tiles/img/conan-the-conqueror.webp",
-            "imageHD": "data/tiles/img/conan-the-conqueror_hd.webp",
+            "image": "data/heroes/img/conan-the-conqueror.webp",
+            "image_flip": true,
+            "imageHD": "data/heroes/img/conan-the-conqueror_hd.webp",
             "image_location": {"x":65, "y":48},
             "image_zoom": 101,
             "model": "conan-the-conqueror",
@@ -3870,10 +3981,11 @@
             "dices": { "0": "redreroll", "1": "red", "2": "red", "3": "none" },
             "skills": { "0": "miscellaneous/horror", "1": "movement/flying", "2": "none", "3": "none" },
             "tokens": [
-                { "image_location": {"x":115, "y":88}, "image_zoom": 466 }
+                { "image_location": {"x":115, "y":88}, "image_zoom": 466, "image_flip": true }
             ],
 
-            "image": "data/tiles/img/winged-one.webp",
+            "image": "data/heroes/img/winged-one.webp",
+            "image_flip": true,
             "image_location": {"x":87, "y":55},
             "image_zoom": 225,
             "model": "winged-ape",
@@ -4091,12 +4203,12 @@
             "imageHD": "data/tiles/img/asgrim_hd.webp",
             "image_location": {"x":58, "y":52},
             "image_zoom": 75,
-            "model": "asgrim",
+            "model": "asgrim", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
         {
-            "id": "atla",
+            "id": "atla-gotn",
 
             "colors": ["gray"],
             "movement": "3",
@@ -4105,14 +4217,14 @@
             "dices": { "0": "orange", "1": "orange", "2": "yellowreroll", "3": "none" },
             "skills": { "0": "magic/spell_caster", "1": "miscellaneous/jinx", "2": "defense/protected", "3": "movement/evasive" },
             "tokens": [
-                { "image_location": {"x":-11, "y":221}, "image_zoom": 315, "image": "data/tiles/img/atla_token.webp" }
+                { "image_location": {"x":-11, "y":221}, "image_zoom": 315, "image_flip": true }
             ],
 
-            "image": "data/tiles/img/atla.webp",
-            "imageHD": "data/tiles/img/atla_hd.webp",
+            "image": "data/tiles/img/atla-gotn.webp",
+            "imageHD": "data/tiles/img/atla-gotn_hd.webp",
             "image_location": {"x":92, "y":64},
             "image_zoom": 108,
-            "model": "atla",
+            "model": "atla-gotn", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4126,14 +4238,14 @@
             "dices": { "0": "orangereroll", "1": "orangereroll", "2": "none", "3": "none" },
             "skills": { "0": "defense/protected", "1": "attack/elite_shooter", "2": "none", "3": "none" },
             "tokens": [
-                { "image_location": {"x":74, "y":236}, "image_zoom": 250, "image": "data/tiles/img/bragi_token.webp" }
+                { "image_location": {"x":74, "y":236}, "image_zoom": 250, "image_flip": true }
             ],
 
             "image": "data/tiles/img/bragi.webp",
             "imageHD": "data/tiles/img/bragi_hd.webp",
             "image_location": {"x":57, "y":57},
             "image_zoom": 73,
-            "model": "bragi",
+            "model": "bragi", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4147,14 +4259,14 @@
             "dices": { "0": "redreroll", "1": "orangereroll", "2": "none", "3": "none" },
             "skills": { "0": "movement/feline_grace", "1": "defense/untouchable", "2": "none", "3": "none" },
             "tokens": [
-                { "image_location": {"x":44, "y":182}, "image_zoom": 380, "image": "data/tiles/img/brunhilde_token.webp" }
+                { "image_location": {"x":44, "y":182}, "image_zoom": 380, "image_flip": true }
             ],
 
             "image": "data/tiles/img/brunhilde.webp",
             "imageHD": "data/tiles/img/brunhilde_hd.webp",
             "image_location": {"x":58, "y":71},
             "image_zoom": 167,
-            "model": "brunhilde",
+            "model": "brunhilde", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4175,7 +4287,7 @@
             "imageHD": "data/tiles/img/hialmar_hd.webp",
             "image_location": {"x":51, "y":51},
             "image_zoom": 98,
-            "model": "hialmar",
+            "model": "hialmar", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4196,7 +4308,7 @@
             "imageHD": "data/tiles/img/lagertha_hd.webp",
             "image_location": {"x":53, "y":54},
             "image_zoom": 108,
-            "model": "lagertha",
+            "model": "lagertha", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4210,14 +4322,14 @@
             "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
             "skills": { "0": "attack/precision_strike", "1": "miscellaneous/support", "2": "none", "3": "none" },
             "tokens": [
-                { "image_location": {"x":46, "y":205}, "image_zoom": 500, "image": "data/tiles/img/sonya_token.webp" }
+                { "image_location": {"x":46, "y":205}, "image_zoom": 500, "image_flip": true }
             ],
 
             "image": "data/tiles/img/sonya.webp",
             "imageHD": "data/tiles/img/sonya_hd.webp",
             "image_location": {"x":61, "y":50},
             "image_zoom": 115,
-            "model": "sonya",
+            "model": "sonya", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4231,14 +4343,14 @@
             "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
             "skills": { "0": "defense/untouchable", "1": "attack/elite_shooter", "2": "none", "3": "none" },
             "tokens": [
-                { "image_location": {"x":61, "y":266}, "image_zoom": 320, "image": "data/tiles/img/tostig_token.webp" }
+                { "image_location": {"x":61, "y":266}, "image_zoom": 320, "image_flip": true }
             ],
 
             "image": "data/tiles/img/tostig.webp",
             "imageHD": "data/tiles/img/tostig_hd.webp",
             "image_location": {"x":59, "y":54},
             "image_zoom": 81,
-            "model": "tostig",
+            "model": "tostig", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4252,14 +4364,14 @@
             "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
             "skills": { "0": "movement/swimming", "1": "defense/protected", "2": "none", "3": "none" },
             "tokens": [
-                { "image_location": {"x":59, "y":228}, "image_zoom": 350, "image": "data/tiles/img/wulfhere_token.webp" }
+                { "image_location": {"x":59, "y":228}, "image_zoom": 350, "image_flip": true }
             ],
 
             "image": "data/tiles/img/wulfhere.webp",
             "imageHD": "data/tiles/img/wulfhere_hd.webp",
             "image_location": {"x":54, "y":59},
             "image_zoom": 116,
-            "model": "wulfhere",
+            "model": "wulfhere", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4273,14 +4385,14 @@
             "dices": { "0": "yellow", "1": "yellow", "2": "yellow", "3": "none" },
             "skills": { "0": "magic/spell_caster", "1": "defense/untouchable", "2": "none", "3": "none" },
             "tokens": [
-                { "image_location": {"x":92, "y":198}, "image_zoom": 300, "image": "data/tiles/img/zelata-wanderer_token.webp" }
+                { "image_location": {"x":92, "y":198}, "image_zoom": 300, "image_flip": true }
             ],
 
             "image": "data/tiles/img/zelata-wanderer.webp",
             "imageHD": "data/tiles/img/zelata-wanderer_hd.webp",
             "image_location": {"x":53, "y":52},
             "image_zoom": 93,
-            "model": "zelata-wanderer",
+            "model": "zelata-wanderer", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4299,7 +4411,7 @@
             "imageHD": "data/tiles/img/aesir-berserkers_hd.webp",
             "image_location": {"x":50, "y":52},
             "image_zoom": 110,
-            "model": "aesir-berserkers",
+            "model": "aesir-berserkers", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4321,7 +4433,7 @@
             "image_location": {"x":87, "y":43},
             "image_zoom": 278,
             "image_rotation": 20,
-            "model": "aesir-chief",
+            "model": "aesir-chief", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4340,7 +4452,7 @@
             "imageHD": "data/tiles/img/aesir-reavers_hd.webp",
             "image_location": {"x":47, "y":53},
             "image_zoom": 116,
-            "model": "aesir-reavers",
+            "model": "aesir-reavers", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4359,7 +4471,7 @@
             "imageHD": "data/tiles/img/aesir-reavers_hd.webp",
             "image_location": {"x":47, "y":53},
             "image_zoom": 116,
-            "model": "aesir-reavers",
+            "model": "aesir-reavers", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4378,7 +4490,7 @@
             "imageHD": "data/tiles/img/aesir-spearmen_hd.webp",
             "image_location": {"x":52, "y":52},
             "image_zoom": 98,
-            "model": "aesir-spearmen",
+            "model": "aesir-spearmen", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4397,7 +4509,7 @@
             "imageHD": "data/tiles/img/vanir-berserkers_hd.webp",
             "image_location": {"x":50, "y":50},
             "image_zoom": 109,
-            "model": "vanir-berserkers",
+            "model": "vanir-berserkers", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4416,7 +4528,7 @@
             "imageHD": "data/tiles/img/vanir-berserkers_hd.webp",
             "image_location": {"x":50, "y":50},
             "image_zoom": 109,
-            "model": "vanir-berserkers",
+            "model": "vanir-berserkers", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4435,7 +4547,7 @@
             "imageHD": "data/tiles/img/vanir-berserkers_hd.webp",
             "image_location": {"x":50, "y":50},
             "image_zoom": 109,
-            "model": "vanir-berserkers",
+            "model": "vanir-berserkers", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4456,7 +4568,7 @@
             "imageHD": "data/tiles/img/vanir-chief_hd.webp",
             "image_location": {"x":55, "y":61},
             "image_zoom": 112,
-            "model": "vanir-chief",
+            "model": "vanir-chief", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4476,7 +4588,7 @@
             "image_location": {"x":45, "y":50},
             "image_zoom": 140,
             "image_rotation": -9,
-            "model": "vanir-fanatics",
+            "model": "vanir-fanatics", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4496,7 +4608,7 @@
             "image_location": {"x":45, "y":50},
             "image_zoom": 140,
             "image_rotation": -9,
-            "model": "vanir-fanatics",
+            "model": "vanir-fanatics", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4515,7 +4627,7 @@
             "imageHD": "data/tiles/img/vanir-guards_hd.webp",
             "image_location": {"x":42, "y":52},
             "image_zoom": 130,
-            "model": "vanir-guards",
+            "model": "vanir-guards", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4533,7 +4645,7 @@
             "imageHD": "data/tiles/img/hialmar_hd.webp",
             "image_location": {"x":51, "y":51},
             "image_zoom": 98,
-            "model": "hialmar",
+            "model": "hialmar", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4552,7 +4664,7 @@
             "imageHD": "data/tiles/img/hyperborean-mercenaries_hd.webp",
             "image_location": {"x":50, "y":52},
             "image_zoom": 102,
-            "model": "hyperborean-mercenaries",
+            "model": "hyperborean-mercenaries", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4573,7 +4685,7 @@
             "imageHD": "data/tiles/img/mercenary-captain_hd.webp",
             "image_location": {"x":47, "y":54},
             "image_zoom": 101,
-            "model": "mercenary-captain",
+            "model": "mercenary-captain", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4592,7 +4704,7 @@
             "imageHD": "data/tiles/img/shield-maidens_hd.webp",
             "image_location": {"x":52, "y":53},
             "image_zoom": 125,
-            "model": "shield-maidens",
+            "model": "shield-maidens", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4607,11 +4719,11 @@
             "skills": { "0": "magic/spell_caster", "1": "miscellaneous/jinx", "2": "none", "3": "none" },
             "reinforcement": "2",
 
-            "image": "data/tiles/img/atla.webp",
-            "imageHD": "data/tiles/img/atla_hd.webp",
+            "image": "data/tiles/img/atla-gotn.webp",
+            "imageHD": "data/tiles/img/atla-gotn_hd.webp",
             "image_location": {"x":75, "y":53},
             "image_zoom": 86,
-            "model": "atla",
+            "model": "atla-gotn", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4626,11 +4738,11 @@
             "skills": { "0": "magic/spell_caster", "1": "miscellaneous/jinx", "2": "movement/flying", "3": "none" },
             "reinforcement": "2",
 
-            "image": "data/tiles/img/atla.webp",
-            "imageHD": "data/tiles/img/atla_hd.webp",
+            "image": "data/tiles/img/atla-gotn.webp",
+            "imageHD": "data/tiles/img/atla-gotn_hd.webp",
             "image_location": {"x":75, "y":53},
             "image_zoom": 86,
-            "model": "atla",
+            "model": "atla-gotn", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4644,14 +4756,14 @@
             "dices": { "0": "orangereroll", "1": "yellowreroll", "2": "none", "3": "none" },
             "skills": { "0": "movement/feline_grace", "1": "defense/untouchable", "2": "none", "3": "none" },
             "tokens": [
-                { "image_location": {"x":83, "y":24}, "image_zoom": 240, "image": "data/tiles/img/aesir-lynxes_token.webp" }
+                { "image_location": {"x":83, "y":24}, "image_zoom": 240, "image_flip": true }
             ],
 
             "image": "data/tiles/img/aesir-lynxes.webp",
             "imageHD": "data/tiles/img/aesir-lynxes_hd.webp",
             "image_location": {"x":63, "y":41},
             "image_zoom": 130,
-            "model": "aesir-lynxes",
+            "model": "aesir-lynxes", "modelType": "animal",
             "origins": ["godsofthenorth"]
         },
         
@@ -4672,7 +4784,7 @@
             "imageHD": "data/tiles/img/goats_hd.webp",
             "image_location": {"x":45, "y":57},
             "image_zoom": 140,
-            "model": "goats",
+            "model": "goats", "modelType": "animal",
             "origins": ["godsofthenorth"]
         },
         
@@ -4686,14 +4798,14 @@
             "dices": { "0": "yellow", "1": "none", "2": "none", "3": "none" },
             "skills": { "0": "movement/evasive", "1": "defense/untouchable", "2": "none", "3": "none" },
             "tokens": [
-                { "image_location": {"x":51, "y":-10}, "image_zoom": 220, "image": "data/tiles/img/squirrel_token.webp" }
+                { "image_location": {"x":51, "y":-10}, "image_zoom": 220, "image_flip": true }
             ],
 
             "image": "data/tiles/img/squirrel.webp",
             "imageHD": "data/tiles/img/squirrel_hd.webp",
             "image_location": {"x":71, "y":52},
             "image_zoom": 100,
-            "model": "squirrel",
+            "model": "squirrel", "modelType": "animal",
             "origins": ["godsofthenorth"]
         },
         
@@ -4712,7 +4824,7 @@
             "imageHD": "data/tiles/img/wolf-pack_hd.webp",
             "image_location": {"x":15, "y":50},
             "image_zoom": 210,
-            "model": "wolf-pack",
+            "model": "wolf-pack", "modelType": "animal",
             "origins": ["godsofthenorth"]
         },
         
@@ -4730,10 +4842,9 @@
             ],
 
             "image": "data/tiles/img/frost-giant-deceiver.webp",
-            "imageHD": "data/tiles/img/frost-giant-deceiver_hd.webp",
             "image_location": {"x":53, "y":57.5},
             "image_zoom": 141,
-            "model": "frost-giant-deceiver",
+            "model": "frost-giant-deceiver", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4747,14 +4858,14 @@
             "dices": { "0": "yellowreroll", "1": "yellowreroll", "2": "yellowreroll", "3": "none" },
             "skills": { "0": "movement/blocking", "1": "miscellaneous/fascination", "2": "none", "3": "none" },
             "tokens": [
-                { "image_location": {"x":53, "y":184}, "image_zoom": 400, "image": "data/tiles/img/frost-giant-temptress_token.webp" }
+                { "image_location": {"x":53, "y":184}, "image_zoom": 400, "image_flip": true }
             ],
 
             "image": "data/tiles/img/frost-giant-temptress.webp",
             "imageHD": "data/tiles/img/frost-giant-temptress_hd.webp",
             "image_location": {"x":54, "y":53},
             "image_zoom": 140,
-            "model": "frost-giant-temptress",
+            "model": "frost-giant-temptress", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4772,10 +4883,9 @@
             ],
 
             "image": "data/tiles/img/frost-giant-huntress.webp",
-            "imageHD": "data/tiles/img/frost-giant-huntress_hd.webp",
             "image_location": {"x":47, "y":50},
             "image_zoom": 112,
-            "model": "frost-giant-huntress",
+            "model": "frost-giant-huntress", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4789,14 +4899,14 @@
             "dices": { "0": "redreroll", "1": "orangereroll", "2": "yellowreroll", "3": "none" },
             "skills": { "0": "movement/climb", "1": "defense/protected", "2": "none", "3": "none" },
             "tokens": [
-                { "image_location": {"x":65, "y":210}, "image_zoom": 440, "image": "data/tiles/img/frost-giant-jarl_token.webp" }
+                { "image_location": {"x":65, "y":210}, "image_zoom": 440, "image_flip": true }
             ],
 
             "image": "data/tiles/img/frost-giant-jarl.webp",
             "imageHD": "data/tiles/img/frost-giant-jarl_hd.webp",
             "image_location": {"x":47, "y":53},
             "image_zoom": 107,
-            "model": "frost-giant-jarl",
+            "model": "frost-giant-jarl", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4810,14 +4920,14 @@
             "dices": { "0": "redreroll", "1": "yellowreroll", "2": "yellowreroll", "3": "none" },
             "skills": { "0": "magic/spell_caster", "1": "attack/attack_from_beyond", "2": "none", "3": "none" },
             "tokens": [
-                { "image_location": {"x":68, "y":147}, "image_zoom": 305, "image": "data/tiles/img/frost-giant-oracle_token.webp" }
+                { "image_location": {"x":68, "y":147}, "image_zoom": 305, "image_flip": true }
             ],
 
             "image": "data/tiles/img/frost-giant-oracle.webp",
             "imageHD": "data/tiles/img/frost-giant-oracle_hd.webp",
             "image_location": {"x":52, "y":57},
             "image_zoom": 140,
-            "model": "frost-giant-oracle",
+            "model": "frost-giant-oracle", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4838,7 +4948,7 @@
             "imageHD": "data/tiles/img/frost-giant-savage_hd.webp",
             "image_location": {"x":54, "y":52},
             "image_zoom": 135,
-            "model": "frost-giant-savage",
+            "model": "frost-giant-savage", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4852,14 +4962,13 @@
             "dices": { "0": "orangereroll", "1": "orangereroll", "2": "orange", "3": "none" },
             "skills": { "0": "movement/blocking", "1": "attack/reach", "2": "none", "3": "none" },
             "tokens": [
-                { "image_location": {"x":55, "y":281}, "image_zoom": 450, "image": "data/tiles/img/frost-giant-sentinel_token.webp" }
+                { "image_location": {"x":55, "y":281}, "image_zoom": 450, "image_flip": true }
             ],
 
             "image": "data/tiles/img/frost-giant-sentinel.webp",
-            "imageHD": "data/tiles/img/frost-giant-sentinel_hd.webp",
             "image_location": {"x":53, "y":66},
             "image_zoom": 130,
-            "model": "frost-giant-sentinel",
+            "model": "frost-giant-sentinel", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4873,14 +4982,14 @@
             "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
             "skills": { "0": "movement/climb", "1": "attack/reach", "2": "none", "3": "none" },
             "tokens": [
-                { "image_location": {"x":40, "y":178}, "image_zoom": 360, "image": "data/tiles/img/frost-giant-shipwright_token.webp" }
+                { "image_location": {"x":40, "y":178}, "image_zoom": 360, "image_flip": true }
             ],
 
             "image": "data/tiles/img/frost-giant-shipwright.webp",
             "imageHD": "data/tiles/img/frost-giant-shipwright_hd.webp",
             "image_location": {"x":50, "y":62},
             "image_zoom": 142,
-            "model": "frost-giant-shipwright",
+            "model": "frost-giant-shipwright", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4901,7 +5010,7 @@
             "imageHD": "data/tiles/img/frost-giant-veteran_hd.webp",
             "image_location": {"x":51, "y":52},
             "image_zoom": 130,
-            "model": "frost-giant-veteran",
+            "model": "frost-giant-veteran", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4922,7 +5031,7 @@
             "imageHD": "data/tiles/img/frost-giant-warlord_hd.webp",
             "image_location": {"x":52, "y":69},
             "image_zoom": 133,
-            "model": "frost-giant-warlord",
+            "model": "frost-giant-warlord", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4943,7 +5052,7 @@
             "imageHD": "data/tiles/img/frost-giant-weaver_hd.webp",
             "image_location": {"x":55, "y":53},
             "image_zoom": 139,
-            "model": "frost-giant-weaver",
+            "model": "frost-giant-weaver", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4964,7 +5073,7 @@
             "imageHD": "data/tiles/img/gullveig_hd.webp",
             "image_location": {"x":62, "y":51},
             "image_zoom": 120,
-            "model": "gullveig",
+            "model": "gullveig", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -4982,7 +5091,7 @@
             "imageHD": "data/tiles/img/gullveig_hd.webp",
             "image_location": {"x":64, "y":96},
             "image_zoom": 260,
-            "model": "gullveig",
+            "model": "gullveig", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -4996,14 +5105,14 @@
             "dices": { "0": "redreroll", "1": "orange", "2": "orange", "3": "none" },
             "skills": { "0": "attack/precision_strike", "1": "movement/blocking", "2": "none", "3": "none" },
             "tokens": [
-                { "image_location": {"x":74, "y":227}, "image_zoom": 450, "image": "data/tiles/img/half-giant_token.webp" }
+                { "image_location": {"x":74, "y":227}, "image_zoom": 450, "image_flip": true }
             ],
 
             "image": "data/tiles/img/half-giant.webp",
             "imageHD": "data/tiles/img/half-giant_hd.webp",
             "image_location": {"x":53, "y":53},
             "image_zoom": 130,
-            "model": "half-giant",
+            "model": "half-giant", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5024,7 +5133,7 @@
             "imageHD": "data/tiles/img/abomination_hd.webp",
             "image_location": {"x":59, "y":53},
             "image_zoom": 98,
-            "model": "abomination",
+            "model": "abomination", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5045,7 +5154,7 @@
             "imageHD": "data/tiles/img/child-of-jhil_hd.webp",
             "image_location": {"x":47, "y":54},
             "image_zoom": 110,
-            "model": "child-of-jhil",
+            "model": "child-of-jhil", "modelType": "animal",
             "origins": ["godsofthenorth"]
         },
         
@@ -5059,14 +5168,14 @@
             "dices": { "0": "redreroll", "1": "redreroll", "2": "redreroll", "3": "none" },
             "skills": { "0": "movement/blocking", "1": "attack/precision_strike", "2": "none", "3": "none" },
             "tokens": [
-                { "image_location": {"x":49, "y":39}, "image_zoom": 190, "image": "data/tiles/img/colossal-crawler_token.webp" }
+                { "image_location": {"x":49, "y":39}, "image_zoom": 190, "image_flip": true }
             ],
 
             "image": "data/tiles/img/colossal-crawler.webp",
             "imageHD": "data/tiles/img/colossal-crawler_hd.webp",
             "image_location": {"x":58, "y":59},
             "image_zoom": 105,
-            "model": "colossal-crawler",
+            "model": "colossal-crawler", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5080,14 +5189,14 @@
             "dices": { "0": "redreroll", "1": "redreroll", "2": "redreroll", "3": "redreroll" },
             "skills": { "0": "movement/evasive", "1": "attack/circular_strike", "2": "none", "3": "none" },
             "tokens": [
-                { "image_location": {"x":91, "y":85}, "image_zoom": 350, "image": "data/tiles/img/demon-wolf_token.webp"  }
+                { "image_location": {"x":91, "y":85}, "image_zoom": 350, "image_flip": true  }
             ],
 
             "image": "data/tiles/img/demon-wolf.webp",
             "imageHD": "data/tiles/img/demon-wolf_hd.webp",
             "image_location": {"x":48, "y":56},
             "image_zoom": 145,
-            "model": "demon-wolf",
+            "model": "demon-wolf", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5105,7 +5214,7 @@
             "imageHD": "data/tiles/img/demon-wolf_hd.webp",
             "image_location": {"x":48, "y":56},
             "image_zoom": 145,
-            "model": "demon-wolf",
+            "model": "demon-wolf", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5119,14 +5228,14 @@
             "dices": { "0": "redreroll", "1": "redreroll", "2": "orangereroll", "3": "none" },
             "skills": { "0": "movement/climb", "1": "miscellaneous/horror", "2": "none", "3": "none" },
             "tokens": [
-                { "image_location": {"x":51, "y":170}, "image_zoom": 320, "image": "data/tiles/img/draugr_token.webp" }
+                { "image_location": {"x":51, "y":170}, "image_zoom": 320, "image_flip": true }
             ],
 
             "image": "data/tiles/img/draugr.webp",
             "imageHD": "data/tiles/img/draugr_hd.webp",
             "image_location": {"x":51, "y":54},
             "image_zoom": 100,
-            "model": "draugr",
+            "model": "draugr", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5144,7 +5253,7 @@
             "imageHD": "data/tiles/img/draugr_hd.webp",
             "image_location": {"x":51, "y":54},
             "image_zoom": 100,
-            "model": "draugr",
+            "model": "draugr", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5158,14 +5267,14 @@
             "dices": { "0": "redreroll", "1": "orangereroll", "2": "orange", "3": "none" },
             "skills": { "0": "movement/leap", "1": "miscellaneous/jinx", "2": "none", "3": "none" },
             "tokens": [
-                { "image_location": {"x":114, "y":159}, "image_zoom": 300, "image": "data/tiles/img/fiend-of-the-drifts_token.webp" }
+                { "image_location": {"x":114, "y":159}, "image_zoom": 300, "image_flip": true }
             ],
 
             "image": "data/tiles/img/fiend-of-the-drifts.webp",
             "imageHD": "data/tiles/img/fiend-of-the-drifts_hd.webp",
             "image_location": {"x":44, "y":63},
             "image_zoom": 130,
-            "model": "fiend-of-the-drifts",
+            "model": "fiend-of-the-drifts", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5186,7 +5295,7 @@
             "imageHD": "data/tiles/img/fiend-of-ymir_hd.webp",
             "image_location": {"x":66, "y":56},
             "image_zoom": 107,
-            "model": "fiend-of-ymir",
+            "model": "fiend-of-ymir", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5205,7 +5314,7 @@
             "imageHD": "data/tiles/img/frozen-dead_hd.webp",
             "image_location": {"x":61, "y":59},
             "image_zoom": 100,
-            "model": "frozen-dead",
+            "model": "frozen-dead", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5224,7 +5333,7 @@
             "imageHD": "data/tiles/img/frozen-dead_hd.webp",
             "image_location": {"x":61, "y":59},
             "image_zoom": 100,
-            "model": "frozen-dead",
+            "model": "frozen-dead", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5238,7 +5347,7 @@
             "dices": { "0": "yellowreroll", "1": "yellowreroll", "2": "none", "3": "none" },
             "skills": { "0": "magic/spell_caster", "1": "miscellaneous/poison", "2": "none", "3": "none" },
             "tokens": [
-                { "image_location": {"x":84, "y":124}, "image_zoom": 350, "image": "data/tiles/img/infernal-crone_token.webp" }
+                { "image_location": {"x":84, "y":124}, "image_zoom": 350, "image_flip": true }
             ],
 
             "image": "data/tiles/img/infernal-crone.webp",
@@ -5246,7 +5355,7 @@
             "image_location": {"x":72, "y":64},
             "image_zoom": 195,
             "image_rotation": -17,
-            "model": "infernal-crone",
+            "model": "infernal-crone", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5267,7 +5376,7 @@
             "imageHD": "data/tiles/img/infernal-hound_hd.webp",
             "image_location": {"x":49, "y":54},
             "image_zoom": 105,
-            "model": "infernal-hound",
+            "model": "infernal-hound", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5281,14 +5390,14 @@
             "dices": { "0": "redreroll", "1": "redreroll", "2": "orangereroll", "3": "orangereroll" },
             "skills": { "0": "attack/circular_strike", "1": "movement/swimming", "2": "none", "3": "none" },
             "tokens": [
-                { "image_location": {"x":54, "y":86}, "image_zoom": 140, "image": "data/tiles/img/jormungand_token.webp" }
+                { "image_location": {"x":54, "y":86}, "image_zoom": 140, "image_flip": true }
             ],
 
             "image": "data/tiles/img/jormungand.webp",
             "imageHD": "data/tiles/img/jormungand_hd.webp",
             "image_location": {"x":50, "y":53},
             "image_zoom": 106,
-            "model": "jormungand",
+            "model": "jormungand", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5306,7 +5415,7 @@
             "imageHD": "data/tiles/img/jormungand_hd.webp",
             "image_location": {"x":50, "y":53},
             "image_zoom": 106,
-            "model": "jormungand",
+            "model": "jormungand", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5327,7 +5436,7 @@
             "imageHD": "data/tiles/img/nidhogg_hd.webp",
             "image_location": {"x":49, "y":52},
             "image_zoom": 102,
-            "model": "nidhogg",
+            "model": "nidhogg", "modelType": "monster",
             "origins": ["godsofthenorth"]
         }
         ,
@@ -5346,10 +5455,9 @@
             ],
 
             "image": "data/tiles/img/manifestation-of-ymir.webp",
-            "imageHD": "data/tiles/img/manifestation-of-ymir_hd.webp",
             "image_location": {"x":48, "y":63},
             "image_zoom": 140,
-            "model": "manifestation-of-ymir",
+            "model": "manifestation-of-ymir", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5367,7 +5475,7 @@
             "imageHD": "data/tiles/img/manifestation-of-ymir_hd.webp",
             "image_location": {"x":48, "y":63},
             "image_zoom": 140,
-            "model": "manifestation-of-ymir",
+            "model": "manifestation-of-ymir", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5381,14 +5489,13 @@
             "dices": { "0": "red", "1": "orangereroll", "2": "yellowreroll", "3": "none" },
             "skills": { "0": "movement/blocking", "1": "movement/wall_wrecker", "2": "none", "3": "none" },
             "tokens": [
-                { "image_location": {"x":88, "y":110}, "image_zoom": 270, "image": "data/tiles/img/son-of-ymir_token.webp" }
+                { "image_location": {"x":88, "y":110}, "image_zoom": 270, "image_flip": true }
             ],
 
             "image": "data/tiles/img/son-of-ymir.webp",
-            "imageHD": "data/tiles/img/son-of-ymir_hd.webp",
             "image_location": {"x":49, "y":57},
             "image_zoom": 101,
-            "model": "son-of-ymir",
+            "model": "son-of-ymir", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5402,14 +5509,14 @@
             "dices": { "0": "orangereroll", "1": "orangereroll", "2": "yellowreroll", "3": "none" },
             "skills": { "0": "miscellaneous/support", "1": "defense/protected", "2": "none", "3": "none" },
             "tokens": [
-                { "image_location": {"x":35, "y":172}, "image_zoom": 380, "image": "data/tiles/img/ymir-s-herald_token.webp" }
+                { "image_location": {"x":35, "y":172}, "image_zoom": 380, "image_flip": true }
             ],
 
             "image": "data/tiles/img/ymir-s-herald.webp",
             "imageHD": "data/tiles/img/ymir-s-herald_hd.webp",
             "image_location": {"x":53, "y":49},
             "image_zoom": 95,
-            "model": "ymir-s-herald",
+            "model": "ymir-s-herald", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5430,7 +5537,7 @@
             "imageHD": "data/tiles/img/ymir-s-hunt-master_hd.webp",
             "image_location": {"x":50, "y":54},
             "image_zoom": 106,
-            "model": "ymir-s-hunt-master",
+            "model": "ymir-s-hunt-master", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5451,7 +5558,7 @@
             "imageHD": "data/tiles/img/seer-of-ymir_hd.webp",
             "image_location": {"x":56, "y":51},
             "image_zoom": 78,
-            "model": "seer-of-ymir",
+            "model": "seer-of-ymir", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5465,13 +5572,12 @@
             "dices": { "0": "redreroll", "1": "redreroll", "2": "redreroll", "3": "none" },
             "skills": { "0": "movement/blocking", "1": "attack/attack_from_beyond", "2": "none", "3": "none" },
             "tokens": [
-                { "image_location": {"x":84, "y":180}, "image_zoom": 500, "image": "data/tiles/img/son-of-muspell_token.webp" }
+                { "image_location": {"x":84, "y":180}, "image_zoom": 500, "image_flip": true }
             ],
 
             "image": "data/tiles/img/son-of-muspell.webp",
-            "imageHD": "data/tiles/img/son-of-muspell_hd.webp",
             "image_location": {"x":36, "y":51},
-            "image_zoom": 165,
+            "image_zoom": 165, "modelType": "monster",
             "model": "son-of-muspell",
             "origins": ["godsofthenorth"]
         },
@@ -5486,14 +5592,14 @@
             "dices": { "0": "redreroll", "1": "redreroll", "2": "redreroll", "3": "none" },
             "skills": { "0": "attack/reach", "1": "miscellaneous/horror", "2": "none", "3": "none" },
             "tokens": [
-                { "image_location": {"x":50, "y":168}, "image_zoom": 320, "image": "data/tiles/img/surt_token.webp" }
+                { "image_location": {"x":50, "y":168}, "image_zoom": 320, "image_flip": true }
             ],
 
             "image": "data/tiles/img/surt.webp",
             "imageHD": "data/tiles/img/surt_hd.webp",
             "image_location": {"x":58, "y":55},
             "image_zoom": 130,
-            "model": "surt",
+            "model": "surt", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5511,8 +5617,1280 @@
             "imageHD": "data/tiles/img/surt_hd.webp",
             "image_location": {"x":58, "y":55},
             "image_zoom": 130,
-            "model": "surt",
+            "model": "surt", "modelType": "monster",
             "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "xotalanc-spearmen",
+
+            "colors": ["red"],
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "both",
+            "dices": { "0": "orangereroll", "1": "orangereroll", "2": "none", "3": "none" },
+            "dices2": { "0": "orange", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "attack/precision_shot", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+
+            "quote": null,
+
+            "image": "data/tiles/img/xotalanc-spearmen.webp",
+            "imageHD": "data/tiles/img/xotalanc-spearmen_hd.webp",
+            "image_location": {"x":48, "y":72},
+            "image_zoom": 147,
+            "model": "xotalanc-men",
+            "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "xotalanc-hunters",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "1",
+            "attacktype": "ranged",
+            "dices": { "0": "red", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "attack/elite_shooter", "1": "movement/climb", "2": "none", "3": "none" },
+            "reinforcement": "1",
+
+            "quote": null,
+
+            "image": "data/tiles/img/xotalanc-hunters.webp",
+            "imageHD": "data/tiles/img/xotalanc-hunters_hd.webp",
+            "image_location": {"x":57, "y":58},
+            "image_zoom": 95,
+            "model": "xotalanc-men",
+            "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "xotalanc-assassins",
+
+            "colors": ["green"],
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "both",
+            "dices": { "0": "orange", "1": "yellow", "2": "none", "3": "none" },
+            "dices2": { "0": "red", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "attack/precision_strike", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+
+            "quote": null,
+
+            "image": "data/tiles/img/xotalanc-assassins.webp",
+            "imageHD": "data/tiles/img/xotalanc-assassins_hd.webp",
+            "image_location": {"x":90, "y":68},
+            "image_zoom": 158,
+            "model": "xotalanc-women",
+            "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "xotalanc-huntresses",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "1",
+            "attacktype": "ranged",
+            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "attack/elite_shooter", "1": "attack/precision_shot", "2": "none", "3": "none" },
+            "reinforcement": "1",
+
+            "quote": null,
+
+            "image": "data/tiles/img/xotalanc-huntresses.webp",
+            "imageHD": "data/tiles/img/xotalanc-huntresses_hd.webp",
+            "image_location": {"x":50, "y":59},
+            "image_zoom": 107,
+            "model": "xotalanc-women",
+            "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "dragon-xuchotl",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "4",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "orange", "3": "yellow" },
+            "skills": { "0": "movement/evasive", "1": "attack/reach", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":21, "y":141}, "image_zoom": 320 }
+            ],
+
+            "quote": null,
+
+            "image": "data/tiles/img/dragon-xuchotl.webp",
+            "imageHD": "data/tiles/img/dragon-xuchotl_hd.webp",
+            "image_location": {"x":58, "y":59},
+            "image_zoom": 150,
+            "model": "dragon-xuchotl",
+            "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "dragon-2",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "5",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "redreroll", "3": "redreroll" },
+            "skills": { "0": "movement/blocking", "1": "movement/wall_wrecker", "2": "none", "3": "none" },
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/tiles/img/dragon-2.webp",
+            "imageHD": "data/tiles/img/dragon-2_hd.webp",
+            "image_location": {"x":64, "y":66},
+            "image_zoom": 190,
+            "model": "dragon-xuchotl",
+            "origins": ["red-nails"],
+
+            "count": 2
+        },
+        
+        {
+            "id": "burning-skull",
+
+            "colors": ["orange"],
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "yellowreroll", "2": "yellowreroll", "3": "none" },
+            "skills": { "0": "miscellaneous/jinx", "1": "miscellaneous/fascination", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":67, "y":235}, "image_zoom": 400 }
+            ],
+
+            "quote": null,
+
+            "image": "data/tiles/img/flaming-skeletons.webp",
+            "imageHD": "data/tiles/img/flaming-skeletons_hd.webp",
+            "image_location": {"x":73, "y":115},
+            "image_zoom": 275,
+            "model": "flaming-skeletons",
+            "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "flaming-skeletons",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "defense/untouchable", "1": "miscellaneous/horror", "2": "none", "3": "none" },
+            "reinforcement": "2",
+
+            "quote": null,
+
+            "image": "data/tiles/img/flaming-skeletons.webp",
+            "imageHD": "data/tiles/img/flaming-skeletons_hd.webp",
+            "image_location": {"x":63, "y":53},
+            "image_zoom": 106,
+            "model": "flaming-skeletons",
+            "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "tecuhltli-swordsmen",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "defense/sacrifice", "1": "attack/precision_strike", "2": "none", "3": "none" },
+            "reinforcement": "2",
+
+            "quote": null,
+
+            "image": "data/tiles/img/tecuhltli-swordsmen.webp",
+            "imageHD": "data/tiles/img/tecuhltli-swordsmen_hd.webp",
+            "image_location": {"x":60, "y":56},
+            "image_zoom": 122,
+            "model": "tecuhltli-swordsmen",
+            "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "crawler",
+
+            "colors": ["gray"],
+            "movement": "4",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "orangereroll", "2": "yellowreroll", "3": "none" },
+            "skills": { "0": "miscellaneous/horror", "1": "attack/attack_from_beyond", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":102, "y":155}, "image_zoom": 270, "image_flip": true }
+            ],
+
+            "quote": null,
+
+            "image": "data/tiles/img/crawler.webp",
+            "imageHD": "data/tiles/img/crawler_hd.webp",
+            "image_location": {"x":51, "y":57},
+            "image_zoom": 122,
+            "model": "crawler",
+            "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "olmec",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/support", "1": "movement/climb", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":36, "y":225}, "image_zoom": 350 }
+            ],
+
+            "quote": null,
+
+            "image": "data/heroes/img/olmec.webp",
+            "imageHD": "data/heroes/img/olmec_hd.webp",
+            "image_location": {"x":51, "y":53},
+            "image_zoom": 102,
+            "model": "olmec",
+            "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "tascela",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "yellowreroll", "2": "yellowreroll", "3": "none" },
+            "skills": { "0": "magic/spell_caster", "1": "miscellaneous/fascination", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":82, "y":182}, "image_zoom": 370 }
+            ],
+
+            "quote": null,
+
+            "image": "data/heroes/img/tascela.webp",
+            "imageHD": "data/heroes/img/tascela_hd.webp",
+            "image_location": {"x":61, "y":55},
+            "image_zoom": 120,
+            "model": "tascela",
+            "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "tolkemec",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "ranged",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
+            "skills": { "0": "movement/evasive", "1": "movement/leap", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":88, "y":133}, "image_zoom": 290 }
+            ],
+
+            "quote": null,
+
+            "image": "data/heroes/img/tolkemec.webp",
+            "imageHD": "data/heroes/img/tolkemec_hd.webp",
+            "image_location": {"x":61, "y":56},
+            "image_zoom": 116,
+            "model": "tolkemec",
+            "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "xotalanc-warriors",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "ranged",
+            "dices": { "0": "orange", "1": "yellowreroll", "2": "none", "3": "none" },
+            "skills": { "0": "movement/feline_grace", "1": "movement/climb", "2": "none", "3": "none" },
+            "reinforcement": "1",
+
+            "quote": null,
+
+            "image": "data/tiles/img/xotalanc-warriors.webp",
+            "imageHD": "data/tiles/img/xotalanc-warriors_hd.webp",
+            "image_location": {"x":61, "y":55},
+            "image_zoom": 111,
+            "model": "xotalanc-warriors",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "kushite-warriors",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "movement/climb", "1": "attack/reach", "2": "none", "3": "none" },
+            "reinforcement": "2",
+
+            "quote": null,
+
+            "image": "data/heroes/img/belits-guards.webp",
+            "image_flip": true,
+            "imageHD": "data/heroes/img/belits-guards.webp",
+            "image_location": {"x":47, "y":58},
+            "image_zoom": 146,
+            "model": "belits-guards",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "techotl",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "defense/sacrifice", "1": "attack/reach", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":15, "y":223}, "image_zoom": 410, "image_flip": true }
+            ],
+
+            "quote": null,
+
+            "image": "data/heroes/img/techotl.webp",
+            "image_flip": true,
+            "imageHD": "data/heroes/img/techotl_hd.webp",
+            "image_location": {"x":51, "y":55.5},
+            "image_zoom": 108,
+            "model": "techotl",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "stygian-captain",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "red", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/support", "1": "defense/sacrifice", "2": "none", "3": "none" },
+
+            "quote": null,
+
+            "image": "data/tiles/img/captain.webp",
+            "imageHD": "data/tiles/img/captain_hd.webp",
+            "image_location": {"x":52, "y":54},
+            "image_zoom": 117,
+            "model": "captain",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "conan-free-companion",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
+            "skills": { "0": "attack/reach", "1": "movement/climb", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":70, "y":143}, "image_zoom": 560 }
+            ],
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/heroes/img/conan-free-companion.webp",
+            "imageHD": "data/heroes/img/conan-free-companion_hd.webp",
+            "image_location": {"x":57, "y":52},
+            "image_zoom": 240,
+            "model": "conan-free-companion",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "valeria-free-companion",
+
+            "colors": ["gray"],
+            "movement": "4",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
+            "skills": { "0": "attack/counterattack", "1": "movement/climb", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":43, "y":149}, "image_zoom": 270, "image_flip": true }
+            ],
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/tiles/img/valeria-free-companion.webp",
+            "imageHD": "data/tiles/img/valeria-free-companion_hd.webp",
+            "image_location": {"x":54, "y":54},
+            "image_zoom": 118,
+            "model": "valeria-free-companion",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "soulless",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "yellowreroll", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "defense/untouchable", "1": "miscellaneous/jinx", "2": "none", "3": "none" },
+            "reinforcement": "1",
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/tiles/img/soulless.webp",
+            "imageHD": "data/tiles/img/soulless_hd.webp",
+            "image_location": {"x":60, "y":54},
+            "image_zoom": 135,
+            "model": ["mummies", "skeletons"],
+            "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "xuchotlan-archers",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "ranged",
+            "dices": { "0": "yellow", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/concentration", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+
+            "image": "data/tiles/img/bossonian-archers.webp",
+            "imageHD": "data/tiles/img/bossonian-archers_hd.webp",
+            "image_location": {"x":54, "y":57},
+            "image_zoom": 115,
+            "model": "bossonian-archers",
+            "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "crocodiles",
+
+            "colors": ["gray"],
+            "movement": "4",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "defense/untouchable", "1": "movement/swimming", "2": "none", "3": "none" },
+            "reinforcement": "2",
+
+            "image": "data/tiles/img/crocodiles.webp",
+            "imageHD": "data/tiles/img/crocodiles_hd.webp",
+            "image_location": {"x":45, "y":46},
+            "image_zoom": 100,
+            "model": "crocodiles",
+            "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "tlazitlans",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "yellow", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+
+            "image": "data/tiles/img/tlazitlans.webp",
+            "imageHD": "data/tiles/img/tlazitlans_hd.webp",
+            "image_location": {"x":26, "y":56},
+            "image_zoom": 155,
+            "model": ["tecuhltli-swordsmen", "xotalanc-women", "xotalanc-warriors"],
+            "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "worms-of-the-earth",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "yellow", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "movement/evasive", "1": "movement/climb", "2": "none", "3": "none" },
+            "reinforcement": "1",
+
+            "image": "data/tiles/img/worms-of-the-earth.webp",
+            "imageHD": "data/tiles/img/worms-of-the-earth_hd.webp",
+            "image_location": {"x":50, "y":70},
+            "image_zoom": 246,
+            "model": "worms-of-the-earth",
+            "origins": ["worms-earth"]
+        },
+        
+        {
+            "id": "brans-servants",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "movement/evasive", "1": "attack/counterattack", "2": "none", "3": "none" },
+            "reinforcement": "2",
+
+            "image": "data/tiles/img/worms-of-the-earth.webp",
+            "imageHD": "data/tiles/img/worms-of-the-earth_hd.webp",
+            "image_location": {"x":50, "y":70},
+            "image_zoom": 246,
+            "model": "worms-of-the-earth",
+            "origins": ["worms-earth"]
+        },
+        
+        {
+            "id": "atla",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "orangereroll", "2": "none", "3": "none" },
+            "skills": { "0": "magic/spell_caster", "1": "miscellaneous/horror", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":18, "y":221}, "image_zoom": 370 }
+            ],
+
+            "image": "data/heroes/img/atla.webp",
+            "imageHD": "data/heroes/img/atla_hd.webp",
+            "image_location": {"x":55, "y":54},
+            "image_zoom": 110,
+            "model": "atla",
+            "origins": ["worms-earth"]
+        },
+        
+        {
+            "id": "bran-mak-morn",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "orangereroll", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/support", "1": "movement/climb", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":81, "y":205}, "image_zoom": 330, "image_flip": true }
+            ],
+
+            "image": "data/heroes/img/bran-mak-morn.webp",
+            "image_flip": true,
+            "imageHD": "data/heroes/img/bran-mak-morn_hd.webp",
+            "image_location": {"x":61, "y":56},
+            "image_zoom": 118,
+            "model": "bran-mak-morn",
+            "origins": ["worms-earth"]
+        },
+        
+        {
+            "id": "drusus",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "4",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "yellowreroll", "3": "yellowreroll" },
+            "skills": { "0": "attack/precision_strike", "1": "attack/counterattack", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":7, "y":257}, "image_zoom": 370 }
+            ],
+
+            "image": "data/heroes/img/drusus.webp",
+            "imageHD": "data/heroes/img/drusus_hd.webp",
+            "image_location": {"x":45, "y":63},
+            "image_zoom": 115,
+            "model": "spartan",
+            "origins": ["worms-earth"]
+        },
+        
+        {
+            "id": "conan-the-berserker",
+
+            "colors": ["gray"],
+            "movement": "4",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "orangereroll", "2": "orange", "3": "none" },
+            "skills": { "0": "movement/evasive", "1": "attack/precision_strike", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image_location": {"x":31, "y":236}, "image_zoom": 500 }
+            ],
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/tiles/img/conan-the-berserker.webp",
+            "imageHD": "data/tiles/img/conan-the-berserker_hd.webp",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 127,
+            "model": "conan-the-berserker",
+            "origins": ["fbox"]
+        },
+        
+        {
+            "id": "conan-the-destroyer",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "red", "2": "orange", "3": "none" },
+            "skills": { "0": "movement/wall_wrecker", "1": "attack/precision_strike", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image_location": {"x":66, "y":141}, "image_zoom": 280 }
+            ],
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/tiles/img/conan-the-destroyer.webp",
+            "image_location": {"x":51, "y":51},
+            "image_zoom": 118,
+            "model": "conan-the-destroyer",
+            "origins": ["fbox"]
+        },
+        
+        {
+            "id": "spectral-guards",
+
+            "colors": ["green"],
+            "movement": "1",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "movement/intangible", "1": "none", "2": "none", "3": "none" },
+
+            "image": "data/tiles/img/spectral-guards.webp",
+            "imageHD": "data/tiles/img/spectral-guards_hd.webp",
+            "image_location": {"x":61, "y":58},
+            "image_zoom": 137,
+            "model": "bossonian-guards",
+            "origins": ["fbox"]
+        },
+        
+        {
+            "id": "veteran-bossonians",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/support", "1": "defense/sacrifice", "2": "none", "3": "none" },
+            "reinforcement": "2",
+
+            "image": "data/tiles/img/bossonian-guards.webp",
+            "imageHD": "data/tiles/img/bossonian-guards_hd.webp",
+            "image_location": {"x":61, "y":58},
+            "image_zoom": 137,
+            "model": "bossonian-guards",
+            "origins": ["versus-mode"]
+        },
+        
+        {
+            "id": "guardians",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "yellowreroll", "1": "yellowreroll", "2": "none", "3": "none" },
+            "skills": { "0": "movement/blocking", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+
+            "image": "data/tiles/img/bossonian-guards.webp",
+            "imageHD": "data/tiles/img/bossonian-guards_hd.webp",
+            "image_location": {"x":61, "y":58},
+            "image_zoom": 137,
+            "model": "bossonian-guards",
+            "origins": ["versus-mode"]
+        },
+
+        {
+            "id": "pict-bloddhounds",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "yellowreroll", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "movement/feline_grace", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+
+            "image": "data/tiles/img/pict-hunters.webp",
+            "imageHD": "data/tiles/img/pict-hunters_hd.webp",
+            "image_location": {"x":63, "y":50},
+            "image_zoom": 114,
+            "model": "pict-hunters",
+            "origins": ["versus-mode"]
+        },
+
+        {
+            "id": "pict-trackers",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "1",
+            "attacktype": "both",
+            "dices": { "0": "yellowreroll", "1": "yellow", "2": "none", "3": "none" },
+            "dices2": { "0": "yellowreroll", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "2",
+
+            "image": "data/tiles/img/pict-hunters.webp",
+            "imageHD": "data/tiles/img/pict-hunters_hd.webp",
+            "image_location": {"x":63, "y":50},
+            "image_zoom": 114,
+            "model": "pict-hunters",
+            "origins": ["versus-mode"]
+        },
+        
+        {
+            "id": "black-dragons-2",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "attack/counterattack", "1": "defense/sacrifice", "2": "none", "3": "none" },
+            "reinforcement": "2",
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/tiles/img/black-dragons.webp",
+            "imageHD": "data/tiles/img/black-dragons_hd.webp",
+            "image_location": {"x":60, "y":57},
+            "image_zoom": 95,
+            "model": "black-dragons",
+            "origins": ["versus-mode"],
+
+            "count": 1
+        },
+        
+        {
+            "id": "elite-black-dragons",
+
+            "colors": ["red"],
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "attack/precision_strike", "1": "defense/sacrifice", "2": "none", "3": "none" },
+            "reinforcement": "2",
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/tiles/img/black-dragons.webp",
+            "imageHD": "data/tiles/img/black-dragons_hd.webp",
+            "image_location": {"x":60, "y":57},
+            "image_zoom": 95,
+            "model": "black-dragons",
+            "origins": ["versus-mode"],
+
+            "count": 1
+        },
+        
+        {
+            "id": "risen-corpses",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/horror", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/tiles/img/mummies.webp",
+            "imageHD": "data/tiles/img/mummies_hd.webp",
+            "image_location": {"x":58, "y":52},
+            "image_zoom": 83,
+            "model": "mummies",
+            "origins": ["versus-mode"]
+        },
+        
+        {
+            "id": "bandits",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "yellowreroll", "2": "none", "3": "none" },
+            "skills": { "0": "defense/untouchable", "1": "movement/feline_grace", "2": "none", "3": "none" },
+            "reinforcement": "2",
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/tiles/img/pirates.webp",
+            "imageHD": "data/tiles/img/pirates_hd.webp",
+            "image_location": {"x":68, "y":55},
+            "image_zoom": 91,
+            "model": "pirates",
+            "origins": ["versus-mode"]
+        },
+        
+        {
+            "id": "the-dead",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "attack/reach", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "2",
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/tiles/img/skeletons.webp",
+            "imageHD": "data/tiles/img/skeletons_hd.webp",
+            "image_location": {"x":64, "y":50},
+            "image_zoom": 123,
+            "model": "skeletons",
+            "origins": ["versus-mode"]
+        },
+        
+        {
+            "id": "the-undead",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "attack/attack_from_beyond", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/tiles/img/skeletons.webp",
+            "imageHD": "data/tiles/img/skeletons_hd.webp",
+            "image_location": {"x":64, "y":50},
+            "image_zoom": 123,
+            "model": "skeletons",
+            "origins": ["versus-mode"]
+        },
+        
+        {
+            "id": "revenants",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "1",
+            "defenseDice": "yellow",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
+
+            "image": "data/tiles/img/revenants.webp",
+            "image_location": {"x":50, "y":49},
+            "image_zoom": 60,
+            "model": "none", "modelType": "monster",
+            "origins": ["versus-mode"]
+        },
+        
+        {
+            "id": "bog-ghouls",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "1",
+            "defenseDice": "yellow",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
+
+            "image": "data/tiles/img/bog-ghouls.webp",
+            "image_location": {"x":50, "y":49},
+            "image_zoom": 60,
+            "model": "none", "modelType": "monster",
+            "origins": ["versus-mode"]
+        },
+        
+        {
+            "id": "othryades",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "red", "2": "none", "3": "none" },
+            "skills": { "0": "movement/wall_wrecker", "1": "movement/blocking", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":7, "y":257}, "image_zoom": 370 }
+            ],
+
+            "image": "data/heroes/img/drusus.webp",
+            "imageHD": "data/heroes/img/drusus_hd.webp",
+            "image_location": {"x":45, "y":63},
+            "image_zoom": 115,
+            "model": "spartan",
+            "origins": ["versus-mode"]
+        },
+        
+        {
+            "id": "pelias",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "yellow", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/jinx", "1": "magic/spell_caster", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image_location": {"x":47, "y":217}, "image_zoom": 180, "image_flip": true }
+            ],
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/heroes/img/pelias.webp",
+            "imageHD": "data/heroes/img/pelias_hd.webp",
+            "image_location": {"x":56, "y":62},
+            "image_zoom": 68,
+            "model": "pelias",
+            "origins": ["versus-mode"]
+        },
+        
+        {
+            "id": "conan-warlord",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "red", "3": "none" },
+            "skills": { "0": "movement/wall_wrecker", "1": "attack/circular_strike", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image_location": {"x":47, "y":199}, "image_zoom": 300 }
+            ],
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/heroes/img/conan-warlord.webp",
+            "imageHD": "data/heroes/img/conan-warlord_hd.webp",
+            "image_location": {"x":53, "y":61},
+            "image_zoom": 118,
+            "model": "conan-warlord",
+            "origins": ["versus-mode"]
+        },
+        
+        {
+            "id": "conan-mercenary",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "red", "2": "orange", "3": "none" },
+            "skills": { "0": "attack/precision_strike", "1": "movement/blocking", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image_location": {"x":55, "y":201}, "image_zoom": 316 }
+            ],
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/heroes/img/conan-mercenary.webp",
+            "imageHD": "data/heroes/img/conan-mercenary_hd.webp",
+            "image_location": {"x":56, "y":68},
+            "image_zoom": 135,
+            "model": "conan-mercenary",
+            "origins": ["versus-mode"]
+        },
+        
+        {
+            "id": "conan-general",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "red", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/support", "1": "miscellaneous/leadership", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image_location": {"x":42, "y":165}, "image_zoom": 300 }
+            ],
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/heroes/img/conan-general.webp",
+            "image_flip": true,
+            "imageHD": "data/heroes/img/conan-general_hd.webp",
+            "image_location": {"x":54, "y":56},
+            "image_zoom": 130,
+            "model": "conan-general",
+            "origins": ["versus-mode"]
+        },
+        
+        {
+            "id": "savage-belit",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "orangereroll", "2": "none", "3": "none" },
+            "skills": { "0": "attack/counterattack", "1": "movement/evasive", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image_location": {"x":47, "y":225}, "image_zoom": 400 }
+            ],
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/heroes/img/savage-belit.webp",
+            "image_flip": true,
+            "imageHD": "data/heroes/img/savage-belit_hd.webp",
+            "image_location": {"x":63, "y":67},
+            "image_zoom": 160,
+            "model": "savage-belit",
+            "origins": ["versus-mode"]
+        },
+        
+        {
+            "id": "conan-wanderer",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "orangereroll", "2": "orange", "3": "none" },
+            "skills": { "0": "movement/feline_grace", "1": "attack/counterattack", "2": "none", "3": "none" },
+            "reinforcement": "",
+            "tokens": [
+                { "image_location": {"x":35, "y":182}, "image_zoom": 320, "image_flip": true }
+            ],
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/heroes/img/conan-wanderer.webp",
+            "imageHD": "data/heroes/img/conan-wanderer_hd.webp",
+            "image_location": {"x":58, "y":56},
+            "image_zoom": 128,
+            "model": "conan-wanderer",
+            "origins": ["versus-mode"]
+        },
+        
+        {
+            "id": "gundermen-mercenaries",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "both",
+            "dices": { "0": "yellowreroll", "1": "yellow", "2": "none", "3": "none" },
+            "dices2": { "0": "yellowreroll", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "attack/precision_shot", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+
+            "image": "data/heroes/img/nestor.webp",
+            "image_flip": true,
+            "imageHD": "data/heroes/img/nestor_hd.webp",
+            "image_location": {"x":45, "y":52},
+            "image_zoom": 169,
+            "model": "gundermen-mercenaries",
+            "origins": ["versus-mode"]
+        },
+        
+        {
+            "id": "nestor",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "red", "2": "none", "3": "none" },
+            "skills": { "0": "movement/evasive", "1": "attack/counterattack", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":-24, "y":173}, "image_zoom": 500, "image": "data/heroes/img/nestor.webp", "image_flip": true }
+            ],
+
+            "image": "data/heroes/img/nestor.webp",
+            "imageHD": "data/heroes/img/nestor_hd.webp",
+            "image_location": {"x":79, "y":54},
+            "image_zoom": 193,
+            "model": "gundermen-mercenaries",
+            "origins": ["versus-mode"]
+        },
+        
+        {
+            "id": "kushite-mercenaries",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "ranged",
+            "dices": { "0": "orange", "1": "yellowreroll", "2": "none", "3": "none" },
+            "skills": { "0": "attack/ambidextrous", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+
+            "image": "data/heroes/img/aja.webp",
+            "imageHD": "data/heroes/img/aja_hd.webp",
+            "image_location": {"x":56, "y":54},
+            "image_zoom": 180,
+            "model": "kushite-mercenaries",
+            "origins": ["versus-mode"]
+        },
+        
+        {
+            "id": "aja",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "ranged",
+            "dices": { "0": "orange", "1": "orange", "2": "orange", "3": "none" },
+            "skills": { "0": "attack/elite_shooter", "1": "defense/untouchable", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":82, "y":164}, "image_zoom": 550 }
+            ],
+
+            "image": "data/heroes/img/aja.webp",
+            "image_flip": true,
+            "imageHD": "data/heroes/img/aja_hd.webp",
+            "image_location": {"x":49, "y":63},
+            "image_zoom": 223,
+            "model": "kushite-mercenaries",
+            "origins": ["versus-mode"]
+        },
+        
+        {
+            "id": "hyrkanian-mercenaries",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "movement/blocking", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "2",
+
+            "image": "data/heroes/img/ganbaatar.webp",
+            "imageHD": "data/heroes/img/ganbaatar_hd.webp",
+            "image_location": {"x":48, "y":52},
+            "image_zoom": 185,
+            "model": "hyrkanian-mercenaries",
+            "origins": ["versus-mode"]
+        },
+        
+        {
+            "id": "ganbaatar",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "3",
+            "attacktype": "ranged",
+            "dices": { "0": "redreroll", "1": "orangereroll", "2": "none", "3": "none" },
+            "skills": { "0": "movement/blocking", "1": "attack/counterattack", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":43, "y":117}, "image_zoom": 550 }
+            ],
+
+            "image": "data/heroes/img/ganbaatar.webp",
+            "image_flip": true,
+            "imageHD": "data/heroes/img/ganbaatar_hd.webp",
+            "image_location": {"x":61, "y":45},
+            "image_zoom": 215,
+            "model": "hyrkanian-mercenaries",
+            "origins": ["versus-mode"]
         }
     ]
 }

@@ -5,7 +5,8 @@ EncyclopediaTokens._i18n = {
     'token': "exemplaire",
     'tokens': "exemplaires",
     'skills': "Utilisé par la compétence :",
-    'spells': "Utilisé par le sort :"
+    'spells': "Utilisé par le sort :",
+    'equipments': "Utilisé par l'équipement"
 };
 
 EncyclopediaTokens._facets = {
@@ -27,7 +28,8 @@ EncyclopediaTokens._facets = {
         'values': {
             'model': { 'label': "Figurine" },
             'skill': { 'label': "Compétence" },
-            'spell': { 'label': "Sort" }
+            'spell': { 'label': "Sort" },
+            'equipment': { 'label': "Equipement" }
         }
     }
 };

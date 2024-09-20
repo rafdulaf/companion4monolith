@@ -49,6 +49,32 @@
         },
 
         {
+            "id": "borne_by_the_wind-versus",
+            
+            "type": "versus",
+
+            "cost": "1",
+            "saturation": "1",
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": false,
+            "forHeroes": false,
+
+            "forSkill": "flying",
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": true,
+            "forRange": false,
+            "forEnergy": false,
+
+            "image": "data/spells/img/borne_by_the_wind.webp",
+            "origins": ["versus-mode"]
+        },
+
+        {
             "id": "borne_by_the_wind",
 
             "cost": "1",
@@ -97,6 +123,32 @@
         },
 
         {
+            "id": "energy_drain-versus",
+            
+            "type": "versus",
+
+            "cost": "1",
+            "saturation": "1",
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": false,
+            "forHeroes": false,
+
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": true,
+
+            "image": "data/spells/img/energy_drain.webp",
+            "origins": ["versus-mode"]
+        },
+
+        {
             "id": "gift_of_life",
 
             "cost": "2",
@@ -118,6 +170,32 @@
 
             "image": "data/spells/img/gift_of_life.webp",
             "origins": ["corebox"]
+        },
+
+        {
+            "id": "gift_of_life-versus",
+
+            "type": "versus",
+            
+            "cost": "2",
+            "saturation": "2",
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": false,
+            "forHeroes": false,
+
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": true,
+
+            "image": "data/spells/img/gift_of_life.webp",
+            "origins": ["versus-mode"]
         },
 
         {
@@ -193,6 +271,32 @@
         },
 
         {
+            "id": "magical_dizziness-versus",
+            
+            "type": "versus",
+
+            "cost": "2",
+            "saturation": "2",
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": false,
+            "forHeroes": false,
+
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": true,
+
+            "image": "data/spells/img/magical_dizziness.webp",
+            "origins": ["versus-mode"]
+        },
+
+        {
             "id": "mind_control",
 
             "cost": "1",
@@ -243,6 +347,32 @@
         },
 
         {
+            "id": "mitras_halo-versus",
+            
+            "type": "versus",
+
+            "cost": "2",
+            "saturation": "2",
+            "explosion": false,
+            "reaction": true,
+
+            "forOverlord": false,
+            "forHeroes": false,
+
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": true,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": false,
+            "forEnergy": false,
+
+            "image": "data/spells/img/mitras_halo.webp",
+            "origins": ["versus-mode"]
+        },
+
+        {
             "id": "mitras_healing",
 
             "cost": "2",
@@ -264,6 +394,32 @@
 
             "image": "data/spells/img/mitras_healing.webp",
             "origins": ["corebox"]
+        },
+
+        {
+            "id": "mitras_healing-versus",
+            
+            "type": "versus",
+
+            "cost": "2",
+            "saturation": "2",
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": false,
+            "forHeroes": false,
+
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": false,
+            "forEnergy": true,
+
+            "image": "data/spells/img/mitras_healing.webp",
+            "origins": ["versus-mode"]
         },
 
         {
@@ -315,6 +471,32 @@
         },
 
         {
+            "id": "sets_bite-versus",
+
+            "type": "versus",
+
+            "cost": "2",
+            "saturation": "2",
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": false,
+            "forHeroes": false,
+
+            "forSkill": false,
+            "forAttack": true,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": false,
+
+            "image": "data/spells/img/sets_bite.webp",
+            "origins": ["versus-mode"]
+        },
+
+        {
             "id": "sets_halo",
 
             "cost": "2",
@@ -338,6 +520,32 @@
             "origins": ["corebox"],
 
             "tokens": ["set-halo"]
+        },
+
+        {
+            "id": "sets_halo-versus",
+            
+            "type": "versus",
+
+            "cost": "2",
+            "saturation": "2",
+            "explosion": false,
+            "reaction": true,
+
+            "forOverlord": false,
+            "forHeroes": false,
+
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": true,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": false,
+            "forEnergy": false,
+
+            "image": "data/spells/img/sets_halo.webp",
+            "origins": ["versus-mode"]
         },
 
         {
@@ -415,6 +623,32 @@
         },
 
         {
+            "id": "telekinesis-versus",
+            
+            "type": "versus",
+
+            "cost": "1",
+            "saturation": "1",
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": false,
+            "forHeroes": false,
+
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": false,
+
+            "image": "data/spells/img/telekinesis.webp",
+            "origins": ["versus-mode"]
+        },
+
+        {
             "id": "teleportation",
 
             "cost": "1",
@@ -484,6 +718,32 @@
 
             "image": "data/spells/img/archer_of_acheron.webp",
             "origins": ["stretchgoal"]
+        },
+
+        {
+            "id": "archer_of_acheron-versus",
+            
+            "type": "versus",
+
+            "cost": "2",
+            "saturation": "2",
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": false,
+            "forHeroes": false,
+
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": true,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": false,
+
+            "image": "data/spells/img/archer_of_acheron.webp",
+            "origins": ["versus-mode"]
         },
 
         {
@@ -628,6 +888,32 @@
 
             "image": "data/spells/img/changing_destiny.webp",
             "origins": ["stretchgoal"]
+        },
+
+        {
+            "id": "changing_destiny-versus",
+            
+            "type": "versus",
+
+            "cost": "4",
+            "saturation": "4",
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": false,
+            "forHeroes": false,
+
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": true,
+
+            "image": "data/spells/img/changing_destiny.webp",
+            "origins": ["versus-mode"]
         },
 
         {
@@ -823,6 +1109,32 @@
         },
 
         {
+            "id": "escape_route-versus",
+            
+            "type": "versus",
+
+            "cost": "2",
+            "saturation": "2",
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": false,
+            "forHeroes": false,
+
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": true,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": false,
+
+            "image": "data/spells/img/escape_route.webp",
+            "origins": ["versus-mode"]
+        },
+
+        {
             "id": "fleet_runner",
 
             "cost": "3",
@@ -847,6 +1159,32 @@
         },
 
         {
+            "id": "fleet_runner-versus",
+
+            "type": "versus",
+
+            "cost": "3",
+            "saturation": "3",
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": false,
+            "forHeroes": false,
+
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": true,
+            "forRange": true,
+            "forEnergy": false,
+
+            "image": "data/spells/img/fleet_runner.webp",
+            "origins": ["versus-mode"]
+        },
+
+        {
             "id": "gullahs_strength",
 
             "cost": "2",
@@ -868,6 +1206,32 @@
 
             "image": "data/spells/img/gullahs_strength.webp",
             "origins": ["stretchgoal"]
+        },
+
+        {
+            "id": "gullahs_strength-versus",
+
+            "type": "versus",
+            
+            "cost": "2",
+            "saturation": "2",
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": false,
+            "forHeroes": false,
+
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": true,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": false,
+
+            "image": "data/spells/img/gullahs_strength.webp",
+            "origins": ["versus-mode"]
         },
 
         {
@@ -1060,6 +1424,32 @@
 
             "image": "data/spells/img/life_transfer.webp",
             "origins": ["stretchgoal"]
+        },
+
+        {
+            "id": "life_transfer-versus",
+            
+            "type": "versus",
+
+            "cost": "2",
+            "saturation": "2",
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": false,
+            "forHeroes": false,
+
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": true,
+
+            "image": "data/spells/img/life_transfer.webp",
+            "origins": ["versus-mode"]
         },
 
         {
@@ -1830,6 +2220,128 @@
 
             "image": "data/spells/img/ice_bolt.webp",
             "origins": ["godsofthenorth"]
+        },
+
+        {
+            "id": "soul_leech",
+
+            "cost": "2",
+            "saturation": "2",
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": true,
+            "forHeroes": false,
+
+            "forSkill": false,
+            "forAttack": true,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": false,
+            "forEnergy": false,
+
+            "image": "data/spells/img/soul_leech.webp",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "enthrallment",
+
+            "cost": "1",
+            "saturation": "1",
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": true,
+            "forHeroes": true,
+
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": true,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": false,
+            "forEnergy": false,
+
+            "image": "data/spells/img/enthrallment.webp",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "eldritch_lance",
+
+            "cost": "2",
+            "saturation": "4",
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": true,
+            "forHeroes": true,
+
+            "forSkill": false,
+            "forAttack": true,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": false,
+
+            "image": "data/spells/img/eldritch_lance.webp",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "spectral_shroud",
+
+            "cost": "2",
+            "saturation": "2",
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": true,
+            "forHeroes": true,
+
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": true,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": false,
+            "forEnergy": false,
+
+            "image": "data/spells/img/spectral_shroud.webp",
+            "origins": ["red-nails"],
+            
+            "tokens": ["spectral-shroud"]
+        },
+
+        {
+            "id": "protective_circle",
+
+            "cost": "4",
+            "saturation": "4",
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": true,
+            "forHeroes": true,
+
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": true,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": false,
+            "forEnergy": false,
+
+            "image": "data/spells/img/protective_circle.webp",
+            "origins": ["red-nails"]
         }
     ]
 }

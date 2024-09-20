@@ -63,5 +63,11 @@ EncyclopediaTiles._facets = {
         'label': "Attacco ~",
         'to': "a",
         'axes': "asce"
+    },
+    'reinforcement': {
+        'label': "Rinforzo",
+        'values': {
+            'without': { 'label': "Nessuno" }
+        }
     }
 };

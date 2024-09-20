@@ -446,6 +446,13 @@
                 "origin": "L'Heure du Dragon"
             }
         },
+        "crossbowmen-blue": {
+            "name": "Arbalétriers",
+            "quote": {
+                "text": "Le roi et ses alliés firent route vers l'Ouest, à la tête de cinquante mille hommes, chevaliers en armure étincelante, leurs étendards flottant au vent au-dessus de leurs casques, piquiers au casque d'acier dans leur brigandine, arbalétriers en pourpoint de cuir.",
+                "origin": "L'Heure du Dragon"
+            }
+        },
         "demon-of-the-earth": {
             "name": "Démon de la Terre",
             "quote": {
@@ -543,7 +550,7 @@
             }
         },
         "vanir-zombies": {
-            "name": "Revenants Vanir",
+            "name": "Revenants Vanirs",
             "quote": {
                 "text": "À quoi ressemblent ces gens du Nord ? demanda Prospero. - Ils sont grands et ont les yeux bleus ; leur sang et leur langue sont identiques, mais les Aesirs ont les cheveux blonds et les Vanirs, les cheveux roux. Leur principal dieu est Ymir, le géant du gel ; ils ne sont pas dirigés par un grand roi, mais chaque tribu a son propre suzerain. Ils sont sauvages, capricieux et féroces. Ils se battent toute la journée, et la nuit ils boivent de l'ale et mugissent leurs chants sauvages.",
                 "origin": "Le Phénix sur l’Épée"
@@ -560,6 +567,13 @@
             }
         },
         "crows-red": {
+            "name": "Corbeaux",
+            "quote": {
+                "text": "Comme il franchissait la dernière crête de la colline, un cri rauque retentit soudain au-dessus de sa tête. Il leva les yeux et aperçut le corbeau qui battait des ailes haut dans le ciel, à sa verticale, croassant sans cesse. Conan poursuivit son chemin et le volatile le suivit, restant toujours au-dessus de lui, rendant la matinée hideuse avec ses cris stridents et se moquant des efforts du Cimmérien pour le chasser. Cela dura des heures, jusqu'à ce que les nerfs de Conan soient tendus à vifs. Il aurait donné la moitié de son royaume pour qu'on lui permette de tordre ce cou noir. -Par les diables de 1'enfer! jura-t-il dans une rage futile, en agitant son poing bardé d'acier vers le volatile aux cris frénétiques. Pourquoi me tourmentes-tu avec tes cris incessants ? Hors de ma vue, engeance des Enfers, et va donc picorer dans les champs de blé des paysans !",
+                "origin": "L'Heure du Dragon"
+            }
+        },
+        "crows-2": {
             "name": "Corbeaux",
             "quote": {
                 "text": "Comme il franchissait la dernière crête de la colline, un cri rauque retentit soudain au-dessus de sa tête. Il leva les yeux et aperçut le corbeau qui battait des ailes haut dans le ciel, à sa verticale, croassant sans cesse. Conan poursuivit son chemin et le volatile le suivit, restant toujours au-dessus de lui, rendant la matinée hideuse avec ses cris stridents et se moquant des efforts du Cimmérien pour le chasser. Cela dura des heures, jusqu'à ce que les nerfs de Conan soient tendus à vifs. Il aurait donné la moitié de son royaume pour qu'on lui permette de tordre ce cou noir. -Par les diables de 1'enfer! jura-t-il dans une rage futile, en agitant son poing bardé d'acier vers le volatile aux cris frénétiques. Pourquoi me tourmentes-tu avec tes cris incessants ? Hors de ma vue, engeance des Enfers, et va donc picorer dans les champs de blé des paysans !",
@@ -637,6 +651,9 @@
             "name": "Gardes éternels"
         },
         "assassins": {
+            "name": "Assassins"
+        },
+        "assassins-red": {
             "name": "Assassins"
         },
         "hoplites": {
@@ -896,7 +913,7 @@
         "asgrim": {
             "name": "Asgrim"
         },
-        "atla": {
+        "atla-gotn": {
             "name": "Atla"
         },
         "bragi": {
@@ -957,7 +974,7 @@
             "name": "Fanatiques Vanirs"
         },
         "vanir-guards": {
-            "name": "Guardes Vanirs"
+            "name": "Gardes Vanirs"
         },
         "berserker-champion": {
             "name": "Champion Berserker"
@@ -990,19 +1007,19 @@
             "name": "Meute de Loups"
         },
         "frost-giant-deceiver": {
-            "name": "Tompeur des Géants du gel"
+            "name": "Géant du gel Trompeur"
         },
         "frost-giant-temptress": {
-            "name": "Géant du gel Tentatrice"
+            "name": "Géante du gel Tentatrice"
         },
         "frost-giant-huntress": {
-            "name": "Géants du gel Chasseresse"
+            "name": "Géante du gel Chasseresse"
         },
         "frost-giant-jarl": {
             "name": "Géant du gel Jarl"
         },
         "frost-giant-oracle": {
-            "name": "Géant du gel Oracle"
+            "name": "Géante du gel Oracle"
         },
         "frost-giant-savage": {
             "name": "Géant du gel Sauvage"
@@ -1017,10 +1034,10 @@
             "name": "Géant du gel Vétéran"
         },
         "frost-giant-warlord": {
-            "name": "Géant du gel Conquérante"
+            "name": "Géante du gel Conquérante"
         },
         "frost-giant-weaver": {
-            "name": "Géants du gel Tisserande"
+            "name": "Géante du gel Tisserande"
         },
         "gullveig": {
             "name": "Gullveig"
@@ -1059,10 +1076,10 @@
             "name": "Démone d'Ymir"
         },
         "frozen-dead": {
-            "name": "Mort Glacés"
+            "name": "Morts Glacés"
         },
         "frozen-dead-2": {
-            "name": "Mort Glacés"
+            "name": "Morts Glacés"
         },
         "infernal-crone": {
             "name": "Mégère infernale"
@@ -1105,6 +1122,248 @@
         },
         "injured-surt": {
             "name": "Surt Blessé"
+        },
+        "xotalanc-spearmen": {
+            "name": "Lanciers Xotalancas"
+        },
+        "xotalanc-hunters": {
+            "name": "Chasseurs Xotalancas"
+        },
+        "xotalanc-assassins": {
+            "name": "Assassins Xotalancas"
+        },
+        "xotalanc-huntresses": {
+            "name": "Chasseuses Xotalancas"
+        },
+        "dragon-xuchotl": {
+            "name": "Dragon de Xuchotl"
+        },
+        "dragon-2": {
+            "name": "Dragon",
+            "quote": {
+                "text": "Une tête de cauchemar et de démence venait d'apparaître à travers les taillis. Des mâchoires grimaçantes découvraient des rangées de défenses jaunies dégouttant de sang; au-dessus de la gueule béante se trouvait un museau semblable à celui d'un saurien. Des yeux énormes, ressemblant à ceux d'un python, mais grossis un millier de fois, fixaient sans ciller les deux humains pétrifiés qui s'accrochaient au rocher au-dessus de lui. Du sang coulait de sa gueule, maculant ses lèvres squameuses et flasques. Sa tête, plus grosse que celle d'un crocodile, était arquée au bout d'un long cou écailleux sur lequel était hérissée une rangée de pointes en dents de scie. Derrière ce cou, écrasant les bruyères et les jeunes arbres, s'avançait lourdement un corps de titan au torse bombé, posé sur des pattes absurdement courtes. Son ventre blanchâtre balayait presque le sol et le cou crénelé de piques était trop haut pour que Conan l'atteigne sur la pointe des pieds. Une longue queue pointue, pareille à celle d'un scorpion aux proportions gigantesques, traînait à sa suite.",
+                "origin": "Les Clous Rouges"
+            }
+        },
+        "burning-skull": {
+            "name": "Crâne Ardent"
+        },
+        "flaming-skeletons": {
+            "name": "Squelettes Ardents"
+        },
+        "tecuhltli-swordsmen": {
+            "name": "Épéistes Tecuhltlis"
+        },
+        "crawler": {
+            "name": "Être Rampant"
+        },
+        "olmec": {
+            "name": "Olmec"
+        },
+        "tascela": {
+            "name": "Tascela"
+        },
+        "tolkemec": {
+            "name": "Tolkemec"
+        },
+        "xotalanc-warriors": {
+            "name": "Guerriers Xotalancas"
+        },
+        "kushite-warriors": {
+            "name": "Guerriers Kushites"
+        },
+        "techotl": {
+            "name": "Techotl"
+        },
+        "stygian-captain": {
+            "name": "Captaine Stygien"
+        },
+        "conan-free-companion": {
+            "name": "Conan de la Compagnie Franche",
+            "size": 78,
+            "quote": {
+                "text": "Arus vit un homme jeune, grand et puissamment bâti, nu à l'exception d'un pagne et de sandales lacées haut sur les chevilles. Sa peau était tannée comme s'il venait des régions désertiques du globe, et Arus se sentit mal à l'aise en voyant ses épaules larges, son torse massif et ses bras puissants. Un simple coup d'oeil sur ce visage renfrogné au front large lui suffit pour comprendre qu'il n'avait pas affaire à un Némédien. Sous une tignasse de cheveux noirs ébouriffés, deux yeux bleus menaçants couvaient, prêts à s'embraser. Une longue épée dans son fourreau de cuir pendait à son ceinturon.",
+                "origin": "Le Dieu dans l'Urne"
+            }
+        },
+        "valeria-free-companion": {
+            "name": "Valeria de la Compagnie Franche",
+            "size": 78,
+            "quote": {
+                "text": "Elle était grande, avait une poitrine opulente, des membres longs et des épaules robustes. Toute sa silhouette témoignait d'une force peu commune, sans toutefois rien ôter de la grâce féminine qui se dégageait de son apparence. En dépit de son port et de ses vêtements, tout en elle respirait la féminité. Ses habits semblaient incongrus, étant donné le décor environnant. Elle ne portait pas une jupe, mais d'amples culottes de soie s'arrêtant à une largeur de main au-dessus des genoux, retenues par une large bande de soie enroulée autour de sa taille comme une ceinture. Ses bottes évasées en cuir souple lui arrivaient presque aux genoux et sa chemise de soie décolletée, aux manches et au col bouffants, complétaient son costume. Une épée droite à double tranchant pendait sur une de ses hanches gracieuses et une longue dague sur l'autre. Ses cheveux blonds et ébouriffés, coupés au carré à la hauteur des épaules, étaient retenus par un bandeau de satin écarlate.",
+                "origin": "Les Clous Rouges"
+            }
+        },
+        "soulless": {
+            "name": "Sans-Âmes",
+            "quote": {
+                "text": "Dix des hommes de ce groupe étaient des prêtres et, bien qu'ils se soient débarrassés de leur masque, Conan savait qu'il s'agissait de ceux qu'il avait accompagnés jusqu'à la pyramide. Ils se tenaient autour d'un homme de grande taille et aux traits de rapace, à proximité d'un autel noir sur lequel était étendue une momie dans ses bandelettes en décomposition.",
+                "origin": "The Hour of the Dragon"
+            }
+        },
+        "xuchotlan-archers": {
+            "name": "Archers Xuchotlans"
+        },
+        "crocodiles": {
+            "name": "Crocodiles"
+        },
+        "tlazitlans": {
+            "name": "Tlazitlans"
+        },
+        "worms-of-the-earth": {
+            "name": "Vers de la Terre"
+        },
+        "brans-servants": {
+            "name": "Serviteurs de Bran"
+        },
+        "atla": {
+            "name": "Atla"
+        },
+        "bran-mak-morn": {
+            "name": "Bran Mak Morn"
+        },
+        "drusus": {
+            "name": "Drusus"
+        },
+        "conan-the-berserker": {
+            "name": "Conan Le Berserker",
+            "quote": {
+                "text": "Arus vit un homme jeune, grand et puissamment bâti, nu à l'exception d'un pagne et de sandales lacées haut sur les chevilles. Sa peau était tannée comme s'il venait des régions désertiques du globe, et Arus se sentit mal à l'aise en voyant ses épaules larges, son torse massif et ses bras puissants. Un simple coup d'oeil sur ce visage renfrogné au front large lui suffit pour comprendre qu'il n'avait pas affaire à un Némédien. Sous une tignasse de cheveux noirs ébouriffés, deux yeux bleus menaçants couvaient, prêts à s'embraser. Une longue épée dans son fourreau de cuir pendait à son ceinturon.",
+                "origin": "Le Dieu dans l'Urne"
+            }
+        },
+        "conan-the-destroyer": {
+            "name": "Conan Le Destructeur",
+            "quote": {
+                "text": "Arus vit un homme jeune, grand et puissamment bâti, nu à l'exception d'un pagne et de sandales lacées haut sur les chevilles. Sa peau était tannée comme s'il venait des régions désertiques du globe, et Arus se sentit mal à l'aise en voyant ses épaules larges, son torse massif et ses bras puissants. Un simple coup d'oeil sur ce visage renfrogné au front large lui suffit pour comprendre qu'il n'avait pas affaire à un Némédien. Sous une tignasse de cheveux noirs ébouriffés, deux yeux bleus menaçants couvaient, prêts à s'embraser. Une longue épée dans son fourreau de cuir pendait à son ceinturon.",
+                "origin": "Le Dieu dans l'Urne"
+            }
+        },
+        "spectral-guards": {
+            "name": "Garde spectral"
+        },
+        "veteran-bossonians": {
+            "name": "Vétérans Bossoniens"
+        },
+        "guardians": {
+            "name": "Gardiens"
+        },
+        "pict-bloddhounds": {
+            "name": "Limiers Pictes"
+        },
+        "pict-trackers": {
+            "name": "Pisteurs Pictes"
+        },
+        "black-dragons-2": {
+            "name": "Dragons Noirs",
+            "quote": {
+                "text": "le comte Trocero de Poitain, sénéchal du roi, part pour la Némédie avec Prospero, bras droit du roi Conan, accompagné de la plupart des troupes poitainiennes et d'un bon nombre de ces Dragons Noirs qui forment la garde rapprochée du roi. {...} Alors un concert de voix lui parvint, et la pièce se retrouva envahie par une foule de gens de cour - chevaliers, pairs du royaume, hommes d'armes, conseillers- enfin réveillés et attirés par le fracas de la bataille, tous jasant, vociférant, et se bousculant les uns les autres. Les Dragons Noirs étaient là, fous de rage, jurant et trépignant sur place, la main sur la poignée de leur épée, poussant des jurons païens.",
+                "origin": "Le Phénix sur l'Epée"
+            }
+        },
+        "elite-black-dragons": {
+            "name": "Dragons Noirs d'Élite",
+            "quote": {
+                "text": "le comte Trocero de Poitain, sénéchal du roi, part pour la Némédie avec Prospero, bras droit du roi Conan, accompagné de la plupart des troupes poitainiennes et d'un bon nombre de ces Dragons Noirs qui forment la garde rapprochée du roi. {...} Alors un concert de voix lui parvint, et la pièce se retrouva envahie par une foule de gens de cour - chevaliers, pairs du royaume, hommes d'armes, conseillers- enfin réveillés et attirés par le fracas de la bataille, tous jasant, vociférant, et se bousculant les uns les autres. Les Dragons Noirs étaient là, fous de rage, jurant et trépignant sur place, la main sur la poignée de leur épée, poussant des jurons païens.",
+                "origin": "Le Phénix sur l'Epée"
+            }
+        },
+        "risen-corpses": {
+            "name": "Cadavres Relevés",
+            "quote": {
+                "text": "Dix des hommes de ce groupe étaient des prêtres et, bien qu'ils se soient débarrassés de leur masque, Conan savait qu'il s'agissait de ceux qu'il avait accompagnés jusqu'à la pyramide. Ils se tenaient autour d'un homme de grande taille et aux traits de rapace, à proximité d'un autel noir sur lequel était étendue une momie dans ses bandelettes en décomposition.",
+                "origin": "The Hour of the Dragon"
+            }
+        },
+        "bandits": {
+            "name": "Forbans",
+            "quote": {
+                "text": "Des pirates ! chuchota Conan, avec un sourire sévère sur ses minces lèvres. {...} Ils étaient environ soixante-dix, une horde sauvage composée d'hommes de nombreuses nations: Kothiens, Zamoriens, Brythuniens, Corinthiens, Shémites. Leurs traits reflétaient la sauvagerie de leurs moeurs. Beaucoup portaient la marque du fouet ou du fer rouge. Il y avait des oreilles coupées, des nez fendus en deux, des orbites béantes, des moignons de poignet ... blessures infligées par le bourreau autant que cicatrices résultant de batailles sanglantes. La plupart d'entre eux étaient à moitié nus, mais leurs quelques vêtements étaient de prix et élégants: jaquettes aux soutaches d'or, ceinturons de satin, braies de soie en lambeaux, maculées de goudron et de sang, le disputant avec leurs pièces de cuirasse en argent ciselé. Des gemmes étincelaient sur des anneaux de nez et des boucles d'oreilles, sur les pommeaux de leurs dagues.",
+                "origin": "Chimères de Fer dans la Clarté Lunaire"
+            }
+        },
+        "the-dead": {
+            "name": "Trépassés",
+            "quote": {
+                "text": "Dans un des coins de la cellule, près de la porte par laquelle ils étaient entrés, un amas de chaînes rouillées pendait d'un grand anneau de fer enchâssé dans la pierre. Un squelette était pris dans celles-ci. Conan le regarda avec une certaine curiosité, notant l'état des os, dont la plupart étaient fendus et brisés, et sur lesquels toute trace de chair avait disparu. Le crâne, qui s'était détaché des vertèbres, était écrasé, comme si on lui avait assené un coup sauvage avec une force titanesque.",
+                "origin": "L'Heure du Dragon"
+            }
+        },
+        "the-undead": {
+            "name": "Morts-Vivants",
+            "quote": {
+                "text": "Dans un des coins de la cellule, près de la porte par laquelle ils étaient entrés, un amas de chaînes rouillées pendait d'un grand anneau de fer enchâssé dans la pierre. Un squelette était pris dans celles-ci. Conan le regarda avec une certaine curiosité, notant l'état des os, dont la plupart étaient fendus et brisés, et sur lesquels toute trace de chair avait disparu. Le crâne, qui s'était détaché des vertèbres, était écrasé, comme si on lui avait assené un coup sauvage avec une force titanesque.",
+                "origin": "L'Heure du Dragon"
+            }
+        },
+        "revenants": {
+            "name": "Revenants"
+        },
+        "bog-ghouls": {
+            "name": "Morts des marais"
+        },
+        "othryades": {
+            "name": "Othryades"
+        },
+        "pelias": {
+            "name": "Pelias",
+            "quote": {
+                "text": "Les yeux de ce visage émacié n'étaient plus hagards. Sombres et songeurs, ils pétillaient d'intelligence et l'expression d'imbécillité avait glissé de son visage comme un masque. Sa tête était droite et bien faite, avec un front haut et splendide. Tout dans son apparence indiquait l'aristocrate. Il était grand et mince, avec des mains et des pieds fins et bien dessinés.",
+                "origin": "La Citadelle Écarlate"
+            }
+        },
+        "conan-warlord": {
+            "name": "Conan Seigneur de Guerre",
+            "quote": {
+                "text": "Alors qu'il passait près d'une torchère, Yasmela le vit avec netteté: c'était un homme de grande taille, portant le haubert des mercenaires. {...} Il se tint face à elle, sa main posée sur la longue poignée qui dépassait de sous le manteau écarlate flottant négligemment de ses épaules bardées de fer. La lueur de la torchère brillait sombrement sur l'acier bleuté et poli de ses jambières et de son casque. Une flamme encore plus funeste étincelait au fond de ses yeux bleus. {...} Il avait l'uniforme d'un capitaine des mercenaires et ces troupes aguerries comptaient des hommes de nombreux pays, des barbares aussi bien que des étrangers venus de royaumes civilisés. Son air de loup dénotait le barbare.",
+                "origin": "Le Colosse Noir"
+            }
+        },
+        "conan-mercenary": {
+            "name": "Conan Mercenaire",
+            "quote": {
+                "text": "L'étranger se tenait adossé au mât, les yeux réduits à des fentes, sur le qui-vive, et l'épée à la main. Le marin l'étudia posément, veillant à ne faire aucun mouvement vers le long couteau passé à sa ceinture. Il avait devant lui un homme de grande taille, puissamment charpenté, portant un haubert aux mailles d'acier noires, des jambières brunies et un casque de métal aux reflets bleus d'où saillaient deux cornes de taureau luisantes. De ses épaules bardées de fer tombait une cape écarlate qui se gonflait au vent du large. Un large ceinturon de chagrin à boucle en or retenait le fourreau de son épée à large lame. Sous le casque à cornes, sa crinière noire contrastait avec ses yeux bleus volcaniques.",
+                "origin": "La Reine de la Côte Noire"
+            }
+        },
+        "conan-general": {
+            "name": "Conan Le Géneral",
+            "quote": {
+                "text": "Sur son ordre, ils apportèrent un équipement complet pour remplacer la cotte de mailles de Conan : gorgerin, solerets, épaulières, cuissards, jambières, cuirasse et casque à visière. Lorsque Yasmela tira de nouveau les rideaux, un Conan entièrement revêtu d'acier luisant apparut à son auditoire. Avec l'armure à plaques, la visière relevée et ses traits taciturnes ombragés par les plumes noires ondoyant au-dessus de son casque, le Cimmérien donnait une telle impression de force et de résolution farouche que même Thespides en convint à contrecoeur. Amalric étouffa une plaisanterie.\n- Par Mitra, dit-il lentement, jamais je ne me serais attendu à te voir porter une armure, mais tu es loin d'en être indigne. Par les os de mes doigts, Conan, j'ai vu des rois qui portaient la leur moins royalement que toi.",
+                "origin": "Le Colosse Noir"
+            }
+        },
+        "savage-belit": {
+            "name": "Bêlit La Tigresse",
+            "quote": {
+                "text": "Elle se tourna vers Conan. Sa poitrine se soulevait et ses yeux brillaient. Le Cimmérien fut saisi par une surprise teintée d’émerveillement. Elle avait un corps de déesse, élancé, tout à la fois souple et voluptueux. Son unique vêtement était une large ceinture de soie. Ses membres à la blancheur d'ivoire et les globes d'albâtre de ses seins firent battre sauvagement le sang dans les veines du Cimmérien bien qu'il fût encore sous l'emprise de la furie de la bataille. Les cheveux de Bêlit, noirs et brillants - aussi noirs qu'une nuit stygienne- retombaient en cascade soyeuses sur son dos souple. Ses yeux noirs s'embrasèrent quand ils se posèrent sur le Cimmérien.\nElle était indomptable comme un vent du désert, aussi souple et redoutable qu'une panthère. ",
+                "origin": "La Reine de la Côte Noire"
+            }
+        },
+        "conan-wanderer": {
+            "name": "Conan Le Vagabond",
+            "quote": {
+                "text": "Il vit alors un jeune homme robuste qui se tenait à ses côtés. L'homme semblait tout autant déplacé dans ce bouge qu'un loup gris parmi des rats de gouttière malingres. Sa tunique bon marché ne pouvait dissimuler les lignes dures et effilées de sa puissante charpente, ses épaules massives et larges, son torse puissant, sa taille élancée et ses bras noueux. Sa peau était tannée par le soleil des déserts, ses yeux étaient bleus et incandescents, et une tignasse de cheveux noirs ébouriffés surmontait son front large. Une épée dans un fourreau de cuir usagé pendait de sa ceinture.",
+                "origin": "La Tour de l'Elephant"
+            }
+        },
+        "gundermen-mercenaries": {
+            "name": "Mercenaires Gundermen"
+        },
+        "nestor": {
+            "name": "Nestor"
+        },
+        "kushite-mercenaries": {
+            "name": "Mercenaires Kushites"
+        },
+        "aja": {
+            "name": "Aja"
+        },
+        "hyrkanian-mercenaries": {
+            "name": "Mercenaires Hyrkaniens"
+        },
+        "ganbaatar": {
+            "name": "Ganbaatar"
         }
     }
 }

@@ -86,8 +86,8 @@ var EncyclopediaTiles = {
                 values: [ { id: "melee" }, { id: "ranged" }, { id: "none" } ],
                 filter: function(item, selectedValues) {
 
-                    return (selectedValues.indexOf('melee')!=-1 && item.attacktype == "contact" && item.dices['0'] != "none")
-                        || (selectedValues.indexOf('ranged')!=-1 && item.attacktype == "ranged" && item.dices['0'] != "none")
+                    return (selectedValues.indexOf('melee')!=-1 && (item.attacktype == "contact" || item.attacktype == "both") && item.dices['0'] != "none")
+                        || (selectedValues.indexOf('ranged')!=-1 && ((item.attacktype == "ranged" && item.dices['0'] != "none") || (item.attacktype == "both" && item.dices2['0'] != "none")))
                         || (selectedValues.indexOf('none')!=-1 && item.dices['0'] == "none");
                 }
             },
@@ -129,10 +129,21 @@ var EncyclopediaTiles = {
                         // otherwise seek type on model
                         for (var i = 0; i < Encyclopedia.models.list.length; i++)
                         {
-                            if (item.model == Encyclopedia.models.list[i].id)
+                            if (item.model)
                             {
-                                modelType = Encyclopedia.models.list[i].type;
-                                break;
+                                let models = Array.isArray(item.model) ? item.model : [item.model];
+                                for (let model of models)
+                                {
+                                    if (model == Encyclopedia.models.list[i].id)
+                                    {
+                                        modelType = Encyclopedia.models.list[i].type;
+                                        break;
+                                    }
+                                } 
+                                if (modelType != null)
+                                {
+                                    break;
+                                }
                             }
                         }
                     }
@@ -231,6 +242,27 @@ var EncyclopediaTiles = {
                 filter: function(item, selectedValues) {
                     return selectedValues.indexOf(Math.floor(EncyclopediaTiles._tilePower(item))) != -1;
                 }
+            },
+
+            {
+                id: 'reinforcement',
+                values: (function() {
+                    var v = [{
+                        id: "0",
+                        label: EncyclopediaTiles._facets.reinforcement.values.without.label
+                    }];
+                    for (var i = 1 ; i < 5 ; i++)
+                    {
+                        v.push({
+                            id: i + "",
+                            label: i
+                        })
+                    }
+                    return v;
+                })(),
+                filter: function(item, selectedValues) {
+                    return selectedValues.indexOf(item.reinforcement || "0") != -1;
+                }
             }
         ], EncyclopediaTiles._facets);    
     },
@@ -238,17 +270,27 @@ var EncyclopediaTiles = {
     _tilePower: function(tile)
     {
         var dice = 0;
-        for (var j in tile.dices)
+        let dices = [tile.dices];
+        if (tile.dices2)
         {
-            switch(tile.dices[j])
+            dices.push(tile.dices2);
+        }
+        for (let i of dices)
+        {
+            let thisdice = 0;
+            for (var j in i)
             {
-                case "redreroll": dice += 1.92; break;
-                case "red": dice += 1.5; break;
-                case "orangereroll": dice += 1.33; break;
-                case "orange": dice += 1; break;
-                case "yellowreroll": dice += 1; break;
-                case "yellow": dice += 0.67; break;
+                switch(i[j])
+                {
+                    case "redreroll": thisdice += 1.92; break;
+                    case "red": thisdice += 1.5; break;
+                    case "orangereroll": thisdice += 1.33; break;
+                    case "orange": thisdice += 1; break;
+                    case "yellowreroll": thisdice += 1; break;
+                    case "yellow": thisdice += 0.67; break;
+                }
             }
+            dice = Math.max(dice, thisdice);
         }
         return dice;
     },
@@ -259,14 +301,23 @@ var EncyclopediaTiles = {
 
         if (tile.model)
         {
-            // Tokens can be shared by several tiles. Model links them
-            var tiles = [];
-            for (var i in Encyclopedia.tiles.list)
+            let models = Array.isArray(tile.model) ? tile.model : [tile.model];
+            for (let model of models)
             {
-                var stile = Encyclopedia.tiles.list[i];
-                if (stile.model == tile.model)
+                // Tokens can be shared by several tiles. Model links them
+                var tiles = [];
+                for (var i in Encyclopedia.tiles.list)
                 {
-                    tiles.push(stile);
+                    var stile = Encyclopedia.tiles.list[i];
+                    let smodels = Array.isArray(stile.model) ? stile.model : [stile.model];
+                    for (let smodel of smodels)
+                    {
+                        if (smodel == model)
+                        {
+                            tiles.push(stile);
+                            break;
+                        }
+                    }
                 }
             }
     
@@ -384,9 +435,10 @@ var EncyclopediaTiles = {
 
     _convertTileToStudio: function(tile, hd)
     {
-        return {
+        let o = {
             id: tile.id + "-" + Math.random(),
             name: tile.name,
+            nameSize: tile.size,
             color: tile.color,
             movement: tile.movement || "",
             defense: tile.defense || "",
@@ -395,11 +447,19 @@ var EncyclopediaTiles = {
             skills: { 0: tile.skills[0], 1: tile.skills[1], 2: tile.skills[2], 3: tile.skills[3] },
             reinforcement: tile.reinforcement || "",
             image: tile.imageHD && hd ? (tile.imageHD + "?version=" + Version) : (tile.image ? (tile.image + "?version=" + Version) : null),
+            imageflip: tile.image_flip || false,
             imagelocation: {x: tile.image_location.x, y: tile.image_location.y},
             imagezoom: tile.image_zoom,
-            imagerotation: tile.image_rotation ||"0",
-            tokens: (tile.tokens || []).map(function(t) { return {active: true, image: t.image, imagelocation: {x: t.image_location.x, y: t.image_location.y}, imagezoom: t.image_zoom, imagerotation: 0}})
+            imagerotation: tile.image_rotation || "0",
+            tokens: (tile.tokens || []).map(function(t) { return {active: true, image: t.image, imagelocation: {x: t.image_location.x, y: t.image_location.y}, imagezoom: t.image_zoom, imagerotation: 0, imageflip: t.image_flip || false}})
         };
+        
+        if (tile.dices2)
+        {
+            o.dices2 = { 0: tile.dices2[0], 1: tile.dices2[1], 2: tile.dices2[2], 3: tile.dices2[3] };
+        }
+        
+        return o;
     },
 
     _findTilesById: function(id)
@@ -518,12 +578,16 @@ var EncyclopediaTiles = {
         var model = "";
         if (tile.model)
         {
-            var m = EncyclopediaModels._findModelsById(tile.model)[0];
-            if (m)
+            let ms = Array.isArray(tile.model) ? tile.model : [tile.model];
+            for (let mx of ms)
             {
-                model = "<div class='models'>"
-                        + EncyclopediaModels._linkToModel(tile.model, true)
-                        + "</div>";
+                var m = EncyclopediaModels._findModelsById(mx)[0];
+                if (m)
+                {
+                    model += "<div class='models'>"
+                            + EncyclopediaModels._linkToModel(mx, true)
+                            + "</div>";
+                }
             }
         }
         
@@ -536,7 +600,11 @@ var EncyclopediaTiles = {
                 {
                     EncyclopediaTiles._secondaryData = await Utils.loadJSON("data/tiles/lang/tiles." + Language2 + ".json");
                 }
-                altTitle = " / " + EncyclopediaTiles._secondaryData.list[tile.id].name;
+                let title2 = EncyclopediaTiles._secondaryData.list[tile.id].name;
+                if (tile.name != title2)
+                {
+                    altTitle = " / " + title2;
+                }
             }
             catch (e)
             {

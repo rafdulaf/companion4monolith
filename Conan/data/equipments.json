@@ -1778,6 +1778,8 @@
             "passive": { "0": "none", "1": "none" },
 
             "image": "data/equipments/img/spear.webp",
+            "imagelocation": {"x": "72", "y": "91"},
+            "imagezoom": "67",
             "origins": ["campaignbook"]
         },
 
@@ -2189,6 +2191,608 @@
             "imagelocation": {"x": "51", "y": "38"},
             "imagezoom": "102",
             "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "armbands_of_bel",
+            "encumbrance": "1",
+
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "orangereroll", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/armbands_of_bel.webp",
+            "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "kordava_boots",
+            "encumbrance": "0",
+            "movement": 1,
+
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/kordava_boots.webp",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "akbitanas_claymore",
+            "encumbrance": "3",
+            "skills": {"0": "attack/counterattack", "1": "none"},
+
+            "melee": { "0": "redreroll", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "orange", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/akbitanas_claymore.webp",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "shemite_bow",
+            "encumbrance": "2",
+
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "orange", "1": "yellow", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/shemite_bow.webp",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "asshuri_cuirass",
+            "encumbrance": "4",
+
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "red", "1": "none" },
+
+            "image": "data/equipments/img/asshuri_cuirass.webp",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "shadow_mantel",
+            "encumbrance": "0",
+            "skills": {"0": "defense/untouchable", "1": "none"},
+
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/shadow_mantel.webp",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "phoenix_sword",
+            "encumbrance": "2",
+
+            "melee": { "0": "orangereroll", "1": "yellow" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "yellowreroll", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/phoenix_sword.webp",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "boris_hammer",
+            "encumbrance": "3",
+            "skills": {"0": "movement/wall_wrecker", "1": "none"},
+
+            "melee": { "0": "redreroll", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/boris_hammer.webp",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "shield_of_mitra",
+            "encumbrance": "3",
+
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "red", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/shield_of_mitra.webp",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "spear",
+            "encumbrance": "2",
+
+            "melee": { "0": "orange", "1": "none" },
+            "ranged": { "0": "orange", "1": "none", "throwable": true },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/spear.webp",
+            "imagelocation": {"x": "72", "y": "91"},
+            "imagezoom": "67",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "jade_wand",
+            "encumbrance": "1",
+            "textStartLeft": true,
+
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false, "force": "notext" },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/jade_wand.webp",
+            "imagelocation": {"x": "50", "y": "37"},
+            "imagezoom": "83",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "rope",
+            "encumbrance": "1",
+
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false, "force": "text" },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/rope.webp",
+            "imagelocation": {"x": "50", "y": "46"},
+            "imagezoom": "81",
+            "origins": ["red-nails"],
+            
+            "tokens": ["rope"]
+        },
+
+        {
+            "id": "whip",
+            "encumbrance": "1",
+
+            "melee": { "0": "orangereroll", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false, "force": "text" },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/whip.webp",
+            "imagelocation": {"x": "50", "y": "28"},
+            "imagezoom": "85",
+            "origins": ["red-nails"],
+            
+            "tokens": ["rope"]
+        },
+
+        {
+            "id": "bow_of_set",
+            "encumbrance": "2",
+            "skills": {"0": "attack/precision_shot", "1": "none"},
+            "skillsatbottom": true,
+
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "orange", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/bow_of_set.webp",
+            "imagelocation": {"x": "62", "y": "46"},
+            "imagezoom": "109",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "shuko",
+            "encumbrance": "1",
+            "skills": {"0": "movement/climb", "1": "none"},
+            "skillsatbottom": "false2",
+
+            "melee": { "0": "yellowreroll", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "yellow", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/shuko.webp",
+            "imagelocation": {"x": "64", "y": "45"},
+            "imagezoom": "65",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "pipes_of_madness",
+            "encumbrance": "0",
+            "skills": {"0": "none", "1": "none"},
+
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/pipes_of_madness.webp",
+            "imagelocation": {"x": "51", "y": "53"},
+            "imagezoom": "104",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "sorcerers_staff",
+            "encumbrance": "2",
+            "skills": {"0": "none", "1": "none"},
+
+            "melee": { "0": "yellowreroll", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "orange", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/sorcerers_staff.webp",
+            "imagelocation": {"x": "52", "y": "58"},
+            "imagezoom": "86",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "shuriken",
+            "encumbrance": "0",
+            "skills": {"0": "none", "1": "none"},
+
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "orange", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/shuriken.webp",
+            "imagelocation": {"x": "51", "y": "42"},
+            "imagezoom": "78",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "harpoon",
+            "encumbrance": "4",
+            "skills": {"0": "none", "1": "none"},
+
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "red", "1": "red", "2": "red", "3": "red", "throwable": true },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/harpoon.webp",
+            "imagelocation": {"x": "-7", "y": "54"},
+            "imagezoom": "245",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "black_stone",
+            "encumbrance": "2",
+            "skills": {"0": "none", "1": "none"},
+
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/black_stone.webp",
+            "imagelocation": {"x": "50", "y": "50"},
+            "imagezoom": "85",
+            "origins": ["red-nails"],
+            
+            "tokens": ["black-stone"]
+        },
+
+        {
+            "id": "serpent_crown",
+            "encumbrance": "0",
+            "skills": {"0": "miscellaneous/leadership", "1": "none"},
+            "textStartLeft": true,
+
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/serpent_crown.webp",
+            "imagelocation": {"x": "50", "y": "36"},
+            "imagezoom": "62",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "tankard",
+            "encumbrance": "0",
+            "skills": {"0": "none", "1": "none"},
+
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/tankard.webp",
+            "imagelocation": {"x": "50", "y": "48"},
+            "imagezoom": "108",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "minor_life_potion",
+            "encumbrance": "0",
+            "skills": {"0": "none", "1": "none"},
+
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/minor_life_potion.webp",
+            "imagelocation": {"x": "50", "y": "48"},
+            "imagezoom": "103",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "crowbill",
+            "encumbrance": "1",
+            "skills": {"0": "none", "1": "none"},
+
+            "melee": { "0": "yellowreroll", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "yellow", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/crowbill.webp",
+            "imagelocation": {"x": "54", "y": "50"},
+            "imagezoom": "85",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "club",
+            "encumbrance": "4",
+            "skills": {"0": "none", "1": "none"},
+
+            "melee": { "0": "redreroll", "1": "redreroll" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/club.webp",
+            "imagelocation": {"x": "51", "y": "49"},
+            "imagezoom": "80",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "lemurian_blade",
+            "encumbrance": "2",
+            "skills": {"0": "attack/counterattack", "1": "none"},
+            "skillsatbottom": "false2",
+
+            "melee": { "0": "orangereroll", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/lemurian_blade.webp",
+            "imagelocation": {"x": "50", "y": "53"},
+            "imagezoom": "56",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "rapier",
+            "encumbrance": "1",
+            "skills": {"0": "none", "1": "none"},
+
+            "melee": { "0": "yellowreroll", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "orangereroll", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/rapier.webp",
+            "imagelocation": {"x": "58", "y": "54"},
+            "imagezoom": "54",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "mace_of_ibis",
+            "encumbrance": "3",
+            "skills": {"0": "miscellaneous/support", "1": "none"},
+
+            "melee": { "0": "orangereroll", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/mace_of_ibis.webp",
+            "imagelocation": {"x": "53", "y": "53"},
+            "imagezoom": "70",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "two-handed_axe",
+            "encumbrance": "3",
+            "skills": {"0": "attack/circular_strike", "1": "none"},
+            "skillsatbottom": true,
+
+            "melee": { "0": "redreroll", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/two-handed_axe.webp",
+            "imagelocation": {"x": "52", "y": "52"},
+            "imagezoom": "69",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "hurlbat",
+            "encumbrance": "2",
+            "skills": {"0": "attack/precision_strike", "1": "none"},
+            "skillsatbottom": "true2",
+
+            "melee": { "0": "orangereroll", "1": "none" },
+            "ranged": { "0": "redreroll", "1": "none", "throwable": true },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/hurlbat.webp",
+            "imagelocation": {"x": "68", "y": "48"},
+            "imagezoom": "77",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "stiletto",
+            "encumbrance": "0",
+            "skills": {"0": "attack/precision_strike", "1": "none"},
+            "skillsatbottom": true,
+
+            "melee": { "0": "yellowreroll", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/stiletto.webp",
+            "imagelocation": {"x": "56", "y": "48"},
+            "imagezoom": "42",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "quiver",
+            "encumbrance": "0",
+            "skills": {"0": "none", "1": "none"},
+            "textStartLeft": true,
+
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/quiver.webp",
+            "imagelocation": {"x": "53", "y": "46"},
+            "imagezoom": "108",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "heavy_armor",
+            "encumbrance": "4",
+            "skills": {"0": "none", "1": "none"},
+
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "orangereroll", "1": "none" },
+
+            "image": "data/equipments/img/heavy_armor.webp",
+            "imagelocation": {"x": "50", "y": "42"},
+            "imagezoom": "52",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "hyrkanian_helmet",
+            "encumbrance": "1",
+            "skills": {"0": "none", "1": "none"},
+
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "yellow", "1": "none" },
+
+            "image": "data/equipments/img/hyrkanian_helmet.webp",
+            "imagelocation": {"x": "50", "y": "39"},
+            "imagezoom": "46",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "nemedian_shield",
+            "encumbrance": "2",
+            "skills": {"0": "defense/bodyguard", "1": "none"},
+            "skillsatbottom": true,
+
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "orange", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/nemedian_shield.webp",
+            "imagelocation": {"x": "50", "y": "40"},
+            "imagezoom": "54",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "stygian_shield",
+            "encumbrance": "2",
+            "skills": {"0": "defense/untouchable", "1": "none"},
+            "skillsatbottom": true,
+
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "orange", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/stygian_shield.webp",
+            "imagelocation": {"x": "50", "y": "40"},
+            "imagezoom": "45",
+            "origins": ["red-nails"]
         }
     ]
 }

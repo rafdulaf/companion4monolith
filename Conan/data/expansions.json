@@ -42,6 +42,12 @@
         }, {
             "id": "conqueror-sg",
             "type": "corebox"
+        }, {
+            "id": "red-nails",
+            "type": "corebox"
+        }, {
+            "id": "versus-mode",
+            "type": "corebox"
         },
 
         {
@@ -58,6 +64,9 @@
             "type": "thematic"
         }, {
             "id": "red-brotherhood",
+            "type": "thematic"
+        }, {
+            "id": "worms-earth",
             "type": "thematic"
         },
 
@@ -115,6 +124,9 @@
             "type": "artists"
         }, {
             "id": "xcbox",
+            "type": "artists"
+        }, {
+            "id": "fbox",
             "type": "artists"
         },
 

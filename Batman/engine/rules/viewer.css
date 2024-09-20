@@ -27,7 +27,7 @@
     width: calc(50% - 1px);
     height: 69.75vw;
 }
-.rules-viewer.zoom1  iframe:first-of-type {
+.rules-viewer.zoom1  iframe:not(.rules-viewer-pageOneAtLeft):first-of-type {
     margin-left: calc(50% - 1px);
 }
 

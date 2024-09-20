@@ -26,11 +26,12 @@
         "circular_strike": {
             "title": "Colpo circolare",
             "text": "Quando questo personaggio uccide in un attacco in Mischia un personaggio nemico con la propria arma a due mani, i danni in eccesso dell'attacco vengono assegnati a un altro personaggio nemico nella stessa (se questo personaggio viene ucciso, si continui l'assegnazione al successivo personaggio). L'attaccante decide l'ordine di assegnazione tra i nemici. Si risolvano gli attacchi normalmente (determinazione del potere dell'attacco, potere della difesa, ecc) sul singono nemico prima di procedere al successivo se ci sono ancora dei danni da assegnare.",
-            "clarification": "Se un personaggio ha anche l'abilità Colpo Preciso, il giocatore, prima di lanciare i dadi, deve scegliere se utilizzare Colpo Preciso o Colpo Circolare."
+            "clarification": "Se un personaggio ha anche l'abilità Colpo Preciso, il giocatore, prima di lanciare i dadi, deve scegliere se utilizzare Colpo Preciso o Colpo Circolare.\nIn modalità Versus, la condizione di attivazione dell'arma non viene applicata e l'unità può sempre usare questa abilità."
         },
         "ambidextrous": {
             "title": "Ambidestro",
-            "text": "Quando questo personaggio effettua un attacco in Mischia, Il personaggio può sommare i bonus di due delle sue armi a una mano per attaccare. Non può usarle entrambe in difesa."
+            "text": "Quando questo personaggio effettua un attacco in Mischia, Il personaggio può sommare i bonus di due delle sue armi a una mano per attaccare. Non può usarle entrambe in difesa.",
+            "clarification": "In modalità Versus, puoi ritirare gratuitamente un (1) dado attacco."
         },
         "constriction": {
             "title": "Costrizione",
@@ -44,11 +45,13 @@
         },
         "attack_from_beyond": {
             "title": "Ritorno dall'Aldilà",
-            "text": "Quando questo personaggio muore, prima che il modello sia rimosso dal tabellone, egli effettua un ultimo attacco in Mischia con una potenza d'attacco pari a {dice_red}{dice_red}{dice_red}, senza nessuna penalità e nessun bonus dovuto alle armi."
+            "text": "Quando questo personaggio muore, prima che il modello sia rimosso dal tabellone, egli effettua un ultimo attacco in Mischia con una potenza d'attacco pari a {dice_red}{dice_red}{dice_red}, senza nessuna penalità e nessun bonus dovuto alle armi.",
+            "clarification": "Puoi colpire ogni unità che si trova in Mischia con questo personaggio.\nIn modalità Versus, l'attacco è {dice_yellow}{dice_yellow}."
         },
         "counterattack": {
             "title": "Contrattacco",
-            "text": "Quando questo personaggio viene attaccato in Mischia, dopo che l'attacco è stato risolto (indipendentemente dall'assegnazione dei danni), se è ancora vivo può immediatamente contrattaccare tirando {dice_red} al posto dei normali dadi in attacco, senza nessuna penalità e senza nessun bonus dovuto alle armi."
+            "text": "Quando questo personaggio viene attaccato in Mischia, dopo che l'attacco è stato risolto (indipendentemente dall'assegnazione dei danni), se è ancora vivo può immediatamente contrattaccare tirando {dice_red} al posto dei normali dadi in attacco, senza nessuna penalità e senza nessun bonus dovuto alle armi.",
+            "clarification": "In modalità SOLO/COOP, per le unità dell'Overlord, questa abilità funziona seguendo le stesse regole della modalità Avventura. Per gli Eroi che hanno questa abilità, possono utilizzarla solo una volta ogni turno dell'Overlord."
         },
         "elite_shooter": {
             "title": "Tiratore scelto",
@@ -60,11 +63,13 @@
         },
         "blocking": {
             "title": "Bloccare",
-            "text": "Personaggi nemici che non hanno l'abilità Inafferrabile, non possono uscire dall'area occupata da questo personaggio."
+            "text": "Personaggi nemici che non hanno l'abilità Inafferrabile, non possono uscire dall'area occupata da questo personaggio.",
+            "clarification": "In modalità SOLO/COOP, per le unità dell'Overlord, questa abilità funziona seguendo le stesse regole della modalità Avventura. Per ragioni di bilanciamento, un Eroe con questa abilità non può usarla in questa modalità di gioco."
         },
         "wall_wrecker": {
             "title": "Spacca Muri",
-            "text": "Questo personaggio può spendere 2 punti movimento per muovere attraverso un muro di legno o una porta che separa due aree adiacenti. Piazza un segnalino \"Breccia\" sull'ostacolo, quindi muovi il  personaggio dall'altra parte del muro/porta abbattuto/a. Da adesso le due aree sono adiacenti: non c'è nessun malus per muoversi dall'una all'altra e tra esse la linea di vista è libera."
+            "text": "Questo personaggio può spendere 2 punti movimento per muovere attraverso un muro di legno o una porta che separa due aree adiacenti. Piazza un segnalino \"Breccia\" sull'ostacolo, quindi muovi il  personaggio dall'altra parte del muro/porta abbattuto/a. Da adesso le due aree sono adiacenti: non c'è nessun malus per muoversi dall'una all'altra e tra esse la linea di vista è libera.",
+            "clarification": "In modalità SOLO/COOP, le unità dell'Overlord possono usare questa abilità, solo quando è consentito loro di raggiungere il bersaglio Eroe più facilmente. Se l'utilizzo di questa abilità consente loro di evitare qualsiasi restrizione di movimento o di attacco imposta da Eroi non-bersaglio, o di portarli nell'area dell'Eroe bersaglio (o in un'area da cui possono attaccare l'Eroe bersaglio), utilizzeranno questa abilità. Altrimenti, si sposteranno semplicemente nell’area dell’Eroe bersaglio per un Attacco in Mischia o nell’area più vicina da dove potranno effettuare un Attacco a Distanza."
         },
         "evasive": {
             "title": "Inafferrabile",
@@ -72,16 +77,18 @@
         },
         "swimming": {
             "title": "Nuotare",
-            "text": "Questo personaggio può muoversi attraverso aree con l'acqua. Uscire da un'area con l'acqua costa un (1) punto movimento extra."
+            "text": "Questo personaggio può muoversi attraverso aree con l'acqua. Uscire da un'area con l'acqua costa un (1) punto movimento extra.",
+            "clarification": "In modalità SOLO/COOP, le unità dell'Overlord possono usare questa abilità solo quando è consentito loro di raggiungere l'Eroe Bersaglio più facilmente. Se l'utilizzo di questa abilità consente loro di evitare qualsiasi restrizione di movimento o di attacco imposta da Eroi non-bersaglio, o di portarli nell'area dell'Eroe bersaglio (o in un'area da cui possono attaccare l'Eroe bersaglio), utilizzeranno questa abilità. Altrimenti, si sposteranno semplicemente nell’area dell’Eroe bersaglio per un Attacco in Mischia o nell’area più vicina da dove potranno effettuare un Attacco a Distanza."
         },
         "intangible": {
             "title": "Intangibile",
-            "text": "Questo personaggio può spendere un (1) punto movimento per muovere attraverso un ostacolo tra due aree come se l'ostacolo non esistesse. Quando si muove così il personaggio non è mai affetto da intralcio."
+            "text": "Questo personaggio può spendere un (1) punto movimento per muovere attraverso un ostacolo tra due aree come se l'ostacolo non esistesse. Quando si muove così il personaggio non è mai affetto da intralcio.",
+            "clarification": "In modalità SOLO/COOP, le unità dell'Overlord possono usare questa abilità solo quando è consentito loro di raggiungere l'Eroe Bersaglio più facilmente. Se l'utilizzo di questa abilità consente loro di evitare qualsiasi restrizione di movimento o di attacco imposta da Eroi non-bersaglio, o di portarli nell'area dell'Eroe bersaglio (o in un'area da cui possono attaccare l'Eroe bersaglio), utilizzeranno questa abilità. Altrimenti, si sposteranno semplicemente nell’area dell’Eroe bersaglio per un Attacco in Mischia o nell’area più vicina da dove potranno effettuare un Attacco a Distanza."
         },
         "web_projection": {
             "title": "Intrappolare",
             "text": "Al posto del suo normale attacco, questo personaggio può effettuare un attacco a Distanza tirando {dice_orange}{dice_orange}{dice_orange}, invece dei suoi normali dadi. Se il potere d'attacco è maggiore del potere di difesa, il nemico piazza un segnalino Ragnatela sul proprio modello senza subire alcun danno. Un personaggio Intrappolato non può muovere, ma può spendere 4 punti movimento in un unico turno per scartare il segnalino Ragnatela.",
-            "clarification": "Se un'untà non ha sufficienti punti Movimento per liberarsi da una condizione di Intrappolato, un Eroe può sempre usare tutto il suo Movimento Base e aggiungere altri punti movimento senza superare il suo indice di saturazione. \nNella modalità Avventura, se un'unità dell'Overlord è intrappolata (in seguito all'uso di una Rete), l'Overlord può utilizzare il Movimento Base dell'unità e aggiungere delle gemme per raggiungere i 4 punti movimento necessari a liberarla, anche se l'unità normalmente non potrebbe avere 4 punti movimento. \nNella modalità Solo/Coop, l'Overlord spende semplicemente tutto il Movimento Base dell'unità."
+            "clarification": "Se un'untà non ha sufficienti punti Movimento per liberarsi da una condizione di Intrappolato, un Eroe può sempre usare tutto il suo Movimento Base e aggiungere altri punti movimento senza superare il suo indice di saturazione. \nNella modalità Avventura, se un'unità dell'Overlord è intrappolata (in seguito all'uso di una Rete), l'Overlord può utilizzare il Movimento Base dell'unità e aggiungere delle gemme per raggiungere i 4 punti movimento necessari a liberarla, anche se l'unità normalmente non potrebbe avere 4 punti movimento. \nIn modalità SOLO/COOP, l'Overlord spende semplicemente tutto il Movimento Base dell'unità.\nIn modalità SOLO/COOP, Le unità dell'Overlord useranno questa abilità ogni volta che possono, a meno che l'unità non sia affetta da Intralcio."
         },
         "feline_grace": {
             "title": "Grazia felina",
@@ -89,15 +96,18 @@
         },
         "leap": {
             "title": "Saltare",
-            "text": "Questo personaggio può saltare alcune aree definite nello scenario. Il personaggio tira {dice_red}: il salto riesce se il punteggio è uguale o superiore alla difficoltà indicata nell'area da saltare. Saltare costa un (1) punto movimento per ogni bordo attraversato. Ad esempio, quando salta da una nave all'altra, il personaggio deve spendere 2 punti movimento per saltare. Saltare non è affetto da intralcio."
+            "text": "Questo personaggio può saltare alcune aree definite nello scenario. Il personaggio tira {dice_red}: il salto riesce se il punteggio è uguale o superiore alla difficoltà indicata nell'area da saltare. Saltare costa un (1) punto movimento per ogni bordo attraversato. Ad esempio, quando salta da una nave all'altra, il personaggio deve spendere 2 punti movimento per saltare. Saltare non è affetto da intralcio.",
+            "clarification": "In modalità SOLO/COOP, le unità dell'Overlord possono usare questa abilità solo se lo scenario fornisce le regole per farlo."
         },
         "flying": {
             "title": "Volare",
-            "text": "Questo personaggio può volare sugli elementi dello scenario. Volare permette di ignorare tutte le restrizioni e le penalità del terreno e ogni effetto dell'intralcio."
+            "text": "Questo personaggio può volare sugli elementi dello scenario. Volare permette di ignorare tutte le restrizioni e le penalità del terreno e ogni effetto dell'intralcio.",
+            "clarification": "In modalità SOLO/COOP, le unità dell'Overlord possono usare questa abilità solo quando è consentito loro di raggiungere l'Eroe Bersaglio più facilmente. Se l'utilizzo di questa abilità consente loro di evitare qualsiasi restrizione di movimento o di attacco imposta da Eroi non-bersaglio, o di portarli nell'area dell'Eroe bersaglio (o in un'area da cui possono attaccare l'Eroe bersaglio), utilizzeranno questa abilità. Altrimenti, si sposteranno semplicemente nell’area dell’Eroe bersaglio per un Attacco in Mischia o nell’area più vicina da dove potranno effettuare un Attacco a Distanza."
         },
         "climb": {
             "title": "Arrampicarsi",
-            "text": "Questo personaggio può muovere attraverso i bordi delle aree che richiedono questa abilità, pagando il costo extra in punti movimento definito dallo scenario."
+            "text": "Questo personaggio può muovere attraverso i bordi delle aree che richiedono questa abilità, pagando il costo extra in punti movimento definito dallo scenario.",
+            "clarification": "In modalità SOLO/COOP, le unità dell'Overlord possono usare questa abilità solo se lo scenario fornisce le regole per farlo."
         },
         "alchemy": {
             "title": "Alchimia",
@@ -105,7 +115,8 @@
         },
         "leadership": {
             "title": "Comando",
-            "text": "Per ogni gemma spesa, l'Eroe può attivare uno dei suoi Alleati. Un Alleato attivato può muovere e attaccare come un'unità. Il personaggio con Comando non può attivare un proprio Alleato più di una volta per turno."
+            "text": "Per ogni gemma spesa, l'Eroe può attivare uno dei suoi Alleati. Un Alleato attivato può muovere e attaccare come un'unità. Il personaggio con Comando non può attivare un proprio Alleato più di una volta per turno.",
+            "clarification": "In modalità SOLO/COOP, gli Eroi che hanno questa abilità possono usarla normalmente. Nota: le unità dell'Overlord non bersagliano alleti a meno che questi noon possono raggiungere un Eroe per un attacco da Mischia o a Distanza.\nNella modalità VERSUS, la prossima tessera attivata questo turno dal giocatore che controlla questa unità, costa una (1) gemma in meno."
         },
         "concentration": {
             "title": "Concentrazione",
@@ -118,31 +129,37 @@
         "fascination": {
             "title": "Fascinazione",
             "text": "Il personaggio con questa abilità non può essere attaccato da un altro personaggio a meno che non sia il personaggio con Fascinazione ad attaccarlo per primo.",
-            "clarification": "Un'unità non può mai scegliere come bersaglio un'unità nemica dotata anch'essa di Fascinazione, qualsiasi sia la ragione a meno che quest'ultima non l'attacchi. \nSalvo eccezioni nello scenario, i personaggi dotati di Fascinazione possono subire danni causati da attacchi ad area."
+            "clarification": "Un'unità non può mai scegliere come bersaglio un'unità nemica dotata anch'essa di Fascinazione, qualsiasi sia la ragione a meno che quest'ultima non l'attacchi. \nSalvo eccezioni nello scenario, i personaggi dotati di Fascinazione possono subire danni causati da attacchi ad area.\nI modalità SOLO/COOP, Le unità dell'Overlord possono usare quest'abilità solo se le indicazioni dello scenario dicono come usarla."
         },
         "horror": {
             "title": "Orrore",
-            "text": "Il personaggio ha un aspetto così spaventoso che genera terrore nei suoi avversari. Ogni nemico che si trova nella sua area avrà il livello massimo delle sue caratteristiche (attacco in Mischia, attacco a Distanza, Movimento e Manipolazione) limitato a 2 (fatta eccezione per Difesa e Rilancio)."
+            "text": "Il personaggio ha un aspetto così spaventoso che genera terrore nei suoi avversari. Ogni nemico che si trova nella sua area avrà il livello massimo delle sue caratteristiche (attacco in Mischia, attacco a Distanza, Movimento e Manipolazione) limitato a 2 (fatta eccezione per Difesa e Rilancio).",
+            "clarification": "In modalità VERSUS, puoi forzare i nemici nella stessa area, a ritirare un (1) dado attacco. Il risultato non può essere ritirato."
         },
         "jinx": {
             "title": "Menagramo",
-            "text": "Ogni rilancio (sia pagato che gratuito) non è permesso nell'area occupata da un nemico con questa abilità."
+            "text": "Ogni rilancio (sia pagato che gratuito) non è permesso nell'area occupata da un nemico con questa abilità.",
+            "clarification": "In modalità SOLO/COOP, per le unità dell'Overlord, questa abilità funziona con le regole della modalità Avventura. Gli Eroi che hanno questa abilità possono usarla normalmente, ma questo creerebbe un vantaggio significativo. Pertanto può essere usata a discrezione dei giocatori."
         },
         "poison": {
             "title": "Velenoso",
-            "text": "Velenoso è un'abilità generica che può essere utilizzata in alcuni scenari."
+            "text": "Velenoso è un'abilità generica che può essere utilizzata in alcuni scenari.",
+            "clarification": "Nella modalità SOLO/COOP, se uno scenario non specifica gli effetti di Velenoso, usa queste regole: Quando un'unità con Velenoso attacca un Eroe, quest'ultimo, invece di subire il danno, colloca un corrispettivo di segnalini Velenoso pari al danno che avrebbe subito, sia nello spazio dell'Attacco in Mischia, sia in quello del Movimento della scheda Personaggio. Ogni segnalino Velenoso su uno spazio azione, riduce di 1 il limite massimo di quell'azione. Quando entrambi i limiti sono ridotti a zero, quell'Eroe muore immediatamente. Se servissero più segnalini Velenoso, puoi usare qualsiasi altro segnalino al loro posto.\nIn modalità VERSUS, invece di infliggere danni, puoi scegliere di rimuovere il valore del movimento di base del bersaglio. In questo caso, metti la miniatura distesa su un lato. La miniatura può essere attaccata e difendersi. Nella successiva fase di attivazione del bersaglio, rialza la miniatura: il bersaglio ha il movimento base pari a zero."
         },
         "support": {
             "title": "Supporto",
-            "text": "I personaggi amici che si trovano nella stessa area del personaggio che possiede questa abilità, beneficiano di un rilancio gratuito per ogni loro azione effettuata. L'abilità Supporto permette il rilancio di un solo dado anche se il dado è già stato rilanciato gratuitamente (eccezione della regola a pagina 22)."
+            "text": "I personaggi amici che si trovano nella stessa area del personaggio che possiede questa abilità, beneficiano di un rilancio gratuito per ogni loro azione effettuata. L'abilità Supporto permette il rilancio di un solo dado anche se il dado è già stato rilanciato gratuitamente (eccezione della regola a pagina 22).",
+            "clarification": "In modalità SOLO/COOP, per le unità dell'Overlord, questa abilità funziona allo stesso modo delle regole per il ritiro, e in più funziona su qualsiasi simbolo di ritiro presente nel valore di attacco della tessera dell'unità. Per gli Eroi, segui le stesse regole della modalità Avventura."
         },
         "sacrifice": {
             "title": "Sacrificio",
-            "text": "Il personaggio può decidere, prima del lancio dei dadi, di subire l'attacco al posto del bersaglio designato. Chi ha Sacrificio non può di contro né parare, né schivare. Non può utilizzare che la propria Armatura per difendersi. Questo personaggio subisce tutti i danni causati dall'attacco al posto del bersaglio designato."
+            "text": "Il personaggio può decidere, prima del lancio dei dadi, di subire l'attacco al posto del bersaglio designato. Chi ha Sacrificio non può di contro né parare, né schivare. Non può utilizzare che la propria Armatura per difendersi. Questo personaggio subisce tutti i danni causati dall'attacco al posto del bersaglio designato.",
+            "clarification": "In modalità SOLO/COOP, le unità dell'Overlord possono usare questa abilità solo se le condizioni dello scenario ne specificano le modalità d'uso."
         },
         "protected": {
             "title": "Protetto",
-            "text": "Questo personaggio può essere attaccato solo da attacchi ad area fintantoché è presente un personaggio amico senza l'abilità Protetto nella sua area. Due o più personaggi con questa abilità non possono proteggersi a vicenda."
+            "text": "Questo personaggio può essere attaccato solo da attacchi ad area fintantoché è presente un personaggio amico senza l'abilità Protetto nella sua area. Due o più personaggi con questa abilità non possono proteggersi a vicenda.",
+            "clarification": "In modalità SOLO/COOP, per le unità dell'Overlord questa abilità funziona seguendo le regole della modalità Avventura. Per ragioni di bilanciamento, un Eroe che ha questa abilità non può usarla in questa modalità."
         },
         "untouchable": {
             "title": "Intoccabile",
@@ -150,11 +167,13 @@
         },
         "bodyguard": {
             "title": "Guardia del corpo",
-            "text": "Il personaggio può parare (ovvero utilizzare dell'equipaggiamento per difendere come uno Scudo per esempio) gli attacchi rivolti verso i personaggi amici che occupano la sua stessa area. Non può schivare. L'uso dell'abilità rimpiazza il bonus di Difesa del bersaglio ma non quello della sua Armatura. É comunque il bersaglio designato a subire gli eventuali danni non parati."
+            "text": "Il personaggio può parare (ovvero utilizzare dell'equipaggiamento per difendere come uno Scudo per esempio) gli attacchi rivolti verso i personaggi amici che occupano la sua stessa area. Non può schivare. L'uso dell'abilità rimpiazza il bonus di Difesa del bersaglio ma non quello della sua Armatura. É comunque il bersaglio designato a subire gli eventuali danni non parati.",
+            "clarification": "Non puoi parare al posto dell'unità bersagliata.\nIn modalità SOLO/COOP, le unità dell'Overlord con questa abilità possono utilizzarla solo se le condizioni dello scenario specificano come farlo.\nIn modalità VERSUS, usando questa abilità aggiungi un (1) successo alla tua potenza di difesa contro gli attacchi da Mischia."
         },
         "spell_caster": {
             "title": "Mago",
-            "text": "Il personaggio è in grado di utilizzare le carte incantesimo a sua disposizione, spendendo le gemme da queste richieste. Quando un personaggio perde questa abilità (a causa del proprio ingombro, ad esempio), gli incantesimi già attivi restano tali per la durata descritta nell'incantesimo."
+            "text": "Il personaggio è in grado di utilizzare le carte incantesimo a sua disposizione, spendendo le gemme da queste richieste. Quando un personaggio perde questa abilità (a causa del proprio ingombro, ad esempio), gli incantesimi già attivi restano tali per la durata descritta nell'incantesimo.",
+            "clarification": "In modalità SOLO/COOP, le unità dell'Overlord con questa abilità possono utilizzarla solo se le condizioni dello scenario specificano come farlo. Allo stesso modo, alcuni scenari forniscono le regole su come un'unità dell'Overlord può lanciare incantesimi."
         }
     }
 }

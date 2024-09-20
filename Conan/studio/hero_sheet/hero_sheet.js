@@ -74,7 +74,7 @@ var HeroSheet = mergeObject(StudioItem, {
 
         if (sheet.name)
         {
-            code += "<div class=\"name\">" + sheet.name + (sheet.subname ? "<span>" + sheet.subname + "</span>" : " ") + "</div>";
+            code += "<div class=\"name\">" + sheet.name + (sheet.subname ? "<span style='font-size: " + (sheet.subnameSize || "60") + "%'>" + sheet.subname + "</span>" : " ") + "</div>";
         }
         if (sheet.gem)
         {
@@ -143,6 +143,10 @@ var HeroSheet = mergeObject(StudioItem, {
                     + "<label for=\"hsname\">" + HeroSheet._i18n.name + "</label>"
                     + "<input id=\"hsname\" spellcheck='false' name=\"sheetname\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n.namePh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
                     + "<input id=\"hssubname\" spellcheck='false' name=\"sheetsubname\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n.subnamePh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+                    + "<div class=\"field namesize\">"
+                        + "<label for=\"hsnamesize\">" + HeroSheet._i18n.namesize + "</label>"
+                        + "<input id=\"hsnamesize\" name=\"sheetnamesize\" type=\"number\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n.namesizePh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
+                    + "</div>"
                 + "</div>"
                 + "<div class=\"field color\">"
                     + "<label for=\"hsback\">" + HeroSheet._i18n.color + "</label>"
@@ -170,14 +174,14 @@ var HeroSheet = mergeObject(StudioItem, {
                     + "<label for=\"hscaracmeleeexertion\">" + HeroSheet._i18n.caracs + "</label>"
                     + "<div class='carac melee'>"
                         + "<input type=\"number\" min=\"1\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"hscaracmeleeexertion\" name=\"sheetmeleeexertion\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n.caracPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
-                        + "<select id=\"hscaracmeleedice\" class=\"dice\" name=\"sheetmeleedice\"><option value=\"red\">" + HeroSheet._i18n.diceRed + "</option><option value=\"redreroll\">" + HeroSheet._i18n.diceRedReroll + "</option><option value=\"orange\">" + HeroSheet._i18n.diceOrange + "</option><option value=\"orangereroll\">" + HeroSheet._i18n.diceOrangeReroll + "</option><option value=\"yellow\">" + HeroSheet._i18n.diceYellow + "</option><option value=\"yellowreroll\">" + HeroSheet._i18n.diceYellowReroll + "</option></select>"
+                        + "<select id=\"hscaracmeleedice\" class=\"dice\" name=\"sheetmeleedice\"><option value=\"none\">" + HeroSheet._i18n.diceNone + "</option><option value=\"red\">" + HeroSheet._i18n.diceRed + "</option><option value=\"redreroll\">" + HeroSheet._i18n.diceRedReroll + "</option><option value=\"orange\">" + HeroSheet._i18n.diceOrange + "</option><option value=\"orangereroll\">" + HeroSheet._i18n.diceOrangeReroll + "</option><option value=\"yellow\">" + HeroSheet._i18n.diceYellow + "</option><option value=\"yellowreroll\">" + HeroSheet._i18n.diceYellowReroll + "</option></select>"
                     + "</div>"
                     + "<div class='carac ranged'>"
                         + "<input type=\"number\" min=\"1\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"hscaracrangedexertion\" name=\"sheetrangedexertion\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n.caracPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
-                        + "<select id=\"hscaracrangeddice\" class=\"dice\" name=\"sheetrangeddice\"><option value=\"red\">" + HeroSheet._i18n.diceRed + "</option><option value=\"redreroll\">" + HeroSheet._i18n.diceRedReroll + "</option><option value=\"orange\">" + HeroSheet._i18n.diceOrange + "</option><option value=\"orangereroll\">" + HeroSheet._i18n.diceOrangeReroll + "</option><option value=\"yellow\">" + HeroSheet._i18n.diceYellow + "</option><option value=\"yellowreroll\">" + HeroSheet._i18n.diceYellowReroll + "</option></select>"
+                        + "<select id=\"hscaracrangeddice\" class=\"dice\" name=\"sheetrangeddice\"><option value=\"none\">" + HeroSheet._i18n.diceNone + "</option><option value=\"red\">" + HeroSheet._i18n.diceRed + "</option><option value=\"redreroll\">" + HeroSheet._i18n.diceRedReroll + "</option><option value=\"orange\">" + HeroSheet._i18n.diceOrange + "</option><option value=\"orangereroll\">" + HeroSheet._i18n.diceOrangeReroll + "</option><option value=\"yellow\">" + HeroSheet._i18n.diceYellow + "</option><option value=\"yellowreroll\">" + HeroSheet._i18n.diceYellowReroll + "</option></select>"
                     + "</div>"
                     + "<div class='carac defense'>"
-                        + "<select id=\"hscaracdefensedice\" class=\"dice\" name=\"sheetdefensedice\"><option value=\"red\">" + HeroSheet._i18n.diceRed + "</option><option value=\"redreroll\">" + HeroSheet._i18n.diceRedReroll + "</option><option value=\"orange\">" + HeroSheet._i18n.diceOrange + "</option><option value=\"orangereroll\">" + HeroSheet._i18n.diceOrangeReroll + "</option><option value=\"yellow\">" + HeroSheet._i18n.diceYellow + "</option><option value=\"yellowreroll\">" + HeroSheet._i18n.diceYellowReroll + "</option></select>"
+                        + "<select id=\"hscaracdefensedice\" class=\"dice\" name=\"sheetdefensedice\"><option value=\"none\">" + HeroSheet._i18n.diceNone + "</option><option value=\"red\">" + HeroSheet._i18n.diceRed + "</option><option value=\"redreroll\">" + HeroSheet._i18n.diceRedReroll + "</option><option value=\"orange\">" + HeroSheet._i18n.diceOrange + "</option><option value=\"orangereroll\">" + HeroSheet._i18n.diceOrangeReroll + "</option><option value=\"yellow\">" + HeroSheet._i18n.diceYellow + "</option><option value=\"yellowreroll\">" + HeroSheet._i18n.diceYellowReroll + "</option></select>"
                     + "</div>"
                     + "<div class='carac movement'>"
                         + "<input type=\"number\" min=\"1\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"hscaracmovementexertion\" name=\"sheetmovementexertion\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n.caracPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
@@ -185,7 +189,7 @@ var HeroSheet = mergeObject(StudioItem, {
                     + "</div>"
                     + "<div class='carac manipulation'>"
                         + "<input type=\"number\" min=\"1\" max=\"9\" step=\"1\" maxlength=\"1\" id=\"hscaracmanipulationexertion\" name=\"sheetmanipulationexertion\" autocomplete=\"off\" placeholder=\"" + HeroSheet._i18n.caracPh + "\" onkeyup=\"HeroSheet._preview();\" onchange=\"HeroSheet._preview();\"/>"
-                        + "<select id=\"hscaracmanipulationdice\" class=\"dice\" name=\"sheetmanipulationdice\"><option value=\"red\">" + HeroSheet._i18n.diceRed + "</option><option value=\"redreroll\">" + HeroSheet._i18n.diceRedReroll + "</option><option value=\"orange\">" + HeroSheet._i18n.diceOrange + "</option><option value=\"orangereroll\">" + HeroSheet._i18n.diceOrangeReroll + "</option><option value=\"yellow\">" + HeroSheet._i18n.diceYellow + "</option><option value=\"yellowreroll\">" + HeroSheet._i18n.diceYellowReroll + "</option></select>"
+                        + "<select id=\"hscaracmanipulationdice\" class=\"dice\" name=\"sheetmanipulationdice\"><option value=\"none\">" + HeroSheet._i18n.diceNone + "</option><option value=\"red\">" + HeroSheet._i18n.diceRed + "</option><option value=\"redreroll\">" + HeroSheet._i18n.diceRedReroll + "</option><option value=\"orange\">" + HeroSheet._i18n.diceOrange + "</option><option value=\"orangereroll\">" + HeroSheet._i18n.diceOrangeReroll + "</option><option value=\"yellow\">" + HeroSheet._i18n.diceYellow + "</option><option value=\"yellowreroll\">" + HeroSheet._i18n.diceYellowReroll + "</option></select>"
                     + "</div>"
                 + "</div>"
                 + "<div class=\"field skills\">"
@@ -270,6 +274,7 @@ var HeroSheet = mergeObject(StudioItem, {
             id: Math.random(),
             name: "",
             subname: "",
+            subnameSize: 60,
             back: "gray",
 
             image: "",
@@ -346,6 +351,7 @@ var HeroSheet = mergeObject(StudioItem, {
             id: $(".dialog input[name=sheetpos]")[0].value,
             name: $(".dialog input[name=sheetname]")[0].value,
             subname: $(".dialog input[name=sheetsubname]")[0].value,
+            subnameSize: $(".dialog input[name=sheetnamesize]")[0].value || "60",
             back: $(".dialog select[name=sheetback]")[0].value,
             image: $(".dialog input[name=sheetimage]")[0].value,
             imagelocation: {x: $(".dialog input[name=sheetimagelocation]")[0].value || "0", y: $(".dialog input[name=sheetimagelocation2]")[0].value || "50"},
@@ -368,6 +374,7 @@ var HeroSheet = mergeObject(StudioItem, {
         $(".dialog input[name=sheetpos]")[0].value = sheet.id;
         $(".dialog input[name=sheetname]")[0].value = sheet.name;
         $(".dialog input[name=sheetsubname]")[0].value = sheet.subname;
+        $(".dialog input[name=sheetnamesize]")[0].value = sheet.subnameSize || "60";
         $(".dialog select[name=sheetback]")[0].value = sheet.back || "gray"; $(".dialog select[name=sheetback]").attr("data-value", sheet.back || "gray");
         $(".dialog input[name=sheetimage]")[0].value = sheet.image;
         $(".dialog input[name=sheetimagelocation]")[0].value = sheet.imagelocation.x;

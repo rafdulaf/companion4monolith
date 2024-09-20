@@ -8,7 +8,9 @@ EncyclopediaEquipments._i18n = {
     'fromAnd': "et",
     'card': "exemplaire",
     'cards': "exemplaires",
-    'skill': "Compétence :"
+    'clarification': "Clarification :",
+    'skill': "Compétence :",
+    'tokensUsed': "Utilise les jetons :"
 };
 
 EncyclopediaEquipments._facets = {

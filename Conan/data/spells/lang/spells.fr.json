@@ -2,197 +2,283 @@
     "list": {
         "boris_rage": {
             "title": "Rage de Bori",
-            "text": "Ciblez une figurine avec ligne de vue.\nLa cible subit des dégâts de : {dice_orange}{dice_orange}",
+            "text": "Attaquez une unité en ligne de vue ; lancez {dice_orange}{dice_orange} (Défense possible).",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 140,
+                "textInter": 70
             }
         },
         "borne_by_the_wind": {
             "title": "Porté par le vent",
-            "text": "Le lanceur gagne la compétence Vol jusqu'à la fin de son tour.",
+            "text": "Gagnez la compétence Vol jusqu’à la fin de votre tour.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 143,
+                "textInter": 75
+            }
+        },
+        "borne_by_the_wind-versus": {
+            "title": "Porté par le vent",
+            "text": "Ciblez une unité en ligne de vue, ou vous-même. La cible gagne la compétence Vol jusqu’à la fin de votre tour.",
+            "textStyle": {
+                "textSize": 142,
+                "textInter": 70
             }
         },
         "energy_drain": {
             "title": "Drain d'énergie",
-            "text": "Ciblez une figurine avec ligne de vue sur une zone adjacente.\nLe Héros transfère une gemme de sa zone d'énergie disponible vers sa zone de fatigue. L'Overlord récupère 3 gemmes de sa zone de fatigue.",
+            "text": "Ciblez un Héros en ligne de vue dans une zone adjacente. Il déplace 1 gemme de sa Zone d’Énergie disponible vers sa Zone de Fatigue. Déplacez 3 gemmes de votre Zone de Fatigue vers votre Zone d’Énergie disponible.",
             "textStyle": {
-                "textSize": 140,
+                "textSize": 133,
                 "textInter": 66
+            }
+        },
+        "energy_drain-versus": {
+            "title": "Drain d'énergie",
+            "text": "Ciblez une unité en ligne de vue dans une zone adjacente. Le joueur contrôlant la cible déplace 1 gemme de sa Zone d’Énergie disponible vers sa Zone de Fatigue. Déplacez 2 gemmes de votre Zone de Fatigue vers votre Zone d’Énergie disponible.",
+            "textStyle": {
+                "textSize": 117,
+                "textInter": 73
             }
         },
         "gift_of_life": {
             "title": "Don de vie",
-            "text": "Ciblez un Héros avec ligne de vue.\nLe Lanceur transfère 2 gemmes de sa propre zone d'énergie disponible vers la zone d'énergie disponible de la cible.",
+            "text": "Ciblez un Héros en ligne de vue. Déplacez jusqu’à 2 gemmes de votre Zone d’Énergie disponible vers la Zone d’Énergie disponible du Héros.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 138,
+                "textInter": 75
+            }
+        },
+        "gift_of_life-versus": {
+            "title": "Don de vie",
+            "text": "Déplacez 1 gemme de votre Zone de Fatigue vers cette carte. Les gemmes placées sur cette carte ne sont pas transférées vers la Zone de Fatigue lors de la phase d’Entretien de fin de tour, mais transférées vers la Zone d’Énergie disponible lors de la prochaine phase de Récupération.",
+            "textStyle": {
+                "textSize": 117,
+                "textInter": 68
             }
         },
         "kiss_of_death": {
             "title": "Baiser de la mort",
-            "text": "Le lanceur est retiré du plateau et toutes les figurines sur la zone subissent des dégâts de : {dice_red_reroll}{dice_red_reroll}{dice_red_reroll}.",
+            "text": "Retirez votre figurine du plateau. Attaquez toutes les unités dans la zone où vous étiez ; lancez {dice_red_reroll}{dice_red_reroll}{dice_red_reroll} (Défense possible).",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 128,
+                "textInter": 85
             }
         },
         "lightning_storm": {
             "title": "Tempête d'éclairs",
-            "text": "Ciblez une zone avec ligne de vue.\nToutes les figurines sur la zone subissent des dégâts de : {dice_red}{dice_red}.",
+            "text": "Attaquez toutes les unités dans une zone en ligne de vue ; lancez{dice_red}{dice_red} (Défense possible).",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 140,
+                "textInter": 70
             }
         },
         "magical_dizziness": {
-            "title": "Etourdissement",
-            "text": "Ciblez un lanceur de sort avec ligne de vue. La cible paye 1 gemme de plus pour lancer des sorts pendant 1 tour.\nLe sort se dissipe au début du tour suivant du lanceur de sort.",
+            "title": "Étourdissement",
+            "text": "Ciblez une unité en ligne de vue ayant la compétence Lanceur de Sorts. La cible paye 1 gemme de plus pour lancer des sorts, jusqu’au début de votre prochain tour ou activation.",
             "textStyle": {
-                "textSize": 149,
-                "textInter": 66
+                "textSize": 138,
+                "textInter": 70
+            }
+        },
+        "magical_dizziness-versus": {
+            "title": "Étourdissement",
+            "text": "Choisissez une tuile de la Rivière de votre adversaire. Il doit payer 1 gemme supplémentaire pour activer cette tuile, jusqu’au début de votre prochain tour.",
+            "textStyle": {
+                "textSize": 148,
+                "textInter": 70
             }
         },
         "mind_control": {
             "title": "Contrôle mental",
-            "text": "Ciblez une figurine adverse sans ligne de vue. Déplacez-la d'1 zone + 1 zone par gemme d'énergie dépensée, en suivant les restrictions de déplacement et sans que cela ne provoque de dégâts à la figurine.",
-            "clarification": "La ligne de vue n’a pas d’incidence sur la cible que peut choisir le lanceur de sort.\nUne unité ne peut cibler une unité ennemie disposant de Fascination, quelle qu’en soit la raison, tant que cette unité ennemie ne l’a pas attaquée.",
+            "text": "Ciblez une unité adverse n’importe où sur le plateau. Déplacez-la d’1 zone + 1 zone par gemme dépensée en plus du coût du sort, en suivant les restrictions de mouvement et sans que cela ne cause de dégâts à la cible.",
+            "clarification": "Une unité ne peut cibler une unité ennemie disposant de Fascination, quelle qu’en soit la raison, tant que cette unité ennemie ne l’a pas attaquée.",
             "textStyle": {
-                "textSize": 134,
-                "textInter": 66
+                "textSize": 120,
+                "textInter": 80
             }
         },
         "mitras_halo": {
             "title": "Halo de Mitra",
-            "text": "Le lanceur augmente sa défense passive de 2. Le halo se dissipe au début du tour où le Héros lanceur redevient actif après un tour de récupération, ou à l'activation de la tuile du lanceur de sort pour l'Overlord.",
+            "text": "Augmentez votre Défense passive de 2. Ce sort se dissipe quand vous passez de l’état En récupération à l’état Actif (Héros), ou à l’activation de votre tuile (Overlord).",
             "textStyle": {
-                "textSize": 136,
-                "textInter": 66
+                "textSize": 123,
+                "textInter": 85
+            }
+        },
+        "mitras_halo-versus": {
+            "title": "Halo de Mitra",
+            "text": "Choisissez une tuile de votre Rivière. Durant le tour de votre adversaire, vous pouvez relancer gratuitement 1 dé de Défense passive par unité de cette tuile. Ce sort se dissipe au début de votre prochain tour.",
+            "textStyle": {
+                "textSize": 132,
+                "textInter": 70
             }
         },
         "mitras_healing": {
             "title": "Guérison de Mitra",
-            "text": "Ciblez un Héros dans la même zone que le lanceur ou le lanceur lui-même. Lancez : {dice_orange_reroll} Le résultat indique le nombre de gemmes transférées depuis la zone de blessure vers la zone d'énergie disponible du Héros.",
-            "clarification": "Le lanceur peut se cibler lui-même.",
+            "text": "Ciblez un Héros dans votre zone, ou vous-même ; lancez {dice_orange_reroll}.\nLa cible déplace autant de gemmes de sa Zone de Blessure vers sa Zone d’Énergie disponible.",
             "textStyle": {
                 "textSize": 134,
-                "textInter": 65
+                "textInter": 80
+            }
+        },
+        "mitras_healing-versus": {
+            "title": "Guérison de Mitra",
+            "text": "Récupérez {dice_orange} points de vie, sans dépasser leur valeur de départ.",
+            "textStyle": {
+                "textSize": 134,
+                "textInter": 70
             }
         },
         "pestilential_swarm": {
             "title": "Nuée pestilentielle",
-            "text": "Toute figurine, à l'exception des morts-vivants, située dans la même zone que le lanceur subit des dégâts de : {dice_yellow}{dice_yellow}{dice_yellow}\nAucune défense n'est possible. Le lanceur du sort est immunisé.",
+            "text": "Attaquez toutes les unités dans votre zone, sauf vous ; lancez {dice_yellow}{dice_yellow}{dice_yellow}. Les dégâts sont inévitables. Ce sort n’a pas d’effet sur vous ni sur les morts-vivants (Momies, Squelettes, Revenants…).",
             "textStyle": {
-                "textSize": 142,
-                "textInter": 66
+                "textSize": 118,
+                "textInter": 85
             }
         },
         "sets_bite": {
             "title": "Morsure de Set",
-            "text": "Ciblez une figurine avec ligne de vue.\nLa cible ou l'Overlord transfère une gemme de sa zone d'énergie disponible vers sa zone de fatigue. La cible subit des dégâts de : {dice_orange}{dice_orange}",
+            "text": "Attaquez une unité en ligne de vue ; lancez {dice_orange}{dice_orange} (Défense possible). De plus, la cible déplace une gemme de sa Zone d’Énergie disponible vers sa Zone de Fatigue (Héros comme Overlord).",
             "textStyle": {
-                "textSize": 148,
-                "textInter": 66
+                "textSize": 116,
+                "textInter": 85
+            }
+        },
+        "sets_bite-versus": {
+            "title": "Morsure de Set",
+            "text": "Ciblez une figurine en ligne de vue. Le joueur contrôlant la cible déplace une gemme de sa Zone d’Énergie disponible vers sa Zone de Fatigue. La cible subit {dice_orange}{dice_orange}. Les dégâts sont inévitables.",
+            "textStyle": {
+                "textSize": 121,
+                "textInter": 77
             }
         },
         "sets_halo": {
             "title": "Halo de Set",
-            "text": "Le lanceur augmente sa défense passive de 1. Le halo se dissipe au début du tour où le Héros lanceur redevient actif après un tour de récupération, ou à l'activation de la tuile du lanceur de sort pour l'Overlord.",
+            "text": "Augmentez votre Défense passive de 1. Ce sort se dissipe quand vous passez de l’état En récupération à l’état Actif (Héros), ou à l’activation de votre tuile (Overlord).",
             "textStyle": {
-                "textSize": 136,
-                "textInter": 66
+                "textSize": 123,
+                "textInter": 85
+            }
+        },
+        "sets_halo-versus": {
+            "title": "Halo de Set",
+            "text": "Choisissez une tuile de votre Rivière. Durant le tour de votre adversaire, vous pouvez relancer gratuitement 1 dé de Défense passive par unité de cette tuile. Ce sort se dissipe au début de votre prochain tour.",
+            "textStyle": {
+                "textSize": 132,
+                "textInter": 70
             }
         },
         "sets_possession": {
             "title": "Possession de Set",
-            "text": "Ciblez une figurine sans ligne de vue jusqu'à 2 zones de distance.\nLors de sa prochaine activation, la cible ne pourra pas se déplacer. Si la cible dispose de la compétence Blocage, elle pourra se déplacer mais perd cette compétence pour ce tour.",
+            "text": "Ciblez une unité sur le plateau, jusqu’à 2 zones de distance, en ligne de vue ou pas. Lors de sa prochaine activation ou phase d’Action en état Actif, la cible ne pourra pas se déplacer. Si elle a la compétence Bloqueur, elle pourra se déplacer mais perd cette compétence jusqu’à son prochain tour.",
             "textStyle": {
-                "textSize": 127,
-                "textInter": 66
+                "textSize": 110,
+                "textInter": 70
             }
         },
         "telekinesis": {
             "title": "Télékinésie",
-            "text": "Ciblez un objet avec ligne de vue. Le lanceur peut immédiatement le ramasser.\nL'encombrement de l'objet ne peut être supérieur à 3.",
+            "text": "Ciblez un objet en ligne de vue d’Encombrement 3 ou moins. Ramassez-le immédiatement.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 133,
+                "textInter": 80
+            }
+        },
+        "telekinesis-versus": {
+            "title": "Télékinésie",
+            "text": "Ciblez une unité en ligne de vue. Déplacez la cible d’une zone vers vous. Ce mouvement n’est pas affecté par le phénomène de gêne.",
+            "textStyle": {
+                "textSize": 140,
+                "textInter": 70
             }
         },
         "teleportation": {
             "title": "Téléportation",
-            "text": "Pour toute gemme dépensée après avoir payé le coût du sort, le lanceur peut se déplacer d'une zone.\nCe mouvement n'est affecté par aucun obstacle. Le lanceur n'a pas besoin d'avoir une ligne de vue avec sa destination.",
-            "clarification": "Le lanceur de sort n'est pas soumis au phénomène de gêne ni à la compétence Bloqueur.",
+            "text": "Déplacez-vous d’une zone par gemme dépensée en plus du coût du sort. Ce mouvement n’est pas affecté par les obstacles (murs, portes, tentures…), le phénomène de gêne, la compétence Bloqueur, ni les niveaux d’élévation.",
             "textStyle": {
-                "textSize": 127,
-                "textInter": 66
+                "textSize": 123,
+                "textInter": 80
             }
         },
         "archer_of_acheron": {
             "title": "Archer d'Acheron",
-            "text": "Ciblez une figurine de Héros avec ligne de vue. Le Héros améliore son type de dé au combat à distance (de jaune à orange ou de orange à rouge) jusqu'à la fin du tour du camp du lanceur. Si son dé initial était relançable, il le reste.",
+            "text": "Ciblez un Héros en ligne de vue. Améliorez la couleur du dé de sa case Attaque à distance jusqu’à la fin de son tour (de jaune à orange ou de orange à rouge). Si le dé était relançable, il le reste.",
             "textStyle": {
-                "textSize": 130,
-                "textInter": 66
+                "textSize": 135,
+                "textInter": 71
+            }
+        },
+        "archer_of_acheron-versus": {
+            "title": "Archer d'Acheron",
+            "text": "Ciblez une unité en ligne de vue. Choisissez un de ses dés d’Attaque à distance et améliorez sa couleur (de jaune à orange ou de orange à rouge), jusqu’à la fin de votre tour. Si le dé était relançable, il le reste.",
+            "textStyle": {
+                "textSize": 131,
+                "textInter": 70
             }
         },
         "bad_luck": {
             "title": "Malchance",
-            "text": "Ciblez une figurine avec ligne de vue.\nLa cible gagne la compétence Malchance jusqu'au début du tour suivant du camp du lanceur.",
+            "text": "Ciblez une unité en ligne de vue. La cible gagne la compétence Malchance jusqu’au début du tour suivant de votre camp.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 149,
+                "textInter": 73
             }
         },
         "barrier_of_the_winds": {
             "title": "Barrière des Vents",
-            "text": "Ciblez une figurine avec ligne de vue.\nLa figurine ne peut plus être la cible d'attaques à distance jusqu'au début du tour suivant du camp du lanceur.",
+            "text": "Ciblez une unité en ligne de vue. La cible ne peut plus subir d’Attaques à distance jusqu’au début du tour suivant de votre camp.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 142,
+                "textInter": 72
             }
         },
         "bels_caress": {
             "title": "Caresse de Bel",
-            "text": "Le lanceur ouvre une porte ou un coffre fermé à clef dans sa zone.",
+            "text": "Ciblez un coffre ou une porte verrouillée dans votre zone. Il s’ouvre immédiatement.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 140,
+                "textInter": 74
             }
         },
         "bels_hand": {
             "title": "Main de Bel",
-            "text": "Ciblez une figurine de Héros avec ligne de vue.\nLe Héros améliore son type de dé en manipulation (de jaune à orange ou orange à rouge) jusqu'à la fin du tour du camp du lanceur.\nSi son dé initial était relançable, il le reste.",
+            "text": "Ciblez un Héros en ligne de vue. Améliorez la couleur du dé de sa case Manipulation jusqu’à la fin de son tour (de jaune à orange ou de orange à rouge). Si le dé était relançable, il le reste.",
             "textStyle": {
-                "textSize": 130,
-                "textInter": 69
+                "textSize": 135,
+                "textInter": 71
             }
         },
         "blessing_of_ibis": {
             "title": "Bénédiction d'Ibis",
-            "text": "Ciblez une figurine avec ligne de vue.\nLa cible gagne la compétence Intouchable jusqu'au début du tour suivant du camp du lanceur.",
+            "text": "Ciblez une unité en ligne de vue. La cible gagne la compétence Intouchable jusqu’au début du tour suivant de votre camp.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 149,
+                "textInter": 72
             }
         },
         "changing_destiny": {
             "title": "Destin changeant",
-            "text": "Ciblez une figurine avec ligne de vue.\nS'il s'agit d'un Héros, il est obligé de se mettre en récupération à son prochain tour. S'il s'agit d'une figurine de l'Overlord, il ne peut pas activer la tuile correspondante.",
+            "text": "Ciblez une unité en ligne de vue. À son prochain tour, la cible doit se déclarer en état En récupération (Héros), ou sa tuile ne peut pas être activée (Overlord).",
             "textStyle": {
                 "textSize": 140,
-                "textInter": 66
+                "textInter": 71
+            }
+        },
+        "changing_destiny-versus": {
+            "title": "Destin changeant",
+            "text": "Choisissez une tuile de la Rivière de votre adversaire. Il ne peut pas activer cette tuile, jusqu’au début de votre prochain tour.",
+            "textStyle": {
+                "textSize": 143,
+                "textInter": 70
             }
         },
         "dagons_attack": {
             "title": "Attaque de Dagon",
-            "text": "Ciblez un tentacule avec ligne de vue.\nLe tentacule peut être déplacé jusqu'à 3 zones puis attaquer au corps à corps.",
+            "text": "Ciblez un Tentacule en ligne de vue. Déplacez-le jusqu’à 3 zones, puis il peut réaliser une Attaque au corps-à-corps.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 139,
+                "textInter": 71
             }
         },
         "dagons_awakening": {
@@ -205,24 +291,24 @@
         },
         "deceleration": {
             "title": "Ralentissement",
-            "text": "Ciblez une figurine avec ligne de vue.\nLa cible perd sa base de points de mouvement jusqu'au début du tour suivant du camp du lanceur.",
+            "text": "Ciblez une unité en ligne de vue. La cible perd sa base de points de mouvement jusqu’au début du tour suivant de votre camp.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 134,
+                "textInter": 74
             }
         },
         "divine_charisma": {
             "title": "Charisme divin",
-            "text": "Ciblez une figurine avec ligne de vue.\nLa cible gagne la compétence Soutien jusqu'au début du tour suivant du camp du lanceur.",
+            "text": "Ciblez une unité en ligne de vue. La cible gagne la compétence Soutien jusqu’au début du tour suivant de votre camp.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 149,
+                "textInter": 73
             }
         },
         "drying_earth": {
             "title": "Assèchement de la terre",
             "titleLong": true,
-            "text": "Ciblez une zone au terrain instable (marécageuse...) avec ligne de vue. Le sol de la zone devient stable. Il n'y a plus de pénalité de mouvement associé à cette zone.\nLe sort se dissipe au début du tour suivant du camp du lanceur.",
+            "text": "Ciblez une zone en ligne de vue au terrain instable (marécages...). Il n’y a plus de pénalité de mouvement associée à cette zone, jusqu’au début du tour suivant de votre camp.",
             "textStyle": {
                 "textSize": 123,
                 "textInter": 70
@@ -230,42 +316,66 @@
         },
         "eagle_eye": {
             "title": "Oeil de faucon",
-            "text": "Ciblez une figurine avec ligne de vue.\nLa cible gagne la compétence Tir précis jusqu'à la fin du tour du camp du lanceur.",
+            "text": "Ciblez une unité en ligne de vue. La cible gagne la compétence Tir précis jusqu’à la fin du tour de votre camp.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 143,
+                "textInter": 74
             }
         },
         "eel_skin": {
             "title": "Peau d'anguille",
-            "text": "Ciblez une figurine avec ligne de vue.\nLa cible gagne la compétence Insaisissable jusqu'à la fin du tour du camp du lanceur.",
+            "text": "Ciblez une unité en ligne de vue. La cible gagne la compétence Insaisissable jusqu’à la fin du tour de votre camp.",
             "textStyle": {
                 "textSize": 150,
-                "textInter": 66
+                "textInter": 72
             }
         },
         "escape_route": {
-            "title": "Echappatoire",
-            "text": "Ciblez une figurine de Héros avec ligne de vue.\nLe Héros améliore son type de dé en défense (de jaune à orange ou orange à rouge) jusqu'au début du tour suivant du camp du lanceur. Si son dé initial était relançable, il le reste.",
+            "title": "Échappatoire",
+            "text": "Ciblez un Héros en ligne de vue. Améliorez la couleur du dé de sa case Défense jusqu’au début du tour suivant de votre camp (de jaune à orange ou de orange à rouge). Si le dé était relançable, il le reste.",
             "textStyle": {
-                "textSize": 130,
+                "textSize": 137,
                 "textInter": 66
+            }
+        },
+        "escape_route-versus": {
+            "title": "Échappatoire",
+            "text": "Ciblez une unité en ligne de vue. Améliorez sa valeur de Défense passive de 1, jusqu’au début de votre prochain tour.",
+            "textStyle": {
+                "textSize": 132,
+                "textInter": 70
             }
         },
         "fleet_runner": {
             "title": "Course vive",
-            "text": "Ciblez une figurine avec ligne de vue.\nLa cible améliore sa base de points de mouvement et l'indice de saturation correspondant de 1 jusqu'à la fin du tour du camp du lanceur.",
+            "text": "Ciblez une unité en ligne de vue. Augmentez de 1 ses valeurs de Mouvement (base de points de mouvement et indice de saturation) jusqu’à la fin du tour de votre camp.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 131,
+                "textInter": 73
+            }
+        },
+        "fleet_runner-versus": {
+            "title": "Course vive",
+            "text": "Choisissez une tuile de votre Rivière. Les unités de cette tuile gagnent la compétence Insaisissable jusqu’à la fin de votre tour.",
+            "textStyle": {
+                "textSize": 139,
+                "textInter": 72
             }
         },
         "gullahs_strength": {
             "title": "Force de Gullah",
-            "text": "Ciblez une figurine de Héros avec ligne de vue.\nLe Héros améliore son type de dé au combat au corps-à-corps (de jaune à orange ou orange à rouge) jusqu'à la fin du tour du camp du lanceur.\nSi son dé initial était relançable, il le reste.",
+            "text": "Ciblez un Héros en ligne de vue. Améliorez la couleur du dé de sa case Attaque au corps-à- corps jusqu’à la fin du tour de votre camp (de jaune à orange ou de orange à rouge). Si le dé était relançable, il le reste.",
             "textStyle": {
-                "textSize": 130,
-                "textInter": 66
+                "textSize": 135,
+                "textInter": 67
+            }
+        },
+        "gullahs_strength-versus": {
+            "title": "Force de Gullah",
+            "text": "Ciblez une unité en ligne de vue. Choisissez un de ses dés d’Attaque au corps-à-corps et améliorez sa couleur (de jaune à orange ou de orange à rouge), jusqu’à la fin de votre tour. Si le dé était relançable, il le reste.",
+            "textStyle": {
+                "textSize": 122,
+                "textInter": 70
             }
         },
         "gwahlurs_darkness": {
@@ -278,10 +388,10 @@
         },
         "hand_of_death": {
             "title": "Main de la mort",
-            "text": "Ciblez une figurine dans la zone du lanceur.\nLa cible subit des dégâts de {dice_red}{dice_red}, puis le lanceur subit 1 blessure.",
+            "text": "Attaquez une unité dans votre zone ; lancez {dice_red}{dice_red} (Défense possible). Vous subissez 1 dégât inévitable.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 133,
+                "textInter": 81
             }
         },
         "hanumans_body": {
@@ -294,18 +404,18 @@
         },
         "inversion": {
             "title": "Inversion",
-            "text": "Ciblez une figurine avec ligne de vue.\nLe lanceur échange sa position avec celle de la cible en payant 1 gemme par zone le séparant de sa cible, en plus du coût du sort.",
+            "text": "Ciblez une unité en ligne de vue. Payez 1 gemme par zone vous séparant de la cible, en plus du coût du sort. Échangez votre position avec celle de la cible.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 134,
+                "textInter": 74
             }
         },
         "ishtars_gaze": {
             "title": "Regard d'Ishtar",
-            "text": "Ciblez une figurine avec ligne de vue.\nLa cible gagne la compétence Sous protection jusqu'au début du tour suivant du camp du lanceur.",
+            "text": "Ciblez une unité en ligne de vue. La cible gagne la compétence Sous protection jusqu’au début du tour suivant de votre camp.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 143,
+                "textInter": 71
             }
         },
         "jhebbal_sags_rage": {
@@ -318,67 +428,75 @@
         },
         "lethal_cloud": {
             "title": "Nuage mortel",
-            "text": "Ciblez une zone avec ligne de vue. Chaque figurine qui s'y trouve, y entre ou en sort, encaisse une seule fois des dégâts de : {dice_red}{dice_red}\nLe sort se dissipe au début du tour suivant du camp du lanceur de sort.",
+            "text": "Ciblez une zone en ligne de vue. Attaquez toutes les unités dans la zone ; lancez {dice_red}{dice_red} (Défense possible). Les unités entrant ou sortant de la zone subissent une Attaque de la même puissance. Ce sort se dissipe au début du tour suivant de votre camp.",
             "textStyle": {
-                "textSize": 134,
-                "textInter": 65
+                "textSize": 118,
+                "textInter": 74
             }
         },
         "life_transfer": {
             "title": "Transfert de vie",
-            "text": "Ciblez un Héros et son allié avec lignes de vue. Sacrifiez l'allié pour transférer 2 gemmes de la zone de blessure du Héros vers sa zone de fatigue.",
+            "text": "Ciblez un Héros et un Allié en ligne de vue. Retirez l’Allié du plateau ; le Héros déplace jusqu’à 2 gemmes de sa Zone de Blessure vers sa Zone de Fatigue.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 144,
+                "textInter": 72
+            }
+        },
+        "life_transfer-versus": {
+            "title": "Transfert de vie",
+            "text": "Ciblez une zone en ligne de vue. Récupérez 1 point de vie pour chaque unité amie dans cette zone, sans dépasser votre valeur de points de vie de départ. Puis, toutes les unités amies dans cette zone sont tuées.",
+            "textStyle": {
+                "textSize": 126,
+                "textInter": 70
             }
         },
         "light_as_a_feather": {
             "title": "Léger comme une plume",
             "titleLong": true,
-            "text": "Ciblez une figurine avec ligne de vue.\nLa cible diminue de 3 son encombrement actuel jusqu'à la fin du tour du camp du lanceur.",
+            "text": "Ciblez une unité en ligne de vue. La cible diminue de 3 son niveau d’Encombrement jusqu’à la fin du tour de votre camp.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 130,
+                "textInter": 73
             }
         },
         "magic_block": {
             "title": "Blocage magique",
-            "text": "Ciblez une figurine avec ligne de vue.\nLa cible gagne la compétence Bloqueur jusqu'au début du tour suivant du camp du lanceur.",
+            "text": "Ciblez une unité en ligne de vue. La cible gagne la compétence Bloqueur jusqu’au début du tour suivant de votre camp.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 130,
+                "textInter": 76
             }
         },
         "mystic_barrier": {
             "title": "Barrière mystique",
-            "text": "Le lanceur empèche toutes les autres figurines d'entrer dans sa zone jusqu'au début du tour suivant du camp du lanceur.",
+            "text": "Aucune autre unité ne peut entrer dans votre zone jusqu’au début du tour suivant de votre camp.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 145,
+                "textInter": 70
             }
         },
         "putrescence": {
             "title": "Putrescence",
-            "text": "Le lanceur ne peut pas être attaqué par des morts-vivants (momie ou squelette) jusqu'au début du tour suivant du camp du lanceur.",
+            "text": "Les morts-vivants (Momies, Squelettes, Revenants…) ne peuvent pas vous attaquer jusqu’au début du tour suivant de votre camp.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 148,
+                "textInter": 73
             }
         },
         "recall": {
             "title": "Rappel",
-            "text": "Ciblez une figurine avec ligne de vue.\nToutes les figurines amies de la zone ciblée sont déplacées sur la zone du lanceur.",
+            "text": "Ciblez une zone en ligne de vue. Prenez toutes les unités amies dans cette zone et placez-les dans votre zone.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 142,
+                "textInter": 72
             }
         },
         "return_of_the_brave": {
             "title": "Retour des braves",
-            "text": "En payant le coût de renfort d'une unité alliée, le lanceur peut ramener en renfort l'unité dans sa zone.",
+            "text": "Le coût du sort X est le coût de renfort d’une unité morte de votre camp. Ramenez l’unité en renfort dans votre zone. Sa tuile ne doit pas avoir été retirée du jeu.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 141,
+                "textInter": 71
             }
         },
         "sets_blood": {
@@ -391,34 +509,34 @@
         },
         "sets_illusion": {
             "title": "Illusion de Set",
-            "text": "Ciblez une figurine avec ligne de vue.\nLa cible gagne la compéténce Horreur jusqu'au début du tour suivant du camp du lanceur.",
+            "text": "Ciblez une unité en ligne de vue. La cible gagne la compétence Horreur jusqu’au début du tour suivant de votre camp.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 138,
+                "textInter": 73
             }
         },
         "shapechanger": {
             "title": "Change-forme",
-            "text": "Le lanceur est retiré du plateau et reviendra sur sa zone de départ ou une zone adjacente, à son prochain tour ou activation.",
+            "text": "Retirez votre figurine du plateau. Au début de votre prochain tour ou activation, placez votre figurine dans sa zone de départ ou dans une zone adjacente.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 132,
+                "textInter": 73
             }
         },
         "stone_skin": {
             "title": "Peau de pierre",
-            "text": "Ciblez une figurine avec ligne de vue.\nLa cible améliore sa défense passive de 2 jusqu'au début du tour suivant du camp du lanceur.",
+            "text": "Ciblez une unité en ligne de vue. Augmentez de 2 sa Défense passive jusqu’au début du tour suivant de votre camp.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 130,
+                "textInter": 79
             }
         },
         "tears_of_dagon": {
             "title": "Larmes de Dagon",
-            "text": "Ciblez une zone au terrain stable avec ligne de vue. Le sol de la zone devient instable.\nQuitter cette zone coûte 1 point de mouvement supplémentaire.\nLe sort se dissipe au début du tour suivant du camp du lanceur.",
+            "text": "Ciblez une zone au terrain stable en ligne de vue. Le sol devient instable. Quitter cette zone coûte 1 point de mouvement supplémentaire, jusqu’au début du tour suivant de votre camp.",
             "textStyle": {
-                "textSize": 132,
-                "textInter": 69
+                "textSize": 123,
+                "textInter": 84
             }
         },
         "warmth_of_ishtar": {
@@ -431,26 +549,26 @@
         },
         "withering": {
             "title": "Flétrissement",
-            "text": "Ciblez une figurine avec ligne de vue.\nLa cible subit des blessures de : {dice_yellow_reroll}\nAucune défense n'est possible.",
+            "text": "Attaquez une unité en ligne de vue ; lancez {dice_yellow_reroll}. Les dégâts sont inévitables.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 144,
+                "textInter": 78
             }
         },
         "yajurs_awakening": {
             "title": "Réveil de Yajur",
-            "text": "En payant le coût de renfort d'une figurine de mort-vivant (momie ou squelette), le lanceur peut la ramener en renfort dans sa zone.",
+            "text": "Le coût du sort X est le coût de renfort d’une unité mort-vivant (Momie, Squelette, Revenant…) morte. Ramenez l’unité en renfort dans votre zone. Sa tuile ne doit pas avoir été retirée du jeu.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 141,
+                "textInter": 65
             }
         },
         "ymirs_rage": {
             "title": "Rage d'Ymir",
-            "text": "Les figurines amies et le lanceur de sort voient toutes leurs attaques augmentées de {dice_orange} et leur défense diminuée de 1.\nLe sort se dissipe au début du tour suivant du camp du lanceur.",
+            "text": "Toutes les unités de votre camp (vous y compris) lancent {dice_orange} supplémentaire lors de leurs Attaques, et diminuent de 1 leur Défense passive. Ce sort se dissipe au début du tour suivant de votre camp.",
             "textStyle": {
-                "textSize": 148,
-                "textInter": 66
+                "textSize": 134,
+                "textInter": 68
             }
         },
         "weight_of_the_years": {
@@ -572,6 +690,51 @@
             "textStyle": {
                 "textSize": 134,
                 "textInter": 74
+            }        
+        },
+        "soul_leech": {
+            "title": "Sangsue de l’âme",
+            "text": "Ciblez un Héros ou Allié dans votre zone. Il subit 1 dégât inévitable. Vous gagnez 1 point de vie. Vos points de vie peuvent dépasser leur valeur de départ.",
+            "textStyle": {
+                "textSize": 151,
+                "textInter": 72
+            }        
+        }
+        ,
+        "enthrallment": {
+            "title": "Envoûtement",
+            "text": "Vous ne pouvez pas être attaqué par des ennemis dans votre zone jusqu’au début de votre prochain tour ou activation.",
+            "textStyle": {
+                "textSize": 139,
+                "textInter": 77
+            }        
+        }
+        ,
+        "eldritch_lance": {
+            "title": "Lance surnaturelle",
+            "text": "Attaquez une unité en ligne de vue ; lancez {dice_red}{dice_orange} et ignorez 1 point de Défense passive (Défense possible).",
+            "textStyle": {
+                "textSize": 141,
+                "textInter": 70
+            }        
+        }
+        ,
+        "spectral_shroud": {
+            "title": "Linceul spectral",
+            "text": "Placez 3 pions {token_spectral-shroud} sur cette carte (ou complétez-la jusqu’à 3 pions). Lorsque vous subissez 1 dégât ou plus, défaussez 1 pion {token_spectral-shroud} par dégât pour l’éviter.",
+            "textStyle": {
+                "textSize": 123,
+                "textInter": 90
+            },
+            "clarification": "Si des pions sont présents sur la carte Sort, leur utilisation est obligatoire en cas de dégât subi et quelle qu’en soit la cause : attaque, chute, dégât inévitable..."
+        }
+        ,
+        "protective_circle": {
+            "title": "Cercle de protection",
+            "text": "Les ennemis ne peuvent pas entrer dans votre zone ni réaliser d’Attaque au corps-à-corps dans votre zone jusqu’à votre prochain tour ou activation.",
+            "textStyle": {
+                "textSize": 146,
+                "textInter": 68
             }        
         }
     }

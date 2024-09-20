@@ -6,6 +6,7 @@ EncyclopediaSpells._i18n = {
     'transfertConfirm': "Vuoi copiare la carta nello Studio per modificarla o stamparla?",
     'from': "Disponibile in:",
     'fromAnd': "e",
+    'forVersus': "Specificatamente adattato per modalità Versus",
     'card': "copia",
     'cards': "copie",
     'clarification': "Chiarificazione:",
@@ -59,6 +60,13 @@ EncyclopediaSpells._facets = {
             'forSkill': { 'label': "Abilità" },
             'forRange': { 'label': "Distanza" },
             'forEnergy': { 'label': "Gemme" }
+        }
+    },
+    'type': {
+        'label': "Tipologia",
+        'values': {
+            'normal': { 'label': "Normale" },
+            'versus': { 'label': "Versus" }
         }
     },
     'empty': {

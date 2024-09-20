@@ -336,7 +336,7 @@
         "winged-one": {
             "name": "Winged One"
         },
-        "baal-pteor": {
+        "baal-pteor-2": {
             "name": "Baal Pteor",
             "quote": {
                 "text": "Your head, Cimmerian!” taunted Baal-pteor. “I shall take it with my bare hands, twisting it from your shoulders as the head of a fowl is twisted! Thus the sons of Kosala offer sacrifice to Yajur. Barbarian, you look upon a strangler of Yotapong. I was chosen by the priests of Yajur in my infancy, and throughout childhood, boyhood and youth I trained in the art of slaying with the naked hands—for only thus are the sacrifices enacted. Yajur loves blood, and we waste not a drop from the victim’s veins...With my hands, barbarian, I shall break your neck!”",
@@ -408,6 +408,88 @@
         "zelata-wanderer": {
             "name": "Zelata",
             "subname": "The Wanderer"
+        },
+        "conan-free-companion": {
+            "name": "Conan",
+            "subname": "Free Companion",
+            "quote": {
+                "text": "Arus saw a tall powerfully built youth, naked but for a loincloth, and sandals strapped high about his ankles. His skin was burned brown as by the suns of the wastelands, and Arus glanced nervously at the broad shoulders, massive chest and heavy arms. A single look at the moody, broad-browed features told the watchman that the man was no Nemedian. From under a mop of unruly black hair smoldered a pair of dangerous blue eyes. A long sword hung in a leather scabbard at his girdle.",
+                "origin": "The God in the Bowl"
+            }
+        },
+        "valeria-free-companion": {
+            "name": "Valeria",
+            "subname": "Free Companion",
+            "quote": {
+                "text": "She was tall, full-bosomed and large-limbed, with compact shoulders. Her whole figure reflected an unusual strength, without detracting from the femininity of her appearance. She was all woman, in spite of her bearing and her garments. Instead of a skirt she wore short, wide-legged silk breeches, which ceased a hand’s breadth short of her knees, and were upheld by a wide silken sash worn as a girdle. Flaring-topped boots of soft leather came almost to her knees, and a low-necked, wide-collared, wide-sleeved silk shirt completed her costume. There was the color of the sea in her wide eyes. And that was as it should have been, because this was Valeria of the Red Brotherhood, whose deeds are celebrated in song and ballad wherever seafarers gather.\n“Why won’t men let me live a man’s life?”\n“No living man could disarm Valeria of the Brotherhood with his bare hands.”",
+                "origin": "Red Nails"
+            }
+        },
+        "techotl": {
+            "name": "Techotl"
+        },
+        "olmec": {
+            "name": "Olmec"
+        },
+        "tascela": {
+            "name": "Tascela"
+        },
+        "tolkemec": {
+            "name": "Tolkemec"
+        },
+        "drusus": {
+            "name": "Drusus"
+        },
+        "ageera": {
+            "name": "Ageera",
+            "quote": {
+                "text": "Then go into Punt and find old Ageera, the witch-finder. Do not tell him flatly that Tananda had this deed done, but hint at it. » (...) The blacks gave back sullenly before her advance, and suddenly, from the devil house came a lean black figure. It was old Ageera, clad only in a loin cloth. Pointing his finger at Tananda, he yelled : “There she rides, she whose hands are dipped in blood ! She who murdered Amboola!",
+                "origin": "Untitled draft"
+            }
+        },
+        "conan-the-rogue": {
+            "name": "Conan The Rogue",
+            "quote": {
+                "text": "Arus saw a tall powerfully built youth, naked but for a loincloth, and sandals strapped high about his ankles. His skin was burned brown as by the suns of the wastelands, and Arus glanced nervously at the broad shoulders, massive chest and heavy arms. A single look at the moody, broad-browed features told the watchman that the man was no Nemedian. From under a mop of unruly black hair smoldered a pair of dangerous blue eyes. A long sword hung in a leather scabbard at his girdle.",
+                "origin": "The God in the Bowl"
+            }
+        },
+        "bran-mak-morn": {
+            "name": "Bran Mak Morn"
+        },
+        "atla": {
+            "name": "Atla"
+        },
+        "othna": {
+            "name": "Othna"
+        },
+        "grom": {
+            "name": "Grom"
+        },
+        "conan-the-berserker": {
+            "name": "Conan",
+            "subname": "The Berserker",
+            "quote": {
+                "text": "Arus saw a tall powerfully built youth, naked but for a loincloth, and sandals strapped high about his ankles. His skin was burned brown as by the suns of the wastelands, and Arus glanced nervously at the broad shoulders, massive chest and heavy arms. A single look at the moody, broad-browed features told the watchman that the man was no Nemedian. From under a mop of unruly black hair smoldered a pair of dangerous blue eyes. A long sword hung in a leather scabbard at his girdle.",
+                "origin": "The God in the Bowl"
+            }
+        },
+        "conan-the-destroyer": {
+            "name": "Conan",
+            "subname": "The Destroyer",
+            "quote": {
+                "text": "Arus saw a tall powerfully built youth, naked but for a loincloth, and sandals strapped high about his ankles. His skin was burned brown as by the suns of the wastelands, and Arus glanced nervously at the broad shoulders, massive chest and heavy arms. A single look at the moody, broad-browed features told the watchman that the man was no Nemedian. From under a mop of unruly black hair smoldered a pair of dangerous blue eyes. A long sword hung in a leather scabbard at his girdle.",
+                "origin": "The God in the Bowl"
+            }
+        },
+        "nestor": {
+            "name": "Nestor"
+        },
+        "ganbaatar": {
+            "name": "Ganbaatar"
+        },
+        "aja": {
+            "name": "Aja"
         }
     }
 }

@@ -273,6 +273,88 @@
                 ],
                 "totopic": "https://the-overlord.net/index.php?/topic/1011-conqueror-temple/"
             }
+        },
+        
+        "Jungle": {
+            "description": {
+                "title": "Giungla",
+                "rules": [
+                    {
+                        "title": "Acque Profonde",
+                        "description": "Un'unità adiacente ad un'area di acqua può entrarvi senza nessuna penalità al Movimento. Quando un'unità senza l'abilità Nuotare si muove in un'area di Acque Profonde, muore immediatamente."
+                    }, {
+                        "title": "Guado",
+                        "description": "Le unità, a prescindere se abbiano o meno l'abilità Nuotare, possono muoversi sulle rocce in quest'area di Acque Profonde, spendendo 2 punti Movimento aggiuntivi. Se hanno l'abilità Arrampicarsi, il costo del Movimento aggiuntivo è zero."
+                    }, {
+                        "title": "Rampicanti (in salita)",
+                        "description": "Un'unità con Arrampicarsi che si trova in un'area con dei Rampicanti, può salire sull'Altura spendendo due punti Movimento. Questo movimento è soggetto a Intralcio."
+                    }, {
+                        "title": "Rampicanti (in discesa)",
+                        "description": "Un'unità in un'area dell'Altura con dei Rampicanti, può discendere fino al terreno sottostante effettuando una Manipolazione complessa con difficoltà 2 (per gli Eroi) o spendendo 2 punti Movimento (per le unità dell'Overlord). Riduci questi valori di 1 se le unità hanno Arrampicarsi."
+                    }, {
+                        "title": "Altura",
+                        "description": "Queste aree forniscono un bonus soprelevazione di {dice_yellow}. Un'unità può saltar giù da un'area dell'Altura a un'area di terreno adiacente: l'unità tira {dice_red}{dice_red}{dice_red} per danno da caduta. Se invece l'unità ha Saltare, tira solo {dice_red}{dice_red}."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119069-red-nails-jungle/"
+            }
+        },
+        
+        "Xuchotl": {
+            "description": {
+                "title": "Xuchotl",
+                "rules": [
+                    {
+                        "title": "Aree Rialzate",
+                        "description": "Un'unità, a prescindere se abbia o meno le abilità Saltare o Arrampicarsi, può entrare nelle aree dell'altare sacrificale, tavolo della tortura o della pedana, spendendo un (1) punto Movimento aggiuntivo (a meno che non siano usate le scale per raggiungere la pedana). Un'unità in queste aree, a prescindere dall'avere o meno Allungo, può attaccare in mischia un'unità adiacente. Queste aree forniscono un bonus soprelevazione di {dice_yellow}, sia per attacchi in Mischia che da Tiro. Queste aree non bloccano la linea di vista. Un'unità può lasciare queste aree senza penalità al movimento."
+                    }, {
+                        "title": "Balconate",
+                        "description": "Un'unità può scavalcare la ringhiera di un'area Balconata per atterrare sul terreno sottostante se esiste un bordo in comune. L'unità tira {dice_red}{dice_red} per danni da caduta. Se invece l'unità ha Saltare, tira {dice_red}. Un'unità non può muoversi da un'area di terreno a un'area Balconata. Le Balconate forniscono un bonus sopraelevazione di {dice_yellow} sulle aree di terreno."
+                    }, {
+                        "title": "Cella",
+                        "description": "Nella cella non c'è linea di vista da dentro a fuori e viceversa. Un'unità può entrarvi solo attraverso la porta sulla sinistra."
+                    }, {
+                        "title": "Muri",
+                        "description": "Tutti i muri sono fatti di pietra e non possono essere abbattuti dall'abilità Spacca Muri."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119070-red-nails-xuchotl/"
+            }
+        },
+        
+        "Fort_Tuscelan": {
+            "description": {
+                "title": "Forte Tuscelan",
+                "rules": [
+                    {
+                        "title": "Intorno al Forte",
+                        "description": "Le aree intorno alle torri del forte sono separate da bordi e sono tra loro adiacenti."
+                    }, {
+                        "title": "Camminamenti",
+                        "description": "Un'unità può saltare da un camminamento a un'area situata più in basso dentro o fuori dal forte. L'unità tira {dice_orange}{dice_orange}{dice_orange} per danno da caduta. Se ha l'abilità Salto tira solo {dice_orange}. L'unico modo per ritornare nuovamente su un camminamento è tramite le scale. I camminamenti forniscono un bonus soprelevazione di {dice_yellow} sulle aree più in basso."
+                    }, {
+                        "title": "Scale",
+                        "description": "Salire e scendere da una scala costa un (1) punto Movimento aggiuntivo tranne per le unità che hanno l'abilità Arrampicarsi. Sono ammessi Attacchi in Mischia tra due aree separate da una scala a prescindere dall'abilità Allungo. Quando questo avviene, l'area sopraelevata fornisce un bonus sopraelevazione di {dice_yellow} per gli attacchi in mischia effettuati verso le aree più in basso."
+                    }, {
+                        "title": "Acqua",
+                        "description": "Un'unità deve spendere un (1) punto Movimento aggiuntivo per uscire da una di queste aree."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119071-versus-fort-tuscelan/"
+            }
+        },
+        
+        "Catacombs": {
+            "description": {
+                "title": "Catacombe",
+                "rules": [
+                    {
+                        "title": "Muri",
+                        "description": "Non è possibile scalare le pareti delle catacombe."
+                    }                
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119072-versus-catacombs/"
+            }
         }
     },
 
@@ -339,7 +421,7 @@
         
         "Galley_Deck": {
             "description": {
-                "title": "Galera (ponte)",
+                "title": "Galea (ponte)",
                 "rules": [
                     {
                         "title": "Castello di prua e ponte di poppa",

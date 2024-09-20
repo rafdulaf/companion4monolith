@@ -1,22 +1,26 @@
 {
     "list": {
         "heroes": {
-            "title": "Heroes's book",
+            "title": "Heroes' book",
             "shorttitle": "Heroes",
             "download": "https://the-overlord.net/index.php?/files/file/2-players-and-overlords-rulebooks-v2/",
-            "pages": 24
+            "pages": 23
         },
         "overlord": {
             "title": "Overlord's book",
-            "shorttitle": "Overlord",
+            "shorttitle": "Over<wbr/>lord",
             "download": "https://the-overlord.net/index.php?/files/file/2-players-and-overlords-rulebooks-v2/",
-            "pages": 14
-        },
-        "tomeofskelos": {
-            "title": "Tome of Skelos",
-            "shorttitle": "Skelos",
-            "download": "https://the-overlord.net/index.php?/files/file/174-tome-of-skelos-final-version-of-the-solocoop-rules/",
             "pages": 11
+        },
+        "versus": {
+            "title": "Versus Mode",
+            "shorttitle": "Versus",
+            "pages": 4
+        },
+        "coop": {
+            "title": "Solo/Coop Mode",
+            "shorttitle": "Solo/<wbr/>Coop",
+            "pages": 6
         }
     }
 }

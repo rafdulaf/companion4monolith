@@ -2,39 +2,63 @@
     "list": {
         "boris_rage": {
             "title": "Bori's Rage",
-            "text": "Attack a character in your line of sight; roll {dice_orange}{dice_orange}. If the attack power is greater than the defense power, the defender suffers damage equal to the difference.",
+            "text": "Attack a unit in your line of sight; roll {dice_orange}{dice_orange}. If the attack power is greater than the defense power, the defender suffers damage equal to the difference.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 132,
+                "textInter": 75
             }
         },
         "borne_by_the_wind": {
             "title": "Borne by the Wind",
-            "text": "Gain Flying until end of turn.",
+            "text": "Gain the Flying skill until the end of your turn.",
             "textStyle": {
                 "textSize": 150,
-                "textInter": 66
+                "textInter": 76
+            }
+        },
+        "borne_by_the_wind-versus": {
+            "title": "Borne by the Wind",
+            "text": "Target a unit in your line of sight, or yourself. The target gains the Flying skill until the end of your turn.",
+            "textStyle": {
+                "textSize": 159,
+                "textInter": 70
             }
         },
         "energy_drain": {
             "title": "Energy Drain",
-            "text": "Choose a hero in an area adjacent to you in your line of sight. That hero moves 1 gem from their Reserve zone to their Fatigue zone and you move 3 gems from your Fatigue zone to your Reserve zone.",
+            "text": "Target a Hero in an area adjacent to you in your line of sight. That Hero moves 1 gem from their Reserve zone to their Fatigue zone and you move 3 gems from your Fatigue zone to your Reserve zone.",
             "textStyle": {
-                "textSize": 144,
-                "textInter": 65
+                "textSize": 136,
+                "textInter": 73
+            }
+        },
+        "energy_drain-versus": {
+            "title": "Energy Drain",
+            "text": "Target a unit in an area adjacent to you in your line of sight. The player controlling the target moves 1 gem from their Reserve zone to their Fatigue zone, and you move 2 gems from your Fatigue zone to your Reserve zone.",
+            "textStyle": {
+                "textSize": 137,
+                "textInter": 64
             }
         },
         "gift_of_life": {
             "title": "Gift of Life",
-            "text": "Choose a hero in your line of sight. Move up to 2 gems from your Reserve to the chosen hero's Reserve zone.",
+            "text": "Target a Hero in your line of sight. Move up to 2 gems from your Reserve zone to that Hero’s Reserve zone.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 149,
+                "textInter": 75
+            }
+        },
+        "gift_of_life-versus": {
+            "title": "Gift of Life",
+            "text": "Move 1 gem from your Fatigue zone to this card. The gems on this card are not moved to the Fatigue zone during the End phase but moved to the Reserve zone during the next Recovery phase.",
+            "textStyle": {
+                "textSize": 136,
+                "textInter": 70
             }
         },
         "kiss_of_death": {
             "title": "Kiss of Death",
-            "text": "Attack your area, excluding yourself; roll {dice_red_reroll}{dice_red_reroll}{dice_red_reroll}. If the attack power is greater than the defense power, the defender suffers damage equal to the difference. Remove your model from the board.",
+            "text": "Remove your miniature from the board. Attack all units in your former area; roll {dice_red_reroll}{dice_red_reroll}{dice_red_reroll}. If the attack power is greater than the defense power, the defender suffers damage equal to the difference.",
             "textStyle": {
                 "textSize": 132,
                 "textInter": 73
@@ -42,157 +66,221 @@
         },
         "lightning_storm": {
             "title": "Lightning Storm",
-            "text": "Attack an area in your line of sight; roll {dice_red}{dice_red}. If the attack power is greater than the defense power, the defender suffers damage equal to the difference.",
+            "text": "Attack all units in an area in your line of sight; roll {dice_red}{dice_red}.\nIf the attack power is greater than the defense power, the defender suffers damage equal to the difference.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 132,
+                "textInter": 80
             }
         },
         "magical_dizziness": {
             "title": "Magical Dizziness",
-            "text": "Choose a character with Spell Caster in your line of sight. That character's controller must move 1 gem from their Reserve zone to their Fatigue zone in addition to paying the cost to cast a spell. This effect ends at the beginning of your next turn or activation.",
+            "text": "Target a unit with the Spell Caster skill in your line of sight. The target must pay 1 extra gem to cast spells, until the beginning of your next turn or activation.",
             "textStyle": {
                 "textSize": 130,
-                "textInter": 65
+                "textInter": 75
+            }
+        },
+        "magical_dizziness-versus": {
+            "title": "Magical Dizziness",
+            "text": "Choose a tile from your opponent’s River. Your opponent must pay 1 extra gem to activate that tile until the beginning of your next turn.",
+            "textStyle": {
+                "textSize": 142,
+                "textInter": 70
             }
         },
         "mind_control": {
             "title": "Mind Control",
-            "text": "Assign a number of gems from your Reserve zone to this card and choose an enemy not in your line of sight. That enemy gains that many movement points, which you must spend to move that enemy in a way that would not cause it to suffer damage.",
+            "text": "Target an enemy unit anywhere on the board. Assign a number of gems from your Reserve zone to this card. Move the target 1 area + 1 area per gem spent, following movement restrictions and causing no damage to the target doing so.",
             "clarification": "Line of sight does not affect whom the caster can target with this spell.\nA unit cannot target an enemy unit with Fascination for any reason until they attack the unit.",
             "textStyle": {
-                "textSize": 131,
-                "textInter": 65
+                "textSize": 118,
+                "textInter": 76
             }
         },
         "mitras_halo": {
             "title": "Mitra's Halo",
-            "text": "Your armor value is increased by 2. This effect ends when you change from cautious to aggressive or when your group is activated.",
+            "text": "Increase your Armor value by 2. This spell ends when you change from Cautious to Aggressive stance (Hero) or when your tile is activated (Overlord).",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 126,
+                "textInter": 85
+            }
+        },
+        "mitras_halo-versus": {
+            "title": "Mitra's Halo",
+            "text": "Choose a tile from your River. During your opponent’s turn, you may reroll 1 defense die for free for each unit of that tile. This spell ends at the beginning of your next turn.",
+            "textStyle": {
+                "textSize": 137,
+                "textInter": 70
             }
         },
         "mitras_healing": {
             "title": "Mitra's Healing",
-            "text": "Choose a hero in your area and roll {dice_orange_reroll}. That hero moves a number of gems from their Wound zone to their Reserve zone equal to the number of symbols shown on the die.",
+            "text": "Target a Hero in your area, or yourself; roll {dice_orange_reroll}. The target moves as many gems from their Wound zone to their Reserve zone as the number of successes rolled.",
             "clarification": "Caster can use Mitra’s Healing on himself",
             "textStyle": {
                 "textSize": 150,
                 "textInter": 65
             }
         },
+        "mitras_healing-versus": {
+            "title": "Mitra's Healing",
+            "text": "Recover {dice_orange} life points, without exceeding their starting value.",
+            "textStyle": {
+                "textSize": 135,
+                "textInter": 80
+            }
+        },
         "pestilential_swarm": {
             "title": "Pestilential Swarm",
-            "text": "Attack your area, excluding yourself and undead characters; roll {dice_yellow}{dice_yellow}{dice_yellow}. Characters cannot defend against this attack. Attacked characters suffer damage equal to the attack power.",
+            "text": "Attack all units in your area, excluding yourself; roll {dice_yellow}{dice_yellow}{dice_yellow}. The units suffer unavoidable damage. This spell has no effect on you or on undead units (Mummies, Skeletons, Zombies, etc.).",
             "textStyle": {
-                "textSize": 141,
-                "textInter": 66
+                "textSize": 128,
+                "textInter": 78
             }
         },
         "sets_bite": {
             "title": "Set's Bite",
-            "text": "Attack a character in your line of sight; roll {dice_orange}{dice_orange}. That character's controller moves 1 gem from their Reserve zone to their Fatigue zone. If the attack power is greater than the defense power, the defender suffers damage equal to the difference.",
+            "text": "Attack a unit in your line of sight; roll {dice_orange}{dice_orange}. If the attack power is greater than the defense power, the defender suffers damage equal to the difference. The target also moves 1 gem from their Reserve zone to their Fatigue zone (Hero as Overlord).",
             "textStyle": {
-                "textSize": 122,
+                "textSize": 124,
+                "textInter": 66
+            }
+        },
+        "sets_bite-versus": {
+            "title": "Set's Bite",
+            "text": "Target a unit in your line of sight. The player controlling the target moves 1 gem from their Reserve zone to their Fatigue zone, and the target suffers {dice_orange}{dice_orange} unavoidable damage.",
+            "textStyle": {
+                "textSize": 133,
                 "textInter": 70
             }
         },
         "sets_halo": {
             "title": "Set's Halo",
-            "text": "Your armor value is increased by 1. This effect ends when you change from cautious to aggressive or when your group is activated.",
+            "text": "Increase your Armor value by 1. This spell ends when you change from Cautious to Aggressive stance (Hero) or when your tile is activated (Overlord).",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 126,
+                "textInter": 85
+            }
+        },
+        "sets_halo-versus": {
+            "title": "Set's Halo",
+            "text": "Choose a tile from your River. During your opponent’s turn, you may reroll 1 defense die for free for each unit of that tile. This spell ends at the beginning of your next turn.",
+            "textStyle": {
+                "textSize": 137,
+                "textInter": 70
             }
         },
         "sets_possession": {
             "title": "Set's Possession",
-            "text": "Choose a character up to 2 areas away from you. If the character does not have Blocking, the character cannot move during their next activation or during the Action phase in which the character is aggressive. Otherwise, the character loses Blocking during that turn.",
+            "text": "Target any unit on the board, up to 2 areas away from you, in your line of sight or not. The target cannot move during their next activation or Action phase in Aggressive stance. If the target has the Blocking skill, they can move but lose this skill until their next turn.",
             "textStyle": {
-                "textSize": 121,
-                "textInter": 69
+                "textSize": 115,
+                "textInter": 71
             }
         },
         "telekinesis": {
             "title": "Telekinesis",
-            "text": "Pick up an object un your line of sight with an encumbrance value of 3 or less.",
+            "text": "Pick up an object in your line of sight with an Encumbrance value of 3 or less.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 143,
+                "textInter": 76
+            }
+        },
+        "telekinesis-versus": {
+            "title": "Telekinesis",
+            "text": "Target a unit in your line of sight. Move the target 1 area in your direction. This movement is not affected by hindering.",
+            "textStyle": {
+                "textSize": 147,
+                "textInter": 70
             }
         },
         "teleportation": {
             "title": "Teleportation",
-            "text": "Assign a number of gems from your Reserve zone to this card. For each gem assigned, move your model to an adjacent space.",
+            "text": "Assign a number of gems from your Reserve zone to this card. Move your miniature 1 area per gem spent. This movement is not affected by obstacles (walls, doors, flaps…), hindering, the Blocking skill, or elevation levels.",
             "clarification": "A character who casts this spell is not affected by hindering or by Blocking to move.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 129,
+                "textInter": 77
             }
         },
         "archer_of_acheron": {
             "title": "Archer of Acheron",
-            "text": "Choose a hero in your line of sight. Improve the die on that hero's Ranged Attack space until the end of their turn (yellow to orange, or orange to red). If the die could be rerolled, it still can be.",
+            "text": "Target a Hero in your line of sight. Improve the die on that Hero’s Ranged Attack space until the end of their turn (yellow to orange, or orange to red). If the die could be rerolled, it still can be.",
+            "textStyle": {
+                "textSize": 140,
+                "textInter": 70
+            }
+        },
+        "archer_of_acheron-versus": {
+            "title": "Archer of Acheron",
+            "text": "Target a unit in your line of sight. Choose and improve one of the target’s Ranged Attack die until the end of your turn (yellow to orange, or orange to red). If the die could be rerolled, it still can be.",
             "textStyle": {
                 "textSize": 142,
-                "textInter": 70
+                "textInter": 64
             }
         },
         "bad_luck": {
             "title": "Bad Luck",
-            "text": "Choose a character in your line of sight. That character gains Jinx until your next turn.",
+            "text": "Target a unit in your line of sight. The target gains the Jinx skill until the beginning of your side’s next turn.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 139,
+                "textInter": 76
             }
         },
         "barrier_of_the_winds": {
             "title": "Barrier of the Winds",
-            "text": "Choose a character in your line of sight. That character cannot be attacked with ranged attacks until your next turn.",
+            "text": "Target a unit in your line of sight. The target cannot be attacked with Ranged attacks until the beginning of your side’s next turn.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 139,
+                "textInter": 78
             }
         },
         "bels_caress": {
             "title": "Bel's Caress",
-            "text": "Choose a chest in your area or a door adjacent to your area. You successfully pick its lock.",
+            "text": "Target a chest or a door in your area. You successfully pick its lock.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 148,
+                "textInter": 72
             }
         },
         "bels_hand": {
             "title": "Bel's Hand",
-            "text": "Choose a hero in your line of sight. Improve the die on that hero's Manipulation space until the end of their turn (yellow to orange, or orange to red). If the die could be rerolled, it still can be.",
+            "text": "Target a Hero in your line of sight. Improve the die on that Hero’s Manipulation space until the end of their turn (yellow to orange, or orange to red). If the die could be rerolled, it still can be.",
             "textStyle": {
-                "textSize": 142,
+                "textSize": 140,
                 "textInter": 70
             }
         },
         "blessing_of_ibis": {
             "title": "Blessing of Ibis",
-            "text": "Choose a character in your line of sight. That character gains Untouchable until your next turn.",
+            "text": "Target a unit in your line of sight. The target gains the Untouchable skill until the beginning of your side’s next turn.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 136,
+                "textInter": 80
             }
         },
         "changing_destiny": {
             "title": "Changing Destiny",
-            "text": "Choose a character in your line of sight. If the character is a hero, the hero must choose to be cautious during the next Stance phase. If the character is a unit, their tile cannot be activated during the next Overlord turn.",
+            "text": "Target a unit in your line of sight. During their next turn, the target must choose the Cautious stance (Hero), or their tile cannot be activated (Overlord).",
             "textStyle": {
-                "textSize": 140,
-                "textInter": 66
+                "textSize": 137,
+                "textInter": 75
+            }
+        },
+        "changing_destiny-versus": {
+            "title": "Changing Destiny",
+            "text": "Choose a tile from your opponent’s River. Your opponent cannot activate that tile until the beginning of your next turn.",
+            "textStyle": {
+                "textSize": 142,
+                "textInter": 70
             }
         },
         "dagons_attack": {
             "title": "Dagon's Attack",
-            "text": "Choose a Tentacle in your line of sight. Move that Tentacle up to 3 areas, then the Tentacle may perform a Melee Attack.",
+            "text": "Target a Tentacle in your line of sight. Move that Tentacle up to 3 areas, then the Tentacle may perform a Melee Attack.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 135,
+                "textInter": 74
             }
         },
         "dagons_awakening": {
@@ -205,66 +293,90 @@
         },
         "deceleration": {
             "title": "Deceleration",
-            "text": "Choose a character in your line of sight. That character's movement value is 0 until your next turn.",
+            "text": "Target a unit in your line of sight. The target’s base movement value is 0 until the beginning of your side’s next turn.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 135,
+                "textInter": 75
             }
         },
         "divine_charisma": {
             "title": "Divine Charisma",
-            "text": "Choose a character in your line of sight. That character gains Support until your next turn.",
+            "text": "Target a unit in your line of sight. The target gains the Support skill until the beginning of your side’s next turn.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 139,
+                "textInter": 76
             }
         },
         "drying_earth": {
             "title": "Drying Earth",
-            "text": "Choose an unstable area in your line of sight. That area becomes stable until your next turn. Characters do not spend extra movement points to move out of a stable area.",
+            "text": "Target an unstable area in your line of sight. There is no more movement penalty related to that area until the beginning of your side’s next turn.",
             "textStyle": {
-                "textSize": 148,
-                "textInter": 63
+                "textSize": 140,
+                "textInter": 73
             }
         },
         "eagle_eye": {
             "title": "Eagle Eye",
-            "text": "Choose a character in your line of sight. That character gains Precision Shot until the end of your turn.",
+            "text": "Target a unit in your line of sight. The target gains the Precision Shot skill until the end of your side’s turn.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 139,
+                "textInter": 76
             }
         },
         "eel_skin": {
             "title": "Eel Skin",
-            "text": "Choose a character in your line of sight. That character gains Evasive until the end of your next turn.",
+            "text": "Target a unit in your line of sight. The target gains the Evasive skill until the end of your side’s turn.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 139,
+                "textInter": 74
             }
         },
         "escape_route": {
             "title": "Escape Route",
-            "text": "Choose a hero in your line of sight. Improve that hero's Guard space until their next turn (yellow to orange, or orange to red). If the die could be rerolled, it still can be.",
+            "text": "Target a Hero in your line of sight. Improve the die on that Hero’s Guard space until the beginning of your side’s next turn (yellow to orange, or orange to red). If the die could be rerolled, it still can be.",
+            "textStyle": {
+                "textSize": 136,
+                "textInter": 71
+            }
+        },
+        "escape_route-versus": {
+            "title": "Escape Route",
+            "text": "Target a unit in your line of sight. Improve the target’s Armor value by 1 until the beginning of your next turn.",
             "textStyle": {
                 "textSize": 150,
-                "textInter": 66
+                "textInter": 70
             }
         },
         "fleet_runner": {
             "title": "Fleet Runner",
-            "text": "Choose a character in your line of sight. That character's movement value and exertion limit are increased by 1 until the end of your turn.",
+            "text": "Target a unit in your line of sight. Increase the target’s Movement values (base movement and exertion limit) by 1 until the end of your side’s turn.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 137,
+                "textInter": 73
+            }
+        },
+        "fleet_runner-versus": {
+            "title": "Fleet Runner",
+            "text": "Choose a tile from your River. The units controlled by that tile gain the Evasive skill until the end of your turn.",
+            "textStyle": {
+                "textSize": 149,
+                "textInter": 70
             }
         },
         "gullahs_strength": {
             "title": "Gullah's Strength",
-            "text": "Choose a hero in your line of sight. Improve the die on that hero's Melee Attack space until the end of their turn (yellow to orange, or orange to red). If the die could be rerolled, it still can be.",
+            "text": "Target a Hero in your line of sight. Improve the die on that Hero’s Melee Attack space until the end of your side’s turn (yellow to orange, or orange to red). If the die could be rerolled, it still can be.",
             "textStyle": {
-                "textSize": 148,
-                "textInter": 63
+                "textSize": 140,
+                "textInter": 70
+            }
+        },
+        "gullahs_strength-versus": {
+            "title": "Gullah's Strength",
+            "text": "Target a unit in your line of sight. Choose and improve one of the target’s Melee Attack die until the end of your turn (yellow to orange, or orange to red). If the die could be rerolled, it still can be.",
+            "textStyle": {
+                "textSize": 140,
+                "textInter": 69
             }
         },
         "gwahlurs_darkness": {
@@ -277,10 +389,10 @@
         },
         "hand_of_death": {
             "title": "Hand of Death",
-            "text": "Attack a model in your area; roll {dice_red}{dice_red}. If the attack power is greater than the defense power, the defender suffers damage equal to the difference. You suffer 1 damage.",
+            "text": "Attack a unit in your area; roll {dice_red}{dice_red}. If the attack power is greater than the defense power, the defender suffers damage equal to the difference. You suffer 1 unavoidable damage.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 65
+                "textSize": 141,
+                "textInter": 69
             }
         },
         "hanumans_body": {
@@ -293,18 +405,18 @@
         },
         "inversion": {
             "title": "Inversion",
-            "text": "Assign a number of gems from your Reserve zone to this card and choose a character within that number of areas of you. Exchange the position of your model and the chosen character's model.",
+            "text": "Target a unit in your line of sight. Assign as many gems from your Reserve zone to this card as the number of areas between you and the target. Exchange the positions of both miniatures.",
             "textStyle": {
                 "textSize": 141,
-                "textInter": 66
+                "textInter": 68
             }
         },
         "ishtars_gaze": {
             "title": "Ishtar's Gaze",
-            "text": "Choose a character in your line of sight. That character gains Protected until your next turn.",
+            "text": "Target a unit in your line of sight. The target gains the Protected skill until the beginning of your side’s next turn.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 135,
+                "textInter": 80
             }
         },
         "jhebbal_sags_rage": {
@@ -317,65 +429,73 @@
         },
         "lethal_cloud": {
             "title": "Lethal Cloud",
-            "text": "Attack an area in your line of sight; roll {dice_red}{dice_red}. If any character moves into or out of that area until your next turn, attack that character with the same attack power. If the attack power is greater that the defense power, the defender suffers damage equal to the difference.",
+            "text": "Attack an area in your line of sight; roll {dice_red}{dice_red}. Attack any unit moving into or out of that area with the same attack power. If the attack power is greater than the defense power, the defender suffers damage equal to the difference. This spell ends at the beginning of your side’s next turn.",
             "textStyle": {
                 "textSize": 115,
-                "textInter": 66
+                "textInter": 70
             }
         },
         "life_transfer": {
             "title": "Life Transfer",
-            "text": "Choose a hero and an ally in your line of sight. Remove that ally's model from the board, and that hero moves up to 2 gems from their Wound zone to their Fatigue zone.",
+            "text": "Target a Hero and an Ally in your line of sight. Remove that Ally from the board, and that Hero moves up to 2 gems from their Wound zone to their Fatigue zone.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 155,
+                "textInter": 69
+            }
+        },
+        "life_transfer-versus": {
+            "title": "Life Transfer",
+            "text": "Target an area in your line of sight. You recover 1 life point for each friendly unit in that area, without exceeding your starting life point value. Then, all the friendly units in that area are killed.",
+            "textStyle": {
+                "textSize": 131,
+                "textInter": 70
             }
         },
         "light_as_a_feather": {
             "title": "Light as a Feather",
-            "text": "Choose a character in your line of sight. That character's encumbrance level is decreased by 3 until the end of your turn.",
+            "text": "Target a unit in your line of sight. The target’s Encumbrance level is decreased by 3 until the end of your side’s turn.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 149,
+                "textInter": 72
             }
         },
         "magic_block": {
             "title": "Magic Block",
-            "text": "Choose a character in your line of sight. That character gains Blocking until your next turn.",
+            "text": "Target a unit in your line of sight. The target gains the Blocking skill until the beginning of your side’s next turn.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 139,
+                "textInter": 76
             }
         },
         "mystic_barrier": {
             "title": "Mystic Barrier",
-            "text": "No character can move into the caster's area until the caster's next turn or activation.",
+            "text": "No unit can move into your area until the beginning of your side’s next turn.",
             "textStyle": {
                 "textSize": 150,
-                "textInter": 66
+                "textInter": 76
             }
         },
         "putrescence": {
             "title": "Putrescence",
-            "text": "Undead characters (Mummies and Skeletons) cannot attack you until your next turn or activation.",
+            "text": "Undead units (Mummies, Skeletons, Zombies…) cannot attack you until the beginning of your side’s next turn.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 144,
+                "textInter": 73
             }
         },
         "recall": {
             "title": "Recall",
-            "text": "Choose an area in your line of sight. Take each friendly model in that area and place it in your area.",
+            "text": "Target an area in your line of sight. Take each friendly unit in that area and place it in your area.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 141,
+                "textInter": 78
             }
         },
         "return_of_the_brave": {
             "title": "Return of the Brave",
-            "text": "Choose a dead unit model whose tile is in the river; this spell's cost is equal to that model's reinforcement cost. Place that model on the board in the caster's area as though it were reinforced.",
+            "text": "This spell’s cost X is the reinforcement cost of a dead unit from your side. Reinforce that unit in your area. The unit’s tile must not have been removed from the game.",
             "textStyle": {
-                "textSize": 143,
+                "textSize": 140,
                 "textInter": 72
             }
         },
@@ -389,34 +509,34 @@
         },
         "sets_illusion": {
             "title": "Set's Illusion",
-            "text": "Choose a character in your line of sight. That character gains Horror until your next turn.",
+            "text": "Target a unit in your line of sight. The target gains the Horror skill until the beginning of your side’s next turn.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 139,
+                "textInter": 76
             }
         },
         "shapechanger": {
             "title": "Shapechanger",
-            "text": "Remove the caster's model from its area on the board. At the beginning of their next turn or activation, place the caster's model in that area or an area adjacent to it.",
+            "text": "Remove your miniature from its area on the board. At the beginning of your next turn or activation, place your miniature in that area or in an adjacent area.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 137,
+                "textInter": 76
             }
         },
         "stone_skin": {
             "title": "Stone Skin",
-            "text": "Choose a character in your line of sight. That character's armor value is increased by 2 until your next turn.",
+            "text": "Target a unit in your line of sight. Increase the target’s Armor value by 2 until the beginning of your side’s turn.",
             "textStyle": {
                 "textSize": 150,
-                "textInter": 66
+                "textInter": 70
             }
         },
         "tears_of_dagon": {
             "title": "Tears of Dagon",
-            "text": "Choose a stable area in your line of sight. That area becomes unstable until your next turn. A character must spend 1 extra movement point to move out of an unstable area.",
+            "text": "Target a stable area in your line of sight. The ground becomes unstable. Any unit moving out of that area must spend 1 extra movement point, until the beginning of your side’s next turn.",
             "textStyle": {
-                "textSize": 150,
-                "textInter": 66
+                "textSize": 141,
+                "textInter": 70
             }
         },
         "warmth_of_ishtar": {
@@ -429,26 +549,26 @@
         },
         "withering": {
             "title": "Withering",
-            "text": "Attack a character in your line of sight; roll {dice_yellow_reroll}. That character cannot defend against this attack, and suffers damage equal to the attack power.",
+            "text": "Attack a unit in your line of sight; roll {dice_yellow_reroll}. The target suffers unavoidable damage.",
             "textStyle": {
                 "textSize": 150,
-                "textInter": 66
+                "textInter": 75
             }
         },
         "yajurs_awakening": {
             "title": "Yajur's Awakening",
-            "text": "Choose a dead undead unit model (Mummy or Skeleton) whose tile is in the river; this spell's cost is equal to that model's reinforcement cost. Place that model on the board in the caster's area as though it were reinforced.",
+            "text": "The spell’s cost X is the reinforcement cost of a dead undead unit (Mummy, Skeleton, Zombie…). Reinforce that unit in your area. The unit’s tile must not have been removed from the game.",
             "textStyle": {
-                "textSize": 138,
-                "textInter": 66
+                "textSize": 140,
+                "textInter": 68
             }
         },
         "ymirs_rage": {
             "title": "Ymir's Rage",
-            "text": "When you or a friendly character attack, the attacker rolls an extra {dice_orange} for that attack. Your armor value and the armor value of each friendly character is reduced by 1. This effect ends at the beginning of your next turn.",
+            "text": "All units from your side (including you) roll an extra {dice_orange} when attacking, and decrease their Armor value by 1. This spell ends at the beginning of your side’s next turn.",
             "textStyle": {
-                "textSize": 133,
-                "textInter": 64
+                "textSize": 130,
+                "textInter": 75
             }
         },
         "weight_of_the_years": {
@@ -569,6 +689,51 @@
             "textStyle": {
                 "textSize": 132,
                 "textInter": 86
+            }        
+        },
+        "soul_leech": {
+            "title": "Soul Leech",
+            "text": "Target one Hero or Ally in your area, they suffer 1 unavoidable damage. You gain 1 life point. Your life points can exceed their starting value.",
+            "textStyle": {
+                "textSize": 141,
+                "textInter": 77
+            }        
+        }
+        ,
+        "enthrallment": {
+            "title": "Enthrallment",
+            "text": "You cannot be attacked by enemies in your area until the beginning of your next turn or activation.",
+            "textStyle": {
+                "textSize": 137,
+                "textInter": 86
+            }        
+        }
+        ,
+        "eldritch_lance": {
+            "title": "Eldritch Lance",
+            "text": "Attack a unit in your line of sight; roll {dice_red}{dice_orange} and ignore 1 point of Armor value. If the attack power is greater than the defense power, the defender suffers damage equal to the difference.",
+            "textStyle": {
+                "textSize": 141,
+                "textInter": 70
+            }        
+        }
+        ,
+        "spectral_shroud": {
+            "title": "Spectral Shroud",
+            "text": "Place 3 {token_spectral-shroud} tokens on this card (or refill it up to 3 tokens). Whenever you suffer 1 or more damage, remove 1 {token_spectral-shroud} for each damage to prevent it.",
+            "textStyle": {
+                "textSize": 132,
+                "textInter": 86
+            },
+            "clarification": "Removing the tokens to prevent damage (attack damage, falling damage, unavoidable...) is not optional."
+        }
+        ,
+        "protective_circle": {
+            "title": "Protective Circle",
+            "text": "Enemies cannot move into or perform a Melee Attack into your area until your next turn or activation.",
+            "textStyle": {
+                "textSize": 140,
+                "textInter": 72
             }        
         }
     }

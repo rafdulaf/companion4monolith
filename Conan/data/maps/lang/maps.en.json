@@ -271,6 +271,88 @@
                 ],
                 "totopic": "https://the-overlord.net/index.php?/topic/1011-conqueror-temple/"
             }
+        },
+        
+        "Jungle": {
+            "description": {
+                "title": "Jungle",
+                "rules": [
+                    {
+                        "title": "Deep Water",
+                        "description": "A unit adjacent to a water area may move into that area with no movement penalty. When a unit without Swimming moves into a Deep Water area, that unit dies immediately."
+                    }, {
+                        "title": "Ford",
+                        "description": "Units with or without Swimming can move onto the rocks in this Deep Water area by spending 2 extra movement points. If they have Climb, this costs no extra movement points."
+                    }, {
+                        "title": "Rope Vine (Ascend)",
+                        "description": "A unit with Climb in a ground area with a Rope Vine may ascend to the Cliff Top by spending 2 movement points. This movement is affected by Hindering."
+                    }, {
+                        "title": "Rope Vine (Descend)",
+                        "description": "A unit in a Cliff Top area with a Rope Vine may descend to the ground below by performing a complex Manipulation with a difficulty of 2 (for Heroes) or for 2 movement points (Overlord tiles). Reduce these values to 1 if the unit has Climb."
+                    }, {
+                        "title": "Cliff Top",
+                        "description": "A unit can move from a Cliff Top area to an adjacent ground area as though it were a border. The unit rolls {dice_red}{dice_red}{dice_red} for falling damage. If the unit has Leap, the unit rolls {dice_red}{dice_red} instead."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119069-red-nails-jungle/"
+            }
+        },
+        
+        "Xuchotl": {
+            "description": {
+                "title": "Xuchotl",
+                "rules": [
+                    {
+                        "title": "Elevated Areas",
+                        "description": "A unit with or without Leap or Climb may move onto the sacrificial altar, torture rack, or dais areas by spending 1 extra movement point (unless they use the stairs for the dais). A unit in these areas, with or without Reach, may attack a unit in an adjacent area with a Melee Attack. These areas provide an Elevation bonus of {dice_yellow} for Melee and Ranged Attacks. A unit may exit these areas with no movement penalty."
+                    }, {
+                        "title": "Balconies",
+                        "description": "A unit can move across a railing from a balcony area to a ground floor area as though it were a border. The unit rolls {dice_red}{dice_red} for falling damage. If the unit has Leap, the unit rolls {dice_red} instead. A unit cannot move from a ground floor area to a balcony area."
+                    }, {
+                        "title": "Cell",
+                        "description": "A unit may only enter or exit the cell through the door on the left."
+                    }, {
+                        "title": "Walls",
+                        "description": "All walls are stone and cannot be wrecked using Wall Wrecker."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119070-red-nails-xuchotl/"
+            }
+        },
+        
+        "Fort_Tuscelan": {
+            "description": {
+                "title": "Fort Tuscelan",
+                "rules": [
+                    {
+                        "title": "Around the fort",
+                        "description": "The areas on both sides of the fort towers are separated by a border and are adjacent."
+                    }, {
+                        "title": "Wall-walks",
+                        "description": "A unit can jump from a wall-walk area to a ground floor area inside or outside the fort. The unit rolls {dice_orange}{dice_orange}{dice_orange} for falling damage. If the unit has Leap, the unit rolls {dice_orange} instead. The only way to climb back up the wall-walk is via a ladder. Wall-walk areas provide an Elevation bonus of {dice_yellow} on the ground floor areas."
+                    }, {
+                        "title": "Ladders",
+                        "description": "Climbing up or down a ladder costs 1 extra movement point, except for units with the Climb skill.<br/>Melee Attacks may be performed between two areas separated by a ladder, with or without the Reach skill. In this case, the elevated area provides an Elevation bonus of {dice_yellow} for Melee Attacks targeting the lower area."
+                    }, {
+                        "title": "Water areas",
+                        "description": "A unit must spend 1 extra movement point to move out of a water area."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119071-versus-fort-tuscelan/"
+            }
+        },
+        
+        "Catacombs": {
+            "description": {
+                "title": "Catacombs",
+                "rules": [
+                    {
+                        "title": "Walls",
+                        "description": "It is not possible to climb the catacombs walls."
+                    }                
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119072-versus-catacombs/"
+            }
         }
     },
 

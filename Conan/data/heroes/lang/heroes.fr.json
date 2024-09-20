@@ -338,7 +338,7 @@
         "winged-one": {
             "name": "Terreur Ailée"
         },
-        "baal-pteor": {
+        "baal-pteor-2": {
             "name": "Baal Pteor",
             "quote": {
                 "text": "Ta tête, Cimmérien ! » se moqua Baal-pteor. « Je la prendrai, de mes mains nues, pour la tordre sur tes épaules comme on tord le cou à un poulet ! C’est ainsi que les fils de Kosala offrent leurs sacrifices à Yajur ! Barbare, tu as face à toi un des Étrangleurs de Yota-pong ! J’ai été choisi alors que je n’étais qu’un jeune garçon par les prêtres de Yajur. Durant toutes mes premières années, mon enfance et mon adolescence, j’ai été entraîné dans l’art de tuer de mes mains nues.. car c’est seulement ainsi que se font les sacrifices. Yajur aime le sang et nous ne perdons ainsi aucune goutte de celui de nos victimes ! De mes mains, barbare, je vais te briser le cou ! »",
@@ -410,6 +410,90 @@
         "zelata-wanderer": {
             "name": "Zelata",
             "subname": "La Vagabonde"
+        },
+        "conan-free-companion": {
+            "name": "Conan",
+            "subname": "de la Compagnie Franche",
+            "subnameSize": 42,
+            "quote": {
+                "text": "Arus vit un homme jeune, grand et puissamment bâti, nu à l'exception d'un pagne et de sandales lacées haut sur les chevilles. Sa peau était tannée comme s'il venait des régions désertiques du globe, et Arus se sentit mal à l'aise en voyant ses épaules larges, son torse massif et ses bras puissants. Un simple coup d'oeil sur ce visage renfrogné au front large lui suffit pour comprendre qu'il n'avait pas affaire à un Némédien. Sous une tignasse de cheveux noirs ébouriffés, deux yeux bleus menaçants couvaient, prêts à s'embraser. Une longue épée dans son fourreau de cuir pendait à son ceinturon.",
+                "origin": "Le Dieu dans l'Urne"
+            }
+        },
+        "valeria-free-companion": {
+            "name": "Valeria",
+            "subname": "de la Compagnie Franche",
+            "subnameSize": 42,
+            "quote": {
+                "text": "Elle était grande, avait une poitrine opulente, des membres longs et des épaules robustes. Toute sa silhouette témoignait d'une force peu commune, sans toutefois rien ôter de la grâce féminine qui se dégageait de son apparence. En dépit de son port et de ses vêtements, tout en elle respirait la féminité. Ses habits semblaient incongrus, étant donné le décor environnant. Elle ne portait pas une jupe, mais d'amples culottes de soie s'arrêtant à une largeur de main au-dessus des genoux, retenues par une large bande de soie enroulée autour de sa taille comme une ceinture. Ses bottes évasées en cuir souple lui arrivaient presque aux genoux et sa chemise de soie décolletée, aux manches et au col bouffants, complétaient son costume. Une épée droite à double tranchant pendait sur une de ses hanches gracieuses et une longue dague sur l'autre. Ses cheveux blonds et ébouriffés, coupés au carré à la hauteur des épaules, étaient retenus par un bandeau de satin écarlate.",
+                "origin": "Les Clous Rouges"
+            }
+        },
+        "techotl": {
+            "name": "Techotl"
+        },
+        "olmec": {
+            "name": "Olmec"
+        },
+        "tascela": {
+            "name": "Tascela"
+        },
+        "tolkemec": {
+            "name": "Tolkemec"
+        },
+        "drusus": {
+            "name": "Drusus"
+        },
+        "ageera": {
+            "name": "Ageera",
+            "quote": {
+                "text": "Ensuite va dans Punt trouver le vieil Agara, l'inquisiteur. Ne lui dis pas de but en blanc que Tananda est à l'origine de cela, mais fais-le lui comprendre » (...) Les Noirs refluèrent en maugréant devant cette avance, et soudain une silhouette noire et décharnée sortit de la maison du diable. C'était le vieil Agara, vêtu seulement d'un pagne. Montrant Tananda du doigt, il hurla: - Elle ose venir ici, celle dont les mains sont rouges de sang ! Celle qui a assassiné Amboola !",
+                "origin": "Histoire inachevée – sans titre"
+            }
+        },
+        "conan-the-rogue": {
+            "name": "Conan Le Vaurien",
+            "quote": {
+                "text": "Arus vit un homme jeune, grand et puissamment bâti, nu à l'exception d'un pagne et de sandales lacées haut sur les chevilles. Sa peau était tannée comme s'il venait des régions désertiques du globe, et Arus se sentit mal à l'aise en voyant ses épaules larges, son torse massif et ses bras puissants. Un simple coup d'oeil sur ce visage renfrogné au front large lui suffit pour comprendre qu'il n'avait pas affaire à un Némédien. Sous une tignasse de cheveux noirs ébouriffés, deux yeux bleus menaçants couvaient, prêts à s'embraser. Une longue épée dans son fourreau de cuir pendait à son ceinturon.",
+                "origin": "Le Dieu dans l'Urne"
+            }
+        },
+        "bran-mak-morn": {
+            "name": "Bran Mak Morn"
+        },
+        "atla": {
+            "name": "Atla"
+        },
+        "othna": {
+            "name": "Othna"
+        },
+        "grom": {
+            "name": "Grom"
+        },
+        "conan-the-berserker": {
+            "name": "Conan",
+            "subname": "Le Berserker",
+            "quote": {
+                "text": "Arus vit un homme jeune, grand et puissamment bâti, nu à l'exception d'un pagne et de sandales lacées haut sur les chevilles. Sa peau était tannée comme s'il venait des régions désertiques du globe, et Arus se sentit mal à l'aise en voyant ses épaules larges, son torse massif et ses bras puissants. Un simple coup d'oeil sur ce visage renfrogné au front large lui suffit pour comprendre qu'il n'avait pas affaire à un Némédien. Sous une tignasse de cheveux noirs ébouriffés, deux yeux bleus menaçants couvaient, prêts à s'embraser. Une longue épée dans son fourreau de cuir pendait à son ceinturon.",
+                "origin": "Le Dieu dans l'Urne"
+            }
+        },
+        "conan-the-destroyer": {
+            "name": "Conan",
+            "subname": "Le Destructeur",
+            "quote": {
+                "text": "Arus vit un homme jeune, grand et puissamment bâti, nu à l'exception d'un pagne et de sandales lacées haut sur les chevilles. Sa peau était tannée comme s'il venait des régions désertiques du globe, et Arus se sentit mal à l'aise en voyant ses épaules larges, son torse massif et ses bras puissants. Un simple coup d'oeil sur ce visage renfrogné au front large lui suffit pour comprendre qu'il n'avait pas affaire à un Némédien. Sous une tignasse de cheveux noirs ébouriffés, deux yeux bleus menaçants couvaient, prêts à s'embraser. Une longue épée dans son fourreau de cuir pendait à son ceinturon.",
+                "origin": "Le Dieu dans l'Urne"
+            }
+        },
+        "nestor": {
+            "name": "Nestor"
+        },
+        "ganbaatar": {
+            "name": "Ganbaatar"
+        },
+        "aja": {
+            "name": "Aja"
         }
     }
 }

@@ -111,10 +111,16 @@
                 </div>
                 <div class='zones'>
                     <label for="zones">Zones</label>
+                    <br/>
+                    Zone : 
                     <button onclick="add()">Add</button>
                     <button onclick="renumbers()">Rename</button>
-                    <button onclick="transform()">Transform</button>
-                    <button onclick="reverseLinks()">Reverse links</button>
+                    <button onclick="transform()">Transform Coord</button>
+                    <br/>
+                    LOS :
+                    <button onclick="addLinks()">Add</button>
+                    <button onclick="reverseLinks()">Reverse all</button>
+                    <button onclick="removeLinks()">Remove</button>
                     <textarea id="zones" rows="20" onkeyup="displayZones()" onchange="displayZones()">{}</textarea>
                 </div>
             </div>

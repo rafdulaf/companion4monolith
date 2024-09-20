@@ -80,7 +80,7 @@
         },
         "conan-mercenary": {
             "name": "Conan",
-            "subname": "Il Mercenario",
+            "subname": "Mercenario",
             "quote": {
                 "text": "Lo straniero era lì, con la schiena poggiata all'albero maestro, gli occhi socchiusi e guardinghi, la spada pronta. Il marinaio lo guardò con fermezza, attento a non fare la minima mossa verso il lungo coltellaccio che portava alla cintura. Osservò la figura alta, possente, rivestita di un usbergo nero a piastre, lustri gambali, un elmo d'acciaio dai riflessi azzurrini dal quale sporgevano due levigate corna di toro. Dalle spalle protette dalla cotta scendeva il mantello scarlatto, ondeggiante alla brezza marina. Un largo cinturone zigrinato con una fibbia dorata reggeva il fodero dello spadone. Sotto l'elmetto ornato di corna, una chioma nera tagliata corta contrastava con lo splendore degli occhi azzurri.",
                 "origin": "La regina della Costa Nera"
@@ -338,7 +338,7 @@
         "winged-one": {
             "name": "Terrore Alato"
         },
-        "baal-pteor": {
+        "baal-pteor-2": {
             "name": "Baal Pteor",
             "quote": {
                 "text": "— La tua testa, Cimmero! — esclamò Baal-pteor in tono di scherno. — La prenderò a mani nude, strappandotela dalle spalle come se fosse la testa di un pollo! Così i figli di Kosala offrono sacrifici a Yajur. Barbaro, tu vedi davanti a te uno strangolatore di Yota-pong. Sono stato prescelto dai sacerdoti di Yajur quand'ero ancora bambino, e durante l'infanzia, l'adolescenza e la giovinezza sono stato addestrato nell'arte di uccidere a mani nude, perché solo così si devono compiere i sacrifici. Yajur ama il sangue, e noi non sprechiamo una sola goccia delle vene della vittima... Ti spezzerò il collo con queste mani, barbaro!",
@@ -410,6 +410,88 @@
         "zelata-wanderer": {
             "name": "Zelata",
             "subname": "La Zingara"
+        },
+        "conan-free-companion": {
+            "name": "Conan",
+            "subname": "Compagno libero",
+            "quote": {
+                "text": "Arus lanciò un'occhiata nervosa alle ampie spalle, al torace massiccio e alle forti braccia. Una sola occhiata ai lineamenti severi e alle spesse sopracciglia gli bastò per capire che l'uomo non era un nemediano. Sotto il ciuffo arruffato di capelli neri covavano due pericolosi occhi azzurri. Una lunga spada, chiusa in un fodero di cuoio, gli pendeva dalla cintura.",
+                "origin": "Il Dio nell'urna"
+            }
+        },
+        "valeria-free-companion": {
+            "name": "Valeria",
+            "subname": "Compagna libera",
+            "quote": {
+                "text": "Era alta, col seno colmo, le membra robuste e le spalle solide. La sua figura irradiava una forza eccezionale, senza per questo sminuire la femminilità del suo aspetto. Era interamente donna, nonostante il portamento e l'abito. Anziché una gonna, portava brache di seta corte e larghe che le arrivavano a una spanna dal ginocchio, trattenute da un'ampia fusciacca di seta che fungeva da cintura. Gli stivali svasati di pelle morbida le arrivavano fin quasi alle ginocchia, e una camicia serica scollata e dalle maniche ampie completava il suo abbigliamento. Nei suoi grandi occhi c'era il colore del mare. E questo era giusto, perché era Valeria della Confraternita Rossa, le cui imprese vengono celebrate in canti e ballate dovunque si radunano i navigatori.\n“Perché voi uomini non volete saperne di lasciarmi vivere una vita da uomo?”\n“Nessun uomo al mondo sarebbe stato in grado di disarmare a mani nude Valeria della Confraternita Rossa.”",
+                "origin": "Chiodi Rossi"
+            }
+        },
+        "techotl": {
+            "name": "Techotl"
+        },
+        "olmec": {
+            "name": "Olmec"
+        },
+        "tascela": {
+            "name": "Tascela"
+        },
+        "tolkemec": {
+            "name": "Tolkemec"
+        },
+        "drusus": {
+            "name": "Drusus"
+        },
+        "ageera": {
+            "name": "Ageera",
+            "quote": {
+                "text": "«Poi vai alla città esterna e trova il vecchio Ageera, lo stregone. Non dirgli apertamente che Tananda è stata la causa dell'accaduto, ma lascialo capire». (...) Poi, improvvisamente, dalla casa degli spiriti uscì una snella figura negra. Era il vecchio Ageera, lo stregone, vestito solo di un pezzo di stoffa attorno alle reni. Indicando Tananda con un dito, gridò: — Eccola lì a cavallo, colei le cui mani grondano sangue! Colei che ha assassinato Amboola!",
+                "origin": "Il Muso nel Buio"
+            }
+        },
+        "conan-the-rogue": {
+            "name": "Conan il Ladro",
+            "quote": {
+                "text": "Arus lanciò un'occhiata nervosa alle ampie spalle, al torace massiccio e alle forti braccia. Una sola occhiata ai lineamenti severi e alle spesse sopracciglia gli bastò per capire che l'uomo non era un nemediano. Sotto il ciuffo arruffato di capelli neri covavano due pericolosi occhi azzurri. Una lunga spada, chiusa in un fodero di cuoio, gli pendeva dalla cintura.",
+                "origin": "Il Dio nell'urna"
+            }
+        },
+        "bran-mak-morn": {
+            "name": "Bran Mak Morn"
+        },
+        "atla": {
+            "name": "Atla"
+        },
+        "othna": {
+            "name": "Othna"
+        },
+        "grom": {
+            "name": "Grom"
+        },
+        "conan-the-berserker": {
+            "name": "Conan",
+            "subname": "Il Berserker",
+            "quote": {
+                "text": "Arus lanciò un'occhiata nervosa alle ampie spalle, al torace massiccio e alle forti braccia. Una sola occhiata ai lineamenti severi e alle spesse sopracciglia gli bastò per capire che l'uomo non era un nemediano. Sotto il ciuffo arruffato di capelli neri covavano due pericolosi occhi azzurri. Una lunga spada, chiusa in un fodero di cuoio, gli pendeva dalla cintura.",
+                "origin": "Il Dio nell'urna"
+            }
+        },
+        "conan-the-destroyer": {
+            "name": "Conan",
+            "subname": "Il Distruttore",
+            "quote": {
+                "text": "Arus lanciò un'occhiata nervosa alle ampie spalle, al torace massiccio e alle forti braccia. Una sola occhiata ai lineamenti severi e alle spesse sopracciglia gli bastò per capire che l'uomo non era un nemediano. Sotto il ciuffo arruffato di capelli neri covavano due pericolosi occhi azzurri. Una lunga spada, chiusa in un fodero di cuoio, gli pendeva dalla cintura.",
+                "origin": "Il Dio nell'urna"
+            }
+        },
+        "nestor": {
+            "name": "Nestor"
+        },
+        "ganbaatar": {
+            "name": "Ganbaatar"
+        },
+        "aja": {
+            "name": "Aja"
         }
     }
 }

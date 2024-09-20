@@ -364,6 +364,112 @@
             "textStyle": {
                 "textInter": 53
             }
+        },
+        "jade_wand": {
+            "title": "Jade Wand",
+            "text": "Target one single unit in your line of sight. They suffer 1 unavoidable damage per gem spent (up to 3). One use per turn.\n\n\n\n\n\n",
+            "textStyle": {
+                "textSize": 98,
+                "textInter": 72
+            },
+            "clarification": "Overlord units don’t have Manipulation, so the Overlord merely spends the appropriate number of gems."
+        },
+        "rope": {
+            "title": "Rope",
+            "text": "Discard this card to place a Rope token in your area",
+            "clarification": "Any Hero in an area with a Rope token may perform a simple Manipulation to remove the Rope token from the board and place the Rope card in their inventory."
+        },
+        "whip": {
+            "title": "Whip",
+            "text": "Discard this card to place a Rope token in your area",
+            "clarification": "The Whip is a weapon that also acts as a Rope card whenever a scenario indicates a Rope token can be used."
+        },
+        "bow_of_set": {
+            "title": "Bow of Set"
+        },
+        "shuko": {
+            "title": "Shuko"
+        },
+        "pipes_of_madness": {
+            "title": "Pipes of Madness"
+        },
+        "sorcerers_staff": {
+            "title": "Sorcerer's Staff"
+        },
+        "shuriken": {
+            "title": "Shuriken",
+            "text": "Can only be used against targets in your area or adjacent areas with line of sight.",
+            "textStyle": {
+                "textSize": 97,
+                "textInter": 64
+            },
+            "clarification": "Shuriken are a lightweight, short-ranged weapon. They follow all of the standard rules for ranged weapons (line of sight requirements, hindering, etc.), but they may only be used to target enemies in the attacker’s area, or an adjacent area.\nThis includes areas at different elevations, which may include an elevation bonus."
+        },
+        "harpoon": {
+            "title": "Harpoon"
+        },
+        "black_stone": {
+            "title": "Black Stone"
+        },
+        "serpent_crown": {
+            "title": "Serpent Crown",
+            "text": "Place 3 {gem_red} on this card. A Hero may use these gems to use the Leadership skill. During the Start phase of the Heroes’ turn, move all 3 {gem_red} to the card.\n\n\n\n\n\n",
+            "textStyle": {
+                "textSize": 81,
+                "textInter": 90
+            }
+        },
+        "tankard": {
+            "title": "Tankard"
+        },
+        "minor_life_potion": {
+            "title": "Minor Life Potion"
+        },
+        "crowbill": {
+            "title": "Crowbill"
+        },
+        "club": {
+            "title": "Club"
+        },
+        "lemurian_blade": {
+            "title": "Lemurian Blade"
+        },
+        "rapier": {
+            "title": "Rapier"
+        },
+        "mace_of_ibis": {
+            "title": "Mace of Ibis"
+        },
+        "two-handed_axe": {
+            "title": "Two-Handed Axe"
+        },
+        "hurlbat": {
+            "title": "Hurlbat"
+        },
+        "stiletto": {
+            "title": "Stiletto"
+        },
+        "quiver": {
+            "title": "Quiver",
+            "text": "\n\n\n\n\nReduce the Encumbrance\nvalue of an equipped Bow\nor Crossbow by 1.",
+            "textStyle": {
+                "textSize": 89,
+                "textInter": 72
+            }
+        },
+        "heavy_armor": {
+            "title": "Heavy Armor",
+            "text": "Ignore the effects of Precision Strike and Precision Shot."
+        },
+        "hyrkanian_helmet": {
+            "title": "Hyrkanian Helmet",
+            "text": "Can be used in addition to another Asset card with an Armor bonus."
+        },
+        "nemedian_shield": {
+            "title": "Nemedian Shield"
+        },
+        "stygian_shield": {
+            "title": "Stygian Shield"
         }
     }
 }

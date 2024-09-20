@@ -74,12 +74,12 @@ var Tile = mergeObject(StudioItem, {
 
         if (tile.image)
         {
-            code += "<div class=\"image\"><img " + (!printPurpose ? LazyImage : "") + " src=\"" + tile.image + "\" onload=\"this.style.minHeight = 0; this.style.opacity = 1\" style=\"left: " + tile.imagelocation.x + "%; top: " + tile.imagelocation.y + "%; width: " + tile.imagezoom + "%; transform: translate(-50%, -50%) rotate(" + tile.imagerotation + "deg)\"/></div>";
+            code += "<div class=\"image\"><img " + (!printPurpose ? LazyImage : "") + " src=\"" + tile.image + "\" onload=\"this.style.minHeight = 0; this.style.opacity = 1\" style=\"left: " + tile.imagelocation.x + "%; top: " + tile.imagelocation.y + "%; width: " + tile.imagezoom + "%; transform: translate(-50%, -50%) rotate(" + tile.imagerotation + "deg)" + (tile.imageflip ? " scaleX(-1)" : "") + "\"/></div>";
         }
 
         if (tile.name !== undefined && tile.name !== null)
         {
-               code += "<div class=\"name\">" + tile.name + "</div>";
+               code += "<div class=\"name\" style=\"font-size: " + (tile.nameSize || "88") + "%;\">" + tile.name + "</div>";
         }
 
         if (tile.reinforcement || tile.reinforcement === "0")
@@ -89,31 +89,55 @@ var Tile = mergeObject(StudioItem, {
         }
 
         var level = 0;
+        
+        let attacksTypes = [];
+        let dices = [];
         if (tile.dices && tile.dices[0] != "none")
         {
+            dices.push(tile.dices);
+            if (tile.attacktype == "both")
+            {
+                attacksTypes.push("contact");
+                if (tile.dices2 && tile.dices2[0] != "none")
+                {
+                    dices.push(tile.dices2);
+                    attacksTypes.push("ranged");
+                }
+            }
+            else
+            {
+                attacksTypes.push(tile.attacktype);
+            }
+        }
+        
+        for (let d=0; d < dices.length; d++)
+        {
+            let dice = dices[d];
+            let attackType = attacksTypes[d];
+            
             var nbDices = 1;
             
             var diceCode = ""
-            diceCode += "<img class='dice dice-1' src=\"studio/tile/img/dice_" + tile.dices[0] + ".webp?version=" + Version + "\"/>";
-            if (tile.dices[1] != "none")
+            diceCode += "<img class='dice dice-1' src=\"studio/tile/img/dice_" + dice[0] + ".webp?version=" + Version + "\"/>";
+            if (dice[1] != "none")
             {
                 nbDices++;
-                diceCode += "<img class='dice dice-2' src=\"studio/tile/img/dice_" + tile.dices[1] + ".webp?version=" + Version + "\"/>";
-                if (tile.dices[2] != "none")
+                diceCode += "<img class='dice dice-2' src=\"studio/tile/img/dice_" + dice[1] + ".webp?version=" + Version + "\"/>";
+                if (dice[2] != "none")
                 {
                     nbDices++;
-                    diceCode += "<img class='dice dice-3' src=\"studio/tile/img/dice_" + tile.dices[2] + ".webp?version=" + Version + "\"/>";
-                    if (tile.dices[3] != "none")
+                    diceCode += "<img class='dice dice-3' src=\"studio/tile/img/dice_" + dice[2] + ".webp?version=" + Version + "\"/>";
+                    if (dice[3] != "none")
                     {
                         nbDices++;
-                        diceCode += "<img class='dice dice-4' src=\"studio/tile/img/dice_" + tile.dices[3] + ".webp?version=" + Version + "\"/>";
+                        diceCode += "<img class='dice dice-4' src=\"studio/tile/img/dice_" + dice[3] + ".webp?version=" + Version + "\"/>";
                     }
                 }
             }
             
             code += "<div class=\"attack level" + level + "\">";
             code += "<img class='dice-background' src=\"studio/tile/img/dice-background-" + nbDices + ".webp?version=" + Version + "\"/>";
-            code += "<img class=\"attacktype\" src=\"studio/tile/img/" + tile.attacktype + ".webp?version=" + Version + "\"/>";
+            code += "<img class=\"attacktype\" src=\"studio/tile/img/" + attackType + ".webp?version=" + Version + "\"/>";
             code += diceCode;
             code += "</div>";
             level++;
@@ -194,10 +218,10 @@ var Tile = mergeObject(StudioItem, {
         if ((tokenMode == null || tokenMode == true) && tile.tokens && tile.tokens.length > 0 && tile.tokens[0].active)
         {
             code += "<div class=\"tile tokens" + (tokenAside ? " tokensAside" : " tokensOver") + "\">";
-            code += "<div class=\"token\"><img " + (!printPurpose ? LazyImage : "") + " src=\"" + (tile.tokens[0].image || tile.image) + "\" onload=\"this.style.cssText += '; top: " + tile.tokens[0].imagelocation.y + "% !important'\" style=\"left: " + tile.tokens[0].imagelocation.x + "%; top: " + tile.tokens[0].imagelocation.y + "%; width: " + tile.tokens[0].imagezoom + "%; transform: translate(-50%, -50%) rotate(" + tile.tokens[0].imagerotation + "deg)\"/></div>";
+            code += "<div class=\"token\"><img " + (!printPurpose ? LazyImage : "") + " src=\"" + (tile.tokens[0].image || tile.image) + "\" onload=\"this.style.cssText += '; top: " + tile.tokens[0].imagelocation.y + "% !important'\" style=\"left: " + tile.tokens[0].imagelocation.x + "%; top: " + tile.tokens[0].imagelocation.y + "%; width: " + tile.tokens[0].imagezoom + "%; transform: translate(-50%, -50%) rotate(" + tile.tokens[0].imagerotation + "deg)" + (tile.tokens[0].imageflip ? " scaleX(-1)" : "") + "\"/></div>";
             if (tile.tokens.length > 1 && tile.tokens[1].active)
             {
-                code += "<div class=\"token\"><img " + (!printPurpose ? LazyImage : "") + " src=\"" + (tile.tokens[1].image || tile.image) + "\" onload=\"this.style.cssText += '; top: " + tile.tokens[1].imagelocation.y + "% !important'\"style=\"left: " + tile.tokens[1].imagelocation.x + "%; top: " + tile.tokens[1].imagelocation.y + "%; width: " + tile.tokens[1].imagezoom + "%; transform: translate(-50%, -50%) rotate(" + tile.tokens[1].imagerotation + "deg)\"/></div>";
+                code += "<div class=\"token\"><img " + (!printPurpose ? LazyImage : "") + " src=\"" + (tile.tokens[1].image || tile.image) + "\" onload=\"this.style.cssText += '; top: " + tile.tokens[1].imagelocation.y + "% !important'\"style=\"left: " + tile.tokens[1].imagelocation.x + "%; top: " + tile.tokens[1].imagelocation.y + "%; width: " + tile.tokens[1].imagezoom + "%; transform: translate(-50%, -50%) rotate(" + tile.tokens[1].imagerotation + "deg)" + (tile.tokens[1].imageflip ? " scaleX(-1)" : "") + "\"/></div>";
             }
             code += "</div>";
         }
@@ -255,6 +279,10 @@ var Tile = mergeObject(StudioItem, {
                     + "<label for=\"tname\">" + Tile._i18n.name + "</label>"
                     + "<input id=\"tname\" spellcheck='false' name=\"tilename\" autocomplete=\"off\" placeholder=\"" + Tile._i18n.namePh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
                 + "</div>"
+                + "<div class=\"field namesize\">"
+                    + "<label for=\"tnamesize\">" + Tile._i18n.namesize + "</label>"
+                    + "<input id=\"tnamesize\" name=\"tilenamesize\" type=\"number\" autocomplete=\"off\" placeholder=\"" + Tile._i18n.namesizePh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
+                + "</div>"
                 + "<div class=\"field color\">"
                     + "<label for=\"tcolor\">" + Tile._i18n.color + "</label>"
                     + "<select id='tcolor' name='tcolor'>"
@@ -278,12 +306,19 @@ var Tile = mergeObject(StudioItem, {
                 + "</div>"
                 + "<div class=\"field attackdices\">"
                     + "<label for=\"tdices\">" + Tile._i18n.dices + "</label>"
-                    + "<input type=\"checkbox\" id=\"tattacktype\" name=\"tileattacktype\" onchange=\"Tile._preview();\" title=\"" + Tile._i18n.attacktype + "\"/>"
                     + "<div>"
                         + "<select id=\"tdices\" class=\"dice\" name=\"tiledices1\"><option value=\"none\">" + Tile._i18n.diceNone + "</option><option value=\"red\">" + Tile._i18n.diceRed + "</option><option value=\"redreroll\">" + Tile._i18n.diceRedReroll + "</option><option value=\"orange\">" + Tile._i18n.diceOrange + "</option><option value=\"orangereroll\">" + Tile._i18n.diceOrangeReroll + "</option><option value=\"yellow\">" + Tile._i18n.diceYellow + "</option><option value=\"yellowreroll\">" + Tile._i18n.diceYellowReroll + "</option></select>"
                         + "<select id=\"tdices2\" class=\"dice\" name=\"tiledices2\"><option value=\"none\">" + Tile._i18n.diceNone + "</option><option value=\"red\">" + Tile._i18n.diceRed + "</option><option value=\"redreroll\">" + Tile._i18n.diceRedReroll + "</option><option value=\"orange\">" + Tile._i18n.diceOrange + "</option><option value=\"orangereroll\">" + Tile._i18n.diceOrangeReroll + "</option><option value=\"yellow\">" + Tile._i18n.diceYellow + "</option><option value=\"yellowreroll\">" + Tile._i18n.diceYellowReroll + "</option></select>"
                         + "<select id=\"tdices3\" class=\"dice\" name=\"tiledices3\"><option value=\"none\">" + Tile._i18n.diceNone + "</option><option value=\"red\">" + Tile._i18n.diceRed + "</option><option value=\"redreroll\">" + Tile._i18n.diceRedReroll + "</option><option value=\"orange\">" + Tile._i18n.diceOrange + "</option><option value=\"orangereroll\">" + Tile._i18n.diceOrangeReroll + "</option><option value=\"yellow\">" + Tile._i18n.diceYellow + "</option><option value=\"yellowreroll\">" + Tile._i18n.diceYellowReroll + "</option></select>"
                         + "<select id=\"tdices4\" class=\"dice\" name=\"tiledices4\"><option value=\"none\">" + Tile._i18n.diceNone + "</option><option value=\"red\">" + Tile._i18n.diceRed + "</option><option value=\"redreroll\">" + Tile._i18n.diceRedReroll + "</option><option value=\"orange\">" + Tile._i18n.diceOrange + "</option><option value=\"orangereroll\">" + Tile._i18n.diceOrangeReroll + "</option><option value=\"yellow\">" + Tile._i18n.diceYellow + "</option><option value=\"yellowreroll\">" + Tile._i18n.diceYellowReroll + "</option></select>"
+                    + "</div>"
+                + "</div>"
+                + "<div class=\"field attackdices\">"
+                    + "<div>"
+                        + "<select id=\"t2dices\" class=\"dice\" name=\"tiledices21\"><option value=\"none\">" + Tile._i18n.diceNone + "</option><option value=\"red\">" + Tile._i18n.diceRed + "</option><option value=\"redreroll\">" + Tile._i18n.diceRedReroll + "</option><option value=\"orange\">" + Tile._i18n.diceOrange + "</option><option value=\"orangereroll\">" + Tile._i18n.diceOrangeReroll + "</option><option value=\"yellow\">" + Tile._i18n.diceYellow + "</option><option value=\"yellowreroll\">" + Tile._i18n.diceYellowReroll + "</option></select>"
+                        + "<select id=\"t2dices2\" class=\"dice\" name=\"tiledices22\"><option value=\"none\">" + Tile._i18n.diceNone + "</option><option value=\"red\">" + Tile._i18n.diceRed + "</option><option value=\"redreroll\">" + Tile._i18n.diceRedReroll + "</option><option value=\"orange\">" + Tile._i18n.diceOrange + "</option><option value=\"orangereroll\">" + Tile._i18n.diceOrangeReroll + "</option><option value=\"yellow\">" + Tile._i18n.diceYellow + "</option><option value=\"yellowreroll\">" + Tile._i18n.diceYellowReroll + "</option></select>"
+                        + "<select id=\"t2dices3\" class=\"dice\" name=\"tiledices23\"><option value=\"none\">" + Tile._i18n.diceNone + "</option><option value=\"red\">" + Tile._i18n.diceRed + "</option><option value=\"redreroll\">" + Tile._i18n.diceRedReroll + "</option><option value=\"orange\">" + Tile._i18n.diceOrange + "</option><option value=\"orangereroll\">" + Tile._i18n.diceOrangeReroll + "</option><option value=\"yellow\">" + Tile._i18n.diceYellow + "</option><option value=\"yellowreroll\">" + Tile._i18n.diceYellowReroll + "</option></select>"
+                        + "<select id=\"t2dices4\" class=\"dice\" name=\"tiledices24\"><option value=\"none\">" + Tile._i18n.diceNone + "</option><option value=\"red\">" + Tile._i18n.diceRed + "</option><option value=\"redreroll\">" + Tile._i18n.diceRedReroll + "</option><option value=\"orange\">" + Tile._i18n.diceOrange + "</option><option value=\"orangereroll\">" + Tile._i18n.diceOrangeReroll + "</option><option value=\"yellow\">" + Tile._i18n.diceYellow + "</option><option value=\"yellowreroll\">" + Tile._i18n.diceYellowReroll + "</option></select>"
                     + "</div>"
                 + "</div>"
                 + "<div class=\"field skills\">"
@@ -301,6 +336,10 @@ var Tile = mergeObject(StudioItem, {
             + "</div>"
             + "<div class=\"ticol\">"
             + "<div class=\"tile\">"
+                + "<div class=\"field field-floating\">"
+                    + "<input id=\"timageflip\" type=\"checkbox\" name=\"tileimageflip\" onchange=\"Tile._preview();\"/>"
+                    + "<label for=\"timageflip\">" + Tile._i18n.imageflip + "</label>"
+                + "</div>"
                 + "<h1>" + Tile._i18n.header1bis + "</h1>"
                 + "<div class=\"field\">"
                     + "<label for=\"timage\">" + Tile._i18n.image + "</label>"
@@ -323,6 +362,10 @@ var Tile = mergeObject(StudioItem, {
             + "<div class=\"tile\">"
                 + "<h1>" + Tile._i18n.header1ter + "</h1>"
                 + "<input class=\"imagetoken\" type=\"checkbox\" id=\"timagetokenactive\" name=\"timagetokenactive\" onchange=\"Tile._preview();\"/><label for=\"timagetokenactive\">" + Tile._i18n.imagetokenactive + "</label>"
+                + "<div class=\"field field-floating\">"
+                    + "<input id=\"timagetokenflip\" type=\"checkbox\" name=\"tileimagetokenflip\" onchange=\"Tile._preview();\"/>"
+                    + "<label for=\"timagetokenflip\">" + Tile._i18n.imageflip + "</label>"
+                + "</div>"
                 + "<div class=\"field\">"
                     + "<label for=\"timagetoken\">" + Tile._i18n.imagetoken + "</label>"
                     + "<input id=\"timagetoken\" spellcheck='false' name=\"tileimagetoken\" autocomplete=\"off\" placeholder=\"" + Tile._i18n.imagePh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
@@ -341,6 +384,10 @@ var Tile = mergeObject(StudioItem, {
                     + "<input id=\"timagetokenrotation\" name=\"tileimagetokenrotation\" type=\"number\" autocomplete=\"off\" placeholder=\"" + Tile._i18n.imagerotationPh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
                 + "</div>"
                 + "<input class=\"imagetoken\" type=\"checkbox\" id=\"timagetoken2active\" name=\"timagetoken2active\" onchange=\"Tile._preview();\"/><label for=\"timagetoken2active\">" + Tile._i18n.imagetokenactive + "</label>"
+                + "<div class=\"field field-floating\">"
+                    + "<input id=\"timagetoken2flip\" type=\"checkbox\" name=\"tileimagetoken2flip\" onchange=\"Tile._preview();\"/>"
+                    + "<label for=\"timagetoken2flip\">" + Tile._i18n.imageflip + "</label>"
+                + "</div>"
                 + "<div class=\"field\">"
                     + "<label for=\"timagetoken2\">" + Tile._i18n.imagetoken + "</label>"
                     + "<input id=\"timagetoken2\" spellcheck='false' name=\"tileimagetoken2\" autocomplete=\"off\" placeholder=\"" + Tile._i18n.imagePh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
@@ -372,6 +419,7 @@ var Tile = mergeObject(StudioItem, {
         tile = tile || {
             id: Math.random(),
             name: "",
+            nameSize: "88",
             color: "gray",
             movement: "",
             defense: "",
@@ -380,6 +428,7 @@ var Tile = mergeObject(StudioItem, {
             skills: { 0: "none", 1: "none", 2: "none", 3: "none" },
             reinforcement: "",
             image: "",
+            imageflip: false, 
             imagelocation: {x: "50", y: "50"},
             imagezoom: "100",
             imagerotation: "0",
@@ -389,14 +438,16 @@ var Tile = mergeObject(StudioItem, {
                     image: "",
                     imagelocation: {x: "50", y: "50"}, 
                     imagezoom: "100",
-                    imagerotation: "0" 
+                    imagerotation: "0",
+                    imageflip: false 
                 },
                 { 
                     active: false,
                     image: "",
                     imagelocation: {x: "50", y: "50"}, 
                     imagezoom: "100",
-                    imagerotation: "0" 
+                    imagerotation: "0",
+                    imageflip: false  
                 }
             ]
         };
@@ -408,7 +459,7 @@ var Tile = mergeObject(StudioItem, {
                 $(this).attr("data-value", this.value);
              })
         });
-        $("#tdices,#tdices2,#tdices3,#tdices4,#tcolor").each (function (i) {
+        $("#tdices,#tdices2,#tdices3,#tdices4,#t2dices,#t2dices2,#t2dices3,#t2dices4,#tcolor").each (function (i) {
             var k = $(this);
             k.attr("data-value", "")
                 .selectmenu({ appendTo: k.parent(), width: k.is(".dice") ? 40 : 58, change: function(event, selection) {
@@ -425,17 +476,18 @@ var Tile = mergeObject(StudioItem, {
 
     _form2card: function()
     {
-        return {
+        let o = {
             id: $(".dialog input[name=tilepos]")[0].value,
             name: $(".dialog input[name=tilename]")[0].value,
+            nameSize: $(".dialog input[name=tilenamesize]")[0].value,
             color: $(".dialog select[name=tcolor]")[0].value,
             movement: $(".dialog input[name=tilemovement]")[0].value,
             defense: $(".dialog input[name=tiledefense]")[0].value,
-            attacktype: $(".dialog input[name=tileattacktype]")[0].checked ? "ranged" : "contact",
-            dices: { 0: $(".dialog select[name=tiledices1]")[0].value, 1: $(".dialog select[name=tiledices2]")[0].value, 2: $(".dialog select[name=tiledices3]")[0].value, 3: $(".dialog select[name=tiledices4]")[0].value },
+            // TODO attacktype: $(".dialog input[name=tileattacktype]")[0].checked ? "ranged" : "contact",
             skills: { 0: $(".dialog select[name=tileskills1]")[0].value, 1: $(".dialog select[name=tileskills2]")[0].value, 2: $(".dialog select[name=tileskills3]")[0].value, 3: $(".dialog select[name=tileskills4]")[0].value },
             reinforcement: $(".dialog input[name=tilereinforcement]")[0].value,
             image: $(".dialog input[name=tileimage]")[0].value,
+            imageflip: $(".dialog input[name=tileimageflip]")[0].checked,
             imagelocation: {x: $(".dialog input[name=tileimagelocation]")[0].value, y: $(".dialog input[name=tileimagelocation2]")[0].value},
             imagezoom: $(".dialog input[name=tileimagezoom]")[0].value,
             imagerotation: $(".dialog input[name=tileimagerotation]")[0].value,
@@ -445,46 +497,100 @@ var Tile = mergeObject(StudioItem, {
                     image: $(".dialog input[name=tileimagetoken]")[0].value,
                     imagelocation: {x: $(".dialog input[name=tileimagetokenlocation]")[0].value, y: $(".dialog input[name=tileimagetokenlocation2]")[0].value}, 
                     imagezoom: $(".dialog input[name=tileimagetokenzoom]")[0].value,
-                    imagerotation: $(".dialog input[name=tileimagetokenrotation]")[0].value
+                    imagerotation: $(".dialog input[name=tileimagetokenrotation]")[0].value,
+                    imageflip: $(".dialog input[name=tileimagetokenflip]")[0].checked,
                 },
                 { 
                     active: $(".dialog input[name=timagetoken2active]")[0].checked,
                     image: $(".dialog input[name=tileimagetoken2]")[0].value,
                     imagelocation: {x: $(".dialog input[name=tileimagetoken2location]")[0].value, y: $(".dialog input[name=tileimagetoken2location2]")[0].value}, 
                     imagezoom: $(".dialog input[name=tileimagetoken2zoom]")[0].value,
-                    imagerotation: $(".dialog input[name=tileimagetoken2rotation]")[0].value
+                    imagerotation: $(".dialog input[name=tileimagetoken2rotation]")[0].value,
+                    imageflip: $(".dialog input[name=tileimagetoken2flip]")[0].checked,
                 }
             ]
+        };
+        
+        if ($(".dialog select[name=tiledices1]")[0].value != "none" && $(".dialog select[name=tiledices21]")[0].value != "none")
+        {
+            o.attacktype = "both";
+            o.dices = { 0: $(".dialog select[name=tiledices1]")[0].value, 1: $(".dialog select[name=tiledices2]")[0].value, 2: $(".dialog select[name=tiledices3]")[0].value, 3: $(".dialog select[name=tiledices4]")[0].value };
+            o.dices2 = { 0: $(".dialog select[name=tiledices21]")[0].value, 1: $(".dialog select[name=tiledices22]")[0].value, 2: $(".dialog select[name=tiledices23]")[0].value, 3: $(".dialog select[name=tiledices24]")[0].value };
         }
+        else if ($(".dialog select[name=tiledices21]")[0].value != "none")
+        {
+            o.attacktype = "ranged";
+            o.dices = { 0: $(".dialog select[name=tiledices21]")[0].value, 1: $(".dialog select[name=tiledices22]")[0].value, 2: $(".dialog select[name=tiledices23]")[0].value, 3: $(".dialog select[name=tiledices24]")[0].value };
+        }
+        else
+        {
+            o.attacktype = "contact";
+            o.dices = { 0: $(".dialog select[name=tiledices1]")[0].value, 1: $(".dialog select[name=tiledices2]")[0].value, 2: $(".dialog select[name=tiledices3]")[0].value, 3: $(".dialog select[name=tiledices4]")[0].value };
+        }
+        
+        
+        return o;
     },
     _card2form: function(tile)
     {
         $(".dialog input[name=tilepos]")[0].value = tile.id;
         $(".dialog input[name=tilename]")[0].value = tile.name;
+        $(".dialog input[name=tilenamesize]")[0].value = tile.nameSize || "88";
         $(".dialog select[name=tcolor]")[0].value = tile.color; $(".dialog select[name=tcolor]").attr("data-value", tile.color);
         $(".dialog input[name=tilemovement]")[0].value = tile.movement;
         $(".dialog input[name=tiledefense]")[0].value = tile.defense;
-        $(".dialog input[name=tileattacktype]")[0].checked = tile.attacktype != 'contact';
-        $(".dialog select[name=tiledices1]")[0].value = tile.dices['0']; $(".dialog select[name=tiledices1]").attr("data-value", tile.dices['0']);
-        $(".dialog select[name=tiledices2]")[0].value = tile.dices['1']; $(".dialog select[name=tiledices2]").attr("data-value", tile.dices['1']);
-        $(".dialog select[name=tiledices3]")[0].value = tile.dices['2']; $(".dialog select[name=tiledices3]").attr("data-value", tile.dices['2']);
-        $(".dialog select[name=tiledices4]")[0].value = tile.dices['3']; $(".dialog select[name=tiledices4]").attr("data-value", tile.dices['3']);
+        if (tile.attacktype == "contact")
+        {
+            $(".dialog select[name=tiledices1]")[0].value = tile.dices['0']; $(".dialog select[name=tiledices1]").attr("data-value", tile.dices['0']);
+            $(".dialog select[name=tiledices2]")[0].value = tile.dices['1']; $(".dialog select[name=tiledices2]").attr("data-value", tile.dices['1']);
+            $(".dialog select[name=tiledices3]")[0].value = tile.dices['2']; $(".dialog select[name=tiledices3]").attr("data-value", tile.dices['2']);
+            $(".dialog select[name=tiledices4]")[0].value = tile.dices['3']; $(".dialog select[name=tiledices4]").attr("data-value", tile.dices['3']);
+            $(".dialog select[name=tiledices21]")[0].value = "none"; $(".dialog select[name=tiledices21]").attr("data-value", "none");
+            $(".dialog select[name=tiledices22]")[0].value = "none"; $(".dialog select[name=tiledices22]").attr("data-value", "none");
+            $(".dialog select[name=tiledices23]")[0].value = "none"; $(".dialog select[name=tiledices23]").attr("data-value", "none");
+            $(".dialog select[name=tiledices24]")[0].value = "none"; $(".dialog select[name=tiledices24]").attr("data-value", "none");
+        }
+       else if (tile.attacktype == "ranged")
+        {
+            $(".dialog select[name=tiledices1]")[0].value = "none"; $(".dialog select[name=tiledices1]").attr("data-value", "none");
+            $(".dialog select[name=tiledices2]")[0].value = "none"; $(".dialog select[name=tiledices2]").attr("data-value", "none");
+            $(".dialog select[name=tiledices3]")[0].value = "none"; $(".dialog select[name=tiledices3]").attr("data-value", "none");
+            $(".dialog select[name=tiledices4]")[0].value = "none"; $(".dialog select[name=tiledices4]").attr("data-value", "none");
+            $(".dialog select[name=tiledices21]")[0].value = tile.dices['0']; $(".dialog select[name=tiledices21]").attr("data-value", tile.dices['0']);
+            $(".dialog select[name=tiledices22]")[0].value = tile.dices['1']; $(".dialog select[name=tiledices22]").attr("data-value", tile.dices['1']);
+            $(".dialog select[name=tiledices23]")[0].value = tile.dices['2']; $(".dialog select[name=tiledices23]").attr("data-value", tile.dices['2']);
+            $(".dialog select[name=tiledices24]")[0].value = tile.dices['3']; $(".dialog select[name=tiledices24]").attr("data-value", tile.dices['3']);
+        }
+        else 
+        {
+            $(".dialog select[name=tiledices1]")[0].value = tile.dices['0']; $(".dialog select[name=tiledices1]").attr("data-value", tile.dices['0']);
+            $(".dialog select[name=tiledices2]")[0].value = tile.dices['1']; $(".dialog select[name=tiledices2]").attr("data-value", tile.dices['1']);
+            $(".dialog select[name=tiledices3]")[0].value = tile.dices['2']; $(".dialog select[name=tiledices3]").attr("data-value", tile.dices['2']);
+            $(".dialog select[name=tiledices4]")[0].value = tile.dices['3']; $(".dialog select[name=tiledices4]").attr("data-value", tile.dices['3']);
+            $(".dialog select[name=tiledices21]")[0].value = tile.dices2['0']; $(".dialog select[name=tiledices21]").attr("data-value", tile.dices2['0']);
+            $(".dialog select[name=tiledices22]")[0].value = tile.dices2['1']; $(".dialog select[name=tiledices22]").attr("data-value", tile.dices2['1']);
+            $(".dialog select[name=tiledices23]")[0].value = tile.dices2['2']; $(".dialog select[name=tiledices23]").attr("data-value", tile.dices2['2']);
+            $(".dialog select[name=tiledices24]")[0].value = tile.dices2['3']; $(".dialog select[name=tiledices24]").attr("data-value", tile.dices2['3']);
+         }
         $(".dialog select[name=tileskills1]")[0].value = tile.skills['0']; $(".dialog select[name=tileskills1]").attr("data-value", tile.skills['0']);
         $(".dialog select[name=tileskills2]")[0].value = tile.skills['1']; $(".dialog select[name=tileskills2]").attr("data-value", tile.skills['1']);
         $(".dialog select[name=tileskills3]")[0].value = tile.skills['2']; $(".dialog select[name=tileskills3]").attr("data-value", tile.skills['2']);
         $(".dialog select[name=tileskills4]")[0].value = tile.skills['3']; $(".dialog select[name=tileskills4]").attr("data-value", tile.skills['3']);
         $(".dialog input[name=tilereinforcement]")[0].value = tile.reinforcement;
         $(".dialog input[name=tileimage]")[0].value = tile.image;
+        $(".dialog input[name=tileimageflip]")[0].checked = tile.imageflip || false;
         $(".dialog input[name=tileimagelocation]")[0].value = tile.imagelocation.x;
         $(".dialog input[name=tileimagelocation2]")[0].value = tile.imagelocation.y;
         $(".dialog input[name=tileimagezoom]")[0].value = tile.imagezoom;
         $(".dialog input[name=tileimagerotation]")[0].value = tile.imagerotation;
         $(".dialog input[name=timagetokenactive]")[0].checked = tile.tokens && tile.tokens.length > 0 ? tile.tokens[0].active : false;
+        $(".dialog input[name=tileimagetokenflip]")[0].checked = tile.tokens && tile.tokens.length > 0 ? tile.tokens[0].imageflip : false;
         $(".dialog input[name=tileimagetoken]")[0].value  = tile.tokens && tile.tokens.length > 0 ? tile.tokens[0].image || "" : "";
         $(".dialog input[name=tileimagetokenlocation]")[0].value = tile.tokens && tile.tokens.length > 0 ? tile.tokens[0].imagelocation.x : "50"; $(".dialog input[name=tileimagetokenlocation2]")[0].value = tile.tokens && tile.tokens.length > 0 ? tile.tokens[0].imagelocation.y : "50"; 
         $(".dialog input[name=tileimagetokenzoom]")[0].value = tile.tokens && tile.tokens.length > 0 ? tile.tokens[0].imagezoom : "100";
         $(".dialog input[name=tileimagetokenrotation]")[0].value = tile.tokens && tile.tokens.length > 0 ? tile.tokens[0].imagerotation : "0";
         $(".dialog input[name=timagetoken2active]")[0].checked = tile.tokens && tile.tokens.length > 1 ? tile.tokens[1].active : false;
+        $(".dialog input[name=tileimagetoken2flip]")[0].checked = tile.tokens && tile.tokens.length > 1 ? tile.tokens[1].imageflip : false;
         $(".dialog input[name=tileimagetoken2]")[0].value  = tile.tokens && tile.tokens.length > 1 ? tile.tokens[1].image || "" : "";
         $(".dialog input[name=tileimagetoken2location]")[0].value = tile.tokens && tile.tokens.length > 1 ? tile.tokens[1].imagelocation.x : "50"; $(".dialog input[name=tileimagetoken2location2]")[0].value = tile.tokens && tile.tokens.length > 1 ? tile.tokens[1].imagelocation.y : "50"; 
         $(".dialog input[name=tileimagetoken2zoom]")[0].value = tile.tokens && tile.tokens.length > 1 ? tile.tokens[1].imagezoom : "100";

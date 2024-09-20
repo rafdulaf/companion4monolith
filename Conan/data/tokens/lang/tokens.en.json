@@ -37,7 +37,7 @@
             "name": "Set's Halo"
         },
         "wrecked-wall": {
-            "name": "Wrecked wall"
+            "name": "Wall wrecker"
         },
         "chest-mark": {
             "name": "Treasure token"
@@ -107,6 +107,18 @@
         },
         "trap-door": {
             "name": "Trap door"
+        },
+        "rope": {
+            "name": "Rope"
+        },
+        "spectral-shroud": {
+            "name": "Spectral Shroud"
+        },
+        "ossuary-cairn": {
+            "name": "Cairn / Ossuary"
+        },
+        "black-stone": {
+            "name": "Black Stone"
         }
     }
 }

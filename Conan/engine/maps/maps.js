@@ -426,7 +426,7 @@ var Maps = {
 			var expansion = Encyclopedia.expansions.list[j];
 			if (map.description.origins.indexOf(expansion.id) != -1)
 			{
-				if (origin) origin += " / ";
+				if (origin) origin += " + ";
 				origin += expansion.short;
 			}
 		}

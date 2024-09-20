@@ -5,7 +5,8 @@ EncyclopediaTokens._i18n = {
     'token': "copia",
     'tokens': "copie",
     'skills': "Utilizzato dall'abilità :",
-    'spells': "Utilizzato dall'incantesimo :"
+    'spells': "Utilizzato dall'incantesimo ",
+    'equipments': "Utilizzato dall'equipaggiamento:"
 };
 
 EncyclopediaTokens._facets = {
@@ -27,7 +28,8 @@ EncyclopediaTokens._facets = {
         'values': {
             'model': { 'label': "Miniatura" },
             'skill': { 'label': "Abilità" },
-            'spell': { 'label': "Incantesimo" }
+            'spell': { 'label': "Incantesimo" },
+            'equipment': { 'label': "Equipaggiamento" }
         }
     }
 };

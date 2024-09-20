@@ -83,7 +83,7 @@ var EncyclopediaTokens = {
             {
                 id: 'usage',
                 sort: true,
-                values: [ { id: "model", }, { id: "skill" }, { id: "spell" } ],
+                values: [ { id: "model", }, { id: "skill" }, { id: "spell" }, { id: "equipment" } ],
                 filter: function(item, selectedValues) {
                     for (var i = 0; i < selectedValues.length; i++)
                     {
@@ -103,6 +103,11 @@ var EncyclopediaTokens = {
                                 break;
                             case 'spell':
                                 if (EncyclopediaSpells._findSpellsByToken(item.id).length > 0)
+                                {
+                                    return true;
+                                }
+                            case 'equipment':
+                                if (EncyclopediaEquipments._findEquipmentsByToken(item.id).length > 0)
                                 {
                                     return true;
                                 }
@@ -282,6 +287,8 @@ var EncyclopediaTokens = {
         }
 
         var spells = EncyclopediaSpells._findSpellsByToken(token.id).map(s => EncyclopediaSpells._linkToSpell(s.id, false)).join(", ");
+        
+        var equipments = EncyclopediaEquipments._findEquipmentsByToken(token.id).map(s => EncyclopediaEquipments._linkToEquipment(s.id)).join(", ");
 
         Nav.dialog(token.name || "",
             "<div class='tokendetails'>"
@@ -291,6 +298,7 @@ var EncyclopediaTokens = {
                 + "</div>"
                 + skills
                 + (spells ? "<div class='spells'>" + EncyclopediaTokens._i18n.spells + " " + spells + "</div>" : "")
+                + (equipments ? "<div class='equipments'>" + EncyclopediaTokens._i18n.equipments + " " + equipments + "</div>" : "")
                 + model
                 + c
             + "</div>",

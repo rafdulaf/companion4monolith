@@ -1,14 +1,16 @@
 EncyclopediaEquipments._i18n = {
-    'tab': "Equipments",
-    'shorttab': "Equip.",
+    'tab': "Assets",
+    'shorttab': "Assets",
     'transfertToStudio': "Copy the card into the studio",
-    'transfertOK': "The card was copied to the equipment cards studio",
+    'transfertOK': "The card was copied to the assets cards studio",
     'transfertConfirm': "Do you want to copy the card into the studio in order to edit it or print it?",
     'from': "Available in:",
     'fromAnd': "and",
     'card': "copy",
     'cards': "copies",
-    'skill': "Skill:"
+    'clarification': "Clarification:",
+    'skill': "Skill:",
+    'tokensUsed': "Use the tokens:"
 };
 
 EncyclopediaEquipments._facets = {
@@ -26,7 +28,7 @@ EncyclopediaEquipments._facets = {
         'label': "Origin"
     },
     'type': {
-        'label': "Kind",
+        'label': "Type",
         'values': {
             'melee': { 'label': "Melee" },
             'ranged': { 'label': "Ranged" },

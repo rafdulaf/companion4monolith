@@ -24,6 +24,7 @@
 .spelldetails .from,
 .spelldetails .clarification {
     display: block;
+    margin-bottom: 10px;
 }
 
 #encyclopedia-spell-wrapper a {

@@ -20,141 +20,161 @@
     "list": {
         "reach": {
             "title": "Allonge",
-            "text": "Le personnage peut attaquer au corps-à-corps sur une zone adjacente avec ligne de vue et s’il n’y a pas d’obstacle (mur, porte, barreaux, tentures…) entre sa cible et lui.",
+            "text": "Vous pouvez attaquer au corps-à-corps vers une zone adjacente en ligne de vue, s’il n’y a pas d’obstacle (mur, porte, barreaux, tentures…).",
             "clarification": "Pour utiliser Allonge, les unités doivent se trouver au même niveau. On considère que les zones de transition comme les escaliers ou les éboulis de la Forteresse sont à la fois aux niveaux supérieur et inférieur. Attaquer une unité qui se trouve à un niveau différent nécessite de recourir à une Attaque à distance ou à un Sort.\nAllonge ne procure de bonus de surplomb que lorsque les règles spéciales de la carte Auberge sont utilisées."
         },
         "circular_strike": {
             "title": "Coup circulaire",
-            "text": "Avec toute arme de corps-à-corps à deux main (dont l’encombrement est supérieur ou égal à 3), le personnage peut donner un coup circulaire. Si l’attaque, résolue normalement, tue le premier adversaire désigné, le reliquat de dégâts est reporté sur le suivant (choisit par l'attaquant) et ainsi de suite jusqu’à ce qu’il n’y ait plus de reliquat.",
-            "clarification": "Si un personnage dispose aussi de Coup Précis, le joueur doit choisir s’il utilise Coup Précis ou Coup Circulaire avant de lancer les dés."
+            "text": "Quand vous tuez une unité adverse avec une Attaque au corps-à-corps utilisant une arme à 2 mains (d’Encombrement 3 ou plus), le reliquat de dégâts est reporté sur un autre adversaire de votre choix dans la même zone, et ainsi de suite jusqu’à ce qu’il n’y ait plus de reliquat. Résolvez chaque attaque normalement avant de passer à la suivante.",
+            "clarification": "Si vous avez les compétences Coup circulaire et Coup précis, vous devez choisir laquelle utiliser avant d’attaquer.\nEN MODE VERSUS, la condition sur l'arme ne s'applique pas et l'unité peut toujours utiliser cette compétence."
         },
         "ambidextrous": {
             "title": "Ambidextrie",
-            "text": "S’il dispose de deux armes à une main, le personnage peut cumuler leur bonus lors de chacune de ses attaques au corps-à-corps (ne fonctionne pas en défense)."
+            "text": "Vous pouvez attaquer au corps-à-corps avec deux armes à 1 main (d’Encombrement 2 ou moins) et cumuler leurs bonus. Ne fonctionne pas en défense.",
+            "clarification": "EN MODE VERSUS, vous pouvez relancer 1 dé d’attaque gratuitement."
         },
         "constriction": {
             "title": "Constriction",
-            "text": "Si, lors de son attaque, la créature obtient au moins une face avec 2 symboles sur l’un de ses dés, sa cible est « saisie », en plus des blessures éventuelles. La figurine du personnage saisi est ramenée au contact de la figurine de la créature et est considérée comme bloquée. Un personnage ayant la compétence Insaisissable ignore le blocage dû à Constriction, pas les dégâts associés à l’attaque.",
+            "text": "Quand vous attaquez, si vous obtenez 2 succès ou plus sur un dé, déplacez votre cible vers vous, afin que les socles des deux figurines se touchent. Tant que vous restez dans la même zone, la cible vous considère comme ayant la compétence Bloqueur. Un personnage ayant la compétence Insaisissable ignore le blocage dû à Constriction, pas les dégâts associés à l’attaque.",
             "clarification": "Si une unité dispose à la fois de Constriction et Allonge, Constriction permet logiquement de déplacer une cible d’une zone vers une autre. C’est le mouvement associé à la Constriction qui intervient en premier. Ainsi, une unité alliée disposant des compétences Garde du corps ou Soutien devrait déjà se trouver dans la zone de l’attaquant pour que les effets de la compétence s’appliquent."
         },
         "precision_strike": {
             "title": "Coup précis",
-            "text": "Lorsqu’il réalise une attaque au corps-à-corps, le personnage ignore systématiquement le premier point de défense de sa cible.",
-            "clarification": "Si un personnage dispose aussi de Coup Circulaire, le joueur doit choisir s’il utilise Coup Précis ou Coup Circulaire avant de lancer les dés."
+            "text": "Quand vous attaquez au corps-à-corps, la puissance de défense de votre cible est diminuée de 1.",
+            "clarification": "Si vous avez les compétences Coup circulaire et Coup précis, vous devez choisir laquelle utiliser avant d’attaquer."
         },
         "attack_from_beyond": {
             "title": "Retour de l’Au-delà",
-            "text": "Juste après sa mort, le personnage peut porter une ultime attaque au corps-à-corps d’une puissance de {dice_red}{dice_red}{dice_red}, sans bonus d’arme et sans malus d’attaque à mains nues."
+            "text": "Quand vous mourez, vous pouvez attaquer gratuitement une dernière fois au corps-à-corps ; lancez {dice_red}{dice_red}{dice_red}, sans bonus d’arme ni malus d’attaque à mains nues.",
+            "clarification": "Vous pouvez cibler n’importe quelle unité à portée de corps-à-corps.\nEN MODE VERSUS, l'attaque est de {dice_yellow}{dice_yellow}."
         },
         "counterattack": {
             "title": "Riposte",
-            "text": "Chaque fois que le personnage est attaqué au corps-à-corps (que l’attaque ait causé des dégâts ou non), il peut gratuitement riposter (s’il survit à l’attaque) de {dice_red}, sans bonus d’arme et sans malus d’attaque à mains nues."
+            "text": "Après avoir survécu à une Attaque au corps-à- corps (que l’attaque ait causé des dégâts ou non), vous pouvez immédiatement et gratuitement riposter au corps-à-corps contre votre agresseur ; lancez {dice_red}, sans bonus d’arme ni malus d’attaque à mains nues.",
+            "clarification": "Vous ne pouvez pas riposter contre une riposte.\nEN MODE SOLO/COOP, pour les unités de l’Overlord, cette compétence fonctionne comme dans les règles standard. Les Héros qui possèdent cette compétence ne peuvent quant à eux l’utiliser qu’une fois par tour de l’Overlord."
         },
         "elite_shooter": {
             "title": "Tireur d’élite",
-            "text": "Le personnage ignore les effets du phénomène de gêne lorsqu’il réalise une attaque à distance. De plus, il ignore la compétence Sous protection de sa cible."
+            "text": "Quand vous attaquez à distance, vous n’êtes pas soumis au phénomène de gêne. De plus, vous ignorez la compétence Sous protection de votre cible."
         },
         "precision_shot": {
             "title": "Tir précis",
-            "text": "Lorsqu’il réalise une attaque à distance, le personnage ignore systématiquement le premier point de défense passive de sa cible."
+            "text": "Quand vous attaquez à distance, la puissance de défense de votre cible est diminuée de 1."
         },
         "blocking": {
             "title": "Bloqueur",
-            "text": "Le personnage bloque tout mouvement des adversaires présents sur sa zone, à l'exception de ceux possédant la compétence Insaisissable."
+            "text": "Les unités adverses ne peuvent pas sortir de votre zone, sauf celles ayant la compétence Insaisissable, Intangible, ou Vol.",
+            "clarification": "EN MODE SOLO/COOP, pour des raisons d’équilibre, un Héros possédant cette compétence ne peut pas l’utiliser dans ce mode de jeu. Pour les unités de l’Overlord, cette compétence fonctionne comme dans les règles standard."
         },
         "wall_wrecker": {
             "title": "Défoncer les cloisons",
-            "text": "Le personnage peut traverser les cloisons et les portes en bois, au cours de son mouvement, pour un surcout de 2 points de mouvement. Il laisse derrière lui une ouverture (symbolisée par un pion) : le personnage se déplace de l'autre côté de la cloison qu'il vient de défoncer. Les deux zones deviennent adjascentes sans pénalité de mouvement pour passer de l'une à l'autre et l'ouverture donne une ligne de vue entre ces deux zones."
+            "text": "Vous pouvez traverser les cloisons et les portes en bois. Déplacez-vous de l’autre côté de la cloison, puis placez-y un pion Cloison défoncée. Le coût de ce Mouvement est augmenté de 2 points de mouvement. Il y a maintenant une ligne de vue entre les deux zones et le déplacement est possible sans pénalité.",
+            "clarification": "Les murs en pierre ne peuvent pas être défoncés.\nEN MODE SOLO/COOP, les unités de l’Overlord n’utilisent cette compétence que lorsqu’elle leur permet d’atteindre le Héros Cible plus facilement. Si l’utilisation d’une compétence leur permet d’éviter des restrictions liées au mouvement ou au combat imposées par des Héros autres que le Héros Cible, ou si cela leur permet d’atteindre la zone du Héros Cible (ou une zone depuis laquelle elles peuvent attaquer le Héros Cible), alors elles utilisent cette compétence. Dans le cas contraire, elles se déplacent simplement vers la zone du Héros Cible pour une Attaque au corps-à-corps ou la zone la plus proche depuis laquelle elles peuvent effectuer une Attaque à distance."
         },
         "evasive": {
             "title": "Insaisissable",
-            "text": "Le personnage ignore toute pénalité de mouvement liée à la présence d'adversaires dans sa zone, quand bien même ceux-ci auraient la compétence Bloqueur."
+            "text": "Vous pouvez vous déplacer comme s’il n’y avait aucune unité adverse dans votre zone (ignorant ainsi la compétence Bloqueur)."
         },
         "swimming": {
             "title": "Natation",
-            "text": "Le personnage est capable de se déplacer à travers les zones liquides. Le surcoût pour quitter une zone liquide est de 1 point de mouvement."
+            "text": "Vous pouvez vous déplacer dans les zones d’eau. Quitter une zone d’eau coûte 1 point de mouvement supplémentaire.",
+            "clarification": "EN MODE SOLO/COOP, les unités de l’Overlord n’utilisent cette compétence que lorsqu’elle leur permet d’atteindre le Héros Cible plus facilement. Si l’utilisation d’une compétence leur permet d’éviter des restrictions liées au mouvement ou au combat imposées par des Héros autres que le Héros Cible, ou si cela leur permet d’atteindre la zone du Héros Cible (ou une zone depuis laquelle elles peuvent attaquer le Héros Cible), alors elles utilisent cette compétence. Dans le cas contraire, elles se déplacent simplement vers la zone du Héros Cible pour une Attaque au corps-à-corps ou la zone la plus proche depuis laquelle elles peuvent effectuer une Attaque à distance."
         },
         "intangible": {
             "title": "Intangible",
-            "text": "Le personnage peut traverser un obstacle normalement infranchissable en dépensant ses points de mouvement comme s'il s'agissait d'une limite normale. Le personnage n'est jamais affecté par le phénomène de gêne."
+            "text": "Vous pouvez vous déplacer à travers un obstacle (mur, porte, tenture…) en dépensant des points de mouvement comme pour une limite normale. Ce Mouvement n’est pas affecté par le phénomène de gêne, la compétence Bloqueur, ni les niveaux d’élévation.",
+            "clarification": "EN MODE SOLO/COOP, les unités de l’Overlord n’utilisent cette compétence que lorsqu’elle leur permet d’atteindre le Héros Cible plus facilement. Si l’utilisation d’une compétence leur permet d’éviter des restrictions liées au mouvement ou au combat imposées par des Héros autres que le Héros Cible, ou si cela leur permet d’atteindre la zone du Héros Cible (ou une zone depuis laquelle elles peuvent attaquer le Héros Cible), alors elles utilisent cette compétence. Dans le cas contraire, elles se déplacent simplement vers la zone du Héros Cible pour une Attaque au corps-à-corps ou la zone la plus proche depuis laquelle elles peuvent effectuer une Attaque à distance."
         },
         "web_projection": {
             "title": "Projection de toile",
-            "text": "Plutôt que de réaliser une attaque classique, le personnage peut projeter une toile sur un adversaire. Pour cela il réalise une attaque à distance avec {dice_orange}{dice_orange}{dice_orange}. Si l'attaque dépasse la défense, elle n'engendre pas de blessure mais la victime est immobilisée (on place le pion Toile contre son socle). Pour s'en extraire il lui en coûtera 4 points de mouvements en un seul tour.",
-            "clarification": "Si une unité ne dispose pas de suffisamment de Points de Mouvement pour s’extraire en raison d’un empoisonnement, un Héros peut toujours dépenser tous ses Points de Mouvement gratuits et autant de points que nécessaire, jusqu’à sa limite de saturation.\nEn mode Aventure, si une unité de l’Overlord est prise dans une toile (suite à l’utilisation d’un Filet), l’Overlord peut utiliser les Points de Mouvement gratuits de l’unité et y ajouter des gemmes pour atteindre les 4 points nécessaires à son extraction, même si l’unité n’est pas normalement en mesure d’atteindre les 4 Points de Mouvement.\nEn mode Solo/coop, l’unité de l’Overlord utilise simplement tous ses Points de Mouvement gratuits pour s’extraire"
+            "text": "Au lieu d’attaquer normalement, vous pouvez projeter une toile sur votre cible. Pour cela, attaquez à distance avec {dice_orange}{dice_orange}{dice_orange}. Si la puissance d’attaque dépasse la puissance de défense, la cible reçoit un pion Toile sur sa figurine et ne subit aucun dégât. Elle est immobilisée, et devra dépenser 4 points de mouvement en un tour pour défausser le pion.",
+            "clarification": "Si un Héros n’a pas assez de points de mouvement pour défausser un pion Toile (pour quelque raison que ce soit), il peut dépenser sa base de mouvement et payer des points supplémentaires jusqu’à son indice de saturation. Une unité de l’Overlord peut faire de même pour atteindre les 4 points requis, même si elle ne peut pas normalement atteindre 4 points.\nEN MODE SOLO/COOP, l’unité de l’Overlord utilise simplement tous ses Points de Mouvement gratuits pour s’extraire.\nEN MODE SOLO/COOP, les unités de l’Overlord utilisent cette compétence dès que possible, à moins qu’elles soient affectées par le phénomène de gêne."
         },
         "feline_grace": {
             "title": "Souplesse féline",
-            "text": "Dans chaque zone empruntée, le personnage ignore un point de malus lié au phénomène de gêne."
+            "text": "Quand vous sortez d’une zone, diminuez de 1 point le malus de mouvement dû au phénomène de gêne."
         },
         "leap": {
             "title": "Saut",
-            "text": "Le personnage peut sauter par-dessus les endroits prévus à cet effet. Pour ce faire, il lance {dice_red} et doit égaler ou dépasser l'indice de difficulté. Le saut n'est pas soumis au phénomène de gène. Sauter coûte 1 point de mouvement par zone traversée. Par exemple, sauter d'un bateau à l'autre coûte 2 points de mouvements."
+            "text": "Vous pouvez sauter par-dessus les zones indiquées dans le scénario. Lancez {dice_red}. Si le résultat est supérieur ou égal à la difficulté du saut, le saut est réussi. Dépensez 1 point de mouvement par limite de zone traversée. Sauter n’est pas soumis au phénomène de gène.",
+            "clarification": "EN MODE SOLO/COOP, les unités de l’Overlord n’utilisent cette compétence que si les règles du scénario le précisent."
         },
         "flying": {
             "title": "Vol",
-            "text": "Le personnage peut voler par-dessus les éléments du décor. Il ignore les contraintes de déplacement liés au décor. Le vol n'est pas soumis au phénomène de gène."
+            "text": "Vous pouvez voler par-dessus les éléments du décor. Ce Mouvement n’est pas affecté par les contraintes liées au décor, le phénomène de gêne, la compétence Bloqueur, ni les niveaux d’élévation.",
+            "clarification": "EN MODE SOLO/COOP, les unités de l’Overlord n’utilisent cette compétence que lorsqu’elle leur permet d’atteindre le Héros Cible plus facilement. Si l’utilisation d’une compétence leur permet d’éviter des restrictions liées au mouvement ou au combat imposées par des Héros autres que le Héros Cible, ou si cela leur permet d’atteindre la zone du Héros Cible (ou une zone depuis laquelle elles peuvent attaquer le Héros Cible), alors elles utilisent cette compétence. Dans le cas contraire, elles se déplacent simplement vers la zone du Héros Cible pour une Attaque au corps-à-corps ou la zone la plus proche depuis laquelle elles peuvent effectuer une Attaque à distance."
         },
         "climb": {
             "title": "Escalade",
-            "text": "Le personnage est capable de franchir les limites de zone qui requièrent cette compétence, en payant le surcoût de mouvement lié à la difficulté du franchissement comme décrit dans le scénario."
+            "text": "Vous pouvez franchir les limites de zone qui requièrent cette compétence.",
+            "clarification": "EN MODE SOLO/COOP, les unités de l’Overlord n’utilisent cette compétence que si les règles du scénario le précisent."
         },
         "alchemy": {
             "title": "Alchimie",
-            "text": "Alchimie est une compétence générique pouvant être utilisée dans certains scénarios."
+            "text": "L’effet de cette compétence est décrit dans le scénario."
         },
         "leadership": {
             "title": "Commandement",
-            "text": "Pour chaque gemme dépensée, le héros peut activer un de ses Alliés. Un Allié activé peut se déplacer et attaquer comme une unité. Il ne peut activer qu'une fois par tour chacun de ses Alliés."
+            "text": "Vous pouvez activer une figurine d’Allié, en dépensant 1 gemme. L’Allié se déplace et attaque comme une unité de l’Overlord. Chaque Allié ne peut être activé qu’une fois par tour.",
+            "clarification": "EN MODE SOLO/COOP, les Héros possédant cette compétence peuvent l’utiliser comme dans les règles standard. Les unités de l’Overlord ne ciblent pas les Alliés à moins qu’aucun Héros ne soit à portée d’Attaque.\nEN MODE VERSUS, la prochaine tuile activée pendant le tour du joueur contrôlant cette unité coûte 1 gemme de moins."
         },
         "concentration": {
             "title": "Concentration",
-            "text": "Le personnage ignore toutes les pénalités liées au phénomène de gêne pour toutes les actions nécessitant un lancer de dé."
+            "text": "Vos lancers de dés ne sont pas soumis au phénomène de gêne."
         },
         "lock_picking": {
             "title": "Crochetage",
-            "text": "Chaque fois qu'il tente une manipulation complexe pour crocheter une serrure, le personnage dispose d'un bonus de {dice_red}."
+            "text": "Quand vous réalisez une Manipulation complexe pour ouvrir une serrure (porte, coffre…), vous lancez {dice_red} supplémentaire."
         },
         "fascination": {
             "title": "Fascination",
-            "text": "Le personnage ne peut pas être attaqué par un autre personnage qu’il n’a pas lui-même attaqué au préalable pendant la partie.",
-            "clarification": "Une unité ne peut cibler une unité ennemie disposant de Fascination même avec un sort, quelle qu’en soit la raison, tant que cette unité ennemie ne l’a pas attaquée.\nSauf mention contraire dans le scénario, Les personnages disposant de Fascination peuvent subir les dégâts causés par les attaques de zone."
+            "text": "Vous ne pouvez pas être attaqué par une autre unité, quelle qu’en soit la raison, si vous ne l’avez pas attaquée au préalable. Vous subissez toujours les dégâts causés par les attaques de zone.",
+            "clarification": "Sauf mention contraire dans le scénario, Les personnages disposant de Fascination peuvent subir les dégâts causés par les attaques de zone.\nEN MODE SOLO/COOP, les unités de l’Overlord n’utilisent cette compétence que si le scénario indique comment les utiliser."
         },
         "horror": {
             "title": "Horreur",
-            "text": "Le personnage a une apparence si hideuse qu'elle provoque la terreur chez ses adversaires. Chaque adversaire qui se trouve dans sa zone voit le niveau de saturation de ses caractéristiques limité à 2 (sauf pour la défense et la relance)."
+            "text": "Les unités adverses dans votre zone voient leurs indices de saturation limités à 2, pour leurs cases Combat au corps-à-corps, Combat à distance, Mouvement, et Manipulation.",
+            "clarification": "EN MODE VERSUS, vous pouvez faire relancer 1 dé d’attaque aux adversaires dans votre zone. Ce nouveau résultat doit être accepté (aucune Relance n’est possible sur ce dé)."
         },
         "jinx": {
             "title": "Malchance",
-            "text": "Aucune relance d’aucune sorte (payante ou gratuite) n’est autorisée dans la zone d’un adversaire ayant cette compétence."
+            "text": "Les unités adverses dans votre zone ne peuvent faire aucune relance (payante ou gratuite).",
+            "clarification": "EN MODE SOLO/COOP, les Héros possédant cette compétence peuvent l’utiliser comme dans les règles standard, mais elle peut engendrer un avantage significatif. Elle doit être utilisée à la discrétion des joueurs. Pour les unités de l’Overlord, cette compétence fonctionne comme dans les règles standard."
         },
         "poison": {
             "title": "Poison",
-            "text": "Poison est une compétence générique pouvant être utilisée dans certains scénarios."
+            "text": "L’effet de cette compétence est décrit dans le scénario.",
+            "clarification": "EN MODE SOLO/COOP, si le scénario n’indique pas de règle spéciale pour Poison, utilisez les règles suivantes : lorsqu’une unité disposant de Poison attaque un Héros, celui-ci ne subit pas de blessures mais place autant de pions Poison que le nombre de dégâts sur la case Attaque au corps-à-corps ou Mouvement de sa fiche de Héros. Chaque pion Poison sur une case d’action réduit de 1 la limite de saturation de cette action. Quand les deux limites de saturation sont réduites à zéro, le Héros meurt immédiatement. En cas de besoin de pions Poison supplémentaires, utilisez n’importe quel pion pour les représenter.\nEN MODE VERSUS, au lieu d’infliger des dégâts suite à une Attaque, vous pouvez choisir de faire perdre sa base de points de mouvement à votre cible pour sa prochaine activation. Dans ce cas, la figurine cible est couchée pour le représenter. La figurine peut toujours être prise pour cible d’attaques et se défendre. Lors de sa prochaine activation, la figurine de la cible est relevée avec une base de points de mouvement égale à zéro."
         },
         "support": {
             "title": "Soutien",
-            "text": "Les figurines amies du personnage présentes sur sa zone bénéficient d'une relance gratuite à chaque fois qu'elles réalisent une action. Soutien permet la relance gratuite d’un seul dé, y compris sur un dé déjà relancé gratuitement (exception à la règle page 22)."
+            "text": "Les unités amies dans votre zone peuvent relancer un dé gratuitement chaque fois qu’elles réalisent une action, même si ce dé a déjà été relancé gratuitement.",
+            "clarification": "EN MODE SOLO/COOP, pour les unités de l’Overlord, cette compétence fonctionne comme la règle des relances, en plus de tous les symboles de relance figurant sur le(s) dé(s) d’Attaque de la tuile. Pour les Héros, elle fonctionne exactement comme dans les règles standard."
         },
         "sacrifice": {
             "title": "Sacrifice",
-            "text": "Le personnage peut décider, avant le lancé de dés, de subir une attaque à la place de la cible initiale. Il ne peut par contre ni la parer ni l'esquiver. Il ne peut utiliser que sa défense passive pour se défendre. Ce personnage encaisse donc la totalité des dégâts causés par l’attaque à la place de la cible initiale."
+            "text": "Quand une unité amie dans votre zone est attaquée, avant le lancer de dés, vous pouvez choisir d’être attaqué à sa place. Vous pouvez utiliser votre Défense passive, mais pas votre Défense active.",
+            "clarification": "EN MODE SOLO/COOP, les unités de l’Overlord n’utilisent cette compétence que si le scénario indique comment les utiliser."
         },
         "protected": {
             "title": "Sous protection",
-            "text": "Le personnage ne peut être attaqué tant que demeure sur sa zone au moins l'un de ses amis dépourvu de cette compétence. Les attaques de zone ne sont pas soumises à l'effet de cette compétence."
+            "text": "Vous ne pouvez pas être attaqué s’il y a une unité amie (ou plus) dans votre zone n’ayant pas également cette compétence. Vous subissez toujours les dégâts causés par les attaques de zone.",
+            "clarification": "EN MODE SOLO/COOP, pour des raisons d’équilibre, un Héros possédant cette compétence ne peut pas l’utiliser dans ce mode de jeu. Pour les unités de l’Overlord, cette compétence fonctionne comme dans les règles standard."
         },
         "untouchable": {
             "title": "Intouchable",
-            "text": "Le personnage ayant cette compétence ignore le premier succès d’une attaque à distance portée contre lui."
+            "text": "Quand vous subissez une Attaque à distance, votre puissance de défense est augmentée de 1."
         },
         "bodyguard": {
             "title": "Garde du corps",
-            "text": "Le personnage peut parer (c’est-à-dire utiliser un équipement pour défendre comme un bouclier par exemple) à leur place, les attaques portées contre ses amis présents sur sa zone. Il ne peut pas simplement esquiver. L'usage de la compétence remplace la défense active de la cible mais pas sa défense passive. C’est la cible initiale de l’attaque qui en subit les éventuelles blessures."
+            "text": "Quand une unité amie dans votre zone est attaquée, vous pouvez parer (réaliser une Défense active avec une arme ou un bouclier) à sa place. Ajoutez le résultat à sa Défense passive. C’est la cible initiale de l’attaque qui en subit les éventuelles blessures.",
+            "clarification": "Vous ne pouvez pas esquiver à la place de l’unité ciblée.\nEN MODE SOLO/COOP, les unités de l’Overlord n’utilisent cette compétence que si le scénario indique comment les utiliser.\nEN MODE VERSUS, l’usage de cette compétence ajoute 1 succès à sa puissance de défense contre les Attaques au corps-à-corps."
         },
         "spell_caster": {
             "title": "Lanceur de sort",
-            "text": "Le personnage est capable d'utiliser les cartes Sorts à sa disposition, en leur allouant les gemmes d'énergie requises. Lorsqu'un personnage perd la compétence (du fait de son encombrement par exemple), les sorts déjà actifs le restent jusqu'à ce qu'ils s'épuisent comme décrit par le sort."
+            "text": "Vous pouvez utiliser les cartes Sort en votre possession. Si vous perdez cette compétence (du fait de votre Encombrement, par exemple), les sorts déjà actifs le restent jusqu’à leur durée indiquée.",
+            "clarification": "EN MODE SOLO/COOP, les unités de l’Overlord n’utilisent cette compétence que si le scénario indique comment les utiliser. En effet, certains scénarios indiquent dans leurs règles comment une unité de l’Overlord peut lancer un sort."
+            
         }
     }
 }

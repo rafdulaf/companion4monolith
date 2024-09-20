@@ -44,6 +44,14 @@
             "title": "Ricompense \"Conqueror\" (2020)",
             "short": "Conqueror Strech goals"
         },
+        "red-nails": {
+            "title": "Chiodi Rossi",
+            "short": "Chiodi Rossi"
+        },
+        "versus-mode": {
+            "title": "Modalità Versus",
+            "short": "Modalità Versus"
+        },
 
         "stygia": {
             "title": "Stygia",
@@ -65,7 +73,10 @@
             "title": "Racconti della Fratellanza Rossa",
             "short": "Fratellanza Rossa"
         },
-
+        "worms-earth": {
+            "title": "Vermi della Terra",
+            "short": "Vermi della Terra"
+        },
         "crossbowmen": {
             "title": "Balestrieri",
             "short": "Balestrieri"
@@ -113,7 +124,7 @@
 
         "campaignbook": {
             "title": "Campagna - Il Diavolo di ferro",
-            "short": "Campagna"
+            "short": "Diavolo di ferro"
         }, 
         "setbook": {
             "title": "Libro di Set",
@@ -135,6 +146,10 @@
         "xcbox": {
             "title": "Xavier Colette Box",
             "short": "Xavier Colette Box"
+        },
+        "fbox": {
+            "title": "Frazetta Box",
+            "short": "Frazetta Box"
         },
 
         "doorpack": {

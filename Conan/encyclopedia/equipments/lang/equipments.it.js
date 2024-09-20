@@ -8,7 +8,9 @@ EncyclopediaEquipments._i18n = {
     'fromAnd': "e",
     'card': "copia",
     'cards': "copie",
-    'skill': "Abilità:"
+    'clarification': "Chiarificazione:",
+    'skill': "Abilità:",
+    'tokensUsed': "Usa il segnalino :"
 };
 
 EncyclopediaEquipments._facets = {

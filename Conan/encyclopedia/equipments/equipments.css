@@ -43,3 +43,40 @@
 #encyclopedia-equipment-wrapper a[data-count='1']::after {
     content: none;
 }
+
+.equipmentdetails .from,
+.equipmentdetails .clarification {
+    margin-bottom: 10px;
+}
+
+.equipmentdetails .tokens .othertoken {
+    display: inline-block;
+    vertical-align: top;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    position: relative;
+    margin: 2px;
+    background-color: #dfdfdf;
+}
+
+.equipmentdetails .tokens .othertoken img {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.equipmentdetails .tokens .othertoken .name {
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+    right: 0;
+    text-align: center;
+    font-family: 'Primary';
+    font-size: 16px;
+    background-color: rgba(0,0,0,0.3);
+    color: #fff;
+}

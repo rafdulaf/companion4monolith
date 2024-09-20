@@ -20,141 +20,160 @@
     "list": {
         "reach": {
             "title": "Reach",
-            "text": "This character can attack a character in an adjacent area with a line of sight, with a Melee Attack if there is no obstacle (wall, door, bar, flap, etc.) between the characters’ areas.",
-            "clarification": "Reach requires units be on the same level. Connecting areas like stairs or the Fortress rock slides are considered to be at both the higher and lower levels. Attacking a unit at a different level, however, requires a Ranged Attack or Spel\nThe only time Reach incurs an elevation bonus is if the special rules are used for the Inn game board."
+            "text": "You can perform a Melee Attack in an adjacent area in your line of sight if there is no obstacle (wall, door, bar, flap, etc.).",
+            "clarification": "Reach requires units be on the same level. Connecting areas like stairs or the Fortress rock slides are considered to be at both the higher and lower levels. Attacking a unit at a different level, however, requires a Ranged Attack or Spell.\nThe only time Reach incurs an elevation bonus is if the special rules are used for the Inn game board."
         },
         "circular_strike": {
             "title": "Circular Strike",
-            "text": "When this character kills an enemy character with a 2-handed Melee Attack, another enemy character in the same area suffers the excess damage from the attack (if that character is killed, repeat the process). The attacker decides the order in which damage is dealt to defending enemies. Resolve the attack normally (determining attack power, defense power, etc.) on one enemy before proceeding with the next one if there is still damage left to be dealt.",
-            "clarification": "If someone has also Precision Strike, The player must choose if they are making a Precision Strike or a Circular Strike before they roll."
+            "text": "When you kill an enemy unit with a Melee Attack using a 2-handed weapon (i.e. Encumbrance value 3+), the excess damage is dealt to another enemy of your choice in the same area. If that unit is killed, repeat the process. Resolve each attack normally before proceeding with the next one.",
+            "clarification": "If you have both Circular Strike and Precision Strike skills, you must choose which one you use before attacking.\nIN VERSUS MODE, the weapon condition does not apply, and the unit can always use this skill."
         },
         "ambidextrous": {
             "title": "Ambidextrous",
-            "text": "When this character performs a Melee Attack, the character can choose 2 of their 1-handed weapon cards to attack with. Cannot be used to perform a Guard action."
+            "text": "You can perform a Melee Attack with two 1-handed weapons (i.e. Encumbrance values 2 or less) and add their bonuses. Cannot be used to perform a Guard action.",
+            "clarification": "IN VERSUS MODE, you may reroll 1 attack die for free."
         },
         "constriction": {
             "title": "Constriction",
-            "text": "When this character's attack power is determined, if any die shows 2 or more symbols, move the defender’s model close to the attacker’s one so their bases touch. As long as they remain in the same area, the defender treats the attacker as thought the attacker has Blocking. A character with Evasive ignores Constriction’s Blocking effect, but not the damage from the attack.",
-            "clarification": "If a unit has Constriction and Reach, Constriction can possibly move the target from one area to another. The movement from Constriction happens first. Thus, an Allied unit with Bodyguard or Support would already need to be in the attacker’s area for the skill’s effects to apply."
+            "text": "When you attack, if you roll 2 or more successes on any die, move your target towards you, so that the bases of both miniatures touch. As long as you remain in the same area, the target considers you to have the Blocking skill. A unit with Evasive ignores Constriction’s Blocking effect, but not the damage from the attack.",
+            "clarification": " If you have both Constriction and Reach skills, first move the target into your area, then resolve the attack."
         },
         "precision_strike": {
             "title": "Precision strike",
-            "text": "When a character with this skill performs a Melee Attack, they automatically reduce the defender’s defense power by 1.",
-            "clarification": "If someone has also Circular Strike, The player must choose if they are making a Precision Strike or a Circular Strike before they roll."
+            "text": "When you perform a Melee Attack, your target’s defense power is decreased by 1.",
+            "clarification": "If you have both Precision Strike and Circular Strike skills, you must choose which one you use before attacking."
         },
         "attack_from_beyond": {
             "title": "Attack from Beyond",
-            "text": "When his character dies, before the model is removed from the board, the character may perform a free unarmed Melee Attack, rolling {dice_red}{dice_red}{dice_red} instead of their normal dice (the character ignores penalties from unarmed attacks and cannot benefit from Melee Attack bonuses from weapons)."
+            "text": "When you die, you can perform one last free Melee Attack; roll {dice_red}{dice_red}{dice_red}. The weapon bonus and unarmed attack penalty do not apply.",
+            "clarification": "You can target any unit within melee range.\nIN VERSUS MODE, the attack is {dice_yellow}{dice_yellow}."
         },
         "counterattack": {
             "title": "Counterattack",
-            "text": "When a character attacks this character with a Melee Attack, after the attack is resolved (whether damage was dealt or not), this character (if still alive) may immediately counterattack that character with a free unarmed Melee Attack, rolling {dice_red} instead of their normal die (the character ignores penalties from unarmed attacks and cannot benefit from Melee Attack bonuses from weapons)."
+            "text": "After you’ve survived a Melee Attack (whether damage was dealt or not), you can immediately counterattack your attacker with a free Melee Attack; roll {dice_red}. The weapon bonus and unarmed attack penalty do not apply.",
+            "clarification": "You cannot counterattack a counterattack.\nIN SOLO/COOP MODE, for Overlord units, this skill works as in the Adventure Mode rules. For Heroes who possess this skill, they may only use it once per Overlord’s turn."
         },
         "elite_shooter": {
             "title": "Elite Shooter",
-            "text": "This character’s Ranged Attacks are not affected by hindering and ignore Protected."
+            "text": "When you perform a Ranged Attack, you are not affected by hindering. You also ignore your target’s Protected skill."
         },
         "precision_shot": {
             "title": "Precision Shot",
-            "text": "When this character performs a Ranged Attack, the defender’s armor value is reduced by 1 for that attack."
+            "text": "When you perform a Ranged Attack, your target’s defense power is decreased by 1."
         },
         "blocking": {
             "title": "Blocking",
-            "text": "Enemy characters without Evasive cannot move out of this character's area."
+            "text": "Enemy units cannot move out of your area, except those with the Evasive, Flying, or Intangible skill.",
+            "clarification": "IN SOLO/COOP MODE, for Overlord units, this skill works as in the Adventure Mode rules. For balancing purposes, a Hero who possesses this skill may not use it in this game mode."
         },
         "wall_wrecker": {
             "title": "Wall Wrecker",
-            "text": "This character can spend 2 movement points to move across a wooden wall or door from one area to an adjacent area, and place a \"Wall Wrecker\" token on that obstacle. Then they immediately move to the other side of the wall they just wrecked. From now on, the two areas are adjacent, there is no penalty for moving from one to the other, and they have line of sight on each other."
+            "text": "You can move across wooden walls and doors. Move to the other side of the wall, then place a Wall Wrecker token on it. The cost of this movement is increased by 2 movement points. There is now a line of sight between the two areas and there is no penalty for moving from one to the other.",
+            "clarification": "Stone walls cannot be wrecked.\nIN SOLO/COOP MODE, Overlord units only use this skill when it allows them to reach the Target Hero more easily. If using this skill allows them to avoid any movement or attack restrictions imposed by non-Target Heroes, or gets them to the Target Hero’s area (or an area from which they can attack the Target Hero), they will use this skill. Otherwise, they will simply move to the Target Hero’s area for a Melee Attack or to the closest area from where they can make a Ranged Attack."
         },
         "evasive": {
             "title": "Evasive",
-            "text": "This character can move as if there were no enemy characters in the character's area."
+            "text": "You can move as if there were no enemy units in your area (thus ignoring the Blocking skill)."
         },
         "swimming": {
             "title": "Swimming",
-            "text": "This character can move into water areas. Moving out of a water area cost 1 extra movement point."
+            "text": "You can move into water areas. Moving out of a water area costs 1 extra movement point.",
+            "clarification": "IN SOLO/COOP MODE, Overlord units only use this skill when it allows them to reach the Target Hero more easily. If using this skill allows them to avoid any movement or attack restrictions imposed by non-Target Heroes, or gets them to the Target Hero’s area (or an area from which they can attack the Target Hero), they will use this skill. Otherwise, they will simply move to the Target Hero’s area for a Melee Attack or to the closest area from where they can make a Ranged Attack."
         },
         "intangible": {
             "title": "Intangible",
-            "text": "This character can spend 1 movement point to move across an obstacle from 1 area to an adjacent area. This character's movement is not affected by hindering."
+            "text": "You can move through an obstacle (wall, door, flap, etc.) by spending movement points as though crossing a border. This movement is not affected by hindering, the Blocking skill, or elevation levels.",
+            "clarification": "IN SOLO/COOP MODE, Overlord units only use this skill when it allows them to reach the Target Hero more easily. If using this skill allows them to avoid any movement or attack restrictions imposed by non-Target Heroes, or gets them to the Target Hero’s area (or an area from which they can attack the Target Hero), they will use this skill. Otherwise, they will simply move to the Target Hero’s area for a Melee Attack or to the closest area from where they can make a Ranged Attack."
         },
         "web_projection": {
             "title": "Web Projection",
-            "text": "Instead of their normal attack, this character can perform a Ranged Attack, rolling {dice_orange}{dice_orange}{dice_orange} instead of their normal die. If the attack power is higher than the defense power, the defender places a web token on their model and suffers no damage. A character with a web token cannot move, but can spend 4 movement points to discard the token.",
-            "clarification": "If a unit doesn’t have enough movement points to escape because they have been poisoned, a hero may escape by spending all of their free movement points and all points up to their exertion limit.\n In Adventure Mode, if an Overlord tile is caught in a web (by use of the Net item), the Overlord may use the unit’s free movement points and gems to reach the 4 points to escape, even if the unit would not normally be able to reach 4 movement points.\nIn Solo/Coop Mode, the Overlord tile simply uses all free movement points to escape."
+            "text": "Instead of attacking normally, you can project a web onto your target. To do so, perform a Ranged Attack; roll {dice_orange}{dice_orange}{dice_orange}. If the attack power is higher than the defense power, the target places a Web token on their miniature and suffers no damage. The target cannot move, and must spend 4 movement points in one turn to discard the token.",
+            "clarification": "If a Hero does not have enough movement points to discard a Web token (for any reason), the Hero may spend all their base movement points and pay for extra points up to their exertion limit. An Overlord unit may do the same to reach the 4 points required, even if the unit would not normally be able to reach 4 points.\nIN SOLO/COOP MODE, an Overlord unit simply uses all their base movement points to escape.\nIN SOLO/COOP MODE, Overlord units will use this skill whenever possible, unless the unit is affected by hindering."
         },
         "feline_grace": {
             "title": "Feline Grace",
-            "text": "Moving cost this character 1 fewer movement point if the movement is affected by hindering."
+            "text": "When you move out of an area, decrease the penalty by 1 movement point if the movement is affected by hindering."
         },
         "leap": {
             "title": "Leap",
-            "text": "This character can leap over areas defined by the scenario. The character rolls {dice_red}, the leap is successful if the die shows symbols equal to or higher than the leap area's difficulty. Leaping costs 1 movement point per crossed area border. For example, when leaping from one ship to another, a character must spend 2 movement points to leap. Leaping is not affected by hindering."
+            "text": "You can leap over areas specified in the scenario. Roll {dice_red}. If the number of successes rolled is equal to or higher than the leap area’s difficulty, the leap is successful. Spend 1 movement point per crossed area border. Leaping is not affected by hindering.",
+            "clarification": "IN SOLO/COOP MODE, Overlord units only use this skill if the scenario gives rules for doing so."
         },
         "flying": {
             "title": "Flying",
-            "text": "This character can fly over the elements of the scenery. Flight ignores the movement contraints and penalties of the terrain, and is not affected by hindering."
+            "text": "You can fly over the elements of the scenery. This movement is not affected by the scenery constraints or penalties, hindering, the Blocking skill, or elevation levels.",
+            "clarification": "IN SOLO/COOP MODE, Overlord units only use this skill when it allows them to reach the Target Hero more easily. If using this skill allows them to avoid any movement or attack restrictions imposed by non-Target Heroes, or gets them to the Target Hero’s area (or an area from which they can attack the Target Hero), they will use this skill. Otherwise, they will simply move to the Target Hero’s area for a Melee Attack or to the closest area from where they can make a Ranged Attack."
         },
         "climb": {
             "title": "Climb",
-            "text": "This character can move across borders of areas that require this skill, paying the extra movement cost defined by the scenario."
+            "text": "You can move across area borders that require this skill.",
+            "clarification": "IN SOLO/COOP MODE, Overlord units only use this skill if the scenario gives rules for doing so."
         },
         "alchemy": {
             "title": "Alchemy",
-            "text": "This skill's effect is defined by the scenario."
+            "text": "This skill’s effect is specified in the scenario."
         },
         "leadership": {
             "title": "Leadership",
-            "text": "This hero can move 1 gem from their Reserve zone to their Fatigue zone to activate an ally. Activated allies move and attack like units. Each ally can be activated only once per turn."
+            "text": "You can activate an Ally miniature by moving 1 gem from your Reserve zone to your Fatigue zone. Activated Allies move and attack like Overlord units. Each Ally can be activated only once per turn.",
+            "clarification": "IN SOLO/COOP MODE, Heroes who possess this skill may use it normally. Note: Overlord units do not target allies unless they cannot reach a Hero for a Melee or Ranged Attack.\nIN VERSUS MODE, the next tile activated this turn by the player controlling this unit costs 1 less gem."
         },
         "concentration": {
             "title": "Concentration",
-            "text": "This character's dice rolls are not affected by hindering."
+            "text": "Your dice rolls are not affected by hindering."
         },
         "lock_picking": {
             "title": "Lock-picking",
-            "text": "This character can rolls an extra {dice_red} when picking a lock."
+            "text": "When you perform a complex Manipulation to pick a lock (door, chest, etc.), you roll an extra {dice_red}."
         },
         "fascination": {
             "title": "Fascination",
-            "text": "A character with this skill cannot be attacked by another character unless that character has been previously attacked by the character with Fascination.",
-            "clarification": "A unit cannot target, even with a spell, an enemy unit with Fascination for any reason until they attack the unit.\nUnless the scenario dictates otherwise, characters with Fascination can be damaged with area attacks."
+            "text": "You cannot be attacked by another unit, for any reason, unless you have first attacked it. You can still suffer damage from area attacks.",
+            "clarification": "A unit cannot target, even with a spell, an enemy unit with Fascination for any reason until they attack the unit.\nUnless the scenario dictates otherwise, characters with Fascination can be damaged with area attacks.\nIN SOLO/COOP MODE, Overlord units only use this skill if the scenario outlines how they are to be used."
         },
         "horror": {
             "title": "Horror",
-            "text": "The exertion limit of Melee Attack, Ranged Attack, Move and Manipulation actions of enemy characters in this character's area is 2."
+            "text": "Enemy units in your area have their exertion limits capped at 2, for their Melee Attack, Ranged Attack, Move and Manipulation spaces.",
+            "clarification": "IN VERSUS MODE, you may force enemies in the same area to reroll 1 attack die. The result can not be rerolled."
         },
         "jinx": {
             "title": "Jinx",
-            "text": "Reroll actions and free rerolls are not allowed in the area occupied by an enemy with this skill."
+            "text": "Enemy units in your area cannot perform any reroll (Reroll action or free reroll).",
+            "clarification": "IN SOLO/COOP MODE, For Overlord units, this skill works as in the Adventure Mode rules. Heroes who possess this skill may use it normally, but it may create a significant advantage. Use it at the players’ discretion."
         },
         "poison": {
             "title": "Poison",
-            "text": "This skill's effect is defined by the scenario."
+            "text": "This skill’s effect is specified in the scenario.",
+            "clarification": "IN SOLO/COOP MODE, unless a scenario defines Poison’s effects, use these rules: When a unit with Poison attacks a Hero, instead of suffering damage, the Hero must place a number of Poison tokens equal to the amount of damage either on the Melee Attack space or the Move space of their Hero sheet. Each Poison token on an action space reduces by 1 the exertion limit of that action. When both exertion limits are reduced to zero, that Hero immediately dies. If additional Poison tokens are needed, you can use any other token to represent them.\nIN VERSUS MODE, Instead of inflicting damage, you may choose to remove the base movement value of the target. In this case, lay the target’s miniature down. The miniature can still be attacked and defend itself. During the target’s next activation, stand up its miniature and the target has a base movement value of zero."
         },
         "support": {
             "title": "Support",
-            "text": "This skill allows friendly characters in the same zone as this character to reroll a single die for free, each time they perform an action, even if that die has already been rerolled (exception to the rule on page 22)."
+            "text": "Friendly units in your area can reroll a single die for free, each time they perform an action, even if that die has already been rerolled for free.",
+            "clarification": "IN SOLO/COOP MODE, for Overlord units, this skill works the same as the reroll rules and works in addition to any reroll symbols on the tile’s attack value(s). For the Heroes, it works as in the Adventure Mode rules."
         },
         "sacrifice": {
             "title": "Sacrifice",
-            "text": "When a friendly character in this character's area is attacked, before the die are rolled, this character may choose to be attacked instead. This character cannot Guard for that defense and can only use their Armor. That character suffers any damage from the attack to prevent the character who was initially attacked from suffering damage."
+            "text": "When a friendly unit in your area is attacked, before the dice are rolled, you may choose to be attacked instead. You can use your Armor, but cannot Guard.",
+            "clarification": "IN SOLO/COOP MODE, Overlord units only use this skill if the scenario outlines how they are to be used."
         },
         "protected": {
             "title": "Protected",
-            "text": "This character can be attacked only with area attacks if there is a friendly character without Protected in their area. Two or more characters with this skill cannot protect each other."
+            "text": "You cannot be attacked if there is one or more friendly units in your area who do not also have the Protected skill. You can still suffer damage from area attacks.",
+            "clarification": "IN SOLO/COOP MODE, for Overlord units, this skill works as in the Adventure Mode rules. For balancing purposes, a Hero who possesses this skill may not use it in this game mode."
         },
         "untouchable": {
             "title": "Untouchable",
-            "text": "A character with this skill ignores the first rolled symbol when defending against a Ranged Attack."
+            "text": "When a Ranged Attack is performed against you, your defense power is increased by 1."
         },
         "bodyguard": {
             "title": "Bodyguard",
-            "text": "When a friendly character in this character's area defends, this character can parry (i.e. use an equipment card to defend against that attack, like a shield) instead of that character's Guard action, adding the symbols shown on the dice to the character defense power. They cannot dodge (see page 11) to defend a friendly character. Any damage is dealt to the character who was initially attacked, not the character using Bodyguard."
+            "text": "When a friendly unit in your area is attacked, you can parry (i.e. perform a Guard action with a weapon or a shield) instead of that unit. Add the successes rolled to that unit’s Armor. When using this skill, you replace the targeted unit’s Guard action, but not their Armor, and they suffer any damage.",
+            "clarification": "You cannot dodge instead of the targeted unit.\nIN SOLO/COOP MODE, Overlord units only use this skill if the scenario outlines how they are to be used.\nIN VERSUS MODE, using this skill adds 1 success to their defense power against Melee Attacks."
         },
         "spell_caster": {
             "title": "Spell Caster",
-            "text": "This character can have and cast spells. Whenever the character loses the skill (because of encumbrance for example), any active spell remain active for their specified duration."
+            "text": "You can use the Spell cards in your possession. If you lose this skill (because of Encumbrance for example), any active spells remain active for their specified duration.",
+            "clarification": "IN SOLO/COOP MODE, Overlord units only use this skill if the scenario outlines how they are to be used. Indeed, some scenarios provide rules for how an Overlord unit must cast a spell."
         }
     }
 }

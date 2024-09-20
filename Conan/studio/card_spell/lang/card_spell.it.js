@@ -8,6 +8,9 @@ CardSpell._i18n = {
 
     'name': "Nome",
     'namePh': "?",
+    'type': "Tipologia",
+    'typeNormal': "Normale",
+    'typeVersus': "Versus",
     'text': "Effetto",
     'textPh': "?",
     'textHelp': "Per inserire queste immagini, usa: {dice_yellow}, {dice_orange}, {dice_red}, {dice_yellow_reroll}, {dice_orange_reroll}, {dice_red_reroll}, {gem_blue} o {gem_red}.",

@@ -5,7 +5,8 @@ EncyclopediaTokens._i18n = {
     'token': "copy",
     'tokens': "copies",
     'skills': "Used by skill:",
-    'spells': "Used by the spell:"
+    'spells': "Used by the spell:",
+    'equipments': "Used by the asset:"
 };
 
 
@@ -26,9 +27,10 @@ EncyclopediaTokens._facets = {
     'usage': {
         'label': "Misc.",
         'values': {
-            'model': { 'label': "Model" },
+            'model': { 'label': "Miniature" },
             'skill': { 'label': "Skill" },
-            'spell': { 'label': "Spell" }
+            'spell': { 'label': "Spell" },
+            'equipment': { 'label': "Asset" }
         }
     }
 };
