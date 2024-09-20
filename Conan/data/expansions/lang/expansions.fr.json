@@ -44,6 +44,14 @@
             "title": "Récompenses \"Conquérant\" (2020)",
             "short": "Réc. Conqueror"
         },
+        "red-nails": {
+            "title": "Les Clous Rouges",
+            "short": "Clous Rouges"
+        },
+        "versus-mode": {
+            "title": "Mode Versus",
+            "short": "Mode Versus"
+        },
 
         "stygia": {
             "title": "Stygie",
@@ -64,6 +72,10 @@
         "red-brotherhood": {
             "title": "Contes de la Fraternité Rouge",
             "short": "Fraternité Rouge"
+        },
+        "worms-earth": {
+            "title": "Les Vers de la Terre",
+            "short": "Vers de Terre"
         },
 
         "crossbowmen": {
@@ -119,10 +131,6 @@
             "title": "Livre de Set",
             "short": "Livre de Set"
         },
-        "tomeofskelos": {
-            "title": "Tome de Skelos",
-            "short": "Tome de Skelos"
-        },
 
         "bbox": {
             "title": "Brom Box",
@@ -135,6 +143,10 @@
         "xcbox": {
             "title": "Xavier Colette Box",
             "short": "Xavier Colette Box"
+        },
+        "fbox": {
+            "title": "Frazetta Box",
+            "short": "Frazetta Box"
         },
 
         "doorpack": {

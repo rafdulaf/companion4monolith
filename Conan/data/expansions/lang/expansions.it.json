@@ -44,6 +44,14 @@
             "title": "Ricompense \"Conqueror\" (2020)",
             "short": "Conqueror Strech goals"
         },
+        "red-nails": {
+            "title": "TODOTRANSLATERed Nails",
+            "short": "TODOTRANSLATERed Nails"
+        },
+        "versus-mode": {
+            "title": "TODOTRANSLATEVersus Mode",
+            "short": "TODOTRANSLATEVersus Mode"
+        },
 
         "stygia": {
             "title": "Stygia",
@@ -65,7 +73,10 @@
             "title": "Racconti della Fratellanza Rossa",
             "short": "Fratellanza Rossa"
         },
-
+        "worms-earth": {
+            "title": "TODOTRANSLATEWorms of the Earth",
+            "short": "TODOTRANSLATEWorms of Earth"
+        },
         "crossbowmen": {
             "title": "Balestrieri",
             "short": "Balestrieri"
@@ -119,10 +130,6 @@
             "title": "Libro di Set",
             "short": "Libro di Set"
         },
-        "tomeofskelos": {
-            "title": "Libro di Skelos",
-            "short": "Libro di Skelos"
-        },
 
         "bbox": {
             "title": "Brom Box",
@@ -135,6 +142,10 @@
         "xcbox": {
             "title": "Xavier Colette Box",
             "short": "Xavier Colette Box"
+        },
+        "fbox": {
+            "title": "Frazetta Box",
+            "short": "Frazetta Box"
         },
 
         "doorpack": {
