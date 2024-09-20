@@ -3426,6 +3426,38 @@
                     "level": 2
                 }
             }
+        },
+        
+        {
+            "id": "Jungle",
+            "description": {
+                "version": "1.0",
+                "origins": ["red-nails"],
+                "copyright": "Monolith",
+                "rules": [
+                ],
+                "thumbnail": "data/maps/data/Jungle/thumb.webp",
+                "board": "data/maps/data/Jungle/board.webp",
+                "losFile": "data/maps/data/Jungle/los-v1.webp"
+            },
+            "size": [1062, 913],
+            "zones": {}
+        },
+        
+        {
+            "id": "Xuchotl",
+            "description": {
+                "version": "1.0",
+                "origins": ["red-nails"],
+                "copyright": "Monolith",
+                "rules": [
+                ],
+                "thumbnail": "data/maps/data/Xuchotl/thumb.webp",
+                "board": "data/maps/data/Xuchotl/board.webp",
+                "losFile": "data/maps/data/Xuchotl/los-v1.webp"
+            },
+            "size": [1062, 913],
+            "zones": {}
         }
     ],
 
