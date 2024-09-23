@@ -3458,12 +3458,45 @@
             },
             "size": [1062, 913],
             "zones": {}
+        },
+        
+        {
+            "id": "Fort_Tuscelan",
+            "description": {
+                "version": "1.0",
+                "origins": ["versus-mode"],
+                "copyright": "Monolith",
+                "rules": [
+                ],
+                "thumbnail": "data/maps/data/Fort_Tuscelan/thumb.webp",
+                "board": "data/maps/data/Fort_Tuscelan/board.webp",
+                "losFile": "data/maps/data/Fort_Tuscelan/los-v1.webp"
+            },
+            "size": [1062, 913],
+            "zones": {}
+        },
+        
+        {
+            "id": "Catacombs",
+            "description": {
+                "version": "1.0",
+                "origins": ["versus-mode"],
+                "copyright": "Monolith",
+                "rules": [
+                ],
+                "thumbnail": "data/maps/data/Catacombs/thumb.webp",
+                "board": "data/maps/data/Catacombs/board.webp",
+                "losFile": "data/maps/data/Catacombs/los-v1.webp"
+            },
+            "size": [1062, 913],
+            "zones": {}
         }
     ],
 
     "compositions": [
         {
             "id": "Chebek",
+            "insertAfter": "Temple",
             "description": {
                 "version": "1.0",
                 "rules": [
@@ -3495,6 +3528,7 @@
         
         {
             "id": "Galley",
+            "insertAfter": "Chebek",
             "description": {
                 "version": "1.0",
                 "rules": [
@@ -3526,6 +3560,7 @@
 
         {
             "id": "Chebek_Galley",
+            "insertAfter": "Galley",
             "description": {
                 "version": "1.0",
                 "rules": [
