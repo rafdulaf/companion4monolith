@@ -3436,7 +3436,15 @@
                 "copyright": "Monolith",
                 "rules": [
                     {
-                        "coordinates": [[0, 0]]
+                        "coordinates": [[19.64, 7.69], [19.38, 20.4], [19, 36.16], [6.61, 67.14]]
+                    }, {
+                        "coordinates": [[15.38, 54.94]]
+                    }, {
+                        "coordinates": [[67.13, 9.68], [85.75, 66.25]]
+                    }, {
+                        "coordinates": [[74.76, 7.02], [93.32, 62.78]]
+                    }, {
+                        "coordinates": [[77.94, 4.14], [79.97, 23.29], [97.01, 29.43], [96.94, 53.24]]
                     }
                 ],
                 "thumbnail": "data/maps/data/Jungle/thumb.webp",
@@ -3684,7 +3692,13 @@
                 "copyright": "Monolith",
                 "rules": [
                     {
-                        "coordinates": [[0, 0]]
+                        "coordinates": [[13.85, 88.36], [33.5, 88.07], [88.87, 50.21]]
+                    }, {
+                        "coordinates": [[26.25, 29.72], [26.31, 69.58]]
+                    }, {
+                        "coordinates": [[59.88, 89.62]]
+                    }, {
+                        "coordinates": []
                     }
                 ],
                 "thumbnail": "data/maps/data/Xuchotl/thumb.webp",
