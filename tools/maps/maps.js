@@ -501,29 +501,21 @@ function add()
         alert("Zone '" + action + "' already exists")
         return
     }
-    
-    var linksToAll = [];
-    for (let z in zones)
-	{
-    	let zone = zones[z];
-	    if (zone.centers && zone.centers.length > 0)
-    	{
-    	    for (let c = 0; c < zone.centers.length; c++)
-	    	{
-    	    	linksToAll.push("1#" + z + "#" + (c+1));
-	    	}
-    	}
-	    else
-	    {
-	    	linksToAll.push("1#" + z + "#0");
-	    }
-	}
-    
+
+    var action2 = prompt("Enter new zone area points [x, y], [x, y], [x, y], [x, y], [x, y]...")
+    if (!action2) return;
+
+    var action3 = prompt("Enter new zone area centers [x, y], [x, y]")
+    if (!action3) return;
+
+    var action4 = prompt("Enter new zone area level", 0)
+    if (!action4) return;
+        
     zones[action] = {
-        "area": [],
-        "centers": [],
-        "links": linksToAll,
-        "level": 0
+        "area": JSON.parse("[" + action2 + "]"),
+        "centers": JSON.parse("[" + action3 + "]"),
+        "links": [],
+        "level": parseInt(action4)
     }
         
     $("#zones")[0].value = stringify(zones);
