@@ -741,6 +741,25 @@ function transform()
     displayZones();
 }
 
+function _parseLink(s)
+{
+    let a = s.indexOf("(");
+    if (a == -1)
+    {
+        return {
+            name: s,
+            center: "1"
+        };
+    }
+    else
+    {
+        return {
+            name: s.substring(0, a),
+            center: s.substring(a + 1, s.length - 1)
+        };
+    }
+}
+
 function addLinks()
 {
     let zones;
@@ -752,29 +771,35 @@ function addLinks()
         throw e;
     }
 
-    var lines = prompt("Add lines of sight (ex: 1-2,1-3-4)");
+    var lines = prompt("Add lines of sight (ex: 1-2,1-3-4(2))");
     for (let line of lines.split(","))
     {
         line = line.trim();
         let zonesImplied = line.split("-");
         for (let zoneImplied of zonesImplied)
         {
-            if (!zones[zoneImplied])
+            let z = _parseLink(zoneImplied);
+            
+            if (!zones[z.name])
             {
-                alert("There is no zone " + zoneImplied);
-                throw new Error("There is no zone " + zoneImplied);
+                alert("There is no zone " + z.name);
+                throw new Error("There is no zone " + z.name);
             }
         }
         
         for (let zoneImplied of zonesImplied)
         {
+            let z = _parseLink(zoneImplied);
+            
             for (let zoneTarget of zonesImplied)
             {
-                let txt = "1#" + zoneTarget + "#1";
-                let index = zones[zoneImplied].links.indexOf(txt);
-                if (zoneImplied != zoneTarget && index == -1)
+                let z2 = _parseLink(zoneTarget);
+
+                let txt = z.center + "#" + z2.name + "#" + z2.center;
+                let index = zones[z.name].links.indexOf(txt);
+                if (z.name != z2.name && index == -1)
                 {
-                    zones[zoneImplied].links.push(txt);
+                    zones[z.name].links.push(txt);
                 }
             }
         }
@@ -795,29 +820,35 @@ function removeLinks()
         throw e;
     }
 
-    var lines = prompt("Remove lines of sight (ex: 1-2,1-3-4)");
+    var lines = prompt("Remove lines of sight (ex: 1-2,1-3-4(2))");
     for (let line of lines.split(","))
     {
         line = line.trim();
         let zonesImplied = line.split("-");
         for (let zoneImplied of zonesImplied)
         {
-            if (!zones[zoneImplied])
+            let z = _parseLink(zoneImplied);
+            
+            if (!zones[z.name])
             {
-                alert("There is no zone " + zoneImplied);
-                throw new Error("There is no zone " + zoneImplied);
+                alert("There is no zone " + z.name);
+                throw new Error("There is no zone " + z.name);
             }
         }
         
         for (let zoneImplied of zonesImplied)
         {
+            let z = _parseLink(zoneImplied);
+
             for (let zoneTarget of zonesImplied)
             {
-                let txt = "1#" + zoneTarget + "#1";
-                let index = zones[zoneImplied].links.indexOf(txt);
-                if (zoneImplied != zoneTarget && index != -1)
+                let z2 = _parseLink(zoneTarget);
+
+                let txt = z.center + "#" + z2.name + "#" + z2.center;
+                let index = zones[z.name].links.indexOf(txt);
+                if (z.name != z2.name && index != -1)
                 {
-                    zones[zoneImplied].links.splice(index, 1);
+                    zones[z.name].links.splice(index, 1);
                 }
             }
         }
