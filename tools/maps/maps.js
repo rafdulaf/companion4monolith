@@ -741,6 +741,92 @@ function transform()
     displayZones();
 }
 
+function addLinks()
+{
+    let zones;
+    try {
+        zones = JSON.parse($("#zones")[0].value)
+    }
+    catch (e) {
+        alert("Zones is not a correct json. Cannot apply any transformation.")
+        throw e;
+    }
+
+    var lines = prompt("Add lines of sight (ex: 1-2,1-3-4)");
+    for (let line of lines.split(","))
+    {
+        line = line.trim();
+        let zonesImplied = line.split("-");
+        for (let zoneImplied of zonesImplied)
+        {
+            if (!zones[zoneImplied])
+            {
+                alert("There is no zone " + zoneImplied);
+                throw new Error("There is no zone " + zoneImplied);
+            }
+        }
+        
+        for (let zoneImplied of zonesImplied)
+        {
+            for (let zoneTarget of zonesImplied)
+            {
+                let txt = "1#" + zoneTarget + "#1";
+                let index = zones[zoneImplied].links.indexOf(txt);
+                if (zoneImplied != zoneTarget && index == -1)
+                {
+                    zones[zoneImplied].links.push(txt);
+                }
+            }
+        }
+    }
+    
+    $("#zones")[0].value = stringify(zones);
+    displayZones();
+}
+
+function removeLinks()
+{
+    let zones;
+    try {
+        zones = JSON.parse($("#zones")[0].value)
+    }
+    catch (e) {
+        alert("Zones is not a correct json. Cannot apply any transformation.")
+        throw e;
+    }
+
+    var lines = prompt("Remove lines of sight (ex: 1-2,1-3-4)");
+    for (let line of lines.split(","))
+    {
+        line = line.trim();
+        let zonesImplied = line.split("-");
+        for (let zoneImplied of zonesImplied)
+        {
+            if (!zones[zoneImplied])
+            {
+                alert("There is no zone " + zoneImplied);
+                throw new Error("There is no zone " + zoneImplied);
+            }
+        }
+        
+        for (let zoneImplied of zonesImplied)
+        {
+            for (let zoneTarget of zonesImplied)
+            {
+                let txt = "1#" + zoneTarget + "#1";
+                let index = zones[zoneImplied].links.indexOf(txt);
+                if (zoneImplied != zoneTarget && index != -1)
+                {
+                    zones[zoneImplied].links.splice(index, 1);
+                }
+            }
+        }
+    }
+    
+    $("#zones")[0].value = stringify(zones);
+    displayZones();
+}
+
 function reverseLinks()
 {
     try {
