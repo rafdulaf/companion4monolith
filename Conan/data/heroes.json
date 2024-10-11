@@ -2467,6 +2467,41 @@
             "back": "blue",
             "model": "zelata-wanderer",
             "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "conan-free-companion",
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+            "class": [{"type": "warrior"}],
+
+            "gems": 11,
+            "encumbrance": [11, 8, 10],
+
+            "melee": { "dice": "red", "exertion": 5 },
+            "ranged": { "dice": "orange", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "2", "exertion": 4 },
+            "manipulation": { "dice": "orange", "exertion": 3 },
+
+            "skills": [
+                { "id": "climb", "exertion": 6 },
+                { "id": "swimming", "exertion": 6 },
+                { "id": "leap", "exertion": 8 },
+                { "id": "wall_wrecker" },
+                { "id": "leadership" },
+                { "id": "circular_strike" }
+            ],
+
+            "image": "data/heroes/img/conan-free-companion.webp",
+            "imageHD": "data/heroes/img/conan-free-companion_hd.webp",
+            "image_zoom": "90",
+            "image_location": { "x": "-15", "y": "50" },
+            "model": "conan-free-companion",
+            "origins": ["red-nails"]
         }
     ]
 }
