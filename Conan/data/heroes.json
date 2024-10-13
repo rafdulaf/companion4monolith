@@ -2502,6 +2502,41 @@
             "image_location": { "x": "-15", "y": "50" },
             "model": "conan-free-companion",
             "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "valeria-free-companion",
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+            "class": [{"type": "mercenary"}],
+
+            "gems": 10,
+            "encumbrance": [10, 6, 8],
+
+            "melee": { "dice": "orangereroll", "exertion": 4 },
+            "ranged": { "dice": "yellow", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "2", "exertion": 4 },
+            "manipulation": { "dice": "yellowreroll", "exertion": 3 },
+
+            "skills": [
+                { "id": "feline_grace", "exertion": 5 },
+                { "id": "swimming", "exertion": 5 },
+                { "id": "climb", "exertion": 5 },
+                { "id": "leap", "exertion": 5 },
+                { "id": "ambidextrous", "exertion": 6 },
+                { "id": "counterattack", "exertion": 7 }
+            ],
+
+            "image": "data/heroes/img/valeria-free-companion.webp",
+            "imageHD": "data/heroes/img/valeria-free-companion_hd.webp",
+            "image_zoom": "108",
+            "image_location": { "x": "5", "y": "44" },
+            "model": "valeria-free-companion",
+            "origins": ["red-nails"]
         }
     ]
 }
