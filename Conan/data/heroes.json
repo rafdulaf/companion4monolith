@@ -2537,6 +2537,67 @@
             "image_location": { "x": "5", "y": "44" },
             "model": "valeria-free-companion",
             "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "techotl",
+            "quote": null,
+            "class": [{"type": "rogue"}],
+
+            "gems": 10,
+            "encumbrance": [10, 8, 9],
+
+            "melee": { "dice": "red", "exertion": 3 },
+            "ranged": { "dice": "yellowreroll", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "3", "exertion": 3 },
+            "manipulation": { "dice": "red", "exertion": 3 },
+
+            "skills": [
+                { "id": "feline_grace", "exertion": 6 },
+                { "id": "untouchable", "exertion": 6 },
+                { "id": "leap", "exertion": 8 },
+                { "id": "climb", "exertion": 8 },
+                { "id": "leadership" },
+                { "id": "lock_picking" }
+            ],
+
+            "image": "data/heroes/img/techotl.webp",
+            "imageHD": "data/heroes/img/techotl_hd.webp",
+            "image_zoom": "107",
+            "image_location": { "x": "5", "y": "50" },
+            "model": "techotl",
+            "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "olmec",
+            "quote": null,
+            "class": [{"type": "warrior"}],
+
+            "gems": 11,
+            "encumbrance": [11, 8, 10],
+
+            "melee": { "dice": "red", "exertion": 4 },
+            "ranged": { "dice": "yellowreroll", "exertion": 3 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "2", "exertion": 4 },
+            "manipulation": { "dice": "orange", "exertion": 3 },
+
+            "skills": [
+                { "id": "climb", "exertion": 6 },
+                { "id": "wall_wrecker", "exertion": 8 },
+                { "id": "leap", "exertion": 8 },
+                { "id": "support" },
+                { "id": "leadership" }
+            ],
+
+            "image": "data/heroes/img/olmec.webp",
+            "imageHD": "data/heroes/img/olmec_hd.webp",
+            "image_zoom": "94",
+            "image_location": { "x": "3", "y": "48" },
+            "model": "olmec",
+            "origins": ["red-nails"]
         }
     ]
 }
