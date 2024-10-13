@@ -10,6 +10,8 @@ HeroSheet._i18n = {
     'namePh': "?",
     'subname': "Definizione",
     'subnamePh': "?",
+    'namesize': "Misurate",
+    'namesizePh': "?",
     'color': "Colore",
     'colorGray': "Grigia",
     'colorBlue': "Blu",

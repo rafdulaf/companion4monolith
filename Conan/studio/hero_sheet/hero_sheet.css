@@ -79,17 +79,18 @@
     position: absolute;
     font-size: 42%;
     font-family: 'Primary';
-    left: 1.5%;
+    left: 2.7%;
     top: 68%;
     color: #363131;
     transform: translate(-50%, -50%) rotate(-90deg) translate(50%, 50%);
     text-transform: uppercase;
+    max-width: 39%;
+    line-height: 0.4em;
 }
 .sheet.herosheet div.name span:before {
     content: " ";
 }
 .sheet.herosheet div.name span {
-    font-size: 60%;
     color: #565151;
 }
 
@@ -266,6 +267,27 @@
    text-align: left;
    width: 40%;
 }
+
+.dialog .sheet .field.namesize {
+    width: 25%;
+    margin-top: 0;
+    text-align: left;
+    margin-left: 57%;
+}
+.dialog .sheet .field input#hsnamesize {
+    width: 49px;
+    padding-right: 15px;
+    text-align: right;
+    padding-top: 8px;
+}
+.dialog .sheet .field.namesize:after {
+    position: relative;
+    left: -12px;
+    content: "%";
+    color: #000;
+}
+
+
 
 .dialog .sheet .field.gems {
     width: 34%;
@@ -547,6 +569,7 @@
     width: 49px;
     padding-right: 15px;
     text-align: right;
+    padding-top: 8px;
 }
 .dialog .sheet .field.imagelocation, .dialog .sheet .field.imagezoom
 { padding-right: 0; }
