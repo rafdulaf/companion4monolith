@@ -425,11 +425,34 @@
                 "origin": "Red Nails"
             }
         },
-        "techotl" :{
+        "techotl": {
             "name": "Techotl"
         },
-        "olmec" :{
+        "olmec": {
             "name": "Olmec"
+        },
+        "tascela": {
+            "name": "Tascela"
+        },
+        "tolkemec": {
+            "name": "Tolkemec"
+        },
+        "drusus": {
+            "name": "Drusus"
+        },
+        "ageera": {
+            "name": "Ageera",
+            "quote": {
+                "text": "Then go into Punt and find old Ageera, the witch-finder. Do not tell him flatly that Tananda had this deed done, but hint at it. » (...) The blacks gave back sullenly before her advance, and suddenly, from the devil house came a lean black figure. It was old Ageera, clad only in a loin cloth. Pointing his finger at Tananda, he yelled : “There she rides, she whose hands are dipped in blood ! She who murdered Amboola!",
+                "origin": "Untitled draft"
+            }
+        },
+        "conan-the-rogue": {
+            "name": "Conan The Rogue",
+            "quote": {
+                "text": "Arus saw a tall powerfully built youth, naked but for a loincloth, and sandals strapped high about his ankles. His skin was burned brown as by the suns of the wastelands, and Arus glanced nervously at the broad shoulders, massive chest and heavy arms. A single look at the moody, broad-browed features told the watchman that the man was no Nemedian. From under a mop of unruly black hair smoldered a pair of dangerous blue eyes. A long sword hung in a leather scabbard at his girdle.",
+                "origin": "The God in the Bowl"
+            }
         }
     }
 }

@@ -429,11 +429,34 @@
                 "origin": "Les Clous Rouges"
             }
         },
-        "techotl" :{
+        "techotl": {
             "name": "Techotl"
         },
-        "olmec" :{
+        "olmec": {
             "name": "Olmec"
+        },
+        "tascela": {
+            "name": "Tascela"
+        },
+        "tolkemec": {
+            "name": "Tolkemec"
+        },
+        "drusus": {
+            "name": "Drusus"
+        },
+        "ageera": {
+            "name": "Ageera",
+            "quote": {
+                "text": "Ensuite va dans Punt trouver le vieil Agara, l'inquisiteur. Ne lui dis pas de but en blanc que Tananda est à l'origine de cela, mais fais-le lui comprendre » (...) Les Noirs refluèrent en maugréant devant cette avance, et soudain une silhouette noire et décharnée sortit de la maison du diable. C'était le vieil Agara, vêtu seulement d'un pagne. Montrant Tananda du doigt, il hurla: - Elle ose venir ici, celle dont les mains sont rouges de sang ! Celle qui a assassiné Amboola !",
+                "origin": "Histoire inachevée – sans titre"
+            }
+        },
+        "conan-the-rogue": {
+            "name": "Conan Le Vaurien",
+            "quote": {
+                "text": "Arus vit un homme jeune, grand et puissamment bâti, nu à l'exception d'un pagne et de sandales lacées haut sur les chevilles. Sa peau était tannée comme s'il venait des régions désertiques du globe, et Arus se sentit mal à l'aise en voyant ses épaules larges, son torse massif et ses bras puissants. Un simple coup d'oeil sur ce visage renfrogné au front large lui suffit pour comprendre qu'il n'avait pas affaire à un Némédien. Sous une tignasse de cheveux noirs ébouriffés, deux yeux bleus menaçants couvaient, prêts à s'embraser. Une longue épée dans son fourreau de cuir pendait à son ceinturon.",
+                "origin": "Le Dieu dans l'Urne"
+            }
         }
     }
 }

@@ -415,8 +415,8 @@
             "name": "Conan",
             "subname": "TODOTRANSLATEFree Companion",
             "quote": {
-                "text": "Arus saw a tall powerfully built youth, naked but for a loincloth, and sandals strapped high about his ankles. His skin was burned brown as by the suns of the wastelands, and Arus glanced nervously at the broad shoulders, massive chest and heavy arms. A single look at the moody, broad-browed features told the watchman that the man was no Nemedian. From under a mop of unruly black hair smoldered a pair of dangerous blue eyes. A long sword hung in a leather scabbard at his girdle.",
-                "origin": "The God in the Bowl"
+                "text": "Arus lanciò un'occhiata nervosa alle ampie spalle, al torace massiccio e alle forti braccia. Una sola occhiata ai lineamenti severi e alle spesse sopracciglia gli bastò per capire che l'uomo non era un nemediano. Sotto il ciuffo arruffato di capelli neri covavano due pericolosi occhi azzurri. Una lunga spada, chiusa in un fodero di cuoio, gli pendeva dalla cintura.",
+                "origin": "Il Dio nell'urna"
             }
         },
         "valeria-free-companion": {
@@ -427,11 +427,31 @@
                 "origin": "Chiodi Rossi"
             }
         },
-        "techotl" :{
+        "techotl": {
             "name": "Techotl"
         },
-        "olmec" :{
+        "olmec": {
             "name": "Olmec"
+        },
+        "tascela": {
+            "name": "Tascela"
+        },
+        "tolkemec": {
+            "name": "Tolkemec"
+        },
+        "ageera": {
+            "name": "Ageera",
+            "quote": {
+                "text": "«Poi vai alla città esterna e trova il vecchio Ageera, lo stregone. Non dirgli apertamente che Tananda è stata la causa dell'accaduto, ma lascialo capire». (...) Poi, improvvisamente, dalla casa degli spiriti uscì una snella figura negra. Era il vecchio Ageera, lo stregone, vestito solo di un pezzo di stoffa attorno alle reni. Indicando Tananda con un dito, gridò: — Eccola lì a cavallo, colei le cui mani grondano sangue! Colei che ha assassinato Amboola!",
+                "origin": "Il Muso nel Buio"
+            }
+        },
+        "conan-the-rogue": {
+            "name": "TODOTRANSLATEConan The Rogue",
+            "quote": {
+                "text": "Arus lanciò un'occhiata nervosa alle ampie spalle, al torace massiccio e alle forti braccia. Una sola occhiata ai lineamenti severi e alle spesse sopracciglia gli bastò per capire che l'uomo non era un nemediano. Sotto il ciuffo arruffato di capelli neri covavano due pericolosi occhi azzurri. Una lunga spada, chiusa in un fodero di cuoio, gli pendeva dalla cintura.",
+                "origin": "Il Dio nell'urna"
+            }
         }
     }
 }

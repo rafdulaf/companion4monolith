@@ -1258,7 +1258,7 @@
             "image_zoom": "111",
             "image_location": { "x": "7", "y": "64" },
             "model": "spartan",
-            "origins": ["monolith-site"],
+            "origins": ["monolith-site", "red-nails"],
             "pdf": "https://the-overlord.com/index.php?/files/file/18-fiche-h%C3%A9ro-du-sparte-sans-nom/"
         },
 
@@ -2597,6 +2597,163 @@
             "image_zoom": "94",
             "image_location": { "x": "3", "y": "48" },
             "model": "olmec",
+            "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "tascela",
+            "quote": null,
+            "class": [{"type": "sorcerer"}],
+
+            "gems": 10,
+            "encumbrance": [9, 7, 9],
+
+            "melee": { "dice": "yellowreroll", "exertion": 4 },
+            "ranged": { "dice": "yellowreroll", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "3", "exertion": 3 },
+            "manipulation": { "dice": "orange", "exertion": 4 },
+
+            "skills": [
+                { "id": "concentration", "exertion": 5 },
+                { "id": "spell_caster", "exertion": 7 },
+                { "id": "protected", "exertion": 7 },
+                { "id": "leadership" }
+            ],
+
+            "image": "data/heroes/img/tascela.webp",
+            "imageHD": "data/heroes/img/tascela_hd.webp",
+            "image_zoom": "105",
+            "image_location": { "x": "3.5", "y": "48" },
+            "model": "tascela",
+            "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "tolkemec",
+            "quote": null,
+            "class": [{"type": "sorcerer", "not-recommanded": true}],
+
+            "gems": 9,
+            "encumbrance": [8, 5, 7],
+
+            "melee": { "dice": "yellow", "exertion": 4 },
+            "ranged": { "dice": "yellowreroll", "exertion": 3 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "2", "exertion": 2 },
+            "manipulation": { "dice": "orange", "exertion": 4 },
+
+            "skills": [
+                { "id": "climb", "exertion": 5 },
+                { "id": "concentration", "exertion": 6 },
+                { "id": "spell_caster" }
+            ],
+
+            "image": "data/heroes/img/tolkemec.webp",
+            "imageHD": "data/heroes/img/tolkemec_hd.webp",
+            "image_zoom": "100",
+            "image_location": { "x": "4", "y": "51" },
+            "model": "tolkemec",
+            "origins": ["red-nails"]
+        },
+
+
+        {
+            "id": "drusus",
+            "class": [{"type": "warrior"}],
+
+            "gems": 11,
+            "encumbrance": [11, 8, 10],
+
+            "melee": { "dice": "orange", "exertion": 6 },
+            "ranged": { "dice": "orange", "exertion": 3 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "2", "exertion": 4 },
+            "manipulation": { "dice": "yellowreroll", "exertion": 3 },
+
+            "skills": [
+                { "id": "leap", "exertion": 7 },
+                { "id": "climb", "exertion": 8 },
+                { "id": "precision_strike", "exertion": 8 },
+                { "id": "untouchable", "exertion": 8 },
+                { "id": "counterattack", "exertion": 9 }
+            ],
+
+            "image": "data/heroes/img/drusus.webp",
+            "imageHD": "data/heroes/img/drusus_hd.webp",
+            "image_zoom": "111",
+            "image_location": { "x": "-8.5", "y": "64" },
+            "model": "spartan",
+            "origins": ["monolith-site", "red-nails"],
+            "pdf": "https://the-overlord.com/index.php?/files/file/18-fiche-h%C3%A9ro-du-sparte-sans-nom/"
+        },
+
+        {
+            "id": "ageera",
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+            "class": [{"type": "warrior"}],
+
+            "gems": 11,
+            "encumbrance": [11, 8, 10],
+
+            "melee": { "dice": "red", "exertion": 5 },
+            "ranged": { "dice": "yellowreroll", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "2", "exertion": 4 },
+            "manipulation": { "dice": "orange", "exertion": 3 },
+
+            "skills": [
+                { "id": "climb", "exertion": 6 },
+                { "id": "untouchable", "exertion": 8 },
+                { "id": "leap", "exertion": 8 },
+                { "id": "wall_wrecker" },
+                { "id": "circular_strike" }
+            ],
+
+            "image": "data/heroes/img/ageera.webp",
+            "imageHD": "data/heroes/img/ageera_hd.webp",
+            "image_zoom": "100",
+            "image_location": { "x": "11", "y": "58" },
+            "model": "ageera",
+            "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "conan-the-rogue",
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+            "class": [{ "type": "rogue" }],
+
+            "gems": 10,
+            "encumbrance": [11, 8, 10],
+
+            "melee": { "dice": "orange", "exertion": 4 },
+            "ranged": { "dice": "orange", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "3", "exertion": 3 },
+            "manipulation": { "dice": "red", "exertion": 3 },
+
+            "skills": [
+                { "id": "feline_grace", "exertion": 6 },
+                { "id": "ambidextrous", "exertion": 7 },
+                { "id": "leap", "exertion": 7 },
+                { "id": "climb", "exertion": 7 },
+                { "id": "concentration" },
+                { "id": "lock_picking" }
+            ],
+
+            "image": "data/heroes/img/conan-the-rogue.webp",
+            "imageHD": "data/heroes/img/conan-the-rogue_hd.webp",
+            "image_zoom": "82",
+            "image_location": { "x": "8", "y": "52" },
+            "model": "conan-wanderer",
             "origins": ["red-nails"]
         }
     ]
