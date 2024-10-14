@@ -1720,7 +1720,7 @@
         {
             "id": "conan-free-companion",
             "thumb": "data/models/img/conan-free-companion_sd.webp",
-            "images": ["data/models/img/conan-free-companion_1.webp", "data/models/img/conan-free-companion_2.webp"],
+            "images": ["data/models/img/conan-free-companion_1.webp"],
             "sculptor": null,
             "paint": null,
             "type": "human",
