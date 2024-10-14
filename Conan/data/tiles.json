@@ -5556,6 +5556,49 @@
             "image_zoom": 95,
             "model": "xotalanc-men",
             "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "xotalanc-assassins",
+
+            "colors": ["green"],
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "both",
+            "dices": { "0": "orange", "1": "yellow", "2": "none", "3": "none" },
+            "dices2": { "0": "red", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "attack/precision_strike", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+
+            "quote": null,
+
+            "image": "data/tiles/img/xotalanc-assassins.webp",
+            "imageHD": "data/tiles/img/xotalanc-assassins_hd.webp",
+            "image_location": {"x":90, "y":68},
+            "image_zoom": 158,
+            "model": "xotalanc-women",
+            "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "xotalanc-huntresses",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "1",
+            "attacktype": "ranged",
+            "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
+            "skills": { "0": "attack/elite_shooter", "1": "attack/precision_shot", "2": "none", "3": "none" },
+            "reinforcement": "1",
+
+            "quote": null,
+
+            "image": "data/tiles/img/xotalanc-huntresses.webp",
+            "imageHD": "data/tiles/img/xotalanc-huntresses_hd.webp",
+            "image_location": {"x":50, "y":59},
+            "image_zoom": 107,
+            "model": "xotalanc-women",
+            "origins": ["red-nails"]
         }
     ]
 }
