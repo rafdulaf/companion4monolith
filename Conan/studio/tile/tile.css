@@ -426,23 +426,14 @@
    font-size: 55px;
 }
 
-.dialog .tile .field.attackdices input#tattacktype {
-    width: 60px;
-    height: 60px;
-    display: block;
-    margin: 0;
-    position: absolute;
-    left: calc(50% - 173px);
-    top: 19px;
-    opacity: 0;
-    z-index: 1;
-}
-
 .dialog .tile .field.attackdices {
     height: 78px;
     width: 100%;
     display: inline-block;
     vertical-align: top;
+}
+.dialog .tile .field.attackdices + .field.attackdices {
+    height: 58px;
 }
 .dialog .tile .field.attackdices label {
     margin-bottom: 2px;
@@ -459,11 +450,14 @@
    background-position: calc(50% - 28px);
    background-size: contain;
 }
+.dialog .tile .attackdices + .attackdices div:before {
+    top: 0px;
+}
 
-.dialog .tile input#tattacktype:not(checked) + div:before {
+.dialog .tile .field.attackdices > div:before {
    background-image: url(img/attack_contact.webp);
 }
-.dialog .tile input#tattacktype:checked + div:before {
+.dialog .tile .field.attackdices + .field.attackdices > div:before {
    background-image: url(img/attack_range.webp);
 }
 

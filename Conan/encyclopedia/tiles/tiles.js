@@ -86,8 +86,8 @@ var EncyclopediaTiles = {
                 values: [ { id: "melee" }, { id: "ranged" }, { id: "none" } ],
                 filter: function(item, selectedValues) {
 
-                    return (selectedValues.indexOf('melee')!=-1 && item.attacktype == "contact" && item.dices['0'] != "none")
-                        || (selectedValues.indexOf('ranged')!=-1 && item.attacktype == "ranged" && item.dices['0'] != "none")
+                    return (selectedValues.indexOf('melee')!=-1 && (item.attacktype == "contact" || item.attacktype == "both") && item.dices['0'] != "none")
+                        || (selectedValues.indexOf('ranged')!=-1 && ((item.attacktype == "ranged" && item.dices['0'] != "none") || (item.attacktype == "both" && item.dices2['0'] != "none")))
                         || (selectedValues.indexOf('none')!=-1 && item.dices['0'] == "none");
                 }
             },
@@ -238,17 +238,27 @@ var EncyclopediaTiles = {
     _tilePower: function(tile)
     {
         var dice = 0;
-        for (var j in tile.dices)
+        let dices = [tile.dices];
+        if (tile.dices2)
         {
-            switch(tile.dices[j])
+            dices.push(tile.dices2);
+        }
+        for (let i of dices)
+        {
+            let thisdice = 0;
+            for (var j in i)
             {
-                case "redreroll": dice += 1.92; break;
-                case "red": dice += 1.5; break;
-                case "orangereroll": dice += 1.33; break;
-                case "orange": dice += 1; break;
-                case "yellowreroll": dice += 1; break;
-                case "yellow": dice += 0.67; break;
+                switch(i[j])
+                {
+                    case "redreroll": thisdice += 1.92; break;
+                    case "red": thisdice += 1.5; break;
+                    case "orangereroll": thisdice += 1.33; break;
+                    case "orange": thisdice += 1; break;
+                    case "yellowreroll": thisdice += 1; break;
+                    case "yellow": thisdice += 0.67; break;
+                }
             }
+            dice = Math.max(dice, thisdice);
         }
         return dice;
     },
@@ -384,7 +394,7 @@ var EncyclopediaTiles = {
 
     _convertTileToStudio: function(tile, hd)
     {
-        return {
+        let o = {
             id: tile.id + "-" + Math.random(),
             name: tile.name,
             color: tile.color,
@@ -400,6 +410,13 @@ var EncyclopediaTiles = {
             imagerotation: tile.image_rotation ||"0",
             tokens: (tile.tokens || []).map(function(t) { return {active: true, image: t.image, imagelocation: {x: t.image_location.x, y: t.image_location.y}, imagezoom: t.image_zoom, imagerotation: 0}})
         };
+        
+        if (tile.dices2)
+        {
+            o.dices2 = { 0: tile.dices2[0], 1: tile.dices2[1], 2: tile.dices2[2], 3: tile.dices2[3] };
+        }
+        
+        return o;
     },
 
     _findTilesById: function(id)

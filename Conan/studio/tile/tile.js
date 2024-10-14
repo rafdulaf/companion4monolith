@@ -89,31 +89,55 @@ var Tile = mergeObject(StudioItem, {
         }
 
         var level = 0;
+        
+        let attacksTypes = [];
+        let dices = [];
         if (tile.dices && tile.dices[0] != "none")
         {
+            dices.push(tile.dices);
+            if (tile.attacktype == "both")
+            {
+                attacksTypes.push("contact");
+                if (tile.dices2 && tile.dices2[0] != "none")
+                {
+                    dices.push(tile.dices2);
+                    attacksTypes.push("ranged");
+                }
+            }
+            else
+            {
+                attacksTypes.push(tile.attacktype);
+            }
+        }
+        
+        for (let d=0; d < dices.length; d++)
+        {
+            let dice = dices[d];
+            let attackType = attacksTypes[d];
+            
             var nbDices = 1;
             
             var diceCode = ""
-            diceCode += "<img class='dice dice-1' src=\"studio/tile/img/dice_" + tile.dices[0] + ".webp?version=" + Version + "\"/>";
-            if (tile.dices[1] != "none")
+            diceCode += "<img class='dice dice-1' src=\"studio/tile/img/dice_" + dice[0] + ".webp?version=" + Version + "\"/>";
+            if (dice[1] != "none")
             {
                 nbDices++;
-                diceCode += "<img class='dice dice-2' src=\"studio/tile/img/dice_" + tile.dices[1] + ".webp?version=" + Version + "\"/>";
-                if (tile.dices[2] != "none")
+                diceCode += "<img class='dice dice-2' src=\"studio/tile/img/dice_" + dice[1] + ".webp?version=" + Version + "\"/>";
+                if (dice[2] != "none")
                 {
                     nbDices++;
-                    diceCode += "<img class='dice dice-3' src=\"studio/tile/img/dice_" + tile.dices[2] + ".webp?version=" + Version + "\"/>";
-                    if (tile.dices[3] != "none")
+                    diceCode += "<img class='dice dice-3' src=\"studio/tile/img/dice_" + dice[2] + ".webp?version=" + Version + "\"/>";
+                    if (dice[3] != "none")
                     {
                         nbDices++;
-                        diceCode += "<img class='dice dice-4' src=\"studio/tile/img/dice_" + tile.dices[3] + ".webp?version=" + Version + "\"/>";
+                        diceCode += "<img class='dice dice-4' src=\"studio/tile/img/dice_" + dice[3] + ".webp?version=" + Version + "\"/>";
                     }
                 }
             }
             
             code += "<div class=\"attack level" + level + "\">";
             code += "<img class='dice-background' src=\"studio/tile/img/dice-background-" + nbDices + ".webp?version=" + Version + "\"/>";
-            code += "<img class=\"attacktype\" src=\"studio/tile/img/" + tile.attacktype + ".webp?version=" + Version + "\"/>";
+            code += "<img class=\"attacktype\" src=\"studio/tile/img/" + attackType + ".webp?version=" + Version + "\"/>";
             code += diceCode;
             code += "</div>";
             level++;
@@ -278,12 +302,19 @@ var Tile = mergeObject(StudioItem, {
                 + "</div>"
                 + "<div class=\"field attackdices\">"
                     + "<label for=\"tdices\">" + Tile._i18n.dices + "</label>"
-                    + "<input type=\"checkbox\" id=\"tattacktype\" name=\"tileattacktype\" onchange=\"Tile._preview();\" title=\"" + Tile._i18n.attacktype + "\"/>"
                     + "<div>"
                         + "<select id=\"tdices\" class=\"dice\" name=\"tiledices1\"><option value=\"none\">" + Tile._i18n.diceNone + "</option><option value=\"red\">" + Tile._i18n.diceRed + "</option><option value=\"redreroll\">" + Tile._i18n.diceRedReroll + "</option><option value=\"orange\">" + Tile._i18n.diceOrange + "</option><option value=\"orangereroll\">" + Tile._i18n.diceOrangeReroll + "</option><option value=\"yellow\">" + Tile._i18n.diceYellow + "</option><option value=\"yellowreroll\">" + Tile._i18n.diceYellowReroll + "</option></select>"
                         + "<select id=\"tdices2\" class=\"dice\" name=\"tiledices2\"><option value=\"none\">" + Tile._i18n.diceNone + "</option><option value=\"red\">" + Tile._i18n.diceRed + "</option><option value=\"redreroll\">" + Tile._i18n.diceRedReroll + "</option><option value=\"orange\">" + Tile._i18n.diceOrange + "</option><option value=\"orangereroll\">" + Tile._i18n.diceOrangeReroll + "</option><option value=\"yellow\">" + Tile._i18n.diceYellow + "</option><option value=\"yellowreroll\">" + Tile._i18n.diceYellowReroll + "</option></select>"
                         + "<select id=\"tdices3\" class=\"dice\" name=\"tiledices3\"><option value=\"none\">" + Tile._i18n.diceNone + "</option><option value=\"red\">" + Tile._i18n.diceRed + "</option><option value=\"redreroll\">" + Tile._i18n.diceRedReroll + "</option><option value=\"orange\">" + Tile._i18n.diceOrange + "</option><option value=\"orangereroll\">" + Tile._i18n.diceOrangeReroll + "</option><option value=\"yellow\">" + Tile._i18n.diceYellow + "</option><option value=\"yellowreroll\">" + Tile._i18n.diceYellowReroll + "</option></select>"
                         + "<select id=\"tdices4\" class=\"dice\" name=\"tiledices4\"><option value=\"none\">" + Tile._i18n.diceNone + "</option><option value=\"red\">" + Tile._i18n.diceRed + "</option><option value=\"redreroll\">" + Tile._i18n.diceRedReroll + "</option><option value=\"orange\">" + Tile._i18n.diceOrange + "</option><option value=\"orangereroll\">" + Tile._i18n.diceOrangeReroll + "</option><option value=\"yellow\">" + Tile._i18n.diceYellow + "</option><option value=\"yellowreroll\">" + Tile._i18n.diceYellowReroll + "</option></select>"
+                    + "</div>"
+                + "</div>"
+                + "<div class=\"field attackdices\">"
+                    + "<div>"
+                        + "<select id=\"t2dices\" class=\"dice\" name=\"tiledices21\"><option value=\"none\">" + Tile._i18n.diceNone + "</option><option value=\"red\">" + Tile._i18n.diceRed + "</option><option value=\"redreroll\">" + Tile._i18n.diceRedReroll + "</option><option value=\"orange\">" + Tile._i18n.diceOrange + "</option><option value=\"orangereroll\">" + Tile._i18n.diceOrangeReroll + "</option><option value=\"yellow\">" + Tile._i18n.diceYellow + "</option><option value=\"yellowreroll\">" + Tile._i18n.diceYellowReroll + "</option></select>"
+                        + "<select id=\"t2dices2\" class=\"dice\" name=\"tiledices22\"><option value=\"none\">" + Tile._i18n.diceNone + "</option><option value=\"red\">" + Tile._i18n.diceRed + "</option><option value=\"redreroll\">" + Tile._i18n.diceRedReroll + "</option><option value=\"orange\">" + Tile._i18n.diceOrange + "</option><option value=\"orangereroll\">" + Tile._i18n.diceOrangeReroll + "</option><option value=\"yellow\">" + Tile._i18n.diceYellow + "</option><option value=\"yellowreroll\">" + Tile._i18n.diceYellowReroll + "</option></select>"
+                        + "<select id=\"t2dices3\" class=\"dice\" name=\"tiledices23\"><option value=\"none\">" + Tile._i18n.diceNone + "</option><option value=\"red\">" + Tile._i18n.diceRed + "</option><option value=\"redreroll\">" + Tile._i18n.diceRedReroll + "</option><option value=\"orange\">" + Tile._i18n.diceOrange + "</option><option value=\"orangereroll\">" + Tile._i18n.diceOrangeReroll + "</option><option value=\"yellow\">" + Tile._i18n.diceYellow + "</option><option value=\"yellowreroll\">" + Tile._i18n.diceYellowReroll + "</option></select>"
+                        + "<select id=\"t2dices4\" class=\"dice\" name=\"tiledices24\"><option value=\"none\">" + Tile._i18n.diceNone + "</option><option value=\"red\">" + Tile._i18n.diceRed + "</option><option value=\"redreroll\">" + Tile._i18n.diceRedReroll + "</option><option value=\"orange\">" + Tile._i18n.diceOrange + "</option><option value=\"orangereroll\">" + Tile._i18n.diceOrangeReroll + "</option><option value=\"yellow\">" + Tile._i18n.diceYellow + "</option><option value=\"yellowreroll\">" + Tile._i18n.diceYellowReroll + "</option></select>"
                     + "</div>"
                 + "</div>"
                 + "<div class=\"field skills\">"
@@ -408,7 +439,7 @@ var Tile = mergeObject(StudioItem, {
                 $(this).attr("data-value", this.value);
              })
         });
-        $("#tdices,#tdices2,#tdices3,#tdices4,#tcolor").each (function (i) {
+        $("#tdices,#tdices2,#tdices3,#tdices4,#t2dices,#t2dices2,#t2dices3,#t2dices4,#tcolor").each (function (i) {
             var k = $(this);
             k.attr("data-value", "")
                 .selectmenu({ appendTo: k.parent(), width: k.is(".dice") ? 40 : 58, change: function(event, selection) {
@@ -425,14 +456,13 @@ var Tile = mergeObject(StudioItem, {
 
     _form2card: function()
     {
-        return {
+        let o = {
             id: $(".dialog input[name=tilepos]")[0].value,
             name: $(".dialog input[name=tilename]")[0].value,
             color: $(".dialog select[name=tcolor]")[0].value,
             movement: $(".dialog input[name=tilemovement]")[0].value,
             defense: $(".dialog input[name=tiledefense]")[0].value,
-            attacktype: $(".dialog input[name=tileattacktype]")[0].checked ? "ranged" : "contact",
-            dices: { 0: $(".dialog select[name=tiledices1]")[0].value, 1: $(".dialog select[name=tiledices2]")[0].value, 2: $(".dialog select[name=tiledices3]")[0].value, 3: $(".dialog select[name=tiledices4]")[0].value },
+            // TODO attacktype: $(".dialog input[name=tileattacktype]")[0].checked ? "ranged" : "contact",
             skills: { 0: $(".dialog select[name=tileskills1]")[0].value, 1: $(".dialog select[name=tileskills2]")[0].value, 2: $(".dialog select[name=tileskills3]")[0].value, 3: $(".dialog select[name=tileskills4]")[0].value },
             reinforcement: $(".dialog input[name=tilereinforcement]")[0].value,
             image: $(".dialog input[name=tileimage]")[0].value,
@@ -455,7 +485,27 @@ var Tile = mergeObject(StudioItem, {
                     imagerotation: $(".dialog input[name=tileimagetoken2rotation]")[0].value
                 }
             ]
+        };
+        
+        if ($(".dialog select[name=tiledices1]")[0].value != "none" && $(".dialog select[name=tiledices21]")[0].value != "none")
+        {
+            o.attacktype = "both";
+            o.dices = { 0: $(".dialog select[name=tiledices1]")[0].value, 1: $(".dialog select[name=tiledices2]")[0].value, 2: $(".dialog select[name=tiledices3]")[0].value, 3: $(".dialog select[name=tiledices4]")[0].value };
+            o.dices2 = { 0: $(".dialog select[name=tiledices21]")[0].value, 1: $(".dialog select[name=tiledices22]")[0].value, 2: $(".dialog select[name=tiledices23]")[0].value, 3: $(".dialog select[name=tiledices24]")[0].value };
         }
+        else if ($(".dialog select[name=tiledices21]")[0].value != "none")
+        {
+            o.attacktype = "ranged";
+            o.dices = { 0: $(".dialog select[name=tiledices21]")[0].value, 1: $(".dialog select[name=tiledices22]")[0].value, 2: $(".dialog select[name=tiledices23]")[0].value, 3: $(".dialog select[name=tiledices24]")[0].value };
+        }
+        else
+        {
+            o.attacktype = "contact";
+            o.dices = { 0: $(".dialog select[name=tiledices1]")[0].value, 1: $(".dialog select[name=tiledices2]")[0].value, 2: $(".dialog select[name=tiledices3]")[0].value, 3: $(".dialog select[name=tiledices4]")[0].value };
+        }
+        
+        
+        return o;
     },
     _card2form: function(tile)
     {
@@ -464,11 +514,39 @@ var Tile = mergeObject(StudioItem, {
         $(".dialog select[name=tcolor]")[0].value = tile.color; $(".dialog select[name=tcolor]").attr("data-value", tile.color);
         $(".dialog input[name=tilemovement]")[0].value = tile.movement;
         $(".dialog input[name=tiledefense]")[0].value = tile.defense;
-        $(".dialog input[name=tileattacktype]")[0].checked = tile.attacktype != 'contact';
-        $(".dialog select[name=tiledices1]")[0].value = tile.dices['0']; $(".dialog select[name=tiledices1]").attr("data-value", tile.dices['0']);
-        $(".dialog select[name=tiledices2]")[0].value = tile.dices['1']; $(".dialog select[name=tiledices2]").attr("data-value", tile.dices['1']);
-        $(".dialog select[name=tiledices3]")[0].value = tile.dices['2']; $(".dialog select[name=tiledices3]").attr("data-value", tile.dices['2']);
-        $(".dialog select[name=tiledices4]")[0].value = tile.dices['3']; $(".dialog select[name=tiledices4]").attr("data-value", tile.dices['3']);
+        if (tile.attacktype == "contact")
+        {
+            $(".dialog select[name=tiledices1]")[0].value = tile.dices['0']; $(".dialog select[name=tiledices1]").attr("data-value", tile.dices['0']);
+            $(".dialog select[name=tiledices2]")[0].value = tile.dices['1']; $(".dialog select[name=tiledices2]").attr("data-value", tile.dices['1']);
+            $(".dialog select[name=tiledices3]")[0].value = tile.dices['2']; $(".dialog select[name=tiledices3]").attr("data-value", tile.dices['2']);
+            $(".dialog select[name=tiledices4]")[0].value = tile.dices['3']; $(".dialog select[name=tiledices4]").attr("data-value", tile.dices['3']);
+            $(".dialog select[name=tiledices21]")[0].value = "none"; $(".dialog select[name=tiledices21]").attr("data-value", "none");
+            $(".dialog select[name=tiledices22]")[0].value = "none"; $(".dialog select[name=tiledices22]").attr("data-value", "none");
+            $(".dialog select[name=tiledices23]")[0].value = "none"; $(".dialog select[name=tiledices23]").attr("data-value", "none");
+            $(".dialog select[name=tiledices24]")[0].value = "none"; $(".dialog select[name=tiledices24]").attr("data-value", "none");
+        }
+       else if (tile.attacktype == "ranged")
+        {
+            $(".dialog select[name=tiledices1]")[0].value = "none"; $(".dialog select[name=tiledices1]").attr("data-value", "none");
+            $(".dialog select[name=tiledices2]")[0].value = "none"; $(".dialog select[name=tiledices2]").attr("data-value", "none");
+            $(".dialog select[name=tiledices3]")[0].value = "none"; $(".dialog select[name=tiledices3]").attr("data-value", "none");
+            $(".dialog select[name=tiledices4]")[0].value = "none"; $(".dialog select[name=tiledices4]").attr("data-value", "none");
+            $(".dialog select[name=tiledices21]")[0].value = tile.dices['0']; $(".dialog select[name=tiledices21]").attr("data-value", tile.dices['0']);
+            $(".dialog select[name=tiledices22]")[0].value = tile.dices['1']; $(".dialog select[name=tiledices22]").attr("data-value", tile.dices['1']);
+            $(".dialog select[name=tiledices23]")[0].value = tile.dices['2']; $(".dialog select[name=tiledices23]").attr("data-value", tile.dices['2']);
+            $(".dialog select[name=tiledices24]")[0].value = tile.dices['3']; $(".dialog select[name=tiledices24]").attr("data-value", tile.dices['3']);
+        }
+        else 
+        {
+            $(".dialog select[name=tiledices1]")[0].value = tile.dices['0']; $(".dialog select[name=tiledices1]").attr("data-value", tile.dices['0']);
+            $(".dialog select[name=tiledices2]")[0].value = tile.dices['1']; $(".dialog select[name=tiledices2]").attr("data-value", tile.dices['1']);
+            $(".dialog select[name=tiledices3]")[0].value = tile.dices['2']; $(".dialog select[name=tiledices3]").attr("data-value", tile.dices['2']);
+            $(".dialog select[name=tiledices4]")[0].value = tile.dices['3']; $(".dialog select[name=tiledices4]").attr("data-value", tile.dices['3']);
+            $(".dialog select[name=tiledices21]")[0].value = tile.dices2['0']; $(".dialog select[name=tiledices21]").attr("data-value", tile.dices2['0']);
+            $(".dialog select[name=tiledices22]")[0].value = tile.dices2['1']; $(".dialog select[name=tiledices22]").attr("data-value", tile.dices2['1']);
+            $(".dialog select[name=tiledices23]")[0].value = tile.dices2['2']; $(".dialog select[name=tiledices23]").attr("data-value", tile.dices2['2']);
+            $(".dialog select[name=tiledices24]")[0].value = tile.dices2['3']; $(".dialog select[name=tiledices24]").attr("data-value", tile.dices2['3']);
+         }
         $(".dialog select[name=tileskills1]")[0].value = tile.skills['0']; $(".dialog select[name=tileskills1]").attr("data-value", tile.skills['0']);
         $(".dialog select[name=tileskills2]")[0].value = tile.skills['1']; $(".dialog select[name=tileskills2]").attr("data-value", tile.skills['1']);
         $(".dialog select[name=tileskills3]")[0].value = tile.skills['2']; $(".dialog select[name=tileskills3]").attr("data-value", tile.skills['2']);

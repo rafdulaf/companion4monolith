@@ -5513,6 +5513,49 @@
             "image_zoom": 130,
             "model": "surt",
             "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "xotalanc-spearmen",
+
+            "colors": ["red"],
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "both",
+            "dices": { "0": "orangereroll", "1": "orangereroll", "2": "none", "3": "none" },
+            "dices2": { "0": "orange", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "attack/precision_shot", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+
+            "quote": null,
+
+            "image": "data/tiles/img/xotalanc-spearmen.webp",
+            "imageHD": "data/tiles/img/xotalanc-spearmen_hd.webp",
+            "image_location": {"x":48, "y":72},
+            "image_zoom": 147,
+            "model": "xotalanc-men",
+            "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "xotalanc-hunters",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "1",
+            "attacktype": "ranged",
+            "dices": { "0": "red", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "attack/elite_shooter", "1": "movement/climb", "2": "none", "3": "none" },
+            "reinforcement": "1",
+
+            "quote": null,
+
+            "image": "data/tiles/img/xotalanc-hunters.webp",
+            "imageHD": "data/tiles/img/xotalanc-hunters_hd.webp",
+            "image_location": {"x":57, "y":58},
+            "image_zoom": 95,
+            "model": "xotalanc-men",
+            "origins": ["red-nails"]
         }
     ]
 }
