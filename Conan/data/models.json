@@ -1721,8 +1721,8 @@
             "id": "conan-free-companion",
             "thumb": "data/models/img/conan-free-companion_sd.webp",
             "images": ["data/models/img/conan-free-companion_1.webp"],
-            "sculptor": null,
-            "paint": null,
+            "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
+            "paint": { "name": "Nicolas Deze", "link": "https://www.facebook.com/nikorasu.deze"},
             "type": "human",
             "origins": ["red-nails"],
             "forum": "https://the-overlord.com/index.php?/topic/321-peinture-montrez-moi-vos-conan-par-crom/"
@@ -1732,8 +1732,8 @@
             "id": "valeria-free-companion",
             "thumb": "data/models/img/valeria-free-companion_sd.webp",
             "images": ["data/models/img/valeria-free-companion_1.webp"],
-            "sculptor": null,
-            "paint": null,
+            "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
+            "paint": { "name": "Nicolas Deze", "link": "https://www.facebook.com/nikorasu.deze"},
             "type": "human",
             "origins": ["red-nails"],
             "forum": "https://the-overlord.com/index.php?/topic/682-peinture-montrez-moi-vos-val%C3%A9ria/"
@@ -1743,8 +1743,8 @@
             "id": "olmec",
             "thumb": "data/models/img/olmec_sd.webp",
             "images": ["data/models/img/olmec_1.webp"],
-            "sculptor": null,
-            "paint": null,
+            "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
+            "paint": { "name": "Rémy Tremblay", "link": "https://www.facebook.com/remy.tremblay.1232"},
             "type": "human",
             "origins": ["red-nails"]
         },
@@ -1753,7 +1753,7 @@
             "id": "tascela",
             "thumb": "data/models/img/tascela_sd.webp",
             "images": ["data/models/img/tascela_1.webp"],
-            "sculptor": null,
+            "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
             "paint": null,
             "type": "human",
             "origins": ["red-nails"]
@@ -1763,8 +1763,8 @@
             "id": "techotl",
             "thumb": "data/models/img/techotl_sd.webp",
             "images": ["data/models/img/techotl_1.webp"],
-            "sculptor": null,
-            "paint": null,
+            "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
+            "paint": { "name": "Rémy Tremblay", "link": "https://www.facebook.com/remy.tremblay.1232"},
             "type": "human",
             "origins": ["red-nails"]
         },
@@ -1773,7 +1773,7 @@
             "id": "tolkemec",
             "thumb": "data/models/img/tolkemec_sd.webp",
             "images": [],
-            "sculptor": null,
+            "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
             "paint": null,
             "type": "human",
             "origins": ["red-nails"]
