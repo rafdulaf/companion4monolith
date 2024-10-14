@@ -1747,6 +1747,26 @@
             "paint": null,
             "type": "human",
             "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "tascela",
+            "thumb": "data/models/img/tascela_sd.webp",
+            "images": ["data/models/img/tascela_1.webp"],
+            "sculptor": null,
+            "paint": null,
+            "type": "human",
+            "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "techotl",
+            "thumb": "data/models/img/techotl_sd.webp",
+            "images": ["data/models/img/techotl_1.webp"],
+            "sculptor": null,
+            "paint": null,
+            "type": "human",
+            "origins": ["red-nails"]
         }
     ]
 }
