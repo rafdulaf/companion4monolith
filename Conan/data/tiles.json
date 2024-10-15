@@ -5645,6 +5645,47 @@
             "origins": ["red-nails"],
 
             "count": 2
+        },
+        
+        {
+            "id": "burning-skull",
+
+            "colors": ["orange"],
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "yellowreroll", "2": "yellowreroll", "3": "none" },
+            "skills": { "0": "miscellaneous/jinx", "1": "miscellaneous/fascination", "2": "none", "3": "none" },
+
+            "quote": null,
+
+            "image": "data/tiles/img/flaming-skeletons.webp",
+            "imageHD": "data/tiles/img/flaming-skeletons_hd.webp",
+            "image_location": {"x":73, "y":115},
+            "image_zoom": 275,
+            "model": "flaming-skeletons",
+            "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "flaming-skeletons",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "defense/untouchable", "1": "miscellaneous/horror", "2": "none", "3": "none" },
+            "reinforcement": "2",
+
+            "quote": null,
+
+            "image": "data/tiles/img/flaming-skeletons.webp",
+            "imageHD": "data/tiles/img/flaming-skeletons_hd.webp",
+            "image_location": {"x":63, "y":53},
+            "image_zoom": 106,
+            "model": "flaming-skeletons",
+            "origins": ["red-nails"]
         }
     ]
 }

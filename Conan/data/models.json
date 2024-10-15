@@ -1831,6 +1831,16 @@
             "paint": { "name": "Nicolas Deze", "link": "https://www.facebook.com/nikorasu.deze"},
             "type": "monster",
             "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "flaming-skeletons",
+            "thumb": ["data/models/img/flaming-skeletons_sd.webp"],
+            "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
+            "paint": null,
+            "type": "monster",
+            "origins": ["red-nails"],
+            "count": 6
         }
     ]
 }
