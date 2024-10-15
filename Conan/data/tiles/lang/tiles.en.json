@@ -1115,6 +1115,16 @@
         },
         "xotalanc-huntresses": {
             "name": "Xotalanc Huntresses"
-        }
+        },
+        "dragon-xuchotl": {
+            "name": "Dragon of Xuchotl"
+        },
+        "dragon-2": {
+            "name": "Dragon",
+            "quote": {
+                "text": "Through the thicket was thrust a head of nightmare and lunacy. Grinning jaws bared rows of dripping yellow tusks; above the yawning mouth wrinkled a saurian-like snout. Huge eyes, like those of a python a thousand times magnified, stared unwinkingly at the petrified humans clinging to the rock above it. Blood smeared the scaly, flabby lips and dripped from the huge mouth.\nThe head, bigger than that of a crocodile, was further extended on a long scaled neck on which stood up rows of serrated spikes, and after it, crushing down the briars and saplings, waddled the body of a titan, a gigantic, barrel-bellied torso on absurdly short legs. The whitish belly almost raked the ground, while the serrated back-bone rose higher than Conan could have reached on tiptoe. A long spiked tail, like that of a gargantuan scorpion, trailed out behind.",
+                "origin": "Red Nails"
+            }
+        },
     }
 }

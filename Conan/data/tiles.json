@@ -5599,6 +5599,52 @@
             "image_zoom": 107,
             "model": "xotalanc-women",
             "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "dragon-xuchotl",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "orange", "3": "yellow" },
+            "skills": { "0": "movement/evasive", "1": "attack/reach", "2": "none", "3": "none" },
+
+            "quote": null,
+
+            "image": "data/tiles/img/dragon-xuchotl.webp",
+            "imageHD": "data/tiles/img/dragon-xuchotl_hd.webp",
+            "image_location": {"x":58, "y":59},
+            "image_zoom": 150,
+            "model": "dragon-xuchotl",
+            "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "dragon-2",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "5",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "redreroll", "3": "redreroll" },
+            "skills": { "0": "movement/blocking", "1": "movement/wall_wrecker", "2": "none", "3": "none" },
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/tiles/img/dragon-2.webp",
+            "imageHD": "data/tiles/img/dragon-2_hd.webp",
+            "image_location": {"x":64, "y":66},
+            "image_zoom": 190,
+            "model": "dragon-xuchotl",
+            "origins": ["red-nails"],
+
+            "count": 2
         }
     ]
 }

@@ -1821,6 +1821,16 @@
             "type": "human",
             "origins": ["red-nails"],
             "count": 5
+        },
+        
+        {
+            "id": "dragon-xuchotl",
+            "thumb": ["data/models/img/dragon-xuchotl_sd.webp"],
+            "images": ["data/models/img/dragon-xuchotl_1.webp"],
+            "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
+            "paint": { "name": "Nicolas Deze", "link": "https://www.facebook.com/nikorasu.deze"},
+            "type": "monster",
+            "origins": ["red-nails"]
         }
     ]
 }

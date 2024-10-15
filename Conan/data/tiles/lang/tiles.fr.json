@@ -1117,6 +1117,16 @@
         },
         "xotalanc-huntresses": {
             "name": "Chasseuses Xotalancas"
+        },
+        "dragon-xuchotl": {
+            "name": "Dragon de Xuchotl"
+        },
+        "dragon-2": {
+            "name": "Dragon",
+            "quote": {
+                "text": "Une tête de cauchemar et de démence venait d'apparaître à travers les taillis. Des mâchoires grimaçantes découvraient des rangées de défenses jaunies dégouttant de sang; au-dessus de la gueule béante se trouvait un museau semblable à celui d'un saurien. Des yeux énormes, ressemblant à ceux d'un python, mais grossis un millier de fois, fixaient sans ciller les deux humains pétrifiés qui s'accrochaient au rocher au-dessus de lui. Du sang coulait de sa gueule, maculant ses lèvres squameuses et flasques. Sa tête, plus grosse que celle d'un crocodile, était arquée au bout d'un long cou écailleux sur lequel était hérissée une rangée de pointes en dents de scie. Derrière ce cou, écrasant les bruyères et les jeunes arbres, s'avançait lourdement un corps de titan au torse bombé, posé sur des pattes absurdement courtes. Son ventre blanchâtre balayait presque le sol et le cou crénelé de piques était trop haut pour que Conan l'atteigne sur la pointe des pieds. Une longue queue pointue, pareille à celle d'un scorpion aux proportions gigantesques, traînait à sa suite.",
+                "origin": "Les Clous Rouges"
+            }
         }
     }
 }
