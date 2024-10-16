@@ -5707,6 +5707,128 @@
             "image_zoom": 122,
             "model": "tecuhltli-swordsmen",
             "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "crawler",
+
+            "colors": ["gray"],
+            "movement": "4",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "orangereroll", "2": "yellowreroll", "3": "none" },
+            "skills": { "0": "miscellaneous/horror", "1": "attack/attack_from_beyond", "2": "none", "3": "none" },
+
+            "quote": null,
+
+            "image": "data/tiles/img/crawler.webp",
+            "imageHD": "data/tiles/img/crawler_hd.webp",
+            "image_location": {"x":51, "y":57},
+            "image_zoom": 122,
+            "model": "crawler",
+            "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "olmec",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/support", "1": "movement/climb", "2": "none", "3": "none" },
+
+            "quote": null,
+
+            "image": "data/tiles/img/olmec.webp",
+            "imageHD": "data/tiles/img/olmec_hd.webp",
+            "image_location": {"x":51, "y":53},
+            "image_zoom": 102,
+            "model": "olmec",
+            "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "tascela",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "yellowreroll", "2": "yellowreroll", "3": "none" },
+            "skills": { "0": "magic/spell_caster", "1": "miscellaneous/fascination", "2": "none", "3": "none" },
+
+            "quote": null,
+
+            "image": "data/tiles/img/tascela.webp",
+            "imageHD": "data/tiles/img/tascela_hd.webp",
+            "image_location": {"x":61, "y":55},
+            "image_zoom": 120,
+            "model": "tascela",
+            "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "tolkemec",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "ranged",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
+            "skills": { "0": "movement/evasive", "1": "movement/leap", "2": "none", "3": "none" },
+
+            "quote": null,
+
+            "image": "data/tiles/img/tolkemec.webp",
+            "imageHD": "data/tiles/img/tolkemec_hd.webp",
+            "image_location": {"x":61, "y":56},
+            "image_zoom": 116,
+            "model": "tolkemec",
+            "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "xotalanc-warriors",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "ranged",
+            "dices": { "0": "orange", "1": "yellowreroll", "2": "none", "3": "none" },
+            "skills": { "0": "movement/feline_grace", "1": "movement/climb", "2": "none", "3": "none" },
+            "reinforcement": "1",
+
+            "quote": null,
+
+            "image": "data/tiles/img/xotalanc-warriors.webp",
+            "imageHD": "data/tiles/img/xotalanc-warriors_hd.webp",
+            "image_location": {"x":61, "y":55},
+            "image_zoom": 111,
+            "model": "xotalanc-warriors",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "kushite-warriors",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "movement/climb", "1": "attack/reach", "2": "none", "3": "none" },
+            "reinforcement": "2",
+
+            "quote": null,
+
+            "image": "data/tiles/img/kushite-warriors.webp",
+            "imageHD": "data/tiles/img/kushite-warriors_hd.webp",
+            "image_location": {"x":47, "y":58},
+            "image_zoom": 146,
+            "model": "belits-guards",
+            "origins": ["red-nails"]
         }
     ]
 }
