@@ -5829,6 +5829,94 @@
             "image_zoom": 146,
             "model": "belits-guards",
             "origins": ["red-nails"]
+        },
+
+        {
+            "id": "techotl",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "defense/sacrifice", "1": "attack/reach", "2": "none", "3": "none" },
+
+            "quote": null,
+
+            "image": "data/tiles/img/techotl.webp",
+            "imageHD": "data/tiles/img/techotl_hd.webp",
+            "image_location": {"x":51, "y":55.5},
+            "image_zoom": 108,
+            "model": "techotl",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "stygian-captain",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "red", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/support", "1": "defense/sacrifice", "2": "none", "3": "none" },
+
+            "quote": null,
+
+            "image": "data/tiles/img/captain.webp",
+            "imageHD": "data/tiles/img/captain_hd.webp",
+            "image_location": {"x":52, "y":54},
+            "image_zoom": 117,
+            "model": "captain",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "conan-free-companion",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
+            "skills": { "0": "attack/reach", "1": "movement/climb", "2": "none", "3": "none" },
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/tiles/img/conan-free-companion.webp",
+            "imageHD": "data/tiles/img/conan-free-companion_hd.webp",
+            "image_location": {"x":57, "y":52},
+            "image_zoom": 240,
+            "model": "conan-free-companion",
+            "origins": ["red-nails"]
+        },
+
+        {
+            "id": "valeria-free-companion",
+
+            "colors": ["gray"],
+            "movement": "4",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
+            "skills": { "0": "attack/counterattack", "1": "movement/climb", "2": "none", "3": "none" },
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/tiles/img/valeria-free-companion.webp",
+            "imageHD": "data/tiles/img/valeria-free-companion_hd.webp",
+            "image_location": {"x":54, "y":54},
+            "image_zoom": 118,
+            "model": "valeria-free-companion",
+            "origins": ["red-nails"]
         }
     ]
 }

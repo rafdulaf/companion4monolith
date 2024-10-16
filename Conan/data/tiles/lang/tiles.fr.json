@@ -1154,6 +1154,28 @@
         },
         "kushite-warriors": {
             "name": "Guerriers Kushites"
+        },
+        "techotl": {
+            "name": "Techotl"
+        },
+        "stygian-captain": {
+            "name": "Captaine Stygien"
+        },
+        "conan-free-companion": {
+            "name": "Conan de la Compagnie Franche",
+            "size": 78,
+            "quote": {
+                "text": "Arus vit un homme jeune, grand et puissamment bâti, nu à l'exception d'un pagne et de sandales lacées haut sur les chevilles. Sa peau était tannée comme s'il venait des régions désertiques du globe, et Arus se sentit mal à l'aise en voyant ses épaules larges, son torse massif et ses bras puissants. Un simple coup d'oeil sur ce visage renfrogné au front large lui suffit pour comprendre qu'il n'avait pas affaire à un Némédien. Sous une tignasse de cheveux noirs ébouriffés, deux yeux bleus menaçants couvaient, prêts à s'embraser. Une longue épée dans son fourreau de cuir pendait à son ceinturon.",
+                "origin": "Le Dieu dans l'Urne"
+            }
+        },
+        "valeria-free-companion": {
+            "name": "Valeria de la Compagnie Franche",
+            "size": 78,
+            "quote": {
+                "text": "Elle était grande, avait une poitrine opulente, des membres longs et des épaules robustes. Toute sa silhouette témoignait d'une force peu commune, sans toutefois rien ôter de la grâce féminine qui se dégageait de son apparence. En dépit de son port et de ses vêtements, tout en elle respirait la féminité. Ses habits semblaient incongrus, étant donné le décor environnant. Elle ne portait pas une jupe, mais d'amples culottes de soie s'arrêtant à une largeur de main au-dessus des genoux, retenues par une large bande de soie enroulée autour de sa taille comme une ceinture. Ses bottes évasées en cuir souple lui arrivaient presque aux genoux et sa chemise de soie décolletée, aux manches et au col bouffants, complétaient son costume. Une épée droite à double tranchant pendait sur une de ses hanches gracieuses et une longue dague sur l'autre. Ses cheveux blonds et ébouriffés, coupés au carré à la hauteur des épaules, étaient retenus par un bandeau de satin écarlate.",
+                "origin": "Les Clous Rouges"
+            }
         }
     }
 }
