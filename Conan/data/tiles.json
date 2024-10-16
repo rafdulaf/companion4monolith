@@ -5686,6 +5686,27 @@
             "image_zoom": 106,
             "model": "flaming-skeletons",
             "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "tecuhltli-swordsmen",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "defense/sacrifice", "1": "attack/precision_strike", "2": "none", "3": "none" },
+            "reinforcement": "2",
+
+            "quote": null,
+
+            "image": "data/tiles/img/tecuhltli-swordsmen.webp",
+            "imageHD": "data/tiles/img/tecuhltli-swordsmen_hd.webp",
+            "image_location": {"x":60, "y":56},
+            "image_zoom": 122,
+            "model": "tecuhltli-swordsmen",
+            "origins": ["red-nails"]
         }
     ]
 }
