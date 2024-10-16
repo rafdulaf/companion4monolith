@@ -5606,7 +5606,7 @@
 
             "colors": ["gray"],
             "movement": "3",
-            "defense": "1",
+            "defense": "4",
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "redreroll", "2": "orange", "3": "yellow" },
             "skills": { "0": "movement/evasive", "1": "attack/reach", "2": "none", "3": "none" },
