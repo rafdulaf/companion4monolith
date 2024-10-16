@@ -1820,7 +1820,7 @@
             "paint": null,
             "type": "human",
             "origins": ["red-nails"],
-            "count": 5
+            "count": 6
         },
         
         {
@@ -1841,6 +1841,37 @@
             "type": "monster",
             "origins": ["red-nails"],
             "count": 6
+        },
+        
+        {
+            "id": "crawler",
+            "thumb": ["data/models/img/crawler_sd.webp"],
+            "images": ["data/models/img/crawler_1.webp"],
+            "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
+            "paint": null,
+            "type": "monster",
+            "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "crocodile",
+            "thumb": ["data/models/img/crocodile_sd.webp"],
+            "images": ["data/models/img/crocodile_1.webp", "data/models/img/crocodile_2.webp"],
+            "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
+            "paint": null,
+            "type": "animal",
+            "origins": ["red-nails"],
+            "count": 5
+        },
+        
+        {
+            "id": "pillar",
+            "thumb": ["data/models/img/pillar_sd.webp"],
+            "images": ["data/models/img/pillar_1.webp"],
+            "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
+            "paint": null,
+            "type": "scenery",
+            "origins": ["red-nails"]
         }
     ]
 }
