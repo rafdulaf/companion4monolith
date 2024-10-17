@@ -5917,6 +5917,69 @@
             "image_zoom": 118,
             "model": "valeria-free-companion",
             "origins": ["red-nails"]
+        },
+
+        {
+            "id": "soulless",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "yellowreroll", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "defense/untouchable", "1": "miscellaneous/jinx", "2": "none", "3": "none" },
+            "reinforcement": "1",
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/tiles/img/soulless.webp",
+            "imageHD": "data/tiles/img/soulless_hd.webp",
+            "image_location": {"x":60, "y":54},
+            "image_zoom": 135,
+            "model": ["mummies", "skeletons"],
+            "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "xuchotlan-archers",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "ranged",
+            "dices": { "0": "yellow", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/concentration", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+
+            "image": "data/tiles/img/bossonian-archers.webp",
+            "imageHD": "data/tiles/img/bossonian-archers_hd.webp",
+            "image_location": {"x":54, "y":57},
+            "image_zoom": 115,
+            "model": "bossonian-archers",
+            "origins": ["red-nails"]
+        } ,
+        
+        {
+            "id": "crocodiles",
+
+            "colors": ["gray"],
+            "movement": "4",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "defense/untouchable", "1": "movement/swimming", "2": "none", "3": "none" },
+            "reinforcement": "2",
+
+            "image": "data/tiles/img/crocodiles.webp",
+            "imageHD": "data/tiles/img/crocodiles_hd.webp",
+            "image_location": {"x":45, "y":46},
+            "image_zoom": 100,
+            "model": "crocodiles",
+            "origins": ["red-nails"]
         }
     ]
 }

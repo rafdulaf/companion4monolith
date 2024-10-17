@@ -129,10 +129,21 @@ var EncyclopediaTiles = {
                         // otherwise seek type on model
                         for (var i = 0; i < Encyclopedia.models.list.length; i++)
                         {
-                            if (item.model == Encyclopedia.models.list[i].id)
+                            if (item.model)
                             {
-                                modelType = Encyclopedia.models.list[i].type;
-                                break;
+                                let models = Array.isArray(item.model) ? item.model : [item.model];
+                                for (let model of models)
+                                {
+                                    if (model == Encyclopedia.models.list[i].id)
+                                    {
+                                        modelType = Encyclopedia.models.list[i].type;
+                                        break;
+                                    }
+                                } 
+                                if (modelType != null)
+                                {
+                                    break;
+                                }
                             }
                         }
                     }
@@ -269,14 +280,23 @@ var EncyclopediaTiles = {
 
         if (tile.model)
         {
-            // Tokens can be shared by several tiles. Model links them
-            var tiles = [];
-            for (var i in Encyclopedia.tiles.list)
+            let models = Array.isArray(tile.model) ? tile.model : [tile.model];
+            for (let model of models)
             {
-                var stile = Encyclopedia.tiles.list[i];
-                if (stile.model == tile.model)
+                // Tokens can be shared by several tiles. Model links them
+                var tiles = [];
+                for (var i in Encyclopedia.tiles.list)
                 {
-                    tiles.push(stile);
+                    var stile = Encyclopedia.tiles.list[i];
+                    let smodels = Array.isArray(stile.model) ? stile.model : [stile.model];
+                    for (let smodel of smodels)
+                    {
+                        if (smodel == model)
+                        {
+                            tiles.push(stile);
+                            break;
+                        }
+                    }
                 }
             }
     
@@ -535,12 +555,16 @@ var EncyclopediaTiles = {
         var model = "";
         if (tile.model)
         {
-            var m = EncyclopediaModels._findModelsById(tile.model)[0];
-            if (m)
+            let ms = Array.isArray(tile.model) ? tile.model : [tile.model];
+            for (let mx of ms)
             {
-                model = "<div class='models'>"
-                        + EncyclopediaModels._linkToModel(tile.model, true)
-                        + "</div>";
+                var m = EncyclopediaModels._findModelsById(mx)[0];
+                if (m)
+                {
+                    model += "<div class='models'>"
+                            + EncyclopediaModels._linkToModel(mx, true)
+                            + "</div>";
+                }
             }
         }
         

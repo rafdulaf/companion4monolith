@@ -215,10 +215,17 @@ var EncyclopediaModels = {
             for (var i in Encyclopedia.tiles.list)
             {
                 var tile = Encyclopedia.tiles.list[i];
-                if (tile.model == model.id && !found[tile.id])
+                if (tile.model)
                 {
-                    found[tile.id] = true;
-                    tiles.push(tile);
+                    let models = Array.isArray(tile.model) ? tile.model : [tile.model];
+                    for (let m of models)
+                    {
+                        if (m == model.id && !found[tile.id])
+                        {
+                            found[tile.id] = true;
+                            tiles.push(tile);
+                        }
+                    }
                 }
             }
         }
