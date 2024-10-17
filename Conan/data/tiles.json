@@ -5961,7 +5961,7 @@
             "image_zoom": 115,
             "model": "bossonian-archers",
             "origins": ["red-nails"]
-        } ,
+        },
         
         {
             "id": "crocodiles",
@@ -5979,6 +5979,25 @@
             "image_location": {"x":45, "y":46},
             "image_zoom": 100,
             "model": "crocodiles",
+            "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "tlazitlans",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "yellow", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "1",
+
+            "image": "data/tiles/img/tlazitlans.webp",
+            "imageHD": "data/tiles/img/tlazitlans_hd.webp",
+            "image_location": {"x":45, "y":46},
+            "image_zoom": 100,
+            "model": ["tecuhltli-swordsmen", "xotalanc-women", "xotalanc-warriors", "xotalanc-men"],
             "origins": ["red-nails"]
         }
     ]
