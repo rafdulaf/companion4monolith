@@ -5610,6 +5610,9 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "redreroll", "2": "orange", "3": "yellow" },
             "skills": { "0": "movement/evasive", "1": "attack/reach", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":21, "y":141}, "image_zoom": 320 }
+            ],
 
             "quote": null,
 
@@ -5656,6 +5659,9 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "yellowreroll", "2": "yellowreroll", "3": "none" },
             "skills": { "0": "miscellaneous/jinx", "1": "miscellaneous/fascination", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":67, "y":235}, "image_zoom": 400 }
+            ],
 
             "quote": null,
 
@@ -5718,6 +5724,9 @@
             "attacktype": "contact",
             "dices": { "0": "orangereroll", "1": "orangereroll", "2": "yellowreroll", "3": "none" },
             "skills": { "0": "miscellaneous/horror", "1": "attack/attack_from_beyond", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":102, "y":155}, "image_zoom": 270, "image": "data/tiles/img/crawler_token.webp" }
+            ],
 
             "quote": null,
 
@@ -5738,6 +5747,9 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
             "skills": { "0": "miscellaneous/support", "1": "movement/climb", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":36, "y":225}, "image_zoom": 350 }
+            ],
 
             "quote": null,
 
@@ -5758,6 +5770,9 @@
             "attacktype": "contact",
             "dices": { "0": "orangereroll", "1": "yellowreroll", "2": "yellowreroll", "3": "none" },
             "skills": { "0": "magic/spell_caster", "1": "miscellaneous/fascination", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":82, "y":182}, "image_zoom": 370 }
+            ],
 
             "quote": null,
 
@@ -5778,6 +5793,9 @@
             "attacktype": "ranged",
             "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
             "skills": { "0": "movement/evasive", "1": "movement/leap", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":88, "y":133}, "image_zoom": 290 }
+            ],
 
             "quote": null,
 
@@ -5840,6 +5858,9 @@
             "attacktype": "contact",
             "dices": { "0": "red", "1": "none", "2": "none", "3": "none" },
             "skills": { "0": "defense/sacrifice", "1": "attack/reach", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":15, "y":223}, "image_zoom": 410 }
+            ],
 
             "quote": null,
 
@@ -5880,6 +5901,9 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
             "skills": { "0": "attack/reach", "1": "movement/climb", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":70, "y":143}, "image_zoom": 560 }
+            ],
 
             "quote": {
                 "author": {
@@ -5904,6 +5928,9 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
             "skills": { "0": "attack/counterattack", "1": "movement/climb", "2": "none", "3": "none" },
+            "tokens": [
+                { "image_location": {"x":43, "y":149}, "image_zoom": 270, "image": "data/tiles/img/valeria-free-companion_token.webp" }
+            ],
 
             "quote": {
                 "author": {
