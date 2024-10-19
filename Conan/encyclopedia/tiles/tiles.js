@@ -577,7 +577,11 @@ var EncyclopediaTiles = {
                 {
                     EncyclopediaTiles._secondaryData = await Utils.loadJSON("data/tiles/lang/tiles." + Language2 + ".json");
                 }
-                altTitle = " / " + EncyclopediaTiles._secondaryData.list[tile.id].name;
+                let title2 = EncyclopediaTiles._secondaryData.list[tile.id].name;
+                if (tile.name != title2)
+                {
+                    altTitle = " / " + title2;
+                }
             }
             catch (e)
             {

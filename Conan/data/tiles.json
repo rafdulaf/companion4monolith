@@ -5995,9 +5995,9 @@
 
             "image": "data/tiles/img/tlazitlans.webp",
             "imageHD": "data/tiles/img/tlazitlans_hd.webp",
-            "image_location": {"x":45, "y":46},
-            "image_zoom": 100,
-            "model": ["tecuhltli-swordsmen", "xotalanc-women", "xotalanc-warriors", "xotalanc-men"],
+            "image_location": {"x":26, "y":56},
+            "image_zoom": 155,
+            "model": ["tecuhltli-swordsmen", "xotalanc-women", "xotalanc-warriors"],
             "origins": ["red-nails"]
         }
     ]
