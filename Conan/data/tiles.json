@@ -4091,7 +4091,7 @@
             "imageHD": "data/tiles/img/asgrim_hd.webp",
             "image_location": {"x":58, "y":52},
             "image_zoom": 75,
-            "model": "asgrim",
+            "model": "asgrim", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4112,7 +4112,7 @@
             "imageHD": "data/tiles/img/atla_hd.webp",
             "image_location": {"x":92, "y":64},
             "image_zoom": 108,
-            "model": "atla",
+            "model": "atla", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4133,7 +4133,7 @@
             "imageHD": "data/tiles/img/bragi_hd.webp",
             "image_location": {"x":57, "y":57},
             "image_zoom": 73,
-            "model": "bragi",
+            "model": "bragi", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4154,7 +4154,7 @@
             "imageHD": "data/tiles/img/brunhilde_hd.webp",
             "image_location": {"x":58, "y":71},
             "image_zoom": 167,
-            "model": "brunhilde",
+            "model": "brunhilde", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4175,7 +4175,7 @@
             "imageHD": "data/tiles/img/hialmar_hd.webp",
             "image_location": {"x":51, "y":51},
             "image_zoom": 98,
-            "model": "hialmar",
+            "model": "hialmar", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4196,7 +4196,7 @@
             "imageHD": "data/tiles/img/lagertha_hd.webp",
             "image_location": {"x":53, "y":54},
             "image_zoom": 108,
-            "model": "lagertha",
+            "model": "lagertha", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4217,7 +4217,7 @@
             "imageHD": "data/tiles/img/sonya_hd.webp",
             "image_location": {"x":61, "y":50},
             "image_zoom": 115,
-            "model": "sonya",
+            "model": "sonya", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4238,7 +4238,7 @@
             "imageHD": "data/tiles/img/tostig_hd.webp",
             "image_location": {"x":59, "y":54},
             "image_zoom": 81,
-            "model": "tostig",
+            "model": "tostig", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4259,7 +4259,7 @@
             "imageHD": "data/tiles/img/wulfhere_hd.webp",
             "image_location": {"x":54, "y":59},
             "image_zoom": 116,
-            "model": "wulfhere",
+            "model": "wulfhere", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4280,7 +4280,7 @@
             "imageHD": "data/tiles/img/zelata-wanderer_hd.webp",
             "image_location": {"x":53, "y":52},
             "image_zoom": 93,
-            "model": "zelata-wanderer",
+            "model": "zelata-wanderer", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4299,7 +4299,7 @@
             "imageHD": "data/tiles/img/aesir-berserkers_hd.webp",
             "image_location": {"x":50, "y":52},
             "image_zoom": 110,
-            "model": "aesir-berserkers",
+            "model": "aesir-berserkers", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4321,7 +4321,7 @@
             "image_location": {"x":87, "y":43},
             "image_zoom": 278,
             "image_rotation": 20,
-            "model": "aesir-chief",
+            "model": "aesir-chief", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4340,7 +4340,7 @@
             "imageHD": "data/tiles/img/aesir-reavers_hd.webp",
             "image_location": {"x":47, "y":53},
             "image_zoom": 116,
-            "model": "aesir-reavers",
+            "model": "aesir-reavers", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4359,7 +4359,7 @@
             "imageHD": "data/tiles/img/aesir-reavers_hd.webp",
             "image_location": {"x":47, "y":53},
             "image_zoom": 116,
-            "model": "aesir-reavers",
+            "model": "aesir-reavers", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4378,7 +4378,7 @@
             "imageHD": "data/tiles/img/aesir-spearmen_hd.webp",
             "image_location": {"x":52, "y":52},
             "image_zoom": 98,
-            "model": "aesir-spearmen",
+            "model": "aesir-spearmen", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4397,7 +4397,7 @@
             "imageHD": "data/tiles/img/vanir-berserkers_hd.webp",
             "image_location": {"x":50, "y":50},
             "image_zoom": 109,
-            "model": "vanir-berserkers",
+            "model": "vanir-berserkers", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4416,7 +4416,7 @@
             "imageHD": "data/tiles/img/vanir-berserkers_hd.webp",
             "image_location": {"x":50, "y":50},
             "image_zoom": 109,
-            "model": "vanir-berserkers",
+            "model": "vanir-berserkers", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4435,7 +4435,7 @@
             "imageHD": "data/tiles/img/vanir-berserkers_hd.webp",
             "image_location": {"x":50, "y":50},
             "image_zoom": 109,
-            "model": "vanir-berserkers",
+            "model": "vanir-berserkers", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4456,7 +4456,7 @@
             "imageHD": "data/tiles/img/vanir-chief_hd.webp",
             "image_location": {"x":55, "y":61},
             "image_zoom": 112,
-            "model": "vanir-chief",
+            "model": "vanir-chief", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4476,7 +4476,7 @@
             "image_location": {"x":45, "y":50},
             "image_zoom": 140,
             "image_rotation": -9,
-            "model": "vanir-fanatics",
+            "model": "vanir-fanatics", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4496,7 +4496,7 @@
             "image_location": {"x":45, "y":50},
             "image_zoom": 140,
             "image_rotation": -9,
-            "model": "vanir-fanatics",
+            "model": "vanir-fanatics", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4515,7 +4515,7 @@
             "imageHD": "data/tiles/img/vanir-guards_hd.webp",
             "image_location": {"x":42, "y":52},
             "image_zoom": 130,
-            "model": "vanir-guards",
+            "model": "vanir-guards", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4533,7 +4533,7 @@
             "imageHD": "data/tiles/img/hialmar_hd.webp",
             "image_location": {"x":51, "y":51},
             "image_zoom": 98,
-            "model": "hialmar",
+            "model": "hialmar", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4552,7 +4552,7 @@
             "imageHD": "data/tiles/img/hyperborean-mercenaries_hd.webp",
             "image_location": {"x":50, "y":52},
             "image_zoom": 102,
-            "model": "hyperborean-mercenaries",
+            "model": "hyperborean-mercenaries", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4573,7 +4573,7 @@
             "imageHD": "data/tiles/img/mercenary-captain_hd.webp",
             "image_location": {"x":47, "y":54},
             "image_zoom": 101,
-            "model": "mercenary-captain",
+            "model": "mercenary-captain", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4592,7 +4592,7 @@
             "imageHD": "data/tiles/img/shield-maidens_hd.webp",
             "image_location": {"x":52, "y":53},
             "image_zoom": 125,
-            "model": "shield-maidens",
+            "model": "shield-maidens", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4611,7 +4611,7 @@
             "imageHD": "data/tiles/img/atla_hd.webp",
             "image_location": {"x":75, "y":53},
             "image_zoom": 86,
-            "model": "atla",
+            "model": "atla", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4630,7 +4630,7 @@
             "imageHD": "data/tiles/img/atla_hd.webp",
             "image_location": {"x":75, "y":53},
             "image_zoom": 86,
-            "model": "atla",
+            "model": "atla", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4651,7 +4651,7 @@
             "imageHD": "data/tiles/img/aesir-lynxes_hd.webp",
             "image_location": {"x":63, "y":41},
             "image_zoom": 130,
-            "model": "aesir-lynxes",
+            "model": "aesir-lynxes", "modelType": "animal",
             "origins": ["godsofthenorth"]
         },
         
@@ -4672,7 +4672,7 @@
             "imageHD": "data/tiles/img/goats_hd.webp",
             "image_location": {"x":45, "y":57},
             "image_zoom": 140,
-            "model": "goats",
+            "model": "goats", "modelType": "animal",
             "origins": ["godsofthenorth"]
         },
         
@@ -4693,7 +4693,7 @@
             "imageHD": "data/tiles/img/squirrel_hd.webp",
             "image_location": {"x":71, "y":52},
             "image_zoom": 100,
-            "model": "squirrel",
+            "model": "squirrel", "modelType": "animal",
             "origins": ["godsofthenorth"]
         },
         
@@ -4712,7 +4712,7 @@
             "imageHD": "data/tiles/img/wolf-pack_hd.webp",
             "image_location": {"x":15, "y":50},
             "image_zoom": 210,
-            "model": "wolf-pack",
+            "model": "wolf-pack", "modelType": "animal",
             "origins": ["godsofthenorth"]
         },
         
@@ -4733,7 +4733,7 @@
             "imageHD": "data/tiles/img/frost-giant-deceiver_hd.webp",
             "image_location": {"x":53, "y":57.5},
             "image_zoom": 141,
-            "model": "frost-giant-deceiver",
+            "model": "frost-giant-deceiver", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4754,7 +4754,7 @@
             "imageHD": "data/tiles/img/frost-giant-temptress_hd.webp",
             "image_location": {"x":54, "y":53},
             "image_zoom": 140,
-            "model": "frost-giant-temptress",
+            "model": "frost-giant-temptress", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4775,7 +4775,7 @@
             "imageHD": "data/tiles/img/frost-giant-huntress_hd.webp",
             "image_location": {"x":47, "y":50},
             "image_zoom": 112,
-            "model": "frost-giant-huntress",
+            "model": "frost-giant-huntress", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4796,7 +4796,7 @@
             "imageHD": "data/tiles/img/frost-giant-jarl_hd.webp",
             "image_location": {"x":47, "y":53},
             "image_zoom": 107,
-            "model": "frost-giant-jarl",
+            "model": "frost-giant-jarl", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4817,7 +4817,7 @@
             "imageHD": "data/tiles/img/frost-giant-oracle_hd.webp",
             "image_location": {"x":52, "y":57},
             "image_zoom": 140,
-            "model": "frost-giant-oracle",
+            "model": "frost-giant-oracle", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4838,7 +4838,7 @@
             "imageHD": "data/tiles/img/frost-giant-savage_hd.webp",
             "image_location": {"x":54, "y":52},
             "image_zoom": 135,
-            "model": "frost-giant-savage",
+            "model": "frost-giant-savage", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4859,7 +4859,7 @@
             "imageHD": "data/tiles/img/frost-giant-sentinel_hd.webp",
             "image_location": {"x":53, "y":66},
             "image_zoom": 130,
-            "model": "frost-giant-sentinel",
+            "model": "frost-giant-sentinel", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4880,7 +4880,7 @@
             "imageHD": "data/tiles/img/frost-giant-shipwright_hd.webp",
             "image_location": {"x":50, "y":62},
             "image_zoom": 142,
-            "model": "frost-giant-shipwright",
+            "model": "frost-giant-shipwright", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4901,7 +4901,7 @@
             "imageHD": "data/tiles/img/frost-giant-veteran_hd.webp",
             "image_location": {"x":51, "y":52},
             "image_zoom": 130,
-            "model": "frost-giant-veteran",
+            "model": "frost-giant-veteran", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4922,7 +4922,7 @@
             "imageHD": "data/tiles/img/frost-giant-warlord_hd.webp",
             "image_location": {"x":52, "y":69},
             "image_zoom": 133,
-            "model": "frost-giant-warlord",
+            "model": "frost-giant-warlord", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4943,7 +4943,7 @@
             "imageHD": "data/tiles/img/frost-giant-weaver_hd.webp",
             "image_location": {"x":55, "y":53},
             "image_zoom": 139,
-            "model": "frost-giant-weaver",
+            "model": "frost-giant-weaver", "modelType": "human",
             "origins": ["godsofthenorth"]
         },
         
@@ -4964,7 +4964,7 @@
             "imageHD": "data/tiles/img/gullveig_hd.webp",
             "image_location": {"x":62, "y":51},
             "image_zoom": 120,
-            "model": "gullveig",
+            "model": "gullveig", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -4982,7 +4982,7 @@
             "imageHD": "data/tiles/img/gullveig_hd.webp",
             "image_location": {"x":64, "y":96},
             "image_zoom": 260,
-            "model": "gullveig",
+            "model": "gullveig", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5003,7 +5003,7 @@
             "imageHD": "data/tiles/img/half-giant_hd.webp",
             "image_location": {"x":53, "y":53},
             "image_zoom": 130,
-            "model": "half-giant",
+            "model": "half-giant", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5024,7 +5024,7 @@
             "imageHD": "data/tiles/img/abomination_hd.webp",
             "image_location": {"x":59, "y":53},
             "image_zoom": 98,
-            "model": "abomination",
+            "model": "abomination", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5045,7 +5045,7 @@
             "imageHD": "data/tiles/img/child-of-jhil_hd.webp",
             "image_location": {"x":47, "y":54},
             "image_zoom": 110,
-            "model": "child-of-jhil",
+            "model": "child-of-jhil", "modelType": "animal",
             "origins": ["godsofthenorth"]
         },
         
@@ -5066,7 +5066,7 @@
             "imageHD": "data/tiles/img/colossal-crawler_hd.webp",
             "image_location": {"x":58, "y":59},
             "image_zoom": 105,
-            "model": "colossal-crawler",
+            "model": "colossal-crawler", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5087,7 +5087,7 @@
             "imageHD": "data/tiles/img/demon-wolf_hd.webp",
             "image_location": {"x":48, "y":56},
             "image_zoom": 145,
-            "model": "demon-wolf",
+            "model": "demon-wolf", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5105,7 +5105,7 @@
             "imageHD": "data/tiles/img/demon-wolf_hd.webp",
             "image_location": {"x":48, "y":56},
             "image_zoom": 145,
-            "model": "demon-wolf",
+            "model": "demon-wolf", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5126,7 +5126,7 @@
             "imageHD": "data/tiles/img/draugr_hd.webp",
             "image_location": {"x":51, "y":54},
             "image_zoom": 100,
-            "model": "draugr",
+            "model": "draugr", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5144,7 +5144,7 @@
             "imageHD": "data/tiles/img/draugr_hd.webp",
             "image_location": {"x":51, "y":54},
             "image_zoom": 100,
-            "model": "draugr",
+            "model": "draugr", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5165,7 +5165,7 @@
             "imageHD": "data/tiles/img/fiend-of-the-drifts_hd.webp",
             "image_location": {"x":44, "y":63},
             "image_zoom": 130,
-            "model": "fiend-of-the-drifts",
+            "model": "fiend-of-the-drifts", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5186,7 +5186,7 @@
             "imageHD": "data/tiles/img/fiend-of-ymir_hd.webp",
             "image_location": {"x":66, "y":56},
             "image_zoom": 107,
-            "model": "fiend-of-ymir",
+            "model": "fiend-of-ymir", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5205,7 +5205,7 @@
             "imageHD": "data/tiles/img/frozen-dead_hd.webp",
             "image_location": {"x":61, "y":59},
             "image_zoom": 100,
-            "model": "frozen-dead",
+            "model": "frozen-dead", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5224,7 +5224,7 @@
             "imageHD": "data/tiles/img/frozen-dead_hd.webp",
             "image_location": {"x":61, "y":59},
             "image_zoom": 100,
-            "model": "frozen-dead",
+            "model": "frozen-dead", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5246,7 +5246,7 @@
             "image_location": {"x":72, "y":64},
             "image_zoom": 195,
             "image_rotation": -17,
-            "model": "infernal-crone",
+            "model": "infernal-crone", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5267,7 +5267,7 @@
             "imageHD": "data/tiles/img/infernal-hound_hd.webp",
             "image_location": {"x":49, "y":54},
             "image_zoom": 105,
-            "model": "infernal-hound",
+            "model": "infernal-hound", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5288,7 +5288,7 @@
             "imageHD": "data/tiles/img/jormungand_hd.webp",
             "image_location": {"x":50, "y":53},
             "image_zoom": 106,
-            "model": "jormungand",
+            "model": "jormungand", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5306,7 +5306,7 @@
             "imageHD": "data/tiles/img/jormungand_hd.webp",
             "image_location": {"x":50, "y":53},
             "image_zoom": 106,
-            "model": "jormungand",
+            "model": "jormungand", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5327,7 +5327,7 @@
             "imageHD": "data/tiles/img/nidhogg_hd.webp",
             "image_location": {"x":49, "y":52},
             "image_zoom": 102,
-            "model": "nidhogg",
+            "model": "nidhogg", "modelType": "monster",
             "origins": ["godsofthenorth"]
         }
         ,
@@ -5349,7 +5349,7 @@
             "imageHD": "data/tiles/img/manifestation-of-ymir_hd.webp",
             "image_location": {"x":48, "y":63},
             "image_zoom": 140,
-            "model": "manifestation-of-ymir",
+            "model": "manifestation-of-ymir", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5367,7 +5367,7 @@
             "imageHD": "data/tiles/img/manifestation-of-ymir_hd.webp",
             "image_location": {"x":48, "y":63},
             "image_zoom": 140,
-            "model": "manifestation-of-ymir",
+            "model": "manifestation-of-ymir", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5388,7 +5388,7 @@
             "imageHD": "data/tiles/img/son-of-ymir_hd.webp",
             "image_location": {"x":49, "y":57},
             "image_zoom": 101,
-            "model": "son-of-ymir",
+            "model": "son-of-ymir", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5409,7 +5409,7 @@
             "imageHD": "data/tiles/img/ymir-s-herald_hd.webp",
             "image_location": {"x":53, "y":49},
             "image_zoom": 95,
-            "model": "ymir-s-herald",
+            "model": "ymir-s-herald", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5430,7 +5430,7 @@
             "imageHD": "data/tiles/img/ymir-s-hunt-master_hd.webp",
             "image_location": {"x":50, "y":54},
             "image_zoom": 106,
-            "model": "ymir-s-hunt-master",
+            "model": "ymir-s-hunt-master", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5451,7 +5451,7 @@
             "imageHD": "data/tiles/img/seer-of-ymir_hd.webp",
             "image_location": {"x":56, "y":51},
             "image_zoom": 78,
-            "model": "seer-of-ymir",
+            "model": "seer-of-ymir", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5471,7 +5471,7 @@
             "image": "data/tiles/img/son-of-muspell.webp",
             "imageHD": "data/tiles/img/son-of-muspell_hd.webp",
             "image_location": {"x":36, "y":51},
-            "image_zoom": 165,
+            "image_zoom": 165, "modelType": "monster",
             "model": "son-of-muspell",
             "origins": ["godsofthenorth"]
         },
@@ -5493,7 +5493,7 @@
             "imageHD": "data/tiles/img/surt_hd.webp",
             "image_location": {"x":58, "y":55},
             "image_zoom": 130,
-            "model": "surt",
+            "model": "surt", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
@@ -5511,7 +5511,7 @@
             "imageHD": "data/tiles/img/surt_hd.webp",
             "image_location": {"x":58, "y":55},
             "image_zoom": 130,
-            "model": "surt",
+            "model": "surt", "modelType": "monster",
             "origins": ["godsofthenorth"]
         },
         
