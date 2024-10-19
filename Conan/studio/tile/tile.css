@@ -86,7 +86,6 @@
     transform: translate(-50%,-50%);
     top: 6.1%;
     line-height: 100%;
-    font-size: 88%;
     -webkit-text-stroke: 0.2px #fff;
     color: #393024;
 }
@@ -285,15 +284,27 @@
 }
 
 .dialog .tile .field.name {
-    width: 80%;
-    display: inline-block;
     vertical-align: top;
 }
+.dialog .tile .field.namesize,
 .dialog .tile .field.color {
-    width: 20%;
+    width: 50%;
     display: inline-block;
     vertical-align: top;
 }
+
+.dialog .tile .field.namesize input {
+    width: 49px;
+    padding-right: 15px;
+    text-align: right;
+}
+.dialog .tile .field.namesize:after {
+    position: relative;
+    left: -12px;
+    content: "%";
+    color: #000;
+}
+
 .dialog .tile .field input#tname {
    font-size: 34px;
    height: 72px;

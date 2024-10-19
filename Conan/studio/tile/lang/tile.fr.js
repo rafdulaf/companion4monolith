@@ -7,6 +7,8 @@ Tile._i18n = {
 
     'name': "Nom",
     'namePh': "?",
+    'namesize': "Taille du texte",
+    'namesizePh': "?",
     'color': "Couleur",
     'colorGray': "Grise",
     'colorBlue': "Bleue",

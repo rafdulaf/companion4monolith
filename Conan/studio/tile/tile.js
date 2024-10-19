@@ -79,7 +79,7 @@ var Tile = mergeObject(StudioItem, {
 
         if (tile.name !== undefined && tile.name !== null)
         {
-               code += "<div class=\"name\">" + tile.name + "</div>";
+               code += "<div class=\"name\" style=\"font-size: " + (tile.nameSize || "88") + "%;\">" + tile.name + "</div>";
         }
 
         if (tile.reinforcement || tile.reinforcement === "0")
@@ -279,6 +279,10 @@ var Tile = mergeObject(StudioItem, {
                     + "<label for=\"tname\">" + Tile._i18n.name + "</label>"
                     + "<input id=\"tname\" spellcheck='false' name=\"tilename\" autocomplete=\"off\" placeholder=\"" + Tile._i18n.namePh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
                 + "</div>"
+                + "<div class=\"field namesize\">"
+                    + "<label for=\"tnamesize\">" + Tile._i18n.namesize + "</label>"
+                    + "<input id=\"tnamesize\" name=\"tilenamesize\" type=\"number\" autocomplete=\"off\" placeholder=\"" + Tile._i18n.namesizePh + "\" onkeyup=\"Tile._preview();\" onchange=\"Tile._preview();\"/>"
+                + "</div>"
                 + "<div class=\"field color\">"
                     + "<label for=\"tcolor\">" + Tile._i18n.color + "</label>"
                     + "<select id='tcolor' name='tcolor'>"
@@ -403,6 +407,7 @@ var Tile = mergeObject(StudioItem, {
         tile = tile || {
             id: Math.random(),
             name: "",
+            nameSize: "88",
             color: "gray",
             movement: "",
             defense: "",
@@ -459,6 +464,7 @@ var Tile = mergeObject(StudioItem, {
         let o = {
             id: $(".dialog input[name=tilepos]")[0].value,
             name: $(".dialog input[name=tilename]")[0].value,
+            nameSize: $(".dialog input[name=tilenamesize]")[0].value,
             color: $(".dialog select[name=tcolor]")[0].value,
             movement: $(".dialog input[name=tilemovement]")[0].value,
             defense: $(".dialog input[name=tiledefense]")[0].value,
@@ -511,6 +517,7 @@ var Tile = mergeObject(StudioItem, {
     {
         $(".dialog input[name=tilepos]")[0].value = tile.id;
         $(".dialog input[name=tilename]")[0].value = tile.name;
+        $(".dialog input[name=tilenamesize]")[0].value = tile.nameSize || "88";
         $(".dialog select[name=tcolor]")[0].value = tile.color; $(".dialog select[name=tcolor]").attr("data-value", tile.color);
         $(".dialog input[name=tilemovement]")[0].value = tile.movement;
         $(".dialog input[name=tiledefense]")[0].value = tile.defense;
