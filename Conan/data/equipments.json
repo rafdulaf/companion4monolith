@@ -2189,6 +2189,35 @@
             "imagelocation": {"x": "51", "y": "38"},
             "imagezoom": "102",
             "origins": ["godsofthenorth"]
+        },
+        
+        {
+            "id": "armbands_of_bel",
+            "encumbrance": "1",
+
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "orangereroll", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/armbands_of_bel.webp",
+            "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "kordava_boots",
+            "encumbrance": "0",
+            "movement": 1,
+
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/kordava_boots.webp",
+            "origins": ["red-nails"]
         }
     ]
 }
