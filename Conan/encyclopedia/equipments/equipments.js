@@ -237,7 +237,7 @@ var EncyclopediaEquipments = {
             image: equipment.image ? equipment.image + "?version=" + Version : null,
             imagelocation: equipment.imagelocation || {x: "50", y: "50"},
             imagezoom: equipment.imagezoom || "100",
-            imagerotation: "0"
+            imagerotation: equipment.imagerotation || "0"
         };
     },
     

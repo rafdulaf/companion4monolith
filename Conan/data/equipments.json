@@ -2337,6 +2337,22 @@
             "imagelocation": {"x": "72", "y": "91"},
             "imagezoom": "67",
             "origins": ["red-nails"]
+        },
+
+        {
+            "id": "jade_wand",
+            "encumbrance": "1",
+
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false, "force": true },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "image": "data/equipments/img/jade_wand.webp",
+            "imagelocation": {"x": "50", "y": "37"},
+            "imagezoom": "83",
+            "origins": ["red-nails"]
         }
     ]
 }
