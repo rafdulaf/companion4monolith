@@ -109,15 +109,16 @@ var CardEquipment = mergeObject(StudioItem, {
             level++;
             lastIsLarge = true;
         }
-        if (card.manipulation && (card.manipulation[0] != 'none' || card.manipulation.explosive))
+        if (card.manipulation && (card.manipulation[0] != 'none' || card.manipulation.explosive || card.manipulation.force))
         {
             textMalus++;
             code += "<div class=\"manipulation" + (card.manipulation.explosive ? " explosive": "") + " level" + level + "\">"
+                  + (card.manipulation.force == true ? "<img class=\"background-manipulation simple\" src=\"studio/card_equipment/img/manip-simple.webp?version=" + Version + "\"/>" : (
                    + (card.manipulation[1] == 'none' ?
                         "<img class=\"background-manipulation\" src=\"studio/card_equipment/img/" + (!card.manipulation.explosive ? "manip" : "launch") + "-1.webp?version=" + Version + "\"/>" :
                         "<img class=\"background-manipulation duo\" src=\"studio/card_equipment/img/" + (!card.manipulation.explosive ? "manip" : "launch") + "-2.webp?version=" + Version + "\"/>")
                      + (card.manipulation[0] == 'none' ? "" : "<img src=\"studio/card_equipment/img/dice_" + card.manipulation[0] + ".webp?version=" + Version + "\"/>")
-                     + (card.manipulation[1] == 'none' ? "" : "<img src=\"studio/card_equipment/img/dice_" + card.manipulation[1] + ".webp?version=" + Version + "\"/>")
+                     + (card.manipulation[1] == 'none' ? "" : "<img src=\"studio/card_equipment/img/dice_" + card.manipulation[1] + ".webp?version=" + Version + "\"/>")))
                    + "</div>"
             level++;
             lastIsLarge = card.manipulation[0] != 'none';
