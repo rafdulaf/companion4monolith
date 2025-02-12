@@ -1580,7 +1580,7 @@ const urlsToCache = [
 	"data/tiles/img/gullveig.webp",
 	"data/tiles/img/hadrathus.webp",
 	"data/tiles/img/half-giant.webp",
-	"data/tiles/img/haunter-of-the-picts.webp",
+	"data/tiles/img/haunter-of-the-pits.webp",
 	"data/tiles/img/hell-warriors.webp",
 	"data/tiles/img/hellhounds.webp",
 	"data/tiles/img/hialmar.webp",

@@ -3574,7 +3574,7 @@
         },
         
         {
-            "id": "haunter-of-the-picts",
+            "id": "haunter-of-the-pics",
 
             "colors": ["gray"],
             "movement": "3",
@@ -3592,8 +3592,8 @@
                 }
             },
 
-            "image": "data/tiles/img/haunter-of-the-picts.webp",
-            "imageHD": "data/tiles/img/haunter-of-the-picts_hd.webp",
+            "image": "data/tiles/img/haunter-of-the-pits.webp",
+            "imageHD": "data/tiles/img/haunter-of-the-pits_hd.webp",
             "image_location": {"x":57, "y":60},
             "image_zoom": 115,
             "model": "children-of-gullah",
