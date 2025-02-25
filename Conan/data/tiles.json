@@ -5919,7 +5919,7 @@
             "colors": ["gray"],
             "movement": "3",
             "defense": "2",
-            "attacktype": "ranged",
+            "attacktype": "contact",
             "dices": { "0": "orange", "1": "yellowreroll", "2": "none", "3": "none" },
             "skills": { "0": "movement/feline_grace", "1": "movement/climb", "2": "none", "3": "none" },
             "reinforcement": "1",
