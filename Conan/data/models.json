@@ -1882,7 +1882,7 @@
             "thumb": ["data/models/img/crawler_sd.webp"],
             "images": ["data/models/img/crawler_1.webp"],
             "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
-            "paint": null,
+            "paint": { "name": "Jan-Willem van der Pijl", "link": "https://www.facebook.com/groups/1648339468780089/user/100000866181678" },
             "type": "monster",
             "origins": ["red-nails"],
             "forum": "https://the-overlord.com/index.php?/topic/58540-peinture-montrez-moi-votre-être-rampant/"
@@ -1937,9 +1937,9 @@
         {
             "id": "bran-mak-morn",
             "thumb": ["data/models/img/bran-mak-morn_sd.webp"],
-            "images": ["data/models/img/bran-mak-morn_1.webp", "data/models/img/bran-mak-morn_2.webp"],
+            "images": ["data/models/img/bran-mak-morn_1.webp"],
             "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
-            "paint": null,
+            "paint": { "name": "Jan-Willem van der Pijl", "link": "https://www.facebook.com/groups/1648339468780089/user/100000866181678" },
             "type": "human",
             "origins": ["worms-earth"],
             "forum": "https://the-overlord.com/index.php?/topic/58562-peinture-montrez-moi-vos-bran-mak-morn/"
