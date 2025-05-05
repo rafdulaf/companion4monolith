@@ -879,7 +879,7 @@
     
         {
             "id": "tentacles",
-            "thumb": ["data/models/img/tentacles_sd.webp"],
+            "thumb": "data/models/img/tentacles_sd.webp",
             "images": ["data/models/img/tentacles_3.webp"],
             "sculptor": { "name": "Grégory Clavilier", "link": "https://www.facebook.com/CLAVILIERG" },
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
@@ -891,7 +891,7 @@
     
         {
             "id": "baal-pteor",
-            "thumb": ["data/models/img/baal-pteor_sd.webp"],
+            "thumb": "data/models/img/baal-pteor_sd.webp",
             "images": ["data/models/img/baal-pteor_1.webp", "data/models/img/baal-pteor_2.webp"],
             "sculptor": { "name": "Grégory Clavilier", "link": "https://www.facebook.com/CLAVILIERG" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
@@ -902,7 +902,7 @@
     
         {
             "id": "black-dragons",
-            "thumb": ["data/models/img/black-dragons_sd.webp"],
+            "thumb": "data/models/img/black-dragons_sd.webp",
             "images": ["data/models/img/black-dragons_1.webp", "data/models/img/black-dragons_2.webp"],
             "sculptor": { "name": "Gautier Giroud", "link": "https://www.facebook.com/gautier.giroud" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
@@ -914,7 +914,7 @@
     
         {
             "id": "black-dragons",
-            "thumb": ["data/models/img/black-dragons_sd.webp"],
+            "thumb": "data/models/img/black-dragons_sd.webp",
             "images": ["data/models/img/black-dragons_1.webp", "data/models/img/black-dragons_2.webp"],
             "sculptor": { "name": "Gautier Giroud", "link": "https://www.facebook.com/gautier.giroud" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
@@ -926,7 +926,7 @@
     
         {
             "id": "the-black-ones",
-            "thumb": ["data/models/img/the-black-ones_sd.webp"],
+            "thumb": "data/models/img/the-black-ones_sd.webp",
             "images": ["data/models/img/the-black-ones_1.webp", "data/models/img/the-black-ones_2.webp"],
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
@@ -938,7 +938,7 @@
     
         {
             "id": "crossbowmen",
-            "thumb": ["data/models/img/crossbowmen_sd.webp"],
+            "thumb": "data/models/img/crossbowmen_sd.webp",
             "images": ["data/models/img/crossbowmen_1.webp", "data/models/img/crossbowmen_2.webp"],
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
@@ -950,7 +950,7 @@
     
         {
             "id": "crossbowmen",
-            "thumb": ["data/models/img/crossbowmen_sd.webp"],
+            "thumb": "data/models/img/crossbowmen_sd.webp",
             "images": ["data/models/img/crossbowmen_1.webp", "data/models/img/crossbowmen_2.webp"],
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
@@ -962,7 +962,7 @@
     
         {
             "id": "demon-of-the-earth",
-            "thumb": ["data/models/img/demon-of-the-earth_sd.webp"],
+            "thumb": "data/models/img/demon-of-the-earth_sd.webp",
             "images": ["data/models/img/demon-of-the-earth_1.webp"],
             "sculptor": { "name": "Stéphane Nguyen", "link": "https://www.facebook.com/profile.php?id=100014269356913" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
@@ -973,7 +973,7 @@
     
         {
             "id": "dragon",
-            "thumb": ["data/models/img/dragon_sd.webp"],
+            "thumb": "data/models/img/dragon_sd.webp",
             "images": ["data/models/img/dragon_1.webp", "data/models/img/dragon_2.webp"],
             "sculptor": { "name": "Viktor Dragosani", "link": "https://www.facebook.com/search/top?q=viktor%20dragosani" },
             "paint": { "name": "Dahkon", "link": "https://the-overlord.com/index.php?/profile/44-dahkon/"},
@@ -984,7 +984,7 @@
     
         {
             "id": "giant-wolves",
-            "thumb": ["data/models/img/giant-wolves_sd.webp"],
+            "thumb": "data/models/img/giant-wolves_sd.webp",
             "images": ["data/models/img/giant-wolves_1.webp"],
             "sculptor": { "name": "Elfried Perochon", "link": null },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
@@ -996,7 +996,7 @@
     
         {
             "id": "giant-wolves",
-            "thumb": ["data/models/img/giant-wolves_sd.webp"],
+            "thumb": "data/models/img/giant-wolves_sd.webp",
             "images": ["data/models/img/giant-wolves_1.webp"],
             "sculptor": { "name": "Elfried Perochon", "link": null },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
@@ -1007,7 +1007,7 @@
     
         {
             "id": "sabertooth-tiger",
-            "thumb": ["data/models/img/sabertooth-tiger_sd.webp"],
+            "thumb": "data/models/img/sabertooth-tiger_sd.webp",
             "images": ["data/models/img/sabertooth-tiger_1.webp"],
             "sculptor": { "name": "Laslo Forgach", "link": "https://www.facebook.com/LasloForgachsculptor" },
             "paint": { "name": "Not Quite Dead", "link": "https://the-overlord.com/index.php?/profile/891-not-quite-dead/"},
@@ -1018,7 +1018,7 @@
     
         {
             "id": "afari",
-            "thumb": ["data/models/img/afari_sd.webp"],
+            "thumb": "data/models/img/afari_sd.webp",
             "images": ["data/models/img/afari_1.webp", "data/models/img/afari_2.webp"],
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "Roolz (Licence Creative Common by-cc-sa)", "link": "https://the-overlord.com/index.php?/profile/13-roolz/"},
@@ -1029,7 +1029,7 @@
     
         {
             "id": "ghayoor",
-            "thumb": ["data/models/img/ghayoor_sd.webp"],
+            "thumb": "data/models/img/ghayoor_sd.webp",
             "images": ["data/models/img/ghayoor_1.webp", "data/models/img/ghayoor_2.webp"],
             "sculptor": { "name": "Stéphane Simon", "link": "https://www.facebook.com/profile.php?id=100011531299652" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
@@ -1040,7 +1040,7 @@
     
         {
             "id": "shafiah",
-            "thumb": ["data/models/img/shafiah_sd.webp"],
+            "thumb": "data/models/img/shafiah_sd.webp",
             "images": ["data/models/img/shafiah_1.webp", "data/models/img/shafiah_2.webp"],
             "sculptor": { "name": "Stéphane Simon", "link": "https://www.facebook.com/profile.php?id=100011531299652" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
@@ -1051,7 +1051,7 @@
     
         {
             "id": "shubba",
-            "thumb": ["data/models/img/shubba_sd.webp"],
+            "thumb": "data/models/img/shubba_sd.webp",
             "images": ["data/models/img/shubba_1.webp","data/models/img/shubba_2.webp"],
             "sculptor": { "name": "Gautier Giroud", "link": "https://www.facebook.com/gautier.giroud" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
@@ -1062,7 +1062,7 @@
     
         {
             "id": "atali",
-            "thumb": ["data/models/img/atali_sd.webp"],
+            "thumb": "data/models/img/atali_sd.webp",
             "images": ["data/models/img/atali_1.webp"],
             "sculptor": { "name": "Viktor Dragosani", "link": "https://www.facebook.com/search/top?q=viktor%20dragosani" },
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
@@ -1073,7 +1073,7 @@
     
         {
             "id": "nijgor",
-            "thumb": ["data/models/img/nijgor_sd.webp"],
+            "thumb": "data/models/img/nijgor_sd.webp",
             "images": ["data/models/img/nijgor_1.webp"],
             "sculptor": { "name": "Viktor Dragosani", "link": "https://www.facebook.com/search/top?q=viktor%20dragosani" },
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
@@ -1084,7 +1084,7 @@
     
         {
             "id": "seski",
-            "thumb": ["data/models/img/seski_sd.webp"],
+            "thumb": "data/models/img/seski_sd.webp",
             "images": ["data/models/img/seski_1.webp"],
             "sculptor": { "name": "Viktor Dragosani", "link": "https://www.facebook.com/search/top?q=viktor%20dragosani" },
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
@@ -1095,7 +1095,7 @@
     
         {
             "id": "vanir-warriors",
-            "thumb": ["data/models/img/vanir-warriors_sd.webp"],
+            "thumb": "data/models/img/vanir-warriors_sd.webp",
             "images": ["data/models/img/vanir-warriors_1.webp", "data/models/img/vanir-warriors_2.webp"],
             "sculptor": { "name": "Gaël Goumon", "link": "https://www.facebook.com/gael.goumon" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
@@ -1107,7 +1107,7 @@
     
         {
             "id": "crows",
-            "thumb": ["data/models/img/crows_sd.webp"],
+            "thumb": "data/models/img/crows_sd.webp",
             "images": ["data/models/img/crows_1.webp"],
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
@@ -1119,7 +1119,7 @@
     
         {
             "id": "aesir-warriors",
-            "thumb": ["data/models/img/aesir-warriors_sd.webp"],
+            "thumb": "data/models/img/aesir-warriors_sd.webp",
             "images": ["data/models/img/aesir-warriors_1.webp", "data/models/img/aesir-warriors_2.webp"],
             "sculptor": { "name": "Stéphane Simon", "link": "https://www.facebook.com/profile.php?id=100011531299652" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
@@ -1131,7 +1131,7 @@
     
         {
             "id": "shuang-mian",
-            "thumb": ["data/models/img/shuang-mian_sd.webp"],
+            "thumb": "data/models/img/shuang-mian_sd.webp",
             "images": ["data/models/img/shuang-mian_1.webp", "data/models/img/shuang-mian_2.webp"],
             "sculptor": { "name": "Stéphane Simon", "link": "https://www.facebook.com/profile.php?id=100011531299652" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
@@ -1142,7 +1142,7 @@
     
         {
             "id": "khitan-guards",
-            "thumb": ["data/models/img/khitan-guards_sd.webp"],
+            "thumb": "data/models/img/khitan-guards_sd.webp",
             "images": ["data/models/img/khitan-guards_1.webp"],
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
@@ -1154,7 +1154,7 @@
     
         {
             "id": "honor-guards",
-            "thumb": ["data/models/img/honor-guards_sd.webp"],
+            "thumb": "data/models/img/honor-guards_sd.webp",
             "images": ["data/models/img/honor-guards_1.webp"],
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
@@ -1166,7 +1166,7 @@
     
         {
             "id": "javelin-throwers",
-            "thumb": ["data/models/img/javelin-throwers_sd.webp"],
+            "thumb": "data/models/img/javelin-throwers_sd.webp",
             "images": ["data/models/img/javelin-throwers_1.webp", "data/models/img/javelin-throwers_2.webp"],
             "sculptor": { "name": "Stéphane Simon", "link": "https://www.facebook.com/profile.php?id=100011531299652" },
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
@@ -1178,7 +1178,7 @@
     
         {
             "id": "foo-dogs",
-            "thumb": ["data/models/img/foo-dogs_sd.webp"],
+            "thumb": "data/models/img/foo-dogs_sd.webp",
             "images": ["data/models/img/foo-dogs_1.webp"],
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
@@ -1190,7 +1190,7 @@
     
         {
             "id": "thot-amon",
-            "thumb": ["data/models/img/thot-amon_sd.webp"],
+            "thumb": "data/models/img/thot-amon_sd.webp",
             "images": ["data/models/img/thot-amon_1.webp", "data/models/img/thot-amon_2.webp"],
             "sculptor": { "name": "Gautier Giroud", "link": "https://www.facebook.com/gautier.giroud" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
@@ -1201,7 +1201,7 @@
     
         {
             "id": "scorpion-broodmother",
-            "thumb": ["data/models/img/scorpion-broodmother_sd.webp"],
+            "thumb": "data/models/img/scorpion-broodmother_sd.webp",
             "images": ["data/models/img/scorpion-broodmother_1.webp"],
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
@@ -1212,7 +1212,7 @@
     
         {
             "id": "giant-scorpion",
-            "thumb": ["data/models/img/giant-scorpion_sd.webp"],
+            "thumb": "data/models/img/giant-scorpion_sd.webp",
             "images": ["data/models/img/giant-scorpion_1.webp", "data/models/img/giant-scorpion_2.webp"],
             "sculptor": { "name": "Gaël Goumon", "link": "https://www.facebook.com/gael.goumon" },
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
@@ -1224,7 +1224,7 @@
     
         {
             "id": "giant-scorpion",
-            "thumb": ["data/models/img/giant-scorpion_sd.webp"],
+            "thumb": "data/models/img/giant-scorpion_sd.webp",
             "images": ["data/models/img/giant-scorpion_1.webp", "data/models/img/giant-scorpion_2.webp"],
             "sculptor": { "name": "Gaël Goumon", "link": "https://www.facebook.com/gael.goumon" },
             "paint": { "name": "madcollector", "link": "https://the-overlord.com/index.php?/profile/5567-madcollector/"},
@@ -1235,7 +1235,7 @@
     
         {
             "id": "eternal-guard",
-            "thumb": ["data/models/img/eternal-guard_sd.webp"],
+            "thumb": "data/models/img/eternal-guard_sd.webp",
             "images": ["data/models/img/eternal-guard_1.webp"],
             "sculptor": { "name": "Arnaud Boudoiron", "link": "https://www.facebook.com/arnaud.boudoiron" },
             "paint": { "name": "Bawon Samdi", "link": "https://the-overlord.com/index.php?/profile/84-bawon-samdi/"},
@@ -1247,7 +1247,7 @@
     
         {
             "id": "assassins",
-            "thumb": ["data/models/img/assassins_sd.webp"],
+            "thumb": "data/models/img/assassins_sd.webp",
             "images": ["data/models/img/assassins_1.webp", "data/models/img/assassins_2.webp"],
             "sculptor": { "name": "Stéphane Simon", "link": "https://www.facebook.com/profile.php?id=100011531299652" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
@@ -1259,7 +1259,7 @@
                         
         {
             "id": "spartan",
-            "thumb": ["data/models/img/spartan_sd.webp"],
+            "thumb": "data/models/img/spartan_sd.webp",
             "images": ["data/models/img/spartan_1.webp"],
             "sculptor": { "name": "Stéphane Simon", "link": "https://www.facebook.com/profile.php?id=100011531299652" },
             "paint": { "name": "Martin Grandbarbe", "link": "https://www.facebook.com/martin.grandbarbe"},
@@ -1779,7 +1779,7 @@
             "thumb": "data/models/img/tascela_sd.webp",
             "images": ["data/models/img/tascela_1.webp"],
             "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
-            "paint": null,
+            "paint": { "name": "Jan-Willem van der Pijl", "link": "https://www.facebook.com/groups/1648339468780089/user/100000866181678" },
             "type": "human",
             "origins": ["red-nails"],
             "forum": "https://the-overlord.com/index.php?/topic/58558-peinture-montrez-moi-vos-tascela/"
@@ -1824,7 +1824,7 @@
             "thumb": "data/models/img/xotalanc-women_sd.webp",
             "images": ["data/models/img/xotalanc-women_1.webp"],
             "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
-            "paint": null,
+            "paint": { "name": "Jan-Willem van der Pijl", "link": "https://www.facebook.com/groups/1648339468780089/user/100000866181678" },
             "type": "human",
             "origins": ["red-nails"],
             "count": 5,
@@ -1836,7 +1836,7 @@
             "thumb": "data/models/img/tecuhltli-swordsmen_sd.webp",
             "images": ["data/models/img/tecuhltli-swordsmen_1.webp"],
             "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
-            "paint": null,
+            "paint": { "name": "Jan-Willem van der Pijl", "link": "https://www.facebook.com/groups/1648339468780089/user/100000866181678" },
             "type": "human",
             "origins": ["red-nails"],
             "count": 5,
@@ -1848,7 +1848,7 @@
             "thumb": "data/models/img/xotalanc-warriors_sd.webp",
             "images": ["data/models/img/xotalanc-warriors_1.webp"],
             "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
-            "paint": null,
+            "paint": { "name": "Jan-Willem van der Pijl", "link": "https://www.facebook.com/groups/1648339468780089/user/100000866181678" },
             "type": "human",
             "origins": ["red-nails"],
             "count": 6,
@@ -1915,9 +1915,9 @@
         {
             "id": "worms-of-the-earth",
             "thumb": "data/models/img/worms-of-the-earth_sd.webp",
-            "images": ["data/models/img/worms-of-the-earth_1.webp"],
+            "images": ["data/models/img/worms-of-the-earth_1.webp", "data/models/img/worms-of-the-earth_2.webp"],
             "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
-            "paint": null,
+            "paint": { "name": "Jan-Willem van der Pijl", "link": "https://www.facebook.com/groups/1648339468780089/user/100000866181678" },
             "type": "monster",
             "origins": ["worms-earth"],
             "count": 8,
@@ -1927,9 +1927,9 @@
         {
             "id": "atla",
             "thumb": "data/models/img/atla_sd.webp",
-            "images": ["data/models/img/atla_1.webp", "data/models/img/atla_2.webp"],
+            "images": ["data/models/img/atla_1.webp"],
             "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
-            "paint": null,
+            "paint": { "name": "Jan-Willem van der Pijl", "link": "https://www.facebook.com/groups/1648339468780089/user/100000866181678" },
             "type": "human",
             "origins": ["worms-earth"],
             "forum": "https://the-overlord.com/index.php?/topic/58561-peinture-montrez-moi-vos-atla/"
