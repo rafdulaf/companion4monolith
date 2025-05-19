@@ -1892,9 +1892,9 @@
         {
             "id": "crocodiles",
             "thumb": "data/models/img/crocodile_sd.webp",
-            "images": ["data/models/img/crocodile_1.webp", "data/models/img/crocodile_2.webp"],
+            "images": ["data/models/img/crocodile_1.webp"],
             "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
-            "paint": null,
+            "paint": { "name": "Arzok", "link": "https://the-overlord.com/index.php?/profile/141-arzok/" },
             "type": "animal",
             "origins": ["red-nails"],
             "count": 5,
