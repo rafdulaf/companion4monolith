@@ -1906,7 +1906,7 @@
             "thumb": "data/models/img/pillar_sd.webp",
             "images": ["data/models/img/pillar_1.webp"],
             "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
-            "paint": null,
+            "paint": { "name": "Arzok", "link": "https://the-overlord.com/index.php?/profile/141-arzok/" },
             "type": "scenery",
             "origins": ["red-nails"],
             "forum": "https://the-overlord.com/index.php?/topic/58552-peinture-montrez-moi-votre-pilier-18/"
