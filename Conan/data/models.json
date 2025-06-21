@@ -1810,9 +1810,9 @@
         {
             "id": "xotalanc-men",
             "thumb": "data/models/img/xotalanc-men_sd.webp",
-            "images": ["data/models/img/xotalanc-men_1.webp"],
+            "images": ["data/models/img/xotalanc-men_1.webp", "data/models/img/xotalanc-men_2.webp"],
             "sculptor": { "name": "Olivier Bouchet", "link": "https://www.facebook.com/olivier.bouchet.16" },
-            "paint": null,
+            "paint": { "name": "Arzok", "link": "https://the-overlord.com/index.php?/profile/141-arzok/" },
             "type": "human",
             "origins": ["red-nails"],
             "count": 5,
