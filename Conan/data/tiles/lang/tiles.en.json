@@ -414,7 +414,8 @@
             "quote": {
                 "text": "The man was naked except for a loin-cloth and high-strapped sandals. He was brown-skinned, with close-cropped black hair and restless black eyes that set off a broad, arrogant face. In girth and breadth he was enormous, with huge limbs on which the great muscles swelled and rippled at each slightest movement. His hands were the largest Conan had ever seen. The assurance of gigantic physical strength colored his every action and inflection.\n“Who the devil are you?” Conan growled.\n“I am Baal-pteor,” the man answered. “Once, long ago and in another land, I had another name. But this is a good name, and why Totrasmek gave it to me, any temple wench can tell you.”",
                 "origin": "The Man-Eaters of Zamboula"
-            }
+            },
+            "comment": "The life token was not included in this expansion and was distributed separately."
         },
         "black-dragons": {
             "name": "Black Dragons",
@@ -456,14 +457,16 @@
             "quote": {
                 "text": "I am Thugra Khotan, who shall rule the world despite your paltry gods! The desert is filled with my people; the demons of the earth shall do my bidding, as the reptiles of the earth obey me.",
                 "origin": "Black Colossus"
-            }
+            }            ,
+            "comment": "The life token was not included in this expansion and was distributed separately."
         },
         "dragon": {
             "name": "Dragon",
             "quote": {
                 "text": "Through the thicket was thrust a head of nightmare and lunacy. Grinning jaws bared rows of dripping yellow tusks; above the yawning mouth wrinkled a saurian-like snout. Huge eyes, like those of a python a thousand times magnified, stared unwinkingly at the petrified humans clinging to the rock above it. Blood smeared the scaly, flabby lips and dripped from the huge mouth.\nThe head, bigger than that of a crocodile, was further extended on a long scaled neck on which stood up rows of serrated spikes, and after it, crushing down the briars and saplings, waddled the body of a titan, a gigantic, barrel-bellied torso on absurdly short legs. The whitish belly almost raked the ground, while the serrated back-bone rose higher than Conan could have reached on tiptoe. A long spiked tail, like that of a gargantuan scorpion, trailed out behind.",
                 "origin": "Red Nails"
-            }
+            }            ,
+            "comment": "The life token was not included in this expansion and was distributed separately."
         },
         "giant-wolves": {
             "name": "Giant Wolves",
@@ -477,37 +480,44 @@
             "quote": {
                 "text": "A shuddering gasp swept over the village and men crowded hastily back, jamming one another between the huts. Balthus felt the short hair stir on his scalp. The creature that stood in the gate was like the embodiment of nightmare legend. Its color was of a curious pale quality which made it seem ghostly and unreal in the dim light. But there was nothing unreal about the low-hung savage head, and the great curved fangs that glistened in the firelight. On noiseless padded feet it approached like a phantom out of the past. It was a survival of an older, grimmer age, the ogre of many an ancient legend—a saber-tooth tiger. No Hyborian hunter had looked upon one of those primordial brutes for centuries. Immemorial myths lent the creatures a supernatural quality, induced by their ghostly color and their fiendish ferocity.\nThe beast that glided toward the men on the stakes was longer and heavier than a common, striped tiger, almost as bulky as a bear. Its shoulders and forelegs were so massive and mightily muscled as to give it a curiously top- heavy look, though its hindquarters were more powerful than that of a lion. Its jaws were massive, but its head was brutishly shaped. Its brain capacity was small. It had room for no instincts except those of destruction. It was a freak of carnivorous development, evolution run amuck in a horror of fangs and talons.",
                 "origin": "Beyond the Black River"
-            }
+            },
+            "comment": "The life token was not included in this expansion and was distributed separately."
         },
         "afari": {
             "name": "Afari",
             "quote": {
                 "text": "Tuthmes ! Let me in ! The devil is loose in Shumballa !” The door was opened, and the speaker burst into the room – a lean, wiry man in a white djebbeh, dark skinned, the whites of his eyes gleaming. He was met by Tuthmes, tall, slender, dusky, with the straight features of his caste. “What are you saying, Afari ?” Afari closed the door before he answered ; he was panting as if from a long run. He was shorter than Tuthmes, and the negroid was more predominant in his features. “Amboola ! He is dead! In the Red Tower !",
                 "origin": "Untitled draft"
-            }
+            },
+            "comment": "The life token was not included in this expansion and was distributed separately."
         },
         "ghayoor": {
-            "name": "Ghayoor"
+            "name": "Ghayoor",
+            "comment": "The life token was not included in this expansion and was distributed separately."
         },
         "shafiah": {
-            "name": "Shafiah"
+            "name": "Shafiah",
+            "comment": "The life token was not included in this expansion and was distributed separately."
         },
         "shubba": {
             "name": "Shubba",
             "quote": {
                 "text": "Shubba returned to Shumballa, and coming to Thuthmes in his chamber where leopard skins carpeted the marble floor, he said: “I have found the woman you desired. A Nemedian girl, captured from a trading vessel of Argos. I paid the Shemitish slave-trader many broad gold pieces.” “Let me see her,” commanded Thuthmes, and Shubba left the room, returning a moment later leading a girl by the wrist. She was supple, her white skin almost dazzling in contrast with the brown and black bodies to which Thuthmes was accustomed. Her hair fell in a curly rippling gold stream over her white shoulders. She was clad only in a tattered shift. This Shubba removed, leaving her shrinking in complete nudity.",
                 "origin": "Untitled draft"
-            }
+            },
+            "comment": "The life token was not included in this expansion and was distributed separately."
         },
         "vanir-valkyrie": {
-            "name": "Vanir Valkyrie"
+            "name": "Vanir Valkyrie",
+            "comment": "The life token was not included in this expansion and was distributed separately."
         },
         "salome": {
             "name": "Salome",
             "quote": {
                 "text": "It was the sight of this face which froze the cry in Taramis’s throat. The features were her own! She might have been looking into a mirror which subtly altered her reflection, lending it a tigerish gleam of eye, a vindictive curl of lip.\n“Ishtar!” gasped Taramis. “I am bewitched!”\n“Bewitched? No, sweet sister!”\n“Sister? I have no sister.”\nSalome laughed fiercely, and slapped her bosom. Between her breasts shone a crescent, red as blood.\n“The mark of the witch!” cried Taramis, recoiling.\n“Aye! The curse of the kings of Khauran! They tell how the first queen of our line had traffic with a fiend of darkness and bore him a daughter who lives in foul legendry to this day. And thereafter in each century a girl baby was born with a scarlet half-moon between her breasts, that signified her destiny. ‘Every century a witch shall be born.’ So ran the ancient curse. And so it has come to pass.\n“Well, this world contains all I desire – power, and pomp, and glittering pageantry, handsome men and soft women for my paramours and my slaves. I have returned to take that to which I have as much right as you.”",
                 "origin": "A Witch shall be Born"
-            }
+            },
+            "comment": "The life token was not included in this expansion and was distributed separately."
         },
         "atali": {
             "name": "Atali",

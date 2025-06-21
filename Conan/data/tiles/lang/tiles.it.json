@@ -414,7 +414,8 @@
             "quote": {
                 "text": "Era nudo: portava solo un perizoma e un paio di sandali. Aveva la pelle bruna, i capelli neri tagliati cortissimi, e irrequieti occhi neri che spiccavano nel largo volto arrogante. Era enorme, con membra immani e muscoli che si gonfiavano e guizzavano al minimo movimento. Le mani erano le più grandi che Conan avesse mai visto. La consapevolezza della propria forza fisica colorava ogni azione, ogni inflessione del gigante.\n— Chi diavolo sei? — ringhiò.\n— Io sono Baal-pteor — rispose l'uomo. — Una volta, molto tempo fa e in un'altra terra, avevo un altro nome. Ma questo è un bel nome; e perché Totrasmek me l'ha assegnato, può dirtelo ogni ancella del tempio.",
                 "origin": "Ombre a Zamboula"
-            }
+            },
+            "comment": "Il gettone vita non era incluso in questa espansione ed è stato distribuito separatamente."
         },
         "black-dragons": {
             "name": "Dragoni Neri",
@@ -456,14 +457,16 @@
             "quote": {
                 "text": "Io sono Thugra Khotan, che regnerà sul mondo, nonostante i tuoi dei meschini! Il deserto è pieno di miei seguaci; i demoni della terra obbediranno ai miei comandi, come mi obbediscono i rettili.",
                 "origin": "Colosso Nero"
-            }
+            },
+            "comment": "Il gettone vita non era incluso in questa espansione ed è stato distribuito separatamente."
         },
         "dragon": {
             "name": "Drago",
             "quote": {
                 "text": "Dal macchione si sporse la testa di un essere d'incubo e di follia. Le fauci socchiuse lasciavano snudate file e file di gialle zanne sgocciolanti; al disopra della bocca, il muso grinzoso era quello di un rettile. Gli enormi occhi, simili agli occhi di un pitone ma ingranditi mille volte, fissavano i due esseri umani, che, impietriti, si tenevano aggrappati alla roccia, più in alto. Del sangue macchiava le labbra, flaccide e squamose, e sgocciolava dall'enorme bocca.\nLa testa, più grande di quella di un coccodrillo, s'innestava su un lungo collo a scaglie sovrastato da file di creste appuntite: il corpo, che schiacciava rovi e arboscelli, era quello di un titano, con un torace gigantesco a forma di botte sorretto da zampe assurdamente corte. Il ventre biancastro sfiorava quasi il suolo, e la spina dorsale crestata era così alta che Conan avrebbe stentato a sfiorarla anche alzandosi in punta di pie Una lunga coda uncinata, come quella di un colossale scorpione, si trascinava al suolo.",
                 "origin": "Chiodi Rossi"
-            }
+            },
+            "comment": "Il gettone vita non era incluso in questa espansione ed è stato distribuito separatamente."
         },
         "giant-wolves": {
             "name": "Lupi Giganti",
@@ -477,37 +480,44 @@
             "quote": {
                 "text": "Un'esclamazione soffocata percorse l'intero villaggio, e gli uomini si affrettarono a indietreggiare infilandosi tra le casupole. Balthus si sentì rizzare i capelli in testa. L'essere che stava all'ingresso pareva l'incarnazione di una leggenda d'incubo. Il colore pallido lo faceva apparire spettrale e irreale nella fioca luce. Ma non c'era nulla d'irreale nella selvaggia testa protesa in avanti, nelle grandi zanne ricurve che luccicavano nella luce del fuoco. Procedendo su zampe vellutate e silenziose si avvicinò come un fantasma uscito dal passato. Era un superstite di un'epoca più antica e truce, l'orco di molte leggende antiche: una tigre dai denti a sciabola. Nessun cacciatore hyboriano, ormai da secoli, aveva visto uno di quei mostri primordiali. Miti antichissimi conferivano alla belva qualcosa di soprannaturale, forse a causa del colore spettrale e della ferocia diabolica.\nLa belva che avanzava verso gli uomini legati ai pali era più lunga e grande di una comune tigre striata: la sua mole era quasi quella di un orso. Le spalle e le zampe anteriori erano così poderosamente muscolose da dare una bizzarra sensazione di squilibrio, benché i quarti posteriori fossero più potenti di quelli di un leone. Le fauci erano enormi, ma la testa aveva una modellatura rozza. La capacità cranica era limitata: in quel cervello c'era posto solo per l'istinto di distruzione. Era una mostruosità nell'evoluzione dei carnivori, un'orrida follia di zanne e di artigli.",
                 "origin": "Oltre il Fiume Nero"
-            }
+            },
+            "comment": "Il gettone vita non era incluso in questa espansione ed è stato distribuito separatamente."
         },
         "afari": {
             "name": "Afari",
             "quote": {
                 "text": "— Lord Tuthmes! Fammi entrare! Il demone è di nuovo in libertà!\nLa porta si aprì e Tuthmes comparve sulla soglia: un uomo alto, snello, aristocratico, con i lineamenti sottili e la pelle bruna della sua casta. Era avvolto in una veste di seta bianca e teneva in mano una piccola lampada di bronzo.\n— Cosa succede, Afari? — chiese.\nII visitatore, con gli occhi sbarrati, si precipitò nella stanza. Ansimava come per una lunga corsa. Era un uomo snello e muscoloso, dalla pelle nera, più basso di Tuthmes: sul suo viso, i tratti ancestrali dei negri erano molto accentuati. Nonostante la fretta che aveva, si premurò di chiudere la porta prima di rispondere.\n— Amboola! È morto! Nella Torre Rossa!",
                 "origin": "Il Muso nel Buio"
-            }
+            },
+            "comment": "Il gettone vita non era incluso in questa espansione ed è stato distribuito separatamente."
         },
         "ghayoor": {
-            "name": "Ghayoor"
+            "name": "Ghayoor",
+            "comment": "Il gettone vita non era incluso in questa espansione ed è stato distribuito separatamente."
         },
         "shafiah": {
-            "name": "Shafiah"
+            "name": "Shafiah",
+            "comment": "Il gettone vita non era incluso in questa espansione ed è stato distribuito separatamente."
         },
         "shubba": {
             "name": "Shubba",
             "quote": {
                 "text": "Shubba, servitore di Tuthmes, fu di ritorno a Meroê. Quando si recò da Tuthmes, nella camera di questi, dove il pavimento marmoreo era coperto di pelli di leoni, annunciò: — Ho trovato la donna da te desiderata, o padrone... una ragazza nemediana, catturata su una nave mercantile di Argos. Per lei ho pagato al mercante di schiavi shemita numerosi grossi pezzi d'oro.\n— Fammela vedere — ordinò Tuthmes.\nShubba lasciò la camera e ritornò un momento più tardi, conducendo per il polso una ragazza. Era snella, e il suo corpo bianco faceva uno stridente contrasto con le carnagioni brune e nere a cui Tuthmes era abituato. I suoi capelli ricadevano in un ruscello arricciato, ondulato, dorato sulle bianche spalle. Indossava soltanto una veste stracciata. Shubba gliela tolse, ed ella, completamente nuda, cercò di coprirsi con le braccia.",
                 "origin": "Il Muso nel Buio"
-            }
+            },
+            "comment": "Il gettone vita non era incluso in questa espansione ed è stato distribuito separatamente."
         },
         "vanir-valkyrie": {
-            "name": "Valchiria Vanir"
+            "name": "Valchiria Vanir",
+            "comment": "Il gettone vita non era incluso in questa espansione ed è stato distribuito separatamente."
         },
         "salome": {
             "name": "Salome",
             "quote": {
                 "text": "E fu quella vista a raggelare il grido nella gola di Taramis. I lineamenti erano i suoi! Era come se si guardasse in uno specchio che alterava sottilmente la sua immagine, aggiungendole lo scintillio tigrino degli occhi, l'aggricciarsi vendicativo delle labbra.\n“Ishtar!” — gemette Taramis. — “È una stregoneria!”\n“Stregoneria? No, dolce sorella! Non c'è nessuna stregoneria.”\n“Sorella? Io non ho sorelle.”\nSalome rise rabbiosamente, e si batté la mano sul petto. La tunica scollata scopriva la parte superiore dei seni torniti, in mezzo a cui splendeva un marchio bizzarro… una mezzaluna rossa come sangue.\n“Il marchio della strega!” esclamò Taramis, rabbrividendo.\n“Sì! La maledizione dei re di Khauran! Raccontano che la prima regina della nostra dinastia ebbe commercio con un demone delle tenebre e gli partorì una figlia che ancora oggi vive nelle leggende immonde. Da allora, ogni secolo, nasce nella dinastia askhauriana una bimba con una mezzaluna scarlatta sul petto che indica il suo destino. ‘Ogni secolo nascerà una strega.’ Così diceva l'antica maledizione. E così è sempre accaduto. \n“Bene, questo mondo racchiude tutto ciò che desidero… potenza e sfarzo, e lusso scintillante, uomini prestanti destinati a diventare i miei amanti, tenere donne adatte a diventare mie schiave.Sono tornata per prendere ciò che spetta di diritto a me non meno che a te.”",
                 "origin": "Nascerà una strega"
-            }
+            },
+            "comment": "Il gettone vita non era incluso in questa espansione ed è stato distribuito separatamente."
         },
         "atali": {
             "name": "Atali",
