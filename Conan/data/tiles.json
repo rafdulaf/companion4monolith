@@ -3399,6 +3399,25 @@
         },
         
         {
+            "id": "corinthian-skeleton",
+
+            "colors": ["gray"],
+            "movement": "1",
+            "defense": "0",
+            "attacktype": "contact",
+            "dices": { "0": "yellow", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "attack/attack_from_beyond", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "3",
+
+            "image": "data/tiles/img/corinthian-skeleton.webp",
+            "imageHD": "data/tiles/img/corinthian-skeleton_hd.webp",
+            "image_location": {"x":52, "y":55},
+            "image_zoom": 121,
+            "model": null,
+            "origins": ["corinthia"]
+        },
+
+        {
             "id": "ghouls",
 
             "colors": ["gray"],

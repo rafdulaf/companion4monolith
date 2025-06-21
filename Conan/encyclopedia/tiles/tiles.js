@@ -611,6 +611,11 @@ var EncyclopediaTiles = {
                 console.error("Cannot download the " + Language2 + " file of tiles", e);
             }
         }
+        
+        if (tile.comment) 
+        {
+            originString += "<br/><span class='comment'>" + tile.comment + "</span>";
+        }
 
         Nav.dialog((tile.name || "") + altTitle,
             "<div class='tiledetails'>"

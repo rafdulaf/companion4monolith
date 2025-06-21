@@ -725,6 +725,10 @@
         "hydra-5": {
             "name": "Hydre"
         },
+        "corinthian-skeleton": {
+            "name": "Squelette Corinthien",
+            "comment": "Cette tuile fait partie des récompences de Mythic Battles Panthéon, et pas à proprement parler de l'extension Corinthia."
+        },
         "ghouls": {
             "name": "Goules",
             "quote": {

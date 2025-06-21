@@ -723,6 +723,10 @@
         "hydra-5": {
             "name": "Hydra"
         },
+        "corinthian-skeleton": {
+            "name": "Corinthian Skeleton",
+            "comment": "This tile is part of the Mythic Battles Pantheon rewards, and not strictly speaking part of the Corinthiaan expansion."
+        },
         "ghouls": {
             "name": "Ghouls",
             "quote": {
