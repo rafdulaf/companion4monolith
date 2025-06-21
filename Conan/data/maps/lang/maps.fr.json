@@ -336,6 +336,9 @@
                     }, {
                         "title": "Sortir de l’eau",
                         "description": "Une unité dans une zone d’eau peut en sortir pour 1 point de mouvement supplémentaire."
+                    }, {
+                        "title": "Toit",
+                        "description": "Pour pénétrer dans un bâtiment avec un toit, une unité avec Vol doit se poser devant un accès et entrer normalement. Elle ne peut pas voler à l'intérieur."
                     }
                 ],
                 "totopic": "https://the-overlord.com/index.php?/topic/58565-versus-fort-tuscelan/"

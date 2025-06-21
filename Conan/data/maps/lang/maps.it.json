@@ -338,6 +338,9 @@
                     }, {
                         "title": "Acqua",
                         "description": "Un'unità deve spendere un (1) punto Movimento aggiuntivo per uscire da una di queste aree."
+                    }, {
+                        "title": "Tetto",
+                        "description": "Per entrare in un edificio con tetto, un'unità con Volo deve atterrare davanti a un punto di accesso e poi entrare normalmente. Non può volare all'interno."
                     }
                 ],
                 "totopic": "https://the-overlord.net/index.php?/topic/119071-versus-fort-tuscelan/"

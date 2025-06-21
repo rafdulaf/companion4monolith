@@ -336,6 +336,9 @@
                     }, {
                         "title": "Water areas",
                         "description": "A unit must spend 1 extra movement point to move out of a water area."
+                    }, {
+                        "title": "Roof",
+                        "description": "To enter a roofed building, a unit with Fly must land in front of an access point then enter normally. It cannot fly inside."
                     }
                 ],
                 "totopic": "https://the-overlord.net/index.php?/topic/119071-versus-fort-tuscelan/"
