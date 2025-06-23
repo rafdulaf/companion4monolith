@@ -812,7 +812,7 @@
             "skills": { "0": "attack/counterattack", "1": "miscellaneous/support", "2": "none", "3": "none" },
             "reinforcement": "",
             "tokens": [
-                { "image_location": {"x":55, "y":222}, "image_zoom": 380 }
+                { "image_location": {"x":53, "y":200}, "image_zoom": 360 }
             ],
 
             "quote": {
@@ -822,9 +822,8 @@
             },
 
             "image": "data/heroes/img/constantius.webp",
-            "imageHD": "data/heroes/img/constantius_hd.webp",
-            "image_location": {"x":62, "y":58},
-            "image_zoom": 112,
+            "image_location": {"x":61, "y":57},
+            "image_zoom": 125,
             "model": "constantius",
             "origins": ["stretchgoal"],
 

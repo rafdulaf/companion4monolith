@@ -702,9 +702,8 @@
             ],
 
             "image": "data/heroes/img/constantius.webp",
-            "imageHD": "data/heroes/img/constantius_hd.webp",
             "image_zoom": "143",
-            "image_location": { "x": "-8", "y": "72" },
+            "image_location": { "x": "-2", "y": "65" },
             "model": "constantius",
             "origins": ["stretchgoal"]
         },
