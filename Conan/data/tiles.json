@@ -1708,8 +1708,9 @@
                 }
             },
 
-            "image": "data/tiles/img/pict-warriors.webp",
-            "imageHD": "data/tiles/img/pict-warriors_hd.webp",
+            "image": "data/heroes/img/grom.webp",
+            "image_flip": true,
+            "imageHD": "data/heroes/img/grom_hd.webp",
             "image_location": {"x":51, "y":48},
             "image_zoom": 113,
             "model": "pict-warriors",
@@ -2928,8 +2929,8 @@
 
             "image": "data/tiles/img/assassins.webp",
             "imageHD": "data/tiles/img/assassins_hd.webp",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":48, "y":57},
+            "image_zoom": 113,
             "model": "assassins",
             "origins": ["stygia"]
         },

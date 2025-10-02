@@ -456,6 +456,14 @@
             "title": "Armatura Pesante",
             "text": "Ignora gli effetti di Colpo Preciso e Tiro di Precisione"
         },
+        "hyrkanian_helmet": {
+            "title": "Elmo hyrkaniano",
+            "text": "Può essere utilizzato in aggiunta a un'altra carta Equipaggiamento con un bonus di Difesa Passiva.",
+            "textStyle": {
+                "textSize": 100,
+                "textInter": 59
+            }
+        },
         "nemedian_shield": {
             "title": "Scudo Nemediano"
         },
