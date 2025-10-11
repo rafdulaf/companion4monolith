@@ -1041,6 +1041,7 @@
 
         {
             "id": "letters",
+            "subid": "a",
             "encumbrance": "",
 
             "melee": { "0": "none", "1": "none" },
@@ -1055,6 +1056,7 @@
 
         {
             "id": "letters",
+            "subid": "b",
             "encumbrance": "",
 
             "melee": { "0": "none", "1": "none" },
@@ -1069,6 +1071,7 @@
 
         {
             "id": "letters",
+            "subid": "c",
             "encumbrance": "",
 
             "melee": { "0": "none", "1": "none" },
@@ -1083,6 +1086,7 @@
 
         {
             "id": "letters",
+            "subid": "d",
             "encumbrance": "",
 
             "melee": { "0": "none", "1": "none" },
@@ -1097,6 +1101,7 @@
 
         {
             "id": "letters",
+            "subid": "e",
             "encumbrance": "",
 
             "melee": { "0": "none", "1": "none" },
@@ -1251,7 +1256,7 @@
             "active": { "0": "none", "1": "none" },
             "passive": { "0": "none", "1": "none" },
 
-            "image": "data/equipments/img/salpeter.webp",
+            "image": "data/equipments/img/saltpeter.webp",
             "origins": ["khitai"],
 
             "count": 2

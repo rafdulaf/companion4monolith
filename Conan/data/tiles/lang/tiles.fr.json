@@ -1,7 +1,8 @@
 {
     "list": {
         "event": {
-            "name": ""
+            "name": "",
+            "hiddenName": "Événement"
         },
         "captain": {
             "name": "Capitaine",
@@ -698,13 +699,16 @@
             "name": "Chiens des Enfers"
         },
         "civilian-1": {
-            "name": "Civil"
+            "name": "Civil",
+            "hiddenName": "enfant"
         },
         "civilian-2": {
-            "name": "Civil"
+            "name": "Civil",
+            "hiddenName": "homme"
         },
         "civilian-3": {
-            "name": "Civile"
+            "name": "Civile",
+            "hiddenName": "femme"
         },
         "cerberus": {
             "name": "Cerbère"
