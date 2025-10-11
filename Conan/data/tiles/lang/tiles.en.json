@@ -1,7 +1,8 @@
 {
     "list": {
         "event": {
-            "name": ""
+            "name": "",
+            "hiddenName": "Event"
         },
         "captain": {
             "name": "Captain",
@@ -695,13 +696,16 @@
             "name": "Hellhounds"
         },
         "civilian-1": {
-            "name": "Civilian"
+            "name": "Civilian",
+            "hiddenName": "Man"
         },
         "civilian-2": {
-            "name": "Civilian"
+            "name": "Civilian",
+            "hiddenName": "Kid"
         },
         "civilian-3": {
-            "name": "Civilian"
+            "name": "Civilian",
+            "hiddenName": "Women"
         },
         "cerberus": {
             "name": "Cerberus"

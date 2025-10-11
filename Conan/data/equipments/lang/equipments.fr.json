@@ -1,10 +1,12 @@
 {
     "list": {
         "blank": {
-            "title": ""
+            "title": "",
+            "hiddenName": "Carte vierge"
         },
         "letters": {
-            "title": null
+            "title": "",
+            "hiddenName": "Lettre"
         },
         "pictish_drink": {
             "title": "Alcool Picte"
@@ -244,13 +246,16 @@
             "title": "Poignard Yuetshi"
         },
         "orb_red_position": {
-            "title": "Position orbe"
+            "title": "Position orbe",
+            "hiddenName": "rouge"
         },
         "orb_green_position": {
-            "title": "Position orbe"
+            "title": "Position orbe",
+            "hiddenName": "vert"
         },
         "orb_blue_position": {
-            "title": "Position orbe"
+            "title": "Position orbe",
+            "hiddenName": "bleu"
         },
         "potion": {
             "title": "Potion"

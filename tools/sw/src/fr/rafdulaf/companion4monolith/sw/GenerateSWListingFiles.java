@@ -82,7 +82,8 @@ public class GenerateSWListingFiles
             public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException
             {
                 if (Files.isRegularFile(file) // Not caching folders
-                    && !file.getFileName().toString().toLowerCase().endsWith("_hd.webp")) // Not caching HS images
+                    && !file.getFileName().toString().toLowerCase().endsWith("_hd.webp") // Not caching HS images
+                    && !file.getFileName().toString().toLowerCase().contains("_cardpreview_")) // Not caching image previews
                 {
                     long fileSize = Files.size(file);
                     boolean onlyOneLanguage = false;
