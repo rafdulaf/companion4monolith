@@ -161,8 +161,8 @@ var EncyclopediaSpells = {
         var spells = "";
 
         Encyclopedia.spells.list.sort(function(s1, s2) { 
-            var name1 = s1.sort && s1.sort ? s1.sort : s1.title;
-            var name2 = s2.sort && s2.sort ? s2.sort : s2.title;
+            var name1 = (s1.sort && s1.sort ? s1.sort : s1.title) + s1.type;
+            var name2 = (s2.sort && s2.sort ? s2.sort : s2.title) + s2.type;
             return name1.toLowerCase().localeCompare(name2.toLowerCase()); 
         })
 
