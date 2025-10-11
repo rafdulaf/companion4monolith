@@ -1,7 +1,8 @@
 {
     "list": {
         "event": {
-            "name": ""
+            "name": "",
+            "hiddenName": "Evento"
         },
         "captain": {
             "name": "Capitano",
@@ -695,13 +696,16 @@
             "name": "Segugi Infernali"
         },
         "civilian-1": {
-            "name": "Civile"
+            "name": "Civile",
+            "hiddenName": "bambino"
         },
         "civilian-2": {
-            "name": "Civile"
+            "name": "Civile",
+            "hiddenName": "uomo"
         },
         "civilian-3": {
-            "name": "Civile"
+            "name": "Civile",
+            "hiddenName": "donna"
         },
         "cerberus": {
             "name": "Cerbero"
