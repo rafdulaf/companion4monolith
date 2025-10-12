@@ -2,6 +2,7 @@
     "list": [
         {
             "id": "event",
+            "subid": 1,
 
             "colors": ["none"],
             "movement": "",
@@ -21,6 +22,7 @@
 
         {
             "id": "event",
+            "subid": 2,
 
             "colors": ["none"],
             "movement": "",
@@ -40,6 +42,7 @@
 
         {
             "id": "event",
+            "subid": 3,
 
             "colors": ["none"],
             "movement": "",
