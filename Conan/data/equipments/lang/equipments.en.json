@@ -1,10 +1,12 @@
 {
     "list": {
         "blank": {
-            "title": ""
+            "title": "",
+            "hiddenName": "Blank card"
         },
         "letters": {
-            "title": null
+            "title": "",
+            "hiddenName": "A-E letter"
         },
         "pictish_drink": {
             "title": "Pictish Drink"

@@ -1,10 +1,12 @@
 {
     "list": {
         "blank": {
-            "title": ""
+            "title": "",
+            "hiddenName": "Carta bianca"
         },
         "letters": {
-            "title": null
+            "title": "",
+            "hiddenName": "Lettera A-E"
         },
         "pictish_drink": {
             "title": "Intruglio pitto"

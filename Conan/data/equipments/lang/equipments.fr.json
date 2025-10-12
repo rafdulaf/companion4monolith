@@ -1,10 +1,12 @@
 {
     "list": {
         "blank": {
-            "title": ""
+            "title": "",
+            "hiddenName": "Carte vierge"
         },
         "letters": {
-            "title": null
+            "title": "",
+            "hiddenName": "Lettre A-E"
         },
         "pictish_drink": {
             "title": "Alcool Picte"
