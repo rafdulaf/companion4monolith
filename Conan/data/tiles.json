@@ -2805,8 +2805,8 @@
 
             "image": "data/tiles/img/assassins.webp",
             "imageHD": "data/tiles/img/assassins_hd.webp",
-            "image_location": {"x":50, "y":50},
-            "image_zoom": 100,
+            "image_location": {"x":48, "y":57},
+            "image_zoom": 113,
             "model": "assassins",
             "origins": ["stygia"]
         },
