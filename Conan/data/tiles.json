@@ -70,9 +70,7 @@
             "dices": { "0": "red", "1": "orange", "2": "none", "3": "none" },
             "skills": { "0": "miscellaneous/support", "1": "defense/sacrifice", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":-4, "y":212}, "image_zoom": 440 }
-            ],
+            "tokens": [ {} ],
             
             "quote": {
                 "author": {
@@ -100,9 +98,7 @@
             "dices": { "0": "yellow", "1": "none", "2": "none", "3": "none" },
             "skills": { "0": "magic/spell_caster", "1": "defense/protected", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":78, "y":284}, "image_zoom": 300 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -130,9 +126,7 @@
             "dices": { "0": "yellowreroll", "1": "none", "2": "none", "3": "none" },
             "skills": { "0": "miscellaneous/fascination", "1": "miscellaneous/support", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":81, "y":270}, "image_zoom": 300 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/heroes/img/princess.webp",
             "image_flip": true,
@@ -153,9 +147,7 @@
             "dices": { "0": "orangereroll", "1": "orangereroll", "2": "none", "3": "none" },
             "skills": { "0": "magic/spell_caster", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":54, "y":104}, "image_zoom": 311 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -183,9 +175,7 @@
             "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
             "skills": { "0": "miscellaneous/support", "1": "movement/leap", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":80, "y":239}, "image_zoom": 330 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -213,9 +203,7 @@
             "dices": { "0": "redreroll", "1": "redreroll", "2": "redreroll", "3": "none" },
             "skills": { "0": "movement/blocking", "1": "miscellaneous/jinx", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":40, "y":120}, "image_zoom": 450 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -243,9 +231,7 @@
             "dices": { "0": "orangereroll", "1": "orangereroll", "2": "orangereroll", "3": "none" },
             "skills": { "0": "movement/blocking", "1": "movement/wall_wrecker", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":6, "y":39}, "image_zoom": 262 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -300,9 +286,7 @@
             "dices": { "0": "red", "1": "red", "2": "red", "3": "none" },
             "skills": { "0": "movement/wall_wrecker", "1": "attack/circular_strike", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":31, "y":271}, "image_zoom": 420 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -330,9 +314,7 @@
             "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
             "skills": { "0": "movement/evasive", "1": "movement/flying", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":8, "y":-14}, "image_zoom": 441 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -360,9 +342,7 @@
             "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
             "skills": { "0": "movement/blocking", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":44, "y":195}, "image_zoom": 400 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -597,9 +577,7 @@
             "dices": { "0": "redreroll", "1": "redreroll", "2": "redreroll", "3": "none" },
             "skills": { "0": "movement/intangible", "1": "miscellaneous/horror", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":22, "y":91}, "image_zoom": 280 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -654,9 +632,7 @@
             "dices": { "0": "red", "1": "red", "2": "none", "3": "none" },
             "skills": { "0": "movement/leap", "1": "movement/feline_grace", "2": "none", "3": "none" },
             "reinforcement": "4",
-            "tokens": [
-                { "image_location": {"x":7, "y":63}, "image_zoom": 400 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/conans-lion.webp",
             "imageHD": "data/tiles/img/conans-lion_hd.webp",
@@ -676,9 +652,7 @@
             "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
             "skills": { "0": "movement/leap", "1": "defense/sacrifice", "2": "none", "3": "none" },
             "reinforcement": "4",
-            "tokens": [
-                { "image_location": {"x":44, "y":139}, "image_zoom": 220 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -754,9 +728,7 @@
             "dices": { "0": "red", "1": "orange", "2": "none", "3": "none" },
             "skills": { "0": "movement/leap", "1": "magic/spell_caster", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":54, "y":329}, "image_zoom": 286 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -784,9 +756,7 @@
             "dices": { "0": "orangereroll", "1": "orange", "2": "none", "3": "none" },
             "skills": { "0": "attack/attack_from_beyond", "1": "magic/spell_caster", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":57, "y":236}, "image_zoom": 235 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -814,9 +784,7 @@
             "dices": { "0": "red", "1": "orange", "2": "none", "3": "none" },
             "skills": { "0": "attack/counterattack", "1": "miscellaneous/support", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":53, "y":200}, "image_zoom": 360 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -843,9 +811,7 @@
             "dices": { "0": "yellowreroll", "1": "yellowreroll", "2": "yellowreroll", "3": "none" },
             "skills": { "0": "defense/sacrifice", "1": "movement/feline_grace", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":66, "y":198}, "image_zoom": 300 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -873,9 +839,7 @@
             "dices": { "0": "orange", "1": "orange", "2": "yellow", "3": "none" },
             "skills": { "0": "miscellaneous/jinx", "1": "magic/spell_caster", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":68, "y":218}, "image_zoom": 320 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -903,9 +867,7 @@
             "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
             "skills": { "0": "miscellaneous/concentration", "1": "magic/spell_caster", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":63, "y":211}, "image_zoom": 380 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -933,9 +895,7 @@
             "dices": { "0": "orange", "1": "yellow", "2": "none", "3": "none" },
             "skills": { "0": "magic/spell_caster", "1": "miscellaneous/concentration", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":18, "y":221}, "image_zoom": 340 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -963,9 +923,7 @@
             "dices": { "0": "orangereroll", "1": "orange", "2": "none", "3": "none" },
             "skills": { "0": "defense/protected", "1": "magic/spell_caster", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":47, "y":268}, "image_zoom": 400 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -993,9 +951,7 @@
             "dices": { "0": "orangereroll", "1": "orangereroll", "2": "none", "3": "none" },
             "skills": { "0": "miscellaneous/support", "1": "attack/precision_strike", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":30, "y":228}, "image_zoom": 220 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -1021,9 +977,7 @@
             "dices": { "0": "redreroll", "1": "orangereroll", "2": "none", "3": "none" },
             "skills": { "0": "attack/precision_shot", "1": "attack/elite_shooter", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":56, "y":167}, "image_zoom": 300 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -1049,9 +1003,7 @@
             "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
             "skills": { "0": "attack/attack_from_beyond", "1": "defense/protected", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":50, "y":152}, "image_zoom": 430, "image_flip": true }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -1078,9 +1030,7 @@
             "dices": { "0": "red", "1": "red", "2": "red", "3": "none" },
             "skills": { "0": "movement/wall_wrecker", "1": "attack/circular_strike", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":73, "y":162}, "image_zoom": 345 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -1108,9 +1058,7 @@
             "dices": { "0": "yellow", "1": "yellow", "2": "none", "3": "none" },
             "skills": { "0": "magic/spell_caster", "1": "miscellaneous/concentration", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":64, "y":153}, "image_zoom": 300 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -1136,9 +1084,7 @@
             "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
             "skills": { "0": "attack/precision_shot", "1": "defense/protected", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":12, "y":203}, "image_zoom": 290 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -1164,9 +1110,7 @@
             "dices": { "0": "red", "1": "red", "2": "none", "3": "none" },
             "skills": { "0": "attack/elite_shooter", "1": "defense/sacrifice", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":55, "y":204}, "image_zoom": 330 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -1192,9 +1136,7 @@
             "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
             "skills": { "0": "movement/blocking", "1": "attack/circular_strike", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":58, "y":211}, "image_zoom": 340 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -1220,9 +1162,7 @@
             "dices": { "0": "redreroll", "1": "red", "2": "none", "3": "none" },
             "skills": { "0": "miscellaneous/support", "1": "defense/sacrifice", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":46, "y":218}, "image_zoom": 295 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -1248,9 +1188,7 @@
             "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
             "skills": { "0": "defense/untouchable", "1": "movement/evasive", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":66, "y":179}, "image_zoom": 340, "image_flip": true }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -1277,9 +1215,7 @@
             "dices": { "0": "orangereroll", "1": "orange", "2": "none", "3": "none" },
             "skills": { "0": "movement/evasive", "1": "attack/precision_strike", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":33, "y":171}, "image_zoom": 325 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -1307,9 +1243,7 @@
             "dices": { "0": "orangereroll", "1": "orangereroll", "2": "none", "3": "none" },
             "skills": { "0": "movement/feline_grace", "1": "attack/counterattack", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":63, "y":226}, "image_zoom": 360 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -1335,9 +1269,7 @@
             "dices": { "0": "yellowreroll", "1": "yellow", "2": "none", "3": "none" },
             "skills": { "0": "miscellaneous/support", "1": "magic/spell_caster", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":23, "y":212}, "image_zoom": 300 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -1363,12 +1295,9 @@
             "dices": { "0": "yellow", "1": "none", "2": "none", "3": "none" },
             "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":195, "y":166}, "image_zoom": 400 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/camel.webp",
-            "imageHD": "data/tiles/img/camel.webp",
             "image_location": {"x":75, "y":54},
             "image_zoom": 142,
             "model": "camel",
@@ -1385,9 +1314,7 @@
             "dices": { "0": "red", "1": "none", "2": "none", "3": "none" },
             "skills": { "0": "attack/precision_shot", "1": "attack/elite_shooter", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":71, "y":243}, "image_zoom": 400 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/kothian-archer.webp",
             "imageHD": "data/tiles/img/kothian-archer_hd.webp",
@@ -1407,9 +1334,7 @@
             "dices": { "0": "red", "1": "orange", "2": "none", "3": "none" },
             "skills": { "0": "defense/sacrifice", "1": "movement/evasive", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":5, "y":90}, "image_zoom": 200 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/slasher.webp",
             "imageHD": "data/tiles/img/slasher_hd.webp",
@@ -1429,9 +1354,7 @@
             "dices": { "0": "red", "1": "red", "2": "red", "3": "none" },
             "skills": { "0": "movement/wall_wrecker", "1": "miscellaneous/horror", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":53, "y":141}, "image_zoom": 420 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/bone-golem.webp",
             "imageHD": "data/tiles/img/bone-golem_hd.webp",
@@ -1453,9 +1376,7 @@
             "dices": { "0": "orange", "1": "orange", "2": "orange", "3": "none" },
             "skills": { "0": "attack/precision_strike", "1": "movement/blocking", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":109, "y":181}, "image_zoom": 410 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -1483,9 +1404,7 @@
             "dices": { "0": "orange", "1": "orange", "2": "orange", "3": "none" },
             "skills": { "0": "miscellaneous/poison", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":28, "y":14}, "image_zoom": 250 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -1513,9 +1432,7 @@
             "dices": { "0": "redreroll", "1": "yellow", "2": "yellow", "3": "none" },
             "skills": { "0": "movement/web_projection", "1": "movement/climb", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":65, "y":54}, "image_zoom": 320 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -1543,9 +1460,7 @@
             "dices": { "0": "red", "1": "orange", "2": "orange", "3": "none" },
             "skills": { "0": "movement/blocking", "1": "movement/climb", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":16, "y":190}, "image_zoom": 280 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -1573,9 +1488,7 @@
             "dices": { "0": "redreroll", "1": "redreroll", "2": "orangereroll", "3": "none" },
             "skills": { "0": "miscellaneous/jinx", "1": "miscellaneous/horror", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":45, "y":137}, "image_zoom": 180 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -1603,9 +1516,7 @@
             "dices": { "0": "redreroll", "1": "redreroll", "2": "redreroll", "3": "redreroll" },
             "skills": { "0": "miscellaneous/horror", "1": "magic/spell_caster", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":15, "y":73}, "image_zoom": 550 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/thaug.webp",
             "imageHD": "data/tiles/img/thaug_hd.webp",
@@ -1804,9 +1715,7 @@
             "dices": { "0": "redreroll", "1": "red", "2": "red", "3": "none" },
             "skills": { "0": "attack/precision_strike", "1": "movement/blocking", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":50, "y":144}, "image_zoom": 165 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -1990,9 +1899,7 @@
             "dices": { "0": "orange", "1": "orange", "2": "orange", "3": "orange" },
             "skills": { "0": "movement/wall_wrecker", "1": "movement/blocking", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":35, "y":136}, "image_zoom": 235 }
-            ],
+            "tokens": [ {} ],
             
             "quote": {
                 "author": {
@@ -2020,9 +1927,7 @@
             "dices": { "0": "redreroll", "1": "redreroll", "2": "redreroll", "3": "redreroll" },
             "skills": { "0": "movement/blocking", "1": "movement/wall_wrecker", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":-74, "y":88}, "image_zoom": 350 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -2076,9 +1981,7 @@
             "dices": { "0": "red", "1": "orange", "2": "none", "3": "none" },
             "skills": { "0": "movement/leap", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":-64, "y":57}, "image_zoom": 300 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -2105,9 +2008,7 @@
             "dices": { "0": "red", "1": "red", "2": "none", "3": "none" },
             "skills": { "0": "attack/counterattack", "1": "attack/precision_strike", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":44, "y":150}, "image_zoom": 150 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -2135,9 +2036,7 @@
             "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
             "skills": { "0": "defense/sacrifice", "1": "attack/precision_strike", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":59, "y":158}, "image_zoom": 150 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/heroes/img/ghayoor.webp",
             "imageHD": "data/heroes/img/ghayoor_hd.webp",
@@ -2159,9 +2058,7 @@
             "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
             "skills": { "0": "attack/precision_strike", "1": "defense/sacrifice", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":47, "y":146}, "image_zoom": 150 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/heroes/img/shafiah.webp",
             "imageHD": "data/heroes/img/shafiah_hd.webp",
@@ -2183,9 +2080,7 @@
             "dices": { "0": "yellow", "1": "yellow", "2": "none", "3": "none" },
             "skills": { "0": "miscellaneous/concentration", "1": "magic/spell_caster", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":50, "y":161}, "image_zoom": 150 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -2213,9 +2108,7 @@
             "dices": { "0": "orangereroll", "1": "orangereroll", "2": "orangereroll", "3": "none" },
             "skills": { "0": "attack/precision_strike", "1": "movement/evasive", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":55, "y":102}, "image_zoom": 210 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/heroes/img/vanir-valkyrie.webp",
             "imageHD": "data/heroes/img/vanir-valkyrie_hd.webp",
@@ -2237,9 +2130,7 @@
             "dices": { "0": "yellow", "1": "none", "2": "none", "3": "none" },
             "skills": { "0": "magic/spell_caster", "1": "defense/protected", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":38, "y":136}, "image_zoom": 115 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -2267,9 +2158,7 @@
             "dices": { "0": "yellow", "1": "none", "2": "none", "3": "none" },
             "skills": { "0": "magic/spell_caster", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":103, "y":303}, "image_zoom": 360 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -2318,10 +2207,7 @@
             "dices": { "0": "red", "1": "red", "2": "none", "3": "none" },
             "skills": { "0": "miscellaneous/horror", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":50, "y":152}, "image_zoom": 280 },
-                { "image_location": {"x":50, "y":152}, "image_zoom": 280 }
-            ],
+            "tokens": [ {}, {} ],
 
             "quote": {
                 "author": {
@@ -2349,10 +2235,7 @@
             "dices": { "0": "red", "1": "red", "2": "none", "3": "none" },
             "skills": { "0": "miscellaneous/horror", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":40, "y":156}, "image_zoom": 280 },
-                { "image_location": {"x":40, "y":156}, "image_zoom": 280 }
-            ],
+            "tokens": [ {}, {} ],
 
             "quote": {
                 "author": {
@@ -2653,10 +2536,7 @@
             "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
             "skills": { "0": "miscellaneous/concentration", "1": "magic/spell_caster", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":50, "y":130}, "image_zoom": 200 },
-                { "image_location": {"x":50, "y":130}, "image_zoom": 200 }
-            ],
+            "tokens": [ {}, {} ],
 
             "quote": {
                 "author": {
@@ -2683,9 +2563,7 @@
             "dices": { "0": "red", "1": "red", "2": "none", "3": "none" },
             "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":50, "y":100}, "image_zoom": 245 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/dark-demon.webp",
             "imageHD": "data/tiles/img/dark-demon_hd.webp",
@@ -2785,9 +2663,7 @@
             "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
             "skills": { "0": "magic/spell_caster", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":49, "y":195}, "image_zoom": 260 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -2815,9 +2691,7 @@
             "dices": { "0": "red", "1": "orange", "2": "yellow", "3": "none" },
             "skills": { "0": "movement/blocking", "1": "none", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":34, "y":27}, "image_zoom": 190 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/scorpion-broodmother.webp",
             "image_location": {"x":50, "y":49},
@@ -2966,9 +2840,7 @@
             "dices": { "0": "redreroll", "1": "red", "2": "red", "3": "none" },
             "skills": { "0": "miscellaneous/horror", "1": "movement/flying", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":115, "y":88}, "image_zoom": 466, "image_flip": true }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/heroes/img/winged-one.webp",
             "image_location": {"x":40, "y":56},
@@ -2989,9 +2861,7 @@
             "dices": { "0": "red", "1": "red", "2": "none", "3": "none" },
             "skills": { "0": "attack/constriction", "1": "movement/wall_wrecker", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":27, "y":224}, "image_zoom": 300 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/heroes/img/heracles.webp",
             "image_location": {"x":45, "y":74},
@@ -3010,9 +2880,7 @@
             "dices": { "0": "red", "1": "orange", "2": "none", "3": "none" },
             "skills": { "0": "defense/protected", "1": "attack/reach", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":44, "y":118}, "image_zoom": 360 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/heroes/img/leonidas.webp",
             "image_location": {"x":44, "y":46},
@@ -3031,9 +2899,7 @@
             "dices": { "0": "red", "1": "orange", "2": "orange", "3": "none" },
             "skills": { "0": "attack/counterattack", "1": "miscellaneous/support", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":42, "y":182}, "image_zoom": 210, "image_flip": true }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/heroes/img/achilles.webp",
             "image_flip": true,
@@ -3202,9 +3068,7 @@
             "dices": { "0": "red", "1": "orangereroll", "2": "orange", "3": "none" },
             "skills": { "0": "attack/precision_strike", "1": "miscellaneous/horror", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":78, "y":74}, "image_zoom": 260, "image_flip": true }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/cerberus.webp",
             "image_location": {"x":33, "y":54},
@@ -3223,9 +3087,7 @@
             "dices": { "0": "yellow", "1": "yellow", "2": "none", "3": "none" },
             "skills": { "0": "miscellaneous/fascination", "1": "magic/spell_caster", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":49, "y":121}, "image_zoom": 230 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/medusa.webp",
             "image_location": {"x":55, "y":58},
@@ -3246,9 +3108,7 @@
             "dices": { "0": "redreroll", "1": "redreroll", "2": "orangereroll", "3": "orangereroll" },
             "skills": { "0": "attack/circular_strike", "1": "movement/evasive", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":45, "y":99}, "image_zoom": 250 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/ares.webp",
             "imageHD": "data/tiles/img/ares_hd.webp",
@@ -3268,9 +3128,7 @@
             "dices": { "0": "red", "1": "red", "2": "red", "3": "none" },
             "skills": { "0": "movement/wall_wrecker", "1": "movement/blocking", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":150, "y":107}, "image_zoom": 354, "image_flip": true }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/minotaur.webp",
             "imageHD": "data/tiles/img/minotaur_hd.webp",
@@ -3290,9 +3148,7 @@
             "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
             "skills": { "0": "attack/elite_shooter", "1": "miscellaneous/support", "2": "none", "3": "none" },
             "reinforcement": "",
-             "tokens": [
-                { "image_location": {"x":43, "y":196}, "image_zoom": 260 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/heroes/img/odysseus.webp",
             "imageHD": "data/heroes/img/odysseus_hd.webp",
@@ -3312,9 +3168,7 @@
             "dices": { "0": "orange", "1": "orange", "2": "none", "3": "none" },
             "skills": { "0": "miscellaneous/jinx", "1": "attack/precision_strike", "2": "none", "3": "none" },
             "reinforcement": "",
-             "tokens": [
-                { "image_location": {"x":-97, "y":158}, "image_zoom": 500 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/hydra.webp",
             "imageHD": "data/tiles/img/hydra_hd.webp",
@@ -3603,9 +3457,7 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "orangereroll", "2": "yellowreroll", "3": "none" },
             "skills": { "0": "movement/blocking", "1": "defense/untouchable", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":47, "y":169}, "image_zoom": 310 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -3649,9 +3501,7 @@
             "attacktype": "ranged",
             "dices": { "0": "red", "1": "red", "2": "red", "3": "none" },
             "skills": { "0": "attack/precision_shot", "1": "miscellaneous/concentration", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":32, "y":75}, "image_zoom": 140 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/elite-ballista.webp",
             "imageHD": "data/tiles/img/elite-ballista_hd.webp",
@@ -3695,9 +3545,7 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "orange", "2": "yellowreroll", "3": "none" },
             "skills": { "0": "miscellaneous/poison", "1": "attack/reach", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 130, "image_flip": true }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -3722,9 +3570,7 @@
             "attacktype": "contact",
             "dices": { "0": "orangereroll", "1": "yellow", "2": "none", "3": "none" },
             "skills": { "0": "miscellaneous/support", "1": "miscellaneous/poison", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":29, "y":194}, "image_zoom": 360 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -3749,9 +3595,7 @@
             "attacktype": "contact",
             "dices": { "0": "red", "1": "red", "2": "red", "3": "none" },
             "skills": { "0": "movement/wall_wrecker", "1": "attack/reach", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":9, "y":199}, "image_zoom": 400 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -3778,9 +3622,7 @@
             "attacktype": "ranged",
             "dices": { "0": "orangereroll", "1": "orange", "2": "none", "3": "none" },
             "skills": { "0": "defense/protected", "1": "magic/spell_caster", "2": "miscellaneous/horror", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":26, "y":220}, "image_zoom": 460 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -3807,9 +3649,7 @@
             "attacktype": "contact",
             "dices": { "0": "red", "1": "red", "2": "red", "3": "none" },
             "skills": { "0": "movement/wall_wrecker", "1": "attack/circular_strike", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":-4, "y":224}, "image_zoom": 440, "image_flip": true }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -3835,9 +3675,7 @@
             "attacktype": "ranged",
             "dices": { "0": "yellowreroll", "1": "yellowreroll", "2": "none", "3": "none" },
             "skills": { "0": "miscellaneous/concentration", "1": "miscellaneous/jinx", "2": "space", "3": "magic/spell_caster" },
-            "tokens": [
-                { "image_location": {"x":4, "y":200}, "image_zoom": 400 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -3862,9 +3700,7 @@
             "attacktype": "contact",
             "dices": { "0": "red", "1": "orange", "2": "yellow", "3": "none" },
             "skills": { "0": "miscellaneous/support", "1": "attack/precision_strike", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":56, "y":154}, "image_zoom": 350 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -3891,9 +3727,7 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "redreroll", "2": "orange", "3": "none" },
             "skills": { "0": "attack/constriction", "1": "attack/precision_strike", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":77, "y":223}, "image_zoom": 400, "image_flip": true }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -3921,9 +3755,7 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "orange", "2": "orange", "3": "none" },
             "skills": { "0": "movement/climb", "1": "movement/web_projection", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":50, "y":50}, "image_zoom": 130, "image_flip": true }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/zamorian-spider.webp",
             "imageHD": "data/tiles/img/zamorian-spider_hd.webp",
@@ -3944,9 +3776,7 @@
             "attacktype": "contact",
             "dices": { "0": "red", "1": "red", "2": "orange", "3": "orange" },
             "skills": { "0": "movement/intangible", "1": "miscellaneous/horror", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":23, "y":116}, "image_zoom": 300 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -3973,9 +3803,7 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "redreroll", "2": "redreroll", "3": "none" },
             "skills": { "0": "movement/wall_wrecker", "1": "attack/circular_strike", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":77, "y":180}, "image_zoom": 350, "image_flip": true }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -4001,9 +3829,7 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "red", "2": "red", "3": "none" },
             "skills": { "0": "miscellaneous/horror", "1": "movement/flying", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":115, "y":88}, "image_zoom": 466, "image_flip": true }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/heroes/img/winged-one.webp",
             "image_flip": true,
@@ -4024,9 +3850,7 @@
             "attacktype": "contact",
             "dices": { "0": "red", "1": "orangereroll", "2": "orangereroll", "3": "none" },
             "skills": { "0": "attack/constriction", "1": "attack/reach", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":17, "y":124}, "image_zoom": 300 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/son-of-set.webp",
             "imageHD": "data/tiles/img/son-of-set_hd.webp",
@@ -4047,9 +3871,7 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "redreroll", "2": "redreroll", "3": "redreroll" },
             "skills": { "0": "attack/constriction", "1": "movement/flying", "2": "attack/precision_strike", "3": "miscellaneous/horror" },
-            "tokens": [
-                { "image_location": {"x":-41, "y":160}, "image_zoom": 550 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/nameless-horror.webp",
             "imageHD": "data/tiles/img/nameless-horror_hd.webp",
@@ -4070,9 +3892,7 @@
             "attacktype": "contact",
             "dices": { "0": "red", "1": "red", "2": "red", "3": "red" },
             "skills": { "0": "defense/untouchable", "1": "movement/blocking", "2": "attack/counterattack", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":10, "y":143}, "image_zoom": 300 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/servant-of-ahriman.webp",
             "imageHD": "data/tiles/img/servant-of-ahriman_hd.webp",
@@ -4092,9 +3912,7 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "orangereroll", "2": "orangereroll", "3": "none" },
             "skills": { "0": "attack/counterattack", "1": "attack/reach", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":-7, "y":79}, "image_zoom": 240 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/hydra.webp",
             "imageHD": "data/tiles/img/hydra_hd.webp",
@@ -4165,9 +3983,7 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "red", "2": "none", "3": "none" },
             "skills": { "0": "miscellaneous/jinx", "1": "magic/spell_caster", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":-56, "y":180}, "image_zoom": 400 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -4216,9 +4032,7 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
             "skills": { "0": "attack/precision_strike", "1": "movement/evasive", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":23, "y":194}, "image_zoom": 260 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/asgrim.webp",
             "imageHD": "data/tiles/img/asgrim_hd.webp",
@@ -4237,9 +4051,7 @@
             "attacktype": "ranged",
             "dices": { "0": "orange", "1": "orange", "2": "yellowreroll", "3": "none" },
             "skills": { "0": "magic/spell_caster", "1": "miscellaneous/jinx", "2": "defense/protected", "3": "movement/evasive" },
-            "tokens": [
-                { "image_location": {"x":-11, "y":221}, "image_zoom": 315, "image_flip": true }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/atla-gotn.webp",
             "imageHD": "data/tiles/img/atla-gotn_hd.webp",
@@ -4258,9 +4070,7 @@
             "attacktype": "ranged",
             "dices": { "0": "orangereroll", "1": "orangereroll", "2": "none", "3": "none" },
             "skills": { "0": "defense/protected", "1": "attack/elite_shooter", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":74, "y":236}, "image_zoom": 250, "image_flip": true }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/bragi.webp",
             "imageHD": "data/tiles/img/bragi_hd.webp",
@@ -4279,9 +4089,7 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "orangereroll", "2": "none", "3": "none" },
             "skills": { "0": "movement/feline_grace", "1": "defense/untouchable", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":44, "y":182}, "image_zoom": 380, "image_flip": true }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/brunhilde.webp",
             "imageHD": "data/tiles/img/brunhilde_hd.webp",
@@ -4300,9 +4108,7 @@
             "attacktype": "contact",
             "dices": { "0": "red", "1": "red", "2": "none", "3": "none" },
             "skills": { "0": "movement/leap", "1": "attack/precision_strike", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":27, "y":231}, "image_zoom": 400 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/hialmar.webp",
             "imageHD": "data/tiles/img/hialmar_hd.webp",
@@ -4321,9 +4127,7 @@
             "attacktype": "contact",
             "dices": { "0": "orange", "1": "yellowreroll", "2": "yellowreroll", "3": "none" },
             "skills": { "0": "movement/leap", "1": "attack/counterattack", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":61, "y":256}, "image_zoom": 430 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/lagertha.webp",
             "imageHD": "data/tiles/img/lagertha_hd.webp",
@@ -4342,9 +4146,7 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
             "skills": { "0": "attack/precision_strike", "1": "miscellaneous/support", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":46, "y":205}, "image_zoom": 500, "image_flip": true }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/sonya.webp",
             "imageHD": "data/tiles/img/sonya_hd.webp",
@@ -4363,9 +4165,7 @@
             "attacktype": "ranged",
             "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
             "skills": { "0": "defense/untouchable", "1": "attack/elite_shooter", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":61, "y":266}, "image_zoom": 320, "image_flip": true }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/tostig.webp",
             "imageHD": "data/tiles/img/tostig_hd.webp",
@@ -4384,9 +4184,7 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
             "skills": { "0": "movement/swimming", "1": "defense/protected", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":59, "y":228}, "image_zoom": 350, "image_flip": true }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/wulfhere.webp",
             "imageHD": "data/tiles/img/wulfhere_hd.webp",
@@ -4405,9 +4203,7 @@
             "attacktype": "ranged",
             "dices": { "0": "yellow", "1": "yellow", "2": "yellow", "3": "none" },
             "skills": { "0": "magic/spell_caster", "1": "defense/untouchable", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":92, "y":198}, "image_zoom": 300, "image_flip": true }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/zelata-wanderer.webp",
             "imageHD": "data/tiles/img/zelata-wanderer_hd.webp",
@@ -4445,9 +4241,7 @@
             "attacktype": "contact",
             "dices": { "0": "red", "1": "orange", "2": "none", "3": "none" },
             "skills": { "0": "movement/leap", "1": "attack/counterattack", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":126, "y":73}, "image_zoom": 600 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/aesir-chief.webp",
             "imageHD": "data/tiles/img/aesir-chief_hd.webp",
@@ -4581,9 +4375,7 @@
             "attacktype": "ranged",
             "dices": { "0": "redreroll", "1": "orangereroll", "2": "none", "3": "none" },
             "skills": { "0": "attack/elite_shooter", "1": "attack/precision_shot", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":52, "y":190}, "image_zoom": 350 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/vanir-chief.webp",
             "imageHD": "data/tiles/img/vanir-chief_hd.webp",
@@ -4698,9 +4490,7 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "yellowreroll", "2": "none", "3": "none" },
             "skills": { "0": "defense/sacrifice", "1": "miscellaneous/support", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":6, "y":177}, "image_zoom": 300 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/mercenary-captain.webp",
             "imageHD": "data/tiles/img/mercenary-captain_hd.webp",
@@ -4776,9 +4566,7 @@
             "attacktype": "contact",
             "dices": { "0": "orangereroll", "1": "yellowreroll", "2": "none", "3": "none" },
             "skills": { "0": "movement/feline_grace", "1": "defense/untouchable", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":83, "y":24}, "image_zoom": 240, "image_flip": true }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/aesir-lynxes.webp",
             "imageHD": "data/tiles/img/aesir-lynxes_hd.webp",
@@ -4797,9 +4585,7 @@
             "attacktype": "contact",
             "dices": { "0": "yellow", "1": "yellow", "2": "none", "3": "none" },
             "skills": { "0": "movement/climb", "1": "defense/untouchable", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":26, "y":153}, "image_zoom": 360 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/goats.webp",
             "imageHD": "data/tiles/img/goats_hd.webp",
@@ -4818,9 +4604,7 @@
             "attacktype": "contact",
             "dices": { "0": "yellow", "1": "none", "2": "none", "3": "none" },
             "skills": { "0": "movement/evasive", "1": "defense/untouchable", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":51, "y":-10}, "image_zoom": 220, "image_flip": true }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/squirrel.webp",
             "imageHD": "data/tiles/img/squirrel_hd.webp",
@@ -4858,9 +4642,7 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
             "skills": { "0": "defense/protected", "1": "miscellaneous/jinx", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":20, "y":168}, "image_zoom": 350 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/frost-giant-deceiver.webp",
             "image_location": {"x":53, "y":57.5},
@@ -4878,9 +4660,7 @@
             "attacktype": "contact",
             "dices": { "0": "yellowreroll", "1": "yellowreroll", "2": "yellowreroll", "3": "none" },
             "skills": { "0": "movement/blocking", "1": "miscellaneous/fascination", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":53, "y":184}, "image_zoom": 400, "image_flip": true }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/frost-giant-temptress.webp",
             "imageHD": "data/tiles/img/frost-giant-temptress_hd.webp",
@@ -4899,9 +4679,7 @@
             "attacktype": "ranged",
             "dices": { "0": "redreroll", "1": "orangereroll", "2": "yellowreroll", "3": "none" },
             "skills": { "0": "attack/elite_shooter", "1": "movement/climb", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":38, "y":152}, "image_zoom": 320 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/frost-giant-huntress.webp",
             "image_location": {"x":47, "y":50},
@@ -4919,9 +4697,7 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "orangereroll", "2": "yellowreroll", "3": "none" },
             "skills": { "0": "movement/climb", "1": "defense/protected", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":65, "y":210}, "image_zoom": 440, "image_flip": true }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/frost-giant-jarl.webp",
             "imageHD": "data/tiles/img/frost-giant-jarl_hd.webp",
@@ -4940,9 +4716,7 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "yellowreroll", "2": "yellowreroll", "3": "none" },
             "skills": { "0": "magic/spell_caster", "1": "attack/attack_from_beyond", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":68, "y":147}, "image_zoom": 305, "image_flip": true }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/frost-giant-oracle.webp",
             "imageHD": "data/tiles/img/frost-giant-oracle_hd.webp",
@@ -4961,9 +4735,7 @@
             "attacktype": "ranged",
             "dices": { "0": "orange", "1": "orange", "2": "orange", "3": "none" },
             "skills": { "0": "attack/elite_shooter", "1": "movement/blocking", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":14, "y":216}, "image_zoom": 460 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/frost-giant-savage.webp",
             "imageHD": "data/tiles/img/frost-giant-savage_hd.webp",
@@ -4982,9 +4754,7 @@
             "attacktype": "contact",
             "dices": { "0": "orangereroll", "1": "orangereroll", "2": "orange", "3": "none" },
             "skills": { "0": "movement/blocking", "1": "attack/reach", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":55, "y":281}, "image_zoom": 450, "image_flip": true }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/frost-giant-sentinel.webp",
             "image_location": {"x":53, "y":66},
@@ -5002,9 +4772,7 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
             "skills": { "0": "movement/climb", "1": "attack/reach", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":40, "y":178}, "image_zoom": 360, "image_flip": true }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/frost-giant-shipwright.webp",
             "imageHD": "data/tiles/img/frost-giant-shipwright_hd.webp",
@@ -5023,9 +4791,7 @@
             "attacktype": "contact",
             "dices": { "0": "yellowreroll", "1": "yellowreroll", "2": "yellowreroll", "3": "none" },
             "skills": { "0": "miscellaneous/support", "1": "attack/precision_strike", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":42, "y":218}, "image_zoom": 470 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/frost-giant-veteran.webp",
             "imageHD": "data/tiles/img/frost-giant-veteran_hd.webp",
@@ -5044,9 +4810,7 @@
             "attacktype": "contact",
             "dices": { "0": "red", "1": "orange", "2": "orange", "3": "none" },
             "skills": { "0": "defense/protected", "1": "attack/reach", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":39, "y":261}, "image_zoom": 400 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/frost-giant-warlord.webp",
             "imageHD": "data/tiles/img/frost-giant-warlord_hd.webp",
@@ -5065,9 +4829,7 @@
             "attacktype": "contact",
             "dices": { "0": "orange", "1": "orange", "2": "orange", "3": "none" },
             "skills": { "0": "movement/web_projection", "1": "miscellaneous/support", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":59, "y":157}, "image_zoom": 350 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/frost-giant-weaver.webp",
             "imageHD": "data/tiles/img/frost-giant-weaver_hd.webp",
@@ -5086,9 +4848,7 @@
             "attacktype": "contact",
             "dices": { "0": "red", "1": "red", "2": "none", "3": "none" },
             "skills": { "0": "magic/spell_caster", "1": "miscellaneous/horror", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":49, "y":231}, "image_zoom": 450 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/gullveig.webp",
             "imageHD": "data/tiles/img/gullveig_hd.webp",
@@ -5125,9 +4885,7 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "orange", "2": "orange", "3": "none" },
             "skills": { "0": "attack/precision_strike", "1": "movement/blocking", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":74, "y":227}, "image_zoom": 450, "image_flip": true }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/half-giant.webp",
             "imageHD": "data/tiles/img/half-giant_hd.webp",
@@ -5146,9 +4904,7 @@
             "attacktype": "contact",
             "dices": { "0": "red", "1": "red", "2": "yellowreroll", "3": "none" },
             "skills": { "0": "attack/constriction", "1": "miscellaneous/horror", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":30, "y":169}, "image_zoom": 350 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/abomination.webp",
             "imageHD": "data/tiles/img/abomination_hd.webp",
@@ -5167,9 +4923,7 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "redreroll", "2": "redreroll", "3": "none" },
             "skills": { "0": "defense/untouchable", "1": "movement/flying", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":25, "y":58}, "image_zoom": 120 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/child-of-jhil.webp",
             "imageHD": "data/tiles/img/child-of-jhil_hd.webp",
@@ -5188,9 +4942,7 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "redreroll", "2": "redreroll", "3": "none" },
             "skills": { "0": "movement/blocking", "1": "attack/precision_strike", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":49, "y":39}, "image_zoom": 190, "image_flip": true }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/colossal-crawler.webp",
             "imageHD": "data/tiles/img/colossal-crawler_hd.webp",
@@ -5209,9 +4961,7 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "redreroll", "2": "redreroll", "3": "redreroll" },
             "skills": { "0": "movement/evasive", "1": "attack/circular_strike", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":91, "y":85}, "image_zoom": 350, "image_flip": true  }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/demon-wolf.webp",
             "imageHD": "data/tiles/img/demon-wolf_hd.webp",
@@ -5248,9 +4998,7 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "redreroll", "2": "orangereroll", "3": "none" },
             "skills": { "0": "movement/climb", "1": "miscellaneous/horror", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":51, "y":170}, "image_zoom": 320, "image_flip": true }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/draugr.webp",
             "imageHD": "data/tiles/img/draugr_hd.webp",
@@ -5287,9 +5035,7 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "orangereroll", "2": "orange", "3": "none" },
             "skills": { "0": "movement/leap", "1": "miscellaneous/jinx", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":114, "y":159}, "image_zoom": 300, "image_flip": true }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/fiend-of-the-drifts.webp",
             "imageHD": "data/tiles/img/fiend-of-the-drifts_hd.webp",
@@ -5308,9 +5054,7 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
             "skills": { "0": "magic/spell_caster", "1": "attack/attack_from_beyond", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":92, "y":226}, "image_zoom": 380 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/fiend-of-ymir.webp",
             "imageHD": "data/tiles/img/fiend-of-ymir_hd.webp",
@@ -5367,9 +5111,7 @@
             "attacktype": "ranged",
             "dices": { "0": "yellowreroll", "1": "yellowreroll", "2": "none", "3": "none" },
             "skills": { "0": "magic/spell_caster", "1": "miscellaneous/poison", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":84, "y":124}, "image_zoom": 350, "image_flip": true }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/infernal-crone.webp",
             "imageHD": "data/tiles/img/infernal-crone_hd.webp",
@@ -5389,9 +5131,7 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "red", "2": "red", "3": "none" },
             "skills": { "0": "movement/evasive", "1": "miscellaneous/horror", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":32, "y":42}, "image_zoom": 150 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/infernal-hound.webp",
             "imageHD": "data/tiles/img/infernal-hound_hd.webp",
@@ -5410,9 +5150,7 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "redreroll", "2": "orangereroll", "3": "orangereroll" },
             "skills": { "0": "attack/circular_strike", "1": "movement/swimming", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":54, "y":86}, "image_zoom": 140, "image_flip": true }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/jormungand.webp",
             "imageHD": "data/tiles/img/jormungand_hd.webp",
@@ -5449,9 +5187,7 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "redreroll", "2": "red", "3": "none" },
             "skills": { "0": "attack/precision_strike", "1": "movement/flying", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":16, "y":68}, "image_zoom": 140 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/nidhogg.webp",
             "imageHD": "data/tiles/img/nidhogg_hd.webp",
@@ -5471,9 +5207,7 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "redreroll", "2": "orangereroll", "3": "orangereroll" },
             "skills": { "0": "movement/climb", "1": "miscellaneous/horror", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":44, "y":152}, "image_zoom": 300 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/manifestation-of-ymir.webp",
             "image_location": {"x":48, "y":63},
@@ -5509,9 +5243,7 @@
             "attacktype": "contact",
             "dices": { "0": "red", "1": "orangereroll", "2": "yellowreroll", "3": "none" },
             "skills": { "0": "movement/blocking", "1": "movement/wall_wrecker", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":88, "y":110}, "image_zoom": 270, "image_flip": true }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/son-of-ymir.webp",
             "image_location": {"x":49, "y":57},
@@ -5529,9 +5261,7 @@
             "attacktype": "contact",
             "dices": { "0": "orangereroll", "1": "orangereroll", "2": "yellowreroll", "3": "none" },
             "skills": { "0": "miscellaneous/support", "1": "defense/protected", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":35, "y":172}, "image_zoom": 380, "image_flip": true }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/ymir-s-herald.webp",
             "imageHD": "data/tiles/img/ymir-s-herald_hd.webp",
@@ -5550,9 +5280,7 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "red", "2": "orangereroll", "3": "orange" },
             "skills": { "0": "movement/evasive", "1": "attack/circular_strike", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":28, "y":152}, "image_zoom": 260 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/ymir-s-hunt-master.webp",
             "imageHD": "data/tiles/img/ymir-s-hunt-master_hd.webp",
@@ -5571,9 +5299,7 @@
             "attacktype": "contact",
             "dices": { "0": "yellow", "1": "yellow", "2": "yellow", "3": "none" },
             "skills": { "0": "miscellaneous/jinx", "1": "magic/spell_caster", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":55, "y":158}, "image_zoom": 300 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/seer-of-ymir.webp",
             "imageHD": "data/tiles/img/seer-of-ymir_hd.webp",
@@ -5592,9 +5318,7 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "redreroll", "2": "redreroll", "3": "none" },
             "skills": { "0": "movement/blocking", "1": "attack/attack_from_beyond", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":84, "y":180}, "image_zoom": 500, "image_flip": true }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/son-of-muspell.webp",
             "image_location": {"x":36, "y":51},
@@ -5612,9 +5336,7 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "redreroll", "2": "redreroll", "3": "none" },
             "skills": { "0": "attack/reach", "1": "miscellaneous/horror", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":50, "y":168}, "image_zoom": 320, "image_flip": true }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/tiles/img/surt.webp",
             "imageHD": "data/tiles/img/surt_hd.webp",
@@ -5737,9 +5459,7 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "redreroll", "2": "orange", "3": "yellow" },
             "skills": { "0": "movement/evasive", "1": "attack/reach", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":21, "y":141}, "image_zoom": 320 }
-            ],
+            "tokens": [ {} ],
 
             "quote": null,
 
@@ -5786,9 +5506,7 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "yellowreroll", "2": "yellowreroll", "3": "none" },
             "skills": { "0": "miscellaneous/jinx", "1": "miscellaneous/fascination", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":67, "y":235}, "image_zoom": 400 }
-            ],
+            "tokens": [ {} ],
 
             "quote": null,
 
@@ -5851,9 +5569,7 @@
             "attacktype": "contact",
             "dices": { "0": "orangereroll", "1": "orangereroll", "2": "yellowreroll", "3": "none" },
             "skills": { "0": "miscellaneous/horror", "1": "attack/attack_from_beyond", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":102, "y":155}, "image_zoom": 270, "image_flip": true }
-            ],
+            "tokens": [ {} ],
 
             "quote": null,
 
@@ -5874,9 +5590,7 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
             "skills": { "0": "miscellaneous/support", "1": "movement/climb", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":36, "y":225}, "image_zoom": 350 }
-            ],
+            "tokens": [ {} ],
 
             "quote": null,
 
@@ -5897,9 +5611,7 @@
             "attacktype": "contact",
             "dices": { "0": "orangereroll", "1": "yellowreroll", "2": "yellowreroll", "3": "none" },
             "skills": { "0": "magic/spell_caster", "1": "miscellaneous/fascination", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":82, "y":182}, "image_zoom": 370 }
-            ],
+            "tokens": [ {} ],
 
             "quote": null,
 
@@ -5920,9 +5632,7 @@
             "attacktype": "ranged",
             "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
             "skills": { "0": "movement/evasive", "1": "movement/leap", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":88, "y":133}, "image_zoom": 290 }
-            ],
+            "tokens": [ {} ],
 
             "quote": null,
 
@@ -5986,9 +5696,7 @@
             "attacktype": "contact",
             "dices": { "0": "red", "1": "none", "2": "none", "3": "none" },
             "skills": { "0": "defense/sacrifice", "1": "attack/reach", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":15, "y":223}, "image_zoom": 410, "image_flip": true }
-            ],
+            "tokens": [ {} ],
 
             "quote": null,
 
@@ -6030,9 +5738,7 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
             "skills": { "0": "attack/reach", "1": "movement/climb", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":70, "y":143}, "image_zoom": 560 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -6057,9 +5763,7 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
             "skills": { "0": "attack/counterattack", "1": "movement/climb", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":43, "y":149}, "image_zoom": 270, "image_flip": true }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -6204,9 +5908,7 @@
             "attacktype": "contact",
             "dices": { "0": "orangereroll", "1": "orangereroll", "2": "none", "3": "none" },
             "skills": { "0": "magic/spell_caster", "1": "miscellaneous/horror", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":18, "y":221}, "image_zoom": 370 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/heroes/img/atla.webp",
             "imageHD": "data/heroes/img/atla_hd.webp",
@@ -6225,9 +5927,7 @@
             "attacktype": "contact",
             "dices": { "0": "red", "1": "orangereroll", "2": "none", "3": "none" },
             "skills": { "0": "miscellaneous/support", "1": "movement/climb", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":81, "y":205}, "image_zoom": 330, "image_flip": true }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/heroes/img/bran-mak-morn.webp",
             "image_flip": true,
@@ -6247,9 +5947,7 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "redreroll", "2": "yellowreroll", "3": "yellowreroll" },
             "skills": { "0": "attack/precision_strike", "1": "attack/counterattack", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":7, "y":257}, "image_zoom": 370 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/heroes/img/drusus.webp",
             "imageHD": "data/heroes/img/drusus_hd.webp",
@@ -6269,9 +5967,7 @@
             "dices": { "0": "orangereroll", "1": "orangereroll", "2": "orange", "3": "none" },
             "skills": { "0": "movement/evasive", "1": "attack/precision_strike", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":31, "y":236}, "image_zoom": 500 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -6297,9 +5993,7 @@
             "dices": { "0": "red", "1": "red", "2": "orange", "3": "none" },
             "skills": { "0": "movement/wall_wrecker", "1": "attack/precision_strike", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":66, "y":141}, "image_zoom": 280 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -6608,9 +6302,7 @@
             "attacktype": "contact",
             "dices": { "0": "red", "1": "red", "2": "none", "3": "none" },
             "skills": { "0": "movement/wall_wrecker", "1": "movement/blocking", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":7, "y":257}, "image_zoom": 370 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/heroes/img/drusus.webp",
             "imageHD": "data/heroes/img/drusus_hd.webp",
@@ -6630,9 +6322,7 @@
             "dices": { "0": "yellow", "1": "yellow", "2": "none", "3": "none" },
             "skills": { "0": "miscellaneous/jinx", "1": "magic/spell_caster", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":47, "y":217}, "image_zoom": 180, "image_flip": true }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -6658,9 +6348,7 @@
             "dices": { "0": "redreroll", "1": "redreroll", "2": "red", "3": "none" },
             "skills": { "0": "movement/wall_wrecker", "1": "attack/circular_strike", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":47, "y":199}, "image_zoom": 300 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -6686,9 +6374,7 @@
             "dices": { "0": "redreroll", "1": "red", "2": "orange", "3": "none" },
             "skills": { "0": "attack/precision_strike", "1": "movement/blocking", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":55, "y":201}, "image_zoom": 316 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -6714,9 +6400,7 @@
             "dices": { "0": "redreroll", "1": "red", "2": "none", "3": "none" },
             "skills": { "0": "miscellaneous/support", "1": "miscellaneous/leadership", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":42, "y":165}, "image_zoom": 300 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -6743,9 +6427,7 @@
             "dices": { "0": "red", "1": "orangereroll", "2": "none", "3": "none" },
             "skills": { "0": "attack/counterattack", "1": "movement/evasive", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":47, "y":225}, "image_zoom": 400 }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -6772,9 +6454,7 @@
             "dices": { "0": "red", "1": "orangereroll", "2": "orange", "3": "none" },
             "skills": { "0": "movement/feline_grace", "1": "attack/counterattack", "2": "none", "3": "none" },
             "reinforcement": "",
-            "tokens": [
-                { "image_location": {"x":35, "y":182}, "image_zoom": 320, "image_flip": true }
-            ],
+            "tokens": [ {} ],
 
             "quote": {
                 "author": {
@@ -6820,9 +6500,7 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "red", "2": "none", "3": "none" },
             "skills": { "0": "movement/evasive", "1": "attack/counterattack", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":-24, "y":173}, "image_zoom": 500, "image": "data/heroes/img/nestor.webp", "image_flip": true }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/heroes/img/nestor.webp",
             "imageHD": "data/heroes/img/nestor_hd.webp",
@@ -6860,9 +6538,7 @@
             "attacktype": "ranged",
             "dices": { "0": "orange", "1": "orange", "2": "orange", "3": "none" },
             "skills": { "0": "attack/elite_shooter", "1": "defense/untouchable", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":82, "y":164}, "image_zoom": 550 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/heroes/img/aja.webp",
             "image_flip": true,
@@ -6901,9 +6577,7 @@
             "attacktype": "ranged",
             "dices": { "0": "redreroll", "1": "orangereroll", "2": "none", "3": "none" },
             "skills": { "0": "movement/blocking", "1": "attack/counterattack", "2": "none", "3": "none" },
-            "tokens": [
-                { "image_location": {"x":43, "y":117}, "image_zoom": 550 }
-            ],
+            "tokens": [ {} ],
 
             "image": "data/heroes/img/ganbaatar.webp",
             "image_flip": true,

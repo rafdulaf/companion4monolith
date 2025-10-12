@@ -451,7 +451,7 @@ var EncyclopediaTiles = {
             imagelocation: {x: tile.image_location.x, y: tile.image_location.y},
             imagezoom: tile.image_zoom,
             imagerotation: tile.image_rotation || "0",
-            tokens: (tile.tokens || []).map(function(t) { return {active: true, image: t.image, imagelocation: {x: t.image_location.x, y: t.image_location.y}, imagezoom: t.image_zoom, imagerotation: 0, imageflip: t.image_flip || false}})
+            tokens: (tile.tokens || []).map(function(t) { return {active: true, image: (t.image || _addToken(tile.image)) + "?version=" + Version, imagelocation: {x: t.image_location?.x || 50, y: t.image_location?.y || 50}, imagezoom: t.image_zoom || 100, imagerotation: 0, imageflip: t.image_flip || false}})
         };
         
         if (tile.dices2)
@@ -460,6 +460,12 @@ var EncyclopediaTiles = {
         }
         
         return o;
+        
+        function _addToken(image)
+        {
+            let i = image.lastIndexOf(".");
+            return image.substring(0, i) + "_token" + image.substring(i);
+        }
     },
 
     _findTilesById: function(id)
