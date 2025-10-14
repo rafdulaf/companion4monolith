@@ -5507,7 +5507,7 @@
             "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "yellowreroll", "2": "yellowreroll", "3": "none" },
             "skills": { "0": "miscellaneous/jinx", "1": "miscellaneous/fascination", "2": "none", "3": "none" },
-            "tokens": [ {} ],
+            "tokens": [ { "image": "data/tiles/img/burning-skull_token.webp"} ],
 
             "quote": null,
 
