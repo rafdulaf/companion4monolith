@@ -83,7 +83,7 @@ public class GenerateSWListingFiles
             {
                 if (Files.isRegularFile(file) // Not caching folders
                     && !file.getFileName().toString().toLowerCase().endsWith("_hd.webp") // Not caching HS images
-                    && !file.getFileName().toString().toLowerCase().endsWith("_sheet.webp")) // Not caching thumbnails
+                    && !file.getFileName().toString().toLowerCase().endsWith("_cardpreview.webp")) // Not caching image previews
                 {
                     long fileSize = Files.size(file);
                     boolean onlyOneLanguage = false;
