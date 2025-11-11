@@ -60,14 +60,12 @@ function delay(milliseconds){
     });
 }
 
-async function exportTile(tile, position = 1)
+async function exportTile(tile)
 {
     let domTile = document.getElementById("tile-" + tile.id);
     
     let defaultColor;
     let borderImg;
-    let defaultImage;
-    let img;
     
     if (tile.color != "none")
     {
@@ -79,24 +77,12 @@ async function exportTile(tile, position = 1)
         console.log("Switching from " + defaultColor + " to " + tile.color);
         borderImg.src = borderImg.src.replace("background_" + defaultColor + ".webp", "background_" + tile.color + ".webp");
     }
-    if (position != 1)
-    {
-        img = $(".image img", domTile)[0];
-        defaultImage = img.src;
-        console.log("Switching image to " + tile.image);
-        img.src = tile.image + "?version=" + Version;
-        await delay(100); // Wait for image to load
-    }
     
-    await exportElement("tile-" + tile.id, tile.id + "_" + position + (tile.color != "none" ? "_" + tile.color : "") + "_cardpreview_" + Language + ".webp");
+    await exportElement("tile-" + tile.id, tile.id + (tile.color != "none" ? "_" + tile.color : "") + "_cardpreview_" + Language + ".webp");
     
     if (defaultColor != null)
     {
         borderImg.src = borderImg.src.replace("background_" + tile.color + ".webp", "background_" + defaultColor + ".webp");
-    }
-    if (position != 1)
-    {
-        img.src = defaultImage;
     }
 }
 
