@@ -160,3 +160,25 @@ async function exportEquipments()
         await exportEquipment(equipment, Object.keys(exportedEquipments[equipment.id]).length);
     }
 }
+
+async function exportSpell(spell)
+{
+    await exportElement("spell-" + spell.id, spell.id + "_cardpreview_" + Language + ".webp");
+}
+async function exportSpells()
+{
+    let exportedSpells = {};
+
+    for (let spell of Encyclopedia.spells.list)
+    {
+        if (exportedSpells[spell.id])
+        {
+            continue;
+        }
+        
+        exportedSpells[spell.id] = true;
+
+        await exportSpell(spell);
+    }
+}
+
