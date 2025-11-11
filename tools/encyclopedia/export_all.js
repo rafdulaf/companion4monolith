@@ -44,7 +44,7 @@ async function exportElement(id, filename)
 
 async function exportHero(hero)
 {
-    await exportElement("hero-" + hero.id, hero.id + "_cardpreview.webp");
+    await exportElement("hero-" + hero.id, hero.id + "_cardpreview_" + Language + ".webp");
 }
 async function exportHeroes()
 {
@@ -54,29 +54,49 @@ async function exportHeroes()
     }
 }
 
-async function exportTile(tile)
+function delay(milliseconds){
+    return new Promise(resolve => {
+        setTimeout(resolve, milliseconds);
+    });
+}
+
+async function exportTile(tile, position = 1)
 {
     let domTile = document.getElementById("tile-" + tile.id);
-    console.log(domTile)
     
     let defaultColor;
+    let borderImg;
+    let defaultImage;
     let img;
+    
     if (tile.color != "none")
     {
-        img = $("picture img", domTile)[0];
+        borderImg = $("picture img", domTile)[0];
                 
-        console.log(img.src, /background_([a-z]*).webp/i.test(img.src));
+        /background_([a-z]*).webp/i.test(borderImg.src);
         defaultColor = RegExp.$1;
 
         console.log("Switching from " + defaultColor + " to " + tile.color);
-        img.src = img.src.replace("background_" + defaultColor + ".webp", "background_" + tile.color + ".webp");
+        borderImg.src = borderImg.src.replace("background_" + defaultColor + ".webp", "background_" + tile.color + ".webp");
+    }
+    if (position != 1)
+    {
+        img = $(".image img", domTile)[0];
+        defaultImage = img.src;
+        console.log("Switching image to " + tile.image);
+        img.src = tile.image + "?version=" + Version;
+        await delay(100); // Wait for image to load
     }
     
-    await exportElement("tile-" + tile.id, tile.id + "_" (tile.color != "none" ? "_" + tile.color : "") + "_cardpreview.webp");
+    await exportElement("tile-" + tile.id, tile.id + "_" + position + (tile.color != "none" ? "_" + tile.color : "") + "_cardpreview_" + Language + ".webp");
     
     if (defaultColor != null)
     {
-        img.src = img.src.replace("background_" + tile.color + ".webp", "background_" + defaultColor + ".webp");
+        borderImg.src = borderImg.src.replace("background_" + tile.color + ".webp", "background_" + defaultColor + ".webp");
+    }
+    if (position != 1)
+    {
+        img.src = defaultImage;
     }
 }
 
@@ -86,14 +106,57 @@ async function exportTiles()
     
     for (let tile of Encyclopedia.tiles.list)
     {
-        if (exportedTiles[tile.id] && exportedTiles[tile.id][tile.color])
+        if (exportedTiles[tile.id] && exportedTiles[tile.id][tile.color] && exportedTiles[tile.id][tile.color][tile.image])
         {
             continue;
         }
         
-        await exportTile(tile);
-        
         exportedTiles[tile.id] = exportedTiles[tile.id] || {};
-        exportedTiles[tile.id][tile.color] = true;
+        exportedTiles[tile.id][tile.color] = exportedTiles[tile.id][tile.color] || {};
+        exportedTiles[tile.id][tile.color][tile.image] = true;
+        
+        await exportTile(tile, Object.keys(exportedTiles[tile.id][tile.color]).length);
+    }
+}
+
+async function exportEquipment(equipment, position = 1)
+{
+    let domEquipment = document.getElementById("equipment-" + equipment.id);
+
+    let defaultImage;
+    let img;
+
+    if (position != 1)
+    {
+        img = $(".image img", domEquipment)[0];
+        defaultImage = img.src;
+        console.log("Switching image to " + equipment.image);
+        img.src = equipment.image + "?version=" + Version;
+        await delay(100); // Wait for image to load
+    }
+
+    await exportElement("equipment-" + equipment.id, equipment.id + "_" + position + "_cardpreview_" + Language + ".webp");
+
+    if (position != 1)
+    {
+        img.src = defaultImage;
+    }
+}
+
+async function exportEquipments()
+{
+    let exportedEquipments = {};
+    
+    for (let equipment of Encyclopedia.equipments.list)
+    {
+        if (exportedEquipments[equipment.id] && exportedEquipments[equipment.id][equipment.image])
+        {
+            continue;
+        }
+        
+        exportedEquipments[equipment.id] = exportedEquipments[equipment.id] || {};
+        exportedEquipments[equipment.id][equipment.image] = true;
+
+        await exportEquipment(equipment, Object.keys(exportedEquipments[equipment.id]).length);
     }
 }
