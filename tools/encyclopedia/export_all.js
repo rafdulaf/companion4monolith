@@ -115,7 +115,7 @@ async function exportTiles()
         exportedTiles[tile.id][tile.color] = exportedTiles[tile.id][tile.color] || {};
         exportedTiles[tile.id][tile.color][tile.image] = true;
         
-        await exportTile(tile, Object.keys(exportedTiles[tile.id][tile.color]).length);
+        await exportTile(tile);
     }
 }
 
