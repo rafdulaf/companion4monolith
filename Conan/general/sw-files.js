@@ -122,7 +122,7 @@ const urlsToCache = [
 	"data/equipments/img/sacred_treasure_2.webp",
 	"data/equipments/img/sacred_treasure_3.webp",
 	"data/equipments/img/sacrificial_dagger.webp",
-	"data/equipments/img/salpeter.webp",
+	"data/equipments/img/saltpeter.webp",
 	"data/equipments/img/scale_mail.webp",
 	"data/equipments/img/serpent_crown.webp",
 	"data/equipments/img/shadow_mantel.webp",
