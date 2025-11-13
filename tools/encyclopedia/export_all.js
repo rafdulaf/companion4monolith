@@ -120,8 +120,18 @@ async function exportEquipment(equipment, position = 1)
         img.src = equipment.image + "?version=" + Version;
         await delay(100); // Wait for image to load
     }
+    
+    let imgId = equipement.image ? _keepImageId(equipement.image) : equipment.id;
+    
+    function _keepImageId(imageSrc)
+    {
+        let i = imageSrc.lastIndexOf("/");
+        let filename = imageSrc.substring(i + 1);
+        let dotIndex = filename.lastIndexOf(".");
+        return filename.substring(0, dotIndex);
+    }
 
-    await exportElement("equipment-" + equipment.id, equipment.id + "_" + position + "_cardpreview_" + Language + ".webp");
+    await exportElement("equipment-" + equipment.id, imgId + "_cardpreview_" + Language + ".webp");
 
     if (position != 1)
     {

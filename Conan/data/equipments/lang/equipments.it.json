@@ -246,13 +246,16 @@
             "title": "Pugnale Yuetshi"
         },
         "orb_red_position": {
-            "title": "Posizione globo"
+            "title": "Posizione globo",
+            "hiddenName": "rosso"
         },
         "orb_green_position": {
-            "title": "Posizione globo"
+            "title": "Posizione globo",
+            "hiddenName": "verde"
         },
         "orb_blue_position": {
-            "title": "Posizione globo"
+            "title": "Posizione globo",
+            "hiddenName": "blu"
         },
         "potion": {
             "title": "Pozione"

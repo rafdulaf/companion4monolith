@@ -246,13 +246,16 @@
             "title": "Yuetshi Knife"
         },
         "orb_red_position": {
-            "title": "Orb position"
+            "title": "Orb position",
+            "hiddenName": "red"
         },
         "orb_green_position": {
-            "title": "Orb position"
+            "title": "Orb position",
+            "hiddenName": "green"
         },
         "orb_blue_position": {
-            "title": "Orb position"
+            "title": "Orb position",
+            "hiddenName": "blue"
         },
         "potion": {
             "title": "Potion"
