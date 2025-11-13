@@ -20,7 +20,7 @@ async function exportImage(filename, data)
 
 async function exportElement(id, filename)
 {
-    console.log("Handling " + id);
+    console.log("Handling " + id + " => " + filename);
     let element = document.getElementById(id);
     
     // Preparing
@@ -121,7 +121,7 @@ async function exportEquipment(equipment, position = 1)
         await delay(100); // Wait for image to load
     }
     
-    let imgId = equipement.image ? _keepImageId(equipement.image) : equipment.id;
+    let imgId = equipment.image ? _keepImageId(equipment.image) : equipment.id;
     
     function _keepImageId(imageSrc)
     {
