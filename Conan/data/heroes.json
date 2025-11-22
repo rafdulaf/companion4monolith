@@ -1119,7 +1119,7 @@
                     "name": "Robert E. Howard"
                 }
             },
-            "class": [{ "type": "rogue" }],
+            "class": [{ "type": "warrior" },{ "type" : "rogue" }],
 
             "gems": 11,
             "encumbrance": [12, 8, 10],
@@ -2758,7 +2758,7 @@
         
         {
             "id": "bran-mak-morn",
-            "class": [{ "type": "warrior" }],
+            "class": [{ "type": "mercenary" }],
 
             "gems": 12,
             "encumbrance": [11, 8, 9],
@@ -2815,7 +2815,7 @@
         
         {
             "id": "othna",
-            "class": [{ "type": "mercenary" }],
+            "class": [{ "type" : "rogue" }],
 
             "gems": 9,
             "encumbrance": [9, 6, 9],
@@ -2940,7 +2940,7 @@
         
         {
             "id": "nestor",
-            "class": [{ "type": "warrior" }],
+            "class": [{ "type" : "rogue" }, { "type": "mercenary" }],
 
             "gems": 10,
             "encumbrance": [10, 6, 8],
