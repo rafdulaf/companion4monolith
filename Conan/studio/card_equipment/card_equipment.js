@@ -61,6 +61,10 @@ var CardEquipment = mergeObject(StudioItem, {
             code += imageCode;
         }
 
+        if (card.require)
+        {
+            code += "<div class=\"require\"><img class=\"require\" src=\"studio/card_equipment/img/" + card.require + ".webp?version=" + Version + "\"/></div>"
+        }
         if (card.name !== undefined && card.name !== null)
         {
                code += "<img class=\"background-name\" src=\"studio/card_equipment/img/name-background.webp?version=" + Version + "\"/>"
@@ -214,10 +218,10 @@ var CardEquipment = mergeObject(StudioItem, {
         if (manipLevel == -1 && card.manipulation && (card.manipulation[0] != 'none' || card.manipulation.explosive))
         {
             textMalus++;
-            code += "<div class=\"manipulation" + (card.manipulation.explosive ? " explosive": "") + " level" + level + "\">"
+            code += "<div class=\"manipulation" + (card.manipulation.explosive ? " explosive": (card.manipulation.add === false ? " noadd" : "")) + " level" + level + "\">"
                   + (card.manipulation[1] == 'none' ?
-                        "<img class=\"background-manipulation\" src=\"studio/card_equipment/img/" + (!card.manipulation.explosive ? "manip" : "launch") + "-1.webp?version=" + Version + "\"/>" :
-                        "<img class=\"background-manipulation duo\" src=\"studio/card_equipment/img/" + (!card.manipulation.explosive ? "manip" : "launch") + "-2.webp?version=" + Version + "\"/>")
+                        "<img class=\"background-manipulation\" src=\"studio/card_equipment/img/" + (!card.manipulation.explosive ? (card.manipulation.add === false ? "manip-1-noadd" : "manip-1") : "launch-1") + ".webp?version=" + Version + "\"/>" :
+                        "<img class=\"background-manipulation duo\" src=\"studio/card_equipment/img/" + (!card.manipulation.explosive ? (card.manipulation.add === false ? "manip-2-noadd" : "manip-2") : "launch-2") + ".webp?version=" + Version + "\"/>")
                      + (card.manipulation[0] == 'none' ? "" : "<img src=\"studio/card_equipment/img/dice_" + card.manipulation[0] + ".webp?version=" + Version + "\"/>")
                      + (card.manipulation[1] == 'none' ? "" : "<img src=\"studio/card_equipment/img/dice_" + card.manipulation[1] + ".webp?version=" + Version + "\"/>")
                    + "</div>";
@@ -331,6 +335,9 @@ var CardEquipment = mergeObject(StudioItem, {
                 + "<div class=\"field name\">"
                     + "<label for=\"eqname\">" + CardEquipment._i18n.name + "</label>"
                     + "<input id=\"eqname\" name=\"cardname\" autocomplete=\"off\" placeholder=\"" + CardEquipment._i18n.namePh + "\" onkeyup=\"CardEquipment._preview();\" onchange=\"CardEquipment._preview();\"/>"
+                    + "<div class=\"field require\">"
+                        + "<input id=\"eqrequire\" name=\"cardrequire\" type=\"checkbox\" onchange=\"CardEquipment._preview();\"/><label for=\"eqrequire\">Alchemy</label>"
+                    + "</div>"
                 + "</div>"
                 + "<div class=\"field melee\">"
                     + "<label for=\"eqmelee\">" + CardEquipment._i18n.meleeAttack + "</label>"
@@ -364,6 +371,7 @@ var CardEquipment = mergeObject(StudioItem, {
                     + "<select id=\"eqmanipulation\" class=\"dice\" name=\"cardmanip1\"><option value=\"none\">" + CardEquipment._i18n.diceNone + "</option><option value=\"red\">" + CardEquipment._i18n.diceRed + "</option><option value=\"redreroll\">" + CardEquipment._i18n.diceRedReroll + "</option><option value=\"orange\">" + CardEquipment._i18n.diceOrange + "</option><option value=\"orangereroll\">" + CardEquipment._i18n.diceOrangeReroll + "</option><option value=\"yellow\">" + CardEquipment._i18n.diceYellow + "</option><option value=\"yellowreroll\">" + CardEquipment._i18n.diceYellowReroll + "</option></select>"
                     + "<select id=\"eqmanipulation2\" class=\"dice\" name=\"cardmanip2\"><option value=\"none\">" + CardEquipment._i18n.diceNone + "</option><option value=\"red\">" + CardEquipment._i18n.diceRed + "</option><option value=\"redreroll\">" + CardEquipment._i18n.diceRedReroll + "</option><option value=\"orange\">" + CardEquipment._i18n.diceOrange + "</option><option value=\"orangereroll\">" + CardEquipment._i18n.diceOrangeReroll + "</option><option value=\"yellow\">" + CardEquipment._i18n.diceYellow + "</option><option value=\"yellowreroll\">" + CardEquipment._i18n.diceYellowReroll + "</option></select>"
                     + "<div class=\"manipexplosive\"><input type=\"checkbox\" id=\"eqexplosive\" name=\"cardexplosive\" onchange=\"CardEquipment._preview();\"/><label for=\"eqexplosive\">" + CardEquipment._i18n.manipulationExplosive + "</label></div>"
+                    + "<div class=\"manipnoadd\"><input type=\"checkbox\" id=\"eqmanipnoadd\" name=\"cardmaninoadd\" onchange=\"CardEquipment._preview();\"/><label for=\"eqmanipnoadd\">" + CardEquipment._i18n.manipulationNoAdd + "</label></div>"
                 + "</div>"
                 + "<div class=\"field movement\">"
                     + "<label for=\"eqmovement\">" + CardEquipment._i18n.movement + "</label>"
@@ -434,16 +442,18 @@ var CardEquipment = mergeObject(StudioItem, {
             name: "",
             encumbrance: "",
             movement: "",
+            require: null,
             text: "",
             textSize: "100",
             textInter: "70",
             textStartLeft: false,
             melee: { 0: "none", 1: "none", 2: "none", 3: "none" },
             ranged: { 0: "none", 1: "none", throwable: false },
-            manipulation: { 0: "none", 1: "none", explosive: false, force: "false" },
+            manipulation: { 0: "none", 1: "none", explosive: false, force: "false", add: true },
             active: { 0: "none", 1: "none" },
             passive: { 0: "none", 1: "none" },
             skills: { 0: "none", 1: "none" },
+            require: null,
             image: "",
             imagelocation: {x: "50", y: "50"},
             imagezoom: "100",
@@ -477,6 +487,7 @@ var CardEquipment = mergeObject(StudioItem, {
         return {
             id: $(".dialog input[name=cardpos]")[0].value,
             name: $(".dialog input[name=cardname]")[0].value,
+            require: $(".dialog input[name=cardrequire]")[0].checked ? "alchemy" : null,
             encumbrance: $(".dialog input[name=cardweight]")[0].value,
             text: $(".dialog textarea[name=cardtext]")[0].value,
             textSize: $(".dialog input[name=cardtextsize]")[0].value || "100",
@@ -487,7 +498,7 @@ var CardEquipment = mergeObject(StudioItem, {
             skills: { 0: $(".dialog select[name=cardskills1]")[0].value, 1: $(".dialog select[name=cardskills2]")[0].value },
             skillsatbottom: $(".dialog select[name=cardskillsposition]")[0].value,
             ranged: { 0: $(".dialog select[name=cardranged1]")[0].value, 1: $(".dialog select[name=cardranged2]")[0].value, 2: $(".dialog select[name=cardranged3]")[0].value, 3: $(".dialog select[name=cardranged4]")[0].value, throwable: $(".dialog input[name=cardthrowable]")[0].checked },
-            manipulation: { 0: $(".dialog select[name=cardmanip1]")[0].value, 1: $(".dialog select[name=cardmanip2]")[0].value, explosive: $(".dialog input[name=cardexplosive]")[0].checked, force: $(".dialog input[name=cardmanipforce]")[0].checked ? $(".dialog select[name=cardmanipforcetext]")[0].value : "false" },
+            manipulation: { 0: $(".dialog select[name=cardmanip1]")[0].value, 1: $(".dialog select[name=cardmanip2]")[0].value, explosive: $(".dialog input[name=cardexplosive]")[0].checked, force: $(".dialog input[name=cardmanipforce]")[0].checked ? $(".dialog select[name=cardmanipforcetext]")[0].value : "false", add: $(".dialog input[name=cardmaninoadd]")[0].checked },
             active: { 0: $(".dialog select[name=cardactive1]")[0].value, 1: $(".dialog select[name=cardactive2]")[0].value },
             passive: { 0: $(".dialog select[name=cardpassive1]")[0].value, 1: $(".dialog select[name=cardpassive2]")[0].value },
             image: $(".dialog input[name=cardimage]")[0].value,
@@ -501,6 +512,7 @@ var CardEquipment = mergeObject(StudioItem, {
     {
         $(".dialog input[name=cardpos]")[0].value = card.id;
         $(".dialog input[name=cardname]")[0].value = card.name;
+        $(".dialog input[name=cardrequire]")[0].checked = card.require == "alchemy";
         $(".dialog input[name=cardweight]")[0].value = card.encumbrance;
         $(".dialog textarea[name=cardtext]")[0].value = card.text || "";
         $(".dialog input[name=cardtextsize]")[0].value = card.textSize;
@@ -521,6 +533,7 @@ var CardEquipment = mergeObject(StudioItem, {
         $(".dialog select[name=cardmanip1]")[0].value = card.manipulation['0']; $(".dialog select[name=cardmanip1]").attr("data-value", card.manipulation['0']);
         $(".dialog select[name=cardmanip2]")[0].value = card.manipulation['1']; $(".dialog select[name=cardmanip2]").attr("data-value", card.manipulation['1']);
         $(".dialog input[name=cardexplosive]")[0].checked = card.manipulation.explosive;
+        $(".dialog input[name=cardmaninoadd]")[0].checked = card.manipulation.add !== false;
         $(".dialog select[name=cardactive1]")[0].value = card.active['0']; $(".dialog select[name=cardactive1]").attr("data-value", card.active['0']);
         $(".dialog select[name=cardactive2]")[0].value = card.active['1']; $(".dialog select[name=cardactive2]").attr("data-value", card.active['1']);
         $(".dialog select[name=cardpassive1]")[0].value = card.passive['0']; $(".dialog select[name=cardpassive1]").attr("data-value", card.passive['0']);

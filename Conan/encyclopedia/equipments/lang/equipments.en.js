@@ -8,6 +8,8 @@ EncyclopediaEquipments._i18n = {
     'fromAnd': "and",
     'card': "copy",
     'cards': "copies",
+    'require': "Requires:",
+    'require-alchemy': "Only a Hero with the Alchemy skill can use an item with an Alchemy icon.",
     'clarification': "Clarification:",
     'skill': "Skill:",
     'tokensUsed': "Use the tokens:"

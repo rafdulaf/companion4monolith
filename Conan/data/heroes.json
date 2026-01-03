@@ -3024,6 +3024,150 @@
             "image_location": { "x": "-16", "y": "50" },
             "model": "kushite-mercenaries",
             "origins": ["versus-mode"]
+        },
+        
+        {
+            "id": "thutmekri",
+            "class": [{ "type": "mercenary" }],
+            
+            "gems": 10,
+            "encumbrance": [10, 8, 10],
+
+            "melee": { "dice": "orangereroll", "exertion": 4 },
+            "ranged": { "dice": "orange", "exertion": 3 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "2", "exertion": 3 },
+            "manipulation": { "dice": "yellow", "exertion": 4 },
+
+            "skills": [
+                { "id": "swimming", "exertion": 6 },
+                { "id": "leap", "exertion": 7 },
+                { "id": "counterattack", "exertion": 8 },
+                { "id": "precision_shot", "exertion": 9 },
+                { "id": "bodyguard" }
+            ],
+
+            "image": "data/heroes/img/thutmekri.webp",
+            "imageHD": "data/heroes/img/thutmekri_hd.webp",
+            "image_zoom": "91",
+            "image_location": { "x": "4", "y": "50" },
+            "model": "thutmekri",
+            "origins": ["shadowsoverluxur"]
+        },
+        
+        {
+            "id": "khensa",
+            "class": [{ "type": "rogue" }],
+            
+            "gems": 10,
+            "encumbrance": [10, 8, 10],
+
+            "melee": { "dice": "orange", "exertion": 4 },
+            "ranged": { "dice": "orange", "exertion": 3 },
+            "defense": { "dice": "orangereroll" },
+            "movement": { "base": "2", "exertion": 4 },
+            "manipulation": { "dice": "red", "exertion": 4 },
+
+            "skills": [
+                { "id": "precision_strike", "exertion": 6 },
+                { "id": "feline_grace", "exertion": 6 },
+                { "id": "leap", "exertion": 8 },
+                { "id": "swimming", "exertion": 8 },
+                { "id": "untouchable" }
+            ],
+
+            "image": "data/heroes/img/khensa.webp",
+            "imageHD": "data/heroes/img/khensa_hd.webp",
+            "image_zoom": "91",
+            "image_location": { "x": "4", "y": "50" },
+            "model": "khensa",
+            "origins": ["shadowsoverluxur"]
+        },
+        
+        {
+            "id": "gwarun",
+            "class": [{ "type": "warrior" }],
+            
+            "gems": 11,
+            "encumbrance": [11, 8, 10],
+
+            "melee": { "dice": "red", "exertion": 5 },
+            "ranged": { "dice": "yellowreroll", "exertion": 4 },
+            "defense": { "dice": "orange" },
+            "movement": { "base": "2", "exertion": 4 },
+            "manipulation": { "dice": "orangereroll", "exertion": 3 },
+
+            "skills": [
+                { "id": "climb", "exertion": 8 },
+                { "id": "leap", "exertion": 8 },
+                { "id": "wall_wrecker", "exertion": 9 },
+                { "id": "reach" }
+            ],
+
+            "image": "data/heroes/img/gwarun.webp",
+            "imageHD": "data/heroes/img/gwarun_hd.webp",
+            "image_zoom": "88",
+            "image_location": { "x": "4", "y": "51" },
+            "model": "gwarun",
+            "origins": ["shadowsoverluxur"]
+        },
+
+        {
+            "id": "thotothmes",
+            "class": [{ "type": "sorcerer" }],
+            
+            "gems": 10,
+            "encumbrance": [8, 7, 8],
+
+            "melee": { "dice": "yellow", "exertion": 4 },
+            "ranged": { "dice": "yellow", "exertion": 3 },
+            "defense": { "dice": "yellowreroll" },
+            "movement": { "base": "2", "exertion": 2 },
+            "manipulation": { "dice": "orange", "exertion": 4 },
+
+            "skills": [
+                { "id": "alchemy", "exertion": 7 },
+                { "id": "spell_caster", "exertion": 7 },
+                { "id": "concentration" },
+                { "id": "untouchable" }
+            ],
+
+            "image": "data/heroes/img/thotothmes.webp",
+            "imageHD": "data/heroes/img/thotothmes_hd.webp",
+            "image_zoom": "88",
+            "image_location": { "x": "4", "y": "51" },
+            "model": "thotothmes",
+            "origins": ["shadowsoverluxur"]
+        },
+        
+
+        {
+            "id": "vasha",
+            "class": [{ "type": "sorcerer" }],
+            
+            "gems": 10,
+            "encumbrance": [8, 7, 8],
+
+            "melee": { "dice": "yellowreroll", "exertion": 3 },
+            "ranged": { "dice": "yellow", "exertion": 4 },
+            "defense": { "dice": "yellow" },
+            "movement": { "base": "2", "exertion": 2 },
+            "manipulation": { "dice": "yellowreroll", "exertion": 4 },
+
+            "skills": [
+                { "id": "leap", "exertion": 6 },
+                { "id": "spell_caster", "exertion": 7 },
+                { "id": "alchemy", "exertion": 7 },
+                { "id": "leadership" },
+                { "id": "support" }
+            ],
+
+            "image": "data/heroes/img/vasha.webp",
+            "imageHD": "data/heroes/img/vasha_hd.webp",
+            "image_zoom": "88",
+            "image_location": { "x": "4", "y": "51" },
+            "model": "vasha",
+            "origins": ["shadowsoverluxur"]
         }
     ]
 }

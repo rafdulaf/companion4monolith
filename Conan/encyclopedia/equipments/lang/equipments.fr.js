@@ -8,6 +8,8 @@ EncyclopediaEquipments._i18n = {
     'fromAnd': "et",
     'card': "exemplaire",
     'cards': "exemplaires",
+    'require': "Prérequis :",
+    'require-alchemy': "Cette carte peut uniquement être utilisée par un Héros possédant la compétence Alchimie.",
     'clarification': "Clarification :",
     'skill': "Compétence :",
     'tokensUsed': "Utilise les jetons :"

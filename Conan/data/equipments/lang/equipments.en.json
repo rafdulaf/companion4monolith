@@ -470,6 +470,41 @@
         },
         "stygian_shield": {
             "title": "Stygian Shield"
+        },
+        "acid-splash": {
+            "title": "Acid Splash",
+            "clarification": "Perform a complex Manipulation to throw this item. Resolve the indicated attack in the resulting area.<br/>A Hero with the Alchemy skill can recover one or more of their starting consumables marked with by performing a simple Manipulation for each consumable."
+        },
+        "acid-vial": {
+            "title": "Acid Vial",
+            "clarification": "Perform a complex Manipulation to throw this item. Resolve the indicated attack in the resulting area.<br/>A Hero with the Alchemy skill can recover one or more of their starting consumables marked with by performing a simple Manipulation for each consumable."
+        },
+        "elixir-of-agility": {
+            "title": "Elixir of Agility",
+            "clarification": "Discard this item to enhance a complex Manipulation the Hero is performing.<br/>A Hero with the Alchemy skill can recover one or more of their starting consumables marked with by performing a simple Manipulation for each consumable."
+        },
+        "elixir-of-speed": {
+            "title": "Elixir of Speed",
+            "clarification": "Discard this item to enhance a Move action the Hero is performing.<br/>A Hero with the Alchemy skill can recover one or more of their starting consumables marked with by performing a simple Manipulation for each consumable."
+        },
+        "elixir-of-might": {
+            "title": "Elixir of Might",
+            "clarification": "Discard this item to enhance an Melee Attack the Hero is performing.<br/>A Hero with the Alchemy skill can recover one or more of their starting consumables marked with by performing a simple Manipulation for each consumable."
+        },
+        "elixir-of-defense": {
+            "title": "Elixir of Defense",
+            "clarification": "Discard this item to enhance a Guard action the Hero is performing.<br/>A Hero with the Alchemy skill can recover one or more of their starting consumables marked with by performing a simple Manipulation for each consumable."
+        },
+        "health-potion": {
+            "title": "Health Potion",
+            "clarification": "Discard this item to recover a gem from the indicated zone.<br/>A Hero with the Alchemy skill can recover one or more of their starting consumables marked with by performing a simple Manipulation for each consumable."
+        },
+        "energy-potion": {
+            "title": "Energy Potion",
+            "clarification": "Discard this item to recover a gem from the indicated Action spaces.<br/>A Hero with the Alchemy skill can recover one or more of their starting consumables marked with by performing a simple Manipulation for each consumable."
+        },
+        "alchemist-s-staff": {
+            "title": "Alchemist's Staff"
         }
     }
 }

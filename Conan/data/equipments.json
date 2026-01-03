@@ -2793,6 +2793,166 @@
             "imagelocation": {"x": "50", "y": "40"},
             "imagezoom": "45",
             "origins": ["red-nails"]
+        },
+        
+        {
+            "id": "acid-splash",
+            "encumbrance": "1",
+
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "orange", "1": "orange", "explosive": true },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+            
+            "require": "alchemy",
+
+            "image": "data/equipments/img/acid-splash.webp",
+            "imagelocation": {"x": "50", "y": "42"},
+            "imagezoom": "35",
+            "origins": ["shadowsoverluxur"]
+        },
+        
+        {
+            "id": "acid-vial",
+            "encumbrance": "1",
+
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "redreroll", "1": "redreroll", "explosive": false, "add": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+            
+            "require": "alchemy",
+
+            "image": "data/equipments/img/acid-vial.webp",
+            "imagelocation": {"x": "50", "y": "42"},
+            "imagezoom": "35",
+            "origins": ["shadowsoverluxur"]
+        },
+        
+        {
+            "id": "elixir-of-agility",
+            "encumbrance": "1",
+
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "red", "1": "red", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+            
+            "require": "alchemy",
+
+            "image": "data/equipments/img/elixir-of-agility.webp",
+            "imagelocation": {"x": "50", "y": "42"},
+            "imagezoom": "35",
+            "origins": ["shadowsoverluxur"]
+        },
+
+        {
+            "id": "elixir-of-speed",
+            "encumbrance": "1",
+            "movement": 2,
+
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+            
+            "require": "alchemy",
+
+            "image": "data/equipments/img/elixir-of-speed.webp",
+            "imagelocation": {"x": "50", "y": "42"},
+            "imagezoom": "35",
+            "origins": ["shadowsoverluxur"]
+        },
+        
+        {
+            "id": "elixir-of-might",
+            "encumbrance": "1",
+            
+            "melee": { "0": "redreroll", "1": "redreroll" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+        
+            "require": "alchemy",
+        
+            "image": "data/equipments/img/elixir-of-might.webp",
+            "imagelocation": {"x": "50", "y": "42"},
+            "imagezoom": "35",
+            "origins": ["shadowsoverluxur"]
+        }, 
+
+        {
+            "id": "elixir-of-defense",
+            "encumbrance": "1",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "red", "1": "red" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "require": "alchemy",
+    
+            "image": "data/equipments/img/elixir-of-defense.webp",
+            "imagelocation": {"x": "50", "y": "42"},
+            "imagezoom": "35",
+            "origins": ["shadowsoverluxur"]
+        }, 
+    
+        {
+            "id": "health-potion",
+            "encumbrance": "1",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+    
+            "require": "alchemy",
+    
+            "image": "data/equipments/img/health-potion.webp",
+            "origins": ["shadowsoverluxur"]
+        },
+        
+        {
+            "id": "energy-potion",
+            "encumbrance": "1",
+            
+            "melee": { "0": "none", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "none", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "require": "alchemy",
+
+            "image": "data/equipments/img/energy-potion.webp",
+            "imagelocation": {"x": "50", "y": "48"},
+            "origins": ["shadowsoverluxur"]
+        },
+        
+        {
+            "id": "alchemist-s-staff",
+            "encumbrance": "1",
+            
+            "melee": { "0": "orangereroll", "1": "none" },
+            "ranged": { "0": "none", "1": "none", "throwable": false },
+            "manipulation": { "0": "none", "1": "none", "explosive": false },
+            "active": { "0": "orange", "1": "none" },
+            "passive": { "0": "none", "1": "none" },
+
+            "require": "alchemy",
+
+            "image": "data/equipments/img/alchemist-s-staff.webp",
+            "imagelocation": {"x": "55", "y": "59"},
+            "imagezoom": "48",
+            "origins": ["shadowsoverluxur"]
         }
     ]
 }

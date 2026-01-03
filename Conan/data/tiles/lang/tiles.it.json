@@ -1374,6 +1374,110 @@
         },
         "ganbaatar": {
             "name": "Ganbaatar"
-        }
+        },
+        "ancient-ones": {
+            "name": "Antichi",
+            "size": 70
+        },
+        "stygian-warriors": {
+            "name": "Guerrieri Stigiani",
+            "size": 70
+        },
+        "keshan-guards": {
+            "name": "Guardie Keshane",
+            "size": 70
+        },
+        "keshan-archers": {
+            "name": "Arcieri Keshani",
+            "size": 70
+        },
+        "corsairs": {
+            "name": "Corsari",
+            "size": 70
+        },
+        "tomb-guardians": {
+            "name": "Guardiani delle Tombe",
+            "size": 66
+        },
+        "viper-initiates": {
+            "name": "Iniziati della Vipera",
+            "size": 70
+        },
+        "ctesphon": {
+            "name": "Ctesphon",
+            "size": 70
+        },
+        "the-huntress": {
+            "name": "Cacciatrice",
+            "size": 70
+        },
+        "thutmose": {
+            "name": "Thutmose",
+            "size": 70
+        },
+        "thutmose-2": {
+            "name": "Thutmose",
+            "size": 70
+        },
+        "high-priestess-of-set": {
+            "name": "Grande Sacerdotessa di Set",
+            "size": 69
+        },
+        "daughter-of-set": {
+            "name": "Figlia di Set",
+            "size": 70
+        },
+        "griffin": {
+            "name": "Grifone",
+            "size": 70
+        },
+        "swamp-horror": {
+            "name": "Orrore della Palude",
+            "size": 70
+        },
+        "giant-cobra": {
+            "name": "Cobra Gigante",
+            "size": 70
+        },
+        "avatar-of-thoth": {
+            "name": "Avatar di Thoth",
+            "size": 70
+        },
+        "manifestation-of-derketo": {
+            "name": "Manifestazione di Derketa",
+            "size": 70
+        },
+        "sacrificial-maidens": {
+            "name": "Vergini Sacrificali",
+            "size": 70
+        },
+        "stygian-jackals": {
+            "name": "Sciacalli Stigi",
+            "size": 70
+        },
+        "risen-high-priest": {
+            "name": "Gran Sacerdote Risorto",
+            "size": 70
+        },
+        "cinder-fiend": {
+            "name": "Demone della Cenere",
+            "size": 70
+        },
+        "saurian-beasts": {
+            "name": "Bestie Sauriane",
+            "size": 70
+        },
+        "serket": {
+            "name": "Serket",
+            "size": 70
+        },
+        "eye-of-set": {
+            "name": "Occhio di Set",
+            "size": 70
+        },
+        "enraged-bull": {
+            "name": "Toro Furioso",
+            "size": 70
+        }        
     }
 }

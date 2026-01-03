@@ -31,6 +31,7 @@ CardEquipment._i18n = {
     'meleeAttack': "Melee attack",
     'manipulation': "Manipulation",
     'manipulationExplosive': "Explosive",
+    'manipulationNoAdd': "Additive",
     'manipulationForcedNoText': "No text",
     'manipulationForcedText': "With text",
     'rangedAttack': "Ranged attack",

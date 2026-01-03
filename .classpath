@@ -2,6 +2,7 @@
 <classpath>
 	<classpathentry kind="src" path="tools/pdf/src"/>
 	<classpathentry kind="src" path="tools/sw/src"/>
+	<classpathentry kind="src" output="tools/ExtractPdfImages/Projet/bin" path="tools/ExtractPdfImages/Projet/src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
 		<attributes>
 			<attribute name="module" value="true"/>
@@ -9,5 +10,6 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="tools/pdf/buildvu-html.jar"/>
 	<classpathentry kind="lib" path="tools/pdf/c-webp-1.0.2.jar"/>
+	<classpathentry kind="con" path="org.apache.ivyde.eclipse.cpcontainer.IVYDE_CONTAINER/?project=Companions+for+Monolith&amp;ivyXmlPath=tools%2FExtractPdfImages%2FProjet%2Fivy.xml&amp;confs=*&amp;acceptedTypes=jar%2Cbundle&amp;alphaOrder=true&amp;resolveInWorkspace=false&amp;transitiveResolve=true&amp;readOSGiMetadata=false&amp;retrievedClasspath=true&amp;retrievedClasspathPattern=tools%2FExtractPdfImages%2FProjet%2Flib%2F%5Bartifact%5D-%5Brevision%5D-%5Btype%5D.%5Bext%5D&amp;retrievedClasspathSync=true&amp;retrievedClasspathTypes=*"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

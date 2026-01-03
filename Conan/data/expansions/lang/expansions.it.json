@@ -119,7 +119,7 @@
         }, 
         "sabretoothtiger": {
             "title": "Tigre dai denti a sciabola",
-            "short": "Tigre dai denti a sciabola"
+            "short": "Tigre denti sciabola"
         },
 
         "campaignbook": {
@@ -175,6 +175,10 @@
         "godsofthenorth": {
             "title": "Gli Dei del Nord (Crossover con Mythic Battles Ragnarök)",
             "short": "Dei del nord"
+        },
+        "shadowsoverluxur": {
+            "title": "Ombre sulla Luxur (Crossover con Mythic Battles Isfet)",
+            "short": "Ombre sulla Luxur"
         }
     }
 }

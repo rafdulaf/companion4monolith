@@ -31,6 +31,7 @@ CardEquipment._i18n = {
     'meleeAttack': "Attacco in mischia",
     'manipulation': "Manipolazione",
     'manipulationExplosive': "Esplosiva",
+    'manipulationNoAdd': "Aggiungere",
     'manipulationForcedNoText': "Nessun testo",
     'manipulationForcedText': "Con testo",
     'rangedAttack': "Attacco a distanza",

@@ -222,6 +222,7 @@ var EncyclopediaEquipments = {
         return {
             id: equipment.id + "-" + Math.random(),
             name: (equipment2 || equipment).title,
+            require: equipment.require,
             text: (equipment2 || equipment).text || "",
             textSize: ((equipment2 || equipment).textStyle || {}).textSize || 100,
             textInter: ((equipment2 || equipment).textStyle || {}).textInter || 70,
@@ -332,26 +333,32 @@ var EncyclopediaEquipments = {
             }
         }
         
-        var originString = "";
-        for (var i in originsCount)
+        let originString = "";
+        for (let i in originsCount)
         {
             if (originString) originString += " " + EncyclopediaEquipments._i18n.fromAnd + " ";
             originString += Encyclopedia._getOrigin(i) + " (" + originsCount[i] + " " + (originsCount[i] == 1 ? EncyclopediaEquipments._i18n.card : EncyclopediaEquipments._i18n.cards) + ")";
         }
         
+        let requireString = "";
+        if (equipment.require)
+        {
+            requireString += "<div class='requireEq'>" + EncyclopediaEquipments._i18n.require + " <span class='img'><img src='studio/card_equipment/img/" + equipment.require + ".webp'/></span>" + EncyclopediaEquipments._i18n["require-"+ equipment.require] + "</div>";
+        }
+        
         let anyText = false;
-        var c = "";
-        for (var e in displayEquipments)
+        let c = "";
+        for (let e in displayEquipments)
         {
             var equipment = displayEquipments[e]; 
             anyText = anyText || (equipment.text != null);
             c += CardEquipment._cardCode(EncyclopediaEquipments._convertEquipmentToStudio(equipment));
         }
         
-        var tokens = "";
+        let tokens = "";
         if (equipment.tokens)
         {
-            for (var i = 0; i < equipment.tokens.length; i++)
+            for (let i = 0; i < equipment.tokens.length; i++)
             {
                 var token = equipment.tokens[i];
                 tokens += EncyclopediaTokens._linkToToken(token, true);
@@ -377,10 +384,13 @@ var EncyclopediaEquipments = {
                     {
                         c += CardEquipment._cardCode(EncyclopediaEquipments._convertEquipmentToStudio(equipment, equipment2));
                     }
-                    else
+                    
+                    let title2 = EncyclopediaEquipments._secondaryData.list[equipment.id].title;
+                    if (equipment.title != title2)
                     {
-                        altTitle = "/ " + equipment2.title;
+                        altTitle = " / " + title2;
                     }
+
                 }
             }
             catch (e)
@@ -403,6 +413,7 @@ var EncyclopediaEquipments = {
                         + Rules._linkToSkill(equipment.skills[0], true) 
                          + (equipment.skills[1] != 'none' ? ", " + Rules._linkToSkill(equipment.skills[1], true) : "")
                     + "</div>") : "") 
+                + requireString
                 + ((equipment.clarification) ?"<div class='clarification'>" + EncyclopediaEquipments._i18n.clarification + " " + equipment.clarification.replace(/\n/g, "<br/>") + "</div>" : "")
                 + ((equipment2 && equipment2.clarification) ?"<div class='clarification'>" + EncyclopediaEquipments._i18n.clarification + " " + equipment2.clarification.replace(/\n/g, "<br/>") + "</div>" : "")
                 + (tokens ? ("<div class='tokens'>" + EncyclopediaEquipments._i18n.tokensUsed + " " + tokens + "</div>") : "")
