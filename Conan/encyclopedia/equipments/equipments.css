@@ -45,8 +45,25 @@
 }
 
 .equipmentdetails .from,
-.equipmentdetails .clarification {
+.equipmentdetails .clarification,
+.equipmentdetails .requireEq {
     margin-bottom: 10px;
+}
+.equipmentdetails .requireEq span.img {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 5px;
+    padding: 1px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    line-height: 28px;
+}
+.equipmentdetails .requireEq img {
+    vertical-align: middle;
+    width: 85%;
 }
 
 .equipmentdetails .tokens .othertoken {

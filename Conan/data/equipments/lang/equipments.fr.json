@@ -477,6 +477,41 @@
         },
         "stygian_shield": {
             "title": "Bouclier Stygien"
+        },
+        "acid-splash": {
+            "title": "Ampoule d'Acide",
+            "clarification": "Lancez cet Équipement en réalisant une Manipulation complexe. Résolvez l’attaque indiquée dans la zone atteinte.<br/>Un Héros possédant la compétence Alchimie peut récupérer une ou plusieurs de ses cartes Équipement de départ portant le symbole Alchimie qu’il a précédemment utilisées, en réalisant une Manipulation simple par carte."
+        },
+        "acid-vial": {
+            "title": "Fiole d'Acide",
+            "clarification": "Lancez cet Équipement en réalisant une Manipulation complexe. Résolvez l’attaque indiquée dans la zone atteinte.<br/>Un Héros possédant la compétence Alchimie peut récupérer une ou plusieurs de ses cartes Équipement de départ portant le symbole Alchimie qu’il a précédemment utilisées, en réalisant une Manipulation simple par carte."
+        },
+        "elixir-of-agility": {
+            "title": "Élixir d'Agilité",
+            "clarification": "Défaussez cet Équipement pour améliorer une Manipulation complexe que le Héros est en train de réaliser.<br/>Un Héros possédant la compétence Alchimie peut récupérer une ou plusieurs de ses cartes Équipement de départ portant le symbole Alchimie qu’il a précédemment utilisées, en réalisant une Manipulation simple par carte."
+        },
+        "elixir-of-speed": {
+            "title": "Élixir de Vitesse",
+            "clarification": "Défaussez cet Équipement pour améliorer un Mouvement que le Héros est en train de réaliser.<br/>Un Héros possédant la compétence Alchimie peut récupérer une ou plusieurs de ses cartes Équipement de départ portant le symbole Alchimie qu’il a précédemment utilisées, en réalisant une Manipulation simple par carte."
+        },
+        "elixir-of-might": {
+            "title": "Élixir de Puissance",
+            "clarification": "Défaussez cet Équipement pour améliorer une Attaque au corps-à-corps que le Héros est en train de réaliser.<br/>Un Héros possédant la compétence Alchimie peut récupérer une ou plusieurs de ses cartes Équipement de départ portant le symbole Alchimie qu’il a précédemment utilisées, en réalisant une Manipulation simple par carte."
+        },
+        "elixir-of-defense": {
+            "title": "Élixir de Défense",
+            "clarification": "Défaussez cet Équipement pour améliorer une Défense active que le Héros est en train de réaliser.<br/>Un Héros possédant la compétence Alchimie peut récupérer une ou plusieurs de ses cartes Équipement de départ portant le symbole Alchimie qu’il a précédemment utilisées, en réalisant une Manipulation simple par carte."
+        },
+        "health-potion": {
+            "title": "Potion de Santé",
+            "clarification": "Défaussez cet Équipement pour récupérer une gemme de la Zone indiquée.<br/>Un Héros possédant la compétence Alchimie peut récupérer une ou plusieurs de ses cartes Équipement de départ portant le symbole Alchimie qu’il a précédemment utilisées, en réalisant une Manipulation simple par carte."
+        },
+        "energy-potion": {
+            "title": "Potion d'Énergie",
+            "clarification": "Défaussez cet Équipement pour récupérer une gemme d’une des cases d’action indiquées.<br/>Un Héros possédant la compétence Alchimie peut récupérer une ou plusieurs de ses cartes Équipement de départ portant le symbole Alchimie qu’il a précédemment utilisées, en réalisant une Manipulation simple par carte."
+        },
+        "alchemist-s-staff": {
+            "title": "Bâton d'Alchimiste"
         }
     }
 }

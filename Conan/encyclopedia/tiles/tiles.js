@@ -443,7 +443,7 @@ var EncyclopediaTiles = {
             movement: tile.movement || "",
             defense: tile.defense || "",
             attacktype: tile.attacktype || "",
-            dices: { 0: tile.dices[0], 1: tile.dices[1], 2: tile.dices[2], 3: tile.dices[3] },
+            dices: { 0: tile.dices[0], 1: tile.dices[1], 2: tile.dices[2], 3: tile.dices[3], explosive: tile.dices.explosive || false },
             skills: { 0: tile.skills[0], 1: tile.skills[1], 2: tile.skills[2], 3: tile.skills[3] },
             reinforcement: tile.reinforcement || "",
             image: tile.imageHD && hd ? (tile.imageHD + "?version=" + Version) : (tile.image ? (tile.image + "?version=" + Version) : null),
@@ -456,7 +456,7 @@ var EncyclopediaTiles = {
         
         if (tile.dices2)
         {
-            o.dices2 = { 0: tile.dices2[0], 1: tile.dices2[1], 2: tile.dices2[2], 3: tile.dices2[3] };
+            o.dices2 = { 0: tile.dices2[0], 1: tile.dices2[1], 2: tile.dices2[2], 3: tile.dices2[3], explosive: tile.dices2.explosive || false };
         }
         
         return o;

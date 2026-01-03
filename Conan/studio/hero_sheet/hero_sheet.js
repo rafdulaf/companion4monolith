@@ -153,6 +153,7 @@ var HeroSheet = mergeObject(StudioItem, {
                     + "<select id='hsback' name='sheetback' class='color'>"
                     +     "<option value='gray'>" + HeroSheet._i18n.colorGray + "</option>"
                     +     "<option value='blue'>" + HeroSheet._i18n.colorBlue + "</option>"
+                    +     "<option value='brown'>" + HeroSheet._i18n.colorBrown + "</option>"
                     +     "<option value='none'>" + HeroSheet._i18n.colorNone + "</option>"
                     + "</select>"
                 + "</div>"

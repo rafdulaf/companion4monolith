@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="1.0">
+  <info organisation="fr.franchet" module="images">
+  </info>
+  
+  <configurations>
+    <conf name="default"/>
+  </configurations>
+  
+  <dependencies>
+    <dependency org="net.coobird" name="thumbnailator" rev="0.4.20"/>
+
+
+    <dependency org="com.itextpdf" name="itextpdf" rev="5.5.13.4"/>
+  </dependencies>
+</ivy-module>

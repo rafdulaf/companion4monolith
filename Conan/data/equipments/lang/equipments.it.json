@@ -469,6 +469,41 @@
         },
         "stygian_shield": {
             "title": "Scudo Stygiano"
-        }
+        },
+        "acid-splash": {
+            "title": "Ampolla di Acido",
+            "clarification": "Lancia questo equipaggiamento eseguendo una Manipolazione complessa. Risolvi l'attacco indicato nell'area interessata.<br/>Un Eroe con l'abilità Alchimia può recuperare una o più carte Equipaggiamento Iniziale con il simbolo Alchimia che ha usato in precedenza, eseguendo una semplice Manipolazione per carta."
+        },
+        "acid-vial": {
+            "title": "Fiala di Acido",
+            "clarification": "Lancia questo equipaggiamento eseguendo una Manipolazione complessa. Risolvi l'attacco indicato nell'area interessata.<br/>Un Eroe con l'abilità Alchimia può recuperare una o più carte Equipaggiamento Iniziale con il simbolo Alchimia che ha usato in precedenza, eseguendo una semplice Manipolazione per carta."
+        },
+        "elixir-of-agility": {
+            "title": "Elisir di Agilità",
+            "clarification": "Scarta questa Attrezzatura per migliorare una Manipolazione complessa che l'Eroe sta eseguendo.<br/>Un Eroe con l'abilità Alchimia può recuperare una o più carte Equipaggiamento Iniziale con il simbolo Alchimia che ha usato in precedenza, eseguendo una semplice Manipolazione per carta."
+        },
+        "elixir-of-speed": {
+            "title": "Elisir di Velocità",
+            "clarification": "Scarta questa Attrezzatura per potenziare una Mossa che l'Eroe sta attualmente eseguendo.<br/>Un Eroe con l'abilità Alchimia può recuperare una o più carte Equipaggiamento Iniziale con il simbolo Alchimia che ha usato in precedenza, eseguendo una semplice Manipolazione per carta."
+        },
+        "elixir-of-might": {
+            "title": "Elisir di Potenza",
+            "clarification": "Scarta questo equipaggiamento per potenziare un Attacco corpo a corpo che l'eroe sta attualmente eseguendo.<br/>Un Eroe con l'abilità Alchimia può recuperare una o più carte Equipaggiamento Iniziale con il simbolo Alchimia che ha usato in precedenza, eseguendo una semplice Manipolazione per carta."
+        },
+        "elixir-of-defense": {
+            "title": "Elisir di Difesa",
+            "clarification": "Scarta questa Attrezzatura per potenziare una Difesa attiva che l'Eroe sta attualmente eseguendo.<br/>Un Eroe con l'abilità Alchimia può recuperare una o più carte Equipaggiamento Iniziale con il simbolo Alchimia che ha usato in precedenza, eseguendo una semplice Manipolazione per carta."
+        },
+        "health-potion": {
+            "title": "Pozione della Salute",
+            "clarification": "Scarta questa Attrezzatura per recuperare una gemma dalla Zona indicata.<br/>Un Eroe con l'abilità Alchimia può recuperare una o più carte Equipaggiamento Iniziale con il simbolo Alchimia che ha usato in precedenza, eseguendo una semplice Manipolazione per carta."
+        },
+        "energy-potion": {
+            "title": "Pozione del Vigore",
+            "clarification": "Scarta questa Equipaggiamento per recuperare una gemma da uno degli spazi azione indicati.<br/>Un Eroe con l'abilità Alchimia può recuperare una o più carte Equipaggiamento Iniziale con il simbolo Alchimia che ha usato in precedenza, eseguendo una semplice Manipolazione per carta."
+        },
+        "alchemist-s-staff": {
+            "title": "Bastone dell'Alchimista"
+        }        
     }
 }

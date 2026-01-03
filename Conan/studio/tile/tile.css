@@ -152,6 +152,12 @@
     height: 72.3%;
     margin-right: 0.5%;
     top: -2%;
+    
+    &.dice-5 {
+        position: absolute;
+        right: 5%;
+        top: -58%;
+    }
 }
 
 .tile.tiletile .defense img.background-defense,
@@ -466,7 +472,7 @@
 .dialog .tile .field.attackdices label {
     margin-bottom: 2px;
 }
-.dialog .tile .attackdices div:before {
+.dialog .tile .attackdices div:first-of-type::before {
    content: " ";
    position: absolute;
    bottom: 0;
@@ -478,18 +484,56 @@
    background-position: calc(50% - 28px);
    background-size: contain;
 }
-.dialog .tile .attackdices + .attackdices div:before {
+.dialog .tile .attackdices + .attackdices div:first-of-type::before {
     top: -7px;
     bottom: 7px;
 }
 
-.dialog .tile .field.attackdices > div:before {
+.dialog .tile .field.attackdices > div:first-of-type::before {
    background-image: url(img/attack_contact.webp);
 }
-.dialog .tile .field.attackdices + .field.attackdices > div:before {
+.dialog .tile .field.attackdices + .field.attackdices > div:first-of-type::before {
    background-image: url(img/attack_range.webp);
 }
 
+.dialog .tile .field.attackdices .tdicesexplosive {
+    position: absolute;
+    bottom: 26px;
+    left: calc(50% + 106px);
+    color: transparent;
+    font-size: 1px;
+    
+    input {
+        opacity: 0;
+        position: absolute;
+    }
+    
+    label {
+        margin-bottom: 0;    
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 36px;
+        height: 36px;
+        font-size: 1px;
+        color: transparent;
+        background-image: url(img/explosive.webp);
+    }
+    
+    input + label:before {
+        content: "\f05e";
+        font-family: 'Font Awesome 5 Free';
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        color: #7F7F7F;
+        text-align: center;
+        line-height: 36px;
+        font-size: 36px;
+    }
+    input:checked + label:before {
+        content: "";
+    }
+}
 
 .dialog .tile .field.reinforcement label {
     margin-bottom: 2px;

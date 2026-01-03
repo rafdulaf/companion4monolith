@@ -1379,6 +1379,110 @@
         },
         "ganbaatar": {
             "name": "Ganbaatar"
+        },
+        "ancient-ones": {
+            "name": "Anciens",
+            "size": 70            
+        },
+        "stygian-warriors": {
+            "name": "Guerriers Stygiens",
+            "size": 70            
+        },
+        "keshan-guards": {
+            "name": "Gardes Keshani",
+            "size": 70            
+        },
+        "keshan-archers": {
+            "name": "Archères Keshani",
+            "size": 70            
+        },
+        "corsairs": {
+            "name": "Corsaires",
+            "size": 70            
+        },
+        "tomb-guardians": {
+            "name": "Gardiens des tombes",
+            "size": 70            
+        },
+        "viper-initiates": {
+            "name": "Initiées de la vipère",
+            "size": 70            
+        },
+        "ctesphon": {
+            "name": "Ctesphon",
+            "size": 70            
+        },
+        "the-huntress": {
+            "name": "Chasseresse",
+            "size": 70            
+    },
+        "thutmose": {
+            "name": "Thutmose",
+            "size": 70            
+        },
+        "thutmose-2": {
+            "name": "Thutmose",
+            "size": 70            
+        },
+        "high-priestess-of-set": {
+            "name": "Grande prêtresse de Set",
+            "size": 71            
+        },
+        "daughter-of-set": {
+            "name": "Fille de Set",
+            "size": 70            
+        },
+        "griffin": {
+            "name": "Griffon",
+            "size": 70            
+        },
+        "swamp-horror": {
+            "name": "Horreur des marais",
+            "size": 70            
+        },
+        "giant-cobra": {
+            "name": "Cobra géant",
+            "size": 70            
+        },
+        "avatar-of-thoth": {
+            "name": "Avatar de Thoth",
+            "size": 70            
+        },
+        "manifestation-of-derketo": {
+            "name": "Manifestation de Derketa",
+            "size": 70            
+        },
+        "sacrificial-maidens": {
+            "name": "Vierges sacrificielles",
+            "size": 70            
+        },
+        "stygian-jackals": {
+            "name": "Chacals stygiens",
+            "size": 70            
+        },
+        "risen-high-priest": {
+            "name": "Grand prêtre ressuscité",
+            "size": 70            
+        },
+        "cinder-fiend": {
+            "name": "Démon des cendres",
+            "size": 70
+        },
+        "saurian-beasts": {
+            "name": "Bêtes Sauriennes",
+            "size": 70
+        },
+        "serket": {
+            "name": "Serket",
+            "size": 70            
+        },
+        "eye-of-set": {
+            "name": "Oeil de Set",
+            "size": 70
+        },
+        "enraged-bull": {
+            "name": "Taureau enragé",
+            "size": 70
         }
     }
 }

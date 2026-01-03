@@ -469,7 +469,8 @@
 
 .dialog .sheet .color select ~ .ui-selectmenu-menu ul li:nth-child(1):before, .dialog .sheet .color select[data-value=gray] + span { background-image: url(img/background_layer_1-gray.webp) !important; }
 .dialog .sheet .color select ~ .ui-selectmenu-menu ul li:nth-child(2):before, .dialog .sheet .color select[data-value=blue] + span { background-image: url(img/background_layer_1-blue.webp) !important; }
-.dialog .sheet .color select ~ .ui-selectmenu-menu ul li:nth-child(3):before, .dialog .sheet .color select[data-value=none] + span { background-image: url(img/background_layer_1-none.webp) !important; }
+.dialog .sheet .color select ~ .ui-selectmenu-menu ul li:nth-child(3):before, .dialog .sheet .color select[data-value=brown] + span { background-image: url(img/background_layer_1-brown.webp) !important; }
+.dialog .sheet .color select ~ .ui-selectmenu-menu ul li:nth-child(4):before, .dialog .sheet .color select[data-value=none] + span { background-image: url(img/background_layer_1-none.webp) !important; }
 
 
 .dialog .sheet .ui-selectmenu-text, .dialog .sheet .ui-menu .ui-menu-item-wrapper { color: transparent; font-size: 1px; }

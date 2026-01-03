@@ -6910,6 +6910,494 @@
             "image_zoom": 215,
             "model": "hyrkanian-mercenaries",
             "origins": ["versus-mode"]
+        },
+                
+        {
+            "id": "ancient-ones",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "yellowreroll", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/horror", "1": "movement/blocking", "2": "none", "3": "none" },
+            "reinforcement": "2",
+
+            "image": "data/tiles/img/ancient-ones.webp",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "ancient-ones", "modelType": "monster",
+            "origins": ["shadowsoverluxur"]
+        },
+            
+        {
+            "id": "stygian-warriors",
+    
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "attack/reach", "1": "defense/untouchable", "2": "none", "3": "none" },
+            "reinforcement": "1",
+    
+            "image": "data/tiles/img/stygian-warriors.webp",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "stygian-warriors", "modelType": "human",
+            "origins": ["shadowsoverluxur"]
+        },
+            
+        {
+            "id": "keshan-guards",
+    
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "defense/sacrifice", "1": "movement/leap", "2": "none", "3": "none" },
+            "reinforcement": "2",
+    
+            "image": "data/tiles/img/keshan-guards.webp",
+            "image_location": {"x":56, "y":52},
+            "image_zoom": 99,
+            "model": "keshan-guards", "modelType": "human",
+            "origins": ["shadowsoverluxur"]
+        },
+            
+        {
+            "id": "keshan-archers",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "1",
+            "attacktype": "ranged",
+            "dices": { "0": "orange", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "attack/elite_shooter", "1": "defense/protected", "2": "none", "3": "none" },
+            "reinforcement": "1",
+
+            "image": "data/tiles/img/keshan-archers.webp",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "keshan-archers", "modelType": "human",
+            "origins": ["shadowsoverluxur"]
+        },
+            
+        {
+            "id": "corsairs",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "yellowreroll", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "attack/precision_strike", "1": "movement/swimming", "2": "none", "3": "none" },
+            "reinforcement": "1",
+
+            "image": "data/tiles/img/corsairs.webp",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "corsairs", "modelType": "human",
+            "origins": ["shadowsoverluxur"]
+        },
+            
+        {
+            "id": "tomb-guardians",
+
+            "colors": ["gray"],
+            "movement": "4",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "yellowreroll", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/horror", "1": "movement/intangible", "2": "none", "3": "none" },
+            "reinforcement": "2",
+
+            "image": "data/tiles/img/tomb-guardians.webp",
+            "image_location": {"x":62, "y":54},
+            "image_zoom": 83,
+            "model": "tomb-guardians", "modelType": "monster",
+            "origins": ["shadowsoverluxur"]
+        },
+            
+        {
+            "id": "viper-initiates",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "1",
+            "attacktype": "ranged",
+            "dices": { "0": "orangereroll", "1": "orangereroll", "2": "none", "3": "none" },
+            "skills": { "0": "defense/untouchable", "1": "attack/elite_shooter", "2": "none", "3": "none" },
+            "reinforcement": "2",
+
+            "image": "data/tiles/img/viper-initiates.webp",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "viper-initiates", "modelType": "human",
+            "origins": ["shadowsoverluxur"]
+        },
+            
+        {
+            "id": "ctesphon",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "yellowreroll", "1": "yellowreroll", "2": "none", "3": "none" },
+            "skills": { "0": "magic/spell_caster", "1": "miscellaneous/support", "2": "none", "3": "none" },
+            "tokens": [
+                { "image": "data/tiles/img/ctesphon_token.webp", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+
+            "image": "data/tiles/img/ctesphon.webp",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "ctesphon", "modelType": "human",
+            "origins": ["shadowsoverluxur"],
+            
+            "count": 2
+        },
+            
+        {
+            "id": "the-huntress",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "ranged",
+            "dices": { "0": "orangereroll", "1": "orangereroll", "2": "none", "3": "none" },
+            "skills": { "0": "attack/counterattack", "1": "movement/feline_grace", "2": "none", "3": "none" },
+            "tokens": [
+                { "image": "data/tiles/img/the-huntress_token.webp", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+
+            "image": "data/tiles/img/the-huntress.webp",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "the-huntress", "modelType": "human",
+            "origins": ["shadowsoverluxur"]
+        },
+            
+        {
+            "id": "thutmose",
+
+            "colors": ["gray"],
+            "movement": "4",
+            "defense": "4",
+            "attacktype": "both",
+            "dices": { "0": "redreroll", "1": "red", "2": "none", "3": "none" },
+            "dices2": { "0": "red", "1": "orangereroll", "2": "orange", "3": "none" },
+            "skills": { "0": "movement/evasive", "1": "none", "2": "none", "3": "none" },
+            "tokens": [
+                { "image": "data/tiles/img/thutmose_token.webp", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+
+            "image": "data/tiles/img/thutmose.webp",
+            "image_location": {"x":43, "y":51},
+            "image_zoom": 104,
+            "model": "thutmose", "modelType": "human",
+            "origins": ["shadowsoverluxur"]
+        },
+            
+        {
+            "id": "high-priestess-of-set",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "orangereroll", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/poison", "1": "magic/spell_caster", "2": "none", "3": "none" },
+            "tokens": [
+                { "image": "data/tiles/img/high-priestess-of-set_token.webp", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+
+            "image": "data/tiles/img/high-priestess-of-set.webp",
+            "image_location": {"x":57, "y":50},
+            "image_zoom": 98,
+            "model": "high-priestess-of-set", "modelType": "human",
+            "origins": ["shadowsoverluxur"]
+        },
+        
+        {
+            "id": "daughter-of-set",
+        
+            "colors": ["gray"],
+            "movement": "4",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
+            "skills": { "0": "attack/precision_strike", "1": "magic/spell_caster", "2": "none", "3": "none" },
+            "tokens": [
+                { "image": "data/tiles/img/daughter-of-set_token.webp", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+
+            "image": "data/tiles/img/daughter-of-set.webp",
+            "image_location": {"x":51, "y":49},
+            "image_zoom": 104,
+            "model": "daughter-of-set", "modelType": "monster",
+            "origins": ["shadowsoverluxur"]
+        },
+
+        {
+            "id": "griffin",
+
+            "colors": ["gray"],
+            "movement": "5",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
+            "skills": { "0": "attack/counterattack", "1": "movement/flying", "2": "none", "3": "none" },
+            "tokens": [
+                { "image": "data/tiles/img/griffin_token.webp", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+
+            "image": "data/tiles/img/griffin.webp",
+            "image_location": {"x":48, "y":47},
+            "image_zoom": 135,
+            "image_rotation": -10,
+            "model": "griffin", "modelType": "monster",
+            "origins": ["shadowsoverluxur"]
+        },
+
+        {
+            "id": "swamp-horror",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "orangereroll", "2": "orangereroll", "3": "none" },
+            "skills": { "0": "movement/blocking", "1": "miscellaneous/jinx", "2": "movement/swimming", "3": "none" },
+            "tokens": [
+                { "image": "data/tiles/img/swamp-horror_token.webp", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+
+            "image": "data/tiles/img/swamp-horror.webp",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "swamp-horror", "modelType": "monster",
+            "origins": ["shadowsoverluxur"]
+        },
+
+        {
+            "id": "giant-cobra",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "orangereroll", "2": "yellowreroll", "3": "none" },
+            "skills": { "0": "movement/climb", "1": "miscellaneous/poison", "2": "none", "3": "none" },
+            "tokens": [
+                { "image": "data/tiles/img/giant-cobra_token.webp", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+
+            "image": "data/tiles/img/giant-cobra.webp",
+            "image_location": {"x":53, "y":54},
+            "image_zoom": 96,
+            "model": "giant-cobra", "modelType": "monster",
+            "origins": ["shadowsoverluxur"]
+        },
+
+        {
+            "id": "avatar-of-thoth",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "red", "2": "orangereroll", "3": "none" },
+            "skills": { "0": "magic/spell_caster", "1": "attack/attack_from_beyond", "2": "none", "3": "none" },
+            "tokens": [
+                { "image": "data/tiles/img/avatar-of-thoth_token.webp", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+
+            "image": "data/tiles/img/avatar-of-thoth.webp",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "avatar-of-thoth", "modelType": "human",
+            "origins": ["shadowsoverluxur"]
+        },
+
+        {
+            "id": "manifestation-of-derketo",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "orangereroll", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/poison", "1": "attack/reach", "2": "none", "3": "none" },
+            "tokens": [
+                { "image": "data/tiles/img/manifestation-of-derketo_token.webp", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+
+            "image": "data/tiles/img/manifestation-of-derketo.webp",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "manifestation-of-derketo", "modelType": "human",
+            "origins": ["shadowsoverluxur"]
+        },
+
+        {
+            "id": "sacrificial-maidens",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "0",
+            "attacktype": "contact",
+            "dices": { "0": "yellow", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "attack/attack_from_beyond", "1": "defense/sacrifice", "2": "none", "3": "none" },
+            "reinforcement": "1",
+
+            "image": "data/tiles/img/sacrificial-maidens.webp",
+            "image_location": {"x":50, "y":52},
+            "image_zoom": 100,
+            "model": "sacrificial-maidens", "modelType": "human",
+            "origins": ["shadowsoverluxur"]
+        },
+
+        {
+            "id": "stygian-jackals",
+
+            "colors": ["gray"],
+            "movement": "4",
+            "defense": "0",
+            "attacktype": "contact",
+            "dices": { "0": "yellow", "1": "yellow", "2": "none", "3": "none" },
+            "skills": { "0": "movement/swimming", "1": "movement/evasive", "2": "none", "3": "none" },
+            "reinforcement": "1",
+
+            "image": "data/tiles/img/stygian-jackals.webp",
+            "image_location": {"x":50, "y":46},
+            "image_zoom": 100,
+            "model": "stygian-jackals", "modelType": "animal",
+            "origins": ["shadowsoverluxur"]
+        },
+
+        {
+            "id": "risen-high-priest",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "yellowreroll", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/jinx", "1": "miscellaneous/horror", "2": "none", "3": "none" },
+            "tokens": [
+                { "image": "data/tiles/img/risen-high-priest_token.webp", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+
+            "image": "data/tiles/img/risen-high-priest.webp",
+            "image_location": {"x":54, "y":53},
+            "image_zoom": 96,
+            "model": "risen-high-priest", "modelType": "monster",
+            "origins": ["shadowsoverluxur"]
+        },
+
+        {
+            "id": "cinder-fiend",
+
+            "colors": ["gray"],
+            "movement": "5",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/poison", "1": "attack/constriction", "2": "none", "3": "none" },
+            "reinforcement": "2",
+            "tokens": [
+                { "image": "data/tiles/img/cinder-fiend_token.webp", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+
+            "image": "data/tiles/img/cinder-fiend.webp",
+            "image_location": {"x":54, "y":53},
+            "image_zoom": 96,
+            "model": "cinder-fiend", "modelType": "monster",
+            "origins": ["shadowsoverluxur"]
+        },
+
+        {
+            "id": "saurian-beasts",
+
+            "colors": ["gray"],
+            "movement": "4",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "orangereroll", "1": "orange", "2": "orange", "3": "none" },
+            "skills": { "0": "movement/climb", "1": "movement/swimming", "2": "none", "3": "none" },
+            "tokens": [
+                { "image": "data/tiles/img/saurian-beasts_token.webp", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+
+            "image": "data/tiles/img/saurian-beasts.webp",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "saurian-beasts", "modelType": "monster",
+            "origins": ["shadowsoverluxur"]
+        },
+
+        {
+            "id": "serket",
+
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "4",
+            "attacktype": "ranged",
+            "dices": { "0": "red", "1": "orangereroll", "2": "orangereroll", "3": "none" },
+            "skills": { "0": "attack/elite_shooter", "1": "movement/climb", "2": "none", "3": "none" },
+            "tokens": [
+                { "image": "data/tiles/img/serket_token.webp", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+
+            "image": "data/tiles/img/serket.webp",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "serket", "modelType": "mosnter",
+            "origins": ["shadowsoverluxur"]
+        },
+
+        {
+            "id": "eye-of-set",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "yellowreroll", "1": "yellowreroll", "2": "none", "3": "none" },
+            "skills": { "0": "magic/spell_caster", "1": "movement/intangible", "2": "miscellaneous/fascination", "3": "none" },
+            "tokens": [
+                { "image": "data/tiles/img/eye-of-set_token.webp", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+
+            "image": "data/tiles/img/eye-of-set.webp",
+            "image_location": {"x":50, "y":54},
+            "image_zoom": 100,
+            "model": "eye-of-set", "modelType": "monster",
+            "origins": ["shadowsoverluxur"]
+        },
+
+        {
+            "id": "enraged-bull",
+
+            "colors": ["gray"],
+            "movement": "6",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "red", "2": "none", "3": "none", "explosive": true },
+            "skills": { "0": "movement/wall_wrecker", "1": "movement/evasive", "2": "none", "3": "none" },
+            "tokens": [
+                { "image": "data/tiles/img/enraged-bull_token.webp", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+
+            "image": "data/tiles/img/enraged-bull.webp",
+            "image_location": {"x":50, "y":50},
+            "image_zoom": 100,
+            "model": "enraged-bull", "modelType": "animal",
+            "origins": ["shadowsoverluxur"]
         }
+        
     ]
 }

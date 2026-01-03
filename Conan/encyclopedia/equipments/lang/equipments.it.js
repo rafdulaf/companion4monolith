@@ -8,6 +8,8 @@ EncyclopediaEquipments._i18n = {
     'fromAnd': "e",
     'card': "copia",
     'cards': "copie",
+    'require': "Prerequisito:",
+    'require-alchemy': "Questa carta può essere utilizzata solo da un Eroe che possiede l'abilità Alchimia.",
     'clarification': "Chiarificazione:",
     'skill': "Abilità:",
     'tokensUsed': "Usa il segnalino :"

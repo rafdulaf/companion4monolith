@@ -15,6 +15,7 @@ HeroSheet._i18n = {
     'color': "Couleur",
     'colorGray': "Grise",
     'colorBlue': "Bleue",
+    'colorBrown': "Marron",
     'colorNone': 'Aucune',
     'gems': "Gemmes",
     'gemsPh': "?",
