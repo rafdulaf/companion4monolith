@@ -356,6 +356,197 @@
                 ],
                 "totopic": "https://the-overlord.net/index.php?/topic/119072-versus-catacombs/"
             }
+        },
+        
+        "Olympus_in_Ruins": {
+            "description": {
+                "title": "Olympus in Ruins",
+                "rules": [
+                    {
+                        "title": "Boulders",
+                        "description": "To enter a Boulder area, a unit must spend 2 extra movement points unless they have the Climb skill."
+                    }, {
+                        "title": "Ruins",
+                        "description": "Moving into a Ruin costs 1 additional movement point unless the unit has Climb."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119385-mbp-olympus-in-ruins/"
+            }
+        },
+        
+        "Styx": {
+            "description": {
+                "title": "Styx",
+                "rules": [
+                    {
+                        "title": "Boulders",
+                        "description": "To enter a Boulder area, a unit must spend 2 extra movement points unless they have the Climb skill."
+                    }, {
+                        "title": "Ruins",
+                        "description": "Moving into a Ruin costs 1 additional movement point unless the unit has Climb."
+                    }, {
+                        "title": "Marsh",
+                        "description": "Characters without Swimming must spend 1 additional movement point to move out of a Marsh area."
+                    }, {
+                        "title": "Cliffs",
+                        "description": "Characters without Fly cannot access these areas."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119386-mbp-styx/"
+            }
+        },
+        
+        "Tartarus": {
+            "description": {
+                "title": "Tartarus",
+                "rules": [
+                    {
+                        "title": "Boulders",
+                        "description": "To enter a Boulder area, a unit must spend 2 extra movement points unless they have the Climb skill."
+                    }, {
+                        "title": "Chains",
+                        "description": "Moving between 2 areas separated by chains requires 1 additional movement point."
+                    }
+                
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119387-mbp-tartarus/"
+            }
+        },
+        
+        "Mimir_s_Well": {
+            "description": {
+                "title": "Mimir's Well",
+                "rules": [
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119388-mbp-mimirs-well/"
+            }
+        },
+        
+        "Naglfar": {
+            "description": {
+                "title": "Naglfar",
+                "rules": [
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119389-mbp-naglfar/"
+            }
+        },
+        
+        "Raid_on_Hedeby": {
+            "description": {
+                "title": "Raid on Hedeby",
+                "rules": [
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119390-mbr-raid-on-hedeby/"
+            }
+        },
+        
+        "Vigrid": {
+            "description": {
+                "title": "Vigrid",
+                "rules": [
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119391-mbr-vigrid/"
+            }
+        },
+        
+        "Ancient-Ruins": {
+            "description": {
+                "title": "Ancient Ruins",
+                "rules": [
+                {
+                        "title": "Shallow waters",
+                        "description": "Characters without Swimming must spend 1 additional movement point to move out of a Shallow Water area."
+                    },
+                    {
+                        "title": "Ruins",
+                        "description": "Moving into these Ruins areas costs 1 additional movement point unless the unit has Climb."
+                    },
+                    {
+                        "title": "Boulders",
+                        "description": "To enter a Blouder area, a unit must spend 2 extra movement points unless they have the Climb skill."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119392-mbi-ancient-ruins/"
+            }
+        },
+        
+        "Luxur": {
+            "description": {
+                "title": "Luxur",
+                "rules": [
+                {
+                        "title": "Ruins",
+                        "description": "Moving into these Ruins areas costs 1 additional movement point unless the unit has Climb."
+                    }, {
+                        "title": "Pillars",
+                        "description": "Units cannot enter a Pillar."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119393-mbi-luxur/"
+            }
+        },
+        
+        "River-Styx": {
+            "description": {
+                "title": "River Styx",
+                "rules": [
+                    {
+                        "title": "Roof",
+                        "description": "Moving into these areas from the stairs or the other Roof areas costs 1 additional movement point unless the unit has Climb. Moving into these areas from the ground costs 2 additional movement points unless the unit has Climb. The unit rolls {dice_red}{dice_red} for falling damage. If the unit has Leap, the unit rolls {dice_red} instead."
+                    }, {
+                        "title": "River",
+                        "description": "Units without Swimming that enter the River are destroyed. Swimming units cannot make ranged attacks."
+                    }, {
+                        "title": "Statues",
+                        "description": "To enter a Statue area, a unit must spend 2 extra movement points unless they have the Climb skill."
+                    }, {
+                        "title": "Ruins",
+                        "description": "Moving into these Ruins areas costs 1 additional movement point unless the unit has Climb."
+                    }, {
+                        "title": "Stone Walls",
+                        "description": "Units cannot enter a Stone Wall."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119394-mbi-river-styx/"
+            }
+        },
+        
+        "Temple-Of-Set": {
+            "description": {
+                "title": "Temple of Set",
+                "rules": [
+                {
+                        "title": "Fire",
+                        "description": "Units without Flying moving into or starting their turn in Fire take {dice_red}{dice_red}{dice_red} unavoidable damage."
+                    },
+                    {
+                        "title": "",
+                        "description": "These areas provide an Elevation bonus of {dice_yellow} to the Flooded Floors areas if they have line of sight. Units must spend 2 extra movement points to move from an adjacent Flooded Floor area to these areas unless the unit has the Climb skill."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119395-mbi-temple-of-set/"
+            }
+        },
+
+        "Throne-Room": {
+            "description": {
+                "title": "Throne Room",
+                "rules": [
+                {
+                        "title": "Fire",
+                        "description": "Units without Flying moving into or starting their turn in Fire take {dice_red}{dice_red}{dice_red} unavoidable damage."
+                    },
+                    {
+                        "title": "Double Borders",
+                        "description": "Units without Flying cannot move across double white lines."
+                    },
+                    {
+                        "title": "Statue Alcoves",
+                        "description": "Units can only enter or leave Statue Alcoves via the adjacent Stairs areas."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119396-mbi-throne-room/"
+            }
         }
     },
 

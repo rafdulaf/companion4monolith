@@ -356,7 +356,198 @@
                 ],
                 "totopic": "https://the-overlord.com/index.php?/topic/58566-versus-catacombes/"
             }
-        }
+        },
+        
+        "Olympus_in_Ruins": {
+            "description": {
+                "title": "Olympe en Ruines",
+                "rules": [
+                    {
+                        "title": "Rochers",
+                        "description": "Pour entrer dans une zone de rocher, une unité doit dépenser 2 points de mouvement supplémentaires, sauf si elle possède la compétence Escalade."
+                    }, {
+                        "title": "Ruines",
+                        "description": "Entrer dans une zone de ruines coûte 1 point de mouvement supplémentaire, sauf avec la compétence Escalade."
+                    }
+                ],
+                "totopic": "https://the-overlord.com/index.php?/topic/1735-mbp-carte-olympe-en-ruines/"
+            }
+        },
+
+        "Styx": {
+            "description": {
+                "title": "Styx",
+                "rules": [
+                    {
+                        "title": "Rochers",
+                        "description": "Pour entrer dans une zone de rocher, une unité doit dépenser 2 points de mouvement supplémentaires, sauf si elle possède la compétence Escalade."
+                    }, {
+                        "title": "Ruines",
+                        "description": "Entrer dans une zone de ruines coûte 1 point de mouvement supplémentaire, sauf avec la compétence Escalade."
+                    }, {
+                        "title": "Marais",
+                        "description": "Sortir d'une zone d'eau stagnante coûte 1 point de mouvement supplémentaire, sauf avec la compétence Natation."
+                    }, {
+                        "title": "Parois abruptes",
+                        "description": "Seuls les personnages munis de la compétence Vol ont accès à ces zones."
+                    }
+                ],
+                "totopic": "https://the-overlord.com/index.php?/topic/1737-mbp-carte-styx/"
+            }
+        },
+
+        "Tartarus": {
+            "description": {
+                "title": "Tartare",
+                "rules": [
+                    {
+                        "title": "Rochers",
+                        "description": "Pour entrer dans une zone de rocher, une unité doit dépenser 2 points de mouvement supplémentaires, sauf si elle possède la compétence Escalade."
+                    }, {
+                        "title": "Chaînes",
+                        "description": "Un mouvement entre deux zones séparées par des chaînes coûte 1 point de mouvement supplémentaire."
+                    }
+                
+                ],
+                "totopic": "https://the-overlord.com/index.php?/topic/1736-mbp-carte-tartare/"
+            }
+        },
+
+        "Mimir_s_Well": {
+            "description": {
+                "title": "Puits de Mimir",
+                "rules": [
+                ],
+                "totopic": "https://the-overlord.com/index.php?/topic/58878-mbr-puits-de-mimir/"
+            }
+        },
+
+        "Naglfar": {
+            "description": {
+                "title": "Naglfar",
+                "rules": [
+                ],
+                "totopic": "https://the-overlord.com/index.php?/topic/58879-mbr-naglfar/"
+            }
+        },
+
+        "Raid_on_Hedeby": {
+            "description": {
+                "title": "Raid sur Hedeby",
+                "rules": [
+                ],
+                "totopic": "https://the-overlord.com/index.php?/topic/58880-mbr-raid-sur-hedeby/"
+            }
+        },
+
+        "Vigrid": {
+            "description": {
+                "title": "Vigrid",
+                "rules": [
+                ],
+                "totopic": "https://the-overlord.com/index.php?/topic/58881-mbr-vigrid/"
+            }
+        },
+        
+        "Ancient-Ruins": {
+            "description": {
+                "title": "Ruines Anciennes",
+                "rules": [
+                {
+                        "title": "Eau stagnante",
+                        "description": "Sortir d'une zone d'eau stagnante coûte 1 point de mouvement supplémentaire, sauf avec la compétence Natation."
+                    },
+                    {
+                        "title": "Ruines",
+                        "description": "Entrer dans une zone de ruine coûte 1 point de mouvement supplémentaire, sauf avec la compétence Escalade."
+                    },
+                    {
+                        "title": "Rochers",
+                        "description": "Pour entrer dans une zone de rochers, une unité doit dépenser 2 points de mouvement supplémentaires, sauf si elle possède la compétence Escalade."
+                    }
+                ],
+                "totopic": "https://the-overlord.com/index.php?/topic/58882-mbi-ruines-anciennes/"
+            }
+        },
+
+        "Luxur": {
+            "description": {
+                "title": "Luxur",
+                "rules": [
+                {
+                        "title": "Ruines",
+                        "description": "Entrer dans une zone de ruine coûte 1 point de mouvement supplémentaire, sauf avec la compétence Escalade."
+                    }, {
+                        "title": "Piliers",
+                        "description": "Aucune unité de peut entrer dans une zone de pilier."
+                    }
+                ],
+                "totopic": "https://the-overlord.com/index.php?/topic/58883-mbi-luxur/"
+            }
+        },
+
+        "River-Styx": {
+            "description": {
+                "title": "Rivière Styx",
+                "rules": [
+                    {
+                        "title": "Toits",
+                        "description": "Entrer dans une zone de toit depuis les escaliers ou une autre zone de toit coûte 1 point de mouvement supplémentaire, sauf avec la compétence Escalade. Entrer dans une zone de toit depuis le sol coûte 2 points de mouvement supplémentaires, sauf avec la compétence Escalade. Sauter depuis les toits inflige {dice_red}{dice_red} inévitables et {dice_red} si l'unité possède la compétence Saut."
+                    }, {
+                        "title": "Rivière",
+                        "description": "Les unités entrant dans une zone de rivière sont tuées si elles ne possèdent pas la compétence Natation. Retirez leur figurine et leur équipement du plateau. Les unités avec la compétence Natation ne peuvent pas réaliser d'attaque à distance quandd elles nagent."
+                    }, {
+                        "title": "Statues",
+                        "description": "Pour entrer dans une zone de statue, une unité doit dépenser 2 points de mouvement supplémentaires, sauf si elle possède la compétence Escalade."
+                    }, {
+                        "title": "Ruines",
+                        "description": "Entrer dans une zone de ruine coûte 1 point de mouvement supplémentaire, sauf avec la compétence Escalade."
+                    }, {
+                        "title": "Murs de pierre",
+                        "description": "Aucune unité de peut entrer dans une zone de mur de pierre."
+                    }
+                ],
+                "totopic": "https://the-overlord.com/index.php?/topic/58884-mbi-rivi%C3%A8re-styx/"
+            }
+        },
+
+        "Temple-Of-Set": {
+            "description": {
+                "title": "Temple de Set",
+                "rules": [
+                 {
+                        "title": "Feu",
+                        "description": "Les unités qui entrent ou commencent leur tour dans une zone de feu subissent {dice_red}{dice_red}{dice_red} de dégâts inévitables si elles ne possèdent pas la compétence Vol."
+                    },
+                    {
+                        "title": "",
+                        "description": "Ces zones octroient le bonus de surplomb de {dice_yellow} vers les sols inondés en ligne de vue. Entrer dans une de ces zones depuis une zone de sol inondé adjacente coûte 2 points de mouvement supplémentaires, sauf avec la compétence Escalade."
+                    }
+                ],
+                "totopic": "https://the-overlord.com/index.php?/topic/58885-mbi-temple-de-set/"
+            }
+        },
+
+        "Throne-Room": {
+            "description": {
+                "title": "Salle du Trône",
+                "rules": [
+                {
+                        "title": "Feu",
+                        "description": "Les unités qui entrent ou commencent leur tour dans une zone de feu subissent {dice_red}{dice_red}{dice_red} de dégâts inévitables si elles ne possèdent pas la compétence Vol."
+                    },
+                    {
+                        "title": "Limites doubles",
+                        "description": "Les unités ne peuvent pas traverser une limite double blanche si elles ne possèdent pas la compétence Vol."
+                    },
+                    {
+                        "title": "Alcôves de statues",
+                        "description": "Les unités ne peuvent entrer et sortir d'une alcôve de statue que depuis la zone d'escaliers adjacente."
+                    }
+                ],
+                "totopic": "https://the-overlord.com/index.php?/topic/58886-mbi-salle-du-tr%C3%B4ne/"
+            }
+        }        
     },
 
     "compositions": {

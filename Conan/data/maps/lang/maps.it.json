@@ -358,7 +358,115 @@
                 ],
                 "totopic": "https://the-overlord.net/index.php?/topic/119072-versus-catacombs/"
             }
-        }
+        },
+        
+        "Olympus_in_Ruins": {
+            "description": {
+                "title": "Olimpo in rovina",
+                "rules": [
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119385-mbp-olympus-in-ruins/"
+            }
+        },
+
+        "Styx": {
+            "description": {
+                "title": "Styx",
+                "rules": [
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119386-mbp-styx/"
+            }
+        },
+
+        "Tartarus": {
+            "description": {
+                "title": "Tartara",
+                "rules": [
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119387-mbp-tartarus/"
+            }
+        },
+
+        "Mimir_s_Well": {
+            "description": {
+                "title": "Pozzo di Mimir",
+                "rules": [
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119388-mbp-mimirs-well/"
+            }
+        },
+
+        "Naglfar": {
+            "description": {
+                "title": "Naglfar",
+                "rules": [
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119389-mbp-naglfar/"
+            }
+        },
+
+        "Raid_on_Hedeby": {
+            "description": {
+                "title": "Raid su Hedeby",
+                "rules": [
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119390-mbr-raid-on-hedeby/"
+            }
+        },
+
+        "Vigrid": {
+            "description": {
+                "title": "Vigrid",
+                "rules": [
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119391-mbr-vigrid/"
+            }
+        },
+        
+        "Ancient-Ruins": {
+            "description": {
+                "title": "Rovine Antiche",
+                "rules": [
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119392-mbi-ancient-ruins/"
+            }
+        },
+
+        "Luxur": {
+            "description": {
+                "title": "Luxur",
+                "rules": [
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119393-mbi-luxur/"
+            }
+        },
+
+        "River-Styx": {
+            "description": {
+                "title": "Fiume Stige",
+                "rules": [
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119394-mbi-river-styx/"
+            }
+        },
+
+        "Temple-Of-Set": {
+            "description": {
+                "title": "Tempio di Set",
+                "rules": [
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119395-mbi-temple-of-set/"
+            }
+        },
+
+        "Throne-Room": {
+            "description": {
+                "title": "Sala del Trono",
+                "rules": [
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119396-mbi-throne-room/"
+            }
+        }          
     },
 
     "compositions": {
