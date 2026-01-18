@@ -122,7 +122,11 @@
 .map-help-rule-description, .map-help-rule-areas {
     padding-left: 33px;
     font-size: calc(var(--secondary-size) * 1.5625rem);
-    line-height: calc(var(--secondary-line-height) * 1.25rem);
+    
+    line-height: calc(var(--secondary-line-height) * 1.5625rem);
+    .map-help-rule-title ~ & {
+        line-height: calc(var(--secondary-line-height) * 1.25rem);
+    }
 }
 .map-help-rule-areas .map-help-rule-areas-square {
     width: 18px;

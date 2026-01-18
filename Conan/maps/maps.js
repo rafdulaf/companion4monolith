@@ -81,15 +81,18 @@ Maps = mergeObject(Maps, {
         var rules = map.description.rules;
         if (rules)
         {
+            let exceptions = 0;
             for (var i=0; i < rules.length; i++) 
             {
+                if (!rules[i].title) exceptions++;
+                
                 // Draw numbers on the map
                 if (rules[i].coordinates)
                 {
                     for (var j=0; j < rules[i].coordinates.length; j++)
                     {
                         var coo = rules[i].coordinates[j];
-                        aide += "<span onclick='Maps._scrollIntoView(" + (i + 1) + ")' class='map-help-legend' data-num='" + (i+1) + "' style='left: " + coo[0] + "%; top: " + coo[1] + "%;'>" + (i+1) + "</span>";
+                        aide += "<span onclick='Maps._scrollIntoView(" + (i + 1 - exceptions) + ")' class='map-help-legend' data-num='" + (i + 1 - exceptions) + "' style='left: " + coo[0] + "%; top: " + coo[1] + "%;'>" + (i + 1 - exceptions) + "</span>";
                     }
                 }
 
@@ -109,8 +112,11 @@ Maps = mergeObject(Maps, {
         if (rules)
         {
             aide = "<ul>";
+            let exceptions = 0;
             for (var i=0; i < rules.length; i++)
             {
+                if (!rules[i].title) exceptions++;
+
                 var areaAide = "";
                 if (rules[i].areas)
                 {
@@ -118,7 +124,7 @@ Maps = mergeObject(Maps, {
                 }
     
                 aide += "<li>"
-                + "<span class='map-help-rule-title' data-num='" + (i + 1) + "'>" + rules[i].title + "</span>"
+                + (rules[i].title ? "<span class='map-help-rule-title' data-num='" + (i + 1 - exceptions) + "'>" + rules[i].title + "</span>" : "")
                 + "<span class='map-help-rule-description'>" + About._replace(rules[i].description) + "</span>"
                 + areaAide
                 + "</li>";

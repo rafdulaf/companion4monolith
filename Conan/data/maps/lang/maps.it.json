@@ -181,9 +181,7 @@
                 "rules": [
                     {
                         "title": "Muro di pietra",
-                        "description": "Un personaggio con l'abilità Spacca Muri non può usarla per aprire brecce nei muri della torre (sia interni che perimetrali).",
-                        "title": "Finestre",
-                        "description": "Le finestre al livello 2 e 3 non bloccano la linea di vista verso le aree esterne ai piedi della torre del livello 1."
+                        "description": "Un personaggio con l'abilità Spacca Muri non può usarla per aprire brecce nei muri della torre (sia interni che perimetrali)."
                     }, {
                         "title": "Arrampicarsi",
                         "description": "Un personaggio con l'abilità Arrampicarsi può :<br/>• passare dal livello 1 al livello 2 (e viceversa) arrampicandosi sull'albero e spendendo un (1) punto movimento extra,<br/>• passare dal livello 2 al livello 3 (e viceversa) o dal livello 3 al livello 4 (e viceversa) arrampicandosi sui muri esterni della torre e spendendo 2 punti movimento extra."
@@ -357,6 +355,231 @@
                     }                
                 ],
                 "totopic": "https://the-overlord.net/index.php?/topic/119072-versus-catacombs/"
+            }
+        },
+        
+        "Olympus_in_Ruins": {
+            "description": {
+                "title": "Olimpo in rovina",
+                "rules": [
+                    {
+                    	"description": "If the scenario's special rules differ from the Companion's rules and/or lines of sight, the scenario has priority."
+                    },
+                    {
+                        "title": "Boulders",
+                        "description": "To enter a Boulder area, a unit must spend 2 extra movement points unless they have the Climb skill."
+                    }, {
+                        "title": "Ruins",
+                        "description": "Moving into a Ruin costs 1 additional movement point unless the unit has Climb."
+                    }                    
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119385-mbp-olympus-in-ruins/"
+            }
+        },
+
+        "Styx": {
+            "description": {
+                "title": "Styx",
+                "rules": [
+                    {
+                        "description": "Se le regole speciali dello scenario differiscono dalle regole e/o dalle linee di vista del Companion, lo scenario ha la priorità."
+                    }, {
+                        "title": "Massi",
+                        "description": "Per entrare in un'area con un Masso, un'unità deve spendere 2 punti Movimento aggiuntivi, a meno che non possieda l'abilità Arrampicarsi."
+                    }, {
+                        "title": "Rovine",
+                        "description": "Entrare in una Rovina costa 1 punto Movimento aggiuntivo, a meno che l'unità non possieda l'abilità Arrampicarsi."
+                    }, {
+                        "title": "Acqua",
+                        "description": "Le unità senza l'abilità Nuotare che entrano in un'area d'acqua muoiono immediatamente. Le unità con Nuotare non possono effettuare attacchi a Distanza."
+                    }, {
+                        "title": "Scogliere",
+                        "description": "I personaggi senza l'abilità Volare non possono accedere a queste aree."
+                    }                    
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119386-mbp-styx/"
+            }
+        },
+
+        "Tartarus": {
+            "description": {
+                "title": "Tartaro",
+                "rules": [
+                    {
+                        "description": "Se le regole speciali dello scenario differiscono dalle regole e/o dalle linee di vista del Companion, lo scenario ha la priorità."
+                    }, {
+                        "title": "Massi",
+                        "description": "Per entrare in un'area con un Masso, un'unità deve spendere 2 punti Movimento aggiuntivi, a meno che non possieda l'abilità Arrampicarsi."
+                    }, {
+                        "title": "Muro della gabbia (bordo doppio)",
+                        "description": "Per attraversare un Muro della gabbia, un'unità deve spendere 1 punto Movimento aggiuntivo, a meno che non possieda l'abilità Grazia felina."
+                    }, {
+                        "title": "Catene giganti",
+                        "description": "Per attraversare una Catena gigante, un'unità deve spendere 2 punti Movimento aggiuntivi, a meno che non possieda l'abilità Arrampicarsi."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119387-mbp-tartarus/"
+            }
+        },
+        
+        "Mimir_s_Well": {
+            "description": {
+                "title": "Pozzo di Mímir",
+                "rules": [
+                    {
+                        "title": "Acqua",
+                        "description": "Le unità senza l'abilità Nuotare che entrano in un'area d'acqua muoiono immediatamente. Le unità con Nuotare non possono effettuare attacchi a Distanza."
+                    }, {
+                        "title": "Ostacolo (bordo rosso)",
+                        "description": "Le unità senza l'abilità Volare non possono entrare in un Ostacolo."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119388-mbp-mimirs-well/"
+            }
+        },
+        
+        "Naglfar": {
+            "description": {
+                "title": "Naglfar",
+                "rules": [
+                    {
+                        "title": "Rovine",
+                        "description": "Entrare in una Rovina costa 1 punto Movimento aggiuntivo, a meno che l'unità non possieda l'abilità Arrampicarsi."
+                    }, {
+                        "title": "Ghiacciai",
+                        "description": "Le unità senza l'abilità Volare non possono entrare in un Ghiacciaio."
+                    }, {
+                        "title": "Scarpata ripida (bordo doppio)",
+                        "description": "Per attraversare una Scarpata ripida in entrambe le direzioni, un'unità deve possedere l'abilità Arrampicarsi e spendere 3 punti Movimento aggiuntivi."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119389-mbp-naglfar/"
+            }
+        },
+        
+        "Raid_on_Hedeby": {
+            "description": {
+                "title": "Raid su Hedeby",
+                "rules": [
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119390-mbr-raid-on-hedeby/"
+            }
+        },
+        
+        "Vigrid": {
+            "description": {
+                "title": "Vigrid",
+                "rules": [
+                    {
+                        "title": "Rovine",
+                        "description": "Entrare in una Rovina costa 1 punto Movimento aggiuntivo, a meno che l'unità non possieda l'abilità Arrampicarsi."
+                    }, {
+                        "title": "Ghiacciai",
+                        "description": "Le unità senza l'abilità Volare non possono entrare in un Ghiacciaio."
+                    }, {
+                        "title": "Fuoco",
+                        "description": "Le unità senza l'abilità Volare che entrano in un'area di Fuoco o vi iniziano il proprio turno subiscono {dice_red}{dice_red}{dice_red} danni non difendibili."
+                    }, {
+                        "title": "Massi",
+                        "description": "Per entrare in un'area con un Masso, un'unità deve spendere 2 punti Movimento aggiuntivi, a meno che non possieda l'abilità Arrampicarsi."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119391-mbr-vigrid/"
+            }
+        },
+        
+        "Ancient-Ruins": {
+            "description": {
+                "title": "Rovine Antiche",
+                "rules": [
+                    {
+                        "title": "Acque basse",
+                        "description": "I personaggi senza l'abilità Nuotare devono spendere 1 punto Movimento aggiuntivo per uscire da un'area di Acque basse."
+                    }, {
+                        "title": "Rovine",
+                        "description": "Entrare in queste aree di Rovine costa 1 punto Movimento aggiuntivo, a meno che l'unità non possieda l'abilità Arrampicarsi."
+                    }, {
+                        "title": "Massi",
+                        "description": "Per entrare in un'area con un Masso, un'unità deve spendere 2 punti Movimento aggiuntivi, a meno che non possieda l'abilità Arrampicarsi."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119392-mbi-ancient-ruins/"
+            }
+        },
+        
+        "Luxur": {
+            "description": {
+                "title": "Luxur",
+                "rules": [
+                    {
+                        "title": "Rovine",
+                        "description": "Entrare in queste aree di Rovine costa 1 punto Movimento aggiuntivo, a meno che l'unità non possieda l'abilità Arrampicarsi."
+                    }, {
+                        "title": "Colonne",
+                        "description": "Le unità non possono entrare in una Colonna."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119393-mbi-luxur/"
+            }
+        },
+        
+        "River-Styx": {
+            "description": {
+                "title": "Fiume Stige",
+                "rules": [
+                    {
+                        "title": "Tetto",
+                        "description": "Entrare in queste aree dalle scale o dalle altre aree di Tetto costa 1 punto Movimento aggiuntivo, a meno che l'unità non possieda l'abilità Arrampicarsi. Entrare in queste aree dal terreno costa 2 punti Movimento aggiuntivi, a meno che l'unità non possieda l'abilità Arrampicarsi. L'unità tira {dice_red}{dice_red} per i danni da caduta. Se l'unità possiede l'abilità Saltare, tira invece {dice_red}."
+                    }, {
+                        "title": "Fiume",
+                        "description": "Le unità senza l'abilità Nuotare che entrano nel Fiume vengono distrutte. Le unità con Nuotare non possono effettuare attacchi a Distanza."
+                    }, {
+                        "title": "Statue",
+                        "description": "Per entrare in un'area con una Statua, un'unità deve spendere 2 punti Movimento aggiuntivi, a meno che non possieda l'abilità Arrampicarsi."
+                    }, {
+                        "title": "Rovine",
+                        "description": "Entrare in queste aree di Rovine costa 1 punto Movimento aggiuntivo, a meno che l'unità non possieda l'abilità Arrampicarsi."
+                    }, {
+                        "title": "Muri di pietra",
+                        "description": "Le unità non possono entrare in un Muro di pietra."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119394-mbi-river-styx/"
+            }
+        },
+        
+        "Temple-Of-Set": {
+            "description": {
+                "title": "Tempio di Set",
+                "rules": [
+                    {
+                        "title": "Fuoco",
+                        "description": "Le unità senza l'abilità Volare che entrano in un'area di Fuoco o vi iniziano il proprio turno subiscono {dice_red}{dice_red}{dice_red} danni non difendibili."
+                    }, {
+                        "title": "",
+                        "description": "Queste aree forniscono un bonus di sopraelevazione di {dice_yellow} alle aree di Pavimento allagato se hanno linea di vista. Per spostarsi da un'area adiacente di Pavimento allagato a queste aree, le unità devono spendere 2 punti Movimento aggiuntivi, a meno che non possiedano l'abilità Arrampicarsi."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119395-mbi-temple-of-set/"
+            }
+        },
+        
+        "Throne-Room": {
+            "description": {
+                "title": "Sala del Trono",
+                "rules": [
+                    {
+                        "title": "Fuoco",
+                        "description": "Le unità senza l'abilità Volare che entrano in un'area di Fuoco o vi iniziano il proprio turno subiscono {dice_red}{dice_red}{dice_red} danni non difendibili."
+                    }, {
+                        "title": "Bordi doppi",
+                        "description": "Le unità senza l'abilità Volare non possono attraversare le doppie linee bianche."
+                    }, {
+                        "title": "Nicchie delle statue",
+                        "description": "Le unità possono entrare o uscire dalle Nicchie delle statue solo attraverso le aree di Scale adiacenti."
+                    }
+                ],
+                "totopic": "https://the-overlord.net/index.php?/topic/119396-mbi-throne-room/"
             }
         }
     },
