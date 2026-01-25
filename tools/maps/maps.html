@@ -12,8 +12,13 @@
         <div class="left">
              <div class="actions">
                  <div>
+                    <button onclick="doStart()">Start from existing</button>
                     <button onclick="$('#import-file')[0].click()">Import</button>
                     <input id="import-file" style="position: absolute; left: -1000px" type="file" onchange="doImport(this)"/>
+                    <div class='file'>
+                        <button onclick="$('#image-file')[0].click()">Image</label>
+                        <input id="image-file" style="position: absolute; left: -1000px" type="file" onchange="displayImage(this)"/>
+                    </div>
                     <button onclick="doExport()">Export</button>
                  </div>
                  <div>
@@ -25,12 +30,13 @@
                     <input id="draw" onkeyup="displayZones()" onchange="displayZones" placeholder="Click on the map to write coordinates here"/>
                  </div>
              </div>
+             
             <div class='form'>
-                <div class='file'>
-                    <button onclick="$('#image-file')[0].click()">Local image</label>
-                    <input id="image-file" style="position: absolute; left: -1000px" type="file" onchange="displayImage(this)"/>
+                <div class="buttons">
+                <button data-for="metadatatab" onclick="tab('metadatatab')">Metadata</button>
+                <button data-for="zonestab" onclick="tab('zonestab')">Zones</button>
                 </div>
-                
+            <div id="metadatatab" class='tab'>
                 <div class='id'>
                     <label for="id">Identifier</label><input id="id" value="My_New_Map"/>
                 </div>
@@ -109,20 +115,24 @@
                 <div class='losFile'>
                     <label for="losFile">Static line of sight</label><input id="losFile" value="los-v1.webp"/>
                 </div>
+        </div>
+        <div id="zonestab" class='tab')>
                 <div class='zones'>
-                    <label for="zones">Zones</label>
-                    <br/>
-                    Zone : 
-                    <button onclick="add()">Add</button>
-                    <button onclick="renumbers()">Rename</button>
-                    <button onclick="transform()">Transform Coord</button>
-                    <br/>
-                    LOS :
-                    <button onclick="addLinks()">Add</button>
-                    <button onclick="reverseLinks()">Reverse all</button>
-                    <button onclick="removeLinks()">Remove</button>
-                    <textarea id="zones" rows="20" onkeyup="displayZones()" onchange="displayZones()">{}</textarea>
+                    <div>
+                        Zone : 
+                        <button onclick="add()">Add</button>
+                        <button onclick="renumbers()">Rename</button>
+                        <button onclick="transform()">Transform Coord</button>
+                    </div>
+                    <div>
+                        LOS :
+                        <button onclick="addLinks()">Add</button>
+                        <button onclick="removeLinks()">Remove</button>
+                        <button onclick="checkLinks(true)">Check & Reverse</button>
+                    </div>
+                    <textarea id="zones" onkeyup="displayZones()" onchange="displayZones()">{}</textarea>
                 </div>
+        </div>
             </div>
          </div>
          <div class='image'>

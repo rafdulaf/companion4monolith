@@ -13,7 +13,12 @@ function displayImage(input)
 }
 
 
-
+async function doStart()
+{
+    let app = prompt("Conan or Batman?", "Conan")
+    let data = await fetch("../../" + app + "/data/maps.json");
+    _doImport(await data.text());
+}
 
 function doImport(input)
 {
@@ -51,7 +56,7 @@ function _doImport(text)
                 {
                     var card = json.list[i];
                     
-                    cards += "\n" + (i+1) + ") " + (card.id)
+                    cards += (i % 3 != 0 ? "          " : "\n") + (i+1) + ") " + (card.id)
                 }
             }
             if (json.parts)
@@ -63,11 +68,11 @@ function _doImport(text)
                     
                     var card = json.parts[i];
                     
-                    cards += "\n" + (i+1+json.list.length) + ") " + (card.id)
+                    cards += (i % 3 != 0 ? "          " : "\n") + (i+1+json.list.length) + ") " + (card.id)
                 }
             }
             
-            var number = prompt("Choisissez la carte à importer" + cards)
+            var number = prompt("Choose the board to import" + cards, "1")
             if (number != parseInt(number)) return;
             
             if (number - 1 < json.list.length)
@@ -182,7 +187,7 @@ function _setRules(rules)
 {
     rules = rules || [];
     
-    if (rules.length)
+    if (rules.length !== undefined)
     {
         $("#rulesselector")[0].value = 'conan';
         $("#rules-conan")[0].value = stringify(rules);
@@ -281,41 +286,147 @@ function zoom(direction)
     window.setTimeout("displayZones()", 1);
 }
 
+function findNearestExistingPoint(x, y)
+{
+    if (!$(document.body).is('.ctrl-pressed') || x == "-")
+    {
+        return {x: x, y: y};
+    }
+    
+
+    var zones;
+    try
+    {    
+        zones = JSON.parse($('#zones')[0].value);
+    }
+    catch (e)
+    {
+        return {x: x, y: y};
+    }
+    
+    let allPoints = Object.values(zones).map(z => z.area).flat();
+    if (allPoints.length == 0)
+    {
+        return {x: x, y: y};
+    }
+    
+    let tx = x, ty = y;
+    let allDistances = allPoints.map(p => (p[0] - x)*(p[0] - x) + (p[1] - y)*(p[1] - y));
+    
+    let indexedDistances = [];
+    for (let i=0; i < allDistances.length; i++)
+    {
+        indexedDistances.push({index: i, distance: allDistances[i]});
+    }
+    
+    indexedDistances.sort((a,b) => a.distance - b.distance);
+    
+    let currentZoom = parseInt(($("#image").attr('data-width') || 100));
+    const size = 100 / currentZoom;
+    
+    if (indexedDistances[0].distance < size)
+    {
+        tx = allPoints[indexedDistances[0].index][0];
+        ty = allPoints[indexedDistances[0].index][1];
+    }
+    else {
+        if (tx < size) tx = 0;
+        else if (tx > 100 - size) tx = 100;
+
+        if (ty < size) ty = 0;
+        else if (ty > 100 - size) ty = 100;
+    }
+    
+    return {x: tx, y: ty};
+}
+
+var lastPosition = {x: "-", y: "-"};
+var lastTruePosition = {x: "-", y: "-"};
 function position(x, y)
 {
+    lastPosition = {x: x, y: y};
     $("#position").html("x: " + x + "%, y: " + y + "%");
 }
 
 $(window).on('resize', displayZones);
 $(document).ready(function() {
     position("-", "-");
+    tab("metadatatab");
     
     function getXY(event)
     {
-        var iPos = $("#image").offset();
-        return {
-            x: parseInt(((event.clientX + $(document.body).scrollLeft() - iPos.left) / $("#image").width()) * 10000.0)/100.0, 
-            y: parseInt(((event.clientY + $(document.body).scrollTop()  - iPos.top ) / $("#image").height()) * 10000.0)/100.0
-        };
+        if (event == null)
+        {
+            return findNearestExistingPoint(lastTruePosition.x, lastTruePosition.y);
+        }
+        else
+        {
+            var iPos = $("#image").offset();
+            
+            lastTruePosition = {
+                x: parseInt(((event.clientX + $(document.body).scrollLeft() - iPos.left) / $("#image").width()) * 10000.0)/100.0, 
+                y: parseInt(((event.clientY + $(document.body).scrollTop()  - iPos.top ) / $("#image").height()) * 10000.0)/100.0
+            }
+            
+            return findNearestExistingPoint(lastTruePosition.x, lastTruePosition.y);
+        }
     }
     
-    
+    var isMouseOverImage = false;
+    $("#image").on('mouseenter', function() {
+         isMouseOverImage = true;
+         _displayZones();
+     });
     $("#image").on('mouseout', function(event) {
+        lastTruePosition = {x: "-", y: "-"};
         position("-", "-");
+        isMouseOverImage = false;
+        $(document.body).removeClass('ctrl-pressed');
+        _displayZones();
     });
     $("#image").on('mousemove', function(event) {
         var pos = getXY(event);
         position(pos.x, pos.y);
         detectCenters(pos.x, pos.y);
+        _displayZones();
     });
     $("#image").on('click', function(event) {
         var pos = getXY(event);
+        position(pos.x, pos.y);
         var v = $("#draw")[0].value;
         if (v) v+= ", "
         v+= "[" + pos.x + ", " + pos.y + "]"
         $("#draw")[0].value = v;
         _displayZones();
     });
+    
+    $(document).on('keydown', function(e) {
+        if (isMouseOverImage && (e.ctrlKey || e.metaKey)) {
+            $(document.body).addClass('ctrl-pressed');
+        }
+        var pos = getXY();
+        position(pos.x, pos.y);
+        _displayZones();
+    });
+
+    $(document).on('keyup', function(e) {
+        if (!e.ctrlKey && !e.metaKey) {
+            $(document.body).removeClass('ctrl-pressed');
+        }
+        var pos = getXY();
+        position(pos.x, pos.y);
+        _displayZones();
+    });
+
+    // Retirer la classe si la fenêtre perd le focus
+    $(window).on('blur', function() {
+        $(document.body).removeClass('ctrl-pressed');
+        lastTruePosition = {x: "-", y: "-"};
+        position("-", "-");
+        _displayZones();
+    });
+
+    
 })
 
 function detectCenters(x, y)
@@ -355,20 +466,30 @@ function detectCenters(x, y)
     }
 }
 
+function drawNearestPoint(svgWidth, svgHeight) {
+    if (lastTruePosition.x == lastPosition.x && lastTruePosition.y == lastPosition.y) { return ""; }
+    
+    return "<circle class='point-draw' cx='" + svgWidth*lastPosition.x/100 + "' cy='" + svgHeight*lastPosition.y/100 + "' r='3.5'/>";
+}
+
 function draw(svgWidth, svgHeight) {
     try
     {
+        var c =  "";
+        
         var d = JSON.parse("[" + $("#draw")[0].value + "]");
         
         var line = "";
         for (var i=0; i < d.length; i++)
         {
+            c += "<circle class='point-draw' cx='" + svgWidth*d[i][0]/100 + "' cy='" + svgHeight*d[i][1]/100 + "' r='3.5'/>";
             line += (i == 0 ? "M" : "L") + svgWidth*d[i][0]/100 + "," + svgHeight*d[i][1]/100;
         }
-        return "<path " +
+        c += "<path " +
                         "d='" + line + "' " +
                         "class='draw'>" +
                 "</path>";
+        return c;
     }
     catch(e)
     {
@@ -411,6 +532,7 @@ function _displayZones()
                 for (var i=0; i < zone.area.length; i++)
                 {
                     line += (i == 0 ? "M" : "L") + svgWidth*zone.area[i][0]/100 + "," + svgHeight*zone.area[i][1]/100;
+                    code += "<circle class='point' cx='" + svgWidth*zone.area[i][0]/100 + "' cy='" + svgHeight*zone.area[i][1]/100 + "' r='5'/>";
                 }
                 if (zone.area.length)
                 {
@@ -477,6 +599,7 @@ function _displayZones()
         }
         
         code += draw(svgWidth, svgHeight);
+        code += drawNearestPoint(svgWidth, svgHeight);
         code += "</svg>";
 
         mapArea.html(code);
@@ -493,8 +616,38 @@ function add()
         throw e;
     }
     
-    var action = prompt("Enter new zone name")
-    if (!action) return;
+    let points = $("#draw")[0].value;
+    try
+    {
+        points = JSON.parse("[" + points + "]");
+        if (points.length < 4)
+        {
+            throw new Error("A zone must have at least 4 points");
+        }
+    }
+    catch (e)
+    {
+        alert(e);
+        return;
+    }
+    
+    var centerSize = parseInt(prompt("How many centers for this zone?", "1"))
+    if (centerSize == "NaN" || centerSize < 0 || centerSize >= points.length)
+    {
+        alert("The number of centers is not valid");
+        return;
+    }
+
+    let zonesKeys = Object.keys(zones);
+    let maxZoneName = zonesKeys[zonesKeys.length -1];
+    let zoneNameAsNumber = parseInt(maxZoneName);
+    
+    var action = prompt("Enter new zone number", !isNaN(zoneNameAsNumber) ? (zoneNameAsNumber + 1) : "1");
+    if (!action || !/^[0-9]+$/.test(action)) 
+    {
+        alert("Zone number invalid")
+        return;
+    }
  
     if (zones[action])
     {
@@ -502,24 +655,20 @@ function add()
         return
     }
 
-    var action2 = prompt("Enter new zone area points [x, y], [x, y], [x, y], [x, y], [x, y]...")
-    if (!action2) return;
-
-    var action3 = prompt("Enter new zone area centers [x, y], [x, y]")
-    if (!action3) return;
-
-    var action4 = prompt("Enter new zone area level", 0)
+    var action4 = prompt("Enter new zone area level", zones[maxZoneName]?.level || "0");
     if (!action4) return;
         
     zones[action] = {
-        "area": JSON.parse("[" + action2 + "]"),
-        "centers": JSON.parse("[" + action3 + "]"),
+        "area": points.slice(0, points.length - centerSize),
+        "centers": points.slice(points.length - centerSize),
         "links": [],
         "level": parseInt(action4)
     }
         
     $("#zones")[0].value = stringify(zones);
     displayZones();
+    
+    $("#draw")[0].value = "";
 }
 
 function renumbers()
@@ -752,7 +901,7 @@ function _parseLink(s)
     }
 }
 
-function addLinks()
+function addLinks(data)
 {
     let zones;
     try {
@@ -763,7 +912,7 @@ function addLinks()
         throw e;
     }
 
-    var lines = prompt("Add lines of sight (ex: 1-2,1-3-4(2))");
+    var lines = prompt("Add lines of sight (ex: 1-2,1-3-4(2))", data);
     for (let line of lines.split(","))
     {
         line = line.trim();
@@ -775,7 +924,14 @@ function addLinks()
             if (!zones[z.name])
             {
                 alert("There is no zone " + z.name);
-                throw new Error("There is no zone " + z.name);
+                addLinks(lines);
+                return;
+            }
+            if (zones[z.name].centers.length < z.center)
+            {
+                alert("Zone " + z.name + " has no center n°" + z.center);
+                addLinks(lines);
+                return;
             }
         }
         
@@ -850,7 +1006,7 @@ function removeLinks()
     displayZones();
 }
 
-function reverseLinks()
+function checkLinks(andReverse)
 {
     try {
         var zones = JSON.parse($("#zones")[0].value)
@@ -901,7 +1057,7 @@ function reverseLinks()
         }
     }
     
-    if (log)
+    if (log && andReverse)
     {
         if (confirm("Adding" + log))
         {
@@ -909,8 +1065,17 @@ function reverseLinks()
             displayZones();
         }
     }
-    else
+    else if (andReverse)
     {
-        alert("Nothing to do")
+        alert("All right")
     }
+}
+
+function tab(id)
+{
+    $(".form > div.buttons > button").removeClass("current");
+    $(".form > div.tab").hide();
+    
+    $(".form > div.buttons> button[data-for='" + id + "']").addClass("current");
+    $(".form > div#" + id).show();
 }

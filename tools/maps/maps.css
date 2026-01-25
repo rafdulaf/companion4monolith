@@ -33,9 +33,30 @@ div.form {
     height: 100%;
     overflow: auto;
 }
+div.form > div.buttons > button {
+    width: 49%;
+    border-color: transparent transparent #000 transparent;
+    display: inline-block;
+    color: #7f7f7f;
+    
+    &.current {
+        border-color: #000 #000 transparent #000;
+        color: #000000;
+    }
+}
 
-div.form > div + div {
+div.form > div > div + div {
     margin-top: 5px;
+}
+
+.zones {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 21px);
+    
+    textarea {
+        flex: 1;
+    }
 }
 
 #map-area {
@@ -57,6 +78,7 @@ svg path.draw {
     stroke-width: 5px;
     stroke-linejoin: round;
 }
+
 svg text {
     fill: #0000ff;
     stroke: #ffffff;
@@ -66,6 +88,15 @@ svg line.los {
     stroke-width: 2px;
     stroke-dasharray: 4,2;
 }
+svg circle.point {
+    fill: #FF00007F;
+    pointer-events: none;
+}
+.ctrl-pressed svg circle.point {
+    fill: #FF0000;
+    pointer-events: none;
+}
+
 svg circle.center1 {
     fill: #FFFFFF;
     pointer-events: none;
@@ -116,8 +147,8 @@ input[type='checkbox'] + label {
     width: calc(50% - 3px);
 }
 
-.file button {
-    width: 100%;
+.file  {
+    display: inline-block;
 }
 
 .languages div div {
