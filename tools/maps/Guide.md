@@ -97,6 +97,7 @@ If a zone has many centers, you can select the center by adding `(x)` to its nam
 You have to set `(0)` for zone with no centers.
 
 All reversed line are always created. For the rare case where you do not want to create the reverse line, you will have to manually edit to remove them.
+You will also have to declare the zone as `"onewaylinks": true`. See [Readme](Readme.md) to know more.
 
 Don't try to create too many lines at once. Add a few one, test them, and continue.
 

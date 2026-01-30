@@ -764,7 +764,7 @@ const urlsToCache = [
 	"engine/tutorial/tutorial.js",
 	"engine/vendors/css/ajax-loader.gif",
 	"engine/vendors/css/fonts/slick.woff",
-	"engine/vendors/css/fonts-1.3.0.css",
+	"engine/vendors/css/fonts-1.4.0.css",
 	"engine/vendors/css/images/ui-icons_444444_256x240.webp",
 	"engine/vendors/css/images/ui-icons_555555_256x240.webp",
 	"engine/vendors/css/images/ui-icons_777620_256x240.webp",

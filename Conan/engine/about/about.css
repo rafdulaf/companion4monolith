@@ -1,41 +1,41 @@
 .about-fullscreen:before {
     content: "\f31e";
-    font-weight: 900;;
+    font-weight: 900;
     font-family: 'Font Awesome 5 Free';
 }
 .about-download:before {
     content: "\f019";
-    font-weight: 900;;
+    font-weight: 900;
     font-family: 'Font Awesome 5 Free';
 }
 .about-custom:before {
     content: "\f49e";
     font-family: 'Font Awesome 5 Free';
-    font-weight: 900;;
+    font-weight: 900;
 }
 .about-preferences:before {
     content: "\f3e0";
-    font-weight: 900;;
+    font-weight: 900;
     font-family: 'Font Awesome 5 Free';
 }
 .about-contribute:before {
     content: "\f188";
-    font-weight: 900;;
+    font-weight: 900;
     font-family: 'Font Awesome 5 Free';
 }
 .about-about:before {
     content: "\f447";
-    font-weight: 900;;
+    font-weight: 900;
     font-family: 'Font Awesome 5 Free';
 }
 .about-other:before {
     content: "\f0c0";
-    font-weight: 900;;
+    font-weight: 900;
     font-family: 'Font Awesome 5 Free';
 }
 .about-allin:before {
     content: "\f560";
-    font-weight: 900;;
+    font-weight: 900;
     font-family: 'Font Awesome 5 Free';
 }
 
@@ -48,7 +48,7 @@
 }
 .contribute .to:before {
     content: "\f086";
-    font-weight: 900;;
+    font-weight: 900;
     font-family: 'Font Awesome 5 Free';
     display: inline-block;
     vertical-align: middle;
@@ -190,7 +190,7 @@
     text-transform: uppercase;
     text-decoration: none;
     color: #e64443;
-    padding: 7px 16px 0 16px;;
+    padding: 7px 16px 0 16px;
     border-radius: 5px;
 }
 .toast-action a:hover {

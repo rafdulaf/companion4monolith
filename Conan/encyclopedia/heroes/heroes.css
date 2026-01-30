@@ -7,12 +7,12 @@
 }
 .encyclopedia-heroes-tostudio::before {
     content: "\f591";
-    font-weight: 900;;
+    font-weight: 900;
     font-family: 'Font Awesome 5 Free';
 }
 .encyclopedia-heroes-download::before {
    font-family: "Font Awesome 5 Free";
-   font-weight: 900;;
+   font-weight: 900;
    content: "\f56d";  
 }
 

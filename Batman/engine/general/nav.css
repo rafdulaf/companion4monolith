@@ -281,6 +281,7 @@
     text-align: center;
 }
 .dialog-back:before {
+    font-weight: 900;
    font-family: "Font Awesome 5 Free";
    content: "\f060";  
 }

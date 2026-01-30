@@ -26,7 +26,8 @@
     
     .map-map-help .map-help-thumb > div.rotate-90,
     .map-map-help .map-help-thumb > div.rotate-270 {
-          margin: 0 calc((1 - var(--map-ratio)) * 0.5 * 30vw);
+          margin: calc(-30vw / 3.2521 * var(--map-ratio) * var(--map-ratio) + 30vw / 1.1099 * var(--map-ratio) - 30vw / 1.5590)
+                  calc(30vw / 3.3277 * var(--map-ratio) * var(--map-ratio) - 30vw / 0.8938 * var(--map-ratio) + 30vw / 1.2115);
     }
     
     .map-map-help .map-help-thumb {
@@ -39,6 +40,7 @@
     .map-map-help .map-help-thumb div {
         display: inline-block;
         position: relative;
+        line-height: 0;
     }
     
     .map-map-help ul {
@@ -127,7 +129,7 @@
     height: 14px;
     display: inline-block;
     border: 1px solid #000;
-    margin: 0 12px 0 3px;;
+    margin: 0 12px 0 3px;
     vertical-align: middle;
     top: -2px;
     position: relative;

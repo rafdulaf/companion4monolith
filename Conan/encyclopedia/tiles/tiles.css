@@ -7,7 +7,7 @@
 }
 .encyclopedia-tile-tostudio::before {
     content: "\f591";
-    font-weight: 900;;
+    font-weight: 900;
     font-family: 'Font Awesome 5 Free';
 }
 

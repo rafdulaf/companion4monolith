@@ -1,33 +1,33 @@
 .studio-icon:before {
   font-family: "Font Awesome 5 Free";
-  font-weight: 900;;
+  font-weight: 900;
   content: "\f591";  
 }
 
 .studio-icon-importcards:before {
   font-family: "Font Awesome 5 Free";
-  font-weight: 900;;
+  font-weight: 900;
   content: "\f093";
   font-size: 24px;  
 }
 
 .studio-icon-exportcards:before {
   font-family: "Font Awesome 5 Free";
-  font-weight: 900;;
+  font-weight: 900;
   content: "\f019";
   font-size: 24px;  
 }
 
 .studio-icon-printcards:before {
   font-family: "Font Awesome 5 Free";
-  font-weight: 900;;
+  font-weight: 900;
   content: "\f02f";
   font-size: 24px;  
 }
 
 .studio-allin:before {
     content: "\f560";
-    font-weight: 900;;
+    font-weight: 900;
     font-family: 'Font Awesome 5 Free';
 }
 
@@ -44,12 +44,12 @@
 
 .dialog .studio-save:before {
   font-family: "Font Awesome 5 Free";
-  font-weight: 900;;
+  font-weight: 900;
   content: "\f0c7";  
 }
 .dialog .studio-remove:before {
   font-family: "Font Awesome 5 Free";
-  font-weight: 900;;
+  font-weight: 900;
   content: "\f2ed";  
 }
 

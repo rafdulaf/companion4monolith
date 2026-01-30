@@ -51,6 +51,7 @@
 
 .encycloppedia-search-icon:before {
     font-family: "Font Awesome 5 Free";
+    font-weight: 900;
     content: "\f002";  
     font-size: 24px;
 }
@@ -125,10 +126,12 @@
 
 .search-engine .facet[data-mode=hide] a:before {
     font-family: "Font Awesome 5 Free";
+    font-weight: 900;
     content: "\f13a";
 }
 .search-engine .facet[data-mode=show] a:before {
     font-family: "Font Awesome 5 Free";
+    font-weight: 900;
     content: "\f139";
 }
 

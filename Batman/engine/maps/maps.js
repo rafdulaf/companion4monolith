@@ -329,7 +329,7 @@ var Maps = {
                 var result = /^([0-9]+)#(.+)#([0-9]+)$/.exec(link)
                 if (!result)
                 {
-                    console.error("    Error in zone '" + z + "', the link n°" + l + " is not readable: " + link);
+                    console.error("    [" + map.id + "] Error in zone '" + z + "', the link n°" + l + " is not readable: " + link);
                 }
                 else
                 {
@@ -339,27 +339,27 @@ var Maps = {
 
                     if (centerOfZ > nbZCenters)
                     {
-                        console.error("    Error in zone '" + z + "', the link n°" + l + " starts from an unexisting center: " + link);
+                        console.error("    [" + map.id + "] Error in zone '" + z + "', the link n°" + l + " starts from an unexisting center: " + link);
                     }
 
                     var targetZone = map.zones[targetZoneName];
                     if (!targetZone)
                     {
-                        console.error("    Error in zone '" + z + "', the link n°" + l + " links to an unexisting zone: " + link);
+                        console.error("    [" + map.id + "] Error in zone '" + z + "', the link n°" + l + " links to an unexisting zone: " + link);
                     }
                     else
                     {
                         var nbTargetZoneCenters = targetZone.centers.length;
                         if (centerOfTarget > nbTargetZoneCenters)
                         {
-                            console.error("    Error in zone '" + z + "', the link n°" + l + " leads to an unexisting center: " + link);
+                            console.error("    [" + map.id + "] Error in zone '" + z + "', the link n°" + l + " leads to an unexisting center: " + link);
                         }
                         else if (!zone.onewaylinks)
                         {
                             var reverseLink = centerOfTarget + "#" + z + "#" + centerOfZ;
                             if (!targetZone.links.includes(reverseLink))
                             {
-                                console.error("    Error in zone '" + z + "', the link n°" + l + " has no reverse link: " + link);
+                                console.error("    [" + map.id + "] Error in zone '" + z + "', the link n°" + l + " has no reverse link: " + link);
                             }
                         }
                     }
@@ -587,7 +587,7 @@ var Maps = {
         var rules = map.description.rules;
         if (window.Nav && rules)
         {
-            document.documentElement.style.setProperty('--map-ratio', map.description.rules.ratio || map.description.ratio || 1.16);
+            document.documentElement.style.setProperty('--map-ratio', map.size[0] / map.size[1]);
             
             var id = "maps-map";
             var mapC = $('#' + id + " .map-map-help");

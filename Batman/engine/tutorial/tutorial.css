@@ -1,10 +1,12 @@
 .tutorial-extensions:before {
     content: "\f49e";
     font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
 }
 .tutorial-settings:before {
     content: "\f024";
     font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
 }
 
 .blinkmenu {

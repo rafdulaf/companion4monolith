@@ -17,8 +17,7 @@
                         },
                         "elevation": [0, 1]
                     },
-                    "image": "data/maps/data/Bank/help.webp",
-                    "ratio": "1.33"
+                    "image": "data/maps/data/Bank/help.webp"
                 },
                 "thumbnail": "data/maps/data/Bank/thumb.webp",
                 "board": "data/maps/data/Bank/board.webp"
@@ -267,8 +266,7 @@
                             4
                         ]
                     },
-                    "image": "data/maps/data/ACE_Chemicals/help.webp",
-                    "ratio": "1.33"
+                    "image": "data/maps/data/ACE_Chemicals/help.webp"
                 },
                 "thumbnail": "data/maps/data/ACE_Chemicals/thumb.webp",
                 "board": "data/maps/data/ACE_Chemicals/board.webp"
@@ -489,8 +487,7 @@
                             6
                         ]
                     },
-                    "image": "data/maps/data/Crime_Alley/help.webp",
-                    "ratio": "1.33"
+                    "image": "data/maps/data/Crime_Alley/help.webp"
                 },
                 "thumbnail": "data/maps/data/Crime_Alley/thumb.webp",
                 "board": "data/maps/data/Crime_Alley/board.webp"
@@ -710,8 +707,7 @@
                             2
                         ]
                     },
-                    "image": "data/maps/data/Subway/help.webp",
-                    "ratio": "1.33"
+                    "image": "data/maps/data/Subway/help.webp"
                 },
                 "thumbnail": "data/maps/data/Subway/thumb.webp",
                 "board": "data/maps/data/Subway/board.webp"
@@ -1008,8 +1004,7 @@
                             0
                         ]
                     },
-                    "image": "data/maps/data/Arkham_Asylum/help.webp",
-                    "ratio": "1.33"
+                    "image": "data/maps/data/Arkham_Asylum/help.webp"
                 },
                 "thumbnail": "data/maps/data/Arkham_Asylum/thumb.webp",
                 "board": "data/maps/data/Arkham_Asylum/board.webp"
@@ -1327,7 +1322,6 @@
                 "copyright": "Monolith",
                 "rules": {
                     "image": "data/maps/data/Joker_Funhouse/help.webp",
-                    "ratio": 1.33,
                     "legend": {
                         "elevation": [ 0, 1, 2 , 3],
                         "boundaries": {
@@ -1549,7 +1543,6 @@
                 "copyright": "Monolith",
                 "rules": {
                     "image": "data/maps/data/Batcave/help.webp",
-                    "ratio": 1.33,
                     "legend": {
                         "elevation": [ 0, 1, 2 ],
                         "boundaries": {},
@@ -1809,7 +1802,6 @@
                 "copyright": "Monolith",
                 "rules": {
                     "image": "data/maps/data/Crime_Alley/help.webp",
-                    "ratio": 1.33,
                     "legend": {
                         "elevation": [ 0, 1, 2, 5, 6 ],
                         "boundaries": {},
@@ -2013,7 +2005,6 @@
                 "copyright": "Monolith",
                 "rules": {
                     "image": "data/maps/data/Wayne_Manor/help.webp",
-                    "ratio": 1.33,
                     "legend": {
                         "elevation": [ 0, 1 ],
                         "boundaries": {}
@@ -2221,7 +2212,6 @@
                 "copyright": "Monolith",
                 "rules": {
                     "image": "data/maps/data/Sewers/help.webp",
-                    "ratio": 1.33,
                     "legend": {
                         "elevation": [ 0, 1 ],
                         "boundaries": {},
@@ -2442,7 +2432,6 @@
                 "copyright": "Monolith",
                 "rules": {
                     "image": "data/maps/data/GCPD/help.webp",
-                    "ratio": 1.33,
                     "legend": {
                         "elevation": [ 0, 1, 2, 3 ],
                         "boundaries": {},
@@ -2792,8 +2781,7 @@
                         },
                         "elevation": [ 0 ]
                     },
-                    "image": "data/maps/data/Zeppelin/help.webp",
-                    "ratio": "1.33"
+                    "image": "data/maps/data/Zeppelin/help.webp"
                 },
                 "thumbnail": "data/maps/data/Zeppelin/thumb.webp",
                 "board": "data/maps/data/Zeppelin/board.webp"
@@ -3084,8 +3072,7 @@
                         "areas": ["promontory"],
                         "elevation": [ 0, 1, 2 ]
                     },
-                    "image": "data/maps/data/Warehouse/help.webp",
-                    "ratio": "1.33"
+                    "image": "data/maps/data/Warehouse/help.webp"
                 },
                 "thumbnail": "data/maps/data/Warehouse/thumb.webp",
                 "board": "data/maps/data/Warehouse/board.webp"
@@ -3358,8 +3345,7 @@
                             2
                         ]
                     },
-                    "image": "data/maps/data/Docks/help.webp",
-                    "ratio": "1.24"
+                    "image": "data/maps/data/Docks/help.webp"
                 },
                 "thumbnail": "data/maps/data/Docks/thumb.webp",
                 "board": "data/maps/data/Docks/board.webp"
@@ -3552,8 +3538,7 @@
                         "areas": ["promontory"],
                         "elevation": [ 0, 1, 2 ]
                     },
-                    "image": "data/maps/data/Docks_Warehouse/help.webp",
-                    "ratio": "1.33"
+                    "image": "data/maps/data/Docks_Warehouse/help.webp"
                 },
                 "thumbnail": "data/maps/data/Docks_Warehouse/thumb.webp",
                 "board": "data/maps/data/Docks_Warehouse/board.webp"

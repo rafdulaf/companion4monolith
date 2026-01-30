@@ -30,6 +30,7 @@
 .map-map-help .map-help-thumb div {
     display: inline-block;
     position: relative;
+    line-height: 0;
 }
 
 @media screen and (min-width: 1366px) {

@@ -1,29 +1,36 @@
 .maps-icon:before {
    font-family: "Font Awesome 5 Free";
+   font-weight: 900;
    content: "\f279";  
 }
 .maps-icon-index:before {
    font-family: "Font Awesome 5 Free";
+   font-weight: 900;
    content: "\f00a";  
 }
 .maps-icon-forum:before {
    font-family: "Font Awesome 5 Free";
+   font-weight: 900;
    content: "\f086";  
 }
 .maps-icon-losfile:before {
    font-family: "Font Awesome 5 Free";
+   font-weight: 900;
    content: "\f56d";  
 }
 .maps-icon-rotate:before {
    font-family: "Font Awesome 5 Free";
+   font-weight: 900;
    content: "\f2f1";  
 }
 .maps-icon-legend:before {
    font-family: "Font Awesome 5 Free";
+   font-weight: 900;
    content: "\f129";  
 }
 .maps-icon-pdf:before {
    font-family: "Font Awesome 5 Free";
+   font-weight: 900;
    content: "\f56d";  
 }
 
@@ -175,6 +182,7 @@
 
 .map-map .map-back:before {
    font-family: "Font Awesome 5 Free";
+   font-weight: 900;
    content: "\f00a";  
    font-size: 24px;
 }

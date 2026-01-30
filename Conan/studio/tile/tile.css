@@ -523,7 +523,7 @@
     input + label:before {
         content: "\f05e";
         font-family: 'Font Awesome 5 Free';
-        font-weight: 900;;
+        font-weight: 900;
         position: absolute;
         top: 0; left: 0; right: 0; bottom: 0;
         color: #7F7F7F;
@@ -577,7 +577,7 @@
 .dialog .tile .field select.dice
 {
   font-family: "Font Awesome 5 Free";
-  font-weight: 900;;
+  font-weight: 900;
   font-size: 35px;
   width: 60px;
   display: inline-block;
@@ -595,7 +595,7 @@
     width: calc(100% - 40px);
     display: inline-block;
     font-size: 35px;
-    font-weight: 900;;
+    font-weight: 900;
     font-family: "Font Awesome 5 Free";
 }
 

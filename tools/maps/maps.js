@@ -1020,6 +1020,8 @@ function checkLinks(andReverse)
     
     for (var z in zones)
     {
+        if (zones[z].onewaylinks) continue;
+        
         for (var l in zones[z].links)
         {
             var link = zones[z].links[l];
@@ -1059,7 +1061,7 @@ function checkLinks(andReverse)
     
     if (log && andReverse)
     {
-        if (confirm("Adding" + log))
+        if (confirm("Do you want to add the following missing lines of sight?" + log))
         {
             $("#zones")[0].value = stringify(zones);
             displayZones();

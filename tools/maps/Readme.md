@@ -71,8 +71,8 @@ The description is an object composed of the following items:
 * `copyright`: all official maps should be valued with "Monolith".
 * `rules`: this value will depend on the application. See the rules for the right application under.
 * `thumbnail`: a relative path to the thumbnail image of the board. The thumbnail has to be 256px by 220px. The image should use the webp format.
-* `board`: a relative path to the main image of the board. The image has to be around the 1000px by 1000px (depending on the board ration). The image should use the webp format.
-* `ratio`: Optionally, provide the image ratio. The default value is 1.16. It the real ration of the board is very different the value should be set.* `losFile`: Optionally, the board can provide a static image of the line of sights for users who prefer to download and print them. The image size should have the same constraints as the `board`.
+* `board`: a relative path to the main image of the board. The image has to be around the 1000px by 1000px (depending on the board ratio). The image should use the webp format.
+* `losFile`: Optionally, the board can provide a static image of the line of sights for users who prefer to download and print them. The image size should have the same constraints as the `board`.
 * `pdf`: Optionally, the url to download the specific rules of the board. This items should be valued upon the language.
 * `title`: The readable name of the board. This items should be valued upon the language.
 * `totopic`: Optionally, an url to a topic discuting the board on The-Overlord forum. This items should be valued upon the language.
