@@ -282,8 +282,8 @@
 }
 .dialog-back:before {
     font-weight: 900;
-   font-family: "Font Awesome 5 Free";
-   content: "\f060";  
+    font-family: "Font Awesome 5 Free";
+    content: "\f060";  
 }
 .dialog-title {
     line-height: var(--header-height);
