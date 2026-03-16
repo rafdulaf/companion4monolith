@@ -441,9 +441,10 @@ var Maps = {
         }
 
         var map = Maps._getMap();
-
+        
         if (Maps.onresize)
         {
+            Maps._onResize(); // The size may have rechanged... needs to recompute the exact size
             Maps.onresize = false;
             Maps._rotate();
         }
@@ -479,18 +480,18 @@ var Maps = {
     {
     	try
     	{
+            var mapArea = $(".map-map-area");
+                
 	    	var map = Maps._getMap();
-	    	let screenHorizontal = window.screen.width / (window.screen.height - 150) > 1;
+	    	let screenHorizontal = (mapArea.width() / mapArea.height()) > 1;
 	    	let mapHorizontal = map.size[0] / map.size[1] > 1;
 	        Maps._rotation = screenHorizontal == mapHorizontal ? 
 	            (Maps._rotation == 1 || Maps._rotation == 2 ? 2 : 0) 
 	            : 
 	            (Maps._rotation == 1 || Maps._rotation == 2 ? 1 : 3);
 	        Maps.onresize = true;
-	        if (Maps.standalone)
-	    	{
-	        	Maps._rotate()
-	    	}
+        
+        	Maps._rotate()
     	}
     	catch (e)
     	{
@@ -526,10 +527,6 @@ var Maps = {
     		return;
     	}
     	
-    	
-    	let screenHorizontal = window.screen.width / (window.screen.height - 150) > 1;
-    	let mapHorizontal = map.size[0] / map.size[1] > 1;
-    	Maps._rotation = screenHorizontal == mapHorizontal ? 0 : 3;
         Maps._lastSelectedZone = null;
         Maps._hideAll();
 
@@ -540,7 +537,6 @@ var Maps = {
 	    	$('#maps').attr('title', map.description.title);
 	    	Nav.updateTitle();	    	
         }
-
 
         var id = "maps-map";
 
@@ -576,6 +572,12 @@ var Maps = {
             .html("<img class='map-bg' src='" + map.description.board + "?version=" + Version + "'/>" + "<div class='map-map-area'></div>");
             
         $("#map-map-help").append("<div class='map-map-help'></div>");
+
+        let mapArea = $(".map-map-area");
+
+        let screenHorizontal = (mapArea.width() / mapArea.height()) > 1;
+        let mapHorizontal = map.size[0] / map.size[1] >= 1;
+        Maps._rotation = screenHorizontal == mapHorizontal ? 0 : 1;
 
         Maps._rotate();
     },
