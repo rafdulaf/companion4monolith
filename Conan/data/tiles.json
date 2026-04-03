@@ -6896,7 +6896,7 @@
             "colors": ["gray"],
             "movement": "2",
             "defense": "3",
-            "attacktype": "ranged",
+            "attacktype": "contact",
             "dices": { "0": "redreroll", "1": "orangereroll", "2": "none", "3": "none" },
             "skills": { "0": "movement/blocking", "1": "attack/counterattack", "2": "none", "3": "none" },
             "tokens": [
