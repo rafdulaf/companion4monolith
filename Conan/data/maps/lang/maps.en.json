@@ -385,8 +385,8 @@
                         "title": "Ruins",
                         "description": "Moving into a Ruin costs 1 additional movement point unless the unit has Climb."
                     }, {
-                        "title": "Marsh",
-                        "description": "Characters without Swimming must spend 1 additional movement point to move out of a Marsh area."
+                        "title": "Water",
+                        "description": "Units without Swimming who enter a water area immediately die. Swimming units cannot make Ranged attacks."
                     }, {
                         "title": "Cliffs",
                         "description": "Characters without Fly cannot access these areas."
