@@ -385,8 +385,8 @@
                         "title": "Ruines",
                         "description": "Entrer dans une zone de ruines coûte 1 point de mouvement supplémentaire, sauf avec la compétence Escalade."
                     }, {
-                        "title": "Marais",
-                        "description": "Sortir d'une zone d'eau stagnante coûte 1 point de mouvement supplémentaire, sauf avec la compétence Natation."
+                        "title": "Eau",
+                        "description": "Une unité sans la compétence Natation entrant dans une zone d’eau meurt immédiatement. Les unités avec Natation ne peuvent pas réaliser d’attaques à distance quand elles nagent."
                     }, {
                         "title": "Parois abruptes",
                         "description": "Seuls les personnages munis de la compétence Vol ont accès à ces zones."
