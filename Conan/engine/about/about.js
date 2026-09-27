@@ -173,6 +173,16 @@ var About = {
     	
     	return value;
     },
+    
+    setPreference: function(id, value)
+    {
+        About._customPrefs.forEach(function (p){
+            if (p.id == id)
+            {
+                localStorage.setItem(Application + "_UserPref_" + p.id, value);
+            }
+        });
+    },
 
     _preferences: function()
     {
@@ -319,8 +329,8 @@ var About = {
     },
 
     hideActionToast: function() {
-        $(".toast-action").css("opacity", "0");
-        window.setTimeout(function() { $(".toast-action").remove(); }, 1000);
+        $(".toast-action-wrapper").removeClass("show");
+        window.setTimeout(function() { $(".toast-action-wrapper").remove(); }, 1000);
     },
     actionToast: function (icon, text, actions) {
         var actionHTML = "<div class=\"toast-action-act\">";
@@ -335,8 +345,8 @@ var About = {
             iconHTML += "<div class=\"toast-action-icon " + icon + "\"></div>"
         }
 
-        $(document.body).append("<div class=\"toast-action\" style=\"opacity: 0;\">" + iconHTML + "<div class=\"toast-action-text\">" + text + "</div>" + actionHTML + "</div>");
-        window.setTimeout(function() { $(".toast-action").css("opacity", "0.98"); }, 1);
+        $(document.body).append("<div class=\"toast-action-wrapper\"><div class=\"toast-action\">" + iconHTML + "<div class=\"toast-action-text\">" + text + "</div>" + actionHTML + "</div></div>");
+        window.setTimeout(function() { $(".toast-action-wrapper").addClass("show", "0.98"); }, 1);
     },
 
     _custom: function()

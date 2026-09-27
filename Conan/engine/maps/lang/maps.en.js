@@ -10,6 +10,14 @@ Maps._i18n = {
     'pdf': "Download the board rules",
     'start': "Click in an area to see the lines of sight",
     'legend': "Legend",
+    
+    'switchpref': "Display all boards even those I do not own",
+    'switchprefoff': "Display only boards that I own",
+    'showMinePrefChanged_true': "Do you want to see only the boards you own (My Game and Expansions menu)?<br/>The application will be reloaded to apply this change.",
+    'showMinePrefChanged_false': "Do you want to see all boards, even those you do not own (My Game and Expansions menu)?<br/>The application will be reloaded to apply this change.",
+    'showMinePrefChanged_Validate': "Ok",
+    'showMinePrefChanged_Cancel': "Cancel",
+
     'clickhelp1': "Blue area is the selected area. It has has line of sight to all colored areas.",
     'clickhelp4': "Yellow areas are below the blue area: Ranged attacks to these areas get an Elevation bonus of 1 yellow die.",
     'clickhelp6': "Green areas are at the same level as the blue area.",

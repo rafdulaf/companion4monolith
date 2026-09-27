@@ -30,6 +30,7 @@ var Maps = {
 
         Maps.externalInit();
         
+        Maps.ownAllMaps = true;
 		for (var i in Encyclopedia.maps.list)
 		{
 			var map = Encyclopedia.maps.list[i];
@@ -37,6 +38,7 @@ var Maps = {
             if (!About._hasExpansion(map.description.origins, true))
             {
                 map.discard = true;
+                Maps.ownAllMaps = false;
             }
 
             if (!map.composed)
@@ -45,6 +47,13 @@ var Maps = {
             	Maps._check(map);
             }
 		}
+        
+        if (!Maps.ownAllMaps)
+        {
+            const v = About.getPreference("maps-showmine") === "true" ? "" : "off";
+            Nav.addAction("maps", Maps._i18n['switchpref' + v], "maps-icon-switchpref" + v, "switchpref", Maps._switchPref);
+            Nav.hideAction("maps", "switchpref");
+        }
         
 		Maps._displayIndex();
 
@@ -371,9 +380,10 @@ var Maps = {
 	_displayIndex: function()
 	{
 		Maps._hideAll();
-		
+
 		if (!Maps.standalone)
 		{
+            Nav.showAction("maps", "switchpref");
 			Nav.hideAction("maps", "pdf");
 			Nav.hideAction("maps", "forum");
 			Nav.hideAction("maps", "losfile");
@@ -449,6 +459,7 @@ var Maps = {
             Maps._rotate();
         }
 
+        Nav.hideAction("maps", "switchpref");
         if ((slick.currentSlide || 0) == 0)
         {
             Nav.hideAction("maps", "pdf");
@@ -868,6 +879,20 @@ var Maps = {
 
         window.open(map.description.losFile + "?version=" + Version);
     },
+    
+    _switchPref: function() 
+    {
+        const newValue = About.getPreference("maps-showmine") === 'true' ? 'false' : 'true';
+        
+        About.actionToast("maps-showmineswitch", Maps._i18n['showMinePrefChanged_' + newValue], [{ text: Maps._i18n['showMinePrefChanged_Validate'], act: "Maps._switchPrefValidate()" }, { text: Maps._i18n['showMinePrefChanged_Cancel'], act: "About.hideActionToast()" }]);
+    },
+
+    _switchPrefValidate: function()
+    {
+        const newValue = About.getPreference("maps-showmine") === 'true' ? 'false' : 'true';
+        About.setPreference("maps-showmine", newValue);
+        window.location.reload(true);
+    }, 
 
     _legend: function()
     {

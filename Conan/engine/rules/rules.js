@@ -1,7 +1,7 @@
 var Rules = {
     init: function()
     {
-		About.addPreference("rules-showmine", Rules._i18n.menu, Rules._i18n.userpref_showall, 'boolean', 'true');
+		About.addPreference("rules-showmine", Rules._i18n.menu, Rules._i18n.userpref_showall, 'boolean', 'false');
 
 		Rules._lastSearch = "";
 
@@ -13,9 +13,15 @@ var Rules = {
             id: "skills", 
             download: Encyclopedia.skills.link
         }];
+        let ownAllRules = true;
         for (var i = 0; i < Encyclopedia.rules.list.length; i++)
         {
-            if (About._hasExpansion(Encyclopedia.rules.list[i].origins) || window.About && About.getPreference("rules-showmine") === "false")
+            const hasExpansion = About._hasExpansion(Encyclopedia.rules.list[i].origins);
+            if (!hasExpansion)
+            {
+                ownAllRules = false;
+            }
+            if (hasExpansion || window.About && About.getPreference("rules-showmine") === "false")
             {
                 Rules._rules.push({
                     label: Encyclopedia.rules.list[i].title,
@@ -33,7 +39,8 @@ var Rules = {
 
         for (var i = 0; i < Encyclopedia.rules.list.length; i++)
         {
-            if (About._hasExpansion(Encyclopedia.rules.list[i].origins) || window.About && About.getPreference("rules-showmine") === "false")
+            const hasExpansion = About._hasExpansion(Encyclopedia.rules.list[i].origins);
+            if (hasExpansion || window.About && About.getPreference("rules-showmine") === "false")
             {
                 Nav.addFloatingAction(Encyclopedia.rules.list[i].id, Rules._i18n['viewer-search'], "rules-search-icon", "search", Rules._search);
                 $("#" + Encyclopedia.rules.list[i].id).html("<div class='zoom0 rules-viewer'><div>" + Rules._createViewer("data/rules/books/" + Encyclopedia.rules.list[i].id + "/" + Language, Encyclopedia.rules.list[i].pages, Encyclopedia.rules.list[i].pageOneAtLeft) + "</div></div>");
@@ -45,6 +52,11 @@ var Rules = {
         Nav.addAction("rules", Rules._i18n['viewer-zoomin'], "rules-zoomin-icon", "zoomin", Rules._zoomIn);
         Nav.addAction("rules", Rules._i18n['viewer-zoomout'], "rules-zoomout-icon", "zoomout", Rules._zoomOut);
         Nav.addAction("rules", Rules._i18n['viewer-download'], "rules-download-icon", "download", Rules._download);
+        if (!ownAllRules)
+        {
+            const v = About.getPreference("rules-showmine") === "true" ? "" : "off";
+            Nav.addAction("rules", Rules._i18n['viewer-switchpref' + v], "rules-switchpref" + v + "-icon", "switchpref", Rules._switchPref);
+        }
         Rules._onChange();
 
         About.addCopyright(Rules._i18n.menu, Rules._i18n.copyright);
@@ -192,6 +204,20 @@ var Rules = {
     {
         window.open(Rules._rules[Rules._currentSlide].download);
     },
+    
+    _switchPref: function() 
+    {
+        const newValue = About.getPreference("rules-showmine") === 'true' ? 'false' : 'true';
+        
+        About.actionToast("rules-showmineswitch", Rules._i18n['showMinePrefChanged_' + newValue], [{ text: Rules._i18n['showMinePrefChanged_Validate'], act: "Rules._switchPrefValidate()" }, { text: Rules._i18n['showMinePrefChanged_Cancel'], act: "About.hideActionToast()" }]);
+    },
+
+    _switchPrefValidate: function()
+    {
+        const newValue = About.getPreference("rules-showmine") === 'true' ? 'false' : 'true';
+        About.setPreference("rules-showmine", newValue);
+        window.location.reload(true);
+    }, 
 
     _search: function()
     {
