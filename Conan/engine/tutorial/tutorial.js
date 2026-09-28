@@ -3,7 +3,10 @@ Tutorial = {
         if (!localStorage.getItem(Application + "_Extensions"))
         {
             window.setTimeout(function() {
-                About.actionToast("tutorial-extensions", Tutorial._i18n.extensions_message, [{ text: Tutorial._i18n.extensions_continue, act: "Tutorial._ignoreCustom()" }, { text: Tutorial._i18n.extensions_act, act: "Tutorial._custom()" }]);
+                About.actionToast("tutorial-extensions", Tutorial._i18n.extensions_message, [
+                    { text: Tutorial._i18n.extensions_act, act: "Tutorial._custom()" },
+                    { text: Tutorial._i18n.extensions_continue, act: "Tutorial._ignoreCustom()" } 
+                ]);
             }, 1000);
         }
         else if (!localStorage.getItem(Application + "_Audience"))
@@ -15,7 +18,10 @@ Tutorial = {
         else if (!localStorage.getItem(Application + "_Install"))
         {
             window.setTimeout(function() {
-                About.actionToast("tutorial-install", Tutorial._i18n.install_message, [, { text: Tutorial._i18n.install_ignore, act: "Tutorial._ignoreInstall()" }, { text: Tutorial._i18n.install_ok, act: "Tutorial._install()" }]);
+                About.actionToast("tutorial-install", Tutorial._i18n.install_message, [
+                    { text: Tutorial._i18n.install_ok, act: "Tutorial._install()" },
+                    { text: Tutorial._i18n.install_ignore, act: "Tutorial._ignoreInstall()" } 
+                ]);
             }, 1000);
         }
     },

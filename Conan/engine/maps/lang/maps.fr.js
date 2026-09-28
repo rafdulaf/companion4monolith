@@ -13,10 +13,12 @@ Maps._i18n = {
     
     'switchpref': "Afficher tous les plateaux même ceux que je ne possède pas",
     'switchprefoff': "Voir seulement les plateaux que je possède",
-    'showMinePrefChanged_true': "Souhaitez-vous ne voir que les plateaux que vous possédez (menu Mon jeu et extensions) ?<br/>L'application sera rechargée pour appliquer ce changement.",
-    'showMinePrefChanged_false': "Souhaitez-vous voir tous les plateaux, même ceux que vous ne possédez pas (menu Mon jeu et extensions) ?<br/>L'application sera rechargée pour appliquer ce changement.",
-    'showMinePrefChanged_Validate': "Ok",
-    'showMinePrefChanged_Cancel': "Annuler",
+    'showMinePrefChanged_true1': "Souhaitez-vous ne voir que les plateaux que vous possédez (",
+    'showMinePrefChanged_false1': "Souhaitez-vous voir tous les plateaux, même ceux que vous ne possédez pas (",
+    'showMinePrefChanged2': "menu Mon jeu et extensions",
+    'showMinePrefChanged3': ") ?<br/>L'application sera rechargée pour appliquer ce changement.",
+    'showMinePrefChanged_Validate': "Oui",
+    'showMinePrefChanged_Cancel': "Non",
     
     'clickhelp1': "La zone actuellement selectionnée est en bleu et offre des lignes de vues vers toutes les zones colorées.",
     'clickhelp4': "Les zones colorées en jaune sont en contrebas et donnent le bonus d'élévation d'un dé jaune.",

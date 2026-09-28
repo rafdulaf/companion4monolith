@@ -209,7 +209,10 @@ var Rules = {
     {
         const newValue = About.getPreference("rules-showmine") === 'true' ? 'false' : 'true';
         
-        About.actionToast("rules-showmineswitch", Rules._i18n['showMinePrefChanged_' + newValue], [{ text: Rules._i18n['showMinePrefChanged_Validate'], act: "Rules._switchPrefValidate()" }, { text: Rules._i18n['showMinePrefChanged_Cancel'], act: "About.hideActionToast()" }]);
+        About.actionToast("rules-showmineswitch", Rules._i18n['showMinePrefChanged_' + newValue + '1'] + "<a href=\"javascript:void(0);\" onclick=\"About._custom()\">" + Rules._i18n['showMinePrefChanged2'] + "</a>" + Rules._i18n['showMinePrefChanged3'], [
+            { text: Rules._i18n['showMinePrefChanged_Validate'], act: "Rules._switchPrefValidate()" }, 
+            { text: Rules._i18n['showMinePrefChanged_Cancel'], act: "About.hideActionToast()" }
+        ]);
     },
 
     _switchPrefValidate: function()

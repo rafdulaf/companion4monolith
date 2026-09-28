@@ -13,10 +13,12 @@ Maps._i18n = {
     
     'switchpref': "Display all boards even those I do not own",
     'switchprefoff': "Display only boards that I own",
-    'showMinePrefChanged_true': "Do you want to see only the boards you own (My Game and Expansions menu)?<br/>The application will be reloaded to apply this change.",
-    'showMinePrefChanged_false': "Do you want to see all boards, even those you do not own (My Game and Expansions menu)?<br/>The application will be reloaded to apply this change.",
-    'showMinePrefChanged_Validate': "Ok",
-    'showMinePrefChanged_Cancel': "Cancel",
+    'showMinePrefChanged_true1': "Do you want to see only the boards you own (",
+    'showMinePrefChanged_false1': "Do you want to see all boards, even those you do not own (",
+    'showMinePrefChanged2': "My Game and Expansions menu",
+    'showMinePrefChanged3': ")?<br/>The application will be reloaded to apply this change.",
+    'showMinePrefChanged_Validate': "Yes",
+    'showMinePrefChanged_Cancel': "No",
 
     'clickhelp1': "Blue area is the selected area. It has has line of sight to all colored areas.",
     'clickhelp4': "Yellow areas are below the blue area: Ranged attacks to these areas get an Elevation bonus of 1 yellow die.",

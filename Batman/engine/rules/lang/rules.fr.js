@@ -15,10 +15,12 @@ Rules._i18n = {
     'search-inputPh': "Entrez un mot clé à chercher (3 caractères minimum)",
     'search-loose': "Aucun résultat ne correspond au mot clé saisi",
 
-    'showMinePrefChanged_true': "Souhaitez-vous ne voir que les livres de règles que vous possédez (menu Mon jeu et extensions) ?<br/>L'application sera rechargée pour appliquer ce changement.",
-    'showMinePrefChanged_false': "Souhaitez-vous voir tous les livres de règles, même ceux que vous ne possédez pas (menu Mon jeu et extensions) ?<br/>L'application sera rechargée pour appliquer ce changement.",
-    'showMinePrefChanged_Validate': "Ok",
-    'showMinePrefChanged_Cancel': "Annuler",
+    'showMinePrefChanged_true1': "Souhaitez-vous ne voir que les livres de règles que vous possédez (",
+    'showMinePrefChanged_false1': "Souhaitez-vous voir tous les livres de règles, même ceux que vous ne possédez pas (",
+    'showMinePrefChanged2': "menu Mon jeu et extensions",
+    'showMinePrefChanged3': ") ?<br/>L'application sera rechargée pour appliquer ce changement.",
+    'showMinePrefChanged_Validate': "Oui",
+    'showMinePrefChanged_Cancel': "Non",
     
     'copyright': "Les règles proposés sont basées sur les règles officielles et leurs compléments mais ont été en partie reformulées.",
     

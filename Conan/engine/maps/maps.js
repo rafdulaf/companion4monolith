@@ -884,7 +884,10 @@ var Maps = {
     {
         const newValue = About.getPreference("maps-showmine") === 'true' ? 'false' : 'true';
         
-        About.actionToast("maps-showmineswitch", Maps._i18n['showMinePrefChanged_' + newValue], [{ text: Maps._i18n['showMinePrefChanged_Validate'], act: "Maps._switchPrefValidate()" }, { text: Maps._i18n['showMinePrefChanged_Cancel'], act: "About.hideActionToast()" }]);
+        About.actionToast("maps-icon-switchpref", Maps._i18n['showMinePrefChanged_' + newValue + '1'] + "<a href=\"javascript:void(0);\" onclick=\"About._custom()\">" + Maps._i18n['showMinePrefChanged2'] + "</a>" + Maps._i18n['showMinePrefChanged3'], [
+                { text: Maps._i18n['showMinePrefChanged_Validate'], act: "Maps._switchPrefValidate()" }, 
+                { text: Maps._i18n['showMinePrefChanged_Cancel'], act: "About.hideActionToast()" }
+        ]);
     },
 
     _switchPrefValidate: function()

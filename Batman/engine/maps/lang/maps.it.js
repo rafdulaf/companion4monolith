@@ -13,10 +13,12 @@ Maps._i18n = {
 
     'switchpref': "Visualizza tutte le mappe anche quelle che non possiedo",
     'switchprefoff': "Visualizza solo le mappe che possiedo",
-    'showMinePrefChanged_true': "Vuoi vedere solo le mappe che possiedi (menu Gioco ed espansioni)?<br/>L'applicazione verrà ricaricata per applicare questa modifica.",
-    'showMinePrefChanged_false': "Vuoi vedere tutte le mappe, anche quelle che non possiedi (menu Gioco ed espansioni)?<br/>L'applicazione verrà ricaricata per applicare questa modifica.",
-    'showMinePrefChanged_Validate': "Ok",
-    'showMinePrefChanged_Cancel': "Annulla",
+    'showMinePrefChanged_true1': "Vuoi vedere solo le mappe che possiedi (",
+    'showMinePrefChanged_false1': "Vuoi vedere tutte le mappe, anche quelle che non possiedi (",
+    'showMinePrefChanged2': "menu Gioco ed espansioni",
+    'showMinePrefChanged3': ") ?<br/>L'applicazione verrà ricaricata per applicare questa modifica.",
+    'showMinePrefChanged_Validate': "Sì",
+    'showMinePrefChanged_Cancel': "No",
     
     'clickhelp1': "Le aree blu sono le aree selezionate. Hanno linea di vista libera verso tutte le aree colorate.",
     'clickhelp4': "Le aree gialle sono un livello superiore alle aree blu: Attacchi a distanza da queste aree guadagnano un bonus Elevazione di +1 Dado giallo.",
