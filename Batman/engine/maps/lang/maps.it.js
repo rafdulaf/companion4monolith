@@ -10,6 +10,14 @@ Maps._i18n = {
     'pdf': "Scarica le regole delle mappa",
     'start': "Click in un'area per visualizzare le linee di vista",
     'legend': "Legenda",
+
+    'switchpref': "Visualizza tutte le mappe anche quelle che non possiedo",
+    'switchprefoff': "Visualizza solo le mappe che possiedo",
+    'showMinePrefChanged_true': "Vuoi vedere solo le mappe che possiedi (menu Gioco ed espansioni)?<br/>L'applicazione verrà ricaricata per applicare questa modifica.",
+    'showMinePrefChanged_false': "Vuoi vedere tutte le mappe, anche quelle che non possiedi (menu Gioco ed espansioni)?<br/>L'applicazione verrà ricaricata per applicare questa modifica.",
+    'showMinePrefChanged_Validate': "Ok",
+    'showMinePrefChanged_Cancel': "Annulla",
+    
     'clickhelp1': "Le aree blu sono le aree selezionate. Hanno linea di vista libera verso tutte le aree colorate.",
     'clickhelp4': "Le aree gialle sono un livello superiore alle aree blu: Attacchi a distanza da queste aree guadagnano un bonus Elevazione di +1 Dado giallo.",
     'clickhelp6': "Le aree verdi sono allo stesso livello delle aree blu.",

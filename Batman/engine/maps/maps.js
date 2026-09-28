@@ -1,19 +1,19 @@
 var Maps = {
     _applySubHash: function(hash) {
-        try
-        {
-            Maps._displayMap(hash);
-        }
-        catch (e)
-        {
-            // non existing map
-        }
+    	try
+    	{
+    		Maps._displayMap(hash);
+    	}
+    	catch (e)
+    	{
+    		// non existing map
+    	}
     },
 
-    init: function()
-    {
-        About.addPreference("maps-showmine", Maps._i18n.menu, Maps._i18n.userpref_showall, 'boolean', 'false');
-        
+	init: function()
+	{
+		About.addPreference("maps-showmine", Maps._i18n.menu, Maps._i18n.userpref_showall, 'boolean', 'false');
+		
         Nav.addIcon(Maps._i18n.menu, "maps-icon", "maps", Maps._applySubHash);
 
         Nav.addAction("maps", Maps._i18n.legend, "maps-icon-legend", "legend", Maps._legend );
@@ -30,38 +30,47 @@ var Maps = {
 
         Maps.externalInit();
         
-        for (var i in Encyclopedia.maps.list)
-        {
-            var map = Encyclopedia.maps.list[i];
+        Maps.ownAllMaps = true;
+		for (var i in Encyclopedia.maps.list)
+		{
+			var map = Encyclopedia.maps.list[i];
 
             if (!About._hasExpansion(map.description.origins, true))
             {
                 map.discard = true;
+                Maps.ownAllMaps = false;
             }
 
             if (!map.composed)
             {
-                // Composed maps can have errors since some zone can be removed during composition
-                Maps._check(map);
+            	// Composed maps can have errors since some zone can be removed during composition
+            	Maps._check(map);
             }
+		}
+        
+        if (!Maps.ownAllMaps)
+        {
+            const v = About.getPreference("maps-showmine") === "true" ? "" : "off";
+            Nav.addAction("maps", Maps._i18n['switchpref' + v], "maps-icon-switchpref" + v, "switchpref", Maps._switchPref);
+            Nav.hideAction("maps", "switchpref");
         }
         
-        Maps._displayIndex();
+		Maps._displayIndex();
 
         About.addCopyright(Maps._i18n.menu, Maps._i18n.copyright + Maps._copyright());
-    },
-    
-    standalone: false,
-    
-    externalInit: function()
-    {
+	},
+	
+	standalone: false,
+	
+	externalInit: function()
+	{
         Maps._rotation = 0;
         
         Maps._addCompositionsToList();
 
         $(window).on('resize', Maps._onResize);
         $(window).on('orientationchange', Maps._onResize);
-    },
+	},
     
     _findMapById: function(id) {
         for (var i in Encyclopedia.maps.list)
@@ -312,10 +321,10 @@ var Maps = {
         return newLinks;
     },
 
-    _hideAll: function()
-    {
-        $("#maps > .map-card").hide();
-    },
+	_hideAll: function()
+	{
+		$("#maps > .map-card").hide();
+	},
 
     _check: function(map)
     {
@@ -368,69 +377,70 @@ var Maps = {
         }
     },
 
-    _displayIndex: function()
-    {
-        Maps._hideAll();
-        
-        if (!Maps.standalone)
-        {
-            Nav.hideAction("maps", "pdf");
-            Nav.hideAction("maps", "forum");
-            Nav.hideAction("maps", "losfile");
-            Nav.hideAction("maps", "rotate");
-            Nav.hideAction("maps", "legend");
-            
-            $('#maps').attr('title', Maps._i18n.menu);
-            Nav.updateTitle();
-        }
+	_displayIndex: function()
+	{
+		Maps._hideAll();
 
-        var id = "maps-index";
+		if (!Maps.standalone)
+		{
+            Nav.showAction("maps", "switchpref");
+			Nav.hideAction("maps", "pdf");
+			Nav.hideAction("maps", "forum");
+			Nav.hideAction("maps", "losfile");
+			Nav.hideAction("maps", "rotate");
+			Nav.hideAction("maps", "legend");
+			
+			$('#maps').attr('title', Maps._i18n.menu);
+			Nav.updateTitle();
+		}
 
-        var index = $('#' + id);
+		var id = "maps-index";
 
-        if (index.length == 0)
-        {
-            var code = "";
-            for (var i in Encyclopedia.maps.list)
-            {
+		var index = $('#' + id);
+
+		if (index.length == 0)
+		{
+			var code = "";
+			for (var i in Encyclopedia.maps.list)
+			{
                 var map = Encyclopedia.maps.list[i];
                 if (!map.discard || window.About && About.getPreference("maps-showmine") === "false")
                 {
-                    var imgCode = "<div class='map-index-board-image' style=\"background-image: url('" + map.description.thumbnail + "?version=" + Version + "\');\"/>"
+    				var imgCode = "<div class='map-index-board-image' style=\"background-image: url('" + map.description.thumbnail + "?version=" + Version + "\');\"/>"
                     var subtitleCode = "<div class='map-index-board-sublegend'>" + Maps._getOrigin(map) + "</div>";
-                    var titleCode = "<div class='map-index-board-legend'>" + map.description.title + "</div>";
-                    
-                    if (Maps.standalone)
-                    {
-                        code += "<li><a href=\"?id=" + map.id + "\" title=\"" + Maps._i18n.openMap + map.description.title + "\">" + imgCode + titleCode + subtitleCode + "</a></li>";
-                    }
-                    else
-                    {
-                        code += "<li><a href=\"javascript:void(0);\" title=\"" + Maps._i18n.openMap + map.description.title + "\" onclick=\"Maps._displayMap('" + map.id + "')\">" + imgCode + titleCode + subtitleCode + "</a></li>";
-                    }
+    				var titleCode = "<div class='map-index-board-legend'>" + map.description.title + "</div>";
+    				
+    				if (Maps.standalone)
+    				{
+    					code += "<li><a href=\"?id=" + map.id + "\" title=\"" + Maps._i18n.openMap + map.description.title + "\">" + imgCode + titleCode + subtitleCode + "</a></li>";
+    				}
+    				else
+    				{
+    					code += "<li><a href=\"javascript:void(0);\" title=\"" + Maps._i18n.openMap + map.description.title + "\" onclick=\"Maps._displayMap('" + map.id + "')\">" + imgCode + titleCode + subtitleCode + "</a></li>";
+    				}
                 }
-            }
+			}
 
-            $('#maps').append("<div id='" + id + "' class='map-card map-index' style='display: none'><ul>" + code + "</ul></div>");
-            index = $('#' + id);
-        }
+			$('#maps').append("<div id='" + id + "' class='map-card map-index' style='display: none'><ul>" + code + "</ul></div>");
+			index = $('#' + id);
+		}
 
-        index.show();
-    },
+		index.show();
+	},
 
     _getOrigin: function(map)
     {
-        var origin = "";
-        for (var j in Encyclopedia.expansions.list)
-        {
-            var expansion = Encyclopedia.expansions.list[j];
-            if (map.description.origins.indexOf(expansion.id) != -1)
-            {
-                if (origin) origin += " + ";
-                origin += expansion.short;
-            }
-        }
-        return origin;
+		var origin = "";
+		for (var j in Encyclopedia.expansions.list)
+		{
+			var expansion = Encyclopedia.expansions.list[j];
+			if (map.description.origins.indexOf(expansion.id) != -1)
+			{
+				if (origin) origin += " + ";
+				origin += expansion.short;
+			}
+		}
+		return origin;
     },
 
     _onSetPosition: function(event, slick)
@@ -449,6 +459,7 @@ var Maps = {
             Maps._rotate();
         }
 
+        Nav.hideAction("maps", "switchpref");
         if ((slick.currentSlide || 0) == 0)
         {
             Nav.hideAction("maps", "pdf");
@@ -478,25 +489,25 @@ var Maps = {
 
     _onResize: function()
     {
-        try
-        {
+    	try
+    	{
             var mapArea = $(".map-map-area");
                 
-            var map = Maps._getMap();
-            let screenHorizontal = (mapArea.width() / mapArea.height()) > 1;
-            let mapHorizontal = map.size[0] / map.size[1] > 1;
-            Maps._rotation = screenHorizontal == mapHorizontal ? 
-                (Maps._rotation == 1 || Maps._rotation == 2 ? 2 : 0) 
-                : 
-                (Maps._rotation == 1 || Maps._rotation == 2 ? 1 : 3);
-            Maps.onresize = true;
+	    	var map = Maps._getMap();
+	    	let screenHorizontal = (mapArea.width() / mapArea.height()) > 1;
+	    	let mapHorizontal = map.size[0] / map.size[1] > 1;
+	        Maps._rotation = screenHorizontal == mapHorizontal ? 
+	            (Maps._rotation == 1 || Maps._rotation == 2 ? 2 : 0) 
+	            : 
+	            (Maps._rotation == 1 || Maps._rotation == 2 ? 1 : 3);
+	        Maps.onresize = true;
         
-            Maps._rotate()
-        }
-        catch (e)
-        {
-            // Nothing
-        }
+        	Maps._rotate()
+    	}
+    	catch (e)
+    	{
+    		// Nothing
+    	}
     },
 
     _getMap: function()
@@ -515,27 +526,27 @@ var Maps = {
 
     _displayMap: function(mapId)
     {
-        Maps._currentMap = mapId;
-        
-        try
-        {
-            var map = Maps._getMap();
-        }
-        catch (e)
-        {
-            Maps._displayIndex();
-            return;
-        }
-        
+    	Maps._currentMap = mapId;
+    	
+    	try
+    	{
+    		var map = Maps._getMap();
+    	}
+    	catch (e)
+    	{
+    		Maps._displayIndex();
+    		return;
+    	}
+    	
         Maps._lastSelectedZone = null;
         Maps._hideAll();
 
         if (!Maps.standalone)
         {
-            Maps._onSetPosition(null, 0);
+	        Maps._onSetPosition(null, 0);
 
-            $('#maps').attr('title', map.description.title);
-            Nav.updateTitle();          
+	    	$('#maps').attr('title', map.description.title);
+	    	Nav.updateTitle();	    	
         }
 
         var id = "maps-map";
@@ -551,20 +562,20 @@ var Maps = {
         
         if (!Maps.standalone)
         {
-            var tabs = [{label: Maps._i18n['los'], id: "map-map-map"}];
-            
-            var rules = map.description.rules;
-            if (rules)
-            {
-                tabs.push({label: Maps._i18n['help'], id: "map-map-help"});
-            }
-            
-            Nav.createTabs(id, tabs, Maps._onSetPosition, { label: Maps._i18n.back, action: "Maps._displayIndex()", cls: "map-back" });
+        	var tabs = [{label: Maps._i18n['los'], id: "map-map-map"}];
+        	
+        	var rules = map.description.rules;
+        	if (rules)
+        	{
+        		tabs.push({label: Maps._i18n['help'], id: "map-map-help"});
+        	}
+        	
+        	Nav.createTabs(id, tabs, Maps._onSetPosition, { label: Maps._i18n.back, action: "Maps._displayIndex()", cls: "map-back" });
         }
         else
-        {
-            mapC.append("<div id='map-map-map'></div>")
-        }
+    	{
+        	mapC.append("<div id='map-map-map'></div>")
+    	}
 
         $("#map-map-map")
             .addClass("map-map-wrapper map-map-wrapper-display-help")
@@ -834,14 +845,14 @@ var Maps = {
             var map = Encyclopedia.maps.list[i];
 
             if (map.description.copyright)
-            {
-                c += "<li>"
-                    + "<strong>" + map.description.title + "</strong>"
-                    + " " + Maps._i18n.copyright_prop
-                    + " <em>" + map.description.copyright + "</em>"
-                    + " (" + Maps._getOrigin(map) + ")"
-                    + "</li>";
-            }
+        	{
+            	c += "<li>"
+            		+ "<strong>" + map.description.title + "</strong>"
+            		+ " " + Maps._i18n.copyright_prop
+            		+ " <em>" + map.description.copyright + "</em>"
+            		+ " (" + Maps._getOrigin(map) + ")"
+            		+ "</li>";
+        	}
         }
 
         c += "</ul>";
@@ -868,6 +879,20 @@ var Maps = {
 
         window.open(map.description.losFile + "?version=" + Version);
     },
+    
+    _switchPref: function() 
+    {
+        const newValue = About.getPreference("maps-showmine") === 'true' ? 'false' : 'true';
+        
+        About.actionToast("maps-showmineswitch", Maps._i18n['showMinePrefChanged_' + newValue], [{ text: Maps._i18n['showMinePrefChanged_Validate'], act: "Maps._switchPrefValidate()" }, { text: Maps._i18n['showMinePrefChanged_Cancel'], act: "About.hideActionToast()" }]);
+    },
+
+    _switchPrefValidate: function()
+    {
+        const newValue = About.getPreference("maps-showmine") === 'true' ? 'false' : 'true';
+        About.setPreference("maps-showmine", newValue);
+        window.location.reload(true);
+    }, 
 
     _legend: function()
     {

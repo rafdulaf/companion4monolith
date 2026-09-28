@@ -33,6 +33,14 @@
    font-weight: 900;
    content: "\f56d";  
 }
+.maps-icon-switchpref:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f06e";  
+}
+.maps-icon-switchprefoff:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f070";  
+}
 
 
 #maps {
