@@ -225,7 +225,7 @@ var EncyclopediaTokens = {
         return tokens;
     },
 
-    openToken: function(id) {
+    openToken: async function(id) {
         var tokens = EncyclopediaTokens._findTokensById(id);
         var displayTokens = [];
 
@@ -290,7 +290,28 @@ var EncyclopediaTokens = {
         
         var equipments = EncyclopediaEquipments._findEquipmentsByToken(token.id).map(s => EncyclopediaEquipments._linkToEquipment(s.id)).join(", ");
 
-        Nav.dialog(token.name || "",
+        let altTitle = "";
+        if (Language2 && Language2 != Language)
+        {
+            try
+            {
+                if (!EncyclopediaTokens._secondaryData)
+                {
+                    EncyclopediaTokens._secondaryData = await Utils.loadJSON("data/tokens/lang/tokens." + Language2 + ".json");
+                }
+                let title2 = EncyclopediaTokens._secondaryData.list[token.id].name;
+                if (token.name != title2)
+                {
+                    altTitle = " / " + title2;
+                }
+            }
+            catch (e)
+            {
+                console.error("Cannot download the " + Language2 + " file of tokens", e);
+            }
+        }
+
+        Nav.dialog((token.name || "") + altTitle,
             "<div class='tokendetails'>"
                 + "<div class='minwidth'></div>"
                 + "<div class='from'>" + EncyclopediaTokens._i18n.from + " "
