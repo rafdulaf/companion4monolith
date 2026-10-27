@@ -168,7 +168,7 @@
                         "description": "Un personaggio che ha l'abilità Nuotare può attraversare le aree d'acqua prive di piroghe."
                     }, {
                         "title": "Saltare",
-                        "description": "Un personaggio con l'abilità Saltare può saltare tra le aree indicate sul tabellone. Se un Eroe fallisce il suo tentativo di salto, il suo movimento termina nell'area di partenza del salto."
+                        "description": "Un personaggio con l'abilità Saltare può saltare tra le aree indicate nello scenario. Se un Eroe fallisce il suo tentativo di salto, il suo movimento termina nell'area di partenza del salto."
                     }
                 ],
                 "totopic": "https://the-overlord.net/index.php?/topic/36-khitai-market/"

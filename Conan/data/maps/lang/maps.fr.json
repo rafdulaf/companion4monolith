@@ -168,7 +168,7 @@
                         "description": "Un personnage disposant de la compétence Natation peut traverser les zones d'eau sans pirogue."
                     }, {
                         "title": "Saut",
-                        "description": "Un personnage ayant la compétence Saut peut franchir les zones marquées sur le plan. Si un héros échoue dans sa tentative de saut, son mouvement est perdu et il reste sur la zone de départ du saut."
+                        "description": "Un personnage ayant la compétence Saut peut franchir les zones indiquées dans le scénario. Si un héros échoue dans sa tentative de saut, son mouvement est perdu et il reste sur la zone de départ du saut."
                     }
                 ],
                 "totopic": "https://the-overlord.com/index.php?/topic/804-khitai-carte-march%C3%A9/"

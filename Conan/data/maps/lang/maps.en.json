@@ -168,7 +168,7 @@
                         "description": "A character with Swimming may move through the areas of water next to the cemetery."
                     }, {
                         "title": "Leap",
-                        "description": "A character with Leap may leap over the areas marked with the Leap icon . If a hero fails to leap, the character remains in its area."
+                        "description": "A character with Leap may leap over the areas marked with the Leap icon in the scenario. If a hero fails to leap, the character remains in its area."
                     }
                 ],
                 "totopic": "https://the-overlord.net/index.php?/topic/36-khitai-market/"
