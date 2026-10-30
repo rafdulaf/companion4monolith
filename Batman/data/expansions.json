@@ -1,23 +1,17 @@
 {
     "types": [
         {
-            "id": "box",
-            "column": "left"
+            "id": "box"
         }, {
-            "id": "season1-expansions",
-            "column": "left"
+            "id": "season1-expansions"
         }, {
-            "id": "season2-expansions",
-            "column": "left"
+            "id": "season2-expansions"
         }, {
-            "id": "season3-expansions",
-            "column": "left"
+            "id": "season3-expansions"
         }, {
-            "id": "picking-zone-left",
-            "column": "left"
+            "id": "picking-zone-left"
         }, {
-            "id": "picking-zone-right",
-            "column": "right"
+            "id": "picking-zone-right"
         }
     ],
 

@@ -1,27 +1,20 @@
 {
     "types": [
         {
-            "id": "corebox",
-            "column": "left"
+            "id": "corebox"
         }, {
-            "id": "thematic",
-            "column": "left"
+            "id": "thematic"
         }, {
             "id": "other",
-            "column": "right",
             "sort": true
         }, {
-            "id": "books",
-            "column": "left"
+            "id": "books"
         }, {
-            "id": "artists",
-            "column": "right"
+            "id": "artists"
         }, {
-            "id": "decoration",
-            "column": "left"
+            "id": "decoration"
         }, {
-            "id": "misc",
-            "column": "right"
+            "id": "misc"
         }
     ],
 
