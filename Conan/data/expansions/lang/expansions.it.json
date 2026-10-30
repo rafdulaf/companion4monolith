@@ -77,6 +77,15 @@
             "title": "Vermi della Terra",
             "short": "Vermi della Terra"
         },
+        "tortage": {
+            "title": "Tortage",
+            "short": "Tortage"
+        },
+        "zamora": {
+            "title": "Zamora",
+            "short": "Zamora"
+        },
+
         "crossbowmen": {
             "title": "Balestrieri",
             "short": "Balestrieri"
@@ -121,9 +130,17 @@
             "title": "Tigre dai denti a sciabola",
             "short": "Tigre denti sciabola"
         },
+        "origins": {
+            "title": "TODO TRANSLATE Origins",
+            "short": "TODO TRANSLATE Origins"
+        },
+        "king-conan-on-his-throne": {
+            "title": "TODO TRANSLATE King Conan on his throne",
+            "short": "TODO TRANSLATE King Conan Throne"
+        },
 
         "campaignbook": {
-            "title": "Campagna - Il Diavolo di ferro",
+            "title": "Il Diavolo di ferro",
             "short": "Diavolo di ferro"
         }, 
         "setbook": {
@@ -133,6 +150,14 @@
         "tomeofskelos": {
             "title": "Libro di Skelos",
             "short": "Libro di Skelos"
+        },
+        "talesofhighadventure": {
+            "title": "TODO TRANSLATE Tales of High Adventure",
+            "short": "TODO TRANSLATE Tales of High Adventure"
+        },
+        "chroniclesofthefreecompanions": {
+            "title": "TODO TRANSLATE Chronicles of the Free Companions",
+            "short": "TODO TRANSLATE Chronicles of the Free Companions"
         },
 
         "bbox": {
