@@ -4590,6 +4590,74 @@
         },
 
         {
+            "id": "Beach",
+            "description": {
+                "version": "1.0",
+                "origins": ["tortage"],
+                "copyright": "Monolith",
+                "rules": [
+                ],
+                "thumbnail": "data/maps/data/Beach/thumb.webp",
+                "board": "data/maps/data/Beach/board.webp",
+                "losFile": "data/maps/data/Beach/los-v1.webp"
+            },
+            "size": [1000, 1000],
+            "zones": {
+            }
+        },
+
+        {
+            "id": "Tortage",
+            "description": {
+                "version": "1.0",
+                "origins": ["tortage"],
+                "copyright": "Monolith",
+                "rules": [
+                ],
+                "thumbnail": "data/maps/data/Tortage/thumb.webp",
+                "board": "data/maps/data/Tortage/board.webp",
+                "losFile": "data/maps/data/Tortage/los-v1.webp"
+            },
+            "size": [1000, 1000],
+            "zones": {
+            }
+        },
+
+        {
+            "id": "Tower-Of-The-Elephant",
+            "description": {
+                "version": "1.0",
+                "origins": ["zamora"],
+                "copyright": "Monolith",
+                "rules": [
+                ],
+                "thumbnail": "data/maps/data/Tower-Of-The-Elephant/thumb.webp",
+                "board": "data/maps/data/Tower-Of-The-Elephant/board.webp",
+                "losFile": "data/maps/data/Tower-Of-The-Elephant/los-v1.webp"
+            },
+            "size": [1000, 1000],
+            "zones": {
+            }
+        },
+
+        {
+            "id": "Lotus-Den",
+            "description": {
+                "version": "1.0",
+                "origins": ["zamora"],
+                "copyright": "Monolith",
+                "rules": [
+                ],
+                "thumbnail": "data/maps/data/Lotus-Den/thumb.webp",
+                "board": "data/maps/data/Lotus-Den/board.webp",
+                "losFile": "data/maps/data/Lotus-Den/los-v1.webp"
+            },
+            "size": [1000, 1000],
+            "zones": {
+            }
+        },
+
+        {
             "id": "Olympus_in_Ruins",
             "description": {
                 "version": "1.0",
@@ -7462,7 +7530,7 @@
                     "onewaylinks": true
                 }
             }
-        }        
+        }
     ],
 
     "compositions": [

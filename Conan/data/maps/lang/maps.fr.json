@@ -581,7 +581,47 @@
                 ],
                 "totopic": "https://the-overlord.com/index.php?/topic/58886-mbi-salle-du-tr%C3%B4ne/"
             }
-        }        
+        },
+
+        "Beach": {
+            "description": {
+                "title": "Plage",
+                "rules": [
+                    
+                ],
+                "totopic": "TODO"
+            }
+        },
+
+        "Tortage": {
+            "description": {
+                "title": "Tortage",
+                "rules": [
+                    
+                ],
+                "totopic": "TODO"
+            }
+        },
+
+        "Tower-Of-The-Elephant": {
+            "description": {
+                "title": "Tour de l'Éléphant",
+                "rules": [
+                    
+                ],
+                "totopic": "TODO"
+            }
+        },
+
+        "Lotus-Den": {
+            "description": {
+                "title": "Salon du Lotus",
+                "rules": [
+                    
+                ],
+                "totopic": "TODO"
+            }
+        }
     },
 
     "compositions": {
