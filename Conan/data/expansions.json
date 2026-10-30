@@ -68,6 +68,12 @@
         }, {
             "id": "worms-earth",
             "type": "thematic"
+        }, {
+            "id": "tortage",
+            "type": "thematic"
+        }, {
+            "id": "zamora",
+            "type": "thematic"
         },
 
         {
@@ -103,6 +109,12 @@
         }, {
             "id": "sabretoothtiger",
             "type": "other"
+        }, {
+            "id": "origins",
+            "type": "other"
+        }, {
+            "id": "king-conan-on-his-throne",
+            "type": "other"
         },
 
         {
@@ -113,6 +125,12 @@
             "type": "books"
         }, {
             "id": "tomeofskelos",
+            "type": "books"
+        }, {
+            "id": "talesofhighadventure",
+            "type": "books"
+        }, {
+            "id": "chroniclesofthefreecompanions",
             "type": "books"
         },
 

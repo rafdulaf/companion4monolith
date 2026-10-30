@@ -77,6 +77,14 @@
             "title": "Worms of the Earth",
             "short": "Worms of the Earth"
         },
+        "tortage": {
+            "title": "Tortage",
+            "short": "Tortage"
+        },
+        "zamora": {
+            "title": "Zamora",
+            "short": "Zamora"
+        },
 
         "crossbowmen": {
             "title": "Crossbowmen",
@@ -122,9 +130,17 @@
             "title": "Sabretooth tiger",
             "short": "Sabretooth tiger"
         },
+        "origins": {
+            "title": "Origins",
+            "short": "Origins"
+        },
+        "king-conan-on-his-throne": {
+            "title": "King Conan on his throne",
+            "short": "King Conan Throne"
+        },
 
         "campaignbook": {
-            "title": "Campaign book - The Devil in Iron",
+            "title": "The Devil in Iron",
             "short": "Devil in Iron"
         }, 
         "setbook": {
@@ -134,6 +150,14 @@
         "tomeofskelos": {
             "title": "Tome of Skelos",
             "short": "Tome of Skelos"
+        },
+        "talesofhighadventure": {
+            "title": "Tales of High Adventure",
+            "short": "Tales of High Adventure"
+        },
+        "chroniclesofthefreecompanions": {
+            "title": "Chronicles of the Free Companions",
+            "short": "Chronicles of the Free Companions"
         },
 
         "bbox": {

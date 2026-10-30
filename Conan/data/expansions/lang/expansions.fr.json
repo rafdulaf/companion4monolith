@@ -77,6 +77,14 @@
             "title": "Les Vers de la Terre",
             "short": "Vers de la Terre"
         },
+        "tortage": {
+            "title": "Tortage",
+            "short": "Tortage"
+        },
+        "zamora": {
+            "title": "Zamora",
+            "short": "Zamora"
+        },
 
         "crossbowmen": {
             "title": "Arbalétriers",
@@ -122,9 +130,17 @@
             "title": "Tigre à dents de sabre",
             "short": "Tigre dents de sabre"
         },
+        "origins": {
+            "title": "Origines",
+            "short": "Origines"
+        },
+        "king-conan-on-his-throne": {
+            "title": "Roi Conan sur son trône",
+            "short": "Roi Conan Trône"
+        },
 
         "campaignbook": {
-            "title": "Livre de Campagne - La légende du diable d'Airain",
+            "title": "La légende du diable d'Airain",
             "short": "Diable d'Airain"
         }, 
         "setbook": {
@@ -134,6 +150,14 @@
         "tomeofskelos": {
             "title": "Tome de Skelos",
             "short": "Tome de Skelos"
+        },
+        "talesofhighadventure": {
+            "title": "TODO TRANSLATE Tales of High Adventure",
+            "short": "TODO TRANSLATE Tales of High Adventure"
+        },
+        "chroniclesofthefreecompanions": {
+            "title": "TODO TRANSLATE Chronicles of the Free Companions",
+            "short": "TODO TRANSLATE Chronicles of the Free Companions"
         },
 
         "bbox": {
