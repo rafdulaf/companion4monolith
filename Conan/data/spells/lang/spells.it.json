@@ -701,8 +701,7 @@
                 "textSize": 151,
                 "textInter": 72
             }        
-        }
-        ,
+        },
         "enthrallment": {
             "title": "Seduzione",
             "text": "Non puoi essere attaccato dai nemici nella tua area fino all'inizio della tuo prossimo turno o attivazione.",
@@ -710,8 +709,7 @@
                 "textSize": 139,
                 "textInter": 77
             }        
-        }
-        ,
+        },
         "eldritch_lance": {
             "title": "Lancia Arcana",
             "text": "Attacca un'unità in linea di vista; tira {dice_red}{dice_orange} e diminuisci di un (1) punto il valore di Aramtura del bersaglio. Se la potenza di attacco è maggiore della difesa, il difensore subisce un danno pari alla differenza dei due valori.",
@@ -719,8 +717,7 @@
                 "textSize": 141,
                 "textInter": 70
             }        
-        }
-        ,
+        },
         "spectral_shroud": {
             "title": "Sudario Spettrale",
             "text": "Piazza 3 segnalini {token_spectral-shroud} su questa carta (o riporta a 3 il valore). Ogni volta che subisci uno o più danni, rimuovi un segnalino {token_spectral-shroud} per evitare di subire quel danno.",
@@ -729,8 +726,7 @@
                 "textInter": 90
             },
             "clarification": "Rimuovere segnalini per evitare i danni (danni dovuti ad attacchi, cadute, indifendibili...) non è opzionale."
-        }
-        ,
+        },
         "protective_circle": {
             "title": "Cerchio Protettivo",
             "text": "I nemici non possono muoversi nella tua area o affettuare attacchi in Mischia fino al tuo prossimo turno o attivazione.",
@@ -738,6 +734,150 @@
                 "textSize": 146,
                 "textInter": 68
             }        
+        },
+        "power" : {
+            "title": "TODO TRANSLATE Power",
+            "text": "TODO TRANSLATE All Overlord units attack with 1 additional {dice_orange} until the end of this Overlord’s turn.",
+            "textStyle": {
+                "textSize": 130,
+                "textInter": 95
+            }
+        },
+        "speed" : {
+            "title": "TODO TRANSLATE Speed",
+            "text": "TODO TRANSLATE All Overlord units gain 1 additional movement point until the end of this Overlord’s turn.",
+            "textStyle": {
+                "textSize": 138,
+                "textInter": 76
+            }
+        },
+        "flesh" : {
+            "title": "TODO TRANSLATE Flesh",
+            "text": "TODO TRANSLATE The Overlord doubles the amount of reinforcement points {token_reinforcement} gained, until the end of this Overlord’s turn.",
+            "textStyle": {
+                "textSize": 127,
+                "textInter": 88
+            }
+        },
+        "defense" : {
+            "title": "TODO TRANSLATE Defense",
+            "text": "TODO TRANSLATE All Overlord units increase their Armor value by 1 until the beginning of the Overlord’s next turn.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 76
+            }
+        },
+        "dread" : {
+            "title": "TODO TRANSLATE Dread",
+            "text": "TODO TRANSLATE All Overlord units gain the Horror skill until the beginning of the Overlord’s next turn.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 76
+            }
+        },
+        "calamity" : {
+            "title": "TODO TRANSLATE Calamity",
+            "text": "TODO TRANSLATE All Overlord units gain the Jinx skill until the beginning of the Overlord’s next turn.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 76
+            }
+        },
+        "death" : {
+            "title": "TODO TRANSLATE Death",
+            "text": "TODO TRANSLATE All Overlord units gain the Attack from Beyond skill until the beginning of the Overlord’s next turn.",
+            "textStyle": {
+                "textSize": 154,
+                "textInter": 76
+            }
+        },
+        "distortion" : {
+            "title": "TODO TRANSLATE Distortion",
+            "text": "TODO TRANSLATE All Overlord units may immediately move 1 area. This movement is not affected by obstacles (walls, doors, flaps, etc.), hindering, the Blocking skill, or elevation levels.",
+            "textStyle": {
+                "textSize": 140,
+                "textInter": 72
+            }
+        },
+        "diminish" : {
+            "title": "TODO TRANSLATE Diminish",
+            "text": "TODO TRANSLATE Heroes cannot use any skills until the beginning of the Overlord’s next turn.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 76
+            }
+        },
+        "exhaust" : {
+            "title": "TODO TRANSLATE Exhaust",
+            "text": "TODO TRANSLATE Heroes recover 1 fewer gem during the Heroes’ next Stance phase.",
+            "textStyle": {
+                "textSize": 154,
+                "textInter": 76
+            }
+        },
+        "energy" : {
+            "title": "TODO TRANSLATE Energy",
+            "text": "TODO TRANSLATE The Overlord recovers 5 extra gems during this Overlord’s Recovery phase.",
+            "textStyle": {
+                "textSize": 146,
+                "textInter": 76
+            }
+        },
+        "overload" : {
+            "title": "TODO TRANSLATE Overload",
+            "text": "TODO TRANSLATE The Overlord may activate 1 extra tile during this Overlord’s Activation phase.",
+            "textStyle": {
+                "textSize": 148,
+                "textInter": 76
+            }
+        },
+        "infestation": {
+            "title": "TODO TRANSLATE Infestation",
+            "text": "TODO TRANSLATE Place an Infestation token {token_infestation} in your area or in an area adjacent to an Infestation token in your line of sight, ignoring obstacles (walls, doors, flaps, etc.). Only 1 token per area.",
+            "textStyle": {
+                "textSize": 136,
+                "textInter": 74
+            }
+        },
+        "arcane_shove": {
+            "title": "TODO TRANSLATE Arcane Shove",
+            "text": "TODO TRANSLATE Target one Overlord unit in your area per gem already in your Melee Attack space. Move the target(s) 1 area, following movement restrictions.",
+            "textStyle": {
+                "textSize": 130,
+                "textInter": 76
+            }
+        },
+        "fangs_of_set": {
+            "title": "TODO TRANSLATE Fangs of Set",
+            "text": "TODO TRANSLATE Attack a unit in your line of sight; roll {dice_red} plus an additional {dice_orange_reroll} per gem already in your Ranged Attack space. If the attack power is greater than the defense power, the defender suffers damage equal to the difference",
+            "textStyle": {
+                "textSize": 131,
+                "textInter": 68
+            }
+        },
+        "projection": {
+            "title": "TODO TRANSLATE Projection",
+            "text": "TODO TRANSLATE Place the Invocation token {token_invocation} in your area. Then move to any area on the board. This movement is not affected by obstacles (walls, doors, flaps, etc.), hindering, the Blocking skill, or elevation levels. At the beginning of your next turn or activation, return to the area with the {token_invocation} token and remove it.",
+            "textStyle": {
+                "textSize": 113,
+                "textInter": 66
+            }
+        },
+        "yags_rage": {
+            "title": "TODO TRANSLATE Yag’s Rage",
+            "text": "TODO TRANSLATE Attack a unit in your line of sight; roll {dice_orange}{dice_orange}{dice_orange}. If the attack power is greater than the defense power, the defender suffers damage equal to the difference.",
+            "textStyle": {
+                "textSize": 160,
+                "textInter": 60
+            }
+        },
+        "power_of_yag": {
+            "title": "TODO TRANSLATE Power of Yag",
+            "text": "TODO TRANSLATE Target another Hero in your line of sight. Add {dice_orange} to their next Attack, Guard, or Manipulation action per gem spent to cast this spell. Can be cast multiple times.",
+            "textStyle": {
+                "textSize": 143,
+                "textInter": 70
+            }
         }
     }
 }

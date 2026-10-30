@@ -584,7 +584,107 @@
                 ],
                 "totopic": "https://the-overlord.com/index.php?/topic/58886-mbi-salle-du-tr%C3%B4ne/"
             }
-        }        
+        },
+
+        "Beach": {
+            "description": {
+                "title": "Plage",
+                "rules": [
+                    {
+                        "title": "Eau",
+                        "description": "Une unité sans la compétence Natation entrant dans une zone d’eau meurt immédiatement."
+                    },
+                    {
+                        "title": "Sous le pont",
+                        "description": "Ces zones sont considérées comme adjacentes et séparées par une seule limite de zone. Pour déterminer la saturation de ces zones, la surface du pont n’est pas prise en compte."
+                    },
+                    {
+                        "title": "Épave submergée",
+                        "description": "Entrer et sortir de cette zone n’est possible que par la zone d’épave échouée ou la zone d’eau située en dessous."
+                    },
+                    {
+                        "title": "Épave échouée",
+                        "description": "Sauter de la zone d’épave échouée inflige {dice_red}{dice_red} inévitables et {dice_red} si l’unité possède la compétence Saut. Pour monter ou descendre dans cette zone, une unité possédant la compétence Escalade doit réaliser une Manipulation complexe de difficulté 2 puis un Mouvement normal (Héros), ou dépenser 1 point de mouvement supplémentaire (Overlord). En cas d’échec, elle reste dans sa zone de départ et subit les dégâts comme si elle sautait."
+                    },
+                    {
+                        "title": "Colline et Pont",
+                        "description": "Sauter de la colline ou du pont inflige {dice_red}{dice_red} inévitables et {dice_red} si l’unité possède la compétence Saut."
+                    },
+                    {
+                        "title": "Sommets de falaise",
+                        "description": "Sauter de la falaise inflige {dice_red}{dice_red}{dice_red} inévitables et {dice_red}{dice_red} si l’unité possède la compétence Saut."
+                    }
+                ],
+                "totopic": "TODO"
+            }
+        },
+
+        "Tortage": {
+            "description": {
+                "title": "Tortage",
+                "rules": [
+                    {
+                        "title": "Mur de pierre",
+                        "description": "Ce mur est en pierre et ne peut pas être défoncé avec la compétence Défoncer les cloisons."
+                    },
+                    {
+                        "title": "Eau",
+                        "description": "Une unité sans la compétence Natation entrant dans une zone d’eau meurt immédiatement."
+                    }
+                ],
+                "totopic": "TODO"
+            }
+        },
+
+        "Tower-Of-The-Elephant": {
+            "description": {
+                "title": "Tour de l'Éléphant",
+                "rules": [
+                    {
+                        "title": "",
+                        "description": "Ce plateau représente les trois derniers niveaux de la Tour de l’Éléphant, ainsi que le jardin au rez-de-chaussée entourant la tour. Bien que des murs massifs séparent les trois salles de la tour, elles ne sont pas adjacentes les unes aux autres, et le seul moyen de passer d’un niveau à un autre est d’emprunter le mini-plateau des Escaliers d’argent."
+                    },
+                    {
+                        "title": "Porte du Sorcier- Niveau 1",
+                        "description": "Ces zones sont adjacentes."
+                    },
+                    {
+                        "title": "Porte de l’Éléphant - Niveau 2",
+                        "description": "Ces zones sont adjacentes."
+                    },
+                    {
+                        "title": "Porte de l’Araignée - Niveau 3",
+                        "description": "Ces zones sont adjacentes."
+                    },
+                    {
+                        "title": "Balcon",
+                        "description": "Voir les Règles spéciales du scénario pour les mouvements entre le balcon et le jardin."
+                    },
+                    {
+                        "title": "Escaliers d’argent - Zone",
+                        "description": "Cette zone représente le mini-plateau des Escaliers d’argent. Aucune figurine ne peut y être placée."
+                    },
+                    {
+                        "title": "Escaliers d’argent - Plateau",
+                        "description": "Ce plateau représente l’escalier en spirale au centre de la Tour de l’Éléphant. Une unité possédant la compétence Saut peut réaliser un saut de difficulté 2 pour sauter par-dessus une zone adjacente. Aucune unité ne peut traverser la balustrade dorée. Chaque zone des Escaliers d’argent peut contenir jusqu’à 2 figurines, quelle que soit la taille de leur socle, avant d’être saturée, mais jamais plus de 2 figurines."
+                    }
+                ],
+                "totopic": "TODO"
+            }
+        },
+
+        "Lotus-Den": {
+            "description": {
+                "title": "Salon du Lotus",
+                "rules": [
+                    {
+                        "title": "Murs",
+                        "description": "Tous les murs sont en pierre et ne peuvent pas être défoncés avec la compétence Défoncer les cloisons."
+                    }
+                ],
+                "totopic": "TODO"
+            }
+        }
     },
 
     "compositions": {

@@ -2179,6 +2179,19 @@
             "origins": ["versus-mode"],
             "count": 4,
             "forum": "https://the-overlord.com/index.php?/topic/58548-peinture-montrez-moi-vos-mercenaires-hyrkaniens-ganbaatar/"
+        },
+        
+        {
+            "id": "yara",
+            "thumb": "data/models/img/yara_sd.webp",
+            "images": ["data/models/img/yara_1.webp"],
+            "sculptor": { "name": "Gael Goumon", "link": "https://www.facebook.com/gael.goumon" },
+            "paint": null,
+            "type": "human",
+            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
+            "origins": ["zamora"],
+            "count": 1,
+            "forum": null
         }
     ]
 }

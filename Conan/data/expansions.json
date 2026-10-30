@@ -1,27 +1,20 @@
 {
     "types": [
         {
-            "id": "corebox",
-            "column": "left"
+            "id": "corebox"
         }, {
-            "id": "thematic",
-            "column": "left"
+            "id": "thematic"
         }, {
             "id": "other",
-            "column": "right",
             "sort": true
         }, {
-            "id": "books",
-            "column": "left"
+            "id": "books"
         }, {
-            "id": "artists",
-            "column": "right"
+            "id": "artists"
         }, {
-            "id": "decoration",
-            "column": "left"
+            "id": "decoration"
         }, {
-            "id": "misc",
-            "column": "right"
+            "id": "misc"
         }
     ],
 
@@ -68,6 +61,12 @@
         }, {
             "id": "worms-earth",
             "type": "thematic"
+        }, {
+            "id": "tortage",
+            "type": "thematic"
+        }, {
+            "id": "zamora",
+            "type": "thematic"
         },
 
         {
@@ -103,6 +102,12 @@
         }, {
             "id": "sabretoothtiger",
             "type": "other"
+        }, {
+            "id": "origins",
+            "type": "other"
+        }, {
+            "id": "king-conan-on-his-throne",
+            "type": "other"
         },
 
         {
@@ -113,6 +118,12 @@
             "type": "books"
         }, {
             "id": "tomeofskelos",
+            "type": "books"
+        }, {
+            "id": "talesofhighadventure",
+            "type": "books"
+        }, {
+            "id": "chroniclesofthefreecompanions",
             "type": "books"
         },
 

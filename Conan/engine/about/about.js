@@ -353,20 +353,18 @@ var About = {
     {
         $("nav.menu input")[0].checked = false;
 
-        var leftS = "";
-        var rightS = "";
+        let data = "";
         for (var i in Encyclopedia.expansions.types)
         {
             var expansionType = Encyclopedia.expansions.types[i];
 
             var localS = "<fieldset><legend>" + expansionType.text + "</legend>";
-            var nbChoice = 0;
 
             var list = Encyclopedia.expansions.list;
             if (expansionType.sort)
             {
                 list = Encyclopedia.expansions.list.slice().sort(function (a, b) {
-                    return a.title.toLowerCase().localeCompare(b.title.toLowerCase());
+                    return a.title.replace('"', '').toLowerCase().localeCompare(b.title.replace('"', '').toLowerCase());
                 });
             }
             
@@ -386,26 +384,14 @@ var About = {
 
             localS += "</fieldset>";
             
-            if (expansionType.column !== "right")
-            {
-                leftS += localS;
-            }
-            else
-            {
-                rightS += localS
-            }
+            data += localS;
         }
 
         Nav.dialog(About._i18n.custom,
             "<div class=\"custom\">"
             +       "<div>" + About._i18n.custom_text + "</div>"
             +       "<div class=\"custom-wrap\">"
-            +            "<div class=\"col col-left\">"
-            +                leftS
-            +            "</div>"
-            +            "<div class=\"col col-right\">"
-            +                rightS
-            +            "</div>"
+            +             data
             +       "</div>"
             + "</div>",
 

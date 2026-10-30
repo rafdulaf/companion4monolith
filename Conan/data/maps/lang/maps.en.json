@@ -584,6 +584,106 @@
                 ],
                 "totopic": "https://the-overlord.net/index.php?/topic/119396-mbi-throne-room/"
             }
+        },
+
+        "Beach": {
+            "description": {
+                "title": "Beach",
+                "rules": [
+                    {
+                        "title": "Water",
+                        "description": "Units without Swimming who enter a water area immediately die."
+                    },
+                    {
+                        "title": "Under the Bridge",
+                        "description": "These areas are considered adjacent and separated by one single border. For determining the areas’ occupation, do not include the bridge area above them."
+                    },
+                    {
+                        "title": "Underwater Shipwreck",
+                        "description": "Can only be entered or exited via the Beached Shipwreck area or the water area below it."
+                    },
+                    {
+                        "title": "Beached Shipwreck",
+                        "description": "A unit can move from the Beached Shipwreck area to an adjacent ground area as though it were a border. The unit rolls {dice_red}{dice_red} for falling damage. If the unit has Leap, the unit rolls {dice_red} instead. A unit with Climb may climb up or down into this area by performing a simple Manipulation with a difficulty of 2 then a normal Move (Hero), or by spending 1 additional movement point (Overlord unit). If the Hero fails, they remain in their starting area and roll for falling damage, as above."
+                    },
+                    {
+                        "title": "Hilltop/Bridge",
+                        "description": "A unit can move from a Hilltop/Bridge area to an adjacent ground area as though it were a border. The unit rolls {dice_red}{dice_red} for falling damage. If the unit has Leap, the unit rolls {dice_red} instead."
+                    },
+                    {
+                        "title": "Cliff Edges",
+                        "description": "A unit can move from a Cliff Edge area to an adjacent ground area as though it were a border. The unit rolls {dice_red}{dice_red}{dice_red} for falling damage. If the unit has Leap, the unit rolls {dice_red}{dice_red} instead."
+                    }
+                ],  
+                "totopic": "TODO"
+            }
+        },
+
+        "Tortage": {
+            "description": {
+                "title": "Tortage",
+                "rules": [
+                    {
+                        "title": "Stone Wall",
+                        "description": "Wall Wrecker cannot be used on this stone wall."
+                    },
+                    {
+                        "title": "Water",
+                        "description": "Units without Swimming who enter a water area immediately die."
+                    }
+                ],
+                "totopic": "TODO"
+            }
+        },
+
+        "Tower-Of-The-Elephant": {
+            "description": {
+                "title": "Tower Of The Elephant",
+                "rules": [
+                    {
+                        "title": "",
+                        "description": "This game board represents the top three levels of the Tower of the Elephant, along with the ground level garden area surrounding the tower. Although solid walls separate the three halls of the tower, they are not adjacent to each other, and the only way to move from one level of the tower to another level is via the Silver Stairs mini-board."
+                    },
+                    {
+                        "title": "Sorcerer Door - Level 1",
+                        "description": "These areas are adjacent."
+                    },
+                    {
+                        "title": "Elephant Door - Level 2",
+                        "description": "These areas are adjacent."
+                    },
+                    {
+                        "title": "Spider Door - Level 3",
+                        "description": "These areas are adjacent."
+                    },
+                    {
+                        "title": "Balcony:",
+                        "description": "See Scenario rules for movement between the balcony and the garden areas."
+                    },
+                    {
+                        "title": "Silver Stairs - Area",
+                        "description": "This area represents the Silver Stairs mini-board. Miniatures may not be placed on it."
+                    },
+                    {
+                        "title": "Silver Stairs - Board",
+                        "description": "This game board represents the spiral staircase in the middle of the Tower of the Elephant. Silver Stairs areas only have line of sight to adjacent Silver Stairs areas. A unit with Leap may perform a Leap with a difficulty of 2 to leap over an adjacent Silver Stairs area. For units with Flying, movement is prohibited across the gold railing on the Silver Stairs. Each area on the Silver Stairs can contain up to 2 miniatures, regardless of base size, before it is considered occupied but never more than 2 miniatures."
+                    }                    
+                ],
+                "totopic": "TODO"
+            }
+        },
+
+        "Lotus-Den": {
+            "description": {
+                "title": "Lotus Den",
+                "rules": [
+                    {
+                        "title": "Walls",
+                        "description": "All walls are stone and cannot be wrecked using Wall Wrecker."
+                    }
+                ],
+                "totopic": "TODO"
+            }
         }
     },
 

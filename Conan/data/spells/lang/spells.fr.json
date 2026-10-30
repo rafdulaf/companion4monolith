@@ -699,8 +699,7 @@
                 "textSize": 151,
                 "textInter": 72
             }        
-        }
-        ,
+        },
         "enthrallment": {
             "title": "Envoûtement",
             "text": "Vous ne pouvez pas être attaqué par des ennemis dans votre zone jusqu’au début de votre prochain tour ou activation.",
@@ -708,8 +707,7 @@
                 "textSize": 139,
                 "textInter": 77
             }        
-        }
-        ,
+        },
         "eldritch_lance": {
             "title": "Lance surnaturelle",
             "text": "Attaquez une unité en ligne de vue ; lancez {dice_red}{dice_orange} et ignorez 1 point de Défense passive (Défense possible).",
@@ -717,8 +715,7 @@
                 "textSize": 141,
                 "textInter": 70
             }        
-        }
-        ,
+        },
         "spectral_shroud": {
             "title": "Linceul spectral",
             "text": "Placez 3 pions {token_spectral-shroud} sur cette carte (ou complétez-la jusqu’à 3 pions). Lorsque vous subissez 1 dégât ou plus, défaussez 1 pion {token_spectral-shroud} par dégât pour l’éviter.",
@@ -727,8 +724,7 @@
                 "textInter": 90
             },
             "clarification": "Si des pions sont présents sur la carte Sort, leur utilisation est obligatoire en cas de dégât subi et quelle qu’en soit la cause : attaque, chute, dégât inévitable..."
-        }
-        ,
+        },
         "protective_circle": {
             "title": "Cercle de protection",
             "text": "Les ennemis ne peuvent pas entrer dans votre zone ni réaliser d’Attaque au corps-à-corps dans votre zone jusqu’à votre prochain tour ou activation.",
@@ -736,6 +732,150 @@
                 "textSize": 146,
                 "textInter": 68
             }        
+        },
+        "power" : {
+            "title": "Puissance",
+            "text": "Toutes les unités de l’Overlord attaquent avec 1 {dice_orange} supplémen&shy;taire jusqu’à la fin du tour de l’Overlord.",
+            "textStyle": {
+                "textSize": 145,
+                "textInter": 86
+            }
+        },
+        "speed" : {
+            "title": "Vitesse",
+            "text": "Toutes les unités de l’Overlord gagnent 1 point de mouvement supplémentaire jusqu’à la fin du tour de l’Overlord.",
+            "textStyle": {
+                "textSize": 137,
+                "textInter": 76
+            }
+        },
+        "flesh" : {
+            "title": "Chair",
+            "text": "L’Overlord double le nombre de points de renfort {token_reinforcement} gagnés, jusqu’à la fin du tour de l’Overlord.",
+            "textStyle": {
+                "textSize": 135,
+                "textInter": 76
+            }
+        },
+        "defense" : {
+            "title": "Défense",
+            "text": "Toutes les unités de l’Overlord augmen&shy;tent leur Défense passive de 1 jusqu’au début du tour sui&shy;vant de l’Overlord.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 76
+            }
+        },
+        "dread" : {
+            "title": "Terreur",
+            "text": "Toutes les unités de l’Overlord gagnent la compétence Hor&shy;reur jusqu’au début du tour suivant de l’Overlord.",
+            "textStyle": {
+                "textSize": 155,
+                "textInter": 76
+            }
+        },
+        "calamity" : {
+            "title": "Calamité",
+            "text": "Toutes les unités de l’Overlord gagnent la compétence Mal&shy;chance jusqu’au dé&shy;but du tour suivant de l’Overlord.",
+            "textStyle": {
+                "textSize": 154,
+                "textInter": 66
+            }
+        },
+        "death" : {
+            "title": "Mort",
+            "text": "Toutes les unités de l’Overlord gagnent la compétence Retour de l’au-delà jusqu’au début du tour suivant de l’Overlord.",
+            "textStyle": {
+                "textSize": 144,
+                "textInter": 76
+            }
+        },
+        "distortion" : {
+            "title": "Distorsion",
+            "text": "Toutes les unités de l’Overlord peuvent im&shy;médiatement se déplacer d’une zone. Ce mouve&shy;ment n’est pas affecté par les obstacles (murs, portes, tentures…), le phénomène de gêne, la compétence Bloqueur, ni les niveaux d’élévation.",
+            "textStyle": {
+                "textSize": 127,
+                "textInter": 71
+            }
+        },
+        "diminish" : {
+            "title": "Affaiblissement",
+            "text": "Les Héros ne peuvent utiliser aucune com&shy;pétence jusqu’au dé&shy;but du tour suivant de l’Overlord.",
+            "textStyle": {
+                "textSize": 147,
+                "textInter": 76
+            }
+        },
+        "exhaust" : {
+            "title": "Épuisement",
+            "text": "Les Héros récu&shy;pèrent 1 gemme de moins lors de la prochaine phase de Déclaration de l’état des Héros.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 76
+            }
+        },
+        "energy" : {
+            "title": "Énergie",
+            "text": "L’Overlord récupère 5 gemmes supplémentaires lors de cette phase de Récupération.",
+            "textStyle": {
+                "textSize": 126,
+                "textInter": 76
+            }
+        },
+        "overload" : {
+            "title": "Déferlement",
+            "text": "L’Overlord peut acti&shy;ver 1 tuile supplémen&shy;taire lors cette phase d’Activation.",
+            "textStyle": {
+                "textSize": 142,
+                "textInter": 76
+            }
+        },
+        "infestation": {
+            "title": "Infestation",
+            "text": "Placez un pion Infesta&shy;tion {token_infestation} dans votre zone, ou dans une zone adjacente à un pion In&shy;festation en ligne de vue en ignorant les obstacles (murs, portes, tentures…). Un pion maximum par zone.",
+            "textStyle": {
+                "textSize": 132,
+                "textInter": 76
+            }
+        },
+        "arcane_shove": {
+            "title": "Poussée magique",
+            "text": "Ciblez une unité de l’Overlord dans votre zone par gemme déjà placée dans votre case Attaque au corps-à-corps. Déplacez-la (ou -les) d’une zone, en sui&shy;vant les restrictions de mouvement.",
+            "textStyle": {
+                "textSize": 142,
+                "textInter": 71
+            }
+        },
+        "fangs_of_set": {
+            "title": "Crocs de Set",
+            "text": "Attaquez une unité en ligne de vue ; lancez {dice_red}, plus {dice_orange_reroll} supplémentaire par gemme déjà placée dans votre case Attaque à distance (Défense possible).",
+            "textStyle": {
+                "textSize": 130,
+                "textInter": 76
+            }
+        },
+        "projection": {
+            "title": "Projection",
+            "text": "Placez le pion Invoca&shy;tion {token_invocation} dans votre zone, puis déplacez-vous n’im&shy;porte où sur le plateau. Ce mouvement n’est pas affecté par les obstacles (murs, portes, tentures…), le phénomène de gêne, la compétence Bloqueur, ni les niveaux d’élévation. Au début de votre pro&shy;chain tour ou activation, retournez dans la zone du pion et retirez-le.",
+            "textStyle": {
+                "textSize": 105,
+                "textInter": 70
+            }
+        },
+        "yags_rage": {
+            "title": "Rage de Yag",
+            "text": "Attaquez une unité en ligne de vue ; lan&shy;cez {dice_orange}{dice_orange}{dice_orange} (Défense possible).",
+            "textStyle": {
+                "textSize": 145,
+                "textInter": 76
+            }
+        },
+        "power_of_yag": {
+            "title": "Puissance de Yag",
+            "text": "Ciblez un Héros en ligne de vue. Ajoutez {dice_orange} à sa prochaine action d’Attaque, de Défense ou de Manipulation, par gemme dépensée pour lancer ce sort. Peut être lancé plu&shy;sieurs fois.",
+            "textStyle": {
+                "textSize": 133,
+                "textInter": 76
+            }
         }
     }
 }

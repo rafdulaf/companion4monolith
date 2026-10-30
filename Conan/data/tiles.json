@@ -7397,7 +7397,27 @@
             "image_zoom": 100,
             "model": "enraged-bull", "modelType": "animal",
             "origins": ["shadowsoverluxur"]
-        }
+        },
         
+        {
+            "id": "yara",
+            
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "1",
+            "attacktype": "contact",
+            "dices": { "0": "yellowreroll", "1": "yellowreroll", "2": "none", "3": "none" },
+            "skills": { "0": "magic/spell_caster", "1": "defense/protected", "2": "none", "3": "none" },
+            "tokens": [
+                { "image": "data/tiles/img/yara_token.webp", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+            ],
+            
+            "image": "data/tiles/img/yara.webp",
+            "imageHD": "data/tiles/img/yara_hd.webp",
+            "image_location": {"x":53, "y":54},
+            "image_zoom": 60,
+            "model": "yara",
+            "origins": ["zamora"]
+        }
     ]
 }

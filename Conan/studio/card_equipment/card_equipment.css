@@ -318,6 +318,9 @@
 .card.equipement div.text.startAtLeft {
     text-align: left;
 }
+.card.equipement div.text.level0.noTextSeparator {
+    height: 40%;
+}
 .card.equipement div.text.level0 div {
     position: static;
     width: 100%;
@@ -747,6 +750,18 @@
     left: -12px;
     content: "%";
     display: inline-block;
+}
+
+.dialog .equipment .field.textalign {
+    display: flex;
+    gap: 10px;
+}
+.dialog .equipment .field.textalign > div {
+    flex: 1;
+    text-align: left;
+}
+.dialog .equipment .field.textalign input:disabled + label {
+    opacity: 0.5;
 }
 
 

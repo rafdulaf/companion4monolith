@@ -698,8 +698,7 @@
                 "textSize": 141,
                 "textInter": 77
             }        
-        }
-        ,
+        },
         "enthrallment": {
             "title": "Enthrallment",
             "text": "You cannot be attacked by enemies in your area until the beginning of your next turn or activation.",
@@ -707,8 +706,7 @@
                 "textSize": 137,
                 "textInter": 86
             }        
-        }
-        ,
+        },
         "eldritch_lance": {
             "title": "Eldritch Lance",
             "text": "Attack a unit in your line of sight; roll {dice_red}{dice_orange} and ignore 1 point of Armor value. If the attack power is greater than the defense power, the defender suffers damage equal to the difference.",
@@ -716,8 +714,7 @@
                 "textSize": 141,
                 "textInter": 70
             }        
-        }
-        ,
+        },
         "spectral_shroud": {
             "title": "Spectral Shroud",
             "text": "Place 3 {token_spectral-shroud} tokens on this card (or refill it up to 3 tokens). Whenever you suffer 1 or more damage, remove 1 {token_spectral-shroud} for each damage to prevent it.",
@@ -726,8 +723,7 @@
                 "textInter": 86
             },
             "clarification": "Removing the tokens to prevent damage (attack damage, falling damage, unavoidable...) is not optional."
-        }
-        ,
+        },
         "protective_circle": {
             "title": "Protective Circle",
             "text": "Enemies cannot move into or perform a Melee Attack into your area until your next turn or activation.",
@@ -735,6 +731,150 @@
                 "textSize": 140,
                 "textInter": 72
             }        
+        },
+        "power" : {
+            "title": "Power",
+            "text": "All Overlord units attack with 1 additional {dice_orange} until the end of this Overlord’s turn.",
+            "textStyle": {
+                "textSize": 130,
+                "textInter": 95
+            }
+        },
+        "speed" : {
+            "title": "Speed",
+            "text": "All Overlord units gain 1 additional movement point until the end of this Overlord’s turn.",
+            "textStyle": {
+                "textSize": 138,
+                "textInter": 76
+            }
+        },
+        "flesh" : {
+            "title": "Flesh",
+            "text": "The Overlord doubles the amount of reinforcement points {token_reinforcement} gained, until the end of this Overlord’s turn.",
+            "textStyle": {
+                "textSize": 127,
+                "textInter": 88
+            }
+        },
+        "defense" : {
+            "title": "Defense",
+            "text": "All Overlord units increase their Armor value by 1 until the beginning of the Overlord’s next turn.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 76
+            }
+        },
+        "dread" : {
+            "title": "Dread",
+            "text": "All Overlord units gain the Horror skill until the beginning of the Overlord’s next turn.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 76
+            }
+        },
+        "calamity" : {
+            "title": "Calamity",
+            "text": "All Overlord units gain the Jinx skill until the beginning of the Overlord’s next turn.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 76
+            }
+        },
+        "death" : {
+            "title": "Death",
+            "text": "All Overlord units gain the Attack from Beyond skill until the beginning of the Overlord’s next turn.",
+            "textStyle": {
+                "textSize": 154,
+                "textInter": 76
+            }
+        },
+        "distortion" : {
+            "title": "Distortion",
+            "text": "All Overlord units may immediately move 1 area. This movement is not affected by obstacles (walls, doors, flaps, etc.), hindering, the Blocking skill, or elevation levels.",
+            "textStyle": {
+                "textSize": 140,
+                "textInter": 72
+            }
+        },
+        "diminish" : {
+            "title": "Diminish",
+            "text": "Heroes cannot use any skills until the beginning of the Overlord’s next turn.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 76
+            }
+        },
+        "exhaust" : {
+            "title": "Exhaust",
+            "text": "Heroes recover 1 fewer gem during the Heroes’ next Stance phase.",
+            "textStyle": {
+                "textSize": 154,
+                "textInter": 76
+            }
+        },
+        "energy" : {
+            "title": "Energy",
+            "text": "The Overlord recovers 5 extra gems during this Overlord’s Recovery phase.",
+            "textStyle": {
+                "textSize": 146,
+                "textInter": 76
+            }
+        },
+        "overload" : {
+            "title": "Overload",
+            "text": "The Overlord may activate 1 extra tile during this Overlord’s Activation phase.",
+            "textStyle": {
+                "textSize": 148,
+                "textInter": 76
+            }
+        },
+        "infestation": {
+            "title": "Infestation",
+            "text": "Place an Infestation token {token_infestation} in your area or in an area adjacent to an Infestation token in your line of sight, ignoring obstacles (walls, doors, flaps, etc.). Only 1 token per area.",
+            "textStyle": {
+                "textSize": 136,
+                "textInter": 74
+            }
+        },
+        "arcane_shove": {
+            "title": "Arcane Shove",
+            "text": "Target one Overlord unit in your area per gem already in your Melee Attack space. Move the target(s) 1 area, following movement restrictions.",
+            "textStyle": {
+                "textSize": 130,
+                "textInter": 76
+            }
+        },
+        "fangs_of_set": {
+            "title": "Fangs of Set",
+            "text": "Attack a unit in your line of sight; roll {dice_red} plus an additional {dice_orange_reroll} per gem already in your Ranged Attack space. If the attack power is greater than the defense power, the defender suffers damage equal to the difference",
+            "textStyle": {
+                "textSize": 131,
+                "textInter": 68
+            }
+        },
+        "projection": {
+            "title": "Projection",
+            "text": "Place the Invocation token {token_invocation} in your area. Then move to any area on the board. This movement is not affected by obstacles (walls, doors, flaps, etc.), hindering, the Blocking skill, or elevation levels. At the beginning of your next turn or activation, return to the area with the {token_invocation} token and remove it.",
+            "textStyle": {
+                "textSize": 113,
+                "textInter": 66
+            }
+        },
+        "yags_rage": {
+            "title": "Yag’s Rage",
+            "text": "Attack a unit in your line of sight; roll {dice_orange}{dice_orange}{dice_orange}. If the attack power is greater than the defense power, the defender suffers damage equal to the difference.",
+            "textStyle": {
+                "textSize": 160,
+                "textInter": 60
+            }
+        },
+        "power_of_yag": {
+            "title": "Power of Yag",
+            "text": "Target another Hero in your line of sight. Add {dice_orange} to their next Attack, Guard, or Manipulation action per gem spent to cast this spell. Can be cast multiple times.",
+            "textStyle": {
+                "textSize": 143,
+                "textInter": 70
+            }
         }
     }
 }
