@@ -114,11 +114,20 @@
     flex: none;
 }
 
+.custom .custom-wrap fieldset {
+        break-inside: avoid;
+}
+
 @media screen and (min-width: 600px) {
-    .custom .col {
-        vertical-align: top;
-        width: 48%;
-        display: inline-block;
+    .custom .custom-wrap {
+        column-count: 2;
+        column-gap: 20px;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .custom .custom-wrap {
+        column-count: 3;
+        column-gap: 20px;
     }
 }
 
