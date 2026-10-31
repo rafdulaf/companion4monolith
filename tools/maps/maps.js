@@ -92,7 +92,7 @@ function _doImport(text)
         _setRules(json.description.rules);
         $("#thumbnail")[0].value = json.description.thumbnail.substring(json.description.thumbnail.lastIndexOf('/') + 1);
         $("#board")[0].value = json.description.board.substring(json.description.board.lastIndexOf('/') + 1);
-        $("#losFile")[0].value = '';// json.description.losFile.substring(json.description.losFile.lastIndexOf('/') + 1);
+        $("#losFile")[0].value = json.description.losFile ? json.description.losFile.substring(json.description.losFile.lastIndexOf('/') + 1) : "";
         
         $("#zones")[0].value = stringify(json.zones);
         $('#image').attr('src', "../../" + $("#rulesselector")[0].value.substring(0,1).toUpperCase() + $("#rulesselector")[0].value.substring(1) + "/" + json.description.board);
