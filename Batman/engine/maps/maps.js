@@ -406,7 +406,7 @@ var Maps = {
                 var map = Encyclopedia.maps.list[i];
                 if (!map.discard || window.About && About.getPreference("maps-showmine") === "false")
                 {
-    				var imgCode = "<div class='map-index-board-image' style=\"background-image: url('" + map.description.thumbnail + "?version=" + Version + "\');\"/>"
+    				var imgCode = "<div class='map-index-board-image' style=\"background-image: url('" + map.description.thumbnail + "?version=" + Version + "\');\"></div>";
                     var subtitleCode = "<div class='map-index-board-sublegend'>" + Maps._getOrigin(map) + "</div>";
     				var titleCode = "<div class='map-index-board-legend'>" + map.description.title + "</div>";
     				

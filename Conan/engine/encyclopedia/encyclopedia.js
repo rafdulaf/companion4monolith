@@ -237,7 +237,7 @@ var Encyclopedia = {
                 
                 if (facet.sort)
                 {
-                    $("#" + prefix + "-" + facet.id + " label").sort(Encyclopedia._sort).appendTo("#" + prefix + "-" + facet.id);
+                    $($("#" + prefix + "-" + facet.id + " label").toArray().sort(Encyclopedia._sort)).appendTo("#" + prefix + "-" + facet.id);
                     $("#" + prefix + "-" + facet.id + " a").appendTo("#" + prefix + "-" + facet.id);
                 }
             }

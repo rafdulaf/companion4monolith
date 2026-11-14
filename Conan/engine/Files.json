@@ -3,7 +3,7 @@
         "vendors/css/fonts-1.4.0.css",
         "vendors/css/slick-1.8.0-fix.css",
         "vendors/css/slick-theme-1.8.0.css",
-        "vendors/css/jquery-ui-1.12.1.min.css",
+        "vendors/css/jquery-ui-1.14.2.min.css",
         "general/nav.css",
         "about/about.css",
         "general/body.css",
@@ -18,7 +18,7 @@
         "studio/studio.css"
     ],
     "scripts": [
-        "vendors/js/jquery-ui-1.12.1.min.js",
+        "vendors/js/jquery-ui-1.14.2.min.js",
         "vendors/js/slick-1.8.0.js",
         "vendors/js/deepmerge.js",
         "vendors/js/jquery.ba-throttle-debounce.js",
