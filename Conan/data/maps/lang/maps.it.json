@@ -650,7 +650,10 @@
             "description": {
                 "title": "TODO TRANSLATE Lotus Den",
                 "rules": [
-                    
+                    {
+                        "title": "TODO TRANSLATE Murs",
+                        "description": "TODO TRANSLATE Tous les murs sont en pierre et ne peuvent pas être défoncés avec la compétence Défoncer les cloisons."
+                    }
                 ],
                 "totopic": "TODO"
             }

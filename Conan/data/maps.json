@@ -4598,20 +4598,15 @@
                 "rules": [
                     {
                         "coordinates": [[19.8, 96.97], [37.26, 96.97], [58.73, 96.6], [78.79, 95.87], [94.09, 95.94], [78.85, 85.25]]
-                    },
-                    {
+                    }, {
                         "coordinates": [[33.52, 38.09], [41.01, 28.14]]
-                    },
-                    {
+                    }, {
                         "coordinates": [[91.55, 82.09]]
-                    },
-                    {
+                    }, {
                         "coordinates": [[91.55, 64.4]]
-                    },
-                    {
+                    }, {
                         "coordinates": [[63.61, 43.1], [49.46, 49.59], [36.57, 35.07]]
-                    },
-                    {
+                    }, {
                         "coordinates": [[5.07, 62.12], [7.68, 44.65], [19.8, 22.62], [4.06, 20.48]]
                     }
                 ],
@@ -4837,8 +4832,7 @@
                 "rules": [
                     {
                         "coordinates": [[98.22, 33.85]]
-                    },
-                    {
+                    }, {
                         "coordinates": [[3.93, 7.45], [3.74, 23.9], [3.55, 49.35], [3.55, 66.02], [3.3, 83.28]]
                     }
                 ],
@@ -5109,7 +5103,21 @@
                 "version": "1.0",
                 "origins": ["zamora"],
                 "copyright": "Monolith",
-                "rules": [],
+                "rules": [
+                    {}, {
+                        "coordinates": [[34.85, 54.95], [84.44, 56.76]]
+                    }, {
+                        "coordinates": [[45.58, 52.77], [96.44, 50.02]]
+                    }, {
+                        "coordinates": [[37.46, 42.8], [83.42, 41.29]]
+                    }, {
+                        "coordinates": [[14.28, 20.31]]
+                    }, {
+                        "coordinates": [[39.42, 51.16]]
+                    }, {
+                        "coordinates": [[88.25, 29.99]]
+                    }
+                ],
                 "thumbnail": "data/maps/data/Tower-Of-The-Elephant/thumb.webp",
                 "board": "data/maps/data/Tower-Of-The-Elephant/board.webp",
                 "losFile": "data/maps/data/Tower-Of-The-Elephant/los-v1.webp"
@@ -5371,7 +5379,9 @@
                 "version": "1.0",
                 "origins": ["zamora"],
                 "copyright": "Monolith",
-                "rules": [],
+                "rules": [
+                    {}
+                ],
                 "thumbnail": "data/maps/data/Lotus-Den/thumb.webp",
                 "board": "data/maps/data/Lotus-Den/board.webp",
                 "losFile": "data/maps/data/Lotus-Den/los-v1.webp"

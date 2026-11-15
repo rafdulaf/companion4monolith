@@ -640,7 +640,34 @@
             "description": {
                 "title": "Tour de l'Éléphant",
                 "rules": [
-                    
+                    {
+                        "title": "",
+                        "description": "Ce plateau représente les trois derniers niveaux de la Tour de l’Éléphant, ainsi que le jardin au rez-de-chaussée entourant la tour. Bien que des murs massifs séparent les trois salles de la tour, elles ne sont pas adjacentes les unes aux autres, et le seul moyen de passer d’un niveau à un autre est d’emprunter le mini-plateau des Escaliers d’argent."
+                    },
+                    {
+                        "title": "",
+                        "description": ""
+                    },
+                    {
+                        "title": "",
+                        "description": ""
+                    },
+                    {
+                        "title": "",
+                        "description": ""
+                    },
+                    {
+                        "title": "",
+                        "description": ""
+                    },
+                    {
+                        "title": "",
+                        "description": ""
+                    },
+                    {
+                        "title": "",
+                        "description": ""
+                    }
                 ],
                 "totopic": "TODO"
             }
@@ -650,7 +677,10 @@
             "description": {
                 "title": "Salon du Lotus",
                 "rules": [
-                    
+                    {
+                        "title": "Murs",
+                        "description": "Tous les murs sont en pierre et ne peuvent pas être défoncés avec la compétence Défoncer les cloisons."
+                    }
                 ],
                 "totopic": "TODO"
             }
