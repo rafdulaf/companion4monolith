@@ -556,8 +556,11 @@
                         "title": "Feu",
                         "description": "Les unités qui entrent ou commencent leur tour dans une zone de feu subissent {dice_red}{dice_red}{dice_red} de dégâts inévitables si elles ne possèdent pas la compétence Vol."
                     }, {
-                        "title": "",
-                        "description": "Ces zones octroient le bonus de surplomb de {dice_yellow} vers les sols inondés en ligne de vue. Entrer dans une de ces zones depuis une zone de sol inondé adjacente coûte 2 points de mouvement supplémentaires, sauf avec la compétence Escalade."
+                        "title": "Sols inondés",
+                        "description": "Ces zones sont considérées comme des zones normales."
+                    }, {
+                        "title": "Rives",
+                        "description": "Entrer dans une de ces zones depuis une zone de sol inondé adjacente coûte 2 points de mouvement supplémentaires, sauf avec la compétence Escalade."
                     }
                 ],
                 "totopic": "https://the-overlord.com/index.php?/topic/58885-mbi-temple-de-set/"

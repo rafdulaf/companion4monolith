@@ -556,8 +556,11 @@
                         "title": "Fuoco",
                         "description": "Le unità senza l'abilità Volare che entrano in un'area di Fuoco o vi iniziano il proprio turno subiscono {dice_red}{dice_red}{dice_red} danni non difendibili."
                     }, {
-                        "title": "",
-                        "description": "Queste aree forniscono un bonus di sopraelevazione di {dice_yellow} alle aree di Pavimento allagato se hanno linea di vista. Per spostarsi da un'area adiacente di Pavimento allagato a queste aree, le unità devono spendere 2 punti Movimento aggiuntivi, a meno che non possiedano l'abilità Arrampicarsi."
+                        "title": "Pavimento allagato",
+                        "description": "Queste aree sono considerate aree normali."
+                    }, {
+                        "title": "Riva",
+                        "description": "Per spostarsi da un'area adiacente di Pavimento allagato a queste aree, le unità devono spendere 2 punti Movimento aggiuntivi, a meno che non possiedano l'abilità Arrampicarsi."
                     }
                 ],
                 "totopic": "https://the-overlord.net/index.php?/topic/119395-mbi-temple-of-set/"

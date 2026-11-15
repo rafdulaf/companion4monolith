@@ -556,8 +556,11 @@
                         "title": "Fire",
                         "description": "Units without Flying moving into or starting their turn in Fire take {dice_red}{dice_red}{dice_red} unavoidable damage."
                     }, {
-                        "title": "",
-                        "description": "These areas provide an Elevation bonus of {dice_yellow} to the Flooded Floors areas if they have line of sight. Units must spend 2 extra movement points to move from an adjacent Flooded Floor area to these areas unless the unit has the Climb skill."
+                        "title": "Flooded Floors",
+                        "description": "These areas are considered normal areas."
+                    }, {
+                        "title": "Shore",
+                        "description": "Units must spend 2 extra movement points to move from an adjacent Flooded Floor area to these areas unless the unit has the Climb skill."
                     }
                 ],
                 "totopic": "https://the-overlord.net/index.php?/topic/119395-mbi-temple-of-set/"
