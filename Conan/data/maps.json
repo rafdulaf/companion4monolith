@@ -4834,7 +4834,14 @@
                 "version": "1.0",
                 "origins": ["tortage"],
                 "copyright": "Monolith",
-                "rules": [],
+                "rules": [
+                    {
+                        "coordinates": [[98.22, 33.85]]
+                    },
+                    {
+                        "coordinates": [[3.93, 7.45], [3.74, 23.9], [3.55, 49.35], [3.55, 66.02], [3.3, 83.28]]
+                    }
+                ],
                 "thumbnail": "data/maps/data/Tortage/thumb.webp",
                 "board": "data/maps/data/Tortage/board.webp",
                 "losFile": "data/maps/data/Tortage/los-v1.webp"

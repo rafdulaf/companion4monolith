@@ -623,7 +623,14 @@
             "description": {
                 "title": "Tortage",
                 "rules": [
-                    
+                    {
+                        "title": "TODO TRANSLATE Mur de pierre",
+                        "description": "TODO TRANSLATE Ce mur est en pierre et ne peut pas être défoncé avec la compétence Défoncer les cloisons."
+                    },
+                    {
+                        "title": "TODO TRANSLATE Eau",
+                        "description": "TODO TRANSLATE Une unité sans la compétence Natation entrant dans une zone d’eau meurt immédiatement."
+                    }
                 ],
                 "totopic": "TODO"
             }
