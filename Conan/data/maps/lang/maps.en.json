@@ -590,8 +590,31 @@
             "description": {
                 "title": "Beach",
                 "rules": [
-                    
-                ],
+                    {
+                        "title": "TODO TRANSLATE Eau",
+                        "description": "TODO TRANSLATE Une unité sans la compétence Natation entrant dans une zone d’eau meurt immédiatement."
+                    },
+                    {
+                        "title": "TODO TRANSLATE Sous le pont",
+                        "description": "TODO TRANSLATE Ces zones sont considérées comme adjacentes et séparées par une seule limite de zone. Pour déterminer la saturation de ces zones, la surface du pont n’est pas prise en compte."
+                    },
+                    {
+                        "title": "TODO TRANSLATE Épave submergée",
+                        "description": "TODO TRANSLATE Entrer et sortir de cette zone n’est possible que par la zone d’épave échouée ou la zone d’eau située en dessous."
+                    },
+                    {
+                        "title": "TODO TRANSLATE Épave échouée",
+                        "description": "TODO TRANSLATE Sauter de la zone d’épave échouée inflige {dice_red}{dice_red} inévitables et {dice_red} si l’unité possède la compétence Saut. Pour monter ou descendre dans cette zone, une unité possédant la compétence Escalade doit réaliser une Manipulation complexe de difficulté 2 puis un Mouvement normal (Héros), ou dépenser 1 point de mouvement supplémentaire (Overlord). En cas d’échec, elle reste dans sa zone de départ et subit les dégâts comme si elle sautait."
+                    },
+                    {
+                        "title": "TODO TRANSLATE Colline et Pont",
+                        "description": "TODO TRANSLATE Sauter de la colline ou du pont inflige {dice_red}{dice_red} inévitables et {dice_red} si l’unité possède la compétence Saut."
+                    },
+                    {
+                        "title": "TODO TRANSLATE Sommets de falaise",
+                        "description": "TODO TRANSLATE Sauter de la falaise inflige {dice_red}{dice_red}{dice_red} inévitables et {dice_red}{dice_red} si l’unité possède la compétence Saut."
+                    }
+                ],  
                 "totopic": "TODO"
             }
         },

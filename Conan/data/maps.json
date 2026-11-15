@@ -4595,7 +4595,26 @@
                 "version": "1.0",
                 "origins": ["tortage"],
                 "copyright": "Monolith",
-                "rules": [],
+                "rules": [
+                    {
+                        "coordinates": [[19.8, 96.97], [37.26, 96.97], [58.73, 96.6], [78.79, 95.87], [94.09, 95.94], [78.85, 85.25]]
+                    },
+                    {
+                        "coordinates": [[33.52, 38.09], [41.01, 28.14]]
+                    },
+                    {
+                        "coordinates": [[91.55, 82.09]]
+                    },
+                    {
+                        "coordinates": [[91.55, 64.4]]
+                    },
+                    {
+                        "coordinates": [[63.61, 43.1], [49.46, 49.59], [36.57, 35.07]]
+                    },
+                    {
+                        "coordinates": [[5.07, 62.12], [7.68, 44.65], [19.8, 22.62], [4.06, 20.48]]
+                    }
+                ],
                 "thumbnail": "data/maps/data/Beach/thumb.webp",
                 "board": "data/maps/data/Beach/board.webp",
                 "losFile": "data/maps/data/Beach/los-v1.webp"
