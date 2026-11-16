@@ -591,28 +591,28 @@
                 "title": "Beach",
                 "rules": [
                     {
-                        "title": "TODO TRANSLATE Eau",
-                        "description": "TODO TRANSLATE Une unité sans la compétence Natation entrant dans une zone d’eau meurt immédiatement."
+                        "title": "Water",
+                        "description": "Units without Swimming who enter a water area immediately die."
                     },
                     {
-                        "title": "TODO TRANSLATE Sous le pont",
-                        "description": "TODO TRANSLATE Ces zones sont considérées comme adjacentes et séparées par une seule limite de zone. Pour déterminer la saturation de ces zones, la surface du pont n’est pas prise en compte."
+                        "title": "Under the Bridge",
+                        "description": "These areas are considered adjacent and separated by one single border. For determining the areas’ occupation, do not include the bridge area above them."
                     },
                     {
-                        "title": "TODO TRANSLATE Épave submergée",
-                        "description": "TODO TRANSLATE Entrer et sortir de cette zone n’est possible que par la zone d’épave échouée ou la zone d’eau située en dessous."
+                        "title": "Underwater Shipwreck",
+                        "description": "Can only be entered or exited via the Beached Shipwreck area or the water area below it."
                     },
                     {
-                        "title": "TODO TRANSLATE Épave échouée",
-                        "description": "TODO TRANSLATE Sauter de la zone d’épave échouée inflige {dice_red}{dice_red} inévitables et {dice_red} si l’unité possède la compétence Saut. Pour monter ou descendre dans cette zone, une unité possédant la compétence Escalade doit réaliser une Manipulation complexe de difficulté 2 puis un Mouvement normal (Héros), ou dépenser 1 point de mouvement supplémentaire (Overlord). En cas d’échec, elle reste dans sa zone de départ et subit les dégâts comme si elle sautait."
+                        "title": "Beached Shipwreck",
+                        "description": "A unit can move from the Beached Shipwreck area to an adjacent ground area as though it were a border. The unit rolls {dice_red}{dice_red} for falling damage. If the unit has Leap, the unit rolls {dice_red} instead. A unit with Climb may climb up or down into this area by performing a simple Manipulation with a difficulty of 2 then a normal Move (Hero), or by spending 1 additional movement point (Overlord unit). If the Hero fails, they remain in their starting area and roll for falling damage, as above."
                     },
                     {
-                        "title": "TODO TRANSLATE Colline et Pont",
-                        "description": "TODO TRANSLATE Sauter de la colline ou du pont inflige {dice_red}{dice_red} inévitables et {dice_red} si l’unité possède la compétence Saut."
+                        "title": "Hilltop/Bridge",
+                        "description": "A unit can move from a Hilltop/Bridge area to an adjacent ground area as though it were a border. The unit rolls {dice_red}{dice_red} for falling damage. If the unit has Leap, the unit rolls {dice_red} instead."
                     },
                     {
-                        "title": "TODO TRANSLATE Sommets de falaise",
-                        "description": "TODO TRANSLATE Sauter de la falaise inflige {dice_red}{dice_red}{dice_red} inévitables et {dice_red}{dice_red} si l’unité possède la compétence Saut."
+                        "title": "Cliff Edges",
+                        "description": "A unit can move from a Cliff Edge area to an adjacent ground area as though it were a border. The unit rolls {dice_red}{dice_red}{dice_red} for falling damage. If the unit has Leap, the unit rolls {dice_red}{dice_red} instead."
                     }
                 ],  
                 "totopic": "TODO"
@@ -624,12 +624,12 @@
                 "title": "Tortage",
                 "rules": [
                     {
-                        "title": "TODO TRANSLATE Mur de pierre",
-                        "description": "TODO TRANSLATE Ce mur est en pierre et ne peut pas être défoncé avec la compétence Défoncer les cloisons."
+                        "title": "Stone Wall",
+                        "description": "Wall Wrecker cannot be used on this stone wall."
                     },
                     {
-                        "title": "TODO TRANSLATE Eau",
-                        "description": "TODO TRANSLATE Une unité sans la compétence Natation entrant dans une zone d’eau meurt immédiatement."
+                        "title": "Water",
+                        "description": "Units without Swimming who enter a water area immediately die."
                     }
                 ],
                 "totopic": "TODO"
@@ -642,31 +642,31 @@
                 "rules": [
                     {
                         "title": "",
-                        "description": "TODO TRANSLATE Ce plateau représente les trois derniers niveaux de la Tour de l’Éléphant, ainsi que le jardin au rez-de-chaussée entourant la tour. Bien que des murs massifs séparent les trois salles de la tour, elles ne sont pas adjacentes les unes aux autres, et le seul moyen de passer d’un niveau à un autre est d’emprunter le mini-plateau des Escaliers d’argent."
+                        "description": "This game board represents the top three levels of the Tower of the Elephant, along with the ground level garden area surrounding the tower. Although solid walls separate the three halls of the tower, they are not adjacent to each other, and the only way to move from one level of the tower to another level is via the Silver Stairs mini-board."
                     },
                     {
-                        "title": "TODO TRANSLATE Porte du Sorcier- Niveau 1",
-                        "description": "TODO TRANSLATE Ces zones sont adjacentes."
+                        "title": "Sorcerer Door - Level 1",
+                        "description": "These areas are adjacent."
                     },
                     {
-                        "title": "TODO TRANSLATE Porte de l’Éléphant - Niveau 2",
-                        "description": "TODO TRANSLATE Ces zones sont adjacentes."
+                        "title": "Elephant Door - Level 2",
+                        "description": "These areas are adjacent."
                     },
                     {
-                        "title": "TODO TRANSLATE Porte de l’Araignée - Niveau 3",
-                        "description": "TODO TRANSLATE Ces zones sont adjacentes."
+                        "title": "Spider Door - Level 3",
+                        "description": "These areas are adjacent."
                     },
                     {
-                        "title": "TODO TRANSLATE Balcon",
-                        "description": "TODO TRANSLATE Voir les Règles spéciales du scénario pour les mouvements entre le balcon et le jardin."
+                        "title": "Balcony:",
+                        "description": "See Scenario rules for movement between the balcony and the garden areas."
                     },
                     {
-                        "title": "TODO TRANSLATE Escaliers d’argent - Zone",
-                        "description": "TODO TRANSLATE Cette zone représente le mini-plateau des Escaliers d’argent. Aucune figurine ne peut y être placée."
+                        "title": "Silver Stairs - Area",
+                        "description": "This area represents the Silver Stairs mini-board. Miniatures may not be placed on it."
                     },
                     {
-                        "title": "TODO TRANSLATE Escaliers d’argent - Plateau",
-                        "description": "TODO TRANSLATE Ce plateau représente l’escalier en spirale au centre de la Tour de l’Éléphant. Une unité possédant la compétence Saut peut réaliser un saut de difficulté 2 pour sauter par-dessus une zone adjacente. Aucune unité ne peut traverser la balustrade dorée. Chaque zone des Escaliers d’argent peut contenir jusqu’à 2 figurines, quelle que soit la taille de leur socle, avant d’être saturée, mais jamais plus de 2 figurines."
+                        "title": "Silver Stairs - Board",
+                        "description": "This game board represents the spiral staircase in the middle of the Tower of the Elephant. Silver Stairs areas only have line of sight to adjacent Silver Stairs areas. A unit with Leap may perform a Leap with a difficulty of 2 to leap over an adjacent Silver Stairs area. For units with Flying, movement is prohibited across the gold railing on the Silver Stairs. Each area on the Silver Stairs can contain up to 2 miniatures, regardless of base size, before it is considered occupied but never more than 2 miniatures."
                     }                    
                 ],
                 "totopic": "TODO"
@@ -678,8 +678,8 @@
                 "title": "Lotus Den",
                 "rules": [
                     {
-                        "title": "TODO TRANSLATE Murs",
-                        "description": "TODO TRANSLATE Tous les murs sont en pierre et ne peuvent pas être défoncés avec la compétence Défoncer les cloisons."
+                        "title": "Walls",
+                        "description": "All walls are stone and cannot be wrecked using Wall Wrecker."
                     }
                 ],
                 "totopic": "TODO"
