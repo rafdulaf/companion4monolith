@@ -830,6 +830,54 @@
                 "textSize": 148,
                 "textInter": 76
             }
+        },
+        "infestation": {
+            "title": "TODO TRANSLATE Infestation",
+            "text": "TODO TRANSLATE",
+            "textStyle": {
+                "textSize": 142,
+                "textInter": 76
+            }
+        },
+        "arcane_shove": {
+            "title": "TODO TRANSLATE Arcane Shove",
+            "text": "TODO TRANSLATE",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
+        "fangs_of_set": {
+            "title": "TODO TRANSLATE Fangs of Set",
+            "text": "TODO TRANSLATE",
+            "textStyle": {
+                "textSize": 124,
+                "textInter": 66
+            }
+        },
+        "projection": {
+            "title": "TODO TRANSLATE Projection",
+            "text": "TODO TRANSLATE",
+            "textStyle": {
+                "textSize": 124,
+                "textInter": 66
+            }
+        },
+        "yags_rage": {
+            "title": "TODO TRANSLATE Yag’s Rage",
+            "text": "TODO TRANSLATE",
+            "textStyle": {
+                "textSize": 124,
+                "textInter": 66
+            }
+        },
+        "power_of_yag": {
+            "title": "TODO TRANSLATE Power of Yag",
+            "text": "TODO TRANSLATE",
+            "textStyle": {
+                "textSize": 124,
+                "textInter": 66
+            }
         }
     }
 }

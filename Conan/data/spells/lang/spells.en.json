@@ -827,6 +827,54 @@
                 "textSize": 148,
                 "textInter": 76
             }
+        },
+        "infestation": {
+            "title": "Infestation",
+            "text": "Place an Infestation token {token_infestation} in your area or in an area adjacent to an Infestation token in your line of sight, ignoring obstacles (walls, doors, fl aps, etc.). Only 1 token per area.",
+            "textStyle": {
+                "textSize": 142,
+                "textInter": 76
+            }
+        },
+        "arcane_shove": {
+            "title": "Arcane Shove",
+            "text": "Target one Overlord unit in your area per gem already in your Melee Attack space. Move the target(s) 1 area, following movement restrictions.",
+            "textStyle": {
+                "textSize": 150,
+                "textInter": 66
+            }
+        },
+        "fangs_of_set": {
+            "title": "Fangs of Set",
+            "text": "Attack a unit in your line of sight; roll plus an additional {dice_orange_reroll} per gem already in your Ranged Attack space. If the attack power is greater than the defense power, the defender suffers damage equal to the difference",
+            "textStyle": {
+                "textSize": 124,
+                "textInter": 66
+            }
+        },
+        "projection": {
+            "title": "Projection",
+            "text": "Place the Incantation token {token_invocation} in your area. Then move to any area on the board. This movement is not affected by obstacles (walls, doors, flaps, etc.), hindering, the Blocking skill, or elevation levels. At the beginning of your next turn or activation, return to the area with the {token_invocation} token and remove",
+            "textStyle": {
+                "textSize": 124,
+                "textInter": 66
+            }
+        },
+        "yags_rage": {
+            "title": "Yag’s Rage",
+            "text": "Attack a unit in your line of sight; roll {dice_orange}{dice_orange}{dice_orange}. If the attack power is greater than the defense power, the defender suffers damage equal to the difference.",
+            "textStyle": {
+                "textSize": 160,
+                "textInter": 60
+            }
+        },
+        "power_of_yag": {
+            "title": "Power of Yag",
+            "text": "Target another Hero in your line of sight. Add {dice_orange} to their next Attack, Guard, or Manipulation action per gem spent to cast this spell. Can be cast multiple times.",
+            "textStyle": {
+                "textSize": 143,
+                "textInter": 70
+            }
         }
     }
 }

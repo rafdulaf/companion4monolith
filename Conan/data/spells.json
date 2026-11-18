@@ -2416,7 +2416,9 @@
             "forEnergy": false,
 
             "image": "data/spells/img/flesh.webp",
-            "origins": ["zamora"]
+            "origins": ["zamora"],
+            
+            "tokens": ["reinforcement"]
         },
 
         {
@@ -2642,6 +2644,154 @@
 
             "image": "data/spells/img/overload.webp",
             "origins": ["zamora"]        
-        }   
+        },
+        
+        {
+            "id": "infestation",
+            
+            "cost": "3",
+            "saturation": "3",
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": true,
+            "forHeroes": true,
+
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": false,
+            "forEnergy": false,
+
+            "image": "data/spells/img/infestation.webp",
+            "origins": ["zamora"],
+            
+            "tokens": ["infestation"]
+        },
+
+        {
+            "id": "arcane_shove",
+            
+            "cost": "1",
+            "saturation": "1",
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": false,
+            "forHeroes": true,
+
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": true,
+            "forRange": false,
+            "forEnergy": false,
+
+            "image": "data/spells/img/arcane_shove.webp",
+            "origins": ["zamora"]        
+        },
+        
+        {
+            "id": "fangs_of_set",
+            
+            "cost": "1",
+            "saturation": "1",
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": false,
+            "forHeroes": true,
+
+            "forSkill": false,
+            "forAttack": true,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": false,
+
+            "image": "data/spells/img/fangs_of_set.webp",
+            "origins": ["zamora"]        
+        },
+        
+        {
+            "id": "projection",
+            
+            "cost": "3",
+            "saturation": "3",
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": false,
+            "forHeroes": true,
+
+            "forSkill": false,
+            "forAttack": true,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": true,
+            "forRange": false,
+            "forEnergy": false,
+
+            "image": "data/spells/img/projection.webp",
+            "origins": ["zamora"],
+            
+            "tokens": ["invocation"]
+        },
+
+        {
+            "id": "yags_rage",
+            
+            "cost": "3",
+            "saturation": "3",
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": false,
+            "forHeroes": true,
+
+            "forSkill": false,
+            "forAttack": true,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": false,
+
+            "image": "data/spells/img/yags_rage.webp",
+            "origins": ["zamora"]
+        },
+
+        {
+            "id": "power_of_yag",
+            
+            "cost": "1",
+            "saturation": "3",
+            "explosion": false,
+            "reaction": true,
+
+            "forOverlord": false,
+            "forHeroes": true,
+
+            "forSkill": false,
+            "forAttack": true,
+            "forDefense": true,
+            "forFight": false,
+            "forManipulation": true,
+            "forMove": false,
+            "forRange": false,
+            "forEnergy": false,
+
+            "image": "data/spells/img/power_of_yag.webp",
+            "origins": ["zamora"]
+        }
     ]
 }
