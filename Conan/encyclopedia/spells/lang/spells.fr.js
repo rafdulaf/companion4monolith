@@ -6,6 +6,7 @@ EncyclopediaSpells._i18n = {
     'from': "Disponible dans :",
     'fromAnd': "et",
     'forVersus': "Spécialement adapté au mode Versus",
+    'forBlessing': "Pour le mode Bénédiction",
     'card': "exemplaire",
     'cards': "exemplaires",
     'clarification': "Clarification :",
@@ -65,7 +66,8 @@ EncyclopediaSpells._facets = {
         'label': "Type",
         'values': {
             'normal': { 'label': "Normal" },
-            'versus': { 'label': "Versus" }
+            'versus': { 'label': "Versus" },
+            'blessing': { 'label': "Bénédiction" }
         }
     },
     'empty': {

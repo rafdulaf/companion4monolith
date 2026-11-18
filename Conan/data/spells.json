@@ -2342,6 +2342,306 @@
 
             "image": "data/spells/img/protective_circle.webp",
             "origins": ["red-nails"]
-        }
+        },
+        
+        {
+            "id": "power",
+            
+            "type": "blessing",
+
+            "saturation": null,
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": true,
+            "forHeroes": false,
+
+            "forSkill": false,
+            "forAttack": true,
+            "forDefense": false,
+            "forFight": true,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": true,
+            "forEnergy": false,
+
+            "image": "data/spells/img/power.webp",
+            "origins": ["zamora"]
+        },
+
+        {
+            "id": "speed",
+            
+            "type": "blessing",
+
+            "saturation": null,
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": true,
+            "forHeroes": false,
+
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": true,
+            "forRange": false,
+            "forEnergy": false,
+
+            "image": "data/spells/img/speed.webp",
+            "origins": ["zamora"]
+        },
+
+        {
+            "id": "flesh",
+            
+            "type": "blessing",
+
+            "saturation": null,
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": true,
+            "forHeroes": false,
+
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": false,
+            "forEnergy": false,
+
+            "image": "data/spells/img/flesh.webp",
+            "origins": ["zamora"]
+        },
+
+        {
+            "id": "defense",
+            
+            "type": "blessing",
+
+            "saturation": null,
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": true,
+            "forHeroes": false,
+
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": true,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": false,
+            "forEnergy": false,
+
+            "image": "data/spells/img/defense.webp",
+            "origins": ["zamora"]
+        },
+
+        {
+            "id": "dread",
+            
+            "type": "blessing",
+
+            "saturation": null,
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": true,
+            "forHeroes": false,
+
+            "forSkill": "horror",
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": false,
+            "forEnergy": false,
+
+            "image": "data/spells/img/dread.webp",
+            "origins": ["zamora"]        
+        },
+
+        {
+            "id": "calamity",
+            
+            "type": "blessing",
+
+            "saturation": null,
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": true,
+            "forHeroes": false,
+
+            "forSkill": "jinx",
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": false,
+            "forEnergy": false,
+
+            "image": "data/spells/img/calamity.webp",
+            "origins": ["zamora"]        
+        },
+
+        {
+            "id": "death",
+            
+            "type": "blessing",
+
+            "saturation": null,
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": true,
+            "forHeroes": false,
+
+            "forSkill": "attack_from_beyond",
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": false,
+            "forEnergy": false,
+
+            "image": "data/spells/img/death.webp",
+            "origins": ["zamora"]        
+        },
+
+        {
+            "id": "distortion",
+            
+            "type": "blessing",
+
+            "saturation": null,
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": true,
+            "forHeroes": false,
+
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": true,
+            "forRange": false,
+            "forEnergy": false,
+
+            "image": "data/spells/img/distortion.webp",
+            "origins": ["zamora"]        
+        },
+
+        {
+            "id": "diminish",
+            
+            "type": "blessing",
+
+            "saturation": null,
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": true,
+            "forHeroes": false,
+
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": true,
+            "forRange": false,
+            "forEnergy": false,
+
+            "image": "data/spells/img/diminish.webp",
+            "origins": ["zamora"]        
+        },
+
+        {
+            "id": "exhaust",
+            
+            "type": "blessing",
+
+            "saturation": null,
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": true,
+            "forHeroes": false,
+
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": false,
+            "forEnergy": true,
+
+            "image": "data/spells/img/exhaust.webp",
+            "origins": ["zamora"]        
+        },
+
+        {
+            "id": "energy",
+            
+            "type": "blessing",
+
+            "saturation": null,
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": true,
+            "forHeroes": false,
+
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": false,
+            "forEnergy": true,
+
+            "image": "data/spells/img/energy.webp",
+            "origins": ["zamora"]        
+        },
+
+        {
+            "id": "overload",
+            
+            "type": "blessing",
+
+            "saturation": null,
+            "explosion": false,
+            "reaction": false,
+
+            "forOverlord": true,
+            "forHeroes": false,
+
+            "forSkill": false,
+            "forAttack": false,
+            "forDefense": false,
+            "forFight": false,
+            "forManipulation": false,
+            "forMove": false,
+            "forRange": false,
+            "forEnergy": false,
+
+            "image": "data/spells/img/overload.webp",
+            "origins": ["zamora"]        
+        }   
     ]
 }

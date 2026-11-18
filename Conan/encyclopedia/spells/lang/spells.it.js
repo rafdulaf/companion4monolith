@@ -7,6 +7,7 @@ EncyclopediaSpells._i18n = {
     'from': "Disponibile in:",
     'fromAnd': "e",
     'forVersus': "Specificatamente adattato per modalità Versus",
+    'forBlessing': "TODO Translate For Blessing mode",
     'card': "copia",
     'cards': "copie",
     'clarification': "Chiarificazione:",
@@ -66,7 +67,8 @@ EncyclopediaSpells._facets = {
         'label': "Tipologia",
         'values': {
             'normal': { 'label': "Normale" },
-            'versus': { 'label': "Versus" }
+            'versus': { 'label': "Versus" },
+            'blessing': { 'label': "TODO TRANSLATE Blessing" }
         }
     },
     'empty': {

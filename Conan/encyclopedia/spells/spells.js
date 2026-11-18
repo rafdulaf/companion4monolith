@@ -129,10 +129,11 @@ var EncyclopediaSpells = {
 
             {
                 id:'type',
-                values: [ { id: "normal" }, { id: "versus" } ],
+                values: [ { id: "normal" }, { id: "versus" }, { id: "blessing" } ],
                 filter: function(item, selectedValues) {
                     return ((!item.type || item.type == "normal") && (selectedValues.indexOf('normal')!=-1))
-                        || (item.type == "versus" && (selectedValues.indexOf('versus')!=-1));
+                        || (item.type == "versus" && (selectedValues.indexOf('versus')!=-1))
+                        || (item.type == "blessing" && (selectedValues.indexOf('blessing')!=-1));
                 }
             },
 
@@ -329,6 +330,10 @@ var EncyclopediaSpells = {
         if (spell.type == "versus")
         {
             forVersus = "<div class='from'>" + EncyclopediaSpells._i18n.forVersus + "</div>";
+        }
+        else if (spell.type == "blessing")
+        {
+            forVersus = "<div class='from'>" + EncyclopediaSpells._i18n.forBlessing + "</div>";
         }
 
         var tokens = "";
