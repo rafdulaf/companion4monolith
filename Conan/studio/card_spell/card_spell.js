@@ -56,12 +56,15 @@ var CardSpell = mergeObject(StudioItem, {
         code += "<div class=\"text\" style=\"font-size: " + card.textSize + "%; line-height: " + card.textInter + "%; \">" + About._replace(card.text).replace(/\n/g, '<br/>') + "</div>";
 
         var hasCost = parseInt(card.cost) > 0;
-        var hasSaturation = parseInt(card.saturation) > 0;
-        code += "<div class=\"cost" + (hasSaturation ? "" : " noSaturation") + (hasCost ? "" : " noCost") + "\">" + (hasCost ? card.cost : "X") + "</div>";
-        if (hasSaturation)
+        if (card.saturation)
         {
-            code += "<div class='cost-and-saturation'><img src=\"studio/card_spell/img/slash2.webp?version=" + Version + "\"/></div>";
-            code += "<div class=\"saturation\">" + card.saturation + "</div>";
+            var hasSaturation = parseInt(card.saturation) > 0;
+            code += "<div class=\"cost" + (hasSaturation ? "" : " noSaturation") + (hasCost ? "" : " noCost") + "\">" + (hasCost ? card.cost : "X") + "</div>";
+            if (hasSaturation)
+            {
+                code += "<div class='cost-and-saturation'><img src=\"studio/card_spell/img/slash2.webp?version=" + Version + "\"/></div>";
+                code += "<div class=\"saturation\">" + card.saturation + "</div>";
+            }
         }
 
         if (card.explosion)
@@ -101,6 +104,7 @@ var CardSpell = mergeObject(StudioItem, {
                         + "<select id='eqtype' name='cardtype'>"
                         +     "<option value='normal'>" + CardSpell._i18n.typeNormal + "</option>"
                         +     "<option value='versus'>" + CardSpell._i18n.typeVersus + "</option>"
+                        +     "<option value='blessing'>" + CardSpell._i18n.typeBlessing + "</option>"
                         + "</select>"
                     + "</div>"
                 + "</div>"
@@ -187,7 +191,7 @@ var CardSpell = mergeObject(StudioItem, {
                 k.attr("data-value", "")
                     .selectmenu({ appendTo: k.parent(), width: k.is(".dice") ? 40 : 58, change: function(event, selection) {
                         $(this).attr("data-value", selection.item.value);
-                        Tile._preview();
+                        CardSpell._preview();
                     }});
             });        
 
@@ -208,7 +212,7 @@ var CardSpell = mergeObject(StudioItem, {
             textSize: $(".dialog input[name=cardtextsize]")[0].value || "150",
             textInter: $(".dialog input[name=cardtextinter]")[0].value || "66",
             cost: $(".dialog input[name=cardcost]")[0].value || "0",
-            saturation: $(".dialog input[name=cardsaturation]")[0].value || "0",
+            saturation: $(".dialog input[name=cardsaturation]")[0].value,
             image: $(".dialog input[name=cardimage]")[0].value,
             imageEffect: $(".dialog input[name=cardimageeffect]")[0].checked,
             imagelocation: {x: $(".dialog input[name=cardimagelocation]")[0].value || "50", y: $(".dialog input[name=cardimagelocation2]")[0].value || "50"},

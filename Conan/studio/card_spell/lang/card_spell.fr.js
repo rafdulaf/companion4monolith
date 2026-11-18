@@ -10,6 +10,7 @@ CardSpell._i18n = {
     'type': "Type",
     'typeNormal': "Normal",
     'typeVersus': "Versus",
+    'typeBlessing': "Bénédiction",
     'text': "Effet",
     'textPh': "?",
     'textHelp': "Pour insérer des images, utilisez: {dice_yellow}, {dice_orange}, {dice_red}, {dice_yellow_reroll}, {dice_orange_reroll}, {dice_red_reroll}, {gem_blue} ou {gem_red}.",
