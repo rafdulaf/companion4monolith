@@ -831,34 +831,34 @@
         },
         "infestation": {
             "title": "Infestation",
-            "text": "Placez un pion Infestation {token_infestation} dans votre zone, ou dans une zone adjacente à un pion Infestation en ligne de vue en ignorant les obstacles (murs, portes, tentures…). Un pion maximum par zone.",
+            "text": "Placez un pion Infesta&shy;tion {token_infestation} dans votre zone, ou dans une zone adjacente à un pion In&shy;festation en ligne de vue en ignorant les obstacles (murs, portes, tentures…). Un pion maximum par zone.",
             "textStyle": {
-                "textSize": 142,
+                "textSize": 132,
                 "textInter": 76
             }
         },
         "arcane_shove": {
             "title": "Poussée magique",
-            "text": "Ciblez une unité de l’Overlord dans votre zone par gemme déjà placée dans votre case Attaque au corps-à-corps. Déplacez-la (ou -les) d’une zone, en suivant les restrictions de mouvement.",
+            "text": "Ciblez une unité de l’Overlord dans votre zone par gemme déjà placée dans votre case Attaque au corps-à-corps. Déplacez-la (ou -les) d’une zone, en sui&shy;vant les restrictions de mouvement.",
             "textStyle": {
-                "textSize": 140,
-                "textInter": 70
+                "textSize": 142,
+                "textInter": 71
             }
         },
         "fangs_of_set": {
             "title": "Crocs de Set",
-            "text": "Attaquez une unité en ligne de vue ; lancez plus {dice_orange_reroll} supplémentaire par gemme déjà placée dans votre case Attaque à distance (Défense possible).",
+            "text": "Attaquez une unité en ligne de vue ; lancez {dice_red}, plus {dice_orange_reroll} supplémentaire par gemme déjà placée dans votre case Attaque à distance (Défense possible).",
             "textStyle": {
-                "textSize": 124,
-                "textInter": 66
+                "textSize": 130,
+                "textInter": 76
             }
         },
         "projection": {
             "title": "Projection",
-            "text": "Placez le pion Incantation {token_invocation} dans votre zone, puis déplacez-vous n’importe où sur le plateau. Ce mouvement n’est pas affecté par les obstacles (murs, portes, tentures…), le phénomène de gêne, la compétence Bloqueur, ni les niveaux d’élévation. Au début de votre prochain tour ou activation, retournez dans la zone du pion et retirez",
+            "text": "Placez le pion Invoca&shy;tion {token_invocation} dans votre zone, puis déplacez-vous n’im&shy;porte où sur le plateau. Ce mouvement n’est pas affecté par les obstacles (murs, portes, tentures…), le phénomène de gêne, la compétence Bloqueur, ni les niveaux d’élévation. Au début de votre pro&shy;chain tour ou activation, retournez dans la zone du pion et retirez-le.",
             "textStyle": {
-                "textSize": 124,
-                "textInter": 66
+                "textSize": 105,
+                "textInter": 70
             }
         },
         "yags_rage": {
@@ -873,8 +873,8 @@
             "title": "Puissance de Yag",
             "text": "Ciblez un Héros en ligne de vue. Ajoutez {dice_orange} à sa prochaine action d’Attaque, de Défense ou de Manipulation, par gemme dépensée pour lancer ce sort. Peut être lancé plu&shy;sieurs fois.",
             "textStyle": {
-                "textSize": 134,
-                "textInter": 70
+                "textSize": 133,
+                "textInter": 76
             }
         }
     }
