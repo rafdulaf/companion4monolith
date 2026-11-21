@@ -505,6 +505,22 @@
         },
         "alchemist-s-staff": {
             "title": "Alchemist's Staff"
+        },
+        "heart-of-the-elephant": {
+            "title": "Heart of the Elephant",
+            "text": "\n\n\n\nRecover 3 extra {gem_blue}\nduring the Stance phase.",
+            "textStyle": {
+                "textSize": 89,
+                "textInter": 76
+            }
+        },
+        "lotus-powder": {
+            "title": "Lotus Powder",
+            "text": "Place 3 {gem_red} on this card.\n You may perform a simple Manipulation to place a {gem_red} in an adjacent area. All units in that \narea or entering that area suffer 1 unavoidable damage. \nDiscard the {gem_red} at the beginning of the Heroes’ next turn.",
+            "textStyle": {
+                "textSize": 89,
+                "textInter": 72
+            }
         }
     }
 }

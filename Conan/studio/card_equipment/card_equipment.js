@@ -261,14 +261,14 @@ var CardEquipment = mergeObject(StudioItem, {
             }
             else
             {
-                if (level == 0 && card.image && !card.textStartLeft)
+                if (level == 0 && card.image && !card.textStartLeft && card.textSeparator !== false)
                 {
                     code += "<div class='text-separator'><img class=\"background-text-separator\" src=\"studio/card_equipment/img/text-separator.webp?version=" + Version + "\"/></div>";
                 }
                 
                 if (textMalus > 0) textMalus--;
                 
-                code += "<div class='text lastIsLarge-" + lastIsLarge + " level" + (level - textMalus) + (card.textStartLeft ? " startAtLeft" : "") + "' style='font-size: " + card.textSize + "%; line-height: " + card.textInter + "%;'><div>" + toText(About._replace(card.text)) + "</div></div>";
+                code += "<div class='text lastIsLarge-" + lastIsLarge + " level" + (level - textMalus) + (card.textStartLeft ? " startAtLeft" : (card.textSeparator === false ? " noTextSeparator" : "")) + "' style='font-size: " + card.textSize + "%; line-height: " + card.textInter + "%;'><div>" + toText(About._replace(card.text)) + "</div></div>";
             }
             
             function toText(text) {
@@ -401,7 +401,8 @@ var CardEquipment = mergeObject(StudioItem, {
                     + "<input id=\"eqtextinter\" name=\"cardtextinter\" type=\"number\" autocomplete=\"off\" placeholder=\"" + CardEquipment._i18n.textInterPh + "\" onkeyup=\"CardEquipment._preview();\" onchange=\"CardEquipment._preview();\"/>"
                 + "</div>"
                 + "<div class=\"field textalign\">"
-                    + "<input id=\"eqtextalign\" name=\"cardtextalign\" type=\"checkbox\" onchange=\"CardEquipment._preview();\"/><label for=\"eqtextalign\">" + CardEquipment._i18n.textAlignLeft + "</label>"
+                    + "<div><input id=\"eqtextalign\" name=\"cardtextalign\" type=\"checkbox\" onchange=\"$('#eqtextseparator').prop('disabled', this.checked); CardEquipment._preview();\"/><label for=\"eqtextalign\">" + CardEquipment._i18n.textAlignLeft + "</label></div>"
+                    + "<div><input id=\"eqtextseparator\" name=\"cardtextseparator\" type=\"checkbox\" checked onchange=\"CardEquipment._preview();\"/><label for=\"eqtextseparator\">" + CardEquipment._i18n.textSeparator + "</label></div>"
                 + "</div>"
             + "</div>"
             + "</div>"
@@ -447,6 +448,7 @@ var CardEquipment = mergeObject(StudioItem, {
             textSize: "100",
             textInter: "70",
             textStartLeft: false,
+            textSeparator: true,
             melee: { 0: "none", 1: "none", 2: "none", 3: "none" },
             ranged: { 0: "none", 1: "none", throwable: false },
             manipulation: { 0: "none", 1: "none", explosive: false, force: "false", add: true },
@@ -493,6 +495,7 @@ var CardEquipment = mergeObject(StudioItem, {
             textSize: $(".dialog input[name=cardtextsize]")[0].value || "100",
             textInter: $(".dialog input[name=cardtextinter]")[0].value || "70",
             textStartLeft: $(".dialog input[name=cardtextalign]")[0].checked,
+            textSeparator: $(".dialog input[name=cardtextseparator]")[0].checked,
             movement: parseInt($(".dialog input[name=cardmovement]")[0].value),
             melee: { 0: $(".dialog select[name=cardmelee1]")[0].value, 1: $(".dialog select[name=cardmelee2]")[0].value, 2: $(".dialog select[name=cardmelee3]")[0].value, 3: $(".dialog select[name=cardmelee4]")[0].value },
             skills: { 0: $(".dialog select[name=cardskills1]")[0].value, 1: $(".dialog select[name=cardskills2]")[0].value },
@@ -518,6 +521,8 @@ var CardEquipment = mergeObject(StudioItem, {
         $(".dialog input[name=cardtextsize]")[0].value = card.textSize;
         $(".dialog input[name=cardtextinter]")[0].value = card.textInter;
         $(".dialog input[name=cardtextalign]")[0].checked = card.textStartLeft;
+        $(".dialog input[name=cardtextseparator]")[0].checked = card.textSeparator !== false;
+        $(".dialog input[name=cardtextseparator]")[0].disabled = !!card.textStartLeft;
         $(".dialog input[name=cardmovement]")[0].value = card.movement;
         $(".dialog select[name=cardmelee1]")[0].value = card.melee['0']; $(".dialog select[name=cardmelee1]").attr("data-value", card.melee['0']);
         $(".dialog select[name=cardmelee2]")[0].value = card.melee['1']; $(".dialog select[name=cardmelee2]").attr("data-value", card.melee['1']);

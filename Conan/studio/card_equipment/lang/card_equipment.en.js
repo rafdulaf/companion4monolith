@@ -16,6 +16,7 @@ CardEquipment._i18n = {
     'textInter': "Line height",
     'textInterPh': "0",
     'textAlignLeft': "Start at left",
+    'textSeparator': "Text separator",
     'weight': "Encumbrance",
     'weightPh': "?",
     'movement': "Move",

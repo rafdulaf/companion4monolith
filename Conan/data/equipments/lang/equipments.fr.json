@@ -512,6 +512,22 @@
         },
         "alchemist-s-staff": {
             "title": "Bâton d'Alchimiste"
+        },
+        "heart-of-the-elephant": {
+            "title": "Heart of the Elephant",
+            "text": "\n\n\n\nRécupérez 3 {gem_blue} supplémentaires\nlors de la phase de Déclaration\nde l’état des Héros.",
+            "textStyle": {
+                "textSize": 89,
+                "textInter": 76
+            }
+        },
+        "lotus-powder": {
+            "title": "Lotus Powder",
+            "text": "Placez 3 {gem_red} sur cette carte. Vous pouvez placer une {gem_red} dans une zone adjacente, avec une Manipulation simple. Toutes les unités dans cette zone ou y entrant subissent 1 dégât inévitable. Défaussez la {gem_red} au début du tour suivant des Héros.",
+            "textStyle": {
+                "textSize": 89,
+                "textInter": 76
+            }
         }
     }
 }

@@ -227,6 +227,7 @@ var EncyclopediaEquipments = {
             textSize: ((equipment2 || equipment).textStyle || {}).textSize || 100,
             textInter: ((equipment2 || equipment).textStyle || {}).textInter || 70,
             textStartLeft: equipment.textStartLeft,
+            textSeparator: equipment.textSeparator,
             encumbrance: equipment.encumbrance,
             movement: equipment.movement || "",
             melee: equipment.melee,
