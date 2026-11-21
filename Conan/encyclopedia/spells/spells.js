@@ -228,6 +228,7 @@ var EncyclopediaSpells = {
             id: spell.id + "-" + Math.random(),
             name: (spell2 || spell).title,
             type: spell.type,
+            back: spell.type == "blessing" ? "spider" : "spell",
             longName: (spell2 || spell).titleLong,
             text: (spell2 || spell).text,
             textSize: (spell2 || spell).textStyle.textSize,

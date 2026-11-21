@@ -2057,6 +2057,7 @@ const urlsToCache = [
 	"studio/card_equipment/lang/card_equipment.LANGUAGE.js",
 	"studio/card_spell/card_spell.css",
 	"studio/card_spell/card_spell.js",
+	"studio/card_spell/img/back-spider.webp",
 	"studio/card_spell/img/back.webp",
 	"studio/card_spell/img/background-normal.webp",
 	"studio/card_spell/img/background-versus.webp",

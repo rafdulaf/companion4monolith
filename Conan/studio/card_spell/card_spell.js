@@ -38,7 +38,7 @@ var CardSpell = mergeObject(StudioItem, {
         {
             for (var i in cards)
             {
-                html += "<div id=\"spell-back-" + i + "\"  class='printoverflow back invisible'><img src=\"studio/card_spell/img/back.webp?version=" + Version + "\"/></div>"
+                html += "<div id=\"spell-back-" + i + "\"  class='printoverflow back invisible'><img src=\"studio/card_spell/img/" + (cards[i].back === "spider" ? "back-spider.webp" : "back.webp") + "?version=" + Version + "\"/></div>"
             }
         }
 
@@ -107,6 +107,13 @@ var CardSpell = mergeObject(StudioItem, {
                         +     "<option value='blessing'>" + CardSpell._i18n.typeBlessing + "</option>"
                         + "</select>"
                     + "</div>"
+                    + "<div class=\"field back\">"
+                        + "<label for=\"eqback\">" + CardSpell._i18n.back + "</label>"
+                        + "<select id='eqback' name='cardback'>"
+                        +     "<option value='spell'>" + CardSpell._i18n.backSpell + "</option>"
+                        +     "<option value='spider'>" + CardSpell._i18n.backSpider + "</option>"
+                        + "</select>"
+                    + "</div>"
                 + "</div>"
                 + "<div class=\"field cost\">"
                     + "<label for=\"eqcost\">" + CardSpell._i18n.cost + "</label>"
@@ -172,6 +179,7 @@ var CardSpell = mergeObject(StudioItem, {
             id: Math.random(),
             name: "",
             type: "normal",
+            back: "spell",
             text: "",
             textSize: "150",
             textInter: "66",
@@ -186,7 +194,7 @@ var CardSpell = mergeObject(StudioItem, {
             reaction: false
         };
         
-        $("#eqtype").each (function (i) {
+        $("#eqtype,#eqback").each (function (i) {
                 var k = $(this);
                 k.attr("data-value", "")
                     .selectmenu({ appendTo: k.parent(), width: k.is(".dice") ? 40 : 58, change: function(event, selection) {
@@ -208,6 +216,7 @@ var CardSpell = mergeObject(StudioItem, {
             id: $(".dialog input[name=cardpos]")[0].value,
             name: $(".dialog input[name=cardname]")[0].value,
             type: $(".dialog select[name=cardtype]")[0].value,
+            back: $(".dialog select[name=cardback]")[0].value,
             text: $(".dialog textarea[name=cardtext]")[0].value,
             textSize: $(".dialog input[name=cardtextsize]")[0].value || "150",
             textInter: $(".dialog input[name=cardtextinter]")[0].value || "66",
@@ -227,6 +236,7 @@ var CardSpell = mergeObject(StudioItem, {
         $(".dialog input[name=cardpos]")[0].value = card.id;
         $(".dialog input[name=cardname]")[0].value = card.name;
         $(".dialog select[name=cardtype]")[0].value = card.type || "normal";  $(".dialog select[name=cardtype]").attr("data-value", card.type || "normal");
+        $(".dialog select[name=cardback]")[0].value = card.back || "spell";  $(".dialog select[name=cardback]").attr("data-value", card.back || "spell");
         $(".dialog textarea[name=cardtext]")[0].value = card.text;
         $(".dialog input[name=cardtextsize]")[0].value = card.textSize;
         $(".dialog input[name=cardtextinter]")[0].value = card.textInter;
