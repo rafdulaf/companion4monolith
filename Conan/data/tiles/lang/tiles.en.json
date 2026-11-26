@@ -1482,6 +1482,9 @@
         },
         "yara": {
             "name": "Yara"
+        },
+        "high-priest": {
+            "name": "High Priest"
         }
     }
 }

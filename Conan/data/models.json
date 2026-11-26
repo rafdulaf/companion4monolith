@@ -2188,7 +2188,20 @@
             "sculptor": { "name": "Gael Goumon", "link": "https://www.facebook.com/gael.goumon" },
             "paint": null,
             "type": "human",
-            "size": { "base": { "type": "circle", "diameter": 25 }, "height": 40 },
+            "size": null,
+            "origins": ["zamora"],
+            "count": 1,
+            "forum": null
+        },
+        
+        {
+            "id": "high-priest",
+            "thumb": "data/models/img/high-priest_sd.webp",
+            "images": ["data/models/img/high-priest_1.webp"],
+            "sculptor": { "name": "Gael Goumon", "link": "https://www.facebook.com/gael.goumon" },
+            "paint": null,
+            "type": "human",
+            "size": null,
             "origins": ["zamora"],
             "count": 1,
             "forum": null

@@ -7418,6 +7418,27 @@
             "image_zoom": 60,
             "model": "yara",
             "origins": ["zamora"]
+        },
+        
+        {
+            "id": "high-priest",
+            
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "1",
+            "attacktype": "ranged",
+            "dices": { "0": "orangereroll", "1": "orangereroll", "2": "none", "3": "none" },
+            "skills": { "0": "magic/spell_caster", "1": "attack/attack_from_beyond", "2": "none", "3": "none" },
+            "tokens": [ 
+                { "image": "data/tiles/img/high-priest_token.webp", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+             ],
+            
+            "image": "data/tiles/img/high-priest.webp",
+            "imageHD": "data/tiles/img/high-priest_hd.webp",
+            "image_location": {"x":53, "y":52},
+            "image_zoom": 98,
+            "model": "high-priest",
+            "origins": ["zamora"]
         }
     ]
 }
