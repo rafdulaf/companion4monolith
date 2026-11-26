@@ -1,10 +1,15 @@
 const EXTENSION = null; // "shadowsoverluxur";
 
-await $.ajax({
+/*await $.ajax({
     dataType: "script",
     cache: true,
     crossDomain:true,
     url: '../tools/encyclopedia/html2canvas.js' + "?version=" + Version
+});*/
+await $.ajax({
+    url: 'https://unpkg.com/modern-screenshot@4.7.0/dist/index.js',
+    dataType: 'script',
+    cache: true
 });
 
 async function exportImage(filename, data)
@@ -29,7 +34,7 @@ async function exportElement(id, filename)
     let count = element.getAttribute("data-count");
     element.removeAttribute("data-count", 0); // Remove the multiplicator for many items
     
-    let canvas = await html2canvas(element.children[0]);
+    /*let canvas = await html2canvas(element.children[0]);
     
     // Fixing
     if (count)
@@ -41,7 +46,24 @@ async function exportElement(id, filename)
     
     // Export    
     await exportImage(filename, canvas.toDataURL('image/webp'))
-    canvas = null;
+    canvas = null;*/
+    await document.fonts.ready;
+
+    const dataUrl = await modernScreenshot.domToWebp(element.children[0], {
+        scale: window.devicePixelRatio,
+        quality: 0.95
+    });
+
+    // Fixing
+    if (count)
+    {
+        element.setAttribute("data-count", count);
+    }
+    element.style.backgroundColor = null;
+    element.children[0].style.margin = null;
+
+    // Export
+    await exportImage(filename, dataUrl);    
 }
 
 async function exportHero(hero)
