@@ -1484,6 +1484,14 @@
         },
         "high-priest": {
             "name": "TODO TRANSLATE High Priest"
-        }        
+        },
+        "yag-kosha": {
+            "name": "Yag-Kosha",
+            "quote": {
+                "text": "TODO TRANSLATE “I am Yag-Kosha, the last of my race. I have lived for a thousand years in this tomb, and I have seen the world change. I have seen the rise and fall of empires, the coming and going of kings. I have seen men who were once mighty become dust, and I have seen the weak rise to power. But through it all, I have remained here, a silent witness to the passage of time.”",
+                "origin": "TODO TRANSLATE The Tower of the Elephant"
+            }
+        }
+        
     }
 }

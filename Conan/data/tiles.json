@@ -7439,6 +7439,27 @@
             "image_zoom": 98,
             "model": "high-priest",
             "origins": ["zamora"]
+        },
+        
+        {
+            "id": "yag-kosha",
+            
+            "colors": ["gray"],
+            "movement": "1",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "yellow", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "magic/spell_caster", "1": "miscellaneous/horror", "2": "none", "3": "none" },
+            "tokens": [ 
+                { "image": "data/tiles/img/yag-kosha_token.webp", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+             ],
+             
+             "image": "data/tiles/img/yag-kosha.webp",
+             "imageHD": "data/tiles/img/yag-kosha_hd.webp",
+             "image_location": {"x":50, "y":50},
+             "image_zoom": 104,
+             "model": "yag-kosha",
+             "origins": ["zamora"]
         }
     ]
 }

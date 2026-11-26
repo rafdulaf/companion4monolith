@@ -2205,6 +2205,19 @@
             "origins": ["zamora"],
             "count": 1,
             "forum": null
+        },
+        
+        {
+            "id": "yag-kosha",
+            "thumb": "data/models/img/yag-kosha_sd.webp",
+            "images": ["data/models/img/yag-kosha_1.webp"],
+            "sculptor": { "name": "Gael Goumon", "link": "https://www.facebook.com/gael.goumon" },
+            "paint": null,
+            "type": "monster",
+            "size": null,
+            "origins": ["zamora"],
+            "count": 1,
+            "forum": null
         }
     ]
 }
