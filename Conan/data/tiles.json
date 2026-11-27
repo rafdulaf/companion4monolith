@@ -7460,6 +7460,26 @@
              "image_zoom": 104,
              "model": "yag-kosha",
              "origins": ["zamora"]
+        },
+        
+        {
+            "id": "spawn-of-the-spider-god",
+            
+            "colors": ["gray"],
+            "movement": "4",
+            "defense": "3",
+            "attacktype": "ranged",
+            "dices": { "0": "redreroll", "1": "redreroll", "2": "none", "3": "none" },
+            "skills": { "0": "miscellaneous/horror", "1": "attack/precision_shot", "2": "none", "3": "none" },
+            "tokens": [ 
+                { "image": "data/tiles/img/spawn-of-the-spider-god_token.webp", "image_location": {"x":50, "y":50}, "image_zoom": 100 }
+             ],
+             
+            "image": "data/tiles/img/spawn-of-the-spider-god.webp",
+            "image_location": {"x":31, "y":56},
+            "image_zoom": 209,
+            "model": "spawn-of-the-spider-god",
+            "origins": ["zamora"]
         }
     ]
 }

@@ -2218,6 +2218,19 @@
             "origins": ["zamora"],
             "count": 1,
             "forum": null
+        },
+        
+        {
+            "id": "spawn-of-the-spider-god",
+            "thumb": "data/models/img/spawn-of-the-spider-god_sd.webp",
+            "images": ["data/models/img/spawn-of-the-spider-god_1.webp"],
+            "sculptor": { "name": "Gael Goumon", "link": "https://www.facebook.com/gael.goumon" },
+            "paint": null,
+            "type": "monster",
+            "size": null,
+            "origins": ["zamora"],
+            "count": 1,
+            "forum": null
         }
     ]
 }
