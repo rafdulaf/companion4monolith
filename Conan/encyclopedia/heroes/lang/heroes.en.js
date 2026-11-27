@@ -13,7 +13,7 @@ EncyclopediaHeroes._i18n = {
     'class-rogue': "Rogue",
     'class-sorcerer': "Sorcerer",
     'class-mercenary': "Sellsword",
-    'class-nr': " (not recommended for thematic readons or due to their potential to affect balance)"
+    'class-nr': " (not recommended for thematic reasons or due to their potential to affect balance)"
 };
 
 EncyclopediaHeroes._facets = {
