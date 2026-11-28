@@ -7497,6 +7497,110 @@
             "image_zoom": 95,
             "model": "khemsa",
             "origins": ["zamora"]
+        },
+
+        {
+            "id": "dancer",
+            
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "0",
+            "attacktype": "contact",
+            "dices": { "0": "none", "1": "none", "2": "none", "3": "none" },
+            "skills": { "0": "movement/evasive", "1": "none", "2": "none", "3": "none" },
+             
+            "image": "data/tiles/img/gitara.webp",
+            "imageHD": "data/tiles/img/gitara_hd.webp",
+            "image_flip": true,
+            "image_location": {"x":50, "y":48},
+            "image_zoom": 87,
+            "model": "gitara",
+            "origins": ["zamora"]
+        },
+
+        {
+            "id": "conan-the-rogue",
+            
+            "colors": ["gray"],
+            "movement": "3",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "red", "2": "red", "3": "none" },
+            "skills": { "0": "movement/leap", "1": "movement/climb", "2": "none", "3": "none" },
+             
+            "image": "data/heroes/img/conan-wanderer.webp",
+            "imageHD": "data/heroes/img/conan-wanderer_hd.webp",
+            "image_flip": true,
+            "image_location": {"x":54, "y":54},
+            "image_zoom": 110,
+            "model": "conan-wanderer",
+            "origins": ["zamora"],
+            
+            "count": 2
+        },
+        
+        {
+            "id": "hunting-spider",
+            
+            "colors": ["gray"],
+            "movement": "4",
+            "defense": "3",
+            "attacktype": "contact",
+            "dices": { "0": "orange", "1": "orange", "2": "yellow", "3": "none" },
+            "skills": { "0": "none", "1": "none", "2": "none", "3": "none" },
+            "reinforcement": "3",
+
+            "quote": {
+                "author": {
+                    "name": "Robert E. Howard"
+                }
+            },
+
+            "image": "data/tiles/img/giant-spider.webp",
+            "imageHD": "data/tiles/img/giant-spider_hd.webp",
+            "image_flip": true,
+            "image_location": {"x":50, "y":43},
+            "image_zoom": 92,
+            "model": "giant-spider",
+            "origins": ["zamora"]
+        },
+        
+        {
+            "id": "zamorian-guards",
+
+            "colors": ["gray"],
+            "movement": "2",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "yellowreroll", "1": "yellowreroll", "2": "none", "3": "none" },
+            "skills": { "0": "defense/untouchable", "1": "attack/reach", "2": "none", "3": "none" },
+            "reinforcement": "1",
+
+            "image": "data/tiles/img/bossonian-guards.webp",
+            "imageHD": "data/tiles/img/bossonian-guards_hd.webp",
+            "image_flip": true,
+            "image_location": {"x":51, "y":54},
+            "image_zoom": 122,
+            "model": "bossonian-guards",
+            "origins": ["zamora"]
+        },
+        
+        {
+            "id": "lions",
+            
+            "colors": ["gray"],
+            "movement": "4",
+            "defense": "2",
+            "attacktype": "contact",
+            "dices": { "0": "red", "1": "red", "2": "none", "3": "none" },
+            "skills": { "0": "movement/leap", "1": "movement/climb", "2": "none", "3": "none" },
+            "reinforcement": "2",
+            
+            "image": "data/tiles/img/lions.webp",
+            "image_location": {"x":25, "y":53},
+            "image_zoom": 183,
+            "model": "lions",
+            "origins": ["zamora"]
         }
     ]
 }

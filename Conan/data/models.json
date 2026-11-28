@@ -2231,6 +2231,19 @@
             "origins": ["zamora"],
             "count": 1,
             "forum": null
+        },
+        
+        {
+            "id": "lions",
+            "thumb": "data/models/img/lions_sd.webp",
+            "images": ["data/models/img/lions_1.webp"],
+            "sculptor": { "name": "Gael Goumon", "link": "https://www.facebook.com/gael.goumon" },
+            "paint": null,
+            "type": "animal",
+            "size": null,
+            "origins": ["zamora"],
+            "count": 5,
+            "forum": null
         }
     ]
 }

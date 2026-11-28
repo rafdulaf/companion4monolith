@@ -1503,6 +1503,25 @@
         "perfumed-fop": {
             "name": "Précieux Parfumé",
             "size": 70
+        },
+        "dancer": {
+            "name": "Danseuse"
+        },
+        "conan-the-rogue": {
+            "name": "Conan Le Vaurien"
+        },
+        "hunting-spider": {
+            "name": "Araignée Chasseuse",
+            "quote": {
+                "text": "Bondissant en arrière, son épée brandie haut dans les airs, il vit l'horreur atteindre le sol, faire volte-face puis fondre sur lui à une vitesse hallucinante. C'était une gigantesque araignée noire, comme on ne peut en voir que dans les cauchemars. Elle était aussi grosse qu'un porc ; cet ogre monté sur huit pattes épaisses et velues traversa la pièce à une vitesse prodigieuse. Ses quatre yeux brillants luisaient d'une intelligence maléfique et ses crocs dégouttaient un venin que Conan savait foudroyant et mortel.",
+                "origin": "La Tour de l'Elephant"
+            }
+        },
+        "zamorian-guards": {
+            "name": "Gardes Zamoriens"
+        },
+        "lions": {
+            "name": "Lions"
         }
     }
 }

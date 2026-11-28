@@ -1497,6 +1497,25 @@
         },
         "perfumed-fop": {
             "name": "TODO TRANSLATE Perfumed Fop"
+        },
+        "dancer": {
+            "name": "TODO TRANSLATE Dancer"
+        },
+        "conan-the-rogue": {
+            "name": "TODO TRANSLATE Conan The Rogue"
+        },
+        "hunting-spider": {
+            "name": "TODO TRANSLATE Hunting Spider",
+            "quote": {
+                "text": "Tirandosi indietro, con la spada in alto, vide l'orrore toccare il pavimento, ruotare e correre velocemente verso di lui con una rapidità spaventosa; era un gigantesco ragno nero, grande come lo si può vedere grande solo in un incubo notturno. Era largo quanto un maiale, e le otto gambe spesse e pelose guidavano quel corpo da orco sul pavimento a un'andatura precipitosa; quattro occhi, infernali e brillanti, splendevano di una orribile intelligenza, e le zanne stillavano veleno. Conan capi dal bruciore della spalla, che era stata toccata solo da qualche goccia quando la bestia lo aveva mancato, che quel veleno dava una morte rapida e silenziosa.",
+                "origin": "La Torre dell'Elefante"
+            }
+        },
+        "zamorian-guards": {
+            "name": "Zamorian Guards"
+        },
+        "lions": {
+            "name": "TODO TRANSLATE Lions"
         }
     }
 }

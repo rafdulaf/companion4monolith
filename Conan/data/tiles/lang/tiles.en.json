@@ -1498,6 +1498,25 @@
         },
         "perfumed-fop": {
             "name": "Perfumed Fop"
+        },
+        "dancer": {
+            "name": "Dancer"
+        },
+        "conan-the-rogue": {
+            "name": "Conan The Rogue"
+        },
+        "hunting-spider": {
+            "name": "Hunting Spider",
+            "quote": {
+                "text": "Springing back, sword high, he saw the horror strike the floor, wheel and scuttle toward him with appalling speed – a gigantic black spider, such as men see only in nightmare dreams. It was as large as a pig, and its eight thick hairy legs drove its ogreish body over the floor at headlong pace ; its four evilly gleaming eyes shone with a horrible intelligence, and its fangs dripped venom that Conan knew, from the burning of his shoulder where only a few drops had splashed as the thing struck and missed, was laden with swift death.",
+                "origin": "The Tower of the Elephant"
+            }
+        },
+        "zamorian-guards": {
+            "name": "Zamorian Guards"
+        },
+        "lions": {
+            "name": "Lions"
         }
     }
 }
